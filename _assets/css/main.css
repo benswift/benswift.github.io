@@ -1,0 +1,37 @@
+/* fonts and typography */
+
+@import url('https://rsms.me/inter/inter-ui.css');
+:root {
+	font-family: "Inter UI", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #333;
+	background-color: #eaeaea;
+}
+
+@supports (font-variation-settings: normal) {
+	:root { font-family: 'Inter UI var alt', sans-serif; }
+}
+
+/* main grid layout */
+
+.container {
+    grid: [row1-start] "header header header" 1fr [row1-end]
+					   [row2-start] "left-sidebar main right-sidebar" 25px [row2-end]
+					   [row3-start] "footer footer footer" 25px [row3-end]
+					   / auto 50px auto;
+}
+
+#header {
+	grid-area: header;
+}
+#main {
+	grid-area: main;
+}
+#sidebar {
+	grid-area: sidebar;
+}
+#footer {
+	grid-area: footer;
+}
