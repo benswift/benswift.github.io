@@ -23,15 +23,12 @@
 					   / auto 50px auto;
 }
 
-#header {
+header {
 	grid-area: header;
 }
-#main {
+main {
 	grid-area: main;
 }
-#sidebar {
-	grid-area: sidebar;
-}
-#footer {
+footer {
 	grid-area: footer;
 }
