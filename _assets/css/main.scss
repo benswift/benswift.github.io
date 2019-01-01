@@ -1,13 +1,16 @@
-/* fonts and typography */
+// fonts and typography
+
+$text-color: #333;
+$background-color: #fafafa;
 
 @import url('https://rsms.me/inter/inter-ui.css');
 :root {
 	font-family: "Inter UI", sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.4;
-	color: #333;
-	background-color: #eaeaea;
+	color: $text-color;
+	background-color: $background-color;
 }
 
 @supports (font-variation-settings: normal) {
@@ -28,6 +31,10 @@
 
 header {
 	grid-area: header;
+	a {
+		font-weight: 900;
+		font-size: 1.2rem;
+	}
 }
 main {
 	grid-area: main;
@@ -35,3 +42,17 @@ main {
 footer {
 	grid-area: footer;
 }
+
+// general appearance
+
+a {
+	color: $text-color;
+    text-decoration: none;
+	font-weight: 600;
+	&:hover {
+		color: $background-color;
+		background-color: $text-color;
+
+	}
+}
+
