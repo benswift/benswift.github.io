@@ -18,12 +18,12 @@
 
 .container {
 	display: grid;
-	grid-template-columns: 50px auto 50px;
+	grid-template-columns: 50px 600px auto;
 	grid-template-rows: auto;
     grid-template-areas:
-		"header header header"
+		". header ."
 		". main ."
-		"footer footer footer";
+		". footer .";
 }
 
 header {
