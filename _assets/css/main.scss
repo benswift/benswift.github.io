@@ -81,6 +81,13 @@ main {
 }
 footer {
 	grid-area: footer;
+	border-top: 1px solid darken($background-color, 40%);
+	color: lighten($text-color, 30%);
+
+	a {
+		color: lighten($text-color, 30%);
+		font-weight: 900;
+	}
 }
 
 // general appearance
