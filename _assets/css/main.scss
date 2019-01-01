@@ -2,6 +2,7 @@
 
 $text-color: #333;
 $background-color: #fafafa;
+$highlight-color: #be2edd;
 
 @import url('https://rsms.me/inter/inter-ui.css');
 :root {
@@ -17,7 +18,25 @@ $background-color: #fafafa;
 	:root { font-family: 'Inter UI var alt', sans-serif; }
 }
 
-/* main grid layout */
+a {
+	color: $text-color;
+    text-decoration: none;
+	font-weight: 900;
+
+	&:hover {
+		color: $background-color;
+		background-color: $text-color;
+
+	}
+	transition-property: color background-color;
+	transition-duration: 0.5s;
+}
+
+strong {
+	font-weight: 600;
+}
+
+// main grid layout
 
 .container {
 	display: grid;
@@ -31,11 +50,30 @@ $background-color: #fafafa;
 
 header {
 	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+
+	nav {
+		flex: 0 1 auto;
+		ul {
+			list-style: none;
+			li,svg {
+				display: inline;
+				padding: 0 5px;
+			}
+		}
+	}
+
+	nav.logo > a {
+		text-decoration: underline $highlight-color;
+	}
+
 	a {
 		font-weight: 900;
 		font-size: 1.2rem;
 	}
 }
+
 main {
 	grid-area: main;
 }
@@ -44,15 +82,3 @@ footer {
 }
 
 // general appearance
-
-a {
-	color: $text-color;
-    text-decoration: none;
-	font-weight: 600;
-	&:hover {
-		color: $background-color;
-		background-color: $text-color;
-
-	}
-}
-
