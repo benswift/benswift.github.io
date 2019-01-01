@@ -1,6 +1,7 @@
 ---
 title: Bio
 layout: page
+permalink: /bio/
 ---
 
 I'm a [Canberra](http://en.wikipedia.org/wiki/Canberra) lad, born and
