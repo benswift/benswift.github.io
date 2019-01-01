@@ -1,12 +1,24 @@
 <header>
-  <div class="logo">
+
+  <nav class="logo">
 	<a href="{{ site.baseurl }}">{{ site.title }}</a>
-  </div>
-  <nav id="site-nav">
+  </nav>
+
+  <nav class="navigation">
 	<ul>
-      <li><a href="{{ site.baseurl }}/blog/">blog</a></li>
-      <li><a href="{{ site.baseurl }}/projects/">projects</a></li>
-      <li><a href="{{ site.baseurl }}/bio/">bio</a></li>
+	  <!-- in-site navigation -->
+	  <li><a href="{{ site.baseurl }}/blog/">blog</a></li>
+	  <li><a href="{{ site.baseurl }}/projects/">projects</a></li>
+	  <li><a href="{{ site.baseurl }}/bio/">bio</a></li>
+
+	  <!-- social icons -->
+	  <li class="fab fa-github" href="https://github.com/benswift"></li>
+	  <li class="fab fa-twitter" href="https://twitter.com/benswift"></li>
+	  <li class="fab fa-vimeo" href="https://vimeo.com/benswift"></li>
+	  <li class="fa fa-graduation-cap" href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ"></li>
+	  <li class="fa fa-rss" href="{{ site.baseurl }}/feed.xml"></li>
+	  <li class="fa fa-envelope" href="mailto:{{ site.email }}"></li>
 	</ul>
   </nav>
+
 </header>
