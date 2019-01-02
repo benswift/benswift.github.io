@@ -98,4 +98,6 @@ footer {
 	color: $text-grey;
 }
 
-.post:not:first-child {}
+.post:not(:first-child) {
+	border-top: 1px solid $highlight-color;
+}
