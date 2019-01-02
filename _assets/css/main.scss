@@ -41,6 +41,15 @@ strong {
 	font-weight: 600;
 }
 
+// this is largely pinched from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+code {
+    font-size: 90%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: .1rem .3rem .2rem;
+    border-radius: .2rem;
+	background: linear-gradient(to right, lighten($highlight-color, 40%), darken($background-color, 10%));
+}
 // main grid layout - mobile-first
 
 .container {
