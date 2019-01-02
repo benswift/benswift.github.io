@@ -26,15 +26,6 @@ github_username:  benswift
 # Build settings
 markdown: kramdown
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
 defaults:
   - scope:
       type: posts
