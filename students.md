@@ -4,8 +4,8 @@ layout: page
 ---
 
 I've been lucky to work with some amazing students. Head to the [c/c/c group
-people page](https://cs.anu.edu.au/code-creativity-culture/people/) to see what
-the current crop are up to.
+website](https://cs.anu.edu.au/code-creativity-culture/people/) to see what the
+current crop are up to.
 
 ### Come study with me
 
