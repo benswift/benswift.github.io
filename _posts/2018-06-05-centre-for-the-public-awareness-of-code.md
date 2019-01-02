@@ -5,8 +5,8 @@ date: 2018-06-05 09:13
 tags:
 ---
 
-*What's your favourite movie? Most folks already have an answer to this
-questions (because they've been asked before). Mine's [The
+*What's your favourite movie?* Most folks already have an answer to this
+question (because they've been asked before). Mine's [The
 Castle](https://www.imdb.com/title/tt0118826/).
 
 {% asset images/the-castle.jpg alt="Cast of 'The Castle'" style="width:100%;" %}
