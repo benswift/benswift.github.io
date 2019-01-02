@@ -29,6 +29,9 @@ defaults:
     values:
       layout: post
 
+exclude:
+  - Makefile
+
 # from paginate-v2 gem
 pagination:
   enabled: true
