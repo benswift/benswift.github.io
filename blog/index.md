@@ -6,11 +6,11 @@ pagination:
 
 {% assign posts = paginator.posts | reverse %}
 {% for post in posts %}
-<article class="post">
+<section class="post">
   <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
   <p>{{ post.excerpt }}</p>
-</article>
+</section>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
