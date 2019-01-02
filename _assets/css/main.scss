@@ -71,19 +71,22 @@ header {
 
 	nav.navigation {
 		display: flex;
+		flex-wrap: wrap;
+		max-width: 50%;
 		justify-content: space-between;
 		align-items: baseline;
 
 		* {
-			padding: 0 5px;
+			padding: 5px;
 		}
 	}
 
 	nav.logo > a {
+		font-size: 1.3rem;
 		font-weight: 700;
 		background-color: $highlight-color;
 		color: white;
-		padding: 3px 6px;
+		padding: 5px 10px;
 		&:hover {
 			color: $highlight-color;
 			background-color: $background-color;
