@@ -21,7 +21,7 @@ $text-grey: #777;
 
 a {
 	color: $text-color;
-    text-decoration: none;
+	text-decoration: none;
 	font-weight: 900;
 
 	&:hover {
@@ -47,10 +47,10 @@ strong {
 	display: grid;
 	grid-template-columns: 20px auto 20px;
 	grid-template-rows: auto;
-    grid-template-areas:
+	grid-template-areas:
 		". header ."
-		". main ."
-		". footer .";
+			". main ."
+			". footer .";
 }
 
 // make cap the width of the "main" content on wider screens
@@ -74,24 +74,25 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		align-items: baseline;
 
 		* {
 			padding: 5px;
 		}
 	}
 
-	nav.logo > a {
-		font-size: 1.3rem;
-		font-weight: 700;
-		background-color: $highlight-color;
-		color: white;
-		padding: 5px 10px;
-		&:hover {
-			color: $highlight-color;
-			background-color: $background-color;
-
+	nav.logo {
+		a {
+			font-size: 1.3rem;
+			font-weight: 700;
+			background-color: $highlight-color;
+			color: white;
+			padding: 5px 10px;
+			&:hover {
+				color: $highlight-color;
+				background-color: $background-color;
+			}
 		}
+		margin-bottom: 15px;
 	}
 
 	a {
