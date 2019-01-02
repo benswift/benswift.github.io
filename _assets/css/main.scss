@@ -50,22 +50,23 @@ code {
     border-radius: .2rem;
 	background: linear-gradient(to right, lighten($highlight-color, 40%), darken($background-color, 10%));
 }
+
 // main grid layout - mobile-first
 
 .container {
 	display: grid;
-	grid-template-columns: 20px auto 20px;
+	grid-template-columns: 5vw 90vw 5vw;
 	grid-template-rows: auto;
 	grid-template-areas:
 		". header ."
-			". main ."
-			". footer .";
+		". main ."
+		". footer .";
 }
 
 // make cap the width of the "main" content on wider screens
 @media screen and (min-width: 1000px) {
 	.container {
-		grid-template-columns: 100px 800px auto;
+		grid-template-columns: 1fr 800px 1fr;
 	}
 }
 
