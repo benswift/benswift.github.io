@@ -43,7 +43,7 @@ so they can serve it for you.
 [^hassle]:
     I know that it's not actually *that* much hassle, especially if you've
     already got a webserver set up for other reasons, but zero hassle still
-    beats minimal hassle every time when there's other work to be done.
+    beats ε hassle ∀ε>0, especially when there's other work to be done.
 
 ```make
 BASE_HTML_DIR=_site
