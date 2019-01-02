@@ -5,8 +5,7 @@ pagination:
 permalink: /blog/
 ---
 
-{% assign posts = paginator.posts | reverse %}
-{% for post in posts %}
+{% for post in paginator.posts %}
 <section class="post">
   <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>

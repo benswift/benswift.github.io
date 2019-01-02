@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'the annual benswift.me re-write: 2019 edition'
+title: 'The annual benswift.me re-write: 2019 edition'
+date: 2019-01-02 17:46
 ---
 
 Welcome, traveller. You've managed to find my blog without being [eaten by a
