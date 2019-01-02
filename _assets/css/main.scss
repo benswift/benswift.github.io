@@ -20,7 +20,7 @@ $text-grey: #777;
 }
 
 a {
-	color: $text-color;
+	color: mix($text-color, $highlight-color, 50%);
 	text-decoration: none;
 	font-weight: 900;
 
@@ -38,7 +38,7 @@ h1,h2,h3 {
 }
 
 strong {
-	font-weight: 600;
+	font-weight: 900;
 }
 
 // this is largely pinched from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -85,6 +85,7 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		color: $text-color;
 
 		* {
 			padding: 5px;
