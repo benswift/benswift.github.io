@@ -37,16 +37,23 @@ strong {
 	font-weight: 600;
 }
 
-// main grid layout
+// main grid layout - mobile-first
 
 .container {
 	display: grid;
-	grid-template-columns: 100px 600px auto;
+	grid-template-columns: 20px auto 20px;
 	grid-template-rows: auto;
     grid-template-areas:
 		". header ."
 		". main ."
 		". footer .";
+}
+
+// make cap the width of the "main" content on wider screens
+@media screen and (min-width: 800px) {
+	.container {
+		grid-template-columns: 100px 600px auto;
+	}
 }
 
 // style the grid components
