@@ -1,4 +1,10 @@
 ---
 layout: default
 ---
-{{ content }}
+
+<article>
+  <p class="post-date">{{ page.date | date: "%d %b '%y" }}</p>
+  <h2>{{ page.title }}</h2>
+  {{ content }}
+</article>
+

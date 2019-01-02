@@ -35,6 +35,12 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+
 # from paginate-v2 gem
 pagination:
   enabled: true
