@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: benswift.me
 email: ben@benswift.me
+author: Ben Swift
 description: "My work and other things - code, creativity, culture"
 baseurl:     ""
 url:         "https://benswift.me"
@@ -49,3 +50,17 @@ assets:
     browsers:
     - "last 2 versions"
     - "IE >= 11"
+
+# jekyll-seo-tag stuff
+twitter:
+  username: benswift
+  card: summary
+
+social:
+  name: Ben Swift
+  links:
+    - https://twitter.com/benswift
+    - https://www.linkedin.com/in/benjswift
+    - https://github.com/benswift
+    - https://keybase.io/benbalter
+    - https://vimeo.com/benswift
