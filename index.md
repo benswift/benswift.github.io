@@ -19,5 +19,5 @@ lyrical about the [projects]({{ site.baseurl }}/projects/) I'm involved in, the
 site.baseurl }}/blog/) in my head.
 
 If you'd like to get in touch, then get in touch on
-[Twitter](https://twitter.com/{{ site.twitter_username }}) or send me an email
+[Twitter](https://twitter.com/benswift) or send me an email
 on <mailto:ben.swift@anu.edu.au>.
