@@ -38,6 +38,7 @@ exclude:
 # from paginate-v2 gem
 pagination:
   enabled: true
+  per_page: 10
 
 assets:
   sources:
