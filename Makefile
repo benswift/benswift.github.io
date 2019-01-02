@@ -13,4 +13,4 @@ commit-all: generate-blog
 	cd $(BASE_HTML_DIR) && git add . && git commit -m "update blog"
 
 push: commit-all
-	cd $(BASE_HTML_DIR) && git push origin gh-pages
+	cd $(BASE_HTML_DIR) && git push origin master
