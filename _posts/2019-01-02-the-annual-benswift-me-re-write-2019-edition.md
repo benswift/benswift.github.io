@@ -13,9 +13,9 @@ it's a good way for me to keep up to date with my web skills. Given that I teach
 [web stuff](https://cs.anu.edu.au/courses/comp1720/) and that students can sniff
 out a fraud if you're behind the times, I figure it's the least that I can do.
 
-This time I've still gone with a [Jekyll](https://jekyllrb.com/)-powered static
-site. This time, thoug, I've opted for my own lovingly hand-crafted HTML & CSS
-rather than one of the out-of-the-box themes. In doing this, I've had a few
+I've (once again) gone with a [Jekyll](https://jekyllrb.com/)-powered static
+site. This time, though, I've opted for my own lovingly hand-crafted HTML & CSS
+rather than one of the out-of-the-box themes. In doing this, I decided on a few
 design priorities:
 
 1. *modern* markup: CSS grid & flexbox **all the way** (sorry if you're on an old
