@@ -54,9 +54,9 @@ strong {
 }
 
 // make cap the width of the "main" content on wider screens
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
 	.container {
-		grid-template-columns: 100px 600px auto;
+		grid-template-columns: 100px 800px auto;
 	}
 }
 
@@ -65,6 +65,7 @@ strong {
 header {
 	grid-area: header;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 
 	padding: 2rem 0 1rem 0;
@@ -72,7 +73,6 @@ header {
 	nav.navigation {
 		display: flex;
 		flex-wrap: wrap;
-		max-width: 50%;
 		justify-content: space-between;
 		align-items: baseline;
 
