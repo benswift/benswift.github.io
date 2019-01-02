@@ -5,7 +5,7 @@ date: 2018-06-22 10:40
 tags:
 ---
 
-This blog is built from [md](http://commonmark.org/help/) files using
+This blog is built from [markdown](http://commonmark.org/help/) files using
 [Jekyll](https://jekyllrb.com/) hosted on [GitHub
 pages](https://pages.github.com/), which saves a lot of hassle involved with DIY
 hosting[^hassle]. There are a bunch of [useful
@@ -13,11 +13,9 @@ tutorials](http://blog.teamtreehouse.com/using-github-pages-to-host-your-website
 on how to set all this up.
 
 However, I like to have control over which plugins are used, etc. which GitHub
-pages doesn't let you do. What it pages *does* let you do, though, is dump a
-bunch of files (html, js, css) in a repo and bypass the "Jekyll" step by adding
-a [`.nojekyll`
-file](https://blog.github.com/2009-12-29-bypassing-jekyll-on-github-pages/).
-This is separate from the blog content, and so you'll
+pages doesn't let you do. What it (GH pages) *does* let you do, though, is dump
+a bunch of files (html, js, css) in a repo and just serve them as-is. These
+files represent the "built" version of your site, not the source, so you'll
 probably want a separate repo for your content (e.g. your markdown files) and
 the built site. Handling this stuff can be a hassle, so here's the `Makefile` I
 use to make it easy.
@@ -37,8 +35,10 @@ The basic process is:
    where it'll be served by GitHub pages
 
 After that, you can work on, commit & push your blog wherever you like (I
-actually keep the content on GitLab) but you can push the built site to GitHub
-so they can serve it for you.
+actually keep the content in the [same GH
+repo](https://github.com/benswift/benswift.github.io), but in a `source` branch)
+but you can push the built site to the master branch so GH pages will serve it
+up for you.
 
 [^hassle]:
     I know that it's not actually *that* much hassle, especially if you've
