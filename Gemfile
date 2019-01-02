@@ -20,4 +20,5 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2", "~> 2.0"
   gem "jekyll-compose"
   gem "jekyll-assets", "~> 3.0"
+  gem "autoprefixer-rails", "~> 9.4"
 end

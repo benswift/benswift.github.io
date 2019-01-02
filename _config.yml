@@ -45,3 +45,7 @@ collections:
 assets:
   sources:
     - _assets/
+  autoprefixer:
+    browsers:
+    - "last 2 versions"
+    - "IE >= 11"
