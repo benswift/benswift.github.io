@@ -1,5 +1,5 @@
 ---
-title: another reveal.js plugin for Jekyll
+title: Another reveal.js plugin for Jekyll
 date: "2018-09-28 13:42:26 +1000"
 tags: software
 ---
