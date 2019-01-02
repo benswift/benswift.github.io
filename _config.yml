@@ -20,9 +20,6 @@ baseurl:     ""
 url:         "https://benswift.me"
 date_format: "%b %-d, %Y"
 
-twitter_username: benswift
-github_username:  benswift
-
 # Build settings
 markdown: kramdown
 
