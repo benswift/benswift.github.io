@@ -1,6 +1,7 @@
 ---
 title: Students
 layout: page
+permalink: /students/
 ---
 
 I've been lucky to work with some amazing students. Head to the [c/c/c group
