@@ -39,9 +39,6 @@ exclude:
 pagination:
   enabled: true
 
-# produces a cleaner folder structure when using categories
-permalink: /:year/:month/:title.html
-
 assets:
   sources:
     - _assets/
