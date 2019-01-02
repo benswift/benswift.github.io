@@ -3,6 +3,7 @@
 $text-color: #333;
 $background-color: #fafafa;
 $highlight-color: #be2edd;
+$text-grey: #777;
 
 @import url('https://rsms.me/inter/inter-ui.css');
 :root {
@@ -81,11 +82,20 @@ main {
 
 footer {
 	grid-area: footer;
-	border-top: 1px solid darken($background-color, 40%);
-	color: lighten($text-color, 30%);
+	border-top: 1px solid $highlight-color;
+	color: $text-grey;
 
 	a {
-		color: lighten($text-color, 30%);
+		color: $text-grey;
 		font-weight: 900;
 	}
 }
+
+// posts
+
+.post-date {
+	font-style: italic;
+	color: $text-grey;
+}
+
+.post:not:first-child {}
