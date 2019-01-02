@@ -68,7 +68,10 @@ header {
 
 	nav.logo > a {
 		font-size: 1.2rem;
-		text-decoration: underline $highlight-color;
+		font-weight: 700;
+		background-color: $highlight-color;
+		color: white;
+		padding: 3px 6px;
 	}
 
 	a {
