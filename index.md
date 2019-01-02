@@ -14,7 +14,9 @@ tomorrow's) world. You can read more about the c/c/c group at [their
 website](https://cs.anu.edu.au/code-creativity-culture/).
 
 This is my personal homepage & [blog]({{site.baseurl}}{% link blog.md %}), where
-I can wax lyrical about the thoughts in my head.
+I can wax lyrical about my [research]({{site.baseurl}}{% link research.md %}),
+[teaching]({{site.baseurl}}{% link teaching.md %}), and the [thoughts in my
+head]({{site.baseurl}}{% link blog.md %}).
 
 If you'd like to get in touch---and please do!---the best options are
 [twitter](https://twitter.com/benswift) or emailing me at
