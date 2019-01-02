@@ -51,6 +51,10 @@ code {
 	background: linear-gradient(to right, lighten($highlight-color, 40%), darken($background-color, 10%));
 }
 
+pre > code {
+	background: #282c34;
+}
+
 // main grid layout - mobile-first
 
 .container {
