@@ -168,3 +168,9 @@ blockquote p {
 	margin: 1em 0;
     quotes: "\201C""\201D""\2018""\2019";
 }
+
+// full-width images by default
+
+img {
+	width: 100%;
+}
