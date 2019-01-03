@@ -9,7 +9,7 @@ bred. One day I may have to move away from this place, but for now I'm
 here and quite happy about it.
 
 I have one wife, one kid, zero pets, three bikes and four guitars. They all make
-me happy (in monotonically non-increasing order).
+me happy (in monotonically weakly decreasing order).
 
 {% asset images/pages/my-family.jpg alt="my family" style="width:100%;" %}
 
