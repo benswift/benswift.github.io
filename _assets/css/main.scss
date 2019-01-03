@@ -158,3 +158,13 @@ blockquote:before {
 blockquote p {
     display: inline;
 }
+
+// higlighted paragraphs
+
+.hl-para {
+    background-color: lighten($highlight-color, 35%);
+    border-left: 10px solid $highlight-color;
+    padding: 1em 1em;
+	margin: 1em 0;
+    quotes: "\201C""\201D""\2018""\2019";
+}
