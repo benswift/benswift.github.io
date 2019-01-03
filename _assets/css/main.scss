@@ -137,3 +137,24 @@ footer {
 .post:not(:first-child) {
 	border-top: 1px solid $highlight-color;
 }
+
+// nice blockquotes
+// from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+blockquote {
+    background-color: darken($background-color, 10%);
+    border-left: 10px solid darken($background-color, 20%);
+    padding: 1em 1em;
+	margin: 1em 0;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: darken($background-color, 20%);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
