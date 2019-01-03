@@ -27,7 +27,7 @@ I am also an internationally-recognised digital artist, and have performed at
 both local and international arts festivals---you can find examples of my
 [livecoding on vimeo](https://vimeo.com/benswift/videos).
 
-### Current projects
+{:.hl-para}
 
 To get a sense for my current ongoing research projects, head to the
 [c/c/c](https://cs.anu.edu.au/code-creativity-culture/) website---that's the
