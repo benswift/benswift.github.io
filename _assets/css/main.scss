@@ -48,7 +48,7 @@ code {
     word-wrap: break-word;
     padding: .1rem .3rem .2rem;
     border-radius: .2rem;
-	background: linear-gradient(to right, lighten($highlight-color, 40%), darken($background-color, 10%));
+	background: linear-gradient(to right, mix($highlight-color, darken($background-color, 10%), 10%), darken($background-color, 10%));
 }
 
 pre > code {
