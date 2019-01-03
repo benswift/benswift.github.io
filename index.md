@@ -2,7 +2,7 @@
 layout: page
 ---
 
-{% asset images/theremin-75.jpg alt="Ben performing live" style="width:100%;" %}
+{% asset images/pages/theremin-75.jpg alt="Ben performing live" style="width:100%;" %}
 
 Hi, I'm Ben Swift---I'm a hacker, digital artist and [Senior Lecturer in
 computer science](https://cecs.anu.edu.au/people/ben-swift) at the Australian
