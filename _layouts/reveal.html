@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	{% include head.html %}
+	{% asset css/ben-reveal-theme.scss %}
+  </head>
+  <body>
+    {{ content | revealify }}
+
+	<script src="{{site.baseurl}}/reveal.js-3.7.0/lib/js/head.min.js"></script>
+	<script src="{{site.baseurl}}/reveal.js-3.7.0/js/reveal.js"></script>
+    <script>
+     Reveal.initialize({
+       center: false,
+       controls: false,
+       transition: 'fade',
+       width: 1920,
+       height: 1080,
+       margin: 0.1,
+       history: true,
+       slideNumber: true,
+	   math: {
+		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	   },
+       dependencies: [
+         { src: "{{site.baseurl}}/reveal.js-3.7.0/plugin/mathsvg/math.js", async: true }
+       ]
+     });
+    </script>
+  </body>
+</html>

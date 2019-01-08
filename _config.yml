@@ -24,14 +24,24 @@ date_format: "%b %-d, %Y"
 # Build settings
 markdown: kramdown
 
+exclude:
+  - Makefile
+
 defaults:
   - scope:
       type: posts
     values:
       layout: post
+  -
+    scope:
+      type: talks
+    values:
+      layout: reveal
 
-exclude:
-  - Makefile
+collections:
+  talks:
+    output: true
+    permalink: /talks/:path/
 
 # from paginate-v2 gem
 pagination:
