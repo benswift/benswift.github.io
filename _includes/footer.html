@@ -1,8 +1,21 @@
 <footer>
+  <script>
+   const cafeUrls = [
+	 "https://biginelli.com/",
+	 "http://tilleys.com.au",
+	 "https://www.facebook.com/goodbrothercafe/",
+	 "https://frontgallerycafe.com",
+	 "https://www.facebook.com/thecoffeegrounds",
+	 "https://redbrickcoffee.com.au/redbrick/"
+   ];
+   const randomCafe = () => {
+	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
+   };
+  </script>
   <p>
 	designed & built with
 	<a href="https://jekyllrb.com"><i class="fas fa-vial"></i></a>,
-	<a href="https://biginelli.com/"><i class="fas fa-coffee"></i></a> and
+	<a id="cafe-url" onclick="randomCafe();"><i class="fas fa-coffee"></i></a> and
 	<a href="https://en.wikipedia.org/wiki/Love"><i class="fas fa-heart"></i></a>
 	by Ben Swift &copy; {{ site.time | date: "%Y" }}
   </p>
