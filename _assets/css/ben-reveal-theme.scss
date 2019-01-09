@@ -1,9 +1,6 @@
 // fonts and typography
 
-$text-color: #333;
-$background-color: #fafafa;
-$highlight-color: #be2edd;
-$text-grey: #777;
+@import "./variables.scss";
 
 @import url('https://rsms.me/inter/inter-ui.css');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&subset=latin-ext');
