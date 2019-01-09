@@ -54,21 +54,20 @@ $text-grey: #777;
 	code {
 		font-family: 'Source Code Pro', monospace;
 		font-size: 0.85em;
-		padding: 0 0.1em;
-		margin: 0;
-		background-color: #ddd;
-		border: 2px solid #aaa;
-		border-radius: 0px;
-		box-sizing: border-box;
+		font-weight: 400;
+		padding: 0.1rem 0.3rem 0.2rem;
+		border-radius: 0.2rem;
+		color: darken($highlight-color, 10%);
+		background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
 	}
 
 	pre > code {
+		color: $background-color;
 		border: none;
 		background: #282c34;
 		padding: 1em;
+		margin-bottom: 1rem;
 		line-height: 1.2;
-		font-size: 0.85em;
-		font-weight: 400;
 	}
 }
 
