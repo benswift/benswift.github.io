@@ -43,12 +43,13 @@ strong {
 
 // this is largely pinched from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 code {
+	color: darken($highlight-color, 10%);
+	background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
     font-size: 90%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     padding: .1rem .3rem .2rem;
     border-radius: .2rem;
-	background: linear-gradient(to right, lighten($highlight-color, 40%), lighten($highlight-color, 30%));
 }
 
 pre > code {
