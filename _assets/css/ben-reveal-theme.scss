@@ -21,17 +21,6 @@ $text-grey: #777;
 	:root { font-family: 'Inter UI var alt', sans-serif; }
 }
 
-code {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 0.85em;
-    padding: 0 0.1em;
-    margin: 0;
-    background-color: #ddd;
-    border: 2px solid #aaa;
-    border-radius: 0px;
-    box-sizing: border-box;
-}
-
 // the main reveal slides div
 // each slide will be in a standalone section
 .reveal .slides section {
@@ -60,6 +49,26 @@ code {
 		font-weight: 900;
 		margin-top: 0.6em;
 		margin-bottom: 0.6em;
+	}
+
+	code {
+		font-family: 'Source Code Pro', monospace;
+		font-size: 0.85em;
+		padding: 0 0.1em;
+		margin: 0;
+		background-color: #ddd;
+		border: 2px solid #aaa;
+		border-radius: 0px;
+		box-sizing: border-box;
+	}
+
+	pre > code {
+		border: none;
+		background: #282c34;
+		padding: 1em;
+		line-height: 1.2;
+		font-size: 0.85em;
+		font-weight: 400;
 	}
 }
 
