@@ -2,6 +2,10 @@
 title: "reveal.js test deck"
 date: "2019-01-10 09:13:00 +1100"
 permalink: /talks/test-deck/
+hidden: true
+summary: >-
+  a test slide deck for testing things out, especially funky new reveal.js
+  formatting and layout options
 ---
 
 {% include slides/title.html title="reveal.js test" subtitle="to test all the things" %}
