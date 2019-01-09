@@ -1,5 +1,8 @@
-<h1 id="title" class="center" style="margin-top:0;">{{ include.title }}</h1>
-<p>Dr. Ben Swift</p>
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <img src="{% asset images/pages/by-nc-sa.svg @path %}" style="height:1em; margin-left:0;">
-</a>
+<section id="title">
+  <h1 class="talk-title">{{ include.title }}</h1>
+  <p class="talk-name">Dr. Ben Swift</p>
+  <p class="talk-date">{{ page.date | date: "%d %b '%y" }}</p>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+	<img src="{% asset images/pages/by-nc-sa.svg @path %}" style="height:2rem; margin-left:0;">
+  </a>
+</section>

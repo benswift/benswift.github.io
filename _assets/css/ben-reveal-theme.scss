@@ -56,6 +56,19 @@
         }
     }
 
+	// title slides
+
+	.talk-title {
+		color: $background-color;
+		background: $highlight-color;
+		display: inline;
+		padding: 0.1em 0.3em;
+	}
+	.talk-date {
+		font-style: italic;
+		color: $text-grey;
+	}
+
     // impact slides
 	// slide background needs to be provided through data-background-color
     &.impact {
