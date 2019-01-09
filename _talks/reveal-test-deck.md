@@ -3,6 +3,8 @@ title: "reveal.js test deck"
 permalink: /talks/test-deck/
 ---
 
+{% include slides/title.html title="reveal.js test" subtitle="to test all the things" %}
+
 ## Here's a slide
 
 with **some** stuff on it
