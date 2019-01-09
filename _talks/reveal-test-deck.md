@@ -29,7 +29,7 @@ function foo(){
 }
 ```
 
-and `here's` some `inline` code
+and `here's` some `inline` code with `hanging` `chads`
 
 {% include slides/background-image.html image="images/pages/my-family.jpg" heading="my fambly" bgsize="contain" %}
 
