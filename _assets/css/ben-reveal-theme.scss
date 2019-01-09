@@ -39,6 +39,11 @@ $text-grey: #777;
 		font-weight: 900;
 	}
 
+    // give the paragraphs room to breathe
+    p {
+        margin-bottom: 0.8em;
+    }
+
     // headers
 	h1 {
 		margin-top: 60vh;
