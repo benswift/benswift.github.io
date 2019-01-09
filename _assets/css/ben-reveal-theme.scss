@@ -30,6 +30,9 @@ $text-grey: #777;
 	width: 90vw;
 	padding: 0 5vw;
 
+	// give everything room to breathe
+	* { margin-bottom: 0.8em; }
+
 	// inline emphasis
 	em {
 		font-style: italic;
@@ -38,11 +41,6 @@ $text-grey: #777;
 	strong {
 		font-weight: 900;
 	}
-
-    // give the paragraphs room to breathe
-    p {
-        margin-bottom: 0.8em;
-    }
 
     // headers
 	h1 {
@@ -54,7 +52,6 @@ $text-grey: #777;
 		font-size: 2rem;
 		font-weight: 900;
 		margin-top: 0.6em;
-		margin-bottom: 0.6em;
 	}
 
     // impact slides
@@ -92,7 +89,6 @@ $text-grey: #777;
 		border: none;
 		background: #282c34;
 		padding: 1em;
-		margin-bottom: 1rem;
 		line-height: 1.2;
 	}
 
