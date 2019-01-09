@@ -33,25 +33,21 @@ code {
 }
 
 // the main reveal slides div
-.reveal .slides {
+// each slide will be in a standalone section
+.reveal .slides section {
 	grid-area: content;
+	text-align: left;
 
-	// each slide will be in a standalone section
-	section {
-		padding: 0 5vw;
-		text-align: left;
-
-		h1 {
-			margin-top: 60vh;
-			font-size: 4rem;
-			font-weight: 900;
-		}
-		h2 {
-			font-size: 2rem;
-			font-weight: 900;
-			margin-top: 0.6em;
-			margin-bottom: 0.6em;
-		}
+	h1 {
+		margin-top: 60vh;
+		font-size: 4rem;
+		font-weight: 900;
+	}
+	h2 {
+		font-size: 2rem;
+		font-weight: 900;
+		margin-top: 0.6em;
+		margin-bottom: 0.6em;
 	}
 }
 
