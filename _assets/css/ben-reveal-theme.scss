@@ -21,15 +21,13 @@ $text-grey: #777;
 
 
 // the main reveal slides div
-.slides {
+.reveal .slides {
 	grid-area: content;
+
 	section {
 		padding: 0 5vw;
+		text-align: left;
 	}
-}
-
-.pause-overlay {
-	display: none;
 }
 
 // grid layout ftw
