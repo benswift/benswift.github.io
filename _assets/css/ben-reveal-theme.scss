@@ -51,6 +51,7 @@ $text-grey: #777;
 		margin-bottom: 0.6em;
 	}
 
+	// source code display
 	code {
 		font-family: 'Source Code Pro', monospace;
 		font-size: 0.85em;
@@ -60,7 +61,6 @@ $text-grey: #777;
 		color: darken($highlight-color, 10%);
 		background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
 	}
-
 	pre > code {
 		color: $background-color;
 		border: none;
