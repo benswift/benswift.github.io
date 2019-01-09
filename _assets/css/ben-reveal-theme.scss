@@ -32,6 +32,14 @@ code {
     box-sizing: border-box;
 }
 
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 900;
+}
+
 // the main reveal slides div
 // each slide will be in a standalone section
 .reveal .slides section {
