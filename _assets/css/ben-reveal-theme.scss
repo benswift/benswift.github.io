@@ -52,6 +52,17 @@ $text-grey: #777;
 		margin-bottom: 0.6em;
 	}
 
+    // impact slides
+    &.impact {
+        font-size: 2.5rem;
+        text-align: center;
+        color: $background-color;
+        font-weight: 900;
+        strong {
+            color: #f39c12;
+        }
+    }
+
 	// make headings on background image slides readable
     &[data-background-image] {
         h1,h2 {
