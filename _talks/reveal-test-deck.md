@@ -1,5 +1,6 @@
 ---
 title: "reveal.js test deck"
+date: "2019-01-10 09:13:00 +1100"
 permalink: /talks/test-deck/
 ---
 
