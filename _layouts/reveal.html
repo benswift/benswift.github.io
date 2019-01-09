@@ -6,15 +6,7 @@
 	{% asset css/ben-reveal-theme.scss %}
   </head>
   <body>
-	<div class="container">
-	  <header>
-	  </header>
-	  <main>
-		{{ content | revealify }}
-	  </main>
-	  <footer>
-	  </footer>
-	</div>
+	{{ content | revealify }}
 
 	<script src="{{site.baseurl}}/reveal.js-3.7.0/lib/js/head.min.js"></script>
 	<script src="{{site.baseurl}}/reveal.js-3.7.0/js/reveal.js"></script>

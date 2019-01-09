@@ -33,7 +33,6 @@
 	em { font-style: italic; }
 	strong { font-weight: 900; }
 
-	grid-area: content;
 	text-align: left;
 
     // headers
@@ -120,28 +119,4 @@
 	transition-property: background-color;
 	transition-duration: 0.5s;
 
-}
-
-// grid layout ftw
-
-.container {
-	display: grid;
-	grid-template-columns: 100vw;
-	grid-template-rows:  8vh 90vh 2vh;
-	grid-template-areas:
-		"header"
-		"content"
-		"footer";
-	overflow: hidden;
-}
-
-header {
-	grid-area: header;
-	background-color: #333;
-}
-
-
-footer {
-	grid-area: footer;
-	background-color: #bbb;
 }
