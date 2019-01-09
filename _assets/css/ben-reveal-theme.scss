@@ -90,6 +90,26 @@ $text-grey: #777;
 		margin-bottom: 1rem;
 		line-height: 1.2;
 	}
+
+	// pretty blockquotes
+    // from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+    blockquote {
+        background-color: darken($background-color, 8%);
+        border-left: 10px solid #ccc;
+        padding: 0.5em 0.5em;
+        quotes: "\201C""\201D""\2018""\2019";
+    }
+    blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.5em;
+    }
+    blockquote p {
+        display: inline;
+		font-style: normal;
+    }
 }
 
 .reveal .slide-number {
