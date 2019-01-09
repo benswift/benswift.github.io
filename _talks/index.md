@@ -1,12 +1,21 @@
 ---
+title: Talks & presentations
 layout: default
 hidden: true
 ---
 
-{% for talk in site.collections %}
+{% for talk in site.talks %}
+
+{%- unless talk.hidden -%}
 <section class="post">
-  <!-- <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p> -->
-  <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-  <p>{{ post.summary }}</p>
+  <p class="post-date">{{ talk.date | date: "%d %b '%y" }}</p>
+  <h2><a href="{{ site.baseurl }}{{ talk.url }}">{{ talk.title }}</a></h2>
+
+  {%- if talk.summary -%}
+  <p>{{ talk.summary }}</p>
+  {%- endif -%}
+
 </section>
+{%- endunless -%}
+
 {% endfor %}
