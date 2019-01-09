@@ -38,11 +38,6 @@ defaults:
     values:
       layout: reveal
 
-collections:
-  talks:
-    output: true
-    permalink: /talks/:path/
-
 # from paginate-v2 gem
 pagination:
   enabled: true
@@ -51,6 +46,8 @@ pagination:
 
 collections:
   projects:
+    output: true
+  talks:
     output: true
 
 assets:
