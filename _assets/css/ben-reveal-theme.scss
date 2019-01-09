@@ -71,9 +71,20 @@ $text-grey: #777;
 	}
 }
 
-.reveal .slide-number a {
-	text-decoration: none;
-	font-size: 1rem;
+.reveal .slide-number {
+
+	a {
+		text-decoration: none;
+		font-size: 1rem;
+	}
+
+	// pretty pink highlighting on mouseover
+	&:hover {
+		background-color: $highlight-color;
+	}
+	transition-property: background-color;
+	transition-duration: 0.5s;
+
 }
 
 // grid layout ftw
