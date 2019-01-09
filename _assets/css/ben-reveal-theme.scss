@@ -9,7 +9,7 @@ $text-grey: #777;
 :root {
 	font-family: "Inter UI", sans-serif;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 3vmin;
 	line-height: 1.4;
 	color: $text-color;
 	background-color: $background-color;
@@ -17,4 +17,38 @@ $text-grey: #777;
 
 @supports (font-variation-settings: normal) {
 	:root { font-family: 'Inter UI var alt', sans-serif; }
+}
+
+
+// the main reveal slides div
+.slides {
+	grid-area: content;
+	padding: 0 5vw;
+}
+
+.pause-overlay {
+	display: none;
+}
+
+// grid layout ftw
+
+.container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows:  8vh 90vh 2vh;
+	grid-template-areas:
+		"header"
+		"content"
+		"footer";
+}
+
+header {
+	grid-area: header;
+	background-color: #333;
+}
+
+
+footer {
+	grid-area: footer;
+	background-color: #bbb;
 }
