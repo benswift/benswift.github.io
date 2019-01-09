@@ -6,6 +6,8 @@ $highlight-color: #be2edd;
 $text-grey: #777;
 
 @import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400');
+
 :root {
 	font-family: "Inter UI", sans-serif;
 	font-weight: 400;
@@ -19,6 +21,16 @@ $text-grey: #777;
 	:root { font-family: 'Inter UI var alt', sans-serif; }
 }
 
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.85em;
+    padding: 0 0.1em;
+    margin: 0;
+    background-color: #ddd;
+    border: 2px solid #aaa;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
 
 // the main reveal slides div
 .reveal .slides {
