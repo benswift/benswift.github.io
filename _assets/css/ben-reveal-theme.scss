@@ -9,12 +9,10 @@ $text-grey: #777;
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400');
 
 :root {
-	font-family: "Inter UI", sans-serif;
-	font-weight: 300;
 	font-size: 3vmax;
-	line-height: 1.4;
-	color: $text-color;
 	background-color: $background-color;
+	color: $text-color;
+	// for rem purposes
 }
 
 @supports (font-variation-settings: normal) {
@@ -24,23 +22,23 @@ $text-grey: #777;
 // the main reveal slides div
 // each slide will be in a standalone section
 .reveal .slides section {
-	grid-area: content;
-	text-align: left;
-
 	width: 90vw;
 	padding: 0 5vw;
 
 	// give everything room to breathe
 	* { margin-bottom: 0.8em; }
 
-	// inline emphasis
-	em {
-		font-style: italic;
-	}
+	// text
+	font-family: "Inter UI", sans-serif;
+	font-weight: 300;
+	line-height: 1.3;
 
-	strong {
-		font-weight: 900;
-	}
+	// inline emphasis
+	em { font-style: italic; }
+	strong { font-weight: 900; }
+
+	grid-area: content;
+	text-align: left;
 
     // headers
 	h1 {
@@ -53,8 +51,17 @@ $text-grey: #777;
 		font-weight: 900;
 		margin-top: 0.6em;
 	}
+	// make headings on background image slides readable
+    &[data-background-image] {
+        h1,h2 {
+            background-color: adjust-color(#FFFFFF, $alpha: -0.25);
+            display: inline-block;
+            padding: 0.2em 0.4em;
+        }
+    }
 
     // impact slides
+	// slide background needs to be provided through data-background-color
     &.impact {
         font-size: 2.5rem;
         text-align: center;
@@ -62,15 +69,6 @@ $text-grey: #777;
         font-weight: 900;
         strong {
             color: #f39c12;
-        }
-    }
-
-	// make headings on background image slides readable
-    &[data-background-image] {
-        h1,h2 {
-            background-color: adjust-color(#FFFFFF, $alpha: -0.25);
-            display: inline-block;
-            padding: 0.2em 0.4em;
         }
     }
 
