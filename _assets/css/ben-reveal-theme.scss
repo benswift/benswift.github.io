@@ -32,14 +32,6 @@ code {
     box-sizing: border-box;
 }
 
-em {
-	font-style: italic;
-}
-
-strong {
-	font-weight: 900;
-}
-
 // the main reveal slides div
 // each slide will be in a standalone section
 .reveal .slides section {
@@ -49,6 +41,15 @@ strong {
 	width: 90vw;
 	padding: 0 5vw;
 
+	em {
+		font-style: italic;
+	}
+
+	strong {
+		font-weight: 900;
+	}
+
+    // headers
 	h1 {
 		margin-top: 60vh;
 		font-size: 4rem;
