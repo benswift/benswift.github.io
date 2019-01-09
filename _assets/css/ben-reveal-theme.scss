@@ -23,7 +23,9 @@ $text-grey: #777;
 // the main reveal slides div
 .slides {
 	grid-area: content;
-	padding: 0 5vw;
+	section {
+		padding: 0 5vw;
+	}
 }
 
 .pause-overlay {
@@ -34,7 +36,7 @@ $text-grey: #777;
 
 .container {
 	display: grid;
-	grid-template-columns: auto;
+	grid-template-columns: 100vw;
 	grid-template-rows:  8vh 90vh 2vh;
 	grid-template-areas:
 		"header"
