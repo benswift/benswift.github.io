@@ -45,6 +45,21 @@ $text-grey: #777;
 header {
 	grid-area: header;
 	background-color: #333;
+
+	nav.logo {
+		a {
+			text-decoration: none;
+			font-size: 1.3rem;
+			font-weight: 700;
+			color: $background-color;
+			padding: 5vw;
+			&:hover {
+				color: $highlight-color;
+				background-color: $background-color;
+			}
+		}
+		margin-bottom: 15px;
+	}
 }
 
 
