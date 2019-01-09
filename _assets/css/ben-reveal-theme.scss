@@ -105,18 +105,26 @@
     }
 }
 
-.reveal .slide-number {
+.reveal {
 
-	a {
-		text-decoration: none;
-		font-size: 1rem;
+	.slide-number {
+
+		a {
+			text-decoration: none;
+			font-size: 1rem;
+		}
+
+		// pretty pink highlighting on mouseover
+		&:hover {
+			background-color: $highlight-color;
+		}
+		transition-property: background-color;
+		transition-duration: 0.5s;
 	}
 
-	// pretty pink highlighting on mouseover
-	&:hover {
-		background-color: $highlight-color;
-	}
-	transition-property: background-color;
-	transition-duration: 0.5s;
-
+    // progress bar
+    .progress {
+	    color: $highlight-color;
+        height: 0.4rem;
+    }
 }
