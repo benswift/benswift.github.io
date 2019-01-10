@@ -89,9 +89,7 @@
         text-align: center;
         color: $background-color;
         font-weight: 900;
-        strong {
-            color: #f39c12;
-        }
+        strong { color: #f39c12; }
 		a { color: lighten($highlight-color, 10%); }
     }
 
