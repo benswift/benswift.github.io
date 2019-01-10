@@ -92,6 +92,7 @@
         strong {
             color: #f39c12;
         }
+		a { color: lighten($highlight-color, 10%); }
     }
 
 	// lists
