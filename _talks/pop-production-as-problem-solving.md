@@ -1,6 +1,7 @@
 ---
 title: Pop-production as problem-solving
 date: "2019-01-11 10:00:00 +1100"
+permalink: /talks/pop-production/
 summary: >-
   Sure, computers are useful for solving problems, but what about when
   creativity is required? How do we solve problems like producing a pop song
@@ -10,19 +11,19 @@ summary: >-
 {% include slides/title.html %}
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/anders-jilden-89745-unsplash.jpg"
+           image="images/talks/pop-production-as-problem-solving/anders-jilden-89745-unsplash.jpg"
            heading="give a guest lecture? sure 😊"  %}
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/marcus-cramer-426515-unsplash.jpg"
+           image="images/talks/pop-production-as-problem-solving/marcus-cramer-426515-unsplash.jpg"
            heading="oh, is it January already?"  %}
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/aditya-chinchure-494048-unsplash.jpg"
+           image="images/talks/pop-production-as-problem-solving/aditya-chinchure-494048-unsplash.jpg"
            heading="<em>extempore</em>: a livecoding language"  %}
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/rob-potter-350100-unsplash.jpg"
+           image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
            heading="livecoding"  %}
 
 ## outline
@@ -54,7 +55,7 @@ yikes!
 - clap politely at the end (even if I flame out)
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/bieber.jpg"
+           image="images/talks/pop-production-as-problem-solving/bieber.jpg"
            heading="Pop music is <em>produced</em>"
 		   id="pop-production" %}
 
@@ -70,11 +71,11 @@ pop songs are characterised by:
 - processed/synthetic sounds (lots of computers involved in the production)
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/quincy.jpg"
+           image="images/talks/pop-production-as-problem-solving/quincy.jpg"
            heading="Quincy Jones" %}
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/max-martin.jpg"
+           image="images/talks/pop-production-as-problem-solving/max-martin.jpg"
            heading="Max Martin" %}
 
 {% include slides/impact.html %}
@@ -88,7 +89,7 @@ the problem:
 {:.fragment}
 write a **no. 1** hit
 
-{% include slides/background-image.html image="images/talks/nysf-2019/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" %}
+{% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" %}
 
 {% include slides/impact.html %}
 
@@ -97,14 +98,14 @@ write a **no. 1** hit
 a series of pitched "events" over time
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/alex-harvey-44062-unsplash.jpg"
+           image="images/talks/pop-production-as-problem-solving/alex-harvey-44062-unsplash.jpg"
            heading="Pedantry alert!"  %}
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/johannes-plenio-473709-unsplash.jpg"  %}
+           image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg"  %}
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/rawpixel-com-586684-unsplash.jpg"  %}
+           image="images/talks/pop-production-as-problem-solving/rawpixel-com-586684-unsplash.jpg"  %}
 
 ## dimensions of the domain
 
@@ -127,7 +128,7 @@ and [me]({{site.baseurl}}{% link index.md %}))
 don't worry about the syntax, I'll explain enough for you to follow along
 
 {% include slides/background-image.html
-           image="images/talks/nysf-2019/rob-potter-350100-unsplash.jpg"
+           image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
            heading="let's go!"  %}
 
 {% include slides/impact.html %}
