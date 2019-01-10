@@ -30,7 +30,7 @@ summary: >-
 
 - [what's a producer?](#pop-production)
 - [modelling the domain](#modelling-the-domain)
-- [programming as problem solving](#production-as-problem-solving)
+- [crowdsourced livecoding](#crowdsourced-livecoding)
 
 ## what *I'm* gonna do
 
@@ -129,7 +129,8 @@ don't worry about the syntax, I'll explain enough for you to follow along
 
 {% include slides/background-image.html
            image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
-           heading="let's go!"  %}
+           heading="let's go!"
+		   id="crowdsourced-livecoding" %}
 
 {% include slides/impact.html %}
 
