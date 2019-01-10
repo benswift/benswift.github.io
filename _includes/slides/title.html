@@ -1,10 +1,7 @@
 <section id="title" class="center">
   <h1 class="talk-title">{{ page.title }}</h1>
-  <p>
-	<a href="{{ site.url }}"><span class="talk-name">Dr. Ben Swift</span></a>
-	<span>&nbsp;</span>
-	<span class="talk-date">{{ page.date | date: "%d %b '%y" }}</span>
-  </p>
+  <p class="talk-name"><a href="{{ site.url }}">Dr. Ben Swift</a></p>
+  <p class="talk-date">{{ page.date | date: "%d %b '%y" }}</p>
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 	<img src="{% asset images/pages/by-nc-sa.svg @path %}" style="height:1.5rem; margin-left:0;">
   </a>
