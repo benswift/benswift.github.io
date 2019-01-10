@@ -11,20 +11,21 @@ summary: >-
 {% include slides/title.html %}
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/anders-jilden-89745-unsplash.jpg"
-           heading="give a guest lecture? sure 😊"  %}
+		   image="images/talks/pop-production-as-problem-solving/anders-jilden-89745-unsplash.jpg"
+		   heading="give a guest lecture? sure 😊"  %}
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/marcus-cramer-426515-unsplash.jpg"
-           heading="oh, is it January already?"  %}
+		   image="images/talks/pop-production-as-problem-solving/marcus-cramer-426515-unsplash.jpg"
+		   heading="oh, is it January already?"  %}
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/aditya-chinchure-494048-unsplash.jpg"
-           heading="<em>extempore</em>: a livecoding language"  %}
+		   image="images/talks/pop-production-as-problem-solving/aditya-chinchure-494048-unsplash.jpg"
+		   heading="<a href=\"https://extemporelang.github.io/\">extempore</a>: a
+		   livecoding language" %}
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
-           heading="livecoding"  %}
+		   image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
+		   heading="livecoding"  %}
 
 ## outline
 
@@ -54,9 +55,11 @@ yikes!
 - be kind when I make mistakes
 - clap politely at the end (even if I flame out)
 
+{% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.jpg" heading="I'm old..." %}
+
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/bieber.jpg"
-           heading="Pop music is <em>produced</em>"
+		   image="images/talks/pop-production-as-problem-solving/bieber.jpg"
+		   heading="pop music is <em>produced</em>"
 		   id="pop-production" %}
 
 ## what's a producer?
@@ -71,16 +74,16 @@ pop songs are characterised by:
 - processed/synthetic sounds (lots of computers involved in the production)
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/quincy.jpg"
-           heading="Quincy Jones" %}
+		   image="images/talks/pop-production-as-problem-solving/quincy.jpg"
+		   heading="Quincy Jones" %}
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/max-martin.jpg"
-           heading="Max Martin" %}
+		   image="images/talks/pop-production-as-problem-solving/max-martin.jpg"
+		   heading="Max Martin" %}
 
 {% include slides/impact.html %}
 
-programming as problem solving...
+programming as **problem solving**...
 
 {% include slides/impact.html %}
 
@@ -98,14 +101,14 @@ write a **no. 1** hit
 a series of pitched "events" over time
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/alex-harvey-44062-unsplash.jpg"
-           heading="pedantry alert!"  %}
+		   image="images/talks/pop-production-as-problem-solving/alex-harvey-44062-unsplash.jpg"
+		   heading="pedantry alert!"  %}
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg"  %}
+		   image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg"  %}
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/rawpixel-com-586684-unsplash.jpg"  %}
+		   image="images/talks/pop-production-as-problem-solving/rawpixel-com-586684-unsplash.jpg"  %}
 
 ## dimensions of the domain
 
@@ -119,7 +122,7 @@ a series of pitched "events" over time
 - **pitch** (in MIDI note numbers), e.g. middle C as 60, C# as 61, etc.
 - **loudness** (0 is silent, 127 is super loud)
 
-## *extempore*: a livecoding language
+## [extempore](https://extemporelang.github.io/): a livecoding *language*
 
 [extempore](https://extemporelang.github.io/) is a programming language designed
 for musical livecoding (written [Andrew Sorensen](https://twitter.com/digego)
@@ -128,12 +131,26 @@ and [me]({{site.baseurl}}{% link index.md %}))
 don't worry about the syntax, I'll explain enough for you to follow along
 
 {% include slides/background-image.html
-           image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
-           heading="let's go!"
+		   image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
+		   heading="let's go!"
 		   id="crowdsourced-livecoding" %}
+
+## what did we learn?
+
+pop music isn't black magic, it's a domain with lots of structure/patterns
+
+computers/code are *really useful* for modelling/exploring this stuff
+
+{:.fragment}
+
+this is *not* AI, either
 
 {% include slides/impact.html %}
 
+{:style="font-size:2em;"}
+
 🤔
+
+{:.fragment}
 
 <https://benswift.me>
