@@ -1,5 +1,5 @@
 ---
-title: Talks & presentations
+title: Talks
 layout: page
 hidden: true
 ---
