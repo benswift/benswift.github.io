@@ -59,10 +59,9 @@
 	// title slides
 
 	.talk-title {
-		color: $background-color;
-		background: $highlight-color;
-		display: inline;
-		padding: 0.1em 0.3em;
+        border-bottom-color: $highlight-color;
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
 	}
 	.talk-date {
 		font-style: italic;
