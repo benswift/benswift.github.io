@@ -16,6 +16,11 @@
 	:root { font-family: 'Inter UI var alt', sans-serif; }
 }
 
+// a pretty ghetto attempt to make these slides show up ok on mobile screens in portrait layout
+@media (max-aspect-ratio: 2/3) {
+	:root { font-size: 3vh; }
+}
+
 // the main reveal slides div
 // each slide will be in a standalone section
 .reveal .slides section {
