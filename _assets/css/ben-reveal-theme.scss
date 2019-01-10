@@ -9,7 +9,7 @@
 	background-color: $background-color;
 	color: $text-color;
 	font-family: "Inter UI", sans-serif;
-	font-size: 3vmax;
+	font-size: 3vw;
 }
 
 @supports (font-variation-settings: normal) {
@@ -54,11 +54,11 @@
 
     // headers
 	h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 		font-weight: 900;
 	}
 	h2 {
-		font-size: 2rem;
+		font-size: 1.6rem;
 		font-weight: 900;
 	}
 	// make headings on background image slides readable
