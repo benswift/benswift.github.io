@@ -81,6 +81,12 @@
         }
     }
 
+	// lists
+	li {
+		list-style: inside;
+		margin-bottom: 0.2rem;
+	}
+
 	// source code display
 	code {
 		font-family: 'Ubuntu Mono', monospace;
@@ -125,7 +131,7 @@
 
 		a {
 			text-decoration: none;
-			font-size: 1rem;
+			font-size: 0.8rem;
 		}
 
 		// pretty pink highlighting on mouseover
