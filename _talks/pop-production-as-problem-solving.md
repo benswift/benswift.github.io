@@ -99,7 +99,7 @@ a series of pitched "events" over time
 
 {% include slides/background-image.html
            image="images/talks/pop-production-as-problem-solving/alex-harvey-44062-unsplash.jpg"
-           heading="Pedantry alert!"  %}
+           heading="pedantry alert!"  %}
 
 {% include slides/background-image.html
            image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg"  %}
