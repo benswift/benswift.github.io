@@ -134,8 +134,6 @@ don't worry about the syntax, I'll explain enough for you to follow along
 
 {% include slides/impact.html %}
 
-questions?
-
 🤔
 
 <https://benswift.me>
