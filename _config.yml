@@ -53,8 +53,7 @@ collections:
 
 assets:
   sources:
-    - _assets/
-    - reveal.js-3.7.0/ # required to pick up reveal.scss
+    - assets/
   autoprefixer:
     browsers:
     - "last 2 versions"
