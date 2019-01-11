@@ -12,6 +12,8 @@
 	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
    };
   </script>
+
+  <!-- colophon -->
   <p>
 	designed & built with
 	<a href="https://jekyllrb.com"><i class="fas fa-vial"></i></a>,
@@ -19,11 +21,25 @@
 	<a href="https://en.wikipedia.org/wiki/Love"><i class="fas fa-heart"></i></a>
 	by Ben Swift &copy; {{ site.time | date: "%Y" }}
   </p>
+
+  <!-- licence -->
+  <p>
+	<a chref="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+	  <i class="fab fa-creative-commons"></i>
+	  <i class="fab fa-creative-commons-by"></i>
+	  <i class="fab fa-creative-commons-sa"></i>
+	  <i class="fab fa-creative-commons-nc"></i>
+	</a>
+  </p>
+
+  <!-- throw shade on IE -->
   <p>
 	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>, should work on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
+
+  <!-- open source humblebrag -->
   <p>
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i class="fab fa-github"></i></a>
   </p>
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">{% asset images/pages/by-nc-sa.svg @inline %}</a>
+
 </footer>
