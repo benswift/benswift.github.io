@@ -87,6 +87,13 @@
 		font-size: 0.8em;
 		color: $text-grey;
 	}
+	.talk-title-navigation {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		* { margin: 0em; }
+	}
 
     // impact slides
 	// slide background needs to be provided through data-background-color
