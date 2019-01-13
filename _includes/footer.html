@@ -19,7 +19,7 @@
 	<a href="https://jekyllrb.com"><i class="fas fa-vial"></i></a>,
 	<a id="cafe-url" onclick="randomCafe();"><i class="fas fa-coffee" style="cursor: pointer;"></i></a> and
 	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><i class="fas fa-heart"></i></a>
-	by Ben Swift <i class="fas fa-copyright"></i> {{ site.time | date: "%Y" }}
+	by Ben Swift
   </p>
 
   <!-- licence -->
@@ -30,11 +30,12 @@
   <!-- throw shade on IE -->
   <p>
 	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
-	should work on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
+	site revision <code><a href="https://github.com/benswift/benswift.github.io/tree/{{ site.data['git-HEAD'] }}">{{ site.data['git-HEAD'] | truncate: 6, "" }}</a></code>,
 	source available on <a href="https://github.com/benswift/benswift.github.io"><i class="fab fa-github"></i></a>
   </p>
 
