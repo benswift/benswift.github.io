@@ -15,7 +15,7 @@ talks would be **really boring**).
   <p class="post-date">{{ talk.date | date: "%d %b '%y" }}</p>
   <h2><a href="{{ site.baseurl }}{{ talk.url }}">{{ talk.title }}</a></h2>
   {%- if talk.summary -%}
-  <p>{{ talk.summary }}</p>
+  <p>{{ talk.summary | markdownify }}</p>
   {%- endif -%}
 </section>
 {%- endunless -%}
