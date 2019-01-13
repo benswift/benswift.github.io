@@ -1,5 +1,8 @@
 <section id="title" class="center">
   <h1 class="talk-title">{{ page.title }}</h1>
+  {%- if page.subtitle -%}
+  <h1 class="talk-subtitle">{{ page.subtitle }}</h1>
+  {%- endif -%}
   <p class="talk-name"><a href="{{ site.url }}">Dr. Ben Swift</a></p>
   <p class="talk-date">{{ page.date | date: "%d %b '%y" }}</p>
 
