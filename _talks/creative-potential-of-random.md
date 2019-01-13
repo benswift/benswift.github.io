@@ -117,27 +117,19 @@ something else to happen the other 90%
 mapping (I know the word "map" is overloaded in programming) in this context
 means what do you *do* with the randomness
 
-in my livecoding, I use random numbers to control:
-- pitch
-- loudness/velocity
-- duration
-- rhythm
-- timbre
+in my livecoding, I use random numbers to control/modulate: **pitch**,
+**loudness**, **duration**, **rhythm**, **timbre** & more
 
 ## mapping random numbers in your sketches
 
 in your sketches, think about how (and what kinds) of randomness you could use
-to control
-- position
-- size/shape
-- colour/transparency
-- stroke/fill
+to control: **position**, **size/shape**, **colour/transparency**,
+**stroke/fill**, etc.
 
 what's the right balance between **predictability** and **surprise**?
 
-choosing where to use randomness, where not to use it, and what type of randomness to use
-
-**this is where the art happens**
+choosing where to use randomness, where not to use it, and what type of
+randomness to use: *this is where the art happens*
 
 ## re-creating the random pixels image
 
