@@ -68,7 +68,7 @@
 	}
 	// make headings on background image slides readable
     &[data-background-image] {
-        h1,h2 {
+        h1,h2,p {
             background-color: adjust-color(#FFFFFF, $alpha: -0.25);
             display: inline-block;
             padding: 0.2em 0.4em;
