@@ -16,11 +16,11 @@ gem "jekyll", "~> 3.8"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.11"
-  gem "jekyll-paginate-v2", "~> 2.0"
+  gem "jekyll-feed", "~> 0"
+  gem "jekyll-paginate-v2", "~> 2"
   gem "jekyll-compose"
-  gem "jekyll-assets", "~> 3.0"
-  gem "autoprefixer-rails", "~> 9.4"
-  gem "jekyll-seo-tag", "~> 2.5"
-  gem "html-proofer", "~> 3.10"
+  gem "jekyll-assets", "~> 3"
+  gem "autoprefixer-rails", "~> 9"
+  gem "jekyll-seo-tag", "~> 2"
+  gem "html-proofer", "~> 3"
 end
