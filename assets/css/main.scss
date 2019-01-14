@@ -3,6 +3,18 @@
 // fonts and typography
 
 @import url('https://rsms.me/inter/inter-ui.css');
+
+// use self-hosted Courier Prime (it's not on Google fonts or anything)
+@font-face {
+	font-family: "Courier Prime";
+	src: font-files(
+		"{% asset \"fonts/courier-prime/courier-prime.ttf\" @path %}",
+		"{% asset \"fonts/courier-prime/courier-prime-bold.ttf\" @path %}",
+		"{% asset \"fonts/courier-prime/courier-prime-italic.ttf\" @path %}",
+		"{% asset \"fonts/courier-prime/courier-prime-bold-italic.ttf\" @path %}"
+	);
+}
+
 :root {
 	font-family: "Inter UI", sans-serif;
 	font-weight: 400;
@@ -40,6 +52,7 @@ strong {
 
 // this is largely pinched from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 code {
+	font-family: "Courier Prime", "Courier", monospace;
 	color: darken($highlight-color, 10%);
 	background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
     font-size: 90%;

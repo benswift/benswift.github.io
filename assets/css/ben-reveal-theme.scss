@@ -4,7 +4,17 @@
 @import "./reveal-box-slides.scss";
 
 @import url('https://rsms.me/inter/inter-ui.css');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&subset=latin-ext');
+
+// use self-hosted Courier Prime (it's not on Google fonts or anything)
+@font-face {
+	font-family: "Courier Prime";
+	src: font-files(
+		"{% asset \"fonts/courier-prime/courier-prime.ttf\" @path %}",
+		"{% asset \"fonts/courier-prime/courier-prime-bold.ttf\" @path %}",
+		"{% asset \"fonts/courier-prime/courier-prime-italic.ttf\" @path %}",
+		"{% asset \"fonts/courier-prime/courier-prime-bold-italic.ttf\" @path %}"
+	);
+}
 
 :root {
 	background-color: $background-color;
@@ -115,7 +125,7 @@
 
 	// source code display
 	code {
-		font-family: 'Ubuntu Mono', monospace;
+		font-family: "Courier Prime", "Courier", monospace;
 		font-weight: 400;
 		padding: 0.1rem 0.3rem;
 		border-radius: 0.2rem;
