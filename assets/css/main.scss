@@ -30,6 +30,10 @@
 	}
 }
 
+h1,h2,h3,p {
+	padding: 0 0.8rem;
+}
+
 a {
 	color: $link-color;
 	text-decoration: none;
@@ -95,9 +99,10 @@ pre > code {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	color: $text-color;
+	padding: 0 0.6rem;
 
 	* {
-		padding: 5px;
+		padding: 0.2rem;
 	}
 }
 
@@ -117,7 +122,7 @@ header {
 			font-weight: 700;
 			background-color: $highlight-color;
 			color: white;
-			padding: 5px 10px;
+			padding: 0.4rem 0.8rem;
 			&:hover {
 				color: $highlight-color;
 				background-color: $background-color;
