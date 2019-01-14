@@ -22,4 +22,5 @@ group :jekyll_plugins do
   gem "jekyll-assets", "~> 3.0"
   gem "autoprefixer-rails", "~> 9.4"
   gem "jekyll-seo-tag", "~> 2.5"
+  gem "html-proofer", "~> 3.10"
 end
