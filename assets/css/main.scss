@@ -66,18 +66,19 @@ code {
 
 pre > code {
 	background: #282c34;
+	border-radius: 0;
 }
 
 // main grid layout - mobile-first
 
 .container {
 	display: grid;
-	grid-template-columns: 5vw 90vw 5vw;
+	grid-template-columns: 100vw;
 	grid-template-rows: auto;
 	grid-template-areas:
-		". header ."
-		". main ."
-		". footer .";
+		"header"
+		"main"
+		"footer";
 }
 
 // make cap the width of the "main" content on wider screens
