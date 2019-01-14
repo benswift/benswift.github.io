@@ -61,10 +61,9 @@ code {
 	font-family: "Courier Prime", "Courier", monospace;
 	color: darken($highlight-color, 10%);
 	background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
-    font-size: 90%;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    padding: .1rem .3rem .2rem;
+    padding: .3rem .3rem .1rem;
     border-radius: .2rem;
 }
 
