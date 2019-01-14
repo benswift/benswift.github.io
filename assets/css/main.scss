@@ -84,14 +84,7 @@ pre > code {
 		"footer";
 }
 
-// make cap the width of the "main" content on wider screens
-@media screen and (min-width: 1000px) {
-	.container {
-		grid-template-columns: 1fr 800px 1fr;
-	}
-}
-
-// style the grid components
+// navigation (useful in header, but in other places as well)
 
 .navigation {
 	display: flex;
@@ -100,16 +93,16 @@ pre > code {
 	color: $text-color;
 	padding: 0 0.6rem;
 
-	* {
+	&>* {
 		padding: 0.2rem;
 	}
-}
 
 	.disabled {
 		color: $text-grey;
 		cursor: not-allowed;
 	}
 }
+
 
 header {
 	grid-area: header;
@@ -197,4 +190,26 @@ blockquote p {
 
 img {
 	width: 100%;
+}
+
+// responsive design, y'all
+@media screen and (min-width: 1000px) {
+	.container {
+		grid-template-columns: 1fr 800px 1fr;
+		grid-template-areas:
+			". header ."
+			". main ."
+			". footer .";
+	}
+	h1,h2,h3,p {
+		padding: 0;
+	}
+	.navigation {
+		padding: 0;
+
+		&>* {
+			padding: 0.4rem 0;
+		}
+
+	}
 }
