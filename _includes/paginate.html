@@ -4,9 +4,9 @@
   <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
   {% if post.summary %}
-  <p>{{ post.summary }}</p>
+  <p>{{ post.summary | markdownify }}</p>
   {% else %}
-  <p>{{ post.excerpt }}</p>
+  <p>{{ post.excerpt | markdownify }}</p>
   {% endif %}
 
 </section>
