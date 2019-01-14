@@ -1,10 +1,10 @@
 ---
 title: Talks
 layout: page
+permalink: /talks/
 pagination: 
   enabled: true
   collection: talks
-permalink: /talks/
 ---
 
 Sometimes I give talks & presentations on various topics. Click through any of

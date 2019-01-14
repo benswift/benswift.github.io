@@ -1,8 +1,8 @@
 ---
 layout: default
+permalink: /blog/
 pagination:
   enabled: true
-permalink: /blog/
 ---
 
 {% include paginate.html %}
