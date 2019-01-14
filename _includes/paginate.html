@@ -23,7 +23,7 @@
   {% endif %}
 
   <span>
-	Page {{ page.pagination_info.curr_page }} of {{ page.pagination_info.total_pages }}
+	{{ page.pagination_info.curr_page }}/{{ page.pagination_info.total_pages }}
   </span>
 
   {% if paginator.previous_page %}
