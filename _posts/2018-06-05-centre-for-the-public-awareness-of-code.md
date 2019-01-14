@@ -9,7 +9,7 @@ tags:
 question (because they've been asked before). Mine's [The
 Castle](https://www.imdb.com/title/tt0118826/).
 
-{% asset images/posts/the-castle.jpg alt="Cast of 'The Castle'" style="width:100%;" %}
+{% asset images/posts/the-castle.jpg @pic alt="Cast of 'The Castle'" style="width:100%;" %}
 
 *What's your favourite band/album?* Again, a pretty standard "dinner party" line
 of questioning. As a muso (at least in the loose sense of the word) I find this

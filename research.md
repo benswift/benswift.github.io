@@ -4,7 +4,7 @@ layout: page
 permalink: /research/
 ---
 
-{% asset images/pages/ben-soundscapes-21.jpg alt="Ben performing at Soundscapes #21, Photo by Adam Thomas" %}
+{% asset images/pages/ben-soundscapes-21.jpg @pic alt="Ben performing at Soundscapes #21, Photo by Adam Thomas" %}
 
 I am a multidisciplinary researcher and Senior Lecturer in the Research School
 of Computer Science at the [Australian National
