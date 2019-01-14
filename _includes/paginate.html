@@ -1,3 +1,4 @@
+<!-- show the posts on this page -->
 {% for post in paginator.posts %}
 <section class="post">
   <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
@@ -11,15 +12,17 @@
 </section>
 {% endfor %}
 
+<!-- show links to other pages -->
 {% if paginator.total_pages > 1 %}
+<div class="navigation">
+
   {% if paginator.previous_page %}
-  <div style="float: left;">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">newer stuff</a>
-  </div>
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">newer stuff</a>
   {% endif %}
+
   {% if paginator.next_page %}
-  <div style="float: left;">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">older stuff</a>
-  </div>
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">older stuff</a>
   {% endif %}
+
+  </div>
 {% endif %}

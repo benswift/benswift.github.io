@@ -89,21 +89,21 @@ pre > code {
 
 // style the grid components
 
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: $text-color;
+
+	* {
+		padding: 5px;
+	}
+}
+
 header {
 	grid-area: header;
 
 	padding: 2rem 0 1rem 0;
-
-	nav.navigation {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		color: $text-color;
-
-		* {
-			padding: 5px;
-		}
-	}
 
 	nav.logo {
 		a {
