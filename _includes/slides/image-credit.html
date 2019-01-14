@@ -1,21 +1,22 @@
 <div class="image-credit" style="{{include.lrpos}}: 0;">
-  Image:
+  <div>
+	Image:
+	{% if include.title %}
+	<span class="image-credit-title">
+	  {{include.title}}
+	</span>
+	by
+	{% endif %}
 
-  {% if include.title %}
-  <span class="image-credit-title">
-	{{include.title}}
-  </span>
-  by
-  {% endif %}
+	<span class="image-credit-author">
+	  {{include.author}}
+	</span>
 
-  <span class="image-credit-author">
-	{{include.author}}
-  </span>
+	{% if include.url %}
+	(<a href="{{include.url}}">link</a>)
+	{% endif %}
 
-  {% if include.url %}
-  (<a href="{{include.url}}">link</a>)
-  {% endif %}
-
+  </div>
   {% if include.licence %}
   {% if include.licence_url %}
   <div class="image-credit-licence">

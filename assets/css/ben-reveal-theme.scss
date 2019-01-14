@@ -43,7 +43,7 @@
 
 	// undecorate links
 	a {
-		color: mix($text-color, $highlight-color, 50%);
+		color: $link-color;
 		text-decoration: none;
 		font-weight: 900;
 
@@ -156,8 +156,13 @@
 		padding: 0.5em;
 		font-size: 0.7em;
 
+		// image credit always shows up in bottom-left
 		position: fixed;
 		bottom: 1em;
+
+		div {
+			margin-bottom: 0;
+		}
 
 		// style the sub-components
 		.image-credit-title { font-style: italic; }
@@ -165,10 +170,7 @@
 
 		// links undecorated except on mouse-over
 		a {
-			color: inherit;
-			&:hover {
-				text-decoration: underline;
-			}
+			color: $link-color;
 		}
 
 		// transition to opaque on hover
