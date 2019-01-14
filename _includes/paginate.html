@@ -19,7 +19,7 @@
   {% if paginator.next_page %}
   <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">older stuff</a>
   {% else %}
-  <a class="nav-disabled">older stuff</a>
+  <a class="disabled">older stuff</a>
   {% endif %}
 
   <span>
@@ -29,7 +29,7 @@
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">newer stuff</a>
   {% else %}
-  <a class="nav-disabled">newer stuff</a>
+  <a class="disabled">newer stuff</a>
   {% endif %}
   </div>
 {% endif %}

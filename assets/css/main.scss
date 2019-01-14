@@ -105,9 +105,10 @@ pre > code {
 	}
 }
 
-.nav-disabled {
-	color: $text-grey;
-	cursor: not-allowed;
+	.disabled {
+		color: $text-grey;
+		cursor: not-allowed;
+	}
 }
 
 header {
