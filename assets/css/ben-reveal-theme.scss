@@ -150,7 +150,7 @@
     }
 
 	.image-credit {
-		$creditOpacity: 0.5;
+		$creditOpacity: 0.8;
         background-color: adjust-color($background-color, $alpha: -$creditOpacity);
 		color: adjust-color($text-color, $alpha: -$creditOpacity);
 		padding: 0.5em;
@@ -170,7 +170,10 @@
 
 		// links undecorated except on mouse-over
 		a {
-			color: $link-color;
+			color: adjust-color($link-color, $alpha: -$creditOpacity);
+			&:hover{
+				color: $background-color;
+			}
 		}
 
 		// transition to opaque on hover
