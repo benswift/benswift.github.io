@@ -18,9 +18,15 @@ gem "jekyll", "~> 3.8"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0"
   gem "jekyll-paginate-v2", "~> 2"
-  gem "jekyll-compose"
+  gem "jekyll-seo-tag", "~> 2"
+  # assets
   gem "jekyll-assets", "~> 3"
   gem "autoprefixer-rails", "~> 9"
-  gem "jekyll-seo-tag", "~> 2"
+  # compose
+  gem "jekyll-compose"
+  # ORCID
+  gem "faraday"
+  gem "faraday_middleware"
+  # checking things
   gem "html-proofer", "~> 3"
 end
