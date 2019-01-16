@@ -1,8 +1,8 @@
 # benswift.me source repo
 
-This is the source code for <http://benswift.me>. For more info on how it's put
+This is the source code for <https://benswift.me>. For more info on how it's put
 together, see
-<http://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html>.
+<https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html>.
 
 ## Licence
 
