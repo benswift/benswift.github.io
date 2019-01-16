@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 {% asset images/pages/theremin-75.jpg @pic alt="Ben performing live" style="width:100%;" %}
