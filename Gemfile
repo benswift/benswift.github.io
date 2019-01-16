@@ -24,9 +24,6 @@ group :jekyll_plugins do
   gem "autoprefixer-rails", "~> 9"
   # compose
   gem "jekyll-compose"
-  # ORCID
-  gem "faraday"
-  gem "faraday_middleware"
   # checking things
   gem "html-proofer", "~> 3"
 end
