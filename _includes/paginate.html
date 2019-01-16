@@ -2,7 +2,7 @@
 {% for post in paginator.posts %}
 <section class="post">
   <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
-  <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+  <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   {% if post.summary %}
   <p>{{ post.summary | markdownify }}</p>
   {% else %}
