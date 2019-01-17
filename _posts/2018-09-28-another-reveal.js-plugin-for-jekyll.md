@@ -65,7 +65,9 @@ tweak to suit your own presentation.
 <!-- this is where the reveailfy filter gets applied -->
 {% raw %}{{ content | revealify }}{% endraw %}
 
-<!-- load the reveal.js source (assuming you've put it in assets/)-->
+<!-- load the reveal.js css & js (assuming you've put it in assets/)-->
+<link rel="stylesheet" href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/reveal.css">
+<link rel="stylesheet" href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/theme/white.css">
 <script src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"></script>
 
 <!-- configure the presentation, (you can tweak options to suit) -->
