@@ -36,7 +36,7 @@ First, put this code into a `revealify.rb` file in your Jekyll `_plugins`
 directory:
 
 ```ruby
-{% include revealify.rb %}
+{% include symlinks/revealify.rb %}
 ```
 
 ## 2. add a reveal [layout](https://jekyllrb.com/docs/layouts/)
