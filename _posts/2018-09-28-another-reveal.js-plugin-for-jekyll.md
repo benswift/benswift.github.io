@@ -55,7 +55,7 @@ body tag has this in it (you'll need to make sure it's got the right paths &
 other stuff for your setup). The key part is that first `{% raw %}{{ content |
 revealify }}{% endraw %}` line---that takes the content of your page (the jekyll
 `.md` file with `layout: reveal` in the frontmatter) and passes it through the
-filter defined in the [revealify filter](#the-revealify-filter).
+"revealify" filter plugin we [made earlier](#the-revealify-filter).
 
 The configuration stuff here is just the example config from
 [reveal.js](https://github.com/hakimel/reveal.js#configuration), so feel free to
@@ -66,7 +66,7 @@ tweak to suit your own presentation.
 {% raw %}{{ content | revealify }}{% endraw %}
 
 <!-- load the reveal.js source (assuming you've put it in assets/)-->
-<script src="{{site.baseurl}}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"></script>
+<script src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"></script>
 
 <!-- configure the presentation, (you can tweak options to suit) -->
 <script>
