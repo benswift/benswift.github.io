@@ -1,8 +1,15 @@
 # benswift.me source repo
 
-This is the source code for <https://benswift.me>. For more info on how it's put
-together, see
-<https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html>.
+This is the source code for my blog - <https://benswift.me>. For more info on
+how it's put together, see [this blog
+post](https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html).
+
+## using hljs with xtlang
+
+highlight.js [now has xtlang support](https://benswift.me) (woo-hoo!), but it's
+provided as a language 'plugin' and isn't included in the standard ball of hljs
+languages. This is just a heads up if you want to include the xtlang
+highlighting on your own site---have a look around here to see how it works.
 
 ## Licence
 

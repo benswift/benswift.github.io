@@ -24,6 +24,7 @@ future: true
 
 # Build settings
 markdown: kramdown
+highlighter: none
 
 exclude:
   - Makefile
