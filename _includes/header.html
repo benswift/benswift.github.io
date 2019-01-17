@@ -6,13 +6,14 @@
 
   <nav class="navigation">
 	<!-- in-site navigation -->
-	{% assign current = page.url | downcase | split: '/' %}
+	{% assign url_components = page.url | downcase | split: '/' %}
+	{% assign current = url_components[1] %}
 
-	<a {% if current[1]  == "blog" %}class="current"{% endif %}href="{% link blog.md %}">blog</a>
-	<a {% if current[1]  == "research" %}class="current"{% endif %}href="{% link research.md %}">research</a>
-	<a {% if current[1]  == "teaching" %}class="current"{% endif %}href="{% link teaching.md %}">teaching</a>
-	<a {% if current[1]  == "talks" %}class="current"{% endif %}href="{% link talks.md %}">talks</a>
-	<a {% if current[1]  == "bio" %}class="current"{% endif %}href="{% link bio.md %}">bio</a>
+	<a {% if current == "blog" %}class="current"{% endif %}href="{% link blog.md %}">blog</a>
+	<a {% if current == "research" %}class="current"{% endif %}href="{% link research.md %}">research</a>
+	<a {% if current == "teaching" %}class="current"{% endif %}href="{% link teaching.md %}">teaching</a>
+	<a {% if current == "talks" %}class="current"{% endif %}href="{% link talks.md %}">talks</a>
+	<a {% if current == "bio" %}class="current"{% endif %}href="{% link bio.md %}">bio</a>
 
 	<!-- social icons -->
 	<a href="https://github.com/benswift"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
