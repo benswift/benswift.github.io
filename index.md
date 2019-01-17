@@ -5,8 +5,8 @@ layout: page
 
 {% asset images/pages/theremin-75.jpg @pic alt="Ben performing live" %}
 
-Hi, I'm Ben Swift---I'm a [hacker](https://github.com/benswift), [digital
-artist](https://vimeo.com/benswift) and
+Hi, I'm Ben Swift---I'm a [hacker](https://github.com/benswift),
+[artist](https://vimeo.com/benswift) and
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ).
 
 I'm a [Senior Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the
