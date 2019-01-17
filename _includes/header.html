@@ -6,11 +6,13 @@
 
   <nav class="navigation">
 	<!-- in-site navigation -->
-	<a href="{% link blog.md %}">blog</a>
-	<a href="{% link research.md %}">research</a>
-	<a href="{% link teaching.md %}">teaching</a>
-	<a href="{% link talks.md %}">talks</a>
-	<a href="{% link bio.md %}">bio</a>
+	{% assign current = page.url | downcase | split: '/' %}
+
+	<a {% if current[1]  == "blog" %}class="current"{% endif %}href="{% link blog.md %}">blog</a>
+	<a {% if current[1]  == "research" %}class="current"{% endif %}href="{% link research.md %}">research</a>
+	<a {% if current[1]  == "teaching" %}class="current"{% endif %}href="{% link teaching.md %}">teaching</a>
+	<a {% if current[1]  == "talks" %}class="current"{% endif %}href="{% link talks.md %}">talks</a>
+	<a {% if current[1]  == "bio" %}class="current"{% endif %}href="{% link bio.md %}">bio</a>
 
 	<!-- social icons -->
 	<a href="https://github.com/benswift"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>

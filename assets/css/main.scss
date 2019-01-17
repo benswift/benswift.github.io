@@ -97,6 +97,10 @@ pre > code {
 		padding: 0.2rem;
 	}
 
+	.current {
+		border-bottom: 5px solid $highlight-color;
+	}
+
 	.disabled {
 		color: $text-grey;
 		cursor: not-allowed;
