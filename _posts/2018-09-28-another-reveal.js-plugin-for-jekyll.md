@@ -57,10 +57,10 @@ tweak to suit your own presentation.
 <!-- this is where the reveailfy filter gets applied -->
 {% raw %}{{ content | revealify }}{% endraw %}
 
-<!-- load the reveal.js source -->
-<script src="{{site.baseurl}}/reveal.js-3.6.0/js/reveal.js" type="text/javascript"></script>
+<!-- load the reveal.js source (assuming you've put it in assets/)-->
+<script src="{{site.baseurl}}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"></script>
 
-<!-- configure the presentation -->
+<!-- configure the presentation, (you can tweak options to suit) -->
 <script>
  Reveal.initialize({
 
@@ -97,8 +97,14 @@ tweak to suit your own presentation.
 </script>
 ```
 
-*Note:* I'm ommitting some details here about how to set up everything (e.g.
-putting the reveal.js source folder in the right place).
+{:.hl-para}
+
+The full [layout](https://jekyllrb.com/docs/layouts/) file will depend on how
+the rest of your site works (where you've put the `reveal.js-x.x.x` folder,
+etc.) so I haven't included the full file here (you can [see it on
+GitHub](https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html),
+though). Also remember that you can see the full list of reveal configuration
+options [in the README](https://github.com/hakimel/reveal.js#configuration):
 
 ## 3. write your slides as markdown content
 
