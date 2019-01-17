@@ -47,8 +47,6 @@ pagination:
   sort_reverse: true
 
 collections:
-  projects:
-    output: true
   talks:
     output: true
 
