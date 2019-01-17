@@ -12,9 +12,9 @@ off).
 
 Sometimes in these posts I'll talk about research or art projects I'm involved
 with, although I also blog about my research on the [c/c/c
-blog](https://cs.anu.edu.au/code-creativity-culture/news/). Sometimes, however
-I'll just ramble about other stuff which is keeping me up at night. The stuff I
-write here represents my own views, not those of my employer.
+blog](https://cs.anu.edu.au/code-creativity-culture/news/). Sometimes I'll just
+ramble about other stuff which is keeping me up at night. The stuff I write here
+represents my own views, not those of my employer.
 
 Anyway, on with the show!
 
