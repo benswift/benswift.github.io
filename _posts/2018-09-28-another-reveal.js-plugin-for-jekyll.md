@@ -30,6 +30,13 @@ GH](https://github.com/benswift/benswift.github.io/), then you can just head
 there and see it for yourself if you're the sort of person who prefers reading
 code to prose. Think of this blog post as a "companion piece".
 
+## 0. download the reveal.js source
+
+It's step 0 because it's super easy---just head to
+[GitHub](https://github.com/hakimel/reveal.js/releases), download & unzip the
+latest release. You can put it wherever you like in your main site folder; I
+usually put it in `assets/`.
+
 ## 1. the revealify [filter](https://jekyllrb.com/docs/plugins/filters/) {#the-revealify-filter}
 
 First, put this code into a `revealify.rb` file in your Jekyll `_plugins`
