@@ -1,6 +1,0 @@
-[submodule "hljs"]
-	path = _highlight.js
-	url = git@github.com:highlightjs/highlight.js.git
-[submodule "hljs-xtlang"]
-	path = _highlight.js-xtlang
-	url = git@github.com:highlightjs/highlightjs-xtlang.git
