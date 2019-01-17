@@ -88,6 +88,13 @@ GitHub doesn't use highlight.js, it uses
 getting it working on GH would involve porting the language definitions to that
 project as well.
 
+### Will it always be this complicated to set up?
+
+No, once the [aformentioned issue](https://github.com/highlightjs/highlight.js/pull/1888)
+is sorted out, it should be much easier to get a "base" package of highlight.js
+from the main download website/CDN, and then to add any extras (e.g.
+Extempore/xtlang) as needed. But until that happens, shenanigans are required.
+
 ### What's with the Jane Austen quote above, then?
 
 Figuring this all out required a lot of digging around in existing packages,
