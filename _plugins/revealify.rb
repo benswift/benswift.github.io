@@ -1,4 +1,4 @@
-# (c) Ben Swift 2018, MIT Licence
+# (c) Ben Swift 2017-2019, MIT Licence
 # ben.swift@anu.edu.au
 
 # a liquid filter for turning regular md output into the <section>-enclosed
