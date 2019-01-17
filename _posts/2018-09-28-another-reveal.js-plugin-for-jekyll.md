@@ -20,8 +20,8 @@ What I want to do is to write one `.md` file per presentation, and have the
 sections (separated by `##` headings) to determine the slide splits (this is how
 [pandoc does it](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)).
 
-I wrote a simple [Jekyll](https://jekyllrb.com/docs/plugins/) to make this
-happen---which has just a couple of moving parts
+I wrote a simple [Jekyll plugin](https://jekyllrb.com/docs/plugins/) to make
+this happen---which has just a couple of moving parts
 
 {:.hl-para}
 
