@@ -7,7 +7,7 @@ date: 2019-01-17 10:54 +1100
 > must also be expert web developers. &nbsp;&nbsp;&nbsp;**Jane Austen** *(probably)*
 
 I've just spent a solid day wrestling with source code syntax highlighting on my
-blog, and I've finally got it figured out. To wit:
+blog, and I've finally got it figured out. Tada:
 
 ```armasm
 labelious:
@@ -28,7 +28,7 @@ I know you've got questions, so the rest of this post will be structured as an
 
 Yes, well, it was mostly working fine. But I was just using an
 off-the-shelf[^cdn] disribution of [highlight.js](https://highlightjs.org/),
-which supported a bunch of languages, but not all the ones I need. Especially
+which supported a bunch of languages but not all the ones I need. Especially
 Extempore, which is super-important for showing off my livecoding stuff on this
 blog.
 
