@@ -9,7 +9,8 @@ post](https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-editio
 highlight.js [now has xtlang support](https://benswift.me) (woo-hoo!), but it's
 provided as a language 'plugin' and isn't included in the standard ball of hljs
 languages. This is just a heads up if you want to include the xtlang
-highlighting on your own site---have a look around here to see how it works.
+highlighting on your own site---have a look in the `hljs-with-xtlang` branch to
+see how it works.
 
 ## Licence
 
