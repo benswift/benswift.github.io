@@ -52,6 +52,15 @@ a {
 	}
 	transition-property: color background-color;
 	transition-duration: 0.5s;
+
+	// anchor.js
+	&.anchorjs-link {
+		color: $highlight-color;
+		&:hover {
+			color: $link-color;
+		}
+		background-color: inherit;
+	}
 }
 
 h1,h2,h3 {
