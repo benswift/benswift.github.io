@@ -73,7 +73,7 @@ code {
 }
 
 pre > code {
-	background: #282c34;
+	background-color: #282c34;
 	border-radius: 0;
 }
 
@@ -121,12 +121,11 @@ header {
 	nav.logo {
 		a {
 			font-size: 1.3rem;
-			background-color: $highlight-color;
-			color: white;
+			background: linear-gradient(to left, $highlight-color, darken($highlight-color, 15%));
+			color: $background-color;
 			padding: 0.4rem 0.8rem;
 			&:hover {
-				color: $highlight-color;
-				background-color: $background-color;
+				color: $text-color;
 			}
 		}
 		margin-bottom: 15px;
