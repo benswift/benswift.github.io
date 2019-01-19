@@ -1,6 +1,6 @@
 <!-- show the posts on this page -->
 {% for post in paginator.posts %}
-<section class="post">
+<section class="post-excerpt">
   <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
   <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   {% if post.summary %}
