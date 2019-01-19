@@ -100,12 +100,8 @@
 		font-size: 0.8em;
 		color: $text-grey;
 	}
-	.talk-title-navigation {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-
-		* { margin: 0em; }
+	.talk-title-navigation > a {
+		margin-right: 1em;
 	}
 
     // impact slides

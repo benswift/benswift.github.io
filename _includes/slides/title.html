@@ -6,9 +6,10 @@
   <p class="talk-name"><a href="{{ site.url }}">Dr. Ben Swift</a></p>
   <p class="talk-date">{{ page.date | date: "%d %b '%y" }}</p>
 
+  {% include cc-link.html %}
   <nav class="talk-title-navigation">
-	{% include cc-link.html %}
-	<a href="https://twitter.com/benswift"><i title="Visit benswift on twitter" class="fab fa-twitter"></i>&nbsp;&nbsp;benswift</a>
+	<a href="https://twitter.com/benswift"><i title="Visit benswift on twitter" class="fab fa-twitter"></i></a>
+	<a href="https://github.com/benswift"><i title="Visit benswift on GitHub" class="fab fa-github"></i></a>
 	<a href="https://vimeo.com/benswift"><i title="Visit benswift on Vimeo" class="fab fa-vimeo"></i></a>
 	<a href="mailto:{{ site.email }}"><i title="Send Ben an email" class="fas fa-envelope"></i></a>
   </nav>
