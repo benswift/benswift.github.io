@@ -55,7 +55,7 @@
 	em { font-style: italic; }
 	strong { font-weight: 900; }
 
-	// undecorate links
+	// links
 	a {
 		color: $link-color;
 		text-decoration: none;
@@ -88,8 +88,13 @@
         }
     }
 
-	// title slides
+	// lists
+	li {
+		list-style: inside;
+		margin-bottom: 0.2rem;
+	}
 
+	// title slide
 	.talk-title {
         border-bottom-color: $highlight-color;
         border-bottom-style: solid;
@@ -114,12 +119,6 @@
         strong { color: #f39c12; }
 		a { color: lighten($highlight-color, 10%); }
     }
-
-	// lists
-	li {
-		list-style: inside;
-		margin-bottom: 0.2rem;
-	}
 
 	// source code display
 	code {
@@ -194,8 +193,8 @@
 	}
 }
 
+// slide-number boxes in bottom-right-hand-corner
 .reveal {
-
 	.slide-number {
 
 		a {
