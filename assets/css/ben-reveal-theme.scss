@@ -105,8 +105,12 @@
 		font-size: 0.8em;
 		color: $text-grey;
 	}
-	.talk-title-navigation > a {
-		margin-right: 1em;
+	.talk-title-navigation {
+		font-size: 1.3em;
+		width: 8em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
     // impact slides
