@@ -208,6 +208,14 @@ img {
 	width: 100%;
 }
 
+// for the bibliography (powered by jekyll-scholar)
+
+.bibliography {
+	li+li {
+		margin-top: 1em;
+	}
+}
+
 // responsive design, y'all
 @media screen and (min-width: 1000px) {
 	.container {
