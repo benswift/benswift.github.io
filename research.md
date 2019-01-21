@@ -51,3 +51,15 @@ I get a lot of emails about this sort of thing, so including these two things is
 a great way to show that you've thought a bit about what sort of research
 project you're interested in (and why I'd be a good fit). You should think hard
 about how to make your email stand out from the crowd.
+
+## Publications
+
+{:.hl-para}
+
+If you'd like to read any of these but you don't have access, [send me an
+email](mailto:ben.swift@anu.edu.au) and I can get you a pre-print 😉
+
+{% bibliography --file publications --query @*[type='livecoding set'] %}
+
+*Note:* you can also [check me out on
+ORCiD](https://orcid.org/0000-0003-2138-5969).
