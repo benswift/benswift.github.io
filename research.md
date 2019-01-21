@@ -59,7 +59,11 @@ about how to make your email stand out from the crowd.
 If you'd like to read any of these but you don't have access, [send me an
 email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
+
+### Traditional research outputs
+
 {% bibliography --file publications --query @*[type!=livecoding set] %}
 
-*Note:* you can also [check me out on
-ORCiD](https://orcid.org/0000-0003-2138-5969).
+### Non-traditional research outputs
+
+{% bibliography --file publications --query @*[type=livecoding set] %}
