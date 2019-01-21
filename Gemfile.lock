@@ -144,7 +144,7 @@ DEPENDENCIES
   jekyll-compose
   jekyll-feed (~> 0)
   jekyll-paginate-v2 (~> 2)
-  jekyll-scholar
+  jekyll-scholar (~> 5)
   jekyll-seo-tag (~> 2)
 
 BUNDLED WITH
