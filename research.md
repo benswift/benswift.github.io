@@ -74,7 +74,7 @@ datearray.day}}{% endcapture %}
 <li>
 <p class="lcset-date">{{ date | date: "%d %b '%y" }}</p>
 <p class="lcset-event">{{ lcset.event }}</p>
-<p class="lcset-place">Location: {{ lcset.event-place }}</p>
+<p class="lcset-place">{{ lcset.event-place }}</p>
 </li>
 {% endfor %}
 </ol>
