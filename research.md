@@ -64,3 +64,17 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 {% bibliography --file publications --query @*[type!=livecoding set] %}
 
+### Curated/invited livecoding performances
+
+<ol class="lcset-bibliography">
+{% for lcset in site.data.livecoding-sets.references %}
+{% assign datearray = lcset.issued[0] %}
+{% capture date %}{{ datearray.year }}-{{ datearray.month }}-{{
+datearray.day}}{% endcapture %}
+<li>
+<p class="lcset-date">{{ date | date: "%d %b '%y" }}</p>
+<p class="lcset-event">{{ lcset.event }}</p>
+<p class="lcset-place">Location: {{ lcset.event-place }}</p>
+</li>
+{% endfor %}
+</ol>

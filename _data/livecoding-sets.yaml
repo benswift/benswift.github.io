@@ -1,0 +1,320 @@
+---
+references:
+- id: swiftUntitled2013
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: >-
+    Musical Metacreation (MuMe) Algorave at ISEA 2013: International Symposium
+    on Electronic Art
+  URL: 'http://www.isea2013.org/events/mume2013/'
+  note: >-
+    *** Organising Committee ***
+
+
+    Oliver Bown (Design Lab, University of Sydney)
+
+    Philippe Pasquier (School of Interactive Arts and Technologies, Simon Fraser
+    University)
+
+    Arne Eigenfeldt (School for the Contemporary Arts, Simon Fraser University)
+
+
+    *** Curatorial Committee ***
+
+
+    George Lewis (Department of Music, Columbia University)
+
+    Alex McLean (Interdisciplinary Centre for Scientific Research in Music,
+    University of Leeds)
+
+    Michael Young (Department of Music, Goldsmiths College, University of
+    London)
+
+    Tim Blackwell (Department of Computing, Goldsmiths College, University of
+    London)
+
+    Jon McCormack (Centre for Electronic Media Art, Monash University)
+
+    Juha van ‘t Zelfde (Viral Radio founder, curator Bimhuis, Musiekgebouw,
+    Amsterdam)
+
+    Ivan Zavada (Conservatorium of Music, University of Sydney)
+
+    Aengus Martin (Faculty of Engineering, University of Sydney)
+
+    Bill Hsu (School of IT, San Francisco State University)
+  author:
+    - family: Swift
+      given: Ben
+    - family: Sorensen
+      given: Andrew
+  issued:
+    - year: 2013
+      month: 6
+      day: 15
+  event-place: '107 Projects, Redfern, NSW, Australia'
+
+- id: swiftUntitled2008
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: Transmissions in Sound
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2008
+      month: 10
+      day: 15
+  event-place: 'ANU School of Art, Canberra, Australia'
+
+- id: swiftUntitled2017
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: National Science Week '17 ACT Launch Event
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2017
+      month: 8
+      day: 11
+  event-place: 'National Film and Sound Archive, Canberra'
+
+- id: swiftUntitled2018b
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: National Science Week '18 ACT Launch Event
+  author:
+    - family: Swift
+      given: Ben
+    - family: Browne
+      given: Kieran
+  issued:
+    - year: 2018
+      month: 8
+      day: 10
+  event-place: 'Molo Bar, Australian National University'
+
+- id: swiftUntitled2018c
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: Shirty Science Season 3 launch party
+  author:
+    - family: Swift
+      given: Ben
+    - family: Browne
+      given: Kieran
+  issued:
+    - year: 2018
+      month: 8
+      day: 13
+  event-place: 'Doughnut Dept., Canberra'
+
+- id: swiftUntitled2015a
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: Collected Resonances
+  URL: 'http://www.agac.com.au/event/collected-resonances-3/'
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2015
+      month: 8
+      day: 26
+  event-place: 'ANU School of Music, Canberra, Australia'
+
+- id: swiftUntitled2013a
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: 'Revenant Media: Theremin ''75 Exhibition'
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2013
+      month: 10
+      day: 25
+  event-place: 'ANU School of Art, Canberra, Australia'
+
+- id: swiftUntitled2014c
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: 'Art, Not Apart 2014'
+  URL: 'https://artnotapart.com'
+  author:
+    - family: Swift
+      given: Ben
+    - family: Sko
+      given: Torben
+  issued:
+    - year: 2014
+      month: 3
+      day: 15
+  event-place: 'Kendall Lane Theatre, New Acton, Canberra'
+
+- id: swiftUntitled2014a
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: 'You Are Here Festival -  in case of sound: round one'
+  URL: 'https://issuu.com/newbestfriend/docs/yah_program2014_issuu'
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2014
+      month: 3
+      day: 15
+  event-place: Canberra Museum and Gallery
+
+- id: swiftUntitled2010
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: Beginning-Middle-End Festival
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2010
+      month: 9
+      day: 4
+  event-place: 'ANU School of Art, Canberra, Australia'
+
+- id: swiftUntitled2018
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: Questacon Invention Convention Closing Ceremony
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2018
+      month: 1
+      day: 19
+  event-place: 'Questacon, Canberra'
+
+- id: swiftUntitled2018a
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: 'Soundscapes Concert Series #21'
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2018
+      month: 5
+      day: 3
+  event-place: 'Smiths Alternative Bookshop, Canberra'
+
+- id: swiftUntitled2015
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: Innovation ACT 2015 Launch Party
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2015
+      month: 8
+      day: 12
+  event-place: 'John Curtin School of Medical Research, Canberra'
+
+- id: swiftUntitled2013c
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: 'ICOMOS 2013: International Council on Monuments and Sites'
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2013
+      month: 11
+      day: 2
+  event-place: 'Mt Stromlo Observatory, Canberra'
+
+- id: swiftUntitled2016
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: ANU CECS 45th Anniversary Celebration
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2016
+      month: 10
+      day: 22
+  event-place: 'National Museum of Australia, Canberra'
+
+- id: swiftUntitled2014b
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: John Hosking Farewell Reception
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2014
+      month: 5
+      day: 28
+  event-place: 'Drill Hall Gallery, Canberra'
+
+- id: swiftUntitled2009
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: 'ACMC ''09: Australasian Computer Music Conference'
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2009
+      month: 7
+      day: 3
+  event-place: Queensland University of Technology
+
+- id: swiftUntitled2017a
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: Australian Informatics Olympiad Program
+  author:
+    - family: Swift
+      given: Ben
+  issued:
+    - year: 2017
+      month: 12
+      day: 8
+  event-place: 'Australian National University, Canberra'
+
+- id: swiftUntitled2014
+  type: speech
+  title: Untitled
+  genre: livecoding set
+  event: 'ACMC ''14: Australasian Computer Music Conference'
+  author:
+    - family: Swift
+      given: Ben
+    - family: Sorensen
+      given: Andrew
+  issued:
+    - year: 2014
+      month: 7
+      day: 10
+  event-place: 'Victorian College of the Arts, Melbourne'
+...

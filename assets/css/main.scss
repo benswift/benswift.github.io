@@ -210,10 +210,24 @@ img {
 
 // for the bibliography (powered by jekyll-scholar)
 
-.bibliography {
+.bibliography, .lcset-bibliography {
 	li+li {
 		margin-top: 1em;
 	}
+	.lcset-date {
+		font-style: italic;
+		color: $text-grey;
+	}
+	.lcset-event {
+		font-weight: 900;
+	}
+	li > p {
+		margin: 0;
+	}
+}
+
+.lcset-bibliography {
+
 }
 
 // responsive design, y'all
