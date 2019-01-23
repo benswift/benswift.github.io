@@ -1,6 +1,6 @@
 ---
 references:
-- id: swiftUntitled2013
+- id: swiftUntitled2013b
   type: speech
   title: Untitled
   genre: livecoding set
@@ -69,7 +69,7 @@ references:
       day: 15
   event-place: 'ANU School of Art, Canberra, Australia'
 
-- id: swiftUntitled2017
+- id: swiftUntitled2017a
   type: speech
   title: Untitled
   genre: livecoding set
@@ -83,7 +83,7 @@ references:
       day: 11
   event-place: 'National Film and Sound Archive, Canberra'
 
-- id: swiftUntitled2018b
+- id: swiftUntitled2018a
   type: speech
   title: Untitled
   genre: livecoding set
@@ -99,7 +99,7 @@ references:
       day: 10
   event-place: 'Molo Bar, Australian National University'
 
-- id: swiftUntitled2018c
+- id: swiftUntitled2018
   type: speech
   title: Untitled
   genre: livecoding set
@@ -115,7 +115,7 @@ references:
       day: 13
   event-place: 'Doughnut Dept., Canberra'
 
-- id: swiftUntitled2015a
+- id: swiftUntitled2015
   type: speech
   title: Untitled
   genre: livecoding set
@@ -144,7 +144,7 @@ references:
       day: 25
   event-place: 'ANU School of Art, Canberra, Australia'
 
-- id: swiftUntitled2014c
+- id: swiftUntitled2014a
   type: speech
   title: Untitled
   genre: livecoding set
@@ -161,7 +161,7 @@ references:
       day: 15
   event-place: 'Kendall Lane Theatre, New Acton, Canberra'
 
-- id: swiftUntitled2014a
+- id: swiftUntitled2014c
   type: speech
   title: Untitled
   genre: livecoding set
@@ -190,7 +190,7 @@ references:
       day: 4
   event-place: 'ANU School of Art, Canberra, Australia'
 
-- id: swiftUntitled2018
+- id: swiftUntitled2018c
   type: speech
   title: Untitled
   genre: livecoding set
@@ -204,7 +204,7 @@ references:
       day: 19
   event-place: 'Questacon, Canberra'
 
-- id: swiftUntitled2018a
+- id: swiftUntitled2018b
   type: speech
   title: Untitled
   genre: livecoding set
@@ -218,7 +218,7 @@ references:
       day: 3
   event-place: 'Smiths Alternative Bookshop, Canberra'
 
-- id: swiftUntitled2015
+- id: swiftUntitled2015a
   type: speech
   title: Untitled
   genre: livecoding set
@@ -232,7 +232,7 @@ references:
       day: 12
   event-place: 'John Curtin School of Medical Research, Canberra'
 
-- id: swiftUntitled2013c
+- id: swiftUntitled2013
   type: speech
   title: Untitled
   genre: livecoding set
@@ -288,7 +288,7 @@ references:
       day: 3
   event-place: Queensland University of Technology
 
-- id: swiftUntitled2017a
+- id: swiftUntitled2017
   type: speech
   title: Untitled
   genre: livecoding set
