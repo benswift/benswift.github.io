@@ -60,7 +60,7 @@ If you'd like to read any of these but you don't have access, [send me an
 email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 
-### Traditional research outputs
+### Papers & book chapters
 
 {% bibliography --file publications --query @*[type!=livecoding set] %}
 
