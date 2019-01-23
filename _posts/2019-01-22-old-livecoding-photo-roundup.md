@@ -26,7 +26,7 @@ from [@starstoofondly](https://twitter.com/starstoofondly/status/542177320321024
 
 ### Australasian Computer Music Conference (ACMC) 2007
 
-{% asset images/posts/livecoding-photo-roundup/ben-at-kremlin-acmc-2007.jpg @pic alt="ACMC attendees hanging out at Kremlin bar" %}
+{% asset images/posts/livecoding-photo-roundup/ben-acmc-07-kremlin.jpg @pic alt="ACMC attendees hanging out at Kremlin bar" %}
 
 This isn't me *performing*, unless you count my animated conversation with
 Gordon Monro as a performance.
