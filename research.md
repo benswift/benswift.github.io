@@ -64,6 +64,3 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 {% bibliography --file publications --query @*[type!=livecoding set] %}
 
-### Non-traditional research outputs
-
-{% bibliography --file publications --query @*[type=livecoding set] %}
