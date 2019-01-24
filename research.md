@@ -62,7 +62,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 ### Papers & book chapters
 
-{% bibliography --file ben-publications --query @*[type!=livecoding set] %}
+{% bibliography --file ben-pubs.bib %}
 
 ### Curated/invited livecoding performances
 
