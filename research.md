@@ -10,9 +10,9 @@ I am a multidisciplinary researcher and Senior Lecturer in the Research School
 of Computer Science at the [Australian National
 University](https://cecs.anu.edu.au/people/ben-swift). I'm interested in
 computational art, data visualisation, human-computer interaction, hardware
-hacking/making (particularly towards creative ends) and the intersection of
-code, creativity and culture as those boundaries dissolve in the modern world. I
-lead the [code/creativity/culture
+hacking/making (particularly in pursuit of creative ends) and the intersection
+of code, creativity and culture as those boundaries dissolve in the modern
+world. I lead the [code/creativity/culture
 group](https://cs.anu.edu.au/code-creativity-culture/) at the ANU Research
 School of Computer Science (you should check out the [c/c/c group's projects
 page](https://cs.anu.edu.au/code-creativity-culture/projects/) as well).
