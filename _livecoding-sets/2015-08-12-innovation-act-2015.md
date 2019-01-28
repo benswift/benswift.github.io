@@ -1,10 +1,10 @@
 ---
-date: '2015-08-12'
-event: Innovation ACT 2015 Launch Party
+date: "2015-08-12"
+event: Innovation ACT 2015 Launch
 venue: John Curtin School of Medical Research, Canberra
-curator: ''
+curator: Natalija Nikolic
 artists:
 - Ben Swift
-gig_url: ''
-venue_url: ''
+gig_url: 
+venue_url: 
 ---

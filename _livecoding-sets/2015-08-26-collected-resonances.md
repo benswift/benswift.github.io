@@ -1,10 +1,10 @@
 ---
-date: '2015-08-26'
+date: "2015-08-26"
 event: Collected Resonances
-venue: ANU School of Music, Canberra, Australia
-curator: ''
+venue: ANU School of Music, Canberra
+curator: Chloë Hobbs
 artists:
 - Ben Swift
 gig_url: http://www.agac.com.au/event/collected-resonances-3/
-venue_url: ''
+venue_url: http://music.cass.anu.edu.au/services/bookings/venues
 ---
