@@ -50,6 +50,8 @@ pagination:
 collections:
   talks:
     output: true
+  livecoding:
+    output: false
 
 assets:
   sources:
