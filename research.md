@@ -67,14 +67,23 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 ### Curated/invited livecoding performances
 
 <ol class="lcset-bibliography">
-{% for lcset in site.data.livecoding-sets.references %}
-{% assign datearray = lcset.issued[0] %}
-{% capture date %}{{ datearray.year }}-{{ datearray.month }}-{{
-datearray.day}}{% endcapture %}
+{% for lc in site.livecoding reversed %}
 <li>
-<p class="lcset-date">{{ date | date: "%d %b '%y" }}</p>
-<p class="lcset-event">{{ lcset.event }}</p>
-<p class="lcset-place">{{ lcset.event-place }}</p>
+
+<p class="lcset-date">{{ lc.date | date: "%d %b '%y" }}</p>
+
+{% if lc.venue_url %}
+<a href="{{ lc.gig_url }}"><p class="lcset-event">{{ lc.event }}</p></a>
+{% else %}
+<p class="lcset-event">{{ lc.event }}</p>
+{% endif %}
+
+{% if lc.venue_url %}
+<a href="{{ lc.venue_url }}"><p class="lcset-place">{{ lc.venue }}</p></a>
+{% else %}
+<p class="lcset-place">{{ lc.venue }}</p>
+{% endif %}
+
 </li>
 {% endfor %}
 </ol>
