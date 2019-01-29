@@ -1,5 +1,5 @@
 ---
-title: Oils from WeiHai 威海
+title: Oils from 威海
 date: 2019-01-29 12:24 +1100
 ---
 
