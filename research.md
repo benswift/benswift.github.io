@@ -80,9 +80,9 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 {% endif %}
 
 {% if lc.venue_url %}
-<a href="{{ lc.venue_url }}"><p class="lcset-place">{{ lc.venue }}</p></a>
+<a href="{{ lc.venue_url }}"><p class="lcset-venue">{{ lc.venue }}</p></a>
 {% else %}
-<p class="lcset-place">{{ lc.venue }}</p>
+<p class="lcset-venue">{{ lc.venue }}</p>
 {% endif %}
 
 </li>
