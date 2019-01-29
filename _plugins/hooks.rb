@@ -8,6 +8,7 @@ def write_lc_set_md_files()
 
     frontmatter = Hash.new
     frontmatter["date"] = date
+    frontmatter["type"] = "gig"
     frontmatter["event"] = lcset.fetch("event")
     frontmatter["venue"] = lcset.fetch("event-place")
     frontmatter["curator"] = ""
