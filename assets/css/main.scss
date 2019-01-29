@@ -210,22 +210,23 @@ img {
 
 // for the bibliography (powered by jekyll-scholar)
 
-.bibliography, .lcset-bibliography {
-	li+li {
-		margin-top: 1em;
+.bibliography, .livecoding-bibliography {
+	p {
+		margin: 0.4em 0;
 	}
-	.lcset-date {
+	li+li {
+		margin-top: 2em;
+	}
+	.date {
 		font-style: italic;
 		color: $text-grey;
 	}
-	.lcset-event {
+	.event {
 		font-weight: 900;
 	}
-	.lcset-venue {
+	.venue {
 		font-style: italic;
-	}
-	li > p {
-		margin: 0.2em 0;
+		font-weight: 400;
 	}
 }
 

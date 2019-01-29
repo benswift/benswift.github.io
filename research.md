@@ -66,23 +66,23 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 ### Curated/invited livecoding performances
 
-<ol class="lcset-bibliography">
+<ol class="livecoding-bibliography">
 {% for lc in site.livecoding reversed %}
 {% if lc.type == "gig" and lc.hidden != true %}
 <li>
 
-<p class="lcset-date">{{ lc.date | date: "%d %b '%y" }}</p>
+<p class="date">{{ lc.date | date: "%d %b '%y" }}</p>
 
 {% if lc.venue_url %}
-<a href="{{ lc.event_url }}"><p class="lcset-event">{{ lc.event }}</p></a>
+<a href="{{ lc.event_url }}"><p class="event">{{ lc.event }}</p></a>
 {% else %}
-<p class="lcset-event">{{ lc.event }}</p>
+<p class="event">{{ lc.event }}</p>
 {% endif %}
 
 {% if lc.venue_url %}
-<a href="{{ lc.venue_url }}"><p class="lcset-venue">{{ lc.venue }}</p></a>
+<a href="{{ lc.venue_url }}"><p class="venue">{{ lc.venue }}</p></a>
 {% else %}
-<p class="lcset-venue">{{ lc.venue }}</p>
+<p class="venue">{{ lc.venue }}</p>
 {% endif %}
 
 </li>
