@@ -19,6 +19,9 @@ def write_lc_set_md_files()
   end
 end
 
-# Jekyll::Hooks.register :site, :post_render do |site|
-#   write_lc_set_md_files
-# end
+Jekyll::Hooks.register :site, :post_render do |site|
+  # write_lc_set_md_files
+  # site.collections["livecoding"].docs.each { |page|
+  #   puts page.data.keys
+  # }
+end
