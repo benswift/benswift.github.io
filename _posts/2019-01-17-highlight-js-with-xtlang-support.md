@@ -4,7 +4,7 @@ date: 2019-01-17 10:54 +1100
 ---
 
 > It is a truth, universally acknowledged, that all programming language authors
-> must also be expert web developers. &nbsp;&nbsp;&nbsp;**Jane Austen** *(probably)*
+> must also be expert web developers. (*attributed to Jane Austen*)
 
 I've just spent a solid day wrestling with source code syntax highlighting on my
 blog, and I've finally got it figured out. Tada:
