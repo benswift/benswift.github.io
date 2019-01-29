@@ -68,6 +68,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 <ol class="lcset-bibliography">
 {% for lc in site.livecoding reversed %}
+{% if lc.type == "gig" and lc.hidden != true %}
 <li>
 
 <p class="lcset-date">{{ lc.date | date: "%d %b '%y" }}</p>
@@ -85,5 +86,6 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 {% endif %}
 
 </li>
+{% endif %}
 {% endfor %}
 </ol>
