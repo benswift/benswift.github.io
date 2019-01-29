@@ -77,3 +77,4 @@ social:
 
 scholar:
   order: descending
+  style: assets/scholar/apa.csl
