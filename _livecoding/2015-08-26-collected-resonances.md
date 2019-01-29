@@ -1,5 +1,6 @@
 ---
 date: "2015-08-26"
+type: gig
 event: Collected Resonances
 venue: ANU School of Music, Canberra
 curator: Chloë Hobbs

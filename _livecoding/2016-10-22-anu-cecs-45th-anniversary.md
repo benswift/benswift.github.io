@@ -1,5 +1,6 @@
 ---
 date: "2016-10-22"
+type: gig
 event: ANU CECS 45th Anniversary Celebration
 venue: National Museum of Australia, Canberra
 curator: Amelia Bidgood
