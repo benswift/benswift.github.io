@@ -6,6 +6,6 @@ venue: 107 Projects, Redfern, NSW, Australia
 curator: Ollie Bown
 artists:
 - Ben Swift
-gig_url: http://www.isea2013.org/events/mume2013/
+event_url: http://www.isea2013.org/events/mume2013/
 venue_url: http://107.org.au
 ---

@@ -74,7 +74,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 <p class="lcset-date">{{ lc.date | date: "%d %b '%y" }}</p>
 
 {% if lc.venue_url %}
-<a href="{{ lc.gig_url }}"><p class="lcset-event">{{ lc.event }}</p></a>
+<a href="{{ lc.event_url }}"><p class="lcset-event">{{ lc.event }}</p></a>
 {% else %}
 <p class="lcset-event">{{ lc.event }}</p>
 {% endif %}

@@ -7,6 +7,6 @@ curator: Madison Hartill-Law
 artists:
 - Ben Swift
 - Kieran Browne
-gig_url: https://www.facebook.com/events/200014520685862/
+event_url: https://www.facebook.com/events/200014520685862/
 venue_url: https://www.thedoughnutdept.com/welcome
 ---

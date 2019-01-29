@@ -7,6 +7,6 @@ curator: Dan McCusker
 artists:
 - Ben Swift
 - Kieran Browne
-gig_url: https://www.scienceweek.net.au/the-curious-feast/
+event_url: https://www.scienceweek.net.au/the-curious-feast/
 venue_url: https://pop-up.anu.edu.au/contact/molo-live
 ---

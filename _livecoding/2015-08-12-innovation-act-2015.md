@@ -6,6 +6,6 @@ venue: John Curtin School of Medical Research, Canberra
 curator: Natalija Nikolic
 artists:
 - Ben Swift
-gig_url: 
+event_url: 
 venue_url: 
 ---

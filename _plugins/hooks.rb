@@ -13,7 +13,7 @@ def write_lc_set_md_files()
     frontmatter["venue"] = lcset.fetch("event-place")
     frontmatter["curator"] = ""
     frontmatter["artists"] = ["Ben Swift"]
-    frontmatter["gig_url"] = lcset.fetch("URL", "")
+    frontmatter["event_url"] = lcset.fetch("URL", "")
     frontmatter["venue_url"] = ""
 
     File.write(filename, "#{frontmatter.to_yaml}---\n")
@@ -23,6 +23,6 @@ end
 Jekyll::Hooks.register :site, :post_render do |site|
   # write_lc_set_md_files
   # site.collections["livecoding"].docs.each { |page|
-  #   puts page.data.keys
+  #   puts page.data
   # }
 end

@@ -6,6 +6,6 @@ venue: Drill Hall Gallery, Canberra
 curator: 
 artists:
 - Ben Swift
-gig_url: 
+event_url: 
 venue_url: 
 ---

@@ -6,6 +6,6 @@ venue: ANU School of Art Gallery, Canberra
 curator: Martyn Jolly
 artists:
 - Ben Swift
-gig_url: http://soa.anu.edu.au/event/revenant-media
+event_url: http://soa.anu.edu.au/event/revenant-media
 venue_url: http://soad.cass.anu.edu.au/gallery-exhibitions
 ---
