@@ -158,13 +158,13 @@
       <if type="thesis report" match="any">
         <choose>
           <if variable="DOI" match="any">
-            <text variable="DOI" prefix="&lt;https://doi.org/" suffix="&gt;"/>
+            <text variable="DOI" prefix="https://doi.org/"/>
           </if>
           <else-if variable="URL" match="any">
             <group>
               <text term="retrieved" text-case="capitalize-first" suffix=" "/>
               <text term="from" suffix=" "/>
-              <text variable="URL" prefix="&lt;" suffix="&gt;"/>
+              <text variable="URL"/>
             </group>
           </else-if>
           <else-if variable="archive" match="any">
@@ -180,7 +180,7 @@
       <else>
         <choose>
           <if variable="DOI">
-            <text variable="DOI" prefix="&lt;https://doi.org/" suffix="&gt;"/>
+            <text variable="DOI" prefix="https://doi.org/"/>
           </if>
           <else>
             <choose>
@@ -191,14 +191,14 @@
                     <date variable="accessed" form="text" suffix=", "/>
                   </group>
                   <text term="from"/>
-				  <text variable="URL" prefix="&lt;" suffix="&gt;"/>
+                  <text variable="URL"/>
                 </group>
               </if>
               <else>
                 <group>
                   <text term="retrieved" text-case="capitalize-first" suffix=" "/>
                   <text term="from" suffix=" "/>
-				  <text variable="URL" prefix="&lt;" suffix="&gt;"/>
+                  <text variable="URL"/>
                 </group>
               </else>
             </choose>
