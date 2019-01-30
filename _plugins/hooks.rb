@@ -23,6 +23,6 @@ end
 Jekyll::Hooks.register :site, :post_render do |site|
   # write_lc_set_md_files
   # site.collections["livecoding"].docs.each { |page|
-  #   puts page.data
+  #   puts "(\"#{page['event']}\"\"#{page['venue']}\"\"#{page['date']}\")"
   # }
 end
