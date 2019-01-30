@@ -71,7 +71,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 {% if lc.type == "gig" and lc.hidden != true %}
 <li>
 
-{% if lc.venue_url %}
+{% if lc.event_url %}
 <p class="event"><a href="{{ lc.event_url }}">{{ lc.event }}</a></p>
 {% else %}
 <p class="event">{{ lc.event }}</p>
