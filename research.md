@@ -72,7 +72,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 <li>
 
 {% if lc.venue_url %}
-<a href="{{ lc.event_url }}"><p class="event">{{ lc.event }}</p></a>
+<p class="event"><a href="{{ lc.event_url }}">{{ lc.event }}</a></p>
 {% else %}
 <p class="event">{{ lc.event }}</p>
 {% endif %}
@@ -82,12 +82,11 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 {% endif %}
 
 {% if lc.venue_url %}
-<a href="{{ lc.venue_url }}">
+
 <p>
   <span class="date">{{ lc.date | date: "%d %b '%y" }} @ </span>
-  <span class="venue">{{ lc.venue }}</span>
+  <a href="{{ lc.venue_url }}"><span class="venue">{{ lc.venue }}</span></a>
 </p>
-</a>
 {% else %}
 <p>
   <span class="date">{{ lc.date | date: "%d %b '%y" }} @ </span>
