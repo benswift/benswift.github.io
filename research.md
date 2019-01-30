@@ -59,12 +59,9 @@ about how to make your email stand out from the crowd.
 If you'd like to read any of these but you don't have access, [send me an
 email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
-
-### Papers & book chapters
-
 {% bibliography --file ben-pubs.bib %}
 
-### Curated/invited livecoding performances
+## Curated/invited livecoding performances
 
 <ol class="livecoding-bibliography">
 {% for lc in site.livecoding reversed %}
@@ -78,7 +75,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 {% endif %}
 
 {% if lc.curator %}
-<p class="curator">{{ lc.curator }} (curator)</p>
+<p>{{ lc.curator }} <span class="date">(curator)</span></p>
 {% endif %}
 
 {% if lc.venue_url %}
