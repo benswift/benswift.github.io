@@ -7,5 +7,5 @@ curator: Amelia Bidgood
 artists:
 - Ben Swift
 event_url:
-venue_url:
+venue_url: https://www.nma.gov.au
 ---
