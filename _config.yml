@@ -76,5 +76,6 @@ social:
     - https://vimeo.com/benswift
 
 scholar:
-  order: descending
   style: assets/scholar/apa.csl
+  sort_by: year
+  order: descending
