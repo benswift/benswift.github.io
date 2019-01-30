@@ -8,4 +8,6 @@ artists:
 - Ben Swift
 event_url: http://soa.anu.edu.au/event/revenant-media
 venue_url: http://soad.cass.anu.edu.au/gallery-exhibitions
+video_url: https://vimeo.com/78788032
 ---
+

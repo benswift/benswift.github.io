@@ -9,6 +9,7 @@ artists:
 - Kieran Browne
 event_url: https://www.scienceweek.net.au/the-curious-feast/
 venue_url: https://pop-up.anu.edu.au/contact/molo-live
+video_url: https://www.youtube.com/watch?v=IBVY_zW06kk
 ---
 
 Kieran and I played our first ever livecoding set together as part of the
