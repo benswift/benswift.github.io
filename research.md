@@ -78,13 +78,13 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 {% endif %}
 
 {% if lc.curator %}
-<p class="curator">curator: {{ lc.curator }}</p>
+<p class="curator">{{ lc.curator }} (curator)</p>
 {% endif %}
 
 {% if lc.venue_url %}
 
 <p>
-  <span class="date">{{ lc.date | date: "%d %b '%y" }} @ </span>
+  <span class="date">{{ lc.date | date: "%d %b '%y" }}</span> @
   <a href="{{ lc.venue_url }}"><span class="venue">{{ lc.venue }}</span></a>
 </p>
 {% else %}
