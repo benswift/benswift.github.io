@@ -4,7 +4,7 @@ title: On livecoding annotations and visualisations
 date: 2019-01-31 09:53 +1100
 ---
 
-I've just finished reading Charlie Robert's [interactive web essay on
+I've just finished reading Charlie Roberts' [interactive web essay on
 annotations and visualisations for live
 code](https://charlieroberts.github.io/annotationsAndVisualizations/). If you
 haven't read it, go do that now---and make sure you have some
