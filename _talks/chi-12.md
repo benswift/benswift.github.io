@@ -9,4 +9,4 @@ My talk at [CHI '12: SIGCHI Conference on Human Factors in Computing
 Systems](http://chi2012.acm.org). [Here's the paper]({{site.baseurl}}{% link
 research.md %}#swiftBecomingsoundAffectAssemblage2012).
 
-[CHI '12 slides (pdf)]({{site.baseurl}}{% link assets/pdf/chi-12.pdf %})
+[slides (pdf)]({{site.baseurl}}{% link assets/pdf/chi-12.pdf %})
