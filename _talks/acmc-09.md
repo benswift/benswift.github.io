@@ -8,4 +8,4 @@ permalink: /talks/acmc-09/
 My talk at the 2009 [Australasian Computer Music
 Conference](https://computermusic.org.au/conferences/acmc2009/).
 
-[slides (pdf)]({{site.baseurl}}{% link assets/pdf/acmc-09.pdf %})
+[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/acmc-09.pdf %})

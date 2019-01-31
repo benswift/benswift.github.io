@@ -10,4 +10,4 @@ about my PhD project (then a work-in-progress). There's a [paper in the
 references section]({{site.baseurl}}{% link research.md
 %}#swiftEngagementNetworksSocial2010) as well.
 
-[OzCHI '10 slides (pdf)]({{site.baseurl}}{% link assets/pdf/ozchi-10.pdf %})
+[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/ozchi-10.pdf %})

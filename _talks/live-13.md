@@ -13,6 +13,6 @@ the time (and since). It's only a short paper, so it doesn't cover the topic in
 detail, but I think it's still a pretty neat articulation of some of the
 thinking behind the Extempore design decisions.
 
-[slides (pdf)]({{site.baseurl}}{% link assets/pdf/live-13.pdf %})
+[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/live-13.pdf %})
 
 
