@@ -148,6 +148,11 @@ guess my main point is just to shout from the rooftops:
 > any code visualisation/annotation techniques must be robust for **code which is
 > currently being edited**
 
+I'm not just talking about technical issues, either; obviously any
+demo/prototype is going to have those, but they're fixable. I think there are
+deeper issues with trying to use *live* text as both the description of program
+behaviour and as a "view" on the hidden state of the program.
+
 Anyway, this is just a blog post, so I'm off the hook with regard to rigour,
 accountability and just general good scholarship, right 😜
 
