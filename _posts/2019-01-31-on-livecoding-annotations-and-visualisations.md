@@ -34,9 +34,13 @@ bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it's something Andrew Sorensen and I have written
 about before in our paper [Visual Code Annotations for Cyberphysical
 Programming](https://doi.org/10.1109/LIVE.2013.6617345) (2013) in the *1st
-International Workshop on Live Programming (LIVE)* (it's reference
+International Workshop on Live Programming (LIVE)*[^preprint] (it's reference
 #4 in the essay). I'll refer to this a bit in this post, so let's call it "the
 LIVE paper".
+
+[^preprint]:
+    if you don't have institutional access to the IEEE then just [email
+    me](mailto:ben.swift@anu.edu.au) and I can send you a pre-print.
 
 I also think that the three points listed above are pretty solid, especially in
 a multimedia livecoding context (maybe even in a broader context). One thing I
