@@ -11,43 +11,44 @@ haven't read it, go do that now---and make sure you have some
 speakers/headphones to listen to the code examples, because it would be a real
 shame to read it without watching/listening to his ideas in action. All the code
 samples (with the visual annotations) are live-editable, both running "whole
-blocks" and even re-evaluating individual expressions with `ctrl+enter`.
+blocks" and re-evaluating individual expressions with `ctrl+enter`.
 
 The essay lays out some guiding principles:
 
 > There are three principles that guide the design of the presented annotations
 > and visualizations.
 >
-> - If a value changes over time (typically related to musical progression or
->   signal processing), display its current state, either by adding a
->   visualization / annotation or by modifying the source code to reflect the
->   current value.
-> - Make annotations and visualizations as proximal as possible to the code
->   fragment responsible for generating the data they are representing.
-> - In addition to displaying when values change, whenever possible also provide
->   some indication of when a value is being read, in particular when there is a
->   direct affect on musical / sonic output.
+> 1. If a value changes over time (typically related to musical progression or
+>    signal processing), display its current state, either by adding a
+>    visualization / annotation or by modifying the source code to reflect the
+>    current value.
+> 2. Make annotations and visualizations as proximal as possible to the code
+>    fragment responsible for generating the data they are representing.
+> 3. In addition to displaying when values change, whenever possible also provide
+>    some indication of when a value is being read, in particular when there is a
+>    direct affect on musical / sonic output.
 
-It then goes on to show (both in an "all in" demo and then in bite-sized
-listings which show off the different specific visualisations). In general, I
+It then goes on to show some example visualisation in
+[gibberwocky](http://gibberwocky.cc/), both in an "all in" demo and then in
+bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it's something Andrew Sorensen and I have written
-about before in our paper "Visual Code Annotations for Cyberphysical
-Programming" (2013), in the *1st International Workshop on Live Programming
-(LIVE)* (pp. 27–30). <https://doi.org/10.1109/LIVE.2013.6617345> (reference #4
-in the essay). I'll refer to this a bit in this post, so let's call it "the LIVE
-paper".
+about before in our paper [Visual Code Annotations for Cyberphysical
+Programming](https://doi.org/10.1109/LIVE.2013.6617345) (2013) in the *1st
+International Workshop on Live Programming (LIVE)* (it's reference
+#4 in the essay). I'll refer to this a bit in this post, so let's call it "the
+LIVE paper".
 
 I also think that the three points listed above are pretty solid, especially in
 a multimedia livecoding context (maybe even in a broader context). One thing I
 like about the visual annotations provided is that they're mostly ASCII (or
 ASCII-ish). This is not so important when deploying them in the web browser
 (since you can do so much fancy styling stuff with CSS & js these days) but it's
-really important when dealing with... *ahem*, older editors. I ended up having
-to use some unholy Emacs hacks with
+really important when dealing with... *ahem*, more venerable editors. I ended up
+having to use some unholy Emacs hacks with
 [overlays](https://www.gnu.org/software/emacs/manual/html_node/elisp/Overlays.html)
 to get the original annotations discussed in the LIVE paper working.
 
-I think that displaying "hidden" state in comments is a good compromise, and
+I think that displaying hidden state in comments is a good compromise, and
 avoids the need for fancy "extra-textual" overlays. Not that overlays aren't
 sometimes useful, but there's a lot you can show with inline `text-decoration`
 hacks and adding a few comments to provide ascii text to decorate (when it isn't
