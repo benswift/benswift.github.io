@@ -1,6 +1,6 @@
 ---
 title: The World Since Google
-date: "2018-11-07 10:00:00 +1100"
+date: "2018-11-07"
 permalink: /talks/world-since-google/
 summary: >-
   A short, incomplete, **mostly wrong** history of the internet since 1996. A

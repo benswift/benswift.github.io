@@ -1,6 +1,6 @@
 ---
 title: "Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making"
-date: "2012-05-09 11:30:00 +1100"
+date: "2012-05-09"
 layout: page
 permalink: /talks/chi-12/
 ---

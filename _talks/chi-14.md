@@ -1,6 +1,6 @@
 ---
 title: "Coding Livecoding"
-date: "2014-04-29 09:00:00 +1100"
+date: "2014-04-29"
 layout: page
 permalink: /talks/chi-14/
 ---

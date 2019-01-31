@@ -1,6 +1,6 @@
 ---
 title: Pop-production as problem-solving
-date: "2019-01-11 10:00:00 +1100"
+date: "2019-01-11"
 permalink: /talks/pop-production/
 summary: >-
   Sure, computers are useful for solving problems, but what about when

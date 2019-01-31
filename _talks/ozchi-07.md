@@ -1,6 +1,6 @@
 ---
 title: "The Mind-Modulated Music Interface"
-date: "2007-11-29 14:45:00 +1100"
+date: "2007-11-29"
 layout: page
 permalink: /talks/ozchi-07/
 ---

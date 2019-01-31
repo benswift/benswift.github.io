@@ -1,6 +1,6 @@
 ---
 title: "Engagement Networks in Social Music-making"
-date: "2010-11-23 12:00:00 +1100"
+date: "2010-11-23"
 layout: page
 permalink: /talks/ozchi-10/
 ---

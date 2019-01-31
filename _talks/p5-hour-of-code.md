@@ -1,7 +1,7 @@
 ---
 title: Drawing like a 5-year-old
 permalink: /talks/p5-hour-of-code/
-date: "2017-09-06 16:00:00 +1100"
+date: "2017-09-06"
 summary: >-
   Who drew pictures as a 5yo? Everone! This one-hour interactive talk/workshop
   provides an introduction to code art in the web browser using the

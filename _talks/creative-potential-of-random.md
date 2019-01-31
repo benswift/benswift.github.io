@@ -1,7 +1,7 @@
 ---
 title: The creative potential of random
 permalink: /talks/creative-potential-of-random/
-date: "2017-08-17 16:00:00 +1100"
+date: "2017-08-17"
 summary: >-
   There's so much to randomness than just "crazy, unpredictable dice rolls".
   Understanding the different types of randomness allows us to shape this
