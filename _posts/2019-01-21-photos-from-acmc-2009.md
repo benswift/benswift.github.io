@@ -7,19 +7,19 @@ Wow, this was a blast from the past. Here are a few photos of me from the 2009
 Australasian Computer Music Conference in Queensland, Australia. Here's me
 giving my research talk, entitled *Distributed Performance in Livecoding*.
 
-{% asset images/posts/photos-from-acmc-2009/ben-giving-a-research-talk.jpg @pic alt="Ben giving a research talk" %}
+{% asset images/livecoding/ben-acmc-09-research-talk.jpg @pic alt="Ben giving a research talk" %}
 
 And here's my livecoding set later in the night (the main event---the research
 talk was just a talk about the infrastructure I was using in this set).
 
-{% asset images/posts/photos-from-acmc-2009/ben-performing-closeup.jpg @pic alt="Ben performing at ACMC 09" %}
+{% asset images/livecoding/ben-acmc-09-closeup.jpg @pic alt="Ben performing at ACMC 09" %}
 
 The cool thing about this gig was that I'd written a companion iPhone app, so
 that I could choose certain parameters & program structures in my code, and push
 them out to audience members (on the fly) so that they could take over
 controlling those parameters. Here's a shot of folks hopefully enjoing the set:
 
-{% asset images/posts/photos-from-acmc-2009/ben-performing-crowd-shot.jpg @pic alt="crowd shot from ACMC distributed livecoding gig" %}
+{% asset images/livecoding/ben-acmc-09-crowd-shot.jpg @pic alt="crowd shot from ACMC distributed livecoding gig" %}
 
 Sadly, no video recordings survived from this gig. Just as well, actually,
 because I had a resource leak in my networking code which ended up making the

@@ -18,11 +18,11 @@ beats.
 
 Here are some photos from the night...
 
-{% asset images/livecoding/science-week-2018/ben-kieran-1.jpg @pic alt="Ben & Kieran 1" %}
-{% asset images/livecoding/science-week-2018/ben-kieran-2.jpg @pic alt="Ben & Kieran 2" %}
-{% asset images/livecoding/science-week-2018/ben-kieran-3.jpg @pic alt="Ben & Kieran 3" %}
-{% asset images/livecoding/science-week-2018/ben-kieran-4.jpg @pic alt="Ben & Kieran 4" %}
-{% asset images/livecoding/science-week-2018/ben-kieran-5.jpg @pic alt="Ben & Kieran 5" %}
+{% asset images/livecoding/ben-kieran-science-week-18-1.jpg @pic alt="Ben & Kieran 1" %}
+{% asset images/livecoding/ben-kieran-science-week-18-2.jpg @pic alt="Ben & Kieran 2" %}
+{% asset images/livecoding/ben-kieran-science-week-18-3.jpg @pic alt="Ben & Kieran 3" %}
+{% asset images/livecoding/ben-kieran-science-week-18-4.jpg @pic alt="Ben & Kieran 4" %}
+{% asset images/livecoding/ben-kieran-science-week-18-5.jpg @pic alt="Ben & Kieran 5" %}
 
 ...and the video:
 
