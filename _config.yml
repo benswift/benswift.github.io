@@ -40,6 +40,11 @@ defaults:
       type: talks
     values:
       layout: reveal
+  -
+    scope:
+      type: livecoding
+    values:
+      layout: post
 
 # from paginate-v2 gem
 pagination:
@@ -51,7 +56,7 @@ collections:
   talks:
     output: true
   livecoding:
-    output: false
+    output: true
 
 assets:
   sources:
