@@ -8,4 +8,5 @@ artists:
 - Ben Swift
 event_url:
 venue_url: https://www.nfsa.gov.au
+hidden: true
 ---

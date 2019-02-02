@@ -9,6 +9,7 @@ artists:
 event_url: 
 venue_url: http://soad.cass.anu.edu.au/gallery-exhibitions
 video_url: https://vimeo.com/7341091
+hidden: true
 ---
 
 Here is the video of my set at the *Beginning Middle End* festival.

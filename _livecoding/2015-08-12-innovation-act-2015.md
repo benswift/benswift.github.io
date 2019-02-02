@@ -8,4 +8,5 @@ artists:
 - Ben Swift
 event_url: 
 venue_url: https://jcsmr.anu.edu.au
+hidden: true
 ---

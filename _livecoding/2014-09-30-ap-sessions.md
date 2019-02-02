@@ -8,6 +8,7 @@ artists:
 - Ben Swift
 event_url: 
 venue_url: 
+hidden: true
 ---
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I

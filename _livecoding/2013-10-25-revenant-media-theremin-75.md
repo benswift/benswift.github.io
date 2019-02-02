@@ -9,6 +9,7 @@ artists:
 event_url: http://soa.anu.edu.au/event/revenant-media
 venue_url: http://soad.cass.anu.edu.au/gallery-exhibitions
 video_url: https://vimeo.com/78788032
+hidden: true
 ---
 
 {% asset images/livecoding/ben-revenant-media-1.jpg @pic alt="Ben livecoding at Revenant Media (from behind)" %}

@@ -9,4 +9,5 @@ artists:
 - Kieran Browne
 event_url: https://www.facebook.com/events/200014520685862/
 venue_url: https://www.thedoughnutdept.com/welcome
+hidden: true
 ---

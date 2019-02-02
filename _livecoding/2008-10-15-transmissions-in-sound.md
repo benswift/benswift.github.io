@@ -8,4 +8,5 @@ artists:
 - Ben Swift
 event_url: 
 venue_url: http://music.cass.anu.edu.au/services/bookings/venues
+hidden: true
 ---

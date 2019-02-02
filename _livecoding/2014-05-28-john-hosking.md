@@ -8,4 +8,5 @@ artists:
 - Ben Swift
 event_url: 
 venue_url: https://dhg.anu.edu.au
+hidden: true
 ---
