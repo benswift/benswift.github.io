@@ -3,7 +3,7 @@ date: "2014-09-30"
 type: presentation
 title: "The AP Sessions"
 venue: Australian National University
-curator: Arrian Purcell
+curator: Ari Purcell
 artists:
 - Ben Swift
 event_url: 
@@ -11,9 +11,9 @@ venue_url:
 ---
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I
-performed in 2014 as part of my student [Arrian
+performed in 2014 as part of my student [Ari
 Purcell's](http://arrianpurcell.com) research project: *Visualising a Live
-Coding Arts Process*. Arrian developed a bunch of visualisation techniques (in
+Coding Arts Process*. Ari developed a bunch of visualisation techniques (in
 Extempore) to use in a livecoding performance. They weren't just cool VJ
 visuals, they were designed to be overlaid on top of the code.
 
@@ -57,7 +57,7 @@ thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf
 ### "Visuals" vs "no visuals" study
 
 Following the "aesthetic vs didactic" gigs, and based on the audience feedback,
-Arrian developed one more set of visualisation techiniques, and we did one more
+Ari developed one more set of visualisation techiniques, and we did one more
 gig (with audience feedback like before). This time, there were two sets---one
 with the visuals, one without (just the plain code like all my other gigs). Here
 are the videos from those sessions. This stuff is all in Chapters 6 and 7 of
