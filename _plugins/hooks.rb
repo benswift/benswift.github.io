@@ -53,5 +53,5 @@ def write_livecoding_bibliography(site)
 end
 
 Jekyll::Hooks.register :site, :post_render do |site|
-  write_livecoding_bibliography site
+  # write_livecoding_bibliography site
 end
