@@ -11,13 +11,15 @@ venue_url:
 ---
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I
-performed in 2014 as part of Arrian Purcell's research project: *Visualising a
-Live Coding Arts Process*. Arrian developed a bunch of visualisation techniques
-(in Extempore) to use in a livecoding performance. They weren't just cool VJ
-visuals, they were designed to be overlaid on top of the code. He developed a
-two different "types" of visualisations; some were designed primarily to look
-cool (*aesthetic*) and some were designed primarily to teach the audience about
-what was going on (*didactic*).[^interpretation]
+performed in 2014 as part of my student [Arrian
+Purcell's](http://arrianpurcell.com) research project: *Visualising a Live
+Coding Arts Process*. Arrian developed a bunch of visualisation techniques (in
+Extempore) to use in a livecoding performance. They weren't just cool VJ
+visuals, they were designed to be overlaid on top of the code.
+
+We developed a two different "types" of visualisations; some were designed
+primarily to look cool (*aesthetic*) and some were designed primarily to teach
+the audience about what was going on (*didactic*).[^interpretation]
 
 I displayed these visuals (on top of my code) in a couple of livecoding gigs,
 and audience members completed a short questionnaire at the end about the
