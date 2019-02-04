@@ -3,14 +3,16 @@ title: Old livecoding photo roundup
 date: 2019-01-22 13:12 +1100
 ---
 
-Inspired by [yesterday's post]({{site.baseurl}}{% link
-_posts/2019-01-21-photos-from-acmc-2009.md %}), I'm trying to find all the
-photos of me doing livecoding gigs over the past 10 years. If you've got an old
-photo of me doing my thing, then can you either
+I'm trying to find all the photos of me doing livecoding gigs over the past 10
+years. If you've got an old photo of me doing my thing, then can you either
 [email](mailto:ben.swift@anu.edu.au) or [tweet](https://twitter.com/benswift) at
 me to share it? I'll give you authoreal credit and hugs.
 
-Ok, here are the ones I've got so far:
+For any photos of actual gigs, they'll go into the
+[livecoding]({{site.baseurl}}{% link livecoding.md %}) section of this website.
+However, I also do lots of other presentations, talks and demos which don't
+really count as "gigs". For those, I'll just add the photos here as they turn
+up.
 
 ### Australian Council of Deans of ICT 2017
 
