@@ -69,9 +69,9 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 <li>
 
 {% if lc.event_url %}
-<p class="event"><a href="{{ lc.event_url }}">{{ lc.title }}</a></p>
+<p class="title"><a href="{{ lc.event_url }}">{{ lc.title }}</a></p>
 {% else %}
-<p class="event">{{ lc.title }}</p>
+<p class="title">{{ lc.title }}</p>
 {% endif %}
 
 {% if lc.curator %}
