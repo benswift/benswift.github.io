@@ -74,7 +74,13 @@ The visuals in these recordings are pretty hard to see, and the audio quality's
 not great either. However, in the interests of open science, here's video from
 the **no visuals** set:
 
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315196944?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/315196944">AP Sessions (no visuals)</a> from <a href="https://vimeo.com/benswift">Ben Swift</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 and the video from the **visuals** gig:
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315199460?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/315199460">AP Sessions (visuals)</a> from <a href="https://vimeo.com/benswift">Ben Swift</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## Take-home messages?
 
