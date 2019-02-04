@@ -1,7 +1,7 @@
 ---
 date: "2010-09-04"
 type: gig
-event: Beginning-Middle-End Festival
+title: Beginning-Middle-End Festival
 venue: ANU School of Art Gallery, Canberra
 curator: Martyn Jolly
 artists:

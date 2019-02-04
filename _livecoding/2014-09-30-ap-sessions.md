@@ -1,7 +1,7 @@
 ---
 date: "2014-09-30"
 type: presentation
-event: "The AP Sessions"
+title: "The AP Sessions"
 venue: Australian National University
 curator: Arrian Purcell
 artists:

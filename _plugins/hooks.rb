@@ -33,7 +33,7 @@ def gig_to_bib(gig)
   BibTeX::Entry.new(
     {
       :bibtex_type => :misc,
-      :title => gig_meta['event'],
+      :title => gig_meta['title'],
       :author => authors,
       :editor => gig_meta['curator'],
       :howpublished => gig_meta['venue'],

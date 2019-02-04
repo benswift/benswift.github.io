@@ -1,7 +1,7 @@
 ---
 date: "2018-01-19"
 type: gig
-event: Questacon Invention Convention '18 Closing Ceremony
+title: Questacon Invention Convention '18 Closing Ceremony
 venue: Questacon, Canberra
 curator: Elisha Deschamps
 artists:

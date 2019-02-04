@@ -1,7 +1,7 @@
 ---
 date: "2018-05-03"
 type: gig
-event: "Soundscapes Concert Series #21"
+title: "Soundscapes Concert Series #21"
 venue: Smiths Alternative Bookshop, Canberra
 curator: Reuben Ingall
 artists:

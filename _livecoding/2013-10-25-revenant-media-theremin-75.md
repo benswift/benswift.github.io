@@ -1,7 +1,7 @@
 ---
 date: "2013-10-25"
 type: gig
-event: "Revenant Media: Theremin '75 Exhibition"
+title: "Revenant Media: Theremin '75 Exhibition"
 venue: ANU School of Art Gallery, Canberra
 curator: Martyn Jolly
 artists:

@@ -1,7 +1,7 @@
 ---
 date: "2017-08-11"
 type: gig
-event: National Science Week '17 ACT Launch Event
+title: National Science Week '17 ACT Launch Event
 venue: National Film and Sound Archive, Canberra
 curator: Madison Hartill-Law
 artists:
