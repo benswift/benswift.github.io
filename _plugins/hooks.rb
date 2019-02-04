@@ -45,12 +45,13 @@ def gig_to_bib(gig)
     })
 end
 
-def write_livecoding_bibliography(gigs)
+def write_livecoding_bibliography(site)
+  elements = site.collections["livecoding"].docs.map { |gig| gig_to_bib gig }
   bib = BibTeX::Bibliography.new
-  bib = gigs.map { |gig| gig_to_bib gig }
+  bib.add(*elements)
   puts bib
 end
 
 Jekyll::Hooks.register :site, :post_render do |site|
-  # write_livecoding_bibliography site.collections["livecoding"].docs
+  write_livecoding_bibliography site
 end
