@@ -1,5 +1,5 @@
 ---
-date: "2010-09-04"
+date: "2009-09-24"
 type: gig
 title: Beginning-Middle-End Festival
 venue: ANU School of Art Gallery, Canberra
