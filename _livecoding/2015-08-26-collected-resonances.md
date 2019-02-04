@@ -9,7 +9,6 @@ artists:
 event_url: http://www.agac.com.au/event/collected-resonances-3/
 venue_url: http://music.cass.anu.edu.au/services/bookings/venues
 video_url: https://vimeo.com/314633596
-hidden: true
 ---
 
 Sadly there's no full video from this gig, but there's a crowd video of the last
