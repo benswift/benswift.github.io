@@ -19,5 +19,5 @@ alternative / experimental / sound art / other / uncategorised zones hosted by
 
 And here's the video:
 
-<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/269115310" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/269115310?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/269115310">live @ soundscapes #21</a> from <a href="https://vimeo.com/benswift">Ben Swift</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

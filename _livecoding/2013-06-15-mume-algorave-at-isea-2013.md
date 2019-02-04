@@ -22,5 +22,5 @@ and photos of us doing our thing at the gig itself:
 
 and here's the video
 
-<div style="padding:65.69% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/70016164" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:65.69% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/70016164?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/70016164">MUME Sydney June 2013</a> from <a href="https://vimeo.com/andrewsorensen">Andrew Sorensen</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

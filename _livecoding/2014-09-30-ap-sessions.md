@@ -64,6 +64,12 @@ are the videos from those sessions. This stuff is all in Chapters 6 and 7 of
 [Arrian's honours
 thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf)
 
+The visuals in these recordings are pretty hard to see, and the audio quality's
+not great either. However, in the interests of open science, here's video from
+the **no visuals** set:
+
+and the video from the **visuals** gig:
+
 ## Take-home messages?
 
 If you want some p-values and all that jazz, read the papers. But the broad
