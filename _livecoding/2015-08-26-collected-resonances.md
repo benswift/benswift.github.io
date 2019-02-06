@@ -1,7 +1,7 @@
 ---
 date: "2015-08-26"
 type: curated
-title: Collected Resonances: Session 2
+title: "Collected Resonances: Session 2"
 venue: ANU School of Music, Canberra
 curator: Chloë Hobbs
 artists:
