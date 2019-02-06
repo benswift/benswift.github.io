@@ -16,7 +16,8 @@ the CS and the ANU School of Art and Design.[^artgit]
 [^artgit]:
     I also teach all the artists & designers to use git---and it works really
     well... with the appropriate scaffolding. Knowing how to use version control
-    really does feel like having superpowers.
+    really does feel like having superpowers when editing digital, and seeing
+    artists and designers realise this is pretty cool.
 
 This wasn't because Piazza sucks---it's actually pretty great in lots of ways.
 But there were a few things we hoped to that Discourse would do better:
@@ -84,8 +85,8 @@ So, the way we organised it was:
 - tutors (TAs) were given 
 
 [^samename]:
-    in principle the course category (list of topics) and group (list of
-    members) could in principle have different names
+    the course category (list of topics) and group (list of members) could in
+    principle have different names
 
 Here's an example: for COMP1720 we set up
 
