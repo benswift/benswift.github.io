@@ -30,7 +30,7 @@ There are a few reasons:
    message out on
    
 6. I'm a control-freak, and the idea of *not* being in control bums me out (this
-   is the pernicious flip side of #4)
+   is the pernicious flip side of #5)
 
 Some of these are good reasons, some not-so-good. For a fun party game, [argue
 with me on twitter](https://twitter.com/benswift) about which is which 😉
