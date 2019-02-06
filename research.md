@@ -18,8 +18,8 @@ School of Computer Science (you should check out the [c/c/c group's projects
 page](https://cs.anu.edu.au/code-creativity-culture/projects/) as well).
 
 I am a **livecoder**, and have performed at both local and international arts
-festivals---you can find recordings of some of my sets [on
-vimeo](https://vimeo.com/benswift/videos).
+festivals---you can find recordings of some of my sets [on my livecoding
+page]({{site.baseurl}}{% link livecoding.html %}).
 
 I love building things, and one thing I'm particularly excited about is the
 potential of **liveness** (real-time human-in-the-loop interactivity) in
