@@ -171,8 +171,8 @@ footer {
 	font-style: italic;
 	& > span {
 		font-style: normal;
-		background-color: $highlight-color;
-		color: $background-color;
+		background-color: lighten($highlight-color, 40%);
+		color: $highlight-color;
 		padding: 0.2em;
 		margin: 0 0.4em;
 		display: inline-block;
