@@ -65,7 +65,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 <ol class="livecoding-bibliography">
 {% for lc in site.livecoding reversed %}
-{% if lc.type == "gig" and lc.hidden != true %}
+{% if lc.type == "curated" and lc.hidden != true %}
 <li>
 
 {% if lc.event_url %}
