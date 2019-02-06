@@ -5,13 +5,37 @@ date: 2019-01-02 17:46
 ---
 
 Welcome, traveller. You've managed to find my blog without being [eaten by a
-grue](http://zork.wikia.com/wiki/Grue).
+grue](http://zork.wikia.com/wiki/Grue). If you haven't visited for a while, you
+might have noticed that I've re-written my website. [Again]({{site.baseurl}}{%
+link _posts/2017-07-06-benswift-me-update-july-2017-edition.md %}).
 
-I've re-written my blog [again]({{site.baseurl}}{% link
-_posts/2017-07-06-benswift-me-update-july-2017-edition.md %}), because I figure
-it's a good way for me to keep up to date with my web skills. I teach (among
-other things) [in-browser code art](https://cs.anu.edu.au/courses/comp1720/) for
-a living, and students can sniff out a fraud if you're behind the times.
+There are a few reasons:
+
+1. it forces me to keep up to date with web stuff, which I [teach for a
+   living](https://cs.anu.edu.au/courses/comp1720/) (students can sniff out a
+   fraud)
+
+2. my academic activities don't fit the traditional "list of journal
+   publications" shape that my university-provided web presence is geared
+   towards
+
+3. if I move to a different institution, I don't have the difficult job of
+   exfiltrating my content from my old institution's platform
+
+4. building things is fun (I'm good at this stuff, and it feels good to use the
+   skills you've spent years developing)
+
+5. part of being an academic is brand-management, and that's much easier to do
+   if you completely control (at least one of) the platforms you're putting your
+   message out on
+   
+6. I'm a control-freak, and the idea of *not* being in control bums me out (this
+   is the pernicious flip side of #4)
+
+Some of these are good reasons, some not-so-good. For a fun party game, [argue
+with me on twitter](https://twitter.com/benswift) about which is which 😉
+
+## The nitty-gritty technical stuff
 
 I've (once again) gone with a [Jekyll](https://jekyllrb.com/)-powered static
 site. This time, though, I've opted for my own lovingly hand-crafted HTML & CSS
