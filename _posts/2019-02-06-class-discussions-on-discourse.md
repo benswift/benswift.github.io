@@ -7,8 +7,16 @@ tags: teaching
 In 2018 I (with the support of the Teaching & Learning IT team in [my
 School](https://cs.anu.edu.au)) switched from [Piazza](https://piazza.com) to a
 self-hosted [Discourse](https://www.discourse.org) instance for class
-discussions (specifically, I used it for [COMP1720: Art & Interaction in New
-Media](https://cs.anu.edu.au/courses/comp1720/)).
+discussions. Specifically, I used it for [COMP1720: Art & Interaction in New
+Media](https://cs.anu.edu.au/courses/comp1720/), a large-ish (~200 students)
+introductory code/art programming and interaction design course. This course is
+open to both CS and non-CS students, and can be counted towards a major in both
+the CS and the ANU School of Art and Design.[^artgit]
+
+[^artgit]:
+    I also teach all the artists & designers to use git---and it works really
+    well... with the appropriate scaffolding. Knowing how to use version control
+    really does feel like having superpowers.
 
 This wasn't because Piazza sucks---it's actually pretty great in lots of ways.
 But there were a few things we hoped to that Discourse would do better:
