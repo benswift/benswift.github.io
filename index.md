@@ -9,7 +9,6 @@ Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ),
 [artist](https://vimeo.com/benswift) and [hacker](https://github.com/benswift).
 
-
 I'm a [Senior Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the
 [Research School of Computer Science](https://cs.anu.edu.au/) at the Australian
 National University in Canberra, Australia, where I lead the
