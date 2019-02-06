@@ -10,8 +10,8 @@ event_url: "https://www.questacon.edu.au/outreach/programmes/questacon-smart-ski
 venue_url: https://www.questacon.edu.au
 ---
 
-The [Questacon National Invention Convention]({{ page.event_url }}) is an
-all-expenses paid, five day workshop in Canberra, held every January. This
+The [National Invention Convention]({{ page.event_url }}) is an all-expenses
+paid, five day workshop at Questacon in Canberra, held every January. This
 program gives 25 delegates aged 14-18 from all around Australia the opportunity
 to play, make and create with us, designing and developing a prototype that
 relates to a theme we give them.
