@@ -23,7 +23,14 @@ visuals inspired by Stan's beautiful theremins).
 {% asset images/livecoding/ben-revenant-media-1.jpg @pic alt="Ben livecoding at Revenant Media (from behind)" %}
 {% asset images/livecoding/ben-revenant-media-2.jpg @pic alt="Ben livecoding at Revenant Media (close-up of screen)" %}
 
-This is a direct screencapture of my performance, so you don't get the crowd
-(sadly). On the upside, the video & audio quality is much nicer.
+Here's a crowd video---although not always the best viewpoint for looking at the
+code.
+
+TODO
+
+Because I wanted to show off the visuals, I actually "re-recorded" (to the best
+of my ability to remember) this set a couple of days later and took a direct
+screencapture. You don't get the crowd (sadly) but on the upside the video &
+audio quality is much nicer.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/78788032?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
