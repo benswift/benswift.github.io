@@ -3,6 +3,7 @@
 <section class="post-excerpt">
   <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
   <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  {% include taglist.html tags=post.tags %}
   {% if post.summary %}
   <p>{{ post.summary | markdownify }}</p>
   {% else %}

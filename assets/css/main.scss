@@ -167,6 +167,18 @@ footer {
 	color: $text-grey;
 }
 
+.post-tags {
+	font-style: italic;
+	& > span {
+		font-style: normal;
+		background-color: $highlight-color;
+		color: $background-color;
+		padding: 0.2em;
+		margin: 0 0.4em;
+		display: inline-block;
+	}
+}
+
 .post-excerpt {
 	border-top: 1px solid $highlight-color;
 }
