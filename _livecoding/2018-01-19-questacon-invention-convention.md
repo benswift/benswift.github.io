@@ -10,6 +10,8 @@ event_url: "https://www.questacon.edu.au/outreach/programmes/questacon-smart-ski
 venue_url: https://www.questacon.edu.au
 ---
 
+{% asset images/livecoding/ben-qic-1.jpg @pic alt="Ben livecoding at QIC 1" %}
+
 The [National Invention Convention]({{ page.event_url }}) is an all-expenses
 paid, five day workshop at Questacon in Canberra, held every January. This
 program gives 25 delegates aged 14-18 from all around Australia the opportunity
@@ -20,7 +22,6 @@ At the end of every event there's both a formal awards ceremony and a dance
 party for the participants to let their hair down. In 2018 I was the headline
 act at the latter 😊
 
-{% asset images/livecoding/ben-qic-1.jpg @pic alt="Ben livecoding at QIC 1" %}
 {% asset images/livecoding/ben-qic-2.jpg @pic alt="Ben livecoding at QIC 2" %}
 {% asset images/livecoding/ben-qic-3.jpg @pic alt="Ben livecoding at QIC 3" %}
 
