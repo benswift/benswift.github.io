@@ -1,5 +1,5 @@
 ---
-title: Class discussions on discourse
+title: Class discussions on Discourse
 date: "2019-02-06 16:42:03 +0800"
 tags: teaching web
 ---
