@@ -2,6 +2,7 @@
 layout: post
 title: On livecoding annotations and visualisations
 date: 2019-01-31 09:53 +1100
+tags: livecoding
 ---
 
 I've just finished reading Charlie Roberts' [interactive web essay on

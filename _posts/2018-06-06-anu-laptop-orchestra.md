@@ -2,7 +2,7 @@
 layout: post
 title: ANU Laptop Orchestra
 date: 2018-06-06 09:20
-tags:
+tags: livecoding ccc lens gigs
 ---
 
 One of the coolest parts of my job is doing livecoding gigs---here's a recent

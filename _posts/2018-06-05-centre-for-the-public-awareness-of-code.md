@@ -2,7 +2,7 @@
 layout: post
 title: Centre for the Public Awareness of Code
 date: 2018-06-05 09:13
-tags:
+tags: ccc
 ---
 
 *What's your favourite movie?* Most folks already have an answer to this

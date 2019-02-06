@@ -2,7 +2,7 @@
 layout: post
 title: Telopea Hour of Code
 date: 2017-09-06 08:57
-tags:
+tags: teaching cs4all
 ---
 
 Welcome, Telopea Hour of Code students. Here are a couple of links you'll need

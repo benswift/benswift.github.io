@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "benswift.me update (July 2017 edition)"
-tags:
-categories:
+tags: meta web
 ---
 
 Well, `benswift.me` has been given another coat of paint. The content's still a

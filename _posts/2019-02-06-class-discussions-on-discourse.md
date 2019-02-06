@@ -1,7 +1,7 @@
 ---
 title: Class discussions on discourse
 date: "2019-02-06 16:42:03 +0800"
-tags: teaching
+tags: teaching web
 ---
 
 In 2018 I (with the support of the Teaching & Learning IT team in [my

@@ -1,6 +1,7 @@
 ---
 title: Oils from 威海
 date: 2019-01-29 12:24 +1100
+tags: teaching
 ---
 
 One of my academic responsibilities is teaching our ANU Computer Science

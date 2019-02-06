@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Science Week gig
-tags: gigs
+tags: gigs livecoding
 ---
 
 I'm playing a livecoding set at the [ACT Science Week launch party

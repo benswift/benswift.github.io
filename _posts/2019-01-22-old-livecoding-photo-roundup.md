@@ -1,6 +1,7 @@
 ---
 title: Old livecoding photo roundup
 date: 2019-01-22 13:12 +1100
+tags: gigs livecoding
 ---
 
 I'm trying to find all the photos of me doing livecoding gigs over the past 10

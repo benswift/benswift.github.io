@@ -1,6 +1,7 @@
 ---
 title: highlight.js with xtlang support
 date: 2019-01-17 10:54 +1100
+tags: web
 ---
 
 > It is a truth, universally acknowledged, that all programming language authors

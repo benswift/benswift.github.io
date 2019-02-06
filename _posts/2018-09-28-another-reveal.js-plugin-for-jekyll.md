@@ -1,7 +1,7 @@
 ---
 title: Another reveal.js plugin for Jekyll
 date: "2018-09-28 13:42:26 +1000"
-tags: software
+tags: web
 ---
 
 I use [Jekyll](https://jekyllrb.com/) to create my course websites and
