@@ -1,6 +1,6 @@
 ---
 date: "2014-09-30"
-type: presentation
+type: study
 title: "The AP Sessions"
 venue: Australian National University
 curator: Ari Purcell

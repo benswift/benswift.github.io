@@ -1,6 +1,6 @@
 ---
 date: "2013-06-15"
-type: gig
+type: curated
 title: "Musical Metacreation (MuMe) Algorave at ISEA 2013: International Symposium on Electronic Art"
 venue: 107 Projects, Redfern, NSW, Australia
 curator: Ollie Bown

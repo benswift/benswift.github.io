@@ -1,6 +1,6 @@
 ---
 date: "2014-05-28"
-type: gig
+type: curated
 title: John Hosking Farewell Reception
 venue: Drill Hall Gallery, Canberra
 curator: 

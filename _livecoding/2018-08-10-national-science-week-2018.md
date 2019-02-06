@@ -1,6 +1,6 @@
 ---
 date: "2018-08-10"
-type: gig
+type: curated
 title: National Science Week '18 ACT Launch Event
 venue: Molo Bar, Australian National University
 curator: Dan McCusker
