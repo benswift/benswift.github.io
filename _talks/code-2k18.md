@@ -13,7 +13,7 @@ summary: >-
 
 {% include slides/background-image.html image="images/talks/code-2k18/ben-smiths-sounscapes.jpg" heading="Ben Swift" %}
 
-[livecoder](https://vimeo.com/benswift)
+[livecoder]({{site.baseurl}}{% link livecoding.html %})
 
 [ANU Research School of Computer Science](https://cs.anu.edu.au/code-creativity-culture/)
 
