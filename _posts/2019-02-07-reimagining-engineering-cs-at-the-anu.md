@@ -10,9 +10,9 @@ leader [Elanor](https://cecs.anu.edu.au):
 {% include slides/youtube.html id="FjlgEZzaL6k" aspect="56.25%" %}
 
 Basically, this [Reimagine project](https://cecs.anu.edu.au/reimagine) is a
-*huge* investment from the ANU for Engineering & Computer Science (CECS) to
-grow, change, and to skate to where the puck is going to be in 2050
-(technologically, societally, culturally, and more).
+*huge* investment from the ANU for CECS to grow, change, and to skate to where
+the puck is going to be in 2050 (technologically, societally, culturally, and
+more).
 
 The search is on within CECS to identify **Reimagine Fellows** to champion
 various parts of this transformation. This is super-exciting, especially for
@@ -69,12 +69,10 @@ them more deeply---this is my chance.
 
 ### So you're just trying to score a grant to go off and do your own weird art thing?
 
-Absolutely not. Look, I'm actually kindof insecure about my own artistic
-practice---I think deep down many interdisciplinary artist/technologists are.
-
-However, being a Reimagine Fellow isn't about doing something by yourself---it's
-way too big a project for that. It's about weaving something into the whole
-College[^dna], so that by 2050 it affects the way *everyone* thinks.
+Absolutely not. Being a Reimagine Fellow isn't about doing something by
+yourself---it's way too big a project for that. It's about weaving something
+into the whole College[^dna], so that by 2050 it affects the way *everyone*
+thinks.
 
 [^dna]:
     You could even say "weaving it into the College's DNA". But that'd be dumb.
@@ -86,7 +84,7 @@ College[^dna], so that by 2050 it affects the way *everyone* thinks.
 The Reimagine Project is [big, hairy, and
 audacious](https://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal), so it's
 difficult to sketch out a detailed description or org chart. However, here are a
-few ideas about what it might look like:
+few ideas about what it might look like.
 
 #### In the short term...
 
@@ -104,9 +102,9 @@ few ideas about what it might look like:
 - more PhD students doing practice-led research on interdisciplinary
   art/CS/engineering projects
 
-- encouraging CECS academics to engage with their peers and the wider world by
-  *making and exhibiting beautiful/interesting/challenging things*, not just
-  through journal papers
+- encouraging **all** CECS academics to engage with their peers and the wider
+  world by *making and exhibiting beautiful/interesting/challenging things*, not
+  just through journal papers
 
 [^genevieve]: I'd love to get [Genevieve](https://twitter.com/feraldata) to write & teach that one.
 
@@ -146,36 +144,37 @@ old things in new ways). If an artist has an idea in her head for what she wants
 to create, but the tools to realise it don't exist yet, that artist is
 *intrinsically* motivated to figure out how to make it happen.
 
-I also want to be clear that my pitch here isn't to see the arts as a technical
-problem that needs to be solved by engineers and computer scientists; "hey
+I also want to be clear that my pitch here isn't to view the arts as a technical
+problem that needs to be *solved* by engineers and computer scientists: "hey
 artists, thanks for the last few thousand years, we'll take it from here". We've
 already got too much technochauvinism in tech. Instead, the pitch is that a
 newly-Reimagined CECS can *include* artists in shaping what the computer
 scientists and engineers of 2050 look like, so that it's *not* an "us and them".
 
-Finally, there are top research institutions asking real questions in the fields
-of creative technology, digital art, music and design: have a look at [the list
-below](#where-in-the-world-is-this-already-happening).
+Some of the top research institutions in the world are asking real questions in
+the fields of creative technology, digital art, music and design: have a look at
+[the list below](#where-in-the-world-is-this-already-happening).
 
 #### ...in education?
 
-Again, that Chekov quote above really nails it. For some students, being asked
-to make something creative/artistic is what it takes to flick the switch to go
-beyond the "what boxes do I need to tick for me to get a P/CR/D/HD" mindset to
-actually asking the right questions. I see this sometimes in
+That Chekov quote above really nails it. For some students, being asked to make
+something creative/artistic is what it takes to flick the switch to go beyond
+the "what boxes do I need to tick for me to get a P/CR/D/HD" mindset to actually
+asking the right questions. I see this sometimes in
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/), and it's one of the most
 enjoyable things about teaching that course.
 
 More broadly, I want to see is more dreamers, doodlers and
 "creatives"[^creatives] study engineering or CS at uni. Too often they feel like
 they have to choose between "pursuing the dream" or selling out and studying
-something boring & pragmatic. I fear that we (CECS) miss out on some *brilliant*
-students because of this. I want them to know that they can absolutely do both,
-and in doing so they'll be doing top-class engineering/CS/design work.
+something boring & pragmatic, and I fear that we (CECS) miss out on some
+*brilliant* students because of this. I want these students to know that they
+can pursue their creative dreams, and in doing so they'll be doing top-class
+engineering/CS/design work.
 
 [^creatives]:
     Although I reject the Romantic notion that "creatives" are some sort of
-    rarified "other", conduits to some deep wellspring of hidden creative mojo
+    rarefied "other", conduits to some deep wellspring of hidden creative mojo
     from the other side. We're all just humans, constructing and engaging in
     cultural practices with this stuff, building on what went before.
 
@@ -183,18 +182,13 @@ and in doing so they'll be doing top-class engineering/CS/design work.
 
 Because of my [livecoding]({{site.baseurl}}{% link livecoding.html %}) I get
 asked to do outreach stuff all the time (you're welcome, CECS marketing team
-😉). I know why I get asked: DJing with code is so different, and it's a great
+😉). I know why I get asked: DJing with code is so *different*, it's a great
 hook for engaging folks who might not have thought that combining code & musical
 creativity in that way was possible.
 
-Also, while I want to "grow the pie" in CECS, arts+technology wise for mostly
-high-minded and noble reasons, there's a tiny bit of "the more livecoders we
-have, the more we'll be able to spread the load in our outreach activities" in
-there as well.
-
 #### ...in culture?
 
-The Reimagine Project isn't just about doing the same things with a different
+The Reimagine Project isn't just about doing the same things under a different
 org-chart. It's about changing the culture of Engineering & Computing research
 and practice. While the stereotypes about nerdy engineers and computer types
 isn't necessarily fair in my experience, there's no smoke without a fire, and
@@ -209,7 +203,7 @@ way we can enact cultural change.
 No---in fact we need to work with our colleagues in those places to make this
 stuff happen. I already co-supervise PhD students with
 [Mitchell](https://twitter.com/mtchl) & [Geoff](https://twitter.com/gravitron)
-from the School or Art & Design and [Terhi](https://twitter.com/tmtn) from the
+from the School or Art & Design, and [Terhi](https://twitter.com/tmtn) from the
 Centre for Digital Humanities Research, and I run the ANU Laptop Ensemble with
 [Alec](https://twitter.com/huntercomposer) from the School of Music. And I want
 to see *more* of this type of cross-supervision across these parts of campus.
@@ -272,39 +266,12 @@ are in CS/Engineering Schools, or at least in design schools.
 > technology development, as well as artistic practice and experimentation
 > related to scientific research methods and results
 
-### Is this just another way for the capitalist hegemony to co-opt art and artists to serve their neoliberal ends?
-
-Um, that seems like a loaded question. But I think the answer is: hopefully not.
-At the very least, we should be woke to the danger.
-
-I found Oli Mould's [Against
-Creativity](https://www.jacobinmag.com/2018/09/against-creativity-oli-mould-commercialization-profit-resistance)
-is actually kindof enjoyable, in a gloomy way at least. It’s funny how one can
-go from feeling good about being creative to realising it has been hijacked by
-the neoliberals and basically become a tool of capitalism. Just when you think
-the world was gonna have some fun! So "creativity" as a buzz term is likely to
-go the way of "co-working spaces" when people finally realise it is just another
-form of labour exploitation. So, back to making useless experimental art, at
-least then we only need to worry about over production and land-fill.
-
 ### Has the ANU ever had anything like this before?
 
 Sure, for example [this](http://www.avatar.com.au/courses/acat/), and it was
 amazing. The story about why ACAT is no longer around is long, and I've only
 really ever heard it second/third-hand, and I'm not proposing to resurrect ACAT
 as part of the Reimagine Project. But it's important to know one's history.
-
-<!-- ### Where might this fit in CECS, in the long-term? -->
-
-<!-- You mean which School within CECS (i.e. CS, Design, AeroMech&Env or -->
-<!-- ElecEnerMat)? That's a good question---I don't really know for sure. The content -->
-<!-- is going to cross over a few of them,  -->
-
-<!-- Further, who says it needs to be *in* CECS at all? -->
-
-<!-- Anyway, these are problems which we'll only be really able to answer once we -->
-<!-- have more vibrant creative technology stuff going on, and also as the broader -->
-<!-- Reimagine Project takes shape. -->
 
 ### Sounds like a huge job, Ben---how are you going to manage it?
 
@@ -320,14 +287,6 @@ academic staff & PhD students exploring new avenues for technologically and
 culturally sophisticated artistic practice within CECS and the broader ANU
 campus. That's what I want us to be famous for.
 
-### You seem to have strong opinions about this stuff, what if it doesn't fit with the way the rest of the Reimagine Project shakes out?
-
-Look, obviously I know that this is all fluid---and I don't really know exactly
-how even some of my ideas here will work out in practice. So I know that
-everything here is up for grabs.
-
-Still, one can dream.
-
 ### Do you really get asked these questions *frequently*, Ben?
 
 No.
@@ -335,47 +294,5 @@ No.
 ### So is it really fair to call it an *F*AQ?
 
 Probably not. Sorry.
-
-<!-- ### How many words is this post? -->
-
-<!-- It's {{ page.content | number_of_words }} words (which I realise is *way* over -->
-<!-- the limit, but it includes all the quotes from the other institutions, so -->
-<!-- hopefully it's ok). -->
-
-<!-- ### What are the specific duties of a *Reimagine Fellow*? -->
-
-<!-- From the -->
-<!-- [EoI](https://cecs.anu.edu.au/staff/project-reimagine-fellows-expression-interest): -->
-
-<!-- 1. Champion change and transformation within the College -->
-<!-- 2. Support the establishment of innovative, interdisciplinary, outwardly-focused -->
-<!--    research and education programs; -->
-<!-- 3. Support the development of partnerships with industry and engage with the -->
-<!--    wider research community to embed progressive engineering and computing -->
-<!--    research capabilities; -->
-<!-- 4. Contribute to the strategic priorities of research within the College and its -->
-<!--    schools and institutes,; -->
-<!-- 5. Support the development of transformative experiences for students and the -->
-<!--    next generation of graduate researchers. -->
-
-<!-- ### What are the selection criteria? -->
-
-<!-- Again, from the -->
-<!-- [EoI](https://cecs.anu.edu.au/staff/project-reimagine-fellows-expression-interest): -->
-
-<!-- 1. Ability to demonstrate that the applicant can and will strategically -->
-<!--    complement and contribute to the activities and strategic priorities of the -->
-<!--    Reimagine project, including articulating a clear vision of their -->
-<!--    contribution to the broader agenda, in either or both an academic or -->
-<!--    professional capacity. -->
-<!-- 2. Demonstrated ability to make exceptional things within a broader agenda and -->
-<!--    in a team context, relative to opportunity -->
-<!-- 3. Excellent oral and written English or other language skills and a -->
-<!--    demonstrated ability to communicate and interact effectively with a variety -->
-<!--    of staff and students in a complex, interdisciplinary environment and to -->
-<!--    foster respectful, productive and inclusive working relationships with staff, -->
-<!--    students and colleagues at all levels. -->
-<!-- 4. A proven capacity to achieve against the selection principles outlined below -->
-<!-- 5. Demonstrated the personal attributes outlined below -->
 
 ## Footnotes
