@@ -36,7 +36,7 @@ FAQ[^faq].
 
 I want to see more art[^art] happening in CECS; and I want to strengthen our
 education and research ties to the Schools of Art & Design, Music, and Digital
-Humanities to get there.
+Humanities.
 
 [^art]:
     Defining "art" is beyond the scope of this blog post, obviously. But I don't
