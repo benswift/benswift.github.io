@@ -142,8 +142,8 @@ and the rest of the design team we can come up even more ideas.
 #### ...in research?
 
 Artists have always been at the vanguard of building new things (or seeing/using
-old things in new ways). If an artist has an idea in her head for what they want
-to create, but the tools to realise it don't exist yet, that artist is
+old things in new ways). If an artist has an idea in their head for what they
+want to create, but the tools to realise it don't exist yet, that artist is
 *intrinsically* motivated to figure out how to make it happen.
 
 I also want to be clear that my pitch here isn't to view the arts as a technical
