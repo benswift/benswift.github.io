@@ -336,11 +336,11 @@ No.
 
 Probably not. Sorry.
 
-### How many words is this post?
+<!-- ### How many words is this post? -->
 
-It's {{ page.content | number_of_words }} words (which I realise is *way* over
-the limit, but it includes all the quotes from the other institutions, so
-hopefully it's ok).
+<!-- It's {{ page.content | number_of_words }} words (which I realise is *way* over -->
+<!-- the limit, but it includes all the quotes from the other institutions, so -->
+<!-- hopefully it's ok). -->
 
 <!-- ### What are the specific duties of a *Reimagine Fellow*? -->
 
