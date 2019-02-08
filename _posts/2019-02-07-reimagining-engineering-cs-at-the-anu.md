@@ -118,9 +118,9 @@ few ideas about what it might look like:
 
 - a thoroughly non-traditional project-based "creative tech" masters program,
   with no classes, no heirarchies, just a bunch of brilliant students set loose
-  with duct tape, GPUs, a giant bag of sensors & actuators, soldering irons, oh
-  my. (Geoff Hinchcliffe and I have discussed this---we're both thrilled and
-  terrified at the prospect. And I love what the
+  with duct tape, gaming GPUs, a giant bag of sensors & actuators, soldering
+  irons, a 3D printer, oh my. (Geoff Hinchcliffe and I have discussed
+  this---we're both thrilled and terrified at the prospect. And I love what the
   [3AI](https://3ainstitute.cecs.anu.edu.au/#apply) master's program is shaping
   up to be, and am keen to be a part of it.)
 
