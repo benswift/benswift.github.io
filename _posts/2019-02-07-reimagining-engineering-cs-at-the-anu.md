@@ -30,12 +30,13 @@ FAQ[^faq].
 
 [^faq]: At least it's not a haiku. Or a limerick.
 
-## Ben's Reimagine Fellow Application FAQ
+## Ben's *Reimagine Fellow* Application FAQ
 
 ### In one sentence, why do you want to be a Reimagine Fellow?
 
-I want to see more art[^art] happening in CECS; and to strengthen our education and
-research ties to the Schools of Art & Design, Music, and Digital Humanities.
+I want to see more art[^art] happening in CECS; and I want to strengthen our
+education and research ties to the Schools of Art & Design, Music, and Digital
+Humanities to get there.
 
 [^art]:
     Defining "art" is beyond the scope of this blog post, obviously. But I don't
@@ -72,13 +73,13 @@ Absolutely not. Look, I'm actually kindof insecure about my own artistic
 practice---I think deep down many interdisciplinary artist/technologists are.
 
 However, being a Reimagine Fellow isn't about doing something by yourself---it's
-way too big a project for that to be of any use. It's about weaving that thing
-into the whole College[^dna], so that by 2050 it affects the way *everyone*
-thinks.
+way too big a project for that. It's about weaving something into the whole
+College[^dna], so that by 2050 it affects the way *everyone* thinks.
 
 [^dna]:
     You could even say "weaving it into the College's DNA". But that'd be dumb.
-    Institutions don't have DNA---ask any biologist.
+    Institutions don't have DNA... except maybe
+    [RSB](https://biology.anu.edu.au).
 
 ### What might this look like, concretely?
 
@@ -103,6 +104,10 @@ few ideas about what it might look like:
 - more PhD students doing practice-led research on interdisciplinary
   art/CS/engineering projects
 
+- encouraging CECS academics to engage with their peers and the wider world by
+  *making and exhibiting beautiful/interesting/challenging things*, not just
+  through journal papers
+
 [^genevieve]: I'd love to get [Genevieve](https://twitter.com/feraldata) to write & teach that one.
 
 #### In the medium/long term...
@@ -118,6 +123,15 @@ few ideas about what it might look like:
   terrified at the prospect. And I love what the
   [3AI](https://3ainstitute.cecs.anu.edu.au/#apply) master's program is shaping
   up to be, and am keen to be a part of it.)
+
+- incorporating into every course[^every-course] the option to create and submit
+  a "creative work" to demonstrate attainment of the learning outcomes (🤔
+  really Ben?)
+
+[^every-course]:
+    I kindof want to wriggle out and say *most courses*, but I also really want
+    to see what an artistic submission in lieu of a final exam looks like for
+    [COMP3600](https://cs.anu.edu.au/courses/comp3600/).
 
 I also look forward to having the time to think through what a deeply artistic
 CECS looks like. I'm sure that in collaboration with the other Reimagine Fellows
