@@ -213,7 +213,7 @@ and the rest of the design team we can come up even more ideas.
 
 ### Where in the world is this already happening? {#where-in-the-world-is-this-already-happening}
 
-Here's a selection, including what each place says about their goals (from the
+Here's a few places, including what each place says about their goals (from the
 marketing copy on their own website). Many (but not all) of these labs/groups
 are in CS/Engineering Schools, or at least in design schools.
 
@@ -279,13 +279,15 @@ as part of the Reimagine Project. But it's important to know one's history.
 
 ### Sounds like a huge job, Ben---how are you going to manage it?
 
-Only by building up our capacity in these areas. [Charles
-Martin](https://twitter.com/cpmpercussion) is just about to start as a new
-Lecturer in RSCS, and he's a computer musician (apps and ML for group musical
-improvisation).
+Not on my own, that's for sure. Only by building up our capacity in these areas.
+As an example, [Dr. Charles Martin](https://twitter.com/cpmpercussion) is just
+about to start as a new Lecturer in RSCS, and he's a computer musician (apps and
+ML for group musical improvisation). The campus also has many other
+interdisciplinary artists who have been hiding their lights under bushels---I
+want to give them a banner to rally to.
 
-But we need to think big, and I look forward to a day where there's a long list
-of academic staff & PhD students exploring new avenues for technologically and
+We need to think big, and I look forward to a day where there's a long list of
+academic staff & PhD students exploring new avenues for technologically and
 culturally sophisticated artistic practice within CECS and the broader ANU
 campus. That's what I want us to be famous for.
 
@@ -300,6 +302,10 @@ Still, one can dream.
 ### Do you really get asked these questions *frequently*, Ben?
 
 No.
+
+### So is it really fair to call it an *F*AQ?
+
+Probably not. Sorry.
 
 ### How many words is this post?
 
