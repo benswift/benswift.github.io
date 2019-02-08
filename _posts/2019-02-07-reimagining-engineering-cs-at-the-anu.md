@@ -93,7 +93,8 @@ few ideas about what it might look like.
 
 - a new code/creativity/culture major (at both undergraduate and masters level)
   where students take courses from within CECS, the [ANU School of Art &
-  Design](http://soad.cass.anu.edu.au), and the ANU School of Music
+  Design](http://soad.cass.anu.edu.au), and the [ANU School of
+  Music](https://music.anu.edu.au)
 
 - new courses within CECS on e.g. algorithmic music composition, creative
   making, AI/Deep Learning Art, subversive computing/[designing for
