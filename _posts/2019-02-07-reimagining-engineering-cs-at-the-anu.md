@@ -258,6 +258,21 @@ are in CS/Engineering Schools, or at least in design schools.
 > technology development, as well as artistic practice and experimentation
 > related to scientific research methods and results
 
+### Is this just another way for the capitalist hegemony to co-opt art and artists to serve their neoliberal ends?
+
+Um, that seems like a loaded question. But I think the answer is: hopefully not.
+At the very least, we should be woke to the danger.
+
+I found Oli Mould's [Against
+Creativity](https://www.jacobinmag.com/2018/09/against-creativity-oli-mould-commercialization-profit-resistance)
+is actually kindof enjoyable, in a gloomy way at least. It’s funny how one can
+go from feeling good about being creative to realising it has been hijacked by
+the neoliberals and basically become a tool of capitalism. Just when you think
+the world was gonna have some fun! So "creativity" as a buzz term is likely to
+go the way of "co-working spaces" when people finally realise it is just another
+form of labour exploitation. So, back to making useless experimental art, at
+least then we only need to worry about over production and land-fill.
+
 ### Has the ANU ever had anything like this before?
 
 Sure, for example [this](http://www.avatar.com.au/courses/acat/), and it was
