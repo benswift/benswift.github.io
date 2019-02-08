@@ -80,6 +80,49 @@ thinks.
     You could even say "weaving it into the College's DNA". But that'd be dumb.
     Institutions don't have DNA---ask any biologist.
 
+### What might this look like, concretely?
+
+The Reimagine Project is [big, hairy, and
+audacious](https://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal), so it's
+difficult to sketch out a detailed description or org chart. However, here are a
+few ideas about what it might look like:
+
+#### In the short term...
+
+- a CECS-supported "Reimagine residency" (starting asap!) to support artists to
+  get involved and help us figure out what a Reimagined CECS looks like
+
+- a new code/creativity/culture major (at both undergraduate and masters level)
+  where students take courses from within CECS, the [ANU School of Art &
+  Design](http://soad.cass.anu.edu.au), and the ANU School of Music
+
+- new courses within CECS on e.g. algorithmic music composition, creative
+  making, AI/Deep Learning Art, subversive computing/[designing for
+  evil](https://www.washington.edu/news/2018/05/21/designed-for-evil/)[^genevieve]
+
+- more PhD students doing practice-led research on interdisciplinary
+  art/CS/engineering projects
+
+[^genevieve]: I'd love to get [Genevieve](https://twitter.com/feraldata) to write & teach that one.
+
+#### In the medium/long term...
+
+- a centre of excellence for digital arts/music/multimedia research, teaching
+  and creative practice (co-hosted by CECS and the [College of Arts & Social
+  Sciences](http://cass.anu.edu.au))
+
+- a thoroughly non-traditional project-based "creative tech" masters program,
+  with no classes, no heirarchies, just a bunch of brilliant students set loose
+  with duct tape, GPUs, a giant bag of sensors & actuators, soldering irons, oh
+  my. (Geoff Hinchcliffe and I have discussed this---we're both thrilled and
+  terrified at the prospect. And I love what the
+  [3AI](https://3ainstitute.cecs.anu.edu.au/#apply) master's program is shaping
+  up to be, and am keen to be a part of it.)
+
+I also look forward to having the time to think through what a deeply artistic
+CECS looks like. I'm sure that in collaboration with the other Reimagine Fellows
+and the rest of the design team we can come up even more ideas.
+
 ### How does this further the broader goals of the Reimagine Project...
 
 #### ...in research?
@@ -167,49 +210,6 @@ Concretely, that means:
 - co-employing academics across Colleges in joint positions
 - increasing our to participation in the ANU's interdisciplinary HDR programs
   like [ICCR](http://rsha.cass.anu.edu.au/students/future/iccr)
-
-### This is all kindof abstract---what might this look like concretely?
-
-The Reimagine Project is [big, hairy, and
-audacious](https://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal), so it's
-difficult to sketch out a detailed description or org chart. However, here are a
-few ideas about what it might look like:
-
-#### In the short term...
-
-- a CECS-supported "Reimagine residency" (starting asap!) to support artists to
-  get involved and help us figure out what a Reimagined CECS looks like
-
-- a new code/creativity/culture major (at both undergraduate and masters level)
-  where students take courses from within CECS, the [ANU School of Art &
-  Design](http://soad.cass.anu.edu.au), and the ANU School of Music
-
-- new courses within CECS on e.g. algorithmic music composition, creative
-  making, AI/Deep Learning Art, subversive computing/[designing for
-  evil](https://www.washington.edu/news/2018/05/21/designed-for-evil/)[^genevieve]
-  
-- more PhD students doing practice-led research on interdisciplinary
-  art/CS/engineering projects
-
-[^genevieve]: I'd love to get [Genevieve](https://twitter.com/feraldata) to write & teach that one.
-
-#### In the medium/long term
-
-- a centre of excellence for digital arts/music/multimedia research, teaching
-  and creative practice (co-hosted by CECS and the [College of Arts & Social
-  Sciences](http://cass.anu.edu.au))
-
-- a thoroughly non-traditional project-based "creative tech" masters program,
-  with no classes, no heirarchies, just a bunch of brilliant students set loose
-  with duct tape, GPUs, a giant bag of sensors & actuators, soldering irons, oh
-  my. (Geoff Hinchcliffe and I have discussed this---we're both thrilled and
-  terrified at the prospect. And I love what the
-  [3AI](https://3ainstitute.cecs.anu.edu.au/#apply) master's program is shaping
-  up to be, and am keen to be a part of it.)
-
-I also look forward to having the time to think through what a deeply artistic
-CECS looks like. I'm sure that in collaboration with the other Reimagine Fellows
-and the rest of the design team we can come up even more ideas.
 
 ### Where in the world is this already happening? {#where-in-the-world-is-this-already-happening}
 
