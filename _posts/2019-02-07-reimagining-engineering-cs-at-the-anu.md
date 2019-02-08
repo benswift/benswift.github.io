@@ -142,7 +142,7 @@ and the rest of the design team we can come up even more ideas.
 #### ...in research?
 
 Artists have always been at the vanguard of building new things (or seeing/using
-old things in new ways). If an artist has an idea in her head for what she wants
+old things in new ways). If an artist has an idea in her head for what they want
 to create, but the tools to realise it don't exist yet, that artist is
 *intrinsically* motivated to figure out how to make it happen.
 
@@ -166,12 +166,12 @@ asking the right questions. I see this sometimes in
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/), and it's one of the most
 enjoyable things about teaching that course.
 
-More broadly, I want to see is more dreamers, doodlers and
-"creatives"[^creatives] study engineering or CS at uni. Too often they feel like
-they have to choose between "pursuing the dream" or selling out and studying
-something boring & pragmatic, and I fear that we (CECS) miss out on some
-*brilliant* students because of this. I want these students to know that they
-can pursue their creative dreams, and in doing so they'll be doing top-class
+More broadly, I want to see more dreamers, doodlers and "creatives"[^creatives]
+study engineering or CS at uni. Too often they feel like they have to choose
+between "pursuing the dream" or selling out and studying something boring &
+pragmatic, and I fear that we (CECS) miss out on some *brilliant* students
+because of this. I want these students to know that they can pursue their
+creative dreams, and in doing so they'll be doing top-class
 engineering/CS/design work.
 
 [^creatives]:
