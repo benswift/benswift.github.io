@@ -34,12 +34,14 @@ FAQ[^faq].
 
 ### In one sentence, why do you want to be a Reimagine Fellow?
 
-I want to see more art in CECS; both in what we do and in the way we do it.
+I want to see more art[^art] happening in CECS; and to strengthen our education and
+research ties to the Schools of Art & Design, Music, and Digital Humanities.
 
-*Note*: defining "art" is beyond the scope of this blog post, obviously. But I
-don't just mean it in the narrow "high/fine art" sense, although I don't mean it
-in the "all the humanities" sense either. Think making music, drawing pictures,
-writing stories---but with an element of technology in the mix.
+[^art]:
+    Defining "art" is beyond the scope of this blog post, obviously. But I don't
+    just mean it in the narrow "high/fine art" sense, although I don't mean it
+    in the "all the humanities" sense either. Think making music, drawing
+    pictures, writing stories---but with an element of technology in the mix.
 	
 ### What does that have to do with the Reimagine Project?
 
@@ -47,8 +49,8 @@ writing stories---but with an element of technology in the mix.
 > Chekhov**
 
 As Elanor says in the video above, we don't even know what tomorrow's problems
-are yet; so we need problem *finders*, not just problem *solvers*. Art/artists
-have a key role to play in this (just ask Chekov).
+are yet; so we need problem *finders*, not just problem *solvers*. Art and
+artists have a key role to play in this (just ask Chekov).
 
 ### Why are you the best person to do this?
 
@@ -196,7 +198,7 @@ few ideas about what it might look like:
 - a centre of excellence for digital arts/music/multimedia research, teaching
   and creative practice (co-hosted by CECS and the [College of Arts & Social
   Sciences](http://cass.anu.edu.au))
-  
+
 - a thoroughly non-traditional project-based "creative tech" masters program,
   with no classes, no heirarchies, just a bunch of brilliant students set loose
   with duct tape, GPUs, a giant bag of sensors & actuators, soldering irons, oh
@@ -204,6 +206,10 @@ few ideas about what it might look like:
   terrified at the prospect. And I love what the
   [3AI](https://3ainstitute.cecs.anu.edu.au/#apply) master's program is shaping
   up to be, and am keen to be a part of it.)
+
+I also look forward to having the time to think through what a deeply artistic
+CECS looks like. I'm sure that in collaboration with the other Reimagine Fellows
+and the rest of the design team we can come up even more ideas.
 
 ### Where in the world is this already happening? {#where-in-the-world-is-this-already-happening}
 
