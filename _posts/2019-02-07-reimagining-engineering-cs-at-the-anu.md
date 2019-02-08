@@ -25,7 +25,7 @@ CECS" looks like.
 
 Elanor, if you're reading, I want to be a Reimagine Fellow. And since the
 [EoI](https://cecs.anu.edu.au/staff/project-reimagine-fellows-expression-interest)
-asked for "1000 words **in any format you like**", my EoI takes the form of an
+asked for "1000 words **in any format you like**", here's mine in the form of an
 FAQ[^faq].
 
 [^faq]: At least it's not a haiku. Or a limerick.
@@ -34,8 +34,7 @@ FAQ[^faq].
 
 ### In one sentence, why do you want to be a Reimagine Fellow?
 
-I want to see more art[^art] in CECS; both in what we do and in the way we do
-it.
+I want to see more art in CECS; both in what we do and in the way we do it.
 
 *Note*: defining "art" is beyond the scope of this blog post, obviously. But I
 don't just mean it in the narrow "high/fine art" sense, although I don't mean it
@@ -59,21 +58,21 @@ ends: in my livecoding (both building
 gigs]({{site.baseurl}}{% link livecoding.html %})), in starting the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/),
 in teaching our first-year art+code course
-[COMP1720](https://cs.anu.edu.au/courses/comp1720/).
+[COMP1720](https://cs.anu.edu.au/courses/comp1720/), etc.
 
-Along the way I've built strong networks in these areas, across the ANU campus
+Along the way I've built strong networks in these areas across the ANU campus
 and in the wider community, and I've always said that I was keen to engage with
 them more deeply---this is my chance.
 
 ### So you're just trying to score a grant to go off and do your own weird art thing?
 
 Absolutely not. Look, I'm actually kindof insecure about my own artistic
-practice---I think deep down many interdisciplinary artist/technologists are. We
-always feel like we're not doing 
+practice---I think deep down many interdisciplinary artist/technologists are.
 
-Being a Reimagine Fellow isn't about doing something by yourself---it's way too
-big a project for that to be of any use. It's about weaving that thing into the
-whole College[^dna], so that by 2050 it affects the way *everyone* thinks.
+However, being a Reimagine Fellow isn't about doing something by yourself---it's
+way too big a project for that to be of any use. It's about weaving that thing
+into the whole College[^dna], so that by 2050 it affects the way *everyone*
+thinks.
 
 [^dna]:
     You could even say "weaving it into the College's DNA". But that'd be dumb.
@@ -81,7 +80,7 @@ whole College[^dna], so that by 2050 it affects the way *everyone* thinks.
 
 ### How does this further the broader goals of the Reimagine Project...
 
-#### in research
+#### ...in research?
 
 Artists have always been at the vanguard of building new things (or seeing/using
 old things in new ways). If an artist has an idea in her head for what she wants
@@ -91,30 +90,29 @@ to create, but the tools to realise it don't exist yet, that artist is
 I also want to be clear that my pitch here isn't to see the arts as a technical
 problem that needs to be solved by engineers and computer scientists; "hey
 artists, thanks for the last few thousand years, we'll take it from here". We've
-already got too much technochauvinism in tech. But that a newly-Reimagined CECS
-can *include* artists in shaping what the computer scientists and engineers of
-2050 look like, so that it's *not* an "us and them".
+already got too much technochauvinism in tech. Instead, the pitch is that a
+newly-Reimagined CECS can *include* artists in shaping what the computer
+scientists and engineers of 2050 look like, so that it's *not* an "us and them".
 
 Finally, there are top research institutions asking real questions in the fields
 of creative technology, digital art, music and design: have a look at [the list
 below](#where-in-the-world-is-this-already-happening).
 
-#### in education
+#### ...in education?
 
-Again, that Chekov quote above really nails it. For some students being asked to
-make something creative/artistic is what it takes to flick the switch to go
+Again, that Chekov quote above really nails it. For some students, being asked
+to make something creative/artistic is what it takes to flick the switch to go
 beyond the "what boxes do I need to tick for me to get a P/CR/D/HD" mindset to
 actually asking the right questions. I see this sometimes in
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/), and it's one of the most
 enjoyable things about teaching that course.
 
-The other thing I want to see is more of the dreamers, doodlers and
+More broadly, I want to see is more dreamers, doodlers and
 "creatives"[^creatives] study engineering or CS at uni. Too often they feel like
 they have to choose between "pursuing the dream" or selling out and studying
-something boring & pragmatic. I fear that we (CECS) misses out on some
-*brilliant* students because of this. I want them to know that they can
-absolutely do both, and in doing so they'll be doing top-class
-engineering/CS/design work.
+something boring & pragmatic. I fear that we (CECS) miss out on some *brilliant*
+students because of this. I want them to know that they can absolutely do both,
+and in doing so they'll be doing top-class engineering/CS/design work.
 
 [^creatives]:
     Although I reject the Romantic notion that "creatives" are some sort of
@@ -122,7 +120,7 @@ engineering/CS/design work.
     from the other side. We're all just humans, constructing and engaging in
     cultural practices with this stuff, building on what went before.
 
-#### in outreach
+#### ...in outreach?
 
 Because of my [livecoding]({{site.baseurl}}{% link livecoding.html %}) I get
 asked to do outreach stuff all the time (you're welcome, CECS marketing team
@@ -135,23 +133,23 @@ high-minded and noble reasons, there's a tiny bit of "the more livecoders we
 have, the more we'll be able to spread the load in our outreach activities" in
 there as well.
 
-#### in culture
+#### ...in culture?
 
 The Reimagine Project isn't just about doing the same things with a different
 org-chart. It's about changing the culture of Engineering & Computing research
 and practice. While the stereotypes about nerdy engineers and computer types
 isn't necessarily fair in my experience, there's no smoke without a fire, and
-there *are* some things we need to do better. Incorporating creative expression
-deep within our education, research and outreach work will change the way we
-communicate with the outside world, but it'll also change the sorts of people we
-attract, and welcoming new perspectives into CECS is another way we can enact
-cultural change.
+there *are* some things we need to do better. Incorporating the arts and
+creative expression deep within our education, research and outreach work will
+change the way we communicate with the outside world, but it'll also change the
+sorts of people we attract, and welcoming new perspectives into CECS is another
+way we can enact cultural change.
 
 ### Isn't this treading on the toes of the School of Art & Design (and the School of Music, and ...)?
 
 No---in fact we need to work with our colleagues in those places to make this
 stuff happen. I already co-supervise PhD students with
-[Mitchell](https://twitter.com/mtchl), [Geoff](https://twitter.com/gravitron)
+[Mitchell](https://twitter.com/mtchl) & [Geoff](https://twitter.com/gravitron)
 from the School or Art & Design and [Terhi](https://twitter.com/tmtn) from the
 Centre for Digital Humanities Research, and I run the ANU Laptop Ensemble with
 [Alec](https://twitter.com/huntercomposer) from the School of Music. And I want
@@ -209,10 +207,9 @@ few ideas about what it might look like:
 
 ### Where in the world is this already happening? {#where-in-the-world-is-this-already-happening}
 
-Here's a selection (but there are others), including what each place says about
-their goals (from the marketing copy on their own website). Many (but not all)
-of these labs/groups are in CS/Engineering Schools, or at least in design
-schools (which tend to be all over the place, org-chart wise).
+Here's a selection, including what each place says about their goals (from the
+marketing copy on their own website). Many (but not all) of these labs/groups
+are in CS/Engineering Schools, or at least in design schools.
 
 > The [MIT Media Lab](https://www.media.mit.edu) is an interdisciplinary
 > research lab that encourages the unconventional mixing and matching of
@@ -281,11 +278,18 @@ Martin](https://twitter.com/cpmpercussion) is just about to start as a new
 Lecturer in RSCS, and he's a computer musician (apps and ML for group musical
 improvisation).
 
+But we need to think big, and I look forward to a day where there's a long list
+of academic staff & PhD students exploring new avenues for technologically and
+culturally sophisticated artistic practice within CECS and the broader ANU
+campus. That's what I want us to be famous for.
+
 ### You seem to have strong opinions about this stuff, what if it doesn't fit with the way the rest of the Reimagine Project shakes out?
 
 Look, obviously I know that this is all fluid---and I don't really know exactly
-how even some of my ideas here will work out in practice.
+how even some of my ideas here will work out in practice. So I know that
+everything here is up for grabs.
 
+Still, one can dream.
 
 ### Do you really get asked these questions *frequently*, Ben?
 
@@ -293,10 +297,9 @@ No.
 
 ### How many words is this post?
 
-It's {{ page.content | number_of_words }} words (which I realise is {{
-page.content | number_of_words | minus: 1000 }} over the limit, but it includes
-all the quotes from the other institutions and the selection criteria, so I
-figure it's ok overall).
+It's {{ page.content | number_of_words }} words (which I realise is *way* over
+the limit, but it includes all the quotes from the other institutions, so
+hopefully it's ok).
 
 <!-- ### What are the specific duties of a *Reimagine Fellow*? -->
 
