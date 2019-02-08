@@ -1,6 +1,7 @@
 ---
 title: Reimagining Engineering & CS at the ANU
 date: 2019-02-07 08:55 +0800
+tags: teaching research ccc
 ---
 
 The [ANU College of Engineering and Computer Science](https://cecs.anu.edu.au)
