@@ -36,7 +36,7 @@
 	}
 }
 
-h1,h2,h3,p {
+h1,h2,h3,h4,h5,h6,p {
 	padding: 0 0.8rem;
 }
 
@@ -63,7 +63,7 @@ a {
 	}
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
 	font-weight: 900;
 }
 
@@ -251,7 +251,7 @@ img {
 			". main ."
 			". footer .";
 	}
-	h1,h2,h3,p {
+	h1,h2,h3,h4,h5,h6,p {
 		padding: 0;
 	}
 	.navigation {
