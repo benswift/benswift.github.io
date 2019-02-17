@@ -47,6 +47,7 @@ const slideHTMLstring = `<section data-background-image="https://source.unsplash
 <h2 data-word-order="0">${randomVerb()}</h2>
 <h2 data-word-order="1">your</h2>
 <h2 data-word-order="2">${randomVerb()}</h2>
+<a href="http://www.anu.edu.au"><h1 class="anu-logo">ANU</h1></a>
 </section>`;
 
 slidesDiv.insertAdjacentHTML('afterbegin', slideHTMLstring);
@@ -54,3 +55,17 @@ slidesDiv.insertAdjacentHTML('afterbegin', slideHTMLstring);
 document.querySelectorAll(".reveal > .slides > section > h2").forEach(makeItPop);
 
 </script>
+
+<style>
+.anu-logo {
+  color: #9ec9df;
+  background-color: #494d57 !important;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0 !important;
+}
+.slide-number, .progress {
+  display: none !important;
+}
+</style>
