@@ -22,7 +22,35 @@ function randomVerb() {
   return VERBS[Math.floor(Math.random()*VERBS.length)];
 }
 
-const slideHTMLstring = `<section data-background-image="https://source.unsplash.com/random/1920x1080"><h2>${randomVerb()} your ${randomVerb()}</h2></section>`;
+function makeItPop(e) {
+  e.style.fontWeight = 100+800*Math.random();
+  e.style.fontSize = `${2+15*Math.random()}vh`;
+
+  if(Math.random()<0.3){
+    e.style.textTransform = "uppercase";
+  }
+
+  if(Math.random()<0.3){
+    e.style.fontStyle = "italic";
+  }
+
+  // put it anywhere on the viewport
+  e.style.position = "fixed";
+  e.style.top = `${Math.random()*80}vh`;
+
+  // keep word order
+  order = parseInt(e.dataset.wordOrder);
+  e.style.left = `${25*(order+Math.random())}vw`;
+}
+
+const slideHTMLstring = `<section data-background-image="https://source.unsplash.com/random/1920x1080">
+<h2 data-word-order="0">${randomVerb()}</h2>
+<h2 data-word-order="1">your</h2>
+<h2 data-word-order="2">${randomVerb()}</h2>
+</section>`;
 
 slidesDiv.insertAdjacentHTML('afterbegin', slideHTMLstring);
+
+document.querySelectorAll(".reveal > .slides > section > h2").forEach(makeItPop);
+
 </script>
