@@ -43,5 +43,5 @@ all the details.
 
 [^all-in-one]:
     It's actually all in inline `<script>` and `<style>` tags---which I know
-    isn't nice modular software engineering, but it means that it's all on the
+    isn't nice modular software engineering, but it means that it's all in the
     one place. So, kids, do as I say in class, not as I do on my blog.
