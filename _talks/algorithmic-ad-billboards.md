@@ -58,6 +58,7 @@ document.querySelectorAll(".reveal > .slides > section > h2").forEach(makeItPop)
 
 <style>
 .anu-logo {
+  font-size: 3rem !important;
   color: #9ec9df;
   background-color: #494d57 !important;
   position: fixed;
