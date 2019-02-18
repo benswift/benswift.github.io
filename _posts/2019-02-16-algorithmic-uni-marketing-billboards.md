@@ -34,7 +34,7 @@ Each time the page loads, it:
 
 1. pulls a random background image from [unsplash](https://unsplash.com)
 2. chooses two verbs at random from [a list of the 1000 most frequently used
-   verbs]((https://www.talkenglish.com/vocabulary/top-1000-verbs.aspx))
+   verbs](https://www.talkenglish.com/vocabulary/top-1000-verbs.aspx)
 3. places them on the billboard in the form **verb** *your* **verb**,
    randomising the location and text style
    
