@@ -1,2 +1,2 @@
 all:
-	clj --main cljs.main --compile reimagine-logo.core
+	clj --main cljs.main --compile-opts build.edn --compile
