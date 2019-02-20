@@ -27,7 +27,7 @@
 	// reimagine branding
 	background-color: #BF2F37;
 
-	& > div {
+	.letter, .letter-A {
 		margin: auto;
 		transition: transform 10s ease-in-out, font-weight 10s ease-in-out;
 
@@ -35,5 +35,9 @@
 			transform: rotate(36000deg);
 			font-weight: 900;
 		}
+	}
+
+	.letter-A {
+		transform: rotate(-90deg);
 	}
 }

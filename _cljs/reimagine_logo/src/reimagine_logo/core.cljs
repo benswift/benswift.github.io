@@ -4,7 +4,9 @@
 
 (defn mount-logo []
   (->> "REIMAGINE"
-       (map #(dom/element :div {:class "ri-letter"} %))
+       (map
+        (fn [c]
+          (dom/element :div {:style (if (= c "A") "letter-A" "letter")} c)))
        (apply dom/append (dom/get-element :logo))))
 
 (mount-logo)
