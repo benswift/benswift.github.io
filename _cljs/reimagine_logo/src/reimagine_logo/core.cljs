@@ -3,8 +3,8 @@
             [reimagine-logo.dom-helpers :as dom]))
 
 (defn mount-logo []
-  (->> "reimagine"
-       (map #(dom/element :span {:class "ri-letter"} %))
+  (->> "REIMAGINE"
+       (map #(dom/element :div {:class "ri-letter"} %))
        (apply dom/append (dom/get-element :logo))))
 
 (mount-logo)
