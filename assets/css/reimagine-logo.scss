@@ -29,7 +29,7 @@
 
 	& > div {
 		margin: auto;
-		transition: transform 10s ease-in-out, font-weight 1s ease-in-out;
+		transition: transform 10s ease-in-out, font-weight 10s ease-in-out;
 
 		&:hover {
 			transform: rotate(36000deg);
