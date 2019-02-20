@@ -1,4 +1,10 @@
 (ns reimagine-logo.core
-  (:require [goog.dom :as gdom]))
+  (:require [clojure.string :as string]
+            [reimagine-logo.dom-helpers :as dom]))
 
-(println "Hello world!")
+(defn mount-logo []
+  (->> "reimagine"
+       (map #(dom/element :span {:class "ri-letter"} %))
+       (apply dom/append (dom/get-element :logo))))
+
+(mount-logo)
