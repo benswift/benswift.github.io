@@ -1,1 +1,0 @@
-{:optimizations :advanced, :main reimagine-logo.core, :output-to "../../assets/js/reimagine-logo/core.js", :output-dir "../../assets/js/reimagine-logo", :infer-externs false, :npm-deps false, :aot-cache true}
