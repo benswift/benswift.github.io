@@ -8,7 +8,8 @@
 
 (ns reimagine-logo.dom-helpers
   (:require [clojure.string :as string]
-            [goog.dom :as dom]))
+            [goog.dom :as dom]
+            [goog.dom.classlist :as classlist]))
 
 (defn get-element
   "Return the element with the passed id."
@@ -93,3 +94,30 @@
   "Insert a child element at a specific location."
   [parent child index]
   (dom/insertChildAt parent child index))
+
+;; classes
+
+(defn add-class
+  "add class to element."
+  [e class-name]
+  (classlist/add e class-name))
+
+(defn remove-class
+  "remove class from element."
+  [e class-name]
+  (classlist/add e class-name))
+
+(defn has-class?
+  "does element have the given class?"
+  [e class-name]
+  (classlist/contains e class-name))
+
+(defn swap-class
+  "swap class without touching other classes."
+  [e from-class to-class]
+  (classlist/swap e from-class to-class))
+
+(defn toggle-class
+  "add class if not present and vice versa."
+  [e class-name]
+  (classlist/toggle e class-name))
