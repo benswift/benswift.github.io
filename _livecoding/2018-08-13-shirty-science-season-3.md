@@ -11,7 +11,7 @@ event_url: https://www.facebook.com/events/200014520685862/
 venue_url: https://www.thedoughnutdept.com/welcome
 ---
 
-[Shirty Science](https://kieranbrowne.com) is an ongoing arts/science
+[Shirty Science](https://shirtyscience.com/) is an ongoing arts/science
 collaboration; scientists get paired up with artists to make a sweet t-shirt
 explaining/showing off their research.
 
