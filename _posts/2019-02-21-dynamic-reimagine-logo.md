@@ -1,5 +1,5 @@
 ---
-title: Dynamic Reimagine logo
+title: A dynamic Reimagine logo
 date: 2019-02-21 10:36 +1100
 ---
 
@@ -12,8 +12,9 @@ Reimagine branding is starting to go up around campus, so I decided to put
 together an interactive version of the logo (because giant vinyl prints are
 cool, but they don't spin on mouse-over).
 
-It's made with [clojurescript](https://clojurescript.org), and as always on my
-blog you can look at the
+It's made with [clojurescript](https://clojurescript.org) using
+[Reagent](https://reagent-project.github.io), and as always on my blog you can
+look at the
 [source](https://github.com/benswift/benswift.github.io/blob/source/_cljs/reimagine_logo/src/reimagine_logo/core.cljs)
 to see how it works. If you want to really immerse yourself in the thing,
 there's a fullsreen version [here]({{site.baseurl}}{% link
