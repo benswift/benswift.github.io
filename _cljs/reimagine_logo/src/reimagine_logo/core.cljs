@@ -1,9 +1,11 @@
 (ns reimagine-logo.core
-  (:require [reimagine-logo.dom-helpers :as dom]))
+  (:require [reagent.core :as r]))
 
-(defn mount-logo []
-  (->> "REIMAGINE"
-       (map #(dom/element :div {:style (if (= % "A") "letter-A" "letter")} %))
-       (apply dom/append (dom/get-element :logo))))
+(defn letter-component [letter]
+  [:div letter])
 
-(mount-logo)
+(defn mountit []
+  (r/render [letter-component "R"]
+            (js/document.getElementById "logo")))
+
+(mountit)
