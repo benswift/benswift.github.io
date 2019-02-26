@@ -20,3 +20,5 @@
 
 (mountit)
 
+(js/setInterval #(mountit) 10000)
+
