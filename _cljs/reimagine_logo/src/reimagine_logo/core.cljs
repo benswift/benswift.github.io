@@ -4,8 +4,13 @@
 (defn letter-component [letter]
   [:div letter])
 
+(defn logo-component []
+  [:div {:id "logo"}
+   (for [letter "REIMAGINE"]
+     ^{:key letter} [:div {:class "letter"} letter])])
+
 (defn mountit []
-  (r/render [letter-component "R"]
-            (js/document.getElementById "logo")))
+  (r/render [logo-component]
+            (js/document.getElementById "logo-container")))
 
 (mountit)
