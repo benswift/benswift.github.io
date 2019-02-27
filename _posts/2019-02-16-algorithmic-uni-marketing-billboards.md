@@ -17,12 +17,12 @@ The campaign is called: **verb** *your* **verb**---hit refresh to see the
 different options.
 
 <div style="position:relative;padding-top:56.25%;">
-  <iframe src="{{site.baseurl}}{% link widgets/algorithmic-ad-billboards.md %}" frameborder="0" allowfullscreen
+  <iframe src="{{site.baseurl}}{% link widgets/algorithmic-ad-billboards.html %}" frameborder="0" allowfullscreen
     style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
 
 If you want to see it in fullscreen, you can [do that as
-well]({{site.baseurl}}{% link widgets/algorithmic-ad-billboards.md %}).
+well]({{site.baseurl}}{% link widgets/algorithmic-ad-billboards.html %}).
 
 ## How does it work?
 
