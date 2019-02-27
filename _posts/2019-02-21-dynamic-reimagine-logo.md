@@ -18,9 +18,9 @@ look at the
 [source](https://github.com/benswift/benswift.github.io/blob/source/_cljs/reimagine_logo/src/reimagine_logo/core.cljs)
 to see how it works. If you want to really immerse yourself in the thing,
 there's a fullsreen version [here]({{site.baseurl}}{% link
-widgets/reimagine-logo/index.html %}).
+widgets/reimagine-logo.html %}).
 
 <div style="position:relative;padding-top:100%;margin:20%;">
-  <iframe src="{{site.baseurl}}{% link widgets/reimagine-logo/index.html %}" frameborder="0"
+  <iframe src="{{site.baseurl}}{% link widgets/reimagine-logo.html %}" frameborder="0"
     style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
