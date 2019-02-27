@@ -36,7 +36,7 @@ function foo(){
 
 and `here's` some `inline` code with `hanging` `chads`
 
-{% include slides/background-image.html image="images/pages/ben-autumn-on-campus.jpg" heading="my fambly" bgsize="contain" %}
+{% include slides/background-image.html image="images/pages/ben-autumn-on-campus.jpg" heading="chonky boi" bgsize="contain" %}
 
 {% include slides/impact.html %}
 
