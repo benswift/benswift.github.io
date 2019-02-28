@@ -35,8 +35,8 @@ enjoying one's return to work.
   my personal email or phone number. I will be pushing a pram around campus at
   times, and I'd be keen to catch up.
 
-*But doesn't that mean you'll miss a bunch of fantastic opportunities and/or let
-a bunch of folks down?* Well, maybe. On the first point, I already feel
+*But doesn't that mean you'll (1) miss a bunch of fantastic opportunities and
+(2) let a bunch of folks down?* Well, maybe. On the first point, I already feel
 overwhelmed (at times) by the amount of stuff on my to-do list, so any natural
 pruning of that which occurs is actually kindof appealing. And on the second
 point I've tried really hard this last month to hand various things over to
