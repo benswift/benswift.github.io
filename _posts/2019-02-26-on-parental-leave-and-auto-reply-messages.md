@@ -10,8 +10,8 @@ address until 15 July.
 
 {% asset images/posts/nathalie-spehner-1338356-unsplash.jpg @pic alt="baby dogs - puppies, in fact" %}
 
-**Note**: the baby I am taking care of is a human baby, but the above photo
-contains baby dogs.
+*Note: the baby I am taking care of is a human baby, but the above photo
+contains baby dogs.*
 
 {:.hl-para}
 
