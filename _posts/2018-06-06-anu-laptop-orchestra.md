@@ -13,13 +13,13 @@ job of her first livecoding set.
 
 <div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/269115310?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-Somehow I've managed to make that stuff part of my day job as a (*cough*)
+Somehow I've managed to make that stuff part of my day job as a (_cough_)
 respectable computer science lecturer, because Laptop Orchestras (or *LOrk*s)
 are a thing. Seriously, [look it up on the
 internet](https://en.wikipedia.org/wiki/Laptop_orchestra). But ANU doesn't have
 one---sadface. And it's time to fix that.
 
-- **if** you're a current ANU undergrad or coursework-postgrad student (*any*
+- **if** you're a current ANU undergrad or coursework-postgrad student (_any_
   ANU student, not just in computer science) and you're into
 
   1. **music**: hi-tech DJing (including livecoding, live patching e.g. Max/MSP,
@@ -35,7 +35,7 @@ one---sadface. And it's time to fix that.
      even laptop orchestras need agents
 
 - **and** you want to get together with like (and unlike!)-minded folks and play
-  some gigs *for university credit*, and you have 6--12 credit points (1--2
+  some gigs _for university credit_, and you have 6--12 credit points (1--2
   courses) of room in your ANU degree in S2 2018 and S1 2019
 
 - **then** you need to get in touch with me (<ben.swift@anu.edu.au>), perhaps

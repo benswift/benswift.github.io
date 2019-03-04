@@ -14,5 +14,3 @@ detail, but I think it's still a pretty neat articulation of some of the
 thinking behind the Extempore design decisions.
 
 [slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/live-13.pdf %})
-
-

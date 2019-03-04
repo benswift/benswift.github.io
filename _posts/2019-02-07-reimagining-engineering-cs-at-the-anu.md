@@ -5,20 +5,20 @@ tags: teaching research ccc
 ---
 
 The [ANU College of Engineering and Computer Science](https://cecs.anu.edu.au)
-(CECS) is being *Reimagined*. Don't take my word for it; listen to our fearless
+(CECS) is being _Reimagined_. Don't take my word for it; listen to our fearless
 leader [Elanor](https://cecs.anu.edu.au):
 
 {% include slides/youtube.html id="FjlgEZzaL6k" aspect="56.25%" %}
 
 Basically, this [Reimagine project](https://cecs.anu.edu.au/reimagine) is a
-*huge* investment from the ANU for CECS to grow, change, and to skate to where
+_huge_ investment from the ANU for CECS to grow, change, and to skate to where
 the puck is going to be in 2050 (technologically, societally, culturally, and
 more).
 
 The search is on within CECS to identify **Reimagine Fellows** to champion
 various parts of this transformation. This is super-exciting, especially for
 interdisciplinary art/design/technology folks (like me). It'd be exciting if it
-was happening *anywhere*, but it's particularly exciting that it's happening
+was happening _anywhere_, but it's particularly exciting that it's happening
 where I am and that I might get a voice in shaping exactly what a "reimagined
 CECS" looks like.
 
@@ -31,7 +31,7 @@ FAQ[^faq].
 
 [^faq]: At least it's not a haiku. Or a limerick.
 
-## Ben's *Reimagine Fellow* Application FAQ
+## Ben's _Reimagine Fellow_ Application FAQ
 
 ### In one sentence, why do you want to be a Reimagine Fellow?
 
@@ -40,18 +40,19 @@ education and research ties to the Schools of Art & Design, Music, and Digital
 Humanities.
 
 [^art]:
-    Defining "art" is beyond the scope of this blog post, obviously. But I don't
-    just mean it in the narrow "high/fine art" sense, although I don't mean it
-    in the "all the humanities" sense either. Think making music, drawing
-    pictures, writing stories---but with an element of technology in the mix.
-	
+
+  Defining "art" is beyond the scope of this blog post, obviously. But I don't
+  just mean it in the narrow "high/fine art" sense, although I don't mean it
+  in the "all the humanities" sense either. Think making music, drawing
+  pictures, writing stories---but with an element of technology in the mix.
+
 ### What does that have to do with the Reimagine Project?
 
-> *The role of an artist is to ask questions, not to answer them* -**Anton
+> _The role of an artist is to ask questions, not to answer them_ -**Anton
 > Chekhov**
 
 As Elanor says in the video above, we don't even know what tomorrow's problems
-are yet; so we need problem *finders*, not just problem *solvers*. Art and
+are yet; so we need problem _finders_, not just problem _solvers_. Art and
 artists have a key role to play in this (just ask Chekov).
 
 ### Why are you the best person to do this?
@@ -72,13 +73,14 @@ them more deeply---this is my chance.
 
 Absolutely not. Being a Reimagine Fellow isn't about doing something by
 yourself---it's way too big a project for that. It's about weaving something
-into the whole College[^dna], so that by 2050 it affects the way *everyone*
+into the whole College[^dna], so that by 2050 it affects the way _everyone_
 thinks.
 
 [^dna]:
-    You could even say "weaving it into the College's DNA". But that'd be dumb.
-    Institutions don't have DNA... except maybe
-    [RSB](https://biology.anu.edu.au).
+
+  You could even say "weaving it into the College's DNA". But that'd be dumb.
+  Institutions don't have DNA... except maybe
+  [RSB](https://biology.anu.edu.au).
 
 ### What might this look like, concretely?
 
@@ -105,7 +107,7 @@ few ideas about what it might look like.
   art/CS/engineering projects
 
 - encouraging **all** CECS academics to engage with their peers and the wider
-  world by *making and exhibiting beautiful/interesting/challenging things*, not
+  world by _making and exhibiting beautiful/interesting/challenging things_, not
   just through journal papers
 
 [^genevieve]: I'd love to get [Genevieve](https://twitter.com/feraldata) to write & teach that one.
@@ -129,9 +131,10 @@ few ideas about what it might look like.
   really Ben?)
 
 [^every-course]:
-    I kindof want to wriggle out and say *most courses*, but I also really want
-    to see what an artistic submission in lieu of a final exam looks like for
-    [COMP3600](https://cs.anu.edu.au/courses/comp3600/).
+
+  I kindof want to wriggle out and say _most courses_, but I also really want
+  to see what an artistic submission in lieu of a final exam looks like for
+  [COMP3600](https://cs.anu.edu.au/courses/comp3600/).
 
 I also look forward to having the time to think through what a deeply artistic
 CECS looks like. I'm sure that in collaboration with the other Reimagine Fellows
@@ -144,14 +147,14 @@ and the rest of the design team we can come up even more ideas.
 Artists have always been at the vanguard of building new things (or seeing/using
 old things in new ways). If an artist has an idea in their head for what they
 want to create, but the tools to realise it don't exist yet, that artist is
-*intrinsically* motivated to figure out how to make it happen.
+_intrinsically_ motivated to figure out how to make it happen.
 
 I also want to be clear that my pitch here isn't to view the arts as a technical
-problem that needs to be *solved* by engineers and computer scientists: "hey
+problem that needs to be _solved_ by engineers and computer scientists: "hey
 artists, thanks for the last few thousand years, we'll take it from here". We've
 already got too much technochauvinism in tech. Instead, the pitch is that a
-newly-Reimagined CECS can *include* artists in shaping what the computer
-scientists and engineers of 2050 look like, so that it's *not* an "us and them".
+newly-Reimagined CECS can _include_ artists in shaping what the computer
+scientists and engineers of 2050 look like, so that it's _not_ an "us and them".
 
 Some of the top research institutions in the world are asking real questions in
 the fields of creative technology, digital art, music and design: have a look at
@@ -169,22 +172,23 @@ enjoyable things about teaching that course.
 More broadly, I want to see more dreamers, doodlers and "creatives"[^creatives]
 study engineering or CS at uni. Too often they feel like they have to choose
 between "pursuing the dream" or selling out and studying something boring &
-pragmatic, and I fear that we (CECS) miss out on some *brilliant* students
+pragmatic, and I fear that we (CECS) miss out on some _brilliant_ students
 because of this. I want these students to know that they can pursue their
 creative dreams, and in doing so they'll be doing top-class
 engineering/CS/design work.
 
 [^creatives]:
-    Although I reject the Romantic notion that "creatives" are some sort of
-    rarefied "other", conduits to some deep wellspring of hidden creative mojo
-    from the other side. We're all just humans, constructing and engaging in
-    cultural practices with this stuff, building on what went before.
+
+  Although I reject the Romantic notion that "creatives" are some sort of
+  rarefied "other", conduits to some deep wellspring of hidden creative mojo
+  from the other side. We're all just humans, constructing and engaging in
+  cultural practices with this stuff, building on what went before.
 
 #### ...in outreach?
 
 Because of my [livecoding]({{site.baseurl}}{% link livecoding.html %}) I get
 asked to do outreach stuff all the time (you're welcome, CECS marketing team
-😉). I know why I get asked: DJing with code is so *different*, it's a great
+😉). I know why I get asked: DJing with code is so _different_, it's a great
 hook for engaging folks who might not have thought that combining code & musical
 creativity in that way was possible.
 
@@ -194,7 +198,7 @@ The Reimagine Project isn't just about doing the same things under a different
 org-chart. It's about changing the culture of Engineering & Computing research
 and practice. While the stereotypes about nerdy engineers and computer types
 isn't necessarily fair in my experience, there's no smoke without a fire, and
-there *are* some things we need to do better. Incorporating the arts and
+there _are_ some things we need to do better. Incorporating the arts and
 creative expression deep within our education, research and outreach work will
 change the way we communicate with the outside world, but it'll also change the
 sorts of people we attract, and welcoming new perspectives into CECS is another
@@ -208,13 +212,14 @@ stuff happen. I already co-supervise PhD students with
 from the School or Art & Design, and [Terhi](https://twitter.com/tmtn) from the
 Centre for Digital Humanities Research, and I run the ANU Laptop Ensemble with
 [Alec](https://twitter.com/huntercomposer) from the School of Music. And I want
-to see *more* of this type of cross-supervision across these parts of campus.
+to see _more_ of this type of cross-supervision across these parts of campus.
 
 Actually, this "treading on toes" question looms over the whole Reimagine
 Project. I think the best way forward is to partner with the other parts of
 campus to bring their expertise and smoosh it together with ours.
 
 Concretely, that means:
+
 - sending CECS coursework students to take courses in other parts of campus (as
   part of majors/minors/electives, etc.) as well as the other way around
 - co-employing academics across Colleges in joint positions
@@ -253,7 +258,7 @@ are in CS/Engineering Schools, or at least in design schools.
 > group focused on embodied interaction with sound and image.
 
 > The Stanford [Center for Computer Research in Music and
-> Acoustics]((https://ccrma.stanford.edu)) (CCRMA) is a multi-disciplinary
+> Acoustics](<(https://ccrma.stanford.edu)>) (CCRMA) is a multi-disciplinary
 > facility where composers and researchers work together using computer-based
 > technology both as an artistic medium and as a research tool.
 
@@ -289,7 +294,7 @@ academic staff & PhD students exploring new avenues for technologically and
 culturally sophisticated artistic practice within CECS and the broader ANU
 campus. That's what I want us to be famous for.
 
-### Do you really get asked these questions *frequently*, Ben?
+### Do you really get asked these questions _frequently_, Ben?
 
 No.
 

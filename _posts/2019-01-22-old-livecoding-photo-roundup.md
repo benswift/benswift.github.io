@@ -31,5 +31,5 @@ from [@starstoofondly](https://twitter.com/starstoofondly/status/542177320321024
 
 {% asset images/livecoding/ben-acmc-07-kremlin.jpg @pic alt="ACMC attendees hanging out at Kremlin bar" %}
 
-This isn't me *performing*, unless you count my animated conversation with
+This isn't me _performing_, unless you count my animated conversation with
 Gordon Monro as a performance.

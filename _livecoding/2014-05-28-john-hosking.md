@@ -3,10 +3,10 @@ date: "2014-05-28"
 type: curated
 title: John Hosking Farewell Reception
 venue: Drill Hall Gallery, Canberra
-curator: 
+curator:
 artists:
-- Ben Swift
-event_url: 
+  - Ben Swift
+event_url:
 venue_url: https://dhg.anu.edu.au
 video_url: https://vimeo.com/314652381
 ---
@@ -19,6 +19,5 @@ ANU College of Engineering & Computer Science.
 
 John was a great supporter of livecoding research[^code] at the ANU, and it was
 fitting to be able to send him off in style.
-
 
 [^code]: this is code for "John gave Ben a job"

@@ -24,6 +24,7 @@ It's now hanging on my wall at home, creepily looking down at my family and our
 guests. **I love it**.
 
 [^tired]:
-    that's why I look so sullen---I smiled no-stop for the first hour (when they
-    were painting the background) but by the time they were putting on the
-    facial details 3hrs in I was *way* too tired to keep my smile up 😊
+
+  that's why I look so sullen---I smiled no-stop for the first hour (when they
+  were painting the background) but by the time they were putting on the
+  facial details 3hrs in I was _way_ too tired to keep my smile up 😊

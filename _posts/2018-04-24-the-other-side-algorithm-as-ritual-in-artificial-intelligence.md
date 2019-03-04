@@ -6,11 +6,11 @@ tags: kieran research
 ---
 
 Tomorrow morning (Wed April 25, 9am Montréal time) Kieran Browne and I are
-performing an Artificial Intelligence divination ritual as part of the *alt.chi*
+performing an Artificial Intelligence divination ritual as part of the _alt.chi_
 session [Scary, Sporty, Ginger and
 Posh](https://chi2018.acm.org/technical-program/?sessionId=-L6Uzypel81JpsiUKYQ2&publicationId=-L7SB7rZwtlVgobKgWoH).
 
-This is not a talk *about* the ritual; we will be performing the ritual **live**
+This is not a talk _about_ the ritual; we will be performing the ritual **live**
 at CHI, using an analog computing apparatus to communicate with an artificial
 intelligence to divine the answers to our questions.
 

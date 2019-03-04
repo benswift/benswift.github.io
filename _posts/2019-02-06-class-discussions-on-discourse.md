@@ -14,10 +14,11 @@ open to both CS and non-CS students, and can be counted towards a major in both
 the CS and the ANU School of Art and Design.[^artgit]
 
 [^artgit]:
-    I also teach all the artists & designers to use git---and it works really
-    well... with the appropriate scaffolding. Knowing how to use version control
-    really does feel like having superpowers when editing digital, and seeing
-    artists and designers realise this is pretty cool.
+
+  I also teach all the artists & designers to use git---and it works really
+  well... with the appropriate scaffolding. Knowing how to use version control
+  really does feel like having superpowers when editing digital, and seeing
+  artists and designers realise this is pretty cool.
 
 This wasn't because Piazza sucks---it's actually pretty great in lots of ways.
 But there were a few things we hoped to that Discourse would do better:
@@ -29,7 +30,7 @@ But there were a few things we hoped to that Discourse would do better:
 2. a [proper API](https://docs.discourse.org), rather than using one of the [unofficial
    Piazza API clients](https://github.com/hfaran/piazza-api) and hoping that
    Piazza didn't break things just before an assigment/exam
-   
+
 3. proper markdown support (with the ability to add whichever programming
    languages we like through [highlight.js](https://highlightjs.org)
    integration) rather than whatever they call the nonsense pseudo-markdown and
@@ -38,19 +39,19 @@ But there were a few things we hoped to that Discourse would do better:
 4. self-hosting and controlling where the data is stored, because I don't think
    I ever figured out whether it was technically ok to store student data on a
    foreign server and compel students to create an account on same
-   
+
 5. a [plugin ecosystem](https://www.discourse.org/plugins) so that we could
    tweak it to suit our specific needs (and potentially develop our own plugins)
-   
+
 Still, there are a couple of things that Discourse is missing out-of-the-box
 compared to Piazza:
 
 1. the ability for instructors (professors & tutors) to mark a question/answer
-   as a *good question/answer* (really handy in teaching)
-   
+   as a _good question/answer_ (really handy in teaching)
+
 2. the ability for students to "post anonymously to other students" while still
    being visible (identifiable) to the instructors
-   
+
 3. ability for students to "accept" an answer,
    [SO](https://stackoverflow.com)-style (there's a [plugin for
    this](https://github.com/discourse/discourse-solved), but we didn't use it
@@ -60,7 +61,7 @@ compared to Piazza:
 
 Pretty well---student engagement was higher than the previous year (with Piazza)
 and anecdotal feedback was that the students liked it. The limitations described
-above didn't bite *too* hard, although I do think that the "post anonymously to
+above didn't bite _too_ hard, although I do think that the "post anonymously to
 students" thing in particular does encourage students to speak up when they're
 struggling in a way that they don't when their name is attached to everything.
 
@@ -80,20 +81,21 @@ So, the way we organised it was:
 
 - each course is a **category**
 - **subcategories** were devoted to e.g. lectures, labs, assignments, etc.
-- *access control*: all students were enrolled into a **group**, which was given
+- _access control_: all students were enrolled into a **group**, which was given
   read/write access to the **category** with the same name[^samename]
-- tutors (TAs) were given 
+- tutors (TAs) were given
 
 [^samename]:
-    the course category (list of topics) and group (list of members) could in
-    principle have different names
+
+  the course category (list of topics) and group (list of members) could in
+  principle have different names
 
 Here's an example: for COMP1720 we set up
 
-- a top-level *comp1720* category
-- a *comp1720* group (in which all students in the course were automatically
+- a top-level _comp1720_ category
+- a _comp1720_ group (in which all students in the course were automatically
   enrolled using the Discourse API)
-- all tutors are members of a *comp1720-tutors* group, which has a higher
+- all tutors are members of a _comp1720-tutors_ group, which has a higher
   privilege level
 
 This way, if a student is enrolled in multiple courses, they'll appear in

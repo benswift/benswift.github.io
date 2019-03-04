@@ -64,7 +64,7 @@ the next generation of new media creators are spread across the **whole campus**
 {% include slides/background-image.html image="images/talks/code-2k18/charisse-kenion-456578-unsplash.jpg" %}
 
 {% include slides/background-image.html image="images/talks/code-2k18/vidar-nordli-mathisen-596746-unsplash.jpg" %}
- 
+
 {%
  include slides/background-image.html
  image="images/talks/code-2k18/mimi-thian-737711-unsplash.jpg"
@@ -96,7 +96,7 @@ the ANU **L**aptop **Ens**emble
 run by Alec and I through our
 [TechLauncher](https://cs.anu.edu.au/TechLauncher/) innovation/entrepreneurship
 program
- 
+
 currently ~10 students from computer science, art and music
 
 {% include slides/background-image.html image="images/talks/code-2k18/lens-open-day-alex-rohan.jpg" heading="creatively" %}
@@ -116,7 +116,7 @@ between domains
 
 {:.fragment}
 
-creation without *critique*
+creation without _critique_
 
 {% include slides/impact.html %}
 

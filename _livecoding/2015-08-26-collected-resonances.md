@@ -5,7 +5,7 @@ title: "Collected Resonances: Session 2"
 venue: ANU School of Music, Canberra
 curator: Chloë Hobbs
 artists:
-- Ben Swift
+  - Ben Swift
 event_url: http://www.agac.com.au/event/collected-resonances-3/
 venue_url: http://music.cass.anu.edu.au/services/bookings/venues
 video_url: https://vimeo.com/314633596
@@ -15,4 +15,3 @@ video_url: https://vimeo.com/314633596
 
 Sadly there's no full video from this gig, only this crowd video of the last
 couple of minutes.
-

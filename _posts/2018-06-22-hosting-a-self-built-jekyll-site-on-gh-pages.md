@@ -13,7 +13,7 @@ tutorials](http://blog.teamtreehouse.com/using-github-pages-to-host-your-website
 on how to set all this up.
 
 However, I like to have control over which plugins are used, etc. which GitHub
-pages doesn't let you do. What it (GH pages) *does* let you do, though, is dump
+pages doesn't let you do. What it (GH pages) _does_ let you do, though, is dump
 a bunch of files (html, js, css) in a repo and just serve them as-is. These
 files represent the "built" version of your site, not the source, so you'll
 probably want a separate repo for your content (e.g. your markdown files) and
@@ -41,9 +41,10 @@ but you can push the built site to the master branch so GH pages will serve it
 up for you.
 
 [^hassle]:
-    I know that it's not actually *that* much hassle, especially if you've
-    already got a webserver set up for other reasons, but zero hassle still
-    beats ε hassle ∀ε>0, especially when there's other work to be done.
+
+  I know that it's not actually _that_ much hassle, especially if you've
+  already got a webserver set up for other reasons, but zero hassle still
+  beats ε hassle ∀ε>0, especially when there's other work to be done.
 
 ```make
 BASE_HTML_DIR=_site

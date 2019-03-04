@@ -6,7 +6,7 @@ permalink: /teaching/
 
 {% asset images/pages/iot-2018-shao-kao.jpg @pic alt="燒烤 in Beijing with the IoT@BIT study tour students" %}
 
-Computers are just so *useful* in all domains of human endeavour, and giving
+Computers are just so _useful_ in all domains of human endeavour, and giving
 people the skills to do interesting things with them is really important work. I
 really enjoy it, too :)
 
@@ -14,7 +14,7 @@ I'm currently teaching three courses in the [ANU Research School of Computer
 Science](https://cs.anu.edu.au/courses/comp2300/)
 
 - in **Semester 1 (Feb-Jun)** I teach [COMP2300: Computer Organisation and
-  Program Execution](https://cs.anu.edu.au/courses/comp2300/) (*note*: I'm on
+  Program Execution](https://cs.anu.edu.au/courses/comp2300/) (_note_: I'm on
   parental leave for S1 2019, so I won't be teaching the course this time
   around---but the course will still be the same)
 

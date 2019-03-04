@@ -34,21 +34,22 @@ It then goes on to show some example visualisation in
 bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it's something Andrew Sorensen and I have written
 about before in our paper [Visual Code Annotations for Cyberphysical
-Programming](https://doi.org/10.1109/LIVE.2013.6617345) (2013) in the *1st
-International Workshop on Live Programming (LIVE)*[^preprint] (it's reference
+Programming](https://doi.org/10.1109/LIVE.2013.6617345) (2013) in the _1st
+International Workshop on Live Programming (LIVE)_[^preprint] (it's reference
 #4 in the essay). I'll refer to this a bit in this post, so let's call it "the
 LIVE paper".
 
 [^preprint]:
-    if you don't have institutional access to the IEEE then just [email
-    me](mailto:ben.swift@anu.edu.au) and I can send you a pre-print.
+
+  if you don't have institutional access to the IEEE then just [email
+  me](mailto:ben.swift@anu.edu.au) and I can send you a pre-print.
 
 I also think that the three points listed above are pretty solid, especially in
 a multimedia livecoding context (maybe even in a broader context). One thing I
 like about the visual annotations provided is that they're mostly ASCII (or
 ASCII-ish). This is not so important when deploying them in the web browser
 (since you can do so much fancy styling stuff with CSS & js these days) but it's
-really important when dealing with... *ahem*, more venerable editors. I ended up
+really important when dealing with... _ahem_, more venerable editors. I ended up
 having to use some unholy Emacs hacks with
 [overlays](https://www.gnu.org/software/emacs/manual/html_node/elisp/Overlays.html)
 to get the original annotations discussed in the LIVE paper working.
@@ -75,7 +76,7 @@ then you'll see what I mean (again, I really suggest that you try it---it's
 super-cool being able to mess around with the live code in the browser).
 
 I feel this particularly keenly because I'm a clean-slate livecoder (as is
-Charlie), so I'm *always* moving through an incomplete code state until I get
+Charlie), so I'm _always_ moving through an incomplete code state until I get
 something which will even run. This isn't just a problem for clean-slate
 livecoding, though---even tweaks to existing code which introduce "bad" code
 states (from the visualisation's perspective) will cause these issues.
@@ -114,7 +115,7 @@ Finally, I can identify with Charlie when he writes:
 I get this---in my experience (when I've had even more limited annotations than
 the ones he shows in the essay) are just as much for my benefit as the audience.
 Livecoding is hard, and any extra information you can get about what's going on
-with your code is super helpful. 
+with your code is super helpful.
 
 In principle visual code annotations can be even more useful to the livecoder
 because they allow her to "audition" algorithmic changes to the code
@@ -122,7 +123,7 @@ without[^feedback] actually eval-ing the code and changing the music. Here's an
 example from the essay:
 
 ```js
-Euclid(9,16)/* 1010110101011010 */ 
+Euclid(9, 16); /* 1010110101011010 */
 ```
 
 I might not always know what the `9,6` euclidean rhythm is, but I'm by now
@@ -135,10 +136,11 @@ ear in the club---something which I don't have currently in my livecoding setup
 (although others might).
 
 [^feedback]:
-    Yes, I know that the real-time feedback of hearing the sound is crucial, and
-    I'm not for a second saying that we do away with it, but there are some
-    situations where I want to check what the result of an algorithmic/parameter
-    change might be without inflicting it on the audience.
+
+  Yes, I know that the real-time feedback of hearing the sound is crucial, and
+  I'm not for a second saying that we do away with it, but there are some
+  situations where I want to check what the result of an algorithmic/parameter
+  change might be without inflicting it on the audience.
 
 ## Conclusion
 
@@ -151,7 +153,7 @@ guess my main point is just to shout from the rooftops:
 
 I'm not just talking about technical issues, either; obviously any
 demo/prototype is going to have those, but they're fixable. I think there are
-deeper issues with trying to use *live* text as both the description of program
+deeper issues with trying to use _live_ text as both the description of program
 behaviour and as a "view" on the hidden state of the program.
 
 Anyway, this is just a blog post, so I'm off the hook with regard to rigour,
@@ -177,7 +179,8 @@ where this stuff can be front-and-centre, not just a weird "supplemental web
 materials" section to a traditional pdf.
 
 [^distill]:
-    [Distill](https://distill.pub/) is great, but it's pretty DL/AI-focussed.
-    The livecoding community needs something similar (although it does
-    privilege livecoding environments which work in the brower, so that's not
-    ideal either. Hmm.)
+
+  [Distill](https://distill.pub/) is great, but it's pretty DL/AI-focussed.
+  The livecoding community needs something similar (although it does
+  privilege livecoding environments which work in the brower, so that's not
+  ideal either. Hmm.)

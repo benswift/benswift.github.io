@@ -7,8 +7,7 @@ tags: web
 I use [Jekyll](https://jekyllrb.com/) to create my course websites and
 [reveal.js](https://github.com/hakimel/reveal.js/) to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
-content, and the formatting/presentation stuff stays out of the way until I `git
-push` the updates to the server.
+content, and the formatting/presentation stuff stays out of the way until I `git push` the updates to the server.
 
 There are a few ways of making these two tools (Jekyll and reveal.js) play
 nicely together: see [here](https://github.com/dploeger/jekyll-revealjs) and
@@ -52,8 +51,7 @@ directory:
 You'll need a new [layout](https://jekyllrb.com/docs/layouts/) as well: create a
 `reveal.html` file in your Jekyll `_layouts` directory and make sure that the
 body tag has this in it (you'll need to make sure it's got the right paths &
-other stuff for your setup). The key part is that first `{% raw %}{{ content |
-revealify }}{% endraw %}` line---that takes the content of your page (the jekyll
+other stuff for your setup). The key part is that first `{% raw %}{{ content | revealify }}{% endraw %}` line---that takes the content of your page (the jekyll
 `.md` file with `layout: reveal` in the frontmatter) and passes it through the
 "revealify" filter plugin we [made earlier](#the-revealify-filter).
 
@@ -66,44 +64,51 @@ tweak to suit your own presentation.
 {% raw %}{{ content | revealify }}{% endraw %}
 
 <!-- load the reveal.js css & js (assuming you've put it in assets/)-->
-<link rel="stylesheet" href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/reveal.css">
-<link rel="stylesheet" href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/theme/white.css">
-<script src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/js/reveal.js" type="text/javascript"></script>
+<link
+  rel="stylesheet"
+  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/reveal.css"
+/>
+<link
+  rel="stylesheet"
+  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/theme/white.css"
+/>
+<script
+  src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/js/reveal.js"
+  type="text/javascript"
+></script>
 
 <!-- configure the presentation, (you can tweak options to suit) -->
 <script>
- Reveal.initialize({
+  Reveal.initialize({
+    // Display presentation control arrows
+    controls: true,
 
-   // Display presentation control arrows
-   controls: true,
+    // Help the user learn the controls by providing hints, for example by
+    // bouncing the down arrow when they first encounter a vertical slide
+    controlsTutorial: true,
 
-   // Help the user learn the controls by providing hints, for example by
-   // bouncing the down arrow when they first encounter a vertical slide
-   controlsTutorial: true,
+    // Determines where controls appear, "edges" or "bottom-right"
+    controlsLayout: "bottom-right",
 
-   // Determines where controls appear, "edges" or "bottom-right"
-   controlsLayout: 'bottom-right',
+    // Visibility rule for backwards navigation arrows; "faded", "hidden"
+    // or "visible"
+    controlsBackArrows: "faded",
 
-   // Visibility rule for backwards navigation arrows; "faded", "hidden"
-   // or "visible"
-   controlsBackArrows: 'faded',
+    // Display a presentation progress bar
+    progress: true,
 
-   // Display a presentation progress bar
-   progress: true,
+    // Display the page number of the current slide
+    slideNumber: false,
 
-   // Display the page number of the current slide
-   slideNumber: false,
+    // Push each slide change to the browser history
+    history: false,
 
-   // Push each slide change to the browser history
-   history: false,
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
 
-   // Enable keyboard shortcuts for navigation
-   keyboard: true,
-
-   // Enable the slide overview mode
-   overview: true,
-
- });
+    // Enable the slide overview mode
+    overview: true
+  });
 </script>
 ```
 

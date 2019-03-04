@@ -10,8 +10,8 @@ address until 15 July.
 
 {% asset images/posts/nathalie-spehner-1338356-unsplash.jpg @pic alt="baby dogs - puppies, in fact" %}
 
-*Note: the baby I am taking care of is a human baby, but the above photo
-contains baby dogs.*
+_Note: the baby I am taking care of is a human baby, but the above photo
+contains baby dogs._
 
 {:.hl-para}
 
@@ -20,11 +20,11 @@ going to delete all the unread emails in my inbox. Sorry if that seems harsh,
 but it's the only way to deal with this situation and have any chance of
 enjoying one's return to work.
 
-- If you've got important information which needs to be actioned *before* July
+- If you've got important information which needs to be actioned _before_ July
   15, then you need to make alternative arrangements. I wish you all the best,
   but I can't help you out with making it happen.
 
-- If you've got important information which has an expiry date *after* July 15,
+- If you've got important information which has an expiry date _after_ July 15,
   then put a note in your calendar to re-email me after that date (because your
   email still won't survive the purge, sorry).
 
@@ -35,8 +35,8 @@ enjoying one's return to work.
   my personal email or phone number. I will be pushing a pram around campus at
   times, and I'd be keen to catch up.
 
-*But doesn't that mean you'll (1) miss a bunch of fantastic opportunities and
-(2) let a bunch of folks down?* Well, maybe. On the first point, I already feel
+_But doesn't that mean you'll (1) miss a bunch of fantastic opportunities and
+(2) let a bunch of folks down?_ Well, maybe. On the first point, I already feel
 overwhelmed (at times) by the amount of stuff on my to-do list, so any natural
 pruning of that which occurs is actually kindof appealing. And on the second
 point I've tried really hard this last month to hand various things over to
@@ -47,6 +47,6 @@ Anyway, I'm gonna go be a Dad for a while. I'll still read the odd book, and
 maybe even make some more music, but this isn't a research fellowship---it's
 parental leave. Have a great Autumn/Winter, and I'll see you on the other side.
 
-*p.s.* I really like the title of this post; inhabiting the liminal space
+_p.s._ I really like the title of this post; inhabiting the liminal space
 between the the plainspoken declaration "I'm on parental leave" and the more
-philosophical (and pretentious) "On *blah...*" literary device.
+philosophical (and pretentious) "On _blah..._" literary device.

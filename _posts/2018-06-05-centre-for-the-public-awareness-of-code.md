@@ -5,27 +5,27 @@ date: 2018-06-05 09:13
 tags: ccc
 ---
 
-*What's your favourite movie?* Most folks already have an answer to this
+_What's your favourite movie?_ Most folks already have an answer to this
 question (because they've been asked before). Mine's [The
 Castle](https://www.imdb.com/title/tt0118826/).
 
 {% asset images/posts/the-castle.jpg @pic alt="Cast of 'The Castle'" style="width:100%;" %}
 
-*What's your favourite band/album?* Again, a pretty standard "dinner party" line
+_What's your favourite band/album?_ Again, a pretty standard "dinner party" line
 of questioning. As a muso (at least in the loose sense of the word) I find this
 a much tougher one to answer, partially because I have so many favourites, and
 partially because I'm trying t
 
-*What's your favourite scientist or scientific theory/fact?* This one is harder,
+_What's your favourite scientist or scientific theory/fact?_ This one is harder,
 but thanks to great work by many
 [gifted](https://en.wikipedia.org/wiki/Carl_Sagan) [science](http://drkarl.com/)
 [communicators](https://twitter.com/ANU_CPAS) people increasingly have an answer
 to those questions.
 
-***What's your favourite bit of (software) code? What's your favourite
-algorithm?*** I reckon that most people will struggle to have an answer for this
+**_What's your favourite bit of (software) code? What's your favourite
+algorithm?_** I reckon that most people will struggle to have an answer for this
 one. In fact, most folks probably won't understand the question. Yet code (and
-the algorithms they manifest) *does* impact the world today. Mark Zuckerberg is
+the algorithms they manifest) _does_ impact the world today. Mark Zuckerberg is
 still
 [travelling](https://www.washingtonpost.com/news/the-switch/wp/2018/04/11/zuckerberg-facebook-hearing-congress-house-testimony/)
 [around](http://www.latimes.com/business/technology/la-fi-tn-facebook-zuckerberg-europe-20180522-story.html)
@@ -42,7 +42,7 @@ amazing code communicators out there---check out Dan Shiffman on the [Coding
 Train](http://thecodingtrain.com/). And there's stuff like [Critical Code
 Studies
 (CCS)](http://www.electronicbookreview.com/thread/electropoetics/codology),
-although that's more about understanding code-as-text *deeply* rather than
+although that's more about understanding code-as-text _deeply_ rather than
 raising awareness of what code is currently doing in the world.
 
 What we need is a **Centre for the Public Awareness of Code**, with a bunch of

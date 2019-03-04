@@ -5,7 +5,7 @@ title: Innovation ACT 2015 Launch
 venue: John Curtin School of Medical Research, Canberra
 curator: Natalija Nikolic
 artists:
-- Ben Swift
+  - Ben Swift
 event_url: https://innovationact.org
 venue_url: https://jcsmr.anu.edu.au
 ---
@@ -21,9 +21,10 @@ This was a long set---around 90 mins---and there's no surviving video for the
 full set. The above "excerpt" video gives a flavour[^ap] of the gig, though.
 
 [^ap]:
-    observant viewers will notice that the synth line here is *quite* similar to
-    the one I use in the [*aesthetic* visuals set during the AP
-    Sessions]({{site.baseurl}}{% link _livecoding/2014-09-30-ap-sessions.md
-    %}#aesthetic-visuals)---I figure that since the AP sessions were a bit of a
-    hybrid gig/research thing (and because I quite liked how it turned out) I'd
-    give it another outing in a gig with a "proper" audience
+
+  observant viewers will notice that the synth line here is _quite_ similar to
+  the one I use in the [*aesthetic* visuals set during the AP
+  Sessions]({{site.baseurl}}{% link _livecoding/2014-09-30-ap-sessions.md
+  %}#aesthetic-visuals)---I figure that since the AP sessions were a bit of a
+  hybrid gig/research thing (and because I quite liked how it turned out) I'd
+  give it another outing in a gig with a "proper" audience

@@ -40,13 +40,13 @@ most up-to-date list of all the things that me and my group are working on.
 If you're interested in doing Honours/Masters/PhD research with me, [send me an
 email](mailto:ben.swift@anu.edu.au). I always have a few project ideas kicking
 around, but I'm also open to hearing about the project/big idea that excites
-*you*. Send me
+_you_. Send me
 
 1. a **one-paragraph** description of the project you're interested in doing,
    and
 2. a **link to something you've made**: a livecoding video, a project on GitHub,
    an academic paper---even a blog post
-   
+
 I get a lot of emails about this sort of thing, so including these two things is
 a great way to show that you've thought a bit about what sort of research
 project you're interested in (and why I'd be a good fit). You should think hard
@@ -69,12 +69,14 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 <li>
 
 {% if lc.event_url %}
+
 <p class="title"><a href="{{ lc.event_url }}">{{ lc.title }}</a></p>
 {% else %}
 <p class="title">{{ lc.title }}</p>
 {% endif %}
 
 {% if lc.curator %}
+
 <p>{{ lc.curator }} <span class="date">(curator)</span></p>
 {% endif %}
 

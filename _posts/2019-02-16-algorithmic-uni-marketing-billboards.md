@@ -3,8 +3,8 @@ title: Algorithmic uni marketing billboards
 date: 2019-02-16 14:46 +1100
 ---
 
-In the spirit of Murdoch University's [*free your
-think*](http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html)
+In the spirit of Murdoch University's [_free your
+think_](http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html)
 marketing campaign, I've put together a dynamic full-page ad billboard as my
 pitch for the ANU's next marketing campaign.
 
@@ -13,7 +13,7 @@ pitch for the ANU's next marketing campaign.
 Disclaimer: this is in no way an official ANU campaign. Seriously, though, it's
 a great uni---and you should come [study with us](http://www.anu.edu.au/study).
 
-The campaign is called: **verb** *your* **verb**---hit refresh to see the
+The campaign is called: **verb** _your_ **verb**---hit refresh to see the
 different options.
 
 <div style="position:relative;padding-top:56.25%;">
@@ -35,13 +35,14 @@ Each time the page loads, it:
 1. pulls a random background image from [unsplash](https://unsplash.com)
 2. chooses two verbs at random from [a list of the 1000 most frequently used
    verbs](https://www.talkenglish.com/vocabulary/top-1000-verbs.aspx)
-3. places them on the billboard in the form **verb** *your* **verb**,
+3. places them on the billboard in the form **verb** _your_ **verb**,
    randomising the location and text style
-   
+
 As with all things on this blog, you can check out the source[^all-in-one] to see
 all the details.
 
 [^all-in-one]:
-    It's actually all in inline `<script>` and `<style>` tags---which I know
-    isn't nice modular software engineering, but it means that it's all in the
-    one place. So, kids, do as I say in class, not as I do on my blog.
+
+  It's actually all in inline `<script>` and `<style>` tags---which I know
+  isn't nice modular software engineering, but it means that it's all in the
+  one place. So, kids, do as I say in class, not as I do on my blog.

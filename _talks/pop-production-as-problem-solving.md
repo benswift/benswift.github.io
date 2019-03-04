@@ -33,7 +33,7 @@ summary: >-
 - [modelling the domain](#modelling-the-domain)
 - [crowdsourced livecoding](#crowdsourced-livecoding)
 
-## what *I'm* gonna do
+## what _I'm_ gonna do
 
 - learn a new song (by ear!)
 - figure out how to turn it into code
@@ -49,7 +49,7 @@ summary: >-
 
 yikes!
 
-## what *you're* gonna do
+## what _you're_ gonna do
 
 - help me choose the song
 - be kind when I make mistakes
@@ -69,6 +69,7 @@ a
 is someone who makes songs happen
 
 pop songs are characterised by:
+
 - catchy hooks
 - repetitive harmonic patterns (e.g. chord progressions)
 - processed/synthetic sounds (lots of computers involved in the production)
@@ -96,7 +97,7 @@ write a **no. 1** hit
 
 {% include slides/impact.html %}
 
-**music** *(n.)*
+**music** _(n.)_
 
 a series of pitched "events" over time
 
@@ -122,7 +123,7 @@ a series of pitched "events" over time
 - **pitch** (in MIDI note numbers), e.g. middle C as 60, C# as 61, etc.
 - **loudness** (0 is silent, 127 is super loud)
 
-## [extempore](https://extemporelang.github.io/): a livecoding *language*
+## [extempore](https://extemporelang.github.io/): a livecoding _language_
 
 [extempore](https://extemporelang.github.io/) is a programming language designed
 for musical livecoding (written [Andrew Sorensen](https://twitter.com/digego)
@@ -139,11 +140,11 @@ don't worry about the syntax, I'll explain enough for you to follow along
 
 pop music isn't black magic, it's a domain with lots of structure/patterns
 
-computers/code are *really useful* for modelling/exploring this stuff
+computers/code are _really useful_ for modelling/exploring this stuff
 
 {:.fragment}
 
-this is *not* AI, either
+this is _not_ AI, either
 
 {% include slides/impact.html %}
 

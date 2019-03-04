@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'The annual benswift.me re-write: 2019 edition'
+title: "The annual benswift.me re-write: 2019 edition"
 date: 2019-01-02 17:46
 tags: meta web
 ---
@@ -29,8 +29,8 @@ There are a few reasons:
 5. part of being an academic is brand-management, and that's much easier to do
    if you completely control (at least one of) the platforms you're putting your
    message out on
-   
-6. I'm a control-freak, and the idea of *not* being in control bums me out (this
+
+6. I'm a control-freak, and the idea of _not_ being in control bums me out (this
    is the pernicious flip side of #5)
 
 Some of these are good reasons, some not-so-good. For a fun party game, [argue
@@ -43,19 +43,19 @@ site. This time, though, I've opted for my own lovingly hand-crafted HTML & CSS
 rather than one of the out-of-the-box themes. In doing this, I decided on a few
 design priorities:
 
-1. *modern* markup: CSS grid & flexbox **all the way** (sorry if you're on an old
+1. _modern_ markup: CSS grid & flexbox **all the way** (sorry if you're on an old
    version of IE)
-2. *minimal* markup: there's really not many elements in each page (I wanted to
+2. _minimal_ markup: there's really not many elements in each page (I wanted to
    see how far I could push back against the `div` soup that's so common these
    days)
-3. *semantic* markup: we have `nav` and `article` and `main` and `aside`, so
+3. _semantic_ markup: we have `nav` and `article` and `main` and `aside`, so
    let's use them
-   
+
 Typography-wise, I used [@rsms](https://twitter.com/rsms)'s new [Inter
 UI](https://rsms.me/inter/) font family, and I really like it. I'm not a
 designer (as you can probably tell) so I kept it simple---one typeface, one
 highlight colour, and then I poke around with
-[Sass's](https://www.sass-lang.com) colour manipulation functions to get a *bit*
+[Sass's](https://www.sass-lang.com) colour manipulation functions to get a _bit_
 more variation.
 
 **The verdict**: I was really pleasantly surprised---it came together in about a

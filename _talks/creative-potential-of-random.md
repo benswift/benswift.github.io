@@ -67,13 +67,13 @@ this last point is the key attribute of random numbers
 
 ## gaussian random numbers
 
-picks a number *around* some middle point
+picks a number _around_ some middle point
 
 numbers closer to that middle point are **more likely** than ones further away
 
 named after Carl Friedrich Gauss
 
-has other names: *normal distribution*, *bell curve*, etc.
+has other names: _normal distribution_, _bell curve_, etc.
 
 ## discrete random variables
 
@@ -89,8 +89,7 @@ if `random()` is passed one parameter which is an array, then the return value
 will be one of the elements of the array, selected at random (all equally
 likely)
 
-
-## discrete random variables with *different likelihoods*
+## discrete random variables with _different likelihoods_
 
 if you want some outcomes (i.e. some elements of the array) to happen more often
 than others, there are a couple of tricks
@@ -103,19 +102,19 @@ var loadedDice = [1, 2, 2, 2, 2 3, 4, 5, 6];
 var roll = random(loadedDice);
 ```
 
-## discrete random variables with *different likelihoods*
+## discrete random variables with _different likelihoods_
 
 another approach: if you want one thing to happen e.g. 10% of the time, and
 something else to happen the other 90%
 
 1. use `random(100)` to get a random number between 0 and 100
-2. if the result is *less than* 10, do the first thing, otherwise do the other
+2. if the result is _less than_ 10, do the first thing, otherwise do the other
    thing
 
 ## mapping: using randomness effectively
 
 mapping (I know the word "map" is overloaded in programming) in this context
-means what do you *do* with the randomness
+means what do you _do_ with the randomness
 
 in my livecoding, I use random numbers to control/modulate: **pitch**,
 **loudness**, **duration**, **rhythm**, **timbre** & more
@@ -129,17 +128,15 @@ to control: **position**, **size/shape**, **colour/transparency**,
 what's the right balance between **predictability** and **surprise**?
 
 choosing where to use randomness, where not to use it, and what type of
-randomness to use: *this is where the art happens*
+randomness to use: _this is where the art happens_
 
 ## re-creating the random pixels image
 
 ```javascript
 loadPixels();
 for (var i = 0; i < pixels.length; i++) {
-    if (random() < 0.5)
-        pixels[i] = 0;
-    else
-        pixels[i] = 255;
+  if (random() < 0.5) pixels[i] = 0;
+  else pixels[i] = 255;
 }
 updatePixels();
 ```

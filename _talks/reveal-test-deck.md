@@ -18,7 +18,7 @@ with **some** stuff on it
 
 more stuff
 
-Aliquam *erat* volutpat. Nunc **_eleifend_** leo vitae magna. In id erat non orci
+Aliquam _erat_ volutpat. Nunc **_eleifend_** leo vitae magna. In id erat non orci
 commodo lobortis. Proin neque massa, cursus ut, gravida ut, lobortis eget,
 lacus. Sed diam. Praesent fermentum tempor tellus. Nullam tempus. Mauris ac
 felis vel velit tristique imperdiet. Donec at pede. Etiam vel neque nec dui
@@ -29,7 +29,7 @@ Nam euismod tellus id erat.
 ## code
 
 ```javascript
-function foo(){
+function foo() {
   return "bar";
 }
 ```
@@ -40,7 +40,7 @@ and `here's` some `inline` code with `hanging` `chads`
 
 {% include slides/impact.html %}
 
-and *here's* the **thing**
+and _here's_ the **thing**
 
 # an h1 slide!
 

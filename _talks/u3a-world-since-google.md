@@ -34,7 +34,7 @@ code/creativity/culture
 
 ---
 
-> **culture** *(noun)*. all the knowledge and values shared by a society
+> **culture** _(noun)_. all the knowledge and values shared by a society
 > -&nbsp;<https://www.wordnik.com/words/culture>
 
 {% include slides/background-image.html image="images/talks/u3a-world-since-google/keenan-barber-604510-unsplash.jpg" %}
@@ -91,7 +91,7 @@ a short, incomplete, **mostly wrong** history of the internet since 1996
 who finds Google:
 
 - reliable?
-- *usable*?
+- _usable_?
 - useful?
 
 {% include slides/background-image.html image="images/talks/u3a-world-since-google/lydia-torrey-563689-unsplash.jpg" %}

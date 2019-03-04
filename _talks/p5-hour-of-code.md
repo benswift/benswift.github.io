@@ -32,7 +32,7 @@ super-easy, and free)
 
 ## edit the code
 
-``` javascript
+```javascript
 function setup() {
   createCanvas(800, 800);
 }
@@ -68,7 +68,7 @@ square and a circle on top of one another?
 
 put one of these **before** your `rect` line:
 
-``` javascript
+```javascript
 fill(255, 0, 0);
 // or
 stroke(15, 180, 0);
@@ -80,7 +80,7 @@ try changing the numbers around...
 
 ## moar colours
 
-``` javascript
+```javascript
 fill(255, 0, 0); // each value from 0-255
 ```
 
@@ -104,7 +104,7 @@ like a 5-year-old, you need to be **specific**
 
 don't forget any brackets, commas, etc.
 
-learn to *understand* the tantrums:
+learn to _understand_ the tantrums:
 
 ```
 ReferenceError: sdfsd is not defined (sketch: line 8)
@@ -114,7 +114,7 @@ SyntaxError: missing ) after argument list (sketch: line 12)
 {% include slides/background-image.html
 image="images/talks/p5-hour-of-code/smiley.png" heading="smiley face" %}
 
-``` javascript
+```javascript
 function setup() {
   createCanvas(800, 800);
   noStroke();
@@ -125,7 +125,7 @@ function draw() {
   // set colour to yellow & draw face
   fill(255, 255, 0);
   ellipse(400, 400, 400, 400);
-  
+
   // set colour to black & draw eyes/mouth
   fill(0);
   ellipse(300, 350, 70, 70);

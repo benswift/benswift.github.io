@@ -5,7 +5,7 @@ tags: web
 ---
 
 > It is a truth, universally acknowledged, that all programming language authors
-> must also be expert web developers. (*attributed to Jane Austen*)
+> must also be expert web developers. (_attributed to Jane Austen_)
 
 I've just spent a solid day wrestling with source code syntax highlighting on my
 blog, and I've finally got it figured out. Tada:
@@ -39,7 +39,7 @@ blog.
 
 Yep, [`@blue9`](https://github.com/cyblue9) ported the [Scheme/xtlang
 lexer](https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/lisp.py?at=default&fileviewer=file-view-default#lisp.py-2420)
-that I wrote for Pygments, which is a *big* help to the Extempore community
+that I wrote for Pygments, which is a _big_ help to the Extempore community
 (thanks `blue9`).
 
 ### Isn't it just a matter of adding `xtlang` to the highlight.js build step?
