@@ -1,0 +1,8 @@
+- repo: local # https://github.com/benswift/benswift.github.io
+  hooks:
+    - id: prettier
+      name: prettier-md
+      language: node
+      entry: prettier
+      args: ["--write"]
+      types: [markdown]
