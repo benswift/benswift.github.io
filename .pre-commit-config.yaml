@@ -1,4 +1,4 @@
-- repo: local # https://github.com/benswift/benswift.github.io
+- repo: local
   hooks:
     # this hook requires the 'prettier' executable to be on the path
     # npm install --global prettier
