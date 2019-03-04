@@ -1,5 +1,7 @@
 - repo: local # https://github.com/benswift/benswift.github.io
   hooks:
+    # this hook requires the 'prettier' executable to be on the path
+    # npm install --global prettier
     - id: prettier
       name: prettier-md
       language: node
