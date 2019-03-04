@@ -17,8 +17,8 @@ title: benswift.me
 email: ben@benswift.me
 author: Ben Swift
 description: "livecoder & researcher homepage - code, creativity, culture"
-baseurl:     ""
-url:         "https://benswift.me"
+baseurl: ""
+url: "https://benswift.me"
 date_format: "%b %-d, %Y"
 future: true
 
@@ -35,13 +35,11 @@ defaults:
     values:
       layout: post
       permalink: /blog/:year/:month/:day/:title/
-  -
-    scope:
+  - scope:
       type: talks
     values:
       layout: reveal
-  -
-    scope:
+  - scope:
       type: livecoding
     values:
       layout: post
@@ -63,8 +61,8 @@ assets:
     - assets/
   autoprefixer:
     browsers:
-    - "last 2 versions"
-    - "IE >= 11"
+      - "last 2 versions"
+      - "IE >= 11"
 
 # jekyll-seo-tag stuff
 twitter:
