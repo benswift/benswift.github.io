@@ -3,8 +3,8 @@
 
 (defn random-classes []
   (->> ["big" "small" "heavy" "light" "cw90" "cc90" "cw180" "cc180" "cw270" "cc270"]
-      shuffle
-      (take (rand-int 3))))
+       shuffle
+       (take (rand-int 3))))
 
 (defn letter-component [letter]
   ^{:key letter}
@@ -25,4 +25,3 @@
 (mount)
 
 (js/setInterval #(mount) 10000)
-
