@@ -14,11 +14,11 @@
    (for [letter "REIMAGINE"]
      ^{:key letter} [:div {:class (concat ["letter" (when (= letter "A") "letter-A")] (random-classes))} letter])])
 
-(defn mountit []
+(defn mount []
   (r/render [logo-component]
             (js/document.getElementById "logo-container")))
 
-(mountit)
+(mount)
 
-(js/setInterval #(mountit) 10000)
+(js/setInterval #(mount) 10000)
 
