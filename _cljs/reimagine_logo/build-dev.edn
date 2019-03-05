@@ -1,5 +1,0 @@
-{:main reimagine-logo.core
- :output-to "../../assets/js/reimagine-logo/core.js"
- :infer-externs false
- :npm-deps false
- }
