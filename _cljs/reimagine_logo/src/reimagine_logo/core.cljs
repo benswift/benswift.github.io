@@ -9,7 +9,8 @@
 (defn letter-component [letter]
   ^{:key letter}
   [:div
-   {:class (concat ["letter" (when (= letter "A") "letter-A")] (random-classes))}
+   {:class (into ["letter" (when (= letter "A") "letter-A")]
+                 (random-classes))}
    letter])
 
 (defn logo-component []
