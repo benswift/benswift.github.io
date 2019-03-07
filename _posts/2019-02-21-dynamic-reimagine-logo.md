@@ -26,3 +26,17 @@ widgets/reimagine-logo.html %}).
           style="position:absolute;top:0;left:0;width:100%;height:100%;">
   </iframe>
 </div>
+
+If you're looking to use this logo yourself in some other page, you could use an
+`<iframe>` like so:
+
+```html
+<div style="position:relative;padding-top:100%;margin:0;">
+  <iframe
+    src="https://benswift.me/widgets/reimagine-logo/"
+    frameborder="0"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+  >
+  </iframe>
+</div>
+```
