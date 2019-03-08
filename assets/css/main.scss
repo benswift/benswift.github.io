@@ -169,8 +169,9 @@ footer {
 
 .post-tags {
 	font-style: italic;
-	& > span {
+	& > a {
 		font-style: normal;
+		font-weight: 400;
 		background-color: lighten($highlight-color, 40%);
 		color: $highlight-color;
 		padding: 0.2em;

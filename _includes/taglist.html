@@ -2,7 +2,9 @@
 <p class="post-tags">
   tags:
   {% for tag in include.tags %}
-  <span>{{ tag }}</span>
+  <a href="{{ site.baseurl }}/blog/tag/{{ tag }}/">
+	{{ tag }}
+  </a>
   {% endfor %}
 </p>
 {% endunless %}
