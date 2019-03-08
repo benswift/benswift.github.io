@@ -7,7 +7,7 @@ layout: page
 
 Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ),
-[artist]({{site.baseurl}}{% link livecoding.html %}) and
+[artist]({{site.baseurl}}{% link livecoding.md %}) and
 [hacker](https://github.com/benswift).
 
 I'm a [Senior Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the
@@ -19,12 +19,12 @@ about the way that `code` is shaping flows of information/culture/humanity in
 today's (and tomorrow's) world. You can read more at the [c/c/c group
 website](https://cs.anu.edu.au/code-creativity-culture/).
 
-This is my homepage & [blog]({{site.baseurl}}{% link blog.html %}), where I can
+This is my homepage & [blog]({{site.baseurl}}{% link blog.md %}), where I can
 wax lyrical about my [research]({{site.baseurl}}{% link research.md
-%})/[creative practice]({{site.baseurl}}{% link livecoding.html %}),
+%})/[creative practice]({{site.baseurl}}{% link livecoding.md %}),
 [teaching]({{site.baseurl}}{% link teaching.md %}), and the [thoughts in my
-head]({{site.baseurl}}{% link blog.html %}). You can navigate to the main areas
-([blog]({{site.baseurl}}{% link blog.html %}), [research]({{site.baseurl}}{%
+head]({{site.baseurl}}{% link blog.md %}). You can navigate to the main areas
+([blog]({{site.baseurl}}{% link blog.md %}), [research]({{site.baseurl}}{%
 link research.md %}), etc.) using the navbar at the top of the page (and there
 are a few external links as well).
 

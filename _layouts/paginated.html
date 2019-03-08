@@ -1,0 +1,42 @@
+---
+layout: page
+---
+
+{{ content | markdownify }}
+
+<!-- show the items on this page -->
+{% for post in paginator.posts %}
+<section class="post-excerpt">
+  <p class="post-date">{{ post.date | date: "%d %b '%y" }}</p>
+  <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  {% include taglist.html tags=post.tags %}
+  {% if post.summary %}
+  <p>{{ post.summary | markdownify }}</p>
+  {% else %}
+  <p>{{ post.excerpt | markdownify }}</p>
+  {% endif %}
+
+</section>
+{% endfor %}
+
+<!-- show links to other pages -->
+{% if paginator.total_pages > 1 %}
+<div class="navigation">
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">older stuff</a>
+  {% else %}
+  <a class="disabled">older stuff</a>
+  {% endif %}
+
+  <span>
+	{{ page.pagination_info.curr_page }}/{{ page.pagination_info.total_pages }}
+  </span>
+
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">newer stuff</a>
+  {% else %}
+  <a class="disabled">newer stuff</a>
+  {% endif %}
+  </div>
+{% endif %}

@@ -10,7 +10,7 @@ years. If you've got an old photo of me doing my thing, then can you either
 me to share it? I'll give you authoreal credit and hugs.
 
 For any photos of actual gigs, they'll go into the
-[livecoding]({{site.baseurl}}{% link livecoding.html %}) section of this website.
+[livecoding]({{site.baseurl}}{% link livecoding.md %}) section of this website.
 However, I also do lots of other presentations, talks and demos which don't
 really count as "gigs". For those, I'll just add the photos here as they turn
 up.

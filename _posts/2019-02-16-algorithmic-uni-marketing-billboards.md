@@ -27,7 +27,7 @@ well]({{site.baseurl}}{% link widgets/algorithmic-ad-billboards.html %}).
 ## How does it work?
 
 It uses the same [reveal.js](https://github.com/hakimel/reveal.js/) template
-that I use for all my [talks/slides]({{site.baseurl}}{% link talks.html
+that I use for all my [talks/slides]({{site.baseurl}}{% link talks.md
 %})---it's basically a one-slide presentation.
 
 Each time the page loads, it:

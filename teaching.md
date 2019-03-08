@@ -28,6 +28,6 @@ Science](https://cs.anu.edu.au/courses/comp2300/)
 If you're a student at the ANU, then I encourage you to take one (or more!) of
 these courses---I think they're pretty great :)
 
-I also give regular [guest lectures]({{site.baseurl}}{% link talks.html %}) &
+I also give regular [guest lectures]({{site.baseurl}}{% link talks.md %}) &
 run workshops on various topics in my areas of expertise. If you're interested
 in hiring me as a speaker, [get in touch](mailto:ben.swift@anu.edu.au).

@@ -9,11 +9,11 @@
 	{% assign url_components = page.url | downcase | split: '/' %}
 	{% assign current = url_components[1] %}
 
-	<a {% if current == "blog" %}class="current"{% endif %}href="{% link blog.html %}">blog</a>
+	<a {% if current == "blog" %}class="current"{% endif %}href="{% link blog.md %}">blog</a>
 	<a {% if current == "research" %}class="current"{% endif %}href="{% link research.md %}">research</a>
 	<a {% if current == "teaching" %}class="current"{% endif %}href="{% link teaching.md %}">teaching</a>
-	<a {% if current == "livecoding" %}class="current"{% endif %}href="{% link livecoding.html %}">livecoding</a>
-	<a {% if current == "talks" %}class="current"{% endif %}href="{% link talks.html %}">talks</a>
+	<a {% if current == "livecoding" %}class="current"{% endif %}href="{% link livecoding.md %}">livecoding</a>
+	<a {% if current == "talks" %}class="current"{% endif %}href="{% link talks.md %}">talks</a>
 	<a {% if current == "bio" %}class="current"{% endif %}href="{% link bio.md %}">bio</a>
 
 	<!-- social icons -->
