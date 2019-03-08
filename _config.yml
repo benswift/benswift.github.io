@@ -55,6 +55,17 @@ pagination:
   enabled: true
   per_page: 10
   sort_reverse: true
+autopages:
+  enabled: true
+  collections:
+    enabled: false
+  categories:
+    enabled: false
+  tags:
+    layouts:
+      - "paginated.html"
+    title: 'Posts tagged with ":tag"' # :tag is replaced by the tag name
+    permalink: "/blog/tag/:tag"
 
 # jekyll-assets
 assets:
