@@ -1,6 +1,7 @@
 ---
 title: On parental leave and auto-reply messages
 date: 2019-02-26 18:08 +1100
+tags: life
 ---
 
 I'm now (as of the date of this blog post) on parental leave ([thanks,
