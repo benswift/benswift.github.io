@@ -44,18 +44,19 @@ defaults:
     values:
       layout: post
 
-# from paginate-v2 gem
-pagination:
-  enabled: true
-  per_page: 10
-  sort_reverse: true
-
 collections:
   talks:
     output: true
   livecoding:
     output: true
 
+# from paginate-v2 gem
+pagination:
+  enabled: true
+  per_page: 10
+  sort_reverse: true
+
+# jekyll-assets
 assets:
   sources:
     - assets/
@@ -64,7 +65,7 @@ assets:
       - "last 2 versions"
       - "IE >= 11"
 
-# jekyll-seo-tag stuff
+# jekyll-seo-tag
 twitter:
   username: benswift
   card: summary
@@ -78,6 +79,7 @@ social:
     - https://keybase.io/benbalter
     - https://vimeo.com/benswift
 
+# jekyll-scholar
 scholar:
   style: assets/scholar/apa.csl
   sort_by: year
