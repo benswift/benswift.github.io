@@ -8,13 +8,7 @@ I'm an [Emacs](https://www.gnu.org/software/emacs/) guy, and so if I've got some
 simple tabular data I'd _much_ rather keep it in an
 [org-mode](https://orgmode.org) table than have to fire up Excel.
 
-Here's an example[^auto-format]:
-
-[^auto-format]:
-
-  If the prospect of having to keep all those `|` characters manually aligned
-  is freaking you out, don't worry---`orgtbl-mode` does it all for you
-  automatically.
+Here's an example:
 
 ```
 #+NAME: pap-table
@@ -24,6 +18,10 @@ Here's an example[^auto-format]:
 | Fitzwilliam | Darcy     |         10000 |
 | Charles     | Bingley   |          5000 |
 ```
+
+If the prospect of having to keep all those `|` characters manually aligned
+is freaking you out, don't worry---`orgtbl-mode` does it all for you
+automatically.
 
 Now, I often want to get my functional programming on and apply a function to
 all the rows of the table. Org-mode does have some special syntax with bunch of
