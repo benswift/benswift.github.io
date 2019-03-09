@@ -4,7 +4,7 @@ OUTFILE=../../assets/js/reimagine-logo.js
 all: $(OUTFILE)
 
 $(OUTFILE): $(SRCFILE)
-	clj --main cljs.main --compile-opts build.edn --compile
+	clojure --main cljs.main --compile-opts build.edn --compile
 
 .PHONY: clean
 clean:
