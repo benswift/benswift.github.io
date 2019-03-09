@@ -5,3 +5,6 @@ _site
 
 .ruby-version
 .cljs_node_repl/
+
+# cljs build files
+/assets/js/reimagine-logo.js
