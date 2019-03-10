@@ -8,3 +8,4 @@ _site
 
 # cljs build files
 /assets/js/reimagine-logo.js
+/assets/js/algorithmic-billboard.js
