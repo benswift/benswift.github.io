@@ -10,7 +10,9 @@ simple tabular data I'd _much_ rather keep it in an
 
 Here's an example:
 
-```
+<!-- note: the language specifiers for the code blocks in this post are wrong, but they're the "best fit" -->
+
+```ruby
 #+NAME: pap-table
 | first name  | last name | yearly-income |
 |-------------|-----------|---------------|
@@ -36,7 +38,7 @@ in that table like so (note the `:var table=pap-table` at the start):
 
 [^nicer]: if there's a nicer way, please [let me know](https://twitter.com/benswift)!
 
-```
+```scheme
 #+BEGIN_SRC emacs-lisp :var table=pap-table
   (-map
    (lambda (row)
@@ -53,7 +55,7 @@ in that table like so (note the `:var table=pap-table` at the start):
 Then, when you evaluate the code block with `C-c C-c` (or just `, ,` in
 Spacemacs) it'll return the "result":
 
-```
+```ruby
 #+RESULTS:
 | Mr. Bennett is a man of small fortune; 2000 a year. |
 | Mr. Darcy is a man of large fortune; 10000 a year.  |
