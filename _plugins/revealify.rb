@@ -22,8 +22,8 @@ module Jekyll
 
       all_elements = content.xpath("*")
 
-      unless all_elements.first.matches? "h1,h2,hr"
-        raise "reveal md files must start with h1, h2 or hr"
+      unless all_elements.first.matches? "section,h1,h2,hr"
+        raise "reveal files must start with section, h1, h2 or hr, not  #{all_elements.first.name} (in \"#{@context.registers[:page]["path"]}\")"
       end
 
       all_elements.each do |element|
