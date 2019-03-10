@@ -20,7 +20,13 @@ module Jekyll
       reveal_div = Nokogiri::HTML.fragment('<div class="reveal"><div class="slides"></div></div>', 'UTF-8')
       slides_div = reveal_div.search('.slides').first
 
-      content.xpath("*").each do |element|
+      all_elements = content.xpath("*")
+
+      unless all_elements.first.matches? "h1,h2,hr"
+        raise "reveal md files must start with h1, h2 or hr"
+      end
+
+      all_elements.each do |element|
 
         # <section> elements should be passed through as-is
         if element.matches? "section"
