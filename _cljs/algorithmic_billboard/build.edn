@@ -1,0 +1,6 @@
+{:optimizations :advanced
+ :main algorithmic-billboard.core
+ :output-to "../../assets/js/algorithmic-billboard.js"
+ :infer-externs false
+ :npm-deps false
+ }
