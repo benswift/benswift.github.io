@@ -46,5 +46,10 @@
 
 (mount)
 
+(defn reveal-configure [options]
+  "apply a map of reveal config options"
+  ((gobject/get js/Reveal "configure") (clj->js options)))
+
+;; only apply the reveal config after the Reveal object is already set up
 (set! (.-onload js/window)
-      #((gobject/get js/Reveal "configure") #js{"progress" false "slideNumber" false}))
+      #(reveal-configure {"progress" false "slideNumber" false}))
