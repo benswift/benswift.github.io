@@ -14,7 +14,6 @@ open to both CS and non-CS students, and can be counted towards a major in both
 the CS and the ANU School of Art and Design.[^artgit]
 
 [^artgit]:
-
   I also teach all the artists & designers to use git---and it works really
   well... with the appropriate scaffolding. Knowing how to use version control
   really does feel like having superpowers when editing digital, and seeing
@@ -86,7 +85,6 @@ So, the way we organised it was:
 - tutors (TAs) were given
 
 [^samename]:
-
   the course category (list of topics) and group (list of members) could in
   principle have different names
 

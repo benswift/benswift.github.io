@@ -40,7 +40,6 @@ International Workshop on Live Programming (LIVE)_[^preprint] (it's reference
 LIVE paper".
 
 [^preprint]:
-
   if you don't have institutional access to the IEEE then just [email
   me](mailto:ben.swift@anu.edu.au) and I can send you a pre-print.
 
@@ -136,7 +135,6 @@ ear in the club---something which I don't have currently in my livecoding setup
 (although others might).
 
 [^feedback]:
-
   Yes, I know that the real-time feedback of hearing the sound is crucial, and
   I'm not for a second saying that we do away with it, but there are some
   situations where I want to check what the result of an algorithmic/parameter
@@ -179,7 +177,6 @@ where this stuff can be front-and-centre, not just a weird "supplemental web
 materials" section to a traditional pdf.
 
 [^distill]:
-
   [Distill](https://distill.pub/) is great, but it's pretty DL/AI-focussed.
   The livecoding community needs something similar (although it does
   privilege livecoding environments which work in the brower, so that's not
