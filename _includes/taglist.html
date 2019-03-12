@@ -1,8 +1,7 @@
 {% unless include.tags == blank %}
-<p class="post-tags">
-  tags:
+<p class="post-tag-container">
   {% for tag in include.tags %}
-  <a href="{{ site.baseurl }}/blog/tag/{{ tag }}/">
+  <a class="post-tag" href="{{ site.baseurl }}/blog/tag/{{ tag }}/">
 	{{ tag }}
   </a>
   {% endfor %}

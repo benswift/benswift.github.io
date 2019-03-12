@@ -75,10 +75,10 @@ code {
 	font-family: "Courier Prime", "Courier", monospace;
 	color: darken($highlight-color, 10%);
 	background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    padding: 0.2rem;
-    border-radius: 0.2rem;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0.2rem;
+	border-radius: 0.2rem;
 }
 
 pre > code {
@@ -94,8 +94,8 @@ pre > code {
 	grid-template-rows: auto;
 	grid-template-areas:
 		"header"
-		"main"
-		"footer";
+			"main"
+			"footer";
 }
 
 // navigation (useful in header, but in other places as well)
@@ -167,17 +167,17 @@ footer {
 	color: $text-grey;
 }
 
-.post-tags {
-	font-style: italic;
-	& > a {
-		font-style: normal;
-		font-weight: 400;
-		background-color: lighten($highlight-color, 40%);
-		color: $highlight-color;
-		padding: 0.2em;
-		margin: 0 0.4em;
-		display: inline-block;
-	}
+.post-tag-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.post-tag {
+	font-weight: 400;
+	background-color: lighten($highlight-color, 40%);
+	color: $highlight-color;
+	padding: 0.2em;
+	margin: 0 0.4rem 0.4rem 0;
 }
 
 .post-excerpt {
@@ -187,32 +187,32 @@ footer {
 // nice blockquotes
 // from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
 blockquote {
-    background-color: darken($background-color, 10%);
-    border-left: 10px solid darken($background-color, 20%);
-    padding: 1em 1em;
+	background-color: darken($background-color, 10%);
+	border-left: 10px solid darken($background-color, 20%);
+	padding: 1em 1em;
 	margin: 1em 0;
-    quotes: "\201C""\201D""\2018""\2019";
+	quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-    color: darken($background-color, 20%);
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.1em;
-    vertical-align: -0.4em;
+	color: darken($background-color, 20%);
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.1em;
+	vertical-align: -0.4em;
 }
 blockquote p {
-    display: inline;
+	display: inline;
 }
 
 // higlighted paragraphs
 
 .hl-para {
-    background-color: lighten($highlight-color, 40%);
-    border-left: 10px solid $highlight-color;
-    padding: 1em 1em;
+	background-color: lighten($highlight-color, 40%);
+	border-left: 10px solid $highlight-color;
+	padding: 1em 1em;
 	margin: 1em 0;
-    quotes: "\201C""\201D""\2018""\2019";
+	quotes: "\201C""\201D""\2018""\2019";
 }
 
 // full-width images by default
@@ -249,8 +249,8 @@ img {
 		grid-template-columns: 1fr 800px 1fr;
 		grid-template-areas:
 			". header ."
-			". main ."
-			". footer .";
+				". main ."
+				". footer .";
 	}
 	h1,h2,h3,h4,h5,h6,p {
 		padding: 0;
