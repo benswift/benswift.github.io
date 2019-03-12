@@ -1,6 +1,7 @@
 ---
 title: A dynamic Reimagine logo
 date: 2019-02-21 10:36 +1100
+tags: widgets reimagine
 ---
 
 I keep harping on about the **Reimagine project** because I'm super pumped
