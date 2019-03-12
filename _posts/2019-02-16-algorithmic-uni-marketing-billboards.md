@@ -38,11 +38,11 @@ Each time the page loads, it:
 3. places them on the billboard in the form **verb** _your_ **verb**,
    randomising the location and text style
 
-As with all things on this blog, you can check out the source[^all-in-one] to see
-all the details.
+As with all things on this blog, you can check out the source to see all the
+details.
 
-[^all-in-one]:
-
-  It's actually all in inline `<script>` and `<style>` tags---which I know
-  isn't nice modular software engineering, but it means that it's all in the
-  one place. So, kids, do as I say in class, not as I do on my blog.
+**UPDATE 12 March**: I rewrote the billboard code from vanilla js to
+[clojurescript](https://clojurescript.org) because it makes me happy (source
+[here](https://github.com/benswift/benswift.github.io/blob/source/_cljs/algorithmic_billboard/src/algorithmic_billboard/core.cljs),
+and you can still see the original js source
+[here](https://github.com/benswift/benswift.github.io/blob/9f4dbeceb99a43f1430593f89bdde68e1fc5c3e9/widgets/algorithmic-ad-billboards.html)).
