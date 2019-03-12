@@ -1,7 +1,7 @@
 ---
 title: Algorithmic uni marketing billboards
 date: 2019-02-16 14:46 +1100
-tags: widgets
+tags: widgets web
 ---
 
 In the spirit of Murdoch University's [_free your
