@@ -38,11 +38,11 @@ enjoying one's return to work.
 
 _But doesn't that mean you'll (1) miss a bunch of fantastic opportunities and
 (2) let a bunch of folks down?_ Well, maybe. On the first point, I already feel
-overwhelmed (at times) by the amount of stuff on my to-do list, so any natural
-pruning of that which occurs is actually kindof appealing. And on the second
-point I've tried really hard this last month to hand various things over to
-capable folks, so I'm hoping that if we are/were working on something then we've
-made a contingency plan (and that this hasn't caught you by surprise).
+overwhelmed (at times) by the amount of stuff on my to-do list, so any attrition
+which occurs is actually kindof appealing. And on the second point I've tried
+really hard this last month to hand various things over to capable folks, so I'm
+hoping that if we are/were working on something then we've made a contingency
+plan (and that this hasn't caught you by surprise).
 
 Anyway, I'm gonna go be a Dad for a while. I'll still read the odd book, and
 maybe even make some more music, but this isn't a research fellowship---it's
