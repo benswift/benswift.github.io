@@ -1,8 +1,6 @@
 (ns reimagine-logo.core
   (:require [reagent.core :as r]
-            [goog.dom.fullscreen :refer [requestFullScreen]]
-            [goog.events :refer [listen]]
-            [goog.events.EventType :refer [KEYPRESS]]))
+            [goog.dom.fullscreen :refer [requestFullScreen]]))
 
 (defn random-classes []
   (->> ["big" "small" "heavy" "light" "cw90" "cc90" "cw180" "cc180" "cw270" "cc270"]
