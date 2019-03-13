@@ -20,9 +20,7 @@
    (map letter-component "REIMAGINE")))
 
 (defn toggle-fullscreen []
-  (->
-   (js/document.getElementById "backdrop")
-   (requestFullScreen)))
+  (requestFullScreen (js/document.getElementById "backdrop")))
 
 (defn mount []
   (r/render [logo-component]
