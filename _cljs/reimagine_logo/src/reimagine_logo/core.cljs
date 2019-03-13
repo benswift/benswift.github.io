@@ -1,6 +1,8 @@
 (ns reimagine-logo.core
   (:require [reagent.core :as r]
-            [goog.dom.fullscreen :refer [requestFullScreen]]))
+            [goog.dom.fullscreen :refer [requestFullScreen]]
+            [goog.events :refer [listen]]
+            [goog.events.EventType :refer [KEYPRESS]]))
 
 (defn random-classes []
   (->> ["big" "small" "heavy" "light" "cw90" "cc90" "cw180" "cc180" "cw270" "cc270"]
@@ -31,6 +33,9 @@
 (defn main []
   (mount)
   (js/setInterval #(mount) 10000)
-  (toggle-fullscreen))
+  (js/document.addEventListener "keydown"
+                                #(if (= (.-code %) "KeyF")
+                                   (toggle-fullscreen)
+                                   (.log js/console (.-code %)))))
 
 (main)
