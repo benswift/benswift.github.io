@@ -41,9 +41,9 @@ but you can push the built site to the master branch so GH pages will serve it
 up for you.
 
 [^hassle]:
-  I know that it's not actually _that_ much hassle, especially if you've
-  already got a webserver set up for other reasons, but zero hassle still
-  beats ε hassle ∀ε>0, especially when there's other work to be done.
+    I know that it's not actually _that_ much hassle, especially if you've
+    already got a webserver set up for other reasons, but zero hassle still
+    beats ε hassle ∀ε>0, especially when there's other work to be done.
 
 ```make
 BASE_HTML_DIR=_site

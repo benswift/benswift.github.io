@@ -40,10 +40,10 @@ education and research ties to the Schools of Art & Design, Music, and Digital
 Humanities.
 
 [^art]:
-  Defining "art" is beyond the scope of this blog post, obviously. But I don't
-  just mean it in the narrow "high/fine art" sense, although I don't mean it
-  in the "all the humanities" sense either. Think making music, drawing
-  pictures, writing stories---but with an element of technology in the mix.
+    Defining "art" is beyond the scope of this blog post, obviously. But I don't
+    just mean it in the narrow "high/fine art" sense, although I don't mean it
+    in the "all the humanities" sense either. Think making music, drawing
+    pictures, writing stories---but with an element of technology in the mix.
 
 ### What does that have to do with the Reimagine Project?
 
@@ -76,9 +76,9 @@ into the whole College[^dna], so that by 2050 it affects the way _everyone_
 thinks.
 
 [^dna]:
-  You could even say "weaving it into the College's DNA". But that'd be dumb.
-  Institutions don't have DNA... except maybe
-  [RSB](https://biology.anu.edu.au).
+    You could even say "weaving it into the College's DNA". But that'd be dumb.
+    Institutions don't have DNA... except maybe
+    [RSB](https://biology.anu.edu.au).
 
 ### What might this look like, concretely?
 
@@ -129,9 +129,9 @@ few ideas about what it might look like.
   really Ben?)
 
 [^every-course]:
-  I kindof want to wriggle out and say _most courses_, but I also really want
-  to see what an artistic submission in lieu of a final exam looks like for
-  [COMP3600](https://cs.anu.edu.au/courses/comp3600/).
+    I kindof want to wriggle out and say _most courses_, but I also really want
+    to see what an artistic submission in lieu of a final exam looks like for
+    [COMP3600](https://cs.anu.edu.au/courses/comp3600/).
 
 I also look forward to having the time to think through what a deeply artistic
 CECS looks like. I'm sure that in collaboration with the other Reimagine Fellows
@@ -175,10 +175,10 @@ creative dreams, and in doing so they'll be doing top-class
 engineering/CS/design work.
 
 [^creatives]:
-  Although I reject the Romantic notion that "creatives" are some sort of
-  rarefied "other", conduits to some deep wellspring of hidden creative mojo
-  from the other side. We're all just humans, constructing and engaging in
-  cultural practices with this stuff, building on what went before.
+    Although I reject the Romantic notion that "creatives" are some sort of
+    rarefied "other", conduits to some deep wellspring of hidden creative mojo
+    from the other side. We're all just humans, constructing and engaging in
+    cultural practices with this stuff, building on what went before.
 
 #### ...in outreach?
 

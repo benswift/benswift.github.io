@@ -44,11 +44,11 @@ better, put the kettle on and read [Arrian's honours
 thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf).
 
 [^interpretation]:
-  Obviously these are pretty nebulous concepts, it's not like there's a
-  well-defined notion of what an "aesthetic" vs a "didactic" visualisation is.
-  And even if there were, it's not necessarily clear that these are the two
-  most important aspects of visualisation design. Still, I'm putting the
-  videos up here so you can see for yourself what they looked like.
+    Obviously these are pretty nebulous concepts, it's not like there's a
+    well-defined notion of what an "aesthetic" vs a "didactic" visualisation is.
+    And even if there were, it's not necessarily clear that these are the two
+    most important aspects of visualisation design. Still, I'm putting the
+    videos up here so you can see for yourself what they looked like.
 
 ### "Aesthetic" visuals {#aesthetic-visuals}
 
