@@ -34,8 +34,7 @@
   (mount)
   (js/setInterval #(mount) 10000)
   (js/document.addEventListener "keydown"
-                                #(if (= (.-code %) "KeyF")
-                                   (toggle-fullscreen)
-                                   (.log js/console (.-code %)))))
+                                #(when (= (.-code %) "KeyF")
+                                   (toggle-fullscreen))))
 
 (main)
