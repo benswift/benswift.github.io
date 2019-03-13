@@ -1,6 +1,15 @@
-body {
-	margin: 0;
-	background-color: "black";
+body { margin: 0; }
+
+#backdrop {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+}
+
+#logo-container {
+	width: 100vmin;
+	height: 100vmin;
+	margin: auto;
 }
 
 #logo {

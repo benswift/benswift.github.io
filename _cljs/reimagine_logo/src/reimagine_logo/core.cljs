@@ -1,5 +1,6 @@
 (ns reimagine-logo.core
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [goog.dom.fullscreen :refer [requestFullScreen]]))
 
 (defn random-classes []
   (->> ["big" "small" "heavy" "light" "cw90" "cc90" "cw180" "cc180" "cw270" "cc270"]
@@ -18,10 +19,18 @@
    [:div {:id "logo"}]
    (map letter-component "REIMAGINE")))
 
+(defn toggle-fullscreen []
+  (->
+   (js/document.getElementById "backdrop")
+   (requestFullScreen)))
+
 (defn mount []
   (r/render [logo-component]
             (js/document.getElementById "logo-container")))
 
-(mount)
+(defn main []
+  (mount)
+  (js/setInterval #(mount) 10000)
+  (toggle-fullscreen))
 
-(js/setInterval #(mount) 10000)
+(main)
