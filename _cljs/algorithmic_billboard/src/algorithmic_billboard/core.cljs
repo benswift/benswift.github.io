@@ -1,7 +1,5 @@
 (ns algorithmic-billboard.core
   (:require [reagent.core :as r]
-            [goog.dom :as dom]
-            [goog.style :as style]
             [goog.object :as gobject]))
 
 (defonce verbs
