@@ -56,7 +56,7 @@ what needs to be in place to support the success of the project?
 
 | What? | Who? | By when? |
 |-------|------|----------|
-|       |      |          |
+| work  | Ben  | soon     |
 
 ## Cost/Time Commitments
 
@@ -67,12 +67,14 @@ Estimated project costs
 
 Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them
 
-| Risk | Who is  accountable? | Mitigation steps | When? |
-|------|----------------------|------------------|-------|
+| Risk   | Who is accountable? | Mitigation steps | When? |
+|--------|---------------------|------------------|-------|
+| things | no-one              | none             | dunno |
 
 ## Rapid Analysis
 
 Role            Who -- who is undertaking this role?   What -- what are they being asked to do?   When will their role be completed? i.e record dates of decision/activity
+
 **R**ecommend
 **A**gree
 **P**erform
