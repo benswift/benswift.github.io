@@ -1,5 +1,5 @@
 ---
-title: "TODO name :Reimagine Fellow Project Pitch"
+title: "Reimagine Fellow Project Pitch (name TBC)"
 date: 2019-03-20 11:09 +1100
 hidden: true
 tags: reimagine
@@ -8,6 +8,9 @@ tags: reimagine
 Being a [Reimagine fellow]({{site.baseurl}}{% link
 _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) requires having a
 project, so here's my plan.
+
+- TOC
+{:toc}
 
 ## Project Background and Description
 
