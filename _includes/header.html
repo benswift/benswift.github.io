@@ -1,10 +1,10 @@
 <header>
 
-  <nav class="logo">
+  <nav class="logo" aria-label="site home">
 	<a href="{% link index.md %}">{{ site.title }}</a>
   </nav>
 
-  <nav class="navigation">
+  <nav class="navigation" aria-label="main navigation">
 	<!-- in-site navigation -->
 	{% assign url_components = page.url | downcase | split: '/' %}
 	{% assign current = url_components[1] %}
