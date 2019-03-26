@@ -221,6 +221,16 @@ img {
 	width: 100%;
 }
 
+// table of contents
+#markdown-toc {
+	padding: 0;
+	list-style: none;
+	background-color: lighten($highlight-color, 45%);
+	a {
+		font-weight: 400;
+	}
+}
+
 // for the bibliography (powered by jekyll-scholar)
 
 .bibliography, .livecoding-bibliography {
