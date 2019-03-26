@@ -24,6 +24,9 @@ future: true
 
 # Build settings
 markdown: kramdown
+kramdown:
+  toc_levels: "2"
+
 highlighter: none
 
 exclude:
