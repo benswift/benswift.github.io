@@ -5,9 +5,13 @@ hidden: true
 tags: reimagine
 ---
 
+Being a [Reimagine fellow]({{site.baseurl}}{% link
+_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) requires having a
+project, so here's my plan.
+
 ## Project Background and Description
 
-### Elevator Pitch
+### Elevator pitch
 short description of who is it for, what it is, why it is needed and how it will get done
 
 ### Problems to be addressed
@@ -19,19 +23,21 @@ how these problems are currently solved
 
 ### Solution proposed
 
-### Value to Organisation / Reimagine strategic alignment
+### Value to organisation/Reimagine strategic alignment
 
-### Target Users
+### Target users
 
-### Early adopters -- pilot (if applicable)
+### Early adopters
+
+pilot (if applicable)
 
 ## Deliverables
 
-Key outputs -- high level
+Key outputs - high level
 
 ## Consultation -- Project Sponsor and Stakeholders
 
-Sponsor:
+Sponsor: 
 Owner:
 Consultations: Targets for consultation
 
@@ -58,11 +64,8 @@ Estimated project costs
 
 Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them
 
-| Risk/Challenge/ | Who is       | What will be    | When will this |
-| Dependency      | accountable? | done to         | be done?       |
-|                 |              | manage/mitigate |                |
-|                 |              | this?           |                |
-+-----------------|-----------------|-----------------|-----------------+
+| Risk | Who is  accountable? | Mitigation steps | When? |
+|------|----------------------|------------------|-------|
 
 ## Rapid Analysis
 
