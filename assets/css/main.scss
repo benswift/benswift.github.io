@@ -222,12 +222,25 @@ img {
 }
 
 // table of contents
-#markdown-toc {
-	padding: 0;
-	list-style: none;
-	background-color: lighten($highlight-color, 45%);
-	a {
-		font-weight: 400;
+#toc {
+
+	background: darken($background-color, 3%);
+
+	h2 {
+		background: $text-color;
+		color: $background-color;
+		font-weight: 100;
+		text-align: right;
+		padding-right: 1em;
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin-top: 0;
+		padding: 1em;
+		list-style: circle inside;
+		li+li { margin-top: 0.2em; }
+		a { font-weight: 400; }
 	}
 }
 
