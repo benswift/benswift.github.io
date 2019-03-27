@@ -226,8 +226,7 @@ img {
 table {
 	width:100%;
 	text-align: left;
-	border-spacing: 0;
-	border-collapse: separate;
+	border-collapse: collapse;
 	th, td {
 		padding-right: 0.5em;
 	}
