@@ -2,7 +2,7 @@
 title: "Reimagine Fellow Project Pitch (name TBC)"
 date: 2019-03-20 11:09 +1100
 hidden: true
-tags: reimagine
+tags: reimagine teaching research
 ---
 
 Being a [Reimagine fellow]({{site.baseurl}}{% link
