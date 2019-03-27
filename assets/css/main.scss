@@ -221,6 +221,18 @@ img {
 	width: 100%;
 }
 
+// tables
+
+table {
+	width:100%;
+	text-align: left;
+	th {
+		border-bottom: 1px solid $highlight-color;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 // table of contents
 #toc {
 
