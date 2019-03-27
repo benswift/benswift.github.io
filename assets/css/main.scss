@@ -226,10 +226,13 @@ img {
 table {
 	width:100%;
 	text-align: left;
+	border-spacing: 0;
+	border-collapse: separate;
+	th, td {
+		padding-right: 0.5em;
+	}
 	th {
 		border-bottom: 1px solid $highlight-color;
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
 
