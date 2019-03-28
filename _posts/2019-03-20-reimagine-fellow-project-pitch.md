@@ -22,11 +22,11 @@ School[^hs-college] students interested in the intersection of art & technology.
 We will run workshops in High Schools to identify interested students, and host
 the **c/c/c studio**[^ccc-group] a weekly on-campus interactive learning
 community to give them opportunities to learn, create, and share their skills.
-At the end of each semester, the c/c/c studio will host a gallery exhibitions &
-performance of new works of code-based art & music, attract fantastic students
-who might otherwise not study Eng/CS, and engage the wider community in helping
-them _reimagine_ what it is to be a Computer Scientist or Engineer in the 21st
-century.
+At the end of each semester, the c/c/c studio will host a gallery exhibition &
+performance of new works of code-based art & music. This program will attract
+fantastic students who might otherwise not study Eng/CS (either at ANU or
+anywhere) and engage the wider community in helping them _reimagine_ what it is
+to be a Computer Scientist or Engineer in the 21st century.
 
 [^hs-college]: since we're in the ACT, I mean Hign School _and_ College; years 7--12
 
@@ -107,8 +107,8 @@ Reimagine Fellowship.
 
 In broad terms, the weekly c/c/c studio sessions are the key part of the
 program. These sessions won't be lectures, or even tutorials---they will adopt
-the artist studio model, with each student working on their own code-based music
-or visual/interactive artwork as a semester-long creative "project".
+the artist model, with each student working on their own code-based music or
+visual artwork as a semester-long creative "project".
 
 The first part of this project is to actually figure out the details of how
 these workshops will run, but here are some initial plans:
@@ -184,7 +184,9 @@ so I'm not sure if it counts as a deliverable.
   - [Qing Wang](https://cecs.anu.edu.au/people/qing-wang) (RSCS Associate
     Director of Education Partnerships)
   - [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking) (RSCS Director)
-  - [Liz Williams]()/[Amy McLennan]() (3Ai Institute)
+  - [Liz
+    Williams](http://www.anu.edu.au/news/all-news/anu-spaces-–-dr-liz-williams)
+    (3Ai Institute) (or perhaps someone else from 3Ai)
 
 ## Success Metrics
 
