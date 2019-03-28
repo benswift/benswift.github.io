@@ -28,7 +28,7 @@ fantastic students who might otherwise not study Eng/CS (either at ANU or
 anywhere) and engage the wider community in helping them _reimagine_ what it is
 to be a Computer Scientist or Engineer in the 21st century.
 
-[^hs-college]: since we're in the ACT, I mean Hign School _and_ College; years 7--12
+[^hs-college]: since we're in the ACT, I mean Hign School _and_ College (i.e. years 7--12)
 
 [^ccc-group]:
     named after the
@@ -105,15 +105,15 @@ Reimagine Fellowship.
 
 ### Solution proposed
 
-In broad terms, the weekly c/c/c studio sessions are the key part of the
-program. These sessions won't be lectures, or even tutorials---they will adopt
-the artist model, with each student working on their own code-based music or
-visual artwork as a semester-long creative "project".
+The weekly c/c/c studio sessions are the key part of the program. These sessions
+won't be lectures, or even tutorials---they will adopt the artist model, with
+each student working on their own code-based music or visual artwork as a
+semester-long creative "project".
 
 The first part of this project is to actually figure out the details of how
 these workshops will run, but here are some initial plans:
 
-- each session will be small---up to 20 students
+- each session will be small---up to 20 students with 1 instructor (Ben) and one tutor
 - students will commit to attending for a semester, with an
   exhibition/performance at the end
 - students will apply to participate based on interest and aptitude, so we can
@@ -150,10 +150,12 @@ using the c/c/c studio curriculum, which will be made freely available).
 ### Early adopters {#early-adopters}
 
 I will build on my (and others) existing relationships with teachers from
-Dickson College, Radford College, Lyneham High, Canberra (Boys) Grammar and
-Canberra Girls Grammar. These Schools, with their existing populations of
-students interested in creative code, can give early feedback and serve as
-target populations for the first semester of c/c/c studio sessions in S1 2020.
+Dickson College, [Radford College](https://www.radford.act.edu.au), [Lyneham
+High](http://lynehamhs.act.edu.au), [Canberra (Boys)
+Grammar](https://cgs.act.edu.au) and [Canberra Girls
+Grammar](https://www.cggs.act.edu.au). These schools, with their existing groups
+of students interested in creative code, can give early feedback and serve as
+"seed" populations for the first semester of c/c/c studio sessions in S1 2020.
 
 ## Deliverables {#deliverables}
 
@@ -163,13 +165,14 @@ This project will deliver:
   sessions, which will be freely released to the public under a creative commons
   licence ([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 
-- a biannual **gallery exhibition** and **multimedia music performance** held on
-  campus (perhaps in the new cultural centre) as the capstone for each student's
-  work in the c/c/c studio
+- a biannual **c/c/c studio grad show** gallery exhibition and music performance
+  held on campus (perhaps in the new cultural centre) as the capstone for each
+  semester's student work in the c/c/c studio
   
-There'll be lots of other stuff, too: building a community, deepening ANU
-CS/CECS's relationships with ACT High Schools, etc. But that's intangible stuff,
-so I'm not sure if it counts as a deliverable.
+There'll be lots of other stuff, too: building a community of practice,
+deepening ANU CS/CECS's relationships with ACT High Schools, giving our
+undergraduate students a chance to mentor these high school students, etc. But
+that's intangible stuff, so I'm not sure if they count as a deliverables.
 
 ## Project Sponsor and Stakeholders
 
@@ -255,26 +258,29 @@ studio sessions.
 employ one (or more) of our undergraduate students to help support the students
 in the c/c/c studio.
 
-**Equipment**: music gear (~2k)
+**Equipment**: music gear (~2k) so that students can connect their laptops to
+play _together_
+
+**Grad show budget**: (~1k per semester from 2020) for venue/equipment hire
+(e.g. PA, fancy projectors, etc.)
 
 **Estimated project costs**: TBD
 
 ## Risk, Challenges and Dependencies {#risks}
 
-Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them
-
-| Risk                                                                                                               | Who's accountable?            | Mitigation steps                                                                                            |   When? |
-|--------------------------------------------------------------------------------------------------------------------|-------------------------------|-------------------------------------------------------------------------------------------------------------|---------|
-| students don't turn up                                                                                             | Ben                           | get buy-in from [early adopter schools](#early-adopters) who are already running this sort of thing         | ongoing |
-| c/c/c studio doesn't meet the requirements for official [ANU Extension](http://extension.anu.edu.au) accreditation | Ben, CECS education committee | talk to _Discovering Engineering_ people, and if it doesn't work it's no big deal                           |    2020 |
-| ANU arts & music folks feel like we're treading on their turf                                                      | Ben                           | build on existing cross-campus relationships---keep them in the loop                                        |    2019 |
-| too many students                                                                                                  | Ben                   | introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load |   2020+ |
+| Risk                                                                                                               | Who's accountable?            | Mitigation steps                                                                                                           |   When? |
+|--------------------------------------------------------------------------------------------------------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------|---------|
+| students don't turn up                                                                                             | Ben                           | get buy-in from [early adopter schools](#early-adopters) who are already running this sort of thing                        | ongoing |
+| c/c/c studio doesn't meet the requirements for official [ANU Extension](http://extension.anu.edu.au) accreditation | Ben, CECS education committee | talk to _Discovering Engineering_ people, and if it doesn't work it's no big deal                                          |    2020 |
+| ANU arts & music folks feel like we're treading on their turf                                                      | Ben                           | build on existing cross-campus relationships---keep them in the loop                                                       |    2019 |
+| too many students                                                                                                  | Ben                           | introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load                |   2020+ |
+| students have wide range of different abilities/familiarity with the material                                      | Ben, tutors                   | keep class sizes small so we can tailor material to each student, encourage peer-assisted learning at the different stages | 2020    |
 
 ## Rapid Analysis {#rapid-analysis}
 
-_Who_---who is undertaking this role?
-_What_---what are they being asked to do?
-_When_---when will their role be completed?
+- _Who_---who is undertaking this role?
+- _What_---what are they being asked to do?
+- _When_---when will their role be completed?
 
 - **R**ecommend
 - **A**gree
