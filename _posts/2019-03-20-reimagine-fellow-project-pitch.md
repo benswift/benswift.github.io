@@ -179,7 +179,7 @@ so I'm not sure if it counts as a deliverable.
   - [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at) (ANU
     SoM, previously the convenor of the Open School of Music program)
   - [Geoff
-    Hinchcliff](https://researchers.anu.edu.au/researchers/hinchcliffe-gb) (ANU
+    Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb) (ANU
     School of Art & Design)
   - [Qing Wang](https://cecs.anu.edu.au/people/qing-wang) (RSCS Associate
     Director of Education Partnerships)
@@ -217,9 +217,6 @@ already).
 
 ### Enrolment/admin requirements
 
-We will require public liability insurance for any students who come onto campus for the c/c/c
-studio sessions.
-
 In the short term, it would be great to be able to give students who complete
 the c/c/c studio program (which will be held in semester-long increments) an
 official ANU certificate of completion.
@@ -231,16 +228,19 @@ study in CECS. This is the same as the equivalent [Discovering Engineering
 extension program](http://extension.anu.edu.au/study/discovering-engineering),
 which (I _think_) gives students credit for a first-year ENGN course if they
 study Engineering at the ANU.
+
+We will require public liability insurance for any students who come onto campus for the c/c/c
+studio sessions.
   
 ## Key Activities
 
-| What?                           | Who?           | By when?                             |
-|---------------------------------|----------------|--------------------------------------|
-| relationships with High Schools | Ben            | end 2019                             |
-| curriculum development          | Ben            | end 2019                             |
-| weekly c/c/c studio sessions    | Ben + tutor(s) | ongoing (beginning 2020)             |
-| in-HS workshops                 | Ben + tutor(s) | ongoing (beginning 2020)             |
-| c/c/c studio grad show          | students       | end of semester (beginning mid-2020) |
+| What?                                   | Who?           | By when?                             |
+|-----------------------------------------|----------------|--------------------------------------|
+| develop relationships with High Schools | Ben            | end 2019                             |
+| create curriculum                       | Ben            | end 2019                             |
+| weekly c/c/c studio sessions            | Ben + tutor(s) | ongoing (beginning 2020)             |
+| in-HS workshops                         | Ben + tutor(s) | ongoing (beginning 2020)             |
+| c/c/c studio grad show                  | students       | end of semester (beginning mid-2020) |
 
 ## Cost/Time Commitments
 
@@ -259,7 +259,7 @@ in the c/c/c studio.
 
 **Estimated project costs**: TBD
 
-## Risk, Challenges and Dependencies
+## Risk, Challenges and Dependencies {#risks}
 
 Use the following table to describe the risks, challenges and dependencies that will impact on delivering the project in the appropriate timeframe. List who will be responsible for managing these risks and what mitigation will be used to manage them
 
@@ -268,7 +268,7 @@ Use the following table to describe the risks, challenges and dependencies that 
 | students don't turn up                                                                                             | Ben                           | get buy-in from [early adopter schools](#early-adopters) who are already running this sort of thing         | ongoing |
 | c/c/c studio doesn't meet the requirements for official [ANU Extension](http://extension.anu.edu.au) accreditation | Ben, CECS education committee | talk to _Discovering Engineering_ people, and if it doesn't work it's no big deal                           |    2020 |
 | ANU arts & music folks feel like we're treading on their turf                                                      | Ben                           | build on existing cross-campus relationships---keep them in the loop                                        |    2019 |
-| too many students                                                                                                  | everyone                      | introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load |   2020+ |
+| too many students                                                                                                  | Ben                   | introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load |   2020+ |
 
 ## Rapid Analysis {#rapid-analysis}
 
@@ -290,11 +290,13 @@ This section TODO; see note below.
   schools at present, although this could change in the future. But I've decided
   to start with what I know.
 
-- It's really hard to have all these stakeholder conversations while I'm on
-  parental leave. So while I've discussed this sort of thing to varying degrees
-  with everyone concerned (i.e. I'm sure no-one would be *shocked* to hear this
-  project pitch) there's a chance that some of the details will change as I make
-  things more concrete and sort out the details.
+- Looking at the [Risks](#risks) section, a lot of it's on my shoulders---need
+  to fix that.
+
+- The project proposal part isn't super detailed, and that's mostly because I
+  need to do some research (discussions with HS teachers, read literature &
+  examine similar programs elsewhere) in the first 6months (mid-late 2019) to
+  figure out those details.
 
 - This isn't exactly what I'd put in my [original pitch]({{site.baseurl}}{% link
   _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}), but from
@@ -310,3 +312,9 @@ This section TODO; see note below.
 
 - I'm not sure about the [RAPID](#rapid-analysis) part, I'm open to suggestions
   on what that section might mean in the context of this project.
+
+- It's really hard to have all the necessary stakeholder conversations while I'm
+  on parental leave. So while I've discussed this sort of thing to varying
+  degrees with everyone concerned (i.e. I'm sure no-one would be *shocked* to
+  hear this project pitch) there's a chance that some of the details will change
+  as I make things more concrete and sort out the details.
