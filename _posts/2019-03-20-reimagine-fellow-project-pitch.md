@@ -85,14 +85,18 @@ also the official [ANU Extension](http://extension.anu.edu.au) scheme for Year
 In the wider ANU context, one similar program is the ANU School of Music's [Open
 School of Music](http://music.cass.anu.edu.au/open-school). From their website:
 
-> The aim of the Open School of Music is to provide developing musicians with a
-> supportive and nurturing social environment in which they can improve their
-> technical and theoretical knowledge of music, interact and share their love of
-> music with their peers, and rub shoulders with the world of professional
-> music-making.
+<blockquote>
 
-> In particular, it aims to ensure that high-quality music education is
-> accessible to all children in the ACT who have the interest and aptitude.
+  <p>The aim of the Open School of Music is to provide developing musicians with
+a supportive and nurturing social environment in which they can improve their
+technical and theoretical knowledge of music, interact and share their love of
+music with their peers, and rub shoulders with the world of professional
+music-making.</p>
+
+  <p>In particular, it aims to ensure that high-quality music education is
+accessible to all children in the ACT who have the interest and aptitude.</p>
+
+</blockquote>
 
 In 2018 I ran the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/),
