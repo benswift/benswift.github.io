@@ -1,14 +1,12 @@
 ---
-title: "Reimagine Fellow Project Pitch: the c/c/c studio"
+title: "The c/c/c studio"
 date: 2019-03-20 11:09 +1100
 hidden: true
 tags: reimagine teaching research
 ---
 
-{:.hl-para}
-Being a [Reimagine Fellow]({{site.baseurl}}{% link
-_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) requires having a
-project, so here's my plan for the **c/c/c studio**.
+*Note to readers:* this is my project plan for a [Reimagine Fellowship]({{site.baseurl}}{% link
+_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}).
 
 {% include toc.html %}
 
@@ -16,17 +14,19 @@ project, so here's my plan for the **c/c/c studio**.
 
 ### Elevator pitch
 
-I want to start an [extension](http://extension.anu.edu.au)/outreach program in
-creative code (using code to make art + music & other cool things) for ACT High
-School[^hs-college] students interested in the intersection of art & technology.
-We will run workshops in High Schools to identify interested students, and host
-the **c/c/c studio**[^ccc-group] a weekly on-campus interactive learning
-community to give them opportunities to learn, create, and share their skills.
-At the end of each semester, the c/c/c studio will host a gallery exhibition &
-performance of new works of code-based art & music. This program will attract
-fantastic students who might otherwise not study Eng/CS (either at ANU or
-anywhere) and engage the wider community in helping them _reimagine_ what it is
-to be a Computer Scientist or Engineer in the 21st century.
+{:.hl-para}
+
+I want to start the **c/c/c studio**[^ccc-group], an extension/outreach program
+in creative code (using code to make art + music & other cool things) for ACT
+High School[^hs-college] students interested in the intersection of art &
+technology. Students will be part of a weekly on-campus interactive learning
+community where they will be guided by instructors in creating their own new
+works of code-based art & music. At the end of each semester we will host a
+"grad show" gallery exhibition/performance of the works from the c/c/c studio.
+This program will attract fantastic students who might otherwise not study
+Engineering or Computer Science (either at ANU or elsewhere) and engage the
+wider community in helping them _reimagine_ what it is to be a Computer
+Scientist or Engineer in the 21st century.
 
 [^hs-college]: since we're in the ACT, I mean Hign School _and_ College (i.e. years 7--12)
 
