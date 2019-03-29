@@ -33,8 +33,8 @@ Scientist or Engineer in the 21st century.
 [^ccc-group]:
     named after the
     [code/creativity/culture](https://cs.anu.edu.au/code-creativity-culture/)
-    (c/c/c) research group that I lead, which already has some sort of a name
-    around the place and might be useful for "branding" this activity
+    (c/c/c) research group that I lead, which already has some name recognition
+    around the place and will be useful for "branding" this activity
 
 ### Problems to be addressed
 
@@ -47,10 +47,10 @@ dealing with the huge growth in students at a tertiary level. The c/c/c studio
 program will address that.
 
 In addition, CS still suffers from a stereotype of being for "nerdy white/asian
-males", and those groups are certainly better represented in our undergraduate
-CS cohort than other demographic groups. The Reimagine project "big tent" CS
-education philosophy needs ways of attracting students who don't fit this
-stereotype. In attracting & nurturing students who are interested in using
+males", and those groups are certainly over-represented in our undergraduate CS
+cohort compared to other groups. The Reimagine "big tent" CS education
+philosophy needs ways of attracting students who don't fit the usual CS
+stereotypes. In attracting & nurturing students who are interested in using
 computers in the arts & music the c/c/c studio can be _one part_ of that bigger
 mission.
 
@@ -75,7 +75,7 @@ creative practice? The c/c/c studio program will give them deep links &
 relationships into the ANU (across both CS and the Schools of Art & Design and
 School of Music) and an avenue for continuing their work in this area.
 
-There are a few outreach programs for schools [advertised on the CECS
+There are a few outreach programs [advertised on the CECS
 website](https://cecs.anu.edu.au/study/more-information/outreach-programs-schools),
 however the listed programs are dominated by Engineering rather than CS (9 vs 4
 programs) and of the 4 CS programs I'm involved with 2 of them already. There's
@@ -105,10 +105,9 @@ Reimagine Fellowship.
 
 ### Solution proposed
 
-The weekly c/c/c studio sessions are the key part of the program. These sessions
-won't be lectures, or even tutorials---they will adopt the artist model, with
-each student working on their own code-based music or visual artwork as a
-semester-long creative "project".
+The weekly c/c/c studio sessions won't be lectures, or even tutorials---they
+will adopt the artist's studio model, with each student working on their own
+code-based music or visual artwork as a semester-long creative "work".
 
 The first part of this project is to actually figure out the details of how
 these workshops will run, but here are some initial plans:
@@ -128,12 +127,33 @@ these workshops will run, but here are some initial plans:
 - as well as me (Ben) guiding the students, we will employ one of our
   undergraduate students as a tutor for these sessions
 
+In addition to the weekly c/c/c studio sessions, we will also run (less
+frequent) workshops in the High Schools themselves. These workshops will be used
+to recruit/excite students with the interest and aptitude to attend the c/c/c
+studio program, to share knowledge and open minds to the sorts of things which
+are possible with computers and programming, and to strengthen the pathways
+between the IT programs in ACT High Schools into our CECS undergraduate programs.
+
 ### Value to organisation/Reimagine strategic alignment
 
-TODO more stuff to put here, but not sure how best to pitch it.
+From the [Reimagine Project page](https://cecs.anu.edu.au/reimagine):
 
-In addition, the c/c/c studio presents an opportunity as an "object lesson" for
-the breadth of places that an Engineering/Computer Science skillset can be
+> We will inspire a new generation of high-potential, creative people to come to
+> engineering and computing with a diverse range of interests, motivations,
+> perspectives and career aspirations.
+
+The c/c/c studio is designed to attract that new generation and to provide them
+a supportive community in which to learn, create, and share. More than that, it
+aims to unlock the latent potential in students who never knew their diverse
+interests (especially in the arts & music) _could_ be used in engineering and
+computing.
+
+The c/c/c studio is also an "outwardly-focused education program" (taken from
+the _Reimagine Fellow_ position description) which builds two-way relationships
+with ACT High Schools.
+
+Finally, the c/c/c studio presents an opportunity as an "object lesson" for the
+breadth of places that an Engineering/Computer Science skillset can be
 applied---a crucial part of Reimagining CECS from a problem-solving to
 problem-_finding_ institution.
 
