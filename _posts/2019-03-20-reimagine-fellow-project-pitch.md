@@ -98,6 +98,16 @@ elective in any program). COMP1720 has run successfully as a cross-disciplinary
 The c/c/c studio will extend this opportunity to High School students in the
 ACT.
 
+Finally, I'm _already_ engaged in this interdisciplinary creative code outreach
+stuff---here's a short excerpt of my performance (with Kieran Browne) at the
+2019 CECS Welcome Party:
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/319664298?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+I see the c/c/c studio as an opportunity to inspire the next generation of
+students to come and explore the things that got me excited about computer
+science in the first place.
+
 ## Project Scope
 
 ### Solution proposed
