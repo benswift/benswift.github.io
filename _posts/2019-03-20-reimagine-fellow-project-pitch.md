@@ -415,3 +415,8 @@ This section TODO; see note below.
   hear this project pitch) there's a chance that some of the details will change
   as I make things more concrete and sort out the details.
 
+- I know that this document is a website; it's not using the official MS Word
+  template. Mostly that's because this way I can make it readable on mobile,
+  accessible (e.g. to screen readers for people with vision impairment), embed
+  videos, make sure everyone's always reading the latest version, etc. But if
+  you **really** need it as a `.docx` then I can convert it when it's finished 😊
