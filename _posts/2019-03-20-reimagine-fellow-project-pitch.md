@@ -5,8 +5,8 @@ hidden: true
 tags: reimagine teaching research
 ---
 
-*Note to readers:* this is my project plan for a [Reimagine Fellowship]({{site.baseurl}}{% link
-_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}).
+*Note to readers:* this is my [Reimagine Fellowship]({{site.baseurl}}{% link
+_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan.
 
 {% include toc.html %}
 
@@ -66,10 +66,9 @@ ACT.
 
 ### Existing alternatives
 
-Some ACT High Schools already have great non-traditional/creative CS/IT
-programs, for example Dickson College, Radford College, Canberra (Boys) Grammar.
-I plan to partner with teachers at these schools as [early
-adopters](#early-adopters). However, even in these cases there's a missing link
+Some ACT High Schools already have great non-traditional/creative CS/IT programs
+(I plan to partner with teachers at these schools as [early
+adopters](#early-adopters)). However, even in these cases there's a missing link
 once students finish High School---where can they go to further develop their
 creative practice? The c/c/c studio program will give them deep links &
 relationships into the ANU (across both CS and the Schools of Art & Design and
@@ -105,19 +104,31 @@ Reimagine Fellowship.
 ### Solution proposed
 
 The weekly c/c/c studio sessions won't be lectures, or even tutorials---they
-will adopt the artist's studio model, with each student working on their own
-code-based music or visual artwork as a semester-long creative "work".
+will adopt a [studio-based
+learning](https://teaching.unsw.edu.au/assessing-studio-based-learning) model,
+with each student working on their own code-based music or visual artwork as a
+semester-long creative "work". The [Studio Teaching
+Project](http://www.studioteaching.org) (a research collaboration between UNSW,
+UQ, RMIT and UTas) has released some helpful material for employing this
+teaching model, which we will make use of in developing the c/c/c curriculum.
 
-The first part of this project is to actually figure out the details of how
-these workshops will run, but here are some initial plans:
+The first part of this project (mid-2019 to end 2019) is to figure out the
+details of the c/c/c studio sessions, but here are some initial plans:
 
-- each session will be small---up to 20 students with 1 instructor (Ben) and one tutor
-- students will commit to attending for a semester, with an
-  exhibition/performance at the end
 - students will apply to participate based on interest and aptitude, so we can
   assume that students are engaged and willing to be self-directed in their
   learning
-- some "training" material may be adapted from the [COMP1720 lab
+- the weekly c/c/c studio session will be 2hrs long, held at an (or more,
+  depending on numbers) after-school-friendly timeslot
+- students will commit to attending for a semester, culminating in a public grad
+  show exhibition/performance at the end of the semester
+- each session will be small---max 20 students with 1 instructor (Ben) and one
+  tutor
+- students will be able to select either a music or visual art emphasis in their
+  projects, with sub-communities for each
+- students will participate in collaborative "studio crit" sessions to work
+  share ideas and stretch one another in their work
+- initial "training" material be adapted from the [COMP1720 lab
   material](https://cs.anu.edu.au/courses/comp1720/labs/) and tweaked as
   appropriate
 - students will be exposed to regular guest "provocations" from students and
@@ -131,7 +142,8 @@ frequent) workshops in the High Schools themselves. These workshops will be used
 to recruit/excite students with the interest and aptitude to attend the c/c/c
 studio program, to share knowledge and open minds to the sorts of things which
 are possible with computers and programming, and to strengthen the pathways
-between the IT programs in ACT High Schools into our CECS undergraduate programs.
+between the IT programs in ACT High Schools into our CECS undergraduate
+programs.
 
 ### Value to organisation/Reimagine strategic alignment
 
@@ -141,15 +153,20 @@ From the [Reimagine Project page](https://cecs.anu.edu.au/reimagine):
 > engineering and computing with a diverse range of interests, motivations,
 > perspectives and career aspirations.
 
-The c/c/c studio is designed to attract that new generation and to provide them
-a supportive community in which to learn, create, and share. More than that, it
-aims to unlock the latent potential in students who never knew their diverse
-interests (especially in the arts & music) _could_ be used in engineering and
-computing.
+This "new generation" will not be won over by glossy brochures and fancy new
+buildings---they will come because they can see concrete ways in which their
+diverse range of interests can be harnessed and _put to work_ to do amazing
+things. The c/c/c studio will provide a supportive community in which this new
+generation can learn, create, and share. More than that, it will unlock the
+latent potential in students who never knew their diverse interests (especially
+in the arts & music) _could_ be used in engineering and computing.
 
 The c/c/c studio is also an "outwardly-focused education program" (taken from
 the _Reimagine Fellow_ position description) which builds two-way relationships
-with ACT High Schools.
+with ACT High Schools. The end-of-semester grad shows provide an opportunity to
+showcase the innovative education & creative-practice going on in the c/c/c
+studio (and CECS more broadly) and in doing so to make an impact in the ANU and
+wider Canberra community.
 
 Finally, the c/c/c studio presents an opportunity as an "object lesson" for the
 breadth of places that an Engineering/Computer Science skillset can be
@@ -169,7 +186,8 @@ using the c/c/c studio curriculum, which will be made freely available).
 ### Early adopters {#early-adopters}
 
 I will build on my (and others) existing relationships with teachers from
-Dickson College, [Radford College](https://www.radford.act.edu.au), [Lyneham
+[Dickson College](http://www.dicksonc.act.edu.au), [Radford
+College](https://www.radford.act.edu.au), [Lyneham
 High](http://lynehamhs.act.edu.au), [Canberra (Boys)
 Grammar](https://cgs.act.edu.au) and [Canberra Girls
 Grammar](https://www.cggs.act.edu.au). These schools, with their existing groups
@@ -187,6 +205,9 @@ This project will deliver:
 - a biannual **c/c/c studio grad show** gallery exhibition and music performance
   held on campus (perhaps in the new cultural centre) as the capstone for each
   semester's student work in the c/c/c studio
+
+- (TBC) [RSCS's](https://cs.anu.edu.au/code-creativity-culture/) first ANU
+  Extension program
   
 There'll be lots of other stuff, too: building a community of practice,
 deepening ANU CS/CECS's relationships with ACT High Schools, giving our
@@ -251,8 +272,8 @@ extension program](http://extension.anu.edu.au/study/discovering-engineering),
 which (I _think_) gives students credit for a first-year ENGN course if they
 study Engineering at the ANU.
 
-We will require public liability insurance for any students who come onto campus for the c/c/c
-studio sessions.
+We will require public liability insurance for any students who come onto campus
+for the c/c/c studio sessions .
   
 ## Key Activities
 
@@ -260,8 +281,8 @@ studio sessions.
 |-----------------------------------------|----------------|--------------------------------------|
 | develop relationships with High Schools | Ben            | end 2019                             |
 | create curriculum                       | Ben            | end 2019                             |
-| weekly c/c/c studio sessions            | Ben + tutor(s) | ongoing (beginning 2020)             |
-| in-HS workshops                         | Ben + tutor(s) | ongoing (beginning 2020)             |
+| run weekly c/c/c studio sessions        | Ben + tutor(s) | ongoing (beginning 2020)             |
+| run in-HS workshops                     | Ben + tutor(s) | ongoing (beginning 2020)             |
 | c/c/c studio grad show                  | students       | end of semester (beginning mid-2020) |
 
 ## Cost/Time Commitments
@@ -270,12 +291,12 @@ studio sessions.
 
 1. developing the curriculum
 2. building relationships with High Schools and recruiting students
-3. delivering the weekly c/c/c studio session
-4. running workshops in High Schools (perhaps once a month)
+3. delivering the weekly c/c/c studio session(s)
+4. running workshops in High Schools (~monthly)
 
-**Tutors**: depending on how many students attend, it'd be great to be able to
-employ one (or more) of our undergraduate students to help support the students
-in the c/c/c studio.
+**Tutors**: depending on how many students attend, we will need to employ one
+(or more) of our undergraduate students to help support the students in the
+c/c/c studio.
 
 **Equipment**: music gear (~2k) so that students can connect their laptops to
 play _together_
