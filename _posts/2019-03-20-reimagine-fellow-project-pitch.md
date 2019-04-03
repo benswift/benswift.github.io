@@ -281,7 +281,7 @@ that's intangible stuff, so I'm not sure if they count as a deliverables.
   - [Madeleine Parker](https://www.linkedin.com/in/madeleine-parker-928644102/),
     SCI ART CBR Community Co-ordinator
   - [Morgan
-    Marshall](https://robogals.org/locations/asia-pacific-apac/canberra/)
+    Marshall](https://robogals.org/locations/asia-pacific-apac/canberra/),
     President of Robogals Canberra
 
 <!-- - [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking), RSCS Director -->
