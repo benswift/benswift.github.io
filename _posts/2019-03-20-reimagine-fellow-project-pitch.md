@@ -158,6 +158,8 @@ c/c/c studio sessions & masterclasses, but here are some initial plans:
   material](https://cs.anu.edu.au/courses/comp1720/labs/) and tweaked as
   appropriate
 
+{: #anu-extension-accreditation}
+
 It may be possible give participants in the c/c/c studio program credit into our
 first-year CS program (e.g. [COMP1720](https://cs.anu.edu.au/courses/comp1720/))
 if they decide to come and study in CECS.[^discovering-engineering] To
@@ -165,7 +167,7 @@ investigate this, in stage two we will put the c/c/c studio program forward as a
 candidate for the [ANU Extension program](http://extension.anu.edu.au). This may
 or may not be desirable (depending on the requirements of the Extension program)
 but we should investigate whether it's a good fit for increasing the profile,
-standing and utility of the c/c/c studio. {: #anu-extension-accreditation}
+standing and utility of the c/c/c studio.
 
 [^discovering-engineering]:
     This is the same as the equivalent [Discovering Engineering extension
