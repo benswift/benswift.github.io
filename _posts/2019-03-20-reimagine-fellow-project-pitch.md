@@ -26,23 +26,17 @@ _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan.
 
 {:.hl-para}
 
-TODO: update to make more of the not-just-HS thing, also perhaps explicit
-mention of diversity?
-
-I want to create the **c/c/c studio**[^ccc-group], an after-school
-extension/outreach program in creative code (using code to make art, music &
-other cool things) for ACT High School[^hs-college] students interested in the
-intersection of art & technology. Students will participate in a weekly
-on-campus interactive learning community where they will be guided by
-instructors in creating their own new works of code-based art & music. At the
-end of each semester the c/c/c studio will host a "grad show" gallery
-exhibition/performance of the students' work. This program will attract
-fantastic students who might otherwise not study Engineering or Computer Science
-(either at ANU or elsewhere) and engage the wider community in helping them
-_reimagine_ what it is to be a computer scientist or engineer in the 21st
+I want to create the **c/c/c studio**[^ccc-group], an extension/outreach program
+in creative code (using code to make art, music & other cool things). Through
+school- & community-based one-off workshops and a weekly on-campus studio
+masterclass, students will be part of an interactive learning community where
+they will be guided by instructors in creating their own new works of code-based
+art & music. At the end of each semester the c/c/c studio will host a "grad
+show" gallery exhibition/performance of the students' work. This program will
+attract fantastic students who might otherwise not study engineering or computer
+science (either at ANU or elsewhere) and engage the wider community in helping
+them _reimagine_ what it is to be a computer scientist or engineer in the 21st
 century.
-
-[^hs-college]: since we're in the ACT, I mean Hign School _and_ College (i.e. years 7--12)
 
 [^ccc-group]:
     named after the
@@ -53,19 +47,32 @@ century.
 ### Problems to be addressed
 
 Interest in Computer Science (CS) education is exploding at all educational
-levels, but there's a lack of support for students in schools which don't have
-specialist teachers or an appropriate learning environment---especially for the
-"fun" stuff which goes beyond textbook exercises. In the [Research School of
-Computer Science](https://cs.anu.edu.au/code-creativity-culture/) at the ANU
-we're not currently doing very much to engage at a pre-tertiary level, mostly
-because we're flat-out dealing with the huge growth in students at a tertiary
-level. The c/c/c studio program will address that.
+levels, but there's a lack of support for students in schools[^schools] which
+don't have specialist teachers or an appropriate learning
+environment---especially for "fun" student-driven projects which go beyond
+textbook exercises. At the ANU [Research School of Computer
+Science](https://cs.anu.edu.au/code-creativity-culture/) we're not currently
+doing very much[^not-doing-much] to engage with students at a pre-tertiary
+level, mostly because we're flat-out dealing with the huge growth in students at
+a tertiary level. The c/c/c studio program will address that.
 
-CS still suffers from a stereotype of being "for nerdy white/asian males", and
+[^schools]:
+    in this project I'm mainly thinking of later high-school and college
+    students (i.e. years 9--12), although there is certainly the possibility of
+    tweaking the content to engage younger (even primary school) students as
+    well
+
+[^not-doing-much]:
+   I don't mean to throw shade on our existing efforts here---there are some
+   great things happening in this area, but there's certainly more to be done.
+
+CS still suffers from a stereotype of being "for nerdy white/Asian males", and
 those groups are certainly over-represented in our undergraduate CS cohort
-compared to other groups. As the **A** in STE**A**M, the **a**rts provide an
-important avenue for engaging students with coding and computer science,
-especially those who might not normally engage with CS-type activities.
+compared to other groups. It's important to point out that increasing the
+representation of under-represented groups in CS is a wicked problem which needs
+to be tackled from many different angles. Still, as the **A** in
+[STE**A**M](http://stemtosteam.org), the **a**rts provide an important avenue
+for engaging students who might not normally coding and computer science.
 
 ### Existing alternatives
 
@@ -75,7 +82,7 @@ adopters](#early-adopters)). However, even in these cases there's a missing link
 once students finish High School---where can they go to further develop their
 creative practice? The c/c/c studio program will give them deep links &
 relationships into the ANU (across both CS and the Schools of Art & Design and
-School of Music) and an avenue for continuing their work in this area.
+School of Music) and an avenue for continuing their creative work.
 
 There are a few outreach programs [advertised on the CECS
 website](https://cecs.anu.edu.au/study/more-information/outreach-programs-schools),
@@ -84,36 +91,24 @@ programs) and of the 4 CS programs I'm involved with 2 of them already. There's
 also the official [ANU Extension](http://extension.anu.edu.au) scheme for Year
 11 & 12 students in the ACT, however CS doesn't yet participate in this scheme.
 
-TODO girlswhocode things (maybe ask Caitlin/Sam?)
-
-In the wider ANU context, one similar program is the ANU School of Music's [Open
-School of Music](http://music.cass.anu.edu.au/open-school). From their website:
-
-> The aim of the Open School of Music is to provide developing musicians with a
-> supportive and nurturing social environment in which they can improve their
-> technical and theoretical knowledge of music, interact and share their love of
-> music with their peers, and rub shoulders with the world of professional
-> music-making. In particular, it aims to ensure that high-quality music
-> education is accessible to all children in the ACT who have the interest and
-> aptitude.
-
-TODO group these next few paras under "existing networks? or something"
+There are several great organisations working to increase diversity in CS,
+including the [Canberra Girls' Programming
+Network](https://canberragpn.github.io), [Code Like a
+Girl](https://codelikeagirl.org/states/act/),
+[Robogals](https://robogals.org/locations/asia-pacific-apac/canberra/). However,
+these organisations are primarily CS/Eng focussed, rather than interdisciplinary
+art & code.
 
 In 2018 I ran the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/),
 which attempted to provide a similar open-ended space for creative exploration
-to the c/c/c studio, but for undergraduate students. I will be drawing on all of
-these connections & influences in developing the c/c/c studio program during my
-Reimagine Fellowship.
-
-In terms of a pipeline for c/c/c students to return to the ANU to study as
-undergraduate students, they can take my [COMP1720: Art & Interaction in New
+to the c/c/c studio, specifically for live performance (code-based DJ-ing and
+VJ-ing). ANU students can take my [COMP1720: Art & Interaction in New
 Media](https://cs.anu.edu.au/courses/comp1720/) course as part of a major in
 either a CS degree or a Bachelor of Visual Arts (or indeed as a cross-campus
 elective in any program). COMP1720 has run successfully as a cross-disciplinary
-"learn to code" course for several years.
-The c/c/c studio will extend this opportunity to High School students in the
-ACT.
+"learn to code" course for several years. The c/c/c studio will extend this
+opportunity to school students and other members of the ACT community.
 
 Finally, I'm _already_ engaged in this interdisciplinary creative code outreach
 stuff---here's a short excerpt of my performance (with Kieran Browne) at the
@@ -121,19 +116,18 @@ stuff---here's a short excerpt of my performance (with Kieran Browne) at the
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/319664298?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-I see the c/c/c studio as an opportunity to inspire the next generation of
-students to come and explore the things that got me excited about computer
-science in the first place.
+I see the c/c/c studio as an opportunity to formalise and build momentum around
+all of these existing initiatives, tying them together in a specific creative
+art & code context.
 
 ## Project Scope
 
 ### Solution proposed
 
+TODO Three stages:
 TODO activities:
 - creative code workshops in schools/community arts venues
 - c/c/c studio & masterclass sessions on campus
-
-TODO need a table here
 
 The weekly c/c/c studio sessions won't be lectures, or even tutorials---they
 will adopt a [studio-based
@@ -275,7 +269,7 @@ deepening ANU CS/CECS's relationships with ACT High Schools, giving our
 undergraduate students a chance to mentor these high school students, etc. But
 that's intangible stuff, so I'm not sure if they count as a deliverables.
 
-## Project Sponsor and Stakeholders
+## Project Sponsor and Stakeholders {#project-sponsor-and-stakeholders}
 
 - **Sponsor**: Nick? Qing? Tony?
 - **Owner**: Ben Swift
@@ -291,6 +285,9 @@ that's intangible stuff, so I'm not sure if they count as a deliverables.
     code practitioner
   - [Madeleine Parker](https://www.linkedin.com/in/madeleine-parker-928644102/),
     SCI ART CBR Community Co-ordinator
+  - [Morgan
+    Marshall](https://robogals.org/locations/asia-pacific-apac/canberra/)
+    President of Robogals Canberra
 
 <!-- - [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking), RSCS Director -->
 
@@ -496,9 +493,10 @@ This section TODO; see note below.
 
 - It's really hard to have all the necessary stakeholder conversations while I'm
   on parental leave. So while I've discussed this sort of thing to varying
-  degrees with everyone concerned (i.e. I'm sure no-one would be *shocked* to
-  hear this project pitch) there's a chance that some of the details will change
-  as I make things more concrete and sort out the details.
+  degrees with [everyone concerned](#project-sponsor-and-stakeholders) (i.e. I'm
+  sure no-one would be *shocked* to hear this project pitch) there's a chance
+  that some of the details will change as I make things more concrete and sort
+  out the details.
 
 - If things go well, I intend to continue (and grow!) the program past the end
   of 2021---in fact I see it as an ongoing part of our teaching, research and
