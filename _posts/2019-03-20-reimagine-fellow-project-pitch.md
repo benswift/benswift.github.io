@@ -389,16 +389,63 @@ their contribution & expertise
 
 ## Risk, Challenges and Dependencies {#risks}
 
-| Risk/challenge | Who's accountable? | Mitigation steps | When? |
-|--------------------------------------------------------------------------------------------------------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|---------|
-| students don't turn up                                                                                             | Ben                           | get buy-in from [early adopter schools](#early-adopters) who are already running this sort of thing                                     | ongoing |
-| c/c/c studio doesn't meet the requirements for official [ANU Extension](http://extension.anu.edu.au) accreditation | Ben, CECS education committee | talk to _Discovering Engineering_ people, and if it doesn't work it's no big deal                                                       |    2020 |
-| ANU arts & music folks feel like we're treading on their turf                                                      | Ben                           | build on existing cross-campus relationships---keep them in the loop                                                                    |    2019 |
-| too many students                                                                                                  | Ben                           | introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load                             |   2020+ |
-| students have wide range of different abilities/familiarity with the material                                      | Ben, tutors                   | keep class sizes small so we can tailor material to each student, encourage peer-assisted learning at the different stages              |    2020 |
-| project relies too much on Ben's particular mix of skills and interests | Ben, others | get other like-minded folks from inside CECS and across campus involved, train up other CECS people (e.g. tutors) to share the workload | 2019 |
-
 TODO add Ben's contract thing
+
+<table>
+  <thead>
+    <tr>
+      <th>Risk/challenge</th>
+      <th>Who's accountable?</th>
+      <th>Mitigation steps</th>
+      <th>When?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>some viewpoints (e.g. diversity-wise) aren't represented in the design of the c/c/c studio program</td>
+      <td>everyone</td>
+      <td>create an advisory group with several different perspectives</td>
+      <td>end 2019</td>
+    </tr>
+    <tr>
+      <td>ANU art/design/music folks feel like we're treading on their turf</td>
+      <td>Ben</td>
+      <td>give ANU SoM and SoAD a voice in the advisory group</td>
+      <td>end 2019</td>
+    </tr>
+    <tr>
+      <td>high-school students don't attend the on-campus c/c/c studio sessions</td>
+      <td>Ben</td>
+      <td>get buy-in from <a href="#early-adopters">early adopter schools</a>, get them to support/encourage their students to attend</td>
+      <td>end 2020</td>
+    </tr>
+    <tr>
+      <td>c/c/c studio doesn't meet the requirements for official <a href="http://extension.anu.edu.au">ANU Extension</a> accreditation</td>
+      <td>Ben, CECS education committee</td>
+      <td>talk to <em>Discovering Engineering</em> people, and if it doesn't work it's no big deal</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td><em>too many </em>students want to participate</td>
+      <td>everyone</td>
+      <td>raise the bar for the portfolio-based admissions procedure, get more ANU students to share the teaching/tutoring load</td>
+      <td>2020+</td>
+    </tr>
+    <tr>
+      <td>students have wide range of different abilities/familiarity with the material</td>
+      <td>Ben, tutors</td>
+      <td>keep class sizes small so we can tailor material to each student, encourage peer-assisted learning at the different stages</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <td>project relies too much on Ben's particular mix of skills and interests</td>
+      <td>Ben, others</td>
+      <td>get artists from the Canberra community to deliver studio masterclass material, train up other CECS people (e.g. tutors) to share the workload</td>
+      <td>2021</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Rapid Analysis {#rapid-analysis}
 
