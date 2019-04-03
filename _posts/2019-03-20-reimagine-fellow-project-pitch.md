@@ -10,13 +10,26 @@ _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan.
 
 {% include toc.html %}
 
+<!-- ### notes from chat with Maya -->
+
+<!-- - not just HS students -->
+<!-- - it's a studio & masterclass -->
+<!-- - explicitly mention diversity options, and the type of students we want to target -->
+<!-- - break into stages (realistic!) -->
+<!-- - assemble a committee -->
+<!-- - mention my contract status as a challenge -->
+<!-- - https://www.linkedin.com/in/madeleine-parker-928644102/ -->
+
 ## Project Background and Description
 
 ### Elevator pitch
 
 {:.hl-para}
 
-I want to start the **c/c/c studio**[^ccc-group], an after-school
+TODO: update to make more of the not-just-HS thing, also perhaps explicit
+mention of diversity?
+
+I want to create the **c/c/c studio**[^ccc-group], an after-school
 extension/outreach program in creative code (using code to make art, music &
 other cool things) for ACT High School[^hs-college] students interested in the
 intersection of art & technology. Students will participate in a weekly
@@ -71,6 +84,8 @@ programs) and of the 4 CS programs I'm involved with 2 of them already. There's
 also the official [ANU Extension](http://extension.anu.edu.au) scheme for Year
 11 & 12 students in the ACT, however CS doesn't yet participate in this scheme.
 
+TODO girlswhocode things (maybe ask Caitlin/Sam?)
+
 In the wider ANU context, one similar program is the ANU School of Music's [Open
 School of Music](http://music.cass.anu.edu.au/open-school). From their website:
 
@@ -81,6 +96,8 @@ School of Music](http://music.cass.anu.edu.au/open-school). From their website:
 > music-making. In particular, it aims to ensure that high-quality music
 > education is accessible to all children in the ACT who have the interest and
 > aptitude.
+
+TODO group these next few paras under "existing networks? or something"
 
 In 2018 I ran the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/),
@@ -111,6 +128,12 @@ science in the first place.
 ## Project Scope
 
 ### Solution proposed
+
+TODO activities:
+- creative code workshops in schools/community arts venues
+- c/c/c studio & masterclass sessions on campus
+
+TODO need a table here
 
 The weekly c/c/c studio sessions won't be lectures, or even tutorials---they
 will adopt a [studio-based
@@ -194,12 +217,13 @@ students in our undergraduate and postgraduate programs. In building a community
 of students who are interested in using computers in the arts & music the c/c/c
 studio can be _one part_ of that bigger mission.
 
-The c/c/c studio is an "outwardly-focused education program" (taken from the
-_Reimagine Fellow_ position description) which builds two-way relationships with
-ACT High Schools. The end-of-semester grad shows provide an opportunity to
-showcase the innovative education & creative-practice going on in the c/c/c
-studio (and CECS more broadly) and in doing so to make an impact in the ANU and
-wider Canberra community.
+TODO also mention connecting to the wider CBR arts community
+
+The c/c/c studio is an **outwardly-focused** program (TODO what do you mean?).
+The end-of-semester grad shows provide an opportunity to showcase the innovative
+education & creative-practice going on in the c/c/c studio (and CECS more
+broadly) and in doing so to make an impact in the ANU and wider Canberra
+community.
 
 Finally, the c/c/c studio presents an opportunity as an "object lesson" for the
 breadth of places that an Engineering/Computer Science skillset can be
@@ -207,6 +231,8 @@ applied---a crucial part of Reimagining CECS from a problem-solving to
 problem-_finding_ institution.
 
 ### Target users
+
+TODO broaden this---ANU students (CECS and beyond)
 
 ACT High School students, as well as students from the wider Canberra region
 (since we could do a travelling version of the workshop).
@@ -241,6 +267,8 @@ This project will deliver:
 
 - (TBC) [RSCS's](https://cs.anu.edu.au/code-creativity-culture/) first ANU
   Extension program (see [above](#anu-extension-accreditation))
+
+- TODO committee?
   
 There'll be lots of other stuff, too: building a community of practice,
 deepening ANU CS/CECS's relationships with ACT High Schools, giving our
@@ -252,19 +280,19 @@ that's intangible stuff, so I'm not sure if they count as a deliverables.
 - **Sponsor**: Nick? Qing? Tony?
 - **Owner**: Ben Swift
 - **Consultations**:
-  - [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at) (ANU
-    SoM, previously the convenor of the Open School of Music program)
+  - [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at), ANU
+    SoM, previously the convenor of the Open School of Music program
   - [Geoff
-    Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb) (ANU
-    School of Art & Design)
-  - [Qing Wang](https://cecs.anu.edu.au/people/qing-wang) (RSCS Associate
-    Director of Education Partnerships)
-  - [Charles Martin](http://charlesmartin.com.au) (RSCS Lecturer and creative
-    code practitioner)
-  - [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking) (RSCS Director)
-  - [Liz
-    Williams](http://www.anu.edu.au/news/all-news/anu-spaces-–-dr-liz-williams)
-    (3Ai Institute) (or perhaps someone else from 3Ai)
+    Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb), ANU
+    School of Art & Design
+  - [Qing Wang](https://cecs.anu.edu.au/people/qing-wang), RSCS Associate
+    Director of Education Partnerships
+  - [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
+    code practitioner
+  - [Madeleine Parker](https://www.linkedin.com/in/madeleine-parker-928644102/),
+    SCI ART CBR Community Co-ordinator
+
+<!-- - [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking), RSCS Director -->
 
 ## Success Metrics {#success-metrics}
 
@@ -278,10 +306,12 @@ absolute terms and also trends over time.
   show---are the things the students are making any good?
 - **Curriculum uptake**: is the curriculum developed for the c/c/c studio
   sessions used by HS teachers to run similar groups in their schools?
+  
+TODO also perhaps mention stages here
 
 ## Business Readiness
 
-### Physical space requirements
+### Physical space
 
 The c/c/c studio will require a room for one 2-3 hour session every week in an
 after-school friendly timeslot (perhaps 4pm-6pm). This room needs to have one
@@ -293,7 +323,7 @@ In addition, some sound gear may be required for the students interested in
 making music, e.g. headphones & a small mixing desk (I have some of this gear
 already).
 
-### Personnel requirements
+### Personnel
 
 The c/c/c studio's open-ended studio teaching model _does_ require expert
 instructors with a mix of creative and technical skills. In addition to my own
@@ -304,7 +334,11 @@ across campus at the ANU Schools of Art & Design and Schools of Music, and there
 _may_ be opportunities/needs to buy out small amounts of their time to
 contribute to the teaching program in the c/c/c studio.
 
-### Enrolment/admin requirements
+### Budget
+
+TODO need to pay the artists for the masterclasses (make up some numbers)
+
+### Enrolment/admin
 
 In the short term, we will give students who complete the c/c/c studio program
 (which will be held in semester-long increments) an official ANU certificate of
@@ -318,13 +352,15 @@ for the c/c/c studio sessions .
 
 | What?                                   | Who?           | By when?                             |
 |-----------------------------------------|----------------|--------------------------------------|
-| develop relationships with High Schools | Ben            | end 2019                             |
-| create curriculum                       | Ben            | end 2019                             |
-| run weekly c/c/c studio sessions        | Ben + tutor(s) | ongoing (beginning 2020)             |
+| develop relationships with stakeholders | Ben            | ongoing                              |
+| assemble c/c/c studio advisory board    | Ben, others    | end 2019                             |
 | run in-HS workshops                     | Ben + tutor(s) | ongoing (beginning 2020)             |
-| c/c/c studio grad show                  | students       | end of semester (beginning mid-2020) |
+| run weekly c/c/c studio & masterclass   | various        | ongoing (beginning 2021)             |
+| c/c/c studio grad show                  | students       | end of semester (beginning mid-2021) |
 
 ## Cost/Time Commitments
+
+TODO make this less HS-focussed
 
 **Ben**: 2 days/week (40% FTE) for 2.5 years (mid 2019-end 2021). This includes:
 
@@ -340,14 +376,20 @@ c/c/c studio.
 **Equipment**: music gear (~2k) so that students can connect their laptops to
 play _together_
 
+**Guest artist honorariums**[^plural]: some masterclass guest artists won't have
+institutional affiliation, and paying them for their time is a way of respecting
+their contribution & expertise
+
 **Grad show budget**: (~1k per semester from 2020) for venue/equipment hire
 (e.g. PA, fancy projectors, etc.)
 
 **Estimated project costs**: TBD
 
+[^plural]: actually, is _honoraria_ the plural of honorarium?
+
 ## Risk, Challenges and Dependencies {#risks}
 
-| Risk                                                                                                               | Who's accountable?            | Mitigation steps                                                                                                                        |   When? |
+| Risk/challenge | Who's accountable? | Mitigation steps | When? |
 |--------------------------------------------------------------------------------------------------------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|---------|
 | students don't turn up                                                                                             | Ben                           | get buy-in from [early adopter schools](#early-adopters) who are already running this sort of thing                                     | ongoing |
 | c/c/c studio doesn't meet the requirements for official [ANU Extension](http://extension.anu.edu.au) accreditation | Ben, CECS education committee | talk to _Discovering Engineering_ people, and if it doesn't work it's no big deal                                                       |    2020 |
@@ -355,6 +397,8 @@ play _together_
 | too many students                                                                                                  | Ben                           | introduce some sort of portfolio-based admissions procedure, get ANU UG students to share the teaching load                             |   2020+ |
 | students have wide range of different abilities/familiarity with the material                                      | Ben, tutors                   | keep class sizes small so we can tailor material to each student, encourage peer-assisted learning at the different stages              |    2020 |
 | project relies too much on Ben's particular mix of skills and interests | Ben, others | get other like-minded folks from inside CECS and across campus involved, train up other CECS people (e.g. tutors) to share the workload | 2019 |
+
+TODO add Ben's contract thing
 
 ## Rapid Analysis {#rapid-analysis}
 
@@ -371,12 +415,6 @@ play _together_
 This section TODO; see note below.
 
 ## Notes for draft readers
-
-- This isn't exactly what I'd put in my [original pitch]({{site.baseurl}}{% link
-  _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}), but from
-  discussions in our workshop the other day I think this outreach project hits
-  one of the main goals of the Reimagine project, and is really complementary to
-  the other Fellows' projects.
 
 - It's currently a CS pitch---there's not much involvement from the Engineering
   schools at present, although this could change in the future. But I've decided
@@ -401,10 +439,10 @@ This section TODO; see note below.
   discussions with e.g. my HoS.
 
 - Some of the nomenclature is still TBC, e.g. the whole "c/c/c studio" thing,
-  code vs tech, art vs music vs creativity, etc. Part of the initial phase of
-  the project will be workshopping these terms to see which ones best resonate
-  with the potential audiences, and also which best capture what _actually_ goes
-  on.
+  code vs technology, art vs music vs creativity, etc. Part of the initial phase
+  of the project will be workshopping these terms to see which ones best
+  resonate with the potential audiences, and also which best capture what
+  _actually_ goes on.
 
 - I'm not sure about the [RAPID](#rapid-analysis) part, I'm open to suggestions
   on what that section might mean in the context of this project.
@@ -414,6 +452,10 @@ This section TODO; see note below.
   degrees with everyone concerned (i.e. I'm sure no-one would be *shocked* to
   hear this project pitch) there's a chance that some of the details will change
   as I make things more concrete and sort out the details.
+
+- If things go well, I intend to continue (and grow!) the program past the end
+  of 2021---in fact I see it as an ongoing part of our teaching, research and
+  outreach here in CECS.
 
 - I know that this document is a website; it's not using the official MS Word
   template. Mostly that's because this way I can make it readable on mobile,
