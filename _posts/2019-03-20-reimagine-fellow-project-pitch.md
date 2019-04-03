@@ -6,7 +6,9 @@ tags: reimagine teaching research
 ---
 
 *Note to readers:* this is my [Reimagine Fellowship]({{site.baseurl}}{% link
-_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan.
+_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan. If
+you're just here for the short version, see the [elevator
+pitch](#elevator-pitch).
 
 {% include toc.html %}
 
@@ -14,7 +16,6 @@ _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan.
 
 <!-- - not just HS students -->
 <!-- - it's a studio & masterclass -->
-<!-- - explicitly mention diversity options, and the type of students we want to target -->
 <!-- - break into stages (realistic!) -->
 <!-- - assemble a committee -->
 <!-- - mention my contract status as a challenge -->
@@ -22,7 +23,7 @@ _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan.
 
 ## Project Background and Description
 
-### Elevator pitch
+### Elevator pitch {#elevator-pitch}
 
 {:.hl-para}
 
