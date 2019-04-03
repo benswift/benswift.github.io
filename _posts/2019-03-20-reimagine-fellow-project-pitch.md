@@ -425,7 +425,7 @@ venue/catering/equipment (e.g. fancy projectors, etc.)
     <tr>
       <td>Ben's RSCS contract runs out</td>
       <td>Ben's boss(es)</td>
-      <td>currently, I'm only contracted through end of 2019---I'm really keen to stick around after that and see this project through, but obviously buying out part of my time is contingent on me having a job to buy out</td>
+      <td>currently, I'm only contracted through end of 2019&mdash;I'm really keen to stick around after that and see this project through, but obviously buying out part of my time is contingent on me having a job to buy out</td>
       <td>2020+</td>
     </tr>
   </tbody>
