@@ -527,3 +527,5 @@ Smith](#anu-extension-accreditation)._
   accessible (e.g. to screen readers for people with vision impairment), embed
   videos, make sure everyone's always reading the latest version, etc. But if
   you **really** need it as a `.docx` then I can convert it when it's finished 😊
+
+## Footnotes
