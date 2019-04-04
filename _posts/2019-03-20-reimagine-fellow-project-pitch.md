@@ -272,7 +272,8 @@ that's intangible stuff, so I'm not sure if they count as a deliverables.
 
 ## Project Sponsor and Stakeholders {#project-sponsor-and-stakeholders}
 
-- **Sponsor**: Nick? Qing? Tony?
+- **Sponsor**: [Elanor
+  Huntington](https://cecs.anu.edu.au/people/elanor-huntington), Dean of CECS
 - **Owner**: Ben Swift
 - **Consultations**:
   - [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at), ANU
@@ -300,9 +301,8 @@ that's intangible stuff, so I'm not sure if they count as a deliverables.
 We will judge the success of this program using the following metrics, both in
 absolute terms and also trends over time.
 
-- **Participation**: how many students participate?
-- **Retention**: for the weekly c/c/c studio sessions, do students keep coming
-  over time?
+- **Participation**: how many students participate in the workshops (stage two)
+  and c/c/c studio (stage three)?
 - **Creative outputs**: we'll have an end-of-semester concert and gallery
   show---are the things the students are making any good?
 - **Curriculum uptake**: is the curriculum developed for the c/c/c studio
