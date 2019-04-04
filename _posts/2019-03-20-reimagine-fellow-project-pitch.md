@@ -11,10 +11,13 @@ summary: A project plan for my CECS Reimagine Fellowship
         style="margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;">
 </iframe>
 
-*Note to readers:* this is my [Reimagine Fellowship]({{site.baseurl}}{% link
-_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan. If
-you're just here for the short version, see the [elevator
-pitch](#elevator-pitch).
+*Note to readers:* this is what I intend to do if awarded a **Reimagine
+Fellowship**. If you're just here for the short version, see the [elevator
+pitch](#elevator-pitch). You could also read some of the [background to this
+proposal]({{site.baseurl}}{% link
+_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) or check out the
+main [CECS Reimagine](https://cecs.anu.edu.au/reimagine) page for more general
+information about the Reimagine project.
 
 {% include toc.html %}
 
