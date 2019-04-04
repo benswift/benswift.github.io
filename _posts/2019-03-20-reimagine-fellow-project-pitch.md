@@ -186,6 +186,9 @@ standing and utility of the c/c/c studio.
 
 ### Value to organisation/Reimagine strategic alignment
 
+The c/c/c studio aligns strongly with the goals of the Reimagine project,
+specifically in people, students, education and engagement.
+
 From the [Reimagine Project page](https://cecs.anu.edu.au/reimagine):
 
 > We will inspire a new generation of high-potential, creative people to come to
@@ -196,26 +199,25 @@ This "new generation" will not be won over by glossy brochures and fancy new
 buildings---they will come because they can see concrete ways in which their
 diverse range of interests can be harnessed and _put to work_ to do amazing
 things. The c/c/c studio will provide a supportive community in which this new
-generation can learn, create, and share. More than that, it will unlock the
-latent potential in students who never knew their diverse interests (especially
-in the arts & music) _could_ be used in engineering and computing.
+generation of **people** can learn, create, and share. More than that, it will
+unlock the latent potential in **students** who never knew their diverse interests
+(especially in the arts & music) _could_ be used in engineering and computing.
 
-The c/c/c studio provides a test-bed for new ways of teaching computing &
-engineering skills at a university level, especially the studio teaching model.
-The Reimagine project's "[big
+The c/c/c studio provides a test-bed for new modes of computing **education**,
+especially the studio teaching model. The Reimagine project's "[big
 tent](https://www.acm.org/about-acm/about-the-acm-organization#h-acm’s-‘big-tent’-philosophy-embraces-diversity)"
 CS education philosophy requires us to attract _and nurture_ a broader range of
 students in our undergraduate and postgraduate programs. In building a community
 of students who are interested in using computers in the arts & music the c/c/c
 studio can be _one part_ of that bigger mission.
 
-The c/c/c studio is an **outwardly-focused** program. Through the workshops
-(stage two) and c/c/c studio (stage three) we will need to engage local artists
-(whose work includes code/digital techniques) to teach into our studio
-masterclasses. The end-of-semester grad shows (stage three) provide an
-opportunity to showcase the innovative education & creative-practice going on in
-the c/c/c studio (and CECS more broadly) and in doing so to make an impact in
-the ANU and wider Canberra community.
+The c/c/c studio is an outwardly-focused program. Through the workshops (stage
+two) and c/c/c studio (stage three) we will **engage** local artists (whose work
+includes code/digital techniques) to teach into our studio masterclasses. The
+end-of-semester grad shows (stage three) provide an opportunity to showcase the
+innovative education & creative-practice going on in the c/c/c studio (and CECS
+more broadly) and in doing so to make an impact in the ANU and wider Canberra
+community.
 
 Finally, all the activities of the c/c/c studio function as an "object lesson"
 for the breadth of places that an Engineering/Computer Science skillset can be
@@ -262,6 +264,9 @@ This project will deliver:
   held on campus (perhaps in the new cultural centre) as the capstone for each
   semester's student work in the c/c/c studio
 
+- stories for CECS/Reimagine marketing, and c/c/c studio "graduates" will be
+  ideal student ambassadors for the new horizons that creative code opens up
+
 - (TBC) [RSCS's](https://cs.anu.edu.au/code-creativity-culture/) first ANU
   Extension program (see [above](#anu-extension-accreditation))
 
@@ -307,7 +312,16 @@ absolute terms and also trends over time.
   show---are the things the students are making any good?
 - **Curriculum uptake**: is the curriculum developed for the c/c/c studio
   sessions used by HS teachers to run similar groups in their schools?
-  
+
+Attaching numbers to this sort of thing is fraught, but here are some indicative
+targets:
+
+| stage  | activity        | target                                                                                   |
+|--------|-----------------|------------------------------------------------------------------------------------------|
+| two    | workshops       | run one half-day workshop per month (or equivalent), with at least 10 students each time |
+| three  | c/c/c studio    | 10 successful c/c/c studio "graduates" in S1 2020, 15 successful graduates in S2 2020    |
+| three+ | CECS enrolments | 5 graduates of the c/c/c studio (in year 12 in 2020) enrolling in CS at the ANU          |
+
 ## Business Readiness
 
 ### Physical space
@@ -317,10 +331,6 @@ every week in an after-school friendly timeslot (perhaps 4pm-6pm). This room
 needs to have one computer per student (either a lab machine or personal laptop)
 which can run a modern web browser (Chrome, Firefox, Safari). One of our
 computer labs in Building #145 should do the job initially.
-
-In addition, some sound gear may be required for the students interested in
-making music, e.g. headphones & a small mixing desk (I have some of this gear
-already).
 
 ### Personnel
 
