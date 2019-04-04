@@ -289,11 +289,13 @@ that's intangible stuff, so I'm not sure if they count as a deliverables.
     School of Art & Design
   - [Qing Wang](https://cecs.anu.edu.au/people/qing-wang), RSCS Associate
     Director of Education Partnerships
+  - [Genevieve Bell](https://cecs.anu.edu.au/people/genevieve-bell),
+    [3Ai](https://3ainstitute.cecs.anu.edu.au) Director
+  - [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
+    code practitioner
   - [Craig
     Edwards](http://www.dicksonc.act.edu.au/our_school/principals_welcome),
     Dickson College Principal
-  - [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
-    code practitioner
   - [Madeleine Parker](https://www.linkedin.com/in/madeleine-parker-928644102/),
     SCI ART CBR Community Co-ordinator
   - [Morgan
