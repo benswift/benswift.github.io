@@ -224,7 +224,10 @@ img {
 // tables
 
 table {
-	width:100%;
+	// filthy hacks because tables don't play nice with padding
+	width: calc(100% - 1.6rem);
+	margin: 0 0.8rem;
+
 	text-align: left;
 	border-collapse: collapse;
 	th, td {
@@ -295,6 +298,10 @@ table {
 	}
 	h1,h2,h3,h4,h5,h6,p {
 		padding: 0;
+	}
+	table {
+		width: 100%;
+		margin: 0;
 	}
 	.navigation {
 		padding: 0;
