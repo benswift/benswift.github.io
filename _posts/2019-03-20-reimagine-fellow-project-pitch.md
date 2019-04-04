@@ -261,8 +261,9 @@ This project will deliver:
   licence ([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 
 - a biannual **c/c/c studio grad show** gallery exhibition and music performance
-  held on campus (perhaps in the new cultural centre) as the capstone for each
-  semester's student work in the c/c/c studio
+  (recorded and released on YouTube/Spotify) held on campus (perhaps in the new
+  cultural centre) as the capstone for each semester's student work in the c/c/c
+  studio
 
 - stories for CECS/Reimagine marketing, and c/c/c studio "graduates" will be
   ideal student ambassadors for the new horizons that creative code opens up
