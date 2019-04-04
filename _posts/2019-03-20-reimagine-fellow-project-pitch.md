@@ -98,7 +98,7 @@ there's no music technology stream.
 There are several great organisations working to increase diversity in CS,
 including the [Canberra Girls' Programming
 Network](https://canberragpn.github.io), [Code Like a
-Girl](https://codelikeagirl.org/states/act/),
+Girl](https://codelikeagirl.org/states/act/) and
 [Robogals](https://robogals.org/locations/asia-pacific-apac/canberra/). However,
 these organisations are primarily based around computer science/engineering, not
 interdisciplinary art & code.
@@ -106,16 +106,18 @@ interdisciplinary art & code.
 In 2018 I ran the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/),
 which attempted to provide a similar open-ended space for creative exploration
-to the c/c/c studio, specifically for live performance (code-based DJ-ing and
-VJ-ing). ANU students can take my [COMP1720: Art & Interaction in New
+to the c/c/c studio, except specifically for live performance
+([livecoding](https://toplap.org); code-based DJ-ing and VJ-ing). ANU students
+can also take my [COMP1720: Art & Interaction in New
 Media](https://cs.anu.edu.au/courses/comp1720/) course as part of a major in
 either a CS degree or a Bachelor of Visual Arts (or indeed as a cross-campus
 elective in any program). COMP1720 has run successfully as a cross-disciplinary
 "learn to code" course for several years. The c/c/c studio will extend this
 opportunity to school students and other members of the ACT community.
 
-I see the c/c/c studio as an opportunity to formalise and build momentum around
-all of these existing initiatives, partnering with them wherever possible.
+The c/c/c studio is an opportunity to act as a force multiplier, harnessing
+these existing initiatives, partnering with them wherever possible, and building
+bridges between them to open up new possibilities.
 
 ## Project Scope
 
@@ -124,9 +126,9 @@ all of these existing initiatives, partnering with them wherever possible.
 The c/c/c studio will be developed through three stages:
 
 1. In **stage one** (mid 2019--end 2019) I will engage with the project's
-   [stakeholders](#project-sponsor-and-stakeholders) to form a **c/c/c studio
-   advisory group** responsible for guiding high-level strategy and pedagogy in
-   the c/c/c studio program
+   [stakeholders](#project-sponsor-and-stakeholders) to form a _c/c/c studio
+   advisory group_ responsible for guiding high-level strategy, pedagogy and
+   creative direction in the c/c/c studio program
 2. In **stage two** (beginning 2020--end 2020) we will design and run a series
    of creative code workshops (approx. one per month) with our [early
    adopter](#early-adopters) schools and community groups. These free workshops
@@ -171,7 +173,7 @@ c/c/c studio sessions & masterclasses, but here are some initial plans:
 
 It may be possible give participants in the c/c/c studio program credit into our
 first-year CS program (e.g. [COMP1720](https://cs.anu.edu.au/courses/comp1720/))
-if they decide to come and study in CECS.[^discovering-engineering] To
+if they decide to come and study at CECS.[^discovering-engineering] To
 investigate this, in stage two we will put the c/c/c studio program forward as a
 candidate for the [ANU Extension program](http://extension.anu.edu.au). This may
 or may not be desirable (depending on the requirements of the Extension program)
@@ -187,7 +189,7 @@ standing and utility of the c/c/c studio.
 ### Value to organisation/Reimagine strategic alignment
 
 The c/c/c studio aligns strongly with the goals of the Reimagine project,
-specifically in people, students, education and engagement.
+specifically in **people**, **students**, **education** and **engagement**.
 
 From the [Reimagine Project page](https://cecs.anu.edu.au/reimagine):
 
@@ -200,8 +202,9 @@ buildings---they will come because they can see concrete ways in which their
 diverse range of interests can be harnessed and _put to work_ to do amazing
 things. The c/c/c studio will provide a supportive community in which this new
 generation of **people** can learn, create, and share. More than that, it will
-unlock the latent potential in **students** who never knew their diverse interests
-(especially in the arts & music) _could_ be used in engineering and computing.
+unlock the latent potential in **students** who never knew their diverse
+interests (especially in the arts & music) _could_ be used in engineering and
+computing.
 
 The c/c/c studio provides a test-bed for new modes of computing **education**,
 especially the studio teaching model. The Reimagine project's "[big
@@ -272,9 +275,10 @@ This project will deliver:
   Extension program (see [above](#anu-extension-accreditation))
 
 There'll be lots of other stuff, too: building a community of practice,
-deepening ANU CS/CECS's relationships with ACT High Schools, giving our
-undergraduate students a chance to mentor these high school students, etc. But
-that's intangible stuff, so I'm not sure if they count as a deliverables.
+deepening ANU CS/CECS's relationships with ACT High Schools, strengthening
+cross-campus partnerships in research and teaching, giving our undergraduate
+students a chance to mentor these high school students, etc. But that's
+intangible stuff, so I'm not sure if they count as a deliverables.
 
 ## Project Sponsor and Stakeholders {#project-sponsor-and-stakeholders}
 
@@ -397,10 +401,11 @@ venue/catering/equipment (e.g. fancy projectors, etc.)
 |------------------|-----------------------------------------------------|
 | Ben's time       | 0.4fte @ level C                                    |
 | tutors           | 5h/workshop in stage two, 3h/session in stage three |
+| equipment        | 5k                                                  |
 | artist honoraria | as above, but potentially at a different rate       |
+| grad shows       | 1k per semester in 2021, 2k total                   |
 
 [^plural]: actually, is _honoraria_ the plural of honorarium?
-
 
 ## Risk, Challenges and Dependencies {#risks}
 
