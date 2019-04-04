@@ -19,15 +19,15 @@ pitch](#elevator-pitch).
 {:.hl-para}
 
 I want to create the **c/c/c studio**[^ccc-group], an extension/outreach program
-in creative code (using code to make art, music & other cool things). Through
-school- & community-based one-off workshops and a weekly on-campus studio
-masterclass, students will be part of an interactive learning community where
-they will be guided by instructors in creating their own new works of code-based
-art & music. At the end of each semester the c/c/c studio will host a "grad
-show" gallery exhibition/performance of the students' work. This program will
-attract fantastic students who might otherwise not study engineering or computer
-science (either at ANU or elsewhere) and engage the wider community in helping
-them _reimagine_ what it is to be a computer scientist or engineer in the 21st
+in creative code: using code to make art, music & other cool things. Through
+school- & community-based workshops and a weekly on-campus studio masterclass,
+students will be part of an interactive learning community where they will be
+guided by instructors in creating their own new works of code-based art & music.
+At the end of each semester the c/c/c studio will host a "grad show" gallery
+exhibition/performance of the students' work. This program will attract
+fantastic students who might otherwise not study engineering or computer science
+(either at ANU or elsewhere) and engage the wider community in helping them
+_reimagine_ what it is to be a computer scientist or engineer in the 21st
 century.
 
 [^ccc-group]:
