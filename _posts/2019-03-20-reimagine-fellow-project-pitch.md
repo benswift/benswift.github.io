@@ -531,6 +531,13 @@ Smith](#anu-extension-accreditation)._
   that some of the details will change as I make things more concrete and sort
   out the details.
 
+- In some ways the budget is quite conservative---there's certainly the chance
+  that I could hire/buy out the time of both ANU colleagues from art, design &
+  music, or perhaps buy the time of members from some of the other organisations
+  (e.g. Madeleine from SCI ART CBR and I have discussed this). So I'm happy to
+  include that in the budget if there's an appetite for it, but I'd also need to
+  chat with the relevant folks first.
+
 - If things go well, I intend to continue (and grow!) the program past the end
   of 2021---in fact I see it as an ongoing part of our teaching, research and
   outreach here in CECS.
