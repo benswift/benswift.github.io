@@ -403,7 +403,7 @@ venue/catering/equipment (e.g. fancy projectors, etc.)
     </tr>
     <tr>
       <td>high-school students don't attend the on-campus c/c/c studio sessions</td>
-      <td>Ben</td>
+      <td>Ben, CECS Marketing, school/community partners</td>
       <td>get buy-in from <a href="#early-adopters">early adopter schools</a>, get them to support/encourage their students to attend</td>
       <td>end 2020</td>
     </tr>
@@ -443,17 +443,51 @@ venue/catering/equipment (e.g. fancy projectors, etc.)
 
 ## Rapid Analysis {#rapid-analysis}
 
-- _Who_---who is undertaking this role?
-- _What_---what are they being asked to do?
-- _When_---when will their role be completed?
+_Note: I stole most of this from the excellent [Jeremy
+Smith](#anu-extension-accreditation)._
 
-- **R**ecommend
-- **A**gree
-- **P**erform
-- **I**nput
-- **D**ecide
-
-This section TODO; see note below.
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Who is undertaking this role?</th>
+      <th>What are they being asked to do?</th>
+      <th>When will their role be completed?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>R</strong>ecommend</td>
+      <td>PMO Manager, CECS GM, RSCS Director, CECS Associate Deans for Education, Research and Diversity and Inclusion, Reimagine CoDesign Lead</td>
+      <td>recommend support for the Reimagine Fellow Project outlined here</td>
+      <td>May/June 2019</td>
+    </tr>
+    <tr>
+      <td><strong>A</strong>gree</td>
+      <td>CECS Executive</td>
+      <td>agree that a decision be made on the Reimagine Fellow Project and the c/c/c studio</td>
+      <td>July 2019</td>
+    </tr>
+    <tr>
+      <td><strong>P</strong>erform</td>
+      <td>RSCS Director and Associate Director (Education Partnerships), CECS PMO Team</td>
+      <td>make the necessary resource, time, and cost changes and commitments</td>
+      <td>June/July 2019</td>
+    </tr>
+    <tr>
+      <td><strong>I</strong>nput</td>
+      <td>CECS Marketing and Student Services Teams, ANU stakeholders (other Colleges), [partner organisations](#project-sponsor-and-stakeholders), current students and staff.</td>
+      <td>provide input into the Reimagine Fellow Project outlined here on potential collaboration, benefits or support</td>
+      <td>April, May 2019</td>
+    </tr>
+    <tr>
+      <td><strong>D</strong>ecide</td>
+      <td>CECS Dean & Deputy Dean</td>
+      <td>provide the highest level demonstration of commitment to the Reimage Fellow Project</td>
+      <td>June 2019</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Notes for draft readers
 
