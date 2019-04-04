@@ -499,26 +499,17 @@ Smith](#anu-extension-accreditation)._
   </tbody>
 </table>
 
-## Notes for draft readers
+## Notes for readers
 
 - It's currently a CS pitch---there's not much involvement from the Engineering
   schools at present, although this could change in the future. But I've decided
   to start with what I know.
-
-- In the [success metrics](#success-metrics) section I _could_ put some concrete
-  numbers in there, e.g. have 5 students complete the program in the first
-  semester, 20 in the final semester, plus have at least 3 of them enrol at the
-  ANU, etc. But I'm reluctant to put concrete numbers in without further
-  discussions with the relevant stakeholders.
 
 - Some of the nomenclature is still TBC, e.g. the whole "c/c/c studio" thing,
   code vs technology, art vs music vs creativity, etc. Part of the initial phase
   of the project will be workshopping these terms to see which ones best
   resonate with the potential audiences, and also which best capture what
   _actually_ goes on.
-
-- I'm not sure about the [RAPID](#rapid-analysis) part, I'm open to suggestions
-  on what that section might mean in the context of this project.
 
 - It's _really hard_ to have all the necessary stakeholder conversations while
   I'm on parental leave. So while I've discussed this sort of thing to varying
