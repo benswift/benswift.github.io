@@ -72,8 +72,8 @@ those groups are certainly over-represented in our undergraduate CS cohort
 compared to other groups. It's important to point out that increasing the
 representation of under-represented groups in CS is a wicked problem which needs
 to be tackled from many different angles. Still, as the **A** in
-[STE**A**M](http://stemtosteam.org), the **a**rts provide one angle for engaging
-students who might not normally coding and computer science.
+[STE**A**M](http://stemtosteam.org), the arts provide one angle for engaging
+students who might not normally consider coding and computer science.
 
 ### Existing alternatives
 
@@ -146,7 +146,7 @@ The c/c/c studio will be developed through three stages:
    this teaching model, which we will make use of in developing the c/c/c
    curriculum.
 
-The purpose of stages one and two is design and road-test the details of the
+The purpose of stages one and two is to design and road-test the details of the
 c/c/c studio sessions & masterclasses, but here are some initial plans:
 
 - ACT High School & College students will apply to participate based on interest
