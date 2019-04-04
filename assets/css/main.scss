@@ -246,6 +246,7 @@ table {
 #toc {
 
 	background: darken($background-color, 3%);
+	clear: both;
 
 	h2 {
 		background: $text-color;

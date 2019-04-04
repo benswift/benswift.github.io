@@ -5,6 +5,11 @@ hidden: true
 tags: reimagine teaching research
 ---
 
+<iframe src="{{site.baseurl}}{% link widgets/reimagine-logo.html %}"
+        frameborder="0"
+        style="margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;">
+</iframe>
+
 *Note to readers:* this is my [Reimagine Fellowship]({{site.baseurl}}{% link
 _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) project plan. If
 you're just here for the short version, see the [elevator
