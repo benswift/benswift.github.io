@@ -64,8 +64,8 @@ a tertiary level. The c/c/c studio will address that.
     well.
 
 [^not-doing-much]:
-   I don't mean to throw shade on our existing efforts here---there are some
-   great things happening in this area, but there's more to be done for sure.
+    I don't mean to throw shade on our existing efforts here---there are some
+    great things happening in this area, but there's more to be done for sure.
 
 CS still suffers from a stereotype of being "for nerdy white/Asian males", and
 those groups are certainly over-represented in our undergraduate CS cohort
