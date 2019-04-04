@@ -3,6 +3,7 @@ title: "The c/c/c studio"
 date: 2019-03-20 11:09 +1100
 hidden: true
 tags: reimagine teaching research
+summary: A project plan for my CECS Reimagine Fellowship
 ---
 
 <iframe src="{{site.baseurl}}{% link widgets/reimagine-logo.html %}"
