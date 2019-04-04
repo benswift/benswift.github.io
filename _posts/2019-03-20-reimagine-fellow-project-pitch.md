@@ -369,6 +369,13 @@ for the c/c/c studio sessions.
 4. running workshops (~monthly from stage two)
 3. delivering the weekly c/c/c studio session(s) (weekly from stage three)
 
+The 0.4fte buyout associated with this fellowship will be used to cover 100% of
+my service component (currently 0.2fte) and half of my teaching component
+(currently 0.4fte). One possible way to manage this is me giving up my role as
+student experience convenor (service) and moving from single-lecturer to leading
+a two-lecturer teaching team for both COMP1720 and COMP2300. However, this is
+subject to negotiations with the relevant authorities within RSCS 😉
+
 **Tutors**: depending on how many students attend, we will need to employ one
 (or more) of our undergraduate students to help deliver the workshops (stage
 two) and support the students in the c/c/c studio (stage three).
@@ -377,16 +384,21 @@ two) and support the students in the c/c/c studio (stage three).
 - portable music PA for running music workshops in schools
 - high-resolution monitors for display of digital artworks
 
-**Masterclass honorariums**[^plural]: some guest artists won't have
-institutional affiliation, and paying them for their time is a way of respecting
-their contribution & expertise.
+**Artist honoraria**[^plural]: some of the guest artists who give masterclasses
+in the studio won't have institutional affiliation, and paying them for their
+time is a way of respecting their contribution & expertise.
 
 **Grad show budget**: (~1k per semester from stage three) for
 venue/catering/equipment (e.g. fancy projectors, etc.)
 
-**Estimated project costs**: TBD
+| description      | cost                                                |
+|------------------|-----------------------------------------------------|
+| Ben's time       | 0.4fte @ level C                                    |
+| tutors           | 5h/workshop in stage two, 3h/session in stage three |
+| artist honoraria | as above, but potentially at a different rate       |
 
 [^plural]: actually, is _honoraria_ the plural of honorarium?
+
 
 ## Risk, Challenges and Dependencies {#risks}
 
