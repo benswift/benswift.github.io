@@ -384,11 +384,13 @@ subject to negotiations with the relevant authorities within RSCS 😉
 
 **Tutors**: depending on how many students attend, we will need to employ one
 (or more) of our undergraduate students to help deliver the workshops (stage
-two) and support the students in the c/c/c studio (stage three).
+two) and support the students in the c/c/c studio (stage three). Exact hourly
+rate depends on qualifications & experience.
 
 **Artist honoraria**[^plural]: some of the guest artists who give masterclasses
 in the studio won't have institutional affiliation, and paying them for their
-time is a way of respecting their contribution & expertise.
+time is a way of respecting their contribution & expertise. Exact hourly rate
+depends on qualifications & experience.
 
 **Equipment**: computational art & music supplies, including:
 - portable music PA for running music workshops in schools
