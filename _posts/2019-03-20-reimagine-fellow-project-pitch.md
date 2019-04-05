@@ -225,7 +225,7 @@ community.
 Finally, all the activities of the c/c/c studio function as an "object lesson"
 for the breadth of places that an Engineering/Computer Science skillset can be
 applied---a crucial part of Reimagining CECS from a problem-solving to
-problem-_finding_ institution.
+problem-*finding* institution.
 
 ### Target users
 
