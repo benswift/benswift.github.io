@@ -115,7 +115,7 @@ elective in any program). COMP1720 has run successfully as a cross-disciplinary
 "learn to code" course for several years. The c/c/c studio will extend this
 opportunity to school students and other members of the ACT community.
 
-The c/c/c studio is an opportunity to act as a force multiplier, harnessing
+The c/c/c studio is an opportunity to act as a force multiplier: harnessing
 these existing initiatives, partnering with them wherever possible, and building
 bridges between them to open up new possibilities.
 
