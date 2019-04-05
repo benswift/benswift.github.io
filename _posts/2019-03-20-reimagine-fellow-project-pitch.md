@@ -386,24 +386,26 @@ subject to negotiations with the relevant authorities within RSCS 😉
 (or more) of our undergraduate students to help deliver the workshops (stage
 two) and support the students in the c/c/c studio (stage three).
 
-**Equipment**: computational art & music supplies (~5k), including:
-- portable music PA for running music workshops in schools
-- high-resolution monitors for display of digital artworks
-
 **Artist honoraria**[^plural]: some of the guest artists who give masterclasses
 in the studio won't have institutional affiliation, and paying them for their
 time is a way of respecting their contribution & expertise.
 
-**Grad show budget**: (~1k per semester from stage three) for
-venue/catering/equipment (e.g. fancy projectors, etc.)
+**Equipment**: computational art & music supplies, including:
+- portable music PA for running music workshops in schools
+- high-resolution monitors for display of digital artworks
+- software licences
+- studio supplies
 
-| description      | cost                                                |
-|------------------|-----------------------------------------------------|
-| Ben's time       | 0.4fte @ level C                                    |
-| tutors           | 5h/workshop in stage two, 3h/session in stage three |
-| equipment        | 5k                                                  |
-| artist honoraria | as above, but potentially at a different rate       |
-| grad shows       | 1k per semester in 2021, 2k total                   |
+**Grad show budget**: (stage three) for venue/catering/equipment (e.g. fancy
+projectors, etc.)
+
+| description      | cost                                           |
+|------------------|------------------------------------------------|
+| Ben's time       | 0.4fte @ level C                               |
+| tutors           | 10h/month in stage two, 5h/week in stage three |
+| artist honoraria | 10h/month in stage two, 5h/week in stage three |
+| studio equipment | $10k total                                    |
+| grad shows       | $1k per semester in stage three, $2k total     |
 
 [^plural]: actually, is _honoraria_ the plural of honorarium?
 
