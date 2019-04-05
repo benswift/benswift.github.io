@@ -510,7 +510,7 @@ Smith](#anu-extension-accreditation)._
     </tr>
     <tr>
       <th><strong>I</strong>nput</th>
-      <td>CECS Marketing and Student Services Teams, ANU stakeholders (other Colleges), [partner organisations](#project-sponsor-and-stakeholders), current students and staff.</td>
+      <td>CECS Marketing and Student Services Teams, ANU stakeholders (other Colleges), <a href="#project-sponsor-and-stakeholders">partner organisations</a>, current students and staff.</td>
       <td>provide input into the Reimagine Fellow Project outlined here on potential collaboration, benefits or support</td>
       <td>April, May 2019</td>
     </tr>
