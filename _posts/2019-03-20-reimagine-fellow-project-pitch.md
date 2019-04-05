@@ -409,7 +409,7 @@ projectors, etc.)
 | studio equipment | $10k total                                    |
 | grad shows       | $1k per semester in stage three, $2k total     |
 
-[^plural]: actually, is _honoraria_ the plural of honorarium?
+[^plural]: is _honoraria_ the plural of honorarium?
 
 ## Risk, Challenges and Dependencies {#risks}
 
