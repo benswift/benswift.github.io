@@ -233,9 +233,12 @@ table {
 	th, td {
 		padding: 0.5em 1em 0.5em 0;
 	}
-	th {
+	thead th {
 		border-bottom: 1px solid $highlight-color;
 		vertical-align: bottom;
+	}
+	tbody th {
+		vertical-align: top;
 	}
 	td {
 		vertical-align: top;
