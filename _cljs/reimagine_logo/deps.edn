@@ -1,3 +1,4 @@
 {:deps
  {org.clojure/clojurescript {:mvn/version "1.10.516"}
-  reagent {:mvn/version "0.8.1"}}}
+  reagent {:mvn/version "0.8.1"}
+  tween-clj {:mvn/version "0.5.0"}}}
