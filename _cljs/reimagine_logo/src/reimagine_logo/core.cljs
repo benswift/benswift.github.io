@@ -4,36 +4,41 @@
             [goog.string.format]
             [goog.dom.fullscreen :refer [requestFullScreen]]))
 
-(defn letter-component [{:keys [letter rd wd]}]
-  (let [rot (r/atom (if (= letter "A") -90 0))
-        weight (r/atom 300)]
-    (fn [{:keys [letter rd wd]}]
+(defn letter-component [{:keys [letter ad sd wd]}]
+  (let [angle (r/atom (if (= letter "A") -90 0)) ;; deg
+        size (r/atom 10) ;; vmin
+        weight (r/atom 200)]
+    (fn [{:keys [letter ad sd wd]}]
       (js/setTimeout
        (fn []
-         (swap! rot + rd)
+         (swap! angle + ad)
+         (when (< 1 @size 25) (swap! size + sd))
          (when (< 100 @weight 900) (swap! weight + wd)))
        (/ 1000 60)) ;; 60fps
       ^{:key letter}
       [:div.letter
        {:style
-        {:transform (gstring/format "rotate(%.2fdeg)" @rot)
+        {:transform (gstring/format "rotate(%.2fdeg)" @angle)
+         :font-size (gstring/format "%.2fvmin" @size)
          :font-weight @weight}}
        letter])))
 
 (defn new-delta [attribute]
   (case attribute
-    :rd (- 1 (rand 2))
+    :ad (- 1 (rand 2))
+    :sd (- 0.1 (rand 0.2))
     :wd (- 1 (rand 2))))
 
 (defn logo-component []
   (let [letters
-        (r/atom (map #(assoc {:rd 0 :wd 0} :letter %)
+        (r/atom (map #(assoc {:ad 0 :sd 0 :wd 0} :letter %)
                      "REIMAGINE"))
 
         update-letter
         (fn [letter-data]
           (-> letter-data
-              (assoc :rd (new-delta :rd))
+              (assoc :ad (new-delta :ad))
+              (assoc :sd (new-delta :sd))
               (assoc :wd (new-delta :wd))))]
     (fn []
       (js/setTimeout
