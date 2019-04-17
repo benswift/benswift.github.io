@@ -30,28 +30,9 @@ body { margin: 0; }
 	// reimagine branding
 	background-color: #BF2F37;
 
-	.letter, .letter-A {
+	.letter {
 		margin: auto;
-		transition: transform 9s ease-in-out, font-weight 9s ease-in-out, font-size 9s ease-in-out;
-
 	}
-
-	.letter-A { transform: rotate(-90deg); }
-
-	.big { font-size: 20vmin;}
-	.small { font-size: 5vmin;}
-
-	.heavy { font-weight: 900;}
-	.light { font-weight: 200;}
-
-	.cw90 { transform: rotate(90deg); }
-	.cc90 { transform: rotate(-90deg); }
-
-	.cw180 { transform: rotate(180deg); }
-	.cc180 { transform: rotate(-180deg); }
-
-	.cw270 { transform: rotate(270deg); }
-	.cc270 { transform: rotate(-270deg); }
 }
 
 @supports (font-variation-settings: normal) {
