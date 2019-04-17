@@ -7,23 +7,24 @@
 (defonce fps 60)
 
 (def letters
-  (r/atom (map #(assoc {:freq 0 :weight 400} :letter %)
+  (r/atom (map #(assoc {:rd 0 :wd 0} :letter %)
                "REIMAGINE")))
 
 (defn update-letter [letter-data]
   (-> letter-data
-      (assoc :freq (rand 30))
-      (assoc :weight (+ 100 (rand 800)))))
+      (assoc :rd (rand 30))
+      (assoc :wd (+ 100 (rand 800)))))
 
-(defn letter-component [{:keys [letter freq weight]}]
-  (let [phase (r/atom 0)
+(defn letter-component [{:keys [letter rd wd]}]
+  (let [rot (r/atom 0)
+        weight (r/atom 400)
         ms-per-frame (/ 1000 fps)]
     (fn []
-      (js/setTimeout #(swap! phase + (/ freq fps)) ms-per-frame)
+      (js/setTimeout #(swap! rot + (/ rd fps)) ms-per-frame)
       ^{:key letter}
       [:div.letter
        {:style
-        {:transform (gstring/format "rotate(%.4frad)" @phase)
+        {:transform (gstring/format "rotate(%.4frad)" @rot)
          :font-weight weight}}
        letter])))
 
