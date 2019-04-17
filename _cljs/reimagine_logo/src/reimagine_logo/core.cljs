@@ -12,7 +12,7 @@
       (js/setTimeout
        (fn []
          (swap! angle + ad)
-         (when (< 1 @size 25) (swap! size + sd))
+         (when (< 3 @size 25) (swap! size + sd))
          (when (< 100 @weight 900) (swap! weight + wd)))
        (/ 1000 60)) ;; 60fps
       ^{:key letter}
@@ -26,7 +26,7 @@
 (defn new-delta [attribute]
   (case attribute
     :ad (- 1 (rand 2))
-    :sd (- 0.1 (rand 0.2))
+    :sd (- 0.01 (rand 0.02))
     :wd (- 1 (rand 2))))
 
 (defn logo-component []
