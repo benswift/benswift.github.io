@@ -24,10 +24,14 @@
        letter])))
 
 (defn new-delta [attribute]
-  (case attribute
-    :ad (- 1 (rand 2))
-    :sd (- 0.01 (rand 0.02))
-    :wd (- 1 (rand 2))))
+  (if (< (rand 10) 7)
+    ;; most of the time, set the delta to zero so it won't change
+    0
+    ;; otherwise update the per-frame delta
+    (case attribute
+      :ad (- 1 (rand 2))
+      :sd (- 0.01 (rand 0.02))
+      :wd (- 1 (rand 2)))))
 
 (defn logo-component []
   (let [letters
