@@ -1,5 +1,6 @@
 (ns reimagine-logo.core
-  (:require [reagent.core :as r]
+  (:require [reimagine-logo.tween :as tween]
+            [reagent.core :as r]
             [goog.string :as gstring]
             [goog.string.format]
             [goog.dom.fullscreen :refer [requestFullScreen]]))
