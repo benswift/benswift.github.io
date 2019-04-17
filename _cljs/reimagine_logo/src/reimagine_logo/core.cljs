@@ -5,20 +5,25 @@
             [goog.dom.fullscreen :refer [requestFullScreen]]))
 
 (defn letter-component [{:keys [letter rd wd]}]
-  (let [rot (r/atom 0)
-        weight (r/atom 300)
-        update-atoms (fn []
-                       (swap! rot + rd)
-                       (when (< 100 @weight 900)
-                         (swap! weight + wd)))]
-    (fn []
-      (js/setTimeout update-atoms (/ 1000 60)) ;; 60fps
+  (let [rot (r/atom (if (= letter "A") -90 0))
+        weight (r/atom 300)]
+    (fn [{:keys [letter rd wd]}]
+      (js/setTimeout
+       (fn []
+         (swap! rot + rd)
+         (when (< 100 @weight 900) (swap! weight + wd)))
+       (/ 1000 60)) ;; 60fps
       ^{:key letter}
       [:div.letter
        {:style
-        {:transform (gstring/format "rotate(%.4frad)" @rot)
+        {:transform (gstring/format "rotate(%.2fdeg)" @rot)
          :font-weight @weight}}
        letter])))
+
+(defn new-delta [attribute]
+  (case attribute
+    :rd (- 1 (rand 2))
+    :wd (- 1 (rand 2))))
 
 (defn logo-component []
   (let [letters
@@ -28,13 +33,13 @@
         update-letter
         (fn [letter-data]
           (-> letter-data
-              (assoc :rd (- 0.1 (rand 0.1)))
-              (assoc :wd (- 0.1 (rand 0.1)))))]
+              (assoc :rd (new-delta :rd))
+              (assoc :wd (new-delta :wd))))]
     (fn []
       (js/setTimeout
        (fn []
          (swap! letters #(map update-letter %)))
-       1000) ;; change spinnies every 10s
+       10000) ;; change spinnies every 10s
       (into
        [:div {:id "logo"}]
        (for [letter-data @letters]
