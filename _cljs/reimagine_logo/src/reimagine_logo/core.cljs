@@ -5,6 +5,8 @@
             [goog.string.format]
             [goog.dom.fullscreen :refer [requestFullScreen]]))
 
+(defonce fps 60)
+
 (defn rand-attribute-val [attribute]
   (let [[min max]
         (case attribute
@@ -13,10 +15,27 @@
           :weight [100 900])]
     (+ min (rand (- max min)))))
 
-(defn init-animation-params [attribute]
-  {:initial (rand-attribute-val attribute)
-   :final (rand-attribute-val attribute)
-   :num-steps (rand-int 60)})
+(defn easing-fn [{:keys [step initial final num-steps]}]
+  (->> (/ step num-steps)
+       (ease-in-out transition-elastic)
+       (* (- final initial))
+       (+ initial)))
+
+(defn initial-animation-state []
+  (into {:step 0}
+        (map (juxt identity (fn [attr]
+                              {:initial (rand-attribute-val attr)
+                               :final (rand-attribute-val attr)
+                               :num-steps (rand-int (* fps 10))}))
+             [:angle :size :weight])))
+
+(defn new-animation-state [state]
+  (into {:step 0}
+        (map (juxt identity (fn [attr]
+                              {:initial (easing-fn state)
+                               :final (rand-attribute-val attr)
+                               :num-steps (rand-int (* fps 10))}))
+             [:angle :size :weight])))
 
 (defn value->css [attribute value]
   (case attribute
@@ -24,22 +43,14 @@
     :size {:font-size (gstring/format "%.2fvmin" value)}
     :weight {:font-weight value}))
 
-(defn easing-fn [step {:keys [initial final num-steps]}]
-   (->> (/ step num-steps)
-        (ease-in-out transition-elastic)
-        (* (- final initial))
-        (+ initial)))
-
 (defn letter-component [letter]
-  (let [step (r/atom 0)
-        animation-params
-        (map (juxt identity init-animation-params) [:angle :size :weight])]
+  (let [animation-state (r/atom (initial-animation-state))]
     (fn []
-      (js/setTimeout #(swap! step inc) (/ 1000 60)) ;; 60fps
+      (js/setTimeout (fn [] (swap! animation-state update :step inc)) (/ 1000 fps))
       ^{:key letter}
       [:div.letter
        {:style
-        (into {} (map (fn [[attr anim-params]] (value->css attr (easing-fn @step anim-params))) animation-params))}
+        (into {} (map (fn [[attr anim-params]] (value->css attr (easing-fn anim-params))) (dissoc @animation-state :step)))}
        letter])))
 
 (defn logo-component []
