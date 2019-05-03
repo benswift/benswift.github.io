@@ -21,21 +21,24 @@
        (* (- final initial))
        (+ initial)))
 
-(defn initial-animation-state []
+(defn animation-state-new []
   (into {:step 0}
         (map (juxt identity (fn [attr]
                               {:initial (rand-attribute-val attr)
                                :final (rand-attribute-val attr)
-                               :num-steps (rand-int (* fps 10))}))
+                               :num-steps (min fps (rand-int (* fps 10)))}))
              [:angle :size :weight])))
 
-(defn new-animation-state [state]
-  (into {:step 0}
-        (map (juxt identity (fn [attr]
-                              {:initial (easing-fn state)
-                               :final (rand-attribute-val attr)
-                               :num-steps (rand-int (* fps 10))}))
-             [:angle :size :weight])))
+(defn animation-state-shuffle [old-state]
+  ;; return a new state, but with the :initial values taken from the :final
+  ;; values from the old state
+  (reduce (fn [coll [attr attr-map]]
+            (conj (if (= attr :step)
+                    {:step 0}
+                    {attr (assoc attr-map :initial (get-in old-state [attr :final]))})
+                  coll))
+          {}
+          (animation-state-new)))
 
 (defn value->css [attribute value]
   (case attribute
@@ -44,13 +47,17 @@
     :weight {:font-weight value}))
 
 (defn letter-component [letter]
-  (let [animation-state (r/atom (initial-animation-state))]
+  (let [animation-state (r/atom (animation-state-new))]
     (fn []
-      (js/setTimeout (fn [] (swap! animation-state update :step inc)) (/ 1000 fps))
+      (js/setTimeout #(swap! animation-state update :step inc) (/ 1000 fps))
+      (js/console.log letter (:step @animation-state) (easing-fn (:angle @animation-state)))
       ^{:key letter}
       [:div.letter
        {:style
-        (into {} (map (fn [[attr anim-params]] (value->css attr (easing-fn anim-params))) (dissoc @animation-state :step)))}
+        (into {}
+              (map (fn [[attr anim-params]]
+                     (value->css attr (easing-fn anim-params)))
+                   (dissoc @animation-state :step)))}
        letter])))
 
 (defn logo-component []
