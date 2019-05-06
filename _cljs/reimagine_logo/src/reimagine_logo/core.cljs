@@ -19,7 +19,8 @@
   (case attribute
     :angle {:transform (gstring/format "rotate(%.2fdeg)" value)}
     :size {:font-size (gstring/format "%.2fvmin" value)}
-    :weight {:font-weight value}))
+    ;; should be :font-weight for browsers which can't handle the variable fonts
+    :weight {:font-variation-settings (gstring/format "'wght' %.2f" value)}))
 
 (defn easing-fn [step {:keys [initial final num-steps]}]
   (->> (/ step num-steps)
