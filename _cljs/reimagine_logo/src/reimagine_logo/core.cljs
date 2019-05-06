@@ -61,7 +61,7 @@
        letter])))
 
 (defn logo-component []
-  (let [letters "R"]
+  (let [letters "REIMAGINE"]
     (fn []
       (into
        [:div {:id "logo"}]
