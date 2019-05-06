@@ -55,8 +55,17 @@
 (defn letter-component [letter]
   (let [animation-state (r/atom (animation-state-new))]
     (fn []
-      (js/setTimeout #(swap! animation-state update :step inc) (/ 1000 fps))
-      (js/console.log (:step @animation-state))
+      (if (trigger-shuffle? animation-state)
+        ;; wait for at least 10s, then shuffle the animation
+        (js/setTimeout
+         #(do
+            (js/console.log "triggering!")
+            (swap! animation-state animation-state-shuffle))
+         (+ 10 (rand 20)))
+        ;; schedule next "step" animation frame
+        (js/setTimeout
+         #(swap! animation-state update :step inc)
+         (/ 1000 fps)))
       ^{:key letter}
       [:div.letter
        {:style
