@@ -15,6 +15,12 @@
           :weight [100 900])]
     (+ min (rand (- max min)))))
 
+(defn value->css [attribute value]
+  (case attribute
+    :angle {:transform (gstring/format "rotate(%.2fdeg)" value)}
+    :size {:font-size (gstring/format "%.2fvmin" value)}
+    :weight {:font-weight value}))
+
 (defn easing-fn [step {:keys [initial final num-steps]}]
   (->> (/ step num-steps)
        (ease-in-out transition-elastic)
@@ -31,7 +37,7 @@
 
 (defn trigger-shuffle? [state]
   "is the current step more than double the max number of steps?"
-  (> (:step state)
+  (> (* 4 (:step state))
      (apply max (map #(get-in state [% :num-steps])
                      [:angle :size :weight]))))
 
@@ -46,26 +52,15 @@
           {}
           (animation-state-new)))
 
-(defn value->css [attribute value]
-  (case attribute
-    :angle {:transform (gstring/format "rotate(%.2fdeg)" value)}
-    :size {:font-size (gstring/format "%.2fvmin" value)}
-    :weight {:font-weight value}))
-
 (defn letter-component [letter]
   (let [animation-state (r/atom (animation-state-new))]
     (fn []
-      (if (trigger-shuffle? animation-state)
-        ;; wait for at least 10s, then shuffle the animation
-        (js/setTimeout
-         #(do
-            (js/console.log "triggering!")
-            (swap! animation-state animation-state-shuffle))
-         (+ 10 (rand 20)))
-        ;; schedule next "step" animation frame
-        (js/setTimeout
-         #(swap! animation-state update :step inc)
-         (/ 1000 fps)))
+      (when (trigger-shuffle? @animation-state)
+        (swap! animation-state animation-state-shuffle))
+      ;; schedule next "step" animation frame
+      (js/setTimeout
+       #(swap! animation-state update :step inc)
+       (/ 1000 fps))
       ^{:key letter}
       [:div.letter
        {:style
