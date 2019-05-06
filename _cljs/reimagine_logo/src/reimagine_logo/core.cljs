@@ -5,7 +5,12 @@
             [goog.string.format]
             [goog.dom.fullscreen :refer [requestFullScreen]]))
 
-(defonce fps 60)
+;; all times in seconds
+(defonce animation-params
+  {:fps 60
+   :delay-factor 4
+   :min-duration 10
+   :max-duration 60})
 
 (defn rand-attribute-val [attribute]
   (let [[min max]
@@ -33,12 +38,14 @@
         (map (juxt identity (fn [attr]
                               {:initial (rand-attribute-val attr)
                                :final (rand-attribute-val attr)
-                               :num-steps (+ fps (rand-int (* fps 10)))}))
+                               :num-steps
+                               (let [{:keys [fps min-duration max-duration]} animation-params]
+                                 (+ min-duration (rand-int (* fps (- max-duration min-duration)))))}))
              [:angle :size :weight])))
 
 (defn trigger-shuffle? [state]
   "is the current step more than double the max number of steps?"
-  (> (* 4 (:step state))
+  (> (* (:delay-factor animation-params) (:step state))
      (apply max (map #(get-in state [% :num-steps])
                      [:angle :size :weight]))))
 
@@ -61,7 +68,7 @@
       ;; schedule next "step" animation frame
       (js/setTimeout
        #(swap! animation-state update :step inc)
-       (/ 1000 fps))
+       (/ 1000 (:fps animation-params)))
       ^{:key letter}
       [:div.letter
        {:style
