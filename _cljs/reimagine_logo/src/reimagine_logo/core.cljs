@@ -26,7 +26,7 @@
         (map (juxt identity (fn [attr]
                               {:initial (rand-attribute-val attr)
                                :final (rand-attribute-val attr)
-                               :num-steps (min fps (rand-int (* fps 10)))}))
+                               :num-steps (max fps (rand-int (* fps 10)))}))
              [:angle :size :weight])))
 
 (defn animation-state-shuffle [old-state]
