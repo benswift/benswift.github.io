@@ -15,7 +15,7 @@
           :weight [100 900])]
     (+ min (rand (- max min)))))
 
-(defn easing-fn [{:keys [step initial final num-steps]}]
+(defn easing-fn [step {:keys [initial final num-steps]}]
   (->> (/ step num-steps)
        (ease-in-out transition-elastic)
        (* (- final initial))
@@ -50,18 +50,18 @@
   (let [animation-state (r/atom (animation-state-new))]
     (fn []
       (js/setTimeout #(swap! animation-state update :step inc) (/ 1000 fps))
-      (js/console.log letter (:step @animation-state) (easing-fn (:angle @animation-state)))
+      (js/console.log (:step @animation-state))
       ^{:key letter}
       [:div.letter
        {:style
         (into {}
               (map (fn [[attr anim-params]]
-                     (value->css attr (easing-fn anim-params)))
+                     (value->css attr (easing-fn (:step @animation-state) anim-params)))
                    (dissoc @animation-state :step)))}
        letter])))
 
 (defn logo-component []
-  (let [letters "REIMAGINE"]
+  (let [letters "R"]
     (fn []
       (into
        [:div {:id "logo"}]
