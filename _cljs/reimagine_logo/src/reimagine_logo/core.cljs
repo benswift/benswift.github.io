@@ -26,8 +26,14 @@
         (map (juxt identity (fn [attr]
                               {:initial (rand-attribute-val attr)
                                :final (rand-attribute-val attr)
-                               :num-steps (max fps (rand-int (* fps 10)))}))
+                               :num-steps (+ fps (rand-int (* fps 10)))}))
              [:angle :size :weight])))
+
+(defn trigger-shuffle? [state]
+  "is the current step more than double the max number of steps?"
+  (> (:step state)
+     (apply max (map #(get-in state [% :num-steps])
+                     [:angle :size :weight]))))
 
 (defn animation-state-shuffle [old-state]
   ;; return a new state, but with the :initial values taken from the :final
