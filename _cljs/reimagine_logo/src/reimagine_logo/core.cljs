@@ -10,7 +10,7 @@
 (defn rand-attribute-val [attribute]
   (let [[min max]
         (case attribute
-          :angle [-3600 3600]
+          :angle [-720 720]
           :size [5 25]
           :weight [100 900])]
     (+ min (rand (- max min)))))
