@@ -9,7 +9,7 @@
 (defonce animation-params
   {:fps 60
    :delay-factor 4
-   :min-duration 10
+   :min-duration 1
    :max-duration 60})
 
 (defn rand-attribute-val [attribute]
