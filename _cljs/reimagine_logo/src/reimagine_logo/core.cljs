@@ -40,7 +40,7 @@
                                :final (rand-attribute-val attr)
                                :num-steps
                                (let [{:keys [fps min-duration max-duration]} animation-params]
-                                 (+ min-duration (rand-int (* fps (- max-duration min-duration)))))}))
+                                 (* fps (+ min-duration (rand-int (* fps (- max-duration min-duration))))))}))
              [:angle :size :weight])))
 
 (defn trigger-shuffle? [state]
