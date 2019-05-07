@@ -40,14 +40,15 @@
                                :final (rand-attribute-val attr)
                                :num-steps
                                (let [{:keys [fps min-duration max-duration]} animation-params]
-                                 (* fps (+ min-duration (rand-int (* fps (- max-duration min-duration))))))}))
+                                 (* fps (+ min-duration (rand-int (- max-duration min-duration)))))}))
              [:angle :size :weight])))
 
 (defn trigger-shuffle? [state]
   "is the current step more than double the max number of steps?"
-  (> (* (:delay-factor animation-params) (:step state))
-     (apply max (map #(get-in state [% :num-steps])
-                     [:angle :size :weight]))))
+  (> (:step state)
+     (* (:delay-factor animation-params)
+        (apply max (map #(get-in state [% :num-steps])
+                        [:angle :size :weight])))))
 
 (defn animation-state-shuffle [old-state]
   ;; return a new state, but with the :initial values taken from the :final
