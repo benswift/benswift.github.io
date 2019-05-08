@@ -7,7 +7,7 @@
 
 ;; all times in seconds
 (defonce animation-params
-  {:fps 60
+  {:fps 30
    :min-duration 1
    :max-duration 60
    :min-delay 1
