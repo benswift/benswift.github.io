@@ -8,9 +8,10 @@
 ;; all times in seconds
 (defonce animation-params
   {:fps 60
-   :delay-factor 4
    :min-duration 1
-   :max-duration 60})
+   :max-duration 60
+   :min-delay 1
+   :max-delay 60})
 
 (defn rand-attribute-val [attribute]
   (let [[min max]
@@ -43,12 +44,13 @@
                                  (* fps (+ min-duration (rand-int (- max-duration min-duration)))))}))
              [:angle :size :weight])))
 
-(defn trigger-shuffle? [state]
-  "is the current step more than double the max number of steps?"
-  (> (:step state)
-     (* (:delay-factor animation-params)
-        (apply max (map #(get-in state [% :num-steps])
-                        [:angle :size :weight])))))
+(defn frames-to-delay [state]
+  (let [max-steps (apply max (map #(get-in state [% :num-steps])
+                                  [:angle :size :weight]))]
+    (if (< (:step state) (* 1.1 max-steps)) ;; extra .1 because elastic transition
+      1
+      (let [{:keys [min-delay max-delay]} animation-params]
+        (+ min-delay (rand-int (- max-delay min-delay)))))))
 
 (defn animation-state-shuffle [old-state]
   ;; return a new state, but with the :initial values taken from the :final
@@ -64,12 +66,13 @@
 (defn letter-component [letter]
   (let [animation-state (r/atom (animation-state-new))]
     (fn []
-      (when (trigger-shuffle? @animation-state)
-        (swap! animation-state animation-state-shuffle))
-      ;; schedule next "step" animation frame
-      (js/setTimeout
-       #(swap! animation-state update :step inc)
-       (/ 1000 (:fps animation-params)))
+      ;; schedule next animation frame
+      (let [delay-frames (frames-to-delay @animation-state)]
+        (js/setTimeout
+         (if (= delay-frames 1)
+           #(swap! animation-state update :step inc)
+           #(swap! animation-state animation-state-shuffle))
+         (/ 1000 (:fps animation-params))))
       ^{:key letter}
       [:div.letter
        {:style
