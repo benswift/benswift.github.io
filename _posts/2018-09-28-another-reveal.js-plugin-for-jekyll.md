@@ -66,14 +66,14 @@ tweak to suit your own presentation.
 <!-- load the reveal.js css & js (assuming you've put it in assets/)-->
 <link
   rel="stylesheet"
-  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/reveal.css"
+  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.8.0/css/reveal.css"
 />
 <link
   rel="stylesheet"
-  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/css/theme/white.css"
+  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.8.0/css/theme/white.css"
 />
 <script
-  src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.7.0/js/reveal.js"
+  src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.8.0/js/reveal.js"
   type="text/javascript"
 ></script>
 
