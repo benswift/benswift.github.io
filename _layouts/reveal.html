@@ -10,22 +10,34 @@
 
 	<script src="{{site.baseurl}}/assets/reveal.js-3.8.0/lib/js/head.min.js"></script>
 	<script src="{{site.baseurl}}/assets/reveal.js-3.8.0/js/reveal.js"></script>
-    <script>
+	<script>
 	 // this is the reveal config
-     Reveal.initialize({
-       center: false,
-       controls: false,
-       transition: 'fade',
-       width: '100%',
-       height: '100%',
-       margin: 0,
-       history: true,
-       slideNumber: true,
+	 Reveal.initialize({
+	   center: false,
+	   controls: false,
+	   transition: 'fade',
+	   width: '100%',
+	   height: '100%',
+	   margin: 0,
+	   history: true,
+	   slideNumber: true,
+
 	   math: {
 		 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
 		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
-	   }
-     });
-    </script>
+	   },
+
+       dependencies: [
+         { src: '/assets/reveal.js-3.8.0/plugin/chalkboard/chalkboard.js' },
+       ],
+
+       keyboard: {
+         67: function() { RevealChalkboard.toggleNotesCanvas() }, // toggle notes canvas when 'c' is pressed
+         66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+         46: function() { RevealChalkboard.clear() }, // clear chalkboard when 'DEL' is pressed
+         8: function() { RevealChalkboard.reset() } // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+	   },
+	 });
+	</script>
   </body>
 </html>
