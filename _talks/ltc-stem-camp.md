@@ -25,19 +25,25 @@ enough about me...
 
 tell me about **you**
 
-<!-- musicians -->
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/tadas-mikuckis-20931-unsplash.jpg" heading="musicians?" %}
 
-<!-- mathematicians -->
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/roman-mager-59976-unsplash.jpg" heading="mathematicians?" %}
 
-<!-- coders -->
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/fatos-bytyqi-535528-unsplash.jpg" heading="coders?" %}
 
-<!-- no judgement! -->
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/aaron-burden-82797-unsplash.jpg" %}
 
-<!-- **discuss**: is there a connection? -->
+{% include slides/talk.html %}
 
-<!-- **discuss**: what are computer programs good at? -->
+**discuss**: is there a connection?
 
-<!-- **discuss**: what would a song performed by a computer program sound like? -->
+{% include slides/talk.html %}
+
+**discuss**: what are computer programs good at?
+
+{% include slides/talk.html %}
+
+**discuss**: what would a song performed by a computer program sound like?
 
 ## outline
 
@@ -47,10 +53,8 @@ _low_-tech musical performance
 
 livecoding: _high_-tech musical performance
 
-{% include slides/background-image.html
-		   image="images/talks/pop-production-as-problem-solving/bieber.jpg"
-		   heading="what is music?"
-		   id="bieber" %}
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/diego-catto-423903-unsplash.jpg" heading="what
+is music?" %}
 
 {% include slides/impact.html %}
 
@@ -60,19 +64,20 @@ livecoding: _high_-tech musical performance
 
 a series of pitched "events" over time
 
-<!-- TODO maybe change this next one to a smug liberal? a bit more woke. -->
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/jonathan-safa-689951-unsplash.jpg" heading="pedantry alert." %}
 
 {% include slides/background-image.html
-		   image="images/talks/pop-production-as-problem-solving/alex-harvey-44062-unsplash.jpg"
-		   heading="pedantry alert!" %}
-
-## what is (pop) music?
+		   image="images/talks/pop-production-as-problem-solving/bieber.jpg"
+		   heading="what is (pop) music?"
+		   id="bieber" %}
 
 pop songs are characterised by:
 
-- catchy hooks
-- repetitive harmonic patterns (e.g. chord progressions)
-- processed/synthetic sounds (lots of computers involved in the production)
+catchy hooks
+
+repetitive harmonic patterns (e.g. chord progressions)
+
+processed/synthetic sounds (lots of computers involved in the production)
 
 {% include slides/impact.html %}
 
@@ -80,8 +85,8 @@ lots of **patterns**
 
 but how do we express them?
 
-{% include slides/background-image.html
-		   image="images/talks/pop-production-as-problem-solving/rawpixel-com-586684-unsplash.jpg" %}
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/marius-masalar-410695-unsplash.jpg"
+heading="the traditional way" %}
 
 ## "dimensions" of a musical note
 
@@ -89,29 +94,33 @@ but how do we express them?
 - pitch
 - loudness
 
-## time
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/aron-visuals-322314-unsplash.jpg" heading="time" %}
 
-TODO pic
+why is it important?
 
-- why is it important?
-- what aspects of the music does it influence?
-- how do we measure it?
+what aspects of the music does it influence?
+
+how do we measure it?
 
 {% include slides/background-image.html
 		   image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg" 
 		   heading="pitch" %}
 
-- why is it important?
-- what aspects of the music does it influence?
-- how do we measure it?
+why is it important?
+
+what aspects of the music does it influence?
+
+how do we measure it?
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/devin-edwards-776929-unsplash.jpg" heading="loudness" %}
 
-- why is it important?
-- what aspects of the music does it influence?
-- how do we measure it?
+why is it important?
 
-{% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="pitch" id="modelling-the-domain" %}
+what aspects of the music does it influence?
+
+how do we measure it?
+
+{% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" %}
 
 ## maths recap 1: functions
 
@@ -129,35 +138,38 @@ arithmetic which "wraps around"
 0, 1, 2, 0, 1, 2, 0, 1, 2, ... instead of 0, 1, 2, 3, 4, 5, 6, ...
 
 the modulus can be any integer, e.g.
-- 7 mod 4 is 3
-- 18 mod 7 is 1
+- 7 _mod_ 4 is 3
+- 18 _mod_ 7 is 1
 
-## example: clock
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/lukas-blazek-263122-unsplash.jpg" heading="example: clock" %}
 
-{% asset images/talks/ltc-stem-camp/Clock_group.svg alt="Clock"
-style="height:50vh;"%}
-
-graphic by _Spindled_ [CC BY-SA
-3.0](https://en.wikipedia.org/wiki/Modular_arithmetic#/media/File:Clock_group.svg)
-
+{:.center}
 # low-tech musical performance
 
-TODO patterns
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/jason-leung-1378422-unsplash.jpg" heading="patterns" %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/orlova-maria-1365053-unsplash.jpg" heading="are" %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/paul-talbot-704-unsplash.jpg" heading="everywhere" %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/jason-wong-392785-unsplash.jpg" heading="so
+let's find them" %}
 
 {% include slides/impact.html %}
 
 this bit is interactive
 
-Queen
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/laura-college-286844-unsplash.jpg"
+heading="Jaws theme" %}
 
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.jpg" heading="scales (yuck)" %}
 
-
-# livecoding
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/FreddyMercuryWembley.jpg" heading="We Will Rock You" %}
 
 {% include slides/background-image.html
 		   image="images/talks/pop-production-as-problem-solving/aditya-chinchure-494048-unsplash.jpg"
-		   heading="<a href=\"https://extemporelang.github.io/\">extempore</a>: a
-		   livecoding language" %}
+		   heading="livecoding" 
+		   id="livecoding" %}
 
 {% include slides/background-image.html
 		   image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
@@ -197,8 +209,6 @@ don't worry about the syntax, I'll explain enough for you to follow along
 		   image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
 		   heading="let's go!"
 		   id="crowdsourced-livecoding" %}
-
-# wrapping up
 
 ## what did we learn?
 
