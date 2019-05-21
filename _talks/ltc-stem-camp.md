@@ -239,3 +239,12 @@ if you're interested, let me know 😊
 
 {:.fragment}
 <https://benswift.me>
+
+<!-- things to get -->
+
+<!-- Wacom -->
+<!-- Maschine -->
+<!-- long HDMI cable -->
+<!-- other cables -->
+
+<!-- end things to get -->
