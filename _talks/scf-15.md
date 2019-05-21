@@ -1,4 +1,5 @@
 ---
+event: Supercomputing Frontiers '15
 title: "PIC Live: Real-time interactive programming in scientific simulation"
 date: "2015-05-18"
 layout: page

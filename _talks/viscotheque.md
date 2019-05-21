@@ -1,4 +1,5 @@
 ---
+event: ANU CS PhD Showcase
 title: "Engagement in Mobile Music"
 date: "2008-02-23"
 layout: page

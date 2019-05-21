@@ -1,4 +1,5 @@
 ---
+event: "LIVE: International Workshop on Live Programming"
 title: "Visual Code Annotations for Cyberphysical Programming"
 date: "2013-05-19"
 layout: page

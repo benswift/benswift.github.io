@@ -1,4 +1,5 @@
 ---
+event: Telopeal High School STEM Day
 title: Drawing like a 5-year-old
 permalink: /talks/p5-hour-of-code/
 date: "2017-09-06"

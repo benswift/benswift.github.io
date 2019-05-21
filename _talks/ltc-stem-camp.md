@@ -1,4 +1,5 @@
 ---
+event: Lake Tuggeranong College STEM Camp
 title: TBC
 date: "2019-05-22"
 permalink: /talks/tbc/

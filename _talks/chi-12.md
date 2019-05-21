@@ -1,4 +1,5 @@
 ---
+event: CHI '12
 title: "Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making"
 date: "2012-05-09"
 layout: page

@@ -1,4 +1,5 @@
 ---
+event: University of the Third Age (U3A)
 title: The World Since Google
 date: "2018-11-07"
 permalink: /talks/world-since-google/

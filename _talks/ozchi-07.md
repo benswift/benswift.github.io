@@ -1,4 +1,5 @@
 ---
+event: OzCHI '07
 title: "The Mind-Modulated Music Interface"
 date: "2007-11-29"
 layout: page

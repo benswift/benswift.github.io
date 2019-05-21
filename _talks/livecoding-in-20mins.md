@@ -1,4 +1,5 @@
 ---
+event: "Sound art & physical computing guest lecture"
 title: "Livecoding in 20mins"
 date: "2008-06-01"
 layout: page

@@ -1,4 +1,5 @@
 ---
+event: COMP1720 Guest Lecture 2017
 title: The creative potential of random
 permalink: /talks/creative-potential-of-random/
 date: "2017-08-17"

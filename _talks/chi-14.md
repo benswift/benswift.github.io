@@ -1,4 +1,5 @@
 ---
+event: CHI '14
 title: "Coding Livecoding"
 date: "2014-04-29"
 layout: page

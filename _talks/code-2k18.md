@@ -1,4 +1,5 @@
 ---
+event: "code 2k18: A Media Conference of Platforms, Devices and Screens"
 title: "The ANU Laptop Ensemble"
 date: "2018-11-19"
 permalink: /talks/code-2k18/

@@ -1,4 +1,5 @@
 ---
+event: National Youth Science Forum '19
 title: Pop-production as problem-solving
 date: "2019-01-11"
 permalink: /talks/pop-production/

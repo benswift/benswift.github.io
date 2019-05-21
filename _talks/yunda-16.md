@@ -1,4 +1,5 @@
 ---
+event: Yunnan University, China
 title: "Live coding: bringing scientific computing to life"
 date: "2015-06-16"
 layout: page

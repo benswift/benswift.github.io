@@ -1,5 +1,6 @@
 ---
-title: "Distributed Performance in Livecoding"
+event: Australasian Computer Music Conference '09
+title: Distributed Performance in Livecoding
 date: "2009-07-03"
 layout: page
 permalink: /talks/acmc-09/

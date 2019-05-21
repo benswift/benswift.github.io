@@ -1,4 +1,5 @@
 ---
+event: OzCHI '10
 title: "Engagement Networks in Social Music-making"
 date: "2010-11-23"
 layout: page
