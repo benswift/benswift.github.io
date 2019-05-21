@@ -74,6 +74,9 @@
 	h1 {
 		font-size: 2rem;
 		font-weight: 900;
+		border-bottom-color: $highlight-color;
+		border-bottom-style: solid;
+		border-bottom-width: 5px;
 	}
 	h2 {
 		font-size: 1.6rem;
@@ -95,11 +98,6 @@
 	}
 
 	// title slide
-	.talk-title {
-        border-bottom-color: $highlight-color;
-        border-bottom-style: solid;
-        border-bottom-width: 5px;
-	}
 	.talk-date {
 		font-style: italic;
 		font-size: 0.8em;
