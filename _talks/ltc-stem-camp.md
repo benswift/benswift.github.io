@@ -11,7 +11,13 @@ summary: >-
 
 {% include slides/title.html %}
 
-<!-- LTC photo -->
+{% include slides/impact.html %}
+
+can y'all keep a secret?
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-group.jpg" %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/granite-tors.jpg" %}
 
