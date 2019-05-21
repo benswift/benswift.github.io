@@ -1,6 +1,6 @@
 ---
 event: Lake Tuggeranong College STEM Camp
-title: Finding & following the patterns in music
+title: Pattern-hunting in pop music
 date: "2019-05-22"
 permalink: /talks/ltc-stem-camp/
 summary: >-
