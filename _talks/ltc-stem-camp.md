@@ -1,16 +1,12 @@
 ---
 event: Lake Tuggeranong College STEM Camp
-title: Pattern-hunting in pop music
+title: Musical instructions
 date: "2019-05-22"
 permalink: /talks/ltc-stem-camp/
 summary: >-
-  Computers are really good at repeating the same sequence of actions
-  (following a pattern): they never get bored, and they never make mistakes. The
-  tricky part is finding the right sequence of instructions (the right pattern)
-  so that the work that the computer does is useful--especially in music.
+  Computers are really good at following instructions; they never get bored, and they never make mistakes. The tricky part is finding the right sequence of instructions (the right pattern) so that the work that the computer does is useful. How does this even work with music?
 
-  An interactive presentation/workshop given at the [Lake Tuggeranong
-  College](http://www.ltc.act.edu.au) STEM camp.
+  An interactive presentation/workshop given at the [Lake Tuggeranong College](http://www.ltc.act.edu.au) STEM camp.
 ---
 
 {% include slides/title.html %}
@@ -35,23 +31,22 @@ tell me about **you**
 
 {% include slides/talk.html %}
 
-**discuss**: is there a connection?
+{:.fragment}
+music, maths, computers: what's the connection?
 
-{% include slides/talk.html %}
+{:.fragment}
+what are computer programs good at?
 
-**discuss**: what are computer programs good at?
-
-{% include slides/talk.html %}
-
-**discuss**: what would a song performed by a computer program sound like?
+{:.fragment}
+what would a song performed by a computer program sound like?
 
 ## outline
 
 what is (pop) music?
 
-_low_-tech musical performance
+activity: (_low-tech_ musical instructions)
 
-livecoding: _high_-tech musical performance
+livecoding: (_high-tech_ musical instructions)
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/diego-catto-423903-unsplash.jpg" heading="what
 is music?" %}
@@ -71,12 +66,13 @@ a series of pitched "events" over time
 		   heading="what is (pop) music?"
 		   id="bieber" %}
 
-pop songs are characterised by:
-
+{:.fragment}
 catchy hooks
 
+{:.fragment}
 repetitive harmonic patterns (e.g. chord progressions)
 
+{:.fragment}
 processed/synthetic sounds (lots of computers involved in the production)
 
 {% include slides/impact.html %}
@@ -90,15 +86,15 @@ heading="the traditional way" %}
 
 ## "dimensions" of a musical note
 
-- time
-- pitch
-- loudness
+1. time
+2. pitch
+3. loudness
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/aron-visuals-322314-unsplash.jpg" heading="time" %}
 
-why is it important?
-
 what aspects of the music does it influence?
+
+why is it important?
 
 how do we measure it?
 
@@ -106,21 +102,25 @@ how do we measure it?
 		   image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg" 
 		   heading="pitch" %}
 
-why is it important?
-
 what aspects of the music does it influence?
+
+why is it important?
 
 how do we measure it?
 
-{% include slides/background-image.html image="images/talks/ltc-stem-camp/devin-edwards-776929-unsplash.jpg" heading="loudness" %}
-
-why is it important?
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/jason-rosewell-60014-unsplash.jpg" heading="loudness" %}
 
 what aspects of the music does it influence?
+
+why is it important?
 
 how do we measure it?
 
 {% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" %}
+
+remember: music is a series of musical events
+
+each event has a time, a pitch and a loudness
 
 ## maths recap 1: functions
 
@@ -128,7 +128,7 @@ function _f(x, y)_ takes two parameters/arguments and returns a result
 
 e.g. _f(x, y)_ = _8x_ + _2y_
 
-basically: parameters are _input_, the function does something with the inputs
+parameters are _input_, the function does something with the inputs
 to produce an _output_
 
 ## maths recap 2: modular arithmetic
@@ -139,12 +139,9 @@ arithmetic which "wraps around"
 
 the modulus can be any integer, e.g.
 - 7 _mod_ 4 is 3
-- 18 _mod_ 7 is 1
+- 18 _mod_ 7 is 4
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/lukas-blazek-263122-unsplash.jpg" heading="example: clock" %}
-
-{:.center}
-# low-tech musical performance
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/jason-leung-1378422-unsplash.jpg" heading="patterns" %}
 
@@ -157,14 +154,49 @@ let's find them" %}
 
 {% include slides/impact.html %}
 
-this bit is interactive
+**activity**: musical instructions
 
-{% include slides/background-image.html image="images/talks/ltc-stem-camp/laura-college-286844-unsplash.jpg"
-heading="Jaws theme" %}
+## how to play
 
-{% include slides/background-image.html image="images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.jpg" heading="scales (yuck)" %}
+split into pairs
+
+I'll tell one person (person A) the name of a song
+
+person A will write down (in _English_) instructions for how to play the song (**no conventional music notation allowed**)
+
+person B will read the instructions, "sing" them, and try to guess what the song is
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.jpg" heading="scales (just a warm-up)" %}
+
+{% include slides/impact.html %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/laura-college-286844-unsplash.jpg" heading="Jaws" %}
+
+{% include slides/impact.html %}
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/FreddyMercuryWembley.jpg" heading="We Will Rock You" %}
+
+_remember_: you have to describe the instruments, **not** the vocal track
+
+{% include slides/impact.html %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/coldplay-clocks.jpeg" %}
+
+{% include slides/impact.html %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/this-is-america.jpeg" heading="This is America" %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/bady-qb-1476403-unsplash.jpg" heading="your choice of song" %}
+
+{% include slides/talk.html %}
+
+what was the hardest part?
+
+what was the easiest?
+
+was it easier/harder than you expected?
+
+how would you do it differently next time?
 
 {% include slides/background-image.html
 		   image="images/talks/pop-production-as-problem-solving/aditya-chinchure-494048-unsplash.jpg"
@@ -177,25 +209,31 @@ heading="Jaws theme" %}
 
 ## what _I'm_ gonna do
 
-- learn a new song (by ear!)
-- figure out how to turn it into code
-- find a bunch of sounds which sound (approximately) like the recording
-- lay down a vocal track (maybe)
-- make the whole process make sense to you guys
+learn a new song (by ear!)
+
+figure out how to turn it into code
+
+find a bunch of sounds which sound (approximately) like the recording
+
+lay down a vocal track (maybe)
+
+make the whole process make sense to you guys
 
 ## what _you're_ gonna do
 
-- help me choose the song
-- be kind when I make mistakes
-- clap politely at the end (even if I flame out)
+help me choose the song
 
-{% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.jpg" heading="I'm old..." %}
+be kind when I make mistakes
 
-## reminder: parameterisation
+clap politely at the end (even if I flame out)
 
-- **time** (in beats), e.g. 1, 2, 3, 4, 5, 6, 7, 8
-- **pitch** (in MIDI note numbers), e.g. middle C as 60, C# as 61, etc.
-- **loudness** (0 is silent, 127 is super loud)
+{% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="reminder: domain model" %}
+
+**time** (in beats), e.g. 0, 1, 2, 3, 4, 5, 6, 7, 8
+
+**pitch** (in MIDI note numbers), e.g. middle C as 60, C# as 61, etc.
+
+**loudness** (0 is silent, 127 is super loud)
 
 ## [extempore](https://extemporelang.github.io/): a livecoding _language_
 
@@ -203,7 +241,20 @@ heading="Jaws theme" %}
 for musical livecoding (written [Andrew Sorensen](https://twitter.com/digego)
 and [me]({{site.baseurl}}{% link index.md %}))
 
+`mplay` is the key function:
+
+```xtlang
+;;                pitch loud duration   instrument
+(mplay *midi-out* 60    80   (* .5 dur) 1)
+```
+
 don't worry about the syntax, I'll explain enough for you to follow along
+
+{% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.jpg" heading="I'm old..." %}
+
+{% include slides/background-image.html
+image="images/talks/ltc-stem-camp/lee-campbell-123238-unsplash.jpg"
+heading="let's choose a song" %}
 
 {% include slides/background-image.html
 		   image="images/talks/pop-production-as-problem-solving/rob-potter-350100-unsplash.jpg"
@@ -213,6 +264,8 @@ don't worry about the syntax, I'll explain enough for you to follow along
 ## what did we learn?
 
 pop music isn't black magic, it's a domain with lots of structure/patterns
+
+we can write instructions which express those patterns
 
 computers/code are _really useful_ for modelling/exploring this stuff
 
@@ -246,5 +299,6 @@ if you're interested, let me know 😊
 <!-- Maschine -->
 <!-- long HDMI cable -->
 <!-- other cables -->
+<!-- pens & paper? -->
 
 <!-- end things to get -->
