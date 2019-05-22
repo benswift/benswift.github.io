@@ -19,8 +19,6 @@ can y'all keep a secret?
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
 
-{% include slides/background-image.html image="images/talks/ltc-stem-camp/granite-tors.jpg" %}
-
 {% include slides/impact.html %}
 
 enough about me...
