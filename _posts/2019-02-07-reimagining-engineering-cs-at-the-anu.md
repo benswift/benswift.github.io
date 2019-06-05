@@ -59,7 +59,7 @@ Humanities.
 
 As Elanor says in the video above, we don't even know what tomorrow's problems
 are yet; so we need problem _finders_, not just problem _solvers_. Art and
-artists have a key role to play in this (just ask Chekov).
+artists have a key role to play in this (just ask Chekhov).
 
 ### Why are you the best person to do this?
 
@@ -166,7 +166,7 @@ the fields of creative technology, digital art, music and design: have a look at
 
 #### ...in education?
 
-That Chekov quote above really nails it. For some students, being asked to make
+That Chekhov quote above really nails it. For some students, being asked to make
 something creative/artistic is what it takes to flick the switch to go beyond
 the "what boxes do I need to tick for me to get a P/CR/D/HD" mindset to actually
 asking the right questions. I see this sometimes in
