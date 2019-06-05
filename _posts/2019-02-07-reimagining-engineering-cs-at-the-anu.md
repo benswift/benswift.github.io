@@ -247,6 +247,11 @@ are in CS/Engineering Schools, or at least in design schools.
 > [SensiLab](https://sensilab.monash.edu) is a technology-driven, design-focused
 > research lab based at Monash University in Melbourne, Australia.
 
+> The [Creativity & Cognition Studios](https://www.creativityandcognition.com)
+> at the University of Technology Sydney is an internationally recognised
+> multi-disciplinary environment for the advancement and understanding of
+> practice in digital media and the arts.
+
 > NYU's [ITP](https://tisch.nyu.edu/itp) (Interactive Telecommunications
 > Program) is a two-year graduate program located in the Tisch School of the
 > Arts whose mission is to explore the imaginative use of communications
