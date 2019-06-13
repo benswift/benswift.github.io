@@ -235,6 +235,11 @@ Here's a few places, including what each place says about their goals (from the
 marketing copy on their own website). Many (but not all) of these labs/groups
 are in CS/Engineering Schools, or at least in design schools.
 
+> The Stanford [Center for Computer Research in Music and
+> Acoustics](<(https://ccrma.stanford.edu)>) (CCRMA) is a multi-disciplinary
+> facility where composers and researchers work together using computer-based
+> technology both as an artistic medium and as a research tool.
+
 > The [MIT Media Lab](https://www.media.mit.edu) is an interdisciplinary
 > research lab that encourages the unconventional mixing and matching of
 > seemingly disparate research areas.
@@ -264,11 +269,6 @@ are in CS/Engineering Schools, or at least in design schools.
 > The [Embodied AudioVisual Interaction
 > (EAVI)](http://eavi.goldsmithsdigital.com) group at Goldsmiths is a research
 > group focused on embodied interaction with sound and image.
-
-> The Stanford [Center for Computer Research in Music and
-> Acoustics](<(https://ccrma.stanford.edu)>) (CCRMA) is a multi-disciplinary
-> facility where composers and researchers work together using computer-based
-> technology both as an artistic medium and as a research tool.
 
 > The [School for Poetic Computation](http://sfpc.io) is an artist run school in
 > New York that was founded in 2013. A small group of students and faculty work
