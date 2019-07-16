@@ -13,24 +13,19 @@ module Jekyll
 
     def revealify(html)
 
-      # parse content
-      content = Nokogiri::HTML.fragment(html)
-
-      # create an empty node
-      reveal_div = Nokogiri::HTML.fragment('<div class="reveal"><div class="slides"></div></div>', 'UTF-8')
+      # parse content (wrapped in the reveal > slides divs)
+      reveal_div = Nokogiri::HTML.fragment("<div class=\"reveal\"><div class=\"slides\">#{html}</div></div>", 'UTF-8')
       slides_div = reveal_div.search('.slides').first
 
-      all_elements = content.xpath("*")
-
-      unless all_elements.first.matches? "section,h1,h2,hr"
+      unless slides_div.first_element_child.matches? "section,h1,h2,hr"
         raise "reveal files must start with <section>, <h1>, <h2> or <hr>, not #{all_elements.first.name} (in \"#{@context.registers[:page]["path"]}\")"
       end
 
-      all_elements.each do |element|
+      slides_div.element_children.each do | element |
 
         # <section> elements should be passed through as-is
         if element.matches? "section"
-          slides_div.add_child(element.dup)
+          slides_div.add_child(element)
 
         else
           # on "split" elements (<h1>, <h2>, <hr>)
@@ -47,8 +42,11 @@ module Jekyll
 
           # add the element to the current <section> (i.e. the current slide)
           # unless it's just an <hr> (which are used for splitting only)
-          current_section = slides_div.last_element_child
-          current_section.add_child(element.dup) unless element.matches? "hr"
+          if element.matches? "hr"
+            element.unlink
+          else
+            slides_div.last_element_child.add_child(element)
+          end
         end
 
       end
