@@ -15,7 +15,7 @@ generate-blog:
 	bundle exec jekyll build
 
 commit-all: generate-blog
-	cd $(BASE_HTML_DIR) && git add . && git commit -m "update blog"
+	cd $(BASE_HTML_DIR) && git add . && git commit -m "update blog (built from $(git rev-parse --short HEAD) on source branch)"
 
 push: commit-all
 	cd $(BASE_HTML_DIR) && git push origin master
