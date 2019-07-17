@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In-place XML tree mutation for Jekyll productivity
-date: 2019-07-17 09:13 +1000
+tags: web
 ---
 
 I wrote a [reveal.js]({{site.baseurl}}{% link
