@@ -13,17 +13,18 @@ really enjoy it, too :)
 I'm currently teaching three courses in the [ANU Research School of Computer
 Science](https://cs.anu.edu.au/courses/comp2300/)
 
-- in **Semester 1 (Feb-Jun)** I teach [COMP2300: Computer Organisation and
-  Program Execution](https://cs.anu.edu.au/courses/comp2300/) (_note_: I'm on
-  parental leave for S1 2019, so I won't be teaching the course this time
-  around---but the course will still be the same)
+- [COMP2300: Computer Organisation and Program
+  Execution](https://cs.anu.edu.au/courses/comp2300/) **Semester 1 (Feb-Jun)**
 
-- in **Semester 2 (Jul-Nov)** I teach [COMP1720: Art & Interaction in New
-  Media](https://cs.anu.edu.au/courses/comp1720/)
+- [COMP1720: Art & Interaction in New
+  Media](https://cs.anu.edu.au/courses/comp1720/) in **Semester 2 (Jul-Nov)**
 
-- in **Summer (Dec-Feb)** I teach [COMPCHST: Internet of Things China Study
+- [ANU Laptop Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/) in
+  **Semester 2 (Jul-Nov)**
+
+- ~~[_Internet of Things_ China Study
   Tour](https://cs.anu.edu.au/courses/china-study-tour/) at the Beijing
-  Institute of Technology
+  Institute of Technology~~ (sadly this course isn't running this year)
 
 If you're a student at the ANU, then I encourage you to take one (or more!) of
 these courses---I think they're pretty great :)
