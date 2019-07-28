@@ -1,6 +1,7 @@
 BASE_HTML_DIR=_site
 GH_USERNAME=benswift
 SSH_REPO_ADDRESS=git@github.com:$(GH_USERNAME)/$(GH_USERNAME).github.io.git
+SOURCE_GIT_REF := $(shell git rev-parse --short source)
 
 all: push
 
@@ -15,7 +16,7 @@ generate-blog:
 	bundle exec jekyll build
 
 commit-all: generate-blog
-	cd $(BASE_HTML_DIR) && git add . && git commit -m "update blog (built from $(git rev-parse --short HEAD) on source branch)"
+	cd $(BASE_HTML_DIR) && git add . && git commit -m "update blog (built from $(SOURCE_GIT_REF))"
 
 push: commit-all
 	cd $(BASE_HTML_DIR) && git push origin master
