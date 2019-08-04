@@ -15,7 +15,6 @@ summary: >-
    author="Thennicke"
    licence="CC-BY-SA-4.0"
    url="https://commons.wikimedia.org/wiki/File:Bushland_on_southern_Mount_Majura.jpg"
-   lrpos="left"
 %}
 
 {% include slides/background-image.html image="images/talks/u3a-world-since-google/ben-smiths-sounscapes.jpg" %}
@@ -46,7 +45,6 @@ code/creativity/culture
    author="Randall Monroe"
    licence="CC-BY-NC-2.5"
    url="https://xkcd.com/1227/"
-   lrpos="left"
 %}
 
 {% include slides/background-image.html image="images/talks/u3a-world-since-google/rawpixel-750931-unsplash.jpg" heading="nope." %}
@@ -70,7 +68,6 @@ a short, incomplete, **mostly wrong** history of the internet since 1996
 {% include slides/image-credit.html
    author="CNBC"
    url="https://www.cnbc.com/2017/05/31/google-larry-page-and-sergey-brin-ask-an-unusual-interview-question.html"
-   lrpos="left"
 %}
 
 {% include slides/background-image.html image="images/talks/u3a-world-since-google/ye-linn-wai-600998-unsplash.jpg" %}
@@ -147,7 +144,6 @@ the most brilliant minds of my generation...
 {% include slides/image-credit.html
    author="statista.com"
    url="https://www.statista.com/statistics/507742/alphabet-annual-global-revenue/"
-   lrpos="left"
 %}
 
 {% include slides/background-image.html image="images/talks/u3a-world-since-google/cnbc-2017-alphabet-result-breakdown.png" bgsize="contain" %}
@@ -155,7 +151,6 @@ the most brilliant minds of my generation...
 {% include slides/image-credit.html
    author="CNBC"
    url="https://www.cnbc.com/2018/02/02/alphabet-business-units-revenue-contribution-and-ceos.html"
-   lrpos="left"
 %}
 
 {% include slides/impact.html %}
