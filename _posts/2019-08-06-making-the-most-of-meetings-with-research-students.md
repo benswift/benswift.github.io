@@ -1,13 +1,24 @@
 ---
 title: Making the most of meetings with research students
-tags: teaching
+tags: teaching research
 ---
 
-Supervising research students is hard work (or at least I find it hard work to
-do a good job) but it's really very rewarding. From PhD & MPhil students through
-to undergraduate research project students[^project-students], there are lots of
-meetings to be had. And everyone knows that meetings suck, or at least that
-_bad_ meetings suck.
+<div class="hl-para" markdown="1">
+
+**tl;dr** here are my standard questions for one-to-one meetings with research
+students
+
+1. what's your research question in one sentence?
+2. can you show me the _thing_ that you're currently working on?
+3. are there any upcoming dates I should be aware of?
+4. what's your next step? What's getting in the way?
+
+</div>
+
+Being a good research supervisor takes time, but it's really very rewarding.
+From PhD & MPhil students through to undergraduate research project
+students[^project-students], there are lots of meetings to be had. And everyone
+knows that meetings suck, or at least that _bad_ meetings suck.
 
 [^project-students]:
     You've probably heard that CS enrolments are through the roof---it's a great
@@ -16,9 +27,9 @@ _bad_ meetings suck.
     pipeline is full all the way through to the "capstone" research projects
     that many students take at the end of their degree.
 
-So, here are some thoughts in my brain for conducting one-on-one meetings with
-research students. As research student numbers grow, I wanna have a good
-"template" for each meeting, and then vary as necessary.
+So, here are some thoughts in my brain for conducting effective one-on-one
+meetings with research students. As research student numbers grow, I wanna have
+a good "template" for each meeting, and then vary as necessary.
 
 ## (Default) meeting agenda
 
@@ -31,7 +42,7 @@ practice at articulating it (with feedback) means that when it comes time to
 write things up, much of the hard thinking in articulating things is already
 done.
 
-### Show me a _thing_ that you're currently working on
+### Can you show me the _thing_ that you're currently working on?
 
 In every meeting, I want my student to show me a thing they're working on. It
 might be a piece of software, it might be a piece of writing (e.g. a paper draft
@@ -62,7 +73,22 @@ we can discuss them there and then, and brainstorm strategies to deal with them.
 
 ## This is a work-in-progress
 
+There are
+[lots](https://hbr.org/2015/03/how-to-design-an-agenda-for-an-effective-meeting)
+[of](https://blog.asana.com/2017/12/run-effective-meetings-agenda-tips/)
+[general](https://getlighthouse.com/blog/one-on-one-meeting-questions-great-managers-ask/)
+[tips](https://www.dummies.com/careers/project-management/ten-tips-for-running-an-effective-meeting/)
+on how to run an effective meeting, and while there's some useful stuff there
+I'm keen to develop a strategy which is tailored to the _supervisor_-_research
+student_ scenario.
+
+The other things which the above questions don't capture is the need to build
+rapport; this includes stuff like finding out how students are coping with life
+more generally, and pastoral care is an important part of being a supervisor as
+well.
+
 Obviously sometimes there are specific things to discuss relevant to a
 particular student/project, and in those situations I'll tweak the agenda as
 necessary. This "template" is hopefully simple and helpful, though, and I'll let
-you know how it goes 😊
+you know how it goes 😊 If you have any comments/suggestions, then I'd love to
+hear them; [let me know on twitter](https://twitter.com/benswift).
