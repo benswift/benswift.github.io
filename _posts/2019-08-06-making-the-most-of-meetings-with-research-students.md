@@ -1,5 +1,6 @@
 ---
 title: Making the most of meetings with research students
+summary: "Some questions to structure the regular one-on-one research meetings---modify as necesssary."
 tags: teaching research
 ---
 
