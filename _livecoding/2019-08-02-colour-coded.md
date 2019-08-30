@@ -31,4 +31,3 @@ Attanayake and Brent Schuetze. A few more photos from the event:
 {% asset images/livecoding/ben-colour-coded-3.jpg @pic %}
 {% asset images/livecoding/ben-colour-coded-4.jpg @pic %}
 {% asset images/livecoding/ben-colour-coded-5.jpg @pic %}
-{% asset images/livecoding/ben-colour-coded-6.jpg @pic %}
