@@ -16,4 +16,4 @@ grand vision happen (if you'd like to chat, [get in
 touch](mailto:ben.swift@anu.edu.au)). But to give you a flavour, here's a snazzy
 video the clever folks at CECS made:
 
-{% include youtube.html id="https://www.youtube.com/watch?v=Sv4Y-UPqML8" %}
+{% include youtube.html id="Sv4Y-UPqML8" %}
