@@ -14,8 +14,9 @@ video_url: https://vimeo.com/356811176
 ---
 
 [Kieran Browne](https://kieranbrowne.com) (live GLSL shader hacking), [Charles
-Martin](http://charlesmartin.com.au/) (live Pd & electronics) I were invited to
-perform at **Colour Coded** as part of the [_Ildiko Kovacs: The DNA of colour_
+Martin](http://charlesmartin.com.au/) (live Pd & electronics) I (livecoding in
+Extempore) were invited to perform at **Colour Coded** as part of the [_Ildiko
+Kovacs: The DNA of colour_
 exhibition](https://dhg.anu.edu.au/events/ildiko-kovacs-the-dna-of-colour/).
 
 Here's a video of our set:
