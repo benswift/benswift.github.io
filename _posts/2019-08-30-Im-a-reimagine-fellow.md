@@ -3,7 +3,7 @@ title: I'm a Reimagine Fellow
 ---
 
 If you've been following the CECS newsletter, you'll know that the inaugural
-[Reimagine Fellows](https://cecs.anu.edu.au/staff/reimagine) have been
+[Reimagine Fellows](https://cecs.anu.edu.au/reimagine/reimagine-fellows) have been
 announced, and I'm one of them 🙌🎉🥳. It's very exciting, and it means the
 [c/c/c studio]({{site.baseurl}}{% link
 _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) is going to be a real
