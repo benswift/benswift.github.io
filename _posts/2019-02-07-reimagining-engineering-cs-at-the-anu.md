@@ -236,7 +236,7 @@ marketing copy on their own website). Many (but not all) of these labs/groups
 are in CS/Engineering Schools, or at least in design schools.
 
 > The Stanford [Center for Computer Research in Music and
-> Acoustics](<(https://ccrma.stanford.edu)>) (CCRMA) is a multi-disciplinary
+> Acoustics](https://ccrma.stanford.edu) (CCRMA) is a multi-disciplinary
 > facility where composers and researchers work together using computer-based
 > technology both as an artistic medium and as a research tool.
 
