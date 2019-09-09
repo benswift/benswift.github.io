@@ -11,9 +11,9 @@ layout: page
   <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   {% include taglist.html tags=post.tags %}
   {% if post.summary %}
-  <p>{{ post.summary | markdownify }}</p>
+  {{ post.summary | markdownify }}
   {% else %}
-  <p>{{ post.excerpt | markdownify }}</p>
+  {{ post.excerpt | markdownify }}
   {% endif %}
 
 </section>
