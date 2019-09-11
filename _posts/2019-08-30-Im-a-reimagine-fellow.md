@@ -1,5 +1,6 @@
 ---
 title: I'm a Reimagine Fellow
+tags: reimagine
 ---
 
 If you've been following the CECS newsletter, you'll know that the inaugural
