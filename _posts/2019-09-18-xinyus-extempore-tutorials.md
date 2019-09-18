@@ -71,7 +71,7 @@ Work in pairs or small groups, look at the code below and predict what does this
 (bind-val my-pi float 3.1415)
 ```
 
-> Note: in Extempore, we generally use **kebab-case** case style ```my-pi``` instead of using **camelCase** ```myPi``` or **PascalCase** ```MyPi```or **snake_case** ```my_pi```.
+> Note: in Extempore, we generally use **kebab-case** case style `my-pi` instead of using **camelCase** `myPi` or **PascalCase** `MyPi`or **snake_case** `my_pi`.
 
 Run the code above. Does the compiler print anything in the log? What does the printed message mean?
 
@@ -110,22 +110,22 @@ Does it work as predicted?
 > sample number
 > - **chan:i64**
 > audio channel
-> - **dat:SAMPLE***
+> - **dat:SAMPLE**
 > user data
 > - **`<return>`:SAMPLE**
 > sample at given channel and time
-> - *sample value range from -1.0 to 1.0
+> - sample value range from -1.0 to 1.0
 >
-> Note: In Extempore, we represent the mathematical operation *2 * PI* as ```(* 2 PI)```
+> Note: In Extempore, we represent the mathematical operation *2 * PI* as `(* 2 PI)`
 >
-> Note: ```SRf``` refers to the current sampling frequency
+> Note: `SRf` refers to the current sampling frequency
 >
-> Note: The form of a ```let``` statement is as follows:
-> ```(let ((var_name_1 var_value_1) ... (var_n val_n)) (<body>))```
+> Note: The form of a `let` statement is as follows:
+> `(let ((var_name_1 var_value_1) ... (var_n val_n)) (<body>))`
 >
-> Note: ```convert``` allows us to make a ```SAMPLE``` typed value from ```time```.
+> Note: `convert` allows us to make a `SAMPLE` typed value from `time`.
 >
-> Note: We only can set ```dsp``` function once, but then redefine it as many times as we want.
+> Note: We only can set `dsp` function once, but then redefine it as many times as we want.
 
 What about white noise in Extempore?
 
@@ -153,7 +153,7 @@ Work in pairs or in small groups, work out the answers to the following question
 
 ### Make
 
-Now, let’s move ```amplitude```, ```frequency``` and ```two-pi``` outside of lambda to make our ```dsp``` function controllable outside as below:
+Now, let’s move `amplitude`, `frequency` and `two-pi` outside of lambda to make our `dsp` function controllable outside as below:
 
 ```xtlang
 (bind-func dsp:DSP
@@ -167,11 +167,11 @@ Now, let’s move ```amplitude```, ```frequency``` and ```two-pi``` outside of l
                     (convert time)) SRf))))))
 ```
 
-Can you play a random frequency sound every time when you redefine the ```dsp``` function?
+Can you play a random frequency sound every time when you redefine the `dsp` function?
 > Note:
-> - You could use ```(random 440.0 700.0)``` to randomly generate a value between 440.0 and 700.0
+> - You could use `(random 440.0 700.0)` to randomly generate a value between 440.0 and 700.0
 
-Compare to the ```(random)``` in the white noise part above, does the ```(random)``` work differently here? Can you explain how ```(random)``` can be either for "control" (e.g. see the above sine wave part) or for "signal" (e.g. see the white noise part)?
+Compare to the `(random)` in the white noise part above, does the `(random)` work differently here? Can you explain how `(random)` can be either for "control" (e.g. see the above sine wave part) or for "signal" (e.g. see the white noise part)?
 
 ## Tutorial Two
 
