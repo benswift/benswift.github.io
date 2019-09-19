@@ -233,8 +233,8 @@ Work in pairs or in small groups, can you modify the above code and make a loop 
 ;; make a loop with random note length and random note
 (define diff-length
   (lambda (time)
-    (let ((note-length (random '(0.5 1.0 1.5 2.0))))
-      (let ((pitch (random '(60 63 65 68 70 73 75 78 80))))
+    (let ((note-length (random '(0.5 1.0 1.5 2.0)))
+          (pitch (random '(60 63 65 68 70 73 75 78 80))))
         (play-note time fmsynth pitch 80 (* *second* note-length))
         (callback (+ time (* note-length *second*)) 'diff-length (+ time (* note-length *second*)))))))
 
