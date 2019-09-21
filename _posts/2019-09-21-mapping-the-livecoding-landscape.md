@@ -146,6 +146,10 @@ Ash Sagar
 Juan A. Romero
 Patrick Borgeat
 
+#### Programme committee
+
+_same as 2016_
+
 ## TOPLAP nodes
 
 This list is pinched _directly_ from the [TOPLAP
