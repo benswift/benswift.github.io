@@ -138,15 +138,21 @@ livecoding_people:
       type: media
     url: "http://luisnavarrodelangel.net/"
     famous_for:
+  -
+    name: Mike Hodnick
+    affiliation:
+      institution:
+      type: indie
+    url: "http://kindohm.com/"
+    famous_for: livecoding
 ---
 
 ## People
 
 <ul>
-{% for person in page.people %}
+{% for person in page.livecoding_people %}
 <li>
-  <a style="font-weight: 900;" href="{{ person.url }}">{{ person.name }}</a>,
-  <span style="font-style: italic;">{{ person.affiliation.institution }}</span>
+  <a style="font-weight: 900;" href="{{ person.url }}">{{ person.name }}</a>{% if person.affiliation.institution %}, <span style="font-style: italic;">{{ person.affiliation.institution }}</span>{% endif %}
 </li>
 {% endfor %}
 </ul>
