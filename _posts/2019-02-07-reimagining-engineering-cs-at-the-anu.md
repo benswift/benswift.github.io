@@ -249,13 +249,10 @@ are in CS/Engineering Schools, or at least in design schools.
 > a laboratory for atypical, anti-disciplinary, and inter-institutional research
 > at the intersections of arts, science, technology and culture.
 
-> [SensiLab](https://sensilab.monash.edu) is a technology-driven, design-focused
-> research lab based at Monash University in Melbourne, Australia.
-
-> The [Creativity & Cognition Studios](https://www.creativityandcognition.com)
-> at the University of Technology Sydney is an internationally recognised
-> multi-disciplinary environment for the advancement and understanding of
-> practice in digital media and the arts.
+> The [Center for Music Technology](https://gtcmt.gatech.edu) at Georgia Tech
+> aims to transform the ways we create and experience music, and to create the
+> next generation of technology for composition, performance, consumption, and
+> education.
 
 > NYU's [ITP](https://tisch.nyu.edu/itp) (Interactive Telecommunications
 > Program) is a two-year graduate program located in the Tisch School of the
@@ -280,6 +277,14 @@ are in CS/Engineering Schools, or at least in design schools.
 > University of Singapore provides an environment for arts-driven research and
 > technology development, as well as artistic practice and experimentation
 > related to scientific research methods and results
+
+> [SensiLab](https://sensilab.monash.edu) is a technology-driven, design-focused
+> research lab based at Monash University in Melbourne, Australia.
+
+> The [Creativity & Cognition Studios](https://www.creativityandcognition.com)
+> at the University of Technology Sydney is an internationally recognised
+> multi-disciplinary environment for the advancement and understanding of
+> practice in digital media and the arts.
 
 ### Has the ANU ever had anything like this before?
 
