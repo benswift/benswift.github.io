@@ -142,6 +142,15 @@ livecoding_people:
 
 ## People
 
+<ul>
+{% for person in page.people %}
+<li>
+  <a style="font-weight: 900;" href="{{ person.url }}">{{ person.name }}</a>,
+  <span style="font-style: italic;">{{ person.affiliation.institution }}</span>
+</li>
+{% endfor %}
+</ul>
+
 ## ICLC committees
 
 ### 2020 Limerick, Ireland
