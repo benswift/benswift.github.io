@@ -1,7 +1,7 @@
 ---
 title: Mapping the livecoding landscape
 tags: livecoding research
-published: false
+hidden: true
 
 # let's do this as YAML
 livecoding_people:
