@@ -17,7 +17,7 @@
   (let [[min max]
         (case attribute
           :angle [-1800 1800]
-          :size [5 25]
+          :size [2 15]
           :weight [100 900])]
     (+ min (rand (- max min)))))
 
