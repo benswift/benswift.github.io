@@ -152,7 +152,8 @@ livecoding_people:
 <ul>
 {% for person in page.livecoding_people %}
 <li>
-  <a style="font-weight: 900;" href="{{ person.url }}">{{ person.name }}</a>{% if person.affiliation.institution %}, <span style="font-style: italic;">{{ person.affiliation.institution }}</span>{% endif %}
+  <a style="font-weight: 900;" href="{{ person.url }}">{{ person.name }}</a>,
+  <span style="font-style: italic;">{{person.affiliation.institution | default: "indie" }}</span>
 </li>
 {% endfor %}
 </ul>
