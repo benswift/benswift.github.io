@@ -6,138 +6,138 @@ published: false
 # let's do this as YAML
 livecoding_people:
   -
-	name: Andrew Sorensen
-	affiliation:
-	  institution:
-	  type: indie
-	url: https://twitter.com/digego
-	famous_for: Extempore, Impromptu
+    name: Andrew Sorensen
+    affiliation:
+      institution:
+      type: indie
+    url: "https://twitter.com/digego"
+    famous_for: Extempore, Impromptu
   -
-	name: Alex McLean
-	affiliation:
-	  institution:
-	  type: indie
-	url: https://yaxu.org
-	famous_for: tidalcycles, lcilp
+    name: Alex McLean
+    affiliation:
+      institution:
+      type: indie
+    url: "https://yaxu.org"
+    famous_for: tidalcycles, lcilp
   -
-	name: Juilan Rohrhuber
-	affiliation:
-	  institution: Institute for Music and Media, RSH Düsseldorf
-	  type: music
-	url: http://wertlos.org/~rohrhuber/
-	famous_for: SuperCollider JITLib
+    name: Juilan Rohrhuber
+    affiliation:
+      institution: Institute for Music and Media, RSH Düsseldorf
+      type: music
+    url: "http://wertlos.org/~rohrhuber/"
+    famous_for: SuperCollider JITLib
   -
-	name: Andrew Brown
-	affiliation:
-	  institution: Queensland College of Art, Griffith University
-	  type: art
-	url: http://andrewrbrown.net.au/
-	famous_for: aa cell
+    name: Andrew Brown
+    affiliation:
+      institution: Queensland College of Art, Griffith University
+      type: art
+    url: "http://andrewrbrown.net.au/"
+    famous_for: aa cell
   -
-	name: Nick Collins
-	affiliation:
-	  institution: Department of Music, Durham University
-	  type: music
-	url: "https://www.dur.ac.uk/music/staff/profile/?id=11477"
-	famous_for: livecoding, LCILP
+    name: Nick Collins
+    affiliation:
+      institution: Department of Music, Durham University
+      type: music
+    url: "https://www.dur.ac.uk/music/staff/profile/?id=11477"
+    famous_for: livecoding, LCILP
   -
-	name: Thor Magnusson
-	affiliation:
-	  institution: Music Department, University of Sussex
-	  type: music
-	url: http://thormagnusson.github.io/
-	famous_for: ixi lang
+    name: Thor Magnusson
+    affiliation:
+      institution: Music Department, University of Sussex
+      type: music
+    url: "http://thormagnusson.github.io/"
+    famous_for: ixi lang
   -
-	name: Ge Wang
-	affiliation:
-	  institution: CCRMA, Stanford University
-	  type: music
-	url: https://www.gewang.com
-	famous_for: Chuck
+    name: Ge Wang
+    affiliation:
+      institution: CCRMA, Stanford University
+      type: music
+    url: "https://www.gewang.com"
+    famous_for: Chuck
   -
-	name: Sam Aaron
-	affiliation:
-	  institution:
-	  type: indie
-	url: http://sam.aaron.name/
-	famous_for: Sonic Pi
+    name: Sam Aaron
+    affiliation:
+      institution:
+      type: indie
+    url: "http://sam.aaron.name/"
+    famous_for: Sonic Pi
   -
-	name: Alan Blackwell
-	affiliation:
-	  institution: Cambridge Computer Laboratory
-	  type: CS
-	url: https://www.cl.cam.ac.uk/~afb21/
-	famous_for: cognitive dimensions of notation
+    name: Alan Blackwell
+    affiliation:
+      institution: Cambridge Computer Laboratory
+      type: CS
+    url: "https://www.cl.cam.ac.uk/~afb21/"
+    famous_for: cognitive dimensions of notation
   -
-	name: Dave Griffiths
-	affiliation:
-	  institution: FoAM Kernow
-	  type: indie
-	url: https://fo.am/people/dave/
-	famous_for:
+    name: Dave Griffiths
+    affiliation:
+      institution: FoAM Kernow
+      type: indie
+    url: "https://fo.am/people/dave/"
+    famous_for:
   -
-	name: Shelley Knotts
-	affiliation:
-	  institution: Department of Music, Durham University
-	  type: music
-	url: https://shellyknotts.wordpress.com
-	famous_for: algobabez, OFFAL
+    name: Shelley Knotts
+    affiliation:
+      institution: Department of Music, Durham University
+      type: music
+    url: "https://shellyknotts.wordpress.com"
+    famous_for: algobabez, OFFAL
   -
-	name: Joanne Armitage
-	affiliation:
-	  institution: School of Media and Communication, University of Leeds
-	  type: media
-	url: https://twitter.com/joannnne
-	famous_for: algobabez
+    name: Joanne Armitage
+    affiliation:
+      institution: School of Media and Communication, University of Leeds
+      type: media
+    url: "https://twitter.com/joannnne"
+    famous_for: algobabez
   -
-	name: Renick Bell
-	affiliation:
-	  institution:
-	  type: indie
-	url: http://renickbell.net/
-	famous_for: livecoding
+    name: Renick Bell
+    affiliation:
+      institution:
+      type: indie
+    url: "http://renickbell.net/"
+    famous_for: livecoding
   -
-	name: David Ogborn
-	affiliation:
-	  institution: Department of Communication Studies and Multimedia, McMaster University
-	  type: media
-	url: http://www.dktr0.net
-	famous_for: cybernetic orchestra
+    name: David Ogborn
+    affiliation:
+      institution: Department of Communication Studies and Multimedia, McMaster University
+      type: media
+    url: "http://www.dktr0.net"
+    famous_for: cybernetic orchestra
   -
-	name: Charlie Roberts
-	affiliation:
-	  institution: Computer Science, Worcester Polytechnic Institute
-	  type: CS
-	url: http://charlie-roberts.com/
-	famous_for: gibber
+    name: Charlie Roberts
+    affiliation:
+      institution: Computer Science, Worcester Polytechnic Institute
+      type: CS
+    url: "http://charlie-roberts.com/"
+    famous_for: gibber
   -
-	name: Kate Sicchio
-	affiliation:
-	  institution: Integrated Digital Media, New York University
-	  type: art
-	url: http://blog.sicchio.com/
-	famous_for:
+    name: Kate Sicchio
+    affiliation:
+      institution: Integrated Digital Media, New York University
+      type: art
+    url: "http://blog.sicchio.com/"
+    famous_for:
   -
-	name: Mauro
-	affiliation:
-	  institution:
-	  type:
-	url: https://www.cyberpunk.net.ar
-	famous_for: awesome livecoding
+    name: Mauro
+    affiliation:
+      institution:
+      type:
+    url: "https://www.cyberpunk.net.ar"
+    famous_for: awesome livecoding
   -
-	name: Jack Armitage
-	affiliation:
-	  institution: Centre for Digital Music, Queen Mary University of London
-	  type: CS
-	url: https://www.jackarmitage.com/
-	famous_for: tidlecycles livecoding, bela
+    name: Jack Armitage
+    affiliation:
+      institution: Centre for Digital Music, Queen Mary University of London
+      type: CS
+    url: "https://www.jackarmitage.com/"
+    famous_for: tidlecycles livecoding, bela
   -
-	name: Luis Navarro Del Angel
-	affiliation:
-	  institution: Department of Communication Studies and Multimedia, McMaster University
-	  type: media
-	url: http://luisnavarrodelangel.net/
-	famous_for:
+    name: Luis Navarro Del Angel
+    affiliation:
+      institution: Department of Communication Studies and Multimedia, McMaster University
+      type: media
+    url: "http://luisnavarrodelangel.net/"
+    famous_for:
 ---
 
 ## People
