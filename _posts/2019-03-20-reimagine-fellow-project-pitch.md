@@ -97,10 +97,12 @@ Girl](https://codelikeagirl.org/states/act/) and
 these organisations are primarily based around computer science/engineering, not
 interdisciplinary art & code.
 
-In 2018 I ran the [ANU Laptop
-Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/),
-which attempted to provide a similar open-ended space for creative exploration
-to the c/c/c studio, except specifically for live performance
+In 2018 I (with [Dr. Alec
+Hunter](http://music.cass.anu.edu.au/people/dr-alexander-hunter) from the ANU
+School of Music) started the [ANU Laptop
+Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/), which attempted
+to provide a similar open-ended space for creative exploration to the c/c/c
+studio, except specifically for live performance
 ([livecoding](https://toplap.org); code-based DJ-ing and VJ-ing). ANU students
 can also take my [COMP1720: Art & Interaction in New
 Media](https://cs.anu.edu.au/courses/comp1720/) course as part of a major in
