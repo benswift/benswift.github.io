@@ -26,7 +26,9 @@ CECS" looks like.
 
 {:.hl-para}
 
-Elanor, if you're reading, I want to be a Reimagine Fellow. And since the
+Elanor, if you're reading, I want to be a Reimagine Fellow ([update 30 Aug 2019:
+🙌🥳🙌]({{site.baseurl}}{% link _posts/2019-08-30-Im-a-reimagine-fellow.md %})).
+And since the
 [EoI](https://cecs.anu.edu.au/staff/project-reimagine-fellows-expression-interest)
 asked for "1000 words **in any format you like**", here's mine in the form of an
 FAQ[^faq].
