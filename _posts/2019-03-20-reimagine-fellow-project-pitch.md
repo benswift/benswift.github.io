@@ -5,11 +5,6 @@ tags: reimagine teaching research
 summary: A project plan for my CECS Reimagine Fellowship
 ---
 
-<iframe src="{{site.baseurl}}{% link widgets/reimagine-logo.html %}"
-        frameborder="0"
-        style="margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;">
-</iframe>
-
 *Note to readers:* this is what I intend to do if awarded a **Reimagine
 Fellowship**. If you're just here for the short version, see the [elevator
 pitch](#elevator-pitch). You could also read some of the [background to this

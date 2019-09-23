@@ -5,11 +5,6 @@ tags: teaching research reimagine
 summary: My pitch to be a Reimagine Fellow as part of the current reimagination project in CS/Engineering at the ANU.
 ---
 
-<iframe src="{{site.baseurl}}{% link widgets/reimagine-logo.html %}"
-        frameborder="0"
-        style="margin-right:1em;margin-bottom:1em;float:left;width:10rem;height:10rem;">
-</iframe>
-
 The [ANU College of Engineering and Computer Science](https://cecs.anu.edu.au)
 (CECS) is being _Reimagined_. Don't take my word for it; listen to our fearless
 leader [Elanor](https://cecs.anu.edu.au):
