@@ -125,7 +125,7 @@ what can we do to release this **huge untapped potential**?
 
 {% include slides/background-image.html image="images/talks/code-2k18/john-such-493455-unsplash.jpg" heading="links" %}
 
-[LENS homepage](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/)
+[LENS homepage](https://cs.anu.edu.au/code-creativity-culture/lens/)
 
 [LENS on YouTube](https://www.youtube.com/channel/UCIU6SqIS02GJlnLOPqlwmpA)
 
