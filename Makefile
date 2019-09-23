@@ -19,6 +19,9 @@ commit-all: generate-blog
 	cd $(BASE_HTML_DIR) && git add . && git commit -m "update blog (built from $(SOURCE_GIT_REF))"
 
 push: commit-all
+	# push the source branch to GH as well, since it's linked to from the built site
+	git push origin source
+	# now push the built files
 	cd $(BASE_HTML_DIR) && git push origin master
 
 # here's the benswift.me-specific stuff
