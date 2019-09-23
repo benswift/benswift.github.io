@@ -294,8 +294,8 @@ as part of the Reimagine Project. But it's important to know one's history.
 
 Not on my own, that's for sure. Only by building up our capacity in these areas.
 As an example, [Dr. Charles Martin](https://twitter.com/cpmpercussion) is just
-about to start as a new Lecturer in RSCS, and he's a computer musician (apps and
-ML for group musical improvisation). The campus also has many other
+about to start as a Lecturer in RSCS, and he's a computer musician (apps and ML
+for group musical improvisation). The campus also has many other
 interdisciplinary artists who have been hiding their lights under bushels---I
 want to give them a banner to rally to.
 
