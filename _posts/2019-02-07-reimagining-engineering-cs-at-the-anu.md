@@ -64,7 +64,7 @@ I've made a career (so far) of deploying my technical/CS skills to artistic
 ends: in my livecoding (both building
 [tools](https://github.com/digego/extempore) and [doing live
 gigs]({{site.baseurl}}{% link livecoding.md %})), in starting the [ANU Laptop
-Ensemble](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/),
+Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/),
 in teaching our first-year art+code course
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/), etc.
 

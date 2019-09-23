@@ -98,7 +98,7 @@ these organisations are primarily based around computer science/engineering, not
 interdisciplinary art & code.
 
 In 2018 I ran the [ANU Laptop
-Ensemble](https://cs.anu.edu.au/code-creativity-culture/projects/laptop-ensemble/),
+Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/),
 which attempted to provide a similar open-ended space for creative exploration
 to the c/c/c studio, except specifically for live performance
 ([livecoding](https://toplap.org); code-based DJ-ing and VJ-ing). ANU students
