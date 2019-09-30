@@ -3,6 +3,7 @@
     {% if include.id %}id="{{ include.id }}"{% endif %}
     data-background-image="{% if include.image contains "http" %}{{include.image}}{%else%}{% asset '{{include.image}}' @path %}{% endif %}"
     data-background-size="{{ include.bgsize | default: "cover" }}"
+    data-background-position="{{ include.bgpos | default: "center" }}"
 >
   {% if include.heading %}
   <h2>{{include.heading}}</h2>
