@@ -12,4 +12,7 @@ summary: >-
 
 {% include slides/title.html %}
 
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="definition" bgsize="contain" bgcol="#222" %}
+
 {% include slides/questions.html %}
+
