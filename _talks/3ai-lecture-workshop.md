@@ -16,11 +16,17 @@ summary: >-
 
 ## outline
 
+[part un](#part-1): Ben live @ 3Ai
+
+[part deux](#part-2): what makes a CPS?
+
+[part trois](#part-3): what can livecoding teach us about CPS?
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.jpg" %}
 
-## part un: livecoding example (perhaps break something, e.g. too loud)
+{% include slides/background-image.html image="images/livecoding/ben-qic-1.jpg" heading="part un: Ben live @ 3Ai" id="part-1" %}
 
-## part deux: what makes a CPS
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/Hot-Shots-Part-Deux.jpg" heading="part deux: what makes a CPS?" id="part-2" %}
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" %}
 
@@ -58,6 +64,9 @@ what is a cyber-physical system?
 <!-- factory worker -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/kat-maryschuk-5BFvAPQTi1U-unsplash.jpg" bgpos="bottom" %}
 
+<!-- x-ray viewing -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/linkedin-sales-navigator-_h5CPTwuVHM-unsplash.jpg" %}
+
 <!-- parlie house -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash.jpg" %}
 
@@ -76,9 +85,19 @@ what is a cyber-physical system?
 <!-- Ben & Kieran at CECS welcome party -->
 {% include slides/background-image.html image="images/livecoding/ben-kieran-cecs-welcome-party-2019.jpg" %}
 
-## part trois
+{% include slides/impact.html %}
 
-what does livecoding show us about agency, autonomy, assurance
+suggestions from the floor:
+
+what are the boundary cases?
+
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.jpg" heading="part trois: what can livecoding teach us about CPS?" id="part-3" %}
+
+_Extempore: The design, implementation and application of a cyber-physical
+programming language_ ([Andrew Sorensen's PhD
+thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
+
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" %}
 
 > Advanced robotics, smart grids, autonomous cars, machine learning.
 > Cyber-physical systems are literally all around us---systems that, as they
@@ -137,7 +156,7 @@ assurance
 
 {% include slides/impact.html %}
 
-but there are some "I"s as well
+there are some "I"s as well as the "A"s
 
 ## indicators
 
@@ -168,6 +187,33 @@ but there are some "I"s as well
 > will be built for different purposes and with very different intentionality,
 > and inside different larger systems. Making sense of, and mapping, that
 > broader intentionality is central to the emergent new applied science.
+
+## open questions
+
+if/when is a (textual) code interface the best option for balancing
+agency/autonomy/assurance... in livecoding? and beyond?
+
+what feedback can we provide to help the livecoder keep 
+
+how does the audience fit in? do they matter? what's _their_ agency?
+
+when do static analyses help, and when do they get in the way? what about "AI"?
+
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/Defense.gov_News_Photo_020221-D-9880W-080.jpg" %}
+
+{% include slides/image-credit.html
+   artist="📸 R. D. Ward, US D.O.D."
+   licence="public domain"
+%}
+
+<!-- TODO maybe an A-A-A triangle? -->
+
+## what's next?
+
+these questions keep me up at night
+
+if you'd like to help (or just to hang out with the c/c/c group more generally)
+then let me know 😊
 
 {% include slides/questions.html %}
 
