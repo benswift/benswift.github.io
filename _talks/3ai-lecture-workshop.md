@@ -154,7 +154,7 @@ assurance
 
 - where's the **autonomy** in livecoding?
 - what does failure look like?
-- what design intervention could we make to help out?
+- what design intervention might we make to help out?
 
 ## agency
 
@@ -168,7 +168,7 @@ assurance
 
 - where's the **agency** in livecoding?
 - what does failure look like?
-- what design intervention could we make to help out?
+- what design intervention might we make to help out?
 
 ## assurance
 
@@ -182,7 +182,7 @@ assurance
 
 - where's the **assurance** in livecoding?
 - what does failure look like?
-- what design intervention could we make to help out?
+- what design intervention might we make to help out?
 
 {% include slides/impact.html %}
 
@@ -201,7 +201,7 @@ there are some "I"s as well as the "A"s
 
 - what are the **indicators** in livecoding?
 - what does failure look like?
-- what design intervention could we make to help out?
+- what design intervention might we make to help out?
 
 ## interfaces 
 
@@ -215,7 +215,7 @@ there are some "I"s as well as the "A"s
 
 - what are the **interfaces** in livecoding?
 - what does failure look like?
-- what design intervention could we make to help out?
+- what design intervention might we make to help out?
 
 ## intent
 
@@ -228,7 +228,7 @@ there are some "I"s as well as the "A"s
 
 - what is the **inten** in livecoding?
 - what does failure look like?
-- what design intervention could we make to help out?
+- what design intervention might we make to help out?
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" bgsize="contain" bgcol="#222" %}
 
