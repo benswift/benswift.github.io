@@ -247,10 +247,7 @@ there are some "I"s as well as the "A"s
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/Defense.gov_News_Photo_020221-D-9880W-080.jpg" %}
 
-{% include slides/image-credit.html
-   artist="📸 R. D. Ward, US D.O.D."
-   licence="public domain"
-%}
+<!-- {% include slides/image-credit.html artist="📸 R. D. Ward, US D.O.D." licence="public domain" %} -->
 
 <!-- TODO maybe an A-A-A triangle? -->
 
