@@ -4,7 +4,7 @@ title: What can livecoding teach us about cyber-physical systems?
 date: "2019-10-01"
 permalink: /talks/3ai-lecture-workshop/
 summary: >-
-  Cyberphysical systems sure are important. But what counts as a CPS? And what
+  Cyber-physical systems sure are important. But what counts as a CPS? And what
   can they teach us about the things that are important as we design and examine
   CPSs in _all_ areas of life?
 
@@ -98,17 +98,19 @@ what is a cyber-physical system?
 
 {% include slides/impact.html %}
 
-what **questions** do you ask?
+what are the key **questions**?
 
 {% include slides/impact.html %}
 
-what's your favourite **boundary** case?
+what are the **boundary cases**?
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.jpg" heading="part trois: what can livecoding teach us about CPS?" id="part-3" %}
 
 _Extempore: The design, implementation and application of a cyber-physical
 programming language_ ([Andrew Sorensen's PhD
 thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
+
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" %}
 
 ---
 
