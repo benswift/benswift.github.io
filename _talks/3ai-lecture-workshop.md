@@ -226,7 +226,7 @@ there are some "I"s as well as the "A"s
 > and inside different larger systems. Making sense of, and mapping, that
 > broader intentionality is central to the emergent new applied science.
 
-- what is the **inten** in livecoding?
+- what is the **intent** in livecoding?
 - what does failure look like?
 - what design intervention might we make to help out?
 
