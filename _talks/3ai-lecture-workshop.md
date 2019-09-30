@@ -56,11 +56,19 @@ what is a cyber-physical system?
 <!-- aibo -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/brett-jordan-U32jeOdkgfA-unsplash.jpg" %}
 
-<!-- genevieve -->
-{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" %}
+<!-- robot soccer -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/robot-soccer.jpeg" %}
 
-<!-- city -->
-{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg" %}
+{% include slides/image-credit.html
+   artist="📸 AFP/Getty Images"
+   link='<a href="https://slate.com/technology/2017/08/robot-soccer-tournament-displays-robots-mediocre-soccer-skills.html">🔗</a>'
+%}
+
+<!-- MCG -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash.jpg" %}
+
+<!-- user with smartphone -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/oleg-magni-LGNV-4-l8LA-unsplash.jpg" %}
 
 <!-- factory worker -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/kat-maryschuk-5BFvAPQTi1U-unsplash.jpg" bgpos="bottom" %}
@@ -68,17 +76,17 @@ what is a cyber-physical system?
 <!-- x-ray viewing -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/linkedin-sales-navigator-_h5CPTwuVHM-unsplash.jpg" %}
 
-<!-- parlie house -->
-{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash.jpg" %}
+<!-- genevieve -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" %}
 
-<!-- user with smartphone -->
-{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/oleg-magni-LGNV-4-l8LA-unsplash.jpg" %}
+<!-- city -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg" %}
 
 <!-- school classroom -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/shubham-sharan-Z-fq3wBVfMU-unsplash.jpg" %}
 
-<!-- MCG -->
-{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash.jpg" %}
+<!-- parlie house -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash.jpg" %}
 
 <!-- nasa -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/nasa-Q1p7bh3SHj8-unsplash.jpg" %}
