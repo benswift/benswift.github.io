@@ -153,7 +153,7 @@ assurance
 > consider?
 
 - where's the **autonomy** in livecoding?
-- what does failure look like
+- what does failure look like?
 - what design intervention could we make to help out?
 
 ## agency
