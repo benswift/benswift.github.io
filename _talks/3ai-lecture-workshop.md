@@ -1,18 +1,18 @@
 ---
 event: 3ai lecture/workshop, S2 2019
-title: So what's a cyberphysical system, anyway?
+title: What can livecoding teach us about cyber-physical systems?
 date: "2019-10-01"
 permalink: /talks/3ai-lecture-workshop/
 hidden: true
 summary: >-
-  Cyberphysical systems sure are important. But what counts?
+  Cyberphysical systems sure are important. But what counts as a CPS? And what
+  can they teach us about the things that are important as we design and examine
+  CPSs in _all_ areas of life?
 
-  An interactive presentation/workshop given to the [3a Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
+  An interactive lecture/presentation/workshop given to the [3a Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
 ---
 
 {% include slides/title.html %}
-
-<!-- ok, here's the plan. -->
 
 ## outline
 
@@ -34,8 +34,9 @@ summary: >-
 
 > Advanced robotics, smart grids, autonomous cars, machine learning.
 > **Cyber-physical systems** are literally all around us---systems that, as they
-> converge, will have an unprecedented economic, social and cultural impact
-> on humanity. [3ai homepage](https://3ainstitute.cecs.anu.edu.au)
+> converge, will have an unprecedented economic, social and cultural impact on
+> humanity. -&nbsp;_from the [3Ai
+> homepage](https://3ainstitute.cecs.anu.edu.au)_
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="definition" bgsize="contain" bgcol="#222" %}
 
@@ -87,9 +88,11 @@ what is a cyber-physical system?
 
 {% include slides/impact.html %}
 
-suggestions from the floor:
+what **questions** do you ask?
 
-what are the boundary cases?
+{% include slides/impact.html %}
+
+what's your favourite **boundary** case?
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.jpg" heading="part trois: what can livecoding teach us about CPS?" id="part-3" %}
 
@@ -97,13 +100,15 @@ _Extempore: The design, implementation and application of a cyber-physical
 programming language_ ([Andrew Sorensen's PhD
 thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
 
-{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" %}
+---
 
 > Advanced robotics, smart grids, autonomous cars, machine learning.
 > Cyber-physical systems are literally all around us---systems that, as they
 > converge, will have an unprecedented economic, social and **cultural** impact
-> on humanity. [3ai homepage](https://3ainstitute.cecs.anu.edu.au)
+> on humanity. -&nbsp;_from the [3Ai
+> homepage](https://3ainstitute.cecs.anu.edu.au)_
 
+{: style="font-size:1.5em;"}
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" %}
 
 {:.fragment}
@@ -115,6 +120,7 @@ agency
 {:.fragment}
 potatoes
 
+{: style="font-size:1.5em;"}
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" %}
 
 autonomy
@@ -190,14 +196,16 @@ there are some "I"s as well as the "A"s
 
 ## open questions
 
-if/when is a (textual) code interface the best option for balancing
-agency/autonomy/assurance... in livecoding? and beyond?
+- if/when is a (textual) code interface the best option for balancing
+  agency/autonomy/assurance... in livecoding? and beyond?
 
-what feedback can we provide to help the livecoder keep 
+- what feedback can we provide to help the livecoder stay "on top" of the
+  autonomous processes? is that even desirable?
 
-how does the audience fit in? do they matter? what's _their_ agency?
+- how does the audience fit in? do they matter? what's _their_ agency?
 
-when do static analyses help, and when do they get in the way? what about "AI"?
+- when do static analyses help, and when do they get in the way? what about "AI"
+  helpers?
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/Defense.gov_News_Photo_020221-D-9880W-080.jpg" %}
 
