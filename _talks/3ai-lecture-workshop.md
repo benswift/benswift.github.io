@@ -88,6 +88,12 @@ what is a cyber-physical system?
 <!-- nasa -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/nasa-Q1p7bh3SHj8-unsplash.jpg" %}
 
+<!-- piano -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/clark-young-tq7RtEvezSY-unsplash.jpg" %}
+
+<!-- rock band -->
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg" %}
+
 <!-- Ben & Kieran at CECS welcome party -->
 {% include slides/background-image.html image="images/livecoding/ben-kieran-cecs-welcome-party-2019.jpg" %}
 
@@ -145,6 +151,10 @@ assurance
 > When we translate human processes into machine processes, what do we need to
 > consider?
 
+- where's the **autonomy** in livecoding?
+- what does failure look like
+- what design intervention could we make to help out?
+
 ## agency
 
 > How much agency do we give technology?
@@ -155,6 +165,10 @@ assurance
 > machines responding to their environment, and interacting with other machines,
 > without a human to check and validate decisions?
 
+- where's the **agency** in livecoding?
+- what does failure look like?
+- what design intervention could we make to help out?
+
 ## assurance
 
 > How do we preserve our safety and values?
@@ -164,6 +178,10 @@ assurance
 > around the world. The virtual nature of these new goods and services has an
 > impact on our ability to regulate their design and use in a way that aligns
 > with core cultural values.
+
+- where's the **assurance** in livecoding?
+- what does failure look like?
+- what design intervention could we make to help out?
 
 {% include slides/impact.html %}
 
@@ -180,6 +198,10 @@ there are some "I"s as well as the "A"s
 > do we start to conceptualise building for sustainability, for beauty, for
 > values?
 
+- what are the **indicators** in livecoding?
+- what does failure look like?
+- what design intervention could we make to help out?
+
 ## interfaces 
 
 > How will technologies, systems and humans work together?
@@ -190,6 +212,10 @@ there are some "I"s as well as the "A"s
 > sensing and responding to us? How to do protect our privacy? What happens to
 > all that data?
 
+- what are the **interfaces** in livecoding?
+- what does failure look like?
+- what design intervention could we make to help out?
+
 ## intent
 
 > Why has the system been constructed? by whom? and for what purposes?
@@ -198,6 +224,12 @@ there are some "I"s as well as the "A"s
 > will be built for different purposes and with very different intentionality,
 > and inside different larger systems. Making sense of, and mapping, that
 > broader intentionality is central to the emergent new applied science.
+
+- what is the **inten** in livecoding?
+- what does failure look like?
+- what design intervention could we make to help out?
+
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" bgsize="contain" bgcol="#222" %}
 
 ## open questions
 
