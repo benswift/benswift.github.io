@@ -59,10 +59,7 @@ what is a cyber-physical system?
 <!-- robot soccer -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/robot-soccer.jpeg" %}
 
-{% include slides/image-credit.html
-   artist="📸 AFP/Getty Images"
-   link='<a href="https://slate.com/technology/2017/08/robot-soccer-tournament-displays-robots-mediocre-soccer-skills.html">🔗</a>'
-%}
+<!-- {% include slides/image-credit.html artist="📸 AFP/Getty Images" link='<a href="https://slate.com/technology/2017/08/robot-soccer-tournament-displays-robots-mediocre-soccer-skills.html">🔗</a>' %} -->
 
 <!-- MCG -->
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash.jpg" %}
