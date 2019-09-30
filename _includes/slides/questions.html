@@ -3,7 +3,6 @@
   <style>
    #contact-details {
 	 font-size: 2.5vw;
-	 font-family: monospace;
 	 list-style: none;
 	 display: table;
 	 margin: 50vh auto 0 0;
@@ -12,14 +11,19 @@
    #contact-details li {
 	 background: rgba(255, 255, 255, 0.75);
 	 padding: 0.2em 0.4em;
+	 margin-bottom: 0.5em;
    }
+
+   #contact-details a.mono {
+	 font-family: monospace;
+   }
+
   </style>
 
   <ul id="contact-details">
-
-	<li style="background: rgba(255, 255, 255, 0.75); margin-bottom: 0.5em;"><a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a></li>
-	<li><a href="https://benswift.me">https://benswift.me</a></li>
-
+	<li><a href="mailto:ben.swift@anu.edu.au"><i title="send Ben an email" class="fas fa-envelope"></i> ben.swift@anu.edu.au</a></li>
+	<li><a href="https://benswift.me"><i title="send Ben an email" class="fas fa-link"></i> https://benswift.me</a></li>
+	<li><a href="https://twitter.com/benswift"><i title="benswift on twitter" class="fab fa-twitter"></i>&nbsp;&nbsp;benswift</a></li>
   </ul>
 
 </section>
