@@ -249,8 +249,6 @@ there are some "I"s as well as the "A"s
 
 <!-- {% include slides/image-credit.html artist="📸 R. D. Ward, US D.O.D." licence="public domain" %} -->
 
-<!-- TODO maybe an A-A-A triangle? -->
-
 ## what's next?
 
 these questions keep me up at night
