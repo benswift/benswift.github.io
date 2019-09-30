@@ -3,6 +3,7 @@ event: 3ai lecture/workshop, S2 2019
 title: So what's a cyberphysical system, anyway?
 date: "2019-10-01"
 permalink: /talks/3ai-lecture-workshop/
+hidden: true
 summary: >-
   Cyberphysical systems sure are important. But what counts?
 
