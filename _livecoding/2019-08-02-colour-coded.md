@@ -32,3 +32,4 @@ Attanayake and Brent Schuetze. A few more photos from the event:
 {% asset images/livecoding/ben-colour-coded-3.jpg @pic alt="Photo from Colour Coded gig" %}
 {% asset images/livecoding/ben-colour-coded-4.jpg @pic alt="Photo from Colour Coded gig" %}
 {% asset images/livecoding/ben-colour-coded-5.jpg @pic alt="Photo from Colour Coded gig" %}
+{% asset images/livecoding/ben-colour-coded-6.jpg @pic alt="Photo from Colour Coded gig" %}
