@@ -5,13 +5,18 @@ tags: reimagine teaching research
 summary: A project plan for my CECS Reimagine Fellowship
 ---
 
-*Note to readers:* this is what I intend to do if awarded a **Reimagine
-Fellowship**. If you're just here for the short version, see the [elevator
-pitch](#elevator-pitch). You could also read some of the [background to this
-proposal]({{site.baseurl}}{% link
-_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) or check out the
-main [CECS Reimagine](https://cecs.anu.edu.au/reimagine) page for more general
-information about the Reimagine project.
+*Note to readers:* this is the project plan for my **Reimagine Fellowship**. If
+you're just here for the short version, see the [elevator
+pitch](#elevator-pitch). Alternately, if you want to know the "big picture
+vision" stuff _behind_ this project, then that's [here]({{site.baseurl}}{% link
+_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}). Finally, you can
+check out the main [CECS Reimagine](https://cecs.anu.edu.au/reimagine) page for
+more general information about the Reimagine project.
+
+Or you could save yourself 4000+ words of reading and just watch a 2min video
+😉:
+
+{% include youtube.html id="Sv4Y-UPqML8" %}
 
 {% include toc.html %}
 
