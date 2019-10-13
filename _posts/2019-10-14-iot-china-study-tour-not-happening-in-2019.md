@@ -1,5 +1,6 @@
 ---
 title: IoT China Study Tour not happening in 2019
+tags: teaching
 ---
 
 In the (Australian) Summer of '16/17, '17/18 and '18/19 I ran an [_Internet of
