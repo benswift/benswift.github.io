@@ -24,7 +24,9 @@ Science](https://cs.anu.edu.au/courses/comp2300/)
 
 - ~~[_Internet of Things_ China Study
   Tour](https://cs.anu.edu.au/courses/china-study-tour/) at the Beijing
-  Institute of Technology~~ (sadly this course isn't running this year)
+  Institute of Technology~~ (sadly this [course isn't running this
+  year]({{site.baseurl}}{% link
+  _posts/2019-10-14-iot-china-study-tour-not-happening-in-2019.md %}))
 
 If you're a student at the ANU, then I encourage you to take one (or more!) of
 these courses---I think they're pretty great :)
