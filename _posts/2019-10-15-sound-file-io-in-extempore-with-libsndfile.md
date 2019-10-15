@@ -114,9 +114,10 @@ returning a different element of the `info` struct):
 
 Finally, we can calculate how many samples (num frames × num channels) we'll
 need in our "audio data" buffer. We can then use `sf_read` to read the audio
-data from the file into our buffer, converting it to e.g. `float` as we go
-(libsndfile can read audio files in a bunch of different formats, but for
-working with it in Extempore we just want floating point values).
+data from the file into our buffer, converting it to e.g. `float` (or whatever
+the type of `SAMPLE` is) as we go (libsndfile can read audio files in a bunch of
+different formats, but for working with it in Extempore we just want floating
+point values).
 
 Let's set up a DSP callback (just playing some white noise so that we know that
 it's working).
@@ -140,7 +141,7 @@ Let's read the data out of the audio file and play it back:
         (info:SF_INFO* (alloc))
         (sfile (sf_open filename SFM_READ info)) ;; SFM_READ = open the audio file in "read-only" mode
         ;; here's the pointer to the audio data
-        (data:float* (alloc nsamp)) ;; assume stereo
+        (data:SAMPLE* (alloc nsamp)) ;; assume stereo
         (i 0))
     ;; read the audio data (and print number of samples read)
     (println "read" (sf_read sfile data nsamp) "frames")
@@ -168,6 +169,10 @@ need to match every call to `sf_open` with a call to `sf_close` as stated in the
 libsndfile docs.
 
 ## Writing data in memory to an audio file
+
+Ok, so there's one more thing we might want to do with our libsndfile library:
+write a bunch of audio data (which we've gloriously munged in Extempore) and
+write it back to an audio file.
 
 
 
