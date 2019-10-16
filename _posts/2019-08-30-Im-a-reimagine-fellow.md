@@ -6,7 +6,7 @@ tags: reimagine
 If you've been following the CECS newsletter, you'll know that the inaugural
 [Reimagine Fellows](https://cecs.anu.edu.au/reimagine/reimagine-fellows) have been
 announced, and I'm one of them 🙌🎉🥳. It's very exciting, and it means the
-[c/c/c studio]({{site.baseurl}}{% link
+[c/c/c studio]({% link
 _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) is going to be a real
 thing in 2020 (and beyond). It's also a relief to be able to tell people, since
 I've had to keep the good news under my hat for the last couple of months.

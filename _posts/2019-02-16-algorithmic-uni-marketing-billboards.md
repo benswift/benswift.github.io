@@ -18,17 +18,17 @@ The campaign is called: **verb** _your_ **verb**---hit refresh to see the
 different options.
 
 <div style="position:relative;padding-top:56.25%;">
-  <iframe src="{{site.baseurl}}{% link widgets/algorithmic-ad-billboards.html %}" frameborder="0" allowfullscreen
+  <iframe src="{% link widgets/algorithmic-ad-billboards.html %}" frameborder="0" allowfullscreen
     style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
 
 If you want to see it in fullscreen, you can [do that as
-well]({{site.baseurl}}{% link widgets/algorithmic-ad-billboards.html %}).
+well]({% link widgets/algorithmic-ad-billboards.html %}).
 
 ## How does it work?
 
 It uses the same [reveal.js](https://github.com/hakimel/reveal.js/) template
-that I use for all my [talks/slides]({{site.baseurl}}{% link talks.md
+that I use for all my [talks/slides]({% link talks.md
 %})---it's basically a one-slide presentation.
 
 Each time the page loads, it:

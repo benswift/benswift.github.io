@@ -32,13 +32,13 @@ same, but I tried to make them as similar as possible (for _science_).
 
 I've recently (Feb '19) tracked down the videos from these gigs and uploaded
 them to vimeo, both for your enjoyment and also so that when you [read the
-paper]({{site.baseurl}}{% link research.md %}#purcellVisualisingLiveCoding2014)
+paper]({% link research.md %}#purcellVisualisingLiveCoding2014)
 you have a better idea what's going on.
 
 {:.hl-para}
 
 We wrote the results of these "experiments" up OzCHI, so you can look up the
-paper [in the publications list]({{site.baseurl}}{% link research.md
+paper [in the publications list]({% link research.md
 %}#purcellVisualisingLiveCoding2014) if you want to see all the details. Even
 better, put the kettle on and read [Arrian's honours
 thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf).

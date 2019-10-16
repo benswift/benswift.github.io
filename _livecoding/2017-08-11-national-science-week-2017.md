@@ -18,5 +18,5 @@ psyched for the coming (science) week.
 In 2017 I was invited to perform (alongside ABC weatherman [Nate
 Byrne](https://twitter.com/SciNate)) at the launch event to show off the
 arts+science possibilities of livecoding. They liked it so much they [invited me
-back the next year]({{site.baseurl}}{% link
+back the next year]({% link
 _livecoding/2018-08-10-national-science-week-2018.md %}) :)

@@ -114,5 +114,5 @@ branch](https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang) of
 this repo and follow the instructions therein to make your own custom build. Or,
 if you don't want to do that, you could just use the one you've already
 downloaded (since you're visiting this website). Here's a [direct
-link]({{site.baseurl}}{% link assets/js/highlight.pack.js %}) if you want to do
+link]({% link assets/js/highlight.pack.js %}) if you want to do
 things that way.

@@ -8,7 +8,7 @@ permalink: /talks/ozchi-10/
 
 This was my long-paper talk at [OzCHI 2010](http://www.ozchi.org/ozchi2010/)
 about my PhD project (then a work-in-progress). There's a [paper in the
-references section]({{site.baseurl}}{% link research.md
+references section]({% link research.md
 %}#swiftEngagementNetworksSocial2010) as well.
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/ozchi-10.pdf %})
+[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/ozchi-10.pdf %})

@@ -9,4 +9,4 @@ permalink: /talks/viscotheque/
 Exploring the use of bespoke mobile phone interfaces for group musical jamming
 (part of my PhD research).
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/viscotheque.pdf %})
+[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/viscotheque.pdf %})

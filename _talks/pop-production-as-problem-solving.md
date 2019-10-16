@@ -128,7 +128,7 @@ a series of pitched "events" over time
 
 [extempore](https://extemporelang.github.io/) is a programming language designed
 for musical livecoding (written [Andrew Sorensen](https://twitter.com/digego)
-and [me]({{site.baseurl}}{% link index.md %}))
+and [me]({% link index.md %}))
 
 don't worry about the syntax, I'll explain enough for you to follow along
 

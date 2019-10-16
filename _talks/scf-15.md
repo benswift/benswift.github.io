@@ -9,4 +9,4 @@ permalink: /talks/scf-15/
 My talk at the Supercomputing Frontiers conference in Singapore about Extempore
 in HPC.
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/scf-15.pdf %})
+[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/scf-15.pdf %})

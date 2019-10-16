@@ -7,6 +7,6 @@ tags: teaching cs4all
 
 Welcome, Telopea Hour of Code students. Here are a couple of links you'll need
 today: the [p5 web editor](https://alpha.editor.p5js.org/) and the [slides for
-the presentation]({{site.baseurl}}{% link _talks/p5-hour-of-code.md %}).
+the presentation]({% link _talks/p5-hour-of-code.md %}).
 
 Have fun!

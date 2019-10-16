@@ -27,7 +27,7 @@ CECS" looks like.
 {:.hl-para}
 
 Elanor, if you're reading, I want to be a Reimagine Fellow ([update 30 Aug 2019:
-🙌🥳🙌]({{site.baseurl}}{% link _posts/2019-08-30-Im-a-reimagine-fellow.md %})).
+🙌🥳🙌]({% link _posts/2019-08-30-Im-a-reimagine-fellow.md %})).
 And since the
 [EoI](https://cecs.anu.edu.au/staff/project-reimagine-fellows-expression-interest)
 asked for "1000 words **in any format you like**", here's mine in the form of an
@@ -63,7 +63,7 @@ artists have a key role to play in this (just ask Chekhov).
 I've made a career (so far) of deploying my technical/CS skills to artistic
 ends: in my livecoding (both building
 [tools](https://github.com/digego/extempore) and [doing live
-gigs]({{site.baseurl}}{% link livecoding.md %})), in starting the [ANU Laptop
+gigs]({% link livecoding.md %})), in starting the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/),
 in teaching our first-year art+code course
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/), etc.
@@ -186,7 +186,7 @@ engineering/CS/design work.
 
 #### ...in outreach?
 
-Because of my [livecoding]({{site.baseurl}}{% link livecoding.md %}) I get
+Because of my [livecoding]({% link livecoding.md %}) I get
 asked to do outreach stuff all the time (you're welcome, CECS marketing team
 😉). I know why I get asked: DJing with code is so _different_, it's a great
 hook for engaging folks who might not have thought that combining code & musical

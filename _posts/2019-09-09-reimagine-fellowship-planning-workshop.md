@@ -5,13 +5,13 @@ hidden: true
 tags: reimagine
 ---
 
-I'm now a [Reimagine Fellow]({{site.baseurl}}{% link
+I'm now a [Reimagine Fellow]({% link
 _posts/2019-08-30-Im-a-reimagine-fellow.md %}) and stuff to do with that program
-(and getting the [c/c/c studio]({{site.baseurl}}{% link
+(and getting the [c/c/c studio]({% link
 _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) up and running) is
-starting to happen. As I've [done]({{site.baseurl}}{% link
+starting to happen. As I've [done]({% link
 _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) [so
-far]({{site.baseurl}}{% link _posts/2019-03-20-reimagine-fellow-project-pitch.md
+far]({% link _posts/2019-03-20-reimagine-fellow-project-pitch.md
 %}) I'm planning to continue to work on this project "in the open", i.e. on this
 blog. This means that if you've got ideas or want to help out, you can see where
 I'm up to (and [get in touch](mailto:ben.swift@anu.edu.au)), and it also

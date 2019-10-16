@@ -4,7 +4,7 @@ title: In-place XML tree mutation for Jekyll productivity
 tags: web
 ---
 
-I wrote a [reveal.js]({{site.baseurl}}{% link
+I wrote a [reveal.js]({% link
 _posts/2018-09-28-another-reveal.js-plugin-for-jekyll.md %}) plugin for Jekyll
 so that I can make nice slides (especially for my
 [ANU](https://cs.anu.edu.au/courses/comp1720/lectures/)
@@ -33,7 +33,7 @@ builds in **7.2 seconds** on my machine.
 
 Clearly, the `reveal.html` layout is the problem, taking 4.1s (more than half
 the total build time). I suspect that this is because my [reveal
-plugin]({{site.baseurl}}{% link
+plugin]({% link
 _posts/2018-09-28-another-reveal.js-plugin-for-jekyll.md %}) does a bunch of
 copying of (Nokogiri) XML nodes, because I wasn't worrying about performance
 when I wrote it.
@@ -47,7 +47,7 @@ I'm a big immutability fan usually, which is why I built the plugin based on
 copying originally, but with a bit of careful re-parenting the `revealify.rb`
 plugin now looks like
 [this](https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb)
-(see the [linked post above]({{site.baseurl}}{% link
+(see the [linked post above]({% link
 _posts/2018-09-28-another-reveal.js-plugin-for-jekyll.md %}) to see what it
 looked like before).
 

@@ -7,7 +7,7 @@ permalink: /talks/chi-12/
 ---
 
 My talk at [CHI '12: SIGCHI Conference on Human Factors in Computing
-Systems](http://chi2012.acm.org). [Here's the paper]({{site.baseurl}}{% link
+Systems](http://chi2012.acm.org). [Here's the paper]({% link
 research.md %}#swiftBecomingsoundAffectAssemblage2012).
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({{site.baseurl}}{% link assets/pdf/chi-12.pdf %})
+[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/chi-12.pdf %})
