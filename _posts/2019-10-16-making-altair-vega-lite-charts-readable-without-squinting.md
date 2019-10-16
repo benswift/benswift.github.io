@@ -1,17 +1,18 @@
 ---
-title: Making altair/vega-lite charts readable without squinting
+title: Making Altair/Vega-Lite charts readable without squinting
 date: 2019-10-16 20:14 +1100
+tags: web python
 ---
 
 My love for the [Grammar of
 Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448)
-runs deep, and in particular for Hadley Wickham's venerable `ggplot2` which
-showed me the light back when I was a young PhD student. Seriously, once you
-have your head around it it makes playing with different views on data _so
-easy_, and the ability to quickly try lots of different datavis approaches feels
-like you have superpowers. These days I often work in Python, and for datavis
-I'm enjoying [Altair](https://altair-viz.github.io/index.html) which is based
-around the same philosophy.
+runs deep, and in particular for Hadley Wickham's famous `ggplot2` which showed
+me the light back when I was a young PhD student. Seriously, once you have your
+head around how it works it gives you datavis superpowers. These days I often
+work in Python, and for datavis I'm enjoying
+[Altair](https://altair-viz.github.io/index.html) which is based around the same
+philosophy (and outputs to [Vega-Lite](https://vega.github.io/vega-lite/) for
+rendering in the browser).
 
 Recently I've needed to (a) create some snazzy graphs with Altair and (b)
 display them in a slide deck. Part (a) was actually the easy part---the tricky
@@ -44,7 +45,7 @@ labels & even lines are quite small[^examples]. I don't need [fine-grained
 control](https://github.com/vega/vega-lite/issues/1714) over the relative sizes
 of labels vs legend vs title, etc. I just want a simple knob for making all the
 text bigger so that my slides don't double as an [eye
-chart](https://en.wikipedia.org/wiki/Eye_chart). The vega-lite folks (the
+chart](https://en.wikipedia.org/wiki/Eye_chart). The Vega-Lite folks (the
 underlying vis engine which Altair uses) [know about the issue, but don't want
 to fix it](https://github.com/vega/vega-parser/issues/18).
 
@@ -71,7 +72,7 @@ alt.Chart(source).mark_line().encode(x="x", y="f(x)").properties(
 Obviously I'm exaggerating here to make a point, but the key point is that there
 are just a couple of numbers to tweak (`width` and `height`) which control text
 & line size, label sizes, and also titles and legends (if present). And that's
-not something that's exposed as simply in any other way by the Altair/Vega Lite
+not something that's exposed as simply in any other way by the Altair/Vega-Lite
 API.
 
 One final tip: if you want to have consistent sizes & aspect ratios across lots
