@@ -55,10 +55,10 @@ sample rate, format, etc.) we need to:
 it) though---because first we need to figure out how big a buffer to allocate
 for the data---and to do that, we need to know how many frames there are in the
 audio file, and how many channels per frame.
-   
+
 Looking at the documentation (i.e. the comment above the function declaration in
 the C header file) for `SF_INFO` we see that the first (tuple index `0`) and third
-(tuple index `2`) fields are going to be useful 
+(tuple index `2`) fields are going to be useful
 
 ``` c
 struct SF_INFO
@@ -70,7 +70,7 @@ struct SF_INFO
     int         seekable ;
 } ;
 ```
-   
+
 Using all this info, then, we can make a simple xtlang function to return the
 number of frames
 
@@ -84,7 +84,7 @@ number of frames
       ;; return the number of frames
       (tref info 0))))
 
-;; test it out using a wave file from the Extempore assets directory 
+;; test it out using a wave file from the Extempore assets directory
 ;; (it should return the number 288366)
 (get_number_of_frames "assets/samples/piano/60.wav")
 ```
@@ -246,8 +246,8 @@ There's lots more to explore, but I'll leave it here for now. If you've got any
 comments, then get in touch on the [Extempore mailing
 list](mailto:extemporelang@googlegroups.com).
 
-[c-xtlang-interop]: 
+[c-xtlang-interop]:
     There's more detail on how this works in the
-	[Extempore
+    [Extempore
     docs](https://extemporelang.github.io/docs/reference/c-xtlang-interop/)
-	if you're interested.
+    if you're interested.
