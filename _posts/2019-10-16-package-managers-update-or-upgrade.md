@@ -61,5 +61,5 @@ takes me a non-zero amount of time as I switch between languages/tools to sit
 and think "ok, for this project do I want to `update` or `upgrade`"? And that
 makes me sad.
 
-Also, if any of the above commands are incorrect, or if there's a better way,
-then [ping me on twitter](https://twitter.com/benswift).
+If any of the above commands are incorrect, or if there's a better way, then
+[ping me on twitter](https://twitter.com/benswift).
