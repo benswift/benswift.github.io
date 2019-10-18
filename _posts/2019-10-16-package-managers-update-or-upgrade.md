@@ -61,5 +61,9 @@ takes me a non-zero amount of time as I switch between languages/tools to sit
 and think "ok, for this project do I want to `update` or `upgrade`"? And that
 makes me sad.
 
+If there's a deep, principled (or even a shallow, pragmatic) reason to pick one
+or the other then we should observe it, and do it _consistently_. Even if
+there's not, we should toss a coin and be consistent anyway.
+
 If any of the above commands are incorrect, or if there's a better way, then
 [ping me on twitter](https://twitter.com/benswift).
