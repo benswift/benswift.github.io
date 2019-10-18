@@ -5,8 +5,8 @@ tags: tools ux
 
 Quick quiz: for the following language/system [package
 managers](https://en.wikipedia.org/wiki/Package_manager), what's the name of the
-subcommand to modify your project/system so that it downloads and uses the
-latest version of one (or more) of your project's dependencies?
+subcommand to so that your project/system uses the latest version of one (or
+more) of your project's dependencies?
 
 | package manager | language/system |
 |-----------------|-----------------|
@@ -28,25 +28,23 @@ latest version of one (or more) of your project's dependencies?
 
 {:id="answer-table" style="visibility: hidden;"}
 
-| package manager | language/system | (sub)command name        |
-|-----------------|-----------------|--------------------------|
-| `bundle`        | Ruby            | `upgrade`                |
-| `pip`           | Python          | go away[^pip]            |
-| `poetry`        | Python          | `update`                 |
-| `pipenv`        | Python          | `update`                 |
-| `npm`           | javascript      | `update` or `upgrade`    |
-| `yarn`          | javascript      | `upgrade`                |
-| `brew`          | macOS           | `upgrade`                |
-| `apt-get`       | Debian          | `upgrade`                |
-| `cargo`         | Rust            | `update`                 |
-| `stack`         | Haskell         | `update`                 |
-| `lein`          | Clojure         | `ancient upgrade`[^lein] |
-| `dep`           | Go              | `ensure -update`[^dep]   |
-| `cpan`          | Perl            | `upgrade`                |
+| package manager | language/system | (sub)command name     |
+|-----------------|-----------------|-----------------------|
+| `bundle`        | Ruby            | `upgrade`             |
+| `pip`           | Python          | go away[^pip]         |
+| `poetry`        | Python          | `update`              |
+| `pipenv`        | Python          | `update`              |
+| `npm`           | javascript      | `update` or `upgrade` |
+| `yarn`          | javascript      | `upgrade`             |
+| `brew`          | macOS           | `upgrade`             |
+| `apt-get`       | Debian          | `upgrade`             |
+| `cargo`         | Rust            | `update`              |
+| `stack`         | Haskell         | `update`              |
+| `lein`          | Clojure         | `ancient upgrade`     |
+| `dep`           | Go              | `ensure -update`      |
+| `cpan`          | Perl            | `upgrade`             |
 
 [^pip]: <https://github.com/pypa/pip/issues/59>
-[^lein]: <https://github.com/xsc/lein-ancient>
-[^dep]: <https://golang.github.io/dep/docs/daily-dep.html>
 
 For bonus points, which of them _also_ recognise the "other" subcommand but it
 does something different? For even more bonus points, when does that "other"
@@ -60,3 +58,6 @@ Look, I'm not at all saying that you should just go and blindly
 takes me a non-zero amount of time as I switch between languages/tools to sit
 and think "ok, for this project do I want to `update` or `upgrade`"? And that
 makes me sad.
+
+Also, if any of the above commands are incorrect, or if there's a better way,
+then [ping me on twitter](https://twitter.com/benswift).
