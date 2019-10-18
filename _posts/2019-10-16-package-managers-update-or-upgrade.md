@@ -5,8 +5,10 @@ tags: tools ux
 
 Quick quiz: for the following language/system [package
 managers](https://en.wikipedia.org/wiki/Package_manager), what's the name of the
-subcommand to so that your project/system uses the latest version of one (or
-more) of your project's dependencies?
+subcommand to update[^or-upgrade] your project/system to the latest version of
+one (or more) of your project's dependencies?
+
+[^or-upgrade]: or, y'know, upgrade
 
 | package manager | language/system |
 |-----------------|-----------------|
