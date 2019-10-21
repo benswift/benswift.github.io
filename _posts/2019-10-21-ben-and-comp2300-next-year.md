@@ -18,7 +18,7 @@ _posts/2019-08-30-Im-a-reimagine-fellow.md %})). In 2020, [Charles
 Martin](https://cs.anu.edu.au/code-creativity-culture/charles-martin/) will be
 convening & running COMP2300---and he'll do a great job. I'll probably pop in
 from time to time to give a guest lecture (and maybe even sing a revision song)
-but he'll be the main man. So if you've got any questions about taking that
+but he'll be the main convenor. So if you've got any questions about taking that
 course in 2020 (either as a student, or perhaps as part of the tutoring team)
 then you should reach out to [Charles](mailto:charles.martin@anu.edu.au).
 
