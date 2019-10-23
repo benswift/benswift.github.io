@@ -17,19 +17,19 @@ I'm not publicising it just yet.
 
 ## Future
 
-# Project Management Approach
+# Project management approach
 
-# Project Scope
+# Project scope
 
-## In Scope – Tangible outcomes
+## In Scope – tangible outcomes
 
-## In Scope – inTangible outcomes
+## In Scope – intangible outcomes
 
-## Not in Scope
+## Not in scope
 
-## Project Change Control Process
+## Project change control process
 
-## Triage Protocol
+## Triage protocol
 
 # Governance
 
@@ -37,38 +37,38 @@ I'm not publicising it just yet.
 
 ## Reporting and management
 
-## Milestone List / Key Milestones
+## Milestone list / key milestones
 
-## Schedule / Work Breakdown Structure – Baseline and updates.
+## Schedule / work breakdown structure – baseline and updates
 
 ### Link to WBS tool
 
-# Organisational Readiness
+# Organisational readiness
 
-## Impact Assessment and Action Plan
+## impact assessment and action plan
 
-### Link to Change Impact assessment
+### Link to change impact assessment
 
-## Stakeholder Engagement and Communications Management Plan
+## Stakeholder engagement and communications management plan
 
 ### Link to stakeholder register/map
 
 ### Link to detailed communications plan
 
-# Cost Management Plan
+# Cost management plan
 
 ## Financial controls and reporting
 
-# Quality Management Plan
+# Quality management plan
 
-# Risk Management Plan
+# Risk management plan
 
-## Key Risks to Direct / Tangible project outcomes
+## Key risks to direct / tangible project outcomes
 
-## Key Risks to Indirect/ Intangible project outcomes
+## Key risks to indirect/ intangible project outcomes
 
-# Staff Management Plan
+# Staff management plan
 
 # Approval
 
-# Document Information
+# Document information
