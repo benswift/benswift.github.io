@@ -195,10 +195,10 @@ Work in pairs or small groups, look at the code below and predict what might hap
 ```
 
 > Note: The dsp function takes as input:
-> - in: the input audio sample, e.g. from the microphone.
-> - time: an i64 representing the time.
-> - chan: another i64 which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..
-> - data: this is a pointer to a SAMPLE type (which is float by default), and can be used to pass arbitrary data into the dsp function.
+> - **in**: the input audio sample, e.g. from the microphone.
+> - **time**: an `i64` representing the time.
+> - **chan**: another `i64` which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..
+> - **data**: this is a pointer to a `SAMPLE` type (which is float by default), and can be used to pass arbitrary data into the dsp function.
 
 Think about what is the `i64` type in the above Note?
 
