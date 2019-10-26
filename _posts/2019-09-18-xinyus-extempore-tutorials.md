@@ -294,6 +294,182 @@ Can you make a chord (or play different notes at the same time) function by usin
 
 ## Tutorial Three
 
+## Predict and Run
+
+```xtlang
+;; loop major scale
+(let loop-white-keys((scale '(0 2 4 5 7 9 11 12 14 16 17 19 21 23))
+           (time 0))
+  (play-note (+ (now) time) synth (+ 60 (car scale)) 80 4000)
+  (if (not (null? (cdr scale)))
+      (loop-white-keys (cdr scale) (+ time 10000))))
+      
+;; another loop for notes
+(let loop-black-keys ((scale '(1 3 6 8 10 13 15 18 20 22))
+           (time 0))
+  (play-note (+ (now) time) synth (+ 60 (car scale)) 80 4000)
+  (if (not (null? (cdr scale)))
+      (loop-black-keys (cdr scale) (+ time 10000))))
+```
+
+> Note:
+> - `car` return the first element of a list, 
+> - `cdr` return the rest of the elements in a list, that is, it returns the part of the list that follows the first item.
+> - `if <test> <consequent> <alternate>`
+> - [more conditionals syntax](https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html)
+
+> Note: the syntax for `let` is: `let <variable> <bindings> <body>`
+
+> Note: in the above examples, we used the named `let`. Therefore, the `<body>` could be repeatly executed by invoking the `let` procedure named by the `<variable>`.
+
+Can you predict what will happen? Then run the code to check your thoughts.
+
+Before you run the code above, do not forget to load the libraries, define and add an instrument `synth` to the `dsp` output sink closure:
+
+```xtlang
+;; load the instruments file
+(sys:load "libs/core/instruments.xtm")
+(sys:load "libs/core/pc_ivl.xtm")
+
+;; define a synth using the provided components
+(make-instrument synth fmsynth)
+
+;; add the instrument to the DSP output sink closure
+(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (synth in time chan dat)))
+
+(dsp:set! dsp)
+```
+Now, Let's play a chord on a list of frequencies! Can you predict what will happen here:
+
+```xtlang
+;; play a chord
+(map (lambda (p)
+       (play-note (now) synth p 80 44100))
+     (list 72 76 79))
+```
+> Note: again, the parameters for `lambda` is: `lambda <formals> <body>`
+
+> Note: here we have two methods to express a `list`: For example, `(list 72 76 79)` and `'(72 76 79)`
+
+Can you guess what does `map` do?
+
+Here is another method to play the same chord that we ran above:
+
+```xtlang
+;; another method for play the same chord
+(define play-a-chord
+  (lambda (time chord)
+    (for-each (lambda (p)
+                (play-note time synth p 80 44100))
+              chord)
+    ))
+    
+(play-a-chord (now) '(72 76 79))
+```
+
+Can you guess what will happen after running `play-a-chord`?
+
+How about more chords? 
+
+```xtlang
+;; markov chord progression
+(define my-progression
+  (lambda (time chords)
+    (play-a-chord time (car chords))
+    (define loop-chords '())
+    (if (not (null? (cdr chords)))
+        (set! loop-chords (cdr chords))
+        (set! loop-chords '((72 76 79)(69 72 76)(65 69 72)(67 71 74))))
+    (callback (+ time 40000) 'my-progression (+ time 44100) loop-chords))
+  )
+
+(my-progression (now) '((72 76 79)(69 72 76)(65 69 72)(67 71 74)))
+```
+> Note: the syntax for `set!` is `set! <variable> <expression>`, which could assign the `<expression>` to the `<variable>`
+
+Run the code. Dose it work as you predicted?
+
+
+## Investigate
+
+Work in pairs or in small groups, work out the answers to the following questions:
+
+1. Currently, you have already seen `let`, `define` and `set!`. What are the differences between `let`, `define` and `set!`? E.g:
+	- `set!` doesn't define the variable, rather it is used to assign the variable a new value.
+	- The scope of variables defined by `let` are bound to the latter.
+	`define` doesn't surround the body with parentheses.
+
+2. Here is another method to play the same chord that we predicted and ran before:
+
+```xtlang
+;; another method for play the same chord
+(define play-a-chord
+  (lambda (time chord)
+    (for-each (lambda (p)
+                (play-note time synth p 80 44100))
+              chord)
+    ))
+    
+(play-a-chord (now) '(72 76 79))
+```
+Compare to the ```map``` one, can you find what is the difference between ```map``` and ```for-each```?	
+- Evaluation order?  
+- Return?
+
+3. We could use `do` to make a loop on playing the chord with the above `play-a-chord` method:
+
+```xtlang
+;; use do to loop the chord
+(do ((i 0 (+ i 1)))
+    ((> i 3000) ())
+    (play-a-chord (now) '(72 76 79)))
+```
+Compare to other `loop` or other iteration methods, can you find how does the `do` work here?
+
+> Hint: the syntax of `do` is: 
+```xtlang
+(do ((<variable1> <init1> <step1>) ...)
+    (<test> <expression> ...)
+    <command> ...)
+```
+> - if the `<test>` result is `false`, then the sequence of `<command>` would be evaluated.
+> - if the `<test>` result is `true`, the sequence of `<expression>` would be evaluated from left to right, and the last `<expression>`'s values would be returned at the end.
+> - the [boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type) for understanding `true` and `false`.
+	
+## Modify
+
+Now, can you please modify the `my-progression` function so that it could loop each chord for four times before going to the next chord?
+
+```xtlang
+;; hint
+;; modified my-progression
+(define my-progression-modify
+  (lambda (time chords n)
+    
+    (let loop ((loop-times 0))
+      (if (= loop-times n)
+          (display "stopped")
+          (begin (play-a-chord (+ time (* loop-times 44100)) (car chords))
+            (loop (+ loop-times 1)))))
+    ; (loop-n-times n (play-a-chord time (car chords)))
+    
+    (define loop-chords-modify '())
+    (if (not (null? (cdr chords)))
+        (set! loop-chords-modify (cdr chords))
+        (set! loop-chords-modify '((72 76 79)(69 72 76)(65 69 72)(67 71 74))))
+    
+    (callback (+ time (* n 40000)) 'my-progression-modify (+ time (* n 44100)) loop-chords-modify n))
+  )
+  
+(my-progression-modify (now) '((72 76 79)(69 72 76)(65 69 72)(67 71 74)) 4)
+```
+
+> Note: here we used the `begin` to do the sequencing: `begin <expression 1> <expression 2> ...<expression n>`
+> - the sequence of `<expression i>` will be evaluated sequentially from left to right.
+> - `begin` will return the value of the last `<expression n>`.
+
 ## Tutorial Four
 
 ## Going further
