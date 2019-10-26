@@ -255,6 +255,7 @@ We make a `loop` function above, but how does the `loop` work? let's see a simpl
 
 (test-loop())
 ```
+
 > Note: the parameters for `callback` are `callback <time> <func> <args>`
 
 Can you predict what will happen when you run the `test-loop` function? Run the code to check your thoughts.
@@ -294,7 +295,7 @@ Can you make a chord (or play different notes at the same time) function by usin
 
 ## Tutorial Three
 
-## Predict and Run
+### Predict and Run
 
 ```xtlang
 ;; loop major scale
@@ -391,8 +392,7 @@ How about more chords?
 
 Run the code. Dose it work as you predicted?
 
-
-## Investigate
+### Investigate
 
 Work in pairs or in small groups, work out the answers to the following questions:
 
@@ -438,7 +438,7 @@ Compare to other `loop` or other iteration methods, can you find how does the `d
 > - if the `<test>` result is `true`, the sequence of `<expression>` would be evaluated from left to right, and the last `<expression>`'s values would be returned at the end.
 > - the [boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type) for understanding `true` and `false`.
 	
-## Modify
+### Modify
 
 Now, can you please modify the `my-progression` function so that it could loop each chord for four times before going to the next chord?
 
@@ -469,6 +469,11 @@ Now, can you please modify the `my-progression` function so that it could loop e
 > Note: here we used the `begin` to do the sequencing: `begin <expression 1> <expression 2> ...<expression n>`
 > - the sequence of `<expression i>` will be evaluated sequentially from left to right.
 > - `begin` will return the value of the last `<expression n>`.
+
+### Make
+
+1. Based on the previous code, can you make some creative melody by yourself?
+2. Can you play your melody and the chords at the same time?
 
 ## Tutorial Four
 
