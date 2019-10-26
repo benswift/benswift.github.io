@@ -144,7 +144,7 @@ Work in pairs or in small groups, work out the answers to the following question
 2. What happened after you evaluated each "chunk" of Extempore code?
 3. Can you guess what would happen if you compile the code in a different order?
 
-> Note: you can add comments (starting with **;;**) to the program to make some notes for you to understand the code. The comments are generally ignored by compilers and interpreters.
+> Note: you can add [comments](https://en.wikipedia.org/wiki/Comment_(computer_programming)) (starting with **;;**) to the program to make some notes for you to understand the code. The comments are generally ignored by compilers and interpreters.
 
 ### Modify
 
@@ -477,6 +477,149 @@ Now, can you please modify the `my-progression` function so that it could loop e
 2. Can you play your melody and the chords at the same time?
 
 ## Tutorial Four
+
+### Predict and Run
+
+In this tutorial, we will learn how to do samplers in Extempore. Extempore provides a built-in sampler in `libs/external/instruments_ext.xtm`, so let's load the libraries first:
+
+```xtlang
+;; load the libs
+(sys:load "libs/external/instruments_ext.xtm")
+(sys:load "libs/core/instruments.xtm")
+```
+
+We are going to create a drum sampler, can you guess what is happening here:
+
+```xtlang
+;; TODO
+;; Set/Change the path of the subdirectory “OH” in your code.
+;; In my computer it’s like:
+(define drum-path "/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/")
+
+;; Load some wave files into drums sampler:
+(set-sampler-index drums (string-append drum-path "kick_OH_F_9.wav") *gm-kick* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "snareStick_OH_F_9.wav") *gm-side-stick* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "snare_OH_FF_9.wav") *gm-snare* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hihatClosed_OH_F_20.wav") *gm-closed-hi-hat* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hihatFoot_OH_MP_12.wav") *gm-pedal-hi-hat* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hihatOpen_OH_FF_6.wav") *gm-open-hi-hat* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "loTom_OH_FF_8.wav") *gm-low-floor-tom* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "hiTom_OH_FF_9.wav") *gm-hi-floor-tom* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "crash1_OH_FF_6.wav") *gm-crash* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "ride1_OH_FF_4.wav") *gm-ride* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "china1_OH_FF_8.wav") *gm-chinese* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "cowbell_FF_9.wav") *gm-cowbell* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "bellchime_F_3.wav") *gm-open-triangle* 0 0 0 1)
+(set-sampler-index drums (string-append drum-path "ride1Bell_OH_F_6.wav") *gm-ride-bell* 0 0 0 1)
+
+```
+Let's look at the first row of `set-sampler-index`. Can you guess why do we need `*gm-kick*`? What does `string-append drum-path "kick_OH_F_9.wav"` do?
+
+> Note: How to load samples (you can also find more information from [github]( https://digego.github.io/extempore/sampler.html)).
+> 1.	Download the instrument samples from [Salamader Drumkit](https://archive.org/download/SalamanderDrumkit/salamanderDrumkit.tar.bz2).
+> 2.	Unzip the samples and put them wherever you like on your computer.
+> 3.	Set/Change the path of the subdirectory "OH" in your code. In my computer it’s like:   `define drum-path "/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/"`.
+
+
+Before you run the code, do not forget to define and add an instrument `drums` to the `dsp` output sink closure, and set the `dsp` as well:
+
+```xtlang
+;; define a sampler (called drums) using the default sampler note kernel and effects
+(make-instrument drums sampler)
+;; define a synth using the provided components
+(make-instrument synth fmsynth)
+
+;; add the sampler to the dsp output callback
+(bind-func dsp:DSP
+  (lambda (in time chan dat)
+    (+ (synth in time chan dat)
+       (drums in time chan dat))))
+
+(dsp:set! dsp)
+```
+
+Sounds could be played by calling the below instructions, the similar things as we did before:
+
+```xtlang
+;; evaluate
+(play-note (now) drums *gm-open-triangle* 80 44100)
+(play-note (now) drums *gm-snare* 80 44100)
+(play-note (now) drums *gm-closed-hi-hat* 80 44100)
+```
+
+Can you predict what will happen after you run above three lines respectively? Then run the code to check your thoughts.
+
+---
+
+Now, a cool thing we will do is to define a `metronome` to evenly distribute our beats with respect to tempo changes.
+
+Can you predict what is happening here?
+
+```xtlang
+;; create a metronome starting at 120 bpm
+(define *metro1* (make-metro 120))
+
+;; beat loop along the metronome
+(define drum-loop
+  (lambda (time duration drum)
+    (println time duration)
+    (play-note (*metro1* time) drums drum 80 (*metro1* 'dur duration))
+    (callback (*metro1* (+ time (* .5 duration))) 'drum-loop (+ time duration)
+              duration drum)))
+
+(drum-loop (*metro1* 'get-beat) 1 *gm-hi-floor-tom*)
+```
+
+Let's define another metronome `metronome2`:
+
+```xtlang
+;; create another metronome starting at 120 bpm
+(define *metro2* (make-metro 120))
+```
+Can you guess what will happen after you evaluate this `drum-loop-tempo-shift`? What does `println` will do?
+
+```xtlang
+;; set tempo shift
+(define drum-loop-tempo-shift
+  (lambda (time duration drum)
+    (*metro2* 'set-tempo (+ 20 (* 6. (cos (modulo time 9)))))
+    (println (+ 20 (* 6. (cos (modulo time 9)))))
+    (play-note (*metro2* time) drums drum 80 (*metro2* 'dur duration))
+    (callback (*metro2* (+ time (* .5 duration))) 'drum-loop-tempo-shift (+ time duration)
+              (random (list 0.5)) drum)))
+
+(drum-loop-tempo-shift (*metro2* 'get-beat) 0.5 *gm-cowbell*)
+```
+
+> Note: `println` calls the polymorphic function `print` for each supplied argument, but `println` automatically provides both spaces and a carriage return.
+
+Run the code. Did it work as you predicted?
+
+### Investigate
+
+Work in pairs or in small groups, work out the answers to the following questions:
+
+1. What does the function `make-metro` do?
+2. What does `*metro* 'get-beat` do?
+3. What does `*metro* 'dur` do?
+4. What does `*metro* set-tempo` do?
+	
+### Modify
+
+Work in pairs or in small groups, work out the answers to the following questions:
+
+1. Can you load the piano samples as well? ([Salamander piano](http://download.linuxaudio.org/lau/SalamanderGrandPianoV2/SalamanderGrandPianoV2_44.1khz16bit.tar.bz2)).
+2. Can you pay multiple drums with different tempo at the same time?
+
+```xtlang
+;;hint
+(drum-loop (*metro1* 'get-beat) 1 *gm-hi-floor-tom*)
+(drum-loop (*metro1* 'get-beat) 0.3 *gm-open-triangle* )
+```
+
+### Make
+
+Combine the knowledge that you learned before. Now you can use drums, synth, piano and metronome to create your own music.
 
 ## Going further
 
