@@ -175,7 +175,7 @@ Compare to the `(random)` in the white noise part above, does the `(random)` wor
 
 ## Tutorial Two
 
-### Predict
+### Predict and Run
 
 Work in pairs or small groups, look at the code below and predict what might happen when it runs.
 
@@ -192,10 +192,48 @@ Work in pairs or small groups, look at the code below and predict what might hap
     (fmsynth in time chan dat)))
 
 (dsp:set! dsp)
+```
 
+> Note: The dsp function takes as input:
+> - in: the input audio sample, e.g. from the microphone.
+> - time: an i64 representing the time.
+> - chan: another i64 which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..
+> - data: this is a pointer to a SAMPLE type (which is float by default), and can be used to pass arbitrary data into the dsp function.
+
+Think about what is the `i64` type in the above Note?
+
+> Primitive types in Extempore:
+>
+> Integers: 
+> - `i1`:  (boolean) uses 1 bit.
+> - `i8`:  (char) uses 8 bits (1 byte), which could store 2^8 = 256 unique integer values, -128 ~ 127.
+> - `i32`: uses 32 bits, which could store 2^32 uniquew integer values, -2^31 ~ (2^31 - 1).
+> - `i64`: (default) uses 64 bits, which could store 2^63 uniquew integer values, -2^63 ~ (2^63 - 1).
+>
+> Floats:
+> - `float`:     a single precision (32 bit) floating-point data type.
+> - `double`:    (default), a double precision (64 bit) floating-point data type.
+
+> Moreover, for your interests:
+>
+> [Pointer](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) types:
+> - `double*`: a pointer to a double.
+> - `i64*`: a pointer to a 64-bit integer.
+> - `i64**`: a pointer to a pointer to a 64-bit integer.
+
+Now, we could play a note by using the fmsynth instrument that we just defined:
+
+```xtlang
 ;; play a note on our fmsynth
 (play-note (now) fmsynth (random 60 80) 80 *second*)
+```
+> Note: the parameters for `play-note` are `play-note <start-time> <instrument> <note-frequency> <note-duration>`
 
+What would happend if you play the note for the second time (or multiple times)? Why is the note different?
+
+It's the time to make a loop in Extempore:
+
+```xtlang
 ;; make a loop
 (define my-loop
   (lambda (time)
@@ -205,24 +243,33 @@ Work in pairs or small groups, look at the code below and predict what might hap
 (my-loop (now))
 ```
 
-> Note: The dsp function takes as input:
-> - in: the input audio sample, e.g. from the microphone.
-> - time: an i64 representing the time.
-> - chan: another i64 which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..
-> - data: this is a pointer to a SAMPLE type (which is float by default), and can be used to pass arbitrary data into the dsp function.
+We make a `loop` function above, but how does the `loop` work? let's see a simpler example:
 
-### Run
+```xtlang
+;; let's see a simpler loop example
+(define test-loop
+ (lambda ()
+   (println "I'm looping...")
+   (callback (+ (now) 10000 *second*) 'test-loop ()))
+)
 
-Run the code. Dose it work as predicted?
+(test-loop())
+```
+> Note: the parameters for `callback` are `callback <time> <func> <args>`
+
+Can you predict what will happen when you run the `test-loop` function? Run the code to check your thoughts.
+> Note: do not forget to check your terminal panel.
 
 ### Investigate
 
 Work in pairs or in small groups, work out the answers to the following questions:
 
-1. What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click [here](https://digego.github.io/extempore/scheme-xtlang-interop.html)
-2. What is the difference between using **now** versus using **time**?  More information click [here](https://digego.github.io/extempore/time.html)
+1. What does `my-loop` do?
+2. What does the `callback` in the loop do?
+3. What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click [here](https://digego.github.io/extempore/scheme-xtlang-interop.html)
+4. What is the difference between using **now** versus using **time**?  More information click [here](https://digego.github.io/extempore/time.html)
 
-> Note: you can add comments (starting with `;;`) to the program to make some notes for you to understand the code.
+> Note: you can add [comments](https://en.wikipedia.org/wiki/Comment_(computer_programming)) (starting with `;;`) to the program to make some notes for you to understand the code.
 
 ### Modify
 
@@ -244,6 +291,10 @@ Work in pairs or in small groups, can you modify the above code and make a loop 
 ### Make
 
 Can you make a chord (or play different notes at the same time) function by using similar ideas to the previous program?
+
+## Tutorial Three
+
+## Tutorial Four
 
 ## Going further
 
