@@ -169,7 +169,7 @@ Now, let’s move `amplitude`, `frequency` and `two-pi` outside of lambda to mak
 
 Can you play a random frequency sound every time when you redefine the `dsp` function?
 > Note:
-> - You could use `(random 440.0 700.0)` to randomly generate a value between 440.0 and 700.0
+> You could use `(random 440.0 700.0)` to randomly generate a value between 440.0 and 700.0
 
 Compare to the `(random)` in the white noise part above, does the `(random)` work differently here? Can you explain how `(random)` can be either for "control" (e.g. see the above sine wave part) or for "signal" (e.g. see the white noise part)?
 
@@ -197,7 +197,7 @@ Work in pairs or small groups, look at the code below and predict what might hap
 > Note: The dsp function takes as input:
 > - **in**: the input audio sample, e.g. from the microphone.
 > - **time**: an `i64` representing the time.
-> - **chan**: another `i64` which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels..
+> - **chan**: another `i64` which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels.
 > - **data**: this is a pointer to a `SAMPLE` type (which is float by default), and can be used to pass arbitrary data into the dsp function.
 
 Think about what is the `i64` type in the above Note?
@@ -259,6 +259,7 @@ We make a `loop` function above, but how does the `loop` work? let's see a simpl
 > Note: the parameters for `callback` are `callback <time> <func> <args>`
 
 Can you predict what will happen when you run the `test-loop` function? Run the code to check your thoughts.
+
 > Note: do not forget to check your terminal panel.
 
 ### Investigate
@@ -267,8 +268,8 @@ Work in pairs or in small groups, work out the answers to the following question
 
 1. What does `my-loop` do?
 2. What does the `callback` in the loop do?
-3. What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click [here](https://digego.github.io/extempore/scheme-xtlang-interop.html)
-4. What is the difference between using **now** versus using **time**?  More information click [here](https://digego.github.io/extempore/time.html)
+3. What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click [here](https://digego.github.io/extempore/scheme-xtlang-interop.html).
+4. What is the difference between using **now** versus using **time**?  More information click [here](https://digego.github.io/extempore/time.html).
 
 > Note: you can add [comments](https://en.wikipedia.org/wiki/Comment_(computer_programming)) (starting with `;;`) to the program to make some notes for you to understand the code.
 
@@ -314,10 +315,10 @@ Can you make a chord (or play different notes at the same time) function by usin
 ```
 
 > Note:
-> - `car` return the first element of a list, 
+> - `car` return the first element of a list.
 > - `cdr` return the rest of the elements in a list, that is, it returns the part of the list that follows the first item.
 > - `if <test> <consequent> <alternate>`
-> - [more conditionals syntax](https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html)
+> - [more conditionals syntax](https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html).
 
 > Note: the syntax for `let` is: `let <variable> <bindings> <body>`
 
@@ -352,7 +353,7 @@ Now, Let's play a chord on a list of frequencies! Can you predict what will happ
 ```
 > Note: again, the parameters for `lambda` is: `lambda <formals> <body>`
 
-> Note: here we have two methods to express a `list`: For example, `(list 72 76 79)` and `'(72 76 79)`
+> Note: here we have two methods to express a `list`: For example, `(list 72 76 79)` and `'(72 76 79)`.
 
 Can you guess what does `map` do?
 
