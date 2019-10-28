@@ -25,7 +25,12 @@ I'm not publicising it just yet.
 
 ## In Scope – intangible outcomes
 
+- relationships with CASS in particular, but also schools
+- ANU/CECS reputation
+
 ## Not in scope
+
+- research outputs (they're possible, but let's not promise them)
 
 ## Project change control process
 
