@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2", "~> 2"
   gem "jekyll-seo-tag", "~> 2"
   # assets
+  gem "sprockets", "~> 3"
   gem "jekyll-assets", "~> 3"
   gem "autoprefixer-rails", "~> 9"
   # compose
