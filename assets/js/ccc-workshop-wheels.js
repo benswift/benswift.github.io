@@ -57,7 +57,7 @@ let codeWheel = makeWheel(
 	"databases",
 	"networks",
 	"UI/UX design",
-	"data structures",
+	"data analytics",
 	"compilers",
 	"operating systems"
   ],
