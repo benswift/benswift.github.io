@@ -31,7 +31,7 @@ us) two things:
 - a set of learning outcomes / assessment criteria which will be used to assess
   the submissions for your assignment
 
-## A few more things...
+### To get you started...
 
 - as for the age/background of the students, it's up to you---e.g. early
   high-school one-off workshop, year 11/12 extension program (i.e. the c/c/c
