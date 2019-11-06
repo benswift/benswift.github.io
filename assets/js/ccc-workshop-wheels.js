@@ -12,7 +12,7 @@ let segmentColours = [
 function makeWheel(labels, canvasID) {
   return new Winwheel({
 	'numSegments'   : labels.length,   // Specify number of segments.
-	'outerRadius'   : 200,  // Set radius to so wheel fits the background.
+	'outerRadius'   : 300,  // Set radius to so wheel fits the background.
 	'textFontSize'  : 24,   // Set font size accordingly.
 	'textMargin'    : 0,    // Take out default margin.
 	'segments'      : labels.map((t, i) => ({'text': t,
@@ -47,5 +47,18 @@ function displaySpinResult(indicatedSegment)
   document.getElementById("spin-result").textContent = indicatedSegment.text;
 }
 
-let codeWheel = makeWheel(["algorithms", "robotics", "SoftEng"], "codeWheel");
+let codeWheel = makeWheel(
+  [
+	"algorithms",
+	"robotics",
+	"Software Eng",
+	"databases",
+	"networks",
+	"UI/UX design",
+	"data structures",
+	"compilers",
+	"operating systems"
+  ],
+  "codeWheel");
+
 codeWheel.draw();
