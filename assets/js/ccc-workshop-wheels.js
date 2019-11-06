@@ -30,6 +30,7 @@ function makeWheel(labels, canvasID) {
 function startSpin(wheel)
 {
   wheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
+  wheel.rotationAngle = wheel.rotationAngle % 360;
   wheel.startAnimation();
 }
 // -------------------------------------------------------
