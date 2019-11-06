@@ -11,14 +11,12 @@ let segmentColours = [
 
 function makeWheel(labels, canvasID) {
   return new Winwheel({
-	'canvasID'      : canvasID,
 	'numSegments'   : labels.length,   // Specify number of segments.
-	'outerRadius'   : 800,  // Set radius to so wheel fits the background.
-	'innerRadius'   : 400,  // Set inner radius to make wheel hollow.
-	'textFontSize'  : 16,   // Set font size accordingly.
+	'outerRadius'   : 200,  // Set radius to so wheel fits the background.
+	'textFontSize'  : 24,   // Set font size accordingly.
 	'textMargin'    : 0,    // Take out default margin.
-	'segments'      : labels.map((t, i) => ({text: t,
-											 fillStyle: segmentColours[i%segmentColours.length]})),
+	'segments'      : labels.map((t, i) => ({'text': t,
+											 'fillStyle': segmentColours[i%segmentColours.length]})),
 	'animation' :           // Define spin to stop animation.
 	{
 	  'type'     : 'spinToStop',
