@@ -90,7 +90,9 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 <canvas id="canvas" width="800" height="800" onclick='startSpin(codeWheel);'>
 </canvas>
 
-result: <span id="spin-result"></span>
+{:.hl-para style="font-size:2em;margin-bottom:1em;"}
+
+result: <strong><span id="spin-result"></span></strong>
 
 {% asset js/ccc-workshop-wheels.js %}
 
