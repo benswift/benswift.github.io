@@ -29,6 +29,7 @@ function makeWheel(labels, canvasID) {
 
 function startSpin(wheel)
 {
+  wheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
   wheel.startAnimation();
 }
 // -------------------------------------------------------
@@ -37,7 +38,6 @@ function startSpin(wheel)
 function resetWheel(wheel)
 {
   wheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
-  // wheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
   wheel.draw();                // Call draw to render changes to the wheel.
 }
 

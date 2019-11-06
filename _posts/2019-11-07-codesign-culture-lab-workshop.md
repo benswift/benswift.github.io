@@ -19,9 +19,7 @@ TBC.
 
 ### code
 
-<canvas id="canvas" width="800" height="400">
+<canvas id="canvas" width="800" height="400" onclick='startSpin(codeWheel);'>
 </canvas>
 
 {% asset js/ccc-workshop-wheels.js %}
-
-<button onclick='startSpin(codeWheel);'>spin the code wheel</button>
