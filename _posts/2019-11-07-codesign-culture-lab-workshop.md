@@ -37,9 +37,9 @@ us) two things:
   high-school one-off workshop, year 11/12 extension program (i.e. the c/c/c
   studio), first-year assignment at uni, graduate-level coursework, etc.
 
-- these problems are _not solvable in the context of a single assessment task_,
-  so don't make that the criteria---instead, you want students to explore &
-  understand the problem, process & tool more deeply
+- these problems are _not solvable in a single assessment task_, so don't make
+  that the criteria---instead, you want students to explore & understand the
+  problem, process & tool more deeply
 
 - think: how might the _tool_ and the _process_ shape the responses to the
   problem? can you use this to your advantage in encouraging students to attain
