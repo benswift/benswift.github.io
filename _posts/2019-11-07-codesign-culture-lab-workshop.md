@@ -1,6 +1,7 @@
 ---
 title: CoDesign Culture Lab workshop
 tags: reimagine ccc
+hidden: true
 ---
 
 {% include toc.html %}
