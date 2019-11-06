@@ -86,6 +86,7 @@ down in _your_ assessment task spec.
 Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
+<div style="width:100%;font-size:6em;text-align:center;margin-bottom:-0.3em;">⧨</div>
 <canvas id="canvas" width="800" height="800" onclick='startSpin(codeWheel);'>
 </canvas>
 
