@@ -12,7 +12,14 @@ TBC.
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 {% asset js/Winwheel.js %}
 
-<canvas id="canvas" width="800" height="800">
+
+## Let's spin the wheels![^winwheel]
+
+[^winwheel]: wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas McKechie
+
+### code
+
+<canvas id="canvas" width="800" height="400">
 </canvas>
 
 {% asset js/ccc-workshop-wheels.js %}
