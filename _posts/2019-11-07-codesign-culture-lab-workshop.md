@@ -86,7 +86,7 @@ down in _your_ assessment task spec.
 Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
-<canvas id="canvas" width="800" height="600" onclick='startSpin(codeWheel);'>
+<canvas id="canvas" width="800" height="800" onclick='startSpin(codeWheel);'>
 </canvas>
 
 result: <span id="spin-result"></span>

@@ -6,15 +6,13 @@ let segmentColours = [
   "#d35400",
   "#9b59b6",
   "#c0392b",
-  "#e67e22",
-  "#34495e",
-  "#16a085"
+  "#e67e22"
 ];
 
 function makeWheel(labels, canvasID) {
   return new Winwheel({
 	numSegments  : labels.length,   // Specify number of segments.
-	outerRadius  : 300,  // Set radius to so wheel fits the background.
+	outerRadius  : 400,  // Set radius to so wheel fits the background.
 	textFontSize : 24,   // Set font size accordingly.
 	textMargin   : 0,    // Take out default margin.
 	segments     : labels.map((t, i) => ({text: t,
@@ -49,18 +47,33 @@ function displaySpinResult(indicatedSegment)
   document.getElementById("spin-result").textContent = indicatedSegment.text;
 }
 
+let acmBoK2016 = [
+  "Circuits & Electronics",
+  "Computing Algorithms",
+  "Computer Architecture",
+  "Digital Design",
+  "Embedded Systems",
+  "Computer Networks",
+  "Information Security",
+  "Signal Processing",
+  "Systems & Project Eng.",
+  "Software Design"
+];
+
+let benCodeConcepts = [
+  "algorithms",
+  "robotics",
+  "Software Eng",
+  "databases",
+  "networks",
+  "UI/UX design",
+  "data analytics",
+  "compilers",
+  "operating systems"
+]
+
 let codeWheel = makeWheel(
-  [
-	"algorithms",
-	"robotics",
-	"Software Eng",
-	"databases",
-	"networks",
-	"UI/UX design",
-	"data analytics",
-	"compilers",
-	"operating systems"
-  ],
+  acmBoK2016,
   "codeWheel");
 
 codeWheel.draw();
