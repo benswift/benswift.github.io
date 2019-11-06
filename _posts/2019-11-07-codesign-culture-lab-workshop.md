@@ -23,3 +23,5 @@ TBC.
 </canvas>
 
 {% asset js/ccc-workshop-wheels.js %}
+
+result: <span id="spin-result"></span>

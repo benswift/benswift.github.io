@@ -22,7 +22,7 @@ function makeWheel(labels, canvasID) {
 	  'type'     : 'spinToStop',
 	  'duration' : 5,
 	  'spins'    : 8,
-	  'callbackFinished' : alertPrize
+	  'callbackFinished' : displaySpinResult
 	}
   });
 }
@@ -41,10 +41,10 @@ function resetWheel(wheel)
   wheel.draw();                // Call draw to render changes to the wheel.
 }
 
-function alertPrize(indicatedSegment)
+function displaySpinResult(indicatedSegment)
 {
-  // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-  alert("result: " + indicatedSegment.text);
+
+  document.getElementById("spin-result").textContent = indicatedSegment.text;
 }
 
 let codeWheel = makeWheel(["algorithms", "robotics", "SoftEng"], "codeWheel");
