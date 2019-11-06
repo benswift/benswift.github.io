@@ -50,12 +50,21 @@ us) two things:
 
 ## Workshop timeline
 
-- **9:00**: intro
+- **9:00**: intro---what is the c/c/c studio
 - **9:20**: team formation
+
+---
+
 - **9:30**: spin the wheel(s)!
 - **9:45**: group work---assignment spec
 - **10:30**: present your assignment spec to workshop
+
+---
+
 - **10:45**: break (morning tea)
+
+---
+
 - **11:00**: group work: learning outcomes/assessment criteria
 - **11:30**: present your LOs/AC to the workshop
 - **11:45**: wrap-up
