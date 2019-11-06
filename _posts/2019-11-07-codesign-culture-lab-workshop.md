@@ -4,11 +4,12 @@ tags: reimagine ccc
 hidden: true
 ---
 
-{% include toc.html %}
-
-Workshop for the [CoDesign Culture
+A workshop at the [CoDesign Culture
 Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab)---title
-TBC.
+TBC. If you're coming to the culture lab and you'd like to be part of the
+workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
+
+{% include toc.html %}
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 {% asset js/Winwheel.js %}
