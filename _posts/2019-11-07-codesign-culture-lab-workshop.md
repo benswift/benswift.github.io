@@ -253,32 +253,6 @@ students.
   assessment task_, so don't make that the criteria---instead, you want students
   to explore & understand the problem, process & tool more deeply
 
-## notes
-
-- give 30mins for presenting back
-
-- what to do if someone in a group thinks the other "c"s are bullshit?
-
-- what about arguments in the group at all?
-
-- STS staff in SoS (Rob Ackland, Jenny Davis, Adrian McKenzie, Mindy Bruce, Matt
-  Wade)
-
-- do I want to invite some naysayers?
-
-- in the task, provide very clear guidelines
-
-- use the kind of template I'd use for curriculum design
-
-- having Kim Blackmore (iLEAP fellows - ask Jez)
-
-- invite Tony
-
-- potential icebreaker: what's the best assessment task you've ever done (or
-  set)
-
-- invite specific people outside of the culture lab (cc reimagine@anu.edu.au)
-
 ### Presenter bio
 
 Dr Ben Swift is a Senior Lecturer in the ANU Research School of Computer Science
