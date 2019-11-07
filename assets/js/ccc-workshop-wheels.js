@@ -9,15 +9,16 @@ let segmentColours = [
   "#e67e22"
 ];
 
-function makeWheel(labels, canvasID) {
+function makeWheel(labels, canvasId) {
   return new Winwheel({
+	canvasId     : canvasId,
 	numSegments  : labels.length,   // Specify number of segments.
 	outerRadius  : 300,  // Set radius to so wheel fits the background.
 	textFontSize : 24,   // Set font size accordingly.
 	textMargin   : 0,    // Take out default margin.
 	segments     : labels.map((t, i) => ({text: t,
 										  fillStyle: segmentColours[i%segmentColours.length]})),
-	animation    :           // Define spin to stop animation.
+	animation    :
 	{
 	  type     : 'spinToStop',
 	  duration : 5,
@@ -60,21 +61,3 @@ let acmBoK2016 = [
   "Systems & Project Eng.",
   "Software Design"
 ];
-
-let benCodeConcepts = [
-  "algorithms",
-  "robotics",
-  "Software Eng",
-  "databases",
-  "networks",
-  "UI/UX design",
-  "data analytics",
-  "compilers",
-  "operating systems"
-]
-
-let codeWheel = makeWheel(
-  benCodeConcepts,
-  "codeWheel");
-
-codeWheel.draw();
