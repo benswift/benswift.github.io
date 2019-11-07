@@ -12,7 +12,7 @@ let segmentColours = [
 function makeWheel(labels, canvasID) {
   return new Winwheel({
 	numSegments  : labels.length,   // Specify number of segments.
-	outerRadius  : 400,  // Set radius to so wheel fits the background.
+	outerRadius  : 300,  // Set radius to so wheel fits the background.
 	textFontSize : 24,   // Set font size accordingly.
 	textMargin   : 0,    // Take out default margin.
 	segments     : labels.map((t, i) => ({text: t,
