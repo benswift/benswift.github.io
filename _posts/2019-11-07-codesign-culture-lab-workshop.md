@@ -11,50 +11,16 @@ workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
 
 {% include toc.html %}
 
-## Brief
-
-You're a curriculum designer for the c/c/c studio! Welcome aboard.
-
-**Today's task**: in groups, come up with an assessment task which explores a
-_problem_ through a creative _process_ using a particular _tool_. You don't get
-to pick the _problem_, _process_ & _tool_ though---we'll let the wheel decide.
-
-At the end of this workshop, your group will produce (and present to the rest of
-us) two things:
-
-- an assignment spec: brief description & motivation, any specific restraints or
-  requirements, and 
-
-- a set of learning outcomes / assessment criteria which will be used to assess
-  the submissions for your assignment
-
-### Things to think about...
-
-- as for the age/background of the students, it's up to you---e.g. early
-  high-school one-off workshop, year 11/12 extension program (i.e. the c/c/c
-  studio), first-year assignment at uni, graduate-level coursework, etc.
-
-- these problems are _not solvable in a single assessment task_, so don't make
-  that the criteria---instead, you want students to explore & understand the
-  problem, process & tool more deeply
-
-- think: how might the _tool_ and the _process_ shape the responses to the
-  problem? can you use this to your advantage in encouraging students to attain
-  the learning outcomes?
-
-- how are you going to constrain the scope of your task so that it supports
-  students from a wide range of backgrounds/abilities?
-
 ## Workshop timeline
 
 - **9:00**: intro---what is the c/c/c studio
-- **9:20**: team formation
+- **9:20**: group formation & ice-breakers
 
 ---
 
 - **9:30**: spin the wheel(s)!
-- **9:45**: group work---assignment spec
-- **10:30**: present your assignment spec to workshop
+- **9:45**: [group work session 1]({#group-work-session-1}) (assessment item spec)
+- **10:30**: present your assessment item spec to workshop
 
 ---
 
@@ -62,15 +28,39 @@ us) two things:
 
 ---
 
-- **11:30**: group work: learning outcomes/assessment criteria
-- **12:00**: present your LOs/AC to the workshop
+- **11:30**: [group work session 2]({#group-work-session-2}) (assessment criteria)
+- **12:00**: present your assessment criteria to the workshop
 - **12:15**: wrap-up
 
+## Brief
+
+You're a curriculum designer for the c/c/c studio! Welcome aboard.
+
+**Today's task**: in groups, come up with a assessment[^assessment] task which
+explores a _problem_ through a creative _process_ using a particular _tool_.
+
+[^assessment]:
+    you can think of it as an assignment, but that word has some baggage, so
+	just think of it as a description of a thing which a student must submit
+	which will be evaluated on whether it's a good thing
+
+At the end of this workshop, your group will produce (and present to the rest of
+us) two things:
+
+- an assessment spec document: brief description & motivation, learning
+  outcomes, any specific constraints or requirements on either the deliverable
+  or the process
+
+- a set of assessment criteria which will be used to assess the submissions for
+  your assessment
+
+However, you don't get to pick the _problem_/_process_/_tool_ triad which forms
+the basis for your assessment task. Instead, we'll spin the
+code/creativity/culture wheels and let fate[^fate].
+
+[^fate] well, the PRNG in your web browser, anyway
+
 ## Let's spin the wheels![^winwheel]
-
-{:.hl-para}
-
-Note: all these lists are a work-in-progress.
 
 [^winwheel]: wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas McKechie
 
@@ -159,7 +149,7 @@ let creativityWheel = makeWheel(
    "photography",
 	"sculpture",
 	"creative writing",
-	"meme"
+	"memes"
   ],
   "creativityWheel-canvas");
 </script>
@@ -205,6 +195,37 @@ through <strong><span class="creativityWheel-canvas-result">____</span></strong>
 using <strong><span class="codeWheel-canvas-result">____</span></strong>
 
 </p>
+
+## Group work session 1: preparing an assessment spec {#group-work-session-1}
+
+### Things to think about
+
+- the target age/background/etc of the students is up to you---you could choose
+  early high-school one-off workshop, year 11/12 extension program (i.e. the
+  c/c/c studio), first-year assignment at uni, graduate-level coursework, etc.
+
+- in plain language, what do you want a student to learn through the process of
+  completing your assessment task? (that will help with coming up with some
+  learning outcomes)
+
+- how might the _tool_ and the _process_ shape the responses to the problem? can
+  you use this to your advantage in encouraging students to attain the learning
+  outcomes?
+
+- how are you going to constrain the scope of your task so that it supports
+  students from a wide range of backgrounds/abilities?
+
+
+## Group work session 2: articulating the assessment criteria {#group-work-session-2}
+
+### Things to think about
+
+- what would an _excellent_ submission look like? what would a
+  borderline-acceptable (e.g. a bare pass) submission look like?
+
+- the problems (from the culture wheel) are _not solvable through a single
+  assessment task_, so don't make that the criteria---instead, you want students
+  to explore & understand the problem, process & tool more deeply
 
 ## notes
 
