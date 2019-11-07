@@ -107,7 +107,7 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
 {:.hl-para .wheelResult}
 
-result: <strong><span id="codeWheel-canvas-spin-result"></span></strong>
+result: <strong><span class="codeWheel-canvas-result"></span></strong>
 
 <script>
 let acmBoK2016 = [
@@ -149,7 +149,7 @@ problem.
 
 {:.hl-para .wheelResult}
 
-result: <strong><span id="creativityWheel-canvas-spin-result"></span></strong>
+result: <strong><span class="creativityWheel-canvas-result"></span></strong>
 
 <script>
 let creativityWheel = makeWheel(
@@ -176,7 +176,7 @@ process.
 
 {:.hl-para .wheelResult}
 
-result: <strong><span id="cultureWheel-canvas-spin-result"></span></strong>
+result: <strong><span class="cultureWheel-canvas-result"></span></strong>
 
 <script>
 let cultureWheel = makeWheel(
@@ -193,6 +193,19 @@ let cultureWheel = makeWheel(
   ],
   "cultureWheel-canvas");
 </script>
+
+<p class="hl-para wheelResult">
+<em>assessment task theme:</em>
+
+<br /><br />
+
+exploring <strong><span
+class="cultureWheel-canvas-result">____</span></strong> through
+<strong> <span
+class="creativityWheel-canvas-result">____</span></strong> using
+<strong><span class="codeWheel-canvas-result">____</span></strong>
+
+</p>
 
 ## notes
 

@@ -37,6 +37,8 @@ function startSpin(wheel)
 
 function displaySpinResult(wheel, indicatedSegment)
 {
-
-  document.getElementById(`${wheel.canvasId}-spin-result`).textContent = indicatedSegment.text;
+  targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+  for(let e of targetSpans){
+	e.textContent = indicatedSegment.text;
+  }
 }
