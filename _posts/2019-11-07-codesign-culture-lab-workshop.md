@@ -145,7 +145,7 @@ process.
 - potential icebreaker: what's the best assessment task you've ever done (or
   set)
 
-- invite specific people outside of the culture lab
+- invite specific people outside of the culture lab (cc reimagine@anu.edu.au)
 
 ### TODO by the end of the day
 
@@ -153,3 +153,14 @@ process.
 - blurb (1 para) - that's what will bring people in the door, pitch it to
   specific people
 - bio
+- list of people I want to invite specifically (both attendees and
+  non-attendees)
+
+### TODO by early next week
+
+do I need:
+- scribes? (inc. graphic scribes?)
+- co-facilitators?
+- materials?
+- tech?
+- tables/room configuration?
