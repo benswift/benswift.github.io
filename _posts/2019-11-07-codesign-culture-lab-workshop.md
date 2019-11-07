@@ -105,7 +105,7 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 <canvas id="codeWheel-canvas" width="800" height="600" onclick='startSpin(codeWheel);'>
 </canvas>
 
-{:.hl-para .wheelResult}
+{:.wheelResult}
 
 result: <strong><span class="codeWheel-canvas-result"></span></strong>
 
@@ -147,7 +147,7 @@ problem.
 <canvas id="creativityWheel-canvas" width="800" height="600" onclick='startSpin(creativityWheel);'>
 </canvas>
 
-{:.hl-para .wheelResult}
+{:.wheelResult}
 
 result: <strong><span class="creativityWheel-canvas-result"></span></strong>
 
@@ -174,7 +174,7 @@ process.
 <canvas id="cultureWheel-canvas" width="800" height="600" onclick='startSpin(cultureWheel);'>
 </canvas>
 
-{:.hl-para .wheelResult}
+{:.wheelResult}
 
 result: <strong><span class="cultureWheel-canvas-result"></span></strong>
 
@@ -194,16 +194,15 @@ let cultureWheel = makeWheel(
   "cultureWheel-canvas");
 </script>
 
+{:.wheelResult}
+
+_assessment task theme:_
+
 <p class="hl-para wheelResult">
-<em>assessment task theme:</em>
 
-<br /><br />
-
-exploring <strong><span
-class="cultureWheel-canvas-result">____</span></strong> through
-<strong> <span
-class="creativityWheel-canvas-result">____</span></strong> using
-<strong><span class="codeWheel-canvas-result">____</span></strong>
+exploring <strong><span class="cultureWheel-canvas-result">____</span></strong>
+through <strong><span class="creativityWheel-canvas-result">____</span></strong>
+using <strong><span class="codeWheel-canvas-result">____</span></strong>
 
 </p>
 
