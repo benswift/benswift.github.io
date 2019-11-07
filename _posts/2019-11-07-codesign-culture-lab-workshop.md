@@ -128,7 +128,10 @@ workshop. So, your group will need to organise:
 
 If you want to work on paper there are paper templates floating around (let us
 know if you'd like one). If you've got a digital scribe, then there are
-templates
+electronic templates here ([markdown]({{site.baseurl}}{% link
+assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %}) and
+[MS Word]({{site.baseurl}}{% link
+assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx %})).
 
 One more thing to keep in mind: in the _next_ group work session you'll be
 writing a set of assessment criteria which will be used to assess the
