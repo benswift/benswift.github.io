@@ -141,3 +141,15 @@ process.
 - having Kim Blackmore (iLEAP fellows - ask Jez)
 
 - invite Tony
+
+- potential icebreaker: what's the best assessment task you've ever done (or
+  set)
+
+- invite specific people outside of the culture lab
+
+### TODO by the end of the day
+
+- photo
+- blurb (1 para) - that's what will bring people in the door, pitch it to
+  specific people
+- bio
