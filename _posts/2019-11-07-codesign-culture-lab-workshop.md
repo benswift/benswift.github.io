@@ -115,14 +115,15 @@ let acmBoK2016 = [
 
 let benCodeConcepts = [
   "algorithms",
-  "robotics",
-  "Software Eng",
+  "embedded systems",
+  "signal processing",
+  "software design",
   "databases",
   "networks",
   "UI/UX design",
   "data analytics",
-  "compilers",
-  "operating systems"
+  "machine learning",
+  "cybersecurity"
 ]
 
 let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
