@@ -146,11 +146,16 @@ result: <strong><span class="creativityWheel-canvas-result"></span></strong>
 let creativityWheel = makeWheel(
   [
 	"music",
-   "dance",
-   "photography",
+	"sound",
+    "dance",
+    "photography",
+	"painting",
+	"drawing",
+	"textiles",
+	"film",
 	"sculpture",
 	"creative writing",
-	"memes"
+	"memes",
   ],
   "creativityWheel-canvas");
 </script>
