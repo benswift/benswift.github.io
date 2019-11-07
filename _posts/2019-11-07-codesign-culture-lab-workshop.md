@@ -45,42 +45,25 @@ workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
 - **12:00**: present your assessment criteria to the workshop
 - **12:15**: wrap-up
 
-## Intro
+## Session 1: writing an assessment spec {#group-work-session-1}
 
-Ben will introduce the c/c/c studio idea and set the scene for the whole
-"code/creativity/culture" thing (spoiler: they're all _highly_ entangled).
-
-## Group work session 1: preparing an assessment spec {#group-work-session-1}
-
-Now that you've spun the wheel, you've got a context in which to come up with a
-specific assesssment task. You might be thinking that the c/c/c wheels left you
-with a pretty broad scope---and you'd be right---your group's job is to narrow
-this down into a specific task which is tractable for your intended audience of
-students.
-
-### Things to think about
-
-- the target age/background/etc of the students is up to you---you could choose
-  early high-school one-off workshop, year 11/12 extension program (i.e. the
-  c/c/c studio), first-year assignment at uni, graduate-level coursework, etc.
-
-- in plain language, what do you want a student to learn through the process of
-  completing your assessment task? (that will help with coming up with some
-  learning outcomes)
-
-- how might the _tool_ and the _process_ shape the responses to the problem? can
-  you use this to your advantage in encouraging students to attain the learning
-  outcomes?
-
-- how are you going to constrain the scope of your task so that it supports
-  students from a wide range of backgrounds/abilities?
+In his intro, Ben introduced the c/c/c studio idea and set the scene for the
+whole "code/creativity/culture" thing (spoiler: they're all _highly_ entangled).
+You're now a curriculum designer for the c/c/c studio! Welcome aboard.
 
 ### Design brief
 
-You're a curriculum designer for the c/c/c studio! Welcome aboard. **Your design
-brief for today**: in your group, create an assessment[^assessment] task which
-teaches a particular _code_ concept/tool by exploring a problem/challenge facing
-our[^culture] _culture_ through a _creative_ process/medium.
+> Genius learns from nature, its own nature. Talent learns from art. Also,
+> creativity and culture seem to be important. -_Olivia Wilde_[^wilde]
+
+[^wilde]: obviously, this is fake, although [Oscar Wilde said something
+    similar](https://www.azquotes.com/quote/776726), and I'm _pretty sure_ he
+    was Olivia Wilde's uncle
+
+**Your design brief for today**: in your group, create an
+assessment[^assessment] task which teaches a particular _code_ concept/tool by
+exploring a problem/challenge facing our[^culture] _culture_ through a
+_creative_ process/medium.
 
 [^assessment]:
     you can think of it as an assignment, but that word has some baggage, so
@@ -169,9 +152,11 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 ### code
 
-The _tool_ (or class of tools) which the students need to leverage in their
-creative response. This is deliberately broad---you can (and should) narrow it
-down in _your_ assessment task spec.
+The _tool/concept_ which the students need to leverage (and in doing so,
+understand) in their submission. This is deliberately broad---you can (and
+should) narrow it down in _your_ assessment task. Don't get hung up on the
+"code" moniker, think about it as a computing/computer science tool/concept more
+broadly.
 
 Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in _doing_ the assessment task.
@@ -247,11 +232,13 @@ let creativityWheel = makeWheel(
   "creativityWheel-canvas");
 </script>
 
-
 ### culture
 
-The _problem_ facing our culture/society to explore through the chosen tool &
-process.
+The _problem/challenge_ facing our culture/society to explore (and perhaps
+comment on) through the work. Again, you might want to narrow it down to a
+particular angle on this problem, although it's worth thinking about how to
+leave students to wrestle with what _they_ think about the problem, not just
+picking a theme which implies that there's only one "right approach".
 
 <div class="wheelIndicator">⧨</div>
 <canvas id="cultureWheel-canvas" width="800" height="600" onclick='startSpin(cultureWheel);'>
@@ -291,9 +278,49 @@ class="creativityWheel-canvas-result">____</span></strong>
 
 </p>
 
-## Group work session 2: articulating the assessment criteria {#group-work-session-2}
+### Things to consider as you design your assessment task
 
-### Things to think about
+Now that you've spun the wheels, you might be thinking that they've left you
+with a pretty broad scope---and you'd be right. Your group's job is to narrow
+this down into a specific task which is tractable for your intended audience of
+students. It's fine (good, even!) if you narrow it down a lot. As Oliver Wilde Constraint is the
+mother of creativity[^]
+
+Some of your group members might have lots of experience designing assessment
+tasks, others may have never done it before (although I'm sure that everyone's
+_done_ one).
+
+- for the _code_ and _culture_ wheel results in particular, what are the key
+  aspects or sub-problems that you want the students to engage with? what are
+  some of the creative ways you can imagine to get those concepts across?
+
+- the target age/background/etc of the students is up to you---you could choose
+  early high-school one-off workshop, year 11/12 extension program (i.e. the
+  c/c/c studio), first-year assignment at uni, graduate-level coursework, etc.
+
+- the Learning Outcomes are really important, and can act as a guide for the
+  rest of the design task---don't leave them till the last minute
+
+- what are the conventions of "assesment tasks"? how can you flaunt them?
+
+- how can you ensure that the students engage seriously with the _code_ part of
+  the problem? how can you make sure they actually build something, not just
+  talk about stuff?
+
+- in plain language, what do you want a student to learn through the process of
+  completing your assessment task? (that will help with coming up with some
+  learning outcomes)
+
+- how might the _concept/tool_ and the _creative process_ shape the responses to
+  the problem? can you use this to your advantage in encouraging students to
+  attain the learning outcomes?
+
+- how are you going to constrain the scope of your task so that it supports
+  students from a wide range of backgrounds/abilities?
+
+## Session 2: articulating the assessment criteria {#group-work-session-2}
+
+### Things to consider as you design your assessment criteria
 
 - what would an _excellent_ submission look like? what would a
   borderline-acceptable (e.g. a bare pass) submission look like?
@@ -302,7 +329,7 @@ class="creativityWheel-canvas-result">____</span></strong>
   assessment task_, so don't make that the criteria---instead, you want students
   to explore & understand the problem, process & tool more deeply
 
-### Presenter bio
+## Presenter bio
 
 Dr Ben Swift is a Senior Lecturer in the ANU Research School of Computer Science
 (RSCS). As the leader of the code/creativity/culture (c/c/c) research group,
