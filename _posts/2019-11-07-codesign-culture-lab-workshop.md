@@ -8,7 +8,7 @@ Is it possible to learn about algorithms by writing poetry about wealth
 inequality? How about commenting on social media use via sculptures built using
 cybersecurity tools and concepts? Furthermore, is it possible to design an
 assessment task which encourages deep technical work and honest cultural
-reflection in producing a genuinely interesting creative outcome?
+reflection, while still producing a genuinely interesting creative outcome?
 
 This workshop will bring together folks from all points of the
 code/creativity/culture compass to design a _real_ assessment task for the
@@ -18,9 +18,9 @@ CS/Engineering curriculum design, the arts, and life within the socio-technical
 assemblage of our present age, then come along and have your say!
 
 This workshop is part of the [CoDesign Culture
-Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab)---title
-TBC. If you're coming to the culture lab and you'd like to be part of the
-workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
+Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab). If
+you're coming to the culture lab and you'd like to be part of the workshop, [get
+in touch](mailto:ben.swift@anu.edu.au) 😊
 
 {% include toc.html %}
 
@@ -54,7 +54,7 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
 ### Design brief
 
 > Genius learns from nature, its own nature. Talent learns from art. Also,
-> creativity and culture seem to be important. -_Olivia Wilde_[^wilde]
+> creativity and culture seem to be important. _Olivia Wilde_[^wilde]
 
 [^wilde]: obviously, this is fake, although [Oscar Wilde said something
     similar](https://www.azquotes.com/quote/776726), and I'm _pretty sure_ he
@@ -76,11 +76,11 @@ _creative_ process/medium.
     multiculturalism) and at a global level (because global village). Still, I'm
     using this word so the c/c/c schtick makes sense.
 
-In this group session (which runs until 10:30am) your group needs to write an
-assessment spec document. I don't want to be _too_ dogmatic about the form and
-content---the whole point of this workshop is to throw out the rulebook---but
-here's a example of the sorts of things that are usually important in an
-assessment item spec:
+In this group session (which runs until 10:30am) your group needs to write a
+document. I don't want to be _too_ dogmatic about the form and content---the
+whole point of this workshop is to throw out the rulebook---but here's a example
+of the sorts of things that are usually important in describing an assessment
+item:
 
 - **description**: a high-level description of what the task is and what the the
   students will be doing
@@ -111,7 +111,7 @@ workshop. So, your group will need to organise:
 
 If you want to work on paper there are paper templates floating around (let us
 know if you'd like one). If you've got a digital scribe, then there are
-electronic templates here ([markdown]({{site.baseurl}}{% link
+electronic templates ([markdown]({{site.baseurl}}{% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %}) and
 [MS Word]({{site.baseurl}}{% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx %})).
@@ -130,7 +130,7 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^winwheel]: wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas McKechie
 
-[^fate] well, the PRNG in your web browser, anyway
+[^fate]: well, the PRNG in your web browser, anyway
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 {% asset js/Winwheel.js %}
@@ -150,13 +150,13 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 }
 </style>
 
-### code
+#### the code wheel
 
-The _tool/concept_ which the students need to leverage (and in doing so,
-understand) in their submission. This is deliberately broad---you can (and
-should) narrow it down in _your_ assessment task. Don't get hung up on the
-"code" moniker, think about it as a computing/computer science tool/concept more
-broadly.
+This wheel selects the _tool/concept_ which the students need to leverage (and
+in doing so, understand) in their submission. This is deliberately broad---you
+can (and should) narrow it down in _your_ assessment task. Don't get hung up on
+the "code" moniker, think about it as a computing/computer science tool/concept
+more broadly.
 
 Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in _doing_ the assessment task.
@@ -201,10 +201,10 @@ let benCodeConcepts = [
 let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
 </script>
 
-### creativity
+#### the creativity wheel
 
-The creative _process_ (the medium) through which the student will explore the
-problem.
+This wheel selects the creative _process_ (the medium) through which the student
+will explore the problem.
 
 <div class="wheelIndicator">⧨</div>
 <canvas id="creativityWheel-canvas" width="800" height="600" onclick='startSpin(creativityWheel);'>
@@ -232,13 +232,13 @@ let creativityWheel = makeWheel(
   "creativityWheel-canvas");
 </script>
 
-### culture
+#### the culture wheel
 
-The _problem/challenge_ facing our culture/society to explore (and perhaps
-comment on) through the work. Again, you might want to narrow it down to a
-particular angle on this problem, although it's worth thinking about how to
-leave students to wrestle with what _they_ think about the problem, not just
-picking a theme which implies that there's only one "right approach".
+This wheel selects the _problem/challenge_ facing our culture/society to explore
+(and perhaps comment on) through the work. Again, you might want to narrow it
+down to a particular angle on this problem, although it's worth thinking about
+how to leave students to wrestle with what _they_ think about the problem, not
+just picking a theme which implies that there's only one "right approach".
 
 <div class="wheelIndicator">⧨</div>
 <canvas id="cultureWheel-canvas" width="800" height="600" onclick='startSpin(cultureWheel);'>
@@ -267,7 +267,7 @@ let cultureWheel = makeWheel(
 
 {:.wheelResult}
 
-_assessment task theme:_
+_assessment task goal:_
 
 <p class="hl-para wheelResult">
 
@@ -349,5 +349,8 @@ share---unlocking the latent potential in students who never knew their diverse
 interests (especially in the arts & music) could be used in engineering and
 computing.
 
-https://cs.anu.edu.au/code-creativity-culture/
-http://benswift.me
+<https://cs.anu.edu.au/code-creativity-culture/>
+
+<http://benswift.me>
+
+## Footnotes
