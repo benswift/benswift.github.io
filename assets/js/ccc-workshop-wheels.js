@@ -9,9 +9,9 @@ let segmentColours = [
   "#e67e22"
 ];
 
-function makeWheel(name, labels) {
+function makeWheel(labels, canvasId) {
   return new Winwheel({
-	canvasId     : `${name}-canvas`,
+	canvasId     : canvasId,
 	numSegments  : labels.length,   // Specify number of segments.
 	outerRadius  : 300,  // Set radius to so wheel fits the background.
 	textFontSize : 24,   // Set font size accordingly.
@@ -23,7 +23,7 @@ function makeWheel(name, labels) {
 	  type     : 'spinToStop',
 	  duration : 5,
 	  spins    : 8,
-	  callbackFinished : `document.getElementById("${name}-spin-result").textContent = ${name}.getIndicatedSegment().text;`
+	  callbackFinished : displaySpinResult
 	}
   });
 }
@@ -35,8 +35,8 @@ function startSpin(wheel)
   wheel.startAnimation();
 }
 
-function displaySpinResult(indicatedSegment)
+function displaySpinResult(wheel, indicatedSegment)
 {
 
-  document.getElementById("spin-result").textContent = indicatedSegment.text;
+  document.getElementById(`${wheel.canvasId}-spin-result`).textContent = indicatedSegment.text;
 }

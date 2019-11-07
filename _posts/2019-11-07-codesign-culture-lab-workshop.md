@@ -92,7 +92,7 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
 {:.hl-para style="font-size:2em;margin-bottom:1em;"}
 
-result: <strong><span id="codeWheel-spin-result"></span></strong>
+result: <strong><span id="codeWheel-canvas-spin-result"></span></strong>
 
 {% asset js/ccc-workshop-wheels.js %}
 
@@ -122,7 +122,7 @@ let benCodeConcepts = [
   "operating systems"
 ]
 
-let codeWheel = makeWheel("codeWheel", benCodeConcepts);
+let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
 </script>
 
 ### creativity

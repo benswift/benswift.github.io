@@ -2245,7 +2245,7 @@ function winwheelStopAnimation(canCallback)
             // If the callback is a function then call it, otherwise evaluate the property as javascript code.
             if (typeof callback === 'function') {
                 // Pass back the indicated segment as 99% of the time you will want to know this to inform the user of their prize.
-                callback(winwheelToDrawDuringAnimation.getIndicatedSegment());
+              callback(winwheelToDrawDuringAnimation, winwheelToDrawDuringAnimation.getIndicatedSegment());
             } else {
                 eval(callback);
             }
