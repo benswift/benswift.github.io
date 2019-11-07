@@ -1,7 +1,5 @@
----
-title: TBC
-author: my awesome team
----
+% title: TBC
+% author: my awesome team
 
 ## Description
 
