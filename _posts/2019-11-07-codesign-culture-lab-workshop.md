@@ -61,13 +61,13 @@ us) two things:
 
 ---
 
-- **10:45**: break (morning tea)
+- **11:00**:  break (morning tea)
 
 ---
 
-- **11:00**: group work: learning outcomes/assessment criteria
-- **11:30**: present your LOs/AC to the workshop
-- **11:45**: wrap-up
+- **11:30**: group work: learning outcomes/assessment criteria
+- **12:00**: present your LOs/AC to the workshop
+- **12:15**: wrap-up
 
 ## Let's spin the wheels![^winwheel]
 
@@ -115,8 +115,29 @@ process.
 
 - privacy
 - ethics
-- wealth inequality
+- wealth distribution
 - climate change
-- regulation of tech companies
+- tech companies & society
 - immigration
-- civility in the public square
+- civility in the public square (not so moralistic)
+
+## notes
+
+- give 30mins for presenting back
+
+- what to do if someone in a group thinks the other "c"s are bullshit?
+
+- what about arguments in the group at all?
+
+- STS staff in SoS (Rob Ackland, Jenny Davis, Adrian McKenzie, Mindy Bruce, Matt
+  Wade)
+
+- do I want to invite some naysayers?
+
+- in the task, provide very clear guidelines
+
+- use the kind of template I'd use for curriculum design
+
+- having Kim Blackmore (iLEAP fellows - ask Jez)
+
+- invite Tony
