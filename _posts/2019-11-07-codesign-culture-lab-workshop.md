@@ -113,6 +113,7 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 _code_ wheel: <strong><span class="codeWheel-canvas-result"></span></strong>
 
 <script>
+// based on a (slightly tweaked) version of the ACM BoK 2016
 let acmBoK2016 = [
   "Circuits & Electronics",
   "Computing Algorithms",
@@ -126,6 +127,7 @@ let acmBoK2016 = [
   "Software Design"
 ];
 
+// these ones pulled out of Ben's arse
 let benCodeConcepts = [
   "algorithms",
   "embedded systems",
