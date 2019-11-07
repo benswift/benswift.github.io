@@ -19,7 +19,7 @@ workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
 ---
 
 - **9:30**: spin the wheel(s)!
-- **9:45**: [group work session 1]({#group-work-session-1}) (assessment item spec)
+- **9:45**: [group work session 1](#group-work-session-1) (assessment item spec)
 - **10:30**: present your assessment item spec to workshop
 
 ---
@@ -28,7 +28,7 @@ workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
 
 ---
 
-- **11:30**: [group work session 2]({#group-work-session-2}) (assessment criteria)
+- **11:30**: [group work session 2](#group-work-session-2) (assessment criteria)
 - **12:00**: present your assessment criteria to the workshop
 - **12:15**: wrap-up
 
