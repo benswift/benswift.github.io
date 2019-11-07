@@ -11,9 +11,6 @@ workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
 
 {% include toc.html %}
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-{% asset js/Winwheel.js %}
-
 ## Brief
 
 You're a curriculum designer for the c/c/c studio! Welcome aboard.
@@ -77,6 +74,24 @@ Note: all these lists are a work-in-progress.
 
 [^winwheel]: wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas McKechie
 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+{% asset js/Winwheel.js %}
+{% asset js/ccc-workshop-wheels.js %}
+
+<style>
+.wheelIndicator {
+  width:100%;
+  font-size:6em;
+  text-align:center;
+  margin-bottom:-0.3em;
+}
+
+.wheelResult {
+  font-size:2em;
+  margin-bottom:1em;
+}
+</style>
+
 ### code
 
 The _tool_ (or class of tools) which the students need to leverage in their
@@ -86,15 +101,13 @@ down in _your_ assessment task spec.
 Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
-<div style="width:100%;font-size:6em;text-align:center;margin-bottom:-0.3em;">⧨</div>
+<div class="wheelIndicator">⧨</div>
 <canvas id="codeWheel-canvas" width="800" height="600" onclick='startSpin(codeWheel);'>
 </canvas>
 
-{:.hl-para style="font-size:2em;margin-bottom:1em;"}
+{:.hl-para .wheelResult}
 
 result: <strong><span id="codeWheel-canvas-spin-result"></span></strong>
-
-{% asset js/ccc-workshop-wheels.js %}
 
 <script>
 let acmBoK2016 = [
