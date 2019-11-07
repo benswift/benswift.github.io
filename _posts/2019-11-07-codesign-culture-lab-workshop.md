@@ -11,9 +11,9 @@ assessment task which encourages deep technical work and honest cultural
 reflection in producing a genuinely interesting creative outcome?
 
 This workshop will bring together folks from all points of the
-code/creativity/culture compass to design a _real_ assessment task for the c/c/c
-studio creative code outreach program. In fact, it _needs_ a diverse range of
-voices to work properly. So if you've got thoughts and ideas about
+code/creativity/culture compass to design a _real_ assessment task for the
+**c/c/c studio** creative code outreach program. In fact, it _needs_ a diverse
+range of voices to work properly. So if you've got thoughts and ideas about
 CS/Engineering curriculum design, the arts, and life within the socio-technical
 assemblage of our present age, then come along and have your say!
 
@@ -45,37 +45,106 @@ workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
 - **12:00**: present your assessment criteria to the workshop
 - **12:15**: wrap-up
 
-## Brief
+## Intro
 
-You're a curriculum designer for the c/c/c studio! Welcome aboard.
+Ben will introduce the c/c/c studio idea and set the scene for the whole
+"code/creativity/culture" thing (spoiler: they're all _highly_ entangled).
 
-**Today's task**: in groups, come up with a assessment[^assessment] task which
-explores a _problem_ through a creative _process_ using a particular _tool_.
+## Group work session 1: preparing an assessment spec {#group-work-session-1}
+
+Now that you've spun the wheel, you've got a context in which to come up with a
+specific assesssment task. You might be thinking that the c/c/c wheels left you
+with a pretty broad scope---and you'd be right---your group's job is to narrow
+this down into a specific task which is tractable for your intended audience of
+students.
+
+### Things to think about
+
+- the target age/background/etc of the students is up to you---you could choose
+  early high-school one-off workshop, year 11/12 extension program (i.e. the
+  c/c/c studio), first-year assignment at uni, graduate-level coursework, etc.
+
+- in plain language, what do you want a student to learn through the process of
+  completing your assessment task? (that will help with coming up with some
+  learning outcomes)
+
+- how might the _tool_ and the _process_ shape the responses to the problem? can
+  you use this to your advantage in encouraging students to attain the learning
+  outcomes?
+
+- how are you going to constrain the scope of your task so that it supports
+  students from a wide range of backgrounds/abilities?
+
+### Design brief
+
+You're a curriculum designer for the c/c/c studio! Welcome aboard. **Your design
+brief for today**: in your group, create an assessment[^assessment] task which
+teaches a particular _code_ concept/tool by exploring a problem/challenge facing
+our[^culture] _culture_ through a _creative_ process/medium.
 
 [^assessment]:
     you can think of it as an assignment, but that word has some baggage, so
 	just think of it as a description of a thing which a student must submit
 	which will be evaluated on whether it's a good thing
 
-At the end of this workshop, your group will produce (and present to the rest of
-us) two things:
+[^culture]:
+    Part of the challenge here is that we don't live in a monoculture, at a
+    local level (because filter bubbles), at a national level (because
+    multiculturalism) and at a global level (because global village). Still, I'm
+    using this word so the c/c/c schtick makes sense.
 
-- an assessment spec document: brief description & motivation, learning
-  outcomes, any specific constraints or requirements on either the deliverable
-  or the process
+In this group session (which runs until 10:30am) your group needs to write an
+assessment spec document. I don't want to be _too_ dogmatic about the form and
+content---the whole point of this workshop is to throw out the rulebook---but
+here's a example of the sorts of things that are usually important in an
+assessment item spec:
 
-- a set of assessment criteria which will be used to assess the submissions for
-  your assessment
+- **description**: a high-level description of what the task is and what the the
+  students will be doing
 
-However, you don't get to pick the _problem_/_process_/_tool_ triad which forms
-the basis for your assessment task. Instead, we'll spin the
-code/creativity/culture wheels and let fate[^fate].
+- **background/motivation**: a bit more background on the task, tools, problem
+  domain, as well as any pre-requisite skills the students will need
 
-[^fate] well, the PRNG in your web browser, anyway
+- **learning outcomes**: a list of learning outcomes for the assessment task (or
+  which the task is designed to assess)
 
-## Let's spin the wheels![^winwheel]
+- **spec**: a concise, specific description of what the students are required to
+  produce, including any specific constraints or requirements on either the
+  deliverable or the process
+
+- **resources**: a list of resources the students might find helpful in
+  completing the task
+
+- **faq**: a list of (anticipated) questions the students might have about the
+  assessment task
+  
+You don't have to follow these exact headings, but you do have to produce a
+document (by the end of this session!) which you'll then present to the wider
+workshop. So, your group will need to organise:
+
+- a scribe (either on-paper or on a laptop) to write the document
+- a presenter (or a creative group presentation strategy) for telling everyone
+  about your amazing assessment task
+
+If you want to work on paper there are paper templates floating around (let us
+know if you'd like one). If you've got a digital scribe, then there are
+templates
+
+One more thing to keep in mind: in the _next_ group work session you'll be
+writing a set of assessment criteria which will be used to assess the
+submissions for your assessment task. So you don't have to worry about writing
+them down formally just yet, but keep that in mind as you design your assessment
+task.
+
+### Let's spin the wheels!
+
+You don't get to pick the code concept/cultural problem/creative process triad
+which forms the basis for your assessment task. Instead, we'll spin the
+code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^winwheel]: wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas McKechie
+
+[^fate] well, the PRNG in your web browser, anyway
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 {% asset js/Winwheel.js %}
@@ -218,32 +287,6 @@ class="cultureWheel-canvas-result">____</span></strong> through <strong><span
 class="creativityWheel-canvas-result">____</span></strong>
 
 </p>
-
-## Group work session 1: preparing an assessment spec {#group-work-session-1}
-
-Now that you've spun the wheel, you've got a context in which to come up with a
-specific assesssment task. You might be thinking that the c/c/c wheels left you
-with a pretty broad scope---and you'd be right---your group's job is to narrow
-this down into a specific task which is tractable for your intended audience of
-students.
-
-### Things to think about
-
-- the target age/background/etc of the students is up to you---you could choose
-  early high-school one-off workshop, year 11/12 extension program (i.e. the
-  c/c/c studio), first-year assignment at uni, graduate-level coursework, etc.
-
-- in plain language, what do you want a student to learn through the process of
-  completing your assessment task? (that will help with coming up with some
-  learning outcomes)
-
-- how might the _tool_ and the _process_ shape the responses to the problem? can
-  you use this to your advantage in encouraging students to attain the learning
-  outcomes?
-
-- how are you going to constrain the scope of your task so that it supports
-  students from a wide range of backgrounds/abilities?
-
 
 ## Group work session 2: articulating the assessment criteria {#group-work-session-2}
 
