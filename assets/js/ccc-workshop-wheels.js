@@ -74,7 +74,7 @@ let benCodeConcepts = [
 ]
 
 let codeWheel = makeWheel(
-  acmBoK2016,
+  benCodeConcepts,
   "codeWheel");
 
 codeWheel.draw();
