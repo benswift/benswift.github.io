@@ -21,8 +21,8 @@ function makeWheel(labels, canvasId) {
 	animation    :
 	{
 	  type     : 'spinToStop',
-	  duration : 5,
-	  spins    : 8,
+	  duration : 3,
+	  spins    : 5,
 	  callbackFinished : displaySpinResult
 	}
   });
