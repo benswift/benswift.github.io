@@ -1,10 +1,23 @@
 ---
-title: CoDesign Culture Lab workshop
+title: code/creativity/culture curriculum design workshop
 tags: reimagine ccc
 hidden: true
 ---
 
-A workshop at the [CoDesign Culture
+Is it possible to learn about algorithms by writing poetry about wealth
+inequality? How about commenting on social media use via sculptures built using
+cybersecurity tools and concepts? Furthermore, is it possible to design an
+assessment task which encourages deep technical work and honest cultural
+reflection in producing a genuinely interesting creative outcome?
+
+This workshop will bring together folks from all points of the
+code/creativity/culture compass to design a _real_ assessment task for the c/c/c
+studio creative code outreach program. In fact, it _needs_ a diverse range of
+voices to work properly. So if you've got thoughts and ideas about
+CS/Engineering curriculum design, the arts, and life within the socio-technical
+assemblage of our present age, then come along and have your say!
+
+This workshop is part of the [CoDesign Culture
 Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab)---title
 TBC. If you're coming to the culture lab and you'd like to be part of the
 workshop, [get in touch](mailto:ben.swift@anu.edu.au) 😊
@@ -205,6 +218,12 @@ using <strong><span class="codeWheel-canvas-result">____</span></strong>
 
 ## Group work session 1: preparing an assessment spec {#group-work-session-1}
 
+Now that you've spun the wheel, you've got a context in which to come up with a
+specific assesssment task. You might be thinking that the c/c/c wheels left you
+with a pretty broad scope---and you'd be right---your group's job is to narrow
+this down into a specific task which is tractable for your intended audience of
+students.
+
 ### Things to think about
 
 - the target age/background/etc of the students is up to you---you could choose
@@ -277,3 +296,28 @@ do I need:
 - materials?
 - tech?
 - tables/room configuration?
+
+## blurbs & bios
+
+### Presenter bio
+
+Dr Ben Swift is a Senior Lecturer in the ANU Research School of Computer Science
+(RSCS). As the leader of the code/creativity/culture (c/c/c) research group,
+Ben's goal is to create spaces for talking about the way that code (software),
+creativity (especially the arts) and culture (life) intersect in the modern
+world. Ben's research contributions range from traditional Computer Science
+(digital multimedia, web technologies and human-computer interaction) through to
+invited livecoding (live code-based music performance) performances and
+multimedia artwork installations.
+
+In 2019 Ben was awarded one of the inaugural _Reimagine Fellowships_ to develop
+the **c/c/c studio**, an ANU Extension outreach program which will teach
+computer science to pre-tertiary students through making art, music and other
+cool things with computers. The c/c/c studio will also provide a supportive
+community in which a new generation of people can learn, create, and
+share---unlocking the latent potential in students who never knew their diverse
+interests (especially in the arts & music) could be used in engineering and
+computing.
+
+https://cs.anu.edu.au/code-creativity-culture/
+http://benswift.me
