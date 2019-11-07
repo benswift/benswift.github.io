@@ -185,7 +185,8 @@ let cultureWheel = makeWheel(
    "social media use",
    "immigration",
    "tolerance",
-   "conflict"
+   "food security",
+   "world peace"
   ],
   "cultureWheel-canvas");
 </script>
