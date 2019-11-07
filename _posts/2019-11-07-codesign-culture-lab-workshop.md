@@ -143,25 +143,56 @@ let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
 The creative _process_ (the medium) through which the student will explore the
 problem.
 
-- music
-- dance
-- photography
-- sculpture
-- creative writing
-- meme
+<div class="wheelIndicator">⧨</div>
+<canvas id="creativityWheel-canvas" width="800" height="600" onclick='startSpin(creativityWheel);'>
+</canvas>
+
+{:.hl-para .wheelResult}
+
+result: <strong><span id="creativityWheel-canvas-spin-result"></span></strong>
+
+<script>
+let creativityWheel = makeWheel(
+  [
+	"music",
+   "dance",
+   "photography",
+	"sculpture",
+	"creative writing",
+	"meme"
+  ],
+  "creativityWheel-canvas");
+</script>
+
 
 ### culture
 
 The _problem_ facing our culture/society to explore through the chosen tool &
 process.
 
-- privacy
-- ethics
-- wealth distribution
-- climate change
-- tech companies & society
-- immigration
-- civility in the public square (not so moralistic)
+<div class="wheelIndicator">⧨</div>
+<canvas id="cultureWheel-canvas" width="800" height="600" onclick='startSpin(cultureWheel);'>
+</canvas>
+
+{:.hl-para .wheelResult}
+
+result: <strong><span id="cultureWheel-canvas-spin-result"></span></strong>
+
+<script>
+let cultureWheel = makeWheel(
+  [
+   "privacy",
+   "ethics",
+   "wealth distribution",
+   "climate change",
+   "work-life balance",
+   "social media use",
+   "immigration",
+   "tolerance",
+   "conflict"
+  ],
+  "cultureWheel-canvas");
+</script>
 
 ## notes
 
