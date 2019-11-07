@@ -9,9 +9,9 @@ let segmentColours = [
   "#e67e22"
 ];
 
-function makeWheel(labels, canvasId) {
+function makeWheel(name, labels) {
   return new Winwheel({
-	canvasId     : canvasId,
+	canvasId     : `${name}-canvas`,
 	numSegments  : labels.length,   // Specify number of segments.
 	outerRadius  : 300,  // Set radius to so wheel fits the background.
 	textFontSize : 24,   // Set font size accordingly.
@@ -23,7 +23,7 @@ function makeWheel(labels, canvasId) {
 	  type     : 'spinToStop',
 	  duration : 5,
 	  spins    : 8,
-	  callbackFinished : displaySpinResult
+	  callbackFinished : `document.getElementById("${name}-spin-result").textContent = ${name}.getIndicatedSegment().text;`
 	}
   });
 }
@@ -34,30 +34,9 @@ function startSpin(wheel)
   wheel.rotationAngle = wheel.rotationAngle % 360;
   wheel.startAnimation();
 }
-// -------------------------------------------------------
-// Function for reset button.
-// -------------------------------------------------------
-function resetWheel(wheel)
-{
-  wheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
-  wheel.draw();                // Call draw to render changes to the wheel.
-}
 
 function displaySpinResult(indicatedSegment)
 {
 
   document.getElementById("spin-result").textContent = indicatedSegment.text;
 }
-
-let acmBoK2016 = [
-  "Circuits & Electronics",
-  "Computing Algorithms",
-  "Computer Architecture",
-  "Digital Design",
-  "Embedded Systems",
-  "Computer Networks",
-  "Information Security",
-  "Signal Processing",
-  "Systems & Project Eng.",
-  "Software Design"
-];

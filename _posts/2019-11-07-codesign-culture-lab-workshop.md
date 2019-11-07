@@ -92,11 +92,24 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
 {:.hl-para style="font-size:2em;margin-bottom:1em;"}
 
-result: <strong><span id="spin-result"></span></strong>
+result: <strong><span id="codeWheel-spin-result"></span></strong>
 
 {% asset js/ccc-workshop-wheels.js %}
 
 <script>
+let acmBoK2016 = [
+  "Circuits & Electronics",
+  "Computing Algorithms",
+  "Computer Architecture",
+  "Digital Design",
+  "Embedded Systems",
+  "Computer Networks",
+  "Information Security",
+  "Signal Processing",
+  "Systems & Project Eng.",
+  "Software Design"
+];
+
 let benCodeConcepts = [
   "algorithms",
   "robotics",
@@ -109,7 +122,7 @@ let benCodeConcepts = [
   "operating systems"
 ]
 
-let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
+let codeWheel = makeWheel("codeWheel", benCodeConcepts);
 </script>
 
 ### creativity
