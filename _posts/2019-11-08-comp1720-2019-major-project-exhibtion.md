@@ -1,5 +1,6 @@
 ---
 title: COMP1720 2019 major project exhibtion
+tags: teaching ccc gigs
 ---
 
 If you're around the ANU campus tomorrow (Saturday Nov 9) then come along to see
