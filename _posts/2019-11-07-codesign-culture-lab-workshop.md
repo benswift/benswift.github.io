@@ -373,10 +373,26 @@ _done_ one).
 
 ## Session 2: articulating the assessment criteria {#group-work-session-2}
 
-### Things to consider as you design your assessment criteria
+As much as it feels gross and reductionistic to boil a student's mark down to a
+number, we need to mark the submissions. Your group's second (and final)
+deliverable is a set of assessment criteria for the assessment task.
 
-- what would an _excellent_ submission look like? what would a
-  borderline-acceptable (e.g. a bare pass) submission look like?
+Again, you need to create a document which could be handed to a marker so that
+they could assess the submissions and give a mark & grade. Again, the exact
+format of this document is up to you. There are a few ways to do this:
+
+- a series of examples of what constitutes bad/good/excellent work---what would
+  an _outstanding_ submission look like? what would a borderline-acceptable
+  (e.g. a bare pass) submission look like?
+
+- a set of criteria for each of the code/creativity/culture dimensions of the
+  work, with descriptions of what bad/good/excellent work might look like
+
+- a full rubric (2x2 grid) with criteria along the rows, grades (e.g. fail,
+  pass, credit, distinction, high distinction) down the columns and a
+  description in each grid square
+
+### Things to consider as you design your assessment criteria
 
 - the problems (from the culture wheel) are _not solvable through a single
   assessment task_, so don't make that the criteria---instead, you want students
