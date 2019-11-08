@@ -1,6 +1,8 @@
 % title: TBC
 % author: my awesome team
 
+## Context
+
 ## Description
 
 ## Background/motivation

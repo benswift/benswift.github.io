@@ -82,6 +82,12 @@ whole point of this workshop is to throw out the rulebook---but here's a example
 of the sorts of things that are usually important in describing an assessment
 item:
 
+- **context**: the age/background/etc of the students you're targeting with your
+  assessment task is up to you---you could choose early high-school one-off
+  workshop, year 11/12 extension program (i.e. the c/c/c studio), first-year
+  assignment at uni, graduate-level coursework, etc. (_note: this is the only
+  part of the document which wouldn't necessarily be shown to the students_)
+
 - **description**: a high-level description of what the task is and what the the
   students will be doing
 
@@ -294,10 +300,6 @@ _done_ one).
   aspects or sub-problems that you want the students to engage with? what are
   some of the creative ways you can imagine to get those concepts across?
 
-- the target age/background/etc of the students is up to you---you could choose
-  early high-school one-off workshop, year 11/12 extension program (i.e. the
-  c/c/c studio), first-year assignment at uni, graduate-level coursework, etc.
-
 - the Learning Outcomes are really important, and can act as a guide for the
   rest of the design task---don't leave them till the last minute
 
@@ -317,6 +319,17 @@ _done_ one).
 
 - how are you going to constrain the scope of your task so that it supports
   students from a wide range of backgrounds/abilities?
+
+- do _you_ have any favourite resources or templates for designing an assessment
+  task? a quick google turns up a few (e.g. this [blog post from the Australian
+  Computing
+  Academy](https://blog.aca.edu.au/assessing-the-digital-technologies-curriculum-5f81a98ce053)
+  or this [more general assessment design framework from
+  UTS](https://www.uts.edu.au/research-and-teaching/learning-and-teaching/assessment-futures/designing-and-redesigning))
+  but I'm sure you can find others as well
+
+- it's ok to use images, diagrams, YouTube clips, interactive widgets---the
+  assessment task itself won't be printed on paper, it'll be hosted on the web
 
 ## Session 2: articulating the assessment criteria {#group-work-session-2}
 
