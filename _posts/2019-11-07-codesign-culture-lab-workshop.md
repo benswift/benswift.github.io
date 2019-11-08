@@ -27,7 +27,7 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 ## Workshop timeline
 
 - **9:00**: intro---what is the c/c/c studio
-- **9:20**: group formation & ice-breakers
+- **9:20**: [group formation](#group-formation) (with stickers! 🔴🔵)
 
 ---
 
@@ -44,6 +44,46 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 - **11:30**: [group work session 2](#group-work-session-2) (assessment criteria)
 - **12:00**: present your assessment criteria to the workshop
 - **12:15**: wrap-up
+
+## Group formation {#group-formation}
+
+### Find your stickers
+
+For this workshop it's important that each group has representatives from each
+facet of the c/c/c triad. Look under your chair to find three stickers:
+
+TODO photo
+
+- the **red** sticker is the _code_ sticker---if you consider yourself a _code_
+  person
+
+- the **blue** sticker is the _creativity_ sticker---if you consider yourself a
+  _creativity_ person
+
+- the **green** sticker is the _culture_ sticker---if you consider yourself a
+  _culture_ person
+
+{:.hl-para}
+
+You can choose to have 0, 1, 2 or 3 stickers---it's up to you. And if you think
+that this whole "reducing one's identity in such a multifaceted problem space
+down to just a few stickers" thing is total bollocks, then just go with it for
+now---you can be your group's enfant terrible 😉
+
+### Find your team-mates
+
+Once you've attached your stickers prominently to your forehead (or wherever you
+decided to wear them) then you need to find three team-mates (so that there are
+groups of size four total) for this workshop.
+
+The one requirement each group must have _all_ of the stickers between them. So,
+as you mill about finding team-mates, ask one another
+
+1. why you chose to identify with the particular stickers you chose
+2. which sticker was the hardest to decide on, and why
+
+Once you've found a team, assemble at one of the tables and await further
+instructions.
 
 ## Session 1: writing an assessment spec {#group-work-session-1}
 
