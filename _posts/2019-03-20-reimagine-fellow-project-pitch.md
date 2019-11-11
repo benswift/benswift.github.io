@@ -126,19 +126,23 @@ bridges between them to open up new possibilities.
 
 The c/c/c studio will be developed through three stages:
 
-1. In **stage one** (mid 2019--end 2019) I will engage with the project's
+1. In **stage one** (beginning 2020--mid 2020) I will engage with the project's
    [stakeholders](#project-sponsor-and-stakeholders) to form a _c/c/c studio
    advisory group_ responsible for guiding high-level strategy, pedagogy and
-   creative direction in the c/c/c studio program
-2. In **stage two** (beginning 2020--end 2020) we will design and run a series
-   of creative code workshops (approx. one per month) with our [early
+   creative direction in the c/c/c studio program. In this stage I will also
+   (with input from stakeholders) develop the c/c/c studio curriculum with a
+   view to having it approved for delivery as an ANU Extension program in 2021.
+
+2. In **stage two** (mid 2020--end 2020) we will design and run a series of
+   creative code workshops (approx. one per month) with our [early
    adopter](#early-adopters) schools and community groups. These free workshops
    will be marketed to specific target groups (as determined by the advisory
-   group). Through these workshop we will develop a curriculum of
-   different creative activities for different audiences, and also build a
-   community (local artists, CECS academics, ANU undergraduate & postgraduate
-   students) capable of delivering these workshops.
-3. In **stage three** (beginning 2021--end 2021) we will officially launch the
+   group). Through these workshop we will develop a curriculum of different
+   creative activities for different audiences, and also build a community
+   (local artists, CECS academics, ANU undergraduate & postgraduate students)
+   capable of delivering these workshops.
+
+3. In **stage three** (beginning 2021--ongoing) we will officially launch the
    weekly on-campus c/c/c studio & masterclass. The weekly c/c/c studio sessions
    won't be lectures, or even tutorials---they will adopt a [studio-based
    learning](https://teaching.unsw.edu.au/assessing-studio-based-learning)
@@ -154,38 +158,39 @@ c/c/c studio sessions & masterclasses, but here are some initial plans:
 
 - ACT High School & College students will apply to participate based on interest
   and aptitude
+
 - the weekly c/c/c studio session will be 2hrs long, held on campus at an
   after-school-friendly timeslot
-- students will commit to attending for a semester, culminating in a public grad
-  show exhibition/performance at the end of the semester
+
+- the c/c/c studio curriculum will cover fundamental CS topics through both
+  computer-based music and visual art, with students able to choose a particular
+  creative tech medium for their end-of-year project
+
+- each year's c/c/c studio program will culminate in a public "grad show"
+  exhibition/performance (held on-campus)
+
 - each session will be small---max 20 students with 1 instructor (Ben) and one
   tutor (we will recruit tutors with the appropriate skills as required based on
   c/c/c studio student numbers)
+
 - students will be exposed to regular guest "masterclasses" (3-4 times per semester) from 
   artists and other creative practitioners from CECS, the ANU School of Art &
   Design & School of Music, and the local arts community
-- students will be able to select either a music or visual art emphasis in their
-  projects, with sub-communities for each emphasis
+
 - initial "training" material will also be adapted from the [COMP1720 lab
   material](https://cs.anu.edu.au/courses/comp1720/labs/) and tweaked as
   appropriate
 
 {: #anu-extension-accreditation}
 
-It may be possible give participants in the c/c/c studio program credit into our
-first-year CS program (e.g. [COMP1720](https://cs.anu.edu.au/courses/comp1720/))
-if they decide to come and study at CECS.[^discovering-engineering] To
-investigate this, in stage two we will put the c/c/c studio program forward as a
-candidate for the [ANU Extension program](http://extension.anu.edu.au). This may
-or may not be desirable (depending on the requirements of the Extension program)
-but we should investigate whether it's a good fit for increasing the profile,
-standing and utility of the c/c/c studio.
-
-[^discovering-engineering]:
-    This is the same as the equivalent [Discovering Engineering extension
-    program](http://extension.anu.edu.au/study/discovering-engineering), which
-    gives students credit for a first-year ENGN course if they study Engineering
-    at the ANU.
+If the c/c/c studio receives accreditation as an official [ANU
+Extension](http://extension.anu.edu.au) program then graduates of the two-year
+c/c/c studio program will receive credit (one course worth) into our first-year
+CS program if they come and study at CECS. This is the same as the equivalent
+[Discovering Engineering extension
+program](http://extension.anu.edu.au/study/discovering-engineering), which gives
+students credit for a first-year ENGN course if they study Engineering at the
+ANU.
 
 ### Value to organisation/Reimagine strategic alignment
 
@@ -264,16 +269,16 @@ This project will deliver:
   sessions, which will be freely released to the public under a creative commons
   licence ([CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 
-- a biannual **c/c/c studio grad show** gallery exhibition and music performance
+- an annual **c/c/c studio grad show** gallery exhibition and music performance
   (recorded and released on YouTube/Spotify) held on campus (perhaps in the new
-  cultural centre) as the capstone for each semester's student work in the c/c/c
+  cultural centre) as the capstone for each year's student work in the c/c/c
   studio
+
+- [RSCS's](https://cs.anu.edu.au/code-creativity-culture/) first ANU Extension
+  program (see [above](#anu-extension-accreditation))
 
 - stories for CECS/Reimagine marketing, and c/c/c studio "graduates" will be
   ideal student ambassadors for the new horizons that creative code opens up
-
-- (TBC) [RSCS's](https://cs.anu.edu.au/code-creativity-culture/) first ANU
-  Extension program (see [above](#anu-extension-accreditation))
 
 There'll be lots of other stuff, too: building a community of practice,
 deepening ANU CS/CECS's relationships with ACT High Schools, strengthening
@@ -283,31 +288,34 @@ intangible stuff, so I'm not sure if they count as a deliverables.
 
 ## Project Sponsor and Stakeholders {#project-sponsor-and-stakeholders}
 
-- **Sponsor**: [Elanor
-  Huntington](https://cecs.anu.edu.au/people/elanor-huntington), Dean of CECS
+- **Sponsor**: [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking), RSCS Director
+
 - **Owner**: Ben Swift
+
 - **Consultations**:
+
   - [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at), ANU
     SoM, previously the convenor of the Open School of Music program
+
+  - [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
+    code practitioner
+
   - [Geoff
     Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb), ANU
     School of Art & Design
-  - [Qing Wang](https://cecs.anu.edu.au/people/qing-wang), RSCS Associate
-    Director of Education Partnerships
+
   - [Genevieve Bell](https://cecs.anu.edu.au/people/genevieve-bell),
     [3Ai](https://3ainstitute.cecs.anu.edu.au) Director
-  - [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
-    code practitioner
-  - [Craig
-    Edwards](http://www.dicksonc.act.edu.au/our_school/principals_welcome),
-    Dickson College Principal
+
+  - [Bruce Fuda](https://au.linkedin.com/in/bruce-fuda-99172732), Computing
+    Education Specialist, Australian Computing Academy
+
+  - **Jo Prezzi**, CS educator, Lyneham High
+
   - [Madeleine Parker](https://www.linkedin.com/in/madeleine-parker-928644102/),
     SCI ART CBR Community Co-ordinator
-  - [Morgan
-    Marshall](https://robogals.org/locations/asia-pacific-apac/canberra/),
-    President of Robogals Canberra
 
-<!-- - [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking), RSCS Director -->
+  - **Helen Kaye**, [ANU Extension](http://extension.anu.edu.au) Coordinator
 
 ## Success Metrics {#success-metrics}
 
@@ -316,19 +324,21 @@ absolute terms and also trends over time.
 
 - **Participation**: how many students participate in the workshops (stage two)
   and c/c/c studio (stage three)?
+
 - **Creative outputs**: we'll have an end-of-semester concert and gallery
   show---are the things the students are making any good?
+
 - **Curriculum uptake**: is the curriculum developed for the c/c/c studio
   sessions used by HS teachers to run similar groups in their schools?
 
 Attaching numbers to this sort of thing is fraught, but here are some indicative
 targets:
 
-| stage  | activity        | target                                                                                   |
-|--------|-----------------|------------------------------------------------------------------------------------------|
-| two    | workshops       | run one half-day workshop per month (or equivalent), with at least 10 students each time |
-| three  | c/c/c studio    | 10 successful c/c/c studio "graduates" in S1 2020, 15 successful graduates in S2 2020    |
-| three+ | CECS enrolments | 5 graduates of the c/c/c studio (in year 12 in 2020) enrolling in CS at the ANU          |
+| stage  | activity        | target                                                                      |
+|--------|-----------------|-----------------------------------------------------------------------------|
+| two    | workshops       | run one workshop per month, with at least 10 students each time             |
+| three  | c/c/c studio    | 10 c/c/c studio (ANUExt) enrolments 2021, of which 75% graduate at end 2022 |
+| three+ | CECS enrolments | 2 c/c/c studio graduates (in year 12 in 2022) enrolling in CS at the ANU    |
 
 ## Business Readiness
 
@@ -338,7 +348,7 @@ The c/c/c studio (stage three) will require a room for one 2-3 hour session
 every week in an after-school friendly timeslot (perhaps 4pm-6pm). This room
 needs to have one computer per student (either a lab machine or personal laptop)
 which can run a modern web browser (Chrome, Firefox, Safari). One of our
-computer labs in Building #145 should do the job initially.
+computer labs in Building #145 should do the job.
 
 ### Personnel
 
@@ -360,11 +370,11 @@ for the c/c/c studio sessions.
 
 | What?                                                                        | Who?           | By when?                         |
 |------------------------------------------------------------------------------|----------------|----------------------------------|
-| assemble c/c/c studio advisory group                                         | Ben, others    | stage one (end 2019)             |
+| assemble c/c/c studio advisory group                                         | Ben, others    | stage one (early 2020)           |
 | develop relationships with [stakeholders](#project-sponsor-and-stakeholders) | advisory group | ongoing                          |
-| run in-HS workshops                                                          | Ben + tutor(s) | stage two (beginning 2020)       |
-| run weekly c/c/c studio & masterclass                                        | Ben + guests   | stage three (beginning 2021)     |
-| c/c/c studio grad show                                                       | students       | stage three (beginning mid-2021) |
+| run in-HS workshops                                                          | Ben + tutor(s) | stage two (mid 2020)             |
+| c/c/c studio ANU Extension program                                           | Ben + guests   | stage three (beginning 2021)     |
+| c/c/c studio grad show                                                       | students       | stage three (end 2021) |
 
 ## Cost/Time Commitments
 
@@ -551,13 +561,15 @@ Smith](#anu-extension-accreditation)._
   chat with the relevant folks first.
 
 - If things go well, I intend to continue (and grow!) the program past the end
-  of 2021---in fact I see it as an ongoing part of our teaching, research and
+  of 2022---in fact I see it as an ongoing part of our teaching, research and
   outreach here in CECS.
 
 - I know that this document is a website; it's not using the official MS Word
-  template. Mostly that's because this way I can make it readable on mobile,
-  accessible (e.g. to screen readers for people with vision impairment), embed
-  videos, make sure everyone's always reading the latest version, etc. But if
-  you **really** need it as a `.docx` then I can convert it when it's finished 😊
+  template. Mostly that's because this way I can easily share it with potential
+  partners (e.g. when I'm meeting with teachers to talk about how they and their
+  students can get involved), make it readable on mobile, make it accessible
+  (e.g. to screen readers for people with vision impairment), embed videos, make
+  sure everyone's always reading the latest version, etc. But if you **really**
+  need it as a `.docx` then I can convert it when it's finished 😊
 
 ## Footnotes
