@@ -378,7 +378,7 @@ for the c/c/c studio sessions.
 
 ## Cost/Time Commitments
 
-**Ben**: 2 days/week (40% FTE) for 2.5 years (mid 2019-end 2021). This includes:
+**Ben**: 2 days/week (40% FTE) for 3 years (beginning 2020-end 2022). This includes:
 
 1. managing the c/c/c studio advisory group
 2. building relationships with High Schools and recruiting students (from stage one)
@@ -388,20 +388,25 @@ for the c/c/c studio sessions.
 
 The 0.4fte buyout associated with this fellowship will be used to cover 100% of
 my service component (currently 0.2fte) and half of my teaching component
-(currently 0.4fte). One possible way to manage this is me giving up my role as
-student experience convenor (service) and moving from single-lecturer to leading
-a two-lecturer teaching team for both COMP1720 and COMP2300. However, this is
-subject to negotiations with the relevant authorities within RSCS 😉
+(currently 0.4fte). For 2020, this means:
+
+- giving up my role as student experience convenor (service)
+
+- handing [COMP2300](https://cs.anu.edu.au/courses/comp2300/) over to [Charles
+  Martin](http://charlesmartin.com.au)
+
+- moving from being the only lecturer to leading a two-lecturer teaching team
+  for [COMP1720](https://cs.anu.edu.au/courses/comp1720/) and .
 
 **Tutors**: depending on how many students attend, we will need to employ one
 (or more) of our undergraduate students to help deliver the workshops (stage
 two) and support the students in the c/c/c studio (stage three). Exact hourly
 rate depends on qualifications & experience.
 
-**Artist honoraria**[^plural]: some of the guest artists who give masterclasses
-in the studio won't have institutional affiliation, and paying them for their
-time is a way of respecting their contribution & expertise. Exact hourly rate
-depends on qualifications & experience.
+**Artist honoraria**: some of the guest artists who give masterclasses in the
+studio won't have institutional affiliation, and paying them for their time is a
+way of respecting their contribution & expertise. Exact hourly rate depends on
+qualifications & experience.
 
 **Equipment**: computational art & music supplies, including:
 - portable music PA for running music workshops in schools
@@ -411,16 +416,6 @@ depends on qualifications & experience.
 
 **Grad show budget**: (stage three) for venue/catering/equipment (e.g. fancy
 projectors, etc.)
-
-| description      | cost                                           |
-|------------------|------------------------------------------------|
-| Ben's time       | 0.4fte @ level C                               |
-| tutors           | 10h/month in stage two, 5h/week in stage three |
-| artist honoraria | 10h/month in stage two, 5h/week in stage three |
-| studio equipment | $10k total                                    |
-| grad shows       | $1k per semester in stage three, $2k total     |
-
-[^plural]: is _honoraria_ the plural of honorarium?
 
 ## Risk, Challenges and Dependencies {#risks}
 
