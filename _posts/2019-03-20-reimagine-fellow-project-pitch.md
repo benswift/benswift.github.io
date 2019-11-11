@@ -474,55 +474,6 @@ projectors, etc.)
   </tbody>
 </table>
 
-
-## Rapid Analysis {#rapid-analysis}
-
-_Note: I stole most of this from the excellent [Jeremy
-Smith](#anu-extension-accreditation)._
-
-<table>
-  <thead>
-    <tr>
-      <th>Role</th>
-      <th>Who is undertaking this role?</th>
-      <th>What are they being asked to do?</th>
-      <th>When will their role be completed?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th><strong>R</strong>ecommend</th>
-      <td>PMO Manager, CECS GM, RSCS Director, CECS Associate Deans for Education, Research and Diversity and Inclusion, Reimagine CoDesign Lead</td>
-      <td>recommend support for the Reimagine Fellow Project outlined here</td>
-      <td>May/June 2019</td>
-    </tr>
-    <tr>
-      <th><strong>A</strong>gree</th>
-      <td>CECS Executive</td>
-      <td>agree that a decision be made on the Reimagine Fellow Project and the c/c/c studio</td>
-      <td>July 2019</td>
-    </tr>
-    <tr>
-      <th><strong>P</strong>erform</th>
-      <td>RSCS Director and Associate Director (Education Partnerships), CECS PMO Team</td>
-      <td>make the necessary resource, time, and cost changes and commitments</td>
-      <td>June/July 2019</td>
-    </tr>
-    <tr>
-      <th><strong>I</strong>nput</th>
-      <td>CECS Marketing and Student Services Teams, ANU stakeholders (other Colleges), <a href="#project-sponsor-and-stakeholders">partner organisations</a>, current students and staff.</td>
-      <td>provide input into the Reimagine Fellow Project outlined here on potential collaboration, benefits or support</td>
-      <td>April, May 2019</td>
-    </tr>
-    <tr>
-      <th><strong>D</strong>ecide</th>
-      <td>CECS Dean & Deputy Dean</td>
-      <td>provide the highest level demonstration of commitment to the Reimage Fellow Project</td>
-      <td>June 2019</td>
-    </tr>
-  </tbody>
-</table>
-
 ## Notes for readers
 
 - It's currently a CS pitch---there's not much involvement from the Engineering
