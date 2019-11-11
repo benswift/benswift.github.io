@@ -471,12 +471,6 @@ projectors, etc.)
       <td>get artists from the Canberra community to deliver studio masterclass material, train up other CECS people (e.g. tutors) to share the workload</td>
       <td>2021</td>
     </tr>
-    <tr>
-      <td>Ben's RSCS contract runs out</td>
-      <td>Ben's boss(es)</td>
-      <td>currently, I'm only contracted through end of 2019&mdash;I'm really keen to stick around after that and see this project through, but obviously buying out part of my time is contingent on me having a job to buy out</td>
-      <td>2020+</td>
-    </tr>
   </tbody>
 </table>
 
