@@ -476,29 +476,10 @@ projectors, etc.)
 
 ## Notes for readers
 
-- It's currently a CS pitch---there's not much involvement from the Engineering
-  schools at present, although this could change in the future. But I've decided
-  to start with what I know.
-
-- Some of the nomenclature is still TBC, e.g. the whole "c/c/c studio" thing,
-  code vs technology, art vs music vs creativity, etc. Part of the initial phase
-  of the project will be workshopping these terms to see which ones best
-  resonate with the potential audiences, and also which best capture what
-  _actually_ goes on.
-
-- It's _really hard_ to have all the necessary stakeholder conversations while
-  I'm on parental leave. So while I've discussed this sort of thing to varying
-  degrees with [everyone concerned](#project-sponsor-and-stakeholders) (i.e. I'm
-  sure no-one would be *shocked* to hear this project pitch) there's a chance
-  that some of the details will change as I make things more concrete and sort
-  out the details.
-
-- In some ways the budget is quite conservative---there's certainly the chance
-  that I could hire/buy out the time of both ANU colleagues from art, design &
-  music, or perhaps buy the time of members from some of the other organisations
-  (e.g. Madeleine from SCI ART CBR and I have discussed this). So I'm happy to
-  include that in the budget if there's an appetite for it, but I'd also need to
-  chat with the relevant folks first.
+- Some of the nomenclature is still TBC, e.g. code vs technology, art vs music
+  vs creativity, etc. Part of the initial phase of the project will be
+  workshopping these terms to see which ones best resonate with the potential
+  audiences, and also which best capture what _actually_ goes on.
 
 - If things go well, I intend to continue (and grow!) the program past the end
   of 2022---in fact I see it as an ongoing part of our teaching, research and
