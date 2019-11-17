@@ -9,7 +9,11 @@ hidden: true
 **tl;dr** in this workshop you'll:
 
 - break into groups
-- create a real c/c/c studio assessment item
+- be assigned a trio of **code**/**creativity**/**culture** topics
+- design a real c/c/c studio assessment item based around those three topics
+  (and present it to the group)
+- write some marking criteria for your assessment item (and present them to the
+  group)
 
 </p>
 
