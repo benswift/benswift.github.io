@@ -4,11 +4,21 @@ tags: reimagine ccc
 hidden: true
 ---
 
-Is it possible to learn about algorithms by writing poetry about wealth
-inequality? How about commenting on social media use via sculptures built using
-cybersecurity tools and concepts? Furthermore, is it possible to design an
-assessment task which encourages deep technical work and honest cultural
-reflection, while still producing a genuinely interesting creative outcome?
+<p class="hl-para" markdown="1">
+
+**tl;dr** in this workshop you'll:
+
+- break into groups
+- create a real c/c/c studio assessment item
+
+</p>
+
+Is it possible to learn about algorithms through writing poetry about wealth
+inequality? How about exploring the issue of social media use via sculptures
+built using cybersecurity tools and concepts? Furthermore, is it possible to
+design an assessment task which encourages deep technical work and honest
+cultural reflection, while still producing a genuinely interesting creative
+outcome?
 
 This workshop will bring together folks from all points of the
 code/creativity/culture compass to design a _real_ assessment task for the
@@ -103,7 +113,11 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
 **Your design brief for today**: in your group, create an
 assessment[^assessment] task which teaches a particular _code_ concept/tool by
 exploring a problem/challenge facing our[^culture] _culture_ through a
-_creative_ process/medium.
+particular _creative_ process/medium.
+
+The educational context for this assessment task is the c/c/c studio---a
+selective program for year 11 & 12 students. If you're more familiar with a uni
+context, they're probably not too dissimilar from first-year undergraduates.
 
 [^assessment]:
     you can think of it as an assignment, but that word has some baggage, so
@@ -117,19 +131,13 @@ _creative_ process/medium.
     using this word so the c/c/c schtick makes sense.
 
 In this group session (which runs until 10:30am) your group needs to write a
-document. I don't want to be _too_ dogmatic about the form and content---the
-whole point of this workshop is to throw out the rulebook---but here's a example
-of the sorts of things that are usually important in describing an assessment
-item:
+(draft) document. I don't want to be _too_ dogmatic about the form and
+content---the whole point of this workshop is to throw out the rulebook---but
+here's a example of the sorts of things that are usually important in an
+assessment item:
 
-- **context**: the age/background/etc of the students you're targeting with your
-  assessment task is up to you---you could choose early high-school one-off
-  workshop, year 11/12 extension program (i.e. the c/c/c studio), first-year
-  assignment at uni, graduate-level coursework, etc. (_note: this is the only
-  part of the document which wouldn't necessarily be shown to the students_)
-
-- **description**: a high-level description of what the task is and what the the
-  students will be doing
+- **description**: a high-level description of what the task is and what the
+  students are required to deliver
 
 - **background/motivation**: a bit more background on the task, tools, problem
   domain, as well as any pre-requisite skills the students will need
@@ -329,8 +337,7 @@ class="creativityWheel-canvas-result">____</span></strong>
 Now that you've spun the wheels, you might be thinking that they've left you
 with a pretty broad scope---and you'd be right. Your group's job is to narrow
 this down into a specific task which is tractable for your intended audience of
-students. It's fine (good, even!) if you narrow it down a lot. As Oliver Wilde Constraint is the
-mother of creativity[^]
+students. It's fine (good, even!) if you narrow it down a lot.
 
 Some of your group members might have lots of experience designing assessment
 tasks, others may have never done it before (although I'm sure that everyone's
