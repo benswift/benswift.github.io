@@ -4,18 +4,23 @@ tags: reimagine ccc
 hidden: true
 ---
 
-<p class="hl-para" markdown="1">
+<div class="hl-para">
 
-**tl;dr** in this workshop you'll:
+<strong>tl;dr</strong> in this workshop you’ll:
 
-- break into groups
-- be assigned a trio of **code**/**creativity**/**culture** topics
-- design a real c/c/c studio assessment item based around those three topics
-  (and present it to the group)
-- write some marking criteria for your assessment item (and present them to the
-  group)
+<ol>
 
-</p>
+<li>break into groups</li>
+
+<li>be assigned a trio of <strong>code</strong>/<strong>creativity</strong>/<strong>culture</strong> topics</li>
+
+<li>design a real c/c/c studio assessment item based around those three topics (and present it to the group)</li>
+
+<li>write some marking criteria for your assessment item (and present them to the group)</li>
+
+</ol>
+
+</div>
 
 Is it possible to learn about algorithms through writing poetry about wealth
 inequality? How about exploring the issue of social media use via sculptures
