@@ -22,6 +22,8 @@ hidden: true
 
 </div>
 
+{% include toc.html %}
+
 Is it possible to learn about algorithms through writing poetry about wealth
 inequality? How about exploring the issue of social media use via sculptures
 built using cybersecurity tools and concepts? Furthermore, is it possible to
@@ -40,8 +42,6 @@ This workshop is part of the [CoDesign Culture
 Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab). If
 you're coming to the culture lab and you'd like to be part of the workshop, [get
 in touch](mailto:ben.swift@anu.edu.au) 😊
-
-{% include toc.html %}
 
 ## Workshop timeline
 
