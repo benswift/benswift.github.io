@@ -1,7 +1,6 @@
 ---
 title: code/creativity/culture curriculum design workshop
 tags: reimagine ccc
-hidden: true
 ---
 
 <div class="hl-para">
