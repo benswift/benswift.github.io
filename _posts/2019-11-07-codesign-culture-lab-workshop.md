@@ -224,8 +224,16 @@ Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="codeWheel-canvas" width="800" height="600" onclick='startSpin(codeWheel);'>
+<canvas id="codeWheel-canvas" onclick='startSpin(codeWheel);'>
 </canvas>
+
+<script>
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById("codeWheel-canvas");
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+</script>
 
 {:.wheelResult}
 
@@ -272,6 +280,14 @@ will explore the problem.
 <canvas id="creativityWheel-canvas" width="800" height="600" onclick='startSpin(creativityWheel);'>
 </canvas>
 
+<script>
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById("creativityWheel-canvas");
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+</script>
+
 {:.wheelResult}
 
 _creativity_ wheel: <strong><span class="creativityWheel-canvas-result"></span></strong>
@@ -305,6 +321,14 @@ just picking a theme which implies that there's only one "right approach".
 <div class="wheelIndicator">⧨</div>
 <canvas id="cultureWheel-canvas" width="800" height="600" onclick='startSpin(cultureWheel);'>
 </canvas>
+
+<script>
+// filthy hacks, but I've got other work to do...
+let cv = document.getElementById("cultureWheel-canvas");
+let parentWidth = cv.parentElement.offsetWidth;
+cv.width = parentWidth;
+cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
+</script>
 
 {:.wheelResult}
 
