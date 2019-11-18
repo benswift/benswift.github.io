@@ -1,5 +1,6 @@
 ---
 title: code/creativity/culture curriculum design workshop
+summary: "a half-day workshop at the 2019 CECS Reimagine CoDesign Culture Lab"
 tags: reimagine ccc
 ---
 
