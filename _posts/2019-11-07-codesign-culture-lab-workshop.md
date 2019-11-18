@@ -116,7 +116,7 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
 
 [^wilde]: obviously, this is fake, although [Oscar Wilde said something
     similar](https://www.azquotes.com/quote/776726), and I'm _pretty sure_ he
-    was Olivia Wilde's uncle
+    was [Olivia Wilde's](https://www.imdb.com/name/nm1312575/) uncle
 
 **Your design brief for today**: in your group, create an
 assessment[^assessment] task which teaches a particular _code_ concept/tool by
