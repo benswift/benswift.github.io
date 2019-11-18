@@ -139,11 +139,10 @@ context, they're probably not too dissimilar from first-year undergraduates.
     multiculturalism) and at a global level (because global village). Still, I'm
     using this word so the c/c/c schtick makes sense.
 
-In this group session (which runs until 10:30am) your group needs to write a
-(draft) document. I don't want to be _too_ dogmatic about the form and
-content---the whole point of this workshop is to throw out the rulebook---but
-here's a example of the sorts of things that are usually important in an
-assessment item:
+In this group session your group needs to produce a (draft) document. I don't
+want to be _too_ dogmatic about the form and content---the whole point of this
+workshop is to throw out the rulebook---but here's a example of the sorts of
+things that are usually important in an assessment item:
 
 - **description**: a high-level description of what the task is and what the
   students are required to deliver
@@ -164,8 +163,7 @@ assessment item:
 - **faq**: a list of (anticipated) questions the students might have about the
   assessment task
   
-You don't have to follow these exact headings, but you do have to produce a
-document (by the end of this session!) which you'll then present to the wider
+At the end of this session you get to present your assessment task to the wider
 workshop. So, your group will need to organise:
 
 - a scribe (either on-paper or on a laptop) to write the document
@@ -367,10 +365,10 @@ class="creativityWheel-canvas-result">____</span></strong>
 
 ### Things to consider as you design your assessment task
 
-Now that you've spun the wheels, you might be thinking that they've left you
-with a pretty broad scope---and you'd be right. Your group's job is to narrow
-this down into a specific task which is tractable for your intended audience of
-students. It's fine (good, even!) if you narrow it down a lot.
+Now that you've spun the wheels, you might be thinking that they've still left
+you with a pretty broad scope---and you'd be right. Your group's job is to
+narrow this down into a specific task which is tractable for your intended
+audience of students. It's fine (good, even!) if you narrow it down a lot.
 
 Some of your group members might have lots of experience designing assessment
 tasks, others may have never done it before (although I'm sure that everyone's
@@ -407,6 +405,10 @@ _done_ one).
   or this [more general assessment design framework from
   UTS](https://www.uts.edu.au/research-and-teaching/learning-and-teaching/assessment-futures/designing-and-redesigning))
   but I'm sure you can find others as well
+
+- what's the worst-case scenario you'd expect if you set your assessment task
+  for a bunch of eager c/c/c studio students? how can you write the spec to
+  minimise the chance of things going down this way?
 
 - it's ok to use images, diagrams, YouTube clips, interactive widgets---the
   assessment task itself won't be printed on paper, it'll be hosted on the web
