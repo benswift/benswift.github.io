@@ -50,7 +50,7 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 
 ---
 
-- **9:30**: spin the wheel(s)!
+- **9:30**: [spin the wheel(s)!](#spin-the-wheels)
 - **9:45**: [group work session 1](#group-work-session-1) (assessment item spec)
 - **10:30**: present your assessment item spec to workshop
 
@@ -185,7 +185,7 @@ submissions for your assessment task. So you don't have to worry about writing
 them down formally just yet, but keep that in mind as you design your assessment
 task.
 
-### Let's spin the wheels!
+### Let's spin the wheels! {#spin-the-wheels}
 
 You don't get to pick the code concept/cultural problem/creative process triad
 which forms the basis for your assessment task. Instead, we'll spin the
