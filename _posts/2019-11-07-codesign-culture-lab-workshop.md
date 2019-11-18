@@ -71,7 +71,7 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 For this workshop it's important that each group has representatives from each
 facet of the c/c/c triad. Look under your chair to find three stickers:
 
-TODO photo
+<!-- TODO photo -->
 
 - the **red** sticker is the _code_ sticker---if you consider yourself a _code_
   person
