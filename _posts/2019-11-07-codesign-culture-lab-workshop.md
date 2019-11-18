@@ -194,7 +194,7 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^fate]: well, the PRNG in your web browser, anyway
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+{% asset js/TweenMax.min.js %}
 {% asset js/Winwheel.js %}
 {% asset js/ccc-workshop-wheels.js %}
 
