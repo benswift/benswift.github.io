@@ -24,7 +24,8 @@ function makeWheel(labels, canvasId) {
 	  duration : 3,
 	  spins    : 5,
 	  callbackFinished : displaySpinResult
-	}
+	},
+	responsive : true
   });
 }
 
