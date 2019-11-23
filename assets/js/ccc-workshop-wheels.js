@@ -31,7 +31,7 @@ function makeWheel(labels, canvasId) {
 	canvasId     : canvasId,
 	numSegments  : labels.length,   // Specify number of segments.
 	outerRadius  : width*0.75*0.5,  // Set radius to so wheel fits the background.
-	textFontSize : 24,   // Set font size accordingly.
+	textFontSize : width*0.035,     // Set font size accordingly.
 	textMargin   : 0,    // Take out default margin.
 	segments     : labels.map((t, i) => ({text: t,
 										  fillStyle: segmentColours[i%segmentColours.length]})),
