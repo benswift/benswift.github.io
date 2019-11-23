@@ -200,7 +200,7 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 <style>
 .wheelIndicator {
   width:100%;
-  font-size:6em;
+  font-size:5vw;
   text-align:center;
   margin-bottom:-0.3em;
 }
