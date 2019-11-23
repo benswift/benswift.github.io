@@ -223,16 +223,7 @@ Note: one other way to frame this is this is the skill/concept that you want the
 students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="codeWheel-canvas" onclick='startSpin(codeWheel);'>
-</canvas>
-
-<script>
-// filthy hacks, but I've got other work to do...
-let cv = document.getElementById("codeWheel-canvas");
-let parentWidth = cv.parentElement.offsetWidth;
-cv.width = parentWidth;
-cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
-</script>
+<div id="codeWheel-canvas"></div>
 
 {:.wheelResult}
 
@@ -276,16 +267,7 @@ This wheel selects the creative _process_ (the medium) through which the student
 will explore the problem.
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="creativityWheel-canvas" width="800" height="600" onclick='startSpin(creativityWheel);'>
-</canvas>
-
-<script>
-// filthy hacks, but I've got other work to do...
-let cv = document.getElementById("creativityWheel-canvas");
-let parentWidth = cv.parentElement.offsetWidth;
-cv.width = parentWidth;
-cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
-</script>
+<div id="creativityWheel-canvas"></div>
 
 {:.wheelResult}
 
@@ -318,16 +300,7 @@ how to leave students to wrestle with what _they_ think about the problem, not
 just picking a theme which implies that there's only one "right approach".
 
 <div class="wheelIndicator">⧨</div>
-<canvas id="cultureWheel-canvas" width="800" height="600" onclick='startSpin(cultureWheel);'>
-</canvas>
-
-<script>
-// filthy hacks, but I've got other work to do...
-let cv = document.getElementById("cultureWheel-canvas");
-let parentWidth = cv.parentElement.offsetWidth;
-cv.width = parentWidth;
-cv.height = parentWidth*0.75; // 4:3 aspect ratio should be ok
-</script>
+<div id="cultureWheel-canvas"></div>
 
 {:.wheelResult}
 

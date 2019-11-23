@@ -1,4 +1,3 @@
-// Create new wheel object specifying the parameters at creation time.
 let segmentColours = [
   "#1abc9c",
   "#3498db",
@@ -10,7 +9,25 @@ let segmentColours = [
 ];
 
 function makeWheel(labels, canvasId) {
-  return new Winwheel({
+  let canvasDiv = document.getElementById(canvasId);
+
+  if (canvasDiv == null){
+	console.log(`makeWheelCanvas error: couldn't find div with ID ${canvasId}`);
+	return false;
+  }
+
+  // create the canvas in js so I can set the correct aspect ratio
+  let width = canvasDiv.parentElement.offsetWidth;
+  var canvas = document.createElement('canvas');
+  canvas.id = canvasId;
+  canvas.width = width;
+  canvas.height = width*0.75; // 4:3 aspect ratio should be ok
+
+  // replace placeholder div with the actual canvas
+  canvasDiv.replaceWith(canvas);
+
+  // create the new winwheel - see Winwheel.js
+  let wheel = new Winwheel({
 	canvasId     : canvasId,
 	numSegments  : labels.length,   // Specify number of segments.
 	outerRadius  : 300,  // Set radius to so wheel fits the background.
@@ -27,6 +44,12 @@ function makeWheel(labels, canvasId) {
 	},
 	responsive : true
   });
+
+  // finally, set the click handler
+  canvas.onclick = () => startSpin(wheel);
+
+  // if we get here, everything's all g
+  return true;
 }
 
 function startSpin(wheel)
