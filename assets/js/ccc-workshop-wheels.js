@@ -30,7 +30,7 @@ function makeWheel(labels, canvasId) {
   let wheel = new Winwheel({
 	canvasId     : canvasId,
 	numSegments  : labels.length,   // Specify number of segments.
-	outerRadius  : 300,  // Set radius to so wheel fits the background.
+	outerRadius  : width*0.75*0.5,  // Set radius to so wheel fits the background.
 	textFontSize : 24,   // Set font size accordingly.
 	textMargin   : 0,    // Take out default margin.
 	segments     : labels.map((t, i) => ({text: t,
@@ -41,8 +41,7 @@ function makeWheel(labels, canvasId) {
 	  duration : 3,
 	  spins    : 5,
 	  callbackFinished : displaySpinResult
-	},
-	responsive : true
+	}
   });
 
   // finally, set the click handler
