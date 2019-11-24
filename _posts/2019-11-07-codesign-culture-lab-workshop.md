@@ -267,8 +267,8 @@ let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
 
 #### the creativity wheel
 
-This wheel selects the creative _process_ (the medium) through which the student
-will explore the problem.
+This wheel selects the creative medium through which the student will explore
+the problem.
 
 <div class="wheelIndicator">⧨</div>
 <div id="creativityWheel-canvas"></div>
@@ -368,9 +368,14 @@ _done_ one).
   completing your assessment task? (that will help with coming up with some
   learning outcomes)
 
-- how might the _concept/tool_ and the _creative process_ shape the responses to
+- how might the _concept/tool_ and the _creative medium_ shape the responses to
   the problem? can you use this to your advantage in encouraging students to
   attain the learning outcomes?
+
+- will the outcome (what the students produce) be something completely new, or
+  will it be a reimagination/repurposing of an existing technology, or
+  speculating on the impact of an existing technology as it develops into the
+  future?
 
 - how are you going to constrain the scope of your task so that it supports
   students from a wide range of backgrounds/abilities?
