@@ -417,6 +417,24 @@ format of this document is up to you. There are a few ways to do this:
   assessment task_, so don't make that the criteria---instead, you want students
   to explore & understand the problem, process & tool more deeply
 
+- how do your criteria support students who haven't necessarily thought deeply
+  about the "big questions" to do so? how do they encourage students who have
+  thought about this stuff to go deeper?
+
+## Takeaway questions
+
+- Did the [wheels](#spin-the-wheels) (and the segments therein) provide enough
+  structure for your assessment design exercise? Too much structure? If you were
+  using them as a tool for assessment design in the future, how would you modify
+  them?
+
+- After participating, are you more or less convinced of the utility of the
+  creative arts in teaching the code concepts? Why?
+
+- What type of student would benefit the most from doing your assessment task?
+  How are they similar/different from the students we see in our CS programs
+  here in CECS?
+
 ## Appendices
 
 ### Presenter bio
