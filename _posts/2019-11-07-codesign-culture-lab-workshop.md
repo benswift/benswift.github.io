@@ -24,6 +24,10 @@ tags: reimagine ccc
 
 {% include toc.html %}
 
+## Workshop overview
+
+### Intro
+
 Is it possible to learn about algorithms through writing poetry about wealth
 inequality? How about exploring the issue of social media use via sculptures
 built using cybersecurity tools and concepts? Furthermore, is it possible to
@@ -43,7 +47,7 @@ Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab). If
 you're coming to the culture lab and you'd like to be part of the workshop, [get
 in touch](mailto:ben.swift@anu.edu.au) 😊
 
-## Workshop timeline
+### Timeline
 
 - **9:00**: intro---what is the c/c/c studio
 - **9:20**: [group formation](#group-formation) (with stickers! 🔴🔵)
@@ -64,9 +68,9 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 - **12:00**: present your assessment criteria to the workshop
 - **12:15**: wrap-up
 
-## Group formation {#group-formation}
+### Group formation {#group-formation}
 
-### Find your stickers
+#### Find your stickers
 
 For this workshop it's important that each group has representatives from each
 facet of the c/c/c triad. Look under your chair to find three stickers:
@@ -89,7 +93,7 @@ that this whole "reducing one's identity in such a multifaceted problem space
 down to just a few stickers" thing is total bollocks, then just go with it for
 now---you can be your group's enfant terrible 😉
 
-### Find your team-mates
+#### Find your team-mates
 
 Once you've attached your stickers prominently to your forehead (or wherever you
 decided to wear them) then you need to find three team-mates (so that there are
@@ -413,7 +417,9 @@ format of this document is up to you. There are a few ways to do this:
   assessment task_, so don't make that the criteria---instead, you want students
   to explore & understand the problem, process & tool more deeply
 
-## Presenter bio
+## Appendices
+
+### Presenter bio
 
 Dr Ben Swift is a Senior Lecturer in the ANU Research School of Computer Science
 (RSCS). As the leader of the code/creativity/culture (c/c/c) research group,
@@ -437,4 +443,4 @@ computing.
 
 <http://benswift.me>
 
-## Footnotes
+### Footnotes
