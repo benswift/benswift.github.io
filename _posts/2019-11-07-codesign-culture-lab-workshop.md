@@ -123,10 +123,10 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
     similar](https://www.azquotes.com/quote/776726), and I'm _pretty sure_ he
     was [Olivia Wilde's](https://www.imdb.com/name/nm1312575/) uncle
 
-**Your design brief for today**: in your group, create an
-assessment[^assessment] task which teaches a particular _code_ concept/tool by
-exploring a problem/challenge facing our[^culture] _culture_ through a
-particular _creative_ process/medium.
+_Your design brief for today_: in your group, create an assessment[^assessment]
+task which teaches a particular **code** concept/tool by exploring a
+problem/challenge facing our[^culture] **culture** through a particular
+**creative** process/medium.
 
 The educational context for this assessment task is the c/c/c studio---a
 selective program for year 11 & 12 students. If you're more familiar with a uni

@@ -1,6 +1,7 @@
 ---
 event: Reimagine CoDesign Culture Lab
 title: c/c/c studio curriculum design
+subtitle: Reimagine CoDesign Culture Lab
 date: "2019-11-28"
 permalink: /talks/ccc-studio-workshop/
 summary: >-
@@ -9,15 +10,47 @@ summary: >-
 
 {% include slides/title.html %}
 
-## ack country
+{% include slides/background-image.html image="images/talks/ccc-studio-workshop/mount-majura-bushland.jpg" %}
+
+We acknowledge and celebrate the First Australians on whose traditional lands we
+meet, and pay our respect to the elders past, present and emerging
 
 ## welcome
 
-## c/c/c untangled(?)
+<!-- TODO get a photo of CDCL attendees -->
+
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/vikas-anand-dev-iMmlx_fCeWc-unsplash.jpg" heading="c/c/c untangled(?)" %}
+
+The code/creativity/culture group (c/c/c) is a research group within the
+Research School of Computer Science. Our goal is to create spaces for talking
+about the way that **code** (software), **creativity** (especially the arts) and
+**culture** (life) intersect in the modern world.
+
+(_from the_ [c/c/c landing
+page](https://cs.anu.edu.au/code-creativity-culture/))
+
+{% include youtube.html id="Sv4Y-UPqML8" %}
 
 ## the c/c/c studio
 
+an [ANU Extension](https://cs.anu.edu.au/code-creativity-culture/) program to
+teach computer science to year 11 & 12 students through making art, music and
+other cool things with computers
+
+curriculum being developed right now (using
+[COMP1720](https://cs.anu.edu.au/courses/comp1720/) & [COMP2710 Laptop
+Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/) as a starting
+point, but everything's up for grabs!)
+
+first student intake (year 11 only) in 2021, first graduates in 2022
+
 ## today's workshop task
+
+_Your design brief for today_: in your group, create an assessment task which
+teaches a particular **code** concept/tool by exploring a problem/challenge
+facing our **culture** through a particular **creative** process/medium.
+
+it might be used in the c/c/c studio 😊
 
 ## timeline
 
@@ -38,7 +71,6 @@ _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2)
 **12:15**: wrap-up
 
 ## workshop goals
-
 
 {% include slides/questions.html %}
 
