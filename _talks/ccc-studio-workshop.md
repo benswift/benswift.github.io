@@ -86,22 +86,40 @@ look for the stickers on your table
 - **green**: _culture_
 - **brown**: _💩_
 
-## worked example
+---
 
-<div style="width:100%; display:flex; justify-content:space-between;">
-<div id="codeWheel-canvas"></div>
-<div id="cultureWheel-canvas"></div>
-<div id="creativityWheel-canvas"></div>
-</div>
+<style>
+.wheelIndicator {
+  width:100%;
+  font-size:2em;
+  text-align:center;
+  margin-bottom:-0.2em;
+}
 
-<p>
+.wheelResult {
+  font-size:1.3em;
+  background-color: #f5ddfa;
+  border-left: 10px solid #be2edd;
+  padding: 1em 1em;
+  margin: 0;
+}
+</style>
+
+<p class="wheelResult">
 
 <em>objective</em>: learning about <strong><span
-class="codeWheel-canvas-result">____</span></strong> by exploring <strong><span
-class="cultureWheel-canvas-result">____</span></strong> through <strong><span
-class="creativityWheel-canvas-result">____</span></strong>
+class="codeWheel-canvas-result">________</span></strong> by exploring
+<strong><span class="cultureWheel-canvas-result">________</span></strong>
+through <strong><span
+class="creativityWheel-canvas-result">________</span></strong>
 
 </p>
+
+<div style="width:100%; display:flex; justify-content:space-between;">
+<div class="wheelIndicator">⧨<div id="codeWheel-canvas"></div></div>
+<div class="wheelIndicator">⧨<div id="cultureWheel-canvas"></div></div>
+<div class="wheelIndicator">⧨<div id="creativityWheel-canvas"></div></div>
+</div>
 
 <script>
 let wheelWidth = document.getElementsByClassName("slides")[0].offsetWidth/7;
