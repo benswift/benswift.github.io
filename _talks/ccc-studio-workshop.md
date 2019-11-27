@@ -68,10 +68,10 @@ it might be used in the c/c/c studio 😊
 
 look for the stickers on your table
 
-- **red**: _code_
-- **blue**: _creativity_
-- **green**: _culture_
-- **brown**: _💩_
+- **red** <span style="color:#eb4d4b;">⬤</span> = _code_
+- **blue** <span style="color:#3498db;">⬤</span> = _creativity_
+- **green** <span style="color:#27ae60;">⬤</span> = _culture_
+- **brown** <span style="color:#85522f;">⬤</span> = 💩
 
 ---
 

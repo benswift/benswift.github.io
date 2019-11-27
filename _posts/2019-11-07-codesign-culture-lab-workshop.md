@@ -77,18 +77,19 @@ facet of the c/c/c triad. Look under your chair to find three stickers:
 
 <!-- TODO photo -->
 
-- the **red** sticker is the _code_ sticker---if you consider yourself a _code_
-  person
+- the **red** <span style="color:#eb4d4b;">⬤</span> sticker is the _code_
+  sticker---if you consider yourself a _code_ person
 
-- the **blue** sticker is the _creativity_ sticker---if you consider yourself a
-  _creativity_ person
+- the **blue** <span style="color:#3498db;">⬤</span> sticker is the _creativity_
+  sticker---if you consider yourself a _creativity_ person
 
-- the **green** sticker is the _culture_ sticker---if you consider yourself a
-  _culture_ person
+- the **green** <span style="color:#27ae60;">⬤</span> sticker is the _culture_
+  sticker---if you consider yourself a _culture_ person
 
-- the **brown** sticker is for if you think that this whole "reducing one's
-  identity in such a multifaceted problem space down to just a few stickers"
-  thing is total bollocks---your job is to be your group's _enfant terrible_ 😉
+- the **brown** <span style="color:#85522f;">⬤</span> sticker is for if you
+  think that this whole "reducing one's identity in such a multifaceted problem
+  space down to just a few stickers" thing is total bollocks---your job is to be
+  your group's _enfant terrible_ 😉
 
 {:.hl-para}
 
