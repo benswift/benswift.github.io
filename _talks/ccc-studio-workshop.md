@@ -62,6 +62,7 @@ it might be used in the c/c/c studio 😊
 | **10:30** | break (morning tea)                                                                                                                               |
 | **11:00** | presentations                                                                                                                                     |
 | **11:30** | [group work session 2]({{site.baseurl}}{% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2) (assessment criteria)  |
+| **12:00** | presentations                                                                                                                                     |
 | **12:15** | wrap-up                                                                                                                                           |
 
 ## group formation

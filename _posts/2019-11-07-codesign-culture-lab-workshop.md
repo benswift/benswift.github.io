@@ -183,11 +183,13 @@ assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %}) and
 [MS Word]({{site.baseurl}}{% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx %})).
 
-One more thing to keep in mind: in the _next_ group work session you'll be
-writing a set of assessment criteria which will be used to assess the
-submissions for your assessment task. So you don't have to worry about writing
-them down formally just yet, but keep that in mind as you design your assessment
-task.
+{:.hl-para}
+
+One more thing to keep in mind: in the [next group work
+session](#group-work-session-2) you'll be writing a set of assessment criteria
+which will be used to assess the submissions for your assessment task. So you
+don't have to worry about writing them down formally just yet, but keep that in
+mind as you design your assessment task.
 
 ### Let's spin the wheels! {#spin-the-wheels}
 
@@ -441,6 +443,18 @@ format of this document is up to you. There are a few ways to do this:
 - What type of student would benefit the most from doing your assessment task?
   How are they similar/different from the students we see in our CS programs
   here in CECS?
+
+- If **you** were in charge of this workshop and had to deliver it again, what
+  would you change?
+
+{:.hl-para}
+
+Thanks so much for participating 😊 If your group wrote the assessment item on
+paper, can you hand it to Ben (or one of the other facilitators) before you
+leave ? If you did it electronically (e.g. using the [markdown
+template]({{site.baseurl}}{% link
+assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %})) then
+can you [email it to Ben](mailto:ben.swift@anu.edu.au)?
 
 ## Appendices
 
