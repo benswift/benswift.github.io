@@ -54,7 +54,7 @@ facing our **culture** through a particular **creative** process/medium
 
 it might be used in the c/c/c studio 😊
 
-{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/murtaza-vora--WZkyrpMdAg-unsplash.jpg" heading="timeline" %}
+## timeline
 
 | **9:00**  | intro & group formation                                                                                                                           |
 | **9:30**  | [group work session 1]({{site.baseurl}}{% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-1) (assessment item spec) |
@@ -78,11 +78,17 @@ look for the stickers on your table
 
 each group must have _all_ of the stickers between them
 
-{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/kelly-sikkema--1_RZL8BGBM-unsplash.jpg" heading="your task today" %}
+## your task today
 
-your group needs to produce a document describing your assessment item
+your group needs to produce a document describing your assessment item,
+including:
 
-description, background/motivation, learning outcomes, spec, resources, faq
+- description
+- background/motivation
+- learning outcomes
+- spec
+- resources
+- faq
 
 there are lots of details on the workshop content page
 
