@@ -86,12 +86,13 @@ facet of the c/c/c triad. Look under your chair to find three stickers:
 - the **green** sticker is the _culture_ sticker---if you consider yourself a
   _culture_ person
 
+- the **brown** sticker is for if you think that this whole "reducing one's
+  identity in such a multifaceted problem space down to just a few stickers"
+  thing is total bollocks---your job is to be your group's _enfant terrible_ 😉
+
 {:.hl-para}
 
-You can choose to have 0, 1, 2 or 3 stickers---it's up to you. And if you think
-that this whole "reducing one's identity in such a multifaceted problem space
-down to just a few stickers" thing is total bollocks, then just go with it for
-now---you can be your group's enfant terrible 😉
+You can choose to have 0, 1, 2, 3 or 4 stickers---it's up to you.
 
 #### Find your team-mates
 
