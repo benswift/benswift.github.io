@@ -162,6 +162,27 @@
 		font-style: normal;
     }
 
+	table {
+		// filthy hacks because tables don't play nice with padding
+		width: 100%;
+
+		text-align: left;
+		border-collapse: collapse;
+		th, td {
+			padding: 0.5em 1em 0.5em 0;
+		}
+		thead th {
+			border-bottom: 1px solid $highlight-color;
+			vertical-align: bottom;
+		}
+		tbody th {
+			vertical-align: top;
+		}
+		td {
+			vertical-align: top;
+		}
+	}
+
 	.image-credit {
 		$creditOpacity: 0.3;
         background-color: adjust-color($background-color, $alpha: -$creditOpacity);
