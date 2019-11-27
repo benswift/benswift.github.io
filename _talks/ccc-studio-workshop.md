@@ -22,12 +22,16 @@ meet, and pay our respect to the elders past, present and emerging
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/vikas-anand-dev-iMmlx_fCeWc-unsplash.jpg" heading="c/c/c untangled(?)" %}
 
 The code/creativity/culture group (c/c/c) is a research group within the
-Research School of Computer Science. Our goal is to create spaces for talking
-about the way that **code** (software), **creativity** (especially the arts) and
-**culture** (life) intersect in the modern world.
+Research School of Computer Science. Our goal is to create spaces for _talking_,
+_thinking_ and _making_ about the way that **code** (software), **creativity**
+(especially the arts) and **culture** (life) intersect in the modern world.
+
+TODO and making things?
 
 (_from the_ [c/c/c landing
 page](https://cs.anu.edu.au/code-creativity-culture/))
+
+---
 
 {% include youtube.html id="Sv4Y-UPqML8" %}
 
@@ -70,7 +74,24 @@ _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2)
 
 **12:15**: wrap-up
 
+## group formation
+
+look for the stickers on your table
+
+- **red**: _code_
+- **blue**: _creativity_
+- **green**: _culture_
+- **brown**: _💩_
+
+## the wheels
+
+
+
 ## workshop goals
+
+what does it mean to teach computing through a creative process?
+
+how do we inspire _all_ kids to learn?
 
 {% include slides/questions.html %}
 
