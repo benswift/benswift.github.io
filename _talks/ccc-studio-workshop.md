@@ -7,8 +7,11 @@ permalink: /talks/ccc-studio-workshop/
 summary: >-
   a half-day workshop at the 2019 CECS Reimagine CoDesign Culture Lab
 ---
-
 {% include slides/title.html %}
+
+{% asset js/TweenMax.min.js %}
+{% asset js/Winwheel.js %}
+{% asset js/ccc-workshop-wheels.js %}
 
 {% include slides/background-image.html image="images/talks/ccc-studio-workshop/mount-majura-bushland.jpg" %}
 
@@ -83,9 +86,78 @@ look for the stickers on your table
 - **green**: _culture_
 - **brown**: _💩_
 
-## the wheels
+## worked example
 
+<div style="width:100%; display:flex; justify-content:space-between;">
+<div id="codeWheel-canvas"></div>
+<div id="creativityWheel-canvas"></div>
+<div id="cultureWheel-canvas"></div>
+</div>
 
+{:.wheelResult}
+
+_code_ wheel: <strong><span class="codeWheel-canvas-result"></span></strong>
+
+{:.wheelResult}
+
+_creativity_ wheel: <strong><span class="creativityWheel-canvas-result"></span></strong>
+
+{:.wheelResult}
+
+_culture_ wheel: <strong><span class="cultureWheel-canvas-result"></span></strong>
+
+<script>
+let wheelWidth = document.getElementsByClassName("slides")[0].offsetWidth/7;
+
+let codeWheel = makeWheel(
+  [
+	"algorithms",
+	"embedded systems",
+	"signal processing",
+	"software design",
+	"databases",
+	"networks",
+	"UI/UX design",
+	"data analytics",
+	"machine learning",
+	"cybersecurity"
+  ],
+  "codeWheel-canvas",
+  wheelWidth);
+
+let creativityWheel = makeWheel(
+  [
+	"music",
+	"sound",
+	"dance",
+	"photography",
+	"painting",
+	"drawing",
+	"textiles",
+	"film",
+	"sculpture",
+	"creative writing",
+	"memes",
+  ],
+  "creativityWheel-canvas",
+  wheelWidth);
+
+let cultureWheel = makeWheel(
+  [
+	"privacy",
+	"ethics",
+	"wealth distribution",
+	"climate change",
+	"work-life balance",
+	"social media use",
+	"immigration",
+	"tolerance",
+	"food security",
+	"world peace"
+  ],
+  "cultureWheel-canvas",
+  wheelWidth);
+</script>
 
 ## workshop goals
 
