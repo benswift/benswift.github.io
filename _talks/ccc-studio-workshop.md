@@ -70,9 +70,9 @@ look for the stickers on your table
 
 **blue** <span style="color:#3498db;">⬤</span> = _creativity_
 
-**green** <span style="color:#27ae60;">⬤</span> = _culture_
+**yellow** <span style="color:#f1c40f;">⬤</span> = _culture_
 
-**brown** <span style="color:#85522f;">⬤</span> = 💩
+**purple** <span style="color:#8e44ad;">⬤</span> = 💩
 
 each group must have _all_ of the stickers between them
 
