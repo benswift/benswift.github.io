@@ -7,6 +7,9 @@ all: $(OUTPUT_FILES)
 %.pdf: %.md $(LATEX_TEMPLATE_FILE)
 	pandoc $< --template $(LATEX_TEMPLATE_FILE) -o $@
 
+%.tex: %.md $(LATEX_TEMPLATE_FILE)
+	pandoc $< --template $(LATEX_TEMPLATE_FILE) -o $@
+
 %.docx: %.md
 	pandoc $< -o $@
 
