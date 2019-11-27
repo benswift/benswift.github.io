@@ -164,8 +164,12 @@ let cultureWheel = makeWheel(
 
 ## workshop goals
 
-how can we teach computing?
+talk: what are the opportunities of the c/c/c framing? what are the problems?
 
-how do we inspire & motivate _everyone_ to make, and in doing so, to learn?
+think: how do we inspire & motivate _everyone_ to make, and in doing so, to learn?
 
-what are the opportunities of the c/c/c framing? what are the problems?
+make: **produce an actual thing**
+
+{% include slides/impact.html %}
+
+let's go!
