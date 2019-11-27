@@ -8,7 +8,7 @@ let segmentColours = [
   "#e67e22"
 ];
 
-function makeWheel(labels, canvasId) {
+function makeWheel(labels, canvasId, radius) {
   let canvasDiv = document.getElementById(canvasId);
 
   if (canvasDiv == null){
@@ -16,12 +16,16 @@ function makeWheel(labels, canvasId) {
 	return false;
   }
 
+  if (radius == null){
+	// if no radius value passed to function, set to half the parent width
+	radius = canvasDiv.parentElement.offsetWidth/2;
+  }
   // create the canvas in js so I can set the correct aspect ratio
-  let width = canvasDiv.parentElement.offsetWidth;
   var canvas = document.createElement('canvas');
   canvas.id = canvasId;
-  canvas.width = width;
-  canvas.height = width*0.75; // 4:3 aspect ratio should be ok
+  canvas.width = radius*2;
+  canvas.height = radius*2;
+  canvas.style.margin = "0 auto;";
 
   // replace placeholder div with the actual canvas
   canvasDiv.replaceWith(canvas);
@@ -30,8 +34,8 @@ function makeWheel(labels, canvasId) {
   let wheel = new Winwheel({
 	canvasId     : canvasId,
 	numSegments  : labels.length,   // Specify number of segments.
-	outerRadius  : width*0.75*0.5,  // Set radius to so wheel fits the background.
-	textFontSize : width*0.033,     // Set font size accordingly.
+	outerRadius  : radius,  // Set radius to so wheel fits the background.
+	textFontSize : radius*0.07,     // Set font size accordingly.
 	textMargin   : 0,    // Take out default margin.
 	segments     : labels.map((t, i) => ({text: t,
 										  fillStyle: segmentColours[i%segmentColours.length]})),
