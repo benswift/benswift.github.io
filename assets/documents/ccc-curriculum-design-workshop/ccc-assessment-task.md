@@ -1,14 +1,19 @@
 % title: TBC
 % author: my awesome team
 
-## Description
+## Task
 
-## Background/motivation
+### Description
 
-## Learning outcomes
+### Background/motivation
 
-## Spec
+### Learning outcomes
 
-## Resources
+### Spec
 
-## FAQ
+### Resources
+
+### FAQ
+
+## Assessment criteria
+
