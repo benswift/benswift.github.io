@@ -158,9 +158,8 @@ let cultureWheel = makeWheel(
 
 ## workshop goals
 
-what does it mean to teach computing through a creative process?
+how can we teach computing?
 
-how do we inspire _all_ kids to learn?
+how do we inspire & motivate _everyone_ to make, and in doing so, to learn?
 
-{% include slides/questions.html %}
-
+what are the opportunities of the c/c/c framing? what are the problems?
