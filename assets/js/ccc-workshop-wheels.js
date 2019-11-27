@@ -25,7 +25,6 @@ function makeWheel(labels, canvasId, radius) {
   canvas.id = canvasId;
   canvas.width = radius*2;
   canvas.height = radius*2;
-  canvas.style.margin = "0 auto;";
 
   // replace placeholder div with the actual canvas
   canvasDiv.replaceWith(canvas);
