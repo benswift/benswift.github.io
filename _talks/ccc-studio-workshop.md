@@ -59,23 +59,12 @@ it might be used in the c/c/c studio 😊
 
 ## timeline
 
-**9:00**: intro & group formation
-
-**9:30**: [group work session 1]({{site.baseurl}}{% link
-_posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-1)
-(assessment item spec)
-
-{:style="background-color: #ddd;"}
-
-**10:30**: break (morning tea)
-
-**11:00**: presentations
-
-**11:30**: [group work session 2]({{site.baseurl}}{% link
-_posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2)
-(assessment criteria)
-
-**12:15**: wrap-up
+| **9:00**  | intro & group formation                                                                                                                           |
+| **9:30**  | [group work session 1]({{site.baseurl}}{% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-1) (assessment item spec) |
+| **10:30** | break (morning tea)                                                                                                                               |
+| **11:00** | presentations                                                                                                                                     |
+| **11:30** | [group work session 2]({{site.baseurl}}{% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2) (assessment criteria)  |
+| **12:15** | wrap-up                                                                                                                                           |
 
 ## group formation
 
