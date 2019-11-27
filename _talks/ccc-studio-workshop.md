@@ -18,14 +18,14 @@ summary: >-
 We acknowledge and celebrate the First Australians on whose traditional lands we
 meet, and pay our respect to the elders past, present and emerging
 
-{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/CoDCL-5948.jpg" heading="welcome" %}
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/CoDCL-5948.jpg" heading="welcome" bgsize="contain" bgcol="black" %}
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/vikas-anand-dev-iMmlx_fCeWc-unsplash.jpg" heading="c/c/c untangled(?)" %}
 
-the code/creativity/culture group (c/c/c) is a research group within the
+The code/creativity/culture group (c/c/c) is a research group within the
 Research School of Computer Science. Our goal is to create spaces for _talking_,
 _thinking_ and _making_ about the way that **code** (software), **creativity**
-(especially the arts) and **culture** (life) intersect in the modern world
+(especially the arts) and **culture** (life) intersect in the modern world.
 
 (from the [c/c/c website](https://cs.anu.edu.au/code-creativity-culture/))
 

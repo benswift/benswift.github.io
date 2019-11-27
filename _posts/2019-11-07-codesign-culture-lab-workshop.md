@@ -51,7 +51,9 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 
 - **9:00**: [intro]({{site.baseurl}}{% link _talks/ccc-studio-workshop.md
   %})---what is the c/c/c studio
-- **9:20**: [group formation](#group-formation) (with stickers! 🔴🔵)
+- **9:20**: [group formation](#group-formation) (with stickers! <span
+  style="color:#eb4d4b;">⬤</span><span style="color:#3498db;">⬤</span><span
+  style="color:#27ae60;">⬤</span><span style="color:#85522f;">⬤</span>)
 
 ---
 
@@ -75,8 +77,6 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 
 For this workshop it's important that each group has representatives from each
 facet of the c/c/c triad. Look under your chair to find three stickers:
-
-<!-- TODO photo -->
 
 - the **red** <span style="color:#eb4d4b;">⬤</span> sticker is the _code_
   sticker---if you consider yourself a _code_ person
@@ -113,7 +113,7 @@ instructions.
 
 ## Session 1: writing an assessment spec {#group-work-session-1}
 
-In his intro, Ben introduced the c/c/c studio idea and set the scene for the
+In his intro, we introduced the c/c/c studio idea and set the scene for the
 whole "code/creativity/culture" thing (spoiler: they're all _highly_ entangled).
 You're now a curriculum designer for the c/c/c studio! Welcome aboard.
 
