@@ -46,7 +46,7 @@ point, but everything's up for grabs!)
 
 first student intake (year 11 only) in 2021, first graduates in 2022
 
-## today's workshop task
+## today's workshop
 
 _your design brief for today_: in your group, create an assessment task which
 teaches a particular **code** concept/tool by exploring a problem/challenge
@@ -72,6 +72,22 @@ look for the stickers on your table
 - **blue** <span style="color:#3498db;">⬤</span> = _creativity_
 - **green** <span style="color:#27ae60;">⬤</span> = _culture_
 - **brown** <span style="color:#85522f;">⬤</span> = 💩
+
+each group must have _all_ of the stickers between them
+
+## your task today
+
+your group needs to produce a document describing your assessment item,
+including:
+
+- description
+- background/motivation
+- learning outcomes
+- spec
+- resources
+- faq
+
+there are lots of details on the workshop content page
 
 ---
 
@@ -171,4 +187,5 @@ make: **produce an actual thing**
 
 {% include slides/impact.html %}
 
-let's go!
+[let's go!]({{site.baseurl}}{% link
+_posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-formation)
