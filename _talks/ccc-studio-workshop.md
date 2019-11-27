@@ -174,13 +174,13 @@ let cultureWheel = makeWheel(
   wheelWidth);
 </script>
 
-{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/jeffrey-f-lin-LgnW6AnTBtc-unsplash.jpg" heading="workshop goals" %}
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/shapelined-qawemGipVPk-unsplash.jpg" heading="workshop goals" %}
 
-talk: what are the opportunities of the c/c/c framing? what are the problems?
+**talk**: what are the opportunities of the c/c/c framing? what are the problems?
 
-think: how do we inspire & motivate _everyone_ to make, and in doing so, to learn?
+**think**: how do we inspire & motivate _everyone_ to make, and in doing so, to learn?
 
-make: **produce an actual thing**
+**make**: produce an _actual thing_
 
 {% include slides/impact.html %}
 
