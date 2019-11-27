@@ -29,8 +29,6 @@ Research School of Computer Science. Our goal is to create spaces for _talking_,
 _thinking_ and _making_ about the way that **code** (software), **creativity**
 (especially the arts) and **culture** (life) intersect in the modern world.
 
-TODO and making things?
-
 (_from the_ [c/c/c landing
 page](https://cs.anu.edu.au/code-creativity-culture/))
 
@@ -38,7 +36,7 @@ page](https://cs.anu.edu.au/code-creativity-culture/))
 
 {% include youtube.html id="Sv4Y-UPqML8" %}
 
-## the c/c/c studio
+{% include slides/background-image.html image="images/posts/comp1720-mp-exhibition-2018-2.jpg" heading="the c/c/c studio" %}
 
 an [ANU Extension](https://cs.anu.edu.au/code-creativity-culture/) program to
 teach computer science to year 11 & 12 students through making art, music and
@@ -53,7 +51,7 @@ first student intake (year 11 only) in 2021, first graduates in 2022
 
 ## today's workshop task
 
-_Your design brief for today_: in your group, create an assessment task which
+_your design brief for today_: in your group, create an assessment task which
 teaches a particular **code** concept/tool by exploring a problem/challenge
 facing our **culture** through a particular **creative** process/medium.
 
@@ -69,7 +67,9 @@ _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-1)
 
 {:style="background-color: #ddd;"}
 
-**11:00**:  break (morning tea)
+**10:30**: break (morning tea)
+
+**11:00**: presentations
 
 **11:30**: [group work session 2]({{site.baseurl}}{% link
 _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2)
