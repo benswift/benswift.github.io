@@ -33,10 +33,10 @@ function makeWheel(labels, canvasId, radius) {
   // create the new winwheel - see Winwheel.js
   let wheel = new Winwheel({
 	canvasId     : canvasId,
-	numSegments  : labels.length,   // Specify number of segments.
-	outerRadius  : radius,  // Set radius to so wheel fits the background.
-	textFontSize : radius*0.07,     // Set font size accordingly.
-	textMargin   : 0,    // Take out default margin.
+	numSegments  : labels.length,
+	outerRadius  : radius,
+	textFontSize : radius*0.07,
+	textMargin   : 0,
 	segments     : labels.map((t, i) => ({text: t,
 										  fillStyle: segmentColours[i%segmentColours.length]})),
 	animation    :
