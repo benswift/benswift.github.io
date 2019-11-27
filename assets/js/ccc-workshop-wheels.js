@@ -34,7 +34,7 @@ function makeWheel(labels, canvasId, radius) {
   let wheel = new Winwheel({
 	canvasId     : canvasId,
 	numSegments  : labels.length,
-	outerRadius  : radius,
+	outerRadius  : radius*0.99,
 	textFontSize : radius*0.07,
 	textMargin   : 0,
 	segments     : labels.map((t, i) => ({text: t,
