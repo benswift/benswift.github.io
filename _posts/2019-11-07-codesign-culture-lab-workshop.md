@@ -87,7 +87,7 @@ facet of the c/c/c triad. Look under your chair to find three stickers:
 - the **yellow** <span style="color:#f1c40f;">⬤</span> sticker is the _culture_
   sticker---if you consider yourself a _culture_ person
 
-- the **purple** <span style="color:85522f;">⬤</span> sticker is for if you
+- the **purple** <span style="color:#85522f;">⬤</span> sticker is for if you
   think that this whole "reducing one's identity in such a multifaceted problem
   space down to just a few stickers" thing is total bollocks---your job is to be
   your group's _enfant terrible_ 😉
