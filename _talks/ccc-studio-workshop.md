@@ -32,9 +32,7 @@ _thinking_ and _making_ about the way that **code** (software), **creativity**
 (_from the_ [c/c/c landing
 page](https://cs.anu.edu.au/code-creativity-culture/))
 
----
-
-{% include youtube.html id="Sv4Y-UPqML8" %}
+{% include slides/youtube.html id="Sv4Y-UPqML8" %}
 
 {% include slides/background-image.html image="images/posts/comp1720-mp-exhibition-2018-2.jpg" heading="the c/c/c studio" %}
 
@@ -53,7 +51,7 @@ first student intake (year 11 only) in 2021, first graduates in 2022
 
 _your design brief for today_: in your group, create an assessment task which
 teaches a particular **code** concept/tool by exploring a problem/challenge
-facing our **culture** through a particular **creative** process/medium.
+facing our **culture** through a particular **creative** process/medium
 
 it might be used in the c/c/c studio 😊
 
