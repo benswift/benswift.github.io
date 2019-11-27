@@ -29,8 +29,7 @@ Research School of Computer Science. Our goal is to create spaces for _talking_,
 _thinking_ and _making_ about the way that **code** (software), **creativity**
 (especially the arts) and **culture** (life) intersect in the modern world.
 
-(_from the_ [c/c/c landing
-page](https://cs.anu.edu.au/code-creativity-culture/))
+(from the [c/c/c website](https://cs.anu.edu.au/code-creativity-culture/))
 
 {% include slides/youtube.html id="Sv4Y-UPqML8" %}
 
