@@ -30,17 +30,17 @@ tags: reimagine ccc
 
 Is it possible to learn about algorithms through writing poetry about wealth
 inequality? How about exploring the issue of social media use via sculptures
-built using cybersecurity tools and concepts? Furthermore, is it possible to
-design an assessment task which encourages deep technical work and honest
-cultural reflection, while still producing a genuinely interesting creative
-outcome?
+built using cybersecurity tools and concepts? Is it possible to design an
+assessment task which encourages deep technical work and honest cultural
+reflection, while still producing a genuinely interesting creative outcome?
 
-This workshop will bring together folks from all points of the
+This workshop brings together folks from all points of the
 code/creativity/culture compass to design a _real_ assessment task for the
-**c/c/c studio** creative code outreach program. In fact, it _needs_ a diverse
-range of voices to work properly. So if you've got thoughts and ideas about
-CS/Engineering curriculum design, the arts, and life within the socio-technical
-assemblage of our present age, then come along and have your say!
+**c/c/c studio** creative computing outreach program. In fact, it _needs_ a
+diverse range of voices to work properly. So if you've got thoughts and ideas
+about CS/Engineering curriculum design, the arts, and life within the
+socio-technical assemblage of our present age, then come along and have your
+say!
 
 This workshop is part of the [CoDesign Culture
 Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab). If
@@ -49,7 +49,8 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 
 ### Timeline
 
-- **9:00**: intro---what is the c/c/c studio
+- **9:00**: [intro]({{site.baseurl}}{% link _talks/ccc-studio-workshop.md
+  %})---what is the c/c/c studio
 - **9:20**: [group formation](#group-formation) (with stickers! 🔴🔵)
 
 ---
@@ -98,11 +99,11 @@ You can choose to have 0, 1, 2, 3 or 4 stickers---it's up to you.
 #### Find your team-mates
 
 Once you've attached your stickers prominently to your forehead (or wherever you
-decided to wear them) then you need to find three team-mates (so that there are
-groups of size four total) for this workshop.
+decided to wear them) then you need to find three team-mates so that each group
+has four members.
 
-The one requirement each group must have _all_ of the stickers between them. So,
-as you mill about finding team-mates, ask one another
+The one requirement is that each group must have _all_ of the stickers between
+them. So, as you mill about finding team-mates, ask one another
 
 1. why you chose to identify with the particular stickers you chose
 2. which sticker was the hardest to decide on, and why
