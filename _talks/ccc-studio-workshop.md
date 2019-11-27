@@ -46,7 +46,7 @@ point, but everything's up for grabs!)
 
 first student intake (year 11 only) in 2021, first graduates in 2022
 
-## today's workshop
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/med-badr-chemmaoui-ZSPBhokqDMc-unsplash.jpg" heading="today's workshop" %}
 
 _your design brief for today_: in your group, create an assessment task which
 teaches a particular **code** concept/tool by exploring a problem/challenge
@@ -54,7 +54,7 @@ facing our **culture** through a particular **creative** process/medium
 
 it might be used in the c/c/c studio 😊
 
-## timeline
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/murtaza-vora--WZkyrpMdAg-unsplash.jpg" heading="timeline" %}
 
 | **9:00**  | intro & group formation                                                                                                                           |
 | **9:30**  | [group work session 1]({{site.baseurl}}{% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-1) (assessment item spec) |
@@ -64,28 +64,25 @@ it might be used in the c/c/c studio 😊
 | **12:00** | presentations                                                                                                                                     |
 | **12:15** | wrap-up                                                                                                                                           |
 
-## group formation
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/joeri-romer-Xne1N4yZuOY-unsplash.jpg" heading="group formation" %}
 
 look for the stickers on your table
 
-- **red** <span style="color:#eb4d4b;">⬤</span> = _code_
-- **blue** <span style="color:#3498db;">⬤</span> = _creativity_
-- **green** <span style="color:#27ae60;">⬤</span> = _culture_
-- **brown** <span style="color:#85522f;">⬤</span> = 💩
+**red** <span style="color:#eb4d4b;">⬤</span> = _code_
+
+**blue** <span style="color:#3498db;">⬤</span> = _creativity_
+
+**green** <span style="color:#27ae60;">⬤</span> = _culture_
+
+**brown** <span style="color:#85522f;">⬤</span> = 💩
 
 each group must have _all_ of the stickers between them
 
-## your task today
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/kelly-sikkema--1_RZL8BGBM-unsplash.jpg" heading="your task today" %}
 
-your group needs to produce a document describing your assessment item,
-including:
+your group needs to produce a document describing your assessment item
 
-- description
-- background/motivation
-- learning outcomes
-- spec
-- resources
-- faq
+description, background/motivation, learning outcomes, spec, resources, faq
 
 there are lots of details on the workshop content page
 
@@ -177,7 +174,7 @@ let cultureWheel = makeWheel(
   wheelWidth);
 </script>
 
-## workshop goals
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/jeffrey-f-lin-LgnW6AnTBtc-unsplash.jpg" heading="workshop goals" %}
 
 talk: what are the opportunities of the c/c/c framing? what are the problems?
 
