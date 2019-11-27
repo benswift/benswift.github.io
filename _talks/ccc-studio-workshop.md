@@ -90,21 +90,18 @@ look for the stickers on your table
 
 <div style="width:100%; display:flex; justify-content:space-between;">
 <div id="codeWheel-canvas"></div>
-<div id="creativityWheel-canvas"></div>
 <div id="cultureWheel-canvas"></div>
+<div id="creativityWheel-canvas"></div>
 </div>
 
-{:.wheelResult}
+<p>
 
-_code_ wheel: <strong><span class="codeWheel-canvas-result"></span></strong>
+<em>objective</em>: learning about <strong><span
+class="codeWheel-canvas-result">____</span></strong> by exploring <strong><span
+class="cultureWheel-canvas-result">____</span></strong> through <strong><span
+class="creativityWheel-canvas-result">____</span></strong>
 
-{:.wheelResult}
-
-_creativity_ wheel: <strong><span class="creativityWheel-canvas-result"></span></strong>
-
-{:.wheelResult}
-
-_culture_ wheel: <strong><span class="cultureWheel-canvas-result"></span></strong>
+</p>
 
 <script>
 let wheelWidth = document.getElementsByClassName("slides")[0].offsetWidth/7;
