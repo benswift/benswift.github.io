@@ -66,13 +66,13 @@ it might be used in the c/c/c studio 😊
 
 look for the stickers on your table
 
-**red** <span style="color:#eb4d4b;">⬤</span> = _code_
+**red**&nbsp;<span style="color:#eb4d4b;">⬤</span> = _code_
 
-**blue** <span style="color:#3498db;">⬤</span> = _creativity_
+**blue**&nbsp;<span style="color:#3498db;">⬤</span> = _creativity_
 
-**yellow** <span style="color:#f1c40f;">⬤</span> = _culture_
+**yellow**&nbsp;<span style="color:#f1c40f;">⬤</span> = _culture_
 
-**purple** <span style="color:#8e44ad;">⬤</span> = 💩
+**purple**&nbsp;<span style="color:#8e44ad;">⬤</span> = 💩
 
 each group must have _all_ of the stickers between them
 
