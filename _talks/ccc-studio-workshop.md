@@ -94,10 +94,8 @@ there are lots of details on the workshop content page
 
 <style>
 .wheelIndicator {
-  width:100%;
   font-size:2em;
   text-align:center;
-  margin-bottom:-0.2em;
 }
 
 .wheelResult {
@@ -126,7 +124,8 @@ class="creativityWheel-canvas-result">________</span></strong>
 </div>
 
 <script>
-let wheelWidth = document.getElementsByClassName("slides")[0].offsetWidth/7;
+let container = document.getElementsByClassName("slides")[0];
+let wheelWidth = parseFloat(window.getComputedStyle(container).width)/7;
 
 let codeWheel = makeWheel(
   [
