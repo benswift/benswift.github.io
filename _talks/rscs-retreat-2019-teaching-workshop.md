@@ -12,21 +12,19 @@ hidden: true
 
 {% include slides/title.html %}
 
-<!-- Ideas for teaching in the future in respect to technology; modalities; logistics of delivery -->
+<!-- ## poll -->
 
-## poll
+<!-- in one(ish) word: -->
 
-in one(ish) word:
+<!-- 1. what part of your course is the **most beneficial** for your students' -->
+<!--    learning? -->
 
-1. what part of your course is the **most beneficial** for your students'
-   learning?
+<!-- 2. what part of your course is the **least beneficial** for your students' -->
+<!--    learning? -->
 
-2. what part of your course is the **least beneficial** for your students'
-   learning?
-
-can be either an activity (e.g. lectures, labs) or part thereof (e.g. assignment
-feedback, group work, live coding) or a particular tool/technique (e.g. Wattle
-quizzes) but must be something _you have control of_ as convenor
+<!-- can be either an activity (e.g. lectures, labs) or part thereof (e.g. assignment -->
+<!-- feedback, group work, live coding) or a particular tool/technique (e.g. Wattle -->
+<!-- quizzes) but must be something _you have control of_ as convenor -->
 
 ## workshop goals
 
@@ -39,7 +37,6 @@ learning outcomes in our courses
 
 {% include slides/background-image.html image="images/talks/rscs-workshop-2019/helps.svg" %}
 
-
 ## table discussion
 
 what does a good learning experience look like?
@@ -51,7 +48,6 @@ when you teach, what are you trying to achieve?
 **Q**uality **I**ndicators of **L**earning & **T**eaching
 
 {% include slides/background-image.html image="images/talks/rscs-workshop-2019/hinders.svg" %}
-
 
 ## table discussion
 
@@ -73,15 +69,15 @@ in your teaching, what _actually_ consumes your time and energy
 
 what's the relationship between time & energy **in**put and learning **out**comes?
 
-any tips for maximising this efficiency?
+are there ways to maximise this efficiency?
 
-## fixed vs marginal costs per student
+## discussion: fixed vs marginal costs per student
 
 _(a lesson from economics)_
 
 in your teaching, what are the fixed costs? what are the marginal ones?
 
-as classes get bigger, any tips for exchanging marginal costs for fixed ones?
+as classes get bigger, are there ways to exchange marginal costs for fixed ones?
 
 ## an aside: the CECS T&L tech stack
 
@@ -94,18 +90,20 @@ project)
 
 _note: these are all "official" and administered by our tech team_
 
-## know your teammates
+## discussion: who are your team-mates?
 
 _(a lesson from football)_
 
 who has the same challenges as you? who's already overcome them?
 
-who can your
+who can you reach out to for advice?
+
+are there ways to teach & improve your course more collaboratively?
 
 ## a commitment
 
-write down one concrete change you'll make* to your
-next course to improve the learning outcomes for your students
+write down one concrete change you'll make* to your course to improve the
+learning outcomes for your students
 
 *_or at least investigate_
 
