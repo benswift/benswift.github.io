@@ -35,7 +35,7 @@ to have honest, safe discussions about what's working and what's not in our cour
 to identify local networks for sharing ideas & resources to improve the student
 learning outcomes in our courses
 
-{% include slides/background-image.html image="images/talks/rscs-workshop-2019/helps.svg" %}
+{% include slides/background-image.html image="images/talks/rscs-workshop-2019/helps.png" bgsize="contain" bgcol="white" %}
 
 ## table discussion
 
@@ -47,7 +47,7 @@ when you teach, what are you trying to achieve?
 
 **Q**uality **I**ndicators of **L**earning & **T**eaching
 
-{% include slides/background-image.html image="images/talks/rscs-workshop-2019/hinders.svg" %}
+{% include slides/background-image.html image="images/talks/rscs-workshop-2019/hinders.png" bgsize="contain" bgcol="white" %}
 
 ## table discussion
 
