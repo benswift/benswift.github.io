@@ -18,6 +18,8 @@ summary: >-
 We acknowledge and celebrate the First Australians on whose traditional lands we
 meet, and pay our respect to the elders past, present and emerging
 
+{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/blog-post-url-qr-code.png" bgsize="contain" bgcol="black" %}
+
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/CoDCL-5948.jpg" heading="welcome" bgsize="contain" bgcol="black" %}
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/vikas-anand-dev-iMmlx_fCeWc-unsplash.jpg" heading="c/c/c untangled(?)" %}
