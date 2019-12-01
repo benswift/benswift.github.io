@@ -7,6 +7,7 @@ date: "2019-12-02"
 permalink: /talks/rscs-retreat/
 summary: >-
   a workshop at the 2019 RSCS retreat
+hidden: true
 ---
 
 {% include slides/title.html %}
