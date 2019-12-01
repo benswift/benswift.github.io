@@ -39,40 +39,6 @@ learning outcomes in our courses
 
 {% include slides/background-image.html image="images/talks/rscs-workshop-2019/helps.svg" %}
 
-## poll results: what's most important
-
-```js
-coding
-hands-on activities
-assignment feedback
-forum
-assignments
-multiple assignments
-exam
-fresh air
-labs
-labs
-student interactions
-assignments
-labs
-interactive workshops
-interactive lectures
-assessments aligned with LOs
-assignments
-exam
-assignments
-exam
-feedback
-labs
-practicals
-labs
-labs
-practical skills
-labs
-hardware
-labs
-technical stuff
-```
 
 ## table discussion
 
@@ -86,41 +52,6 @@ when you teach, what are you trying to achieve?
 
 {% include slides/background-image.html image="images/talks/rscs-workshop-2019/hinders.svg" %}
 
-## poll results: what's least important
-
-```
-lectures
-homework
-mark appeals
-deadlines
-mid-sem exam
-cheating
-past exam papers
-big classes
-lectures after 4pm
-UP Academy
-lecture attendance
-space
-marks
-drop-ins
-lack of feedback
-cheating
-group work
-exam
-lectures
-homework
-SELT
-shaming
-breadth
-Wattle
-lectures
-SELT
-theory
-lectures
-synchronous content
-SELT
-rules
-```
 
 ## table discussion
 
@@ -177,3 +108,74 @@ write down one concrete change you'll make* to your
 next course to improve the learning outcomes for your students
 
 *_or at least investigate_
+
+# appendices
+
+{: style="column-count: 2;"}
+## poll results: what's most important
+
+- coding
+- hands-on activities
+- assignment feedback
+- forum
+- assignments
+- multiple assignments
+- exam
+- fresh air
+- labs
+- labs
+- student interactions
+- assignments
+- labs
+- interactive workshops
+- interactive lectures
+- assessments aligned with LOs
+- assignments
+- exam
+- assignments
+- exam
+- feedback
+- labs
+- practicals
+- labs
+- labs
+- practical skills
+- labs
+- hardware
+- labs
+- technical stuff
+
+{: style="column-count: 2;"}
+## poll results: what's least important
+
+- lectures
+- homework
+- mark appeals
+- deadlines
+- mid-sem exam
+- cheating
+- past exam papers
+- big classes
+- lectures after 4pm
+- UP Academy
+- lecture attendance
+- space
+- marks
+- drop-ins
+- lack of feedback
+- cheating
+- group work
+- exam
+- lectures
+- homework
+- SELT
+- shaming
+- breadth
+- Wattle
+- lectures
+- SELT
+- theory
+- lectures
+- synchronous content
+- SELT
+- rules
