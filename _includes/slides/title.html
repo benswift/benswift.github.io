@@ -3,7 +3,11 @@
   {%- if page.subtitle -%}
   <p class="talk-subtitle">{{ page.subtitle }}</p>
   {%- endif -%}
+  {% if page.author %}
+  <p class="talk-name">{{ page.author }}</p>
+  {% else %}
   <p class="talk-name"><a href="{{ site.url }}">Dr. Ben Swift</a></p>
+  {% endif %}
   <p class="talk-date">{{ page.date | date: "%d %b '%y" }}</p>
   <p>{% include cc-link.html %}</p>
 
