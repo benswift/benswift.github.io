@@ -24,9 +24,9 @@ in one(ish) word:
 2. what part of your course is the **least beneficial** for your students'
    learning?
 
-can be either an activity (e.g. lectures, labs) or a part thereof (e.g.
-assignment feedback, group work, live coding) but must be something you control
-as convenor
+can be either an activity (e.g. lectures, labs) or part thereof (e.g. assignment
+feedback, group work, live coding) or a particular tool/technique (e.g. Wattle
+quizzes) but must be something _you have control of_ as convenor
 
 ## workshop goals
 
@@ -39,7 +39,40 @@ learning outcomes in our courses
 
 ## poll results
 
-TODO
+```js
+let most = [
+"coding",
+"hands-on activities",
+"assignment feedback",
+"forum",
+"assignments",
+"multiple assesment",
+"exam",
+"fresh air",
+"labs",
+"labs",
+"student interactions",
+"assignments",
+"labs",
+"interactive workshops",
+"interactive lectures",
+"assessments aligned with LOs",
+"assignments",
+"exam",
+"assignments",
+"exam",
+"feedback",
+"labs",
+"practicals",
+"labs",
+"labs",
+"practical skills",
+"labs",
+"hardware",
+"labs",
+"technical stuff"
+]
+```
 
 ## table discussion
 
@@ -53,7 +86,41 @@ when you teach, what are you trying to achieve?
 
 ## poll results
 
-TODO
+```js
+let least = [
+"lectures",
+"homework",
+"mark appeals",
+"deadlines",
+"mid-sem exam",
+"cheating",
+"past exam papers",
+"big classes",
+"lectures after 4pm",
+"UP Academy",
+"lecture attendance",
+"lack of space",
+"marks",
+"drop-ins",
+"lack of feedback",
+"cheating",
+"group work",
+"exam",
+"lectures",
+"homework",
+"SELT",
+"shaming",
+"content breadth",
+"Wattle",
+"lectures",
+"SELT",
+"theory",
+"lectures",
+"synchronous content",
+"SELT",
+"rules"
+]
+```
 
 ## table discussion
 
