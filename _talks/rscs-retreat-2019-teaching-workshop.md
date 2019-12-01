@@ -65,7 +65,7 @@ no answers, but some helpful questions
 
 _(a lesson from physics)_
  
-in your teaching, what _actually_ consumes your time and energy
+in your teaching, what _actually_ consumes your time and energy?
 
 what's the relationship between time & energy **in**put and learning **out**comes?
 
