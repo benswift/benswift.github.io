@@ -37,41 +37,41 @@ to have honest, safe discussions about what's working and what's not in our cour
 to identify local networks for sharing ideas & resources to improve the student
 learning outcomes in our courses
 
-## poll results
+{% include slides/background-image.html image="images/talks/rscs-workshop-2019/helps.svg" %}
+
+## poll results: what's most important
 
 ```js
-let most = [
-"coding",
-"hands-on activities",
-"assignment feedback",
-"forum",
-"assignments",
-"multiple assesment",
-"exam",
-"fresh air",
-"labs",
-"labs",
-"student interactions",
-"assignments",
-"labs",
-"interactive workshops",
-"interactive lectures",
-"assessments aligned with LOs",
-"assignments",
-"exam",
-"assignments",
-"exam",
-"feedback",
-"labs",
-"practicals",
-"labs",
-"labs",
-"practical skills",
-"labs",
-"hardware",
-"labs",
-"technical stuff"
-]
+coding
+hands-on activities
+assignment feedback
+forum
+assignments
+multiple assignments
+exam
+fresh air
+labs
+labs
+student interactions
+assignments
+labs
+interactive workshops
+interactive lectures
+assessments aligned with LOs
+assignments
+exam
+assignments
+exam
+feedback
+labs
+practicals
+labs
+labs
+practical skills
+labs
+hardware
+labs
+technical stuff
 ```
 
 ## table discussion
@@ -84,42 +84,42 @@ when you teach, what are you trying to achieve?
 
 **Q**uality **I**ndicators of **L**earning & **T**eaching
 
-## poll results
+{% include slides/background-image.html image="images/talks/rscs-workshop-2019/hinders.svg" %}
 
-```js
-let least = [
-"lectures",
-"homework",
-"mark appeals",
-"deadlines",
-"mid-sem exam",
-"cheating",
-"past exam papers",
-"big classes",
-"lectures after 4pm",
-"UP Academy",
-"lecture attendance",
-"lack of space",
-"marks",
-"drop-ins",
-"lack of feedback",
-"cheating",
-"group work",
-"exam",
-"lectures",
-"homework",
-"SELT",
-"shaming",
-"content breadth",
-"Wattle",
-"lectures",
-"SELT",
-"theory",
-"lectures",
-"synchronous content",
-"SELT",
-"rules"
-]
+## poll results: what's least important
+
+```
+lectures
+homework
+mark appeals
+deadlines
+mid-sem exam
+cheating
+past exam papers
+big classes
+lectures after 4pm
+UP Academy
+lecture attendance
+space
+marks
+drop-ins
+lack of feedback
+cheating
+group work
+exam
+lectures
+homework
+SELT
+shaming
+breadth
+Wattle
+lectures
+SELT
+theory
+lectures
+synchronous content
+SELT
+rules
 ```
 
 ## table discussion
