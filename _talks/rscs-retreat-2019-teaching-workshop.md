@@ -12,19 +12,19 @@ hidden: true
 
 {% include slides/title.html %}
 
-<!-- ## poll -->
+## poll
 
-<!-- in one(ish) word: -->
+in one(ish) word:
 
-<!-- 1. what part of your course is the **most beneficial** for your students' -->
-<!--    learning? -->
+1. what part of your course is the **most beneficial** for your students'
+   learning?
 
-<!-- 2. what part of your course is the **least beneficial** for your students' -->
-<!--    learning? -->
+2. what part of your course is the **least beneficial** for your students'
+   learning?
 
-<!-- can be either an activity (e.g. lectures, labs) or part thereof (e.g. assignment -->
-<!-- feedback, group work, live coding) or a particular tool/technique (e.g. Wattle -->
-<!-- quizzes) but must be something _you have control of_ as convenor -->
+can be either an activity (e.g. lectures, labs) or part thereof (e.g. assignment
+feedback, group work, live coding) or a particular tool/technique (e.g. Wattle
+quizzes) but must be something _you have control of_ as convenor
 
 ## workshop goals
 
