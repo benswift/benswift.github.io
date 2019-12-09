@@ -1,7 +1,7 @@
 ---
 event: Glasgow University seminar
 title: Introducing the c/c/c studio
-date: "TBC"
+date: "2020-02-17"
 permalink: /talks/ccc-studio-overview/
 summary: >-
   TODO
