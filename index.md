@@ -3,7 +3,7 @@ title: benswift.me
 layout: page
 ---
 
-{% asset images/pages/theremin-75.jpg @pic alt="Ben performing live" %}
+{% include assets/picture.html file="images/pages/theremin-75.jpg" alt="Ben performing live" %}
 
 Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ),

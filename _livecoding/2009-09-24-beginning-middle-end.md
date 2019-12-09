@@ -23,10 +23,10 @@ could be used to influence certain aspects of the music.
 
 Here's a photo of me preparing for the gig:
 
-{% asset images/livecoding/ben-bme-prep.jpg @pic alt="Ben preparing for the BME gig" %}
+{% include assets/picture.html file="images/livecoding/ben-bme-prep.jpg" alt="Ben preparing for the BME gig" %}
 
 and a couple more shots from the gig (in the School of Art Gallery).
 
-{% asset images/livecoding/ben-bme-1.jpg @pic alt="Ben livecoding at the Beginning Middle End festival" %}
+{% include assets/picture.html file="images/livecoding/ben-bme-1.jpg" alt="Ben livecoding at the Beginning Middle End festival" %}
 
-{% asset images/livecoding/ben-bme-2.jpg @pic alt="Ben livecoding at the Beginning Middle End festival" %}
+{% include assets/picture.html file="images/livecoding/ben-bme-2.jpg" alt="Ben livecoding at the Beginning Middle End festival" %}

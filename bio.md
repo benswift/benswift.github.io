@@ -4,7 +4,7 @@ layout: page
 permalink: /bio/
 ---
 
-{% asset images/pages/ben-autumn-on-campus.jpg @pic alt="Me, on the ANU Campus in Autumn." %}
+{% include assets/picture.html file="images/pages/ben-autumn-on-campus.jpg" alt="Me, on the ANU Campus in Autumn." %}
 
 I'm a [Canberra](http://en.wikipedia.org/wiki/Canberra) lad, born and
 bred. One day I may have to move away from this place, but for now I'm

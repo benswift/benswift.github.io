@@ -11,7 +11,7 @@ event_url: https://cs.anu.edu.au/events/cecs-welcome-party
 venue_url:
 ---
 
-{% asset images/livecoding/ben-kieran-cecs-welcome-party-2019.jpg @pic alt="Ben & Kieran livecoding at the CECS Welcome Party" %}
+{% include assets/picture.html file="images/livecoding/ben-kieran-cecs-welcome-party-2019.jpg" alt="Ben & Kieran livecoding at the CECS Welcome Party" %}
 
 As usual, [CECS](https://cecs.anu.edu.au/) kicked off the year with a welcome
 party for students & staff old and new. [Kieran](https://kieranbrowne.com) and I

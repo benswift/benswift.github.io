@@ -17,19 +17,19 @@ up.
 
 ### Australian Council of Deans of ICT 2017
 
-{% asset images/livecoding/ben-alta.jpg @pic alt="Ben livecoding at the Council of Deans' of ICT meeting" %}
+{% include assets/picture.html file="images/livecoding/ben-alta.jpg" alt="Ben livecoding at the Council of Deans' of ICT meeting" %}
 
 from [@FalknerKatrina](https://twitter.com/FalknerKatrina/status/854861227809361920)
 
 ### Australian Institute of Physics Congress 2014
 
-{% asset images/livecoding/ben-AIP-congress.jpg @pic alt="Ben livecoding a physics simulation at AIP congress" %}
+{% include assets/picture.html file="images/livecoding/ben-AIP-congress.jpg" alt="Ben livecoding a physics simulation at AIP congress" %}
 
 from [@starstoofondly](https://twitter.com/starstoofondly/status/542177320321024000)
 
 ### Australasian Computer Music Conference (ACMC) 2007
 
-{% asset images/livecoding/ben-acmc-07-kremlin.jpg @pic alt="ACMC attendees hanging out at Kremlin bar" %}
+{% include assets/picture.html file="images/livecoding/ben-acmc-07-kremlin.jpg" alt="ACMC attendees hanging out at Kremlin bar" %}
 
 This isn't me _performing_, unless you count my animated conversation with
 Gordon Monro as a performance.

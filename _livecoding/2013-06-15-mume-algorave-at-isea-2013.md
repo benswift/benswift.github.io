@@ -15,9 +15,9 @@ video_url: https://vimeo.com/70016164
 
 _Bonus content_: here's Andrew Sorensen and I practicing for the gig
 
-{% asset images/livecoding/ben-andy-mume-practice.jpg @pic alt="Ben and Andrew Sorensen practicing for the gig" %}
+{% include assets/picture.html file="images/livecoding/ben-andy-mume-practice.jpg" alt="Ben and Andrew Sorensen practicing for the gig" %}
 
 and photos of us at the gig itself
 
-{% asset images/livecoding/ben-andy-mume-1.jpg @pic alt="Ben and Andrew Sorensen performing" %}
-{% asset images/livecoding/ben-andy-mume-2.jpg @pic alt="Ben and Andrew Sorensen performing" %}
+{% include assets/picture.html file="images/livecoding/ben-andy-mume-1.jpg" alt="Ben and Andrew Sorensen performing" %}
+{% include assets/picture.html file="images/livecoding/ben-andy-mume-2.jpg" alt="Ben and Andrew Sorensen performing" %}

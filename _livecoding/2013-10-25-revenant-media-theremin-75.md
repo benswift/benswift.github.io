@@ -27,8 +27,8 @@ This gig has a fun backstory (from [ANU Media]({{ page.event_url }})):
 To celebrate, I put together a theremin-inspired livecoding set (with live
 visuals inspired by Stan's beautiful theremins).
 
-{% asset images/livecoding/ben-revenant-media-1.jpg @pic alt="Ben livecoding at Revenant Media (from behind)" %}
-{% asset images/livecoding/ben-revenant-media-2.jpg @pic alt="Ben livecoding at Revenant Media (close-up of screen)" %}
+{% include assets/picture.html file="images/livecoding/ben-revenant-media-1.jpg" alt="Ben livecoding at Revenant Media (from behind)" %}
+{% include assets/picture.html file="images/livecoding/ben-revenant-media-2.jpg" alt="Ben livecoding at Revenant Media (close-up of screen)" %}
 
 Because I wanted to show off the visuals (and the above video from the gig
 didn't really do that) I "re-recorded" (to the best of my ability to remember)

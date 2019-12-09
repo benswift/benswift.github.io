@@ -17,16 +17,16 @@ There were more talented photographers than I present (and I'll put those photos
 & videos up when I track them down) but here are some photos I snapped of the
 performances:
 
-{% asset images/posts/lens-showcase-2019-s2/IMG_0895.jpg @pic alt="LENS members performing at the showcase" %}
-{% asset images/posts/lens-showcase-2019-s2/IMG_0896.jpg @pic alt="LENS members performing at the showcase" %}
-{% asset images/posts/lens-showcase-2019-s2/IMG_0897.jpg @pic alt="LENS members performing at the showcase" %}
-{% asset images/posts/lens-showcase-2019-s2/IMG_0898.jpg @pic alt="LENS members performing at the showcase" %}
-{% asset images/posts/lens-showcase-2019-s2/IMG_0899.jpg @pic alt="LENS members performing at the showcase" %}
-{% asset images/posts/lens-showcase-2019-s2/IMG_0900.jpg @pic alt="LENS members performing at the showcase" %}
+{% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0895.jpg" alt="LENS members performing at the showcase" %}
+{% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0896.jpg" alt="LENS members performing at the showcase" %}
+{% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0897.jpg" alt="LENS members performing at the showcase" %}
+{% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0898.jpg" alt="LENS members performing at the showcase" %}
+{% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0899.jpg" alt="LENS members performing at the showcase" %}
+{% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0900.jpg" alt="LENS members performing at the showcase" %}
 
 the LENS members even stayed around afterwards to help us bump out:
 
-{% asset images/posts/lens-showcase-2019-s2/IMG_0901.jpg @pic alt="LENS members packing up at the showcase" %}
+{% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0901.jpg" alt="LENS members packing up at the showcase" %}
 
 LENS will be back again in S1 2019, so if you're interested then [shoot me an
 email](mailto:ben.swift@anu.edu.au) and we can keep you in the loop about how to
