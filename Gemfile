@@ -11,8 +11,6 @@ group :jekyll_plugins do
   gem "jekyll-compose"
   # checking things
   gem "html-proofer", "~> 3"
-  # caching things
-  gem 'jekyll-include-cache', "~> 0"
   # scholar
   gem "jekyll-scholar", "~> 5"
 end
