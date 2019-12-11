@@ -8,16 +8,7 @@
 
 @import url('https://rsms.me/inter/inter-ui.css');
 
-// use self-hosted Courier Prime (it's not on Google fonts or anything)
-@font-face {
-	font-family: "Courier Prime";
-	src: font-files(
-		"{% asset \"fonts/courier-prime/courier-prime.ttf\" @path %}",
-		"{% asset \"fonts/courier-prime/courier-prime-bold.ttf\" @path %}",
-		"{% asset \"fonts/courier-prime/courier-prime-italic.ttf\" @path %}",
-		"{% asset \"fonts/courier-prime/courier-prime-bold-italic.ttf\" @path %}"
-	);
-}
+@import "./courier-prime.scss";
 
 :root {
 	background-color: $background-color;
