@@ -2,8 +2,8 @@
 <html>
   <head>
 	{% include head.html %}
-	{% asset reveal.js-3.8.0/css/reveal.scss %}
-	{% asset css/ben-reveal-theme.scss %}
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/reveal.js-3.8.0/css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/ben-reveal-theme.css">
   </head>
   <body>
 	{{ content | revealify }}
