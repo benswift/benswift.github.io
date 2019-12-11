@@ -7,10 +7,10 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0"
   gem "jekyll-paginate-v2", "~> 2"
   gem "jekyll-seo-tag", "~> 2"
-  # compose
-  gem "jekyll-compose"
-  # checking things
-  gem "html-proofer", "~> 3"
-  # scholar
+  gem "jekyll-autoprefixer", "~> 1"
   gem "jekyll-scholar", "~> 5"
+  # for authoring
+  gem "jekyll-compose"
+  # to check everything's hooked up right
+  gem "html-proofer", "~> 3"
 end
