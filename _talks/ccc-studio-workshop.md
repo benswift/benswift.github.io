@@ -9,9 +9,9 @@ summary: >-
 ---
 {% include slides/title.html %}
 
-{% asset js/TweenMax.min.js %}
-{% asset js/Winwheel.js %}
-{% asset js/ccc-workshop-wheels.js %}
+<script src="{{ site.baseurl }}/assets/js/TweenMax.min.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/assets/js/Winwheel.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/assets/js/ccc-workshop-wheels.js" type="text/javascript"></script>
 
 {% include slides/background-image.html image="images/talks/ccc-studio-workshop/mount-majura-bushland.jpg" %}
 

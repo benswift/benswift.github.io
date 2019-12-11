@@ -44,8 +44,8 @@ Evaluate the extempore code on VSCode by following the steps below:
 
 5. Connect to the Extempore process: you can do this in VSCode through the
    “**command palette**”, which can be brought up with **ctrl+Shift+P** on
-   Windows/Linux or **cmd+Shift+P** on macOS. {% asset
-   images/xinyu-tutorials/TO3.png @pic alt="the command palette" %}
+   Windows/Linux or **cmd+Shift+P** on macOS. {% include assets/picture.html
+   file="images/xinyu-tutorials/TO3.png" alt="the command palette" %}
 
 6.  Type **Extempore Connect** in the opening command palette, the default host
     and port arguments will be `localhost` and `7099` respectively.
@@ -57,7 +57,7 @@ evaluate and hit **cmd+enter** on macOS or **ctrl+enter** on Windows/Linux.
 
 What you might see in the terminal window when you evaluate extempore code:
 
-{% asset images/xinyu-tutorials/TO4.png @pic alt="Extempore log view" %}
+{% include assets/picture.html file="images/xinyu-tutorials/TO4.png" alt="Extempore log view" %}
 
 > Note: you can use **ctrl+c** in the terminal where extempore is running to kill the extempore process whenever you want.
 
@@ -75,7 +75,7 @@ Work in pairs or small groups, look at the code below and predict what does this
 
 Run the code above. Does the compiler print anything in the log? What does the printed message mean?
 
-{% asset images/xinyu-tutorials/my-pi.png @pic alt="my-pi log view" %}
+{% include assets/picture.html file="images/xinyu-tutorials/my-pi.png" alt="my-pi log view" %}
 
 Now, it's time to produce a sound in Extempore!
 
