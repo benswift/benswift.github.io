@@ -36,7 +36,7 @@ alt.Chart(source).mark_line().encode(x="x", y="f(x)").save(f"{CHART_DIR}/sin-x.s
 
 which (with default settings) produces a chart that looks like this:
 
-{% asset images/posts/altair-charts/sin-x.svg alt="f(x) = sin(x)/5" %}
+<p><img alt="f(x) = sin(x)/5" src="{{ site.baseurl }}/assets/images/posts/altair-charts/sin-x.svg" /></p>
 
 ## Easy tweaking of "size" through chart themes
 
@@ -67,7 +67,7 @@ alt.Chart(source).mark_line().encode(x="x", y="f(x)").properties(
 ).save(f"{CHART_DIR}/sin-x-big-text.svg")
 ```
 
-{% asset images/posts/altair-charts/sin-x-big-text.svg alt="f(x) = sin(x)/5 with bigger labels" %}
+<p><img alt="f(x) = sin(x)/5 with bigger labels" src="{{ site.baseurl }}/assets/images/posts/altair-charts/sin-x-big-text.svg" /></p>
 
 Obviously I'm exaggerating here to make a point, but the key point is that there
 are just a couple of numbers to tweak (`width` and `height`) which control text
