@@ -2,7 +2,6 @@
   "name": "benswift-me-source",
   "version": "1.0.0",
   "description": "Jekyll source code for <https://benswift.me>",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"build": "bundle exec jekyll build"
