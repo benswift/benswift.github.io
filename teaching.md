@@ -19,8 +19,9 @@ Science](https://cs.anu.edu.au/courses/comp2300/)
 - [COMP1720: Art & Interaction in New
   Media](https://cs.anu.edu.au/courses/comp1720/) in **Semester 2 (Jul-Nov)**
 
-- [ANU Laptop Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/) in
-  **Semester 1 & 2**
+- [COMP2710: Laptop
+  Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/) in **Semester 1
+  & 2**
 
 - ~~[_Internet of Things_ China Study
   Tour](https://cs.anu.edu.au/courses/china-study-tour/) at the Beijing
