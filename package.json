@@ -1,0 +1,19 @@
+{
+  "name": "benswift-me-source",
+  "version": "1.0.0",
+  "description": "Jekyll source code for <https://benswift.me>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benswift/benswift.github.io.git"
+  },
+  "author": "Ben Swift",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benswift/benswift.github.io/issues"
+  },
+  "homepage": "https://benswift.me"
+}
