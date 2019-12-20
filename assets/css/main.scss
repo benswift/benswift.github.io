@@ -9,297 +9,297 @@
 @import url('{{ site.baseurl}}/assets/css/fira-code.css');
 
 :root {
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.4;
-	color: $text-color;
-	background-color: $background-color;
-	box-sizing: border-box;
+    font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $text-color;
+    background-color: $background-color;
+    box-sizing: border-box;
 }
 
 // advice based on https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 *, *:before, *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 h1,h2,h3,h4,h5,h6,p {
-	padding: 0 0.8rem;
+    padding: 0 0.8rem;
 }
 
 a {
-	color: $link-color;
-	text-decoration: none;
-	font-weight: 900;
+    color: $link-color;
+    text-decoration: none;
+    font-weight: 900;
 
-	&:hover {
-		color: $background-color;
-		background-color: $text-color;
+    &:hover {
+        color: $background-color;
+        background-color: $text-color;
 
-	}
-	transition-property: color, background-color;
-	transition-duration: 0.5s;
+    }
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
 
-	// anchor.js
-	&.anchorjs-link {
-		color: $highlight-color;
-		&:hover {
-			color: $link-color;
-		}
-		background-color: inherit;
-	}
+    // anchor.js
+    &.anchorjs-link {
+        color: $highlight-color;
+        &:hover {
+            color: $link-color;
+        }
+        background-color: inherit;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-weight: 900;
+    font-weight: 900;
 }
 
 strong {
-	font-weight: 900;
+    font-weight: 900;
 }
 
 code {
-	font-family: "Fira Code", monospace;
-	color: darken($highlight-color, 10%);
-	background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	padding: 0.2rem;
-	border-radius: 0.2rem;
+    font-family: "Fira Code", monospace;
+    color: darken($highlight-color, 10%);
+    background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
 }
 
 pre > code {
-	background-color: #282c34;
-	border-radius: 0;
+    background-color: #282c34;
+    border-radius: 0;
 }
 
 // main grid layout - mobile-first
 
 .container {
-	display: grid;
-	grid-template-columns: 100vw;
-	grid-template-rows: auto;
-	grid-template-areas:
-		"header"
-			"main"
-			"footer";
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
 // navigation (useful in header, but in other places as well)
 
 .navigation {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	color: $text-color;
-	padding: 0 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: $text-color;
+    padding: 0 0.6rem;
 
-	&>* {
-		padding: 0.2rem;
-	}
+    &>* {
+        padding: 0.2rem;
+    }
 
-	.current {
-		border-bottom: 5px solid $highlight-color;
-	}
+    .current {
+        border-bottom: 5px solid $highlight-color;
+    }
 
-	.disabled {
-		color: $text-grey;
-		cursor: not-allowed;
-	}
+    .disabled {
+        color: $text-grey;
+        cursor: not-allowed;
+    }
 }
 
 
 header {
-	grid-area: header;
+    grid-area: header;
 
-	padding: 2rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
 
-	nav.logo {
-		a {
-			font-size: 1.3rem;
-			background: linear-gradient(to left, $highlight-color, darken($highlight-color, 15%));
-			color: $background-color;
-			padding: 0.4rem 0.8rem;
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-		margin-bottom: 15px;
-	}
+    nav.logo {
+        a {
+            font-size: 1.3rem;
+            background: linear-gradient(to left, $highlight-color, darken($highlight-color, 15%));
+            color: $background-color;
+            padding: 0.4rem 0.8rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        margin-bottom: 15px;
+    }
 
-	a {
-		font-weight: 900;
-	}
+    a {
+        font-weight: 900;
+    }
 }
 
 main {
-	grid-area: main;
+    grid-area: main;
 }
 
 footer {
-	grid-area: footer;
-	border-top: 1px solid $highlight-color;
-	color: $text-grey;
+    grid-area: footer;
+    border-top: 1px solid $highlight-color;
+    color: $text-grey;
 
-	a {
-		color: $text-grey;
-		font-weight: 900;
-	}
+    a {
+        color: $text-grey;
+        font-weight: 900;
+    }
 }
 
 // posts
 
 .post-date {
-	font-style: italic;
-	color: $text-grey;
+    font-style: italic;
+    color: $text-grey;
 }
 
 .post-tag-container {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .post-tag {
-	font-weight: 400;
-	background-color: lighten($highlight-color, 40%);
-	color: $highlight-color;
-	padding: 0.2em;
-	margin: 0 0.4rem 0.4rem 0;
+    font-weight: 400;
+    background-color: lighten($highlight-color, 40%);
+    color: $highlight-color;
+    padding: 0.2em;
+    margin: 0 0.4rem 0.4rem 0;
 }
 
 .post-excerpt {
-	border-top: 1px solid $highlight-color;
+    border-top: 1px solid $highlight-color;
 }
 
 // nice blockquotes
 // from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
 blockquote {
-	background-color: darken($background-color, 10%);
-	border-left: 10px solid darken($background-color, 20%);
-	padding: 1em 1em;
-	margin: 1em 0;
-	quotes: "\201C""\201D""\2018""\2019";
+    background-color: darken($background-color, 10%);
+    border-left: 10px solid darken($background-color, 20%);
+    padding: 1em 1em;
+    margin: 1em 0;
+    quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-	color: darken($background-color, 20%);
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.1em;
-	vertical-align: -0.4em;
+    color: darken($background-color, 20%);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
 }
 blockquote p {
-	display: inline;
+    display: inline;
 }
 
 // higlighted paragraphs
 
 .hl-para {
-	background-color: lighten($highlight-color, 40%);
-	border-left: 10px solid $highlight-color;
-	padding: 1em 1em;
-	margin: 1em 0;
-	quotes: "\201C""\201D""\2018""\2019";
+    background-color: lighten($highlight-color, 40%);
+    border-left: 10px solid $highlight-color;
+    padding: 1em 1em;
+    margin: 1em 0;
+    quotes: "\201C""\201D""\2018""\2019";
 }
 
 // full-width images by default
 
 img {
-	width: 100%;
+    width: 100%;
 }
 
 // tables
 
 table {
-	// filthy hacks because tables don't play nice with padding
-	width: calc(100% - 1.6rem);
-	margin: 0 0.8rem;
+    // filthy hacks because tables don't play nice with padding
+    width: calc(100% - 1.6rem);
+    margin: 0 0.8rem;
 
-	text-align: left;
-	border-collapse: collapse;
-	th, td {
-		padding: 0.5em 1em 0.5em 0;
-	}
-	thead th {
-		border-bottom: 1px solid $highlight-color;
-		vertical-align: bottom;
-	}
-	tbody th {
-		vertical-align: top;
-	}
-	td {
-		vertical-align: top;
-	}
+    text-align: left;
+    border-collapse: collapse;
+    th, td {
+        padding: 0.5em 1em 0.5em 0;
+    }
+    thead th {
+        border-bottom: 1px solid $highlight-color;
+        vertical-align: bottom;
+    }
+    tbody th {
+        vertical-align: top;
+    }
+    td {
+        vertical-align: top;
+    }
 }
 
 // table of contents
 #toc {
 
-	background: darken($background-color, 3%);
-	clear: both;
+    background: darken($background-color, 3%);
+    clear: both;
 
-	h2 {
-		background: $text-color;
-		color: $background-color;
-		font-weight: 100;
-		text-align: right;
-		padding-right: 1em;
-		margin-bottom: 0;
-	}
+    h2 {
+        background: $text-color;
+        color: $background-color;
+        font-weight: 100;
+        text-align: right;
+        padding-right: 1em;
+        margin-bottom: 0;
+    }
 
-	ul {
-		margin-top: 0;
-		padding: 1em;
-		list-style: circle inside;
-		li+li { margin-top: 0.2em; }
-		a { font-weight: 400; }
-	}
+    ul {
+        margin-top: 0;
+        padding: 1em;
+        list-style: circle inside;
+        li+li { margin-top: 0.2em; }
+        a { font-weight: 400; }
+    }
 }
 
 // for the bibliography (powered by jekyll-scholar)
 
 .bibliography, .livecoding-bibliography {
-	p {
-		margin: 0.4em 0;
-	}
-	li+li {
-		margin-top: 2em;
-	}
-	.date {
-		font-style: italic;
-		font-weight: 400;
-		color: $text-grey;
-	}
-	.title {
-		font-weight: 900;
-	}
-	.venue {
-		font-weight: 600;
-	}
+    p {
+        margin: 0.4em 0;
+    }
+    li+li {
+        margin-top: 2em;
+    }
+    .date {
+        font-style: italic;
+        font-weight: 400;
+        color: $text-grey;
+    }
+    .title {
+        font-weight: 900;
+    }
+    .venue {
+        font-weight: 600;
+    }
 }
 
 // responsive design, y'all
 @media screen and (min-width: 1000px) {
-	.container {
-		grid-template-columns: 1fr 800px 1fr;
-		grid-template-areas:
-			". header ."
-				". main ."
-				". footer .";
-	}
-	h1,h2,h3,h4,h5,h6,p {
-		padding: 0;
-	}
-	table {
-		width: 100%;
-		margin: 0;
-	}
-	.navigation {
-		padding: 0;
+    .container {
+        grid-template-columns: 1fr 800px 1fr;
+        grid-template-areas:
+            ". header ."
+                ". main ."
+                ". footer .";
+    }
+    h1,h2,h3,h4,h5,h6,p {
+        padding: 0;
+    }
+    table {
+        width: 100%;
+        margin: 0;
+    }
+    .navigation {
+        padding: 0;
 
-		&>* {
-			padding: 0.4rem 0;
-		}
+        &>* {
+            padding: 0.4rem 0;
+        }
 
-	}
+    }
 }

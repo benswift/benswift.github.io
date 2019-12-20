@@ -10,66 +10,66 @@
 @import url('{{ site.baseurl}}/assets/css/fira-code.css');
 
 :root {
-	background-color: $background-color;
-	color: $text-color;
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 2.5vw;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 2.5vw;
 }
 
 // a pretty ghetto attempt to make these slides show up ok on mobile screens in portrait layout
 @media (max-aspect-ratio: 2/3) {
-	:root { font-size: 3vh; }
+    :root { font-size: 3vh; }
 }
 
 // the main reveal slides div
 // each slide will be in a standalone section
 .reveal .slides section {
-	width: 90vw;
-	padding: 0 5vw;
+    width: 90vw;
+    padding: 0 5vw;
 
-	// a bit of margin at the top
-	margin-top: 1rem;
+    // a bit of margin at the top
+    margin-top: 1rem;
 
-	// give everything room to breathe
-	&>* { margin-bottom: 1rem; }
+    // give everything room to breathe
+    &>* { margin-bottom: 1rem; }
 
-	// text
-	font-weight: 300;
-	line-height: 1.3;
-	text-align: left;
+    // text
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: left;
 
-	// inline emphasis
-	em { font-style: italic; }
-	strong { font-weight: 900; }
+    // inline emphasis
+    em { font-style: italic; }
+    strong { font-weight: 900; }
 
-	// links
-	a {
-		color: $link-color;
-		text-decoration: none;
-		font-weight: 900;
+    // links
+    a {
+        color: $link-color;
+        text-decoration: none;
+        font-weight: 900;
 
-		&:hover {
-			color: $background-color;
-			background-color: $text-color;
+        &:hover {
+            color: $background-color;
+            background-color: $text-color;
 
-		}
-		transition-property: color, background-color;
-		transition-duration: 0.5s;
-	}
+        }
+        transition-property: color, background-color;
+        transition-duration: 0.5s;
+    }
 
     // headers
-	h1 {
-		font-size: 2rem;
-		font-weight: 900;
-		border-bottom-color: $highlight-color;
-		border-bottom-style: solid;
-		border-bottom-width: 5px;
-	}
-	h2 {
-		font-size: 1.6rem;
-		font-weight: 900;
-	}
-	// make headings on background image slides readable
+    h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        border-bottom-color: $highlight-color;
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+    // make headings on background image slides readable
     &[data-background-image] {
         h1,h2,p {
             background-color: adjust-color(#FFFFFF, $alpha: -0.25);
@@ -78,60 +78,60 @@
         }
     }
 
-	// lists
+    // lists
 
-	ul,ol { padding-left: 1rem; }
+    ul,ol { padding-left: 1rem; }
 
-	li {
-		margin-bottom: 0.4rem;
-	}
+    li {
+        margin-bottom: 0.4rem;
+    }
 
-	// title slide
-	.talk-date {
-		font-style: italic;
-		font-size: 0.8em;
-		color: $text-grey;
-	}
-	.talk-title-navigation {
-		font-size: 1.3em;
-		width: 8em;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
+    // title slide
+    .talk-date {
+        font-style: italic;
+        font-size: 0.8em;
+        color: $text-grey;
+    }
+    .talk-title-navigation {
+        font-size: 1.3em;
+        width: 8em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     // impact slides
-	// slide background needs to be provided through data-background-color
+    // slide background needs to be provided through data-background-color
     &.impact {
         font-size: 2rem;
         text-align: center;
         color: $background-color;
         font-weight: 900;
         strong { color: #f39c12; }
-		a { color: lighten($highlight-color, 10%); }
+        a { color: lighten($highlight-color, 10%); }
     }
 
-	// source code display
-	code {
-		font-family: "Fira Code", monospace;
-		font-weight: 400;
-		padding: 0.2rem;
-		border-radius: 0.2rem;
-		color: darken($highlight-color, 10%);
-		background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
-	}
-	pre > code {
-		color: $background-color;
-		border: none;
-		background: #282c34;
-		padding: 1em;
-		line-height: 1.2;
-	}
+    // source code display
+    code {
+        font-family: "Fira Code", monospace;
+        font-weight: 400;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        color: darken($highlight-color, 10%);
+        background: linear-gradient(to right, lighten($highlight-color, 42%), lighten($highlight-color, 35%));
+    }
+    pre > code {
+        color: $background-color;
+        border: none;
+        background: #282c34;
+        padding: 1em;
+        line-height: 1.2;
+    }
 
-	// pretty blockquotes
+    // pretty blockquotes
     // from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
     blockquote {
-		margin: 0;
+        margin: 0;
         background-color: darken($background-color, 8%);
         border-left: 10px solid #ccc;
         padding: 0.5em 0.5em;
@@ -146,90 +146,90 @@
     }
     blockquote p {
         display: inline;
-		font-style: normal;
+        font-style: normal;
     }
 
-	table {
-		// filthy hacks because tables don't play nice with padding
-		width: 100%;
+    table {
+        // filthy hacks because tables don't play nice with padding
+        width: 100%;
 
-		text-align: left;
-		border-collapse: collapse;
-		th, td {
-			padding: 0.5em 1em 0.5em 0;
-		}
-		thead th {
-			border-bottom: 1px solid $highlight-color;
-			vertical-align: bottom;
-		}
-		tbody th {
-			vertical-align: top;
-		}
-		td {
-			vertical-align: top;
-		}
-	}
+        text-align: left;
+        border-collapse: collapse;
+        th, td {
+            padding: 0.5em 1em 0.5em 0;
+        }
+        thead th {
+            border-bottom: 1px solid $highlight-color;
+            vertical-align: bottom;
+        }
+        tbody th {
+            vertical-align: top;
+        }
+        td {
+            vertical-align: top;
+        }
+    }
 
-	.image-credit {
-		$creditOpacity: 0.3;
+    .image-credit {
+        $creditOpacity: 0.3;
         background-color: adjust-color($background-color, $alpha: -$creditOpacity);
-		color: adjust-color($text-color, $alpha: -$creditOpacity);
-		padding: 0.5em;
-		margin: 0;
-		font-size: 0.8em;
+        color: adjust-color($text-color, $alpha: -$creditOpacity);
+        padding: 0.5em;
+        margin: 0;
+        font-size: 0.8em;
         display: table;
 
-		// attach to bottom(ish)
-		// setting "bottom" doesn't work because reveal.js shenanigans
-		position: fixed;
-		top: 50vh;
+        // attach to bottom(ish)
+        // setting "bottom" doesn't work because reveal.js shenanigans
+        position: fixed;
+        top: 50vh;
 
-		p {
-			background-color: unset;
-			margin: 0.3em;
-		}
+        p {
+            background-color: unset;
+            margin: 0.3em;
+        }
 
-		.image-credit-artist { font-weight: 900; }
-		/* .image-credit-title { font-style: italic; } */
-		.image-credit-year { font-style: italic; }
+        .image-credit-artist { font-weight: 900; }
+        /* .image-credit-title { font-style: italic; } */
+        .image-credit-year { font-style: italic; }
 
-		// links undecorated except on mouse-over
-		a {
-			color: adjust-color($link-color, $alpha: -$creditOpacity);
-			&:hover{
-				color: $background-color;
-			}
-		}
+        // links undecorated except on mouse-over
+        a {
+            color: adjust-color($link-color, $alpha: -$creditOpacity);
+            &:hover{
+                color: $background-color;
+            }
+        }
 
-		// transition to opaque on hover
-		transition: all 0.5s ease-out;
-		&:hover{
-			background-color: $background-color;
-			color: $text-color;
-		}
-	}
+        // transition to opaque on hover
+        transition: all 0.5s ease-out;
+        &:hover{
+            background-color: $background-color;
+            color: $text-color;
+        }
+    }
 }
 
 // slide-number boxes in bottom-right-hand-corner
 .reveal {
-	.slide-number {
+    .slide-number {
 
-		a {
-			text-decoration: none;
-			font-size: 0.8rem;
-		}
+        a {
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
 
-		// pretty pink highlighting on mouseover
-		&:hover {
-			background-color: $highlight-color;
-		}
-		transition-property: background-color;
-		transition-duration: 0.5s;
-	}
+        // pretty pink highlighting on mouseover
+        &:hover {
+            background-color: $highlight-color;
+        }
+        transition-property: background-color;
+        transition-duration: 0.5s;
+    }
 
     // progress bar
     .progress {
-	    color: $highlight-color;
+        color: $highlight-color;
         height: 0.4rem;
     }
 }
