@@ -39,12 +39,9 @@ usually put it in `assets/`.
 
 ## 1. the revealify [filter](https://jekyllrb.com/docs/plugins/filters/) {#the-revealify-filter}
 
-First, put this code into a `revealify.rb` file in your Jekyll `_plugins`
-directory:
-
-```ruby
-{% include symlinks/revealify.rb %}
-```
+First, put [this
+code](https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb)
+into a `revealify.rb` file in your Jekyll `_plugins` directory.
 
 ## 2. add a reveal [layout](https://jekyllrb.com/docs/layouts/)
 
