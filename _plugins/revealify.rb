@@ -18,7 +18,7 @@ module Jekyll
       slides_div = reveal_div.search('.slides').first
 
       unless slides_div.first_element_child.matches? "section,h1,h2,hr"
-        raise "reveal files must start with <section>, <h1>, <h2> or <hr>, not #{all_elements.first.name} (in \"#{@context.registers[:page]["path"]}\")"
+        raise "reveal files must start with <section>, <h1>, <h2> or <hr>, not #{slides_div.first_element_child.name} (in \"#{@context.registers[:page]["path"]}\")"
       end
 
       slides_div.element_children.each do | element |
