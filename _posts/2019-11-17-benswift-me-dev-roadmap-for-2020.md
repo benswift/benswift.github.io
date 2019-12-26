@@ -15,9 +15,8 @@ I try and use this website as a bit of a test-bed for [trying new
 things](https://benswift.me/blog/tag/meta/) and staying up to date. So, here's
 my list of things to try in 2020:
 
-- update to Jekyll 4 (currently, it's the
-  ~~`jekyll-assets`~~`jekyll-paginate-v2` plugin that's [blocking the
-  update](https://github.com/sverrirs/jekyll-paginate-v2/issues/165))
+- update to Jekyll 4 (_update_: done, as of
+  [fba9367](https://github.com/benswift/benswift.github.io/commit/fba9367965f00592ed98469aef3d8c925bc901cd))
 
 - **or** move this blog from Jekyll to [Eleventy](https://www.11ty.io) (because
   all the cool kids are on the [JAMstack](https://jamstack.org) these days)
