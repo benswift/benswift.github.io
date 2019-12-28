@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate-v2', github: 'mmistakes/jekyll-paginate-v2', :branch => 'jekyll-v4'
   gem "jekyll-seo-tag", "~> 2"
   gem "jekyll-autoprefixer", "~> 1"
+  gem "jekyll-fontawesome-svg", github: 'benswift/jekyll-fontawesome-svg'
   gem "jekyll-scholar", "~> 6"
   # for authoring
   gem "jekyll-compose"

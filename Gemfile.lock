@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/benswift/jekyll-fontawesome-svg.git
+  revision: 6e419fd101472cb56d1eff0583d71d2765fb089d
+  specs:
+    jekyll-fontawesome-svg (0.3.0)
+
+GIT
   remote: git://github.com/mmistakes/jekyll-paginate-v2.git
   revision: e21950d111965fa375c0c55382e78c1f9e2a9460
   branch: jekyll-v4
@@ -121,6 +127,7 @@ DEPENDENCIES
   jekyll-autoprefixer (~> 1)
   jekyll-compose
   jekyll-feed (~> 0)
+  jekyll-fontawesome-svg!
   jekyll-paginate-v2!
   jekyll-scholar (~> 6)
   jekyll-seo-tag (~> 2)

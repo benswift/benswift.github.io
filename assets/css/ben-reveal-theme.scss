@@ -233,3 +233,10 @@
         height: 0.4rem;
     }
 }
+
+// fontawesome hacks
+svg.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.125em;
+}

@@ -16,9 +16,9 @@
   <!-- colophon -->
   <p>
 	designed & built with
-	<a href="https://jekyllrb.com"><i title="Jekyll homepage" class="fas fa-vial"></i></a>,
-	<a id="cafe-url" onclick="randomCafe();"><i title="the website of one of Ben's favourite coffee shops" class="fas fa-coffee" style="cursor: pointer;"></i></a> and
-	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><i title="what is love?" class="fas fa-heart"></i></a>
+	<a href="https://jekyllrb.com">{% fa_svg fas.fa-vial %}</a>,
+	<a id="cafe-url" onclick="randomCafe();">{% fa_svg fas.fa-coffee %}</a> and
+	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M">{% fa_svg fas.fa-heart %}</a>
 	by Ben Swift
   </p>
 
@@ -37,7 +37,7 @@
   <p>
 	site revision <code>{{ site.data['git-HEAD'] }}</code>,
 	<a href="https://github.com/benswift/benswift.github.io/blob/{{ site.data['git-HEAD'] }}/{{ page.path }}">source
-	available on <i title="benswift on GitHub" class="fab fa-github"></i></a>
+	  available on {% fa_svg fab.fa-github %}</a>
   </p>
 
 </footer>
