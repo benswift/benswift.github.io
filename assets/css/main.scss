@@ -106,11 +106,6 @@ pre > code {
         color: $text-grey;
         cursor: not-allowed;
     }
-
-	// for fontawesome
-	svg.icon {
-        fill: $link-color;
-	}
 }
 
 
@@ -314,5 +309,5 @@ svg.icon {
     width: 1em;
     height: 1em;
     vertical-align: -.125em;
-    fill: $text-color;
+    fill: currentColor;
 }
