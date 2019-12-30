@@ -4,7 +4,8 @@
   "description": "Jekyll source code for <https://benswift.me>",
   "scripts": {
     "test": "echo \"Error: HTMLProofer is run as part of jekyll build step\" && exit 1",
-    "build": "bundle exec jekyll build"
+    "build": "bundle exec jekyll build",
+	"prettify": "npx prettier --write '**/*.@(js|scss|html)'"
   },
   "repository": {
     "type": "git",
