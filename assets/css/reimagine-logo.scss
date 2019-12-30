@@ -1,45 +1,51 @@
 ---
 ---
 
-body { margin: 0; }
+body {
+  margin: 0;
+}
 
 #backdrop {
-	width: 100vw;
-	height: 100vh;
-	background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
 }
 
 #logo-container {
-	width: 100vmin;
-	height: 100vmin;
-	margin: auto;
+  width: 100vmin;
+  height: 100vmin;
+  margin: auto;
 }
 
 #logo {
-	// layout
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	width: 100vmin;
-	height: 100vmin;
-	margin: 0;
+  // layout
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100vmin;
+  height: 100vmin;
+  margin: 0;
 
-	// text
-	font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-weight: 200;
-	color: white;
-	font-size: 10vmin;
+  // text
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 200;
+  color: white;
+  font-size: 10vmin;
 
-	// reimagine branding
-	background-color: #BF2F37;
+  // reimagine branding
+  background-color: #bf2f37;
 
-	.letter {
-		margin: auto;
-	}
+  .letter {
+    margin: auto;
+  }
 }
 
 @supports (font-variation-settings: normal) {
-	#logo {
-		font-family: "Inter UI var alt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	}
+  #logo {
+    font-family: "Inter UI var alt", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
+  }
 }

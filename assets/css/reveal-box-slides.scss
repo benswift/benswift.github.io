@@ -14,39 +14,38 @@ $talkColour: #1abc9c;
 $pushColour: #d35400;
 $extensionColour: #9b59b6;
 
-@mixin lab-content-box ($colour){
-
-	h2 {
-		background-color: $colour;
-		color: #ffffff;
-		padding-left: 1em;
-		border: none;
-	}
+@mixin lab-content-box($colour) {
+  h2 {
+    background-color: $colour;
+    color: #ffffff;
+    padding-left: 1em;
+    border: none;
+  }
 }
 
 .reveal .slides {
-	.error-box {
-		@include lab-content-box($errorColour);
-	}
-	.warn-box {
-		@include lab-content-box($warnColour);
-	}
-	.info-box {
-		@include lab-content-box($infoColour);
-	}
-	.success-box {
-		@include lab-content-box($successColour);
-	}
-	.think-box {
-		@include lab-content-box($thinkColour);
-	}
-	.talk-box {
-		@include lab-content-box($talkColour);
-	}
-	.push-box {
-		@include lab-content-box($pushColour);
-	}
-	.extension-box {
-		@include lab-content-box($extensionColour);
-	}
+  .error-box {
+    @include lab-content-box($errorColour);
+  }
+  .warn-box {
+    @include lab-content-box($warnColour);
+  }
+  .info-box {
+    @include lab-content-box($infoColour);
+  }
+  .success-box {
+    @include lab-content-box($successColour);
+  }
+  .think-box {
+    @include lab-content-box($thinkColour);
+  }
+  .talk-box {
+    @include lab-content-box($talkColour);
+  }
+  .push-box {
+    @include lab-content-box($pushColour);
+  }
+  .extension-box {
+    @include lab-content-box($extensionColour);
+  }
 }
