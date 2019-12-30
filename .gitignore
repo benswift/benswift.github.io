@@ -6,10 +6,6 @@ _site
 .ruby-version
 .cljs_node_repl/
 
-# cljs build files
-/assets/js/reimagine-logo.js
-/assets/js/algorithmic-billboard.js
-
 # don't commit the output files
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.pdf
