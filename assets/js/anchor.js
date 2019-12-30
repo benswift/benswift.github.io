@@ -1,13 +1,13 @@
 /* eslint-env amd, node */
 
 // https://github.com/umdjs/umd/blob/master/templates/returnExports.js
-(function (root, factory) {
-  'use strict';
+(function(root, factory) {
+  "use strict";
 
-  if (typeof define === 'function' && define.amd) {
+  if (typeof define === "function" && define.amd) {
     // AMD. Register as an anonymous module.
     define([], factory);
-  } else if (typeof module === 'object' && module.exports) {
+  } else if (typeof module === "object" && module.exports) {
     // Node. Does not work with strict CommonJS, but
     // only CommonJS-like environments that support module.exports,
     // like Node.
@@ -17,8 +17,8 @@
     root.AnchorJS = factory();
     root.anchors = new root.AnchorJS();
   }
-}(this, function () {
-  'use strict';
+})(this, function() {
+  "use strict";
 
   function AnchorJS(options) {
     this.options = options || {};
@@ -29,15 +29,21 @@
      * @param {Object} opts - Options object
      */
     function _applyRemainingDefaultOptions(opts) {
-      opts.icon = opts.hasOwnProperty('icon') ? opts.icon : '\ue9cb'; // Accepts characters (and also URLs?), like  '#', '¶', '❡', or '§'.
-      opts.visible = opts.hasOwnProperty('visible') ? opts.visible : 'hover'; // Also accepts 'always' & 'touch'
-      opts.placement = opts.hasOwnProperty('placement') ? opts.placement : 'right'; // Also accepts 'left'
-      opts.ariaLabel = opts.hasOwnProperty('ariaLabel') ? opts.ariaLabel : 'Anchor'; // Accepts any text.
-      opts.class = opts.hasOwnProperty('class') ? opts.class : ''; // Accepts any class name.
-      opts.base = opts.hasOwnProperty('base') ? opts.base : ''; // Accepts any base URI.
+      opts.icon = opts.hasOwnProperty("icon") ? opts.icon : "\ue9cb"; // Accepts characters (and also URLs?), like  '#', '¶', '❡', or '§'.
+      opts.visible = opts.hasOwnProperty("visible") ? opts.visible : "hover"; // Also accepts 'always' & 'touch'
+      opts.placement = opts.hasOwnProperty("placement")
+        ? opts.placement
+        : "right"; // Also accepts 'left'
+      opts.ariaLabel = opts.hasOwnProperty("ariaLabel")
+        ? opts.ariaLabel
+        : "Anchor"; // Accepts any text.
+      opts.class = opts.hasOwnProperty("class") ? opts.class : ""; // Accepts any class name.
+      opts.base = opts.hasOwnProperty("base") ? opts.base : ""; // Accepts any base URI.
       // Using Math.floor here will ensure the value is Number-cast and an integer.
-      opts.truncate = opts.hasOwnProperty('truncate') ? Math.floor(opts.truncate) : 64; // Accepts any value that can be typecast to a number.
-      opts.titleText = opts.hasOwnProperty('titleText') ? opts.titleText : ''; // Accepts any text.
+      opts.truncate = opts.hasOwnProperty("truncate")
+        ? Math.floor(opts.truncate)
+        : 64; // Accepts any value that can be typecast to a number.
+      opts.titleText = opts.hasOwnProperty("titleText") ? opts.titleText : ""; // Accepts any text.
     }
 
     _applyRemainingDefaultOptions(this.options);
@@ -48,7 +54,10 @@
      * @return {Boolean} - true if the current device supports touch.
      */
     this.isTouchDevice = function() {
-      return !!(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
+      return !!(
+        "ontouchstart" in window ||
+        (window.DocumentTouch && document instanceof DocumentTouch)
+      );
     };
 
     /**
@@ -59,19 +68,19 @@
      */
     this.add = function(selector) {
       var elements,
-          elsWithIds,
-          idList,
-          elementID,
-          i,
-          index,
-          count,
-          tidyText,
-          newTidyText,
-          readableID,
-          anchor,
-          visibleOptionToUse,
-          hrefBase,
-          indexesToDrop = [];
+        elsWithIds,
+        idList,
+        elementID,
+        i,
+        index,
+        count,
+        tidyText,
+        newTidyText,
+        readableID,
+        anchor,
+        visibleOptionToUse,
+        hrefBase,
+        indexesToDrop = [];
 
       // We reapply options here because somebody may have overwritten the default options object when setting options.
       // For example, this overwrites all options but visible:
@@ -80,13 +89,13 @@
       _applyRemainingDefaultOptions(this.options);
 
       visibleOptionToUse = this.options.visible;
-      if (visibleOptionToUse === 'touch') {
-        visibleOptionToUse = this.isTouchDevice() ? 'always' : 'hover';
+      if (visibleOptionToUse === "touch") {
+        visibleOptionToUse = this.isTouchDevice() ? "always" : "hover";
       }
 
       // Provide a sensible default selector, if none is given.
       if (!selector) {
-        selector = 'h2, h3, h4, h5, h6';
+        selector = "h2, h3, h4, h5, h6";
       }
 
       elements = _getElements(selector);
@@ -98,7 +107,7 @@
       _addBaselineStyles();
 
       // We produce a list of existing IDs so we don't generate a duplicate.
-      elsWithIds = document.querySelectorAll('[id]');
+      elsWithIds = document.querySelectorAll("[id]");
       idList = [].map.call(elsWithIds, function assign(el) {
         return el.id;
       });
@@ -109,10 +118,10 @@
           continue;
         }
 
-        if (elements[i].hasAttribute('id')) {
-          elementID = elements[i].getAttribute('id');
-        } else if (elements[i].hasAttribute('data-anchor-id')) {
-          elementID = elements[i].getAttribute('data-anchor-id');
+        if (elements[i].hasAttribute("id")) {
+          elementID = elements[i].getAttribute("id");
+        } else if (elements[i].hasAttribute("data-anchor-id")) {
+          elementID = elements[i].getAttribute("data-anchor-id");
         } else {
           tidyText = this.urlify(elements[i].textContent);
 
@@ -122,7 +131,7 @@
           count = 0;
           do {
             if (index !== undefined) {
-              newTidyText = tidyText + '-' + count;
+              newTidyText = tidyText + "-" + count;
             }
 
             index = idList.indexOf(newTidyText);
@@ -131,11 +140,11 @@
           index = undefined;
           idList.push(newTidyText);
 
-          elements[i].setAttribute('id', newTidyText);
+          elements[i].setAttribute("id", newTidyText);
           elementID = newTidyText;
         }
 
-        readableID = elementID.replace(/-/g, ' ');
+        readableID = elementID.replace(/-/g, " ");
 
         // The following code efficiently builds this DOM structure:
         // `<a class="anchorjs-link ${this.options.class}"
@@ -144,41 +153,44 @@
         //     title="${this.options.titleText}"
         //     href="this.options.base#${elementID}">
         // </a>;`
-        anchor = document.createElement('a');
-        anchor.className = 'anchorjs-link ' + this.options.class;
-        anchor.setAttribute('aria-label', this.options.ariaLabel);
-        anchor.setAttribute('data-anchorjs-icon', this.options.icon);
+        anchor = document.createElement("a");
+        anchor.className = "anchorjs-link " + this.options.class;
+        anchor.setAttribute("aria-label", this.options.ariaLabel);
+        anchor.setAttribute("data-anchorjs-icon", this.options.icon);
         if (this.options.titleText) {
           anchor.title = this.options.titleText;
         }
         // Adjust the href if there's a <base> tag. See https://github.com/bryanbraun/anchorjs/issues/98
-        hrefBase = document.querySelector('base') ? window.location.pathname + window.location.search : '';
+        hrefBase = document.querySelector("base")
+          ? window.location.pathname + window.location.search
+          : "";
         hrefBase = this.options.base || hrefBase;
-        anchor.href = hrefBase + '#' + elementID;
+        anchor.href = hrefBase + "#" + elementID;
 
-        if (visibleOptionToUse === 'always') {
-          anchor.style.opacity = '1';
+        if (visibleOptionToUse === "always") {
+          anchor.style.opacity = "1";
         }
 
-        if (this.options.icon === '\ue9cb') {
-          anchor.style.font = '1em/1 anchorjs-icons';
+        if (this.options.icon === "\ue9cb") {
+          anchor.style.font = "1em/1 anchorjs-icons";
 
           // We set lineHeight = 1 here because the `anchorjs-icons` font family could otherwise affect the
           // height of the heading. This isn't the case for icons with `placement: left`, so we restore
           // line-height: inherit in that case, ensuring they remain positioned correctly. For more info,
           // see https://github.com/bryanbraun/anchorjs/issues/39.
-          if (this.options.placement === 'left') {
-            anchor.style.lineHeight = 'inherit';
+          if (this.options.placement === "left") {
+            anchor.style.lineHeight = "inherit";
           }
         }
 
-        if (this.options.placement === 'left') {
-          anchor.style.position = 'absolute';
-          anchor.style.marginLeft = '-1em';
-          anchor.style.paddingRight = '0.5em';
+        if (this.options.placement === "left") {
+          anchor.style.position = "absolute";
+          anchor.style.marginLeft = "-1em";
+          anchor.style.paddingRight = "0.5em";
           elements[i].insertBefore(anchor, elements[i].firstChild);
-        } else { // if the option provided is `right` (or anything else).
-          anchor.style.paddingLeft = '0.375em';
+        } else {
+          // if the option provided is `right` (or anything else).
+          anchor.style.paddingLeft = "0.375em";
           elements[i].appendChild(anchor);
         }
       }
@@ -199,11 +211,11 @@
      */
     this.remove = function(selector) {
       var index,
-          domAnchor,
-          elements = _getElements(selector);
+        domAnchor,
+        elements = _getElements(selector);
 
       for (var i = 0; i < elements.length; i++) {
-        domAnchor = elements[i].querySelector('.anchorjs-link');
+        domAnchor = elements[i].querySelector(".anchorjs-link");
         if (domAnchor) {
           // Drop the element from our main list, if it's in there.
           index = this.elements.indexOf(elements[i]);
@@ -236,7 +248,7 @@
     this.urlify = function(text) {
       // Regex for finding the non-safe URL characters (many need escaping): & +$,:;=?@"#{}|^~[`%!'<>]./()*\ (newlines, tabs, backspace, & vertical tabs)
       var nonsafeChars = /[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\\n\t\b\v]/g,
-          urlText;
+        urlText;
 
       // The reason we include this _applyRemainingDefaultOptions is so urlify can be called independently,
       // even after setting options. This can be useful for tests or other applications.
@@ -246,13 +258,14 @@
 
       // Note: we trim hyphens after truncating because truncating can cause dangling hyphens.
       // Example string:                      // " ⚡⚡ Don't forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
-      urlText = text.trim()                   // "⚡⚡ Don't forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
-        .replace(/\'/gi, '')                  // "⚡⚡ Dont forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
-        .replace(nonsafeChars, '-')           // "⚡⚡-Dont-forget--URL-fragments-should-be-i18n-friendly--hyphenated--short--and-clean-"
-        .replace(/-{2,}/g, '-')               // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated-short-and-clean-"
-        .substring(0, this.options.truncate)  // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated-"
-        .replace(/^-+|-+$/gm, '')             // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated"
-        .toLowerCase();                       // "⚡⚡-dont-forget-url-fragments-should-be-i18n-friendly-hyphenated"
+      urlText = text
+        .trim() // "⚡⚡ Don't forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
+        .replace(/\'/gi, "") // "⚡⚡ Dont forget: URL fragments should be i18n-friendly, hyphenated, short, and clean."
+        .replace(nonsafeChars, "-") // "⚡⚡-Dont-forget--URL-fragments-should-be-i18n-friendly--hyphenated--short--and-clean-"
+        .replace(/-{2,}/g, "-") // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated-short-and-clean-"
+        .substring(0, this.options.truncate) // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated-"
+        .replace(/^-+|-+$/gm, "") // "⚡⚡-Dont-forget-URL-fragments-should-be-i18n-friendly-hyphenated"
+        .toLowerCase(); // "⚡⚡-dont-forget-url-fragments-should-be-i18n-friendly-hyphenated"
 
       return urlText;
     };
@@ -264,8 +277,12 @@
      * @return   {Boolean}     true/false
      */
     this.hasAnchorJSLink = function(el) {
-      var hasLeftAnchor = el.firstChild && ((' ' + el.firstChild.className + ' ').indexOf(' anchorjs-link ') > -1),
-          hasRightAnchor = el.lastChild && ((' ' + el.lastChild.className + ' ').indexOf(' anchorjs-link ') > -1);
+      var hasLeftAnchor =
+          el.firstChild &&
+          (" " + el.firstChild.className + " ").indexOf(" anchorjs-link ") > -1,
+        hasRightAnchor =
+          el.lastChild &&
+          (" " + el.lastChild.className + " ").indexOf(" anchorjs-link ") > -1;
 
       return hasLeftAnchor || hasRightAnchor || false;
     };
@@ -279,14 +296,14 @@
      */
     function _getElements(input) {
       var elements;
-      if (typeof input === 'string' || input instanceof String) {
+      if (typeof input === "string" || input instanceof String) {
         // See https://davidwalsh.name/nodelist-array for the technique transforming nodeList -> Array.
         elements = [].slice.call(document.querySelectorAll(input));
-      // I checked the 'input instanceof NodeList' test in IE9 and modern browsers and it worked for me.
+        // I checked the 'input instanceof NodeList' test in IE9 and modern browsers and it worked for me.
       } else if (Array.isArray(input) || input instanceof NodeList) {
         elements = [].slice.call(input);
       } else {
-        throw new Error('The selector provided to AnchorJS was invalid.');
+        throw new Error("The selector provided to AnchorJS was invalid.");
       }
       return elements;
     }
@@ -297,36 +314,36 @@
      */
     function _addBaselineStyles() {
       // We don't want to add global baseline styles if they've been added before.
-      if (document.head.querySelector('style.anchorjs') !== null) {
+      if (document.head.querySelector("style.anchorjs") !== null) {
         return;
       }
 
-      var style = document.createElement('style'),
-          linkRule =
-          ' .anchorjs-link {'                       +
-          '   opacity: 0;'                          +
-          '   text-decoration: none;'               +
-          '   -webkit-font-smoothing: antialiased;' +
-          '   -moz-osx-font-smoothing: grayscale;'  +
-          ' }',
-          hoverRule =
-          ' *:hover > .anchorjs-link,'              +
-          ' .anchorjs-link:focus  {'                +
-          '   opacity: 1;'                          +
-          ' }',
-          anchorjsLinkFontFace =
-          ' @font-face {'                           +
-          '   font-family: "anchorjs-icons";'       + // Icon from icomoon; 10px wide & 10px tall; 2 empty below & 4 above
+      var style = document.createElement("style"),
+        linkRule =
+          " .anchorjs-link {" +
+          "   opacity: 0;" +
+          "   text-decoration: none;" +
+          "   -webkit-font-smoothing: antialiased;" +
+          "   -moz-osx-font-smoothing: grayscale;" +
+          " }",
+        hoverRule =
+          " *:hover > .anchorjs-link," +
+          " .anchorjs-link:focus  {" +
+          "   opacity: 1;" +
+          " }",
+        anchorjsLinkFontFace =
+          " @font-face {" +
+          '   font-family: "anchorjs-icons";' + // Icon from icomoon; 10px wide & 10px tall; 2 empty below & 4 above
           '   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype");' +
-          ' }',
-          pseudoElContent =
-          ' [data-anchorjs-icon]::after {'          +
-          '   content: attr(data-anchorjs-icon);'   +
-          ' }',
-          firstStyleEl;
+          " }",
+        pseudoElContent =
+          " [data-anchorjs-icon]::after {" +
+          "   content: attr(data-anchorjs-icon);" +
+          " }",
+        firstStyleEl;
 
-      style.className = 'anchorjs';
-      style.appendChild(document.createTextNode('')); // Necessary for Webkit.
+      style.className = "anchorjs";
+      style.appendChild(document.createTextNode("")); // Necessary for Webkit.
 
       // We place it in the head with the other style tags, if possible, so as to
       // not look out of place. We insert before the others so these styles can be
@@ -346,4 +363,4 @@
   }
 
   return AnchorJS;
-}));
+});
