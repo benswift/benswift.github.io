@@ -56,7 +56,7 @@
   a {
     color: $link-color;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 700;
 
     &:hover {
       color: $background-color;
@@ -132,7 +132,7 @@
   // source code display
   code {
     font-family: "Fira Code", monospace;
-    font-weight: 400;
+    font-weight: 300;
     padding: 0.2rem;
     border-radius: 0.2rem;
     color: darken($highlight-color, 10%);
@@ -213,7 +213,7 @@
     }
 
     .image-credit-artist {
-      font-weight: 900;
+      font-weight: 700;
     }
     /* .image-credit-title { font-style: italic; } */
     .image-credit-year {
