@@ -1,17 +1,10 @@
 ---
 ---
 
-@import "./variables.scss";
-
-// fonts and typography
-
-@import url("{{ site.baseurl}}/assets/css/fira-sans.css");
-@import url("{{ site.baseurl}}/assets/css/fira-code.css");
+@import "variables.scss";
+@import "fira.scss";
 
 :root {
-  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
   font-weight: 300;
   font-size: 18px;
   line-height: 1.4;

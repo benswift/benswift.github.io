@@ -3,19 +3,14 @@
 
 // fonts and typography
 
-@import "./variables.scss";
-@import "./reveal-box-slides.scss";
-
-@import url("{{ site.baseurl}}/assets/css/fira-sans.css");
-@import url("{{ site.baseurl}}/assets/css/fira-code.css");
+@import "variables.scss";
+@import "reveal-box-slides.scss";
+@import "fira.scss";
 
 :root {
-  background-color: $background-color;
-  color: $text-color;
-  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  font-size: 2.5vw;
+	background-color: $background-color;
+	color: $text-color;
+	font-size: 2.5vw;
 }
 
 // a pretty ghetto attempt to make these slides show up ok on mobile screens in portrait layout
