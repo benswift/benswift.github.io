@@ -33,8 +33,8 @@ module Jekyll
       str
     end
 
-    def author_p(b)
-      "<p class='author'>#{b[:author]}</p>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
+    def author_span(b)
+      "<span class='author'>#{b[:author]}</span>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
     end
 
     def bib_year(b)
@@ -59,7 +59,7 @@ module Jekyll
       pdf_filename = b[:file]
 
       if pdf_filename
-        "<a href='#{@baseurl}/assets/documents/preprints/#{File.basename(pdf_filename)}'>(preprint)</a>"
+        "<a href='#{@baseurl}/assets/documents/preprints/#{File.basename(pdf_filename)}'>pdf</a>"
       else
         ""
       end
@@ -70,11 +70,11 @@ module Jekyll
 
 <p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a></p>
 
-#{author_p(b)}
+<p>#{author_span(b)} (#{preprint_a(b)})</p>
 
 <p><span class='date'>#{bib_year(b)}</span>, #{venue_span(b)}</p>
 
-#{preprint_a(b)}
+
 
 </div>
 "
