@@ -117,6 +117,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bibtex-ruby (~> 5)
   html-proofer (~> 3)
   jekyll (~> 4)
   jekyll-autoprefixer (~> 1)

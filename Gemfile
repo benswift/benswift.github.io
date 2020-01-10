@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "jekyll-autoprefixer", "~> 1"
   gem "jekyll-fontawesome-svg", "~> 0.3"
   gem "jekyll-scholar", "~> 6"
+  gem "bibtex-ruby", "~> 5"
   # for authoring
   gem "jekyll-compose"
   # to check everything's hooked up right
