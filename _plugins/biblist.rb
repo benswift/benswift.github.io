@@ -37,10 +37,10 @@ module Jekyll
       "<p>#{b[:author]}</p>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
     end
 
-    def year_span(b)
-      # a bit gross, but it'll do until I figure out how to get better BibLaTeX to output dates consistently
-      year_s = Date.strptime(b[:date], "%Y").year.to_s
-      "<span class='date'>#{year_s}</span>"
+    def bib_year(b)
+      # a bit gross, but it'll do until I figure out how to get better BibLaTeX
+      # to output dates consistently
+      Date.strptime(b[:date], "%Y").year
     end
 
     def venue_span(b)
@@ -65,22 +65,29 @@ module Jekyll
       end
     end
 
-    def render(context)
-      output = @bib.map do |b|
-        "<li id='#{b.key}'>
+    def render_bibitem(b)
+      "<li id='#{b.key}'>
 
 <p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a></p>
 
 #{author_p(b)}
 
-<p>#{year_span(b)}, #{venue_span(b)}</p>
+<p><span class='date'>#{bib_year(b)}</span>, #{venue_span(b)}</p>
 
 #{preprint_a(b)}
 
 </li>
 "
-      end
-      "<ul class='bibliography'>#{output.join(' ')}</ul>"
+    end
+
+    def render_bib_year(year)
+      output = @bib.query("@entry[year=#{year}]").map { |b| render_bibitem b }
+      "<h3>#{year}</h3><ul class='bibliography'>#{output.join(' ')}</ul>"
+    end
+
+    def render(context)
+      years = @bib.map { |b| bib_year b }.uniq.sort.reverse!
+      years.map { |year| render_bib_year year }.join("\n")
     end
 
   end
