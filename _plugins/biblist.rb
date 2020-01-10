@@ -12,18 +12,36 @@ module Jekyll
       @bib = BibTeX.open("_data/#{bib_file.strip}")
     end
 
+    def author_p(b)
+      "<p>#{b[:author]}</p>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
+    end
+
+    def year_span(b)
+      # a bit gross, but it'll do until I figure out how to get better BibLaTeX to output dates consistently
+      year_s = Date.strptime(b[:date], "%Y").year.to_s
+      "<span class='date'>#{year_s}</span>"
+    end
+
+    def venue_span(b)
+      case b.type
+      when :article
+        "<span class='venue'>#{b[:journaltitle]}</span>"
+      when :inproceedings, :incollection
+        "<span class='venue'>#{b[:booktitle]}</span>"
+      else
+        raise "Unknown type #{b.type}"
+      end
+    end
+
     def render(context)
       output = @bib.each do |b|
         "<li>
 
 <p class='title'><a href='#{b[:url]}'>#{b[:title]}</a></p>
 
-<p>#{b[:author]}</p>
+#{author_p(b)}
 
-<p>
-  <span class='date'>#{b[:year]}</span> @
-  <span class='venue'>#{b['container-title']}</span>
-</p>
+<p>#{year_span(b)} @ #{venue_span(b)}</p>
 
 </li>
 "
