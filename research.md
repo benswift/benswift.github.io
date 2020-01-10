@@ -63,7 +63,7 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
 ## Curated/invited livecoding performances
 
-<ol class="bibliography">
+<ul class="bibliography">
 {% for lc in site.livecoding reversed %}
 {% if lc.type == "curated" and lc.hidden != true %}
 <li>
@@ -96,4 +96,4 @@ email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 </li>
 {% endif %}
 {% endfor %}
-</ol>
+</ul>

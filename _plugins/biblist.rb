@@ -53,7 +53,7 @@ module Jekyll
 </li>
 "
       end
-      "<ol class='bibliography'>#{output.join(' ')}</ol>"
+      "<ul class='bibliography'>#{output.join(' ')}</ul>"
     end
 
   end
