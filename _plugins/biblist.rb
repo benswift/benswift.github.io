@@ -82,12 +82,15 @@ module Jekyll
 
     def render_bib_year(year)
       output = @bib.query("@entry[year=#{year}]").map { |b| render_bibitem b }
-      "<h3>#{year}</h3><div class='bibliography'>#{output.join(' ')}</div>"
+      "<h3 id='#{year}-pubs'>#{year}</h3><div class='bibliography'>#{output.join(' ')}</div>"
     end
 
     def render(context)
       years = @bib.map { |b| bib_year b }.uniq.sort.reverse!
-      years.map { |year| render_bib_year year }.join("\n")
+      year_links = years.map do |year|
+        "<a href='##{year}-pubs'>#{year}</a>"
+      end.join(" | ")
+      "<p>#{year_links}</p>" + years.map { |year| render_bib_year year }.join("\n")
     end
 
   end
