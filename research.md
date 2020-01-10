@@ -58,10 +58,10 @@ about how to make your email stand out from the crowd.
 
 ## Curated/invited livecoding performances
 
-<ul class="bibliography">
+<div class="bibliography">
 {% for lc in site.livecoding reversed %}
 {% if lc.type == "curated" and lc.hidden != true %}
-<li>
+<div>
 
 {% if lc.event_url %}
 
@@ -88,7 +88,7 @@ about how to make your email stand out from the crowd.
 </p>
 {% endif %}
 
-</li>
+</div>
 {% endif %}
 {% endfor %}
-</ul>
+</div>

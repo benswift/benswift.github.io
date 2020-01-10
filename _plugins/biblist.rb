@@ -66,7 +66,7 @@ module Jekyll
     end
 
     def render_bibitem(b)
-      "<li id='#{b.key}'>
+      "<div id='#{b.key}'>
 
 <p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a></p>
 
@@ -76,13 +76,13 @@ module Jekyll
 
 #{preprint_a(b)}
 
-</li>
+</div>
 "
     end
 
     def render_bib_year(year)
       output = @bib.query("@entry[year=#{year}]").map { |b| render_bibitem b }
-      "<h3>#{year}</h3><ul class='bibliography'>#{output.join(' ')}</ul>"
+      "<h3>#{year}</h3><div class='bibliography'>#{output.join(' ')}</div>"
     end
 
     def render(context)

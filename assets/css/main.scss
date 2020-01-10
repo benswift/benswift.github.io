@@ -281,7 +281,7 @@ table {
   p {
     margin: 0.4em 0;
   }
-  li + li {
+  & > div + div {
     margin-top: 2em;
   }
   .date {
