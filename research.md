@@ -54,9 +54,11 @@ about how to make your email stand out from the crowd.
 
 ## Publications
 
+### Peer-reviewed conference/journal papers & book chapters
+
 {% bib_list ben-pubs.bib %}
 
-## Curated/invited livecoding performances
+### Curated/invited livecoding performances
 
 <div class="bibliography">
 {% for lc in site.livecoding reversed %}
