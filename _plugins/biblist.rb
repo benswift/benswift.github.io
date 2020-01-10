@@ -46,13 +46,13 @@ module Jekyll
     def venue_span(b)
       venue_title = case b.type
       when :article
-        "#{b[:journaltitle]} <em>#{b[:volume]}(#{b[:number]})</em>"
+        "#{b[:journaltitle]} #{b[:volume]}(#{b[:number]})"
       when :inproceedings, :incollection
         b[:booktitle]
       else
         raise "Unknown type #{b.type}"
       end
-      "<span>#{demunge_better_bibtex(venue_title)}</span>"
+      "<span class='venue'>#{demunge_better_bibtex(venue_title)}</span>"
     end
 
     def preprint_a(b)
@@ -72,7 +72,7 @@ module Jekyll
 
 <p>by #{author_span(b)}</p>
 
-<p><em>in</em> #{venue_span(b)} #{preprint_a(b)}</p>
+<p>in #{venue_span(b)} #{preprint_a(b)}</p>
 
 </div>
 "
