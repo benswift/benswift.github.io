@@ -59,8 +59,7 @@ about how to make your email stand out from the crowd.
 If you'd like to read any of these but you don't have access, [send me an
 email](mailto:ben.swift@anu.edu.au) and I can rustle you up a pre-print 😉
 
-<ol class="bibliography">
-</ol>
+{% bib_list ben-pubs.bib %}
 
 ## Curated/invited livecoding performances
 
