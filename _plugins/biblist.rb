@@ -59,22 +59,20 @@ module Jekyll
       pdf_filename = b[:file]
 
       if pdf_filename
-        "<a href='#{@baseurl}/assets/documents/preprints/#{File.basename(pdf_filename)}'>pdf</a>"
+        "(<a href='#{@baseurl}/assets/documents/preprints/#{File.basename(pdf_filename)}'>pdf</a>)"
       else
-        "no pdf available"
+        ""
       end
     end
 
     def render_bibitem(b)
       "<div id='#{b.key}'>
 
-<p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a></p>
+<p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a> (#{bib_year(b)})</p>
 
-<p>#{author_span(b)} (#{preprint_a(b)})</p>
+<p>by #{author_span(b)}</p>
 
-<p><span class='date'>#{bib_year(b)}</span>, #{venue_span(b)}</p>
-
-
+<p><em>in</em> #{venue_span(b)} #{preprint_a(b)}</p>
 
 </div>
 "
