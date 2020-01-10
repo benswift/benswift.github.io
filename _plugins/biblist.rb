@@ -47,8 +47,10 @@ module Jekyll
       venue_title = case b.type
       when :article
         "#{b[:journaltitle]} #{b[:volume]}(#{b[:number]})"
-      when :inproceedings, :incollection
+      when :inproceedings
         b[:booktitle]
+      when :incollection
+        "#{b[:booktitle]} (#{b[:publisher]})"
       else
         raise "Unknown type #{b.type}"
       end
