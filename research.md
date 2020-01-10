@@ -4,6 +4,8 @@ layout: page
 permalink: /research/
 ---
 
+{% include toc.html %}
+
 {% include assets/picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21, Photo by Adam Thomas" %}
 
 I am a multidisciplinary researcher and Senior Lecturer in the Research School
