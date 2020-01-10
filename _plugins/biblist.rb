@@ -61,7 +61,7 @@ module Jekyll
       if pdf_filename
         "<a href='#{@baseurl}/assets/documents/preprints/#{File.basename(pdf_filename)}'>pdf</a>"
       else
-        ""
+        "no pdf available"
       end
     end
 
