@@ -34,7 +34,7 @@ module Jekyll
     end
 
     def author_p(b)
-      "<p>#{b[:author]}</p>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
+      "<p class='author'>#{b[:author]}</p>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
     end
 
     def bib_year(b)
@@ -46,13 +46,13 @@ module Jekyll
     def venue_span(b)
       venue_title = case b.type
       when :article
-        "<span class='venue'>#{b[:journaltitle]}</span>"
+        b[:journaltitle]
       when :inproceedings, :incollection
-        "<span class='venue'>#{b[:booktitle]}</span>"
+        b[:booktitle]
       else
         raise "Unknown type #{b.type}"
       end
-      "<span class='venue'>#{demunge_better_bibtex(venue_title)}</span>"
+      "<span>#{demunge_better_bibtex(venue_title)}</span>"
     end
 
     def preprint_a(b)

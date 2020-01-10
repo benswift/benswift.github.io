@@ -79,12 +79,12 @@ about how to make your email stand out from the crowd.
 
 <p>
   <span class="date">{{ lc.date | date: "%d %b '%y" }}</span> @
-  <a href="{{ lc.venue_url }}"><span class="venue">{{ lc.venue }}</span></a>
+  <a href="{{ lc.venue_url }}">{{ lc.venue }}</a>
 </p>
 {% else %}
 <p>
   <span class="date">{{ lc.date | date: "%d %b '%y" }} @ </span>
-  <span class="venue">{{ lc.venue }}</span>
+  {{ lc.venue }}
 </p>
 {% endif %}
 
