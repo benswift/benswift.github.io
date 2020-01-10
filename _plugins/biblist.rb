@@ -48,7 +48,7 @@ module Jekyll
 
 #{author_p(b)}
 
-<p>#{year_span(b)} @ #{venue_span(b)}</p>
+<p>#{year_span(b)}, #{venue_span(b)}</p>
 
 </li>
 "
