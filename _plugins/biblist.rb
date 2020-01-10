@@ -1,4 +1,4 @@
-require 'pathname'
+require 'fileutils'
 require 'bibtex'
 
 module Jekyll
@@ -10,6 +10,19 @@ module Jekyll
       # bib_file argument was ending up with whitespace attached to it and that
       # the .strip method was required... If you do I'll start to cry.
       @bib = BibTeX.open("_data/#{bib_file.strip}")
+
+      # NOTE: only need to uncomment this block when the pdfs have changed
+      # needs to be run on Ben's machine. Oh well.
+      # @bib.each do |b|
+      #   copy_preprint_pdf b
+      # end
+    end
+
+    def copy_preprint_pdf(b)
+      pdf_filename = b[:file]
+      if pdf_filename and pdf_filename.end_with?(".pdf")
+        FileUtils.cp(pdf_filename, "assets/documents/preprints/#{File.basename(pdf_filename)}")
+      end
     end
 
     def demunge_better_bibtex(str)
