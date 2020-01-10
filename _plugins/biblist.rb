@@ -11,6 +11,8 @@ module Jekyll
       # the .strip method was required... If you do I'll start to cry.
       @bib = BibTeX.open("_data/#{bib_file.strip}")
 
+      @baseurl = Jekyll.configuration({})['baseurl']
+
       # NOTE: only need to uncomment this block when the pdfs have changed
       # needs to be run on Ben's machine. Oh well.
       # @bib.each do |b|
@@ -53,6 +55,16 @@ module Jekyll
       "<span class='venue'>#{demunge_better_bibtex(venue_title)}</span>"
     end
 
+    def preprint_a(b)
+      pdf_filename = b[:file]
+
+      if pdf_filename
+        "<a href='#{@baseurl}/assets/documents/preprints/#{File.basename(pdf_filename)}'>(preprint)</a>"
+      else
+        ""
+      end
+    end
+
     def render(context)
       output = @bib.map do |b|
         "<li id='#{b.key}'>
@@ -62,6 +74,8 @@ module Jekyll
 #{author_p(b)}
 
 <p>#{year_span(b)}, #{venue_span(b)}</p>
+
+#{preprint_a(b)}
 
 </li>
 "
