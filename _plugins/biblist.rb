@@ -46,7 +46,7 @@ module Jekyll
     def venue_span(b)
       venue_title = case b.type
       when :article
-        b[:journaltitle]
+        "#{b[:journaltitle]} <em>#{b[:volume]}(#{b[:number]})</em>"
       when :inproceedings, :incollection
         b[:booktitle]
       else
