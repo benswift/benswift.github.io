@@ -12,6 +12,12 @@ module Jekyll
       @bib = BibTeX.open("_data/#{bib_file.strip}")
     end
 
+    def demunge_better_bibtex(str)
+      str.gsub! "{{", ""
+      str.gsub! "}}", ""
+      str
+    end
+
     def author_p(b)
       "<p>#{b[:author]}</p>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
     end
@@ -23,7 +29,7 @@ module Jekyll
     end
 
     def venue_span(b)
-      case b.type
+      venue_title = case b.type
       when :article
         "<span class='venue'>#{b[:journaltitle]}</span>"
       when :inproceedings, :incollection
@@ -31,13 +37,14 @@ module Jekyll
       else
         raise "Unknown type #{b.type}"
       end
+      "<span class='venue'>#{demunge_better_bibtex(venue_title)}</span>"
     end
 
     def render(context)
-      output = @bib.each do |b|
-        "<li>
+      output = @bib.map do |b|
+        "<li id='#{b.key}'>
 
-<p class='title'><a href='#{b[:url]}'>#{b[:title]}</a></p>
+<p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a></p>
 
 #{author_p(b)}
 
