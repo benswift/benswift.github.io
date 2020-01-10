@@ -8,6 +8,8 @@ permalink: /research/
 
 {% include assets/picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21, Photo by Adam Thomas" %}
 
+## Research interests
+
 I am a multidisciplinary researcher and Senior Lecturer in the Research School
 of Computer Science at the [Australian National
 University](https://cecs.anu.edu.au/people/ben-swift). I'm interested in
@@ -31,18 +33,12 @@ livecoding communities, especially through my work on
 [Extempore](https://github.com/digego/extempore): the state-of-the-art in
 livecoding languages.
 
-{:.hl-para}
+<div class="hl-para" markdown="1">
 
-To get a sense for my current ongoing research projects, head to the
-[c/c/c](https://cs.anu.edu.au/code-creativity-culture/) website---that's the
-most up-to-date list of all the things that me and my group are working on.
-
-### Come study with me
-
-If you're interested in doing Honours/Masters/PhD research with me, [send me an
-email](mailto:ben.swift@anu.edu.au). I always have a few project ideas kicking
-around, but I'm also open to hearing about the project/big idea that excites
-_you_. Send me
+**Come study with me**: if you're interested in doing Honours/Masters/PhD
+research with me, [send me an email](mailto:ben.swift@anu.edu.au). I always have
+a few project ideas kicking around, but I'm also open to hearing about the
+project/big idea that excites _you_. Send me
 
 1. a **one-paragraph** description of the project you're interested in doing,
    and
@@ -54,13 +50,13 @@ a great way to show that you've thought a bit about what sort of research
 project you're interested in (and why I'd be a good fit). You should think hard
 about how to make your email stand out from the crowd.
 
-## Publications
+</div>
 
-### Peer-reviewed conference/journal papers & book chapters
+## Peer-reviewed conference/journal papers & book chapters
 
 {% bib_list ben-pubs.bib %}
 
-### Curated/invited livecoding performances
+## Curated/invited livecoding performances
 
 <div class="bibliography">
 {% for lc in site.livecoding reversed %}
