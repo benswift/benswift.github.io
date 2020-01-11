@@ -57,11 +57,11 @@ module Jekyll
       "<span class='venue'>#{demunge_better_bibtex(venue_title)}</span>"
     end
 
-    def doi_a(b)
+    def doi_p(b)
       doi = b[:doi]
 
       if doi
-        "(<a href='https://doi.org/#{doi}'>doi</a>)"
+        "<p>doi: <a href='https://doi.org/#{doi}'>#{doi}</a></p>"
       else
         ""
       end
@@ -84,7 +84,9 @@ module Jekyll
 
 <p>by #{author_span(b)}</p>
 
-<p>in #{venue_span(b)} #{preprint_a(b)} #{doi_a(b)}</p>
+<p>in #{venue_span(b)} #{preprint_a(b)}</p>
+
+#{doi_p(b)}
 
 </div>
 "
