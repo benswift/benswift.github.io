@@ -6,7 +6,7 @@
 @import "fira.scss";
 
 :root {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
   color: $text-color;
@@ -270,7 +270,7 @@ table {
       margin-top: 0.2em;
     }
     a {
-      font-weight: 300;
+      font-weight: 400;
     }
   }
 }
@@ -286,7 +286,7 @@ table {
   }
   .date {
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
     color: $text-grey;
   }
   .title {
