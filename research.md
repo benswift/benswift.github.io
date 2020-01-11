@@ -54,41 +54,8 @@ about how to make your email stand out from the crowd.
 
 ## Peer-reviewed conference/journal papers & book chapters
 
-{% bib_list ben-pubs.bib %}
+{% bib_list_pubs ben-pubs.bib %}
 
 ## Curated/invited livecoding performances
 
-<div class="bibliography">
-{% for lc in site.livecoding reversed %}
-{% if lc.type == "curated" and lc.hidden != true %}
-<div>
-
-{% if lc.event_url %}
-
-<p class="title"><a href="{{ lc.event_url }}">{{ lc.title }}</a></p>
-{% else %}
-<p class="title">{{ lc.title }}</p>
-{% endif %}
-
-{% if lc.curator %}
-
-<p>{{ lc.curator }} <span class="date">(curator)</span></p>
-{% endif %}
-
-{% if lc.venue_url %}
-
-<p>
-  <span class="date">{{ lc.date | date: "%d %b '%y" }}</span> @
-  <a href="{{ lc.venue_url }}">{{ lc.venue }}</a>
-</p>
-{% else %}
-<p>
-  <span class="date">{{ lc.date | date: "%d %b '%y" }} @ </span>
-  {{ lc.venue }}
-</p>
-{% endif %}
-
-</div>
-{% endif %}
-{% endfor %}
-</div>
+{% bib_list_gigs %}
