@@ -80,7 +80,7 @@ module Jekyll
     def render_bibitem(b)
       "<div id='#{b.key}'>
 
-<p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a> (#{bib_year(b)})</p>
+<p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a> <span class='date'>(#{bib_year(b)})</span></p>
 
 <p>by #{author_span(b)}</p>
 
@@ -153,7 +153,7 @@ module Jekyll
     def render_gigitem(g)
       "<div>
 
-<p class='title'>#{title_span(g)} (#{g['date'].year})</p>
+<p class='title'>#{title_span(g)} <span class='date'>(#{g['date'].year})</span></p>
 
 #{artist_p(g)}
 
