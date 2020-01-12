@@ -126,8 +126,18 @@ module Jekyll
     end
 
     def artist_p(g)
-      artists = g["artists"].join(", ").gsub "Ben Swift", "<strong>Ben Swift</strong>"
+      artists = g["artists"]
       curators = g["curator"]
+
+      # gross. surely there's a package to do this? oh well.
+      if artists.length <= 2
+        artists = artists.join(" and ")
+      else
+        artists = artists.first(artists.length-2).join(", ") + ", " + artists.last(2).join(" and ")
+      end
+
+      # more vanity emboldening
+      artists.gsub! "Ben Swift", "<strong>Ben Swift</strong>"
 
       if curators
         "<p>featuring <span class='author'>#{artists}</span>, curated by <span class='author'>#{curators}</span></p>"
