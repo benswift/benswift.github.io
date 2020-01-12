@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/mmistakes/jekyll-paginate-v2.git
+  remote: https://github.com/mmistakes/jekyll-paginate-v2.git
   revision: e21950d111965fa375c0c55382e78c1f9e2a9460
   branch: jekyll-v4
   specs:
@@ -113,4 +113,4 @@ DEPENDENCIES
   jekyll-seo-tag (~> 2)
 
 BUNDLED WITH
-   1.17.2
+   2.1.4
