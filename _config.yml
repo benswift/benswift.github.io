@@ -92,9 +92,3 @@ autoprefixer:
   browsers:
     - "last 2 versions"
     - "IE >= 11"
-
-# jekyll-scholar
-scholar:
-  style: assets/scholar/apa.csl
-  sort_by: year
-  order: descending
