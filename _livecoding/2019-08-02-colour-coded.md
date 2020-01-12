@@ -3,7 +3,7 @@ date: "2019-08-02"
 type: curated
 title: Colour Coded
 venue: Drill Hall Gallery, Canberra
-curator: Lucy Chetcuti, Joanne Leong 
+curator: Lucy Chetcuti and Joanne Leong
 artists:
   - Ben Swift
   - Kieran Browne
