@@ -30,7 +30,7 @@ kramdown:
 highlighter: none
 
 sass:
-    sass_dir: assets/css
+  sass_dir: assets/css
 
 exclude:
   - Makefile
@@ -38,7 +38,7 @@ exclude:
 
 defaults:
   - scope:
-      type: posts
+    type: posts
     values:
       layout: post
       permalink: /blog/:year/:month/:day/:title/
