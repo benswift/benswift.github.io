@@ -20,6 +20,7 @@ my list of things to try in 2020:
 
 - **or** move this blog from Jekyll to [Eleventy](https://www.11ty.io) (because
   all the cool kids are on the [JAMstack](https://jamstack.org) these days)
+  (_update: probably not, Jekyll is fine_)
 
 - switch to [Netlify](https://www.netlify.com) for hosting so that I can use
   their nice workflow stuff (e.g. serverless functions)
@@ -31,6 +32,7 @@ my list of things to try in 2020:
 
 - (maybe) re-write the CSS (from the current hand-rolled Sass) to something
   using a utility class framework like [Tailwind](https://tailwindcss.com)
+  (_update: actually, my hand-rolled CSS is fine; I've got better things to do_)
 
 There's no timeline on any of this, and I'm going to be busy with other things
 (e.g. my [Reimagine Fellowship]({{site.baseurl}}{% link
