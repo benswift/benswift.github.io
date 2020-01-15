@@ -18,8 +18,9 @@ hacking/making (particularly in pursuit of creative ends) and the intersection
 of code, creativity and culture as those boundaries dissolve in the modern
 world. I lead the [code/creativity/culture
 group](https://cs.anu.edu.au/code-creativity-culture/) at the ANU Research
-School of Computer Science (you should check out the [c/c/c group's projects
-page](https://cs.anu.edu.au/code-creativity-culture/projects/) as well).
+School of Computer Science.
+
+<!-- TODO: update link to c/c/c projects page once the new cccstudio website is live -->
 
 I am a **livecoder**, and have performed at both local and international arts
 festivals---you can find recordings of some of my sets [on my livecoding
