@@ -1,6 +1,6 @@
 ---
 event: Glasgow University seminar
-title: designing the c/c/c studio
+title: Designing the c/c/c studio
 subtitle: 10 years of teaching artists to code and coders to art
 date: "2020-02-17"
 permalink: /talks/ccc-studio-overview/
