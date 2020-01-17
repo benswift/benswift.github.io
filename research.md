@@ -17,7 +17,7 @@ computational art & music, human-computer interaction, AI/machine learning
 (particularly in pursuit of creative ends) and the intersection of code,
 creativity and culture as those boundaries dissolve in the modern world. I'm the
 director of the [code/creativity/culture
-group](https://cs.anu.edu.au/code-creativity-culture/) at the ANU Research
+studio](https://cs.anu.edu.au/code-creativity-culture/) at the ANU Research
 School of Computer Science.
 
 <!-- TODO: update link to c/c/c projects page once the new cccstudio website is live -->
