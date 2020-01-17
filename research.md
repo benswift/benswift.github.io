@@ -24,7 +24,11 @@ School of Computer Science.
 
 I am a **livecoder**, and have performed at both local and international arts
 festivals---you can find recordings of some of my sets [on my livecoding
-page]({% link livecoding.md %}).
+page]({% link livecoding.md %}). I'm currently the vice president of the
+[Australasian Computer Music Association](https://computermusic.org.au) (ACMA)
+(plug: you should [submit a paper or creative
+work](http://acmc2020.com/#/features/03-submission) something to our [annual
+conference](http://acmc2020.com), which we're hosting at the ANU in July 2020).
 
 I love building things, and one thing I'm particularly excited about is the
 potential of **liveness** (real-time human-in-the-loop interactivity) in
