@@ -9,9 +9,9 @@ summary: >-
 ---
 {% include slides/title.html %}
 
-<script src="{{ site.baseurl }}/assets/js/TweenMax.min.js" type="text/javascript"></script>
-<script src="{{ site.baseurl }}/assets/js/Winwheel.js" type="text/javascript"></script>
-<script src="{{ site.baseurl }}/assets/js/ccc-workshop-wheels.js" type="text/javascript"></script>
+<script src='{{ "/assets/js/TweenMax.min.js" | relative_url }}' type="text/javascript"></script>
+<script src='{{ "/assets/js/Winwheel.js" | relative_url }}' type="text/javascript"></script>
+<script src='{{ "/assets/js/ccc-workshop-wheels.js" | relative_url }}' type="text/javascript"></script>
 
 {% include slides/background-image.html image="images/talks/ccc-studio-workshop/mount-majura-bushland.jpg" %}
 

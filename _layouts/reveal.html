@@ -2,14 +2,14 @@
 <html>
   <head>
 	{% include head.html %}
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/reveal.js-3.8.0/css/reveal.css">
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/ben-reveal-theme.css">
+	<link rel="stylesheet" type="text/css" href='{{ "/assets/reveal.js-3.8.0/css/reveal.css" | relative_url }}'>
+	<link rel="stylesheet" type="text/css" href='{{ "/assets/css/ben-reveal-theme.css" | relative_url }}'>
   </head>
   <body>
 	{{ content | revealify }}
 
-	<script src="{{site.baseurl}}/assets/reveal.js-3.8.0/lib/js/head.min.js"></script>
-	<script src="{{site.baseurl}}/assets/reveal.js-3.8.0/js/reveal.js"></script>
+	<script src='{{ "/assets/reveal.js-3.8.0/lib/js/head.min.js" | relative_url }}'></script>
+	<script src='{{ "/assets/reveal.js-3.8.0/js/reveal.js" | relative_url }}'></script>
 	<script>
 	 // this is the reveal config
 	 Reveal.initialize({
@@ -23,12 +23,12 @@
 	   slideNumber: true,
 
 	   math: {
-		 mathjax: '{{site.baseurl}}/assets/reveal.js-3.8.0/lib/js/MathJax-2.7.5.js',
-		 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+		 mathjax: '{{ "/assets/reveal.js-3.8.0/lib/js/MathJax-2.7.5.js" | relative_url }}',
+		 config: "TeX-AMS_HTML-full"  // See http://docs.mathjax.org/en/latest/config-files.html
 	   },
 
        dependencies: [
-         { src: '{{site.baseurl}}/assets/reveal.js-3.8.0/plugin/chalkboard/chalkboard.js' }
+         { src: '{{ "/assets/reveal.js-3.8.0/plugin/chalkboard/chalkboard.js" | relative_url }}' }
        ],
 
        keyboard: {

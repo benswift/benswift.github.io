@@ -204,9 +204,9 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^fate]: well, the PRNG in your web browser, anyway
 
-<script src="{{ site.baseurl }}/assets/js/TweenMax.min.js" type="text/javascript"></script>
-<script src="{{ site.baseurl }}/assets/js/Winwheel.js" type="text/javascript"></script>
-<script src="{{ site.baseurl }}/assets/js/ccc-workshop-wheels.js" type="text/javascript"></script>
+<script src='{{ "/assets/js/TweenMax.min.js" | relative_url }}' type="text/javascript"></script>
+<script src='{{ "/assets/js/Winwheel.js" | relative_url }}' type="text/javascript"></script>
+<script src='{{ "/assets/js/ccc-workshop-wheels.js" | relative_url }}' type="text/javascript"></script>
 
 <style>
 .wheelIndicator {

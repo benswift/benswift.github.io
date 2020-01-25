@@ -2,9 +2,9 @@
 @font-face {
   font-family: "Courier Prime";
   src: font-files(
-    "{{ site.baseurl }}/assets/fonts/courier-prime/courier-prime.ttf",
-    "{{ site.baseurl }}/assets/fonts/courier-prime/courier-prime-bold.ttf",
-    "{{ site.baseurl }}/assets/fonts/courier-prime/courier-prime-italic.ttf",
-    "{{ site.baseurl }}/assets/fonts/courier-prime/courier-prime-bold-italic.ttf"
+	  '{{ "/assets/fonts/courier-prime/courier-prime.ttf" | relative_url }}',
+	  '{{ "/assets/fonts/courier-prime/courier-prime-bold.ttf" | relative_url }}',
+	  '{{ "/assets/fonts/courier-prime/courier-prime-italic.ttf" | relative_url }}',
+	  '{{ "/assets/fonts/courier-prime/courier-prime-bold-italic.ttf" | relative_url }}'
   );
 }
