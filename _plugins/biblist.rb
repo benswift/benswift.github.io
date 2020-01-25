@@ -63,6 +63,7 @@ module Jekyll
       if doi
         "<p>doi: <a href='https://doi.org/#{doi}'>#{doi}</a></p>"
       else
+        # puts "no DoI for #{b.key}"
         ""
       end
     end
