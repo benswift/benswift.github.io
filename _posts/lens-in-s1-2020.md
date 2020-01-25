@@ -9,7 +9,7 @@ ANU course in computer music making and laptop performance. It is open to
 students in music, art, computer science, and elsewhere around the ANU.
 
 To whet your appetite, here's a shot from the [final LENS gig at the end of
-2019]({{site.baseurl}}{% link
+2019]({% link
 _posts/2019-10-31-anu-laptop-ensemble-showcase-s2-2019.md %}):
 
 {% include assets/picture.html file="images/posts/lens-showcase-2019-s2/IMG_0895.jpg" alt="LENS members performing at the showcase" %}

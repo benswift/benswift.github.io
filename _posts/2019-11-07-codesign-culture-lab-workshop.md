@@ -49,7 +49,7 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 
 ### Timeline
 
-- **9:00**: [intro]({{site.baseurl}}{% link _talks/ccc-studio-workshop.md
+- **9:00**: [intro]({% link _talks/ccc-studio-workshop.md
   %})---what is the c/c/c studio
 - **9:20**: [group formation](#group-formation) (with stickers! <span
   style="color:#eb4d4b;">⬤</span><span style="color:#3498db;">⬤</span><span
@@ -181,9 +181,9 @@ workshop. So, your group will need to organise:
 
 If you want to work on paper there are paper templates floating around (let us
 know if you'd like one). If you've got a digital scribe, then there are
-electronic templates ([markdown]({{site.baseurl}}{% link
+electronic templates ([markdown]({% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %}) and
-[MS Word]({{site.baseurl}}{% link
+[MS Word]({% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx %})).
 
 {:.hl-para}
@@ -455,7 +455,7 @@ format of this document is up to you. There are a few ways to do this:
 Thanks so much for participating 😊 If your group wrote the assessment item on
 paper, can you hand it to Ben (or one of the other facilitators) before you
 leave ? If you did it electronically (e.g. using the [markdown
-template]({{site.baseurl}}{% link
+template]({% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %})) then
 can you [email it to Ben](mailto:ben.swift@anu.edu.au)?
 

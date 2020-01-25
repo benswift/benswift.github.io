@@ -29,7 +29,7 @@ Computer Music Association](https://computermusic.org.au) (ACMA) (_plug: you
 should [submit a paper or creative
 work](http://acmc2020.com/#/features/03-submission) to our [annual
 conference](http://acmc2020.com), which we're hosting at the ANU in July 2020_).
-I'm also one of the inaugural [ANU Reimagine Fellows]({{site.baseurl}}{% link
+I'm also one of the inaugural [ANU Reimagine Fellows]({% link
 _posts/2019-08-30-Im-a-reimagine-fellow.md %}), part of a [$300m+ investment
 from the ANU](https://cecs.anu.edu.au/reimagine) charged with re-thinking (and
 re-doing) what it is to be a computer scientist in the 21st century.

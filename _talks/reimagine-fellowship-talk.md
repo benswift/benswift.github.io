@@ -35,10 +35,10 @@ the director of the [code/creativity/culture
 group](https://cs.anu.edu.au/code-creativity-culture/) within the ANU Research
 School of Computer Science.
 
-He is a [livecoder]({{site.baseurl}}{% link livecoding.md %}), and is the vice
+He is a [livecoder]({% link livecoding.md %}), and is the vice
 president of the [Australasian Computer Music
 Association](https://computermusic.org.au) (ACMA). Ben is one of the inaugural
-[ANU Reimagine Fellows]({{site.baseurl}}{% link
+[ANU Reimagine Fellows]({% link
 _posts/2019-08-30-Im-a-reimagine-fellow.md %}), part of a [$300m+ investment
 from the ANU](https://cecs.anu.edu.au/reimagine) charged with re-thinking (and
 re-doing) what it is to be a computer scientist in the 21st century.

@@ -25,7 +25,7 @@ my list of things to try in 2020:
 - switch to [Netlify](https://www.netlify.com) for hosting so that I can use
   their nice workflow stuff (e.g. serverless functions)
 
-- package up my [reveal slides]({{site.baseurl}}{% link
+- package up my [reveal slides]({% link
   _posts/2018-09-28-another-reveal.js-plugin-for-jekyll.md %}) plugin on npm (if
   I switch to Eleventy) or RubyGems (if I stay with Jekyll) so that others can
   use them
@@ -35,7 +35,7 @@ my list of things to try in 2020:
   (_update: actually, my hand-rolled CSS is fine; I've got better things to do_)
 
 There's no timeline on any of this, and I'm going to be busy with other things
-(e.g. my [Reimagine Fellowship]({{site.baseurl}}{% link
+(e.g. my [Reimagine Fellowship]({% link
 _posts/2019-03-20-reimagine-fellow-project-pitch.md %}), updating the
 [Extempore](https://github.com/digego/extempore) docs and generally [doing good
-research]({{site.baseurl}}{% link research.md %})).
+research]({% link research.md %})).
