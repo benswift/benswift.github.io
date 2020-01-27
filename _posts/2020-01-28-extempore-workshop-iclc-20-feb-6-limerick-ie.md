@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Extempore workshop @ ICLC '20, Feb 6, Limerick IE
+tags: extempore livecoding
 ---
 
 {% include assets/picture.html file="images/posts/extempore-iclc-workshop-promo.jpg" alt="Harrison & Fi making mad beats with Extempore" %}
