@@ -18,7 +18,7 @@ Here's an example of the 17 different rhythms of length 16 (from 0 to 16
 inclusive). We can print out the patterns using this loop (using `'X` for the
 "hit" marker so that it looks more prominent in a log view).
 
-```extempore
+```xtlang
 (dotimes (i 17)
   (println (euclid i 16 'X)))
 ```
