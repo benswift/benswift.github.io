@@ -26,14 +26,14 @@ and special guest [Fiona Sullivan](https://www.fisounds.com) (USA).
 
 Here's the setlist:
 
-| time   | artist                                                |
-|--------|-------------------------------------------------------|
-| 6:00pm | Charles (neurofeedback musical AI)                    |
-| 6:10pm | FBK (livecoded music/visuals, live vocal processing) |
-| 6:25pm | Alec                                                  |
-| 6:35pm | Chloë, Alec, Charles                                  |
-| 6:50pm | Fiona Sullivan (USA)                                  |
-| 7:05pm | finish                                                |
+| time     | artist                                               |
+|----------|------------------------------------------------------|
+| 6:00pm   | Charles (neurofeedback musical AI)                   |
+| 6:10pm   | FBK (livecoded music/visuals, live vocal processing) |
+| 6:25pm   | Alec                                                 |
+| 6:35pm   | Chloë, Alec, Charles                                 |
+| 6:50pm   | Fiona Sullivan (USA)                                 |
+| _7:05pm_ | _finish_                                             |
 
 There's also a [FB event page](https://www.facebook.com/events/541225126490467/)
 as well if you're into that sort of thing.
