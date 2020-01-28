@@ -17,7 +17,9 @@ Get away from the [fires &
 smoke](https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/)[^fires]
 and come see an evening of experimental sounds in processed voice, livecoding,
 and neural networks with musicians from the ANU code/creativity/culture studio
-and special guest [Fiona Sullivan](https://www.fisounds.com) (USA).
+and special guest [Fiona Sullivan](https://www.fisounds.com) (USA). There's a
+[FB event page](https://www.facebook.com/events/541225126490467/) as well if
+you're into that sort of thing.
 
 - **time**: 5:45pm--7pm
 - **location** Big Band Room, [Peter Karmel
@@ -35,8 +37,7 @@ Here's the setlist:
 | 6:50pm   | Fiona Sullivan (USA)                                 |
 | _7:05pm_ | _finish_                                             |
 
-There's also a [FB event page](https://www.facebook.com/events/541225126490467/)
-as well if you're into that sort of thing.
+If you're wondering when I'm on, I'm the "B" in FBK, alongside Kieran and Fiona.
 
 [^fires]:
     I know that you can't get away from them; and the loss of flora & fauna is
