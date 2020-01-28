@@ -24,6 +24,17 @@ and special guest [Fiona Sullivan](https://www.fisounds.com) (USA).
   Building](https://www.anu.edu.au/maps#show=29113), ANU School of Music
 - **cost**: free
 
+Here's the setlist:
+
+| time   | artist                                                |
+|--------|-------------------------------------------------------|
+| 6:00pm | Charles (neurofeedback musical AI)                    |
+| 6:10pm | FBK (livecoded music/visuals, live vocal processing) |
+| 6:25pm | Alec                                                  |
+| 6:35pm | Chloë, Alec, Charles                                  |
+| 6:50pm | Fiona Sullivan (USA)                                  |
+| 7:05pm | finish                                                |
+
 There's also a [FB event page](https://www.facebook.com/events/541225126490467/)
 as well if you're into that sort of thing.
 
