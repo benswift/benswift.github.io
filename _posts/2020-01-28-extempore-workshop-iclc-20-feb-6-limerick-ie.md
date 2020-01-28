@@ -4,13 +4,13 @@ title: Extempore workshop @ ICLC '20, Feb 6, Limerick IE
 tags: extempore livecoding
 ---
 
-{% include assets/picture.html file="images/posts/extempore-iclc-workshop-promo.jpg" alt="Harrison & Fi making mad beats with Extempore" %}
-
 If you're coming to the upcoming [International Conference on Live
 Coding](http://iclc.livecodenetwork.org/2020/index.html) (ICLC '20) in Limerick,
 Ireland, then it's not too late to sign up for my workshop **Introduction to
 music-making in Extempore**. Even if you're not coming to the rest of the
 conference, you can still sign up for the workshop.
+
+{% include assets/picture.html file="images/posts/extempore-iclc-workshop-promo.jpg" alt="Harrison & Fi making mad beats with Extempore" %}
 
 This workshop will provide a hands-on introduction to making music in the live
 coding programming environment [Extempore](https://github.com/digego/extempore).
