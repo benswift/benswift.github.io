@@ -28,13 +28,13 @@ you're into that sort of thing.
 
 Here's the setlist:
 
-| time     | artist                                               |
-|----------|------------------------------------------------------|
-| 6:00pm   | Charles (neurofeedback musical AI)                   |
-| 6:10pm   | FBK (livecoded music/visuals, live vocal processing) |
-| 6:25pm   | Chloë, Alec, Charles                                 |
-| 6:40pm   | Fiona Sullivan (USA)                                 |
-| _7:00pm_ | _finish_                                             |
+| time     | artist                                                                                                                                     |
+|----------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| 6:00pm   | [Charles Martin](http://charlesmartin.com.au)                                                                                              |
+| 6:10pm   | [Fiona Sullivan](https://www.fisounds.com) (USA), Ben Swift, [Kieran Browne](https://kieranbrowne.com)                                     |
+| 6:25pm   | [Chloë Hobbs](https://chloecomposes.com), [Alec Hunter](https://www.alexanderhunter.com.au), [Charles Martin](http://charlesmartin.com.au) |
+| 6:40pm   | [Fiona Sullivan](https://www.fisounds.com) (USA)                                                                                           |
+| _7:00pm_ | _finish_                                                                                                                                   |
 
 If you're wondering when I'm on, I'm the "B" in FBK, alongside Kieran and Fiona.
 
