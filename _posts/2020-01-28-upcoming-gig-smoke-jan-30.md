@@ -32,10 +32,9 @@ Here's the setlist:
 |----------|------------------------------------------------------|
 | 6:00pm   | Charles (neurofeedback musical AI)                   |
 | 6:10pm   | FBK (livecoded music/visuals, live vocal processing) |
-| 6:25pm   | Alec                                                 |
-| 6:35pm   | Chloë, Alec, Charles                                 |
-| 6:50pm   | Fiona Sullivan (USA)                                 |
-| _7:05pm_ | _finish_                                             |
+| 6:25pm   | Chloë, Alec, Charles                                 |
+| 6:40pm   | Fiona Sullivan (USA)                                 |
+| _7:00pm_ | _finish_                                             |
 
 If you're wondering when I'm on, I'm the "B" in FBK, alongside Kieran and Fiona.
 
