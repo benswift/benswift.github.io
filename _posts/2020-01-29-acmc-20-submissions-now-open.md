@@ -1,5 +1,6 @@
 ---
 title: ACMC '20 submissions now open
+tags: gigs acma livecoding
 ---
 
 Good news everyone; we're hosting the annual [Australasian Computer Music
