@@ -29,6 +29,16 @@ module Jekyll
       str
     end
 
+    def title_span(b)
+      link = b[:url]
+
+      if link
+        "<span class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a></span>"
+      else
+        "<span class='title'>#{demunge_better_bibtex(b[:title])}</span> (to appear)"
+      end
+    end
+
     def author_span(b)
       "<span class='author'>#{b[:author]}</span>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
     end
@@ -77,7 +87,7 @@ module Jekyll
     def render_bibitem(b)
       "<div id='#{b.key}'>
 
-<p class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a> <span class='date'>(#{bib_year(b)})</span></p>
+<p>#{title_span(b)} <span class='date'>(#{bib_year(b)})</span></p>
 
 <p>by #{author_span(b)}</p>
 
