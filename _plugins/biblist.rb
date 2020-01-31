@@ -12,15 +12,6 @@ module Jekyll
       @bib = BibTeX.open("_data/#{bib_file.strip}")
 
       @baseurl = Jekyll.configuration({})['baseurl']
-
-      # NOTE: only need to uncomment this block when the pdfs have changed
-      # needs to be run on Ben's machine. Oh well.
-      # @bib.each do |b|
-      #   copy_preprint_pdf b
-      # end
-    end
-
-    def copy_preprint_pdf(b)
     end
 
     def demunge_better_bibtex(str)
