@@ -21,10 +21,6 @@ module Jekyll
     end
 
     def copy_preprint_pdf(b)
-      pdf_filename = b[:file]
-      if pdf_filename and pdf_filename.end_with?(".pdf")
-        FileUtils.cp(pdf_filename, "assets/documents/preprints/#{File.basename(pdf_filename)}")
-      end
     end
 
     def demunge_better_bibtex(str)
@@ -193,5 +189,22 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('bib_list_pubs', Jekyll::BibListPubsTag)
-
 Liquid::Template.register_tag('bib_list_gigs', Jekyll::BibListGigsTag)
+
+def copy_preprint_pdfs(site)
+  # this is a bit gross - relies on hardcoded path to bib file (whereas the tag
+  # above allows specifying a bib file name in tag)
+
+  bib = BibTeX.open("_data/ben-pubs.bib")
+
+  bib.each do |b|
+    pdf_filename = b[:file]
+    if pdf_filename and pdf_filename.end_with?(".pdf")
+      FileUtils.cp(pdf_filename, "assets/documents/preprints/#{File.basename(pdf_filename)}")
+    end
+  end
+end
+
+# Jekyll::Hooks.register :site, :pre_render do |site|
+#   copy_preprint_pdfs site
+# end
