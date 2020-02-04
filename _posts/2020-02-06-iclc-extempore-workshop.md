@@ -36,7 +36,7 @@ Ok, here's the plan:
 - what we will/might/won't cover today (a JIT workshop!)
 - meet one another, goal setting, CoC
 
-{% include assets/picture.html file="images/posts/jens-lelie-u0vgcIOQG08-unsplash.jpg" %}
+{% include assets/picture.html file="images/posts/jens-lelie-u0vgcIOQG08-unsplash.jpg" alt="two roads diverged..." %}
 
 ## Extempore hacking
 
