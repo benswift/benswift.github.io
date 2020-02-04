@@ -13,12 +13,12 @@ really enjoy it, too :)
 I'm currently teaching two courses in the [ANU Research School of Computer
 Science](https://cs.anu.edu.au/courses/comp2300/)
 
+- [COMP2710: Laptop
+  Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/) in **Semester 1
+  (Feb--Jun)**
+
 - [COMP1720: Art & Interaction in New
   Media](https://cs.anu.edu.au/courses/comp1720/) in **Semester 2 (Jul-Nov)**
-
-- [COMP2710: Laptop
-  Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/) in **Semester 1
-  & 2**
 
 In the past couple of years, I've also taught
 
@@ -31,8 +31,8 @@ In the past couple of years, I've also taught
 
 - [_Internet of Things_ China Study
   Tour](https://cs.anu.edu.au/courses/china-study-tour/) at the Beijing
-  Institute of Technology~~ (sadly this [course isn't running this
-  year]({% link
+  Institute of Technology--the above photo was taken during the 2018 version of
+  this course (although sadly [it's not running this year]({% link
   _posts/2019-10-14-iot-china-study-tour-not-happening-in-2019.md %}))
 
 If you're a student at the ANU, then I encourage you to take one (or more!) of
