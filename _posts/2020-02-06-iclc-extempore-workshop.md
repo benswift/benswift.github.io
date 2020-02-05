@@ -20,11 +20,9 @@ Here are the details if you're still trying to find us:
 
 ## Workshop outline
 
-Ok, here's the plan:
-
 | 1430 | intro & getting to know each other |
 | 1500 | Extempore hacking                  |
-| 1615 | afternoon tea break                |
+| 1615 | _afternoon tea break_              |
 | 1630 | moar Extempore hacking             |
 | 1730 | demos                              |
 | 1800 | open feedback                      |
@@ -53,6 +51,6 @@ guide](https://extemporelang.github.io/docs/guides/pattern-language/).
 
 At the end of the workshop, there will be a chance to share with the group both
 the things you've made today and any thoughts on how we can do things
-(Extempore-wise) better, friendlier, open-er and more accessible. Making the
+(Extempore-wise) better, friendlier, open-er and more accessible. Improving the
 onboarding experience for Extempore is one of my big goals this year, so all
 attendees get a chance to contribute to that broader mission.
