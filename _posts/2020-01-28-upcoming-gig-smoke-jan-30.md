@@ -8,6 +8,9 @@ tags: gigs livecoding
 
 {:.hl-para}
 
+Update: the [video is now online]({% link _livecoding/2020-01-30-smoke.md
+%})---thanks to Charles for putting it together.
+
 If you're in Canberra this Thursday Jan 30 then you should come to a (free) gig
 that the c/c/c studio is putting on in the [Peter
 Karmel](https://www.anu.edu.au/maps#show=29113) Big Band room (at the ANU School
