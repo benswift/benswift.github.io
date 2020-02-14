@@ -1,9 +1,9 @@
-let modKeys = ["control", "command"]; // TODO figure out if I should change "ctrl" as well
+let modKeys = ["control", "command", "ctrl", "cmd"];
 
-let modifier = navigator.appVersion.indexOf("Mac")!=-1 ? "command" : "control";
+let modifier = navigator.appVersion.indexOf("Mac")!=-1 ? "⌘" : "CTRL";
 
 for (const kbdElement of document.querySelectorAll("kbd")) {
-  if (modKeys.includes(kbdElement.textContent)){
+  if (modKeys.includes(kbdElement.textContent.toLowerCase()) && !kbdElement.classList.contains("nopretty")){
 	kbdElement.textContent = modifier;
   }
 }
