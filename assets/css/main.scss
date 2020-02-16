@@ -68,16 +68,20 @@ strong {
 
 code {
   font-family: "Fira Code", monospace;
+  // size & shape
+  font-size: 0.95em;
+  padding: 0.1em 0.15em;
+  border-radius: 0.2em;
+  // colours
   color: darken($highlight-color, 10%);
   background: linear-gradient(
     to right,
     lighten($highlight-color, 42%),
     lighten($highlight-color, 35%)
   );
+  // text flow
   overflow-wrap: break-word;
   word-wrap: break-word;
-  padding: 0.2rem;
-  border-radius: 0.2rem;
 }
 
 pre > code {
@@ -86,12 +90,14 @@ pre > code {
 }
 
 kbd {
+  // size & shape
+  font-size: 0.95em;
+  padding: 0.1em 0.15em;
+  border-radius: 0.2em;
+  // colours
   border: 1px solid #666;
-  border-radius: 4px;
+  box-shadow: 0.15em 0.15em #aaa;
   background: white;
-  box-shadow: 2px 2px #aaa;
-  padding: 3px 5px;
-  margin: 2px;
   text-decoration: none;
 }
 
