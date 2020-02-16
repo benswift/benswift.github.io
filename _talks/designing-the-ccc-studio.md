@@ -1,4 +1,4 @@
---
+---
 event: Glasgow University seminar
 title: Designing the c/c/c studio
 subtitle: 10 years of teaching artists to code and coders to art
