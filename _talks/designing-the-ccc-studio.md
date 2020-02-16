@@ -41,11 +41,9 @@ but first, some **music**
 4. _coders_: see "artists"
 5. _art_: to create something of aesthetic/poetic/ethical value
 
-{% include slides/impact.html %}
+## my story
 
-my story
-
-{:style="font-size:2em;"}
+{:style="font-size:10vw; text-align: center;"}
 
 💻 + 🎵 = 🤯
 
@@ -98,11 +96,11 @@ but **why**?
 
 <!-- open-ended nature creates problem finders -->
 
-{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/niklas-weiss-x8JtiGxnS6g-unsplash.jpg" %}
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/niklas-weiss-x8JtiGxnS6g-unsplash.jpg" heading="central thesis" %}
 
 {:style="font-size:2em;"}
 
-**central thesis**: making music & art isn't a side track on the road to computing
+making music & art isn't a side track on the road to computing
 
 ## discussion questions
 
@@ -119,9 +117,6 @@ how do we _study_ it?
 if you'd like to chat, let me know 😊---I'm here till Thursday
 
 {% include slides/questions.html %}
-
-## Abstract
-
 
 ## Bio
 
