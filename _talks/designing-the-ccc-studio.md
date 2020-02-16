@@ -47,24 +47,60 @@ but first, some **music**
 
 💻 + 🎵 = 🤯
 
-## COMP1720: Art & Interaction in New Media
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/comp1720-mp-exhibition-2018-2.jpg" heading="COMP1720: Art & Interaction in New Media" %}
 
-first-year elective course for CS & art students
+first-year elective available to both CS & art students
+
+started in 2011 (~20 students)
 
 2019 enrolment: ~250 students (80% CS, 20% art)
 
 major project (40% of total grade) is an interactive browser-based artwork in
 p5.js
 
-## COMP2710: Laptop Ensemble
+<https://cs.anu.edu.au/courses/comp1720/>
 
-TODO
+## reflections: what's good, what's hard
 
-## Reimagine
+### good
 
-$350m+ investment in CS & Eng @ ANU
+lots of students new to programming (and some stick around)
+
+forces students to decide _what_, not just how
+
+### hard
+
+even wider range of "starting places" than usual
+
+(some) CS students struggle with the subjectivity
+
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/lens-open-day-brent-ushini.jpg" heading="COMP2710: Laptop Ensemble" %}
+
+later-year elective available to both CS & music students
+
+started in 2011
+
+<https://cs.anu.edu.au/courses/comp2710-lens/>
+
+## reflections: what's good, what's hard
+
+### good
+
+similar to COMP1720
+
+get to assess my students in a nightclub
+
+### hard
+
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="Reimagine" %}
+
+a **$350m+ investment** in CS & Eng @ ANU
+
+new departments, 2x faculty
 
 finding new ways of being a computer scientist
+
+a series of Reimagine Fellowships to support this...
 
 ## The c/c/c studio
 
@@ -72,13 +108,23 @@ I've been awarded a fellowship to build the **c/c/c studio**
 
 an A-levels extension course in creative computing (selective entry, 2 year program)
 
-timeline: first intake in 2021, first graduations in 2022
+small cohorts (<20/year), first intake in 2021, first graduates in 2022
+
+TODO wheels?
 
 ## c/c/c studio curriculum
 
-1st year: interactive visual & generative art (p5.js)
+2h on-campus ~4h self-study per week
 
-2nd year: computer music & livecoding (Extempore & Pd)
+1st year: interactive visual & generative art ([p5.js](https://p5js.org)) based
+on art & interaction course
+
+2nd year: computer music & livecoding
+([Extempore](https://extemporelang.github.io) & [Pd](https://puredata.info))
+based on laptop ensemble course
+
+studio-based learning: students conceive, plan & build something each year, with
+an exhibition at the end
 
 {% include slides/impact.html %}
 
@@ -104,13 +150,19 @@ making music & art isn't a side track on the road to computing
 
 ## discussion questions
 
-what's the appropriate entrance exam/portfolio/other for this program?
+can we go all in on creative coding? i.e. could this be CS101?
 
 how do we make the cultural artefact part of the incentive scheme?
 
-how do we _scale_ it?
+what's the appropriate entrance exam/portfolio/other?
 
-how do we _study_ it?
+how do we make sure we don't just stretch the privileged kids?
+
+how do we study it?
+
+how do we scale it?
+
+what do we call it?
 
 ## what's next?
 
