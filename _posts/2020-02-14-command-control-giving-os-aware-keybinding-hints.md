@@ -17,15 +17,20 @@ In the past, I've just written things like:
 
 which gets _really tedious_ when you have to repeat it every time.
 
-So, I wrote a little bit of javascript which tries to solve the problem. It
-auto-detects[^detection] if you're on macOS and if so it replaces <kbd
-class="nopretty">CTRL</kbd> with <kbd class="nopretty">⌘</kbd>. It actually
-recognises all of <kbd class="nopretty">control</kbd>, <kbd
+So, I wrote a little bit of javascript which 
+
+1. scans the document for any <kbd class="nopretty">control</kbd> elements
+2. if it detects[^detection] you're viewing the site on macOS, changes it to
+   <kbd class="nopretty">⌘</kbd>
+   
+It actually searches for all of <kbd class="nopretty">control</kbd>, <kbd
 class="nopretty">command</kbd>, <kbd class="nopretty">ctrl</kbd>, <kbd
-class="nopretty">ctl</kbd> or <kbd class="nopretty">cmd</kbd> and replaces them
-with <kbd class="nopretty">⌘</kbd> (macOS) or <kbd class="nopretty">CTRL</kbd>
-(otherwise). On the off chance that I actually don't want it to do this, the
-script will skip any `<kbd>` element with a `nopretty` class.
+class="nopretty">ctl</kbd> or <kbd class="nopretty">cmd</kbd> and "normalises"
+them to <kbd class="nopretty">⌘</kbd> (macOS) or <kbd
+class="nopretty">CTRL</kbd> (otherwise).
+
+On the off chance that I actually don't want it to do this, the script will skip
+any `<kbd>` element with a `nopretty` class.
 
 [^detection]: it'll work in _most_ cases; foolproof OS autodetection is really hard
 
