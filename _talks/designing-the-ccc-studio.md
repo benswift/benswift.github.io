@@ -5,6 +5,16 @@ subtitle: 10 years of teaching artists to code and coders to art
 date: "2020-01-17"
 permalink: /talks/designing-the-ccc-studio/
 hidden: true
+summary: >-
+  The arts (music and visual) have always provided a less-travelled but
+  fascinating alternate route into computing. As CS Schools around the world
+  grapple with how best to teach computing to the next generation(s), is computer
+  music/visual art part of the solution? If so, how can we do it without
+  introducing _more_ baggage to a curriculum which already throws plenty of other
+  "hidden prerequisite" hurdles in front of newcomers? In posing (and probably not
+  answering!) these questions I reflect on 10 years of art+code as both an
+  educator and creative practitioner, and describe the c/c/c studio: my current
+  "Reimagine Fellowship" project to bring creative coding into Australian schools.
 ---
 
 {% include slides/title.html %}
@@ -112,15 +122,6 @@ if you'd like to chat, let me know 😊---I'm here till Thursday
 
 ## Abstract
 
-The arts (music and visual) have always provided a less-travelled but
-fascinating alternate route into computing. As CS Schools around the world
-grapple with how best to teach computing to the next generation(s), is computer
-music/visual art part of the solution? If so, how can we do it without
-introducing _more_ baggage to a curriculum which already throws plenty of other
-"hidden prerequisite" hurdles in front of newcomers? In posing (and probably not
-answering!) these questions I reflect on 10 years of art+code as both an
-educator and creative practitioner, and describe the c/c/c studio: my current
-"Reimagine Fellowship" project to bring creative coding into Australian schools.
 
 ## Bio
 
