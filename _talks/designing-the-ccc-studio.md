@@ -4,7 +4,6 @@ title: Designing the c/c/c studio
 subtitle: 10 years of teaching artists to code and coders to art
 date: "2020-01-17"
 permalink: /talks/designing-the-ccc-studio/
-hidden: true
 summary: >-
   The arts (music and visual) have always provided a less-travelled but
   fascinating alternate route into computing. As CS Schools around the world
