@@ -75,6 +75,7 @@
   &[data-background-image] {
     h1,
     h2,
+    h3,
     p {
       background-color: adjust-color(#ffffff, $alpha: -0.25);
       display: table;

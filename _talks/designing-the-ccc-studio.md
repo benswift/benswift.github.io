@@ -47,11 +47,21 @@ but first, some **music**
 
 💻 + 🎵 = 🤯
 
-{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/comp1720-mp-exhibition-2018-2.jpg" heading="COMP1720: Art & Interaction in New Media" %}
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg" heading="CS101" %}
+
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg" heading="CS @ ANU" %}
+
+loads of students, large classes
+
+some resources are plentiful, others scarce
+
+huge opportunities, but how to make the most of them?
+
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/2016-gallery-fun-times.jpg" heading="COMP1720: Art & Interaction in New Media" %}
 
 first-year elective available to both CS & art students
 
-started in 2011 (~20 students)
+started in 2011 (~50 students)
 
 2019 enrolment: ~250 students (80% CS, 20% art)
 
@@ -60,13 +70,13 @@ p5.js
 
 <https://cs.anu.edu.au/courses/comp1720/>
 
-## reflections: what's good, what's hard
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/zach-farmer-TkunxoS98q0-unsplash.jpg" heading="reflections: what's good, what's hard" %}
 
 ### good
 
 lots of students new to programming (and some stick around)
 
-forces students to decide _what_, not just how
+forces students to figure out what excellent work even looks like
 
 ### hard
 
@@ -78,11 +88,19 @@ even wider range of "starting places" than usual
 
 later-year elective available to both CS & music students
 
-started in 2011
+started in 2018
+
+"boutique" class: less than 20 students total
 
 <https://cs.anu.edu.au/courses/comp2710-lens/>
 
-## reflections: what's good, what's hard
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/ken-okum-_FNDUoE1emg-unsplash.jpg" heading="this year in LENS" %}
+
+flipped mode
+
+whole-class crits & jams
+
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/zach-farmer-TkunxoS98q0-unsplash.jpg" heading="reflections: what's good, what's hard" %}
 
 ### good
 
@@ -91,6 +109,10 @@ similar to COMP1720
 get to assess my students in a nightclub
 
 ### hard
+
+getting students to truly work as an _ensemble_
+
+getting students to grow during the course
 
 {% include slides/background-image.html image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="Reimagine" %}
 
@@ -110,21 +132,21 @@ an A-levels extension course in creative computing (selective entry, 2 year prog
 
 small cohorts (<20/year), first intake in 2021, first graduates in 2022
 
-TODO wheels?
+a joint venture between CS & the art/music schools
 
 ## c/c/c studio curriculum
 
 2h on-campus ~4h self-study per week
 
-1st year: interactive visual & generative art ([p5.js](https://p5js.org)) based
-on art & interaction course
+1st year: interactive visual & generative art ([p5.js](https://p5js.org))
 
 2nd year: computer music & livecoding
 ([Extempore](https://extemporelang.github.io) & [Pd](https://puredata.info))
-based on laptop ensemble course
 
 studio-based learning: students conceive, plan & build something each year, with
 an exhibition at the end
+
+needs to be approved by the board of education
 
 {% include slides/impact.html %}
 
