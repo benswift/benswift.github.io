@@ -124,8 +124,8 @@ module Jekyll
     end
 
     def artist_p(g)
-      artists = g["artists"]
-      curators = g["curator"]
+      artists = g["artists"].map { |name| "<span class='author'>#{name}</span>" }
+      curators = g["curator"].map { |name| "<span class='author'>#{name}</span>" }
 
       # gross. surely there's a package to do this? oh well.
       if artists.length <= 2
@@ -138,9 +138,9 @@ module Jekyll
       artists.gsub! "Ben Swift", "<strong>Ben Swift</strong>"
 
       if curators
-        "<p>featuring <span class='author'>#{artists}</span>, curated by <span class='author'>#{curators}</span></p>"
+        "<p>featuring #{artists}, curated by #{curators}</p>"
       else
-        "<p>featuring <span class='author'>#{artists}</span></p>"
+        "<p>featuring #{artists}</p>"
       end
 
     end
