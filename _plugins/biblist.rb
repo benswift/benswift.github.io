@@ -1,7 +1,16 @@
 require 'fileutils'
 require 'bibtex'
 
+def conjoin_names(names)
+  if names.length <= 2
+    names.join(" and ")
+  else
+    names.first(names.length-2).join(", ") + ", " + names.last(2).join(" and ")
+  end
+end
+
 module Jekyll
+
   class BibListPubsTag < Liquid::Tag
 
     def initialize(tag_name, bib_file, tokens)
@@ -30,8 +39,12 @@ module Jekyll
       end
     end
 
-    def author_span(b)
-      "<span class='author'>#{b[:author]}</span>".gsub "Swift, Ben", "<strong>Swift, Ben</strong>"
+    def author_p(b)
+      author_spans = b[:author]
+                       .map { |name| name == "Swift, Ben" ? "<strong>Swift, Ben</strong>" : name }
+                       .map { |name| "<span class='author'>#{name}</span>" }
+      "<p>by #{conjoin_names(author_spans)}</p>"
+
     end
 
     def bib_year(b)
@@ -80,7 +93,7 @@ module Jekyll
 
 <p>#{title_span(b)} <span class='date'>(#{bib_year(b)})</span></p>
 
-<p>by #{author_span(b)}</p>
+#{author_p(b)}
 
 <p>in #{venue_span(b)} #{preprint_a(b)}</p>
 
@@ -124,24 +137,12 @@ module Jekyll
     end
 
     def artist_p(g)
-      artists = g["artists"].map { |name| "<span class='author'>#{name}</span>" }
-      curators = g["curator"].map { |name| "<span class='author'>#{name}</span>" }
+      artist_spans = g["artists"]
+                       .map { |name| name == "Ben Swift" ? "<strong>Ben Swift</strong>" : name }
+                       .map { |name| "<span class='author'>#{name}</span>" }
+      curator_spans = g["curators"].map { |name| "<span class='author'>#{name}</span>" }
 
-      # gross. surely there's a package to do this? oh well.
-      if artists.length <= 2
-        artists = artists.join(" and ")
-      else
-        artists = artists.first(artists.length-2).join(", ") + ", " + artists.last(2).join(" and ")
-      end
-
-      # more vanity emboldening
-      artists.gsub! "Ben Swift", "<strong>Ben Swift</strong>"
-
-      if curators
-        "<p>featuring #{artists}, curated by #{curators}</p>"
-      else
-        "<p>featuring #{artists}</p>"
-      end
+      "<p>featuring #{conjoin_names(artist_spans)}, curated by #{conjoin_names(curator_spans)}</p>"
 
     end
 
