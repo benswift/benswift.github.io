@@ -3,7 +3,8 @@ date: "2015-08-12"
 type: curated
 title: Innovation ACT 2015 Launch
 venue: John Curtin School of Medical Research, Canberra
-curator: Natalija Nikolic
+curators:
+  - Natalija Nikolic
 artists:
   - Ben Swift
 event_url: https://innovationact.org

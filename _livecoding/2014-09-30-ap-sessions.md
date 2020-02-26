@@ -3,7 +3,8 @@ date: "2014-09-30"
 type: study
 title: "The AP Sessions"
 venue: Australian National University
-curator: Ari Purcell
+curators:
+  - Ari Purcell
 artists:
   - Ben Swift
 event_url:

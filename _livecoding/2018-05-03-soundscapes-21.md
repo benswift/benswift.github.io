@@ -3,7 +3,8 @@ date: "2018-05-03"
 type: curated
 title: "Soundscapes Concert Series #21"
 venue: Smiths Alternative Bookshop, Canberra
-curator: Reuben Ingall
+curators:
+  - Reuben Ingall
 artists:
   - Ben Swift
 event_url: 'https://www.smithsalternative.com/events/soundscapes-21-44719?d=3\%2F05\%2F2018+9\%3A30\%3A00+PM'

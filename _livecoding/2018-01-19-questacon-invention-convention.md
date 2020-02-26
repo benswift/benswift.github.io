@@ -3,7 +3,8 @@ date: "2018-01-19"
 type: curated
 title: National Invention Convention '18 Closing Ceremony
 venue: Questacon, Canberra
-curator: Elisha Deschamps
+curators:
+  - Elisha Deschamps
 artists:
   - Ben Swift
 event_url: "https://www.questacon.edu.au/outreach/programmes/questacon-smart-skills-initiative/questacon-invention-convention#term1569"

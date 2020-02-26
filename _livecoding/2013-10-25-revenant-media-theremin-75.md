@@ -3,7 +3,8 @@ date: "2013-10-25"
 type: curated
 title: "Revenant Media: Theremin '75 Exhibition"
 venue: ANU School of Art Gallery, Canberra
-curator: Martyn Jolly
+curators:
+  - Martyn Jolly
 artists:
   - Ben Swift
 event_url: http://soad.cass.anu.edu.au/events/revenant-media

@@ -3,7 +3,8 @@ date: "2015-08-26"
 type: curated
 title: "Collected Resonances: Session 2"
 venue: ANU School of Music, Canberra
-curator: Chloë Hobbs
+curators:
+  - Chloë Hobbs
 artists:
   - Ben Swift
 event_url: http://www.agac.com.au/event/collected-resonances-3/

@@ -3,7 +3,8 @@ date: "2013-06-15"
 type: curated
 title: "Musical Metacreation (MuMe) Algorave at ISEA 2013: International Symposium on Electronic Art"
 venue: 107 Projects, Redfern, NSW, Australia
-curator: Ollie Bown
+curators:
+  - Ollie Bown
 artists:
   - Ben Swift
 event_url: http://www.isea2013.org/events/mume2013/

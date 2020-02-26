@@ -3,7 +3,8 @@ date: "2009-09-24"
 type: curated
 title: Beginning-Middle-End Festival
 venue: ANU School of Art Gallery, Canberra
-curator: Martyn Jolly
+curators:
+  - Martyn Jolly
 artists:
   - Ben Swift
 event_url:

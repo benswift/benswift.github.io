@@ -3,7 +3,8 @@ date: "2019-02-26"
 type: invited
 title: CECS Welcome Party 2019
 venue: ANU College of Engineering & Computer Science
-curator: Elanor Huntington
+curators:
+  - Elanor Huntington
 artists:
   - Ben Swift
   - Kieran Browne

@@ -3,7 +3,7 @@ date: "2014-05-28"
 type: curated
 title: John Hosking Farewell Reception
 venue: Drill Hall Gallery, Canberra
-curator:
+curators:
 artists:
   - Ben Swift
 event_url:

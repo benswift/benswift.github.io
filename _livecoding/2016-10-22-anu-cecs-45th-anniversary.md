@@ -3,7 +3,8 @@ date: "2016-10-22"
 type: curated
 title: ANU CECS 45th Anniversary Celebration
 venue: National Museum of Australia, Canberra
-curator: Amelia Bidgood
+curators:
+  - Amelia Bidgood
 artists:
   - Ben Swift
 event_url:

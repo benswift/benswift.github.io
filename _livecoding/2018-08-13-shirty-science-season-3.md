@@ -3,7 +3,8 @@ date: "2018-08-13"
 type: curated
 title: Shirty Science Season 3 launch party
 venue: Doughnut Dept., Canberra
-curator: Madison Hartill-Law
+curators:
+  - Madison Hartill-Law
 artists:
   - Ben Swift
   - Kieran Browne
