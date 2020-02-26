@@ -35,7 +35,7 @@ module Jekyll
       if link
         "<span class='title'><a href='#{b[:url]}'>#{demunge_better_bibtex(b[:title])}</a></span>"
       else
-        "<span class='title'>#{demunge_better_bibtex(b[:title])}</span> (to appear)"
+        "<span class='title'>#{demunge_better_bibtex(b[:title])}</span> <span class='date'>(to appear)</span>"
       end
     end
 
