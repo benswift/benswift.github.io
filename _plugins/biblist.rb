@@ -41,7 +41,8 @@ module Jekyll
 
     def author_p(b)
       author_spans = b[:author]
-                       .map { |name| name == "Swift, Ben" ? "<strong>Swift, Ben</strong>" : name }
+                       .map { |author| author.first + " " + author.last }
+                       .map { |name| name == "Ben Swift" ? "<strong>Ben Swift</strong>" : name }
                        .map { |name| "<span class='author'>#{name}</span>" }
       "<p>by #{conjoin_names(author_spans)}</p>"
 
