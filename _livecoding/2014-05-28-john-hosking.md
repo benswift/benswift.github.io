@@ -4,6 +4,7 @@ type: curated
 title: John Hosking Farewell Reception
 venue: Drill Hall Gallery, Canberra
 curators:
+  - Alistair Rendell
 artists:
   - Ben Swift
 event_url:
