@@ -64,7 +64,7 @@ about how to make your email stand out from the crowd.
 
 </div>
 
-## Peer-reviewed conference/journal papers & book chapters
+## Peer-reviewed publications
 
 {% bib_list_pubs ben-pubs.bib %}
 
