@@ -13,10 +13,10 @@ permalink: /research/
 I am a multidisciplinary researcher and Senior Lecturer in the Research School
 of Computer Science at the [Australian National
 University](https://cecs.anu.edu.au/people/ben-swift). I'm interested in
-computational art & music, human-computer interaction, AI/machine learning
-(particularly in pursuit of creative ends) and the intersection of code,
-creativity and culture as those boundaries dissolve in the modern world. I'm the
-director of the [code/creativity/culture
+computational art & music, data visualisation, human-computer interaction,
+AI/machine learning (particularly in pursuit of creative ends) and the
+intersection of code, creativity and culture as those boundaries dissolve in the
+modern world. I'm the director of the [code/creativity/culture
 studio](https://cs.anu.edu.au/code-creativity-culture/) at the ANU Research
 School of Computer Science.
 
