@@ -18,8 +18,8 @@
   },
   "homepage": "https://benswift.me",
   "devDependencies": {
-    "browserify": "^16.5.0",
-    "prettier": "^1.19.1"
+    "browserify": "^16",
+    "prettier": "^2"
   },
   "dependencies": {}
 }
