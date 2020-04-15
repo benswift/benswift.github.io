@@ -11,8 +11,6 @@ hidden: true
 
 <!-- NOTE: this is largely copypasta'd from research.md---in future I should refactor it more nicely. -->
 
-## Research interests
-
 I am a multidisciplinary researcher and Senior Lecturer in the Research School
 of Computer Science at the [Australian National
 University](https://cecs.anu.edu.au/people/ben-swift). I'm interested in
