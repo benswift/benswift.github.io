@@ -23,8 +23,6 @@ modern world. I'm the director of the [code/creativity/culture
 studio](https://cs.anu.edu.au/code-creativity-culture/) at the ANU Research
 School of Computer Science.
 
-<!-- TODO: update link to c/c/c projects page once the new cccstudio website is live -->
-
 I am a **livecoder**, and have performed at both local and international arts
 festivals---you can find recordings of some of my sets [on my livecoding
 page]({% link livecoding.md %}). I'm the vice president of the [Australasian
