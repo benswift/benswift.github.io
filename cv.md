@@ -125,7 +125,7 @@ livecoding languages.
   Society_](https://computermusic.org.au/committee/)
 
 - **2020** General Chair, [_Australasian Computer Music
-  Conference_](_Australasian Computer Music Conference_)
+  Conference_](http://acmc2020.com)
 
 ### Peer-reviewed publications
 
