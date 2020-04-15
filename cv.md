@@ -74,10 +74,6 @@ livecoding languages.
 
 ## Research {#research}
 
-### Projects
-
-TODO
-
 ### Grants {#grants}
 
 (_all dollar amounts in AUD, rounded to nearest thousand dollars_)
@@ -85,30 +81,34 @@ TODO
 - **2020--2022** [_Reimagine Fellowship: the c/c/c studio_]({% link
   _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) ($560k)
 
-- **2019** _ANU College of Arts and Social Sciences Teaching and Learning
-  Fellowship 2019_ with Solène Inceoglu, Bernardo Pereira Nunes, and Terhi
-  Nurmikko-Fuller ($10k)
+- **2019** [_ANU College of Arts and Social Sciences Teaching and Learning
+  Fellowship
+  2019_](https://www.anu.edu.au/news/all-news/studying-the-sounds-of-language)
+  with Solène Inceoglu, Bernardo Pereira Nunes, and Terhi Nurmikko-Fuller ($10k)
 
-- **2018** _Research School of the Humanities & Arts (RSHA)
-  Interdisciplinary/Cross-College Collaborative Research Scheme grant_ with
-  Greta Hawes, Mitchell Whitelaw, Geoff Hinchliffe, Terhi Nurmikko-Fuller and
-  Katrina Grant ($15k)
+- **2018** [_Research School of the Humanities & Arts (RSHA)
+  Interdisciplinary/Cross-College Collaborative Research Scheme
+  grant_](https://cass.anu.edu.au/news/mapping-greek-myths) with Greta Hawes,
+  Mitchell Whitelaw, Geoff Hinchliffe, Terhi Nurmikko-Fuller and Katrina Grant
+  ($15k)
 
 - **2018** _The ANU School of Music Sound Recording App_ with Sam Bennett and
   Mark Opitz ($17k)
 
-- **2017** _ANU Vice Chancellor's College Visiting Artist Fellowship_ with Kit
-  Devine ($5k)
+- **2017** [_ANU Vice Chancellor's College Visiting Artist
+  Fellowship_](https://soad.cass.anu.edu.au/events/fellows-vice-chancellors-fellowship-scheme-exhibition-2018)
+  with Kit Devine ($5k)
 
 - **2016** _Google Summer of Code_ ($7k)
 
-- **2016** _ANU Vice Chancellor's College Visiting Artist Fellowship_ with Tony
-  Curran ($5k)
+- **2016** [_ANU Vice Chancellor's College Visiting Artist
+  Fellowship_](https://soad.cass.anu.edu.au/events/fellows-vice-chancellors-fellowship-scheme-exhibition-2018)
+  with Tony Curran ($5k)
 
 - **2015** _New Colombo Plan: "Internet of Things" Program at Beijing Institute
   of Technology_ ($132k) (this was a joint grant application between ANU,
-  Swinburne and UTS; I was not a CI, but led the development & delivery of this
-  cross-institution project)
+  Swinburne and UTS; I was not a named CI, but led the development & delivery of
+  this cross-institution project as [described below](#past-courses))
 
 ### Prizes & Awards
 
@@ -118,6 +118,14 @@ TODO
 - **2017** CECS Dean's Award for Excellence in Education
 
 - **2012** CECS Dean's Award for Outreach (Science Week outreach project)
+
+### Memberships
+
+- **2019--** Vice President, [_Australasian Computer Music
+  Society_](https://computermusic.org.au/committee/)
+
+- **2020** General Chair, [_Australasian Computer Music
+  Conference_](_Australasian Computer Music Conference_)
 
 ### Peer-reviewed publications
 
@@ -152,7 +160,7 @@ curriculum, available under
   and (I hope) have a lot of fun in the process. No previous coding or artistic
   experience is required: COMP1720 teaches everything from the ground up.
 
-### Past courses
+### Past courses {#past-courses}
 
 I have also written and delivered the following courses:
 
@@ -180,3 +188,23 @@ I have also written and delivered the following courses:
   with the Internet of Things.
 
 ## Service
+
+- Since **2016** I have been the academic design lead on the CECS Teaching &
+  Learning Web infrastructure project, which includes the CECS Jekyll Course
+  Website template and GitLab infrastructure for teaching large courses.
+
+- Since **2018** I have been the alternate CECS representative for the ANU-wide
+  Technology-Enhanced Learning Reference Group (TELRG), which meets regularly to
+  discuss and review issues relating to educational technology systems and
+  technology-enhanced teaching and learning.
+  
+- Since **2018** I have been part of an ANU-wide committee (under Prof. Nick
+  Brown) charged with creating a digital artifact/resource to commemorate the
+  ANU's 75th anniversary in 2021.
+
+- From **2015--2019** I was the RSCS Student Experience convenor (UG)---the
+  first ever appointment to this role within RSCS. In this role I worked with
+  the Sub-Dean of Engaged Learning (Matt Doolan) from 2016--2017 and Associate
+  Director of Education (Adrian Lowe) from 2018 onwards in improving the
+  experience of our students, especially those who may fall through the cracks
+  of the other support structures in place within the college.
