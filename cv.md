@@ -1,5 +1,5 @@
 ---
-title: CV
+title: Curriculum vitae
 layout: page
 permalink: /cv/
 hidden: true
