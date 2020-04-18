@@ -71,6 +71,9 @@ livecoding languages.
 - **2020--2022** [_Reimagine Fellowship: the c/c/c studio_]({% link
   _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) ($560k)
 
+- **2019** The Augmented Web: _CSIRO Collaborative Research Project_ with Henry
+  Gardner & Charles Martin ($20k)
+
 - **2019** [_ANU College of Arts and Social Sciences Teaching and Learning
   Fellowship
   2019_](https://www.anu.edu.au/news/all-news/studying-the-sounds-of-language)
