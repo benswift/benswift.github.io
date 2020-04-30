@@ -1,5 +1,6 @@
 ---
 title: Two-way OSC communication between Extempore and Pd
+tags: extempore lens
 ---
 
 Because [Extempore](https://github.com/digego/extempore) and
