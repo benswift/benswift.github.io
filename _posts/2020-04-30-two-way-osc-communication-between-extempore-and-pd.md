@@ -21,7 +21,7 @@ To send OSC messages from Pd to Extempore, you'll first need to start Extempore,
 define a function to act as the OSC callback/handler, and start the OSC server
 listening on a particular port.
 
-```extempore
+```xtlang
 ;; the name of this function doesn't matter, as long as you specify the same
 ;; name later when you start the server
 (define (osc-receive-handler timestamp address . args)
@@ -72,7 +72,7 @@ Then, start Extempore and start a listener again as before. You might not _use_
 this part if you're just sending data out of Extempore, but it's required to set
 up some of the internal OSC infrastructure so you need to do it anyway.
 
-```extempore
+```xtlang
 ;; the name of this function doesn't matter, as long as you specify the same
 ;; name later when you start the server
 (define (osc-receive-handler timestamp address . args)
@@ -84,7 +84,7 @@ up some of the internal OSC infrastructure so you need to do it anyway.
 
 Then, it's a one-liner to send an OSC message to a particular host & port:
 
-```extempore
+```xtlang
 (io:osc:send (now) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
 ```
 
@@ -110,7 +110,7 @@ The one other thing to note about the `io:osc:send` function is that the first
 argument is a _time_ argument. If you wanted to, e.g. send a message with a
 2-second delay after evaluating that line, you could do something like:
 
-```extempore
+```xtlang
 (io:osc:send (+ (now) (* *second* 2)) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
 ```
 
