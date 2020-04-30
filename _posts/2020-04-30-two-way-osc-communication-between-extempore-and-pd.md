@@ -95,9 +95,9 @@ the Pd side.
 This time, if the messages gets through ok you'll see the message received in
 your Pd log view, with stuff like:
 
-   parse-output: list test msg Hello 500 6.6 World 8
-   parse-output: list test msg Hello 500 6.6 World 0
-   parse-output: list test msg Hello 500 6.6 World 9
+    parse-output: list test msg Hello 500 6.6 World 8
+    parse-output: list test msg Hello 500 6.6 World 0
+    parse-output: list test msg Hello 500 6.6 World 9
 
 ...plus a bunch more debugging output from the `oscparse-help.pd` patch.
 
