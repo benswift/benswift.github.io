@@ -63,6 +63,8 @@ code outreach ambassador.
 
 - **2017--2018** Lecturer (Level B), _ANU Research School of Computer Science_
 
+- **2016--** Visiting Scientist, _CSIRO/Data61_
+
 - **2013--2016** Postdoctoral Research Fellow (Level B), _ANU Research School of
   Computer Science_
 
