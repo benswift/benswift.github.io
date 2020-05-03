@@ -8,7 +8,10 @@ Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ), [artist]({%
 link livecoding.md %}) and [hacker](https://github.com/benswift), and one of the
 core developers of the [Extempore](https://github.com/digego/extempore)
-livecoding environment.
+livecoding environment (<a style="vertical-align: sub;"
+href="https://github.com/digego/extempore/stargazers"><img style="width:unset;"
+alt="GitHub stars"
+src="https://img.shields.io/github/stars/digego/extempore"></a>).
 
 I'm a [Senior Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the
 [Research School of Computer Science](https://cs.anu.edu.au/) at the Australian
