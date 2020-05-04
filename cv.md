@@ -11,38 +11,42 @@ hidden: true
 
 <!-- NOTE: this is largely copypasta'd from research.md---in future I should refactor it more nicely. -->
 
-I am a multidisciplinary
-[**scholar**](https://scholar.google.com/citations?user=OQdYgLEAAAAJ) (Senior
-Lecturer) in the Research School of Computer Science at the [Australian National
-University](https://cecs.anu.edu.au/people/ben-swift). I'm interested in
-computational art & music, data visualisation, human-computer interaction,
-AI/machine learning (particularly in pursuit of creative ends) and the
-intersection of code, creativity and culture as those boundaries dissolve in the
-modern world. I'm the director of the [code/creativity/culture
+I am an internationally-recognised multidisciplinary
+[**scholar**](https://scholar.google.com/citations?user=OQdYgLEAAAAJ) in the
+Research School of Computer Science at the [Australian National
+University](https://cecs.anu.edu.au/people/ben-swift)---Australia's top-ranked
+University (#24 QS world ranking 2018/2019). I'm interested in computational art
+& music, data visualisation, human-computer interaction, AI/machine learning
+(particularly in pursuit of creative ends) and the intersection of code,
+creativity and culture as those boundaries dissolve in the modern world. I'm the
+director of the [code/creativity/culture
 studio](https://cs.anu.edu.au/code-creativity-culture/) at the ANU Research
 School of Computer Science.
 
 I am a livecoding [**artist**]({% link livecoding.md %}), and have performed at
-both local and international arts festivals---you can find recordings of some of
-my sets [on my livecoding page]({% link livecoding.md %}). I'm the vice
-president of the [Australasian Computer Music
-Association](https://computermusic.org.au) (ACMA). I'm also one of the inaugural
-[ANU Reimagine Fellows]({% link _posts/2019-08-30-Im-a-reimagine-fellow.md %}),
-part of a [$300m+ investment from the ANU](https://cecs.anu.edu.au/reimagine)
-charged with re-thinking (and re-doing) what it is to be a computer scientist in
-the 21st century.
+both local and international arts festivals, including the International
+Symposium on Electronic Art (ISEA) and the International Conference on Live
+Coding (ICLC). You can find recordings of some of my sets [on my livecoding
+page]({% link livecoding.md %}). I'm the vice president of the [Australasian
+Computer Music Association](https://computermusic.org.au) (ACMA). I'm also one
+of the inaugural [ANU Reimagine Fellows]({% link
+_posts/2019-08-30-Im-a-reimagine-fellow.md %}), part of a [$300m+ investment
+from the ANU](https://cecs.anu.edu.au/reimagine) charged with re-thinking (and
+re-doing) what it is to be a computer scientist in the 21st century.
 
-I am a [**hacker/maker**](https://github.com/benswift) of open-source software
-tools for music, creative code, data analysis/visualisation, and more. I'm one
-half of the core development team for the
+I am a [**maker**](https://github.com/benswift) of open-source software tools
+for music, creative code, data analysis/visualisation, and more. I'm one half of
+the core development team for the
 [Extempore](https://github.com/digego/extempore) programming environment <a
 style="vertical-align: sub;"
 href="https://github.com/digego/extempore/stargazers"><img style="width:unset;"
 alt="GitHub stars"
 src="https://img.shields.io/github/stars/digego/extempore"></a>, the
-state-of-the-art in livecoding languages. I have more than 10 years experience
-as an OSS community manager, technical writer, software engineer and creative
-code outreach ambassador.
+state-of-the-art in livecoding languages. Extempore's users are a worldwide
+community of programmers, artists, musicians, data visualisation practitioners
+and other domain experts with differing backgrounds and levels of software
+expertise. I have more than 10 years experience as an OSS community manager,
+technical writer, software engineer and creative code outreach ambassador.
 
 ## Qualifications {#qualifications}
 
