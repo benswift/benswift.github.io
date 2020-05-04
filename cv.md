@@ -97,6 +97,9 @@ technical writer, software engineer and creative code outreach ambassador.
   Mitchell Whitelaw, Geoff Hinchliffe, Terhi Nurmikko-Fuller and Katrina Grant
   ($15k)
 
+- **2018** _Google Cloud Platform Research Grant: Dynamic display server for
+  live code in musical performance_ ($5k)
+
 - **2018** _The ANU School of Music Sound Recording App_ with Sam Bennett and
   Mark Opitz ($17k)
 
