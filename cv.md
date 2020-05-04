@@ -124,7 +124,7 @@ technical writer, software engineer and creative code outreach ambassador.
 
 - **2012** CECS Dean's Award for Outreach (Science Week outreach project)
 
-### Memberships
+### Leadership
 
 - **2019--** Vice President, [_Australasian Computer Music
   Society_](https://computermusic.org.au/committee/)
