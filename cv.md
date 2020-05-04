@@ -208,8 +208,7 @@ I have also written and delivered the following courses:
   ANU's 75th anniversary in 2021.
 
 - From **2015--2019** I was the RSCS Student Experience convenor (UG)---the
-  first ever appointment to this role within RSCS. In this role I worked with
-  the Sub-Dean of Engaged Learning (Matt Doolan) from 2016--2017 and Associate
-  Director of Education (Adrian Lowe) from 2018 onwards in improving the
-  experience of our students, especially those who may fall through the cracks
-  of the other support structures in place within the college.
+  first ever appointment to this role within RSCS. In this role I worked on
+  improving the experience of our students, especially those who may fall
+  through the cracks of the other support structures in place within the
+  college.
