@@ -90,9 +90,9 @@ module Jekyll
     end
 
     def render_bibitem(b)
-      "<div id='#{b.key}'>
+      "<div>
 
-<p>#{title_span(b)} <span class='date'>(#{bib_year(b)})</span></p>
+<p class='pubitem' id='#{b.key}'>#{title_span(b)} <span class='date'>(#{bib_year(b)})</span></p>
 
 #{author_p(b)}
 
@@ -165,7 +165,7 @@ module Jekyll
     def render_gigitem(g)
       "<div>
 
-<p class='title'>#{title_span(g)} <span class='date'>(#{g['date'].year})</span></p>
+<p class='title pubitem' id='#{Jekyll::Utils.slugify(g['title'])}'>#{title_span(g)} <span class='date'>(#{g['date'].year})</span></p>
 
 #{artist_p(g)}
 

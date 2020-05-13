@@ -2,6 +2,7 @@
 title: Curriculum vitae
 layout: page
 permalink: /cv/
+anchorjs-selector: "article > h2, article > h3, .pubitem"
 hidden: true
 ---
 
