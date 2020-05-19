@@ -5,12 +5,10 @@ subtitle: non-linear relationships in code art & beyond
 date: "2020-05-20"
 permalink: /talks/understanding-and-enjoyment/
 summary: >-
-  Cyber-physical systems sure are important. But what counts as a CPS? And what
-  can they teach us about the things that are important as we design and examine
-  CPSs in _all_ areas of life?
+  Understanding the sometimes tricky relationship between understanding &
+  enjoyment in various traditional and new cultural practices.
 
   An interactive lecture/workshop given to the [3a Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
-hidden: true
 ---
 
 {% include slides/title.html %}
