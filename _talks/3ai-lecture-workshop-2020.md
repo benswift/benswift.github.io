@@ -29,6 +29,8 @@ hidden: true
 
 {% include slides/impact.html %}
 
+{:style="font-size:0.6em;"}
+
 <{{ page.url | prepend: site.baseurl | prepend: site.url }}>
 
 {% include slides/background-image.html image="images/talks/understanding-and-enjoyment/kambah-high-demolition.jpg" id="part-1" %}
@@ -44,12 +46,9 @@ information/culture/humanity in today's (and tomorrow's) world.
 
 {% include slides/background-image.html image="images/talks/understanding-and-enjoyment/strong-songs-kirk.jpeg" %}
 
-## collaborative task 1
-
 {% include slides/background-image.html image="images/talks/understanding-and-enjoyment/jehyun-sung-6U5AEmQIajg-unsplash.jpg" %}
 
-{:.centering}
----
+<hr class="center">
 
 {:style="font-size:0.9em;"}
 
@@ -60,14 +59,9 @@ for tweet in api.user("3AInstitute").timeline(limit=200):
     tweet.retweet_with_comment("I have so. many. questions.")
 ```
 
----
-
-TODO graph
-
-- 5 minutes
+## collaborative task 1 (5mins)
 
 - nominate a storyteller
-
 - at this point, we're thinking in _generalities_
 
 {% include slides/background-image.html image="images/talks/understanding-and-enjoyment/mick-haupt-AOyR7aMFHyU-unsplash.jpg" heading="Ben codes the 80s" id="part-2" %}
@@ -116,7 +110,7 @@ it's complicated
 > and inside different larger systems. Making sense of, and mapping, that
 > broader intentionality is central to the emergent new applied science.
 
-## collaborative task 2
+## collaborative task 2 (10mins)
 
 design intervention: what scaffolding could you provide to move the needle on
 u&e in a livecoding gig?
