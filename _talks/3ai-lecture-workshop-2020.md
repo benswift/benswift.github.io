@@ -8,7 +8,7 @@ summary: >-
   Understanding the sometimes tricky relationship between understanding &
   enjoyment in various traditional and new cultural practices.
 
-  An interactive lecture/workshop given to the [3a Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
+  An interactive lecture/workshop given to the [3A Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
 ---
 
 {% include slides/title.html %}
