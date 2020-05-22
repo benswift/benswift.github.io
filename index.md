@@ -6,7 +6,7 @@ layout: page
 
 Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ), [artist]({%
-link livecoding.md %}) and [hacker](https://github.com/benswift), and one of the
+link livecoding.md %}) and [maker](https://github.com/benswift), and one of the
 core developers of the [Extempore](https://github.com/digego/extempore)
 livecoding environment (<a style="vertical-align: sub;"
 href="https://github.com/digego/extempore/stargazers"><img style="width:unset;"
