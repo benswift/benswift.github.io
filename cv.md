@@ -3,10 +3,9 @@ title: Curriculum vitae
 layout: page
 permalink: /cv/
 anchorjs-selector: "article > h2, article > h3, .pubitem"
+pandoc_handout: assets/templates/cv-template.tex
 hidden: true
 ---
-
-{% include assets/picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21, Photo by Adam Thomas" %}
 
 {% include toc.html %}
 
