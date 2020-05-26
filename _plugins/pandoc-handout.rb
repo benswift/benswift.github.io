@@ -10,8 +10,13 @@ Jekyll::Hooks.register :pages, :post_render do |page|
     end
 
     Tempfile.open([page.basename, ".html"]) do |f|
+      dest_path = "#{Jekyll.configuration({})['destination']}/assets/pdf/#{page.basename}.pdf"
+
+      # write rendered output html to tempfile
       f.write page.content
-      system("pandoc", f.path, "--template", template, "-o", "assets/pdf/#{page.basename}.pdf") or raise "pandoc handout build error for #{page.path}"
+
+      # call pandoc
+      system("pandoc", f.path, "--template", template, "-o", dest_path) or raise "pandoc handout build error for #{page.path}"
     end
   end
 end
