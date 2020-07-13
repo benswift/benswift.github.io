@@ -82,7 +82,7 @@ number of frames
 (get_number_of_frames "assets/samples/piano/60.wav")
 ```
 
-{.hl-para}
+{:.hl-para}
 
 Most of the code in this post doesn't check for e.g. bad filenames or other
 potential errors, so if that's a thing which might happen in your situation then
