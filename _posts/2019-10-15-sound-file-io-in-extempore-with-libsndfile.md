@@ -9,13 +9,6 @@ a quick crash-course on using [Extempore's libsndfile
 bindings](https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm)
 to read, process and write audio data files.
 
-{:.hl-para}
-
-There have been some recent bugfixes in `libsndfile`, and (even more recently)
-these have made it into Extempore, which builds it's own `libsndfile` shared
-library as part of the CMake build process. So if you want to try this stuff
-it's probably best that you've built the latest Extempore from `HEAD`.
-
 ## Loading the xtlang wrappers for the sndfile library functions
 
 Once you've got Extempore up and running, the first thing to do is to load the
