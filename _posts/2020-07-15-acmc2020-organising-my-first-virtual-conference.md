@@ -98,11 +98,13 @@ below).
   however there were certainly people for whom this process was unfamiliar and a
   bit daunting
 
-- EasyChair sucks, but the others (Precision Conference, CMT) suck too, so I
-  wouldn't strongly push people one way on the other on this part of the
-  process---as long as your choice allows you to export all accepted submissions
-  & their metadata in some sort of machine-readable format (e.g. CSV, YAML) then
-  just use whatever you like
+- EasyChair sucks, but the others ([Precision
+  Conference](https://new.precisionconference.com/),
+  [CMT](https://cmt3.research.microsoft.com/)) suck too, so I wouldn't strongly
+  push people one way on the other on this part of the process---as long as your
+  choice allows you to export all accepted submissions & their metadata in some
+  sort of machine-readable format (e.g. CSV, YAML) then just use whatever you
+  like
 
 - as a bonus, it allowed me to make a [snarky
   tweet](https://twitter.com/benswift/status/1280373973843247104) (which is
