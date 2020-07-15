@@ -15,9 +15,11 @@ Music Conference_. From the conference landing page:
 > are engaged in community music making, or who simply work outside of academia
 > and mainstream institutions.
 
-Well, the conference is now all done for 2020. It's been a lot of hard work, but
-the ACMC community are _amazing_, so it's been pretty fun as well. A special
-shout out to the rest of the ACMC [organising
+Well, the conference is now all done for 2020 (although the videos are still
+freely available online; check out our
+[keynotes](https://www.youtube.com/watch?v=v6muRCIp3Kg&list=PL4_Bp-PE5_5sgaN4pIzrz0KGBn0RXramC)).
+It's been a lot of hard work, but the ACMC community are _amazing_, so it's been
+pretty fun as well. A special shout out to the rest of the ACMC [organising
 committee](https://acmc2020.com/#Organisers) (Charles, Nat, Sia, Kit & Alec) for
 all their hard work---thanks team :) So even though I'm writing this blog post,
 these decisions & reflections are really the result of our combined labour, as
@@ -27,19 +29,48 @@ well as feedback from the ACMC community during the conference.
     well, it's actually pretty common that I'm quiet for a few weeks, so I
     guess it's business as usual
 
+{% include toc.html %}
 
 ## Tools for running an online conference in 2020
 
 This post isn't about the success (or otherwise) of ACMC2020 as an inclusive,
-affirming computer music conference. That post is in the works, but this isn't
-it.
+affirming computer music conference. I care about that a lot---and that post is
+in the works, but this isn't it.
 
 Instead, this post is a list of all the tools that we chose to use to put it all
 together, and the rationale behind those decisions. There are lots of people all
 around the world organising virtual conferences right now, so hopefully writing
 down our experiences is helpful.
 
-{% include toc.html %}
+As the hosts of a virtual ACMC, our priorities were:
+
+1. to minimise the risk technical difficulties, "live" activities were limited
+   to those where they add value; for example all talks were pre-recorded &
+   watched on YouTube to avoid the technical issues which come with live
+   screen-shared zoom presentations
+
+2. use synchronous communication modes for discussion and q&a, but with
+   persistence: leave participants the option of returning to a discussion later
+   (or for leaving a question for a presenter in a different timezone, to be
+   answered at a friendlier time for them)
+
+3. where possible, use low-cost (because the ACMC doesn't have a huge budget)
+   and open-source tools (so that the things we learn can be built upon by
+   others)
+
+4. automate all the things; it probably goes without saying if you know me or
+   read my blog, but manual work makes me sad and continuous integration
+   pipelines make me happy ☺
+
+{:.hl-para}
+
+**tl;dr** we used [EasyChair](https://easychair.org/) for submissions & peer
+review, a [customised
+version](https://github.com/australasian-computer-music-association/acmc2020)
+for the website, [YouTube
+premiere](https://support.google.com/youtube/answer/9080341?hl=en) for all
+submissions, and [Discord](https://discord.com/) for text/voice discussion and
+q&a (but read on for much detail & reflection on why we chose those things)
 
 ### Conference website {#website}
 
@@ -215,7 +246,7 @@ catch up & watch at their leisure.
 YouTube is great for 1-many one-way broadcasting, but not so great for two-way
 communication, and especially not many-many interaction & discussion. For
 discussion, ACMC2020 went all in on text-based chat using
-[Discord](https://discord.com/new) (we created our own ACMC2020 Discord server
+[Discord](https://discord.com/) (we created our own ACMC2020 Discord server
 and sent an invite link to all conference participants).
 
 ![ACMC Discord channel screenshot]({% link assets/images/posts/acmc-discord-screenshot.png %})
