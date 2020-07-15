@@ -4,8 +4,8 @@ tags: web
 ---
 
 I've been a bit quiet on this blog for the last few weeks[^weeks] because I've
-been organising [ACMC2020](https://acmc2020.com/) the 2020 Australasian Computer
-Music Conference. From the conference landing page:
+been organising [ACMC2020](https://acmc2020.com/): the _2020 Australasian Computer
+Music Conference_. From the conference landing page:
 
 > This year's conference theme is **inclusion**. We want to highlight the
 > diverse range of people who contribute to Australia's computer/electronic
@@ -26,13 +26,15 @@ well as feedback from the ACMC community during the conference.
 [^weeks]:
     well, it's actually pretty common that I'm quiet for a few weeks, so I
     guess it's business as usual
-    
+
 ## Tools for running an online conference in 2020
 
 There are lots of people all around the world organising virtual conferences
 right now, so here's a list of the tools that we chose to put it all together
 and the rationale behind those decisions. Even if you're optimising for
 different criteria, writing down what we did and the (initial) reflections
+
+{% include toc.html %}
 
 ### Conference website {#website}
 
@@ -42,9 +44,9 @@ super-easy and did the job through the initial phase of advertising the
 conference and drumming up submissions.
 
 Around the time we were finalising the accepted papers & conference schedule,
-the ICLR team [posted on
-HN](https://news.ycombinator.com/item?id=23282113) that the tooling for their
-[virtual](https://iclr.cc/virtual_2020/index.html) was newly [available on
+the ICLR team [posted on HN](https://news.ycombinator.com/item?id=23282113) that
+the tooling for their [virtual
+conference](https://iclr.cc/virtual_2020/index.html) was newly [available on
 GitHub](https://github.com/Mini-Conf/Mini-Conf). We decided to use it as a
 starting point for building the ACMC2020 conference website.
 
@@ -52,6 +54,8 @@ The final version of the ACMC site is still live (and will remain so for a while
 at least) at <https://acmc2020.com/>, and the [source is up on
 GitHub](https://github.com/australasian-computer-music-association/acmc2020) as
 well.
+
+![ACMC website screenshot]({% link assets/images/posts/acmc-website-words-sounds-screenshot.png %})
 
 #### Reflections
 
@@ -62,15 +66,15 @@ well.
   requiring a fair amount of web development experience to get it to that point
   (a big shoutout to Charles Martin who was a big help with this)
 
-- a static site which is automatically populated based on data in a csv or YAML
+- a static site which is automatically populated based on data in a CSV or YAML
   file is a good option for a conference like this---it means as long as
   whatever system you're using to organise & schedule the accepted papers can
-  output a csv file you can probably make it work with this website template
+  output a `.csv` file you can probably make it work with this website template
 
-- if I had my time again, I'm undecided as to whether I'd use the same MiniConf
-  template as a starting point, or just write a new Jekyll plugin which adds
-  similar features (and just has more mature docs/ecosystem for static site
-  building)
+- if I had my time again, I'm undecided as to whether I'd use the same
+  [Mini-Conf](https://github.com/Mini-Conf/Mini-Conf) template as a starting
+  point, or just write a new Jekyll plugin which adds similar features (and just
+  has more mature docs/ecosystem for static site building)
 
 ### Submissions & peer review {#easychair}
 
@@ -78,7 +82,7 @@ We used [EasyChair](https://easychair.org/) for conference submissions,
 partially because the size of this conference meant that we were able to sneak
 in under the limits for their free tier. While the reviewing & final decisions
 were done through EasyChair, at the end of that process we exported all the
-accepted submissions as a big csv file (which we imported into Google Docs---see
+accepted submissions as a big `.csv` file (which we imported into Google Docs---see
 below).
 
 #### Reflections
@@ -92,7 +96,7 @@ below).
 - EasyChair sucks, but the others (Precision Conference, CMT) suck too, so I
   wouldn't strongly push people one way on the other on this part of the
   process---as long as your choice allows you to export all accepted submissions
-  & their metadata in some sort of machine-readable format (e.g. csv, YAML) then
+  & their metadata in some sort of machine-readable format (e.g. CSV, YAML) then
   just use whatever you like
 
 - as a bonus, it allowed me to make a [snarky
@@ -104,10 +108,10 @@ below).
 EasyChair worked fine for distributing the submissions for peer review &
 selecting the ones we wanted in the conference. It doesn't really have a story
 for how to organise those submissions into a coherent conference program. To do
-this, we used a shared Google Docs spreadsheet. Starting with a csv export, the
+this, we used a shared Google Docs spreadsheet. Starting with a CSV export, the
 ACMC committee added information about which presentations should go in which
 sessions and in which order. Finally, to get this data into the [conference
-website](#website) we needed to manually "Download as `.csv`", then copy the csv
+website](#website) we needed to manually "Download as `.csv`", then copy the
 file into the `sitedata` folder ready to be picked up by the next build of the
 conference website.
 
@@ -158,6 +162,8 @@ Premiere](https://support.google.com/youtube/answer/9080341?hl=en) feature.
 After the Premiere, the videos were (still are) left up for people to catch up &
 watch at their leisure.
 
+![ACMC YouTube channel screenshot]({% link assets/images/posts/acmc-youtube-screenshot.png %})
+
 [^ffmpeg]:
     while this worked really nicely in the end, those scripts probably took me
     as much time to get right as the rest of the website stuff combined 😞
@@ -202,6 +208,8 @@ communication, and especially not many-many interaction & discussion. For
 discussion, ACMC2020 went all in on text-based chat using
 [Discord](https://discord.com/new) (we created our own ACMC2020 Discord server
 and sent an invite link to all conference participants).
+
+![ACMC Discord channel screenshot]({% link assets/images/posts/acmc-discord-screenshot.png %})
 
 #### Reflections
 
