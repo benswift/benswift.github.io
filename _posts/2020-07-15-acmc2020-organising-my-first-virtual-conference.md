@@ -34,7 +34,7 @@ well as feedback from the ACMC community during the conference.
 ## Tools for running an online conference in 2020
 
 This post isn't about the success (or otherwise) of ACMC2020 as an inclusive,
-affirming computer music conference. I care about that a lot---and that post is
+affirming computer music conference. I care about that a lot, and that post is
 in the works, but this isn't it.
 
 Instead, this post is a list of all the tools that we chose to use to put it all
@@ -45,9 +45,9 @@ down our experiences is helpful.
 As the hosts of a virtual ACMC, our priorities were:
 
 1. to minimise the risk technical difficulties, "live" activities were limited
-   to those where they add value; for example all talks were pre-recorded &
+   to those where they add value (for example all talks were pre-recorded &
    watched on YouTube to avoid the technical issues which come with live
-   screen-shared zoom presentations
+   screen-shared zoom presentations)
 
 2. use synchronous communication modes for discussion and q&a, but with
    persistence: leave participants the option of returning to a discussion later
@@ -65,12 +65,11 @@ As the hosts of a virtual ACMC, our priorities were:
 {:.hl-para}
 
 **tl;dr** we used [EasyChair](https://easychair.org/) for submissions & peer
-review, a [customised
-version](https://github.com/australasian-computer-music-association/acmc2020)
-for the website, [YouTube
-premiere](https://support.google.com/youtube/answer/9080341?hl=en) for all
-submissions, and [Discord](https://discord.com/) for text/voice discussion and
-q&a (but read on for much detail & reflection on why we chose those things)
+review, a [customised version of
+ICLR's](https://github.com/australasian-computer-music-association/acmc2020)
+website, [YouTube
+premiere](https://support.google.com/youtube/answer/9080341?hl=en), and
+[Discord](https://discord.com/) for text/voice discussion and q&a
 
 ### Conference website {#website}
 
@@ -100,7 +99,7 @@ well.
   [a fair bit of
   work](https://github.com/australasian-computer-music-association/acmc2020/pulse)
   requiring a fair amount of web development experience to get it to that point
-  (a big shoutout to Charles Martin who was a big help with this)
+  (Charles Martin helped me a lot with this)
 
 - a static site which is automatically populated based on data in a CSV or YAML
   file is a good option for a conference like this---it means as long as
@@ -110,7 +109,7 @@ well.
 - if I had my time again, I'm undecided as to whether I'd use the same
   [Mini-Conf](https://github.com/Mini-Conf/Mini-Conf) template as a starting
   point, or just write a new Jekyll plugin which adds similar features (and just
-  has more mature docs/ecosystem for static site building)
+  has a more mature docs/ecosystem for static site building)
 
 ### Submissions & peer review {#easychair}
 
@@ -118,8 +117,8 @@ We used [EasyChair](https://easychair.org/) for conference submissions,
 partially because the size of this conference meant that we were able to sneak
 in under the limits for their free tier. While the reviewing & final decisions
 were done through EasyChair, at the end of that process we exported all the
-accepted submissions as a big `.csv` file (which we imported into Google Docs---see
-below).
+accepted submissions as a big `.csv` file (which we imported into Google
+Docs---see below).
 
 #### Reflections
 
@@ -144,29 +143,23 @@ below).
 ### Scheduling/programming the sessions {#google-docs}
 
 EasyChair worked fine for distributing the submissions for peer review &
-selecting the ones we wanted in the conference. It doesn't really have a story
-for how to organise those submissions into a coherent conference program. To do
-this, we used a shared Google Docs spreadsheet. Starting with a CSV export, the
-ACMC committee added information about which presentations should go in which
-sessions and in which order. Finally, to get this data into the [conference
-website](#website) we needed to manually "Download as `.csv`", then copy the
-file into the `sitedata` folder ready to be picked up by the next build of the
-conference website.
+selecting the ones we wanted in the conference. It doesn't really have a nice
+story for how to organise those submissions into a coherent conference program.
+To do this, we used a shared Google Docs spreadsheet. Starting with a CSV
+export, the ACMC committee added information about which presentations should go
+in which sessions and in which order. Finally, to get this data into the
+[conference website](#website) we needed to manually "Download as `.csv`", then
+copy the file into the `sitedata` folder ready to be picked up by the next build
+of the conference website.
 
 #### Reflections
 
-- ACMA is lucky that _most_ of our community[^chronodiversity] is based in Australia across a
-  relatively small range of timezones---if you're running an international
-  conference then you need to think about the chronodiversity of your
-  participants when you're scheduling your conference sessions (my colleague
-  [Steve Blackburn](https://twitter.com/stevemblackburn) has a blogpost in the
-  works about this)
-
-[^chronodiversity]:
-    actually, we did have some overseas participants, and the async nature of
-    the [Discord chat](#discord) meant that people could mention them in their
-    questions in the text chat, and they could log in at a later time to provide
-    answers---this worked really well on a few occasions
+- ACMA is lucky that _most_ of our community[^chronodiversity] is based in
+  Australia across a relatively small range of timezones---if you're running an
+  international conference then you need to think about the chronodiversity of
+  your participants when you're scheduling your conference sessions (my
+  colleague [Steve Blackburn](https://twitter.com/stevemblackburn) has a
+  blogpost in the works about this)
 
 - this step required the most manual work, which was certainly a hassle in the
   early stages of the scheduling process when things are changing a lot, however
@@ -174,11 +167,17 @@ conference website.
   net win
 
 - the [website infrastructure](#website) has a place for writing python scripts,
-  and [we
-  used](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)
+  and [we used this a
+  lot](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)
   to run consistency checks & other helpful analyses (because checking stuff
   with scripts is way more fun than checking it by eye, and _probably_ a
   time-saver...)
+
+[^chronodiversity]:
+    actually, we did have some overseas participants, and the async nature of
+    the [Discord chat](#discord) meant that people could mention them in their
+    questions in the text chat, and they could log in at a later time to provide
+    answers---this worked really well on a few occasions
 
 ### Video presentations {#youtube}
 
@@ -188,7 +187,7 @@ music performances alongside more traditional paper presentations---but we put
 everything on YouTube nonetheless.
 
 A couple of the performances were livestreamed, but for the majority of the
-conferenc program participants were asked to submit a video representing their
+conference program participants were asked to submit a video representing their
 performance or paper presentation. Then, an [elaborate series of ffmpeg
 scripts](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)[^ffmpeg]
 concatenated the videos to produce a single video per session, with consistent
@@ -211,9 +210,10 @@ catch up & watch at their leisure.
 
 - outsourcing the video delivery to YouTube (who, regardless of what you think
   of their business model, are **really good** at delivering video) saved
-  so much stress, and the ability to upload & schedule the video ahead of time
-  but still watch it all-together allows for synchronous discussion and q&a
-  amongst attendees
+  so much stress
+
+- the ability to upload & schedule the video ahead of time but still watch it
+  all-together allows for synchronous discussion and q&a amongst attendees
 
 - when the premiere is done, you don't have to "put the videos online for those
   who missed them"; they're already there (which is _so much easier_ than having
@@ -243,11 +243,11 @@ catch up & watch at their leisure.
 
 ### Q&A and discussion {#discord}
 
-YouTube is great for 1-many one-way broadcasting, but not so great for two-way
-communication, and especially not many-many interaction & discussion. For
-discussion, ACMC2020 went all in on text-based chat using
-[Discord](https://discord.com/) (we created our own ACMC2020 Discord server
-and sent an invite link to all conference participants).
+YouTube is great for one-way one-to-many broadcasting, but not so great for
+two-way communication, and especially not many-to-many interaction & discussion.
+Instead, ACMC2020 went all in on text-based chat using
+[Discord](https://discord.com/) (we created our own ACMC2020 Discord server and
+sent an invite link to all conference participants).
 
 ![ACMC Discord channel screenshot]({% link assets/images/posts/acmc-discord-screenshot.png %})
 
