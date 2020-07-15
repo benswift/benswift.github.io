@@ -95,16 +95,16 @@ well.
 #### Reflections
 
 - in the end I think it looked really great (and we received some [nice
-  feedback](https://twitter.com/benswift/status/1280746825637453824)) but it was
-  [a fair bit of
+  feedback](https://twitter.com/benswift/status/1280746825637453824) from the
+  creators of the template) but it was [a lot of
   work](https://github.com/australasian-computer-music-association/acmc2020/pulse)
-  requiring a fair amount of web development experience to get it to that point
-  (Charles Martin helped me a lot with this)
+  requiring a non-trivial amount of web development experience to get it to that
+  point (Charles Martin helped a lot with this)
 
 - a static site which is automatically populated based on data in a CSV or YAML
-  file is a good option for a conference like this---it means as long as
-  whatever system you're using to organise & schedule the accepted papers can
-  output a `.csv` file you can probably make it work with this website template
+  file is a good option---it means as long as whatever system you're using to
+  organise & schedule the accepted papers can output a `.csv` file you can
+  probably make it work with this website template
 
 - if I had my time again, I'm undecided as to whether I'd use the same
   [Mini-Conf](https://github.com/Mini-Conf/Mini-Conf) template as a starting
@@ -114,10 +114,10 @@ well.
 ### Submissions & peer review {#easychair}
 
 We used [EasyChair](https://easychair.org/) for conference submissions,
-partially because the size of this conference meant that we were able to sneak
-in under the limits for their free tier. While the reviewing & final decisions
-were done through EasyChair, at the end of that process we exported all the
-accepted submissions as a big `.csv` file (which we imported into Google
+partially because the small-ish size of the conference meant that we were able
+to sneak in under the limits for their free tier. While the reviewing & final
+decisions were done through EasyChair, at the end of that process we exported
+all the accepted submissions as a big `.csv` file (which we imported into Google
 Docs---see below).
 
 #### Reflections
@@ -126,31 +126,27 @@ Docs---see below).
   majority of the audience for this conference are familiar with the whole "call
   for papers -> peer review -> notification -> conference attendance" thing,
   however there were certainly people for whom this process was unfamiliar and a
-  bit daunting
+  bit daunting (so we need to provide more guidance for those folks next time)
 
 - EasyChair sucks, but the others ([Precision
   Conference](https://new.precisionconference.com/),
   [CMT](https://cmt3.research.microsoft.com/)) suck too, so I wouldn't strongly
   push people one way on the other on this part of the process---as long as your
   choice allows you to export all accepted submissions & their metadata in some
-  sort of machine-readable format (e.g. CSV, YAML) then just use whatever you
-  like
-
-- as a bonus, it allowed me to make a [snarky
-  tweet](https://twitter.com/benswift/status/1280373973843247104) (which is
-  _always_ a win)
+  sort of machine-readable format (e.g. CSV, YAML)
 
 ### Scheduling/programming the sessions {#google-docs}
 
 EasyChair worked fine for distributing the submissions for peer review &
 selecting the ones we wanted in the conference. It doesn't really have a nice
 story for how to organise those submissions into a coherent conference program.
-To do this, we used a shared Google Docs spreadsheet. Starting with a CSV
-export, the ACMC committee added information about which presentations should go
-in which sessions and in which order. Finally, to get this data into the
-[conference website](#website) we needed to manually "Download as `.csv`", then
-copy the file into the `sitedata` folder ready to be picked up by the next build
-of the conference website.
+
+To do this, we used a shared Google Docs spreadsheet. Starting with the CSV
+export from EasyChair, the ACMC committee added columns about which
+presentations should go in which sessions and in which order. To get this data
+into the [conference website](#website) we needed to manually "Download as
+`.csv`", then copy the file into the `sitedata` folder ready to be picked up by
+the next build of the conference website.
 
 #### Reflections
 
@@ -161,12 +157,12 @@ of the conference website.
   colleague [Steve Blackburn](https://twitter.com/stevemblackburn) has a
   blogpost in the works about this)
 
-- this step required the most manual work, which was certainly a hassle in the
-  early stages of the scheduling process when things are changing a lot, however
-  the convenience of being able to collaboratively work on the spreadsheet was a
-  net win
+- this step required the most manual work (in particular the manual "Download as
+  `.csv`" step) which was certainly a hassle in the early stages of the
+  scheduling process when things are changing a lot, however the convenience &
+  familiarity of a spreadsheet was a net win
 
-- the [website infrastructure](#website) has a place for writing python scripts,
+- the [website infrastructure](#website) has a place for putting python scripts,
   and [we used this a
   lot](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)
   to run consistency checks & other helpful analyses (because checking stuff
@@ -243,11 +239,14 @@ catch up & watch at their leisure.
 
 ### Q&A and discussion {#discord}
 
-YouTube is great for one-way one-to-many broadcasting, but not so great for
-two-way communication, and especially not many-to-many interaction & discussion.
-Instead, ACMC2020 went all in on text-based chat using
-[Discord](https://discord.com/) (we created our own ACMC2020 Discord server and
-sent an invite link to all conference participants).
+ACMC2020 went all in on text-based chat using [Discord](https://discord.com/)
+(we created our own ACMC2020 Discord server and sent an invite link to all
+conference participants). YouTube is great for one-way one-to-many broadcasting,
+but not so great for two-way communication, and especially not many-to-many
+interaction & discussion. And having all the discussion for the whole conference
+(with the ability to `@mention` participants across sessions) in one place
+helped with the feeling that this was a single event, rather than just a series
+of disconnected YouTube videos.
 
 ![ACMC Discord channel screenshot]({% link assets/images/posts/acmc-discord-screenshot.png %})
 
