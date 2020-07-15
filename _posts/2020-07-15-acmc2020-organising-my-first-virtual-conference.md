@@ -1,5 +1,5 @@
 ---
-title: 'ACMC2020: organising my first virtual conference'
+title: 'ACMC2020: tools for organising a virtual conference'
 tags: web
 ---
 
