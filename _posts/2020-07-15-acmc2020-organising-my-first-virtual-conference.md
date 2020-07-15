@@ -27,12 +27,17 @@ well as feedback from the ACMC community during the conference.
     well, it's actually pretty common that I'm quiet for a few weeks, so I
     guess it's business as usual
 
+
 ## Tools for running an online conference in 2020
 
-There are lots of people all around the world organising virtual conferences
-right now, so here's a list of the tools that we chose to put it all together
-and the rationale behind those decisions. Even if you're optimising for
-different criteria, writing down what we did and the (initial) reflections
+This post isn't about the success (or otherwise) of ACMC2020 as an inclusive,
+affirming computer music conference. That post is in the works, but this isn't
+it.
+
+Instead, this post is a list of all the tools that we chose to use to put it all
+together, and the rationale behind those decisions. There are lots of people all
+around the world organising virtual conferences right now, so hopefully writing
+down our experiences is helpful.
 
 {% include toc.html %}
 
@@ -159,8 +164,9 @@ concatenated the videos to produce a single video per session, with consistent
 Each session video was uploaded to YouTube, and scheduled for "simultaneous
 viewing" at the scheduled time using the [YouTube
 Premiere](https://support.google.com/youtube/answer/9080341?hl=en) feature.
-After the Premiere, the videos were (still are) left up for people to catch up &
-watch at their leisure.
+After the Premiere, the videos were (still are) left up on the [ACMC
+YouTube](https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw) for people to
+catch up & watch at their leisure.
 
 ![ACMC YouTube channel screenshot]({% link assets/images/posts/acmc-youtube-screenshot.png %})
 
@@ -176,7 +182,7 @@ watch at their leisure.
   but still watch it all-together allows for synchronous discussion and q&a
   amongst attendees
 
-- when the Premiere is done, you don't have to "put the videos online for those
+- when the premiere is done, you don't have to "put the videos online for those
   who missed them"; they're already there (which is _so much easier_ than having
   to make talk recordings, edit them together, and then upload them somewhere)
 
@@ -187,11 +193,12 @@ watch at their leisure.
 - it's hard to know what sort of viewership counts as "successful", but the ACMC
   conference videos (in total) are currently at 2.2k views and ~500h watch time
 
-- `ffmpeg` is _amazing_ for dealing with all the weird audio/video formats that
-  presenters will send you, however until you grok that each `ffmpeg` run is
-  actually setting up a graph of audio & video sinks, sources & filters you're
-  doomed to copy-paste stuff from StackOverflow and then stare in bewilderment
-  at cryptic error messages
+- in terms of wranging the videos pre-upload, [`ffmpeg`](https://ffmpeg.org/) is
+  _amazing_ for dealing with all the weird audio/video formats that presenters
+  will send you, however until you grok that each `ffmpeg` run is actually
+  setting up a graph of audio & video sinks, sources & filters you're doomed to
+  copy-paste stuff from StackOverflow and then stare in bewilderment at cryptic
+  error messages (trust me... I learned this the hard way 😢)
   
 - not all presenters[^acmc-presenters] at an academic conference have the skills
   (or the inclination) to create an engaging video of their work, so depending
@@ -230,10 +237,9 @@ and sent an invite link to all conference participants).
 
 - [Slack](https://slack.com/) would have probably worked similarly well to
   Discord, but we liked the fact that Discord makes it easy to jump into an
-  "audio" chat channel was useful for the keynote q&a sessions where the session
-  chair could collate the questions from the text chat during the keynote, but
-  the speaker could respond using audio rather than having to type out their
-  answers
+  "audio" chat---this was particularly useful for the keynote q&a sessions where
+  the session chair could collate the questions from the text chat, but the
+  speaker could respond using audio rather than having to type out their answers
 
 ### Going to the pub after the session
 
