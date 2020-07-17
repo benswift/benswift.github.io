@@ -19,7 +19,9 @@ to see how I set it all up.
 Everything was working swimmingly, until a recent patch version update to mbsync
 (1.3.1 -> 1.3.2) broke things. All of a sudden, I started getting errors like:
 
-    Maildir error: found subfolder 'INBOX/Sent Items', but store 'fastmail-local' does not specify SubFolders style
+```text
+Maildir error: found subfolder 'INBOX/Sent Items', but store 'fastmail-local' does not specify SubFolders style
+```
 
 There was no mention of a breaking change relating to `SubFolders` style in the
 [v1.3.2 release
@@ -62,7 +64,7 @@ following elisp snippet handy. It does some cool tricks with the
 `mu4e~get-mail-process-filter` so that the "in-progress" output from mu, which
 looks like this:
 
-```
+```text
 C: 1/1  B: 0/0  M: +0/0 *0/0 #0/0  S: +0/0 *0/0 #0/0
 ```
 
