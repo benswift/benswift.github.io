@@ -72,22 +72,22 @@ gets pretty colours in your `*mu4e-update*` buffer. It's purely cosmetic, but I
 care about that stuff, and you (maybe?) should too. Anyway, here's the relevant
 elisp to put in your Emacs init file.
 
-```elisp
+```scheme
 (defun mu4e-pretty-mbsync-process-filter (proc msg)
-(ignore-errors
-  (with-current-buffer (process-buffer proc)
-    (let ((inhibit-read-only t))
-      (delete-region (point-min) (point-max))
-      (insert (car (reverse (split-string msg "\r"))))
-      (when (re-search-backward "\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)")
-        (add-face-text-property
-         (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
-        (add-face-text-property
-         (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
-        (add-face-text-property
-         (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
-        (add-face-text-property
-         (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
+  (ignore-errors
+    (with-current-buffer (process-buffer proc)
+      (let ((inhibit-read-only t))
+        (delete-region (point-min) (point-max))
+        (insert (car (reverse (split-string msg "\r"))))
+        (when (re-search-backward "\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)")
+          (add-face-text-property
+           (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
+          (add-face-text-property
+           (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
+          (add-face-text-property
+           (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
+          (add-face-text-property
+           (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
 
 (advice-add
  'mu4e~get-mail-process-filter
