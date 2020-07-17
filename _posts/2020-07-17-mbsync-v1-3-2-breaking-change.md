@@ -54,3 +54,40 @@ I'm just [doing it wrong](https://knowyourmeme.com/memes/youre-doing-it-wrong).
 But I hope that this is helpful for anyone who runs into the same issue, because
 having your email break is _super_ frustrating; email is such a crucial part of
 my (and everyone's) job, so it just needs to work.
+
+### Bonus: pretty mu4e mbsync filter
+
+If you are using the same mu & mbsync combo for email, then you might find the
+following elisp snippet handy. It does some cool tricks with the
+`mu4e~get-mail-process-filter` so that the "in-progress" output from mu, which
+looks like this:
+
+```
+C: 1/1  B: 0/0  M: +0/0 *0/0 #0/0  S: +0/0 *0/0 #0/0
+```
+
+gets pretty colours in your `*mu4e-update*` buffer. It's purely cosmetic, but I
+care about that stuff, and you (maybe?) should too. Anyway, here's the relevant
+elisp to put in your Emacs init file.
+
+```elisp
+(defun mu4e-pretty-mbsync-process-filter (proc msg)
+(ignore-errors
+  (with-current-buffer (process-buffer proc)
+    (let ((inhibit-read-only t))
+      (delete-region (point-min) (point-max))
+      (insert (car (reverse (split-string msg "\r"))))
+      (when (re-search-backward "\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)")
+        (add-face-text-property
+         (match-beginning 1) (match-end 1) 'font-lock-keyword-face)
+        (add-face-text-property
+         (match-beginning 2) (match-end 2) 'font-lock-function-name-face)
+        (add-face-text-property
+         (match-beginning 3) (match-end 3) 'font-lock-builtin-face)
+        (add-face-text-property
+         (match-beginning 4) (match-end 4) 'font-lock-type-face))))))
+
+(advice-add
+ 'mu4e~get-mail-process-filter
+ :override #'mu4e-pretty-mbsync-process-filter)
+```
