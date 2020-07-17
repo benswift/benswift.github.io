@@ -1,5 +1,5 @@
 ---
-title: mbsync v1.3.2 breaks Maildir for fastmail
+title: "mbsync v1.3.2 breaking change: `SubFolders` config required"
 tags: tools emacs
 ---
 
@@ -12,9 +12,9 @@ team.
 Anyway, mu doesn't care how you get your email onto your machine (i.e. into your
 `~/Maildir`), and so for that task I use
 [isync/mbsync](http://isync.sourceforge.net/mbsync.html) to download my mail
-(via IMAP) from [fastmail](https://www.fastmail.com/). My fastmail [config
-is](https://github.com/benswift/.dotfiles/blob/master/mbsyncrc) if you want to
-see how I set it all up.
+(via IMAP) from [fastmail](https://www.fastmail.com/). My fastmail [config is
+online](https://github.com/benswift/.dotfiles/blob/master/mbsyncrc) if you want
+to see how I set it all up.
 
 Everything was working swimmingly, until a recent patch version update to mbsync
 (1.3.1 -> 1.3.2) broke things. All of a sudden, I started getting errors like:
@@ -48,3 +48,9 @@ the manual with `man mbsync` revealed this info:
 
 By setting `SubFolders Verbatim` in my `.mbsyncrc` things started working again.
 Hooray!
+
+Of course, it might be the case that this was all documented somewhere, or that
+I'm just [doing it wrong](https://knowyourmeme.com/memes/youre-doing-it-wrong).
+But I hope that this is helpful for anyone who runs into the same issue, because
+having your email break is _super_ frustrating; email is such a crucial part of
+my (and everyone's) job, so it just needs to work.
