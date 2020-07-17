@@ -1,6 +1,6 @@
 ---
 title: 'ACMC2020: tools for organising a virtual conference'
-tags: web
+tags: web tools
 ---
 
 I've been a bit quiet on this blog for the last few weeks[^weeks] because I've
