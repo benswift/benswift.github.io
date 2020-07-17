@@ -17,11 +17,9 @@ online](https://github.com/benswift/.dotfiles/blob/master/mbsyncrc) if you want
 to see how I set it all up.
 
 Everything was working swimmingly, until a recent patch version update to mbsync
-(1.3.1 -> 1.3.2) broke things. All of a sudden, I started getting errors like:
-
-```text
-Maildir error: found subfolder 'INBOX/Sent Items', but store 'fastmail-local' does not specify SubFolders style
-```
+(1.3.1 -> 1.3.2) broke things. All of a sudden, I started getting errors saying
+_Maildir error: found subfolder 'INBOX/Sent Items', but store 'fastmail-local'
+does not specify SubFolders style_
 
 There was no mention of a breaking change relating to `SubFolders` style in the
 [v1.3.2 release
