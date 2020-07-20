@@ -16,6 +16,8 @@ layout: page
   {{ post.excerpt | markdownify }}
   {% endif %}
 
+  <p><a href="{{ post.url | prepend: site.baseurl }}">read more...</a></p>
+
 </section>
 {% endfor %}
 
