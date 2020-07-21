@@ -17,18 +17,12 @@ National University in Canberra, Australia, where I lead the
 studio](https://cs.anu.edu.au/code-creativity-culture/). The **c/c/c studio** is
 a research group which exists to open up spaces for discussion about the way
 that `code` is shaping flows of information/culture/humanity in today's (and
-tomorrow's) world. You can read more at the [c/c/c studio
-website](https://cs.anu.edu.au/code-creativity-culture/).
+tomorrow's) world.
 
-This is my homepage & [blog]({% link blog.md %}), where I can
-wax lyrical about my [research]({% link research.md
-%})/[creative practice]({% link livecoding.md %}),
-[teaching]({% link teaching.md %}), and the [thoughts in my
-head]({% link blog.md %}). You can navigate to the main areas
-([blog]({% link blog.md %}), [research]({%
-link research.md %}), etc.) using the navbar at the top of the page (and there
-are a few external links as well).
+I care a lot about making computing a welcoming, interesting and creatively
+satisfying place, especially for people who don't fit the traditional picture of
+a "computer scientist"---diversity & inclusion _matters_.
 
 If you'd like to get in touch---and please do!---the best options are
-[twitter](https://twitter.com/benswift) or emailing me at
+[twitter](https://twitter.com/benswift) (DMs open) or emailing me at
 <mailto:ben.swift@anu.edu.au>.
