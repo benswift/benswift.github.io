@@ -3,7 +3,6 @@ title: Curriculum vitae
 layout: page
 permalink: /cv/
 anchorjs-selector: "article > h2, article > h3, .pubitem"
-pandoc_handout: assets/templates/cv-template.tex
 hidden: true
 ---
 
