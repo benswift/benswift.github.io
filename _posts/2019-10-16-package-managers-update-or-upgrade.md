@@ -1,5 +1,5 @@
 ---
-title: 'Package managers: <code>update</code> or <code>upgrade</code>?'
+title: 'Package managers: `update` or `upgrade`?'
 tags: tools ux
 ---
 
