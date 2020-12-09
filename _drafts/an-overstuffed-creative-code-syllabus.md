@@ -34,10 +34,14 @@ Guide](http://amzn.to/2oS1Bx1)
   Communication](https://www.amazon.com/dp/1472578309/)
   
 - _Pearson_, [Generative
-  Art](http://www.amazon.com/gp/product/1935182625?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1935182625)
+  Art](http://www.amazon.com/gp/product/1935182625/)
 
 - _Nyhoff & Nyhoff_, [Processing: An Introduction to
   Programming](https://www.routledge.com/Processing-An-Introduction-to-Programming/Nyhoff-Nyhoff/p/book/9781482255959)
+
+- _Guzdial & Erickson_, [Introduction to Computing and Programming in Python,
+  Global
+  Edition](https://www.amazon.com/Introduction-Computing-Programming-Python-Global/dp/1292109866/)
 
 ### music
 
@@ -52,3 +56,6 @@ Guide](http://amzn.to/2oS1Bx1)
 
 - [Cambridge Companion to Electronic
   Music](https://www-cambridge-org.virtual.anu.edu.au/core/books/cambridge-companion-to-electronic-music/51F366EA55DAE2CBCCB191E2D8349C9F)
+
+- _mehackit_, [Creative programming workshop with Sonic
+  Pi](https://sonic-pi.mehackit.org)
