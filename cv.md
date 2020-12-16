@@ -25,11 +25,11 @@ hidden: true
 
 ### Appointments
 
-- **2018--** Senior Lecturer (Level C), _ANU Research School of Computer Science_
+- **2018--** Senior Lecturer (Level C), _ANU School of Computing_
 
 - **2016--** Visiting Scientist, _CSIRO/Data61_
 
-- **2017--2018** Lecturer (Level B), _ANU Research School of Computer Science_
+- **2017--2018** Lecturer (Level B), _ANU School of Computing_
 
 - **2013--2016** Postdoctoral Research Fellow (Level B), _ANU Research School of
   Computer Science_
@@ -172,8 +172,8 @@ I have also written and delivered the following courses:
   Brown) charged with creating a digital artifact/resource to commemorate the
   ANU's 75th anniversary in 2021.
 
-- From **2015--2019** I was the RSCS Student Experience convenor (UG)---the
-  first ever appointment to this role within RSCS. In this role I worked on
-  improving the experience of our students, especially those who may fall
+- From **2015--2019** I was the School of Computing's Student Experience
+  convenor (UG)---the first ever appointment to this role. In this role I worked
+  on improving the experience of our students, especially those who may fall
   through the cracks of the other support structures in place within the
   college.

@@ -1,8 +1,7 @@
 I am an internationally-recognised interdisciplinary
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ) and new media
-artist. I am a Senior Lecturer in the Research School of Computer Science at the
-[Australian National
-University](https://cecs.anu.edu.au/people/ben-swift)---Australia's
+artist. I am a Senior Lecturer in the School of Computing at the [Australian
+National University](https://cecs.anu.edu.au/people/ben-swift)---Australia's
 [top-ranked](https://services.anu.edu.au/planning-governance/performance-measurement/world-rankings)
 (#24 QS world ranking 2018/2019). My expertise spans computational art & music,
 data visualisation, human-computer interaction, AI/machine learning, and user
