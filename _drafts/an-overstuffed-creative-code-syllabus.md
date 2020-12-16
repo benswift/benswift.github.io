@@ -48,6 +48,8 @@ Guide](http://amzn.to/2oS1Bx1)
 - _Collins_, [Introduction to Computer
   Music](https://www.wiley.com/en-au/Introduction+to+Computer+Music-p-9780470714553https://composerprogrammer.com/introcompmusic.html)
   (also [this](https://composerprogrammer.com/introcompmusic.html))
+ 
+- _Freeman et. al._, [EarSketch teachers page](https://www.teachers.earsketch.org)
 
 - _Kreidler_, [Programming Electronic Music in Pd](http://pd-tutorial.com)
 
