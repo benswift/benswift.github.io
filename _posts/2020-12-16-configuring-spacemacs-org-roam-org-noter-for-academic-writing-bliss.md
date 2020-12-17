@@ -65,8 +65,10 @@ or even in `spacemacs/user-config` as well---this is just how I did it).
 (bibtex
  :variables
  bibtex-completion-bibliography (expand-file-name "~/Documents/org/zotero.bib")
- org-ref-default-bibliography (list bibtex-completion-bibliography) ;; *must* be a list
- org-ref-get-pdf-filename-function #'org-ref-get-pdf-filename-helm-bibtex)
+ bibtex-completion-pdf-field "file"
+ ;; org-ref stuff (but used by bibtex layer)
+ org-ref-default-bibliography (list bibtex-completion-bibliography)
+ org-ref-get-pdf-filename-function 'org-ref-get-pdf-filename-helm-bibtex)
 
 (org
  :variables
@@ -77,6 +79,13 @@ or even in `spacemacs/user-config` as well---this is just how I did it).
  org-roam-directory (concat org-directory "/roam")
  org-roam-db-location (concat org-roam-directory "/db/org-roam.db"))
 ```
+
+{:.hl-para}
+
+Note: those first two config variables (the `bibtex-completion-*` ones) weren't
+listed in the blog posts I found, but seemed to be necessary to get
+[helm-bibtex](https://github.com/tmalsburg/helm-bibtex) to find my master
+reference file.
 
 Finally, since org-roam-bibtex, org-noter and org-noter-pdftools aren't
 Spacemacs layers (they're just additional packages) you need to provide some
