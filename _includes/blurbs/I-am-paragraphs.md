@@ -3,8 +3,8 @@ I am an internationally-recognised interdisciplinary
 artist. I am a Senior Lecturer in the School of Computing at the [Australian
 National University](https://cecs.anu.edu.au/people/ben-swift)---Australia's
 [top-ranked](https://services.anu.edu.au/planning-governance/performance-measurement/world-rankings)
-(#24 QS world ranking 2018/2019). My expertise spans computational art & music,
-data visualisation, human-computer interaction, AI/machine learning, and user
+(#24 QS world ranking 2018/2019). I'm an expert in computational art & music,
+data vis/data science, human-computer interaction, AI/machine learning, and user
 experience (UX) design.
 
 I am the founder and director of the [code/creativity/culture (c/c/c)
