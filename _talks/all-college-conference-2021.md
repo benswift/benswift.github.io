@@ -1,24 +1,23 @@
 ---
-event: Reimagine CoDesign Culture Lab
-title: c/c/c studio curriculum design
-subtitle: Reimagine CoDesign Culture Lab
-date: "2019-11-28"
-permalink: /talks/ccc-studio-workshop/
+event: All College Conference
+title: Creative Computing (ANU Extension)
+subtitle: making art & music with code
+date: "2021-01-28"
+permalink: /talks/all-college-conference-2021/
 summary: >-
-  a half-day workshop at the 2019 CECS Reimagine CoDesign Culture Lab
+  a workshop at the [ACT Colleges Conference 2021: Beyond Content!](https://sites.google.com/a/ed.act.edu.au/all-colleges-conference/colleges-conference-16-2021) conference
 ---
-{% include slides/title.html %}
 
-<script src='{{ "/assets/js/TweenMax.min.js" | relative_url }}' type="text/javascript"></script>
-<script src='{{ "/assets/js/Winwheel.js" | relative_url }}' type="text/javascript"></script>
-<script src='{{ "/assets/js/ccc-workshop-wheels.js" | relative_url }}' type="text/javascript"></script>
+{% include slides/title.html %}
 
 {% include slides/background-image.html image="images/talks/all/mount-majura-bushland.jpg" %}
 
 We acknowledge and celebrate the First Australians on whose traditional lands we
 meet, and pay our respect to the elders past, present and emerging
 
-{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/blog-post-url-qr-code.png" bgsize="contain" bgcol="black" %}
+## today's schedule
+
+{% include qartjs.html data="https://example.com" %}
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/CoDCL-5948.jpg" heading="welcome" bgsize="contain" bgcol="black" %}
 
@@ -92,93 +91,6 @@ including:
 
 there are lots of details on the workshop content page
 
----
-
-<style>
-.wheelIndicator {
-  font-size:2em;
-  text-align:center;
-}
-
-.wheelResult {
-  font-size:1.3em;
-  background-color: #f5ddfa;
-  border-left: 10px solid #be2edd;
-  padding: 1em 1em;
-  margin: 0;
-}
-</style>
-
-<p class="wheelResult">
-
-<em>objective</em>: learning about <strong><span
-class="codeWheel-canvas-result">________</span></strong> by exploring
-<strong><span class="cultureWheel-canvas-result">________</span></strong>
-through <strong><span
-class="creativityWheel-canvas-result">________</span></strong>
-
-</p>
-
-<div style="width:100%; display:flex; justify-content:space-between;">
-<div class="wheelIndicator">⧨<div id="codeWheel-canvas"></div></div>
-<div class="wheelIndicator">⧨<div id="cultureWheel-canvas"></div></div>
-<div class="wheelIndicator">⧨<div id="creativityWheel-canvas"></div></div>
-</div>
-
-<script>
-let container = document.getElementsByClassName("slides")[0];
-let wheelWidth = parseFloat(window.getComputedStyle(container).width)/7;
-
-let codeWheel = makeWheel(
-  [
-	"algorithms",
-	"embedded systems",
-	"signal processing",
-	"software design",
-	"databases",
-	"networks",
-	"UI/UX design",
-	"data analytics",
-	"machine learning",
-	"cybersecurity"
-  ],
-  "codeWheel-canvas",
-  wheelWidth);
-
-let creativityWheel = makeWheel(
-  [
-	"music",
-	"sound",
-	"dance",
-	"photography",
-	"painting",
-	"drawing",
-	"textiles",
-	"film",
-	"sculpture",
-	"creative writing",
-	"memes",
-  ],
-  "creativityWheel-canvas",
-  wheelWidth);
-
-let cultureWheel = makeWheel(
-  [
-	"privacy",
-	"ethics",
-	"wealth distribution",
-	"climate change",
-	"work-life balance",
-	"social media use",
-	"immigration",
-	"tolerance",
-	"food security",
-	"world peace"
-  ],
-  "cultureWheel-canvas",
-  wheelWidth);
-</script>
-
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/shapelined-qawemGipVPk-unsplash.jpg" heading="workshop goals" %}
 
 **think**: how do we inspire & motivate _everyone_ to make, and in doing so, to learn?
@@ -189,5 +101,5 @@ let cultureWheel = makeWheel(
 
 {% include slides/impact.html %}
 
-[let's go!]({% link
-_posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-formation)
+[let's go!]({% link _posts/2019-11-07-codesign-culture-lab-workshop.md
+%}#group-formation)
