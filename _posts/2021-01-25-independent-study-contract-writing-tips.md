@@ -1,5 +1,6 @@
 ---
 title: Independent Study Contract writing tips
+tags: teaching
 ---
 
 Many students here at the ANU School of Computing take a capstone project at the
