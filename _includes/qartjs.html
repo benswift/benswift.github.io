@@ -1,0 +1,9 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/qartjs/1.0.2/qart.min.js"></script>
+<div id="qart" class="stretch"></div>
+<script>
+ new QArt({
+  value: '{{ include.data }}',
+  imagePath: '{{ site.baseurl}}/assets/images/livecoding/are-you-not-entertained.jpg',
+  size: (window.innerWidth*0.75 )
+ }).make(document.getElementById('qart'));
+</script>
