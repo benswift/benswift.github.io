@@ -32,25 +32,34 @@ research, and something which you should be able to point to at the end and say
 
 ### Project Description
 
+- this is kindof a marketing exercise: you're trying to "sell" your project to
+  an interested observer, so make it seem interesting---give it a "hook"
+
 - length: one or two paragraphs (it should fit in the space on the form), and
   should be understandable by one of your classmates
+
 - don't write it out by hand straight on to the form; this is the sort of thing
   you want to have a few drafts at (including getting feedback from your supervisor)
+
 - don't _just_ say vague stuff like "explore various techniques for..." or
   "investigate different approaches to..."; if you're gonna do that you need to
   also have something about what you're trying to find with your
   explorations/investigations, and how you'll measure whether you',re successful
+
 - if you're going to create something (e.g. a piece of software, a user study)
   then mention it in the project description
 
 ### Learning Outcomes
 
 - how many? you probably want 3 (±1)
+
 - the "standard" way to frame learning outcomes is to write them as
   continuations of the sentence: "at the end of this project, the student will
   be able to..."
+
 - think about what you'd like to be able to do once you've completed the project
   and work backwards from there
+
 - the Learning & Teaching centre at Adelaide Uni has some [good tips on
   writing](https://www.adelaide.edu.au/learning/resources-for-educators/curriculum-resources/learning-outcomes/writing-learning-outcomes#application-of-learning-outcomes)
 
