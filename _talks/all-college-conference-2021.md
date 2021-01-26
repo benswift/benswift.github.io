@@ -17,8 +17,6 @@ meet, and pay our respect to the elders past, present and emerging
 
 ## today's schedule
 
-{% include qartjs.html data="https://example.com" %}
-
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/CoDCL-5948.jpg" heading="welcome" bgsize="contain" bgcol="black" %}
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/vikas-anand-dev-iMmlx_fCeWc-unsplash.jpg" heading="c/c/c untangled(?)" %}
