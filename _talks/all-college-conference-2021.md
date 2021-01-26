@@ -16,8 +16,6 @@ hidden: true
 We acknowledge and celebrate the First Australians on whose traditional lands we
 meet, and pay our respect to the elders past, present and emerging
 
----
-
 {% include qrcode.html data="https://example.com" %}
 
 ## today's schedule
