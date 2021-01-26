@@ -1,4 +1,4 @@
-<section>
+<section class="center">
 <script src='{{ "/assets/js/qrcode.min.js"| relative_url }}'></script>
 <div id="qrcode"></div>
 <script type="text/javascript">
@@ -12,6 +12,6 @@
              colorLight : "#fafafa",
              correctLevel : QRCode.CorrectLevel.H});
  // hacky page centering
- document.querySelector("#qrcode > img").style.margin = "5vh auto 0 auto";
+ document.querySelector("#qrcode > img").style.margin = "0 auto";
 </script>
 </section>
