@@ -16,7 +16,7 @@ hidden: true
 We acknowledge and celebrate the First Australians on whose traditional lands we
 meet, and pay our respect to the elders past, present and emerging
 
-{% include qrcode.html data="https://example.com" %}
+{% include qrcode.html data="https://benswift.me/talks/all-college-conference-2021/" %}
 
 ## today's schedule
 
