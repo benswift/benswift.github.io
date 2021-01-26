@@ -1,12 +1,17 @@
+<section>
 <script src='{{ "/assets/js/qrcode.min.js"| relative_url }}'></script>
 <div id="qrcode"></div>
 <script type="text/javascript">
- let qrsize = Math.min(window.innerWidth, window.innerHeight) * 0.75;
- new QRCode(document.getElementById("qrcode"),
+ let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.75;
+ let qrDiv = document.getElementById("qrcode");
+ new QRCode(qrDiv,
             {text: "{{ include.data }}",
-             width: qrsize,
-             height: qrsize,
+             width: qrSize,
+             height: qrSize,
              colorDark : "#333",
              colorLight : "#fafafa",
              correctLevel : QRCode.CorrectLevel.H});
+ // hacky page centering
+ document.querySelector("#qrcode > img").style.margin = "5vh auto 0 auto";
 </script>
+</section>
