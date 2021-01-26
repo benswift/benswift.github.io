@@ -1,0 +1,12 @@
+<script src='{{ "/assets/js/qrcode.min.js"| relative_url }}'></script>
+<div id="qrcode"></div>
+<script type="text/javascript">
+ let qrsize = Math.min(window.innerWidth, window.innerHeight) * 0.75;
+ new QRCode(document.getElementById("qrcode"),
+            {text: "{{ include.data }}",
+             width: qrsize,
+             height: qrsize,
+             colorDark : "#333",
+             colorLight : "#fafafa",
+             correctLevel : QRCode.CorrectLevel.H});
+</script>

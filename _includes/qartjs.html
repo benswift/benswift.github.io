@@ -1,9 +1,0 @@
-<script src='{{ "/assets/js/qart.min.js"| relative_url }}'></script>
-<div id="qart"></div>
-<script>
- new QArt({
-   value: '{{ include.data }}',
-   imagePath: '{{ site.baseurl}}/assets/images/livecoding/are-you-not-entertained.jpg',
-   size: Math.min(window.innerWidth, window.innerHeight) * 0.75
- }).make(document.getElementById('qart'));
-</script>

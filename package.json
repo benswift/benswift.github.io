@@ -20,8 +20,5 @@
   "devDependencies": {
     "browserify": "^16",
     "prettier": "^2"
-  },
-  "dependencies": {
-    "qartjs": "^1.2.0"
   }
 }
