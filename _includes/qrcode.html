@@ -1,11 +1,15 @@
+{% assign text = include.text %}
 <section class="center">
 <script src='{{ "/assets/js/qrcode.min.js"| relative_url }}'></script>
 <div id="qrcode"></div>
+{%- if include.showlink -%}
+<p style="text-align: center;"><a href="{{ text }}">{{ text }}</a></p>
+{%- endif -%}
 <script type="text/javascript">
- let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.75;
+ let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
  let qrDiv = document.getElementById("qrcode");
  new QRCode(qrDiv,
-            {text: "{{ include.data }}",
+            {text: "{{ include.text }}",
              width: qrSize,
              height: qrSize,
              colorDark : "#333",

@@ -15,7 +15,7 @@ summary: >-
 We acknowledge and celebrate the First Australians on whose traditional lands we
 meet, and pay our respect to the elders past, present and emerging
 
-{% include qrcode.html data="https://benswift.me/talks/all-college-conference-2021/" %}
+{% include qrcode.html text="https://benswift.me/talks/all-college-conference-2021/" showlink=true %}
 
 {% include slides/background-image.html image="images/posts/comp1720-mp-exhibition-2018-2.jpg" heading="Creative Computing" %}
 
