@@ -14,18 +14,24 @@ summary: >-
 
 {% include qrcode.html text="https://benswift.me/talks/all-college-conference-2021/" showlink=true %}
 
-{% include slides/background-image.html image="images/posts/comp1720-mp-exhibition-2018-2.jpg" heading="Creative Computing" %}
+{% include slides/background-image.html image="images/posts/comp1720-mp-exhibition-2018-2.jpg" heading="ANUEXT Creative Computing" %}
 
 <https://cs.anu.edu.au/code-creativity-culture/creative-computing/>
 
-an [ANU Extension](https://cs.anu.edu.au/code-creativity-culture/) program to
-teach computer science to year 11 & 12 students through making art, music and
+an [ANU Extension](https://cs.anu.edu.au/code-creativity-culture/) H-Course for
+teaching computer science to year 11 & 12 students through making art, music and
 other cool things with computers
 
 first student intake this year (applications close Feb 14), first graduates in
 2022
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="creative computing: definition" bgsize="contain" bgcol="#222" %}
+
+{% include slides/background-image.html image="images/talks/all-college-conference/jess-bailey-Bg14l3hSAsA-unsplash.jpg" %}
+
+{:style="font-size:2em;"}
+
+the creative arts aren't a way _out_ of computing, they're a way _in_
 
 <!-- {% include slides/image-credit.html artist="US Supreme Court Justice Potter Stewart" year="1976" materials="official portrait" %} -->
 
@@ -54,12 +60,12 @@ make a **lesson plan** for exploring a computing concept through creative code
 | **11:00** | intro & group formation    |
 | **11:15** | lesson design task         |
 | **12:00** | presentations & discussion |
-| **12:30** | lunch                      |
+| **12:30** | lunch 🍣🍔😋               |
 
 ## creative computing environments
 
-there are lots, but let's focus on these two browser-based (i.e. js) creative
-computing environments:
+there are lots, but today we'll focus on these two browser-based (i.e. js)
+creative computing environments:
 
 - **p5.js**: <https://p5js.org/> for visuals (using the [web
   editor](https://editor.p5js.org))
@@ -81,7 +87,7 @@ from the c/c/c studio
 
 a 2min presentation/demo of your lesson to the rest of this workshop
 
-for scoping, ask yourself: 
+for scoping, ask yourself:
 
 > what are the _minimal_ notes I'd give to a teacher (that I _like_) 30min
 > before having to deliver this lesson to a College IT class?
@@ -92,12 +98,12 @@ groups of 2--3
 
 try to find others with similar interests along the music/visuals axis
 
-## presentation questions
+## discussion questions
 
 1. which computing concept did you choose, why did you choose it, and how (if at
    all) did the "creative" aspect impact that decision?
 
-2. what did you ask your students to come up with (convergent, divergent, etc.)
+2. what type of task did you set your students? (convergent, divergent, etc.)
 
 3. how would you assess it---what might the rubric look like?
 
