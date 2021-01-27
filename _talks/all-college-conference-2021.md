@@ -40,7 +40,7 @@ make a **lesson plan** for exploring a computing concept through creative code
 
 </p>
 
-- you get to choose the concept (from e.g. [BSSS
+- you can choose which concept (from e.g. [BSSS
   Frameworks](http://www.bsss.act.edu.au/curriculum/Frameworks), [Australian
   Curriculum](https://www.australiancurriculum.edu.au/f-10-curriculum/technologies/digital-technologies/),
   [CS concept
@@ -56,7 +56,7 @@ make a **lesson plan** for exploring a computing concept through creative code
 
 | **11:00** | intro & group formation    |
 | **11:15** | lesson design task         |
-| **12:10** | presentations & discussion |
+| **12:00** | presentations & discussion |
 | **12:30** | lunch                      |
 
 ## creative computing environments
@@ -86,8 +86,8 @@ a 2min presentation/demo of your lesson to the rest of this workshop
 
 for scoping, ask yourself: 
 
-> what are the _minimal_ notes I'd give to a teacher (that I _like_) five
-> minutes before having to deliver this lesson to a College IT class?
+> what are the _minimal_ notes I'd give to a teacher (that I _like_) 30min
+> before having to deliver this lesson to a College IT class?
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/joeri-romer-Xne1N4yZuOY-unsplash.jpg" heading="group formation" %}
 
@@ -106,7 +106,7 @@ try to find others with similar interests along the music/visuals axis
 
 4. what scaffolding is required to do this in a College IT context?
 
-(remember, presentations start at 12:10pm)
+(remember, presentations start at 12:00pm)
 
 {% include slides/impact.html %}
 
