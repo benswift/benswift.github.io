@@ -71,6 +71,15 @@ computing environments:
 you're all experienced IT educators, so you can navigate the getting started
 guides, examples, etc.
 
+<p style="font-size:0.6em;" markdown="1">
+
+here are some example workshops
+([p5.js](https://cs.anu.edu.au/hub/workshops/interpretation-and-code-art/),
+[gibber](https://cs.anu.edu.au/code-creativity-culture/workshops/laptop-music/))
+from the c/c/c studio
+
+</p>
+
 ## what's the deliverable?
 
 a 2min presentation/demo of your lesson to the rest of this workshop
@@ -113,13 +122,15 @@ I'm keen to:
 - get the word out about [ANU Extension Creative Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
 - be part of a CoP around creative computing for both students and educators
 
-{% include slides/impact.html %}
+## stay in touch
 
 <ben.swift@anu.edu.au>
 
 <https://benswift.me>
 
 <https://cs.anu.edu.au/code-creativity-culture/creative-computing/>
+
+<p style="font-size: 3em; text-align: center;">👋</p>
 
 ## Bio
 
