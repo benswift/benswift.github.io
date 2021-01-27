@@ -1,6 +1,6 @@
 ---
 event: All College Conference
-title: Creative Computing (ANU Extension)
+title: Creative Computing
 subtitle: making art & music with code
 date: "2021-01-28"
 permalink: /talks/all-college-conference-2021/
