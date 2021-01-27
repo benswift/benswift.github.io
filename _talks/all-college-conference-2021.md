@@ -10,10 +10,7 @@ summary: >-
 
 {% include slides/title.html %}
 
-{% include slides/background-image.html image="images/talks/all/mount-majura-bushland.jpg" %}
-
-We acknowledge and celebrate the First Australians on whose traditional lands we
-meet, and pay our respect to the elders past, present and emerging
+{% include slides/ack-country.html %}
 
 {% include qrcode.html text="https://benswift.me/talks/all-college-conference-2021/" showlink=true %}
 

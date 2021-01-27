@@ -15,7 +15,7 @@ summary: >-
 
 {% include hljs.html %}
 
-{% include slides/background-image.html image="images/talks/u3a-world-since-google/Bushland_on_southern_Mount_Majura.jpg" %}
+{% include slides/ack-country.html %}
 
 ## outline
 

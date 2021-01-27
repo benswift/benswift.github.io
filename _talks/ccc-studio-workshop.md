@@ -13,10 +13,7 @@ summary: >-
 <script src='{{ "/assets/js/Winwheel.js" | relative_url }}' type="text/javascript"></script>
 <script src='{{ "/assets/js/ccc-workshop-wheels.js" | relative_url }}' type="text/javascript"></script>
 
-{% include slides/background-image.html image="images/talks/all/mount-majura-bushland.jpg" %}
-
-We acknowledge and celebrate the First Australians on whose traditional lands we
-meet, and pay our respect to the elders past, present and emerging
+{% include slides/ack-country.html %}
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/blog-post-url-qr-code.png" bgsize="contain" bgcol="black" %}
 
