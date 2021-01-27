@@ -165,6 +165,13 @@
     font-style: normal;
   }
 
+  .hl-para {
+      background-color: lighten($highlight-color, 40%);
+      border-left: 10px solid $highlight-color;
+      padding: 1em 1em;
+      margin: 1em 0;
+  }
+
   table {
     // filthy hacks because tables don't play nice with padding
     width: 100%;

@@ -28,29 +28,41 @@ other cool things with computers
 first student intake this year (applications close Feb 14), first graduates in
 2022
 
+{% include slides/background-image.html image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="creative computing: definition" bgsize="contain" bgcol="#222" %}
+
+<!-- {% include slides/image-credit.html artist="US Supreme Court Justice Potter Stewart" year="1976" materials="official portrait" %} -->
+
 ## today's workshop task
 
-**make a lesson plan for exploring a computing concept through creative code**
+<p class="hl-para" markdown="1">
 
-- using a browser-based creative computing environment
+make a **lesson plan** for exploring a computing concept through creative code
 
-- you get to choose the concept (e.g. BSSS IT Framework, Australian Curriculum,
-  ACM CBoK)
+</p>
 
-- not enough time to make a detailed lesson plan (obvs) but we'll do our best
+- you get to choose the concept (from e.g. [BSSS
+  Frameworks](http://www.bsss.act.edu.au/curriculum/Frameworks), [Australian
+  Curriculum](https://www.australiancurriculum.edu.au/f-10-curriculum/technologies/digital-technologies/),
+  [CS concept
+  inventories](https://scholar.google.com/scholar?q=computer%20science%20concept%20inventory),
+  [ACS
+  CBoK](https://www.acs.org.au/content/dam/acs/acs-documents/The-ACS-Core-Body-of-Knowledge-for-ICT-Professionals-CBOK.pdf),
+  or just a concept you know students often struggle with)
 
-- working in groups, hands on---laptops out!
+- not enough time to make a detailed lesson plan (obvs) but we'll do our
+  best---working in groups, hands on, laptops out!
 
 ## timeline
 
-| **11:00** | intro & group formation |
-| **11:15** | lesson design task      |
-| **12:10** | presentations & wrap-up |
-| **12:30** | lunch                   |
+| **11:00** | intro & group formation    |
+| **11:15** | lesson design task         |
+| **12:10** | presentations & discussion |
+| **12:30** | lunch                      |
 
 ## creative computing environments
 
-there are lots, but let's focus on these two:
+there are lots, but let's focus on these two browser-based (i.e. js) creative
+computing environments:
 
 - **p5.js**: <https://p5js.org/> for visuals (using the [web
   editor](https://editor.p5js.org))
@@ -70,14 +82,20 @@ for scoping, ask yourself:
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/joeri-romer-Xne1N4yZuOY-unsplash.jpg" heading="group formation" %}
 
-## reflection questions
+groups of 2--3
 
-1. what's the computing concept you want students to explore, why did you choose
-   it, and how did the "creative" aspect impact that decision?
+try to find others with similar interests along the music/visuals axis
 
-2. if I were to assess what the students made, what would the rubric look like?
+## presentation questions
 
-3. what scaffolding is required to do this in a College IT context?
+1. which computing concept did you choose, why did you choose it, and how (if at
+   all) did the "creative" aspect impact that decision?
+
+2. what did you ask your students to come up with (convergent, divergent, etc.)
+
+3. how would you assess it---what might the rubric look like?
+
+4. what scaffolding is required to do this in a College IT context?
 
 (remember, presentations start at 12:10pm)
 
@@ -92,15 +110,16 @@ thanks so much for participating
 I'm keen to:
 
 - make contacts
-- get the word out about CC ANUEXT
+- get the word out about [ANU Extension Creative Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
 - be part of a CoP around creative computing for both students and educators
 
 {% include slides/impact.html %}
 
-thanks 😊
-
 <ben.swift@anu.edu.au>
+
 <https://benswift.me>
+
+<https://cs.anu.edu.au/code-creativity-culture/creative-computing/>
 
 ## Bio
 
