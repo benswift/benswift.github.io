@@ -18,9 +18,9 @@ summary: >-
 
 <https://cs.anu.edu.au/code-creativity-culture/creative-computing/>
 
-an [ANU Extension](https://cs.anu.edu.au/code-creativity-culture/) H-Course for
-teaching computer science to year 11 & 12 students through making art, music and
-other cool things with computers
+an [ANU Extension](https://cs.anu.edu.au/code-creativity-culture/) **H-Course**
+for teaching computer science to year 11 & 12 students through making art, music
+and other cool things with computers
 
 first student intake this year (applications close Feb 14), first graduates in
 2022
@@ -108,6 +108,8 @@ try to find others with similar interests along the music/visuals axis
 3. how would you assess it---what might the rubric look like?
 
 4. what scaffolding is required to do this in a College IT context?
+
+5. was it _fun_?
 
 (remember, presentations start at 12:00pm)
 
