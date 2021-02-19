@@ -31,9 +31,21 @@ making **memes**. Here are just a few of the ones which ended up on the allowed
 "cheat sheets" in the final exam.
 
 ![COMP2300 offramp meme]({% link assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg %})
+
+---
+
 ![COMP2300 galaxy brain meme]({% link assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg %})
+
+---
+
 ![COMP2300 Joey from Friends meme]({% link assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg %})
+
+---
+
 ![COMP2300 ObiWan meme]({% link assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg %})
+
+---
+
 ![COMP2300 Anakin Skywalker meme]({% link assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg %})
 
 I don't know where they came from---at least some of them were created
