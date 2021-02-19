@@ -14,8 +14,9 @@ hidden: true
 
 ### Education
 
-- **2012** Ph.D. _ANU Research School of Computer Science_. Thesis title: "The
-  Design of a Smartphone-Based Digital Musical Instrument for Jamming"
+- **2012** Ph.D. _ANU Research School of Computer Science_[^soco-name-change].
+  Thesis title: "The Design of a Smartphone-Based Digital Musical Instrument for
+  Jamming"
 
 - **2007** Bachelor of Science (Honours 1<sup>st</sup> class, mathematics & physics
   major) _Australian National University_
@@ -29,12 +30,16 @@ hidden: true
 
 - **2016--** Visiting Scientist, _CSIRO/Data61_
 
-- **2017--2018** Lecturer (Level B), _ANU School of Computing_
+- **2017--2018** Lecturer (Level B), _ANU Research School of Computer Science_
 
 - **2013--2016** Postdoctoral Research Fellow (Level B), _ANU Research School of
   Computer Science_
 
 - **2012** Postdoctoral Research Fellow, _QUT Institute for Future Environments_
+
+[^soco-name-change]:
+    Note: the _ANU Research School of Computer Science_ changed its name to the
+    _ANU School of Computing_ in 2020.
 
 ## Research {#research}
 
@@ -110,9 +115,8 @@ hidden: true
 ### Current courses
 
 I am currently the course convenor & lecturer for the following two courses in
-the [ANU Research School of Computer
-Science](https://cs.anu.edu.au/courses/comp2300/) (follow links to the
-curriculum, available under
+the [ANU School of Computing](https://cs.anu.edu.au/courses/comp2300/) (follow
+links to the curriculum, available under
 [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)):
 
 - [COMP2710: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/) is a
