@@ -105,6 +105,29 @@ I have also written and delivered the following courses:
   reflecting on the design, security, social and ethical challenges associated
   with the Internet of Things.
 
+## Service
+
+- Since **2016** I have been the academic design lead on the CECS Teaching &
+  Learning Web infrastructure project, which includes the [CECS Jekyll
+  Course](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
+  GitLab](https://gitlab.cecs.anu.edu.au) infrastructure for teaching large
+  courses.
+
+- Since **2018** I have been the alternate CECS representative for the ANU-wide
+  Technology-Enhanced Learning Reference Group (TELRG), which meets regularly to
+  discuss and review issues relating to educational technology systems and
+  technology-enhanced teaching and learning.
+
+- Since **2018** I have been part of an ANU-wide committee (under Prof. Nick
+  Brown) charged with creating a digital artifact/resource to commemorate the
+  ANU's 75th anniversary in 2021.
+
+- From **2015--2019** I was the School of Computing's Student Experience
+  convenor (UG)---the first ever appointment to this role. In this role I worked
+  on improving the experience of our students, especially those who may fall
+  through the cracks of the other support structures in place within the
+  college.
+
 ## Research {#research}
 
 ### Grants {#grants}
@@ -177,26 +200,3 @@ A full list of talks can be found [here]({% link talks.md %}).
 ### Curated/invited livecoding performances
 
 {% bib_list_gigs %}
-
-## Service
-
-- Since **2016** I have been the academic design lead on the CECS Teaching &
-  Learning Web infrastructure project, which includes the [CECS Jekyll
-  Course](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
-  GitLab](https://gitlab.cecs.anu.edu.au) infrastructure for teaching large
-  courses.
-
-- Since **2018** I have been the alternate CECS representative for the ANU-wide
-  Technology-Enhanced Learning Reference Group (TELRG), which meets regularly to
-  discuss and review issues relating to educational technology systems and
-  technology-enhanced teaching and learning.
-  
-- Since **2018** I have been part of an ANU-wide committee (under Prof. Nick
-  Brown) charged with creating a digital artifact/resource to commemorate the
-  ANU's 75th anniversary in 2021.
-
-- From **2015--2019** I was the School of Computing's Student Experience
-  convenor (UG)---the first ever appointment to this role. In this role I worked
-  on improving the experience of our students, especially those who may fall
-  through the cracks of the other support structures in place within the
-  college.
