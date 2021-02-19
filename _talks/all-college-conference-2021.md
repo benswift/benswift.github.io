@@ -5,7 +5,7 @@ subtitle: making art & music with code
 date: "2021-01-28"
 permalink: /talks/all-college-conference-2021/
 summary: >-
-  a workshop at the [ACT Colleges Conference 2021: Beyond Content!](https://sites.google.com/a/ed.act.edu.au/all-colleges-conference/colleges-conference-16-2021) conference
+  an invited workshop at the [ACT Colleges Conference 2021: Beyond Content!](https://sites.google.com/a/ed.act.edu.au/all-colleges-conference/colleges-conference-16-2021) conference
 ---
 
 {% include slides/title.html %}
