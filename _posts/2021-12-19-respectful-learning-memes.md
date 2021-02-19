@@ -55,4 +55,4 @@ channel I'm sure it'll be kept respectful, and all students can benefit. And as
 I teach bigger and more diverse classes, the chance to harness these students'
 brilliance in meme-making (and some of them are _seriously_ good at it) to help
 all my students learn seems like a win. Can't wait to see what they come up with
-:)
+☺
