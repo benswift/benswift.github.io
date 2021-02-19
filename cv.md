@@ -77,15 +77,15 @@ hidden: true
 
 - **2015** _New Colombo Plan: "Internet of Things" Program at Beijing Institute
   of Technology_ ($132k) (this was a joint grant application between ANU,
-  Swinburne and UTS; I was not a named CI, but led the development & delivery of
-  this cross-institution project as [described below](#past-courses))
+  Swinburne and UTS)
 
 ### Prizes & Awards
 
-- **2018** Vice Chancellor's Citation for Outstanding Contribution to Student
-  Learning
+- **2018** [Vice Chancellor's Citation for Outstanding Contribution to
+  Student](https://services.anu.edu.au/education-support/awards-grants/recognising-excellence-vice-chancellors-awards-for-excellence-in)
 
-- **2017** CECS Dean's Award for Excellence in Education
+- **2017** [CECS Dean's Award for Excellence in
+  Education](https://cecs.anu.edu.au/staff/winners-2017-cecs-deans-awards-excellence-education)
 
 - **2012** CECS Dean's Award for Outreach (Science Week outreach project)
 
@@ -160,8 +160,10 @@ I have also written and delivered the following courses:
 ## Service
 
 - Since **2016** I have been the academic design lead on the CECS Teaching &
-  Learning Web infrastructure project, which includes the CECS Jekyll Course
-  Website template and GitLab infrastructure for teaching large courses.
+  Learning Web infrastructure project, which includes the [CECS Jekyll
+  Course](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
+  GitLab](https://gitlab.cecs.anu.edu.au) infrastructure for teaching large
+  courses.
 
 - Since **2018** I have been the alternate CECS representative for the ANU-wide
   Technology-Enhanced Learning Reference Group (TELRG), which meets regularly to
