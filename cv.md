@@ -48,7 +48,7 @@ hidden: true
 (_all dollar amounts in AUD, rounded to nearest thousand dollars_)
 
 - **2020--2022** [_Reimagine Fellowship: the c/c/c studio_]({% link
-  _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) ($560k)
+  _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) ($100k)
 
 - **2019** _The Augmented Web: CSIRO Collaborative Research Project_ with Henry
   Gardner & Charles Martin ($20k)
