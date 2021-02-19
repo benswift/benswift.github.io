@@ -87,7 +87,7 @@ hidden: true
 ### Prizes & Awards
 
 - **2018** [Vice Chancellor's Citation for Outstanding Contribution to
-  Student](https://services.anu.edu.au/education-support/awards-grants/recognising-excellence-vice-chancellors-awards-for-excellence-in)
+  Student Learning](https://services.anu.edu.au/education-support/awards-grants/recognising-excellence-vice-chancellors-awards-for-excellence-in)
 
 - **2017** [CECS Dean's Award for Excellence in
   Education](https://cecs.anu.edu.au/staff/winners-2017-cecs-deans-awards-excellence-education)
