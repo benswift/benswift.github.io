@@ -170,6 +170,10 @@ I have also written and delivered the following courses:
 
 {% bib_list_pubs ben-pubs.bib %}
 
+### Invited talks
+
+A full list of talks can be found [here]({% link talks.md %}).
+
 ### Curated/invited livecoding performances
 
 {% bib_list_gigs %}
