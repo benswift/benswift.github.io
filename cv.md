@@ -65,6 +65,19 @@ links to the curriculum, available under
   and (I hope) have a lot of fun in the process. No previous coding or artistic
   experience is required: COMP1720 teaches everything from the ground up.
 
+- [EXTN1019: ANU Extension Creative
+  Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
+  is a course where ACT Year 11 & 12 students learn the fundamentals of computer
+  programming through the creative process of making music and visual art. As
+  well as creating and performing their own new works of code-based art & music,
+  this course contributes towards the students' ATAR _and_ they receive credit
+  towards an undergraduate computing degree if they choose to study at ANU. As
+  the School of Computing's first ever [ANU
+  Extension](https://extension.anu.edu.au) course, this program attracts
+  fantastic students who might otherwise not study engineering or computer
+  science (either at ANU or elsewhere) and helps them _reimagine_ what it is to
+  be a computer scientist or engineer in the 21st century.
+
 ### Past courses {#past-courses}
 
 I have also written and delivered the following courses:
