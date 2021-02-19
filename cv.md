@@ -10,7 +10,7 @@ hidden: true
 
 {% include blurbs/I-am-paragraphs.md %}
 
-## Qualifications {#qualifications}
+## Qualifications & Appointments {#qualifications}
 
 ### Education
 
@@ -24,7 +24,7 @@ hidden: true
 - **2005** Certificate IV in Music Performance _Canberra Institute of
   Technology_
 
-### Appointments
+### Employment
 
 - **2018--** Senior Lecturer (Level C), _ANU School of Computing_
 
@@ -41,7 +41,32 @@ hidden: true
     Note: the _ANU Research School of Computer Science_ changed its name to the
     _ANU School of Computing_ in 2020.
 
+### Leadership
+
+- **2019--** Vice President, [_Australasian Computer Music
+  Society_](https://computermusic.org.au/committee/)
+
+- **2020** General Chair, [_Australasian Computer Music
+  Conference_](http://acmc2020.com)
+
+- **2017--** ANU School of Computing representative, [_Australian Council of
+  Deans of ICT Learning and Teaching
+  Academy_](https://acdict.edu.au/category/alta/)
+
+- **2016--** Design Lead, [_CECS Teaching & Learning Web
+  infrastructure](#service)
+
 ## Teaching
+
+### Prizes & Awards
+
+- **2018** [Vice Chancellor's Citation for Outstanding Contribution to
+  Student Learning](https://services.anu.edu.au/education-support/awards-grants/recognising-excellence-vice-chancellors-awards-for-excellence-in)
+
+- **2017** [CECS Dean's Award for Excellence in
+  Education](https://cecs.anu.edu.au/staff/winners-2017-cecs-deans-awards-excellence-education)
+
+- **2012** CECS Dean's Award for Outreach (Science Week outreach project)
 
 ### Current courses
 
@@ -105,13 +130,15 @@ I have also written and delivered the following courses:
   reflecting on the design, security, social and ethical challenges associated
   with the Internet of Things.
 
-## Service
+## Service {#service}
 
-- Since **2016** I have been the academic design lead on the CECS Teaching &
-  Learning Web infrastructure project, which includes the [CECS Jekyll
-  Course](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
-  GitLab](https://gitlab.cecs.anu.edu.au) infrastructure for teaching large
-  courses.
+- Since **2016** I have been the design lead on the CECS Teaching & Learning Web
+  infrastructure project, which includes the [CECS Jekyll Course
+  Website](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
+  GitLab](https://gitlab.cecs.anu.edu.au) infrastructure. This project gives
+  CECS academics new levels of control and flexibility in creating and
+  delivering their class content, backed by a modern, industry-standard tech
+  stack.
 
 - Since **2018** I have been the alternate CECS representative for the ANU-wide
   Technology-Enhanced Learning Reference Group (TELRG), which meets regularly to
@@ -170,24 +197,6 @@ I have also written and delivered the following courses:
 - **2015** _New Colombo Plan: "Internet of Things" Program at Beijing Institute
   of Technology_ ($132k) (this was a joint grant application between ANU,
   Swinburne and UTS)
-
-### Prizes & Awards
-
-- **2018** [Vice Chancellor's Citation for Outstanding Contribution to
-  Student Learning](https://services.anu.edu.au/education-support/awards-grants/recognising-excellence-vice-chancellors-awards-for-excellence-in)
-
-- **2017** [CECS Dean's Award for Excellence in
-  Education](https://cecs.anu.edu.au/staff/winners-2017-cecs-deans-awards-excellence-education)
-
-- **2012** CECS Dean's Award for Outreach (Science Week outreach project)
-
-### Leadership
-
-- **2019--** Vice President, [_Australasian Computer Music
-  Society_](https://computermusic.org.au/committee/)
-
-- **2020** General Chair, [_Australasian Computer Music
-  Conference_](http://acmc2020.com)
 
 ### Peer-reviewed publications
 
