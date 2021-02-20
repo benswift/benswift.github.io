@@ -75,7 +75,7 @@ hidden: true
   Academy_](https://acdict.edu.au/category/alta/)
 
 - **2016--** Design Lead, [_CECS Teaching & Learning Web
-  infrastructure](#service)
+  infrastructure_](#service)
 
 ## Teaching
 
