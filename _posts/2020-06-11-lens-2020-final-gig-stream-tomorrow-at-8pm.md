@@ -3,7 +3,7 @@ title: LENS 2020 final gig stream tomorrow at 8pm
 tags: livecoding ccc lens gigs
 ---
 
-![LENS S1 2020 final gig poster]({% link assets/images/posts/lens2020-final-gig-poster.jpg %})
+{% include assets/picture.html file="images/posts/lens2020-final-gig-poster.jpg" alt="LENS S1 2020 final gig poster" %}
 
 If you're stuck at home this Friday night (or if you've got a good mobile data
 package) then you should tune in to see the final gig from the _LENS: ANU Laptop

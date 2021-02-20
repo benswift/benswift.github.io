@@ -30,23 +30,23 @@ concepts they're strugging with in the course. And they're _really_ good at
 making **memes**. Here are just a few of the ones which ended up on the allowed
 "cheat sheets" in the final exam.
 
-![COMP2300 offramp meme]({% link assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg %})
+{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-offramp.jpeg" alt="COMP2300 offramp meme" %}
 
 ---
 
-![COMP2300 galaxy brain meme]({% link assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg %})
+{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg" alt="COMP2300 galaxy brain meme" %}
 
 ---
 
-![COMP2300 Joey from Friends meme]({% link assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg %})
+{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-joey.jpeg" alt="COMP2300 Joey from Friends meme" %}
 
 ---
 
-![COMP2300 ObiWan meme]({% link assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg %})
+{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-obiwan.jpeg" alt="COMP2300 ObiWan meme" %}
 
 ---
 
-![COMP2300 Anakin Skywalker meme]({% link assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg %})
+{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-anakin.jpeg" alt="COMP2300 Anakin Skywalker meme" %}
 
 I don't know where they came from---at least some of them were created
 specifically for COMP2300. But I know from talking to students that they
