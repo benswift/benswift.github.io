@@ -77,12 +77,12 @@ really helped them understand and remember key concepts from the course.
 
 ## Harnessing students as content creators
 
-I'm currently brushing up my course syllabus for the new semester (which starts
-next week as I'm writing this). And I'm sure my students will make new memes for
-(among other things) explaining the course content to each other. But if these
-memes only appear on the "secret" channels then that's not good from a student
-equity perspective. I want to make sure _all_ students benefit, not just the
-ones in the right "hidden" channels.
+I'm currently brushing up my course syllabus for the new semester which starts
+next week. And I'm sure my students will make new memes for (among other things)
+explaining the course content to each other. But if these memes only appear on
+the "secret" channels then that's not good from a student equity perspective. I
+want to make sure _all_ students benefit, not just the ones in the right
+"hidden" channels.
 
 So this year I'm going to include a meme thread as part of the official course
 forum. Since it's an official course communication channel I'm sure it'll be
