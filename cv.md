@@ -130,11 +130,10 @@ I have also written and delivered the following courses:
 
 - [COMP2300: Computer Organisation and Program
   Execution](https://cs.anu.edu.au/courses/comp2300/) is ANU's introductory
-  computer architecture course, which I wrote (with help from [Uwe
-  Zimmer](https://researchers.anu.edu.au/researchers/zimmer-ur)) and delivered
-  from 2017--2018, and is now being delivered by [Charles
-  Martin](http://charlesmartin.com.au/). In this course students take a complex
-  computer system ([the STM32L476G discovery "disco"
+  computer architecture course, which I wrote and delivered from 2017--2018,
+  and is now being delivered by [Uwe
+  Zimmer](https://researchers.anu.edu.au/researchers/zimmer-ur). In this course
+  students take a complex computer system ([the STM32L476G discovery "disco"
   board](http://www.st.com/en/evaluation-tools/32l476gdiscovery.html)) home from
   week 1. That might seem daunting---and it's true that there's more stuff on
   such a board than one can master in one semester---but students can still
