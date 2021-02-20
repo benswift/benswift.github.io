@@ -87,6 +87,10 @@ hidden: true
 - **2017** [CECS Dean's Award for Excellence in
   Education](https://cecs.anu.edu.au/staff/winners-2017-cecs-deans-awards-excellence-education)
 
+- **2012** [Grand Prize
+  winner](https://www.canberratimes.com.au/story/6169425/action-men-save-our-history/),
+  [_GovHack 2012_](https://govhack.org) (including ANU VC commendation)
+
 - **2012** CECS Dean's Award for Outreach (Science Week outreach project)
 
 ### Current courses
