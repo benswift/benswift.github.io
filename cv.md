@@ -225,7 +225,8 @@ I have also written and delivered the following courses:
 
 ### Invited talks
 
-A full list of talks can be found [here]({% link talks.md %}).
+See [https://benswift.me/talks/]({% link talks.md %}) for a full list of invited
+talks.
 
 ### Curated/invited livecoding performances
 
