@@ -49,9 +49,9 @@ hidden: true
 
 - **2018--** Senior Lecturer (Level C), _ANU School of Computing_
 
-- **2016--** Visiting Scientist, _CSIRO/Data61_
-
 - **2017--2018** Lecturer (Level B), _ANU Research School of Computer Science_
+
+- **2016--** Visiting Scientist, _CSIRO/Data61_
 
 - **2013--2016** Postdoctoral Research Fellow (Level B), _ANU Research School of
   Computer Science_
@@ -64,11 +64,11 @@ hidden: true
 
 ### Leadership
 
-- **2019--** Vice President, [_Australasian Computer Music
-  Society_](https://computermusic.org.au/committee/)
-
 - **2020** General Chair, [_Australasian Computer Music
   Conference_](http://acmc2020.com)
+
+- **2019--** Vice President, [_Australasian Computer Music
+  Society_](https://computermusic.org.au/committee/)
 
 - **2017--** ANU School of Computing representative, [_Australian Council of
   Deans of ICT Learning and Teaching
