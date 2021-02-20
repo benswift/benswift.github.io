@@ -64,6 +64,9 @@ hidden: true
 
 ### Leadership
 
+- **2020** Modelling & Visualisation Team Lead, [_ANU Software Innovation
+  Institute Covid Taskforce_](https://sii.anu.edu.au/)
+
 - **2020** General Chair, [_Australasian Computer Music
   Conference_](http://acmc2020.com)
 
