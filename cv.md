@@ -6,6 +6,27 @@ anchorjs-selector: "article > h2, article > h3, .pubitem"
 hidden: true
 ---
 
+<style>
+@media print {
+  header,footer {
+    display: none;
+  }
+  #toc h2 {
+    text-align: left;
+    font-weight: 900;
+    color: #666;
+    background-color: unset;
+  }
+  main {
+    font-size: 12px;
+    padding: 12px;
+  }
+  .bibliography {
+    font-size: 90%;
+  }
+}
+</style>
+
 {% include toc.html %}
 
 {% include blurbs/I-am-paragraphs.md %}
