@@ -316,7 +316,7 @@ table {
 }
 
 // responsive design, y'all
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
   .container {
     grid-template-columns: 1fr 800px 1fr;
     grid-template-areas:
