@@ -14,9 +14,9 @@ I'm a [Senior Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the [School
 of Computing](https://cs.anu.edu.au/) at the Australian National University in
 Canberra, Australia, where I lead the [code/creativity/culture
 studio](https://cs.anu.edu.au/code-creativity-culture/). The **c/c/c studio** is
-a research group which exists to open up spaces for discussion about the way
-that `code` is shaping flows of information/culture/humanity in today's (and
-tomorrow's) world.
+a teaching & research group which exists to open up spaces for discussion about
+the way that `code` is shaping flows of information/culture/humanity in today's
+(and tomorrow's) world.
 
 I care a lot about making computing a welcoming, interesting and creatively
 satisfying place, especially for people who don't fit the traditional picture of
