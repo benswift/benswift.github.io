@@ -1,6 +1,6 @@
 ---
 title: ICLC Extempore workshop
-tags: extempore livecode teaching
+tags: extempore livecoding teaching
 permalink: /iclc-workshop/
 hidden: true
 ---
