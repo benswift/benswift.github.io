@@ -159,9 +159,10 @@ I have also written and delivered the following courses:
 
 ## Service {#service}
 
-- Since **2016** I have been the design lead on the _Lucy Project_: a CECS
-  teaching & learning web infrastructure project which includes the [CECS Jekyll
-  Course Website](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
+- Since **2016** I have been the design lead on the [_Lucy
+  Project_](https://gitlab.cecs.anu.edu.au/lucy): a CECS teaching & learning web
+  infrastructure project which includes the [CECS Jekyll Course
+  Website](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
   GitLab](https://gitlab.cecs.anu.edu.au) infrastructure. This project gives
   CECS academics new levels of control and flexibility in creating and
   delivering their class content, backed by a modern, industry-standard tech
