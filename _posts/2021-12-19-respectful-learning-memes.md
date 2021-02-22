@@ -91,3 +91,9 @@ can benefit. As I teach bigger and more diverse classes, the chance to harness
 these students' brilliance in meme-making (and some of them are _seriously_ good
 at it) to help all my students learn seems like a win. I can't wait to see what
 they come up with ☺
+
+**Note**: if you're using MS Teams for your class discussion, there's even a few
+settings relating to memes and gifs which you might want to make sure are
+enabled.
+
+{% include assets/picture.html file="images/posts/respectful-learning-memes/teams-meme-settings.png" alt="MS Teams meme settings" %}
