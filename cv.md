@@ -7,6 +7,10 @@ hidden: true
 ---
 
 <style>
+#canonical-web-box {
+  display: none;
+}
+
 @media print {
   header,footer {
     display: none;
@@ -24,8 +28,25 @@ hidden: true
   .bibliography {
     font-size: 90%;
   }
+  #canonical-web-box {
+    display: initial;
+  }
 }
 </style>
+
+{:#canonical-web-box}
+
+**Note**: the canonical version of this CV is the web version hosted at
+<https://benswift.me/cv/>. If you're able to then I recommend you check it out;
+it's got lots of nice things like
+[hyperlinks](https://en.wikipedia.org/wiki/Hyperlink), [reflowable
+text](https://en.wikipedia.org/wiki/Reflowable_document) so that it's readable
+on mobile, and it's accessible to [screen
+readers](https://en.wikipedia.org/wiki/Screen_reader) and other assistive
+technologies. Unless, of course, you're reading this pre-1989, in which case the
+[web](https://en.wikipedia.org/wiki/World_Wide_Web) hasn't been invented, and I
+guess you should just print it out & read it on paper. Mr. Gorbachev, tear down
+this wall!
 
 {% include toc.html %}
 
