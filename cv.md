@@ -105,6 +105,9 @@ this wall!
 
 ### Prizes & Awards
 
+- **2020** [Wharton-QS Reimagine Education Awards 2020 (shortlisted in _Hybrid
+  Learning_ category)](https://www.reimagine-education.com)
+
 - **2018** [Vice Chancellor's Citation for Outstanding Contribution to
   Student Learning](https://services.anu.edu.au/education-support/awards-grants/recognising-excellence-vice-chancellors-awards-for-excellence-in)
 
