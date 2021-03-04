@@ -1,24 +1,3 @@
-<style>
-.canonical-web-box {
-  display: none;
-}
-
-@media print {
-  header,footer {
-    display: none;
-  }
-  #toc h2 {
-    text-align: left;
-    font-weight: 900;
-    color: #666;
-    background-color: unset;
-  }
-  .canonical-web-box {
-    display: initial;
-  }
-}
-</style>
-
 {:.canonical-web-box}
 
 **Note**: the canonical version of this page is the web version hosted at <{{

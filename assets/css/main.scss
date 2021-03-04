@@ -353,3 +353,23 @@ svg.icon {
   vertical-align: -0.125em;
   fill: currentColor;
 }
+
+// printing
+.canonical-web-box {
+    display: none;
+}
+
+@media print {
+    header,footer {
+        display: none;
+    }
+    #toc h2 {
+        text-align: left;
+        font-weight: 900;
+        color: lighten($text-color, 10%);
+        background-color: unset;
+    }
+    .canonical-web-box {
+        display: initial;
+    }
+}
