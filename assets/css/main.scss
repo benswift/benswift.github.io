@@ -366,10 +366,12 @@ svg.icon {
     #toc h2 {
         text-align: left;
         font-weight: 900;
-        color: lighten($text-color, 10%);
+        color: $text-color;
         background-color: unset;
     }
     .canonical-web-box {
         display: initial;
+        font-style: italic;
+        color: lighten($text-color, 20%);
     }
 }
