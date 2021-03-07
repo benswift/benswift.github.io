@@ -4,7 +4,7 @@ electronic/computer music artist. I am a Senior Lecturer in the School of
 Computing at the [Australian National
 University](https://cecs.anu.edu.au/people/ben-swift)---Australia's
 [top-ranked](https://services.anu.edu.au/planning-governance/performance-measurement/world-rankings)
-(#31 [QS world
+university (#31 [QS world
 ranking](https://www.topuniversities.com/universities/australian-national-university)
 2021). I'm an expert in computational art & music, data vis/data science,
 human-computer interaction, AI/machine learning, and user experience (UX)
