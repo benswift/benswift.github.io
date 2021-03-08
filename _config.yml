@@ -48,7 +48,7 @@ defaults:
   - scope:
       type: talks
     values:
-      layout: reveal
+      layout: reveal-with-fa
   - scope:
       type: livecoding
     values:
