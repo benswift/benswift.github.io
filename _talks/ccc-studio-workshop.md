@@ -7,6 +7,7 @@ permalink: /talks/ccc-studio-workshop/
 summary: >-
   a half-day workshop at the 2019 CECS Reimagine CoDesign Culture Lab
 ---
+
 {% include slides/title.html %}
 
 <script src='{{ "/assets/js/TweenMax.min.js" | relative_url }}' type="text/javascript"></script>
@@ -15,7 +16,7 @@ summary: >-
 
 {% include slides/ack-country.html %}
 
-{% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/blog-post-url-qr-code.png" bgsize="contain" bgcol="black" %}
+{% include qrcode.html text="https://benswift.me/talks/designing-the-ccc-studio/" showlink=true %}
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/CoDCL-5948.jpg" heading="welcome" bgsize="contain" bgcol="black" %}
 
