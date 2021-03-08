@@ -36,6 +36,9 @@ exclude:
   - Makefile
   - node_modules/
 
+revealify:
+  theme: assets/css/ben-reveal-theme.scss
+
 defaults:
   - scope:
       type: posts

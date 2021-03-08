@@ -14,4 +14,6 @@ group :jekyll_plugins do
   gem "jekyll-compose"
   # to check everything's hooked up right
   gem "html-proofer", "~> 3"
+  # revealify
+  gem "jekyll-revealify-plugin", :git => "https://gitlab.cecs.anu.edu.au/lucy/jekyll-revealify-plugin.git", :branch => 'master'
 end

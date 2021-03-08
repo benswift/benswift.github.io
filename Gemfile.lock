@@ -6,6 +6,15 @@ GIT
     jekyll-paginate-v2 (2.0.0)
       jekyll (>= 3.6, < 5.0)
 
+GIT
+  remote: https://gitlab.cecs.anu.edu.au/lucy/jekyll-revealify-plugin.git
+  revision: 15805a0ed4815fcdad1e67e9bba09999bd0419e7
+  branch: master
+  specs:
+    jekyll-revealify-plugin (2.0.0.beta)
+      jekyll
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -114,6 +123,7 @@ DEPENDENCIES
   jekyll-feed (~> 0)
   jekyll-fontawesome-svg (~> 0.3)
   jekyll-paginate-v2!
+  jekyll-revealify-plugin!
   jekyll-seo-tag (~> 2)
 
 BUNDLED WITH
