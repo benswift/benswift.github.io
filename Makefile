@@ -28,6 +28,3 @@ push: commit-all
 
 highlight.js:
 	npx browserify node_modules/highlight.js/lib/index.js > assets/js/highlight.js
-
-reveal.js:
-	wget --no-check-certificate https://github.com/hakimel/reveal.js/archive/3.8.0.tar.gz -O - | tar xz
