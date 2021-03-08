@@ -7,7 +7,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
                                   :report_eof_tags => true,
                                   :report_invalid_tags => true,
                                   :report_mismatched_tags => true,
-                                  :report_missing_doctype => true,
+                                  :report_missing_doctype => false,
                                   :report_missing_names => true
                                 },
                                 :check_img_http => true,
