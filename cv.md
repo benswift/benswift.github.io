@@ -33,8 +33,8 @@ hidden: true
   the ANU Research School of Computer Science was replaced by the new ANU School
   of Computing in 2021._)
 
-- **2007** Bachelor of Science (Honours 1<sup>st</sup> class, mathematics & physics
-  major) _Australian National University_
+- **2007** Bachelor of Science (Honours 1<sup>st</sup> class, mathematics &
+  physics major) _Australian National University_
 
 - **2005** Certificate IV in Music Performance _Canberra Institute of
   Technology_
