@@ -14,4 +14,4 @@ the time (and since). It's only a short paper, so it doesn't cover the topic in
 detail, but I think it's still a pretty neat articulation of some of the
 thinking behind the Extempore design decisions.
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/live-13.pdf %})
+[slides {% fa_svg fas.fa-file-pdf %}]({% link assets/pdf/live-13.pdf %})

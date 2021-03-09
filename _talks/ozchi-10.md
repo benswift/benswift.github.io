@@ -11,4 +11,4 @@ about my PhD project (then a work-in-progress). There's a [paper in the
 references section]({% link research.md
 %}#swiftEngagementNetworksSocial2010) as well.
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/ozchi-10.pdf %})
+[slides {% fa_svg fas.fa-file-pdf %}]({% link assets/pdf/ozchi-10.pdf %})

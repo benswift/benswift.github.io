@@ -10,4 +10,4 @@ My talk at [CHI '14: SIGCHI Conference on Human Factors in Computing
 Systems](http://chi2014.acm.org). [Here's the paper]({% link
 research.md %}#swiftCodingLivecoding2014).
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/chi-14.pdf %})
+[slides {% fa_svg fas.fa-file-pdf %}]({% link assets/pdf/chi-14.pdf %})

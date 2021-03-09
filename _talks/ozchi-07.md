@@ -16,4 +16,4 @@ Sometimes it's fun to look back and see how far one has come in their research
 skills. Sometimes it's depressing to see how one has stagnated. I'll leave it up
 to you to decide which category I'm in 😜
 
-[slides (pdf)&nbsp;&nbsp;<i class="fas fa-chalkboard-teacher fa-2x"></i>]({% link assets/pdf/ozchi-07.pdf %})
+[slides {% fa_svg fas.fa-file-pdf %}]({% link assets/pdf/ozchi-07.pdf %})
