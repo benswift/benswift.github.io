@@ -28,9 +28,10 @@ hidden: true
 
 ### Education
 
-- **2012** Ph.D. _ANU Research School of Computer Science_[^soco-name-change].
-  Thesis title: "The Design of a Smartphone-Based Digital Musical Instrument for
-  Jamming"
+- **2012** Ph.D. _ANU Research School of Computer Science_. Thesis title: "The
+  Design of a Smartphone-Based Digital Musical Instrument for Jamming" (_Note:
+  the ANU Research School of Computer Science was replaced by the new ANU School
+  of Computing in 2021._)
 
 - **2007** Bachelor of Science (Honours 1<sup>st</sup> class, mathematics & physics
   major) _Australian National University_
@@ -50,10 +51,6 @@ hidden: true
   Computer Science_
 
 - **2012** Postdoctoral Research Fellow, _QUT Institute for Future Environments_
-
-[^soco-name-change]:
-    Note: the _ANU Research School of Computer Science_ was replaced by the new
-    _ANU School of Computing_ in 2021.
 
 ### Leadership
 
