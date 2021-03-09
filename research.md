@@ -27,8 +27,8 @@ project/big idea that excites _you_. Send me
 
 I get a lot of emails, so including these two things is a great way to show that
 you've thought a bit about what sort of research project you're interested in
-(and why I'd be a good fit). You should think hard about how to make your email
-stand out from the crowd.
+(and why I'd be a good fit as your supervisor). You should think hard about how
+to make your email stand out from the crowd.
 
 </div>
 
