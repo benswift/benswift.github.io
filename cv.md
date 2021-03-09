@@ -64,7 +64,8 @@ hidden: true
   Conference_](http://acmc2020.com)
 
 - **2019--** Vice President, [_Australasian Computer Music
-  Society_](https://computermusic.org.au/committee/)
+  Society_](https://computermusic.org.au/committee/) (also Treasurer from
+  2009--2014)
 
 - **2017--** ANU School of Computing representative, [_Australian Council of
   Deans of ICT Learning and Teaching
@@ -72,6 +73,9 @@ hidden: true
 
 - **2016--** Design Lead, [_Lucy Project: CECS teaching & learning web
   infrastructure_](#service)
+
+- **2011**: [OzCHI](http://www.ozchi.org/ozchi2011/committee/committee.html)
+  Student Volunteer Chair
 
 ## Teaching
 
@@ -153,9 +157,11 @@ I have also written and delivered the following courses:
   reflecting on the design, security, social and ethical challenges associated
   with the Internet of Things.
 
-## Service {#service}
+## Service and Engagement {#service}
 
-- Since **2016** I have been the design lead on the [_Lucy
+### Service to the ANU Community
+
+- **2016--**: I am the design lead on the [_Lucy
   Project_](https://gitlab.cecs.anu.edu.au/lucy): a CECS teaching & learning web
   infrastructure project which includes the [CECS Jekyll Course
   Website](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
@@ -164,20 +170,67 @@ I have also written and delivered the following courses:
   delivering their class content, backed by a modern, industry-standard tech
   stack.
 
-- Since **2018** I have been the alternate CECS representative for the ANU-wide
-  Technology-Enhanced Learning Reference Group (TELRG), which meets regularly to
-  discuss and review issues relating to educational technology systems and
-  technology-enhanced teaching and learning.
+- **2018--**: I am the alternate CECS representative for the ANU-wide
+  [Technology-Enhanced Learning Reference
+  Group](https://www.anu.edu.au/about/governance/committees/technology-enhanced-learning-reference-group-telrg)
+  (TELRG), which meets regularly to discuss and review issues relating to
+  educational technology systems and technology-enhanced teaching and learning.
 
-- Since **2018** I have been part of an ANU-wide committee (under Prof. Nick
-  Brown) charged with creating a digital artifact/resource to commemorate the
-  ANU's 75th anniversary in 2021.
+- **2018--**: I have been part of an ANU-wide committee (under Prof. Nick Brown)
+  charged with creating a digital artifact/resource to commemorate the ANU's
+  75th anniversary in 2021.
 
-- From **2015--2019** I was the School of Computing's Student Experience
-  convenor (UG)---the first ever appointment to this role. In this role I worked
-  on improving the experience of our students, especially those who may fall
+- **2015--2019**: I was the School of Computing's Student Experience convenor
+  (UG)---the first ever appointment to this role. In this role I worked on
+  improving the experience of our students, especially those who may fall
   through the cracks of the other support structures in place within the
   college.
+
+### Service & Engagement with the Academic Community
+
+- **2009--**: I have served as a paper reviewer for
+  [CHI](https://sigchi.org/conferences/conference-history/chi/),
+  [OzCHI](http://www.ozchi.org/ozchi2011/committee/committee.html),
+  [ACMC](https://computermusic.org.au), [NIME](https://www.nime.org),
+  [CMJ](http://computermusicjournal.org),
+  [Leonardo](https://www.mitpressjournals.org/loi/leon),
+  [ICSE](http://www.icse-conferences.org) and
+  [VL/HCC](https://conferences.computer.org/VLHCC/).
+
+### Service & Engagement with Industry
+
+- **2016--2018**: I have been a partner with Google (through multiple research
+  grants) in developing new tools for livecoding/cyberphysical programming.
+
+- **2015--2017**: I was a Visiting Scientist with CSIRO/Data61 working on the
+  CloudMol computational chemistry platform. The goal of this project was to
+  translate HPC codes from computational chemistry research into a commercial
+  platform for cloud-hosted scientific computing.
+
+- **2015**: I was paid to write and deliver a half-day tutorial at
+  [Supercomputing '15](https://supercomputing.org) (a hybrid academic
+  conference/industry trade show) on the use of the Extempore livecoding
+  language in scientific computing & data visualisation tools.
+  
+### Service & Engagement with the Wider Community
+
+- **2008--**: For over a decade I have worked to provide computing education
+  opportunities in the wider ACT community. I have been invited to several ACT
+  schools to run learn-to-code workshops on both a one-off and ongoing basis,
+  including Telopea High, the Blue Gum School, Radford College, Lake Tuggeranong
+  College, St Clare's College, Narrabundah College, and Canberra Girls Grammar.
+
+- **2012--**: I have given many seminars and run other outreach activities to
+  promote computing (especially interdisciplinary art/music coding) to diverse
+  audiences. This includes invited plenary presentations at the National Youth
+  Science Forum, The Questacon National Invention Convention, the University of
+  the Third Age, and National Science Week.
+
+- **2009--2015**: I was a teacher in the _CSIRO Scientists in Schools Program_,
+  volunteering my time teaching robotics in a primary school class at the Blue
+  Gum School in Hackett, ACT. I assisted the students in building and
+  programming lego Robots, and was a judge in their end-of-unit robotics
+  competitions.
 
 ## Research {#research}
 
@@ -221,6 +274,9 @@ I have also written and delivered the following courses:
 - **2015** _New Colombo Plan: "Internet of Things" Program at Beijing Institute
   of Technology_ ($132k) (this was a joint grant application between ANU,
   Swinburne and UTS)
+
+- **2014** _Visiting Fellowship at the [UCLA Institute for Digital Research and
+  Education](https://idre.ucla.edu)_ ($8k)
 
 ### Peer-reviewed publications
 
