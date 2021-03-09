@@ -52,8 +52,8 @@ hidden: true
 - **2012** Postdoctoral Research Fellow, _QUT Institute for Future Environments_
 
 [^soco-name-change]:
-    Note: the _ANU Research School of Computer Science_ changed its name to the
-    _ANU School of Computing_ in 2020.
+    Note: the _ANU Research School of Computer Science_ was replaced by the new
+    _ANU School of Computing_ in 2021.
 
 ### Leadership
 
