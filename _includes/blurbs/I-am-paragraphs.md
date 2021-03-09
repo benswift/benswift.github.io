@@ -1,7 +1,7 @@
 I am an internationally-recognised interdisciplinary
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ) and
-electronic/computer music artist. I am a Senior Lecturer in the School of
-Computing at the [Australian National
+electronic/computer music artist, and currently a Senior Lecturer in the School
+of Computing at the [Australian National
 University](https://cecs.anu.edu.au/people/ben-swift)---Australia's
 [top-ranked](https://services.anu.edu.au/planning-governance/performance-measurement/world-university-rankings)
 university (#31 [QS world
