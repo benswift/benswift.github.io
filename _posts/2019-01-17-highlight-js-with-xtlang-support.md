@@ -2,7 +2,15 @@
 title: highlight.js with xtlang support
 date: 2019-01-17 10:54 +1100
 tags: web
+summary: How to add Extempore syntax highlighting to web content.
 ---
+
+{:.hl-para}
+**Note**: adding syntax-highlighted xtlang to your website is now easier than
+ever because
+[highlightjs-extempore](https://github.com/highlightjs/highlightjs-extempore) is
+an official hljs module. While this page is still an interesting dive into how I
+did it at the time, you should now just follow the instructions on GitHub.
 
 > It is a truth, universally acknowledged, that all programming language authors
 > must also be expert web developers. (_attributed to Jane Austen_)
