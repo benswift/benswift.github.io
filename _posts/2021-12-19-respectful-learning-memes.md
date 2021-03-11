@@ -3,6 +3,15 @@ title: Respectful Learning Memes
 tags: teaching
 ---
 
+{:.hl-para}
+**Note**: this post was noticed by the good folks at the [ANU Centre for
+Learning and
+Teaching](https://services.anu.edu.au/business-units/centre-for-learning-teaching),
+and they asked if they could syndicate it on their Interact blog---so you can
+[read it
+there](https://interact.weblogs.anu.edu.au/2021/03/03/respectful-learning-memes/)
+as well.
+
 A few years ago I re-wrote one of our core [computer architecture
 courses](https://cs.anu.edu.au/courses/comp2300/) (it has the course code
 COMP2300). It's a large (400+ students) compulsory course, so there's a spread
