@@ -38,9 +38,10 @@ Science](https://cs.anu.edu.au/courses/comp2300/)
 - [COMP1720: Art & Interaction in New
   Media](https://cs.anu.edu.au/courses/comp1720/) is a course about learning to
   tell stories through interactive code art. It's not _just_ an art course, and
-  it's not just a code course: students need to use both halves of their brains,
-  and (I hope) have a lot of fun in the process. No previous coding or artistic
-  experience is required: COMP1720 teaches everything from the ground up.
+  it's not _just_ a "coding" course: students engage with both of those domains
+  at the same time, and (I hope) have a lot of fun in the process. No previous
+  coding or artistic experience is required: COMP1720 teaches everything from
+  the ground up.
 
 In the past couple of years, I've also taught
 
