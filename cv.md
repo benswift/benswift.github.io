@@ -36,7 +36,7 @@ hidden: true
 
 ## Qualifications & Appointments {#qualifications}
 
-### Education
+### Qualifications
 
 - **2012** Ph.D. _ANU Research School of Computer Science_. Thesis title: "The
   Design of a Smartphone-Based Digital Musical Instrument for Jamming" (_Note:
