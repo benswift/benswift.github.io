@@ -164,13 +164,12 @@ I have also written and delivered the following courses:
 - **2015--2019**: Student Experience Convenor, _ANU Research School of Computer
   Science_ (in this role I worked on improving the experience of our students,
   especially those who may fall through the cracks of the other support
-  structures in place within the college)
+  structures in place within the School)
 
 ### Academic
 
 - **2019--** Vice President, [_Australasian Computer Music
-  Society_](https://computermusic.org.au/committee/) (also Treasurer from
-  2009--2014)
+  Society_](https://computermusic.org.au/committee/)
 
 - **2017--** ANU School of Computing representative, [_Australian Council of
   Deans of ICT Learning and Teaching
@@ -182,17 +181,20 @@ I have also written and delivered the following courses:
 - **2013**: Chair, [_Artist-Centred Computing Workshop_ at VL/HCC
   '13](https://conferences.computer.org/VLHCC/).
 
-- **2011**: [OzCHI](http://www.ozchi.org/ozchi2011/committee/committee.html)
-  Student Volunteer Chair
+- **2011**: Student Volunteer Chair,
+  [_OzCHI_](http://www.ozchi.org/ozchi2011/committee/committee.html)
 
-- I have served as a paper reviewer for
-  [CHI](https://sigchi.org/conferences/conference-history/chi/),
-  [OzCHI](http://www.ozchi.org/ozchi2011/committee/committee.html),
-  [ACMC](https://computermusic.org.au), [NIME](https://www.nime.org),
-  [CMJ](http://computermusicjournal.org),
-  [Leonardo](https://www.mitpressjournals.org/loi/leon),
-  [ICSE](http://www.icse-conferences.org) and
-  [VL/HCC](https://conferences.computer.org/VLHCC/).
+- **2010--2014** Treasurer, [_Australasian Computer Music
+  Society_](https://computermusic.org.au/committee/)
+
+I have served as a paper reviewer for
+[CHI](https://sigchi.org/conferences/conference-history/chi/),
+[OzCHI](http://www.ozchi.org/ozchi2011/committee/committee.html),
+[ACMC](https://computermusic.org.au), [NIME](https://www.nime.org),
+[CMJ](http://computermusicjournal.org),
+[Leonardo](https://www.mitpressjournals.org/loi/leon),
+[ICSE](http://www.icse-conferences.org) and
+[VL/HCC](https://conferences.computer.org/VLHCC/).
 
 ### Industry
 
@@ -202,7 +204,7 @@ I have also written and delivered the following courses:
 - **2015--2018**: Industry Internships Co-ordinator, _ANU Research School of
   Computer Science_
 
-- **2015**: Workshop Presenter, [Supercomputing '15](https://supercomputing.org)
+- **2015**: Workshop Organiser, [Supercomputing '15](https://supercomputing.org)
   (a hybrid academic conference/industry trade show)
   
 ### Community
