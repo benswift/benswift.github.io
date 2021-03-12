@@ -158,7 +158,7 @@ I have also written and delivered the following courses:
 
 ## Service and Engagement {#service}
 
-### ANU
+### ANU {#service-anu}
 
 - **2016--** Design Lead, [_Lucy Project_](https://gitlab.cecs.anu.edu.au/lucy)
   teaching & learning web infrastructure, including the [CECS Jekyll Course
@@ -179,7 +179,7 @@ I have also written and delivered the following courses:
   especially those who may fall through the cracks of the other support
   structures in place within the School)
 
-### Academic
+### Academic {#service-academic}
 
 - **2019--** Vice President, [_Australasian Computer Music
   Society_](https://computermusic.org.au/committee/)
@@ -209,7 +209,7 @@ I have served as a paper reviewer for
 [ICSE](http://www.icse-conferences.org) and
 [VL/HCC](https://conferences.computer.org/VLHCC/).
 
-### Industry
+### Industry {#engagement-industry}
 
 - **2016--2017** Cloud Infrastructure Developer, _CloudMol computational
   chemistry platform_ (as part of a CSIRO/Data61 Visiting Scientist position)
@@ -221,7 +221,7 @@ I have served as a paper reviewer for
   [_Supercomputing '15_](https://supercomputing.org) (a hybrid academic
   conference/industry trade show)
   
-### Community
+### Community {#engagement-community}
 
 - **2009--2015** Volunteer Teacher, [_CSIRO Scientists in Schools
   Program_](https://www.csiro.au/en/Education/Programs/STEM-Professionals-in-Schools)
@@ -279,15 +279,15 @@ Week.
 - **2014** _Visiting Fellowship at the [UCLA Institute for Digital Research and
   Education](https://idre.ucla.edu)_ ($8k)
 
-### Peer-reviewed publications
+### Peer-reviewed publications {#peer-reviewed-publications}
 
 {% bib_list_pubs ben-pubs.bib %}
 
-### Invited talks
+### Invited talks {#invited-talks}
 
 See [https://benswift.me/talks/]({% link talks.md %}) for a full list of invited
 talks.
 
-### Curated/invited livecoding performances
+### Curated/invited livecoding performances {#curatedinvited-livecoding-performances}
 
 {% bib_list_gigs %}
