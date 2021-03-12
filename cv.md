@@ -169,6 +169,9 @@ I have also written and delivered the following courses:
 
 - **2018--2021** Member, _ANU 75th Anniversary Digital Artifact Committee_
 
+- **2016** Chair, [_COMP1100 Review_] into growing failure & non-completion
+  rates in our first-year CS course
+
 - **2015--2019** Student Experience Convenor, _ANU Research School of Computer
   Science_ (in this role I worked on improving the experience of our students,
   especially those who may fall through the cracks of the other support
