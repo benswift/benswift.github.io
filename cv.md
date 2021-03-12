@@ -1,6 +1,6 @@
 ---
 title: Curriculum vitae
-layout: page
+layout: default
 permalink: /cv/
 anchorjs-selector: "article > h2, article > h3, .pubitem"
 hidden: true
@@ -15,8 +15,18 @@ hidden: true
   .bibliography {
     font-size: 90%;
   }
+  .my-name {
+    font-size: 42px;
+  }
+}
+.my-name > span {
+  color:#555;
+  font-weight: 300;
+  font-style: italic;
 }
 </style>
+
+<h1 class="my-name">Ben Swift <span>Curriculum Vitae</span></h1>
 
 {% include canonical-web-box.md %}
 
