@@ -165,7 +165,7 @@ I have also written and delivered the following courses:
   especially those who may fall through the cracks of the other support
   structures in place within the college)
 
-### Academic Community
+### Academic
 
 - **2019--** Vice President, [_Australasian Computer Music
   Society_](https://computermusic.org.au/committee/) (also Treasurer from
@@ -204,7 +204,7 @@ I have also written and delivered the following courses:
 - **2015**: Workshop Presenter, [Supercomputing '15](https://supercomputing.org)
   (a hybrid academic conference/industry trade show)
   
-### Wider Community
+### Community
 
 - **2009--2015**: Volunteer Teacher, [_CSIRO Scientists in Schools
   Program_](https://www.csiro.au/en/Education/Programs/STEM-Professionals-in-Schools)
