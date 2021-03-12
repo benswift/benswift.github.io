@@ -38,9 +38,9 @@ hidden: true
 
 {% include canonical-web-box.md %}
 
-{% include toc.html %}
-
 {% include blurbs/I-am-paragraphs.md %}
+
+{% include toc.html %}
 
 ## Qualifications & Appointments {#qualifications}
 
