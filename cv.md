@@ -54,7 +54,7 @@ hidden: true
 - **2018--** Senior Lecturer (Level C), _ANU School of Computing_
 
 - **2020** Modelling & Visualisation Team Lead, [_ANU Software Innovation
-  Institute Covid Taskforce_](https://sii.anu.edu.au/) (Covid secondment)
+  Institute Covid Taskforce_](https://sii.anu.edu.au/)
 
 - **2016--** Visiting Scientist, _CSIRO/Data61_
 
