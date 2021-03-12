@@ -15,19 +15,26 @@ hidden: true
   .bibliography {
     font-size: 90%;
   }
-  .my-name {
+  .cv-title {
     font-size: 42px;
   }
 }
-.my-name > span {
+.cv-title {
+  display: flex;
+  line-height: 1.2;
+}
+.cv-title .name {
+  margin-right: 1ch;
+}
+.cv-title .doc-title {
   color:#555;
-  margin-left: 1ch;
+  text-align: right;
   font-weight: 200;
   font-style: italic;
 }
 </style>
 
-<h1 class="my-name">Ben&nbsp;Swift<span>Curriculum&nbsp;Vitae</span></h1>
+<h1 class="cv-title"><span class="name">Ben Swift</span><span class="doc-title">Curriculum Vitae</span></h1>
 
 {% include canonical-web-box.md %}
 
