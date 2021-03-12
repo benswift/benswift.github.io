@@ -17,10 +17,10 @@ explore the way that **code** (software), **creativity** (especially the arts)
 and **culture** (life) intersect in the modern world.
 
 As a [livecoding artist]({% link livecoding.md %}) I have performed at
-international arts festivals, including the International Symposium on
-Electronic Art (ISEA) and the International Conference on Live Coding (ICLC).
-I'm the vice president of the [Australasian Computer Music
-Association](https://computermusic.org.au) (ACMA).
+international arts festivals, including the [International Symposium on
+Electronic Art](http://www.isea-web.org) (ISEA) and the [International
+Conference on Live Coding](iclc) (ICLC). I'm the vice president of the
+[Australasian Computer Music Association](https://computermusic.org.au) (ACMA).
 
 I am a [maker](https://github.com/benswift) of open-source software tools for
 music, creative code, data analysis/visualisation, and more. I'm one half of the
