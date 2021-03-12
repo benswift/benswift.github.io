@@ -155,8 +155,8 @@ I have also written and delivered the following courses:
   Website template](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
   GitLab](https://gitlab.cecs.anu.edu.au) infrastructure
 
-- **2018--** Member, [ANU Technology-Enhanced Learning Reference
-  Group](https://www.anu.edu.au/about/governance/committees/technology-enhanced-learning-reference-group-telrg)
+- **2018--** Member, [_ANU Technology-Enhanced Learning Reference
+  Group_](https://www.anu.edu.au/about/governance/committees/technology-enhanced-learning-reference-group-telrg)
   (TELRG)
 
 - **2018--2021** Member, _ANU 75th Anniversary Digital Artifact Committee_
@@ -204,8 +204,9 @@ I have served as a paper reviewer for
 - **2015--2018** Industry Internships Co-ordinator, _ANU Research School of
   Computer Science_
 
-- **2015** Workshop Organiser, [Supercomputing '15](https://supercomputing.org)
-  (a hybrid academic conference/industry trade show)
+- **2015** Workshop Organiser,
+  [_Supercomputing '15_](https://supercomputing.org) (a hybrid academic
+  conference/industry trade show)
   
 ### Community
 
