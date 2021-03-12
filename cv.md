@@ -272,9 +272,10 @@ Week.
   Fellowship_](https://soad.cass.anu.edu.au/events/fellows-vice-chancellors-fellowship-scheme-exhibition-2018)
   with Tony Curran ($5k)
 
-- **2015** _New Colombo Plan: "Internet of Things" Program at Beijing Institute
-  of Technology_ ($132k) (this was a joint grant application between ANU,
-  Swinburne and UTS)
+- **2015** _[New Colombo
+  Plan](https://www.dfat.gov.au/people-to-people/new-colombo-plan/pages/new-colombo-plan):
+  "Internet of Things" Program at Beijing Institute of Technology_ ($132k) (this
+  was a joint grant application between ANU, Swinburne and UTS)
 
 - **2014** _Visiting Fellowship at the [UCLA Institute for Digital Research and
   Education](https://idre.ucla.edu)_ ($8k)
