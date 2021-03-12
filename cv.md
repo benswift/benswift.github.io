@@ -21,12 +21,12 @@ hidden: true
 }
 .my-name > span {
   color:#555;
-  font-weight: 300;
+  font-weight: 200;
   font-style: italic;
 }
 </style>
 
-<h1 class="my-name">Ben Swift <span>Curriculum Vitae</span></h1>
+<h1 class="my-name">Ben Swift&nbsp;&nbsp;<span>Curriculum Vitae</span></h1>
 
 {% include canonical-web-box.md %}
 
