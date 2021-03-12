@@ -26,7 +26,7 @@ hidden: true
 }
 </style>
 
-<h1 class="my-name">Ben Swift&nbsp;&nbsp;<span>Curriculum Vitae</span></h1>
+<h1 class="my-name">Ben&nbsp;Swift<span>Curriculum&nbsp;Vitae</span></h1>
 
 {% include canonical-web-box.md %}
 
