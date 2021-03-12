@@ -150,18 +150,18 @@ I have also written and delivered the following courses:
 
 ### ANU
 
-- **2016--**: Design Lead, [_Lucy Project_](https://gitlab.cecs.anu.edu.au/lucy)
+- **2016--** Design Lead, [_Lucy Project_](https://gitlab.cecs.anu.edu.au/lucy)
   teaching & learning web infrastructure, including the [CECS Jekyll Course
   Website template](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
   GitLab](https://gitlab.cecs.anu.edu.au) infrastructure
 
-- **2018--**: Member, [ANU Technology-Enhanced Learning Reference
+- **2018--** Member, [ANU Technology-Enhanced Learning Reference
   Group](https://www.anu.edu.au/about/governance/committees/technology-enhanced-learning-reference-group-telrg)
   (TELRG)
 
-- **2018--2021**: Member, _ANU 75th Anniversary Digital Artifact Committee_
+- **2018--2021** Member, _ANU 75th Anniversary Digital Artifact Committee_
 
-- **2015--2019**: Student Experience Convenor, _ANU Research School of Computer
+- **2015--2019** Student Experience Convenor, _ANU Research School of Computer
   Science_ (in this role I worked on improving the experience of our students,
   especially those who may fall through the cracks of the other support
   structures in place within the School)
@@ -178,10 +178,10 @@ I have also written and delivered the following courses:
 - **2020** General Chair, [_Australasian Computer Music
   Conference_](http://acmc2020.com)
 
-- **2013**: Chair, [_Artist-Centred Computing Workshop_ at VL/HCC
+- **2013** Chair, [_Artist-Centred Computing Workshop_ at VL/HCC
   '13](https://conferences.computer.org/VLHCC/).
 
-- **2011**: Student Volunteer Chair,
+- **2011** Student Volunteer Chair,
   [_OzCHI_](http://www.ozchi.org/ozchi2011/committee/committee.html)
 
 - **2010--2014** Treasurer, [_Australasian Computer Music
@@ -198,18 +198,18 @@ I have served as a paper reviewer for
 
 ### Industry
 
-- **2016--2017**: Cloud Infrastructure Developer, _CloudMol computational
+- **2016--2017** Cloud Infrastructure Developer, _CloudMol computational
   chemistry platform_ (as part of a CSIRO/Data61 Visiting Scientist position)
 
-- **2015--2018**: Industry Internships Co-ordinator, _ANU Research School of
+- **2015--2018** Industry Internships Co-ordinator, _ANU Research School of
   Computer Science_
 
-- **2015**: Workshop Organiser, [Supercomputing '15](https://supercomputing.org)
+- **2015** Workshop Organiser, [Supercomputing '15](https://supercomputing.org)
   (a hybrid academic conference/industry trade show)
   
 ### Community
 
-- **2009--2015**: Volunteer Teacher, [_CSIRO Scientists in Schools
+- **2009--2015** Volunteer Teacher, [_CSIRO Scientists in Schools
   Program_](https://www.csiro.au/en/Education/Programs/STEM-Professionals-in-Schools)
 
 Since **2007** I have given dozens of talks, workshops and run other outreach
