@@ -25,8 +25,3 @@ push: commit-all
 	git push origin source
 	# now push the built files
 	cd $(BASE_HTML_DIR) && git push origin master
-
-# here's the benswift.me-specific stuff
-
-highlight.js:
-	npx browserify node_modules/highlight.js/lib/index.js > assets/js/highlight.js
