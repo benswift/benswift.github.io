@@ -73,6 +73,8 @@ hidden: true
 
 - **2012** Postdoctoral Research Fellow, _QUT Institute for Future Environments_
 
+- **2010--2012** Co-founder, _Random Lizard Board Games_
+
 ## Teaching
 
 ### Prizes & Awards
