@@ -21,6 +21,7 @@ hidden: true
 }
 .my-name > span {
   color:#555;
+  margin-left: 1ch;
   font-weight: 200;
   font-style: italic;
 }
