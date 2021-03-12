@@ -9,8 +9,8 @@ hidden: true
 <style>
 @media print {
   main {
-    font-size: 12px;
-    padding: 12px;
+    font-size: 12.5px;
+    padding: 12.5px;
   }
   .bibliography {
     font-size: 90%;
