@@ -61,8 +61,8 @@ hidden: true
 
 - **2018--** Senior Lecturer, _ANU School of Computing_
 
-- **2020** Modelling & Visualisation Team Lead, [_ANU Software Innovation
-  Institute Covid Taskforce_](https://sii.anu.edu.au/)
+- **2020** Modelling & Visualisation Team Lead, _ANU Software Innovation
+  Institute Covid Taskforce_
 
 - **2016--** Visiting Scientist, _CSIRO/Data61_
 
@@ -92,14 +92,15 @@ hidden: true
   winner](https://www.canberratimes.com.au/story/6169425/action-men-save-our-history/),
   [_GovHack 2012_](https://govhack.org) (including ANU VC commendation)
 
-- **2012** CECS Dean's Award for Outreach (Science Week outreach project)
+- **2012** CECS Dean's Award for Outreach ([National Science
+  Week](https://www.scienceweek.net.au) outreach project)
 
 ### Current courses
 
 I am currently the course convenor & lecturer for the following courses in the
 [ANU School of Computing](https://cs.anu.edu.au/courses/comp2300/) (follow links
-to the curriculum, available under
-[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)):
+to the curriculum, available under a Creative Commons
+[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) licence):
 
 - [COMP2710: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/) is a
   course open to students in computer science, music, art, and elsewhere at ANU
@@ -146,7 +147,7 @@ I have also written and delivered the following courses:
   learn a lot about CPUs (and how programs are organised and executed) by the
   end of the course.
 
-- The [COMP2710 _Internet of Things_ China Study
+- The [COMP2710 _Internet of Things (IoT)_ China Study
   Tour](https://cs.anu.edu.au/courses/china-study-tour/) is an in-country
   intensive study course conducted in partnership with the [Beijing Institute of
   Technology](http://english.bit.edu.cn/). In this course students learn about
@@ -171,12 +172,12 @@ I have also written and delivered the following courses:
 
 - **2018--2021** Member, _ANU 75th Anniversary Digital Artifact Committee_
 
-- **2016** Chair, [_COMP1100 Review_] into growing failure & non-completion
-  rates in our first-year CS course
+- **2016** Chair, _COMP1100 Review Committee_ (which examined the increasing
+  failure & non-completion rate in our first-year CS course at the time)
 
 - **2015--2019** Student Experience Convenor, _ANU Research School of Computer
-  Science_ (in this role I worked on improving the experience of our students,
-  especially those who may fall through the cracks of the other support
+  Science_ (where I worked at improving the experience of our students,
+  especially those who might fall through the cracks of the other support
   structures in place within the School)
 
 ### Academic {#service-academic}
@@ -191,8 +192,8 @@ I have also written and delivered the following courses:
 - **2020** General Chair, [_Australasian Computer Music
   Conference_](http://acmc2020.com)
 
-- **2013** Chair, [_Artist-Centred Computing Workshop_ at VL/HCC
-  '13](https://conferences.computer.org/VLHCC/).
+- **2013** Chair, [_VL/HCC Artist-Centred Computing
+  Workshop_](https://conferences.computer.org/VLHCC/).
 
 - **2011** Student Volunteer Chair,
   [_OzCHI_](http://www.ozchi.org/ozchi2011/committee/committee.html)
