@@ -4,7 +4,7 @@ tags: research tools
 ---
 
 I've long raged against the machine of my institution's default LaTeX template
-for dissertations and other reports. It's 
+for dissertations and other reports, which is:
 
 - complicated (more than 20 separate files!)
 - buggy; (by default it uses multiple conflicting packages, so that even a
@@ -12,7 +12,7 @@ for dissertations and other reports. It's
 - for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
   bummer (even if it is probably a worthwhile skill in the long haul)
 
-When I wrote my PhD thesis back in the day I wrote my [own
+When I wrote my PhD thesis back in the day I created my [own LaTeX
 template](https://github.com/benswift/academic-thesis-template). Since then,
 I've been doing more and more of my writing in
 [markdown](https://www.markdownguide.org) rather than LaTeX, and I really enjoy
@@ -24,8 +24,8 @@ yak shaving as I am.
 
 Because academic publishing is still primarily a world of bland simulacra, being
 able to create a `.pdf` of one's writing is essential. When writing in markdown
-in my [favourite text editor](https://www.spacemacs.org) I can create the a pdf
-using Pandoc. As [Jeffrey Moro so eloquently puts
+in my [favourite text editor](https://www.spacemacs.org) I can turn it into a
+pdf using Pandoc. As [Jeffrey Moro so eloquently puts
 it](https://jeffreymoro.com/blog/2020-09-21-how-i-write/):
 
 > pandoc is amazing. I basically think it redeems computers. It can take
@@ -77,7 +77,7 @@ fragments "straight through". As per the `README.md`:
 > "drop down" into LaTeX when you need more control over the output (since
 > pandoc passes raw LaTeX code straight through). This is basically the same
 > workflow for which markdown was invented, except in that case for HTML.
-
+>
 > If the output you want is going to require lots of very specific control over
 > the layout then you're probably better off just writing in LaTeX directly, but
 > if you want to mostly focus on the content but occasionally have more control
