@@ -1,5 +1,5 @@
 ---
-title: How to cite code? Leading by example in COMP1720
+title: How to cite code? Leading by example
 tags: teaching
 ---
 
