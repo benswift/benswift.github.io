@@ -26,8 +26,9 @@ So, I've copied the relevant part of the spreadsheet into a regular-ol' webpage
 here for your browsing pleasure.[^hosting]
 
 [^hosting]:
-    hopefully this is ok---the real data is © ABS and you should always go there
-    for the canonical version
+    Hopefully this is ok---the real data is © ABS and you should always go there
+    for the canonical version. ABS people, if I've done something naughty with
+    this publicly-available data then please let me know and I'll make it right.
 
 ## 2020 ANZRC Field of Research (FoR) Codes
 
