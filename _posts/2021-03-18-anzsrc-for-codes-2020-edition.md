@@ -32,7 +32,16 @@ here for your browsing pleasure.[^hosting]
 ## 2020 ANZRC Field of Research (FoR) Codes
 
 <table id="FoR-Codes-2020">
-  {% tablerow code in site.data.FoR-Codes-2020 %}
-    {{ code }}
-  {% endtablerow %}
+  <thead>
+    <tr><th>Division</th><th>Group</th><th>Field</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+  {% for code in site.data.FoR-Codes-2020 %} 
+    <tr>
+    {% for value in code %}
+      <td>{{ value[1] }}</td>
+    {% endfor %}
+    </tr>
+  {% endfor %}
+  </tbody>
 </table>
