@@ -36,8 +36,14 @@ here for your browsing pleasure.[^hosting]
     <tr><th>Division</th><th>Group</th><th>Field</th><th>Description</th></tr>
   </thead>
   <tbody>
-  {% for code in site.data.FoR-Codes-2020 %} 
-    <tr>
+  {% for code in site.data.FoR-Codes-2020 %}
+    <tr
+    {% if code.Division != nil %}
+    style="border-top: 2px solid #be2edd;"
+    {% elsif code.Group != nil %}
+    style="border-top: 1px solid #be2edd;"
+    {% endif %}
+    >
     {% for value in code %}
       <td>{{ value[1] }}</td>
     {% endfor %}
