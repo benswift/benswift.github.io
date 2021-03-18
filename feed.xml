@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-18T10:37:06+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-18T11:14:39+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
 of&lt;/a&gt; + their &lt;a href=&quot;https://www.stats.govt.nz&quot;&gt;NZ
 counterparts&lt;/a&gt;) have updated the &lt;a href=&quot;https://www.arc.gov.au/grants/grant-application/classification-codes-rfcd-seo-and-anzsic-codes&quot;&gt;&lt;em&gt;Field of Research&lt;/em&gt;
 codes&lt;/a&gt;
@@ -17,13 +17,25 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
 
 &lt;h2 id=&quot;2020-anzrc-field-of-research-for-codes&quot;&gt;2020 ANZRC Field of Research (FoR) Codes&lt;/h2&gt;
 
+&lt;style&gt;
+#FoR-Codes-2020 tr.division {
+  border-top: 2px solid #be2edd;
+  font-weight: 900;
+  font-size: 1.1em;
+}
+#FoR-Codes-2020 tr.group {
+  border-top: 1px solid #be2edd;
+  font-weight: 900;
+}
+&lt;/style&gt;
+
 &lt;table id=&quot;FoR-Codes-2020&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;&lt;th&gt;Division&lt;/th&gt;&lt;th&gt;Group&lt;/th&gt;&lt;th&gt;Field&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;30&lt;/td&gt;
     
@@ -35,7 +47,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -179,7 +191,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -323,7 +335,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -431,7 +443,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -611,7 +623,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -707,7 +719,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -815,7 +827,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -983,7 +995,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -1079,7 +1091,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -1271,7 +1283,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -1295,7 +1307,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;31&lt;/td&gt;
     
@@ -1307,7 +1319,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -1499,7 +1511,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -1619,7 +1631,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -1739,7 +1751,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -1907,7 +1919,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -2063,7 +2075,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -2171,7 +2183,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -2267,7 +2279,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -2363,7 +2375,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -2555,7 +2567,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -2603,7 +2615,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;32&lt;/td&gt;
     
@@ -2615,7 +2627,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -2675,7 +2687,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3023,7 +3035,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3191,7 +3203,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3323,7 +3335,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3431,7 +3443,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3527,7 +3539,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3611,7 +3623,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3671,7 +3683,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3779,7 +3791,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -3875,7 +3887,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4031,7 +4043,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4103,7 +4115,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4163,7 +4175,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4271,7 +4283,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4331,7 +4343,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4355,7 +4367,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;33&lt;/td&gt;
     
@@ -4367,7 +4379,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4511,7 +4523,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4619,7 +4631,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -4835,7 +4847,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5015,7 +5027,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5039,7 +5051,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;34&lt;/td&gt;
     
@@ -5051,7 +5063,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5183,7 +5195,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5339,7 +5351,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5471,7 +5483,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5579,7 +5591,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5663,7 +5675,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5795,7 +5807,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5867,7 +5879,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -5903,7 +5915,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;35&lt;/td&gt;
     
@@ -5915,7 +5927,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6035,7 +6047,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6167,7 +6179,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6275,7 +6287,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6359,7 +6371,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6467,7 +6479,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6635,7 +6647,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6875,7 +6887,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -6971,7 +6983,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7103,7 +7115,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7127,7 +7139,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;36&lt;/td&gt;
     
@@ -7139,7 +7151,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7211,7 +7223,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7295,7 +7307,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7391,7 +7403,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7451,7 +7463,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7547,7 +7559,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7619,7 +7631,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7643,7 +7655,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;37&lt;/td&gt;
     
@@ -7655,7 +7667,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7787,7 +7799,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7847,7 +7859,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7919,7 +7931,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -7979,7 +7991,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8147,7 +8159,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8279,7 +8291,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8363,7 +8375,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8423,7 +8435,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8519,7 +8531,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8555,7 +8567,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;38&lt;/td&gt;
     
@@ -8567,7 +8579,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8819,7 +8831,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8903,7 +8915,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -8975,7 +8987,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9035,7 +9047,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;39&lt;/td&gt;
     
@@ -9047,7 +9059,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9251,7 +9263,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9311,7 +9323,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9431,7 +9443,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9599,7 +9611,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9623,7 +9635,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;40&lt;/td&gt;
     
@@ -9635,7 +9647,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9743,7 +9755,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9827,7 +9839,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -9983,7 +9995,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -10139,7 +10151,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -10319,7 +10331,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -10439,7 +10451,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -10595,7 +10607,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -10715,7 +10727,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -10895,7 +10907,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -10991,7 +11003,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -11087,7 +11099,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -11267,7 +11279,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -11363,7 +11375,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -11543,7 +11555,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -11627,7 +11639,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -11783,7 +11795,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -11903,7 +11915,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12047,7 +12059,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12167,7 +12179,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12227,7 +12239,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;41&lt;/td&gt;
     
@@ -12239,7 +12251,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12299,7 +12311,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12395,7 +12407,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12491,7 +12503,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12599,7 +12611,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12671,7 +12683,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12755,7 +12767,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12779,7 +12791,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;42&lt;/td&gt;
     
@@ -12791,7 +12803,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -12935,7 +12947,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13079,7 +13091,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13355,7 +13367,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13415,7 +13427,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13511,7 +13523,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13607,7 +13619,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13667,7 +13679,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13727,7 +13739,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13751,7 +13763,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;43&lt;/td&gt;
     
@@ -13763,7 +13775,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -13883,7 +13895,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -14015,7 +14027,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -14315,7 +14327,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -14339,7 +14351,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;44&lt;/td&gt;
     
@@ -14351,7 +14363,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -14459,7 +14471,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -14711,7 +14723,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -14795,7 +14807,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -14915,7 +14927,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -15047,7 +15059,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -15215,7 +15227,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -15407,7 +15419,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -15563,7 +15575,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -15623,7 +15635,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -15839,7 +15851,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -15875,7 +15887,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;45&lt;/td&gt;
     
@@ -15887,7 +15899,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -16127,7 +16139,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -16307,7 +16319,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -16415,7 +16427,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -16715,7 +16727,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -17063,7 +17075,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -17195,7 +17207,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -17471,7 +17483,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -17627,7 +17639,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -17735,7 +17747,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -18011,7 +18023,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -18407,7 +18419,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -18563,7 +18575,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -18815,7 +18827,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -18995,7 +19007,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -19103,7 +19115,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -19367,7 +19379,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -19499,7 +19511,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -19835,7 +19847,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -19943,7 +19955,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -19967,7 +19979,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;46&lt;/td&gt;
     
@@ -19979,7 +19991,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -20075,7 +20087,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -20243,7 +20255,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -20375,7 +20387,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -20483,7 +20495,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -20639,7 +20651,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -20807,7 +20819,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -20927,7 +20939,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21071,7 +21083,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21239,7 +21251,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21383,7 +21395,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21479,7 +21491,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21599,7 +21611,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21707,7 +21719,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21731,7 +21743,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;47&lt;/td&gt;
     
@@ -21743,7 +21755,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -21863,7 +21875,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -22055,7 +22067,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -22331,7 +22343,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -22487,7 +22499,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -22883,7 +22895,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -22907,7 +22919,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;48&lt;/td&gt;
     
@@ -22919,7 +22931,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23015,7 +23027,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23087,7 +23099,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23243,7 +23255,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23435,7 +23447,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23543,7 +23555,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23627,7 +23639,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23735,7 +23747,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23759,7 +23771,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;49&lt;/td&gt;
     
@@ -23771,7 +23783,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23903,7 +23915,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -23999,7 +24011,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -24071,7 +24083,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -24239,7 +24251,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -24395,7 +24407,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -24419,7 +24431,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;50&lt;/td&gt;
     
@@ -24431,7 +24443,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -24539,7 +24551,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -24659,7 +24671,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -24935,7 +24947,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25043,7 +25055,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25079,7 +25091,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25103,7 +25115,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;51&lt;/td&gt;
     
@@ -25115,7 +25127,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25247,7 +25259,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25331,7 +25343,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25403,7 +25415,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25511,7 +25523,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25559,7 +25571,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25607,7 +25619,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25667,7 +25679,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25751,7 +25763,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25847,7 +25859,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25907,7 +25919,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -25943,7 +25955,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 2px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;division&quot;&gt;
     
       &lt;td&gt;52&lt;/td&gt;
     
@@ -25955,7 +25967,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -26075,7 +26087,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -26183,7 +26195,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -26255,7 +26267,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -26351,7 +26363,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
@@ -26435,7 +26447,7 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
     
     &lt;/tr&gt;
   
-    &lt;tr style=&quot;border-top: 1px solid #be2edd;&quot;&gt;
+    &lt;tr class=&quot;group&quot;&gt;
     
       &lt;td&gt;&lt;/td&gt;
     
