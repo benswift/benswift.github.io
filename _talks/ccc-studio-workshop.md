@@ -96,6 +96,7 @@ there are lots of details on the workshop content page
 .wheelIndicator {
   font-size:2em;
   text-align:center;
+  display: block;
 }
 
 .wheelResult {
@@ -103,7 +104,7 @@ there are lots of details on the workshop content page
   background-color: #f5ddfa;
   border-left: 10px solid #be2edd;
   padding: 1em 1em;
-  margin: 0;
+  margin: 0 !important;
 }
 </style>
 
@@ -118,16 +119,16 @@ class="creativityWheel-canvas-result">________</span></strong>
 </p>
 
 <div style="width:100%; display:flex; justify-content:space-between;">
-<div class="wheelIndicator">⧨<div id="codeWheel-canvas"></div></div>
-<div class="wheelIndicator">⧨<div id="cultureWheel-canvas"></div></div>
-<div class="wheelIndicator">⧨<div id="creativityWheel-canvas"></div></div>
+<div><div class="wheelIndicator">⧨</div><div id="codeWheel-canvas"></div></div>
+<div><div class="wheelIndicator">⧨</div><div id="cultureWheel-canvas"></div></div>
+<div><div class="wheelIndicator">⧨</div><div id="creativityWheel-canvas"></div></div>
 </div>
 
 <script>
-const container = document.getElementsByClassName("slides")[0];
-const wheelWidth = parseFloat(window.getComputedStyle(container).width)/7;
 
 document.addEventListener("DOMContentLoaded", function(){
+
+const wheelWidth = Reveal.getConfig().width/7;
 
 let codeWheel = makeWheel(
   [
