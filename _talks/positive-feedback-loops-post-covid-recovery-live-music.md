@@ -58,8 +58,8 @@ class="areaWheel-canvas-result">________</span></strong> in live music?
 </p>
 
 <div style="width:100%; display:flex; justify-content:space-evenly;">
-<div><div class="wheelIndicator">⧨</div><div id="areaWheel-canvas"></div></div>
 <div><div class="wheelIndicator">⧨</div><div id="approachWheel-canvas"></div></div>
+<div><div class="wheelIndicator">⧨</div><div id="areaWheel-canvas"></div></div>
 </div>
 
 <script>
@@ -67,26 +67,6 @@ class="areaWheel-canvas-result">________</span></strong> in live music?
 document.addEventListener("DOMContentLoaded", function(){
 
 const wheelWidth = Reveal.getConfig().width/6;
-
-let areaWheel = makeWheel(
-  [
-    "regulation",
-    "music",
-    "artists",
-    "venues",
-    "audiences",
-    "promotion",
-    "logistics"
-  ],
-  "areaWheel-canvas",
-  wheelWidth,
-  (wheel, indicatedSegment) => {
-    targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
-    for (let e of targetSpans) {
-      e.textContent = indicatedSegment.text;
-    }
-  }
-);
 
 let approachWheel = makeWheel(
   [
@@ -100,6 +80,26 @@ let approachWheel = makeWheel(
     "down-tech"
   ],
   "approachWheel-canvas",
+  wheelWidth,
+  (wheel, indicatedSegment) => {
+    targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+    for (let e of targetSpans) {
+      e.textContent = indicatedSegment.text;
+    }
+  }
+);
+
+let areaWheel = makeWheel(
+  [
+    "regulation",
+    "music",
+    "artists",
+    "venues",
+    "audiences",
+    "promotion",
+    "logistics"
+  ],
+  "areaWheel-canvas",
   wheelWidth,
   (wheel, indicatedSegment) => {
     targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
