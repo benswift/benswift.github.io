@@ -10,9 +10,9 @@ summary: >-
 
 {% include slides/title.html %}
 
-<script src='{{ "/assets/js/TweenMax.min.js" | relative_url }}' type="text/javascript"></script>
-<script src='{{ "/assets/js/Winwheel.js" | relative_url }}' type="text/javascript"></script>
-<script src='{{ "/assets/js/ccc-workshop-wheels.js" | relative_url }}' type="text/javascript"></script>
+<script src="{% link assets/js/TweenMax.min.js %}"></script>
+<script src="{% link assets/js/Winwheel.js %}"></script>
+<script src="{% link assets/js/ccc-workshop-wheels.js %}"></script>
 
 {% include slides/ack-country.html %}
 
@@ -124,8 +124,10 @@ class="creativityWheel-canvas-result">________</span></strong>
 </div>
 
 <script>
-let container = document.getElementsByClassName("slides")[0];
-let wheelWidth = parseFloat(window.getComputedStyle(container).width)/7;
+const container = document.getElementsByClassName("slides")[0];
+const wheelWidth = parseFloat(window.getComputedStyle(container).width)/7;
+
+document.addEventListener("DOMContentLoaded", function(){
 
 let codeWheel = makeWheel(
   [
@@ -141,7 +143,14 @@ let codeWheel = makeWheel(
 	"cybersecurity"
   ],
   "codeWheel-canvas",
-  wheelWidth);
+  wheelWidth,
+  (wheel, indicatedSegment) => {
+    targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+    for (let e of targetSpans) {
+      e.textContent = indicatedSegment.text;
+    }
+  }
+);
 
 let creativityWheel = makeWheel(
   [
@@ -158,7 +167,14 @@ let creativityWheel = makeWheel(
 	"memes",
   ],
   "creativityWheel-canvas",
-  wheelWidth);
+  wheelWidth,
+  (wheel, indicatedSegment) => {
+    targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+    for (let e of targetSpans) {
+      e.textContent = indicatedSegment.text;
+    }
+  }
+);
 
 let cultureWheel = makeWheel(
   [
@@ -174,7 +190,15 @@ let cultureWheel = makeWheel(
 	"world peace"
   ],
   "cultureWheel-canvas",
-  wheelWidth);
+  wheelWidth,
+  (wheel, indicatedSegment) => {
+    targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+    for (let e of targetSpans) {
+      e.textContent = indicatedSegment.text;
+    }
+  }
+);
+});
 </script>
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/shapelined-qawemGipVPk-unsplash.jpg" heading="workshop goals" %}
