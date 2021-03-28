@@ -50,80 +50,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section id="title" class="center">
-  <h1 class="talk-title">Understanding &amp; enjoyment</h1>
-<p class="talk-subtitle">non-linear relationships in code art &amp; beyond</p>
-  <p class="talk-name"><a href="https://benswift.me">Dr. Ben Swift</a></p>
+  <h1 class="talk-title">Positive feedback loops</h1>
+<p class="talk-subtitle">Supporting a post-covid recovery for live music...<br><em>tech is not the (whole) answer</em></p>
+  <p class="talk-name"><a href="https://3ainstitute.org">ANU School of Cybernetics</a></p>
   
-  <p class="talk-date">20 May '20</p>
+  <p class="talk-date">28 Mar '21</p>
   <p><a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
   <svg class="icon"><use xlink:href="#fab.fa-creative-commons"></use></svg>
   <svg class="icon"><use xlink:href="#fab.fa-creative-commons-by"></use></svg>
@@ -138,122 +70,117 @@
 	<a href="https://vimeo.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-vimeo"></use></svg></a>
 	<a href="mailto:ben@benswift.me"><svg class="icon"><use xlink:href="#fas.fa-envelope"></use></svg></a>
   </nav>
-<script src="/assets/js/highlight.pack.js"></script><script src="/assets/js/extempore.min.js"></script><link rel="stylesheet" href="/assets/css/atom-one-dark.css">
-<script>
- hljs.highlightAll();
-</script></section><section id="ack-country" class="center" style="font-size: 1.5em;" data-background-image="/assets/images/talks/all/mount-majura-bushland.jpg">
+<script src="/assets/js/TweenMax.min.js"></script><script src="/assets/js/Winwheel.js"></script><script src="/assets/js/ccc-workshop-wheels.js"></script></section><section id="ack-country" class="center" style="font-size: 1.5em;" data-background-image="/assets/images/talks/all/mount-majura-bushland.jpg">
   <p>
     we acknowledge and celebrate <a href="https://aiatsis.gov.au/explore/australias-first-peoples">Australia's
     First Peoples</a> on whose traditional lands we meet, and pay our respect to
     the elders past, present and emerging
   </p>
-</section><section id="outline"><h2>outline</h2>
-<p><a href="#part-1">part un</a>: a complicated relationship</p>
-<p><a href="#part-2">part deux</a>: Ben codes the 80s</p>
-<p><a href="#part-3">part trois</a>: beyond enjoyment?</p></section><section class="impact center" data-background-color="#262626"><p style="font-size:0.6em;"><a href="https://benswift.me/talks/understanding-and-enjoyment/">https://benswift.me/talks/understanding-and-enjoyment/</a></p></section><section id="part-1" data-background-image="/assets/images/talks/understanding-and-enjoyment/kambah-high-demolition.jpg" data-background-size="cover" data-background-position="center">
+</section><section class="center">
+<script src="/assets/js/qrcode.min.js"></script>
+<div id="qrcode"></div>
+<p style="text-align: center;"><a href="https://benswift.me/talks/positive-feedback-loops-panel/">https://benswift.me/talks/positive-feedback-loops-panel/</a></p>
+<script type="text/javascript">
+ let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
+ let qrDiv = document.getElementById("qrcode");
+ new QRCode(qrDiv,
+            {text: "https://benswift.me/talks/positive-feedback-loops-panel/",
+             width: qrSize,
+             height: qrSize,
+             colorDark : "#333",
+             colorLight : "#fafafa",
+             correctLevel : QRCode.CorrectLevel.H});
+ // hacky page centering
+ document.querySelector("#qrcode > img").style.margin = "0 auto";
+</script>
+</section><section data-background-image="/assets/images/talks/positive-feedback-loops/jimi-hendrix.jpg" data-background-size="cover" data-background-position="center">
   
-</section><section data-background-image="/assets/images/talks/u3a-world-since-google/ben-smiths-sounscapes.jpg" data-background-size="cover" data-background-position="center">
+  <h2>feedback loops</h2>
   
-<p>The code/creativity/culture (c/c/c) studio is a research &amp; creative practice
-collective within the Research School of Computer Science. We exist to open up
-spaces for discussion about the way that <code>code</code> is shaping flows of
-information/culture/humanity in today’s (and tomorrow’s) world.</p>
-<p><a href="https://cs.anu.edu.au/code-creativity-culture/">https://cs.anu.edu.au/code-creativity-culture/</a></p></section><section data-background-image="/assets/images/talks/understanding-and-enjoyment/strong-songs-kirk.jpeg" data-background-size="cover" data-background-position="center">
+<p>back to the gigs: how does the live music industry get back on its feet?</p>
+<p>feedback in complex systems: not inherently +ve or -ve, but can they be tamed?</p></section><section data-background-image="/assets/images/talks/positive-feedback-loops/girl-from-perth.jpg" data-background-size="cover" data-background-position="center">
   
-</section><section data-background-image="/assets/images/talks/understanding-and-enjoyment/jehyun-sung-6U5AEmQIajg-unsplash.jpg" data-background-size="cover" data-background-position="center">
+  <h2>School of Cybernetics</h2>
   
-</section><section class="center"><pre style="font-size:0.9em;"><code class="language-python"># a 3Ai twitter bot
-for tweet in api.user("3AInstitute").timeline(limit=200):
-  if tweet.user.location == "San Francisco":
-    tweet.retweet_with_comment("I have so. many. questions.")
-</code></pre></section><section id="collaborative-task-1-5mins"><h2>collaborative task 1 (5mins)</h2>
-<ul>
-  <li>nominate a storyteller</li>
-  <li>at this point, we’re thinking in <em>generalities</em>
-</li>
-</ul></section><section id="part-2" data-background-image="/assets/images/talks/understanding-and-enjoyment/mick-haupt-AOyR7aMFHyU-unsplash.jpg" data-background-size="cover" data-background-position="center">
-  
-  <h2>Ben codes the 80s</h2>
-  
-</section><section data-background-image="/assets/images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" data-background-size="cover" data-background-position="center">
-  
-</section><section class="impact center" data-background-color="#262626"><p>understanding &amp; enjoyment</p>
-<p class="fragment">it’s complicated</p></section><section class="impact center" data-background-color="#262626"><p><strong>3A3Ii</strong>: there are 3 “I”s as well as the 3 “A”s</p></section><section id="indicators"><h2>indicators</h2>
-<blockquote>
-  <p>How do we measure performance and success?</p>
+<p>finding (and mastering) the feedback loops in cyberphysical systems</p></section><section><style>
+.wheelIndicator {
+  font-size:2em;
+  line-height: 0.7;
+  text-align:center;
+  display: block;
+}
 
-  <p>Technical systems have typically been measured on their efficiency. However,
-when systems start to learn and change their behaviour over time, the objective
-of efficiency may begin to clash with ideals that have previously been
-implicitly or tacitly inserted into the process by the humans in the loop. How
-do we start to conceptualise building for sustainability, for beauty, for
-values?</p>
-</blockquote></section><section id="interfaces"><h2>interfaces</h2>
-<blockquote>
-  <p>How will technologies, systems and humans work together?</p>
+.wheelResult {
+  font-size:1.3em;
+  background-color: #f5ddfa;
+  border-left: 10px solid #be2edd;
+  padding: 1em 1em;
+  margin: 0;
+}
+</style>
+<p class="wheelResult">
 
-  <p>In previous decades, we interfaced with computational systems through a screen
-and a keyboard. This paradigm is already being disrupted as ‘smart’ objects
-enter our lives. What will it mean when AI-enabled systems are all around us,
-sensing and responding to us? How to do protect our privacy? What happens to
-all that data?</p>
-</blockquote></section><section id="intent"><h2>intent</h2>
-<blockquote>
-  <p>Why has the system been constructed? by whom? and for what purposes?</p>
+can we <strong><span class="approachWheel-canvas-result">________</span></strong> the <strong><span class="areaWheel-canvas-result">________</span></strong> in live music?
 
-  <p>It is sometimes tempting to think of a single, monolithic AI. However, AIs
-will be built for different purposes and with very different intentionality,
-and inside different larger systems. Making sense of, and mapping, that
-broader intentionality is central to the emergent new applied science.</p>
-</blockquote></section><section id="collaborative-task-2-10mins"><h2>collaborative task 2 (10mins)</h2>
-<p>design intervention: what scaffolding could you provide to move the needle on
-u&amp;e in a livecoding gig?</p>
-<ul>
-  <li>context/staging</li>
-  <li>preamble/postamble</li>
-  <li>auxilliary sound/visuals</li>
-  <li>examples/guidelines</li>
-  <li>…</li>
-</ul></section><section class="impact center" data-background-color="#262626"><p>understanding &amp; en<strong>joyment</strong></p></section><section class="impact center" data-background-color="#262626" id="part-3"><p>understanding &amp; en<strong>gagement</strong></p></section><section id="what-can-we-learn-about-ue-for"><h2>what can we learn about u&amp;e for…</h2>
-<ul>
-  <li>labour/automation</li>
-  <li>digital rights &amp; privacy</li>
-  <li>democracy</li>
-  <li>platform economics</li>
-  <li>UBI</li>
-  <li>…</li>
-</ul></section><section class="impact center" data-background-color="#262626" id="part-3"><p>understanding &amp; en<strong>franchisement</strong></p></section><section id="whats-next"><h2>what’s next?</h2>
-<p>these questions keep me up at night</p>
-<p>if you’d like to help (or just to hang out with the c/c/c group more generally)
-then let me know 😊</p></section><section class="center" data-background-image="/assets/images/talks/all/camylla-battani-AoqgGAqrLpU-unsplash.jpg">
+</p>
+<div style="width:100%; display:flex; justify-content:space-evenly;">
+<div>
+<div class="wheelIndicator">⧨</div>
+<div id="areaWheel-canvas"></div>
+</div>
+<div>
+<div class="wheelIndicator">⧨</div>
+<div id="approachWheel-canvas"></div>
+</div>
+</div>
+<script>
 
-  <style>
-   #contact-details {
-	 font-size: 2.5vw;
-	 list-style: none;
-	 display: table;
-	 margin: 50vh auto 0 0;
-   }
+document.addEventListener("DOMContentLoaded", function(){
 
-   #contact-details li {
-	 background: rgba(255, 255, 255, 0.75);
-	 padding: 0.2em 0.4em;
-	 margin-bottom: 0.5em;
-   }
+const wheelWidth = Reveal.getConfig().width/6;
 
-   #contact-details a.mono {
-	 font-family: monospace;
-   }
+let areaWheel = makeWheel(
+  [
+    "regulation",
+    "music",
+    "artists",
+    "venues",
+    "audiences",
+    "promotion",
+    "logistics"
+  ],
+  "areaWheel-canvas",
+  wheelWidth,
+  (wheel, indicatedSegment) => {
+    targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+    for (let e of targetSpans) {
+      e.textContent = indicatedSegment.text;
+    }
+  }
+);
 
-  </style>
-
-  <ul id="contact-details">
-	<li><a href="mailto:ben.swift@anu.edu.au"><svg class="icon"><use xlink:href="#fas.fa-envelope"></use></svg> ben.swift@anu.edu.au</a></li>
-	<li><a href="https://benswift.me"><svg class="icon"><use xlink:href="#fas.fa-link"></use></svg> https://benswift.me</a></li>
-	<li><a href="https://twitter.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-twitter"></use></svg>  benswift</a></li>
-  </ul>
-
-<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+let approachWheel = makeWheel(
+  [
+    "block",
+    "unblock",
+    "intensify",
+    "abate",
+    "incentivise",
+    "disincentivise",
+    "up-tech",
+    "down-tech"
+  ],
+  "approachWheel-canvas",
+  wheelWidth,
+  (wheel, indicatedSegment) => {
+    targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+    for (let e of targetSpans) {
+      e.textContent = indicatedSegment.text;
+    }
+  }
+);
+});
+</script><svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
@@ -290,10 +217,6 @@ then let me know 😊</p></section><section class="center" data-background-image
         <symbol id="fas.fa-envelope" viewbox="0 0 512 512">
             <title>envelope</title>
             <path class="path1" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
-        </symbol>
-        <symbol id="fas.fa-link" viewbox="0 0 512 512">
-            <title>link</title>
-            <path class="path1" d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path>
         </symbol>
         </defs>
               </svg></section>

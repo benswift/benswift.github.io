@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-18T11:14:39+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-28T19:49:13+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
 of&lt;/a&gt; + their &lt;a href=&quot;https://www.stats.govt.nz&quot;&gt;NZ
 counterparts&lt;/a&gt;) have updated the &lt;a href=&quot;https://www.arc.gov.au/grants/grant-application/classification-codes-rfcd-seo-and-anzsic-codes&quot;&gt;&lt;em&gt;Field of Research&lt;/em&gt;
 codes&lt;/a&gt;
-which Aussie academics use to classify their work.&lt;sup id=&quot;fnref:interdisciplinary-complaint&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:interdisciplinary-complaint&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+which Aussie academics use to classify their work.&lt;sup id=&quot;fnref:interdisciplinary-complaint&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:interdisciplinary-complaint&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;I was trying to browse these new codes recently, and had a bummer of a time
 trying to find the actual classification scheme (codes, hierarchy &amp;amp; code names).
@@ -13,7 +13,7 @@ a bummer when all you want to do is &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;F&lt;
 an HTML table in your web browser.&lt;/p&gt;
 
 &lt;p&gt;So, I’ve copied the relevant part of the spreadsheet into a regular-ol’ webpage
-here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:hosting&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:hosting&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2020-anzrc-field-of-research-for-codes&quot;&gt;2020 ANZRC Field of Research (FoR) Codes&lt;/h2&gt;
 
@@ -26610,7 +26610,7 @@ a &lt;a href=&quot;https://phoenixnap.com/blog/what-is-yaml-with-examples&quot;&
 of just a &lt;code&gt;.txt&lt;/code&gt; or &lt;code&gt;.md&lt;/code&gt; or &lt;code&gt;.docx&lt;/code&gt;. In my courses I use the ANU’s
 (self-hosted) GitLab server for all submitted work, and I make heavy use of
 GitLab CI (continuous integration) scripts to provide instant feedback on
-various aspects of the students submissions&lt;sup id=&quot;fnref:autograding&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:autograding&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Using a
+various aspects of the students submissions&lt;sup id=&quot;fnref:autograding&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:autograding&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Using a
 machine-readable file format like YAML for this means that I can provide more
 targeted instant feedback about whether they’ve filled it out correctly.&lt;/p&gt;
 
@@ -27068,7 +27068,7 @@ potential of animated “tooltip” style code annotations, I’d love to have m
 detailed (parametric) control over the display of the code/text itself,
 especially in a “handwritten” style. Being able to “write” the code in real-time
 in sync with the music in a livecoding setup would look super cool, and I
-&lt;sup id=&quot;fnref:unproven-hypothesis&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:unproven-hypothesis&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; think that it might even help folks follow what’s going
+&lt;sup id=&quot;fnref:unproven-hypothesis&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:unproven-hypothesis&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; think that it might even help folks follow what’s going
 on in terms of which bits of code are responsible for which parts of the music.&lt;/p&gt;
 
 &lt;p&gt;Making this happen would require:&lt;/p&gt;
