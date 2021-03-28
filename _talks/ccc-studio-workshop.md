@@ -95,6 +95,7 @@ there are lots of details on the workshop content page
 <style>
 .wheelIndicator {
   font-size:2em;
+  line-height: 0.7;
   text-align:center;
   display: block;
 }
@@ -104,7 +105,7 @@ there are lots of details on the workshop content page
   background-color: #f5ddfa;
   border-left: 10px solid #be2edd;
   padding: 1em 1em;
-  margin: 0 !important;
+  margin: 0;
 }
 </style>
 
