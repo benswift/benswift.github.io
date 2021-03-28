@@ -11,7 +11,6 @@ Jekyll::Hooks.register :site, :post_write do |site|
                                   :report_missing_names => true
                                 },
                                 :check_img_http => true,
-                                :disable_external => true, # change to false for a thorough check, but takes ages
-                                :file_ignore => [/assets\/reveal.js-3.8.0\//]
+                                :disable_external => true # change to false for a thorough check, but takes ages
                               }).run
 end
