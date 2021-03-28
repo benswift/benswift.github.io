@@ -1,7 +1,7 @@
 ---
 event: SoCy music festival
 title: Positive feedback loops
-subtitle: Supporting a post-covid recovery for live music
+subtitle: Supporting a post-covid recovery for live music...<br /><em>tech is not the (whole) answer</em>
 author: <a href="https://3ainstitute.org">ANU School of Cybernetics</a>
 date: "2021-03-28"
 permalink: /talks/positive-feedback-loops-panel/
@@ -20,11 +20,15 @@ hidden: true
 
 {% include qrcode.html text="https://benswift.me/talks/positive-feedback-loops-panel/" showlink=true %}
 
-{% include slides/background-image.html image="images/talks/positive-feedback-loops/gaurang-alat-OxSlrl0gSWk-unsplash.jpg" %}
+{% include slides/background-image.html image="images/talks/positive-feedback-loops/jimi-hendrix.jpg" heading="feedback loops" %}
 
-{% include slides/background-image.html image="images/talks/positive-feedback-loops/jimi-hendrix.jpg" %}
+back to the gigs: how does the live music industry get back on its feet?
 
-{% include slides/background-image.html image="images/talks/positive-feedback-loops/girl-from-perth.jpg" %}
+feedback in complex systems: not inherently +ve or -ve, but can they be tamed?
+
+{% include slides/background-image.html image="images/talks/positive-feedback-loops/girl-from-perth.jpg" heading="School of Cybernetics" %}
+
+finding (and mastering) the feedback loops in cyberphysical systems
 
 ---
 
