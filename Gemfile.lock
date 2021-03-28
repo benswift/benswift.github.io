@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://gitlab.cecs.anu.edu.au/lucy/jekyll-revealify-plugin.git
-  revision: 60302742dcf0e729b851db0f9f0672b27e4d3259
+  revision: d8fb3b2812a2eef4e2815938d49021a07d9917a5
   branch: master
   specs:
     jekyll-revealify-plugin (2.0.0.beta)
@@ -74,18 +74,18 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     latex-decode (0.3.2)
     liquid (4.0.3)
-    listen (3.4.1)
+    listen (3.5.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     mini_portile2 (2.5.0)
-    nokogiri (1.11.1)
+    nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     nokogumbo (2.0.4)
