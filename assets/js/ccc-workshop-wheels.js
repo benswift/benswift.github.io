@@ -22,6 +22,12 @@ function shuffleArray(array) {
   }
 }
 
+function maxStrLen(strArray) {
+  return strArray.reduce(
+    (max, nextStr) => Math.max(max, nextStr.length),
+    0);
+};
+
 function makeWheel(labels, canvasId, radius, callbackFinished) {
   let canvasDiv = document.getElementById(canvasId);
 
@@ -51,7 +57,7 @@ function makeWheel(labels, canvasId, radius, callbackFinished) {
     canvasId: canvasId,
     numSegments: labels.length,
     outerRadius: radius * 0.99,
-    textFontSize: radius * 0.07,
+    textFontSize: radius * Math.min(0.15, 1.2/maxStrLen(labels)),
     textMargin: 0,
     segments: labels.map((t, i) => ({
       text: t,
