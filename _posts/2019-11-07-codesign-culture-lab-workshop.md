@@ -42,10 +42,10 @@ about CS/Engineering curriculum design, the arts, and life within the
 socio-technical assemblage of our present age, then come along and have your
 say!
 
-This workshop is part of the [CoDesign Culture
-Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab). If
-you're coming to the culture lab and you'd like to be part of the workshop, [get
-in touch](mailto:ben.swift@anu.edu.au) 😊
+This workshop is part of the
+[CoDesign Culture Lab](https://cecs.anu.edu.au/events/event-series/codesign-culture-lab).
+If you're coming to the culture lab and you'd like to be part of the workshop,
+[get in touch](mailto:ben.swift@anu.edu.au) 😊
 
 ### Timeline
 
@@ -62,7 +62,7 @@ in touch](mailto:ben.swift@anu.edu.au) 😊
 
 ---
 
-- **10:30**:  break (morning tea)
+- **10:30**: break (morning tea)
 
 ---
 
@@ -122,9 +122,11 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
 > Genius learns from nature, its own nature. Talent learns from art. Also,
 > creativity and culture seem to be important. _Olivia Wilde_[^wilde]
 
-[^wilde]: obviously, this is fake, although [Oscar Wilde said something
-    similar](https://www.azquotes.com/quote/776726), and I'm _pretty sure_ he
-    was [Olivia Wilde's](https://www.imdb.com/name/nm1312575/) uncle
+[^wilde]:
+    obviously, this is fake, although
+    [Oscar Wilde said something similar](https://www.azquotes.com/quote/776726),
+    and I'm _pretty sure_ he was
+    [Olivia Wilde's](https://www.imdb.com/name/nm1312575/) uncle
 
 {:.hl-para}
 
@@ -139,8 +141,8 @@ context, they're probably not too dissimilar from first-year undergraduates.
 
 [^assessment]:
     you can think of it as an assignment, but that word has some baggage, so
-	just think of it as a description of a thing which a student must submit
-	which will be evaluated on whether it's a good thing
+    just think of it as a description of a thing which a student must submit
+    which will be evaluated on whether it's a good thing
 
 [^culture]:
     Part of the challenge here is that we don't live in a monoculture, at a
@@ -171,7 +173,7 @@ things that are usually important in an assessment item:
 
 - **faq**: a list of (anticipated) questions the students might have about the
   assessment task
-  
+
 At the end of this session you get to present your assessment task to the wider
 workshop. So, your group will need to organise:
 
@@ -182,17 +184,17 @@ workshop. So, your group will need to organise:
 If you want to work on paper there are paper templates floating around (let us
 know if you'd like one). If you've got a digital scribe, then there are
 electronic templates ([markdown]({% link
-assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %}) and
-[MS Word]({% link
+assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %}) and [MS
+Word]({% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx %})).
 
 {:.hl-para}
 
-One more thing to keep in mind: in the [next group work
-session](#group-work-session-2) you'll be writing a set of assessment criteria
-which will be used to assess the submissions for your assessment task. So you
-don't have to worry about writing them down formally just yet, but keep that in
-mind as you design your assessment task.
+One more thing to keep in mind: in the
+[next group work session](#group-work-session-2) you'll be writing a set of
+assessment criteria which will be used to assess the submissions for your
+assessment task. So you don't have to worry about writing them down formally
+just yet, but keep that in mind as you design your assessment task.
 
 ### Let's spin the wheels! {#spin-the-wheels}
 
@@ -200,7 +202,9 @@ You don't get to pick the code concept/cultural problem/creative process triad
 which forms the basis for your assessment task. Instead, we'll spin the
 code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
-[^winwheel]: wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas McKechie
+[^winwheel]:
+    wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas
+    McKechie
 
 [^fate]: well, the PRNG in your web browser, anyway
 
@@ -241,6 +245,8 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 _code_ wheel: <strong><span class="codeWheel-canvas-result"></span></strong>
 
 <script>
+document.addEventListener("DOMContentLoaded", function(){
+
 // based on a (slightly tweaked) version of the ACM BoK 2016
 let acmBoK2016 = [
   "Circuits & Electronics",
@@ -269,7 +275,17 @@ let benCodeConcepts = [
   "cybersecurity"
 ]
 
-let codeWheel = makeWheel(benCodeConcepts, "codeWheel-canvas");
+let codeWheel = makeWheel(
+    benCodeConcepts, 
+    "codeWheel-canvas",
+    null,
+    (wheel, indicatedSegment) => {
+      targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+      for (let e of targetSpans) {
+        e.textContent = indicatedSegment.text;
+      }
+    }
+);});
 </script>
 
 #### the creativity wheel
@@ -282,9 +298,12 @@ the problem.
 
 {:.wheelResult}
 
-_creativity_ wheel: <strong><span class="creativityWheel-canvas-result"></span></strong>
+_creativity_ wheel:
+<strong><span class="creativityWheel-canvas-result"></span></strong>
 
 <script>
+document.addEventListener("DOMContentLoaded", function(){
+
 let creativityWheel = makeWheel(
   [
 	"music",
@@ -299,7 +318,15 @@ let creativityWheel = makeWheel(
 	"creative writing",
 	"memes",
   ],
-  "creativityWheel-canvas");
+    "creativityWheel-canvas",
+    null,
+    (wheel, indicatedSegment) => {
+      targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+      for (let e of targetSpans) {
+        e.textContent = indicatedSegment.text;
+      }
+    }
+);});
 </script>
 
 #### the culture wheel
@@ -315,9 +342,12 @@ just picking a theme which implies that there's only one "right approach".
 
 {:.wheelResult}
 
-_culture_ wheel: <strong><span class="cultureWheel-canvas-result"></span></strong>
+_culture_ wheel:
+<strong><span class="cultureWheel-canvas-result"></span></strong>
 
 <script>
+document.addEventListener("DOMContentLoaded", function(){
+
 let cultureWheel = makeWheel(
   [
    "privacy",
@@ -331,7 +361,15 @@ let cultureWheel = makeWheel(
    "food security",
    "world peace"
   ],
-  "cultureWheel-canvas");
+  "cultureWheel-canvas",
+    null,
+    (wheel, indicatedSegment) => {
+      targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+      for (let e of targetSpans) {
+        e.textContent = indicatedSegment.text;
+      }
+    }
+);});
 </script>
 
 {:.wheelResult}
@@ -388,11 +426,10 @@ _done_ one).
   students from a wide range of backgrounds/abilities?
 
 - do _you_ have any favourite resources or templates for designing an assessment
-  task? a quick google turns up a few (e.g. this [blog post from the Australian
-  Computing
-  Academy](https://blog.aca.edu.au/assessing-the-digital-technologies-curriculum-5f81a98ce053)
-  or this [more general assessment design framework from
-  UTS](https://www.uts.edu.au/research-and-teaching/learning-and-teaching/assessment-futures/designing-and-redesigning))
+  task? a quick google turns up a few (e.g. this
+  [blog post from the Australian Computing Academy](https://blog.aca.edu.au/assessing-the-digital-technologies-curriculum-5f81a98ce053)
+  or this
+  [more general assessment design framework from UTS](https://www.uts.edu.au/research-and-teaching/learning-and-teaching/assessment-futures/designing-and-redesigning))
   but I'm sure you can find others as well
 
 - what's the worst-case scenario you'd expect if you set your assessment task
@@ -454,8 +491,7 @@ format of this document is up to you. There are a few ways to do this:
 
 Thanks so much for participating 😊 If your group wrote the assessment item on
 paper, can you hand it to Ben (or one of the other facilitators) before you
-leave ? If you did it electronically (e.g. using the [markdown
-template]({% link
+leave ? If you did it electronically (e.g. using the [markdown template]({% link
 assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %})) then
 can you [email it to Ben](mailto:ben.swift@anu.edu.au)?
 
