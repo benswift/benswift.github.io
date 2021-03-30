@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#be2edd">
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#be2edd" />
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>highlight.js with xtlang support | benswift.me</title>
@@ -12,8 +12,8 @@
 <meta property="og:title" content="highlight.js with xtlang support" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Note: adding syntax-highlighted xtlang to your website is now easier than ever because highlightjs-extempore is an official hljs module. While this page is still an interesting dive into how I did it at the time, you should now just follow the instructions on GitHub." />
-<meta property="og:description" content="Note: adding syntax-highlighted xtlang to your website is now easier than ever because highlightjs-extempore is an official hljs module. While this page is still an interesting dive into how I did it at the time, you should now just follow the instructions on GitHub." />
+<meta name="description" content="{:.hl-para} Note: adding syntax-highlighted xtlang to your website is now easier than ever because highlightjs-extempore is an official hljs module. While this page is still an interesting dive into how I did it at the time, you should now just follow the instructions on GitHub." />
+<meta property="og:description" content="{:.hl-para} Note: adding syntax-highlighted xtlang to your website is now easier than ever because highlightjs-extempore is an official hljs module. While this page is still an interesting dive into how I did it at the time, you should now just follow the instructions on GitHub." />
 <link rel="canonical" href="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" />
 <meta property="og:url" content="https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/" />
 <meta property="og:site_name" content="benswift.me" />
@@ -24,18 +24,36 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"highlight.js with xtlang support","dateModified":"2019-01-17T10:54:00+11:00","datePublished":"2019-01-17T10:54:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/"},"url":"https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"Note: adding syntax-highlighted xtlang to your website is now easier than ever because highlightjs-extempore is an official hljs module. While this page is still an interesting dive into how I did it at the time, you should now just follow the instructions on GitHub.","@context":"https://schema.org"}</script>
+{"headline":"highlight.js with xtlang support","dateModified":"2019-01-17T10:54:00+11:00","datePublished":"2019-01-17T10:54:00+11:00","url":"https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/01/17/highlight-js-with-xtlang-support/"},"description":"{:.hl-para} Note: adding syntax-highlighted xtlang to your website is now easier than ever because highlightjs-extempore is an official hljs module. While this page is still an interesting dive into how I did it at the time, you should now just follow the instructions on GitHub.","author":{"@type":"Person","name":"Ben Swift"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+ <script>
+  if (
+    !sessionStorage.getItem("_swa") &&
+    document.referrer.indexOf(location.protocol + "//" + location.host) !== 0
+  ) {
+    fetch(
+      "https://counter.dev/track?" +
+        new URLSearchParams({
+          referrer: document.referrer,
+          screen: screen.width + "x" + screen.height,
+          user: "benswift",
+          utcoffset: "11",
+        })
+    );
+  }
+  sessionStorage.setItem("_swa", "1");
+</script>
 
 
-<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"benswift",utcoffset:"11"}))};sessionStorage.setItem("_swa","1");</script>
-
-
-	<link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href='/assets/css/main.css'
+    />
   </head>
   <body>
-	<div class="container">
-	  <header>
+    <div class="container">
+      <header>
 
   <nav class="logo" aria-label="site home">
 	<a href="/">benswift.me</a>
@@ -64,8 +82,7 @@
 
 </header>
 
-	  <main aria-label="Content">
-		<article>
+      <main aria-label="Content"><article>
   <p class="post-date">17 Jan '19</p>
   <h1><p>highlight.js with xtlang support</p>
 </h1>
@@ -73,14 +90,13 @@
 <p class="post-tag-container">
   
   <a class="post-tag" href='/blog/tag/web'>
-	web
+    web
   </a>
   
 </p>
 
-
-  <p class="hl-para"><strong>Note</strong>: adding syntax-highlighted xtlang to your website is now easier than
-ever because
+ <p>{:.hl-para} <strong>Note</strong>: adding syntax-highlighted xtlang to your website is now
+easier than ever because
 <a href="https://github.com/highlightjs/highlightjs-extempore">highlightjs-extempore</a> is
 an official hljs module. While this page is still an interesting dive into how I
 did it at the time, you should now just follow the instructions on GitHub.</p>
@@ -117,22 +133,22 @@ blog.</p>
 
 <h3 id="does-extemporextlang-have-highlightjs-support-now">Does Extempore/xtlang have highlight.js support now?</h3>
 
-<p>Yep, <a href="https://github.com/cyblue9"><code>@blue9</code></a> ported the <a href="https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/lisp.py?at=default&amp;fileviewer=file-view-default#lisp.py-2420">Scheme/xtlang
-lexer</a>
+<p>Yep, <a href="https://github.com/cyblue9"><code>@blue9</code></a> ported the
+<a href="https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/lisp.py?at=default&amp;fileviewer=file-view-default#lisp.py-2420">Scheme/xtlang lexer</a>
 that I wrote for Pygments, which is a <em>big</em> help to the Extempore community
 (thanks <code>blue9</code>).</p>
 
 <h3 id="isnt-it-just-a-matter-of-adding-xtlang-to-the-highlightjs-build-step">Isn’t it just a matter of adding <code>xtlang</code> to the highlight.js build step?</h3>
 
 <p>No, because <a href="https://github.com/highlightjs/highlightjs-xtlang#usage">reasons</a>.
-It’s a real mess, and we’re waiting on <a href="https://github.com/highlightjs/highlight.js/pull/1888">this
-PR</a> to land before it
-gets easier.</p>
+It’s a real mess, and we’re waiting on
+<a href="https://github.com/highlightjs/highlight.js/pull/1888">this PR</a> to land before
+it gets easier.</p>
 
 <h3 id="howd-you-get-it-working-then">How’d you get it working, then?</h3>
 
-<p>Hacks upon hacks. If you really wanna know, it’s in <a href="https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang">this
-branch</a>
+<p>Hacks upon hacks. If you really wanna know, it’s in
+<a href="https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang">this branch</a>
 (although the final product, <code>highlight.pack.js</code> is in the main <code>source</code>
 branch).</p>
 
@@ -170,8 +186,9 @@ project as well.</p>
 
 <h3 id="will-it-always-be-this-complicated-to-set-up">Will it always be this complicated to set up?</h3>
 
-<p>No, once the <a href="https://github.com/highlightjs/highlight.js/pull/1888">aformentioned issue</a>
-is sorted out, it should be much easier to get a “base” package of highlight.js
+<p>No, once the
+<a href="https://github.com/highlightjs/highlight.js/pull/1888">aformentioned issue</a> is
+sorted out, it should be much easier to get a “base” package of highlight.js
 from the main download website/CDN, and then to add any extras (e.g.
 Extempore/xtlang) as needed. But until that happens, shenanigans are required.</p>
 
@@ -188,13 +205,11 @@ npm packages and staring at the Chrome developer tools.</p>
 <h3 id="can-i-use-your-build-of-highlightjs-to-font-lock-xtlang-code-on-my-own-site">Can I use your build of highlight.js to font-lock xtlang code on my own site?</h3>
 
 <p>Sure, I’d be pumped if you did. If you want, you can check out the
-<a href="https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang"><code>hljs-with-xtlang</code>
-branch</a> of
-this repo and follow the instructions therein to make your own custom build. Or,
-if you don’t want to do that, you could just use the one you’ve already
+<a href="https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang"><code>hljs-with-xtlang</code> branch</a>
+of this repo and follow the instructions therein to make your own custom build.
+Or, if you don’t want to do that, you could just use the one you’ve already
 downloaded (since you’re visiting this website). Here’s a <a href="/assets/js/highlight.pack.js">direct
-link</a> if you want to do
-things that way.</p>
+link</a> if you want to do things that way.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:cdn" role="doc-endnote">
@@ -204,89 +219,103 @@ things that way.</p>
 </div>
 
 </article>
-
-
-	  </main>
-	  <footer>
+</main>
+      <footer>
   <script>
-   const cafeUrls = [
-	 "https://biginelli.com/",
-	 "http://tilleys.com.au",
-	 "https://www.facebook.com/goodbrothercafe/",
-	 "https://frontgallerycafe.com",
-	 "https://www.facebook.com/thecoffeegrounds",
-	 "https://redbrickcoffee.com.au/redbrick/"
-   ];
-   const randomCafe = () => {
-	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
-   };
+    const cafeUrls = [
+      "https://biginelli.com/",
+      "http://tilleys.com.au",
+      "https://www.facebook.com/goodbrothercafe/",
+      "https://frontgallerycafe.com",
+      "https://www.facebook.com/thecoffeegrounds",
+      "https://redbrickcoffee.com.au/redbrick/",
+    ];
+    const randomCafe = () => {
+      window.location.href =
+        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
+    };
   </script>
 
   <!-- colophon -->
   <p>
-	designed & built with
-	<a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
-	<a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
-	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a> on
-	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
-	by Ben Swift
+    designed & built with
+    <a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
+    <a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
+    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
+      ><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a
+    >
+    on unceded
+    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
+      >Ngunnawal country</a
+    >
+    by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em;">
-	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
+  <p style="font-size: 1.3em"><a
+  title="CC BY-NC-SA licence"
+  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
 </a>
-
-  </p>
+</p>
 
   <!-- throw shade on IE -->
   <p>
-	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
-	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+    uses
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
+    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>96e618982</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/96e618982/_posts/2019-01-17-highlight-js-with-xtlang-support.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-01-17-highlight-js-with-xtlang-support.md">page history</a>
-	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
+    site revision <code>03af03f74</code> (see
+    <a
+      href="https://github.com/benswift/benswift.github.io/blob/03af03f74/_posts/2019-01-17-highlight-js-with-xtlang-support.md"
+      >source</a
+    >,
+    <a
+      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-01-17-highlight-js-with-xtlang-support.md"
+      >page history</a
+    >
+    on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
   <!-- anchor.js -->
   <script src='/assets/js/anchor.js'></script>
 
 <script>
- anchors.options = {
-   visible: "touch",
-   icon: "#"
- };
- document.addEventListener("DOMContentLoaded", function(event) {
-   anchors.add("article > h2, article > h3");
- });
+  anchors.options = {
+    visible: "touch",
+    icon: "#",
+  };
+  document.addEventListener("DOMContentLoaded", function (event) {
+    anchors.add(
+      "article > h2, article > h3"
+    );
+  });
 </script>
 
 
   <!-- highlight.js -->
   <script src="/assets/js/highlight.pack.js"></script>
 <script src="/assets/js/extempore.min.js"></script>
-<link rel="stylesheet" href="/assets/css/atom-one-dark.css">
+<link rel="stylesheet" href="/assets/css/atom-one-dark.css" />
 
 <script>
- hljs.highlightAll();
+  hljs.highlightAll();
 </script>
 
 
-  <script src='/assets/js/os-aware-modifiers.js' type="text/javascript"></script>
-
+  <script
+    src='/assets/js/os-aware-modifiers.js'
+    type="text/javascript"
+  ></script>
 </footer>
 
-	</div>
-	<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    </div>
+    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com

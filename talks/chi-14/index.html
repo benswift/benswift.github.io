@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#be2edd">
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#be2edd" />
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Coding Livecoding | benswift.me</title>
@@ -24,18 +24,36 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Coding Livecoding","dateModified":"2014-04-29T00:00:00+10:00","datePublished":"2014-04-29T00:00:00+10:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/chi-14/"},"url":"https://benswift.me/talks/chi-14/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"My talk at CHI ‘14: SIGCHI Conference on Human Factors in Computing Systems. Here’s the paper.","@context":"https://schema.org"}</script>
+{"headline":"Coding Livecoding","dateModified":"2014-04-29T00:00:00+10:00","datePublished":"2014-04-29T00:00:00+10:00","url":"https://benswift.me/talks/chi-14/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/chi-14/"},"description":"My talk at CHI ‘14: SIGCHI Conference on Human Factors in Computing Systems. Here’s the paper.","author":{"@type":"Person","name":"Ben Swift"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+ <script>
+  if (
+    !sessionStorage.getItem("_swa") &&
+    document.referrer.indexOf(location.protocol + "//" + location.host) !== 0
+  ) {
+    fetch(
+      "https://counter.dev/track?" +
+        new URLSearchParams({
+          referrer: document.referrer,
+          screen: screen.width + "x" + screen.height,
+          user: "benswift",
+          utcoffset: "11",
+        })
+    );
+  }
+  sessionStorage.setItem("_swa", "1");
+</script>
 
 
-<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"benswift",utcoffset:"11"}))};sessionStorage.setItem("_swa","1");</script>
-
-
-	<link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href='/assets/css/main.css'
+    />
   </head>
   <body>
-	<div class="container">
-	  <header>
+    <div class="container">
+      <header>
 
   <nav class="logo" aria-label="site home">
 	<a href="/">benswift.me</a>
@@ -64,96 +82,111 @@
 
 </header>
 
-	  <main aria-label="Content">
-		<article><h1><p>Coding Livecoding</p>
-</h1><p>My talk at <a href="http://chi2014.acm.org">CHI ‘14: SIGCHI Conference on Human Factors in Computing
-Systems</a>. <a href="/research/#swiftCodingLivecoding2014">Here’s the paper</a>.</p>
+      <main aria-label="Content"><article><h1><p>Coding Livecoding</p>
+</h1><p>My talk at
+<a href="http://chi2014.acm.org">CHI ‘14: SIGCHI Conference on Human Factors in Computing Systems</a>.
+<a href="/research/#swiftCodingLivecoding2014">Here’s the paper</a>.</p>
 
 <p><a href="/assets/pdf/chi-14.pdf">slides <svg class="icon"><use xlink:href="#fas.fa-file-pdf"></use></svg></a></p>
 
 </article>
-
-	  </main>
-	  <footer>
+</main>
+      <footer>
   <script>
-   const cafeUrls = [
-	 "https://biginelli.com/",
-	 "http://tilleys.com.au",
-	 "https://www.facebook.com/goodbrothercafe/",
-	 "https://frontgallerycafe.com",
-	 "https://www.facebook.com/thecoffeegrounds",
-	 "https://redbrickcoffee.com.au/redbrick/"
-   ];
-   const randomCafe = () => {
-	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
-   };
+    const cafeUrls = [
+      "https://biginelli.com/",
+      "http://tilleys.com.au",
+      "https://www.facebook.com/goodbrothercafe/",
+      "https://frontgallerycafe.com",
+      "https://www.facebook.com/thecoffeegrounds",
+      "https://redbrickcoffee.com.au/redbrick/",
+    ];
+    const randomCafe = () => {
+      window.location.href =
+        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
+    };
   </script>
 
   <!-- colophon -->
   <p>
-	designed & built with
-	<a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
-	<a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
-	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a> on
-	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
-	by Ben Swift
+    designed & built with
+    <a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
+    <a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
+    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
+      ><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a
+    >
+    on unceded
+    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
+      >Ngunnawal country</a
+    >
+    by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em;">
-	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
+  <p style="font-size: 1.3em"><a
+  title="CC BY-NC-SA licence"
+  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
 </a>
-
-  </p>
+</p>
 
   <!-- throw shade on IE -->
   <p>
-	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
-	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+    uses
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
+    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>96e618982</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/96e618982/_talks/chi-14.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_talks/chi-14.md">page history</a>
-	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
+    site revision <code>03af03f74</code> (see
+    <a
+      href="https://github.com/benswift/benswift.github.io/blob/03af03f74/_talks/chi-14.md"
+      >source</a
+    >,
+    <a
+      href="https://github.com/benswift/benswift.github.io/commits/source/_talks/chi-14.md"
+      >page history</a
+    >
+    on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
   <!-- anchor.js -->
   <script src='/assets/js/anchor.js'></script>
 
 <script>
- anchors.options = {
-   visible: "touch",
-   icon: "#"
- };
- document.addEventListener("DOMContentLoaded", function(event) {
-   anchors.add("article > h2, article > h3");
- });
+  anchors.options = {
+    visible: "touch",
+    icon: "#",
+  };
+  document.addEventListener("DOMContentLoaded", function (event) {
+    anchors.add(
+      "article > h2, article > h3"
+    );
+  });
 </script>
 
 
   <!-- highlight.js -->
   <script src="/assets/js/highlight.pack.js"></script>
 <script src="/assets/js/extempore.min.js"></script>
-<link rel="stylesheet" href="/assets/css/atom-one-dark.css">
+<link rel="stylesheet" href="/assets/css/atom-one-dark.css" />
 
 <script>
- hljs.highlightAll();
+  hljs.highlightAll();
 </script>
 
 
-  <script src='/assets/js/os-aware-modifiers.js' type="text/javascript"></script>
-
+  <script
+    src='/assets/js/os-aware-modifiers.js'
+    type="text/javascript"
+  ></script>
 </footer>
 
-	</div>
-	<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    </div>
+    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#be2edd">
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#be2edd" />
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Making Altair/Vega-Lite charts readable without squinting | benswift.me</title>
@@ -24,18 +24,36 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Making Altair/Vega-Lite charts readable without squinting","dateModified":"2019-10-16T20:14:00+11:00","datePublished":"2019-10-16T20:14:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).","@context":"https://schema.org"}</script>
+{"headline":"Making Altair/Vega-Lite charts readable without squinting","dateModified":"2019-10-16T20:14:00+11:00","datePublished":"2019-10-16T20:14:00+11:00","url":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting/"},"description":"My love for the Grammar of Graphics runs deep, and in particular for Hadley Wickham’s famous ggplot2 which showed me the light back when I was a young PhD student. Seriously, once you have your head around how it works it gives you datavis superpowers. These days I often work in Python, and for datavis I’m enjoying Altair which is based around the same philosophy (and outputs to Vega-Lite for rendering in the browser).","author":{"@type":"Person","name":"Ben Swift"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+ <script>
+  if (
+    !sessionStorage.getItem("_swa") &&
+    document.referrer.indexOf(location.protocol + "//" + location.host) !== 0
+  ) {
+    fetch(
+      "https://counter.dev/track?" +
+        new URLSearchParams({
+          referrer: document.referrer,
+          screen: screen.width + "x" + screen.height,
+          user: "benswift",
+          utcoffset: "11",
+        })
+    );
+  }
+  sessionStorage.setItem("_swa", "1");
+</script>
 
 
-<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"benswift",utcoffset:"11"}))};sessionStorage.setItem("_swa","1");</script>
-
-
-	<link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href='/assets/css/main.css'
+    />
   </head>
   <body>
-	<div class="container">
-	  <header>
+    <div class="container">
+      <header>
 
   <nav class="logo" aria-label="site home">
 	<a href="/">benswift.me</a>
@@ -64,8 +82,7 @@
 
 </header>
 
-	  <main aria-label="Content">
-		<article>
+      <main aria-label="Content"><article>
   <p class="post-date">16 Oct '19</p>
   <h1><p>Making Altair/Vega-Lite charts readable without squinting</p>
 </h1>
@@ -73,18 +90,17 @@
 <p class="post-tag-container">
   
   <a class="post-tag" href='/blog/tag/web'>
-	web
+    web
   </a>
   
   <a class="post-tag" href='/blog/tag/python'>
-	python
+    python
   </a>
   
 </p>
 
-
-  <p>My love for the <a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448">Grammar of
-Graphics</a>
+ <p>My love for the
+<a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448">Grammar of Graphics</a>
 runs deep, and in particular for Hadley Wickham’s famous <code>ggplot2</code> which showed
 me the light back when I was a young PhD student. Seriously, once you have your
 head around how it works it gives you datavis superpowers. These days I often
@@ -98,8 +114,9 @@ display them in a slide deck. Part (a) was actually the easy part—the tricky
 part was (b) getting Altair to render charts with text &amp; other marks that
 weren’t so small that the slide was unreadable.</p>
 
-<p>Here’s an example: a <a href="https://altair-viz.github.io/gallery/simple_line_chart.html">simple line
-chart</a> from the
+<p>Here’s an example: a
+<a href="https://altair-viz.github.io/gallery/simple_line_chart.html">simple line chart</a>
+from the
 <a href="https://altair-viz.github.io/gallery/index.html">Altair Example Gallery</a>.</p>
 
 <pre><code class="language-python">import altair as alt
@@ -119,13 +136,13 @@ alt.Chart(source).mark_line().encode(x="x", y="f(x)").save(f"{CHART_DIR}/sin-x.s
 <h2 id="easy-tweaking-of-size-through-chart-themes">Easy tweaking of “size” through chart themes</h2>
 
 <p>Now, that figure might look fairly readable, but when it’s on a slide the text,
-labels &amp; even lines are quite small<sup id="fnref:examples" role="doc-noteref"><a href="#fn:examples" class="footnote" rel="footnote">1</a></sup>. I don’t need <a href="https://github.com/vega/vega-lite/issues/1714">fine-grained
-control</a> over the relative sizes
-of labels vs legend vs title, etc. I just want a simple knob for making all the
-text bigger so that my slides don’t double as an <a href="https://en.wikipedia.org/wiki/Eye_chart">eye
-chart</a>. The Vega-Lite folks (the
-underlying vis engine which Altair uses) <a href="https://github.com/vega/vega-parser/issues/18">know about the issue, but don’t want
-to fix it</a>.</p>
+labels &amp; even lines are quite small<sup id="fnref:examples" role="doc-noteref"><a href="#fn:examples" class="footnote" rel="footnote">1</a></sup>. I don’t need
+<a href="https://github.com/vega/vega-lite/issues/1714">fine-grained control</a> over the
+relative sizes of labels vs legend vs title, etc. I just want a simple knob for
+making all the text bigger so that my slides don’t double as an
+<a href="https://en.wikipedia.org/wiki/Eye_chart">eye chart</a>. The Vega-Lite folks (the
+underlying vis engine which Altair uses)
+<a href="https://github.com/vega/vega-parser/issues/18">know about the issue, but don’t want to fix it</a>.</p>
 
 <p class="hl-para">Note that when I’m talking about “size” I’m <strong>not</strong> talking about the size &amp;
 dimensions of the chart—I’m talking about the size of the text, lines &amp; other
@@ -152,8 +169,8 @@ API.</p>
 
 <p>One final tip: if you want to have consistent sizes &amp; aspect ratios across lots
 of charts (e.g. you’re batch exporting lots of charts for a presentation or
-report) you can create <a href="https://altair-viz.github.io/user_guide/configuration.html#defining-a-custom-theme">a custom
-theme</a>,
+report) you can create
+<a href="https://altair-viz.github.io/user_guide/configuration.html#defining-a-custom-theme">a custom theme</a>,
 but otherwise you can just do it with a call to the <code>.properties()</code> method as
 shown.</p>
 
@@ -170,89 +187,103 @@ zoomed out, and the problem gets much worse. <a href="#fnref:examples" class="r
 </div>
 
 </article>
-
-
-	  </main>
-	  <footer>
+</main>
+      <footer>
   <script>
-   const cafeUrls = [
-	 "https://biginelli.com/",
-	 "http://tilleys.com.au",
-	 "https://www.facebook.com/goodbrothercafe/",
-	 "https://frontgallerycafe.com",
-	 "https://www.facebook.com/thecoffeegrounds",
-	 "https://redbrickcoffee.com.au/redbrick/"
-   ];
-   const randomCafe = () => {
-	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
-   };
+    const cafeUrls = [
+      "https://biginelli.com/",
+      "http://tilleys.com.au",
+      "https://www.facebook.com/goodbrothercafe/",
+      "https://frontgallerycafe.com",
+      "https://www.facebook.com/thecoffeegrounds",
+      "https://redbrickcoffee.com.au/redbrick/",
+    ];
+    const randomCafe = () => {
+      window.location.href =
+        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
+    };
   </script>
 
   <!-- colophon -->
   <p>
-	designed & built with
-	<a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
-	<a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
-	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a> on
-	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
-	by Ben Swift
+    designed & built with
+    <a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
+    <a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
+    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
+      ><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a
+    >
+    on unceded
+    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
+      >Ngunnawal country</a
+    >
+    by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em;">
-	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
+  <p style="font-size: 1.3em"><a
+  title="CC BY-NC-SA licence"
+  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
 </a>
-
-  </p>
+</p>
 
   <!-- throw shade on IE -->
   <p>
-	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
-	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+    uses
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
+    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>96e618982</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/96e618982/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md">page history</a>
-	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
+    site revision <code>03af03f74</code> (see
+    <a
+      href="https://github.com/benswift/benswift.github.io/blob/03af03f74/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md"
+      >source</a
+    >,
+    <a
+      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-10-16-making-altair-vega-lite-charts-readable-without-squinting.md"
+      >page history</a
+    >
+    on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
   <!-- anchor.js -->
   <script src='/assets/js/anchor.js'></script>
 
 <script>
- anchors.options = {
-   visible: "touch",
-   icon: "#"
- };
- document.addEventListener("DOMContentLoaded", function(event) {
-   anchors.add("article > h2, article > h3");
- });
+  anchors.options = {
+    visible: "touch",
+    icon: "#",
+  };
+  document.addEventListener("DOMContentLoaded", function (event) {
+    anchors.add(
+      "article > h2, article > h3"
+    );
+  });
 </script>
 
 
   <!-- highlight.js -->
   <script src="/assets/js/highlight.pack.js"></script>
 <script src="/assets/js/extempore.min.js"></script>
-<link rel="stylesheet" href="/assets/css/atom-one-dark.css">
+<link rel="stylesheet" href="/assets/css/atom-one-dark.css" />
 
 <script>
- hljs.highlightAll();
+  hljs.highlightAll();
 </script>
 
 
-  <script src='/assets/js/os-aware-modifiers.js' type="text/javascript"></script>
-
+  <script
+    src='/assets/js/os-aware-modifiers.js'
+    type="text/javascript"
+  ></script>
 </footer>
 
-	</div>
-	<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    </div>
+    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com

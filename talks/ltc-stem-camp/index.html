@@ -262,6 +262,7 @@
 
 
 
+
 <!-- things to get -->
 
 <!-- Wacom -->
@@ -271,27 +272,23 @@
 <!-- pens & paper? -->
 
 <!-- end things to get -->
-
-
-
+ 
 <section id="title" class="center">
   <h1 class="talk-title">Musical instructions</h1>
   <p class="talk-name"><a href="https://benswift.me">Dr. Ben Swift</a></p>
   
   <p class="talk-date">22 May '19</p>
   <p><a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <svg class="icon"><use xlink:href="#fab.fa-creative-commons"></use></svg>
-  <svg class="icon"><use xlink:href="#fab.fa-creative-commons-by"></use></svg>
-  <svg class="icon"><use xlink:href="#fab.fa-creative-commons-nc"></use></svg>
-  <svg class="icon"><use xlink:href="#fab.fa-creative-commons-sa"></use></svg>
+  <svg class="icon"><use xlink:href="#fab.fa-creative-commons"></use></svg> <svg class="icon"><use xlink:href="#fab.fa-creative-commons-by"></use></svg>
+  <svg class="icon"><use xlink:href="#fab.fa-creative-commons-nc"></use></svg> <svg class="icon"><use xlink:href="#fab.fa-creative-commons-sa"></use></svg>
 </a>
 </p>
 
   <nav class="talk-title-navigation">
-	<a href="https://twitter.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-twitter"></use></svg></a>
-	<a href="https://github.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-github"></use></svg></a>
-	<a href="https://vimeo.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-vimeo"></use></svg></a>
-	<a href="mailto:ben@benswift.me"><svg class="icon"><use xlink:href="#fas.fa-envelope"></use></svg></a>
+    <a href="https://twitter.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-twitter"></use></svg></a>
+    <a href="https://github.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-github"></use></svg></a>
+    <a href="https://vimeo.com/benswift"><svg class="icon"><use xlink:href="#fab.fa-vimeo"></use></svg></a>
+    <a href="mailto:ben@benswift.me"><svg class="icon"><use xlink:href="#fas.fa-envelope"></use></svg></a>
   </nav>
 </section><section class="impact center" data-background-color="#262626"><p>can y’all keep a secret?</p></section><section data-background-image="/assets/images/talks/ltc-stem-camp/ben-ltc-graduation-group.jpg" data-background-size="cover" data-background-position="center">
   
@@ -313,9 +310,9 @@
 </section><section data-background-image="/assets/images/talks/ltc-stem-camp/aaron-burden-82797-unsplash.jpg" data-background-size="cover" data-background-position="center">
   
 </section><section class="talk-box" data-background-color="#aef4e6"><h2>talk</h2>
-<p class="fragment">music, maths, computers: what’s the connection?</p>
-<p class="fragment">what are computer programs good at?</p>
-<p class="fragment">what would a song performed by a computer program sound like?</p></section><section id="outline"><h2>outline</h2>
+<p>{:.fragment} music, maths, computers: what’s the connection?</p>
+<p>{:.fragment} what are computer programs good at?</p>
+<p>{:.fragment} what would a song performed by a computer program sound like?</p></section><section id="outline"><h2>outline</h2>
 <p>what is (pop) music?</p>
 <p>activity: (<em>low-tech</em> musical instructions)</p>
 <p>livecoding: (<em>high-tech</em> musical instructions)</p></section><section data-background-image="/assets/images/talks/ltc-stem-camp/diego-catto-423903-unsplash.jpg" data-background-size="cover" data-background-position="center">
@@ -332,9 +329,10 @@ is music?</h2>
   
   <h2>what is (pop) music?</h2>
   
-<p class="fragment">catchy hooks</p>
-<p class="fragment">repetitive harmonic patterns (e.g. chord progressions)</p>
-<p class="fragment">processed/synthetic sounds (lots of computers involved in the production)</p></section><section class="impact center" data-background-color="#262626"><p>lots of <strong>patterns</strong></p>
+<p>{:.fragment} catchy hooks</p>
+<p>{:.fragment} repetitive harmonic patterns (e.g. chord progressions)</p>
+<p>{:.fragment} processed/synthetic sounds (lots of computers involved in the
+production)</p></section><section class="impact center" data-background-color="#262626"><p>lots of <strong>patterns</strong></p>
 <p>but how do we express them?</p></section><section data-background-image="/assets/images/talks/ltc-stem-camp/marius-masalar-410695-unsplash.jpg" data-background-size="cover" data-background-position="center">
   
   <h2>the traditional way</h2>
@@ -370,8 +368,8 @@ is music?</h2>
 <p>each event has a time, a pitch and a loudness</p></section><section id="maths-recap-1-functions"><h2>maths recap 1: functions</h2>
 <p>function <em>f(x, y)</em> takes two parameters/arguments and returns a result</p>
 <p>e.g. <em>f(x, y)</em> = <em>8x</em> + <em>2y</em></p>
-<p>parameters are <em>input</em>, the function does something with the inputs
-to produce an <em>output</em></p></section><section id="maths-recap-2-modular-arithmetic"><h2>maths recap 2: modular arithmetic</h2>
+<p>parameters are <em>input</em>, the function does something with the inputs to produce
+an <em>output</em></p></section><section id="maths-recap-2-modular-arithmetic"><h2>maths recap 2: modular arithmetic</h2>
 <p>arithmetic which “wraps around”</p>
 <p>0, 1, 2, 0, 1, 2, 0, 1, 2, … instead of 0, 1, 2, 3, 4, 5, 6, …</p>
 <p>the modulus can be any integer, e.g.</p>
@@ -402,8 +400,10 @@ let's find them</h2>
 </section><section class="impact center" data-background-color="#262626"><p><strong>activity</strong>: musical instructions</p></section><section id="how-to-play"><h2>how to play</h2>
 <p>split into pairs</p>
 <p>I’ll tell one person (person A) the name of a song</p>
-<p>person A will write down (in <em>English</em>) instructions for how to play the song (<strong>no conventional music notation allowed</strong>)</p>
-<p>person B will read the instructions, “sing” them, and try to guess what the song is</p></section><section data-background-image="/assets/images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.jpg" data-background-size="cover" data-background-position="center">
+<p>person A will write down (in <em>English</em>) instructions for how to play the song
+(<strong>no conventional music notation allowed</strong>)</p>
+<p>person B will read the instructions, “sing” them, and try to guess what the song
+is</p></section><section data-background-image="/assets/images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.jpg" data-background-size="cover" data-background-position="center">
   
   <h2>scales (just a warm-up)</h2>
   
@@ -481,8 +481,8 @@ and <a href="/">me</a>)</p>
 <p>in 2020 I’m starting an art+music+code extension program at the ANU</p>
 <p>we’ll do stuff like this (and lots more)</p>
 <p>if you’re interested, let me know 😊</p></section><section class="impact center" data-background-color="#262626"><p style="font-size:2em;">🤔</p>
-<p class="fragment"><a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a></p>
-<p class="fragment"><a href="https://benswift.me">https://benswift.me</a></p>
+<p>{:.fragment} <a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a></p>
+<p>{:.fragment} <a href="https://benswift.me">https://benswift.me</a></p>
 <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--

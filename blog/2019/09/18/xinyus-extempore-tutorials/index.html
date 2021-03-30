@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#be2edd">
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#be2edd" />
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Xinyu’s Extempore tutorials | benswift.me</title>
@@ -24,18 +24,36 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Xinyu’s Extempore tutorials","dateModified":"2019-09-18T00:00:00+10:00","datePublished":"2019-09-18T00:00:00+10:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/"},"url":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.","@context":"https://schema.org"}</script>
+{"headline":"Xinyu’s Extempore tutorials","dateModified":"2019-09-18T00:00:00+10:00","datePublished":"2019-09-18T00:00:00+10:00","url":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/"},"description":"These tutorials are part of Xinyu Hou’s research project to create a set of PRIMM-style tutorials for learning to make sound/music in Extempore.","author":{"@type":"Person","name":"Ben Swift"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+ <script>
+  if (
+    !sessionStorage.getItem("_swa") &&
+    document.referrer.indexOf(location.protocol + "//" + location.host) !== 0
+  ) {
+    fetch(
+      "https://counter.dev/track?" +
+        new URLSearchParams({
+          referrer: document.referrer,
+          screen: screen.width + "x" + screen.height,
+          user: "benswift",
+          utcoffset: "11",
+        })
+    );
+  }
+  sessionStorage.setItem("_swa", "1");
+</script>
 
 
-<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"benswift",utcoffset:"11"}))};sessionStorage.setItem("_swa","1");</script>
-
-
-	<link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href='/assets/css/main.css'
+    />
   </head>
   <body>
-	<div class="container">
-	  <header>
+    <div class="container">
+      <header>
 
   <nav class="logo" aria-label="site home">
 	<a href="/">benswift.me</a>
@@ -64,8 +82,7 @@
 
 </header>
 
-	  <main aria-label="Content">
-		<article>
+      <main aria-label="Content"><article>
   <p class="post-date">18 Sep '19</p>
   <h1><p>Xinyu’s Extempore tutorials</p>
 </h1>
@@ -73,17 +90,16 @@
 <p class="post-tag-container">
   
   <a class="post-tag" href='/blog/tag/livecoding'>
-	livecoding
+    livecoding
   </a>
   
   <a class="post-tag" href='/blog/tag/extempore'>
-	extempore
+    extempore
   </a>
   
 </p>
 
-
-  <p>These tutorials are part of Xinyu Hou’s research project to create a set of
+ <p>These tutorials are part of Xinyu Hou’s research project to create a set of
 <a href="https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/">PRIMM</a>-style
 tutorials for learning to make sound/music in Extempore.</p>
 
@@ -91,46 +107,11 @@ tutorials for learning to make sound/music in Extempore.</p>
 the main Extempore docs site, but for now they’re here on my blog.</p>
 
 <div id="toc">
-
   <h2>table of contents</h2>
 
-<ul id="markdown-toc">
-  <li><a href="#preliminaries" id="markdown-toc-preliminaries">Preliminaries</a>    <ul>
-      <li><a href="#setting-up-environment" id="markdown-toc-setting-up-environment">Setting Up Environment</a></li>
-      <li><a href="#evaluating-extempore-code" id="markdown-toc-evaluating-extempore-code">Evaluating Extempore Code</a></li>
-    </ul>
-  </li>
-  <li><a href="#tutorial-one" id="markdown-toc-tutorial-one">Tutorial One</a>    <ul>
-      <li><a href="#predict-and-run" id="markdown-toc-predict-and-run">Predict and Run</a></li>
-      <li><a href="#investigate" id="markdown-toc-investigate">Investigate</a></li>
-      <li><a href="#modify" id="markdown-toc-modify">Modify</a></li>
-      <li><a href="#make" id="markdown-toc-make">Make</a></li>
-    </ul>
-  </li>
-  <li><a href="#tutorial-two" id="markdown-toc-tutorial-two">Tutorial Two</a>    <ul>
-      <li><a href="#predict-and-run-1" id="markdown-toc-predict-and-run-1">Predict and Run</a></li>
-      <li><a href="#investigate-1" id="markdown-toc-investigate-1">Investigate</a></li>
-      <li><a href="#modify-1" id="markdown-toc-modify-1">Modify</a></li>
-      <li><a href="#make-1" id="markdown-toc-make-1">Make</a></li>
-    </ul>
-  </li>
-  <li><a href="#tutorial-three" id="markdown-toc-tutorial-three">Tutorial Three</a>    <ul>
-      <li><a href="#predict-and-run-2" id="markdown-toc-predict-and-run-2">Predict and Run</a></li>
-      <li><a href="#investigate-2" id="markdown-toc-investigate-2">Investigate</a></li>
-      <li><a href="#modify-2" id="markdown-toc-modify-2">Modify</a></li>
-      <li><a href="#make-2" id="markdown-toc-make-2">Make</a></li>
-    </ul>
-  </li>
-  <li><a href="#tutorial-four" id="markdown-toc-tutorial-four">Tutorial Four</a>    <ul>
-      <li><a href="#predict-and-run-3" id="markdown-toc-predict-and-run-3">Predict and Run</a></li>
-      <li><a href="#investigate-3" id="markdown-toc-investigate-3">Investigate</a></li>
-      <li><a href="#modify-3" id="markdown-toc-modify-3">Modify</a></li>
-      <li><a href="#make-3" id="markdown-toc-make-3">Make</a></li>
-    </ul>
-  </li>
-  <li><a href="#going-further" id="markdown-toc-going-further">Going further</a></li>
-</ul>
-
+  <ul>
+    <li>TOC {:toc}</li>
+  </ul>
 </div>
 
 <h2 id="preliminaries">Preliminaries</h2>
@@ -139,14 +120,16 @@ the main Extempore docs site, but for now they’re here on my blog.</p>
 
 <h4 id="installing-extempore">Installing Extempore</h4>
 
-<p>Install Extempore by following the steps <a href="https://extemporelang.github.io/docs/overview/install/">here</a>.</p>
+<p>Install Extempore by following the steps
+<a href="https://extemporelang.github.io/docs/overview/install/">here</a>.</p>
 
 <h4 id="installing-vscode">Installing VSCode</h4>
 
-<p>Install VSCode (a text editor) by following the steps <a href="https://extemporelang.github.io/docs/overview/editor-support/">here</a>.</p>
+<p>Install VSCode (a text editor) by following the steps
+<a href="https://extemporelang.github.io/docs/overview/editor-support/">here</a>.</p>
 
-<p class="hl-para">Note: if you want to use a different text editor, <a href="https://extemporelang.github.io/docs/overview/editor-support/">there are other options as
-well</a>.</p>
+<p class="hl-para">Note: if you want to use a different text editor,
+<a href="https://extemporelang.github.io/docs/overview/editor-support/">there are other options as well</a>.</p>
 
 <h3 id="evaluating-extempore-code">Evaluating Extempore Code</h3>
 
@@ -190,23 +173,28 @@ evaluate and hit <strong>cmd+enter</strong> on macOS or <strong>ctrl+enter</stro
 </picture>
 
 <blockquote>
-  <p>Note: you can use <strong>ctrl+c</strong> in the terminal where extempore is running to kill the extempore process whenever you want.</p>
+  <p>Note: you can use <strong>ctrl+c</strong> in the terminal where extempore is running to
+kill the extempore process whenever you want.</p>
 </blockquote>
 
 <h2 id="tutorial-one">Tutorial One</h2>
 
 <h3 id="predict-and-run">Predict and Run</h3>
 
-<p>Work in pairs or small groups, look at the code below and predict what does this code do:</p>
+<p>Work in pairs or small groups, look at the code below and predict what does this
+code do:</p>
 
 <pre><code class="language-xtlang">(bind-val my-pi float 3.1415)
 </code></pre>
 
 <blockquote>
-  <p>Note: in Extempore, we generally use <strong>kebab-case</strong> case style <code>my-pi</code> instead of using <strong>camelCase</strong> <code>myPi</code> or <strong>PascalCase</strong> <code>MyPi</code>or <strong>snake_case</strong> <code>my_pi</code>.</p>
+  <p>Note: in Extempore, we generally use <strong>kebab-case</strong> case style <code>my-pi</code> instead
+of using <strong>camelCase</strong> <code>myPi</code> or <strong>PascalCase</strong> <code>MyPi</code>or <strong>snake_case</strong>
+<code>my_pi</code>.</p>
 </blockquote>
 
-<p>Run the code above. Does the compiler print anything in the log? What does the printed message mean?</p>
+<p>Run the code above. Does the compiler print anything in the log? What does the
+printed message mean?</p>
 
 <picture>
   <img alt="my-pi log view" src="/assets/images/xinyu-tutorials/my-pi.png" />
@@ -214,7 +202,8 @@ evaluate and hit <strong>cmd+enter</strong> on macOS or <strong>ctrl+enter</stro
 
 <p>Now, it’s time to produce a sound in Extempore!</p>
 
-<p>Work in pairs or small groups again, look at the code below and predict/guess what might happen when it runs:</p>
+<p>Work in pairs or small groups again, look at the code below and predict/guess
+what might happen when it runs:</p>
 
 <pre><code class="language-xtlang">(bind-func dsp:DSP
   (lambda (in time chan dat)
@@ -232,27 +221,24 @@ evaluate and hit <strong>cmd+enter</strong> on macOS or <strong>ctrl+enter</stro
 <p>Does it work as predicted?</p>
 
 <blockquote>
-  <p>Hint:
-we set up the xtlang callback:</p>
+  <p>Hint: we set up the xtlang callback:</p>
+
   <pre><code class="language-xtlang">(bind-func dsp:DSP
   (lambda (in time chan dat)
     0.0))
 </code></pre>
+
   <ul>
-    <li><strong>in:SAMPLE</strong>
-sample from input device</li>
-    <li><strong>time:i64</strong>
-sample number</li>
-    <li><strong>chan:i64</strong>
-audio channel</li>
-    <li><strong>dat:SAMPLE</strong>
-user data</li>
-    <li><strong><code>&lt;return&gt;</code>:SAMPLE</strong>
-sample at given channel and time</li>
+    <li><strong>in:SAMPLE</strong> sample from input device</li>
+    <li><strong>time:i64</strong> sample number</li>
+    <li><strong>chan:i64</strong> audio channel</li>
+    <li><strong>dat:SAMPLE</strong> user data</li>
+    <li><strong><code>&lt;return&gt;</code>:SAMPLE</strong> sample at given channel and time</li>
     <li>sample value range from -1.0 to 1.0</li>
   </ul>
 
-  <p>Note: In Extempore, we represent the mathematical operation <em>2 * PI</em> as <code>(* 2 PI)</code></p>
+  <p>Note: In Extempore, we represent the mathematical operation _2 _ PI* as <code>(* 2
+PI)</code></p>
 
   <p>Note: <code>SRf</code> refers to the current sampling frequency</p>
 
@@ -261,7 +247,8 @@ sample at given channel and time</li>
 
   <p>Note: <code>convert</code> allows us to make a <code>SAMPLE</code> typed value from <code>time</code>.</p>
 
-  <p>Note: We only can set <code>dsp</code> function once, but then redefine it as many times as we want.</p>
+  <p>Note: We only can set <code>dsp</code> function once, but then redefine it as many times
+as we want.</p>
 </blockquote>
 
 <p>What about white noise in Extempore?</p>
@@ -275,7 +262,9 @@ sample at given channel and time</li>
 
 <h3 id="investigate">Investigate</h3>
 
-<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
+
 <ol>
   <li>In what order did you compile (execute) the code in this program?</li>
   <li>What happened after you evaluated each “chunk” of Extempore code?</li>
@@ -283,19 +272,24 @@ sample at given channel and time</li>
 </ol>
 
 <blockquote>
-  <p>Note: you can add <a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a> (starting with <strong>;;</strong>) to the program to make some notes for you to understand the code. The comments are generally ignored by compilers and interpreters.</p>
+  <p>Note: you can add
+<a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a>
+(starting with <strong>;;</strong>) to the program to make some notes for you to understand
+the code. The comments are generally ignored by compilers and interpreters.</p>
 </blockquote>
 
 <h3 id="modify">Modify</h3>
 
 <ol>
   <li>Can you play a sound with a frequency of 460.0?</li>
-  <li>Can you make the sound louder by just changing the code? (don’t use your volume buttons!)</li>
+  <li>Can you make the sound louder by just changing the code? (don’t use your
+volume buttons!)</li>
 </ol>
 
 <h3 id="make">Make</h3>
 
-<p>Now, let’s move <code>amplitude</code>, <code>frequency</code> and <code>two-pi</code> outside of lambda to make our <code>dsp</code> function controllable outside as below:</p>
+<p>Now, let’s move <code>amplitude</code>, <code>frequency</code> and <code>two-pi</code> outside of lambda to make
+our <code>dsp</code> function controllable outside as below:</p>
 
 <pre><code class="language-xtlang">(bind-func dsp:DSP
   (let ((amplitude 0.1)
@@ -308,19 +302,25 @@ sample at given channel and time</li>
                     (convert time)) SRf))))))
 </code></pre>
 
-<p>Can you play a random frequency sound every time when you redefine the <code>dsp</code> function?</p>
+<p>Can you play a random frequency sound every time when you redefine the <code>dsp</code>
+function?</p>
+
 <blockquote>
-  <p>Note:
-You could use <code>(random 440.0 700.0)</code> to randomly generate a value between 440.0 and 700.0</p>
+  <p>Note: You could use <code>(random 440.0 700.0)</code> to randomly generate a value
+between 440.0 and 700.0</p>
 </blockquote>
 
-<p>Compare to the <code>(random)</code> in the white noise part above, does the <code>(random)</code> work differently here? Can you explain how <code>(random)</code> can be either for “control” (e.g. see the above sine wave part) or for “signal” (e.g. see the white noise part)?</p>
+<p>Compare to the <code>(random)</code> in the white noise part above, does the <code>(random)</code>
+work differently here? Can you explain how <code>(random)</code> can be either for
+“control” (e.g. see the above sine wave part) or for “signal” (e.g. see the
+white noise part)?</p>
 
 <h2 id="tutorial-two">Tutorial Two</h2>
 
 <h3 id="predict-and-run-1">Predict and Run</h3>
 
-<p>Work in pairs or small groups, look at the code below and predict what might happen when it runs.</p>
+<p>Work in pairs or small groups, look at the code below and predict what might
+happen when it runs.</p>
 
 <pre><code class="language-xtlang">;; load the instruments file
 (sys:load "libs/core/instruments.xtm")
@@ -338,11 +338,14 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 <blockquote>
   <p>Note: The dsp function takes as input:</p>
+
   <ul>
     <li><strong>in</strong>: the input audio sample, e.g. from the microphone.</li>
     <li><strong>time</strong>: an <code>i64</code> representing the time.</li>
-    <li><strong>chan</strong>: another <code>i64</code> which represents the channel index (0 for L, 1 for R, etc.). Extempore can handle any number of channels.</li>
-    <li><strong>data</strong>: this is a pointer to a <code>SAMPLE</code> type (which is float by default), and can be used to pass arbitrary data into the dsp function.</li>
+    <li><strong>chan</strong>: another <code>i64</code> which represents the channel index (0 for L, 1 for
+R, etc.). Extempore can handle any number of channels.</li>
+    <li><strong>data</strong>: this is a pointer to a <code>SAMPLE</code> type (which is float by default),
+and can be used to pass arbitrary data into the dsp function.</li>
   </ul>
 </blockquote>
 
@@ -352,24 +355,31 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
   <p>Primitive types in Extempore:</p>
 
   <p>Integers:</p>
+
   <ul>
-    <li><code>i1</code>:  (boolean) uses 1 bit.</li>
-    <li><code>i8</code>:  (char) uses 8 bits (1 byte), which could store 2^8 = 256 unique integer values, -128 ~ 127.</li>
-    <li><code>i32</code>: uses 32 bits, which could store 2^32 uniquew integer values, -2^31 ~ (2^31 - 1).</li>
-    <li><code>i64</code>: (default) uses 64 bits, which could store 2^63 uniquew integer values, -2^63 ~ (2^63 - 1).</li>
+    <li><code>i1</code>: (boolean) uses 1 bit.</li>
+    <li><code>i8</code>: (char) uses 8 bits (1 byte), which could store 2^8 = 256 unique
+integer values, -128 ~ 127.</li>
+    <li><code>i32</code>: uses 32 bits, which could store 2^32 uniquew integer values, -2^31 ~
+(2^31 - 1).</li>
+    <li><code>i64</code>: (default) uses 64 bits, which could store 2^63 uniquew integer
+values, -2^63 ~ (2^63 - 1).</li>
   </ul>
 
   <p>Floats:</p>
+
   <ul>
-    <li><code>float</code>:     a single precision (32 bit) floating-point data type.</li>
-    <li><code>double</code>:    (default), a double precision (64 bit) floating-point data type.</li>
+    <li><code>float</code>: a single precision (32 bit) floating-point data type.</li>
+    <li><code>double</code>: (default), a double precision (64 bit) floating-point data type.</li>
   </ul>
 </blockquote>
 
 <blockquote>
   <p>Moreover, for your interests:</p>
 
-  <p><a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)">Pointer</a> types:</p>
+  <p><a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)">Pointer</a>
+types:</p>
+
   <ul>
     <li><code>double*</code>: a pointer to a double.</li>
     <li><code>i64*</code>: a pointer to a 64-bit integer.</li>
@@ -382,11 +392,14 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 <pre><code class="language-xtlang">;; play a note on our fmsynth
 (play-note (now) fmsynth (random 60 80) 80 *second*)
 </code></pre>
+
 <blockquote>
-  <p>Note: the parameters for <code>play-note</code> are <code>play-note &lt;start-time&gt; &lt;instrument&gt; &lt;note-frequency&gt; &lt;note-duration&gt;</code></p>
+  <p>Note: the parameters for <code>play-note</code> are
+<code>play-note &lt;start-time&gt; &lt;instrument&gt; &lt;note-frequency&gt; &lt;note-duration&gt;</code></p>
 </blockquote>
 
-<p>What would happend if you play the note for the second time (or multiple times)? Why is the note different?</p>
+<p>What would happend if you play the note for the second time (or multiple times)?
+Why is the note different?</p>
 
 <p>It’s the time to make a loop in Extempore:</p>
 
@@ -399,7 +412,8 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 (my-loop (now))
 </code></pre>
 
-<p>We make a <code>loop</code> function above, but how does the <code>loop</code> work? let’s see a simpler example:</p>
+<p>We make a <code>loop</code> function above, but how does the <code>loop</code> work? let’s see a
+simpler example:</p>
 
 <pre><code class="language-xtlang">;; let's see a simpler loop example
 (define test-loop
@@ -415,7 +429,8 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
   <p>Note: the parameters for <code>callback</code> are <code>callback &lt;time&gt; &lt;func&gt; &lt;args&gt;</code></p>
 </blockquote>
 
-<p>Can you predict what will happen when you run the <code>test-loop</code> function? Run the code to check your thoughts.</p>
+<p>Can you predict what will happen when you run the <code>test-loop</code> function? Run the
+code to check your thoughts.</p>
 
 <blockquote>
   <p>Note: do not forget to check your terminal panel.</p>
@@ -423,22 +438,30 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 <h3 id="investigate-1">Investigate</h3>
 
-<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
 
 <ol>
   <li>What does <code>my-loop</code> do?</li>
   <li>What does the <code>callback</code> in the loop do?</li>
-  <li>What is the difference between Scheme lambda expression and xtlang bind-func expression? More information click <a href="https://digego.github.io/extempore/scheme-xtlang-interop.html">here</a>.</li>
-  <li>What is the difference between using <strong>now</strong> versus using <strong>time</strong>?  More information click <a href="https://digego.github.io/extempore/time.html">here</a>.</li>
+  <li>What is the difference between Scheme lambda expression and xtlang bind-func
+expression? More information click
+<a href="https://digego.github.io/extempore/scheme-xtlang-interop.html">here</a>.</li>
+  <li>What is the difference between using <strong>now</strong> versus using <strong>time</strong>? More
+information click <a href="https://digego.github.io/extempore/time.html">here</a>.</li>
 </ol>
 
 <blockquote>
-  <p>Note: you can add <a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a> (starting with <code>;;</code>) to the program to make some notes for you to understand the code.</p>
+  <p>Note: you can add
+<a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a>
+(starting with <code>;;</code>) to the program to make some notes for you to understand
+the code.</p>
 </blockquote>
 
 <h3 id="modify-1">Modify</h3>
 
-<p>Work in pairs or in small groups, can you modify the above code and make a loop with random notes lengths and random notes frequencies.</p>
+<p>Work in pairs or in small groups, can you modify the above code and make a loop
+with random notes lengths and random notes frequencies.</p>
 
 <pre><code class="language-xtlang">;; hint
 ;; make a loop with random note length and random note
@@ -454,7 +477,8 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 <h3 id="make-1">Make</h3>
 
-<p>Can you make a chord (or play different notes at the same time) function by using similar ideas to the previous program?</p>
+<p>Can you make a chord (or play different notes at the same time) function by
+using similar ideas to the previous program?</p>
 
 <h2 id="tutorial-three">Tutorial Three</h2>
 
@@ -466,7 +490,7 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
   (play-note (+ (now) time) synth (+ 60 (car scale)) 80 4000)
   (if (not (null? (cdr scale)))
       (loop-white-keys (cdr scale) (+ time 10000))))
-      
+
 ;; another loop for notes
 (let loop-black-keys ((scale '(1 3 6 8 10 13 15 18 20 22))
            (time 0))
@@ -477,9 +501,11 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 <blockquote>
   <p>Note:</p>
+
   <ul>
     <li><code>car</code> return the first element of a list.</li>
-    <li><code>cdr</code> return the rest of the elements in a list, that is, it returns the part of the list that follows the first item.</li>
+    <li><code>cdr</code> return the rest of the elements in a list, that is, it returns the
+part of the list that follows the first item.</li>
     <li><code>if &lt;test&gt; &lt;consequent&gt; &lt;alternate&gt;</code></li>
     <li><a href="https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html">more conditionals syntax</a>.</li>
   </ul>
@@ -490,12 +516,15 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 </blockquote>
 
 <blockquote>
-  <p>Note: in the above examples, we used the named <code>let</code>. Therefore, the <code>&lt;body&gt;</code> could be repeatly executed by invoking the <code>let</code> procedure named by the <code>&lt;variable&gt;</code>.</p>
+  <p>Note: in the above examples, we used the named <code>let</code>. Therefore, the <code>&lt;body&gt;</code>
+could be repeatly executed by invoking the <code>let</code> procedure named by the
+<code>&lt;variable&gt;</code>.</p>
 </blockquote>
 
 <p>Can you predict what will happen? Then run the code to check your thoughts.</p>
 
-<p>Before you run the code above, do not forget to load the libraries, define and add an instrument <code>synth</code> to the <code>dsp</code> output sink closure:</p>
+<p>Before you run the code above, do not forget to load the libraries, define and
+add an instrument <code>synth</code> to the <code>dsp</code> output sink closure:</p>
 
 <pre><code class="language-xtlang">;; load the instruments file
 (sys:load "libs/core/instruments.xtm")
@@ -511,19 +540,23 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 (dsp:set! dsp)
 </code></pre>
-<p>Now, Let’s play a chord on a list of frequencies! Can you predict what will happen here:</p>
+
+<p>Now, Let’s play a chord on a list of frequencies! Can you predict what will
+happen here:</p>
 
 <pre><code class="language-xtlang">;; play a chord
 (map (lambda (p)
        (play-note (now) synth p 80 44100))
      (list 72 76 79))
 </code></pre>
+
 <blockquote>
   <p>Note: again, the parameters for <code>lambda</code> is: <code>lambda &lt;formals&gt; &lt;body&gt;</code></p>
 </blockquote>
 
 <blockquote>
-  <p>Note: here we have two methods to express a <code>list</code>: For example, <code>(list 72 76 79)</code> and <code>'(72 76 79)</code>.</p>
+  <p>Note: here we have two methods to express a <code>list</code>: For example,
+<code>(list 72 76 79)</code> and <code>'(72 76 79)</code>.</p>
 </blockquote>
 
 <p>Can you guess what does <code>map</code> do?</p>
@@ -537,7 +570,7 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
                 (play-note time synth p 80 44100))
               chord)
     ))
-    
+
 (play-a-chord (now) '(72 76 79))
 </code></pre>
 
@@ -558,25 +591,35 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 (my-progression (now) '((72 76 79)(69 72 76)(65 69 72)(67 71 74)))
 </code></pre>
+
 <blockquote>
-  <p>Note: the syntax for <code>set!</code> is <code>set! &lt;variable&gt; &lt;expression&gt;</code>, which could assign the <code>&lt;expression&gt;</code> to the <code>&lt;variable&gt;</code></p>
+  <p>Note: the syntax for <code>set!</code> is <code>set! &lt;variable&gt; &lt;expression&gt;</code>, which could
+assign the <code>&lt;expression&gt;</code> to the <code>&lt;variable&gt;</code></p>
 </blockquote>
 
 <p>Run the code. Dose it work as you predicted?</p>
 
 <h3 id="investigate-2">Investigate</h3>
 
-<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
 
 <ol>
-  <li>Currently, you have already seen <code>let</code>, <code>define</code> and <code>set!</code>. What are the differences between <code>let</code>, <code>define</code> and <code>set!</code>? E.g:
+  <li>
+    <p>Currently, you have already seen <code>let</code>, <code>define</code> and <code>set!</code>. What are the
+differences between <code>let</code>, <code>define</code> and <code>set!</code>? E.g:</p>
+
     <ul>
-      <li><code>set!</code> doesn’t define the variable, rather it is used to assign the variable a new value.</li>
-      <li>The scope of variables defined by <code>let</code> are bound to the latter.
- <code>define</code> doesn’t surround the body with parentheses.</li>
+      <li><code>set!</code> doesn’t define the variable, rather it is used to assign the
+variable a new value.</li>
+      <li>The scope of variables defined by <code>let</code> are bound to the latter. <code>define</code>
+doesn’t surround the body with parentheses.</li>
     </ul>
   </li>
-  <li>Here is another method to play the same chord that we predicted and ran before:</li>
+  <li>
+    <p>Here is another method to play the same chord that we predicted and ran
+before:</p>
+  </li>
 </ol>
 
 <pre><code class="language-xtlang">;; another method for play the same chord
@@ -586,17 +629,21 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
                 (play-note time synth p 80 44100))
               chord)
     ))
-    
+
 (play-a-chord (now) '(72 76 79))
 </code></pre>
-<p>Compare to the <code>map</code> one, can you find what is the difference between <code>map</code> and <code>for-each</code>?</p>
+
+<p>Compare to the <code>map</code> one, can you find what is the difference between <code>map</code> and
+<code>for-each</code>?</p>
+
 <ul>
   <li>Evaluation order?</li>
   <li>Return?</li>
 </ul>
 
 <ol>
-  <li>We could use <code>do</code> to make a loop on playing the chord with the above <code>play-a-chord</code> method:</li>
+  <li>We could use <code>do</code> to make a loop on playing the chord with the above
+<code>play-a-chord</code> method:</li>
 </ol>
 
 <pre><code class="language-xtlang">;; use do to loop the chord
@@ -604,52 +651,66 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
     ((&gt; i 3000) ())
     (play-a-chord (now) '(72 76 79)))
 </code></pre>
-<p>Compare to other <code>loop</code> or other iteration methods, can you find how does the <code>do</code> work here?</p>
+
+<p>Compare to other <code>loop</code> or other iteration methods, can you find how does the
+<code>do</code> work here?</p>
 
 <blockquote>
   <p>Hint: the syntax of <code>do</code> is:</p>
-  <pre><code class="language-xtlang">(do ((&lt;variable1&gt; &lt;init1&gt; &lt;step1&gt;) ...)
+</blockquote>
+
+<pre><code class="language-xtlang">(do ((&lt;variable1&gt; &lt;init1&gt; &lt;step1&gt;) ...)
     (&lt;test&gt; &lt;expression&gt; ...)
     &lt;command&gt; ...)
 </code></pre>
+
+<blockquote>
   <ul>
-    <li>if the <code>&lt;test&gt;</code> result is <code>false</code>, then the sequence of <code>&lt;command&gt;</code> would be evaluated.</li>
-    <li>if the <code>&lt;test&gt;</code> result is <code>true</code>, the sequence of <code>&lt;expression&gt;</code> would be evaluated from left to right, and the last <code>&lt;expression&gt;</code>’s values would be returned at the end.</li>
-    <li>the <a href="https://en.wikipedia.org/wiki/Boolean_data_type">boolean data type</a> for understanding <code>true</code> and <code>false</code>.</li>
+    <li>if the <code>&lt;test&gt;</code> result is <code>false</code>, then the sequence of <code>&lt;command&gt;</code> would be
+evaluated.</li>
+    <li>if the <code>&lt;test&gt;</code> result is <code>true</code>, the sequence of <code>&lt;expression&gt;</code> would be
+evaluated from left to right, and the last <code>&lt;expression&gt;</code>’s values would be
+returned at the end.</li>
+    <li>the <a href="https://en.wikipedia.org/wiki/Boolean_data_type">boolean data type</a> for
+understanding <code>true</code> and <code>false</code>.</li>
   </ul>
 </blockquote>
 
 <h3 id="modify-2">Modify</h3>
 
-<p>Now, can you please modify the <code>my-progression</code> function so that it could loop each chord for four times before going to the next chord?</p>
+<p>Now, can you please modify the <code>my-progression</code> function so that it could loop
+each chord for four times before going to the next chord?</p>
 
 <pre><code class="language-xtlang">;; hint
 ;; modified my-progression
 (define my-progression-modify
   (lambda (time chords n)
-    
+
     (let loop ((loop-times 0))
       (if (= loop-times n)
           (display "stopped")
           (begin (play-a-chord (+ time (* loop-times 44100)) (car chords))
             (loop (+ loop-times 1)))))
     ; (loop-n-times n (play-a-chord time (car chords)))
-    
+
     (define loop-chords-modify '())
     (if (not (null? (cdr chords)))
         (set! loop-chords-modify (cdr chords))
         (set! loop-chords-modify '((72 76 79)(69 72 76)(65 69 72)(67 71 74))))
-    
+
     (callback (+ time (* n 40000)) 'my-progression-modify (+ time (* n 44100)) loop-chords-modify n))
   )
-  
+
 (my-progression-modify (now) '((72 76 79)(69 72 76)(65 69 72)(67 71 74)) 4)
 </code></pre>
 
 <blockquote>
-  <p>Note: here we used the <code>begin</code> to do the sequencing: <code>begin &lt;expression 1&gt; &lt;expression 2&gt; ...&lt;expression n&gt;</code></p>
+  <p>Note: here we used the <code>begin</code> to do the sequencing:
+<code>begin &lt;expression 1&gt; &lt;expression 2&gt; ...&lt;expression n&gt;</code></p>
+
   <ul>
-    <li>the sequence of <code>&lt;expression i&gt;</code> will be evaluated sequentially from left to right.</li>
+    <li>the sequence of <code>&lt;expression i&gt;</code> will be evaluated sequentially from left to
+right.</li>
     <li><code>begin</code> will return the value of the last <code>&lt;expression n&gt;</code>.</li>
   </ul>
 </blockquote>
@@ -665,7 +726,9 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 <h3 id="predict-and-run-3">Predict and Run</h3>
 
-<p>In this tutorial, we will learn how to do samplers in Extempore. Extempore provides a built-in sampler in <code>libs/external/instruments_ext.xtm</code>, so let’s load the libraries first:</p>
+<p>In this tutorial, we will learn how to do samplers in Extempore. Extempore
+provides a built-in sampler in <code>libs/external/instruments_ext.xtm</code>, so let’s
+load the libraries first:</p>
 
 <pre><code class="language-xtlang">;; load the libs
 (sys:load "libs/external/instruments_ext.xtm")
@@ -696,18 +759,26 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 (set-sampler-index drums (string-append drum-path "ride1Bell_OH_F_6.wav") *gm-ride-bell* 0 0 0 1)
 
 </code></pre>
-<p>Let’s look at the first row of <code>set-sampler-index</code>. Can you guess why do we need <code>*gm-kick*</code>? What does <code>string-append drum-path "kick_OH_F_9.wav"</code> do?</p>
+
+<p>Let’s look at the first row of <code>set-sampler-index</code>. Can you guess why do we need
+<code>*gm-kick*</code>? What does <code>string-append drum-path "kick_OH_F_9.wav"</code> do?</p>
 
 <blockquote>
-  <p>Note: How to load samples (you can also find more information from <a href="https://digego.github.io/extempore/sampler.html">github</a>).</p>
+  <p>Note: How to load samples (you can also find more information from
+<a href="https://digego.github.io/extempore/sampler.html">github</a>).</p>
+
   <ol>
-    <li>Download the instrument samples from <a href="https://archive.org/download/SalamanderDrumkit/salamanderDrumkit.tar.bz2">Salamader Drumkit</a>.</li>
+    <li>Download the instrument samples from
+<a href="https://archive.org/download/SalamanderDrumkit/salamanderDrumkit.tar.bz2">Salamader Drumkit</a>.</li>
     <li>Unzip the samples and put them wherever you like on your computer.</li>
-    <li>Set/Change the path of the subdirectory “OH” in your code. In my computer it’s like:   <code>define drum-path "/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/"</code>.</li>
+    <li>Set/Change the path of the subdirectory “OH” in your code. In my computer
+it’s like:
+<code>define drum-path "/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/"</code>.</li>
   </ol>
 </blockquote>
 
-<p>Before you run the code, do not forget to define and add an instrument <code>drums</code> to the <code>dsp</code> output sink closure, and set the <code>dsp</code> as well:</p>
+<p>Before you run the code, do not forget to define and add an instrument <code>drums</code>
+to the <code>dsp</code> output sink closure, and set the <code>dsp</code> as well:</p>
 
 <pre><code class="language-xtlang">;; define a sampler (called drums) using the default sampler note kernel and effects
 (make-instrument drums sampler)
@@ -723,7 +794,8 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 (dsp:set! dsp)
 </code></pre>
 
-<p>Sounds could be played by calling the below instructions, the similar things as we did before:</p>
+<p>Sounds could be played by calling the below instructions, the similar things as
+we did before:</p>
 
 <pre><code class="language-xtlang">;; evaluate
 (play-note (now) drums *gm-open-triangle* 80 44100)
@@ -731,11 +803,13 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 (play-note (now) drums *gm-closed-hi-hat* 80 44100)
 </code></pre>
 
-<p>Can you predict what will happen after you run above three lines respectively? Then run the code to check your thoughts.</p>
+<p>Can you predict what will happen after you run above three lines respectively?
+Then run the code to check your thoughts.</p>
 
 <hr />
 
-<p>Now, a cool thing we will do is to define a <code>metronome</code> to evenly distribute our beats with respect to tempo changes.</p>
+<p>Now, a cool thing we will do is to define a <code>metronome</code> to evenly distribute our
+beats with respect to tempo changes.</p>
 
 <p>Can you predict what is happening here?</p>
 
@@ -758,7 +832,9 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 <pre><code class="language-xtlang">;; create another metronome starting at 120 bpm
 (define *metro2* (make-metro 120))
 </code></pre>
-<p>Can you guess what will happen after you evaluate this <code>drum-loop-tempo-shift</code>? What does <code>println</code> will do?</p>
+
+<p>Can you guess what will happen after you evaluate this <code>drum-loop-tempo-shift</code>?
+What does <code>println</code> will do?</p>
 
 <pre><code class="language-xtlang">;; set tempo shift
 (define drum-loop-tempo-shift
@@ -773,14 +849,17 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 </code></pre>
 
 <blockquote>
-  <p>Note: <code>println</code> calls the polymorphic function <code>print</code> for each supplied argument, but <code>println</code> automatically provides both spaces and a carriage return.</p>
+  <p>Note: <code>println</code> calls the polymorphic function <code>print</code> for each supplied
+argument, but <code>println</code> automatically provides both spaces and a carriage
+return.</p>
 </blockquote>
 
 <p>Run the code. Did it work as you predicted?</p>
 
 <h3 id="investigate-3">Investigate</h3>
 
-<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
 
 <ol>
   <li>What does the function <code>make-metro</code> do?</li>
@@ -791,10 +870,12 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 <h3 id="modify-3">Modify</h3>
 
-<p>Work in pairs or in small groups, work out the answers to the following questions:</p>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
 
 <ol>
-  <li>Can you load the piano samples as well? (<a href="http://download.linuxaudio.org/lau/SalamanderGrandPianoV2/SalamanderGrandPianoV2_44.1khz16bit.tar.bz2">Salamander piano</a>).</li>
+  <li>Can you load the piano samples as well?
+(<a href="http://download.linuxaudio.org/lau/SalamanderGrandPianoV2/SalamanderGrandPianoV2_44.1khz16bit.tar.bz2">Salamander piano</a>).</li>
   <li>Can you pay multiple drums with different tempo at the same time?</li>
 </ol>
 
@@ -805,99 +886,114 @@ You could use <code>(random 440.0 700.0)</code> to randomly generate a value bet
 
 <h3 id="make-3">Make</h3>
 
-<p>Combine the knowledge that you learned before. Now you can use drums, synth, piano and metronome to create your own music.</p>
+<p>Combine the knowledge that you learned before. Now you can use drums, synth,
+piano and metronome to create your own music.</p>
 
 <h2 id="going-further">Going further</h2>
 
-<p>As well as the <a href="https://extemporelang.github.io">Extempore documentation
-website</a>, the best place to start messing
-around is with more examples: e.g. the <code>examples/core/fmsynth.xtm</code> file in your
-Extempore folder.</p>
+<p>As well as the
+<a href="https://extemporelang.github.io">Extempore documentation website</a>, the best
+place to start messing around is with more examples: e.g. the
+<code>examples/core/fmsynth.xtm</code> file in your Extempore folder.</p>
 
 </article>
-
-
-	  </main>
-	  <footer>
+</main>
+      <footer>
   <script>
-   const cafeUrls = [
-	 "https://biginelli.com/",
-	 "http://tilleys.com.au",
-	 "https://www.facebook.com/goodbrothercafe/",
-	 "https://frontgallerycafe.com",
-	 "https://www.facebook.com/thecoffeegrounds",
-	 "https://redbrickcoffee.com.au/redbrick/"
-   ];
-   const randomCafe = () => {
-	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
-   };
+    const cafeUrls = [
+      "https://biginelli.com/",
+      "http://tilleys.com.au",
+      "https://www.facebook.com/goodbrothercafe/",
+      "https://frontgallerycafe.com",
+      "https://www.facebook.com/thecoffeegrounds",
+      "https://redbrickcoffee.com.au/redbrick/",
+    ];
+    const randomCafe = () => {
+      window.location.href =
+        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
+    };
   </script>
 
   <!-- colophon -->
   <p>
-	designed & built with
-	<a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
-	<a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
-	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a> on
-	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
-	by Ben Swift
+    designed & built with
+    <a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
+    <a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
+    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
+      ><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a
+    >
+    on unceded
+    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
+      >Ngunnawal country</a
+    >
+    by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em;">
-	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
+  <p style="font-size: 1.3em"><a
+  title="CC BY-NC-SA licence"
+  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
 </a>
-
-  </p>
+</p>
 
   <!-- throw shade on IE -->
   <p>
-	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
-	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+    uses
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
+    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>96e618982</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/96e618982/_posts/2019-09-18-xinyus-extempore-tutorials.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-09-18-xinyus-extempore-tutorials.md">page history</a>
-	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
+    site revision <code>03af03f74</code> (see
+    <a
+      href="https://github.com/benswift/benswift.github.io/blob/03af03f74/_posts/2019-09-18-xinyus-extempore-tutorials.md"
+      >source</a
+    >,
+    <a
+      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-09-18-xinyus-extempore-tutorials.md"
+      >page history</a
+    >
+    on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
   <!-- anchor.js -->
   <script src='/assets/js/anchor.js'></script>
 
 <script>
- anchors.options = {
-   visible: "touch",
-   icon: "#"
- };
- document.addEventListener("DOMContentLoaded", function(event) {
-   anchors.add("article > h2, article > h3");
- });
+  anchors.options = {
+    visible: "touch",
+    icon: "#",
+  };
+  document.addEventListener("DOMContentLoaded", function (event) {
+    anchors.add(
+      "article > h2, article > h3"
+    );
+  });
 </script>
 
 
   <!-- highlight.js -->
   <script src="/assets/js/highlight.pack.js"></script>
 <script src="/assets/js/extempore.min.js"></script>
-<link rel="stylesheet" href="/assets/css/atom-one-dark.css">
+<link rel="stylesheet" href="/assets/css/atom-one-dark.css" />
 
 <script>
- hljs.highlightAll();
+  hljs.highlightAll();
 </script>
 
 
-  <script src='/assets/js/os-aware-modifiers.js' type="text/javascript"></script>
-
+  <script
+    src='/assets/js/os-aware-modifiers.js'
+    type="text/javascript"
+  ></script>
 </footer>
 
-	</div>
-	<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    </div>
+    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
