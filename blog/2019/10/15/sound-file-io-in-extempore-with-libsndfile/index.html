@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-    <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#be2edd" />
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Sound file I/O in Extempore with libsndfile | benswift.me</title>
@@ -26,34 +26,16 @@
 <script type="application/ld+json">
 {"headline":"Sound file I/O in Extempore with libsndfile","dateModified":"2019-10-15T00:00:00+11:00","datePublished":"2019-10-15T00:00:00+11:00","url":"https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile/"},"description":"libsndfile is “a C library for reading and writing files containing sampled audio data”, and it’s pretty great. Here’s a quick crash-course on using Extempore’s libsndfile bindings to read, process and write audio data files.","author":{"@type":"Person","name":"Ben Swift"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
- <script>
-  if (
-    !sessionStorage.getItem("_swa") &&
-    document.referrer.indexOf(location.protocol + "//" + location.host) !== 0
-  ) {
-    fetch(
-      "https://counter.dev/track?" +
-        new URLSearchParams({
-          referrer: document.referrer,
-          screen: screen.width + "x" + screen.height,
-          user: "benswift",
-          utcoffset: "11",
-        })
-    );
-  }
-  sessionStorage.setItem("_swa", "1");
-</script>
 
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href='/assets/css/main.css'
-    />
+<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"benswift",utcoffset:"11"}))};sessionStorage.setItem("_swa","1");</script>
+
+
+	<link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
   </head>
   <body>
-    <div class="container">
-      <header>
+	<div class="container">
+	  <header>
 
   <nav class="logo" aria-label="site home">
 	<a href="/">benswift.me</a>
@@ -82,7 +64,8 @@
 
 </header>
 
-      <main aria-label="Content"><article>
+	  <main aria-label="Content">
+		<article>
   <p class="post-date">15 Oct '19</p>
   <h1><p>Sound file I/O in Extempore with libsndfile</p>
 </h1>
@@ -90,15 +73,16 @@
 <p class="post-tag-container">
   
   <a class="post-tag" href='/blog/tag/extempore'>
-    extempore
+	extempore
   </a>
   
 </p>
 
- <p><a href="https://github.com/erikd/libsndfile/">libsndfile</a> is “a C library for reading
+
+  <p><a href="https://github.com/erikd/libsndfile/">libsndfile</a> is “a C library for reading
 and writing files containing sampled audio data”, and it’s pretty great. Here’s
-a quick crash-course on using
-<a href="https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm">Extempore’s libsndfile bindings</a>
+a quick crash-course on using <a href="https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm">Extempore’s libsndfile
+bindings</a>
 to read, process and write audio data files.</p>
 
 <h2 id="loading-the-xtlang-wrappers-for-the-sndfile-library-functions">Loading the xtlang wrappers for the sndfile library functions</h2>
@@ -110,9 +94,9 @@ libsndfile wrapper functions:</p>
 </code></pre>
 
 <p><code>libs/external/sndlib.xtm</code> contains <code>bind-lib</code> definitions for all<sup id="fnref:pm-all" role="doc-noteref"><a href="#fn:pm-all" class="footnote" rel="footnote">1</a></sup> the
-functions in the libsndfile library (compare that file to the
-<a href="https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in">C header</a> to
-see for yourself).</p>
+functions in the libsndfile library (compare that file to the <a href="https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in">C
+header</a> to see
+for yourself).</p>
 
 <p>In this blog post I’m mostly going to write “thin” xtlang code—calling the C
 functions directly wherever possible, and using the same basic types as the
@@ -124,8 +108,8 @@ shared libs if you wanted to).</p>
 
 <h2 id="reading-the-audio-file-data-into-memory">Reading the audio file data into memory</h2>
 
-<p>In a fairly common API design pattern, to get info about a sound file (length,
-channels, sample rate, format, etc.) we need to:</p>
+<p>In a fairly common API design pattern, to get info about a sound file (length, channels,
+sample rate, format, etc.) we need to:</p>
 
 <ol>
   <li>
@@ -144,8 +128,8 @@ for the data—and to do that, we need to know how many frames there are in the
 audio file, and how many channels per frame.</p>
 
 <p>Looking at the documentation (i.e. the comment above the function declaration in
-the C header file) for <code>SF_INFO</code> we see that the first (tuple index <code>0</code>) and
-third (tuple index <code>2</code>) fields are going to be useful</p>
+the C header file) for <code>SF_INFO</code> we see that the first (tuple index <code>0</code>) and third
+(tuple index <code>2</code>) fields are going to be useful</p>
 
 <pre><code class="language-c">struct SF_INFO
 {   sf_count_t  frames ;        /* Used to be called samples.  Changed to avoid confusion. */
@@ -319,11 +303,14 @@ docs—there are lots of options.</p>
 <h2 id="wrapping-up">Wrapping up</h2>
 
 <p>There’s lots more to explore, but I’ll leave it here for now. If you’ve got any
-comments, then get in touch on the
-<a href="mailto:extemporelang@googlegroups.com">Extempore mailing list</a>.</p>
+comments, then get in touch on the <a href="mailto:extemporelang@googlegroups.com">Extempore mailing
+list</a>.</p>
 
-<p><a href="https://extemporelang.github.io/docs/reference/c-xtlang-interop/">Extempore docs</a>
-if you’re interested.</p>
+<p>[c-xtlang-interop]:
+    There’s more detail on how this works in the
+    <a href="https://extemporelang.github.io/docs/reference/c-xtlang-interop/">Extempore
+    docs</a>
+    if you’re interested.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:pm-all" role="doc-endnote">
@@ -336,103 +323,89 @@ if you’re interested.</p>
 </div>
 
 </article>
-</main>
-      <footer>
+
+
+	  </main>
+	  <footer>
   <script>
-    const cafeUrls = [
-      "https://biginelli.com/",
-      "http://tilleys.com.au",
-      "https://www.facebook.com/goodbrothercafe/",
-      "https://frontgallerycafe.com",
-      "https://www.facebook.com/thecoffeegrounds",
-      "https://redbrickcoffee.com.au/redbrick/",
-    ];
-    const randomCafe = () => {
-      window.location.href =
-        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
-    };
+   const cafeUrls = [
+	 "https://biginelli.com/",
+	 "http://tilleys.com.au",
+	 "https://www.facebook.com/goodbrothercafe/",
+	 "https://frontgallerycafe.com",
+	 "https://www.facebook.com/thecoffeegrounds",
+	 "https://redbrickcoffee.com.au/redbrick/"
+   ];
+   const randomCafe = () => {
+	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
+   };
   </script>
 
   <!-- colophon -->
   <p>
-    designed & built with
-    <a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
-    <a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
-    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
-      ><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a
-    >
-    on unceded
-    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
-      >Ngunnawal country</a
-    >
-    by Ben Swift
+	designed & built with
+	<a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
+	<a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
+	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a> on
+	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
+	by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em"><a
-  title="CC BY-NC-SA licence"
-  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
->
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
+  <p style="font-size: 1.3em;">
+	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
 </a>
-</p>
+
+  </p>
 
   <!-- throw shade on IE -->
   <p>
-    uses
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
-    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
+	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>03af03f74</code> (see
-    <a
-      href="https://github.com/benswift/benswift.github.io/blob/03af03f74/_posts/2019-10-15-sound-file-io-in-extempore-with-libsndfile.md"
-      >source</a
-    >,
-    <a
-      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-10-15-sound-file-io-in-extempore-with-libsndfile.md"
-      >page history</a
-    >
-    on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
+	site revision <code>9282649de</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/9282649de/_posts/2019-10-15-sound-file-io-in-extempore-with-libsndfile.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-10-15-sound-file-io-in-extempore-with-libsndfile.md">page history</a>
+	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
   <!-- anchor.js -->
   <script src='/assets/js/anchor.js'></script>
 
 <script>
-  anchors.options = {
-    visible: "touch",
-    icon: "#",
-  };
-  document.addEventListener("DOMContentLoaded", function (event) {
-    anchors.add(
-      "article > h2, article > h3"
-    );
-  });
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
+ document.addEventListener("DOMContentLoaded", function(event) {
+   anchors.add("article > h2, article > h3");
+ });
 </script>
 
 
   <!-- highlight.js -->
   <script src="/assets/js/highlight.pack.js"></script>
 <script src="/assets/js/extempore.min.js"></script>
-<link rel="stylesheet" href="/assets/css/atom-one-dark.css" />
+<link rel="stylesheet" href="/assets/css/atom-one-dark.css">
 
 <script>
-  hljs.highlightAll();
+ hljs.highlightAll();
 </script>
 
 
-  <script
-    src='/assets/js/os-aware-modifiers.js'
-    type="text/javascript"
-  ></script>
+  <script src='/assets/js/os-aware-modifiers.js' type="text/javascript"></script>
+
 </footer>
 
-    </div>
-    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	</div>
+	<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com

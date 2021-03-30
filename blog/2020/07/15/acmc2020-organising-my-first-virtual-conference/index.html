@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-    <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#be2edd" />
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>ACMC2020: tools for organising a virtual conference | benswift.me</title>
@@ -26,34 +26,16 @@
 <script type="application/ld+json">
 {"headline":"ACMC2020: tools for organising a virtual conference","dateModified":"2020-07-15T00:00:00+10:00","datePublished":"2020-07-15T00:00:00+10:00","url":"https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference/"},"description":"I’ve been a bit quiet on this blog for the last few weeks[^weeks] because I’ve been organising ACMC2020: the 2020 Australasian Computer Music Conference. From the conference landing page:","author":{"@type":"Person","name":"Ben Swift"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
- <script>
-  if (
-    !sessionStorage.getItem("_swa") &&
-    document.referrer.indexOf(location.protocol + "//" + location.host) !== 0
-  ) {
-    fetch(
-      "https://counter.dev/track?" +
-        new URLSearchParams({
-          referrer: document.referrer,
-          screen: screen.width + "x" + screen.height,
-          user: "benswift",
-          utcoffset: "11",
-        })
-    );
-  }
-  sessionStorage.setItem("_swa", "1");
-</script>
 
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href='/assets/css/main.css'
-    />
+<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"benswift",utcoffset:"11"}))};sessionStorage.setItem("_swa","1");</script>
+
+
+	<link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
   </head>
   <body>
-    <div class="container">
-      <header>
+	<div class="container">
+	  <header>
 
   <nav class="logo" aria-label="site home">
 	<a href="/">benswift.me</a>
@@ -82,7 +64,8 @@
 
 </header>
 
-      <main aria-label="Content"><article>
+	  <main aria-label="Content">
+		<article>
   <p class="post-date">15 Jul '20</p>
   <h1><p>ACMC2020: tools for organising a virtual conference</p>
 </h1>
@@ -90,18 +73,19 @@
 <p class="post-tag-container">
   
   <a class="post-tag" href='/blog/tag/web'>
-    web
+	web
   </a>
   
   <a class="post-tag" href='/blog/tag/tools'>
-    tools
+	tools
   </a>
   
 </p>
 
- <p>I’ve been a bit quiet on this blog for the last few weeks<sup id="fnref:weeks" role="doc-noteref"><a href="#fn:weeks" class="footnote" rel="footnote">1</a></sup> because I’ve
-been organising <a href="https://acmc2020.com/">ACMC2020</a>: the <em>2020 Australasian
-Computer Music Conference</em>. From the conference landing page:</p>
+
+  <p>I’ve been a bit quiet on this blog for the last few weeks<sup id="fnref:weeks" role="doc-noteref"><a href="#fn:weeks" class="footnote" rel="footnote">1</a></sup> because I’ve
+been organising <a href="https://acmc2020.com/">ACMC2020</a>: the <em>2020 Australasian Computer
+Music Conference</em>. From the conference landing page:</p>
 
 <blockquote>
   <p>This year’s conference theme is <strong>inclusion</strong>. We want to highlight the
@@ -117,18 +101,28 @@ and mainstream institutions.</p>
 freely available online; check out our
 <a href="https://www.youtube.com/watch?v=v6muRCIp3Kg&amp;list=PL4_Bp-PE5_5sgaN4pIzrz0KGBn0RXramC">keynotes</a>).
 It’s been a lot of hard work, but the ACMC community are <em>amazing</em>, so it’s been
-pretty fun as well. A special shout out to the rest of the ACMC
-<a href="https://acmc2020.com/#Organisers">organising committee</a> (Charles, Nat, Sia, Kit
-&amp; Alec) for all their hard work—thanks team :) So even though I’m writing this
-blog post, these decisions &amp; reflections are really the result of our combined
-labour, as well as feedback from the ACMC community during the conference.</p>
+pretty fun as well. A special shout out to the rest of the ACMC <a href="https://acmc2020.com/#Organisers">organising
+committee</a> (Charles, Nat, Sia, Kit &amp; Alec) for
+all their hard work—thanks team :) So even though I’m writing this blog post,
+these decisions &amp; reflections are really the result of our combined labour, as
+well as feedback from the ACMC community during the conference.</p>
 
 <div id="toc">
+
   <h2>table of contents</h2>
 
-  <ul>
-    <li>TOC {:toc}</li>
-  </ul>
+<ul id="markdown-toc">
+  <li><a href="#tools-for-running-an-online-conference-in-2020" id="markdown-toc-tools-for-running-an-online-conference-in-2020">Tools for running an online conference in 2020</a>    <ul>
+      <li><a href="#website" id="markdown-toc-website">Conference website</a></li>
+      <li><a href="#easychair" id="markdown-toc-easychair">Submissions &amp; peer review</a></li>
+      <li><a href="#google-docs" id="markdown-toc-google-docs">Scheduling/programming the sessions</a></li>
+      <li><a href="#youtube" id="markdown-toc-youtube">Video presentations</a></li>
+      <li><a href="#discord" id="markdown-toc-discord">Q&amp;A and discussion</a></li>
+      <li><a href="#going-to-the-pub-after-the-session" id="markdown-toc-going-to-the-pub-after-the-session">Going to the pub after the session</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
 
 <h2 id="tools-for-running-an-online-conference-in-2020">Tools for running an online conference in 2020</h2>
@@ -170,10 +164,10 @@ pipelines make me happy ☺</p>
 </ol>
 
 <p class="hl-para"><strong>tl;dr</strong> we used <a href="https://easychair.org/">EasyChair</a> for submissions &amp; peer
-review, a
-<a href="https://github.com/australasian-computer-music-association/acmc2020">customised version of ICLR’s</a>
-website,
-<a href="https://support.google.com/youtube/answer/9080341?hl=en">YouTube premiere</a>, and
+review, a <a href="https://github.com/australasian-computer-music-association/acmc2020">customised version of
+ICLR’s</a>
+website, <a href="https://support.google.com/youtube/answer/9080341?hl=en">YouTube
+premiere</a>, and
 <a href="https://discord.com/">Discord</a> for text/voice discussion and q&amp;a</p>
 
 <h3 id="website">Conference website</h3>
@@ -185,15 +179,15 @@ conference and drumming up submissions.</p>
 
 <p>Around the time we were finalising the accepted papers &amp; conference schedule,
 the ICLR team <a href="https://news.ycombinator.com/item?id=23282113">posted on HN</a> that
-the tooling for their
-<a href="https://iclr.cc/virtual_2020/index.html">virtual conference</a> was newly
-<a href="https://github.com/Mini-Conf/Mini-Conf">available on GitHub</a>. We decided to use
-it as a starting point for building the ACMC2020 conference website.</p>
+the tooling for their <a href="https://iclr.cc/virtual_2020/index.html">virtual
+conference</a> was newly <a href="https://github.com/Mini-Conf/Mini-Conf">available on
+GitHub</a>. We decided to use it as a
+starting point for building the ACMC2020 conference website.</p>
 
 <p>The final version of the ACMC site is still live (and will remain so for a while
-at least) at <a href="https://acmc2020.com/">https://acmc2020.com/</a>, and the
-<a href="https://github.com/australasian-computer-music-association/acmc2020">source is up on GitHub</a>
-as well.</p>
+at least) at <a href="https://acmc2020.com/">https://acmc2020.com/</a>, and the <a href="https://github.com/australasian-computer-music-association/acmc2020">source is up on
+GitHub</a> as
+well.</p>
 
 <picture>
   <img alt="ACMC website screenshot" src="/assets/images/posts/acmc-website-words-sounds-screenshot.png" />
@@ -203,10 +197,10 @@ as well.</p>
 
 <ul>
   <li>
-    <p>in the end I think it looked really great (and we received some
-<a href="https://twitter.com/benswift/status/1280746825637453824">nice feedback</a> from
-the creators of the template) but it was
-<a href="https://github.com/australasian-computer-music-association/acmc2020/pulse">a lot of work</a>
+    <p>in the end I think it looked really great (and we received some <a href="https://twitter.com/benswift/status/1280746825637453824">nice
+feedback</a> from the
+creators of the template) but it was <a href="https://github.com/australasian-computer-music-association/acmc2020/pulse">a lot of
+work</a>
 requiring a non-trivial amount of web development experience to get it to that
 point (Charles Martin helped a lot with this)</p>
   </li>
@@ -244,8 +238,8 @@ however there were certainly people for whom this process was unfamiliar and a
 bit daunting (so we need to provide more guidance for those folks next time)</p>
   </li>
   <li>
-    <p>EasyChair sucks, but the others
-(<a href="https://new.precisionconference.com/">Precision Conference</a>,
+    <p>EasyChair sucks, but the others (<a href="https://new.precisionconference.com/">Precision
+Conference</a>,
 <a href="https://cmt3.research.microsoft.com/">CMT</a>) suck too, so I wouldn’t strongly
 push people one way on the other on this part of the process—as long as your
 choice allows you to export all accepted submissions &amp; their metadata in some
@@ -285,8 +279,8 @@ familiarity of a spreadsheet was a net win</p>
   </li>
   <li>
     <p>the <a href="#website">website infrastructure</a> has a place for putting python scripts,
-and
-<a href="https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py">we used this a lot</a>
+and <a href="https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py">we used this a
+lot</a>
 to run consistency checks &amp; other helpful analyses (because checking stuff
 with scripts is way more fun than checking it by eye, and <em>probably</em> a
 time-saver…)</p>
@@ -302,17 +296,17 @@ everything on YouTube nonetheless.</p>
 
 <p>A couple of the performances were livestreamed, but for the majority of the
 conference program participants were asked to submit a video representing their
-performance or paper presentation. Then, an
-<a href="https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py">elaborate series of ffmpeg scripts</a><sup id="fnref:ffmpeg" role="doc-noteref"><a href="#fn:ffmpeg" class="footnote" rel="footnote">3</a></sup>
+performance or paper presentation. Then, an <a href="https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py">elaborate series of ffmpeg
+scripts</a><sup id="fnref:ffmpeg" role="doc-noteref"><a href="#fn:ffmpeg" class="footnote" rel="footnote">3</a></sup>
 concatenated the videos to produce a single video per session, with consistent
 “titlecards” announcing the authors &amp; title of each new video in the session.</p>
 
 <p>Each session video was uploaded to YouTube, and scheduled for “simultaneous
-viewing” at the scheduled time using the
-<a href="https://support.google.com/youtube/answer/9080341?hl=en">YouTube Premiere</a>
-feature. After the Premiere, the videos were (still are) left up on the
-<a href="https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw">ACMC YouTube</a> for
-people to catch up &amp; watch at their leisure.</p>
+viewing” at the scheduled time using the <a href="https://support.google.com/youtube/answer/9080341?hl=en">YouTube
+Premiere</a> feature.
+After the Premiere, the videos were (still are) left up on the <a href="https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw">ACMC
+YouTube</a> for people to
+catch up &amp; watch at their leisure.</p>
 
 <p><img src="/assets/images/posts/acmc-youtube-screenshot.png" alt="ACMC YouTube channel screenshot" /></p>
 
@@ -321,8 +315,8 @@ people to catch up &amp; watch at their leisure.</p>
 <ul>
   <li>
     <p>outsourcing the video delivery to YouTube (who, regardless of what you think
-of their business model, are <strong>really good</strong> at delivering video) saved so
-much stress</p>
+of their business model, are <strong>really good</strong> at delivering video) saved
+so much stress</p>
   </li>
   <li>
     <p>the ability to upload &amp; schedule the video ahead of time but still watch it
@@ -342,17 +336,21 @@ accessibility wins</p>
     <p>it’s hard to know what sort of viewership counts as “successful”, but the ACMC
 conference videos (in total) are currently at 2.2k views and ~500h watch time</p>
   </li>
-  <li>in terms of wranging the videos pre-upload, <a href="https://ffmpeg.org/"><code>ffmpeg</code></a> is
+  <li>
+    <p>in terms of wranging the videos pre-upload, <a href="https://ffmpeg.org/"><code>ffmpeg</code></a> is
 <em>amazing</em> for dealing with all the weird audio/video formats that presenters
 will send you, however until you grok that each <code>ffmpeg</code> run is actually
 setting up a graph of audio &amp; video sinks, sources &amp; filters you’re doomed to
 copy-paste stuff from StackOverflow and then stare in bewilderment at cryptic
-error messages (trust me… I learned this the hard way 😢)</li>
-  <li>not all presenters<sup id="fnref:acmc-presenters" role="doc-noteref"><a href="#fn:acmc-presenters" class="footnote" rel="footnote">4</a></sup> at an academic conference have the skills
+error messages (trust me… I learned this the hard way 😢)</p>
+  </li>
+  <li>
+    <p>not all presenters<sup id="fnref:acmc-presenters" role="doc-noteref"><a href="#fn:acmc-presenters" class="footnote" rel="footnote">4</a></sup> at an academic conference have the skills
 (or the inclination) to create an engaging video of their work, so depending
 on your community you might see the occasional “monotone drone over text
 slides” presentation (but you’d get bad presentations at an in-person
-conference as well)</li>
+conference as well)</p>
+  </li>
 </ul>
 
 <h3 id="discord">Q&amp;A and discussion</h3>
@@ -405,8 +403,8 @@ speaker could respond using audio rather than having to type out their answers</
 <p>Sadly, the ACMC committee never found out a good way of recreating this part of
 the usual conference experience at an online conference. Some folks who were
 geographically co-located did get together and watch some of the streams
-together, but the recent
-<a href="https://www.abc.net.au/news/2020-07-07/metropolitan-melbourne-suburbs-back-in-coronavirus-lockdown/12431564">Melbourne covid19 lockdown</a>
+together, but the recent <a href="https://www.abc.net.au/news/2020-07-07/metropolitan-melbourne-suburbs-back-in-coronavirus-lockdown/12431564">Melbourne covid19
+lockdown</a>
 meant that some people couldn’t even do that.</p>
 
 <h4 id="reflections-5">Reflections</h4>
@@ -420,8 +418,8 @@ relationships which developed over the course of ACMC2020</li>
   <ol>
     <li id="fn:weeks" role="doc-endnote">
 
-      <p>well, it’s actually pretty common that I’m quiet for a few weeks, so I guess
-it’s business as usual <a href="#fnref:weeks" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>well, it’s actually pretty common that I’m quiet for a few weeks, so I
+guess it’s business as usual <a href="#fnref:weeks" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:chronodiversity" role="doc-endnote">
 
@@ -442,103 +440,89 @@ as much time to get right as the rest of the website stuff combined 😞 <a hre
 </div>
 
 </article>
-</main>
-      <footer>
+
+
+	  </main>
+	  <footer>
   <script>
-    const cafeUrls = [
-      "https://biginelli.com/",
-      "http://tilleys.com.au",
-      "https://www.facebook.com/goodbrothercafe/",
-      "https://frontgallerycafe.com",
-      "https://www.facebook.com/thecoffeegrounds",
-      "https://redbrickcoffee.com.au/redbrick/",
-    ];
-    const randomCafe = () => {
-      window.location.href =
-        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
-    };
+   const cafeUrls = [
+	 "https://biginelli.com/",
+	 "http://tilleys.com.au",
+	 "https://www.facebook.com/goodbrothercafe/",
+	 "https://frontgallerycafe.com",
+	 "https://www.facebook.com/thecoffeegrounds",
+	 "https://redbrickcoffee.com.au/redbrick/"
+   ];
+   const randomCafe = () => {
+	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
+   };
   </script>
 
   <!-- colophon -->
   <p>
-    designed & built with
-    <a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
-    <a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
-    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
-      ><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a
-    >
-    on unceded
-    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
-      >Ngunnawal country</a
-    >
-    by Ben Swift
+	designed & built with
+	<a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
+	<a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
+	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a> on
+	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
+	by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em"><a
-  title="CC BY-NC-SA licence"
-  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
->
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
+  <p style="font-size: 1.3em;">
+	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
 </a>
-</p>
+
+  </p>
 
   <!-- throw shade on IE -->
   <p>
-    uses
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
-    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
+	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>03af03f74</code> (see
-    <a
-      href="https://github.com/benswift/benswift.github.io/blob/03af03f74/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md"
-      >source</a
-    >,
-    <a
-      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md"
-      >page history</a
-    >
-    on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
+	site revision <code>9282649de</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/9282649de/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2020-07-15-acmc2020-organising-my-first-virtual-conference.md">page history</a>
+	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
   <!-- anchor.js -->
   <script src='/assets/js/anchor.js'></script>
 
 <script>
-  anchors.options = {
-    visible: "touch",
-    icon: "#",
-  };
-  document.addEventListener("DOMContentLoaded", function (event) {
-    anchors.add(
-      "article > h2, article > h3"
-    );
-  });
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
+ document.addEventListener("DOMContentLoaded", function(event) {
+   anchors.add("article > h2, article > h3");
+ });
 </script>
 
 
   <!-- highlight.js -->
   <script src="/assets/js/highlight.pack.js"></script>
 <script src="/assets/js/extempore.min.js"></script>
-<link rel="stylesheet" href="/assets/css/atom-one-dark.css" />
+<link rel="stylesheet" href="/assets/css/atom-one-dark.css">
 
 <script>
-  hljs.highlightAll();
+ hljs.highlightAll();
 </script>
 
 
-  <script
-    src='/assets/js/os-aware-modifiers.js'
-    type="text/javascript"
-  ></script>
+  <script src='/assets/js/os-aware-modifiers.js' type="text/javascript"></script>
+
 </footer>
 
-    </div>
-    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	</div>
+	<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com

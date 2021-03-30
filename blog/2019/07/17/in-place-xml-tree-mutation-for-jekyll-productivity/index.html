@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-    <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#be2edd" />
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>In-place XML tree mutation for Jekyll productivity | benswift.me</title>
@@ -26,34 +26,16 @@
 <script type="application/ld+json">
 {"headline":"In-place XML tree mutation for Jekyll productivity","dateModified":"2019-07-17T00:00:00+10:00","datePublished":"2019-07-17T00:00:00+10:00","url":"https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/"},"description":"I wrote a reveal.js plugin for Jekyll so that I can make nice slides (especially for my ANU courses). Recently, though, I’ve been touching up the COMP1720 slides for 2019 and it’s getting really slow to build the website.","author":{"@type":"Person","name":"Ben Swift"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
- <script>
-  if (
-    !sessionStorage.getItem("_swa") &&
-    document.referrer.indexOf(location.protocol + "//" + location.host) !== 0
-  ) {
-    fetch(
-      "https://counter.dev/track?" +
-        new URLSearchParams({
-          referrer: document.referrer,
-          screen: screen.width + "x" + screen.height,
-          user: "benswift",
-          utcoffset: "11",
-        })
-    );
-  }
-  sessionStorage.setItem("_swa", "1");
-</script>
 
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href='/assets/css/main.css'
-    />
+<script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"benswift",utcoffset:"11"}))};sessionStorage.setItem("_swa","1");</script>
+
+
+	<link rel="stylesheet" type="text/css" href='/assets/css/main.css'>
   </head>
   <body>
-    <div class="container">
-      <header>
+	<div class="container">
+	  <header>
 
   <nav class="logo" aria-label="site home">
 	<a href="/">benswift.me</a>
@@ -82,7 +64,8 @@
 
 </header>
 
-      <main aria-label="Content"><article>
+	  <main aria-label="Content">
+		<article>
   <p class="post-date">17 Jul '19</p>
   <h1><p>In-place XML tree mutation for Jekyll productivity</p>
 </h1>
@@ -90,16 +73,18 @@
 <p class="post-tag-container">
   
   <a class="post-tag" href='/blog/tag/web'>
-    web
+	web
   </a>
   
 </p>
 
- <p>I wrote a <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">reveal.js</a> plugin for Jekyll so
-that I can make nice slides (especially for my <a href="https://cs.anu.edu.au/courses/comp1720/lectures/">ANU</a>
-<a href="https://cs.anu.edu.au/courses/comp2300/lectures/">courses</a>). Recently, though, I’ve
-been touching up the COMP1720 slides for 2019 and it’s getting <em>really slow</em> to build
-the website.</p>
+
+  <p>I wrote a <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">reveal.js</a> plugin for Jekyll
+so that I can make nice slides (especially for my
+<a href="https://cs.anu.edu.au/courses/comp1720/lectures/">ANU</a>
+<a href="https://cs.anu.edu.au/courses/comp2300/lectures/">courses</a>). Recently, though,
+I’ve been touching up the COMP1720 slides for 2019 and it’s getting <em>really
+slow</em> to build the website.</p>
 
 <p>I turned to Jekyll’s built-in profiling command to see where the problem is.
 Here’s the output of <code>jekyll build --profile</code> on this website, which (currently)
@@ -191,9 +176,10 @@ builds in <strong>7.2 seconds</strong> on my machine.</p>
 </table>
 
 <p>Clearly, the <code>reveal.html</code> layout is the problem, taking 4.1s (more than half
-the total build time). I suspect that this is because my <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">reveal plugin</a> does a bunch of copying
-of (Nokogiri) XML nodes, because I wasn’t worrying about performance when I wrote
-it.</p>
+the total build time). I suspect that this is because my <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">reveal
+plugin</a> does a bunch of
+copying of (Nokogiri) XML nodes, because I wasn’t worrying about performance
+when I wrote it.</p>
 
 <h3 id="re-parent-all-the-nodes">Re-parent all the nodes!</h3>
 
@@ -204,8 +190,8 @@ I’m a big immutability fan usually, which is why I built the plugin based on
 copying originally, but with a bit of careful re-parenting the <code>revealify.rb</code>
 plugin now looks like
 <a href="https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb">this</a>
-(see the <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">linked post above</a> to see what it looked
-like before).</p>
+(see the <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">linked post above</a> to see what it
+looked like before).</p>
 
 <p>And the result? Total build time is down to <strong>2.8 seconds</strong>. Admittedly that was
 because it was <em>really inefficient</em> before, but I’ll take a 2.5x speedup anyday
@@ -306,103 +292,89 @@ careful.</p>
 slides for the upcoming semester.</p>
 
 </article>
-</main>
-      <footer>
+
+
+	  </main>
+	  <footer>
   <script>
-    const cafeUrls = [
-      "https://biginelli.com/",
-      "http://tilleys.com.au",
-      "https://www.facebook.com/goodbrothercafe/",
-      "https://frontgallerycafe.com",
-      "https://www.facebook.com/thecoffeegrounds",
-      "https://redbrickcoffee.com.au/redbrick/",
-    ];
-    const randomCafe = () => {
-      window.location.href =
-        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
-    };
+   const cafeUrls = [
+	 "https://biginelli.com/",
+	 "http://tilleys.com.au",
+	 "https://www.facebook.com/goodbrothercafe/",
+	 "https://frontgallerycafe.com",
+	 "https://www.facebook.com/thecoffeegrounds",
+	 "https://redbrickcoffee.com.au/redbrick/"
+   ];
+   const randomCafe = () => {
+	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
+   };
   </script>
 
   <!-- colophon -->
   <p>
-    designed & built with
-    <a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
-    <a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
-    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
-      ><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a
-    >
-    on unceded
-    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
-      >Ngunnawal country</a
-    >
-    by Ben Swift
+	designed & built with
+	<a href="https://jekyllrb.com"><svg class="icon"><use xlink:href='#fas.fa-vial'></use></svg></a>,
+	<a id="cafe-url" onclick="randomCafe();"><svg class="icon"><use xlink:href='#fas.fa-coffee'></use></svg></a> and
+	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"><svg class="icon"><use xlink:href='#fas.fa-heart'></use></svg></a> on
+	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
+	by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em"><a
-  title="CC BY-NC-SA licence"
-  href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
->
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
-  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg> <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
+  <p style="font-size: 1.3em;">
+	<a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-by'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-nc'></use></svg>
+  <svg class="icon"><use xlink:href='#fab.fa-creative-commons-sa'></use></svg>
 </a>
-</p>
+
+  </p>
 
   <!-- throw shade on IE -->
   <p>
-    uses
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
-    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
+	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>03af03f74</code> (see
-    <a
-      href="https://github.com/benswift/benswift.github.io/blob/03af03f74/_posts/2019-07-17-in-place-xml-tree-mutation-for-jekyll-productivity.md"
-      >source</a
-    >,
-    <a
-      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-07-17-in-place-xml-tree-mutation-for-jekyll-productivity.md"
-      >page history</a
-    >
-    on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
+	site revision <code>9282649de</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/9282649de/_posts/2019-07-17-in-place-xml-tree-mutation-for-jekyll-productivity.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-07-17-in-place-xml-tree-mutation-for-jekyll-productivity.md">page history</a>
+	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
   <!-- anchor.js -->
   <script src='/assets/js/anchor.js'></script>
 
 <script>
-  anchors.options = {
-    visible: "touch",
-    icon: "#",
-  };
-  document.addEventListener("DOMContentLoaded", function (event) {
-    anchors.add(
-      "article > h2, article > h3"
-    );
-  });
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
+ document.addEventListener("DOMContentLoaded", function(event) {
+   anchors.add("article > h2, article > h3");
+ });
 </script>
 
 
   <!-- highlight.js -->
   <script src="/assets/js/highlight.pack.js"></script>
 <script src="/assets/js/extempore.min.js"></script>
-<link rel="stylesheet" href="/assets/css/atom-one-dark.css" />
+<link rel="stylesheet" href="/assets/css/atom-one-dark.css">
 
 <script>
-  hljs.highlightAll();
+ hljs.highlightAll();
 </script>
 
 
-  <script
-    src='/assets/js/os-aware-modifiers.js'
-    type="text/javascript"
-  ></script>
+  <script src='/assets/js/os-aware-modifiers.js' type="text/javascript"></script>
+
 </footer>
 
-    </div>
-    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	</div>
+	<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
