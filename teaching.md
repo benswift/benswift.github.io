@@ -34,6 +34,21 @@ I'm currently teaching three courses in the
   science (either at ANU or elsewhere) and helps them _reimagine_ what it is to
   be a computer scientist or engineer in the 21st century.
 
+In the past couple of years, I've also taught
+
+- [COMP2300: Computer Organisation and Program
+  Execution](https://cs.anu.edu.au/courses/comp2300/) is ANU's introductory
+  computer architecture course, which I wrote and delivered from 2017--2018, and
+  is now being delivered by [Uwe
+  Zimmer](https://researchers.anu.edu.au/researchers/zimmer-ur) (don't worry,
+  it's still the same discoboard-powered synthmaking extravaganza 😜). In this
+  course students take a complex computer system ([the STM32L476G discovery
+  "disco" board](http://www.st.com/en/evaluation-tools/32l476gdiscovery.html))
+  home from week 1. That might seem daunting---and it's true that there's more
+  stuff on such a board than one can master in one semester---but students can
+  still learn a lot about CPUs (and how programs are organised and executed) by
+  the end of the course.
+
 - [COMP1720: Art & Interaction in New Media](https://cs.anu.edu.au/courses/comp1720/)
   is a course about learning to tell stories through interactive code art. It's
   not _just_ an art course, and it's not _just_ a "coding" course: students
@@ -41,35 +56,16 @@ I'm currently teaching three courses in the
   fun in the process. No previous coding or artistic experience is required:
   COMP1720 teaches everything from the ground up.
 
-In the past couple of years, I've also taught
-
-- [COMP2300: Computer Organisation and Program Execution](https://cs.anu.edu.au/courses/comp2300/)
-  is ANU's introductory computer architecture course, which I wrote and
-  delivered from 2017--2018, and is now being delivered by
-  [Uwe Zimmer](https://researchers.anu.edu.au/researchers/zimmer-ur) (don't
-  worry, it's still the same discoboard-powered synthmaking extravaganza 😜). In
-  this course students take a complex computer system
-  ([the STM32L476G discovery "disco" board](http://www.st.com/en/evaluation-tools/32l476gdiscovery.html))
-  home from week 1. That might seem daunting---and it's true that there's more
-  stuff on such a board than one can master in one semester---but students can
-  still learn a lot about CPUs (and how programs are organised and executed) by
-  the end of the course.
-
-- The
-  [COMP2710 _Internet of Things_ China Study Tour](https://cs.anu.edu.au/courses/china-study-tour/)
-  is an in-country intensive study course conducted in partnership with the
-  [Beijing Institute of Technology](http://english.bit.edu.cn/). In this course
-  students learn about low-cost, network-connected embedded computing devices &
-  their relationship to the broader computing landscape through building a
-  prototype IoT artefact (and releasing the source code, parts list and build
-  instructions on GitHub), while reflecting on the design, security, social and
-  ethical challenges associated with the Internet of Things.
-
-- [_Internet of Things_ China Study Tour](https://cs.anu.edu.au/courses/china-study-tour/)
-  at the Beijing Institute of Technology--the above photo was taken during the
-  2018 version of this course (although sadly [it's not running this
-  year]({% link
-  _posts/2019-10-14-iot-china-study-tour-not-happening-in-2019.md %}))
+- The [COMP2710 _Internet of Things_ China Study
+  Tour](https://cs.anu.edu.au/courses/china-study-tour/) is an in-country
+  intensive study course conducted in partnership with the [Beijing Institute of
+  Technology](http://english.bit.edu.cn/). In this course students learn about
+  low-cost, network-connected embedded computing devices & their relationship to
+  the broader computing landscape through building a prototype IoT artefact (and
+  releasing the source code, parts list and build instructions on GitHub), while
+  reflecting on the design, security, social and ethical challenges associated
+  with the Internet of Things. The photo at the top of this page was taken with
+  the students from the 2018 cohort of this course.
 
 If you're a student at the ANU, then I encourage you to take one (or more!) of
 these courses---I think they're pretty great :)
