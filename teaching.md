@@ -13,8 +13,8 @@ really enjoy it, too :)
 I'm currently teaching three courses in the
 [ANU Research School of Computer Science](https://cs.anu.edu.au/courses/comp2300/)
 
-- [COMP2710: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/) in
-  **Semester 1 (Feb--Jun)** is a course open to students in computer science,
+- [COMP2710/6470: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/)
+  in **Semester 1 (Feb--Jun)** is a course open to students in computer science,
   music, art, and elsewhere at ANU (the course is co-taught with MUSI2205 in the
   _ANU School of Music_). In this course students learn fundamental skills of
   music computing, including digital synthesis, algorithmic composition, and
@@ -34,9 +34,17 @@ I'm currently teaching three courses in the
   science (either at ANU or elsewhere) and helps them _reimagine_ what it is to
   be a computer scientist or engineer in the 21st century.
 
+- [COMP4610/6461: Computer Graphics](https://cs.anu.edu.au/courses/comp4610/) in
+  **Semester 2 (Jul--Nov)** is a later-year COMP course which covers the
+  fundamental algorithms, data structures and programming models used in 3D
+  graphics applications. This is a new course for me in 2021 (the course website
+  hasn't been updated yet, but will go live closer to the start of S2 2021).
+  Because I'm involved this year you _know_ there will be a creative twist in
+  there somewhere 😉
+
 In the past couple of years, I've also taught
 
-- [COMP2300: Computer Organisation and Program
+- [COMP2300/6300: Computer Organisation and Program
   Execution](https://cs.anu.edu.au/courses/comp2300/) is ANU's introductory
   computer architecture course, which I wrote and delivered from 2017--2018, and
   is now being delivered by [Uwe
@@ -49,7 +57,7 @@ In the past couple of years, I've also taught
   still learn a lot about CPUs (and how programs are organised and executed) by
   the end of the course.
 
-- [COMP1720: Art & Interaction in New Media](https://cs.anu.edu.au/courses/comp1720/)
+- [COMP1720/6720: Art & Interaction in New Media](https://cs.anu.edu.au/courses/comp1720/)
   is a course about learning to tell stories through interactive code art. It's
   not _just_ an art course, and it's not _just_ a "coding" course: students
   engage with both of those domains at the same time, and (I hope) have a lot of
