@@ -42,11 +42,11 @@ it works is to create an `oscformat` object, then right-click to open up the
 `oscformat-help.pd` patch.
 
 Assuming you're running Pd on the same computer as the Extempore OSC server you
-set up before, you can send your messages to `localhost` (look for the
-`connect localhost 5000` message in the Pd help patch). However, you need to
-make sure the ports match---the Extempore server is listening on port `7099`,
-while the default port number in the `oscformat-help.pd` patch is `5000` (so
-you'll need to change it before you send that `connect message`).
+set up before, you can send your messages to `localhost` (look for the `connect
+localhost 5000` message in the Pd help patch). However, you need to make sure
+the ports match---the Extempore server is listening on port `7099`, while the
+default port number in the `oscformat-help.pd` patch is `5000` (so you'll need
+to change it before you send that `connect message`).
 
 Once you've done all that, you should be able to trigger the send messages (e.g.
 `1 2 3`) near the top of the patch. They'll be received by Extempore and passed
@@ -114,7 +114,7 @@ argument is a _time_ argument. If you wanted to, e.g. send a message with a
 (io:osc:send (+ (now) (* *second* 2)) (cons "localhost" 7010) "/test/msg" "Hello" 500 6.6 "World" (random 10))
 ```
 
-For a deeper dive on how time is handled in Extempore, see the
-[Extempore docs](https://extemporelang.github.io/docs/overview/time/).
+For a deeper dive on how time is handled in Extempore, see the [Extempore
+docs](https://extemporelang.github.io/docs/overview/time/).
 
 Happy OSCing 😊

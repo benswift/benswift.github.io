@@ -1,22 +1,21 @@
 {% assign text = include.text %}
 <section class="center">
-  <script src='{{ "/assets/js/qrcode.min.js"| relative_url }}'></script>
-  <div id="qrcode"></div>
-  {%- if include.showlink -%}
-  <p style="text-align: center"><a href="{{ text }}">{{ text }}</a></p>
-  {%- endif -%}
-  <script type="text/javascript">
-    let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
-    let qrDiv = document.getElementById("qrcode");
-    new QRCode(qrDiv, {
-      text: "{{ include.text }}",
-      width: qrSize,
-      height: qrSize,
-      colorDark: "#333",
-      colorLight: "#fafafa",
-      correctLevel: QRCode.CorrectLevel.H,
-    });
-    // hacky page centering
-    document.querySelector("#qrcode > img").style.margin = "0 auto";
-  </script>
+<script src='{{ "/assets/js/qrcode.min.js"| relative_url }}'></script>
+<div id="qrcode"></div>
+{%- if include.showlink -%}
+<p style="text-align: center;"><a href="{{ text }}">{{ text }}</a></p>
+{%- endif -%}
+<script type="text/javascript">
+ let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
+ let qrDiv = document.getElementById("qrcode");
+ new QRCode(qrDiv,
+            {text: "{{ include.text }}",
+             width: qrSize,
+             height: qrSize,
+             colorDark : "#333",
+             colorLight : "#fafafa",
+             correctLevel : QRCode.CorrectLevel.H});
+ // hacky page centering
+ document.querySelector("#qrcode > img").style.margin = "0 auto";
+</script>
 </section>

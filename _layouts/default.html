@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-    {% include head.html %}
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href='{{ "/assets/css/main.css"| relative_url }}'
-    />
+	{% include head.html %}
+	<link rel="stylesheet" type="text/css" href='{{ "/assets/css/main.css"| relative_url }}'>
   </head>
   <body>
-    <div class="container">
-      {% include header.html %}
-      <main aria-label="Content">{{ content }}</main>
-      {% include footer.html %}
-    </div>
-    {% fa_svg_generate %}
+	<div class="container">
+	  {% include header.html %}
+	  <main aria-label="Content">
+		{{ content }}
+	  </main>
+	  {% include footer.html %}
+	</div>
+	{% fa_svg_generate %}
   </body>
 </html>

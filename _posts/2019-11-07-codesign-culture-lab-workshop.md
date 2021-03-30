@@ -379,10 +379,9 @@ _assessment task goal:_
 <p class="hl-para wheelResult">
 
 learning about <strong><span
-class="codeWheel-canvas-result">\_**\_</span></strong> by exploring
-<strong><span
-class="cultureWheel-canvas-result">\_\_**</span></strong> through <strong><span
-class="creativityWheel-canvas-result">\_\_\_\_</span></strong>
+class="codeWheel-canvas-result">____</span></strong> by exploring <strong><span
+class="cultureWheel-canvas-result">____</span></strong> through <strong><span
+class="creativityWheel-canvas-result">____</span></strong>
 
 </p>
 

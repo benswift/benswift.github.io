@@ -5,9 +5,7 @@ subtitle: making art & music with code
 date: "2021-01-28"
 permalink: /talks/all-college-conference-2021/
 summary: >-
-  an invited workshop at the [ACT Colleges Conference 2021: Beyond
-  Content!](https://sites.google.com/a/ed.act.edu.au/all-colleges-conference/colleges-conference-16-2021)
-  conference
+  an invited workshop at the [ACT Colleges Conference 2021: Beyond Content!](https://sites.google.com/a/ed.act.edu.au/all-colleges-conference/colleges-conference-16-2021) conference
 ---
 
 {% include slides/title.html %}
@@ -45,11 +43,13 @@ make a **lesson plan** for exploring a computing concept through creative code
 
 </p>
 
-- you can choose which concept (from e.g.
-  [BSSS Frameworks](http://www.bsss.act.edu.au/curriculum/Frameworks),
-  [Australian Curriculum](https://www.australiancurriculum.edu.au/f-10-curriculum/technologies/digital-technologies/),
-  [CS concept inventories](https://scholar.google.com/scholar?q=computer%20science%20concept%20inventory),
-  [ACS CBoK](https://www.acs.org.au/content/dam/acs/acs-documents/The-ACS-Core-Body-of-Knowledge-for-ICT-Professionals-CBOK.pdf),
+- you can choose which concept (from e.g. [BSSS
+  Frameworks](http://www.bsss.act.edu.au/curriculum/Frameworks), [Australian
+  Curriculum](https://www.australiancurriculum.edu.au/f-10-curriculum/technologies/digital-technologies/),
+  [CS concept
+  inventories](https://scholar.google.com/scholar?q=computer%20science%20concept%20inventory),
+  [ACS
+  CBoK](https://www.acs.org.au/content/dam/acs/acs-documents/The-ACS-Core-Body-of-Knowledge-for-ICT-Professionals-CBOK.pdf),
   or just a concept you know students often struggle with)
 
 - not enough time to make a detailed lesson plan (obvs) but we'll do our
@@ -57,16 +57,18 @@ make a **lesson plan** for exploring a computing concept through creative code
 
 ## timeline
 
-| **11:00** | intro & group formation | | **11:15** | lesson design task | |
-**12:00** | presentations & discussion | | **12:30** | lunch 🍣🍔😋 |
+| **11:00** | intro & group formation    |
+| **11:15** | lesson design task         |
+| **12:00** | presentations & discussion |
+| **12:30** | lunch 🍣🍔😋               |
 
 ## creative computing environments
 
 there are lots, but today we'll focus on these two browser-based (i.e. js)
 creative computing environments:
 
-- **p5.js**: <https://p5js.org/> for visuals (using the
-  [web editor](https://editor.p5js.org))
+- **p5.js**: <https://p5js.org/> for visuals (using the [web
+  editor](https://editor.p5js.org))
 - **gibber**: <https://gibber.cc> for sound/music
 
 you're all experienced IT educators, so you can navigate the getting started
@@ -122,8 +124,7 @@ thanks so much for participating
 I'm keen to:
 
 - make contacts
-- get the word out about
-  [ANU Extension Creative Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
+- get the word out about [ANU Extension Creative Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
 - be part of a CoP around creative computing for both students and educators
 
 ## stay in touch
@@ -139,20 +140,20 @@ I'm keen to:
 ## Bio
 
 Ben is a multidisciplinary researcher and Senior Lecturer in the School of
-Computing at the
-[Australian National University](https://cecs.anu.edu.au/people/ben-swift). He's
-interested in computational art & music, human-computer interaction, AI/machine
-learning (particularly in pursuit of creative ends) and the intersection of
-code, creativity and culture as those boundaries dissolve in the modern world.
-He's the director of the
-[code/creativity/culture studio](https://cs.anu.edu.au/code-creativity-culture/)
-within the ANU School of Computing.
+Computing at the [Australian National
+University](https://cecs.anu.edu.au/people/ben-swift). He's interested in
+computational art & music, human-computer interaction, AI/machine learning
+(particularly in pursuit of creative ends) and the intersection of code,
+creativity and culture as those boundaries dissolve in the modern world. He's
+the director of the [code/creativity/culture
+studio](https://cs.anu.edu.au/code-creativity-culture/) within the ANU School of
+Computing.
 
 ## Bio
 
 He is a [livecoder]({% link livecoding.md %}), and is the vice president of the
 [Australasian Computer Music Association](https://computermusic.org.au) (ACMA).
 Ben is one of the inaugural [ANU Reimagine Fellows]({% link
-_posts/2019-08-30-Im-a-reimagine-fellow.md %}), part of a [$300m+ investment from the ANU](https://cecs.anu.edu.au/reimagine)
-charged with re-thinking (and re-doing) what it is to be a computer scientist in
-the 21st century.
+_posts/2019-08-30-Im-a-reimagine-fellow.md %}), part of a [$300m+ investment
+from the ANU](https://cecs.anu.edu.au/reimagine) charged with re-thinking (and
+re-doing) what it is to be a computer scientist in the 21st century.

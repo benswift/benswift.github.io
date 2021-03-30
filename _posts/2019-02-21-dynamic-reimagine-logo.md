@@ -4,10 +4,10 @@ date: 2019-02-21 10:36 +1100
 tags: widgets reimagine web
 ---
 
-I keep harping on about the **Reimagine project** because I'm super pumped about
-what it means for the way we do Engineering Computer Science here at the ANU
-(see [here]({% link assets/pdf/reimagine-fellow-PD.pdf %}) and
-[here](https://cecs.anu.edu.au/reimagine) for more info).
+I keep harping on about the **Reimagine project** because I'm super pumped
+about what it means for the way we do Engineering Computer Science here at the
+ANU (see [here]({% link assets/pdf/reimagine-fellow-PD.pdf %})
+and [here](https://cecs.anu.edu.au/reimagine) for more info).
 
 Reimagine branding is starting to go up around campus, so I decided to put
 together an interactive version of the logo (because giant vinyl prints are

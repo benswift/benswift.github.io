@@ -7,14 +7,13 @@ permalink: /talks/designing-the-ccc-studio/
 summary: >-
   The arts (music and visual) have always provided a less-travelled but
   fascinating alternate route into computing. As CS Schools around the world
-  grapple with how best to teach computing to the next generation(s), is
-  computer music/visual art part of the solution? If so, how can we do it
-  without introducing _more_ baggage to a curriculum which already throws plenty
-  of other "hidden prerequisite" hurdles in front of newcomers? In posing (and
-  probably not answering!) these questions I reflect on 10 years of art+code as
-  both an educator and creative practitioner, and describe the c/c/c studio: my
-  current "Reimagine Fellowship" project to bring creative coding into
-  Australian schools.
+  grapple with how best to teach computing to the next generation(s), is computer
+  music/visual art part of the solution? If so, how can we do it without
+  introducing _more_ baggage to a curriculum which already throws plenty of other
+  "hidden prerequisite" hurdles in front of newcomers? In posing (and probably not
+  answering!) these questions I reflect on 10 years of art+code as both an
+  educator and creative practitioner, and describe the c/c/c studio: my current
+  "Reimagine Fellowship" project to bring creative coding into Australian schools.
 ---
 
 {% include slides/title.html %}
@@ -128,8 +127,7 @@ a series of Reimagine Fellowships to support this...
 
 I've been awarded a fellowship to build the **c/c/c studio**
 
-an A-levels extension course in creative computing (selective entry, 2 year
-program)
+an A-levels extension course in creative computing (selective entry, 2 year program)
 
 small cohorts (<20/year), first intake in 2021, first graduates in 2022
 
@@ -196,20 +194,21 @@ if you'd like to chat, let me know 😊---I'm here till Thursday
 ## Bio
 
 Ben is a multidisciplinary researcher and Senior Lecturer in the Research School
-of Computer Science at the
-[Australian National University](https://cecs.anu.edu.au/people/ben-swift). He's
-interested in computational art & music, human-computer interaction, AI/machine
-learning (particularly in pursuit of creative ends) and the intersection of
-code, creativity and culture as those boundaries dissolve in the modern world.
-He's the director of the
-[code/creativity/culture group](https://cs.anu.edu.au/code-creativity-culture/)
-within the ANU Research School of Computer Science.
+of Computer Science at the [Australian National
+University](https://cecs.anu.edu.au/people/ben-swift). He's interested in
+computational art & music, human-computer interaction, AI/machine learning
+(particularly in pursuit of creative ends) and the intersection of code,
+creativity and culture as those boundaries dissolve in the modern world. He's
+the director of the [code/creativity/culture
+group](https://cs.anu.edu.au/code-creativity-culture/) within the ANU Research
+School of Computer Science.
 
 ## Bio
 
-He is a [livecoder]({% link livecoding.md %}), and is the vice president of the
-[Australasian Computer Music Association](https://computermusic.org.au) (ACMA).
-Ben is one of the inaugural [ANU Reimagine Fellows]({% link
-_posts/2019-08-30-Im-a-reimagine-fellow.md %}), part of a [$300m+ investment from the ANU](https://cecs.anu.edu.au/reimagine)
-charged with re-thinking (and re-doing) what it is to be a computer scientist in
-the 21st century.
+He is a [livecoder]({% link livecoding.md %}), and is the vice
+president of the [Australasian Computer Music
+Association](https://computermusic.org.au) (ACMA). Ben is one of the inaugural
+[ANU Reimagine Fellows]({% link
+_posts/2019-08-30-Im-a-reimagine-fellow.md %}), part of a [$300m+ investment
+from the ANU](https://cecs.anu.edu.au/reimagine) charged with re-thinking (and
+re-doing) what it is to be a computer scientist in the 21st century.

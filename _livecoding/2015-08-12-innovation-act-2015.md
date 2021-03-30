@@ -25,6 +25,6 @@ full set. The above "excerpt" video gives a flavour[^ap] of the gig, though.
     observant viewers will notice that the synth line here is _quite_ similar to
     the one I use in the [*aesthetic* visuals set during the AP
     Sessions]({% link _livecoding/2014-09-30-ap-sessions.md
-    %}#aesthetic-visuals)---I figure that since the AP sessions were a bit of a hybrid
-    gig/research thing (and because I quite liked how it turned out) I'd give it
-    another outing in a gig with a "proper" audience
+    %}#aesthetic-visuals)---I figure that since the AP sessions were a bit of a
+    hybrid gig/research thing (and because I quite liked how it turned out) I'd
+    give it another outing in a gig with a "proper" audience

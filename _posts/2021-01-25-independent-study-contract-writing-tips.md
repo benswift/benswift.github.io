@@ -40,8 +40,7 @@ research, and something which you should be able to point to at the end and say
   should be understandable by one of your classmates
 
 - don't write it out by hand straight on to the form; this is the sort of thing
-  you want to have a few drafts at (including getting feedback from your
-  supervisor)
+  you want to have a few drafts at (including getting feedback from your supervisor)
 
 - don't _just_ say vague stuff like "explore various techniques for..." or
   "investigate different approaches to..."; if you're gonna do that you need to
@@ -62,5 +61,6 @@ research, and something which you should be able to point to at the end and say
 - think about what you'd like to be able to do once you've completed the project
   and work backwards from there
 
-- the Learning & Teaching centre at Adelaide Uni has some
-  [good tips on writing](https://www.adelaide.edu.au/learning/resources-for-educators/curriculum-resources/learning-outcomes/writing-learning-outcomes#application-of-learning-outcomes)
+- the Learning & Teaching centre at Adelaide Uni has some [good tips on
+  writing](https://www.adelaide.edu.au/learning/resources-for-educators/curriculum-resources/learning-outcomes/writing-learning-outcomes#application-of-learning-outcomes)
+

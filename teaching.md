@@ -10,8 +10,8 @@ Computers are just so _useful_ in all domains of human endeavour, and giving
 people the skills to do interesting things with them is really important work. I
 really enjoy it, too :)
 
-I'm currently teaching three courses in the
-[ANU Research School of Computer Science](https://cs.anu.edu.au/courses/comp2300/)
+I'm currently teaching three courses in the [ANU Research School of Computer
+Science](https://cs.anu.edu.au/courses/comp2300/)
 
 - [COMP2710/6470: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/)
   in **Semester 1 (Feb--Jun)** is a course open to students in computer science,
@@ -22,14 +22,15 @@ I'm currently teaching three courses in the
   musical instrument, composition, or interactive media work to present in
   concert at the end of the course.
 
-- [EXTN1019: ANU Extension Creative Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
+- [EXTN1019: ANU Extension Creative
+  Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
   in **Semester 1 (Feb--Jun)** is a course where ACT Year 11 & 12 students learn
   the fundamentals of computer programming through the creative process of
   making music and visual art. As well as creating and performing their own new
   works of code-based art & music, this course contributes towards the students'
   ATAR _and_ they receive credit towards an undergraduate computing degree if
-  they choose to study at ANU. As the School of Computing's first ever
-  [ANU Extension](https://extension.anu.edu.au) course, this program attracts
+  they choose to study at ANU. As the School of Computing's first ever [ANU
+  Extension](https://extension.anu.edu.au) course, this program attracts
   fantastic students who might otherwise not study engineering or computer
   science (either at ANU or elsewhere) and helps them _reimagine_ what it is to
   be a computer scientist or engineer in the 21st century.
@@ -40,7 +41,7 @@ I'm currently teaching three courses in the
   graphics applications. This is a new course for me in 2021 (the course website
   hasn't been updated yet, but will go live closer to the start of S2 2021).
   Because I'm involved this year you _know_ there will be a creative twist in
-  there somewhere 😉
+  there somewhere 😉- [COMP1720: Art & Interaction in New
 
 In the past couple of years, I've also taught
 
@@ -78,6 +79,6 @@ In the past couple of years, I've also taught
 If you're a student at the ANU, then I encourage you to take one (or more!) of
 these courses---I think they're pretty great :)
 
-I also give regular [guest lectures]({% link talks.md %}) & run workshops on
-various topics in my areas of expertise. If you're interested in hiring me as a
-speaker, [get in touch](mailto:ben.swift@anu.edu.au).
+I also give regular [guest lectures]({% link talks.md %}) &
+run workshops on various topics in my areas of expertise. If you're interested
+in hiring me as a speaker, [get in touch](mailto:ben.swift@anu.edu.au).

@@ -13,12 +13,10 @@ Gig details are:
 
 - **date**: Friday June 12
 - **time**: 8pm--10pm AEST
-- **location**: live on the
-  [LENS YouTube channel {% fa_svg fab.fa-youtube %}](https://www.youtube.com/channel/UCIU6SqIS02GJlnLOPqlwmpA)
+- **location**: live on the [LENS YouTube channel {% fa_svg fab.fa-youtube %}](https://www.youtube.com/channel/UCIU6SqIS02GJlnLOPqlwmpA)
 
-Even if you miss the live event, you can still watch the video anytime. Like and
-subscribe!
+Even if you miss the live event, you can still watch the video anytime. Like and subscribe!
 
-There's also a
-[Facebook event](https://www.facebook.com/events/2563515850576414) if you're
-into that sort of thing.
+There's also a [Facebook
+event](https://www.facebook.com/events/2563515850576414) if you're into that
+sort of thing.

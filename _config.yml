@@ -30,7 +30,7 @@ kramdown:
 highlighter: none
 
 sass:
-  sass_dir: assets/css
+    sass_dir: assets/css
 
 exclude:
   - Makefile

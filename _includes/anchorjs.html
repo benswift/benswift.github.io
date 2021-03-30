@@ -1,13 +1,11 @@
 <script src='{{ "/assets/js/anchor.js"| relative_url }}'></script>
 
 <script>
-  anchors.options = {
-    visible: "touch",
-    icon: "#",
-  };
-  document.addEventListener("DOMContentLoaded", function (event) {
-    anchors.add(
-      "{{ page.anchorjs-selector | default: 'article > h2, article > h3'}}"
-    );
-  });
+ anchors.options = {
+   visible: "touch",
+   icon: "#"
+ };
+ document.addEventListener("DOMContentLoaded", function(event) {
+   anchors.add("{{ page.anchorjs-selector | default: 'article > h2, article > h3'}}");
+ });
 </script>

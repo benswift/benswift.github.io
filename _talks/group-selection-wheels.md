@@ -32,9 +32,9 @@ hidden: true
 <p class="wheelResult">
 
 <em>group</em>:
-<strong><span class="person1-canvas-result">**\_\_\_\_**</span></strong>,
-<strong><span class="person2-canvas-result">**\_\_\_\_**</span></strong> and
-<strong><span class="person3-canvas-result">**\_\_\_\_**</span></strong>
+<strong><span class="person1-canvas-result">________</span></strong>,
+<strong><span class="person2-canvas-result">________</span></strong> and
+<strong><span class="person3-canvas-result">________</span></strong>
 
 </p>
 

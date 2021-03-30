@@ -7,8 +7,7 @@ tags: web
 I use [Jekyll](https://jekyllrb.com/) to create my course websites and
 [reveal.js](https://github.com/hakimel/reveal.js/) to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great
-content, and the formatting/presentation stuff stays out of the way until I
-`git push` the updates to the server.
+content, and the formatting/presentation stuff stays out of the way until I `git push` the updates to the server.
 
 There are a few ways of making these two tools (Jekyll and reveal.js) play
 nicely together: see [here](https://github.com/dploeger/jekyll-revealjs) and
@@ -18,18 +17,18 @@ file, which is a pain.
 
 What I want to do is to write one `.md` file per presentation, and have the
 level 1 and level 2 headings (i.e. `#` and `##`) determine the slide splits
-(this is pretty much how
-[pandoc does it](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)).
+(this is pretty much how [pandoc does
+it](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)).
 
 I wrote a simple [Jekyll plugin](https://jekyllrb.com/docs/plugins/) to make
 this happen---which has just a couple of moving parts
 
 {:.hl-para}
 
-Because the source for this
-[whole blog is on GH](https://github.com/benswift/benswift.github.io/), then you
-can just head there and see it for yourself if you're the sort of person who
-prefers reading code to prose. Think of this blog post as a "companion piece".
+Because the source for this [whole blog is on
+GH](https://github.com/benswift/benswift.github.io/), then you can just head
+there and see it for yourself if you're the sort of person who prefers reading
+code to prose. Think of this blog post as a "companion piece".
 
 ## 0. download the reveal.js source
 
@@ -40,8 +39,8 @@ usually put it in `assets/`.
 
 ## 1. the revealify [filter](https://jekyllrb.com/docs/plugins/filters/) {#the-revealify-filter}
 
-First, put
-[this code](https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb)
+First, put [this
+code](https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb)
 into a `revealify.rb` file in your Jekyll `_plugins` directory.
 
 ## 2. add a reveal [layout](https://jekyllrb.com/docs/layouts/)
@@ -49,11 +48,9 @@ into a `revealify.rb` file in your Jekyll `_plugins` directory.
 You'll need a new [layout](https://jekyllrb.com/docs/layouts/) as well: create a
 `reveal.html` file in your Jekyll `_layouts` directory and make sure that the
 body tag has this in it (you'll need to make sure it's got the right paths &
-other stuff for your setup). The key part is that first
-`{% raw %}{{ content | revealify }}{% endraw %}` line---that takes the content
-of your page (the jekyll `.md` file with `layout: reveal` in the frontmatter)
-and passes it through the "revealify" filter plugin we
-[made earlier](#the-revealify-filter).
+other stuff for your setup). The key part is that first `{% raw %}{{ content | revealify }}{% endraw %}` line---that takes the content of your page (the jekyll
+`.md` file with `layout: reveal` in the frontmatter) and passes it through the
+"revealify" filter plugin we [made earlier](#the-revealify-filter).
 
 The configuration stuff here is just the example config from
 [reveal.js](https://github.com/hakimel/reveal.js#configuration), so feel free to
@@ -107,7 +104,7 @@ tweak to suit your own presentation.
     keyboard: true,
 
     // Enable the slide overview mode
-    overview: true,
+    overview: true
   });
 </script>
 ```
@@ -116,8 +113,8 @@ tweak to suit your own presentation.
 
 The full [layout](https://jekyllrb.com/docs/layouts/) file will depend on how
 the rest of your site works (where you've put the `reveal.js-x.x.x` folder,
-etc.) so I haven't included the full file here (you can
-[see it on GitHub](https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html),
+etc.) so I haven't included the full file here (you can [see it on
+GitHub](https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html),
 though). Also remember that you can see the full list of reveal configuration
 options [in the README](https://github.com/hakimel/reveal.js#configuration):
 

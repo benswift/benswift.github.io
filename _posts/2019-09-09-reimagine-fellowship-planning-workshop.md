@@ -10,17 +10,18 @@ _posts/2019-08-30-Im-a-reimagine-fellow.md %}) and stuff to do with that program
 (and getting the [c/c/c studio]({% link
 _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) up and running) is
 starting to happen. As I've [done]({% link
-_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) [so far]({% link _posts/2019-03-20-reimagine-fellow-project-pitch.md
+_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) [so
+far]({% link _posts/2019-03-20-reimagine-fellow-project-pitch.md
 %}) I'm planning to continue to work on this project "in the open", i.e. on this
 blog. This means that if you've got ideas or want to help out, you can see where
 I'm up to (and [get in touch](mailto:ben.swift@anu.edu.au)), and it also
 minimises the likelihood that I'll be forced to email around anything called
 `project-plan-final-ACTUALLY-FINAL-v3.docx` 😉.
 
-In preparation for a Reimagine Fellows workshop this week (Thursday
-September 12) I'm sketching out all the existing stuff that's happening on- (and
-off-) campus relating to the c/c/c studio. This is all really rough, but it's a
-place to collect the thoughts & names in my head.
+In preparation for a Reimagine Fellows workshop this week (Thursday September
+12) I'm sketching out all the existing stuff that's happening on- (and off-)
+campus relating to the c/c/c studio. This is all really rough, but it's a place
+to collect the thoughts & names in my head.
 
 ## People-–-internal and external to CECS
 
@@ -28,8 +29,8 @@ There are lots of folks, in a few different places:
 
 ### Internal
 
-- [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative code
-  practitioner
+- [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
+  code practitioner
 
 - [Genevieve Bell](https://cecs.anu.edu.au/people/genevieve-bell),
   [3Ai](https://3ainstitute.cecs.anu.edu.au) Director
@@ -39,11 +40,12 @@ There are lots of folks, in a few different places:
 
 ### External
 
-- [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at), ANU SoM,
-  previously the convenor of the Open School of Music program
+- [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at), ANU
+  SoM, previously the convenor of the Open School of Music program
 
-- [Geoff Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb),
-  ANU SoAD, CASS Associate Dean (Education)
+- [Geoff
+  Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb), ANU
+  SoAD, CASS Associate Dean (Education)
 
 - Kit Devine, SoAD artist & lecturer
 
@@ -68,15 +70,15 @@ There are lots of folks, in a few different places:
 
 ### CECS
 
-- the
-  [code/creativity/culture group](https://cs.anu.edu.au/code-creativity-culture/)
-  (my research group)
+- the [code/creativity/culture
+  group](https://cs.anu.edu.au/code-creativity-culture/) (my research group)
 
 - [ANU Laptop Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/)
 
 ### CASS
 
 - ANU Open School of Music (outreach/extension stuff with pre-teritary kids)
+  
 - School of Art & Design
 
 ### Outside ANU

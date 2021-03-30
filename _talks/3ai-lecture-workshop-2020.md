@@ -8,8 +8,7 @@ summary: >-
   Understanding the sometimes tricky relationship between understanding &
   enjoyment in various traditional and new cultural practices.
 
-  An interactive lecture/workshop given to the [3A
-  Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
+  An interactive lecture/workshop given to the [3A Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
 ---
 
 {% include slides/title.html %}
@@ -84,13 +83,13 @@ it's complicated
 > How do we measure performance and success?
 >
 > Technical systems have typically been measured on their efficiency. However,
-> when systems start to learn and change their behaviour over time, the
-> objective of efficiency may begin to clash with ideals that have previously
-> been implicitly or tacitly inserted into the process by the humans in the
-> loop. How do we start to conceptualise building for sustainability, for
-> beauty, for values?
+> when systems start to learn and change their behaviour over time, the objective
+> of efficiency may begin to clash with ideals that have previously been
+> implicitly or tacitly inserted into the process by the humans in the loop. How
+> do we start to conceptualise building for sustainability, for beauty, for
+> values?
 
-## interfaces
+## interfaces 
 
 > How will technologies, systems and humans work together?
 >
@@ -149,3 +148,4 @@ if you'd like to help (or just to hang out with the c/c/c group more generally)
 then let me know 😊
 
 {% include slides/questions.html %}
+

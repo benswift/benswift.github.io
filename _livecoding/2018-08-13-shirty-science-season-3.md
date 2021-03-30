@@ -19,8 +19,8 @@ explaining/showing off their research.
 So of course [Kieran](https://kieranbrowne.com) and I were pumped when they
 invited to perform at their Season 3 launch party at [Doughnut Dept.]({{
 page.venue_url }})---our very first livecoding set together. I did music, he did
-visuals, and we mixed our screens together using our new Roland [V1-HD video mixer](https://proav.roland.com/global/products/v-1hd/).
-It was super cool.
+visuals, and we mixed our screens together using our new Roland [V1-HD video
+mixer](https://proav.roland.com/global/products/v-1hd/). It was super cool.
 
 Sadly, no photos videos at present---although I'm trying to track some down (if
 you were there and have some, [get in touch](mailto:ben.swift@anu.edu.au)).

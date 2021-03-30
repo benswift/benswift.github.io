@@ -18,8 +18,8 @@ As usual, [CECS](https://cecs.anu.edu.au/) kicked off the year with a welcome
 party for students & staff old and new. [Kieran](https://kieranbrowne.com) and I
 were invited back this year to do a 90min livecoding set---I'm making the music
 in [Extempore](https://github.com/digego/extempore), he's making the visuals by
-writing
-[OpenGL shaders](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/GLSL_Shaders).
+writing [OpenGL
+shaders](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/GLSL_Shaders).
 It was great to be invited to show what's possible we reimagine what humans and
 computers can do together.
 

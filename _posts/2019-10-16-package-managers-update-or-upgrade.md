@@ -1,17 +1,17 @@
 ---
-title: "Package managers: `update` or `upgrade`?"
+title: 'Package managers: `update` or `upgrade`?'
 tags: tools ux
 ---
 
-Quick quiz: for the following language/system
-[package managers](https://en.wikipedia.org/wiki/Package_manager), what's the
-name of the subcommand to update[^or-upgrade] your project/system to the latest
-version of one (or more) of your project's dependencies?
+Quick quiz: for the following language/system [package
+managers](https://en.wikipedia.org/wiki/Package_manager), what's the name of the
+subcommand to update[^or-upgrade] your project/system to the latest version of
+one (or more) of your project's dependencies?
 
 [^or-upgrade]: or, y'know, upgrade
 
 | package manager | language/system |
-| --------------- | --------------- |
+|-----------------|-----------------|
 | `bundle`        | Ruby            |
 | `pip`           | Python          |
 | `poetry`        | Python          |
@@ -26,13 +26,12 @@ version of one (or more) of your project's dependencies?
 | `dep`           | Go              |
 | `cpan`          | Perl            |
 
-<button onclick='document.getElementById("answer-table").style.visibility="visible";'>click
-to reveal the answers</button>
+<button onclick='document.getElementById("answer-table").style.visibility="visible";'>click to reveal the answers</button>
 
 {:id="answer-table" style="visibility: hidden;"}
 
 | package manager | language/system | (sub)command name     |
-| --------------- | --------------- | --------------------- |
+|-----------------|-----------------|-----------------------|
 | `bundle`        | Ruby            | `upgrade`             |
 | `pip`           | Python          | go away[^pip]         |
 | `poetry`        | Python          | `update`              |

@@ -4,13 +4,9 @@ title: Musical instructions
 date: "2019-05-22"
 permalink: /talks/ltc-stem-camp/
 summary: >-
-  Computers are really good at following instructions; they never get bored, and
-  they never make mistakes. The tricky part is finding the right sequence of
-  instructions (the right pattern) so that the work that the computer does is
-  useful. How does this even work with music?
+  Computers are really good at following instructions; they never get bored, and they never make mistakes. The tricky part is finding the right sequence of instructions (the right pattern) so that the work that the computer does is useful. How does this even work with music?
 
-  An interactive presentation/workshop given at the [Lake Tuggeranong
-  College](http://www.ltc.act.edu.au) STEM camp.
+  An interactive presentation/workshop given at the [Lake Tuggeranong College](http://www.ltc.act.edu.au) STEM camp.
 ---
 
 {% include slides/title.html %}
@@ -39,11 +35,14 @@ tell me about **you**
 
 {% include slides/talk.html %}
 
-{:.fragment} music, maths, computers: what's the connection?
+{:.fragment}
+music, maths, computers: what's the connection?
 
-{:.fragment} what are computer programs good at?
+{:.fragment}
+what are computer programs good at?
 
-{:.fragment} what would a song performed by a computer program sound like?
+{:.fragment}
+what would a song performed by a computer program sound like?
 
 ## outline
 
@@ -71,12 +70,14 @@ a series of pitched "events" over time
 		   heading="what is (pop) music?"
 		   id="bieber" %}
 
-{:.fragment} catchy hooks
+{:.fragment}
+catchy hooks
 
-{:.fragment} repetitive harmonic patterns (e.g. chord progressions)
+{:.fragment}
+repetitive harmonic patterns (e.g. chord progressions)
 
-{:.fragment} processed/synthetic sounds (lots of computers involved in the
-production)
+{:.fragment}
+processed/synthetic sounds (lots of computers involved in the production)
 
 {% include slides/impact.html %}
 
@@ -102,7 +103,7 @@ why is it important?
 how do we measure it?
 
 {% include slides/background-image.html
-		   image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg"
+		   image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg" 
 		   heading="pitch" %}
 
 what aspects of the music does it influence?
@@ -131,8 +132,8 @@ function _f(x, y)_ takes two parameters/arguments and returns a result
 
 e.g. _f(x, y)_ = _8x_ + _2y_
 
-parameters are _input_, the function does something with the inputs to produce
-an _output_
+parameters are _input_, the function does something with the inputs
+to produce an _output_
 
 ## maths recap 2: modular arithmetic
 
@@ -141,7 +142,6 @@ arithmetic which "wraps around"
 0, 1, 2, 0, 1, 2, 0, 1, 2, ... instead of 0, 1, 2, 3, 4, 5, 6, ...
 
 the modulus can be any integer, e.g.
-
 - 7 _mod_ 4 is 3
 - 18 _mod_ 7 is 4
 
@@ -166,11 +166,9 @@ split into pairs
 
 I'll tell one person (person A) the name of a song
 
-person A will write down (in _English_) instructions for how to play the song
-(**no conventional music notation allowed**)
+person A will write down (in _English_) instructions for how to play the song (**no conventional music notation allowed**)
 
-person B will read the instructions, "sing" them, and try to guess what the song
-is
+person B will read the instructions, "sing" them, and try to guess what the song is
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.jpg" heading="scales (just a warm-up)" %}
 
@@ -206,7 +204,7 @@ how would you do it differently next time?
 
 {% include slides/background-image.html
 		   image="images/talks/pop-production-as-problem-solving/aditya-chinchure-494048-unsplash.jpg"
-		   heading="livecoding"
+		   heading="livecoding" 
 		   id="livecoding" %}
 
 {% include slides/background-image.html
@@ -293,9 +291,11 @@ if you're interested, let me know 😊
 
 🤔
 
-{:.fragment} <ben.swift@anu.edu.au>
+{:.fragment}
+<ben.swift@anu.edu.au>
 
-{:.fragment} <https://benswift.me>
+{:.fragment}
+<https://benswift.me>
 
 <!-- things to get -->
 

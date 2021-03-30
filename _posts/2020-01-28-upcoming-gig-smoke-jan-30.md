@@ -12,12 +12,12 @@ Update: the [video is now online]({% link _livecoding/2020-01-30-smoke.md
 %})---thanks to Charles for putting it together.
 
 If you're in Canberra this Thursday Jan 30 then you should come to a (free) gig
-that the c/c/c studio is putting on in the
-[Peter Karmel](https://www.anu.edu.au/maps#show=29113) Big Band room (at the ANU
-School of Music).
+that the c/c/c studio is putting on in the [Peter
+Karmel](https://www.anu.edu.au/maps#show=29113) Big Band room (at the ANU School
+of Music).
 
-Get away from the
-[fires & smoke](https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/)[^fires]
+Get away from the [fires &
+smoke](https://www.canberratimes.com.au/story/6600587/namadgi-fire-now-at-2575ha-total-fire-ban-declared/)[^fires]
 and come see an evening of experimental sounds in processed voice, livecoding,
 and neural networks with musicians from the ANU code/creativity/culture studio
 and special guest [Fiona Sullivan](https://www.fisounds.com) (USA). There's a
@@ -25,15 +25,14 @@ and special guest [Fiona Sullivan](https://www.fisounds.com) (USA). There's a
 you're into that sort of thing.
 
 - **time**: 5:45pm--7pm
-- **location** Big Band Room,
-  [Peter Karmel Building](https://www.anu.edu.au/maps#show=29113), ANU School of
-  Music
+- **location** Big Band Room, [Peter Karmel
+  Building](https://www.anu.edu.au/maps#show=29113), ANU School of Music
 - **cost**: free
 
 Here's the setlist:
 
 | time     | artist                                                                                                                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+|----------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | 6:00pm   | [Charles Martin](http://charlesmartin.com.au)                                                                                              |
 | 6:10pm   | [Fiona Sullivan](https://www.fisounds.com) (USA), Ben Swift, [Kieran Browne](https://kieranbrowne.com)                                     |
 | 6:25pm   | [Chloë Hobbs](https://chloecomposes.com), [Alec Hunter](https://www.alexanderhunter.com.au), [Charles Martin](http://charlesmartin.com.au) |
@@ -50,7 +49,7 @@ Kieran will be livecoding visuals in GLSL, Charles will be (very musically!)
 fighting with his AI, I'll be dropping beats in Extempore and Fi will be
 _amazing_. See you there.
 
-Note: if you've never been there before, the
-[Peter Karmel building](https://www.anu.edu.au/maps#show=29113) is the one next
-to the "main" ANU School of Music building. The Big Band room is off the
-foyer/atrium, right near the main entrance.
+Note: if you've never been there before, the [Peter Karmel
+building](https://www.anu.edu.au/maps#show=29113) is the one next to the "main"
+ANU School of Music building. The Big Band room is off the foyer/atrium, right
+near the main entrance.

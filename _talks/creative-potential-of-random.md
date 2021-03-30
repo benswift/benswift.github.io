@@ -7,8 +7,7 @@ summary: >-
   There's so much to randomness than just "crazy, unpredictable dice rolls".
   Understanding the different types of randomness allows us to shape this
   randomness for our own creative ends. A talk given as a guest lecture to
-  [COMP1720: Art & Interaction in New
-  Media](https://cs.anu.edu.au/courses/comp1720/) in 2017.
+  [COMP1720: Art & Interaction in New Media](https://cs.anu.edu.au/courses/comp1720/) in 2017.
 ---
 
 {% include slides/title.html %}
@@ -50,10 +49,8 @@ but this **isn't** a maths lecture
 ## three useful types for artists
 
 1. uniform: [`random([min], [max])`](https://p5js.org/reference/#/p5/random)
-2. gaussian:
-   [`randomGaussian()`](https://p5js.org/reference/#/p5/randomGaussian)
-3. discrete: [`random(choices)`](https://p5js.org/reference/#/p5/random) (Array
-   version)
+2. gaussian: [`randomGaussian()`](https://p5js.org/reference/#/p5/randomGaussian)
+3. discrete: [`random(choices)`](https://p5js.org/reference/#/p5/random) (Array version)
 
 ## uniform random numbers
 

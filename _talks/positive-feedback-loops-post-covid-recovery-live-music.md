@@ -1,9 +1,7 @@
 ---
 event: SoCy music festival
 title: Positive feedback loops
-subtitle:
-  Supporting a post-covid recovery for live music...<br /><em>tech is not the
-  (whole) answer</em>
+subtitle: Supporting a post-covid recovery for live music...<br /><em>tech is not the (whole) answer</em>
 author: <a href="https://3ainstitute.org">ANU School of Cybernetics</a>
 date: "2021-03-28"
 permalink: /talks/positive-feedback-loops-panel/
@@ -54,9 +52,8 @@ finding (and mastering) the feedback loops in cyberphysical systems
 <p class="wheelResult">
 
 can we <strong><span
-class="approachWheel-canvas-result">**\_\_\_\_**</span></strong> the
-<strong><span
-class="areaWheel-canvas-result">**\_\_\_\_**</span></strong> in live music?
+class="approachWheel-canvas-result">________</span></strong> the <strong><span
+class="areaWheel-canvas-result">________</span></strong> in live music?
 
 </p>
 

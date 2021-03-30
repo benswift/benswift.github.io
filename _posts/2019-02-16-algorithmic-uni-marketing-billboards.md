@@ -4,8 +4,8 @@ date: 2019-02-16 14:46 +1100
 tags: widgets web
 ---
 
-In the spirit of Murdoch University's
-[_free your think_](http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html)
+In the spirit of Murdoch University's [_free your
+think_](http://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html)
 marketing campaign, I've put together a dynamic full-page ad billboard as my
 pitch for the ANU's next marketing campaign.
 
@@ -34,8 +34,8 @@ that I use for all my [talks/slides]({% link talks.md
 Each time the page loads, it:
 
 1. pulls a random background image from [unsplash](https://unsplash.com)
-2. chooses two verbs at random from
-   [a list of the 1000 most frequently used verbs](https://www.talkenglish.com/vocabulary/top-1000-verbs.aspx)
+2. chooses two verbs at random from [a list of the 1000 most frequently used
+   verbs](https://www.talkenglish.com/vocabulary/top-1000-verbs.aspx)
 3. places them on the billboard in the form **verb** _your_ **verb**,
    randomising the location and text style
 
