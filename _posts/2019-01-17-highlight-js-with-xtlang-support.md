@@ -5,9 +5,8 @@ tags: web
 summary: How to add Extempore syntax highlighting to web content.
 ---
 
-{:.hl-para}
-**Note**: adding syntax-highlighted xtlang to your website is now easier than
-ever because
+{:.hl-para} **Note**: adding syntax-highlighted xtlang to your website is now
+easier than ever because
 [highlightjs-extempore](https://github.com/highlightjs/highlightjs-extempore) is
 an official hljs module. While this page is still an interesting dive into how I
 did it at the time, you should now just follow the instructions on GitHub.
@@ -45,22 +44,22 @@ blog.
 
 ### Does Extempore/xtlang have highlight.js support now?
 
-Yep, [`@blue9`](https://github.com/cyblue9) ported the [Scheme/xtlang
-lexer](https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/lisp.py?at=default&fileviewer=file-view-default#lisp.py-2420)
+Yep, [`@blue9`](https://github.com/cyblue9) ported the
+[Scheme/xtlang lexer](https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/pygments/lexers/lisp.py?at=default&fileviewer=file-view-default#lisp.py-2420)
 that I wrote for Pygments, which is a _big_ help to the Extempore community
 (thanks `blue9`).
 
 ### Isn't it just a matter of adding `xtlang` to the highlight.js build step?
 
 No, because [reasons](https://github.com/highlightjs/highlightjs-xtlang#usage).
-It's a real mess, and we're waiting on [this
-PR](https://github.com/highlightjs/highlight.js/pull/1888) to land before it
-gets easier.
+It's a real mess, and we're waiting on
+[this PR](https://github.com/highlightjs/highlight.js/pull/1888) to land before
+it gets easier.
 
 ### How'd you get it working, then?
 
-Hacks upon hacks. If you really wanna know, it's in [this
-branch](https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang)
+Hacks upon hacks. If you really wanna know, it's in
+[this branch](https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang)
 (although the final product, `highlight.pack.js` is in the main `source`
 branch).
 
@@ -99,8 +98,9 @@ project as well.
 
 ### Will it always be this complicated to set up?
 
-No, once the [aformentioned issue](https://github.com/highlightjs/highlight.js/pull/1888)
-is sorted out, it should be much easier to get a "base" package of highlight.js
+No, once the
+[aformentioned issue](https://github.com/highlightjs/highlight.js/pull/1888) is
+sorted out, it should be much easier to get a "base" package of highlight.js
 from the main download website/CDN, and then to add any extras (e.g.
 Extempore/xtlang) as needed. But until that happens, shenanigans are required.
 
@@ -117,10 +117,8 @@ npm packages and staring at the Chrome developer tools.
 ### Can I use your build of highlight.js to font-lock xtlang code on my own site?
 
 Sure, I'd be pumped if you did. If you want, you can check out the
-[`hljs-with-xtlang`
-branch](https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang) of
-this repo and follow the instructions therein to make your own custom build. Or,
-if you don't want to do that, you could just use the one you've already
+[`hljs-with-xtlang` branch](https://github.com/benswift/benswift.github.io/tree/hljs-with-xtlang)
+of this repo and follow the instructions therein to make your own custom build.
+Or, if you don't want to do that, you could just use the one you've already
 downloaded (since you're visiting this website). Here's a [direct
-link]({% link assets/js/highlight.pack.js %}) if you want to do
-things that way.
+link]({% link assets/js/highlight.pack.js %}) if you want to do things that way.

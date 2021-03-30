@@ -1,6 +1,8 @@
 ---
 title: Making the most of meetings with research students
-summary: "Some questions to structure the regular one-on-one research meetings---modify as necesssary."
+summary:
+  "Some questions to structure the regular one-on-one research meetings---modify
+  as necesssary."
 tags: teaching research
 ---
 
@@ -54,10 +56,8 @@ I'm a livecoder, so I love live demos, and being able to give a short demo of
 one's work-in-progress is a good skill to develop (you never know when you'll
 get an impromptu chance to show off what you're working on).
 
-[Philip Guo also emphasises how helpful it is to have a thing to talk about in a
-research supervisory
-meeting](http://pgbovine.net/advice-for-first-year-PhD-students.htm) (see the
-"Intermission" video in the linked blog post).
+[Philip Guo also emphasises how helpful it is to have a thing to talk about in a research supervisory meeting](http://pgbovine.net/advice-for-first-year-PhD-students.htm)
+(see the "Intermission" video in the linked blog post).
 
 ### Are there any upcoming dates I should be aware of?
 
@@ -69,8 +69,8 @@ tell me if there are any dates coming up which I/we should be aware of.
 
 Students don't get _that_ much face-to-face time with their supervisor---even
 with an attentive one. So it's important to make sure that after each meeting
-there's a clear next step, and in particular that if there are any "blockers"
-we can discuss them there and then, and brainstorm strategies to deal with them.
+there's a clear next step, and in particular that if there are any "blockers" we
+can discuss them there and then, and brainstorm strategies to deal with them.
 
 ## This is a work-in-progress
 

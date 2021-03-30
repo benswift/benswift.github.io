@@ -8,7 +8,8 @@ summary: >-
   can they teach us about the things that are important as we design and examine
   CPSs in _all_ areas of life?
 
-  An interactive lecture/presentation/workshop given to the [3a Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
+  An interactive lecture/presentation/workshop given to the [3a
+  Institute](https://3ainstitute.cecs.anu.edu.au) masters program.
 ---
 
 {% include slides/title.html %}
@@ -34,8 +35,8 @@ summary: >-
 > Advanced robotics, smart grids, autonomous cars, machine learning.
 > **Cyber-physical systems** are literally all around us---systems that, as they
 > converge, will have an unprecedented economic, social and cultural impact on
-> humanity. -&nbsp;_from the [3Ai
-> homepage](https://3ainstitute.cecs.anu.edu.au)_
+> humanity. -&nbsp;_from the
+> [3Ai homepage](https://3ainstitute.cecs.anu.edu.au)_
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="definition" bgsize="contain" bgcol="#222" %}
 
@@ -44,56 +45,73 @@ what is a cyber-physical system?
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.jpg" %}
 
 <!-- potato -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/lars-blankers-B0s3Xndk6tw-unsplash.jpg" %}
 
 <!-- car (w/o driver) -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/ant-miner-NvFEisZmVsQ-unsplash.jpg" %}
 
 <!-- car (w driver) -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/patricia-prudente-oPZf7BegqSU-unsplash.jpg" %}
 
 <!-- aibo -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/brett-jordan-U32jeOdkgfA-unsplash.jpg" %}
 
 <!-- robot soccer -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/robot-soccer.jpeg" %}
 
 <!-- {% include slides/image-credit.html artist="📸 AFP/Getty Images" link='<a href="https://slate.com/technology/2017/08/robot-soccer-tournament-displays-robots-mediocre-soccer-skills.html">🔗</a>' %} -->
 
 <!-- MCG -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash.jpg" %}
 
 <!-- user with smartphone -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/oleg-magni-LGNV-4-l8LA-unsplash.jpg" %}
 
 <!-- factory worker -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/kat-maryschuk-5BFvAPQTi1U-unsplash.jpg" bgpos="bottom" %}
 
 <!-- x-ray viewing -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/linkedin-sales-navigator-_h5CPTwuVHM-unsplash.jpg" %}
 
 <!-- genevieve -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" %}
 
 <!-- city -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg" %}
 
 <!-- school classroom -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/shubham-sharan-Z-fq3wBVfMU-unsplash.jpg" %}
 
 <!-- parlie house -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash.jpg" %}
 
 <!-- nasa -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/nasa-Q1p7bh3SHj8-unsplash.jpg" %}
 
 <!-- piano -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/clark-young-tq7RtEvezSY-unsplash.jpg" %}
 
 <!-- rock band -->
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg" %}
 
 <!-- Ben & Kieran at CECS welcome party -->
+
 {% include slides/background-image.html image="images/livecoding/ben-kieran-cecs-welcome-party-2019.jpg" %}
 
 {% include slides/impact.html %}
@@ -107,8 +125,8 @@ what are the **boundary cases**?
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.jpg" heading="part trois: what can livecoding teach us about CPS?" id="part-3" %}
 
 _Extempore: The design, implementation and application of a cyber-physical
-programming language_ ([Andrew Sorensen's PhD
-thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
+programming language_
+([Andrew Sorensen's PhD thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" %}
 
@@ -117,20 +135,17 @@ thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
 > Advanced robotics, smart grids, autonomous cars, machine learning.
 > Cyber-physical systems are literally all around us---systems that, as they
 > converge, will have an unprecedented economic, social and **cultural** impact
-> on humanity. -&nbsp;_from the [3Ai
-> homepage](https://3ainstitute.cecs.anu.edu.au)_
+> on humanity. -&nbsp;_from the
+> [3Ai homepage](https://3ainstitute.cecs.anu.edu.au)_
 
 {: style="font-size:1.5em;"}
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" %}
 
-{:.fragment}
-autonomy
+{:.fragment} autonomy
 
-{:.fragment}
-agency
+{:.fragment} agency
 
-{:.fragment}
-potatoes
+{:.fragment} potatoes
 
 {: style="font-size:1.5em;"}
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" %}
@@ -193,17 +208,17 @@ there are some "I"s as well as the "A"s
 > How do we measure performance and success?
 >
 > Technical systems have typically been measured on their efficiency. However,
-> when systems start to learn and change their behaviour over time, the objective
-> of efficiency may begin to clash with ideals that have previously been
-> implicitly or tacitly inserted into the process by the humans in the loop. How
-> do we start to conceptualise building for sustainability, for beauty, for
-> values?
+> when systems start to learn and change their behaviour over time, the
+> objective of efficiency may begin to clash with ideals that have previously
+> been implicitly or tacitly inserted into the process by the humans in the
+> loop. How do we start to conceptualise building for sustainability, for
+> beauty, for values?
 
 - what are the **indicators** in livecoding?
 - what does failure look like?
 - what design intervention might we make to help out?
 
-## interfaces 
+## interfaces
 
 > How will technologies, systems and humans work together?
 >
@@ -257,4 +272,3 @@ if you'd like to help (or just to hang out with the c/c/c group more generally)
 then let me know 😊
 
 {% include slides/questions.html %}
-

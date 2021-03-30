@@ -1,11 +1,11 @@
 ---
-title: 'ACMC2020: tools for organising a virtual conference'
+title: "ACMC2020: tools for organising a virtual conference"
 tags: web tools
 ---
 
 I've been a bit quiet on this blog for the last few weeks[^weeks] because I've
-been organising [ACMC2020](https://acmc2020.com/): the _2020 Australasian Computer
-Music Conference_. From the conference landing page:
+been organising [ACMC2020](https://acmc2020.com/): the _2020 Australasian
+Computer Music Conference_. From the conference landing page:
 
 > This year's conference theme is **inclusion**. We want to highlight the
 > diverse range of people who contribute to Australia's computer/electronic
@@ -19,15 +19,15 @@ Well, the conference is now all done for 2020 (although the videos are still
 freely available online; check out our
 [keynotes](https://www.youtube.com/watch?v=v6muRCIp3Kg&list=PL4_Bp-PE5_5sgaN4pIzrz0KGBn0RXramC)).
 It's been a lot of hard work, but the ACMC community are _amazing_, so it's been
-pretty fun as well. A special shout out to the rest of the ACMC [organising
-committee](https://acmc2020.com/#Organisers) (Charles, Nat, Sia, Kit & Alec) for
-all their hard work---thanks team :) So even though I'm writing this blog post,
-these decisions & reflections are really the result of our combined labour, as
-well as feedback from the ACMC community during the conference.
+pretty fun as well. A special shout out to the rest of the ACMC
+[organising committee](https://acmc2020.com/#Organisers) (Charles, Nat, Sia, Kit
+& Alec) for all their hard work---thanks team :) So even though I'm writing this
+blog post, these decisions & reflections are really the result of our combined
+labour, as well as feedback from the ACMC community during the conference.
 
 [^weeks]:
-    well, it's actually pretty common that I'm quiet for a few weeks, so I
-    guess it's business as usual
+    well, it's actually pretty common that I'm quiet for a few weeks, so I guess
+    it's business as usual
 
 {% include toc.html %}
 
@@ -65,10 +65,10 @@ As the hosts of a virtual ACMC, our priorities were:
 {:.hl-para}
 
 **tl;dr** we used [EasyChair](https://easychair.org/) for submissions & peer
-review, a [customised version of
-ICLR's](https://github.com/australasian-computer-music-association/acmc2020)
-website, [YouTube
-premiere](https://support.google.com/youtube/answer/9080341?hl=en), and
+review, a
+[customised version of ICLR's](https://github.com/australasian-computer-music-association/acmc2020)
+website,
+[YouTube premiere](https://support.google.com/youtube/answer/9080341?hl=en), and
 [Discord](https://discord.com/) for text/voice discussion and q&a
 
 ### Conference website {#website}
@@ -80,24 +80,24 @@ conference and drumming up submissions.
 
 Around the time we were finalising the accepted papers & conference schedule,
 the ICLR team [posted on HN](https://news.ycombinator.com/item?id=23282113) that
-the tooling for their [virtual
-conference](https://iclr.cc/virtual_2020/index.html) was newly [available on
-GitHub](https://github.com/Mini-Conf/Mini-Conf). We decided to use it as a
-starting point for building the ACMC2020 conference website.
+the tooling for their
+[virtual conference](https://iclr.cc/virtual_2020/index.html) was newly
+[available on GitHub](https://github.com/Mini-Conf/Mini-Conf). We decided to use
+it as a starting point for building the ACMC2020 conference website.
 
 The final version of the ACMC site is still live (and will remain so for a while
-at least) at <https://acmc2020.com/>, and the [source is up on
-GitHub](https://github.com/australasian-computer-music-association/acmc2020) as
-well.
+at least) at <https://acmc2020.com/>, and the
+[source is up on GitHub](https://github.com/australasian-computer-music-association/acmc2020)
+as well.
 
 {% include assets/picture.html file="images/posts/acmc-website-words-sounds-screenshot.png" alt="ACMC website screenshot" %}
 
 #### Reflections
 
-- in the end I think it looked really great (and we received some [nice
-  feedback](https://twitter.com/benswift/status/1280746825637453824) from the
-  creators of the template) but it was [a lot of
-  work](https://github.com/australasian-computer-music-association/acmc2020/pulse)
+- in the end I think it looked really great (and we received some
+  [nice feedback](https://twitter.com/benswift/status/1280746825637453824) from
+  the creators of the template) but it was
+  [a lot of work](https://github.com/australasian-computer-music-association/acmc2020/pulse)
   requiring a non-trivial amount of web development experience to get it to that
   point (Charles Martin helped a lot with this)
 
@@ -128,8 +128,8 @@ Docs---see below).
   however there were certainly people for whom this process was unfamiliar and a
   bit daunting (so we need to provide more guidance for those folks next time)
 
-- EasyChair sucks, but the others ([Precision
-  Conference](https://new.precisionconference.com/),
+- EasyChair sucks, but the others
+  ([Precision Conference](https://new.precisionconference.com/),
   [CMT](https://cmt3.research.microsoft.com/)) suck too, so I wouldn't strongly
   push people one way on the other on this part of the process---as long as your
   choice allows you to export all accepted submissions & their metadata in some
@@ -163,8 +163,8 @@ the next build of the conference website.
   familiarity of a spreadsheet was a net win
 
 - the [website infrastructure](#website) has a place for putting python scripts,
-  and [we used this a
-  lot](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)
+  and
+  [we used this a lot](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)
   to run consistency checks & other helpful analyses (because checking stuff
   with scripts is way more fun than checking it by eye, and _probably_ a
   time-saver...)
@@ -184,17 +184,17 @@ everything on YouTube nonetheless.
 
 A couple of the performances were livestreamed, but for the majority of the
 conference program participants were asked to submit a video representing their
-performance or paper presentation. Then, an [elaborate series of ffmpeg
-scripts](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)[^ffmpeg]
+performance or paper presentation. Then, an
+[elaborate series of ffmpeg scripts](https://github.com/australasian-computer-music-association/acmc2020/blob/master/scripts/process_videos.py)[^ffmpeg]
 concatenated the videos to produce a single video per session, with consistent
 "titlecards" announcing the authors & title of each new video in the session.
 
 Each session video was uploaded to YouTube, and scheduled for "simultaneous
-viewing" at the scheduled time using the [YouTube
-Premiere](https://support.google.com/youtube/answer/9080341?hl=en) feature.
-After the Premiere, the videos were (still are) left up on the [ACMC
-YouTube](https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw) for people to
-catch up & watch at their leisure.
+viewing" at the scheduled time using the
+[YouTube Premiere](https://support.google.com/youtube/answer/9080341?hl=en)
+feature. After the Premiere, the videos were (still are) left up on the
+[ACMC YouTube](https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw) for
+people to catch up & watch at their leisure.
 
 ![ACMC YouTube channel screenshot]({% link assets/images/posts/acmc-youtube-screenshot.png %})
 
@@ -205,8 +205,8 @@ catch up & watch at their leisure.
 #### Reflections
 
 - outsourcing the video delivery to YouTube (who, regardless of what you think
-  of their business model, are **really good** at delivering video) saved
-  so much stress
+  of their business model, are **really good** at delivering video) saved so
+  much stress
 
 - the ability to upload & schedule the video ahead of time but still watch it
   all-together allows for synchronous discussion and q&a amongst attendees
@@ -228,7 +228,6 @@ catch up & watch at their leisure.
   setting up a graph of audio & video sinks, sources & filters you're doomed to
   copy-paste stuff from StackOverflow and then stare in bewilderment at cryptic
   error messages (trust me... I learned this the hard way 😢)
-  
 - not all presenters[^acmc-presenters] at an academic conference have the skills
   (or the inclination) to create an engaging video of their work, so depending
   on your community you might see the occasional "monotone drone over text
@@ -278,8 +277,8 @@ of disconnected YouTube videos.
 Sadly, the ACMC committee never found out a good way of recreating this part of
 the usual conference experience at an online conference. Some folks who were
 geographically co-located did get together and watch some of the streams
-together, but the recent [Melbourne covid19
-lockdown](https://www.abc.net.au/news/2020-07-07/metropolitan-melbourne-suburbs-back-in-coronavirus-lockdown/12431564)
+together, but the recent
+[Melbourne covid19 lockdown](https://www.abc.net.au/news/2020-07-07/metropolitan-melbourne-suburbs-back-in-coronavirus-lockdown/12431564)
 meant that some people couldn't even do that.
 
 #### Reflections

@@ -4,9 +4,8 @@ title: Laptop Ensemble in the Canberra Times
 tags: teaching reimagine lens
 ---
 
-The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: [ANU
-School of Music's new orchestra is far from
-conventional](https://www.canberratimes.com.au/story/6412297/anu-school-of-musics-new-orchestra-is-far-from-conventional/).
+The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning:
+[ANU School of Music's new orchestra is far from conventional](https://www.canberratimes.com.au/story/6412297/anu-school-of-musics-new-orchestra-is-far-from-conventional/).
 
 There's some really encouraging stuff in there from ANU School of Music head
 [Kim Cunio](https://music.cass.anu.edu.au/people/associate-professor-kim-cunio)
@@ -19,8 +18,7 @@ about the role of code in music-making:
 I'm so pumped---this is exactly what I've been trying to do for several years,
 and having Kim on board as an ally is very encouraging. Along with the CECS
 Reimagine agenda (including their support of my [fellowship]({%
-link _posts/2019-08-30-Im-a-reimagine-fellow.md %}) to put together the [c/c/c
-studio]({% link
+link _posts/2019-08-30-Im-a-reimagine-fellow.md %}) to put together the [c/c/c studio]({% link
 _posts/2019-03-20-reimagine-fellow-project-pitch.md %})) and the great things
 happening [elsewhere](https://soad.cass.anu.edu.au) in
 [CASS](https://cdhr.cass.anu.edu.au), there's good vibes in the air around

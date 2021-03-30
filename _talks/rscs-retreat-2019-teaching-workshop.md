@@ -30,7 +30,8 @@ quizzes) but must be something _you have control of_ as convenor
 
 to develop a shared understanding of what a good learning experience looks like
 
-to have honest, safe discussions about what's working and what's not in our courses
+to have honest, safe discussions about what's working and what's not in our
+courses
 
 to identify local networks for sharing ideas & resources to improve the student
 learning outcomes in our courses
@@ -64,10 +65,11 @@ no answers, but some helpful questions
 ## discussion: time & energy
 
 _(a lesson from physics)_
- 
+
 in your teaching, what _actually_ consumes your time and energy?
 
-what's the relationship between time & energy **in**put and learning **out**comes?
+what's the relationship between time & energy **in**put and learning
+**out**comes?
 
 are there ways to maximise this efficiency?
 
@@ -81,8 +83,8 @@ as classes get bigger, are there ways to exchange marginal costs for fixed ones?
 
 ## an aside: the CECS T&L tech stack
 
-**GitLab** for assignment submission, marking, feedback (ask Ben about the **lucy**
-project)
+**GitLab** for assignment submission, marking, feedback (ask Ben about the
+**lucy** project)
 
 **Jekyll** for delivering course content (website, lab material, lecture slides)
 
@@ -102,14 +104,15 @@ are there ways to teach & improve your course more collaboratively?
 
 ## a commitment
 
-write down one concrete change you'll make* to your course to improve the
+write down one concrete change you'll make\* to your course to improve the
 learning outcomes for your students
 
-*_or at least investigate_
+\*_or at least investigate_
 
 # appendices
 
 {: style="column-count: 2;"}
+
 ## poll results: what's most important
 
 - coding
@@ -144,6 +147,7 @@ learning outcomes for your students
 - technical stuff
 
 {: style="column-count: 2;"}
+
 ## poll results: what's least important
 
 - lectures

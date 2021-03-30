@@ -12,13 +12,13 @@ Here are the details:
 
 - **date**: Sat Nov 9
 - **time**: 4:30pm--6:30pm
-- **location**: HN computer labs 1.23 & 1.24 (ground floor of the [Hanna Neumann
-building](https://goo.gl/maps/ZiwfuqyNSxx8ZAR3A))
+- **location**: HN computer labs 1.23 & 1.24 (ground floor of the
+  [Hanna Neumann building](https://goo.gl/maps/ZiwfuqyNSxx8ZAR3A))
 - **cost**: free!
 
-The students have been working super hard (here's a [sneak
-peek](https://cs.anu.edu.au/courses/comp1720/showcase/)) so come along, play
-with some cool interactive browser artworks and see some of the cool
+The students have been working super hard (here's a
+[sneak peek](https://cs.anu.edu.au/courses/comp1720/showcase/)) so come along,
+play with some cool interactive browser artworks and see some of the cool
 code/creativity/culture work going on here at the ANU.
 
 Here's a photo from last year's exhibition just to whet your appetite.

@@ -6,7 +6,8 @@ permalink: /talks/pop-production/
 summary: >-
   Sure, computers are useful for solving problems, but what about when
   creativity is required? How do we solve problems like producing a pop song
-  using code? A talk for the [National Youth Science Forum 2019](https://www.nysf.edu.au)
+  using code? A talk for the [National Youth Science Forum
+  2019](https://www.nysf.edu.au)
 ---
 
 {% include slides/title.html %}
@@ -91,8 +92,7 @@ programming as **problem solving**...
 
 the problem:
 
-{:.fragment}
-write a **no. 1** hit
+{:.fragment} write a **no. 1** hit
 
 {% include slides/background-image.html image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" %}
 

@@ -5,8 +5,8 @@ date: "2018-11-07"
 permalink: /talks/world-since-google/
 summary: >-
   A short, incomplete, **mostly wrong** history of the internet since 1996. A
-  talk for the Canberra chapter of the
-  [University of the Third Age (U3A)](https://www.u3acanberra.org.au).
+  talk for the Canberra chapter of the [University of the Third Age
+  (U3A)](https://www.u3acanberra.org.au).
 ---
 
 {% include slides/background-image.html image="images/talks/u3a-world-since-google/Bushland_on_southern_Mount_Majura.jpg" %}
@@ -59,7 +59,8 @@ a short, incomplete, **mostly wrong** history of the internet since 1996
 
 ---
 
-> Google's mission is to organise the world's information and make it universally accessible and useful
+> Google's mission is to organise the world's information and make it
+> universally accessible and useful
 
 <https://www.google.com.au/about/>
 
@@ -221,17 +222,13 @@ make informed choices
 
 ## open questions
 
-{:.fragment}
-are you willing to pay for your search results? news? email?
+{:.fragment} are you willing to pay for your search results? news? email?
 
-{:.fragment}
-does Google owe traditional journalism a business model?
+{:.fragment} does Google owe traditional journalism a business model?
 
-{:.fragment}
-is data the new oil, or the new uranium?
+{:.fragment} is data the new oil, or the new uranium?
 
-{:.fragment}
-has Google changed the **culture**?
+{:.fragment} has Google changed the **culture**?
 
 {% include slides/impact.html %}
 

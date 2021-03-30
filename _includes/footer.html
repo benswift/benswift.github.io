@@ -1,45 +1,56 @@
 <footer>
   <script>
-   const cafeUrls = [
-	 "https://biginelli.com/",
-	 "http://tilleys.com.au",
-	 "https://www.facebook.com/goodbrothercafe/",
-	 "https://frontgallerycafe.com",
-	 "https://www.facebook.com/thecoffeegrounds",
-	 "https://redbrickcoffee.com.au/redbrick/"
-   ];
-   const randomCafe = () => {
-	 window.location.href = cafeUrls[Math.floor(Math.random()*cafeUrls.length)];
-   };
+    const cafeUrls = [
+      "https://biginelli.com/",
+      "http://tilleys.com.au",
+      "https://www.facebook.com/goodbrothercafe/",
+      "https://frontgallerycafe.com",
+      "https://www.facebook.com/thecoffeegrounds",
+      "https://redbrickcoffee.com.au/redbrick/",
+    ];
+    const randomCafe = () => {
+      window.location.href =
+        cafeUrls[Math.floor(Math.random() * cafeUrls.length)];
+    };
   </script>
 
   <!-- colophon -->
   <p>
-	designed & built with
-	<a href="https://jekyllrb.com">{% fa_svg fas.fa-vial %}</a>,
-	<a id="cafe-url" onclick="randomCafe();">{% fa_svg fas.fa-coffee %}</a> and
-	<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M">{% fa_svg fas.fa-heart %}</a> on
-	unceded <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal country</a>
-	by Ben Swift
+    designed & built with
+    <a href="https://jekyllrb.com">{% fa_svg fas.fa-vial %}</a>,
+    <a id="cafe-url" onclick="randomCafe();">{% fa_svg fas.fa-coffee %}</a> and
+    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M"
+      >{% fa_svg fas.fa-heart %}</a
+    >
+    on unceded
+    <a href="https://www.nca.gov.au/welcome-ngunnawal-country"
+      >Ngunnawal country</a
+    >
+    by Ben Swift
   </p>
 
   <!-- licence -->
-  <p style="font-size: 1.3em;">
-	{% include cc-link.html %}
-  </p>
+  <p style="font-size: 1.3em">{% include cc-link.html %}</p>
 
   <!-- throw shade on IE -->
   <p>
-	uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a>,
-	works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
+    uses
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">CSS Grid</a
+    >, works on all <a href="http://outdatedbrowser.com/en">modern browsers</a>
   </p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>{{ site.data['git-HEAD'] }}</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/{{ site.data['git-HEAD'] }}/{{ page.path }}">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/{{ page.path }}">page history</a>
-	on {% fa_svg fab.fa-github %})
+    site revision <code>{{ site.data['git-HEAD'] }}</code> (see
+    <a
+      href="https://github.com/benswift/benswift.github.io/blob/{{ site.data['git-HEAD'] }}/{{ page.path }}"
+      >source</a
+    >,
+    <a
+      href="https://github.com/benswift/benswift.github.io/commits/source/{{ page.path }}"
+      >page history</a
+    >
+    on {% fa_svg fab.fa-github %})
   </p>
 
   <!-- anchor.js -->
@@ -48,6 +59,8 @@
   <!-- highlight.js -->
   {% include hljs.html %}
 
-  <script src='{{ "/assets/js/os-aware-modifiers.js" | relative_url }}' type="text/javascript"></script>
-
+  <script
+    src='{{ "/assets/js/os-aware-modifiers.js" | relative_url }}'
+    type="text/javascript"
+  ></script>
 </footer>

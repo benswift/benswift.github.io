@@ -1,5 +1,5 @@
 ---
-title: 'Student project: animated 3D code rendering engine'
+title: "Student project: animated 3D code rendering engine"
 tags: student-project
 ---
 
@@ -10,21 +10,23 @@ come to me. For the moment, I'm doing this on my blog using the
 [`student-project`](https://benswift.me/blog/tag/student-project/) tag.
 
 As a [livecoder]({% link index.md %}/livecoding/) I care more than most about
-how my code looks on the screen. While I've [written in the
-past](https://benswift.me/research/#swiftVisualCodeAnnotations2013) about the
-potential of animated "tooltip" style code annotations, I'd love to have more
-detailed (parametric) control over the display of the code/text itself,
-especially in a "handwritten" style. Being able to "write" the code in real-time
-in sync with the music in a livecoding setup would look super cool, and I
-[^unproven-hypothesis] think that it might even help folks follow what's going
-on in terms of which bits of code are responsible for which parts of the music.
+how my code looks on the screen. While I've
+[written in the past](https://benswift.me/research/#swiftVisualCodeAnnotations2013)
+about the potential of animated "tooltip" style code annotations, I'd love to
+have more detailed (parametric) control over the display of the code/text
+itself, especially in a "handwritten" style. Being able to "write" the code in
+real-time in sync with the music in a livecoding setup would look super cool,
+and I [^unproven-hypothesis] think that it might even help folks follow what's
+going on in terms of which bits of code are responsible for which parts of the
+music.
 
-[^unproven-hypothesis]: I have no evidence for this... but I'd like to try and get some.
+[^unproven-hypothesis]:
+    I have no evidence for this... but I'd like to try and get some.
 
 Making this happen would require:
 
-- a handwriting synthesis model (something like [this one by Alex
-  Graves](https://github.com/sjvasquez/handwriting-synthesis))
+- a handwriting synthesis model (something like
+  [this one by Alex Graves](https://github.com/sjvasquez/handwriting-synthesis))
 
 - (optionally) a 3D version (which would give output like
   [this](https://www.youtube.com/watch?v=rA3QZVEfGpc), but automated rather than

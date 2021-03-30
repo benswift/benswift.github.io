@@ -18,5 +18,5 @@ removed. A little while ago I did some work to set up the Extempore docs on a
 place to go for that stuff now. I considered keeping my old blog posts around
 for posterity, but a lot of it was out-of-date anyway, so I decided it was
 safest to get rid of it completely and redirect people to the new documentation
-site. As always, if you get stuck, let me know on the [Extempore mailing
-list](mailto:extemporelang@googlegroups.com).
+site. As always, if you get stuck, let me know on the
+[Extempore mailing list](mailto:extemporelang@googlegroups.com).

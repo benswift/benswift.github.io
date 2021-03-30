@@ -31,11 +31,12 @@ I'm usually happier just writing regular elisp to get the job done.
 
 The nicest[^nicer] way I've found to do this is to give the table a **name** (in
 the example above the table name is `pap-table`---can you guess why?). Then, you
-can tell an elisp [code
-block](https://orgmode.org/manual/Structure-of-code-blocks.html) about the data
-in that table like so (note the `:var table=pap-table` at the start):
+can tell an elisp
+[code block](https://orgmode.org/manual/Structure-of-code-blocks.html) about the
+data in that table like so (note the `:var table=pap-table` at the start):
 
-[^nicer]: if there's a nicer way, please [let me know](https://twitter.com/benswift)!
+[^nicer]:
+    if there's a nicer way, please [let me know](https://twitter.com/benswift)!
 
 ```scheme
 #+BEGIN_SRC emacs-lisp :var table=pap-table
@@ -63,9 +64,8 @@ Spacemacs) it'll return the "result":
 
 This is really handy, as you can imagine. I use it for all sorts of things,
 including sending "mail merge" emails with template values (since I also use
-[Emacs as my mail
-client](https://www.djcbsoftware.nl/code/mu/mu4e.html)---sending an email is
-just an elisp function call away).
+[Emacs as my mail client](https://www.djcbsoftware.nl/code/mu/mu4e.html)---sending
+an email is just an elisp function call away).
 
 ## Caveats
 
@@ -83,12 +83,12 @@ hassle.
   `string-to-number` in if you want to be sure.
 
 - In the example above my elisp block returns a value (a list, since I'm using
-  `-map` from the excellent [`dash.el`
-  library](https://github.com/magnars/dash.el)) and that's why the results get
-  nicely formatted in the results block. If your code is side-effectful but
-  doesn't return a value then you see the results in that place, you'll have to
-  look elsewhere (e.g. if you call `message` you'll need to look in the
-  `*Messages*` buffer as usual).
+  `-map` from the excellent
+  [`dash.el` library](https://github.com/magnars/dash.el)) and that's why the
+  results get nicely formatted in the results block. If your code is
+  side-effectful but doesn't return a value then you see the results in that
+  place, you'll have to look elsewhere (e.g. if you call `message` you'll need
+  to look in the `*Messages*` buffer as usual).
 
 - Further to the previous caveat, you'll notice that I'm actually wrapping the
   result of the inner `lambda` in another `list`, so the output of the code

@@ -7,10 +7,10 @@ pagination:
 ---
 
 This is my blog. Sometimes in these posts I'll talk about research or art
-projects I'm involved with, although I also blog about my research on the [c/c/c
-blog](https://cs.anu.edu.au/code-creativity-culture/news/). Sometimes I'll just
-ramble about other stuff which is keeping me up at night. If you're interested
-on blog posts only on a certain topic, there's a [tags index]({%
+projects I'm involved with, although I also blog about my research on the
+[c/c/c blog](https://cs.anu.edu.au/code-creativity-culture/news/). Sometimes
+I'll just ramble about other stuff which is keeping me up at night. If you're
+interested on blog posts only on a certain topic, there's a [tags index]({%
 link blog-tag-index.md %}).
 
 If anything here sparks your interest (or your ire!) then get in touch

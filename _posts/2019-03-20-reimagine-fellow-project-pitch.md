@@ -5,13 +5,13 @@ tags: reimagine teaching research
 summary: A project plan for my CECS Reimagine Fellowship
 ---
 
-*Note to readers:* this is the project plan for my **Reimagine Fellowship**. If
-you're just here for the short version, see the [elevator
-pitch](#elevator-pitch). Alternately, if you want to know the "big picture
-vision" stuff _behind_ this project, then that's [here]({% link
+_Note to readers:_ this is the project plan for my **Reimagine Fellowship**. If
+you're just here for the short version, see the
+[elevator pitch](#elevator-pitch). Alternately, if you want to know the "big
+picture vision" stuff _behind_ this project, then that's [here]({% link
 _posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}). Finally, you can
-check out the main [CECS Reimagine](https://cecs.anu.edu.au/reimagine) page for
-more general information about the Reimagine project.
+check out the main [CECS Reimagine](https://cecs.anu.edu.au/reimagine) page for more
+general information about the Reimagine project.
 
 Or you could save yourself 4000+ words of reading and just watch a 2min video
 😉:
@@ -50,11 +50,11 @@ Interest in Computer Science (CS) education is exploding at all educational
 levels, but there's a lack of support for students in schools[^schools] which
 don't have specialist teachers or an appropriate learning
 environment---especially for "fun" student-driven projects which go beyond
-textbook exercises. At the ANU [Research School of Computer
-Science](https://cs.anu.edu.au/code-creativity-culture/) we're not currently
-doing very much[^not-doing-much] to engage with students at a pre-tertiary
-level, mostly because we're flat-out dealing with the huge growth in students at
-a tertiary level. The c/c/c studio will address that.
+textbook exercises. At the ANU
+[Research School of Computer Science](https://cs.anu.edu.au/code-creativity-culture/)
+we're not currently doing very much[^not-doing-much] to engage with students at
+a pre-tertiary level, mostly because we're flat-out dealing with the huge growth
+in students at a tertiary level. The c/c/c studio will address that.
 
 [^schools]:
     In this project I'm mainly thinking of later high-school and college
@@ -77,44 +77,45 @@ students who might not normally consider coding and computer science.
 ### Existing alternatives
 
 Some ACT High Schools & Colleges already have great non-traditional/creative
-CS/IT programs (I plan to partner with teachers at these schools as [early
-adopters](#early-adopters)). However, even in these cases there's a missing link
-once students finish High School---where can they go to further develop their
-creative practice? The c/c/c studio program will give them deep links &
-relationships into the ANU (across both CS and the Schools of Art & Design and
-School of Music) and an avenue for continuing their creative work.
+CS/IT programs (I plan to partner with teachers at these schools as
+[early adopters](#early-adopters)). However, even in these cases there's a
+missing link once students finish High School---where can they go to further
+develop their creative practice? The c/c/c studio program will give them deep
+links & relationships into the ANU (across both CS and the Schools of Art &
+Design and School of Music) and an avenue for continuing their creative work.
 
-There are a few outreach programs [advertised on the CECS
-website](https://cecs.anu.edu.au/study/more-information/outreach-programs-schools),
+There are a few outreach programs
+[advertised on the CECS website](https://cecs.anu.edu.au/study/more-information/outreach-programs-schools),
 however the listed programs are dominated by Engineering rather than CS (9 vs 4
 programs) and of the 4 CS programs I'm involved with 2 of them already. There's
 also the official [ANU Extension](http://extension.anu.edu.au) scheme for Year
 11 & 12 students in the ACT, however CS doesn't yet participate in this scheme.
-Across campus, there's the ANU School of Music's [Open School of
-Music](http://music.cass.anu.edu.au/open-school) for school students, but
-there's no music technology stream.
+Across campus, there's the ANU School of Music's
+[Open School of Music](http://music.cass.anu.edu.au/open-school) for school
+students, but there's no music technology stream.
 
 There are several great organisations working to increase diversity in CS,
-including the [Canberra Girls' Programming
-Network](https://canberragpn.github.io), [Code Like a
-Girl](https://codelikeagirl.org/states/act/) and
+including the
+[Canberra Girls' Programming Network](https://canberragpn.github.io),
+[Code Like a Girl](https://codelikeagirl.org/states/act/) and
 [Robogals](https://robogals.org/locations/asia-pacific-apac/canberra/). However,
 these organisations are primarily based around computer science/engineering, not
 interdisciplinary art & code.
 
-In 2018 I (with [Dr. Alec
-Hunter](http://music.cass.anu.edu.au/people/dr-alexander-hunter) from the ANU
-School of Music) started the [ANU Laptop
-Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/), which attempted
-to provide a similar open-ended space for creative exploration to the c/c/c
-studio, except specifically for live performance
+In 2018 I (with
+[Dr. Alec Hunter](http://music.cass.anu.edu.au/people/dr-alexander-hunter) from
+the ANU School of Music) started the
+[ANU Laptop Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/),
+which attempted to provide a similar open-ended space for creative exploration
+to the c/c/c studio, except specifically for live performance
 ([livecoding](https://toplap.org); code-based DJ-ing and VJ-ing). ANU students
-can also take my [COMP1720: Art & Interaction in New
-Media](https://cs.anu.edu.au/courses/comp1720/) course as part of a major in
-either a CS degree or a Bachelor of Visual Arts (or indeed as a cross-campus
-elective in any program). COMP1720 has run successfully as a cross-disciplinary
-"learn to code" course for several years. The c/c/c studio will extend this
-opportunity to school students and other members of the ACT community.
+can also take my
+[COMP1720: Art & Interaction in New Media](https://cs.anu.edu.au/courses/comp1720/)
+course as part of a major in either a CS degree or a Bachelor of Visual Arts (or
+indeed as a cross-campus elective in any program). COMP1720 has run successfully
+as a cross-disciplinary "learn to code" course for several years. The c/c/c
+studio will extend this opportunity to school students and other members of the
+ACT community.
 
 The c/c/c studio is an opportunity to act as a force multiplier: harnessing
 these existing initiatives, partnering with them wherever possible, and building
@@ -134,24 +135,24 @@ The c/c/c studio will be developed through three stages:
    view to having it approved for delivery as an ANU Extension program in 2021.
 
 2. In **stage two** (mid 2020--end 2020) we will design and run a series of
-   creative code workshops (approx. one per month) with our [early
-   adopter](#early-adopters) schools and community groups. These free workshops
-   will be marketed to specific target groups (as determined by the advisory
-   group). Through these workshop we will develop a curriculum of different
-   creative activities for different audiences, and also build a community
-   (local artists, CECS academics, ANU undergraduate & postgraduate students)
-   capable of delivering these workshops.
+   creative code workshops (approx. one per month) with our
+   [early adopter](#early-adopters) schools and community groups. These free
+   workshops will be marketed to specific target groups (as determined by the
+   advisory group). Through these workshop we will develop a curriculum of
+   different creative activities for different audiences, and also build a
+   community (local artists, CECS academics, ANU undergraduate & postgraduate
+   students) capable of delivering these workshops.
 
 3. In **stage three** (beginning 2021--ongoing) we will officially launch the
    weekly on-campus c/c/c studio & masterclass. The weekly c/c/c studio sessions
-   won't be lectures, or even tutorials---they will adopt a [studio-based
-   learning](https://teaching.unsw.edu.au/assessing-studio-based-learning)
+   won't be lectures, or even tutorials---they will adopt a
+   [studio-based learning](https://teaching.unsw.edu.au/assessing-studio-based-learning)
    model, with each student working on their own code-based music or visual
-   artwork as a semester-long creative "work". The [Studio Teaching
-   Project](http://www.studioteaching.org) (a research collaboration between
-   UNSW, UQ, RMIT and UTas) has released some helpful material for employing
-   this teaching model, which we will make use of in developing the c/c/c
-   curriculum.
+   artwork as a semester-long creative "work". The
+   [Studio Teaching Project](http://www.studioteaching.org) (a research
+   collaboration between UNSW, UQ, RMIT and UTas) has released some helpful
+   material for employing this teaching model, which we will make use of in
+   developing the c/c/c curriculum.
 
 The purpose of stages one and two is to design and road-test the details of the
 c/c/c studio sessions & masterclasses, but here are some initial plans:
@@ -173,24 +174,24 @@ c/c/c studio sessions & masterclasses, but here are some initial plans:
   tutor (we will recruit tutors with the appropriate skills as required based on
   c/c/c studio student numbers)
 
-- students will be exposed to regular guest "masterclasses" (3-4 times per semester) from 
-  artists and other creative practitioners from CECS, the ANU School of Art &
-  Design & School of Music, and the local arts community
+- students will be exposed to regular guest "masterclasses" (3-4 times per
+  semester) from artists and other creative practitioners from CECS, the ANU
+  School of Art & Design & School of Music, and the local arts community
 
-- initial "training" material will also be adapted from the [COMP1720 lab
-  material](https://cs.anu.edu.au/courses/comp1720/labs/) and tweaked as
-  appropriate
+- initial "training" material will also be adapted from the
+  [COMP1720 lab material](https://cs.anu.edu.au/courses/comp1720/labs/) and
+  tweaked as appropriate
 
 {: #anu-extension-accreditation}
 
-If the c/c/c studio receives accreditation as an official [ANU
-Extension](http://extension.anu.edu.au) program then graduates of the two-year
-c/c/c studio program will receive credit (one course worth) into our first-year
-CS program if they come and study at CECS. This is the same as the equivalent
-[Discovering Engineering extension
-program](http://extension.anu.edu.au/study/discovering-engineering), which gives
-students credit for a first-year ENGN course if they study Engineering at the
-ANU.
+If the c/c/c studio receives accreditation as an official
+[ANU Extension](http://extension.anu.edu.au) program then graduates of the
+two-year c/c/c studio program will receive credit (one course worth) into our
+first-year CS program if they come and study at CECS. This is the same as the
+equivalent
+[Discovering Engineering extension program](http://extension.anu.edu.au/study/discovering-engineering),
+which gives students credit for a first-year ENGN course if they study
+Engineering at the ANU.
 
 ### Value to organisation/Reimagine strategic alignment
 
@@ -213,8 +214,8 @@ interests (especially in the arts & music) _could_ be used in engineering and
 computing.
 
 The c/c/c studio provides a test-bed for new modes of computing **education**,
-especially the studio teaching model. The Reimagine project's "[big
-tent](https://www.acm.org/about-acm/about-the-acm-organization#h-acm’s-‘big-tent’-philosophy-embraces-diversity)"
+especially the studio teaching model. The Reimagine project's
+"[big tent](https://www.acm.org/about-acm/about-the-acm-organization#h-acm’s-‘big-tent’-philosophy-embraces-diversity)"
 CS education philosophy requires us to attract _and nurture_ a broader range of
 students in our undergraduate and postgraduate programs. In building a community
 of students who are interested in using computers in the arts & music the c/c/c
@@ -231,7 +232,7 @@ community.
 Finally, all the activities of the c/c/c studio function as an "object lesson"
 for the breadth of places that an Engineering/Computer Science skillset can be
 applied---a crucial part of Reimagining CECS from a problem-solving to
-problem-*finding* institution.
+problem-_finding_ institution.
 
 ### Target users
 
@@ -248,13 +249,13 @@ using the c/c/c studio curriculum, which will be made freely available).
 ### Early adopters {#early-adopters}
 
 In stage one I will build on my (and others) existing relationships in
-identifying early adopters. In schools, I will work with teachers from [Dickson
-College](http://www.dicksonc.act.edu.au), [Radford
-College](https://www.radford.act.edu.au), [Lyneham
-High](http://lynehamhs.act.edu.au), [Canberra (Boys)
-Grammar](https://cgs.act.edu.au) and [Canberra Girls
-Grammar](https://www.cggs.act.edu.au). I will also work with relevant community
-& arts "special interest" organisations, such as
+identifying early adopters. In schools, I will work with teachers from
+[Dickson College](http://www.dicksonc.act.edu.au),
+[Radford College](https://www.radford.act.edu.au),
+[Lyneham High](http://lynehamhs.act.edu.au),
+[Canberra (Boys) Grammar](https://cgs.act.edu.au) and
+[Canberra Girls Grammar](https://www.cggs.act.edu.au). I will also work with
+relevant community & arts "special interest" organisations, such as
 [Robogals](https://robogals.org/locations/asia-pacific-apac/canberra/),
 [Canberra Girls' Programming Network](https://canberragpn.github.io) and SCI ART
 CBR. These groups, with their networks and existing groups of students
@@ -288,7 +289,8 @@ intangible stuff, so I'm not sure if they count as a deliverables.
 
 ## Project Sponsor and Stakeholders {#project-sponsor-and-stakeholders}
 
-- **Sponsor**: [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking), RSCS Director
+- **Sponsor**: [Tony Hosking](https://cecs.anu.edu.au/people/tony-hosking), RSCS
+  Director
 
 - **Owner**: Ben Swift
 
@@ -300,9 +302,8 @@ intangible stuff, so I'm not sure if they count as a deliverables.
   - [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
     code practitioner
 
-  - [Geoff
-    Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb), ANU
-    School of Art & Design
+  - [Geoff Hinchcliffe](https://researchers.anu.edu.au/researchers/hinchcliffe-gb),
+    ANU School of Art & Design
 
   - [Genevieve Bell](https://cecs.anu.edu.au/people/genevieve-bell),
     [3Ai](https://3ainstitute.cecs.anu.edu.au) Director
@@ -335,7 +336,7 @@ Attaching numbers to this sort of thing is fraught, but here are some indicative
 targets:
 
 | stage  | activity        | target                                                                      |
-|--------|-----------------|-----------------------------------------------------------------------------|
+| ------ | --------------- | --------------------------------------------------------------------------- |
 | two    | workshops       | run one workshop per month, with at least 10 students each time             |
 | three  | c/c/c studio    | 10 c/c/c studio (ANUExt) enrolments 2021, of which 75% graduate at end 2022 |
 | three+ | CECS enrolments | 2 c/c/c studio graduates (in year 12 in 2022) enrolling in CS at the ANU    |
@@ -365,26 +366,28 @@ their time to contribute to the c/c/c studio masterclasses (stage three).
 
 We will require public liability insurance for any students who come onto campus
 for the c/c/c studio sessions.
-  
+
 ## Key Activities
 
-| What?                                                                        | Who?           | By when?                         |
-|------------------------------------------------------------------------------|----------------|----------------------------------|
-| assemble c/c/c studio advisory group                                         | Ben, others    | stage one (early 2020)           |
-| develop relationships with [stakeholders](#project-sponsor-and-stakeholders) | advisory group | ongoing                          |
-| run in-HS workshops                                                          | Ben + tutor(s) | stage two (mid 2020)             |
-| c/c/c studio ANU Extension program                                           | Ben + guests   | stage three (beginning 2021)     |
-| c/c/c studio grad show                                                       | students       | stage three (end 2021) |
+| What?                                                                        | Who?           | By when?                     |
+| ---------------------------------------------------------------------------- | -------------- | ---------------------------- |
+| assemble c/c/c studio advisory group                                         | Ben, others    | stage one (early 2020)       |
+| develop relationships with [stakeholders](#project-sponsor-and-stakeholders) | advisory group | ongoing                      |
+| run in-HS workshops                                                          | Ben + tutor(s) | stage two (mid 2020)         |
+| c/c/c studio ANU Extension program                                           | Ben + guests   | stage three (beginning 2021) |
+| c/c/c studio grad show                                                       | students       | stage three (end 2021)       |
 
 ## Cost/Time Commitments
 
-**Ben**: 2 days/week (40% FTE) for 3 years (beginning 2020-end 2022). This includes:
+**Ben**: 2 days/week (40% FTE) for 3 years (beginning 2020-end 2022). This
+includes:
 
 1. managing the c/c/c studio advisory group
-2. building relationships with High Schools and recruiting students (from stage one)
+2. building relationships with High Schools and recruiting students (from stage
+   one)
 3. developing the curriculum (from stage one)
 4. running workshops (~monthly from stage two)
-3. delivering the weekly c/c/c studio session(s) (weekly from stage three)
+5. delivering the weekly c/c/c studio session(s) (weekly from stage three)
 
 The 0.4fte buyout associated with this fellowship will be used to cover 100% of
 my service component (currently 0.2fte) and half of my teaching component
@@ -392,8 +395,8 @@ my service component (currently 0.2fte) and half of my teaching component
 
 - giving up my role as student experience convenor (service)
 
-- handing [COMP2300](https://cs.anu.edu.au/courses/comp2300/) over to [Charles
-  Martin](http://charlesmartin.com.au)
+- handing [COMP2300](https://cs.anu.edu.au/courses/comp2300/) over to
+  [Charles Martin](http://charlesmartin.com.au)
 
 - moving from being the only lecturer to leading a two-lecturer teaching team
   for [COMP1720](https://cs.anu.edu.au/courses/comp1720/) and .
@@ -409,6 +412,7 @@ way of respecting their contribution & expertise. Exact hourly rate depends on
 qualifications & experience.
 
 **Equipment**: computational art & music supplies, including:
+
 - portable music PA for running music workshops in schools
 - high-resolution monitors for display of digital artworks
 - software licences

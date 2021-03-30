@@ -1,9 +1,21 @@
 <section
-    {% if include.bgcol %}data-background-color="{{ include.bgcol }}"{% endif %}
-    {% if include.id %}id="{{ include.id }}"{% endif %}
-    data-background-image='{{ "/assets/" | append: include.image | relative_url }}'
-    data-background-size='{{ include.bgsize | default: "cover" }}'
-    data-background-position='{{ include.bgpos | default: "center" }}'
+  {%
+  if
+  include.bgcol
+  %}data-background-color="{{ include.bgcol }}"
+  {%
+  endif
+  %}
+  {%
+  if
+  include.id
+  %}id="{{ include.id }}"
+  {%
+  endif
+  %}
+  data-background-image='{{ "/assets/" | append: include.image | relative_url }}'
+  data-background-size='{{ include.bgsize | default: "cover" }}'
+  data-background-position='{{ include.bgpos | default: "center" }}'
 >
   {% if include.heading %}
   <h2>{{include.heading}}</h2>

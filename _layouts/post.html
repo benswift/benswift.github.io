@@ -5,7 +5,5 @@ layout: default
 <article>
   <p class="post-date">{{ page.date | date: "%d %b '%y" }}</p>
   <h1>{{ page.title | markdownify }}</h1>
-  {% include taglist.html tags=page.tags %}
-  {{ content }}
+  {% include taglist.html tags=page.tags %} {{ content }}
 </article>
-

@@ -6,10 +6,10 @@ layout: page
 permalink: /talks/ozchi-07/
 ---
 
-I gave my first ever conference presentation at [OzCHI
-2007](http://www.ozchi.org/ozchi2007/) on the work I did during my honours year.
-No funky HTML slides for this (I was way less web-savvy back then) but here are
-some pdf slides. There's a [paper in the references section]({%
+I gave my first ever conference presentation at
+[OzCHI 2007](http://www.ozchi.org/ozchi2007/) on the work I did during my
+honours year. No funky HTML slides for this (I was way less web-savvy back then)
+but here are some pdf slides. There's a [paper in the references section]({%
 link research.md %}#swiftMindmodulatedMusicMind2007) as well.
 
 Sometimes it's fun to look back and see how far one has come in their research

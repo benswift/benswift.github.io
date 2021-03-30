@@ -5,8 +5,8 @@ tags: extempore
 
 [libsndfile](https://github.com/erikd/libsndfile/) is "a C library for reading
 and writing files containing sampled audio data", and it's pretty great. Here's
-a quick crash-course on using [Extempore's libsndfile
-bindings](https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm)
+a quick crash-course on using
+[Extempore's libsndfile bindings](https://github.com/digego/extempore/blob/master/libs/external/sndfile.xtm)
 to read, process and write audio data files.
 
 ## Loading the xtlang wrappers for the sndfile library functions
@@ -14,14 +14,14 @@ to read, process and write audio data files.
 Once you've got Extempore up and running, the first thing to do is to load the
 libsndfile wrapper functions:
 
-``` xtlang
+```xtlang
 (sys:load "libs/external/sndfile.xtm")
 ```
 
 `libs/external/sndlib.xtm` contains `bind-lib` definitions for all[^pm-all] the
-functions in the libsndfile library (compare that file to the [C
-header](https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in) to see
-for yourself).
+functions in the libsndfile library (compare that file to the
+[C header](https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in) to
+see for yourself).
 
 [^pm-all]: well, _pretty much_ all
 
@@ -35,8 +35,8 @@ shared libs if you wanted to).
 
 ## Reading the audio file data into memory
 
-In a fairly common API design pattern, to get info about a sound file (length, channels,
-sample rate, format, etc.) we need to:
+In a fairly common API design pattern, to get info about a sound file (length,
+channels, sample rate, format, etc.) we need to:
 
 1. use `sf_open` to give us a pointer to the data structure which libsndfile
    uses to represent the audio file (a `SNDFILE*`)
@@ -50,10 +50,10 @@ for the data---and to do that, we need to know how many frames there are in the
 audio file, and how many channels per frame.
 
 Looking at the documentation (i.e. the comment above the function declaration in
-the C header file) for `SF_INFO` we see that the first (tuple index `0`) and third
-(tuple index `2`) fields are going to be useful
+the C header file) for `SF_INFO` we see that the first (tuple index `0`) and
+third (tuple index `2`) fields are going to be useful
 
-``` c
+```c
 struct SF_INFO
 {   sf_count_t  frames ;        /* Used to be called samples.  Changed to avoid confusion. */
     int         samplerate ;
@@ -67,7 +67,7 @@ struct SF_INFO
 Using all this info, then, we can make a simple xtlang function to return the
 number of frames
 
-``` xtlang
+```xtlang
 (bind-func get_number_of_frames
   (lambda (filename)
     (let ((info:SF_INFO* (salloc))
@@ -91,7 +91,7 @@ you'll need to check that `sf_open` doesn't return `null`.
 We can do the exact same thing to get the number of channels per frame (just
 returning a different element of the `info` struct):
 
-``` xtlang
+```xtlang
 (bind-func get_number_of_channels
   (lambda (filename)
     (let ((info:SF_INFO* (salloc))
@@ -114,7 +114,7 @@ point values).
 First, set up a DSP callback---just playing white noise so that we can check
 that it's working.
 
-``` xtlang
+```xtlang
 (bind-func dsp:DSP
   (lambda (in time chan dat)
     (random .1)))
@@ -135,7 +135,7 @@ channels matches the number of channels in the audio file).
 
 [^sample]: `SAMPLE` is an alias for `float` by default
 
-``` xtlang
+```xtlang
 (bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
 
   (let ((filename "assets/samples/piano/60.wav")
@@ -184,7 +184,7 @@ with white noise, then leave the next `22050` untouched, then replace the next
 something more (sonically) interesting; this is just an easy one to test (by
 ear) if it's working.
 
-``` xtlang
+```xtlang
 (bind-func munge_audio_data
   (lambda (data:SAMPLE* nsamp)
     (doloop (i nsamp)
@@ -196,7 +196,7 @@ The final thing to do is to create _another_ `SNDFILE` object (this time opened
 in `SFM_WRITE` mode) where we'll write the audio data. We'll make some small
 additions to our `dsp` closure:
 
-``` xtlang
+```xtlang
 (bind-func dsp:DSP 10000000 ;; allocate plenty of memory for our DSP closure
 
   (let ((filename "assets/samples/piano/60.wav")
@@ -236,11 +236,9 @@ docs---there are lots of options.
 ## Wrapping up
 
 There's lots more to explore, but I'll leave it here for now. If you've got any
-comments, then get in touch on the [Extempore mailing
-list](mailto:extemporelang@googlegroups.com).
+comments, then get in touch on the
+[Extempore mailing list](mailto:extemporelang@googlegroups.com).
 
-[c-xtlang-interop]:
-    There's more detail on how this works in the
-    [Extempore
-    docs](https://extemporelang.github.io/docs/reference/c-xtlang-interop/)
-    if you're interested.
+[c-xtlang-interop]: There's more detail on how this works in the
+[Extempore docs](https://extemporelang.github.io/docs/reference/c-xtlang-interop/)
+if you're interested.

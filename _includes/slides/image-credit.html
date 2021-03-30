@@ -1,11 +1,7 @@
 <div class="image-credit" style="{{include.style}}">
-
-  {% for attr in include %}
-    {% unless attr[0] == "style" %}
+  {% for attr in include %} {% unless attr[0] == "style" %}
 
   <p class="image-credit-{{ attr[0] }}">{{ attr[1] }}</p>
 
-	{% endunless %}
-  {% endfor %}
-
+  {% endunless %} {% endfor %}
 </div>

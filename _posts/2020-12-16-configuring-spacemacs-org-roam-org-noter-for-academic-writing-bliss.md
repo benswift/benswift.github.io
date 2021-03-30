@@ -20,9 +20,9 @@ extensions for managing one's paper library
 reading/annotating pdf files
 ([org-noter](https://github.com/weirdNox/org-noter)). When combined, this all
 seems like having academic writing superpowers compared to my "sit around and
-hope I remember the reference" approach. See e.g. [Noorah Alhasan's EmacsConf
-2020 talk](https://emacsconf.org/2020/talks/17/) for more detailed info on this
-workflow.
+hope I remember the reference" approach. See e.g.
+[Noorah Alhasan's EmacsConf 2020 talk](https://emacsconf.org/2020/talks/17/) for
+more detailed info on this workflow.
 
 {:.hl-para}
 
@@ -57,9 +57,10 @@ need these extra packages in `dotspacemacs-additional-packages`:
 - `org-noter`
 - `org-noter-pdftools`
 
-You'll also need to provide some extra layer `:variables` to the associated layers in
-`dotspacemacs-configuration-layers` (you could probably do this in config hooks
-or even in `spacemacs/user-config` as well---this is just how I did it).
+You'll also need to provide some extra layer `:variables` to the associated
+layers in `dotspacemacs-configuration-layers` (you could probably do this in
+config hooks or even in `spacemacs/user-config` as well---this is just how I did
+it).
 
 ```scheme
 (bibtex
