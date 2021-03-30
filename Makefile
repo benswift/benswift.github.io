@@ -25,3 +25,7 @@ push: commit-all
 	git push origin source
 	# now push the built files
 	cd $(BASE_HTML_DIR) && git push origin master
+
+prettier:
+	# will modify the files in place
+	prettier --write --prose-wrap always .
