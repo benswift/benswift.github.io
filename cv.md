@@ -177,7 +177,7 @@ I have also written and delivered the following courses:
 - **2016** Chair, _COMP1100 Review Committee_ (which examined the increasing
   failure & non-completion rate in our first-year CS course at the time)
 
-- **2015--2019** Student Experience Convenor, _ANU Research School of Computer
+- **2015--2019** _Student Experience Convenor, ANU Research School of Computer
   Science_ (where I worked at improving the experience of our students,
   especially those who might fall through the cracks of the other support
   structures in place within the School)
