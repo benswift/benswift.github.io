@@ -161,6 +161,8 @@ I have also written and delivered the following courses:
 
 ### ANU {#service-anu}
 
+- **2021** Leader, _CECS website redesign tiger team_
+
 - **2016--** Design Lead, [_Lucy Project_](https://gitlab.cecs.anu.edu.au/lucy)
   teaching & learning web infrastructure, including the [CECS Jekyll Course
   Website template](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
