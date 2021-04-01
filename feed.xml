@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-03-31T14:21:54+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-01T11:17:37+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;My institution now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS Teams&lt;/a&gt; for lots of
+things, including organising classes &amp;amp; communicating with students. It’s not
+perfect, but it’s not terrible, and the pros &amp;amp; cons of Teams as a pedagogical
+platform are best left for another post.&lt;/p&gt;
+
+&lt;p&gt;Even though we’re using MS Teams for class communication, it doesn’t integrate
+with our enrolment databases, so adding all the enrolled students into the
+class’s Teams site is either a frustrating, manual
+one-at-a-time-through-the-teams-app affair, or a &lt;em&gt;share the “join Team” link on
+some other communication channel and hope that you don’t get too many
+gatecrashers&lt;/em&gt; affair.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Until now&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here’s a snippet of &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;powershell&lt;/a&gt; code
+for bulk-adding students to a Team from a csv file&lt;sup id=&quot;fnref:brent&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:brent&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The only
+requirements are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;you can run a powershell on your machine&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the Team already exists (and you know the Team name)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;you’ve got a csv file which contains a column (with the heading &lt;code&gt;email&lt;/code&gt;)
+which contains each student’s email address&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here’s the script.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;# install the Teams module (if you haven&apos;t already)
+Install-Module -Name MicrosoftTeams
+Get-Module -ListAvailable -Name MicrosoftTeams
+
+# this step will take you to a login page in your browser,
+# you need to sign in to authorise your powershell session
+Connect-MicrosoftTeams
+
+# this line stores the team&apos;s GroupID into a variable
+$GroupID = (Get-Team -DisplayName &amp;lt;TEAM NAME&amp;gt;).GroupID
+
+# note: if you&apos;ve used a different csv filename, change it in the command below
+Import-Csv -Path emails.csv | foreach{Add-TeamUser -GroupId $GroupID -user $_.email}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you’re dealing with 500+ student classes, this can save you a &lt;em&gt;lot&lt;/em&gt; of
+time.&lt;/p&gt;
+
+&lt;p&gt;One more note: while powershell is primarily a Microsoft thing, you can run it
+on macOS or Linux as well. On my macOS machine I installed it through
+&lt;a href=&quot;https://brew.sh&quot;&gt;homebrew&lt;/a&gt; with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-plaintext&quot;&gt;brew install powershell
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;From the &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;powershell README.md&lt;/a&gt; it
+seems like there’s a package available for most Linux distros as well.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:brent&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;shout out to Brent Schuetze who first figured this out &lt;a href=&quot;#fnref:brent&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">My institution now uses MS Teams for lots of things, including organising classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible, and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another post.</summary></entry><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
 of&lt;/a&gt; + their &lt;a href=&quot;https://www.stats.govt.nz&quot;&gt;NZ
 counterparts&lt;/a&gt;) have updated the &lt;a href=&quot;https://www.arc.gov.au/grants/grant-application/classification-codes-rfcd-seo-and-anzsic-codes&quot;&gt;&lt;em&gt;Field of Research&lt;/em&gt;
 codes&lt;/a&gt;
@@ -26488,7 +26555,111 @@ for the canonical version. ABS people, if I’ve done something naughty with
 this publicly-available data then please let me know and I’ll make it right. &lt;a href=&quot;#fnref:hosting&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="research" /><summary type="html">The Australian Research Council (well, technically the Australian Bureau of + their NZ counterparts) have updated the Field of Research codes which Aussie academics use to classify their work.[^interdisciplinary-complaint]</summary></entry><entry><title type="html">How to cite code? Leading by example</title><link href="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/" rel="alternate" type="text/html" title="How to cite code? Leading by example" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/">&lt;p&gt;In our &lt;a href=&quot;https://cs.anu.edu.au/hub/reading-group/&quot;&gt;Computing Education Reading
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="research" /><summary type="html">The Australian Research Council (well, technically the Australian Bureau of + their NZ counterparts) have updated the Field of Research codes which Aussie academics use to classify their work.[^interdisciplinary-complaint]</summary></entry><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
+for dissertations and other reports, which is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;complicated (more than 20 separate files!)&lt;/li&gt;
+  &lt;li&gt;buggy; (by default it uses multiple conflicting packages, so that even a
+“clean” build produces a bunch of warnings)&lt;/li&gt;
+  &lt;li&gt;for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
+bummer (even if it is probably a worthwhile skill in the long haul)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When I wrote my PhD thesis back in the day I created my &lt;a href=&quot;https://github.com/benswift/academic-thesis-template&quot;&gt;own LaTeX
+template&lt;/a&gt;. Since then,
+I’ve been doing more and more of my writing in
+&lt;a href=&quot;https://www.markdownguide.org&quot;&gt;markdown&lt;/a&gt; rather than LaTeX, and I really enjoy
+the simplicity. You lose a little bit of control, but being limited to the
+features that markdown offers is actually really helpful if you’re as prone to
+yak shaving as I am.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-simple-pandoc-powered-markdown--pdf-document-template&quot;&gt;A simple Pandoc-powered markdown ⇒ pdf document template&lt;/h2&gt;
+
+&lt;p&gt;Because academic publishing is still primarily a world of bland simulacra, being
+able to create a &lt;code&gt;.pdf&lt;/code&gt; of one’s writing is essential. When writing in markdown
+in my &lt;a href=&quot;https://www.spacemacs.org&quot;&gt;favourite text editor&lt;/a&gt; I can turn it into a
+pdf using Pandoc. As &lt;a href=&quot;https://jeffreymoro.com/blog/2020-09-21-how-i-write/&quot;&gt;Jeffrey Moro so eloquently puts
+it&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;pandoc is amazing. I basically think it redeems computers. It can take
+basically any kind of text and turn it into other kinds of text. In my
+situation, it turns markdown files into…pretty much anything.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Still, getting from “writing my notes in a markdown file” to “having a
+nice-looking pdf for submission/printing” still has a few magical steps, so I’ve
+created a template project on GitHub which puts these pieces together in a
+sensible way. There are two “flavours”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/master&quot;&gt;regular
+version&lt;/a&gt;
+(when you don’t need academic citations)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex&quot;&gt;bibtex
+version&lt;/a&gt;
+(when you do need academic citations)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m pumped to be able to share this template with the world under a permissive
+MIT licence. The project &lt;code&gt;README.md&lt;/code&gt; has all the details, but the main goodies
+this project provides are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;a &lt;code&gt;Makefile&lt;/code&gt; so that you don’t have to remember the arcane Pandoc CLI options
+for creating nice pdfs (via LaTeX)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a &lt;code&gt;pando-template.tex&lt;/code&gt; which has some (I think) sane defaults for the way the
+output pdf will look, but more importantly is easily there so that you can
+hack it the way you like it (which is sometimes challenging when working with
+Pandoc)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(on the &lt;code&gt;bibtex&lt;/code&gt; branch) a working example of how to include citations (from a
+BibTeX &lt;code&gt;.bib&lt;/code&gt; file, which you can create &amp;amp; manage however you like)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You’ll still need LaTeX installed on your machine (because that’s what it uses
+under the hood) but one other nice thing is that Pandoc handles all the
+&lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;bibtex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt; shenanigans for you (without
+needing external scripts like &lt;code&gt;LaTeXMk&lt;/code&gt;). If there are errors in your markup,
+then the error messages can still be a bit inscrutable, but no worse than
+regular LaTeX ones (maybe even a bit nicer because Pandoc tries to trim the
+irrelevant guff and just provide the actual error message).&lt;/p&gt;
+
+&lt;h2 id=&quot;inline-latex-for-greater-control&quot;&gt;Inline LaTeX for greater control&lt;/h2&gt;
+
+&lt;p&gt;One thing which is surprisingly useful is the way that Pandoc passes latex
+fragments “straight through”. As per the &lt;code&gt;README.md&lt;/code&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This template allows you to write most of your content in markdown, but then
+“drop down” into LaTeX when you need more control over the output (since
+pandoc passes raw LaTeX code straight through). This is basically the same
+workflow for which markdown was invented, except in that case for HTML.&lt;/p&gt;
+
+  &lt;p&gt;If the output you want is going to require lots of very specific control over
+the layout then you’re probably better off just writing in LaTeX directly, but
+if you want to mostly focus on the content but occasionally have more control
+over the way it’s displayed, sprinkling your markdown files with LaTeX can be
+a useful option.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I find myself using this a fair bit, and it’s still nicer than having to work in
+LaTeX directly. One recent example: I needed some coloured boxes around my text,
+and so by including &lt;code&gt;\usepackage{tcolorbox}&lt;/code&gt; in the &lt;code&gt;pandoc-template.tex&lt;/code&gt; I was
+able to use the &lt;code&gt;\begin{tcolorbox} ... \end{tcolorbox}&lt;/code&gt; environment in my &lt;code&gt;.md&lt;/code&gt;
+file, and got the nice coloured boxes in the pdf output.&lt;/p&gt;
+
+&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports, which is:</summary></entry><entry><title type="html">How to cite code? Leading by example</title><link href="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/" rel="alternate" type="text/html" title="How to cite code? Leading by example" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/">&lt;p&gt;In our &lt;a href=&quot;https://cs.anu.edu.au/hub/reading-group/&quot;&gt;Computing Education Reading
 Group&lt;/a&gt; yesterday we looked at Sheard
 et. al.’s paper on &lt;a href=&quot;https://doi.org/10.1145/3059009.3059064&quot;&gt;&lt;em&gt;Strategies for Maintaining Academic Integrity in
 First-Year&lt;/em&gt;&lt;/a&gt; from ITiCSE ‘17. It was a
@@ -26637,111 +26808,7 @@ the “whoops, you forgot to commit the file” problems, as well as minimising
 any manual “data cleaning” that my tutors &amp;amp; I have to do post-submission. &lt;a href=&quot;#fnref:autograding&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In our Computing Education Reading Group yesterday we looked at Sheard et. al.’s paper on Strategies for Maintaining Academic Integrity in First-Year from ITiCSE ‘17. It was a great discussion, with lots of new questions raised as directions for future work.</summary></entry><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
-for dissertations and other reports, which is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;complicated (more than 20 separate files!)&lt;/li&gt;
-  &lt;li&gt;buggy; (by default it uses multiple conflicting packages, so that even a
-“clean” build produces a bunch of warnings)&lt;/li&gt;
-  &lt;li&gt;for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
-bummer (even if it is probably a worthwhile skill in the long haul)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When I wrote my PhD thesis back in the day I created my &lt;a href=&quot;https://github.com/benswift/academic-thesis-template&quot;&gt;own LaTeX
-template&lt;/a&gt;. Since then,
-I’ve been doing more and more of my writing in
-&lt;a href=&quot;https://www.markdownguide.org&quot;&gt;markdown&lt;/a&gt; rather than LaTeX, and I really enjoy
-the simplicity. You lose a little bit of control, but being limited to the
-features that markdown offers is actually really helpful if you’re as prone to
-yak shaving as I am.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-simple-pandoc-powered-markdown--pdf-document-template&quot;&gt;A simple Pandoc-powered markdown ⇒ pdf document template&lt;/h2&gt;
-
-&lt;p&gt;Because academic publishing is still primarily a world of bland simulacra, being
-able to create a &lt;code&gt;.pdf&lt;/code&gt; of one’s writing is essential. When writing in markdown
-in my &lt;a href=&quot;https://www.spacemacs.org&quot;&gt;favourite text editor&lt;/a&gt; I can turn it into a
-pdf using Pandoc. As &lt;a href=&quot;https://jeffreymoro.com/blog/2020-09-21-how-i-write/&quot;&gt;Jeffrey Moro so eloquently puts
-it&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;pandoc is amazing. I basically think it redeems computers. It can take
-basically any kind of text and turn it into other kinds of text. In my
-situation, it turns markdown files into…pretty much anything.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Still, getting from “writing my notes in a markdown file” to “having a
-nice-looking pdf for submission/printing” still has a few magical steps, so I’ve
-created a template project on GitHub which puts these pieces together in a
-sensible way. There are two “flavours”:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/master&quot;&gt;regular
-version&lt;/a&gt;
-(when you don’t need academic citations)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex&quot;&gt;bibtex
-version&lt;/a&gt;
-(when you do need academic citations)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I’m pumped to be able to share this template with the world under a permissive
-MIT licence. The project &lt;code&gt;README.md&lt;/code&gt; has all the details, but the main goodies
-this project provides are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;a &lt;code&gt;Makefile&lt;/code&gt; so that you don’t have to remember the arcane Pandoc CLI options
-for creating nice pdfs (via LaTeX)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a &lt;code&gt;pando-template.tex&lt;/code&gt; which has some (I think) sane defaults for the way the
-output pdf will look, but more importantly is easily there so that you can
-hack it the way you like it (which is sometimes challenging when working with
-Pandoc)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(on the &lt;code&gt;bibtex&lt;/code&gt; branch) a working example of how to include citations (from a
-BibTeX &lt;code&gt;.bib&lt;/code&gt; file, which you can create &amp;amp; manage however you like)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You’ll still need LaTeX installed on your machine (because that’s what it uses
-under the hood) but one other nice thing is that Pandoc handles all the
-&lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;bibtex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt; shenanigans for you (without
-needing external scripts like &lt;code&gt;LaTeXMk&lt;/code&gt;). If there are errors in your markup,
-then the error messages can still be a bit inscrutable, but no worse than
-regular LaTeX ones (maybe even a bit nicer because Pandoc tries to trim the
-irrelevant guff and just provide the actual error message).&lt;/p&gt;
-
-&lt;h2 id=&quot;inline-latex-for-greater-control&quot;&gt;Inline LaTeX for greater control&lt;/h2&gt;
-
-&lt;p&gt;One thing which is surprisingly useful is the way that Pandoc passes latex
-fragments “straight through”. As per the &lt;code&gt;README.md&lt;/code&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This template allows you to write most of your content in markdown, but then
-“drop down” into LaTeX when you need more control over the output (since
-pandoc passes raw LaTeX code straight through). This is basically the same
-workflow for which markdown was invented, except in that case for HTML.&lt;/p&gt;
-
-  &lt;p&gt;If the output you want is going to require lots of very specific control over
-the layout then you’re probably better off just writing in LaTeX directly, but
-if you want to mostly focus on the content but occasionally have more control
-over the way it’s displayed, sprinkling your markdown files with LaTeX can be
-a useful option.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I find myself using this a fair bit, and it’s still nicer than having to work in
-LaTeX directly. One recent example: I needed some coloured boxes around my text,
-and so by including &lt;code&gt;\usepackage{tcolorbox}&lt;/code&gt; in the &lt;code&gt;pandoc-template.tex&lt;/code&gt; I was
-able to use the &lt;code&gt;\begin{tcolorbox} ... \end{tcolorbox}&lt;/code&gt; environment in my &lt;code&gt;.md&lt;/code&gt;
-file, and got the nice coloured boxes in the pdf output.&lt;/p&gt;
-
-&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports, which is:</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In our Computing Education Reading Group yesterday we looked at Sheard et. al.’s paper on Strategies for Maintaining Academic Integrity in First-Year from ITiCSE ‘17. It was a great discussion, with lots of new questions raised as directions for future work.</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
 Learning and
 Teaching&lt;/a&gt;,
 and they asked if they could syndicate it on their Interact blog—so you can
@@ -27131,100 +27198,4 @@ approach to answering my emails and doing work stuff will be &lt;a href=&quot;/b
 same as last time&lt;/a&gt;, so I’m sorry
 if you were relying on me for something work-related in the near future. I’ll be
 back in 2021 refreshed and ready to be part of the ANU CS team and the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;c/c/c
-studio&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">Our family has recently grown by one member. I’m proud and exhausted and happy; it’s a really wild (and mostly very nice) cocktail of feelings. If you follow me on twitter you might have already heard this exciting news.</summary></entry><entry><title type="html">mbsync v1.3.2 breaking change: `SubFolders` config required</title><link href="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/" rel="alternate" type="text/html" title="mbsync v1.3.2 breaking change: `SubFolders` config required" /><published>2020-07-17T00:00:00+10:00</published><updated>2020-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change</id><content type="html" xml:base="https://benswift.me/blog/2020/07/17/mbsync-v1-3-2-breaking-change/">&lt;p&gt;As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied
-user of the &lt;a href=&quot;https://www.djcbsoftware.nl/code/mu/&quot;&gt;mu&lt;/a&gt; email client. I even
-&lt;a href=&quot;https://github.com/djcb/mu/pull/1725&quot;&gt;wrote the latest CI infrastructure setup&lt;/a&gt;
-for the project as a way to give back to Dirk-Jan and the rest of the awesome mu
-team.&lt;/p&gt;
-
-&lt;p&gt;Anyway, mu doesn’t care how you get your email onto your machine (i.e. into your
-&lt;code&gt;~/Maildir&lt;/code&gt;), and so for that task I use
-&lt;a href=&quot;http://isync.sourceforge.net/mbsync.html&quot;&gt;isync/mbsync&lt;/a&gt; to download my mail
-(via IMAP) from &lt;a href=&quot;https://www.fastmail.com/&quot;&gt;fastmail&lt;/a&gt;. My fastmail &lt;a href=&quot;https://github.com/benswift/.dotfiles/blob/master/mbsyncrc&quot;&gt;config is
-online&lt;/a&gt; if you want
-to see how I set it all up.&lt;/p&gt;
-
-&lt;p&gt;Everything was working swimmingly, until a recent patch version update to mbsync
-(1.3.1 -&amp;gt; 1.3.2) broke things. All of a sudden, I started getting errors saying
-&lt;em&gt;Maildir error: found subfolder ‘INBOX/Sent Items’, but store ‘fastmail-local’
-does not specify SubFolders style&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;There was no mention of a breaking change relating to &lt;code&gt;SubFolders&lt;/code&gt; style in the
-&lt;a href=&quot;https://sourceforge.net/projects/isync/files/isync/1.3.2/&quot;&gt;v1.3.2 release
-notes&lt;/a&gt;, but a look at
-the manual with &lt;code&gt;man mbsync&lt;/code&gt; revealed this info:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;SubFolders&lt;/strong&gt; &lt;code&gt;Verbatim|Maildir++|Legacy&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;The on-disk folder naming style used for hierarchical mailboxes. This option
-has no effect when &lt;code&gt;Flatten&lt;/code&gt; is used. Suppose mailboxes with the canonical
-paths &lt;code&gt;top/sub/subsub&lt;/code&gt; and &lt;code&gt;INBOX/sub/subsub&lt;/code&gt;, the styles will yield the
-following on-disk paths:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;em&gt;Verbatim&lt;/em&gt; - &lt;code&gt;Path/top/sub/subsub&lt;/code&gt; and &lt;code&gt;Inbox/sub/subsub&lt;/code&gt; (this is the style
-you probably want to use)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;em&gt;Maildir++&lt;/em&gt; - &lt;code&gt;Inbox/.top.sub.subsub&lt;/code&gt; and &lt;code&gt;Inbox/..sub.subsub&lt;/code&gt; (this style
-is compatible with Courier and Dovecot - but note that the mailbox metadata
-format is not compatible). Note that attempts to set Path are rejected in
-this mode.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;em&gt;Legacy&lt;/em&gt; - &lt;code&gt;Path/top/.sub/.subsub&lt;/code&gt; and &lt;code&gt;Inbox/.sub/.subsub&lt;/code&gt; (this is
-mbsync’s historical style)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;em&gt;Default&lt;/em&gt;: unset; will error out when sub-folders are encountered&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;By setting &lt;code&gt;SubFolders Verbatim&lt;/code&gt; in my &lt;code&gt;.mbsyncrc&lt;/code&gt; things started working again.
-Hooray!&lt;/p&gt;
-
-&lt;p&gt;Of course, it might be the case that this was all documented somewhere, or that
-I’m just &lt;a href=&quot;https://knowyourmeme.com/memes/youre-doing-it-wrong&quot;&gt;doing it wrong&lt;/a&gt;.
-But I hope that this is helpful for anyone who runs into the same issue, because
-having your email break is &lt;em&gt;super&lt;/em&gt; frustrating; email is such a crucial part of
-my (and everyone’s) job, so it just needs to work.&lt;/p&gt;
-
-&lt;h3 id=&quot;bonus-pretty-mu4e-mbsync-filter&quot;&gt;Bonus: pretty mu4e mbsync filter&lt;/h3&gt;
-
-&lt;p&gt;If you are using the same mu &amp;amp; mbsync combo for email, then you might find the
-following elisp snippet handy. It does some cool tricks with the
-&lt;code&gt;mu4e~get-mail-process-filter&lt;/code&gt; so that the “in-progress” output from mu, which
-looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;C: 1/1  B: 0/0  M: +0/0 *0/0 #0/0  S: +0/0 *0/0 #0/0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;gets pretty colours in your &lt;code&gt;*mu4e-update*&lt;/code&gt; buffer. It’s purely cosmetic, but I
-care about that stuff, and you (maybe?) should too. Anyway, here’s the relevant
-elisp to put in your Emacs init file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-scheme&quot;&gt;(defun mu4e-pretty-mbsync-process-filter (proc msg)
-  (ignore-errors
-    (with-current-buffer (process-buffer proc)
-      (let ((inhibit-read-only t))
-        (delete-region (point-min) (point-max))
-        (insert (car (reverse (split-string msg &quot;\r&quot;))))
-        (when (re-search-backward &quot;\\(C:\\).*\\(B:\\).*\\(M:\\).*\\(S:\\)&quot;)
-          (add-face-text-property
-           (match-beginning 1) (match-end 1) &apos;font-lock-keyword-face)
-          (add-face-text-property
-           (match-beginning 2) (match-end 2) &apos;font-lock-function-name-face)
-          (add-face-text-property
-           (match-beginning 3) (match-end 3) &apos;font-lock-builtin-face)
-          (add-face-text-property
-           (match-beginning 4) (match-end 4) &apos;font-lock-type-face))))))
-
-(advice-add
- &apos;mu4e~get-mail-process-filter
- :override #&apos;mu4e-pretty-mbsync-process-filter)
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="emacs" /><summary type="html">As part of my ongoing quest to Emacs-all-the-things, I’m a long-time satisfied user of the mu email client. I even wrote the latest CI infrastructure setup for the project as a way to give back to Dirk-Jan and the rest of the awesome mu team.</summary></entry></feed>
+studio&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><summary type="html">Our family has recently grown by one member. I’m proud and exhausted and happy; it’s a really wild (and mostly very nice) cocktail of feelings. If you follow me on twitter you might have already heard this exciting news.</summary></entry></feed>

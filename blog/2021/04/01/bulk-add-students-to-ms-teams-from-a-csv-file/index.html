@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>A dynamic Reimagine logo | benswift.me</title>
+<title>Bulk-add students to MS Teams from a csv file | benswift.me</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="A dynamic Reimagine logo" />
+<meta property="og:title" content="Bulk-add students to MS Teams from a csv file" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info)." />
-<meta property="og:description" content="I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info)." />
-<link rel="canonical" href="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" />
-<meta property="og:url" content="https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/" />
+<meta name="description" content="My institution now uses MS Teams for lots of things, including organising classes &amp; communicating with students. It’s not perfect, but it’s not terrible, and the pros &amp; cons of Teams as a pedagogical platform are best left for another post." />
+<meta property="og:description" content="My institution now uses MS Teams for lots of things, including organising classes &amp; communicating with students. It’s not perfect, but it’s not terrible, and the pros &amp; cons of Teams as a pedagogical platform are best left for another post." />
+<link rel="canonical" href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" />
+<meta property="og:url" content="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-02-21T10:36:00+11:00" />
+<meta property="article:published_time" content="2021-04-01T00:00:00+11:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="A dynamic Reimagine logo" />
+<meta property="twitter:title" content="Bulk-add students to MS Teams from a csv file" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"A dynamic Reimagine logo","dateModified":"2019-02-21T10:36:00+11:00","datePublished":"2019-02-21T10:36:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/"},"url":"https://benswift.me/blog/2019/02/21/dynamic-reimagine-logo/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"I keep harping on about the Reimagine project because I’m super pumped about what it means for the way we do Engineering Computer Science here at the ANU (see here and here for more info).","@context":"https://schema.org"}</script>
+{"headline":"Bulk-add students to MS Teams from a csv file","dateModified":"2021-04-01T00:00:00+11:00","datePublished":"2021-04-01T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/"},"url":"https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"My institution now uses MS Teams for lots of things, including organising classes &amp; communicating with students. It’s not perfect, but it’s not terrible, and the pros &amp; cons of Teams as a pedagogical platform are best left for another post.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -66,60 +66,83 @@
 
 	  <main aria-label="Content">
 		<article>
-  <p class="post-date">21 Feb '19</p>
-  <h1><p>A dynamic Reimagine logo</p>
+  <p class="post-date">01 Apr '21</p>
+  <h1><p>Bulk-add students to MS Teams from a csv file</p>
 </h1>
   
 <p class="post-tag-container">
   
-  <a class="post-tag" href='/blog/tag/widgets'>
-	widgets
-  </a>
-  
-  <a class="post-tag" href='/blog/tag/reimagine'>
-	reimagine
-  </a>
-  
-  <a class="post-tag" href='/blog/tag/web'>
-	web
-  </a>
-  
 </p>
 
 
-  <p>I keep harping on about the <strong>Reimagine project</strong> because I’m super pumped
-about what it means for the way we do Engineering Computer Science here at the
-ANU (see <a href="/assets/pdf/reimagine-fellow-PD.pdf">here</a>
-and <a href="https://cecs.anu.edu.au/reimagine">here</a> for more info).</p>
+  <p>My institution now uses <a href="http://teams.microsoft.com">MS Teams</a> for lots of
+things, including organising classes &amp; communicating with students. It’s not
+perfect, but it’s not terrible, and the pros &amp; cons of Teams as a pedagogical
+platform are best left for another post.</p>
 
-<p>Reimagine branding is starting to go up around campus, so I decided to put
-together an interactive version of the logo (because giant vinyl prints are
-cool, but they don’t spin on mouse-over).</p>
+<p>Even though we’re using MS Teams for class communication, it doesn’t integrate
+with our enrolment databases, so adding all the enrolled students into the
+class’s Teams site is either a frustrating, manual
+one-at-a-time-through-the-teams-app affair, or a <em>share the “join Team” link on
+some other communication channel and hope that you don’t get too many
+gatecrashers</em> affair.</p>
 
-<p>It’s made with <a href="https://clojurescript.org">clojurescript</a> using
-<a href="https://reagent-project.github.io">Reagent</a>, and as always on my blog you can
-look at the
-<a href="https://github.com/benswift/benswift.github.io/blob/source/_cljs/reimagine_logo/src/reimagine_logo/core.cljs">source</a>
-to see how it works. If you want to really immerse yourself in the thing,
-there’s a fullsreen version <a href="/widgets/reimagine-logo/">here</a>.</p>
+<p><strong>Until now</strong>.</p>
 
-<div style="position:relative;padding-top:100%;margin:0;">
-  <iframe src="/widgets/reimagine-logo/" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-  </iframe>
-</div>
+<p>Here’s a snippet of <a href="https://github.com/powershell/powershell">powershell</a> code
+for bulk-adding students to a Team from a csv file<sup id="fnref:brent" role="doc-noteref"><a href="#fn:brent" class="footnote" rel="footnote">1</a></sup>. The only
+requirements are:</p>
 
-<p>If you’re looking to use this logo yourself in some other page, you could use an
-<code>&lt;iframe&gt;</code> like so:</p>
+<ol>
+  <li>
+    <p>you can run a powershell on your machine</p>
+  </li>
+  <li>
+    <p>the Team already exists (and you know the Team name)</p>
+  </li>
+  <li>
+    <p>you’ve got a csv file which contains a column (with the heading <code>email</code>)
+which contains each student’s email address</p>
+  </li>
+</ol>
 
-<pre><code class="language-html">&lt;div style="position:relative;padding-top:100%;margin:0;"&gt;
-  &lt;iframe
-    src="https://benswift.me/widgets/reimagine-logo/"
-    frameborder="0"
-    style="position:absolute;top:0;left:0;width:100%;height:100%;"
-  &gt;
-  &lt;/iframe&gt;
-&lt;/div&gt;
+<p>Here’s the script.</p>
+
+<pre><code class="language-powershell"># install the Teams module (if you haven't already)
+Install-Module -Name MicrosoftTeams
+Get-Module -ListAvailable -Name MicrosoftTeams
+
+# this step will take you to a login page in your browser,
+# you need to sign in to authorise your powershell session
+Connect-MicrosoftTeams
+
+# this line stores the team's GroupID into a variable
+$GroupID = (Get-Team -DisplayName &lt;TEAM NAME&gt;).GroupID
+
+# note: if you've used a different csv filename, change it in the command below
+Import-Csv -Path emails.csv | foreach{Add-TeamUser -GroupId $GroupID -user $_.email}
 </code></pre>
+
+<p>When you’re dealing with 500+ student classes, this can save you a <em>lot</em> of
+time.</p>
+
+<p>One more note: while powershell is primarily a Microsoft thing, you can run it
+on macOS or Linux as well. On my macOS machine I installed it through
+<a href="https://brew.sh">homebrew</a> with</p>
+
+<pre><code class="language-plaintext">brew install powershell
+
+</code></pre>
+
+<p>From the <a href="https://github.com/powershell/powershell">powershell README.md</a> it
+seems like there’s a package available for most Linux distros as well.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:brent" role="doc-endnote">
+      <p>shout out to Brent Schuetze who first figured this out <a href="#fnref:brent" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </article>
 
@@ -170,8 +193,8 @@ there’s a fullsreen version <a href="/widgets/reimagine-logo/">here</a>.</p>
   <!-- open source humblebrag -->
   <p>
 	site revision <code>2a8baedd7</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/2a8baedd7/_posts/2019-02-21-dynamic-reimagine-logo.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-02-21-dynamic-reimagine-logo.md">page history</a>
+	<a href="https://github.com/benswift/benswift.github.io/blob/2a8baedd7/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
