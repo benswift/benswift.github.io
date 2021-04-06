@@ -33,12 +33,12 @@ here for your browsing pleasure.[^hosting]
 ## 2020 ANZRC Field of Research (FoR) Codes
 
 <style>
-#FoR-Codes-2020 tr.division {
+#FoR-Codes-2020 tr.division-row {
   border-top: 2px solid #be2edd;
   font-weight: 900;
   font-size: 1.1em;
 }
-#FoR-Codes-2020 tr.group {
+#FoR-Codes-2020 tr.group-row {
   border-top: 1px solid #be2edd;
   font-weight: 900;
 }
@@ -52,9 +52,9 @@ here for your browsing pleasure.[^hosting]
   {% for code in site.data.FoR-Codes-2020 %}
     <tr
     {% if code.Division != nil %}
-    class="division"
+    class="division-row"
     {% elsif code.Group != nil %}
-    class="group"
+    class="group-row"
     {% endif %}
     >
     {% for value in code %}
