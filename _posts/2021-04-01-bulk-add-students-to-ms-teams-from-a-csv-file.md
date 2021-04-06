@@ -26,7 +26,7 @@ Too much manual work---**there's gotta be a better way**.
 MS Teams doesn't have a UI button for "add team members from [csv
 file](https://en.wikipedia.org/wiki/Comma-separated_values)". The app _is_
 scriptable, but only via a [PowerShell
-module](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-powershell-overview).
+module](https://docs.microsoft.com/en-au/MicrosoftTeams/teams-powershell-overview).
 So, I (& others[^brent]) came up with a snippet of
 [PowerShell](https://github.com/powershell/powershell) code for bulk-adding
 students to a Team from a csv file.
