@@ -42,13 +42,23 @@ here for your browsing pleasure.[^hosting]
   border-top: 1px solid #be2edd;
   font-weight: 900;
 }
+#FoR-Codes-2020 .search {
+  width: 100%;
+  line-height: 1.6;
+  font-size: 1rem;
+  padding: 0.2em;
+  border: 1pt solid #be2edd#;
+  border-radius: 3px;
+}
 </style>
 
-<table id="FoR-Codes-2020">
+<div id="FoR-Codes-2020">
+<input class="search" placeholder="type to filter FoR codes..." />
+<table>
   <thead>
     <tr><th>Division</th><th>Group</th><th>Field</th><th>Description</th></tr>
   </thead>
-  <tbody>
+  <tbody class="list">
   {% for code in site.data.FoR-Codes-2020 %}
     <tr
     {% if code.Division != nil %}
@@ -58,9 +68,16 @@ here for your browsing pleasure.[^hosting]
     {% endif %}
     >
     {% for value in code %}
-      <td>{{ value[1] }}</td>
+      <td class="{{ value[0] }}">{{ value[1] }}</td>
     {% endfor %}
     </tr>
   {% endfor %}
   </tbody>
 </table>
+</div>
+
+<script src="{% link assets/js/list.min.js %}" type="text/javascript"></script>
+
+<script type="text/javascript">
+  const forCodeList = new List("FoR-Codes-2020", {valueNames: ["Division", "Group", "Field", "Description"]});
+</script>
