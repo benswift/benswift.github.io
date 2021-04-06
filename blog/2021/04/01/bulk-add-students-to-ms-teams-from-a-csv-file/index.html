@@ -72,22 +72,31 @@
   
 <p class="post-tag-container">
   
+  <a class="post-tag" href='/blog/tag/tools'>
+	tools
+  </a>
+  
 </p>
 
 
-  <p>My institution now uses <a href="http://teams.microsoft.com">MS Teams</a> for lots of
-things, including organising classes &amp; communicating with students. It’s not
-perfect, but it’s not terrible, and the pros &amp; cons of Teams as a pedagogical
-platform are best left for another post.</p>
+  <p><a href="https://anu.edu.au">My institution</a> now uses <a href="http://teams.microsoft.com">MS
+Teams</a> for lots of things, including organising
+classes &amp; communicating with students. It’s not perfect, but it’s not terrible,
+and the pros &amp; cons of Teams as a pedagogical platform are best left for another
+post.</p>
 
-<p>Even though we’re using MS Teams for class communication, it doesn’t integrate
-with our enrolment databases, so adding all the enrolled students into the
-class’s Teams site is either a frustrating, manual
-one-at-a-time-through-the-teams-app affair, or a <em>share the “join Team” link on
-some other communication channel and hope that you don’t get too many
-gatecrashers</em> affair.</p>
+<p>This post is about one particular pain point in every lecturer’s workflow: even
+though we’re using MS Teams for class communication, it doesn’t integrate with
+our enrolment databases. This means that to add all the enrolled students into
+the class’s Teams site you can either:</p>
 
-<p><strong>Until now</strong>.</p>
+<ul>
+  <li>add them manually, one-at-a-time, through the Teams app; or</li>
+  <li>share the “join Team” link on some other communication channel and manually
+weed out the gatecrashers</li>
+</ul>
+
+<h2 id="until-now">…until now.</h2>
 
 <p>Here’s a snippet of <a href="https://github.com/powershell/powershell">powershell</a> code
 for bulk-adding students to a Team from a csv file<sup id="fnref:brent" role="doc-noteref"><a href="#fn:brent" class="footnote" rel="footnote">1</a></sup>. The only
@@ -95,7 +104,7 @@ requirements are:</p>
 
 <ol>
   <li>
-    <p>you can run a powershell on your machine</p>
+    <p>you can run powershell on your machine</p>
   </li>
   <li>
     <p>the Team already exists (and you know the Team name)</p>
@@ -120,18 +129,18 @@ Connect-MicrosoftTeams
 $GroupID = (Get-Team -DisplayName &lt;TEAM NAME&gt;).GroupID
 
 # note: if you've used a different csv filename, change it in the command below
-Import-Csv -Path emails.csv | foreach{Add-TeamUser -GroupId $GroupID -user $_.email}
+Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.email}
 </code></pre>
 
 <p>When you’re dealing with 500+ student classes, this can save you a <em>lot</em> of
 time.</p>
 
-<p>One more note: while powershell is primarily a Microsoft thing, you can run it
-on macOS or Linux as well. On my macOS machine I installed it through
-<a href="https://brew.sh">homebrew</a> with</p>
+<p>If you’re worriedly thinking “that’d be awesome… if I used Windows”, then I
+have some good news: while powershell is primarily a Microsoft thing, it’s on
+macOS and Linux as well. On my macOS machine I installed it through
+<a href="https://brew.sh">homebrew</a> with:</p>
 
 <pre><code class="language-plaintext">brew install powershell
-
 </code></pre>
 
 <p>From the <a href="https://github.com/powershell/powershell">powershell README.md</a> it
@@ -192,8 +201,8 @@ seems like there’s a package available for most Linux distros as well.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>c2835fb89</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/c2835fb89/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">source</a>,
+	site revision <code>125e5811a</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/125e5811a/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>

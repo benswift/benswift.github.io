@@ -1,16 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-01T14:20:42+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;My institution now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS Teams&lt;/a&gt; for lots of
-things, including organising classes &amp;amp; communicating with students. It’s not
-perfect, but it’s not terrible, and the pros &amp;amp; cons of Teams as a pedagogical
-platform are best left for another post.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-06T12:57:49+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
+Teams&lt;/a&gt; for lots of things, including organising
+classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible,
+and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another
+post.&lt;/p&gt;
 
-&lt;p&gt;Even though we’re using MS Teams for class communication, it doesn’t integrate
-with our enrolment databases, so adding all the enrolled students into the
-class’s Teams site is either a frustrating, manual
-one-at-a-time-through-the-teams-app affair, or a &lt;em&gt;share the “join Team” link on
-some other communication channel and hope that you don’t get too many
-gatecrashers&lt;/em&gt; affair.&lt;/p&gt;
+&lt;p&gt;This post is about one particular pain point in every lecturer’s workflow: even
+though we’re using MS Teams for class communication, it doesn’t integrate with
+our enrolment databases. This means that to add all the enrolled students into
+the class’s Teams site you can either:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Until now&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;add them manually, one-at-a-time, through the Teams app; or&lt;/li&gt;
+  &lt;li&gt;share the “join Team” link on some other communication channel and manually
+weed out the gatecrashers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;until-now&quot;&gt;…until now.&lt;/h2&gt;
 
 &lt;p&gt;Here’s a snippet of &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;powershell&lt;/a&gt; code
 for bulk-adding students to a Team from a csv file&lt;sup id=&quot;fnref:brent&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:brent&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The only
@@ -18,7 +23,7 @@ requirements are:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;you can run a powershell on your machine&lt;/p&gt;
+    &lt;p&gt;you can run powershell on your machine&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;the Team already exists (and you know the Team name)&lt;/p&gt;
@@ -43,18 +48,18 @@ Connect-MicrosoftTeams
 $GroupID = (Get-Team -DisplayName &amp;lt;TEAM NAME&amp;gt;).GroupID
 
 # note: if you&apos;ve used a different csv filename, change it in the command below
-Import-Csv -Path emails.csv | foreach{Add-TeamUser -GroupId $GroupID -user $_.email}
+Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.email}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;When you’re dealing with 500+ student classes, this can save you a &lt;em&gt;lot&lt;/em&gt; of
 time.&lt;/p&gt;
 
-&lt;p&gt;One more note: while powershell is primarily a Microsoft thing, you can run it
-on macOS or Linux as well. On my macOS machine I installed it through
-&lt;a href=&quot;https://brew.sh&quot;&gt;homebrew&lt;/a&gt; with&lt;/p&gt;
+&lt;p&gt;If you’re worriedly thinking “that’d be awesome… if I used Windows”, then I
+have some good news: while powershell is primarily a Microsoft thing, it’s on
+macOS and Linux as well. On my macOS machine I installed it through
+&lt;a href=&quot;https://brew.sh&quot;&gt;homebrew&lt;/a&gt; with:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-plaintext&quot;&gt;brew install powershell
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;From the &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;powershell README.md&lt;/a&gt; it
@@ -65,7 +70,7 @@ seems like there’s a package available for most Linux distros as well.&lt;/p&g
       &lt;p&gt;shout out to Brent Schuetze who first figured this out &lt;a href=&quot;#fnref:brent&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">My institution now uses MS Teams for lots of things, including organising classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible, and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another post.</summary></entry><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html">My institution now uses MS Teams for lots of things, including organising classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible, and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another post.</summary></entry><entry><title type="html">ANZSRC FoR Codes 2020 edition</title><link href="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/" rel="alternate" type="text/html" title="ANZSRC FoR Codes 2020 edition" /><published>2021-03-18T00:00:00+11:00</published><updated>2021-03-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition</id><content type="html" xml:base="https://benswift.me/blog/2021/03/18/anzsrc-for-codes-2020-edition/">&lt;p&gt;The Australian Research Council (well, technically the &lt;a href=&quot;https://www.abs.gov.au&quot;&gt;Australian Bureau
 of&lt;/a&gt; + their &lt;a href=&quot;https://www.stats.govt.nz&quot;&gt;NZ
 counterparts&lt;/a&gt;) have updated the &lt;a href=&quot;https://www.arc.gov.au/grants/grant-application/classification-codes-rfcd-seo-and-anzsic-codes&quot;&gt;&lt;em&gt;Field of Research&lt;/em&gt;
 codes&lt;/a&gt;
