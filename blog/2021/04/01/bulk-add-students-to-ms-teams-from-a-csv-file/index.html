@@ -104,7 +104,7 @@ weed out the gatecrashers</p>
 
 <p>MS Teams doesn’t have a UI button for “add team members from <a href="https://en.wikipedia.org/wiki/Comma-separated_values">csv
 file</a>”. The app <em>is</em>
-scriptable, but only via a <a href="https://docs.microsoft.com/en-us/MicrosoftTeams/teams-powershell-overview">PowerShell
+scriptable, but only via a <a href="https://docs.microsoft.com/en-au/MicrosoftTeams/teams-powershell-overview">PowerShell
 module</a>.
 So, I (&amp; others<sup id="fnref:brent" role="doc-noteref"><a href="#fn:brent" class="footnote" rel="footnote">1</a></sup>) came up with a snippet of
 <a href="https://github.com/powershell/powershell">PowerShell</a> code for bulk-adding
@@ -128,6 +128,7 @@ which contains each student’s email address</p>
 <h2 id="powershell-script">PowerShell script</h2>
 
 <pre><code class="language-powershell"># install the Teams module (if you haven't already)
+# this only needs to be done once
 Install-Module -Name MicrosoftTeams
 Get-Module -ListAvailable -Name MicrosoftTeams
 
@@ -135,15 +136,20 @@ Get-Module -ListAvailable -Name MicrosoftTeams
 # you need to sign in to authorise your PowerShell session
 Connect-MicrosoftTeams
 
-# this line stores the team's GroupID into a variable
-$GroupID = (Get-Team -DisplayName &lt;TEAM NAME&gt;).GroupID
+# store the team's GroupID into a variable
+# replace "My Team Name" with the name of your team
+$GroupID = (Get-Team -DisplayName "My Team Name").GroupID
 
 # note: if you've used a different csv filename, change it in the command below
 Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.email}
 </code></pre>
 
 <p>When you’re dealing with 500+ student classes, this can save you a <em>lot</em> of
-time.</p>
+time. And since trying to add a student who’s already a group member is a no-op,
+you can just re-run the script with an updated <code>emails.csv</code> file if the class
+list changes. This won’t remove students who have unenrolled, but there’s a
+<code>Remove-TeamUser</code> command as well—so changing the script to unenroll students
+from a csv file is pretty trivial.</p>
 
 <p>If you’re worriedly thinking “that’d be awesome… if I used Windows”, then I
 have some good news: while PowerShell is primarily a Microsoft thing, it’s on
@@ -211,8 +217,8 @@ seems like there’s a package available for most Linux distros as well.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>a8a3f7040</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/a8a3f7040/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">source</a>,
+	site revision <code>2137c68ad</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/2137c68ad/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
