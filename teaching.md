@@ -41,7 +41,7 @@ Science](https://cs.anu.edu.au/courses/comp2300/)
   graphics applications. This is a new course for me in 2021 (the course website
   hasn't been updated yet, but will go live closer to the start of S2 2021).
   Because I'm involved this year you _know_ there will be a creative twist in
-  there somewhere 😉- [COMP1720: Art & Interaction in New
+  there somewhere 😉
 
 In the past couple of years, I've also taught
 
