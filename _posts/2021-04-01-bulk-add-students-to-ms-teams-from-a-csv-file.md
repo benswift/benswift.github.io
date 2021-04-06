@@ -63,7 +63,11 @@ Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.e
 ```
 
 When you're dealing with 500+ student classes, this can save you a _lot_ of
-time.
+time. And since trying to add a student who's already a group member is a no-op,
+you can just re-run the script with an updated `emails.csv` file if the class
+list changes. This won't remove students who have unenrolled, but there's a
+`Remove-TeamUser` command as well---so changing the script to unenroll students
+from a csv file is pretty trivial.
 
 If you're worriedly thinking "that'd be awesome... if I used Windows", then I
 have some good news: while PowerShell is primarily a Microsoft thing, it's on
