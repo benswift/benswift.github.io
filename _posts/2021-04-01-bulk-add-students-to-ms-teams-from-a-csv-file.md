@@ -46,6 +46,7 @@ The only requirements are:
 
 ```powershell
 # install the Teams module (if you haven't already)
+# this only needs to be done once
 Install-Module -Name MicrosoftTeams
 Get-Module -ListAvailable -Name MicrosoftTeams
 
@@ -53,8 +54,9 @@ Get-Module -ListAvailable -Name MicrosoftTeams
 # you need to sign in to authorise your PowerShell session
 Connect-MicrosoftTeams
 
-# this line stores the team's GroupID into a variable
-$GroupID = (Get-Team -DisplayName <TEAM NAME>).GroupID
+# store the team's GroupID into a variable
+# replace "My Team Name" with the name of your team
+$GroupID = (Get-Team -DisplayName "My Team Name").GroupID
 
 # note: if you've used a different csv filename, change it in the command below
 Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.email}
