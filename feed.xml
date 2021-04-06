@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-06T12:57:49+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-06T17:15:19+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
 Teams&lt;/a&gt; for lots of things, including organising
 classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible,
 and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another
@@ -10,20 +10,30 @@ our enrolment databases. This means that to add all the enrolled students into
 the class’s Teams site you can either:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;add them manually, one-at-a-time, through the Teams app; or&lt;/li&gt;
-  &lt;li&gt;share the “join Team” link on some other communication channel and manually
-weed out the gatecrashers&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;add them manually, one-at-a-time, through the Teams app; or&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;share the “join Team” link on some other communication channel and manually
+weed out the gatecrashers&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;until-now&quot;&gt;…until now.&lt;/h2&gt;
+&lt;p class=&quot;hl-para&quot;&gt;Too much manual work—&lt;strong&gt;there’s gotta be a better way&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Here’s a snippet of &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;powershell&lt;/a&gt; code
-for bulk-adding students to a Team from a csv file&lt;sup id=&quot;fnref:brent&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:brent&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The only
-requirements are:&lt;/p&gt;
+&lt;p&gt;MS Teams doesn’t have a UI button for “add team members from &lt;a href=&quot;https://en.wikipedia.org/wiki/Comma-separated_values&quot;&gt;csv
+file&lt;/a&gt;”. The app &lt;em&gt;is&lt;/em&gt;
+scriptable, but only via a &lt;a href=&quot;https://docs.microsoft.com/en-us/MicrosoftTeams/teams-powershell-overview&quot;&gt;PowerShell
+module&lt;/a&gt;.
+So, I (&amp;amp; others&lt;sup id=&quot;fnref:brent&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:brent&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;) came up with a snippet of
+&lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;PowerShell&lt;/a&gt; code for bulk-adding
+students to a Team from a csv file.&lt;/p&gt;
+
+&lt;p&gt;The only requirements are:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;you can run powershell on your machine&lt;/p&gt;
+    &lt;p&gt;you can run PowerShell on your machine&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;the Team already exists (and you know the Team name)&lt;/p&gt;
@@ -34,14 +44,14 @@ which contains each student’s email address&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Here’s the script.&lt;/p&gt;
+&lt;h2 id=&quot;powershell-script&quot;&gt;PowerShell script&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;# install the Teams module (if you haven&apos;t already)
 Install-Module -Name MicrosoftTeams
 Get-Module -ListAvailable -Name MicrosoftTeams
 
 # this step will take you to a login page in your browser,
-# you need to sign in to authorise your powershell session
+# you need to sign in to authorise your PowerShell session
 Connect-MicrosoftTeams
 
 # this line stores the team&apos;s GroupID into a variable
@@ -55,14 +65,14 @@ Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.e
 time.&lt;/p&gt;
 
 &lt;p&gt;If you’re worriedly thinking “that’d be awesome… if I used Windows”, then I
-have some good news: while powershell is primarily a Microsoft thing, it’s on
+have some good news: while PowerShell is primarily a Microsoft thing, it’s on
 macOS and Linux as well. On my macOS machine I installed it through
 &lt;a href=&quot;https://brew.sh&quot;&gt;homebrew&lt;/a&gt; with:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-plaintext&quot;&gt;brew install powershell
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;From the &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;powershell README.md&lt;/a&gt; it
+&lt;p&gt;From the &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;PowerShell README.md&lt;/a&gt; it
 seems like there’s a package available for most Linux distros as well.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;

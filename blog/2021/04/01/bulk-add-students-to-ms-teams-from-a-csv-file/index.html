@@ -91,20 +91,30 @@ our enrolment databases. This means that to add all the enrolled students into
 the class’s Teams site you can either:</p>
 
 <ul>
-  <li>add them manually, one-at-a-time, through the Teams app; or</li>
-  <li>share the “join Team” link on some other communication channel and manually
-weed out the gatecrashers</li>
+  <li>
+    <p>add them manually, one-at-a-time, through the Teams app; or</p>
+  </li>
+  <li>
+    <p>share the “join Team” link on some other communication channel and manually
+weed out the gatecrashers</p>
+  </li>
 </ul>
 
-<h2 id="until-now">…until now.</h2>
+<p class="hl-para">Too much manual work—<strong>there’s gotta be a better way</strong>.</p>
 
-<p>Here’s a snippet of <a href="https://github.com/powershell/powershell">powershell</a> code
-for bulk-adding students to a Team from a csv file<sup id="fnref:brent" role="doc-noteref"><a href="#fn:brent" class="footnote" rel="footnote">1</a></sup>. The only
-requirements are:</p>
+<p>MS Teams doesn’t have a UI button for “add team members from <a href="https://en.wikipedia.org/wiki/Comma-separated_values">csv
+file</a>”. The app <em>is</em>
+scriptable, but only via a <a href="https://docs.microsoft.com/en-us/MicrosoftTeams/teams-powershell-overview">PowerShell
+module</a>.
+So, I (&amp; others<sup id="fnref:brent" role="doc-noteref"><a href="#fn:brent" class="footnote" rel="footnote">1</a></sup>) came up with a snippet of
+<a href="https://github.com/powershell/powershell">PowerShell</a> code for bulk-adding
+students to a Team from a csv file.</p>
+
+<p>The only requirements are:</p>
 
 <ol>
   <li>
-    <p>you can run powershell on your machine</p>
+    <p>you can run PowerShell on your machine</p>
   </li>
   <li>
     <p>the Team already exists (and you know the Team name)</p>
@@ -115,14 +125,14 @@ which contains each student’s email address</p>
   </li>
 </ol>
 
-<p>Here’s the script.</p>
+<h2 id="powershell-script">PowerShell script</h2>
 
 <pre><code class="language-powershell"># install the Teams module (if you haven't already)
 Install-Module -Name MicrosoftTeams
 Get-Module -ListAvailable -Name MicrosoftTeams
 
 # this step will take you to a login page in your browser,
-# you need to sign in to authorise your powershell session
+# you need to sign in to authorise your PowerShell session
 Connect-MicrosoftTeams
 
 # this line stores the team's GroupID into a variable
@@ -136,14 +146,14 @@ Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.e
 time.</p>
 
 <p>If you’re worriedly thinking “that’d be awesome… if I used Windows”, then I
-have some good news: while powershell is primarily a Microsoft thing, it’s on
+have some good news: while PowerShell is primarily a Microsoft thing, it’s on
 macOS and Linux as well. On my macOS machine I installed it through
 <a href="https://brew.sh">homebrew</a> with:</p>
 
 <pre><code class="language-plaintext">brew install powershell
 </code></pre>
 
-<p>From the <a href="https://github.com/powershell/powershell">powershell README.md</a> it
+<p>From the <a href="https://github.com/powershell/powershell">PowerShell README.md</a> it
 seems like there’s a package available for most Linux distros as well.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
@@ -201,8 +211,8 @@ seems like there’s a package available for most Linux distros as well.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>125e5811a</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/125e5811a/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">source</a>,
+	site revision <code>a8a3f7040</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/a8a3f7040/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-01-bulk-add-students-to-ms-teams-from-a-csv-file.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
