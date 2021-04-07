@@ -1,6 +1,6 @@
 {% assign text = include.text %}
 <section class="center">
-<script src='{{ "/assets/js/qrcode.min.js"| relative_url }}'></script>
+<script src="{% link assets/js/qrcode.min.js %}"></script>
 <div id="qrcode"></div>
 {%- if include.showlink -%}
 <p style="text-align: center;"><a href="{{ text }}">{{ text }}</a></p>
