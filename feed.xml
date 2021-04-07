@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-07T09:26:31+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-07T10:30:07+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
 Teams&lt;/a&gt; for lots of things, including organising
 classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible,
 and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another
@@ -98,14 +98,15 @@ The official page seems to be &lt;a href=&quot;https://www.abs.gov.au/AUSSTATS/a
 one&lt;/a&gt;,
 but the data is only available on sheet 3 of an excel spreadsheet, which is just
 a bummer when all you want to do is &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;F&lt;/kbd&gt; your way around
-an HTML table in your web browser. &lt;strong&gt;Update 7/4/21&lt;/strong&gt;: I’ve added a live search
-box—just type in the terms you’re interested in to filter the relevant table
-rows.&lt;/p&gt;
+an HTML table in your web browser.&lt;/p&gt;
 
 &lt;p&gt;So, I’ve copied the relevant part of the spreadsheet into a regular-ol’ webpage
 here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:hosting&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2020-anzrc-field-of-research-for-codes&quot;&gt;2020 ANZRC Field of Research (FoR) Codes&lt;/h2&gt;
+
+&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Update 7/4/21&lt;/strong&gt;: I’ve added a live search box—just type in the terms you’re
+interested in to filter the relevant table rows.&lt;/p&gt;
 
 &lt;style&gt;
 #FoR-Codes-2020 tr.division-row {
@@ -121,9 +122,10 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
   width: 100%;
   line-height: 1.6;
   font-size: 1rem;
-  padding: 0.2em;
-  border: 1pt solid #be2edd#;
+  padding: 0.3rem 0.6rem;
+  border: 2pt solid #be2edd;
   border-radius: 3px;
+  margin-bottom: 1rem;
 }
 &lt;/style&gt;
 
