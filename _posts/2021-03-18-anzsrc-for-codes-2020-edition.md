@@ -58,20 +58,13 @@ here for your browsing pleasure.[^hosting]
 <input class="search" placeholder="type to filter FoR codes..." />
 <table>
   <thead>
-    <tr><th>Division</th><th>Group</th><th>Field</th><th>Description</th></tr>
+    <tr><th>FoR&nbsp;Code</th><th>Description</th></tr>
   </thead>
   <tbody class="list">
-  {% for code in site.data.FoR-Codes-2020 %}
-    <tr
-    {% if code.Division != nil %}
-    class="division-row"
-    {% elsif code.Group != nil %}
-    class="group-row"
-    {% endif %}
-    >
-    {% for value in code %}
-      <td class="{{ value[0] }}">{{ value[1] }}</td>
-    {% endfor %}
+  {% for code in site.data.FoR-Codes-2020-processed %}
+    <tr>
+      <td class="FoR-code">{{ code.Field }}</td>
+      <td class="FoR-description">{{ code.Description }}</td>
     </tr>
   {% endfor %}
   </tbody>
@@ -81,5 +74,5 @@ here for your browsing pleasure.[^hosting]
 <script src="{% link assets/js/list.min.js %}"></script>
 
 <script>
-  const forCodeList = new List("FoR-Codes-2020", {valueNames: ["Division", "Group", "Field", "Description"]});
+  const forCodeList = new List("FoR-Codes-2020", {valueNames: ["FoR-code", "FoR-description"]});
 </script>

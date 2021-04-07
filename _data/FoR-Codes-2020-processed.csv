@@ -1,0 +1,1968 @@
+Division,Group,Field,Description
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300101,Agricultural biotechnology diagnostics (incl. biosensors)
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300102,Agricultural marine biotechnology
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300103,Agricultural molecular engineering of nucleic acids and proteins
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300104,Genetically modified animals
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300105,Genetically modified field crops and pasture
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300106,Genetically modified horticulture plants
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300107,Genetically modified trees
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300108,Livestock cloning
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300109,Non-genetically modified uses of biotechnology
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300110,Transgenesis
+"Agricultural, Veterinary and Food Sciences",Agricultural biotechnology,300199,Agricultural biotechnology not elsewhere classified
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300201,Agricultural hydrology
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300202,Agricultural land management
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300203,Agricultural land planning
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300204,Agricultural management of nutrients
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300205,Agricultural production systems simulation
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300206,Agricultural spatial analysis and modelling
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300207,Agricultural systems analysis and modelling
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300208,"Farm management, rural management and agribusiness"
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300209,Germplasm management
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300210,Sustainable agricultural development
+"Agricultural, Veterinary and Food Sciences","Agriculture, land and farm management",300299,"Agriculture, land and farm management not elsewhere classified"
+"Agricultural, Veterinary and Food Sciences",Animal production,300301,Animal growth and development
+"Agricultural, Veterinary and Food Sciences",Animal production,300302,Animal management
+"Agricultural, Veterinary and Food Sciences",Animal production,300303,Animal nutrition
+"Agricultural, Veterinary and Food Sciences",Animal production,300304,Animal protection (incl. pests and pathogens)
+"Agricultural, Veterinary and Food Sciences",Animal production,300305,Animal reproduction and breeding
+"Agricultural, Veterinary and Food Sciences",Animal production,300306,Animal welfare
+"Agricultural, Veterinary and Food Sciences",Animal production,300307,Environmental studies in animal production
+"Agricultural, Veterinary and Food Sciences",Animal production,300399,Animal production not elsewhere classified
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300401,Agrochemicals and biocides (incl. application)
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300402,Agro-ecosystem function and prediction
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300403,Agronomy
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300404,Crop and pasture biochemistry and physiology
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300405,Crop and pasture biomass and bioproducts
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300406,Crop and pasture improvement (incl. selection and breeding)
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300407,Crop and pasture nutrition
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300408,Crop and pasture post harvest technologies (incl. transportation and storage)
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300409,"Crop and pasture protection (incl. pests, diseases and weeds)"
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300410,Crop and pasture waste water use
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300411,Fertilisers (incl. application)
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300412,Organic and low chemical input crop production
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300413,Pollination biology and systems
+"Agricultural, Veterinary and Food Sciences",Crop and pasture production,300499,Crop and pasture production not elsewhere classified
+"Agricultural, Veterinary and Food Sciences",Fisheries sciences,300501,Aquaculture
+"Agricultural, Veterinary and Food Sciences",Fisheries sciences,300502,Aquaculture and fisheries stock assessment
+"Agricultural, Veterinary and Food Sciences",Fisheries sciences,300503,Fish pests and diseases
+"Agricultural, Veterinary and Food Sciences",Fisheries sciences,300504,Fish physiology and genetics
+"Agricultural, Veterinary and Food Sciences",Fisheries sciences,300505,Fisheries management
+"Agricultural, Veterinary and Food Sciences",Fisheries sciences,300506,Post-harvest fisheries technologies (incl. transportation)
+"Agricultural, Veterinary and Food Sciences",Fisheries sciences,300599,Fisheries sciences not elsewhere classified
+"Agricultural, Veterinary and Food Sciences",Food sciences,300601,Beverage chemistry and beverage sensory science
+"Agricultural, Veterinary and Food Sciences",Food sciences,300602,Food chemistry and food sensory science
+"Agricultural, Veterinary and Food Sciences",Food sciences,300603,Food nutritional balance
+"Agricultural, Veterinary and Food Sciences",Food sciences,300604,"Food packaging, preservation and processing"
+"Agricultural, Veterinary and Food Sciences",Food sciences,300605,"Food safety, traceability, certification and authenticity"
+"Agricultural, Veterinary and Food Sciences",Food sciences,300606,Food sustainability
+"Agricultural, Veterinary and Food Sciences",Food sciences,300607,Food technology
+"Agricultural, Veterinary and Food Sciences",Food sciences,300699,Food sciences not elsewhere classified
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300701,Agroforestry
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300702,Forest biodiversity
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300703,Forest ecosystems
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300704,Forest health and pathology
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300705,Forestry biomass and bioproducts
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300706,Forestry fire management
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300707,Forestry management and environment
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300708,Forestry product quality assessment
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300709,Tree improvement (incl. selection and breeding)
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300710,Tree nutrition and physiology
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300711,Wood fibre processing
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300712,Wood processing
+"Agricultural, Veterinary and Food Sciences",Forestry sciences,300799,Forestry sciences not elsewhere classified
+"Agricultural, Veterinary and Food Sciences",Horticultural production,300801,Field organic and low chemical input horticulture
+"Agricultural, Veterinary and Food Sciences",Horticultural production,300802,Horticultural crop growth and development
+"Agricultural, Veterinary and Food Sciences",Horticultural production,300803,Horticultural crop improvement (incl. selection and breeding)
+"Agricultural, Veterinary and Food Sciences",Horticultural production,300804,"Horticultural crop protection (incl. pests, diseases and weeds)"
+"Agricultural, Veterinary and Food Sciences",Horticultural production,300805,Oenology and viticulture
+"Agricultural, Veterinary and Food Sciences",Horticultural production,300806,Post harvest horticultural technologies (incl. transportation and storage)
+"Agricultural, Veterinary and Food Sciences",Horticultural production,300899,Horticultural production not elsewhere classified
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300901,Veterinary anaesthesiology and intensive care
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300902,Veterinary anatomy and physiology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300903,Veterinary bacteriology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300904,Veterinary diagnosis and diagnostics
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300905,Veterinary epidemiology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300906,Veterinary immunology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300907,Veterinary medicine (excl. urology)
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300908,Veterinary mycology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300909,Veterinary parasitology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300910,Veterinary pathology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300911,Veterinary pharmacology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300912,Veterinary surgery
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300913,Veterinary urology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300914,Veterinary virology
+"Agricultural, Veterinary and Food Sciences",Veterinary sciences,300999,Veterinary sciences not elsewhere classified
+"Agricultural, Veterinary and Food Sciences","Other agricultural, veterinary and food sciences",309999,"Other agricultural, veterinary and food sciences not elsewhere classified"
+Biological Sciences,Biochemistry and cell biology,310101,Analytical biochemistry
+Biological Sciences,Biochemistry and cell biology,310102,"Cell development, proliferation and death"
+Biological Sciences,Biochemistry and cell biology,310103,Cell metabolism
+Biological Sciences,Biochemistry and cell biology,310104,Cell neurochemistry
+Biological Sciences,Biochemistry and cell biology,310105,"Cellular interactions (incl. adhesion, matrix, cell wall)"
+Biological Sciences,Biochemistry and cell biology,310106,Enzymes
+Biological Sciences,Biochemistry and cell biology,310107,Glycobiology
+Biological Sciences,Biochemistry and cell biology,310108,Protein trafficking
+Biological Sciences,Biochemistry and cell biology,310109,Proteomics and intermolecular interactions (excl. medical proteomics)
+Biological Sciences,Biochemistry and cell biology,310110,Receptors and membrane biology
+Biological Sciences,Biochemistry and cell biology,310111,Signal transduction
+Biological Sciences,Biochemistry and cell biology,310112,Structural biology (incl. macromolecular modelling)
+Biological Sciences,Biochemistry and cell biology,310113,Synthetic biology
+Biological Sciences,Biochemistry and cell biology,310114,Systems biology
+Biological Sciences,Biochemistry and cell biology,310199,Biochemistry and cell biology not elsewhere classified
+Biological Sciences,Bioinformatics and computational biology,310201,Bioinformatic methods development
+Biological Sciences,Bioinformatics and computational biology,310202,Biological network analysis
+Biological Sciences,Bioinformatics and computational biology,310203,Computational ecology and phylogenetics
+Biological Sciences,Bioinformatics and computational biology,310204,Genomics and transcriptomics
+Biological Sciences,Bioinformatics and computational biology,310205,Proteomics and metabolomics
+Biological Sciences,Bioinformatics and computational biology,310206,Sequence analysis
+Biological Sciences,Bioinformatics and computational biology,310207,Statistical and quantitative genetics
+Biological Sciences,Bioinformatics and computational biology,310208,Translational and applied bioinformatics
+Biological Sciences,Bioinformatics and computational biology,310299,Bioinformatics and computational biology not elsewhere classified
+Biological Sciences,Ecology,310301,Behavioural ecology
+Biological Sciences,Ecology,310302,Community ecology (excl. invasive species ecology)
+Biological Sciences,Ecology,310303,Ecological physiology
+Biological Sciences,Ecology,310304,Freshwater ecology
+Biological Sciences,Ecology,310305,Marine and estuarine ecology (incl. marine ichthyology)
+Biological Sciences,Ecology,310306,Palaeoecology
+Biological Sciences,Ecology,310307,Population ecology
+Biological Sciences,Ecology,310308,Terrestrial ecology
+Biological Sciences,Ecology,310399,Ecology not elsewhere classified
+Biological Sciences,Evolutionary biology,310401,Animal systematics and taxonomy
+Biological Sciences,Evolutionary biology,310402,Biogeography and phylogeography
+Biological Sciences,Evolutionary biology,310403,Biological adaptation
+Biological Sciences,Evolutionary biology,310404,Evolution of developmental systems
+Biological Sciences,Evolutionary biology,310405,Evolutionary ecology
+Biological Sciences,Evolutionary biology,310406,Evolutionary impacts of climate change
+Biological Sciences,Evolutionary biology,310407,Host-parasite interactions
+Biological Sciences,Evolutionary biology,310408,Life histories
+Biological Sciences,Evolutionary biology,310409,Microbial taxonomy
+Biological Sciences,Evolutionary biology,310410,Phylogeny and comparative analysis
+Biological Sciences,Evolutionary biology,310411,Plant and fungus systematics and taxonomy
+Biological Sciences,Evolutionary biology,310412,Speciation and extinction
+Biological Sciences,Evolutionary biology,310499,Evolutionary biology not elsewhere classified
+Biological Sciences,Genetics,310501,Anthropological genetics
+Biological Sciences,Genetics,310502,Cell and nuclear division
+Biological Sciences,Genetics,310503,Developmental genetics (incl. sex determination)
+Biological Sciences,Genetics,310504,Epigenetics (incl. genome methylation and epigenomics)
+Biological Sciences,Genetics,310505,Gene expression (incl. microarray and other genome-wide approaches)
+Biological Sciences,Genetics,310506,Gene mapping
+Biological Sciences,Genetics,310507,Genetic immunology
+Biological Sciences,Genetics,310508,Genome structure and regulation
+Biological Sciences,Genetics,310509,Genomics
+Biological Sciences,Genetics,310510,Molecular evolution
+Biological Sciences,Genetics,310511,Neurogenetics
+Biological Sciences,Genetics,310599,Genetics not elsewhere classified
+Biological Sciences,Industrial biotechnology,310601,Biocatalysis and enzyme technology
+Biological Sciences,Industrial biotechnology,310602,"Bioprocessing, bioproduction and bioproducts"
+Biological Sciences,Industrial biotechnology,310603,Fermentation
+Biological Sciences,Industrial biotechnology,310604,Industrial biotechnology diagnostics (incl. biosensors)
+Biological Sciences,Industrial biotechnology,310605,Industrial microbiology (incl. biofeedstocks)
+Biological Sciences,Industrial biotechnology,310606,Industrial molecular engineering of nucleic acids and proteins
+Biological Sciences,Industrial biotechnology,310607,Nanobiotechnology
+Biological Sciences,Industrial biotechnology,310699,Industrial biotechnology not elsewhere classified
+Biological Sciences,Microbiology,310701,Bacteriology
+Biological Sciences,Microbiology,310702,Infectious agents
+Biological Sciences,Microbiology,310703,Microbial ecology
+Biological Sciences,Microbiology,310704,Microbial genetics
+Biological Sciences,Microbiology,310705,Mycology
+Biological Sciences,Microbiology,310706,Virology
+Biological Sciences,Microbiology,310799,Microbiology not elsewhere classified
+Biological Sciences,Plant biology,310801,Phycology (incl. marine grasses)
+Biological Sciences,Plant biology,310802,Plant biochemistry
+Biological Sciences,Plant biology,310803,Plant cell and molecular biology
+Biological Sciences,Plant biology,310804,Plant developmental and reproductive biology
+Biological Sciences,Plant biology,310805,Plant pathology
+Biological Sciences,Plant biology,310806,Plant physiology
+Biological Sciences,Plant biology,310899,Plant biology not elsewhere classified
+Biological Sciences,Zoology,310901,Animal behaviour
+Biological Sciences,Zoology,310902,Animal cell and molecular biology
+Biological Sciences,Zoology,310903,Animal developmental and reproductive biology
+Biological Sciences,Zoology,310904,Animal diet and nutrition
+Biological Sciences,Zoology,310905,Animal immunology
+Biological Sciences,Zoology,310906,Animal neurobiology
+Biological Sciences,Zoology,310907,Animal physiological ecology
+Biological Sciences,Zoology,310908,Animal physiology - biophysics
+Biological Sciences,Zoology,310909,Animal physiology - cell
+Biological Sciences,Zoology,310910,Animal physiology - systems
+Biological Sciences,Zoology,310911,Animal structure and function
+Biological Sciences,Zoology,310912,Comparative physiology
+Biological Sciences,Zoology,310913,Invertebrate biology
+Biological Sciences,Zoology,310914,Vertebrate biology
+Biological Sciences,Zoology,310999,Zoology not elsewhere classified
+Biological Sciences,Other biological sciences,319901,Forensic biology
+Biological Sciences,Other biological sciences,319902,Global change biology
+Biological Sciences,Other biological sciences,319999,Other biological sciences not elsewhere classified
+Biomedical and Clinical Sciences,Cardiovascular medicine and haematology,320101,Cardiology (incl. cardiovascular diseases)
+Biomedical and Clinical Sciences,Cardiovascular medicine and haematology,320102,Haematology
+Biomedical and Clinical Sciences,Cardiovascular medicine and haematology,320103,Respiratory diseases
+Biomedical and Clinical Sciences,Cardiovascular medicine and haematology,320199,Cardiovascular medicine and haematology not elsewhere classified
+Biomedical and Clinical Sciences,Clinical sciences,320201,Anaesthesiology
+Biomedical and Clinical Sciences,Clinical sciences,320202,Clinical chemistry (incl. diagnostics)
+Biomedical and Clinical Sciences,Clinical sciences,320203,Clinical microbiology
+Biomedical and Clinical Sciences,Clinical sciences,320204,Clinimetrics
+Biomedical and Clinical Sciences,Clinical sciences,320205,Dermatology
+Biomedical and Clinical Sciences,Clinical sciences,320206,Diagnostic radiography
+Biomedical and Clinical Sciences,Clinical sciences,320207,Emergency medicine
+Biomedical and Clinical Sciences,Clinical sciences,320208,Endocrinology
+Biomedical and Clinical Sciences,Clinical sciences,320209,Gastroenterology and hepatology
+Biomedical and Clinical Sciences,Clinical sciences,320210,Geriatrics and gerontology
+Biomedical and Clinical Sciences,Clinical sciences,320211,Infectious diseases
+Biomedical and Clinical Sciences,Clinical sciences,320212,Intensive care
+Biomedical and Clinical Sciences,Clinical sciences,320213,Medical genetics (excl. cancer genetics)
+Biomedical and Clinical Sciences,Clinical sciences,320214,Nephrology and urology
+Biomedical and Clinical Sciences,Clinical sciences,320215,Nuclear medicine
+Biomedical and Clinical Sciences,Clinical sciences,320216,Orthopaedics
+Biomedical and Clinical Sciences,Clinical sciences,320217,Otorhinolaryngology
+Biomedical and Clinical Sciences,Clinical sciences,320218,Pain
+Biomedical and Clinical Sciences,Clinical sciences,320219,Paramedicine
+Biomedical and Clinical Sciences,Clinical sciences,320220,Pathology (excl. oral pathology)
+Biomedical and Clinical Sciences,Clinical sciences,320221,Psychiatry (incl. psychotherapy)
+Biomedical and Clinical Sciences,Clinical sciences,320222,Radiology and organ imaging
+Biomedical and Clinical Sciences,Clinical sciences,320223,Rheumatology and arthritis
+Biomedical and Clinical Sciences,Clinical sciences,320224,Rural clinical health
+Biomedical and Clinical Sciences,Clinical sciences,320225,Sports medicine
+Biomedical and Clinical Sciences,Clinical sciences,320226,Surgery
+Biomedical and Clinical Sciences,Clinical sciences,320227,Venereology
+Biomedical and Clinical Sciences,Clinical sciences,320299,Clinical sciences not elsewhere classified
+Biomedical and Clinical Sciences,Dentistry,320301,Craniofacial biology
+Biomedical and Clinical Sciences,Dentistry,320302,Dental materials and equipment
+Biomedical and Clinical Sciences,Dentistry,320303,"Dental therapeutics, pharmacology and toxicology"
+Biomedical and Clinical Sciences,Dentistry,320304,Endodontics
+Biomedical and Clinical Sciences,Dentistry,320305,Oral and maxillofacial surgery
+Biomedical and Clinical Sciences,Dentistry,320306,Oral implantology
+Biomedical and Clinical Sciences,Dentistry,320307,Oral medicine and pathology
+Biomedical and Clinical Sciences,Dentistry,320308,Orthodontics and dentofacial orthopaedics
+Biomedical and Clinical Sciences,Dentistry,320309,Paedodontics
+Biomedical and Clinical Sciences,Dentistry,320310,Periodontics
+Biomedical and Clinical Sciences,Dentistry,320311,Prosthodontics
+Biomedical and Clinical Sciences,Dentistry,320312,Special needs dentistry
+Biomedical and Clinical Sciences,Dentistry,320399,Dentistry not elsewhere classified
+Biomedical and Clinical Sciences,Immunology,320401,Allergy
+Biomedical and Clinical Sciences,Immunology,320402,"Applied immunology (incl. antibody engineering, xenotransplantation and t-cell therapies)"
+Biomedical and Clinical Sciences,Immunology,320403,Autoimmunity
+Biomedical and Clinical Sciences,Immunology,320404,Cellular immunology
+Biomedical and Clinical Sciences,Immunology,320405,Humoural immunology and immunochemistry
+Biomedical and Clinical Sciences,Immunology,320406,Immunogenetics (incl. genetic immunology)
+Biomedical and Clinical Sciences,Immunology,320407,Innate immunity
+Biomedical and Clinical Sciences,Immunology,320408,Transplantation immunology
+Biomedical and Clinical Sciences,Immunology,320409,Tumour immunology
+Biomedical and Clinical Sciences,Immunology,320499,Immunology not elsewhere classified
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320501,Medical biochemistry - amino acids and metabolites
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320502,Medical biochemistry - carbohydrates
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320503,Medical biochemistry - inorganic elements and compounds
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320504,Medical biochemistry - lipids
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320505,Medical biochemistry - nucleic acids
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320506,Medical biochemistry - proteins and peptides (incl. medical proteomics)
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320507,Metabolic medicine
+Biomedical and Clinical Sciences,Medical biochemistry and metabolomics,320599,Medical biochemistry and metabolomics not elsewhere classified
+Biomedical and Clinical Sciences,Medical biotechnology,320601,Gene and molecular therapy
+Biomedical and Clinical Sciences,Medical biotechnology,320602,Medical biotechnology diagnostics (incl. biosensors)
+Biomedical and Clinical Sciences,Medical biotechnology,320603,Medical molecular engineering of nucleic acids and proteins
+Biomedical and Clinical Sciences,Medical biotechnology,320604,Nanomedicine
+Biomedical and Clinical Sciences,Medical biotechnology,320605,"Nanotoxicology, health and safety"
+Biomedical and Clinical Sciences,Medical biotechnology,320606,Regenerative medicine (incl. stem cells)
+Biomedical and Clinical Sciences,Medical biotechnology,320699,Medical biotechnology not elsewhere classified
+Biomedical and Clinical Sciences,Medical microbiology,320701,Medical bacteriology
+Biomedical and Clinical Sciences,Medical microbiology,320702,Medical infection agents (incl. prions)
+Biomedical and Clinical Sciences,Medical microbiology,320703,Medical mycology
+Biomedical and Clinical Sciences,Medical microbiology,320704,Medical parasitology
+Biomedical and Clinical Sciences,Medical microbiology,320705,Medical virology
+Biomedical and Clinical Sciences,Medical microbiology,320799,Medical microbiology not elsewhere classified
+Biomedical and Clinical Sciences,Medical physiology,320801,Cell physiology
+Biomedical and Clinical Sciences,Medical physiology,320802,Human biophysics
+Biomedical and Clinical Sciences,Medical physiology,320803,Systems physiology
+Biomedical and Clinical Sciences,Medical physiology,320899,Medical physiology not elsewhere classified
+Biomedical and Clinical Sciences,Neurosciences,320901,Autonomic nervous system
+Biomedical and Clinical Sciences,Neurosciences,320902,Cellular nervous system
+Biomedical and Clinical Sciences,Neurosciences,320903,Central nervous system
+Biomedical and Clinical Sciences,Neurosciences,320904,Computational neuroscience (incl. mathematical neuroscience and theoretical neuroscience)
+Biomedical and Clinical Sciences,Neurosciences,320905,Neurology and neuromuscular diseases
+Biomedical and Clinical Sciences,Neurosciences,320906,Peripheral nervous system
+Biomedical and Clinical Sciences,Neurosciences,320907,Sensory systems
+Biomedical and Clinical Sciences,Neurosciences,320999,Neurosciences not elsewhere classified
+Biomedical and Clinical Sciences,Nutrition and dietetics,321001,Clinical nutrition
+Biomedical and Clinical Sciences,Nutrition and dietetics,321002,Food properties (incl. characteristics and health benefits)
+Biomedical and Clinical Sciences,Nutrition and dietetics,321003,Nutrigenomics and personalised nutrition
+Biomedical and Clinical Sciences,Nutrition and dietetics,321004,Nutritional science
+Biomedical and Clinical Sciences,Nutrition and dietetics,321005,Public health nutrition
+Biomedical and Clinical Sciences,Nutrition and dietetics,321006,Sport and exercise nutrition
+Biomedical and Clinical Sciences,Nutrition and dietetics,321099,Nutrition and dietetics not elsewhere classified
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321101,Cancer cell biology
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321102,Cancer diagnosis
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321103,Cancer genetics
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321104,Cancer therapy (excl. chemotherapy and radiation therapy)
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321105,Chemotherapy
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321106,Haematological tumours
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321107,Liquid biopsies
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321108,Molecular targets
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321109,Predictive and prognostic markers
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321110,Radiation therapy
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321111,Solid tumours
+Biomedical and Clinical Sciences,Oncology and carcinogenesis,321199,Oncology and carcinogenesis not elsewhere classified
+Biomedical and Clinical Sciences,Ophthalmology and optometry,321201,Ophthalmology
+Biomedical and Clinical Sciences,Ophthalmology and optometry,321202,Optical technology
+Biomedical and Clinical Sciences,Ophthalmology and optometry,321203,Optometry
+Biomedical and Clinical Sciences,Ophthalmology and optometry,321204,Vision science
+Biomedical and Clinical Sciences,Ophthalmology and optometry,321299,Ophthalmology and optometry not elsewhere classified
+Biomedical and Clinical Sciences,Paediatrics,321301,Adolescent health
+Biomedical and Clinical Sciences,Paediatrics,321302,Infant and child health
+Biomedical and Clinical Sciences,Paediatrics,321303,Neonatology
+Biomedical and Clinical Sciences,Paediatrics,321399,Paediatrics not elsewhere classified
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321401,Basic pharmacology
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321402,Clinical pharmacology and therapeutics
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321403,Clinical pharmacy and pharmacy practice
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321404,Pharmaceutical delivery technologies
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321405,Pharmaceutical sciences
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321406,Pharmacogenomics
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321407,Toxicology (incl. clinical toxicology)
+Biomedical and Clinical Sciences,Pharmacology and pharmaceutical sciences,321499,Pharmacology and pharmaceutical sciences not elsewhere classified
+Biomedical and Clinical Sciences,Reproductive medicine,321501,Foetal development and medicine
+Biomedical and Clinical Sciences,Reproductive medicine,321502,Obstetrics and gynaecology
+Biomedical and Clinical Sciences,Reproductive medicine,321503,Reproduction
+Biomedical and Clinical Sciences,Reproductive medicine,321599,Reproductive medicine not elsewhere classified
+Biomedical and Clinical Sciences,Other biomedical and clinical sciences,329999,Other biomedical and clinical sciences not elsewhere classified
+Built Environment and Design,Architecture,330101,Architectural computing and visualisation methods
+Built Environment and Design,Architecture,330102,Architectural design
+Built Environment and Design,Architecture,330103,Architectural heritage and conservation
+Built Environment and Design,Architecture,330104,"Architectural history, theory and criticism"
+Built Environment and Design,Architecture,330105,Architectural science and technology
+Built Environment and Design,Architecture,330106,Architecture for disaster relief
+Built Environment and Design,Architecture,330107,Architecture management
+Built Environment and Design,Architecture,330108,Interior design
+Built Environment and Design,Architecture,330109,Landscape architecture
+Built Environment and Design,Architecture,330110,Sustainable architecture
+Built Environment and Design,Architecture,330199,Architecture not elsewhere classified
+Built Environment and Design,Building,330201,Automation and technology in building and construction
+Built Environment and Design,Building,330202,Building construction management and project planning
+Built Environment and Design,Building,330203,Building industry studies
+Built Environment and Design,Building,330204,Building information modelling and management
+Built Environment and Design,Building,330205,Building organisational studies
+Built Environment and Design,Building,330206,"Building science, technologies and systems"
+Built Environment and Design,Building,330207,Quantity surveying
+Built Environment and Design,Building,330299,Building not elsewhere classified
+Built Environment and Design,Design,330301,Data visualisation and computational (incl. parametric and generative) design
+Built Environment and Design,Design,330302,Design anthropology
+Built Environment and Design,Design,330303,Design for disaster relief
+Built Environment and Design,Design,330304,"Design history, theory and criticism"
+Built Environment and Design,Design,330305,Design management
+Built Environment and Design,Design,330306,Design practice and methods
+Built Environment and Design,Design,330307,Ergonomics design
+Built Environment and Design,Design,330308,Fire safety design
+Built Environment and Design,Design,330309,Industrial and product design
+Built Environment and Design,Design,330310,Interaction and experience design
+Built Environment and Design,Design,330311,Models and simulations of design
+Built Environment and Design,Design,330312,Service design
+Built Environment and Design,Design,330313,Social design
+Built Environment and Design,Design,330314,Sustainable design
+Built Environment and Design,Design,330315,Textile and fashion design
+Built Environment and Design,Design,330316,Visual communication design (incl. graphic design)
+Built Environment and Design,Design,330399,Design not elsewhere classified
+Built Environment and Design,Urban and regional planning,330401,Community planning
+Built Environment and Design,Urban and regional planning,330402,History and theory of the built environment (excl. architecture)
+Built Environment and Design,Urban and regional planning,330403,"Housing markets, development and management"
+Built Environment and Design,Urban and regional planning,330404,Land use and environmental planning
+Built Environment and Design,Urban and regional planning,330405,Public participation and community engagement
+Built Environment and Design,Urban and regional planning,330406,Regional analysis and development
+Built Environment and Design,Urban and regional planning,330407,Regulatory planning and development assessment
+Built Environment and Design,Urban and regional planning,330408,"Strategic, metropolitan and regional planning"
+Built Environment and Design,Urban and regional planning,330409,Transport planning
+Built Environment and Design,Urban and regional planning,330410,Urban analysis and development
+Built Environment and Design,Urban and regional planning,330411,Urban design
+Built Environment and Design,Urban and regional planning,330412,Urban informatics
+Built Environment and Design,Urban and regional planning,330413,Urban planning and health
+Built Environment and Design,Urban and regional planning,330499,Urban and regional planning not elsewhere classified
+Built Environment and Design,Other built environment and design,339999,Other built environment and design not elsewhere classified
+Chemical Sciences,Analytical chemistry,340101,Analytical spectrometry
+Chemical Sciences,Analytical chemistry,340102,Bioassays
+Chemical Sciences,Analytical chemistry,340103,Electroanalytical chemistry
+Chemical Sciences,Analytical chemistry,340104,Flow analysis
+Chemical Sciences,Analytical chemistry,340105,Instrumental methods (excl. immunological and bioassay methods)
+Chemical Sciences,Analytical chemistry,340106,Metabolomic chemistry
+Chemical Sciences,Analytical chemistry,340107,"Quality assurance, chemometrics, traceability and metrological chemistry"
+Chemical Sciences,Analytical chemistry,340108,Sensor technology (incl. chemical aspects)
+Chemical Sciences,Analytical chemistry,340109,Separation science
+Chemical Sciences,Analytical chemistry,340199,Analytical chemistry not elsewhere classified
+Chemical Sciences,Inorganic chemistry,340201,Bioinorganic chemistry
+Chemical Sciences,Inorganic chemistry,340202,Crystallography
+Chemical Sciences,Inorganic chemistry,340203,F-block chemistry
+Chemical Sciences,Inorganic chemistry,340204,Inorganic green chemistry
+Chemical Sciences,Inorganic chemistry,340205,Main group metal chemistry
+Chemical Sciences,Inorganic chemistry,340206,Metal cluster chemistry
+Chemical Sciences,Inorganic chemistry,340207,Metal organic frameworks
+Chemical Sciences,Inorganic chemistry,340208,Non-metal chemistry
+Chemical Sciences,Inorganic chemistry,340209,Organometallic chemistry
+Chemical Sciences,Inorganic chemistry,340210,Solid state chemistry
+Chemical Sciences,Inorganic chemistry,340211,Transition metal chemistry
+Chemical Sciences,Inorganic chemistry,340299,Inorganic chemistry not elsewhere classified
+Chemical Sciences,Macromolecular and materials chemistry,340301,Inorganic materials (incl. nanomaterials)
+Chemical Sciences,Macromolecular and materials chemistry,340302,Macromolecular materials
+Chemical Sciences,Macromolecular and materials chemistry,340303,Nanochemistry
+Chemical Sciences,Macromolecular and materials chemistry,340304,Optical properties of materials
+Chemical Sciences,Macromolecular and materials chemistry,340305,Physical properties of materials
+Chemical Sciences,Macromolecular and materials chemistry,340306,Polymerisation mechanisms
+Chemical Sciences,Macromolecular and materials chemistry,340307,Structure and dynamics of materials
+Chemical Sciences,Macromolecular and materials chemistry,340308,Supramolecular chemistry
+Chemical Sciences,Macromolecular and materials chemistry,340309,Theory and design of materials
+Chemical Sciences,Macromolecular and materials chemistry,340399,Macromolecular and materials chemistry not elsewhere classified
+Chemical Sciences,Medicinal and biomolecular chemistry,340401,Biologically active molecules
+Chemical Sciences,Medicinal and biomolecular chemistry,340402,Biomolecular modelling and design
+Chemical Sciences,Medicinal and biomolecular chemistry,340403,Characterisation of biological macromolecules
+Chemical Sciences,Medicinal and biomolecular chemistry,340404,Cheminformatics and quantitative structure-activity relationships
+Chemical Sciences,Medicinal and biomolecular chemistry,340405,Glycoconjugates
+Chemical Sciences,Medicinal and biomolecular chemistry,340406,Molecular medicine
+Chemical Sciences,Medicinal and biomolecular chemistry,340407,Proteins and peptides
+Chemical Sciences,Medicinal and biomolecular chemistry,340499,Medicinal and biomolecular chemistry not elsewhere classified
+Chemical Sciences,Organic chemistry,340501,Free radical chemistry
+Chemical Sciences,Organic chemistry,340502,Natural products and bioactive compounds
+Chemical Sciences,Organic chemistry,340503,Organic chemical synthesis
+Chemical Sciences,Organic chemistry,340504,Organic green chemistry
+Chemical Sciences,Organic chemistry,340505,Physical organic chemistry
+Chemical Sciences,Organic chemistry,340599,Organic chemistry not elsewhere classified
+Chemical Sciences,Physical chemistry,340601,Catalysis and mechanisms of reactions
+Chemical Sciences,Physical chemistry,340602,Chemical thermodynamics and energetics
+Chemical Sciences,Physical chemistry,340603,Colloid and surface chemistry
+Chemical Sciences,Physical chemistry,340604,Electrochemistry
+Chemical Sciences,Physical chemistry,340605,Molecular imaging (incl. electron microscopy and neutron diffraction)
+Chemical Sciences,Physical chemistry,340606,Photochemistry
+Chemical Sciences,Physical chemistry,340607,Reaction kinetics and dynamics
+Chemical Sciences,Physical chemistry,340608,Solution chemistry
+Chemical Sciences,Physical chemistry,340609,Transport properties and non-equilibrium processes
+Chemical Sciences,Physical chemistry,340699,Physical chemistry not elsewhere classified
+Chemical Sciences,Theoretical and computational chemistry,340701,Computational chemistry
+Chemical Sciences,Theoretical and computational chemistry,340702,Radiation and matter
+Chemical Sciences,Theoretical and computational chemistry,340703,Statistical mechanics in chemistry
+Chemical Sciences,Theoretical and computational chemistry,340704,Theoretical quantum chemistry
+Chemical Sciences,Theoretical and computational chemistry,340799,Theoretical and computational chemistry not elsewhere classified
+Chemical Sciences,Other chemical sciences,349901,Forensic chemistry
+Chemical Sciences,Other chemical sciences,349999,Other chemical sciences not elsewhere classified
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350101,Accounting theory and standards
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350102,Auditing and accountability
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350103,Financial accounting
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350104,International accounting
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350105,Management accounting
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350106,Not-for-profit accounting and accountability
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350107,Sustainability accounting and reporting
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350108,Taxation accounting
+"Commerce, Management, Tourism and Services","Accounting, auditing and accountability",350199,"Accounting, auditing and accountability not elsewhere classified"
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350201,Environment and climate finance
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350202,Finance
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350203,Financial econometrics
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350204,Financial institutions (incl. banking)
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350205,Household finance and financial literacy
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350206,Insurance studies
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350207,International finance
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350208,Investment and risk management
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350209,Not-for-profit finance and risk
+"Commerce, Management, Tourism and Services","Banking, finance and investment",350299,"Banking, finance and investment not elsewhere classified"
+"Commerce, Management, Tourism and Services",Business systems in context,350301,Business analytics
+"Commerce, Management, Tourism and Services",Business systems in context,350302,"Business information management (incl. records, knowledge and intelligence)"
+"Commerce, Management, Tourism and Services",Business systems in context,350303,Business information systems
+"Commerce, Management, Tourism and Services",Business systems in context,350304,Business systems in context
+"Commerce, Management, Tourism and Services",Business systems in context,350305,Forensic intelligence
+"Commerce, Management, Tourism and Services",Business systems in context,350306,Forensic science and management
+"Commerce, Management, Tourism and Services",Business systems in context,350307,Technology management
+"Commerce, Management, Tourism and Services",Business systems in context,350399,Business systems in context not elsewhere classified
+"Commerce, Management, Tourism and Services",Commercial services,350401,Food and hospitality services
+"Commerce, Management, Tourism and Services",Commercial services,350402,Hospitality management
+"Commerce, Management, Tourism and Services",Commercial services,350403,Real estate and valuation services
+"Commerce, Management, Tourism and Services",Commercial services,350404,Retail
+"Commerce, Management, Tourism and Services",Commercial services,350405,Sport and leisure management
+"Commerce, Management, Tourism and Services",Commercial services,350499,Commercial services not elsewhere classified
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350501,Business and labour history
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350502,Employment equity and diversity
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350503,Human resources management
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350504,Industrial and employee relations
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350505,Occupational and workplace health and safety
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350506,Workforce planning
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350507,Workplace wellbeing and quality of working life
+"Commerce, Management, Tourism and Services",Human resources and industrial relations,350599,Human resources and industrial relations not elsewhere classified
+"Commerce, Management, Tourism and Services",Marketing,350601,Consumer behaviour
+"Commerce, Management, Tourism and Services",Marketing,350602,Consumer-oriented product or service development
+"Commerce, Management, Tourism and Services",Marketing,350603,Industrial marketing
+"Commerce, Management, Tourism and Services",Marketing,350604,Marketing communications
+"Commerce, Management, Tourism and Services",Marketing,350605,Marketing management (incl. strategy and customer relations)
+"Commerce, Management, Tourism and Services",Marketing,350606,Marketing research methodology
+"Commerce, Management, Tourism and Services",Marketing,350607,Marketing technology
+"Commerce, Management, Tourism and Services",Marketing,350608,Marketing theory
+"Commerce, Management, Tourism and Services",Marketing,350609,Not-for-profit marketing
+"Commerce, Management, Tourism and Services",Marketing,350610,Pricing (incl. consumer value estimation)
+"Commerce, Management, Tourism and Services",Marketing,350611,Service marketing
+"Commerce, Management, Tourism and Services",Marketing,350612,Social marketing
+"Commerce, Management, Tourism and Services",Marketing,350699,Marketing not elsewhere classified
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350701,Corporate governance
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350702,Corporate social responsibility
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350703,Disaster and emergency management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350704,Entrepreneurship
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350705,Innovation management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350706,International business
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350707,Leadership
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350708,Not-for-profit business and management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350709,Organisation and management theory
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350710,Organisational behaviour
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350711,Organisational planning and management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350712,Production and operations management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350713,Project management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350714,Public sector organisation and management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350715,Quality management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350716,Small business organisation and management
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350717,Stakeholder engagement
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350718,Strategy
+"Commerce, Management, Tourism and Services","Strategy, management and organisational behaviour",350799,"Strategy, management and organisational behaviour not elsewhere classified"
+"Commerce, Management, Tourism and Services",Tourism,350801,Impacts of tourism
+"Commerce, Management, Tourism and Services",Tourism,350802,Tourism forecasting
+"Commerce, Management, Tourism and Services",Tourism,350803,Tourism management
+"Commerce, Management, Tourism and Services",Tourism,350804,Tourism marketing
+"Commerce, Management, Tourism and Services",Tourism,350805,Tourism resource appraisal
+"Commerce, Management, Tourism and Services",Tourism,350806,Tourist behaviour and visitor experience
+"Commerce, Management, Tourism and Services",Tourism,350899,Tourism not elsewhere classified
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350901,Air transportation and freight services
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350902,Intelligent mobility
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350903,Logistics
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350904,Maritime transportation and freight services
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350905,Passenger needs
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350906,Public transport
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350907,Rail transportation and freight services
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350908,Road transportation and freight services
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350909,Supply chains
+"Commerce, Management, Tourism and Services","Transportation, logistics and supply chains",350999,"Transportation, logistics and supply chains not elsewhere classified"
+"Commerce, Management, Tourism and Services","Other commerce, management, tourism and services",359999,"Other commerce, management, tourism and services not elsewhere classified"
+Creative Arts and Writing,"Art history, theory and criticism",360101,Art criticism
+Creative Arts and Writing,"Art history, theory and criticism",360102,Art history
+Creative Arts and Writing,"Art history, theory and criticism",360103,Art theory
+Creative Arts and Writing,"Art history, theory and criticism",360104,Visual cultures
+Creative Arts and Writing,"Art history, theory and criticism",360199,"Art history, theory and criticism not elsewhere classified"
+Creative Arts and Writing,Creative and professional writing,360201,Creative writing (incl. scriptwriting)
+Creative Arts and Writing,Creative and professional writing,360202,Digital writing
+Creative Arts and Writing,Creative and professional writing,360203,Professional writing and journalism practice
+Creative Arts and Writing,Creative and professional writing,360204,Site-based writing
+Creative Arts and Writing,Creative and professional writing,360205,Technical writing
+Creative Arts and Writing,Creative and professional writing,360299,Creative and professional writing not elsewhere classified
+Creative Arts and Writing,Music,360301,Music cognition
+Creative Arts and Writing,Music,360302,Music composition and improvisation
+Creative Arts and Writing,Music,360303,Music education
+Creative Arts and Writing,Music,360304,Music performance
+Creative Arts and Writing,Music,360305,Music technology and recording
+Creative Arts and Writing,Music,360306,Musicology and ethnomusicology
+Creative Arts and Writing,Music,360399,Music not elsewhere classified
+Creative Arts and Writing,Performing arts,360401,Applied theatre
+Creative Arts and Writing,Performing arts,360402,Dance and dance studies
+Creative Arts and Writing,Performing arts,360403,"Drama, theatre and performance studies"
+Creative Arts and Writing,Performing arts,360499,Performing arts not elsewhere classified
+Creative Arts and Writing,Screen and digital media,360501,Cinema studies
+Creative Arts and Writing,Screen and digital media,360502,Computer gaming and animation
+Creative Arts and Writing,Screen and digital media,360503,Digital and electronic media art
+Creative Arts and Writing,Screen and digital media,360504,Interactive media
+Creative Arts and Writing,Screen and digital media,360505,Screen media
+Creative Arts and Writing,Screen and digital media,360506,Visual effects
+Creative Arts and Writing,Screen and digital media,360599,Screen and digital media not elsewhere classified
+Creative Arts and Writing,Visual arts,360601,Crafts
+Creative Arts and Writing,Visual arts,360602,Fine arts
+Creative Arts and Writing,Visual arts,360603,Performance art
+Creative Arts and Writing,Visual arts,360604,"Photography, video and lens-based practice"
+Creative Arts and Writing,Visual arts,360699,Visual arts not elsewhere classified
+Creative Arts and Writing,Other creative arts and writing,369999,Other creative arts and writing not elsewhere classified
+Earth Sciences,Atmospheric sciences,370101,Adverse weather events
+Earth Sciences,Atmospheric sciences,370102,Air pollution processes and air quality measurement
+Earth Sciences,Atmospheric sciences,370103,Atmospheric aerosols
+Earth Sciences,Atmospheric sciences,370104,"Atmospheric composition, chemistry and processes"
+Earth Sciences,Atmospheric sciences,370105,Atmospheric dynamics
+Earth Sciences,Atmospheric sciences,370106,Atmospheric radiation
+Earth Sciences,Atmospheric sciences,370107,Cloud physics
+Earth Sciences,Atmospheric sciences,370108,Meteorology
+Earth Sciences,Atmospheric sciences,370109,Tropospheric and stratospheric physics
+Earth Sciences,Atmospheric sciences,370199,Atmospheric sciences not elsewhere classified
+Earth Sciences,Climate change science,370201,Climate change processes
+Earth Sciences,Climate change science,370202,Climatology
+Earth Sciences,Climate change science,370203,Greenhouse gas inventories and fluxes
+Earth Sciences,Climate change science,370299,Climate change science not elsewhere classified
+Earth Sciences,Geochemistry,370301,Exploration geochemistry
+Earth Sciences,Geochemistry,370302,Inorganic geochemistry
+Earth Sciences,Geochemistry,370303,Isotope geochemistry
+Earth Sciences,Geochemistry,370304,Organic geochemistry
+Earth Sciences,Geochemistry,370399,Geochemistry not elsewhere classified
+Earth Sciences,Geoinformatics,370401,Computational modelling and simulation in earth sciences
+Earth Sciences,Geoinformatics,370402,Earth and space science informatics
+Earth Sciences,Geoinformatics,370403,Geoscience data visualisation
+Earth Sciences,Geoinformatics,370499,Geoinformatics not elsewhere classified
+Earth Sciences,Geology,370501,Biomineralisation
+Earth Sciences,Geology,370502,Geochronology
+Earth Sciences,Geology,370503,Igneous and metamorphic petrology
+Earth Sciences,Geology,370504,Marine geoscience
+Earth Sciences,Geology,370505,Mineralogy and crystallography
+Earth Sciences,Geology,370506,Palaeontology (incl. palynology)
+Earth Sciences,Geology,370507,Planetary geology
+Earth Sciences,Geology,370508,Resource geoscience
+Earth Sciences,Geology,370509,Sedimentology
+Earth Sciences,Geology,370510,"Stratigraphy (incl. biostratigraphy, sequence stratigraphy and basin analysis)"
+Earth Sciences,Geology,370511,Structural geology and tectonics
+Earth Sciences,Geology,370512,Volcanology
+Earth Sciences,Geology,370599,Geology not elsewhere classified
+Earth Sciences,Geophysics,370601,Applied geophysics
+Earth Sciences,Geophysics,370602,Electrical and electromagnetic methods in geophysics
+Earth Sciences,Geophysics,370603,Geodesy
+Earth Sciences,Geophysics,370604,Geodynamics
+Earth Sciences,Geophysics,370605,Geothermics and radiometrics
+Earth Sciences,Geophysics,370606,Gravimetrics
+Earth Sciences,Geophysics,370607,Magnetism and palaeomagnetism
+Earth Sciences,Geophysics,370608,Petrophysics and rock mechanics
+Earth Sciences,Geophysics,370609,Seismology and seismic exploration
+Earth Sciences,Geophysics,370699,Geophysics not elsewhere classified
+Earth Sciences,Hydrology,370701,Contaminant hydrology
+Earth Sciences,Hydrology,370702,Ecohydrology
+Earth Sciences,Hydrology,370703,Groundwater hydrology
+Earth Sciences,Hydrology,370704,Surface water hydrology
+Earth Sciences,Hydrology,370705,Urban hydrology
+Earth Sciences,Hydrology,370799,Hydrology not elsewhere classified
+Earth Sciences,Oceanography,370801,Biological oceanography
+Earth Sciences,Oceanography,370802,Chemical oceanography
+Earth Sciences,Oceanography,370803,Physical oceanography
+Earth Sciences,Oceanography,370899,Oceanography not elsewhere classified
+Earth Sciences,Physical geography and environmental geoscience,370901,Geomorphology and earth surface processes
+Earth Sciences,Physical geography and environmental geoscience,370902,Glaciology
+Earth Sciences,Physical geography and environmental geoscience,370903,Natural hazards
+Earth Sciences,Physical geography and environmental geoscience,370904,Palaeoclimatology
+Earth Sciences,Physical geography and environmental geoscience,370905,Quaternary environments
+Earth Sciences,Physical geography and environmental geoscience,370906,Regolith and landscape evolution
+Earth Sciences,Physical geography and environmental geoscience,370999,Physical geography and environmental geoscience not elsewhere classified
+Earth Sciences,Other earth sciences,379901,Earth system sciences
+Earth Sciences,Other earth sciences,379999,Other earth sciences not elsewhere classified
+Economics,Applied economics,380101,Agricultural economics
+Economics,Applied economics,380102,Behavioural economics
+Economics,Applied economics,380103,Economic history
+Economics,Applied economics,380104,Economics of education
+Economics,Applied economics,380105,Environment and resource economics
+Economics,Applied economics,380106,Experimental economics
+Economics,Applied economics,380107,Financial economics
+Economics,Applied economics,380108,Health economics
+Economics,Applied economics,380109,Industry economics and industrial organisation
+Economics,Applied economics,380110,International economics
+Economics,Applied economics,380111,Labour economics
+Economics,Applied economics,380112,Macroeconomics (incl. monetary and fiscal theory)
+Economics,Applied economics,380113,Public economics - public choice
+Economics,Applied economics,380114,Public economics - publicly provided goods
+Economics,Applied economics,380115,Public economics - taxation and revenue
+Economics,Applied economics,380116,Tourism economics
+Economics,Applied economics,380117,Transport economics
+Economics,Applied economics,380118,Urban and regional economics
+Economics,Applied economics,380119,Welfare economics
+Economics,Applied economics,380199,Applied economics not elsewhere classified
+Economics,Econometrics,380201,Cross-sectional analysis
+Economics,Econometrics,380202,Econometric and statistical methods
+Economics,Econometrics,380203,Economic models and forecasting
+Economics,Econometrics,380204,Panel data analysis
+Economics,Econometrics,380205,Time-series analysis
+Economics,Econometrics,380299,Econometrics not elsewhere classified
+Economics,Economic theory,380301,History of economic thought
+Economics,Economic theory,380302,Macroeconomic theory
+Economics,Economic theory,380303,Mathematical economics
+Economics,Economic theory,380304,Microeconomic theory
+Economics,Economic theory,380399,Economic theory not elsewhere classified
+Economics,Other economics,389901,Comparative economic systems
+Economics,Other economics,389902,Ecological economics
+Economics,Other economics,389903,Heterodox economics
+Economics,Other economics,389999,Other economics not elsewhere classified
+Education,Curriculum and pedagogy,390101,"Creative arts, media and communication curriculum and pedagogy"
+Education,Curriculum and pedagogy,390102,Curriculum and pedagogy theory and development
+Education,Curriculum and pedagogy,390103,"Economics, business and management curriculum and pedagogy"
+Education,Curriculum and pedagogy,390104,"English and literacy curriculum and pedagogy (excl. LOTE, ESL and TESOL)"
+Education,Curriculum and pedagogy,390105,Environmental education curriculum and pedagogy
+Education,Curriculum and pedagogy,390106,Geography education curriculum and pedagogy
+Education,Curriculum and pedagogy,390107,"Humanities and social sciences curriculum and pedagogy (excl. economics, business and management)"
+Education,Curriculum and pedagogy,390108,"LOTE, ESL and TESOL curriculum and pedagogy"
+Education,Curriculum and pedagogy,390109,Mathematics and numeracy curriculum and pedagogy
+Education,Curriculum and pedagogy,390110,"Medicine, nursing and health curriculum and pedagogy"
+Education,Curriculum and pedagogy,390111,Physical education and development curriculum and pedagogy
+Education,Curriculum and pedagogy,390112,Religion curriculum and pedagogy
+Education,Curriculum and pedagogy,390113,"Science, technology and engineering curriculum and pedagogy"
+Education,Curriculum and pedagogy,390114,Vocational education and training curriculum and pedagogy
+Education,Curriculum and pedagogy,390115,Work integrated learning (incl. internships)
+Education,Curriculum and pedagogy,390199,Curriculum and pedagogy not elsewhere classified
+Education,"Education policy, sociology and philosophy",390201,Education policy
+Education,"Education policy, sociology and philosophy",390202,History and philosophy of education
+Education,"Education policy, sociology and philosophy",390203,Sociology of education
+Education,"Education policy, sociology and philosophy",390299,"Education policy, sociology and philosophy not elsewhere classified"
+Education,Education systems,390301,Continuing and community education
+Education,Education systems,390302,Early childhood education
+Education,Education systems,390303,Higher education
+Education,Education systems,390304,Primary education
+Education,Education systems,390305,Professional education and training
+Education,Education systems,390306,Secondary education
+Education,Education systems,390307,Teacher education and professional development of educators
+Education,Education systems,390308,"Technical, further and workplace education"
+Education,Education systems,390399,Education systems not elsewhere classified
+Education,Specialist studies in education,390401,Comparative and cross-cultural education
+Education,Specialist studies in education,390402,Education assessment and evaluation
+Education,Specialist studies in education,390403,"Educational administration, management and leadership"
+Education,Specialist studies in education,390404,Educational counselling
+Education,Specialist studies in education,390405,Educational technology and computing
+Education,Specialist studies in education,390406,"Gender, sexuality and education"
+Education,Specialist studies in education,390407,Inclusive education
+Education,Specialist studies in education,390408,Learning analytics
+Education,Specialist studies in education,390409,Learning sciences
+Education,Specialist studies in education,390410,"Multicultural education (excl. Aboriginal and Torres Strait Islander, Māori and Pacific Peoples)"
+Education,Specialist studies in education,390411,Special education and disability
+Education,Specialist studies in education,390412,Teacher and student wellbeing
+Education,Specialist studies in education,390499,Specialist studies in education not elsewhere classified
+Education,Other Education,399999,Other education not elsewhere classified
+Engineering,Aerospace engineering,400101,Aerospace materials
+Engineering,Aerospace engineering,400102,Aerospace structures
+Engineering,Aerospace engineering,400103,Aircraft performance and flight control systems
+Engineering,Aerospace engineering,400104,Avionics
+Engineering,Aerospace engineering,400105,Flight dynamics
+Engineering,Aerospace engineering,400106,Hypersonic propulsion and hypersonic aerothermodynamics
+Engineering,Aerospace engineering,400107,"Satellite, space vehicle and missile design and testing"
+Engineering,Aerospace engineering,400199,Aerospace engineering not elsewhere classified
+Engineering,Automotive engineering,400201,Automotive combustion and fuel engineering
+Engineering,Automotive engineering,400202,Automotive engineering materials
+Engineering,Automotive engineering,400203,Automotive mechatronics and autonomous systems
+Engineering,Automotive engineering,400204,Automotive safety engineering
+Engineering,Automotive engineering,400205,Hybrid and electric vehicles and powertrains
+Engineering,Automotive engineering,400299,Automotive engineering not elsewhere classified
+Engineering,Biomedical engineering,400301,Biofabrication
+Engineering,Biomedical engineering,400302,Biomaterials
+Engineering,Biomedical engineering,400303,Biomechanical engineering
+Engineering,Biomedical engineering,400304,Biomedical imaging
+Engineering,Biomedical engineering,400305,Biomedical instrumentation
+Engineering,Biomedical engineering,400306,Computational physiology
+Engineering,Biomedical engineering,400307,Mechanobiology
+Engineering,Biomedical engineering,400308,Medical devices
+Engineering,Biomedical engineering,400309,Neural engineering
+Engineering,Biomedical engineering,400310,Rehabilitation engineering
+Engineering,Biomedical engineering,400311,Tissue engineering
+Engineering,Biomedical engineering,400399,Biomedical engineering not elsewhere classified
+Engineering,Chemical engineering,400401,Carbon capture engineering (excl. sequestration)
+Engineering,Chemical engineering,400402,Chemical and thermal processes in energy and combustion
+Engineering,Chemical engineering,400403,Chemical engineering design
+Engineering,Chemical engineering,400404,Electrochemical energy storage and conversion
+Engineering,Chemical engineering,400405,Food engineering
+Engineering,Chemical engineering,400406,Powder and particle technology
+Engineering,Chemical engineering,400407,Process control and simulation
+Engineering,Chemical engineering,400408,Reaction engineering (excl. nuclear reactions)
+Engineering,Chemical engineering,400409,Separation technologies
+Engineering,Chemical engineering,400410,Wastewater treatment processes
+Engineering,Chemical engineering,400411,Water treatment processes
+Engineering,Chemical engineering,400499,Chemical engineering not elsewhere classified
+Engineering,Civil engineering,400501,Architectural engineering
+Engineering,Civil engineering,400502,Civil geotechnical engineering
+Engineering,Civil engineering,400503,Complex civil systems
+Engineering,Civil engineering,400504,Construction engineering
+Engineering,Civil engineering,400505,Construction materials
+Engineering,Civil engineering,400506,Earthquake engineering
+Engineering,Civil engineering,400507,Fire safety engineering
+Engineering,Civil engineering,400508,Infrastructure engineering and asset management
+Engineering,Civil engineering,400509,Structural dynamics
+Engineering,Civil engineering,400510,Structural engineering
+Engineering,Civil engineering,400511,Timber engineering
+Engineering,Civil engineering,400512,Transport engineering
+Engineering,Civil engineering,400513,Water resources engineering
+Engineering,Civil engineering,400599,Civil engineering not elsewhere classified
+Engineering,Communications engineering,400601,Antennas and propagation
+Engineering,Communications engineering,400602,Data communications
+Engineering,Communications engineering,400603,"Molecular, biological, and multi-scale communications"
+Engineering,Communications engineering,400604,Network engineering
+Engineering,Communications engineering,400605,Optical fibre communication systems and technologies
+Engineering,Communications engineering,400606,Satellite communications
+Engineering,Communications engineering,400607,Signal processing
+Engineering,Communications engineering,400608,Wireless communication systems and technologies (incl. microwave and millimetrewave)
+Engineering,Communications engineering,400699,Communications engineering not elsewhere classified
+Engineering,"Control engineering, mechatronics and robotics",400701,Assistive robots and technology
+Engineering,"Control engineering, mechatronics and robotics",400702,Automation engineering
+Engineering,"Control engineering, mechatronics and robotics",400703,Autonomous vehicle systems
+Engineering,"Control engineering, mechatronics and robotics",400704,Biomechatronics
+Engineering,"Control engineering, mechatronics and robotics",400705,Control engineering
+Engineering,"Control engineering, mechatronics and robotics",400706,Field robotics
+Engineering,"Control engineering, mechatronics and robotics",400707,Manufacturing robotics
+Engineering,"Control engineering, mechatronics and robotics",400708,Mechatronics hardware design and architecture
+Engineering,"Control engineering, mechatronics and robotics",400709,Medical robotics
+Engineering,"Control engineering, mechatronics and robotics",400710,Micro-manipulation
+Engineering,"Control engineering, mechatronics and robotics",400711,"Simulation, modelling, and programming of mechatronics systems"
+Engineering,"Control engineering, mechatronics and robotics",400799,"Control engineering, mechatronics and robotics not elsewhere classified"
+Engineering,Electrical engineering,400801,Circuits and systems
+Engineering,Electrical engineering,400802,Electrical circuits and systems
+Engineering,Electrical engineering,400803,"Electrical energy generation (incl. renewables, excl. photovoltaics)"
+Engineering,Electrical engineering,400804,Electrical energy storage
+Engineering,Electrical engineering,400805,"Electrical energy transmission, networks and systems"
+Engineering,Electrical engineering,400806,Electrical machines and drives
+Engineering,Electrical engineering,400807,Engineering electromagnetics
+Engineering,Electrical engineering,400808,Photovoltaic power systems
+Engineering,Electrical engineering,400899,Electrical engineering not elsewhere classified
+Engineering,"Electronics, sensors and digital hardware",400901,Analog electronics and interfaces
+Engineering,"Electronics, sensors and digital hardware",400902,Digital electronic devices
+Engineering,"Electronics, sensors and digital hardware",400903,Digital processor architectures
+Engineering,"Electronics, sensors and digital hardware",400904,"Electronic device and system performance evaluation, testing and simulation"
+Engineering,"Electronics, sensors and digital hardware",400905,Electronic instrumentation
+Engineering,"Electronics, sensors and digital hardware",400906,Electronic sensors
+Engineering,"Electronics, sensors and digital hardware",400907,Industrial electronics
+Engineering,"Electronics, sensors and digital hardware",400908,Microelectronics
+Engineering,"Electronics, sensors and digital hardware",400909,"Photonic and electro-optical devices, sensors and systems (excl. communications)"
+Engineering,"Electronics, sensors and digital hardware",400910,Photovoltaic devices (solar cells)
+Engineering,"Electronics, sensors and digital hardware",400911,Power electronics
+Engineering,"Electronics, sensors and digital hardware",400912,Quantum engineering systems (incl. computing and communications)
+Engineering,"Electronics, sensors and digital hardware",400913,Radio frequency engineering
+Engineering,"Electronics, sensors and digital hardware",400999,"Electronics, sensors and digital hardware not elsewhere classified"
+Engineering,Engineering practice and education,401001,Engineering design
+Engineering,Engineering practice and education,401002,Engineering education
+Engineering,Engineering practice and education,401003,Engineering practice
+Engineering,Engineering practice and education,401004,Humanitarian engineering
+Engineering,Engineering practice and education,401005,Risk engineering
+Engineering,Engineering practice and education,401006,Systems engineering
+Engineering,Engineering practice and education,401099,Engineering practice and education not elsewhere classified
+Engineering,Environmental engineering,401101,Air pollution modelling and control
+Engineering,Environmental engineering,401102,Environmentally sustainable engineering
+Engineering,Environmental engineering,401103,Global and planetary environmental engineering
+Engineering,Environmental engineering,401104,Health and ecological risk assessment
+Engineering,Environmental engineering,401105,Life cycle assessment and industrial ecology
+Engineering,Environmental engineering,401106,"Waste management, reduction, reuse and recycling"
+Engineering,Environmental engineering,401199,Environmental engineering not elsewhere classified
+Engineering,Fluid mechanics and thermal engineering,401201,Aerodynamics (excl. hypersonic aerodynamics)
+Engineering,Fluid mechanics and thermal engineering,401202,Bio-fluids
+Engineering,Fluid mechanics and thermal engineering,401203,Biomedical fluid mechanics
+Engineering,Fluid mechanics and thermal engineering,401204,"Computational methods in fluid flow, heat and mass transfer (incl. computational fluid dynamics)"
+Engineering,Fluid mechanics and thermal engineering,401205,"Experimental methods in fluid flow, heat and mass transfer"
+Engineering,Fluid mechanics and thermal engineering,401206,Fluid-structure interaction and aeroacoustics
+Engineering,Fluid mechanics and thermal engineering,401207,Fundamental and theoretical fluid dynamics
+Engineering,Fluid mechanics and thermal engineering,401208,Geophysical and environmental fluid flows
+Engineering,Fluid mechanics and thermal engineering,401209,Hydrodynamics and hydraulic engineering
+Engineering,Fluid mechanics and thermal engineering,401210,Microfluidics and nanofluidics
+Engineering,Fluid mechanics and thermal engineering,401211,Multiphysics flows (incl. multiphase and reacting flows)
+Engineering,Fluid mechanics and thermal engineering,401212,Non-Newtonian fluid flows (incl. rheology)
+Engineering,Fluid mechanics and thermal engineering,401213,Turbulent flows
+Engineering,Fluid mechanics and thermal engineering,401299,Fluid mechanics and thermal engineering not elsewhere classified
+Engineering,Geomatic engineering,401301,Cartography and digital mapping
+Engineering,Geomatic engineering,401302,Geospatial information systems and geospatial data modelling
+Engineering,Geomatic engineering,401303,Navigation and position fixing
+Engineering,Geomatic engineering,401304,Photogrammetry and remote sensing
+Engineering,Geomatic engineering,401305,Satellite-based positioning
+Engineering,Geomatic engineering,401306,Surveying (incl. hydrographic surveying)
+Engineering,Geomatic engineering,401399,Geomatic engineering not elsewhere classified
+Engineering,Manufacturing engineering,401401,Additive manufacturing
+Engineering,Manufacturing engineering,401402,CAD/CAM systems
+Engineering,Manufacturing engineering,401403,Flexible manufacturing systems
+Engineering,Manufacturing engineering,401404,Industrial engineering
+Engineering,Manufacturing engineering,401405,Machine tools
+Engineering,Manufacturing engineering,401406,Machining
+Engineering,Manufacturing engineering,401407,Manufacturing management
+Engineering,Manufacturing engineering,401408,Manufacturing processes and technologies (excl. textiles)
+Engineering,Manufacturing engineering,401409,Manufacturing safety and quality
+Engineering,Manufacturing engineering,401410,Microtechnology
+Engineering,Manufacturing engineering,401411,"Packaging, storage and transportation (excl. food and agricultural products)"
+Engineering,Manufacturing engineering,401412,Precision engineering
+Engineering,Manufacturing engineering,401413,Textile technology
+Engineering,Manufacturing engineering,401499,Manufacturing engineering not elsewhere classified
+Engineering,Maritime engineering,401501,Marine engineering
+Engineering,Maritime engineering,401502,Naval architecture
+Engineering,Maritime engineering,401503,Ocean engineering
+Engineering,Maritime engineering,401504,Ship and platform structures (incl. maritime hydrodynamics)
+Engineering,Maritime engineering,401505,Special vehicles
+Engineering,Maritime engineering,401599,Maritime engineering not elsewhere classified
+Engineering,Materials engineering,401601,Ceramics
+Engineering,Materials engineering,401602,Composite and hybrid materials
+Engineering,Materials engineering,401603,Compound semiconductors
+Engineering,Materials engineering,401604,Elemental semiconductors
+Engineering,Materials engineering,401605,Functional materials
+Engineering,Materials engineering,401606,Glass
+Engineering,Materials engineering,401607,Metals and alloy materials
+Engineering,Materials engineering,401608,Organic semiconductors
+Engineering,Materials engineering,401609,Polymers and plastics
+Engineering,Materials engineering,401610,"Timber, pulp and paper"
+Engineering,Materials engineering,401611,Wearable materials
+Engineering,Materials engineering,401699,Materials engineering not elsewhere classified
+Engineering,Mechanical engineering,401701,Acoustics and noise control (excl. architectural acoustics)
+Engineering,Mechanical engineering,401702,"Dynamics, vibration and vibration control"
+Engineering,Mechanical engineering,401703,"Energy generation, conversion and storage (excl. chemical and electrical)"
+Engineering,Mechanical engineering,401704,Mechanical engineering asset management
+Engineering,Mechanical engineering,401705,Microelectromechanical systems (MEMS)
+Engineering,Mechanical engineering,401706,Numerical modelling and mechanical characterisation
+Engineering,Mechanical engineering,401707,Solid mechanics
+Engineering,Mechanical engineering,401708,Tribology
+Engineering,Mechanical engineering,401799,Mechanical engineering not elsewhere classified
+Engineering,Nanotechnology,401801,Micro- and nanosystems
+Engineering,Nanotechnology,401802,Molecular and organic electronics
+Engineering,Nanotechnology,401803,Nanoelectromechanical systems
+Engineering,Nanotechnology,401804,Nanoelectronics
+Engineering,Nanotechnology,401805,"Nanofabrication, growth and self assembly"
+Engineering,Nanotechnology,401806,Nanomanufacturing
+Engineering,Nanotechnology,401807,Nanomaterials
+Engineering,Nanotechnology,401808,Nanometrology
+Engineering,Nanotechnology,401809,Nanophotonics
+Engineering,Nanotechnology,401810,Nanoscale characterisation
+Engineering,Nanotechnology,401899,Nanotechnology not elsewhere classified
+Engineering,Resources engineering and extractive metallurgy,401901,Electrometallurgy
+Engineering,Resources engineering and extractive metallurgy,401902,Geomechanics and resources geotechnical engineering
+Engineering,Resources engineering and extractive metallurgy,401903,Hydrometallurgy
+Engineering,Resources engineering and extractive metallurgy,401904,Mineral processing/beneficiation
+Engineering,Resources engineering and extractive metallurgy,401905,Mining engineering
+Engineering,Resources engineering and extractive metallurgy,401906,Nuclear engineering (incl. fuel enrichment and waste processing and storage)
+Engineering,Resources engineering and extractive metallurgy,401907,Petroleum and reservoir engineering
+Engineering,Resources engineering and extractive metallurgy,401908,Pyrometallurgy
+Engineering,Resources engineering and extractive metallurgy,401999,Resources engineering and extractive metallurgy not elsewhere classified
+Engineering,Other engineering,409901,Agricultural engineering
+Engineering,Other engineering,409902,Engineering instrumentation
+Engineering,Other engineering,409903,Granular mechanics
+Engineering,Other engineering,409999,Other engineering not elsewhere classified
+Environmental Sciences,Climate change impacts and adaptation,410101,Carbon sequestration science
+Environmental Sciences,Climate change impacts and adaptation,410102,Ecological impacts of climate change and ecological adaptation
+Environmental Sciences,Climate change impacts and adaptation,410103,Human impacts of climate change and human adaptation
+Environmental Sciences,Climate change impacts and adaptation,410199,Climate change impacts and adaptation not elsewhere classified
+Environmental Sciences,Ecological applications,410201,Bioavailability and ecotoxicology
+Environmental Sciences,Ecological applications,410202,Biosecurity science and invasive species ecology
+Environmental Sciences,Ecological applications,410203,Ecosystem function
+Environmental Sciences,Ecological applications,410204,Ecosystem services (incl. pollination)
+Environmental Sciences,Ecological applications,410205,Fire ecology
+Environmental Sciences,Ecological applications,410206,Landscape ecology
+Environmental Sciences,Ecological applications,410299,Ecological applications not elsewhere classified
+Environmental Sciences,Environmental biotechnology,410301,Biodiscovery
+Environmental Sciences,Environmental biotechnology,410302,Biological control
+Environmental Sciences,Environmental biotechnology,410303,Bioremediation
+Environmental Sciences,Environmental biotechnology,410304,Environmental biotechnology diagnostics (incl. biosensors)
+Environmental Sciences,Environmental biotechnology,410305,Environmental marine biotechnology
+Environmental Sciences,Environmental biotechnology,410306,Environmental nanotechnology and nanometrology
+Environmental Sciences,Environmental biotechnology,410399,Environmental biotechnology not elsewhere classified
+Environmental Sciences,Environmental management,410401,Conservation and biodiversity
+Environmental Sciences,Environmental management,410402,Environmental assessment and monitoring
+Environmental Sciences,Environmental management,410403,Environmental education and extension
+Environmental Sciences,Environmental management,410404,Environmental management
+Environmental Sciences,Environmental management,410405,Environmental rehabilitation and restoration
+Environmental Sciences,Environmental management,410406,Natural resource management
+Environmental Sciences,Environmental management,410407,Wildlife and habitat management
+Environmental Sciences,Environmental management,410499,Environmental management not elsewhere classified
+Environmental Sciences,Pollution and contamination,410501,Environmental biogeochemistry
+Environmental Sciences,Pollution and contamination,410502,Noise and wave pollution processes and measurement
+Environmental Sciences,Pollution and contamination,410503,Groundwater quality processes and contaminated land assessment
+Environmental Sciences,Pollution and contamination,410504,Surface water quality processes and contaminated sediment assessment
+Environmental Sciences,Pollution and contamination,410599,Pollution and contamination not elsewhere classified
+Environmental Sciences,Soil sciences,410601,Land capability and soil productivity
+Environmental Sciences,Soil sciences,410602,Pedology and pedometrics
+Environmental Sciences,Soil sciences,410603,Soil biology
+Environmental Sciences,Soil sciences,410604,Soil chemistry and soil carbon sequestration (excl. carbon sequestration science)
+Environmental Sciences,Soil sciences,410605,Soil physics
+Environmental Sciences,Soil sciences,410699,Soil sciences not elsewhere classified
+Environmental Sciences,Other environmental sciences,419999,Other environmental sciences not elsewhere classified
+Health Sciences,Allied health and rehabilitation science,420101,Arts therapy
+Health Sciences,Allied health and rehabilitation science,420102,Audiology
+Health Sciences,Allied health and rehabilitation science,420103,Music therapy
+Health Sciences,Allied health and rehabilitation science,420104,Occupational therapy
+Health Sciences,Allied health and rehabilitation science,420105,Orthoptics
+Health Sciences,Allied health and rehabilitation science,420106,Physiotherapy
+Health Sciences,Allied health and rehabilitation science,420107,Podiatry
+Health Sciences,Allied health and rehabilitation science,420108,Prosthetics and orthotics
+Health Sciences,Allied health and rehabilitation science,420109,Rehabilitation
+Health Sciences,Allied health and rehabilitation science,420110,Speech pathology
+Health Sciences,Allied health and rehabilitation science,420199,Allied health and rehabilitation science not elsewhere classified
+Health Sciences,Epidemiology,420201,Behavioural epidemiology
+Health Sciences,Epidemiology,420202,Disease surveillance
+Health Sciences,Epidemiology,420203,Environmental epidemiology
+Health Sciences,Epidemiology,420204,Epidemiological methods
+Health Sciences,Epidemiology,420205,Epidemiological modelling
+Health Sciences,Epidemiology,420206,Forensic epidemiology
+Health Sciences,Epidemiology,420207,Major global burdens of disease
+Health Sciences,Epidemiology,420208,Nutritional epidemiology
+Health Sciences,Epidemiology,420209,Occupational epidemiology
+Health Sciences,Epidemiology,420210,Social epidemiology
+Health Sciences,Epidemiology,420299,Epidemiology not elsewhere classified
+Health Sciences,Health services and systems,420301,Aged health care
+Health Sciences,Health services and systems,420302,Digital health
+Health Sciences,Health services and systems,420303,Family care
+Health Sciences,Health services and systems,420304,General practice
+Health Sciences,Health services and systems,420305,Health and community services
+Health Sciences,Health services and systems,420306,Health care administration
+Health Sciences,Health services and systems,420307,Health counselling
+Health Sciences,Health services and systems,420308,Health informatics and information systems
+Health Sciences,Health services and systems,420309,Health management
+Health Sciences,Health services and systems,420310,Health surveillance
+Health Sciences,Health services and systems,420311,Health systems
+Health Sciences,Health services and systems,420312,Implementation science and evaluation
+Health Sciences,Health services and systems,420313,Mental health services
+Health Sciences,Health services and systems,420314,Multimorbidity
+Health Sciences,Health services and systems,420315,One health
+Health Sciences,Health services and systems,420316,Palliative care
+Health Sciences,Health services and systems,420317,Patient safety
+Health Sciences,Health services and systems,420318,People with disability
+Health Sciences,Health services and systems,420319,Primary health care
+Health Sciences,Health services and systems,420320,Residential client care
+Health Sciences,Health services and systems,420321,Rural and remote health services
+Health Sciences,Health services and systems,420399,Health services and systems not elsewhere classified
+Health Sciences,Midwifery,420401,Clinical midwifery
+Health Sciences,Midwifery,420402,Models of care and place of birth
+Health Sciences,Midwifery,420403,Psychosocial aspects of childbirth and perinatal mental health
+Health Sciences,Midwifery,420499,Midwifery not elsewhere classified
+Health Sciences,Nursing,420501,Acute care
+Health Sciences,Nursing,420502,Aged care nursing
+Health Sciences,Nursing,420503,Community and primary care
+Health Sciences,Nursing,420504,Mental health nursing
+Health Sciences,Nursing,420505,Nursing workforce
+Health Sciences,Nursing,420506,Sub-acute care
+Health Sciences,Nursing,420599,Nursing not elsewhere classified
+Health Sciences,Public health,420601,Community child health
+Health Sciences,Public health,420602,Health equity
+Health Sciences,Public health,420603,Health promotion
+Health Sciences,Public health,420604,Injury prevention
+Health Sciences,Public health,420605,Preventative health care
+Health Sciences,Public health,420606,Social determinants of health
+Health Sciences,Public health,420699,Public health not elsewhere classified
+Health Sciences,Sports science and exercise,420701,Biomechanics
+Health Sciences,Sports science and exercise,420702,Exercise physiology
+Health Sciences,Sports science and exercise,420703,Motor control
+Health Sciences,Sports science and exercise,420799,Sports science and exercise not elsewhere classified
+Health Sciences,"Traditional, complementary and integrative medicine",420801,Chiropractic
+Health Sciences,"Traditional, complementary and integrative medicine",420802,Naturopathy
+Health Sciences,"Traditional, complementary and integrative medicine",420803,Traditional Chinese medicine and treatments
+Health Sciences,"Traditional, complementary and integrative medicine",420899,"Traditional, complementary and integrative medicine not elsewhere classified"
+Health Sciences,Other health sciences,429999,Other health sciences not elsewhere classified
+"History, Heritage and Archaeology",Archaeology,430101,Archaeological science
+"History, Heritage and Archaeology",Archaeology,430102,"Archaeology of Asia, Africa and the Americas"
+"History, Heritage and Archaeology",Archaeology,430103,Archaeology of Australia (excl. Aboriginal and Torres Strait Islander)
+"History, Heritage and Archaeology",Archaeology,430104,"Archaeology of Europe, the Mediterranean and the Levant"
+"History, Heritage and Archaeology",Archaeology,430105,Archaeology of New Zealand (excl. Māori)
+"History, Heritage and Archaeology",Archaeology,430106,Digital archaeology
+"History, Heritage and Archaeology",Archaeology,430107,Historical archaeology (incl. industrial archaeology)
+"History, Heritage and Archaeology",Archaeology,430108,Maritime archaeology
+"History, Heritage and Archaeology",Archaeology,430199,Archaeology not elsewhere classified
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430201,"Archival, repository and related studies"
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430202,"Critical heritage, museum and archive studies"
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430203,Cultural heritage management (incl. world heritage)
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430204,Digital heritage
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430205,Heritage and cultural conservation
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430206,Heritage collections and interpretations
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430207,"Heritage tourism, visitor and audience studies"
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430208,Intangible heritage
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430209,Materials conservation
+"History, Heritage and Archaeology","Heritage, archive and museum studies",430299,"Heritage, archive and museum studies not elsewhere classified"
+"History, Heritage and Archaeology",Historical studies,430301,Asian history
+"History, Heritage and Archaeology",Historical studies,430302,Australian history
+"History, Heritage and Archaeology",Historical studies,430303,Biography
+"History, Heritage and Archaeology",Historical studies,430304,British history
+"History, Heritage and Archaeology",Historical studies,430305,Classical Greek and Roman history
+"History, Heritage and Archaeology",Historical studies,430306,Digital history
+"History, Heritage and Archaeology",Historical studies,430307,Environmental history
+"History, Heritage and Archaeology",Historical studies,430308,"European history (excl. British, classical Greek and Roman)"
+"History, Heritage and Archaeology",Historical studies,430309,Gender history
+"History, Heritage and Archaeology",Historical studies,430310,Global and world history
+"History, Heritage and Archaeology",Historical studies,430311,Historical studies of crime
+"History, Heritage and Archaeology",Historical studies,430312,Histories of race
+"History, Heritage and Archaeology",Historical studies,430313,"History of empires, imperialism and colonialism"
+"History, Heritage and Archaeology",Historical studies,430314,History of religion
+"History, Heritage and Archaeology",Historical studies,430315,History of the pacific
+"History, Heritage and Archaeology",Historical studies,430316,International history
+"History, Heritage and Archaeology",Historical studies,430317,Latin and South American history
+"History, Heritage and Archaeology",Historical studies,430318,Middle Eastern and North African history
+"History, Heritage and Archaeology",Historical studies,430319,Migration history
+"History, Heritage and Archaeology",Historical studies,430320,New Zealand history
+"History, Heritage and Archaeology",Historical studies,430321,North American history
+"History, Heritage and Archaeology",Historical studies,430322,Sub-Saharan African history
+"History, Heritage and Archaeology",Historical studies,430323,Transnational history
+"History, Heritage and Archaeology",Historical studies,430399,Historical studies not elsewhere classified
+"History, Heritage and Archaeology","Other history, heritage and archaeology",439999,"Other history, heritage and archaeology not elsewhere classified"
+Human Society,Anthropology,440101,Anthropology of development
+Human Society,Anthropology,440102,Anthropology of gender and sexuality
+Human Society,Anthropology,440103,Biological (physical) anthropology
+Human Society,Anthropology,440104,Environmental anthropology
+Human Society,Anthropology,440105,Linguistic anthropology
+Human Society,Anthropology,440106,Medical anthropology
+Human Society,Anthropology,440107,Social and cultural anthropology
+Human Society,Anthropology,440199,Anthropology not elsewhere classified
+Human Society,Criminology,440201,Causes and prevention of crime
+Human Society,Criminology,440202,"Correctional theory, offender treatment and rehabilitation"
+Human Society,Criminology,440203,Courts and sentencing
+Human Society,Criminology,440204,Crime and social justice
+Human Society,Criminology,440205,Criminological theories
+Human Society,Criminology,440206,Critical approaches to crime
+Human Society,Criminology,440207,Cybercrime
+Human Society,Criminology,440208,Environmental crime
+Human Society,Criminology,440209,Gender and crime
+Human Society,Criminology,440210,Organised crime
+Human Society,Criminology,440211,"Police administration, procedures and practice"
+Human Society,Criminology,440212,Private policing and security services
+Human Society,Criminology,440213,Race/ethnicity and crime
+Human Society,Criminology,440214,Sociological studies of crime
+Human Society,Criminology,440215,State crime
+Human Society,Criminology,440216,"Technology, crime and surveillance"
+Human Society,Criminology,440217,Terrorism
+Human Society,Criminology,440218,Victims
+Human Society,Criminology,440219,White collar crime
+Human Society,Criminology,440299,Criminology not elsewhere classified
+Human Society,Demography,440301,Family and household studies
+Human Society,Demography,440302,Fertility
+Human Society,Demography,440303,Migration
+Human Society,Demography,440304,Mortality
+Human Society,Demography,440305,Population trends and policies
+Human Society,Demography,440399,Demography not elsewhere classified
+Human Society,Development studies,440401,Development cooperation
+Human Society,Development studies,440402,"Humanitarian disasters, conflict and peacebuilding"
+Human Society,Development studies,440403,"Labour, migration and development"
+Human Society,Development studies,440404,Political economy and social change
+Human Society,Development studies,440405,"Poverty, inclusivity and wellbeing"
+Human Society,Development studies,440406,Rural community development
+Human Society,Development studies,440407,Socio-economic development
+Human Society,Development studies,440408,Urban community development
+Human Society,Development studies,440499,Development studies not elsewhere classified
+Human Society,Gender studies,440501,Feminist and queer theory
+Human Society,Gender studies,440502,Feminist methodologies
+Human Society,Gender studies,440503,Feminist theory
+Human Society,Gender studies,440504,Gender relations
+Human Society,Gender studies,440505,Intersectional studies
+Human Society,Gender studies,440506,Sexualities
+Human Society,Gender studies,440507,Studies of men and masculinities
+Human Society,Gender studies,440508,Transgender studies
+Human Society,Gender studies,440509,Women's studies (incl. girls' studies)
+Human Society,Gender studies,440599,Gender studies not elsewhere classified
+Human Society,Human geography,440601,Cultural geography
+Human Society,Human geography,440602,Development geography
+Human Society,Human geography,440603,Economic geography
+Human Society,Human geography,440604,Environmental geography
+Human Society,Human geography,440605,Health geography
+Human Society,Human geography,440606,Political geography
+Human Society,Human geography,440607,Population geography
+Human Society,Human geography,440608,"Recreation, leisure and tourism geography"
+Human Society,Human geography,440609,Rural and regional geography
+Human Society,Human geography,440610,Social geography
+Human Society,Human geography,440611,Transport geography
+Human Society,Human geography,440612,Urban geography
+Human Society,Human geography,440699,Human geography not elsewhere classified
+Human Society,Policy and administration,440701,Communications and media policy
+Human Society,Policy and administration,440702,Crime policy
+Human Society,Policy and administration,440703,Economic development policy
+Human Society,Policy and administration,440704,Environment policy
+Human Society,Policy and administration,440705,"Gender, policy and administration"
+Human Society,Policy and administration,440706,Health policy
+Human Society,Policy and administration,440707,Housing policy
+Human Society,Policy and administration,440708,Public administration
+Human Society,Policy and administration,440709,Public policy
+Human Society,Policy and administration,440710,"Research, science and technology policy"
+Human Society,Policy and administration,440711,Risk policy
+Human Society,Policy and administration,440712,Social policy
+Human Society,Policy and administration,440713,Tourism policy
+Human Society,Policy and administration,440714,Urban policy
+Human Society,Policy and administration,440799,Policy and administration not elsewhere classified
+Human Society,Political science,440801,Australian government and politics
+Human Society,Political science,440802,Citizenship
+Human Society,Political science,440803,Comparative government and politics
+Human Society,Political science,440804,Defence studies
+Human Society,Political science,440805,Environmental politics
+Human Society,Political science,440806,Gender and politics
+Human Society,Political science,440807,Government and politics of Asia and the Pacific
+Human Society,Political science,440808,International relations
+Human Society,Political science,440809,New Zealand government and politics
+Human Society,Political science,440810,Peace studies
+Human Society,Political science,440811,Political theory and political philosophy
+Human Society,Political science,440899,Political science not elsewhere classified
+Human Society,Social work,440901,Clinical social work practice
+Human Society,Social work,440902,"Counselling, wellbeing and community services"
+Human Society,Social work,440903,Social program evaluation
+Human Society,Social work,440999,Social work not elsewhere classified
+Human Society,Sociology,441001,"Applied sociology, program evaluation and social impact assessment"
+Human Society,Sociology,441002,Environmental sociology
+Human Society,Sociology,441003,Rural sociology
+Human Society,Sociology,441004,Social change
+Human Society,Sociology,441005,Social theory
+Human Society,Sociology,441006,Sociological methodology and research methods
+Human Society,Sociology,441007,Sociology and social studies of science and technology
+Human Society,Sociology,441008,Sociology of culture
+Human Society,Sociology,441009,Sociology of family and relationships
+Human Society,Sociology,441010,Sociology of gender
+Human Society,Sociology,441011,Sociology of health
+Human Society,Sociology,441012,Sociology of inequalities
+Human Society,Sociology,441013,"Sociology of migration, ethnicity and multiculturalism"
+Human Society,Sociology,441014,Sociology of religion
+Human Society,Sociology,441015,Sociology of the life course
+Human Society,Sociology,441016,Urban sociology and community studies
+Human Society,Sociology,441099,Sociology not elsewhere classified
+Human Society,Other human society,449901,Studies of Asian society
+Human Society,Other human society,449999,Other human society not elsewhere classified
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450101,Aboriginal and Torres Strait Islander archaeology
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450102,Aboriginal and Torres Strait Islander artefacts
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450103,Aboriginal and Torres Strait Islander cultural history
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450104,Aboriginal and Torres Strait Islander culture
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450105,"Aboriginal and Torres Strait Islander curatorial, archives and museum studies"
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450106,Aboriginal and Torres Strait Islander ethics
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450107,Aboriginal and Torres Strait Islander history
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450108,Aboriginal and Torres Strait Islander linguistics and languages
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450109,"Aboriginal and Torres Strait Islander literature, journalism and professional writing"
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450110,"Aboriginal and Torres Strait Islander media, film, animation and photography"
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450111,Aboriginal and Torres Strait Islander music and performing arts
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450112,Aboriginal and Torres Strait Islander philosophy
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450113,Aboriginal and Torres Strait Islander religion and religious studies
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450114,Aboriginal and Torres Strait Islander repatriation
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450115,Aboriginal and Torres Strait Islander research methods
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450116,Aboriginal and Torres Strait Islander visual arts and crafts
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450117,"Aboriginal and Torres Strait Islander ways of knowing, being and doing"
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450118,Conservation of Aboriginal and Torres Strait Islander heritage
+Indigenous Studies,"Aboriginal and Torres Strait Islander culture, language and history",450199,"Aboriginal and Torres Strait Islander culture, language and history not elsewhere classified"
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450201,Aboriginal and Torres Strait Islander curriculum and pedagogy
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450202,Aboriginal and Torres Strait Islander early childhood education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450203,Aboriginal and Torres Strait Islander educational methods
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450204,"Aboriginal and Torres Strait Islander technical, further, continuing and community education"
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450205,Aboriginal and Torres Strait Islander higher education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450206,Aboriginal and Torres Strait Islander language education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450207,Aboriginal and Torres Strait Islander men’s education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450208,Aboriginal and Torres Strait Islander primary education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450209,Aboriginal and Torres Strait Islander secondary education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450210,Aboriginal and Torres Strait Islander student engagement and teaching
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450211,Aboriginal and Torres Strait Islander women’s education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450212,Cultural responsiveness and working with Aboriginal and Torres Strait Islander communities education
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450213,"Embedding Aboriginal and Torres Strait Islander knowledges, histories, culture, country, perspectives and ethics in education"
+Indigenous Studies,Aboriginal and Torres Strait Islander education,450299,Aboriginal and Torres Strait Islander education not elsewhere classified
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450301,Aboriginal and Torres Strait Islander agriculture and forestry
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450302,Aboriginal and Torres Strait Islander earth sciences
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450303,Aboriginal and Torres Strait Islander environmental conservation
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450304,Aboriginal and Torres Strait Islander environmental knowledges
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450305,Aboriginal and Torres Strait Islander fisheries and customary fisheries
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450306,Aboriginal and Torres Strait Islander land and water management
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450307,Aboriginal and Torres Strait Islander marine environment science
+Indigenous Studies,Aboriginal and Torres Strait Islander environmental knowledges and management,450399,Aboriginal and Torres Strait Islander environmental knowledges and management not elsewhere classified
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450401,Aboriginal and Torres Strait Islander and disability
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450402,Aboriginal and Torres Strait Islander biomedical and clinical sciences
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450403,Aboriginal and Torres Strait Islander child health and wellbeing
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450404,Aboriginal and Torres Strait Islander cultural determinants of health
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450405,Aboriginal and Torres Strait Islander diet and nutrition
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450406,Aboriginal and Torres Strait Islander epidemiology
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450407,Aboriginal and Torres Strait Islander health policy
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450408,Aboriginal and Torres Strait Islander health promotion
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450409,Aboriginal and Torres Strait Islander health services
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450410,Aboriginal and Torres Strait Islander lifecourse
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450411,Aboriginal and Torres Strait Islander medicine and treatments
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450412,Aboriginal and Torres Strait Islander men’s health and wellbeing
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450413,Aboriginal and Torres Strait Islander midwifery and paediatrics
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450414,Aboriginal and Torres Strait Islander mothers and babies health and wellbeing
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450415,Aboriginal and Torres Strait Islander nursing
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450416,Aboriginal and Torres Strait Islander psychology
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450417,Aboriginal and Torres Strait Islander public health and wellbeing
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450418,Aboriginal and Torres Strait Islander remote health
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450419,Aboriginal and Torres Strait Islander social determinants of health
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450420,"Aboriginal and Torres Strait Islander social, emotional, cultural and spiritual wellbeing"
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450421,Aboriginal and Torres Strait Islander sport and physical activity
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450422,Aboriginal and Torres Strait Islander theory of change models for health
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450423,Aboriginal and Torres Strait Islander youth and family social and emotional wellbeing
+Indigenous Studies,Aboriginal and Torres Strait Islander health and wellbeing,450499,Aboriginal and Torres Strait Islander health and wellbeing not elsewhere classified
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450501,Aboriginal and Torres Strait Islander accounting
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450502,Aboriginal and Torres Strait Islander anthropology
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450503,Aboriginal and Torres Strait Islander architecture
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450504,Aboriginal and Torres Strait Islander commerce
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450505,Aboriginal and Torres Strait Islander community and regional development
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450506,Aboriginal and Torres Strait Islander community governance and decision making
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450507,Aboriginal and Torres Strait Islander community-based research
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450508,Aboriginal and Torres Strait Islander criminology
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450509,Aboriginal and Torres Strait Islander customary law
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450510,Aboriginal and Torres Strait Islander design practice and management
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450511,Aboriginal and Torres Strait Islander economics
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450512,Aboriginal and Torres Strait Islander finance
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450513,Aboriginal and Torres Strait Islander human geography and demography
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450514,Aboriginal and Torres Strait Islander legislation
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450515,Aboriginal and Torres Strait Islander management
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450516,Aboriginal and Torres Strait Islander marketing
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450517,Aboriginal and Torres Strait Islander not-for-profit social enterprises
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450518,Aboriginal and Torres Strait Islander peoples and the law
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450519,Aboriginal and Torres Strait Islander perspectives
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450520,Aboriginal and Torres Strait Islander political participation and representation
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450521,Aboriginal and Torres Strait Islander politics
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450522,Aboriginal and Torres Strait Islander social impact and program evaluation
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450523,Aboriginal and Torres Strait Islander social work and social justice
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450524,Aboriginal and Torres Strait Islander sociological studies
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450525,Aboriginal and Torres Strait Islander sociology
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450526,Aboriginal and Torres Strait Islander tourism
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450527,Aboriginal and Torres Strait Islander urban and regional planning
+Indigenous Studies,"Aboriginal and Torres Strait Islander peoples, society and community",450599,"Aboriginal and Torres Strait Islander peoples, society and community not elsewhere classified"
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450601,Aboriginal and Torres Strait Islander astronomy and cosmology
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450602,Aboriginal and Torres Strait Islander biological sciences
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450603,Aboriginal and Torres Strait Islander computing technology use and design
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450604,Aboriginal and Torres Strait Islander engineering
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450605,Aboriginal and Torres Strait Islander genomics
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450606,Aboriginal and Torres Strait Islander information and knowledge management systems
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450607,Aboriginal and Torres Strait Islander innovation
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450608,Aboriginal and Torres Strait Islander knowledge management methods
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450609,"Aboriginal and Torres Strait Islander mathematical, physical and chemical sciences (excl. astronomy and cosmology)"
+Indigenous Studies,Aboriginal and Torres Strait Islander sciences,450699,Aboriginal and Torres Strait Islander sciences not elsewhere classified
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450701,Te whāomoomo i te tuku ihotanga Māori (conservation of Māori heritage)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450702,Te mana wahine (female status)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450703,Te mana tāne (male status)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450704,Te mātai whaipara Māori (Māori archaeology)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450705,Ngā taonga Māori nō mua (Māori artefacts)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450706,Te hītori ahurea Māori (Māori cultural history)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450707,Te ahurea Māori (Māori culture)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450708,"Ngā mātai kaitiaki, pūranga me ngā whare tongarewa o te Māori (Māori curatorial, archives and museum studies)"
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450709,Ngā matatika o te Māori (Māori ethics)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450710,Te hītori Māori (Māori history)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450711,"Te whenua, ahurea me te tuakiri o te Māori (Māori land, culture and identity)"
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450712,Te mātai i te reo Māori me te reo Māori (Māori linguistics and languages)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450713,"Te mātākōrero, te kawe kōrero me te tuhituhi ngaio o te Māori (Māori literature, journalism and professional writing)"
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450714,"Ngā arapāho, ngā kiriata, te hākoritanga me te hopu whakaahua o te Māori (Māori media, film, animation and photography)"
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450715,Te puoro me ngā mahi a te rēhia o te Māori (Māori music and performing arts)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450716,Te rapunga whakaaro o te Māori (Māori philosophy)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450717,Ngā Kaupapa Māori (Māori projects)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450718,Te whakapono me te mātai whakapono o te Māori (Māori religion and religious studies)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450719,Te whakahoki taonga a te Māori ki te kāinga (Māori repatriation)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450720,Ngā tikanga rangahau o te Māori (Māori research methods)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450721,Ngā toi ataata ngā mahi ā-rehe o te Māori (Māori visual arts and crafts)
+Indigenous Studies,"Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",450799,"Te ahurea, reo, me te hītori o te Māori kāore anō kia whakarōpūtia i wāhi kē (Māori culture, language and history not elsewhere classified)"
+Indigenous Studies,Mātauranga Māori (Māori education),450801,Ngā kōhanga reo (Māori curriculum and pedagogy)
+Indigenous Studies,Mātauranga Māori (Māori education),450802,Te Whāriki - te mātauranga kōhungahunga Māori (Māori early childhood education)
+Indigenous Studies,Mātauranga Māori (Māori education),450803,Ngā tikanga mātauranga o te Māori (Māori educational methods)
+Indigenous Studies,Mātauranga Māori (Māori education),450804,Te mātauranga kura tuatoru Māori (Māori higher education)
+Indigenous Studies,Mātauranga Māori (Māori education),450805,Te mātauranga reo Māori (Māori language education)
+Indigenous Studies,Mātauranga Māori (Māori education),450806,Ngā kura kaupapa Māori (Māori primary education)
+Indigenous Studies,Mātauranga Māori (Māori education),450807,Te urupare me te whai wāhi Māori ki te mātauranga (Māori responsiveness and engaged education)
+Indigenous Studies,Mātauranga Māori (Māori education),450808,Te mātauranga kura tuarua Māori (Māori secondary education)
+Indigenous Studies,Mātauranga Māori (Māori education),450809,Te whai wāhi ākonga me ngā mahi whakaako o te Māori (Māori student engagement and teaching)
+Indigenous Studies,Mātauranga Māori (Māori education),450810,"Tō te Māori mātauranga hangarau, mātauranga atu anō, mātauranga haere tonu, me te mātauranga hapori (Māori technical, further, continuing and community education)"
+Indigenous Studies,Mātauranga Māori (Māori education),450811,Te mātauranga Māori i roto i te mātauranga (Mātauranga Māori in education)
+Indigenous Studies,Mātauranga Māori (Māori education),450899,Te mātauranga Māori kāore anō kia whakarōpūtia i wāhi kē (Māori education not elsewhere classified)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450901,Te ahuwhenua me ngā mahi ngahere o te Māori (Māori agriculture and forestry)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450902,Ngā pūtaiao-ā-nuku o te Māori (Māori earth sciences)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450903,Te whāomoomo taiao o te Māori (Māori environmental conservation)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450904,Ngā mātauranga taiao o te Māori (Māori environmental knowledges)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450905,Te ahumoana me te ahumoana tuku iho o te Māori (Māori fisheries and customary fisheries)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450906,Te whakahaere whenua me te wai o te Māori (Māori land and water management)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450907,Te pūtaiao taiao moana o te Māori (Māori marine environment science)
+Indigenous Studies,Ngā mātauranga taiao o te Māori (Māori environmental knowledges),450999,Ngā mātauranga taiao o te Māori kāore anō kia whakarōpūtia i wāhi kē (Māori environmental knowledges not elsewhere classified)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451001,Te whaikaha me te Māori (Māori and disability)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451002,"Ngā pūtaiao koiora-hauora, haumanu hoki o te Māori (Māori biomedical and clinical sciences)"
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451003,Ngā tokoingoa ahurea o te hauora o te Māori (Māori cultural determinants of health)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451004,Te horakai me ngā kai o te Māori (Māori diet and nutrition)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451005,Te mātai tahumaero o te Māori (Māori epidemiology)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451006,Ngā kaupapahere hauora o te Māori (Māori health policy)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451007,Te whakatairanga hauora o te Māori (Māori health promotion)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451008,Ngā wāhanga ora o te Māori (Māori life course)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451009,Ngā rongoā me ngā whakamaimoa o te Māori (Māori medicine and treatments)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451010,Ngā kaiwhakawhānau me te mātai mate tamariki o te Māori (Māori midwifery and paediatrics)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451011,"Te hauora me te oranga ā-whaea, ā-pēpi o te Māori (Māori mothers and babies health and wellbeing)"
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451012,Te mahi tapuhi o te Māori (Māori nursing)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451013,Mātauranga hinengaro kaupapa Māori (Māori psychology)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451014,Ngā pūnaha mātauranga hinengaro o te Māori (Māori psychology knowledge systems)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451015,Te hauora me te oranga tūmatanui o te Māori (Māori public health and wellbeing)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451016,Te hauora mamao o te Māori (Māori remote health)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451017,"Te oranga ā-pāpori, ā-hinengaro, ā-ahurea, ā-wairua o te Māori (Māori social, cultural, emotional and spiritual wellbeing)"
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451018,Ngā tokoingoa pāpori o te hauora o te Māori (Māori social determinants of health)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451019,Ngā hākinakina me te korikori tinana o te Māori (Māori sport and physical activity)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451020,Te ariā o ngā tauira panoni hauora o te Māori (Māori theory of change models for health)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451021,Ngā taiohi me ngā whānau Māori (Māori youth and family)
+Indigenous Studies,Te hauora me te oranga o te Māori (Māori health and wellbeing),451099,Te hauora me te oranga o te Māori kāore anō kia whakarōpūhia i wāhi kē (Māori health and wellbeing not elsewhere classified)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451101,Te mahi kaute o te Māori (Māori accounting)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451102,Te mātauranga tikanga Māori (Māori anthropology)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451103,Te hoahoanga whare o te Māori (Māori architecture)  
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451104,Ngā mahi tauhokohoko o te Māori (Māori commerce)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451105,"Te whanaketanga ā-hapori, ā-rohe o te Māori (Māori community and regional development)"
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451106,Te rangahau kei rō hapori o te Māori (Māori community-based research)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451107,"Te kāwana ā-hapori, whakatau take hoki o te Māori (Māori community governance and decision making)"
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451108,Te mātauranga taihara Māori (Māori criminology)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451109,Ngā tikanga Māori (Māori customary law)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451110,Te whakaharatau me te whakahaere hoahoa o te Māori (Māori design practice and management)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451111,Te mātauranga ōhanga o te Māori (Māori economics)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451112,Te ahumoni Māori (Māori finance)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451113,Te mātauranga matawhenua ā-iwi me te tatauranga ā-iwi o te Māori (Māori human geography and demography)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451114,Te ture Whenua (Māori land law)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451115,Te ture me te tika Māori (Māori law and justice)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451116,Ngā ture Māori (Māori legislation)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451117,Te whakahaere o te Māori (Māori management)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451118,Te whakamākete o te Māori (Māori marketing)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451119,Ngā hinonga pāpori kaupapa atawhai o te Māori (Māori not-for-profit social enterprises)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451120,Ngā iwi Māori me te ture (Māori peoples and the law)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451121,Ngā tirohanga Māori (Māori perspectives)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451122,Te whai wāhi me te whakakanohi taha tōrāngapū o te Māori (Māori political participation and representation)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451123,Ngā mahi tōrangapū Māori (Māori politics)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451124,Ngā ture rawa Māori (Māori resource law)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451125,Te pāpātanga pāpori me te aromātai hōtaka o te Māori (Māori social impact and program evaluation)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451126,Ngā mahi tauwhiro me te tika pāpori o te Māori (Māori social work and social justice)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451127,Ngā mātai tikanga ā-iwi o te Māori (Māori sociological studies)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451128,Te mātauranga pāpori o te Māori (Māori sociology)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451129,Te mahi tāpoi Māori (Māori tourism)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451130,Te Tiriti o Waitangi (The Treaty of Waitangi)
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451131,"Te whakamahere ā-tāone, ā-rohe o te Māori (Māori urban and regional planning)"
+Indigenous Studies,"Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",451199,"Ngā tāngata, te porihanga me ngā hapori o te Māori kāore anō kia whakarōpūtia i wāhi kē (Māori peoples, society and community not elsewhere classified)"
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451201,Te mātai arorangi me te mātai tuarangi o te Māori (Māori astronomy and cosmology)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451202,Ngā pūtaiao koiora o te Māori (Māori biological sciences)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451203,Te whakamahi me te hoahoa o te hangarau rorohiko o te Māori (Māori computing technology use and design)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451204,Te mana motuhake o ngā raraunga Māori (Māori data sovereignty)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451205,Te mātauranga pūkaha o te Māori (Māori engineering)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451206,Te mātai huingaira o te Māori (Māori genomics)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451207,Ngā pūnaha whakahaere mōhiohio me te mātauranga o te Māori (Māori information and knowledge management systems)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451208,Te wairua auaha o te Māori (Māori innovation)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451209,Ngā tikanga whakahaere mōhiotanga Māori (Māori knowledge management methods)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451210,"Ngā pūtaiao pāngarau, ōkiko, matū hoki - hāunga te mātai arorangi me te mātai tuarangi o te Māori (Māori mathematical, physical and chemical sciences - excl. astronomy and cosmology)"
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451211,Te tukatuka reo noa o te Māori (Māori natural language processing)
+Indigenous Studies,Ngā pūtaiao Māori (Māori sciences),451299,Ngā pūtaiao Māori kāore anō kia whakarōpūhia i wāhi kē (Māori sciences not elsewhere classified)
+Indigenous Studies,"Pacific Peoples culture, language and history",451301,Archaeology of New Guinea and Pacific Islands (excl. New Zealand)
+Indigenous Studies,"Pacific Peoples culture, language and history",451302,Conservation of Pacific Peoples heritage
+Indigenous Studies,"Pacific Peoples culture, language and history",451303,Pacific Peoples artefacts
+Indigenous Studies,"Pacific Peoples culture, language and history",451304,Pacific Peoples cultural history
+Indigenous Studies,"Pacific Peoples culture, language and history",451305,Pacific Peoples culture
+Indigenous Studies,"Pacific Peoples culture, language and history",451306,"Pacific Peoples curatorial, archives and museum studies"
+Indigenous Studies,"Pacific Peoples culture, language and history",451307,Pacific Peoples ethics
+Indigenous Studies,"Pacific Peoples culture, language and history",451308,Pacific Peoples history
+Indigenous Studies,"Pacific Peoples culture, language and history",451309,"Pacific Peoples land, culture and identity"
+Indigenous Studies,"Pacific Peoples culture, language and history",451310,Pacific Peoples linguistics and languages
+Indigenous Studies,"Pacific Peoples culture, language and history",451311,"Pacific Peoples literature, journalism and professional writing"
+Indigenous Studies,"Pacific Peoples culture, language and history",451312,"Pacific Peoples media, film, animation and photography"
+Indigenous Studies,"Pacific Peoples culture, language and history",451313,Pacific Peoples music and performing arts
+Indigenous Studies,"Pacific Peoples culture, language and history",451314,Pacific Peoples philosophy
+Indigenous Studies,"Pacific Peoples culture, language and history",451315,Pacific Peoples religion and religious studies
+Indigenous Studies,"Pacific Peoples culture, language and history",451316,Pacific Peoples repatriation
+Indigenous Studies,"Pacific Peoples culture, language and history",451317,Pacific Peoples research methods
+Indigenous Studies,"Pacific Peoples culture, language and history",451318,Pacific Peoples visual arts and crafts
+Indigenous Studies,"Pacific Peoples culture, language and history",451319,"Pacific Peoples ways of knowing, being and doing"
+Indigenous Studies,"Pacific Peoples culture, language and history",451399,"Pacific Peoples culture, language and history not elsewhere classified"
+Indigenous Studies,Pacific Peoples education,451401,Cultural responsiveness and working with Pacific Peoples communities education
+Indigenous Studies,Pacific Peoples education,451402,"Embedding Pacific Peoples knowledges, histories, culture, country, perspectives and ethics in education"
+Indigenous Studies,Pacific Peoples education,451403,Pacific Peoples curriculum and pedagogy
+Indigenous Studies,Pacific Peoples education,451404,Pacific Peoples early childhood education
+Indigenous Studies,Pacific Peoples education,451405,Pacific Peoples educational methods
+Indigenous Studies,Pacific Peoples education,451406,"Pacific Peoples technical, further, continuing and community education"
+Indigenous Studies,Pacific Peoples education,451407,Pacific Peoples higher education
+Indigenous Studies,Pacific Peoples education,451408,Pacific Peoples language education
+Indigenous Studies,Pacific Peoples education,451409,Pacific Peoples men’s education
+Indigenous Studies,Pacific Peoples education,451410,Pacific Peoples primary education
+Indigenous Studies,Pacific Peoples education,451411,Pacific Peoples secondary education
+Indigenous Studies,Pacific Peoples education,451412,Pacific Peoples student engagement and teaching
+Indigenous Studies,Pacific Peoples education,451413,Pacific Peoples women’s education
+Indigenous Studies,Pacific Peoples education,451499,Pacific Peoples education not elsewhere classified
+Indigenous Studies,Pacific Peoples environmental knowledges,451501,Pacific Peoples agriculture and forestry
+Indigenous Studies,Pacific Peoples environmental knowledges,451502,Pacific Peoples earth sciences
+Indigenous Studies,Pacific Peoples environmental knowledges,451503,Pacific Peoples environmental conservation
+Indigenous Studies,Pacific Peoples environmental knowledges,451504,Pacific Peoples environmental knowledges
+Indigenous Studies,Pacific Peoples environmental knowledges,451505,Pacific Peoples fisheries and customary fisheries
+Indigenous Studies,Pacific Peoples environmental knowledges,451506,Pacific Peoples land and water management
+Indigenous Studies,Pacific Peoples environmental knowledges,451507,Pacific Peoples marine environment science
+Indigenous Studies,Pacific Peoples environmental knowledges,451599,Pacific Peoples environmental knowledges not elsewhere classified
+Indigenous Studies,Pacific Peoples health and wellbeing,451601,Pacific Peoples and disability
+Indigenous Studies,Pacific Peoples health and wellbeing,451602,Pacific Peoples biomedical and clinical science
+Indigenous Studies,Pacific Peoples health and wellbeing,451603,Pacific Peoples cultural determinants of health
+Indigenous Studies,Pacific Peoples health and wellbeing,451604,Pacific Peoples diet and nutrition
+Indigenous Studies,Pacific Peoples health and wellbeing,451605,Pacific Peoples epidemiology
+Indigenous Studies,Pacific Peoples health and wellbeing,451606,Pacific Peoples health policy
+Indigenous Studies,Pacific Peoples health and wellbeing,451607,Pacific Peoples health promotion
+Indigenous Studies,Pacific Peoples health and wellbeing,451608,Pacific Peoples life course
+Indigenous Studies,Pacific Peoples health and wellbeing,451609,Pacific Peoples medicine and treatments
+Indigenous Studies,Pacific Peoples health and wellbeing,451610,Pacific Peoples midwifery and paediatrics
+Indigenous Studies,Pacific Peoples health and wellbeing,451611,Pacific Peoples mothers and babies health and wellbeing
+Indigenous Studies,Pacific Peoples health and wellbeing,451612,Pacific Peoples nursing
+Indigenous Studies,Pacific Peoples health and wellbeing,451613,Pacific Peoples psychology
+Indigenous Studies,Pacific Peoples health and wellbeing,451614,Pacific Peoples public health and wellbeing
+Indigenous Studies,Pacific Peoples health and wellbeing,451615,Pacific Peoples remote health
+Indigenous Studies,Pacific Peoples health and wellbeing,451616,Pacific Peoples social determinants of health
+Indigenous Studies,Pacific Peoples health and wellbeing,451617,"Pacific Peoples social, cultural, emotional and spiritual wellbeing"
+Indigenous Studies,Pacific Peoples health and wellbeing,451618,Pacific Peoples sport and physical activity
+Indigenous Studies,Pacific Peoples health and wellbeing,451619,Pacific Peoples theory of change models for health
+Indigenous Studies,Pacific Peoples health and wellbeing,451620,Pacific Peoples youth and family
+Indigenous Studies,Pacific Peoples health and wellbeing,451699,Pacific Peoples health and wellbeing not elsewhere classified
+Indigenous Studies,Pacific Peoples sciences,451701,Pacific Peoples astronomy and cosmology
+Indigenous Studies,Pacific Peoples sciences,451702,Pacific Peoples biological sciences
+Indigenous Studies,Pacific Peoples sciences,451703,Pacific Peoples computing technology use and design
+Indigenous Studies,Pacific Peoples sciences,451704,Pacific Peoples engineering
+Indigenous Studies,Pacific Peoples sciences,451705,Pacific Peoples genomics
+Indigenous Studies,Pacific Peoples sciences,451706,Pacific Peoples information and knowledge management systems
+Indigenous Studies,Pacific Peoples sciences,451707,Pacific Peoples innovation
+Indigenous Studies,Pacific Peoples sciences,451708,Pacific Peoples knowledge management methods
+Indigenous Studies,Pacific Peoples sciences,451709,"Pacific Peoples mathematical, physical and chemical sciences (excl. astronomy and cosmology)"
+Indigenous Studies,Pacific Peoples sciences,451799,Pacific Peoples sciences not elsewhere classified
+Indigenous Studies,Pacific Peoples society and community,451801,Pacific Peoples and the law
+Indigenous Studies,Pacific Peoples society and community,451802,Pacific Peoples anthropology
+Indigenous Studies,Pacific Peoples society and community,451803,Pacific Peoples architecture
+Indigenous Studies,Pacific Peoples society and community,451804,Pacific Peoples commerce
+Indigenous Studies,Pacific Peoples society and community,451805,Pacific Peoples community and regional development
+Indigenous Studies,Pacific Peoples society and community,451806,Pacific Peoples community governance and decision making
+Indigenous Studies,Pacific Peoples society and community,451807,Pacific Peoples community-based research
+Indigenous Studies,Pacific Peoples society and community,451808,Pacific Peoples criminology
+Indigenous Studies,Pacific Peoples society and community,451809,Pacific Peoples customary law
+Indigenous Studies,Pacific Peoples society and community,451810,Pacific Peoples design practice and management
+Indigenous Studies,Pacific Peoples society and community,451811,Pacific Peoples economics
+Indigenous Studies,Pacific Peoples society and community,451812,Pacific Peoples finance
+Indigenous Studies,Pacific Peoples society and community,451813,Pacific Peoples human geography and demography
+Indigenous Studies,Pacific Peoples society and community,451814,Pacific Peoples legislation
+Indigenous Studies,Pacific Peoples society and community,451815,Pacific Peoples management
+Indigenous Studies,Pacific Peoples society and community,451816,Pacific Peoples marketing
+Indigenous Studies,Pacific Peoples society and community,451817,Pacific Peoples not-for-profit social enterprises
+Indigenous Studies,Pacific Peoples society and community,451818,Pacific Peoples perspectives
+Indigenous Studies,Pacific Peoples society and community,451819,Pacific Peoples political participation and representation
+Indigenous Studies,Pacific Peoples society and community,451820,Pacific Peoples politics
+Indigenous Studies,Pacific Peoples society and community,451821,Pacific Peoples social impact and program evaluation
+Indigenous Studies,Pacific Peoples society and community,451822,Pacific Peoples social work and social justice
+Indigenous Studies,Pacific Peoples society and community,451823,Pacific Peoples sociological studies
+Indigenous Studies,Pacific Peoples society and community,451824,Pacific Peoples sociology
+Indigenous Studies,Pacific Peoples society and community,451825,Pacific Peoples tourism
+Indigenous Studies,Pacific Peoples society and community,451826,Pacific Peoples urban and regional planning
+Indigenous Studies,Pacific Peoples society and community,451899,"Pacific Peoples, society and community not elsewhere classified"
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451901,"Global Indigenous studies culture, language and history"
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451902,Global Indigenous studies environmental knowledges and management
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451903,Global Indigenous studies health and wellbeing
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451904,"Global Indigenous studies peoples, society and community"
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451905,Global Indigenous studies sciences
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451906,Indigenous data and data technologies
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451907,Indigenous methodologies
+Indigenous Studies,"Other Indigenous data, methodologies and global Indigenous studies",451999,"Other Indigenous data, methodologies and global Indigenous studies not elsewhere classified"
+Indigenous Studies,Other Indigenous studies,459999,Other Indigenous studies not elsewhere classified
+Information and Computing Sciences,Applied computing,460101,Applications in arts and humanities
+Information and Computing Sciences,Applied computing,460102,Applications in health
+Information and Computing Sciences,Applied computing,460103,Applications in life sciences
+Information and Computing Sciences,Applied computing,460104,Applications in physical sciences
+Information and Computing Sciences,Applied computing,460105,Applications in social sciences and education
+Information and Computing Sciences,Applied computing,460106,Spatial data and applications
+Information and Computing Sciences,Applied computing,460199,Applied computing not elsewhere classified
+Information and Computing Sciences,Artificial intelligence,460201,Artificial life and complex adaptive systems
+Information and Computing Sciences,Artificial intelligence,460202,Autonomous agents and multiagent systems
+Information and Computing Sciences,Artificial intelligence,460203,Evolutionary computation
+Information and Computing Sciences,Artificial intelligence,460204,Fuzzy computation
+Information and Computing Sciences,Artificial intelligence,460205,Intelligent robotics
+Information and Computing Sciences,Artificial intelligence,460206,Knowledge representation and reasoning
+Information and Computing Sciences,Artificial intelligence,460207,Modelling and simulation
+Information and Computing Sciences,Artificial intelligence,460208,Natural language processing
+Information and Computing Sciences,Artificial intelligence,460209,Planning and decision making
+Information and Computing Sciences,Artificial intelligence,460210,Satisfiability and optimisation
+Information and Computing Sciences,Artificial intelligence,460211,Speech production
+Information and Computing Sciences,Artificial intelligence,460212,Speech recognition
+Information and Computing Sciences,Artificial intelligence,460299,Artificial intelligence not elsewhere classified
+Information and Computing Sciences,Computer vision and multimedia computation,460301,Active sensing
+Information and Computing Sciences,Computer vision and multimedia computation,460302,Audio processing
+Information and Computing Sciences,Computer vision and multimedia computation,460303,Computational imaging
+Information and Computing Sciences,Computer vision and multimedia computation,460304,Computer vision
+Information and Computing Sciences,Computer vision and multimedia computation,460305,Image and video coding
+Information and Computing Sciences,Computer vision and multimedia computation,460306,Image processing
+Information and Computing Sciences,Computer vision and multimedia computation,460307,Multimodal analysis and synthesis
+Information and Computing Sciences,Computer vision and multimedia computation,460308,Pattern recognition
+Information and Computing Sciences,Computer vision and multimedia computation,460309,Video processing
+Information and Computing Sciences,Computer vision and multimedia computation,460399,Computer vision and multimedia computation not elsewhere classified
+Information and Computing Sciences,Cybersecurity and privacy,460401,Cryptography
+Information and Computing Sciences,Cybersecurity and privacy,460402,Data and information privacy
+Information and Computing Sciences,Cybersecurity and privacy,460403,Data security and protection
+Information and Computing Sciences,Cybersecurity and privacy,460404,Digital forensics
+Information and Computing Sciences,Cybersecurity and privacy,460405,Hardware security
+Information and Computing Sciences,Cybersecurity and privacy,460406,Software and application security
+Information and Computing Sciences,Cybersecurity and privacy,460407,System and network security
+Information and Computing Sciences,Cybersecurity and privacy,460499,Cybersecurity and privacy not elsewhere classified
+Information and Computing Sciences,Data management and data science,460501,Data engineering and data science
+Information and Computing Sciences,Data management and data science,460502,Data mining and knowledge discovery
+Information and Computing Sciences,Data management and data science,460503,"Data models, storage and indexing"
+Information and Computing Sciences,Data management and data science,460504,Data quality
+Information and Computing Sciences,Data management and data science,460505,Database systems
+Information and Computing Sciences,Data management and data science,460506,"Graph, social and multimedia data"
+Information and Computing Sciences,Data management and data science,460507,Information extraction and fusion
+Information and Computing Sciences,Data management and data science,460508,Information retrieval and web search
+Information and Computing Sciences,Data management and data science,460509,Query processing and optimisation
+Information and Computing Sciences,Data management and data science,460510,Recommender systems
+Information and Computing Sciences,Data management and data science,460511,Stream and sensor data
+Information and Computing Sciences,Data management and data science,460599,Data management and data science not elsewhere classified
+Information and Computing Sciences,Distributed computing and systems software,460601,Cloud computing
+Information and Computing Sciences,Distributed computing and systems software,460602,Concurrent/parallel systems and technologies
+Information and Computing Sciences,Distributed computing and systems software,460603,Cyberphysical systems and internet of things
+Information and Computing Sciences,Distributed computing and systems software,460604,Dependable systems
+Information and Computing Sciences,Distributed computing and systems software,460605,Distributed systems and algorithms
+Information and Computing Sciences,Distributed computing and systems software,460606,Energy-efficient computing
+Information and Computing Sciences,Distributed computing and systems software,460607,High performance computing
+Information and Computing Sciences,Distributed computing and systems software,460608,Mobile computing
+Information and Computing Sciences,Distributed computing and systems software,460609,Networking and communications
+Information and Computing Sciences,Distributed computing and systems software,460610,Operating systems
+Information and Computing Sciences,Distributed computing and systems software,460611,Performance evaluation
+Information and Computing Sciences,Distributed computing and systems software,460612,Service oriented computing
+Information and Computing Sciences,Distributed computing and systems software,460699,Distributed computing and systems software not elsewhere classified
+Information and Computing Sciences,"Graphics, augmented reality and games",460701,Computer aided design
+Information and Computing Sciences,"Graphics, augmented reality and games",460702,Computer graphics
+Information and Computing Sciences,"Graphics, augmented reality and games",460703,Entertainment and gaming
+Information and Computing Sciences,"Graphics, augmented reality and games",460704,Interactive narrative
+Information and Computing Sciences,"Graphics, augmented reality and games",460705,Procedural content generation
+Information and Computing Sciences,"Graphics, augmented reality and games",460706,Serious games
+Information and Computing Sciences,"Graphics, augmented reality and games",460707,Sound and music computing
+Information and Computing Sciences,"Graphics, augmented reality and games",460708,Virtual and mixed reality
+Information and Computing Sciences,"Graphics, augmented reality and games",460799,"Graphics, augmented reality and games not elsewhere classified"
+Information and Computing Sciences,Human-centred computing,460801,Accessible computing
+Information and Computing Sciences,Human-centred computing,460802,Affective computing
+Information and Computing Sciences,Human-centred computing,460803,Collaborative and social computing
+Information and Computing Sciences,Human-centred computing,460804,Computing education
+Information and Computing Sciences,Human-centred computing,460805,"Fairness, accountability, transparency, trust and ethics of computer systems"
+Information and Computing Sciences,Human-centred computing,460806,Human-computer interaction
+Information and Computing Sciences,Human-centred computing,460807,Information visualisation
+Information and Computing Sciences,Human-centred computing,460808,Mixed initiative and human-in-the-loop
+Information and Computing Sciences,Human-centred computing,460809,Pervasive computing
+Information and Computing Sciences,Human-centred computing,460810,Social robotics
+Information and Computing Sciences,Human-centred computing,460899,Human-centred computing not elsewhere classified
+Information and Computing Sciences,Information systems,460901,Business process management
+Information and Computing Sciences,Information systems,460902,Decision support and group support systems
+Information and Computing Sciences,Information systems,460903,"Information modelling, management and ontologies"
+Information and Computing Sciences,Information systems,460904,Information security management
+Information and Computing Sciences,Information systems,460905,Information systems development methodologies and practice
+Information and Computing Sciences,Information systems,460906,Information systems education
+Information and Computing Sciences,Information systems,460907,Information systems for sustainable development and the public good
+Information and Computing Sciences,Information systems,460908,Information systems organisation and management
+Information and Computing Sciences,Information systems,460909,"Information systems philosophy, research methods and theory"
+Information and Computing Sciences,Information systems,460910,Information systems user experience design and development
+Information and Computing Sciences,Information systems,460911,"Inter-organisational, extra-organisational and global information systems"
+Information and Computing Sciences,Information systems,460912,Knowledge and information management
+Information and Computing Sciences,Information systems,460999,Information systems not elsewhere classified
+Information and Computing Sciences,Library and information studies,461001,Digital curation and preservation
+Information and Computing Sciences,Library and information studies,461002,Human information behaviour
+Information and Computing Sciences,Library and information studies,461003,Human information interaction and retrieval
+Information and Computing Sciences,Library and information studies,461004,"Information governance, policy and ethics"
+Information and Computing Sciences,Library and information studies,461005,Informetrics
+Information and Computing Sciences,Library and information studies,461006,Library studies
+Information and Computing Sciences,Library and information studies,461007,Open access
+Information and Computing Sciences,Library and information studies,461008,Organisation of information and knowledge resources
+Information and Computing Sciences,Library and information studies,461009,Recordkeeping informatics
+Information and Computing Sciences,Library and information studies,461010,Social and community informatics
+Information and Computing Sciences,Library and information studies,461099,Library and information studies not elsewhere classified
+Information and Computing Sciences,Machine learning,461101,Adversarial machine learning
+Information and Computing Sciences,Machine learning,461102,Context learning
+Information and Computing Sciences,Machine learning,461103,Deep learning
+Information and Computing Sciences,Machine learning,461104,Neural networks
+Information and Computing Sciences,Machine learning,461105,Reinforcement learning
+Information and Computing Sciences,Machine learning,461106,Semi- and unsupervised learning
+Information and Computing Sciences,Machine learning,461199,Machine learning not elsewhere classified
+Information and Computing Sciences,Software engineering,461201,Automated software engineering
+Information and Computing Sciences,Software engineering,461202,Empirical software engineering
+Information and Computing Sciences,Software engineering,461203,Formal methods for software
+Information and Computing Sciences,Software engineering,461204,Programming languages
+Information and Computing Sciences,Software engineering,461205,Requirements engineering
+Information and Computing Sciences,Software engineering,461206,Software architecture
+Information and Computing Sciences,Software engineering,461207,"Software quality, processes and metrics"
+Information and Computing Sciences,Software engineering,461208,"Software testing, verification and validation"
+Information and Computing Sciences,Software engineering,461299,Software engineering not elsewhere classified
+Information and Computing Sciences,Theory of computation,461301,"Coding, information theory and compression"
+Information and Computing Sciences,Theory of computation,461302,Computational complexity and computability
+Information and Computing Sciences,Theory of computation,461303,Computational logic and formal languages
+Information and Computing Sciences,Theory of computation,461304,Concurrency theory
+Information and Computing Sciences,Theory of computation,461305,Data structures and algorithms
+Information and Computing Sciences,Theory of computation,461306,Numerical computation and mathematical software
+Information and Computing Sciences,Theory of computation,461307,Quantum computation
+Information and Computing Sciences,Theory of computation,461399,Theory of computation not elsewhere classified
+Information and Computing Sciences,Other information and computing sciences,469999,Other information and computing sciences not elsewhere classified
+"Language, Communication and Culture",Communication and media studies,470101,Communication studies
+"Language, Communication and Culture",Communication and media studies,470102,Communication technology and digital media studies
+"Language, Communication and Culture",Communication and media studies,470103,Environmental communication
+"Language, Communication and Culture",Communication and media studies,470104,International and development communication
+"Language, Communication and Culture",Communication and media studies,470105,Journalism studies
+"Language, Communication and Culture",Communication and media studies,470106,Media industry studies
+"Language, Communication and Culture",Communication and media studies,470107,Media studies
+"Language, Communication and Culture",Communication and media studies,470108,"Organisational, interpersonal and intercultural communication"
+"Language, Communication and Culture",Communication and media studies,470199,Communication and media studies not elsewhere classified
+"Language, Communication and Culture",Cultural studies,470201,Arts and cultural policy
+"Language, Communication and Culture",Cultural studies,470202,Asian cultural studies
+"Language, Communication and Culture",Cultural studies,470203,Consumption and everyday life
+"Language, Communication and Culture",Cultural studies,470204,Cultural and creative industries
+"Language, Communication and Culture",Cultural studies,470205,"Cultural studies of agriculture, food and wine"
+"Language, Communication and Culture",Cultural studies,470206,Cultural studies of nation and region
+"Language, Communication and Culture",Cultural studies,470207,Cultural theory
+"Language, Communication and Culture",Cultural studies,470208,"Culture, representation and identity"
+"Language, Communication and Culture",Cultural studies,470209,Environment and culture
+"Language, Communication and Culture",Cultural studies,470210,Globalisation and culture
+"Language, Communication and Culture",Cultural studies,470211,Migrant cultural studies
+"Language, Communication and Culture",Cultural studies,470212,"Multicultural, intercultural and cross-cultural studies"
+"Language, Communication and Culture",Cultural studies,470213,Postcolonial studies
+"Language, Communication and Culture",Cultural studies,470214,Screen and media culture
+"Language, Communication and Culture",Cultural studies,470299,Cultural studies not elsewhere classified
+"Language, Communication and Culture",Language studies,470301,African languages
+"Language, Communication and Culture",Language studies,470302,Central and Eastern European languages (incl. Russian)
+"Language, Communication and Culture",Language studies,470303,Chinese languages
+"Language, Communication and Culture",Language studies,470304,Comparative language studies
+"Language, Communication and Culture",Language studies,470305,Early English languages
+"Language, Communication and Culture",Language studies,470306,English as a second language
+"Language, Communication and Culture",Language studies,470307,English language
+"Language, Communication and Culture",Language studies,470308,French language
+"Language, Communication and Culture",Language studies,470309,German language
+"Language, Communication and Culture",Language studies,470310,Iberian languages
+"Language, Communication and Culture",Language studies,470311,Indian languages
+"Language, Communication and Culture",Language studies,470312,Indonesian languages
+"Language, Communication and Culture",Language studies,470313,Italian language
+"Language, Communication and Culture",Language studies,470314,Japanese language
+"Language, Communication and Culture",Language studies,470315,Korean language
+"Language, Communication and Culture",Language studies,470316,Latin and classical Greek languages
+"Language, Communication and Culture",Language studies,470317,Middle Eastern languages
+"Language, Communication and Culture",Language studies,470318,Other Asian languages (excl. South-East Asian)
+"Language, Communication and Culture",Language studies,470319,Other European languages
+"Language, Communication and Culture",Language studies,470320,South-East Asian languages (excl. Indonesian)
+"Language, Communication and Culture",Language studies,470321,Translation and interpretation studies
+"Language, Communication and Culture",Language studies,470399,Language studies not elsewhere classified
+"Language, Communication and Culture",Linguistics,470401,Applied linguistics and educational linguistics
+"Language, Communication and Culture",Linguistics,470402,Child language acquisition
+"Language, Communication and Culture",Linguistics,470403,Computational linguistics
+"Language, Communication and Culture",Linguistics,470404,Corpus linguistics
+"Language, Communication and Culture",Linguistics,470405,Discourse and pragmatics
+"Language, Communication and Culture",Linguistics,470406,"Historical, comparative and typological linguistics"
+"Language, Communication and Culture",Linguistics,470407,Language documentation and description
+"Language, Communication and Culture",Linguistics,470408,Lexicography and semantics
+"Language, Communication and Culture",Linguistics,470409,"Linguistic structures (incl. phonology, morphology and syntax)"
+"Language, Communication and Culture",Linguistics,470410,Phonetics and speech science
+"Language, Communication and Culture",Linguistics,470411,Sociolinguistics
+"Language, Communication and Culture",Linguistics,470499,Linguistics not elsewhere classified
+"Language, Communication and Culture",Literary studies,470501,African literature
+"Language, Communication and Culture",Literary studies,470502,Australian literature (excl. Aboriginal and Torres Strait Islander literature)
+"Language, Communication and Culture",Literary studies,470503,Book history
+"Language, Communication and Culture",Literary studies,470504,British and Irish literature
+"Language, Communication and Culture",Literary studies,470505,Central and Eastern European literature (incl. Russian)
+"Language, Communication and Culture",Literary studies,470506,Children's literature
+"Language, Communication and Culture",Literary studies,470507,Comparative and transnational literature
+"Language, Communication and Culture",Literary studies,470508,Digital literature
+"Language, Communication and Culture",Literary studies,470509,Ecocriticism
+"Language, Communication and Culture",Literary studies,470510,Indian literature
+"Language, Communication and Culture",Literary studies,470511,Indonesian literature
+"Language, Communication and Culture",Literary studies,470512,Korean literature
+"Language, Communication and Culture",Literary studies,470513,Latin and classical Greek literature
+"Language, Communication and Culture",Literary studies,470514,Literary theory
+"Language, Communication and Culture",Literary studies,470515,Literature in Chinese
+"Language, Communication and Culture",Literary studies,470516,Literature in French
+"Language, Communication and Culture",Literary studies,470517,Literature in German
+"Language, Communication and Culture",Literary studies,470518,Literature in Italian
+"Language, Communication and Culture",Literary studies,470519,Literature in Japanese
+"Language, Communication and Culture",Literary studies,470520,Literature in Spanish and Portuguese
+"Language, Communication and Culture",Literary studies,470521,Middle Eastern literature
+"Language, Communication and Culture",Literary studies,470522,New Zealand literature (excl. Māori literature)
+"Language, Communication and Culture",Literary studies,470523,North American literature
+"Language, Communication and Culture",Literary studies,470524,Other Asian literature (excl. South-East Asian)
+"Language, Communication and Culture",Literary studies,470525,Other European literature
+"Language, Communication and Culture",Literary studies,470526,Other literatures in English
+"Language, Communication and Culture",Literary studies,470527,Popular and genre literature
+"Language, Communication and Culture",Literary studies,470528,Print culture
+"Language, Communication and Culture",Literary studies,470529,South-East Asian literature (excl. Indonesian)
+"Language, Communication and Culture",Literary studies,470530,Stylistics and textual analysis
+"Language, Communication and Culture",Literary studies,470531,Young adult literature
+"Language, Communication and Culture",Literary studies,470599,Literary studies not elsewhere classified
+"Language, Communication and Culture","Other language, communication and culture",479999,"Other language, communication and culture not elsewhere classified"
+Law and Legal Studies,Commercial law,480101,"Banking, finance and securities law"
+Law and Legal Studies,Commercial law,480102,Commercial law
+Law and Legal Studies,Commercial law,480103,Corporations and associations law
+Law and Legal Studies,Commercial law,480104,Labour law
+Law and Legal Studies,Commercial law,480105,Not-for-profit law
+Law and Legal Studies,Commercial law,480106,Taxation law
+Law and Legal Studies,Commercial law,480199,Commercial law not elsewhere classified
+Law and Legal Studies,Environmental and resources law,480201,Animal law
+Law and Legal Studies,Environmental and resources law,480202,Climate change law
+Law and Legal Studies,Environmental and resources law,480203,Environmental law
+Law and Legal Studies,Environmental and resources law,480204,"Mining, energy and natural resources law"
+Law and Legal Studies,Environmental and resources law,480299,Environmental and resources law not elsewhere classified
+Law and Legal Studies,International and comparative law,480301,Asian and Pacific law
+Law and Legal Studies,International and comparative law,480302,Comparative law
+Law and Legal Studies,International and comparative law,480303,Conflict of laws (incl. private international law)
+Law and Legal Studies,International and comparative law,480304,European Union law
+Law and Legal Studies,International and comparative law,480305,International arbitration
+Law and Legal Studies,International and comparative law,480306,International criminal law
+Law and Legal Studies,International and comparative law,480307,International humanitarian and human rights law
+Law and Legal Studies,International and comparative law,480308,International trade and investment law
+Law and Legal Studies,International and comparative law,480309,Ocean law and governance
+Law and Legal Studies,International and comparative law,480310,Public international law
+Law and Legal Studies,International and comparative law,480311,"Space, maritime and aviation law"
+Law and Legal Studies,International and comparative law,480399,International and comparative law not elsewhere classified
+Law and Legal Studies,Law in context,480401,Criminal law
+Law and Legal Studies,Law in context,480402,Family law
+Law and Legal Studies,Law in context,480403,Law and humanities
+Law and Legal Studies,Law in context,480404,Law and religion
+Law and Legal Studies,Law in context,480405,Law and society and socio-legal research
+Law and Legal Studies,Law in context,480406,Law reform
+Law and Legal Studies,Law in context,480407,"Law, gender and sexuality (incl. feminist legal scholarship)"
+Law and Legal Studies,Law in context,480408,"Law, science and technology"
+Law and Legal Studies,Law in context,480409,Legal education
+Law and Legal Studies,Law in context,480410,"Legal theory, jurisprudence and legal interpretation"
+Law and Legal Studies,Law in context,480411,Media and communication law
+Law and Legal Studies,Law in context,480412,Medical and health law
+Law and Legal Studies,Law in context,480413,"Race, ethnicity and law"
+Law and Legal Studies,Law in context,480414,Sports law
+Law and Legal Studies,Law in context,480499,Law in context not elsewhere classified
+Law and Legal Studies,Legal systems,480501,Access to justice
+Law and Legal Studies,Legal systems,480502,Civil procedure
+Law and Legal Studies,Legal systems,480503,Criminal procedure
+Law and Legal Studies,Legal systems,480504,Legal institutions (incl. courts and justice systems)
+Law and Legal Studies,Legal systems,480505,"Legal practice, lawyering and the legal profession"
+Law and Legal Studies,Legal systems,480506,"Litigation, adjudication and dispute resolution"
+Law and Legal Studies,Legal systems,480507,Youth justice
+Law and Legal Studies,Legal systems,480599,Legal systems not elsewhere classified
+Law and Legal Studies,Private law and civil obligations,480601,Contract law
+Law and Legal Studies,Private law and civil obligations,480602,Equity and trusts law
+Law and Legal Studies,Private law and civil obligations,480603,Intellectual property law
+Law and Legal Studies,Private law and civil obligations,480604,Property law (excl. intellectual property law)
+Law and Legal Studies,Private law and civil obligations,480605,Tort law
+Law and Legal Studies,Private law and civil obligations,480699,Private law and civil obligations not elsewhere classified
+Law and Legal Studies,Public law,480701,Administrative law
+Law and Legal Studies,Public law,480702,Constitutional law
+Law and Legal Studies,Public law,480703,Domestic human rights law
+Law and Legal Studies,Public law,480704,"Migration, asylum and refugee law"
+Law and Legal Studies,Public law,480705,Military law and justice
+Law and Legal Studies,Public law,480706,Privacy and data rights
+Law and Legal Studies,Public law,480707,"Welfare, insurance, disability and social security law"
+Law and Legal Studies,Public law,480799,Public law not elsewhere classified
+Law and Legal Studies,Other law and legal studies,489999,Other law and legal studies not elsewhere classified
+Mathematical Sciences,Applied mathematics,490101,Approximation theory and asymptotic methods
+Mathematical Sciences,Applied mathematics,490102,Biological mathematics
+Mathematical Sciences,Applied mathematics,490103,"Calculus of variations, mathematical aspects of systems theory and control theory"
+Mathematical Sciences,Applied mathematics,490104,Complex systems
+Mathematical Sciences,Applied mathematics,490105,Dynamical systems in applications
+Mathematical Sciences,Applied mathematics,490106,Financial mathematics
+Mathematical Sciences,Applied mathematics,490107,Mathematical methods and special functions
+Mathematical Sciences,Applied mathematics,490108,Operations research
+Mathematical Sciences,Applied mathematics,490109,Theoretical and applied mechanics
+Mathematical Sciences,Applied mathematics,490199,Applied mathematics not elsewhere classified
+Mathematical Sciences,Mathematical physics,490201,Algebraic structures in mathematical physics
+Mathematical Sciences,Mathematical physics,490202,Integrable systems (classical and quantum)
+Mathematical Sciences,Mathematical physics,490203,"Mathematical aspects of classical mechanics, quantum mechanics and quantum information theory"
+Mathematical Sciences,Mathematical physics,490204,Mathematical aspects of general relativity
+Mathematical Sciences,Mathematical physics,490205,"Mathematical aspects of quantum and conformal field theory, quantum gravity and string theory"
+Mathematical Sciences,Mathematical physics,490206,"Statistical mechanics, physical combinatorics and mathematical aspects of condensed matter"
+Mathematical Sciences,Mathematical physics,490299,Mathematical physics not elsewhere classified
+Mathematical Sciences,Numerical and computational mathematics,490301,Experimental mathematics
+Mathematical Sciences,Numerical and computational mathematics,490302,Numerical analysis
+Mathematical Sciences,Numerical and computational mathematics,490303,Numerical solution of differential and integral equations
+Mathematical Sciences,Numerical and computational mathematics,490304,Optimisation
+Mathematical Sciences,Numerical and computational mathematics,490399,Numerical and computational mathematics not elsewhere classified
+Mathematical Sciences,Pure mathematics,490401,Algebra and number theory
+Mathematical Sciences,Pure mathematics,490402,Algebraic and differential geometry
+Mathematical Sciences,Pure mathematics,490403,"Category theory, k theory, homological algebra"
+Mathematical Sciences,Pure mathematics,490404,Combinatorics and discrete mathematics (excl. physical combinatorics)
+Mathematical Sciences,Pure mathematics,490405,Group theory and generalisations
+Mathematical Sciences,Pure mathematics,490406,"Lie groups, harmonic and Fourier analysis"
+Mathematical Sciences,Pure mathematics,490407,"Mathematical logic, set theory, lattices and universal algebra"
+Mathematical Sciences,Pure mathematics,490408,Operator algebras and functional analysis
+Mathematical Sciences,Pure mathematics,490409,"Ordinary differential equations, difference equations and dynamical systems"
+Mathematical Sciences,Pure mathematics,490410,Partial differential equations
+Mathematical Sciences,Pure mathematics,490411,Real and complex functions (incl. several variables)
+Mathematical Sciences,Pure mathematics,490412,Topology
+Mathematical Sciences,Pure mathematics,490499,Pure mathematics not elsewhere classified
+Mathematical Sciences,Statistics,490501,Applied statistics
+Mathematical Sciences,Statistics,490502,Biostatistics
+Mathematical Sciences,Statistics,490503,Computational statistics
+Mathematical Sciences,Statistics,490504,"Forensic evaluation, inference and statistics"
+Mathematical Sciences,Statistics,490505,Large and complex data theory
+Mathematical Sciences,Statistics,490506,Probability theory
+Mathematical Sciences,Statistics,490507,Spatial statistics
+Mathematical Sciences,Statistics,490508,Statistical data science
+Mathematical Sciences,Statistics,490509,Statistical theory
+Mathematical Sciences,Statistics,490510,Stochastic analysis and modelling
+Mathematical Sciences,Statistics,490511,Time series and spatial modelling
+Mathematical Sciences,Statistics,490599,Statistics not elsewhere classified
+Mathematical Sciences,Other mathematical sciences,499999,Other mathematical sciences not elsewhere classified
+Philosophy and Religious Studies,Applied ethics,500101,Bioethics
+Philosophy and Religious Studies,Applied ethics,500102,Business ethics
+Philosophy and Religious Studies,Applied ethics,500103,Ethical use of new technology
+Philosophy and Religious Studies,Applied ethics,500104,Human rights and justice issues (excl. law)
+Philosophy and Religious Studies,Applied ethics,500105,Legal ethics
+Philosophy and Religious Studies,Applied ethics,500106,Medical ethics
+Philosophy and Religious Studies,Applied ethics,500107,Professional ethics
+Philosophy and Religious Studies,Applied ethics,500199,Applied ethics not elsewhere classified
+Philosophy and Religious Studies,History and philosophy of specific fields,500201,History and philosophy of engineering and technology
+Philosophy and Religious Studies,History and philosophy of specific fields,500202,History and philosophy of law and justice
+Philosophy and Religious Studies,History and philosophy of specific fields,500203,History and philosophy of medicine
+Philosophy and Religious Studies,History and philosophy of specific fields,500204,History and philosophy of science
+Philosophy and Religious Studies,History and philosophy of specific fields,500205,History and philosophy of the humanities
+Philosophy and Religious Studies,History and philosophy of specific fields,500206,History and philosophy of the social sciences
+Philosophy and Religious Studies,History and philosophy of specific fields,500207,History of ideas
+Philosophy and Religious Studies,History and philosophy of specific fields,500208,History of philosophy
+Philosophy and Religious Studies,History and philosophy of specific fields,500299,History and philosophy of specific fields not elsewhere classified
+Philosophy and Religious Studies,Philosophy,500301,Aesthetics
+Philosophy and Religious Studies,Philosophy,500302,Critical theory
+Philosophy and Religious Studies,Philosophy,500303,Decision theory
+Philosophy and Religious Studies,Philosophy,500304,Environmental philosophy
+Philosophy and Religious Studies,Philosophy,500305,Epistemology
+Philosophy and Religious Studies,Philosophy,500306,Ethical theory
+Philosophy and Religious Studies,Philosophy,500307,Hermeneutics
+Philosophy and Religious Studies,Philosophy,500308,Logic
+Philosophy and Religious Studies,Philosophy,500309,Metaphysics
+Philosophy and Religious Studies,Philosophy,500310,Phenomenology
+Philosophy and Religious Studies,Philosophy,500311,Philosophical psychology (incl. moral psychology and philosophy of action)
+Philosophy and Religious Studies,Philosophy,500312,Philosophy of cognition
+Philosophy and Religious Studies,Philosophy,500313,Philosophy of gender
+Philosophy and Religious Studies,Philosophy,500314,Philosophy of language
+Philosophy and Religious Studies,Philosophy,500315,Philosophy of mind (excl. cognition)
+Philosophy and Religious Studies,Philosophy,500316,Philosophy of religion
+Philosophy and Religious Studies,Philosophy,500317,Philosophy of science (excl. history and philosophy of specific fields)
+Philosophy and Religious Studies,Philosophy,500318,Philosophy of specific cultures (incl. comparative philosophy)
+Philosophy and Religious Studies,Philosophy,500319,Poststructuralism
+Philosophy and Religious Studies,Philosophy,500320,Psychoanalytic philosophy
+Philosophy and Religious Studies,Philosophy,500321,Social and political philosophy
+Philosophy and Religious Studies,Philosophy,500399,Philosophy not elsewhere classified
+Philosophy and Religious Studies,Religious studies,500401,Christian studies
+Philosophy and Religious Studies,Religious studies,500402,Comparative religious studies
+Philosophy and Religious Studies,Religious studies,500403,Islamic studies
+Philosophy and Religious Studies,Religious studies,500404,Jewish studies
+Philosophy and Religious Studies,Religious studies,500405,"Religion, society and culture"
+Philosophy and Religious Studies,Religious studies,500406,Studies in eastern religious traditions
+Philosophy and Religious Studies,Religious studies,500407,"Studies in religious traditions (excl. Eastern, Jewish, Christian and Islamic traditions)"
+Philosophy and Religious Studies,Religious studies,500499,Religious studies not elsewhere classified
+Philosophy and Religious Studies,Theology,500501,Theology
+Philosophy and Religious Studies,Theology,500599,Theology not elsewhere classified
+Philosophy and Religious Studies,Other philosophy and religious studies,509999,Other philosophy and religious studies not elsewhere classified
+Physical Sciences,Astronomical sciences,510101,Astrobiology
+Physical Sciences,Astronomical sciences,510102,Astronomical instrumentation
+Physical Sciences,Astronomical sciences,510103,Cosmology and extragalactic astronomy
+Physical Sciences,Astronomical sciences,510104,Galactic astronomy
+Physical Sciences,Astronomical sciences,510105,General relativity and gravitational waves
+Physical Sciences,Astronomical sciences,510106,High energy astrophysics and galactic cosmic rays
+Physical Sciences,Astronomical sciences,510107,Planetary science (excl. solar system and planetary geology)
+Physical Sciences,Astronomical sciences,510108,Solar physics
+Physical Sciences,Astronomical sciences,510109,Stellar astronomy and planetary systems
+Physical Sciences,Astronomical sciences,510199,Astronomical sciences not elsewhere classified
+Physical Sciences,"Atomic, molecular and optical physics",510201,Atomic and molecular physics
+Physical Sciences,"Atomic, molecular and optical physics",510202,Lasers and quantum electronics
+Physical Sciences,"Atomic, molecular and optical physics",510203,Nonlinear optics and spectroscopy
+Physical Sciences,"Atomic, molecular and optical physics",510204,"Photonics, optoelectronics and optical communications"
+Physical Sciences,"Atomic, molecular and optical physics",510205,Terahertz physics
+Physical Sciences,"Atomic, molecular and optical physics",510299,"Atomic, molecular and optical physics not elsewhere classified"
+Physical Sciences,Classical physics,510301,Acoustics and acoustical devices; waves
+Physical Sciences,Classical physics,510302,Classical and physical optics
+Physical Sciences,Classical physics,510303,Electrostatics and electrodynamics
+Physical Sciences,Classical physics,510304,Thermodynamics and statistical physics
+Physical Sciences,Classical physics,510399,Classical physics not elsewhere classified
+Physical Sciences,Condensed matter physics,510401,Condensed matter characterisation technique development
+Physical Sciences,Condensed matter physics,510402,Condensed matter imaging
+Physical Sciences,Condensed matter physics,510403,Condensed matter modelling and density functional theory
+Physical Sciences,Condensed matter physics,510404,Electronic and magnetic properties of condensed matter; superconductivity
+Physical Sciences,Condensed matter physics,510405,Soft condensed matter
+Physical Sciences,Condensed matter physics,510406,Structural properties of condensed matter
+Physical Sciences,Condensed matter physics,510407,Surface properties of condensed matter
+Physical Sciences,Condensed matter physics,510499,Condensed matter physics not elsewhere classified
+Physical Sciences,Medical and biological physics,510501,Biological physics
+Physical Sciences,Medical and biological physics,510502,Medical physics
+Physical Sciences,Medical and biological physics,510599,Medical and biological physics not elsewhere classified
+Physical Sciences,Nuclear and plasma physics,510601,Nuclear physics
+Physical Sciences,Nuclear and plasma physics,510602,Plasma physics; fusion plasmas; electrical discharges
+Physical Sciences,Nuclear and plasma physics,510699,Nuclear and plasma physics not elsewhere classified
+Physical Sciences,Particle and high energy physics,510701,Astroparticle physics and particle cosmology
+Physical Sciences,Particle and high energy physics,510702,Field theory and string theory
+Physical Sciences,Particle and high energy physics,510703,Particle physics
+Physical Sciences,Particle and high energy physics,510799,Particle and high energy physics not elsewhere classified
+Physical Sciences,Quantum physics,510801,Degenerate quantum gases and atom optics
+Physical Sciences,Quantum physics,510802,Foundations of quantum mechanics
+Physical Sciences,Quantum physics,510803,"Quantum information, computation and communication"
+Physical Sciences,Quantum physics,510804,Quantum optics and quantum optomechanics
+Physical Sciences,Quantum physics,510805,Quantum technologies
+Physical Sciences,Quantum physics,510899,Quantum physics not elsewhere classified
+Physical Sciences,Space sciences,510901,Astrodynamics and space situational awareness
+Physical Sciences,Space sciences,510902,Heliophysics and space weather
+Physical Sciences,Space sciences,510903,"Mesospheric, thermospheric, ionospheric and magnetospheric physics"
+Physical Sciences,Space sciences,510904,Solar system energetic particles
+Physical Sciences,Space sciences,510905,Solar system planetary science (excl. planetary geology)
+Physical Sciences,Space sciences,510906,Space instrumentation
+Physical Sciences,Space sciences,510999,Space sciences not elsewhere classified
+Physical Sciences,Synchrotrons and accelerators,511001,Accelerators
+Physical Sciences,Synchrotrons and accelerators,511002,Instruments and techniques
+Physical Sciences,Synchrotrons and accelerators,511003,Synchrotrons
+Physical Sciences,Synchrotrons and accelerators,511099,Synchrotrons and accelerators not elsewhere classified
+Physical Sciences,Other physical sciences,519901,Complex physical systems
+Physical Sciences,Other physical sciences,519999,Other physical sciences not elsewhere classified
+Psychology,Applied and developmental psychology,520101,Child and adolescent development
+Psychology,Applied and developmental psychology,520102,Educational psychology
+Psychology,Applied and developmental psychology,520103,Forensic psychology
+Psychology,Applied and developmental psychology,520104,Industrial and organisational psychology (incl. human factors)
+Psychology,Applied and developmental psychology,520105,"Psychological methodology, design and analysis"
+Psychology,Applied and developmental psychology,520106,Psychology of ageing
+Psychology,Applied and developmental psychology,520107,Sport and exercise psychology
+Psychology,Applied and developmental psychology,520108,"Testing, assessment and psychometrics"
+Psychology,Applied and developmental psychology,520199,Applied and developmental psychology not elsewhere classified
+Psychology,Biological psychology,520201,Behavioural genetics
+Psychology,Biological psychology,520202,Behavioural neuroscience
+Psychology,Biological psychology,520203,Cognitive neuroscience
+Psychology,Biological psychology,520204,Evolutionary psychological studies
+Psychology,Biological psychology,520205,Psychopharmacology
+Psychology,Biological psychology,520206,Psychophysiology
+Psychology,Biological psychology,520207,Social and affective neuroscience
+Psychology,Biological psychology,520299,Biological psychology not elsewhere classified
+Psychology,Clinical and health psychology,520301,Clinical neuropsychology
+Psychology,Clinical and health psychology,520302,Clinical psychology
+Psychology,Clinical and health psychology,520303,Counselling psychology
+Psychology,Clinical and health psychology,520304,Health psychology
+Psychology,Clinical and health psychology,520399,Clinical and health psychology not elsewhere classified
+Psychology,Cognitive and computational psychology,520401,Cognition
+Psychology,Cognitive and computational psychology,520402,Decision making
+Psychology,Cognitive and computational psychology,520403,"Learning, motivation and emotion"
+Psychology,Cognitive and computational psychology,520404,Memory and attention
+Psychology,Cognitive and computational psychology,520405,Psycholinguistics (incl. speech production and comprehension)
+Psychology,Cognitive and computational psychology,520406,"Sensory processes, perception and performance"
+Psychology,Cognitive and computational psychology,520499,Cognitive and computational psychology not elsewhere classified
+Psychology,Social and personality psychology,520501,Community psychology
+Psychology,Social and personality psychology,520502,Gender psychology
+Psychology,Social and personality psychology,520503,Personality and individual differences
+Psychology,Social and personality psychology,520504,Psychology of religion
+Psychology,Social and personality psychology,520505,Social psychology
+Psychology,Social and personality psychology,520599,Social and personality psychology not elsewhere classified
+Psychology,Other psychology,529999,Other psychology not elsewhere classified
