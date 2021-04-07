@@ -20,9 +20,7 @@ The official page seems to be [this
 one](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1297.0Main+Features12020?OpenDocument),
 but the data is only available on sheet 3 of an excel spreadsheet, which is just
 a bummer when all you want to do is <kbd>ctrl</kbd>+<kbd>F</kbd> your way around
-an HTML table in your web browser. **Update 7/4/21**: I've added a live search
-box---just type in the terms you're interested in to filter the relevant table
-rows.
+an HTML table in your web browser.
 
 So, I've copied the relevant part of the spreadsheet into a regular-ol' webpage
 here for your browsing pleasure.[^hosting]
@@ -33,6 +31,11 @@ here for your browsing pleasure.[^hosting]
     this publicly-available data then please let me know and I'll make it right.
 
 ## 2020 ANZRC Field of Research (FoR) Codes
+
+{:.hl-para}
+
+**Update 7/4/21**: I've added a live search box---just type in the terms you're
+interested in to filter the relevant table rows.
 
 <style>
 #FoR-Codes-2020 tr.division-row {
@@ -48,9 +51,10 @@ here for your browsing pleasure.[^hosting]
   width: 100%;
   line-height: 1.6;
   font-size: 1rem;
-  padding: 0.2em;
-  border: 1pt solid #be2edd#;
+  padding: 0.3rem 0.6rem;
+  border: 2pt solid #be2edd;
   border-radius: 3px;
+  margin-bottom: 1rem;
 }
 </style>
 
