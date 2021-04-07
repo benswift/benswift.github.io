@@ -78,8 +78,8 @@ here for your browsing pleasure.[^hosting]
 </table>
 </div>
 
-<script src="{% link assets/js/list.min.js %}" type="text/javascript"></script>
+<script src="{% link assets/js/list.min.js %}"></script>
 
-<script type="text/javascript">
+<script>
   const forCodeList = new List("FoR-Codes-2020", {valueNames: ["Division", "Group", "Field", "Description"]});
 </script>

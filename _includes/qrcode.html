@@ -5,7 +5,7 @@
 {%- if include.showlink -%}
 <p style="text-align: center;"><a href="{{ text }}">{{ text }}</a></p>
 {%- endif -%}
-<script type="text/javascript">
+<script>
  let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
  let qrDiv = document.getElementById("qrcode");
  new QRCode(qrDiv,

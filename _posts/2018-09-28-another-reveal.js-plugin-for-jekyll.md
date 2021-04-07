@@ -71,7 +71,7 @@ tweak to suit your own presentation.
 />
 <script
   src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.8.0/js/reveal.js"
-  type="text/javascript"
+ 
 ></script>
 
 <!-- configure the presentation, (you can tweak options to suit) -->

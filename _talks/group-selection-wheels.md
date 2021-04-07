@@ -8,9 +8,9 @@ hidden: true
 
 # LENS group picker
 
-<script src='{{ "/assets/js/TweenMax.min.js" | relative_url }}' type="text/javascript"></script>
-<script src='{{ "/assets/js/Winwheel.js" | relative_url }}' type="text/javascript"></script>
-<script src='{{ "/assets/js/ccc-workshop-wheels.js" | relative_url }}' type="text/javascript"></script>
+<script src='{{ "/assets/js/TweenMax.min.js" | relative_url }}'></script>
+<script src='{{ "/assets/js/Winwheel.js" | relative_url }}'></script>
+<script src='{{ "/assets/js/ccc-workshop-wheels.js" | relative_url }}'></script>
 
 ---
 
