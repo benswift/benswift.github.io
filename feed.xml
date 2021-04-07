@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-07T10:31:53+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-07T12:51:01+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
 Teams&lt;/a&gt; for lots of things, including organising
 classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible,
 and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another
@@ -26575,9 +26575,9 @@ here for your browsing pleasure.&lt;sup id=&quot;fnref:hosting&quot; role=&quot;
 &lt;/table&gt;
 &lt;/div&gt;
 
-&lt;script src=&quot;/assets/js/list.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/assets/js/list.min.js&quot;&gt;&lt;/script&gt;
 
-&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;script&gt;
   const forCodeList = new List(&quot;FoR-Codes-2020&quot;, {valueNames: [&quot;Division&quot;, &quot;Group&quot;, &quot;Field&quot;, &quot;Description&quot;]});
 &lt;/script&gt;
 
