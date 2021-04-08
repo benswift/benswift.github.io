@@ -58,7 +58,7 @@ here for your browsing pleasure.[^hosting]
 <input class="search" placeholder="type to filter FoR codes..." />
 <table>
   <thead>
-    <tr><th>FoR&nbsp;Code</th><th>Description</th></tr>
+    <tr><th>FoR Code</th><th>Description</th></tr>
   </thead>
   <tbody class="list">
   {% for code in site.data.FoR-Codes-2020-processed %}
