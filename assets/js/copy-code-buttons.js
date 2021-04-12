@@ -8,7 +8,7 @@ codeBlocks.forEach((codeBlock) => {
   // TODO display the auto-detected hljs langauge as well
   // create the "header" div
   let placeholder = document.createElement('div');
-  placeholder.innerHTML = '<div class="code-block-header"><button class="copy-code-block-button" aria-label="Copy code to clipboard"></button><div>';
+  placeholder.innerHTML = '<div class="code-block-header"><button class="copy-code-button" aria-label="Copy code to clipboard"></button><div>';
   let buttonContainer = placeholder.firstElementChild;
 
   // insert the button container before the enclosing <pre>
