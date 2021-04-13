@@ -122,7 +122,7 @@ pre > code {
     // This class will be toggled via JavaScript
     &.copied {
         &::before {
-            content: "copied!";
+            content: "copied";
         }
 
         &::after {
