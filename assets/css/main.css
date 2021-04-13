@@ -203,7 +203,7 @@ pre > code { background-color: #282c34; border-radius: 0; }
 
 .code-block-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
-.copy-code-button { background-color: #f5ddfa; display: grid; grid-auto-flow: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-column-gap: 0.2rem; border: none; cursor: pointer; font-size: 1rem; padding: 0.6rem 0.8rem; width: 6rem; }
+.copy-code-button { background-color: #f5ddfa; display: grid; grid-auto-flow: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-column-gap: 0.2rem; border: none; border-radius: 0.5rem 0.5rem 0 0; cursor: pointer; font-size: 1rem; padding: 0.6rem 0.8rem; width: 6rem; }
 
 .copy-code-button::before { content: "copy"; }
 
