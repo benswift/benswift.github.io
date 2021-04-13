@@ -1,5 +1,5 @@
 ---
-title: "mbsync v1.3.2 breaking change: `SubFolders` config required"
+title: "mbsync v1.3.2 breaking change: <code>SubFolders</code> config required"
 tags: tools emacs
 ---
 
