@@ -209,7 +209,7 @@ pre > code { background-color: #282c34; border-radius: 0; }
 
 .copy-code-button::after { content: "📋"; display: block; }
 
-.copy-code-button.copied::before { content: "copied!"; }
+.copy-code-button.copied::before { content: "copied"; }
 
 .copy-code-button.copied::after { content: "✅"; }
 
