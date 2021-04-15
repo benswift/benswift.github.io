@@ -36,12 +36,19 @@ hidden: true
 .bignumber-wrapper {
   width: 100%;
   display: flex;
-  justify-content: flex-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .bignumber {
-  font-size: 250px;
+  font-size: 500px;
   min-width: 1ch;
+  max-width: 2ch;
   text-align: center;
+  border: none;
+}
+.bignumber-wrapper input:placeholder-shown {
+  border-radius: 0.1em;
+  border: 5px solid #be2edd;
 }
 </style>
 
