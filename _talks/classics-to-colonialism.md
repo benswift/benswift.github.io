@@ -41,8 +41,7 @@ hidden: true
 }
 .bignumber {
   font-size: 500px;
-  min-width: 1ch;
-  max-width: 2ch;
+  width: 2ch;
   text-align: center;
   border: none;
 }
