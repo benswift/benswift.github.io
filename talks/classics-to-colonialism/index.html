@@ -51,6 +51,38 @@
 
 
 
+<!-- first one -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,6 +137,646 @@
  // hacky page centering
  document.querySelector("#qrcode > img").style.margin = "0 auto";
 </script>
+</section><section id="euclids-algorithm"><h1>Euclid’s algorithm</h1></section><section id="backstory"><h2>backstory</h2>
+<p>The Euclidean algorithm for computing the greatest common divisor of two
+integers is one of the oldest known algo- rithms (circa 300 B.C.). It was first
+described by Euclid in Proposition 2 of Book VII of Element</p>
+<p><em>taken from the paper</em></p></section><section id="knuth"><h2>Knuth</h2>
+<blockquote>
+  <p>“granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+that has survived to the present day”</p>
+</blockquote></section><section id="euclidean-rhythm-example-1" data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div>
+
+
+
+</section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div>
+
+
+
+</section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+</div>
+
+
+
+</section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div>
+
+
+
+</section><section id="euclidean-rhythm-example-2" data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="8"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="9"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="10"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="11"></div>
+  
+</div>
+
+
+
+</section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="8"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="9"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="10"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="11"></div>
+  
+</div>
+
+
+
+</section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="8"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="9"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="10"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="11"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+</div>
+
+
+
+</section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="8"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="9"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+</div>
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="10"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="11"></div>
+  
+</div>
+
+
+
+</section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+
+
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="10"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="8"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="11"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="9"></div>
+  
+</div>
+
+
+
 </section><section class="center"><style>
 .bignumber-wrapper {
   width: 100%;
@@ -114,8 +786,7 @@
 }
 .bignumber {
   font-size: 500px;
-  min-width: 1ch;
-  max-width: 2ch;
+  width: 2ch;
   text-align: center;
   border: none;
 }
