@@ -1,0 +1,33 @@
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: {{ include.font-size | default: "80px" }};
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #f5ddfa;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+
+{% assign rows = include.algobits | split: ";" %}
+{% for row in rows %}
+<div class="algo-container">
+  {% assign bitpairs = row | split: "," %}
+  {% for bitpair in bitpairs %}
+  {% assign bit = bitpair | split: ":" %}
+  <div class="bit" data-value="{{bit[0]}}" data-id="{{bit[1]}}"></div>
+  {% endfor %}
+</div>
+{% endfor %}
