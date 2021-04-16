@@ -23,12 +23,25 @@ hidden: true
 
 [part trois](#part-3): but is it cultural appropriation?
 
-{% include slides/impact.html %}
-
 {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
 {% include qrcode.html text=url showlink=true %}
 
-# Euclid's algorithm
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/the-school-of-athens.jpg" %}
+
+{% include slides/image-credit.html
+   artist="Rafael"
+   title="The School of Athens"
+   materials="📸 from Wikipedia, public domain"
+%}
+
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/euclid-lawrence-op.jpg" %}
+
+{% include slides/image-credit.html
+   title="Euclid"
+   year="2007"
+   materials="📸 Lawrence OP (CC-BY-NC)"
+%}
+
 
 ## backstory
 
@@ -38,12 +51,27 @@ described by Euclid in Proposition 2 of Book VII of Element
 
 _taken from the paper_
 
-## Knuth
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" %}
 
-> "granddaddy of all algorithms, because it is the oldest nontrivial algorithm
-> that has survived to the present day"
+"...granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+that has survived to the present day"
 
-<!-- first one -->
+{% include slides/image-credit.html
+   title="Donald Knuth"
+   year="2018"
+   materials="📸 Brian Flaherty for The New York Times"
+%}
+
+## in code
+
+```extempore
+(define (gcd k n)
+  (if (= k 0)
+      n
+      (gcd (modulo n k) k)))
+```
+
+<script src="{% link assets/js/euclidean-rhythm.js %}"></script>
 
 <section id="euclidean-rhythm-example-1" data-auto-animate>
 
