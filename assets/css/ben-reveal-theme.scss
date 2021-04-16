@@ -193,9 +193,8 @@
     display: table;
 
     // attach to bottom(ish)
-    // setting "bottom" doesn't work because reveal.js shenanigans
     position: fixed;
-    top: 50vh;
+    bottom: 10vh;
 
     p {
       background-color: unset;
