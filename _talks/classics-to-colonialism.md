@@ -30,6 +30,108 @@ hidden: true
 {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
 {% include qrcode.html text=url showlink=true %}
 
+# Euclid's algorithm
+
+## backstory
+
+The Euclidean algorithm for computing the greatest common divisor of two
+integers is one of the oldest known algo- rithms (circa 300 B.C.). It was first
+described by Euclid in Proposition 2 of Book VII of Element
+
+_taken from the paper_
+
+## Knuth
+
+> "granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+> that has survived to the present day"
+
+<section data-auto-animate>
+
+<style>
+.algo-container {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+}
+.algo-container .bit {
+  border: 0.1em solid #f5ddfa;
+  padding: 0.3em;
+  margin: 0.3em;
+}
+.algo-container .bit[data-value]:before {
+  content: attr(data-value);
+}
+.algo-container .bit[data-value="1"] {
+  background-color: #333;
+  color: #fafafa;
+}
+</style>
+
+{% assign algobits = "1:0,1:1,1:2,0:3,0:4,0:5,0:6,0:7" %}
+{% assign rows = algobits | split: ";" %}
+{% for row in rows %}
+<div class="algo-container">
+{% assign bitpairs = row | split: "," %}
+{% for bitpair in bitpairs %}
+{% assign bit = bitpair | split: ":" %}
+<div class="bit" data-value="{{bit[0]}}" data-id="{{bit[1]}}"></div>
+{% endfor %}
+</div>
+{% endfor %}
+
+</section>
+
+<section data-auto-animate>
+
+{% assign algobits = "1:0,1:1,1:2,0:3,0:4;0:5,0:6,0:7" %}
+{% assign rows = algobits | split: ";" %}
+{% for row in rows %}
+<div class="algo-container">
+{% assign bitpairs = row | split: "," %}
+{% for bitpair in bitpairs %}
+{% assign bit = bitpair | split: ":" %}
+<div class="bit" data-value="{{bit[0]}}" data-id="{{bit[1]}}"></div>
+{% endfor %}
+</div>
+{% endfor %}
+
+</section>
+
+<section data-auto-animate>
+
+{% assign algobits = "1:0,1:1,1:2;0:5,0:6,0:7;0:3,0:4" %}
+{% assign rows = algobits | split: ";" %}
+{% for row in rows %}
+<div class="algo-container">
+{% assign bitpairs = row | split: "," %}
+{% for bitpair in bitpairs %}
+{% assign bit = bitpair | split: ":" %}
+<div class="bit" data-value="{{bit[0]}}" data-id="{{bit[1]}}"></div>
+{% endfor %}
+</div>
+{% endfor %}
+
+</section>
+
+<section data-auto-animate>
+
+{% assign algobits = "1:0,0:5,0:3,1:1,0:6,0:4,1:2,0:7" %}
+{% assign rows = algobits | split: ";" %}
+{% for row in rows %}
+<div class="algo-container">
+{% assign bitpairs = row | split: "," %}
+{% for bitpair in bitpairs %}
+{% assign bit = bitpair | split: ":" %}
+<div class="bit" data-value="{{bit[0]}}" data-id="{{bit[1]}}"></div>
+{% endfor %}
+</div>
+{% endfor %}
+
+</section>
+
 <hr class="center">
 
 <style>
