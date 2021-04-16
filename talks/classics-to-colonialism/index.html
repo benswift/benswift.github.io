@@ -51,7 +51,17 @@
 
 
 
-<!-- first one -->
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,8 +99,8 @@
 
 
 <section id="title" class="center">
-  <h1 class="talk-title">From Classics to Colonialism...</h1>
-<p class="talk-subtitle">...via drum circles</p>
+  <h1 class="talk-title">From Classics to Colonialism</h1>
+<p class="talk-subtitle">via drum circles</p>
   <p class="talk-name"><a href="https://benswift.me">Dr. Ben Swift</a></p>
   
   <p class="talk-date">19 Apr '21</p>
@@ -120,7 +130,7 @@
 </section><section id="outline"><h2>outline</h2>
 <p><a href="#part-1">part un</a>: Euclid’s algorithm</p>
 <p><a href="#part-2">part deux</a>: Euclidean Rhythms (+ livecoding!)</p>
-<p><a href="#part-3">part trois</a>: but is it cultural appropriation?</p></section><section class="impact center" data-background-color="#262626"></section><section class="center" style="font-size:0.6em;">
+<p><a href="#part-3">part trois</a>: but is it cultural appropriation?</p></section><section class="center">
 <script src="/assets/js/qrcode.min.js"></script>
 <div id="qrcode"></div>
 <p style="text-align: center;"><a href="https://benswift.me/talks/classics-to-colonialism/">https://benswift.me/talks/classics-to-colonialism/</a></p>
@@ -137,15 +147,69 @@
  // hacky page centering
  document.querySelector("#qrcode > img").style.margin = "0 auto";
 </script>
-</section><section id="euclids-algorithm"><h1>Euclid’s algorithm</h1></section><section id="backstory"><h2>backstory</h2>
+</section><section data-background-image="/assets/images/talks/classics-to-colonialism/the-school-of-athens.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+<div class="image-credit" style="">
+
+  
+    
+
+  <p class="image-credit-artist">Rafael</p>
+
+	
+  
+    
+
+  <p class="image-credit-title">The School of Athens</p>
+
+	
+  
+    
+
+  <p class="image-credit-materials">📸 from Wikipedia, public domain</p>
+
+	
+  
+
+</div></section><section id="backstory"><h2>backstory</h2>
 <p>The Euclidean algorithm for computing the greatest common divisor of two
 integers is one of the oldest known algo- rithms (circa 300 B.C.). It was first
 described by Euclid in Proposition 2 of Book VII of Element</p>
-<p><em>taken from the paper</em></p></section><section id="knuth"><h2>Knuth</h2>
-<blockquote>
-  <p>“granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+<p><em>taken from the paper</em></p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+<p>“…granddaddy of all algorithms, because it is the oldest nontrivial algorithm
 that has survived to the present day”</p>
-</blockquote></section><section id="euclidean-rhythm-example-1" data-auto-animate="">
+<div class="image-credit" style="">
+
+  
+    
+
+  <p class="image-credit-title">Donald Knuth</p>
+
+	
+  
+    
+
+  <p class="image-credit-year">2018</p>
+
+	
+  
+    
+
+  <p class="image-credit-materials">📸 Brian Flaherty for The New York Times</p>
+
+	
+  
+
+</div></section><section id="in-code"><h2>in code</h2>
+<pre><code class="language-extempore">(define (gcd k n)
+  (if (= k 0)
+      n
+      (gcd (modulo n k) k)))
+</code></pre></section><section class="impact center" data-background-color="#262626"><div class="stacked-paper">
+<img src="/assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg" alt="first page of 'distance geometry of music' paper">
+</div>
+<script src="/assets/js/euclidean-rhythm.js"></script></section><section id="euclidean-rhythm-example-1" data-auto-animate="">
 
 <style>
  .algo-container {
@@ -157,7 +221,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -215,7 +279,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -278,7 +342,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -346,7 +410,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -404,7 +468,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -474,7 +538,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -549,7 +613,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -629,7 +693,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }
@@ -719,7 +783,7 @@ that has survived to the present day”</p>
    margin: 0 !important;
  }
  .algo-container .bit {
-   border: 0.1em solid #f5ddfa;
+   border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
  }

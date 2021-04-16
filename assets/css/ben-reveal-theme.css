@@ -144,7 +144,7 @@
 
 .reveal .slides section table td { vertical-align: top; }
 
-.reveal .slides section .image-credit { background-color: rgba(250, 250, 250, 0.7); color: rgba(51, 51, 51, 0.7); padding: 0.5em; margin: 0; font-size: 0.8em; display: table; position: fixed; top: 50vh; /* .image-credit-title { font-style: italic; } */ -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out; }
+.reveal .slides section .image-credit { background-color: rgba(250, 250, 250, 0.7); color: rgba(51, 51, 51, 0.7); padding: 0.5em; margin: 0; font-size: 0.8em; display: table; position: fixed; bottom: 10vh; /* .image-credit-title { font-style: italic; } */ -webkit-transition: all 0.5s ease-out; transition: all 0.5s ease-out; }
 
 .reveal .slides section .image-credit p { background-color: unset; margin: 0.3em; }
 
@@ -167,3 +167,15 @@
 .reveal .progress { color: #be2edd; height: 0.4rem; }
 
 svg.icon { width: 1em; height: 1em; vertical-align: -0.125em; fill: currentColor; }
+
+.stacked-paper { background: #fff; padding: 30px; position: relative; }
+
+.stacked-paper img { width: 100%; }
+
+.stacked-paper:before, .stacked-paper:after { /* Styles to distinguish sheets from one another */ -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); border: 1px solid #bbb; }
+
+.stacked-paper:before, .stacked-paper:after { content: ""; position: absolute; height: 95%; width: 99%; background-color: #eee; }
+
+.stacked-paper:before { right: 15px; top: 0; -webkit-transform: rotate(-1deg); transform: rotate(-1deg); z-index: -1; }
+
+.stacked-paper:after { top: 5px; right: -5px; -webkit-transform: rotate(1deg); transform: rotate(1deg); z-index: -2; }
