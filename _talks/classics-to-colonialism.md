@@ -71,6 +71,12 @@ that has survived to the present day"
       (gcd (modulo n k) k)))
 ```
 
+{% include slides/impact.html %}
+
+<div class="stacked-paper">
+<img src="{% link assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg %}" alt="first page of 'distance geometry of music' paper">
+</div>
+
 <script src="{% link assets/js/euclidean-rhythm.js %}"></script>
 
 <section id="euclidean-rhythm-example-1" data-auto-animate>
