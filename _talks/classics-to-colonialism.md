@@ -45,7 +45,9 @@ _taken from the paper_
 > "granddaddy of all algorithms, because it is the oldest nontrivial algorithm
 > that has survived to the present day"
 
-<section data-auto-animate>
+<!-- first one -->
+
+<section id="euclidean-rhythm-example-1" data-auto-animate>
 
 {% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,0:3,0:4,0:5,0:6,0:7" %}
 
@@ -66,6 +68,36 @@ _taken from the paper_
 <section data-auto-animate>
 
 {% include slides/euclid-algo-widget.html algobits="1:0,0:5,0:3,1:1,0:6,0:4,1:2,0:7" %}
+
+</section>
+
+<section id="euclidean-rhythm-example-2" data-auto-animate>
+
+{% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,1:3,1:4,0:5,0:6,0:7,0:8,0:9,0:10,0:11" %}
+
+</section>
+
+<section data-auto-animate>
+
+{% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,1:3,1:4,0:5,0:6;0:7,0:8,0:9,0:10,0:11" %}
+
+</section>
+
+<section data-auto-animate>
+
+{% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,1:3,1:4;0:7,0:8,0:9,0:10,0:11;0:5,0:6" %}
+
+</section>
+
+<section data-auto-animate>
+
+{% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2;0:7,0:8,0:9;0:5,0:6;1:3,1:4;0:10,0:11" %}
+
+</section>
+
+<section data-auto-animate>
+
+{% include slides/euclid-algo-widget.html algobits="1:0,0:7,0:5,1:3,0:10,1:1,0:8,0:6,1:4,0:11,1:2,0:9" %}
 
 </section>
 
