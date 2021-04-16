@@ -32,7 +32,9 @@ function compareArrays (a, b) {
 function euclid(k, n) {
 
   let groups = [];
+  let layers = [];
   for (let i = 0; i < n; i++) groups.push([Number(i < k)]);
+  layers.push(groups);
 
   let l;
   while (l = groups.length - 1) {
@@ -45,10 +47,14 @@ function euclid(k, n) {
     if (end === 0) break;
 
     let count = Math.min(start, l - end);
+
+
     groups = groups
       .slice(0, count)
       .map(function (group, i) { return group.concat(groups[l - i]); })
       .concat(groups.slice(count, -count));
+    layers.push(groups);
   }
-  return [].concat.apply([], groups);
+  layers.push([].concat.apply([], groups));
+  return layers;
 };
