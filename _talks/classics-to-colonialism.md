@@ -25,8 +25,6 @@ hidden: true
 
 {% include slides/impact.html %}
 
-{:style="font-size:0.6em;"}
-
 {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
 {% include qrcode.html text=url showlink=true %}
 
