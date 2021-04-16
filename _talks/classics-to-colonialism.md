@@ -1,7 +1,7 @@
 ---
 event: "an invited guest lecture at the ANU School of Cybernetics"
-title: From Classics to Colonialism...
-subtitle: ...via drum circles
+title: From Classics to Colonialism
+subtitle: via drum circles
 date: "2021-04-19"
 permalink: /talks/classics-to-colonialism/
 summary: >-
