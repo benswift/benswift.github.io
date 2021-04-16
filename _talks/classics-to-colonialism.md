@@ -34,14 +34,6 @@ hidden: true
    materials="📸 from Wikipedia, public domain"
 %}
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/euclid-lawrence-op.jpg" %}
-
-{% include slides/image-credit.html
-   title="Euclid"
-   year="2007"
-   materials="📸 Lawrence OP (CC-BY-NC)"
-%}
-
 
 ## backstory
 
