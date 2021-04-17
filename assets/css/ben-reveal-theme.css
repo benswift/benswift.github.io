@@ -106,7 +106,9 @@
 
 .reveal .slides section h2 { font-size: 1.6rem; }
 
-.reveal .slides section[data-background-image] h1, .reveal .slides section[data-background-image] h2, .reveal .slides section[data-background-image] h3, .reveal .slides section[data-background-image] p { background-color: rgba(255, 255, 255, 0.75); display: table; padding: 0.2em 0.4em; }
+.reveal .slides section[data-background-image] h1, .reveal .slides section[data-background-image] h2, .reveal .slides section[data-background-image] h3, .reveal .slides section[data-background-image] blockquote, .reveal .slides section[data-background-image] p { background-color: rgba(255, 255, 255, 0.75); display: table; padding: 0.2em 0.4em; }
+
+.reveal .slides section[data-background-image] blockquote p { background-color: unset; }
 
 .reveal .slides section ul, .reveal .slides section ol { padding-left: 1rem; }
 
@@ -130,7 +132,7 @@
 
 .reveal .slides section blockquote:before { color: #ccc; content: open-quote; font-size: 3em; line-height: 0.1em; vertical-align: -0.4em; }
 
-.reveal .slides section blockquote p { display: inline; font-style: normal; }
+.reveal .slides section blockquote p:first-child { display: inline; }
 
 .reveal .slides section .hl-para { background-color: #f5ddfa; border-left: 10px solid #be2edd; padding: 1em 1em; margin: 1em 0; }
 

@@ -11,6 +11,24 @@
   <head>
     <meta charset="utf-8">
 
+    
+	<title>From Classics to Colonialism</title>
+    
+
+    
+	<meta name="description" content="an invited guest lecture at the ANU School of Cybernetics">
+    
+
+    
+	<meta name="author" content="Ben Swift">
+    
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/reveal.js/reset.css">
     <link rel="stylesheet" type="text/css" href="/reveal.js/reveal.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/ben-reveal-theme.css">
   </head>
@@ -98,10 +116,90 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="title" class="center">
   <h1 class="talk-title">From Classics to Colonialism</h1>
 <p class="talk-subtitle">via drum circles</p>
-  <p class="talk-name"><a href="https://benswift.me">Dr. Ben Swift</a></p>
+  <p class="talk-name">Ben Swift</p>
   
   <p class="talk-date">19 Apr '21</p>
   <p><a title="CC BY-NC-SA licence" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -129,8 +227,8 @@
   </p>
 </section><section id="outline"><h2>outline</h2>
 <p><a href="#part-1">part un</a>: Euclid’s algorithm</p>
-<p><a href="#part-2">part deux</a>: Euclidean Rhythms (+ livecoding!)</p>
-<p><a href="#part-3">part trois</a>: but is it cultural appropriation?</p></section><section class="center">
+<p><a href="#part-2">part deux</a>: sounding bodies and Euclidean Rhythms</p>
+<p><a href="#part-3">part trois</a>: cui bono?</p></section><section class="center">
 <script src="/assets/js/qrcode.min.js"></script>
 <div id="qrcode"></div>
 <p style="text-align: center;"><a href="https://benswift.me/talks/classics-to-colonialism/">https://benswift.me/talks/classics-to-colonialism/</a></p>
@@ -166,48 +264,49 @@
   
     
 
-  <p class="image-credit-materials">📸 from Wikipedia, public domain</p>
+  <p class="image-credit-credit">📸 from Wikipedia, public domain</p>
 
 	
   
 
-</div></section><section id="backstory"><h2>backstory</h2>
-<p>The Euclidean algorithm for computing the greatest common divisor of two
-integers is one of the oldest known algo- rithms (circa 300 B.C.). It was first
-described by Euclid in Proposition 2 of Book VII of Element</p>
-<p><em>taken from the paper</em></p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+</div></section><section id="the-euclidean-algorithm"><h2>the Euclidean algorithm</h2>
+<p>the Euclidean algorithm for computing the greatest common divisor of two
+integers is one of the oldest known algorithms (circa 300 B.C.)</p>
+<p>first described by Euclid’s <em>Elements, Proposition 2, Book VII</em></p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
-<p>“…granddaddy of all algorithms, because it is the oldest nontrivial algorithm
-that has survived to the present day”</p>
+<blockquote>
+  <p>granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+that has survived to the present day</p>
+
+  <p><strong>Donald Knuth</strong>, <em>TAOCP Vol. 2</em></p>
+</blockquote>
 <div class="image-credit" style="">
 
   
     
 
-  <p class="image-credit-title">Donald Knuth</p>
-
-	
-  
-    
-
-  <p class="image-credit-year">2018</p>
-
-	
-  
-    
-
-  <p class="image-credit-materials">📸 Brian Flaherty for The New York Times</p>
+  <p class="image-credit-credit">📸 Brian Flaherty for The New York Times</p>
 
 	
   
 
-</div></section><section id="in-code"><h2>in code</h2>
+</div></section><section id="in-plain-english"><h2>in plain English</h2>
+<p>TODO</p></section><section id="geometric-visualisation"><h2>geometric visualisation</h2>
+<p><img class="r-stretch" src="/assets/images/talks/classics-to-colonialism/euclidean-algo-animated.gif" alt="animated visualisation of the Euclidean algorithm"></p>
+<p><em>animation from <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Wikipedia</a></em></p></section><section id="in-code"><h2>in code</h2>
+<pre><code class="language-extempore">(define (gcd a b)
+  (if (= a b)
+      a
+      (gcd (min a b) (abs (- a b)))))
+</code></pre></section><section id="in-code-a-bit-more-efficient"><h2>in code (a bit more efficient)</h2>
 <pre><code class="language-extempore">(define (gcd k n)
   (if (= k 0)
       n
       (gcd (modulo n k) k)))
 </code></pre></section><section class="impact center" data-background-color="#262626"><div class="stacked-paper">
+<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
 <img src="/assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg" alt="first page of 'distance geometry of music' paper">
+</a>
 </div>
 <script src="/assets/js/euclidean-rhythm.js"></script></section><section id="euclidean-rhythm-example-1" data-auto-animate="">
 
@@ -398,8 +497,7 @@ that has survived to the present day”</p>
 
 
 
-</section><section data-auto-animate="">
-
+</section><section data-auto-animate=""><h2>euclid(3,8)</h2>
 <style>
  .algo-container {
    display: flex;
@@ -422,9 +520,6 @@ that has survived to the present day”</p>
    color: #fafafa;
  }
 </style>
-
-
-
 <div class="algo-container">
   
   
@@ -453,10 +548,7 @@ that has survived to the present day”</p>
   <div class="bit" data-value="0" data-id="7"></div>
   
 </div>
-
-
-
-</section><section id="euclidean-rhythm-example-2" data-auto-animate="">
+<p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>tresillo</em></span></p></section><section><iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&amp;museid=5myOlMOZ0"></iframe></section><section id="euclidean-rhythm-example-2" data-auto-animate="">
 
 <style>
  .algo-container {
@@ -771,8 +863,7 @@ that has survived to the present day”</p>
 
 
 
-</section><section data-auto-animate="">
-
+</section><section data-auto-animate=""><h2>euclid(5,12)</h2>
 <style>
  .algo-container {
    display: flex;
@@ -795,9 +886,6 @@ that has survived to the present day”</p>
    color: #fafafa;
  }
 </style>
-
-
-
 <div class="algo-container">
   
   
@@ -838,33 +926,120 @@ that has survived to the present day”</p>
   <div class="bit" data-value="0" data-id="9"></div>
   
 </div>
-
-
-
-</section><section class="center"><style>
-.bignumber-wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.bignumber {
-  font-size: 500px;
-  width: 2ch;
-  text-align: center;
-  border: none;
-}
-.bignumber-wrapper input:placeholder-shown {
-  border-radius: 0.1em;
-  border: 5px solid #be2edd;
-}
+<p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">South
+African <em>Venda</em>, Macedonia, Central African Republic and
+more...</span></p></section><section data-auto-animate=""><h2>euclid(5,8)</h2>
+<style>
+ .algo-container {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   border: 0.1em solid #be2eddbb;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
 </style>
-<div class="bignumber-wrapper">
-<input class="bignumber" inputmode="numeric" pattern="[0-9]*" type="text" placeholder="k"> <input class="bignumber" inputmode="numeric" pattern="[0-9]*" type="text" placeholder="n">
-</div></section><section id="whats-next"><h2>what’s next?</h2>
-<p>these questions keep me up at night</p>
-<p>if you’d like to help (or just to hang out with the c/c/c group more generally)
-then let me know 😊</p></section><section class="center" data-background-image="/assets/images/talks/all/camylla-battani-AoqgGAqrLpU-unsplash.jpg">
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div>
+<p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>cinquillo</em></span></p></section><section id="todo"><h2>TODO</h2>
+<p>moar rhythm examples (from around the world)</p>
+<p>implications: simply-parameterised way to generate interesting rhythms</p>
+<p>-&gt; obviously useful for livecoding</p>
+<p>appeals to the “small interface, huge expressive power” of all makers
+(<em>especially</em> software makers) TODO maybe have a picture of some cool machine?</p></section><section id="todo-1"><h2>TODO</h2>
+<p>90s drum circle</p></section><section id="algorithmically-mediated-colonialism"><h2>algorithmically-mediated colonialism?</h2>
+<p><em>Stewart, J (2010)</em> <a href="http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf">Articulating the African Diaspora through Rhythm: Diatonic
+Rhythms, Nested Looping Structures, and the music of Steve
+Coleman</a></p>
+<p><em>Friedberg, L (2003)</em> <a href="http://www.chidjembe.com/drumdollars.html">Drumming for
+Dollars</a></p></section><section></section><section class="center">
+
+  
+
+  <iframe src="https://www.youtube.com/embed/fn3KWM1kuAw" style="display:block; margin:0 auto; width:50vw; height:50vh;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+  </iframe>
+
+</section><section data-background-image="/assets/images/talks/classics-to-colonialism/Do_You_Love_Me_by_The_Contours_US_vinyl_A-side.png" data-background-size="contain" data-background-position="center" role="img" aria-label="">
+  
+</section><section data-background-image="/assets/images/talks/classics-to-colonialism/mm_The-Countours_Original-Members-2-1024x828.jpg" data-background-size="contain" data-background-position="center" role="img" aria-label="">
+  
+<div class="image-credit" style="">
+
+  
+    
+
+  <p class="image-credit-artist">The Contours</p>
+
+	
+  
+    
+
+  <p class="image-credit-credit">📸 Motown Museum</p>
+
+	
+  
+
+</div></section><section data-background-image="/assets/images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+</section><section class="impact center" data-background-color="#262626"><div class="stacked-paper">
+<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
+<img src="/assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg" alt="first page of 'distance geometry of music' paper">
+</a>
+</div></section><section data-background-image="/assets/images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+</section><section data-background-image="/assets/images/livecoding/ben-alta.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+</section><section id="but-its-just-math"><h2>but it’s just math!</h2>
+<p>show some tricky maths from the paper</p></section><section><blockquote>
+  <p>Machine learning is like money laundering for bias.</p>
+
+  <p><strong>Maciej Cegłowski</strong>, <a href="https://idlewords.com/talks/sase_panel.htm"><em>The Moral Economy of
+Tech</em></a></p>
+</blockquote></section><section data-background-image="/assets/images/livecoding/ben-acmc-09-closeup.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+</section><section class="center"><pre style="font-size:0.8rem;"><code class="language-python"># a SoCY twitter bot
+for tweet in api.user("3AInstitute").timeline(limit=200):
+  if tweet.user.location == "San Francisco":
+    tweet.retweet_with_comment("I have so many questions")
+</code></pre></section><section class="center" data-background-image="/assets/images/talks/all/camylla-battani-AoqgGAqrLpU-unsplash.jpg">
 
   <style>
    #contact-details {
@@ -962,8 +1137,8 @@ Reveal.initialize(
     RevealMath,
   ],
   math: {
-    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
-    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
   }
 }
 
