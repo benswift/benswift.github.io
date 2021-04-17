@@ -5,7 +5,9 @@ subtitle: via drum circles
 date: "2021-04-19"
 permalink: /talks/classics-to-colonialism/
 summary: >-
-  TODO
+  Did the ancient Greeks know how to bust a move? Is there a deeper mathematical
+  truth to which songs are best to dance to? Can algorithmic composition be a
+  vehicle of oppression?
 hidden: true
 ---
 
@@ -188,6 +190,9 @@ interesting and culturally-significant rhythms
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/conspiracy.gif" heading="algorithmic composers" %}
 
 {% include slides/impact.html %}
+<!-- musician -> simple interface -> cultural domain -->
+
+{% include slides/impact.html %}
 
 algorithmic drum circle?
 
@@ -199,6 +204,9 @@ algorithmic drum circle?
    address2="🏢 Siesta Key, Florida USA 34242"
    phone="☎ 941.256.2686"
 %}
+
+{% include slides/impact.html %}
+<!-- musician -> cultural domain -->
 
 ---
 
@@ -243,13 +251,15 @@ algorithmic drum circle?
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" %}
 
-{% include slides/background-image.html image="images/livecoding/ben-alta.jpg" %}
+{% include slides/background-image.html image="images/livecoding/ben-acmc-09-closeup.jpg" %}
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/typing-cat.gif" heading="Ben said algorithms are racist!" %}
 
 well... sometimes, but that's not the main point here
 
 look, you learned one earlier---I saw you---so you're guilty as well
+
+we can't hide behind algorithmic disintermediation
 
 ---
 
@@ -258,7 +268,17 @@ look, you learned one earlier---I saw you---so you're guilty as well
 > **Maciej Cegłowski**, [_The Moral Economy of
 > Tech_](https://idlewords.com/talks/sase_panel.htm)
 
-{% include slides/background-image.html image="images/livecoding/ben-acmc-09-closeup.jpg" %}
+## what did you learn?
+
+{:.fragment}
+
+Euclid's algorithm!
+
+{:.fragment}
+
+To find the **g**reatest **c**ommon **d**ivisor of two numbers (_a_ and _b_),
+repeatedly replace the larger of the two numbers by their difference until both
+are equal. This final number is then the greatest common divisor.
 
 <hr class="center">
 
