@@ -156,6 +156,9 @@
   blockquote p:first-child {
     display: inline;
   }
+  blockquote p:not(:first-child) {
+    margin-top: 1rem;
+  }
 
   .hl-para {
       background-color: lighten($highlight-color, 40%);
