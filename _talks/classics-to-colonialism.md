@@ -31,7 +31,7 @@ hidden: true
 {% include slides/image-credit.html
    artist="Rafael"
    title="The School of Athens"
-   materials="📸 from Wikipedia, public domain"
+   credit="📸 from Wikipedia, public domain"
 %}
 
 ## backstory
@@ -50,7 +50,7 @@ _taken from the paper_
 > **Donald Knuth**, _TAOCP Vol. 2_
 
 {% include slides/image-credit.html
-   materials="📸 Brian Flaherty for The New York Times"
+   credit="📸 Brian Flaherty for The New York Times"
 %}
 
 ## geometric visualisation
@@ -58,6 +58,15 @@ _taken from the paper_
 <img class="r-stretch" src="{% link assets/images/talks/classics-to-colonialism/euclidean-algo-animated.gif %}" alt="animated visualisation of the Euclidean algorithm">
 
 _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
+
+## in code
+
+```extempore
+(define (gcd a b)
+  (if (= a b)
+      a
+      (gcd (min a b) (abs (- a b)))))
+```
 
 ## in code
 
@@ -156,6 +165,42 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 <div class="bignumber-wrapper">
 <input class="bignumber"  inputmode="numeric" pattern="[0-9]*" type="text" placeholder="k">&nbsp;<input class="bignumber"  inputmode="numeric" pattern="[0-9]*" type="text" placeholder="n">
 </div>
+
+## algorithmically-mediated colonialism?
+
+_Stewart, J (2010)_ [Articulating the African Diaspora through Rhythm: Diatonic
+Rhythms, Nested Looping Structures, and the music of Steve
+Coleman](http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
+
+_Friedberg, L (2003)_ [Drumming for
+Dollars](http://www.chidjembe.com/drumdollars.html)
+
+---
+
+{% include slides/youtube.html id="fn3KWM1kuAw" %}
+
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/Do_You_Love_Me_by_The_Contours_US_vinyl_A-side.png" bgsize="contain" %}
+
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/mm_The-Countours_Original-Members-2-1024x828.jpg" bgsize="contain" %}
+
+{% include slides/image-credit.html
+   artist="The Contours"
+   credit="📸 Motown Museum"
+%}
+
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" %}
+
+{% include slides/impact.html %}
+
+<div class="stacked-paper">
+<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
+<img src="{% link assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg %}" alt="first page of 'distance geometry of music' paper">
+</a>
+</div>
+
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" %}
+
+{% include slides/background-image.html image="images/livecoding/ben-alta.jpg" %}
 
 ## what's next?
 
