@@ -150,7 +150,7 @@ Macedonia, and <strong>more</strong></p>
 
 {% include slides/euclid-algo-widget.html algobits="1:0,0:1,1:2,1:3,0:4,1:5,1:6,0:7" %}
 
-<p class="fragment">cuban <em>cincillo</em></p>
+<p class="fragment">cuban <em>cinquillo</em></p>
 
 </section>
 
