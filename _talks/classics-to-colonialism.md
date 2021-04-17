@@ -19,9 +19,9 @@ hidden: true
 
 [part un](#part-1): Euclid's algorithm
 
-[part deux](#part-2): making noise with Euclidean Rhythms
+[part deux](#part-2): sounding bodies and Euclidean Rhythms
 
-[part trois](#part-3): but is it cultural appropriation?
+[part trois](#part-3): cui bono?
 
 {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
 {% include qrcode.html text=url showlink=true %}
@@ -34,13 +34,12 @@ hidden: true
    credit="📸 from Wikipedia, public domain"
 %}
 
-## backstory
+## the Euclidean algorithm
 
-The Euclidean algorithm for computing the greatest common divisor of two
-integers is one of the oldest known algo- rithms (circa 300 B.C.). It was first
-described by Euclid in Proposition 2 of Book VII of Element
+the Euclidean algorithm for computing the greatest common divisor of two
+integers is one of the oldest known algorithms (circa 300 B.C.)
 
-_taken from the paper_
+first described by Euclid's _Elements, Proposition 2, Book VII_
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" %}
 
@@ -52,6 +51,10 @@ _taken from the paper_
 {% include slides/image-credit.html
    credit="📸 Brian Flaherty for The New York Times"
 %}
+
+## in plain English
+
+TODO
 
 ## geometric visualisation
 
@@ -68,7 +71,7 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
       (gcd (min a b) (abs (- a b)))))
 ```
 
-## in code
+## in code (a bit more efficient)
 
 ```extempore
 (define (gcd k n)
@@ -215,12 +218,28 @@ Dollars](http://www.chidjembe.com/drumdollars.html)
 
 {% include slides/background-image.html image="images/livecoding/ben-alta.jpg" %}
 
-## what's next?
+## but it's just math!
 
-these questions keep me up at night
+show some tricky maths from the paper
 
-if you'd like to help (or just to hang out with the c/c/c group more generally)
-then let me know 😊
+---
+
+> Machine Learning is money laundering for bias
+>
+> **Maciej Ceglowski**, _TBC_
+
+{% include slides/background-image.html image="images/livecoding/ben-acmc-09-closeup.jpg" %}
+
+<hr class="center">
+
+{:style="font-size:0.8em;"}
+
+```python
+# a 3Ai twitter bot
+for tweet in api.user("3AInstitute").timeline(limit=200):
+  if tweet.user.location == "San Francisco":
+    tweet.retweet_with_comment("I have so. many. questions.")
+```
 
 {% include slides/questions.html %}
 
