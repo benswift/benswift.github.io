@@ -71,7 +71,9 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 {% include slides/impact.html %}
 
 <div class="stacked-paper">
+<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
 <img src="{% link assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg %}" alt="first page of 'distance geometry of music' paper">
+</a>
 </div>
 
 <script src="{% link assets/js/euclidean-rhythm.js %}"></script>
