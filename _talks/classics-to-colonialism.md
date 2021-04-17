@@ -222,13 +222,13 @@ show some tricky maths from the paper
 
 <hr class="center">
 
-{:style="font-size:0.8em;"}
+{:style="font-size:0.8rem;"}
 
 ```python
-# a 3Ai twitter bot
+# a SoCY twitter bot
 for tweet in api.user("3AInstitute").timeline(limit=200):
   if tweet.user.location == "San Francisco":
-    tweet.retweet_with_comment("I have so. many. questions.")
+    tweet.retweet_with_comment("I have so many questions")
 ```
 
 {% include slides/questions.html %}
