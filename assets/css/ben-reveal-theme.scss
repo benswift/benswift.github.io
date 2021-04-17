@@ -71,10 +71,8 @@
       display: table;
       padding: 0.2em 0.4em;
     }
-    // but leave blockquote stuff as-is
     blockquote p {
-        background-color: unset;
-        display: unset;
+      background-color: unset;
     }
   }
 
@@ -155,9 +153,8 @@
     line-height: 0.1em;
     vertical-align: -0.4em;
   }
-  blockquote p {
+  blockquote p:first-child {
     display: inline;
-    font-style: normal;
   }
 
   .hl-para {
