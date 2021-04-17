@@ -109,6 +109,8 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 {% include slides/euclid-algo-widget.html algobits="1:0,0:5,0:3,1:1,0:6,0:4,1:2,0:7" %}
 
+<p class="fragment">cuban <em>tresillo</em></p>
+
 </section>
 
 <section id="euclidean-rhythm-example-2" data-auto-animate>
@@ -138,6 +140,17 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 <section data-auto-animate>
 
 {% include slides/euclid-algo-widget.html algobits="1:0,0:7,0:5,1:3,0:10,1:1,0:8,0:6,1:4,0:11,1:2,0:9" %}
+
+<p class="fragment">Central African Republic, South African <em>Venda</em>,
+Macedonia, and <strong>more</strong></p>
+
+</section>
+
+<section data-auto-animate>
+
+{% include slides/euclid-algo-widget.html algobits="1:0,0:1,1:2,1:3,0:4,1:5,1:6,0:7" %}
+
+<p class="fragment">cuban <em>cincillo</em></p>
 
 </section>
 
