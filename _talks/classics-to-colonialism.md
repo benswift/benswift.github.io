@@ -34,7 +34,6 @@ hidden: true
    materials="📸 from Wikipedia, public domain"
 %}
 
-
 ## backstory
 
 The Euclidean algorithm for computing the greatest common divisor of two
@@ -45,12 +44,12 @@ _taken from the paper_
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" %}
 
-> ...granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+> granddaddy of all algorithms, because it is the oldest nontrivial algorithm
 > that has survived to the present day
+>
+> **Donald Knuth**, _TAOCP Vol. 2_
 
 {% include slides/image-credit.html
-   title="Donald Knuth"
-   year="2018"
    materials="📸 Brian Flaherty for The New York Times"
 %}
 
