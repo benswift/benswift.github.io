@@ -26,20 +26,20 @@ hidden: true
 {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
 {% include qrcode.html text=url showlink=true %}
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/the-school-of-athens.jpg" %}
+---
 
-{% include slides/image-credit.html
-   artist="Rafael"
-   title="The School of Athens"
-   credit="📸 from Wikipedia, public domain"
-%}
+<p class="r-fit-text">391&nbsp;&nbsp;578</p>
 
-## the Euclidean algorithm
+what's the _biggest_ number divides both evenly?
+
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/the-school-of-athens.jpg" heading="the Euclidean algorithm" %}
 
 the Euclidean algorithm for computing the greatest common divisor of two
 integers is one of the oldest known algorithms (circa 300 B.C.)
 
 first described by Euclid's _Elements, Proposition 2, Book VII_
+
+independently discovered in several other places, e.g. China, India
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" %}
 
@@ -54,7 +54,17 @@ first described by Euclid's _Elements, Proposition 2, Book VII_
 
 ## in plain English
 
-TODO
+To find the **g**reatest **c**ommon **d**ivisor of two numbers (_a_ and _b_),
+repeatedly replace the larger of the two numbers by their difference until both
+are equal. This final number is then the greatest common divisor.
+
+([source](https://www.sciencedirect.com/science/article/pii/S0925772108001156))
+
+## why?
+
+early on: astronomy, calendars
+
+these days: _so many thing_ (e.g. number theory cryptography)
 
 ## geometric visualisation
 
@@ -74,10 +84,10 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 ## in code (a bit more efficient)
 
 ```extempore
-(define (gcd k n)
-  (if (= k 0)
-      n
-      (gcd (modulo n k) k)))
+(define (gcd a b)
+  (if (= a 0)
+      b
+      (gcd (modulo b a) a)))
 ```
 
 {% include slides/stacked-papers.html 
@@ -147,35 +157,71 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 African <em>Venda</em>, Macedonia, Central African Republic and
 more...</span></p>
 
+---
+
+<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5nitE48DN"></iframe>
+
 <h2 data-auto-animate>euclid(5,8)</h2>
 
 {% include slides/euclid-algo-widget.html algobits="1:0,0:1,1:2,1:3,0:4,1:5,1:6,0:7" %}
 
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>cinquillo</em></span></p>
 
-## TODO
+---
 
-moar rhythm examples (from around the world)
+<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5nitE48DN"></iframe>
 
-implications: simply-parameterised way to generate interesting rhythms
+{% include slides/stacked-papers.html 
+           width="50%"
+           image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
+           alt="list of world music rhythms which are Euclidean" %}
 
--> obviously useful for livecoding
+## implications?
 
-appeals to the "small interface, huge expressive power" of all makers
-(_especially_ software makers) TODO maybe have a picture of some cool machine?
+not all widely-used rhythms in the world are Euclidean
 
-## TODO
+low-dimensional interface (2 params, 3 at a stretch) for generating lots of
+interesting and culturally-significant rhythms
 
-90s drum circle
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/big-wow.gif" heading="musicologists" %}
 
-## algorithmically-mediated colonialism?
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/conspiracy.gif" heading="algorithmic composers" %}
 
-_Stewart, J (2010)_ [Articulating the African Diaspora through Rhythm: Diatonic
-Rhythms, Nested Looping Structures, and the music of Steve
-Coleman](http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
+{% include slides/impact.html %}
 
-_Friedberg, L (2003)_ [Drumming for
-Dollars](http://www.chidjembe.com/drumdollars.html)
+algorithmic drum circle?
+
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/drum-circle.jpg" %}
+
+{% include slides/image-credit.html
+   artist="<a href='https://www.tropicalbreezeresort.com/'>Tropical Breeze Resort</a>"
+   address1="🏢 140 Columbus Blvd"
+   address2="🏢 Siesta Key, Florida USA 34242"
+   phone="☎ 941.256.2686"
+%}
+
+---
+
+> ...such rhythmic structures can be fruitfully regarded not only as retentions
+> of African musical and cultural heritage, but also as a way of theorizing the
+> threads of continuity that exist between many of the disparate musics and
+> cultures that have shared African roots, but have been radically altered by
+> the passage of time and cross-cultural contact and musical hybridity.
+>
+> _Stewart, J (2010)_. [Articulating the African Diaspora through Rhythm:
+> Diatonic Rhythms, Nested Looping Structures, and the music of Steve
+> Coleman](http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
+
+---
+
+> The rules of American commercialism permit us to circumvent indigenous labor,
+> employing indigenous know-how to re-construct crude facsimiles of sacred
+> objects and sophisticated musical instruments. The commercialisation of the
+> pseudo-African Drum is socially, ethically and legally upheld by our moral
+> framework. It is, however, in violation of the ethic of the ethnic Drum.
+>
+> _Friedberg, L (2003)_. [Drumming for
+> Dollars](http://www.chidjembe.com/drumdollars.html)
 
 {% include slides/youtube.html id="fn3KWM1kuAw" %}
 
@@ -199,9 +245,11 @@ Dollars](http://www.chidjembe.com/drumdollars.html)
 
 {% include slides/background-image.html image="images/livecoding/ben-alta.jpg" %}
 
-## but it's just math!
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/typing-cat.gif" heading="Ben said algorithms are racist!" %}
 
-show some tricky maths from the paper
+well... sometimes, but that's not the main point here
+
+look, you learned one earlier---I saw you---so you're guilty as well
 
 ---
 
