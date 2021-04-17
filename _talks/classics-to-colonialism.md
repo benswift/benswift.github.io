@@ -214,9 +214,10 @@ show some tricky maths from the paper
 
 ---
 
-> Machine Learning is money laundering for bias
+> Machine learning is like money laundering for bias.
 >
-> **Maciej Ceglowski**, _TBC_
+> **Maciej Cegłowski**, [_The Moral Economy of
+> Tech_](https://idlewords.com/talks/sase_panel.htm)
 
 {% include slides/background-image.html image="images/livecoding/ben-acmc-09-closeup.jpg" %}
 
