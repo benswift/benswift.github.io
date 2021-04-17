@@ -1,0 +1,14 @@
+<section class="impact center" data-background-color="#262626" {% if include.id %}id="{{ include.id }}"{% endif %}>
+
+  {% assign image-src = include.image-path | prepend: '/' | prepend: site.baseurl %}
+  <div class="stacked-paper">
+    {% if include.link %}
+    <a href="{{ include.link }}">
+      <img src="{{ image-src }}" alt="{{ include.alt }}">
+    </a>
+    {% else %}
+    <img src="{{ image-src }}" alt="{{ include.alt }}">
+    {% endif %}
+  </div>
+
+</section>

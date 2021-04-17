@@ -80,13 +80,10 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
       (gcd (modulo n k) k)))
 ```
 
-{% include slides/impact.html %}
-
-<div class="stacked-paper">
-<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
-<img src="{% link assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg %}" alt="first page of 'distance geometry of music' paper">
-</a>
-</div>
+{% include slides/stacked-papers.html 
+           image-path="assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg"
+           link="https://www.sciencedirect.com/science/article/pii/S0925772108001156"
+           alt="first page of 'distance geometry of music' paper" %}
 
 <script src="{% link assets/js/euclidean-rhythm.js %}"></script>
 
@@ -180,8 +177,6 @@ Coleman](http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
 _Friedberg, L (2003)_ [Drumming for
 Dollars](http://www.chidjembe.com/drumdollars.html)
 
----
-
 {% include slides/youtube.html id="fn3KWM1kuAw" %}
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/Do_You_Love_Me_by_The_Contours_US_vinyl_A-side.png" bgsize="contain" %}
@@ -193,15 +188,12 @@ Dollars](http://www.chidjembe.com/drumdollars.html)
    credit="📸 Motown Museum"
 %}
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" bgsize="contain" %}
 
-{% include slides/impact.html %}
-
-<div class="stacked-paper">
-<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
-<img src="{% link assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg %}" alt="first page of 'distance geometry of music' paper">
-</a>
-</div>
+{% include slides/stacked-papers.html 
+           image-path="assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg"
+           link="https://www.sciencedirect.com/science/article/pii/S0925772108001156"
+           alt="first page of 'distance geometry of music' paper" %}
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" %}
 
