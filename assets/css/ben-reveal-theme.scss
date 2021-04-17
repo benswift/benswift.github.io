@@ -60,15 +60,21 @@
   h2 {
     font-size: 1.6rem;
   }
-  // make headings on background image slides readable
+  // make headings and paragraph text on background image slides readable
   &[data-background-image] {
     h1,
     h2,
     h3,
+    blockquote,
     p {
       background-color: adjust-color(#ffffff, $alpha: -0.25);
       display: table;
       padding: 0.2em 0.4em;
+    }
+    // but leave blockquote stuff as-is
+    blockquote p {
+        background-color: unset;
+        display: unset;
     }
   }
 
