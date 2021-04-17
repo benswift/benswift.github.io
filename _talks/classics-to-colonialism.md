@@ -54,6 +54,12 @@ that has survived to the present day"
    materials="📸 Brian Flaherty for The New York Times"
 %}
 
+## geometric visualisation
+
+<img class="r-stretch" src="{% link assets/images/talks/classics-to-colonialism/euclidean-algo-animated.gif %}" alt="animated visualisation of the Euclidean algorithm">
+
+_animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
+
 ## in code
 
 ```extempore
