@@ -157,6 +157,21 @@ Macedonia, and <strong>more</strong></p>
 
 </section>
 
+## TODO
+
+moar rhythm examples (from around the world)
+
+implications: simply-parameterised way to generate interesting rhythms
+
+-> obviously useful for livecoding
+
+appeals to the "small interface, huge expressive power" of all makers
+(_especially_ software makers) TODO maybe have a picture of some cool machine?
+
+## TODO
+
+90s drum circle
+
 ## algorithmically-mediated colonialism?
 
 _Stewart, J (2010)_ [Articulating the African Diaspora through Rhythm: Diatonic
