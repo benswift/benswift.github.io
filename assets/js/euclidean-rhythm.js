@@ -26,14 +26,19 @@
 
 function compareArrays (a, b) {
   // TODO: optimize
-  return JSON.stringify(a) === JSON.stringify(b);
+  // we only care about the first element (the value), not the second (index)
+  return JSON.stringify(a.map(x => x.val)) === JSON.stringify(b.map(x => x.val));
 };
+
+
+// for "auto-animate in reveal.js reasons" we also assign each bit an index
+// number, and keep track of them throughout the algorithm
 
 function bjorklundLayers(k, n) {
 
   let groups = [];
   let layers = [];
-  for (let i = 0; i < n; i++) groups.push([Number(i < k)]);
+  for (let i = 0; i < n; i++) groups.push([{val: Number(i < k), idx: i}]);
   layers.push(groups);
 
   let l;
