@@ -45,8 +45,8 @@ _taken from the paper_
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" %}
 
-"...granddaddy of all algorithms, because it is the oldest nontrivial algorithm
-that has survived to the present day"
+> ...granddaddy of all algorithms, because it is the oldest nontrivial algorithm
+> that has survived to the present day
 
 {% include slides/image-credit.html
    title="Donald Knuth"
