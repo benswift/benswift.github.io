@@ -29,7 +29,7 @@ function compareArrays (a, b) {
   return JSON.stringify(a) === JSON.stringify(b);
 };
 
-function euclid(k, n) {
+function bjorklundLayers(k, n) {
 
   let groups = [];
   let layers = [];
@@ -58,3 +58,9 @@ function euclid(k, n) {
   layers.push([].concat.apply([], groups));
   return layers;
 };
+
+function euclid(k, n) {
+  let layers = bjorklundLayers(k, n);
+  // final layer is the end result
+  return layers[layers.length-1];
+}
