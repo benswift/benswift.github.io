@@ -19,7 +19,7 @@ hidden: true
 
 [part un](#part-1): Euclid's algorithm
 
-[part deux](#part-2): Euclidean Rhythms (+ livecoding!)
+[part deux](#part-2): making noise with Euclidean Rhythms (+ livecoding!)
 
 [part trois](#part-3): but is it cultural appropriation?
 
