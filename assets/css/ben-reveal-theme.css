@@ -134,6 +134,8 @@
 
 .reveal .slides section blockquote p:first-child { display: inline; }
 
+.reveal .slides section blockquote p:not(:first-child) { margin-top: 1rem; }
+
 .reveal .slides section .hl-para { background-color: #f5ddfa; border-left: 10px solid #be2edd; padding: 1em 1em; margin: 1em 0; }
 
 .reveal .slides section table { width: 100%; text-align: left; border-collapse: collapse; }
@@ -170,7 +172,7 @@
 
 svg.icon { width: 1em; height: 1em; vertical-align: -0.125em; fill: currentColor; }
 
-.stacked-paper { background: #fff; padding: 30px; position: relative; }
+.stacked-paper { background: #fff; padding: 30px; position: relative; margin: 0 auto; }
 
 .stacked-paper img { width: 100%; }
 

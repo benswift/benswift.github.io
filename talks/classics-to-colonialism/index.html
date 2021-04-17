@@ -169,6 +169,44 @@
 
 
 
+<!-- musician -> simple interface -> cultural domain -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- musician -> cultural domain -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -245,34 +283,15 @@
  // hacky page centering
  document.querySelector("#qrcode > img").style.margin = "0 auto";
 </script>
-</section><section data-background-image="/assets/images/talks/classics-to-colonialism/the-school-of-athens.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+</section><section><p class="r-fit-text">391  578</p>
+<p>what’s the <em>biggest</em> number divides both evenly?</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/the-school-of-athens.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
-<div class="image-credit" style="">
-
+  <h2>the Euclidean algorithm</h2>
   
-    
-
-  <p class="image-credit-artist">Rafael</p>
-
-	
-  
-    
-
-  <p class="image-credit-title">The School of Athens</p>
-
-	
-  
-    
-
-  <p class="image-credit-credit">📸 from Wikipedia, public domain</p>
-
-	
-  
-
-</div></section><section id="the-euclidean-algorithm"><h2>the Euclidean algorithm</h2>
 <p>the Euclidean algorithm for computing the greatest common divisor of two
 integers is one of the oldest known algorithms (circa 300 B.C.)</p>
-<p>first described by Euclid’s <em>Elements, Proposition 2, Book VII</em></p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+<p>first described by Euclid’s <em>Elements, Proposition 2, Book VII</em></p>
+<p>independently discovered in several other places, e.g. China, India</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
 <blockquote>
   <p>granddaddy of all algorithms, because it is the oldest nontrivial algorithm
@@ -291,7 +310,12 @@ that has survived to the present day</p>
   
 
 </div></section><section id="in-plain-english"><h2>in plain English</h2>
-<p>TODO</p></section><section id="geometric-visualisation"><h2>geometric visualisation</h2>
+<p>To find the <strong>g</strong>reatest <strong>c</strong>ommon <strong>d</strong>ivisor of two numbers (<em>a</em> and <em>b</em>),
+repeatedly replace the larger of the two numbers by their difference until both
+are equal. This final number is then the greatest common divisor.</p>
+<p>(<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">source</a>)</p></section><section id="why"><h2>why?</h2>
+<p>early on: astronomy, calendars</p>
+<p>these days: <em>so many thing</em> (e.g. number theory cryptography)</p></section><section id="geometric-visualisation"><h2>geometric visualisation</h2>
 <p><img class="r-stretch" src="/assets/images/talks/classics-to-colonialism/euclidean-algo-animated.gif" alt="animated visualisation of the Euclidean algorithm"></p>
 <p><em>animation from <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Wikipedia</a></em></p></section><section id="in-code"><h2>in code</h2>
 <pre><code class="language-extempore">(define (gcd a b)
@@ -299,15 +323,21 @@ that has survived to the present day</p>
       a
       (gcd (min a b) (abs (- a b)))))
 </code></pre></section><section id="in-code-a-bit-more-efficient"><h2>in code (a bit more efficient)</h2>
-<pre><code class="language-extempore">(define (gcd k n)
-  (if (= k 0)
-      n
-      (gcd (modulo n k) k)))
-</code></pre></section><section class="impact center" data-background-color="#262626"><div class="stacked-paper">
-<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
-<img src="/assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg" alt="first page of 'distance geometry of music' paper">
-</a>
-</div>
+<pre><code class="language-extempore">(define (gcd a b)
+  (if (= a 0)
+      b
+      (gcd (modulo b a) a)))
+</code></pre></section><section class="impact center" data-background-color="#262626">
+
+  
+  <div style="width: 100%;" class="stacked-paper">
+    
+    <a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
+      <img src="/assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg" alt="first page of 'distance geometry of music' paper">
+    </a>
+    
+  </div>
+
 <script src="/assets/js/euclidean-rhythm.js"></script></section><section id="euclidean-rhythm-example-1" data-auto-animate="">
 
 <style>
@@ -928,7 +958,7 @@ that has survived to the present day</p>
 </div>
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">South
 African <em>Venda</em>, Macedonia, Central African Republic and
-more...</span></p></section><section data-auto-animate=""><h2>euclid(5,8)</h2>
+more...</span></p></section><section><iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&amp;museid=5nitE48DN"></iframe></section><section data-auto-animate=""><h2>euclid(5,8)</h2>
 <style>
  .algo-container {
    display: flex;
@@ -979,22 +1009,80 @@ more...</span></p></section><section data-auto-animate=""><h2>euclid(5,8)</h2>
   <div class="bit" data-value="0" data-id="7"></div>
   
 </div>
-<p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>cinquillo</em></span></p></section><section id="todo"><h2>TODO</h2>
-<p>moar rhythm examples (from around the world)</p>
-<p>implications: simply-parameterised way to generate interesting rhythms</p>
-<p>-&gt; obviously useful for livecoding</p>
-<p>appeals to the “small interface, huge expressive power” of all makers
-(<em>especially</em> software makers) TODO maybe have a picture of some cool machine?</p></section><section id="todo-1"><h2>TODO</h2>
-<p>90s drum circle</p></section><section id="algorithmically-mediated-colonialism"><h2>algorithmically-mediated colonialism?</h2>
-<p><em>Stewart, J (2010)</em> <a href="http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf">Articulating the African Diaspora through Rhythm: Diatonic
-Rhythms, Nested Looping Structures, and the music of Steve
+<p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>cinquillo</em></span></p></section><section><iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&amp;museid=5nitE48DN"></iframe></section><section class="impact center" data-background-color="#262626">
+
+  
+  <div style="width: 50%;" class="stacked-paper">
+    
+    <img src="/assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png" alt="list of world music rhythms which are Euclidean">
+    
+  </div>
+
+</section><section id="implications"><h2>implications?</h2>
+<p>not all widely-used rhythms in the world are Euclidean</p>
+<p>low-dimensional interface (2 params, 3 at a stretch) for generating lots of
+interesting and culturally-significant rhythms</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/big-wow.gif" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+  <h2>musicologists</h2>
+  
+</section><section data-background-image="/assets/images/talks/classics-to-colonialism/conspiracy.gif" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+  <h2>algorithmic composers</h2>
+  
+</section><section class="impact center" data-background-color="#262626"></section><section class="impact center" data-background-color="#262626"><p>algorithmic drum circle?</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/drum-circle.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+<div class="image-credit" style="">
+
+  
+    
+
+  <p class="image-credit-artist"><a href="https://www.tropicalbreezeresort.com/">Tropical Breeze Resort</a></p>
+
+	
+  
+    
+
+  <p class="image-credit-address1">🏢 140 Columbus Blvd</p>
+
+	
+  
+    
+
+  <p class="image-credit-address2">🏢 Siesta Key, Florida USA 34242</p>
+
+	
+  
+    
+
+  <p class="image-credit-phone">☎ 941.256.2686</p>
+
+	
+  
+
+</div></section><section class="impact center" data-background-color="#262626"></section><section><blockquote>
+  <p>…such rhythmic structures can be fruitfully regarded not only as retentions
+of African musical and cultural heritage, but also as a way of theorizing the
+threads of continuity that exist between many of the disparate musics and
+cultures that have shared African roots, but have been radically altered by
+the passage of time and cross-cultural contact and musical hybridity.</p>
+
+  <p><em>Stewart, J (2010)</em>. <a href="http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf">Articulating the African Diaspora through Rhythm:
+Diatonic Rhythms, Nested Looping Structures, and the music of Steve
 Coleman</a></p>
-<p><em>Friedberg, L (2003)</em> <a href="http://www.chidjembe.com/drumdollars.html">Drumming for
-Dollars</a></p></section><section></section><section class="center">
+</blockquote></section><section><blockquote>
+  <p>The rules of American commercialism permit us to circumvent indigenous labor,
+employing indigenous know-how to re-construct crude facsimiles of sacred
+objects and sophisticated musical instruments. The commercialisation of the
+pseudo-African Drum is socially, ethically and legally upheld by our moral
+framework. It is, however, in violation of the ethic of the ethnic Drum.</p>
+
+  <p><em>Friedberg, L (2003)</em>. <a href="http://www.chidjembe.com/drumdollars.html">Drumming for
+Dollars</a></p>
+</blockquote></section><section class="center">
 
   
 
-  <iframe src="https://www.youtube.com/embed/fn3KWM1kuAw" style="display:block; margin:0 auto; width:50vw; height:50vh;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+  <iframe src="https://www.youtube.com/embed/fn3KWM1kuAw" class="r-stretch" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
   </iframe>
 
 </section><section data-background-image="/assets/images/talks/classics-to-colonialism/Do_You_Love_Me_by_The_Contours_US_vinyl_A-side.png" data-background-size="contain" data-background-position="center" role="img" aria-label="">
@@ -1017,25 +1105,39 @@ Dollars</a></p></section><section></section><section class="center">
 	
   
 
-</div></section><section data-background-image="/assets/images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+</div></section><section data-background-image="/assets/images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" data-background-size="contain" data-background-position="center" role="img" aria-label="">
   
-</section><section class="impact center" data-background-color="#262626"><div class="stacked-paper">
-<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
-<img src="/assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg" alt="first page of 'distance geometry of music' paper">
-</a>
-</div></section><section data-background-image="/assets/images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+</section><section class="impact center" data-background-color="#262626">
+
   
-</section><section data-background-image="/assets/images/livecoding/ben-alta.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  <div style="width: 100%;" class="stacked-paper">
+    
+    <a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">
+      <img src="/assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg" alt="first page of 'distance geometry of music' paper">
+    </a>
+    
+  </div>
+
+</section><section data-background-image="/assets/images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
-</section><section id="but-its-just-math"><h2>but it’s just math!</h2>
-<p>show some tricky maths from the paper</p></section><section><blockquote>
+</section><section data-background-image="/assets/images/livecoding/ben-acmc-09-closeup.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+</section><section data-background-image="/assets/images/talks/classics-to-colonialism/typing-cat.gif" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+  
+  <h2>Ben said algorithms are racist!</h2>
+  
+<p>well… sometimes, but that’s not the main point here</p>
+<p>look, you learned one earlier—I saw you—so you’re guilty as well</p>
+<p>we can’t hide behind algorithmic disintermediation</p></section><section><blockquote>
   <p>Machine learning is like money laundering for bias.</p>
 
   <p><strong>Maciej Cegłowski</strong>, <a href="https://idlewords.com/talks/sase_panel.htm"><em>The Moral Economy of
 Tech</em></a></p>
-</blockquote></section><section data-background-image="/assets/images/livecoding/ben-acmc-09-closeup.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
-  
-</section><section class="center"><pre style="font-size:0.8rem;"><code class="language-python"># a SoCY twitter bot
+</blockquote></section><section id="what-did-you-learn"><h2>what did you learn?</h2>
+<p class="fragment">Euclid’s algorithm!</p>
+<p class="fragment">To find the <strong>g</strong>reatest <strong>c</strong>ommon <strong>d</strong>ivisor of two numbers (<em>a</em> and <em>b</em>),
+repeatedly replace the larger of the two numbers by their difference until both
+are equal. This final number is then the greatest common divisor.</p></section><section class="center"><pre style="font-size:0.8rem;"><code class="language-python"># a SoCY twitter bot
 for tweet in api.user("3AInstitute").timeline(limit=200):
   if tweet.user.location == "San Francisco":
     tweet.retweet_with_comment("I have so many questions")
@@ -1043,10 +1145,12 @@ for tweet in api.user("3AInstitute").timeline(limit=200):
 
   <style>
    #contact-details {
-	 font-size: 2.5vw;
 	 list-style: none;
-	 display: table;
-	 margin: 50vh auto 0 0;
+	 margin: 0;
+
+     /* attach to bottom(ish) */
+     position: fixed;
+     bottom: 10vh;
    }
 
    #contact-details li {
