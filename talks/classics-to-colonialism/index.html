@@ -232,8 +232,6 @@
 
 
 
-
-
 <section id="title" class="center">
   <h1 class="talk-title">From Classics to Colonialism</h1>
 <p class="talk-subtitle">via drum circles</p>
@@ -266,7 +264,7 @@
 </section><section id="outline"><h2>outline</h2>
 <p><a href="#part-1">part un</a>: Euclid’s algorithm</p>
 <p><a href="#part-2">part deux</a>: sounding bodies and Euclidean Rhythms</p>
-<p><a href="#part-3">part trois</a>: cui bono?</p></section><section class="center">
+<p><a href="#part-3">part trois</a>: implications</p></section><section class="center">
 <script src="/assets/js/qrcode.min.js"></script>
 <div id="qrcode"></div>
 <p style="text-align: center;"><a href="https://benswift.me/talks/classics-to-colonialism/">https://benswift.me/talks/classics-to-colonialism/</a></p>
@@ -284,14 +282,14 @@
  document.querySelector("#qrcode > img").style.margin = "0 auto";
 </script>
 </section><section><p class="r-fit-text">391  578</p>
-<p>what’s the <em>biggest</em> number divides both evenly?</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/the-school-of-athens.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+<p>what’s the <em>biggest</em> number which divides both evenly?</p></section><section id="part-1" data-background-image="/assets/images/talks/classics-to-colonialism/the-school-of-athens.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
   <h2>the Euclidean algorithm</h2>
   
 <p>the Euclidean algorithm for computing the greatest common divisor of two
 integers is one of the oldest known algorithms (circa 300 B.C.)</p>
 <p>first described by Euclid’s <em>Elements, Proposition 2, Book VII</em></p>
-<p>independently discovered in several other places, e.g. China, India</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+<p>independently discovered in several other places, (China, India)</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
 <blockquote>
   <p>granddaddy of all algorithms, because it is the oldest nontrivial algorithm
@@ -315,7 +313,7 @@ repeatedly replace the larger of the two numbers by their difference until both
 are equal. This final number is then the greatest common divisor.</p>
 <p>(<a href="https://www.sciencedirect.com/science/article/pii/S0925772108001156">source</a>)</p></section><section id="why"><h2>why?</h2>
 <p>early on: astronomy, calendars</p>
-<p>these days: <em>so many thing</em> (e.g. number theory cryptography)</p></section><section id="geometric-visualisation"><h2>geometric visualisation</h2>
+<p>these days: <em>so many thing</em> (e.g. number theory, cryptography)</p></section><section id="geometric-visualisation"><h2>geometric visualisation</h2>
 <p><img class="r-stretch" src="/assets/images/talks/classics-to-colonialism/euclidean-algo-animated.gif" alt="animated visualisation of the Euclidean algorithm"></p>
 <p><em>animation from <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Wikipedia</a></em></p></section><section id="in-code"><h2>in code</h2>
 <pre><code class="language-extempore">(define (gcd a b)
@@ -327,7 +325,7 @@ are equal. This final number is then the greatest common divisor.</p>
   (if (= a 0)
       b
       (gcd (modulo b a) a)))
-</code></pre></section><section class="impact center" data-background-color="#262626">
+</code></pre></section><section class="impact center" data-background-color="#262626" id="part-2">
 
   
   <div style="width: 100%;" class="stacked-paper">
@@ -1018,7 +1016,7 @@ more...</span></p></section><section><iframe class="r-stretch" src="https://apps
     
   </div>
 
-</section><section id="implications"><h2>implications?</h2>
+</section><section id="part-3"><h2>implications?</h2>
 <p>not all widely-used rhythms in the world are Euclidean</p>
 <p>low-dimensional interface (2 params, 3 at a stretch) for generating lots of
 interesting and culturally-significant rhythms</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/big-wow.gif" data-background-size="cover" data-background-position="center" role="img" aria-label="">
@@ -1128,7 +1126,7 @@ Dollars</a></p>
   
 <p>well… sometimes, but that’s not the main point here</p>
 <p>look, you learned one earlier—I saw you—so you’re guilty as well</p>
-<p>we can’t hide behind algorithmic disintermediation</p></section><section><blockquote>
+<p>we can’t hide behind algorithmic disintermediation</p></section><section class="center"><blockquote>
   <p>Machine learning is like money laundering for bias.</p>
 
   <p><strong>Maciej Cegłowski</strong>, <a href="https://idlewords.com/talks/sase_panel.htm"><em>The Moral Economy of
@@ -1137,11 +1135,8 @@ Tech</em></a></p>
 <p class="fragment">Euclid’s algorithm!</p>
 <p class="fragment">To find the <strong>g</strong>reatest <strong>c</strong>ommon <strong>d</strong>ivisor of two numbers (<em>a</em> and <em>b</em>),
 repeatedly replace the larger of the two numbers by their difference until both
-are equal. This final number is then the greatest common divisor.</p></section><section class="center"><pre style="font-size:0.8rem;"><code class="language-python"># a SoCY twitter bot
-for tweet in api.user("3AInstitute").timeline(limit=200):
-  if tweet.user.location == "San Francisco":
-    tweet.retweet_with_comment("I have so many questions")
-</code></pre></section><section class="center" data-background-image="/assets/images/talks/all/camylla-battani-AoqgGAqrLpU-unsplash.jpg">
+are equal. This final number is then the greatest common divisor.</p>
+<p class="fragment">yes, <strong>it will be on the final exam</strong></p></section><section class="center" data-background-image="/assets/images/talks/all/camylla-battani-AoqgGAqrLpU-unsplash.jpg">
 
   <style>
    #contact-details {
