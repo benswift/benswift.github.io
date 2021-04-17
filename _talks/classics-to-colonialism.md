@@ -178,7 +178,7 @@ more...</span></p>
 {% include slides/stacked-papers.html 
            width="50%"
            image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
-           alt="list of world music rhythms which are Euclidean" %}
+           alt="list of 'world' music rhythms which are Euclidean" %}
 
 ## implications? {#part-3}
 
