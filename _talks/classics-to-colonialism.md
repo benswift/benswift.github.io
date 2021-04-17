@@ -157,31 +157,6 @@ Macedonia, and <strong>more</strong></p>
 
 </section>
 
-<hr class="center">
-
-<style>
-.bignumber-wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.bignumber {
-  font-size: 500px;
-  width: 2ch;
-  text-align: center;
-  border: none;
-}
-.bignumber-wrapper input:placeholder-shown {
-  border-radius: 0.1em;
-  border: 5px solid #be2edd;
-}
-</style>
-
-<div class="bignumber-wrapper">
-<input class="bignumber"  inputmode="numeric" pattern="[0-9]*" type="text" placeholder="k">&nbsp;<input class="bignumber"  inputmode="numeric" pattern="[0-9]*" type="text" placeholder="n">
-</div>
-
 ## algorithmically-mediated colonialism?
 
 _Stewart, J (2010)_ [Articulating the African Diaspora through Rhythm: Diatonic
