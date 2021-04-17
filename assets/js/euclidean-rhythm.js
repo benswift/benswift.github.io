@@ -30,6 +30,10 @@ function compareArrays (a, b) {
   return JSON.stringify(a.map(x => x.val)) === JSON.stringify(b.map(x => x.val));
 };
 
+// https://stackoverflow.com/a/17428705
+function transposeArray(a) {
+  a[0].map((_, colIndex) => a.map(row => row[colIndex]));
+}
 
 // for "auto-animate in reveal.js reasons" we also assign each bit an index
 // number, and keep track of them throughout the algorithm
