@@ -60,7 +60,7 @@ function bjorklundLayers(k, n) {
       .concat(groups.slice(count, -count));
     layers.push(groups);
   }
-  layers.push([].concat.apply([], groups));
+  layers.push([].concat.apply([], groups).map(x => [x]));
   return layers;
 };
 
