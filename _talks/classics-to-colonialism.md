@@ -23,7 +23,7 @@ hidden: true
 
 [part deux](#part-2): sounding bodies and Euclidean Rhythms
 
-[part trois](#part-3): cui bono?
+[part trois](#part-3): implications
 
 {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
 {% include qrcode.html text=url showlink=true %}
@@ -32,16 +32,16 @@ hidden: true
 
 <p class="r-fit-text">391&nbsp;&nbsp;578</p>
 
-what's the _biggest_ number divides both evenly?
+what's the _biggest_ number which divides both evenly?
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/the-school-of-athens.jpg" heading="the Euclidean algorithm" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/the-school-of-athens.jpg" heading="the Euclidean algorithm" id="part-1" %}
 
 the Euclidean algorithm for computing the greatest common divisor of two
 integers is one of the oldest known algorithms (circa 300 B.C.)
 
 first described by Euclid's _Elements, Proposition 2, Book VII_
 
-independently discovered in several other places, e.g. China, India
+independently discovered in several other places, (China, India)
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" %}
 
@@ -66,7 +66,7 @@ are equal. This final number is then the greatest common divisor.
 
 early on: astronomy, calendars
 
-these days: _so many thing_ (e.g. number theory cryptography)
+these days: _so many thing_ (e.g. number theory, cryptography)
 
 ## geometric visualisation
 
@@ -91,6 +91,8 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
       b
       (gcd (modulo b a) a)))
 ```
+
+{:id="part-2"}
 
 {% include slides/stacked-papers.html 
            image-path="assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg"
@@ -178,7 +180,7 @@ more...</span></p>
            image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
            alt="list of world music rhythms which are Euclidean" %}
 
-## implications?
+## implications? {#part-3}
 
 not all widely-used rhythms in the world are Euclidean
 
@@ -261,7 +263,7 @@ look, you learned one earlier---I saw you---so you're guilty as well
 
 we can't hide behind algorithmic disintermediation
 
----
+<hr class="center">
 
 > Machine learning is like money laundering for bias.
 >
@@ -280,16 +282,9 @@ To find the **g**reatest **c**ommon **d**ivisor of two numbers (_a_ and _b_),
 repeatedly replace the larger of the two numbers by their difference until both
 are equal. This final number is then the greatest common divisor.
 
-<hr class="center">
+{:.fragment}
 
-{:style="font-size:0.8rem;"}
-
-```python
-# a SoCY twitter bot
-for tweet in api.user("3AInstitute").timeline(limit=200):
-  if tweet.user.location == "San Francisco":
-    tweet.retweet_with_comment("I have so many questions")
-```
+yes, **it will be on the final exam**
 
 {% include slides/questions.html %}
 
