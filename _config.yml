@@ -49,6 +49,7 @@ defaults:
       type: talks
     values:
       layout: reveal-with-fa
+      author: Ben Swift # for <meta name="author" ...> purposes
   - scope:
       type: livecoding
     values:
