@@ -100,13 +100,10 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 {% include slides/euclid-algo-widget.html algobits="1:0,0:1,0:2,1:3,0:4;1:0,0:1,0:2,1:3,1:4,1:5,1:6;1:0,0:1,1:2,0:3,0:4,1:5,0:6,1:7,0:8,1:9,0:10,0:11" %}
 
-
 {% include slides/stacked-papers.html 
            image-path="assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg"
            link="https://www.sciencedirect.com/science/article/pii/S0925772108001156"
            alt="first page of 'distance geometry of music' paper" %}
-
-<script src="{% link assets/js/euclidean-rhythm.js %}"></script>
 
 <section id="euclidean-rhythm-example-1" data-auto-animate>
 
