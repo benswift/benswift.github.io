@@ -62,7 +62,7 @@ are equal. This final number is then the greatest common divisor.
 
 ([source](https://www.sciencedirect.com/science/article/pii/S0925772108001156))
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/mike-tinnion-3ym6i13Y9LU-unsplash.jpg" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" %}
 
 To find the **g**reatest **c**ommon **d**ivisor of two numbers (_a_ and _b_),
 repeatedly replace the larger of the two numbers by their difference until both
@@ -172,7 +172,7 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>cinquillo</em></span></p>
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/mike-tinnion-3ym6i13Y9LU-unsplash.jpg" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" %}
 
 {% include slides/stacked-papers.html 
            width="50%"
@@ -209,8 +209,6 @@ of interesting-sounding and culturally-significant rhythms to get people
    address2="🏢 Siesta Key, Florida USA 34242"
    phone="☎ 941.256.2686"
 %}
-
-{% include slides/impact.html %}
 
 ---
 
