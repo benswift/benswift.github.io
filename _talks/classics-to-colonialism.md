@@ -8,7 +8,6 @@ summary: >-
   Did the ancient Greeks know how to bust a move? Is there a deeper mathematical
   truth to which songs are best to dance to? Can algorithmic composition be a
   vehicle of oppression?
-hidden: true
 ---
 
 {% include slides/title.html %}
