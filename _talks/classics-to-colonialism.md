@@ -23,7 +23,7 @@ hidden: true
 
 [part deux](#part-2): sounding bodies and Euclidean Rhythms
 
-[part trois](#part-3): implications
+[part trois](#part-3): what does it all mean?
 
 {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
 {% include qrcode.html text=url showlink=true %}
@@ -174,20 +174,26 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" %}
 
-> If there's more than one "hanging chad" (short) column on the right,
-> repeatedly grab as many of those columns as you can and move them to below the
-> tallest (left-hand) columns.
+> Line up the boxes in one row (_ones_ on the left), then move the rightmost
+> _zeroes_ "under" the left-hand _ones_.
+> 
+> If there's more than one short ("hanging chad") column on the right, take as
+> many of those short columns as you can and move them to below the tallest
+> (left-hand) columns---and repeat this process until there's no more than one
+> short column.
 
 {% include slides/stacked-papers.html 
            width="50%"
            image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
            alt="list of 'world' music rhythms which are Euclidean" %}
 
-## stated implications? {#part-3}
+## paper "results" {#part-3}
 
-a laundry list of examples of Euclidean rhythms "in the wild"
+a simple algorithm for generating Euclidean rhythms
 
-proved a number of "nice" mathematical properties of Euclidean rhythms
+a laundry list of examples of these rhythms "in the wild"
+
+proofs of a number of "nice" mathematical properties of Euclidean rhythms
 
 some kite-flying about the relationship between said nice properties and the
 human cultural practices associated with musicmaking
@@ -274,7 +280,8 @@ well, maybe... but that's not the main point here
 
 you learned it earlier---I saw you---so you're implicated
 
-algorithms mediate power in lots of different ways
+algorithms (even simple ones!) can give us leverage in cultural domains, can/how
+do we use it safely, sustainably, at _scale_?
 
 <hr class="center">
 
