@@ -113,7 +113,7 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 <h2 id="euclidean-rhythm-example-1" data-auto-animate>euclid(3,8)</h2>
 
-Bjorklund's algorithm (same basic idea as Euclid, though)
+same basic idea as Euclid, although attributed to Bjorklund
 
 {% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,0:3,0:4,0:5,0:6,0:7" %}
 
@@ -175,7 +175,7 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" %}
 
 > If there's more than one "hanging chad" column, repeatedly grab as many
-> right-hand columns as you need and move them to below the "1-headed" columns.
+> right-hand columns as you need and move them to below the "1-headed" columns
 
 {% include slides/stacked-papers.html 
            width="50%"
