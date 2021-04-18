@@ -169,6 +169,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- musician -> simple interface -> cultural domain -->
 
 
@@ -182,6 +212,8 @@
 
 
 <!-- musician -> cultural domain -->
+
+
 
 
 
@@ -325,7 +357,275 @@ are equal. This final number is then the greatest common divisor.</p>
   (if (= a 0)
       b
       (gcd (modulo b a) a)))
-</code></pre></section><section class="impact center" data-background-color="#262626" id="part-2">
+</code></pre></section><section id="part-2"><h2>rhythmic notation</h2>
+<style>
+ .algo-container {
+   max-width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   overflow: hidden;
+   border: 0.1em solid #be2eddbb;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="0" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div></section><section id="beyond-44"><h2>beyond 4/4</h2>
+<style>
+ .algo-container {
+   max-width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   overflow: hidden;
+   border: 0.1em solid #be2eddbb;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+</div>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="6"></div>
+  
+</div>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="7"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="8"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="9"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="10"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="11"></div>
+  
+</div>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="8"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="9"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="10"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="11"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="12"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="13"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="14"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="15"></div>
+  
+</div></section><section class="impact center" data-background-color="#262626">
 
   
   <div style="width: 100%;" class="stacked-paper">
@@ -336,10 +636,11 @@ are equal. This final number is then the greatest common divisor.</p>
     
   </div>
 
-<script src="/assets/js/euclidean-rhythm.js"></script></section><section id="euclidean-rhythm-example-1" data-auto-animate="">
-
+</section><section id="euclidean-rhythm-example-1" data-auto-animate=""><h2>euclid(3,8)</h2>
+<p>Bjorklund’s algorithm (same basic idea as Euclid, though)</p>
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -348,6 +649,60 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
+   border: 0.1em solid #be2eddbb;
+   padding: 0.3em;
+   margin: 0.3em;
+ }
+ .algo-container .bit[data-value]:before {
+   content: attr(data-value);
+ }
+ .algo-container .bit[data-value="1"] {
+   background-color: #333;
+   color: #fafafa;
+ }
+</style>
+<div class="algo-container">
+  
+  
+  
+  <div class="bit" data-value="1" data-id="0"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="1"></div>
+  
+  
+  <div class="bit" data-value="1" data-id="2"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="3"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="4"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="5"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="6"></div>
+  
+  
+  <div class="bit" data-value="0" data-id="7"></div>
+  
+</div></section><section data-auto-animate="">
+
+<style>
+ .algo-container {
+   max-width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   font-size: 80px;
+   font-weight: 700;
+   font-family: "Fira Code", monospace;
+   margin: 0 !important;
+ }
+ .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -381,64 +736,6 @@ are equal. This final number is then the greatest common divisor.</p>
   
   <div class="bit" data-value="0" data-id="4"></div>
   
-  
-  <div class="bit" data-value="0" data-id="5"></div>
-  
-  
-  <div class="bit" data-value="0" data-id="6"></div>
-  
-  
-  <div class="bit" data-value="0" data-id="7"></div>
-  
-</div>
-
-
-
-</section><section data-auto-animate="">
-
-<style>
- .algo-container {
-   display: flex;
-   justify-content: flex-start;
-   font-size: 80px;
-   font-weight: 700;
-   font-family: "Fira Code", monospace;
-   margin: 0 !important;
- }
- .algo-container .bit {
-   border: 0.1em solid #be2eddbb;
-   padding: 0.3em;
-   margin: 0.3em;
- }
- .algo-container .bit[data-value]:before {
-   content: attr(data-value);
- }
- .algo-container .bit[data-value="1"] {
-   background-color: #333;
-   color: #fafafa;
- }
-</style>
-
-
-
-<div class="algo-container">
-  
-  
-  
-  <div class="bit" data-value="1" data-id="0"></div>
-  
-  
-  <div class="bit" data-value="1" data-id="1"></div>
-  
-  
-  <div class="bit" data-value="1" data-id="2"></div>
-  
-  
-  <div class="bit" data-value="0" data-id="3"></div>
-  
-  
-  <div class="bit" data-value="0" data-id="4"></div>
-  
 </div>
 
 <div class="algo-container">
@@ -461,6 +758,7 @@ are equal. This final number is then the greatest common divisor.</p>
 
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -469,6 +767,7 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -528,6 +827,7 @@ are equal. This final number is then the greatest common divisor.</p>
 </section><section data-auto-animate=""><h2>euclid(3,8)</h2>
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -536,6 +836,7 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -576,10 +877,10 @@ are equal. This final number is then the greatest common divisor.</p>
   <div class="bit" data-value="0" data-id="7"></div>
   
 </div>
-<p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>tresillo</em></span></p></section><section><iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&amp;museid=5myOlMOZ0"></iframe></section><section id="euclidean-rhythm-example-2" data-auto-animate="">
-
+<p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>tresillo</em></span></p></section><section><iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&amp;museid=5myOlMOZ0"></iframe></section><section id="euclidean-rhythm-example-2" data-auto-animate=""><h2>euclid(5,12)</h2>
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -588,6 +889,7 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -600,9 +902,6 @@ are equal. This final number is then the greatest common divisor.</p>
    color: #fafafa;
  }
 </style>
-
-
-
 <div class="algo-container">
   
   
@@ -642,14 +941,11 @@ are equal. This final number is then the greatest common divisor.</p>
   
   <div class="bit" data-value="0" data-id="11"></div>
   
-</div>
-
-
-
-</section><section data-auto-animate="">
+</div></section><section data-auto-animate="">
 
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -658,6 +954,7 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -725,6 +1022,7 @@ are equal. This final number is then the greatest common divisor.</p>
 
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -733,6 +1031,7 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -805,6 +1104,7 @@ are equal. This final number is then the greatest common divisor.</p>
 
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -813,6 +1113,7 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -894,6 +1195,7 @@ are equal. This final number is then the greatest common divisor.</p>
 </section><section data-auto-animate=""><h2>euclid(5,12)</h2>
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -902,6 +1204,7 @@ are equal. This final number is then the greatest common divisor.</p>
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -955,10 +1258,11 @@ are equal. This final number is then the greatest common divisor.</p>
   
 </div>
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">South
-African <em>Venda</em>, Macedonia, Central African Republic and
-more...</span></p></section><section><iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&amp;museid=5nitE48DN"></iframe></section><section data-auto-animate=""><h2>euclid(5,8)</h2>
+African <em>Venda</em>, Macedonia, Central African Republic, Tool's
+<em>Schism</em> and many more...</span></p></section><section><iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&amp;museid=5nitE48DN"></iframe></section><section data-auto-animate=""><h2>euclid(5,8)</h2>
 <style>
  .algo-container {
+   max-width: 100%;
    display: flex;
    justify-content: flex-start;
    font-size: 80px;
@@ -967,6 +1271,7 @@ more...</span></p></section><section><iframe class="r-stretch" src="https://apps
    margin: 0 !important;
  }
  .algo-container .bit {
+   overflow: hidden;
    border: 0.1em solid #be2eddbb;
    padding: 0.3em;
    margin: 0.3em;
@@ -1012,20 +1317,20 @@ more...</span></p></section><section><iframe class="r-stretch" src="https://apps
   
   <div style="width: 50%;" class="stacked-paper">
     
-    <img src="/assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png" alt="list of world music rhythms which are Euclidean">
+    <img src="/assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png" alt="list of 'world' music rhythms which are Euclidean">
     
   </div>
 
 </section><section id="part-3"><h2>implications?</h2>
 <p>not all widely-used rhythms in the world are Euclidean</p>
-<p>low-dimensional interface (2 params, 3 at a stretch) for generating lots of
-interesting and culturally-significant rhythms</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/big-wow.gif" data-background-size="cover" data-background-position="center" role="img" aria-label="">
+<p><strong>⇒</strong> low-dimensional interface (2 params, 3 at a stretch) for generating a wide
+range of interesting-sounding and culturally-significant rhythms</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/big-wow.gif" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
-  <h2>musicologists</h2>
+  <h2>musicologists:</h2>
   
 </section><section data-background-image="/assets/images/talks/classics-to-colonialism/conspiracy.gif" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
-  <h2>algorithmic composers</h2>
+  <h2>algorithmic composers:</h2>
   
 </section><section class="impact center" data-background-color="#262626"></section><section class="impact center" data-background-color="#262626"><p>algorithmic drum circle?</p></section><section data-background-image="/assets/images/talks/classics-to-colonialism/drum-circle.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
@@ -1058,11 +1363,12 @@ interesting and culturally-significant rhythms</p></section><section data-backgr
   
 
 </div></section><section class="impact center" data-background-color="#262626"></section><section><blockquote>
-  <p>…such rhythmic structures can be fruitfully regarded not only as retentions
-of African musical and cultural heritage, but also as a way of theorizing the
-threads of continuity that exist between many of the disparate musics and
-cultures that have shared African roots, but have been radically altered by
-the passage of time and cross-cultural contact and musical hybridity.</p>
+  <p>…such rhythmic structures [Euclidean rhythms] can be fruitfully regarded not
+only as retentions of African musical and cultural heritage, but also as a way
+of theorizing the threads of continuity that exist between many of the
+disparate musics and cultures that have shared African roots, but have been
+radically altered by the passage of time and cross-cultural contact and
+musical hybridity.</p>
 
   <p><em>Stewart, J (2010)</em>. <a href="http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf">Articulating the African Diaspora through Rhythm:
 Diatonic Rhythms, Nested Looping Structures, and the music of Steve
@@ -1103,9 +1409,31 @@ Dollars</a></p>
 	
   
 
-</div></section><section data-background-image="/assets/images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" data-background-size="contain" data-background-position="center" role="img" aria-label="">
+</div></section><section data-background-image="/assets/images/talks/classics-to-colonialism/boston-dynamics-police-dog.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
-</section><section class="impact center" data-background-color="#262626">
+<div class="image-credit" style="">
+
+  
+    
+
+  <p class="image-credit-title"><a href="https://www.washingtonpost.com/technology/2019/11/26/boston-dynamics-terrifying-robotic-dogs-have-been-put-work-by-least-one-police-agency/">Boston Dynamics' "terrifying" robotic dogs have been put to work by at least one police agency</a></p>
+
+	
+  
+    
+
+  <p class="image-credit-year">November 27, 2019</p>
+
+	
+  
+    
+
+  <p class="image-credit-credit">📸 Charles Krupa/AP</p>
+
+	
+  
+
+</div></section><section class="impact center" data-background-color="#262626">
 
   
   <div style="width: 100%;" class="stacked-paper">
@@ -1125,8 +1453,8 @@ Dollars</a></p>
   <h2>Ben said algorithms are racist!</h2>
   
 <p>well… sometimes, but that’s not the main point here</p>
-<p>look, you learned one earlier—I saw you—so you’re guilty as well</p>
-<p>we can’t hide behind algorithmic disintermediation</p></section><section class="center"><blockquote>
+<p>look, you learned one earlier—I saw you—so you’re implicated</p>
+<p>algorithms mediate power in lots of different ways</p></section><section class="center"><blockquote>
   <p>Machine learning is like money laundering for bias.</p>
 
   <p><strong>Maciej Cegłowski</strong>, <a href="https://idlewords.com/talks/sase_panel.htm"><em>The Moral Economy of

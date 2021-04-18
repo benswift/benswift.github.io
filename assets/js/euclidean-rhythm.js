@@ -26,14 +26,23 @@
 
 function compareArrays (a, b) {
   // TODO: optimize
-  return JSON.stringify(a) === JSON.stringify(b);
+  // we only care about the first element (the value), not the second (index)
+  return JSON.stringify(a.map(x => x.val)) === JSON.stringify(b.map(x => x.val));
 };
 
-function euclid(k, n) {
+// https://stackoverflow.com/a/17428705
+function transposeArray(a) {
+  a[0].map((_, colIndex) => a.map(row => row[colIndex]));
+}
+
+// for "auto-animate in reveal.js reasons" we also assign each bit an index
+// number, and keep track of them throughout the algorithm
+
+function bjorklundLayers(k, n) {
 
   let groups = [];
   let layers = [];
-  for (let i = 0; i < n; i++) groups.push([Number(i < k)]);
+  for (let i = 0; i < n; i++) groups.push([{val: Number(i < k), idx: i}]);
   layers.push(groups);
 
   let l;
@@ -55,6 +64,12 @@ function euclid(k, n) {
       .concat(groups.slice(count, -count));
     layers.push(groups);
   }
-  layers.push([].concat.apply([], groups));
+  layers.push([].concat.apply([], groups).map(x => [x]));
   return layers;
 };
+
+function euclid(k, n) {
+  let layers = bjorklundLayers(k, n);
+  // final layer is the end result
+  return layers[layers.length-1];
+}
