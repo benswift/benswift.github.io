@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://gitlab.cecs.anu.edu.au/lucy/jekyll-revealify-plugin.git
-  revision: e208717310b69c8a59ef4e1eaa11056fab268bcd
+  revision: 8a3bbc227f09243e1a5ded5910399a8e8e0cac88
   branch: master
   specs:
     jekyll-revealify-plugin (2.0.0.beta)
