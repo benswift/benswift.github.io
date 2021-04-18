@@ -32,7 +32,7 @@ hidden: true
 
 <p class="r-fit-text">391&nbsp;&nbsp;578</p>
 
-what's the _biggest_ number which divides both evenly?
+what's the _biggest_ number which divides evenly into both of these numbers?
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/the-school-of-athens.jpg" heading="the Euclidean algorithm" id="part-1" %}
 
@@ -70,9 +70,9 @@ are equal. This final number is then the greatest common divisor.
 
 ## why?
 
-early on: astronomy, calendars
+early on: tiling, astronomy, calendars
 
-these days: _so many thing_ (e.g. number theory, cryptography)
+these days: _many applications_ (e.g. number theory, cryptography)
 
 ## geometric visualisation
 
@@ -174,8 +174,9 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" %}
 
-> If there's more than one "hanging chad" column, repeatedly grab as many
-> right-hand columns as you need and move them to below the "1-headed" columns
+> If there's more than one "hanging chad" (short) column on the right,
+> repeatedly grab as many of those columns as you can and move them to below the
+> tallest (left-hand) columns.
 
 {% include slides/stacked-papers.html 
            width="50%"
@@ -267,9 +268,9 @@ of interesting-sounding and culturally-significant rhythms to get people
 
 {% include slides/background-image.html image="images/livecoding/ben-acmc-09-closeup.jpg" %}
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/typing-cat.gif" heading="Ben said algorithms are racist!" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/typing-cat.gif" heading="Ben said the Euclidean algorithm is racist!" %}
 
-well... sometimes, but that's not the main point here
+well, maybe... but that's not the main point here
 
 look, you learned one earlier---I saw you---so you're implicated
 
