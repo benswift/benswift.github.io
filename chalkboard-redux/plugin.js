@@ -10,7 +10,8 @@ const toolbarTempl = (defaultPen) => {
 	left: 0;
 	top: 0;
 	width: 100%;
-	font-size: 18px;
+	font-size: 20px;
+    padding: 10px 0;
 	background-color: rgba(255, 255, 255, 0.7);
 	text-align: center;
 	z-index: 1001; // reveal's .overlay has a z-index of 1000
@@ -187,7 +188,7 @@ window.ChalkboardRedux = function() {
 			});
 
 			// clear image
-			deck.addKeyBinding(46, () => {
+			deck.addKeyBinding(8, () => {
 				if (chalkboard.isEditable()) {
 					chalkboard.clear();
 
