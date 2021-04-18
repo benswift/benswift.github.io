@@ -39,9 +39,9 @@ what's the _biggest_ number which divides both evenly?
 the Euclidean algorithm for computing the greatest common divisor of two
 integers is one of the oldest known algorithms (circa 300 B.C.)
 
-first described by Euclid's _Elements, Proposition 2, Book VII_
+first described in Euclid's _Elements, Proposition 2, Book VII_
 
-independently discovered in several other places, (China, India)
+independently discovered in several other places (China, India)
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" %}
 
@@ -135,10 +135,6 @@ Bjorklund's algorithm (same basic idea as Euclid, though)
 
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>tresillo</em></span></p>
 
----
-
-<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5myOlMOZ0"></iframe>
-
 <h2 id="euclidean-rhythm-example-2" data-auto-animate>euclid(5,12)</h2>
 
 {% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,1:3,1:4,0:5,0:6,0:7,0:8,0:9,0:10,0:11" %}
@@ -169,9 +165,6 @@ Bjorklund's algorithm (same basic idea as Euclid, though)
 African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 <em>Schism</em> and many more...</span></p>
 
----
-
-<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5nitE48DN"></iframe>
 
 <h2 data-auto-animate>euclid(5,8)</h2>
 
@@ -179,22 +172,16 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>cinquillo</em></span></p>
 
----
-
-<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5nitE48DN"></iframe>
-
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/mike-tinnion-3ym6i13Y9LU-unsplash.jpg" %}
-
----
-
-<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/"></iframe>
 
 {% include slides/stacked-papers.html 
            width="50%"
            image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
            alt="list of 'world' music rhythms which are Euclidean" %}
 
-## implications? {#part-3}
+## stated implications? {#part-3}
+
+a laundry list of examples of Euclidean rhythms "in the wild"
 
 proved a number of "nice" mathematical properties of Euclidean rhythms
 
@@ -214,10 +201,6 @@ of interesting-sounding and culturally-significant rhythms to get people
 {% include slides/impact.html %}
 <!-- musician -> simple interface -> cultural domain -->
 
-{% include slides/impact.html %}
-
-algorithmic drum circle?
-
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/drum-circle.jpg" %}
 
 {% include slides/image-credit.html
@@ -228,7 +211,6 @@ algorithmic drum circle?
 %}
 
 {% include slides/impact.html %}
-<!-- musician -> cultural domain -->
 
 ---
 
@@ -315,3 +297,18 @@ yes, **it will be on the final exam**
 
 {% include slides/questions.html %}
 
+{% include slides/impact.html %}
+
+<https://apps.musedlab.org/groovepizza/>
+
+---
+
+<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5myOlMOZ0"></iframe>
+
+---
+
+<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5nitE48DN"></iframe>
+
+---
+
+<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5nitE48DN"></iframe>
