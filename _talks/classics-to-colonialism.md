@@ -299,6 +299,7 @@ yes, **it will be on the final exam**
 
 {% include slides/impact.html %}
 
+{:.r-fit-text}
 <https://apps.musedlab.org/groovepizza/>
 
 ---
