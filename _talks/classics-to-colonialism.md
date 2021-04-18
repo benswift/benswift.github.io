@@ -174,6 +174,9 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" %}
 
+> If there's more than one "hanging chad" column, repeatedly grab as many
+> right-hand columns as you need and move them to below the "1-headed" columns.
+
 {% include slides/stacked-papers.html 
            width="50%"
            image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
