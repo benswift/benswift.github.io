@@ -98,18 +98,18 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 ## beyond 4/4
 
-{% include slides/euclid-algo-widget.html algobits="1:0,0:1,0:2,1:3,0:4;1:0,0:1,0:2,1:3,1:4,1:5,1:6;1:0,0:1,1:2,0:3,0:4,1:5,0:6,1:7,0:8,1:9,0:10,0:11" %}
+{% include slides/euclid-algo-widget.html algobits="1:0,0:1,0:2,1:3,0:4;1:0,0:1,0:2,1:3,1:4,1:5,1:6;1:0,0:1,1:2,0:3,0:4,1:5,0:6,1:7,0:8,1:9,0:10,0:11;1:0,0:1,0:2,1:3,0:4,0:5,1:6,0:7,0:8,0:9,1:10,0:11,1:12,0:13,0:14,0:15" %}
 
 {% include slides/stacked-papers.html 
            image-path="assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg"
            link="https://www.sciencedirect.com/science/article/pii/S0925772108001156"
            alt="first page of 'distance geometry of music' paper" %}
 
-<section id="euclidean-rhythm-example-1" data-auto-animate>
+<h2 id="euclidean-rhythm-example-1" data-auto-animate>euclid(3,8)</h2>
+
+Bjorklund's algorithm (same basic idea as Euclid, though)
 
 {% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,0:3,0:4,0:5,0:6,0:7" %}
-
-</section>
 
 <section data-auto-animate>
 
@@ -133,11 +133,9 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 <iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5myOlMOZ0"></iframe>
 
-<section id="euclidean-rhythm-example-2" data-auto-animate>
+<h2 id="euclidean-rhythm-example-2" data-auto-animate>euclid(5,12)</h2>
 
 {% include slides/euclid-algo-widget.html algobits="1:0,1:1,1:2,1:3,1:4,0:5,0:6,0:7,0:8,0:9,0:10,0:11" %}
-
-</section>
 
 <section data-auto-animate>
 
@@ -162,8 +160,8 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 {% include slides/euclid-algo-widget.html algobits="1:0,0:7,0:5,1:3,0:10,1:1,0:8,0:6,1:4,0:11,1:2,0:9" %}
 
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">South
-African <em>Venda</em>, Macedonia, Central African Republic, Tool's _Schism_ and
-many more...</span></p>
+African <em>Venda</em>, Macedonia, Central African Republic, Tool's
+<em>Schism</em> and many more...</span></p>
 
 ---
 
@@ -188,12 +186,12 @@ many more...</span></p>
 
 not all widely-used rhythms in the world are Euclidean
 
-low-dimensional interface (2 params, 3 at a stretch) for generating lots of
-interesting and culturally-significant rhythms
+**⇒** low-dimensional interface (2 params, 3 at a stretch) for generating a wide
+range of interesting-sounding and culturally-significant rhythms
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/big-wow.gif" heading="musicologists" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/big-wow.gif" heading="musicologists:" %}
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/conspiracy.gif" heading="algorithmic composers" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/conspiracy.gif" heading="algorithmic composers:" %}
 
 {% include slides/impact.html %}
 <!-- musician -> simple interface -> cultural domain -->
@@ -216,11 +214,12 @@ algorithmic drum circle?
 
 ---
 
-> ...such rhythmic structures can be fruitfully regarded not only as retentions
-> of African musical and cultural heritage, but also as a way of theorizing the
-> threads of continuity that exist between many of the disparate musics and
-> cultures that have shared African roots, but have been radically altered by
-> the passage of time and cross-cultural contact and musical hybridity.
+> ...such rhythmic structures [Euclidean rhythms] can be fruitfully regarded not
+> only as retentions of African musical and cultural heritage, but also as a way
+> of theorizing the threads of continuity that exist between many of the
+> disparate musics and cultures that have shared African roots, but have been
+> radically altered by the passage of time and cross-cultural contact and
+> musical hybridity.
 >
 > _Stewart, J (2010)_. [Articulating the African Diaspora through Rhythm:
 > Diatonic Rhythms, Nested Looping Structures, and the music of Steve
@@ -248,7 +247,13 @@ algorithmic drum circle?
    credit="📸 Motown Museum"
 %}
 
-{% include slides/background-image.html image="images/talks/classics-to-colonialism/Boston-Dynamics-robot-dogs.jpg" bgsize="contain" %}
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/boston-dynamics-police-dog.jpg" %}
+
+{% include slides/image-credit.html
+   title="<a href='https://www.washingtonpost.com/technology/2019/11/26/boston-dynamics-terrifying-robotic-dogs-have-been-put-work-by-least-one-police-agency/'>Boston Dynamics' \"terrifying\" robotic dogs have been put to work by at least one police agency</a>"
+   year="November 27, 2019"
+   credit="📸 Charles Krupa/AP"
+%}
 
 {% include slides/stacked-papers.html 
            image-path="assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg"
@@ -263,9 +268,9 @@ algorithmic drum circle?
 
 well... sometimes, but that's not the main point here
 
-look, you learned one earlier---I saw you---so you're guilty as well
+look, you learned one earlier---I saw you---so you're implicated
 
-we can't hide behind algorithmic disintermediation
+algorithms mediate power in lots of different ways
 
 <hr class="center">
 
