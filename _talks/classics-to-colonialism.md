@@ -62,6 +62,12 @@ are equal. This final number is then the greatest common divisor.
 
 ([source](https://www.sciencedirect.com/science/article/pii/S0925772108001156))
 
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/mike-tinnion-3ym6i13Y9LU-unsplash.jpg" %}
+
+To find the **g**reatest **c**ommon **d**ivisor of two numbers (_a_ and _b_),
+repeatedly replace the larger of the two numbers by their difference until both
+are equal. This final number is then the greatest common divisor.
+
 ## why?
 
 early on: astronomy, calendars
@@ -184,14 +190,20 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 ## implications? {#part-3}
 
-not all widely-used rhythms in the world are Euclidean
+proved a number of "nice" mathematical properties of Euclidean rhythms
 
-**⇒** low-dimensional interface (2 params, 3 at a stretch) for generating a wide
-range of interesting-sounding and culturally-significant rhythms
+some kite-flying about the relationship between said nice properties and the
+human cultural practices associated with musicmaking
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/big-wow.gif" heading="musicologists:" %}
 
+not all widely-used rhythms in the world are Euclidean
+
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/conspiracy.gif" heading="algorithmic composers:" %}
+
+here's a low-dimensional interface (2--3 parameter) for generating a wide range
+of interesting-sounding and culturally-significant rhythms to get people
+**dancing**
 
 {% include slides/impact.html %}
 <!-- musician -> simple interface -> cultural domain -->
