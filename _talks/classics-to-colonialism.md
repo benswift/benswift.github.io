@@ -272,7 +272,7 @@ of interesting-sounding and culturally-significant rhythms to get people
 
 well, maybe... but that's not the main point here
 
-look, you learned one earlier---I saw you---so you're implicated
+you learned it earlier---I saw you---so you're implicated
 
 algorithms mediate power in lots of different ways
 
