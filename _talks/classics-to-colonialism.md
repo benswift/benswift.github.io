@@ -104,7 +104,7 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 ---
 
-{% include slides/euclid-algo-widget.html algobits="1:0,0:1,0:2,1:3,0:4;1:0,0:1,0:2,1:3,1:4,1:5,1:6;1:0,0:1,1:2,0:3,0:4,1:5,0:6,1:7,0:8,1:9,0:10,0:11;1:0,0:1,0:2,1:3,0:4,0:5,1:6,0:7,0:8,0:9,1:10,0:11,0:12,1:13,0:14,0:15" %}
+{% include slides/euclid-algo-widget.html algobits="1:0,0:1,0:2,1:3,0:4;1:0,0:1,0:2,1:3,0:4,1:5,0:6;1:0,0:1,1:2,0:3,0:4,1:5,0:6,1:7,0:8,1:9,0:10,0:11;1:0,0:1,0:2,1:3,0:4,0:5,1:6,0:7,0:8,0:9,1:10,0:11,0:12,1:13,0:14,0:15" %}
 
 {% include slides/stacked-papers.html 
            image-path="assets/images/talks/classics-to-colonialism/distance-geometry-of-music.jpg"
