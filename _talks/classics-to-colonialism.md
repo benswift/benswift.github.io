@@ -213,6 +213,8 @@ of interesting-sounding and culturally-significant rhythms to get people
    phone="☎ 941.256.2686"
 %}
 
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/british-museum.jpg" %}
+
 ---
 
 > ...such rhythmic structures [Euclidean rhythms] can be fruitfully regarded not
