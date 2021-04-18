@@ -183,6 +183,12 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 <iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/?source=pub&museid=5nitE48DN"></iframe>
 
+{% include slides/background-image.html image="images/talks/classics-to-colonialism/mike-tinnion-3ym6i13Y9LU-unsplash.jpg" %}
+
+---
+
+<iframe class="r-stretch" src="https://apps.musedlab.org/groovepizza/"></iframe>
+
 {% include slides/stacked-papers.html 
            width="50%"
            image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
@@ -201,7 +207,7 @@ not all widely-used rhythms in the world are Euclidean
 
 {% include slides/background-image.html image="images/talks/classics-to-colonialism/conspiracy.gif" heading="algorithmic composers:" %}
 
-here's a low-dimensional interface (2--3 parameter) for generating a wide range
+here's a low-dimensional (2--3 parameter) interface for generating a wide range
 of interesting-sounding and culturally-significant rhythms to get people
 **dancing**
 
