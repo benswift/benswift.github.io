@@ -162,8 +162,8 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 {% include slides/euclid-algo-widget.html algobits="1:0,0:7,0:5,1:3,0:10,1:1,0:8,0:6,1:4,0:11,1:2,0:9" %}
 
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">South
-African <em>Venda</em>, Macedonia, Central African Republic and
-more...</span></p>
+African <em>Venda</em>, Macedonia, Central African Republic, Tool's _Schism_ and
+many more...</span></p>
 
 ---
 
