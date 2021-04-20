@@ -18,7 +18,7 @@ hidden: true
 
 {% include slides/ack-country.html %}
 
-{% include qrcode.html text="https://benswift.me/talks/positive-feedback-loops-panel/" showlink=true %}
+{% include qrcode.html showlink=true %}
 
 {% include slides/background-image.html image="images/talks/positive-feedback-loops/jimi-hendrix.jpg" heading="feedback loops" %}
 

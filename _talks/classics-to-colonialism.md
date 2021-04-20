@@ -24,8 +24,7 @@ summary: >-
 
 [part trois](#part-3): what does it all mean?
 
-{% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
-{% include qrcode.html text=url showlink=true %}
+{% include qrcode.html showlink=true %}
 
 ---
 

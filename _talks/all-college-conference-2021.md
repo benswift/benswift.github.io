@@ -12,7 +12,7 @@ summary: >-
 
 {% include slides/ack-country.html %}
 
-{% include qrcode.html text="https://benswift.me/talks/all-college-conference-2021/" showlink=true %}
+{% include qrcode.html showlink=true %}
 
 {% include slides/background-image.html image="images/posts/comp1720-mp-exhibition-2018-2.jpg" heading="ANUEXT Creative Computing" %}
 

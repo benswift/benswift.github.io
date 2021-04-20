@@ -16,7 +16,7 @@ summary: >-
 
 {% include slides/ack-country.html %}
 
-{% include qrcode.html text="https://benswift.me/talks/designing-the-ccc-studio/" showlink=true %}
+{% include qrcode.html link="https://benswift.me/talks/designing-the-ccc-studio/" showlink=true %}
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/CoDCL-5948.jpg" heading="welcome" bgsize="contain" bgcol="black" %}
 

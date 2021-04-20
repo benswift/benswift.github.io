@@ -1,21 +1,28 @@
-{% assign text = include.text %}
+{% if include.link %}
+{% assign link = include.link %}
+{% else %}
+{% assign link = page.url | prepend: site.baseurl | prepend: site.url %}
+{% endif %}
+
+{% assign qrID = link | slugify | prepend: "qrcode-" %}
+
 <section class="center">
 <script src="{% link assets/js/qrcode.min.js %}"></script>
-<div id="qrcode"></div>
+<div id="{{ qrID }}" class="qrcode"></div>
 {%- if include.showlink -%}
-<p style="text-align: center;"><a href="{{ text }}">{{ text }}</a></p>
+<p style="text-align: center;"><a href="{{ link }}">{{ link }}</a></p>
 {%- endif -%}
 <script>
  let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
- let qrDiv = document.getElementById("qrcode");
+ let qrDiv = document.getElementById("{{ qrID }}");
  new QRCode(qrDiv,
-            {text: "{{ include.text }}",
+            {text: "{{ link }}",
              width: qrSize,
              height: qrSize,
              colorDark : "#333",
              colorLight : "#fafafa",
              correctLevel : QRCode.CorrectLevel.H});
  // hacky page centering
- document.querySelector("#qrcode > img").style.margin = "0 auto";
+ qrDiv.getElementsByTagName("img")[0].style.margin = "0 auto";
 </script>
 </section>

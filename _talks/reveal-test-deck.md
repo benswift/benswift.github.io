@@ -47,3 +47,5 @@ and _here's_ the **thing**
 ## blockquote test
 
 > Some stuff happened today - what a mess. I'm still recovering, tbh.
+
+{% include qrcode.html showlink=true %}
