@@ -150,6 +150,8 @@
 
 
 
+
+
 <section id="title" class="center">
   <h1 class="talk-title">Creative Computing</h1>
 <p class="talk-subtitle">making art &amp; music with code</p>
@@ -178,11 +180,11 @@
   </p>
 </section><section class="center">
 <script src="/assets/js/qrcode.min.js"></script>
-<div id="qrcode"></div>
+<div id="qrcode-https-benswift-me-talks-all-college-conference-2021" class="qrcode"></div>
 <p style="text-align: center;"><a href="https://benswift.me/talks/all-college-conference-2021/">https://benswift.me/talks/all-college-conference-2021/</a></p>
 <script>
  let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
- let qrDiv = document.getElementById("qrcode");
+ let qrDiv = document.getElementById("qrcode-https-benswift-me-talks-all-college-conference-2021");
  new QRCode(qrDiv,
             {text: "https://benswift.me/talks/all-college-conference-2021/",
              width: qrSize,
@@ -191,7 +193,7 @@
              colorLight : "#fafafa",
              correctLevel : QRCode.CorrectLevel.H});
  // hacky page centering
- document.querySelector("#qrcode > img").style.margin = "0 auto";
+ qrDiv.getElementsByTagName("img")[0].style.margin = "0 auto";
 </script>
 </section><section data-background-image="/assets/images/posts/comp1720-mp-exhibition-2018-2.jpg" data-background-size="cover" data-background-position="center" role="img" aria-label="">
   
@@ -325,7 +327,7 @@ Computing.</p></section><section id="bio-1"><h2>Bio</h2>
 Ben is one of the inaugural <a href="/blog/2019/08/30/Im-a-reimagine-fellow/">ANU Reimagine Fellows</a>, part of a <a href="https://cecs.anu.edu.au/reimagine">$300m+ investment
 from the ANU</a> charged with re-thinking (and
 re-doing) what it is to be a computer scientist in the 21st century.</p>
-<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<script src="/assets/js/piklor.js"></script><svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com

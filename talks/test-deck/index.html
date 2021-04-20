@@ -63,6 +63,11 @@
 
 
 
+
+
+
+
+
 <section id="title" class="center">
   <h1 class="talk-title">reveal.js test deck</h1>
   <p class="talk-name">Ben Swift</p>
@@ -103,8 +108,24 @@ Nam euismod tellus id erat.</p></section><section id="code"><h2>code</h2>
 </section><section class="impact center" data-background-color="#262626"><p>and <em>here’s</em> the <strong>thing</strong></p></section><section id="an-h1-slide"><h1>an h1 slide!</h1></section><section id="blockquote-test"><h2>blockquote test</h2>
 <blockquote>
   <p>Some stuff happened today - what a mess. I’m still recovering, tbh.</p>
-</blockquote>
-<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</blockquote></section><section class="center">
+<script src="/assets/js/qrcode.min.js"></script>
+<div id="qrcode-https-benswift-me-talks-test-deck" class="qrcode"></div>
+<p style="text-align: center;"><a href="https://benswift.me/talks/test-deck/">https://benswift.me/talks/test-deck/</a></p>
+<script>
+ let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
+ let qrDiv = document.getElementById("qrcode-https-benswift-me-talks-test-deck");
+ new QRCode(qrDiv,
+            {text: "https://benswift.me/talks/test-deck/",
+             width: qrSize,
+             height: qrSize,
+             colorDark : "#333",
+             colorLight : "#fafafa",
+             correctLevel : QRCode.CorrectLevel.H});
+ // hacky page centering
+ qrDiv.getElementsByTagName("img")[0].style.margin = "0 auto";
+</script>
+<script src="/assets/js/piklor.js"></script><svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
