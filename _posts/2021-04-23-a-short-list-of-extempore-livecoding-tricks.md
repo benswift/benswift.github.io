@@ -15,6 +15,8 @@ documentation, but if you've got any questions then you can hit me up on Teams
 (for LENS students) or the [Extempore mailing
 list](mailto:extemporelang@googlegroups.com) (everyone else).
 
+{% include toc.html %}
+
 ## the `cosr` macro
 
 `cosr` is just a convenient way of sinusoidally modulating something with a
