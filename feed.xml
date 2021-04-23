@@ -1,4 +1,308 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-20T15:08:16+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">benswift.me analytics/tracking update</title><link href="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/" rel="alternate" type="text/html" title="benswift.me analytics/tracking update" /><published>2021-04-08T00:00:00+10:00</published><updated>2021-04-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update</id><content type="html" xml:base="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/">&lt;p&gt;I haven’t had any sort of client-side analytics (e.g. Google Analytics) on
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-23T16:17:40+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A short list of Extempore livecoding tricks</title><link href="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/" rel="alternate" type="text/html" title="A short list of Extempore livecoding tricks" /><published>2021-04-23T00:00:00+10:00</published><updated>2021-04-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks</id><content type="html" xml:base="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/">&lt;p&gt;Yesterday’s &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;LENS&lt;/a&gt; class
+discussion turned into an &lt;a href=&quot;https://www.reddit.com/r/AMA/&quot;&gt;AMA&lt;/a&gt; of how I do
+certain things when I’m livecoding in Extempore. As promised, here’s a blog post
+where I’ve put together all of the things we’ve discussed (with a bit more
+explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful
+complement to yesterday’s class discussion. If you’re not in the class, then
+maybe you’ve always been curious about certain things I (over)use in my
+livecoding sets? This is maybe a bit too niche to go in the general Extempore
+documentation, but if you’ve got any questions then you can hit me up on Teams
+(for LENS students) or the &lt;a href=&quot;mailto:extemporelang@googlegroups.com&quot;&gt;Extempore mailing
+list&lt;/a&gt; (everyone else).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-cosr-macro&quot;&gt;the &lt;code&gt;cosr&lt;/code&gt; macro&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;cosr&lt;/code&gt; is just a convenient way of sinusoidally modulating something with a
+period synced to the tempo.&lt;/p&gt;
+
+&lt;p&gt;When it came to writing up this part of yesterday’s discussion I had &lt;em&gt;déjà
+vu&lt;/em&gt;—I was sure I’d written this stuff up elsewhere. Turns out I have—it’s in
+the main Extempore docs as part of the
+&lt;a href=&quot;https://extemporelang.github.io/docs/guides/pattern-language/#what-is-cosr&quot;&gt;pattern&lt;/a&gt;
+guide.&lt;/p&gt;
+
+&lt;p&gt;One other tip which I mentioned yesterday: if you use fractions for the period
+(final argument) which have a co-prime numerator &amp;amp; denominator (e.g. 7/3 or
+15/8) then you’ll get interesting accenting patterns, but which will still
+repeat (so it gives a bit more structure than just using &lt;code&gt;random&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;One other related trick that I use is doing “mod” calculations on the &lt;code&gt;beat&lt;/code&gt;
+variable (which is an explicit argument in most temporal recursions), but is
+also implicitly bound in the pattern expression if you’re using the pattern language:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(if (= (modulo beat 2) 0)
+    (println &apos;downbeat))
+
+(if (= (modulo beat 2) 1)
+    (println &apos;upbeat))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;adding-instruments-to-the-sharedsystem-setup&quot;&gt;adding instruments to the sharedsystem setup&lt;/h2&gt;
+
+&lt;p&gt;The default sharedsystem instruments are defined near the top of the
+&lt;code&gt;examples/sharedsystem/audiosetup.xtm&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(make-instrument syn1 analogue)
+(make-instrument syn2 analogue)
+(make-instrument syn3 analogue)
+(make-instrument kit dlogue)
+(make-instrument samp1 sampler)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to use different instruments, you can add them to the various DSP
+callbacks &lt;code&gt;dsp1&lt;/code&gt; to &lt;code&gt;dsp5&lt;/code&gt; (this multi-DSP-function setup is to allow the audio
+engine’s work to be distributed across multiple cores).&lt;/p&gt;
+
+&lt;p&gt;In each of the DSP functions (e.g. &lt;code&gt;dsp1&lt;/code&gt;), the actual work of getting the
+“signal” out of the relevant instrument happens in a line like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(set! out (syn1 in time chan dat))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To add e.g. an &lt;code&gt;fmsynth&lt;/code&gt; to the sharedsystem setup, there are two steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;define the &lt;code&gt;fmsynth&lt;/code&gt; instrument somewhere with &lt;code&gt;(make-instrument fmsynth fmsynth)&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;call the &lt;code&gt;fmsynth&lt;/code&gt; function in one of your DSP functions (doesn’t matter
+which one—they all get summed in the end) callbacks and make sure the
+return value is added to one of the &lt;code&gt;out&lt;/code&gt; variables&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here’s an example (in &lt;code&gt;dsp1&lt;/code&gt; as per the previous example):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(set! out (+ (syn1 in time chan dat)
+             (fmsynth in time chan dat)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, any notes you play (using &lt;code&gt;play&lt;/code&gt;) on the &lt;code&gt;fmsynth&lt;/code&gt; instrument will make
+their way into the audio output.&lt;/p&gt;
+
+&lt;h2 id=&quot;markov-chains&quot;&gt;markov chains&lt;/h2&gt;
+
+&lt;p&gt;As discussed yesterday, Scheme (most lisps, really) makes it pretty easy to
+represent markov chains.&lt;/p&gt;
+
+&lt;p&gt;Consider the following temporal recursion, which (in addition to the usual
+&lt;code&gt;beat&lt;/code&gt; and &lt;code&gt;dur&lt;/code&gt; arguments) also takes a &lt;code&gt;pitch&lt;/code&gt; argument. This is the exact
+code I wrote yesterday:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(define (obi-lead beat dur) pitch
+  (play samp1 pitch (cosr 75 20 5/3) dur 2)
+  (callback (*metro* (+ beat (* .5 dur))) &apos;obi-lead (+ beat dur) dur
+            (random (cdr (assoc pitch &apos;((60 60 63 67)
+                                        (63 67 60)
+                                        (67 58)
+                                        (58 60)))))))
+
+(obi-lead (*metro* &apos;get-beat 4) 1/4 60)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The markov chain happens in that &lt;code&gt;(random (cdr (assoc ...)))&lt;/code&gt; line at the end of
+the definition of the &lt;code&gt;obi-lead&lt;/code&gt; function. A couple of things to note:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;code&gt;cdr&lt;/code&gt; is only necessary to make sure that a “self-transition” (i.e. the
+pitch staying the same) only happens if you explicitly add the same pitch as
+an element &lt;em&gt;other than&lt;/em&gt; the first element of the list. Otherwise, you wouldn’t
+be able to make a markof chain that always went to a &lt;em&gt;different&lt;/em&gt; pitch from
+the current one.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;code&gt;random&lt;/code&gt; call isn’t a special “markov” random, it’s just the normal
+&lt;code&gt;random&lt;/code&gt; picking from a list of pitches (so you can use the same “use the same
+element multiple times for weighted sampling” trick mentioned below)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;you can do whatever you want with the &lt;code&gt;pitch&lt;/code&gt; argument inside the body of the
+&lt;code&gt;obi-lead&lt;/code&gt; function—the fact that we &lt;code&gt;play&lt;/code&gt; it here is a common pattern, but
+you could e.g. fire out an OSC message, etc.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;this is just a specific example of the more general class of algorithms which
+use a temporal recursion to pass variables to subsequent callbacks, and
+potentially do tests/operations on said variables to change them for future callbacks&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the onus is on the livecoder to make sure that each possible state (i.e. each
+value that &lt;code&gt;pitch&lt;/code&gt; can take) is represented as the head (&lt;code&gt;cdr&lt;/code&gt;) of one of the
+lists. But as long as you satisfy that invariant then the &lt;code&gt;obi-lead&lt;/code&gt; markov
+process will just keep on playing the &lt;code&gt;pitch&lt;/code&gt; as it travels through time and
+space&lt;sup id=&quot;fnref:mb&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:mb&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;weighted-random-selections-from-a-list&quot;&gt;weighted random selections from a list&lt;/h2&gt;
+
+&lt;p&gt;As promised (Caleb!) here’s the syntax for doing a weighted random sample: the
+key is that the argument to &lt;code&gt;random&lt;/code&gt; isn’t a list of &lt;code&gt;cons&lt;/code&gt; pairs, it’s multiple
+&lt;code&gt;cons&lt;/code&gt; pair arguments, each one of the form &lt;code&gt;(cons WEIGHTING VALUE)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; here&apos;s an example: note that it&apos;s in a &quot;do 10 times&quot; loop to show that the
+;; values are indeed sampled using the appropriate weighting
+(dotimes (i 10)
+  (println &apos;i: i (random (cons 0.1 1) (cons 0.9 -1))))
+
+;; printed output:
+;; 
+;; i: 0 -1
+;; i: 1 -1
+;; i: 2 -1
+;; i: 3 -1
+;; i: 4 1
+;; i: 5 1
+;; i: 6 -1
+;; i: 7 -1
+;; i: 8 -1
+;; i: 9 -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that if you’re happy with just rough “this value is twice/three times as
+likely as the others” then it’s usually simpler to just randomly sample
+(equally-weighted) from a list, including duplicate values for the things you
+want to turn up more often in the output:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; 0 will be twice as likely as 3 or 7
+(random (list 0 0 3 7))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;rel-for-relative-pitches&quot;&gt;&lt;code&gt;rel&lt;/code&gt; for relative pitches&lt;/h2&gt;
+
+&lt;div class=&quot;hl-para&quot;&gt;
+
+  &lt;p&gt;From here on, all the following code snippets assume you’ve loaded the pattern
+language with&lt;/p&gt;
+
+  &lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(sys:load &quot;libs/core/pattern-language.xtm&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+  &lt;p&gt;Note that the pattern language library is loaded when you load the sharedsystem
+as well.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Based on the (global) &lt;code&gt;*scale*&lt;/code&gt; variable, you can use &lt;code&gt;rel&lt;/code&gt; to&lt;/p&gt;
+
+&lt;p&gt;Note that this is just a slightly terser version of &lt;code&gt;pc:relative&lt;/code&gt; (in
+&lt;code&gt;libs/core/pc_ivl.xtm&lt;/code&gt;) function, which doesn’t use the &lt;code&gt;*scale*&lt;/code&gt; variable by
+default. Note &lt;em&gt;further&lt;/em&gt; that &lt;code&gt;rel&lt;/code&gt; takes an optional third argument for
+providing a different scale, if e.g. you want to use a different scale for your
+“relative pitch” calculation than you’re currently using elsewhere in the piece.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; set scale to F natural minor
+(set! *scale* (pc:scale 5 &apos;aeolian))
+
+;; use a Fm7 chord (a subset of F natural minor) for the relative pitch calculation
+(rel 65 (random 4) (pc:chord 5 &apos;-7))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you &lt;code&gt;println&lt;/code&gt; the output of that &lt;code&gt;(pc:chord 5 &apos;-7)&lt;/code&gt; (&lt;em&gt;Fm7&lt;/em&gt;) function, you’ll
+get the result &lt;code&gt;(5 8 0 3)&lt;/code&gt;, which corresponds to the following pitch classes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;5&lt;/code&gt;: F&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;8&lt;/code&gt;: A♭&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;0&lt;/code&gt;: C&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;3&lt;/code&gt;: E♭&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;which are the pitches from an Fm7 chord, so it all checks out.&lt;/p&gt;
+
+&lt;p&gt;As one final tip, you can just skip the call to &lt;code&gt;pc:chord&lt;/code&gt; altogether and do
+something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(rel 65 (random 4) &apos;(5 8 0 3))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This makes it super-easy to make quick edits, e.g. if you want to flatten the
+fifth (C). But it does make it a little less readable for the audience (and
+let’s face it, reading &lt;code&gt;(pc:chord 5 &apos;-7)&lt;/code&gt; was already pretty tough going for
+most folks outside the &lt;em&gt;music theory&lt;/em&gt; ∩ &lt;em&gt;computer programmer&lt;/em&gt; intersection).&lt;/p&gt;
+
+&lt;h2 id=&quot;nof-and-the-macros-vs-functions-distinction&quot;&gt;&lt;code&gt;nof&lt;/code&gt; and the macros vs functions distinction&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;nof&lt;/code&gt; (think “give me &lt;em&gt;n&lt;/em&gt; of these”) is a Scheme macro for creating a list by
+repeatedly evaluating a form.&lt;/p&gt;
+
+&lt;p&gt;So, one way to get a list of 10 &lt;code&gt;0&lt;/code&gt;s is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(nof 10 0)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To get a list of 4 random integers between &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;9&lt;/code&gt; (inclusive) you could use:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(nof 4 (random 10))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I just evaluated the above form on my machine; the result was &lt;code&gt;(0 9 9 8)&lt;/code&gt;. Note
+that the numbers are different; so the &lt;code&gt;nof&lt;/code&gt; macro is obviously not just taking
+the result of a single call to &lt;code&gt;(random 10)&lt;/code&gt; and repeating it &lt;code&gt;4&lt;/code&gt; times to
+create a list.&lt;/p&gt;
+
+&lt;p&gt;This is where the fact that it’s a &lt;em&gt;macro&lt;/em&gt;—not a function—comes into play.
+One trick for looking at what a macro form “macroexpands” out to is calling
+&lt;code&gt;macro-expand&lt;/code&gt; (note that the &lt;code&gt;nof&lt;/code&gt; form has been quoted using &lt;code&gt;&apos;&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(println (macro-expand &apos;(nof 4 (random 10))))
+
+;; prints:
+
+;; (make-list-with-proc 4 (lambda (idx) (random 10)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So, the list is actually formed by four repeated calls to a &lt;code&gt;lambda&lt;/code&gt; (anonymous)
+function, and that’s why the four random numbers in the above list are different.&lt;/p&gt;
+
+&lt;p&gt;If this isn’t actually the behaviour you want—if you want the same random
+number repeated four times, there’s a &lt;code&gt;repeat&lt;/code&gt; function which you probably want
+to use instead. Notice the difference:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(println (nof 4 (random 10)))
+(println (repeat 4 (random 10)))
+
+;; prints:
+
+;; nof: (1 3 3 6)
+;; repeat: (5 5 5 5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So keep that in mind when you’re using &lt;code&gt;nof&lt;/code&gt; in your pattern language. It’ll
+probably just work, but this subtle macro vs functino thing may be the cause of
+errors or weird behaviour that you see.&lt;/p&gt;
+
+&lt;h2 id=&quot;quasiquote--vs-regular-quote-&quot;&gt;quasiquote (&lt;code&gt;`&lt;/code&gt;) vs regular quote (&lt;code&gt;&apos;&lt;/code&gt;)&lt;/h2&gt;
+
+&lt;p&gt;The quasiquote (&lt;code&gt;`&lt;/code&gt;) symbol (which is also called the &lt;em&gt;tilde&lt;/em&gt;) is like the
+normal quote operator (&lt;code&gt;&apos;&lt;/code&gt;), except that you can “undo” the quoting (i.e. eval)
+inner forms as necessary using the unquote operator (&lt;code&gt;,&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;That’s not easy to get your head around when explained in words, but here’s an
+example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; this is kindof tedious to write
+&apos;(c3 | | | | | d3 e3)
+
+;; so instead we write
+`(c3 ,@(nof 5 &apos;|) d3 e3)
+
+;; don&apos;t forget the @ (splicing) part; this is probably not what you want...
+`(c3 ,(nof 5 &apos;|) d3 e3)
+
+;; result: (c3 (| | | | |) d3 e3)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:mb&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;to the &lt;a href=&quot;https://www.youtube.com/watch?v=uf723IeStzc&quot;&gt;world of the Mighty Boosh&lt;/a&gt; &lt;a href=&quot;#fnref:mb&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><category term="lens" /><summary type="html">Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).</summary></entry><entry><title type="html">benswift.me analytics/tracking update</title><link href="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/" rel="alternate" type="text/html" title="benswift.me analytics/tracking update" /><published>2021-04-08T00:00:00+10:00</published><updated>2021-04-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update</id><content type="html" xml:base="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/">&lt;p&gt;I haven’t had any sort of client-side analytics (e.g. Google Analytics) on
 &lt;code&gt;benswift.me&lt;/code&gt; for a &lt;em&gt;long&lt;/em&gt; time (since around 2012 I think—several iterations
 of the site ago). I use an ad-blocker myself, and the whole tracking &amp;amp; analytics
 thing just strikes me as a bit gross.&lt;/p&gt;
@@ -10638,13 +10942,4 @@ with the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&g
       &lt;p&gt;I have no evidence for this… but I’d like to try and get some. &lt;a href=&quot;#fnref:unproven-hypothesis&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="student-project" /></entry><entry><title type="html">Creative Computing ANU Extension course</title><link href="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/" rel="alternate" type="text/html" title="Creative Computing ANU Extension course" /><published>2020-09-17T00:00:00+10:00</published><updated>2020-09-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course</id><content type="html" xml:base="https://benswift.me/blog/2020/09/17/creative-computing-anu-extension-course/">&lt;div style=&quot;padding:75% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/454451852?color=be2edd&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;An update for those who have been following updates about &lt;a href=&quot;https://benswift.me/blog/tag/reimagine/&quot;&gt;my reimagine
-fellowship&lt;/a&gt;: a Creative Computing
-course (hosted by the c/c/c studio as part of the &lt;a href=&quot;https://extension.anu.edu.au/&quot;&gt;ANU Extension
-program&lt;/a&gt;) has been approved for delivery in 2021.
-So if you’re an ACT student heading into year 11 in 2021, and you want to make
-beats and/or art with code, then you should check it out. More details &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/news/2020/07/24/anu-extension-creative-computing.html&quot;&gt;on
-the&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="reimagine" /><category term="ccc" /><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="student-project" /></entry></feed>
