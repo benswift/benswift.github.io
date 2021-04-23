@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"A short list of Extempore livecoding tricks","dateModified":"2021-04-23T00:00:00+10:00","datePublished":"2021-04-23T00:00:00+10:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/"},"url":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/"},"url":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).","headline":"A short list of Extempore livecoding tricks","dateModified":"2021-04-23T00:00:00+10:00","datePublished":"2021-04-23T00:00:00+10:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -97,6 +97,22 @@ livecoding sets? This is maybe a bit too niche to go in the general Extempore
 documentation, but if you’ve got any questions then you can hit me up on Teams
 (for LENS students) or the <a href="mailto:extemporelang@googlegroups.com">Extempore mailing
 list</a> (everyone else).</p>
+
+<div id="toc">
+
+  <h2>table of contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#the-cosr-macro" id="markdown-toc-the-cosr-macro">the <code>cosr</code> macro</a></li>
+  <li><a href="#adding-instruments-to-the-sharedsystem-setup" id="markdown-toc-adding-instruments-to-the-sharedsystem-setup">adding instruments to the sharedsystem setup</a></li>
+  <li><a href="#markov-chains" id="markdown-toc-markov-chains">markov chains</a></li>
+  <li><a href="#weighted-random-selections-from-a-list" id="markdown-toc-weighted-random-selections-from-a-list">weighted random selections from a list</a></li>
+  <li><a href="#rel-for-relative-pitches" id="markdown-toc-rel-for-relative-pitches"><code>rel</code> for relative pitches</a></li>
+  <li><a href="#nof-and-the-macros-vs-functions-distinction" id="markdown-toc-nof-and-the-macros-vs-functions-distinction"><code>nof</code> and the macros vs functions distinction</a></li>
+  <li><a href="#quasiquote--vs-regular-quote-" id="markdown-toc-quasiquote--vs-regular-quote-">quasiquote (<code>`</code>) vs regular quote (<code>'</code>)</a></li>
+</ul>
+
+</div>
 
 <h2 id="the-cosr-macro">the <code>cosr</code> macro</h2>
 
@@ -273,7 +289,21 @@ as well.</p>
 
 </div>
 
-<p>Based on the (global) <code>*scale*</code> variable, you can use <code>rel</code> to</p>
+<p>Based on the (global) <code>*scale*</code> variable, you can use <code>rel</code> to calculate pitches
+“relative to” a starting pitch.</p>
+
+<p>So, if you’re starting with a middle C (midi note <code>60</code>) and you want to go <code>2</code>
+notes up the scale (and you haven’t changed value of the <code>*scale*</code> variable from
+the default “C natural minor” scale) then you can use:</p>
+
+<pre><code class="language-extempore">(rel 60 2)
+</code></pre>
+
+<p>This can be handy when paired with the <code>range</code> function (which just generates
+lists of integers) for running your scales:</p>
+
+<pre><code class="language-extempore">(:&gt; scale-runner 4 0 (play samp1 (rel 60 @1) 80 dur) (range 8))
+</code></pre>
 
 <p>Note that this is just a slightly terser version of <code>pc:relative</code> (in
 <code>libs/core/pc_ivl.xtm</code>) function, which doesn’t use the <code>*scale*</code> variable by
@@ -440,8 +470,8 @@ example:</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>757722a64</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/757722a64/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
+	site revision <code>ec1bdc68f</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/ec1bdc68f/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>

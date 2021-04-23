@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-23T16:17:40+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A short list of Extempore livecoding tricks</title><link href="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/" rel="alternate" type="text/html" title="A short list of Extempore livecoding tricks" /><published>2021-04-23T00:00:00+10:00</published><updated>2021-04-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks</id><content type="html" xml:base="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/">&lt;p&gt;Yesterday’s &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;LENS&lt;/a&gt; class
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-23T16:46:04+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A short list of Extempore livecoding tricks</title><link href="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/" rel="alternate" type="text/html" title="A short list of Extempore livecoding tricks" /><published>2021-04-23T00:00:00+10:00</published><updated>2021-04-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks</id><content type="html" xml:base="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/">&lt;p&gt;Yesterday’s &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;LENS&lt;/a&gt; class
 discussion turned into an &lt;a href=&quot;https://www.reddit.com/r/AMA/&quot;&gt;AMA&lt;/a&gt; of how I do
 certain things when I’m livecoding in Extempore. As promised, here’s a blog post
 where I’ve put together all of the things we’ve discussed (with a bit more
@@ -9,6 +9,22 @@ livecoding sets? This is maybe a bit too niche to go in the general Extempore
 documentation, but if you’ve got any questions then you can hit me up on Teams
 (for LENS students) or the &lt;a href=&quot;mailto:extemporelang@googlegroups.com&quot;&gt;Extempore mailing
 list&lt;/a&gt; (everyone else).&lt;/p&gt;
+
+&lt;div id=&quot;toc&quot;&gt;
+
+  &lt;h2&gt;table of contents&lt;/h2&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-cosr-macro&quot; id=&quot;markdown-toc-the-cosr-macro&quot;&gt;the &lt;code&gt;cosr&lt;/code&gt; macro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#adding-instruments-to-the-sharedsystem-setup&quot; id=&quot;markdown-toc-adding-instruments-to-the-sharedsystem-setup&quot;&gt;adding instruments to the sharedsystem setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#markov-chains&quot; id=&quot;markdown-toc-markov-chains&quot;&gt;markov chains&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#weighted-random-selections-from-a-list&quot; id=&quot;markdown-toc-weighted-random-selections-from-a-list&quot;&gt;weighted random selections from a list&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rel-for-relative-pitches&quot; id=&quot;markdown-toc-rel-for-relative-pitches&quot;&gt;&lt;code&gt;rel&lt;/code&gt; for relative pitches&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#nof-and-the-macros-vs-functions-distinction&quot; id=&quot;markdown-toc-nof-and-the-macros-vs-functions-distinction&quot;&gt;&lt;code&gt;nof&lt;/code&gt; and the macros vs functions distinction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#quasiquote--vs-regular-quote-&quot; id=&quot;markdown-toc-quasiquote--vs-regular-quote-&quot;&gt;quasiquote (&lt;code&gt;`&lt;/code&gt;) vs regular quote (&lt;code&gt;&apos;&lt;/code&gt;)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
 
 &lt;h2 id=&quot;the-cosr-macro&quot;&gt;the &lt;code&gt;cosr&lt;/code&gt; macro&lt;/h2&gt;
 
@@ -185,7 +201,21 @@ as well.&lt;/p&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;Based on the (global) &lt;code&gt;*scale*&lt;/code&gt; variable, you can use &lt;code&gt;rel&lt;/code&gt; to&lt;/p&gt;
+&lt;p&gt;Based on the (global) &lt;code&gt;*scale*&lt;/code&gt; variable, you can use &lt;code&gt;rel&lt;/code&gt; to calculate pitches
+“relative to” a starting pitch.&lt;/p&gt;
+
+&lt;p&gt;So, if you’re starting with a middle C (midi note &lt;code&gt;60&lt;/code&gt;) and you want to go &lt;code&gt;2&lt;/code&gt;
+notes up the scale (and you haven’t changed value of the &lt;code&gt;*scale*&lt;/code&gt; variable from
+the default “C natural minor” scale) then you can use:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(rel 60 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This can be handy when paired with the &lt;code&gt;range&lt;/code&gt; function (which just generates
+lists of integers) for running your scales:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(:&amp;gt; scale-runner 4 0 (play samp1 (rel 60 @1) 80 dur) (range 8))
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Note that this is just a slightly terser version of &lt;code&gt;pc:relative&lt;/code&gt; (in
 &lt;code&gt;libs/core/pc_ivl.xtm&lt;/code&gt;) function, which doesn’t use the &lt;code&gt;*scale*&lt;/code&gt; variable by
