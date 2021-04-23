@@ -189,7 +189,23 @@ as well.
 
 </div>
 
-Based on the (global) `*scale*` variable, you can use `rel` to 
+Based on the (global) `*scale*` variable, you can use `rel` to calculate pitches
+"relative to" a starting pitch.
+
+So, if you're starting with a middle C (midi note `60`) and you want to go `2`
+notes up the scale (and you haven't changed value of the `*scale*` variable from
+the default "C natural minor" scale) then you can use:
+
+```extempore
+(rel 60 2)
+```
+
+This can be handy when paired with the `range` function (which just generates
+lists of integers) for running your scales:
+
+```extempore
+(:> scale-runner 4 0 (play samp1 (rel 60 @1) 80 dur) (range 8))
+```
 
 Note that this is just a slightly terser version of `pc:relative` (in
 `libs/core/pc_ivl.xtm`) function, which doesn't use the `*scale*` variable by
