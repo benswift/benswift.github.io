@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"A short list of Extempore livecoding tricks","dateModified":"2021-04-23T00:00:00+10:00","datePublished":"2021-04-23T00:00:00+10:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/"},"url":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/"},"url":"https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).","headline":"A short list of Extempore livecoding tricks","dateModified":"2021-04-23T00:00:00+10:00","datePublished":"2021-04-23T00:00:00+10:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -111,6 +111,10 @@ list</a> (everyone else).</p>
   <li><a href="#rel-for-relative-pitches" id="markdown-toc-rel-for-relative-pitches"><code>rel</code> for relative pitches</a></li>
   <li><a href="#nof-and-the-macros-vs-functions-distinction" id="markdown-toc-nof-and-the-macros-vs-functions-distinction"><code>nof</code> and the macros vs functions distinction</a></li>
   <li><a href="#quasiquote--vs-regular-quote-" id="markdown-toc-quasiquote--vs-regular-quote-">quasiquote (<code>`</code>) vs regular quote (<code>'</code>)</a></li>
+  <li><a href="#modulating-filter-or-other-params-over-time" id="markdown-toc-modulating-filter-or-other-params-over-time">modulating filter (or other) params over time</a></li>
+  <li><a href="#playing-a-loop-which-then-stops" id="markdown-toc-playing-a-loop-which-then-stops">playing a loop which then stops</a></li>
+  <li><a href="#multi-laptop-extempore-clock-sync" id="markdown-toc-multi-laptop-extempore-clock-sync">multi-laptop Extempore clock sync</a></li>
+  <li><a href="#applying-filters-to-a-sampler" id="markdown-toc-applying-filters-to-a-sampler">applying filters to a sampler</a></li>
 </ul>
 
 </div>
@@ -415,10 +419,133 @@ example:</p>
 
 ;; result: (c3 (| | | | |) d3 e3)
 </code></pre>
+
+<h2 id="modulating-filter-or-other-params-over-time">modulating filter (or other) params over time</h2>
+
+<p>One way to do it is show in the example file
+<code>examples/sharedsystem/analogue_synth_basics.xtm</code>. Have a look around line <code>39</code>,
+where it says:</p>
+
+<pre><code class="language-extempore">;; and now add a second pattern to 'sweep' the filter
+(:&gt; B 4 0 (set_filter_env syn1 40.0 100.0 (trir 0.0 1.0 1/32) 100.0) (nof 16 0))
+</code></pre>
+
+<h2 id="playing-a-loop-which-then-stops">playing a loop which then stops</h2>
+
+<p>The pattern language isn’t really designed for playing one (or two, or three, or
+<em>n</em> for <em>n &lt; ∞</em>) shot loops. It’s really designed for things which will keep on
+looping until you stop the pattern.</p>
+
+<p>If you want to play a sequence of events which runs for a while and then stops,
+then using a standard temporal recursion is probably best.</p>
+
+<p>Here are a couple of examples. First, this recursion will keep playing the notes
+until the <code>pitch</code> argument gets to <code>72</code>.</p>
+
+<pre><code class="language-extempore">(define (ascending-chromatic beat dur pitch)
+  (play syn1 pitch 80 dur)
+  (if (&lt; pitch 72)
+      ;; note the `callback` is inside the `if`
+      (callback (*metro* (+ beat (* .5 dur))) 'ascending-chromatic (+ beat dur) dur
+                ;; pitch gets incremented by 1 in each subsequent callback
+                (+ pitch 1))))
+
+;; kick it off - note that we're passing the initial pitch argument
+(ascending-chromatic (*metro* 'get-beat 4) 1/4 60)
+</code></pre>
+
+<p>Now, both the “increment” part <code>(+ pitch 1)</code> and the “stopping criteria” part
+(i.e. the <code>(if (&lt; pitch 72) ...</code>) are both just Scheme code, so it’s very
+flexible. You can handle those things however you like.</p>
+
+<p>One other approach to doing this is a recursion approach straight out of the
+functional programming handbook<sup id="fnref:little-schemer" role="doc-noteref"><a href="#fn:little-schemer" class="footnote" rel="footnote">2</a></sup>, just with a temporal twist.
+The key idea: start with a list, recurring on the <code>cdr</code> (i.e. the tail of the
+list) each time until it’s empty, then stopping.</p>
+
+<p>So, here’s a way of playing a scale—ascending, then descending—then stopping.</p>
+
+<pre><code class="language-extempore">(define (ascending-descending-scale beat dur plist)
+  ;; note the (car plist) since plist is a list, not a number
+  (play syn1 (car plist) 80 dur)
+  (if (not (null? plist))
+      (callback (*metro* (+ beat (* .5 dur))) 'ascending-descending-scale (+ beat dur) dur
+                (cdr plist))))
+
+(ascending-descending-scale (*metro* 'get-beat 4) 1/4
+                            '(60 62 64 65 67 69 71 72 71 69 67 65 64 62 60))
+</code></pre>
+
+<p>There are a couple of nice variations on this one:</p>
+
+<ul>
+  <li>
+    <p>replace the <code>(cdr plist)</code> with <code>(rotate plist -1)</code> to make it cycle through
+the pitches, but then go back to the start (have a think about what <code>rotate</code>
+does to convince yourself that this works)</p>
+  </li>
+  <li>
+    <p>you can re-trigger this temporal recursion several times, either with the same
+<code>plist</code>, or even with different <code>plists</code>—since all the temporal callback
+chains will be independent they’ll all just run nicely over the top of one
+another, which can lead to some interesting musical “layerings”</p>
+  </li>
+</ul>
+
+<h2 id="multi-laptop-extempore-clock-sync">multi-laptop Extempore clock sync</h2>
+
+<p>If you’re jamming with another Extempore laptop musician, you often want to make
+sure your tempos &amp; metronomes sync up. One way to do this is to use the topclock
+protocol (the name comes from <a href="https://toplap.org">TOPLAP</a>). You’ll need a
+network connection between all the machines—wired is best if you can manage
+it, or at least on a private-ish wifi LAN (you’ll probably have a bad time
+trying to do it over <em>ANU Secure</em>).</p>
+
+<p>There’s an example in <code>examples/core/topclock_metro.xtm</code> which will show you the details.</p>
+
+<p>The alternative (manual) way to sync up two laptops is to:</p>
+
+<ol>
+  <li>
+    <p>make sure you’re both using the same tempo:</p>
+
+    <pre><code class="language-extempore">(*metro* 'set-tempo 140) ;; or whatever tempo you like
+</code></pre>
+  </li>
+  <li>
+    <p>both starting “playing time”, i.e. something simple which is easy to listen
+to and feel the tempo</p>
+  </li>
+  <li>
+    <p>listening carefully, try and figure out if you’re <a href="https://www.youtube.com/watch?v=ZQ_6VUs2VCk">rushing or
+dragging</a>, and then executing the
+appropriate <code>*metro*</code> function call:</p>
+
+    <pre><code class="language-extempore">;; if you're rushing
+(*metro* 'pull)
+   
+;; if you're dragggin
+(*metro* 'push)
+</code></pre>
+    <p>Pros with this approach: no network connection required, and it’s usually not
+too tricky to get the timing close enough to jam together. Cons: it’s pretty
+manual (and requires some careful listening, which is a skill that takes time to
+master), and it also doesn’t help with getting the exact beat clock synced up
+(so that you’ll still have to be careful that e.g. your 4-beat bars line up, and
+you may have to keep fiddling with some offsets to make it all work).</p>
+  </li>
+</ol>
+
+<h2 id="applying-filters-to-a-sampler">applying filters to a sampler</h2>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:mb" role="doc-endnote">
       <p>to the <a href="https://www.youtube.com/watch?v=uf723IeStzc">world of the Mighty Boosh</a> <a href="#fnref:mb" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:little-schemer" role="doc-endnote">
+
+      <p>that’s not just an idiom, I’m actually thinking of a <a href="https://mitpress.mit.edu/books/little-schemer-fourth-edition">specific
+book</a> <a href="#fnref:little-schemer" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -471,8 +598,8 @@ example:</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>8e3220106</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/8e3220106/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
+	site revision <code>b63a1ab84</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/b63a1ab84/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>

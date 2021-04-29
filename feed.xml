@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-29T10:27:29+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC’21 + Synthposium: Connections announced for August 26-28</title><link href="https://benswift.me/blog/2021/04/29/acmc-21-synthposium-connections-announced-for-august-26-28/" rel="alternate" type="text/html" title="ACMC’21 + Synthposium: Connections announced for August 26-28" /><published>2021-04-29T00:00:00+10:00</published><updated>2021-04-29T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/29/acmc-21-synthposium-connections-announced-for-august-26-28</id><content type="html" xml:base="https://benswift.me/blog/2021/04/29/acmc-21-synthposium-connections-announced-for-august-26-28/">&lt;p&gt;Great news on the local computer music conference front: the &lt;a href=&quot;https://aim.edu.au&quot;&gt;Australian
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-30T09:57:46+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC’21 + Synthmoot: Connections announced for August 26-28</title><link href="https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28/" rel="alternate" type="text/html" title="ACMC’21 + Synthmoot: Connections announced for August 26-28" /><published>2021-04-29T00:00:00+10:00</published><updated>2021-04-29T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28</id><content type="html" xml:base="https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28/">&lt;p&gt;Great news on the local computer music conference front: the &lt;a href=&quot;https://aim.edu.au&quot;&gt;Australian
 Institute of Music&lt;/a&gt; is hosting the
 &lt;a href=&quot;https://computermusic.org.au&quot;&gt;ACMC&lt;/a&gt; conference in Sydney/Melbourne/online at
 the end of August ‘21. I’ll be there—and if you’re a
@@ -34,6 +34,10 @@ list&lt;/a&gt; (everyone else).&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#rel-for-relative-pitches&quot; id=&quot;markdown-toc-rel-for-relative-pitches&quot;&gt;&lt;code&gt;rel&lt;/code&gt; for relative pitches&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#nof-and-the-macros-vs-functions-distinction&quot; id=&quot;markdown-toc-nof-and-the-macros-vs-functions-distinction&quot;&gt;&lt;code&gt;nof&lt;/code&gt; and the macros vs functions distinction&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#quasiquote--vs-regular-quote-&quot; id=&quot;markdown-toc-quasiquote--vs-regular-quote-&quot;&gt;quasiquote (&lt;code&gt;`&lt;/code&gt;) vs regular quote (&lt;code&gt;&apos;&lt;/code&gt;)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#modulating-filter-or-other-params-over-time&quot; id=&quot;markdown-toc-modulating-filter-or-other-params-over-time&quot;&gt;modulating filter (or other) params over time&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#playing-a-loop-which-then-stops&quot; id=&quot;markdown-toc-playing-a-loop-which-then-stops&quot;&gt;playing a loop which then stops&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#multi-laptop-extempore-clock-sync&quot; id=&quot;markdown-toc-multi-laptop-extempore-clock-sync&quot;&gt;multi-laptop Extempore clock sync&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#applying-filters-to-a-sampler&quot; id=&quot;markdown-toc-applying-filters-to-a-sampler&quot;&gt;applying filters to a sampler&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
@@ -338,10 +342,133 @@ example:&lt;/p&gt;
 
 ;; result: (c3 (| | | | |) d3 e3)
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;modulating-filter-or-other-params-over-time&quot;&gt;modulating filter (or other) params over time&lt;/h2&gt;
+
+&lt;p&gt;One way to do it is show in the example file
+&lt;code&gt;examples/sharedsystem/analogue_synth_basics.xtm&lt;/code&gt;. Have a look around line &lt;code&gt;39&lt;/code&gt;,
+where it says:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; and now add a second pattern to &apos;sweep&apos; the filter
+(:&amp;gt; B 4 0 (set_filter_env syn1 40.0 100.0 (trir 0.0 1.0 1/32) 100.0) (nof 16 0))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;playing-a-loop-which-then-stops&quot;&gt;playing a loop which then stops&lt;/h2&gt;
+
+&lt;p&gt;The pattern language isn’t really designed for playing one (or two, or three, or
+&lt;em&gt;n&lt;/em&gt; for &lt;em&gt;n &amp;lt; ∞&lt;/em&gt;) shot loops. It’s really designed for things which will keep on
+looping until you stop the pattern.&lt;/p&gt;
+
+&lt;p&gt;If you want to play a sequence of events which runs for a while and then stops,
+then using a standard temporal recursion is probably best.&lt;/p&gt;
+
+&lt;p&gt;Here are a couple of examples. First, this recursion will keep playing the notes
+until the &lt;code&gt;pitch&lt;/code&gt; argument gets to &lt;code&gt;72&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(define (ascending-chromatic beat dur pitch)
+  (play syn1 pitch 80 dur)
+  (if (&amp;lt; pitch 72)
+      ;; note the `callback` is inside the `if`
+      (callback (*metro* (+ beat (* .5 dur))) &apos;ascending-chromatic (+ beat dur) dur
+                ;; pitch gets incremented by 1 in each subsequent callback
+                (+ pitch 1))))
+
+;; kick it off - note that we&apos;re passing the initial pitch argument
+(ascending-chromatic (*metro* &apos;get-beat 4) 1/4 60)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, both the “increment” part &lt;code&gt;(+ pitch 1)&lt;/code&gt; and the “stopping criteria” part
+(i.e. the &lt;code&gt;(if (&amp;lt; pitch 72) ...&lt;/code&gt;) are both just Scheme code, so it’s very
+flexible. You can handle those things however you like.&lt;/p&gt;
+
+&lt;p&gt;One other approach to doing this is a recursion approach straight out of the
+functional programming handbook&lt;sup id=&quot;fnref:little-schemer&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:little-schemer&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, just with a temporal twist.
+The key idea: start with a list, recurring on the &lt;code&gt;cdr&lt;/code&gt; (i.e. the tail of the
+list) each time until it’s empty, then stopping.&lt;/p&gt;
+
+&lt;p&gt;So, here’s a way of playing a scale—ascending, then descending—then stopping.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(define (ascending-descending-scale beat dur plist)
+  ;; note the (car plist) since plist is a list, not a number
+  (play syn1 (car plist) 80 dur)
+  (if (not (null? plist))
+      (callback (*metro* (+ beat (* .5 dur))) &apos;ascending-descending-scale (+ beat dur) dur
+                (cdr plist))))
+
+(ascending-descending-scale (*metro* &apos;get-beat 4) 1/4
+                            &apos;(60 62 64 65 67 69 71 72 71 69 67 65 64 62 60))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are a couple of nice variations on this one:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;replace the &lt;code&gt;(cdr plist)&lt;/code&gt; with &lt;code&gt;(rotate plist -1)&lt;/code&gt; to make it cycle through
+the pitches, but then go back to the start (have a think about what &lt;code&gt;rotate&lt;/code&gt;
+does to convince yourself that this works)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;you can re-trigger this temporal recursion several times, either with the same
+&lt;code&gt;plist&lt;/code&gt;, or even with different &lt;code&gt;plists&lt;/code&gt;—since all the temporal callback
+chains will be independent they’ll all just run nicely over the top of one
+another, which can lead to some interesting musical “layerings”&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;multi-laptop-extempore-clock-sync&quot;&gt;multi-laptop Extempore clock sync&lt;/h2&gt;
+
+&lt;p&gt;If you’re jamming with another Extempore laptop musician, you often want to make
+sure your tempos &amp;amp; metronomes sync up. One way to do this is to use the topclock
+protocol (the name comes from &lt;a href=&quot;https://toplap.org&quot;&gt;TOPLAP&lt;/a&gt;). You’ll need a
+network connection between all the machines—wired is best if you can manage
+it, or at least on a private-ish wifi LAN (you’ll probably have a bad time
+trying to do it over &lt;em&gt;ANU Secure&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;There’s an example in &lt;code&gt;examples/core/topclock_metro.xtm&lt;/code&gt; which will show you the details.&lt;/p&gt;
+
+&lt;p&gt;The alternative (manual) way to sync up two laptops is to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;make sure you’re both using the same tempo:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(*metro* &apos;set-tempo 140) ;; or whatever tempo you like
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;both starting “playing time”, i.e. something simple which is easy to listen
+to and feel the tempo&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;listening carefully, try and figure out if you’re &lt;a href=&quot;https://www.youtube.com/watch?v=ZQ_6VUs2VCk&quot;&gt;rushing or
+dragging&lt;/a&gt;, and then executing the
+appropriate &lt;code&gt;*metro*&lt;/code&gt; function call:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; if you&apos;re rushing
+(*metro* &apos;pull)
+   
+;; if you&apos;re dragggin
+(*metro* &apos;push)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;Pros with this approach: no network connection required, and it’s usually not
+too tricky to get the timing close enough to jam together. Cons: it’s pretty
+manual (and requires some careful listening, which is a skill that takes time to
+master), and it also doesn’t help with getting the exact beat clock synced up
+(so that you’ll still have to be careful that e.g. your 4-beat bars line up, and
+you may have to keep fiddling with some offsets to make it all work).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;applying-filters-to-a-sampler&quot;&gt;applying filters to a sampler&lt;/h2&gt;
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:mb&quot; role=&quot;doc-endnote&quot;&gt;
       &lt;p&gt;to the &lt;a href=&quot;https://www.youtube.com/watch?v=uf723IeStzc&quot;&gt;world of the Mighty Boosh&lt;/a&gt; &lt;a href=&quot;#fnref:mb&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:little-schemer&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;that’s not just an idiom, I’m actually thinking of a &lt;a href=&quot;https://mitpress.mit.edu/books/little-schemer-fourth-edition&quot;&gt;specific
+book&lt;/a&gt; &lt;a href=&quot;#fnref:little-schemer&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><category term="lens" /><summary type="html">Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).</summary></entry><entry><title type="html">benswift.me analytics/tracking update</title><link href="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/" rel="alternate" type="text/html" title="benswift.me analytics/tracking update" /><published>2021-04-08T00:00:00+10:00</published><updated>2021-04-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update</id><content type="html" xml:base="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/">&lt;p&gt;I haven’t had any sort of client-side analytics (e.g. Google Analytics) on
