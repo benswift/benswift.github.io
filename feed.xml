@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-29T08:46:52+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A short list of Extempore livecoding tricks</title><link href="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/" rel="alternate" type="text/html" title="A short list of Extempore livecoding tricks" /><published>2021-04-23T00:00:00+10:00</published><updated>2021-04-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks</id><content type="html" xml:base="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/">&lt;p&gt;Yesterday’s &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;LENS&lt;/a&gt; class
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-04-29T10:27:29+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">ACMC’21 + Synthposium: Connections announced for August 26-28</title><link href="https://benswift.me/blog/2021/04/29/acmc-21-synthposium-connections-announced-for-august-26-28/" rel="alternate" type="text/html" title="ACMC’21 + Synthposium: Connections announced for August 26-28" /><published>2021-04-29T00:00:00+10:00</published><updated>2021-04-29T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/29/acmc-21-synthposium-connections-announced-for-august-26-28</id><content type="html" xml:base="https://benswift.me/blog/2021/04/29/acmc-21-synthposium-connections-announced-for-august-26-28/">&lt;p&gt;Great news on the local computer music conference front: the &lt;a href=&quot;https://aim.edu.au&quot;&gt;Australian
+Institute of Music&lt;/a&gt; is hosting the
+&lt;a href=&quot;https://computermusic.org.au&quot;&gt;ACMC&lt;/a&gt; conference in Sydney/Melbourne/online at
+the end of August ‘21. I’ll be there—and if you’re a
+computers-and-music-adjacent artist then you should think about submitting a
+paper, artist talk or performance as well.&lt;/p&gt;
+
+&lt;p&gt;If you’re not sure if this is your scene, then I’d &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;love to chat to
+you&lt;/a&gt; and convince you that it might be—we’re
+trying to remove the stuffy academic stigma that sometimes hangs around
+conferences like this (and also making it super-cheap for indies to attend).&lt;/p&gt;
+
+&lt;p&gt;For more details, see the &lt;a href=&quot;https://www.acmc21.art&quot;&gt;conference website&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="acmc" /><category term="livecoding" /><summary type="html">Great news on the local computer music conference front: the Australian Institute of Music is hosting the ACMC conference in Sydney/Melbourne/online at the end of August ‘21. I’ll be there—and if you’re a computers-and-music-adjacent artist then you should think about submitting a paper, artist talk or performance as well.</summary></entry><entry><title type="html">A short list of Extempore livecoding tricks</title><link href="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/" rel="alternate" type="text/html" title="A short list of Extempore livecoding tricks" /><published>2021-04-23T00:00:00+10:00</published><updated>2021-04-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks</id><content type="html" xml:base="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/">&lt;p&gt;Yesterday’s &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;LENS&lt;/a&gt; class
 discussion turned into an &lt;a href=&quot;https://www.reddit.com/r/AMA/&quot;&gt;AMA&lt;/a&gt; of how I do
 certain things when I’m livecoding in Extempore. As promised, here’s a blog post
 where I’ve put together all of the things we’ve discussed (with a bit more
@@ -10351,7 +10363,111 @@ for the canonical version. ABS people, if I’ve done something naughty with
 this publicly-available data then please let me know and I’ll make it right. &lt;a href=&quot;#fnref:hosting&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="research" /><summary type="html">The Australian Research Council (well, technically the Australian Bureau of Statistics and their NZ counterparts) have updated the Field of Research codes which Aussie/NZ academics use to classify their work.[^interdisciplinary-complaint]</summary></entry><entry><title type="html">How to cite code? Leading by example</title><link href="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/" rel="alternate" type="text/html" title="How to cite code? Leading by example" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/">&lt;p&gt;In our &lt;a href=&quot;https://cs.anu.edu.au/hub/reading-group/&quot;&gt;Computing Education Reading
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="research" /><summary type="html">The Australian Research Council (well, technically the Australian Bureau of Statistics and their NZ counterparts) have updated the Field of Research codes which Aussie/NZ academics use to classify their work.[^interdisciplinary-complaint]</summary></entry><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
+for dissertations and other reports, which is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;complicated (more than 20 separate files!)&lt;/li&gt;
+  &lt;li&gt;buggy; (by default it uses multiple conflicting packages, so that even a
+“clean” build produces a bunch of warnings)&lt;/li&gt;
+  &lt;li&gt;for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
+bummer (even if it is probably a worthwhile skill in the long haul)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When I wrote my PhD thesis back in the day I created my &lt;a href=&quot;https://github.com/benswift/academic-thesis-template&quot;&gt;own LaTeX
+template&lt;/a&gt;. Since then,
+I’ve been doing more and more of my writing in
+&lt;a href=&quot;https://www.markdownguide.org&quot;&gt;markdown&lt;/a&gt; rather than LaTeX, and I really enjoy
+the simplicity. You lose a little bit of control, but being limited to the
+features that markdown offers is actually really helpful if you’re as prone to
+yak shaving as I am.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-simple-pandoc-powered-markdown--pdf-document-template&quot;&gt;A simple Pandoc-powered markdown ⇒ pdf document template&lt;/h2&gt;
+
+&lt;p&gt;Because academic publishing is still primarily a world of bland simulacra, being
+able to create a &lt;code&gt;.pdf&lt;/code&gt; of one’s writing is essential. When writing in markdown
+in my &lt;a href=&quot;https://www.spacemacs.org&quot;&gt;favourite text editor&lt;/a&gt; I can turn it into a
+pdf using Pandoc. As &lt;a href=&quot;https://jeffreymoro.com/blog/2020-09-21-how-i-write/&quot;&gt;Jeffrey Moro so eloquently puts
+it&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;pandoc is amazing. I basically think it redeems computers. It can take
+basically any kind of text and turn it into other kinds of text. In my
+situation, it turns markdown files into…pretty much anything.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Still, getting from “writing my notes in a markdown file” to “having a
+nice-looking pdf for submission/printing” still has a few magical steps, so I’ve
+created a template project on GitHub which puts these pieces together in a
+sensible way. There are two “flavours”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/master&quot;&gt;regular
+version&lt;/a&gt;
+(when you don’t need academic citations)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex&quot;&gt;bibtex
+version&lt;/a&gt;
+(when you do need academic citations)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m pumped to be able to share this template with the world under a permissive
+MIT licence. The project &lt;code&gt;README.md&lt;/code&gt; has all the details, but the main goodies
+this project provides are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;a &lt;code&gt;Makefile&lt;/code&gt; so that you don’t have to remember the arcane Pandoc CLI options
+for creating nice pdfs (via LaTeX)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a &lt;code&gt;pando-template.tex&lt;/code&gt; which has some (I think) sane defaults for the way the
+output pdf will look, but more importantly is easily there so that you can
+hack it the way you like it (which is sometimes challenging when working with
+Pandoc)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(on the &lt;code&gt;bibtex&lt;/code&gt; branch) a working example of how to include citations (from a
+BibTeX &lt;code&gt;.bib&lt;/code&gt; file, which you can create &amp;amp; manage however you like)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You’ll still need LaTeX installed on your machine (because that’s what it uses
+under the hood) but one other nice thing is that Pandoc handles all the
+&lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;bibtex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt; shenanigans for you (without
+needing external scripts like &lt;code&gt;LaTeXMk&lt;/code&gt;). If there are errors in your markup,
+then the error messages can still be a bit inscrutable, but no worse than
+regular LaTeX ones (maybe even a bit nicer because Pandoc tries to trim the
+irrelevant guff and just provide the actual error message).&lt;/p&gt;
+
+&lt;h2 id=&quot;inline-latex-for-greater-control&quot;&gt;Inline LaTeX for greater control&lt;/h2&gt;
+
+&lt;p&gt;One thing which is surprisingly useful is the way that Pandoc passes latex
+fragments “straight through”. As per the &lt;code&gt;README.md&lt;/code&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This template allows you to write most of your content in markdown, but then
+“drop down” into LaTeX when you need more control over the output (since
+pandoc passes raw LaTeX code straight through). This is basically the same
+workflow for which markdown was invented, except in that case for HTML.&lt;/p&gt;
+
+  &lt;p&gt;If the output you want is going to require lots of very specific control over
+the layout then you’re probably better off just writing in LaTeX directly, but
+if you want to mostly focus on the content but occasionally have more control
+over the way it’s displayed, sprinkling your markdown files with LaTeX can be
+a useful option.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I find myself using this a fair bit, and it’s still nicer than having to work in
+LaTeX directly. One recent example: I needed some coloured boxes around my text,
+and so by including &lt;code&gt;\usepackage{tcolorbox}&lt;/code&gt; in the &lt;code&gt;pandoc-template.tex&lt;/code&gt; I was
+able to use the &lt;code&gt;\begin{tcolorbox} ... \end{tcolorbox}&lt;/code&gt; environment in my &lt;code&gt;.md&lt;/code&gt;
+file, and got the nice coloured boxes in the pdf output.&lt;/p&gt;
+
+&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports, which is:</summary></entry><entry><title type="html">How to cite code? Leading by example</title><link href="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/" rel="alternate" type="text/html" title="How to cite code? Leading by example" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/how-to-cite-code-leading-by-example/">&lt;p&gt;In our &lt;a href=&quot;https://cs.anu.edu.au/hub/reading-group/&quot;&gt;Computing Education Reading
 Group&lt;/a&gt; yesterday we looked at Sheard
 et. al.’s paper on &lt;a href=&quot;https://doi.org/10.1145/3059009.3059064&quot;&gt;&lt;em&gt;Strategies for Maintaining Academic Integrity in
 First-Year&lt;/em&gt;&lt;/a&gt; from ITiCSE ‘17. It was a
@@ -10500,111 +10616,7 @@ the “whoops, you forgot to commit the file” problems, as well as minimising
 any manual “data cleaning” that my tutors &amp;amp; I have to do post-submission. &lt;a href=&quot;#fnref:autograding&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In our Computing Education Reading Group yesterday we looked at Sheard et. al.’s paper on Strategies for Maintaining Academic Integrity in First-Year from ITiCSE ‘17. It was a great discussion, with lots of new questions raised as directions for future work.</summary></entry><entry><title type="html">Simple pdf papers/reports with markdown, pandoc and bibtex</title><link href="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/" rel="alternate" type="text/html" title="Simple pdf papers/reports with markdown, pandoc and bibtex" /><published>2021-03-16T00:00:00+11:00</published><updated>2021-03-16T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex</id><content type="html" xml:base="https://benswift.me/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex/">&lt;p&gt;I’ve long raged against the machine of my institution’s default LaTeX template
-for dissertations and other reports, which is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;complicated (more than 20 separate files!)&lt;/li&gt;
-  &lt;li&gt;buggy; (by default it uses multiple conflicting packages, so that even a
-“clean” build produces a bunch of warnings)&lt;/li&gt;
-  &lt;li&gt;for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
-bummer (even if it is probably a worthwhile skill in the long haul)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When I wrote my PhD thesis back in the day I created my &lt;a href=&quot;https://github.com/benswift/academic-thesis-template&quot;&gt;own LaTeX
-template&lt;/a&gt;. Since then,
-I’ve been doing more and more of my writing in
-&lt;a href=&quot;https://www.markdownguide.org&quot;&gt;markdown&lt;/a&gt; rather than LaTeX, and I really enjoy
-the simplicity. You lose a little bit of control, but being limited to the
-features that markdown offers is actually really helpful if you’re as prone to
-yak shaving as I am.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-simple-pandoc-powered-markdown--pdf-document-template&quot;&gt;A simple Pandoc-powered markdown ⇒ pdf document template&lt;/h2&gt;
-
-&lt;p&gt;Because academic publishing is still primarily a world of bland simulacra, being
-able to create a &lt;code&gt;.pdf&lt;/code&gt; of one’s writing is essential. When writing in markdown
-in my &lt;a href=&quot;https://www.spacemacs.org&quot;&gt;favourite text editor&lt;/a&gt; I can turn it into a
-pdf using Pandoc. As &lt;a href=&quot;https://jeffreymoro.com/blog/2020-09-21-how-i-write/&quot;&gt;Jeffrey Moro so eloquently puts
-it&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;pandoc is amazing. I basically think it redeems computers. It can take
-basically any kind of text and turn it into other kinds of text. In my
-situation, it turns markdown files into…pretty much anything.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Still, getting from “writing my notes in a markdown file” to “having a
-nice-looking pdf for submission/printing” still has a few magical steps, so I’ve
-created a template project on GitHub which puts these pieces together in a
-sensible way. There are two “flavours”:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/master&quot;&gt;regular
-version&lt;/a&gt;
-(when you don’t need academic citations)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the &lt;a href=&quot;https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex&quot;&gt;bibtex
-version&lt;/a&gt;
-(when you do need academic citations)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I’m pumped to be able to share this template with the world under a permissive
-MIT licence. The project &lt;code&gt;README.md&lt;/code&gt; has all the details, but the main goodies
-this project provides are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;a &lt;code&gt;Makefile&lt;/code&gt; so that you don’t have to remember the arcane Pandoc CLI options
-for creating nice pdfs (via LaTeX)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a &lt;code&gt;pando-template.tex&lt;/code&gt; which has some (I think) sane defaults for the way the
-output pdf will look, but more importantly is easily there so that you can
-hack it the way you like it (which is sometimes challenging when working with
-Pandoc)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(on the &lt;code&gt;bibtex&lt;/code&gt; branch) a working example of how to include citations (from a
-BibTeX &lt;code&gt;.bib&lt;/code&gt; file, which you can create &amp;amp; manage however you like)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You’ll still need LaTeX installed on your machine (because that’s what it uses
-under the hood) but one other nice thing is that Pandoc handles all the
-&lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt;, &lt;code&gt;bibtex&lt;/code&gt;, &lt;code&gt;pdflatex&lt;/code&gt; shenanigans for you (without
-needing external scripts like &lt;code&gt;LaTeXMk&lt;/code&gt;). If there are errors in your markup,
-then the error messages can still be a bit inscrutable, but no worse than
-regular LaTeX ones (maybe even a bit nicer because Pandoc tries to trim the
-irrelevant guff and just provide the actual error message).&lt;/p&gt;
-
-&lt;h2 id=&quot;inline-latex-for-greater-control&quot;&gt;Inline LaTeX for greater control&lt;/h2&gt;
-
-&lt;p&gt;One thing which is surprisingly useful is the way that Pandoc passes latex
-fragments “straight through”. As per the &lt;code&gt;README.md&lt;/code&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This template allows you to write most of your content in markdown, but then
-“drop down” into LaTeX when you need more control over the output (since
-pandoc passes raw LaTeX code straight through). This is basically the same
-workflow for which markdown was invented, except in that case for HTML.&lt;/p&gt;
-
-  &lt;p&gt;If the output you want is going to require lots of very specific control over
-the layout then you’re probably better off just writing in LaTeX directly, but
-if you want to mostly focus on the content but occasionally have more control
-over the way it’s displayed, sprinkling your markdown files with LaTeX can be
-a useful option.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I find myself using this a fair bit, and it’s still nicer than having to work in
-LaTeX directly. One recent example: I needed some coloured boxes around my text,
-and so by including &lt;code&gt;\usepackage{tcolorbox}&lt;/code&gt; in the &lt;code&gt;pandoc-template.tex&lt;/code&gt; I was
-able to use the &lt;code&gt;\begin{tcolorbox} ... \end{tcolorbox}&lt;/code&gt; environment in my &lt;code&gt;.md&lt;/code&gt;
-file, and got the nice coloured boxes in the pdf output.&lt;/p&gt;
-
-&lt;p&gt;So, go forth, write, and produce nice pdfs!&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="tools" /><summary type="html">I’ve long raged against the machine of my institution’s default LaTeX template for dissertations and other reports, which is:</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In our Computing Education Reading Group yesterday we looked at Sheard et. al.’s paper on Strategies for Maintaining Academic Integrity in First-Year from ITiCSE ‘17. It was a great discussion, with lots of new questions raised as directions for future work.</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
 Learning and
 Teaching&lt;/a&gt;,
 and they asked if they could syndicate it on their Interact blog—so you can
@@ -10920,56 +10932,4 @@ convenience I put it in a separate &lt;code&gt;.el&lt;/code&gt; file which I loa
 &lt;p&gt;Once I’ve used this system a bit longer and ironed out any kinks I might submit
 a dedicated org-roam-bibtex layer to Spacemacs (or add it to the org layer). But
 for now I’ll just leave it here in case any other Spacemacs users are wondering
-how I did it.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="emacs" /><summary type="html">I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp;amp; linking the ideas together.</summary></entry><entry><title type="html">Student project: animated 3D code rendering engine</title><link href="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/" rel="alternate" type="text/html" title="Student project: animated 3D code rendering engine" /><published>2020-12-11T00:00:00+11:00</published><updated>2020-12-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine</id><content type="html" xml:base="https://benswift.me/blog/2020/12/11/student-project-animated-3d-code-rendering-engine/">&lt;p&gt;I’m trying to get better at writing down potential student project ideas as they
-come to me. For the moment, I’m doing this on my blog using the
-&lt;a href=&quot;https://benswift.me/blog/tag/student-project/&quot;&gt;&lt;code&gt;student-project&lt;/code&gt;&lt;/a&gt; tag.&lt;/p&gt;
-
-&lt;p&gt;As a &lt;a href=&quot;//livecoding/&quot;&gt;livecoder&lt;/a&gt; I care more than most about
-how my code looks on the screen. While I’ve &lt;a href=&quot;https://benswift.me/research/#swiftVisualCodeAnnotations2013&quot;&gt;written in the
-past&lt;/a&gt; about the
-potential of animated “tooltip” style code annotations, I’d love to have more
-detailed (parametric) control over the display of the code/text itself,
-especially in a “handwritten” style. Being able to “write” the code in real-time
-in sync with the music in a livecoding setup would look super cool, and I
-&lt;sup id=&quot;fnref:unproven-hypothesis&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:unproven-hypothesis&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; think that it might even help folks follow what’s going
-on in terms of which bits of code are responsible for which parts of the music.&lt;/p&gt;
-
-&lt;p&gt;Making this happen would require:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;a handwriting synthesis model (something like &lt;a href=&quot;https://github.com/sjvasquez/handwriting-synthesis&quot;&gt;this one by Alex
-Graves&lt;/a&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;(optionally) a 3D version (which would give output like
-&lt;a href=&quot;https://www.youtube.com/watch?v=rA3QZVEfGpc&quot;&gt;this&lt;/a&gt;, but automated rather than
-manual)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a way of applying keyword colouring &amp;amp; other standard code display niceties
-(because it’d be nice to not &lt;em&gt;lose&lt;/em&gt; the things that a regular old IDE/text
-editor can do)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;a protocol for a livecoding IDE to communicate (including timing information)
-with this code synthesis engine so that the code would be displayed/drawn (and
-re-drawn) in response to the music in funky ways&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;…and it’d all have to run in real-time during a performance (although it
-needn’t be running on the livecoder’s machine—as mentioned above it’d ideally
-use some sort of &lt;a href=&quot;https://nrepl.org/nrepl/index.html&quot;&gt;nrepl&lt;/a&gt;-style protocol and
-could be done over the network).&lt;/p&gt;
-
-&lt;p&gt;If you’re an ANU student and you want to do a research project along these lines
-with the &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/&quot;&gt;c/c/c studio&lt;/a&gt;, then
-&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;drop me a line&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:unproven-hypothesis&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;I have no evidence for this… but I’d like to try and get some. &lt;a href=&quot;#fnref:unproven-hypothesis&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="student-project" /></entry></feed>
+how I did it.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="research" /><category term="emacs" /><summary type="html">I’ve always had a decent memory, and so I’ve never really had a formal system for keeping track of who said what and in which paper. When it comes time to write something of my own I end up mostly just going from memory and re-google-scholaring things from scratch (often finding later that I already had that paper in my Zotero database already). As I get older my memory isn’t as sharp, so I think it’s time to use a more systematic workflow for writing—keeping notes about stuff I’ve read &amp;amp; linking the ideas together.</summary></entry></feed>
