@@ -321,3 +321,119 @@ example:
 
 ;; result: (c3 (| | | | |) d3 e3)
 ```
+
+## modulating filter (or other) params over time
+
+One way to do it is show in the example file
+`examples/sharedsystem/analogue_synth_basics.xtm`. Have a look around line `39`,
+where it says:
+
+```extempore
+;; and now add a second pattern to 'sweep' the filter
+(:> B 4 0 (set_filter_env syn1 40.0 100.0 (trir 0.0 1.0 1/32) 100.0) (nof 16 0))
+```
+
+## playing a loop which then stops
+
+The pattern language isn't really designed for playing one (or two, or three, or
+_n_ for _n < ∞_) shot loops. It's really designed for things which will keep on
+looping until you stop the pattern.
+
+If you want to play a sequence of events which runs for a while and then stops,
+then using a standard temporal recursion is probably best.
+
+Here are a couple of examples. First, this recursion will keep playing the notes
+until the `pitch` argument gets to `72`.
+
+```extempore
+(define (ascending-chromatic beat dur pitch)
+  (play syn1 pitch 80 dur)
+  (if (< pitch 72)
+      ;; note the `callback` is inside the `if`
+      (callback (*metro* (+ beat (* .5 dur))) 'ascending-chromatic (+ beat dur) dur
+                ;; pitch gets incremented by 1 in each subsequent callback
+                (+ pitch 1))))
+
+;; kick it off - note that we're passing the initial pitch argument
+(ascending-chromatic (*metro* 'get-beat 4) 1/4 60)
+```
+
+Now, both the "increment" part `(+ pitch 1)` and the "stopping criteria" part
+(i.e. the `(if (< pitch 72) ...`) are both just Scheme code, so it's very
+flexible. You can handle those things however you like.
+
+One other approach to doing this is a recursion approach straight out of the
+functional programming handbook[^little-schemer], just with a temporal twist.
+The key idea: start with a list, recurring on the `cdr` (i.e. the tail of the
+list) each time until it's empty, then stopping.
+
+So, here's a way of playing a scale---ascending, then descending---then stopping.
+
+```extempore
+(define (ascending-descending-scale beat dur plist)
+  ;; note the (car plist) since plist is a list, not a number
+  (play syn1 (car plist) 80 dur)
+  (if (not (null? plist))
+      (callback (*metro* (+ beat (* .5 dur))) 'ascending-descending-scale (+ beat dur) dur
+                (cdr plist))))
+
+(ascending-descending-scale (*metro* 'get-beat 4) 1/4
+                            '(60 62 64 65 67 69 71 72 71 69 67 65 64 62 60))
+```
+
+There are a couple of nice variations on this one:
+
+- replace the `(cdr plist)` with `(rotate plist -1)` to make it cycle through
+  the pitches, but then go back to the start (have a think about what `rotate`
+  does to convince yourself that this works)
+
+- you can re-trigger this temporal recursion several times, either with the same
+  `plist`, or even with different `plists`---since all the temporal callback
+  chains will be independent they'll all just run nicely over the top of one
+  another, which can lead to some interesting musical "layerings"
+
+[^little-schemer]:
+    that's not just an idiom, I'm actually thinking of a [specific
+    book](https://mitpress.mit.edu/books/little-schemer-fourth-edition)
+
+## multi-laptop Extempore clock sync
+
+If you're jamming with another Extempore laptop musician, you often want to make
+sure your tempos & metronomes sync up. One way to do this is to use the topclock
+protocol (the name comes from [TOPLAP](https://toplap.org)). You'll need a
+network connection between all the machines---wired is best if you can manage
+it, or at least on a private-ish wifi LAN (you'll probably have a bad time
+trying to do it over _ANU Secure_).
+
+There's an example in `examples/core/topclock_metro.xtm` which will show you the details.
+
+The alternative (manual) way to sync up two laptops is to:
+
+1. make sure you're both using the same tempo:
+
+   ```extempore
+   (*metro* 'set-tempo 140) ;; or whatever tempo you like
+   ```
+
+2. both starting "playing time", i.e. something simple which is easy to listen
+   to and feel the tempo
+
+3. listening carefully, try and figure out if you're [rushing or
+   dragging](https://www.youtube.com/watch?v=ZQ_6VUs2VCk), and then executing the
+   appropriate `*metro*` function call:
+
+   ```extempore
+   ;; if you're rushing
+   (*metro* 'pull)
+   
+   ;; if you're dragggin
+   (*metro* 'push)
+   ```
+Pros with this approach: no network connection required, and it's usually not
+too tricky to get the timing close enough to jam together. Cons: it's pretty
+manual (and requires some careful listening, which is a skill that takes time to
+master), and it also doesn't help with getting the exact beat clock synced up
+(so that you'll still have to be careful that e.g. your 4-beat bars line up, and
+you may have to keep fiddling with some offsets to make it all work).
+
+## applying filters to a sampler
