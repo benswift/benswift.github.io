@@ -7,11 +7,12 @@ pagination:
 ---
 
 This is my blog. Sometimes in these posts I'll talk about research or art
-projects I'm involved with, although I also blog about my research on the [c/c/c
-blog](https://cs.anu.edu.au/code-creativity-culture/news/). Sometimes I'll just
-ramble about other stuff which is keeping me up at night. If you're interested
-on blog posts only on a certain topic, there's a [tags index]({%
-link blog-tag-index.md %}).
+projects I'm involved with, sometimes I'll just ramble about other stuff which
+is keeping me up at night. If you're interested in a certain topic, click on a
+tag to see just the posts with that tag:
+
+{% assign all_tags = site.posts | map: "tags" | uniq | sort %}
+{% include taglist.html tags = all_tags %}
 
 If anything here sparks your interest (or your ire!) then get in touch
 ([twitter](https://twitter.com/benswift), [email](mailto:ben.swift@anu.edu.au))
