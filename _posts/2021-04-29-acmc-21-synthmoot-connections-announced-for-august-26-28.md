@@ -1,5 +1,5 @@
 ---
-title: "ACMC'21 + Synthposium: Connections announced for August 26-28"
+title: "ACMC'21 + Synthmoot: Connections announced for August 26-28"
 tags: acmc livecoding
 ---
 
