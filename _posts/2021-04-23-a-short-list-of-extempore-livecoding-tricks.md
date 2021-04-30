@@ -325,7 +325,7 @@ example:
 ## modulating filter (or other) params over time
 
 One way to do it is show in the example file
-`examples/sharedsystem/analogue_synth_basics.xtm`. Have a look around line `39`,
+`examples/sharedsystem/analogue_synth_basics.xtm`. Have a look around line 39,
 where it says:
 
 ```extempore
@@ -388,7 +388,7 @@ There are a couple of nice variations on this one:
   does to convince yourself that this works)
 
 - you can re-trigger this temporal recursion several times, either with the same
-  `plist`, or even with different `plists`---since all the temporal callback
+  `plist`, or even with different `plist`s---since all the temporal callback
   chains will be independent they'll all just run nicely over the top of one
   another, which can lead to some interesting musical "layerings"
 
@@ -429,11 +429,10 @@ The alternative (manual) way to sync up two laptops is to:
    ;; if you're dragggin
    (*metro* 'push)
    ```
+
 Pros with this approach: no network connection required, and it's usually not
 too tricky to get the timing close enough to jam together. Cons: it's pretty
 manual (and requires some careful listening, which is a skill that takes time to
 master), and it also doesn't help with getting the exact beat clock synced up
 (so that you'll still have to be careful that e.g. your 4-beat bars line up, and
 you may have to keep fiddling with some offsets to make it all work).
-
-## applying filters to a sampler
