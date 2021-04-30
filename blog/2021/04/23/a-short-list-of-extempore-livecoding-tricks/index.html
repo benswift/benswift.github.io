@@ -114,7 +114,6 @@ list</a> (everyone else).</p>
   <li><a href="#modulating-filter-or-other-params-over-time" id="markdown-toc-modulating-filter-or-other-params-over-time">modulating filter (or other) params over time</a></li>
   <li><a href="#playing-a-loop-which-then-stops" id="markdown-toc-playing-a-loop-which-then-stops">playing a loop which then stops</a></li>
   <li><a href="#multi-laptop-extempore-clock-sync" id="markdown-toc-multi-laptop-extempore-clock-sync">multi-laptop Extempore clock sync</a></li>
-  <li><a href="#applying-filters-to-a-sampler" id="markdown-toc-applying-filters-to-a-sampler">applying filters to a sampler</a></li>
 </ul>
 
 </div>
@@ -423,7 +422,7 @@ example:</p>
 <h2 id="modulating-filter-or-other-params-over-time">modulating filter (or other) params over time</h2>
 
 <p>One way to do it is show in the example file
-<code>examples/sharedsystem/analogue_synth_basics.xtm</code>. Have a look around line <code>39</code>,
+<code>examples/sharedsystem/analogue_synth_basics.xtm</code>. Have a look around line 39,
 where it says:</p>
 
 <pre><code class="language-extempore">;; and now add a second pattern to 'sweep' the filter
@@ -486,7 +485,7 @@ does to convince yourself that this works)</p>
   </li>
   <li>
     <p>you can re-trigger this temporal recursion several times, either with the same
-<code>plist</code>, or even with different <code>plists</code>—since all the temporal callback
+<code>plist</code>, or even with different <code>plist</code>s—since all the temporal callback
 chains will be independent they’ll all just run nicely over the top of one
 another, which can lead to some interesting musical “layerings”</p>
   </li>
@@ -527,16 +526,15 @@ appropriate <code>*metro*</code> function call:</p>
 ;; if you're dragggin
 (*metro* 'push)
 </code></pre>
-    <p>Pros with this approach: no network connection required, and it’s usually not
+  </li>
+</ol>
+
+<p>Pros with this approach: no network connection required, and it’s usually not
 too tricky to get the timing close enough to jam together. Cons: it’s pretty
 manual (and requires some careful listening, which is a skill that takes time to
 master), and it also doesn’t help with getting the exact beat clock synced up
 (so that you’ll still have to be careful that e.g. your 4-beat bars line up, and
 you may have to keep fiddling with some offsets to make it all work).</p>
-  </li>
-</ol>
-
-<h2 id="applying-filters-to-a-sampler">applying filters to a sampler</h2>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:mb" role="doc-endnote">
@@ -598,8 +596,8 @@ book</a> <a href="#fnref:little-schemer" class="reversefootnote" role="doc-back
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>b63a1ab84</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/b63a1ab84/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
+	site revision <code>a4f6ae1db</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/a4f6ae1db/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
