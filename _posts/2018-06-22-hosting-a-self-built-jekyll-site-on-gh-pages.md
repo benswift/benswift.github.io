@@ -2,7 +2,7 @@
 layout: post
 title: Hosting a self-built jekyll site on GH pages
 date: 2018-06-22 10:40
-tags: meta web
+tags: web
 ---
 
 This blog is built from [markdown](http://commonmark.org/help/) files using

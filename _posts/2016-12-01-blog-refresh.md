@@ -1,6 +1,6 @@
 ---
 title: Blog refresh
-tags: meta web
+tags: web
 ---
 
 Another year, and another blog refresh. It's still a clojure-powered static site

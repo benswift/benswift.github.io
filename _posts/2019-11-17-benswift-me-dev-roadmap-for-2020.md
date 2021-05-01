@@ -1,6 +1,6 @@
 ---
 title: benswift.me dev roadmap for 2020
-tags: meta web
+tags: web
 ---
 
 As a developer of web tech curricula (specifically 2D graphics & interaction

@@ -1,6 +1,6 @@
 ---
 title: benswift.me analytics/tracking update
-tags: meta web
+tags: web
 ---
 
 I haven't had any sort of client-side analytics (e.g. Google Analytics) on
