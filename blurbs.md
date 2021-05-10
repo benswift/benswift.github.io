@@ -11,8 +11,8 @@ to do that then I'd appreciate having a discussion with you about it first :)
 
 ## ~40 words
 
-I'm an academic, educator, artist and maker of open source tools for creative
-computing. I'm always looking for ways to talk about the way that code
+Ben Swift an academic, educator, artist and maker of open source tools for
+creative computing. He's always looking for ways to talk about the way that code
 (software), creativity (especially the arts) and culture (life) intersect in
 today's world.
 
