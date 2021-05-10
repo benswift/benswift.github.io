@@ -436,3 +436,11 @@ manual (and requires some careful listening, which is a skill that takes time to
 master), and it also doesn't help with getting the exact beat clock synced up
 (so that you'll still have to be careful that e.g. your 4-beat bars line up, and
 you may have to keep fiddling with some offsets to make it all work).
+
+## Selecting the correct audio device
+
+We discussed this during the demo day class, but you should visit the [doco
+website](https://extemporelang.github.io/docs/overview/quickstart/#no-sound-check-your-audio-device)
+to see how to do it. The tip about using `--device-name` instead of `--device`
+is particularly good advice when you're trying to bump in quickly in a gig
+situation.
