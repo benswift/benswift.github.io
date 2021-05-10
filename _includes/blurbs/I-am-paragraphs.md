@@ -1,4 +1,7 @@
-I am an internationally-recognised interdisciplinary
+{% assign fp = include.first-person | default: true %}
+
+{% if fp %}I am{% else %}Ben Swift is{% endif %} an internationally-recognised
+interdisciplinary
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ) and
 electronic/computer music artist, and currently a Senior Lecturer in the School
 of Computing at the [Australian National
@@ -6,31 +9,35 @@ University](https://cecs.anu.edu.au/people/ben-swift)---Australia's
 [top-ranked](https://services.anu.edu.au/planning-governance/performance-measurement/world-university-rankings)
 university (#31 [QS world
 ranking](https://www.topuniversities.com/universities/australian-national-university)
-2021). I'm an expert in computational art & music, data vis/data science,
-human-computer interaction, AI/machine learning, and user experience (UX)
-design.
+2021). {% if fp %}I'm{% else %}He's{% endif %} an expert in computational art &
+music, data vis/data science, human-computer interaction, AI/machine learning,
+and user experience (UX) design.
 
-I am the founder and director of the [code/creativity/culture (c/c/c)
+{% if fp %}I am{% else %}Ben is{% endif %} the founder and director of the
+[code/creativity/culture (c/c/c)
 studio](https://cs.anu.edu.au/code-creativity-culture/), an interdisciplinary
 research and teaching collective which specialises in _making things_ which
 explore the way that **code** (software), **creativity** (especially the arts)
 and **culture** (life) intersect in the modern world.
 
-As a [livecoding artist]({% link livecoding.md %}) I have performed at
-international arts festivals, including the [International Symposium on
-Electronic Art](http://www.isea-web.org) (ISEA) and the [International
-Conference on Live Coding](https://iclc.toplap.org) (ICLC). I'm the Vice
-President of the [Australasian Computer Music
-Association](https://computermusic.org.au) (ACMA).
+As a [livecoding artist]({% link livecoding.md %}) {% if fp %}I have{% else
+%}Ben has{% endif %} performed at international arts festivals, including the
+[International Symposium on Electronic Art](http://www.isea-web.org) (ISEA) and
+the [International Conference on Live Coding](https://iclc.toplap.org) (ICLC).
+{% if fp %}I'm{% else %}He's{% endif %} the Vice President of the [Australasian
+Computer Music Association](https://computermusic.org.au) (ACMA).
 
-I am a [maker](https://github.com/benswift) of open-source software tools for
-music, creative code, data analysis/visualisation, and more. I'm one half of the
-core development team for the [Extempore](https://github.com/digego/extempore)
-programming environment <a style="vertical-align: sub;"
+{% if fp %}I am{% else %}Ben is{% endif %}a [maker](https://github.com/benswift)
+of open-source software tools for music, creative code, data
+analysis/visualisation, and more. {% if fp %}I'm{% else %}He's{% endif %} one
+half of the core development team for the
+[Extempore](https://github.com/digego/extempore) programming environment <a
+style="vertical-align: sub;"
 href="https://github.com/digego/extempore/stargazers"><img style="width:unset;"
 alt="GitHub stars"
 src="https://img.shields.io/github/stars/digego/extempore"></a>, the
 state-of-the-art in livecoding languages. Extempore's users are a worldwide
 community of programmers, artists, musicians, and data visualisation
-practitioners. I have more than 10 years experience as an OSS community manager,
-technical writer, software engineer and creative code outreach ambassador.
+practitioners. {% if fp %}I have{% else %}He has{% endif %} more than 10 years
+experience as an OSS community manager, technical writer, software engineer and
+creative code outreach ambassador.
