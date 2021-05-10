@@ -444,3 +444,51 @@ website](https://extemporelang.github.io/docs/overview/quickstart/#no-sound-chec
 to see how to do it. The tip about using `--device-name` instead of `--device`
 is particularly good advice when you're trying to bump in quickly in a gig
 situation.
+
+## Audio underflow: are you pushing extempore too hard?
+
+The sharedsystem is actually kindof heavyweight (or at least medium-weight) from
+a CPU use perspective. It loads up 4 analogue synths and a sampler, plus some FX
+(e.g. global convolution reverb) and tries to distribute them across multiple
+cores on your machine.
+
+If you're getting lots of "audio underflow" messages, you've got a few options,
+in order of easiest fixes to most difficult:
+
+1. don't run any other software on your machine that you don't absolutely need
+   for the gig
+
+2. try starting Extempore with a larger frame size (e.g. `./extempore --frames 8192`)
+
+3. if you don't need MIDI I/O, just load `(sys:load
+   "examples/sharedsystem/audiosetup.xtm")` instead of `(sys:load
+   "examples/sharedsystem/setup.xtm")`
+
+4. remove some of the `dspN` (for `N` = 1..5) functions from the signal chain in
+   `examples/sharedsystem/audiosetup.xtm` (e.g. if you're only using `syn1` and
+   `syn2` you could remove `dsp3` from the signal chain, which uses `dspmt` as
+   the final output sink)
+
+5. get your hands on a beefier laptop (not an option for many people, obviously)
+
+If you go with option #4, remember that you can create a new copy of
+`audiosetup.xtm` and modify it to your heart's content. Even if you've just been
+messing with the original `audiosetup.xtm` file directly, remember that you can
+get a "pristine" version at any time from
+[GitHub](https://github.com/digego/extempore/blob/master/examples/sharedsystem/audiosetup.xtm).
+
+## Creating a "startup" file
+
+`sys:load` can load any file on your computer (even files outside your
+`extempore` directory if you provide a full path). So it's a good idea to put
+_everything_ required to set up your Extempore session into one file, then you
+can just load that file with e.g.
+
+```extempore
+(sys:load "/Users/ben/Documents/research/extemporelang/xtm/sessions/lens-2021-demo/setup.xtm")
+```
+
+and then once that's loaded you're good to go.
+
+Extra tip: also memorise a line of code that you can quickly type & execute to
+check if there's sound coming out.
