@@ -114,6 +114,9 @@ list</a> (everyone else).</p>
   <li><a href="#modulating-filter-or-other-params-over-time" id="markdown-toc-modulating-filter-or-other-params-over-time">modulating filter (or other) params over time</a></li>
   <li><a href="#playing-a-loop-which-then-stops" id="markdown-toc-playing-a-loop-which-then-stops">playing a loop which then stops</a></li>
   <li><a href="#multi-laptop-extempore-clock-sync" id="markdown-toc-multi-laptop-extempore-clock-sync">multi-laptop Extempore clock sync</a></li>
+  <li><a href="#selecting-the-correct-audio-device" id="markdown-toc-selecting-the-correct-audio-device">Selecting the correct audio device</a></li>
+  <li><a href="#audio-underflow-are-you-pushing-extempore-too-hard" id="markdown-toc-audio-underflow-are-you-pushing-extempore-too-hard">Audio underflow: are you pushing extempore too hard?</a></li>
+  <li><a href="#creating-a-startup-file" id="markdown-toc-creating-a-startup-file">Creating a “startup” file</a></li>
 </ul>
 
 </div>
@@ -535,6 +538,69 @@ manual (and requires some careful listening, which is a skill that takes time to
 master), and it also doesn’t help with getting the exact beat clock synced up
 (so that you’ll still have to be careful that e.g. your 4-beat bars line up, and
 you may have to keep fiddling with some offsets to make it all work).</p>
+
+<h2 id="selecting-the-correct-audio-device">Selecting the correct audio device</h2>
+
+<p>We discussed this during the demo day class, but you should visit the <a href="https://extemporelang.github.io/docs/overview/quickstart/#no-sound-check-your-audio-device">doco
+website</a>
+to see how to do it. The tip about using <code>--device-name</code> instead of <code>--device</code>
+is particularly good advice when you’re trying to bump in quickly in a gig
+situation.</p>
+
+<h2 id="audio-underflow-are-you-pushing-extempore-too-hard">Audio underflow: are you pushing extempore too hard?</h2>
+
+<p>The sharedsystem is actually kindof heavyweight (or at least medium-weight) from
+a CPU use perspective. It loads up 4 analogue synths and a sampler, plus some FX
+(e.g. global convolution reverb) and tries to distribute them across multiple
+cores on your machine.</p>
+
+<p>If you’re getting lots of “audio underflow” messages, you’ve got a few options,
+in order of easiest fixes to most difficult:</p>
+
+<ol>
+  <li>
+    <p>don’t run any other software on your machine that you don’t absolutely need
+for the gig</p>
+  </li>
+  <li>
+    <p>try starting Extempore with a larger frame size (e.g. <code>./extempore --frames 8192</code>)</p>
+  </li>
+  <li>
+    <p>if you don’t need MIDI I/O, just load <code>(sys:load
+"examples/sharedsystem/audiosetup.xtm")</code> instead of <code>(sys:load
+"examples/sharedsystem/setup.xtm")</code></p>
+  </li>
+  <li>
+    <p>remove some of the <code>dspN</code> (for <code>N</code> = 1..5) functions from the signal chain in
+<code>examples/sharedsystem/audiosetup.xtm</code> (e.g. if you’re only using <code>syn1</code> and
+<code>syn2</code> you could remove <code>dsp3</code> from the signal chain, which uses <code>dspmt</code> as
+the final output sink)</p>
+  </li>
+  <li>
+    <p>get your hands on a beefier laptop (not an option for many people, obviously)</p>
+  </li>
+</ol>
+
+<p>If you go with option #4, remember that you can create a new copy of
+<code>audiosetup.xtm</code> and modify it to your heart’s content. Even if you’ve just been
+messing with the original <code>audiosetup.xtm</code> file directly, remember that you can
+get a “pristine” version at any time from
+<a href="https://github.com/digego/extempore/blob/master/examples/sharedsystem/audiosetup.xtm">GitHub</a>.</p>
+
+<h2 id="creating-a-startup-file">Creating a “startup” file</h2>
+
+<p><code>sys:load</code> can load any file on your computer (even files outside your
+<code>extempore</code> directory if you provide a full path). So it’s a good idea to put
+<em>everything</em> required to set up your Extempore session into one file, then you
+can just load that file with e.g.</p>
+
+<pre><code class="language-extempore">(sys:load "/Users/ben/Documents/research/extemporelang/xtm/sessions/lens-2021-demo/setup.xtm")
+</code></pre>
+
+<p>and then once that’s loaded you’re good to go.</p>
+
+<p>Extra tip: also memorise a line of code that you can quickly type &amp; execute to
+check if there’s sound coming out.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:mb" role="doc-endnote">
@@ -596,8 +662,8 @@ book</a> <a href="#fnref:little-schemer" class="reversefootnote" role="doc-back
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>d26bfdcaa</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/d26bfdcaa/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
+	site revision <code>0626d113d</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/0626d113d/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
