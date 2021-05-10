@@ -5,7 +5,6 @@ permalink: /blurbs/
 ---
 
 {:.hl-para}
-
 Here's a list of bios/blurbs that you could use in your glossy brochures. I'm
 open to being described/introduced in new ways, too---although if you're going
 to do that then I'd appreciate having a discussion with you about it first :)
