@@ -1,4 +1,8 @@
-{% assign fp = include.first-person | default: true %}
+{% if include.perspective == "third" %}
+{% assign fp = false %}
+{% else %}
+{% assign fp = true %}
+{% endif %}
 
 {% if fp %}I am{% else %}Ben Swift is{% endif %} an internationally-recognised
 interdisciplinary

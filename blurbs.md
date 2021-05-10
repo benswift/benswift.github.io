@@ -23,7 +23,7 @@ today's world.
 This is the same text that's featured on my [research page]({% link research.md
 %}) and [CV]({% link cv.md %}).
 
-{% include blurbs/I-am-paragraphs.md %}
+{% include blurbs/I-am-paragraphs.md perspective="third" %}
 
 ## ~50 words (informal)
 
