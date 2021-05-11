@@ -4,34 +4,39 @@ layout: page
 permalink: /blurbs/
 ---
 
-{:.hl-para}
 Here's a list of bios/blurbs that you could use in your glossy brochures. I'm
 open to being described/introduced in new ways, too---although if you're going
 to do that then I'd appreciate having a discussion with you about it first :)
 
-## ~40 words
+{% include toc.html %}
+
+## Short & punchy
 
 Ben Swift an academic, educator, artist and maker of open source tools for
 creative computing. He's always looking for ways to talk about the way that code
 (software), creativity (especially the arts) and culture (life) intersect in
 today's world.
 
-## ~200 words
-
-{:.hl-para}
-
-This is the same text that's featured on my [research page]({% link research.md
-%}) and [CV]({% link cv.md %}).
+## Academic
 
 {% include blurbs/I-am-paragraphs.md perspective="third" %}
 
-## ~50 words (informal)
+## Livecoder, informal
 
 Ben Swift is a livecoder and artist-programmer, perpetually struggling to
 reconcile his day job in academia with his longing for free and unbridled
 artistic expression. He's one half of the core development team for the
 [Extempore](https://github.com/digego/extempore) programming environment. His
 work has been featured on the internet.
+
+## Computer Science researcher
+
+Ben Swift is a multidisciplinary researcher with research interests across
+computational art & music, data vis/data science, human-computer interaction,
+AI/machine learning, and user experience (UX) design. One broad theme
+underpinning his interests in these areas is the potential of _liveness_
+(real-time human-in-the-loop interactivity) in programming tools and workflows,
+especially in open-ended exploratory programming.
 
 ## Headshots
 
