@@ -447,10 +447,18 @@ situation.
 
 ## Audio underflow: are you pushing extempore too hard?
 
-The sharedsystem is actually kindof heavyweight (or at least medium-weight) from
+The sharedsystem is actually kindof heavyweight[^cpu-requirements] (or at least medium-weight) from
 a CPU use perspective. It loads up 4 analogue synths and a sampler, plus some FX
 (e.g. global convolution reverb) and tries to distribute them across multiple
 cores on your machine.
+
+[^cpu-requirements]:
+    I mean, it's still supposed to work on a half-decent laptop---it shouldn't
+    require a real beast---but if you're on a particularly old/wheezy machine
+    then even with the below tricks the sharedsystem might not be a good choice.
+    The other examples (e.g. `examples/core/fmsynth.xtm`) show how to create a
+    lighter-weight DSP chain, and from there you could add only the instruments
+    & effects that you need.
 
 If you're getting lots of "audio underflow" messages, you've got a few options,
 in order of easiest fixes to most difficult:
