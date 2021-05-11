@@ -31,10 +31,10 @@ the [International Conference on Live Coding](https://iclc.toplap.org) (ICLC).
 {% if fp %}I'm{% else %}He's{% endif %} the Vice President of the [Australasian
 Computer Music Association](https://computermusic.org.au) (ACMA).
 
-{% if fp %}I am{% else %}Ben is{% endif %}a [maker](https://github.com/benswift)
-of open-source software tools for music, creative code, data
-analysis/visualisation, and more. {% if fp %}I'm{% else %}He's{% endif %} one
-half of the core development team for the
+{% if fp %}I am{% else %}Ben is{% endif %} a
+[maker](https://github.com/benswift) of open-source software tools for music,
+creative code, data analysis/visualisation, and more. {% if fp %}I'm{% else
+%}He's{% endif %} one half of the core development team for the
 [Extempore](https://github.com/digego/extempore) programming environment <a
 style="vertical-align: sub;"
 href="https://github.com/digego/extempore/stargazers"><img style="width:unset;"
