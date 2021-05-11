@@ -3,6 +3,8 @@ title: LENS'21 final gig 2pm June 6 @ sideway
 tags: lens gigs livecoding
 ---
 
+{% include assets/picture.html file="images/posts/lens2021-final-gig-poster.jpg" alt="LENS '21 final gig poster" %}
+
 If you're a fan of _LENS_, the ANU Laptop Ensemble, then you're welcome to come
 to the S1 2021 end-of-semester gig. Here are the details
 
