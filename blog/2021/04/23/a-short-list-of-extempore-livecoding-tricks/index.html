@@ -549,7 +549,7 @@ situation.</p>
 
 <h2 id="audio-underflow-are-you-pushing-extempore-too-hard">Audio underflow: are you pushing extempore too hard?</h2>
 
-<p>The sharedsystem is actually kindof heavyweight (or at least medium-weight) from
+<p>The sharedsystem is actually kindof heavyweight<sup id="fnref:cpu-requirements" role="doc-noteref"><a href="#fn:cpu-requirements" class="footnote" rel="footnote">3</a></sup> (or at least medium-weight) from
 a CPU use perspective. It loads up 4 analogue synths and a sampler, plus some FX
 (e.g. global convolution reverb) and tries to distribute them across multiple
 cores on your machine.</p>
@@ -611,6 +611,15 @@ check if there’s sound coming out.</p>
       <p>that’s not just an idiom, I’m actually thinking of a <a href="https://mitpress.mit.edu/books/little-schemer-fourth-edition">specific
 book</a> <a href="#fnref:little-schemer" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
+    <li id="fn:cpu-requirements" role="doc-endnote">
+
+      <p>I mean, it’s still supposed to work on a half-decent laptop—it shouldn’t
+require a real beast—but if you’re on a particularly old/wheezy machine
+then even with the below tricks the sharedsystem might not be a good choice.
+The other examples (e.g. <code>examples/core/fmsynth.xtm</code>) show how to create a
+lighter-weight DSP chain, and from there you could add only the instruments
+&amp; effects that you need. <a href="#fnref:cpu-requirements" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
   </ol>
 </div>
 
@@ -662,8 +671,8 @@ book</a> <a href="#fnref:little-schemer" class="reversefootnote" role="doc-back
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>50e989fe1</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/50e989fe1/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
+	site revision <code>2dc17d52c</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/2dc17d52c/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
