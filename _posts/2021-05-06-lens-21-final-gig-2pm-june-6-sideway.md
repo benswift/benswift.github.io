@@ -13,7 +13,8 @@ to the S1 2021 end-of-semester gig. Here are the details
 - **Venue**: [sideway music bar](https://sidewaybc.com)
 
 More details (including a full schedule of who will be playing when) to come,
-but mark it in your diaries.
+but mark it in your diaries. There's also a [FB
+event](https://www.facebook.com/events/831223320837700) if that's your jam.
 
 If you want to get psyched, have a look at what the LENS '21 cohort have been up
 to with their [weekly Audiovisual Diary submissions on
