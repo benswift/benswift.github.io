@@ -9,7 +9,7 @@ If you're a fan of _LENS_, the ANU Laptop Ensemble, then you're welcome to come
 to the S1 2021 end-of-semester gig. Here are the details
 
 - **Date**: Sunday June 6
-- **Time**: Doors at 2pm, warm-up act (me) to start at 2:30pm, finish at 6pm
+- **Time**: Doors at 2pm, warm-up act (me) to start at 2:30pm, LENS members on from 3pm, finish at 6pm
 - **Venue**: [sideway music bar](https://sidewaybc.com)
 
 More details (including a full performer schedule) to come, but mark it in your
