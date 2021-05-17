@@ -35,7 +35,7 @@ Science](https://cs.anu.edu.au/courses/comp2300/)
   science (either at ANU or elsewhere) and helps them _reimagine_ what it is to
   be a computer scientist or engineer in the 21st century.
 
-In the past couple of years, I've also taught
+Over the past few years, I've also taught
 
 - [COMP2300/6300: Computer Organisation and Program
   Execution](https://cs.anu.edu.au/courses/comp2300/) is ANU's introductory
