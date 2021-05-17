@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-05-11T12:25:49+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LENS’21 final gig 2pm June 6 @ sideway</title><link href="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/" rel="alternate" type="text/html" title="LENS’21 final gig 2pm June 6 @ sideway" /><published>2021-05-06T00:00:00+10:00</published><updated>2021-05-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway</id><content type="html" xml:base="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/">&lt;picture&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-05-17T14:44:01+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Moving to the School of Cybernetics</title><link href="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/" rel="alternate" type="text/html" title="Moving to the School of Cybernetics" /><published>2021-05-11T00:00:00+10:00</published><updated>2021-05-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/">&lt;p&gt;Some job news—I’ve just accepted a position in the new &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of
+Cybernetics&lt;/a&gt; (SoCy) in the ANU College of Engineering
+and Computer Science (CECS). I’ll finish out my teaching this semester in the
+&lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;School of Computing&lt;/a&gt; then I’ll make the move in July.
+For those not familiar with the ANU org chart or acronymicon, multiple &lt;em&gt;Schools&lt;/em&gt;
+make up a &lt;em&gt;College&lt;/em&gt; (so I’m moving Schools but staying within the College).&lt;/p&gt;
+
+&lt;p&gt;I’m really excited by the prospect of designing educational experiences
+in/around/through the &lt;a href=&quot;https://www.griffithreview.com/articles/touching-the-future/&quot;&gt;new
+Cybernetics&lt;/a&gt;, and
+that’s what my&lt;sup id=&quot;fnref:my&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:my&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; team in the SoCy will be doing (under our Director
+&lt;a href=&quot;https://twitter.com/feraldata&quot;&gt;Genevieve Bell&lt;/a&gt;). My work as an
+interdisciplinary computer scientist/computer musician has always been
+cybernetics-adjacent, and I’m stoked to get a chance to lean in to this
+interdisciplinarity as we reimagine what a School (within a College, within a
+university) might look like.&lt;/p&gt;
+
+&lt;p&gt;However, this decision is bittersweet; I love my current job, my colleagues and
+(especially) my students, and I’ll be sad to see them less as I move to the
+School of Cybernetics. In fact, there are a few things I want to say about this
+move, and this blog is as good a place to say them as any.&lt;/p&gt;
+
+&lt;p&gt;To &lt;strong&gt;outside observers&lt;/strong&gt;, I want to be &lt;em&gt;super clear&lt;/em&gt; that I’m not leaving the
+School of Computing because it sucks, or because there’s no opportunity to do
+cool stuff there—quite the opposite. I think the future of computing is bright
+at the ANU and I know there are be multiple folks all across the campus working
+hard to create that future in the present. To that end, if you’re an
+up-and-coming creative code researcher/practitioner/educator, then you should
+apply for a &lt;a href=&quot;https://jobs.acm.org/jobs/computing-tenure-track-faculty-positions-canberra-australian-capital-territory-2601-122695751-d&quot;&gt;tenure-track position in the School of
+Computing&lt;/a&gt;—it’d
+be great to have you join the team, and we’d have chances to work together I’m
+sure.&lt;/p&gt;
+
+&lt;p&gt;To my &lt;strong&gt;School of Computing colleagues&lt;/strong&gt;, I really appreciate your collegiality,
+support and friendship over these past nine years (I started as a post-doc on 1
+Jan ‘13). I’ll still be around (SoCy will sit in the Birch building), and I’m
+keen to be a sounding board or collaborator. There are a few people in
+particular who have trained and supported me to be the educator that I am today,
+and while I won’t do the full “Oscars acceptance speech I’d-like-to-thank-“
+thing, I hope you know who you are, and how much I appreciate it.&lt;/p&gt;
+
+&lt;p&gt;To the &lt;strong&gt;School of Computing admin team&lt;/strong&gt;, you’re awesome, and you’ve been such
+a help. I’ll miss hassling you on Teams to buy weird gear for the Laptop
+Ensemble.&lt;/p&gt;
+
+&lt;p&gt;To my &lt;strong&gt;current students&lt;/strong&gt;, I (and my new colleagues in SoCy) will make sure you
+don’t get stuffed around. I’ll keep supervising all my current students till
+your projects are complete, and you won’t notice much difference—just that
+from July onwards we might have our meetings in a different building. If you’re
+in my new &lt;a href=&quot;https://cs.anu.edu.au/courses/extn1019/&quot;&gt;ANU Extension Creative
+Computing&lt;/a&gt; course, then there’s good
+news as well—that course will keep going as planned. In fact, it’s a high
+priority activity for the whole College, and there will be amazing doors that
+open up for you through participation in that course. If you’re a year 11
+student in 2022, you can start thinking about applying to be part of next year’s
+cohort—&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;drop me a line&lt;/a&gt; if you’d like some tips
+on how to prepare for that process.&lt;/p&gt;
+
+&lt;p&gt;To any &lt;strong&gt;prospective/future students&lt;/strong&gt; (i.e. those who were hoping to take &lt;a href=&quot;/teaching/&quot;&gt;one
+of my classes&lt;/a&gt; in the future) the news is a bit more
+mixed. I’ll still be involved with the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;Laptop
+Ensemble&lt;/a&gt;, and the current plan is
+that other courses I’ve designed &amp;amp; taught (e.g.
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;COMP2300&lt;/a&gt;,
+&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) will still continue as
+normal with other (excellent!) lecturers. Finally, while I was scheduled to take
+over &lt;em&gt;COMP4610 Computer Graphics&lt;/em&gt; in S2 2021, this now won’t happen. If that
+stuffs up your study plans, I’m really sorry.&lt;/p&gt;
+
+&lt;p&gt;Finally, while I’m taking on new and exciting responsibilities in the School of
+Cybernetics, I’ll still be the same person with the same interests, strengths
+and weaknesses. So if we’re excited about the same things now, chances are we’ll
+still be excited about the same things into the future—and I hope we have the
+opportunity to support one another to pursue those goals.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:my&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;This is “my” in the “team I’m part of” sense, not the “team I lead” sense.
+The new SoCy is going to be a wildly collaborative place, and I’m just one
+part of a multi-talented whole. &lt;a href=&quot;#fnref:my&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="cybernetics" /><summary type="html">Some job news—I’ve just accepted a position in the new School of Cybernetics (SoCy) in the ANU College of Engineering and Computer Science (CECS). I’ll finish out my teaching this semester in the School of Computing then I’ll make the move in July. For those not familiar with the ANU org chart or acronymicon, multiple Schools make up a College (so I’m moving Schools but staying within the College).</summary></entry><entry><title type="html">LENS’21 final gig 2pm June 6 @ sideway</title><link href="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/" rel="alternate" type="text/html" title="LENS’21 final gig 2pm June 6 @ sideway" /><published>2021-05-06T00:00:00+10:00</published><updated>2021-05-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway</id><content type="html" xml:base="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/">&lt;picture&gt;
   &lt;img alt=&quot;LENS &apos;21 final gig poster&quot; src=&quot;/assets/images/posts/lens2021-final-gig-poster.jpg&quot; /&gt;
 &lt;/picture&gt;
 
@@ -10945,78 +11028,4 @@ enabled.&lt;/p&gt;
 
 &lt;picture&gt;
   &lt;img alt=&quot;MS Teams meme settings&quot; src=&quot;/assets/images/posts/respectful-learning-memes/teams-meme-settings.png&quot; /&gt;
-&lt;/picture&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Note: this post was noticed by the good folks at the ANU Centre for Learning and Teaching, and they asked if they could syndicate it on their Interact blog—so you can read it there as well.</summary></entry><entry><title type="html">Independent Study Contract writing tips</title><link href="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/" rel="alternate" type="text/html" title="Independent Study Contract writing tips" /><published>2021-01-25T00:00:00+11:00</published><updated>2021-01-25T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips</id><content type="html" xml:base="https://benswift.me/blog/2021/01/25/independent-study-contract-writing-tips/">&lt;p&gt;Many students here at the ANU School of Computing take a capstone project at the
-end of their undergraduate degree. There are a few different variations (e.g.
-half-year vs full-year, “research” vs “implementation”, etc.), but overall these
-projects are a chance for students to put together all the skills they’ve
-learned in their degree program in a supervised project where &lt;em&gt;they’re&lt;/em&gt; the
-boss.&lt;/p&gt;
-
-&lt;p&gt;To take on one of these project, students need to find a supervisor, decide on a
-project and sign an &lt;strong&gt;independent study contract&lt;/strong&gt; (ISC). While these ISCs
-&lt;em&gt;could&lt;/em&gt; be seen as a tick-and-flick waste of time, when done well they’re an
-important part of the project.&lt;/p&gt;
-
-&lt;p&gt;If you’re a student writing an ISC (at the ANU School of Computing at least)
-there two “meaty” parts to your ISC: the &lt;em&gt;project description&lt;/em&gt;, and the
-&lt;em&gt;learning outcomes&lt;/em&gt;. Putting some hard work into those parts at the beginning of
-your project is totally worth it. Your supervisor can (and should!) help you
-out, but it’s your project, and you should make sure it reflects the project you
-want to do.&lt;/p&gt;
-
-&lt;h2 id=&quot;tips-for-writing-a-good-isc&quot;&gt;Tips for writing a good ISC&lt;/h2&gt;
-
-&lt;p&gt;All projects are different, and therefore so are all ISCs. The best tip I can
-give is to &lt;em&gt;write an ISC that you’ll &lt;strong&gt;want&lt;/strong&gt; to keep looking at throughout the
-project&lt;/em&gt;. It’s tempting to see the sole purpose of the ISC getting a permission
-code to enrol in the project course. But it’s something that should guide your
-research, and something which you should be able to point to at the end and say
-“yep, I achieved my goals”.&lt;/p&gt;
-
-&lt;h3 id=&quot;project-description&quot;&gt;Project Description&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;this is kindof a marketing exercise: you’re trying to “sell” your project to
-an interested observer, so make it seem interesting—give it a “hook”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;length: one or two paragraphs (it should fit in the space on the form), and
-should be understandable by one of your classmates&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;don’t write it out by hand straight on to the form; this is the sort of thing
-you want to have a few drafts at (including getting feedback from your supervisor)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;don’t &lt;em&gt;just&lt;/em&gt; say vague stuff like “explore various techniques for…” or
-“investigate different approaches to…”; if you’re gonna do that you need to
-also have something about what you’re trying to find with your
-explorations/investigations, and how you’ll measure whether you’,re successful&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if you’re going to create something (e.g. a piece of software, a user study)
-then mention it in the project description&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;learning-outcomes&quot;&gt;Learning Outcomes&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;how many? you probably want 3 (±1)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the “standard” way to frame learning outcomes is to write them as
-continuations of the sentence: “at the end of this project, the student will
-be able to…”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;think about what you’d like to be able to do once you’ve completed the project
-and work backwards from there&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the Learning &amp;amp; Teaching centre at Adelaide Uni has some &lt;a href=&quot;https://www.adelaide.edu.au/learning/resources-for-educators/curriculum-resources/learning-outcomes/writing-learning-outcomes#application-of-learning-outcomes&quot;&gt;good tips on
-writing&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Many students here at the ANU School of Computing take a capstone project at the end of their undergraduate degree. There are a few different variations (e.g. half-year vs full-year, “research” vs “implementation”, etc.), but overall these projects are a chance for students to put together all the skills they’ve learned in their degree program in a supervised project where they’re the boss.</summary></entry></feed>
+&lt;/picture&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Note: this post was noticed by the good folks at the ANU Centre for Learning and Teaching, and they asked if they could syndicate it on their Interact blog—so you can read it there as well.</summary></entry></feed>
