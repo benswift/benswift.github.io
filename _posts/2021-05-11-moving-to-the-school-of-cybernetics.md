@@ -8,8 +8,9 @@ Some job news---I've just accepted a position in the new [School of
 Cybernetics](https://3ainstitute.org) (SoCy) in the ANU College of Engineering
 and Computer Science (CECS). I'll finish out my teaching this semester in the
 [School of Computing](https://cs.anu.edu.au) then I'll make the move in July.
-For those not familiar with the ANU org chart or acronymicon, multiple _Schools_
-make up a _College_ (so I'm moving Schools but staying within the College).
+For those not familiar with the ANU org-chart or acronymicon, there are multiple
+_Schools_ in each _College_ (so I'm moving Schools but staying within the same
+College).
 
 I'm really excited by the prospect of designing educational experiences
 in/around/through the [new
@@ -34,7 +35,7 @@ move, and this blog is as good a place to say them as any.
 To **outside observers**, I want to be _super clear_ that I'm not leaving the
 School of Computing because it sucks, or because there's no opportunity to do
 cool stuff there---quite the opposite. I think the future of computing is bright
-at the ANU and I know there are be multiple folks all across the campus working
+at the ANU and I know there are multiple folks all across the campus working
 hard to create that future in the present. To that end, if you're an
 up-and-coming creative code researcher/practitioner/educator, then you should
 apply for a [tenure-track position in the School of
