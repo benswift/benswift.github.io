@@ -12,8 +12,8 @@ to the S1 2021 end-of-semester gig. Here are the details
 - **Time**: Doors at 2pm, warm-up act (me) to start at 2:30pm, finish at 6pm
 - **Venue**: [sideway music bar](https://sidewaybc.com)
 
-More details (including a full schedule of who will be playing when) to come,
-but mark it in your diaries. There's also a [FB
+More details (including a full performer schedule) to come, but mark it in your
+diaries. There's also a [FB
 event](https://www.facebook.com/events/831223320837700) if that's your jam.
 
 If you want to get psyched, have a look at what the LENS '21 cohort have been up
