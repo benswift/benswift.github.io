@@ -20,7 +20,7 @@ the way that `code` is shaping flows of information/culture/humanity in today's
 
 I care a lot about making computing a welcoming, interesting and creatively
 satisfying place, especially for people who don't fit the traditional picture of
-a "computer scientist"---diversity & inclusion _matters_.
+a "computer scientist".
 
 If you'd like to get in touch---and please do!---the best options are
 [twitter](https://twitter.com/benswift) (DMs open) or emailing me at
