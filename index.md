@@ -2,7 +2,9 @@
 layout: page
 ---
 
-{% include assets/picture.html file="images/pages/theremin-75.jpg" alt="Ben performing live" %}
+<picture style="overflow: hidden; height: 0; padding-top: 66.5%;">
+  <img src='{{ "/assets/" | append: "images/pages/theremin-75.jpg" | relative_url }}' alt="Ben performing live as a musical livecoder" />
+</picture>
 
 Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ), [artist]({%
