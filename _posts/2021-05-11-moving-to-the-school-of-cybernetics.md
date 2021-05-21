@@ -48,12 +48,11 @@ support and friendship over these past nine years (I started as a post-doc on 1
 Jan '13). I'll still be around (SoCy will sit in the Birch building), and I'm
 keen to be a sounding board or collaborator. There are a few people in
 particular who have trained and supported me to be the educator that I am today,
-and while I won't do the full "Oscars acceptance speech I'd-like-to-thank-"
+and while I won't do the full "I'd like to thank..." Oscars acceptance speech
 thing, I hope you know who you are, and how much I appreciate it.
 
-To the **School of Computing admin team**, you're awesome, and you've been such
-a help. I'll miss hassling you on Teams to buy weird gear for the Laptop
-Ensemble.
+To the **School of Computing admin team**, you're awesome. I'll miss hassling
+you on Teams to buy weird gear for the Laptop Ensemble.
 
 To my **current students**, I (and my new colleagues in SoCy) will make sure you
 don't get stuffed around. I'll keep supervising all my current students till
@@ -75,9 +74,11 @@ Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/), and the current plan is
 that other courses I've designed & taught (e.g.
 [COMP2300](https://cs.anu.edu.au/courses/comp2300/),
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/)) will still continue as
-normal with other (excellent!) lecturers. Finally, while I was scheduled to take
-over _COMP4610 Computer Graphics_ in S2 2021, this now won't happen. If that
-stuffs up your study plans, I'm really sorry.
+normal with [other (excellent!)
+lecturers](https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/).
+Finally, while I was previously scheduled to take over **COMP4610 Computer
+Graphics** in S2 2021, this now won't happen. If that stuffs up your study
+plans, I'm really sorry.
 
 Finally, while I'm taking on new and exciting responsibilities in the School of
 Cybernetics, I'll still be the same person with the same interests, strengths
