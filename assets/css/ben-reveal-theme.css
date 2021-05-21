@@ -114,7 +114,7 @@
 
 .reveal .slides section li { margin-bottom: 0.4rem; }
 
-.reveal .slides section .talk-date { font-style: italic; font-size: 0.8em; color: #777; }
+.reveal .slides section .talk-date { font-style: italic; font-size: 0.8em; color: #555; }
 
 .reveal .slides section .talk-title-navigation { font-size: 1.3em; width: 8em; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 

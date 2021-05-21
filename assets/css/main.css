@@ -223,7 +223,7 @@ kbd { font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; border: 1p
 
 .navigation .current { border-bottom: 5px solid #be2edd; }
 
-.navigation .disabled { color: #777; cursor: not-allowed; }
+.navigation .disabled { color: #555; cursor: not-allowed; }
 
 header { grid-area: header; padding: 2rem 0 1rem 0; }
 
@@ -237,11 +237,11 @@ header a { font-weight: 900; }
 
 main { grid-area: main; }
 
-footer { grid-area: footer; border-top: 1px solid #be2edd; color: #777; }
+footer { grid-area: footer; border-top: 1px solid #be2edd; color: #555; }
 
-footer a { color: #777; font-weight: 700; }
+footer a { color: #555; font-weight: 700; }
 
-.post-date { font-style: italic; color: #777; }
+.post-date { font-style: italic; color: #555; }
 
 .post-tag-container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -283,7 +283,7 @@ table td { vertical-align: top; }
 
 .bibliography > div + div { margin-top: 2em; }
 
-.bibliography .date { font-weight: 300; color: #777; }
+.bibliography .date { font-weight: 300; color: #555; }
 
 .bibliography .title { font-weight: 900; }
 
