@@ -17,13 +17,13 @@
 	<a {% if current == "bio" %}class="current" {% endif %}href="{% link bio.md %}">bio</a>
 
 	<!-- social icons -->
-	<a href="https://github.com/benswift">{% fa_svg fab.fa-github %}</a>
-	<a href="https://twitter.com/benswift">{% fa_svg fab.fa-twitter %}</a>
-	<a href="https://vimeo.com/benswift">{% fa_svg fab.fa-vimeo %}</a>
-	<a href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ">{% fa_svg fas.fa-graduation-cap %}</a>
-	<a href="{% link feed.xml %}">{% fa_svg fas.fa-rss %}</a>
-	<a href="mailto:{{ site.email }}">{% fa_svg fas.fa-envelope %}</a>
-	<a href="{% link search.md %}">{% fa_svg fas.fa-search %}</a>
+	<a href="https://github.com/benswift" title="Ben's GitHub page">{% fa_svg fab.fa-github %}</a>
+	<a href="https://twitter.com/benswift" title="Ben's Twitter profile">{% fa_svg fab.fa-twitter %}</a>
+	<a href="https://vimeo.com/benswift" title="Ben's Vimeo page">{% fa_svg fab.fa-vimeo %}</a>
+	<a href="https://scholar.google.com/citations?user=OQdYgLEAAAAJ" title="Ben's Google Scholar page">{% fa_svg fas.fa-graduation-cap %}</a>
+	<a href="{% link feed.xml %}" title="benswift.me RSS feed">{% fa_svg fas.fa-rss %}</a>
+	<a href="mailto:{{ site.email }}" title="Send Ben an email">{% fa_svg fas.fa-envelope %}</a>
+	<a href="{% link search.md %}" title="Search benswift.me">{% fa_svg fas.fa-search %}</a>
   </nav>
 
 </header>
