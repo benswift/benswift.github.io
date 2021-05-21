@@ -6,6 +6,9 @@ layout: page
   <img src='{{ "/assets/" | append: "images/pages/theremin-75.jpg" | relative_url }}' alt="Ben performing live as a musical livecoder" />
 </picture>
 
+<!-- don't show heading, but keep it here for a11y -->
+<h1 style="display:none;">Welcome to benswift.me</h1>
+
 Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ), [artist]({%
 link livecoding.md %}) and [maker](https://github.com/benswift), and one half of
