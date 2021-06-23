@@ -4,7 +4,7 @@ tags: teaching research cybernetics
 ---
 
 Some job news---I've just accepted a position in the new [School of
-Cybernetics](https://3ainstitute.org) (SoCy) in the ANU College of Engineering
+Cybernetics](https://3ainstitute.org) in the ANU College of Engineering
 and Computer Science (CECS). I'll finish out my teaching this semester in the
 [School of Computing](https://cs.anu.edu.au) then I'll make the move in July.
 For those not familiar with the ANU org-chart or acronymicon, there are multiple
@@ -14,8 +14,8 @@ College).
 I'm really excited by the prospect of designing educational experiences
 in/around/through the [new
 Cybernetics](https://www.griffithreview.com/articles/touching-the-future/), and
-that's what my[^my] team in the SoCy will be doing (under our Director
-[Genevieve Bell](https://twitter.com/feraldata)). My work as an
+that's what my[^my] team in the School of Cybernetics will be doing (under our
+Director [Genevieve Bell](https://twitter.com/feraldata)). My work as an
 interdisciplinary computer scientist/computer musician has always been
 cybernetics-adjacent, and I'm stoked to get a chance to lean in to this
 interdisciplinarity as we reimagine what a School (within a College, within a
@@ -23,7 +23,7 @@ university) might look like.
 
 [^my]:
     This is "my" in the "team I'm part of" sense, not the "team I lead" sense.
-    The new SoCy is going to be a wildly collaborative place, and I'm just one
+    The new School of Cybernetics is going to be a wildly collaborative place, and I'm just one
     part of a multi-talented whole.
 
 However, this decision is bittersweet; I love my current job, my colleagues and
@@ -44,20 +44,20 @@ sure.
 
 To my **School of Computing colleagues**, I really appreciate your collegiality,
 support and friendship over these past nine years (I started as a post-doc on 1
-Jan '13). I'll still be around (SoCy will sit in the Birch building), and I'm
-keen to be a sounding board or collaborator. There are a few people in
-particular who have trained and supported me to be the educator that I am today,
-and while I won't do the full "I'd like to thank..." Oscars acceptance speech
-thing, I hope you know who you are, and how much I appreciate it.
+Jan '13). I'll still be around (the School of Cybernetics will sit in the Birch
+building), and I'm keen to be a sounding board or collaborator. There are a few
+people in particular who have trained and supported me to be the educator that I
+am today, and while I won't do the full "I'd like to thank..." Oscars acceptance
+speech thing, I hope you know who you are, and how much I appreciate it.
 
 To the **School of Computing admin team**, you're awesome. I'll miss hassling
 you on Teams to buy weird gear for the Laptop Ensemble.
 
-To my **current students**, I (and my new colleagues in SoCy) will make sure you
-don't get stuffed around. I'll keep supervising all my current students till
-your projects are complete, and you won't notice much difference---just that
-from July onwards we might have our meetings in a different building. If you're
-in my new [ANU Extension Creative
+To my **current students**, I (and my new colleagues in the School of
+Cybernetics) will make sure you don't get stuffed around. I'll keep supervising
+all my current students till your projects are complete, and you won't notice
+much difference---just that from July onwards we might have our meetings in a
+different building. If you're in my new [ANU Extension Creative
 Computing](https://cs.anu.edu.au/courses/extn1019/) course, then there's good
 news as well---that course will keep going as planned. In fact, it's a high
 priority activity for the whole College, and there will be amazing doors that
