@@ -1,7 +1,6 @@
 ---
 title: Moving to the School of Cybernetics
 tags: teaching research cybernetics
-hidden: true
 ---
 
 Some job news---I've just accepted a position in the new [School of
