@@ -10,8 +10,7 @@ Computers are just so _useful_ in all domains of human endeavour, and giving
 people the skills to do interesting things with them is really important work. I
 really enjoy it, too :)
 
-I'm currently teaching two courses in the [ANU Research School of Computer
-Science](https://cs.anu.edu.au/courses/comp2300/)
+I currently teach the following courses:
 
 - [COMP2710/6470: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/)
   in **Semester 1 (Feb--Jun)** is a course open to students in computer science,

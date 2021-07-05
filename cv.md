@@ -59,7 +59,9 @@ hidden: true
 
 ### Appointments
 
-- **2018--** Senior Lecturer, _ANU School of Computing_
+- **2021--** Senior Lecturer, _ANU School of Cybernetics_
+
+- **2018--2021** Senior Lecturer, _ANU School of Computing_
 
 - **2020** _career break---full-time carer_ (6 months)
 

@@ -15,8 +15,9 @@ the core development team for the
 [Extempore](https://github.com/digego/extempore) livecoding environment.
 
 I'm a [Senior Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the [School
-of Computing](https://cs.anu.edu.au/) at the Australian National University in
-Canberra, Australia, where I lead the [c/c/c (code/creativity/culture)
+of Cybernetics](https://3ainstitute.org) at the [Australian National
+University](https://anu.edu.au/) in Canberra, Australia, where I lead the [c/c/c
+(code/creativity/culture)
 studio](https://cs.anu.edu.au/code-creativity-culture/). The **c/c/c studio** is
 a teaching & research group which exists to open up spaces for discussion about
 the way that `code` is shaping flows of information/culture/humanity in today's
