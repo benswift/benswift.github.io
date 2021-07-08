@@ -12,25 +12,24 @@ to do that then I'd appreciate having a discussion with you about it first :)
 
 ## General audience (short)
 
-Ben Swift an academic, educator, artist and maker of open source tools for
-creative computing. He's always looking for ways to talk about the way that code
+Ben is an academic, educator, artist and maker of open source tools for creative
+computing. He's always looking for ways to talk about the way that code
 (software), creativity (especially the arts) and culture (life) intersect in
 today's world.
 
 ## Academic (short)
 
-Ben Swift is a multidisciplinary researcher with research interests across
-computational art & music, data vis/data science, human-computer interaction,
-AI/machine learning, and user experience (UX) design. One broad theme
-underpinning his interests in these areas is the potential of _liveness_
-(real-time human-in-the-loop interactivity) in programming tools and workflows,
-especially in open-ended exploratory programming.
+Ben is an interdisciplinary scholar with interests and expertise in
+computational art & music, cybernetics, AI/machine learning, data vis/data
+science and human-computer interaction. A unifying thread is the potential of
+_liveness_ (human-in-the-loop interactivity with real-time feedback) in tools
+and workflows, especially in open-ended creative tasks.
 
 ## Academic (long)
 
 {% include blurbs/I-am-paragraphs.md perspective="third" %}
 
-## Livecoder (informal)
+## Livecoder (short, informal)
 
 Ben Swift is a livecoder and artist-programmer, perpetually struggling to
 reconcile his day job in academia with his longing for free and unbridled
