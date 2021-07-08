@@ -23,7 +23,7 @@ knows that meetings suck, or at least that _bad_ meetings suck.
 
 [^project-students]:
     You've probably heard that CS enrolments are through the roof---it's a great
-    (if a bit hectic) time to be a CS academic (even a multidisciplinary one
+    (if a bit hectic) time to be a CS academic (even an interdisciplinary one
     😉). The enrolment thing isn't just a first-year problem, either---the
     pipeline is full all the way through to the "capstone" research projects
     that many students take at the end of their degree.

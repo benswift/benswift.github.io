@@ -193,7 +193,7 @@ if you'd like to chat, let me know 😊---I'm here till Thursday
 
 ## Bio
 
-Ben is a multidisciplinary researcher and Senior Lecturer in the Research School
+Ben is an interdisciplinary researcher and Senior Lecturer in the Research School
 of Computer Science at the [Australian National
 University](https://cecs.anu.edu.au/people/ben-swift). He's interested in
 computational art & music, human-computer interaction, AI/machine learning
