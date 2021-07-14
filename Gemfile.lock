@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://gitlab.cecs.anu.edu.au/lucy/jekyll-revealify-plugin.git
-  revision: 1de8999cbd16a2b01375d7a75484d31784e6642b
+  revision: 3d5d2ef6a5c59113af9f506563c5d87c26dc59da
   branch: master
   specs:
     jekyll-revealify-plugin (2.0.0.beta)
@@ -18,24 +18,24 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (9.8.6.5)
       execjs
     bibtex-ruby (5.1.6)
       latex-decode (~> 0.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     ethon (0.14.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    execjs (2.7.0)
-    ffi (1.15.0)
+    execjs (2.8.1)
+    ffi (1.15.3)
     forwardable-extended (2.6.0)
-    html-proofer (3.19.1)
+    html-proofer (3.19.2)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -84,8 +84,8 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.5.1)
-    nokogiri (1.11.4)
+    mini_portile2 (2.5.3)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     nokogumbo (2.0.5)
@@ -129,4 +129,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.2.3
+   2.2.15
