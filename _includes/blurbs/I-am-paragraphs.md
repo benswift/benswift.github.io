@@ -7,8 +7,9 @@
 {% if fp %}I am{% else %}Ben Swift is{% endif %} an internationally-recognised
 interdisciplinary
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ) and
-electronic/computer music artist, and currently a Senior Lecturer in the
-[School of Cybernetics](https://3ainstitute.org) at the [Australian National
+electronic/computer music artist, and currently a Educational Experiences
+Developer (Senior Lecturer) in the [School of
+Cybernetics](https://3ainstitute.org) at the [Australian National
 University](https://anu.edu.au)---Australia's
 [top-ranked](https://services.anu.edu.au/planning-governance/performance-measurement/world-university-rankings)
 university (#31 [QS world

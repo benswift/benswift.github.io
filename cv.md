@@ -59,7 +59,7 @@ hidden: true
 
 ### Appointments
 
-- **2021--** Senior Lecturer, _ANU School of Cybernetics_
+- **2021--** Educational Experiences Developer (Senior Lecturer), _ANU School of Cybernetics_
 
 - **2018--2021** Senior Lecturer, _ANU School of Computing_
 
