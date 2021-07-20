@@ -1,7 +1,9 @@
 <header>
 
   <nav class="logo" aria-label="site home">
-	<a href="{% link index.md %}">{{ site.title }}</a>
+    {% if page.url == "/" %}<h1>{% endif %}
+    <a href="{% link index.md %}">{{ site.title }}</a>
+    {% if page.url == "/" %}</h1>{% endif %}
   </nav>
 
   <nav class="navigation" aria-label="main navigation">
