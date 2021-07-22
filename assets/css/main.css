@@ -16,7 +16,7 @@ h1 { font-size: 2em; margin: 0.67em 0; }
 
 /* Grouping content ========================================================================== */
 /** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
-hr { -webkit-box-sizing: content-box; box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
 
 /** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
 pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
@@ -26,7 +26,7 @@ pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
 a { background-color: transparent; }
 
 /** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
-abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ -webkit-text-decoration: underline dotted; text-decoration: underline dotted; /* 2 */ }
+abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
 
 /** Add the correct font weight in Chrome, Edge, and Safari. */
 b, strong { font-weight: bolder; }
@@ -71,7 +71,7 @@ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focus
 fieldset { padding: 0.35em 0.75em 0.625em; }
 
 /** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
-legend { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
 
 /** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
 progress { vertical-align: baseline; }
@@ -80,7 +80,7 @@ progress { vertical-align: baseline; }
 textarea { overflow: auto; }
 
 /** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
-[type="checkbox"], [type="radio"] { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
 
 /** Correct the cursor style of increment and decrement buttons in Chrome. */
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
@@ -179,13 +179,13 @@ template { display: none; }
 
 :root { font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-:root { font-weight: 400; font-size: 18px; line-height: 1.5; color: #333; background-color: #fafafa; -webkit-box-sizing: border-box; box-sizing: border-box; }
+:root { font-weight: 400; font-size: 18px; line-height: 1.5; color: #333; background-color: #fafafa; box-sizing: border-box; }
 
-*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+*, *:before, *:after { box-sizing: inherit; }
 
 h1, h2, h3, h4, h5, h6, p { padding: 0 0.8rem; }
 
-a { color: #793188; text-decoration: none; font-weight: 700; -webkit-transition-property: color, background-color; transition-property: color, background-color; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; }
+a { color: #793188; text-decoration: none; font-weight: 700; transition-property: color, background-color; transition-duration: 0.5s; }
 
 a:hover { color: #fafafa; background-color: #333; }
 
@@ -197,13 +197,13 @@ h1, h2, h3, h4, h5, h6 { font-weight: 900; }
 
 strong { font-weight: 900; }
 
-code { font-family: "Fira Code", monospace; font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; color: #9e1eba; background: -webkit-gradient(linear, left top, right top, from(#f7e6fb), to(#eec8f6)); background: linear-gradient(to right, #f7e6fb, #eec8f6); overflow-wrap: break-word; word-wrap: break-word; }
+code { font-family: "Fira Code", monospace; font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; color: #9e1eba; background: linear-gradient(to right, #f7e6fb, #eec8f6); overflow-wrap: break-word; word-wrap: break-word; }
 
 pre > code { background-color: #282c34; border-radius: 0; }
 
-.code-block-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.code-block-header { display: flex; justify-content: flex-end; }
 
-.copy-code-button { background-color: #f5ddfa; display: grid; grid-auto-flow: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-column-gap: 0.2rem; border: none; border-radius: 0.5rem 0.5rem 0 0; cursor: pointer; font-size: 1rem; padding: 0.6rem 0.8rem; width: 6rem; }
+.copy-code-button { background-color: #f5ddfa; display: grid; grid-auto-flow: column; align-items: center; grid-column-gap: 0.2rem; border: none; border-radius: 0.5rem 0.5rem 0 0; cursor: pointer; font-size: 1rem; padding: 0.6rem 0.8rem; width: 6rem; }
 
 .copy-code-button::before { content: "copy"; }
 
@@ -213,11 +213,11 @@ pre > code { background-color: #282c34; border-radius: 0; }
 
 .copy-code-button.copied::after { content: "✅"; }
 
-kbd { font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; border: 1px solid #666; -webkit-box-shadow: 0.15em 0.15em #aaa; box-shadow: 0.15em 0.15em #aaa; background: white; text-decoration: none; }
+kbd { font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; border: 1px solid #666; box-shadow: 0.15em 0.15em #aaa; background: white; text-decoration: none; }
 
 .container { display: grid; grid-template-columns: 100vw; grid-template-rows: auto; grid-template-areas: "header" "main" "footer"; }
 
-.navigation { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; color: #333; padding: 0 0.6rem; }
+.navigation { display: flex; flex-wrap: wrap; justify-content: space-between; color: #333; padding: 0 0.6rem; }
 
 .navigation > * { padding: 0.2rem; }
 
@@ -229,7 +229,7 @@ header { grid-area: header; padding: 2rem 0 1rem 0; }
 
 header nav.logo { margin-bottom: 15px; }
 
-header nav.logo a { font-size: 1.3rem; background: -webkit-gradient(linear, right top, left top, from(#be2edd), to(#8c1ba4)); background: linear-gradient(to left, #be2edd, #8c1ba4); color: #fafafa; padding: 0.4rem 0.8rem; }
+header nav.logo a { font-size: 1.3rem; background: linear-gradient(to left, #be2edd, #8c1ba4); color: #fafafa; padding: 0.4rem 0.8rem; }
 
 header nav.logo a:hover { text-decoration: underline; }
 
@@ -243,7 +243,7 @@ footer a { color: #555; font-weight: 700; }
 
 .post-date { font-style: italic; color: #555; }
 
-.post-tag-container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.post-tag-container { display: flex; flex-wrap: wrap; }
 
 .post-tag { font-weight: 300; background-color: #f5ddfa; color: #be2edd; padding: 0.2em; margin: 0 0.4rem 0.4rem 0; }
 
@@ -298,3 +298,5 @@ svg.icon { width: 1em; height: 1em; vertical-align: -0.125em; fill: currentColor
 .canonical-web-box { display: none; }
 
 @media print { header, footer { display: none; } #toc h2 { text-align: left; font-weight: 900; color: #333; background-color: unset; } .canonical-web-box { display: initial; font-style: italic; color: #666666; } }
+
+/*# sourceMappingURL=main.css.map */
