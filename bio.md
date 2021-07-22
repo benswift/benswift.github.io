@@ -4,7 +4,7 @@ layout: page
 permalink: /bio/
 ---
 
-{% include assets/picture.html file="images/pages/ben-autumn-on-campus.jpg" alt="Me, on the ANU Campus in Autumn." %}
+{% include assets/picture.html file="images/headshots/headshot-bw.jpg" alt="Me, on the ANU Campus in Autumn." %}
 
 {:.hl-para}
 

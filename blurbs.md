@@ -37,10 +37,12 @@ artistic expression. He's one half of the core development team for the
 [Extempore](https://github.com/digego/extempore) programming environment. His
 work has been featured on the internet.
 
-## Headshots
+## Headshots & promo images
 
-{% include assets/picture.html file="images/pages/headshot-1.jpg" alt="Ben Swift headshot #1" %}
-{% include assets/picture.html file="images/pages/headshot-2.jpg" alt="Ben Swift headshot #2" %}
-{% include assets/picture.html file="images/pages/half-body-shot.jpg" alt="Ben Swift half-body promo shot" %}
-{% include assets/picture.html file="images/pages/full-body-shot.jpg" alt="Ben Swift full-body promo shot" %}
-
+{% include assets/picture.html file="images/headshots/headshot-anu-tshirt.jpg" alt="Ben in an ANU T-shirt" %}
+{% include assets/picture.html file="images/headshots/headshot-autumn.jpg" alt="Ben outside on the ANU campus in autumn" %}
+{% include assets/picture.html file="images/headshots/headshot-autumn-wide.jpg" alt="Ben outside on the ANU campus in autumn" %}
+{% include assets/picture.html file="images/headshots/headshot-birch.jpg" alt="Ben headshot near the stairwell in the ANU Birch buidling" %}
+{% include assets/picture.html file="images/headshots/headshot-birch-wide.jpg" alt="Ben headshot (wide) near the stairwell in the ANU Birch buidling" %}
+{% include assets/picture.html file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot inside the ANU Birch building" %}
+{% include assets/picture.html file="images/headshots/headshot-garden-wide.jpg" alt="Ben headshot in the garden" %}
