@@ -91,8 +91,3 @@ social:
     - https://github.com/benswift
     - https://keybase.io/benbalter
     - https://vimeo.com/benswift
-
-autoprefixer:
-  browsers:
-    - "last 2 versions"
-    - "IE >= 11"

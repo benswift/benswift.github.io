@@ -8,7 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-paginate-v2', github: 'mmistakes/jekyll-paginate-v2', :branch => 'jekyll-v4'
   gem "jekyll-seo-tag"
-  gem "jekyll-autoprefixer"
   gem "jekyll-fontawesome-svg"
   gem "bibtex-ruby", "~> 5"
   # for authoring
