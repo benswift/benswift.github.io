@@ -5,7 +5,7 @@ permalink: /research/
 anchorjs-selector: "article > h2, article > h3, .pubitem"
 ---
 
-{% include assets/picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21, Photo by Adam Thomas" %}
+{% include assets/picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21" credit="Adam Thomas" %}
 
 {% include toc.html %}
 
