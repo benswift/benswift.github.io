@@ -42,7 +42,7 @@ work has been featured on the internet.
 {% include assets/picture.html file="images/headshots/headshot-anu-tshirt.jpg" alt="Ben in an ANU T-shirt" %}
 {% include assets/picture.html file="images/headshots/headshot-autumn.jpg" alt="Ben outside on the ANU campus in autumn" %}
 {% include assets/picture.html file="images/headshots/headshot-autumn-wide.jpg" alt="Ben outside on the ANU campus in autumn" %}
-{% include assets/picture.html file="images/headshots/headshot-birch.jpg" alt="Ben headshot near the stairwell in the ANU Birch buidling" %}
-{% include assets/picture.html file="images/headshots/headshot-birch-wide.jpg" alt="Ben headshot (wide) near the stairwell in the ANU Birch buidling" %}
-{% include assets/picture.html file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot inside the ANU Birch building" %}
-{% include assets/picture.html file="images/headshots/headshot-garden-wide.jpg" alt="Ben headshot in the garden" %}
+{% include assets/picture.html file="images/headshots/headshot-birch.jpg" alt="Ben headshot near the stairwell in the ANU Birch buidling" credit="Andrew Meares" %}
+{% include assets/picture.html file="images/headshots/headshot-birch-wide.jpg" alt="Ben headshot (wide) near the stairwell in the ANU Birch buidling" credit="Andrew Meares" %}
+{% include assets/picture.html file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot inside the ANU Birch building" credit="Andrew Meares" %}
+{% include assets/picture.html file="images/headshots/headshot-garden-wide.jpg" alt="Ben headshot in the garden" credit="Jeanine Wong" %}

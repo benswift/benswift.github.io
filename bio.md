@@ -4,7 +4,7 @@ layout: page
 permalink: /bio/
 ---
 
-{% include assets/picture.html file="images/headshots/headshot-bw.jpg" alt="Me, on the ANU Campus in Autumn." %}
+{% include assets/picture.html file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot" credit="Andrew Meares" %}
 
 {:.hl-para}
 
