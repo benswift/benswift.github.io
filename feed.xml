@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-07-23T11:23:39+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Moving to the School of Cybernetics</title><link href="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/" rel="alternate" type="text/html" title="Moving to the School of Cybernetics" /><published>2021-05-11T00:00:00+10:00</published><updated>2021-05-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/">&lt;p&gt;Some job news—I’ve just accepted a position in the new &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-07-23T14:04:10+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Moving to the School of Cybernetics</title><link href="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/" rel="alternate" type="text/html" title="Moving to the School of Cybernetics" /><published>2021-05-11T00:00:00+10:00</published><updated>2021-05-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/">&lt;p&gt;Some job news—I’ve just accepted a position in the new &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of
 Cybernetics&lt;/a&gt; in the ANU College of Engineering
 and Computer Science (CECS). I’ll finish out my teaching this semester in the
 &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;School of Computing&lt;/a&gt; then I’ll make the move in July.
@@ -83,8 +83,10 @@ The new School of Cybernetics is going to be a wildly collaborative place, and I
 part of a multi-talented whole. &lt;a href=&quot;#fnref:my&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="cybernetics" /><summary type="html">Some job news—I’ve just accepted a position in the new School of Cybernetics in the ANU College of Engineering and Computer Science (CECS). I’ll finish out my teaching this semester in the School of Computing then I’ll make the move in July. For those not familiar with the ANU org-chart or acronymicon, there are multiple Schools in each College (so I’m moving Schools but staying within the same College).</summary></entry><entry><title type="html">LENS’21 final gig 2pm June 6 @ sideway</title><link href="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/" rel="alternate" type="text/html" title="LENS’21 final gig 2pm June 6 @ sideway" /><published>2021-05-06T00:00:00+10:00</published><updated>2021-05-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway</id><content type="html" xml:base="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/">&lt;picture&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="cybernetics" /><summary type="html">Some job news—I’ve just accepted a position in the new School of Cybernetics in the ANU College of Engineering and Computer Science (CECS). I’ll finish out my teaching this semester in the School of Computing then I’ll make the move in July. For those not familiar with the ANU org-chart or acronymicon, there are multiple Schools in each College (so I’m moving Schools but staying within the same College).</summary></entry><entry><title type="html">LENS’21 final gig 2pm June 6 @ sideway</title><link href="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/" rel="alternate" type="text/html" title="LENS’21 final gig 2pm June 6 @ sideway" /><published>2021-05-06T00:00:00+10:00</published><updated>2021-05-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway</id><content type="html" xml:base="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/">&lt;picture style=&quot;position: relative;&quot;&gt;
   &lt;img alt=&quot;LENS &apos;21 final gig poster&quot; src=&quot;/assets/images/posts/lens2021-final-gig-poster.jpg&quot; /&gt;
+
+  
 &lt;/picture&gt;
 
 &lt;p&gt;If you’re a fan of &lt;em&gt;LENS&lt;/em&gt;, the ANU Laptop Ensemble, then you’re welcome to come
@@ -10976,32 +10978,42 @@ concepts they’re struggling with in the course material. And they’re &lt;em&
 good at making &lt;strong&gt;memes&lt;/strong&gt;. Here are just a few of the ones which I’ve seen end up
 on the allowed “cheat sheets” in the COMP2300 final exam.&lt;/p&gt;
 
-&lt;picture&gt;
+&lt;picture style=&quot;position: relative;&quot;&gt;
   &lt;img alt=&quot;COMP2300 offramp meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg&quot; /&gt;
+
+  
 &lt;/picture&gt;
 
 &lt;hr /&gt;
 
-&lt;picture&gt;
+&lt;picture style=&quot;position: relative;&quot;&gt;
   &lt;img alt=&quot;COMP2300 galaxy brain meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg&quot; /&gt;
+
+  
 &lt;/picture&gt;
 
 &lt;hr /&gt;
 
-&lt;picture&gt;
+&lt;picture style=&quot;position: relative;&quot;&gt;
   &lt;img alt=&quot;COMP2300 Joey from Friends meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg&quot; /&gt;
+
+  
 &lt;/picture&gt;
 
 &lt;hr /&gt;
 
-&lt;picture&gt;
+&lt;picture style=&quot;position: relative;&quot;&gt;
   &lt;img alt=&quot;COMP2300 ObiWan meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg&quot; /&gt;
+
+  
 &lt;/picture&gt;
 
 &lt;hr /&gt;
 
-&lt;picture&gt;
+&lt;picture style=&quot;position: relative;&quot;&gt;
   &lt;img alt=&quot;COMP2300 Anakin Skywalker meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg&quot; /&gt;
+
+  
 &lt;/picture&gt;
 
 &lt;p&gt;I don’t know where they came from—although clearly at least some of them were
@@ -11029,6 +11041,8 @@ they come up with ☺&lt;/p&gt;
 settings relating to memes and gifs which you might want to make sure are
 enabled.&lt;/p&gt;
 
-&lt;picture&gt;
+&lt;picture style=&quot;position: relative;&quot;&gt;
   &lt;img alt=&quot;MS Teams meme settings&quot; src=&quot;/assets/images/posts/respectful-learning-memes/teams-meme-settings.png&quot; /&gt;
+
+  
 &lt;/picture&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Note: this post was noticed by the good folks at the ANU Centre for Learning and Teaching, and they asked if they could syndicate it on their Interact blog—so you can read it there as well.</summary></entry></feed>
