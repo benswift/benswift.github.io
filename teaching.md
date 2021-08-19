@@ -22,7 +22,7 @@ I currently teach the following courses:
   concert at the end of the course.
 
 - [EXTN1019: ANU Extension Creative
-  Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
+  Computing](https://cs.anu.edu.au/courses/extn1019/)
   in **Semester 1 (Feb--Jun)** is a course where ACT Year 11 & 12 students learn
   the fundamentals of computer programming through the creative process of
   making music and visual art. As well as creating and performing their own new

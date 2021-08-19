@@ -126,7 +126,7 @@ to the curriculum, available under a Creative Commons
   the ground up.
 
 - [EXTN1019: ANU Extension Creative
-  Computing](https://cs.anu.edu.au/code-creativity-culture/creative-computing/)
+  Computing](https://cs.anu.edu.au/courses/extn1019/)
   is a course where ACT Year 11 & 12 students learn the fundamentals of computer
   programming through the creative process of making music and visual art. As
   well as creating and performing their own new works of code-based art & music,
