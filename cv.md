@@ -191,6 +191,9 @@ I have also written and delivered the following courses:
 
 ### Academic {#service-academic}
 
+- **2021** Organising Committee, [_Australasian Computer Music
+  Conference_](http://acmc2021.art)
+
 - **2019--** Vice President, [_Australasian Computer Music
   Society_](https://computermusic.org.au/committee/)
 
