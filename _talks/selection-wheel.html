@@ -1,0 +1,77 @@
+---
+title: Group selection wheel
+date: "2021-09-07"
+permalink: /selection-wheel/
+hidden: true
+---
+
+<h2 data-background-color="#721780">Group selection wheel</h2>
+
+<style>
+ .reveal .slides {
+   color: white;
+ }
+</style>
+
+<script src="{% link assets/js/TweenMax.min.js %}" type="text/javascript"></script>
+<script src="{% link assets/js/Winwheel.js %}" type="text/javascript"></script>
+<script src="{% link assets/js/picker-wheels.js %}" type="text/javascript"></script>
+
+<div id="picker-wheel-container" style="width:33.3333%; float:left;">
+  <div style="font-size:2em; line-height:0.8; text-align:center;">⧨</div>
+  <div id="picker-wheel"></div>
+</div>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function(){
+
+   const groupList = document.getElementById("group-list");
+   const groupSize = 2;
+
+   function displaySpinResult(wheel, indicatedSegment) {
+     targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
+     for (let e of targetSpans) {
+       e.textContent = indicatedSegment.text;
+     }
+   }
+
+   const pickerWheel = makeWheel(
+     [
+       "Kelly",
+       "Mearsey",
+       "Jess",
+       "Josh",
+       "Shirley",
+       "Charlotte",
+     ],
+
+     "picker-wheel",
+
+     Reveal.getConfig().width/6,
+
+     (wheel, indicatedSegment) => {
+       const nameItem = document.createElement('li');
+       nameItem.innerHTML = indicatedSegment.text;
+       groupList.appendChild(nameItem);
+       wheel.deleteSegment(wheel.getIndicatedSegmentNumber());
+       // tricky maths to figure out whether to put the "alt-group" class on this item
+       if (Math.floor((groupList.childElementCount-1)/groupSize)%2 == 1){
+         groupList.lastChild.classList.add("alt-group")
+       }
+   });
+ });
+
+</script>
+
+<style>
+ #group-list {
+   font-size: 0.75rem;
+   width:50%;
+   float:right;
+ }
+ #group-list .alt-group {
+   font-weight: 700;
+ }
+</style>
+
+<ol id="group-list"></ol>
