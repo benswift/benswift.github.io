@@ -8,8 +8,8 @@ hidden: true
 <h2 data-background-color="#721780">Group selection wheel</h2>
 
 <style>
-body {
-  color: white !important;
+.reveal .slides {
+  color: white;
 }
 </style>
 
