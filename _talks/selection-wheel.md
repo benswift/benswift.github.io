@@ -5,7 +5,13 @@ permalink: /selection-wheel/
 hidden: true
 ---
 
-## Group selection wheel
+<h2 data-background-color="#721780">Group selection wheel</h2>
+
+<style>
+body {
+  color: white !important;
+}
+</style>
 
 <script src="{% link assets/js/TweenMax.min.js %}" type="text/javascript"></script>
 <script src="{% link assets/js/Winwheel.js %}" type="text/javascript"></script>

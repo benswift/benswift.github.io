@@ -1,5 +1,5 @@
 let segmentColours = [
-  "#AC49BA",
+  // "#AC49BA",
   "#DB70E6",
   "#F586FF",
   "#7FFEA0",
