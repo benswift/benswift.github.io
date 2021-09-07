@@ -35,15 +35,19 @@ hidden: true
      }
    }
 
+   let people = [
+     "Kelly",
+     "Mearsey",
+     "Jess",
+     "Josh",
+     "Shirley",
+     "Charlotte",
+   ];
+   // now shuffle them (in-place), just for fun
+   shuffleArray(people);
+
    const pickerWheel = makeWheel(
-     [
-       "Kelly",
-       "Mearsey",
-       "Jess",
-       "Josh",
-       "Shirley",
-       "Charlotte",
-     ],
+     people,
 
      "picker-wheel",
 
