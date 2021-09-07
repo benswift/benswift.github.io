@@ -25,7 +25,7 @@ hidden: true
 <script>
 document.addEventListener("DOMContentLoaded", function(){
 
-  let groupList = document.getElementById("group-list");
+  const groupList = document.getElementById("group-list");
 
   function displaySpinResult(wheel, indicatedSegment) {
     targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }
 
-  let pickerWheel = makeWheel(
+  const pickerWheel = makeWheel(
     [
       "Kelly",
       "Mearsey",
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(){
     "picker-wheel",
     Reveal.getConfig().width/6,
     (wheel, indicatedSegment) => {
-      let nameItem = document.createElement('li');
+      const nameItem = document.createElement('li');
       nameItem.innerHTML = indicatedSegment.text;
       groupList.appendChild(nameItem);
       wheel.deleteSegment(wheel.getIndicatedSegmentNumber());
