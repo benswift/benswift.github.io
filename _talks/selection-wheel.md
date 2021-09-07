@@ -26,6 +26,7 @@ hidden: true
 document.addEventListener("DOMContentLoaded", function(){
 
   const groupList = document.getElementById("group-list");
+  const groupSize = 2;
 
   function displaySpinResult(wheel, indicatedSegment) {
     targetSpans = document.getElementsByClassName(`${wheel.canvasId}-result`);
@@ -50,9 +51,19 @@ document.addEventListener("DOMContentLoaded", function(){
       nameItem.innerHTML = indicatedSegment.text;
       groupList.appendChild(nameItem);
       wheel.deleteSegment(wheel.getIndicatedSegmentNumber());
+      // tricky maths to figure out whether to put the "alt-group" class on this item
+      if (Math.floor((groupList.childElementCount-1)/groupSize)%2 == 1){
+        groupList.lastChild.classList.add("alt-group")
+      }
     });
 });
 
 </script>
+
+<style>
+#group-list .alt-group {
+  font-weight: 700;
+}
+</style>
 
 <ol id="group-list" style="font-size: 0.75rem; width:50%; float:right;"></ol>
