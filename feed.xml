@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-09-13T17:05:58+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Feedback in livecoding: cui bono?</title><link href="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/" rel="alternate" type="text/html" title="Feedback in livecoding: cui bono?" /><published>2021-09-13T16:22:00+10:00</published><updated>2021-09-13T16:22:00+10:00</updated><id>https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono</id><content type="html" xml:base="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/">&lt;p&gt;Hi, BUILD students. I know y’all are busy, so this won’t take &lt;em&gt;too&lt;/em&gt; long and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-09-13T17:16:36+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Feedback in livecoding: cui bono?</title><link href="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/" rel="alternate" type="text/html" title="Feedback in livecoding: cui bono?" /><published>2021-09-13T16:22:00+10:00</published><updated>2021-09-13T16:22:00+10:00</updated><id>https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono</id><content type="html" xml:base="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/">&lt;p&gt;Hi, BUILD students. I know y’all are busy, so this won’t take &lt;em&gt;too&lt;/em&gt; long and
 will hopefully be fun. Before my guest lecture, I’d like to introduce you (if
 you haven’t seen it before) to &lt;a href=&quot;https://toplap.org/about/&quot;&gt;livecoding&lt;/a&gt;. Imagine
 you arrive at the club&lt;sup id=&quot;fnref:pingers&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:pingers&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and as well as the glow sticks and the pingers
@@ -48,10 +48,10 @@ bit to say about)&lt;/li&gt;
 
 &lt;p&gt;If you want to go a bit deeper on the semiotics of all this livecoding stuff, my
 collaborators and I&lt;sup id=&quot;fnref:gauche&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:gauche&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; have written a couple of papers on the
-semantics/semiotics of livecoding (e.g. this one and this one), but if you don’t
-get a chance before class then don’t stress too much. If there are other
-thinkers/writers/doers that you can think of who also have something to say
-about this, then bring those ideas along and we can discuss them as well.&lt;/p&gt;
+semantics/semiotics of livecoding (e.g. &lt;a href=&quot;/research/#sorensenManyMeaningsLive2014&quot;&gt;this one&lt;/a&gt; and &lt;a href=&quot;/research/#swiftVisualCodeAnnotations2013&quot;&gt;this one&lt;/a&gt;), but if you don’t get a chance before class
+then don’t stress too much. If there are other thinkers/writers/doers that you
+can think of who also have something to say about this, then bring those ideas
+along and we can discuss them as well.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
