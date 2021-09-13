@@ -3,6 +3,7 @@ layout: post
 title: "Feedback in livecoding: cui bono?"
 summary: Pre-reading (and watching) for fortnight 5 of the School of Cybernetics Master's program
 date: 2021-09-13 16:22 +1000
+tags: teaching livecoding
 ---
 
 Hi, BUILD students. I know y'all are busy, so this won't take _too_ long and
