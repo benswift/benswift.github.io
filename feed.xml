@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-09-07T12:09:54+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Moving to the School of Cybernetics</title><link href="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/" rel="alternate" type="text/html" title="Moving to the School of Cybernetics" /><published>2021-05-11T00:00:00+10:00</published><updated>2021-05-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/">&lt;p&gt;Some job news—I’ve just accepted a position in the new &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-09-13T17:04:25+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Feedback in livecoding: cui bono?</title><link href="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/" rel="alternate" type="text/html" title="Feedback in livecoding: cui bono?" /><published>2021-09-13T16:22:00+10:00</published><updated>2021-09-13T16:22:00+10:00</updated><id>https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono</id><content type="html" xml:base="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/">&lt;p&gt;Hi, BUILD students. I know y’all are busy, so this won’t take &lt;em&gt;too&lt;/em&gt; long and
+will hopefully be fun. Before my guest lecture, I’d like to introduce you (if
+you haven’t seen it before) to &lt;a href=&quot;https://toplap.org/about/&quot;&gt;livecoding&lt;/a&gt;. Imagine
+you arrive at the club&lt;sup id=&quot;fnref:pingers&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:pingers&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and as well as the glow sticks and the pingers
+and the heaving bodies on the dance floor instead of a “traditional” DJ you see
+this:&lt;/p&gt;
+
+&lt;div style=&quot;width:100%; margin: 0px auto; margin-bottom: 1rem;&quot;&gt;
+  &lt;div style=&quot;position: relative; padding-bottom: 62.5%; height: 0px;&quot;&gt;
+	&lt;iframe style=&quot;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/C2GH5JmJwhU&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
+	&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;width:100%; margin: 0px auto; margin-bottom: 1rem;&quot;&gt;
+  &lt;div style=&quot;position: relative; padding-bottom: 62.5%; height: 0px;&quot;&gt;
+	&lt;iframe style=&quot;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/a1RxpJkvqpY&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
+	&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/592452477?color=be2edd&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; title=&quot;Ushini &amp;amp;amp; Ben live @ ACMC&amp;amp;#039;21&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;what-can-cybernetics-teach-us-about-this&quot;&gt;What can cybernetics teach us about this?&lt;/h2&gt;
+
+&lt;p&gt;Obviously there are lots of feedback loops in this CPS; involving
+audience/room/livecoder/screens/lights/loudspeakers etc. But one of the things
+that interests me most about livecoding is that it gives the club-goers a chance
+to see (and hopefully to &lt;em&gt;care&lt;/em&gt;) about the source code of a computer program.&lt;/p&gt;
+
+&lt;p&gt;There’s lots we could say about this from a cybernetics perspective, but the
+things I want to focus on in this class is &lt;em&gt;feedback&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;A few questions for you to think about ahead of class. In each livecoding video&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;what has the performer chosen to &lt;em&gt;show&lt;/em&gt;?&lt;/li&gt;
+  &lt;li&gt;what has the performer chosen to &lt;em&gt;hide&lt;/em&gt;?&lt;/li&gt;
+  &lt;li&gt;in each case, why do you think those decisions were made?&lt;/li&gt;
+  &lt;li&gt;when watching, what did &lt;em&gt;you&lt;/em&gt; want more/less/different feedback about?&lt;/li&gt;
+  &lt;li&gt;if you were the AV designer for Ushini &amp;amp; my next livecoding set, what changes
+would you make?&lt;/li&gt;
+  &lt;li&gt;how does a taking a cybernetic approach to this question change answer to
+these questions? (because feedback is something that cybernetics has a fair
+bit to say about)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to go a bit deeper on the semiotics of all this livecoding stuff, my
+collaborators and I&lt;sup id=&quot;fnref:gauche&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:gauche&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; have written a couple of papers on the
+semantics/semiotics of livecoding (e.g. this one and this one), but if you don’t
+get a chance before class then don’t stress too much. If there are other
+thinkers/writers/doers that you can think of who also have something to say
+about this, then bring those ideas along and we can discuss them as well.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:pingers&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;I don’t really have any lived experience with this—I’m approaching 40 and
+have young kids and I’m normally in bed by 9:30pm. &lt;a href=&quot;#fnref:pingers&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:gauche&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;I hope it’s not too gauche to provide &lt;em&gt;two&lt;/em&gt; self-citations. &lt;a href=&quot;#fnref:gauche&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><summary type="html">Hi, BUILD students. I know y’all are busy, so this won’t take too long and will hopefully be fun. Before my guest lecture, I’d like to introduce you (if you haven’t seen it before) to livecoding. Imagine you arrive at the club[^pingers], and as well as the glow sticks and the pingers and the heaving bodies on the dance floor instead of a “traditional” DJ you see this:</summary></entry><entry><title type="html">Moving to the School of Cybernetics</title><link href="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/" rel="alternate" type="text/html" title="Moving to the School of Cybernetics" /><published>2021-05-11T00:00:00+10:00</published><updated>2021-05-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/">&lt;p&gt;Some job news—I’ve just accepted a position in the new &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of
 Cybernetics&lt;/a&gt; in the ANU College of Engineering
 and Computer Science (CECS). I’ll finish out my teaching this semester in the
 &lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;School of Computing&lt;/a&gt; then I’ll make the move in July.
@@ -10922,127 +10989,4 @@ the “whoops, you forgot to commit the file” problems, as well as minimising
 any manual “data cleaning” that my tutors &amp;amp; I have to do post-submission. &lt;a href=&quot;#fnref:autograding&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In our Computing Education Reading Group yesterday we looked at Sheard et. al.’s paper on Strategies for Maintaining Academic Integrity in First-Year from ITiCSE ‘17. It was a great discussion, with lots of new questions raised as directions for future work.</summary></entry><entry><title type="html">Respectful Learning Memes</title><link href="https://benswift.me/blog/2021/02/19/respectful-learning-memes/" rel="alternate" type="text/html" title="Respectful Learning Memes" /><published>2021-02-19T00:00:00+11:00</published><updated>2021-02-19T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/02/19/respectful-learning-memes</id><content type="html" xml:base="https://benswift.me/blog/2021/02/19/respectful-learning-memes/">&lt;p class=&quot;hl-para&quot;&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post was noticed by the good folks at the &lt;a href=&quot;https://services.anu.edu.au/business-units/centre-for-learning-teaching&quot;&gt;ANU Centre for
-Learning and
-Teaching&lt;/a&gt;,
-and they asked if they could syndicate it on their Interact blog—so you can
-&lt;a href=&quot;https://interact.weblogs.anu.edu.au/2021/03/03/respectful-learning-memes/&quot;&gt;read it
-there&lt;/a&gt;
-as well.&lt;/p&gt;
-
-&lt;p&gt;A few years ago I re-wrote one of our core &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;computer architecture
-courses&lt;/a&gt; (it has the course code
-COMP2300). It’s a large (400+ students) compulsory course, so there’s a spread
-of different levels of interest, aptitude &amp;amp; enthusiasm in the student cohort.&lt;/p&gt;
-
-&lt;p&gt;One of the tricky parts of COMP2300 is that it doesn’t use a high-level
-programming language (with recognisable keywords like &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;else&lt;/code&gt;, &lt;code&gt;for&lt;/code&gt;, etc.)
-where a function which adds two integers (whole numbers) together might look
-like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;int add(int a, int b) {
-  return a + b;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Instead, in COMP2300 all the programming is done in “assembly” language, which
-is fairly close to the direct stream of bytes that the CPU sees as it’s
-executing your code. But it’s less readable to humans—the above &lt;code&gt;add&lt;/code&gt; function
-might look like this in assembly language:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-arm&quot;&gt;add:
-  sub  sp, sp, #8
-  str  r0, [sp, #4]
-  str  r1, [sp]
-  ldr  r0, [sp, #4]
-  ldr  r1, [sp]
-  add  r0, r0, r1
-  add  sp, sp, #8
-  bx   lr
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;While this is a great chance to learn how CPUs work, the unfamiliarity can
-be challenging—and the students aren’t shy about saying so.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-hidden-communication-channels&quot;&gt;The hidden communication channels&lt;/h2&gt;
-
-&lt;p&gt;I’ve learned over the last few years is that for every “official” course
-forum/communication channel there’s &lt;em&gt;at least&lt;/em&gt; one shadow channel that’s created
-somewhere else. These Facebook/WhatsApp/Insta/WeChat/TikTok/etc. channels are
-where the students really let their hair down and say what they think about the
-course.&lt;/p&gt;
-
-&lt;p&gt;One unexpected (to me) upside of these channels is that as the students chat
-with one another, they come up with some really helpful explanations of the
-concepts they’re struggling with in the course material. And they’re &lt;em&gt;really&lt;/em&gt;
-good at making &lt;strong&gt;memes&lt;/strong&gt;. Here are just a few of the ones which I’ve seen end up
-on the allowed “cheat sheets” in the COMP2300 final exam.&lt;/p&gt;
-
-&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;COMP2300 offramp meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-offramp.jpeg&quot; /&gt;
-
-  
-&lt;/picture&gt;
-
-&lt;hr /&gt;
-
-&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;COMP2300 galaxy brain meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg&quot; /&gt;
-
-  
-&lt;/picture&gt;
-
-&lt;hr /&gt;
-
-&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;COMP2300 Joey from Friends meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-joey.jpeg&quot; /&gt;
-
-  
-&lt;/picture&gt;
-
-&lt;hr /&gt;
-
-&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;COMP2300 ObiWan meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-obiwan.jpeg&quot; /&gt;
-
-  
-&lt;/picture&gt;
-
-&lt;hr /&gt;
-
-&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;COMP2300 Anakin Skywalker meme&quot; src=&quot;/assets/images/posts/respectful-learning-memes/comp2300-anakin.jpeg&quot; /&gt;
-
-  
-&lt;/picture&gt;
-
-&lt;p&gt;I don’t know where they came from—although clearly at least some of them were
-created specifically for COMP2300. But I know from talking to students that they
-really helped them understand and remember key concepts from the course.&lt;/p&gt;
-
-&lt;h2 id=&quot;harnessing-students-as-content-creators&quot;&gt;Harnessing students as content creators&lt;/h2&gt;
-
-&lt;p&gt;I’m currently brushing up my course syllabus for the new semester which starts
-next week. And I’m sure my students will make new memes for (among other things)
-explaining the course content to each other. But if these memes only appear on
-the “secret” channels then that’s not good from a student equity perspective. I
-want to make sure &lt;em&gt;all&lt;/em&gt; students benefit, not just the ones in the right
-“hidden” channels.&lt;/p&gt;
-
-&lt;p&gt;So this year I’m going to include a meme thread as part of the official course
-forum. Since it’s an official course communication channel I’m sure it’ll be
-kept &lt;a href=&quot;https://twitter.com/RespectfulMemes&quot;&gt;respectful&lt;/a&gt;, and then all my students
-can benefit. As I teach bigger and more diverse classes, the chance to harness
-these students’ brilliance in meme-making (and some of them are &lt;em&gt;seriously&lt;/em&gt; good
-at it) to help all my students learn seems like a win. I can’t wait to see what
-they come up with ☺&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: if you’re using MS Teams for your class discussion, there’s even a few
-settings relating to memes and gifs which you might want to make sure are
-enabled.&lt;/p&gt;
-
-&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;MS Teams meme settings&quot; src=&quot;/assets/images/posts/respectful-learning-memes/teams-meme-settings.png&quot; /&gt;
-
-  
-&lt;/picture&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">Note: this post was noticed by the good folks at the ANU Centre for Learning and Teaching, and they asked if they could syndicate it on their Interact blog—so you can read it there as well.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><summary type="html">In our Computing Education Reading Group yesterday we looked at Sheard et. al.’s paper on Strategies for Maintaining Academic Integrity in First-Year from ITiCSE ‘17. It was a great discussion, with lots of new questions raised as directions for future work.</summary></entry></feed>
