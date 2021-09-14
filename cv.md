@@ -298,7 +298,7 @@ Week.
 
 ### Peer-reviewed publications {#peer-reviewed-publications}
 
-{% bib_list_pubs ben-pubs.bib %}
+{% bib_list_pubs ben-pubs.bib year_links %}
 
 ### Invited talks {#invited-talks}
 

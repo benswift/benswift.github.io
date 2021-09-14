@@ -13,12 +13,17 @@ module Jekyll
 
   class BibListPubsTag < Liquid::Tag
 
-    def initialize(tag_name, bib_file, tokens)
+    def initialize(tag_name, text, tokens)
       super
       # Seriously, don't ever ask me how long it took me to figure out that the
-      # bib_file argument was ending up with whitespace attached to it and that
+      # text argument was ending up with whitespace attached to it and that
       # the .strip method was required... If you do I'll start to cry.
-      @bib = BibTeX.open("_data/#{bib_file.strip}")
+
+      # first component of text is the bibfile
+      @bib = BibTeX.open("_data/#{text.split.first.strip}")
+
+      # all the other elements (if present) are options
+      @options = text.split[1..-1].map(&:intern)
 
       @baseurl = Jekyll.configuration({})['baseurl']
     end
@@ -106,15 +111,24 @@ module Jekyll
 
     def render_bib_year(year)
       output = @bib.query("@entry[year=#{year}]").map { |b| render_bibitem b }
-      "<h3 id='#{year}-pubs'>#{year}</h3><div class='bibliography'>#{output.join(' ')}</div>"
+      "<div class='bibliography'>#{output.join(' ')}</div>"
     end
 
     def render(context)
       years = @bib.map { |b| bib_year b }.uniq.sort.reverse!
-      year_links = years.map do |year|
-        "<a href='##{year}-pubs'>#{year}</a>"
-      end.join(" | ")
-      "<p>#{year_links}</p>" + years.map { |year| render_bib_year year }.join("\n")
+
+      if @options.include? :year_links
+        year_links = years.map do |year|
+          "<a href='##{year}-pubs'>#{year}</a>"
+        end.join(" | ")
+        "<p>#{year_links}</p>" + years.map do |year|
+          "<h3 id='#{year}-pubs'>#{year}</h3>" + render_bib_year(year)
+        end.join("\n")
+      else
+        years.map do |year|
+          render_bib_year(year)
+        end.join("\n")
+      end
     end
 
   end

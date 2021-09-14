@@ -34,7 +34,7 @@ to make your email stand out from the crowd.
 
 ## Peer-reviewed publications
 
-{% bib_list_pubs ben-pubs.bib %}
+{% bib_list_pubs ben-pubs.bib year_links %}
 
 ## Curated/invited livecoding performances
 

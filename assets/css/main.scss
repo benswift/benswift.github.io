@@ -339,8 +339,8 @@ table {
   p {
     margin: 0.4em 0;
   }
-  & > div + div {
-    margin-top: 2em;
+  & > div {
+    margin-bottom: 2em;
   }
   .date {
     font-weight: 300;
