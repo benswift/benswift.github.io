@@ -33,10 +33,12 @@ to see (and hopefully to _care_) about the source code of a computer program.
 There's lots we could say about this from a cybernetics perspective, but the
 things I want to focus on in this class is _feedback_.
 
-A few questions for you to think about ahead of class. In each livecoding video
+Here are a few questions for you to think about ahead of class. In each
+livecoding video:
 
 - what has the performer chosen to _show_?
 - what has the performer chosen to _hide_?
+- who is the feedback _for_[^cui]?
 - in each case, why do you think those decisions were made?
 - when watching, what did _you_ want more/less/different feedback about?
 - if you were the AV designer for Ushini & my next livecoding set, what changes
@@ -44,13 +46,19 @@ A few questions for you to think about ahead of class. In each livecoding video
 - how does a taking a cybernetic approach to this question change answer to
   these questions? (because feedback is something that cybernetics has a fair
   bit to say about)
+  
+[^cui]:
+    Hence the pretentious latin in the title of this blog post.
 
 If you want to go a bit deeper on the semiotics of all this livecoding stuff, my
-collaborators and I[^gauche] have written a couple of papers on the
-semantics/semiotics of livecoding (e.g. this one and this one), but if you don't
-get a chance before class then don't stress too much. If there are other
-thinkers/writers/doers that you can think of who also have something to say
-about this, then bring those ideas along and we can discuss them as well.
+collaborators and I have written a couple of papers[^gauche] on the
+semantics/semiotics of livecoding:
+
+{% bib_list_pubs masters-pre-reading-21.bib %}
+
+If there are other thinkers/writers/doers that you can think of who also have
+something to say about this, then bring those ideas along and we can discuss
+them as well.
 
 [^gauche]:
     I hope it's not too gauche to provide _two_ self-citations.
