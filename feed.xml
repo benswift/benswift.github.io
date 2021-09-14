@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-09-14T10:02:19+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Feedback in livecoding: cui bono?</title><link href="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/" rel="alternate" type="text/html" title="Feedback in livecoding: cui bono?" /><published>2021-09-13T16:22:00+10:00</published><updated>2021-09-13T16:22:00+10:00</updated><id>https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono</id><content type="html" xml:base="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/">&lt;p&gt;Hi, BUILD students. I know y’all are busy, so this won’t take &lt;em&gt;too&lt;/em&gt; long and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2021-09-14T11:16:30+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Feedback in livecoding: cui bono?</title><link href="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/" rel="alternate" type="text/html" title="Feedback in livecoding: cui bono?" /><published>2021-09-13T16:22:00+10:00</published><updated>2021-09-13T16:22:00+10:00</updated><id>https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono</id><content type="html" xml:base="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/">&lt;p&gt;Hi, BUILD students. I know y’all are busy, so this won’t take &lt;em&gt;too&lt;/em&gt; long and
 will hopefully be fun. Before my guest lecture, I’d like to introduce you (if
 you haven’t seen it before) to &lt;a href=&quot;https://toplap.org/about/&quot;&gt;livecoding&lt;/a&gt;. Imagine
 you arrive at the club&lt;sup id=&quot;fnref:pingers&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:pingers&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and as well as the glow sticks and the pingers
@@ -52,8 +52,6 @@ bit to say about)&lt;/li&gt;
 collaborators and I have written a couple of papers&lt;sup id=&quot;fnref:gauche&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:gauche&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; on the
 semantics/semiotics of livecoding:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#2014-pubs&quot;&gt;2014&lt;/a&gt; | &lt;a href=&quot;#2013-pubs&quot;&gt;2013&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;2014-pubs&quot;&gt;2014&lt;/h3&gt;
 &lt;div class=&quot;bibliography&quot;&gt;&lt;div&gt;
 
 &lt;p class=&quot;pubitem&quot; id=&quot;sorensenManyMeaningsLive2014&quot;&gt;&lt;span class=&quot;title&quot;&gt;&lt;a href=&quot;https://doi.org/10.1162/COMJ_a_00230&quot;&gt;The Many Meanings of Live Coding&lt;/a&gt;&lt;/span&gt; &lt;span class=&quot;date&quot;&gt;(2014)&lt;/span&gt;&lt;/p&gt;
@@ -66,7 +64,6 @@ semantics/semiotics of livecoding:&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h3 id=&quot;2013-pubs&quot;&gt;2013&lt;/h3&gt;
 &lt;div class=&quot;bibliography&quot;&gt;&lt;div&gt;
 
 &lt;p class=&quot;pubitem&quot; id=&quot;swiftVisualCodeAnnotations2013&quot;&gt;&lt;span class=&quot;title&quot;&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/6617345&quot;&gt;Visual Code Annotations for Cyberphysical Programming&lt;/a&gt;&lt;/span&gt; &lt;span class=&quot;date&quot;&gt;(2013)&lt;/span&gt;&lt;/p&gt;

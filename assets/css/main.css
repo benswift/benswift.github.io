@@ -281,7 +281,7 @@ table td { vertical-align: top; }
 
 .bibliography p { margin: 0.4em 0; }
 
-.bibliography > div + div { margin-top: 2em; }
+.bibliography > div { margin-bottom: 2em; }
 
 .bibliography .date { font-weight: 300; color: #555; }
 
