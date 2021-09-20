@@ -7,7 +7,7 @@
 {% if fp %}I am{% else %}Ben Swift is{% endif %} an internationally-recognised
 interdisciplinary
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ) and
-electronic/computer music artist, and currently a Educational Experience
+electronic/computer music artist, and currently an Educational Experience
 Designer (Senior Lecturer) in the [School of
 Cybernetics](https://3ainstitute.org) at the [Australian National
 University](https://anu.edu.au)---Australia's
@@ -43,6 +43,6 @@ alt="GitHub stars"
 src="https://img.shields.io/github/stars/digego/extempore"></a>, the
 state-of-the-art in livecoding languages. Extempore's users are a worldwide
 community of programmers, artists, musicians, and data visualisation
-practitioners. {% if fp %}I have{% else %}He has{% endif %} more than 10 years
+practitioners. {% if fp %}I have{% else %}He has{% endif %} more than 10 years'
 experience as an OSS community manager, technical writer, software engineer and
 creative code outreach ambassador.
