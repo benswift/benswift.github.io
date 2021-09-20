@@ -12,8 +12,8 @@ link livecoding.md %}) and [maker](https://github.com/benswift), and one half of
 the core development team for the
 [Extempore](https://github.com/digego/extempore) livecoding environment.
 
-I'm an [Educational Experience Designer (Senior
-Lecturer)](https://cecs.anu.edu.au/people/ben-swift) in the [School of
+I'm an [Educational Experience Designer/Senior
+Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the [School of
 Cybernetics](https://3ainstitute.org) at the [Australian National
 University](https://anu.edu.au/) in Canberra, Australia, where I lead the [c/c/c
 (code/creativity/culture)
