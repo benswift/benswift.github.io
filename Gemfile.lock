@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: https://gitlab.cecs.anu.edu.au/lucy/jekyll-revealify-plugin.git
-  revision: 3d5d2ef6a5c59113af9f506563c5d87c26dc59da
+  revision: b990f43a948e04f65e8b2770736ea84f42894d16
   branch: master
   specs:
-    jekyll-revealify-plugin (2.0.0.beta)
+    jekyll-revealify-plugin (2.1.0)
       jekyll
       nokogiri
 
@@ -30,7 +30,7 @@ GEM
     ethon (0.14.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    ffi (1.15.3)
+    ffi (1.15.4)
     forwardable-extended (2.6.0)
     html-proofer (3.19.2)
       addressable (~> 2.3)
@@ -43,7 +43,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    jekyll (4.2.0)
+    jekyll (4.2.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -75,17 +75,17 @@ GEM
       kramdown (~> 2.0)
     latex-decode (0.3.2)
     liquid (4.0.3)
-    listen (3.6.0)
+    listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.5.3)
-    nokogiri (1.11.7)
-      mini_portile2 (~> 2.5.0)
+    mini_portile2 (2.6.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
-    parallel (1.20.1)
+    parallel (1.21.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
@@ -95,7 +95,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (3.26.0)
+    rouge (3.26.1)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -103,7 +103,7 @@ GEM
       unicode-display_width (~> 1.1, >= 1.1.1)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    unicode-display_width (1.7.0)
+    unicode-display_width (1.8.0)
     webrick (1.7.0)
     yell (2.2.2)
 
