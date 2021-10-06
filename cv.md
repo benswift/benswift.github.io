@@ -168,6 +168,8 @@ I have also written and delivered the following courses:
 
 ### ANU {#service-anu}
 
+- **2021--** Associate Director (Research), _ANU School of Cybernetics_
+
 - **2021** Leader, _CECS Website Redesign Tiger Team_
 
 - **2016--** Design Lead, [_Lucy Project_](https://gitlab.cecs.anu.edu.au/lucy)
