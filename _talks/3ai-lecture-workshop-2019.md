@@ -2,7 +2,7 @@
 event: 3ai lecture/workshop, S2 2019
 title: What can livecoding teach us about cyber-physical systems?
 date: "2019-10-01"
-permalink: /talks/3ai-lecture-workshop/
+permalink: /talks/3ai-lecture-workshop-2019/
 summary: >-
   Cyber-physical systems sure are important. But what counts as a CPS? And what
   can they teach us about the things that are important as we design and examine
