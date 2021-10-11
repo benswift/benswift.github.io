@@ -25,10 +25,10 @@ summary: >-
 
 ## outline
 
-| 11:10 | intro: the central problem with laptop performance |
-| 11:15 | what does cybernetics say?                         |
-| 11:20 | livecoding AMA                                     |
-| 11:35 | stage designer wanted---pitch me                   |
+| **11:10** | intro: the central problem with laptop performance |
+| **11:15** | what does cybernetics say?                         |
+| **11:20** | livecoding AMA                                     |
+| **11:35** | stage designer wanted---pitch me                   |
 
 {% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" heading="intro" %}
 
