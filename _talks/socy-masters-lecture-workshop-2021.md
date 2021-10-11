@@ -21,7 +21,7 @@ summary: >-
 
 ## who am I?
 
-<iframe src="{% link index.md %}" style="width:100%;height:100vh;" frameborder="0"></iframe>
+<iframe src="{% link index.md %}" class="stretch" style="width:100%;height:50vh;" frameborder="0"></iframe>
 
 ## outline
 
