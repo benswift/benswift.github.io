@@ -40,6 +40,11 @@ what do you think oldmate is doing?
 
 {% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/jud-mackrill-qnt9iigV444-unsplash.jpg" %}
 
+---
+
+<textarea class="stretch preso-text" placeholder="what do you think oldmate is doing?">
+</textarea>
+
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" %}
 
 {% include slides/impact.html %}

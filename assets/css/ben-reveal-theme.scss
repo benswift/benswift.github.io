@@ -167,6 +167,11 @@
       margin: 1em 0;
   }
 
+  textarea.preso-text {
+      font-size: 1rem;
+      font-family: "Fira Sans";
+  }
+
   table {
     // filthy hacks because tables don't play nice with padding
     width: 100%;
