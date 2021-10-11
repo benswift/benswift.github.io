@@ -25,43 +25,46 @@ summary: >-
 
 ## outline
 
-| 11:10 | intro: the problem with livecoding                       |
-| 11:15 | control & communication in the livecoder and the machine |
-| 11:20 | livecoding AMA                                           |
-| 11:35 | stage designer wanted---pitch me                         |
+| 11:10 | intro: the central problem with laptop performance |
+| 11:15 | what does cybernetics say?                         |
+| 11:20 | livecoding AMA                                     |
+| 11:35 | stage designer wanted---pitch me                   |
 
 {% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" heading="intro" %}
 
 (I assume you've done the [pre-reading/watching]({% link _posts/2021-09-13-feedback-in-livecoding-cui-bono.md %}))
 
-{% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/jud-mackrill-qnt9iigV444-unsplash.jpg" heading="the problem of livecoding" %}
+{% include slides/impact.html %}
 
-what do you think oldmate is doing?
+the **central problem** of laptop performance
 
 {% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/jud-mackrill-qnt9iigV444-unsplash.jpg" %}
 
----
+{:.fragment .fade-out}
 
-<textarea class="stretch preso-text" placeholder="what do you think oldmate is doing?">
-</textarea>
+what do you think oldmate is doing?
+
+## what does cybernetics say?
+
+> control & communication in the (livecoding) animal and the machine
+
+what are the flows of information (control & communication)?
+
+and for whose benefit (cui bono)?
 
 {% include slides/background-image.html image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" %}
-
-{% include slides/impact.html %}
-
-what information should flow?
-
-**cui bono**: and for whose benefit?
 
 {% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" %}
 
 in watching the video, what did you **pay attention** to, and why? 
 
-what _else_ did you want to know before/during/after?
+what information was missing; what _else_ did you want to know
+before/during/after?
 
 _(5min breakout rooms)_
 
-hint: later, you'll get to have your say about how to improve things
+_hint_: later, you'll get to have your say about how these flows could be
+improved
 
 {% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/ama-homepage.jpg" heading="I'm a livecoder, AMA" %}
 
@@ -71,22 +74,25 @@ set design, which is sometimes referred to as scenic design, refers to the
 design and creation of the sets used in works of performance art
 [(source)](https://www.theartcareerproject.com/careers/set-design/)
 
-pitch me---what should my (and Ushini's) performance setup be?
+pitch time---what's your vision for my (and Ushini's) livecoding performance
+setup?
 
 _(10min breakout rooms, then 10min shareback)_
 
 ## some questions to ponder?
 
+- what sensory modalities (sound/visuals/etc) can you use?
 - what do K-pop stars/comedians/twitch streamers/DJs/etc. do well?
 - what feedback should the _performer_ get?
-- where are the feedback **loops**?
 - what information should be _hidden_?
 - what's the goal? what state should the system steer towards, and how?
-- what does cybernetics have to say about all this?
+- where are the feedback **loops**?
 
-{% include slides/impact.html %}
+remember: it's a pitch... you've gotta sell it (with theory!)
 
-**shareback** time
+{% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/101345.jpg" heading="pitch time" %}
+
+1--2 min per group
 
 ## what's next?
 
