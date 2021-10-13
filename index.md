@@ -17,10 +17,11 @@ Lecturer](https://cecs.anu.edu.au/people/ben-swift) in the [School of
 Cybernetics](https://3ainstitute.org) at the [Australian National
 University](https://anu.edu.au/) in Canberra, Australia, where I lead the [c/c/c
 (code/creativity/culture)
-studio](https://cs.anu.edu.au/code-creativity-culture/). The **c/c/c studio** is
-a teaching & research group which exists to open up spaces for discussion about
-the way that `code` is shaping flows of information/culture/humanity in today's
-(and tomorrow's) world.
+studio](https://cs.anu.edu.au/code-creativity-culture/) (home of the [ANU Laptop
+Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/)). The **c/c/c studio**
+is a teaching & research group which exists to open up spaces for discussion
+about the way that `code` is shaping flows of information/culture/humanity in
+today's (and tomorrow's) world.
 
 I care a lot about making computing a welcoming, interesting and creatively
 satisfying place, especially for people who don't fit the traditional picture of
