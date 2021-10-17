@@ -105,8 +105,8 @@ hidden: true
 ### Current courses
 
 I am currently the course convenor & lecturer for the following courses in the
-[ANU School of Computing](https://cs.anu.edu.au/courses/comp2300/) (follow links
-to the curriculum, available under a Creative Commons
+ANU School of Computing (follow links to the curriculum, available under a
+Creative Commons
 [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) licence):
 
 - [COMP2710: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/) is a
