@@ -220,7 +220,7 @@ I have served as a grant and paper reviewer for
 [OzCHI](http://www.ozchi.org/ozchi2011/committee/committee.html),
 [ACMC](https://computermusic.org.au), [NIME](https://www.nime.org),
 [IEEEVR](https://ieeevr.org), [FWF Austrian Science
-Fund](https://www.fwf.ac.at/en/) [CMJ](http://computermusicjournal.org),
+Fund](https://www.fwf.ac.at/en/), [CMJ](http://computermusicjournal.org),
 [Leonardo](https://www.mitpressjournals.org/loi/leon),
 [ICSE](http://www.icse-conferences.org) and
 [VL/HCC](https://conferences.computer.org/VLHCC/).
