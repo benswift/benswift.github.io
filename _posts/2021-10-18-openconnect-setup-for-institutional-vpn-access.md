@@ -14,8 +14,8 @@ alternative, [openconnect](http://www.infradead.org/openconnect/) is just a
 `brew install openconnect` away (on macOS, at least), and after a bit of setting
 up, it works seamlessly.
 
-If you're in a similar situation, here's the config I use to access the campus
-network via the VPN:
+If you're in a similar situation, here's a terminal command you can use to
+access the campus network via the VPN:
 
 ```
 sudo openconnect \
