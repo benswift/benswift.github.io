@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Telopea Hour of Code | benswift.me</title>
+<title>openconnect setup for institutional VPN access | benswift.me</title>
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="Telopea Hour of Code" />
+<meta property="og:title" content="openconnect setup for institutional VPN access" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need today: the p5 web editor and the slides for the presentation." />
-<meta property="og:description" content="Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need today: the p5 web editor and the slides for the presentation." />
-<link rel="canonical" href="https://benswift.me/blog/2017/09/06/telopea-hour-of-code/" />
-<meta property="og:url" content="https://benswift.me/blog/2017/09/06/telopea-hour-of-code/" />
+<meta name="description" content="My institution’s IT policies have recently changed and port 22 is now blocked from off-campus. That’s a real pain if you use ssh to push/pull from our on-prem GitLab servers (which I need to do all the time)." />
+<meta property="og:description" content="My institution’s IT policies have recently changed and port 22 is now blocked from off-campus. That’s a real pain if you use ssh to push/pull from our on-prem GitLab servers (which I need to do all the time)." />
+<link rel="canonical" href="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/" />
+<meta property="og:url" content="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-09-06T08:57:00+10:00" />
+<meta property="article:published_time" content="2021-10-18T00:00:00+11:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Telopea Hour of Code" />
+<meta property="twitter:title" content="openconnect setup for institutional VPN access" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Telopea Hour of Code","dateModified":"2017-09-06T08:57:00+10:00","datePublished":"2017-09-06T08:57:00+10:00","url":"https://benswift.me/blog/2017/09/06/telopea-hour-of-code/","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2017/09/06/telopea-hour-of-code/"},"@type":"BlogPosting","description":"Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need today: the p5 web editor and the slides for the presentation.","@context":"https://schema.org"}</script>
+{"headline":"openconnect setup for institutional VPN access","dateModified":"2021-10-18T00:00:00+11:00","datePublished":"2021-10-18T00:00:00+11:00","url":"https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/","author":{"@type":"Person","name":"Ben Swift"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/"},"@type":"BlogPosting","description":"My institution’s IT policies have recently changed and port 22 is now blocked from off-campus. That’s a real pain if you use ssh to push/pull from our on-prem GitLab servers (which I need to do all the time).","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -69,27 +69,52 @@
 
 	  <main aria-label="Content">
 		<article>
-  <p class="post-date">06 Sep '17</p>
-  <h1>Telopea Hour of Code</h1>
+  <p class="post-date">18 Oct '21</p>
+  <h1>openconnect setup for institutional VPN access</h1>
   
 <p class="post-tag-container">
   
-  <a class="post-tag" href='/blog/tag/teaching'>
-	teaching
-  </a>
-  
-  <a class="post-tag" href='/blog/tag/cs4all'>
-	cs4all
+  <a class="post-tag" href='/blog/tag/tools'>
+	tools
   </a>
   
 </p>
 
 
-  <p>Welcome, Telopea Hour of Code students. Here are a couple of links you’ll need
-today: the <a href="https://alpha.editor.p5js.org/">p5 web editor</a> and the <a href="/talks/p5-hour-of-code/">slides for
-the presentation</a>.</p>
+  <p>My <a href="https://www.anu.edu.au">institution’s</a> IT policies have recently changed and
+port 22 is now blocked from off-campus. That’s a real pain if you use ssh to
+push/pull from our on-prem GitLab servers (which I need to do <em>all the time</em>).</p>
 
-<p>Have fun!</p>
+<p>The recommended solution is to come in via a VPN—which is not a terrible idea
+in principle. However, the institution’s recommended setup requires some janky
+GlobalProtect client, which (for me at least) was pretty crashy. As an
+alternative, <a href="http://www.infradead.org/openconnect/">openconnect</a> is just a
+<code>brew install openconnect</code> away (on macOS, at least), and after a bit of setting
+up, it works seamlessly.</p>
+
+<p>If you’re in a similar situation, here’s the config I use to access the campus
+network via the VPN:</p>
+
+<pre><code>sudo openconnect \
+  --user=uXXXXXXX \ ## replace with your uid
+  --protocol=gp \   ## because it's a GlobalProtect VPN
+  https://staff-access.anu.edu.au
+</code></pre>
+
+<p>The above command will prompt for your usual password, which you enter in the
+terminal. Since I already have that info in an encrypted file, I have a slightly
+modified setup (this is in a script called <code>vpn.sh</code>):</p>
+
+<pre><code>#!/usr/bin/env zsh
+
+# pull ANU password out of encrypted authinfo file, pipe it to stdin
+gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | \
+    awk '/machine smtp.office365.com login uXXXXXXX@anu.edu.au/ {print $NF}' | \
+    # start the VPN
+    sudo openconnect --user=uXXXXXXX --protocol=gp --passwd-on-stdin https://staff-access.anu.edu.au
+</code></pre>
+
+<p>Happy VPN-ing.</p>
 
 </article>
 
@@ -140,8 +165,8 @@ the presentation</a>.</p>
   <!-- open source humblebrag -->
   <p>
 	site revision <code>d1c1151f6</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/d1c1151f6/_posts/2017-09-06-telopea-hour-of-code.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2017-09-06-telopea-hour-of-code.md">page history</a>
+	<a href="https://github.com/benswift/benswift.github.io/blob/d1c1151f6/_posts/2021-10-18-openconnect-setup-for-institutional-vpn-access.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2021-10-18-openconnect-setup-for-institutional-vpn-access.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
