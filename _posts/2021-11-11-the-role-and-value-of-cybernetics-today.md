@@ -1,5 +1,6 @@
 ---
-title: "Consider the livecoder: understanding and harnessing complex flows of ideas, software and humans"
+title: Livecoder-in-the-club as a system
+subtitle: understanding and harnessing complex flows of ideas, software and humans
 tags: cybernetics
 hidden: true
 ---
