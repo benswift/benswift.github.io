@@ -131,7 +131,7 @@ has it categorised under Computers > Cybernetics
 
 <li>The power to transcend paradigms.</li>
 
-<ol>
+</ol>
 
 ## So what's the point?
 
