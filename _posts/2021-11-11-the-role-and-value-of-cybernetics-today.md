@@ -47,3 +47,15 @@ essential if you are to take advantage of the presentation coaching in Phase 2.
 
 {% endcomment %}
 
+<div class="hl-para" markdown="1">
+
+Here in the [School of Cybernetics](https://3ainstitute.org) we are building our
+capability in cybernetics-–-its histories and possibilities–--and working out
+how each of us will contribute to the new cybernetics for the 21st Century.
+
+This blog post, written for a general audience, is part of a content development
+sprint, written in reponse to the task of developing a short (1000 words)
+persuasive argument about the role and value of cybernetics as an approach to
+shape futures through and with technology.
+
+</div>
