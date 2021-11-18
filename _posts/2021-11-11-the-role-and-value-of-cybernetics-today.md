@@ -148,7 +148,11 @@ that changing the rate at which I turn brain juice into code (perhaps having a
 nicer keyboard, perhaps having better code auto-completion support, or perhaps
 just good-ol' _practice_ to improve my coding skills) is likely to be more
 impactful than starting with a bigger store of brain juice (so, thankfully,
-there's no need to buy shady adderall on the dark web).
+there's no need to buy shady adderall on the dark web). Will Larson (who has
+been a software engineering leader at Calm, Stripe, Uber, and Digg) [has some
+interesting ideas on systems thinking as applied to software
+development](https://lethain.com/systems-thinking/) that I'm keen to think more
+about as well.
 
 For even greater leverage, there are interventions which are related to
 restructuring the system itself, for example adding new information flows
