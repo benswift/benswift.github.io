@@ -1,6 +1,7 @@
 ---
 title: "The leverage of livecoding: understanding and harnessing complex flows of ideas, software and humans"
 tags: cybernetics
+hidden: true
 ---
 
 <div class="hl-para" markdown="1">
