@@ -70,7 +70,9 @@ are:
   themselves (and therefore contributing positively to the amount of good vibes
   in the room) depends on all sorts of things. But, in a real sense, the
   creation of **good vibes** in the room is the goal of the live coder---or at
-  least it's _my_ goal when I perform in this situtation.
+  least it's _my_ goal when I perform in this situtation. So I (like any
+  performer) feed off the good vibes, replenishing (to some extent) my brain
+  juice.
 
 It's a bit clearer to see in a picture:
 
@@ -85,3 +87,80 @@ which is a nice way to think about it, and actually is a relatively accurate
 picture of what I _feel_ like I'm doing when I'm performing.
 
 ## How does cybernetics help us understand this system?
+
+Because the above components of the system
+
+talk about feedback loops
+talk about what contributes to the stocks and flows (maybe here, or maybe in the
+next section)
+
+## Where should we intervene to make things better?
+
+_(in increasing order of effectiveness)_
+
+Donella Meadows' [Leverage Points: Places to Intervene in a
+System](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
+
+[Google
+Books](https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y)
+has it categorised under Computers > Cybernetics
+
+<ol reversed>
+
+<li>Constants, parameters, numbers (such as subsidies, taxes, standards).</li>
+
+<li>The sizes of buffers and other stabilizing stocks, relative to their flows.</li>
+
+<li>The structure of material stocks and flows (such as transport networks, population age structures).</li>
+
+<li>The lengths of delays, relative to the rate of system change.</li>
+
+<li>The strength of negative feedback loops, relative to the impacts they are trying to correct against.</li>
+
+<li>The gain around driving positive feedback loops.</li>
+
+<li>The structure of information flows (who does and does not have access to information).</li>
+
+<li>The rules of the system (such as incentives, punishments, constraints).</li>
+
+<li>The power to add, change, evolve, or self-organize system structure.</li>
+
+<li>The goals of the system.</li>
+
+<li>The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.</li>
+
+<li>The power to transcend paradigms.</li>
+
+<ol>
+
+## So what's the point?
+
+Obviously the livecoder-in-the-club system described above is an
+oversimplification; it makes certain things easy to see but renders other things
+invisible, and every aspect of both the components (the things it talks about)
+and their relationships (the connectinos between them) is contestable. But
+that's one of the benefits by laying things out like this---we can at least see
+the things that we're explicitly considering, and we may well need to add new
+things to the model for consideration (and examine all the new connections and
+potential feedback loops those new things create).
+
+As we've seen above, ideas from cybernetics and systems thinking can also help
+us move beyond just describing things to figuring out where to place our
+energies to effect change---where we'll get the most leverage.
+
+
+
+
+
+## extras
+
+and there's _kindof_ a blurry line between where the code ends and the music
+begins in livecoding (i.e. there's the code you see on the screen, which is
+the code that I'm writing & executing "live", but there's also a bunch of
+pre-written code just to get the music to come out of the speakers properly)
+an
+
+
+If you've seen me do it live, I hope you've enjoyed it; if you haven't I hope
+you'll take some time to look around stuff I've made and try and imagine what
+it's like to be at a livecoding gig.
