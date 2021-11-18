@@ -222,6 +222,12 @@ footer {
 
 // posts
 
+.post-subtitle {
+    font-style: italic;
+    color: $text-grey;
+    margin-bottom: 2em;
+}
+
 .post-date {
   font-style: italic;
   color: $text-grey;
