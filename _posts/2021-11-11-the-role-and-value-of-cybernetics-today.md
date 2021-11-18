@@ -19,17 +19,26 @@ shape futures through and with technology.
 
 If you follow this blog, you'll know that I'm a [livecoder]({% link
 livecoding.md %})---I _code_ (i.e. write computer programs) to make music in a
-club setting with an audience that just wants to dance and have a good time.
-With the computer code, the thumping music, the dancing humans; there's
-certainly a lot of different stuff going on, and so you might find watching a
-livecoder in action to be entertaining, or impressive, or bewildering, or all of
-the above. In this post I want to use some ideas from cybernetics to give you a
-sense for what it _feels like_ I'm doing when I do it, and then to look at all
-the things going on in a way which suggests ways to intervene to change the
-system for the better, that is, to find ways to put on a better show for the
-adoring crowds.
+club setting with an audience that just wants to dance and have a good
+time[^niche]. With the computer code, the thumping music, the dancing humans;
+there's certainly a lot of different stuff going on, and so you might find
+watching a livecoder in action to be entertaining, or impressive, or
+bewildering, or all of the above. Most of all, when you see/attend a livecoding
+gig for the first time, I bet that your initial feeling is one of _what is going
+on?_
 
-## Livecoder as a system
+In this post I'm going to use some ideas from cybernetics to try and help you
+make sense of it---to help you understand for what it _feels like_ I'm doing
+when I do it. Then, we're going to use those ideas to think about ways to make
+livecoding even better, that is, to put on a better show for the adoring crowds.
+
+[^niche]:
+    It's a pretty niche activity, but there's an [international
+    community](https://toplap.org) of us, and if you're interested then you can
+    [follow me on twitter](https://twitter.com/benswift) to hear about upcoming
+    gigs.
+
+## Livecoder-in-the-club as a system
 
 Cybernetics is all about the looking at and reasoning about **systems** with
 _goals_, interacting with and connected to their _environment_ via _feedback
@@ -38,8 +47,8 @@ loops_. These sorts of systems exist at all sorts of different scales
 doesn't matter what level of "magnification" you look at, each component of a
 system is itself a system of interacting components, and each system is itself a
 component interacting in a larger system. But since that's all pretty abstract,
-let's return to the example of the livecoder, where the components of the system
-are:
+let's return to the example of the livecoder in the club, where the components
+of the system are:
 
 - I start with a full tank of **brain juice** which allows me to work on tricky
   coding problems. But it's mentally taxing. When I'm happy, rested & in the
@@ -84,26 +93,130 @@ So, clearly,
 > **code** and **music**)
 
 which is a nice way to think about it, and actually is a relatively accurate
-picture of what I _feel_ like I'm doing when I'm performing.
+picture of what I _feel_ is going on when I'm performing.
 
-## How does cybernetics help us understand this system?
+## How does cybernetics help us understand and improve this system?
 
-Because the above components of the system
+In this "systems" description of a livecoding-in-the-club, there are a few
+things worth noticing:
 
-talk about feedback loops
-talk about what contributes to the stocks and flows (maybe here, or maybe in the
-next section)
+- there are different "stocks" (reservoirs of brain juice, code, music and good vibes)
+- there are various flows between those stocks, and in both directions (e.g. I
+  turn brain juice into code by typing at my keyboard, but I also receive
+  information about what the code looks like from my laptop screen, via my eyes)
+- there's a goal: to put on a good show for the audience to enjoy (to increase
+  the stock of good vibes in the room)
+- the system includes closed loops, and so is capable of feedback
 
-## Where should we intervene to make things better?
+A key principle of cybernetics is that the structure of the system---what the
+parts are, and how they relate to one another---determines the behaviour of the
+system. But anyone can sketch out a (highly contestable) jumble of pictures and
+arrows to describe whatever thing they're interested in. What do we gain from
+seeing things in this way?
+
+This is where another key idea---and person---in cybernetics/systems thinking
+comes in: Donella Meadows'[^is-meadows-cybernetics] [Leverage Points: Places to
+Intervene in a
+System](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
+The key idea is this: once you've mapped out your system, where are the most
+effective places to try and implement change? In other words, if you're going to
+expend energy to make things better, where should you focus that energy to get
+the most _leverage_?
+
+In the livecoder-in-the-club system, to make changes to the system in service of
+the the goal (as stated above) of creating maximum good vibes. One obvious
+solution is to start the gig with a bigger reservoir of brain juice (either by
+having a good night's sleep, popping an adderall, or whatever). Or it could be
+to start with a larger code reservoir by starting with a bunch of code
+pre-written[^blank-slate-code].
+
+However, Meadows' rules for leverage also suggest that some interventions
+provide more leverage than others[^different-interventions]. For example,
+changing the flow rates (leverage point #10) is likely to have more impact than
+just changing the sizes of the stocks/buffers (leverage point #11). This implies
+that changing the rate at which I turn brain juice into code (perhaps having a
+nicer keyboard, perhaps having better code auto-completion support, or perhaps
+just good-ol' _practice_ to improve my coding skills) is likely to be more
+impactful than starting with a bigger store of brain juice (so, thankfully,
+there's no need to buy shady adderall on the dark web).
+
+The "higher up" leverage points are related to restructuring the system
+itself---perhaps adding new information flows (leverage point #6). The dancers
+can already see the code, but what if I was hooked up to a live
+[EEG](https://en.wikipedia.org/wiki/Electroencephalography) so they could see
+the current state of my brain juice?. And even higher up (in terms of leverage)
+is changing the goals of the system itself (leverage point #3). Why _do_ people
+come to a club to dance and have good vibes? What if their goal was different?
+
+Now, the thing about leverage is that it doesn't guarantee good or bad outcomes,
+it just means you for a small amount of input you see a large effect in the
+output. Figuring out where to intervene in the livecoder-in-the-club system is
+one thing, figuring out how to intervene so that the changes are positive a deep
+challenge.
+
+[^is-meadows-cybernetics]:
+    [Donella
+    Meadows](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
+    tended to prefer terms like "systems thinking" and "systems change" rather
+    than usining the term "cybernetics" directly, but she certainly was involved
+    with some of the key people & events in the cybernetics story, and her work
+    is highly relevant to cybernetic ideas. Plus, [Google Books categorises her
+    work under _Computers > Cybernetics_]
+    (https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y),
+    and you _know_ the Big G is never wrong about that stuff.
+
+[^blank-slate-code]:
+    This is actually a subtle point in livecoding. I (along with some other
+    livecoders) am committed to starting each gig "from scratch" with a blank
+    code page. However, I've written a lot of library code ahead of time to
+    provide me with nice abstractions for making music with code, and I use that
+    (hidden---not on the screen) from the very first line of code that I write.
+    Thinking about the livecoder-in-the-club system one question that I'm
+    pondering is whether that library code constitutes a larger stock of code,
+    or whether it's a restructuring (an increase) of the flow rate from code
+    into music, or both.
+
+    To make things even more complicated, and there's _kindof_ a blurry line
+    between where the code ends and the music begins in livecoding (i.e. there's
+    the code you see on the screen, which is the code that I'm writing &
+    executing "live", but there's also a bunch of pre-written code in my
+    operating system's audio plumbing just to get the music to come out of the
+    speakers properly).
+
+[^different-interventions]:
+    There's not enough room in this blog post for a full "systems change
+    analysis" of the livecoder-in-the-club system according to all 12 leverage
+    points, but if you're interested I do recommend you [check out that
+    article](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
+    as a starting point.
+
+## So what's the point?
+
+Obviously the livecoder-in-the-club system described above is an
+oversimplification; it makes certain things easy to see but renders other things
+invisible, and every aspect of both the components (the things it talks about)
+and their relationships (the connectinos between them) is contestable. But
+that's one of the benefits by laying things out like this---we can at least see
+the things that we're explicitly considering, and we may well need to add new
+things to the model for consideration (and examine all the new connections and
+potential feedback loops those new things create).
+
+My main goal here is really just to provide a worked example of how ideas from
+cybernetics and systems thinking can help us move beyond just describing things
+to figuring out where to place our energies to effect change---where we'll get
+the most leverage. Being the best livecoder I can be is a lifetime goal, just
+like any other instrumental or artistic practice. And I'm keen to keep using the
+tools of cybernetics to push in that direction, and bring the heaving bodies of
+the livecoder-in-the-club system with me for the ride :)
+
+## Appendix: Meadows' _12 Places to Intervene in a System_ {#meadows-12-places-to-intervene}
+
+{:.hl-para}
+
+Note: these are taken straight from the [Donella Meadows foundation
+website](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
 
 _(in increasing order of effectiveness)_
-
-Donella Meadows' [Leverage Points: Places to Intervene in a
-System](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
-
-[Google
-Books](https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y)
-has it categorised under Computers > Cybernetics
 
 <ol reversed>
 
@@ -132,35 +245,3 @@ has it categorised under Computers > Cybernetics
 <li>The power to transcend paradigms.</li>
 
 </ol>
-
-## So what's the point?
-
-Obviously the livecoder-in-the-club system described above is an
-oversimplification; it makes certain things easy to see but renders other things
-invisible, and every aspect of both the components (the things it talks about)
-and their relationships (the connectinos between them) is contestable. But
-that's one of the benefits by laying things out like this---we can at least see
-the things that we're explicitly considering, and we may well need to add new
-things to the model for consideration (and examine all the new connections and
-potential feedback loops those new things create).
-
-As we've seen above, ideas from cybernetics and systems thinking can also help
-us move beyond just describing things to figuring out where to place our
-energies to effect change---where we'll get the most leverage.
-
-
-
-
-
-## extras
-
-and there's _kindof_ a blurry line between where the code ends and the music
-begins in livecoding (i.e. there's the code you see on the screen, which is
-the code that I'm writing & executing "live", but there's also a bunch of
-pre-written code just to get the music to come out of the speakers properly)
-an
-
-
-If you've seen me do it live, I hope you've enjoyed it; if you haven't I hope
-you'll take some time to look around stuff I've made and try and imagine what
-it's like to be at a livecoding gig.
