@@ -1,5 +1,5 @@
 ---
-title: "The leverage of livecoding: understanding and harnessing complex flows of ideas, software and humans"
+title: "Consider the livecoder: understanding and harnessing complex flows of ideas, software and humans"
 tags: cybernetics
 hidden: true
 ---
