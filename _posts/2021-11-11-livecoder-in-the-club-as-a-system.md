@@ -243,7 +243,7 @@ dancing bodies of the livecoder-in-the-club system with me for the ride :)
 Note: these are taken straight from the [Donella Meadows foundation
 website](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
 
-_(in increasing order of effectiveness)_
+_(lower numbers = less effective, higher numbers = more effective)_
 
 <ol reversed>
 
