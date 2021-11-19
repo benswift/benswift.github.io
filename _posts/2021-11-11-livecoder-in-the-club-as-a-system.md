@@ -188,8 +188,8 @@ eloquently](https://idlewords.com/talks/sase_panel.htm)).
     than using the term "cybernetics" directly, but she certainly was involved
     with some of the key people & events in the cybernetics story, and her work
     is highly relevant to cybernetic ideas. Plus, [Google Books categorises her
-    work under _Computers > Cybernetics_]
-    (https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y),
+    work under _Computers >
+    Cybernetics_](https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y),
     and you _know_ the Big G is never wrong about that stuff.
 
 [^blank-slate-code]:
