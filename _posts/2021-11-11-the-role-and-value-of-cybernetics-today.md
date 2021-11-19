@@ -270,3 +270,5 @@ _(in increasing order of effectiveness)_
 <li>The power to transcend paradigms.</li>
 
 </ol>
+
+## Footnotes
