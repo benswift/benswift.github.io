@@ -92,7 +92,7 @@ livecoder-in-the-club practice.
 
 It's a bit clearer to see in a picture:
 
-TODO
+{% include assets/picture.html file="images/posts/livecoder-in-a-club-system-diagram.png" alt="system diagram for the livecoder-in-a-club system" %}
 
 So, clearly,
 
