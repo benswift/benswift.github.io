@@ -2,6 +2,9 @@
 title: Livecoder-in-the-club as a system
 subtitle: understanding and intervening in complex flows of software, music and humans
 tags: cybernetics
+summary: >-
+  Using cybernetic and systems thinking concepts to answer the question: what's
+  actually going on in a livecoding gig?
 ---
 
 <div class="hl-para" markdown="1">
