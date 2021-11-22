@@ -29,9 +29,9 @@ Also on the bill were current & former members of the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/), including Ushini
 Attanayake and Brent Schuetze. A few more photos from the event:
 
-{% include assets/picture.html file="images/livecoding/ben-colour-coded-1.jpg" alt="Photo from Colour Coded gig" %}
-{% include assets/picture.html file="images/livecoding/ben-colour-coded-2.jpg" alt="Photo from Colour Coded gig" %}
-{% include assets/picture.html file="images/livecoding/ben-colour-coded-3.jpg" alt="Photo from Colour Coded gig" %}
-{% include assets/picture.html file="images/livecoding/ben-colour-coded-4.jpg" alt="Photo from Colour Coded gig" %}
-{% include assets/picture.html file="images/livecoding/ben-colour-coded-5.jpg" alt="Photo from Colour Coded gig" %}
-{% include assets/picture.html file="images/livecoding/ben-colour-coded-6.jpg" alt="Photo from Colour Coded gig" %}
+{% include picture.html file="images/livecoding/ben-colour-coded-1.jpg" alt="Photo from Colour Coded gig" %}
+{% include picture.html file="images/livecoding/ben-colour-coded-2.jpg" alt="Photo from Colour Coded gig" %}
+{% include picture.html file="images/livecoding/ben-colour-coded-3.jpg" alt="Photo from Colour Coded gig" %}
+{% include picture.html file="images/livecoding/ben-colour-coded-4.jpg" alt="Photo from Colour Coded gig" %}
+{% include picture.html file="images/livecoding/ben-colour-coded-5.jpg" alt="Photo from Colour Coded gig" %}
+{% include picture.html file="images/livecoding/ben-colour-coded-6.jpg" alt="Photo from Colour Coded gig" %}

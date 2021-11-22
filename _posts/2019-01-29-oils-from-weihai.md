@@ -18,7 +18,7 @@ After a marathon 4hr sitting[^tired], here's what the students came up with. As
 a bonus, I got to choose my favourite one and bring it home---can you guess
 which one I chose?
 
-{% include assets/picture.html file="images/posts/ben-oils.gif" alt="loop of the finished oil paintings" %}
+{% include picture.html file="images/posts/ben-oils.gif" alt="loop of the finished oil paintings" %}
 
 It's now hanging on my wall at home, creepily looking down at my family and our
 guests. **I love it**.

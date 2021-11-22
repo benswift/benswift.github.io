@@ -90,7 +90,7 @@ at least) at <https://acmc2020.com/>, and the [source is up on
 GitHub](https://github.com/australasian-computer-music-association/acmc2020) as
 well.
 
-{% include assets/picture.html file="images/posts/acmc-website-words-sounds-screenshot.png" alt="ACMC website screenshot" %}
+{% include picture.html file="images/posts/acmc-website-words-sounds-screenshot.png" alt="ACMC website screenshot" %}
 
 #### Reflections
 
@@ -248,7 +248,7 @@ interaction & discussion. And having all the discussion for the whole conference
 helped with the feeling that this was a single event, rather than just a series
 of disconnected YouTube videos.
 
-{% include assets/picture.html file="images/posts/acmc-discord-screenshot.png" alt="ACMC Discord channel screenshot" %}
+{% include picture.html file="images/posts/acmc-discord-screenshot.png" alt="ACMC Discord channel screenshot" %}
 
 #### Reflections
 

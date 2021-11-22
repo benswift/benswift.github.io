@@ -18,4 +18,4 @@ Soundscapes is a monthly music night showcasing acts somewhere in the
 alternative / experimental / sound art / other / uncategorised zones hosted by
 [Smith's Alternative]({{ page.venue_url }}).
 
-{% include assets/picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben @ sounscapes" %}
+{% include picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben @ sounscapes" %}

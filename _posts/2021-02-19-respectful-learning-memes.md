@@ -62,23 +62,23 @@ concepts they're struggling with in the course material. And they're _really_
 good at making **memes**. Here are just a few of the ones which I've seen end up
 on the allowed "cheat sheets" in the COMP2300 final exam.
 
-{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-offramp.jpeg" alt="COMP2300 offramp meme" %}
+{% include picture.html file="images/posts/respectful-learning-memes/comp2300-offramp.jpeg" alt="COMP2300 offramp meme" %}
 
 ---
 
-{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg" alt="COMP2300 galaxy brain meme" %}
+{% include picture.html file="images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg" alt="COMP2300 galaxy brain meme" %}
 
 ---
 
-{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-joey.jpeg" alt="COMP2300 Joey from Friends meme" %}
+{% include picture.html file="images/posts/respectful-learning-memes/comp2300-joey.jpeg" alt="COMP2300 Joey from Friends meme" %}
 
 ---
 
-{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-obiwan.jpeg" alt="COMP2300 ObiWan meme" %}
+{% include picture.html file="images/posts/respectful-learning-memes/comp2300-obiwan.jpeg" alt="COMP2300 ObiWan meme" %}
 
 ---
 
-{% include assets/picture.html file="images/posts/respectful-learning-memes/comp2300-anakin.jpeg" alt="COMP2300 Anakin Skywalker meme" %}
+{% include picture.html file="images/posts/respectful-learning-memes/comp2300-anakin.jpeg" alt="COMP2300 Anakin Skywalker meme" %}
 
 I don't know where they came from---although clearly at least some of them were
 created specifically for COMP2300. But I know from talking to students that they
@@ -105,4 +105,4 @@ they come up with ☺
 settings relating to memes and gifs which you might want to make sure are
 enabled.
 
-{% include assets/picture.html file="images/posts/respectful-learning-memes/teams-meme-settings.png" alt="MS Teams meme settings" %}
+{% include picture.html file="images/posts/respectful-learning-memes/teams-meme-settings.png" alt="MS Teams meme settings" %}

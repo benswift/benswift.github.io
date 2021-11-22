@@ -4,7 +4,7 @@ title: "Upcoming gig: smoke, Jan 30"
 tags: gigs livecoding
 ---
 
-{% include assets/picture.html file="images/posts/smoke-gig-ad-Jan-2020.jpg" alt="ad for Smoke gig - see FB event for details" %}
+{% include picture.html file="images/posts/smoke-gig-ad-Jan-2020.jpg" alt="ad for Smoke gig - see FB event for details" %}
 
 {:.hl-para}
 

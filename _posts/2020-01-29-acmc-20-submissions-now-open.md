@@ -9,7 +9,7 @@ ACMC is a festival of gigs, talks, installations and hands-on tutorials designed
 to inspire, challenge, and showcase the computer music community. There's lots
 more information on the [conference website](https://acmc2020.com/).
 
-{% include assets/picture.html file="images/posts/acmc-2019-allsop-gig.jpg" alt="live computer music & visuals at ACMC'19" %}
+{% include picture.html file="images/posts/acmc-2019-allsop-gig.jpg" alt="live computer music & visuals at ACMC'19" %}
 
 {:.hl-para}
 

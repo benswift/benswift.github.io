@@ -87,4 +87,4 @@ enjoyment (i.e. aesthetic ones) have a greater benefit than ones which try and
 educate people. Basically, work on entertaining people---then their
 understanding will flow from that.
 
-{% include assets/picture.html file="images/livecoding/are-you-not-entertained.jpg" alt="Are you not entertained?" %}
+{% include picture.html file="images/livecoding/are-you-not-entertained.jpg" alt="Are you not entertained?" %}
