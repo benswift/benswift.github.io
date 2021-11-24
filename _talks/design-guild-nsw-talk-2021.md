@@ -1,12 +1,10 @@
 ---
 event: "Design Guild NSW invited guest talk"
 title: "Livecoding for leverage"
-subtitle: some thoughts from the mind of an artist & coder
 date: "2021-11-22"
 permalink: /talks/design-guild-nsw-talk-2021/
 summary: >-
-  TODO
-hidden: true
+  Some thoughts on design, control and making things from the mind of an artist & coder.
 ---
 
 {% include slides/title.html %}
