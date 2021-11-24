@@ -1,29 +1,26 @@
-<section class="impact center" data-background-color="#262626"/>
+<section class="impact center" data-background-color="#262626">
 
   <style>
-   #contact-details {
+   .fin {
+     font-size: 3rem;
+     font-style: italic;
+   }
+
+   .contact-details {
+     font-size: 1rem;
 	 list-style: none;
+     text-align: left;
 	 margin: 0;
 
      /* attach to bottom(ish) */
      position: fixed;
-     bottom: 10vh;
+     bottom: 5vh;
    }
-
-   #contact-details li {
-	 padding: 0.2em 0.4em;
-	 margin-bottom: 0.5em;
-   }
-
-   #contact-details a.mono {
-	 font-family: monospace;
-   }
-
   </style>
 
-  <p><em>Fin</em></p>
+  <p class="fin">Fin</p>
 
-  <ul id="contact-details">
+  <ul class="contact-details">
 	<li><a href="mailto:ben.swift@anu.edu.au">{% fa_svg fas.fa-envelope %} ben.swift@anu.edu.au</a></li>
 	<li><a href="https://benswift.me">{% fa_svg fas.fa-link %} https://benswift.me</a></li>
 	<li><a href="https://twitter.com/benswift" title="Ben's Twitter profile">{% fa_svg fab.fa-twitter %}&nbsp;&nbsp;benswift</a></li>
