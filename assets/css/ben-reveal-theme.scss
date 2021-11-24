@@ -141,12 +141,12 @@
   // from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
   blockquote {
     background-color: darken($background-color, 8%);
-    border-left: 10px solid #ccc;
+    border-left: 10px solid #888;
     padding: 0.5em 0.5em;
     quotes: "\201C""\201D""\2018""\2019";
   }
   blockquote:before {
-    color: #ccc;
+    color: #888;
     content: open-quote;
     font-size: 3em;
     line-height: 0.1em;
