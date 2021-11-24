@@ -47,6 +47,18 @@ a **lever** is a (designed) interface
 
 {% include slides/background-image.html image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" heading="language = leverage (process design)" %}
 
+{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/brian-eno.jpg" %}
+
+> My topic is the shift from 'architect' to 'gardener', where 'architect' stands
+> for 'someone who carries a full picture of the work before it is made', to
+> 'gardener' standing for 'someone who plants seeds and waits to see exactly
+> what will come up'. I will argue that today's composer are more frequently
+> 'gardeners' than 'architects' and, further, that the 'composer as architect'
+> metaphor was a transitory historical blip.
+>
+> [--**Brian Eno**, Composers as
+> Gardeners](https://www.edge.org/conversation/brian_eno-composers-as-gardeners)
+
 {% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/Maciej-Ceglowski-1.jpg" %}
 
 > First, programmers are trained to seek maximal and global solutions. Why solve
