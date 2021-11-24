@@ -128,9 +128,9 @@
 
 .reveal .slides section pre > code { color: #fafafa; border: none; background: #282c34; padding: 1em; line-height: 1.2; }
 
-.reveal .slides section blockquote { background-color: #e6e6e6; border-left: 10px solid #ccc; padding: 0.5em 0.5em; quotes: "“" "”" "‘" "’"; }
+.reveal .slides section blockquote { background-color: #e6e6e6; border-left: 10px solid #888; padding: 0.5em 0.5em; quotes: "“" "”" "‘" "’"; }
 
-.reveal .slides section blockquote:before { color: #ccc; content: open-quote; font-size: 3em; line-height: 0.1em; vertical-align: -0.4em; }
+.reveal .slides section blockquote:before { color: #888; content: open-quote; font-size: 3em; line-height: 0.1em; vertical-align: -0.4em; }
 
 .reveal .slides section blockquote p:first-child { display: inline; }
 
