@@ -56,8 +56,8 @@ a **lever** is a (designed) interface
 > 'gardeners' than 'architects' and, further, that the 'composer as architect'
 > metaphor was a transitory historical blip.
 >
-> [--**Brian Eno**, Composers as
-> Gardeners](https://www.edge.org/conversation/brian_eno-composers-as-gardeners)
+> [**Brian Eno**, _Composers as
+> Gardeners_](https://www.edge.org/conversation/brian_eno-composers-as-gardeners)
 
 {% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/Maciej-Ceglowski-1.jpg" %}
 
@@ -69,7 +69,7 @@ a **lever** is a (designed) interface
 > being selfish... We are used to the idea of bootstrapping ourselves into a
 > position of maximum leverage before tackling a problem.
 >
-> [**--Maciej Cegłowski**](https://idlewords.com/talks/sase_panel.htm)
+> [**Maciej Cegłowski**, _The Moral Economy of Tech_](https://idlewords.com/talks/sase_panel.htm)
 
 {% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/michael-dziedzic-pM9pkc9J918-unsplash.jpg" %}
 
@@ -79,7 +79,8 @@ a **lever** is a (designed) interface
 
 {% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/carlotta-cataldi-leverage-points.png" bgsize="contain" credit="Carlotta Cataldi" %}
 
-{% include slides/youtube.html id="lFoysjbOibk" %}
+{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/birch-arch-drawing-02.jpg" heading="ANU School of Cybernetics" %}
+
+come partner with us to help us figure it out
 
 {% include slides/fin.html %}
-
