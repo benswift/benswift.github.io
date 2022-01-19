@@ -227,6 +227,10 @@ Fund](https://www.fwf.ac.at/en/), [CMJ](http://computermusicjournal.org),
 
 ### Industry {#engagement-industry}
 
+- **2022** Advisor, _PM&C Digital Technology Taskforce_
+
+- **2021--** Cyber Friends Program Advisor, _Questacon Cyber Ready Program_
+
 - **2016--2017** Cloud Infrastructure Developer, _CloudMol computational
   chemistry platform_ (as part of a CSIRO/Data61 Visiting Scientist position)
 
