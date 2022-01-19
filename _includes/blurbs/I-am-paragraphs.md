@@ -15,8 +15,8 @@ University](https://anu.edu.au)---Australia's
 university (#31 [QS world
 ranking](https://www.topuniversities.com/universities/australian-national-university)
 2021). {% if fp %}I'm{% else %}He's{% endif %} an expert in computational art &
-music, data vis/data science, human-computer interaction, AI/machine learning,
-and user experience (UX) design.
+music, cybernetics, data vis/data science, human-computer interaction,
+AI/machine learning, and user experience (UX) design.
 
 {% if fp %}I am{% else %}Ben is{% endif %} the founder and director of the
 [code/creativity/culture (c/c/c)
