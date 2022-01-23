@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-20T09:04:42+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/">&lt;div class=&quot;hl-para&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-24T09:24:41+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic Futures Manifesto</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-manifesto/" rel="alternate" type="text/html" title="Cybernetic Futures Manifesto" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-manifesto</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-manifesto/">&lt;p&gt;We hold these truths to be self-evident:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;it’s about making the future &lt;em&gt;less&lt;/em&gt; certain (and being empowered by that)&lt;/li&gt;
+  &lt;li&gt;iteration (with communication!) is the key&lt;/li&gt;
+  &lt;li&gt;difference/perturbation gives rise to action&lt;/li&gt;
+  &lt;li&gt;helping people thing the unthinkable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The AI tool is for…&lt;/p&gt;
+
+&lt;h2 id=&quot;appendix-garran-oration&quot;&gt;Appendix: Garran Oration&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;iterative communications&lt;/li&gt;
+  &lt;li&gt;productive discomfort&lt;/li&gt;
+  &lt;li&gt;strength &amp;amp; grace&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html">We hold these truths to be self-evident:</summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/">&lt;div class=&quot;hl-para&quot;&gt;
 
   &lt;p&gt;Here in the &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of Cybernetics&lt;/a&gt; we are building our
 capability in cybernetics—its histories and possibilities—and
@@ -1189,92 +1206,4 @@ something on your own blog and link me to it—there are lots of ways to
 have conversations, and I’m keen to have them. &lt;a href=&quot;#fnref:comments&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I haven’t had any sort of client-side analytics (e.g. Google Analytics) on benswift.me for a long time (since around 2012 I think—several iterations of the site ago). I use an ad-blocker myself, and the whole tracking &amp;amp; analytics thing just strikes me as a bit gross.</summary></entry><entry><title type="html">Bulk-add students to MS Teams from a csv file</title><link href="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/" rel="alternate" type="text/html" title="Bulk-add students to MS Teams from a csv file" /><published>2021-04-01T00:00:00+11:00</published><updated>2021-04-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file</id><content type="html" xml:base="https://benswift.me/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file/">&lt;p&gt;&lt;a href=&quot;https://anu.edu.au&quot;&gt;My institution&lt;/a&gt; now uses &lt;a href=&quot;http://teams.microsoft.com&quot;&gt;MS
-Teams&lt;/a&gt; for lots of things, including organising
-classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible,
-and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another
-post.&lt;/p&gt;
-
-&lt;p&gt;This post is about one particular pain point in every lecturer’s workflow: even
-though we’re using MS Teams for class communication, it doesn’t integrate with
-our enrolment databases. This means that to add all the enrolled students into
-the class’s Teams site you can either:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;add them manually, one-at-a-time, through the Teams app; or&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;share the “join Team” link on some other communication channel and manually
-weed out the gatecrashers&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;hl-para&quot;&gt;Too much manual work—&lt;strong&gt;there’s gotta be a better way&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;MS Teams doesn’t have a UI button for “add team members from &lt;a href=&quot;https://en.wikipedia.org/wiki/Comma-separated_values&quot;&gt;csv
-file&lt;/a&gt;”. The app &lt;em&gt;is&lt;/em&gt;
-scriptable, but only via a &lt;a href=&quot;https://docs.microsoft.com/en-au/MicrosoftTeams/teams-powershell-overview&quot;&gt;PowerShell
-module&lt;/a&gt;.
-So, I (&amp;amp; others&lt;sup id=&quot;fnref:brent&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:brent&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;) came up with a snippet of
-&lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;PowerShell&lt;/a&gt; code for bulk-adding
-students to a Team from a csv file.&lt;/p&gt;
-
-&lt;p&gt;The only requirements are:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;you can run PowerShell on your machine&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the Team already exists (and you know the Team name)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;you’ve got a csv file which contains a column (with the heading &lt;code&gt;email&lt;/code&gt;)
-which contains each student’s email address&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;powershell-script&quot;&gt;PowerShell script&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-powershell&quot;&gt;# install the Teams module (if you haven&apos;t already)
-# this only needs to be done once
-Install-Module -Name MicrosoftTeams
-Get-Module -ListAvailable -Name MicrosoftTeams
-
-# this step will take you to a login page in your browser,
-# you need to sign in to authorise your PowerShell session
-Connect-MicrosoftTeams
-
-# store the team&apos;s GroupID into a variable
-# replace &quot;My Team Name&quot; with the name of your team
-$GroupID = (Get-Team -DisplayName &quot;My Team Name&quot;).GroupID
-
-# note: if you&apos;ve used a different csv filename, change it in the command below
-Import-Csv -Path emails.csv | foreach {Add-TeamUser -GroupId $GroupID -user $_.email}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When you’re dealing with 500+ student classes, this can save you a &lt;em&gt;lot&lt;/em&gt; of
-time. And since trying to add a student who’s already a group member is a no-op,
-you can just re-run the script with an updated &lt;code&gt;emails.csv&lt;/code&gt; file if the class
-list changes. This won’t remove students who have unenrolled, but there’s a
-&lt;code&gt;Remove-TeamUser&lt;/code&gt; command as well—so changing the script to unenroll students
-from a csv file is pretty trivial.&lt;/p&gt;
-
-&lt;p&gt;If you’re worriedly thinking “that’d be awesome… if I used Windows”, then I
-have some good news: while PowerShell is primarily a Microsoft thing, it’s on
-macOS and Linux as well. On my macOS machine I installed it through
-&lt;a href=&quot;https://brew.sh&quot;&gt;homebrew&lt;/a&gt; with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-plaintext&quot;&gt;brew install powershell
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;From the &lt;a href=&quot;https://github.com/powershell/powershell&quot;&gt;PowerShell README.md&lt;/a&gt; it
-seems like there’s a package available for most Linux distros as well.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:brent&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;shout out to Brent Schuetze who first figured this out &lt;a href=&quot;#fnref:brent&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html">My institution now uses MS Teams for lots of things, including organising classes &amp;amp; communicating with students. It’s not perfect, but it’s not terrible, and the pros &amp;amp; cons of Teams as a pedagogical platform are best left for another post.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I haven’t had any sort of client-side analytics (e.g. Google Analytics) on benswift.me for a long time (since around 2012 I think—several iterations of the site ago). I use an ad-blocker myself, and the whole tracking &amp;amp; analytics thing just strikes me as a bit gross.</summary></entry></feed>
