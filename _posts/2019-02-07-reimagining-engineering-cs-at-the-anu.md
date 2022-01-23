@@ -9,8 +9,7 @@ The [ANU College of Engineering and Computer Science](https://cecs.anu.edu.au)
 (CECS) is being _Reimagined_. Don't take my word for it; listen to our fearless
 leader [Elanor](https://cecs.anu.edu.au):
 
-{:style="clear:both;"}
-{% include slides/youtube.html id="FjlgEZzaL6k" aspect="56.25%" %}
+{% include youtube.html id="FjlgEZzaL6k" %}
 
 Basically, this [Reimagine project](https://cecs.anu.edu.au/reimagine) is a
 _huge_ investment from the ANU for CECS to grow, change, and to skate to where
