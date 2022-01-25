@@ -25,6 +25,7 @@ one (or more) of your project's dependencies?
 | `lein`          | Clojure         |
 | `dep`           | Go              |
 | `cpan`          | Perl            |
+| `mix`           | Elixir          |
 
 <button onclick='document.getElementById("answer-table").style.visibility="visible";'>click to reveal the answers</button>
 
@@ -45,6 +46,7 @@ one (or more) of your project's dependencies?
 | `lein`          | Clojure         | `ancient upgrade`     |
 | `dep`           | Go              | `ensure -update`      |
 | `cpan`          | Perl            | `upgrade`             |
+| `mix`           | Elixir          | `deps.update`         |
 
 [^pip]: <https://github.com/pypa/pip/issues/59>
 
