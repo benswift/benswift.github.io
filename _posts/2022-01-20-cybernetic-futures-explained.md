@@ -26,6 +26,10 @@ system is shuts up shop. However in many cases what's desirable is
 [homeostasis](https://en.wikipedia.org/wiki/Homeostasis), or a system which can
 keep itself "in its happy place" and is resistant to peturbations.
 
+[^towards]:
+    Such goals can also be stated negatively, e.g. the goal of avoiding pain. So
+    towards/away from are equally valid goals.
+
 There are lots of potential illustrations of this, but one that many of my
 cybernetic forebears liked is the one of a ship's captain using the stars (or a
 lighthouse) to navigate. It's not the particular position of the tiller at any
