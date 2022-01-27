@@ -1,21 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-25T15:22:59+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic Futures Manifesto</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-manifesto/" rel="alternate" type="text/html" title="Cybernetic Futures Manifesto" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-manifesto</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-manifesto/">&lt;p&gt;We hold these truths to be self-evident:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-27T18:25:37+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Stafford_Beer&quot;&gt;Stafford Beer&lt;/a&gt; tells a joke about
+defining cybernetics in &lt;a href=&quot;https://www.emerald.com/insight/content/doi/10.1108/03684920210417283/&quot;&gt;an address he gave at the University of
+Valladolid&lt;/a&gt;:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;it’s about making the future &lt;em&gt;less&lt;/em&gt; certain (and being empowered by that)&lt;/li&gt;
-  &lt;li&gt;iteration (with communication!) is the key&lt;/li&gt;
-  &lt;li&gt;difference/perturbation gives rise to action&lt;/li&gt;
-  &lt;li&gt;helping people thing the unthinkable&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;…it concerns three men who are about to be executed. The prison governor
+calls them to his office, and explains that each will be granted a last
+request. The first one confesses that he has led a sinful life, and would like
+to see a priest. The governor says he thinks he can arrange that. And the
+second man? The second man explains that he is a professor of cybernetics. His
+last request is to deliver a final and definitive answer to the question: what
+is cybernetics? The governor accedes to this request also. And the third man?
+Well, he is a doctoral student of the professor—his request is to be
+executed second.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;The AI tool is for…&lt;/p&gt;
+&lt;p&gt;It’s a great joke, partially because it communicates a deep truth. But one way
+to define cybernetic systems is as systems with (i) a goal/purpose and (ii) a
+mechanism for steering towards[^towards] said goal. In some cases there’s still
+a defined end goal, where upon attaining said goal victory is declared and the
+system is shuts up shop. However in many cases what’s desirable is
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Homeostasis&quot;&gt;homeostasis&lt;/a&gt;, or a system which can
+keep itself “in its happy place” and is resistant to peturbations.&lt;/p&gt;
+
+&lt;p&gt;There are lots of potential illustrations of this, but one that many of my
+cybernetic forebears liked is the one of a ship’s captain using the stars (or a
+lighthouse) to navigate. It’s not the particular position of the tiller at any
+one time that’s important, is the way that the captain watches the stars and
+moves the tiller in response (as the ship is affected by currents &amp;amp; winds). If
+the ship’s bow isn’t pointing at the star, then adjust the tiller in the
+opposite direction until it does. If you keep up that simple procedure, you’ll
+get there in the end (and with your ship in one piece). It’s the captian’s
+continued monitoring of the difference between the goal (as indicated by the
+star) and the current state (as indicated by the where the bow is pointing)
+which matters, and once you know how to respond to that difference (by steering
+in the opposite direction of that difference) then you’ve got a reliable (and
+simple) procedure for successful sailing.&lt;/p&gt;
+
+&lt;p&gt;Such systems don’t work by planning out a complex, all-encompassing list of
+actions to take and then mindlessly following them, but through a process
+involving &lt;em&gt;feedback&lt;/em&gt;: doing a thing, looking/listening/sensing what happened,
+comparing the new state of the world with the goals, and then doing a thing…
+and so on.&lt;/p&gt;
+
+&lt;p&gt;Futures/futuring—and here I mean futuring/to future in the verb sense (see
+&lt;a href=&quot;https://www.howtofuture.com&quot;&gt;Smith and Ashby&lt;/a&gt; for an practical guide or
+&lt;a href=&quot;https://www.press.uillinois.edu/books/?id=p084690&quot;&gt;Powers&lt;/a&gt; for a more critical
+history and review)—seems like the sort of thing which cybernetics has
+something to say about. Even the more mundane acts of management and oversight:
+strategy, tactics, contingency planning—when done well they all involve
+articulating goals and thinking about ways to bring them about. There’s clearly
+an echo of the “steering systems” thing here, but what does that mean in practice?&lt;/p&gt;
+
+&lt;h2 id=&quot;practical-cybernetic-futuring&quot;&gt;Practical cybernetic futuring?&lt;/h2&gt;
+
+&lt;p&gt;The thing about the future is that it’s hard to visualise the unexpected, and
+humans aren’t great at predicting the future. It’s a misconception about
+futuring (not a misconception of expert practitioners, but one which they
+encounter when explaining what they do to others) that it’s about predicting the
+future. It’s not, in fact it’s about making the future &lt;em&gt;less&lt;/em&gt; certain—which is
+where the steering/feedback ideas from cybernetics can help us understand
+things.&lt;/p&gt;
+
+&lt;p&gt;Each future scenario you can imagine (regardless of where it falls in the space
+of
+&lt;a href=&quot;https://thevoroscope.com/2017/02/24/the-futures-cone-use-and-history/&quot;&gt;possible/probable/preferrable&lt;/a&gt;
+futures) is a way of projecting a “goal state”. Said goal state doesn’t have to
+be desirable—many potential futures aren’t—but it gives a concrete thing
+against which to compare your current state (and therefore to inform current
+decisionmaking). The solution, then, is to consider &lt;em&gt;lots&lt;/em&gt; of different future
+states, sort through them to find ones you want to steer towards (or avoid), and
+then to look through the steering decisions you’d take in response.&lt;/p&gt;
+
+&lt;p&gt;And, just like a ship drifts on the currents (in fact &lt;em&gt;much&lt;/em&gt; more so) our
+orientation to any particular future is constantly changing as we &amp;amp; others act
+in the present. So the solution is to constantly re-examine our orientation
+towards these multiple futures and reorient ourselves as a result. That’s the
+cybernetic “steering” process applied to futuring. Cybernetics doesn’t provide a
+“once you measure &amp;amp; model all the things you can predict the future” silver
+bullet (&lt;a href=&quot;https://eujournalfuturesresearch.springeropen.com/articles/10.1007/s40309-013-0029-y&quot;&gt;although it’s not like some folks haven’t
+tried&lt;/a&gt;),
+but rather it’s a commitment to using a simple “look-decide-act” feedback loop
+to keep the system on track.&lt;/p&gt;
 
 &lt;h2 id=&quot;appendix-garran-oration&quot;&gt;Appendix: Garran Oration&lt;/h2&gt;
+
+&lt;p&gt;If you read through &lt;a href=&quot;https://www.ipaa.org.au/wp-content/uploads/2021/12/Garran-Oration-2021.pdf&quot;&gt;Genevieve Bell’s Garran
+Oration&lt;/a&gt;
+(mentioned above), she notes&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In particular, there are three threads that have revealed themselves and that
+I want to share with you. I tend to think of them as hallmarks of
+organisations that will build successful systems, cybernetic systems.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;These are:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;iterative communications&lt;/li&gt;
   &lt;li&gt;productive discomfort&lt;/li&gt;
   &lt;li&gt;strength &amp;amp; grace&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html">We hold these truths to be self-evident:</summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/">&lt;div class=&quot;hl-para&quot;&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I’m still thinking through how the “rubber hits the road” when it comes to these
+hallmarks as applied to the practice of cybernetic futuring.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html">Stafford Beer tells a joke about defining cybernetics in an address he gave at the University of Valladolid:</summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/">&lt;div class=&quot;hl-para&quot;&gt;
 
   &lt;p&gt;Here in the &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of Cybernetics&lt;/a&gt; we are building our
 capability in cybernetics—its histories and possibilities—and
