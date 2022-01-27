@@ -67,13 +67,12 @@ an echo of the "steering systems" thing here, but what does that mean in practic
 
 ## Practical cybernetic futuring?
 
-The thing about the future is that it's hard to visualise the unexpected, and
-humans aren't great at predicting the future. It's a misconception about
-futuring (not a misconception of expert practitioners, but one which they
-encounter when explaining what they do to others) that it's about predicting the
-future. It's not, in fact it's about making the future _less_ certain---which is
-where the steering/feedback ideas from cybernetics can help us understand
-things.
+It's hard to visualise the unexpected, and humans aren't great at predicting the
+future. It's a misconception about futuring (not a misconception of expert
+practitioners, but one which they encounter when explaining what they do to
+others) that futuring is about predicting the future. It's not, in fact it's
+about making the future _less_ certain---which is where the steering/feedback
+ideas from cybernetics can help us understand things.
 
 Each future scenario you can imagine (regardless of where it falls in the space
 of
@@ -114,7 +113,7 @@ Gibson_](http://www.nytimes.com/2007/08/19/magazine/19wwln-q4-t.html)
 
 If you read through [Genevieve Bell's Garran
 Oration](https://www.ipaa.org.au/wp-content/uploads/2021/12/Garran-Oration-2021.pdf)
-(mentioned above), she notes
+she notes in closing
 
 > In particular, there are three threads that have revealed themselves and that
 > I want to share with you. I tend to think of them as hallmarks of
