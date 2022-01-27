@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-27T18:25:37+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Stafford_Beer&quot;&gt;Stafford Beer&lt;/a&gt; tells a joke about
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-27T18:33:05+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Stafford_Beer&quot;&gt;Stafford Beer&lt;/a&gt; tells a joke about
 defining cybernetics in &lt;a href=&quot;https://www.emerald.com/insight/content/doi/10.1108/03684920210417283/&quot;&gt;an address he gave at the University of
 Valladolid&lt;/a&gt;:&lt;/p&gt;
 
@@ -16,7 +16,7 @@ executed second.&lt;/p&gt;
 
 &lt;p&gt;It’s a great joke, partially because it communicates a deep truth. But one way
 to define cybernetic systems is as systems with (i) a goal/purpose and (ii) a
-mechanism for steering towards[^towards] said goal. In some cases there’s still
+mechanism for steering towards&lt;sup id=&quot;fnref:towards&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:towards&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; said goal. In some cases there’s still
 a defined end goal, where upon attaining said goal victory is declared and the
 system is shuts up shop. However in many cases what’s desirable is
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Homeostasis&quot;&gt;homeostasis&lt;/a&gt;, or a system which can
@@ -103,7 +103,16 @@ organisations that will build successful systems, cybernetic systems.&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;I’m still thinking through how the “rubber hits the road” when it comes to these
-hallmarks as applied to the practice of cybernetic futuring.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html">Stafford Beer tells a joke about defining cybernetics in an address he gave at the University of Valladolid:</summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/">&lt;div class=&quot;hl-para&quot;&gt;
+hallmarks as applied to the practice of cybernetic futuring.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:towards&quot; role=&quot;doc-endnote&quot;&gt;
+
+      &lt;p&gt;Such goals can also be stated negatively, e.g. the goal of avoiding pain. So
+towards/away from are equally valid goals. &lt;a href=&quot;#fnref:towards&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html">Stafford Beer tells a joke about defining cybernetics in an address he gave at the University of Valladolid:</summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/">&lt;div class=&quot;hl-para&quot;&gt;
 
   &lt;p&gt;Here in the &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of Cybernetics&lt;/a&gt; we are building our
 capability in cybernetics—its histories and possibilities—and
