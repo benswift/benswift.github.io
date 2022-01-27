@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-27T18:33:05+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Stafford_Beer&quot;&gt;Stafford Beer&lt;/a&gt; tells a joke about
-defining cybernetics in &lt;a href=&quot;https://www.emerald.com/insight/content/doi/10.1108/03684920210417283/&quot;&gt;an address he gave at the University of
-Valladolid&lt;/a&gt;:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-28T08:18:55+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/"><![CDATA[<p><a href="https://en.wikipedia.org/wiki/Stafford_Beer">Stafford Beer</a> tells a joke about
+defining cybernetics in <a href="https://www.emerald.com/insight/content/doi/10.1108/03684920210417283/">an address he gave at the University of
+Valladolid</a>:</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;…it concerns three men who are about to be executed. The prison governor
+<blockquote>
+  <p>…it concerns three men who are about to be executed. The prison governor
 calls them to his office, and explains that each will be granted a last
 request. The first one confesses that he has led a sinful life, and would like
 to see a priest. The governor says he thinks he can arrange that. And the
@@ -11,22 +11,22 @@ second man? The second man explains that he is a professor of cybernetics. His
 last request is to deliver a final and definitive answer to the question: what
 is cybernetics? The governor accedes to this request also. And the third man?
 Well, he is a doctoral student of the professor—his request is to be
-executed second.&lt;/p&gt;
-&lt;/blockquote&gt;
+executed second.</p>
+</blockquote>
 
-&lt;p&gt;It’s a great joke, partially because it communicates a deep truth. But one way
+<p>It’s a great joke, partially because it communicates a deep truth. But one way
 to define cybernetic systems is as systems with (i) a goal/purpose and (ii) a
-mechanism for steering towards&lt;sup id=&quot;fnref:towards&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:towards&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; said goal. In some cases there’s still
+mechanism for steering towards<sup id="fnref:towards" role="doc-noteref"><a href="#fn:towards" class="footnote" rel="footnote">1</a></sup> said goal. In some cases there’s still
 a defined end goal, where upon attaining said goal victory is declared and the
 system is shuts up shop. However in many cases what’s desirable is
-&lt;a href=&quot;https://en.wikipedia.org/wiki/Homeostasis&quot;&gt;homeostasis&lt;/a&gt;, or a system which can
-keep itself “in its happy place” and is resistant to peturbations.&lt;/p&gt;
+<a href="https://en.wikipedia.org/wiki/Homeostasis">homeostasis</a>, or a system which can
+keep itself “in its happy place” and is resistant to peturbations.</p>
 
-&lt;p&gt;There are lots of potential illustrations of this, but one that many of my
+<p>There are lots of potential illustrations of this, but one that many of my
 cybernetic forebears liked is the one of a ship’s captain using the stars (or a
 lighthouse) to navigate. It’s not the particular position of the tiller at any
 one time that’s important, is the way that the captain watches the stars and
-moves the tiller in response (as the ship is affected by currents &amp;amp; winds). If
+moves the tiller in response (as the ship is affected by currents &amp; winds). If
 the ship’s bow isn’t pointing at the star, then adjust the tiller in the
 opposite direction until it does. If you keep up that simple procedure, you’ll
 get there in the end (and with your ship in one piece). It’s the captian’s
@@ -34,256 +34,255 @@ continued monitoring of the difference between the goal (as indicated by the
 star) and the current state (as indicated by the where the bow is pointing)
 which matters, and once you know how to respond to that difference (by steering
 in the opposite direction of that difference) then you’ve got a reliable (and
-simple) procedure for successful sailing.&lt;/p&gt;
+simple) procedure for successful sailing.</p>
 
-&lt;p&gt;Such systems don’t work by planning out a complex, all-encompassing list of
+<p>Such systems don’t work by planning out a complex, all-encompassing list of
 actions to take and then mindlessly following them, but through a process
-involving &lt;em&gt;feedback&lt;/em&gt;: doing a thing, looking/listening/sensing what happened,
+involving <em>feedback</em>: doing a thing, looking/listening/sensing what happened,
 comparing the new state of the world with the goals, and then doing a thing…
-and so on.&lt;/p&gt;
+and so on.</p>
 
-&lt;p&gt;Futures/futuring—and here I mean futuring/to future in the verb sense (see
-&lt;a href=&quot;https://www.howtofuture.com&quot;&gt;Smith and Ashby&lt;/a&gt; for an practical guide or
-&lt;a href=&quot;https://www.press.uillinois.edu/books/?id=p084690&quot;&gt;Powers&lt;/a&gt; for a more critical
+<p>Futures/futuring—and here I mean futuring/to future in the verb sense (see
+<a href="https://www.howtofuture.com">Smith and Ashby</a> for an practical guide or
+<a href="https://www.press.uillinois.edu/books/?id=p084690">Powers</a> for a more critical
 history and review)—seems like the sort of thing which cybernetics has
 something to say about. Even the more mundane acts of management and oversight:
 strategy, tactics, contingency planning—when done well they all involve
 articulating goals and thinking about ways to bring them about. There’s clearly
-an echo of the “steering systems” thing here, but what does that mean in practice?&lt;/p&gt;
+an echo of the “steering systems” thing here, but what does that mean in practice?</p>
 
-&lt;h2 id=&quot;practical-cybernetic-futuring&quot;&gt;Practical cybernetic futuring?&lt;/h2&gt;
+<h2 id="practical-cybernetic-futuring">Practical cybernetic futuring?</h2>
 
-&lt;p&gt;The thing about the future is that it’s hard to visualise the unexpected, and
-humans aren’t great at predicting the future. It’s a misconception about
-futuring (not a misconception of expert practitioners, but one which they
-encounter when explaining what they do to others) that it’s about predicting the
-future. It’s not, in fact it’s about making the future &lt;em&gt;less&lt;/em&gt; certain—which is
-where the steering/feedback ideas from cybernetics can help us understand
-things.&lt;/p&gt;
+<p>It’s hard to visualise the unexpected, and humans aren’t great at predicting the
+future. It’s a misconception about futuring (not a misconception of expert
+practitioners, but one which they encounter when explaining what they do to
+others) that futuring is about predicting the future. It’s not, in fact it’s
+about making the future <em>less</em> certain—which is where the steering/feedback
+ideas from cybernetics can help us understand things.</p>
 
-&lt;p&gt;Each future scenario you can imagine (regardless of where it falls in the space
+<p>Each future scenario you can imagine (regardless of where it falls in the space
 of
-&lt;a href=&quot;https://thevoroscope.com/2017/02/24/the-futures-cone-use-and-history/&quot;&gt;possible/probable/preferrable&lt;/a&gt;
+<a href="https://thevoroscope.com/2017/02/24/the-futures-cone-use-and-history/">possible/probable/preferrable</a>
 futures) is a way of projecting a “goal state”. Said goal state doesn’t have to
 be desirable—many potential futures aren’t—but it gives a concrete thing
 against which to compare your current state (and therefore to inform current
-decisionmaking). The solution, then, is to consider &lt;em&gt;lots&lt;/em&gt; of different future
+decisionmaking). The solution, then, is to consider <em>lots</em> of different future
 states, sort through them to find ones you want to steer towards (or avoid), and
-then to look through the steering decisions you’d take in response.&lt;/p&gt;
+then to look through the steering decisions you’d take in response.</p>
 
-&lt;p&gt;And, just like a ship drifts on the currents (in fact &lt;em&gt;much&lt;/em&gt; more so) our
-orientation to any particular future is constantly changing as we &amp;amp; others act
+<p>And, just like a ship drifts on the currents (in fact <em>much</em> more so) our
+orientation to any particular future is constantly changing as we &amp; others act
 in the present. So the solution is to constantly re-examine our orientation
 towards these multiple futures and reorient ourselves as a result. That’s the
 cybernetic “steering” process applied to futuring. Cybernetics doesn’t provide a
-“once you measure &amp;amp; model all the things you can predict the future” silver
-bullet (&lt;a href=&quot;https://eujournalfuturesresearch.springeropen.com/articles/10.1007/s40309-013-0029-y&quot;&gt;although it’s not like some folks haven’t
-tried&lt;/a&gt;),
+“once you measure &amp; model all the things you can predict the future” silver
+bullet (<a href="https://eujournalfuturesresearch.springeropen.com/articles/10.1007/s40309-013-0029-y">although it’s not like some folks haven’t
+tried</a>),
 but rather it’s a commitment to using a simple “look-decide-act” feedback loop
-to keep the system on track.&lt;/p&gt;
+to keep the system on track.</p>
 
-&lt;h2 id=&quot;appendix-garran-oration&quot;&gt;Appendix: Garran Oration&lt;/h2&gt;
+<h2 id="appendix-garran-oration">Appendix: Garran Oration</h2>
 
-&lt;p&gt;If you read through &lt;a href=&quot;https://www.ipaa.org.au/wp-content/uploads/2021/12/Garran-Oration-2021.pdf&quot;&gt;Genevieve Bell’s Garran
-Oration&lt;/a&gt;
-(mentioned above), she notes&lt;/p&gt;
+<p>If you read through <a href="https://www.ipaa.org.au/wp-content/uploads/2021/12/Garran-Oration-2021.pdf">Genevieve Bell’s Garran
+Oration</a>
+she notes in closing</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;In particular, there are three threads that have revealed themselves and that
+<blockquote>
+  <p>In particular, there are three threads that have revealed themselves and that
 I want to share with you. I tend to think of them as hallmarks of
-organisations that will build successful systems, cybernetic systems.&lt;/p&gt;
-&lt;/blockquote&gt;
+organisations that will build successful systems, cybernetic systems.</p>
+</blockquote>
 
-&lt;p&gt;These are:&lt;/p&gt;
+<p>These are:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;iterative communications&lt;/li&gt;
-  &lt;li&gt;productive discomfort&lt;/li&gt;
-  &lt;li&gt;strength &amp;amp; grace&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>iterative communications</li>
+  <li>productive discomfort</li>
+  <li>strength &amp; grace</li>
+</ol>
 
-&lt;p&gt;I’m still thinking through how the “rubber hits the road” when it comes to these
-hallmarks as applied to the practice of cybernetic futuring.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:towards&quot; role=&quot;doc-endnote&quot;&gt;
+<p>I’m still thinking through how the “rubber hits the road” when it comes to these
+hallmarks as applied to the practice of cybernetic futuring.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:towards" role="doc-endnote">
 
-      &lt;p&gt;Such goals can also be stated negatively, e.g. the goal of avoiding pain. So
-towards/away from are equally valid goals. &lt;a href=&quot;#fnref:towards&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html">Stafford Beer tells a joke about defining cybernetics in an address he gave at the University of Valladolid:</summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/">&lt;div class=&quot;hl-para&quot;&gt;
+      <p>Such goals can also be stated negatively, e.g. the goal of avoiding pain. So
+towards/away from are equally valid goals. <a href="#fnref:towards" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[Stafford Beer tells a joke about defining cybernetics in an address he gave at the University of Valladolid:]]></summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/"><![CDATA[<div class="hl-para">
 
-  &lt;p&gt;Here in the &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of Cybernetics&lt;/a&gt; we are building our
+  <p>Here in the <a href="https://3ainstitute.org">School of Cybernetics</a> we are building our
 capability in cybernetics—its histories and possibilities—and
 working out how each of us will contribute to the new cybernetics for the 21st
-Century.&lt;/p&gt;
+Century.</p>
 
-  &lt;p&gt;This blog post, written for a general audience, is part of a content development
+  <p>This blog post, written for a general audience, is part of a content development
 sprint, written in reponse to the task of developing a short (1000 words)
 persuasive argument about the role and value of cybernetics as an approach to
-shape futures through and with technology.&lt;/p&gt;
+shape futures through and with technology.</p>
 
-&lt;/div&gt;
+</div>
 
-&lt;p&gt;If you follow this blog, you’ll know that I’m a &lt;a href=&quot;/livecoding/index.html&quot;&gt;livecoder&lt;/a&gt;. I &lt;em&gt;code&lt;/em&gt; (i.e. write computer programs) to make music in a
+<p>If you follow this blog, you’ll know that I’m a <a href="/livecoding/index.html">livecoder</a>. I <em>code</em> (i.e. write computer programs) to make music in a
 club setting, with an audience that just wants to dance and have a good
-time&lt;sup id=&quot;fnref:niche&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:niche&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Between the code, the thumping music, the dancing humans, and all
+time<sup id="fnref:niche" role="doc-noteref"><a href="#fn:niche" class="footnote" rel="footnote">1</a></sup>. Between the code, the thumping music, the dancing humans, and all
 the other glorious complexities of live entertainment, there’s certainly a lot
 of different stuff going on. You might find watching a livecoder in action to be
 entertaining, or impressive, or bewildering, or all of the above. Most of all,
 when you see/attend a livecoding gig for the first time, I bet that your initial
-feeling is one of &lt;em&gt;what is going on?&lt;/em&gt;&lt;/p&gt;
+feeling is one of <em>what is going on?</em></p>
 
-&lt;p&gt;In this post I’m going to use some ideas from cybernetics to try and help you
+<p>In this post I’m going to use some ideas from cybernetics to try and help you
 make sense of a livecoder performing in a club, in part to help you understand
-for what it &lt;em&gt;feels like&lt;/em&gt; I’m doing when I do it. From there I want to think
+for what it <em>feels like</em> I’m doing when I do it. From there I want to think
 about ways to make livecoding even better, that is, to figure out put on a
-better show for the adoring crowds.&lt;/p&gt;
+better show for the adoring crowds.</p>
 
-&lt;h2 id=&quot;livecoder-in-the-club-as-a-system&quot;&gt;Livecoder-in-the-club as a system&lt;/h2&gt;
+<h2 id="livecoder-in-the-club-as-a-system">Livecoder-in-the-club as a system</h2>
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=kx79HLLboT8&quot;&gt;Cybernetics&lt;/a&gt; is all about the
-looking at and reasoning about &lt;strong&gt;systems&lt;/strong&gt; with &lt;em&gt;goals&lt;/em&gt;, interacting with and
-connected to their &lt;em&gt;environment&lt;/em&gt; via perception/action &lt;em&gt;feedback loops&lt;/em&gt;. These
+<p><a href="https://www.youtube.com/watch?v=kx79HLLboT8">Cybernetics</a> is all about the
+looking at and reasoning about <strong>systems</strong> with <em>goals</em>, interacting with and
+connected to their <em>environment</em> via perception/action <em>feedback loops</em>. These
 sorts of systems exist at all sorts of different scales (big/small, fast/slow,
-old/new, cheap/expensive, etc.) and they’re &lt;a href=&quot;https://www.goodreads.com/book/show/10698938-the-fractal-organization&quot;&gt;fractal in
-nature&lt;/a&gt;—it
+old/new, cheap/expensive, etc.) and they’re <a href="https://www.goodreads.com/book/show/10698938-the-fractal-organization">fractal in
+nature</a>—it
 doesn’t matter what level of “magnification” you look at, each component of a
 system is itself a system of interacting components, and each system is itself a
 component interacting in a larger system. But since that’s all pretty abstract,
 let’s return to the example of the livecoder-in-the-club. This is written in the
 first person, but other livecoders may have similar understandings of their own
-livecoder-in-the-club practice.&lt;/p&gt;
+livecoder-in-the-club practice.</p>
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;I start with a full tank of &lt;strong&gt;brain juice&lt;/strong&gt; which allows me to work on tricky
-coding problems. But it’s mentally taxing. When I’m happy, rested &amp;amp; in the
+<ul>
+  <li>
+    <p>I start with a full tank of <strong>brain juice</strong> which allows me to work on tricky
+coding problems. But it’s mentally taxing. When I’m happy, rested &amp; in the
 zone, I feel like I’ve got a full tank, but writing code takes mental energy,
 and so writing the code in the performance drains my brain juice until I’m
 cooked, and then I can’t write any more code (or at least will write bad/buggy
-code) until I recharge.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To write the &lt;strong&gt;code&lt;/strong&gt; I tap my fingers on the keys of my keyboard. I use a
-&lt;a href=&quot;https://emacs.sexy&quot;&gt;specialised program&lt;/a&gt; for this (i.e. I don’t write it in
+code) until I recharge.</p>
+  </li>
+  <li>
+    <p>To write the <strong>code</strong> I tap my fingers on the keys of my keyboard. I use a
+<a href="https://emacs.sexy">specialised program</a> for this (i.e. I don’t write it in
 MS Word) which has a bunch of features to help, like different colours for the
 different parts of the code (e.g. functions vs variable vs numerical parameter
 values), and auto-completion, and inline documentation/help about the
 particular bit of code that I’m working on. This code is also projected onto a
-big screen in the club so that the dancers can look at it (or not).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;As the code runs, it generates &lt;strong&gt;music&lt;/strong&gt;. Different parts of the code are
+big screen in the club so that the dancers can look at it (or not).</p>
+  </li>
+  <li>
+    <p>As the code runs, it generates <strong>music</strong>. Different parts of the code are
 responsible for different parts of the music, and I try and give the functions
-&amp;amp; variables in my code human-readable names (like &lt;code&gt;piano&lt;/code&gt;) so that the
+&amp; variables in my code human-readable names (like <code>piano</code>) so that the
 correspondence between the code and the music is clear-ish. The music will
 only be generated if the code is running nicely (i.e. without bugs/errors) and
 is hooked up to the PA system in the club. If I crash the program (or if
-someone unplugs the PA) then the music will stop.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The people in the club—people dancing, people chilling at the bar, people
+someone unplugs the PA) then the music will stop.</p>
+  </li>
+  <li>
+    <p>The people in the club—people dancing, people chilling at the bar, people
 watching the code on the screen—are collectively having an experience which
-(hopefully) is giving them &lt;strong&gt;good vibes&lt;/strong&gt;. Obviously this is a &lt;em&gt;huge&lt;/em&gt;
+(hopefully) is giving them <strong>good vibes</strong>. Obviously this is a <em>huge</em>
 oversimplification, and the extent to which any individual is enjoying
 themselves (and therefore contributing positively to the amount of good vibes
 in the room) depends on all sorts of things. But, in a real sense, the
-creation of &lt;strong&gt;good vibes&lt;/strong&gt; in the room is the goal of the live coder—or at
-least it’s &lt;em&gt;my&lt;/em&gt; goal when I perform in this situtation. So I (like any
+creation of <strong>good vibes</strong> in the room is the goal of the live coder—or at
+least it’s <em>my</em> goal when I perform in this situtation. So I (like any
 performer) feed off the good vibes, replenishing (to some extent) my brain
-juice.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+juice.</p>
+  </li>
+</ul>
 
-&lt;p&gt;It’s a bit clearer to see in a picture:&lt;/p&gt;
+<p>It’s a bit clearer to see in a picture:</p>
 
-&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;system diagram for the livecoder-in-a-club system&quot; src=&quot;/assets/images/posts/livecoder-in-a-club-system-diagram.png&quot; /&gt;
+<picture style="position: relative;">
+  <img alt="system diagram for the livecoder-in-a-club system" src="/assets/images/posts/livecoder-in-a-club-system-diagram.png" />
 
   
-&lt;/picture&gt;
+</picture>
 
-&lt;p&gt;So, clearly,&lt;/p&gt;
+<p>So, clearly,</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;a livecoder is a machine for turning &lt;strong&gt;brain juice&lt;/strong&gt; into &lt;strong&gt;good vibes&lt;/strong&gt; (via
-&lt;strong&gt;code&lt;/strong&gt; and &lt;strong&gt;music&lt;/strong&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
+<blockquote>
+  <p>a livecoder is a machine for turning <strong>brain juice</strong> into <strong>good vibes</strong> (via
+<strong>code</strong> and <strong>music</strong>)</p>
+</blockquote>
 
-&lt;p&gt;which is a nice way to think about it, and actually is a relatively accurate
-picture of what I &lt;em&gt;feel&lt;/em&gt; is going on when I’m performing.&lt;/p&gt;
+<p>which is a nice way to think about it, and actually is a relatively accurate
+picture of what I <em>feel</em> is going on when I’m performing.</p>
 
-&lt;h2 id=&quot;how-does-cybernetics-help-us-understand-and-improve-this-system&quot;&gt;How does cybernetics help us understand and improve this system?&lt;/h2&gt;
+<h2 id="how-does-cybernetics-help-us-understand-and-improve-this-system">How does cybernetics help us understand and improve this system?</h2>
 
-&lt;p&gt;In this account of livecoding-in-the-club, there are a few things worth
-noticing:&lt;/p&gt;
+<p>In this account of livecoding-in-the-club, there are a few things worth
+noticing:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;there are different “stocks” (reservoirs of brain juice, code, music and good vibes)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;there are various flows between those stocks, and in both directions (e.g. I
+<ul>
+  <li>
+    <p>there are different “stocks” (reservoirs of brain juice, code, music and good vibes)</p>
+  </li>
+  <li>
+    <p>there are various flows between those stocks, and in both directions (e.g. I
 turn brain juice into code by typing at my keyboard, but I also receive
-information about what the code looks like from my laptop screen, via my eyes)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;there’s a goal: to put on a good show for the audience to enjoy (to increase
-the stock of good vibes in the room)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the system includes closed loops, and so is capable of feedback&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+information about what the code looks like from my laptop screen, via my eyes)</p>
+  </li>
+  <li>
+    <p>there’s a goal: to put on a good show for the audience to enjoy (to increase
+the stock of good vibes in the room)</p>
+  </li>
+  <li>
+    <p>the system includes closed loops, and so is capable of feedback</p>
+  </li>
+</ul>
 
-&lt;p&gt;A key principle of cybernetics is that the structure of the system—what the
+<p>A key principle of cybernetics is that the structure of the system—what the
 parts are, and how they relate to one another—determines the behaviour of the
 system. But anyone can sketch out a (highly contestable) jumble of blobs and
 arrows to describe whatever thing they’re interested in. What do we gain from
-seeing things in this way?&lt;/p&gt;
+seeing things in this way?</p>
 
-&lt;p&gt;This is where another key idea—and person—in cybernetics/systems thinking
-comes in: Donella Meadows’&lt;sup id=&quot;fnref:is-meadows-cybernetics&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:is-meadows-cybernetics&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;a href=&quot;https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/&quot;&gt;Leverage Points: Places to
+<p>This is where another key idea—and person—in cybernetics/systems thinking
+comes in: Donella Meadows’<sup id="fnref:is-meadows-cybernetics" role="doc-noteref"><a href="#fn:is-meadows-cybernetics" class="footnote" rel="footnote">2</a></sup> <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Leverage Points: Places to
 Intervene in a
-System&lt;/a&gt;.
+System</a>.
 The key idea is this: once you’ve mapped out your system, you need to know where
 the most effective “intervention points” to try and implement change? If you’re
 going to expend energy to make things better, where should you focus that energy
-to get the most &lt;em&gt;leverage&lt;/em&gt;?&lt;/p&gt;
+to get the most <em>leverage</em>?</p>
 
-&lt;p&gt;In the livecoder-in-the-club system, to make changes to the system in service of
+<p>In the livecoder-in-the-club system, to make changes to the system in service of
 the the goal (as stated above) of creating maximum good vibes. One obvious
 solution is to start the gig with a bigger reservoir of brain juice (either by
 having a good night’s sleep, popping an adderall, or whatever). Or it could be
 to start with a larger code reservoir by starting with a bunch of code
-pre-written&lt;sup id=&quot;fnref:blank-slate-code&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:blank-slate-code&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+pre-written<sup id="fnref:blank-slate-code" role="doc-noteref"><a href="#fn:blank-slate-code" class="footnote" rel="footnote">3</a></sup>.</p>
 
-&lt;p&gt;However, Meadows’ rules for leverage also suggest that some interventions
-provide more leverage than others&lt;sup id=&quot;fnref:different-interventions&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:different-interventions&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. For example,
+<p>However, Meadows’ rules for leverage also suggest that some interventions
+provide more leverage than others<sup id="fnref:different-interventions" role="doc-noteref"><a href="#fn:different-interventions" class="footnote" rel="footnote">4</a></sup>. For example,
 changing the flow rates (leverage point #10) is likely to have more impact than
 just changing the sizes of the stocks/buffers (leverage point #11). This implies
 that changing the rate at which I turn brain juice into code (perhaps having a
 nicer keyboard, perhaps having better code auto-completion support, or perhaps
-just good-ol’ &lt;em&gt;practice&lt;/em&gt; to improve my coding skills) is likely to be more
+just good-ol’ <em>practice</em> to improve my coding skills) is likely to be more
 impactful than starting with a bigger store of brain juice (so, thankfully,
 there’s no need to buy shady adderall on the dark web). Will Larson (who has
-been a software engineering leader at Calm, Stripe, Uber, and Digg) &lt;a href=&quot;https://lethain.com/systems-thinking/&quot;&gt;has some
+been a software engineering leader at Calm, Stripe, Uber, and Digg) <a href="https://lethain.com/systems-thinking/">has some
 interesting ideas on systems thinking as applied to software
-development&lt;/a&gt; that I’m keen to think more
-about as well.&lt;/p&gt;
+development</a> that I’m keen to think more
+about as well.</p>
 
-&lt;p&gt;For even greater leverage, there are interventions which are related to
+<p>For even greater leverage, there are interventions which are related to
 restructuring the system itself, for example adding new information flows
 (leverage point #6). The dancers can already see the code, but what if I was
-hooked up to a live &lt;a href=&quot;https://en.wikipedia.org/wiki/Electroencephalography&quot;&gt;EEG&lt;/a&gt;
-so they could see the current state of my brain juice?&lt;sup id=&quot;fnref:eeg&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:eeg&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;. And even higher up (in
+hooked up to a live <a href="https://en.wikipedia.org/wiki/Electroencephalography">EEG</a>
+so they could see the current state of my brain juice?<sup id="fnref:eeg" role="doc-noteref"><a href="#fn:eeg" class="footnote" rel="footnote">5</a></sup>. And even higher up (in
 terms of leverage) is changing the goals of the system itself (leverage point
-#3). Why &lt;em&gt;do&lt;/em&gt; people come to a club to dance and have good vibes? What if their
-goal was different?&lt;/p&gt;
+#3). Why <em>do</em> people come to a club to dance and have good vibes? What if their
+goal was different?</p>
 
-&lt;p&gt;Now, the thing about leverage is that it doesn’t guarantee good or bad outcomes,
+<p>Now, the thing about leverage is that it doesn’t guarantee good or bad outcomes,
 it just means you for a small amount of input you see a large effect in the
 output. Figuring out where to intervene in the livecoder-in-the-club system is
 one thing, figuring out how to intervene so that the changes are positive is a
@@ -291,88 +290,88 @@ deep challenge. Leverage means that when things go well they go really well, but
 the opposite is also true (e.g. with margin calls in a bear market). I feel like
 this is an especially apposite point for programmers, because the cheap leverage
 afforded by software is catnip for programmers, but presents some real dangers.
-(as &lt;a href=&quot;https://idlewords.com/talks/sase_panel.htm&quot;&gt;as Maciej Cegłowski puts so
-eloquently&lt;/a&gt;).&lt;/p&gt;
+(as <a href="https://idlewords.com/talks/sase_panel.htm">as Maciej Cegłowski puts so
+eloquently</a>).</p>
 
-&lt;h2 id=&quot;so-whats-the-point&quot;&gt;So what’s the point?&lt;/h2&gt;
+<h2 id="so-whats-the-point">So what’s the point?</h2>
 
-&lt;p&gt;Obviously the livecoder-in-the-club system described above is an
+<p>Obviously the livecoder-in-the-club system described above is an
 oversimplification; it makes certain things easy to see but renders other things
 invisible, and every aspect of both the components (the things it talks about)
 and their relationships (the connections between them) is contestable. But
 that’s one of the benefits by laying things out like this—we can at least see
 the things that we’re explicitly considering, and we may well need to add new
 things to the model for consideration (and examine all the new connections and
-potential feedback loops those new things create).&lt;/p&gt;
+potential feedback loops those new things create).</p>
 
-&lt;p&gt;My main goal here is really just to provide a worked example of how ideas from
+<p>My main goal here is really just to provide a worked example of how ideas from
 cybernetics and systems thinking can help us move beyond just describing things
 to figuring out where to place our energies to effect change—where we’ll get
 the most leverage. Being the best livecoder I can be is a lifetime goal, just
 like any other instrumental or artistic practice. I’m keen to keep using the
 tools of cybernetics to push in that direction, and bring the assemblage of
-dancing bodies of the livecoder-in-the-club system with me for the ride :)&lt;/p&gt;
+dancing bodies of the livecoder-in-the-club system with me for the ride :)</p>
 
-&lt;h2 id=&quot;meadows-12-places-to-intervene&quot;&gt;Appendix: Meadows’ &lt;em&gt;12 Places to Intervene in a System&lt;/em&gt;&lt;/h2&gt;
+<h2 id="meadows-12-places-to-intervene">Appendix: Meadows’ <em>12 Places to Intervene in a System</em></h2>
 
-&lt;p class=&quot;hl-para&quot;&gt;Note: these are taken straight from the &lt;a href=&quot;https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/&quot;&gt;Donella Meadows foundation
-website&lt;/a&gt;.&lt;/p&gt;
+<p class="hl-para">Note: these are taken straight from the <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Donella Meadows foundation
+website</a>.</p>
 
-&lt;p&gt;&lt;em&gt;(lower numbers = less effective, higher numbers = more effective)&lt;/em&gt;&lt;/p&gt;
+<p><em>(lower numbers = less effective, higher numbers = more effective)</em></p>
 
-&lt;ol reversed=&quot;&quot;&gt;
+<ol reversed="">
 
-&lt;li&gt;Constants, parameters, numbers (such as subsidies, taxes, standards).&lt;/li&gt;
+<li>Constants, parameters, numbers (such as subsidies, taxes, standards).</li>
 
-&lt;li&gt;The sizes of buffers and other stabilizing stocks, relative to their flows.&lt;/li&gt;
+<li>The sizes of buffers and other stabilizing stocks, relative to their flows.</li>
 
-&lt;li&gt;The structure of material stocks and flows (such as transport networks, population age structures).&lt;/li&gt;
+<li>The structure of material stocks and flows (such as transport networks, population age structures).</li>
 
-&lt;li&gt;The lengths of delays, relative to the rate of system change.&lt;/li&gt;
+<li>The lengths of delays, relative to the rate of system change.</li>
 
-&lt;li&gt;The strength of negative feedback loops, relative to the impacts they are trying to correct against.&lt;/li&gt;
+<li>The strength of negative feedback loops, relative to the impacts they are trying to correct against.</li>
 
-&lt;li&gt;The gain around driving positive feedback loops.&lt;/li&gt;
+<li>The gain around driving positive feedback loops.</li>
 
-&lt;li&gt;The structure of information flows (who does and does not have access to information).&lt;/li&gt;
+<li>The structure of information flows (who does and does not have access to information).</li>
 
-&lt;li&gt;The rules of the system (such as incentives, punishments, constraints).&lt;/li&gt;
+<li>The rules of the system (such as incentives, punishments, constraints).</li>
 
-&lt;li&gt;The power to add, change, evolve, or self-organize system structure.&lt;/li&gt;
+<li>The power to add, change, evolve, or self-organize system structure.</li>
 
-&lt;li&gt;The goals of the system.&lt;/li&gt;
+<li>The goals of the system.</li>
 
-&lt;li&gt;The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.&lt;/li&gt;
+<li>The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.</li>
 
-&lt;li&gt;The power to transcend paradigms.&lt;/li&gt;
+<li>The power to transcend paradigms.</li>
 
-&lt;/ol&gt;
+</ol>
 
-&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:niche&quot; role=&quot;doc-endnote&quot;&gt;
+<h2 id="footnotes">Footnotes</h2>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:niche" role="doc-endnote">
 
-      &lt;p&gt;It’s a pretty niche activity, but there’s an &lt;a href=&quot;https://toplap.org&quot;&gt;international
-community&lt;/a&gt; of us, and if you’re interested then you can
-&lt;a href=&quot;https://twitter.com/benswift&quot;&gt;follow me on twitter&lt;/a&gt; to hear about upcoming
-gigs. &lt;a href=&quot;#fnref:niche&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:is-meadows-cybernetics&quot; role=&quot;doc-endnote&quot;&gt;
+      <p>It’s a pretty niche activity, but there’s an <a href="https://toplap.org">international
+community</a> of us, and if you’re interested then you can
+<a href="https://twitter.com/benswift">follow me on twitter</a> to hear about upcoming
+gigs. <a href="#fnref:niche" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:is-meadows-cybernetics" role="doc-endnote">
 
-      &lt;p&gt;&lt;a href=&quot;https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/&quot;&gt;Donella
-Meadows&lt;/a&gt;
+      <p><a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Donella
+Meadows</a>
 tended to prefer terms like “systems thinking” and “systems change” rather
 than using the term “cybernetics” directly, but she certainly was involved
-with some of the key people &amp;amp; events in the cybernetics story, and her work
-is highly relevant to cybernetic ideas. Plus, &lt;a href=&quot;https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&amp;amp;redir_esc=y&quot;&gt;Google Books categorises her
-work under &lt;em&gt;Computers &amp;gt;
-Cybernetics&lt;/em&gt;&lt;/a&gt;,
-and you &lt;em&gt;know&lt;/em&gt; the Big G is never wrong about that stuff. &lt;a href=&quot;#fnref:is-meadows-cybernetics&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:blank-slate-code&quot; role=&quot;doc-endnote&quot;&gt;
+with some of the key people &amp; events in the cybernetics story, and her work
+is highly relevant to cybernetic ideas. Plus, <a href="https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&amp;redir_esc=y">Google Books categorises her
+work under <em>Computers &gt;
+Cybernetics</em></a>,
+and you <em>know</em> the Big G is never wrong about that stuff. <a href="#fnref:is-meadows-cybernetics" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:blank-slate-code" role="doc-endnote">
 
-      &lt;p&gt;This is actually a subtle point in livecoding. I (along with some other
+      <p>This is actually a subtle point in livecoding. I (along with some other
 livecoders) am committed to starting each gig “from scratch” with a blank
 code page. However, I’ve written a lot of library code ahead of time to
 provide me with nice abstractions for making music with code, and I use that
@@ -380,60 +379,60 @@ provide me with nice abstractions for making music with code, and I use that
 Thinking about the livecoder-in-the-club system one question that I’m
 pondering is whether that library code constitutes a larger stock of code,
 or whether it’s a restructuring (an increase) of the flow rate from code
-into music, or both.&lt;/p&gt;
+into music, or both.</p>
 
-      &lt;p&gt;To make things even more complicated, and there’s &lt;em&gt;kindof&lt;/em&gt; a blurry line
+      <p>To make things even more complicated, and there’s <em>kindof</em> a blurry line
 between where the code ends and the music begins in livecoding (i.e. there’s
-the code you see on the screen, which is the code that I’m writing &amp;amp;
+the code you see on the screen, which is the code that I’m writing &amp;
 executing “live”, but there’s also a bunch of pre-written code in my
 operating system’s audio plumbing just to get the music to come out of the
-speakers properly). &lt;a href=&quot;#fnref:blank-slate-code&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:different-interventions&quot; role=&quot;doc-endnote&quot;&gt;
+speakers properly). <a href="#fnref:blank-slate-code" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:different-interventions" role="doc-endnote">
 
-      &lt;p&gt;There’s not enough room in this blog post for a full “systems change
+      <p>There’s not enough room in this blog post for a full “systems change
 analysis” of the livecoder-in-the-club system according to all 12 leverage
-points, but if you’re interested I do recommend you &lt;a href=&quot;https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/&quot;&gt;check out that
-article&lt;/a&gt;
-as a starting point. &lt;a href=&quot;#fnref:different-interventions&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:eeg&quot; role=&quot;doc-endnote&quot;&gt;
+points, but if you’re interested I do recommend you <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">check out that
+article</a>
+as a starting point. <a href="#fnref:different-interventions" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:eeg" role="doc-endnote">
 
-      &lt;p&gt;Coming up with a reliable, portable EEG machine which can measure a useful
+      <p>Coming up with a reliable, portable EEG machine which can measure a useful
 biometric signal which corresponds to an individual’s perceived current
-level of brain juice is beyond the scope of this blog post. &lt;a href=&quot;#fnref:eeg&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"></summary></entry><entry><title type="html">Cutting ruby CI pipeline times with pre-installed bundles</title><link href="https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles/" rel="alternate" type="text/html" title="Cutting ruby CI pipeline times with pre-installed bundles" /><published>2021-10-21T00:00:00+11:00</published><updated>2021-10-21T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles</id><content type="html" xml:base="https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles/">&lt;p&gt;I (and, increasingly many of my colleagues) are using
-&lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; to create open (CC-licenced), hackable, acessible
-course websites &amp;amp; teaching content for our classes. We use a self-hosted GitLab
-server for all the websites sources, and then build/deploy them with &lt;a href=&quot;https://docs.gitlab.com/ee/ci/&quot;&gt;GitLab
-CI&lt;/a&gt;. It works well, it means I don’t have to
+level of brain juice is beyond the scope of this blog post. <a href="#fnref:eeg" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cutting ruby CI pipeline times with pre-installed bundles</title><link href="https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles/" rel="alternate" type="text/html" title="Cutting ruby CI pipeline times with pre-installed bundles" /><published>2021-10-21T00:00:00+11:00</published><updated>2021-10-21T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles</id><content type="html" xml:base="https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles/"><![CDATA[<p>I (and, increasingly many of my colleagues) are using
+<a href="https://jekyllrb.com">Jekyll</a> to create open (CC-licenced), hackable, acessible
+course websites &amp; teaching content for our classes. We use a self-hosted GitLab
+server for all the websites sources, and then build/deploy them with <a href="https://docs.gitlab.com/ee/ci/">GitLab
+CI</a>. It works well, it means I don’t have to
 fight with our LMS to do interesting things, and it means I can open my learning
 materials to everyone (not just those who are privileged enough to be able to
-pay the fees to study at the ANU).&lt;/p&gt;
+pay the fees to study at the ANU).</p>
 
-&lt;p&gt;The &lt;code&gt;jekyll build&lt;/code&gt; step runs in a container, and for a long time we’ve just used
-the &lt;a href=&quot;https://hub.docker.com/_/ruby/&quot;&gt;official ruby image&lt;/a&gt; as a starting point,
-then done a &lt;code&gt;bundle install&lt;/code&gt; inside the container before running the build step
-to get all the deps. However, this means the deps are &lt;em&gt;installed from scratch on
-every deploy&lt;/em&gt;, which isn’t the greenest (although ANU is &lt;a href=&quot;https://www.anu.edu.au/research/research-initiatives/anu-below-zero&quot;&gt;heading in a good
+<p>The <code>jekyll build</code> step runs in a container, and for a long time we’ve just used
+the <a href="https://hub.docker.com/_/ruby/">official ruby image</a> as a starting point,
+then done a <code>bundle install</code> inside the container before running the build step
+to get all the deps. However, this means the deps are <em>installed from scratch on
+every deploy</em>, which isn’t the greenest (although ANU is <a href="https://www.anu.edu.au/research/research-initiatives/anu-below-zero">heading in a good
 direction on net
-zero&lt;/a&gt;) and
-it also means the feedback loop from push-&amp;gt;deployed site is much longer than it
-needs to be.&lt;/p&gt;
+zero</a>) and
+it also means the feedback loop from push-&gt;deployed site is much longer than it
+needs to be.</p>
 
-&lt;p&gt;Yesterday (prompted by the understandable frustrations of my colleague
-&lt;a href=&quot;https://charlesmartin.com.au&quot;&gt;Charles&lt;/a&gt; about the build times) I spent some time
+<p>Yesterday (prompted by the understandable frustrations of my colleague
+<a href="https://charlesmartin.com.au">Charles</a> about the build times) I spent some time
 fixing things. I ended up creating a new docker image with the required gems
-pre-installed, and it &lt;strong&gt;cut our CI pipeline times by up to 90%&lt;/strong&gt; (i.e. a 10x
-speedup).&lt;/p&gt;
+pre-installed, and it <strong>cut our CI pipeline times by up to 90%</strong> (i.e. a 10x
+speedup).</p>
 
-&lt;p&gt;There were a couple of tricky parts, so I include some commentary here in case
+<p>There were a couple of tricky parts, so I include some commentary here in case
 anyone else (including future me when if I forget how this works) wants to do
-similar things.&lt;/p&gt;
+similar things.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-Dockerfile&quot;&gt;# Choose and name our temporary image.
+<pre><code class="language-Dockerfile"># Choose and name our temporary image.
 FROM ruby:3.0.2 as builder
 
 WORKDIR /app
@@ -443,15 +442,15 @@ ARG SSH_PRIVATE_KEY
 
 # required to pull from the (private) theme gem repos
 # create the SSH directory.
-RUN mkdir -p ~/.ssh/ &amp;amp;&amp;amp; \
+RUN mkdir -p ~/.ssh/ &amp;&amp; \
   # populate the private key file.
-  echo &quot;$SSH_PRIVATE_KEY&quot; &amp;gt; ~/.ssh/id_rsa &amp;amp;&amp;amp; \
+  echo "$SSH_PRIVATE_KEY" &gt; ~/.ssh/id_rsa &amp;&amp; \
   # set the required permissions.
-  chmod -R 600 ~/.ssh/ &amp;amp;&amp;amp; \
+  chmod -R 600 ~/.ssh/ &amp;&amp; \
   # add our GitLab server to our list of known hosts for ssh.
-  ssh-keyscan -t rsa gitlab.anu.edu.au &amp;gt;&amp;gt; ~/.ssh/known_hosts
+  ssh-keyscan -t rsa gitlab.anu.edu.au &gt;&gt; ~/.ssh/known_hosts
 
-# install the deps - this is really just for &quot;caching&quot;, the expectation is that
+# install the deps - this is really just for "caching", the expectation is that
 # the CI job will re-run `bundle install` to pick up any differences
 COPY Gemfile Gemfile.lock* .
 RUN bundle install
@@ -463,292 +462,292 @@ WORKDIR /app
 # Copy across the files from our `builder` container
 # this really assumes the same base container
 COPY --from=builder $BUNDLE_APP_CONFIG $BUNDLE_APP_CONFIG
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;The main tricky bit is the ssh setup, because some of the (in-house) gems are
+<p>The main tricky bit is the ssh setup, because some of the (in-house) gems are
 only available in git repos which require authentication. This Dockerfile pulls
-in the SSH key from an environment variable, then uses it to &lt;code&gt;bundle install&lt;/code&gt;
-the required gems. Then, the key part is that there’s a second &lt;code&gt;FROM&lt;/code&gt; command to
+in the SSH key from an environment variable, then uses it to <code>bundle install</code>
+the required gems. Then, the key part is that there’s a second <code>FROM</code> command to
 create a new image (sans any trace of the SSH key) and only the installed gems
-are copied across.&lt;/p&gt;
+are copied across.</p>
 
-&lt;p&gt;To build the container, you need to do something like&lt;/p&gt;
+<p>To build the container, you need to do something like</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;MY_KEY=$(cat gitlab-ci-runner-key)
-docker build --build-arg SSH_PRIVATE_KEY=&quot;$MY_KEY&quot; --tag YOUR_TAG_NAME .
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-shell">MY_KEY=$(cat gitlab-ci-runner-key)
+docker build --build-arg SSH_PRIVATE_KEY="$MY_KEY" --tag YOUR_TAG_NAME .
+</code></pre>
 
-&lt;p&gt;A couple of caveats with this approach: the container just caches the gems; the
-&lt;code&gt;bundle install&lt;/code&gt; step will still (probably) need to run in the CI pipeline, but
-it’ll be a no-op if &lt;code&gt;Gemfile.lock&lt;/code&gt; hasn’t changed. You’ll never be worse off
+<p>A couple of caveats with this approach: the container just caches the gems; the
+<code>bundle install</code> step will still (probably) need to run in the CI pipeline, but
+it’ll be a no-op if <code>Gemfile.lock</code> hasn’t changed. You’ll never be worse off
 (time-wise) than if you’re installing from scratch, because only the deps which
 have changed in the lock file will be downloaded. But over time, the container
 may take longer to run as the list of pre-installed vs actually required
-packages diverges.&lt;/p&gt;
+packages diverges.</p>
 
-&lt;p class=&quot;hl-para&quot;&gt;I did try a similar approach that used &lt;code&gt;bundle cache&lt;/code&gt; to pull all the deps into
-a &lt;code&gt;vendor/cache&lt;/code&gt; folder and then copy &lt;em&gt;that&lt;/em&gt; across into the new image, but I
+<p class="hl-para">I did try a similar approach that used <code>bundle cache</code> to pull all the deps into
+a <code>vendor/cache</code> folder and then copy <em>that</em> across into the new image, but I
 had weird permissions errors that I didn’t have the time to figure out. If
-you’ve got tips on whether that’s a more “bundler-y” way to do things then &lt;a href=&quot;mailto:ben@benswift.me&quot;&gt;hit
-me up&lt;/a&gt;.&lt;/p&gt;
+you’ve got tips on whether that’s a more “bundler-y” way to do things then <a href="mailto:ben@benswift.me">hit
+me up</a>.</p>
 
-&lt;p&gt;I want to give a shoutout to Jan Akerman who wrote &lt;a href=&quot;https://janakerman.co.uk/docker-git-clone/&quot;&gt;a helpful blog
-post&lt;/a&gt; which got me started—and
-some of the Dockerfile is taken from that post.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><category term="web" /><summary type="html">I (and, increasingly many of my colleagues) are using Jekyll to create open (CC-licenced), hackable, acessible course websites &amp;amp; teaching content for our classes. We use a self-hosted GitLab server for all the websites sources, and then build/deploy them with GitLab CI. It works well, it means I don’t have to fight with our LMS to do interesting things, and it means I can open my learning materials to everyone (not just those who are privileged enough to be able to pay the fees to study at the ANU).</summary></entry><entry><title type="html">openconnect setup for institutional VPN access</title><link href="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/" rel="alternate" type="text/html" title="openconnect setup for institutional VPN access" /><published>2021-10-18T00:00:00+11:00</published><updated>2021-10-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access</id><content type="html" xml:base="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/">&lt;p&gt;My &lt;a href=&quot;https://www.anu.edu.au&quot;&gt;institution’s&lt;/a&gt; IT policies have recently changed and
+<p>I want to give a shoutout to Jan Akerman who wrote <a href="https://janakerman.co.uk/docker-git-clone/">a helpful blog
+post</a> which got me started—and
+some of the Dockerfile is taken from that post.</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="web" /><summary type="html"><![CDATA[I (and, increasingly many of my colleagues) are using Jekyll to create open (CC-licenced), hackable, acessible course websites &amp; teaching content for our classes. We use a self-hosted GitLab server for all the websites sources, and then build/deploy them with GitLab CI. It works well, it means I don’t have to fight with our LMS to do interesting things, and it means I can open my learning materials to everyone (not just those who are privileged enough to be able to pay the fees to study at the ANU).]]></summary></entry><entry><title type="html">openconnect setup for institutional VPN access</title><link href="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/" rel="alternate" type="text/html" title="openconnect setup for institutional VPN access" /><published>2021-10-18T00:00:00+11:00</published><updated>2021-10-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access</id><content type="html" xml:base="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/"><![CDATA[<p>My <a href="https://www.anu.edu.au">institution’s</a> IT policies have recently changed and
 port 22 is now blocked from off-campus. That’s a real pain if you use ssh to
-push/pull from our on-prem GitLab servers (which I need to do &lt;em&gt;all the time&lt;/em&gt;).&lt;/p&gt;
+push/pull from our on-prem GitLab servers (which I need to do <em>all the time</em>).</p>
 
-&lt;p&gt;The recommended solution is to come in via a VPN—which is not a terrible idea
+<p>The recommended solution is to come in via a VPN—which is not a terrible idea
 in principle. However, the institution’s recommended setup requires some janky
 GlobalProtect client, which (for me at least) was pretty crashy. As an
-alternative, &lt;a href=&quot;http://www.infradead.org/openconnect/&quot;&gt;openconnect&lt;/a&gt; is just a
-&lt;code&gt;brew install openconnect&lt;/code&gt; away (on macOS, at least), and after a bit of setting
-up, it works seamlessly.&lt;/p&gt;
+alternative, <a href="http://www.infradead.org/openconnect/">openconnect</a> is just a
+<code>brew install openconnect</code> away (on macOS, at least), and after a bit of setting
+up, it works seamlessly.</p>
 
-&lt;p&gt;If you’re in a similar situation, here’s a terminal command you can use to
-access the campus network via the VPN:&lt;/p&gt;
+<p>If you’re in a similar situation, here’s a terminal command you can use to
+access the campus network via the VPN:</p>
 
-&lt;pre&gt;&lt;code&gt;sudo openconnect \
+<pre><code>sudo openconnect \
   --user=uXXXXXXX \ ## replace with your uid
-  --protocol=gp \   ## because it&apos;s a GlobalProtect VPN
+  --protocol=gp \   ## because it's a GlobalProtect VPN
   https://staff-access.anu.edu.au
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;The above command will prompt for your usual password, which you enter in the
+<p>The above command will prompt for your usual password, which you enter in the
 terminal. Since I already have that info in an encrypted file, I have a slightly
-modified setup (this is in a script called &lt;code&gt;vpn.sh&lt;/code&gt;):&lt;/p&gt;
+modified setup (this is in a script called <code>vpn.sh</code>):</p>
 
-&lt;pre&gt;&lt;code&gt;#!/usr/bin/env zsh
+<pre><code>#!/usr/bin/env zsh
 
 # pull ANU password out of encrypted authinfo file, pipe it to stdin
 gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | \
-    awk &apos;/machine smtp.office365.com login uXXXXXXX@anu.edu.au/ {print $NF}&apos; | \
+    awk '/machine smtp.office365.com login uXXXXXXX@anu.edu.au/ {print $NF}' | \
     # start the VPN
     sudo openconnect --user=uXXXXXXX --protocol=gp --passwd-on-stdin https://staff-access.anu.edu.au
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;Happy VPN-ing.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html">My institution’s IT policies have recently changed and port 22 is now blocked from off-campus. That’s a real pain if you use ssh to push/pull from our on-prem GitLab servers (which I need to do all the time).</summary></entry><entry><title type="html">Feedback in livecoding: cui bono?</title><link href="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/" rel="alternate" type="text/html" title="Feedback in livecoding: cui bono?" /><published>2021-09-13T16:22:00+10:00</published><updated>2021-09-13T16:22:00+10:00</updated><id>https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono</id><content type="html" xml:base="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/">&lt;p&gt;Here’s the &lt;a href=&quot;/blog/2021/09/13/feedback-in-livecoding-cui-bono/&quot;&gt;link to the slides&lt;/a&gt; for the actual
-presentation on Oct 13.&lt;/p&gt;
+<p>Happy VPN-ing.</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[My institution’s IT policies have recently changed and port 22 is now blocked from off-campus. That’s a real pain if you use ssh to push/pull from our on-prem GitLab servers (which I need to do all the time).]]></summary></entry><entry><title type="html">Feedback in livecoding: cui bono?</title><link href="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/" rel="alternate" type="text/html" title="Feedback in livecoding: cui bono?" /><published>2021-09-13T16:22:00+10:00</published><updated>2021-09-13T16:22:00+10:00</updated><id>https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono</id><content type="html" xml:base="https://benswift.me/blog/2021/09/13/feedback-in-livecoding-cui-bono/"><![CDATA[<p>Here’s the <a href="/blog/2021/09/13/feedback-in-livecoding-cui-bono/">link to the slides</a> for the actual
+presentation on Oct 13.</p>
 
-&lt;p&gt;Hi, BUILD students. I know y’all are busy, so this won’t take &lt;em&gt;too&lt;/em&gt; long and
+<p>Hi, BUILD students. I know y’all are busy, so this won’t take <em>too</em> long and
 will hopefully be fun. Before my guest lecture, I’d like to introduce you (if
-you haven’t seen it before) to &lt;a href=&quot;https://toplap.org/about/&quot;&gt;livecoding&lt;/a&gt;. Imagine
-you arrive at the club&lt;sup id=&quot;fnref:pingers&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:pingers&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, and as well as the glow sticks and the pingers
+you haven’t seen it before) to <a href="https://toplap.org/about/">livecoding</a>. Imagine
+you arrive at the club<sup id="fnref:pingers" role="doc-noteref"><a href="#fn:pingers" class="footnote" rel="footnote">1</a></sup>, and as well as the glow sticks and the pingers
 and the heaving bodies on the dance floor instead of a “traditional” DJ you see
-this:&lt;/p&gt;
+this:</p>
 
-&lt;div style=&quot;width:100%; margin: 0px auto; margin-bottom: 1rem;&quot;&gt;
-  &lt;div style=&quot;position: relative; padding-bottom: 62.5%; height: 0px;&quot;&gt;
-	&lt;iframe style=&quot;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/C2GH5JmJwhU&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
-	&lt;/iframe&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div style="width:100%; margin: 0px auto; margin-bottom: 1rem;">
+  <div style="position: relative; padding-bottom: 62.5%; height: 0px;">
+	<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/C2GH5JmJwhU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+	</iframe>
+  </div>
+</div>
 
-&lt;div style=&quot;width:100%; margin: 0px auto; margin-bottom: 1rem;&quot;&gt;
-  &lt;div style=&quot;position: relative; padding-bottom: 62.5%; height: 0px;&quot;&gt;
-	&lt;iframe style=&quot;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;&quot; src=&quot;https://www.youtube.com/embed/a1RxpJkvqpY&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;
-	&lt;/iframe&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div style="width:100%; margin: 0px auto; margin-bottom: 1rem;">
+  <div style="position: relative; padding-bottom: 62.5%; height: 0px;">
+	<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/a1RxpJkvqpY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+	</iframe>
+  </div>
+</div>
 
-&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/592452477?color=be2edd&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; title=&quot;Ushini &amp;amp;amp; Ben live @ ACMC&amp;amp;#039;21&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592452477?color=be2edd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ushini &amp;amp; Ben live @ ACMC&amp;#039;21"></iframe></div>
+<script src="https://player.vimeo.com/api/player.js"></script>
 
-&lt;h2 id=&quot;what-can-cybernetics-teach-us-about-this&quot;&gt;What can cybernetics teach us about this?&lt;/h2&gt;
+<h2 id="what-can-cybernetics-teach-us-about-this">What can cybernetics teach us about this?</h2>
 
-&lt;p&gt;Obviously there are lots of feedback loops in this CPS; involving
+<p>Obviously there are lots of feedback loops in this CPS; involving
 audience/room/livecoder/screens/lights/loudspeakers etc. But one of the things
 that interests me most about livecoding is that it gives the club-goers a chance
-to see (and hopefully to &lt;em&gt;care&lt;/em&gt;) about the source code of a computer program.&lt;/p&gt;
+to see (and hopefully to <em>care</em>) about the source code of a computer program.</p>
 
-&lt;p&gt;There’s lots we could say about this from a cybernetics perspective, but the
-things I want to focus on in this class is &lt;em&gt;feedback&lt;/em&gt;.&lt;/p&gt;
+<p>There’s lots we could say about this from a cybernetics perspective, but the
+things I want to focus on in this class is <em>feedback</em>.</p>
 
-&lt;p&gt;Here are a few questions for you to think about ahead of class. In each
-livecoding video:&lt;/p&gt;
+<p>Here are a few questions for you to think about ahead of class. In each
+livecoding video:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;what has the performer chosen to &lt;em&gt;show&lt;/em&gt;?&lt;/li&gt;
-  &lt;li&gt;what has the performer chosen to &lt;em&gt;hide&lt;/em&gt;?&lt;/li&gt;
-  &lt;li&gt;who is the feedback &lt;em&gt;for&lt;/em&gt;&lt;sup id=&quot;fnref:cui&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:cui&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;?&lt;/li&gt;
-  &lt;li&gt;in each case, why do you think those decisions were made?&lt;/li&gt;
-  &lt;li&gt;when watching, what did &lt;em&gt;you&lt;/em&gt; want more/less/different feedback about?&lt;/li&gt;
-  &lt;li&gt;if you were the AV designer for Ushini &amp;amp; my next livecoding set, what changes
-would you make?&lt;/li&gt;
-  &lt;li&gt;how does a taking a cybernetic approach to this question change answer to
+<ul>
+  <li>what has the performer chosen to <em>show</em>?</li>
+  <li>what has the performer chosen to <em>hide</em>?</li>
+  <li>who is the feedback <em>for</em><sup id="fnref:cui" role="doc-noteref"><a href="#fn:cui" class="footnote" rel="footnote">2</a></sup>?</li>
+  <li>in each case, why do you think those decisions were made?</li>
+  <li>when watching, what did <em>you</em> want more/less/different feedback about?</li>
+  <li>if you were the AV designer for Ushini &amp; my next livecoding set, what changes
+would you make?</li>
+  <li>how does a taking a cybernetic approach to this question change answer to
 these questions? (because feedback is something that cybernetics has a fair
-bit to say about)&lt;/li&gt;
-&lt;/ul&gt;
+bit to say about)</li>
+</ul>
 
-&lt;p&gt;If you want to go a bit deeper on the semiotics of all this livecoding stuff, my
-collaborators and I have written a couple of papers&lt;sup id=&quot;fnref:gauche&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:gauche&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; on the
-semantics/semiotics of livecoding:&lt;/p&gt;
+<p>If you want to go a bit deeper on the semiotics of all this livecoding stuff, my
+collaborators and I have written a couple of papers<sup id="fnref:gauche" role="doc-noteref"><a href="#fn:gauche" class="footnote" rel="footnote">3</a></sup> on the
+semantics/semiotics of livecoding:</p>
 
-&lt;div class=&quot;bibliography&quot;&gt;&lt;div&gt;
+<div class="bibliography"><div>
 
-&lt;p class=&quot;pubitem&quot; id=&quot;sorensenManyMeaningsLive2014&quot;&gt;&lt;span class=&quot;title&quot;&gt;&lt;a href=&quot;https://doi.org/10.1162/COMJ_a_00230&quot;&gt;The Many Meanings of Live Coding&lt;/a&gt;&lt;/span&gt; &lt;span class=&quot;date&quot;&gt;(2014)&lt;/span&gt;&lt;/p&gt;
+<p class="pubitem" id="sorensenManyMeaningsLive2014"><span class="title"><a href="https://doi.org/10.1162/COMJ_a_00230">The Many Meanings of Live Coding</a></span> <span class="date">(2014)</span></p>
 
-&lt;p&gt;by &lt;span class=&quot;author&quot;&gt;Andrew Sorensen&lt;/span&gt;, &lt;span class=&quot;author&quot;&gt;&lt;strong&gt;Ben Swift&lt;/strong&gt;&lt;/span&gt; and &lt;span class=&quot;author&quot;&gt;Alistair Riddell&lt;/span&gt;&lt;/p&gt;
+<p>by <span class="author">Andrew Sorensen</span>, <span class="author"><strong>Ben Swift</strong></span> and <span class="author">Alistair Riddell</span></p>
 
-&lt;p&gt;in &lt;span class=&quot;venue&quot;&gt;Computer Music Journal 38(1)&lt;/span&gt; (&lt;a href=&quot;/assets/documents/preprints/sorensen_et_al_2014_the_many_meanings_of_live_coding.pdf&quot;&gt;pdf&lt;/a&gt;)&lt;/p&gt;
+<p>in <span class="venue">Computer Music Journal 38(1)</span> (<a href="/assets/documents/preprints/sorensen_et_al_2014_the_many_meanings_of_live_coding.pdf">pdf</a>)</p>
 
-&lt;p&gt;doi: &lt;a href=&quot;https://doi.org/10.1162/COMJ_a_00230&quot;&gt;10.1162/COMJ_a_00230&lt;/a&gt;&lt;/p&gt;
+<p>doi: <a href="https://doi.org/10.1162/COMJ_a_00230">10.1162/COMJ_a_00230</a></p>
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;bibliography&quot;&gt;&lt;div&gt;
+</div>
+</div>
+<div class="bibliography"><div>
 
-&lt;p class=&quot;pubitem&quot; id=&quot;swiftVisualCodeAnnotations2013&quot;&gt;&lt;span class=&quot;title&quot;&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/document/6617345&quot;&gt;Visual Code Annotations for Cyberphysical Programming&lt;/a&gt;&lt;/span&gt; &lt;span class=&quot;date&quot;&gt;(2013)&lt;/span&gt;&lt;/p&gt;
+<p class="pubitem" id="swiftVisualCodeAnnotations2013"><span class="title"><a href="https://ieeexplore.ieee.org/document/6617345">Visual Code Annotations for Cyberphysical Programming</a></span> <span class="date">(2013)</span></p>
 
-&lt;p&gt;by &lt;span class=&quot;author&quot;&gt;&lt;strong&gt;Ben Swift&lt;/strong&gt;&lt;/span&gt;, &lt;span class=&quot;author&quot;&gt;Andrew Sorensen&lt;/span&gt;, &lt;span class=&quot;author&quot;&gt;Henry Gardner&lt;/span&gt; and &lt;span class=&quot;author&quot;&gt;John Hosking&lt;/span&gt;&lt;/p&gt;
+<p>by <span class="author"><strong>Ben Swift</strong></span>, <span class="author">Andrew Sorensen</span>, <span class="author">Henry Gardner</span> and <span class="author">John Hosking</span></p>
 
-&lt;p&gt;in &lt;span class=&quot;venue&quot;&gt;LIVE &apos;13: 1st International Workshop on Live Programming at ICSE&lt;/span&gt; (&lt;a href=&quot;/assets/documents/preprints/swift_et_al_2013_visual_code_annotations_for_cyberphysical_programming.pdf&quot;&gt;pdf&lt;/a&gt;)&lt;/p&gt;
+<p>in <span class="venue">LIVE '13: 1st International Workshop on Live Programming at ICSE</span> (<a href="/assets/documents/preprints/swift_et_al_2013_visual_code_annotations_for_cyberphysical_programming.pdf">pdf</a>)</p>
 
-&lt;p&gt;doi: &lt;a href=&quot;https://doi.org/10.1109/LIVE.2013.6617345&quot;&gt;10.1109/LIVE.2013.6617345&lt;/a&gt;&lt;/p&gt;
+<p>doi: <a href="https://doi.org/10.1109/LIVE.2013.6617345">10.1109/LIVE.2013.6617345</a></p>
 
-&lt;/div&gt;
-&lt;/div&gt;
+</div>
+</div>
 
-&lt;p&gt;If there are other thinkers/writers/doers that you can think of who also have
+<p>If there are other thinkers/writers/doers that you can think of who also have
 something to say about this, then bring those ideas along and we can discuss
-them as well.&lt;/p&gt;
+them as well.</p>
 
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:pingers&quot; role=&quot;doc-endnote&quot;&gt;
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:pingers" role="doc-endnote">
 
-      &lt;p&gt;I don’t really have any lived experience with this—I’m approaching 40 and
-have young kids and I’m normally in bed by 9:30pm. &lt;a href=&quot;#fnref:pingers&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:cui&quot; role=&quot;doc-endnote&quot;&gt;
+      <p>I don’t really have any lived experience with this—I’m approaching 40 and
+have young kids and I’m normally in bed by 9:30pm. <a href="#fnref:pingers" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:cui" role="doc-endnote">
 
-      &lt;p&gt;Hence the pretentious latin in the title of this blog post. &lt;a href=&quot;#fnref:cui&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:gauche&quot; role=&quot;doc-endnote&quot;&gt;
+      <p>Hence the pretentious latin in the title of this blog post. <a href="#fnref:cui" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:gauche" role="doc-endnote">
 
-      &lt;p&gt;I hope it’s not too gauche to provide &lt;em&gt;two&lt;/em&gt; self-citations. &lt;a href=&quot;#fnref:gauche&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="livecoding" /><summary type="html">Here’s the link to the slides for the actual presentation on Oct 13.</summary></entry><entry><title type="html">Moving to the School of Cybernetics</title><link href="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/" rel="alternate" type="text/html" title="Moving to the School of Cybernetics" /><published>2021-05-11T00:00:00+10:00</published><updated>2021-05-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/">&lt;p&gt;Some job news—I’ve just accepted a position in the new &lt;a href=&quot;https://3ainstitute.org&quot;&gt;School of
-Cybernetics&lt;/a&gt; in the ANU College of Engineering
+      <p>I hope it’s not too gauche to provide <em>two</em> self-citations. <a href="#fnref:gauche" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="livecoding" /><summary type="html"><![CDATA[Here’s the link to the slides for the actual presentation on Oct 13.]]></summary></entry><entry><title type="html">Moving to the School of Cybernetics</title><link href="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/" rel="alternate" type="text/html" title="Moving to the School of Cybernetics" /><published>2021-05-11T00:00:00+10:00</published><updated>2021-05-11T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2021/05/11/moving-to-the-school-of-cybernetics/"><![CDATA[<p>Some job news—I’ve just accepted a position in the new <a href="https://3ainstitute.org">School of
+Cybernetics</a> in the ANU College of Engineering
 and Computer Science (CECS). I’ll finish out my teaching this semester in the
-&lt;a href=&quot;https://cs.anu.edu.au&quot;&gt;School of Computing&lt;/a&gt; then I’ll make the move in July.
+<a href="https://cs.anu.edu.au">School of Computing</a> then I’ll make the move in July.
 For those not familiar with the ANU org-chart or acronymicon, there are multiple
-&lt;em&gt;Schools&lt;/em&gt; in each &lt;em&gt;College&lt;/em&gt; (so I’m moving Schools but staying within the same
-College).&lt;/p&gt;
+<em>Schools</em> in each <em>College</em> (so I’m moving Schools but staying within the same
+College).</p>
 
-&lt;p&gt;I’m really excited by the prospect of designing educational experiences
-in/around/through the &lt;a href=&quot;https://www.griffithreview.com/articles/touching-the-future/&quot;&gt;new
-Cybernetics&lt;/a&gt;, and
-that’s what my&lt;sup id=&quot;fnref:my&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:my&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; team in the School of Cybernetics will be doing (under our
-Director &lt;a href=&quot;https://twitter.com/feraldata&quot;&gt;Genevieve Bell&lt;/a&gt;). My work as an
+<p>I’m really excited by the prospect of designing educational experiences
+in/around/through the <a href="https://www.griffithreview.com/articles/touching-the-future/">new
+Cybernetics</a>, and
+that’s what my<sup id="fnref:my" role="doc-noteref"><a href="#fn:my" class="footnote" rel="footnote">1</a></sup> team in the School of Cybernetics will be doing (under our
+Director <a href="https://twitter.com/feraldata">Genevieve Bell</a>). My work as an
 interdisciplinary computer scientist/computer musician has always been
 cybernetics-adjacent, and I’m stoked to get a chance to lean in to this
 interdisciplinarity as we reimagine what a School (within a College, within a
-university) might look like.&lt;/p&gt;
+university) might look like.</p>
 
-&lt;p&gt;However, this decision is bittersweet; I love my current job, my colleagues and
+<p>However, this decision is bittersweet; I love my current job, my colleagues and
 (especially) my students, and I’ll be sad to see them less as I move to the
 School of Cybernetics. In fact, there are a few things I want to say about this
-move, and this blog is as good a place to say them as any.&lt;/p&gt;
+move, and this blog is as good a place to say them as any.</p>
 
-&lt;p&gt;To &lt;strong&gt;outside observers&lt;/strong&gt;, I want to be &lt;em&gt;super clear&lt;/em&gt; that I’m not leaving the
+<p>To <strong>outside observers</strong>, I want to be <em>super clear</em> that I’m not leaving the
 School of Computing because it sucks, or because there’s no opportunity to do
 cool stuff there—quite the opposite. I think the future of computing is bright
 at the ANU and I know there are multiple folks all across the campus working
 hard to create that future in the present. To that end, if you’re an
 up-and-coming creative code researcher/practitioner/educator, then you should
-apply for a &lt;a href=&quot;https://jobs.acm.org/jobs/computing-tenure-track-faculty-positions-canberra-australian-capital-territory-2601-122695751-d&quot;&gt;tenure-track position in the School of
-Computing&lt;/a&gt;—it’d
+apply for a <a href="https://jobs.acm.org/jobs/computing-tenure-track-faculty-positions-canberra-australian-capital-territory-2601-122695751-d">tenure-track position in the School of
+Computing</a>—it’d
 be great to have you join the team, and we’d have chances to work together I’m
-sure.&lt;/p&gt;
+sure.</p>
 
-&lt;p&gt;To my &lt;strong&gt;School of Computing colleagues&lt;/strong&gt;, I really appreciate your collegiality,
+<p>To my <strong>School of Computing colleagues</strong>, I really appreciate your collegiality,
 support and friendship over these past nine years (I started as a post-doc on 1
 Jan ‘13). I’ll still be around (the School of Cybernetics will sit in the Birch
 building), and I’m keen to be a sounding board or collaborator. There are a few
 people in particular who have trained and supported me to be the educator that I
 am today, and while I won’t do the full “I’d like to thank…” Oscars acceptance
-speech thing, I hope you know who you are, and how much I appreciate it.&lt;/p&gt;
+speech thing, I hope you know who you are, and how much I appreciate it.</p>
 
-&lt;p&gt;To the &lt;strong&gt;School of Computing admin team&lt;/strong&gt;, you’re awesome. I’ll miss hassling
-you on Teams to buy weird gear for the Laptop Ensemble.&lt;/p&gt;
+<p>To the <strong>School of Computing admin team</strong>, you’re awesome. I’ll miss hassling
+you on Teams to buy weird gear for the Laptop Ensemble.</p>
 
-&lt;p&gt;To my &lt;strong&gt;current students&lt;/strong&gt;, I (and my new colleagues in the School of
+<p>To my <strong>current students</strong>, I (and my new colleagues in the School of
 Cybernetics) will make sure you don’t get stuffed around. I’ll keep supervising
 all my current students till your projects are complete, and you won’t notice
 much difference—just that from July onwards we might have our meetings in a
-different building. If you’re in my new &lt;a href=&quot;https://cs.anu.edu.au/courses/extn1019/&quot;&gt;ANU Extension Creative
-Computing&lt;/a&gt; course, then there’s good
+different building. If you’re in my new <a href="https://cs.anu.edu.au/courses/extn1019/">ANU Extension Creative
+Computing</a> course, then there’s good
 news as well—that course will keep going as planned. In fact, it’s a high
 priority activity for the whole College, and there will be amazing doors that
 open up for you through participation in that course. If you’re a year 11
 student in 2022, you can start thinking about applying to be part of next year’s
-cohort—&lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;drop me a line&lt;/a&gt; if you’d like some tips
-on how to prepare for that process.&lt;/p&gt;
+cohort—<a href="mailto:ben.swift@anu.edu.au">drop me a line</a> if you’d like some tips
+on how to prepare for that process.</p>
 
-&lt;p&gt;To any &lt;strong&gt;prospective/future students&lt;/strong&gt; (i.e. those who were hoping to take &lt;a href=&quot;/teaching/&quot;&gt;one
-of my classes&lt;/a&gt; in the future) the news is a bit more
-mixed. I’ll still be involved with the &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;Laptop
-Ensemble&lt;/a&gt;, and the current plan is
-that other courses I’ve designed &amp;amp; taught (e.g.
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp2300/&quot;&gt;COMP2300&lt;/a&gt;,
-&lt;a href=&quot;https://cs.anu.edu.au/courses/comp1720/&quot;&gt;COMP1720&lt;/a&gt;) will still continue as
-normal with &lt;a href=&quot;https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/&quot;&gt;other (excellent!)
-lecturers&lt;/a&gt;.
-Finally, while I was previously scheduled to take over &lt;strong&gt;COMP4610 Computer
-Graphics&lt;/strong&gt; in S2 2021, this now won’t happen. If that stuffs up your study
-plans, I’m really sorry.&lt;/p&gt;
+<p>To any <strong>prospective/future students</strong> (i.e. those who were hoping to take <a href="/teaching/">one
+of my classes</a> in the future) the news is a bit more
+mixed. I’ll still be involved with the <a href="https://cs.anu.edu.au/courses/comp2710-lens/">Laptop
+Ensemble</a>, and the current plan is
+that other courses I’ve designed &amp; taught (e.g.
+<a href="https://cs.anu.edu.au/courses/comp2300/">COMP2300</a>,
+<a href="https://cs.anu.edu.au/courses/comp1720/">COMP1720</a>) will still continue as
+normal with <a href="https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/">other (excellent!)
+lecturers</a>.
+Finally, while I was previously scheduled to take over <strong>COMP4610 Computer
+Graphics</strong> in S2 2021, this now won’t happen. If that stuffs up your study
+plans, I’m really sorry.</p>
 
-&lt;p&gt;Finally, while I’m taking on new and exciting responsibilities in the School of
+<p>Finally, while I’m taking on new and exciting responsibilities in the School of
 Cybernetics, I’ll still be the same person with the same interests, strengths
 and weaknesses. So if we’re excited about the same things now, chances are we’ll
 still be excited about the same things into the future—and I hope we have the
-opportunity to support one another to pursue those goals.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:my&quot; role=&quot;doc-endnote&quot;&gt;
+opportunity to support one another to pursue those goals.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:my" role="doc-endnote">
 
-      &lt;p&gt;This is “my” in the “team I’m part of” sense, not the “team I lead” sense.
+      <p>This is “my” in the “team I’m part of” sense, not the “team I lead” sense.
 The new School of Cybernetics is going to be a wildly collaborative place, and I’m just one
-part of a multi-talented whole. &lt;a href=&quot;#fnref:my&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="cybernetics" /><summary type="html">Some job news—I’ve just accepted a position in the new School of Cybernetics in the ANU College of Engineering and Computer Science (CECS). I’ll finish out my teaching this semester in the School of Computing then I’ll make the move in July. For those not familiar with the ANU org-chart or acronymicon, there are multiple Schools in each College (so I’m moving Schools but staying within the same College).</summary></entry><entry><title type="html">LENS’21 final gig 2pm June 6 @ sideway</title><link href="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/" rel="alternate" type="text/html" title="LENS’21 final gig 2pm June 6 @ sideway" /><published>2021-05-06T00:00:00+10:00</published><updated>2021-05-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway</id><content type="html" xml:base="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/">&lt;picture style=&quot;position: relative;&quot;&gt;
-  &lt;img alt=&quot;LENS &apos;21 final gig poster&quot; src=&quot;/assets/images/posts/lens2021-final-gig-poster.jpg&quot; /&gt;
+part of a multi-talented whole. <a href="#fnref:my" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="cybernetics" /><summary type="html"><![CDATA[Some job news—I’ve just accepted a position in the new School of Cybernetics in the ANU College of Engineering and Computer Science (CECS). I’ll finish out my teaching this semester in the School of Computing then I’ll make the move in July. For those not familiar with the ANU org-chart or acronymicon, there are multiple Schools in each College (so I’m moving Schools but staying within the same College).]]></summary></entry><entry><title type="html">LENS’21 final gig 2pm June 6 @ sideway</title><link href="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/" rel="alternate" type="text/html" title="LENS’21 final gig 2pm June 6 @ sideway" /><published>2021-05-06T00:00:00+10:00</published><updated>2021-05-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway</id><content type="html" xml:base="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/"><![CDATA[<picture style="position: relative;">
+  <img alt="LENS '21 final gig poster" src="/assets/images/posts/lens2021-final-gig-poster.jpg" />
 
   
-&lt;/picture&gt;
+</picture>
 
-&lt;p&gt;If you’re a fan of &lt;em&gt;LENS&lt;/em&gt;, the ANU Laptop Ensemble, then you’re welcome to come
-to the S1 2021 end-of-semester gig. Here are the details&lt;/p&gt;
+<p>If you’re a fan of <em>LENS</em>, the ANU Laptop Ensemble, then you’re welcome to come
+to the S1 2021 end-of-semester gig. Here are the details</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Date&lt;/strong&gt;: Sunday June 6&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Time&lt;/strong&gt;: Doors at 2pm, warm-up act (me) to start at 2:30pm, LENS members on from 3pm, finish at 6pm&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Venue&lt;/strong&gt;: &lt;a href=&quot;https://sidewaybc.com&quot;&gt;sideway music bar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><strong>Date</strong>: Sunday June 6</li>
+  <li><strong>Time</strong>: Doors at 2pm, warm-up act (me) to start at 2:30pm, LENS members on from 3pm, finish at 6pm</li>
+  <li><strong>Venue</strong>: <a href="https://sidewaybc.com">sideway music bar</a></li>
+</ul>
 
-&lt;p&gt;More details (including a full performer schedule) to come, but mark it in your
-diaries. There’s also a &lt;a href=&quot;https://www.facebook.com/events/831223320837700&quot;&gt;FB
-event&lt;/a&gt; if that’s your jam.&lt;/p&gt;
+<p>More details (including a full performer schedule) to come, but mark it in your
+diaries. There’s also a <a href="https://www.facebook.com/events/831223320837700">FB
+event</a> if that’s your jam.</p>
 
-&lt;p&gt;If you want to get psyched, have a look at what the LENS ‘21 cohort have been up
-to with their &lt;a href=&quot;https://www.youtube.com/watch?v=mcVQ4-5YvlE&amp;amp;list=PLKm3iGh1D7Mvm9byMk4mP40xVxYAbSUIn&quot;&gt;weekly Audiovisual Diary submissions on
-YouTube&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><category term="livecoding" /><summary type="html"></summary></entry><entry><title type="html">ACMC’21 + Synthmoot: Connections announced for August 26-28</title><link href="https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28/" rel="alternate" type="text/html" title="ACMC’21 + Synthmoot: Connections announced for August 26-28" /><published>2021-04-29T00:00:00+10:00</published><updated>2021-04-29T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28</id><content type="html" xml:base="https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28/">&lt;p&gt;Great news on the local computer music conference front: the &lt;a href=&quot;https://aim.edu.au&quot;&gt;Australian
-Institute of Music&lt;/a&gt; is hosting the
-&lt;a href=&quot;https://computermusic.org.au&quot;&gt;ACMC&lt;/a&gt; conference in Sydney/Melbourne/online at
+<p>If you want to get psyched, have a look at what the LENS ‘21 cohort have been up
+to with their <a href="https://www.youtube.com/watch?v=mcVQ4-5YvlE&amp;list=PLKm3iGh1D7Mvm9byMk4mP40xVxYAbSUIn">weekly Audiovisual Diary submissions on
+YouTube</a>.</p>]]></content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><category term="livecoding" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">ACMC’21 + Synthmoot: Connections announced for August 26-28</title><link href="https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28/" rel="alternate" type="text/html" title="ACMC’21 + Synthmoot: Connections announced for August 26-28" /><published>2021-04-29T00:00:00+10:00</published><updated>2021-04-29T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28</id><content type="html" xml:base="https://benswift.me/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28/"><![CDATA[<p>Great news on the local computer music conference front: the <a href="https://aim.edu.au">Australian
+Institute of Music</a> is hosting the
+<a href="https://computermusic.org.au">ACMC</a> conference in Sydney/Melbourne/online at
 the end of August ‘21. I’ll be there—and if you’re a
 computers-and-music-adjacent artist then you should think about submitting a
-paper, artist talk or performance as well.&lt;/p&gt;
+paper, artist talk or performance as well.</p>
 
-&lt;p&gt;If you’re not sure if this is your scene, then I’d &lt;a href=&quot;mailto:ben.swift@anu.edu.au&quot;&gt;love to chat to
-you&lt;/a&gt; and convince you that it might be—we’re
+<p>If you’re not sure if this is your scene, then I’d <a href="mailto:ben.swift@anu.edu.au">love to chat to
+you</a> and convince you that it might be—we’re
 trying to remove the stuffy academic stigma that sometimes hangs around
-conferences like this (and also making it super-cheap for indies to attend).&lt;/p&gt;
+conferences like this (and also making it super-cheap for indies to attend).</p>
 
-&lt;p&gt;For more details, see the &lt;a href=&quot;https://www.acmc21.art&quot;&gt;conference website&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ben Swift</name></author><category term="acmc" /><category term="livecoding" /><summary type="html">Great news on the local computer music conference front: the Australian Institute of Music is hosting the ACMC conference in Sydney/Melbourne/online at the end of August ‘21. I’ll be there—and if you’re a computers-and-music-adjacent artist then you should think about submitting a paper, artist talk or performance as well.</summary></entry><entry><title type="html">A short list of Extempore livecoding tricks</title><link href="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/" rel="alternate" type="text/html" title="A short list of Extempore livecoding tricks" /><published>2021-04-23T00:00:00+10:00</published><updated>2021-04-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks</id><content type="html" xml:base="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/">&lt;p&gt;Yesterday’s &lt;a href=&quot;https://cs.anu.edu.au/courses/comp2710-lens/&quot;&gt;LENS&lt;/a&gt; class
-discussion turned into an &lt;a href=&quot;https://www.reddit.com/r/AMA/&quot;&gt;AMA&lt;/a&gt; of how I do
+<p>For more details, see the <a href="https://www.acmc21.art">conference website</a>.</p>]]></content><author><name>Ben Swift</name></author><category term="acmc" /><category term="livecoding" /><summary type="html"><![CDATA[Great news on the local computer music conference front: the Australian Institute of Music is hosting the ACMC conference in Sydney/Melbourne/online at the end of August ‘21. I’ll be there—and if you’re a computers-and-music-adjacent artist then you should think about submitting a paper, artist talk or performance as well.]]></summary></entry><entry><title type="html">A short list of Extempore livecoding tricks</title><link href="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/" rel="alternate" type="text/html" title="A short list of Extempore livecoding tricks" /><published>2021-04-23T00:00:00+10:00</published><updated>2021-04-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks</id><content type="html" xml:base="https://benswift.me/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks/"><![CDATA[<p>Yesterday’s <a href="https://cs.anu.edu.au/courses/comp2710-lens/">LENS</a> class
+discussion turned into an <a href="https://www.reddit.com/r/AMA/">AMA</a> of how I do
 certain things when I’m livecoding in Extempore. As promised, here’s a blog post
 where I’ve put together all of the things we’ve discussed (with a bit more
 explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful
@@ -756,167 +755,167 @@ complement to yesterday’s class discussion. If you’re not in the class, then
 maybe you’ve always been curious about certain things I (over)use in my
 livecoding sets? This is maybe a bit too niche to go in the general Extempore
 documentation, but if you’ve got any questions then you can hit me up on Teams
-(for LENS students) or the &lt;a href=&quot;mailto:extemporelang@googlegroups.com&quot;&gt;Extempore mailing
-list&lt;/a&gt; (everyone else).&lt;/p&gt;
+(for LENS students) or the <a href="mailto:extemporelang@googlegroups.com">Extempore mailing
+list</a> (everyone else).</p>
 
-&lt;div id=&quot;toc&quot;&gt;
+<div id="toc">
 
-  &lt;h2&gt;table of contents&lt;/h2&gt;
+  <h2>table of contents</h2>
 
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-cosr-macro&quot; id=&quot;markdown-toc-the-cosr-macro&quot;&gt;the &lt;code&gt;cosr&lt;/code&gt; macro&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#adding-instruments-to-the-sharedsystem-setup&quot; id=&quot;markdown-toc-adding-instruments-to-the-sharedsystem-setup&quot;&gt;adding instruments to the sharedsystem setup&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#markov-chains&quot; id=&quot;markdown-toc-markov-chains&quot;&gt;markov chains&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#weighted-random-selections-from-a-list&quot; id=&quot;markdown-toc-weighted-random-selections-from-a-list&quot;&gt;weighted random selections from a list&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rel-for-relative-pitches&quot; id=&quot;markdown-toc-rel-for-relative-pitches&quot;&gt;&lt;code&gt;rel&lt;/code&gt; for relative pitches&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#nof-and-the-macros-vs-functions-distinction&quot; id=&quot;markdown-toc-nof-and-the-macros-vs-functions-distinction&quot;&gt;&lt;code&gt;nof&lt;/code&gt; and the macros vs functions distinction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#quasiquote--vs-regular-quote-&quot; id=&quot;markdown-toc-quasiquote--vs-regular-quote-&quot;&gt;quasiquote (&lt;code&gt;`&lt;/code&gt;) vs regular quote (&lt;code&gt;&apos;&lt;/code&gt;)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#modulating-filter-or-other-params-over-time&quot; id=&quot;markdown-toc-modulating-filter-or-other-params-over-time&quot;&gt;modulating filter (or other) params over time&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#playing-a-loop-which-then-stops&quot; id=&quot;markdown-toc-playing-a-loop-which-then-stops&quot;&gt;playing a loop which then stops&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#multi-laptop-extempore-clock-sync&quot; id=&quot;markdown-toc-multi-laptop-extempore-clock-sync&quot;&gt;multi-laptop Extempore clock sync&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#selecting-the-correct-audio-device&quot; id=&quot;markdown-toc-selecting-the-correct-audio-device&quot;&gt;Selecting the correct audio device&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#audio-underflow-are-you-pushing-extempore-too-hard&quot; id=&quot;markdown-toc-audio-underflow-are-you-pushing-extempore-too-hard&quot;&gt;Audio underflow: are you pushing extempore too hard?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#creating-a-startup-file&quot; id=&quot;markdown-toc-creating-a-startup-file&quot;&gt;Creating a “startup” file&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul id="markdown-toc">
+  <li><a href="#the-cosr-macro" id="markdown-toc-the-cosr-macro">the <code>cosr</code> macro</a></li>
+  <li><a href="#adding-instruments-to-the-sharedsystem-setup" id="markdown-toc-adding-instruments-to-the-sharedsystem-setup">adding instruments to the sharedsystem setup</a></li>
+  <li><a href="#markov-chains" id="markdown-toc-markov-chains">markov chains</a></li>
+  <li><a href="#weighted-random-selections-from-a-list" id="markdown-toc-weighted-random-selections-from-a-list">weighted random selections from a list</a></li>
+  <li><a href="#rel-for-relative-pitches" id="markdown-toc-rel-for-relative-pitches"><code>rel</code> for relative pitches</a></li>
+  <li><a href="#nof-and-the-macros-vs-functions-distinction" id="markdown-toc-nof-and-the-macros-vs-functions-distinction"><code>nof</code> and the macros vs functions distinction</a></li>
+  <li><a href="#quasiquote--vs-regular-quote-" id="markdown-toc-quasiquote--vs-regular-quote-">quasiquote (<code>`</code>) vs regular quote (<code>'</code>)</a></li>
+  <li><a href="#modulating-filter-or-other-params-over-time" id="markdown-toc-modulating-filter-or-other-params-over-time">modulating filter (or other) params over time</a></li>
+  <li><a href="#playing-a-loop-which-then-stops" id="markdown-toc-playing-a-loop-which-then-stops">playing a loop which then stops</a></li>
+  <li><a href="#multi-laptop-extempore-clock-sync" id="markdown-toc-multi-laptop-extempore-clock-sync">multi-laptop Extempore clock sync</a></li>
+  <li><a href="#selecting-the-correct-audio-device" id="markdown-toc-selecting-the-correct-audio-device">Selecting the correct audio device</a></li>
+  <li><a href="#audio-underflow-are-you-pushing-extempore-too-hard" id="markdown-toc-audio-underflow-are-you-pushing-extempore-too-hard">Audio underflow: are you pushing extempore too hard?</a></li>
+  <li><a href="#creating-a-startup-file" id="markdown-toc-creating-a-startup-file">Creating a “startup” file</a></li>
+</ul>
 
-&lt;/div&gt;
+</div>
 
-&lt;h2 id=&quot;the-cosr-macro&quot;&gt;the &lt;code&gt;cosr&lt;/code&gt; macro&lt;/h2&gt;
+<h2 id="the-cosr-macro">the <code>cosr</code> macro</h2>
 
-&lt;p&gt;&lt;code&gt;cosr&lt;/code&gt; is just a convenient way of sinusoidally modulating something with a
-period synced to the tempo.&lt;/p&gt;
+<p><code>cosr</code> is just a convenient way of sinusoidally modulating something with a
+period synced to the tempo.</p>
 
-&lt;p&gt;When it came to writing up this part of yesterday’s discussion I had &lt;em&gt;déjà
-vu&lt;/em&gt;—I was sure I’d written this stuff up elsewhere. Turns out I have—it’s in
+<p>When it came to writing up this part of yesterday’s discussion I had <em>déjà
+vu</em>—I was sure I’d written this stuff up elsewhere. Turns out I have—it’s in
 the main Extempore docs as part of the
-&lt;a href=&quot;https://extemporelang.github.io/docs/guides/pattern-language/#what-is-cosr&quot;&gt;pattern&lt;/a&gt;
-guide.&lt;/p&gt;
+<a href="https://extemporelang.github.io/docs/guides/pattern-language/#what-is-cosr">pattern</a>
+guide.</p>
 
-&lt;p&gt;One other tip which I mentioned yesterday: if you use fractions for the period
-(final argument) which have a co-prime numerator &amp;amp; denominator (e.g. 7/3 or
+<p>One other tip which I mentioned yesterday: if you use fractions for the period
+(final argument) which have a co-prime numerator &amp; denominator (e.g. 7/3 or
 15/8) then you’ll get interesting accenting patterns, but which will still
-repeat (so it gives a bit more structure than just using &lt;code&gt;random&lt;/code&gt;).&lt;/p&gt;
+repeat (so it gives a bit more structure than just using <code>random</code>).</p>
 
-&lt;p&gt;One other related trick that I use is doing “mod” calculations on the &lt;code&gt;beat&lt;/code&gt;
+<p>One other related trick that I use is doing “mod” calculations on the <code>beat</code>
 variable (which is an explicit argument in most temporal recursions), but is
-also implicitly bound in the pattern expression if you’re using the pattern language:&lt;/p&gt;
+also implicitly bound in the pattern expression if you’re using the pattern language:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(if (= (modulo beat 2) 0)
-    (println &apos;downbeat))
+<pre><code class="language-extempore">(if (= (modulo beat 2) 0)
+    (println 'downbeat))
 
 (if (= (modulo beat 2) 1)
-    (println &apos;upbeat))
-&lt;/code&gt;&lt;/pre&gt;
+    (println 'upbeat))
+</code></pre>
 
-&lt;h2 id=&quot;adding-instruments-to-the-sharedsystem-setup&quot;&gt;adding instruments to the sharedsystem setup&lt;/h2&gt;
+<h2 id="adding-instruments-to-the-sharedsystem-setup">adding instruments to the sharedsystem setup</h2>
 
-&lt;p&gt;The default sharedsystem instruments are defined near the top of the
-&lt;code&gt;examples/sharedsystem/audiosetup.xtm&lt;/code&gt; file:&lt;/p&gt;
+<p>The default sharedsystem instruments are defined near the top of the
+<code>examples/sharedsystem/audiosetup.xtm</code> file:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(make-instrument syn1 analogue)
+<pre><code class="language-extempore">(make-instrument syn1 analogue)
 (make-instrument syn2 analogue)
 (make-instrument syn3 analogue)
 (make-instrument kit dlogue)
 (make-instrument samp1 sampler)
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;If you want to use different instruments, you can add them to the various DSP
-callbacks &lt;code&gt;dsp1&lt;/code&gt; to &lt;code&gt;dsp5&lt;/code&gt; (this multi-DSP-function setup is to allow the audio
-engine’s work to be distributed across multiple cores).&lt;/p&gt;
+<p>If you want to use different instruments, you can add them to the various DSP
+callbacks <code>dsp1</code> to <code>dsp5</code> (this multi-DSP-function setup is to allow the audio
+engine’s work to be distributed across multiple cores).</p>
 
-&lt;p&gt;In each of the DSP functions (e.g. &lt;code&gt;dsp1&lt;/code&gt;), the actual work of getting the
-“signal” out of the relevant instrument happens in a line like this:&lt;/p&gt;
+<p>In each of the DSP functions (e.g. <code>dsp1</code>), the actual work of getting the
+“signal” out of the relevant instrument happens in a line like this:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(set! out (syn1 in time chan dat))
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">(set! out (syn1 in time chan dat))
+</code></pre>
 
-&lt;p&gt;To add e.g. an &lt;code&gt;fmsynth&lt;/code&gt; to the sharedsystem setup, there are two steps:&lt;/p&gt;
+<p>To add e.g. an <code>fmsynth</code> to the sharedsystem setup, there are two steps:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;define the &lt;code&gt;fmsynth&lt;/code&gt; instrument somewhere with &lt;code&gt;(make-instrument fmsynth fmsynth)&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;call the &lt;code&gt;fmsynth&lt;/code&gt; function in one of your DSP functions (doesn’t matter
+<ol>
+  <li>
+    <p>define the <code>fmsynth</code> instrument somewhere with <code>(make-instrument fmsynth fmsynth)</code></p>
+  </li>
+  <li>
+    <p>call the <code>fmsynth</code> function in one of your DSP functions (doesn’t matter
 which one—they all get summed in the end) callbacks and make sure the
-return value is added to one of the &lt;code&gt;out&lt;/code&gt; variables&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+return value is added to one of the <code>out</code> variables</p>
+  </li>
+</ol>
 
-&lt;p&gt;Here’s an example (in &lt;code&gt;dsp1&lt;/code&gt; as per the previous example):&lt;/p&gt;
+<p>Here’s an example (in <code>dsp1</code> as per the previous example):</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(set! out (+ (syn1 in time chan dat)
+<pre><code class="language-extempore">(set! out (+ (syn1 in time chan dat)
              (fmsynth in time chan dat)))
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;Then, any notes you play (using &lt;code&gt;play&lt;/code&gt;) on the &lt;code&gt;fmsynth&lt;/code&gt; instrument will make
-their way into the audio output.&lt;/p&gt;
+<p>Then, any notes you play (using <code>play</code>) on the <code>fmsynth</code> instrument will make
+their way into the audio output.</p>
 
-&lt;h2 id=&quot;markov-chains&quot;&gt;markov chains&lt;/h2&gt;
+<h2 id="markov-chains">markov chains</h2>
 
-&lt;p&gt;As discussed yesterday, Scheme (most lisps, really) makes it pretty easy to
-represent markov chains.&lt;/p&gt;
+<p>As discussed yesterday, Scheme (most lisps, really) makes it pretty easy to
+represent markov chains.</p>
 
-&lt;p&gt;Consider the following temporal recursion, which (in addition to the usual
-&lt;code&gt;beat&lt;/code&gt; and &lt;code&gt;dur&lt;/code&gt; arguments) also takes a &lt;code&gt;pitch&lt;/code&gt; argument. This is the exact
-code I wrote yesterday:&lt;/p&gt;
+<p>Consider the following temporal recursion, which (in addition to the usual
+<code>beat</code> and <code>dur</code> arguments) also takes a <code>pitch</code> argument. This is the exact
+code I wrote yesterday:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(define (obi-lead beat dur) pitch
+<pre><code class="language-extempore">(define (obi-lead beat dur) pitch
   (play samp1 pitch (cosr 75 20 5/3) dur 2)
-  (callback (*metro* (+ beat (* .5 dur))) &apos;obi-lead (+ beat dur) dur
-            (random (cdr (assoc pitch &apos;((60 60 63 67)
+  (callback (*metro* (+ beat (* .5 dur))) 'obi-lead (+ beat dur) dur
+            (random (cdr (assoc pitch '((60 60 63 67)
                                         (63 67 60)
                                         (67 58)
                                         (58 60)))))))
 
-(obi-lead (*metro* &apos;get-beat 4) 1/4 60)
-&lt;/code&gt;&lt;/pre&gt;
+(obi-lead (*metro* 'get-beat 4) 1/4 60)
+</code></pre>
 
-&lt;p&gt;The markov chain happens in that &lt;code&gt;(random (cdr (assoc ...)))&lt;/code&gt; line at the end of
-the definition of the &lt;code&gt;obi-lead&lt;/code&gt; function. A couple of things to note:&lt;/p&gt;
+<p>The markov chain happens in that <code>(random (cdr (assoc ...)))</code> line at the end of
+the definition of the <code>obi-lead</code> function. A couple of things to note:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;the &lt;code&gt;cdr&lt;/code&gt; is only necessary to make sure that a “self-transition” (i.e. the
+<ul>
+  <li>
+    <p>the <code>cdr</code> is only necessary to make sure that a “self-transition” (i.e. the
 pitch staying the same) only happens if you explicitly add the same pitch as
-an element &lt;em&gt;other than&lt;/em&gt; the first element of the list. Otherwise, you wouldn’t
-be able to make a markof chain that always went to a &lt;em&gt;different&lt;/em&gt; pitch from
-the current one.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the &lt;code&gt;random&lt;/code&gt; call isn’t a special “markov” random, it’s just the normal
-&lt;code&gt;random&lt;/code&gt; picking from a list of pitches (so you can use the same “use the same
-element multiple times for weighted sampling” trick mentioned below)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;you can do whatever you want with the &lt;code&gt;pitch&lt;/code&gt; argument inside the body of the
-&lt;code&gt;obi-lead&lt;/code&gt; function—the fact that we &lt;code&gt;play&lt;/code&gt; it here is a common pattern, but
-you could e.g. fire out an OSC message, etc.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;this is just a specific example of the more general class of algorithms which
+an element <em>other than</em> the first element of the list. Otherwise, you wouldn’t
+be able to make a markof chain that always went to a <em>different</em> pitch from
+the current one.</p>
+  </li>
+  <li>
+    <p>the <code>random</code> call isn’t a special “markov” random, it’s just the normal
+<code>random</code> picking from a list of pitches (so you can use the same “use the same
+element multiple times for weighted sampling” trick mentioned below)</p>
+  </li>
+  <li>
+    <p>you can do whatever you want with the <code>pitch</code> argument inside the body of the
+<code>obi-lead</code> function—the fact that we <code>play</code> it here is a common pattern, but
+you could e.g. fire out an OSC message, etc.</p>
+  </li>
+  <li>
+    <p>this is just a specific example of the more general class of algorithms which
 use a temporal recursion to pass variables to subsequent callbacks, and
-potentially do tests/operations on said variables to change them for future callbacks&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;the onus is on the livecoder to make sure that each possible state (i.e. each
-value that &lt;code&gt;pitch&lt;/code&gt; can take) is represented as the head (&lt;code&gt;cdr&lt;/code&gt;) of one of the
-lists. But as long as you satisfy that invariant then the &lt;code&gt;obi-lead&lt;/code&gt; markov
-process will just keep on playing the &lt;code&gt;pitch&lt;/code&gt; as it travels through time and
-space&lt;sup id=&quot;fnref:mb&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:mb&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+potentially do tests/operations on said variables to change them for future callbacks</p>
+  </li>
+  <li>
+    <p>the onus is on the livecoder to make sure that each possible state (i.e. each
+value that <code>pitch</code> can take) is represented as the head (<code>cdr</code>) of one of the
+lists. But as long as you satisfy that invariant then the <code>obi-lead</code> markov
+process will just keep on playing the <code>pitch</code> as it travels through time and
+space<sup id="fnref:mb" role="doc-noteref"><a href="#fn:mb" class="footnote" rel="footnote">1</a></sup>.</p>
+  </li>
+</ul>
 
-&lt;h2 id=&quot;weighted-random-selections-from-a-list&quot;&gt;weighted random selections from a list&lt;/h2&gt;
+<h2 id="weighted-random-selections-from-a-list">weighted random selections from a list</h2>
 
-&lt;p&gt;As promised (Caleb!) here’s the syntax for doing a weighted random sample: the
-key is that the argument to &lt;code&gt;random&lt;/code&gt; isn’t a list of &lt;code&gt;cons&lt;/code&gt; pairs, it’s multiple
-&lt;code&gt;cons&lt;/code&gt; pair arguments, each one of the form &lt;code&gt;(cons WEIGHTING VALUE)&lt;/code&gt;.&lt;/p&gt;
+<p>As promised (Caleb!) here’s the syntax for doing a weighted random sample: the
+key is that the argument to <code>random</code> isn’t a list of <code>cons</code> pairs, it’s multiple
+<code>cons</code> pair arguments, each one of the form <code>(cons WEIGHTING VALUE)</code>.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; here&apos;s an example: note that it&apos;s in a &quot;do 10 times&quot; loop to show that the
+<pre><code class="language-extempore">;; here's an example: note that it's in a "do 10 times" loop to show that the
 ;; values are indeed sampled using the appropriate weighting
 (dotimes (i 10)
-  (println &apos;i: i (random (cons 0.1 1) (cons 0.9 -1))))
+  (println 'i: i (random (cons 0.1 1) (cons 0.9 -1))))
 
 ;; printed output:
 ;; 
@@ -930,377 +929,377 @@ key is that the argument to &lt;code&gt;random&lt;/code&gt; isn’t a list of &l
 ;; i: 7 -1
 ;; i: 8 -1
 ;; i: 9 -1
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;Note that if you’re happy with just rough “this value is twice/three times as
+<p>Note that if you’re happy with just rough “this value is twice/three times as
 likely as the others” then it’s usually simpler to just randomly sample
 (equally-weighted) from a list, including duplicate values for the things you
-want to turn up more often in the output:&lt;/p&gt;
+want to turn up more often in the output:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; 0 will be twice as likely as 3 or 7
+<pre><code class="language-extempore">;; 0 will be twice as likely as 3 or 7
 (random (list 0 0 3 7))
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;h2 id=&quot;rel-for-relative-pitches&quot;&gt;&lt;code&gt;rel&lt;/code&gt; for relative pitches&lt;/h2&gt;
+<h2 id="rel-for-relative-pitches"><code>rel</code> for relative pitches</h2>
 
-&lt;div class=&quot;hl-para&quot;&gt;
+<div class="hl-para">
 
-  &lt;p&gt;From here on, all the following code snippets assume you’ve loaded the pattern
-language with&lt;/p&gt;
+  <p>From here on, all the following code snippets assume you’ve loaded the pattern
+language with</p>
 
-  &lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(sys:load &quot;libs/core/pattern-language.xtm&quot;)
-&lt;/code&gt;&lt;/pre&gt;
+  <pre><code class="language-extempore">(sys:load "libs/core/pattern-language.xtm")
+</code></pre>
 
-  &lt;p&gt;Note that the pattern language library is loaded when you load the sharedsystem
-as well.&lt;/p&gt;
+  <p>Note that the pattern language library is loaded when you load the sharedsystem
+as well.</p>
 
-&lt;/div&gt;
+</div>
 
-&lt;p&gt;Based on the (global) &lt;code&gt;*scale*&lt;/code&gt; variable, you can use &lt;code&gt;rel&lt;/code&gt; to calculate pitches
-“relative to” a starting pitch.&lt;/p&gt;
+<p>Based on the (global) <code>*scale*</code> variable, you can use <code>rel</code> to calculate pitches
+“relative to” a starting pitch.</p>
 
-&lt;p&gt;So, if you’re starting with a middle C (midi note &lt;code&gt;60&lt;/code&gt;) and you want to go &lt;code&gt;2&lt;/code&gt;
-notes up the scale (and you haven’t changed value of the &lt;code&gt;*scale*&lt;/code&gt; variable from
-the default “C natural minor” scale) then you can use:&lt;/p&gt;
+<p>So, if you’re starting with a middle C (midi note <code>60</code>) and you want to go <code>2</code>
+notes up the scale (and you haven’t changed value of the <code>*scale*</code> variable from
+the default “C natural minor” scale) then you can use:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(rel 60 2)
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">(rel 60 2)
+</code></pre>
 
-&lt;p&gt;This can be handy when paired with the &lt;code&gt;range&lt;/code&gt; function (which just generates
-lists of integers) for running your scales:&lt;/p&gt;
+<p>This can be handy when paired with the <code>range</code> function (which just generates
+lists of integers) for running your scales:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(:&amp;gt; scale-runner 4 0 (play samp1 (rel 60 @1) 80 dur) (range 8))
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">(:&gt; scale-runner 4 0 (play samp1 (rel 60 @1) 80 dur) (range 8))
+</code></pre>
 
-&lt;p&gt;Note that this is just a slightly terser version of &lt;code&gt;pc:relative&lt;/code&gt; (in
-&lt;code&gt;libs/core/pc_ivl.xtm&lt;/code&gt;) function, which doesn’t use the &lt;code&gt;*scale*&lt;/code&gt; variable by
-default. Note &lt;em&gt;further&lt;/em&gt; that &lt;code&gt;rel&lt;/code&gt; takes an optional third argument for
+<p>Note that this is just a slightly terser version of <code>pc:relative</code> (in
+<code>libs/core/pc_ivl.xtm</code>) function, which doesn’t use the <code>*scale*</code> variable by
+default. Note <em>further</em> that <code>rel</code> takes an optional third argument for
 providing a different scale, if e.g. you want to use a different scale for your
-“relative pitch” calculation than you’re currently using elsewhere in the piece.&lt;/p&gt;
+“relative pitch” calculation than you’re currently using elsewhere in the piece.</p>
 
-&lt;p&gt;Here’s an example:&lt;/p&gt;
+<p>Here’s an example:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; set scale to F natural minor
-(set! *scale* (pc:scale 5 &apos;aeolian))
+<pre><code class="language-extempore">;; set scale to F natural minor
+(set! *scale* (pc:scale 5 'aeolian))
 
 ;; use a Fm7 chord (a subset of F natural minor) for the relative pitch calculation
-(rel 65 (random 4) (pc:chord 5 &apos;-7))
-&lt;/code&gt;&lt;/pre&gt;
+(rel 65 (random 4) (pc:chord 5 '-7))
+</code></pre>
 
-&lt;p&gt;If you &lt;code&gt;println&lt;/code&gt; the output of that &lt;code&gt;(pc:chord 5 &apos;-7)&lt;/code&gt; (&lt;em&gt;Fm7&lt;/em&gt;) function, you’ll
-get the result &lt;code&gt;(5 8 0 3)&lt;/code&gt;, which corresponds to the following pitch classes:&lt;/p&gt;
+<p>If you <code>println</code> the output of that <code>(pc:chord 5 '-7)</code> (<em>Fm7</em>) function, you’ll
+get the result <code>(5 8 0 3)</code>, which corresponds to the following pitch classes:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;5&lt;/code&gt;: F&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;8&lt;/code&gt;: A♭&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;0&lt;/code&gt;: C&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;3&lt;/code&gt;: E♭&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><code>5</code>: F</li>
+  <li><code>8</code>: A♭</li>
+  <li><code>0</code>: C</li>
+  <li><code>3</code>: E♭</li>
+</ul>
 
-&lt;p&gt;which are the pitches from an Fm7 chord, so it all checks out.&lt;/p&gt;
+<p>which are the pitches from an Fm7 chord, so it all checks out.</p>
 
-&lt;p&gt;As one final tip, you can just skip the call to &lt;code&gt;pc:chord&lt;/code&gt; altogether and do
-something like:&lt;/p&gt;
+<p>As one final tip, you can just skip the call to <code>pc:chord</code> altogether and do
+something like:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(rel 65 (random 4) &apos;(5 8 0 3))
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">(rel 65 (random 4) '(5 8 0 3))
+</code></pre>
 
-&lt;p&gt;This makes it super-easy to make quick edits, e.g. if you want to flatten the
+<p>This makes it super-easy to make quick edits, e.g. if you want to flatten the
 fifth (C). But it does make it a little less readable for the audience (and
-let’s face it, reading &lt;code&gt;(pc:chord 5 &apos;-7)&lt;/code&gt; was already pretty tough going for
-most folks outside the &lt;em&gt;music theory&lt;/em&gt; ∩ &lt;em&gt;computer programmer&lt;/em&gt; intersection).&lt;/p&gt;
+let’s face it, reading <code>(pc:chord 5 '-7)</code> was already pretty tough going for
+most folks outside the <em>music theory</em> ∩ <em>computer programmer</em> intersection).</p>
 
-&lt;h2 id=&quot;nof-and-the-macros-vs-functions-distinction&quot;&gt;&lt;code&gt;nof&lt;/code&gt; and the macros vs functions distinction&lt;/h2&gt;
+<h2 id="nof-and-the-macros-vs-functions-distinction"><code>nof</code> and the macros vs functions distinction</h2>
 
-&lt;p&gt;&lt;code&gt;nof&lt;/code&gt; (think “give me &lt;em&gt;n&lt;/em&gt; of these”) is a Scheme macro for creating a list by
-repeatedly evaluating a form.&lt;/p&gt;
+<p><code>nof</code> (think “give me <em>n</em> of these”) is a Scheme macro for creating a list by
+repeatedly evaluating a form.</p>
 
-&lt;p&gt;So, one way to get a list of 10 &lt;code&gt;0&lt;/code&gt;s is:&lt;/p&gt;
+<p>So, one way to get a list of 10 <code>0</code>s is:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(nof 10 0)
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">(nof 10 0)
+</code></pre>
 
-&lt;p&gt;To get a list of 4 random integers between &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;9&lt;/code&gt; (inclusive) you could use:&lt;/p&gt;
+<p>To get a list of 4 random integers between <code>0</code> and <code>9</code> (inclusive) you could use:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(nof 4 (random 10))
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">(nof 4 (random 10))
+</code></pre>
 
-&lt;p&gt;I just evaluated the above form on my machine; the result was &lt;code&gt;(0 9 9 8)&lt;/code&gt;. Note
-that the numbers are different; so the &lt;code&gt;nof&lt;/code&gt; macro is obviously not just taking
-the result of a single call to &lt;code&gt;(random 10)&lt;/code&gt; and repeating it &lt;code&gt;4&lt;/code&gt; times to
-create a list.&lt;/p&gt;
+<p>I just evaluated the above form on my machine; the result was <code>(0 9 9 8)</code>. Note
+that the numbers are different; so the <code>nof</code> macro is obviously not just taking
+the result of a single call to <code>(random 10)</code> and repeating it <code>4</code> times to
+create a list.</p>
 
-&lt;p&gt;This is where the fact that it’s a &lt;em&gt;macro&lt;/em&gt;—not a function—comes into play.
+<p>This is where the fact that it’s a <em>macro</em>—not a function—comes into play.
 One trick for looking at what a macro form “macroexpands” out to is calling
-&lt;code&gt;macro-expand&lt;/code&gt; (note that the &lt;code&gt;nof&lt;/code&gt; form has been quoted using &lt;code&gt;&apos;&lt;/code&gt;):&lt;/p&gt;
+<code>macro-expand</code> (note that the <code>nof</code> form has been quoted using <code>'</code>):</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(println (macro-expand &apos;(nof 4 (random 10))))
+<pre><code class="language-extempore">(println (macro-expand '(nof 4 (random 10))))
 
 ;; prints:
 
 ;; (make-list-with-proc 4 (lambda (idx) (random 10)))
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;So, the list is actually formed by four repeated calls to a &lt;code&gt;lambda&lt;/code&gt; (anonymous)
-function, and that’s why the four random numbers in the above list are different.&lt;/p&gt;
+<p>So, the list is actually formed by four repeated calls to a <code>lambda</code> (anonymous)
+function, and that’s why the four random numbers in the above list are different.</p>
 
-&lt;p&gt;If this isn’t actually the behaviour you want—if you want the same random
-number repeated four times, there’s a &lt;code&gt;repeat&lt;/code&gt; function which you probably want
-to use instead. Notice the difference:&lt;/p&gt;
+<p>If this isn’t actually the behaviour you want—if you want the same random
+number repeated four times, there’s a <code>repeat</code> function which you probably want
+to use instead. Notice the difference:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(println (nof 4 (random 10)))
+<pre><code class="language-extempore">(println (nof 4 (random 10)))
 (println (repeat 4 (random 10)))
 
 ;; prints:
 
 ;; nof: (1 3 3 6)
 ;; repeat: (5 5 5 5)
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;So keep that in mind when you’re using &lt;code&gt;nof&lt;/code&gt; in your pattern language. It’ll
+<p>So keep that in mind when you’re using <code>nof</code> in your pattern language. It’ll
 probably just work, but this subtle macro vs functino thing may be the cause of
-errors or weird behaviour that you see.&lt;/p&gt;
+errors or weird behaviour that you see.</p>
 
-&lt;h2 id=&quot;quasiquote--vs-regular-quote-&quot;&gt;quasiquote (&lt;code&gt;`&lt;/code&gt;) vs regular quote (&lt;code&gt;&apos;&lt;/code&gt;)&lt;/h2&gt;
+<h2 id="quasiquote--vs-regular-quote-">quasiquote (<code>`</code>) vs regular quote (<code>'</code>)</h2>
 
-&lt;p&gt;The quasiquote (&lt;code&gt;`&lt;/code&gt;) symbol (which is also called the &lt;em&gt;tilde&lt;/em&gt;) is like the
-normal quote operator (&lt;code&gt;&apos;&lt;/code&gt;), except that you can “undo” the quoting (i.e. eval)
-inner forms as necessary using the unquote operator (&lt;code&gt;,&lt;/code&gt;).&lt;/p&gt;
+<p>The quasiquote (<code>`</code>) symbol (which is also called the <em>tilde</em>) is like the
+normal quote operator (<code>'</code>), except that you can “undo” the quoting (i.e. eval)
+inner forms as necessary using the unquote operator (<code>,</code>).</p>
 
-&lt;p&gt;That’s not easy to get your head around when explained in words, but here’s an
-example:&lt;/p&gt;
+<p>That’s not easy to get your head around when explained in words, but here’s an
+example:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; this is kindof tedious to write
-&apos;(c3 | | | | | d3 e3)
+<pre><code class="language-extempore">;; this is kindof tedious to write
+'(c3 | | | | | d3 e3)
 
 ;; so instead we write
-`(c3 ,@(nof 5 &apos;|) d3 e3)
+`(c3 ,@(nof 5 '|) d3 e3)
 
-;; don&apos;t forget the @ (splicing) part; this is probably not what you want...
-`(c3 ,(nof 5 &apos;|) d3 e3)
+;; don't forget the @ (splicing) part; this is probably not what you want...
+`(c3 ,(nof 5 '|) d3 e3)
 
 ;; result: (c3 (| | | | |) d3 e3)
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;h2 id=&quot;modulating-filter-or-other-params-over-time&quot;&gt;modulating filter (or other) params over time&lt;/h2&gt;
+<h2 id="modulating-filter-or-other-params-over-time">modulating filter (or other) params over time</h2>
 
-&lt;p&gt;One way to do it is show in the example file
-&lt;code&gt;examples/sharedsystem/analogue_synth_basics.xtm&lt;/code&gt;. Have a look around line 39,
-where it says:&lt;/p&gt;
+<p>One way to do it is show in the example file
+<code>examples/sharedsystem/analogue_synth_basics.xtm</code>. Have a look around line 39,
+where it says:</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; and now add a second pattern to &apos;sweep&apos; the filter
-(:&amp;gt; B 4 0 (set_filter_env syn1 40.0 100.0 (trir 0.0 1.0 1/32) 100.0) (nof 16 0))
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">;; and now add a second pattern to 'sweep' the filter
+(:&gt; B 4 0 (set_filter_env syn1 40.0 100.0 (trir 0.0 1.0 1/32) 100.0) (nof 16 0))
+</code></pre>
 
-&lt;h2 id=&quot;playing-a-loop-which-then-stops&quot;&gt;playing a loop which then stops&lt;/h2&gt;
+<h2 id="playing-a-loop-which-then-stops">playing a loop which then stops</h2>
 
-&lt;p&gt;The pattern language isn’t really designed for playing one (or two, or three, or
-&lt;em&gt;n&lt;/em&gt; for &lt;em&gt;n &amp;lt; ∞&lt;/em&gt;) shot loops. It’s really designed for things which will keep on
-looping until you stop the pattern.&lt;/p&gt;
+<p>The pattern language isn’t really designed for playing one (or two, or three, or
+<em>n</em> for <em>n &lt; ∞</em>) shot loops. It’s really designed for things which will keep on
+looping until you stop the pattern.</p>
 
-&lt;p&gt;If you want to play a sequence of events which runs for a while and then stops,
-then using a standard temporal recursion is probably best.&lt;/p&gt;
+<p>If you want to play a sequence of events which runs for a while and then stops,
+then using a standard temporal recursion is probably best.</p>
 
-&lt;p&gt;Here are a couple of examples. First, this recursion will keep playing the notes
-until the &lt;code&gt;pitch&lt;/code&gt; argument gets to &lt;code&gt;72&lt;/code&gt;.&lt;/p&gt;
+<p>Here are a couple of examples. First, this recursion will keep playing the notes
+until the <code>pitch</code> argument gets to <code>72</code>.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(define (ascending-chromatic beat dur pitch)
+<pre><code class="language-extempore">(define (ascending-chromatic beat dur pitch)
   (play syn1 pitch 80 dur)
-  (if (&amp;lt; pitch 72)
+  (if (&lt; pitch 72)
       ;; note the `callback` is inside the `if`
-      (callback (*metro* (+ beat (* .5 dur))) &apos;ascending-chromatic (+ beat dur) dur
+      (callback (*metro* (+ beat (* .5 dur))) 'ascending-chromatic (+ beat dur) dur
                 ;; pitch gets incremented by 1 in each subsequent callback
                 (+ pitch 1))))
 
-;; kick it off - note that we&apos;re passing the initial pitch argument
-(ascending-chromatic (*metro* &apos;get-beat 4) 1/4 60)
-&lt;/code&gt;&lt;/pre&gt;
+;; kick it off - note that we're passing the initial pitch argument
+(ascending-chromatic (*metro* 'get-beat 4) 1/4 60)
+</code></pre>
 
-&lt;p&gt;Now, both the “increment” part &lt;code&gt;(+ pitch 1)&lt;/code&gt; and the “stopping criteria” part
-(i.e. the &lt;code&gt;(if (&amp;lt; pitch 72) ...&lt;/code&gt;) are both just Scheme code, so it’s very
-flexible. You can handle those things however you like.&lt;/p&gt;
+<p>Now, both the “increment” part <code>(+ pitch 1)</code> and the “stopping criteria” part
+(i.e. the <code>(if (&lt; pitch 72) ...</code>) are both just Scheme code, so it’s very
+flexible. You can handle those things however you like.</p>
 
-&lt;p&gt;One other approach to doing this is a recursion approach straight out of the
-functional programming handbook&lt;sup id=&quot;fnref:little-schemer&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:little-schemer&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, just with a temporal twist.
-The key idea: start with a list, recurring on the &lt;code&gt;cdr&lt;/code&gt; (i.e. the tail of the
-list) each time until it’s empty, then stopping.&lt;/p&gt;
+<p>One other approach to doing this is a recursion approach straight out of the
+functional programming handbook<sup id="fnref:little-schemer" role="doc-noteref"><a href="#fn:little-schemer" class="footnote" rel="footnote">2</a></sup>, just with a temporal twist.
+The key idea: start with a list, recurring on the <code>cdr</code> (i.e. the tail of the
+list) each time until it’s empty, then stopping.</p>
 
-&lt;p&gt;So, here’s a way of playing a scale—ascending, then descending—then stopping.&lt;/p&gt;
+<p>So, here’s a way of playing a scale—ascending, then descending—then stopping.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(define (ascending-descending-scale beat dur plist)
+<pre><code class="language-extempore">(define (ascending-descending-scale beat dur plist)
   ;; note the (car plist) since plist is a list, not a number
   (play syn1 (car plist) 80 dur)
   (if (not (null? plist))
-      (callback (*metro* (+ beat (* .5 dur))) &apos;ascending-descending-scale (+ beat dur) dur
+      (callback (*metro* (+ beat (* .5 dur))) 'ascending-descending-scale (+ beat dur) dur
                 (cdr plist))))
 
-(ascending-descending-scale (*metro* &apos;get-beat 4) 1/4
-                            &apos;(60 62 64 65 67 69 71 72 71 69 67 65 64 62 60))
-&lt;/code&gt;&lt;/pre&gt;
+(ascending-descending-scale (*metro* 'get-beat 4) 1/4
+                            '(60 62 64 65 67 69 71 72 71 69 67 65 64 62 60))
+</code></pre>
 
-&lt;p&gt;There are a couple of nice variations on this one:&lt;/p&gt;
+<p>There are a couple of nice variations on this one:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;replace the &lt;code&gt;(cdr plist)&lt;/code&gt; with &lt;code&gt;(rotate plist -1)&lt;/code&gt; to make it cycle through
-the pitches, but then go back to the start (have a think about what &lt;code&gt;rotate&lt;/code&gt;
-does to convince yourself that this works)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;you can re-trigger this temporal recursion several times, either with the same
-&lt;code&gt;plist&lt;/code&gt;, or even with different &lt;code&gt;plist&lt;/code&gt;s—since all the temporal callback
+<ul>
+  <li>
+    <p>replace the <code>(cdr plist)</code> with <code>(rotate plist -1)</code> to make it cycle through
+the pitches, but then go back to the start (have a think about what <code>rotate</code>
+does to convince yourself that this works)</p>
+  </li>
+  <li>
+    <p>you can re-trigger this temporal recursion several times, either with the same
+<code>plist</code>, or even with different <code>plist</code>s—since all the temporal callback
 chains will be independent they’ll all just run nicely over the top of one
-another, which can lead to some interesting musical “layerings”&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+another, which can lead to some interesting musical “layerings”</p>
+  </li>
+</ul>
 
-&lt;h2 id=&quot;multi-laptop-extempore-clock-sync&quot;&gt;multi-laptop Extempore clock sync&lt;/h2&gt;
+<h2 id="multi-laptop-extempore-clock-sync">multi-laptop Extempore clock sync</h2>
 
-&lt;p&gt;If you’re jamming with another Extempore laptop musician, you often want to make
-sure your tempos &amp;amp; metronomes sync up. One way to do this is to use the topclock
-protocol (the name comes from &lt;a href=&quot;https://toplap.org&quot;&gt;TOPLAP&lt;/a&gt;). You’ll need a
+<p>If you’re jamming with another Extempore laptop musician, you often want to make
+sure your tempos &amp; metronomes sync up. One way to do this is to use the topclock
+protocol (the name comes from <a href="https://toplap.org">TOPLAP</a>). You’ll need a
 network connection between all the machines—wired is best if you can manage
 it, or at least on a private-ish wifi LAN (you’ll probably have a bad time
-trying to do it over &lt;em&gt;ANU Secure&lt;/em&gt;).&lt;/p&gt;
+trying to do it over <em>ANU Secure</em>).</p>
 
-&lt;p&gt;There’s an example in &lt;code&gt;examples/core/topclock_metro.xtm&lt;/code&gt; which will show you the details.&lt;/p&gt;
+<p>There’s an example in <code>examples/core/topclock_metro.xtm</code> which will show you the details.</p>
 
-&lt;p&gt;The alternative (manual) way to sync up two laptops is to:&lt;/p&gt;
+<p>The alternative (manual) way to sync up two laptops is to:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;make sure you’re both using the same tempo:&lt;/p&gt;
+<ol>
+  <li>
+    <p>make sure you’re both using the same tempo:</p>
 
-    &lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(*metro* &apos;set-tempo 140) ;; or whatever tempo you like
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;both starting “playing time”, i.e. something simple which is easy to listen
-to and feel the tempo&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;listening carefully, try and figure out if you’re &lt;a href=&quot;https://www.youtube.com/watch?v=ZQ_6VUs2VCk&quot;&gt;rushing or
-dragging&lt;/a&gt;, and then executing the
-appropriate &lt;code&gt;*metro*&lt;/code&gt; function call:&lt;/p&gt;
+    <pre><code class="language-extempore">(*metro* 'set-tempo 140) ;; or whatever tempo you like
+</code></pre>
+  </li>
+  <li>
+    <p>both starting “playing time”, i.e. something simple which is easy to listen
+to and feel the tempo</p>
+  </li>
+  <li>
+    <p>listening carefully, try and figure out if you’re <a href="https://www.youtube.com/watch?v=ZQ_6VUs2VCk">rushing or
+dragging</a>, and then executing the
+appropriate <code>*metro*</code> function call:</p>
 
-    &lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;;; if you&apos;re rushing
-(*metro* &apos;pull)
+    <pre><code class="language-extempore">;; if you're rushing
+(*metro* 'pull)
    
-;; if you&apos;re dragggin
-(*metro* &apos;push)
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+;; if you're dragggin
+(*metro* 'push)
+</code></pre>
+  </li>
+</ol>
 
-&lt;p&gt;Pros with this approach: no network connection required, and it’s usually not
+<p>Pros with this approach: no network connection required, and it’s usually not
 too tricky to get the timing close enough to jam together. Cons: it’s pretty
 manual (and requires some careful listening, which is a skill that takes time to
 master), and it also doesn’t help with getting the exact beat clock synced up
 (so that you’ll still have to be careful that e.g. your 4-beat bars line up, and
-you may have to keep fiddling with some offsets to make it all work).&lt;/p&gt;
+you may have to keep fiddling with some offsets to make it all work).</p>
 
-&lt;h2 id=&quot;selecting-the-correct-audio-device&quot;&gt;Selecting the correct audio device&lt;/h2&gt;
+<h2 id="selecting-the-correct-audio-device">Selecting the correct audio device</h2>
 
-&lt;p&gt;We discussed this during the demo day class, but you should visit the &lt;a href=&quot;https://extemporelang.github.io/docs/overview/quickstart/#no-sound-check-your-audio-device&quot;&gt;doco
-website&lt;/a&gt;
-to see how to do it. The tip about using &lt;code&gt;--device-name&lt;/code&gt; instead of &lt;code&gt;--device&lt;/code&gt;
+<p>We discussed this during the demo day class, but you should visit the <a href="https://extemporelang.github.io/docs/overview/quickstart/#no-sound-check-your-audio-device">doco
+website</a>
+to see how to do it. The tip about using <code>--device-name</code> instead of <code>--device</code>
 is particularly good advice when you’re trying to bump in quickly in a gig
-situation.&lt;/p&gt;
+situation.</p>
 
-&lt;h2 id=&quot;audio-underflow-are-you-pushing-extempore-too-hard&quot;&gt;Audio underflow: are you pushing extempore too hard?&lt;/h2&gt;
+<h2 id="audio-underflow-are-you-pushing-extempore-too-hard">Audio underflow: are you pushing extempore too hard?</h2>
 
-&lt;p&gt;The sharedsystem is actually kindof heavyweight&lt;sup id=&quot;fnref:cpu-requirements&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:cpu-requirements&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; (or at least medium-weight) from
+<p>The sharedsystem is actually kindof heavyweight<sup id="fnref:cpu-requirements" role="doc-noteref"><a href="#fn:cpu-requirements" class="footnote" rel="footnote">3</a></sup> (or at least medium-weight) from
 a CPU use perspective. It loads up 4 analogue synths and a sampler, plus some FX
 (e.g. global convolution reverb) and tries to distribute them across multiple
-cores on your machine.&lt;/p&gt;
+cores on your machine.</p>
 
-&lt;p&gt;If you’re getting lots of “audio underflow” messages, you’ve got a few options,
-in order of easiest fixes to most difficult:&lt;/p&gt;
+<p>If you’re getting lots of “audio underflow” messages, you’ve got a few options,
+in order of easiest fixes to most difficult:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;don’t run any other software on your machine that you don’t absolutely need
-for the gig&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;try starting Extempore with a larger frame size (e.g. &lt;code&gt;./extempore --frames 8192&lt;/code&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if you don’t need MIDI I/O, just load &lt;code&gt;(sys:load
-&quot;examples/sharedsystem/audiosetup.xtm&quot;)&lt;/code&gt; instead of &lt;code&gt;(sys:load
-&quot;examples/sharedsystem/setup.xtm&quot;)&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;remove some of the &lt;code&gt;dspN&lt;/code&gt; (for &lt;code&gt;N&lt;/code&gt; = 1..5) functions from the signal chain in
-&lt;code&gt;examples/sharedsystem/audiosetup.xtm&lt;/code&gt; (e.g. if you’re only using &lt;code&gt;syn1&lt;/code&gt; and
-&lt;code&gt;syn2&lt;/code&gt; you could remove &lt;code&gt;dsp3&lt;/code&gt; from the signal chain, which uses &lt;code&gt;dspmt&lt;/code&gt; as
-the final output sink)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;get your hands on a beefier laptop (not an option for many people, obviously)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>
+    <p>don’t run any other software on your machine that you don’t absolutely need
+for the gig</p>
+  </li>
+  <li>
+    <p>try starting Extempore with a larger frame size (e.g. <code>./extempore --frames 8192</code>)</p>
+  </li>
+  <li>
+    <p>if you don’t need MIDI I/O, just load <code>(sys:load
+"examples/sharedsystem/audiosetup.xtm")</code> instead of <code>(sys:load
+"examples/sharedsystem/setup.xtm")</code></p>
+  </li>
+  <li>
+    <p>remove some of the <code>dspN</code> (for <code>N</code> = 1..5) functions from the signal chain in
+<code>examples/sharedsystem/audiosetup.xtm</code> (e.g. if you’re only using <code>syn1</code> and
+<code>syn2</code> you could remove <code>dsp3</code> from the signal chain, which uses <code>dspmt</code> as
+the final output sink)</p>
+  </li>
+  <li>
+    <p>get your hands on a beefier laptop (not an option for many people, obviously)</p>
+  </li>
+</ol>
 
-&lt;p&gt;If you go with option #4, remember that you can create a new copy of
-&lt;code&gt;audiosetup.xtm&lt;/code&gt; and modify it to your heart’s content. Even if you’ve just been
-messing with the original &lt;code&gt;audiosetup.xtm&lt;/code&gt; file directly, remember that you can
+<p>If you go with option #4, remember that you can create a new copy of
+<code>audiosetup.xtm</code> and modify it to your heart’s content. Even if you’ve just been
+messing with the original <code>audiosetup.xtm</code> file directly, remember that you can
 get a “pristine” version at any time from
-&lt;a href=&quot;https://github.com/digego/extempore/blob/master/examples/sharedsystem/audiosetup.xtm&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+<a href="https://github.com/digego/extempore/blob/master/examples/sharedsystem/audiosetup.xtm">GitHub</a>.</p>
 
-&lt;h2 id=&quot;creating-a-startup-file&quot;&gt;Creating a “startup” file&lt;/h2&gt;
+<h2 id="creating-a-startup-file">Creating a “startup” file</h2>
 
-&lt;p&gt;&lt;code&gt;sys:load&lt;/code&gt; can load any file on your computer (even files outside your
-&lt;code&gt;extempore&lt;/code&gt; directory if you provide a full path). So it’s a good idea to put
-&lt;em&gt;everything&lt;/em&gt; required to set up your Extempore session into one file, then you
-can just load that file with e.g.&lt;/p&gt;
+<p><code>sys:load</code> can load any file on your computer (even files outside your
+<code>extempore</code> directory if you provide a full path). So it’s a good idea to put
+<em>everything</em> required to set up your Extempore session into one file, then you
+can just load that file with e.g.</p>
 
-&lt;pre&gt;&lt;code class=&quot;language-extempore&quot;&gt;(sys:load &quot;/Users/ben/Documents/research/extemporelang/xtm/sessions/lens-2021-demo/setup.xtm&quot;)
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="language-extempore">(sys:load "/Users/ben/Documents/research/extemporelang/xtm/sessions/lens-2021-demo/setup.xtm")
+</code></pre>
 
-&lt;p&gt;and then once that’s loaded you’re good to go.&lt;/p&gt;
+<p>and then once that’s loaded you’re good to go.</p>
 
-&lt;p&gt;Extra tip: also memorise a line of code that you can quickly type &amp;amp; execute to
-check if there’s sound coming out.&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:mb&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;to the &lt;a href=&quot;https://www.youtube.com/watch?v=uf723IeStzc&quot;&gt;world of the Mighty Boosh&lt;/a&gt; &lt;a href=&quot;#fnref:mb&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:little-schemer&quot; role=&quot;doc-endnote&quot;&gt;
+<p>Extra tip: also memorise a line of code that you can quickly type &amp; execute to
+check if there’s sound coming out.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:mb" role="doc-endnote">
+      <p>to the <a href="https://www.youtube.com/watch?v=uf723IeStzc">world of the Mighty Boosh</a> <a href="#fnref:mb" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:little-schemer" role="doc-endnote">
 
-      &lt;p&gt;that’s not just an idiom, I’m actually thinking of a &lt;a href=&quot;https://mitpress.mit.edu/books/little-schemer-fourth-edition&quot;&gt;specific
-book&lt;/a&gt; &lt;a href=&quot;#fnref:little-schemer&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:cpu-requirements&quot; role=&quot;doc-endnote&quot;&gt;
+      <p>that’s not just an idiom, I’m actually thinking of a <a href="https://mitpress.mit.edu/books/little-schemer-fourth-edition">specific
+book</a> <a href="#fnref:little-schemer" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:cpu-requirements" role="doc-endnote">
 
-      &lt;p&gt;I mean, it’s still supposed to work on a half-decent laptop—it shouldn’t
+      <p>I mean, it’s still supposed to work on a half-decent laptop—it shouldn’t
 require a real beast—but if you’re on a particularly old/wheezy machine
 then even with the below tricks the sharedsystem might not be a good choice.
-The other examples (e.g. &lt;code&gt;examples/core/fmsynth.xtm&lt;/code&gt;) show how to create a
+The other examples (e.g. <code>examples/core/fmsynth.xtm</code>) show how to create a
 lighter-weight DSP chain, and from there you could add only the instruments
-&amp;amp; effects that you need. &lt;a href=&quot;#fnref:cpu-requirements&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><category term="lens" /><summary type="html">Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).</summary></entry><entry><title type="html">benswift.me analytics/tracking update</title><link href="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/" rel="alternate" type="text/html" title="benswift.me analytics/tracking update" /><published>2021-04-08T00:00:00+10:00</published><updated>2021-04-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update</id><content type="html" xml:base="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/">&lt;p&gt;I haven’t had any sort of client-side analytics (e.g. Google Analytics) on
-&lt;code&gt;benswift.me&lt;/code&gt; for a &lt;em&gt;long&lt;/em&gt; time (since around 2012 I think—several iterations
-of the site ago). I use an ad-blocker myself, and the whole tracking &amp;amp; analytics
-thing just strikes me as a bit gross.&lt;/p&gt;
+&amp; effects that you need. <a href="#fnref:cpu-requirements" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><category term="lens" /><summary type="html"><![CDATA[Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).]]></summary></entry><entry><title type="html">benswift.me analytics/tracking update</title><link href="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/" rel="alternate" type="text/html" title="benswift.me analytics/tracking update" /><published>2021-04-08T00:00:00+10:00</published><updated>2021-04-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update</id><content type="html" xml:base="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/"><![CDATA[<p>I haven’t had any sort of client-side analytics (e.g. Google Analytics) on
+<code>benswift.me</code> for a <em>long</em> time (since around 2012 I think—several iterations
+of the site ago). I use an ad-blocker myself, and the whole tracking &amp; analytics
+thing just strikes me as a bit gross.</p>
 
-&lt;p&gt;However, it is helpful to know where folks are coming from, and so I recently
-came across &lt;a href=&quot;https://counter.dev&quot;&gt;https://counter.dev&lt;/a&gt; as a lightweight, relatively un-invasive
+<p>However, it is helpful to know where folks are coming from, and so I recently
+came across <a href="https://counter.dev">https://counter.dev</a> as a lightweight, relatively un-invasive
 tracking platform. So I’ve added it to the site. If you’re browsing with an
-ad-blocker then you still have my blessing to enjoy the stuff I put up here ☺&lt;/p&gt;
+ad-blocker then you still have my blessing to enjoy the stuff I put up here ☺</p>
 
-&lt;p&gt;Just wanted to give y’all the heads up. Let me know what you think in the comments&lt;sup id=&quot;fnref:comments&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:comments&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+<p>Just wanted to give y’all the heads up. Let me know what you think in the comments<sup id="fnref:comments" role="doc-noteref"><a href="#fn:comments" class="footnote" rel="footnote">1</a></sup>.</p>
 
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:comments&quot; role=&quot;doc-endnote&quot;&gt;
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:comments" role="doc-endnote">
 
-      &lt;p&gt;Just kidding, who has the time to moderate comments on a personal webpage
+      <p>Just kidding, who has the time to moderate comments on a personal webpage
 these days? If you want to get in touch, twitter me or email me or write
 something on your own blog and link me to it—there are lots of ways to
-have conversations, and I’m keen to have them. &lt;a href=&quot;#fnref:comments&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Ben Swift</name></author><category term="web" /><summary type="html">I haven’t had any sort of client-side analytics (e.g. Google Analytics) on benswift.me for a long time (since around 2012 I think—several iterations of the site ago). I use an ad-blocker myself, and the whole tracking &amp;amp; analytics thing just strikes me as a bit gross.</summary></entry></feed>
+have conversations, and I’m keen to have them. <a href="#fnref:comments" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="web" /><summary type="html"><![CDATA[I haven’t had any sort of client-side analytics (e.g. Google Analytics) on benswift.me for a long time (since around 2012 I think—several iterations of the site ago). I use an ad-blocker myself, and the whole tracking &amp; analytics thing just strikes me as a bit gross.]]></summary></entry></feed>
