@@ -1,7 +1,6 @@
 ---
 title: "Cybernetic futures explained (maybe)"
 tags: cybernetics
-hidden: true
 ---
 
 {:.hl-para}
