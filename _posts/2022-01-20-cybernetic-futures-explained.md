@@ -86,13 +86,14 @@ cybernetic forebears liked is the one of using a lighthouse to steer a ship.
 [Here's](https://history-computer.com/the-complete-guide-to-cybernetics/) a nice
 explanation:
 
-> In ancient Greece, the _Kubernetes_ [navigator/helmsperson] was in charge of
-> controlling the Grecian longships. The ships had to be steered through all
-> kinds of unpredictable forces, including wind, waves, storms, currents, and
-> tides. The Greeks found that they could ignore all of these and control the
-> ship via a small tiller connected to the ship's larger rudder just by pointing
-> the tiller toward a fixed object in the distance, such as a lighthouse, and
-> making adjustments in real-time.
+> In ancient Greece, the
+> [_Kubernetes_](https://en.wikipedia.org/wiki/Cybernetics#Etymology)
+> [navigator/helmsperson] was in charge of controlling the Grecian longships.
+> The ships had to be steered through all kinds of unpredictable forces,
+> including wind, waves, storms, currents, and tides. The Greeks found that they
+> could ignore all of these and control the ship via a small tiller connected to
+> the ship's larger rudder just by pointing the tiller toward a fixed object in
+> the distance, such as a lighthouse, and making adjustments in real-time.
 
 There's a [YouTube "What is
 cybernetics?"](https://www.youtube.com/watch?v=iXmlbd86YGA) video which includes
