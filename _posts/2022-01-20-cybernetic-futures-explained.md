@@ -1,5 +1,6 @@
 ---
 title: "Cybernetic futures explained (maybe)"
+subtitle: It's not a lighthouse, it's a radar.
 tags: cybernetics
 ---
 
