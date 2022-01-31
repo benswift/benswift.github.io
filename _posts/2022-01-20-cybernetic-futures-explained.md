@@ -185,7 +185,13 @@ futuring looks like a three step process:
    points in the diagram above)
 2. pick one of the potential futures you like the most (from the _preferable_
    area of the futures cone)
-3. steer towards it like a lighthouse (whatever that looks like)
+3. steer towards[^lighthouse-steering] it like a lighthouse (whatever that looks
+   like)
+
+[^lighthouse-steering]:
+    Yeah, I know, you don't steer towards the lighthouse exactly---they just
+    [show you where the rocks and reefs
+    are](https://adventure.howstuffworks.com/lighthouse.htm). Don't @ me.
 
 ![Steering towards a preferred future]({% link assets/images/posts/cybernetic-futures/steering-towards-preferred-future.png %})
 
