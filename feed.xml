@@ -1,4 +1,206 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-01-31T16:03:07+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/"><![CDATA[<p class="hl-para">One of my current projects at the ANU School of Cybernetics is to develop tools
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-02-02T11:38:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
+managed via <a href="https://sylabs.io/singularity/">SingularityCE</a>, whose homepage
+boldly asks and then forgets to answer the question: “What is SingularityCE?”</p>
+
+<p>If you <a href="https://sylabs.io/guides/latest/user-guide/introduction.html">dig further into the
+documentation</a>
+it’s a little less coy:</p>
+
+<blockquote>
+  <p>SingularityCE is a container platform. It allows you to create and run
+containers that package up pieces of software in a way that is portable and
+reproducible. You can build a container using SingularityCE on your laptop,
+and then run it on many of the largest HPC clusters in the world, local
+university or company clusters, a single server, in the cloud, or on a
+workstation down the hall. Your container is a single file, and you don’t have
+to worry about how to install all the software you need on each different
+operating system.</p>
+</blockquote>
+
+<p>I want to fire up my new GPUs and run one of Katherine Crowson’s awesome pytorch
+scripts to do some <a href="https://github.com/crowsonkb/style-transfer-pytorch">neural style
+transfer</a>. I’m very
+familiar with Docker, but new to this Singularity thing, so here are some of the
+hurdles I encountered (and cleared) along the way.</p>
+
+<h2 id="finding-a-base-image">Finding a base image</h2>
+
+<p>Looking in the style transfer repo’s
+<a href="https://github.com/crowsonkb/style-transfer-pytorch/blob/master/setup.py#L23"><code>setup.py</code></a>,
+it looks like <a href="https://pytorch.org">torch</a> v1.7.1 or later is required. Having
+done this sort of thing before, I know that these deep learning frameworks
+change a fair bit even between minor versions, so the safest option is to pick
+the exact version that it was designed for—in this case v1.7.1 (or at least
+v1.7.x).</p>
+
+<p>So, the challenge is to find a Singularity image with that version of torch
+installed. The singularity docs <a href="https://sylabs.io/guides/latest/user-guide/quick_start.html#download-pre-built-images">suggest using the search
+command</a>
+like so:</p>
+
+<pre><code class="language-shell">$ singularity search torch
+
+Found 34 container images for amd64 matching "torch":
+
+	library://adalisan81/default/pytorch:latest
+
+	library://aday651/default/pytorch-geometric-gpu:latest
+
+	library://aphoh/default/pytorch-20.11-py3:v-1
+
+	library://aradeva24/default/ar_pytorch_21.06-py3.sif:latest
+		PyTorch NGC container with CUDA11.0, where PyTorch and apex are installed
+
+	library://calebh/hpccm-test/faircluster-pytorch-1.10-cuda11.3:sha256.7c63a6c1f6f125b8d3e14fa10203965536ec7173d50e85b8c9ecf6ee0bff2ba7
+
+	library://claytonm/default/ubuntu18_torch_torchvision_opencv_cuda10:latest
+
+	library://dxtr/default/hpc-pytorch:0.1
+
+	library://guoweihe/default/pytorch:hz1
+
+	library://guoweihe/default/pytorch:v1.2
+
+	library://guoweihe/default/torch:deep-ed
+
+	library://guoweihe/default/torch:sha256.ff32c85ade2c8f6a1d34bd500de1b7bd11cdac16461aeef4d7cbd16ab129d8a7
+
+	library://guoweihe/default/torchgpipe:master
+
+	library://guoweihe/default/torchgpipe:sha256.a6ea5d732cba07c043e2f06cccbe541d28da6a8d9e5a3d18872d58af288dbc62
+
+	library://ipa/medimgproc/pytorch:latest
+
+	library://jamiechang917/default/pytorch:sha256.9c60c9825f20626cc0d6e69ac61d862bfec927e82d86becee73f853d657f2425
+
+	library://lamastex/default/pytorch_21.03.sif:berzelius-20211027
+
+	library://lamastex/default/pytorch_21.07.sif:berzelius-20211027
+
+	library://lev-hpc/ml/pytorch_gpu:jupyter
+
+	library://lev-hpc/ml/torch_tf_jupyter:latest
+
+	library://mbalazs/default/pytorch:latest
+
+	library://mbalazs/default/pytorch_cuda110:latest
+
+	library://mike_holcomb/pytorchvision/v0.1.0:latest,v0.1.0
+
+	library://oscartang/default/pytorch_translation:latest
+
+	library://ottino8/default/pytorch:first
+
+	library://pauldhein/hpc-deep-learning/torch-base:latest
+
+	library://sina-ehsani/default/transformer-googlecrawl-torch-opencv:latest
+
+	library://sina-ehsani/default/transformer-googlecrawl-torch1.10:latest
+
+	library://skykiny/default/pytorch_skykiny:latest
+
+	library://tmyoda/default/cuda-torch-pyenv:latest
+
+	library://tru/default/c7-conda-pytorch-10.0:2019-07-12-2053,latest
+
+	library://ufscar/hpc/cuda_pytorch:latest
+
+	library://uvarc/default/pytorch:1.4.0-py37
+
+	library://yboget/default/pytorch_rdkit_visdom:sha256.d97f221ef1294a8ef57d40cf7994d05d4955abc7cf39e3ce42faafd59fe3151a
+
+	library://zhengtang/default/torch_translation:latest
+</code></pre>
+
+<p>Hmm. It’s hard to know which is official, which ones are going to work (a few of
+them mention torch versions, but none of them are v1.7.x) and which ones might
+even be malicious? That’s a worry.</p>
+
+<p>Looking a bit deeper into the Singularity docs I find that one can <a href="https://sylabs.io/guides/latest/user-guide/singularity_and_docker.html">also use
+Docker/OCI
+images</a>,
+and Singularity can pull them straight from Docker hub. That’s good news,
+because NVIDIA do maintain <a href="https://hub.docker.com/r/pytorch/pytorch/tags">official Docker
+images</a> for using torch with
+NVIDIA graphics cards (like the 3090), so I find the <a href="https://hub.docker.com/layers/pytorch/pytorch/1.7.1-cuda11.0-cudnn8-runtime/images/sha256-db6086be92f439b918c96dc002f4cf40239e247f0b1b6c32e3fb36de70032bf9?context=explore">specific container image
+for torch
+v1.7.1</a>
+and pull it down with:</p>
+
+<pre><code class="language-shell">singularity pull docker://pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+</code></pre>
+
+<h2 id="running-the-style_transfer-python-script">Running the <code>style_transfer</code> python script</h2>
+
+<p>I’d already cloned the neural style transfer repo, so I can follow the
+instructions in that
+<a href="https://github.com/crowsonkb/style-transfer-pytorch/blob/master/README.md">README.md</a></p>
+
+<pre><code class="language-shell">$ singularity shell pytorch_1.7.0-cuda11.0-cudnn8-runtime.sif 
+Singularity&gt; cd style-transfer-pytorch/
+Singularity&gt; pip install -e .
+</code></pre>
+
+<p>I got a bunch of warnings about certain things not being on the <code>$PATH</code>, but it
+seems to finish installing everthing ok.</p>
+
+<p>Continuing on with the instructions in the README, let’s try running this thing
+(I’d downloaded a couple of image files to use as my <em>content</em> and <em>style</em> images).</p>
+
+<pre><code class="language-shell">$ style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+bash: style_transfer: command not found
+</code></pre>
+
+<p>Hmm, looks like those <code>$PATH</code> warnings were prescient. Looking back, the exact
+warning was:</p>
+
+<pre><code class="language-shell">WARNING: The script normalizer is installed in '/home/users/ben/.local/bin' which is not on PATH
+</code></pre>
+
+<p>The quickest &amp; dirtiest fix for this is to add that <code>/bin</code> directory to my path
+and try and re-run the script.</p>
+
+<pre><code class="language-shell">$ PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+</code></pre>
+
+<p>And away it went! Several minutes later, it was done. Here are the original two images:</p>
+
+<p><img src="/assets/images/headshots/headshot.jpg" alt="Original ben.jpg image" />
+<img src="/assets/images/posts/tiger.jpg" alt="Original tiger.jpg" /></p>
+
+<p>and here’s the output:</p>
+
+<p><img src="/assets/images/posts/ben-tiger.jpg" alt="style-transferred ben-tiger.jpg" /></p>
+
+<p>Success…ish.</p>
+
+<p>Clearly I need to keep tweaking parameters &amp; input images to come up with an
+output that’s actually <em>good</em>, but at least that journey can now begin.</p>
+
+<h2 id="open-questions">Open questions</h2>
+
+<p>I really was just “hacking it until it worked” during this process, so I have a
+few open questions.</p>
+
+<ul>
+  <li>
+    <p>What’s the “persistance” story with the singularity images (<code>*.sif</code> files)? Is
+it like docker, where I <code>singularity shell</code> in, do some things, but then any
+changes I make in the shell (container?) don’t persist? It doesn’t seem like
+that… but need to have a better mental model of how singularity images work.</p>
+  </li>
+  <li>
+    <p>I wasn’t using venvs or conda or any of the things I’d usually use when
+python-ing on my own machine, partially because of my above questions about
+how the whole singularity shell thing actually works. Is that ok? Or should I
+still use venvs?</p>
+  </li>
+  <li>
+    <p>How can I ensure it’s using all the hardware available to it? That’s something
+I’ve has problems with regarding Docker + GPUs in the past, although that was
+a couple of years ago and things might be better now.</p>
+  </li>
+</ul>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="ai" /><summary type="html"><![CDATA[I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer the question: “What is SingularityCE?”]]></summary></entry><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/"><![CDATA[<p class="hl-para">One of my current projects at the ANU School of Cybernetics is to develop tools
 &amp; procedures for futuring. This post is an attempt to get my head around how
 these things fit together (spoiler: they do!).</p>
 
@@ -1428,26 +1630,4 @@ lighter-weight DSP chain, and from there you could add only the instruments
 &amp; effects that you need. <a href="#fnref:cpu-requirements" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><category term="lens" /><summary type="html"><![CDATA[Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).]]></summary></entry><entry><title type="html">benswift.me analytics/tracking update</title><link href="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/" rel="alternate" type="text/html" title="benswift.me analytics/tracking update" /><published>2021-04-08T00:00:00+10:00</published><updated>2021-04-08T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update</id><content type="html" xml:base="https://benswift.me/blog/2021/04/08/benswift-me-analytics-tracking-update/"><![CDATA[<p>I haven’t had any sort of client-side analytics (e.g. Google Analytics) on
-<code>benswift.me</code> for a <em>long</em> time (since around 2012 I think—several iterations
-of the site ago). I use an ad-blocker myself, and the whole tracking &amp; analytics
-thing just strikes me as a bit gross.</p>
-
-<p>However, it is helpful to know where folks are coming from, and so I recently
-came across <a href="https://counter.dev">https://counter.dev</a> as a lightweight, relatively un-invasive
-tracking platform. So I’ve added it to the site. If you’re browsing with an
-ad-blocker then you still have my blessing to enjoy the stuff I put up here ☺</p>
-
-<p>Just wanted to give y’all the heads up. Let me know what you think in the comments<sup id="fnref:comments" role="doc-noteref"><a href="#fn:comments" class="footnote" rel="footnote">1</a></sup>.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:comments" role="doc-endnote">
-
-      <p>Just kidding, who has the time to moderate comments on a personal webpage
-these days? If you want to get in touch, twitter me or email me or write
-something on your own blog and link me to it—there are lots of ways to
-have conversations, and I’m keen to have them. <a href="#fnref:comments" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="web" /><summary type="html"><![CDATA[I haven’t had any sort of client-side analytics (e.g. Google Analytics) on benswift.me for a long time (since around 2012 I think—several iterations of the site ago). I use an ad-blocker myself, and the whole tracking &amp; analytics thing just strikes me as a bit gross.]]></summary></entry></feed>
+</div>]]></content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="extempore" /><category term="lens" /><summary type="html"><![CDATA[Yesterday’s LENS class discussion turned into an AMA of how I do certain things when I’m livecoding in Extempore. As promised, here’s a blog post where I’ve put together all of the things we’ve discussed (with a bit more explanation). If you’re in the LENS ‘21 class this’ll hopefully be a helpful complement to yesterday’s class discussion. If you’re not in the class, then maybe you’ve always been curious about certain things I (over)use in my livecoding sets? This is maybe a bit too niche to go in the general Extempore documentation, but if you’ve got any questions then you can hit me up on Teams (for LENS students) or the Extempore mailing list (everyone else).]]></summary></entry></feed>
