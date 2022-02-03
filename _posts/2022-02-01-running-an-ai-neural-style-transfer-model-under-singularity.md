@@ -154,7 +154,7 @@ Continuing on with the instructions in the README, let's try running this thing
 (I'd downloaded a couple of image files to use as my _content_ and _style_ images).
 
 ```shell
-$ style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Singularity> style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
 bash: style_transfer: command not found
 ```
 
@@ -169,7 +169,7 @@ The quickest & dirtiest fix for this is to add that `/bin` directory to my path
 and try and re-run the script.
 
 ```shell
-$ PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
 ```
 
 And away it went! Several minutes later, it was done. Here are the original two images:
@@ -181,12 +181,105 @@ and here's the output:
 
 ![style-transferred ben-tiger.jpg]({% link assets/images/posts/ben-tiger.jpg %})
 
-Success...ish.
+Success...ish. Clearly I need to keep tweaking parameters & input images to come
+up with an output that's actually _good_, but at least that journey can now
+begin.
 
-Clearly I need to keep tweaking parameters & input images to come up with an
-output that's actually _good_, but at least that journey can now begin.
+## But is it _fast_?
 
-## Open questions
+Actually, that declaration of success is a bit premature. At the top of the
+output I noticed that the script was running on the CPU, not the GPU.
+
+```shell
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Using devices: cpu
+CPU threads: 128
+Loading model...
+```
+
+That's really not ok---the whole point of running on this machine is to take
+advantage of the GPUs. There could be lots of reasons for this, but I have a
+hunch it has something to do with Singularity not allowing the script access to
+the hardware. Sure enough, looking through the [Singularity GPU support
+documentation](https://sylabs.io/guides/3.7/user-guide/gpu.html) it turns out
+there's a magic `--nv` flag which must be passed when starting up the
+Singularity session, so let's do that.
+
+```shell
+$ singularity shell --nv pytorch_1.7.1-cuda11.0-cudnn8-runtime.sif 
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Using devices: cuda:0
+~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:143: UserWarning: 
+NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
+GPU 0 RAM: 24268 MB
+Loading model...
+
+*error traceback intensifies*
+```
+
+Well, that's progress. You can see from the output that:
+
+```shell
+Using devices: cuda:0
+GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
+GPU 0 RAM: 24268 MB
+```
+
+so torch can now see the GPUs. However, the error message in the middle of that
+output is now the problem:
+
+> NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the
+> current PyTorch installation.
+>
+> The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60
+> sm_70.
+>
+> If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check
+> the instructions at https://pytorch.org/get-started/locally/
+
+Ugh, I've had problems like this before (like I said earlier,
+torch/tensorflow/CUDA and deep learning frameworks in general are really
+finnicky about versions, and it's really tricky to get things up and running so
+that (i) all the versions work together and (ii) the changes you make don't
+break the delicate version relationships between other deep learning projects
+you want to run on the same system[^singularity-isolation].
+
+[^singularity-isolation]:
+    I had hoped that Singularity might help with the "isolation" part _ii_ of
+    this, but I'm not sure I understand it well enough yet to know how to do it.
+
+After a web search, it seems [like others
+](https://github.com/pytorch/vision/issues/4886) [have
+had](https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-is-not-compatible-with-the-current-pytorch-installation/123499)
+[similar
+issues](https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949),
+although I tried all the approaches listed there and none of them worked.
+
+My current hypotheses are:
+
+- it's a weird interaction between the system-level CUDA drivers and the stuff
+  in the singularity container (which was an official NVIDIA torch base image,
+  and I _thought_ torch was supposed to download and install the right drivers
+  automagically)
+
+- the torch version (v1.7) used in the script is a couple of years old, and
+  doesn't support my newer GPUs (I'm almost certain that's not the case, because
+  3090s are explicitly mentioned in the README)
+
+I will return and get to the bottom of things ASAP, but right now this isn't on
+the critical path for me so I'll have to park it. This blog post is really just
+me opening a ticket for myself to return to at a later date. I share it so
+that you, dear reader, can also benefit from my mistakes (and if you know how to
+solve the issue the do [drop me a line](mailto:ben.swift@anu.edu.au).
+
+## Other open questions
 
 I really was just "hacking it until it worked" during this process, so I have a
 few open questions.
