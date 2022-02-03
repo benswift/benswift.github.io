@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-02-04T09:25:48+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-02-04T09:39:18+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
 managed via <a href="https://sylabs.io/singularity/">SingularityCE</a>, whose homepage
 boldly asks and then forgets to answer the question: “What is SingularityCE?”</p>
 
@@ -234,12 +234,11 @@ sm_70.</p>
 the instructions at <a href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
 </blockquote>
 
-<p>Ugh, I’ve had problems like this before (like I said earlier,
-torch/tensorflow/CUDA and deep learning frameworks in general are really
-finnicky about versions, and it’s really tricky to get things up and running so
-that (i) all the versions work together and (ii) the changes you make don’t
-break the delicate version relationships between other deep learning projects
-you want to run on the same system<sup id="fnref:singularity-isolation" role="doc-noteref"><a href="#fn:singularity-isolation" class="footnote" rel="footnote">1</a></sup>.</p>
+<p>Like I said earlier, torch/tensorflow/CUDA and deep learning frameworks in
+general are really finnicky about versions. It’s tricky to get things up and
+running so that (i) all the versions work together and (ii) the changes you make
+don’t break the delicate version relationships between other deep learning
+projects you want to run on the same system<sup id="fnref:singularity-isolation" role="doc-noteref"><a href="#fn:singularity-isolation" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <p>After a web search, it seems <a href="https://github.com/pytorch/vision/issues/4886">like others
 </a> <a href="https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-is-not-compatible-with-the-current-pytorch-installation/123499">have
@@ -248,7 +247,7 @@ had</a>
 issues</a>,
 although I tried all the approaches listed there and none of them worked.</p>
 
-<p>My current hypotheses are:</p>
+<p>My current hypotheses are that:</p>
 
 <ul>
   <li>
@@ -300,8 +299,8 @@ a couple of years ago and things might be better now.</p>
   <ol>
     <li id="fn:singularity-isolation" role="doc-endnote">
 
-      <p>I had hoped that Singularity might help with the “isolation” part <em>ii</em> of
-this, but I’m not sure I understand it well enough yet to know how to do it. <a href="#fnref:singularity-isolation" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>I had hoped that Singularity might help with the “isolation” part of this,
+but I’m not sure I understand it well enough yet to know how to do it. <a href="#fnref:singularity-isolation" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="ai" /><summary type="html"><![CDATA[I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer the question: “What is SingularityCE?”]]></summary></entry><entry><title type="html">Cybernetic futures explained (maybe)</title><link href="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/" rel="alternate" type="text/html" title="Cybernetic futures explained (maybe)" /><published>2022-01-20T00:00:00+11:00</published><updated>2022-01-20T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/01/20/cybernetic-futures-explained</id><content type="html" xml:base="https://benswift.me/blog/2022/01/20/cybernetic-futures-explained/"><![CDATA[<p class="hl-para">One of my current projects at the ANU School of Cybernetics is to develop tools
