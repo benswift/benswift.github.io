@@ -297,3 +297,5 @@ few open questions.
 - How can I ensure it's using all the hardware available to it? That's something
   I've has problems with regarding Docker + GPUs in the past, although that was
   a couple of years ago and things might be better now.
+
+## Footnotes
