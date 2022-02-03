@@ -244,16 +244,15 @@ output is now the problem:
 > If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check
 > the instructions at <https://pytorch.org/get-started/locally/>
 
-Ugh, I've had problems like this before (like I said earlier,
-torch/tensorflow/CUDA and deep learning frameworks in general are really
-finnicky about versions, and it's really tricky to get things up and running so
-that (i) all the versions work together and (ii) the changes you make don't
-break the delicate version relationships between other deep learning projects
-you want to run on the same system[^singularity-isolation].
+Like I said earlier, torch/tensorflow/CUDA and deep learning frameworks in
+general are really finnicky about versions. It's tricky to get things up and
+running so that (i) all the versions work together and (ii) the changes you make
+don't break the delicate version relationships between other deep learning
+projects you want to run on the same system[^singularity-isolation].
 
 [^singularity-isolation]:
-    I had hoped that Singularity might help with the "isolation" part _ii_ of
-    this, but I'm not sure I understand it well enough yet to know how to do it.
+    I had hoped that Singularity might help with the "isolation" part of this,
+    but I'm not sure I understand it well enough yet to know how to do it.
 
 After a web search, it seems [like others
 ](https://github.com/pytorch/vision/issues/4886) [have
@@ -262,7 +261,7 @@ had](https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-i
 issues](https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949),
 although I tried all the approaches listed there and none of them worked.
 
-My current hypotheses are:
+My current hypotheses are that:
 
 - it's a weird interaction between the system-level CUDA drivers and the stuff
   in the singularity container (which was an official NVIDIA torch base image,
