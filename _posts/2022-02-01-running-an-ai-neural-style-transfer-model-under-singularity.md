@@ -224,7 +224,7 @@ Loading model...
 *error traceback intensifies*
 ```
 
-Well, that's progress. You can see from the output that:
+Well, that's progress. Looking through the output I can see
 
 ```shell
 Using devices: cuda:0
@@ -242,7 +242,7 @@ output is now the problem:
 > sm_70.
 >
 > If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check
-> the instructions at https://pytorch.org/get-started/locally/
+> the instructions at <https://pytorch.org/get-started/locally/>
 
 Ugh, I've had problems like this before (like I said earlier,
 torch/tensorflow/CUDA and deep learning frameworks in general are really
