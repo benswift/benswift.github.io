@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"headline":"Running an AI neural style transfer model under Singularity","dateModified":"2022-02-01T00:00:00+11:00","datePublished":"2022-02-01T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"},"url":"https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","description":"I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer the question: “What is SingularityCE?”","@context":"https://schema.org"}</script>
+{"url":"https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/","author":{"@type":"Person","name":"Ben Swift"},"@type":"BlogPosting","headline":"Running an AI neural style transfer model under Singularity","dateModified":"2022-02-01T00:00:00+11:00","datePublished":"2022-02-01T00:00:00+11:00","description":"I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer the question: “What is SingularityCE?”","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -233,7 +233,7 @@ seems to finish installing everthing ok.</p>
 <p>Continuing on with the instructions in the README, let’s try running this thing
 (I’d downloaded a couple of image files to use as my <em>content</em> and <em>style</em> images).</p>
 
-<pre><code class="language-shell">$ style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+<pre><code class="language-shell">Singularity&gt; style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
 bash: style_transfer: command not found
 </code></pre>
 
@@ -246,7 +246,7 @@ warning was:</p>
 <p>The quickest &amp; dirtiest fix for this is to add that <code>/bin</code> directory to my path
 and try and re-run the script.</p>
 
-<pre><code class="language-shell">$ PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+<pre><code class="language-shell">Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
 </code></pre>
 
 <p>And away it went! Several minutes later, it was done. Here are the original two images:</p>
@@ -258,12 +258,105 @@ and try and re-run the script.</p>
 
 <p><img src="/assets/images/posts/ben-tiger.jpg" alt="style-transferred ben-tiger.jpg" /></p>
 
-<p>Success…ish.</p>
+<p>Success…ish. Clearly I need to keep tweaking parameters &amp; input images to come
+up with an output that’s actually <em>good</em>, but at least that journey can now
+begin.</p>
 
-<p>Clearly I need to keep tweaking parameters &amp; input images to come up with an
-output that’s actually <em>good</em>, but at least that journey can now begin.</p>
+<h2 id="but-is-it-fast">But is it <em>fast</em>?</h2>
 
-<h2 id="open-questions">Open questions</h2>
+<p>Actually, that declaration of success is a bit premature. At the top of the
+output I noticed that the script was running on the CPU, not the GPU.</p>
+
+<pre><code class="language-shell">Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() &gt; 0
+Using devices: cpu
+CPU threads: 128
+Loading model...
+</code></pre>
+
+<p>That’s really not ok—the whole point of running on this machine is to take
+advantage of the GPUs. There could be lots of reasons for this, but I have a
+hunch it has something to do with Singularity not allowing the script access to
+the hardware. Sure enough, looking through the <a href="https://sylabs.io/guides/3.7/user-guide/gpu.html">Singularity GPU support
+documentation</a> it turns out
+there’s a magic <code>--nv</code> flag which must be passed when starting up the
+Singularity session, so let’s do that.</p>
+
+<pre><code class="language-shell">$ singularity shell --nv pytorch_1.7.1-cuda11.0-cudnn8-runtime.sif 
+Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Using devices: cuda:0
+~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:143: UserWarning: 
+NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
+GPU 0 RAM: 24268 MB
+Loading model...
+
+*error traceback intensifies*
+</code></pre>
+
+<p>Well, that’s progress. You can see from the output that:</p>
+
+<pre><code class="language-shell">Using devices: cuda:0
+GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
+GPU 0 RAM: 24268 MB
+</code></pre>
+
+<p>so torch can now see the GPUs. However, the error message in the middle of that
+output is now the problem:</p>
+
+<blockquote>
+  <p>NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the
+current PyTorch installation.</p>
+
+  <p>The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60
+sm_70.</p>
+
+  <p>If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check
+the instructions at https://pytorch.org/get-started/locally/</p>
+</blockquote>
+
+<p>Ugh, I’ve had problems like this before (like I said earlier,
+torch/tensorflow/CUDA and deep learning frameworks in general are really
+finnicky about versions, and it’s really tricky to get things up and running so
+that (i) all the versions work together and (ii) the changes you make don’t
+break the delicate version relationships between other deep learning projects
+you want to run on the same system<sup id="fnref:singularity-isolation" role="doc-noteref"><a href="#fn:singularity-isolation" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<p>After a web search, it seems <a href="https://github.com/pytorch/vision/issues/4886">like others
+</a> <a href="https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-is-not-compatible-with-the-current-pytorch-installation/123499">have
+had</a>
+<a href="https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949">similar
+issues</a>,
+although I tried all the approaches listed there and none of them worked.</p>
+
+<p>My current hypotheses are:</p>
+
+<ul>
+  <li>
+    <p>it’s a weird interaction between the system-level CUDA drivers and the stuff
+in the singularity container (which was an official NVIDIA torch base image,
+and I <em>thought</em> torch was supposed to download and install the right drivers
+automagically)</p>
+  </li>
+  <li>
+    <p>the torch version (v1.7) used in the script is a couple of years old, and
+doesn’t support my newer GPUs (I’m almost certain that’s not the case, because
+3090s are explicitly mentioned in the README)</p>
+  </li>
+</ul>
+
+<p>I will return and get to the bottom of things ASAP, but right now this isn’t on
+the critical path for me so I’ll have to park it. This blog post is really just
+me opening a ticket for myself to return to at a later date. I share it so
+that you, dear reader, can also benefit from my mistakes (and if you know how to
+solve the issue the do <a href="mailto:ben.swift@anu.edu.au">drop me a line</a>.</p>
+
+<h2 id="other-open-questions">Other open questions</h2>
 
 <p>I really was just “hacking it until it worked” during this process, so I have a
 few open questions.</p>
@@ -287,6 +380,15 @@ I’ve has problems with regarding Docker + GPUs in the past, although that was
 a couple of years ago and things might be better now.</p>
   </li>
 </ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:singularity-isolation" role="doc-endnote">
+
+      <p>I had hoped that Singularity might help with the “isolation” part <em>ii</em> of
+this, but I’m not sure I understand it well enough yet to know how to do it. <a href="#fnref:singularity-isolation" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </article>
 
@@ -336,8 +438,8 @@ a couple of years ago and things might be better now.</p>
 
   <!-- open source humblebrag -->
   <p>
-	site revision <code>25ffec001</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/25ffec001/_posts/2022-02-01-running-an-ai-neural-style-transfer-model-under-singularity.md">source</a>,
+	site revision <code>897ec3f14</code> (see
+	<a href="https://github.com/benswift/benswift.github.io/blob/897ec3f14/_posts/2022-02-01-running-an-ai-neural-style-transfer-model-under-singularity.md">source</a>,
 	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2022-02-01-running-an-ai-neural-style-transfer-model-under-singularity.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
