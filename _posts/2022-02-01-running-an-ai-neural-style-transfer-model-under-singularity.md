@@ -144,7 +144,7 @@ instructions in that
 ```shell
 $ singularity shell pytorch_1.7.0-cuda11.0-cudnn8-runtime.sif 
 Singularity> cd style-transfer-pytorch/
-Singularity> pip install -e .
+Singularity> pip install --user .
 ```
 
 I got a bunch of warnings about certain things not being on the `$PATH`, but it
@@ -261,24 +261,33 @@ had](https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-i
 issues](https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949),
 although I tried all the approaches listed there and none of them worked.
 
-My current hypotheses are that:
+## Using a pytorch image from NVIDIA's container registry
 
-- it's a weird interaction between the system-level CUDA drivers and the stuff
-  in the singularity container (which was an official NVIDIA torch base image,
-  and I _thought_ torch was supposed to download and install the right drivers
-  automagically)
+Changing tack a bit (after a suggestion from a colleague) I decided to try using
+a (Docker) [container image from the NVIDIA
+registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch), rather
+than the official pytorch channel on Docker Hub.
 
-- the torch version (v1.7) used in the script is a couple of years old, and
-  doesn't support my newer GPUs (I'm almost certain that's not the case, because
-  3090s are explicitly mentioned in the README)
+```shell
+$ singularity pull docker://nvcr.io/nvidia/pytorch:22.01-py3
+$ singularity shell --nv pytorch_22.01-py3.sif 
+Singularity> pip install --user .
+```
 
-I will return and get to the bottom of things ASAP, but right now this isn't on
-the critical path for me so I'll have to park it. This blog post is really just
-me opening a ticket for myself to return to at a later date. I share it so
-that you, dear reader, can also benefit from my mistakes (and if you know how to
-solve the issue the do [drop me a line](mailto:ben.swift@anu.edu.au).
+Now, let's try running the `style_trasfer` script one more time:
 
-## Other open questions
+```shell
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Using devices: cuda:0
+GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
+GPU 0 RAM: 24268 MB
+Loading model...
+Processing content image (128x85)...
+```
+
+Hooray! It works, and runs, like 10000x faster on the GPU.
+
+## Open questions
 
 I really was just "hacking it until it worked" during this process, so I have a
 few open questions.
@@ -288,13 +297,19 @@ few open questions.
   changes I make in the shell (container?) don't persist? It doesn't seem like
   that... but need to have a better mental model of how singularity images work.
 
-- I wasn't using venvs or conda or any of the things I'd usually use when
-  python-ing on my own machine, partially because of my above questions about
-  how the whole singularity shell thing actually works. Is that ok? Or should I
-  still use venvs?
+- I didn't use [venvs](https://virtualenv.pypa.io/en/latest/) or
+  [conda](https://docs.conda.io/en/latest/) or
+  [poetry](https://python-poetry.org/docs/) or any of the things I'd usually use
+  when python-ing on my own machine, partially because of my above questions
+  about how the whole singularity shell thing actually works. I just did `pip
+  install --user .` and hoped it didn't break anything else. Is that ok? Or
+  should I still use venvs in the singularity image?
 
-- How can I ensure it's using all the hardware available to it? That's something
-  I've has problems with regarding Docker + GPUs in the past, although that was
-  a couple of years ago and things might be better now.
+I will return and try and better understand these things later, but right now
+this isn't on the critical path for me so I'll have to park it. This blog post
+is really just me opening a ticket for myself to return to later. I share it so
+that you, dear reader, can also benefit from my mistakes (and if you know of
+better ways to do any of this then do [drop me a
+line](mailto:ben.swift@anu.edu.au).
 
 ## Footnotes
