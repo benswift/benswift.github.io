@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-02-04T09:39:18+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-02-04T12:45:15+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
 managed via <a href="https://sylabs.io/singularity/">SingularityCE</a>, whose homepage
 boldly asks and then forgets to answer the question: “What is SingularityCE?”</p>
 
@@ -138,7 +138,7 @@ instructions in that
 
 <pre><code class="language-shell">$ singularity shell pytorch_1.7.0-cuda11.0-cudnn8-runtime.sif 
 Singularity&gt; cd style-transfer-pytorch/
-Singularity&gt; pip install -e .
+Singularity&gt; pip install --user .
 </code></pre>
 
 <p>I got a bunch of warnings about certain things not being on the <code>$PATH</code>, but it
@@ -247,29 +247,31 @@ had</a>
 issues</a>,
 although I tried all the approaches listed there and none of them worked.</p>
 
-<p>My current hypotheses are that:</p>
+<h2 id="using-a-pytorch-image-from-nvidias-container-registry">Using a pytorch image from NVIDIA’s container registry</h2>
 
-<ul>
-  <li>
-    <p>it’s a weird interaction between the system-level CUDA drivers and the stuff
-in the singularity container (which was an official NVIDIA torch base image,
-and I <em>thought</em> torch was supposed to download and install the right drivers
-automagically)</p>
-  </li>
-  <li>
-    <p>the torch version (v1.7) used in the script is a couple of years old, and
-doesn’t support my newer GPUs (I’m almost certain that’s not the case, because
-3090s are explicitly mentioned in the README)</p>
-  </li>
-</ul>
+<p>Changing tack a bit (after a suggestion from a colleague) I decided to try using
+a (Docker) <a href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch">container image from the NVIDIA
+registry</a>, rather
+than the official pytorch channel on Docker Hub.</p>
 
-<p>I will return and get to the bottom of things ASAP, but right now this isn’t on
-the critical path for me so I’ll have to park it. This blog post is really just
-me opening a ticket for myself to return to at a later date. I share it so
-that you, dear reader, can also benefit from my mistakes (and if you know how to
-solve the issue the do <a href="mailto:ben.swift@anu.edu.au">drop me a line</a>.</p>
+<pre><code class="language-shell">$ singularity pull docker://nvcr.io/nvidia/pytorch:22.01-py3
+$ singularity shell --nv pytorch_22.01-py3.sif 
+Singularity&gt; pip install --user .
+</code></pre>
 
-<h2 id="other-open-questions">Other open questions</h2>
+<p>Now, let’s try running the <code>style_trasfer</code> script one more time:</p>
+
+<pre><code class="language-shell">Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Using devices: cuda:0
+GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
+GPU 0 RAM: 24268 MB
+Loading model...
+Processing content image (128x85)...
+</code></pre>
+
+<p>Hooray! It works, and runs, like 10000x faster on the GPU.</p>
+
+<h2 id="open-questions">Open questions</h2>
 
 <p>I really was just “hacking it until it worked” during this process, so I have a
 few open questions.</p>
@@ -282,17 +284,22 @@ changes I make in the shell (container?) don’t persist? It doesn’t seem like
 that… but need to have a better mental model of how singularity images work.</p>
   </li>
   <li>
-    <p>I wasn’t using venvs or conda or any of the things I’d usually use when
-python-ing on my own machine, partially because of my above questions about
-how the whole singularity shell thing actually works. Is that ok? Or should I
-still use venvs?</p>
-  </li>
-  <li>
-    <p>How can I ensure it’s using all the hardware available to it? That’s something
-I’ve has problems with regarding Docker + GPUs in the past, although that was
-a couple of years ago and things might be better now.</p>
+    <p>I didn’t use <a href="https://virtualenv.pypa.io/en/latest/">venvs</a> or
+<a href="https://docs.conda.io/en/latest/">conda</a> or
+<a href="https://python-poetry.org/docs/">poetry</a> or any of the things I’d usually use
+when python-ing on my own machine, partially because of my above questions
+about how the whole singularity shell thing actually works. I just did <code>pip
+install --user .</code> and hoped it didn’t break anything else. Is that ok? Or
+should I still use venvs in the singularity image?</p>
   </li>
 </ul>
+
+<p>I will return and try and better understand these things later, but right now
+this isn’t on the critical path for me so I’ll have to park it. This blog post
+is really just me opening a ticket for myself to return to later. I share it so
+that you, dear reader, can also benefit from my mistakes (and if you know of
+better ways to do any of this then do <a href="mailto:ben.swift@anu.edu.au">drop me a
+line</a>.</p>
 
 <h2 id="footnotes">Footnotes</h2>
 <div class="footnotes" role="doc-endnotes">
