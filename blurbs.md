@@ -39,6 +39,7 @@ work has been featured on the internet.
 
 ## Headshots & promo images
 
+{% include picture.html file="images/headshots/headshot-pink-shirt.jpg" alt="Ben headshot with a pink shirt and artwork in the background" credit="Joy Swift" %}
 {% include picture.html file="images/headshots/headshot-birch.jpg" alt="Ben headshot near the stairwell in the ANU Birch buidling" credit="Andrew Meares" %}
 {% include picture.html file="images/headshots/headshot-birch-wide.jpg" alt="Ben headshot (wide) near the stairwell in the ANU Birch buidling" credit="Andrew Meares" %}
 {% include picture.html file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot inside the ANU Birch building" credit="Andrew Meares" %}
