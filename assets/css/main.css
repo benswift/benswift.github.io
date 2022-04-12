@@ -251,7 +251,7 @@ footer a { color: #555; font-weight: 700; }
 
 .post-excerpt { border-top: 1px solid #be2edd; }
 
-blockquote { background-color: #e1e1e1; border-left: 10px solid #c7c7c7; padding: 1em 1em; margin: 1em 0; quotes: "“" "”" "‘" "’"; }
+blockquote { background-color: #f2f2f2; border-left: 10px solid #e1e1e1; padding: 1em 1em; margin: 1em 0; quotes: "“" "”" "‘" "’"; }
 
 blockquote:before { color: #c7c7c7; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.1em; vertical-align: -0.4em; }
 
