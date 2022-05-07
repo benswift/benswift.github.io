@@ -1,12 +1,11 @@
 ---
 title: Teaching the world to Cybernetics
 tags: cybernetics
-hidden: true
 ---
 
 If you're the sort of person who lurks on people's LinkedIn accounts, you may
-have noticed that I've recently become the [lead of the Educational
-Experiences](https://cybernetics.anu.edu.au/people/ben-swift/) at the School of
+have noticed that I've recently become the [lead of the _Experiences_
+Team](https://cybernetics.anu.edu.au/people/ben-swift/) at the School of
 Cybernetics. My team's mission is:
 
 > to take Cybernetics to the world by providing encounters with cybernetics to
@@ -19,14 +18,13 @@ Cybernetics. My team's mission is:
 
 That might strike you as a pretty broad mission, for a couple of reasons:
 
-- what counts as an educational experience (or encounter)? couldn't that be anything?
+- what counts as an _encounter_? couldn't that be anything?
 - the world is a big and diverse place
 
-...and you'd be right. If you follow the
-rest of the communications from the School of Cybernetics you'll know that we're
-not shy about painting a grand, totalising vision of how the world can/might
-work and what part cybernetics has to play in it. And while I'm a bit daunted by
-the task, I'm also pretty excited.
+...and you'd be right. If you follow the rest of the communications from the
+School of Cybernetics you'll know that we're not shy about painting a grand,
+totalising vision of how the world can/might work and what part cybernetics has
+to play in it. And while I'm a bit daunted by the task, I'm also pretty excited.
 
 Here are some of the things my team will be working on over the next weeks/months/years:
 
