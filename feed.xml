@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-05-07T10:14:46+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Scar trees &amp;amp; living typefaces</title><link href="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/" rel="alternate" type="text/html" title="Scar trees &amp;amp; living typefaces" /><published>2022-05-02T00:00:00+10:00</published><updated>2022-05-02T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces</id><content type="html" xml:base="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/"><![CDATA[<p><img src="/assets/images/posts/20190103_H1P3978_scar_tree.jpg" alt="Yellow box tree on ANU campus. 📸 ANU Photography, 2016" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-05-07T10:17:04+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Scar trees &amp;amp; living typefaces</title><link href="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/" rel="alternate" type="text/html" title="Scar trees &amp;amp; living typefaces" /><published>2022-05-02T00:00:00+10:00</published><updated>2022-05-02T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces</id><content type="html" xml:base="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/"><![CDATA[<p><img src="/assets/images/posts/20190103_H1P3978_scar_tree.jpg" alt="Yellow box tree on ANU campus. 📸 ANU Photography, 2016" /></p>
 
 <p>I wrote something up for the ANU School of Cybernetics blog (where <a href="https://cybernetics.anu.edu.au/people/ben-swift/">I
 work</a>) which has the same
 energy as some of the stuff I post on here. If you’re interested, <a href="https://cybernetics.anu.edu.au/2022/05/02/scar-trees-living-typefaces/">go check it
 out</a> ☺</p>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><category term="web" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Teaching the world to Cybernetics</title><link href="https://benswift.me/blog/2022/03/07/teaching-the-world-to-cybernetics/" rel="alternate" type="text/html" title="Teaching the world to Cybernetics" /><published>2022-03-07T00:00:00+11:00</published><updated>2022-03-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/03/07/teaching-the-world-to-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2022/03/07/teaching-the-world-to-cybernetics/"><![CDATA[<p>If you’re the sort of person who lurks on people’s LinkedIn accounts, you may
-have noticed that I’ve recently become the <a href="https://cybernetics.anu.edu.au/people/ben-swift/">lead of the Educational
-Experiences</a> at the School of
+have noticed that I’ve recently become the <a href="https://cybernetics.anu.edu.au/people/ben-swift/">lead of the <em>Experiences</em>
+Team</a> at the School of
 Cybernetics. My team’s mission is:</p>
 
 <blockquote>
@@ -21,15 +21,14 @@ programs.</p>
 <p>That might strike you as a pretty broad mission, for a couple of reasons:</p>
 
 <ul>
-  <li>what counts as an educational experience (or encounter)? couldn’t that be anything?</li>
+  <li>what counts as an <em>encounter</em>? couldn’t that be anything?</li>
   <li>the world is a big and diverse place</li>
 </ul>
 
-<p>…and you’d be right. If you follow the
-rest of the communications from the School of Cybernetics you’ll know that we’re
-not shy about painting a grand, totalising vision of how the world can/might
-work and what part cybernetics has to play in it. And while I’m a bit daunted by
-the task, I’m also pretty excited.</p>
+<p>…and you’d be right. If you follow the rest of the communications from the
+School of Cybernetics you’ll know that we’re not shy about painting a grand,
+totalising vision of how the world can/might work and what part cybernetics has
+to play in it. And while I’m a bit daunted by the task, I’m also pretty excited.</p>
 
 <p>Here are some of the things my team will be working on over the next weeks/months/years:</p>
 
@@ -68,7 +67,7 @@ effective as part of a multimedia presentation strategy, but the
 pitfalls</a>. <a href="#fnref:ppt" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[If you’re the sort of person who lurks on people’s LinkedIn accounts, you may have noticed that I’ve recently become the lead of the Educational Experiences at the School of Cybernetics. My team’s mission is:]]></summary></entry><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
+</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[If you’re the sort of person who lurks on people’s LinkedIn accounts, you may have noticed that I’ve recently become the lead of the Experiences Team at the School of Cybernetics. My team’s mission is:]]></summary></entry><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
 managed via <a href="https://sylabs.io/singularity/">SingularityCE</a>, whose homepage
 boldly asks and then forgets to answer the question: “What is SingularityCE?”</p>
 
