@@ -9,7 +9,7 @@ summary: >-
 
 <div class="hl-para" markdown="1">
 
-Here in the [School of Cybernetics](https://3ainstitute.org) we are building our
+Here in the [School of Cybernetics](https://cybernetics.anu.edu.au/) we are building our
 capability in cybernetics&mdash;its histories and possibilities&mdash;and
 working out how each of us will contribute to the new cybernetics for the 21st
 Century.

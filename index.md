@@ -13,7 +13,7 @@ the core development team for the
 [Extempore](https://github.com/digego/extempore) livecoding environment.
 
 I'm an Educational Experience Designer (Senior Lecturer) in the [School of
-Cybernetics](https://3ainstitute.org) at the [Australian National
+Cybernetics](https://cybernetics.anu.edu.au) at the [Australian National
 University](https://anu.edu.au/) in Canberra, Australia, where I lead the [c/c/c
 (code/creativity/culture)
 studio](https://cs.anu.edu.au/code-creativity-culture/) (home of the [ANU Laptop

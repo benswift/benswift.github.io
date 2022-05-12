@@ -4,7 +4,7 @@ tags: teaching research cybernetics
 ---
 
 Some job news---I've just accepted a position in the new [School of
-Cybernetics](https://3ainstitute.org) in the ANU College of Engineering
+Cybernetics](https://cybernetics.anu.edu.au/) in the ANU College of Engineering
 and Computer Science (CECS). I'll finish out my teaching this semester in the
 [School of Computing](https://cs.anu.edu.au) then I'll make the move in July.
 For those not familiar with the ANU org-chart or acronymicon, there are multiple

@@ -2,7 +2,7 @@
 event: SoCy music festival
 title: Positive feedback loops
 subtitle: Supporting a post-covid recovery for live music...<br /><em>tech is not the (whole) answer</em>
-author: <a href="https://3ainstitute.org">ANU School of Cybernetics</a>
+author: <a href="https://cybernetics.anu.edu.au/">ANU School of Cybernetics</a>
 date: "2021-03-28"
 permalink: /talks/positive-feedback-loops-panel/
 summary: >-
