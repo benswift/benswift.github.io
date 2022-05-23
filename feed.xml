@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-05-23T16:19:00+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Scar trees &amp;amp; living typefaces</title><link href="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/" rel="alternate" type="text/html" title="Scar trees &amp;amp; living typefaces" /><published>2022-05-02T00:00:00+10:00</published><updated>2022-05-02T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces</id><content type="html" xml:base="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/"><![CDATA[<p><img src="/assets/images/posts/20190103_H1P3978_scar_tree.jpg" alt="Yellow box tree on ANU campus. 📸 ANU Photography, 2016" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-05-23T17:13:53+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Pulling apart Zoom attendance csv dumps in tidy R</title><link href="https://benswift.me/blog/2022/05/23/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r/" rel="alternate" type="text/html" title="Pulling apart Zoom attendance csv dumps in tidy R" /><published>2022-05-23T00:00:00+10:00</published><updated>2022-05-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/05/23/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r</id><content type="html" xml:base="https://benswift.me/blog/2022/05/23/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r/"><![CDATA[<p>My team ran some Zoom training last week and today I needed to figure out who
+actually attended across all the days, and for how long.</p>
+
+<p>Zoom can give you a csv dump of all attendees but doesn’t provide the
+aggregations I was after, so I hacked up a little script (in <a href="https://www.tidyverse.org">tidy
+R</a>) to do it. If you ever want to do something
+similar, feel free to use it (<a href="https://mit-license.org">MIT Licence</a>).</p>
+
+<pre><code class="language-R">read_zoom_attendance_csv = function(filename){
+  read_csv(filename, show_col_types = FALSE) %&gt;%
+    # I only needed the date, not the actual start time, so I didn't bother parsing
+    # the full datetime + timezone string that Zoom gives
+    mutate(date = parse_date(str_sub(`Join Time`, end = 10), format = "%m/%d/%Y")) %&gt;%
+    # this isn't necessary, but I like shorter column names
+    rename(name = `Name (Original Name)`, email = `User Email`, duration = `Duration (Minutes)` ) %&gt;%
+    # I'm only intrested in these columns
+    select(name, email, date, duration) %&gt;%
+    # this isn't necessary, but handy if individuals have signed in with
+    # slightly different names on different days (requires eyeballing the data)
+    mutate(name = recode(name,
+                         "JS" = "Joanna Smith",
+                         "Louise" = "Louise Jones"
+}
+</code></pre>
+
+<p>Then you can read the Zoom csv file like so:</p>
+
+<pre><code class="language-R">df = read_zoom_attendance_csv("zoom-call.csv")
+</code></pre>
+
+<p>And to visualise in <a href="https://ggplot2.tidyverse.org">ggplot2</a> (which was my
+reason for using R in the first place) you could try something like:</p>
+
+<pre><code class="language-R">df %&gt;%
+  group_by(name, date) %&gt;%
+  # this was the key summarisation I was after - total time 
+  # in-call across multiple connects/re-connects
+  summarise(duration = sum(duration)) %&gt;%
+  ungroup() %&gt;%
+  ggplot(aes(name, duration)) +
+  geom_col() +
+  coord_flip() +
+  facet_wrap(~date, nrow = 1) +
+  labs(
+    title = "Zoom call attendance",
+    x = "participant name",
+    y = "duration on the call (minutes)"
+  )
+</code></pre>
+
+<p>Enjoy!</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[My team ran some Zoom training last week and today I needed to figure out who actually attended across all the days, and for how long.]]></summary></entry><entry><title type="html">Scar trees &amp;amp; living typefaces</title><link href="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/" rel="alternate" type="text/html" title="Scar trees &amp;amp; living typefaces" /><published>2022-05-02T00:00:00+10:00</published><updated>2022-05-02T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces</id><content type="html" xml:base="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/"><![CDATA[<p><img src="/assets/images/posts/20190103_H1P3978_scar_tree.jpg" alt="Yellow box tree on ANU campus. 📸 ANU Photography, 2016" /></p>
 
 <p>I wrote something up for the ANU School of Cybernetics blog (where <a href="https://cybernetics.anu.edu.au/people/ben-swift/">I
 work</a>) which has the same
@@ -1242,25 +1292,4 @@ The new School of Cybernetics is going to be a wildly collaborative place, and I
 part of a multi-talented whole. <a href="#fnref:my" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="cybernetics" /><summary type="html"><![CDATA[Some job news—I’ve just accepted a position in the new School of Cybernetics in the ANU College of Engineering and Computer Science (CECS). I’ll finish out my teaching this semester in the School of Computing then I’ll make the move in July. For those not familiar with the ANU org-chart or acronymicon, there are multiple Schools in each College (so I’m moving Schools but staying within the same College).]]></summary></entry><entry><title type="html">LENS’21 final gig 2pm June 6 @ sideway</title><link href="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/" rel="alternate" type="text/html" title="LENS’21 final gig 2pm June 6 @ sideway" /><published>2021-05-06T00:00:00+10:00</published><updated>2021-05-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway</id><content type="html" xml:base="https://benswift.me/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway/"><![CDATA[<picture style="position: relative;">
-  <img alt="LENS '21 final gig poster" src="/assets/images/posts/lens2021-final-gig-poster.jpg" />
-
-  
-</picture>
-
-<p>If you’re a fan of <em>LENS</em>, the ANU Laptop Ensemble, then you’re welcome to come
-to the S1 2021 end-of-semester gig. Here are the details</p>
-
-<ul>
-  <li><strong>Date</strong>: Sunday June 6</li>
-  <li><strong>Time</strong>: Doors at 2pm, warm-up act (me) to start at 2:30pm, LENS members on from 3pm, finish at 6pm</li>
-  <li><strong>Venue</strong>: <a href="https://sidewaybc.com">sideway music bar</a></li>
-</ul>
-
-<p>More details (including a full performer schedule) to come, but mark it in your
-diaries. There’s also a <a href="https://www.facebook.com/events/831223320837700">FB
-event</a> if that’s your jam.</p>
-
-<p>If you want to get psyched, have a look at what the LENS ‘21 cohort have been up
-to with their <a href="https://www.youtube.com/watch?v=mcVQ4-5YvlE&amp;list=PLKm3iGh1D7Mvm9byMk4mP40xVxYAbSUIn">weekly Audiovisual Diary submissions on
-YouTube</a>.</p>]]></content><author><name>Ben Swift</name></author><category term="lens" /><category term="gigs" /><category term="livecoding" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="research" /><category term="cybernetics" /><summary type="html"><![CDATA[Some job news—I’ve just accepted a position in the new School of Cybernetics in the ANU College of Engineering and Computer Science (CECS). I’ll finish out my teaching this semester in the School of Computing then I’ll make the move in July. For those not familiar with the ANU org-chart or acronymicon, there are multiple Schools in each College (so I’m moving Schools but staying within the same College).]]></summary></entry></feed>
