@@ -200,7 +200,7 @@ I have also written and delivered the following courses:
   Conference_](http://acmc2021.art)
 
 - **2019--** Vice President, [_Australasian Computer Music
-  Society_](https://computermusic.org.au/committee/)
+  Association_](https://computermusic.org.au/committee/)
 
 - **2017--** ANU School of Computing representative, [_Australian Council of
   Deans of ICT Learning and Teaching
