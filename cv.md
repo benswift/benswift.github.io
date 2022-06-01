@@ -59,10 +59,10 @@ hidden: true
 
 ### Appointments
 
-- **2022--** Cybernetic Experiences Lead (Senior Lecturer), _ANU School of
+- **2022--** Educational Experiences Lead (Senior Lecturer), _ANU School of
   Cybernetics_
 
-- **2021--2022** Educational Experience Designer/Senior Lecturer, _ANU School of
+- **2021--2022** Educational Experiences Designer/Senior Lecturer, _ANU School of
   Cybernetics_
 
 - **2018--2021** Senior Lecturer, _ANU School of Computing_
