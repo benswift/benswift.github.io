@@ -35,14 +35,13 @@ Computer Music Association](https://computermusic.org.au) (ACMA).
 {% if fp %}I am{% else %}Ben is{% endif %} a
 [maker](https://github.com/benswift) of open-source software tools for music,
 creative code, data analysis/visualisation, and more. {% if fp %}I'm{% else
-%}He's{% endif %} one half of the core development team for the
-[Extempore](https://github.com/digego/extempore) programming environment <a
+%}He's{% endif %} one half of the core development team for the [Extempore
+programming environment](https://github.com/digego/extempore) <a
 style="vertical-align: sub;"
 href="https://github.com/digego/extempore/stargazers"><img style="width:unset;"
 alt="GitHub stars"
-src="https://img.shields.io/github/stars/digego/extempore"></a>, the
-state-of-the-art in livecoding languages. Extempore's users are a worldwide
-community of programmers, artists, musicians, and data visualisation
-practitioners. {% if fp %}I have{% else %}He has{% endif %} more than 10 years'
-experience as an OSS community manager, technical writer, software engineer and
-creative code outreach ambassador.
+src="https://img.shields.io/github/stars/digego/extempore"></a> for musical
+livecoding. Extempore's users are a worldwide community of programmers, artists,
+musicians, and data visualisation practitioners. {% if fp %}I have{% else %}He
+has{% endif %} more than 10 years' experience as an OSS community manager,
+technical writer, software engineer and creative code outreach ambassador.
