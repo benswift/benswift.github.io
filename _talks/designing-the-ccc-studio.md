@@ -91,7 +91,7 @@ started in 2018
 
 "boutique" class: less than 20 students total
 
-<https://cs.anu.edu.au/courses/comp2710-lens/>
+<https://comp.anu.edu.au/courses/laptop-ensemble/>
 
 {% include slides/background-image.html image="images/talks/designing-the-ccc-studio/ken-okum-_FNDUoE1emg-unsplash.jpg" heading="this year in LENS" %}
 

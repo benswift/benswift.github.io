@@ -5,7 +5,7 @@ title: 'Command/Control: giving OS aware keybinding hints'
 As someone who writes a lot of [web-based](https://extemporelang.github.io)
 [documentation for](https://cs.anu.edu.au/courses/comp1720/)
 [using](https://cs.anu.edu.au/courses/comp2300/)
-[computers](https://cs.anu.edu.au/courses/comp2710-lens/), it's often useful to
+[computers](https://comp.anu.edu.au/courses/laptop-ensemble/), it's often useful to
 give people hints about keybindings which could make their lives easier.
 However, this is tricky when it comes to the control key/command key keybinding
 convention on macOS vs Windows/Linux.

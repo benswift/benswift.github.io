@@ -4,8 +4,8 @@ tags: lens teaching
 ---
 
 Well, as with all ANU courses, we're taking the [Laptop
-Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/)
-([COMP2710/MUSI2205](https://cs.anu.edu.au/courses/comp2710-lens/resources/faq/#whats-the-deal-with-the-dual-course-codes-comp2710-and-musi2205))
+Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/)
+([COMP2710/MUSI2205](https://comp.anu.edu.au/courses/laptop-ensemble/resources/faq/#whats-the-deal-with-the-dual-course-codes-comp2710-and-musi2205))
 course online.
 
 In some ways this will be easy (after all, it has _Laptop_ in the course title),

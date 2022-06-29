@@ -17,7 +17,7 @@ Cybernetics](https://cybernetics.anu.edu.au) at the [Australian National
 University](https://anu.edu.au/) in Canberra, Australia, where I lead the [c/c/c
 (code/creativity/culture)
 studio](https://cs.anu.edu.au/code-creativity-culture/) (home of the [ANU Laptop
-Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/)). The **c/c/c studio**
+Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/)). The **c/c/c studio**
 is a teaching & research group which exists to open up spaces for discussion
 about the way that `code` is shaping flows of information/culture/humanity in
 today's (and tomorrow's) world.

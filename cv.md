@@ -112,7 +112,7 @@ ANU School of Computing (follow links to the curriculum, available under a
 Creative Commons
 [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) licence):
 
-- [COMP2710: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/) is a
+- [COMP2710: Laptop Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/) is a
   course open to students in computer science, music, art, and elsewhere at ANU
   (the course is co-taught with MUSI2205 in the _ANU School of Music_). In this
   course students learn fundamental skills of music computing, including digital

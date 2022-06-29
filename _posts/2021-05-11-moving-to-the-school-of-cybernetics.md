@@ -69,7 +69,7 @@ on how to prepare for that process.
 To any **prospective/future students** (i.e. those who were hoping to take [one
 of my classes]({% link teaching.md %}) in the future) the news is a bit more
 mixed. I'll still be involved with the [Laptop
-Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/), and the current plan is
+Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/), and the current plan is
 that other courses I've designed & taught (e.g.
 [COMP2300](https://cs.anu.edu.au/courses/comp2300/),
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/)) will still continue as

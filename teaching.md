@@ -12,7 +12,7 @@ really enjoy it, too :)
 
 I currently teach the following courses:
 
-- [COMP2710/6470: Laptop Ensemble](https://cs.anu.edu.au/courses/comp2710-lens/)
+- [COMP2710/6470: Laptop Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/)
   in **Semester 1 (Feb--Jun)** is a course open to students in computer science,
   music, art, and elsewhere at ANU (the course is co-taught with MUSI2205 in the
   _ANU School of Music_). In this course students learn fundamental skills of
