@@ -12,15 +12,16 @@ link livecoding.md %}) and [maker](https://github.com/benswift), and one half of
 the core development team for the
 [Extempore](https://github.com/digego/extempore) livecoding environment.
 
-I'm an Educational Experience Designer (Senior Lecturer) in the [School of
-Cybernetics](https://cybernetics.anu.edu.au) at the [Australian National
-University](https://anu.edu.au/) in Canberra, Australia, where I lead the [c/c/c
-(code/creativity/culture)
+I'm the [Educational Experiences team
+lead](https://cybernetics.anu.edu.au/people/ben-swift/) (Senior Lecturer) in the
+[School of Cybernetics](https://cybernetics.anu.edu.au) at the [Australian
+National University](https://anu.edu.au/) in Canberra, Australia. I'm also the
+director of the the [c/c/c (code/creativity/culture)
 studio](https://cs.anu.edu.au/code-creativity-culture/) (home of the [ANU Laptop
-Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/)). The **c/c/c studio**
-is a teaching & research group which exists to open up spaces for discussion
-about the way that `code` is shaping flows of information/culture/humanity in
-today's (and tomorrow's) world.
+Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/)). The **c/c/c
+studio** is a teaching & research group which exists to open up spaces for
+discussion about the way that `code` is shaping flows of
+information/culture/humanity in today's (and tomorrow's) world.
 
 I care a lot about making computing a welcoming, interesting and creatively
 satisfying place, especially for people who don't fit the traditional picture of
