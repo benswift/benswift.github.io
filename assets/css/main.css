@@ -297,8 +297,6 @@ table td { vertical-align: top; }
 
 svg.icon { width: 1em; height: 1em; vertical-align: -0.125em; fill: currentColor; }
 
-.canonical-web-box { display: none; }
-
-@media print { header, footer { display: none; } #toc h2 { text-align: left; font-weight: 900; color: #333; background-color: unset; } .canonical-web-box { display: initial; font-style: italic; color: #666666; } }
+@media print { header, footer { display: none; } #toc h2 { text-align: left; font-weight: 900; color: #333; background-color: unset; } }
 
 /*# sourceMappingURL=main.css.map */
