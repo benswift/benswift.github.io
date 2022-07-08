@@ -403,9 +403,6 @@ svg.icon {
 }
 
 // printing
-.canonical-web-box {
-    display: none;
-}
 
 @media print {
     header,footer {
@@ -416,10 +413,5 @@ svg.icon {
         font-weight: 900;
         color: $text-color;
         background-color: unset;
-    }
-    .canonical-web-box {
-        display: initial;
-        font-style: italic;
-        color: lighten($text-color, 20%);
     }
 }
