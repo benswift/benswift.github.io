@@ -106,7 +106,7 @@
 
 .reveal .slides section h2 { font-size: 1.6rem; }
 
-.reveal .slides section[data-background-image] h1, .reveal .slides section[data-background-image] h2, .reveal .slides section[data-background-image] h3, .reveal .slides section[data-background-image] blockquote, .reveal .slides section[data-background-image] p { background-color: rgba(255, 255, 255, 0.75); display: table; padding: 0.2em 0.4em; }
+.reveal .slides section[data-background-image] h1, .reveal .slides section[data-background-image] h2, .reveal .slides section[data-background-image] h3, .reveal .slides section[data-background-image] blockquote, .reveal .slides section[data-background-image] p { background-color: rgba(255, 255, 255, 0.9); display: table; padding: 0.2em 0.4em; }
 
 .reveal .slides section[data-background-image] blockquote p { background-color: unset; }
 
