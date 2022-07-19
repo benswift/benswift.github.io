@@ -5,7 +5,7 @@ subtitle: a <em>participatory</em> keynote
 date: "2022-07-22"
 permalink: /talks/wright-hall-leadership-symposium-2022/
 summary: >-
-  For some, the events of the last couple of years have reminded us of the
+  The events of the last couple of years have reminded us of the
   fragility of the stories we tell about the future, both as individuals and as
   part of broader institutions. While some of these lessons have been hard, in
   some cases seeing the "default" pictures of what's going to happen evaporate
@@ -23,6 +23,8 @@ summary: >-
   individuals and institutions.
 ---
 
+{% include slides/background-image.html image="images/talks/whls-2022/midjourney-individuals-and-institutions.png" bgsize="contain" bgcol="#000" %}
+
 {% include slides/title.html %}
 
 {% include slides/ack-country.html %}
@@ -33,53 +35,94 @@ my journey
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
 
-{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="institutionalised <strong> for sure</strong>" %}
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="institutionalised <em>for sure</em>" %}
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
 
-{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/birch-arch-drawing-02.jpg" heading="now: Educational Experiences lead at the School of Cybernetics" %}
+{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/birch-arch-drawing-02.jpg" heading="but quite an individual path" %}
+
+I'm now the _Educational Experiences_ lead at the [School of
+Cybernetics](https://cybernetics.anu.edu.au/)
+
+{% include slides/background-image.html image="images/talks/whls-2022/midjourney-individuals-and-institutions.png" bgsize="contain" bgcol="#000" %}
+
+{:.fragment}
+{% include slides/image-credit.html artist="me, via midjourney" title="Individuals and Institutions – to be Empowered or Conformed? promo image, oil on canvas, hyperrealistic" %}
+
+{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/norbert-wiener.jpg" heading="what is cybernetics?" %}
 
 {% include slides/impact.html %}
 
-two things about cybernetics:
+\*slide missing\*
 
-- feedback
-- futures
+{% include slides/background-image.html image="images/talks/whls-2022/igor-son-FV_PxCqgtwc-unsplash.jpg" heading="futures" %}
  
-{% include slides/background-image.html image="images/talks/whls-2022/feedback-loops-ted-talk-still.jpg" %}
+{% include slides/background-image.html image="images/talks/whls-2022/feedback-loops-ted-talk-still.jpg" bgsize="contain" bgcol="#000" %}
+
+{:style="position: fixed; right: 0; bottom: 0;"}
 
 see the [TED talk](https://www.youtube.com/watch?v=inVZoI1AkC8)
 
-{% include slides/impact.html %}
+{% include slides/background-image.html image="images/talks/whls-2022/igor-son-FV_PxCqgtwc-unsplash.jpg" %}
 
-futures TODO
+_futures_ is a set of practices and frameworks to help us think differently about the future
+
+because relationships (especially feedback loops) dominate the long-term
+behaviour of a system, _cybernetics_ provides a useful and distinctive lens
+through which to consider the future of the systems (individuals and
+institutions) we care about
 
 {% include slides/background-image.html image="images/talks/whls-2022/ttftf-playing-cards.jpg" heading="the thing from the future" %}
 
-{% include slides/background-image.html image="images/talks/whls-2022/travel-bits-packet.png" bgsize="contain" bgcol="#000" %}
- 
+{:.fragment}
+a _participatory_ keynote
+
 ## outline
 
-| **1:30pm** | intro                                                               |
-| **1:40pm** | **the thing from the future** (worked example)                      |
-| **1:45pm** | activity: speed futuring                                            |
-| **2:10pm** | activity: possible? preferrable?                                    |
-| **2:20pm** | discussion: pick one thing to steer towards, one to steer away from |
+| **1:30pm** | intro                                                       |
+| **1:45pm** | activity: speed futures                                     |
+| **2:10pm** | activity: possible? preferable?                             |
+| **2:20pm** | discussion: what to steer towards, what to steer away from? |
 
+{% include slides/background-image.html image="images/talks/whls-2022/chris-liverani-HUJDz6CJEaM-unsplash.jpg" heading="speed futures" %}
+
+in pairs, come up with a (post-it note sized) description of a **thing from the
+future** according to a prompt:
+
+in a **blank** future, there is a **blank** related to **blank** - what is it?
+
+{% include slides/background-image.html image="images/talks/whls-2022/travel-bits-packet.png" bgsize="contain" bgcol="#000" %}
+
+{:.fragment style="position: fixed; bottom: 0;"}
+
+_Travel Bits_ are a snack that has a chemical ingredient that triggers certain
+sensual events and effects. In this example the Italy flavour gives you the
+smells, tastes and sounds of sitting on the grand canal.
+
+{% include slides/background-image.html image="images/talks/whls-2022/towfiqu-barbhuiya-oZuBNC-6E2s-unsplash.jpg" %}
+ 
 {% include slides/impact.html %}
 
 **the thing from the future** time
 
-## wrap up
+{% include slides/background-image.html image="images/talks/whls-2022/chris-liverani-HUJDz6CJEaM-unsplash.jpg" heading="speed futures" %}
 
-thanks so much for participating
+in pairs, come up with a (post-it note sized) description of a **thing from the
+future** according to the prompt
 
-I'm keen to:
+you'll have 5 mins, then you leave the completed post-it at your station
 
-- make contacts
-- be part of a CoP around creative computing for both students and educators
+{% include slides/background-image.html image="images/talks/whls-2022/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg" heading="possible? preferable?" %}
 
-## stay in touch
+in your final pair, grab all the things from the future left at your station
+
+discuss how possible and preferable each one is, and put them on the board
+
+{% include slides/background-image.html image="images/talks/whls-2022/jed-owen-0kBqOVxSMWM-unsplash.jpg" heading="what to steer towards, what to steer away from?" %}
+
+let's see what y'all came up with
+
+{% include slides/background-image.html image="images/talks/whls-2022/sebastian-dumitru-36g19a7ivrs-unsplash.jpg" heading="stay in touch" %}
 
 <ben.swift@anu.edu.au>
 
