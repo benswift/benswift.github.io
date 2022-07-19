@@ -29,19 +29,42 @@ summary: >-
 
 {% include slides/impact.html %}
 
-can y'all keep a secret?
-
-{% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-group.jpg" %}
+my journey
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
 
+{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="institutionalised <strong> for sure</strong>" %}
+
+{% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
+
+{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/birch-arch-drawing-02.jpg" heading="now: Educational Experiences lead at the School of Cybernetics" %}
+
+{% include slides/impact.html %}
+
+two things about cybernetics:
+
+- feedback
+- futures
+ 
+{% include slides/background-image.html image="images/talks/whls-2022/feedback-loops-ted-talk-still.jpg" %}
+
+see the [TED talk](https://www.youtube.com/watch?v=inVZoI1AkC8)
+
+{% include slides/impact.html %}
+
+futures TODO
+
+{% include slides/background-image.html image="images/talks/whls-2022/ttftf-playing-cards.jpg" heading="the thing from the future" %}
+
+{% include slides/background-image.html image="images/talks/whls-2022/travel-bits-packet.png" bgsize="contain" bgcol="#000" %}
+ 
 ## outline
 
-| **1:30pm** | intro                                                                |
-| **1:40pm** | activity: TTFTF worked example                                       |
-| **1:45pm** | TTFTF speed futuring                                                 |
-| **2:10pm** | decide: possible? preferrable?                                       |
-| **2:20pm** | facilitator: pick one thing to steer towards, one to steer away from |
+| **1:30pm** | intro                                                               |
+| **1:40pm** | **the thing from the future** (worked example)                      |
+| **1:45pm** | activity: speed futuring                                            |
+| **2:10pm** | activity: possible? preferrable?                                    |
+| **2:20pm** | discussion: pick one thing to steer towards, one to steer away from |
 
 {% include slides/impact.html %}
 
