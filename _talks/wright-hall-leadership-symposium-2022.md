@@ -35,11 +35,11 @@ my journey
 
 {% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
 
-{% include slides/background-image.html image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="institutionalised <em>for sure</em>" %}
+{% include slides/background-image.html image="images/talks/whls-2022/anu-campus-aerial-view.jpg" heading="institutionalised <em>for sure</em>" %}
 
 {% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/birch-arch-drawing-02.jpg" heading="but also an individual path" %}
 
-maths UG -> computing PhD -> computing academic
+maths UG → computing PhD → computing academic
 
 I'm now the _Educational Experiences_ lead at the [School of
 Cybernetics](https://cybernetics.anu.edu.au/)
@@ -102,7 +102,7 @@ smells, tastes and sounds of sitting on the grand canal.
  
 {% include slides/impact.html %}
 
-**the thing from the future** time
+it's **the thing from the future** time
 
 {% include slides/background-image.html image="images/talks/whls-2022/jason-mitrione-RcctILJ_DVc-unsplash.jpg" heading="speed futures" %}
 
