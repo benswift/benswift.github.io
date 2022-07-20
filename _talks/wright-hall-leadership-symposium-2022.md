@@ -1,7 +1,7 @@
 ---
 event: Wright Hall Leadership Symposium '22
-title: Futures of Individuals and Institutions
-subtitle: a <em>participatory</em> keynote
+title: Futures...
+subtitle: ...of Individuals and Institutions
 date: "2022-07-22"
 permalink: /talks/wright-hall-leadership-symposium-2022/
 summary: >-
@@ -37,9 +37,9 @@ my journey
 
 {% include slides/background-image.html image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="institutionalised <em>for sure</em>" %}
 
-{% include slides/background-image.html image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" %}
+{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/birch-arch-drawing-02.jpg" heading="but also an individual path" %}
 
-{% include slides/background-image.html image="images/talks/design-guild-nsw-talk-2021/birch-arch-drawing-02.jpg" heading="but quite an individual path" %}
+maths UG -> computing PhD -> computing academic
 
 I'm now the _Educational Experiences_ lead at the [School of
 Cybernetics](https://cybernetics.anu.edu.au/)
@@ -63,14 +63,13 @@ Cybernetics](https://cybernetics.anu.edu.au/)
 
 see the [TED talk](https://www.youtube.com/watch?v=inVZoI1AkC8)
 
-{% include slides/background-image.html image="images/talks/whls-2022/igor-son-FV_PxCqgtwc-unsplash.jpg" %}
+{% include slides/background-image.html image="images/talks/whls-2022/igor-son-FV_PxCqgtwc-unsplash.jpg" center=true %}
 
-_futures_ is a set of practices and frameworks to help us think differently about the future
+the ways we think about the future affect the systems we build in the present
+(both individual and institutional) and vice versa
 
-because relationships (especially feedback loops) dominate the long-term
-behaviour of a system, _cybernetics_ provides a useful and distinctive lens
-through which to consider the future of the systems (individuals and
-institutions) we care about
+_futures_ is a set of practices and frameworks to help us think differently
+about the future
 
 {% include slides/background-image.html image="images/talks/whls-2022/ttftf-playing-cards.jpg" heading="the thing from the future" %}
 
@@ -79,17 +78,17 @@ a _participatory_ keynote
 
 ## outline
 
-| **1:30pm** | intro                                                       |
-| **1:45pm** | activity: speed futures                                     |
-| **2:10pm** | activity: possible? preferable?                             |
-| **2:20pm** | discussion: what to steer towards, what to steer away from? |
+| **1:30pm** | intro                                                |
+| **1:45pm** | activity: speed futures                              |
+| **2:10pm** | activity: possible? preferable?                      |
+| **2:20pm** | discussion: where to conform? where to be empowered? |
 
-{% include slides/background-image.html image="images/talks/whls-2022/chris-liverani-HUJDz6CJEaM-unsplash.jpg" heading="speed futures" %}
+{% include slides/background-image.html image="images/talks/whls-2022/jason-mitrione-RcctILJ_DVc-unsplash.jpg" heading="speed futures" %}
 
 in pairs, come up with a (post-it note sized) description of a **thing from the
 future** according to a prompt:
 
-in a **blank** future, there is a **blank** related to **blank** - what is it?
+in a \_\_\_\_ future, there is a \_\_\_\_ related to \_\_\_\_... what is it?
 
 {% include slides/background-image.html image="images/talks/whls-2022/travel-bits-packet.png" bgsize="contain" bgcol="#000" %}
 
@@ -105,22 +104,34 @@ smells, tastes and sounds of sitting on the grand canal.
 
 **the thing from the future** time
 
-{% include slides/background-image.html image="images/talks/whls-2022/chris-liverani-HUJDz6CJEaM-unsplash.jpg" heading="speed futures" %}
+{% include slides/background-image.html image="images/talks/whls-2022/jason-mitrione-RcctILJ_DVc-unsplash.jpg" heading="speed futures" %}
 
-in pairs, come up with a (post-it note sized) description of a **thing from the
-future** according to the prompt
+in pairs, write a post-it sized description of a **thing from the future**
+according to the prompt (one per pair)
 
 you'll have 5 mins, then you leave the completed post-it at your station
 
 {% include slides/background-image.html image="images/talks/whls-2022/rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg" heading="possible? preferable?" %}
 
-in your final pair, grab all the things from the future left at your station
+in your final pair, grab all the post-its left at your station
 
-discuss how possible and preferable each one is, and put them on the board
+discuss how possible and preferable each thing is
 
-{% include slides/background-image.html image="images/talks/whls-2022/jed-owen-0kBqOVxSMWM-unsplash.jpg" heading="what to steer towards, what to steer away from?" %}
+stick all the post-its on the main whiteboard
+
+{% include slides/background-image.html image="images/talks/whls-2022/jed-owen-0kBqOVxSMWM-unsplash.jpg" heading="where to conform? where to be empowered?" %}
 
 let's see what y'all came up with
+
+{% include slides/background-image.html image="images/talks/whls-2022/igor-son-FV_PxCqgtwc-unsplash.jpg" center=true %}
+
+the ways we think about the future affect the systems we build in the present
+(both individual and institutional) and vice versa
+
+_futures_ is a set of practices and frameworks to help us think differently
+about the future
+
+{% include slides/background-image.html image="images/talks/whls-2022/benswift_The_Future_of_of_Individuals_and_Institutions__to_be_E_d767537e-ab38-49e9-8b3e-0f772b7ed877.png" bgsize="contain" bgcol="#000" %}
 
 {% include slides/background-image.html image="images/talks/whls-2022/sebastian-dumitru-36g19a7ivrs-unsplash.jpg" heading="stay in touch" %}
 
@@ -129,5 +140,3 @@ let's see what y'all came up with
 <https://cybernetics.anu.edu.au/people/ben-swift/>
 
 <https://benswift.me>
-
-<p style="font-size: 3em; text-align: center;">👋</p>
