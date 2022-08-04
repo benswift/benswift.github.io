@@ -19,11 +19,11 @@ today's world.
 
 ## Academic (short)
 
-Ben is an interdisciplinary scholar with interests and expertise in
-computational art & music, cybernetics, AI/machine learning, data vis/data
-science and human-computer interaction. A unifying thread is the potential of
-_liveness_ (human-in-the-loop interactivity with real-time feedback) in tools
-and workflows, especially in open-ended creative tasks.
+Ben is an interdisciplinary scholar and artist-programmer with interests and
+expertise in computational art & music, cybernetics, AI/machine learning, data
+vis/data science and human-computer interaction. A unifying thread is the
+potential of _liveness_ (human-in-the-loop interactivity with real-time
+feedback) in tools and workflows, especially in open-ended creative tasks.
 
 ## Academic (long)
 
