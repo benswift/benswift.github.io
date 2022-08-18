@@ -12,14 +12,14 @@ to do that then I'd appreciate having a discussion with you about it first :)
 
 ## General audience (short)
 
-Ben is an academic, educator, artist and maker of open source tools for creative
+Dr. Ben Swift is an academic, educator, artist and maker of open source tools for creative
 computing. He's always looking for ways to talk about the way that code
 (software), creativity (especially the arts) and culture (life) intersect in
 today's world.
 
 ## Academic (short)
 
-Ben is an interdisciplinary scholar and artist-programmer with interests and
+Dr. Ben Swift is an interdisciplinary scholar and artist-programmer with interests and
 expertise in computational art & music, cybernetics, AI/machine learning, data
 vis/data science and human-computer interaction. A unifying thread is the
 potential of _liveness_ (human-in-the-loop interactivity with real-time
@@ -31,7 +31,7 @@ feedback) in tools and workflows, especially in open-ended creative tasks.
 
 ## Livecoder (short, informal)
 
-Ben Swift is a livecoder and artist-programmer, perpetually struggling to
+Dr. Ben Swift is a livecoder and artist-programmer, perpetually struggling to
 reconcile his day job in academia with his longing for free and unbridled
 artistic expression. He's one half of the core development team for the
 [Extempore](https://github.com/digego/extempore) programming environment. His

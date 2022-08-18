@@ -69,8 +69,8 @@ hidden: true
 
 - **2020** _career break---full-time carer_ (6 months)
 
-- **2020** Modelling & Visualisation Team Lead, _ANU Software Innovation
-  Institute Covid Taskforce_
+- **2020** Modelling & Visualisation Lead, _ANU Software Innovation Institute
+  Covid Taskforce_
 
 - **2019** _career break---full-time carer_ (6 months)
 
