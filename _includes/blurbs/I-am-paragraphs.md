@@ -20,10 +20,11 @@ experience (UX) design.
 
 {% if fp %}I am{% else %}Ben is{% endif %} the founder and director of the
 [code/creativity/culture (c/c/c)
-studio](https://cs.anu.edu.au/code-creativity-culture/), an interdisciplinary
-research and teaching collective which specialises in _making things_ which
-explore the way that **code** (software), **creativity** (especially the arts)
-and **culture** (life) intersect in the modern world.
+studio](https://cs.anu.edu.au/code-creativity-culture/) (home of the [ANU Laptop
+Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/)), an
+interdisciplinary research and teaching collective which specialises in _making
+things_ which explore the way that **code** (software), **creativity**
+(especially the arts) and **culture** (life) intersect in the modern world.
 
 As a [livecoding artist]({% link livecoding.md %}) {% if fp %}I have{% else
 %}Ben has{% endif %} performed at international arts festivals, including the
