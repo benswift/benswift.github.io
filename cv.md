@@ -198,6 +198,9 @@ I have also written and delivered the following courses:
 
 ### Academic {#service-academic}
 
+- **2022** Creative Computing Chair,
+  [_OzCHI_](http://www.ozchi.org/2022/organisers.html)
+
 - **2021** Organising Committee, [_Australasian Computer Music
   Conference_](http://acmc2021.art)
 
