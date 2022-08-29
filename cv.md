@@ -36,7 +36,7 @@ hidden: true
 
 <h1 class="cv-title"><span class="name">Ben Swift</span><span class="doc-title">Curriculum Vitae</span></h1>
 
-{% include canonical-web-box.md snark=true %}
+{% include canonical-web-box.md snark=false %}
 
 {% include blurbs/I-am-paragraphs.md %}
 
