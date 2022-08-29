@@ -171,7 +171,9 @@ I have also written and delivered the following courses:
 
 ### ANU {#service-anu}
 
-- **2021--** Associate Director (Research), _ANU School of Cybernetics_
+- **2022--** Associate Director (Education), _ANU School of Cybernetics_
+
+- **2021--2022** Associate Director (Research), _ANU School of Cybernetics_
 
 - **2021** Leader, _CECS Website Redesign Tiger Team_
 
