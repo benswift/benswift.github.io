@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>In-place XML tree mutation for Jekyll productivity | benswift.me</title>
+<title>Running stable diffusion in a singularity container | benswift.me</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="In-place XML tree mutation for Jekyll productivity" />
+<meta property="og:title" content="Running stable diffusion in a singularity container" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I wrote a reveal.js plugin for Jekyll so that I can make nice slides (especially for my ANU courses). Recently, though, I’ve been touching up the COMP1720 slides for 2019 and it’s getting really slow to build the website." />
-<meta property="og:description" content="I wrote a reveal.js plugin for Jekyll so that I can make nice slides (especially for my ANU courses). Recently, though, I’ve been touching up the COMP1720 slides for 2019 and it’s getting really slow to build the website." />
-<link rel="canonical" href="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/" />
-<meta property="og:url" content="https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/" />
+<meta name="description" content="singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3" />
+<meta property="og:description" content="singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3" />
+<link rel="canonical" href="https://benswift.me/blog/2022/09/02/running-stable-diffusion-in-a-singularity-container/" />
+<meta property="og:url" content="https://benswift.me/blog/2022/09/02/running-stable-diffusion-in-a-singularity-container/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-07-17T00:00:00+10:00" />
+<meta property="article:published_time" content="2022-09-02T20:50:00+10:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="In-place XML tree mutation for Jekyll productivity" />
+<meta property="twitter:title" content="Running stable diffusion in a singularity container" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2019-07-17T00:00:00+10:00","datePublished":"2019-07-17T00:00:00+10:00","description":"I wrote a reveal.js plugin for Jekyll so that I can make nice slides (especially for my ANU courses). Recently, though, I’ve been touching up the COMP1720 slides for 2019 and it’s getting really slow to build the website.","headline":"In-place XML tree mutation for Jekyll productivity","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/"},"url":"https://benswift.me/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2022-09-02T20:50:00+10:00","datePublished":"2022-09-02T20:50:00+10:00","description":"singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3","headline":"Running stable diffusion in a singularity container","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2022/09/02/running-stable-diffusion-in-a-singularity-container/"},"url":"https://benswift.me/blog/2022/09/02/running-stable-diffusion-in-a-singularity-container/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -69,228 +69,28 @@
 
 	  <main aria-label="Content">
 		<article>
-  <p class="post-date">17 Jul '19</p>
-  <h1>In-place XML tree mutation for Jekyll productivity</h1>
+  <p class="post-date">02 Sep '22</p>
+  <h1>Running stable diffusion in a singularity container</h1>
 <p class="post-tag-container">
-  
-  <a class="post-tag" href='/blog/tag/web'>
-	web
-  </a>
   
 </p>
 
 
-  <p>I wrote a <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">reveal.js</a> plugin for Jekyll
-so that I can make nice slides (especially for my
-<a href="https://cs.anu.edu.au/courses/comp1720/lectures/">ANU</a>
-<a href="https://cs.anu.edu.au/courses/comp2300/lectures/">courses</a>). Recently, though,
-I’ve been touching up the COMP1720 slides for 2019 and it’s getting <em>really
-slow</em> to build the website.</p>
+  <p>singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3</p>
 
-<p>I turned to Jekyll’s built-in profiling command to see where the problem is.
-Here’s the output of <code>jekyll build --profile</code> on this website, which (currently)
-builds in <strong>7.2 seconds</strong> on my machine.</p>
+<p>git clone https://github.com/lstein/stable-diffusion.git</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Filename</th>
-      <th>Count</th>
-      <th>Bytes</th>
-      <th>Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_layouts/reveal.html</td>
-      <td>9</td>
-      <td>104.60K</td>
-      <td>4.102</td>
-    </tr>
-    <tr>
-      <td>_layouts/default.html</td>
-      <td>81</td>
-      <td>729.15K</td>
-      <td>0.809</td>
-    </tr>
-    <tr>
-      <td>_includes/head.html</td>
-      <td>90</td>
-      <td>266.90K</td>
-      <td>0.702</td>
-    </tr>
-    <tr>
-      <td>research.md</td>
-      <td>1</td>
-      <td>16.40K</td>
-      <td>0.196</td>
-    </tr>
-    <tr>
-      <td>_includes/hljs.html</td>
-      <td>90</td>
-      <td>29.44K</td>
-      <td>0.192</td>
-    </tr>
-    <tr>
-      <td>_includes/slides/background-image.html</td>
-      <td>9</td>
-      <td>31.94K</td>
-      <td>0.154</td>
-    </tr>
-    <tr>
-      <td>_layouts/paginated.html</td>
-      <td>21</td>
-      <td>70.29K</td>
-      <td>0.078</td>
-    </tr>
-    <tr>
-      <td>_talks/u3a-world-since-google.md</td>
-      <td>1</td>
-      <td>14.49K</td>
-      <td>0.058</td>
-    </tr>
-    <tr>
-      <td>_includes/header.html</td>
-      <td>81</td>
-      <td>85.88K</td>
-      <td>0.042</td>
-    </tr>
-    <tr>
-      <td>_talks/ltc-stem-camp.md</td>
-      <td>1</td>
-      <td>13.38K</td>
-      <td>0.040</td>
-    </tr>
-    <tr>
-      <td>feed.xml</td>
-      <td>1</td>
-      <td>105.55K</td>
-      <td>0.038</td>
-    </tr>
-    <tr>
-      <td>…more inconsequential stuff follows…</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+<p>SINGULARITYENV_CUDA_VISIBLE_DEVICES=0 singularity shell –nv ../sifs/pytorch_22.08-py3.sif</p>
 
-<p>Clearly, the <code>reveal.html</code> layout is the problem, taking 4.1s (more than half
-the total build time). I suspect that this is because my <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">reveal
-plugin</a> does a bunch of
-copying of (Nokogiri) XML nodes, because I wasn’t worrying about performance
-when I wrote it.</p>
+<p>source /opt/conda/etc/profile.d/conda.sh &amp;&amp; conda activate ldm</p>
 
-<h3 id="re-parent-all-the-nodes">Re-parent all the nodes!</h3>
+<p>ffmpeg -framerate 30 -pattern_type glob -i ‘*.png’ -c:v libx264 -pix_fmt yuv420p genesis.mp4</p>
 
-<p>Looking at the <a href="https://nokogiri.org/rdoc/Nokogiri/XML/Node">Nokogiri API</a> and
-the <code>revealify.rb</code> plugin code, there are a bunch of places where instead of
-duplicating &amp; copying nodes, I can just re-parent them into the right places.
-I’m a big immutability fan usually, which is why I built the plugin based on
-copying originally, but with a bit of careful re-parenting the <code>revealify.rb</code>
-plugin now looks like
-<a href="https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb">this</a>
-(see the <a href="/blog/2018/09/28/another-reveal.js-plugin-for-jekyll/">linked post above</a> to see what it
-looked like before).</p>
+<p>ideas for actually packaging this stuff…</p>
 
-<p>And the result? Total build time is down to <strong>2.8 seconds</strong>. Admittedly that was
-because it was <em>really inefficient</em> before, but I’ll take a 2.5x speedup anyday
-😊. Here’s the relevant profiler output with the updated plugin:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Filename</th>
-      <th>Count</th>
-      <th>Bytes</th>
-      <th>Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>_layouts/default.html</td>
-      <td>82</td>
-      <td>741.77K</td>
-      <td>0.873</td>
-    </tr>
-    <tr>
-      <td>_includes/head.html</td>
-      <td>91</td>
-      <td>269.82K</td>
-      <td>0.780</td>
-    </tr>
-    <tr>
-      <td>research.md</td>
-      <td>1</td>
-      <td>16.40K</td>
-      <td>0.198</td>
-    </tr>
-    <tr>
-      <td>_layouts/reveal.html</td>
-      <td>9</td>
-      <td>105.65K</td>
-      <td>0.182</td>
-    </tr>
-    <tr>
-      <td>_includes/hljs.html</td>
-      <td>91</td>
-      <td>29.77K</td>
-      <td>0.172</td>
-    </tr>
-    <tr>
-      <td>_includes/slides/background-image.html</td>
-      <td>9</td>
-      <td>31.94K</td>
-      <td>0.151</td>
-    </tr>
-    <tr>
-      <td>_layouts/paginated.html</td>
-      <td>21</td>
-      <td>70.55K</td>
-      <td>0.101</td>
-    </tr>
-    <tr>
-      <td>_talks/u3a-world-since-google.md</td>
-      <td>1</td>
-      <td>14.50K</td>
-      <td>0.058</td>
-    </tr>
-    <tr>
-      <td>_includes/header.html</td>
-      <td>82</td>
-      <td>86.94K</td>
-      <td>0.045</td>
-    </tr>
-    <tr>
-      <td>_talks/ltc-stem-camp.md</td>
-      <td>1</td>
-      <td>13.39K</td>
-      <td>0.041</td>
-    </tr>
-    <tr>
-      <td>feed.xml</td>
-      <td>1</td>
-      <td>112.62K</td>
-      <td>0.029</td>
-    </tr>
-    <tr>
-      <td>…more inconsequential stuff follows…</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Wow, the <code>reveal.html</code> layout has gone from 4.1s to 0.2s, a <strong>20x speedup</strong>!</p>
-
-<p>So I guess the moral of the story is that profiling is important, and that
-avoiding copies and writing filthy mutable code is helpful as long as you’re
-careful.</p>
-
-<p>Now that I’ve done procrastinating with this stuff, I can get back to writing my
-slides for the upcoming semester.</p>
+<ul>
+  <li>https://stackoverflow.com/a/66598345</li>
+</ul>
 
 </article>
 
@@ -340,8 +140,8 @@ slides for the upcoming semester.</p>
   <!-- open source humblebrag -->
   <p>
 	site revision <code>1a751a43e</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/1a751a43e/_posts/2019-07-17-in-place-xml-tree-mutation-for-jekyll-productivity.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-07-17-in-place-xml-tree-mutation-for-jekyll-productivity.md">page history</a>
+	<a href="https://github.com/benswift/benswift.github.io/blob/1a751a43e/_posts/2022-09-02-running-stable-diffusion-in-a-singularity-container.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2022-09-02-running-stable-diffusion-in-a-singularity-container.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
