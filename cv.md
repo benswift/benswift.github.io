@@ -231,7 +231,8 @@ I have served as a grant and paper reviewer for
 Fund](https://www.fwf.ac.at/en/), [CMJ](http://computermusicjournal.org),
 [Leonardo](https://www.mitpressjournals.org/loi/leon),
 [ICSE](http://www.icse-conferences.org) and
-[VL/HCC](https://conferences.computer.org/VLHCC/).
+[VL/HCC](https://conferences.computer.org/VLHCC/) and [SIGGRAPH
+Asia](https://www.siggraph.org/siggraph-events/conferences/).
 
 ### Industry {#engagement-industry}
 
