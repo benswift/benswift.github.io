@@ -53,6 +53,8 @@ cybernetic futures
 we primarily run short (2h or less) workshops, sometimes as a one-off, sometimes
 with some followup
 
+heavy use of scenarios
+
 two example activities which link back to the two key takeaways: **stories**, and **relationships**
 
 {% include slides/background-image.html image="images/talks/whls-2022/ttftf-playing-cards.jpg" heading="stories: the thing from the future" %}
