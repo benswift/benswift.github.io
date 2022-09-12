@@ -1,5 +1,5 @@
 ---
-title: AI systems in Higher Education: feedback loops, opportunities and things to watch out for
+title: "AI systems in Higher Education: feedback loops, opportunities and things to watch out for"
 ---
 
 AI applications are already part of the Higher Education experience for
@@ -68,12 +68,12 @@ support. AI text summarisation tools could also help with grading/triaging,
 especially because---let's be honest---we often don't budget the TA hours to
 look carefully at the submitted work anyway. One potential endgame for this
 dynamic is that instead of having to [cap places in
-high-demand](https://news.ycombinator.com/item?id=32746119), class sizes could
-grow until student demand is satisfied. The risk here is that such a class would
-be incredibly reliant on those AI tools to handle that teaching workload without
-burning out all the humans involved in the process. And humans _will_ still be
-involved; (almost) nobody is proposing that we have purely automated classes in
-higher education.
+high-demand](https://www.dailycal.org/2022/08/24/campus-college-of-letters-and-science-plans-to-limit-high-demand-majors/),
+class sizes could grow until student demand is satisfied. The risk here is that
+such a class would be incredibly reliant on those AI tools to handle that
+teaching workload without burning out all the humans involved in the process.
+And humans _will_ still be involved; (almost) nobody is proposing that we have
+purely automated classes in higher education.
 
 Thirdly, human-AI co-creation isn't going anywhere, so make it part of your
 assessments. Get students to design new frontends & workflows, which other
