@@ -39,3 +39,16 @@ gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | \
 ```
 
 Happy VPN-ing.
+
+<div class="hl-para" markdown="1">
+
+**Update September 2022**: I recently had a nasty issue with this where
+openconnect didn't shut down cleanly and had left my DNS server IPs pointing to
+the wrong place. This meant that DNS resolution didn't work across my whole
+computer: websites weren't showing up, git was borked, even ping. What a bummer.
+
+There may be a better fix, but I just deleted the DNS settings (in _System
+Preferences > Network > Advanced > DNS_ on macOS) and it all started working
+again.
+
+</div>
