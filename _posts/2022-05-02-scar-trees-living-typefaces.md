@@ -4,7 +4,7 @@ tagline: "Old ways of engineering, made new for the web"
 tags: cybernetics web
 ---
 
-![Yellow box tree on ANU campus. 📸 ANU Photography, 2016]({% link assets/images/posts/20190103_H1P3978_scar_tree.jpg %})
+{% include picture.html file="images/posts/20190103_H1P3978_scar_tree.jpg" alt="Yellow box tree on ANU campus. 📸 ANU Photography, 2016" %}
 
 I wrote something up for the ANU School of Cybernetics blog (where [I
 work](https://cybernetics.anu.edu.au/people/ben-swift/)) which has the same
