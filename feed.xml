@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-10-07T14:56:07+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">So this is how it feels when the robots come for your job: what GitHub’s Copilot ‘AI assistant’ means for coders</title><link href="https://benswift.me/blog/2022/06/30/what-githubs-copilot-ai-assistant-means-for-coders/" rel="alternate" type="text/html" title="So this is how it feels when the robots come for your job: what GitHub’s Copilot ‘AI assistant’ means for coders" /><published>2022-06-30T00:00:00+10:00</published><updated>2022-06-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/06/30/what-githubs-copilot-ai-assistant-means-for-coders</id><content type="html" xml:base="https://benswift.me/blog/2022/06/30/what-githubs-copilot-ai-assistant-means-for-coders/"><![CDATA[<p>I wrote <a href="https://theconversation.com/so-this-is-how-it-feels-when-the-robots-come-for-your-job-what-githubs-copilot-ai-assistant-means-for-coders-185957">a piece for the Conversation</a> about GitHub’s new
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-10-12T17:26:46+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">NGA Un-tour: The Hidden Gallery</title><link href="https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery/" rel="alternate" type="text/html" title="NGA Un-tour: The Hidden Gallery" /><published>2022-10-12T00:00:00+11:00</published><updated>2022-10-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery</id><content type="html" xml:base="https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery/"><![CDATA[<p>For the last year or so my team has been collaborating with the good folks at
+<a href="https://www.bestfestivalever.com.au">BOHO Interactive</a> and the National Gallery
+of Australia on something which launches tonight—the <em>NGA Un-Tour</em>.</p>
+
+<p>From the <a href="https://nga.gov.au/events/un-tour-the-hidden-gallery/">NGA website</a>:</p>
+
+<blockquote>
+  <p>Experience an immersive cybernetic walking tour of the National Gallery after
+dark. Travel through familiar and behind-the scenes spaces and investigate the
+dynamic relationships between humans, technology and the built environment
+found within works of art and the Gallery itself. Wear your walking shoes and
+join us as we explore previously hidden parts of the building and gardens.</p>
+
+  <p>Held of over one week during the Gallery’s 40th birthday celebrations. This
+special event is co-presented by the National Gallery and the ANU School of
+Cybernetics.</p>
+</blockquote>
+
+<p>I’m not sure if there are any tickets left, but if there are you should
+definitely check it out. You won’t get another chance to experience one of
+Canberra’s cultural institutions in this way for a long time.</p>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[For the last year or so my team has been collaborating with the good folks at BOHO Interactive and the National Gallery of Australia on something which launches tonight—the NGA Un-Tour.]]></summary></entry><entry><title type="html">So this is how it feels when the robots come for your job: what GitHub’s Copilot ‘AI assistant’ means for coders</title><link href="https://benswift.me/blog/2022/06/30/what-githubs-copilot-ai-assistant-means-for-coders/" rel="alternate" type="text/html" title="So this is how it feels when the robots come for your job: what GitHub’s Copilot ‘AI assistant’ means for coders" /><published>2022-06-30T00:00:00+10:00</published><updated>2022-06-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/06/30/what-githubs-copilot-ai-assistant-means-for-coders</id><content type="html" xml:base="https://benswift.me/blog/2022/06/30/what-githubs-copilot-ai-assistant-means-for-coders/"><![CDATA[<p>I wrote <a href="https://theconversation.com/so-this-is-how-it-feels-when-the-robots-come-for-your-job-what-githubs-copilot-ai-assistant-means-for-coders-185957">a piece for the Conversation</a> about GitHub’s new
 <em>Copilot</em> AI programming assistant. You can <a href="https://theconversation.com/so-this-is-how-it-feels-when-the-robots-come-for-your-job-what-githubs-copilot-ai-assistant-means-for-coders-185957">head over there</a> to
 read it if you like.</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="ai" /><summary type="html"><![CDATA[I wrote a piece for the Conversation about GitHub’s new Copilot AI programming assistant. You can head over there to read it if you like.]]></summary></entry><entry><title type="html">Redacting craiyon prompts with imagemagick</title><link href="https://benswift.me/blog/2022/06/22/redacting-craiyon-prompts-with-imagemagick/" rel="alternate" type="text/html" title="Redacting craiyon prompts with imagemagick" /><published>2022-06-22T00:00:00+10:00</published><updated>2022-06-22T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/06/22/redacting-craiyon-prompts-with-imagemagick</id><content type="html" xml:base="https://benswift.me/blog/2022/06/22/redacting-craiyon-prompts-with-imagemagick/"><![CDATA[<p>I’ve been messing around with <a href="https://www.craiyon.com">craiyon</a> (formerly
 <a href="https://huggingface.co/spaces/dalle-mini/dalle-mini">DALL-E mini</a>), because who
@@ -1126,50 +1146,4 @@ me up</a>.</p>
 
 <p>I want to give a shoutout to Jan Akerman who wrote <a href="https://janakerman.co.uk/docker-git-clone/">a helpful blog
 post</a> which got me started—and
-some of the Dockerfile is taken from that post.</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="web" /><summary type="html"><![CDATA[I (and, increasingly many of my colleagues) are using Jekyll to create open (CC-licenced), hackable, acessible course websites &amp; teaching content for our classes. We use a self-hosted GitLab server for all the websites sources, and then build/deploy them with GitLab CI. It works well, it means I don’t have to fight with our LMS to do interesting things, and it means I can open my learning materials to everyone (not just those who are privileged enough to be able to pay the fees to study at the ANU).]]></summary></entry><entry><title type="html">openconnect setup for institutional VPN access</title><link href="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/" rel="alternate" type="text/html" title="openconnect setup for institutional VPN access" /><published>2021-10-18T00:00:00+11:00</published><updated>2021-10-18T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access</id><content type="html" xml:base="https://benswift.me/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access/"><![CDATA[<p>My <a href="https://www.anu.edu.au">institution’s</a> IT policies have recently changed and
-port 22 is now blocked from off-campus. That’s a real pain if you use ssh to
-push/pull from our on-prem GitLab servers (which I need to do <em>all the time</em>).</p>
-
-<p>The recommended solution is to come in via a VPN—which is not a terrible idea
-in principle. However, the institution’s recommended setup requires some janky
-GlobalProtect client, which (for me at least) was pretty crashy. As an
-alternative, <a href="http://www.infradead.org/openconnect/">openconnect</a> is just a
-<code>brew install openconnect</code> away (on macOS, at least), and after a bit of setting
-up, it works seamlessly.</p>
-
-<p>If you’re in a similar situation, here’s a terminal command you can use to
-access the campus network via the VPN:</p>
-
-<pre><code>sudo openconnect \
-  --user=uXXXXXXX \ ## replace with your uid
-  --protocol=gp \   ## because it's a GlobalProtect VPN
-  https://staff-access.anu.edu.au
-</code></pre>
-
-<p>The above command will prompt for your usual password, which you enter in the
-terminal. Since I already have that info in an encrypted file, I have a slightly
-modified setup (this is in a script called <code>vpn.sh</code>):</p>
-
-<pre><code>#!/usr/bin/env zsh
-
-# pull ANU password out of encrypted authinfo file, pipe it to stdin
-gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | \
-    awk '/machine smtp.office365.com login uXXXXXXX@anu.edu.au/ {print $NF}' | \
-    # start the VPN
-    sudo openconnect --user=uXXXXXXX --protocol=gp --passwd-on-stdin https://staff-access.anu.edu.au
-</code></pre>
-
-<p>Happy VPN-ing.</p>
-
-<div class="hl-para">
-
-  <p><strong>Update September 2022</strong>: I recently had a nasty issue with this where
-openconnect didn’t shut down cleanly and had left my DNS server IPs pointing to
-the wrong place. This meant that DNS resolution didn’t work across my whole
-computer: websites weren’t showing up, git was borked, even ping. What a bummer.</p>
-
-  <p>There may be a better fix, but I just deleted the DNS settings (in <em>System
-Preferences &gt; Network &gt; Advanced &gt; DNS</em> on macOS) and it all started working
-again.</p>
-
-</div>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[My institution’s IT policies have recently changed and port 22 is now blocked from off-campus. That’s a real pain if you use ssh to push/pull from our on-prem GitLab servers (which I need to do all the time).]]></summary></entry></feed>
+some of the Dockerfile is taken from that post.</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="web" /><summary type="html"><![CDATA[I (and, increasingly many of my colleagues) are using Jekyll to create open (CC-licenced), hackable, acessible course websites &amp; teaching content for our classes. We use a self-hosted GitLab server for all the websites sources, and then build/deploy them with GitLab CI. It works well, it means I don’t have to fight with our LMS to do interesting things, and it means I can open my learning materials to everyone (not just those who are privileged enough to be able to pay the fees to study at the ANU).]]></summary></entry></feed>
