@@ -37,6 +37,25 @@ artistic expression. He's one half of the core development team for the
 [Extempore](https://github.com/digego/extempore) programming environment. His
 work has been featured on the internet.
 
+## Explanation of livecoding (general audience)
+
+'Livecoding' is the act of programming (writing code) as a musical
+performance---in front of an audience. You can see the co e being written in
+front of your eyes, and this code is making _all_ the music that you can hear.
+
+It's kindof like conducting an orchestra; but instead of humans in tuxedoes, the
+'musicians' are the little bits of code that you can see being written
+on-the-fly. They follow the instructions they're given, they play the notes
+they're told to, and they never hit bum notes! They're an army of musical robot
+ninjas summoned into existence in the improvisational performance of live
+coding.
+
+So swing by and try to figure out what's going on; try and understand which
+little bits of code are triggering which sounds and notice the way that the
+music changes as the code evolves. Or if it all seems too complicated then just
+sit back, watch the pretty colours and enjoy listening to the robot ninjas as
+they play diligently and tirelessly for your listening pleasure.
+
 ## Headshots & promo images
 
 {% include picture.html file="images/headshots/headshot-pink-shirt.jpg" alt="Ben headshot with a pink shirt and artwork in the background" credit="Joy Swift" %}
