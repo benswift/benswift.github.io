@@ -16,7 +16,7 @@ video_url: https://vimeo.com/314652381
 
 A concert and gallery show organised to farewell to [John
 Hosking](https://unidirectory.auckland.ac.nz/profile/j-hosking), the Dean of the
-ANU College of Engineering & Computer Science.
+ANU College of Engineering, Computing Science and Cybernetics.
 
 John was a great supporter of livecoding research[^code] at the ANU, and it was
 fitting to be able to send him off in style.

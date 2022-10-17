@@ -2,7 +2,7 @@
 date: "2019-02-26"
 type: invited
 title: CECS Welcome Party 2019
-venue: ANU College of Engineering & Computer Science
+venue: ANU College of Engineering, Computing and Cybernetics
 curators:
   - Elanor Huntington
 artists:
