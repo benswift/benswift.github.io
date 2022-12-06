@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-12-07T10:29:38+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A School of Cybernetics strategy meeting with ChatGPT</title><link href="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/" rel="alternate" type="text/html" title="A School of Cybernetics strategy meeting with ChatGPT" /><published>2022-12-07T00:00:00+11:00</published><updated>2022-12-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt</id><content type="html" xml:base="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/"><![CDATA[<p>Back at my desk after a couple of days off I finally got a chance to fire up the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-12-07T10:49:19+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A School of Cybernetics strategy meeting with ChatGPT</title><link href="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/" rel="alternate" type="text/html" title="A School of Cybernetics strategy meeting with ChatGPT" /><published>2022-12-07T00:00:00+11:00</published><updated>2022-12-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt</id><content type="html" xml:base="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/"><![CDATA[<p>Back at my desk after a couple of days off I finally got a chance to fire up the
 <a href="http://chat.openai.com">OpenAI ChatGPT</a> AI language model that everyone’s
 talking about.</p>
 
@@ -123,13 +123,13 @@ for networking, collaboration, and professional development.</li>
 <p>Well, wow. This required no re-prompting or editing on my part.</p>
 
 <p>I should say that I share all of the skepticism (and fears!) of folks who are
-pointing out that these language models don’t actually understand things. Upon
-close reading, I don’t think the above responses capture the full breadth of
-things we’re trying to do here in the School of Cybernetics.</p>
+pointing out that these language models don’t actually understand things. In
+some cases this means the output of these models is benign but incorrect, and
+it’s easy to think of situations where real harm could be caused.</p>
 
-<p>In some cases this means the output of these models is benign but incorrect, and
-it’s easy to think of situations where real harms could be caused. But I’d be
-lying if I wasn’t impressed.</p>
+<p>Upon close reading, I don’t think the above responses capture the full breadth
+of what we’re trying to do here in the School of Cybernetics. But I’d be lying
+if I wasn’t impressed.</p>
 
 <p>As I <a href="https://twitter.com/benswift/status/1600265214338867200">tweeted earlier this
 morning</a>:</p>
