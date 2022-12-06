@@ -122,13 +122,13 @@ _end chat transcript_
 Well, wow. This required no re-prompting or editing on my part.
 
 I should say that I share all of the skepticism (and fears!) of folks who are
-pointing out that these language models don't actually understand things. Upon
-close reading, I don't think the above responses capture the full breadth of
-things we're trying to do here in the School of Cybernetics.
+pointing out that these language models don't actually understand things. In
+some cases this means the output of these models is benign but incorrect, and
+it's easy to think of situations where real harm could be caused.
 
-In some cases this means the output of these models is benign but incorrect, and
-it's easy to think of situations where real harms could be caused. But I'd be
-lying if I wasn't impressed.
+Upon close reading, I don't think the above responses capture the full breadth
+of what we're trying to do here in the School of Cybernetics. But I'd be lying
+if I wasn't impressed.
 
 As I [tweeted earlier this
 morning](https://twitter.com/benswift/status/1600265214338867200):
