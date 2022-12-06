@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-12-06T15:51:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">AI art installations and livecoding gigs in Nov/Dec</title><link href="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/" rel="alternate" type="text/html" title="AI art installations and livecoding gigs in Nov/Dec" /><published>2022-12-06T00:00:00+11:00</published><updated>2022-12-06T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec</id><content type="html" xml:base="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/"><![CDATA[<p>If you <a href="https://twitter.com/benswift">follow me on twitter</a> you’ve seen this
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-12-07T10:29:38+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">A School of Cybernetics strategy meeting with ChatGPT</title><link href="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/" rel="alternate" type="text/html" title="A School of Cybernetics strategy meeting with ChatGPT" /><published>2022-12-07T00:00:00+11:00</published><updated>2022-12-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt</id><content type="html" xml:base="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/"><![CDATA[<p>Back at my desk after a couple of days off I finally got a chance to fire up the
+<a href="http://chat.openai.com">OpenAI ChatGPT</a> AI language model that everyone’s
+talking about.</p>
+
+<p>Here’s—and this is the honest truth—the first conversation I had with it.
+The initial paragraph was from the <a href="https://cybernetics.anu.edu.au/about/">ANU School of Cybernetics
+website</a>, and from there we just
+freewheeled. My inputs are in regular type, the ChatGPT responses are in the
+coloured boxes.</p>
+
+<hr />
+
+<p><em>begin chat transcript</em></p>
+
+<p>The 3A Institute sits within the School of Cybernetics with the mission to build
+a new branch of engineering to take AI-enabled cyber-physical systems to scale
+and to create a new generation of practitioners with the skills and knowledge we
+need to help shape this future safely, sustainably and responsibly.</p>
+
+<p>As people invent, commercialise and operationalise new technologies, new
+practitioners emerge to manage them. Just as the invention of programmable
+computers led to the professionalisation of software engineers, cyber-physical
+systems will lead to a new type of engineer.</p>
+
+<p>We don’t know what this new type of engineering will be called yet, but we know
+we need it if we are to build a safe, sustainable and responsible future.</p>
+
+<p>Give 5 concrete examples of how ideas from cybernetics can help:</p>
+
+<div class="hl-para">
+
+  <ol>
+    <li>Cybernetics can help with the design and optimization of complex systems,
+such as transportation networks or power grids, by using feedback loops and
+control systems to ensure efficient and reliable operation.</li>
+    <li>Cybernetic principles can be applied to the development of intelligent
+machines and autonomous systems, enabling them to learn from their
+environment and adapt to changing conditions.</li>
+    <li>Cybernetics can be used to improve human-machine interactions, such as
+through the design of user-friendly interfaces or the integration of wearable
+technologies that enhance our physical abilities.</li>
+    <li>Cybernetic concepts can be applied to the study of biological systems, such
+as the nervous system, to gain a better understanding of how they function
+and how they can be treated or improved.</li>
+    <li>Cybernetics can be used to address societal challenges, such as promoting
+sustainable development or addressing inequality, by providing a framework
+for analyzing and addressing complex systems-level problems.</li>
+  </ol>
+
+</div>
+
+<p>Can you try again, but this time using the 19th Century Australian Overland Telegraph as a framing device?</p>
+
+<div class="hl-para">
+
+  <p>Sure, here are five examples of how ideas from cybernetics can help using the
+19th Century Australian Overland Telegraph as a framing device:</p>
+
+  <ol>
+    <li>The Overland Telegraph relied on a complex network of telegraph lines,
+stations, and operators to transmit messages across the vast Australian
+continent. Cybernetics can help optimize the design and operation of such
+networks by using feedback loops and control systems to ensure efficient and
+reliable communication.</li>
+    <li>The Overland Telegraph used complex coding systems to encode and decode
+messages, and cybernetic principles can be applied to the development of
+intelligent machines and algorithms that can learn and adapt to improve the
+efficiency and accuracy of such coding systems.</li>
+    <li>The Overland Telegraph required skilled operators to manage the transmission
+and receipt of messages, and cybernetics can be used to improve human-machine
+interactions through the design of user-friendly interfaces and tools that
+enable operators to work more efficiently and effectively.</li>
+    <li>The Overland Telegraph relied on a network of towers and poles to support the
+telegraph lines, and cybernetic concepts can be applied to the study of such
+infrastructure to optimize its design and maintenance for long-term
+reliability and durability.</li>
+    <li>The Overland Telegraph played a crucial role in connecting remote parts of
+Australia and facilitating economic and social development, and cybernetics
+can be used to address societal challenges by providing a framework for
+analyzing and addressing complex systems-level problems and developing
+solutions that promote sustainable and equitable growth.</li>
+  </ol>
+
+</div>
+
+<p>Ok, that’s better—I think it’s important that we provide a uniquely Australian
+viewpoint on what cybernetics is and how it can help tackle the challenges we
+face in the 21st century. As a new School of Cybernetics, then, what should our
+top priorities be?</p>
+
+<div class="hl-para">
+
+  <p>As a new School of Cybernetics, some top priorities could include:</p>
+
+  <ol>
+    <li>Developing a strong research program focused on applying cybernetic
+principles to real-world challenges facing Australia, such as improving the
+resilience and sustainability of critical infrastructure, enhancing the
+security and privacy of digital systems, or addressing complex societal
+issues such as inequality and climate change.</li>
+    <li>Providing high-quality education and training programs that enable students
+to gain a deep understanding of cybernetic concepts and techniques, and
+develop the skills and knowledge needed to become leaders in the field.</li>
+    <li>Building partnerships and collaborations with other academic institutions,
+industry partners, and government agencies to facilitate the exchange of
+ideas, knowledge, and expertise, and to support the development and
+implementation of innovative cybernetic solutions.</li>
+    <li>Playing a key role in promoting public awareness and understanding of
+cybernetics, and addressing common misconceptions and concerns about the
+field, in order to foster a positive and informed dialogue about its
+potential benefits and limitations.</li>
+    <li>Establishing a strong and supportive community of scholars, practitioners,
+and stakeholders within the field of cybernetics, and providing opportunities
+for networking, collaboration, and professional development.</li>
+  </ol>
+
+</div>
+
+<p><em>end chat transcript</em></p>
+
+<hr />
+
+<p>Well, wow. This required no re-prompting or editing on my part.</p>
+
+<p>I should say that I share all of the skepticism (and fears!) of folks who are
+pointing out that these language models don’t actually understand things. Upon
+close reading, I don’t think the above responses capture the full breadth of
+things we’re trying to do here in the School of Cybernetics.</p>
+
+<p>In some cases this means the output of these models is benign but incorrect, and
+it’s easy to think of situations where real harms could be caused. But I’d be
+lying if I wasn’t impressed.</p>
+
+<p>As I <a href="https://twitter.com/benswift/status/1600265214338867200">tweeted earlier this
+morning</a>:</p>
+
+<blockquote>
+  <p>all this ChatGPT stuff means that we as a society are gonna have to get a
+<strong>lot</strong> better at drinking from the bullshit firehose, and fast</p>
+</blockquote>
+
+<p>I’ll pen some more thoughts about what it all means when I’ve had some more time
+to digest things.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="cybernetics" /><summary type="html"><![CDATA[Back at my desk after a couple of days off I finally got a chance to fire up the OpenAI ChatGPT AI language model that everyone’s talking about.]]></summary></entry><entry><title type="html">AI art installations and livecoding gigs in Nov/Dec</title><link href="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/" rel="alternate" type="text/html" title="AI art installations and livecoding gigs in Nov/Dec" /><published>2022-12-06T00:00:00+11:00</published><updated>2022-12-06T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec</id><content type="html" xml:base="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/"><![CDATA[<p>If you <a href="https://twitter.com/benswift">follow me on twitter</a> you’ve seen this
 already, but over the last couple of months I’ve been hard at work on an AI art
 installation called Panic. This was a collaboration with <a href="https://cybernetics.anu.edu.au/people/adrian-schmidt/">Adrian
 Schmidt</a>—I did the
@@ -787,302 +929,4 @@ theologian. <a href="#fnref:all-encompassing" class="reversefootnote" role="doc
 are</a>. Don’t @ me. <a href="#fnref:lighthouse-steering" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[One of my current projects at the ANU School of Cybernetics is to develop tools &amp; procedures for futuring. This post is an attempt to get my head around how these things fit together (spoiler: they do!).]]></summary></entry><entry><title type="html">Livecoder-in-the-club as a system</title><link href="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/" rel="alternate" type="text/html" title="Livecoder-in-the-club as a system" /><published>2021-11-11T00:00:00+11:00</published><updated>2021-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system</id><content type="html" xml:base="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/"><![CDATA[<div class="hl-para">
-
-  <p>Here in the <a href="https://cybernetics.anu.edu.au/">School of Cybernetics</a> we are building our
-capability in cybernetics—its histories and possibilities—and
-working out how each of us will contribute to the new cybernetics for the 21st
-Century.</p>
-
-  <p>This blog post, written for a general audience, is part of a content development
-sprint, written in reponse to the task of developing a short (1000 words)
-persuasive argument about the role and value of cybernetics as an approach to
-shape futures through and with technology.</p>
-
-</div>
-
-<p>If you follow this blog, you’ll know that I’m a <a href="/livecoding/index.html">livecoder</a>. I <em>code</em> (i.e. write computer programs) to make music in a
-club setting, with an audience that just wants to dance and have a good
-time<sup id="fnref:niche" role="doc-noteref"><a href="#fn:niche" class="footnote" rel="footnote">1</a></sup>. If you’ve never seen it before, here’s a 10min video of my
-collaborator Ushini Attanayake and I.</p>
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592452477?color=be2edd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ushini &amp;amp; Ben live @ ACMC&amp;#039;21"></iframe></div>
-<script src="https://player.vimeo.com/api/player.js"></script>
-
-<p>Between the code, the thumping music, the dancing humans, and all
-the other glorious complexities of live entertainment, there’s certainly a lot
-of different stuff going on. You might find watching a livecoder in action to be
-entertaining, or impressive, or bewildering, or all of the above. Most of all,
-when you see/attend a livecoding gig for the first time, I bet that your initial
-feeling is one of <em>what is going on?</em></p>
-
-<p>In this post I’m going to use some ideas from cybernetics to try and help you
-make sense of a livecoder performing in a club, in part to help you understand
-for what it <em>feels like</em> I’m doing when I do it. From there I want to think
-about ways to make livecoding even better, that is, to figure out put on a
-better show for the adoring crowds.</p>
-
-<h2 id="livecoder-in-the-club-as-a-system">Livecoder-in-the-club as a system</h2>
-
-<p><a href="https://www.youtube.com/watch?v=kx79HLLboT8">Cybernetics</a> is all about the
-looking at and reasoning about <strong>systems</strong> with <em>goals</em>, interacting with and
-connected to their <em>environment</em> via perception/action <em>feedback loops</em>. These
-sorts of systems exist at all sorts of different scales (big/small, fast/slow,
-old/new, cheap/expensive, etc.) and they’re <a href="https://www.goodreads.com/book/show/10698938-the-fractal-organization">fractal in
-nature</a>—it
-doesn’t matter what level of “magnification” you look at, each component of a
-system is itself a system of interacting components, and each system is itself a
-component interacting in a larger system. But since that’s all pretty abstract,
-let’s return to the example of the livecoder-in-the-club. This is written in the
-first person, but other livecoders may have similar understandings of their own
-livecoder-in-the-club practice.</p>
-
-<ul>
-  <li>
-    <p>I start with a full tank of <strong>brain juice</strong> which allows me to work on tricky
-coding problems. But it’s mentally taxing. When I’m happy, rested &amp; in the
-zone, I feel like I’ve got a full tank, but writing code takes mental energy,
-and so writing the code in the performance drains my brain juice until I’m
-cooked, and then I can’t write any more code (or at least will write bad/buggy
-code) until I recharge.</p>
-  </li>
-  <li>
-    <p>To write the <strong>code</strong> I tap my fingers on the keys of my keyboard. I use a
-<a href="https://emacs.sexy">specialised program</a> for this (i.e. I don’t write it in
-MS Word) which has a bunch of features to help, like different colours for the
-different parts of the code (e.g. functions vs variable vs numerical parameter
-values), and auto-completion, and inline documentation/help about the
-particular bit of code that I’m working on. This code is also projected onto a
-big screen in the club so that the dancers can look at it (or not).</p>
-  </li>
-  <li>
-    <p>As the code runs, it generates <strong>music</strong>. Different parts of the code are
-responsible for different parts of the music, and I try and give the functions
-&amp; variables in my code human-readable names (like <code>piano</code>) so that the
-correspondence between the code and the music is clear-ish. The music will
-only be generated if the code is running nicely (i.e. without bugs/errors) and
-is hooked up to the PA system in the club. If I crash the program (or if
-someone unplugs the PA) then the music will stop.</p>
-  </li>
-  <li>
-    <p>The people in the club—people dancing, people chilling at the bar, people
-watching the code on the screen—are collectively having an experience which
-(hopefully) is giving them <strong>good vibes</strong>. Obviously this is a <em>huge</em>
-oversimplification, and the extent to which any individual is enjoying
-themselves (and therefore contributing positively to the amount of good vibes
-in the room) depends on all sorts of things. But, in a real sense, the
-creation of <strong>good vibes</strong> in the room is the goal of the live coder—or at
-least it’s <em>my</em> goal when I perform in this situtation. So I (like any
-performer) feed off the good vibes, replenishing (to some extent) my brain
-juice.</p>
-  </li>
-</ul>
-
-<p>It’s a bit clearer to see in a picture:</p>
-
-<picture style="position: relative;">
-  <img alt="system diagram for the livecoder-in-a-club system" src="/assets/images/posts/livecoder-in-a-club-system-diagram.png" />
-
-  
-</picture>
-
-<p>So, clearly,</p>
-
-<blockquote>
-  <p>a livecoder is a machine for turning <strong>brain juice</strong> into <strong>good vibes</strong> (via
-<strong>code</strong> and <strong>music</strong>)</p>
-</blockquote>
-
-<p>which is a nice way to think about it, and actually is a relatively accurate
-picture of what I <em>feel</em> is going on when I’m performing.</p>
-
-<h2 id="how-does-cybernetics-help-us-understand-and-improve-this-system">How does cybernetics help us understand and improve this system?</h2>
-
-<p>In this account of livecoding-in-the-club, there are a few things worth
-noticing:</p>
-
-<ul>
-  <li>
-    <p>there are different “stocks” (reservoirs of brain juice, code, music and good vibes)</p>
-  </li>
-  <li>
-    <p>there are various flows between those stocks, and in both directions (e.g. I
-turn brain juice into code by typing at my keyboard, but I also receive
-information about what the code looks like from my laptop screen, via my eyes)</p>
-  </li>
-  <li>
-    <p>there’s a goal: to put on a good show for the audience to enjoy (to increase
-the stock of good vibes in the room)</p>
-  </li>
-  <li>
-    <p>the system includes closed loops, and so is capable of feedback</p>
-  </li>
-</ul>
-
-<p>A key principle of cybernetics is that the structure of the system—what the
-parts are, and how they relate to one another—determines the behaviour of the
-system. But anyone can sketch out a (highly contestable) jumble of blobs and
-arrows to describe whatever thing they’re interested in. What do we gain from
-seeing things in this way?</p>
-
-<p>This is where another key idea—and person—in cybernetics/systems thinking
-comes in: Donella Meadows’<sup id="fnref:is-meadows-cybernetics" role="doc-noteref"><a href="#fn:is-meadows-cybernetics" class="footnote" rel="footnote">2</a></sup> <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Leverage Points: Places to
-Intervene in a
-System</a>.
-The key idea is this: once you’ve mapped out your system, you need to know where
-the most effective “intervention points” to try and implement change? If you’re
-going to expend energy to make things better, where should you focus that energy
-to get the most <em>leverage</em>?</p>
-
-<p>In the livecoder-in-the-club system, to make changes to the system in service of
-the the goal (as stated above) of creating maximum good vibes. One obvious
-solution is to start the gig with a bigger reservoir of brain juice (either by
-having a good night’s sleep, popping an adderall, or whatever). Or it could be
-to start with a larger code reservoir by starting with a bunch of code
-pre-written<sup id="fnref:blank-slate-code" role="doc-noteref"><a href="#fn:blank-slate-code" class="footnote" rel="footnote">3</a></sup>.</p>
-
-<p>However, Meadows’ rules for leverage also suggest that some interventions
-provide more leverage than others<sup id="fnref:different-interventions" role="doc-noteref"><a href="#fn:different-interventions" class="footnote" rel="footnote">4</a></sup>. For example,
-changing the flow rates (leverage point #10) is likely to have more impact than
-just changing the sizes of the stocks/buffers (leverage point #11). This implies
-that changing the rate at which I turn brain juice into code (perhaps having a
-nicer keyboard, perhaps having better code auto-completion support, or perhaps
-just good-ol’ <em>practice</em> to improve my coding skills) is likely to be more
-impactful than starting with a bigger store of brain juice (so, thankfully,
-there’s no need to buy shady adderall on the dark web). Will Larson (who has
-been a software engineering leader at Calm, Stripe, Uber, and Digg) <a href="https://lethain.com/systems-thinking/">has some
-interesting ideas on systems thinking as applied to software
-development</a> that I’m keen to think more
-about as well.</p>
-
-<p>For even greater leverage, there are interventions which are related to
-restructuring the system itself, for example adding new information flows
-(leverage point #6). The dancers can already see the code, but what if I was
-hooked up to a live <a href="https://en.wikipedia.org/wiki/Electroencephalography">EEG</a>
-so they could see the current state of my brain juice?<sup id="fnref:eeg" role="doc-noteref"><a href="#fn:eeg" class="footnote" rel="footnote">5</a></sup>. And even higher up (in
-terms of leverage) is changing the goals of the system itself (leverage point
-#3). Why <em>do</em> people come to a club to dance and have good vibes? What if their
-goal was different?</p>
-
-<p>Now, the thing about leverage is that it doesn’t guarantee good or bad outcomes,
-it just means you for a small amount of input you see a large effect in the
-output. Figuring out where to intervene in the livecoder-in-the-club system is
-one thing, figuring out how to intervene so that the changes are positive is a
-deep challenge. Leverage means that when things go well they go really well, but
-the opposite is also true (e.g. with margin calls in a bear market). I feel like
-this is an especially apposite point for programmers, because the cheap leverage
-afforded by software is catnip for programmers, but presents some real dangers.
-(as <a href="https://idlewords.com/talks/sase_panel.htm">as Maciej Cegłowski puts so
-eloquently</a>).</p>
-
-<h2 id="so-whats-the-point">So what’s the point?</h2>
-
-<p>Obviously the livecoder-in-the-club system described above is an
-oversimplification; it makes certain things easy to see but renders other things
-invisible, and every aspect of both the components (the things it talks about)
-and their relationships (the connections between them) is contestable. But
-that’s one of the benefits by laying things out like this—we can at least see
-the things that we’re explicitly considering, and we may well need to add new
-things to the model for consideration (and examine all the new connections and
-potential feedback loops those new things create).</p>
-
-<p>My main goal here is really just to provide a worked example of how ideas from
-cybernetics and systems thinking can help us move beyond just describing things
-to figuring out where to place our energies to effect change—where we’ll get
-the most leverage. Being the best livecoder I can be is a lifetime goal, just
-like any other instrumental or artistic practice. I’m keen to keep using the
-tools of cybernetics to push in that direction, and bring the assemblage of
-dancing bodies of the livecoder-in-the-club system with me for the ride :)</p>
-
-<h2 id="meadows-12-places-to-intervene">Appendix: Meadows’ <em>12 Places to Intervene in a System</em></h2>
-
-<p class="hl-para">Note: these are taken straight from the <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Donella Meadows foundation
-website</a>.</p>
-
-<p><em>(lower numbers = less effective, higher numbers = more effective)</em></p>
-
-<ol reversed="">
-
-<li>Constants, parameters, numbers (such as subsidies, taxes, standards).</li>
-
-<li>The sizes of buffers and other stabilizing stocks, relative to their flows.</li>
-
-<li>The structure of material stocks and flows (such as transport networks, population age structures).</li>
-
-<li>The lengths of delays, relative to the rate of system change.</li>
-
-<li>The strength of negative feedback loops, relative to the impacts they are trying to correct against.</li>
-
-<li>The gain around driving positive feedback loops.</li>
-
-<li>The structure of information flows (who does and does not have access to information).</li>
-
-<li>The rules of the system (such as incentives, punishments, constraints).</li>
-
-<li>The power to add, change, evolve, or self-organize system structure.</li>
-
-<li>The goals of the system.</li>
-
-<li>The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.</li>
-
-<li>The power to transcend paradigms.</li>
-
-</ol>
-
-<h2 id="footnotes">Footnotes</h2>
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:niche" role="doc-endnote">
-
-      <p>It’s a pretty niche activity, but there’s an <a href="https://toplap.org">international
-community</a> of us, and if you’re interested then you can
-<a href="https://twitter.com/benswift">follow me on twitter</a> to hear about upcoming
-gigs. <a href="#fnref:niche" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:is-meadows-cybernetics" role="doc-endnote">
-
-      <p><a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Donella
-Meadows</a>
-tended to prefer terms like “systems thinking” and “systems change” rather
-than using the term “cybernetics” directly, but she certainly was involved
-with some of the key people &amp; events in the cybernetics story, and her work
-is highly relevant to cybernetic ideas. Plus, <a href="https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&amp;redir_esc=y">Google Books categorises her
-work under <em>Computers &gt;
-Cybernetics</em></a>,
-and you <em>know</em> the Big G is never wrong about that stuff. <a href="#fnref:is-meadows-cybernetics" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:blank-slate-code" role="doc-endnote">
-
-      <p>This is actually a subtle point in livecoding. I (along with some other
-livecoders) am committed to starting each gig “from scratch” with a blank
-code page. However, I’ve written a lot of library code ahead of time to
-provide me with nice abstractions for making music with code, and I use that
-(hidden—not on the screen) from the very first line of code that I write.
-Thinking about the livecoder-in-the-club system one question that I’m
-pondering is whether that library code constitutes a larger stock of code,
-or whether it’s a restructuring (an increase) of the flow rate from code
-into music, or both.</p>
-
-      <p>To make things even more complicated, and there’s <em>kindof</em> a blurry line
-between where the code ends and the music begins in livecoding (i.e. there’s
-the code you see on the screen, which is the code that I’m writing &amp;
-executing “live”, but there’s also a bunch of pre-written code in my
-operating system’s audio plumbing just to get the music to come out of the
-speakers properly). <a href="#fnref:blank-slate-code" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:different-interventions" role="doc-endnote">
-
-      <p>There’s not enough room in this blog post for a full “systems change
-analysis” of the livecoder-in-the-club system according to all 12 leverage
-points, but if you’re interested I do recommend you <a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">check out that
-article</a>
-as a starting point. <a href="#fnref:different-interventions" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:eeg" role="doc-endnote">
-
-      <p>Coming up with a reliable, portable EEG machine which can measure a useful
-biometric signal which corresponds to an individual’s perceived current
-level of brain juice is beyond the scope of this blog post. <a href="#fnref:eeg" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[One of my current projects at the ANU School of Cybernetics is to develop tools &amp; procedures for futuring. This post is an attempt to get my head around how these things fit together (spoiler: they do!).]]></summary></entry></feed>
