@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-12-01T13:16:15+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">NGA Un-tour: The Hidden Gallery</title><link href="https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery/" rel="alternate" type="text/html" title="NGA Un-tour: The Hidden Gallery" /><published>2022-10-12T00:00:00+11:00</published><updated>2022-10-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery</id><content type="html" xml:base="https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery/"><![CDATA[<p>For the last year or so my team has been collaborating with the good folks at
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2022-12-06T15:51:34+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">AI art installations and livecoding gigs in Nov/Dec</title><link href="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/" rel="alternate" type="text/html" title="AI art installations and livecoding gigs in Nov/Dec" /><published>2022-12-06T00:00:00+11:00</published><updated>2022-12-06T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec</id><content type="html" xml:base="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/"><![CDATA[<p>If you <a href="https://twitter.com/benswift">follow me on twitter</a> you’ve seen this
+already, but over the last couple of months I’ve been hard at work on an AI art
+installation called Panic. This was a collaboration with <a href="https://cybernetics.anu.edu.au/people/adrian-schmidt/">Adrian
+Schmidt</a>—I did the
+software, he did the hardware (including the cool, 6” diameter <em>Panic!</em> button).</p>
+
+<div style="width:100%; margin: 0px auto; margin-bottom: 1rem;">
+  <div style="position: relative; padding-bottom: 62.5%; height: 0px;">
+	<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/wpOkUX_LmQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+	</iframe>
+  </div>
+</div>
+
+<p>I wrote <a href="https://cybernetics.anu.edu.au/news/2022/11/22/panic-a-serendipity-engine/">an essay on the School of Cybernetics
+website</a>
+which goes into more detail about how it works and what it all means (I mean,
+it’s an artwork, so mostly I built it because I could, but some folks wanna know
+“what’s the practical application of this stuff” so I wrote some words to give
+plausible deniability).</p>
+
+<p>Also, Ushini &amp; I did another <a href="http://www.ozchi.org/2022/creative_4.html">livecoding set at the OzCHI 2022
+conference</a>. There’s no video online
+yet, but we did record it (not a clean feed from the desk, but enough to get the
+gist) and I’ll put the video up on the <a href="/livecoding/index.html">livecoding page</a> as soon as I can.</p>]]></content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="ai" /><summary type="html"><![CDATA[If you follow me on twitter you’ve seen this already, but over the last couple of months I’ve been hard at work on an AI art installation called Panic. This was a collaboration with Adrian Schmidt—I did the software, he did the hardware (including the cool, 6” diameter Panic! button).]]></summary></entry><entry><title type="html">NGA Un-tour: The Hidden Gallery</title><link href="https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery/" rel="alternate" type="text/html" title="NGA Un-tour: The Hidden Gallery" /><published>2022-10-12T00:00:00+11:00</published><updated>2022-10-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery</id><content type="html" xml:base="https://benswift.me/blog/2022/10/12/nga-un-tour-the-hidden-gallery/"><![CDATA[<p>For the last year or so my team has been collaborating with the good folks at
 <a href="https://www.bestfestivalever.com.au">BOHO Interactive</a> and the National Gallery
 of Australia on something which launches tonight—the <em>NGA Un-Tour</em>.</p>
 
@@ -1062,94 +1085,4 @@ biometric signal which corresponds to an individual’s perceived current
 level of brain juice is beyond the scope of this blog post. <a href="#fnref:eeg" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cutting ruby CI pipeline times with pre-installed bundles</title><link href="https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles/" rel="alternate" type="text/html" title="Cutting ruby CI pipeline times with pre-installed bundles" /><published>2021-10-21T00:00:00+11:00</published><updated>2021-10-21T00:00:00+11:00</updated><id>https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles</id><content type="html" xml:base="https://benswift.me/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles/"><![CDATA[<p>I (and, increasingly many of my colleagues) are using
-<a href="https://jekyllrb.com">Jekyll</a> to create open (CC-licenced), hackable, acessible
-course websites &amp; teaching content for our classes. We use a self-hosted GitLab
-server for all the websites sources, and then build/deploy them with <a href="https://docs.gitlab.com/ee/ci/">GitLab
-CI</a>. It works well, it means I don’t have to
-fight with our LMS to do interesting things, and it means I can open my learning
-materials to everyone (not just those who are privileged enough to be able to
-pay the fees to study at the ANU).</p>
-
-<p>The <code>jekyll build</code> step runs in a container, and for a long time we’ve just used
-the <a href="https://hub.docker.com/_/ruby/">official ruby image</a> as a starting point,
-then done a <code>bundle install</code> inside the container before running the build step
-to get all the deps. However, this means the deps are <em>installed from scratch on
-every deploy</em>, which isn’t the greenest (although ANU is <a href="https://www.anu.edu.au/research/research-initiatives/anu-below-zero">heading in a good
-direction on net
-zero</a>) and
-it also means the feedback loop from push-&gt;deployed site is much longer than it
-needs to be.</p>
-
-<p>Yesterday (prompted by the understandable frustrations of my colleague
-<a href="https://charlesmartin.com.au">Charles</a> about the build times) I spent some time
-fixing things. I ended up creating a new docker image with the required gems
-pre-installed, and it <strong>cut our CI pipeline times by up to 90%</strong> (i.e. a 10x
-speedup).</p>
-
-<p>There were a couple of tricky parts, so I include some commentary here in case
-anyone else (including future me when if I forget how this works) wants to do
-similar things.</p>
-
-<pre><code class="language-Dockerfile"># Choose and name our temporary image.
-FROM ruby:3.0.2 as builder
-
-WORKDIR /app
-
-# Take an SSH key as a build argument.
-ARG SSH_PRIVATE_KEY
-
-# required to pull from the (private) theme gem repos
-# create the SSH directory.
-RUN mkdir -p ~/.ssh/ &amp;&amp; \
-  # populate the private key file.
-  echo "$SSH_PRIVATE_KEY" &gt; ~/.ssh/id_rsa &amp;&amp; \
-  # set the required permissions.
-  chmod -R 600 ~/.ssh/ &amp;&amp; \
-  # add our GitLab server to our list of known hosts for ssh.
-  ssh-keyscan -t rsa gitlab.anu.edu.au &gt;&gt; ~/.ssh/known_hosts
-
-# install the deps - this is really just for "caching", the expectation is that
-# the CI job will re-run `bundle install` to pick up any differences
-COPY Gemfile Gemfile.lock* .
-RUN bundle install
-
-# Choose the base image for our final image
-FROM ruby:3.0.2
-WORKDIR /app
-
-# Copy across the files from our `builder` container
-# this really assumes the same base container
-COPY --from=builder $BUNDLE_APP_CONFIG $BUNDLE_APP_CONFIG
-</code></pre>
-
-<p>The main tricky bit is the ssh setup, because some of the (in-house) gems are
-only available in git repos which require authentication. This Dockerfile pulls
-in the SSH key from an environment variable, then uses it to <code>bundle install</code>
-the required gems. Then, the key part is that there’s a second <code>FROM</code> command to
-create a new image (sans any trace of the SSH key) and only the installed gems
-are copied across.</p>
-
-<p>To build the container, you need to do something like</p>
-
-<pre><code class="language-shell">MY_KEY=$(cat gitlab-ci-runner-key)
-docker build --build-arg SSH_PRIVATE_KEY="$MY_KEY" --tag YOUR_TAG_NAME .
-</code></pre>
-
-<p>A couple of caveats with this approach: the container just caches the gems; the
-<code>bundle install</code> step will still (probably) need to run in the CI pipeline, but
-it’ll be a no-op if <code>Gemfile.lock</code> hasn’t changed. You’ll never be worse off
-(time-wise) than if you’re installing from scratch, because only the deps which
-have changed in the lock file will be downloaded. But over time, the container
-may take longer to run as the list of pre-installed vs actually required
-packages diverges.</p>
-
-<p class="hl-para">I did try a similar approach that used <code>bundle cache</code> to pull all the deps into
-a <code>vendor/cache</code> folder and then copy <em>that</em> across into the new image, but I
-had weird permissions errors that I didn’t have the time to figure out. If
-you’ve got tips on whether that’s a more “bundler-y” way to do things then <a href="mailto:ben@benswift.me">hit
-me up</a>.</p>
-
-<p>I want to give a shoutout to Jan Akerman who wrote <a href="https://janakerman.co.uk/docker-git-clone/">a helpful blog
-post</a> which got me started—and
-some of the Dockerfile is taken from that post.</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="web" /><summary type="html"><![CDATA[I (and, increasingly many of my colleagues) are using Jekyll to create open (CC-licenced), hackable, acessible course websites &amp; teaching content for our classes. We use a self-hosted GitLab server for all the websites sources, and then build/deploy them with GitLab CI. It works well, it means I don’t have to fight with our LMS to do interesting things, and it means I can open my learning materials to everyone (not just those who are privileged enough to be able to pay the fees to study at the ANU).]]></summary></entry></feed>
+</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[]]></summary></entry></feed>
