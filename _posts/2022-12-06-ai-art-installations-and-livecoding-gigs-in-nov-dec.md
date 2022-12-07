@@ -23,3 +23,7 @@ conference](http://www.ozchi.org/2022/creative_4.html). There's no video online
 yet, but we did record it (not a clean feed from the desk, but enough to get the
 gist) and I'll put the video up on the [livecoding page]({% link livecoding.md
 %}) as soon as I can.
+
+Here's a pic to whet your appetite.
+
+{% include picture.html file="images/livecoding/ben-ushini-ozchi-2022.jpg" alt="Ben & Ushini on a stage llivecoding at the OzCHI Connected Creativity gig" credit="Bernie Gray" %}
