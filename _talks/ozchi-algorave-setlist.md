@@ -3,7 +3,6 @@ title: OzCHI Connected Creativity Algorave
 subtitle: Dec 1, Ainslie Arts Centre
 permalink: /gig-setlist/
 layout: reveal
-hidden: true
 setlist:
   - artist: Niamh McCool
     title: The internet as metaphor for the Sea
@@ -15,6 +14,7 @@ setlist:
     title: Cubing Sound Ensemble
   - artist: Bernard Gray
     title: A Year of Sharing Livecoding
+published: false
 ---
 
 <section data-background-color="black">
