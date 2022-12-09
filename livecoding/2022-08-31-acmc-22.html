@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Mapping over table rows in org-mode | benswift.me</title>
+<title>ACMC’22 Evening Concert #1 | benswift.me</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Mapping over table rows in org-mode" />
+<meta property="og:title" content="ACMC’22 Evening Concert #1" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’m an Emacs guy, and so if I’ve got some simple tabular data I’d much rather keep it in an org-mode table than have to fire up Excel." />
-<meta property="og:description" content="I’m an Emacs guy, and so if I’ve got some simple tabular data I’d much rather keep it in an org-mode table than have to fire up Excel." />
-<link rel="canonical" href="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" />
-<meta property="og:url" content="https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/" />
+<meta name="description" content="livecoder &amp; researcher homepage - code, creativity, culture" />
+<meta property="og:description" content="livecoder &amp; researcher homepage - code, creativity, culture" />
+<link rel="canonical" href="https://benswift.me/livecoding/2022-08-31-acmc-22.html" />
+<meta property="og:url" content="https://benswift.me/livecoding/2022-08-31-acmc-22.html" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-03-09T19:53:00+11:00" />
+<meta property="article:published_time" content="2022-08-31T00:00:00+10:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Mapping over table rows in org-mode" />
+<meta property="twitter:title" content="ACMC’22 Evening Concert #1" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2019-03-09T19:53:00+11:00","datePublished":"2019-03-09T19:53:00+11:00","description":"I’m an Emacs guy, and so if I’ve got some simple tabular data I’d much rather keep it in an org-mode table than have to fire up Excel.","headline":"Mapping over table rows in org-mode","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/"},"url":"https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2022-08-31T00:00:00+10:00","datePublished":"2022-08-31T00:00:00+10:00","description":"livecoder &amp; researcher homepage - code, creativity, culture","headline":"ACMC’22 Evening Concert #1","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/livecoding/2022-08-31-acmc-22.html"},"url":"https://benswift.me/livecoding/2022-08-31-acmc-22.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -48,10 +48,10 @@
 	
 	
 
-	<a class="current" href="/blog/index.html">blog</a>
+	<a href="/blog/index.html">blog</a>
 	<a href="/research/">research</a>
 	<a href="/teaching/">teaching</a>
-	<a href="/livecoding/index.html">livecoding</a>
+	<a class="current" href="/livecoding/index.html">livecoding</a>
 	<a href="/talks/index.html">talks</a>
 	<a href="/bio/">bio</a>
 
@@ -69,117 +69,24 @@
 
 	  <main aria-label="Content">
 		<article>
-  <p class="post-date">09 Mar '19</p>
-  <h1>Mapping over table rows in org-mode</h1>
+  <p class="post-date">31 Aug '22</p>
+  <h1>ACMC'22 Evening Concert #1</h1>
 <p class="post-tag-container">
-  
-  <a class="post-tag" href='/blog/tag/emacs'>
-	emacs
-  </a>
   
 </p>
 
 
-  <p>I’m an <a href="https://www.gnu.org/software/emacs/">Emacs</a> guy, and so if I’ve got some
-simple tabular data I’d <em>much</em> rather keep it in an
-<a href="https://orgmode.org">org-mode</a> table than have to fire up Excel.</p>
+  <picture style="position: relative;">
+  <img alt="Ben &amp; Ushini livecoding at ACMC'22" src="/assets/images/livecoding/ben-ushini-acmc-22.jpg" />
 
-<p>Here’s an example:</p>
+  
+</picture>
 
-<!-- note: the language specifiers for the code blocks in this post are wrong, but they're the "best fit" -->
-
-<pre><code class="language-ruby">#+NAME: pap-table
-| first name  | last name | yearly-income |
-|-------------|-----------|---------------|
-| Mr          | Bennett   |          2000 |
-| Fitzwilliam | Darcy     |         10000 |
-| Charles     | Bingley   |          5000 |
-</code></pre>
-
-<p>If the prospect of having to keep all those <code>|</code> characters manually aligned is
-freaking you out, don’t worry—<code>orgtbl-mode</code> does it all for you automatically.</p>
-
-<p>Now, I often want to get my functional programming on and apply a function to
-all the rows of the table. Org-mode does have some special syntax with bunch of
-cool features for doing arithmetic on the cells (just like Excel formulas) but
-I’m usually happier just writing regular elisp to get the job done.</p>
-
-<p>The nicest<sup id="fnref:nicer" role="doc-noteref"><a href="#fn:nicer" class="footnote" rel="footnote">1</a></sup> way I’ve found to do this is to give the table a <strong>name</strong> (in
-the example above the table name is <code>pap-table</code>—can you guess why?). Then, you
-can tell an elisp <a href="https://orgmode.org/manual/Structure-of-code-blocks.html">code
-block</a> about the data
-in that table like so (note the <code>:var table=pap-table</code> at the start):</p>
-
-<pre><code class="language-scheme">#+BEGIN_SRC emacs-lisp :var table=pap-table
-  (-map
-   (lambda (row)
-     (cl-destructuring-bind (first last income) row
-       (list
-        (format "Mr. %s is a man of %s fortune; %s a year."
-                last
-                (if (&lt; income 2500) "small" "large")
-                income))))
-   table)
-#+END_SRC
-</code></pre>
-
-<p>Then, when you evaluate the code block with <code>C-c C-c</code> (or just <code>, ,</code> in
-Spacemacs) it’ll return the “result”:</p>
-
-<pre><code class="language-ruby">#+RESULTS:
-| Mr. Bennett is a man of small fortune; 2000 a year. |
-| Mr. Darcy is a man of large fortune; 10000 a year.  |
-| Mr. Bingley is a man of large fortune; 5000 a year. |
-</code></pre>
-
-<p>This is really handy, as you can imagine. I use it for all sorts of things,
-including sending “mail merge” emails with template values (since I also use
-<a href="https://www.djcbsoftware.nl/code/mu/mu4e.html">Emacs as my mail
-client</a>—sending an email is
-just an elisp function call away).</p>
-
-<h2 id="caveats">Caveats</h2>
-
-<p>There are a few “tricks” in the above process which took me a while to figure
-out, so hopefully by listing them here I can save others a bunch of time &amp;
-hassle.</p>
-
-<ul>
-  <li>
-    <p>The elisp doesn’t actually know about the column names from the table—I had
-to re-bind them in the code block using <code>cl-destructuring-bind</code>. Make sure you
-change the bindings if you change the names/order of the columns in the table!</p>
-  </li>
-  <li>
-    <p>Org-mode tables don’t have a way of specifying the column “type”, so while
-it’ll try it’s best with the basics (e.g. detecting strings vs numbers)
-sometimes it gets confused. It’s probably worth putting an explicit e.g.
-<code>string-to-number</code> in if you want to be sure.</p>
-  </li>
-  <li>
-    <p>In the example above my elisp block returns a value (a list, since I’m using
-<code>-map</code> from the excellent <a href="https://github.com/magnars/dash.el"><code>dash.el</code>
-library</a>) and that’s why the results get
-nicely formatted in the results block. If your code is side-effectful but
-doesn’t return a value then you see the results in that place, you’ll have to
-look elsewhere (e.g. if you call <code>message</code> you’ll need to look in the
-<code>*Messages*</code> buffer as usual).</p>
-  </li>
-  <li>
-    <p>Further to the previous caveat, you’ll notice that I’m actually wrapping the
-result of the inner <code>lambda</code> in another <code>list</code>, so the output of the code
-block is actually a list of lists. I could have just returned a list of the
-strings, but then it would be interpreted as an <em>1×n</em> table, rather than the
-(nicer looking on the page) <em>n×1</em> table shown above.</p>
-  </li>
-</ul>
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:nicer" role="doc-endnote">
-      <p>if there’s a nicer way, please <a href="https://twitter.com/benswift">let me know</a>! <a href="#fnref:nicer" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>A livecoding duo set with my collaborator Ushini Attanayake for the <a href="https://www.acmc2022.com/day-one-evening-concert">2022
+Australasian Computer Music Conference
+(ACMC’22)</a>. An (audio)
+recording was captured from the desk—I’m in the process of tracking it down
+and then I’ll post it here.</p>
 
 </article>
 
@@ -229,8 +136,8 @@ strings, but then it would be interpreted as an <em>1×n</em> table, rather than
   <!-- open source humblebrag -->
   <p>
 	site revision <code>adf47410a</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/adf47410a/_posts/2019-03-09-mapping-over-table-rows-in-org-mode.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2019-03-09-mapping-over-table-rows-in-org-mode.md">page history</a>
+	<a href="https://github.com/benswift/benswift.github.io/blob/adf47410a/_livecoding/2022-08-31-acmc-22.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_livecoding/2022-08-31-acmc-22.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
