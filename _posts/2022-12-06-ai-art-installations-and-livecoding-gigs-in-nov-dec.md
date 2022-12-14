@@ -18,6 +18,14 @@ it's an artwork, so mostly I built it because I could, but some folks wanna know
 "what's the practical application of this stuff" so I wrote some words to give
 plausible deniability).
 
-Also, Ushini & I did another [livecoding set at the OzCHI 2022
-conference](http://www.ozchi.org/2022/creative_4.html)---pics & video on the
-[livecoding page]({% link _livecoding/2022-12-01-ozchi-22.md %}).
+Here's a 90min video of every single stable-diffusion image generated over the
+full 2 weeks of the exhibition. Not necessarily the sort of thing you'd sit down
+and watch from start to finish, but fun to dip in and out of. Even at 8fps it's
+still possible to watch the gestalt change over time (and it's also interesting
+to see which prompts the humans in the room put in).
+
+{% include youtube.html id="_9gLWebIeeY" %}
+
+On the livecoding front, Ushini & I did another [livecoding set at the OzCHI
+2022 conference](http://www.ozchi.org/2022/creative_4.html)---pics & video on
+the [livecoding page]({% link _livecoding/2022-12-01-ozchi-22.md %}).
