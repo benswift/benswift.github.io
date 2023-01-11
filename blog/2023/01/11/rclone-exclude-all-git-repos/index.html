@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making | benswift.me</title>
+<title>rclone: exclude all git repos | benswift.me</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making" />
+<meta property="og:title" content="rclone: exclude all git repos" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My talk at CHI ‘12: SIGCHI Conference on Human Factors in Computing Systems. Here’s the paper." />
-<meta property="og:description" content="My talk at CHI ‘12: SIGCHI Conference on Human Factors in Computing Systems. Here’s the paper." />
-<link rel="canonical" href="https://benswift.me/talks/chi-12/" />
-<meta property="og:url" content="https://benswift.me/talks/chi-12/" />
+<meta name="description" content="For a long time I’ve used rclone for remote backups and it’s awesome. I have a script which syncs all the files I care about on my laptop to cloudstor (which, being on the Australian university network has the benefit that I get 1Gbps upload when I’m on the ANU network). My institution (the ANU)" />
+<meta property="og:description" content="For a long time I’ve used rclone for remote backups and it’s awesome. I have a script which syncs all the files I care about on my laptop to cloudstor (which, being on the Australian university network has the benefit that I get 1Gbps upload when I’m on the ANU network). My institution (the ANU)" />
+<link rel="canonical" href="https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/" />
+<meta property="og:url" content="https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2012-05-09T00:00:00+10:00" />
+<meta property="article:published_time" content="2023-01-11T00:00:00+11:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making" />
+<meta property="twitter:title" content="rclone: exclude all git repos" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2012-05-09T00:00:00+10:00","datePublished":"2012-05-09T00:00:00+10:00","description":"My talk at CHI ‘12: SIGCHI Conference on Human Factors in Computing Systems. Here’s the paper.","headline":"Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/chi-12/"},"url":"https://benswift.me/talks/chi-12/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2023-01-11T00:00:00+11:00","datePublished":"2023-01-11T00:00:00+11:00","description":"For a long time I’ve used rclone for remote backups and it’s awesome. I have a script which syncs all the files I care about on my laptop to cloudstor (which, being on the Australian university network has the benefit that I get 1Gbps upload when I’m on the ANU network). My institution (the ANU)","headline":"rclone: exclude all git repos","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/"},"url":"https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -48,11 +48,11 @@
 	
 	
 
-	<a href="/blog/index.html">blog</a>
+	<a class="current" href="/blog/index.html">blog</a>
 	<a href="/research/">research</a>
 	<a href="/teaching/">teaching</a>
 	<a href="/livecoding/index.html">livecoding</a>
-	<a class="current" href="/talks/index.html">talks</a>
+	<a href="/talks/index.html">talks</a>
 	<a href="/bio/">bio</a>
 
 	<!-- social icons -->
@@ -68,12 +68,67 @@
 </header>
 
 	  <main aria-label="Content">
-		<article><h1>Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making</h1><p>My talk at <a href="http://chi2012.acm.org">CHI ‘12: SIGCHI Conference on Human Factors in Computing
-Systems</a>. <a href="/research/#swiftBecomingsoundAffectAssemblage2012">Here’s the paper</a>.</p>
+		<article>
+  <p class="post-date">11 Jan '23</p>
+  <h1>rclone: exclude all git repos</h1>
+<p class="post-tag-container">
+  
+  <a class="post-tag" href='/blog/tag/tools'>
+	tools
+  </a>
+  
+</p>
 
-<p><a href="/assets/pdf/chi-12.pdf">slides <svg class="icon"><use xlink:href="#fas.fa-file-pdf"></use></svg></a></p>
+
+  <p>For a long time I’ve used <a href="https://rclone.org">rclone</a> for remote backups and
+it’s awesome. I have a script which syncs all the files I care about on my
+laptop to cloudstor (which, being on the Australian university network has the
+benefit that I get 1Gbps upload when I’m on the ANU network). My institution
+(the ANU)</p>
+
+<p>However, it turns out that
+<a href="https://support.aarnet.edu.au/hc/en-us/articles/5697089309711">cloudstor</a> is
+shutting down at the end of this year, so I need to find a new home for my
+backups. I’ve been told that the “replacement” is to use my institutional
+OneDrive account.</p>
+
+<p>My feelings about closing down useful (local) infrastructure and centralising
+things on one of the big cloud providers notwithstanding, this should be an easy
+change—<a href="https://rclone.org/onedrive/">rclone supports OneDrive</a>, so it’s a
+simple config change to move over.</p>
+
+<p>However, I figured I’d take the opportunity to fix something which had long
+bothered me. I have a <em>lot</em> of stuff in git repos which don’t need to be backed
+up with rclone, and they just slow down the backup process. I wanted to get
+rclone to ignore all git repos, and although it has an <a href="https://rclone.org/filtering/">include/exclude
+filtering</a> system it’s not easy to get it to
+filter all git repos (trust me, <a href="https://forum.rclone.org/t/ignore-all-git-repos-when-syncing/33023">I
+checked</a>).</p>
+
+<p>Now that it’s summertime I had a chance to make it work, and since that forum
+thread is now locked I’m posting it here to save you some time, dear reader, if
+you ever want to do this for yourself. Feel free to use/modify it (MIT Licence)
+if it’s helpful.</p>
+
+<pre><code class="language-bash">#!/bin/bash
+
+EXCLUDE_FROM_FILE="/tmp/rclone-excludes.txt"
+CLONE_ROOT_DIR=~/Documents
+REMOTE=anu-onedrive
+
+## find all git repo enclosing folders (including trailing slash), munge them
+## into the form that rclone expects for its "exclude from" file
+cd $CLONE_ROOT_DIR &amp;&amp; find . -type d -name .git -exec  dirname {} \; | sed -e 's/$/\//' -e 's/^.//' &gt; $EXCLUDE_FROM_FILE
+
+## add a few extra excludes
+echo ".DS_Store" &gt;&gt; $EXCLUDE_FROM_FILE
+
+## sync to remote
+rclone sync --progress --exclude-from=$EXCLUDE_FROM_FILE $CLONE_ROOT_DIR $REMOTE:mitch-rclone/$CLONE_ROOT_DIR
+</code></pre>
 
 </article>
+
 
 	  </main>
 	  <footer>
@@ -120,8 +175,8 @@ Systems</a>. <a href="/research/#swiftBecomingsoundAffectAssemblage2012">Here’
   <!-- open source humblebrag -->
   <p>
 	site revision <code>4cc6ab577</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/4cc6ab577/_talks/chi-12.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/_talks/chi-12.md">page history</a>
+	<a href="https://github.com/benswift/benswift.github.io/blob/4cc6ab577/_posts/2023-01-11-rclone-exclude-all-git-repos.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2023-01-11-rclone-exclude-all-git-repos.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 
@@ -161,11 +216,7 @@ Systems</a>. <a href="/research/#swiftBecomingsoundAffectAssemblage2012">Here’
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
                   License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
                   -->
-              <symbol id='fas.fa-file-pdf' viewBox='0 0 384 512'>
-            <title>file-pdf</title>
-            <path class='path1' d='M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z'></path>
-        </symbol>
-        <symbol id='fab.fa-github' viewBox='0 0 496 512'>
+              <symbol id='fab.fa-github' viewBox='0 0 496 512'>
             <title>github</title>
             <path class='path1' d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'></path>
         </symbol>
