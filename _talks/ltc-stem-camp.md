@@ -6,7 +6,7 @@ permalink: /talks/ltc-stem-camp/
 summary: >-
   Computers are really good at following instructions; they never get bored, and they never make mistakes. The tricky part is finding the right sequence of instructions (the right pattern) so that the work that the computer does is useful. How does this even work with music?
 
-  An interactive presentation/workshop given at the [Lake Tuggeranong College](http://www.ltc.act.edu.au) STEM camp.
+  An interactive presentation/workshop given at the [Lake Tuggeranong College](https://www.ltc.act.edu.au) STEM camp.
 ---
 
 {% include slides/title.html %}

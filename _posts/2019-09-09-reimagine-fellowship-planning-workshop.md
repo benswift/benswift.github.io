@@ -29,7 +29,7 @@ There are lots of folks, in a few different places:
 
 ### Internal
 
-- [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
+- [Charles Martin](https://charlesmartin.com.au), RSCS Lecturer and creative
   code practitioner
 
 - [Genevieve Bell](https://cecs.anu.edu.au/people/genevieve-bell),
@@ -49,18 +49,18 @@ There are lots of folks, in a few different places:
 
 - Kit Devine, SoAD artist & lecturer
 
-- [Tony Curran](http://tonycurran.net/), artist, SoAD & RSCS lecturer
+- [Tony Curran](https://tonycurran.net/), artist, SoAD & RSCS lecturer
 
 - [Erica Seccombe](https://www.ericaseccombe.com), ANU SoAD artist & researcher,
   board member of ANAT (the Australian Network for Art & Technology)
 
-- [Dierdre Feeney](http://www.deirdrefeeney.com), artist exploring compositions
+- [Dierdre Feeney](https://www.deirdrefeeney.com), artist exploring compositions
   of the constructed + projected (moving) image
 
 - [Madeleine Parker](https://www.linkedin.com/in/madeleine-parker-928644102/),
   SCI ART CBR Community Co-ordinator
 
-- [Craig Edwards](http://www.dicksonc.act.edu.au/our_school/principals_welcome),
+- [Craig Edwards](https://www.dicksonc.act.edu.au/our_school/principals_welcome),
   Dickson College Principal
 
 - [Morgan Marshall](https://robogals.org/locations/asia-pacific-apac/canberra/),

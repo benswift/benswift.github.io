@@ -71,7 +71,7 @@ those groups are certainly over-represented in our undergraduate CS cohort
 compared to other groups. It's important to point out that increasing the
 representation of under-represented groups in CS is a wicked problem which needs
 to be tackled from many different angles. Still, as the **A** in
-[STE**A**M](http://stemtosteam.org), the arts provide one angle for engaging
+[STE**A**M](https://stemtosteam.org), the arts provide one angle for engaging
 students who might not normally consider coding and computer science.
 
 ### Existing alternatives
@@ -88,10 +88,10 @@ There are a few outreach programs [advertised on the CECS
 website](https://cecs.anu.edu.au/study/more-information/outreach-programs-schools),
 however the listed programs are dominated by Engineering rather than CS (9 vs 4
 programs) and of the 4 CS programs I'm involved with 2 of them already. There's
-also the official [ANU Extension](http://extension.anu.edu.au) scheme for Year
+also the official [ANU Extension](https://extension.anu.edu.au) scheme for Year
 11 & 12 students in the ACT, however CS doesn't yet participate in this scheme.
 Across campus, there's the ANU School of Music's [Open School of
-Music](http://music.cass.anu.edu.au/open-school) for school students, but
+Music](https://music.cass.anu.edu.au/open-school) for school students, but
 there's no music technology stream.
 
 There are several great organisations working to increase diversity in CS,
@@ -103,7 +103,7 @@ these organisations are primarily based around computer science/engineering, not
 interdisciplinary art & code.
 
 In 2018 I (with [Dr. Alec
-Hunter](http://music.cass.anu.edu.au/people/dr-alexander-hunter) from the ANU
+Hunter](https://music.cass.anu.edu.au/people/dr-alexander-hunter) from the ANU
 School of Music) started the [ANU Laptop
 Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/), which attempted
 to provide a similar open-ended space for creative exploration to the c/c/c
@@ -148,7 +148,7 @@ The c/c/c studio will be developed through three stages:
    learning](https://teaching.unsw.edu.au/assessing-studio-based-learning)
    model, with each student working on their own code-based music or visual
    artwork as a semester-long creative "work". The [Studio Teaching
-   Project](http://www.studioteaching.org) (a research collaboration between
+   Project](https://www.studioteaching.org) (a research collaboration between
    UNSW, UQ, RMIT and UTas) has released some helpful material for employing
    this teaching model, which we will make use of in developing the c/c/c
    curriculum.
@@ -184,11 +184,11 @@ c/c/c studio sessions & masterclasses, but here are some initial plans:
 {: #anu-extension-accreditation}
 
 If the c/c/c studio receives accreditation as an official [ANU
-Extension](http://extension.anu.edu.au) program then graduates of the two-year
+Extension](https://extension.anu.edu.au) program then graduates of the two-year
 c/c/c studio program will receive credit (one course worth) into our first-year
 CS program if they come and study at CECS. This is the same as the equivalent
 [Discovering Engineering extension
-program](http://extension.anu.edu.au/study/discovering-engineering), which gives
+program](https://extension.anu.edu.au/study/discovering-engineering), which gives
 students credit for a first-year ENGN course if they study Engineering at the
 ANU.
 
@@ -249,9 +249,9 @@ using the c/c/c studio curriculum, which will be made freely available).
 
 In stage one I will build on my (and others) existing relationships in
 identifying early adopters. In schools, I will work with teachers from [Dickson
-College](http://www.dicksonc.act.edu.au), [Radford
+College](https://www.dicksonc.act.edu.au), [Radford
 College](https://www.radford.act.edu.au), [Lyneham
-High](http://lynehamhs.act.edu.au), [Canberra (Boys)
+High](https://lynehamhs.act.edu.au), [Canberra (Boys)
 Grammar](https://cgs.act.edu.au) and [Canberra Girls
 Grammar](https://www.cggs.act.edu.au). I will also work with relevant community
 & arts "special interest" organisations, such as
@@ -297,7 +297,7 @@ intangible stuff, so I'm not sure if they count as a deliverables.
   - [Alec Hunter](https://researchers.anu.edu.au/researchers/hunter-at), ANU
     SoM, previously the convenor of the Open School of Music program
 
-  - [Charles Martin](http://charlesmartin.com.au), RSCS Lecturer and creative
+  - [Charles Martin](https://charlesmartin.com.au), RSCS Lecturer and creative
     code practitioner
 
   - [Geoff
@@ -315,7 +315,7 @@ intangible stuff, so I'm not sure if they count as a deliverables.
   - [Madeleine Parker](https://www.linkedin.com/in/madeleine-parker-928644102/),
     SCI ART CBR Community Co-ordinator
 
-  - **Helen Kaye**, [ANU Extension](http://extension.anu.edu.au) Coordinator
+  - **Helen Kaye**, [ANU Extension](https://extension.anu.edu.au) Coordinator
 
 ## Success Metrics {#success-metrics}
 
@@ -393,7 +393,7 @@ my service component (currently 0.2fte) and half of my teaching component
 - giving up my role as student experience convenor (service)
 
 - handing [COMP2300](https://cs.anu.edu.au/courses/comp2300/) over to [Charles
-  Martin](http://charlesmartin.com.au)
+  Martin](https://charlesmartin.com.au)
 
 - moving from being the only lecturer to leading a two-lecturer teaching team
   for [COMP1720](https://cs.anu.edu.au/courses/comp1720/) and .
@@ -448,7 +448,7 @@ projectors, etc.)
       <td>end 2020</td>
     </tr>
     <tr>
-      <td>c/c/c studio doesn't meet the requirements for official <a href="http://extension.anu.edu.au">ANU Extension</a> accreditation</td>
+      <td>c/c/c studio doesn't meet the requirements for official <a href="https://extension.anu.edu.au">ANU Extension</a> accreditation</td>
       <td>Ben, CECS education committee</td>
       <td>talk to <em>Discovering Engineering</em> people, and if it doesn't work it's no big deal</td>
       <td>2020</td>

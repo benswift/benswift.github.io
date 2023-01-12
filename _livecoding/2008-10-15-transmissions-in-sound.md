@@ -8,7 +8,7 @@ curators:
 artists:
   - Ben Swift
 event_url:
-venue_url: http://music.cass.anu.edu.au/
+venue_url: https://music.cass.anu.edu.au/
 ---
 
 My first proper curated livecoding gig, way back in 2008. No photos or videos

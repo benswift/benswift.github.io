@@ -122,7 +122,7 @@ Docs---see below).
 
 #### Reflections
 
-- since the [ACMA](http://computermusic.org.au/) has its roots in academia, the
+- since the [ACMA](https://computermusic.org.au/) has its roots in academia, the
   majority of the audience for this conference are familiar with the whole "call
   for papers -> peer review -> notification -> conference attendance" thing,
   however there were certainly people for whom this process was unfamiliar and a

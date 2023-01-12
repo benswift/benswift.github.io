@@ -151,7 +151,7 @@ I have also written and delivered the following courses:
   and is now being delivered by [Uwe
   Zimmer](https://researchers.anu.edu.au/researchers/zimmer-ur). In this course
   students take a complex computer system ([the STM32L476G discovery "disco"
-  board](http://www.st.com/en/evaluation-tools/32l476gdiscovery.html)) home from
+  board](https://www.st.com/en/evaluation-tools/32l476gdiscovery.html)) home from
   week 1. That might seem daunting---and it's true that there's more stuff on
   such a board than one can master in one semester---but students can still
   learn a lot about CPUs (and how programs are organised and executed) by the
@@ -160,7 +160,7 @@ I have also written and delivered the following courses:
 - The [COMP2710 _Internet of Things (IoT)_ China Study
   Tour](https://cs.anu.edu.au/courses/china-study-tour/) is an in-country
   intensive study course conducted in partnership with the [Beijing Institute of
-  Technology](http://english.bit.edu.cn/). In this course students learn about
+  Technology](https://english.bit.edu.cn/). In this course students learn about
   low-cost, network-connected embedded computing devices & their relationship to
   the broader computing landscape through building a prototype IoT artefact (and
   releasing the source code, parts list and build instructions on GitHub), while
@@ -199,10 +199,10 @@ I have also written and delivered the following courses:
 ### Academic {#service-academic}
 
 - **2022** Creative Computing Chair,
-  [_OzCHI_](http://www.ozchi.org/2022/organisers.html)
+  [_OzCHI_](https://www.ozchi.org/2022/organisers.html)
 
 - **2021** Organising Committee, [_Australasian Computer Music
-  Conference_](http://acmc2021.art)
+  Conference_](https://acmc2021.art)
 
 - **2019--** Vice President, [_Australasian Computer Music
   Association_](https://computermusic.org.au/committee/)
@@ -212,25 +212,25 @@ I have also written and delivered the following courses:
   Academy_](https://acdict.edu.au/category/alta/)
 
 - **2020** General Chair, [_Australasian Computer Music
-  Conference_](http://acmc2020.com)
+  Conference_](https://acmc2020.com)
 
 - **2013** Chair, [_VL/HCC Artist-Centred Computing
   Workshop_](https://conferences.computer.org/VLHCC/).
 
 - **2011** Student Volunteer Chair,
-  [_OzCHI_](http://www.ozchi.org/ozchi2011/committee/committee.html)
+  [_OzCHI_](https://www.ozchi.org/ozchi2011/committee/committee.html)
 
 - **2010--2014** Treasurer, [_Australasian Computer Music
   Society_](https://computermusic.org.au/committee/)
 
 I have served as a grant and paper reviewer for
 [CHI](https://sigchi.org/conferences/conference-history/chi/),
-[OzCHI](http://www.ozchi.org/ozchi2011/committee/committee.html),
+[OzCHI](https://www.ozchi.org/ozchi2011/committee/committee.html),
 [ACMC](https://computermusic.org.au), [NIME](https://www.nime.org),
 [IEEEVR](https://ieeevr.org), [FWF Austrian Science
-Fund](https://www.fwf.ac.at/en/), [CMJ](http://computermusicjournal.org),
+Fund](https://www.fwf.ac.at/en/), [CMJ](https://computermusicjournal.org),
 [Leonardo](https://www.mitpressjournals.org/loi/leon),
-[ICSE](http://www.icse-conferences.org) and
+[ICSE](https://www.icse-conferences.org) and
 [VL/HCC](https://conferences.computer.org/VLHCC/) and [SIGGRAPH
 Asia](https://www.siggraph.org/siggraph-events/conferences/).
 

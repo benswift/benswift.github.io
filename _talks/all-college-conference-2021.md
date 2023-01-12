@@ -44,7 +44,7 @@ make a **lesson plan** for exploring a computing concept through creative code
 </p>
 
 - you can choose which concept (from e.g. [BSSS
-  Frameworks](http://www.bsss.act.edu.au/curriculum/Frameworks), [Australian
+  Frameworks](https://www.bsss.act.edu.au/curriculum/Frameworks), [Australian
   Curriculum](https://www.australiancurriculum.edu.au/f-10-curriculum/technologies/digital-technologies/),
   [CS concept
   inventories](https://scholar.google.com/scholar?q=computer%20science%20concept%20inventory),

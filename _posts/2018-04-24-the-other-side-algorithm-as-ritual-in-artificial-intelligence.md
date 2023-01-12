@@ -18,7 +18,7 @@ The ritual will **start on time at 9am** in [room
 514B](https://chi2018.acm.org/technical-program/?maps=true)---it's a small room,
 so please come a touch early to make sure you don't miss out on a seat.
 
-See [Kieran's blog](http://kieranbrowne.com/works/the-other-side/) for more
+See [Kieran's blog](https://kieranbrowne.com/works/the-other-side/) for more
 details about tomorrow's ritual, and read the [paper]({% link
 assets/documents/preprints/browne_swift_2018_the_other_side.pdf %}) for the full
 story.

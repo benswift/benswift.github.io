@@ -10,7 +10,7 @@ push/pull from our on-prem GitLab servers (which I need to do _all the time_).
 The recommended solution is to come in via a VPN---which is not a terrible idea
 in principle. However, the institution's recommended setup requires some janky
 GlobalProtect client, which (for me at least) was pretty crashy. As an
-alternative, [openconnect](http://www.infradead.org/openconnect/) is just a
+alternative, [openconnect](https://www.infradead.org/openconnect/) is just a
 `brew install openconnect` away (on macOS, at least), and after a bit of setting
 up, it works seamlessly.
 

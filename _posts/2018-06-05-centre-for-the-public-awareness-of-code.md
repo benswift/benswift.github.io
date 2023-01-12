@@ -18,7 +18,7 @@ partially because I'm trying t
 
 _What's your favourite scientist or scientific theory/fact?_ This one is harder,
 but thanks to great work by many
-[gifted](https://en.wikipedia.org/wiki/Carl_Sagan) [science](http://drkarl.com/)
+[gifted](https://en.wikipedia.org/wiki/Carl_Sagan) [science](https://drkarl.com/)
 [communicators](https://twitter.com/ANU_CPAS) people increasingly have an answer
 to those questions.
 
@@ -28,7 +28,7 @@ one. In fact, most folks probably won't understand the question. Yet code (and
 the algorithms they manifest) _does_ impact the world today. Mark Zuckerberg is
 still
 [travelling](https://www.washingtonpost.com/news/the-switch/wp/2018/04/11/zuckerberg-facebook-hearing-congress-house-testimony/)
-[around](http://www.latimes.com/business/technology/la-fi-tn-facebook-zuckerberg-europe-20180522-story.html)
+[around](https://www.latimes.com/business/technology/la-fi-tn-facebook-zuckerberg-europe-20180522-story.html)
 with a suit and a haircut apologising for the way his code changed the course of
 history. It also true that a naive "code doesn't kill people; people kill
 people" techno-dualism doesn't really stack up in practice. The modern world is
@@ -39,9 +39,9 @@ This isn't about setting up a dichotomy between those who "get" code and those
 who don't, and it certainly isn't about adding a moral dimension to code
 literacy (so that if you don't code, you're a bad person). There are some
 amazing code communicators out there---check out Dan Shiffman on the [Coding
-Train](http://thecodingtrain.com/). And there's stuff like [Critical Code
+Train](https://thecodingtrain.com/). And there's stuff like [Critical Code
 Studies
-(CCS)](http://www.electronicbookreview.com/thread/electropoetics/codology),
+(CCS)](https://www.electronicbookreview.com/thread/electropoetics/codology),
 although that's more about understanding code-as-text _deeply_ rather than
 raising awareness of what code is currently doing in the world.
 

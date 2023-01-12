@@ -33,9 +33,9 @@ Here's the setlist:
 
 | time     | artist                                                                                                                                     |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| 6:00pm   | [Charles Martin](http://charlesmartin.com.au)                                                                                              |
+| 6:00pm   | [Charles Martin](https://charlesmartin.com.au)                                                                                              |
 | 6:10pm   | [Fiona Sullivan](https://www.fisounds.com) (USA), Ben Swift, [Kieran Browne](https://kieranbrowne.com)                                     |
-| 6:25pm   | [Chloë Hobbs](https://chloecomposes.com), [Alec Hunter](https://www.alexanderhunter.com.au), [Charles Martin](http://charlesmartin.com.au) |
+| 6:25pm   | [Chloë Hobbs](https://chloecomposes.com), [Alec Hunter](https://www.alexanderhunter.com.au), [Charles Martin](https://charlesmartin.com.au) |
 | 6:40pm   | [Fiona Sullivan](https://www.fisounds.com) (USA)                                                                                           |
 | _7:00pm_ | _finish_                                                                                                                                   |
 

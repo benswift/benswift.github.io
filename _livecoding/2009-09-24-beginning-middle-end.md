@@ -8,7 +8,7 @@ curators:
 artists:
   - Ben Swift
 event_url:
-venue_url: http://soad.cass.anu.edu.au/gallery-exhibitions
+venue_url: https://soad.cass.anu.edu.au/gallery-exhibitions
 video_url: https://vimeo.com/7341091
 ---
 

@@ -19,7 +19,7 @@
    verb])
 
 (defn anu-logo-component []
-  [:a {:href "http://www.anu.edu.au"}
+  [:a {:href "https://www.anu.edu.au"}
    [:h1 {:style
          {:font-size "3rem"
           :color "#9ec9df"

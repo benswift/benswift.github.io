@@ -6,7 +6,7 @@ tags: web
 ---
 
 Welcome, traveller. You've managed to find my blog without being [eaten by a
-grue](http://zork.wikia.com/wiki/Grue). If you haven't visited for a while, you
+grue](https://zork.wikia.com/wiki/Grue). If you haven't visited for a while, you
 might have noticed that I've re-written my website. [Again]({%
 link _posts/2017-07-06-benswift-me-update-july-2017-edition.md %}).
 

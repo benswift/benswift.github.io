@@ -4,7 +4,7 @@ tags: ai cybernetics
 ---
 
 Back at my desk after a couple of days off I finally got a chance to fire up the
-[OpenAI ChatGPT](http://chat.openai.com) AI language model that everyone's
+[OpenAI ChatGPT](https://chat.openai.com) AI language model that everyone's
 talking about.
 
 Here's---and this is the honest truth---the first conversation I had with it.

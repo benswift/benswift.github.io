@@ -23,7 +23,7 @@ things_ which explore the way that **code** (software), **creativity**
 
 As a [livecoding artist]({% link livecoding.md %}) {% if fp %}I have{% else
 %}Ben has{% endif %} performed at international arts festivals, including the
-[International Symposium on Electronic Art](http://www.isea-web.org) (ISEA) and
+[International Symposium on Electronic Art](https://www.isea-web.org) (ISEA) and
 the [International Conference on Live Coding](https://iclc.toplap.org) (ICLC).
 {% if fp %}I'm{% else %}He's{% endif %} the Vice President of the [Australasian
 Computer Music Association](https://computermusic.org.au) (ACMA).

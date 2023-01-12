@@ -23,7 +23,7 @@ few trip highlights:
   link _posts/2019-03-20-reimagine-fellow-project-pitch.md %})
   
 - hanging out with [Sam Aaron](https://twitter.com/samaaron) (of [Sonic
-  Pi](http://sonic-pi.net) fame) to discuss ways to use creative coding as a
+  Pi](https://sonic-pi.net) fame) to discuss ways to use creative coding as a
   diverse & inclusive pathway into computing, the architecture of livecoding
   languages/environments, and again [making some
   music](https://www.twitch.tv/videos/551005336)
@@ -58,7 +58,7 @@ few trip highlights:
 
 All of these folks will be important collaborators going forward as we put the
 creative code curriculum together (next deadline: documents for the [ACT
-BSSS](http://www.bsss.act.edu.au) for accreditaion, due at the end of March). In
+BSSS](https://www.bsss.act.edu.au) for accreditaion, due at the end of March). In
 addition, I'm speaking next week at the National Future Schools festival (with
 [Bruce Fuda](https://aca.edu.au/about/)) on [Teaching Code with Music and
 Teaching Music with

@@ -97,7 +97,7 @@ few ideas about what it might look like.
 
 - a new code/creativity/culture major (at both undergraduate and masters level)
   where students take courses from within CECS, the [ANU School of Art &
-  Design](http://soad.cass.anu.edu.au), and the [ANU School of
+  Design](https://soad.cass.anu.edu.au), and the [ANU School of
   Music](https://music.anu.edu.au)
 
 - new courses within CECS on e.g. algorithmic music composition, creative
@@ -117,7 +117,7 @@ few ideas about what it might look like.
 
 - a centre of excellence for digital arts/music/multimedia research, teaching
   and creative practice (co-hosted by CECS and the [College of Arts & Social
-  Sciences](http://cass.anu.edu.au))
+  Sciences](https://cass.anu.edu.au))
 
 - a thoroughly non-traditional project-based "creative tech" masters program,
   with no classes, no heirarchies, just a bunch of brilliant students set loose
@@ -223,7 +223,7 @@ Concretely, that means:
   part of majors/minors/electives, etc.) as well as the other way around
 - co-employing academics across Colleges in joint positions
 - increasing our to participation in the ANU's interdisciplinary HDR programs
-  like [ICCR](http://rsha.cass.anu.edu.au/students/future/iccr)
+  like [ICCR](https://rsha.cass.anu.edu.au/students/future/iccr)
 
 ### Where in the world is this already happening? {#where-in-the-world-is-this-already-happening}
 
@@ -241,7 +241,7 @@ are in CS/Engineering Schools, or at least in design schools.
 > seemingly disparate research areas.
 
 > The [Frank-Ratchye STUDIO for Creative
-> Inquiry](http://studioforcreativeinquiry.org) at Carnegie Mellon University is
+> Inquiry](https://studioforcreativeinquiry.org) at Carnegie Mellon University is
 > a laboratory for atypical, anti-disciplinary, and inter-institutional research
 > at the intersections of arts, science, technology and culture.
 
@@ -255,21 +255,21 @@ are in CS/Engineering Schools, or at least in design schools.
 > Arts whose mission is to explore the imaginative use of communications
 > technologies.
 
-> The [Centre for Digital Music (c4dm)](http://c4dm.eecs.qmul.ac.uk) at Queen
+> The [Centre for Digital Music (c4dm)](https://c4dm.eecs.qmul.ac.uk) at Queen
 > Mary University of London is a world-leading multidisciplinary research group
 > in the field of Music & Audio Technology.
 
 > The [Embodied AudioVisual Interaction
-> (EAVI)](http://eavi.goldsmithsdigital.com) group at Goldsmiths is a research
+> (EAVI)](https://eavi.goldsmithsdigital.com) group at Goldsmiths is a research
 > group focused on embodied interaction with sound and image.
 
-> The [School for Poetic Computation](http://sfpc.io) is an artist run school in
+> The [School for Poetic Computation](https://sfpc.io) is an artist run school in
 > New York that was founded in 2013. A small group of students and faculty work
 > closely to explore the intersections of code, design, hardware and theory —
 > focusing especially on artistic intervention. It’s a hybrid of a school,
 > residency and research group.
 
-> The [Arts and Creativity Lab](http://anclab.org/joinus/) at the National
+> The [Arts and Creativity Lab](https://anclab.org/joinus/) at the National
 > University of Singapore provides an environment for arts-driven research and
 > technology development, as well as artistic practice and experimentation
 > related to scientific research methods and results
@@ -284,7 +284,7 @@ are in CS/Engineering Schools, or at least in design schools.
 
 ### Has the ANU ever had anything like this before?
 
-Sure, for example [this](http://www.avatar.com.au/courses/acat/), and it was
+Sure, for example [this](https://www.avatar.com.au/courses/acat/), and it was
 amazing. The story about why ACAT is no longer around is long, and I've only
 really ever heard it second/third-hand, and I'm not proposing to resurrect ACAT
 as part of the Reimagine Project. But it's important to know one's history.

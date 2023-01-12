@@ -12,7 +12,7 @@ Note: this is a personal bio page. If you're after a more "researcher-y" bio,
 then have a look at my [research page]({% link research.md %}), or check out my
 [CV]({% link cv.md %}) (which contains a lot of the same stuff).
 
-I'm a [Canberra](http://en.wikipedia.org/wiki/Canberra) lad, born and bred. One
+I'm a [Canberra](https://en.wikipedia.org/wiki/Canberra) lad, born and bred. One
 day I may move away from this place, but for now I'm here and quite happy about
 it.
 

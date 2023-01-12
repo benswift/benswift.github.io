@@ -4,7 +4,7 @@ tags: tools
 ---
 
 [My institution](https://anu.edu.au) now uses [MS
-Teams](http://teams.microsoft.com) for lots of things, including organising
+Teams](https://teams.microsoft.com) for lots of things, including organising
 classes & communicating with students. It's not perfect, but it's not terrible,
 and the pros & cons of Teams as a pedagogical platform are best left for another
 post.

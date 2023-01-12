@@ -10,8 +10,8 @@ Music's composition showcase. Thanks to everyone who attended, and congrats
 again to the students who learned a bunch of computer music stuff &
 build/composed and performed a working piece in one crazy semester. And an
 especially big thanks to my LENS co-directors
-[Charles](http://charlesmartin.com.au/) and
-[Alec](http://music.cass.anu.edu.au/people/dr-alexander-hunter).
+[Charles](https://charlesmartin.com.au/) and
+[Alec](https://music.cass.anu.edu.au/people/dr-alexander-hunter).
 
 There were more talented photographers than I present (and I'll put those photos
 & videos up when I track them down) but here are some photos I snapped of the

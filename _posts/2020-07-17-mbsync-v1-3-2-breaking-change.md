@@ -11,7 +11,7 @@ team.
 
 Anyway, mu doesn't care how you get your email onto your machine (i.e. into your
 `~/Maildir`), and so for that task I use
-[isync/mbsync](http://isync.sourceforge.net/mbsync.html) to download my mail
+[isync/mbsync](https://isync.sourceforge.net/mbsync.html) to download my mail
 (via IMAP) from [fastmail](https://www.fastmail.com/). My fastmail [config is
 online](https://github.com/benswift/.dotfiles/blob/master/mbsyncrc) if you want
 to see how I set it all up.

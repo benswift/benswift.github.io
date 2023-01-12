@@ -231,7 +231,7 @@ of interesting-sounding and culturally-significant rhythms to get people
 >
 > _Stewart, J (2010)_. [Articulating the African Diaspora through Rhythm:
 > Diatonic Rhythms, Nested Looping Structures, and the music of Steve
-> Coleman](http://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
+> Coleman](https://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
 
 ---
 
@@ -242,7 +242,7 @@ of interesting-sounding and culturally-significant rhythms to get people
 > framework. It is, however, in violation of the ethic of the ethnic Drum.
 >
 > _Friedberg, L (2003)_. [Drumming for
-> Dollars](http://www.chidjembe.com/drumdollars.html)
+> Dollars](https://www.chidjembe.com/drumdollars.html)
 
 {% include slides/youtube.html id="fn3KWM1kuAw" %}
 

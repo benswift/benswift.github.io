@@ -8,8 +8,8 @@ curators:
 artists:
   - Ben Swift
   - Andrew Sorensen
-event_url: http://www.isea2013.org/events/mume2013/
-venue_url: http://107.org.au
+event_url: https://www.isea2013.org/events/mume2013/
+venue_url: https://107.org.au
 video_url: https://vimeo.com/70016164
 ---
 

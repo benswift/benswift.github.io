@@ -608,7 +608,7 @@ Work in pairs or in small groups, work out the answers to the following question
 
 Work in pairs or in small groups, work out the answers to the following questions:
 
-1. Can you load the piano samples as well? ([Salamander piano](http://download.linuxaudio.org/lau/SalamanderGrandPianoV2/SalamanderGrandPianoV2_44.1khz16bit.tar.bz2)).
+1. Can you load the piano samples as well? ([Salamander piano](https://download.linuxaudio.org/lau/SalamanderGrandPianoV2/SalamanderGrandPianoV2_44.1khz16bit.tar.bz2)).
 2. Can you pay multiple drums with different tempo at the same time?
 
 ```xtlang

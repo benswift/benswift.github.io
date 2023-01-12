@@ -13,7 +13,7 @@ venue_url:
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I
 performed in 2014 as part of my student [Ari
-Purcell's](http://arrianpurcell.com) research project: _Visualising a Live
+Purcell's](https://arrianpurcell.com) research project: _Visualising a Live
 Coding Arts Process_. Ari developed a bunch of visualisation techniques (in
 Extempore) to use in a livecoding performance. They weren't just cool VJ
 visuals, they were designed to be overlaid on top of the code.

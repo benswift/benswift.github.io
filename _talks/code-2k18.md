@@ -5,7 +5,7 @@ date: "2018-11-19"
 permalink: /talks/code-2k18/
 summary: >-
   Where do new media creators fit in the modern university? A talk for [code
-  2k18: A Media Conference of Platforms, Devices and Screens](http://www.code2k18.com)
+  2k18: A Media Conference of Platforms, Devices and Screens](https://www.code2k18.com)
 ---
 
 {% include slides/title.html %}
@@ -35,13 +35,13 @@ code is my **instrument**
 
 {% include slides/background-image.html image="images/talks/code-2k18/alec-hunter.jpg" heading="Alec Hunter" %}
 
-[ANU School of Music](http://music.cass.anu.edu.au/people/dr-alexander-hunter)
+[ANU School of Music](https://music.cass.anu.edu.au/people/dr-alexander-hunter)
 
 [Performer, composer](https://alexanderhunter.co.uk/)
 
 {% include slides/background-image.html image="images/talks/code-2k18/JP-profile.jpg" heading="Jean-Philippe Demarais" bgsize="contain" %}
 
-[ANU School of Art & Design](http://soad.cass.anu.edu.au/people/jean-philippe-demarais)
+[ANU School of Art & Design](https://soad.cass.anu.edu.au/people/jean-philippe-demarais)
 
 {:.fragment}
 plus many more...

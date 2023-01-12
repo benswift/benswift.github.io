@@ -5,11 +5,11 @@ date: 2018-06-22 10:40
 tags: web
 ---
 
-This blog is built from [markdown](http://commonmark.org/help/) files using
+This blog is built from [markdown](https://commonmark.org/help/) files using
 [Jekyll](https://jekyllrb.com/) hosted on [GitHub
 pages](https://pages.github.com/), which saves a lot of hassle involved with DIY
 hosting[^hassle]. There are a bunch of [useful
-tutorials](http://blog.teamtreehouse.com/using-github-pages-to-host-your-website)
+tutorials](https://blog.teamtreehouse.com/using-github-pages-to-host-your-website)
 on how to set all this up.
 
 However, I like to have control over which plugins are used, etc. which GitHub

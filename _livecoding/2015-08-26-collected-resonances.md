@@ -7,8 +7,8 @@ curators:
   - Chloë Hobbs
 artists:
   - Ben Swift
-event_url: http://www.agac.com.au/event/collected-resonances-3/
-venue_url: http://music.cass.anu.edu.au/services/bookings/venues
+event_url: https://www.agac.com.au/event/collected-resonances-3/
+venue_url: https://music.cass.anu.edu.au/services/bookings/venues
 video_url: https://vimeo.com/314633596
 ---
 

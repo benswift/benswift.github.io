@@ -56,7 +56,7 @@ get an impromptu chance to show off what you're working on).
 
 [Philip Guo also emphasises how helpful it is to have a thing to talk about in a
 research supervisory
-meeting](http://pgbovine.net/advice-for-first-year-PhD-students.htm) (see the
+meeting](https://pgbovine.net/advice-for-first-year-PhD-students.htm) (see the
 "Intermission" video in the linked blog post).
 
 ### Are there any upcoming dates I should be aware of?

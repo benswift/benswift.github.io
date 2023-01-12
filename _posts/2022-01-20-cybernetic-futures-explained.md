@@ -231,7 +231,7 @@ To close, I want to stress that I'm not saying anything remotely new here about
 the connection between futuring and cybernetics---they're very often seen &
 discussed together. William Gibson, award-winning sci-fi novelist and sometime
 futurist was [steeped in cybernetic
-lore](http://www.nytimes.com/2007/08/19/magazine/19wwln-q4-t.html) when he
+lore](https://www.nytimes.com/2007/08/19/magazine/19wwln-q4-t.html) when he
 [coined the term
 "cyberspace"](https://www.themarginalian.org/2014/08/26/how-william-gibson-coined-cyberspace/).
 My boss [Genevieve Bell

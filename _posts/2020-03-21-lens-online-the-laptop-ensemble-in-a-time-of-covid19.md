@@ -47,5 +47,5 @@ while the world collapses around us (seriously, though, be nice to each other,
 don't hoard stuff and try and #flattenthecurve).
 
 [^lazy-pedagogy]:
-    the best educators, like the [best programmers](http://threevirtues.com),
+    the best educators, like the [best programmers](https://threevirtues.com),
     are [lazy](https://blog.optimus-education.com/why-lazy-teachers-are-best)

@@ -7,8 +7,8 @@ curators:
   - Martyn Jolly
 artists:
   - Ben Swift
-event_url: http://soad.cass.anu.edu.au/events/revenant-media
-venue_url: http://soad.cass.anu.edu.au/gallery-exhibitions
+event_url: https://soad.cass.anu.edu.au/events/revenant-media
+venue_url: https://soad.cass.anu.edu.au/gallery-exhibitions
 video_url: https://vimeo.com/78788032
 ---
 

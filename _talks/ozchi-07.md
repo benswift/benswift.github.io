@@ -7,7 +7,7 @@ permalink: /talks/ozchi-07/
 ---
 
 I gave my first ever conference presentation at [OzCHI
-2007](http://www.ozchi.org/ozchi2007/) on the work I did during my honours year.
+2007](https://www.ozchi.org/ozchi2007/) on the work I did during my honours year.
 No funky HTML slides for this (I was way less web-savvy back then) but here are
 some pdf slides. There's a [paper in the references section]({%
 link research.md %}#swiftMindmodulatedMusicMind2007) as well.

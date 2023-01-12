@@ -43,7 +43,7 @@ Over the past few years, I've also taught
   Zimmer](https://researchers.anu.edu.au/researchers/zimmer-ur) (don't worry,
   it's still the same discoboard-powered synthmaking extravaganza 😜). In this
   course students take a complex computer system ([the STM32L476G discovery
-  "disco" board](http://www.st.com/en/evaluation-tools/32l476gdiscovery.html))
+  "disco" board](https://www.st.com/en/evaluation-tools/32l476gdiscovery.html))
   home from week 1. That might seem daunting---and it's true that there's more
   stuff on such a board than one can master in one semester---but students can
   still learn a lot about CPUs (and how programs are organised and executed) by
@@ -59,7 +59,7 @@ Over the past few years, I've also taught
 - The [COMP2710 _Internet of Things_ China Study
   Tour](https://cs.anu.edu.au/courses/china-study-tour/) is an in-country
   intensive study course conducted in partnership with the [Beijing Institute of
-  Technology](http://english.bit.edu.cn/). In this course students learn about
+  Technology](https://english.bit.edu.cn/). In this course students learn about
   low-cost, network-connected embedded computing devices & their relationship to
   the broader computing landscape through building a prototype IoT artefact (and
   releasing the source code, parts list and build instructions on GitHub), while

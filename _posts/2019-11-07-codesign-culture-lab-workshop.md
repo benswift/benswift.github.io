@@ -203,7 +203,7 @@ which forms the basis for your assessment task. Instead, we'll spin the
 code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^winwheel]:
-    wheels powered by [Winwheel.js](http://dougtesting.net/home) by Douglas
+    wheels powered by [Winwheel.js](https://dougtesting.net/home) by Douglas
     McKechie
 
 [^fate]: well, the PRNG in your web browser, anyway
@@ -519,6 +519,6 @@ computing.
 
 <https://cs.anu.edu.au/code-creativity-culture/>
 
-<http://benswift.me>
+<https://benswift.me>
 
 ### Footnotes

@@ -24,14 +24,14 @@ livecoding_people:
     affiliation:
       institution: Institute for Music and Media, RSH Düsseldorf
       type: music
-    url: "http://wertlos.org/~rohrhuber/"
+    url: "https://wertlos.org/~rohrhuber/"
     famous_for: SuperCollider JITLib
   -
     name: Andrew Brown
     affiliation:
       institution: Queensland College of Art, Griffith University
       type: art
-    url: "http://andrewrbrown.net.au/"
+    url: "https://andrewrbrown.net.au/"
     famous_for: aa cell
   -
     name: Nick Collins
@@ -45,7 +45,7 @@ livecoding_people:
     affiliation:
       institution: Music Department, University of Sussex
       type: music
-    url: "http://thormagnusson.github.io/"
+    url: "https://thormagnusson.github.io/"
     famous_for: ixi lang
   -
     name: Ge Wang
@@ -59,7 +59,7 @@ livecoding_people:
     affiliation:
       institution:
       type: indie
-    url: "http://sam.aaron.name/"
+    url: "https://sam.aaron.name/"
     famous_for: Sonic Pi
   -
     name: Alan Blackwell
@@ -94,28 +94,28 @@ livecoding_people:
     affiliation:
       institution:
       type: indie
-    url: "http://renickbell.net/"
+    url: "https://renickbell.net/"
     famous_for: livecoding
   -
     name: David Ogborn
     affiliation:
       institution: Department of Communication Studies and Multimedia, McMaster University
       type: media
-    url: "http://www.dktr0.net"
+    url: "https://www.dktr0.net"
     famous_for: cybernetic orchestra
   -
     name: Charlie Roberts
     affiliation:
       institution: Computer Science, Worcester Polytechnic Institute
       type: CS
-    url: "http://charlie-roberts.com/"
+    url: "https://charlie-roberts.com/"
     famous_for: gibber
   -
     name: Kate Sicchio
     affiliation:
       institution: Integrated Digital Media, New York University
       type: art
-    url: "http://blog.sicchio.com/"
+    url: "https://blog.sicchio.com/"
     famous_for:
   -
     name: Mauro
@@ -136,14 +136,14 @@ livecoding_people:
     affiliation:
       institution: Department of Communication Studies and Multimedia, McMaster University
       type: media
-    url: "http://luisnavarrodelangel.net/"
+    url: "https://luisnavarrodelangel.net/"
     famous_for:
   -
     name: Mike Hodnick
     affiliation:
       institution:
       type: indie
-    url: "http://kindohm.com/"
+    url: "https://kindohm.com/"
     famous_for: livecoding
 ---
 
@@ -309,7 +309,7 @@ _same as 2016_
 This list is pinched _directly_ from the [TOPLAP
 website](https://toplap.org/nodes/) (as at 21 Sep 2019):
 
-- [Livecode NYC](http://livecode.nyc/) (USA)
+- [Livecode NYC](https://livecode.nyc/) (USA)
 - [TOPLAP Node Yorkshire](https://www.facebook.com/groups/1683408058575303/) (UK)
 - [TOPLAP Node North-East](https://www.facebook.com/groups/897471030365142/) (UK)
 - [TOPLAP Node México](https://www.facebook.com/toplap.mx/) (MX)
@@ -324,14 +324,14 @@ website](https://toplap.org/nodes/) (as at 21 Sep 2019):
 - [TOPLAP Barcelona](https://toplapbarcelona.hangar.org/) (ES)
 - [TOPLAP Japan](https://twitter.com/toplapjp) (JP)
 - [NL_CL (Netherlands Coding Live) node](https://netherlands-coding-live.github.io) (NL)
-- [Live coding @ IMPA (Rio de Janeiro)](http://w3.impa.br/~vitorgr/livecode/) (BR)
+- [Live coding @ IMPA (Rio de Janeiro)](https://w3.impa.br/~vitorgr/livecode/) (BR)
 - [TOPLAP Greater Bay Area](https://www.facebook.com/groups/353595622030440/) (CN)
 - [Tidalclub Sheffield](https://tidalclub.github.io/sheffield.html) (UK)
 - [CLiC (Colectivo de Live Coders)](https://colectivo-de-livecoders.gitlab.io/) (AR)
-- [Livecode New England](http://livecodenewengland.org/) (USA)
+- [Livecode New England](https://livecodenewengland.org/) (USA)
 - [TOPLAP Italia](https://www.facebook.com/groups/1051671308353969/) (IT)
 - [TOPLAP France](https://www.facebook.com/groups/toplapfr/) (FR)
-- [Algorave France & Belgique](http://algorave.fr/) (FR/BE)
+- [Algorave France & Belgique](https://algorave.fr/) (FR/BE)
 - [Live Coding Frankfurt](https://www.meetup.com/Live-Coding-Frankfurt/) (DE)
 - [TOPLAP Valdiva](https://toplapvaldivia.wixsite.com/website) (CL)
 - [LiveCoding Düsseldorf](https://www.facebook.com/groups/587715001671363/) (DE)

@@ -30,7 +30,7 @@ The essay lays out some guiding principles:
 >    direct affect on musical / sonic output.
 
 It then goes on to show some example visualisation in
-[gibberwocky](http://gibberwocky.cc/), both in an "all in" demo and then in
+[gibberwocky](https://gibberwocky.cc/), both in an "all in" demo and then in
 bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it's something Andrew Sorensen and I have written
 about before in our paper [Visual Code Annotations for Cyberphysical
