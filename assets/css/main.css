@@ -1,302 +1,820 @@
 @charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document ========================================================================== */
-/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
-html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
 
-/* Sections ========================================================================== */
-/** Remove the margin in all browsers. */
-body { margin: 0; }
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
 
-/** Render the `main` element consistently in IE. */
-main { display: block; }
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
 
-/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
-h1 { font-size: 2em; margin: 0.67em 0; }
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
 
-/* Grouping content ========================================================================== */
-/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
-hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
 
-/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
-pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
 
-/* Text-level semantics ========================================================================== */
-/** Remove the gray background on active links in IE 10. */
-a { background-color: transparent; }
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
 
-/** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
-abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
 
-/** Add the correct font weight in Chrome, Edge, and Safari. */
-b, strong { font-weight: bolder; }
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
 
-/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
-code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
 
-/** Add the correct font size in all browsers. */
-small { font-size: 80%; }
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
 
-/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
 
-sub { bottom: -0.25em; }
+sub {
+  bottom: -0.25em;
+}
 
-sup { top: -0.5em; }
+sup {
+  top: -0.5em;
+}
 
-/* Embedded content ========================================================================== */
-/** Remove the border on images inside links in IE 10. */
-img { border-style: none; }
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
 
-/* Forms ========================================================================== */
-/** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
-button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
 
-/** Show the overflow in IE. 1. Show the overflow in Edge. */
-button, input { /* 1 */ overflow: visible; }
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
 
-/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
-button, select { /* 1 */ text-transform: none; }
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
 
-/** Correct the inability to style clickable types in iOS and Safari. */
-button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
 
-/** Remove the inner border and padding in Firefox. */
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
 
-/** Restore the focus styles unset by the previous rule. */
-button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 
-/** Correct the padding in Firefox. */
-fieldset { padding: 0.35em 0.75em 0.625em; }
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
 
-/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
-legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
 
-/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
-progress { vertical-align: baseline; }
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
 
-/** Remove the default vertical scrollbar in IE 10+. */
-textarea { overflow: auto; }
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
 
-/** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
-[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
 
-/** Correct the cursor style of increment and decrement buttons in Chrome. */
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
 
-/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
-[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
 
-/** Remove the inner padding in Chrome and Safari on macOS. */
-[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
-/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
-::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
 
-/* Interactive ========================================================================== */
-/* Add the correct display in Edge, IE 10+, and Firefox. */
-details { display: block; }
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
 
-/* Add the correct display in all browsers. */
-summary { display: list-item; }
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
 
-/* Misc ========================================================================== */
-/** Add the correct display in IE 10+. */
-template { display: none; }
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
 
-/** Add the correct display in IE 10. */
-[hidden] { display: none; }
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
 
 /* fira-sans-100 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 100; src: local("Fira Sans Thin"), local("FiraSans-Thin"), url("../fonts/fira-sans-v10-latin-100.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Fira Sans Thin"), local("FiraSans-Thin"), url("../fonts/fira-sans-v10-latin-100.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-200italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 200; src: local("Fira Sans ExtraLight Italic"), local("FiraSans-ExtraLightItalic"), url("../fonts/fira-sans-v10-latin-200italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-200italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 200;
+  src: local("Fira Sans ExtraLight Italic"), local("FiraSans-ExtraLightItalic"), url("../fonts/fira-sans-v10-latin-200italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-200italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-100italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 100; src: local("Fira Sans Thin Italic"), local("FiraSans-ThinItalic"), url("../fonts/fira-sans-v10-latin-100italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-100italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 100;
+  src: local("Fira Sans Thin Italic"), local("FiraSans-ThinItalic"), url("../fonts/fira-sans-v10-latin-100italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-100italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-200 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 200; src: local("Fira Sans ExtraLight"), local("FiraSans-ExtraLight"), url("../fonts/fira-sans-v10-latin-200.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Fira Sans ExtraLight"), local("FiraSans-ExtraLight"), url("../fonts/fira-sans-v10-latin-200.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-300 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 300; src: local("Fira Sans Light"), local("FiraSans-Light"), url("../fonts/fira-sans-v10-latin-300.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Fira Sans Light"), local("FiraSans-Light"), url("../fonts/fira-sans-v10-latin-300.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-300italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 300; src: local("Fira Sans Light Italic"), local("FiraSans-LightItalic"), url("../fonts/fira-sans-v10-latin-300italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-300italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Fira Sans Light Italic"), local("FiraSans-LightItalic"), url("../fonts/fira-sans-v10-latin-300italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-300italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-regular - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 400; src: local("Fira Sans Regular"), local("FiraSans-Regular"), url("../fonts/fira-sans-v10-latin-regular.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans Regular"), local("FiraSans-Regular"), url("../fonts/fira-sans-v10-latin-regular.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 400; src: local("Fira Sans Italic"), local("FiraSans-Italic"), url("../fonts/fira-sans-v10-latin-italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Fira Sans Italic"), local("FiraSans-Italic"), url("../fonts/fira-sans-v10-latin-italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-500 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 500; src: local("Fira Sans Medium"), local("FiraSans-Medium"), url("../fonts/fira-sans-v10-latin-500.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Fira Sans Medium"), local("FiraSans-Medium"), url("../fonts/fira-sans-v10-latin-500.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-500italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 500; src: local("Fira Sans Medium Italic"), local("FiraSans-MediumItalic"), url("../fonts/fira-sans-v10-latin-500italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Fira Sans Medium Italic"), local("FiraSans-MediumItalic"), url("../fonts/fira-sans-v10-latin-500italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-500italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-600 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 600; src: local("Fira Sans SemiBold"), local("FiraSans-SemiBold"), url("../fonts/fira-sans-v10-latin-600.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Fira Sans SemiBold"), local("FiraSans-SemiBold"), url("../fonts/fira-sans-v10-latin-600.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-600italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 600; src: local("Fira Sans SemiBold Italic"), local("FiraSans-SemiBoldItalic"), url("../fonts/fira-sans-v10-latin-600italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-600italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Fira Sans SemiBold Italic"), local("FiraSans-SemiBoldItalic"), url("../fonts/fira-sans-v10-latin-600italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-600italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-700 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 700; src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("../fonts/fira-sans-v10-latin-700.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("../fonts/fira-sans-v10-latin-700.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-700italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 700; src: local("Fira Sans Bold Italic"), local("FiraSans-BoldItalic"), url("../fonts/fira-sans-v10-latin-700italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Fira Sans Bold Italic"), local("FiraSans-BoldItalic"), url("../fonts/fira-sans-v10-latin-700italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-800 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 800; src: local("Fira Sans ExtraBold"), local("FiraSans-ExtraBold"), url("../fonts/fira-sans-v10-latin-800.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Fira Sans ExtraBold"), local("FiraSans-ExtraBold"), url("../fonts/fira-sans-v10-latin-800.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-800italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 800; src: local("Fira Sans ExtraBold Italic"), local("FiraSans-ExtraBoldItalic"), url("../fonts/fira-sans-v10-latin-800italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-800italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Fira Sans ExtraBold Italic"), local("FiraSans-ExtraBoldItalic"), url("../fonts/fira-sans-v10-latin-800italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-800italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-900 - latin */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 900; src: local("Fira Sans Black"), local("FiraSans-Black"), url("../fonts/fira-sans-v10-latin-900.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Fira Sans Black"), local("FiraSans-Black"), url("../fonts/fira-sans-v10-latin-900.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-sans-900italic - latin */
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 900; src: local("Fira Sans Black Italic"), local("FiraSans-BlackItalic"), url("../fonts/fira-sans-v10-latin-900italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-900italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 900;
+  src: local("Fira Sans Black Italic"), local("FiraSans-BlackItalic"), url("../fonts/fira-sans-v10-latin-900italic.woff2") format("woff2"), url("../fonts/fira-sans-v10-latin-900italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-code-300 - latin */
-@font-face { font-family: 'Fira Code'; font-style: normal; font-weight: 300; src: local(""), url("../fonts/fira-code-v7-latin-300.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/fira-code-v7-latin-300.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-code-500 - latin */
-@font-face { font-family: 'Fira Code'; font-style: normal; font-weight: 500; src: local(""), url("../fonts/fira-code-v7-latin-500.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/fira-code-v7-latin-500.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-code-regular - latin */
-@font-face { font-family: 'Fira Code'; font-style: normal; font-weight: 400; src: local(""), url("../fonts/fira-code-v7-latin-regular.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/fira-code-v7-latin-regular.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-code-600 - latin */
-@font-face { font-family: 'Fira Code'; font-style: normal; font-weight: 600; src: local(""), url("../fonts/fira-code-v7-latin-600.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/fira-code-v7-latin-600.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fira-code-700 - latin */
-@font-face { font-family: 'Fira Code'; font-style: normal; font-weight: 700; src: local(""), url("../fonts/fira-code-v7-latin-700.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/fira-code-v7-latin-700.woff2") format("woff2"), url("../fonts/fira-code-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+:root {
+  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
-:root { font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+:root {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
 
-:root { font-weight: 400; font-size: 18px; line-height: 1.5; color: #333; background-color: #fafafa; box-sizing: border-box; }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-*, *:before, *:after { box-sizing: inherit; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0 0.8rem;
+}
 
-h1, h2, h3, h4, h5, h6, p { padding: 0 0.8rem; }
+a {
+  color: #793188;
+  text-decoration: none;
+  font-weight: 700;
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+}
+a:hover {
+  color: #fafafa;
+  background-color: #333;
+}
+a.anchorjs-link {
+  color: #be2edd;
+  background-color: inherit;
+}
+a.anchorjs-link:hover {
+  color: #793188;
+}
 
-a { color: #793188; text-decoration: none; font-weight: 700; transition-property: color, background-color; transition-duration: 0.5s; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
 
-a:hover { color: #fafafa; background-color: #333; }
+strong {
+  font-weight: 900;
+}
 
-a.anchorjs-link { color: #be2edd; background-color: inherit; }
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.95em;
+  padding: 0.1em 0.15em;
+  border-radius: 0.2em;
+  color: #9e1eba;
+  background: linear-gradient(to right, #f7e6fb, #eec8f6);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 
-a.anchorjs-link:hover { color: #793188; }
+pre > code {
+  background-color: #282c34;
+  border-radius: 0;
+}
 
-h1, h2, h3, h4, h5, h6 { font-weight: 900; }
+.code-block-header {
+  display: flex;
+  justify-content: flex-end;
+}
 
-strong { font-weight: 900; }
+.copy-code-button {
+  background-color: #f5ddfa;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-column-gap: 0.2rem;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  width: 6rem;
+}
+.copy-code-button::before {
+  content: "copy";
+}
+.copy-code-button::after {
+  content: "📋";
+  display: block;
+}
+.copy-code-button.copied::before {
+  content: "copied";
+}
+.copy-code-button.copied::after {
+  content: "✅";
+}
 
-code { font-family: "Fira Code", monospace; font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; color: #9e1eba; background: linear-gradient(to right, #f7e6fb, #eec8f6); overflow-wrap: break-word; word-wrap: break-word; }
+kbd {
+  font-size: 0.95em;
+  padding: 0.1em 0.15em;
+  border-radius: 0.2em;
+  border: 1px solid #666;
+  box-shadow: 0.15em 0.15em #aaa;
+  background: white;
+  text-decoration: none;
+}
 
-pre > code { background-color: #282c34; border-radius: 0; }
+.container {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "footer";
+}
 
-.code-block-header { display: flex; justify-content: flex-end; }
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #333;
+  padding: 0 0.6rem;
+}
+.navigation > * {
+  padding: 0.2rem;
+}
+.navigation .current {
+  border-bottom: 5px solid #be2edd;
+}
+.navigation .disabled {
+  color: #555;
+  cursor: not-allowed;
+}
 
-.copy-code-button { background-color: #f5ddfa; display: grid; grid-auto-flow: column; align-items: center; grid-column-gap: 0.2rem; border: none; border-radius: 0.5rem 0.5rem 0 0; cursor: pointer; font-size: 1rem; padding: 0.6rem 0.8rem; width: 6rem; }
+header {
+  grid-area: header;
+  padding: 2rem 0 1rem 0;
+}
+header nav.logo {
+  margin-bottom: 15px;
+}
+header nav.logo a {
+  font-size: 1.3rem;
+  background: linear-gradient(to left, #be2edd, #8c1ba4);
+  color: #fafafa;
+  padding: 0.4rem 0.8rem;
+}
+header nav.logo a:hover {
+  text-decoration: underline;
+}
+header a {
+  font-weight: 900;
+}
 
-.copy-code-button::before { content: "copy"; }
+main {
+  grid-area: main;
+}
 
-.copy-code-button::after { content: "📋"; display: block; }
+footer {
+  grid-area: footer;
+  border-top: 1px solid #be2edd;
+  color: #555;
+}
+footer a {
+  color: #555;
+  font-weight: 700;
+}
 
-.copy-code-button.copied::before { content: "copied"; }
+.post-subtitle {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2em;
+}
 
-.copy-code-button.copied::after { content: "✅"; }
+.post-date {
+  font-style: italic;
+  color: #555;
+}
 
-kbd { font-size: 0.95em; padding: 0.1em 0.15em; border-radius: 0.2em; border: 1px solid #666; box-shadow: 0.15em 0.15em #aaa; background: white; text-decoration: none; }
+.post-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.container { display: grid; grid-template-columns: 100vw; grid-template-rows: auto; grid-template-areas: "header" "main" "footer"; }
+.post-tag {
+  font-weight: 300;
+  background-color: #f5ddfa;
+  color: #be2edd;
+  padding: 0.2em;
+  margin: 0 0.4rem 0.4rem 0;
+}
 
-.navigation { display: flex; flex-wrap: wrap; justify-content: space-between; color: #333; padding: 0 0.6rem; }
+.post-excerpt {
+  border-top: 1px solid #be2edd;
+}
 
-.navigation > * { padding: 0.2rem; }
+blockquote {
+  background-color: #f2f2f2;
+  border-left: 10px solid #e1e1e1;
+  padding: 1em 1em;
+  margin: 1em 0;
+  quotes: "“" "”" "‘" "’";
+}
 
-.navigation .current { border-bottom: 5px solid #be2edd; }
+blockquote:before {
+  color: #c7c7c7;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
 
-.navigation .disabled { color: #555; cursor: not-allowed; }
+blockquote p {
+  display: inline;
+}
 
-header { grid-area: header; padding: 2rem 0 1rem 0; }
+.hl-para {
+  background-color: #f5ddfa;
+  border-left: 10px solid #be2edd;
+  padding: 1em 1em;
+  margin: 1em 0;
+  quotes: "“" "”" "‘" "’";
+}
 
-header nav.logo { margin-bottom: 15px; }
+img {
+  width: 100%;
+}
 
-header nav.logo a { font-size: 1.3rem; background: linear-gradient(to left, #be2edd, #8c1ba4); color: #fafafa; padding: 0.4rem 0.8rem; }
+table {
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
+  text-align: left;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 0.5em 1em 0.5em 0;
+}
+table thead th {
+  border-bottom: 1px solid #be2edd;
+  vertical-align: bottom;
+}
+table tbody th {
+  vertical-align: top;
+}
+table td {
+  vertical-align: top;
+}
 
-header nav.logo a:hover { text-decoration: underline; }
+#toc {
+  background: #f2f2f2;
+  clear: both;
+}
+#toc h2 {
+  background: #333;
+  color: #fafafa;
+  font-weight: 100;
+  text-align: right;
+  padding-right: 1em;
+  margin-bottom: 0;
+}
+#toc ul {
+  margin-top: 0;
+  padding: 1em;
+  list-style: circle inside;
+}
+#toc ul li + li {
+  margin-top: 0.2em;
+}
+#toc ul a {
+  font-weight: 400;
+}
 
-header a { font-weight: 900; }
+.bibliography p {
+  margin: 0.4em 0;
+}
+.bibliography > div {
+  margin-bottom: 2em;
+}
+.bibliography .date {
+  font-weight: 300;
+  color: #555;
+}
+.bibliography .title {
+  font-weight: 900;
+}
+.bibliography .author {
+  font-weight: 600;
+}
+.bibliography .venue {
+  font-style: italic;
+}
 
-main { grid-area: main; }
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-areas: ". header ." ". main ." ". footer .";
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+  }
+  table {
+    width: 100%;
+    margin: 0;
+  }
+  .navigation {
+    padding: 0;
+  }
+  .navigation > * {
+    padding: 0.4rem 0;
+  }
+}
+svg.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
 
-footer { grid-area: footer; border-top: 1px solid #be2edd; color: #555; }
-
-footer a { color: #555; font-weight: 700; }
-
-.post-subtitle { font-style: italic; color: #555; margin-bottom: 2em; }
-
-.post-date { font-style: italic; color: #555; }
-
-.post-tag-container { display: flex; flex-wrap: wrap; }
-
-.post-tag { font-weight: 300; background-color: #f5ddfa; color: #be2edd; padding: 0.2em; margin: 0 0.4rem 0.4rem 0; }
-
-.post-excerpt { border-top: 1px solid #be2edd; }
-
-blockquote { background-color: #f2f2f2; border-left: 10px solid #e1e1e1; padding: 1em 1em; margin: 1em 0; quotes: "“" "”" "‘" "’"; }
-
-blockquote:before { color: #c7c7c7; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.1em; vertical-align: -0.4em; }
-
-blockquote p { display: inline; }
-
-.hl-para { background-color: #f5ddfa; border-left: 10px solid #be2edd; padding: 1em 1em; margin: 1em 0; quotes: "“" "”" "‘" "’"; }
-
-img { width: 100%; }
-
-table { width: calc(100% - 1.6rem); margin: 0 0.8rem; text-align: left; border-collapse: collapse; }
-
-table th, table td { padding: 0.5em 1em 0.5em 0; }
-
-table thead th { border-bottom: 1px solid #be2edd; vertical-align: bottom; }
-
-table tbody th { vertical-align: top; }
-
-table td { vertical-align: top; }
-
-#toc { background: #f2f2f2; clear: both; }
-
-#toc h2 { background: #333; color: #fafafa; font-weight: 100; text-align: right; padding-right: 1em; margin-bottom: 0; }
-
-#toc ul { margin-top: 0; padding: 1em; list-style: circle inside; }
-
-#toc ul li + li { margin-top: 0.2em; }
-
-#toc ul a { font-weight: 400; }
-
-.bibliography p { margin: 0.4em 0; }
-
-.bibliography > div { margin-bottom: 2em; }
-
-.bibliography .date { font-weight: 300; color: #555; }
-
-.bibliography .title { font-weight: 900; }
-
-.bibliography .author { font-weight: 600; }
-
-.bibliography .venue { font-style: italic; }
-
-@media (min-width: 1000px) { .container { grid-template-columns: 1fr 800px 1fr; grid-template-areas: ". header ." ". main ." ". footer ."; } h1, h2, h3, h4, h5, h6, p { padding: 0; } table { width: 100%; margin: 0; } .navigation { padding: 0; } .navigation > * { padding: 0.4rem 0; } }
-
-svg.icon { width: 1em; height: 1em; vertical-align: -0.125em; fill: currentColor; }
-
-@media print { header, footer { display: none; } #toc h2 { text-align: left; font-weight: 900; color: #333; background-color: unset; } }
+@media print {
+  header, footer {
+    display: none;
+  }
+  #toc h2 {
+    text-align: left;
+    font-weight: 900;
+    color: #333;
+    background-color: unset;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

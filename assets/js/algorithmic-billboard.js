@@ -28,7 +28,7 @@ if (typeof Math.imul == "undefined" || Math.imul(0xffffffff, 5) == 0) {
   function p(a) {
     for (
       var b = arguments.length - 1,
-        e = "http://reactjs.org/docs/error-decoder.html?invariant\x3d" + a,
+        e = "https://reactjs.org/docs/error-decoder.html?invariant\x3d" + a,
         c = 0;
       c < b;
       c++
@@ -828,7 +828,7 @@ if (typeof Math.imul == "undefined" || Math.imul(0xffffffff, 5) == 0) {
   function l(a) {
     for (
       var b = arguments.length - 1,
-        c = "http://reactjs.org/docs/error-decoder.html?invariant\x3d" + a,
+        c = "https://reactjs.org/docs/error-decoder.html?invariant\x3d" + a,
         d = 0;
       d < b;
       d++
@@ -2495,18 +2495,18 @@ if (typeof Math.imul == "undefined" || Math.imul(0xffffffff, 5) == 0) {
   function Yd(a) {
     switch (a) {
       case "svg":
-        return "http://www.w3.org/2000/svg";
+        return "https://www.w3.org/2000/svg";
       case "math":
-        return "http://www.w3.org/1998/Math/MathML";
+        return "https://www.w3.org/1998/Math/MathML";
       default:
-        return "http://www.w3.org/1999/xhtml";
+        return "https://www.w3.org/1999/xhtml";
     }
   }
   function oc(a, b) {
-    return null == a || "http://www.w3.org/1999/xhtml" === a
+    return null == a || "https://www.w3.org/1999/xhtml" === a
       ? Yd(b)
-      : "http://www.w3.org/2000/svg" === a && "foreignObject" === b
-      ? "http://www.w3.org/1999/xhtml"
+      : "https://www.w3.org/2000/svg" === a && "foreignObject" === b
+      ? "https://www.w3.org/1999/xhtml"
       : a;
   }
   function Zd(a, b, c) {
@@ -2584,8 +2584,8 @@ if (typeof Math.imul == "undefined" || Math.imul(0xffffffff, 5) == 0) {
   }
   function ae(a, b, c, d) {
     c = 9 === c.nodeType ? c : c.ownerDocument;
-    "http://www.w3.org/1999/xhtml" === d && (d = Yd(a));
-    "http://www.w3.org/1999/xhtml" === d
+    "https://www.w3.org/1999/xhtml" === d && (d = Yd(a));
+    "https://www.w3.org/1999/xhtml" === d
       ? "script" === a
         ? ((a = c.createElement("div")),
           (a.innerHTML = "\x3cscript\x3e\x3c/script\x3e"),
@@ -3415,11 +3415,11 @@ if (typeof Math.imul == "undefined" || Math.imul(0xffffffff, 5) == 0) {
     .split(" ")
     .forEach(function(a) {
       var b = a.replace(uc, vc);
-      F[b] = new J(b, 1, !1, a, "http://www.w3.org/1999/xlink");
+      F[b] = new J(b, 1, !1, a, "https://www.w3.org/1999/xlink");
     });
   ["xml:base", "xml:lang", "xml:space"].forEach(function(a) {
     var b = a.replace(uc, vc);
-    F[b] = new J(b, 1, !1, a, "http://www.w3.org/XML/1998/namespace");
+    F[b] = new J(b, 1, !1, a, "https://www.w3.org/XML/1998/namespace");
   });
   F.tabIndex = new J("tabIndex", 1, !1, "tabindex", null);
   var sd = {
@@ -6308,7 +6308,7 @@ if (typeof Math.imul == "undefined" || Math.imul(0xffffffff, 5) == 0) {
           }
         : a;
     })(function(a, b) {
-      if ("http://www.w3.org/2000/svg" !== a.namespaceURI || "innerHTML" in a)
+      if ("https://www.w3.org/2000/svg" !== a.namespaceURI || "innerHTML" in a)
         a.innerHTML = b;
       else {
         Fb = Fb || document.createElement("div");
@@ -16886,7 +16886,7 @@ function vj() {
     he,
     [
       ch,
-      new u(null, 1, [bh, "http://www.anu.edu.au"], null),
+      new u(null, 1, [bh, "https://www.anu.edu.au"], null),
       new Y(
         null,
         3,
