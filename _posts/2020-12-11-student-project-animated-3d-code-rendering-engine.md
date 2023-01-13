@@ -9,8 +9,8 @@ I'm trying to get better at writing down potential student project ideas as they
 come to me. For the moment, I'm doing this on my blog using the
 [`student-project`](https://benswift.me/blog/tag/student-project/) tag.
 
-As a [livecoder]({% link index.md %}/livecoding/) I care more than most about
-how my code looks on the screen. While I've [written in the
+As a [livecoder]({% link livecoding.md %}) I care more than most about how my
+code looks on the screen. While I've [written in the
 past](https://benswift.me/research/#swiftVisualCodeAnnotations2013) about the
 potential of animated "tooltip" style code annotations, I'd love to have more
 detailed (parametric) control over the display of the code/text itself,

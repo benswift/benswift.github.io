@@ -163,7 +163,7 @@ module Jekyll
 
     def venue_span(g)
       pretty_date = g["date"].strftime("%d %b '%y")
-      "<span class='venue'>#{pretty_date} @ <a href='#{g['venue_url']}'>#{g['venue']}</a></span>"
+      "<span class='venue'>#{pretty_date} @ <a href='#{g['venue_url']}' || \"#\">#{g['venue']}</a></span>"
     end
 
     def video_a(g)
