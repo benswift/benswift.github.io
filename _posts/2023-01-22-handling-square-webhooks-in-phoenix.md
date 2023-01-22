@@ -36,13 +36,14 @@ how to do exactly that---just follow the instructions there.
 
 ## Step 2: create webhook controller (including validation)
 
-The webhook controller module should look something like this:
+The webhook controller module should look something like this (replace the
+`notification_url` and `signature_key` with the right values for your
+app---you'll get your signature key from Square when you register the webhook):
 
 ```elixir
 defmodule MyAppWeb.SquareWebhookController do
   @moduledoc """
   Handle webhooks sent from Square.
-
   """
   use MyAppWeb, :controller
 
@@ -93,12 +94,19 @@ scope "/square", MyAppWeb do
 end
 ```
 
-## And you're done!
+## Step 4: subscribe to the webhook
 
-After that's all done (and you've deployed your app) you're ready for it to
-receive webhooks from Square. You can set that up through your [Square
-developer](https://developer.squareup.com/), and once you've created a webhook
-you can even send a "test" payload just to check everything's working.
+After that's all done (and you've deployed your app) you're ready to [set up a
+webhook subscription](https://developer.squareup.com/docs/webhooks/overview).
+Follow the Square docs and Square will start hitting your (deployed) app's
+`https://example.com/square/webhook` endpoint, and your app can do its thing.
+
+{:.hl-para}
+
+Note that these incoming webhook requests _won't_ hit your local development
+server running on `localhost`, so testing webhooks is a bit trickier. Since my
+app runs on [fly](https://fly.io) it involved a little bit of `IO.inspect`ing in
+production and then looking at the logs with `flyctl logs`.
 
 Have fun! And if you live in Canberra, especially in Tuggeranong/Lanyon, maybe
 go buy a coffee from [Little Luxton](https://www.littleluxton.com) and you can
