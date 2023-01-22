@@ -17,7 +17,7 @@ would receive the "new sale" notification ASAP---this should be both
 lower-latency and more efficient than polling.
 
 The app is basically a single [Phoenix
-LiveView](http://www.phoenixframework.org). Sadly the Square guides don't have
+LiveView](https://www.phoenixframework.org). Sadly the Square guides don't have
 examples for Elixir, although it's pretty easy to modify the e.g. [Ruby
 example](https://developer.squareup.com/docs/webhooks/step3validate) code to get
 the job done. If you're looking to do something similar I cobbled together this
