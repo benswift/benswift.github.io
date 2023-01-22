@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-01-18T12:10:18+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">rclone: exclude all git repos</title><link href="https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/" rel="alternate" type="text/html" title="rclone: exclude all git repos" /><published>2023-01-11T00:00:00+11:00</published><updated>2023-01-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos</id><content type="html" xml:base="https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/"><![CDATA[<p>For a long time I’ve used <a href="https://rclone.org">rclone</a> for remote backups and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-01-22T21:07:07+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Handling Square Webhooks in Phoenix</title><link href="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/" rel="alternate" type="text/html" title="Handling Square Webhooks in Phoenix" /><published>2023-01-22T00:00:00+11:00</published><updated>2023-01-22T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix</id><content type="html" xml:base="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/"><![CDATA[<p>My <a href="https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459">brother’s
+cafe</a>
+donates a dollar to the local community centre for every coffee sold, and over
+the summer I built
+him a live “donation counter” which displays a small “thankyou” animation when
+anyone buys a coffee. It’s a web app which they run on an iPad sitting on the
+coffee machine.</p>
+
+<p>Since the cafe uses Square for all payments, I was able to set up a
+<a href="https://developer.squareup.com/docs/webhooks/overview">webhook</a> so the app
+would receive the “new sale” notification ASAP—this should be both
+lower-latency and more efficient than polling.</p>
+
+<p>The app is basically a single <a href="https://www.phoenixframework.org">Phoenix
+LiveView</a>. Sadly the Square guides don’t have
+examples for Elixir, although it’s pretty easy to modify the e.g. <a href="https://developer.squareup.com/docs/webhooks/step3validate">Ruby
+example</a> code to get
+the job done. If you’re looking to do something similar I cobbled together this
+info from docs (and a few blogs) and it might help you out to have it all in one
+place.</p>
+
+<h2 id="step-1-set-up-webhook-controller-including-validation">Step 1: set up webhook controller (including validation)</h2>
+
+<p>It’s important to validate that any incoming webhook is actually from Square, so
+Square send a special <code>x-square-hmacsha256-signature</code> header for <a href="https://developer.squareup.com/docs/webhooks/step3validate">validation
+purposes</a>, although
+performing this validation step requires having access to the raw request body.
+Thankfully, the <a href="https://hexdocs.pm/plug/Plug.Parsers.html#module-custom-body-reader">“Custom Body Reader” section in the <code>Plug.Parsers</code>
+docs</a> shows
+how to do exactly that—just follow the instructions there.</p>
+
+<h2 id="step-2-create-webhook-controller-including-validation">Step 2: create webhook controller (including validation)</h2>
+
+<p>The webhook controller module should look something like this:</p>
+
+<pre><code class="language-elixir">defmodule MyAppWeb.SquareWebhookController do
+  @moduledoc """
+  Handle webhooks sent from Square.
+
+  """
+  use MyAppWeb, :controller
+
+  @doc "handle the webhook request"
+  def webhook(conn, params) do
+    if is_from_square?(conn) do
+      do_stuff(params)
+    end
+
+    send_response(conn)
+  end
+
+  @doc "respond to the Square server (always 200 OK otherwise they'll freak out)"
+  defp send_response(conn) do
+    conn
+    |&gt; put_resp_content_type("text/plain")
+    |&gt; send_resp(200, "webhook received - thanks.")
+  end
+
+  @doc "returns `true` if webhook came from Square, `false` otherwise"
+  defp is_from_square?(conn) do
+    notification_url = "http://example.com/square/webhook"
+    signature_key = "WEBHOOK_SIGNATURE_KEY_FROM_SQUARE"
+    {_, signature} = List.keyfind!(conn.req_headers, "x-square-hmacsha256-signature", 0)
+
+    ## here's where we access the raw request body we put there in the Plug.Parser
+    raw_body = Enum.join(conn.assigns.raw_body)
+
+    hash =
+      :crypto.mac(:hmac, :sha256, signature_key, notification_url &lt;&gt; raw_body)
+      |&gt; Base.encode64()
+
+    signature == hash
+  end
+end
+</code></pre>
+
+<h2 id="step-3-add-the-endpoint-to-your-router">Step 3: add the endpoint to your router</h2>
+
+<p>Finally, add it to to your <code>router.ex</code> - something like this, you know the
+drill.</p>
+
+<pre><code class="language-elixir">scope "/square", MyAppWeb do
+  pipe_through :api
+
+  post "/webhook", SquareWebhookController, :webhook
+end
+</code></pre>
+
+<h2 id="and-youre-done">And you’re done!</h2>
+
+<p>After that’s all done (and you’ve deployed your app) you’re ready for it to
+receive webhooks from Square. You can set that up through your <a href="https://developer.squareup.com/">Square
+developer</a>, and once you’ve created a webhook
+you can even send a “test” payload just to check everything’s working.</p>
+
+<p>Have fun! And if you live in Canberra, especially in Tuggeranong/Lanyon, maybe
+go buy a coffee from <a href="https://www.littleluxton.com">Little Luxton</a> and you can
+see it for yourself 😊</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="elixir" /><category term="phoenix" /><summary type="html"><![CDATA[My brother’s cafe donates a dollar to the local community centre for every coffee sold, and over the summer I built him a live “donation counter” which displays a small “thankyou” animation when anyone buys a coffee. It’s a web app which they run on an iPad sitting on the coffee machine.]]></summary></entry><entry><title type="html">rclone: exclude all git repos</title><link href="https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/" rel="alternate" type="text/html" title="rclone: exclude all git repos" /><published>2023-01-11T00:00:00+11:00</published><updated>2023-01-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos</id><content type="html" xml:base="https://benswift.me/blog/2023/01/11/rclone-exclude-all-git-repos/"><![CDATA[<p>For a long time I’ve used <a href="https://rclone.org">rclone</a> for remote backups and
 it’s awesome. I have a script which syncs all the files I care about on my
 laptop to cloudstor (which, being on the Australian university network has the
 benefit that I get 1Gbps upload when I’m on the ANU network). My institution
@@ -413,316 +510,4 @@ effective as part of a multimedia presentation strategy, but the
 pitfalls</a>. <a href="#fnref:ppt" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[If you’re the sort of person who lurks on people’s LinkedIn accounts, you may have noticed that I’ve recently become the lead of the Experiences Team at the School of Cybernetics. My team’s mission is:]]></summary></entry><entry><title type="html">Running an AI neural style transfer model under Singularity</title><link href="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/" rel="alternate" type="text/html" title="Running an AI neural style transfer model under Singularity" /><published>2022-02-01T00:00:00+11:00</published><updated>2022-02-01T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity</id><content type="html" xml:base="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><![CDATA[<p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
-managed via <a href="https://sylabs.io/singularity/">SingularityCE</a>, whose homepage
-boldly asks and then forgets to answer the question: “What is SingularityCE?”</p>
-
-<p>If you <a href="https://sylabs.io/guides/latest/user-guide/introduction.html">dig further into the
-documentation</a>
-it’s a little less coy:</p>
-
-<blockquote>
-  <p>SingularityCE is a container platform. It allows you to create and run
-containers that package up pieces of software in a way that is portable and
-reproducible. You can build a container using SingularityCE on your laptop,
-and then run it on many of the largest HPC clusters in the world, local
-university or company clusters, a single server, in the cloud, or on a
-workstation down the hall. Your container is a single file, and you don’t have
-to worry about how to install all the software you need on each different
-operating system.</p>
-</blockquote>
-
-<p>I want to fire up my new GPUs and run one of Katherine Crowson’s awesome pytorch
-scripts to do some <a href="https://github.com/crowsonkb/style-transfer-pytorch">neural style
-transfer</a>. I’m very
-familiar with Docker, but new to this Singularity thing, so here are some of the
-hurdles I encountered (and cleared) along the way.</p>
-
-<h2 id="finding-a-base-image">Finding a base image</h2>
-
-<p>Looking in the style transfer repo’s
-<a href="https://github.com/crowsonkb/style-transfer-pytorch/blob/master/setup.py#L23"><code>setup.py</code></a>,
-it looks like <a href="https://pytorch.org">torch</a> v1.7.1 or later is required. Having
-done this sort of thing before, I know that these deep learning frameworks
-change a fair bit even between minor versions, so the safest option is to pick
-the exact version that it was designed for—in this case v1.7.1 (or at least
-v1.7.x).</p>
-
-<p>So, the challenge is to find a Singularity image with that version of torch
-installed. The singularity docs <a href="https://sylabs.io/guides/latest/user-guide/quick_start.html#download-pre-built-images">suggest using the search
-command</a>
-like so:</p>
-
-<pre><code class="language-shell">$ singularity search torch
-
-Found 34 container images for amd64 matching "torch":
-
-	library://adalisan81/default/pytorch:latest
-
-	library://aday651/default/pytorch-geometric-gpu:latest
-
-	library://aphoh/default/pytorch-20.11-py3:v-1
-
-	library://aradeva24/default/ar_pytorch_21.06-py3.sif:latest
-		PyTorch NGC container with CUDA11.0, where PyTorch and apex are installed
-
-	library://calebh/hpccm-test/faircluster-pytorch-1.10-cuda11.3:sha256.7c63a6c1f6f125b8d3e14fa10203965536ec7173d50e85b8c9ecf6ee0bff2ba7
-
-	library://claytonm/default/ubuntu18_torch_torchvision_opencv_cuda10:latest
-
-	library://dxtr/default/hpc-pytorch:0.1
-
-	library://guoweihe/default/pytorch:hz1
-
-	library://guoweihe/default/pytorch:v1.2
-
-	library://guoweihe/default/torch:deep-ed
-
-	library://guoweihe/default/torch:sha256.ff32c85ade2c8f6a1d34bd500de1b7bd11cdac16461aeef4d7cbd16ab129d8a7
-
-	library://guoweihe/default/torchgpipe:master
-
-	library://guoweihe/default/torchgpipe:sha256.a6ea5d732cba07c043e2f06cccbe541d28da6a8d9e5a3d18872d58af288dbc62
-
-	library://ipa/medimgproc/pytorch:latest
-
-	library://jamiechang917/default/pytorch:sha256.9c60c9825f20626cc0d6e69ac61d862bfec927e82d86becee73f853d657f2425
-
-	library://lamastex/default/pytorch_21.03.sif:berzelius-20211027
-
-	library://lamastex/default/pytorch_21.07.sif:berzelius-20211027
-
-	library://lev-hpc/ml/pytorch_gpu:jupyter
-
-	library://lev-hpc/ml/torch_tf_jupyter:latest
-
-	library://mbalazs/default/pytorch:latest
-
-	library://mbalazs/default/pytorch_cuda110:latest
-
-	library://mike_holcomb/pytorchvision/v0.1.0:latest,v0.1.0
-
-	library://oscartang/default/pytorch_translation:latest
-
-	library://ottino8/default/pytorch:first
-
-	library://pauldhein/hpc-deep-learning/torch-base:latest
-
-	library://sina-ehsani/default/transformer-googlecrawl-torch-opencv:latest
-
-	library://sina-ehsani/default/transformer-googlecrawl-torch1.10:latest
-
-	library://skykiny/default/pytorch_skykiny:latest
-
-	library://tmyoda/default/cuda-torch-pyenv:latest
-
-	library://tru/default/c7-conda-pytorch-10.0:2019-07-12-2053,latest
-
-	library://ufscar/hpc/cuda_pytorch:latest
-
-	library://uvarc/default/pytorch:1.4.0-py37
-
-	library://yboget/default/pytorch_rdkit_visdom:sha256.d97f221ef1294a8ef57d40cf7994d05d4955abc7cf39e3ce42faafd59fe3151a
-
-	library://zhengtang/default/torch_translation:latest
-</code></pre>
-
-<p>Hmm. It’s hard to know which is official, which ones are going to work (a few of
-them mention torch versions, but none of them are v1.7.x) and which ones might
-even be malicious? That’s a worry.</p>
-
-<p>Looking a bit deeper into the Singularity docs I find that one can <a href="https://sylabs.io/guides/latest/user-guide/singularity_and_docker.html">also use
-Docker/OCI
-images</a>,
-and Singularity can pull them straight from Docker hub. That’s good news,
-because NVIDIA do maintain <a href="https://hub.docker.com/r/pytorch/pytorch/tags">official Docker
-images</a> for using torch with
-NVIDIA graphics cards (like the 3090), so I find the <a href="https://hub.docker.com/layers/pytorch/pytorch/1.7.1-cuda11.0-cudnn8-runtime/images/sha256-db6086be92f439b918c96dc002f4cf40239e247f0b1b6c32e3fb36de70032bf9?context=explore">specific container image
-for torch
-v1.7.1</a>
-and pull it down with:</p>
-
-<pre><code class="language-shell">singularity pull docker://pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
-</code></pre>
-
-<h2 id="running-the-style_transfer-python-script">Running the <code>style_transfer</code> python script</h2>
-
-<p>I’d already cloned the neural style transfer repo, so I can follow the
-instructions in that
-<a href="https://github.com/crowsonkb/style-transfer-pytorch/blob/master/README.md">README.md</a></p>
-
-<pre><code class="language-shell">$ singularity shell pytorch_1.7.0-cuda11.0-cudnn8-runtime.sif 
-Singularity&gt; cd style-transfer-pytorch/
-Singularity&gt; pip install --user .
-</code></pre>
-
-<p>I got a bunch of warnings about certain things not being on the <code>$PATH</code>, but it
-seems to finish installing everthing ok.</p>
-
-<p>Continuing on with the instructions in the README, let’s try running this thing
-(I’d downloaded a couple of image files to use as my <em>content</em> and <em>style</em> images).</p>
-
-<pre><code class="language-shell">Singularity&gt; style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
-bash: style_transfer: command not found
-</code></pre>
-
-<p>Hmm, looks like those <code>$PATH</code> warnings were prescient. Looking back, the exact
-warning was:</p>
-
-<pre><code class="language-shell">WARNING: The script normalizer is installed in '/home/users/ben/.local/bin' which is not on PATH
-</code></pre>
-
-<p>The quickest &amp; dirtiest fix for this is to add that <code>/bin</code> directory to my path
-and try and re-run the script.</p>
-
-<pre><code class="language-shell">Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
-</code></pre>
-
-<p>And away it went! Several minutes later, it was done. Here are the original two images:</p>
-
-<p><img src="/assets/images/headshots/headshot.jpg" alt="Original ben.jpg image" />
-<img src="/assets/images/posts/tiger.jpg" alt="Original tiger.jpg" /></p>
-
-<p>and here’s the output:</p>
-
-<p><img src="/assets/images/posts/ben-tiger.jpg" alt="style-transferred ben-tiger.jpg" /></p>
-
-<p>Success…ish. Clearly I need to keep tweaking parameters &amp; input images to come
-up with an output that’s actually <em>good</em>, but at least that journey can now
-begin.</p>
-
-<h2 id="but-is-it-fast">But is it <em>fast</em>?</h2>
-
-<p>Actually, that declaration of success is a bit premature. At the top of the
-output I noticed that the script was running on the CPU, not the GPU.</p>
-
-<pre><code class="language-shell">Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
-~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from https://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
-  return torch._C._cuda_getDeviceCount() &gt; 0
-Using devices: cpu
-CPU threads: 128
-Loading model...
-</code></pre>
-
-<p>That’s really not ok—the whole point of running on this machine is to take
-advantage of the GPUs. There could be lots of reasons for this, but I have a
-hunch it has something to do with Singularity not allowing the script access to
-the hardware. Sure enough, looking through the <a href="https://sylabs.io/guides/3.7/user-guide/gpu.html">Singularity GPU support
-documentation</a> it turns out
-there’s a magic <code>--nv</code> flag which must be passed when starting up the
-Singularity session, so let’s do that.</p>
-
-<pre><code class="language-shell">$ singularity shell --nv pytorch_1.7.1-cuda11.0-cudnn8-runtime.sif 
-Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
-Using devices: cuda:0
-~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:143: UserWarning: 
-NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
-The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
-If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
-
-  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
-GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
-GPU 0 RAM: 24268 MB
-Loading model...
-
-*error traceback intensifies*
-</code></pre>
-
-<p>Well, that’s progress. Looking through the output I can see</p>
-
-<pre><code class="language-shell">Using devices: cuda:0
-GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
-GPU 0 RAM: 24268 MB
-</code></pre>
-
-<p>so torch can now see the GPUs. However, the error message in the middle of that
-output is now the problem:</p>
-
-<blockquote>
-  <p>NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the
-current PyTorch installation.</p>
-
-  <p>The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60
-sm_70.</p>
-
-  <p>If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check
-the instructions at <a href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
-</blockquote>
-
-<p>Like I said earlier, torch/tensorflow/CUDA and deep learning frameworks in
-general are really finnicky about versions. It’s tricky to get things up and
-running so that (i) all the versions work together and (ii) the changes you make
-don’t break the delicate version relationships between other deep learning
-projects you want to run on the same system<sup id="fnref:singularity-isolation" role="doc-noteref"><a href="#fn:singularity-isolation" class="footnote" rel="footnote">1</a></sup>.</p>
-
-<p>After a web search, it seems <a href="https://github.com/pytorch/vision/issues/4886">like others
-</a> <a href="https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-is-not-compatible-with-the-current-pytorch-installation/123499">have
-had</a>
-<a href="https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949">similar
-issues</a>,
-although I tried all the approaches listed there and none of them worked.</p>
-
-<h2 id="using-a-pytorch-image-from-nvidias-container-registry">Using a pytorch image from NVIDIA’s container registry</h2>
-
-<p>Changing tack a bit (after a suggestion from a colleague) I decided to try using
-a (Docker) <a href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch">container image from the NVIDIA
-registry</a>, rather
-than the official pytorch channel on Docker Hub.</p>
-
-<pre><code class="language-shell">$ singularity pull docker://nvcr.io/nvidia/pytorch:22.01-py3
-$ singularity shell --nv pytorch_22.01-py3.sif 
-Singularity&gt; pip install --user .
-</code></pre>
-
-<p>Now, let’s try running the <code>style_trasfer</code> script one more time:</p>
-
-<pre><code class="language-shell">Singularity&gt; PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
-Using devices: cuda:0
-GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
-GPU 0 RAM: 24268 MB
-Loading model...
-Processing content image (128x85)...
-</code></pre>
-
-<p>Hooray! It works, and runs, like 10000x faster on the GPU.</p>
-
-<h2 id="open-questions">Open questions</h2>
-
-<p>I really was just “hacking it until it worked” during this process, so I have a
-few open questions.</p>
-
-<ul>
-  <li>
-    <p>What’s the “persistance” story with the singularity images (<code>*.sif</code> files)? Is
-it like docker, where I <code>singularity shell</code> in, do some things, but then any
-changes I make in the shell (container?) don’t persist? It doesn’t seem like
-that… but need to have a better mental model of how singularity images work.</p>
-  </li>
-  <li>
-    <p>I didn’t use <a href="https://virtualenv.pypa.io/en/latest/">venvs</a> or
-<a href="https://docs.conda.io/en/latest/">conda</a> or
-<a href="https://python-poetry.org/docs/">poetry</a> or any of the things I’d usually use
-when python-ing on my own machine, partially because of my above questions
-about how the whole singularity shell thing actually works. I just did <code>pip
-install --user .</code> and hoped it didn’t break anything else. Is that ok? Or
-should I still use venvs in the singularity image?</p>
-  </li>
-</ul>
-
-<p>I will return and try and better understand these things later, but right now
-this isn’t on the critical path for me so I’ll have to park it. This blog post
-is really just me opening a ticket for myself to return to later. I share it so
-that you, dear reader, can also benefit from my mistakes (and if you know of
-better ways to do any of this then do <a href="mailto:ben.swift@anu.edu.au">drop me a
-line</a>.</p>
-
-<h2 id="footnotes">Footnotes</h2>
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:singularity-isolation" role="doc-endnote">
-
-      <p>I had hoped that Singularity might help with the “isolation” part of this,
-but I’m not sure I understand it well enough yet to know how to do it. <a href="#fnref:singularity-isolation" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="ai" /><summary type="html"><![CDATA[I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer the question: “What is SingularityCE?”]]></summary></entry></feed>
+</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[If you’re the sort of person who lurks on people’s LinkedIn accounts, you may have noticed that I’ve recently become the lead of the Experiences Team at the School of Cybernetics. My team’s mission is:]]></summary></entry></feed>
