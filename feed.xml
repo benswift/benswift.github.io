@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-01-23T09:33:37+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Handling Square Webhooks in Phoenix</title><link href="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/" rel="alternate" type="text/html" title="Handling Square Webhooks in Phoenix" /><published>2023-01-22T00:00:00+11:00</published><updated>2023-01-22T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix</id><content type="html" xml:base="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/"><![CDATA[<p>My <a href="https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459">brother’s
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-01-23T10:48:12+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Handling Square Webhooks in Phoenix</title><link href="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/" rel="alternate" type="text/html" title="Handling Square Webhooks in Phoenix" /><published>2023-01-22T00:00:00+11:00</published><updated>2023-01-22T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix</id><content type="html" xml:base="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/"><![CDATA[<p>My <a href="https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459">brother’s
 cafe</a>
 donates a dollar to the local community centre for every coffee sold, and over
 the summer I built
@@ -31,12 +31,13 @@ how to do exactly that—just follow the instructions there.</p>
 
 <h2 id="step-2-create-webhook-controller-including-validation">Step 2: create webhook controller (including validation)</h2>
 
-<p>The webhook controller module should look something like this:</p>
+<p>The webhook controller module should look something like this (replace the
+<code>notification_url</code> and <code>signature_key</code> with the right values for your
+app—you’ll get your signature key from Square when you register the webhook):</p>
 
 <pre><code class="language-elixir">defmodule MyAppWeb.SquareWebhookController do
   @moduledoc """
   Handle webhooks sent from Square.
-
   """
   use MyAppWeb, :controller
 
@@ -86,12 +87,17 @@ drill.</p>
 end
 </code></pre>
 
-<h2 id="and-youre-done">And you’re done!</h2>
+<h2 id="step-4-subscribe-to-the-webhook">Step 4: subscribe to the webhook</h2>
 
-<p>After that’s all done (and you’ve deployed your app) you’re ready for it to
-receive webhooks from Square. You can set that up through your <a href="https://developer.squareup.com/">Square
-developer</a>, and once you’ve created a webhook
-you can even send a “test” payload just to check everything’s working.</p>
+<p>After that’s all done (and you’ve deployed your app) you’re ready to <a href="https://developer.squareup.com/docs/webhooks/overview">set up a
+webhook subscription</a>.
+Follow the Square docs and Square will start hitting your (deployed) app’s
+<code>https://example.com/square/webhook</code> endpoint, and your app can do its thing.</p>
+
+<p class="hl-para">Note that these incoming webhook requests <em>won’t</em> hit your local development
+server running on <code>localhost</code>, so testing webhooks is a bit trickier. Since my
+app runs on <a href="https://fly.io">fly</a> it involved a little bit of <code>IO.inspect</code>ing in
+production and then looking at the logs with <code>flyctl logs</code>.</p>
 
 <p>Have fun! And if you live in Canberra, especially in Tuggeranong/Lanyon, maybe
 go buy a coffee from <a href="https://www.littleluxton.com">Little Luxton</a> and you can
