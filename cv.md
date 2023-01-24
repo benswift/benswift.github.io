@@ -204,7 +204,11 @@ I have also written and delivered the following courses:
 - **2021** Organising Committee, [_Australasian Computer Music
   Conference_](https://acmc2021.art)
 
-- **2019--** Vice President, [_Australasian Computer Music
+- **2021--** Editorial Committee, [_Chroma: Journal of the Australasian Computer
+  Music
+  Association_](https://journal.computermusic.org.au/chroma/about/editorialTeam)
+
+- **2019--2021** Vice President, [_Australasian Computer Music
   Association_](https://computermusic.org.au/committee/)
 
 - **2017--** ANU School of Computing representative, [_Australian Council of
