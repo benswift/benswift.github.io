@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-01-24T17:31:52+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Handling Square Webhooks in Phoenix</title><link href="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/" rel="alternate" type="text/html" title="Handling Square Webhooks in Phoenix" /><published>2023-01-22T00:00:00+11:00</published><updated>2023-01-22T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix</id><content type="html" xml:base="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/"><![CDATA[<p>My <a href="https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459">brother’s
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-01-27T15:08:15+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
+all concerned.</p>
+
+<picture style="position: relative;">
+  <img alt="Ben and Kieran in full academic dress at the ANU graduation ceremony in December 2022" src="/assets/images/posts/ben-kieran-phd-graduation.jpg" />
+
+  
+</picture>
+
+<p>His thesis, <em>Neurological Metaphor in Deep Learning: Issues and Alternatives</em>,
+is <a href="https://openresearch-repository.anu.edu.au/handle/1885/274243">available online through the ANU
+Library</a>. It’s a
+really interesting mix of insightful scholarship and practice-based design
+interventions. In other words, he has interesting things to say <em>and</em> he built
+interesting things (some of which are available online).</p>
+
+<p>Here’s the abstract:</p>
+
+<blockquote>
+  <p>Representations of deep learning—discursive, historical and
+diagrammatic—are structured by a neurological metaphor that overstates a
+likeness to the brain and disguises other ways of understanding the
+technology. These neurological representations muddle the crucial public
+debate even as deep learning is applied in high-stakes applications,
+particularly in institutions of social and political power. This thesis draws
+on historical sources and contemporary literature to trace the development and
+contemporary expression of the neurological metaphor in deep learning
+discourse; particularly with respect to the field’s terminology, the telling
+of its history, and the drawing of its diagrams. In the manuscript and in
+three documented practice-based works, I propose alternative metaphors for
+deep learning—divination, surveillance and memory—to highlight
+sociotechnical concerns posed by the technology. As a highly interdisciplinary
+project, this thesis applies a range of methods drawn variously from digital
+humanities, discourse analysis, human-centred computing, visual arts and
+design, and deep learning itself. The traditional scholarship and
+practice-based aspects of the thesis are situated in contemporary debates of
+AI bias and interpretability, and the role of deep learning in systems of
+power.</p>
+</blockquote>]]></content><author><name>Ben Swift</name></author><category term="research" /><category term="ai" /><summary type="html"><![CDATA[Last December Kieran graduated—very exciting for all concerned.]]></summary></entry><entry><title type="html">Handling Square Webhooks in Phoenix</title><link href="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/" rel="alternate" type="text/html" title="Handling Square Webhooks in Phoenix" /><published>2023-01-22T00:00:00+11:00</published><updated>2023-01-22T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix</id><content type="html" xml:base="https://benswift.me/blog/2023/01/22/handling-square-webhooks-in-phoenix/"><![CDATA[<p>My <a href="https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459">brother’s
 cafe</a>
 donates a dollar to the local community centre for every coffee sold, and over
 the summer I built
@@ -452,68 +490,4 @@ reason for using R in the first place) you could try something like:</p>
 <p>I wrote something up for the ANU School of Cybernetics blog (where <a href="https://cybernetics.anu.edu.au/people/ben-swift/">I
 work</a>) which has the same
 energy as some of the stuff I post on here. If you’re interested, <a href="https://cybernetics.anu.edu.au/2022/05/02/scar-trees-living-typefaces/">go check it
-out</a> ☺</p>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><category term="web" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Teaching the world to Cybernetics</title><link href="https://benswift.me/blog/2022/03/07/teaching-the-world-to-cybernetics/" rel="alternate" type="text/html" title="Teaching the world to Cybernetics" /><published>2022-03-07T00:00:00+11:00</published><updated>2022-03-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/03/07/teaching-the-world-to-cybernetics</id><content type="html" xml:base="https://benswift.me/blog/2022/03/07/teaching-the-world-to-cybernetics/"><![CDATA[<p>If you’re the sort of person who lurks on people’s LinkedIn accounts, you may
-have noticed that I’ve recently become the <a href="https://cybernetics.anu.edu.au/people/ben-swift/">lead of the <em>Experiences</em>
-Team</a> at the School of
-Cybernetics. My team’s mission is:</p>
-
-<blockquote>
-  <p>to take Cybernetics to the world by providing encounters with cybernetics to
-individuals and organisations who are (currently) not in our Masters/PhD
-programs.</p>
-
-  <p>…and to find ways to do it sustainably.</p>
-</blockquote>
-
-<p><img src="/assets/images/posts/alina-grubnyak-ZiQkhI7417A-unsplash.jpg" alt="a bunch of wires connected together in interesting geometric shapes" /></p>
-
-<p>That might strike you as a pretty broad mission, for a couple of reasons:</p>
-
-<ul>
-  <li>what counts as an <em>encounter</em>? couldn’t that be anything?</li>
-  <li>the world is a big and diverse place</li>
-</ul>
-
-<p>…and you’d be right. If you follow the rest of the communications from the
-School of Cybernetics you’ll know that we’re not shy about painting a grand,
-totalising vision of how the world can/might work and what part cybernetics has
-to play in it. And while I’m a bit daunted by the task, I’m also pretty excited.</p>
-
-<p>Here are some of the things my team will be working on over the next weeks/months/years:</p>
-
-<ul>
-  <li>
-    <p>site-specific experiences based around specific places; uncovering the
-cybernetic histories of some of the places we inhabit on the ANU campus and
-beyond, and creating narrative experiences to share those histories with
-others</p>
-  </li>
-  <li>
-    <p>articulating many different answers to the question “what is cybernetics?” for
-different audiences &amp; mediums (online/in-person, talks/workshops/happenings,
-prosaic/poetic)</p>
-  </li>
-  <li>
-    <p>creating a curriculum for interested partners to understand how the key ideas
-of cybernetics can help them untagle (or at least manage) the complexity in
-their businesses and other organisations</p>
-  </li>
-</ul>
-
-<p>What I can say is that I want the things we make to be <strong>weird</strong>. If I ever turn
-up in a tie and a blue suit and deliver an hours-long bullet-pointed PowerPoint
-presentation<sup id="fnref:ppt" role="doc-noteref"><a href="#fn:ppt" class="footnote" rel="footnote">1</a></sup> on this stuff then you have my permission to point me back to
-this post and ask me where it all went wrong. Otherwise, I look forward to
-crossing paths with you and sharing an educational experience about cybernetics.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:ppt" role="doc-endnote">
-
-      <p>Don’t get me wrong, PowerPoint (well, visual aids in general) can be super
-effective as part of a multimedia presentation strategy, but the
-<a href="https://twitter.com/add_hawk/status/1489001635779018754">affordances of the tool are such that it makes it hard to avoid the
-pitfalls</a>. <a href="#fnref:ppt" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><summary type="html"><![CDATA[If you’re the sort of person who lurks on people’s LinkedIn accounts, you may have noticed that I’ve recently become the lead of the Experiences Team at the School of Cybernetics. My team’s mission is:]]></summary></entry></feed>
+out</a> ☺</p>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><category term="web" /><summary type="html"><![CDATA[]]></summary></entry></feed>
