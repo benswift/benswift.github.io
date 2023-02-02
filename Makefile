@@ -4,6 +4,7 @@ SSH_REPO_ADDRESS=git@github.com:$(GH_USERNAME)/$(GH_USERNAME).github.io.git
 SOURCE_GIT_REF := $(shell git rev-parse --short source)
 
 JEKYLL_ENV=production
+RUBY_YJIT_ENABLE=true
 
 all: push
 
