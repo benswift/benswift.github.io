@@ -5,22 +5,12 @@ tags: teaching ai
 
 Here in Australia Semester 1 is approaching and
 [ChatGPT](https://chat.openai.com) is, undoubtedly, _a thing_. From a practical
-perspective I think it's important to have some​ sort of policy written up for
-about ChatGPT and other generative AI tools in the classroom. [Everyone's doing
-it](https://twitter.com/dbkahn/status/1616494433587040257). If you don't have an
-explicit policy you'll be making it up as you go along (because it _will_ come
-up this Semester) and [policy on the run is policy
+perspective it's important to have some​ sort of policy about about ChatGPT and
+other generative AI tools in the classroom ([everyone's doing
+it](https://twitter.com/dbkahn/status/1616494433587040257)). If you don't have
+an explicit policy you'll end up making your policy up as you go along (because
+it _will_ come up) and [policy on the run is policy
 underdone](https://www.youtube.com/watch?v=7XeQin9abx4).
-
-{:.hl-para}
-
-At this stage these are just my own personal thoughts as a teaching academic;
-I'm not wearing my [Associate Director
-(Education)](https://cybernetics.anu.edu.au/people/ben-swift/) hat here, and
-this isn't an official (or unofficial) ANU School of Cybernetics policy. If
-you're also putting together a policy for your classroom, then
-questions/comments/suggesions are welcome---do [get in
-touch](mailto:ben.swift@anu.edu.au).
 
 In terms of the opportunities to incorporate, explore and critique new tools in
 the classroom, I'm actually kindof excited. [I've written elsewhere about how
@@ -30,9 +20,20 @@ but the tl;dr is that you owe it to yourself to look at your class activities
 it goes. OpenAI have also just released some stuff about [considerations for
 educators](https://platform.openai.com/docs/chatgpt-education).
 
-Here are my current thoughts what my "Academic integrity policy re: ChatGPT and
-generative AI tools" policy is. Because it's not a proper policy it doesn't have
-everything precisely defined or any other legal fidgey-widgeyness.
+{:.hl-para}
+
+At this stage these are just my own personal thoughts as a teaching academic;
+I'm not wearing my [Associate Director
+(Education)](https://cybernetics.anu.edu.au/people/ben-swift/) hat here, and
+**this is not an official (or unofficial) ANU School of Cybernetics policy**. If
+you're also putting together a policy for your classroom, then
+questions/comments/suggesions are welcome---do [get in
+touch](mailto:ben.swift@anu.edu.au).
+
+Here are my current thoughts what a good "Academic integrity policy re: ChatGPT
+and generative AI tools" policy looks like. Because it's not a proper policy it
+doesn't have everything precisely defined or any other legal fidgey-widgeyness,
+but it gives an idea of how I want to run my classes.
 
 1. Unless otherwise specified, you **are** allowed to use
    ChatGPT[^other-similar-tools] in this class, including in work submitted for
