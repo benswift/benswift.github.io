@@ -34,6 +34,7 @@ build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:
     RUBY_YJIT_ENABLE=true bundle exec jekyll build
 
 The build was _heaps_ faster---the average over 3 runs was 3.7 (±0.2) seconds.
+**That's a 4.8x speedup**.
 
 Obviously, like all benchmarks on the internet this one is wrong & stupid and
 you should do your own testing. But if you build a lot of Jekyll sites, my
