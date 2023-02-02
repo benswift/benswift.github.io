@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-02-02T13:20:10+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Academic integrity policy re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity policy re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-02-02T14:00:10+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Academic integrity policy re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity policy re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
 <a href="https://chat.openai.com">ChatGPT</a> is, undoubtedly, <em>a thing</em>. From a practical
 perspective it’s important to have some​ sort of policy about about ChatGPT and
 other generative AI tools in the classroom (<a href="https://twitter.com/dbkahn/status/1616494433587040257">everyone’s doing
@@ -131,7 +131,44 @@ other generative AI tools”, where those tools are defined according to
 (ERROR: definition not found). <a href="#fnref:other-similar-tools" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of policy about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t have an explicit policy you’ll end up making your policy up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
+</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of policy about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t have an explicit policy you’ll end up making your policy up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry><entry><title type="html">Jekyll build speedups for Ruby 3.2</title><link href="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/" rel="alternate" type="text/html" title="Jekyll build speedups for Ruby 3.2" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/"><![CDATA[<p>There’s a <a href="https://news.ycombinator.com/item?id=34413012">bunch of buzz</a> about
+Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll
+websites for work, some of which are getting into “non-trivial build time”
+territory (or maybe I’m really easily distracted, but a 30s build is enough for
+me to break my flow).</p>
+
+<p>Here’s some very unscientifc benchmarks from my <a href="https://jekyllrb.com">Jekyll</a>
+(v4.3) builds on my M1 Max MBP (64GB).</p>
+
+<h2 id="ruby-312p20-2022-04-12-revision-4491bb740a-arm64-darwin21">ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [arm64-darwin21]</h2>
+
+<p>First, this is the previous version of Ruby, which I’ve been happily working
+with for ages.</p>
+
+<pre><code>bundle exec jekyll build
+</code></pre>
+
+<p>Averaged over 3 runs, the build time was 17.7 (±0.8) seconds.</p>
+
+<h2 id="ruby-320-2022-12-25-revision-a528908271-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]</h2>
+
+<p>After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2 (±0.2) seconds.</p>
+
+<h2 id="ruby-320-2022-12-25-revision-a528908271-yjit-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [arm64-darwin22]</h2>
+
+<p>I <a href="https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82">followed these
+instructions</a> to
+build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:</p>
+
+<pre><code>RUBY_YJIT_ENABLE=true bundle exec jekyll build
+</code></pre>
+
+<p>The build was <em>heaps</em> faster—the average over 3 runs was 3.7 (±0.2) seconds.</p>
+
+<p>Obviously, like all benchmarks on the internet this one is wrong &amp; stupid and
+you should do your own testing. But if you build a lot of Jekyll sites, my
+anecdotal evidence is that you can save yourself a bunch of time, and tighten
+those feedback loops to stay in the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
 all concerned.</p>
 
 <picture style="position: relative;">
@@ -564,54 +601,4 @@ did that in Emacs with:</p>
 
 <p><img src="/assets/images/posts/craiyon/redacted-craiyon_2022-6-22_17-21-5.jpg" alt="Grid of AI image outputs generated in response to the prompt, which has been redacted" /></p>
 
-<p>If you need to do the same, then hopefully I’ve saved you a bit of time ☺</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="ai" /><summary type="html"><![CDATA[I’ve been messing around with craiyon (formerly DALL-E mini), because who hasn’t been doing that recently.]]></summary></entry><entry><title type="html">Pulling apart Zoom attendance csv dumps in tidy R</title><link href="https://benswift.me/blog/2022/05/23/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r/" rel="alternate" type="text/html" title="Pulling apart Zoom attendance csv dumps in tidy R" /><published>2022-05-23T00:00:00+10:00</published><updated>2022-05-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/05/23/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r</id><content type="html" xml:base="https://benswift.me/blog/2022/05/23/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r/"><![CDATA[<p>My team ran some Zoom training last week and today I needed to figure out who
-actually attended across all the days, and for how long.</p>
-
-<p>Zoom can give you a csv dump of all attendees but doesn’t provide the
-aggregations I was after, so I hacked up a little script (in <a href="https://www.tidyverse.org">tidy
-R</a>) to do it. If you ever want to do something
-similar, feel free to use it (<a href="https://mit-license.org">MIT Licence</a>).</p>
-
-<pre><code class="language-R">read_zoom_attendance_csv = function(filename){
-  read_csv(filename, show_col_types = FALSE) %&gt;%
-    # I only needed the date, not the actual start time, so I didn't bother parsing
-    # the full datetime + timezone string that Zoom gives
-    mutate(date = parse_date(str_sub(`Join Time`, end = 10), format = "%m/%d/%Y")) %&gt;%
-    # this isn't necessary, but I like shorter column names
-    rename(name = `Name (Original Name)`, email = `User Email`, duration = `Duration (Minutes)` ) %&gt;%
-    # I'm only intrested in these columns
-    select(name, email, date, duration) %&gt;%
-    # this isn't necessary, but handy if individuals have signed in with
-    # slightly different names on different days (requires eyeballing the data)
-    mutate(name = recode(name,
-                         "JS" = "Joanna Smith",
-                         "Louise" = "Louise Jones"
-}
-</code></pre>
-
-<p>Then you can read the Zoom csv file like so:</p>
-
-<pre><code class="language-R">df = read_zoom_attendance_csv("zoom-call.csv")
-</code></pre>
-
-<p>And to visualise in <a href="https://ggplot2.tidyverse.org">ggplot2</a> (which was my
-reason for using R in the first place) you could try something like:</p>
-
-<pre><code class="language-R">df %&gt;%
-  group_by(name, date) %&gt;%
-  # this was the key summarisation I was after - total time 
-  # in-call across multiple connects/re-connects
-  summarise(duration = sum(duration)) %&gt;%
-  ungroup() %&gt;%
-  ggplot(aes(name, duration)) +
-  geom_col() +
-  coord_flip() +
-  facet_wrap(~date, nrow = 1) +
-  labs(
-    title = "Zoom call attendance",
-    x = "participant name",
-    y = "duration on the call (minutes)"
-  )
-</code></pre>
-
-<p>Enjoy!</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[My team ran some Zoom training last week and today I needed to figure out who actually attended across all the days, and for how long.]]></summary></entry></feed>
+<p>If you need to do the same, then hopefully I’ve saved you a bit of time ☺</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="ai" /><summary type="html"><![CDATA[I’ve been messing around with craiyon (formerly DALL-E mini), because who hasn’t been doing that recently.]]></summary></entry></feed>
