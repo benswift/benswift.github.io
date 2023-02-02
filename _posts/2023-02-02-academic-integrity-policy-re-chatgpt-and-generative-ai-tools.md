@@ -14,9 +14,10 @@ underdone](https://www.youtube.com/watch?v=7XeQin9abx4).
 
 In terms of the opportunities to incorporate, explore and critique new tools in
 the classroom, I'm actually kindof excited. [I've written elsewhere about how
-you](https://www.timeshighereducation.com/campus/so-you-want-use-chatgpt-classroom-semester),
-but the tl;dr is that you owe it to yourself to look at your class activities
-(including assessment items) and try and do them with ChatGPT, just to see how
+you might be able to do
+this](https://www.timeshighereducation.com/campus/so-you-want-use-chatgpt-classroom-semester).
+The _tl;dr_ is that you should look at your class activities (including
+assessment items) and try and actually _do_ them with ChatGPT, just to see how
 it goes. OpenAI have also just released some stuff about [considerations for
 educators](https://platform.openai.com/docs/chatgpt-education).
 
