@@ -1,4 +1,124 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-01-27T15:08:15+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-02-02T11:05:54+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Academic integrity policy re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity policy re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
+<a href="https://chat.openai.com">ChatGPT</a> is, undoubtedly, <em>a thing</em>. From a practical
+perspective I think it’s important to have some​ sort of policy written up for
+about ChatGPT and other generative AI tools in the classroom. Otherwise we’ll
+just be making it up as we go along, and <em>policy on the run is policy underdone</em>
+or something.</p>
+
+<p class="hl-para">At this stage these are just my own personal thoughts as a teaching academic;
+I’m not wearing my <a href="https://cybernetics.anu.edu.au/people/ben-swift/">Associate Director
+(Education)</a> hat here, and
+this isn’t an official (or unofficial) ANU School of Cybernetics policy. If
+you’re also putting together a policy for your classroom, then
+questions/comments/suggesions are welcome—do <a href="mailto:ben.swift@anu.edu.au">get in
+touch</a>.</p>
+
+<p>OpenAI have just
+released some stuff about <a href="https://platform.openai.com/docs/chatgpt-education">considerations for
+educators</a>.</p>
+
+<p>Here are my current thoughts what my “Academic integrity policy re: ChatGPT and
+generative AI tools” policy is. Because it’s not a proper policy it doesn’t have
+everything precisely defined or any other legal fidgey-widgeyness.</p>
+
+<ol>
+  <li>
+    <p>Unless otherwise specified, you <strong>are</strong> allowed to use
+ChatGPT<sup id="fnref:other-similar-tools" role="doc-noteref"><a href="#fn:other-similar-tools" class="footnote" rel="footnote">1</a></sup> in this class, including in work submitted for
+assessment.</p>
+  </li>
+  <li>
+    <p>Wherever ChatGPT is used it must be cited according according to the <a href="https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt">OpenAI
+citation
+instructions</a></p>
+  </li>
+  <li>
+    <p>You are expected to be able to explain (in conversation with the course
+convenor) any assessment submission to demonstrate your understanding of the
+concepts being assessed.</p>
+  </li>
+  <li>
+    <p>Any violations of the above will be considered a potential breach of academic
+integrity under clause 9 of section 12(2) of the <a href="#appendix-anu-academic-integrity-rule">ANU Academic Integrity
+Rule</a> “improperly recycles work or
+otherwise improperly submits or publishes work that is not original”
+(<strong>note</strong>: I’m unsure on which clause is best to use here—could be clause
+8, could be one of the others as well).</p>
+  </li>
+  <li>
+    <p>No “is-this-written-by-an-AI?”​ detection tools (e.g.
+<a href="https://openai.com/blog/new-ai-classifier-for-indicating-ai-written-text/">this</a>)
+will be used as part of the marking process.</p>
+  </li>
+</ol>
+
+<p>One open question (not necessarily part of the student-facing policy, but
+relevant for anyone running a course) is what guidance should be given to the
+markers (e.g. tutors/TAs) on what to do with ChatGPT-generated content. Should
+submissions (or parts thereof) created with the help of ChatGPT be marked lower
+than “equivalent standard” submissions that aren’t?</p>
+
+<p>Anyway, these are just some draft thoughts—I’ll keep this post updated as my
+thinking changes.</p>
+
+<h2 id="appendix-anu-academic-integrity-rule">Appendix: ANU Academic Integrity Rule</h2>
+
+<p>From the <a href="https://www.legislation.gov.au/Details/F2021L00997/Html/Text#_Toc73961519">ANU Academic Integrity Rule
+2021</a>
+Section 12 (2), here’s the list of what constitutes a breach of the academic
+integrity principle.</p>
+
+<style>
+#academic-integrity-definitions ol {list-style-type: lower-alpha;}
+#academic-integrity-definitions ol ol {list-style-type: lower-roman;}
+</style>
+
+<div id="academic-integrity-definitions">
+
+  <blockquote>
+    <p>(2) For this instrument, a student breaches the academic integrity principle if, in scholarly practice, the student:</p>
+    <ol>
+      <li>cheats; or</li>
+      <li>impersonates another person; or</li>
+      <li>engages in plagiarism; or</li>
+      <li>colludes with another person; or</li>
+      <li>improperly shares material with another person; or</li>
+      <li>engages in contract cheating or improperly engages another person to prepare, or assist in preparing, work for the student; or</li>
+      <li>submits or publishes anything that fails to correctly or appropriately acknowledge the work of another person or otherwise improperly appropriates the intellectual property or contribution of another person; or</li>
+      <li>otherwise passes off the work of another person as the student’s own work; or</li>
+      <li>improperly recycles work or otherwise improperly submits or publishes work that is not original; or</li>
+      <li>takes a prohibited item into an examination or other assessment venue or otherwise breaches the University’s directions (however described) in relation to an examination or other assessment; or</li>
+      <li>fabricates or falsifies any document, data or other information, or anything else, including, for example, by intentionally omitting data to obtain a desired result, or by falsely representing observations as genuinely held; or</li>
+      <li>otherwise intentionally or recklessly engages in conduct:
+        <ol>
+          <li>that impedes the progress of research; or</li>
+          <li>that risks corrupting research records or compromising the integrity of research practices; or</li>
+          <li>that uses research data from another person without appropriate acknowledgement; or</li>
+          <li>that breaches a research protocol approved by a research ethics committee or a statutory licence condition applying to research; or</li>
+        </ol>
+      </li>
+      <li>otherwise engages in conduct with the intention of gaining, or assisting another person to gain, an unethical, dishonest, unfair or unjustified advantage; or</li>
+      <li>otherwise engages in conduct, or assists another person to engage in conduct, that is unethical, dishonest or unfair; or</li>
+      <li>engages in any other conduct declared to be academic misconduct by the orders.</li>
+    </ol>
+  </blockquote>
+
+  <p>My commentary on the above (and IANAL) is that none of those points really
+capture the specific case of “ChatGPT wrote this essay, not the student”, in
+particular because so many of the definitions reference “of another <em>person</em>”.
+I’m sure this language will be updated in the future in light of the widespread
+availability of generative AI tools.</p>
+</div>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:other-similar-tools" role="doc-endnote">
+
+      <p>Wherever ChatGPT is named in this policy it should be read as “ChatGPT and
+other generative AI tools”, where those tools are defined according to
+(ERROR: definition not found). <a href="#fnref:other-similar-tools" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective I think it’s important to have some​ sort of policy written up for about ChatGPT and other generative AI tools in the classroom. Otherwise we’ll just be making it up as we go along, and policy on the run is policy underdone or something.]]></summary></entry><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
 all concerned.</p>
 
 <picture style="position: relative;">
@@ -481,13 +601,4 @@ reason for using R in the first place) you could try something like:</p>
   )
 </code></pre>
 
-<p>Enjoy!</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[My team ran some Zoom training last week and today I needed to figure out who actually attended across all the days, and for how long.]]></summary></entry><entry><title type="html">Scar trees &amp;amp; living typefaces</title><link href="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/" rel="alternate" type="text/html" title="Scar trees &amp;amp; living typefaces" /><published>2022-05-02T00:00:00+10:00</published><updated>2022-05-02T00:00:00+10:00</updated><id>https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces</id><content type="html" xml:base="https://benswift.me/blog/2022/05/02/scar-trees-living-typefaces/"><![CDATA[<picture style="position: relative;">
-  <img alt="Yellow box tree on ANU campus. 📸 ANU Photography, 2016" src="/assets/images/posts/20190103_H1P3978_scar_tree.jpg" />
-
-  
-</picture>
-
-<p>I wrote something up for the ANU School of Cybernetics blog (where <a href="https://cybernetics.anu.edu.au/people/ben-swift/">I
-work</a>) which has the same
-energy as some of the stuff I post on here. If you’re interested, <a href="https://cybernetics.anu.edu.au/2022/05/02/scar-trees-living-typefaces/">go check it
-out</a> ☺</p>]]></content><author><name>Ben Swift</name></author><category term="cybernetics" /><category term="web" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+<p>Enjoy!</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[My team ran some Zoom training last week and today I needed to figure out who actually attended across all the days, and for how long.]]></summary></entry></feed>
