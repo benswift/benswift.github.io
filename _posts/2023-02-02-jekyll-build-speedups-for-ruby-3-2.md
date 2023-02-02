@@ -37,6 +37,9 @@ The build was _heaps_ faster---the average over 3 runs was 3.7 (±0.2) seconds.
 **That's a 4.8x speedup**.
 
 Obviously, like all benchmarks on the internet this one is wrong & stupid and
-you should do your own testing. But if you build a lot of Jekyll sites, my
-anecdotal evidence is that you can save yourself a bunch of time, and tighten
-those feedback loops to stay in the flow state. Have fun!
+you should do your own testing. Three runs probably isn't enough to shake out
+any cache effects, and I don't know (but could guess?) that the JIT might have
+even more pronounced cold start issues (although I didn't really see it above).
+Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
+can save yourself a bunch of time, and tighten those feedback loops to stay in
+the flow state. Have fun!
