@@ -6,9 +6,11 @@ tags: teaching ai
 Here in Australia Semester 1 is approaching and
 [ChatGPT](https://chat.openai.com) is, undoubtedly, _a thing_. From a practical
 perspective I think it's important to have some​ sort of policy written up for
-about ChatGPT and other generative AI tools in the classroom. Otherwise we'll
-just be making it up as we go along, and _policy on the run is policy underdone_
-or something.
+about ChatGPT and other generative AI tools in the classroom. [Everyone's doing
+it](https://twitter.com/dbkahn/status/1616494433587040257). If you don't have an
+explicit policy you'll be making it up as you go along (because it _will_ come
+up this Semester) and [policy on the run is policy
+underdone](https://www.youtube.com/watch?v=7XeQin9abx4).
 
 {:.hl-para}
 
@@ -20,8 +22,12 @@ you're also putting together a policy for your classroom, then
 questions/comments/suggesions are welcome---do [get in
 touch](mailto:ben.swift@anu.edu.au).
 
-OpenAI have just
-released some stuff about [considerations for
+In terms of the opportunities to incorporate, explore and critique new tools in
+the classroom, I'm actually kindof excited. [I've written elsewhere about how
+you](https://www.timeshighereducation.com/campus/so-you-want-use-chatgpt-classroom-semester),
+but the tl;dr is that you owe it to yourself to look at your class activities
+(including assessment items) and try and do them with ChatGPT, just to see how
+it goes. OpenAI have also just released some stuff about [considerations for
 educators](https://platform.openai.com/docs/chatgpt-education).
 
 Here are my current thoughts what my "Academic integrity policy re: ChatGPT and
@@ -36,18 +42,22 @@ everything precisely defined or any other legal fidgey-widgeyness.
    citation
    instructions](https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt)
 
-3. You are expected to be able to explain (in conversation with the course
+3. You are responsible for everything you submit. "It's not my fault---the AI
+   generated text introduced errors/lies/racial slurs" is never an acceptable
+   excuse.
+
+4. You are expected to be able to explain (in conversation with the course
    convenor) any assessment submission to demonstrate your understanding of the
    concepts being assessed.
 
-4. Any violations of the above will be considered a potential breach of academic
+5. Any violations of the above will be considered a potential breach of academic
    integrity under clause 9 of section 12(2) of the [ANU Academic Integrity
    Rule](#appendix-anu-academic-integrity-rule) "improperly recycles work or
    otherwise improperly submits or publishes work that is not original"
    (**note**: I'm unsure on which clause is best to use here---could be clause
    8, could be one of the others as well).
 
-5. No "is-this-written-by-an-AI?"​ detection tools (e.g.
+6. No "is-this-written-by-an-AI?"​ detection tools (e.g.
    [this](https://openai.com/blog/new-ai-classifier-for-indicating-ai-written-text/))
    will be used as part of the marking process.
 
