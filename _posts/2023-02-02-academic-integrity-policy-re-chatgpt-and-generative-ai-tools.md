@@ -1,0 +1,107 @@
+---
+title: "Academic integrity policy re: ChatGPT and generative AI tools"
+tags: teaching ai
+---
+
+Here in Australia Semester 1 is approaching and
+[ChatGPT](https://chat.openai.com) is, undoubtedly, _a thing_. From a practical
+perspective I think it's important to have some​ sort of policy written up for
+about ChatGPT and other generative AI tools in the classroom. Otherwise we'll
+just be making it up as we go along, and _policy on the run is policy underdone_
+or something.
+
+{:.hl-para}
+
+At this stage these are just my own personal thoughts as a teaching academic;
+I'm not wearing my [Associate Director
+(Education)](https://cybernetics.anu.edu.au/people/ben-swift/) hat here, and
+this isn't an official (or unofficial) ANU School of Cybernetics policy. If
+you're also putting together a policy for your classroom, then
+questions/comments/suggesions are welcome---do [get in
+touch](mailto:ben.swift@anu.edu.au).
+
+OpenAI have just
+released some stuff about [considerations for
+educators](https://platform.openai.com/docs/chatgpt-education).
+
+Here are my current thoughts what my "Academic integrity policy re: ChatGPT and
+generative AI tools" policy is. Because it's not a proper policy it doesn't have
+everything precisely defined or any other legal fidgey-widgeyness.
+
+1. Unless otherwise specified, you **are** allowed to use
+   ChatGPT[^other-similar-tools] in this class, including in work submitted for
+   assessment.
+
+2. Wherever ChatGPT is used it must be cited according according to the [OpenAI
+   citation
+   instructions](https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt)
+
+3. You are expected to be able to explain (in conversation with the course
+   convenor) any assessment submission to demonstrate your understanding of the
+   concepts being assessed.
+
+4. Any violations of the above will be considered a potential breach of academic
+   integrity under clause 9 of section 12(2) of the [ANU Academic Integrity
+   Rule](#appendix-anu-academic-integrity-rule) "improperly recycles work or
+   otherwise improperly submits or publishes work that is not original"
+   (**note**: I'm unsure on which clause is best to use here---could be clause
+   8, could be one of the others as well).
+
+5. No "is-this-written-by-an-AI?"​ detection tools (e.g.
+   [this](https://openai.com/blog/new-ai-classifier-for-indicating-ai-written-text/))
+   will be used as part of the marking process.
+
+[^other-similar-tools]:
+    Wherever ChatGPT is named in this policy it should be read as "ChatGPT and
+    other generative AI tools", where those tools are defined according to
+    (ERROR: definition not found).
+
+One open question (not necessarily part of the student-facing policy, but
+relevant for anyone running a course) is what guidance should be given to the
+markers (e.g. tutors/TAs) on what to do with ChatGPT-generated content. Should
+submissions (or parts thereof) created with the help of ChatGPT be marked lower
+than "equivalent standard" submissions that aren't?
+
+Anyway, these are just some draft thoughts---I'll keep this post updated as my
+thinking changes.
+
+## Appendix: ANU Academic Integrity Rule {#appendix-anu-academic-integrity-rule}
+
+From the [ANU Academic Integrity Rule
+2021](https://www.legislation.gov.au/Details/F2021L00997/Html/Text#_Toc73961519)
+Section 12 (2), here's the list of what constitutes a breach of the academic
+integrity principle.
+
+<style>
+#academic-integrity-definitions ol {list-style-type: lower-alpha;}
+#academic-integrity-definitions ol ol {list-style-type: lower-roman;}
+</style>
+
+<div id="academic-integrity-definitions" markdown="1">
+
+> (2) For this instrument, a student breaches the academic integrity principle if, in scholarly practice, the student:
+>  1. cheats; or
+>  2. impersonates another person; or
+>  3. engages in plagiarism; or
+>  4. colludes with another person; or
+>  5. improperly shares material with another person; or
+>  6. engages in contract cheating or improperly engages another person to prepare, or assist in preparing, work for the student; or
+>  7. submits or publishes anything that fails to correctly or appropriately acknowledge the work of another person or otherwise improperly appropriates the intellectual property or contribution of another person; or
+>  8. otherwise passes off the work of another person as the student’s own work; or
+>  9. improperly recycles work or otherwise improperly submits or publishes work that is not original; or
+> 10. takes a prohibited item into an examination or other assessment venue or otherwise breaches the University’s directions (however described) in relation to an examination or other assessment; or
+> 11. fabricates or falsifies any document, data or other information, or anything else, including, for example, by intentionally omitting data to obtain a desired result, or by falsely representing observations as genuinely held; or
+> 12. otherwise intentionally or recklessly engages in conduct:
+>     1. that impedes the progress of research; or
+>     2. that risks corrupting research records or compromising the integrity of research practices; or
+>     3. that uses research data from another person without appropriate acknowledgement; or
+>     4. that breaches a research protocol approved by a research ethics committee or a statutory licence condition applying to research; or
+> 17. otherwise engages in conduct with the intention of gaining, or assisting another person to gain, an unethical, dishonest, unfair or unjustified advantage; or
+> 18. otherwise engages in conduct, or assists another person to engage in conduct, that is unethical, dishonest or unfair; or
+> 19. engages in any other conduct declared to be academic misconduct by the orders.
+
+My commentary on the above (and IANAL) is that none of those points really
+capture the specific case of "ChatGPT wrote this essay, not the student", in
+particular because so many of the definitions reference "of another _person_".
+I'm sure this language will be updated in the future in light of the widespread
+availability of generative AI tools.
