@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-02-06T14:07:50+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Academic integrity policy re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity policy re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2023-02-06T15:02:48+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Academic integrity policy re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity policy re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
 <a href="https://chat.openai.com">ChatGPT</a> is, undoubtedly, <em>a thing</em>. From a practical
 perspective it’s important to have some​ sort of policy about about ChatGPT and
 other generative AI tools in the classroom (<a href="https://twitter.com/dbkahn/status/1616494433587040257">everyone’s doing
@@ -38,7 +38,7 @@ assessment.</p>
   <li>
     <p>Wherever ChatGPT is used it must be cited according according to the <a href="https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt">OpenAI
 citation
-instructions</a></p>
+instructions</a>.<sup id="fnref:attribution" role="doc-noteref"><a href="#fn:attribution" class="footnote" rel="footnote">2</a></sup></p>
   </li>
   <li>
     <p>You are responsible for everything you submit. “It’s not my fault—the AI
@@ -129,7 +129,16 @@ availability of generative AI tools.</p>
 
       <p>Wherever ChatGPT is named in this policy it should be read as “ChatGPT and
 other generative AI tools”, where those tools are defined according to
-(ERROR: definition not found). <a href="#fnref:other-similar-tools" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+(ERROR: definition not found). Any policy on this stuff which restricts
+itself to specific AI tools by name is doomed to become out of date real
+fast. <a href="#fnref:other-similar-tools" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:attribution" role="doc-endnote">
+
+      <p>This policy deliberately doesn’t try to address the (important) issue of AI
+tools and the way they appropriate the skilled labour of the millions of
+individuals who created, edited and labelled the data on which they were
+trained. <a href="#fnref:attribution" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of policy about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t have an explicit policy you’ll end up making your policy up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry><entry><title type="html">Jekyll build speedups for Ruby 3.2</title><link href="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/" rel="alternate" type="text/html" title="Jekyll build speedups for Ruby 3.2" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/"><![CDATA[<p>There’s a <a href="https://news.ycombinator.com/item?id=34413012">bunch of buzz</a> about
