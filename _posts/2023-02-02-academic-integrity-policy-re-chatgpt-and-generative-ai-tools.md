@@ -45,10 +45,11 @@ but it gives an idea of how I want to run my classes.
    instructions](https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt)
 
 3. You are responsible for everything you submit. "It's not my fault---the AI
-   generated text introduced errors/lies/racial slurs" is never an acceptable
-   excuse.
+   generated text introduced non-sequiturs/errors/plagiarised text/offensive
+   language" will never get you off the hook; if it's in your submission you're
+   responsible for it just as you would be if you'd written it without ChatGPT.
 
-4. You are expected to be able to explain (in conversation with the course
+4. You are expected to be able to explain (to your tutor, lecturer of course
    convenor) any assessment submission to demonstrate your understanding of the
    concepts being assessed.
 
