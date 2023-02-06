@@ -42,7 +42,7 @@ classes.
 
 2. Wherever ChatGPT is used it must be cited according according to the [OpenAI
    citation
-   instructions](https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt)
+   instructions](https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt).[^attribution]
 
 3. You are responsible for everything you submit. "It's not my fault---the AI
    generated text introduced non-sequiturs/errors/plagiarised text/offensive
@@ -67,7 +67,15 @@ classes.
 [^other-similar-tools]:
     Wherever ChatGPT is named in this policy it should be read as "ChatGPT and
     other generative AI tools", where those tools are defined according to
-    (ERROR: definition not found).
+    (ERROR: definition not found). Any policy on this stuff which restricts
+    itself to specific AI tools by name is doomed to become out of date real
+    fast.
+
+[^attribution]:
+    This policy deliberately doesn't try to address the (important) issue of AI
+    tools and the way they appropriate the skilled labour of the millions of
+    individuals who created, edited and labelled the data on which they were
+    trained.
 
 One open question (not necessarily part of the student-facing policy, but
 relevant for anyone running a course) is what guidance should be given to the
