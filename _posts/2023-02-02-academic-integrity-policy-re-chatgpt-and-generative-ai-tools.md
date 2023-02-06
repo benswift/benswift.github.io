@@ -1,15 +1,15 @@
 ---
-title: "Academic integrity policy re: ChatGPT and generative AI tools"
+title: "Academic integrity guidelines re: ChatGPT and generative AI tools"
 tags: teaching ai
 ---
 
 Here in Australia Semester 1 is approaching and
 [ChatGPT](https://chat.openai.com) is, undoubtedly, _a thing_. From a practical
-perspective it's important to have some​ sort of policy about about ChatGPT and
-other generative AI tools in the classroom ([everyone's doing
-it](https://twitter.com/dbkahn/status/1616494433587040257)). If you don't have
-an explicit policy you'll end up making your policy up as you go along (because
-it _will_ come up) and [policy on the run is policy
+perspective it's important to have some​ sort of guidelines about about ChatGPT
+and other generative AI tools in the classroom ([everyone's doing
+it](https://twitter.com/dbkahn/status/1616494433587040257)). If you don't
+provide any advice ahead of time you'll end up making it up as you go along
+(because it _will_ come up) and [policy on the run is policy
 underdone](https://www.youtube.com/watch?v=7XeQin9abx4).
 
 In terms of the opportunities to incorporate, explore and critique new tools in
@@ -27,14 +27,14 @@ At this stage these are just my own personal thoughts as a teaching academic;
 I'm not wearing my [Associate Director
 (Education)](https://cybernetics.anu.edu.au/people/ben-swift/) hat here, and
 **this is not an official (or unofficial) ANU School of Cybernetics policy**. If
-you're also putting together a policy for your classroom, then
+you're also putting together some guidelines for your own classroom, then
 questions/comments/suggesions are welcome---do [get in
 touch](mailto:ben.swift@anu.edu.au).
 
-Here are my current thoughts what a good _use of ChatGPT in the classroom_
-policy might look like. Because it's not a proper policy it doesn't have
-everything precisely defined, but it gives you an idea of how I want to run my
-classes.
+Here are my current thoughts what some good _use of ChatGPT in the classroom_
+guidelines might look like. It doesn't have everything precisely defined, but it
+gives you an idea of how I want to run my classes, balancing the opportunities
+and challenges these tools present for student learning.
 
 1. Unless otherwise specified, you **are** allowed to use
    ChatGPT[^other-similar-tools] in this class, including in work submitted for
@@ -65,23 +65,22 @@ classes.
    will be used as part of the marking process.
 
 [^other-similar-tools]:
-    Wherever ChatGPT is named in this policy it should be read as "ChatGPT and
-    other generative AI tools", where those tools are defined according to
-    (ERROR: definition not found). Any policy on this stuff which restricts
-    itself to specific AI tools by name is doomed to become out of date real
-    fast.
+    Wherever ChatGPT is named in these guidelines it should be read as "ChatGPT
+    and other generative AI tools", where those tools are defined according to
+    (ERROR: definition not found). Any guidelines which are restrict themselves
+    to specific AI tools by name are doomed to become out of date real fast.
 
 [^attribution]:
-    This policy deliberately doesn't try to address the (important) issue of AI
-    tools and the way they appropriate the skilled labour of the millions of
-    individuals who created, edited and labelled the data on which they were
+    These guidelines deliberately doesn't try to address the (important) issue
+    of AI tools and the way they appropriate the skilled labour of the millions
+    of individuals who created, edited and labelled the data on which they were
     trained.
 
-One open question (not necessarily part of the student-facing policy, but
+One open question (not necessarily part of the student-facing guidelines, but
 relevant for anyone running a course) is what guidance should be given to the
-markers (e.g. tutors/TAs) on what to do with ChatGPT-generated content. Should
-submissions (or parts thereof) created with the help of ChatGPT be marked lower
-than "equivalent standard" submissions that aren't?
+markers (e.g. tutors/TAs) on what to do when marking ChatGPT-generated content.
+Should submissions created with the help of ChatGPT be marked lower than
+"equivalent standard" (whatever that means) submissions that aren't?
 
 Anyway, these are just some draft thoughts---I'll keep this post updated as my
 thinking changes.
