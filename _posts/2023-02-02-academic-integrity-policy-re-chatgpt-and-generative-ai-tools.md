@@ -49,7 +49,7 @@ classes.
    language" will never get you off the hook; if it's in your submission you're
    responsible for it just as you would be if you'd written it without ChatGPT.
 
-4. You are expected to be able to explain (to your tutor, lecturer of course
+4. You are expected to be able to explain (to your tutor, lecturer or course
    convenor) any assessment submission to demonstrate your understanding of the
    concepts being assessed.
 
