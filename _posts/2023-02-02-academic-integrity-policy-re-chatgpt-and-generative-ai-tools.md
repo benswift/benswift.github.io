@@ -31,10 +31,10 @@ you're also putting together a policy for your classroom, then
 questions/comments/suggesions are welcome---do [get in
 touch](mailto:ben.swift@anu.edu.au).
 
-Here are my current thoughts what a good "Academic integrity policy re: ChatGPT
-and generative AI tools" policy looks like. Because it's not a proper policy it
-doesn't have everything precisely defined or any other legal fidgey-widgeyness,
-but it gives an idea of how I want to run my classes.
+Here are my current thoughts what a good _use of ChatGPT in the classroom_
+policy might look like. Because it's not a proper policy it doesn't have
+everything precisely defined, but it gives you an idea of how I want to run my
+classes.
 
 1. Unless otherwise specified, you **are** allowed to use
    ChatGPT[^other-similar-tools] in this class, including in work submitted for
