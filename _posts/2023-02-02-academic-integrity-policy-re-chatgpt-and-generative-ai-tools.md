@@ -40,8 +40,7 @@ and challenges these tools present for student learning.
    ChatGPT[^other-similar-tools] in this class, including in work submitted for
    assessment.
 
-2. Wherever ChatGPT is used it must be cited according according to the [OpenAI
-   citation
+2. Wherever ChatGPT is used it must be cited according to the [OpenAI citation
    instructions](https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt).[^attribution]
 
 3. You are responsible for everything you submit. "It's not my fault---the AI
