@@ -8,8 +8,8 @@ layout: page
 
 Hi, I'm Ben Swift---I'm a
 [scholar](https://scholar.google.com/citations?user=OQdYgLEAAAAJ), [artist]({%
-link livecoding.md %}) and [maker](https://github.com/benswift), and one half of
-the core development team for the
+link livecoding.md %}) and [creative technologist](https://github.com/benswift),
+and one half of the core development team for the
 [Extempore](https://github.com/digego/extempore) livecoding environment.
 
 I'm the [Educational Experiences team
