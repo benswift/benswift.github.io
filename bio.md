@@ -16,7 +16,7 @@ I'm a [Canberra](https://en.wikipedia.org/wiki/Canberra) lad, born and bred. One
 day I may move away from this place, but for now I'm here and quite happy about
 it.
 
-I have one wife, two kids, zero pets, two bikes and four guitars. They all make
+I have one wife, three kids, zero pets, two bikes and two guitars. They all make
 me happy (in monotonically weakly decreasing order).
 
 On the weekends I ride my mountain bike, play football (soccer), watch the footy
