@@ -27,6 +27,5 @@ I care a lot about making computing a welcoming, interesting and creatively
 satisfying place, especially for people who don't fit the traditional picture of
 a "computer scientist".
 
-If you'd like to get in touch---and please do!---the best options are
-[twitter](https://twitter.com/benswift) (DMs open) or emailing me at
+If you'd like to get in touch---and please do!---you can email me at
 <mailto:ben.swift@anu.edu.au>.
