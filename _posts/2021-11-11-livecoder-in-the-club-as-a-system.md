@@ -25,7 +25,7 @@ If you follow this blog, you'll know that I'm a [livecoder]({% link
 livecoding.md %}). I _code_ (i.e. write computer programs) to make music in a
 club setting, with an audience that just wants to dance and have a good
 time[^niche]. If you've never seen it before, here's a 10min video of my
-collaborator Ushini Attanayake and I.
+collaborator [Ushini Attanayake](https://ushini.com) and I.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592452477?color=be2edd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ushini &amp;amp; Ben live @ ACMC&amp;#039;21"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 

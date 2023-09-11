@@ -46,8 +46,8 @@ livecoding video:
 - who is the feedback _for_[^cui]?
 - in each case, why do you think those decisions were made?
 - when watching, what did _you_ want more/less/different feedback about?
-- if you were the AV designer for Ushini & my next livecoding set, what changes
-  would you make?
+- if you were the AV designer for [Ushini](https://ushini.com) & my next
+  livecoding set, what changes would you make?
 - how does a taking a cybernetic approach to this question change answer to
   these questions? (because feedback is something that cybernetics has a fair
   bit to say about)

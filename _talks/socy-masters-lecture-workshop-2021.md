@@ -74,8 +74,8 @@ set design, which is sometimes referred to as scenic design, refers to the
 design and creation of the sets used in works of performance art
 [(source)](https://www.theartcareerproject.com/careers/set-design/)
 
-pitch time---what's your vision for my (and Ushini's) livecoding performance
-setup?
+pitch time---what's your vision for my (and [Ushini's](https://ushini.com))
+livecoding performance setup?
 
 _(10min breakout rooms, then 10min shareback)_
 

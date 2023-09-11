@@ -26,6 +26,7 @@ to see which prompts the humans in the room put in).
 
 {% include youtube.html id="_9gLWebIeeY" %}
 
-On the livecoding front, Ushini & I did another [livecoding set at the OzCHI
-2022 conference](https://www.ozchi.org/2022/creative_4.html)---pics & video on
-the [livecoding page]({% link _livecoding/2022-12-01-ozchi-22.md %}).
+On the livecoding front, [Ushini](https://ushini.com) & I did another
+[livecoding set at the OzCHI 2022
+conference](https://www.ozchi.org/2022/creative_4.html)---pics & video on the
+[livecoding page]({% link _livecoding/2022-12-01-ozchi-22.md %}).

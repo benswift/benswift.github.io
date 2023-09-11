@@ -8,8 +8,8 @@ tags: livecoding ccc lens gigs
 One of the coolest parts of my job is doing livecoding gigs---here's a recent
 set I did at Smiths as part of [Soundscapes
 #21](https://www.smithsalternative.com/events/soundscapes-21-44719). A big
-shout-out to Ushini Attanayake (not in the video, sadly) who did a **fantastic**
-job of her first livecoding set.
+shout-out to [Ushini Attanayake](https://ushini.com) (not in the video, sadly)
+who did a **fantastic** job of her first livecoding set.
 
 <div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/269115310?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 

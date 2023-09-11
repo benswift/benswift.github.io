@@ -13,8 +13,8 @@ The DNA of colour_
 exhibition](https://dhg.anu.edu.au/events/ildiko-kovacs-the-dna-of-colour/).
 
 Also on the bill are current & former members of the [ANU Laptop
-Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/), including Ushini
-Attanayake and Brent Schuetze.
+Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/), including
+[Ushini Attanayake](https://ushini.com) and Brent Schuetze.
 
 Free entry! Light refreshments provided, drinks from $5. You really don't have
 any reason not to come along 😉
