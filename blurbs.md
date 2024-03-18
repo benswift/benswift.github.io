@@ -12,18 +12,23 @@ to do that then I'd appreciate having a discussion with you about it first :)
 
 ## General audience (short)
 
-Dr. Ben Swift is an academic, educator, artist and maker of open source tools for creative
-computing. He's always looking for ways to talk about the way that code
-(software), creativity (especially the arts) and culture (life) intersect in
-today's world.
+Dr. Ben Swift is an academic, educator, artist and maker of open source tools
+for creative computing and generative AI. He's a Senior Lecturer at the ANU
+School of Cybernetics, where he leads the _Cybernetic Studio_: a cybernetic
+community that makes things out of hardware/software/people/stuff to explore
+cybernetic systems/ideas and their impact on the world.
 
 ## Academic (short)
 
-Dr. Ben Swift is an interdisciplinary scholar and artist-programmer with interests and
-expertise in computational art & music, cybernetics, AI/machine learning, data
-vis/data science and human-computer interaction. A unifying thread is the
-potential of _liveness_ (human-in-the-loop interactivity with real-time
-feedback) in tools and workflows, especially in open-ended creative tasks.
+Dr. Ben Swift is an interdisciplinary scholar and artist-programmer with
+interests and expertise in AI/machine learning, computational art & music,
+cybernetics, data vis/data science and human-computer interaction. A unifying
+thread is the potential of _liveness_ (human-in-the-loop interactivity with
+real-time feedback) in tools and workflows, especially in open-ended creative
+tasks. He's a Senior Lecturer at the ANU School of Cybernetics, where he leads
+the _Cybernetic Studio_: a cybernetic community that makes things out of
+hardware/software/people/stuff to explore cybernetic systems/ideas and their
+impact on the world.
 
 ## Academic (long)
 
@@ -32,15 +37,17 @@ feedback) in tools and workflows, especially in open-ended creative tasks.
 ## Livecoder (short, informal)
 
 Dr. Ben Swift is a livecoder and artist-programmer, perpetually struggling to
-reconcile his day job in academia with his longing for free and unbridled
-artistic expression. He's one half of the core development team for the
-[Extempore](https://github.com/digego/extempore) programming environment. His
-work has been featured on the internet.
+reconcile his day job in academia with his longing to escape into the woods with
+a laptop and a solar panel and make beats with code full-time. He's one half of
+the core development team for the
+[Extempore](https://github.com/digego/extempore) programming environment. He
+regularly [performs with Ushini Attanayake as
+_Funktion_](https://vimeo.com/benswift).
 
 ## Explanation of livecoding (general audience)
 
 'Livecoding' is the act of programming (writing code) as a musical
-performance---in front of an audience. You can see the co e being written in
+performance---in front of an audience. You can see the code being written in
 front of your eyes, and this code is making _all_ the music that you can hear.
 
 It's kindof like conducting an orchestra; but instead of humans in tuxedoes, the
