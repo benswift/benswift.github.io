@@ -10,8 +10,8 @@ internationally-recognised interdisciplinary
 electronic/computer music artist and [creative
 technologist](https://github.com/benswift). {% if fp %}I'm{% else %}He's{% endif
 %} an expert in AI/machine learning, computational art & music, computing
-education, user experience (UX) design, and cybernetics. He currently leads the
-_Cybernetic Studio_ at the [School of
+education, user experience (UX) design, and cybernetics. {% if fp %}I lead{%
+else %}He leads{% endif %} the _Cybernetic Studio_ at the [School of
 Cybernetics](https://cybernetics.anu.edu.au/) at the [Australian National
 University](https://anu.edu.au): a cybernetic community that makes things out of
 hardware/software/people/stuff to explore cybernetic systems/ideas and their
