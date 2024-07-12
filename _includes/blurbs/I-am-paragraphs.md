@@ -12,22 +12,21 @@ technologist](https://github.com/benswift). {% if fp %}I'm{% else %}He's{% endif
 %} an expert in AI/machine learning, computational art & music, computing
 education, user experience (UX) design, and cybernetics.
 
-{% if fp %}I lead{%
-else %}He leads{% endif %} the _Cybernetic Studio_ at the [School of
-Cybernetics](https://cybernetics.anu.edu.au/) at the [Australian National
-University](https://anu.edu.au): a cybernetic community that makes things out of
-hardware/software/people/stuff to explore cybernetic systems/ideas and their
-impact on the world. {% if fp %}I am{% else %}Ben is{% endif %} also a founder
-and co-director of the [ANU Laptop
-Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/), an
-interdisciplinary computer music research and teaching collective.
+{% if fp %}I lead{% else %}He leads{% endif %} the _Cybernetic Studio_ at the
+[School of Cybernetics](https://cybernetics.anu.edu.au/) at the [Australian
+National University](https://anu.edu.au): a cybernetic community that makes
+things out of hardware/software/people/stuff to explore cybernetic systems and
+their impact on the world.
 
 As a [livecoding artist]({% link livecoding.md %}) {% if fp %}I have{% else
 %}Ben has{% endif %} performed at international arts festivals, including the
 [International Symposium on Electronic Art](https://www.isea-web.org) (ISEA) and
 the [International Conference on Live Coding](https://iclc.toplap.org) (ICLC).
 {% if fp %}I'm{% else %}He's{% endif %} the Vice President of the [Australasian
-Computer Music Association](https://computermusic.org.au) (ACMA).
+Computer Music Association](https://computermusic.org.au) (ACMA). {% if fp %}I
+am{% else %}Ben is{% endif %} also a founder and co-director of the [ANU Laptop
+Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/), an
+interdisciplinary computer music research and teaching collective.
 
 {% if fp %}I am{% else %}Ben is{% endif %} a
 [maker](https://github.com/benswift) of open-source software tools for music,
