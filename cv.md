@@ -59,7 +59,12 @@ hidden: true
 
 ### Appointments
 
-- **2022--** Educational Experiences Lead (Senior Lecturer), _ANU School of
+- **2024--** Cybernetic Studio Lead (Senior Lecturer), _ANU School of
+  Cybernetics_
+
+- **2023--2024** _career break---full-time carer_ (12 months)
+
+- **2022--2023** Educational Experiences Lead (Senior Lecturer), _ANU School of
   Cybernetics_
 
 - **2021--2022** Educational Experiences Designer/Senior Lecturer, _ANU School of
@@ -105,9 +110,11 @@ hidden: true
 - **2012** CECS Dean's Award for Outreach ([National Science
   Week](https://www.scienceweek.net.au) outreach project)
 
-### Current courses
+### Previous courses
 
-I am currently the course convenor & lecturer for the following courses in the
+In addition to my role leading the Cybernetic Studio I am currently teaching into the [Executive Short Courses](https://cce.anu.edu.au/executive-short-courses/navigating-cybernetic-futures/) on AI at the School of Cybernetics.
+
+I was previously the course convenor & lecturer for the following courses in the
 ANU School of Computing (follow links to the curriculum, available under a
 Creative Commons
 [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) licence):
@@ -141,10 +148,6 @@ Creative Commons
   science (either at ANU or elsewhere) and helps them _reimagine_ what it is to
   be a computer scientist or engineer in the 21st century.
 
-### Past courses {#past-courses}
-
-I have also written and delivered the following courses:
-
 - [COMP2300: Computer Organisation and Program
   Execution](https://cs.anu.edu.au/courses/comp2300/) is ANU's introductory
   computer architecture course, which I wrote and delivered from 2017--2018,
@@ -171,18 +174,20 @@ I have also written and delivered the following courses:
 
 ### ANU {#service-anu}
 
-- **2022--** Associate Director (Education), _ANU School of Cybernetics_
+- **2024--** PhD Program Convenor, _ANU School of Cybernetics_
+
+- **2022--2023** Associate Director (Education), _ANU School of Cybernetics_
 
 - **2021--2022** Associate Director (Research), _ANU School of Cybernetics_
 
 - **2021** Leader, _CECS Website Redesign Tiger Team_
 
-- **2016--** Design Lead, [_Lucy Project_](https://gitlab.cecs.anu.edu.au/lucy)
+- **2016--2021** Design Lead, [_Lucy Project_](https://gitlab.cecs.anu.edu.au/lucy)
   teaching & learning web infrastructure, including the [CECS Jekyll Course
   Website template](https://cs.anu.edu.au/pages/docs/gitlab-pages/) and [CECS
   GitLab](https://gitlab.cecs.anu.edu.au) infrastructure
 
-- **2018--** Member, [_ANU Technology-Enhanced Learning Reference
+- **2018--2020** Member, [_ANU Technology-Enhanced Learning Reference
   Group_](https://www.anu.edu.au/about/governance/committees/technology-enhanced-learning-reference-group-telrg)
   (TELRG)
 
@@ -253,7 +258,7 @@ Asia](https://www.siggraph.org/siggraph-events/conferences/).
 - **2015** Workshop Organiser,
   [_Supercomputing '15_](https://supercomputing.org) (a hybrid academic
   conference/industry trade show)
-  
+
 ### Community {#engagement-community}
 
 - **2021--** accredited [Mental Health First Aider](https://mhfa.com.au)
