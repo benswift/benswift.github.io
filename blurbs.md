@@ -34,6 +34,17 @@ impact on the world.
 
 {% include blurbs/I-am-paragraphs.md perspective="third" %}
 
+## Academic (educator)
+
+Dr. Ben Swift is an interdisciplinary scholar and artist-programmer with
+interests and expertise in AI/machine learning, computational art & music,
+cybernetics, data vis/data science and human-computer interaction.
+He has extensive learning and teaching experience in a wide range of contexts, having worked across two schools at the
+ANU: the [School of Computing](https://comp.anu.edu.au) (2012--2021) and the [School of Cybernetics](https://cybernetics.anu.edu.au) (2021--present).
+He has designed, convened and taught large courses (e.g. 400+ student core COMP courses), innovative cross-campus electives (e.g. the ANU Laptop Ensemble), and extension courses (e.g. the ANU Extension "Creative Computing" H-course). He has been recognised for his teaching with a 2018 Vice Chancellor’s Citation for Outstanding Contribution to Student Learning.
+
+He is a previous Associate Director (Education) and team leader for "Exec Ed" Learning Experiences at the School of Cybernetics. He currently leads the _Cybernetic Studio_: a cybernetic community that makes things out of hardware/software/people/stuff to explore cybernetic systems/ideas and their impact on the world.
+
 ## Livecoder (short, informal)
 
 Dr. Ben Swift is a livecoder and artist-programmer, perpetually struggling to
