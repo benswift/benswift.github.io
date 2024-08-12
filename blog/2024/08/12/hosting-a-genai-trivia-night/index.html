@@ -7,23 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>benswift.me | livecoder &amp; researcher homepage - code, creativity, culture</title>
+<title>Hosting a genAI trivia night | benswift.me</title>
 <meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="benswift.me" />
+<meta property="og:title" content="Hosting a genAI trivia night" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="livecoder &amp; researcher homepage - code, creativity, culture" />
-<meta property="og:description" content="livecoder &amp; researcher homepage - code, creativity, culture" />
-<link rel="canonical" href="https://benswift.me/404.html" />
-<meta property="og:url" content="https://benswift.me/404.html" />
+<meta name="description" content="I was recently tasked with organising a trivia night, and decided to generate all the questions (and answers) with a large language model (I used Claude, although obviously this would work with any model." />
+<meta property="og:description" content="I was recently tasked with organising a trivia night, and decided to generate all the questions (and answers) with a large language model (I used Claude, although obviously this would work with any model." />
+<link rel="canonical" href="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/" />
+<meta property="og:url" content="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/" />
 <meta property="og:site_name" content="benswift.me" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-12T00:00:00+10:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="benswift.me" />
+<meta property="twitter:title" content="Hosting a genAI trivia night" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ben Swift"},"description":"livecoder &amp; researcher homepage - code, creativity, culture","headline":"benswift.me","url":"https://benswift.me/404.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2024-08-12T00:00:00+10:00","datePublished":"2024-08-12T00:00:00+10:00","description":"I was recently tasked with organising a trivia night, and decided to generate all the questions (and answers) with a large language model (I used Claude, although obviously this would work with any model.","headline":"Hosting a genAI trivia night","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/"},"url":"https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -47,7 +48,7 @@
 	
 	
 
-	<a href="/blog/index.html">blog</a>
+	<a class="current" href="/blog/index.html">blog</a>
 	<a href="/research/">research</a>
 	<a href="/teaching/">teaching</a>
 	<a href="/livecoding/index.html">livecoding</a>
@@ -67,20 +68,87 @@
 </header>
 
 	  <main aria-label="Content">
-		<h1 style="font-size: 3rem; text-align: center;">404 😢</h1>
+		<article>
+  <p class="post-date">12 Aug '24</p>
+  <h1>Hosting a genAI trivia night</h1>
+<p class="post-tag-container">
+  
+  <a class="post-tag" href='/blog/tag/ai'>
+	ai
+  </a>
+  
+</p>
 
-<p><strong>Page not found</strong>.</p>
 
-<p>Soz.</p>
+  <p>I was recently tasked with organising a trivia night, and decided to generate
+all the questions (and answers) with a large language model (I used
+<a href="https://claude.ai/">Claude</a>, although obviously this would work with any model.</p>
 
-<p>If you’re looking for the Extempore docs, they aren’t hosted on my blog anymore.
-Here’s the new main docs page:</p>
+<p>Here’s the initial prompt I used:</p>
 
-<p><a href="https://extemporelang.github.io/docs/">https://extemporelang.github.io/docs/</a></p>
+<blockquote>
+  <p>Write a set of questions (10 rounds, 5 questions per round) for a trivia
+night, including answers. Each round must have a different theme, including
+rounds on the topics of “<em>insert list of rounds here</em>”. You must provide
+questions which have a single, unambiguous correct answer. Include a mix of
+easy and difficult questions, such that a graduate-level audience would get
+approximately 50% of the answers correct.</p>
+</blockquote>
 
-<p>If you’re looking for something else, the top navbar or <a href="/search/">search page</a> will help you find what you’re after.</p>
+<p>Looking over the answers, they looked a little too easy, so I provided a
+follow-up:</p>
 
-<p>Good luck!</p>
+<blockquote>
+  <p>Those questions are all too easy. Try again, and dial up the difficulty.</p>
+</blockquote>
+
+<p>which gave questions which looked (to my eyes) to be around the right level.</p>
+
+<p>Now, LLMs are notorious for hallucinating/making up facts, and I couldn’t be
+bothered to check that all the answers were correct. So I incorporated this “is
+the LLM making stuff up?” dynamic into the rules. As well as the usual trivia
+night procedure:</p>
+
+<ul>
+  <li>1 pt per question</li>
+  <li>each question will be read <strong>twice</strong> (no more than that)</li>
+  <li>we’ll give answers and tally scores after each round</li>
+  <li>no cheating (internet <em>or</em> AI models, inc. self-hosted ones)</li>
+</ul>
+
+<p>there was an additional rule: at the end of each round, each team can challenge
+any answer(s) they think the LLM got wrong. For each challenge, the trivia hosts
+would investigate (using the internet, or whatever) to see what the correct
+answer is.</p>
+
+<ul>
+  <li>if the LLM’s answer was wrong, <em>all teams</em> have that question re-marked with
+the correct answer</li>
+  <li>if the LLM’s answer was ambiguous (i.e. it was correct, but there are other
+answers that were equally correct) then <em>all teams</em> have that question
+re-marked, accepting any of the correct answers</li>
+  <li>if the LLM’s answer was correct (or if we can’t find a reliable answer in an
+appropriate timeframe) then the question is not re-marked, and the challenging
+team receives an additional one-point penalty</li>
+</ul>
+
+<p>As for whether the LLM was correct/ambiguous/wrong, all decisions by the trivia
+hosts were final.</p>
+
+<p>And how’d it go? Pretty well, overall. In the end the questions were a bit too
+tricky. Turns out it’s really hard to eyeball questions <em>with</em> answers to guess
+how many you’d get correct, so if you’re going to do that make sure you do it
+without looking at the answers.</p>
+
+<p>There was one successful challenge on the night, but overall there didn’t seem
+to be too many hallucinations. In some ways it would have been more fun if there
+were.</p>
+
+<p>Anyway if you need to organise a trivia night and don’t want to do any
+painstaking research, then give the above prompts a try.</p>
+
+</article>
+
 
 	  </main>
 	  <footer>
@@ -127,8 +195,8 @@ Here’s the new main docs page:</p>
   <!-- open source humblebrag -->
   <p>
 	site revision <code>049f4f887</code> (see
-	<a href="https://github.com/benswift/benswift.github.io/blob/049f4f887/404.md">source</a>,
-	<a href="https://github.com/benswift/benswift.github.io/commits/source/404.md">page history</a>
+	<a href="https://github.com/benswift/benswift.github.io/blob/049f4f887/_posts/2024-08-12-hosting-a-genai-trivia-night.md">source</a>,
+	<a href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2024-08-12-hosting-a-genai-trivia-night.md">page history</a>
 	on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
   </p>
 

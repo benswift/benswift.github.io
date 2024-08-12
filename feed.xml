@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-07-16T14:39:27+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Livecoding set ICLC’24 - Shanghai Concert Hall</title><link href="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/" rel="alternate" type="text/html" title="Livecoding set ICLC’24 - Shanghai Concert Hall" /><published>2024-05-30T00:00:00+10:00</published><updated>2024-05-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall</id><content type="html" xml:base="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/"><![CDATA[<p>I’m currently in Shanghai tomorrow night I’ll be performing at the <a href="https://www.shanghaiconcerthall.org/">Shanghai Concert Hall</a> as part of <a href="https://iclc.toplap.org/2024/program.html#table-day2">ICLC ‘24</a>. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-08-12T11:40:59+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Hosting a genAI trivia night</title><link href="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/" rel="alternate" type="text/html" title="Hosting a genAI trivia night" /><published>2024-08-12T00:00:00+10:00</published><updated>2024-08-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night</id><content type="html" xml:base="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/"><![CDATA[<p>I was recently tasked with organising a trivia night, and decided to generate
+all the questions (and answers) with a large language model (I used
+<a href="https://claude.ai/">Claude</a>, although obviously this would work with any model.</p>
+
+<p>Here’s the initial prompt I used:</p>
+
+<blockquote>
+  <p>Write a set of questions (10 rounds, 5 questions per round) for a trivia
+night, including answers. Each round must have a different theme, including
+rounds on the topics of “<em>insert list of rounds here</em>”. You must provide
+questions which have a single, unambiguous correct answer. Include a mix of
+easy and difficult questions, such that a graduate-level audience would get
+approximately 50% of the answers correct.</p>
+</blockquote>
+
+<p>Looking over the answers, they looked a little too easy, so I provided a
+follow-up:</p>
+
+<blockquote>
+  <p>Those questions are all too easy. Try again, and dial up the difficulty.</p>
+</blockquote>
+
+<p>which gave questions which looked (to my eyes) to be around the right level.</p>
+
+<p>Now, LLMs are notorious for hallucinating/making up facts, and I couldn’t be
+bothered to check that all the answers were correct. So I incorporated this “is
+the LLM making stuff up?” dynamic into the rules. As well as the usual trivia
+night procedure:</p>
+
+<ul>
+  <li>1 pt per question</li>
+  <li>each question will be read <strong>twice</strong> (no more than that)</li>
+  <li>we’ll give answers and tally scores after each round</li>
+  <li>no cheating (internet <em>or</em> AI models, inc. self-hosted ones)</li>
+</ul>
+
+<p>there was an additional rule: at the end of each round, each team can challenge
+any answer(s) they think the LLM got wrong. For each challenge, the trivia hosts
+would investigate (using the internet, or whatever) to see what the correct
+answer is.</p>
+
+<ul>
+  <li>if the LLM’s answer was wrong, <em>all teams</em> have that question re-marked with
+the correct answer</li>
+  <li>if the LLM’s answer was ambiguous (i.e. it was correct, but there are other
+answers that were equally correct) then <em>all teams</em> have that question
+re-marked, accepting any of the correct answers</li>
+  <li>if the LLM’s answer was correct (or if we can’t find a reliable answer in an
+appropriate timeframe) then the question is not re-marked, and the challenging
+team receives an additional one-point penalty</li>
+</ul>
+
+<p>As for whether the LLM was correct/ambiguous/wrong, all decisions by the trivia
+hosts were final.</p>
+
+<p>And how’d it go? Pretty well, overall. In the end the questions were a bit too
+tricky. Turns out it’s really hard to eyeball questions <em>with</em> answers to guess
+how many you’d get correct, so if you’re going to do that make sure you do it
+without looking at the answers.</p>
+
+<p>There was one successful challenge on the night, but overall there didn’t seem
+to be too many hallucinations. In some ways it would have been more fun if there
+were.</p>
+
+<p>Anyway if you need to organise a trivia night and don’t want to do any
+painstaking research, then give the above prompts a try.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[I was recently tasked with organising a trivia night, and decided to generate all the questions (and answers) with a large language model (I used Claude, although obviously this would work with any model.]]></summary></entry><entry><title type="html">Livecoding set ICLC’24 - Shanghai Concert Hall</title><link href="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/" rel="alternate" type="text/html" title="Livecoding set ICLC’24 - Shanghai Concert Hall" /><published>2024-05-30T00:00:00+10:00</published><updated>2024-05-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall</id><content type="html" xml:base="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/"><![CDATA[<p>I’m currently in Shanghai tomorrow night I’ll be performing at the <a href="https://www.shanghaiconcerthall.org/">Shanghai Concert Hall</a> as part of <a href="https://iclc.toplap.org/2024/program.html#table-day2">ICLC ‘24</a>. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.</p>
 
 <p>I’ll try and put up a video of the performance (I’ll be doing music, with LXT
 and Beverly Edwards on visuals) once it’s all done.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[I’m currently in Shanghai tomorrow night I’ll be performing at the Shanghai Concert Hall as part of ICLC ‘24. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.]]></summary></entry><entry><title type="html">Parental leave take 3</title><link href="https://benswift.me/blog/2023/05/13/parental-leave-take-3/" rel="alternate" type="text/html" title="Parental leave take 3" /><published>2023-05-13T00:00:00+10:00</published><updated>2023-05-13T00:00:00+10:00</updated><id>https://benswift.me/blog/2023/05/13/parental-leave-take-3</id><content type="html" xml:base="https://benswift.me/blog/2023/05/13/parental-leave-take-3/"><![CDATA[<p>Apologies for the radio silence over the last couple of months. I have the happy
@@ -153,7 +218,48 @@ proof—it was an unsolved research problem until 2005. The proof for that one
 is almost certainly wrong, but that would only be obvious to someone with
 considerable expertise in the domain (graph theory). Such is the way of LLMs.</p>
 
-<p>What does it all mean? I dunno. It’s gonna be a wild decade.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="teaching" /><summary type="html"><![CDATA[Posting logs of ChatGPT interaction is getting a bit passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I was hanging out with my father-in-law and showing how it might impact his classes—he’s Associate Chair of the Mathematics Department at a top uni in China.]]></summary></entry><entry><title type="html">Academic integrity guidelines re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity guidelines re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
+<p>What does it all mean? I dunno. It’s gonna be a wild decade.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="teaching" /><summary type="html"><![CDATA[Posting logs of ChatGPT interaction is getting a bit passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I was hanging out with my father-in-law and showing how it might impact his classes—he’s Associate Chair of the Mathematics Department at a top uni in China.]]></summary></entry><entry><title type="html">Jekyll build speedups for Ruby 3.2</title><link href="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/" rel="alternate" type="text/html" title="Jekyll build speedups for Ruby 3.2" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/"><![CDATA[<p>There’s a <a href="https://news.ycombinator.com/item?id=34413012">bunch of buzz</a> about
+Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll
+websites for work, some of which are getting into “non-trivial build time”
+territory (or maybe I’m really easily distracted, but a 30s build is enough for
+me to break my flow).</p>
+
+<p>Here’s some very unscientifc benchmarks from my <a href="https://jekyllrb.com">Jekyll</a>
+(v4.3) builds on my M1 Max MBP (64GB).</p>
+
+<h2 id="ruby-312p20-2022-04-12-revision-4491bb740a-arm64-darwin21">ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [arm64-darwin21]</h2>
+
+<p>First, this is the previous version of Ruby, which I’ve been happily working
+with for ages.</p>
+
+<pre><code>bundle exec jekyll build
+</code></pre>
+
+<p>Averaged over 3 runs, the build time was 17.7 (±0.8) seconds.</p>
+
+<h2 id="ruby-320-2022-12-25-revision-a528908271-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]</h2>
+
+<p>After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2 (±0.2) seconds.</p>
+
+<h2 id="ruby-320-2022-12-25-revision-a528908271-yjit-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [arm64-darwin22]</h2>
+
+<p>I <a href="https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82">followed these
+instructions</a> to
+build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:</p>
+
+<pre><code>RUBY_YJIT_ENABLE=true bundle exec jekyll build
+</code></pre>
+
+<p>The build was <em>heaps</em> faster—the average over 3 runs was 3.7 (±0.2) seconds.
+<strong>That’s a 4.8x speedup</strong>.</p>
+
+<p>Obviously, like all benchmarks on the internet this one is wrong &amp; stupid and
+you should do your own testing. Three runs probably isn’t enough to shake out
+any cache effects, and I don’t know (but could guess?) that the JIT might have
+even more pronounced cold start issues (although I didn’t really see it above).
+Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
+can save yourself a bunch of time, and tighten those feedback loops to stay in
+the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry><entry><title type="html">Academic integrity guidelines re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity guidelines re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
 <a href="https://chat.openai.com">ChatGPT</a> is, undoubtedly, <em>a thing</em>. From a practical
 perspective it’s important to have some​ sort of guidelines about about ChatGPT
 and other generative AI tools in the classroom (<a href="https://twitter.com/dbkahn/status/1616494433587040257">everyone’s doing
@@ -294,48 +400,7 @@ of individuals who created, edited and labelled the data on which they were
 trained. <a href="#fnref:attribution" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of guidelines about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t provide any advice ahead of time you’ll end up making it up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry><entry><title type="html">Jekyll build speedups for Ruby 3.2</title><link href="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/" rel="alternate" type="text/html" title="Jekyll build speedups for Ruby 3.2" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/"><![CDATA[<p>There’s a <a href="https://news.ycombinator.com/item?id=34413012">bunch of buzz</a> about
-Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll
-websites for work, some of which are getting into “non-trivial build time”
-territory (or maybe I’m really easily distracted, but a 30s build is enough for
-me to break my flow).</p>
-
-<p>Here’s some very unscientifc benchmarks from my <a href="https://jekyllrb.com">Jekyll</a>
-(v4.3) builds on my M1 Max MBP (64GB).</p>
-
-<h2 id="ruby-312p20-2022-04-12-revision-4491bb740a-arm64-darwin21">ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [arm64-darwin21]</h2>
-
-<p>First, this is the previous version of Ruby, which I’ve been happily working
-with for ages.</p>
-
-<pre><code>bundle exec jekyll build
-</code></pre>
-
-<p>Averaged over 3 runs, the build time was 17.7 (±0.8) seconds.</p>
-
-<h2 id="ruby-320-2022-12-25-revision-a528908271-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]</h2>
-
-<p>After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2 (±0.2) seconds.</p>
-
-<h2 id="ruby-320-2022-12-25-revision-a528908271-yjit-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [arm64-darwin22]</h2>
-
-<p>I <a href="https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82">followed these
-instructions</a> to
-build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:</p>
-
-<pre><code>RUBY_YJIT_ENABLE=true bundle exec jekyll build
-</code></pre>
-
-<p>The build was <em>heaps</em> faster—the average over 3 runs was 3.7 (±0.2) seconds.
-<strong>That’s a 4.8x speedup</strong>.</p>
-
-<p>Obviously, like all benchmarks on the internet this one is wrong &amp; stupid and
-you should do your own testing. Three runs probably isn’t enough to shake out
-any cache effects, and I don’t know (but could guess?) that the JIT might have
-even more pronounced cold start issues (although I didn’t really see it above).
-Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
-can save yourself a bunch of time, and tighten those feedback loops to stay in
-the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
+</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of guidelines about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t provide any advice ahead of time you’ll end up making it up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
 all concerned.</p>
 
 <picture style="position: relative;">
@@ -663,40 +728,4 @@ morning</a>:</p>
 </blockquote>
 
 <p>I’ll pen some more thoughts about what it all means when I’ve had some more time
-to digest things.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="cybernetics" /><summary type="html"><![CDATA[Back at my desk after a couple of days off I finally got a chance to fire up the OpenAI ChatGPT AI language model that everyone’s talking about.]]></summary></entry><entry><title type="html">AI art installations and livecoding gigs in Nov/Dec</title><link href="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/" rel="alternate" type="text/html" title="AI art installations and livecoding gigs in Nov/Dec" /><published>2022-12-06T00:00:00+11:00</published><updated>2022-12-06T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec</id><content type="html" xml:base="https://benswift.me/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec/"><![CDATA[<p>If you <a href="https://twitter.com/benswift">follow me on twitter</a> you’ve seen this
-already, but over the last couple of months I’ve been hard at work on an AI art
-installation called Panic. This was a collaboration with <a href="https://cybernetics.anu.edu.au/people/adrian-schmidt/">Adrian
-Schmidt</a>—I did the
-software, he did the hardware (including the cool, 6” diameter <em>Panic!</em> button).</p>
-
-<div style="width:100%; margin: 0px auto; margin-bottom: 1rem;">
-  <div style="position: relative; padding-bottom: 62.5%; height: 0px;">
-	<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/wpOkUX_LmQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
-	</iframe>
-  </div>
-</div>
-
-<p>I wrote <a href="https://cybernetics.anu.edu.au/news/2022/11/22/panic-a-serendipity-engine/">an essay on the School of Cybernetics
-website</a>
-which goes into more detail about how it works and what it all means (I mean,
-it’s an artwork, so mostly I built it because I could, but some folks wanna know
-“what’s the practical application of this stuff” so I wrote some words to give
-plausible deniability).</p>
-
-<p>Here’s a 90min video of every single stable-diffusion image generated over the
-full 2 weeks of the exhibition. Not necessarily the sort of thing you’d sit down
-and watch from start to finish, but fun to dip in and out of. Even at 8fps it’s
-still possible to watch the gestalt change over time (and it’s also interesting
-to see which prompts the humans in the room put in).</p>
-
-<div style="width:100%; margin: 0px auto; margin-bottom: 1rem;">
-  <div style="position: relative; padding-bottom: 62.5%; height: 0px;">
-	<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/_9gLWebIeeY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
-	</iframe>
-  </div>
-</div>
-
-<p>On the livecoding front, <a href="https://ushini.com">Ushini</a> &amp; I did another
-<a href="https://www.ozchi.org/2022/creative_4.html">livecoding set at the OzCHI 2022
-conference</a>—pics &amp; video on the
-<a href="/livecoding/2022-12-01-ozchi-22.html">livecoding page</a>.</p>]]></content><author><name>Ben Swift</name></author><category term="livecoding" /><category term="ai" /><summary type="html"><![CDATA[If you follow me on twitter you’ve seen this already, but over the last couple of months I’ve been hard at work on an AI art installation called Panic. This was a collaboration with Adrian Schmidt—I did the software, he did the hardware (including the cool, 6” diameter Panic! button).]]></summary></entry></feed>
+to digest things.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="cybernetics" /><summary type="html"><![CDATA[Back at my desk after a couple of days off I finally got a chance to fire up the OpenAI ChatGPT AI language model that everyone’s talking about.]]></summary></entry></feed>
