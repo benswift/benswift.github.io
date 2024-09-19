@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-09-20T08:36:58+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Hosting a genAI trivia night</title><link href="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/" rel="alternate" type="text/html" title="Hosting a genAI trivia night" /><published>2024-08-12T00:00:00+10:00</published><updated>2024-08-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night</id><content type="html" xml:base="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/"><![CDATA[<p>I was recently tasked with organising a trivia night, and decided to generate
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-09-20T08:45:43+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Format Markdown on save in Zed using Prettier</title><link href="https://benswift.me/blog/2024/09/20/format-markdown-on-save-in-zed-using-prettier/" rel="alternate" type="text/html" title="Format Markdown on save in Zed using Prettier" /><published>2024-09-20T00:00:00+10:00</published><updated>2024-09-20T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/09/20/format-markdown-on-save-in-zed-using-prettier</id><content type="html" xml:base="https://benswift.me/blog/2024/09/20/format-markdown-on-save-in-zed-using-prettier/"><![CDATA[<p>One thing I’ve particularly enjoyed since switching to Zed is format-on-save,
+which is turned on by default in most programming modes. However, it’s not
+turned on by default for Markdown files.</p>
+
+<p>Since I like my Markdown files formatted with <a href="https://prettier.io">Prettier</a>,
+including the “wrap to 80 cols” <code>--prose-wrap always</code> option, I set that command
+as an “external” formatter for Markdown files and turned on <code>format_on_save</code>.
+Here’s the config if you want to do the same:</p>
+
+<pre><code class="language-json">"languages": {
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": [
+            "--prose-wrap",
+            "always",
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
+        }
+      }
+    }
+  }
+</code></pre>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="zed" /><summary type="html"><![CDATA[One thing I’ve particularly enjoyed since switching to Zed is format-on-save, which is turned on by default in most programming modes. However, it’s not turned on by default for Markdown files.]]></summary></entry><entry><title type="html">Hosting a genAI trivia night</title><link href="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/" rel="alternate" type="text/html" title="Hosting a genAI trivia night" /><published>2024-08-12T00:00:00+10:00</published><updated>2024-08-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night</id><content type="html" xml:base="https://benswift.me/blog/2024/08/12/hosting-a-genai-trivia-night/"><![CDATA[<p>I was recently tasked with organising a trivia night, and decided to generate
 all the questions (and answers) with a large language model (I used
 <a href="https://claude.ai/">Claude</a>, although obviously this would work with any model.</p>
 
@@ -218,48 +243,7 @@ proof—it was an unsolved research problem until 2005. The proof for that one
 is almost certainly wrong, but that would only be obvious to someone with
 considerable expertise in the domain (graph theory). Such is the way of LLMs.</p>
 
-<p>What does it all mean? I dunno. It’s gonna be a wild decade.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="teaching" /><summary type="html"><![CDATA[Posting logs of ChatGPT interaction is getting a bit passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I was hanging out with my father-in-law and showing how it might impact his classes—he’s Associate Chair of the Mathematics Department at a top uni in China.]]></summary></entry><entry><title type="html">Jekyll build speedups for Ruby 3.2</title><link href="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/" rel="alternate" type="text/html" title="Jekyll build speedups for Ruby 3.2" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/"><![CDATA[<p>There’s a <a href="https://news.ycombinator.com/item?id=34413012">bunch of buzz</a> about
-Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll
-websites for work, some of which are getting into “non-trivial build time”
-territory (or maybe I’m really easily distracted, but a 30s build is enough for
-me to break my flow).</p>
-
-<p>Here’s some very unscientifc benchmarks from my <a href="https://jekyllrb.com">Jekyll</a>
-(v4.3) builds on my M1 Max MBP (64GB).</p>
-
-<h2 id="ruby-312p20-2022-04-12-revision-4491bb740a-arm64-darwin21">ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [arm64-darwin21]</h2>
-
-<p>First, this is the previous version of Ruby, which I’ve been happily working
-with for ages.</p>
-
-<pre><code>bundle exec jekyll build
-</code></pre>
-
-<p>Averaged over 3 runs, the build time was 17.7 (±0.8) seconds.</p>
-
-<h2 id="ruby-320-2022-12-25-revision-a528908271-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]</h2>
-
-<p>After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2 (±0.2) seconds.</p>
-
-<h2 id="ruby-320-2022-12-25-revision-a528908271-yjit-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [arm64-darwin22]</h2>
-
-<p>I <a href="https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82">followed these
-instructions</a> to
-build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:</p>
-
-<pre><code>RUBY_YJIT_ENABLE=true bundle exec jekyll build
-</code></pre>
-
-<p>The build was <em>heaps</em> faster—the average over 3 runs was 3.7 (±0.2) seconds.
-<strong>That’s a 4.8x speedup</strong>.</p>
-
-<p>Obviously, like all benchmarks on the internet this one is wrong &amp; stupid and
-you should do your own testing. Three runs probably isn’t enough to shake out
-any cache effects, and I don’t know (but could guess?) that the JIT might have
-even more pronounced cold start issues (although I didn’t really see it above).
-Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
-can save yourself a bunch of time, and tighten those feedback loops to stay in
-the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry><entry><title type="html">Academic integrity guidelines re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity guidelines re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
+<p>What does it all mean? I dunno. It’s gonna be a wild decade.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="teaching" /><summary type="html"><![CDATA[Posting logs of ChatGPT interaction is getting a bit passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I was hanging out with my father-in-law and showing how it might impact his classes—he’s Associate Chair of the Mathematics Department at a top uni in China.]]></summary></entry><entry><title type="html">Academic integrity guidelines re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity guidelines re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
 <a href="https://chat.openai.com">ChatGPT</a> is, undoubtedly, <em>a thing</em>. From a practical
 perspective it’s important to have some​ sort of guidelines about about ChatGPT
 and other generative AI tools in the classroom (<a href="https://twitter.com/dbkahn/status/1616494433587040257">everyone’s doing
@@ -400,7 +384,48 @@ of individuals who created, edited and labelled the data on which they were
 trained. <a href="#fnref:attribution" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of guidelines about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t provide any advice ahead of time you’ll end up making it up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
+</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of guidelines about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t provide any advice ahead of time you’ll end up making it up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry><entry><title type="html">Jekyll build speedups for Ruby 3.2</title><link href="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/" rel="alternate" type="text/html" title="Jekyll build speedups for Ruby 3.2" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/"><![CDATA[<p>There’s a <a href="https://news.ycombinator.com/item?id=34413012">bunch of buzz</a> about
+Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll
+websites for work, some of which are getting into “non-trivial build time”
+territory (or maybe I’m really easily distracted, but a 30s build is enough for
+me to break my flow).</p>
+
+<p>Here’s some very unscientifc benchmarks from my <a href="https://jekyllrb.com">Jekyll</a>
+(v4.3) builds on my M1 Max MBP (64GB).</p>
+
+<h2 id="ruby-312p20-2022-04-12-revision-4491bb740a-arm64-darwin21">ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [arm64-darwin21]</h2>
+
+<p>First, this is the previous version of Ruby, which I’ve been happily working
+with for ages.</p>
+
+<pre><code>bundle exec jekyll build
+</code></pre>
+
+<p>Averaged over 3 runs, the build time was 17.7 (±0.8) seconds.</p>
+
+<h2 id="ruby-320-2022-12-25-revision-a528908271-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]</h2>
+
+<p>After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2 (±0.2) seconds.</p>
+
+<h2 id="ruby-320-2022-12-25-revision-a528908271-yjit-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [arm64-darwin22]</h2>
+
+<p>I <a href="https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82">followed these
+instructions</a> to
+build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:</p>
+
+<pre><code>RUBY_YJIT_ENABLE=true bundle exec jekyll build
+</code></pre>
+
+<p>The build was <em>heaps</em> faster—the average over 3 runs was 3.7 (±0.2) seconds.
+<strong>That’s a 4.8x speedup</strong>.</p>
+
+<p>Obviously, like all benchmarks on the internet this one is wrong &amp; stupid and
+you should do your own testing. Three runs probably isn’t enough to shake out
+any cache effects, and I don’t know (but could guess?) that the JIT might have
+even more pronounced cold start issues (although I didn’t really see it above).
+Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
+can save yourself a bunch of time, and tighten those feedback loops to stay in
+the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry><entry><title type="html">Congrats Dr. Kieran Browne</title><link href="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/" rel="alternate" type="text/html" title="Congrats Dr. Kieran Browne" /><published>2023-01-26T00:00:00+11:00</published><updated>2023-01-26T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne</id><content type="html" xml:base="https://benswift.me/blog/2023/01/26/congrats-dr-kieran-browne/"><![CDATA[<p>Last December <a href="https://kieranbrowne.com">Kieran</a> graduated—very exciting for
 all concerned.</p>
 
 <picture style="position: relative;">
@@ -586,146 +611,4 @@ echo ".DS_Store" &gt;&gt; $EXCLUDE_FROM_FILE
 
 ## sync to remote
 rclone sync --progress --exclude-from=$EXCLUDE_FROM_FILE $CLONE_ROOT_DIR $REMOTE:mitch-rclone/$CLONE_ROOT_DIR
-</code></pre>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[For a long time I’ve used rclone for remote backups and it’s awesome. I have a script which syncs all the files I care about on my laptop to cloudstor (which, being on the Australian university network has the benefit that I get 1Gbps upload when I’m on the ANU network). My institution (the ANU)]]></summary></entry><entry><title type="html">A School of Cybernetics strategy meeting with ChatGPT</title><link href="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/" rel="alternate" type="text/html" title="A School of Cybernetics strategy meeting with ChatGPT" /><published>2022-12-07T00:00:00+11:00</published><updated>2022-12-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt</id><content type="html" xml:base="https://benswift.me/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt/"><![CDATA[<p>Back at my desk after a couple of days off I finally got a chance to fire up the
-<a href="https://chat.openai.com">OpenAI ChatGPT</a> AI language model that everyone’s
-talking about.</p>
-
-<p>Here’s—and this is the honest truth—the first conversation I had with it.
-The initial paragraph was from the <a href="https://cybernetics.anu.edu.au/about/">ANU School of Cybernetics
-website</a>, and from there we just
-freewheeled. My inputs are in regular type, the ChatGPT responses are in the
-coloured boxes.</p>
-
-<hr />
-
-<p><em>begin chat transcript</em></p>
-
-<p>The 3A Institute sits within the School of Cybernetics with the mission to build
-a new branch of engineering to take AI-enabled cyber-physical systems to scale
-and to create a new generation of practitioners with the skills and knowledge we
-need to help shape this future safely, sustainably and responsibly.</p>
-
-<p>As people invent, commercialise and operationalise new technologies, new
-practitioners emerge to manage them. Just as the invention of programmable
-computers led to the professionalisation of software engineers, cyber-physical
-systems will lead to a new type of engineer.</p>
-
-<p>We don’t know what this new type of engineering will be called yet, but we know
-we need it if we are to build a safe, sustainable and responsible future.</p>
-
-<p>Give 5 concrete examples of how ideas from cybernetics can help:</p>
-
-<div class="hl-para">
-
-  <ol>
-    <li>Cybernetics can help with the design and optimization of complex systems,
-such as transportation networks or power grids, by using feedback loops and
-control systems to ensure efficient and reliable operation.</li>
-    <li>Cybernetic principles can be applied to the development of intelligent
-machines and autonomous systems, enabling them to learn from their
-environment and adapt to changing conditions.</li>
-    <li>Cybernetics can be used to improve human-machine interactions, such as
-through the design of user-friendly interfaces or the integration of wearable
-technologies that enhance our physical abilities.</li>
-    <li>Cybernetic concepts can be applied to the study of biological systems, such
-as the nervous system, to gain a better understanding of how they function
-and how they can be treated or improved.</li>
-    <li>Cybernetics can be used to address societal challenges, such as promoting
-sustainable development or addressing inequality, by providing a framework
-for analyzing and addressing complex systems-level problems.</li>
-  </ol>
-
-</div>
-
-<p>Can you try again, but this time using the 19th Century Australian Overland Telegraph as a framing device?</p>
-
-<div class="hl-para">
-
-  <p>Sure, here are five examples of how ideas from cybernetics can help using the
-19th Century Australian Overland Telegraph as a framing device:</p>
-
-  <ol>
-    <li>The Overland Telegraph relied on a complex network of telegraph lines,
-stations, and operators to transmit messages across the vast Australian
-continent. Cybernetics can help optimize the design and operation of such
-networks by using feedback loops and control systems to ensure efficient and
-reliable communication.</li>
-    <li>The Overland Telegraph used complex coding systems to encode and decode
-messages, and cybernetic principles can be applied to the development of
-intelligent machines and algorithms that can learn and adapt to improve the
-efficiency and accuracy of such coding systems.</li>
-    <li>The Overland Telegraph required skilled operators to manage the transmission
-and receipt of messages, and cybernetics can be used to improve human-machine
-interactions through the design of user-friendly interfaces and tools that
-enable operators to work more efficiently and effectively.</li>
-    <li>The Overland Telegraph relied on a network of towers and poles to support the
-telegraph lines, and cybernetic concepts can be applied to the study of such
-infrastructure to optimize its design and maintenance for long-term
-reliability and durability.</li>
-    <li>The Overland Telegraph played a crucial role in connecting remote parts of
-Australia and facilitating economic and social development, and cybernetics
-can be used to address societal challenges by providing a framework for
-analyzing and addressing complex systems-level problems and developing
-solutions that promote sustainable and equitable growth.</li>
-  </ol>
-
-</div>
-
-<p>Ok, that’s better—I think it’s important that we provide a uniquely Australian
-viewpoint on what cybernetics is and how it can help tackle the challenges we
-face in the 21st century. As a new School of Cybernetics, then, what should our
-top priorities be?</p>
-
-<div class="hl-para">
-
-  <p>As a new School of Cybernetics, some top priorities could include:</p>
-
-  <ol>
-    <li>Developing a strong research program focused on applying cybernetic
-principles to real-world challenges facing Australia, such as improving the
-resilience and sustainability of critical infrastructure, enhancing the
-security and privacy of digital systems, or addressing complex societal
-issues such as inequality and climate change.</li>
-    <li>Providing high-quality education and training programs that enable students
-to gain a deep understanding of cybernetic concepts and techniques, and
-develop the skills and knowledge needed to become leaders in the field.</li>
-    <li>Building partnerships and collaborations with other academic institutions,
-industry partners, and government agencies to facilitate the exchange of
-ideas, knowledge, and expertise, and to support the development and
-implementation of innovative cybernetic solutions.</li>
-    <li>Playing a key role in promoting public awareness and understanding of
-cybernetics, and addressing common misconceptions and concerns about the
-field, in order to foster a positive and informed dialogue about its
-potential benefits and limitations.</li>
-    <li>Establishing a strong and supportive community of scholars, practitioners,
-and stakeholders within the field of cybernetics, and providing opportunities
-for networking, collaboration, and professional development.</li>
-  </ol>
-
-</div>
-
-<p><em>end chat transcript</em></p>
-
-<hr />
-
-<p>Well, wow. This required no re-prompting or editing on my part.</p>
-
-<p>I should say that I share all of the skepticism (and fears!) of folks who are
-pointing out that these language models don’t actually understand things. In
-some cases this means the output of these models is benign but incorrect, and
-it’s easy to think of situations where real harm could be caused.</p>
-
-<p>Upon close reading, I don’t think the above responses capture the full breadth
-of what we’re trying to do here in the School of Cybernetics. But I’d be lying
-if I wasn’t impressed.</p>
-
-<p>As I <a href="https://twitter.com/benswift/status/1600265214338867200">tweeted earlier this
-morning</a>:</p>
-
-<blockquote>
-  <p>all this ChatGPT stuff means that we as a society are gonna have to get a
-<strong>lot</strong> better at drinking from the bullshit firehose, and fast</p>
-</blockquote>
-
-<p>I’ll pen some more thoughts about what it all means when I’ve had some more time
-to digest things.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="cybernetics" /><summary type="html"><![CDATA[Back at my desk after a couple of days off I finally got a chance to fire up the OpenAI ChatGPT AI language model that everyone’s talking about.]]></summary></entry></feed>
+</code></pre>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[For a long time I’ve used rclone for remote backups and it’s awesome. I have a script which syncs all the files I care about on my laptop to cloudstor (which, being on the Australian university network has the benefit that I get 1Gbps upload when I’m on the ANU network). My institution (the ANU)]]></summary></entry></feed>
