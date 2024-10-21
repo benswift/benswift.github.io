@@ -5,8 +5,8 @@ tags: gigs livecoding
 ---
 
 I'm trying to find all the photos of me doing livecoding gigs over the past 10
-years. If you've got an old photo of me doing my thing, then can you either
-[email](mailto:ben.swift@anu.edu.au) or [tweet](https://twitter.com/benswift) at
+years. If you've got an old photo of me doing my thing, then can you 
+[email](mailto:ben.swift@anu.edu.au) 
 me to share it? I'll give you authoreal credit and hugs.
 
 For any photos of actual gigs, they'll go into the

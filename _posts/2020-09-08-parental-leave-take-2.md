@@ -5,9 +5,7 @@ title: Parental leave, take 2
 Our family has recently [grown by one
 member](https://github.com/benswift/benswift.github.io/commit/eb7fd10ac87c1059047e6e25783db01847c73e17).
 I'm proud and exhausted and happy; it's a really wild (and mostly very nice)
-cocktail of feelings. If you [follow me on
-twitter](https://twitter.com/benswift/status/1301318122356396038) you might have
-already heard this exciting news.
+cocktail of feelings.
 
 Anyway, I'm taking advantage of the ANU's fantastic parental leave for the
 second time, and so I'll be a full-time Dad for the rest of the year. My

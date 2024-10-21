@@ -31,7 +31,6 @@ Windows/macOS) so those users won't need to build Extempore from scratch
 
 Registration is through
 [Eventbrite](https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819),
-and if you've got any questions [send me an email](mailto:ben.swift@anu.edu.au)
-or [ping me on twitter](https://twitter.com/benswift).
+and if you've got any questions [send me an email](mailto:ben.swift@anu.edu.au).
 
 _p.s. shout-out to Harrison & Fi for posing for the workshop promo photo_ 📸

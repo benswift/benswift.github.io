@@ -13,10 +13,11 @@ came across <https://counter.dev> as a lightweight, relatively un-invasive
 tracking platform. So I've added it to the site. If you're browsing with an
 ad-blocker then you still have my blessing to enjoy the stuff I put up here ☺
 
-Just wanted to give y'all the heads up. Let me know what you think in the comments[^comments].
+Just wanted to give y'all the heads up. Let me know what you think in the
+comments[^comments].
 
 [^comments]:
     Just kidding, who has the time to moderate comments on a personal webpage
-    these days? If you want to get in touch, twitter me or email me or write
-    something on your own blog and link me to it---there are lots of ways to
-    have conversations, and I'm keen to have them.
+    these days? If you want to get in touch, email me or write something on your
+    own blog and link me to it---there are lots of ways to have conversations,
+    and I'm keen to have them.

@@ -5,7 +5,8 @@ date: "2018-11-19"
 permalink: /talks/code-2k18/
 summary: >-
   Where do new media creators fit in the modern university? A talk for [code
-  2k18: A Media Conference of Platforms, Devices and Screens](https://www.code2k18.com)
+  2k18: A Media Conference of Platforms, Devices and
+  Screens](https://www.code2k18.com)
 ---
 
 {% include slides/title.html %}
@@ -18,7 +19,7 @@ summary: >-
 
 [ANU Research School of Computer Science](https://cs.anu.edu.au/code-creativity-culture/)
 
-[@benswift](https://twitter.com/benswift)
+[@benswift](https://bsky.app/profile/benswift.bsky.social)
 
 {% include slides/impact.html %}
 
@@ -43,8 +44,7 @@ code is my **instrument**
 
 [ANU School of Art & Design](https://soad.cass.anu.edu.au/people/jean-philippe-demarais)
 
-{:.fragment}
-plus many more...
+{:.fragment} plus many more...
 
 {% include slides/background-image.html image="images/talks/code-2k18/rawpixel-790897-unsplash.jpg" heading="context (CS)" %}
 

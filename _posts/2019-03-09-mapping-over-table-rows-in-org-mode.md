@@ -35,7 +35,7 @@ can tell an elisp [code
 block](https://orgmode.org/manual/Structure-of-code-blocks.html) about the data
 in that table like so (note the `:var table=pap-table` at the start):
 
-[^nicer]: if there's a nicer way, please [let me know](https://twitter.com/benswift)!
+[^nicer]: if there's a nicer way, please let me know!
 
 ```scheme
 #+BEGIN_SRC emacs-lisp :var table=pap-table

@@ -30,7 +30,7 @@ kramdown:
 highlighter: none
 
 sass:
-    sass_dir: assets/css
+  sass_dir: assets/css
 
 exclude:
   - Makefile
@@ -86,8 +86,9 @@ twitter:
 social:
   name: Ben Swift
   links:
-    - https://twitter.com/benswift
-    - https://www.linkedin.com/in/benjswift
     - https://github.com/benswift
+    - https://bsky.app/profile/benswift.bsky.social
+    - https://www.linkedin.com/in/benjswift
+
     - https://keybase.io/benbalter
     - https://vimeo.com/benswift

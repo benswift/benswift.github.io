@@ -1,6 +1,7 @@
 ---
 title: Livecoder-in-the-club as a system
-subtitle: understanding and intervening in complex flows of software, music and humans
+subtitle:
+  understanding and intervening in complex flows of software, music and humans
 tags: cybernetics
 summary: >-
   Using cybernetic and systems thinking concepts to answer the question: what's
@@ -9,10 +10,10 @@ summary: >-
 
 <div class="hl-para" markdown="1">
 
-Here in the [School of Cybernetics](https://cybernetics.anu.edu.au/) we are building our
-capability in cybernetics&mdash;its histories and possibilities&mdash;and
-working out how each of us will contribute to the new cybernetics for the 21st
-Century.
+Here in the [School of Cybernetics](https://cybernetics.anu.edu.au/) we are
+building our capability in cybernetics&mdash;its histories and
+possibilities&mdash;and working out how each of us will contribute to the new
+cybernetics for the 21st Century.
 
 This blog post, written for a general audience, is part of a content development
 sprint, written in reponse to the task of developing a short (1000 words)
@@ -22,16 +23,16 @@ shape futures through and with technology.
 </div>
 
 If you follow this blog, you'll know that I'm a [livecoder]({% link
-livecoding.md %}). I _code_ (i.e. write computer programs) to make music in a
-club setting, with an audience that just wants to dance and have a good
-time[^niche]. If you've never seen it before, here's a 10min video of my
-collaborator [Ushini Attanayake](https://ushini.com) and I.
+livecoding.md %}). I _code_ (i.e. write computer programs) to make music in a club
+setting, with an audience that just wants to dance and have a good time[^niche].
+If you've never seen it before, here's a 10min video of my collaborator [Ushini Attanayake](https://ushini.com)
+and I.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592452477?color=be2edd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ushini &amp;amp; Ben live @ ACMC&amp;#039;21"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-Between the code, the thumping music, the dancing humans, and all
-the other glorious complexities of live entertainment, there's certainly a lot
-of different stuff going on. You might find watching a livecoder in action to be
+Between the code, the thumping music, the dancing humans, and all the other
+glorious complexities of live entertainment, there's certainly a lot of
+different stuff going on. You might find watching a livecoder in action to be
 entertaining, or impressive, or bewildering, or all of the above. Most of all,
 when you see/attend a livecoding gig for the first time, I bet that your initial
 feeling is one of _what is going on?_
@@ -43,10 +44,11 @@ about ways to make livecoding even better, that is, to figure out put on a
 better show for the adoring crowds.
 
 [^niche]:
-    It's a pretty niche activity, but there's an [international
-    community](https://toplap.org) of us, and if you're interested then you can
-    [follow me on twitter](https://twitter.com/benswift) to hear about upcoming
-    gigs.
+    It's a pretty niche activity, but there's an
+    [international community](https://toplap.org) of us, and if you're
+    interested then you can
+    [follow me on bluesky](https://bsky.app/profile/benswift.bsky.social) to
+    hear about upcoming gigs.
 
 ## Livecoder-in-the-club as a system
 
@@ -54,8 +56,8 @@ better show for the adoring crowds.
 looking at and reasoning about **systems** with _goals_, interacting with and
 connected to their _environment_ via perception/action _feedback loops_. These
 sorts of systems exist at all sorts of different scales (big/small, fast/slow,
-old/new, cheap/expensive, etc.) and they're [fractal in
-nature](https://www.goodreads.com/book/show/10698938-the-fractal-organization)---it
+old/new, cheap/expensive, etc.) and they're
+[fractal in nature](https://www.goodreads.com/book/show/10698938-the-fractal-organization)---it
 doesn't matter what level of "magnification" you look at, each component of a
 system is itself a system of interacting components, and each system is itself a
 component interacting in a larger system. But since that's all pretty abstract,
@@ -114,7 +116,8 @@ picture of what I _feel_ is going on when I'm performing.
 In this account of livecoding-in-the-club, there are a few things worth
 noticing:
 
-- there are different "stocks" (reservoirs of brain juice, code, music and good vibes)
+- there are different "stocks" (reservoirs of brain juice, code, music and good
+  vibes)
 
 - there are various flows between those stocks, and in both directions (e.g. I
   turn brain juice into code by typing at my keyboard, but I also receive
@@ -132,9 +135,8 @@ arrows to describe whatever thing they're interested in. What do we gain from
 seeing things in this way?
 
 This is where another key idea---and person---in cybernetics/systems thinking
-comes in: Donella Meadows'[^is-meadows-cybernetics] [Leverage Points: Places to
-Intervene in a
-System](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
+comes in: Donella Meadows'[^is-meadows-cybernetics]
+[Leverage Points: Places to Intervene in a System](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
 The key idea is this: once you've mapped out your system, you need to know where
 the most effective "intervention points" to try and implement change? If you're
 going to expend energy to make things better, where should you focus that energy
@@ -156,19 +158,18 @@ nicer keyboard, perhaps having better code auto-completion support, or perhaps
 just good-ol' _practice_ to improve my coding skills) is likely to be more
 impactful than starting with a bigger store of brain juice (so, thankfully,
 there's no need to buy shady adderall on the dark web). Will Larson (who has
-been a software engineering leader at Calm, Stripe, Uber, and Digg) [has some
-interesting ideas on systems thinking as applied to software
-development](https://lethain.com/systems-thinking/) that I'm keen to think more
-about as well.
+been a software engineering leader at Calm, Stripe, Uber, and Digg)
+[has some interesting ideas on systems thinking as applied to software development](https://lethain.com/systems-thinking/)
+that I'm keen to think more about as well.
 
 For even greater leverage, there are interventions which are related to
 restructuring the system itself, for example adding new information flows
 (leverage point #6). The dancers can already see the code, but what if I was
 hooked up to a live [EEG](https://en.wikipedia.org/wiki/Electroencephalography)
-so they could see the current state of my brain juice?[^eeg]. And even higher up (in
-terms of leverage) is changing the goals of the system itself (leverage point
-#3). Why _do_ people come to a club to dance and have good vibes? What if their
-goal was different?
+so they could see the current state of my brain juice?[^eeg]. And even higher up
+(in terms of leverage) is changing the goals of the system itself (leverage
+point #3). Why _do_ people come to a club to dance and have good vibes? What if
+their goal was different?
 
 [^eeg]:
     Coming up with a reliable, portable EEG machine which can measure a useful
@@ -183,18 +184,16 @@ deep challenge. Leverage means that when things go well they go really well, but
 the opposite is also true (e.g. with margin calls in a bear market). I feel like
 this is an especially apposite point for programmers, because the cheap leverage
 afforded by software is catnip for programmers, but presents some real dangers.
-(as [as Maciej Cegłowski puts so
-eloquently](https://idlewords.com/talks/sase_panel.htm)).
+(as
+[as Maciej Cegłowski puts so eloquently](https://idlewords.com/talks/sase_panel.htm)).
 
 [^is-meadows-cybernetics]:
-    [Donella
-    Meadows](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
+    [Donella Meadows](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
     tended to prefer terms like "systems thinking" and "systems change" rather
     than using the term "cybernetics" directly, but she certainly was involved
     with some of the key people & events in the cybernetics story, and her work
-    is highly relevant to cybernetic ideas. Plus, [Google Books categorises her
-    work under _Computers >
-    Cybernetics_](https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y),
+    is highly relevant to cybernetic ideas. Plus,
+    [Google Books categorises her work under _Computers > Cybernetics_](https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y),
     and you _know_ the Big G is never wrong about that stuff.
 
 [^blank-slate-code]:
@@ -218,8 +217,8 @@ eloquently](https://idlewords.com/talks/sase_panel.htm)).
 [^different-interventions]:
     There's not enough room in this blog post for a full "systems change
     analysis" of the livecoder-in-the-club system according to all 12 leverage
-    points, but if you're interested I do recommend you [check out that
-    article](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
+    points, but if you're interested I do recommend you
+    [check out that article](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
     as a starting point.
 
 ## So what's the point?
@@ -245,8 +244,8 @@ dancing bodies of the livecoder-in-the-club system with me for the ride :)
 
 {:.hl-para}
 
-Note: these are taken straight from the [Donella Meadows foundation
-website](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
+Note: these are taken straight from the
+[Donella Meadows foundation website](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
 
 _(lower numbers = less effective, higher numbers = more effective)_
 

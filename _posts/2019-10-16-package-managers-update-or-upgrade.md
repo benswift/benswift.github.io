@@ -1,17 +1,17 @@
 ---
-title: 'Package managers: <code>update</code> or <code>upgrade</code>?'
+title: "Package managers: <code>update</code> or <code>upgrade</code>?"
 tags: tools ux
 ---
 
-Quick quiz: for the following language/system [package
-managers](https://en.wikipedia.org/wiki/Package_manager), what's the name of the
-subcommand to update[^or-upgrade] your project/system to the latest version of
-one (or more) of your project's dependencies?
+Quick quiz: for the following language/system
+[package managers](https://en.wikipedia.org/wiki/Package_manager), what's the
+name of the subcommand to update[^or-upgrade] your project/system to the latest
+version of one (or more) of your project's dependencies?
 
 [^or-upgrade]: or, y'know, upgrade
 
 | package manager | language/system |
-|-----------------|-----------------|
+| --------------- | --------------- |
 | `bundle`        | Ruby            |
 | `pip`           | Python          |
 | `poetry`        | Python          |
@@ -27,12 +27,13 @@ one (or more) of your project's dependencies?
 | `cpan`          | Perl            |
 | `mix`           | Elixir          |
 
-<button onclick='document.getElementById("answer-table").style.visibility="visible";'>click to reveal the answers</button>
+<button onclick='document.getElementById("answer-table").style.visibility="visible";'>click
+to reveal the answers</button>
 
 {:id="answer-table" style="visibility: hidden;"}
 
 | package manager | language/system | (sub)command name     |
-|-----------------|-----------------|-----------------------|
+| --------------- | --------------- | --------------------- |
 | `bundle`        | Ruby            | `upgrade`             |
 | `pip`           | Python          | go away[^pip]         |
 | `poetry`        | Python          | `update`              |
@@ -68,4 +69,4 @@ or the other then we should observe it, and do it _consistently_. Even if
 there's not, we should toss a coin and be consistent anyway.
 
 If any of the above commands are incorrect, or if there's a better way, then
-[ping me on twitter](https://twitter.com/benswift).
+[let me know](mailto:ben.swift@anu.edu.au).

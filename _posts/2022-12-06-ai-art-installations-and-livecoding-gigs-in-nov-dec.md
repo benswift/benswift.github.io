@@ -3,7 +3,7 @@ title: AI art installations and livecoding gigs in Nov/Dec
 tags: livecoding ai
 ---
 
-If you [follow me on twitter](https://twitter.com/benswift) you've seen this
+If you [follow me on bluesky](https://bsky.app/profile/benswift.bsky.social) you've seen this
 already, but over the last couple of months I've been hard at work on an AI art
 installation called Panic. This was a collaboration with [Adrian
 Schmidt](https://cybernetics.anu.edu.au/people/adrian-schmidt/)---I did the
