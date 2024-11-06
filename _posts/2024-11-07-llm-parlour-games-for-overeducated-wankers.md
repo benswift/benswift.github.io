@@ -68,12 +68,14 @@ _Ben scrawls on the whiteboard for 5mins_
 Here are the prompts (you can copy-paste them automatically with the widget at
 the top right of the text).
 
-```
-I'm thinking of an object. Ask me a yes/no question about the object and I'll give you an answer.
+```markdown
+I'm thinking of an object. Ask me a yes/no question about the object and I'll
+give you an answer.
 ```
 
-```
-If the object in question is $OBJECT, what is the answer to the yes/no question "$QUESTION?"
+```markdown
+If the object in question is
+$OBJECT, what is the answer to the yes/no question "$QUESTION?"
 ```
 
 ### Shareback
