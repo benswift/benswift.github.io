@@ -107,25 +107,11 @@ Then, using the same words/phrases, ask the LLM to pick a word/phrase based on
 these different criteria (one at a time, tallying a point for the winner each
 time).
 
-```text
-Which one is the funniest, and why?
-```
+{%- for criteria in site.data.amphibology %}
 
-```text
-Which one most evokes the idea of "time waits for no man"
-```
+<pre><code class="language-markdown">Which of these words/phrases {{ criteria }}</code></pre>
 
-```text
-Which one sounds most like a boy band track from the 90s?
-```
-
-```text
-Which one would be the easiest to explain to a toddler?
-```
-
-```text
-Which one would be the best password for a secret underground antifascist network?
-```
+{%- endfor %}
 
 At the end, the player with the most points wins. You can play as many times as
 you like, with new words/phrases and/or new "judging" criteria.
