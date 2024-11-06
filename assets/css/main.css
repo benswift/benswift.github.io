@@ -499,7 +499,7 @@ p {
 }
 
 a {
-  color: #793188;
+  color: rgb(120.5, 48.5, 136);
   text-decoration: none;
   font-weight: 700;
   transition-property: color, background-color;
@@ -514,7 +514,7 @@ a.anchorjs-link {
   background-color: inherit;
 }
 a.anchorjs-link:hover {
-  color: #793188;
+  color: rgb(120.5, 48.5, 136);
 }
 
 h1,
@@ -535,8 +535,8 @@ code {
   font-size: 0.95em;
   padding: 0.1em 0.15em;
   border-radius: 0.2em;
-  color: #9e1eba;
-  background: linear-gradient(to right, #f7e6fb, #eec8f6);
+  color: rgb(158.2222222222, 30.2222222222, 185.7777777778);
+  background: linear-gradient(to right, rgb(247.2962962963, 230.2296296296, 250.9703703704), rgb(237.7469135802, 199.524691358, 245.975308642));
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -552,7 +552,7 @@ pre > code {
 }
 
 .copy-code-button {
-  background-color: #f5ddfa;
+  background-color: rgb(244.5679012346, 221.4567901235, 249.5432098765);
   display: grid;
   grid-auto-flow: column;
   align-items: center;
@@ -622,7 +622,7 @@ header nav.logo {
 }
 header nav.logo a {
   font-size: 1.3rem;
-  background: linear-gradient(to left, #be2edd, #8c1ba4);
+  background: linear-gradient(to left, #be2edd, rgb(139.5432098765, 26.6543209877, 163.8456790123));
   color: #fafafa;
   padding: 0.4rem 0.8rem;
 }
@@ -665,7 +665,7 @@ footer a {
 
 .post-tag {
   font-weight: 300;
-  background-color: #f5ddfa;
+  background-color: rgb(244.5679012346, 221.4567901235, 249.5432098765);
   color: #be2edd;
   padding: 0.2em;
   margin: 0 0.4rem 0.4rem 0;
@@ -676,8 +676,8 @@ footer a {
 }
 
 blockquote {
-  background-color: #f2f2f2;
-  border-left: 10px solid #e1e1e1;
+  background-color: rgb(242.35, 242.35, 242.35);
+  border-left: 10px solid rgb(224.5, 224.5, 224.5);
   padding: 1em 1em;
   margin: 1em 0;
   quotes: "“" "”" "‘" "’";
@@ -697,7 +697,7 @@ blockquote p {
 }
 
 .hl-para {
-  background-color: #f5ddfa;
+  background-color: rgb(244.5679012346, 221.4567901235, 249.5432098765);
   border-left: 10px solid #be2edd;
   padding: 1em 1em;
   margin: 1em 0;
@@ -730,7 +730,7 @@ table td {
 }
 
 #toc {
-  background: #f2f2f2;
+  background: rgb(242.35, 242.35, 242.35);
   clear: both;
 }
 #toc h2 {
