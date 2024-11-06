@@ -26,50 +26,47 @@ Cybernetics.
 - intro
 - play 20 questions
   - shareback
-- "multiple meanings"
+- adventures in amphibology
   - shareback
 - design your own LLM parlour game
   - shareback
 
-##
-
-## thesis statement
+## intro: thesis statement
 
 > the killer app for genAI is parlour games for overeducated wankers
 >
 > this is a demographic I know well, because I am one
 
-- parlour: co-located humans. bored. night outside, drinks inside... and so
+- **parlour**: involving co-located humans. bored. night outside, drinks
+  inside... and so
 
-- games: keen to entertain one another
+- **games**: to entertain ourselves and each other
 
-- for overeducated: word games, word play, show off
+...for...
 
-- wankers: (literally) self-indulgent. not about a bigger goal, or doing good in
-  the world
+- **overeducated**: word games, word play, we are masters of language and we
+  love to show off
 
-## some examples
-
-- 20 questions
-- fictionary
-- minister's cat
-- you've probably got your own favourites
+- **wankers**: (literally) self-indulgent. not about a bigger goal, or doing
+  good in the world, it's just for the heck of it.
 
 ## mechanics of a parlour game
 
 (in general)
 
 ```basic
-10 one or more player(s) says something
-20 one or more player(s) say something in response
+10 someone says something
+20 someone(s) says something in response
 30 goto 20
 ```
+
+when you put it like that, an LLM could play
 
 ## LLMs could play
 
 prompt -> response
 
-## 20 questions example
+## Play: LLM-augmented 20 Questions
 
 ```
 I'm thinking of an object. Ask me a yes/no question about the object and I'll give you an answer.
@@ -79,12 +76,54 @@ I'm thinking of an object. Ask me a yes/no question about the object and I'll gi
 If the object in question is $OBJECT, what is the answer to the yes/no question "$QUESTION?"
 ```
 
-## today's structure
+## Shareback
 
-- play 20qs (initially raw-dog, then with AIs)
-- discuss the mechanics & gameplay
-- design a new LLM-based parlour game (or just modify an existing one)
+- what's the funnest/funniest moment, and why?
+- what parts sucked?
+- how did your play/strategy/behaivour change over time?
 
-## remember
+## Adventures in Amphibology
 
-There's no higher purpose here. Parlour games for overeducated wankers.
+Game structure: all players thing of a word or (short) phrase, and writes it
+down on a piece of paper and puts it in a hat.
+
+These words/phrases are all fed into an LLM using the following prompt template:
+
+```
+You are an expert in the use of language, and you have been given the following words/phrases:
+
+- <phrase one>
+- <phrase two>
+- <phrase three>
+- etc.
+
+Which of these words/phrases is the most ambiguous, and why?
+```
+
+The winner (the one who wrote the thing that the LLM chooses) scores 1 point.
+
+Then, using the same words/phrases, ask the LLM to pick a word/phrase based on
+these different criteria (one at a time, tallying a point for the winner each
+time).
+
+```
+Which of the words/phrases is the funniest, and why?
+Which of the words/phrases most evokes the idea of "time waits for no man"
+Which of the words/phrases sounds most like a boy band track from the 90s?
+Which of the words/phrases would be the best password for a secret underground antifascist network?
+```
+
+At the end, the player with the most points wins. You can play as many times as
+you like, with new words/phrases and/or new "judging" criteria.
+
+## Your turn: design your own LLM parlour game
+
+Write/draw it up in such a way that a different group (in this workshop) could
+play it without you being there to help them out.
+
+We'll share back at the end.
+
+## Remember
+
+There's no higher purpose here. It's all just parlour games for overeducated
+wankers.
