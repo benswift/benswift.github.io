@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-07T09:49:11+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-07T10:50:11+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
 2024 at the ANU School of Cybernetics.</em></p>
 
 <h2 id="abstract">Abstract</h2>
@@ -123,20 +123,27 @@ Which of these words/phrases is the most ambiguous, and why?
 these different criteria (one at a time, tallying a point for the winner each
 time).</p>
 
-<pre><code class="language-text">Which one is the funniest, and why?
-</code></pre>
+<pre><code class="language-markdown">Which of these words/phrases best describes your perfect date?</code></pre>
 
-<pre><code class="language-text">Which one most evokes the idea of "time waits for no man"
-</code></pre>
+<pre><code class="language-markdown">Which of these words/phrases is the purplest?</code></pre>
 
-<pre><code class="language-text">Which one sounds most like a boy band track from the 90s?
-</code></pre>
+<pre><code class="language-markdown">Which of these words/phrases most evokes the experience of a crisp winter sunrise in Canberra?</code></pre>
 
-<pre><code class="language-text">Which one would be the easiest to explain to a toddler?
-</code></pre>
+<pre><code class="language-markdown">Which of these words/phrases would be the best title for a sci-fi movie?</code></pre>
 
-<pre><code class="language-text">Which one would be the best password for a secret underground antifascist network?
-</code></pre>
+<pre><code class="language-markdown">Which of these words/phrases is the most nihilistic?</code></pre>
+
+<pre><code class="language-markdown">Which of these words/phrases has the most assonance?</code></pre>
+
+<pre><code class="language-markdown">Which of these words/phrases is the most disrespectful?</code></pre>
+
+<pre><code class="language-markdown">Which of these words/phrases would be the best name for a pet cat?</code></pre>
+
+<pre><code class="language-markdown">Which of these words/phrases sounds most like a boy band track from the 90s?</code></pre>
+
+<pre><code class="language-markdown">Which of these words/phrases would be the easiest to explain to a toddler?</code></pre>
+
+<pre><code class="language-markdown">Which of these words/phrases would be the best password for a secret underground antifascist network?</code></pre>
 
 <p>At the end, the player with the most points wins. You can play as many times as
 you like, with new words/phrases and/or new “judging” criteria.</p>
