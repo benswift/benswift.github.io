@@ -195,13 +195,23 @@ good in the world, it’s just for the heck of it.</p>
 <p>Here are the prompts (you can copy-paste them automatically with the widget at
 the top right of the text).</p>
 
-<pre><code class="language-markdown">I'm thinking of an object. Ask me a yes/no question about the object and I'll
-give you an answer.
+<p>To start, let’s have the LLM be the “answerer” and you (and other human players)
+be the “questioner”, although you’ll need to have someone at a laptop be the LLM
+surrogate. Have them use this (or similar) prompt, and don’t show the output to
+the questioner(s).</p>
+
+<pre><code class="language-markdown">You're playing Twenty Questions, so you need to choose an object and tell me
+what it is (I won't tell the other players).
 </code></pre>
 
-<pre><code class="language-markdown">If the object in question is
-$OBJECT, what is the answer to the yes/no question "$QUESTION?"
+<p>Then, the questioner(s) can ask the LLM questions (via the surrogate) like:</p>
+
+<pre><code class="language-markdown">Is the object you're thinking of bigger than a car?
 </code></pre>
+
+<p>The surrogate continues to mediate between the LLM and the questioners until
+there’s a winner (either a questioner guesses correctly, or there have been 20
+questions).</p>
 
 <h3 id="shareback">Shareback</h3>
 
@@ -340,9 +350,9 @@ wankers.</p>
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>f16694abe</code> (see
+    site revision <code>ad148158f</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/f16694abe/_posts/2024-11-07-llm-parlour-games-for-overeducated-wankers.md"
+      href="https://github.com/benswift/benswift.github.io/blob/ad148158f/_posts/2024-11-07-llm-parlour-games-for-overeducated-wankers.md"
       >source</a
     >,
     <a

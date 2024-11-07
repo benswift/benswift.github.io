@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-07T11:06:56+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-07T17:28:32+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
 2024 at the ANU School of Cybernetics.</em></p>
 
 <section class="center">
@@ -109,13 +109,23 @@ good in the world, it’s just for the heck of it.</p>
 <p>Here are the prompts (you can copy-paste them automatically with the widget at
 the top right of the text).</p>
 
-<pre><code class="language-markdown">I'm thinking of an object. Ask me a yes/no question about the object and I'll
-give you an answer.
+<p>To start, let’s have the LLM be the “answerer” and you (and other human players)
+be the “questioner”, although you’ll need to have someone at a laptop be the LLM
+surrogate. Have them use this (or similar) prompt, and don’t show the output to
+the questioner(s).</p>
+
+<pre><code class="language-markdown">You're playing Twenty Questions, so you need to choose an object and tell me
+what it is (I won't tell the other players).
 </code></pre>
 
-<pre><code class="language-markdown">If the object in question is
-$OBJECT, what is the answer to the yes/no question "$QUESTION?"
+<p>Then, the questioner(s) can ask the LLM questions (via the surrogate) like:</p>
+
+<pre><code class="language-markdown">Is the object you're thinking of bigger than a car?
 </code></pre>
+
+<p>The surrogate continues to mediate between the LLM and the questioners until
+there’s a winner (either a questioner guesses correctly, or there have been 20
+questions).</p>
 
 <h3 id="shareback">Shareback</h3>
 
