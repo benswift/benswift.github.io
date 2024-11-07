@@ -2,7 +2,7 @@ require "html-proofer"
 
 Jekyll::Hooks.register :site, :post_write do |site|
   HTMLProofer.check_directory(site.config["destination"], opts = {
-                                # :ignore_urls => ["http://localhost:4000/.*"],
+                                :ignore_urls => [/^http:\/\/localhost:4000\//],
                                 :enforce_https => true,
                                 :check_html => true,
                                 :validation => {
