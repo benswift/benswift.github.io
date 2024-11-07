@@ -77,15 +77,25 @@ _Ben scrawls on the whiteboard for 5mins_
 Here are the prompts (you can copy-paste them automatically with the widget at
 the top right of the text).
 
-```markdown
-I'm thinking of an object. Ask me a yes/no question about the object and I'll
-give you an answer.
-```
+To start, let's have the LLM be the "answerer" and you (and other human players)
+be the "questioner", although you'll need to have someone at a laptop be the LLM
+surrogate. Have them use this (or similar) prompt, and don't show the output to
+the questioner(s).
 
 ```markdown
-If the object in question is
-$OBJECT, what is the answer to the yes/no question "$QUESTION?"
+You're playing Twenty Questions, so you need to choose an object and tell me
+what it is (I won't tell the other players).
 ```
+
+Then, the questioner(s) can ask the LLM questions (via the surrogate) like:
+
+```markdown
+Is the object you're thinking of bigger than a car?
+```
+
+The surrogate continues to mediate between the LLM and the questioners until
+there's a winner (either a questioner guesses correctly, or there have been 20
+questions).
 
 ### Shareback
 
