@@ -103,11 +103,11 @@ You are an expert in the use of language, and you have been given the following 
 Which of these words/phrases is the most ambiguous, and why?
 ```
 
-The player who wrote the thing that the LLM chooses scores 1 point.
+The player who wrote the thing that the LLM chooses scores 1 point. But they're
+not the winner just yet.
 
-Then, using the same words/phrases, ask the LLM to pick a word/phrase based on
-these different criteria (one at a time, tallying a point for the winner each
-time).
+Using the same words/phrases (i.e. without starting a new ChatGPT session) ask
+the LLM to pick again, based on successively different criteria:
 
 {%- for criteria in site.data.amphibology %}
 
