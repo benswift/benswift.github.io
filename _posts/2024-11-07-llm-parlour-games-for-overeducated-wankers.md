@@ -19,6 +19,13 @@ Prerequisites: ability to lounge around and use big words to impress your
 friends in games of no stakes whatsoever. Self-satisfied smugness about said
 loquaciousness is helpful but not essential.
 
+## Tech note
+
+This workshop requires access to a chat-based LLM (e.g. ChatGPT). If you've got
+a laptop (or even a phone, although you'll be typing on your janky little phone
+keyboard) you can head to <https://chatgpt.com> (no sign-up required). But if
+you've got a different favourite chat-based LLM, feel free to use that instead.
+
 ## Outline
 
 - intro
