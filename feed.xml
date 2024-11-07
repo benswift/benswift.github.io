@@ -1,5 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-07T10:57:24+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-07T11:06:56+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
 2024 at the ANU School of Cybernetics.</em></p>
+
+<section class="center">
+<script src="/assets/js/qrcode.min.js"></script>
+<div id="qrcode-https-benswift-me-blog-2024-11-07-llm-parlour-games-for-overeducated-wankers" class="qrcode"></div><p style="text-align: center;"><a href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/">https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/</a></p><script>
+ let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
+ let qrDiv = document.getElementById("qrcode-https-benswift-me-blog-2024-11-07-llm-parlour-games-for-overeducated-wankers");
+ new QRCode(qrDiv,
+            {text: "https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/",
+             width: qrSize,
+             height: qrSize,
+             colorDark : "#333",
+             colorLight : "#fafafa",
+             correctLevel : QRCode.CorrectLevel.H});
+ // hacky page centering
+ qrDiv.getElementsByTagName("img")[0].style.margin = "0 auto";
+</script>
+</section>
 
 <h2 id="abstract">Abstract</h2>
 
@@ -13,6 +30,13 @@ and genAI systems.</p>
 <p>Prerequisites: ability to lounge around and use big words to impress your
 friends in games of no stakes whatsoever. Self-satisfied smugness about said
 loquaciousness is helpful but not essential.</p>
+
+<h2 id="tech-note">Tech note</h2>
+
+<p>This workshop requires access to a chat-based LLM (e.g. ChatGPT). If you’ve got
+a laptop (or even a phone, although you’ll be typing on your janky little phone
+keyboard) you can head to <a href="https://chatgpt.com">https://chatgpt.com</a> (no sign-up required). But if
+you’ve got a different favourite chat-based LLM, feel free to use that instead.</p>
 
 <h2 id="outline">Outline</h2>
 
@@ -119,11 +143,11 @@ paper and puts it in a hat.</p>
 Which of these words/phrases is the most ambiguous, and why?
 </code></pre>
 
-<p>The player who wrote the thing that the LLM chooses scores 1 point.</p>
+<p>The player who wrote the thing that the LLM chooses scores 1 point. But they’re
+not the winner just yet.</p>
 
-<p>Then, using the same words/phrases, ask the LLM to pick a word/phrase based on
-these different criteria (one at a time, tallying a point for the winner each
-time).</p>
+<p>Using the same words/phrases (i.e. without starting a new ChatGPT session) ask
+the LLM to pick again, based on successively different criteria:</p>
 
 <pre><code class="language-markdown">Which of these words/phrases best describes your perfect date?</code></pre>
 
