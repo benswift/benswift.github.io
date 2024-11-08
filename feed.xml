@@ -1,22 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-07T17:28:32+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2024-11-08T14:21:01+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">LLM Parlour Games for Overeducated Wankers</title><link href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/" rel="alternate" type="text/html" title="LLM Parlour Games for Overeducated Wankers" /><published>2024-11-07T00:00:00+11:00</published><updated>2024-11-07T00:00:00+11:00</updated><id>https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers</id><content type="html" xml:base="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/"><![CDATA[<p><em>Note: this stuff is the workshop content for an alumni workshop in November
 2024 at the ANU School of Cybernetics.</em></p>
-
-<section class="center">
-<script src="/assets/js/qrcode.min.js"></script>
-<div id="qrcode-https-benswift-me-blog-2024-11-07-llm-parlour-games-for-overeducated-wankers" class="qrcode"></div><p style="text-align: center;"><a href="https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/">https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/</a></p><script>
- let qrSize = Math.min(window.innerWidth, window.innerHeight) * 0.5;
- let qrDiv = document.getElementById("qrcode-https-benswift-me-blog-2024-11-07-llm-parlour-games-for-overeducated-wankers");
- new QRCode(qrDiv,
-            {text: "https://benswift.me/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers/",
-             width: qrSize,
-             height: qrSize,
-             colorDark : "#333",
-             colorLight : "#fafafa",
-             correctLevel : QRCode.CorrectLevel.H});
- // hacky page centering
- qrDiv.getElementsByTagName("img")[0].style.margin = "0 auto";
-</script>
-</section>
 
 <h2 id="abstract">Abstract</h2>
 
