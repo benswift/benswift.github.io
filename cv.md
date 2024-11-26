@@ -284,8 +284,8 @@ Week.
   in Undergraduate Learning_ with Jessamy Perriam, Matthew Holt and Sungyeon
   Hong ($29k)
 
-- **2024** _The Future of Creativity: Long-term Relationships with Generative
-  AI_ with Jess Herrington ($33k)
+- **2024** _Google Grant: The Future of Creativity: Long-term Relationships with
+  Generative AI_ with Jess Herrington ($33k)
 
 - **2020--2022** [_Reimagine Fellowship: the c/c/c studio_]({% link
   _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) ($100k)
