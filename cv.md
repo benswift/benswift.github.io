@@ -280,12 +280,13 @@ Week.
 
 (_all dollar amounts in AUD, rounded to nearest thousand dollars_)
 
-- **2024** _Strategic Learning and Teaching Grant: Transdisciplinary Capability
-  in Undergraduate Learning_ with Jessamy Perriam, Matthew Holt and Sungyeon
-  Hong ($29k)
+- **2024** _Transdisciplinary Capability in Undergraduate Learning_ ANU
+  Strategic Learning and Teaching Grant with Jessamy Perriam, Matthew Holt and
+  Sungyeon Hong ($29k)
 
-- **2024** _Google Grant: The Future of Creativity: Long-term Relationships with
-  Generative AI_ with Jess Herrington ($33k)
+- **2024** _The Future of Creativity: Long-term Relationships with Generative
+  AI_ Google Artists and Machine Intelligence Research Award with Jess
+  Herrington ($33k)
 
 - **2020--2022** [_Reimagine Fellowship: the c/c/c studio_]({% link
   _posts/2019-03-20-reimagine-fellow-project-pitch.md %}) ($100k)
