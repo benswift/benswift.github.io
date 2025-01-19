@@ -4,7 +4,7 @@ tags: teaching ai
 ---
 
 _Note: this stuff is the workshop content for an alumni workshop in November
-2024 at the ANU School of Cybernetics._
+2024 hosted by the Cybernetic Studio at the ANU School of Cybernetics._
 
 ## Abstract
 
