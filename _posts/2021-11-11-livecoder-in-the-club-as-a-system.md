@@ -47,8 +47,8 @@ better show for the adoring crowds.
     It's a pretty niche activity, but there's an
     [international community](https://toplap.org) of us, and if you're
     interested then you can
-    [follow me on bluesky](https://bsky.app/profile/benswift.bsky.social) to
-    hear about upcoming gigs.
+    [follow me on bluesky](https://bsky.app/profile/benswift.me) to hear about
+    upcoming gigs.
 
 ## Livecoder-in-the-club as a system
 

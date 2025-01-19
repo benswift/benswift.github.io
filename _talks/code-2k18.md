@@ -19,7 +19,7 @@ summary: >-
 
 [ANU Research School of Computer Science](https://cs.anu.edu.au/code-creativity-culture/)
 
-[@benswift](https://bsky.app/profile/benswift.bsky.social)
+[@benswift](https://bsky.app/profile/benswift.me)
 
 {% include slides/impact.html %}
 
