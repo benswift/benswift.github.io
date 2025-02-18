@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'yaml'
 
 def write_lc_set_md_files

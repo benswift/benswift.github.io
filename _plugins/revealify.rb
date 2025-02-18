@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # (c) Ben Swift 2017-2019, MIT Licence
 # ben.swift@anu.edu.au
 
@@ -29,7 +31,7 @@ module Jekyll
             current_section = slides_div.add_child('<section>').first
             # hoist all the header's attributes up to the wrapper element
             # not sure if this will always work, but here goes...
-            element.keys.each do |attribute_name|
+            element.each_key do |attribute_name|
               # relies on the fact that the "current" wrapper node is the last child in ret
               current_section[attribute_name] = element[attribute_name]
               # so that we don't get duplicate attributes e.g. IDs

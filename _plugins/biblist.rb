@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'fileutils'
 require 'bibtex'
 
@@ -5,7 +7,7 @@ def conjoin_names(names)
   if names.length <= 2
     names.join(' and ')
   else
-    names.first(names.length - 2).join(', ') + ', ' + names.last(2).join(' and ')
+    "#{names.first(names.length - 2).join(', ')}, #{names.last(2).join(' and ')}"
   end
 end
 
@@ -21,7 +23,7 @@ module Jekyll
       @bib = BibTeX.open("_data/#{text.split.first.strip}")
 
       # all the other elements (if present) are options
-      @options = text.split[1..-1].map(&:intern)
+      @options = text.split[1..].map(&:intern)
 
       @baseurl = Jekyll.configuration({})['baseurl']
     end
@@ -44,7 +46,7 @@ module Jekyll
 
     def author_p(b)
       author_spans = b[:author]
-                     .map { |author| author.first + ' ' + author.last }
+                     .map { |author| "#{author.first} #{author.last}" }
                      .map { |name| name == 'Ben Swift' ? '<strong>Ben Swift</strong>' : name }
                      .map { |name| "<span class='author'>#{name}</span>" }
       "<p>by #{conjoin_names(author_spans)}</p>"
@@ -132,9 +134,9 @@ module Jekyll
   class BibListGigsTag < Liquid::Tag
     def initialize(tag_name, bib_file, tokens)
       super
-      @gigs = Jekyll.sites.first.collections['livecoding'].docs.map do |gig|
-        gig.data
-      end.select { |gig| gig['type'] == 'curated' and !gig['hidden'] }
+      @gigs = Jekyll.sites.first.collections['livecoding'].docs.map(&:data).select do |gig|
+        gig['type'] == 'curated' and !gig['hidden']
+      end
       @baseurl = Jekyll.configuration({})['baseurl']
     end
 
@@ -210,7 +212,7 @@ def copy_preprint_pdfs(_site)
 
   bib.each do |b|
     pdf_filename = b[:file]
-    if pdf_filename and pdf_filename.end_with?('.pdf')
+    if pdf_filename&.end_with?('.pdf')
       FileUtils.cp(pdf_filename, "assets/documents/preprints/#{File.basename(pdf_filename)}")
     end
   end

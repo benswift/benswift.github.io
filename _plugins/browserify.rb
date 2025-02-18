@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # run browserify to package all the things
 
 def browserify_all(_site)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'html-proofer'
 
 Jekyll::Hooks.register :site, :post_write do |site|

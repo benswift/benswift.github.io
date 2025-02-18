@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'csv'
 
 # from Rosetta code https://rosettacode.org/wiki/Determine_if_a_string_is_numeric#Ruby
@@ -12,7 +14,7 @@ def titlecase(str)
   str.split do |word|
     word.downcase!
     word.capitalize! unless notcap.include? word
-    res += ' ' + word
+    res += " #{word}"
   end
   res.strip
 end
