@@ -3,12 +3,13 @@
 # since they might use different build processes, it actually just calls make in
 # each subdirectory (so yeah, there's actually nothing cljs-specific about it)
 
-def build_cljs_projects(site)
-  Dir.foreach("_cljs") do |project_dir|
-    next if project_dir == '.' or project_dir == '..' or not File.directory?(project_dir)
-    Dir.chdir("_cljs/#{project_dir}"){
-      system("make", "--silent", "all") or Jekyll.logger.warn "couldn't run make in", project_dir
-    }
+def build_cljs_projects(_site)
+  Dir.foreach('_cljs') do |project_dir|
+    next if project_dir == '.' or project_dir == '..' or !File.directory?(project_dir)
+
+    Dir.chdir("_cljs/#{project_dir}") do
+      system('make', '--silent', 'all') or Jekyll.logger.warn "couldn't run make in", project_dir
+    end
   end
 end
 

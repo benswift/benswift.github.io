@@ -1,8 +1,9 @@
 # run browserify to package all the things
 
-def browserify_all(site)
-  Dir.glob("_browserify/*.js") do |filename|
-    system("npx", "browserify", filename, "--outfile", "assets/js/#{File.basename(filename)}") or raise "browserify build error in #{filename}"
+def browserify_all(_site)
+  Dir.glob('_browserify/*.js') do |filename|
+    system('npx', 'browserify', filename, '--outfile',
+           "assets/js/#{File.basename(filename)}") or raise "browserify build error in #{filename}"
   end
 end
 

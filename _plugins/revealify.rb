@@ -8,29 +8,25 @@ require 'jekyll'
 require 'nokogiri'
 
 module Jekyll
-
   module Revealify
-
     def revealify(html)
-
       # parse content (wrapped in the reveal > slides divs)
       reveal_div = Nokogiri::HTML.fragment("<div class=\"reveal\"><div class=\"slides\">#{html}</div></div>", 'UTF-8')
       slides_div = reveal_div.search('.slides').first
 
-      unless slides_div.first_element_child.matches? "section,h1,h2,hr"
-        raise "reveal files must start with <section>, <h1>, <h2> or <hr>, not #{slides_div.first_element_child.name} (in \"#{@context.registers[:page]["path"]}\")"
+      unless slides_div.first_element_child.matches? 'section,h1,h2,hr'
+        raise "reveal files must start with <section>, <h1>, <h2> or <hr>, not #{slides_div.first_element_child.name} (in \"#{@context.registers[:page]['path']}\")"
       end
 
-      slides_div.element_children.each do | element |
-
+      slides_div.element_children.each do |element|
         # <section> elements should be passed through as-is
-        if element.matches? "section"
+        if element.matches? 'section'
           slides_div.add_child(element)
 
         else
           # on "split" elements (<h1>, <h2>, <hr>)
-          if element.matches? "h1,h2,hr"
-            current_section = slides_div.add_child("<section>").first
+          if element.matches? 'h1,h2,hr'
+            current_section = slides_div.add_child('<section>').first
             # hoist all the header's attributes up to the wrapper element
             # not sure if this will always work, but here goes...
             element.keys.each do |attribute_name|
@@ -43,20 +39,17 @@ module Jekyll
 
           # add the element to the current <section> (i.e. the current slide)
           # unless it's just an <hr> (which are used for splitting only)
-          if element.matches? "hr"
+          if element.matches? 'hr'
             element.unlink
           else
             slides_div.last_element_child.add_child(element)
           end
         end
-
       end
 
       reveal_div.to_html
     end
-
   end
-
 end
 
 Liquid::Template.register_filter(Jekyll::Revealify)

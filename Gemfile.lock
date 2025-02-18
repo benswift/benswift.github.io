@@ -203,6 +203,7 @@ DEPENDENCIES
   jekyll-paginate-v2!
   jekyll-revealify-plugin!
   jekyll-seo-tag
+  rubocop
   solargraph
   webrick
 
