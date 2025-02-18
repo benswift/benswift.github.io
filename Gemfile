@@ -17,3 +17,7 @@ group :jekyll_plugins do
   # revealify
   gem "jekyll-revealify-plugin", :git => "https://gitlab.cecs.anu.edu.au/lucy/jekyll-revealify-plugin.git", :branch => 'master'
 end
+
+group :development do
+  gem "solargraph"
+end
