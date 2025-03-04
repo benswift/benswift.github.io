@@ -31,7 +31,7 @@ module Jekyll
             current_section = slides_div.add_child('<section>').first
             # hoist all the header's attributes up to the wrapper element
             # not sure if this will always work, but here goes...
-            element.each_key do |attribute_name|
+            element.attributes.each do |attribute_name, attribute_value|
               # relies on the fact that the "current" wrapper node is the last child in ret
               current_section[attribute_name] = element[attribute_name]
               # so that we don't get duplicate attributes e.g. IDs

@@ -28,6 +28,7 @@ GEM
       fiber-annotation
       io-event (~> 1.6, >= 1.6.5)
     backport (1.2.0)
+    base64 (0.2.0)
     benchmark (0.4.0)
     bibtex-ruby (5.1.6)
       latex-decode (~> 0.0)
@@ -38,6 +39,7 @@ GEM
       fiber-annotation
       fiber-local (~> 1.1)
       json
+    csv (3.3.2)
     diff-lcs (1.6.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
@@ -45,13 +47,13 @@ GEM
     ethon (0.16.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
     fiber-storage (1.0.0)
     forwardable-extended (2.6.0)
-    google-protobuf (4.28.3-arm64-darwin)
+    google-protobuf (4.28.3)
       bigdecimal
       rake (>= 13)
     hashery (2.1.2)
@@ -110,7 +112,9 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.6.6)
     mercenary (0.4.0)
-    nokogiri (1.16.7-arm64-darwin)
+    mini_portile2 (2.8.8)
+    nokogiri (1.16.7)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     observer (0.1.2)
     ostruct (0.6.1)
@@ -192,9 +196,12 @@ GEM
 
 PLATFORMS
   arm64-darwin-23
+  arm64-darwin-24
 
 DEPENDENCIES
+  base64
   bibtex-ruby (~> 5)
+  csv
   html-proofer
   jekyll (~> 4.2)
   jekyll-compose
