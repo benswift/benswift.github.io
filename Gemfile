@@ -14,6 +14,7 @@ group :jekyll_plugins do
   gem 'jekyll-fontawesome-svg'
   gem 'jekyll-paginate-v2', github: 'mmistakes/jekyll-paginate-v2', branch: 'jekyll-v4'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
   # for authoring
   gem 'jekyll-compose'
   # to check everything's hooked up right
