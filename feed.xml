@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-03T09:11:36+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Agentic Elixir superpowers: Zed + Tidewave + AshAI</title><link href="https://benswift.me/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai/" rel="alternate" type="text/html" title="Agentic Elixir superpowers: Zed + Tidewave + AshAI" /><published>2025-06-06T00:00:00+10:00</published><updated>2025-06-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai</id><content type="html" xml:base="https://benswift.me/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai/"><![CDATA[<p>For a few years now whenever I need to build any sort of networked interactive
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-07T14:43:56+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">DIYChatGPT Short Course for ANU Undergraduates</title><link href="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/" rel="alternate" type="text/html" title="DIYChatGPT Short Course for ANU Undergraduates" /><published>2025-07-07T00:00:00+10:00</published><updated>2025-07-07T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates</id><content type="html" xml:base="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/"><![CDATA[<p>If you’re an ANU undergraduate student you can enrol in an upcoming (next week!)
+<a href="https://mccuskerinstitute.anu.edu.au/study/knots/diy-chatgpt-llms-as-information-processing-machines/">upcoming 3hr course</a>
+I’ve created called <em>DIY ChatGPT: LLMs as Information Processing Machines</em>. It’s
+running for the first time <strong>next Thursday 17 July 10am–1pm</strong> (although it will
+run again later in the semester).</p>
+
+<p>Here’s the blurb:</p>
+
+<blockquote>
+  <p>In this hands-on workshop you will train and use your own language model from
+scratch - with just pen and paper and a bit of dice rolling. Through
+interactive exercises and guided discussions, you’ll see how language models
+(even large language models like ChatGPT) are fundamentally information
+processing machines, turning language inputs into language outputs. The
+workshop builds from basic principles to more complex applications through an
+exploration of language modeling as a probabilistic process of predicting
+“what token comes next” in a sequence, and ends with a poetry slam (for real).</p>
+</blockquote>
+
+<p>This course is a
+<a href="https://mccuskerinstitute.anu.edu.au/study/knots_explained/">“Know the Nature Of Things” KNoT</a>
+offered as part of the ANU’s
+<a href="https://mccuskerinstitute.anu.edu.au/">McCusker Institute</a>. They’re for-credit
+courses run by different folks all across campus, and a great way to explore
+some of the cool stuff going on at ANU.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[If you’re an ANU undergraduate student you can enrol in an upcoming (next week!) upcoming 3hr course I’ve created called DIY ChatGPT: LLMs as Information Processing Machines. It’s running for the first time next Thursday 17 July 10am–1pm (although it will run again later in the semester).]]></summary></entry><entry><title type="html">Agentic Elixir superpowers: Zed + Tidewave + AshAI</title><link href="https://benswift.me/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai/" rel="alternate" type="text/html" title="Agentic Elixir superpowers: Zed + Tidewave + AshAI" /><published>2025-06-06T00:00:00+10:00</published><updated>2025-06-06T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai</id><content type="html" xml:base="https://benswift.me/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai/"><![CDATA[<p>For a few years now whenever I need to build any sort of networked interactive
 experience, I reach for Elixir (with Phoenix LiveView and Ash). It’s an
 <em>extremely</em> productive combination, especially when you want to do more complex
 client/server information flows than the standard request/response UX. I’ve also
@@ -588,145 +612,4 @@ any cache effects, and I don’t know (but could guess?) that the JIT might have
 even more pronounced cold start issues (although I didn’t really see it above).
 Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
 can save yourself a bunch of time, and tighten those feedback loops to stay in
-the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry><entry><title type="html">Academic integrity guidelines re: ChatGPT and generative AI tools</title><link href="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/" rel="alternate" type="text/html" title="Academic integrity guidelines re: ChatGPT and generative AI tools" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools/"><![CDATA[<p>Here in Australia Semester 1 is approaching and
-<a href="https://chat.openai.com">ChatGPT</a> is, undoubtedly, <em>a thing</em>. From a practical
-perspective it’s important to have some​ sort of guidelines about about ChatGPT
-and other generative AI tools in the classroom (<a href="https://twitter.com/dbkahn/status/1616494433587040257">everyone’s doing
-it</a>). If you don’t
-provide any advice ahead of time you’ll end up making it up as you go along
-(because it <em>will</em> come up) and <a href="https://www.youtube.com/watch?v=7XeQin9abx4">policy on the run is policy
-underdone</a>.</p>
-
-<p>In terms of the opportunities to incorporate, explore and critique new tools in
-the classroom, I’m actually kindof excited. <a href="https://www.timeshighereducation.com/campus/so-you-want-use-chatgpt-classroom-semester">I’ve written elsewhere about how
-you might be able to do
-this</a>.
-The <em>tl;dr</em> is that you should look at your class activities (including
-assessment items) and try and actually <em>do</em> them with ChatGPT, just to see how
-it goes. OpenAI have also just released some stuff about <a href="https://platform.openai.com/docs/chatgpt-education">considerations for
-educators</a>.</p>
-
-<p class="hl-para">At this stage these are just my own personal thoughts as a teaching academic;
-I’m not wearing my <a href="https://cybernetics.anu.edu.au/people/ben-swift/">Associate Director
-(Education)</a> hat here, and
-<strong>this is not an official (or unofficial) ANU School of Cybernetics policy</strong>. If
-you’re also putting together some guidelines for your own classroom, then
-questions/comments/suggesions are welcome—do <a href="mailto:ben.swift@anu.edu.au">get in
-touch</a>.</p>
-
-<p>Here are my current thoughts what some good <em>use of ChatGPT in the classroom</em>
-guidelines might look like. It doesn’t have everything precisely defined, but it
-gives you an idea of how I want to run my classes, balancing the opportunities
-and challenges these tools present for student learning.</p>
-
-<ol>
-  <li>
-    <p>Unless otherwise specified, you <strong>are</strong> allowed to use
-ChatGPT<sup id="fnref:other-similar-tools" role="doc-noteref"><a href="#fn:other-similar-tools" class="footnote" rel="footnote">1</a></sup> in this class, including in work submitted for
-assessment.</p>
-  </li>
-  <li>
-    <p>Wherever ChatGPT is used it must be cited according to the <a href="https://platform.openai.com/docs/chatgpt-education/disclosing-the-use-of-chatgpt">OpenAI citation
-instructions</a>.<sup id="fnref:attribution" role="doc-noteref"><a href="#fn:attribution" class="footnote" rel="footnote">2</a></sup></p>
-  </li>
-  <li>
-    <p>You are responsible for everything you submit. “It’s not my fault—the AI
-generated text introduced non-sequiturs/errors/plagiarised text/offensive
-language” will never get you off the hook; if it’s in your submission you’re
-responsible for it just as you would be if you’d written it without ChatGPT.</p>
-  </li>
-  <li>
-    <p>You are expected to be able to explain (to your tutor, lecturer or course
-convenor) any assessment submission to demonstrate your understanding of the
-concepts being assessed.</p>
-  </li>
-  <li>
-    <p>Any violations of the above will be considered a potential breach of academic
-integrity under clause 9 of section 12(2) of the <a href="#appendix-anu-academic-integrity-rule">ANU Academic Integrity
-Rule</a> “improperly recycles work or
-otherwise improperly submits or publishes work that is not original”
-(<strong>note</strong>: I’m unsure on which clause is best to use here—could be clause
-8, could be one of the others as well).</p>
-  </li>
-  <li>
-    <p>No “is-this-written-by-an-AI?”​ detection tools (e.g.
-<a href="https://openai.com/blog/new-ai-classifier-for-indicating-ai-written-text/">this</a>)
-will be used as part of the marking process.</p>
-  </li>
-</ol>
-
-<p>One open question (not necessarily part of the student-facing guidelines, but
-relevant for anyone running a course) is what guidance should be given to the
-markers (e.g. tutors/TAs) on what to do when marking ChatGPT-generated content.
-Should submissions created with the help of ChatGPT be marked lower than
-“equivalent standard” (whatever that means) submissions that aren’t?</p>
-
-<p>Anyway, these are just some draft thoughts—I’ll keep this post updated as my
-thinking changes.</p>
-
-<h2 id="appendix-anu-academic-integrity-rule">Appendix: ANU Academic Integrity Rule</h2>
-
-<p>From the <a href="https://www.legislation.gov.au/Details/F2021L00997/Html/Text#_Toc73961519">ANU Academic Integrity Rule
-2021</a>
-Section 12 (2), here’s the list of what constitutes a breach of the academic
-integrity principle.</p>
-
-<style>
-#academic-integrity-definitions ol {list-style-type: lower-alpha;}
-#academic-integrity-definitions ol ol {list-style-type: lower-roman;}
-</style>
-
-<div id="academic-integrity-definitions">
-
-  <blockquote>
-    <p>(2) For this instrument, a student breaches the academic integrity principle if, in scholarly practice, the student:</p>
-    <ol>
-      <li>cheats; or</li>
-      <li>impersonates another person; or</li>
-      <li>engages in plagiarism; or</li>
-      <li>colludes with another person; or</li>
-      <li>improperly shares material with another person; or</li>
-      <li>engages in contract cheating or improperly engages another person to prepare, or assist in preparing, work for the student; or</li>
-      <li>submits or publishes anything that fails to correctly or appropriately acknowledge the work of another person or otherwise improperly appropriates the intellectual property or contribution of another person; or</li>
-      <li>otherwise passes off the work of another person as the student’s own work; or</li>
-      <li>improperly recycles work or otherwise improperly submits or publishes work that is not original; or</li>
-      <li>takes a prohibited item into an examination or other assessment venue or otherwise breaches the University’s directions (however described) in relation to an examination or other assessment; or</li>
-      <li>fabricates or falsifies any document, data or other information, or anything else, including, for example, by intentionally omitting data to obtain a desired result, or by falsely representing observations as genuinely held; or</li>
-      <li>otherwise intentionally or recklessly engages in conduct:
-        <ol>
-          <li>that impedes the progress of research; or</li>
-          <li>that risks corrupting research records or compromising the integrity of research practices; or</li>
-          <li>that uses research data from another person without appropriate acknowledgement; or</li>
-          <li>that breaches a research protocol approved by a research ethics committee or a statutory licence condition applying to research; or</li>
-        </ol>
-      </li>
-      <li>otherwise engages in conduct with the intention of gaining, or assisting another person to gain, an unethical, dishonest, unfair or unjustified advantage; or</li>
-      <li>otherwise engages in conduct, or assists another person to engage in conduct, that is unethical, dishonest or unfair; or</li>
-      <li>engages in any other conduct declared to be academic misconduct by the orders.</li>
-    </ol>
-  </blockquote>
-
-  <p>My commentary on the above (and IANAL) is that none of those points really
-capture the specific case of “ChatGPT wrote this essay, not the student”, in
-particular because so many of the definitions reference “of another <em>person</em>”.
-I’m sure this language will be updated in the future in light of the widespread
-availability of generative AI tools.</p>
-</div>
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:other-similar-tools" role="doc-endnote">
-
-      <p>Wherever ChatGPT is named in these guidelines it should be read as “ChatGPT
-and other generative AI tools”, where those tools are defined according to
-(ERROR: definition not found). Any guidelines which are restrict themselves
-to specific AI tools by name are doomed to become out of date real fast. <a href="#fnref:other-similar-tools" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:attribution" role="doc-endnote">
-
-      <p>These guidelines deliberately doesn’t try to address the (important) issue
-of AI tools and the way they appropriate the skilled labour of the millions
-of individuals who created, edited and labelled the data on which they were
-trained. <a href="#fnref:attribution" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Here in Australia Semester 1 is approaching and ChatGPT is, undoubtedly, a thing. From a practical perspective it’s important to have some​ sort of guidelines about about ChatGPT and other generative AI tools in the classroom (everyone’s doing it). If you don’t provide any advice ahead of time you’ll end up making it up as you go along (because it will come up) and policy on the run is policy underdone.]]></summary></entry></feed>
+the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry></feed>
