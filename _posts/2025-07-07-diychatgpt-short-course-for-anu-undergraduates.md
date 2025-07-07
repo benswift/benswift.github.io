@@ -19,8 +19,9 @@ Here's the blurb:
 > exploration of language modeling as a probabilistic process of predicting
 > “what token comes next” in a sequence, and ends with a poetry slam (for real).
 
-This course is a ["Know the Nature Of Things" KNoT]("Know the Nature of Things"
-KNoT) offered as part of the ANU's
+This course is a
+["Know the Nature Of Things" KNoT](https://mccuskerinstitute.anu.edu.au/study/knots_explained/)
+offered as part of the ANU's
 [McCusker Institute](https://mccuskerinstitute.anu.edu.au/). They're for-credit
 courses run by different folks all across campus, and a great way to explore
 some of the cool stuff going on at ANU.
