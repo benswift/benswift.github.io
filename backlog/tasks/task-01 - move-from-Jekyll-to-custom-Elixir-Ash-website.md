@@ -10,8 +10,8 @@ dependencies: []
 
 ## Description
 
-This describes a plan for moving this website from a static Jekyll site to a
-custom Elixir/Ash (non-static) website. A sketch of the plan would be:
+We need to move this website from a static Jekyll site to a custom Elixir/Ash
+(non-static) website. A sketch of the plan would be:
 
 - keep the blog posts and other "web content" md files as-is, and wrap them in a
   custom Ash resource/action which used MDEx to convert them on the fly in
@@ -44,3 +44,9 @@ continue to be so going forward.
 The current jekyll site has one particular custom plugin which reads a BibTeX
 (`*.bib`) file and uses that information to populate a list of citations on e.g.
 the main "Research" page. I would need to duplicate this in Ash/Elixir as well.
+
+### Libraries
+
+- latest Ash/Phoenix (must be 1.8 - rc is ok)/Phoenix LiveView (1.18)
+- daisyUI for frontend components (as per Phoenix 1.8 defaults)
+- use igniter wherever possible to install libraries
