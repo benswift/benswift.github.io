@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-16T14:25:17+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Automated RPi Web Kiosk Setup in 2025</title><link href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" rel="alternate" type="text/html" title="Automated RPi Web Kiosk Setup in 2025" /><published>2025-07-16T00:00:00+10:00</published><updated>2025-07-16T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025</id><content type="html" xml:base="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"><![CDATA[<p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-16T14:30:54+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Automated RPi Web Kiosk Setup in 2025</title><link href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" rel="alternate" type="text/html" title="Automated RPi Web Kiosk Setup in 2025" /><published>2025-07-16T00:00:00+10:00</published><updated>2025-07-16T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025</id><content type="html" xml:base="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"><![CDATA[<p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
 I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen
 Chromium “kiosks” with a pre-set URL (network connected, but with no
 keyboard/mouse).</p>
 
 <p>They’ve all needed slightly different kiosk URLs, and I <em>hate</em> doing this sort
-of busy-work by hand, so I’ve spent much longer than I’d like to admit<sup id="fnref:time" role="doc-noteref"><a href="#fn:time" class="footnote" rel="footnote">1</a></sup>
-putting together a fully scripted burn-and-boot process. My non-negotiables
-were:</p>
+of busy-work by hand. So I’ve spent longer than I’d like to admit<sup id="fnref:time" role="doc-noteref"><a href="#fn:time" class="footnote" rel="footnote">1</a></sup> putting
+together a fully scripted burn-and-boot process. My non-negotiables were:</p>
 
 <ul>
   <li>script needs to run on macOS (since my MBP is the only computer I have with an
@@ -17,9 +16,9 @@ automatic (join network, install and configure software and OS)</li>
 sometimes I need to change their kiosk URL)</li>
 </ul>
 
-<p>I <em>thought</em> that this would be a pretty common thing that others would have done
-(rpis are cheap and seem like a good fit for this type of “web browser as
-installation display” thing). But I kept running into dead ends.</p>
+<p>I <em>thought</em> that this would be a pretty common thing that others would have
+done—rpis are cheap and seem like a good fit for this type of “web browser as
+installation display” thing. But I kept running into dead ends.</p>
 
 <p>I finally got it fully working with <a href="https://dietpi.com/">DietPi</a> as the OS and
 <a href="https://www.hjdskes.nl/projects/cage/">Cage/Wayland</a> as the compositor. To save
@@ -40,8 +39,9 @@ kiosks that boot directly into fullscreen Chromium displaying a specified URL.</
     <li>automatically joins your Tailscale network</li>
     <li>supports native display resolutions including 4K at 60Hz</li>
     <li>configures WiFi (WPA2 and enterprise 802.1X)</li>
-    <li>includes HDMI audio support and <code>kiosk-set-url</code> utility for easy URL changes</li>
+    <li>includes HDMI audio support</li>
     <li>optimized specifically for Raspberry Pi 5 with 8GB RAM</li>
+    <li>provides a <code>kiosk-set-url</code> utility for easy URL changes</li>
   </ul>
 </blockquote>
 
@@ -49,7 +49,7 @@ kiosks that boot directly into fullscreen Chromium displaying a specified URL.</
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:time" role="doc-endnote">
-      <p>I though it’d take a day, it’s taken about a week, on and off :( <a href="#fnref:time" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>I thought it’d take a day, it’s taken about a week, on and off :( <a href="#fnref:time" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[As part of a recent art installation I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen Chromium “kiosks” with a pre-set URL (network connected, but with no keyboard/mouse).]]></summary></entry><entry><title type="html">DIYChatGPT Short Course for ANU Undergraduates</title><link href="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/" rel="alternate" type="text/html" title="DIYChatGPT Short Course for ANU Undergraduates" /><published>2025-07-07T00:00:00+10:00</published><updated>2025-07-07T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates</id><content type="html" xml:base="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/"><![CDATA[<p>If you’re an ANU undergraduate student you can enrol in an upcoming (next week!)
