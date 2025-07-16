@@ -50,6 +50,9 @@ the main "Research" page. I would need to duplicate this in Ash/Elixir as well.
 - latest Ash/Phoenix (must be 1.8 - rc is ok)/Phoenix LiveView (1.18)
 - daisyUI for frontend components (as per Phoenix 1.8 defaults)
 - use igniter wherever possible to install libraries
+- MDEx for markdown parsing (with table and strikethrough extensions)
+- bibtex_parser (https://hex.pm/packages/bibtex_parser) for BibTeX file parsing
+- yaml_elixir for frontmatter parsing
 
 ## Detailed Implementation Plan
 
@@ -328,17 +331,24 @@ end
 
 ### 4. BibTeX Integration
 
+Using the `bibtex_parser` package for robust BibTeX parsing:
+
 ```elixir
-# lib/blog/bibliography/parser.ex
-defmodule Blog.Bibliography.Parser do
+# mix.exs dependencies
+{:bibtex_parser, "~> 0.1.0"}
+
+# lib/blog/bibliography/store.ex
+defmodule Blog.Bibliography.Store do
   @bib_file "priv/content/bibliography.bib"
   @external_resource @bib_file
 
-  # Parse BibTeX at compile time
-  @entries parse_bibtex_file(@bib_file)
+  # Parse BibTeX at compile time using bibtex_parser
+  @entries @bib_file
+           |> File.read!()
+           |> BibtexParser.parse()
+           |> process_entries()
 
   def all_entries, do: @entries
-
   def get_entry(key), do: Enum.find(@entries, &(&1.key == key))
 
   def entries_by_year do
@@ -347,33 +357,70 @@ defmodule Blog.Bibliography.Parser do
     |> Enum.sort_by(&elem(&1, 0), :desc)
   end
 
-  defp parse_bibtex_file(path) do
-    path
-    |> File.read!()
-    |> String.split(~r/@\w+\{/, trim: true)
-    |> Enum.map(&parse_entry/1)
-    |> Enum.reject(&is_nil/1)
+  def entries_by_type(type) do
+    Enum.filter(@entries, &(&1.type == type))
   end
 
-  defp parse_entry(entry_text) do
-    # Basic BibTeX parsing - could be enhanced with a proper parser
-    with [key | fields] <- String.split(entry_text, ~r/,\s*\n/),
-         key <- String.trim(key, ","),
-         fields <- Enum.map(fields, &parse_field/1),
-         fields <- Enum.reject(fields, &is_nil/1),
-         fields_map <- Map.new(fields) do
-      %{
-        key: key,
-        type: extract_type(entry_text),
-        title: fields_map["title"],
-        author: fields_map["author"],
-        year: fields_map["year"],
-        url: fields_map["url"],
-        raw: entry_text
-      }
-    else
-      _ -> nil
-    end
+  defp process_entries({:ok, entries}) do
+    Enum.map(entries, &transform_entry/1)
+  end
+  defp process_entries({:error, _reason}), do: []
+
+  defp transform_entry(entry) do
+    %{
+      key: entry.key,
+      type: entry.type,
+      title: clean_latex(entry.fields["title"]),
+      author: format_authors(entry.fields["author"]),
+      year: entry.fields["year"],
+      url: entry.fields["url"],
+      doi: entry.fields["doi"],
+      journal: entry.fields["journal"],
+      booktitle: entry.fields["booktitle"],
+      raw: entry
+    }
+  end
+
+  defp clean_latex(text) when is_binary(text) do
+    text
+    |> String.replace(~r/\{|\}/, "")
+    |> String.replace(~r/\\"/, "")
+  end
+  defp clean_latex(nil), do: nil
+
+  defp format_authors(authors) when is_binary(authors) do
+    authors
+    |> String.split(" and ")
+    |> Enum.map(&String.trim/1)
+  end
+  defp format_authors(nil), do: []
+end
+
+# lib/blog_web/components/citation_helpers.ex
+defmodule BlogWeb.CitationHelpers do
+  use Phoenix.Component
+
+  def citation_list(assigns) do
+    ~H"""
+    <div class="space-y-4">
+      <article :for={entry <- @entries} class="citation">
+        <div class="font-medium">
+          <%= entry.title %>
+        </div>
+        <div class="text-sm text-base-content/70">
+          <%= Enum.join(entry.author, ", ") %> · <%= entry.year %>
+        </div>
+        <div :if={entry.journal} class="text-sm italic">
+          <%= entry.journal %>
+        </div>
+        <div :if={entry.url} class="text-sm">
+          <.link href={entry.url} target="_blank" class="link link-primary">
+            <%= if entry.doi, do: "DOI: #{entry.doi}", else: "Link" %>
+          </.link>
+        </div>
+      </article>
+    </div>
+    """
   end
 end
 ```
@@ -444,3 +491,166 @@ While not part of the initial implementation, the architecture supports:
 - Memory usage scales linearly with content amount (not a concern per
   requirements)
 - SEO and performance should match or exceed Jekyll due to pre-compilation
+
+### 7. Implementation Checklist
+
+#### Initial Phoenix Setup
+
+```bash
+# Create new Phoenix app with no database
+mix phx.new blog --no-ecto --live
+cd blog
+
+# Add dependencies to mix.exs
+{:ash, "~> 3.0"},
+{:mdex, "~> 0.1"},
+{:yaml_elixir, "~> 2.9"},
+{:bibtex_parser, "~> 0.1.0"}
+
+# Install with igniter where possible
+mix igniter.install ash
+```
+
+#### Directory Structure
+
+```
+priv/
+  content/
+    posts/
+      2024/
+        01-15-my-first-post.md
+        02-20-another-post.md
+    pages/
+      about.md
+      research.md
+    bibliography.bib
+  static/
+    images/
+    downloads/
+    robots.txt
+```
+
+#### Markdown Frontmatter Format
+
+```yaml
+---
+title: "My Blog Post Title"
+date: 2024-01-15
+tags: [elixir, phoenix, web]
+draft: false  # Optional, defaults to false
+excerpt: "Optional custom excerpt"
+---
+
+Post content here...
+```
+
+#### Helper Functions to Implement
+
+```elixir
+# lib/blog/content/frontmatter.ex
+defmodule Blog.Content.Frontmatter do
+  def parse(file_content) do
+    case String.split(file_content, ~r/^---$/m, parts: 3) do
+      ["", frontmatter, content] ->
+        {:ok, YamlElixir.read_from_string!(frontmatter), String.trim(content)}
+      _ ->
+        {:ok, %{}, file_content}
+    end
+  end
+end
+
+# lib/blog/content/helpers.ex
+defmodule Blog.Content.Helpers do
+  def extract_slug_from_path(path) do
+    path
+    |> Path.basename(".md")
+    |> String.replace(~r/^\d{4}-\d{2}-\d{2}-/, "")
+  end
+
+  def generate_excerpt(markdown, length \\ 160) do
+    markdown
+    |> String.replace(~r/^#.*$/m, "")
+    |> String.replace(~r/\[([^\]]+)\]\([^\)]+\)/, "\\1")
+    |> String.replace(~r/[*_`]/, "")
+    |> String.trim()
+    |> String.slice(0, length)
+    |> Kernel.<>("...")
+  end
+
+  def count_words(text) do
+    text
+    |> String.split(~r/\s+/)
+    |> length()
+  end
+
+  def calculate_reading_time(text, wpm \\ 200) do
+    ceil(count_words(text) / wpm)
+  end
+end
+```
+
+#### Route Configuration
+
+```elixir
+# lib/blog_web/router.ex
+scope "/", BlogWeb do
+  pipe_through :browser
+
+  live "/", HomeLive.Index, :index
+  live "/posts", PostLive.Index, :index
+  live "/posts/:slug", PostLive.Show, :show
+  live "/posts/tag/:tag", PostLive.Index, :tag
+  live "/search", SearchLive.Index, :index
+  live "/:page", PageLive.Show, :show  # For static pages like /about
+end
+```
+
+#### Phoenix 1.8 Specific Setup
+
+```elixir
+# assets/tailwind.config.js
+module.exports = {
+  content: [
+    "./js/**/*.js",
+    "../lib/*_web.ex",
+    "../lib/*_web/**/*.*ex"
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require("@tailwindcss/typography"),  // For prose styling
+    require("daisyui")
+  ],
+  daisyui: {
+    themes: ["light", "dark"],  // Enable theme switching
+  },
+}
+```
+
+#### SEO Meta Tags
+
+```elixir
+# lib/blog_web/components/layouts/root.html.heex
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="csrf-token" content={get_csrf_token()} />
+  
+  <%= if assigns[:meta_tags] do %>
+    <meta name="description" content={@meta_tags.description} />
+    <meta property="og:title" content={@meta_tags.title} />
+    <meta property="og:description" content={@meta_tags.description} />
+    <meta property="og:type" content={@meta_tags.type || "website"} />
+    <meta name="twitter:card" content="summary" />
+  <% end %>
+  
+  <.live_title suffix=" · Ben Swift">
+    <%= assigns[:page_title] || "Ben Swift" %>
+  </.live_title>
+  
+  <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
+  <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
+  </script>
+</head>
+```
