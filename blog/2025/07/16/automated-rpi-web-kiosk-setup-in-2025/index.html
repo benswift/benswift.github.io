@@ -7,23 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Search benswift.me | benswift.me</title>
+<title>Automated RPi Web Kiosk Setup in 2025 | benswift.me</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Search benswift.me" />
+<meta property="og:title" content="Automated RPi Web Kiosk Setup in 2025" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="livecoder &amp; researcher homepage - code, creativity, culture" />
-<meta property="og:description" content="livecoder &amp; researcher homepage - code, creativity, culture" />
-<link rel="canonical" href="https://benswift.me/search/" />
-<meta property="og:url" content="https://benswift.me/search/" />
+<meta name="description" content="As part of a recent art installation I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen Chromium “kiosks” with a pre-set URL (network connected, but with no keyboard/mouse)." />
+<meta property="og:description" content="As part of a recent art installation I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen Chromium “kiosks” with a pre-set URL (network connected, but with no keyboard/mouse)." />
+<link rel="canonical" href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" />
+<meta property="og:url" content="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" />
 <meta property="og:site_name" content="benswift.me" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-16T00:00:00+10:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Search benswift.me" />
+<meta property="twitter:title" content="Automated RPi Web Kiosk Setup in 2025" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ben Swift"},"description":"livecoder &amp; researcher homepage - code, creativity, culture","headline":"Search benswift.me","url":"https://benswift.me/search/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2025-07-16T00:00:00+10:00","datePublished":"2025-07-16T00:00:00+10:00","description":"As part of a recent art installation I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen Chromium “kiosks” with a pre-set URL (network connected, but with no keyboard/mouse).","headline":"Automated RPi Web Kiosk Setup in 2025","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"},"url":"https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -47,7 +48,7 @@
 	
 	
 
-	<a href="/blog/index.html">blog</a>
+	<a class="current" href="/blog/index.html">blog</a>
 	<a href="/research/">research</a>
 	<a href="/teaching/">teaching</a>
 	<a href="/livecoding/index.html">livecoding</a>
@@ -67,30 +68,76 @@
 </header>
 
 	  <main aria-label="Content">
-		<article><h1>Search benswift.me</h1><iframe src="https://duckduckgo.com/search.html?site=benswift.me&amp;prefill=Search benswift.me on DDG" style="overflow:hidden;margin:0;padding:0;width:100%;height:2rem;" frameborder="0"></iframe>
+		<article>
+  <p class="post-date">16 Jul '25</p>
+  <h1>Automated RPi Web Kiosk Setup in 2025</h1>
+<p class="post-tag-container">
+  
+  <a class="post-tag" href='/blog/tag/tools'>
+	tools
+  </a>
+  
+</p>
 
-<p>This search box will take you to a <a href="https://duckduckgo.com/">DuckDuckGo</a><sup id="fnref:ddg" role="doc-noteref"><a href="#fn:ddg" class="footnote" rel="footnote">1</a></sup>
-page with the results of your search, but limited to the pages on
-<a href="https://benswift.me">https://benswift.me</a> (it does this by adding “site:benswift.me” to the end of
-your query). If you want to come back to this page, you can use your browser’s
-back button.</p>
 
-<p>Alternately, if you want to use Google search to do the same thing (the results
-will be pretty much the same) you can use the same “site:benswift.me” trick <a href="https://www.google.com/search?q=site%3Abenswift.me">on
-Google</a>.</p>
+  <p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
+I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen
+Chromium “kiosks” with a pre-set URL (network connected, but with no
+keyboard/mouse).</p>
 
+<p>They’ve all needed slightly different kiosk URLs, and I <em>hate</em> doing this sort
+of busy-work by hand, so I’ve spent much longer than I’d like to admit<sup id="fnref:time" role="doc-noteref"><a href="#fn:time" class="footnote" rel="footnote">1</a></sup>
+putting together a fully scripted burn-and-boot process. My non-negotiables
+were:</p>
+
+<ul>
+  <li>script needs to run on macOS (since my MBP is the only computer I have with an
+SD card reader/writer)</li>
+  <li>once the SD card is put into an rpi and plugged in, everything should be
+automatic (join network, install and configure software and OS)</li>
+  <li>I need a way to remotely access the rpis once “in the field” (in particular,
+sometimes I need to change their kiosk URL)</li>
+</ul>
+
+<p>I <em>thought</em> that this would be a pretty common thing that others would have done
+(rpis are cheap and seem like a good fit for this type of “web browser as
+installation display” thing). But I kept running into dead ends.</p>
+
+<p>I finally got it fully working with <a href="https://dietpi.com/">DietPi</a> as the OS and
+<a href="https://www.hjdskes.nl/projects/cage/">Cage/Wayland</a> as the compositor. To save
+you the trouble, dear reader, I’ve packaged it all up into a script (which works
+as of the date of this post—July 2025) and put it
+<a href="https://github.com/ANUcybernetics/panic/tree/main/rpi">here</a>. From that
+folder’s <code>README.md</code>:</p>
+
+<blockquote>
+  <p>This directory contains a script to set up Raspberry Pi 5 devices as browser
+kiosks that boot directly into fullscreen Chromium displaying a specified URL.</p>
+
+  <p>The <code>pi-setup.sh</code> script creates a fully automated
+<a href="https://dietpi.com">DietPi</a> installation that:</p>
+
+  <ul>
+    <li>boots directly into GPU-accelerated kiosk mode using Cage Wayland compositor</li>
+    <li>automatically joins your Tailscale network</li>
+    <li>supports native display resolutions including 4K at 60Hz</li>
+    <li>configures WiFi (WPA2 and enterprise 802.1X)</li>
+    <li>includes HDMI audio support and <code>kiosk-set-url</code> utility for easy URL changes</li>
+    <li>optimized specifically for Raspberry Pi 5 with 8GB RAM</li>
+  </ul>
+</blockquote>
+
+<p>I hope this savees you some time. Use it to hug your loved ones.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:ddg" role="doc-endnote">
-
-      <p><a href="https://duckduckgo.com/">DuckDuckGo</a> is a web search engine, just like
-<a href="https://www.google.com/">Google</a> or
-<a href="https://en.wikipedia.org/wiki/AltaVista">AltaVista</a>. <a href="#fnref:ddg" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    <li id="fn:time" role="doc-endnote">
+      <p>I though it’d take a day, it’s taken about a week, on and off :( <a href="#fnref:time" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
 </article>
+
 
 	  </main>
 	  <footer>
@@ -152,11 +199,11 @@ Google</a>.</p>
   <p>
     site revision <code>47ded08b2</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/47ded08b2/search.md"
+      href="https://github.com/benswift/benswift.github.io/blob/47ded08b2/_posts/2025-07-16-automated-rpi-web-kiosk-setup-in-2025.md"
       >source</a
     >,
     <a
-      href="https://github.com/benswift/benswift.github.io/commits/source/search.md"
+      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2025-07-16-automated-rpi-web-kiosk-setup-in-2025.md"
       >page history</a
     >
     on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)

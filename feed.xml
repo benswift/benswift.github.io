@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-07T14:43:56+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">DIYChatGPT Short Course for ANU Undergraduates</title><link href="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/" rel="alternate" type="text/html" title="DIYChatGPT Short Course for ANU Undergraduates" /><published>2025-07-07T00:00:00+10:00</published><updated>2025-07-07T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates</id><content type="html" xml:base="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/"><![CDATA[<p>If you’re an ANU undergraduate student you can enrol in an upcoming (next week!)
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-16T14:25:17+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Automated RPi Web Kiosk Setup in 2025</title><link href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" rel="alternate" type="text/html" title="Automated RPi Web Kiosk Setup in 2025" /><published>2025-07-16T00:00:00+10:00</published><updated>2025-07-16T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025</id><content type="html" xml:base="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"><![CDATA[<p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
+I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen
+Chromium “kiosks” with a pre-set URL (network connected, but with no
+keyboard/mouse).</p>
+
+<p>They’ve all needed slightly different kiosk URLs, and I <em>hate</em> doing this sort
+of busy-work by hand, so I’ve spent much longer than I’d like to admit<sup id="fnref:time" role="doc-noteref"><a href="#fn:time" class="footnote" rel="footnote">1</a></sup>
+putting together a fully scripted burn-and-boot process. My non-negotiables
+were:</p>
+
+<ul>
+  <li>script needs to run on macOS (since my MBP is the only computer I have with an
+SD card reader/writer)</li>
+  <li>once the SD card is put into an rpi and plugged in, everything should be
+automatic (join network, install and configure software and OS)</li>
+  <li>I need a way to remotely access the rpis once “in the field” (in particular,
+sometimes I need to change their kiosk URL)</li>
+</ul>
+
+<p>I <em>thought</em> that this would be a pretty common thing that others would have done
+(rpis are cheap and seem like a good fit for this type of “web browser as
+installation display” thing). But I kept running into dead ends.</p>
+
+<p>I finally got it fully working with <a href="https://dietpi.com/">DietPi</a> as the OS and
+<a href="https://www.hjdskes.nl/projects/cage/">Cage/Wayland</a> as the compositor. To save
+you the trouble, dear reader, I’ve packaged it all up into a script (which works
+as of the date of this post—July 2025) and put it
+<a href="https://github.com/ANUcybernetics/panic/tree/main/rpi">here</a>. From that
+folder’s <code>README.md</code>:</p>
+
+<blockquote>
+  <p>This directory contains a script to set up Raspberry Pi 5 devices as browser
+kiosks that boot directly into fullscreen Chromium displaying a specified URL.</p>
+
+  <p>The <code>pi-setup.sh</code> script creates a fully automated
+<a href="https://dietpi.com">DietPi</a> installation that:</p>
+
+  <ul>
+    <li>boots directly into GPU-accelerated kiosk mode using Cage Wayland compositor</li>
+    <li>automatically joins your Tailscale network</li>
+    <li>supports native display resolutions including 4K at 60Hz</li>
+    <li>configures WiFi (WPA2 and enterprise 802.1X)</li>
+    <li>includes HDMI audio support and <code>kiosk-set-url</code> utility for easy URL changes</li>
+    <li>optimized specifically for Raspberry Pi 5 with 8GB RAM</li>
+  </ul>
+</blockquote>
+
+<p>I hope this savees you some time. Use it to hug your loved ones.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:time" role="doc-endnote">
+      <p>I though it’d take a day, it’s taken about a week, on and off :( <a href="#fnref:time" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[As part of a recent art installation I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen Chromium “kiosks” with a pre-set URL (network connected, but with no keyboard/mouse).]]></summary></entry><entry><title type="html">DIYChatGPT Short Course for ANU Undergraduates</title><link href="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/" rel="alternate" type="text/html" title="DIYChatGPT Short Course for ANU Undergraduates" /><published>2025-07-07T00:00:00+10:00</published><updated>2025-07-07T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates</id><content type="html" xml:base="https://benswift.me/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates/"><![CDATA[<p>If you’re an ANU undergraduate student you can enrol in an upcoming (next week!)
 <a href="https://mccuskerinstitute.anu.edu.au/study/knots/diy-chatgpt-llms-as-information-processing-machines/">upcoming 3hr course</a>
 I’ve created called <em>DIY ChatGPT: LLMs as Information Processing Machines</em>. It’s
 running for the first time <strong>next Thursday 17 July 10am–1pm</strong> (although it will
@@ -571,45 +625,4 @@ proof—it was an unsolved research problem until 2005. The proof for that one
 is almost certainly wrong, but that would only be obvious to someone with
 considerable expertise in the domain (graph theory). Such is the way of LLMs.</p>
 
-<p>What does it all mean? I dunno. It’s gonna be a wild decade.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="teaching" /><summary type="html"><![CDATA[Posting logs of ChatGPT interaction is getting a bit passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I was hanging out with my father-in-law and showing how it might impact his classes—he’s Associate Chair of the Mathematics Department at a top uni in China.]]></summary></entry><entry><title type="html">Jekyll build speedups for Ruby 3.2</title><link href="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/" rel="alternate" type="text/html" title="Jekyll build speedups for Ruby 3.2" /><published>2023-02-02T00:00:00+11:00</published><updated>2023-02-02T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2</id><content type="html" xml:base="https://benswift.me/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2/"><![CDATA[<p>There’s a <a href="https://news.ycombinator.com/item?id=34413012">bunch of buzz</a> about
-Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll
-websites for work, some of which are getting into “non-trivial build time”
-territory (or maybe I’m really easily distracted, but a 30s build is enough for
-me to break my flow).</p>
-
-<p>Here’s some very unscientifc benchmarks from my <a href="https://jekyllrb.com">Jekyll</a>
-(v4.3) builds on my M1 Max MBP (64GB).</p>
-
-<h2 id="ruby-312p20-2022-04-12-revision-4491bb740a-arm64-darwin21">ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [arm64-darwin21]</h2>
-
-<p>First, this is the previous version of Ruby, which I’ve been happily working
-with for ages.</p>
-
-<pre><code>bundle exec jekyll build
-</code></pre>
-
-<p>Averaged over 3 runs, the build time was 17.7 (±0.8) seconds.</p>
-
-<h2 id="ruby-320-2022-12-25-revision-a528908271-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]</h2>
-
-<p>After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2 (±0.2) seconds.</p>
-
-<h2 id="ruby-320-2022-12-25-revision-a528908271-yjit-arm64-darwin22">ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [arm64-darwin22]</h2>
-
-<p>I <a href="https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82">followed these
-instructions</a> to
-build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:</p>
-
-<pre><code>RUBY_YJIT_ENABLE=true bundle exec jekyll build
-</code></pre>
-
-<p>The build was <em>heaps</em> faster—the average over 3 runs was 3.7 (±0.2) seconds.
-<strong>That’s a 4.8x speedup</strong>.</p>
-
-<p>Obviously, like all benchmarks on the internet this one is wrong &amp; stupid and
-you should do your own testing. Three runs probably isn’t enough to shake out
-any cache effects, and I don’t know (but could guess?) that the JIT might have
-even more pronounced cold start issues (although I didn’t really see it above).
-Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
-can save yourself a bunch of time, and tighten those feedback loops to stay in
-the flow state. Have fun!</p>]]></content><author><name>Ben Swift</name></author><category term="web" /><category term="tools" /><summary type="html"><![CDATA[There’s a bunch of buzz about Ruby’s new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll websites for work, some of which are getting into “non-trivial build time” territory (or maybe I’m really easily distracted, but a 30s build is enough for me to break my flow).]]></summary></entry></feed>
+<p>What does it all mean? I dunno. It’s gonna be a wild decade.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="teaching" /><summary type="html"><![CDATA[Posting logs of ChatGPT interaction is getting a bit passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I was hanging out with my father-in-law and showing how it might impact his classes—he’s Associate Chair of the Mathematics Department at a top uni in China.]]></summary></entry></feed>
