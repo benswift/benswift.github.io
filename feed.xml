@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-17T17:04:32+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Agentic AI: LLMs with stones</title><link href="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/" rel="alternate" type="text/html" title="Agentic AI: LLMs with stones" /><published>2025-07-17T00:00:00+10:00</published><updated>2025-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones</id><content type="html" xml:base="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-17T21:56:16+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Agentic AI: LLMs with stones</title><link href="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/" rel="alternate" type="text/html" title="Agentic AI: LLMs with stones" /><published>2025-07-17T00:00:00+10:00</published><updated>2025-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones</id><content type="html" xml:base="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/"><![CDATA[<blockquote>
   <p>Sticks and stones may break my bones, but words will never hurt me.</p>
 </blockquote>
 
@@ -11,7 +11,7 @@ produce <strong>more words</strong> in response.</p>
 
 <p>Working as I do as an
 <a href="https://cybernetics.anu.edu.au/people/ben-swift/">academic computer scientist</a>
-(with a research background in AI) who regularly runs “executive education”
+(with a research background in AI) who regularly runs executive education
 courses on AI for a diverse range of educated and intelligent folks, I’m getting
 more and more questions about “agentic AI”. And while definitions and
 descriptions change pretty quick in this field at the moment, I want to
@@ -19,62 +19,85 @@ demistify some things about this term in particular.</p>
 
 <p>Agentic AI (as concieved and talked about in this present moment) is about
 connecting LLMs—“pure” input/output text sausage machines—to the world with
-<strong>tools</strong>. To return to the “sticks and stones” aphorism above; Agentic AI is an
-an LLM holding a stone. Because while OpenAI introduced “function calling” to
-GPT models in
-<a href="https://openai.com/index/function-calling-and-other-api-updates/">June 2023</a>,
-it wasn’t until late 2024 that the term “agentic” really took off—coinciding
-with Anthropic’s release of their
-<a href="https://www.anthropic.com/news/3-5-models-and-computer-use">computer use capabilities</a>
-and a general industry shift toward thinking of LLMs as autonomous actors rather
-than just conversational partners.</p>
-
-<p>From a cybernetic perspective, this isn’t quite as big a change as you might
-think. Because even the original ChatGPT could “do stuff in the world” by
-telling <em>you</em> (the human user) to do it. Sometimes that was as benign as having
-you copying text into an email—and we’d still casually refer to this as
-“answering email with ChatGPT”, but actually all ChatGPT was doing was giving
-you <strong>words</strong> to type into your email client and send out. Sometimes those words
-told us to do more life-impacting things, like
-<a href="https://www.vice.com/en/article/we-asked-chatgpt-how-to-break-up-with-someone/">break up with your partner</a>,
-or worse. So whenever LLMs are used by humans they have the (indirect) ability
-to affect the world.</p>
-
-<p>The change with agentic AI is that the LLMs are provided access to specific
-tools which they can use do stuff beyond just returning words in a text box on a
-web page. In the last couple of years there have been a proliferation of tools
-(particularly using a standard interface called the
-<a href="https://modelcontextprotocol.io/introduction">Model Context Protocol</a>). Some
-classic examples of tools are “search the web”, “add/remove meetings from my
-calendar”. There are domain-specialised tools depending on what you’re doing
-with the LLM too—software developers in particular have found ways to use
-tools to help them write code. There have been many recent blog posts of various
-developers describing how they set up their agentic AI (tool-calling LLM)
-systems—from
-<a href="https://simonwillison.net/2025/Apr/19/claude-code-best-practices/">Simon Willison’s explorations</a>
-to
-<a href="https://fly.io/blog/youre-all-nuts/">Thomas Ptacek’s “My AI Skeptic Friends Are All Nuts”</a>
-to countless HackerNews threads debating whether this is all just hype.</p>
+<strong>tools</strong>. These tools they can use do stuff beyond just returning words in a
+text box on a web page. To return to the “sticks and stones” aphorism above:
+agentic AI means giving an LLM a stone.</p>
 
 <p>Here’s how it works in practice:</p>
 
 <ul>
   <li>you put in a prompt as normal which is sent to the LLM</li>
   <li>in addition to that prompt, though, the LLM is sent a list of tools that you
-have (including human-readable descriptions of what they can do)</li>
-  <li>instead of only being able to respond with text, the LLM can respond with a
-“tool call” instruction; e.g. it can say “add a meeting to the calendar at
-10am tomorrow using the <code>calendar</code> tool”</li>
-  <li>in the latter case, the user doesn’t need to do anything; the system will use
-the tool as requested by the LLM and return the results (usually the fact that
-this is happening is communicated to the user via some sort of visual feedback
-in the interface, although this isn’t a requirement)</li>
+have access to (including human-readable descriptions of what they can do),
+for example:
+    <ul>
+      <li><code>calendar</code>: add, update, or delete events in your calendar</li>
+      <li><code>weather</code>: check the weather forecast for a given location</li>
+      <li><code>fire-ze-missiles</code>: launch a missile at a target location</li>
+    </ul>
+  </li>
+  <li>instead of only being able to respond with text, the LLM can
+respond<sup id="fnref:tool-call-llm" role="doc-noteref"><a href="#fn:tool-call-llm" class="footnote" rel="footnote">1</a></sup> with a “tool call” instruction, to continue the
+example:
+    <ul>
+      <li>use tool <code>calendar</code> to “add a meeting with John at 10am tomorrow”</li>
+      <li>use tool <code>weather</code> to “check the weather forecast for Sydney next Tuesday”</li>
+      <li>use tool <code>fire-ze-missiles</code> to “launch a missile at coordinates 40.7128,
+-74.0060” . it can say “add a meeting to the calendar at 10am tomorrow using
+the <code>calendar</code> tool”</li>
+    </ul>
+  </li>
 </ul>
 
-<h2 id="implications">Implications</h2>
+<p>If the LLM requests a tool call, the user doesn’t need to do anything; the
+system will use the tool as requested by the LLM and return the results (usually
+the fact that this is happening is communicated to the user via some sort of
+visual feedback in the interface, although this isn’t a requirement).</p>
+
+<p>Vocab-wise, this all started with OpenAI introducing “function calling” to GPT
+models in
+<a href="https://openai.com/index/function-calling-and-other-api-updates/">June 2023</a>.
+However it wasn’t until late 2024 that the term “agentic” really took off,
+coinciding with Anthropic’s release of the
+<a href="https://www.anthropic.com/news/model-context-protocol">Model Context Protocol</a>,
+a standardised and interoperable way for other parties (not just the LLM
+providers) to create tools which all LLMs could use. That term is just riffing
+on the “agency” sense of the world, where LLMs are given the means of acting in
+the world. But agentic AI, tools, and tool/function-calling LLMs—it’s all the
+same general idea.</p>
+
+<p>In the last couple of years there have been a proliferation of such tools. Some
+of them are really general, e.g. “search the web for …”. Some of them might be
+really specific to your company, e.g. a tool that maps names to phone numbers in
+your company’s database. In this case they’re useful because they’re <em>not</em>
+LLM-powered (and so they don’t just make stuff up if they don’t know the
+answer).</p>
+
+<p>Software developers (including me) in particular have found ways to use tools to
+help them write code. There have been many recent blog posts of various
+developers describing how they set up their agentic AI (tool-calling LLM)
+systems—from
+<a href="https://www.philschmid.de/context-engineering">Phil Schmid’s “Context Engineering”</a>
+to
+<a href="https://fly.io/blog/youre-all-nuts/">Thomas Ptacek’s “My AI Skeptic Friends Are All Nuts”</a>
+to countless Hacker News threads debating whether this is all just hype.</p>
+
+<h2 id="so-is-this-a-big-deal">So is this a big deal?</h2>
+
+<p>From a cybernetic perspective, this isn’t quite as big a change as you might
+think. Because even the original ChatGPT could “do stuff in the world” by
+telling <em>you</em> (the human user) to do it. Sometimes that was as benign as having
+you copying text into an email. We’d still colloquially refer to this as
+“answering my emails with ChatGPT”, but actually all ChatGPT was doing was
+giving you <strong>words</strong> to type into your email client and hit “send”. Sometimes
+the LLM’s words told us to do more life-impacting things, like
+<a href="https://www.vice.com/en/article/we-asked-chatgpt-how-to-break-up-with-someone/">break up with your partner</a>,
+or worse. Whenever LLMs are used by humans they have the (indirect) ability to
+affect the world.</p>
 
 <p>In my opinion the best way to think about this shift isn’t that LLMs can now
-influence the world; it’s that now they can do it without asking. This means:</p>
+influence the world; it’s that now they can do it without asking—and this
+tightens the feedback loop. This means:</p>
 
 <ol>
   <li>first, there’s now no longer a human in the loop (so now there’s no human to
@@ -92,10 +115,22 @@ bottleneck in any LLM system (time-wise, at least). But by gaining the former
 capability, agentic AI removes the latter bottleneck.</p>
 
 <p>So if you’re going to allow your LLMs to use tools, you <strong>must</strong> be certain that
-a) you’re comfortable with what things the LLM can do with them (both in theory,
+you’re comfortable with what things the LLM can do with them. Both in theory,
 i.e. in the sense of what’s possible, but also in practice, i.e. through testing
 the way that your particular LLM tends to use your tools given specific prompts
-or other context).</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[Sticks and stones may break my bones, but words will never hurt me.]]></summary></entry><entry><title type="html">Automated RPi Web Kiosk Setup in 2025</title><link href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" rel="alternate" type="text/html" title="Automated RPi Web Kiosk Setup in 2025" /><published>2025-07-16T00:00:00+10:00</published><updated>2025-07-16T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025</id><content type="html" xml:base="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"><![CDATA[<p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
+or other context. How exactly you do that is a topic for another blog post (just
+kidding, it’s a much bigger question than that that depends on a whole bunch of
+things). But I think that’s the right question to be asking when it comes to
+agentic AI.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:tool-call-llm" role="doc-endnote">
+
+      <p>The LLM needs to be specially trained to support this, but all of the main
+ones do these days. <a href="#fnref:tool-call-llm" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[Sticks and stones may break my bones, but words will never hurt me.]]></summary></entry><entry><title type="html">Automated RPi Web Kiosk Setup in 2025</title><link href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" rel="alternate" type="text/html" title="Automated RPi Web Kiosk Setup in 2025" /><published>2025-07-16T00:00:00+10:00</published><updated>2025-07-16T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025</id><content type="html" xml:base="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"><![CDATA[<p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
 I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen
 Chromium “kiosks” with a pre-set URL (network connected, but with no
 keyboard/mouse).</p>
