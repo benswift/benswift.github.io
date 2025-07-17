@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-16T14:30:54+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Automated RPi Web Kiosk Setup in 2025</title><link href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" rel="alternate" type="text/html" title="Automated RPi Web Kiosk Setup in 2025" /><published>2025-07-16T00:00:00+10:00</published><updated>2025-07-16T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025</id><content type="html" xml:base="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"><![CDATA[<p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-17T17:04:32+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Agentic AI: LLMs with stones</title><link href="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/" rel="alternate" type="text/html" title="Agentic AI: LLMs with stones" /><published>2025-07-17T00:00:00+10:00</published><updated>2025-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones</id><content type="html" xml:base="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/"><![CDATA[<blockquote>
+  <p>Sticks and stones may break my bones, but words will never hurt me.</p>
+</blockquote>
+
+<p>There’s a truth to that proverb, even if you feel (as I do) the temptation to
+“well akshually…” make several very valid points about how words <em>can</em> be
+hurtful. For most of the Large Language Model (LLM) era—since the public
+release of ChatGPT in November 2022—we’ve been in turns amazed, disgusted and
+now kindof “meh” about the way that LLMs can take the <strong>words</strong> we give them and
+produce <strong>more words</strong> in response.</p>
+
+<p>Working as I do as an
+<a href="https://cybernetics.anu.edu.au/people/ben-swift/">academic computer scientist</a>
+(with a research background in AI) who regularly runs “executive education”
+courses on AI for a diverse range of educated and intelligent folks, I’m getting
+more and more questions about “agentic AI”. And while definitions and
+descriptions change pretty quick in this field at the moment, I want to
+demistify some things about this term in particular.</p>
+
+<p>Agentic AI (as concieved and talked about in this present moment) is about
+connecting LLMs—“pure” input/output text sausage machines—to the world with
+<strong>tools</strong>. To return to the “sticks and stones” aphorism above; Agentic AI is an
+an LLM holding a stone. Because while OpenAI introduced “function calling” to
+GPT models in
+<a href="https://openai.com/index/function-calling-and-other-api-updates/">June 2023</a>,
+it wasn’t until late 2024 that the term “agentic” really took off—coinciding
+with Anthropic’s release of their
+<a href="https://www.anthropic.com/news/3-5-models-and-computer-use">computer use capabilities</a>
+and a general industry shift toward thinking of LLMs as autonomous actors rather
+than just conversational partners.</p>
+
+<p>From a cybernetic perspective, this isn’t quite as big a change as you might
+think. Because even the original ChatGPT could “do stuff in the world” by
+telling <em>you</em> (the human user) to do it. Sometimes that was as benign as having
+you copying text into an email—and we’d still casually refer to this as
+“answering email with ChatGPT”, but actually all ChatGPT was doing was giving
+you <strong>words</strong> to type into your email client and send out. Sometimes those words
+told us to do more life-impacting things, like
+<a href="https://www.vice.com/en/article/we-asked-chatgpt-how-to-break-up-with-someone/">break up with your partner</a>,
+or worse. So whenever LLMs are used by humans they have the (indirect) ability
+to affect the world.</p>
+
+<p>The change with agentic AI is that the LLMs are provided access to specific
+tools which they can use do stuff beyond just returning words in a text box on a
+web page. In the last couple of years there have been a proliferation of tools
+(particularly using a standard interface called the
+<a href="https://modelcontextprotocol.io/introduction">Model Context Protocol</a>). Some
+classic examples of tools are “search the web”, “add/remove meetings from my
+calendar”. There are domain-specialised tools depending on what you’re doing
+with the LLM too—software developers in particular have found ways to use
+tools to help them write code. There have been many recent blog posts of various
+developers describing how they set up their agentic AI (tool-calling LLM)
+systems—from
+<a href="https://simonwillison.net/2025/Apr/19/claude-code-best-practices/">Simon Willison’s explorations</a>
+to
+<a href="https://fly.io/blog/youre-all-nuts/">Thomas Ptacek’s “My AI Skeptic Friends Are All Nuts”</a>
+to countless HackerNews threads debating whether this is all just hype.</p>
+
+<p>Here’s how it works in practice:</p>
+
+<ul>
+  <li>you put in a prompt as normal which is sent to the LLM</li>
+  <li>in addition to that prompt, though, the LLM is sent a list of tools that you
+have (including human-readable descriptions of what they can do)</li>
+  <li>instead of only being able to respond with text, the LLM can respond with a
+“tool call” instruction; e.g. it can say “add a meeting to the calendar at
+10am tomorrow using the <code>calendar</code> tool”</li>
+  <li>in the latter case, the user doesn’t need to do anything; the system will use
+the tool as requested by the LLM and return the results (usually the fact that
+this is happening is communicated to the user via some sort of visual feedback
+in the interface, although this isn’t a requirement)</li>
+</ul>
+
+<h2 id="implications">Implications</h2>
+
+<p>In my opinion the best way to think about this shift isn’t that LLMs can now
+influence the world; it’s that now they can do it without asking. This means:</p>
+
+<ol>
+  <li>first, there’s now no longer a human in the loop (so now there’s no human to
+say “hey, that’s a dumb idea” and refuse to do it)</li>
+  <li>as a consequence of #1, LLMs can now run/iterate without intervention for
+much longer (minutes, maybe even hours…)</li>
+</ol>
+
+<p>The second point is the bigger deal (and it’s a point that Anthropic, the makers
+of the Claude LLM which is one of the big players these days, makes in their
+<a href="https://www.anthropic.com/engineering/building-effective-agents">recent whitepaper about agentic AI</a>).</p>
+
+<p>Humans were always a) able to do things in the environment, and b) the
+bottleneck in any LLM system (time-wise, at least). But by gaining the former
+capability, agentic AI removes the latter bottleneck.</p>
+
+<p>So if you’re going to allow your LLMs to use tools, you <strong>must</strong> be certain that
+a) you’re comfortable with what things the LLM can do with them (both in theory,
+i.e. in the sense of what’s possible, but also in practice, i.e. through testing
+the way that your particular LLM tends to use your tools given specific prompts
+or other context).</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[Sticks and stones may break my bones, but words will never hurt me.]]></summary></entry><entry><title type="html">Automated RPi Web Kiosk Setup in 2025</title><link href="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/" rel="alternate" type="text/html" title="Automated RPi Web Kiosk Setup in 2025" /><published>2025-07-16T00:00:00+10:00</published><updated>2025-07-16T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025</id><content type="html" xml:base="https://benswift.me/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025/"><![CDATA[<p>As part of a <a href="https://github.com/anucybernetics/panic">recent art installation</a>
 I’ve needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen
 Chromium “kiosks” with a pre-set URL (network connected, but with no
 keyboard/mouse).</p>
@@ -475,154 +572,4 @@ Learning in Sign Language Understanding</em>. It’s freelly available online fr
 alone, under lockdown. Really tough circumstances and a credit to you Chenchen
 for coming out the other side.</p>]]></content><author><name>Ben Swift</name></author><category term="research" /><category term="ai" /><summary type="html"><![CDATA[A big congratulations do my PhD student Chenchen for successfully completing his PhD; his thesis title was Weakly Supervised Vision and Language Representation Learning in Sign Language Understanding. It’s freelly available online from the ANU Library.]]></summary></entry><entry><title type="html">Parental leave take 3</title><link href="https://benswift.me/blog/2023/05/13/parental-leave-take-3/" rel="alternate" type="text/html" title="Parental leave take 3" /><published>2023-05-13T00:00:00+10:00</published><updated>2023-05-13T00:00:00+10:00</updated><id>https://benswift.me/blog/2023/05/13/parental-leave-take-3</id><content type="html" xml:base="https://benswift.me/blog/2023/05/13/parental-leave-take-3/"><![CDATA[<p>Apologies for the radio silence over the last couple of months. I have the happy
 opportunity to take one more round of parental leave. So I’ll be off doing Dad
-stuff until March ‘24.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[Apologies for the radio silence over the last couple of months. I have the happy opportunity to take one more round of parental leave. So I’ll be off doing Dad stuff until March ‘24.]]></summary></entry><entry><title type="html">Writing graph theory proofs with ChatGPT</title><link href="https://benswift.me/blog/2023/02/08/writing-graph-theory-proofs-with-chatgpt/" rel="alternate" type="text/html" title="Writing graph theory proofs with ChatGPT" /><published>2023-02-08T00:00:00+11:00</published><updated>2023-02-08T00:00:00+11:00</updated><id>https://benswift.me/blog/2023/02/08/writing-graph-theory-proofs-with-chatgpt</id><content type="html" xml:base="https://benswift.me/blog/2023/02/08/writing-graph-theory-proofs-with-chatgpt/"><![CDATA[<p>Posting logs of <a href="https://chat.openai.com">ChatGPT</a> interaction is getting a bit
-passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I
-was hanging out with my father-in-law and showing how it might impact his
-classes—he’s Associate Chair of the Mathematics Department at a top uni in
-China.</p>
-
-<p>The prompts were his (with a bit of light suggesting from me), responses from
-ChatGPT.</p>
-
-<p><strong>Write a proof of of Pythagoras’s theorem.</strong></p>
-
-<p>Pythagoras’s theorem states that in a right triangle, the square of the length
-of the hypotenuse (the side opposite the right angle) is equal to the sum of the
-squares of the lengths of the other two sides. Symbolically, this can be written
-as:</p>
-
-<p>c^2 = a^2 + b^2</p>
-
-<p>where c is the length of the hypotenuse, and a and b are the lengths of the
-other two sides.</p>
-
-<p>Proof:</p>
-
-<p>Draw a right triangle ABC with sides AB (a), BC (b), and AC (c).</p>
-
-<p>Draw squares with sides AB, BC, and AC on each side of the triangle, as shown
-below:</p>
-
-<p>[Diagram of a right triangle with squares on each side]</p>
-
-<p>The area of each of the squares is equal to the square of the length of its
-side. Hence:</p>
-
-<p>a^2 = AB x AB = area of square with side AB</p>
-
-<p>b^2 = BC x BC = area of square with side BC</p>
-
-<p>c^2 = AC x AC = area of square with side AC</p>
-
-<p>Consider the combined area of the squares on the two smaller sides (a and b). It
-can also be obtained by covering the entire triangle with a larger square and
-then subtracting the area of the square on the hypotenuse (c). Hence:</p>
-
-<p>a^2 + b^2 = (AB + BC) x (AB + BC) - AC x AC</p>
-
-<p>On the right-hand side of the equation, (AB + BC) is equal to the length of the
-hypotenuse (c**, since it is the longest side in a right triangle. Hence:</p>
-
-<p>a^2 + b^2 = c x c - c x c</p>
-
-<p>Simplifying the right-hand side of the equation, we obtain:</p>
-
-<p>a^2 + b^2 = c x c</p>
-
-<p>Hence, we have proved that:</p>
-
-<p>c^2 = a^2 + b^2</p>
-
-<p>This is Pythagoras’s theorem.</p>
-
-<p><strong>Ok, that’s great. Now it’s time for some graph theory. Can you give me a proof
-of the 5-color theorem?</strong></p>
-
-<p>The five color theorem states that any planar graph (a graph that can be drawn
-on a plane without any of its edges crossing) can be colored with no more than
-five colors, such that no two adjacent vertices (vertices connected by an edge)
-have the same color.</p>
-
-<p>Proof:</p>
-
-<p>Consider a planar graph G with a minimum number of vertices, and suppose that it
-cannot be colored with fewer than five colors.</p>
-
-<p>Since G has a minimum number of vertices, there must be a vertex v in G with the
-smallest degree (the number of edges incident to v). Let d be the degree of v.</p>
-
-<p>Since G cannot be colored with fewer than five colors, d must be greater than or
-equal to 4.</p>
-
-<p>Consider the set of vertices adjacent to v, and let S be the set of colors that
-have been used to color these vertices.</p>
-
-<p>Since the degree of v is greater than or equal to 4, the number of colors in S
-is greater than or equal to 4.</p>
-
-<p>Suppose, S contains all five colors. Then, since each color can be assigned to
-at most one of the vertices adjacent to v, we have a contradiction, as there are
-more vertices than colors.</p>
-
-<p>Hence, there must be a color not in S. Call this color c.</p>
-
-<p>Color vertex v with color c. Since no two adjacent vertices have the same color,
-it follows that G can be colored with no more than five colors.</p>
-
-<p>This proves the five color theorem: any planar graph can be colored with no more
-than five colors, such that no two adjacent vertices have the same color.</p>
-
-<p><strong>Ok, can you prove the 4-color theorem as well?</strong></p>
-
-<p>The four color theorem states that any planar graph can be colored with no more
-than four colors, such that no two adjacent vertices have the same color.</p>
-
-<p>Proof:</p>
-
-<p>Consider a planar graph G and let H be a subgraph of G.</p>
-
-<p>We proceed by induction on the number of vertices of H. If H has only one
-vertex, it can be colored with a single color.</p>
-
-<p>Suppose that the statement is true for all subgraphs of G with at most n - 1
-vertices, where n is a positive integer.</p>
-
-<p>Let H be a subgraph of G with n vertices, and let v be a vertex in H with the
-minimum degree.</p>
-
-<p>By the induction hypothesis, all subgraphs of H with fewer than n vertices can
-be colored with at most four colors.</p>
-
-<p>Consider the set of vertices adjacent to v in H, and let S be the set of colors
-used to color these vertices.</p>
-
-<p>If |S| &lt; 4, then we can color vertex v with a color not in S, and H can be
-colored with at most four colors.</p>
-
-<p>Otherwise, |S| = 4. We can color v with any color not in S, and since all
-subgraphs of H with fewer than n vertices can be colored with at most four
-colors, it follows that H can be colored with at most four colors.</p>
-
-<p>Hence, the statement is true for all subgraphs of G with at most n vertices.</p>
-
-<p>Since the statement is true for all positive integers n, it follows that any
-planar graph can be colored with no more than four colors, such that no two
-adjacent vertices have the same color.</p>
-
-<p>This proves the four color theorem: any planar graph can be colored with no more
-than four colors, such that no two adjacent vertices have the same color.</p>
-
-<h2 id="his-response">His response?</h2>
-
-<p>Shock, really. The proof of the <a href="https://en.wikipedia.org/wiki/Five_color_theorem">five colour
-theorem</a> is an assignment he
-might set in one of his early-year undergraduate classes, and the proof given
-certainly looks ok. It might well be wrong (he didn’t look at it in detail) but
-it’s the sort of thing a harried marker would assume was written by a student
-who had some idea of what was going on in class. The <a href="https://en.wikipedia.org/wiki/Four_color_theorem">four colour
-theorem</a> is a much trickier
-proof—it was an unsolved research problem until 2005. The proof for that one
-is almost certainly wrong, but that would only be obvious to someone with
-considerable expertise in the domain (graph theory). Such is the way of LLMs.</p>
-
-<p>What does it all mean? I dunno. It’s gonna be a wild decade.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="teaching" /><summary type="html"><![CDATA[Posting logs of ChatGPT interaction is getting a bit passé by now in Feb ‘23, so I’ll stop doing it soon (I promise). But yesterday I was hanging out with my father-in-law and showing how it might impact his classes—he’s Associate Chair of the Mathematics Department at a top uni in China.]]></summary></entry></feed>
+stuff until March ‘24.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[Apologies for the radio silence over the last couple of months. I have the happy opportunity to take one more round of parental leave. So I’ll be off doing Dad stuff until March ‘24.]]></summary></entry></feed>
