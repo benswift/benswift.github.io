@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-17T21:56:16+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Agentic AI: LLMs with stones</title><link href="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/" rel="alternate" type="text/html" title="Agentic AI: LLMs with stones" /><published>2025-07-17T00:00:00+10:00</published><updated>2025-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones</id><content type="html" xml:base="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-07-23T10:48:24+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Running Claude Code within Zed</title><link href="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/" rel="alternate" type="text/html" title="Running Claude Code within Zed" /><published>2025-07-23T00:00:00+10:00</published><updated>2025-07-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/23/running-claude-code-within-zed</id><content type="html" xml:base="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/"><![CDATA[<p>After several months using Zed’s built-in
+<a href="https://zed.dev/docs/ai/agent-panel">Agent panel</a> I’ve switched to Claude Code.
+The main reason is cost. I’m still using the same models—still primarily
+Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs
+per-token billing via the Anthropic API. I was racking up a lot of costs (around
+100USD/week) even with a <em>bit</em> of restraint, although still using it fairly
+heavily during all work days.</p>
+
+<p>Claude Code allows one to pay a flat-fee subscription (I’m now nearly through my
+first month of <a href="https://www.anthropic.com/max">MAX 20x</a>, so I’m already ahead).
+And it’s <em>really nice</em> to have the flat fee; it does change the way you use the
+agent (and sub-agents).</p>
+
+<p>One downside is that you have to use their
+<a href="https://docs.anthropic.com/en/docs/claude-code/overview"><code>claude</code> CLI tool</a>.
+Since I still want to stay in Zed (even if I can’t use the Agent panel) I’ve
+added a task which gets me pretty close to the same workflow I had before. Add
+this to your zed <code>tasks.json</code>:</p>
+
+<pre><code class="language-json">{
+  "label": "claude",
+  "command": "claude --dangerously-skip-permissions",
+  "reveal": "always",
+  "use_new_terminal": true,
+  "allow_concurrent_runs": false
+}
+</code></pre>
+
+<p>Anectodally, it also seems like Claude Code is a bit more token-efficient than
+using the same models via the Zed Agent panel. And the workflow is really almost
+as good. The only real downside is that you can’t trivially switch
+providers/models like you can when you’re using the Zed Agent panel. But the
+Anthropic models are pretty good, and there’s really not too much lock-in; if
+the pricing landscape changes in the future I’d happily switch to another
+provider.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="zed" /><summary type="html"><![CDATA[After several months using Zed’s built-in Agent panel I’ve switched to Claude Code. The main reason is cost. I’m still using the same models—still primarily Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs per-token billing via the Anthropic API. I was racking up a lot of costs (around 100USD/week) even with a bit of restraint, although still using it fairly heavily during all work days.]]></summary></entry><entry><title type="html">Agentic AI: LLMs with stones</title><link href="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/" rel="alternate" type="text/html" title="Agentic AI: LLMs with stones" /><published>2025-07-17T00:00:00+10:00</published><updated>2025-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones</id><content type="html" xml:base="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/"><![CDATA[<blockquote>
   <p>Sticks and stones may break my bones, but words will never hurt me.</p>
 </blockquote>
 
@@ -605,6 +639,4 @@ Learning in Sign Language Understanding</em>. It’s freelly available online fr
 
 <p>Not only did he do excellent work, but (look at the date!) did a lot of it
 alone, under lockdown. Really tough circumstances and a credit to you Chenchen
-for coming out the other side.</p>]]></content><author><name>Ben Swift</name></author><category term="research" /><category term="ai" /><summary type="html"><![CDATA[A big congratulations do my PhD student Chenchen for successfully completing his PhD; his thesis title was Weakly Supervised Vision and Language Representation Learning in Sign Language Understanding. It’s freelly available online from the ANU Library.]]></summary></entry><entry><title type="html">Parental leave take 3</title><link href="https://benswift.me/blog/2023/05/13/parental-leave-take-3/" rel="alternate" type="text/html" title="Parental leave take 3" /><published>2023-05-13T00:00:00+10:00</published><updated>2023-05-13T00:00:00+10:00</updated><id>https://benswift.me/blog/2023/05/13/parental-leave-take-3</id><content type="html" xml:base="https://benswift.me/blog/2023/05/13/parental-leave-take-3/"><![CDATA[<p>Apologies for the radio silence over the last couple of months. I have the happy
-opportunity to take one more round of parental leave. So I’ll be off doing Dad
-stuff until March ‘24.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[Apologies for the radio silence over the last couple of months. I have the happy opportunity to take one more round of parental leave. So I’ll be off doing Dad stuff until March ‘24.]]></summary></entry></feed>
+for coming out the other side.</p>]]></content><author><name>Ben Swift</name></author><category term="research" /><category term="ai" /><summary type="html"><![CDATA[A big congratulations do my PhD student Chenchen for successfully completing his PhD; his thesis title was Weakly Supervised Vision and Language Representation Learning in Sign Language Understanding. It’s freelly available online from the ANU Library.]]></summary></entry></feed>

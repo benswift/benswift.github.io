@@ -7,24 +7,24 @@
 <meta name="theme-color" content="#be2edd">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>The Mind-Modulated Music Interface | benswift.me</title>
+<title>Running Claude Code within Zed | benswift.me</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="The Mind-Modulated Music Interface" />
+<meta property="og:title" content="Running Claude Code within Zed" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I gave my first ever conference presentation at OzCHI 2007 on the work I did during my honours year. No funky HTML slides for this (I was way less web-savvy back then) but here are some pdf slides. There’s a paper in the references section as well." />
-<meta property="og:description" content="I gave my first ever conference presentation at OzCHI 2007 on the work I did during my honours year. No funky HTML slides for this (I was way less web-savvy back then) but here are some pdf slides. There’s a paper in the references section as well." />
-<link rel="canonical" href="https://benswift.me/talks/ozchi-07/" />
-<meta property="og:url" content="https://benswift.me/talks/ozchi-07/" />
+<meta name="description" content="After several months using Zed’s built-in Agent panel I’ve switched to Claude Code. The main reason is cost. I’m still using the same models—still primarily Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs per-token billing via the Anthropic API. I was racking up a lot of costs (around 100USD/week) even with a bit of restraint, although still using it fairly heavily during all work days." />
+<meta property="og:description" content="After several months using Zed’s built-in Agent panel I’ve switched to Claude Code. The main reason is cost. I’m still using the same models—still primarily Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs per-token billing via the Anthropic API. I was racking up a lot of costs (around 100USD/week) even with a bit of restraint, although still using it fairly heavily during all work days." />
+<link rel="canonical" href="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/" />
+<meta property="og:url" content="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/" />
 <meta property="og:site_name" content="benswift.me" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2007-11-29T00:00:00+11:00" />
+<meta property="article:published_time" content="2025-07-23T00:00:00+10:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="The Mind-Modulated Music Interface" />
+<meta property="twitter:title" content="Running Claude Code within Zed" />
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2007-11-29T00:00:00+11:00","datePublished":"2007-11-29T00:00:00+11:00","description":"I gave my first ever conference presentation at OzCHI 2007 on the work I did during my honours year. No funky HTML slides for this (I was way less web-savvy back then) but here are some pdf slides. There’s a paper in the references section as well.","headline":"The Mind-Modulated Music Interface","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/talks/ozchi-07/"},"url":"https://benswift.me/talks/ozchi-07/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2025-07-23T00:00:00+10:00","datePublished":"2025-07-23T00:00:00+10:00","description":"After several months using Zed’s built-in Agent panel I’ve switched to Claude Code. The main reason is cost. I’m still using the same models—still primarily Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs per-token billing via the Anthropic API. I was racking up a lot of costs (around 100USD/week) even with a bit of restraint, although still using it fairly heavily during all work days.","headline":"Running Claude Code within Zed","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/"},"url":"https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -48,11 +48,11 @@
 	
 	
 
-	<a href="/blog/index.html">blog</a>
+	<a class="current" href="/blog/index.html">blog</a>
 	<a href="/research/">research</a>
 	<a href="/teaching/">teaching</a>
 	<a href="/livecoding/index.html">livecoding</a>
-	<a class="current" href="/talks/index.html">talks</a>
+	<a href="/talks/index.html">talks</a>
 	<a href="/bio/">bio</a>
 
 	<!-- social icons -->
@@ -68,18 +68,60 @@
 </header>
 
 	  <main aria-label="Content">
-		<article><h1>The Mind-Modulated Music Interface</h1><p>I gave my first ever conference presentation at <a href="https://www.ozchi.org/ozchi2007/">OzCHI
-2007</a> on the work I did during my honours year.
-No funky HTML slides for this (I was way less web-savvy back then) but here are
-some pdf slides. There’s a <a href="/research/#swiftMindmodulatedMusicMind2007">paper in the references section</a> as well.</p>
+		<article>
+  <p class="post-date">23 Jul '25</p>
+  <h1>Running Claude Code within Zed</h1>
+<p class="post-tag-container">
+  
+  <a class="post-tag" href='/blog/tag/ai'>
+	ai
+  </a>
+  
+  <a class="post-tag" href='/blog/tag/zed'>
+	zed
+  </a>
+  
+</p>
 
-<p>Sometimes it’s fun to look back and see how far one has come in their research
-skills. Sometimes it’s depressing to see how one has stagnated. I’ll leave it up
-to you to decide which category I’m in 😜</p>
 
-<p><a href="/assets/pdf/ozchi-07.pdf">slides <svg class="icon"><use xlink:href="#fas.fa-file-pdf"></use></svg></a></p>
+  <p>After several months using Zed’s built-in
+<a href="https://zed.dev/docs/ai/agent-panel">Agent panel</a> I’ve switched to Claude Code.
+The main reason is cost. I’m still using the same models—still primarily
+Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs
+per-token billing via the Anthropic API. I was racking up a lot of costs (around
+100USD/week) even with a <em>bit</em> of restraint, although still using it fairly
+heavily during all work days.</p>
+
+<p>Claude Code allows one to pay a flat-fee subscription (I’m now nearly through my
+first month of <a href="https://www.anthropic.com/max">MAX 20x</a>, so I’m already ahead).
+And it’s <em>really nice</em> to have the flat fee; it does change the way you use the
+agent (and sub-agents).</p>
+
+<p>One downside is that you have to use their
+<a href="https://docs.anthropic.com/en/docs/claude-code/overview"><code>claude</code> CLI tool</a>.
+Since I still want to stay in Zed (even if I can’t use the Agent panel) I’ve
+added a task which gets me pretty close to the same workflow I had before. Add
+this to your zed <code>tasks.json</code>:</p>
+
+<pre><code class="language-json">{
+  "label": "claude",
+  "command": "claude --dangerously-skip-permissions",
+  "reveal": "always",
+  "use_new_terminal": true,
+  "allow_concurrent_runs": false
+}
+</code></pre>
+
+<p>Anectodally, it also seems like Claude Code is a bit more token-efficient than
+using the same models via the Zed Agent panel. And the workflow is really almost
+as good. The only real downside is that you can’t trivially switch
+providers/models like you can when you’re using the Zed Agent panel. But the
+Anthropic models are pretty good, and there’s really not too much lock-in; if
+the pricing landscape changes in the future I’d happily switch to another
+provider.</p>
 
 </article>
+
 
 	  </main>
 	  <footer>
@@ -141,11 +183,11 @@ to you to decide which category I’m in 😜</p>
   <p>
     site revision <code>6b85932e0</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/6b85932e0/_talks/ozchi-07.md"
+      href="https://github.com/benswift/benswift.github.io/blob/6b85932e0/_posts/2025-07-23-running-claude-code-within-zed.md"
       >source</a
     >,
     <a
-      href="https://github.com/benswift/benswift.github.io/commits/source/_talks/ozchi-07.md"
+      href="https://github.com/benswift/benswift.github.io/commits/source/_posts/2025-07-23-running-claude-code-within-zed.md"
       >page history</a
     >
     on <svg class="icon"><use xlink:href='#fab.fa-github'></use></svg>)
@@ -186,11 +228,7 @@ to you to decide which category I’m in 😜</p>
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
                   License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
                   -->
-              <symbol id='fas.fa-file-pdf' viewBox='0 0 512 512'>
-            <title>file-pdf</title>
-            <path class='path1' d='M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z'></path>
-        </symbol>
-        <symbol id='fab.fa-github' viewBox='0 0 496 512'>
+              <symbol id='fab.fa-github' viewBox='0 0 496 512'>
             <title>github</title>
             <path class='path1' d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'></path>
         </symbol>
