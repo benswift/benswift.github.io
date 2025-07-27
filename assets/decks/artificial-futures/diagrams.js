@@ -20,6 +20,26 @@ const diagramConfig = {
   font: {
     size: 14,
     family: '"Public Sans", sans-serif'
+  },
+  // Spring animation presets for consistent feel
+  springs: {
+    // Gentle, smooth motion for general transitions
+    gentle: 'spring(1, 100, 10, 0)',
+    
+    // Standard bouncy spring for emphasis
+    bouncy: 'spring(1, 80, 10, 0)',
+    
+    // Quick, snappy response for UI feedback
+    snappy: 'spring(1, 150, 12, 0)',
+    
+    // Playful with more bounce for special effects
+    playful: 'spring(1, 60, 8, 0)',
+    
+    // Smooth with minimal overshoot
+    smooth: 'spring(1, 120, 20, 0)',
+    
+    // Heavy/slow for large group movements
+    heavy: 'spring(1, 50, 15, 0)'
   }
 };
 
@@ -49,7 +69,7 @@ function drawArrow(draw, x1, y1, x2, y2, color = diagramConfig.colors.grey) {
 }
 
 // Main diagram setup for slide 1 (linear flow)
-function setupDiagram1(containerId) {
+function setupLinearFlow(containerId) {
   const container = document.getElementById(containerId);
   const draw = SVG().addTo(container).size('100%', '100%').viewbox(0, 0, diagramConfig.viewWidth, diagramConfig.viewHeight);
   
@@ -113,7 +133,7 @@ function setupDiagram1(containerId) {
 }
 
 // Diagram setup for slide 2 (with embeddings)
-function setupDiagram2(containerId) {
+function setupTextToImageEmbeddings(containerId) {
   const container = document.getElementById(containerId);
   const draw = SVG().addTo(container).size('100%', '100%').viewbox(0, 0, diagramConfig.viewWidth, diagramConfig.viewHeight);
   
@@ -225,7 +245,7 @@ function setupDiagram2(containerId) {
 }
 
 // Animation functions
-function animateDiagram1(diagram) {
+function animateLinearFlow(diagram) {
   const { draw, items, arrows } = diagram;
   const itemDelay = 0.5; // 0.5 second delay between items (2x faster)
   
@@ -263,7 +283,7 @@ function animateDiagram1(diagram) {
             delay: delay,
             repeat: Infinity,
             offset: [0, 0.05, 0.95, 1], // Quick fade in/out at start/end
-            easing: "spring"
+            easing: diagramConfig.springs.bouncy
           }
         );
         
@@ -284,7 +304,7 @@ function animateDiagram1(diagram) {
 }
 
 // Animation for diagram 2 - animates embeddings from behind rectangles down to final position
-function animateDiagram2(diagram) {
+function animateTextToImageEmbeddings(diagram) {
   const { draw, mainGroup, embeddings, embArrows } = diagram;
   const embDuration = 0.6; // 600ms in seconds
   const embDelay = 0.2; // 200ms in seconds
@@ -312,12 +332,12 @@ function animateDiagram2(diagram) {
           Motion.animate(emb.group.node, { opacity: 1 }, { 
             duration: embDuration, 
             delay: startDelay,
-            ease: "ease-in-out" 
+            ease: diagramConfig.springs.gentle 
           }),
           Motion.animate(emb.circle.node, { cy: emb.finalY }, { 
             duration: embDuration, 
             delay: startDelay,
-            ease: "ease-in-out" 
+            ease: diagramConfig.springs.gentle 
           })
         );
       });
@@ -328,7 +348,8 @@ function animateDiagram2(diagram) {
         animations.push(
           Motion.animate(arrow.node, { opacity: 1 }, { 
             duration: embDuration,
-            delay: arrowStartTime + i * embDelay
+            delay: arrowStartTime + i * embDelay,
+            ease: diagramConfig.springs.gentle
           })
         );
       });
@@ -351,7 +372,7 @@ function animateDiagram2(diagram) {
 }
 
 // Diagram setup for slide 3 (100 embeddings)
-function setupDiagram3(containerId) {
+function setupEmbeddingsRow(containerId) {
   const container = document.getElementById(containerId);
   const draw = SVG().addTo(container).size('100%', '100%').viewbox(0, 0, diagramConfig.viewWidth, diagramConfig.viewHeight);
   
@@ -406,7 +427,7 @@ function setupDiagram3(containerId) {
 }
 
 // Animation for diagram 3 - expand to 50 embeddings and reorganize
-function animateDiagram3(diagram) {
+function animateEmbeddingsRow(diagram) {
   const { draw, embeddings, totalEmbeddings, initialRadius, finalRadius, initialY, initialSpacing, finalSpacing } = diagram;
   
   // Store initial absolute positions for all embeddings
@@ -443,7 +464,7 @@ function animateDiagram3(diagram) {
       animations.push(
         Motion.animate(embeddings.slice(4).map(emb => emb.group.node), 
           { opacity: 1 }, 
-          { duration: 1, delay: Motion.stagger(0.01) }
+          { duration: 1, delay: Motion.stagger(0.01), ease: diagramConfig.springs.gentle }
         )
       );
       
@@ -479,7 +500,7 @@ function animateDiagram3(diagram) {
 }
 
 // Diagram setup for slide 4 (10x50 grid of embeddings)
-function setupDiagram4(containerId) {
+function setupEmbeddingsGrid(containerId) {
   const container = document.getElementById(containerId);
   const draw = SVG().addTo(container).size('100%', '100%').viewbox(0, 0, diagramConfig.viewWidth, diagramConfig.viewHeight);
   
@@ -516,7 +537,7 @@ function setupDiagram4(containerId) {
 }
 
 // Animation for diagram 4 - fade in full grid with diagonal stagger
-function animateDiagram4(diagram) {
+function animateEmbeddingsGrid(diagram) {
   const { draw, embeddings, cols, rows } = diagram;
   
   // Use Motion's inView to handle visibility
@@ -536,7 +557,7 @@ function animateDiagram4(diagram) {
         animations.push(
           Motion.animate(emb.group.node, 
             { opacity: 1 }, 
-            { duration: 0.4, delay: 0.5 + diagonalDelay }
+            { duration: 0.4, delay: 0.5 + diagonalDelay, ease: diagramConfig.springs.bouncy }
           )
         );
       });
@@ -556,7 +577,7 @@ function animateDiagram4(diagram) {
 }
 
 // Diagram setup for slide 5 (grid to clustered positions with k-means)
-function setupDiagram5(containerId) {
+function setupKMeansClustering(containerId) {
   const container = document.getElementById(containerId);
   const draw = SVG().addTo(container).size('100%', '100%').viewbox(0, 0, diagramConfig.viewWidth, diagramConfig.viewHeight);
   
@@ -565,29 +586,34 @@ function setupDiagram5(containerId) {
   const rows = 10;
   const totalEmbeddings = cols * rows;
   const circleRadius = 5;
-  const numClusters = 5;
+  const numClusters = 3;
   
   // Calculate spacing (same as diagram 4)
   const horizontalSpacing = (diagramConfig.viewWidth - 100) / cols;
   const verticalSpacing = 50;
   const topMargin = 80;
   
-  // Define cluster colors
+  // Define cluster colors using ANU theme colors
   const clusterColors = [
-    '#1e88e5', // blue
-    '#43a047', // green
-    '#e53935', // red
-    '#fb8c00', // orange
-    '#8e24aa'  // purple
+    'var(--anu-gold-3)',   // gold-3 (more distinct from copper)
+    'var(--anu-teal)',     // teal
+    'var(--anu-copper)'    // copper
   ];
   
-  // Generate cluster centers with some randomness
-  const margin = 0.15; // 15% margin from edges
+  // Generate cluster centers with better spacing for 3 distinct clusters
+  const margin = 0.2; // 20% margin from edges
   const clusterCenters = [];
+  
+  // Position clusters in a triangular arrangement for better separation
+  const centerX = diagramConfig.viewWidth / 2;
+  const centerY = diagramConfig.viewHeight / 2;
+  const radius = Math.min(diagramConfig.viewWidth, diagramConfig.viewHeight) * 0.3;
+  
   for (let i = 0; i < numClusters; i++) {
+    const angle = (i * 2 * Math.PI / numClusters) - Math.PI / 2; // Start from top
     clusterCenters.push({
-      x: margin * diagramConfig.viewWidth + Math.random() * (1 - 2 * margin) * diagramConfig.viewWidth,
-      y: margin * diagramConfig.viewHeight + Math.random() * (1 - 2 * margin) * diagramConfig.viewHeight
+      x: centerX + Math.cos(angle) * radius + (Math.random() - 0.5) * 50,
+      y: centerY + Math.sin(angle) * radius + (Math.random() - 0.5) * 50
     });
   }
   
@@ -607,16 +633,15 @@ function setupDiagram5(containerId) {
       embGroup.opacity(1);
       
       // Generate clustered target position
-      // 90% chance to belong to a cluster, 10% to be an outlier
+      // 95% chance to belong to a cluster, 5% to be an outlier
       let targetX, targetY;
-      const edgeMargin = 0.1; // 10% margin for final positions
       
-      if (Math.random() < 0.9) {
+      if (Math.random() < 0.95) {
         // Choose a random cluster
         const cluster = clusterCenters[Math.floor(Math.random() * numClusters)];
         // Position around cluster center with gaussian-like distribution
         const angle = Math.random() * Math.PI * 2;
-        const distance = Math.abs(randomGaussian()) * 80 + Math.random() * 40;
+        const distance = Math.abs(randomGaussian()) * 80 + Math.random() * 40; // Moderate clustering
         targetX = cluster.x + Math.cos(angle) * distance;
         targetY = cluster.y + Math.sin(angle) * distance;
       } else {
@@ -625,14 +650,7 @@ function setupDiagram5(containerId) {
         targetY = margin * diagramConfig.viewHeight + Math.random() * (1 - 2 * margin) * diagramConfig.viewHeight;
       }
       
-      // Ensure target is within 10%-90% bounds
-      const minX = edgeMargin * diagramConfig.viewWidth;
-      const maxX = (1 - edgeMargin) * diagramConfig.viewWidth;
-      const minY = edgeMargin * diagramConfig.viewHeight;
-      const maxY = (1 - edgeMargin) * diagramConfig.viewHeight;
-      
-      targetX = Math.max(minX, Math.min(maxX, targetX));
-      targetY = Math.max(minY, Math.min(maxY, targetY));
+      // Don't clip the points - let them go outside viewport if needed
       
       embeddings.push({ 
         group: embGroup, 
@@ -705,72 +723,307 @@ function kMeansStep(embeddings, centroids, numClusters) {
 }
 
 // Animation for diagram 5 - animate from grid to clustered positions with k-means
-function animateDiagram5(diagram) {
+function animateKMeansClustering(diagram) {
   const { draw, embeddings, numClusters, clusterColors, circleRadius } = diagram;
   
   let kmeansInterval = null;
-  let keyHandler = null;
+  let restartTimeout = null;
+  let clickHandler = null;
   let hasAnimatedToGrid = false;
+  let isAnimating = false;
   
   // Function to animate back to grid
   function animateToGrid() {
-    if (hasAnimatedToGrid) return;
+    if (hasAnimatedToGrid || isAnimating) return;
     hasAnimatedToGrid = true;
+    isAnimating = true;
+    
+    // Cancel any pending restart
+    if (restartTimeout) {
+      clearTimeout(restartTimeout);
+      restartTimeout = null;
+    }
     
     // Animate all circles back to grid positions with stagger
     embeddings.forEach((emb, i) => {
       Motion.animate(emb.circle.node, 
         { cx: emb.gridX, cy: emb.gridY }, 
-        { duration: 2, delay: i * 0.002, ease: "ease-in-out" }
+        { duration: 2, delay: i * 0.002, ease: diagramConfig.springs.gentle }
       );
     });
     
     // Update positions after animation
+    setTimeout(() => {
+      embeddings.forEach(emb => {
+        emb.currentX = emb.gridX;
+        emb.currentY = emb.gridY;
+      });
+      isAnimating = false;
+    }, 2000 + embeddings.length * 2);
+  }
+  
+  // Function to run the clustering animation
+  function runClustering() {
+    if (hasAnimatedToGrid || isAnimating) return;
+    
+    isAnimating = true;
+    const animations = [];
+    
+    // First fade to grey and fully reset cluster state
     embeddings.forEach(emb => {
-      emb.currentX = emb.gridX;
-      emb.currentY = emb.gridY;
+      // Stop any ongoing animations on this element
+      Motion.animate(emb.circle.node, 
+        { fill: 'var(--anu-grey-2)', stroke: 'var(--anu-grey-2)' }, 
+        { duration: 0.3, ease: diagramConfig.springs.snappy }
+      );
+      emb.cluster = -1;
+      emb.prevCluster = undefined;
     });
+    
+    // Wait for grey animation to complete, then scatter to new positions
+    setTimeout(() => {
+      // Generate new clustered positions (with 3 underlying clusters)
+      const centerX = diagramConfig.viewWidth / 2;
+      const centerY = diagramConfig.viewHeight / 2;
+      const radius = Math.min(diagramConfig.viewWidth, diagramConfig.viewHeight) * 0.3;
+      
+      // Create 3 cluster centers
+      const newClusterCenters = [];
+      for (let i = 0; i < 3; i++) {
+        const angle = (i * 2 * Math.PI / 3) - Math.PI / 2;
+        newClusterCenters.push({
+          x: centerX + Math.cos(angle) * radius + (Math.random() - 0.5) * 50,
+          y: centerY + Math.sin(angle) * radius + (Math.random() - 0.5) * 50
+        });
+      }
+      
+      embeddings.forEach((emb, idx) => {
+        // 95% chance to belong to a cluster
+        if (Math.random() < 0.95) {
+          const clusterIdx = idx % 3; // Distribute evenly across clusters
+          const cluster = newClusterCenters[clusterIdx];
+          const angle = Math.random() * Math.PI * 2;
+          const distance = Math.abs(randomGaussian()) * 90 + Math.random() * 50;
+          emb.targetX = cluster.x + Math.cos(angle) * distance;
+          emb.targetY = cluster.y + Math.sin(angle) * distance;
+        } else {
+          // Outlier
+          const edgeMargin = 0.1;
+          emb.targetX = edgeMargin * diagramConfig.viewWidth + Math.random() * (1 - 2 * edgeMargin) * diagramConfig.viewWidth;
+          emb.targetY = edgeMargin * diagramConfig.viewHeight + Math.random() * (1 - 2 * edgeMargin) * diagramConfig.viewHeight;
+        }
+        
+        // Don't clip the points - let them go outside viewport if needed
+      });
+      
+      // Animate to scattered positions (explicitly keep fill/stroke grey)
+      embeddings.forEach((emb, i) => {
+        animations.push(
+          Motion.animate(emb.circle.node,
+            { 
+              cx: emb.targetX, 
+              cy: emb.targetY,
+              fill: 'var(--anu-grey-2)',
+              stroke: 'var(--anu-grey-2)'
+            },
+            { duration: 1.5, delay: i * 0.001 }
+          )
+        );
+      });
+      
+      // Wait for scatter animation to fully complete before starting k-means
+      const scatterDuration = 1500 + embeddings.length * 1; // 1.5s + max delay
+      
+      setTimeout(() => {
+        // Update positions
+        embeddings.forEach(emb => {
+          emb.currentX = emb.targetX;
+          emb.currentY = emb.targetY;
+        });
+        
+        // Add a pause before starting k-means
+        setTimeout(() => {
+          // Run k-means clustering
+          // Initialize random centroids
+          let centroids = [];
+          for (let k = 0; k < numClusters; k++) {
+            const randomEmb = embeddings[Math.floor(Math.random() * embeddings.length)];
+            centroids.push({ x: randomEmb.currentX, y: randomEmb.currentY });
+          }
+          
+          let iteration = 0;
+          const maxIterations = 20;
+          
+          // First k-means step
+          const firstResult = kMeansStep(embeddings, centroids, numClusters);
+          centroids = firstResult.centroids;
+          
+          // Animate initial colors with pop effect
+          embeddings.forEach((emb, i) => {
+            if (emb.cluster >= 0) {
+              Motion.animate(emb.circle.node,
+                { r: [circleRadius, circleRadius * 2, circleRadius], 
+                  fill: clusterColors[emb.cluster],
+                  stroke: clusterColors[emb.cluster] },
+                { duration: 0.4, delay: i * 0.003, ease: diagramConfig.springs.playful }
+              );
+            }
+          });
+          
+          // Set initial cluster assignments
+          setTimeout(() => {
+            embeddings.forEach(emb => {
+              emb.prevCluster = emb.cluster;
+            });
+          }, embeddings.length * 3 + 500);
+          
+          // Continue k-means iterations
+          setTimeout(() => {
+            kmeansInterval = setInterval(() => {
+              iteration++;
+              
+              const result = kMeansStep(embeddings, centroids, numClusters);
+              
+              if (result.changed) {
+                centroids = result.centroids;
+                
+                // Update colors for changed clusters
+                embeddings.forEach((emb, i) => {
+                  if (emb.cluster >= 0 && emb.prevCluster !== emb.cluster) {
+                    Motion.animate(emb.circle.node,
+                      { r: [circleRadius, circleRadius * 1.75, circleRadius],
+                        fill: clusterColors[emb.cluster],
+                        stroke: clusterColors[emb.cluster] },
+                      { duration: 0.3, delay: i * 0.0005, ease: diagramConfig.springs.snappy }
+                    );
+                  }
+                  emb.prevCluster = emb.cluster;
+                });
+              } else {
+                // K-means converged
+                clearInterval(kmeansInterval);
+                kmeansInterval = null;
+                isAnimating = false;
+                
+                // Schedule restart after 10 seconds
+                restartTimeout = setTimeout(() => {
+                  runClustering();
+                }, 10000);
+              }
+              
+              if (iteration >= maxIterations) {
+                clearInterval(kmeansInterval);
+                kmeansInterval = null;
+                isAnimating = false;
+                
+                // Schedule restart after 10 seconds
+                restartTimeout = setTimeout(() => {
+                  runClustering();
+                }, 10000);
+              }
+            }, 1000);
+          }, 2000);
+        }, 1000); // 1 second pause after scatter before starting k-means
+      }, scatterDuration);
+    }, 800); // Wait for grey animation (300ms) + small pause
   }
   
   // Use Motion's inView to handle visibility
   const slideElement = draw.node.closest('section');
   if (slideElement) {
     Motion.inView(slideElement, () => {
-      const animations = [];
-      let updatePositionsTimeout = null;
-      let turnGreyTimeout = null;
-      let kmeansTimeout = null;
+      // Set up click handler
+      if (!clickHandler) {
+        clickHandler = () => {
+          animateToGrid();
+        };
+        slideElement.addEventListener('click', clickHandler);
+      }
       
-      // Phase 1: Animate to scattered positions
+      // Start with points at grid positions (matching diagram 4's final state)
+      embeddings.forEach((emb) => {
+        emb.circle.center(emb.gridX, emb.gridY);
+        emb.circle.fill(diagramConfig.colors.teal).stroke({ color: diagramConfig.colors.teal, width: 3 });
+        emb.currentX = emb.gridX;
+        emb.currentY = emb.gridY;
+        emb.cluster = -1;
+        emb.prevCluster = undefined;
+      });
+      
+      // Generate initial cluster positions for scattering
+      const centerX = diagramConfig.viewWidth / 2;
+      const centerY = diagramConfig.viewHeight / 2;
+      const radius = Math.min(diagramConfig.viewWidth, diagramConfig.viewHeight) * 0.3;
+      
+      // Create 3 initial cluster centers
+      const initialClusterCenters = [];
+      for (let i = 0; i < 3; i++) {
+        const angle = (i * 2 * Math.PI / 3) - Math.PI / 2;
+        initialClusterCenters.push({
+          x: centerX + Math.cos(angle) * radius + (Math.random() - 0.5) * 50,
+          y: centerY + Math.sin(angle) * radius + (Math.random() - 0.5) * 50
+        });
+      }
+      
+      // Calculate target positions for each embedding
+      embeddings.forEach((emb, idx) => {
+        let targetX, targetY;
+        
+        // 95% chance to belong to a cluster
+        if (Math.random() < 0.95) {
+          const clusterIdx = idx % 3; // Distribute evenly across clusters
+          const cluster = initialClusterCenters[clusterIdx];
+          const angle = Math.random() * Math.PI * 2;
+          const distance = Math.abs(randomGaussian()) * 90 + Math.random() * 50;
+          targetX = cluster.x + Math.cos(angle) * distance;
+          targetY = cluster.y + Math.sin(angle) * distance;
+        } else {
+          // Outlier
+          const edgeMargin = 0.1;
+          targetX = edgeMargin * diagramConfig.viewWidth + Math.random() * (1 - 2 * edgeMargin) * diagramConfig.viewWidth;
+          targetY = edgeMargin * diagramConfig.viewHeight + Math.random() * (1 - 2 * edgeMargin) * diagramConfig.viewHeight;
+        }
+        
+        // Don't clip the points - let them go outside viewport if needed
+        
+        emb.targetX = targetX;
+        emb.targetY = targetY;
+      });
+      
+      // Animate from grid to scattered positions
+      isAnimating = true;
+      const animations = [];
+      
+      // Animate all circles from grid to scattered positions with diagonal stagger
       embeddings.forEach((emb, i) => {
+        const row = Math.floor(i / 50); // 50 columns
+        const col = i % 50;
+        // Diagonal distance from top-left corner
+        const diagonalDelay = (row + col) * 0.01; // 10ms per diagonal step
+        
         animations.push(
           Motion.animate(emb.circle.node,
-            { cx: emb.targetX, cy: emb.targetY },
-            { duration: 2, delay: i * 0.002 }
+            { 
+              cx: emb.targetX, 
+              cy: emb.targetY,
+              fill: 'var(--anu-grey-2)',
+              stroke: 'var(--anu-grey-2)'
+            },
+            { duration: 2, delay: 0.5 + diagonalDelay, ease: diagramConfig.springs.gentle }
           )
         );
       });
       
-      // Update positions after phase 1 (at 2s)
-      updatePositionsTimeout = setTimeout(() => {
+      // Wait for scatter animation to complete before starting k-means
+      const scatterDuration = 2500 + 58 * 10; // 2s animation + max diagonal delay (9 rows + 49 cols = 58 * 10ms)
+      
+      setTimeout(() => {
+        // Update positions after scatter animation
         embeddings.forEach(emb => {
           emb.currentX = emb.targetX;
           emb.currentY = emb.targetY;
         });
-      }, 2000);
-      
-      // Phase 2: Turn all grey (at 2.5s)
-      turnGreyTimeout = setTimeout(() => {
-        animations.push(
-          Motion.animate(embeddings.map(emb => emb.circle.node),
-            { fill: '#888', stroke: '#888' },
-            { duration: 0.5 }
-          )
-        );
-      }, 2500);
-      
-      // Phase 3: Run k-means clustering (at 4.5s)
-      kmeansTimeout = setTimeout(() => {
+        
         // Initialize random centroids
         let centroids = [];
         for (let k = 0; k < numClusters; k++) {
@@ -792,7 +1045,7 @@ function animateDiagram5(diagram) {
               { r: [circleRadius, circleRadius * 2, circleRadius], 
                 fill: clusterColors[emb.cluster],
                 stroke: clusterColors[emb.cluster] },
-              { duration: 0.4, delay: i * 0.003, ease: "ease-in-out" }
+              { duration: 0.4, delay: i * 0.003, ease: diagramConfig.springs.playful }
             );
           }
         });
@@ -807,69 +1060,63 @@ function animateDiagram5(diagram) {
         // Continue k-means iterations
         setTimeout(() => {
           kmeansInterval = setInterval(() => {
-            iteration++;
+          iteration++;
+          
+          const result = kMeansStep(embeddings, centroids, numClusters);
+          
+          if (result.changed) {
+            centroids = result.centroids;
             
-            const result = kMeansStep(embeddings, centroids, numClusters);
-            
-            if (result.changed) {
-              centroids = result.centroids;
-              
-              // Update colors for changed clusters
-              embeddings.forEach((emb, i) => {
-                if (emb.cluster >= 0 && emb.prevCluster !== emb.cluster) {
-                  Motion.animate(emb.circle.node,
-                    { r: [circleRadius, circleRadius * 1.75, circleRadius],
-                      fill: clusterColors[emb.cluster],
-                      stroke: clusterColors[emb.cluster] },
-                    { duration: 0.3, delay: i * 0.0005, ease: "ease-in-out" }
-                  );
-                }
-                emb.prevCluster = emb.cluster;
-              });
-            } else {
-              // K-means converged
-              clearInterval(kmeansInterval);
-              
-              // Set up keypress handler
-              if (!keyHandler) {
-                keyHandler = (e) => {
-                  if (/^[a-zA-Z0-9]$/.test(e.key)) {
-                    animateToGrid();
-                  }
-                };
-                document.addEventListener('keydown', keyHandler);
+            // Update colors for changed clusters
+            embeddings.forEach((emb, i) => {
+              if (emb.cluster >= 0 && emb.prevCluster !== emb.cluster) {
+                Motion.animate(emb.circle.node,
+                  { r: [circleRadius, circleRadius * 1.75, circleRadius],
+                    fill: clusterColors[emb.cluster],
+                    stroke: clusterColors[emb.cluster] },
+                  { duration: 0.3, delay: i * 0.0005, ease: "ease-in-out" }
+                );
               }
-            }
+              emb.prevCluster = emb.cluster;
+            });
+          } else {
+            // K-means converged
+            clearInterval(kmeansInterval);
+            kmeansInterval = null;
+            isAnimating = false;
             
-            if (iteration >= maxIterations) {
-              clearInterval(kmeansInterval);
-              if (!keyHandler) {
-                keyHandler = (e) => {
-                  if (/^[a-zA-Z0-9]$/.test(e.key)) {
-                    animateToGrid();
-                  }
-                };
-                document.addEventListener('keydown', keyHandler);
-              }
-            }
-          }, 1000);
-        }, 2000);
-      }, 4500);
+            // Schedule restart after 10 seconds
+            restartTimeout = setTimeout(() => {
+              runClustering();
+            }, 10000);
+          }
+          
+          if (iteration >= maxIterations) {
+            clearInterval(kmeansInterval);
+            kmeansInterval = null;
+            isAnimating = false;
+            
+            // Schedule restart after 10 seconds
+            restartTimeout = setTimeout(() => {
+              runClustering();
+            }, 10000);
+          }
+        }, 1000);
+      }, 2000);
+      }, scatterDuration);
       
       // Return cleanup function
       return () => {
-        // Cancel all animations
-        animations.forEach(anim => anim.cancel());
+        // Remove click handler
+        if (clickHandler) {
+          slideElement.removeEventListener('click', clickHandler);
+          clickHandler = null;
+        }
         
-        // Clear all timeouts
-        if (updatePositionsTimeout) clearTimeout(updatePositionsTimeout);
-        if (turnGreyTimeout) clearTimeout(turnGreyTimeout);
-        if (kmeansTimeout) clearTimeout(kmeansTimeout);
-        
-        // Remove keypress handler
-        if (keyHandler) {
-          document.removeEventListener('keydown', keyHandler);
-          keyHandler = null;
+        // Clear restart timeout
+        if (restartTimeout) {
+          clearTimeout(restartTimeout);
+          restartTimeout = null;
         }
         
         // Clear k-means interval
@@ -880,8 +1127,9 @@ function animateDiagram5(diagram) {
         
         // Reset state
         hasAnimatedToGrid = false;
+        isAnimating = false;
         
-        // Reset all circles
+        // Reset all circles to grid
         embeddings.forEach((emb) => {
           emb.circle.center(emb.gridX, emb.gridY);
           emb.circle.fill(diagramConfig.colors.teal).stroke({ color: diagramConfig.colors.teal, width: 3 });
@@ -896,7 +1144,7 @@ function animateDiagram5(diagram) {
 }
 
 // Diagram setup for slide 6 (persistent homology with growing balls)
-function setupDiagram6(containerId) {
+function setupPersistentHomology(containerId) {
   const container = document.getElementById(containerId);
   const draw = SVG().addTo(container).size('100%', '100%').viewbox(0, 0, diagramConfig.viewWidth, diagramConfig.viewHeight);
   
@@ -905,36 +1153,30 @@ function setupDiagram6(containerId) {
   const pointRadius = 8;
   const maxBallRadius = 300;
   
-  // Generate random positions with some clustering
+  // Generate positions from 3 underlying clusters (unknown to k-means)
   const positions = [];
   const numLocalClusters = 3;
-  const clusterRadius = 120;
+  const clusterRadius = 100;
   
-  // Generate cluster centers with better spacing
+  // Generate cluster centers with better spacing for 3 clusters
   const clusterCenters = [];
   for (let i = 0; i < numLocalClusters; i++) {
     clusterCenters.push({
-      x: 250 + (i * 300) + (Math.random() - 0.5) * 100,
-      y: 200 + (i % 2) * 200 + (Math.random() - 0.5) * 100
+      x: 320 + (i * 280) + (Math.random() - 0.5) * 80,
+      y: 360 + (i === 1 ? -150 : 150 * (i === 0 ? -1 : 1)) + (Math.random() - 0.5) * 80
     });
   }
   
-  // Generate points around clusters
+  // Generate points from clusters
   for (let i = 0; i < numPoints; i++) {
-    let x, y;
-    if (Math.random() < 0.8) {
-      // 80% chance to be in a cluster
-      const cluster = clusterCenters[Math.floor(Math.random() * numLocalClusters)];
-      const angle = Math.random() * Math.PI * 2;
-      const distance = Math.random() * clusterRadius;
-      x = cluster.x + Math.cos(angle) * distance;
-      y = cluster.y + Math.sin(angle) * distance;
-    } else {
-      // 20% chance to be random
-      x = 100 + Math.random() * (diagramConfig.viewWidth - 200);
-      y = 100 + Math.random() * (diagramConfig.viewHeight - 200);
-    }
-    positions.push({ x, y });
+    // Assign each point to a cluster deterministically to ensure balanced distribution
+    const clusterIndex = i % numLocalClusters;
+    const cluster = clusterCenters[clusterIndex];
+    const angle = Math.random() * Math.PI * 2;
+    const distance = Math.abs(randomGaussian()) * clusterRadius * 0.5 + Math.random() * clusterRadius * 0.5;
+    const x = cluster.x + Math.cos(angle) * distance;
+    const y = cluster.y + Math.sin(angle) * distance;
+    positions.push({ x, y, sourceCluster: clusterIndex });
   }
   
   // Create embedding circles
@@ -963,7 +1205,8 @@ function setupDiagram6(containerId) {
       y: pos.y,
       radius: 0,
       connected: new Set([i]), // Track connected components
-      componentId: i // Initial component ID
+      componentId: i, // Initial component ID
+      hasBeenConnected: false // Track if point has been connected to another point
     });
   });
   
@@ -977,40 +1220,34 @@ function setupDiagram6(containerId) {
 }
 
 // Animation for diagram 6 - growing balls and persistent homology
-function animateDiagram6(diagram) {
+function animatePersistentHomology(diagram) {
   const { draw, embeddings, connectionsGroup, numPoints, pointRadius, maxBallRadius } = diagram;
   
-  // Helper function to generate new random positions
+  // Helper function to generate new positions from 3 underlying clusters
   function generateNewPositions() {
     const positions = [];
     const numLocalClusters = 3;
-    const clusterRadius = 120;
+    const clusterRadius = 100;
     
-    // Generate cluster centers with better spacing
+    // Generate cluster centers with better spacing for 3 clusters
     const clusterCenters = [];
     for (let i = 0; i < numLocalClusters; i++) {
       clusterCenters.push({
-        x: 250 + (i * 300) + (Math.random() - 0.5) * 100,
-        y: 200 + (i % 2) * 200 + (Math.random() - 0.5) * 100
+        x: 320 + (i * 280) + (Math.random() - 0.5) * 80,
+        y: 360 + (i === 1 ? -150 : 150 * (i === 0 ? -1 : 1)) + (Math.random() - 0.5) * 80
       });
     }
     
-    // Generate points around clusters
+    // Generate points from clusters
     for (let i = 0; i < numPoints; i++) {
-      let x, y;
-      if (Math.random() < 0.8) {
-        // 80% chance to be in a cluster
-        const cluster = clusterCenters[Math.floor(Math.random() * numLocalClusters)];
-        const angle = Math.random() * Math.PI * 2;
-        const distance = Math.random() * clusterRadius;
-        x = cluster.x + Math.cos(angle) * distance;
-        y = cluster.y + Math.sin(angle) * distance;
-      } else {
-        // 20% chance to be random
-        x = 100 + Math.random() * (diagramConfig.viewWidth - 200);
-        y = 100 + Math.random() * (diagramConfig.viewHeight - 200);
-      }
-      positions.push({ x, y });
+      // Assign each point to a cluster deterministically to ensure balanced distribution
+      const clusterIndex = i % numLocalClusters;
+      const cluster = clusterCenters[clusterIndex];
+      const angle = Math.random() * Math.PI * 2;
+      const distance = Math.abs(randomGaussian()) * clusterRadius * 0.5 + Math.random() * clusterRadius * 0.5;
+      const x = cluster.x + Math.cos(angle) * distance;
+      const y = cluster.y + Math.sin(angle) * distance;
+      positions.push({ x, y, sourceCluster: clusterIndex });
     }
     return positions;
   }
@@ -1025,7 +1262,7 @@ function animateDiagram6(diagram) {
       let ballAnimations = [];
       let connections = [];
       
-      function runAnimation() {
+      function runAnimation(skipPositionUpdate = false) {
         // Clear previous state
         animations = [];
         connections = [];
@@ -1036,17 +1273,26 @@ function animateDiagram6(diagram) {
         const radiusStep = 1;
         const intervalDelay = 100;
         
-        // Generate new positions and update embeddings
-        const newPositions = generateNewPositions();
-        embeddings.forEach((emb, i) => {
-          const pos = newPositions[i];
-          emb.x = pos.x;
-          emb.y = pos.y;
-          emb.ball.center(pos.x, pos.y);
-          emb.point.center(pos.x, pos.y);
-          emb.componentId = i;
-          emb.connected = new Set([i]);
-        });
+        // Only generate new positions if not skipping (i.e., not called from restart)
+        if (!skipPositionUpdate) {
+          const newPositions = generateNewPositions();
+          embeddings.forEach((emb, i) => {
+            const pos = newPositions[i];
+            emb.x = pos.x;
+            emb.y = pos.y;
+            emb.ball.center(pos.x, pos.y);
+            emb.point.center(pos.x, pos.y);
+            emb.componentId = i;
+            emb.connected = new Set([i]);
+          });
+        } else {
+          // Just reset component tracking without moving positions
+          embeddings.forEach((emb, i) => {
+            emb.componentId = i;
+            emb.connected = new Set([i]);
+            emb.hasBeenConnected = false;
+          });
+        }
       
       // Helper function to check if two balls intersect
       function ballsIntersect(emb1, emb2, radius) {
@@ -1116,25 +1362,37 @@ function animateDiagram6(diagram) {
                 // Animate connection appearance
                 Motion.animate(line.node,
                   { opacity: [0, 1], strokeWidth: [4, 2] },
-                  { duration: 0.8, ease: "ease-out" }
+                  { duration: 0.8, ease: diagramConfig.springs.snappy }
                 );
                 
-                // Pop effect for connected points
-                Motion.animate([emb1.point.node, emb2.point.node],
-                  { 
-                    r: [pointRadius, pointRadius * 2.5, pointRadius],
-                    fill: [diagramConfig.colors.teal, diagramConfig.colors.gold, diagramConfig.colors.gold]
-                  },
-                  { duration: 0.6, ease: "ease-in-out" }
-                );
+                // Pop effect only for points that haven't been connected before
+                const pointsToPop = [];
+                if (!emb1.hasBeenConnected) {
+                  pointsToPop.push(emb1.point.node);
+                  emb1.hasBeenConnected = true;
+                }
+                if (!emb2.hasBeenConnected) {
+                  pointsToPop.push(emb2.point.node);
+                  emb2.hasBeenConnected = true;
+                }
                 
-                // Reset point color after pop
-                setTimeout(() => {
-                  Motion.animate([emb1.point.node, emb2.point.node],
-                    { fill: diagramConfig.colors.teal },
-                    { duration: 0.4 }
+                if (pointsToPop.length > 0) {
+                  Motion.animate(pointsToPop,
+                    { 
+                      r: [pointRadius, pointRadius * 2.5, pointRadius],
+                      fill: [diagramConfig.colors.teal, diagramConfig.colors.gold, diagramConfig.colors.gold]
+                    },
+                    { duration: 0.6, ease: diagramConfig.springs.playful }
                   );
-                }, 800);
+                  
+                  // Reset point color after pop
+                  setTimeout(() => {
+                    Motion.animate(pointsToPop,
+                      { fill: diagramConfig.colors.teal },
+                      { duration: 0.4, ease: diagramConfig.springs.smooth }
+                    );
+                  }, 800);
+                }
                 
                 // Merge components
                 const comp1 = emb1.componentId;
@@ -1159,31 +1417,54 @@ function animateDiagram6(diagram) {
               setTimeout(() => {
                 Motion.animate(connections.map(c => c.node),
                   { strokeWidth: [3, 6, 3], opacity: [1, 0.8, 1] },
-                  { duration: 0.8, ease: "ease-in-out" }
+                  { duration: 0.8, ease: diagramConfig.springs.playful }
                 );
               }, 500);
             }
             
             // Schedule restart after 10 seconds
             restartTimeout = setTimeout(() => {
+              // Generate new positions before fading out
+              const newPositions = generateNewPositions();
+              
               // Fade out and remove all connections
               connections.forEach(conn => {
-                Motion.animate(conn.node, { opacity: 0 }, { duration: 0.5 });
+                Motion.animate(conn.node, { opacity: 0 }, { duration: 0.5, ease: diagramConfig.springs.smooth });
                 setTimeout(() => conn.remove(), 500);
               });
               connections.length = 0;
               connectedPairs.clear();
               
-              // Reset ball radii
-              embeddings.forEach(emb => {
-                emb.ball.radius(0);
-                emb.point.fill(diagramConfig.colors.teal);
+              // Reset ball radii and animate points to new positions
+              embeddings.forEach((emb, i) => {
+                // Animate ball radius to 0
+                Motion.animate(emb.ball.node, { r: 0 }, { duration: 0.5, ease: diagramConfig.springs.smooth });
+                
+                // Animate point to new position
+                const pos = newPositions[i];
+                Motion.animate(emb.point.node, 
+                  { cx: pos.x, cy: pos.y },
+                  { duration: 1.5, delay: i * 0.01, ease: diagramConfig.springs.gentle }
+                );
+                
+                // Update the embedding's stored position to match where we're animating to
+                emb.x = pos.x;
+                emb.y = pos.y;
+                
+                // Animate ball center to new position too
+                Motion.animate(emb.ball.node,
+                  { cx: pos.x, cy: pos.y },
+                  { duration: 1.5, delay: i * 0.01, ease: diagramConfig.springs.gentle }
+                );
+                
+                // Reset color
+                Motion.animate(emb.point.node, { fill: diagramConfig.colors.teal }, { duration: 0.5 });
               });
               
-              // Start new animation after fade out
+              // Start new animation after points have moved
               setTimeout(() => {
-                runAnimation();
-              }, 600);
+                runAnimation(true); // Skip position update since we already moved them
+              }, 2000);
             }, 10000);
           }
         }, intervalDelay);
@@ -1215,6 +1496,7 @@ function animateDiagram6(diagram) {
           emb.point.fill(diagramConfig.colors.teal).radius(pointRadius);
           emb.componentId = i;
           emb.connected = new Set([i]);
+          emb.hasBeenConnected = false;
         });
         
         // Remove all connections
@@ -1225,21 +1507,171 @@ function animateDiagram6(diagram) {
   }
 }
 
+// Diagram setup for slide 7 (colored dots returning to grid with patterns)
+function setupGridPattern(containerId) {
+  const container = document.getElementById(containerId);
+  const draw = SVG().addTo(container).size('100%', '100%').viewbox(0, 0, diagramConfig.viewWidth, diagramConfig.viewHeight);
+  
+  const embeddings = [];
+  const cols = 50;
+  const rows = 10;
+  const totalEmbeddings = cols * rows;
+  const circleRadius = 5;
+  const numClusters = 3;
+  
+  // Calculate spacing (same as diagram 4/5)
+  const horizontalSpacing = (diagramConfig.viewWidth - 100) / cols;
+  const verticalSpacing = 50;
+  const topMargin = 80;
+  
+  // Define cluster colors using ANU theme colors
+  const clusterColors = [
+    'var(--anu-gold-3)',   // gold-3 (more distinct from copper)
+    'var(--anu-teal)',     // teal
+    'var(--anu-copper)'    // copper
+  ];
+  
+  // Generate pattern for grid - create runs of varying lengths
+  const clusterPattern = [];
+  let currentCluster = 0;
+  let i = 0;
+  
+  while (i < totalEmbeddings) {
+    // Generate run length with some randomness (between 5 and 40 for 3 clusters)
+    const runLength = Math.floor(Math.random() * 36) + 5;
+    const actualRunLength = Math.min(runLength, totalEmbeddings - i);
+    
+    for (let j = 0; j < actualRunLength; j++) {
+      clusterPattern.push(currentCluster);
+    }
+    
+    i += actualRunLength;
+    currentCluster = (currentCluster + 1) % numClusters;
+  }
+  
+  // Shuffle some elements to add noise (10% chance)
+  for (let i = 0; i < totalEmbeddings; i++) {
+    if (Math.random() < 0.1) {
+      clusterPattern[i] = Math.floor(Math.random() * numClusters);
+    }
+  }
+  
+  // Generate 3 cluster centers for starting positions
+  const centerX = diagramConfig.viewWidth / 2;
+  const centerY = diagramConfig.viewHeight / 2;
+  const radius = Math.min(diagramConfig.viewWidth, diagramConfig.viewHeight) * 0.3;
+  
+  const clusterCenters = [];
+  for (let i = 0; i < numClusters; i++) {
+    const angle = (i * 2 * Math.PI / numClusters) - Math.PI / 2;
+    clusterCenters.push({
+      x: centerX + Math.cos(angle) * radius + (Math.random() - 0.5) * 50,
+      y: centerY + Math.sin(angle) * radius + (Math.random() - 0.5) * 50
+    });
+  }
+  
+  // Create all circles at clustered positions
+  for (let idx = 0; idx < totalEmbeddings; idx++) {
+    const row = Math.floor(idx / cols);
+    const col = idx % cols;
+    
+    // Grid position
+    const gridX = 50 + col * horizontalSpacing;
+    const gridY = topMargin + row * verticalSpacing;
+    
+    // Clustered starting position based on assigned cluster
+    const assignedCluster = clusterPattern[idx];
+    const cluster = clusterCenters[assignedCluster];
+    const angle = Math.random() * Math.PI * 2;
+    const distance = Math.abs(randomGaussian()) * 80 + Math.random() * 40;
+    const startX = cluster.x + Math.cos(angle) * distance;
+    const startY = cluster.y + Math.sin(angle) * distance;
+    
+    const embGroup = draw.group();
+    
+    const circle = embGroup.circle(circleRadius * 2)
+      .center(startX, startY) // Start at clustered position
+      .fill(clusterColors[clusterPattern[idx]])
+      .stroke({ width: 3, color: clusterColors[clusterPattern[idx]] });
+    
+    embGroup.opacity(0); // Start invisible
+    
+    embeddings.push({ 
+      group: embGroup, 
+      circle, 
+      gridX, 
+      gridY,
+      cluster: clusterPattern[idx]
+    });
+  }
+  
+  return { draw, embeddings, cols, rows, circleRadius };
+}
+
+// Animation for diagram 7 - animate from scattered to grid
+function animateGridPattern(diagram) {
+  const { draw, embeddings, circleRadius } = diagram;
+  
+  // Use Motion's inView to handle visibility
+  const slideElement = draw.node.closest('section');
+  if (slideElement) {
+    Motion.inView(slideElement, () => {
+      const animations = [];
+      
+      // Make circles visible
+      embeddings.forEach((emb) => {
+        emb.group.opacity(1);
+      });
+      
+      // Wait a moment, then animate all circles to grid positions
+      setTimeout(() => {
+        embeddings.forEach((emb, i) => {
+          // Add some organic feel with easing and slight delays
+          const delay = i * 0.002 + Math.random() * 0.001;
+          
+          animations.push(
+            Motion.animate(emb.circle.node,
+              { 
+                cx: emb.gridX, 
+                cy: emb.gridY,
+                r: [circleRadius, circleRadius * 1.2, circleRadius] // Slight pulse
+              },
+              { 
+                duration: 2.5, 
+                delay: delay,
+                ease: diagramConfig.springs.gentle // Spring for organic feel
+              }
+            )
+          );
+        });
+      }, 1000);
+      
+      // Return cleanup function
+      return () => {
+        // Cancel animations
+        animations.forEach(anim => anim.cancel());
+      };
+    }, { amount: 0.5 });
+  }
+}
+
 // Export functions for use in slide scripts
 window.diagramUtils = {
   config: diagramConfig,
   getItemX,
   drawArrow,
-  setupDiagram1,
-  setupDiagram2,
-  setupDiagram3,
-  setupDiagram4,
-  setupDiagram5,
-  setupDiagram6,
-  animateDiagram1,
-  animateDiagram2,
-  animateDiagram3,
-  animateDiagram4,
-  animateDiagram5,
-  animateDiagram6
+  setupLinearFlow,
+  setupTextToImageEmbeddings,
+  setupEmbeddingsRow,
+  setupEmbeddingsGrid,
+  setupKMeansClustering,
+  setupPersistentHomology,
+  setupGridPattern,
+  animateLinearFlow,
+  animateTextToImageEmbeddings,
+  animateEmbeddingsRow,
+  animateEmbeddingsGrid,
+  animateKMeansClustering,
+  animatePersistentHomology,
+  animateGridPattern
 };
