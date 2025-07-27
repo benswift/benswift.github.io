@@ -33,9 +33,30 @@ this to your zed `tasks.json`:
 ```
 
 Anectodally, it also seems like Claude Code is a bit more token-efficient than
-using the same models via the Zed Agent panel. And the workflow is really almost
-as good. The only real downside is that you can't trivially switch
-providers/models like you can when you're using the Zed Agent panel. But the
-Anthropic models are pretty good, and there's really not too much lock-in; if
-the pricing landscape changes in the future I'd happily switch to another
-provider.
+using the same models via the Zed Agent panel. To my eyes (watching the agent at
+work) it seems like it's more parsimonious in only reading sections of files
+into context, and whole files only when absolutely necessary. But I don't have
+hard data to back that up.
+
+And the workflow is really almost as good, with only two things that I'm really
+missing from my old workflow.
+
+1. You can't trivially switch providers/models like you can when you're using
+   the Zed Agent panel. But the Anthropic models are pretty good---at least
+   equal to best-in-class for the sort of work I do.
+
+2. Claude code no longer has direct access to the LSP diagnostics---because that
+   stuff in general Just Works^TM in Zed, it was nice to not have to set up
+   extra MCPs to get access to the language-aware tooling stuff. I used to be
+   able to just say "fix the warnings in this project" and it'd do what I meant,
+   but now I have to either set up a MCP server, or hope that Claude (possibly
+   with a hint in `CLAUDE.md`) knows how to run the CLI tools to get the same
+   information.
+
+The thing that puts me at ease with this sort of (big) workflow chnage is that
+there's really not too much lock-in; if the pricing landscape changes in the
+future I'd happily switch to another provider. The main skill---context
+management, and figuring out how to communicate to an LLM what needs to be done
+in clear, concise language---is unchanged.
+
+If this helps you get the most out of your setup, then happy Claude-in-Zedding.
