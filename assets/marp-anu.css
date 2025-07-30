@@ -328,3 +328,17 @@ section.anuFooterRight footer {
     display: none;
 }
 
+/* Ken Burns Effect */
+@keyframes kenburns {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    100% {
+        transform: scale(1.2) translate(-5%, 5%);
+    }
+}
+
+section.kenburns[data-marpit-advanced-background] > div[data-marpit-advanced-background-container] > figure {
+    animation: kenburns 20s ease-in-out;
+}
+
