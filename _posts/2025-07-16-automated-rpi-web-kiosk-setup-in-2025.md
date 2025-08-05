@@ -14,8 +14,8 @@ together a fully scripted burn-and-boot process. My non-negotiables were:
 
 [^time]: I thought it'd take a day, it's taken about a week, on and off :(
 
-- script needs to run on macOS (since my MBP is the only computer I have with an
-  SD card reader/writer)
+- script needs to be fully automated (though it turns out it only works on Linux
+  now due to the tools required)
 - once the SD card is put into an rpi and plugged in, everything should be
   automatic (join network, install and configure software and OS)
 - I need a way to remotely access the rpis once "in the field" (in particular,
@@ -25,25 +25,35 @@ I _thought_ that this would be a pretty common thing that others would have
 done---rpis are cheap and seem like a good fit for this type of "web browser as
 installation display" thing. But I kept running into dead ends.
 
-I finally got it fully working with [DietPi](https://dietpi.com/) as the OS and
-[Cage/Wayland](https://www.hjdskes.nl/projects/cage/) as the compositor. To save
-you the trouble, dear reader, I've packaged it all up into a script (which works
-as of the date of this post---July 2025) and put it
-[here](https://github.com/ANUcybernetics/panic/tree/main/rpi). From that
+I finally got it fully working with
+[Raspberry Pi OS](https://www.raspberrypi.com/software/) (Bookworm) as the OS
+and [labwc](https://github.com/labwc/labwc) as the compositor (which is the
+default on RPi OS). To save you the trouble, dear reader, I've packaged it all
+up into a script (which works as of the date of this post---July 2025) and put
+it [here](https://github.com/ANUcybernetics/panic/tree/main/rpi). From that
 folder's `README.md`:
 
-> This directory contains a script to set up Raspberry Pi 5 devices as browser
-> kiosks that boot directly into fullscreen Chromium displaying a specified URL.
+> This directory contains scripts for setting up Raspberry Pi 5 devices as
+> browser kiosks that boot directly into fullscreen Chromium displaying a
+> specified URL.
 >
-> The `pi-setup.sh` script creates a fully automated
-> [DietPi](https://dietpi.com) installation that:
+> The setup process uses:
 >
-> - boots directly into GPU-accelerated kiosk mode using Cage Wayland compositor
+> - **install-sdm.sh** - Installs SDM (SD Card Image Management tool) - one-time
+>   setup
+> - **pi-setup.sh** - Creates customized Raspberry Pi OS SD cards with kiosk
+>   mode
+>
+> The resulting installation:
+>
+> - boots directly into GPU-accelerated kiosk mode using labwc Wayland
+>   compositor (RPi OS default)
 > - automatically joins your Tailscale network
 > - supports native display resolutions including 4K at 60Hz
 > - configures WiFi (WPA2 and enterprise 802.1X)
 > - includes HDMI audio support
-> - optimized specifically for Raspberry Pi 5 with 8GB RAM
+> - optimized specifically for Raspberry Pi 5
 > - provides a `kiosk-set-url` utility for easy URL changes
+> - uses official Raspberry Pi OS Bookworm (64-bit)
 
-I hope this savees you some time. Use it to hug your loved ones.
+I hope this saves you some time. Use it to hug your loved ones.
