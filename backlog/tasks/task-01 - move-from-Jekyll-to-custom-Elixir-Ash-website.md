@@ -54,6 +54,80 @@ the main "Research" page. I would need to duplicate this in Ash/Elixir as well.
 - bibtex_parser (https://hex.pm/packages/bibtex_parser) for BibTeX file parsing
 - yaml_elixir for frontmatter parsing
 
+### Jekyll tag and filter migration
+
+Part of the migration should be removing the Jekyll (i.e. Ruby) tags and filters in the md files and replacing them with (in order of preference):
+
+- custom HTML elements, as per https://deanebarker.net/tech/blog/custom-elements-markdown/
+- replace with normal HTML (if it's not too messy)
+- investigate if MDEx allows for Elixir-style compile-time filters
+
+### Jekyll-specific parts migration strategy
+
+#### _includes files
+
+The `_includes` folder contains reusable HTML snippets used throughout the site. Migration approach:
+
+- **Layout partials** (`head.html`, `header.html`, `footer.html`): convert to Phoenix components in `lib/blog_web/components/`
+- **Analytics/tracking** (`analytics.html`, `anchorjs.html`, `hljs.html`): convert to Phoenix hooks or components
+- **Content helpers** (`cc-link.html`, `picture.html`, `qrcode.html`, `youtube.html`, `toc.html`, `taglist.html`): convert to Phoenix function components
+- **Slide components** (`slides/*.html`): defer migration (see reveal.js section below)
+- **Markdown includes** (`blurbs/I-am-paragraphs.md`): convert to Elixir functions that return compiled HTML
+
+#### _talks and reveal.js presentations
+
+The `_talks` folder contains reveal.js-powered markdown presentations that heavily use Jekyll includes. Migration approach:
+
+- **Short-term**: do not attempt to port the reveal.js system initially
+- **Options**:
+  - export all presentations as static HTML files and serve them statically
+  - keep the reveal.js infrastructure separate from the main Phoenix app
+  - potentially integrate reveal.js later as a separate LiveView component if needed
+- **Note**: these presentations use `{% include slides/*.html %}` tags extensively which would need custom handling
+
+#### _plugins
+
+Custom Jekyll plugins that need Elixir equivalents:
+
+- `biblist.rb` & `livecoding-bib.rb`: already covered with `bibtex_parser` in the plan
+- `browserify.rb` & `cljs-build.rb`: skip (ClojureScript build system, handle manually if needed)
+- `revealify.rb`: skip (part of reveal.js system)
+- `jekyll-git-hash.rb`: implement as compile-time function using `:os.cmd/1`
+- `htmlproofer.rb`: use external CI/CD tool or Elixir testing
+
+#### _layouts
+
+Jekyll layouts to convert to Phoenix layouts/templates:
+
+- `default.html`: main Phoenix root layout
+- `page.html`, `post.html`: Phoenix templates or function components
+- `paginated.html`: Phoenix component with pagination logic
+- `reveal-with-fa.html`: defer (part of reveal.js system)
+
+#### _data files
+
+The `_data` folder contains:
+
+- YAML files (`amphibology.yml`): parse at compile time with `yaml_elixir`
+- BibTeX files (`ben-pubs.bib`): already covered in plan
+- CSV files (FoR codes): parse at compile time with CSV library
+- Ruby/Emacs processing scripts: skip or reimplement if needed
+
+#### Other Jekyll conventions
+
+- **Collections** (`_posts`, `_livecoding`): process as markdown files at compile time
+- **Front matter**: already covered with `yaml_elixir`
+- **Liquid tags/filters**: replace as per Jekyll tag migration section above
+- **Pagination**: implement with Ash read actions
+- **Site variables** (`site.baseurl`, `site.title`): compile-time config or module attributes
+- **Data files access**: compile-time parsing and storage in module attributes
+
+#### Items to ignore
+
+- `_browserify/` and `_cljs/`: ClojureScript projects, handle manually later
+- `_site/`: Jekyll build output, not needed
+- Ruby-specific config (`Gemfile`, `Gemfile.lock`): remove after migration
+
 ## Detailed Implementation Plan
 
 ### Architecture Overview
