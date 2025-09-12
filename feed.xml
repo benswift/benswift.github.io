@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-08-20T11:07:44+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Running Claude Code within Zed</title><link href="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/" rel="alternate" type="text/html" title="Running Claude Code within Zed" /><published>2025-07-23T00:00:00+10:00</published><updated>2025-07-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/23/running-claude-code-within-zed</id><content type="html" xml:base="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/"><![CDATA[<p>After several months using Zed’s built-in
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-09-12T16:17:58+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp</title><link href="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/" rel="alternate" type="text/html" title="The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp" /><published>2025-09-12T00:00:00+10:00</published><updated>2025-09-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp</id><content type="html" xml:base="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/"><![CDATA[<p>For years I was a happy user of
+<a href="https://www.djcbsoftware.nl/code/mu/mu4e.html">mu4e</a> in Emacs. But then a few
+years ago my employer turned off password-based IMAP auth and broke my (Office
+365-based) work email, so I had to make alternative email arrangements.</p>
+
+<p>I’ve recently rebuilt my entire email setup around neomutt (in Zed’s built-in
+terminal). I always knew that there was <em>some</em> way to do the Office365 OAuth2
+dance and hook things back up, so I took the plug and shaved the email yak
+again. And here, dear reader, are the results—may you not waste as many hours
+messing around as I did.</p>
+
+<h2 id="the-moving-parts">The moving parts</h2>
+
+<p>The new setup consists of:</p>
+
+<ul>
+  <li><strong>mbsync</strong> (built from source with SASL support) for IMAP sync with OAuth2</li>
+  <li><strong>cyrus-sasl-xoauth2</strong> mbsync plugin to handle the OAuth dance</li>
+  <li><strong>mu</strong> for fast email search and indexing</li>
+  <li><strong>neomutt</strong> as the email client</li>
+  <li><strong>msmtp</strong> for SMTP sending</li>
+  <li><strong>macOS Keychain</strong> for secure token storage</li>
+</ul>
+
+<p>Each tool does one thing well, which is the Unix way—even if it means more
+configuration files to maintain.</p>
+
+<h2 id="oauth2-the-tricky-bit">OAuth2: the tricky bit</h2>
+
+<p>Getting OAuth2 working with Office365 was the gnarliest part. You need to use
+the <code>mutt_oauth2.py</code> script with Thunderbird’s client ID
+(<code>9e5f94bc-e8a4-4e73-b8be-63364c29d753</code>) and the devicecode flow, since
+localhostauthcode doesn’t work with the way my O365 exchange server is set up.</p>
+
+<p>Here’s a snippet from my mbsyncrc showing how the OAuth token gets passed:</p>
+
+<pre><code>IMAPAccount anu
+Host outlook.office365.com
+Port 993
+AuthMech XOAUTH2
+User ben.swift@anu.edu.au
+PassCmd "/Users/ben/.dotfiles/mail/mutt_oauth2.py \
+  --decryption-pipe 'security find-generic-password -a ben.swift@anu.edu.au -s mutt_oauth2_anu -w' \
+  --encryption-pipe '/Users/ben/.dotfiles/mail/keychain-store.sh ben.swift@anu.edu.au mutt_oauth2_anu' \
+  /Users/ben/.dotfiles/mail/anu_oauth2_keychain_stub"
+</code></pre>
+
+<p>The <code>keychain-store.sh</code> wrapper script ensures tokens are stored securely in
+macOS Keychain rather than sitting around in plaintext files. If you’re on Linux
+you can switch my macOS-specific approach with suitable <code>pass</code> or <code>gpg</code>
+invocations.</p>
+
+<p class="hl-para">I needed to build mbsync and the cyrus-sasl-xoauth2 plugin from source with
+XOAUTH2 support (something I plan to upstream to the homebrew formula when I get
+a chance).</p>
+
+<h2 id="running-in-zed">Running in Zed</h2>
+
+<p>Since I’m a Zed user, I run neomutt in a fullscreen terminal task (same approach
+as my <a href="/blog/2025/07/23/running-claude-code-within-zed/">Claude Code
+setup</a>). Add
+this to your tasks.json:</p>
+
+<pre><code class="language-json">{
+  "label": "mutt",
+  "command": "neomutt",
+  "reveal": "always",
+  "use_new_terminal": true,
+  "allow_concurrent_runs": false
+}
+</code></pre>
+
+<p>I bind this task to a keyboard shortcut, then I’m one key command away from a
+fullscreen email client with all the Zed terminal niceties.</p>
+
+<h2 id="the-payoff">The payoff</h2>
+
+<p>Yes, it was a yak-shave. But now I have:</p>
+
+<ul>
+  <li>full control over my email workflow</li>
+  <li>lightning-fast search with mu (I tried notmuch, but the mu setup allows me to
+use normal IMAP folders—and that’s important because I have to check my
+email from multiple devices)</li>
+  <li>OAuth2 working seamlessly with Office365</li>
+  <li>everything running in my preferred editor</li>
+  <li>the tantalising prospect of replacing <em>all</em> the email parts of my job with a
+series of shell scripts (and claude code invocations)</li>
+</ul>
+
+<p>For the full config files and detailed setup instructions, check out
+<a href="https://github.com/benswift/.dotfiles/tree/main/mail/">my full email config on GitHub</a>.
+Fair warning: you’ll probably need to tweak things for your specific setup, but
+that’s half the fun.</p>]]></content><author><name>Ben Swift</name></author><category term="productivity" /><category term="email" /><summary type="html"><![CDATA[For years I was a happy user of mu4e in Emacs. But then a few years ago my employer turned off password-based IMAP auth and broke my (Office 365-based) work email, so I had to make alternative email arrangements.]]></summary></entry><entry><title type="html">Running Claude Code within Zed</title><link href="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/" rel="alternate" type="text/html" title="Running Claude Code within Zed" /><published>2025-07-23T00:00:00+10:00</published><updated>2025-07-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/23/running-claude-code-within-zed</id><content type="html" xml:base="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/"><![CDATA[<p>After several months using Zed’s built-in
 <a href="https://zed.dev/docs/ai/agent-panel">Agent panel</a> I’ve switched to Claude Code.
 The main reason is cost. I’m still using the same models—still primarily
 Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs
@@ -670,11 +763,4 @@ were.</p>
 painstaking research, then give the above prompts a try.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[I was recently tasked with organising a trivia night, and decided to generate all the questions (and answers) with a large language model (I used Claude, although obviously this would work with any model.]]></summary></entry><entry><title type="html">Livecoding set ICLC’24 - Shanghai Concert Hall</title><link href="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/" rel="alternate" type="text/html" title="Livecoding set ICLC’24 - Shanghai Concert Hall" /><published>2024-05-30T00:00:00+10:00</published><updated>2024-05-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall</id><content type="html" xml:base="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/"><![CDATA[<p>I’m currently in Shanghai tomorrow night I’ll be performing at the <a href="https://www.shanghaiconcerthall.org/">Shanghai Concert Hall</a> as part of <a href="https://iclc.toplap.org/2024/program.html#table-day2">ICLC ‘24</a>. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.</p>
 
 <p>I’ll try and put up a video of the performance (I’ll be doing music, with LXT
-and Beverly Edwards on visuals) once it’s all done.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[I’m currently in Shanghai tomorrow night I’ll be performing at the Shanghai Concert Hall as part of ICLC ‘24. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.]]></summary></entry><entry><title type="html">Congrats Dr. Chenchen Xu</title><link href="https://benswift.me/blog/2023/06/01/congrats-dr-chenchen-xu/" rel="alternate" type="text/html" title="Congrats Dr. Chenchen Xu" /><published>2023-06-01T00:00:00+10:00</published><updated>2023-06-01T00:00:00+10:00</updated><id>https://benswift.me/blog/2023/06/01/congrats-dr-chenchen-xu</id><content type="html" xml:base="https://benswift.me/blog/2023/06/01/congrats-dr-chenchen-xu/"><![CDATA[<p>A big congratulations do my PhD student Chenchen for successfully completing his
-PhD; his thesis title was <em>Weakly Supervised Vision and Language Representation
-Learning in Sign Language Understanding</em>. It’s freelly available online from the
-<a href="https://openresearch-repository.anu.edu.au/items/174662f9-0aba-4ed2-a340-eea1574969b4">ANU Library</a>.</p>
-
-<p>Not only did he do excellent work, but (look at the date!) did a lot of it
-alone, under lockdown. Really tough circumstances and a credit to you Chenchen
-for coming out the other side.</p>]]></content><author><name>Ben Swift</name></author><category term="research" /><category term="ai" /><summary type="html"><![CDATA[A big congratulations do my PhD student Chenchen for successfully completing his PhD; his thesis title was Weakly Supervised Vision and Language Representation Learning in Sign Language Understanding. It’s freelly available online from the ANU Library.]]></summary></entry></feed>
+and Beverly Edwards on visuals) once it’s all done.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[I’m currently in Shanghai tomorrow night I’ll be performing at the Shanghai Concert Hall as part of ICLC ‘24. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.]]></summary></entry></feed>
