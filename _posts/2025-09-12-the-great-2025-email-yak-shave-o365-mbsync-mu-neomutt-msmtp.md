@@ -1,6 +1,6 @@
 ---
 title: "The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp"
-tags: productivity email
+tags: tools
 ---
 
 For years I was a happy user of
