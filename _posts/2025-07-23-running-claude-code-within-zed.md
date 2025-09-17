@@ -60,3 +60,19 @@ management, and figuring out how to communicate to an LLM what needs to be done
 in clear, concise language---is unchanged.
 
 If this helps you get the most out of your setup, then happy Claude-in-Zedding.
+
+## Update (2025-09-18)
+
+I've since wrapped the Claude CLI in a tmux session to make the workflow even
+smoother. This means:
+
+- each project gets its own persistent Claude session that keeps running after
+  Zed is closed (especially useful for remote Zed sessions where you want the
+  agent to keep working)
+- you can easily reconnect to an existing Claude conversation when switching
+  between projects
+- the session names automatically match your project directory names
+
+The wrapper script (`claude-tmux`) and updated Zed task configuration are
+[in my dotfiles](https://github.com/benswift/.dotfiles) if you want to steal
+them.
