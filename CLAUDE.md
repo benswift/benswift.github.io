@@ -1,5 +1,13 @@
 # benswift.me blog post writing style guide
 
+## Building the site
+
+If jekyll build fails with a missing bluesky.svg error, run:
+```
+./scripts/add-bluesky-icon.sh
+```
+This adds the Bluesky Font Awesome icon (which isn't in the jekyll-fontawesome-svg gem yet).
+
 ## Voice and tone
 
 Write in a conversational, academic style that's accessible without being dumbed
