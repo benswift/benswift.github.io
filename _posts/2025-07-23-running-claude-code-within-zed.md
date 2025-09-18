@@ -1,6 +1,6 @@
 ---
 title: Running Claude Code within Zed
-tags: ai zed
+tags: ai tools zed
 ---
 
 After several months using Zed's built-in
