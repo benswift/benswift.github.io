@@ -8,7 +8,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Sound file I/O in Extempore with libsndfile | benswift.me</title>
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Sound file I/O in Extempore with libsndfile" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
@@ -94,7 +94,7 @@ libsndfile wrapper functions:</p>
 <pre><code class="language-xtlang">(sys:load "libs/external/sndfile.xtm")
 </code></pre>
 
-<p><code>libs/external/sndlib.xtm</code> contains <code>bind-lib</code> definitions for all<sup id="fnref:pm-all" role="doc-noteref"><a href="#fn:pm-all" class="footnote" rel="footnote">1</a></sup> the
+<p><code>libs/external/sndlib.xtm</code> contains <code>bind-lib</code> definitions for all<sup id="fnref:pm-all"><a href="#fn:pm-all" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> the
 functions in the libsndfile library (compare that file to the <a href="https://github.com/erikd/libsndfile/blob/master/src/sndfile.h.in">C
 header</a> to see
 for yourself).</p>
@@ -200,7 +200,7 @@ environment (the outer <code>let</code>) to</p>
 
 <ol>
   <li>get the number of frames/channels from the file</li>
-  <li>allocate a <code>SAMPLE</code><sup id="fnref:sample" role="doc-noteref"><a href="#fn:sample" class="footnote" rel="footnote">2</a></sup> buffer big enough to fit all the audio data</li>
+  <li>allocate a <code>SAMPLE</code><sup id="fnref:sample"><a href="#fn:sample" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> buffer big enough to fit all the audio data</li>
   <li>read the audio file data into this buffer</li>
 </ol>
 
@@ -314,10 +314,10 @@ list</a>.</p>
     if you’re interested.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:pm-all" role="doc-endnote">
+    <li id="fn:pm-all">
       <p>well, <em>pretty much</em> all <a href="#fnref:pm-all" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:sample" role="doc-endnote">
+    <li id="fn:sample">
       <p><code>SAMPLE</code> is an alias for <code>float</code> by default <a href="#fnref:sample" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
@@ -384,9 +384,9 @@ list</a>.</p>
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>0e4091427</code> (see
+    site revision <code>5df65e86c</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/0e4091427/_posts/2019-10-15-sound-file-io-in-extempore-with-libsndfile.md"
+      href="https://github.com/benswift/benswift.github.io/blob/5df65e86c/_posts/2019-10-15-sound-file-io-in-extempore-with-libsndfile.md"
       >source</a
     >,
     <a

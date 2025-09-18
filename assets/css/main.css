@@ -502,19 +502,23 @@ a {
   color: rgb(120.5, 48.5, 136);
   text-decoration: none;
   font-weight: 700;
-  transition-property: color, background-color;
-  transition-duration: 0.5s;
 }
 a:hover {
   color: #fafafa;
   background-color: #333;
 }
+a {
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+}
 a.anchorjs-link {
   color: #be2edd;
-  background-color: inherit;
 }
 a.anchorjs-link:hover {
   color: rgb(120.5, 48.5, 136);
+}
+a.anchorjs-link {
+  background-color: inherit;
 }
 
 h1,
@@ -617,9 +621,6 @@ header {
   grid-area: header;
   padding: 2rem 0 1rem 0;
 }
-header nav.logo {
-  margin-bottom: 15px;
-}
 header nav.logo a {
   font-size: 1.3rem;
   background: linear-gradient(to left, #be2edd, rgb(139.5432098765, 26.6543209877, 163.8456790123));
@@ -628,6 +629,9 @@ header nav.logo a {
 }
 header nav.logo a:hover {
   text-decoration: underline;
+}
+header nav.logo {
+  margin-bottom: 15px;
 }
 header a {
   font-weight: 900;

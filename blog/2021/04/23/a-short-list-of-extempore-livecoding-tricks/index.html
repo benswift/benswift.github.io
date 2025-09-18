@@ -8,7 +8,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>A short list of Extempore livecoding tricks | benswift.me</title>
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="A short list of Extempore livecoding tricks" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
@@ -244,7 +244,7 @@ potentially do tests/operations on said variables to change them for future call
 value that <code>pitch</code> can take) is represented as the head (<code>cdr</code>) of one of the
 lists. But as long as you satisfy that invariant then the <code>obi-lead</code> markov
 process will just keep on playing the <code>pitch</code> as it travels through time and
-space<sup id="fnref:mb" role="doc-noteref"><a href="#fn:mb" class="footnote" rel="footnote">1</a></sup>.</p>
+space<sup id="fnref:mb"><a href="#fn:mb" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>.</p>
   </li>
 </ul>
 
@@ -462,7 +462,7 @@ until the <code>pitch</code> argument gets to <code>72</code>.</p>
 flexible. You can handle those things however you like.</p>
 
 <p>One other approach to doing this is a recursion approach straight out of the
-functional programming handbook<sup id="fnref:little-schemer" role="doc-noteref"><a href="#fn:little-schemer" class="footnote" rel="footnote">2</a></sup>, just with a temporal twist.
+functional programming handbook<sup id="fnref:little-schemer"><a href="#fn:little-schemer" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>, just with a temporal twist.
 The key idea: start with a list, recurring on the <code>cdr</code> (i.e. the tail of the
 list) each time until it’s empty, then stopping.</p>
 
@@ -550,7 +550,7 @@ situation.</p>
 
 <h2 id="audio-underflow-are-you-pushing-extempore-too-hard">Audio underflow: are you pushing extempore too hard?</h2>
 
-<p>The sharedsystem is actually kindof heavyweight<sup id="fnref:cpu-requirements" role="doc-noteref"><a href="#fn:cpu-requirements" class="footnote" rel="footnote">3</a></sup> (or at least medium-weight) from
+<p>The sharedsystem is actually kindof heavyweight<sup id="fnref:cpu-requirements"><a href="#fn:cpu-requirements" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> (or at least medium-weight) from
 a CPU use perspective. It loads up 4 analogue synths and a sampler, plus some FX
 (e.g. global convolution reverb) and tries to distribute them across multiple
 cores on your machine.</p>
@@ -604,15 +604,15 @@ can just load that file with e.g.</p>
 check if there’s sound coming out.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:mb" role="doc-endnote">
+    <li id="fn:mb">
       <p>to the <a href="https://www.youtube.com/watch?v=uf723IeStzc">world of the Mighty Boosh</a> <a href="#fnref:mb" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:little-schemer" role="doc-endnote">
+    <li id="fn:little-schemer">
 
       <p>that’s not just an idiom, I’m actually thinking of a <a href="https://mitpress.mit.edu/books/little-schemer-fourth-edition">specific
 book</a> <a href="#fnref:little-schemer" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:cpu-requirements" role="doc-endnote">
+    <li id="fn:cpu-requirements">
 
       <p>I mean, it’s still supposed to work on a half-decent laptop—it shouldn’t
 require a real beast—but if you’re on a particularly old/wheezy machine
@@ -685,9 +685,9 @@ lighter-weight DSP chain, and from there you could add only the instruments
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>0e4091427</code> (see
+    site revision <code>5df65e86c</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/0e4091427/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md"
+      href="https://github.com/benswift/benswift.github.io/blob/5df65e86c/_posts/2021-04-23-a-short-list-of-extempore-livecoding-tricks.md"
       >source</a
     >,
     <a

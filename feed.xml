@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-09-12T17:52:57+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp</title><link href="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/" rel="alternate" type="text/html" title="The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp" /><published>2025-09-12T00:00:00+10:00</published><updated>2025-09-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp</id><content type="html" xml:base="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/"><![CDATA[<p>For years I was a happy user of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-09-18T10:18:53+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp</title><link href="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/" rel="alternate" type="text/html" title="The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp" /><published>2025-09-12T00:00:00+10:00</published><updated>2025-09-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp</id><content type="html" xml:base="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/"><![CDATA[<p>For years I was a happy user of
 <a href="https://www.djcbsoftware.nl/code/mu/mu4e.html">mu4e</a> in Emacs. But then a few
 years ago my employer turned off password-based IMAP auth and broke my (Office
 365-based) work email, so I had to make alternative email arrangements.</p>
@@ -91,7 +91,7 @@ series of shell scripts (and claude code invocations)</li>
 <p>For the full config files and detailed setup instructions, check out
 <a href="https://github.com/benswift/.dotfiles/tree/main/mail/">my full email config on GitHub</a>.
 Fair warning: you’ll probably need to tweak things for your specific setup, but
-that’s half the fun.</p>]]></content><author><name>Ben Swift</name></author><category term="productivity" /><category term="email" /><summary type="html"><![CDATA[For years I was a happy user of mu4e in Emacs. But then a few years ago my employer turned off password-based IMAP auth and broke my (Office 365-based) work email, so I had to make alternative email arrangements.]]></summary></entry><entry><title type="html">Running Claude Code within Zed</title><link href="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/" rel="alternate" type="text/html" title="Running Claude Code within Zed" /><published>2025-07-23T00:00:00+10:00</published><updated>2025-07-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/23/running-claude-code-within-zed</id><content type="html" xml:base="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/"><![CDATA[<p>After several months using Zed’s built-in
+that’s half the fun.</p>]]></content><author><name>Ben Swift</name></author><category term="tools" /><summary type="html"><![CDATA[For years I was a happy user of mu4e in Emacs. But then a few years ago my employer turned off password-based IMAP auth and broke my (Office 365-based) work email, so I had to make alternative email arrangements.]]></summary></entry><entry><title type="html">Running Claude Code within Zed</title><link href="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/" rel="alternate" type="text/html" title="Running Claude Code within Zed" /><published>2025-07-23T00:00:00+10:00</published><updated>2025-07-23T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/23/running-claude-code-within-zed</id><content type="html" xml:base="https://benswift.me/blog/2025/07/23/running-claude-code-within-zed/"><![CDATA[<p>After several months using Zed’s built-in
 <a href="https://zed.dev/docs/ai/agent-panel">Agent panel</a> I’ve switched to Claude Code.
 The main reason is cost. I’m still using the same models—still primarily
 Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs
@@ -151,7 +151,25 @@ future I’d happily switch to another provider. The main skill—context
 management, and figuring out how to communicate to an LLM what needs to be done
 in clear, concise language—is unchanged.</p>
 
-<p>If this helps you get the most out of your setup, then happy Claude-in-Zedding.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="zed" /><summary type="html"><![CDATA[After several months using Zed’s built-in Agent panel I’ve switched to Claude Code. The main reason is cost. I’m still using the same models—still primarily Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs per-token billing via the Anthropic API. I was racking up a lot of costs (around 100USD/week) even with a bit of restraint, although still using it fairly heavily during all work days.]]></summary></entry><entry><title type="html">Agentic AI: LLMs with stones</title><link href="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/" rel="alternate" type="text/html" title="Agentic AI: LLMs with stones" /><published>2025-07-17T00:00:00+10:00</published><updated>2025-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones</id><content type="html" xml:base="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/"><![CDATA[<blockquote>
+<p>If this helps you get the most out of your setup, then happy Claude-in-Zedding.</p>
+
+<h2 id="update-2025-09-18">Update (2025-09-18)</h2>
+
+<p>I’ve since wrapped the Claude CLI in a tmux session to make the workflow even
+smoother. This means:</p>
+
+<ul>
+  <li>each project gets its own persistent Claude session that keeps running after
+Zed is closed (especially useful for remote Zed sessions where you want the
+agent to keep working)</li>
+  <li>you can easily reconnect to an existing Claude conversation when switching
+between projects</li>
+  <li>the session names automatically match your project directory names</li>
+</ul>
+
+<p>The wrapper script (<code>claude-tmux</code>) and updated Zed task configuration are
+<a href="https://github.com/benswift/.dotfiles">in my dotfiles</a> if you want to steal
+them.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="tools" /><category term="zed" /><summary type="html"><![CDATA[After several months using Zed’s built-in Agent panel I’ve switched to Claude Code. The main reason is cost. I’m still using the same models—still primarily Sonnet (and occasionally Opus) 4—but using them via the Agent panel incurs per-token billing via the Anthropic API. I was racking up a lot of costs (around 100USD/week) even with a bit of restraint, although still using it fairly heavily during all work days.]]></summary></entry><entry><title type="html">Agentic AI: LLMs with stones</title><link href="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/" rel="alternate" type="text/html" title="Agentic AI: LLMs with stones" /><published>2025-07-17T00:00:00+10:00</published><updated>2025-07-17T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones</id><content type="html" xml:base="https://benswift.me/blog/2025/07/17/agentic-ai-llms-with-stones/"><![CDATA[<blockquote>
   <p>Sticks and stones may break my bones, but words will never hurt me.</p>
 </blockquote>
 
@@ -190,7 +208,7 @@ for example:
     </ul>
   </li>
   <li>instead of only being able to respond with text, the LLM can
-respond<sup id="fnref:tool-call-llm" role="doc-noteref"><a href="#fn:tool-call-llm" class="footnote" rel="footnote">1</a></sup> with a “tool call” instruction, to continue the
+respond<sup id="fnref:tool-call-llm"><a href="#fn:tool-call-llm" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> with a “tool call” instruction, to continue the
 example:
     <ul>
       <li>use tool <code>calendar</code> to “add a meeting with John at 10am tomorrow”</li>
@@ -277,7 +295,7 @@ things). But I think that’s the right question to be asking when it comes to
 agentic AI.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:tool-call-llm" role="doc-endnote">
+    <li id="fn:tool-call-llm">
 
       <p>The LLM needs to be specially trained to support this, but all of the main
 ones do these days. <a href="#fnref:tool-call-llm" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
@@ -289,7 +307,7 @@ Chromium “kiosks” with a pre-set URL (network connected, but with no
 keyboard/mouse).</p>
 
 <p>They’ve all needed slightly different kiosk URLs, and I <em>hate</em> doing this sort
-of busy-work by hand. So I’ve spent longer than I’d like to admit<sup id="fnref:time" role="doc-noteref"><a href="#fn:time" class="footnote" rel="footnote">1</a></sup> putting
+of busy-work by hand. So I’ve spent longer than I’d like to admit<sup id="fnref:time"><a href="#fn:time" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> putting
 together a fully scripted burn-and-boot process. My non-negotiables were:</p>
 
 <ul>
@@ -345,7 +363,7 @@ compositor (RPi OS default)</li>
 <p>I hope this saves you some time. Use it to hug your loved ones.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:time" role="doc-endnote">
+    <li id="fn:time">
       <p>I thought it’d take a day, it’s taken about a week, on and off :( <a href="#fnref:time" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>

@@ -8,7 +8,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Running Claude Code within Zed | benswift.me</title>
-<meta name="generator" content="Jekyll v4.3.4" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Running Claude Code within Zed" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
@@ -75,6 +75,10 @@
   
   <a class="post-tag" href='/blog/tag/ai'>
 	ai
+  </a>
+  
+  <a class="post-tag" href='/blog/tag/tools'>
+	tools
   </a>
   
   <a class="post-tag" href='/blog/tag/zed'>
@@ -146,6 +150,24 @@ in clear, concise language—is unchanged.</p>
 
 <p>If this helps you get the most out of your setup, then happy Claude-in-Zedding.</p>
 
+<h2 id="update-2025-09-18">Update (2025-09-18)</h2>
+
+<p>I’ve since wrapped the Claude CLI in a tmux session to make the workflow even
+smoother. This means:</p>
+
+<ul>
+  <li>each project gets its own persistent Claude session that keeps running after
+Zed is closed (especially useful for remote Zed sessions where you want the
+agent to keep working)</li>
+  <li>you can easily reconnect to an existing Claude conversation when switching
+between projects</li>
+  <li>the session names automatically match your project directory names</li>
+</ul>
+
+<p>The wrapper script (<code>claude-tmux</code>) and updated Zed task configuration are
+<a href="https://github.com/benswift/.dotfiles">in my dotfiles</a> if you want to steal
+them.</p>
+
 </article>
 
 
@@ -207,9 +229,9 @@ in clear, concise language—is unchanged.</p>
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>0e4091427</code> (see
+    site revision <code>5df65e86c</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/0e4091427/_posts/2025-07-23-running-claude-code-within-zed.md"
+      href="https://github.com/benswift/benswift.github.io/blob/5df65e86c/_posts/2025-07-23-running-claude-code-within-zed.md"
       >source</a
     >,
     <a
