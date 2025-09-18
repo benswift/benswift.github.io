@@ -4,12 +4,12 @@ source 'https://rubygems.org'
 
 gem 'base64'
 gem 'csv'
-gem 'jekyll', '~> 4.2'
+gem 'jekyll', '~> 4.4'
 gem 'webrick'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'bibtex-ruby', '~> 5'
+  gem 'bibtex-ruby', '~> 6'
   gem 'jekyll-feed'
   gem 'jekyll-fontawesome-svg'
   gem 'jekyll-paginate-v2', github: 'mmistakes/jekyll-paginate-v2', branch: 'jekyll-v4'
