@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-09-18T10:25:43+10:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp</title><link href="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/" rel="alternate" type="text/html" title="The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp" /><published>2025-09-12T00:00:00+10:00</published><updated>2025-09-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp</id><content type="html" xml:base="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/"><![CDATA[<p>For years I was a happy user of
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-10-08T12:57:05+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Cybernetic Studio Launch @ SXSW Sydney</title><link href="https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney/" rel="alternate" type="text/html" title="Cybernetic Studio Launch @ SXSW Sydney" /><published>2025-10-08T00:00:00+11:00</published><updated>2025-10-08T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney</id><content type="html" xml:base="https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney/"><![CDATA[<p>I’m launching the <strong>Cybernetic Studio</strong> next week (Oct 15) at
+<a href="https://www.sxswsydney.com">SXSW Sydney</a>. If you’re attending, come to
+Chippendale on Wednesday afternoon (search for
+<a href="https://www.sxswsydney.com/lineup?date=2025-10-15&amp;showSession=781823"><em>Cybernetic Studio Launch</em> in the SXSW app</a>
+for details) and see what we’ve been building.</p>
+
+<p>The Cybernetic Studio is a lab-style initiative exploring responsible innovation
+through creative, embodied approaches to technology. Which is a fancy way of
+saying: we build things to think with<sup id="fnref:making-to-think"><a href="#fn:making-to-think" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>, and we try to do it in
+ways that don’t just reproduce the surveillance capitalism playbook. Nam Jun
+Paik used technology in order to hate it properly, the Studio aims to carry on
+that noble tradition.</p>
+
+<p>The launch project is “Human Scale AI”—an attempt to slow computations down
+and blow them up so we can actually see them at work. Two artefacts I’ll be
+showing:</p>
+
+<ul>
+  <li>
+    <p><strong>Perceptron Apparatus</strong>: a 1.2 metre diameter wooden table that functions as
+an “Abacus for AI”. Is it an abacus? Is it an ouija board? No, it’s a physical
+device capable of performing the Artificial Neural Network calculations that
+underpin all of modern AI. The apparatus can actually perform real AI tasks
+(e.g. image recognition, data classification) if you have a <em>lot</em> of time and
+a willingness to multiply numbers using concentric wooden rings. It’s part
+séance, part computational theatre, part “explainable AI”, and asks where the
+“intelligence” lives when the computation is distributed across human
+operators and a wooden table.</p>
+  </li>
+  <li>
+    <p><strong>My First LM</strong>: a hands-on activity where you build and use a language model
+with paper grids, dice, and children’s books. You manually create word
+co-occurrence grids (the training phase), then use dice to sample from those
+distributions to generate new text (the prediction phase). It’s remarkably
+effective at teaching the train-predict-sample cycle—people get it in a way
+that no amount of explaining “transformers” or “attention mechanisms” ever
+achieves. The activity scales up through different ideas in Large Language
+Models—bigram/trigram models, embedding vectors, alternative sampling
+procedures, even LoRAs—to show how the same model can behave differently
+depending on how you use it.<sup id="fnref:demystification"><a href="#fn:demystification" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+</ul>
+
+<p>Both pieces are about materiality and scale. Can you understand something
+differently when you can touch it, when it operates at human perception speed,
+when you can see all the moving parts at once? I suspect yes, but that’s what
+the studio is for—figuring out what actually works.</p>
+
+<p>The event is hosted with Dr. Cath Ball, who always brings the juice. Should be
+good conversations.</p>
+
+<p>It’s ticketed, but if you’re a SXSW badge-holder you you can register via the
+app. Come along, have a few drinks on us, see some interesting human-scale AI
+artefacts, have some interesting conversations about where this is all heading.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:making-to-think">
+
+      <p>This is the core of research-through-practice—you can’t think your way to
+understanding complex sociotechnical systems, you have to build them and
+watch how they fail. <a href="#fnref:making-to-think" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:demystification">
+
+      <p>There’s a particular kind of technical literacy I’m after here. Not
+“everyone should learn to code”, but rather “everyone should have access to
+mental models that aren’t just anthropomorphic vibes about what AI wants or
+thinks.” <a href="#fnref:demystification" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="studio" /><category term="ai" /><summary type="html"><![CDATA[I’m launching the Cybernetic Studio next week (Oct 15) at SXSW Sydney. If you’re attending, come to Chippendale on Wednesday afternoon (search for Cybernetic Studio Launch in the SXSW app for details) and see what we’ve been building.]]></summary></entry><entry><title type="html">The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp</title><link href="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/" rel="alternate" type="text/html" title="The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp" /><published>2025-09-12T00:00:00+10:00</published><updated>2025-09-12T00:00:00+10:00</updated><id>https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp</id><content type="html" xml:base="https://benswift.me/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/"><![CDATA[<p>For years I was a happy user of
 <a href="https://www.djcbsoftware.nl/code/mu/mu4e.html">mu4e</a> in Emacs. But then a few
 years ago my employer turned off password-based IMAP auth and broke my (Office
 365-based) work email, so I had to make alternative email arrangements.</p>
@@ -778,7 +848,4 @@ to be too many hallucinations. In some ways it would have been more fun if there
 were.</p>
 
 <p>Anyway if you need to organise a trivia night and don’t want to do any
-painstaking research, then give the above prompts a try.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[I was recently tasked with organising a trivia night, and decided to generate all the questions (and answers) with a large language model (I used Claude, although obviously this would work with any model.]]></summary></entry><entry><title type="html">Livecoding set ICLC’24 - Shanghai Concert Hall</title><link href="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/" rel="alternate" type="text/html" title="Livecoding set ICLC’24 - Shanghai Concert Hall" /><published>2024-05-30T00:00:00+10:00</published><updated>2024-05-30T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall</id><content type="html" xml:base="https://benswift.me/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall/"><![CDATA[<p>I’m currently in Shanghai tomorrow night I’ll be performing at the <a href="https://www.shanghaiconcerthall.org/">Shanghai Concert Hall</a> as part of <a href="https://iclc.toplap.org/2024/program.html#table-day2">ICLC ‘24</a>. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.</p>
-
-<p>I’ll try and put up a video of the performance (I’ll be doing music, with LXT
-and Beverly Edwards on visuals) once it’s all done.</p>]]></content><author><name>Ben Swift</name></author><summary type="html"><![CDATA[I’m currently in Shanghai tomorrow night I’ll be performing at the Shanghai Concert Hall as part of ICLC ‘24. I’m told tickets are already sold out, but if you’ve already got one and you’re coming along then come say hi after the set.]]></summary></entry></feed>
+painstaking research, then give the above prompts a try.</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[I was recently tasked with organising a trivia night, and decided to generate all the questions (and answers) with a large language model (I used Claude, although obviously this would work with any model.]]></summary></entry></feed>
