@@ -3,9 +3,10 @@ title: Cybernetic Studio Launch @ SXSW Sydney
 tags: studio ai
 ---
 
-I'm launching the **Cybernetic Studio** next week (Oct 15) at
-[SXSW Sydney](https://www.sxswsydney.com). If you're attending, come to
-Chippendale on Wednesday afternoon (search for
+I'm launching the
+[**Cybernetic Studio**](https://cybernetics.anu.edu.au/cybernetic-studio/) next
+week (Oct 15) at [SXSW Sydney](https://www.sxswsydney.com). If you're attending,
+come to Chippendale on Wednesday afternoon (search for
 [_Cybernetic Studio Launch_ in the SXSW app](https://www.sxswsydney.com/lineup?date=2025-10-15&showSession=781823)
 for details) and see what we've been building.
 
