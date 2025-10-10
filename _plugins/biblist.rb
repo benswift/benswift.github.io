@@ -213,11 +213,12 @@ def copy_preprint_pdfs(_site)
   bib.each do |b|
     pdf_filename = b[:file]
     if pdf_filename&.end_with?('.pdf')
-      FileUtils.cp(pdf_filename, "assets/documents/preprints/#{File.basename(pdf_filename)}")
+      dest = "assets/documents/preprints/#{File.basename(pdf_filename)}"
+      FileUtils.cp(pdf_filename, dest) unless File.exist?(dest)
     end
   end
 end
 
-# Jekyll::Hooks.register :site, :pre_render do |site|
-#   copy_preprint_pdfs site
-# end
+Jekyll::Hooks.register :site, :pre_render do |site|
+  copy_preprint_pdfs site
+end
