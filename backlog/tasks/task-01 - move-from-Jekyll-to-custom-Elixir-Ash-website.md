@@ -13,9 +13,9 @@ dependencies: []
 We need to move this website from a static Jekyll site to a custom Elixir/Ash
 (non-static) website. A sketch of the plan would be:
 
-- keep the blog posts and other "web content" md files as-is, and wrap them in a
-  custom Ash resource/action which used MDEx to convert them on the fly in
-  response to requests
+- keep the blog posts and other "web content" md files as-is, ingest them at
+  runtime via an Ash resource backed by `Ash.DataLayer.Ets`, and use MDEx during
+  ingestion to render HTML that we cache for later reads
 - use phoenix liveview and presences to add cool dynamic features that aren't
   currently possible with a static website
 - ditch pretty much all the sass/css from the current website; re-write a new
@@ -37,9 +37,10 @@ iterate through every page and make sure that the new one responded with the
 same content (modulo styling changes... in the short term, checking that it
 least didn't 404).
 
-Additionally, google pagespeed insights and a11y would need to be part of the
-tests as well---that stuff has been a priority for the jeykll site, and should
-continue to be so going forward.
+Additionally, I still want automated safety rails: a crawler-driven link check
+that walks the legacy sitemap and confirms there are no 404s after the move.
+Pagespeed and a11y audits can stay as separate CI tasks or manual jobs instead
+of blocking the main test suite.
 
 The current jekyll site has one particular custom plugin which reads a BibTeX
 (`*.bib`) file and uses that information to populate a list of citations on e.g.
@@ -56,46 +57,60 @@ the main "Research" page. I would need to duplicate this in Ash/Elixir as well.
 
 ### Jekyll tag and filter migration
 
-Part of the migration should be removing the Jekyll (i.e. Ruby) tags and filters in the md files and replacing them with (in order of preference):
+Part of the migration should be removing the Jekyll (i.e. Ruby) tags and filters
+in the md files and replacing them with (in order of preference):
 
-- custom HTML elements, as per https://deanebarker.net/tech/blog/custom-elements-markdown/
+- custom HTML elements, as per
+  https://deanebarker.net/tech/blog/custom-elements-markdown/
 - replace with normal HTML (if it's not too messy)
 - investigate if MDEx allows for Elixir-style compile-time filters
 
 ### Jekyll-specific parts migration strategy
 
-#### _includes files
+#### \_includes files
 
-The `_includes` folder contains reusable HTML snippets used throughout the site. Migration approach:
+The `_includes` folder contains reusable HTML snippets used throughout the site.
+Migration approach:
 
-- **Layout partials** (`head.html`, `header.html`, `footer.html`): convert to Phoenix components in `lib/blog_web/components/`
-- **Analytics/tracking** (`analytics.html`, `anchorjs.html`, `hljs.html`): convert to Phoenix hooks or components
-- **Content helpers** (`cc-link.html`, `picture.html`, `qrcode.html`, `youtube.html`, `toc.html`, `taglist.html`): convert to Phoenix function components
-- **Slide components** (`slides/*.html`): defer migration (see reveal.js section below)
-- **Markdown includes** (`blurbs/I-am-paragraphs.md`): convert to Elixir functions that return compiled HTML
+- **Layout partials** (`head.html`, `header.html`, `footer.html`): convert to
+  Phoenix components in `lib/blog_web/components/`
+- **Analytics/tracking** (`analytics.html`, `anchorjs.html`, `hljs.html`):
+  convert to Phoenix hooks or components
+- **Content helpers** (`cc-link.html`, `picture.html`, `qrcode.html`,
+  `youtube.html`, `toc.html`, `taglist.html`): convert to Phoenix function
+  components
+- **Slide components** (`slides/*.html`): defer migration (see reveal.js section
+  below)
+- **Markdown includes** (`blurbs/I-am-paragraphs.md`): convert to Elixir
+  functions that return compiled HTML
 
-#### _talks and reveal.js presentations
+#### \_talks and reveal.js presentations
 
-The `_talks` folder contains reveal.js-powered markdown presentations that heavily use Jekyll includes. Migration approach:
+The `_talks` folder contains reveal.js-powered markdown presentations that
+heavily use Jekyll includes. Migration approach:
 
 - **Short-term**: do not attempt to port the reveal.js system initially
 - **Options**:
   - export all presentations as static HTML files and serve them statically
   - keep the reveal.js infrastructure separate from the main Phoenix app
-  - potentially integrate reveal.js later as a separate LiveView component if needed
-- **Note**: these presentations use `{% include slides/*.html %}` tags extensively which would need custom handling
+  - potentially integrate reveal.js later as a separate LiveView component if
+    needed
+- **Note**: these presentations use `{% include slides/*.html %}` tags
+  extensively which would need custom handling
 
-#### _plugins
+#### \_plugins
 
 Custom Jekyll plugins that need Elixir equivalents:
 
-- `biblist.rb` & `livecoding-bib.rb`: already covered with `bibtex_parser` in the plan
-- `browserify.rb` & `cljs-build.rb`: skip (ClojureScript build system, handle manually if needed)
+- `biblist.rb` & `livecoding-bib.rb`: already covered with `bibtex_parser` in
+  the plan
+- `browserify.rb` & `cljs-build.rb`: skip (ClojureScript build system, handle
+  manually if needed)
 - `revealify.rb`: skip (part of reveal.js system)
 - `jekyll-git-hash.rb`: implement as compile-time function using `:os.cmd/1`
 - `htmlproofer.rb`: use external CI/CD tool or Elixir testing
 
-#### _layouts
+#### \_layouts
 
 Jekyll layouts to convert to Phoenix layouts/templates:
 
@@ -104,23 +119,26 @@ Jekyll layouts to convert to Phoenix layouts/templates:
 - `paginated.html`: Phoenix component with pagination logic
 - `reveal-with-fa.html`: defer (part of reveal.js system)
 
-#### _data files
+#### \_data files
 
 The `_data` folder contains:
 
-- YAML files (`amphibology.yml`): parse at compile time with `yaml_elixir`
+- YAML files (`amphibology.yml`): parse at runtime via the content loader using
+  `yaml_elixir`
 - BibTeX files (`ben-pubs.bib`): already covered in plan
-- CSV files (FoR codes): parse at compile time with CSV library
+- CSV files (FoR codes): parse at runtime with a lightweight CSV library
 - Ruby/Emacs processing scripts: skip or reimplement if needed
 
 #### Other Jekyll conventions
 
-- **Collections** (`_posts`, `_livecoding`): process as markdown files at compile time
+- **Collections** (`_posts`, `_livecoding`): process as markdown files at
+  runtime via the Ash loader
 - **Front matter**: already covered with `yaml_elixir`
 - **Liquid tags/filters**: replace as per Jekyll tag migration section above
 - **Pagination**: implement with Ash read actions
-- **Site variables** (`site.baseurl`, `site.title`): compile-time config or module attributes
-- **Data files access**: compile-time parsing and storage in module attributes
+- **Site variables** (`site.baseurl`, `site.title`): runtime config stored in
+  `Application` env
+- **Data files access**: runtime parsing into `Ash.DataLayer.Ets`
 
 #### Items to ignore
 
@@ -132,112 +150,107 @@ The `_data` folder contains:
 
 ### Architecture Overview
 
-The new Elixir/Ash website will use a compile-time markdown processing approach
-with Ash ManualRead actions to serve content without a traditional database. All
-markdown files will be compiled to HTML at build time using MDEx, with the
-compiled content stored in memory for fast access.
+The new Elixir/Ash website will rely on runtime ingestion backed by
+`Ash.DataLayer.Ets`, avoiding a traditional database while still letting Ash
+manage querying and actions. Markdown is parsed with MDEx when the app boots (or
+when the loader reloads), and the rendered HTML is cached in ETS for fast
+access.
 
-### 1. Content Processing Pipeline
+### 1. Runtime Content Loader
 
-#### Compile-time Markdown Processing
+#### Live Markdown Ingestion
 
-All markdown files will be processed at compile time using Elixir's
-`@external_resource` mechanism:
+Content is loaded at application boot (and reloadable on demand) instead of
+being baked into the BEAM. The loader scans the markdown directories, parses
+frontmatter with `YamlElixir`, renders HTML via MDEx, and bulk-upserts rows into
+an Ash resource backed by `Ash.DataLayer.Ets`.
 
 ```elixir
-# lib/blog/content/compiler.ex
-defmodule Blog.Content.Compiler do
+# lib/blog/content/loader.ex
+defmodule Blog.Content.Loader do
+  alias Blog.Post
+
   @posts_dir "priv/content/posts"
   @pages_dir "priv/content/pages"
+  @content_dirs [@posts_dir, @pages_dir]
 
-  # Track all markdown files for recompilation
-  for dir <- [@posts_dir, @pages_dir] do
-    @external_resource dir
+  def load_all(opts \\ []) do
+    include_drafts? = Keyword.get(opts, :include_drafts?, include_drafts?())
+
+    @content_dirs
+    |> collect_markdown_files()
+    |> Task.async_stream(&build_entry/1, ordered: false, max_concurrency: System.schedulers_online())
+    |> Stream.filter(&match?({:ok, _}, &1))
+    |> Stream.map(fn {:ok, entry} -> entry end)
+    |> reject_drafts(include_drafts?)
+    |> upsert_posts()
   end
 
-  # Process all content at compile time
-  def compile_all do
-    posts = compile_posts()
-    pages = compile_pages()
-    %{posts: posts, pages: pages}
-  end
+  def reload, do: load_all(force?: true)
 
-  defp compile_posts do
-    Path.wildcard("#{@posts_dir}/**/*.md")
-    |> Enum.map(&process_markdown_file/1)
-    |> Enum.filter(&filter_by_environment/1)
-    |> Enum.sort_by(& &1.date, {:desc, Date})
+  defp build_entry(path) do
+    with {:ok, file} <- File.read(path),
+         {:ok, frontmatter, markdown} <- parse_frontmatter(file) do
+      {:ok,
+       %{
+         slug: extract_slug_from_path(path),
+         source_path: path,
+         title: frontmatter["title"],
+         date: parse_date(frontmatter["date"]),
+         tags: frontmatter["tags"] || [],
+         draft?: frontmatter["draft"] || false,
+         frontmatter: frontmatter,
+         raw_markdown: markdown,
+         compiled_html: MDEx.to_html!(markdown, extension: [table: true, strikethrough: true]),
+         excerpt: generate_excerpt(markdown),
+         word_count: count_words(markdown),
+         reading_time: calculate_reading_time(markdown)
+       }}
+    end
   end
-
-  defp process_markdown_file(path) do
-    content = File.read!(path)
-    {frontmatter, markdown} = parse_frontmatter(content)
-
-    %{
-      slug: extract_slug_from_path(path),
-      title: frontmatter["title"],
-      date: parse_date(frontmatter["date"]),
-      tags: frontmatter["tags"] || [],
-      draft: frontmatter["draft"] || false,
-      frontmatter: frontmatter,
-      raw_markdown: markdown,
-      compiled_html: MDEx.to_html!(markdown, extension: [table: true, strikethrough: true]),
-      excerpt: generate_excerpt(markdown),
-      word_count: count_words(markdown),
-      reading_time: calculate_reading_time(markdown),
-      file_path: path
-    }
-  end
-
-  defp filter_by_environment(%{draft: true}) do
-    Application.get_env(:blog, :show_drafts, false)
-  end
-  defp filter_by_environment(_), do: true
-end
 ```
 
-#### In-Memory Storage
+`collect_markdown_files/1`, `parse_frontmatter/1`, and the helper functions for
+slug, excerpt, etc. live in dedicated modules so they can be reused in tests.
+`load_all/1` is called from the application supervisor (see the architecture
+section) so deploys and restarts always refresh the ETS-backed resource.
 
-Content will be stored in module attributes for zero-latency access:
+#### Ash Backed Storage
+
+`Blog.Post` uses `Ash.DataLayer.Ets`, so the values emitted by the loader are
+inserted via normal Ash changesets. Ash manages the ETS lifecycle and keeps
+queries fast without us reaching into ETS directly.
 
 ```elixir
-# lib/blog/content/store.ex
-defmodule Blog.Content.Store do
-  @moduledoc """
-  In-memory store for all compiled content.
-  Content is compiled at build time and stored as module attributes.
-  """
-
-  @content Blog.Content.Compiler.compile_all()
-  @posts_by_slug @content.posts |> Enum.map(&{&1.slug, &1}) |> Map.new()
-  @posts_by_tag @content.posts |> build_tag_index()
-
-  def all_posts, do: @content.posts
-  def all_pages, do: @content.pages
-
-  def get_post(slug), do: Map.get(@posts_by_slug, slug)
-  def posts_by_tag(tag), do: Map.get(@posts_by_tag, tag, [])
-
-  def search_posts(query) do
-    # Simple in-memory search - could be enhanced with better algorithms
-    query_lower = String.downcase(query)
-
-    Enum.filter(@content.posts, fn post ->
-      String.contains?(String.downcase(post.title), query_lower) or
-      String.contains?(String.downcase(post.raw_markdown), query_lower) or
-      Enum.any?(post.tags, &String.contains?(String.downcase(&1), query_lower))
-    end)
-  end
-
-  defp build_tag_index(posts) do
-    Enum.reduce(posts, %{}, fn post, acc ->
-      Enum.reduce(post.tags, acc, fn tag, tag_acc ->
-        Map.update(tag_acc, tag, [post], &[post | &1])
-      end)
-    end)
-  end
+defp upsert_posts(entries) do
+  entries
+  |> Enum.map(fn entry ->
+    Post
+    |> Ash.Changeset.for_create(:from_loader, entry)
+  end)
+  |> Ash.bulk_create(timeout: :infinity, return_records?: false)
 end
 ```
+
+Define a custom `:from_loader` create action that sets `upsert?: true` so
+reloads replace existing rows based on `slug`. Because we store both
+`raw_markdown` and `compiled_html`, future LiveView widgets can choose whichever
+representation they need without reparsing.
+
+#### Draft and Environment Handling
+
+Since everything happens at runtime, any environment-specific logic stays
+dynamic. `include_drafts?/0` checks
+`Application.get_env(:blog, :show_drafts, false)`, and the Ash read actions
+apply additional filters when necessary (e.g. hide drafts for anonymous
+visitors). No recompilation is required to toggle the flag.
+
+#### Hot Reloads & Watcher
+
+Dev mode wires the [`file_system`](https://hex.pm/packages/file_system) watcher
+to call `Blog.Content.Loader.reload/0` whenever a markdown file changes. The
+reloader clears the Ash table with `Ash.bulk_destroy` (or a truncate helper) and
+re-runs `load_all/1`, keeping the feedback loop tight without restarts.
 
 ### 2. Ash Resources with Manual Actions
 
@@ -248,104 +261,149 @@ end
 defmodule Blog.Post do
   use Ash.Resource,
     domain: Blog,
-    data_layer: Ash.DataLayer.Manual
+    data_layer: Ash.DataLayer.Ets
+
+  ets do
+    private? true
+    write_concurrency? true
+  end
 
   attributes do
-    attribute :slug, :string, primary_key?: true, allow_nil?: false
+    uuid_primary_key :id, writable?: false
+    attribute :slug, :string, allow_nil?: false
     attribute :title, :string, allow_nil?: false
     attribute :date, :date, allow_nil?: false
     attribute :tags, {:array, :string}, default: []
-    attribute :draft, :boolean, default: false
+    attribute :draft?, :boolean, default: false
     attribute :frontmatter, :map
     attribute :raw_markdown, :string
     attribute :compiled_html, :string
     attribute :excerpt, :string
     attribute :word_count, :integer
     attribute :reading_time, :integer
-    attribute :file_path, :string
+    attribute :source_path, :string
+  end
+
+  identities do
+    identity :by_slug, [:slug]
   end
 
   actions do
     defaults [:read]
 
+    create :from_loader do
+      accept [:slug, :title, :date, :tags, :draft?, :frontmatter, :raw_markdown,
+              :compiled_html, :excerpt, :word_count, :reading_time, :source_path]
+      upsert? true
+      upsert_identity :by_slug
+    end
+
     read :by_slug do
       argument :slug, :string, allow_nil?: false
-      manual Blog.Actions.Posts.BySlug
       get? true
+      prepare build(fn query, %{arguments: %{slug: slug}} ->
+        Ash.Query.filter(query, slug == ^slug)
+      end)
     end
 
     read :by_tag do
       argument :tag, :string, allow_nil?: false
-      manual Blog.Actions.Posts.ByTag
-    end
-
-    read :search do
-      argument :query, :string, allow_nil?: false
-      manual Blog.Actions.Posts.Search
+      prepare build(fn query, %{arguments: %{tag: tag}} ->
+        Ash.Query.filter(query, ^tag in tags and draft? == false)
+      end)
     end
 
     read :recent do
       argument :limit, :integer, default: 10
-      manual Blog.Actions.Posts.Recent
+      prepare fn query, %{arguments: %{limit: limit}} ->
+        query
+        |> Ash.Query.filter(draft? == false)
+        |> Ash.Query.sort(date: :desc)
+        |> Ash.Query.limit(limit)
+      end
+    end
+
+    read :drafts do
+      prepare fn query, _ ->
+        Ash.Query.filter(query, draft? == true)
+      end
     end
   end
 
   code_interface do
     define :get_by_slug, args: [:slug], action: :by_slug
     define :list_by_tag, args: [:tag], action: :by_tag
-    define :search, args: [:query]
     define :recent, args: [:limit]
   end
 end
 ```
 
-#### Manual Action Implementations
+#### Manual Search Action
 
 ```elixir
-# lib/blog/actions/posts/by_slug.ex
-defmodule Blog.Actions.Posts.BySlug do
-  use Ash.Resource.ManualRead
-
-  def read(%{arguments: %{slug: slug}}, _opts, _context) do
-    case Blog.Content.Store.get_post(slug) do
-      nil -> {:error, Ash.Error.Query.NotFound.exception(resource: Blog.Post)}
-      post -> {:ok, [struct(Blog.Post, post)]}
-    end
-  end
-end
-
 # lib/blog/actions/posts/search.ex
 defmodule Blog.Actions.Posts.Search do
   use Ash.Resource.ManualRead
 
+  alias Ash.Query
+
   def read(%{arguments: %{query: query}} = ash_query, _opts, _context) do
     results =
-      Blog.Content.Store.search_posts(query)
+      Blog.Post
+      |> Query.filter(draft? == false)
+      |> Blog.Repo.read!()
+      |> Enum.filter(&matches_query?(&1, query))
       |> Enum.map(&maybe_highlight_excerpt(&1, query))
-      |> Enum.map(&struct(Blog.Post, &1))
       |> paginate(ash_query)
 
     {:ok, results}
   end
 
-  defp maybe_highlight_excerpt(post, query) do
-    # For search results, dynamically generate highlighted excerpts
-    if should_highlight?(post, query) do
-      highlighted_excerpt =
-        post.raw_markdown
-        |> extract_context_around_match(query)
-        |> highlight_matches(query)
-        |> MDEx.to_html!()
+  defp matches_query?(post, query) do
+    downcased = String.downcase(query)
 
-      %{post | excerpt: highlighted_excerpt}
-    else
-      post
+    String.contains?(String.downcase(post.title), downcased) or
+      String.contains?(String.downcase(post.raw_markdown), downcased) or
+      Enum.any?(post.tags, &String.contains?(String.downcase(&1), downcased))
+  end
+
+  defp maybe_highlight_excerpt(post, query) do
+    case build_highlight(post.raw_markdown, query) do
+      nil -> post
+      html_excerpt -> %{post | excerpt: html_excerpt}
     end
+  end
+
+  defp build_highlight(markdown, query) do
+    regex = ~r/.{0,120}#{Regex.escape(query)}.{0,120}/i
+
+    case Regex.run(regex, markdown) do
+      nil ->
+        nil
+
+      [match | _] ->
+        match
+        |> String.replace(query, "<mark>#{query}</mark>", global: false)
+        |> MDEx.to_html!()
+    end
+  end
+
+  defp paginate(results, ash_query) do
+    page = Map.get(ash_query, :page, 1)
+    limit = Map.get(ash_query, :limit, 10)
+
+    results
+    |> Enum.chunk_every(limit)
+    |> Enum.at(page - 1, [])
   end
 end
 ```
 
 ### 3. Phoenix Integration
+
+This iteration leans fully into LiveView for rendering---there's no static
+fallback, and I'm fine with the pages serving blank content if a reader disables
+JS. We'll document that behaviour in the release notes.
 
 #### LiveView Controllers
 
@@ -405,47 +463,35 @@ end
 
 ### 4. BibTeX Integration
 
-Using the `bibtex_parser` package for robust BibTeX parsing:
+BibTeX files follow the same runtime ingestion pattern:
 
 ```elixir
-# mix.exs dependencies
-{:bibtex_parser, "~> 0.1.0"}
-
-# lib/blog/bibliography/store.ex
-defmodule Blog.Bibliography.Store do
+# lib/blog/bibliography/loader.ex
+defmodule Blog.Bibliography.Loader do
   @bib_file "priv/content/bibliography.bib"
-  @external_resource @bib_file
 
-  # Parse BibTeX at compile time using bibtex_parser
-  @entries @bib_file
-           |> File.read!()
-           |> BibtexParser.parse()
-           |> process_entries()
+  def load_all do
+    @bib_file
+    |> File.read!()
+    |> BibtexParser.parse()
+    |> case do
+      {:ok, entries} ->
+        entries
+        |> Enum.map(&transform_entry/1)
+        |> Enum.map(&Ash.Changeset.for_create(Blog.Citation, :from_loader, &1))
+        |> Ash.bulk_create(timeout: :infinity, return_records?: false)
 
-  def all_entries, do: @entries
-  def get_entry(key), do: Enum.find(@entries, &(&1.key == key))
-
-  def entries_by_year do
-    @entries
-    |> Enum.group_by(& &1.year)
-    |> Enum.sort_by(&elem(&1, 0), :desc)
+      {:error, reason} ->
+        {:error, {:invalid_bib, reason}}
+    end
   end
-
-  def entries_by_type(type) do
-    Enum.filter(@entries, &(&1.type == type))
-  end
-
-  defp process_entries({:ok, entries}) do
-    Enum.map(entries, &transform_entry/1)
-  end
-  defp process_entries({:error, _reason}), do: []
 
   defp transform_entry(entry) do
     %{
       key: entry.key,
       type: entry.type,
       title: clean_latex(entry.fields["title"]),
-      author: format_authors(entry.fields["author"]),
+      authors: format_authors(entry.fields["author"]),
       year: entry.fields["year"],
       url: entry.fields["url"],
       doi: entry.fields["doi"],
@@ -457,47 +503,25 @@ defmodule Blog.Bibliography.Store do
 
   defp clean_latex(text) when is_binary(text) do
     text
-    |> String.replace(~r/\{|\}/, "")
+    |> String.replace(~r/[{}]/, "")
     |> String.replace(~r/\\"/, "")
   end
-  defp clean_latex(nil), do: nil
+  defp clean_latex(_), do: nil
 
   defp format_authors(authors) when is_binary(authors) do
     authors
     |> String.split(" and ")
     |> Enum.map(&String.trim/1)
   end
-  defp format_authors(nil), do: []
-end
-
-# lib/blog_web/components/citation_helpers.ex
-defmodule BlogWeb.CitationHelpers do
-  use Phoenix.Component
-
-  def citation_list(assigns) do
-    ~H"""
-    <div class="space-y-4">
-      <article :for={entry <- @entries} class="citation">
-        <div class="font-medium">
-          <%= entry.title %>
-        </div>
-        <div class="text-sm text-base-content/70">
-          <%= Enum.join(entry.author, ", ") %> · <%= entry.year %>
-        </div>
-        <div :if={entry.journal} class="text-sm italic">
-          <%= entry.journal %>
-        </div>
-        <div :if={entry.url} class="text-sm">
-          <.link href={entry.url} target="_blank" class="link link-primary">
-            <%= if entry.doi, do: "DOI: #{entry.doi}", else: "Link" %>
-          </.link>
-        </div>
-      </article>
-    </div>
-    """
-  end
+  defp format_authors(_), do: []
 end
 ```
+
+`Blog.Citation` mirrors the post resource with `Ash.DataLayer.Ets`, a
+`from_loader` create action, and read actions for filtering by year or type.
+Because the loader lives in the supervision tree, BibTeX edits can be reloaded
+without redeploying; the dev watcher listens for changes to the `.bib` file as
+well.
 
 ### 5. Development & Deployment Considerations
 
@@ -516,10 +540,15 @@ config :blog,
 
 #### Deployment Process
 
-1. **Build Step**: All markdown files are compiled during `mix compile`
-2. **Release**: Content is embedded in the release binary
-3. **Updates**: New content requires redeployment (automated via CI/CD)
-4. **No Hot Reload**: Content changes require restart in production
+1. **Boot-Time Sync**: `Blog.Content.Loader.load_all/1` runs from the
+   application supervisor so every deploy refreshes ETS from disk.
+2. **Releases**: Ship markdown and BibTeX assets alongside the release in
+   `priv/content`; no recompilation step is required when the files change.
+3. **Content Refresh**: Provide `mix blog.reload` (delegating to
+   `Blog.Content.Loader.reload/0`) for prod consoles and CI smoke tests so you
+   can pull new posts without a full release if needed.
+4. **Dev Experience**: `file_system` watcher triggers reloads automatically; the
+   Vite/Tailwind watchers continue to run separately.
 
 #### Testing Strategy
 
@@ -539,11 +568,11 @@ defmodule Blog.MigrationTest do
     end
   end
 
-  test "pagespeed scores meet threshold" do
-    # Run Lighthouse CI tests
-    assert pagespeed_score(:performance) >= 95
-    assert pagespeed_score(:accessibility) >= 100
-    assert pagespeed_score(:seo) >= 100
+  test "site crawler finds no broken internal links" do
+    crawl_results = Blog.LinkChecker.crawl(~p"/")
+
+    assert Enum.empty?(crawl_results.broken_links)
+    assert crawl_results.checked_count > 0
   end
 end
 ```
@@ -552,19 +581,19 @@ end
 
 While not part of the initial implementation, the architecture supports:
 
-1. **Analytics**: Add view counting using ETS counters
+1. **Analytics**: Add view counting using ETS counters or Oban jobs
 2. **Comments**: Could add LiveView-powered comments without a database
 3. **Admin Interface**: LiveView admin for content preview (dev only)
-4. **RSS/Atom**: Generate feeds at compile time
+4. **RSS/Atom**: Generate feeds on demand from the ETS store
 5. **Search Enhancement**: Add full-text search with pre-built indices
 
 ### Notes
 
-- This approach trades deployment flexibility for performance and simplicity
-- All content is immutable once deployed, ensuring consistency
-- Memory usage scales linearly with content amount (not a concern per
-  requirements)
-- SEO and performance should match or exceed Jekyll due to pre-compilation
+- Runtime ingestion keeps deploys lean while still letting us reuse MDEx and Ash
+- Content changes can be reloaded without rebuilding the release
+- Memory usage scales linearly with content amount (still fine given expected
+  post size)
+- Phoenix LiveView remains the primary rendering path (JS required for readers)
 
 ### 7. Implementation Checklist
 
@@ -611,10 +640,9 @@ priv/
 title: "My Blog Post Title"
 date: 2024-01-15
 tags: [elixir, phoenix, web]
-draft: false  # Optional, defaults to false
+draft: false # Optional, defaults to false
 excerpt: "Optional custom excerpt"
 ---
-
 Post content here...
 ```
 
@@ -710,7 +738,7 @@ module.exports = {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="csrf-token" content={get_csrf_token()} />
-  
+
   <%= if assigns[:meta_tags] do %>
     <meta name="description" content={@meta_tags.description} />
     <meta property="og:title" content={@meta_tags.title} />
@@ -718,13 +746,28 @@ module.exports = {
     <meta property="og:type" content={@meta_tags.type || "website"} />
     <meta name="twitter:card" content="summary" />
   <% end %>
-  
+
   <.live_title suffix=" · Ben Swift">
     <%= assigns[:page_title] || "Ben Swift" %>
   </.live_title>
-  
+
   <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
   <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
   </script>
 </head>
 ```
+
+#### Implementation Tasks
+
+- [ ] Generate Phoenix project and clean out unused assets
+- [ ] Set up Ash with `Blog` domain and `Blog.Post` resource
+- [ ] Implement `Blog.Content.Loader` with runtime ingestion and MDEx rendering
+- [ ] Wire loader under supervision and expose `Blog.Content.Loader.reload/0`
+- [ ] Add `file_system` watcher for dev-time reloads
+- [ ] Build `Blog.LinkChecker` helper and CLI hook for sitemap/link tests
+- [ ] Implement LiveView components and layouts (Tailwind + daisyUI)
+- [ ] Port BibTeX ingestion via `Blog.Bibliography.Loader` and `Blog.Citation`
+- [ ] Migrate `_includes` to Phoenix components
+- [ ] Migrate `_layouts` to Phoenix layouts/templates
+- [ ] Implement search LiveView backed by manual Ash action
+- [ ] Document the JS-required behaviour in release notes
