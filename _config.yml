@@ -37,6 +37,9 @@ exclude:
   - node_modules/
   - backlog/
 
+keep_files:
+  - .git
+
 revealify:
   theme: assets/css/ben-reveal-theme.scss
 
