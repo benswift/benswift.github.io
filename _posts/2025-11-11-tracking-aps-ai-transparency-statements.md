@@ -3,24 +3,55 @@ title: Tracking APS AI Transparency Statements
 tags: ai government
 ---
 
-Since 28 Feb 2025 all Australian Public Service (APS) agencies have been
-[required to publish](https://www.digital.gov.au/policy/ai/engage-responsibly) a
-"statement outlining their approach to AI adoption", which also "must be
-reviewed and updated annually or sooner, should the agency make significant
-changes to their approach to AI".
+New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**.
 
-In the [spirit](https://github.com/unitedstates/congress) of
-[similar](https://github.com/bundestag/gesetze)
-[attempts](https://github.com/DCCouncil/dc-law) to
-[track](https://github.com/sparcopen/open-education-state-policy-tracking)
-[policy](https://github.com/openaustralia/theyvoteforyou) and
-[law](https://github.com/openaustralia/openaustralia-parser)
-[changes](https://github.com/isaacus-dev/open-australian-legal-corpus-creator)
-[using](https://github.com/k-r-a-s-s/aus-govt-transparency)
-[version](https://github.com/aclu-national/tracking-ll144-bias-audits)
-[control](https://github.com/Cybersoft82/Privacy-Policy-Change-Detection-and-History-Tracking-Service)
-tools, I've just released the
-[APS AI Transparency Tracker](https://github.com/ANUcybernetics/aps-ai-transparency-tracker).
+From the README:
 
-I'll leave it running (checking the statements once every 24h) and we'll get to
-see how these statements evolve over time. Stay tuned!
+> This repository tracks **AI Transparency Statements** from Australian
+> Government agencies.
+>
+> A _Cybernetic Studio_ project by [Ben Swift](https://benswift.me).
+>
+> ## How does it work?
+>
+> The [script](./src/aps_ai_transparency_tracker/scraper.py):
+>
+> - loops over all the APS agencies defined in
+>   [`agencies.toml`](./agencies.toml)
+> - hits the specified URL for each agency's AI Transparency Statement
+> - converts it (from either HTML or PDF, depending on the agency) into a
+>   markdown-formatted version
+> - saves it to the [`statements/` directory](./statements)
+>
+> This process is run in a [GitHub action](.github/workflows/scrape.yml) every
+> night, and any changes to an agency's statement are updated in the repository.
+>
+> ## Background
+>
+> Under the
+> [Policy for the responsible use of AI in government](https://www.digital.gov.au/policy/ai/policy),
+> all Australian Government agencies are required (since Feb 28 2025) to publish
+> AI Transparency Statements on their websites. These statements must be updated
+> at least annually.
+>
+> In the [spirit](https://github.com/unitedstates/congress) of
+> [similar](https://github.com/bundestag/gesetze) >
+> [attempts](https://github.com/DCCouncil/dc-law) to
+> [track](https://github.com/sparcopen/open-education-state-policy-tracking) >
+> [policy](https://github.com/openaustralia/theyvoteforyou) and
+> [law](https://github.com/openaustralia/openaustralia-parser) >
+> [changes](https://github.com/isaacus-dev/open-australian-legal-corpus-creator) >
+> [using](https://github.com/k-r-a-s-s/aus-govt-transparency) >
+> [version](https://github.com/aclu-national/tracking-ll144-bias-audits) >
+> [control](https://github.com/Cybersoft82/Privacy-Policy-Change-Detection-and-History-Tracking-Service)
+> tools,
+> [this project](https://github.com/ANUcybernetics/aps-ai-transparency-tracker)
+> automatically scrapes these statements and stores them as markdown files with
+> YAML frontmatter, allowing changes to be tracked over time through git. The
+> list of agencies is from
+> [the APSC](https://www.apsc.gov.au/aps-agencies-size-and-function) with
+> acronyms cross-referenced from
+> [PM&C](https://www.pmc.gov.au/resources/abbreviations-and-acronyms-groups-or-topics).
+
+I'll leave it running and we'll get to see how these statements evolve over
+time. Stay tuned!
