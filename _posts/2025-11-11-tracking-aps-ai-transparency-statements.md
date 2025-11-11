@@ -3,7 +3,8 @@ title: Tracking APS AI Transparency Statements
 tags: ai government
 ---
 
-New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**.
+New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**
+([GitHub link](https://github.com/ANUcybernetics/aps-ai-transparency-tracker)).
 
 From the README:
 
@@ -11,20 +12,6 @@ From the README:
 > Government agencies.
 >
 > A _Cybernetic Studio_ project by [Ben Swift](https://benswift.me).
->
-> ## How does it work?
->
-> The [script](./src/aps_ai_transparency_tracker/scraper.py):
->
-> - loops over all the APS agencies defined in
->   [`agencies.toml`](./agencies.toml)
-> - hits the specified URL for each agency's AI Transparency Statement
-> - converts it (from either HTML or PDF, depending on the agency) into a
->   markdown-formatted version
-> - saves it to the [`statements/` directory](./statements)
->
-> This process is run in a [GitHub action](.github/workflows/scrape.yml) every
-> night, and any changes to an agency's statement are updated in the repository.
 >
 > ## Background
 >
