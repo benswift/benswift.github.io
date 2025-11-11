@@ -12,8 +12,8 @@
 <meta property="og:title" content="Tracking APS AI Transparency Statements" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Since 28 Feb 2025 all Australian Public Service (APS) agencies have been required to publish a “statement outlining their approach to AI adoption”, which also “must be reviewed and updated annually or sooner, should the agency make significant changes to their approach to AI”." />
-<meta property="og:description" content="Since 28 Feb 2025 all Australian Public Service (APS) agencies have been required to publish a “statement outlining their approach to AI adoption”, which also “must be reviewed and updated annually or sooner, should the agency make significant changes to their approach to AI”." />
+<meta name="description" content="New Cybernetic Studio project announcement: the APS AI Transparency Tracker (GitHub link)." />
+<meta property="og:description" content="New Cybernetic Studio project announcement: the APS AI Transparency Tracker (GitHub link)." />
 <link rel="canonical" href="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/" />
 <meta property="og:url" content="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/" />
 <meta property="og:site_name" content="benswift.me" />
@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2025-11-11T00:00:00+11:00","datePublished":"2025-11-11T00:00:00+11:00","description":"Since 28 Feb 2025 all Australian Public Service (APS) agencies have been required to publish a “statement outlining their approach to AI adoption”, which also “must be reviewed and updated annually or sooner, should the agency make significant changes to their approach to AI”.","headline":"Tracking APS AI Transparency Statements","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"},"url":"https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2025-11-11T00:00:00+11:00","datePublished":"2025-11-11T00:00:00+11:00","description":"New Cybernetic Studio project announcement: the APS AI Transparency Tracker (GitHub link).","headline":"Tracking APS AI Transparency Statements","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"},"url":"https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -84,27 +84,47 @@
 </p>
 
 
-  <p>Since 28 Feb 2025 all Australian Public Service (APS) agencies have been
-<a href="https://www.digital.gov.au/policy/ai/engage-responsibly">required to publish</a> a
-“statement outlining their approach to AI adoption”, which also “must be
-reviewed and updated annually or sooner, should the agency make significant
-changes to their approach to AI”.</p>
+  <p>New Cybernetic Studio project announcement: the <strong>APS AI Transparency Tracker</strong>
+(<a href="https://github.com/ANUcybernetics/aps-ai-transparency-tracker">GitHub link</a>).</p>
 
-<p>In the <a href="https://github.com/unitedstates/congress">spirit</a> of
-<a href="https://github.com/bundestag/gesetze">similar</a>
+<p>From the README:</p>
+
+<blockquote>
+  <p>This repository tracks <strong>AI Transparency Statements</strong> from Australian
+Government agencies.</p>
+
+  <p>A <em>Cybernetic Studio</em> project by <a href="https://benswift.me">Ben Swift</a>.</p>
+
+  <h2 id="background">Background</h2>
+
+  <p>Under the
+<a href="https://www.digital.gov.au/policy/ai/policy">Policy for the responsible use of AI in government</a>,
+all Australian Government agencies are required (since Feb 28 2025) to publish
+AI Transparency Statements on their websites. These statements must be updated
+at least annually.</p>
+
+  <p>In the <a href="https://github.com/unitedstates/congress">spirit</a> of
+<a href="https://github.com/bundestag/gesetze">similar</a> &gt;
 <a href="https://github.com/DCCouncil/dc-law">attempts</a> to
-<a href="https://github.com/sparcopen/open-education-state-policy-tracking">track</a>
+<a href="https://github.com/sparcopen/open-education-state-policy-tracking">track</a> &gt;
 <a href="https://github.com/openaustralia/theyvoteforyou">policy</a> and
-<a href="https://github.com/openaustralia/openaustralia-parser">law</a>
-<a href="https://github.com/isaacus-dev/open-australian-legal-corpus-creator">changes</a>
-<a href="https://github.com/k-r-a-s-s/aus-govt-transparency">using</a>
-<a href="https://github.com/aclu-national/tracking-ll144-bias-audits">version</a>
+<a href="https://github.com/openaustralia/openaustralia-parser">law</a> &gt;
+<a href="https://github.com/isaacus-dev/open-australian-legal-corpus-creator">changes</a> &gt;
+<a href="https://github.com/k-r-a-s-s/aus-govt-transparency">using</a> &gt;
+<a href="https://github.com/aclu-national/tracking-ll144-bias-audits">version</a> &gt;
 <a href="https://github.com/Cybersoft82/Privacy-Policy-Change-Detection-and-History-Tracking-Service">control</a>
-tools, I’ve just released the
-<a href="https://github.com/ANUcybernetics/aps-ai-transparency-tracker">APS AI Transparency Tracker</a>.</p>
+tools,
+<a href="https://github.com/ANUcybernetics/aps-ai-transparency-tracker">this project</a>
+automatically scrapes these statements and stores them as markdown files with
+YAML frontmatter, allowing changes to be tracked over time through git. The
+list of agencies is from
+<a href="https://www.apsc.gov.au/aps-agencies-size-and-function">the APSC</a> with
+acronyms cross-referenced from
+<a href="https://www.pmc.gov.au/resources/abbreviations-and-acronyms-groups-or-topics">PM&amp;C</a>.</p>
+</blockquote>
 
-<p>I’ll leave it running (checking the statements once every 24h) and we’ll get to
-see how these statements evolve over time. Stay tuned!</p>
+<p>I’ll leave it running and we’ll get to see how these statements evolve over
+time. Stay tuned!</p>
 
 </article>
 
@@ -167,9 +187,9 @@ see how these statements evolve over time. Stay tuned!</p>
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>5163db988</code> (see
+    site revision <code>7a478db13</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/5163db988/_posts/2025-11-11-tracking-aps-ai-transparency-statements.md"
+      href="https://github.com/benswift/benswift.github.io/blob/7a478db13/_posts/2025-11-11-tracking-aps-ai-transparency-statements.md"
       >source</a
     >,
     <a

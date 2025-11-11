@@ -1,24 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-11T17:22:43+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Tracking APS AI Transparency Statements</title><link href="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/" rel="alternate" type="text/html" title="Tracking APS AI Transparency Statements" /><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements</id><content type="html" xml:base="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"><![CDATA[<p>Since 28 Feb 2025 all Australian Public Service (APS) agencies have been
-<a href="https://www.digital.gov.au/policy/ai/engage-responsibly">required to publish</a> a
-“statement outlining their approach to AI adoption”, which also “must be
-reviewed and updated annually or sooner, should the agency make significant
-changes to their approach to AI”.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-12T09:21:25+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Tracking APS AI Transparency Statements</title><link href="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/" rel="alternate" type="text/html" title="Tracking APS AI Transparency Statements" /><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements</id><content type="html" xml:base="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"><![CDATA[<p>New Cybernetic Studio project announcement: the <strong>APS AI Transparency Tracker</strong>
+(<a href="https://github.com/ANUcybernetics/aps-ai-transparency-tracker">GitHub link</a>).</p>
 
-<p>In the <a href="https://github.com/unitedstates/congress">spirit</a> of
-<a href="https://github.com/bundestag/gesetze">similar</a>
+<p>From the README:</p>
+
+<blockquote>
+  <p>This repository tracks <strong>AI Transparency Statements</strong> from Australian
+Government agencies.</p>
+
+  <p>A <em>Cybernetic Studio</em> project by <a href="https://benswift.me">Ben Swift</a>.</p>
+
+  <h2 id="background">Background</h2>
+
+  <p>Under the
+<a href="https://www.digital.gov.au/policy/ai/policy">Policy for the responsible use of AI in government</a>,
+all Australian Government agencies are required (since Feb 28 2025) to publish
+AI Transparency Statements on their websites. These statements must be updated
+at least annually.</p>
+
+  <p>In the <a href="https://github.com/unitedstates/congress">spirit</a> of
+<a href="https://github.com/bundestag/gesetze">similar</a> &gt;
 <a href="https://github.com/DCCouncil/dc-law">attempts</a> to
-<a href="https://github.com/sparcopen/open-education-state-policy-tracking">track</a>
+<a href="https://github.com/sparcopen/open-education-state-policy-tracking">track</a> &gt;
 <a href="https://github.com/openaustralia/theyvoteforyou">policy</a> and
-<a href="https://github.com/openaustralia/openaustralia-parser">law</a>
-<a href="https://github.com/isaacus-dev/open-australian-legal-corpus-creator">changes</a>
-<a href="https://github.com/k-r-a-s-s/aus-govt-transparency">using</a>
-<a href="https://github.com/aclu-national/tracking-ll144-bias-audits">version</a>
+<a href="https://github.com/openaustralia/openaustralia-parser">law</a> &gt;
+<a href="https://github.com/isaacus-dev/open-australian-legal-corpus-creator">changes</a> &gt;
+<a href="https://github.com/k-r-a-s-s/aus-govt-transparency">using</a> &gt;
+<a href="https://github.com/aclu-national/tracking-ll144-bias-audits">version</a> &gt;
 <a href="https://github.com/Cybersoft82/Privacy-Policy-Change-Detection-and-History-Tracking-Service">control</a>
-tools, I’ve just released the
-<a href="https://github.com/ANUcybernetics/aps-ai-transparency-tracker">APS AI Transparency Tracker</a>.</p>
+tools,
+<a href="https://github.com/ANUcybernetics/aps-ai-transparency-tracker">this project</a>
+automatically scrapes these statements and stores them as markdown files with
+YAML frontmatter, allowing changes to be tracked over time through git. The
+list of agencies is from
+<a href="https://www.apsc.gov.au/aps-agencies-size-and-function">the APSC</a> with
+acronyms cross-referenced from
+<a href="https://www.pmc.gov.au/resources/abbreviations-and-acronyms-groups-or-topics">PM&amp;C</a>.</p>
+</blockquote>
 
-<p>I’ll leave it running (checking the statements once every 24h) and we’ll get to
-see how these statements evolve over time. Stay tuned!</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="government" /><summary type="html"><![CDATA[Since 28 Feb 2025 all Australian Public Service (APS) agencies have been required to publish a “statement outlining their approach to AI adoption”, which also “must be reviewed and updated annually or sooner, should the agency make significant changes to their approach to AI”.]]></summary></entry><entry><title type="html">Cybernetic Studio Launch @ SXSW Sydney</title><link href="https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney/" rel="alternate" type="text/html" title="Cybernetic Studio Launch @ SXSW Sydney" /><published>2025-10-08T00:00:00+11:00</published><updated>2025-10-08T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney</id><content type="html" xml:base="https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney/"><![CDATA[<p>I’m launching the
+<p>I’ll leave it running and we’ll get to see how these statements evolve over
+time. Stay tuned!</p>]]></content><author><name>Ben Swift</name></author><category term="ai" /><category term="government" /><summary type="html"><![CDATA[New Cybernetic Studio project announcement: the APS AI Transparency Tracker (GitHub link).]]></summary></entry><entry><title type="html">Cybernetic Studio Launch @ SXSW Sydney</title><link href="https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney/" rel="alternate" type="text/html" title="Cybernetic Studio Launch @ SXSW Sydney" /><published>2025-10-08T00:00:00+11:00</published><updated>2025-10-08T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney</id><content type="html" xml:base="https://benswift.me/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney/"><![CDATA[<p>I’m launching the
 <a href="https://cybernetics.anu.edu.au/cybernetic-studio/"><strong>Cybernetic Studio</strong></a> next
 week (Oct 15) at <a href="https://www.sxswsydney.com">SXSW Sydney</a>. If you’re attending,
 come to Chippendale on Wednesday afternoon (search for
