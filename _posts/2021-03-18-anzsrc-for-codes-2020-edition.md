@@ -1,12 +1,12 @@
 ---
 title: ANZSRC FoR Codes 2020 edition
-tags: research
+tags: research government
 ---
 
-The Australian Research Council (well, technically the [Australian Bureau of
-Statistics](https://www.abs.gov.au) and their [NZ
-counterparts](https://www.stats.govt.nz)) have updated the [_Field of Research_
-codes](https://www.arc.gov.au/grants/grant-application/classification-codes-rfcd-seo-and-anzsic-codes)
+The Australian Research Council (well, technically the
+[Australian Bureau of Statistics](https://www.abs.gov.au) and their
+[NZ counterparts](https://www.stats.govt.nz)) have updated the
+[_Field of Research_ codes](https://www.arc.gov.au/grants/grant-application/classification-codes-rfcd-seo-and-anzsic-codes)
 which Aussie/NZ academics use to classify their
 work.[^interdisciplinary-complaint]
 
@@ -17,8 +17,8 @@ work.[^interdisciplinary-complaint]
 
 I was trying to browse these new codes recently, and had a hard time trying to
 find the actual classification scheme (codes, hierarchy & code names). The
-official page seems to be [this
-one](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1297.0Main+Features12020?OpenDocument),
+official page seems to be
+[this one](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1297.0Main+Features12020?OpenDocument),
 but the data is only available on sheet 3 of an excel spreadsheet, which is just
 a bummer when all you want to do is <kbd>ctrl</kbd>+<kbd>F</kbd> your way around
 an HTML table in your web browser.
