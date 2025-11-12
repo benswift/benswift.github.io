@@ -22,12 +22,9 @@ but not for writing to their loved ones. The same person using the same model
 would give very different answers to the "are LLMs useful" depending on the task
 at hand.
 
-So I propose a different framing: treat each (user, model, task) triple as its
-own thing, mapped onto a two-dimensional plane.
-
-## The framework[^branding]
-
-Two orthogonal axes:
+So I propose a different framework[^branding]: treat each (user, model, task)
+triple as its own thing, mapped onto a two-dimensional plane. There are Two
+orthogonal axes:
 
 **Familiarity**: how much you've actually used this specific model for this
 specific task. Ranges from "never tried" to "extensive experience". This only
