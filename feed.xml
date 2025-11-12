@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-12T20:18:58+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Seeing AI tasks through a TAM lens</title><link href="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/" rel="alternate" type="text/html" title="Seeing AI tasks through a TAM lens" /><published>2025-11-12T00:00:00+11:00</published><updated>2025-11-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens</id><content type="html" xml:base="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/"><![CDATA[<p>When it comes to AI adoption research, we keep asking “do you use ChatGPT?” when
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-12T20:41:21+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Seeing AI tasks through a TAM lens</title><link href="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/" rel="alternate" type="text/html" title="Seeing AI tasks through a TAM lens" /><published>2025-11-12T00:00:00+11:00</published><updated>2025-11-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens</id><content type="html" xml:base="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/"><![CDATA[<p>When it comes to AI adoption research, we keep asking “do you use ChatGPT?” when
 we should be adding “for which specific tasks?”</p>
 
 <p>The
@@ -86,7 +86,7 @@ mixed bag.</p>
   <line x1="50" y1="317" x2="550" y2="317" stroke="#999" stroke-width="1" stroke-dasharray="5,5" />
 </svg>
 
-<h3 id="the-zones">The zones</h3>
+<h2 id="the-zones">The zones</h2>
 
 <p><strong>High familiarity, helpful</strong> (upper right): This is the good place. You’ve got
 extensive experience, you’ve developed effective prompting strategies, you
