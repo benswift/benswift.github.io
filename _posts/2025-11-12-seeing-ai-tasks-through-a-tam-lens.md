@@ -91,7 +91,7 @@ mixed bag.
   <line x1="50" y1="317" x2="550" y2="317" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
 </svg>
 
-### The zones
+## The zones
 
 **High familiarity, helpful** (upper right): This is the good place. You've got
 extensive experience, you've developed effective prompting strategies, you
