@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-12T16:01:08+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Seeing AI tasks through a TAM lens</title><link href="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/" rel="alternate" type="text/html" title="Seeing AI tasks through a TAM lens" /><published>2025-11-12T00:00:00+11:00</published><updated>2025-11-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens</id><content type="html" xml:base="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/"><![CDATA[<p>When it comes to AI adoption research, we keep asking “do you use ChatGPT?” when
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-12T20:18:58+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Seeing AI tasks through a TAM lens</title><link href="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/" rel="alternate" type="text/html" title="Seeing AI tasks through a TAM lens" /><published>2025-11-12T00:00:00+11:00</published><updated>2025-11-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens</id><content type="html" xml:base="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/"><![CDATA[<p>When it comes to AI adoption research, we keep asking “do you use ChatGPT?” when
 we should be adding “for which specific tasks?”</p>
 
 <p>The
@@ -17,12 +17,9 @@ but not for writing to their loved ones. The same person using the same model
 would give very different answers to the “are LLMs useful” depending on the task
 at hand.</p>
 
-<p>So I propose a different framing: treat each (user, model, task) triple as its
-own thing, mapped onto a two-dimensional plane.</p>
-
-<h2 id="the-framework">The framework<sup id="fnref:branding"><a href="#fn:branding" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></h2>
-
-<p>Two orthogonal axes:</p>
+<p>So I propose a different framework<sup id="fnref:branding"><a href="#fn:branding" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>: treat each (user, model, task)
+triple as its own thing, mapped onto a two-dimensional plane. There are Two
+orthogonal axes:</p>
 
 <p><strong>Familiarity</strong>: how much you’ve actually used this specific model for this
 specific task. Ranges from “never tried” to “extensive experience”. This only
