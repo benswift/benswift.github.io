@@ -1,4 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-12T09:21:25+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Tracking APS AI Transparency Statements</title><link href="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/" rel="alternate" type="text/html" title="Tracking APS AI Transparency Statements" /><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements</id><content type="html" xml:base="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"><![CDATA[<p>New Cybernetic Studio project announcement: the <strong>APS AI Transparency Tracker</strong>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://benswift.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://benswift.me/" rel="alternate" type="text/html" /><updated>2025-11-12T12:39:18+11:00</updated><id>https://benswift.me/feed.xml</id><title type="html">benswift.me</title><subtitle>livecoder &amp; researcher homepage - code, creativity, culture</subtitle><author><name>Ben Swift</name></author><entry><title type="html">Seeing AI tasks through a TAM lens</title><link href="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/" rel="alternate" type="text/html" title="Seeing AI tasks through a TAM lens" /><published>2025-11-12T00:00:00+11:00</published><updated>2025-11-12T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens</id><content type="html" xml:base="https://benswift.me/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens/"><![CDATA[<p>Here’s something that’s been bugging me about AI adoption research: we keep
+asking “do you use ChatGPT?” when we should be asking “for which specific
+tasks?”</p>
+
+<p>The
+<a href="https://en.wikipedia.org/wiki/Technology_acceptance_model">Technology Acceptance Model</a>
+(TAM) has been successfully applied to understand LLM
+adoption—<a href="https://www.tandfonline.com/doi/full/10.1080/10447318.2024.2314358">surveys of hundreds of users</a>
+confirm that perceived usefulness and ease of use predict whether people adopt
+these tools. But here’s the problem: these studies treat adoption as a
+technology-level decision rather than examining the specific tasks where these
+tools actually prove valuable.</p>
+
+<p>This misses something fundamental. A researcher might find an LLM invaluable for
+literature search but useless for theoretical analysis. A journalist might rely
+on it for drafting routine updates but avoid it for investigative work. The same
+person using the same model occupies very different positions depending on the
+task at hand.</p>
+
+<p>So I reckon we should use a different framing: treat each (user, model, task)
+triple as its own thing, mapped onto a two-dimensional plane.</p>
+
+<h2 id="the-framework">The framework<sup id="fnref:branding"><a href="#fn:branding" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></h2>
+
+<p>Two orthogonal axes:</p>
+
+<p><strong>Familiarity</strong>: how much you’ve actually used this specific model for this
+specific task. Ranges from “never tried” to “extensive experience”. This only
+moves in one direction—you can’t become less familiar with something you’ve
+tried.</p>
+
+<p><strong>Helpfulness</strong>: whether the model is actually useful for that task. Ranges from
+actively harmful through neutral to genuinely helpful. This corresponds to TAM’s
+“perceived usefulness” but evaluated task-specifically. Crucially, this
+assessment can change as familiarity increases—early positive impressions
+might fade, or initial frustrations might give way to appreciation.</p>
+
+<p>This creates a space where the same user with the same model might
+simultaneously occupy multiple zones depending on which tasks we examine. And
+importantly, there’s a substantial neutral zone in the middle—tasks where the
+tool neither helps nor hurts, or at least where it’s a real mixed bag.</p>
+
+<h3 id="the-zones">The zones</h3>
+
+<p><strong>High familiarity, helpful</strong> (upper right): Proven integration. You’ve got
+extensive experience, you’ve developed effective prompting strategies, you
+understand the limitations, and you’ve integrated it into your workflow. For a
+writer, this might be generating first drafts of routine correspondence. For a
+teacher, creating quiz questions from course materials. For a developer,
+generating boilerplate code.</p>
+
+<p><strong>High familiarity, neutral/unhelpful</strong> (middle/lower right): Informed
+rejection. You haven’t simply failed to try—you’ve engaged extensively and
+concluded it doesn’t work, or at best breaks even. You’ve hit the model’s
+limitations repeatedly enough to form a stable assessment.</p>
+
+<p>The neutral zone here is particularly interesting—tasks where using the tool
+takes about as much effort as doing it yourself, so you might use it or might
+not depending on mood. A researcher editing AI-generated literature summaries
+that need as much work to fix as they would to write from scratch. A designer
+tweaking AI-generated layouts that never quite capture the intended aesthetic.</p>
+
+<p>The genuinely unhelpful zone includes complex reasoning tasks, fact-checking
+mission-critical information, or creative work requiring genuine originality
+where the tool actively wastes your time or produces misleading output. In my
+use of Claude Code (and friends) some coding tasks fall into this for
+sure—they add technical debt that actually makes things worse. And obviously
+there’s cooked stuff like digital phrenology/racism.</p>
+
+<p><strong>Low familiarity, helpful</strong> (upper left): Early positive impression. You’ve
+tried it once or twice with good results but haven’t encountered edge cases.
+This zone is unstable—continued use drives rightward along the familiarity
+axis, but helpfulness might shift up or down as experience accumulates.</p>
+
+<p><strong>Low familiarity, neutral/unhelpful</strong> (middle/lower left): Premature rejection
+or speculative avoidance. Either you tried it once, had a poor or meh
+experience, and gave up, or you suspect the model can’t handle it based on
+general reputation. Unlike informed rejection, these assessments are speculative
+rather than experiential.</p>
+
+<h2 id="why-this-matters">Why this matters</h2>
+
+<p>Consider an academic researcher (hey—I write what I know). I might map my
+experience like this:</p>
+
+<ul>
+  <li><strong>Literature search and summarisation</strong>: upper right—proven useful for
+finding relevant papers quickly</li>
+  <li><strong>Drafting standard email responses</strong>: upper right—saves time, works
+consistently</li>
+  <li><strong>Generating first drafts of methods sections</strong>: middle right—tried
+extensively, but I end up rewriting so much it’s neutral</li>
+  <li><strong>Writing out core/key arguments</strong>: lower right for sure—consistently
+superficial and misleading</li>
+  <li><strong>Data analysis code review</strong>: middle left—tried once, suggestions were
+hit-or-miss, haven’t invested enough to know if better prompting would help</li>
+  <li><strong>Grant writing</strong>: lower left—suspect it can’t capture the nuance, haven’t
+really tried</li>
+</ul>
+
+<p>Technology-level TAM would aggregate these into a single “perceived usefulness”
+score for “LLMs in academic research”. But that obscures the actual pattern:
+selective integration based on task-specific evaluation.</p>
+
+<p>The framework also explains why people’s assessments differ so dramatically.
+We’re often arguing about different tasks while thinking we’re arguing about the
+same technology. When someone says “LLMs are transformative for writing” and
+someone else says “they’re useless”—they might both be right, just talking
+about different writing tasks.</p>
+
+<p>This matches what
+<a href="https://www.nature.com/articles/s41562-024-02024-1">recent meta-analyses</a> have
+found: human-AI combinations perform significantly differently depending on task
+type, with performance losses in decision-making tasks but gains in content
+creation tasks. The tool’s utility is fundamentally task-dependent.</p>
+
+<h2 id="the-transformationautomationmagnification-thing">The transformation/automation/magnification thing</h2>
+
+<p>You’ve probably seen people claim AI will “transform” work in their domain. The
+framework helps cut through this. Most “transformation” claims turn out to be:</p>
+
+<ul>
+  <li><strong>Automation</strong> of tasks already in the upper-right quadrant (where the tool
+genuinely helps with familiar tasks, and/or can be used to write a script to
+fully automate a task)</li>
+  <li><strong>Magnification</strong> of existing patterns (making good writers slightly better,
+bad writers slightly worse)</li>
+  <li><strong>Wishful thinking</strong> about tasks currently in the lower quadrants</li>
+</ul>
+
+<p>Real transformation would mean moving tasks between zones in systematic ways.
+That might happen—models improve, prompting strategies evolve—but it’s an
+empirical question, not a foregone conclusion.</p>
+
+<p>And let’s be honest about the neutral zone. A lot of supposed “AI-assisted” work
+actually lives here—using the tool because it’s there, because everyone else
+is, because it feels like you should, even when it’s not actually saving time or
+improving quality. That’s not transformation, that’s theatre.</p>
+
+<h2 id="what-to-do-with-this">What to do with this</h2>
+
+<p>For users: instead of asking “should I use ChatGPT?”, ask “for which specific
+tasks have I found it helpful after sufficient trial?” This encourages
+experimentation while validating informed rejection.</p>
+
+<p>Different zones need different strategies:</p>
+
+<ul>
+  <li>Upper-right tasks deserve workflow integration and continued refinement</li>
+  <li>Middle-right neutral tasks might warrant periodic re-evaluation as models
+improve, or just accepting they’re optional</li>
+  <li>Lower-right unhelpful tasks probably aren’t worth more effort unless models
+substantially improve</li>
+  <li>Upper-left tasks need systematic testing to see if initial promise holds</li>
+  <li>Lower-left tasks might benefit from one serious attempt with better prompting
+before abandoning them</li>
+</ul>
+
+<p>For researchers: adopt task-level analysis. Ask participants to identify
+specific tasks, plot them in this space, track how positions change over time
+(evaluate!). This would reveal patterns currently hidden by aggregation. Given
+that
+<a href="https://aisel.aisnet.org/ecis2020_rp/200/">individual performance gains from AI systems depend on task-technology fit</a>,
+we need frameworks that capture this task-level variation.</p>
+
+<h2 id="caveats">Caveats</h2>
+
+<p>All models are wrong, some are useful. Is this one useful? Maybe… I’m still
+thinking it through.</p>
+
+<p>The two dimensions do miss important factors—confidence, cost, ethics. The
+discrete task framing might obscure the fluid, exploratory way people actually
+interact with LLMs. The familiarity axis collapses several concepts: frequency
+of use, diversity of use cases, quality of prompting strategies.</p>
+
+<p>But even a simplified framework beats treating adoption as a binary
+technology-level decision. At minimum, it captures the obvious truth that your
+relationship with these tools is task-specific, and aggregating across tasks
+obscures more than it reveals.</p>
+
+<p>The real test will be whether thinking in these terms helps you make better
+decisions about where to invest effort learning these tools. For me, it’s been
+clarifying—it legitimises informed rejection while encouraging strategic
+experimentation, and it helps me recognise when I’m in that neutral zone where
+using the tool is more about performance than productivity.</p>
+
+<p>Your mileage may vary.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:branding">
+
+      <p>The framework doesn’t have a name, because I’m bad at branding… hmm. <a href="#fnref:branding" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Ben Swift</name></author><category term="ai" /><summary type="html"><![CDATA[Here’s something that’s been bugging me about AI adoption research: we keep asking “do you use ChatGPT?” when we should be asking “for which specific tasks?”]]></summary></entry><entry><title type="html">Tracking APS AI Transparency Statements</title><link href="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/" rel="alternate" type="text/html" title="Tracking APS AI Transparency Statements" /><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><id>https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements</id><content type="html" xml:base="https://benswift.me/blog/2025/11/11/tracking-aps-ai-transparency-statements/"><![CDATA[<p>New Cybernetic Studio project announcement: the <strong>APS AI Transparency Tracker</strong>
 (<a href="https://github.com/ANUcybernetics/aps-ai-transparency-tracker">GitHub link</a>).</p>
 
 <p>From the README:</p>
@@ -799,29 +994,4 @@ play it without you being there to help them out.</p>
 <h3 id="shareback-and-remember">Shareback, and remember</h3>
 
 <p>There’s no higher purpose here. It’s all just parlour games for overeducated
-wankers.</p>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Note: this stuff is the workshop content for an alumni workshop in November 2024 hosted by the Cybernetic Studio at the ANU School of Cybernetics.]]></summary></entry><entry><title type="html">Format Markdown on save in Zed using Prettier</title><link href="https://benswift.me/blog/2024/09/20/format-markdown-on-save-in-zed-using-prettier/" rel="alternate" type="text/html" title="Format Markdown on save in Zed using Prettier" /><published>2024-09-20T00:00:00+10:00</published><updated>2024-09-20T00:00:00+10:00</updated><id>https://benswift.me/blog/2024/09/20/format-markdown-on-save-in-zed-using-prettier</id><content type="html" xml:base="https://benswift.me/blog/2024/09/20/format-markdown-on-save-in-zed-using-prettier/"><![CDATA[<p>One thing I’ve particularly enjoyed since switching to Zed is format-on-save,
-which is turned on by default in most programming modes. However, it’s not
-turned on by default for Markdown files.</p>
-
-<p>Since I like my Markdown files formatted with <a href="https://prettier.io">Prettier</a>,
-including the “wrap to 80 cols” <code>--prose-wrap always</code> option, I set that command
-as an “external” formatter for Markdown files and turned on <code>format_on_save</code>.
-Here’s the config if you want to do the same:</p>
-
-<pre><code class="language-json">"languages": {
-    "Markdown": {
-      "format_on_save": "on",
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": [
-            "--prose-wrap",
-            "always",
-            "--stdin-filepath",
-            "{buffer_path}"
-          ]
-        }
-      }
-    }
-  }
-</code></pre>]]></content><author><name>Ben Swift</name></author><category term="tools" /><category term="zed" /><summary type="html"><![CDATA[One thing I’ve particularly enjoyed since switching to Zed is format-on-save, which is turned on by default in most programming modes. However, it’s not turned on by default for Markdown files.]]></summary></entry></feed>
+wankers.</p>]]></content><author><name>Ben Swift</name></author><category term="teaching" /><category term="ai" /><summary type="html"><![CDATA[Note: this stuff is the workshop content for an alumni workshop in November 2024 hosted by the Cybernetic Studio at the ANU School of Cybernetics.]]></summary></entry></feed>
