@@ -3,27 +3,27 @@ title: Seeing AI tasks through a TAM lens
 tags: ai
 ---
 
-Here's something that's been bugging me about AI adoption research: we keep
-asking "do you use ChatGPT?" when we should be asking "for which specific
-tasks?"
+When it comes to AI adoption research, we keep asking "do you use ChatGPT?" when
+we should be adding "for which specific tasks?"
 
 The
 [Technology Acceptance Model](https://en.wikipedia.org/wiki/Technology_acceptance_model)
 (TAM) has been successfully applied to understand LLM
 adoption---[surveys of hundreds of users](https://www.tandfonline.com/doi/full/10.1080/10447318.2024.2314358)
 confirm that perceived usefulness and ease of use predict whether people adopt
-these tools. But here's the problem: these studies treat adoption as a
-technology-level decision rather than examining the specific tasks where these
-tools actually prove valuable.
+these tools. But these studies treat adoption as a technology-level decision
+rather than examining the specific _tasks_ where these things are useful.
 
-This misses something fundamental. A researcher might find an LLM invaluable for
-literature search but useless for theoretical analysis. A journalist might rely
-on it for drafting routine updates but avoid it for investigative work. The same
-person using the same model occupies very different positions depending on the
-task at hand.
+A researcher might find an LLM invaluable for literature search but useless for
+theoretical analysis. A journalist might rely on it for drafting routine updates
+but avoid it for investigative work. A disinfo actor will gladly use it to
+["flood the zone"](https://www.mediamatters.org/steve-bannon/misinformer-year-steve-bannons-flood-zone-shit-approach-destroying-american-democracy),
+but not for writing to their loved ones. The same person using the same model
+would give very different answers to the "are LLMs useful" depending on the task
+at hand.
 
-So I reckon we should use a different framing: treat each (user, model, task)
-triple as its own thing, mapped onto a two-dimensional plane.
+So I propose a different framing: treat each (user, model, task) triple as its
+own thing, mapped onto a two-dimensional plane.
 
 ## The framework[^branding]
 
@@ -34,16 +34,18 @@ specific task. Ranges from "never tried" to "extensive experience". This only
 moves in one direction---you can't become less familiar with something you've
 tried.
 
-**Helpfulness**: whether the model is actually useful for that task. Ranges from
-actively harmful through neutral to genuinely helpful. This corresponds to TAM's
-"perceived usefulness" but evaluated task-specifically. Crucially, this
-assessment can change as familiarity increases---early positive impressions
-might fade, or initial frustrations might give way to appreciation.
+**Helpfulness**: whether you've found the model to be helpful for that task.
+Ranges from actively harmful through neutral to genuinely helpful. This
+corresponds to TAM's "perceived usefulness" but evaluated task-specifically.
+Crucially, this assessment can change as familiarity increases---early positive
+impressions might fade, or initial frustrations might give way to appreciation.
+And there's always going to be noise (stochastic parrots and all that) so it's
+really just an "in general" judgement.
 
-This creates a space where the same user with the same model might
-simultaneously occupy multiple zones depending on which tasks we examine. And
-importantly, there's a substantial neutral zone in the middle---tasks where the
-tool neither helps nor hurts, or at least where it's a real mixed bag.
+The same user with the same AI model might simultaneously occupy multiple zones
+depending on task. And importantly, there's a substantial neutral zone in the
+middle---tasks where the tool neither helps nor hurts, or at least where it's a
+mixed bag.
 
 <svg width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <!-- Background zones -->
@@ -94,7 +96,7 @@ tool neither helps nor hurts, or at least where it's a real mixed bag.
 
 ### The zones
 
-**High familiarity, helpful** (upper right): Proven integration. You've got
+**High familiarity, helpful** (upper right): This is the good place. You've got
 extensive experience, you've developed effective prompting strategies, you
 understand the limitations, and you've integrated it into your workflow. For a
 writer, this might be generating first drafts of routine correspondence. For a
@@ -106,18 +108,21 @@ rejection. You haven't simply failed to try---you've engaged extensively and
 concluded it doesn't work, or at best breaks even. You've hit the model's
 limitations repeatedly enough to form a stable assessment.
 
-The neutral zone here is particularly interesting---tasks where using the tool
-takes about as much effort as doing it yourself, so you might use it or might
-not depending on mood. A researcher editing AI-generated literature summaries
-that need as much work to fix as they would to write from scratch. A designer
-tweaking AI-generated layouts that never quite capture the intended aesthetic.
+The neutral zone is interesting---tasks where using the tool takes about as much
+effort as doing it yourself, so you might use it or might not depending on mood
+(or whether you're paying for it or you're being
+[subsidised by Silicon Valley VCs](https://www.wheresyoured.at/why-everybody-is-losing-money-on-ai/)).
+A researcher editing AI-generated literature summaries that need as much work to
+fix as they would to write from scratch. A designer tweaking AI-generated
+layouts that never quite capture the intended aesthetic.
 
 The genuinely unhelpful zone includes complex reasoning tasks, fact-checking
 mission-critical information, or creative work requiring genuine originality
 where the tool actively wastes your time or produces misleading output. In my
 use of Claude Code (and friends) some coding tasks fall into this for
 sure---they add technical debt that actually makes things worse. And obviously
-there's cooked stuff like digital phrenology/racism.
+there's cooked stuff like
+[digital phrenology](https://gizmodo.com/were-doing-ai-phrenology-again-2000553600)/[racism](https://hai.stanford.edu/news/covert-racism-ai-how-language-models-are-reinforcing-outdated-stereotypes).
 
 **Low familiarity, helpful** (upper left): Early positive impression. You've
 tried it once or twice with good results but haven't encountered edge cases.
@@ -135,22 +140,20 @@ rather than experiential.
 Consider an academic researcher (hey---I write what I know). I might map my
 experience like this:
 
-- **Literature search and summarisation**: upper right---proven useful for
-  finding relevant papers quickly
-- **Drafting standard email responses**: upper right---saves time, works
+- _vibecoding all the things_: upper right---see elsewhere on my blog, but I've
+  overall seen an increase in my productivity
+- _literature search and summarisation_: upper right---proven useful for finding
+  relevant papers quickly
+- _drafting standard email responses_: upper right---saves time, works
   consistently
-- **Generating first drafts of methods sections**: middle right---tried
+- _generating first drafts of "methods sections"_: middle right---tried
   extensively, but I end up rewriting so much it's neutral
-- **Writing out core/key arguments**: lower right for sure---consistently
+- _writing out core/key arguments_: lower right for sure---consistently
   superficial and misleading
-- **Data analysis code review**: middle left---tried once, suggestions were
-  hit-or-miss, haven't invested enough to know if better prompting would help
-- **Grant writing**: lower left---suspect it can't capture the nuance, haven't
-  really tried
 
 Technology-level TAM would aggregate these into a single "perceived usefulness"
 score for "LLMs in academic research". But that obscures the actual pattern:
-selective integration based on task-specific evaluation.
+which is much lumpier and task-dependent.
 
 The framework also explains why people's assessments differ so dramatically.
 We're often arguing about different tasks while thinking we're arguing about the
@@ -162,19 +165,21 @@ This matches what
 [recent meta-analyses](https://www.nature.com/articles/s41562-024-02024-1) have
 found: human-AI combinations perform significantly differently depending on task
 type, with performance losses in decision-making tasks but gains in content
-creation tasks. The tool's utility is fundamentally task-dependent.
+creation tasks. The tool's utility is fundamentally task-dependent. Which really
+shouldn't surprise anyone, but here we are.
 
 ## The transformation/automation/magnification thing
 
-You've probably seen people claim AI will "transform" work in their domain. The
-framework helps cut through this. Most "transformation" claims turn out to be:
+You've probably seen people claim AI will "transform" work in their domain. Most
+"transformation" claims turn out to be:
 
-- **Automation** of tasks already in the upper-right quadrant (where the tool
+- **automation** of tasks already in the upper-right quadrant (where the tool
   genuinely helps with familiar tasks, and/or can be used to write a script to
   fully automate a task)
-- **Magnification** of existing patterns (making good writers slightly better,
+- **magnification** of existing patterns (making good writers slightly better,
   bad writers slightly worse)
-- **Wishful thinking** about tasks currently in the lower quadrants
+- **wishful thinking** about tasks currently in the lower quadrants,
+  particularly by folks selling AI tools
 
 Real transformation would mean moving tasks between zones in systematic ways.
 That might happen---models improve, prompting strategies evolve---but it's an
@@ -193,13 +198,13 @@ experimentation while validating informed rejection.
 
 Different zones need different strategies:
 
-- Upper-right tasks deserve workflow integration and continued refinement
-- Middle-right neutral tasks might warrant periodic re-evaluation as models
+- upper-right tasks deserve workflow integration and continued refinement
+- middle-right neutral tasks might warrant periodic re-evaluation as models
   improve, or just accepting they're optional
-- Lower-right unhelpful tasks probably aren't worth more effort unless models
+- lower-right unhelpful tasks probably aren't worth more effort unless models
   substantially improve
-- Upper-left tasks need systematic testing to see if initial promise holds
-- Lower-left tasks might benefit from one serious attempt with better prompting
+- upper-left tasks need systematic testing to see if initial promise holds
+- lower-left tasks might benefit from one serious attempt with better prompting
   before abandoning them
 
 For researchers: adopt task-level analysis. Ask participants to identify
@@ -226,9 +231,9 @@ obscures more than it reveals.
 
 The real test will be whether thinking in these terms helps you make better
 decisions about where to invest effort learning these tools. For me, it's been
-clarifying---it legitimises informed rejection while encouraging strategic
-experimentation, and it helps me recognise when I'm in that neutral zone where
-using the tool is more about performance than productivity.
+clarifying---it legitimises informed rejection (neo-luddism) while encouraging
+strategic experimentation, and it helps me recognise when I'm in that neutral
+zone where using the tool is more about performance than productivity.
 
 Your mileage may vary.
 
