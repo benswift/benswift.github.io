@@ -45,6 +45,53 @@ simultaneously occupy multiple zones depending on which tasks we examine. And
 importantly, there's a substantial neutral zone in the middle---tasks where the
 tool neither helps nor hurts, or at least where it's a real mixed bag.
 
+<svg width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background zones -->
+  <rect x="50" y="50" width="250" height="133" fill="#e8f5e9" opacity="0.5"/>
+  <text x="175" y="110" text-anchor="middle" font-size="14" fill="#2e7d32" font-weight="600">Early positive</text>
+  <text x="175" y="128" text-anchor="middle" font-size="12" fill="#2e7d32">impression</text>
+  
+  <rect x="300" y="50" width="250" height="133" fill="#a5d6a7" opacity="0.7"/>
+  <text x="425" y="110" text-anchor="middle" font-size="14" fill="#1b5e20" font-weight="600">Proven</text>
+  <text x="425" y="128" text-anchor="middle" font-size="12" fill="#1b5e20">integration</text>
+  
+  <rect x="50" y="183" width="250" height="134" fill="#fff3e0" opacity="0.5"/>
+  <text x="175" y="243" text-anchor="middle" font-size="14" fill="#e65100" font-weight="600">Neutral zone</text>
+  <text x="175" y="261" text-anchor="middle" font-size="12" fill="#e65100">(premature/speculative)</text>
+  
+  <rect x="300" y="183" width="250" height="134" fill="#ffe0b2" opacity="0.7"/>
+  <text x="425" y="243" text-anchor="middle" font-size="14" fill="#e65100" font-weight="600">Neutral zone</text>
+  <text x="425" y="261" text-anchor="middle" font-size="12" fill="#e65100">(informed)</text>
+  
+  <rect x="50" y="317" width="250" height="133" fill="#ffebee" opacity="0.5"/>
+  <text x="175" y="377" text-anchor="middle" font-size="14" fill="#c62828" font-weight="600">Premature</text>
+  <text x="175" y="395" text-anchor="middle" font-size="12" fill="#c62828">rejection</text>
+  
+  <rect x="300" y="317" width="250" height="133" fill="#ef9a9a" opacity="0.7"/>
+  <text x="425" y="377" text-anchor="middle" font-size="14" fill="#b71c1c" font-weight="600">Informed</text>
+  <text x="425" y="395" text-anchor="middle" font-size="12" fill="#b71c1c">rejection</text>
+  
+  <!-- Axes -->
+  <line x1="50" y1="450" x2="550" y2="450" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="50" y1="450" x2="50" y2="50" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Axis labels -->
+  <text x="300" y="485" text-anchor="middle" font-size="16" font-weight="600">Familiarity →</text>
+  <text x="25" y="250" text-anchor="middle" font-size="16" font-weight="600" transform="rotate(-90, 25, 250)">Helpfulness →</text>
+  
+  <!-- Grid lines -->
+  <line x1="300" y1="50" x2="300" y2="450" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="50" y1="183" x2="550" y2="183" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="50" y1="317" x2="550" y2="317" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+</svg>
+
 ### The zones
 
 **High familiarity, helpful** (upper right): Proven integration. You've got
