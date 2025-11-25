@@ -12,8 +12,8 @@
 <meta property="og:title" content="11ty and Vite for modern static websites" />
 <meta name="author" content="Ben Swift" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’ve been using 11ty for static site generation for a while now, and it’s great—simple, flexible, stays out of your way. But for a recent project I needed proper asset bundling, hot module replacement, and access to the npm ecosystem without building my own pipeline. Enter Vite." />
-<meta property="og:description" content="I’ve been using 11ty for static site generation for a while now, and it’s great—simple, flexible, stays out of your way. But for a recent project I needed proper asset bundling, hot module replacement, and access to the npm ecosystem without building my own pipeline. Enter Vite." />
+<meta name="description" content="I’ve been using 11ty for static site generation for a while now (not this site—that’s Jekyll—but for other stuff) and it’s great. But for a recent project I needed proper asset bundling, hot module replacement (HMR), and access to the npm ecosystem without building my own pipeline. Enter Vite." />
+<meta property="og:description" content="I’ve been using 11ty for static site generation for a while now (not this site—that’s Jekyll—but for other stuff) and it’s great. But for a recent project I needed proper asset bundling, hot module replacement (HMR), and access to the npm ecosystem without building my own pipeline. Enter Vite." />
 <link rel="canonical" href="https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/" />
 <meta property="og:url" content="https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/" />
 <meta property="og:site_name" content="benswift.me" />
@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@benswift" />
 <meta name="twitter:creator" content="@Ben Swift" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2025-11-24T00:00:00+11:00","datePublished":"2025-11-24T00:00:00+11:00","description":"I’ve been using 11ty for static site generation for a while now, and it’s great—simple, flexible, stays out of your way. But for a recent project I needed proper asset bundling, hot module replacement, and access to the npm ecosystem without building my own pipeline. Enter Vite.","headline":"11ty and Vite for modern static websites","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/"},"url":"https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ben Swift"},"dateModified":"2025-11-24T00:00:00+11:00","datePublished":"2025-11-24T00:00:00+11:00","description":"I’ve been using 11ty for static site generation for a while now (not this site—that’s Jekyll—but for other stuff) and it’s great. But for a recent project I needed proper asset bundling, hot module replacement (HMR), and access to the npm ecosystem without building my own pipeline. Enter Vite.","headline":"11ty and Vite for modern static websites","mainEntityOfPage":{"@type":"WebPage","@id":"https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/"},"url":"https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -81,15 +81,15 @@
 
 
   <p>I’ve been using <a href="https://www.11ty.dev/">11ty</a> for static site generation for a
-while now, and it’s great—simple, flexible, stays out of your way. But for a
-recent project I needed proper asset bundling, hot module replacement, and
-access to the npm ecosystem without building my own pipeline. Enter
+while now (not this site—that’s Jekyll—but for other stuff) and it’s great.
+But for a recent project I needed proper asset bundling, hot module replacement
+(HMR), and access to the npm ecosystem without building my own pipeline. Enter
 <a href="https://vite.dev/">Vite</a>.</p>
 
 <p>The combination turns out to work really well, withouth adding <em>too</em> much
-complexity over bare 11ty. Here’s what I learned setting up 11ty with Vite and
-Tailwind v4 for the <a href="https://www.llmsunplugged.org/">LLMs Unplugged</a> teaching
-resources site.</p>
+complexity over bare 11ty. Here’s what I learned setting up 11ty with Vite (and
+Tailwind v4 too) for the <a href="https://www.llmsunplugged.org/">LLMs Unplugged</a>
+teaching resources site.</p>
 
 <h2 id="why-not-just-use-11ty-alone">Why not just use 11ty alone?</h2>
 
@@ -157,8 +157,9 @@ your HTML to point to the hashed files.</p>
 copied directly to the output directory without processing. Useful for things
 like <code>CNAME</code> files, <code>robots.txt</code>, PDFs, etc.</p>
 
-<p>The problem: Vite’s build process empties the output directory before it runs.
-So 11ty copies your passthrough files, then Vite helpfully deletes them all.</p>
+<p>The problem is that Vite’s build process empties the output directory before it
+runs. So 11ty copies your passthrough files, then Vite helpfully deletes them
+all.</p>
 
 <p>The solution is a custom Vite plugin that runs <em>after</em> Vite’s build completes
 and copies those files back:</p>
@@ -197,9 +198,11 @@ me more control over exactly what gets copied and when.</p>
 
 <h2 id="tailwind-v4s-new-approach">Tailwind v4’s new approach</h2>
 
-<p>Tailwind v4 changes things significantly—in a good way. Instead of a
-<code>tailwind.config.js</code> file, you configure everything through CSS using the
-<code>@theme</code> directive. Here’s what <code>main.css</code> looks like:</p>
+<p>The above stack works great with whatever CSS approach you use, but I’ve also
+been moving more and more of my projedts to Tailwind v4. So here’s some advice
+for that approach (disregard if you don’t want to use Tailwind). In Tailwind v4
+instead of a <code>tailwind.config.js</code> file you configure everything through CSS
+using the <code>@theme</code> directive. Here’s what <code>main.css</code> might look like:</p>
 
 <pre><code class="language-css">@import "tailwindcss";
 @plugin "@tailwindcss/typography";
@@ -220,7 +223,7 @@ me more control over exactly what gets copied and when.</p>
 }
 </code></pre>
 
-<p>No config file. No JavaScript. Just CSS with custom properties. The
+<p>No config file, no JavaScript; just CSS with custom properties. The
 <code>@tailwindcss/vite</code> plugin handles everything<sup id="fnref:tw-v4"><a href="#fn:tw-v4" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>.</p>
 
 <p>This approach feels much more natural—design tokens as CSS custom properties
@@ -229,7 +232,7 @@ to reference your colour in some custom CSS? Just use <code>var(--color-anu-gold
 
 <h2 id="dependencies-and-setup">Dependencies and setup</h2>
 
-<p>The key packages you need:</p>
+<p>The key packages you need for this stack are:</p>
 
 <pre><code class="language-json">{
   "dependencies": {
@@ -370,9 +373,9 @@ Boring technology and all that. <a href="#fnref:right-tool" class="reversefootn
 
   <!-- open source humblebrag -->
   <p>
-    site revision <code>e9c16d3cd</code> (see
+    site revision <code>7dee4f2e5</code> (see
     <a
-      href="https://github.com/benswift/benswift.github.io/blob/e9c16d3cd/_posts/2025-11-24-11ty-and-vite-for-modern-static-websites.md"
+      href="https://github.com/benswift/benswift.github.io/blob/7dee4f2e5/_posts/2025-11-24-11ty-and-vite-for-modern-static-websites.md"
       >source</a
     >,
     <a
