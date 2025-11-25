@@ -4,15 +4,15 @@ tags: web
 ---
 
 I've been using [11ty](https://www.11ty.dev/) for static site generation for a
-while now, and it's great---simple, flexible, stays out of your way. But for a
-recent project I needed proper asset bundling, hot module replacement, and
-access to the npm ecosystem without building my own pipeline. Enter
+while now (not this site---that's Jekyll---but for other stuff) and it's great.
+But for a recent project I needed proper asset bundling, hot module replacement
+(HMR), and access to the npm ecosystem without building my own pipeline. Enter
 [Vite](https://vite.dev/).
 
 The combination turns out to work really well, withouth adding _too_ much
-complexity over bare 11ty. Here's what I learned setting up 11ty with Vite and
-Tailwind v4 for the [LLMs Unplugged](https://www.llmsunplugged.org/) teaching
-resources site.
+complexity over bare 11ty. Here's what I learned setting up 11ty with Vite (and
+Tailwind v4 too) for the [LLMs Unplugged](https://www.llmsunplugged.org/)
+teaching resources site.
 
 ## Why not just use 11ty alone?
 
@@ -85,8 +85,9 @@ Here's where I wasted a bunch of time 🙃. 11ty has this concept of
 copied directly to the output directory without processing. Useful for things
 like `CNAME` files, `robots.txt`, PDFs, etc.
 
-The problem: Vite's build process empties the output directory before it runs.
-So 11ty copies your passthrough files, then Vite helpfully deletes them all.
+The problem is that Vite's build process empties the output directory before it
+runs. So 11ty copies your passthrough files, then Vite helpfully deletes them
+all.
 
 The solution is a custom Vite plugin that runs _after_ Vite's build completes
 and copies those files back:
@@ -126,9 +127,11 @@ me more control over exactly what gets copied and when.
 
 ## Tailwind v4's new approach
 
-Tailwind v4 changes things significantly---in a good way. Instead of a
-`tailwind.config.js` file, you configure everything through CSS using the
-`@theme` directive. Here's what `main.css` looks like:
+The above stack works great with whatever CSS approach you use, but I've also
+been moving more and more of my projedts to Tailwind v4. So here's some advice
+for that approach (disregard if you don't want to use Tailwind). In Tailwind v4
+instead of a `tailwind.config.js` file you configure everything through CSS
+using the `@theme` directive. Here's what `main.css` might look like:
 
 ```css
 @import "tailwindcss";
@@ -150,7 +153,7 @@ Tailwind v4 changes things significantly---in a good way. Instead of a
 }
 ```
 
-No config file. No JavaScript. Just CSS with custom properties. The
+No config file, no JavaScript; just CSS with custom properties. The
 `@tailwindcss/vite` plugin handles everything[^tw-v4].
 
 [^tw-v4]:
@@ -163,7 +166,7 @@ to reference your colour in some custom CSS? Just use `var(--color-anu-gold)`.
 
 ## Dependencies and setup
 
-The key packages you need:
+The key packages you need for this stack are:
 
 ```json
 {
