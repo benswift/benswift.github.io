@@ -1,0 +1,22 @@
+---
+title: "Agentic LLMs and Nerves"
+aside: false
+layout: doc
+tags:
+  - elixir
+  - nerves
+  - ai
+---
+
+# Agentic LLMs and Nerves
+
+<p class="post-date">24 Oct 25</p>
+
+<TagList :tags='["elixir","nerves","ai"]' />
+
+
+TODO, but the main points are:
+
+- Claude Code & GPT-5 know a lot about elixir (and usage rules are great)
+- ht-mcp is the secret sauce for remote iex-ing (maybe there are other ways
+  too?)

@@ -4,6 +4,8 @@
   "description": "livecoder & researcher homepage - code, creativity, culture",
   "type": "module",
   "scripts": {
+    "prebuild": "node scripts/generate-blog-pages.js",
+    "predev": "node scripts/generate-blog-pages.js",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
