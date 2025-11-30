@@ -1,6 +1,16 @@
 import { defineConfig } from "vitepress";
+import checker from "vite-plugin-checker";
 
 export default defineConfig({
+  // Vite configuration
+  vite: {
+    plugins: [
+      checker({
+        typescript: true,
+      }),
+    ],
+  },
+
   title: "benswift.me",
   description: "livecoder & researcher homepage - code, creativity, culture",
 
