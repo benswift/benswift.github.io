@@ -34,7 +34,7 @@ It then goes on to show some example visualisation in
 bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it's something Andrew Sorensen and I have written
 about before in our paper [Visual Code Annotations for Cyberphysical
-Programming]({% link research.md %}#swiftVisualCodeAnnotations2013) (2013) in
+Programming](/research#swiftVisualCodeAnnotations2013) (2013) in
 the _1st International Workshop on Live Programming (LIVE)_ (it's
 reference
 #4 in the essay). I'll refer to this a bit in this post, so let's call it "the

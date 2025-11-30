@@ -5,14 +5,10 @@ hidden: true
 tags: reimagine
 ---
 
-I'm now a [Reimagine Fellow]({% link
-_posts/2019-08-30-Im-a-reimagine-fellow.md %}) and stuff to do with that program
-(and getting the [c/c/c studio]({% link
-_posts/2019-03-20-reimagine-fellow-project-pitch.md %}) up and running) is
-starting to happen. As I've [done]({% link
-_posts/2019-02-07-reimagining-engineering-cs-at-the-anu.md %}) [so
-far]({% link _posts/2019-03-20-reimagine-fellow-project-pitch.md
-%}) I'm planning to continue to work on this project "in the open", i.e. on this
+I'm now a [Reimagine Fellow](/blog/2019/08/30/Im-a-reimagine-fellow) and stuff to do with that program
+(and getting the [c/c/c studio](/blog/2019/03/20/reimagine-fellow-project-pitch) up and running) is
+starting to happen. As I've [done](/blog/2019/02/07/reimagining-engineering-cs-at-the-anu) [so
+far](/blog/2019/03/20/reimagine-fellow-project-pitch) I'm planning to continue to work on this project "in the open", i.e. on this
 blog. This means that if you've got ideas or want to help out, you can see where
 I'm up to (and [get in touch](mailto:ben.swift@anu.edu.au)), and it also
 minimises the likelihood that I'll be forced to email around anything called

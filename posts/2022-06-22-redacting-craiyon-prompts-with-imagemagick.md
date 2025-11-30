@@ -40,10 +40,10 @@ Because it's tedious to do that by hand, here's what I came up with:
 
 Here's an example screenshot:
 
-![Grid of AI image outputs generated in response to the prompt "redacting the prompt from a DALL-E image output with imagemagick"]({% link assets/images/posts/craiyon/craiyon_2022-6-22_17-21-5.png %})
+![Grid of AI image outputs generated in response to the prompt "redacting the prompt from a DALL-E image output with imagemagick"](/assets/images/posts/craiyon/craiyon_2022-6-22_17-21-5.png)
 
 and the same output, after the redaction command has been run:
 
-![Grid of AI image outputs generated in response to the prompt, which has been redacted]({% link assets/images/posts/craiyon/redacted-craiyon_2022-6-22_17-21-5.jpg %})
+![Grid of AI image outputs generated in response to the prompt, which has been redacted](/assets/images/posts/craiyon/redacted-craiyon_2022-6-22_17-21-5.jpg)
 
 If you need to do the same, then hopefully I've saved you a bit of time ☺

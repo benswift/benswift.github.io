@@ -11,7 +11,7 @@ published: false ## already up on THE website... this is just for archival purpo
 This article originally [appeared in Times Higher
 Education](https://www.timeshighereducation.com/campus/ai-higher-education-dystopia-utopia-or-something-between).
 
-{% include picture.html file="images/posts/ai-eye.jpeg" alt="a blue eye with weird techy-looking things in the iris" %}
+<Picture file="images/posts/ai-eye.jpeg" alt="a blue eye with weird techy-looking things in the iris" />
 
 AI applications are already part of the higher education experience for
 students, instructors and administrators. Some of them are chatbots and

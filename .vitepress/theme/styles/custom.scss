@@ -119,29 +119,38 @@ $link-color: mix($text-color, $highlight-color, 50%);
 
 // Bibliography styling
 .bibliography {
-  p {
-    margin: 0.4em 0;
+  .year-section {
+    margin-bottom: 2rem;
   }
 
-  & > div {
-    margin-bottom: 2em;
+  .pub-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--vp-c-brand-soft);
   }
 
-  .date {
-    font-weight: 300;
+  .pub-title {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+
+    a {
+      color: var(--vp-c-brand-1);
+    }
+  }
+
+  .pub-authors {
     color: $text-grey;
+    margin-bottom: 0.25rem;
   }
 
-  .title {
-    font-weight: 900;
-  }
-
-  .author {
-    font-weight: 600;
-  }
-
-  .venue {
+  .pub-venue {
     font-style: italic;
+    color: $text-grey;
+    font-size: 0.9em;
+  }
+
+  p {
+    margin: 0.25em 0;
   }
 }
 

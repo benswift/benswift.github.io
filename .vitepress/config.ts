@@ -85,15 +85,8 @@ export default defineConfig({
     "Makefile",
     "scripts/**",
     "backlog/**",
-    // Old Jekyll files at root
-    "jekyll-index.md",
-    "blog.md",
-    "research.md",
-    "talks.md",
-    "livecoding.md",
-    "teaching.md",
-    "bio.md",
-    "cv.md",
+    // Old Jekyll files at root (renamed with jekyll- prefix)
+    "jekyll-*.md",
     "search.md",
     "blurbs.md",
     "404.md",

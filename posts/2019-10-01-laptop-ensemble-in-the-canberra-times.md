@@ -18,10 +18,8 @@ about the role of code in music-making:
 
 I'm so pumped---this is exactly what I've been trying to do for several years,
 and having Kim on board as an ally is very encouraging. Along with the CECS
-Reimagine agenda (including their support of my [fellowship]({%
-link _posts/2019-08-30-Im-a-reimagine-fellow.md %}) to put together the [c/c/c
-studio]({% link
-_posts/2019-03-20-reimagine-fellow-project-pitch.md %})) and the great things
+Reimagine agenda (including their support of my [fellowship](/blog/2019/08/30/Im-a-reimagine-fellow) to put together the [c/c/c
+studio](/blog/2019/03/20/reimagine-fellow-project-pitch)) and the great things
 happening [elsewhere](https://soad.cass.anu.edu.au) in
 [CASS](https://cdhr.cass.anu.edu.au), there's good vibes in the air around
 cross-disiplinary code, creativity and culture at the ANU.

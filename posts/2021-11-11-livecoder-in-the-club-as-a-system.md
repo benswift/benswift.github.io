@@ -22,8 +22,7 @@ shape futures through and with technology.
 
 </div>
 
-If you follow this blog, you'll know that I'm a [livecoder]({% link
-livecoding.md %}). I _code_ (i.e. write computer programs) to make music in a club
+If you follow this blog, you'll know that I'm a [livecoder](/livecoding/). I _code_ (i.e. write computer programs) to make music in a club
 setting, with an audience that just wants to dance and have a good time[^niche].
 If you've never seen it before, here's a 10min video of my collaborator [Ushini Attanayake](https://ushini.com)
 and I.
@@ -101,7 +100,7 @@ livecoder-in-the-club practice.
 
 It's a bit clearer to see in a picture:
 
-{% include picture.html file="images/posts/livecoder-in-a-club-system-diagram.png" alt="system diagram for the livecoder-in-a-club system" %}
+<Picture file="images/posts/livecoder-in-a-club-system-diagram.png" alt="system diagram for the livecoder-in-a-club system" />
 
 So, clearly,
 

@@ -35,7 +35,6 @@ my list of things to try in 2020:
   (_update: actually, my hand-rolled CSS is fine; I've got better things to do_)
 
 There's no timeline on any of this, and I'm going to be busy with other things
-(e.g. my [Reimagine Fellowship]({% link
-_posts/2019-03-20-reimagine-fellow-project-pitch.md %}), updating the
+(e.g. my [Reimagine Fellowship](/blog/2019/03/20/reimagine-fellow-project-pitch), updating the
 [Extempore](https://github.com/digego/extempore) docs and generally [doing good
-research]({% link research.md %})).
+research](/research)).

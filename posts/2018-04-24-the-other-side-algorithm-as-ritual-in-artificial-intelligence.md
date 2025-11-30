@@ -19,8 +19,7 @@ The ritual will **start on time at 9am** in [room
 so please come a touch early to make sure you don't miss out on a seat.
 
 See [Kieran's blog](https://kieranbrowne.com/works/the-other-side/) for more
-details about tomorrow's ritual, and read the [paper]({% link
-assets/documents/preprints/browne_swift_2018_the_other_side.pdf %}) for the full
+details about tomorrow's ritual, and read the [paper](/assets/documents/preprints/browne_swift_2018_the_other_side.pdf) for the full
 story.
 
 {:.hl-para}
@@ -28,4 +27,4 @@ story.
 **Post-presentation update**: if you missed the presentation, Kieran made a
 video. Enjoy!
 
-{% include youtube.html id="1Y8MqnXYLQU" %}
+<YouTube id="1Y8MqnXYLQU" />

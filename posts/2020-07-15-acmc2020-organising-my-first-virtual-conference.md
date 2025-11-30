@@ -29,7 +29,7 @@ well as feedback from the ACMC community during the conference.
     well, it's actually pretty common that I'm quiet for a few weeks, so I
     guess it's business as usual
 
-{% include toc.html %}
+[[toc]]
 
 ## Tools for running an online conference in 2020
 
@@ -90,7 +90,7 @@ at least) at <https://acmc2020.com/>, and the [source is up on
 GitHub](https://github.com/australasian-computer-music-association/acmc2020) as
 well.
 
-{% include picture.html file="images/posts/acmc-website-words-sounds-screenshot.png" alt="ACMC website screenshot" %}
+<Picture file="images/posts/acmc-website-words-sounds-screenshot.png" alt="ACMC website screenshot" />
 
 #### Reflections
 
@@ -196,7 +196,7 @@ After the Premiere, the videos were (still are) left up on the [ACMC
 YouTube](https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw) for people to
 catch up & watch at their leisure.
 
-![ACMC YouTube channel screenshot]({% link assets/images/posts/acmc-youtube-screenshot.png %})
+![ACMC YouTube channel screenshot](/assets/images/posts/acmc-youtube-screenshot.png)
 
 [^ffmpeg]:
     while this worked really nicely in the end, those scripts probably took me
@@ -248,7 +248,7 @@ interaction & discussion. And having all the discussion for the whole conference
 helped with the feeling that this was a single event, rather than just a series
 of disconnected YouTube videos.
 
-{% include picture.html file="images/posts/acmc-discord-screenshot.png" alt="ACMC Discord channel screenshot" %}
+<Picture file="images/posts/acmc-discord-screenshot.png" alt="ACMC Discord channel screenshot" />
 
 #### Reflections
 

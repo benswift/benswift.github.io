@@ -22,7 +22,7 @@ tags: reimagine ccc
 
 </div>
 
-{% include toc.html %}
+[[toc]]
 
 ## Workshop overview
 
@@ -49,8 +49,7 @@ If you're coming to the culture lab and you'd like to be part of the workshop,
 
 ### Timeline
 
-- **9:00**: [intro]({% link _talks/ccc-studio-workshop.md
-  %})---what is the c/c/c studio
+- **9:00**: [intro](/talks/ccc-studio-workshop)---what is the c/c/c studio
 - **9:20**: [group formation](#group-formation) (with stickers! <span
   style="color:#eb4d4b;">⬤</span><span style="color:#3498db;">⬤</span><span
   style="color:#27ae60;">⬤</span><span style="color:#85522f;">⬤</span>)
@@ -183,10 +182,8 @@ workshop. So, your group will need to organise:
 
 If you want to work on paper there are paper templates floating around (let us
 know if you'd like one). If you've got a digital scribe, then there are
-electronic templates ([markdown]({% link
-assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %}) and [MS
-Word]({% link
-assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx %})).
+electronic templates ([markdown](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md) and [MS
+Word](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx)).
 
 {:.hl-para}
 
@@ -208,9 +205,9 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^fate]: well, the PRNG in your web browser, anyway
 
-<script src="{% link assets/js/TweenMax.min.js %}"></script>
-<script src="{% link assets/js/Winwheel.js %}"></script>
-<script src="{% link assets/js/ccc-workshop-wheels.js %}"></script>
+<script src="/assets/js/TweenMax.min.js"></script>
+<script src="/assets/js/Winwheel.js"></script>
+<script src="/assets/js/ccc-workshop-wheels.js"></script>
 
 <style>
 .wheelIndicator {
@@ -491,8 +488,7 @@ format of this document is up to you. There are a few ways to do this:
 
 Thanks so much for participating 😊 If your group wrote the assessment item on
 paper, can you hand it to Ben (or one of the other facilitators) before you
-leave ? If you did it electronically (e.g. using the [markdown template]({% link
-assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md %})) then
+leave ? If you did it electronically (e.g. using the [markdown template](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md)) then
 can you [email it to Ben](mailto:ben.swift@anu.edu.au)?
 
 ## Appendices

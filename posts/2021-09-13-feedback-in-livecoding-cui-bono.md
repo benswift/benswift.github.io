@@ -7,8 +7,7 @@ tags: teaching livecoding
 ---
 
 {:hl-para}
-Here's the [link to the slides]({% link
-_posts/2021-09-13-feedback-in-livecoding-cui-bono.md %}) for the actual
+Here's the [link to the slides](/blog/2021/09/13/feedback-in-livecoding-cui-bono) for the actual
 presentation on Oct 13.
 
 Hi, BUILD students. I know y'all are busy, so this won't take _too_ long and
@@ -22,9 +21,9 @@ this:
     I don't really have any lived experience with this---I'm approaching 40 and
     have young kids and I'm normally in bed by 9:30pm.
 
-{% include youtube.html id="C2GH5JmJwhU" %}
+<YouTube id="C2GH5JmJwhU" />
 
-{% include youtube.html id="a1RxpJkvqpY" %}
+<YouTube id="a1RxpJkvqpY" />
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592452477?color=be2edd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ushini &amp;amp; Ben live @ ACMC&amp;#039;21"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 

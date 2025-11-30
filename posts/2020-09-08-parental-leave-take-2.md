@@ -10,8 +10,7 @@ cocktail of feelings.
 Anyway, I'm taking advantage of the ANU's fantastic parental leave for the
 second time, and so I'll be a full-time Dad for the rest of the year. My
 approach to answering my emails and doing work stuff will be [pretty much the
-same as last time]({% link
-_posts/2019-02-26-on-parental-leave-and-auto-reply-messages.md %}), so I'm sorry
+same as last time](/blog/2019/02/26/on-parental-leave-and-auto-reply-messages), so I'm sorry
 if you were relying on me for something work-related in the near future. I'll be
 back in 2021 refreshed and ready to be part of the ANU CS team and the [c/c/c
 studio](https://cs.anu.edu.au/code-creativity-culture/).

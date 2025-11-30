@@ -174,12 +174,12 @@ Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-t
 
 And away it went! Several minutes later, it was done. Here are the original two images:
 
-![Original ben.jpg image]({% link assets/images/headshots/headshot.jpg %})
-![Original tiger.jpg]({% link assets/images/posts/tiger.jpg %})
+![Original ben.jpg image](/assets/images/headshots/headshot.jpg)
+![Original tiger.jpg](/assets/images/posts/tiger.jpg)
 
 and here's the output:
 
-![style-transferred ben-tiger.jpg]({% link assets/images/posts/ben-tiger.jpg %})
+![style-transferred ben-tiger.jpg](/assets/images/posts/ben-tiger.jpg)
 
 Success...ish. Clearly I need to keep tweaking parameters & input images to come
 up with an output that's actually _good_, but at least that journey can now

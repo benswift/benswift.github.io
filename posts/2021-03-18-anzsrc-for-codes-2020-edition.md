@@ -71,7 +71,7 @@ here for your browsing pleasure.[^hosting]
 </table>
 </div>
 
-<script src="{% link assets/js/list.min.js %}"></script>
+<script src="/assets/js/list.min.js"></script>
 
 <script>
   const forCodeList = new List("FoR-Codes-2020", {valueNames: ["FoR-code", "FoR-description"]});

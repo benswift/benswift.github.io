@@ -11,6 +11,7 @@
   "author": "Ben Swift",
   "license": "ISC",
   "devDependencies": {
+    "bibtex-parse": "^2.1.0",
     "gray-matter": "^4.0.3",
     "sass": "^1.94.2",
     "vitepress": "^1.6.4",
