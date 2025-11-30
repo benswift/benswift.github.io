@@ -22,9 +22,9 @@ See [Kieran's blog](https://kieranbrowne.com/works/the-other-side/) for more
 details about tomorrow's ritual, and read the [paper](/assets/documents/preprints/browne_swift_2018_the_other_side.pdf) for the full
 story.
 
-{:.hl-para}
-
+::: tip
 **Post-presentation update**: if you missed the presentation, Kieran made a
 video. Enjoy!
+:::
 
 <YouTube id="1Y8MqnXYLQU" />

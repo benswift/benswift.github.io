@@ -23,12 +23,12 @@ it](https://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)).
 I wrote a simple [Jekyll plugin](https://jekyllrb.com/docs/plugins/) to make
 this happen---which has just a couple of moving parts
 
-{:.hl-para}
-
+::: tip
 Because the source for this [whole blog is on
 GH](https://github.com/benswift/benswift.github.io/), then you can just head
 there and see it for yourself if you're the sort of person who prefers reading
 code to prose. Think of this blog post as a "companion piece".
+:::
 
 ## 0. download the reveal.js source
 
@@ -48,7 +48,7 @@ into a `revealify.rb` file in your Jekyll `_plugins` directory.
 You'll need a new [layout](https://jekyllrb.com/docs/layouts/) as well: create a
 `reveal.html` file in your Jekyll `_layouts` directory and make sure that the
 body tag has this in it (you'll need to make sure it's got the right paths &
-other stuff for your setup). The key part is that first `{% raw %}{{ content | revealify }}{% endraw %}` line---that takes the content of your page (the jekyll
+other stuff for your setup). The key part is that first `{{ content | revealify }}` line---that takes the content of your page (the jekyll
 `.md` file with `layout: reveal` in the frontmatter) and passes it through the
 "revealify" filter plugin we [made earlier](#the-revealify-filter).
 
@@ -58,19 +58,19 @@ tweak to suit your own presentation.
 
 ```html
 <!-- this is where the reveailfy filter gets applied -->
-{% raw %}{{ content | revealify }}{% endraw %}
+{{ content | revealify }}
 
 <!-- load the reveal.js css & js (assuming you've put it in assets/)-->
 <link
   rel="stylesheet"
-  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.8.0/css/reveal.css"
+  href="{{site.baseurl}}/assets/reveal.js-3.8.0/css/reveal.css"
 />
 <link
   rel="stylesheet"
-  href="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.8.0/css/theme/white.css"
+  href="{{site.baseurl}}/assets/reveal.js-3.8.0/css/theme/white.css"
 />
 <script
-  src="{% raw %}{{site.baseurl}}{% endraw %}/assets/reveal.js-3.8.0/js/reveal.js"
+  src="{{site.baseurl}}/assets/reveal.js-3.8.0/js/reveal.js"
  
 ></script>
 
@@ -109,14 +109,14 @@ tweak to suit your own presentation.
 </script>
 ```
 
-{:.hl-para}
-
+::: tip
 The full [layout](https://jekyllrb.com/docs/layouts/) file will depend on how
 the rest of your site works (where you've put the `reveal.js-x.x.x` folder,
 etc.) so I haven't included the full file here (you can [see it on
 GitHub](https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html),
 though). Also remember that you can see the full list of reveal configuration
-options [in the README](https://github.com/hakimel/reveal.js#configuration):
+options [in the README](https://github.com/hakimel/reveal.js#configuration).
+:::
 
 ## 3. write your slides as markdown content
 

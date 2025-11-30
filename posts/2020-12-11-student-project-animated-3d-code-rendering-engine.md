@@ -3,11 +3,11 @@ title: 'Student project: animated 3D code rendering engine'
 tags: student-project
 ---
 
-{:.hl-para}
-
+::: tip
 I'm trying to get better at writing down potential student project ideas as they
 come to me. For the moment, I'm doing this on my blog using the
 [`student-project`](https://benswift.me/blog/tag/student-project/) tag.
+:::
 
 As a [livecoder](/livecoding/) I care more than most about how my
 code looks on the screen. While I've [written in the

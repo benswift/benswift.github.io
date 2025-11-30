@@ -21,8 +21,7 @@ assessment items) and try and actually _do_ them with ChatGPT, just to see how
 it goes. OpenAI have also just released some stuff about [considerations for
 educators](https://platform.openai.com/docs/chatgpt-education).
 
-{:.hl-para}
-
+::: tip
 At this stage these are just my own personal thoughts as a teaching academic;
 I'm not wearing my [Associate Director
 (Education)](https://cybernetics.anu.edu.au/people/ben-swift/) hat here, and
@@ -30,6 +29,7 @@ I'm not wearing my [Associate Director
 you're also putting together some guidelines for your own classroom, then
 questions/comments/suggesions are welcome---do [get in
 touch](mailto:ben.swift@anu.edu.au).
+:::
 
 Here are my current thoughts what some good _use of ChatGPT in the classroom_
 guidelines might look like. It doesn't have everything precisely defined, but it

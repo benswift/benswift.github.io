@@ -9,10 +9,10 @@ think_](https://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.
 marketing campaign, I've put together a dynamic full-page ad billboard as my
 pitch for the ANU's next marketing campaign.
 
-{:.hl-para}
-
+::: tip
 Disclaimer: this is in no way an official ANU campaign. Seriously, though, it's
 a great uni---and you should come [study with us](https://www.anu.edu.au/study).
+:::
 
 The campaign is called: **verb** _your_ **verb**---hit refresh to see the
 different options.

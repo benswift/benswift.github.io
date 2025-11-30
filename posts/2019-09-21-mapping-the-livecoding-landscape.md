@@ -149,14 +149,26 @@ livecoding_people:
 
 ## People
 
-<ul>
-{% for person in page.livecoding_people %}
-<li>
-  <a style="font-weight: 900;" href="{{ person.url }}">{{ person.name }}</a>,
-  <span style="font-style: italic;">{{person.affiliation.institution | default: "indie" }}</span>
-</li>
-{% endfor %}
-</ul>
+- [**Andrew Sorensen**](https://twitter.com/digego), _indie_
+- [**Alex McLean**](https://yaxu.org), _indie_
+- [**Julian Rohrhuber**](https://wertlos.org/~rohrhuber/), _Institute for Music and Media, RSH Düsseldorf_
+- [**Andrew Brown**](https://andrewrbrown.net.au/), _Queensland College of Art, Griffith University_
+- [**Nick Collins**](https://www.dur.ac.uk/music/staff/profile/?id=11477), _Department of Music, Durham University_
+- [**Thor Magnusson**](https://thormagnusson.github.io/), _Music Department, University of Sussex_
+- [**Ge Wang**](https://www.gewang.com), _CCRMA, Stanford University_
+- [**Sam Aaron**](https://sam.aaron.name/), _indie_
+- [**Alan Blackwell**](https://www.cl.cam.ac.uk/~afb21/), _Cambridge Computer Laboratory_
+- [**Dave Griffiths**](https://fo.am/people/dave/), _FoAM Kernow_
+- [**Shelley Knotts**](https://shellyknotts.wordpress.com), _Department of Music, Durham University_
+- [**Joanne Armitage**](https://twitter.com/joannnne), _School of Media and Communication, University of Leeds_
+- [**Renick Bell**](https://renickbell.net/), _indie_
+- [**David Ogborn**](https://www.dktr0.net), _Department of Communication Studies and Multimedia, McMaster University_
+- [**Charlie Roberts**](https://charlie-roberts.com/), _Computer Science, Worcester Polytechnic Institute_
+- [**Kate Sicchio**](https://blog.sicchio.com/), _Integrated Digital Media, New York University_
+- [**Mauro**](https://www.cyberpunk.net.ar), _indie_
+- [**Jack Armitage**](https://www.jackarmitage.com/), _Centre for Digital Music, Queen Mary University of London_
+- [**Luis Navarro Del Angel**](https://luisnavarrodelangel.net/), _Department of Communication Studies and Multimedia, McMaster University_
+- [**Mike Hodnick**](https://kindohm.com/), _indie_
 
 ## ICLC committees
 

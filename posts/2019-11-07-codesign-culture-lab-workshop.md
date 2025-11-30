@@ -91,9 +91,9 @@ facet of the c/c/c triad. Look under your chair to find three stickers:
   space down to just a few stickers" thing is total bollocks---your job is to be
   your group's _enfant terrible_ 😉
 
-{:.hl-para}
-
+::: tip
 You can choose to have 0, 1, 2, 3 or 4 stickers---it's up to you.
+:::
 
 #### Find your team-mates
 
@@ -127,12 +127,12 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
     and I'm _pretty sure_ he was
     [Olivia Wilde's](https://www.imdb.com/name/nm1312575/) uncle
 
-{:.hl-para}
-
+::: tip
 _Your design brief for today_: in your group, create an assessment[^assessment]
 task which teaches a particular **code** concept/tool by exploring a
 problem/challenge facing our[^culture] **culture** through a particular
 **creative** process/medium.
+:::
 
 The educational context for this assessment task is the c/c/c studio---a
 selective program for year 11 & 12 students. If you're more familiar with a uni
@@ -185,13 +185,13 @@ know if you'd like one). If you've got a digital scribe, then there are
 electronic templates ([markdown](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md) and [MS
 Word](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx)).
 
-{:.hl-para}
-
+::: tip
 One more thing to keep in mind: in the
 [next group work session](#group-work-session-2) you'll be writing a set of
 assessment criteria which will be used to assess the submissions for your
 assessment task. So you don't have to worry about writing them down formally
 just yet, but keep that in mind as you design your assessment task.
+:::
 
 ### Let's spin the wheels! {#spin-the-wheels}
 
@@ -237,7 +237,7 @@ students to learn (perhaps surreptitiously) in _doing_ the assessment task.
 <div class="wheelIndicator">⧨</div>
 <div id="codeWheel-canvas"></div>
 
-{:.wheelResult}
+
 
 _code_ wheel: <strong><span class="codeWheel-canvas-result"></span></strong>
 
@@ -293,7 +293,7 @@ the problem.
 <div class="wheelIndicator">⧨</div>
 <div id="creativityWheel-canvas"></div>
 
-{:.wheelResult}
+
 
 _creativity_ wheel:
 <strong><span class="creativityWheel-canvas-result"></span></strong>
@@ -337,7 +337,7 @@ just picking a theme which implies that there's only one "right approach".
 <div class="wheelIndicator">⧨</div>
 <div id="cultureWheel-canvas"></div>
 
-{:.wheelResult}
+
 
 _culture_ wheel:
 <strong><span class="cultureWheel-canvas-result"></span></strong>
@@ -369,7 +369,7 @@ let cultureWheel = makeWheel(
 );});
 </script>
 
-{:.wheelResult}
+
 
 _assessment task goal:_
 
@@ -484,12 +484,12 @@ format of this document is up to you. There are a few ways to do this:
 - If **you** were in charge of this workshop and had to deliver it again, what
   would you change?
 
-{:.hl-para}
-
+::: tip
 Thanks so much for participating 😊 If your group wrote the assessment item on
 paper, can you hand it to Ben (or one of the other facilitators) before you
 leave ? If you did it electronically (e.g. using the [markdown template](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md)) then
 can you [email it to Ben](mailto:ben.swift@anu.edu.au)?
+:::
 
 ## Appendices
 

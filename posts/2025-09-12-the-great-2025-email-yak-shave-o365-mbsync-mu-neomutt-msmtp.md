@@ -54,11 +54,11 @@ macOS Keychain rather than sitting around in plaintext files. If you're on Linux
 you can switch my macOS-specific approach with suitable `pass` or `gpg`
 invocations.
 
-{:.hl-para}
-
+::: tip
 I needed to build mbsync and the cyrus-sasl-xoauth2 plugin from source with
 XOAUTH2 support (something I plan to upstream to the homebrew formula when I get
 a chance).
+:::
 
 ## Running in Zed
 

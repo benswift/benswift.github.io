@@ -7,9 +7,10 @@ published: false ## already up on the coversaion... this is just for archival pu
 
 <Picture file="images/posts/file-20220629-24-n3q489.jpeg" alt="a person typing away at some code on a laptop computer" />
 
-{:.hl-para}
+::: tip
 This article originally [appeared in the
 Conversation](https://theconversation.com/so-this-is-how-it-feels-when-the-robots-come-for-your-job-what-githubs-copilot-ai-assistant-means-for-coders-185957).
+:::
 
 I love writing code to make things: apps, websites, charts, even [music](/livecoding/). It's a skill I've worked hard at for more than 20 years.
 

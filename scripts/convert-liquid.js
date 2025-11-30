@@ -96,6 +96,27 @@ const conversions = [
       /\{%\s*include\s+picture\.html\s+file="([^"]+)"\s+alt="([^"]+)"\s+style="[^"]*"\s*%\}/g,
     replacement: '<Picture file="$1" alt="$2" />',
   },
+  // Kramdown highlight paragraph - convert to VitePress tip container
+  // Match {:.hl-para} followed by newlines and content until the next blank line
+  {
+    pattern: /\{:\.hl-para\}\n\n([^\n]+(?:\n(?!\n)[^\n]+)*)/g,
+    replacement: '::: tip\n$1\n:::',
+  },
+  // Kramdown ID attributes - just remove them (VitePress generates IDs automatically)
+  {
+    pattern: /\{:\s*#[a-zA-Z0-9_-]+\s*\}/g,
+    replacement: '',
+  },
+  // Kramdown ID with style - remove
+  {
+    pattern: /\{:id="[^"]*"\s*style="[^"]*"\}/g,
+    replacement: '',
+  },
+  // Kramdown wheelResult class - remove (custom class that won't work)
+  {
+    pattern: /\{:\.wheelResult\}/g,
+    replacement: '',
+  },
 ];
 
 // Process all markdown files in posts directory

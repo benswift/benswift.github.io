@@ -241,10 +241,10 @@ dancing bodies of the livecoder-in-the-club system with me for the ride :)
 
 ## Appendix: Meadows' _12 Places to Intervene in a System_ {#meadows-12-places-to-intervene}
 
-{:.hl-para}
-
+::: tip
 Note: these are taken straight from the
 [Donella Meadows foundation website](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/).
+:::
 
 _(lower numbers = less effective, higher numbers = more effective)_
 

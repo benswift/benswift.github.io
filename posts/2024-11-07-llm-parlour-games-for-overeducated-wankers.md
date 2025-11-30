@@ -126,11 +126,49 @@ not the winner just yet.
 Using the same words/phrases (i.e. without starting a new ChatGPT session) ask
 the LLM to pick again, based on successively different criteria:
 
-{%- for criteria in site.data.amphibology %}
+```markdown
+Which of these words/phrases best describes your perfect date?
+```
 
-<pre><code class="language-markdown">Which of these words/phrases {{ criteria }}</code></pre>
+```markdown
+Which of these words/phrases is the purplest?
+```
 
-{%- endfor %}
+```markdown
+Which of these words/phrases most evokes the experience of a crisp winter sunrise in Canberra?
+```
+
+```markdown
+Which of these words/phrases would be the best title for a sci-fi movie?
+```
+
+```markdown
+Which of these words/phrases is the most nihilistic?
+```
+
+```markdown
+Which of these words/phrases has the most assonance?
+```
+
+```markdown
+Which of these words/phrases is the most disrespectful?
+```
+
+```markdown
+Which of these words/phrases would be the best name for a pet cat?
+```
+
+```markdown
+Which of these words/phrases sounds most like a boy band track from the 90s?
+```
+
+```markdown
+Which of these words/phrases would be the easiest to explain to a toddler?
+```
+
+```markdown
+Which of these words/phrases would be the best password for a secret underground antifascist network?
+```
 
 At the end, the player with the most points wins. You can play as many times as
 you like, with new words/phrases and/or new "judging" criteria.

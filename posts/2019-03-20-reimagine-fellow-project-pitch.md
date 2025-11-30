@@ -23,8 +23,7 @@ Or you could save yourself 4000+ words of reading and just watch a 2min video
 
 ### Elevator pitch {#elevator-pitch}
 
-{:.hl-para}
-
+::: tip
 I want to create the **c/c/c studio**[^ccc-group], an extension/outreach program
 in creative code: using code to make art, music & other cool things. Through
 school- & community-based workshops and a weekly on-campus studio masterclass,
@@ -36,6 +35,7 @@ fantastic students who might otherwise not study engineering or computer science
 (either at ANU or elsewhere) and engage the wider community in helping them
 _reimagine_ what it is to be a computer scientist or engineer in the 21st
 century.
+:::
 
 [^ccc-group]:
     named after the
@@ -180,7 +180,7 @@ c/c/c studio sessions & masterclasses, but here are some initial plans:
   material](https://cs.anu.edu.au/courses/comp1720/labs/) and tweaked as
   appropriate
 
-{: #anu-extension-accreditation}
+
 
 If the c/c/c studio receives accreditation as an official [ANU
 Extension](https://extension.anu.edu.au) program then graduates of the two-year

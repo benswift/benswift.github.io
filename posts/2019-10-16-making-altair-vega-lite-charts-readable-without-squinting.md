@@ -49,11 +49,11 @@ chart](https://en.wikipedia.org/wiki/Eye_chart). The Vega-Lite folks (the
 underlying vis engine which Altair uses) [know about the issue, but don't want
 to fix it](https://github.com/vega/vega-parser/issues/18).
 
-{:.hl-para}
-
+::: tip
 Note that when I'm talking about "size" I'm **not** talking about the size &
 dimensions of the chart---I'm talking about the size of the text, lines & other
 marks _relative to_ the overall size of the chart.
+:::
 
 The easiest way I found to fix this is to set a small width & height for the
 chart, then export to a vector format (e.g. svg) so that when the image gets

@@ -33,46 +33,8 @@ here for your browsing pleasure.[^hosting]
 
 ## 2020 ANZRC Field of Research (FoR) Codes
 
-<style>
-#FoR-Codes-2020 tr.division-row {
-  border-top: 2px solid #be2edd;
-  font-weight: 900;
-  font-size: 1.1em;
-}
-#FoR-Codes-2020 tr.group-row {
-  border-top: 1px solid #be2edd;
-  font-weight: 900;
-}
-#FoR-Codes-2020 .search {
-  width: 100%;
-  line-height: 1.6;
-  font-size: 1rem;
-  padding: 0.3rem 0.6rem;
-  border: 2pt solid #be2edd;
-  border-radius: 3px;
-  margin-bottom: 1rem;
-}
-</style>
-
-<div id="FoR-Codes-2020">
-<input class="search" placeholder="type to filter FoR codes..." />
-<table>
-  <thead>
-    <tr><th>FoR Code</th><th>Description</th></tr>
-  </thead>
-  <tbody class="list">
-  {% for code in site.data.FoR-Codes-2020-processed %}
-    <tr>
-      <td class="FoR-code">{{ code.Field }}</td>
-      <td class="FoR-description">{{ code.Description }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-</div>
-
-<script src="/assets/js/list.min.js"></script>
-
-<script>
-  const forCodeList = new List("FoR-Codes-2020", {valueNames: ["FoR-code", "FoR-description"]});
+<script setup>
+import { data as forCodes } from '../.vitepress/theme/forCodes.data'
 </script>
+
+<ForCodesTable :codes="forCodes" />

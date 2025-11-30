@@ -25,8 +25,7 @@ my list of things to try in 2020:
 - switch to [Netlify](https://www.netlify.com) for hosting so that I can use
   their nice workflow stuff (e.g. serverless functions)
 
-- package up my [reveal slides]({% link
-  _posts/2018-09-28-another-reveal.js-plugin-for-jekyll.md %}) plugin on npm (if
+- package up my [reveal slides](/blog/2018/09/28/another-reveal.js-plugin-for-jekyll) plugin on npm (if
   I switch to Eleventy) or RubyGems (if I stay with Jekyll) so that others can
   use them
 
