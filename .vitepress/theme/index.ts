@@ -1,22 +1,50 @@
 import DefaultTheme from "vitepress/theme";
 import type { Theme } from "vitepress";
 
+// Custom Layout wrapper
+import Layout from "./Layout.vue";
+
 // Custom components
 import YouTube from "./components/YouTube.vue";
 import Picture from "./components/Picture.vue";
 import TagList from "./components/TagList.vue";
 import ForCodesTable from "./components/ForCodesTable.vue";
 
+// Slide components for reveal.js presentations
+import SlideTitle from "./components/slides/SlideTitle.vue";
+import SlideBackgroundImage from "./components/slides/SlideBackgroundImage.vue";
+import SlideImpact from "./components/slides/SlideImpact.vue";
+import SlideFin from "./components/slides/SlideFin.vue";
+import SlideYouTube from "./components/slides/SlideYouTube.vue";
+import SlideBox from "./components/slides/SlideBox.vue";
+import SlideImageCredit from "./components/slides/SlideImageCredit.vue";
+import SlideQuestions from "./components/slides/SlideQuestions.vue";
+import SlideStackedPapers from "./components/slides/SlideStackedPapers.vue";
+import SlideAckCountry from "./components/slides/SlideAckCountry.vue";
+
 // Custom styles
 import "./styles/custom.css";
 
 export default {
   extends: DefaultTheme,
+  Layout,
   enhanceApp({ app }) {
     // Register global components
     app.component("YouTube", YouTube);
     app.component("Picture", Picture);
     app.component("TagList", TagList);
     app.component("ForCodesTable", ForCodesTable);
+
+    // Register slide components (for use in reveal.js presentations)
+    app.component("SlideTitle", SlideTitle);
+    app.component("SlideBackgroundImage", SlideBackgroundImage);
+    app.component("SlideImpact", SlideImpact);
+    app.component("SlideFin", SlideFin);
+    app.component("SlideYouTube", SlideYouTube);
+    app.component("SlideBox", SlideBox);
+    app.component("SlideImageCredit", SlideImageCredit);
+    app.component("SlideQuestions", SlideQuestions);
+    app.component("SlideStackedPapers", SlideStackedPapers);
+    app.component("SlideAckCountry", SlideAckCountry);
   },
 } satisfies Theme;

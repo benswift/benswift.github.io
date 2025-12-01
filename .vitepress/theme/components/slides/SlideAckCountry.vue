@@ -1,0 +1,19 @@
+<script setup lang="ts"></script>
+
+<template>
+  <section
+    id="ack-country"
+    class="center"
+    style="font-size: 1.5em"
+    data-background-image="/assets/images/talks/all/mount-majura-bushland.jpg"
+  >
+    <p>
+      we acknowledge and celebrate
+      <a href="https://aiatsis.gov.au/explore/australias-first-peoples"
+        >Australia's First Peoples</a
+      >
+      on whose traditional lands we meet, and pay our respect to the elders past
+      and present
+    </p>
+  </section>
+</template>

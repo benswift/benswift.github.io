@@ -17,13 +17,11 @@ export { data };
 
 export default {
   load(): LivecodingGig[] {
-    // Read from Jekyll _livecoding directory
-    const livecodingDir = path.resolve(__dirname, "../_livecoding");
-    if (!fs.existsSync(livecodingDir)) {
-      console.warn("_livecoding directory not found");
-      return [];
-    }
-    const files = fs.readdirSync(livecodingDir).filter((f) => f.endsWith(".md"));
+    // Read from generated livecoding directory (not index.md)
+    const livecodingDir = path.resolve(__dirname, ".");
+    const files = fs
+      .readdirSync(livecodingDir)
+      .filter((f) => f.endsWith(".md") && f !== "index.md");
 
     return files
       .map((filename) => {

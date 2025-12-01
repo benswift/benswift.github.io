@@ -24,7 +24,7 @@ gigs are lost to time. I like to assume that they were the best ones ;)
 
 <ul class="post-list">
   <li v-for="gig in gigs" :key="gig.slug" class="post-item">
-    <span class="post-item-title">{{ gig.title }}</span>
+    <a :href="gig.url" class="post-item-title">{{ gig.title }}</a>
     <span class="post-item-date">{{ gig.dateFormatted }}</span>
     <span v-if="gig.venue" class="post-item-venue"> - {{ gig.venue }}</span>
   </li>

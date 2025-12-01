@@ -17,7 +17,7 @@ export default defineConfig({
   // Clean URLs (no .html extension)
   cleanUrls: true,
 
-  ignoreDeadLinks: false,
+  ignoreDeadLinks: "localhostLinks",
 
   // Head tags
   head: [

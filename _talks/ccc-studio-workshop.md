@@ -4,6 +4,7 @@ title: c/c/c studio curriculum design
 subtitle: Reimagine CoDesign Culture Lab
 date: "2019-11-28"
 permalink: /talks/ccc-studio-workshop/
+hidden: true
 summary: >-
   a half-day workshop at the 2019 CECS Reimagine CoDesign Culture Lab
 ---
@@ -38,9 +39,9 @@ teach computer science to year 11 & 12 students through making art, music and
 other cool things with computers
 
 curriculum being developed right now (using
-[COMP1720](https://cs.anu.edu.au/courses/comp1720/) & [COMP2710 Laptop
-Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/) as a starting
-point, but everything's up for grabs!)
+[COMP1720](https://cs.anu.edu.au/courses/comp1720/) &
+[COMP2710 Laptop Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/)
+as a starting point, but everything's up for grabs!)
 
 first student intake (year 11 only) in 2021, first graduates in 2022
 
@@ -54,13 +55,12 @@ it might be used in the c/c/c studio 😊
 
 ## timeline
 
-| **9:00**  | intro & group formation                                                                                                                           |
-| **9:30**  | [group work session 1]({% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-1) (assessment item spec) |
-| **10:30** | break (morning tea)                                                                                                                               |
-| **11:00** | presentations                                                                                                                                     |
-| **11:30** | [group work session 2]({% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2) (assessment criteria)  |
-| **12:00** | presentations                                                                                                                                     |
-| **12:15** | wrap-up                                                                                                                                           |
+| **9:00** | intro & group formation | | **9:30** | [group work session
+1]({% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-1)
+(assessment item spec) | | **10:30** | break (morning tea) | | **11:00** |
+presentations | | **11:30** | [group work session
+2]({% link _posts/2019-11-07-codesign-culture-lab-workshop.md %}#group-work-session-2)
+(assessment criteria) | | **12:00** | presentations | | **12:15** | wrap-up |
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/joeri-romer-Xne1N4yZuOY-unsplash.jpg" heading="group formation" %}
 
@@ -112,10 +112,10 @@ there are lots of details on the workshop content page
 <p class="wheelResult">
 
 <em>objective</em>: learning about <strong><span
-class="codeWheel-canvas-result">________</span></strong> by exploring
-<strong><span class="cultureWheel-canvas-result">________</span></strong>
+class="codeWheel-canvas-result">**\_\_\_\_**</span></strong> by exploring
+<strong><span class="cultureWheel-canvas-result">**\_\_\_\_**</span></strong>
 through <strong><span
-class="creativityWheel-canvas-result">________</span></strong>
+class="creativityWheel-canvas-result">**\_\_\_\_**</span></strong>
 
 </p>
 
@@ -205,9 +205,11 @@ let cultureWheel = makeWheel(
 
 {% include slides/background-image.html image="documents/ccc-curriculum-design-workshop/shapelined-qawemGipVPk-unsplash.jpg" heading="workshop goals" %}
 
-**think**: how do we inspire & motivate _everyone_ to make, and in doing so, to learn?
+**think**: how do we inspire & motivate _everyone_ to make, and in doing so, to
+learn?
 
-**talk**: what are the opportunities of the c/c/c framing? what are the problems?
+**talk**: what are the opportunities of the c/c/c framing? what are the
+problems?
 
 **make**: produce an _actual thing_
 

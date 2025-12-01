@@ -1,0 +1,142 @@
+import type MarkdownIt from "markdown-it";
+import type { RenderRule } from "markdown-it/lib/renderer.mjs";
+import type StateCore from "markdown-it/lib/rules_core/state_core.mjs";
+
+/**
+ * Revealify markdown-it plugin
+ *
+ * Transforms markdown content into reveal.js slides by:
+ * 1. Splitting on h1, h2, and hr elements to create new slides
+ * 2. Wrapping content between splits in <section> tags
+ * 3. Hoisting data-* attributes from headers to their parent section
+ *
+ * This replicates the Jekyll revealify.rb plugin behaviour.
+ */
+export function revealifyPlugin(md: MarkdownIt): void {
+  // Store original rules
+  const defaultHeadingOpen =
+    md.renderer.rules.heading_open ||
+    ((tokens, idx, options, _env, self) =>
+      self.renderToken(tokens, idx, options));
+  const defaultHr =
+    md.renderer.rules.hr ||
+    ((tokens, idx, options, _env, self) =>
+      self.renderToken(tokens, idx, options));
+
+  // Track if we're inside a reveal presentation
+  let inRevealPresentation = false;
+  let sectionOpen = false;
+
+  // Custom heading_open rule
+  md.renderer.rules.heading_open = ((
+    tokens,
+    idx,
+    options,
+    env,
+    self
+  ): string => {
+    if (!inRevealPresentation) {
+      return defaultHeadingOpen(tokens, idx, options, env, self);
+    }
+
+    const token = tokens[idx];
+    const tag = token.tag;
+
+    // Only h1 and h2 create new slides
+    if (tag !== "h1" && tag !== "h2") {
+      return defaultHeadingOpen(tokens, idx, options, env, self);
+    }
+
+    // Close previous section if open
+    let result = "";
+    if (sectionOpen) {
+      result += "</section>\n";
+    }
+
+    // Extract any data attributes from the heading to hoist to section
+    const attrs = token.attrs || [];
+    const sectionAttrs: string[] = [];
+    const headingAttrs: string[] = [];
+
+    for (const [key, value] of attrs) {
+      if (key.startsWith("data-") || key === "class" || key === "id") {
+        sectionAttrs.push(`${key}="${value}"`);
+      } else {
+        headingAttrs.push(`${key}="${value}"`);
+      }
+    }
+
+    // Open new section
+    const sectionAttrStr =
+      sectionAttrs.length > 0 ? " " + sectionAttrs.join(" ") : "";
+    result += `<section${sectionAttrStr}>\n`;
+    sectionOpen = true;
+
+    // Render the heading without hoisted attributes
+    token.attrs = headingAttrs.map((attr) => {
+      const [k, v] = attr.replace(/"/g, "").split("=");
+      return [k, v] as [string, string];
+    });
+
+    result += defaultHeadingOpen(tokens, idx, options, env, self);
+    return result;
+  }) as RenderRule;
+
+  // Custom hr rule - creates slide breaks without visible content
+  md.renderer.rules.hr = ((tokens, idx, options, env, self): string => {
+    if (!inRevealPresentation) {
+      return defaultHr(tokens, idx, options, env, self);
+    }
+
+    const token = tokens[idx];
+
+    // Close previous section if open
+    let result = "";
+    if (sectionOpen) {
+      result += "</section>\n";
+    }
+
+    // Extract any attributes from the hr for the new section
+    const attrs = token.attrs || [];
+    const sectionAttrs: string[] = [];
+
+    for (const [key, value] of attrs) {
+      sectionAttrs.push(`${key}="${value}"`);
+    }
+
+    // Open new section (hr itself is not rendered)
+    const sectionAttrStr =
+      sectionAttrs.length > 0 ? " " + sectionAttrs.join(" ") : "";
+    result += `<section${sectionAttrStr}>\n`;
+    sectionOpen = true;
+
+    return result;
+  }) as RenderRule;
+
+  // Add core rule to handle presentation wrapper
+  md.core.ruler.push("revealify_wrapper", (state: StateCore): boolean => {
+    // Check if this is a reveal presentation via frontmatter
+    const env = state.env;
+    if (!env?.frontmatter?.layout || env.frontmatter.layout !== "reveal") {
+      inRevealPresentation = false;
+      return true;
+    }
+
+    inRevealPresentation = true;
+    sectionOpen = false;
+
+    return true;
+  });
+
+  // Add rule to close final section
+  const originalRender = md.render.bind(md);
+  md.render = (src: string, env?: object): string => {
+    const result = originalRender(src, env);
+
+    if (inRevealPresentation && sectionOpen) {
+      return result + "</section>\n";
+    }
+
+    return result;
+  };
+}

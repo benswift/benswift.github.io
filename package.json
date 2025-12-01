@@ -4,8 +4,9 @@
   "description": "livecoder & researcher homepage - code, creativity, culture",
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/generate-blog-pages.js",
-    "predev": "node scripts/generate-blog-pages.js",
+    "generate": "node scripts/generate-blog-pages.js && node scripts/generate-talk-pages.js && node scripts/generate-livecoding-pages.js",
+    "prebuild": "npm run generate",
+    "predev": "npm run generate",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
@@ -22,5 +23,8 @@
     "vitepress": "^1.6.4",
     "vue": "^3.5.25",
     "vue-tsc": "^3.1.5"
+  },
+  "dependencies": {
+    "reveal.js": "^5.2.1"
   }
 }

@@ -16,13 +16,17 @@ export { data };
 
 export default {
   load(): Talk[] {
-    // Read from Jekyll _talks directory
-    const talksDir = path.resolve(__dirname, "../_talks");
+    // Read from generated talks in talks/ directory (excluding index.md and this file)
+    const talksDir = path.resolve(__dirname, ".");
     if (!fs.existsSync(talksDir)) {
-      console.warn("_talks directory not found");
+      console.warn("talks directory not found");
       return [];
     }
-    const files = fs.readdirSync(talksDir).filter((f) => f.endsWith(".md"));
+
+    const excludeFiles = ["index.md", "talks.data.ts"];
+    const files = fs
+      .readdirSync(talksDir)
+      .filter((f) => f.endsWith(".md") && !excludeFiles.includes(f));
 
     return files
       .map((filename) => {
@@ -33,7 +37,7 @@ export default {
         const slug = filename.replace(".md", "");
         const dateStr = fm.date
           ? typeof fm.date === "string"
-            ? fm.date
+            ? fm.date.split("T")[0]
             : fm.date.toISOString().split("T")[0]
           : "2000-01-01";
         const date = new Date(dateStr);
