@@ -8,7 +8,7 @@ import TagList from "./components/TagList.vue";
 import ForCodesTable from "./components/ForCodesTable.vue";
 
 // Custom styles
-import "./styles/custom.scss";
+import "./styles/custom.css";
 
 export default {
   extends: DefaultTheme,
