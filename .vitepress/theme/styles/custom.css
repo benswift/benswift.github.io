@@ -23,10 +23,12 @@
 
     /* Typography */
     --vp-font-family-base:
-        "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        "Atkinson Hyperlegible Next Variable", -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
     --vp-font-family-mono:
-        "Fira Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+        "Atkinson Hyperlegible Mono Variable", Consolas, Monaco, "Andale Mono",
+        "Ubuntu Mono", monospace;
 
     /* Home hero name gradient */
     --vp-home-hero-name-color: transparent;
@@ -42,39 +44,6 @@
     --vp-c-brand-1: color-mix(in srgb, var(--highlight-color) 90%, white);
     --vp-c-brand-2: var(--highlight-color);
     --vp-c-brand-3: color-mix(in srgb, var(--highlight-color) 90%, black);
-}
-
-/* Font loading */
-@font-face {
-    font-family: "Fira Sans";
-    src: url("/assets/css/fonts/FiraSans-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url("/assets/css/fonts/FiraSans-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url("/assets/css/fonts/FiraSans-Black.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Fira Code";
-    src: url("/assets/css/fonts/FiraCode-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
 }
 
 /* Custom component styles */

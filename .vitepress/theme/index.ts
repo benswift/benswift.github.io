@@ -22,6 +22,12 @@ import SlideQuestions from "./components/slides/SlideQuestions.vue";
 import SlideStackedPapers from "./components/slides/SlideStackedPapers.vue";
 import SlideAckCountry from "./components/slides/SlideAckCountry.vue";
 
+// Fonts (Atkinson Hyperlegible - variable fonts for flexibility)
+import "@fontsource-variable/atkinson-hyperlegible-next";
+import "@fontsource-variable/atkinson-hyperlegible-next/wght-italic.css";
+import "@fontsource-variable/atkinson-hyperlegible-mono";
+import "@fontsource-variable/atkinson-hyperlegible-mono/wght-italic.css";
+
 // Custom styles
 import "./styles/custom.css";
 

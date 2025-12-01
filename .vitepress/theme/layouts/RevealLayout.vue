@@ -2,9 +2,10 @@
 import { onMounted, onUnmounted, ref, nextTick, watch } from "vue";
 import { useData, useRoute, inBrowser } from "vitepress";
 
-import "reveal.js/dist/reset.css";
-import "reveal.js/dist/reveal.css";
-import "../styles/reveal-theme.css";
+// CSS imports as inline strings - injected dynamically to avoid polluting global styles
+import resetCss from "reveal.js/dist/reset.css?inline";
+import revealCss from "reveal.js/dist/reveal.css?inline";
+import themeCss from "../styles/reveal-theme.css?inline";
 
 const { frontmatter } = useData();
 const route = useRoute();
@@ -127,7 +128,29 @@ async function initReveal() {
     }
 }
 
+// Inject reveal.js styles dynamically
+let styleElements: HTMLStyleElement[] = [];
+
+function injectStyles() {
+    if (!inBrowser || styleElements.length > 0) return;
+
+    const styles = [resetCss, revealCss, themeCss];
+    styles.forEach((css, i) => {
+        const style = document.createElement("style");
+        style.setAttribute("data-reveal-style", String(i));
+        style.textContent = css;
+        document.head.appendChild(style);
+        styleElements.push(style);
+    });
+}
+
+function removeStyles() {
+    styleElements.forEach((style) => style.remove());
+    styleElements = [];
+}
+
 onMounted(() => {
+    injectStyles();
     initReveal();
 });
 
@@ -144,6 +167,7 @@ onUnmounted(() => {
         (deck as { destroy: () => void }).destroy();
         deck = null;
     }
+    removeStyles();
 });
 </script>
 
