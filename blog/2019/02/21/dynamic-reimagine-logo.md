@@ -1,8 +1,19 @@
 ---
-title: A dynamic Reimagine logo
-date: 2019-02-21 10:36 +1100
-tags: widgets reimagine web
+title: "A dynamic Reimagine logo"
+aside: false
+layout: doc
+tags:
+  - widgets
+  - reimagine
+  - web
 ---
+
+# A dynamic Reimagine logo
+
+<p class="post-date">21 Feb 19</p>
+
+<TagList :tags='["widgets","reimagine","web"]' />
+
 
 I keep harping on about the **Reimagine project** because I'm super pumped about
 what it means for the way we do Engineering Computer Science here at the ANU

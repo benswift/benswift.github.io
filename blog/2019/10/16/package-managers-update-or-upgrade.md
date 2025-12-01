@@ -41,8 +41,6 @@ version of one (or more) of your project's dependencies?
 <button onclick='document.getElementById("answer-table").style.visibility="visible";'>click
 to reveal the answers</button>
 
-
-
 | package manager | language/system | (sub)command name     |
 | --------------- | --------------- | --------------------- |
 | `bundle`        | Ruby            | `upgrade`             |
@@ -60,20 +58,18 @@ to reveal the answers</button>
 | `cpan`          | Perl            | `upgrade`             |
 | `mix`           | Elixir          | `deps.update`         |
 
-[^pip]: [https://github.com/pypa/pip/issues/59](https://github.com/pypa/pip/issues/59)
+[^pip]: https://github.com/pypa/pip/issues/59
 
 For bonus points, which of them _also_ recognise the "other" subcommand but it
 does something different? For even more bonus points, when does that "other"
 option do something unwanted/destructive/irreversible (assuming that all you
 want to do is update that dependency to the latest version)?
 
-::: tip
-Look, I'm not at all saying that you should just go and blindly
+::: tip Look, I'm not at all saying that you should just go and blindly
 `update`/`upgrade` all of the things---that's clearly a bad idea. But it still
 takes me a non-zero amount of time as I switch between languages/tools to sit
 and think "ok, for this project do I want to `update` or `upgrade`"? And that
-makes me sad.
-:::
+makes me sad. :::
 
 If there's a deep, principled (or even a shallow, pragmatic) reason to pick one
 or the other then we should observe it, and do it _consistently_. Even if

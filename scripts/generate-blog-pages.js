@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate blog post pages from posts/ directory
- * Creates /blog/YYYY/MM/DD/slug/index.md files for each post
+ * Creates /blog/YYYY/MM/DD/slug.md files for each post
  */
 
 import fs from "fs";
@@ -46,7 +46,9 @@ const skipList = [
 ];
 
 // Process each post
-const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".md") && !skipList.includes(f));
+const files = fs
+  .readdirSync(postsDir)
+  .filter((f) => f.endsWith(".md") && !skipList.includes(f));
 let count = 0;
 
 for (const filename of files) {
@@ -84,21 +86,33 @@ for (const filename of files) {
   });
 
   // Build the page content
-  const tagsYaml = tags.length > 0 ? "tags:\n" + tags.map(t => "  - " + t).join("\n") : "";
-  const subtitleLine = subtitle ? '\n<p class="post-subtitle">' + subtitle + "</p>\n" : "";
-  const tagsComponent = tags.length > 0 ? '\n<TagList :tags=\'' + JSON.stringify(tags) + "' />\n" : "";
+  const tagsYaml =
+    tags.length > 0 ? "tags:\n" + tags.map((t) => "  - " + t).join("\n") : "";
+  const subtitleLine = subtitle
+    ? '\n<p class="post-subtitle">' + subtitle + "</p>\n"
+    : "";
+  const tagsComponent =
+    tags.length > 0
+      ? "\n<TagList :tags='" + JSON.stringify(tags) + "' />\n"
+      : "";
   const escapedTitle = title.replace(/"/g, '\\"');
 
   // Remove inline script and style tags that Vue can't handle (they were for Jekyll widgets)
   // Also convert autolinks <url> to [url](url) format that Vue can handle
   // And replace Jekyll {{ site.baseurl }} with empty string (baseurl is /)
   let processedContent = content
-    .replace(/<script[\s\S]*?<\/script>/gi, '<!-- Script removed during migration -->')
-    .replace(/<style[\s\S]*?<\/style>/gi, '<!-- Style removed during migration -->')
-    .replace(/<(https?:\/\/[^>]+)>/g, '[$1]($1)')
-    .replace(/\{\{\s*site\.baseurl\s*\}\}/g, '');
+    .replace(
+      /<script[\s\S]*?<\/script>/gi,
+      "<!-- Script removed during migration -->",
+    )
+    .replace(
+      /<style[\s\S]*?<\/style>/gi,
+      "<!-- Style removed during migration -->",
+    )
+    .replace(/<(https?:\/\/[^>]+)>/g, "[$1]($1)")
+    .replace(/\{\{\s*site\.baseurl\s*\}\}/g, "");
 
-const pageContent = `---
+  const pageContent = `---
 title: "${escapedTitle}"
 aside: false
 layout: doc
@@ -111,11 +125,11 @@ ${tagsYaml}
 ${subtitleLine}${tagsComponent}
 ${processedContent}`;
 
-  // Create directory structure: blog/YYYY/MM/DD/slug/index.md
-  const postDir = path.join(blogDir, year, month, day, slug);
+  // Create directory structure: blog/YYYY/MM/DD/slug.md
+  const postDir = path.join(blogDir, year, month, day);
   fs.mkdirSync(postDir, { recursive: true });
 
-  const outputPath = path.join(postDir, "index.md");
+  const outputPath = path.join(postDir, `${slug}.md`);
   fs.writeFileSync(outputPath, pageContent);
   count++;
 }
