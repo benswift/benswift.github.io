@@ -1,9 +1,10 @@
 ---
 id: task-06
 title: Create simple Vue-based slide deck feature
-status: To Do
+status: Done
 assignee: []
 created_date: '2025-12-01 23:36'
+updated_date: '2025-12-02 02:12'
 labels:
   - vitepress
   - feature
@@ -55,12 +56,50 @@ Replace the reveal.js slide system with a simple, modern Vue-based slide deck th
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 SlideDeck container component with keyboard navigation
-- [ ] #2 Title slide template
-- [ ] #3 Text + heading slide template
-- [ ] #4 Half-half (text/image) slide template
-- [ ] #5 Fullscreen image slide template
-- [ ] #6 Impact/quote slide template
-- [ ] #7 Works in VitePress markdown files
-- [ ] #8 Shareable URLs with slide position
+- [x] #1 SlideDeck container component with keyboard navigation
+- [x] #2 Title slide template
+- [x] #3 Text + heading slide template
+- [x] #4 Half-half (text/image) slide template
+- [x] #5 Fullscreen image slide template
+- [x] #6 Impact/quote slide template
+- [x] #7 Works in VitePress markdown files
+- [x] #8 Shareable URLs with slide position
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+## Implementation completed
+
+Created a Vue-based slide deck system with the following components:
+
+### Core components
+- `SlideDeck.vue` - Container with keyboard navigation (arrows, space, f for fullscreen), URL hash support (#slide-N), progress bar, and fullscreen mode
+- `DeckSlide.vue` - Base slide component with background image/colour support
+
+### Slide templates
+- `DeckTitle.vue` - Title slide using frontmatter (title, subtitle, author, date, event)
+- `DeckText.vue` - Heading with body text/bullets
+- `DeckSplit.vue` - Half-half layout (text/image) with configurable image position
+- `DeckImage.vue` - Fullscreen background image with optional heading overlay
+- `DeckImpact.vue` - Large centered text on dark background for emphasis
+
+### Usage in markdown
+```vue
+<SlideDeck>
+  <DeckTitle />
+  <DeckText heading="My Slide">Content here</DeckText>
+  <DeckSplit image="path/to/image.jpg" heading="Split">Text content</DeckSplit>
+  <DeckImage image="path/to/bg.jpg" heading="Background" />
+  <DeckImpact>**Bold statement**</DeckImpact>
+</SlideDeck>
+```
+
+### Key features
+- No reveal.js dependency
+- Keyboard navigation: arrows, space, PageUp/Down, Home/End, F for fullscreen
+- Shareable URLs with #slide-N hash
+- Progress bar
+- Responsive sizing with 16:9 aspect ratio
+- Automatic scroll reset when changing slides
+<!-- SECTION:NOTES:END -->

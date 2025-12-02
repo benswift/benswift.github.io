@@ -22,6 +22,17 @@ import SlideQuestions from "./components/slides/SlideQuestions.vue";
 import SlideStackedPapers from "./components/slides/SlideStackedPapers.vue";
 import SlideAckCountry from "./components/slides/SlideAckCountry.vue";
 
+// Vue-based slide deck components (reveal.js replacement)
+import {
+  SlideDeck,
+  DeckSlide,
+  DeckTitle,
+  DeckText,
+  DeckSplit,
+  DeckImage,
+  DeckImpact,
+} from "./components/deck";
+
 // Fonts (Atkinson Hyperlegible - variable fonts for flexibility)
 import "@fontsource-variable/atkinson-hyperlegible-next";
 import "@fontsource-variable/atkinson-hyperlegible-next/wght-italic.css";
@@ -52,5 +63,14 @@ export default {
     app.component("SlideQuestions", SlideQuestions);
     app.component("SlideStackedPapers", SlideStackedPapers);
     app.component("SlideAckCountry", SlideAckCountry);
+
+    // Register Vue-based slide deck components
+    app.component("SlideDeck", SlideDeck);
+    app.component("DeckSlide", DeckSlide);
+    app.component("DeckTitle", DeckTitle);
+    app.component("DeckText", DeckText);
+    app.component("DeckSplit", DeckSplit);
+    app.component("DeckImage", DeckImage);
+    app.component("DeckImpact", DeckImpact);
   },
 } satisfies Theme;
