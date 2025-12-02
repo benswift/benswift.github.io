@@ -35,6 +35,7 @@ export default defineConfig({
   markdown: {
     theme: "github-dark",
     lineNumbers: false,
+    typographer: true,
     languages: [
       {
         ...xtlangGrammar,
