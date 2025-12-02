@@ -13,6 +13,7 @@
   "author": "Ben Swift",
   "license": "ISC",
   "devDependencies": {
+    "@types/markdown-it-footnote": "^3.0.4",
     "@types/node": "^24.10.1",
     "bibtex-parse": "^2.1.0",
     "gray-matter": "^4.0.3",
@@ -26,6 +27,7 @@
     "@fontsource-variable/atkinson-hyperlegible-mono": "^5.2.5",
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.6",
     "@iconify/vue": "^5.0.0",
+    "markdown-it-footnote": "^4.0.0",
     "reveal.js": "^5.2.1"
   }
 }

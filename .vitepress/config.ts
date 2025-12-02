@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import checker from "vite-plugin-checker";
+import footnote from "markdown-it-footnote";
 import xtlangGrammar from "./xtlang.tmLanguage.json";
 import armasmGrammar from "./armasm.tmLanguage.json";
 import fs from "fs";
@@ -104,6 +105,9 @@ export default defineConfig({
         aliases: ["armasm"],
       },
     ],
+    config: (md) => {
+      md.use(footnote);
+    },
   },
 
   // Theme configuration
