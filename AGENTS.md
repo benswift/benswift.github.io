@@ -24,6 +24,19 @@ example:
 
 ## Language patterns
 
+### Custom containers
+
+Use `info`, `tip`, `danger`, `warning` and `details` containers as necessary,
+but ensure there are blank lines between them and the content, e.g.
+
+```md
+::: tip
+
+Here's a tip.
+
+:::
+```
+
 ### Things to do
 
 - use em dashes for parenthetical thoughts---like this---to add rhythm
