@@ -30,7 +30,8 @@ body {
     );
 
     /* VitePress CSS variable overrides */
-    --vp-c-brand-1: var(--highlight-color);
+    /* Darken brand-1 slightly for WCAG AA contrast (4.5:1) on light backgrounds */
+    --vp-c-brand-1: color-mix(in srgb, var(--highlight-color) 90%, black);
     --vp-c-brand-2: color-mix(in srgb, var(--highlight-color) 90%, black);
     --vp-c-brand-3: color-mix(in srgb, var(--highlight-color) 80%, black);
     --vp-c-brand-soft: color-mix(
