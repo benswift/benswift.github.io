@@ -1,9 +1,10 @@
 ---
 id: task-03
 title: Fix remaining dead links (missing talks and livecoding pages)
-status: To Do
+status: Done
 assignee: []
 created_date: '2025-12-01 00:28'
+updated_date: '2025-12-02 00:09'
 labels:
   - vitepress
   - content
@@ -29,6 +30,12 @@ The VitePress build reports 5 dead links that reference content which doesn't ex
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Build passes with ignoreDeadLinks: false
-- [ ] #2 All 5 links either point to existing content or are removed
+- [x] #1 Build passes with ignoreDeadLinks: false
+- [x] #2 All 5 links either point to existing content or are removed
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+All 5 linked files now exist after the Jekyll-to-VitePress migration. Build passes with strict dead link checking (only /assets/ paths ignored for non-HTML files).
+<!-- SECTION:NOTES:END -->

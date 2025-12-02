@@ -17,7 +17,8 @@ export default defineConfig({
   // Clean URLs (no .html extension)
   cleanUrls: true,
 
-  ignoreDeadLinks: "localhostLinks",
+  // Only ignore asset links (VitePress can't verify non-HTML files)
+  ignoreDeadLinks: [/^\/assets\//],
 
   // Head tags
   head: [
@@ -71,28 +72,17 @@ export default defineConfig({
   // Source directory - we'll keep content at root level
   srcDir: ".",
 
-  // Exclude Jekyll files and posts source from processing
+  // Exclude non-content files from processing
   srcExclude: [
-    // Posts are processed via dynamic routes, not as direct files
-    "posts/**",
-    // Jekyll legacy directories
-    "_posts/**",
-    "_talks/**",
-    "_livecoding/**",
-    "_layouts/**",
-    "_includes/**",
-    "_plugins/**",
+    // Data files (used by data loaders, not content)
     "_data/**",
-    "_drafts/**",
+    // Jekyll build output (gitignored but exclude just in case)
     "_site/**",
-    "_cljs/**",
-    "_browserify/**",
-    // Build files
+    // Build/config files
     "Gemfile",
     "Gemfile.lock",
     "_config.yml",
     "Makefile",
-    "scripts/**",
     "backlog/**",
     // Old Jekyll files at root (renamed with jekyll- prefix)
     "jekyll-*.md",

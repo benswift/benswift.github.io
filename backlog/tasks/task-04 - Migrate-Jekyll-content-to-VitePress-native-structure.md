@@ -1,10 +1,10 @@
 ---
 id: task-04
 title: Migrate Jekyll content to VitePress-native structure
-status: To Do
+status: Done
 assignee: []
 created_date: '2025-12-01 23:32'
-updated_date: '2025-12-01 23:37'
+updated_date: '2025-12-01 23:59'
 labels:
   - migration
   - vitepress
@@ -55,12 +55,12 @@ For talks (if keeping reveal.js):
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Generation scripts removed from package.json
-- [ ] #2 Source files live at final URL locations
-- [ ] #3 No Jekyll/Liquid syntax in content files (except deferred manual items)
-- [ ] #4 `npm run dev` runs vitepress directly without pre-generation
-- [ ] #5 All existing URLs preserved
-- [ ] #6 Site builds and renders correctly
+- [x] #1 Generation scripts removed from package.json
+- [x] #2 Source files live at final URL locations
+- [x] #3 No Jekyll/Liquid syntax in content files (except deferred manual items)
+- [x] #4 `npm run dev` runs vitepress directly without pre-generation
+- [x] #5 All existing URLs preserved
+- [x] #6 Site builds and renders correctly
 <!-- AC:END -->
 
 ## Implementation Plan
@@ -120,3 +120,17 @@ The new slide deck feature (task-06) will provide the proper solution. Once that
 4. Update `srcExclude` in vitepress config
 5. Final build and test
 <!-- SECTION:PLAN:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Completed migration on 2025-12-02:
+- Created blog.data.ts to scan blog/ directory structure instead of posts/
+- Updated tag paths loader to scan blog/ directory
+- Fixed 3 skipped posts (codesign workshop, extempore tricks, academic integrity)
+- Fixed SlideStackedPapers include in classics-to-colonialism talk
+- Removed generation scripts and source directories (posts/, _posts/, _livecoding/, _talks/, scripts/)
+- Updated package.json to remove prebuild/predev hooks
+- Updated srcExclude in vitepress config
+- Build and typecheck pass successfully
+<!-- SECTION:NOTES:END -->

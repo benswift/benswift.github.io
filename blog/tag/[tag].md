@@ -5,7 +5,7 @@ aside: false
 
 <script setup>
 import { useData } from 'vitepress'
-import { data as allPosts } from '../../posts/posts.data'
+import { data as allPosts } from '../blog.data'
 import { computed, ref } from 'vue'
 
 const { params } = useData()

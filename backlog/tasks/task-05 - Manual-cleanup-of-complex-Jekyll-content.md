@@ -1,9 +1,10 @@
 ---
 id: task-05
 title: Manual cleanup of complex Jekyll content
-status: To Do
+status: Done
 assignee: []
 created_date: '2025-12-01 23:32'
+updated_date: '2025-12-01 23:59'
 labels:
   - migration
   - manual
@@ -33,3 +34,24 @@ Need to identify which posts were skipped by the generation script and manually 
 - Various files use `{% fa_svg fab.fa-youtube %}` etc.
 - Options: Replace with emoji, inline SVG, or icon component
 <!-- SECTION:DESCRIPTION:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Completed on 2025-12-02 as part of task-04:
+
+## Complex HTML blog posts
+All 3 were manually converted:
+- codesign-culture-lab-workshop.md: Removed interactive JS wheels, documented wheel options as text
+- extempore-livecoding-tricks.md: Converted `<div markdown="1">` to `::: tip` containers
+- academic-integrity-policy.md: Converted `<div markdown="1">` to blockquotes
+
+## bib_list_pubs
+The generation script already stripped this out. The bibliography was not preserved (manual list could be added later if needed).
+
+## fa_svg icons
+The generation script already stripped these out. No icons remain.
+
+## Data iteration
+The ForCodesTable.vue component handles the FoR codes page. The livecoding_people iteration was in _posts (Jekyll source) and was stripped during generation.
+<!-- SECTION:NOTES:END -->

@@ -7,10 +7,7 @@ subtitle: "via drum circles"
 event: "an invited guest lecture at the ANU School of Cybernetics"
 ---
 
-
 <SlideTitle />
-
-
 
 <SlideAckCountry />
 
@@ -100,8 +97,6 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 <!-- Euclidean algorithm widget: 1:0,0:1,0:2,1:3,0:4;1:0,0:1,0:2,1:3,0:4,1:5,0:6;1:0,0:1,1:2,0:3,0:4,1:5,0:6,1:7,0:8,1:9,0:10,0:11;1:0,0:1,0:2,1:3,0:4,0:5,1:6,0:7,0:8,0:9,1:10,0:11,0:12,1:13,0:14,0:15 -->
 
-
-
 <h2 id="euclidean-rhythm-example-1" data-auto-animate>euclid(3,8)</h2>
 
 same basic idea as Euclid, although attributed to Bjorklund
@@ -156,7 +151,6 @@ same basic idea as Euclid, although attributed to Bjorklund
 African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 <em>Schism</em> and many more...</span></p>
 
-
 <h2 data-auto-animate>euclid(5,8)</h2>
 
 <!-- Euclidean algorithm widget: 1:0,0:1,1:2,1:3,0:4,1:5,1:6,0:7 -->
@@ -167,16 +161,13 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 > Line up the boxes in one row (_ones_ on the left), then move the rightmost
 > _zeroes_ "under" the left-hand _ones_.
-> 
+>
 > If there's more than one short ("hanging chad") column on the right, take as
 > many of those short columns as you can and move them to below the tallest
 > (left-hand) columns---and repeat this process until there's no more than one
 > short column.
 
-{% include slides/stacked-papers.html 
-           width="50%"
-           image-path="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png"
-           alt="list of 'world' music rhythms which are Euclidean" %}
+<SlideStackedPapers width="50%" imagePath="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png" alt="list of 'world' music rhythms which are Euclidean" />
 
 ## paper "results" {#part-3}
 
@@ -204,8 +195,6 @@ of interesting-sounding and culturally-significant rhythms to get people
 
 <SlideBackgroundImage image="images/talks/classics-to-colonialism/drum-circle.jpg" />
 
-
-
 <SlideBackgroundImage image="images/talks/classics-to-colonialism/british-museum.jpg" />
 
 ---
@@ -217,9 +206,8 @@ of interesting-sounding and culturally-significant rhythms to get people
 > radically altered by the passage of time and cross-cultural contact and
 > musical hybridity.
 >
-> _Stewart, J (2010)_. [Articulating the African Diaspora through Rhythm:
-> Diatonic Rhythms, Nested Looping Structures, and the music of Steve
-> Coleman](https://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
+> _Stewart, J (2010)_.
+> [Articulating the African Diaspora through Rhythm: Diatonic Rhythms, Nested Looping Structures, and the music of Steve Coleman](https://www.jessestewart.ca/media/african_diasporic_rhythm.pdf)
 
 ---
 
@@ -229,8 +217,8 @@ of interesting-sounding and culturally-significant rhythms to get people
 > pseudo-African Drum is socially, ethically and legally upheld by our moral
 > framework. It is, however, in violation of the ethic of the ethnic Drum.
 >
-> _Friedberg, L (2003)_. [Drumming for
-> Dollars](https://www.chidjembe.com/drumdollars.html)
+> _Friedberg, L (2003)_.
+> [Drumming for Dollars](https://www.chidjembe.com/drumdollars.html)
 
 <SlideYouTube id="fn3KWM1kuAw" />
 
@@ -238,13 +226,7 @@ of interesting-sounding and culturally-significant rhythms to get people
 
 <SlideBackgroundImage image="images/talks/classics-to-colonialism/mm_The-Countours_Original-Members-2-1024x828.jpg" bgsize="contain" />
 
-
-
 <SlideBackgroundImage image="images/talks/classics-to-colonialism/boston-dynamics-police-dog.jpg" />
-
-
-
-
 
 <SlideBackgroundImage image="images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" />
 
@@ -263,8 +245,8 @@ do we use it safely, sustainably, at _scale_?
 
 > Machine learning is like money laundering for bias.
 >
-> **Maciej Cegłowski**, [_The Moral Economy of
-> Tech_](https://idlewords.com/talks/sase_panel.htm)
+> **Maciej Cegłowski**,
+> [_The Moral Economy of Tech_](https://idlewords.com/talks/sase_panel.htm)
 
 ## what did you learn?
 
@@ -285,7 +267,6 @@ yes, **it will be on the final exam**
 <SlideQuestions />
 
 <hr class="impact center" data-background-color="#262626" />
-
 
 <https://apps.musedlab.org/groovepizza/>
 

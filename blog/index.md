@@ -5,7 +5,7 @@ title: Blog
 ---
 
 <script setup>
-import { data as posts } from '../posts/posts.data'
+import { data as posts } from './blog.data'
 import { ref, computed } from 'vue'
 
 const currentPage = ref(1)

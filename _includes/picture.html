@@ -1,9 +1,0 @@
-<picture style="position: relative;">
-  <img {% if include.alt %}alt="{{ include.alt }}"{% endif %} src='{{ "/assets/" | append: include.file | relative_url }}'/>
-
-  {% if include.credit %}
-  <div style="position: absolute; bottom: 1em; right: 1em; color: #ffffff; font-weight: 200;">
-    📸 {{ include.credit }}
-  </div>
-  {% endif %}
-</picture>
