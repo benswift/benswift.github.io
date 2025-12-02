@@ -1,6 +1,11 @@
 /* Custom styles for benswift.me (plain CSS, no Sass) */
 
-/* VitePress hardcodes body { font-size: 16px } without a CSS variable */
+/*
+ * VitePress hardcodes font-size: 16px on html and body in base.css without
+ * a CSS variable (see https://github.com/vuejs/vitepress/discussions/2331).
+ * Many components also use hardcoded px values. We override with !important
+ * and scale components that use px instead of rem.
+ */
 html,
 body {
     font-size: 18px !important;
@@ -175,6 +180,19 @@ body {
 /* Nice blockquotes */
 blockquote {
     quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* VitePress nav uses hardcoded px values - scale them up */
+.VPNavBarMenuLink {
+    font-size: 1rem !important;
+}
+
+.VPNavBarSearch button {
+    font-size: 0.9rem !important;
+}
+
+.VPNavBarTitle .title {
+    font-size: 1rem !important;
 }
 
 /* Post listing styles */
