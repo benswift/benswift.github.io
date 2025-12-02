@@ -1,0 +1,183 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "xtlang",
+  "scopeName": "source.xtlang",
+  "fileTypes": ["xtm"],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#function-definitions"
+    },
+    {
+      "include": "#type-bindings"
+    },
+    {
+      "include": "#lib-bindings"
+    },
+    {
+      "include": "#characters"
+    },
+    {
+      "include": "#global-variables"
+    },
+    {
+      "include": "#type-annotations"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#getset-keywords"
+    },
+    {
+      "include": "#equality-operators"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#builtin-functions"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.semicolon.xtlang",
+          "match": ";.*$"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.xtlang",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.xtlang",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "function-definitions": {
+      "patterns": [
+        {
+          "match": "\\((define|bind-func)(\\s+)([\\w\\-!?]+)",
+          "captures": {
+            "1": { "name": "storage.type.function.xtlang" },
+            "3": { "name": "entity.name.function.xtlang" }
+          }
+        }
+      ]
+    },
+    "type-bindings": {
+      "patterns": [
+        {
+          "match": "\\((bind-alias|bind-type|bind-val|bind-poly)(\\s+)([\\w\\-!?]+)(\\s+)([^\\s)]+)",
+          "captures": {
+            "1": { "name": "storage.type.xtlang" },
+            "3": { "name": "entity.name.type.xtlang" },
+            "5": { "name": "support.type.xtlang" }
+          }
+        }
+      ]
+    },
+    "lib-bindings": {
+      "patterns": [
+        {
+          "match": "\\((bind-lib|bind-lib-func|bind-lib-type|bind-lib-val|bind-lib-type-no-scm)(\\s+)([\\w\\-!?]+)(\\s+)([\\w\\-!?]+)(\\s+)([^\\s)]+)",
+          "captures": {
+            "1": { "name": "storage.type.xtlang" },
+            "3": { "name": "entity.name.namespace.xtlang" },
+            "5": { "name": "entity.name.function.xtlang" },
+            "7": { "name": "support.type.xtlang" }
+          }
+        }
+      ]
+    },
+    "characters": {
+      "patterns": [
+        {
+          "name": "constant.character.xtlang",
+          "match": "#[\\w\\\\+\\-=<>'\"&#]+"
+        }
+      ]
+    },
+    "global-variables": {
+      "patterns": [
+        {
+          "name": "variable.other.global.xtlang",
+          "match": "\\*[^\\s*]+\\*"
+        }
+      ]
+    },
+    "type-annotations": {
+      "patterns": [
+        {
+          "name": "support.type.xtlang",
+          "match": ":[^\\s)]+"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.xtlang",
+          "match": "\\b(case|do|dotimes|let|letrec|if|else|and|or|not|equal|cond|lambda|begin|when|unless)\\b"
+        }
+      ]
+    },
+    "getset-keywords": {
+      "patterns": [
+        {
+          "name": "keyword.operator.xtlang",
+          "match": "\\b(set!|pset!|pref|pref-ptr|tset!|tref|tref-ptr|tfill!|aset!|aref|aref-ptr|afill!|vset!|vref|vref-ptr|vfill!)\\b"
+        }
+      ]
+    },
+    "equality-operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.comparison.xtlang",
+          "match": "(=|<>|<=|>=|<|>)"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.xtlang",
+          "match": "\\b(null|nil|#t|#f)\\b"
+        }
+      ]
+    },
+    "builtin-functions": {
+      "patterns": [
+        {
+          "name": "support.function.xtlang",
+          "match": "\\b(cons|car|cdr|quote|eval|append|list|vector|member|load|map|apply|for-each|println|printf|print|play|callback|now|sys:load|make-instrument|random|rotate|range|nof|repeat|rel|cosr|sinr|trir|recur|modulo|abs|floor|ceil|round|min|max|length|nth|reverse|filter|foldl|foldr|assoc|memq|memv|make-list|make-list-with-proc)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.xtlang",
+          "match": "\\b((0(x|X)[0-9a-fA-F]+)|([0-9]+\\.?[0-9]*)|(\\.?[0-9]+))((e|E)(\\+|-)?[0-9]+)?(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b"
+        },
+        {
+          "name": "constant.numeric.ratio.xtlang",
+          "match": "\\b[0-9]+/[0-9]+\\b"
+        }
+      ]
+    }
+  }
+}

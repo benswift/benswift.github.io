@@ -1,9 +1,10 @@
 ---
 id: task-07
 title: port xtlang syntax highlighting
-status: To Do
+status: Done
 assignee: []
-created_date: "2025-12-01 23:59"
+created_date: '2025-12-01 23:59'
+updated_date: '2025-12-02 00:19'
 labels: []
 dependencies: []
 ---
@@ -18,3 +19,9 @@ these warnings at build time):
 
 Note: extempore and xtlang are the same thing - we should change them all to
 xtlang for consistency.
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Ported xtlang syntax highlighting from the extempore-sublime TextMate grammar to a Shiki-compatible JSON grammar at `.vitepress/xtlang.tmLanguage.json`. Configured VitePress to load the custom language with `extempore` as an alias, so both `xtlang` and `extempore` code blocks now have proper syntax highlighting. Build now completes without the 39 xtlang fallback warnings.
+<!-- SECTION:NOTES:END -->
