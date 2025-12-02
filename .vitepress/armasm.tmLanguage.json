@@ -1,0 +1,149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ARM Assembly",
+  "scopeName": "source.asm.arm",
+  "fileTypes": ["s", "S"],
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#preprocessor" },
+    { "include": "#registers" },
+    { "include": "#directives" },
+    { "include": "#arch" },
+    { "include": "#arithmetic-instructions" },
+    { "include": "#memory-instructions" },
+    { "include": "#strings" },
+    { "include": "#nop" },
+    { "include": "#numbers" },
+    { "include": "#labels" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.at.arm",
+          "match": "@.*$"
+        },
+        {
+          "name": "comment.line.double-slash.arm",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.line.semicolon.arm",
+          "match": ";.*$"
+        },
+        {
+          "name": "comment.block.arm",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "preprocessor": {
+      "patterns": [
+        {
+          "name": "keyword.control.preprocessor.arm",
+          "match": "^\\s*#\\s*(define|defined|elif|else|if|ifdef|ifndef|endif|include|import|error|warning|pragma|undef|line)\\b"
+        }
+      ]
+    },
+    "registers": {
+      "patterns": [
+        {
+          "name": "storage.other.register.arm",
+          "match": "\\b(?i)([rcp]1[0-5]|[rcp][0-9]|a[1-4]|v[1-8]|sl|sb|fp|ip|sp|lr|spsr|cpsr|pc|[sd]3[0-1]|[sd][12][0-9]|[sd][0-9]|fpsid|fpscr|fpexc|q1[0-5]|q[0-9]|APSR_nzcv|sy)(?-i)!?\\b"
+        }
+      ]
+    },
+    "directives": {
+      "patterns": [
+        {
+          "name": "keyword.control.directive.arm",
+          "match": "\\.(?i)(globl|global|macro|endm|purgem|if|elseif|else|endif|section|text|data|bss|arm|thumb|align|balign|irp|rept|endr|req|unreq|error|short|func|endfunc|hidden|type|fpu|arch|code|altmacro|object_arch|word|int|string|byte|hword|long|quad|ascii|asciz|space|skip|equ|set|size|extern|weak|ltorg|pool)(?-i)\\b"
+        }
+      ]
+    },
+    "arch": {
+      "patterns": [
+        {
+          "name": "keyword.control.arch.arm",
+          "match": "\\barmv(2a?|3m?|4t?|5t?e?|6(j|t2|zk?|-m)?|7v?e?(-(a|r|m))?|8-a(\\+crc)?)\\b"
+        }
+      ]
+    },
+    "arithmetic-instructions": {
+      "patterns": [
+        {
+          "name": "support.function.mnemonic.arm",
+          "match": "(?i)\\b(and|eor|sub|rsb|add|adc|sbc|rsc|tst|teq|cmp|cmn|orr|mov|bic|mvn|neg|mul|mla|umull|umlal|smull|smlal|smlabb|mrs|msr|lsr|lsl|ror|asr|rrx|movw|movt|rev|rev16|rev8|clz|bfc|bfi|ubfx|sbfx|uxtah|uxtab|sxtah|sxtab|uxth|uxtb|sxth|sxtb|pld|adr|adrl|nop)(s)?(eq|ne|cs|hs|cc|lo|mi|pl|vs|vc|hi|ls|ge|lt|gt|le|al)?\\b"
+        },
+        {
+          "name": "support.function.mnemonic.simd.arm",
+          "match": "(?i)\\b(vadd|vsub|vmov|vmul|vdiv|vcmp|vcvt|vtrn|vmrs|vmsr|vld1|vst1|vst2|vst3|vst4|vswp|vaddw|vmull|vmlal|vrshrn|vqadd|vqsub|vqdmulh|vqshrun|vqmovun)(\\.([isupf]?(8|16|32|64)))*\\b"
+        }
+      ]
+    },
+    "memory-instructions": {
+      "patterns": [
+        {
+          "name": "support.function.mnemonic.memory.arm",
+          "match": "(?i)\\b(ldr|str|ldm|stm|push|pop|ldrb|strb|ldrh|strh|ldrd|strd|ldrex|strex|ldrsb|ldrsh|vldr|vstr|vpush|vpop|swp|swpb)(eq|ne|cs|hs|cc|lo|mi|pl|vs|vc|hi|ls|ge|lt|gt|le|al)?(ia|ib|da|db|fd|fa|ed|ea)?\\b"
+        },
+        {
+          "name": "support.function.mnemonic.branch.arm",
+          "match": "(?i)\\b(b|bl|bx|blx|bxj|cbz|cbnz)(eq|ne|cs|hs|cc|lo|mi|pl|vs|vc|hi|ls|ge|lt|gt|le|al)?\\b"
+        },
+        {
+          "name": "support.function.mnemonic.system.arm",
+          "match": "(?i)\\b(swi|svc|dmb|dsb|isb|wfi|wfe|sev|yield|bkpt)(eq|ne|cs|hs|cc|lo|mi|pl|vs|vc|hi|ls|ge|lt|gt|le|al)?\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.arm",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.arm",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "nop": {
+      "patterns": [
+        {
+          "name": "comment.nop.arm",
+          "match": "(?i)\\bnop(eq|ne|cs|hs|cc|lo|mi|pl|vs|vc|hi|ls|ge|lt|gt|le|al)?\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hex.arm",
+          "match": "#?-?(0x|&)[0-9a-fA-F_]+\\b"
+        },
+        {
+          "name": "constant.numeric.literal.arm",
+          "match": "#-?[0-9]+\\b"
+        },
+        {
+          "name": "constant.numeric.dec.arm",
+          "match": "\\b[0-9]+\\b"
+        }
+      ]
+    },
+    "labels": {
+      "patterns": [
+        {
+          "name": "entity.name.function.label.arm",
+          "match": "^[a-zA-Z_\\.][0-9a-zA-Z_]*:"
+        }
+      ]
+    }
+  }
+}

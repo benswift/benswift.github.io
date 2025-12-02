@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import checker from "vite-plugin-checker";
 import xtlangGrammar from "./xtlang.tmLanguage.json";
+import armasmGrammar from "./armasm.tmLanguage.json";
 
 export default defineConfig({
   // Vite configuration
@@ -38,6 +39,10 @@ export default defineConfig({
       {
         ...xtlangGrammar,
         aliases: ["extempore"],
+      },
+      {
+        ...armasmGrammar,
+        aliases: ["armasm"],
       },
     ],
   },
