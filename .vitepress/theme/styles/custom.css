@@ -1,12 +1,14 @@
 /* Custom styles for benswift.me (plain CSS, no Sass) */
 
-html {
-    font-size: 18px;
+html,
+body {
+    font-size: 18px !important;
 }
 
 @media (min-width: 640px) {
-    html {
-        font-size: 20px;
+    html,
+    body {
+        font-size: 20px !important;
     }
 }
 
