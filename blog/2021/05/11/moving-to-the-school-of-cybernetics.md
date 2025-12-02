@@ -6,11 +6,6 @@ tags:
   - cybernetics
 ---
 
-# Moving to the School of Cybernetics
-
-
-
-
 Some job news---I've just accepted a position in the new [School of
 Cybernetics](https://cybernetics.anu.edu.au/) in the ANU College of Engineering,
 Computing and Cybernetics. I'll finish out my teaching this semester in the

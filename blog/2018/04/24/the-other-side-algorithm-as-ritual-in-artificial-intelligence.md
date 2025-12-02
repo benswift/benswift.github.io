@@ -5,11 +5,6 @@ tags:
   - ai
 ---
 
-# The Other Side: Algorithm as Ritual in Artificial Intelligence
-
-
-
-
 Tomorrow morning (Wed April 25, 9am Montréal time) Kieran Browne and I are
 performing an Artificial Intelligence divination ritual as part of the _alt.chi_
 session [Scary, Sporty, Ginger and

@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Agentic Elixir superpowers: Zed + Tidewave + AshAI
-
-
-
-
 For a few years now whenever I need to build any sort of networked interactive
 experience, I reach for Elixir (with Phoenix LiveView and Ash). It's an
 _extremely_ productive combination, especially when you want to do more complex

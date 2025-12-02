@@ -5,11 +5,6 @@ tags:
   - teaching
 ---
 
-# Drinking from the bullshit firehose
-
-
-
-
 https://stratechery.com/2022/ai-homework/
 
 https://en.wikipedia.org/wiki/Brandolini's_law

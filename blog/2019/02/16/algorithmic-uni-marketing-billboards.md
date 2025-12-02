@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Algorithmic uni marketing billboards
-
-
-
-
 In the spirit of Murdoch University's
 [_free your think_](https://www.campaignbrief.com/wa/2017/07/murdoch-university-launches-fr.html)
 marketing campaign, I've put together a dynamic full-page ad billboard as my

@@ -3,10 +3,6 @@ title: "Parental leave, take 2"
 
 ---
 
-# Parental leave, take 2
-
-
-
 Our family has recently [grown by one
 member](https://github.com/benswift/benswift.github.io/commit/eb7fd10ac87c1059047e6e25783db01847c73e17).
 I'm proud and exhausted and happy; it's a really wild (and mostly very nice)

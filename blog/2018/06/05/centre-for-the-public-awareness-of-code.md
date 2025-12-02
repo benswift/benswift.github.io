@@ -4,11 +4,6 @@ tags:
   - ccc
 ---
 
-# Centre for the Public Awareness of Code
-
-
-
-
 _What's your favourite movie?_ Most folks already have an answer to this
 question (because they've been asked before). Mine's
 [The Castle](https://www.imdb.com/title/tt0118826/).

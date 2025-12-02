@@ -5,11 +5,6 @@ tags:
   - teaching
 ---
 
-# LENS Online - the Laptop Ensemble in a time of covid19
-
-
-
-
 Well, as with all ANU courses, we're taking the [Laptop
 Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/)
 ([COMP2710/MUSI2205](https://comp.anu.edu.au/courses/laptop-ensemble/resources/faq/#whats-the-deal-with-the-dual-course-codes-comp2710-and-musi2205))

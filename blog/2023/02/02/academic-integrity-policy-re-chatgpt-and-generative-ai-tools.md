@@ -5,10 +5,6 @@ tags:
   - ai
 ---
 
-# Academic integrity guidelines re: ChatGPT and generative AI tools
-
-
-
 Here in Australia Semester 1 is approaching and
 [ChatGPT](https://chat.openai.com) is, undoubtedly, _a thing_. From a practical
 perspective it's important to have some​ sort of guidelines about about ChatGPT

@@ -4,11 +4,6 @@ tags:
   - ai
 ---
 
-# Hosting a genAI trivia night
-
-
-
-
 I was recently tasked with organising a trivia night, and decided to generate
 all the questions (and answers) with a large language model (I used
 [Claude](https://claude.ai/), although obviously this would work with any model.

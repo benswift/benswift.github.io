@@ -5,11 +5,6 @@ tags:
   - ai
 ---
 
-# Congrats Dr. Kieran Browne
-
-
-
-
 Last December [Kieran](https://kieranbrowne.com) graduated---very exciting for
 all concerned.
 

@@ -4,9 +4,6 @@ tags:
   - cybernetics
 ---
 
-# Cybernetic futures explained (maybe)
-
-
 <p class="post-subtitle">It's not a lighthouse, it's a radar.</p>
 
 

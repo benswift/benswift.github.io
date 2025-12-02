@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Format Markdown on save in Zed using Prettier
-
-
-
-
 One thing I've particularly enjoyed since switching to Zed is format-on-save,
 which is turned on by default in most programming modes. However, it's not
 turned on by default for Markdown files.

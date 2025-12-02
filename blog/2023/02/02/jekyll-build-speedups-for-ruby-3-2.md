@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Jekyll build speedups for Ruby 3.2
-
-
-
-
 There's a [bunch of buzz](https://news.ycombinator.com/item?id=34413012) about
 Ruby's new YJIT in v3.2.0. I have to develop and maintain a bunch of Jekyll
 websites for work, some of which are getting into "non-trivial build time"

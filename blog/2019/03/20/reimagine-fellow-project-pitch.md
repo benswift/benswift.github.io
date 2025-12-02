@@ -6,11 +6,6 @@ tags:
   - research
 ---
 
-# The c/c/c studio
-
-
-
-
 *Note to readers:* this is the project plan for my **Reimagine Fellowship**. If
 you're just here for the short version, see the [elevator
 pitch](#elevator-pitch). Alternately, if you want to know the "big picture

@@ -3,10 +3,6 @@ title: "Running stable diffusion in a singularity container"
 
 ---
 
-# Running stable diffusion in a singularity container
-
-
-
 singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3
 
 git clone https://github.com/lstein/stable-diffusion.git

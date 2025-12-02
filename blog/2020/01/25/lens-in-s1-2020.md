@@ -5,11 +5,6 @@ tags:
   - lens
 ---
 
-# ANU Laptop Ensemble in S1 2020
-
-
-
-
 The Laptop Ensemble (LENS) is happening again in Semester 1 2020 as a for-credit
 ANU course in computer music making and laptop performance. It is open to
 students in music, art, computer science, and elsewhere around the ANU.

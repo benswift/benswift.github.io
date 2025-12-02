@@ -6,11 +6,6 @@ tags:
   - lens
 ---
 
-# Laptop Ensemble in the Canberra Times
-
-
-
-
 The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: [ANU
 School of Music's new orchestra is far from
 conventional](https://www.canberratimes.com.au/story/6412297/anu-school-of-musics-new-orchestra-is-far-from-conventional/).

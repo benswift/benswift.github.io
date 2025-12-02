@@ -4,21 +4,14 @@ tags:
   - ai
 ---
 
-# Seeing AI tasks through a TAM lens
-
-
-
-
 When it comes to AI adoption research, we keep asking "do you use ChatGPT?" when
 we should be adding "for which specific tasks?"
 
-::: tip
-_UPDATE 18 Nov 2025:_ an earlier version of this post used the term
+::: tip _UPDATE 18 Nov 2025:_ an earlier version of this post used the term
 "helpfulness" for one of the axes of this framework, but I've changed it (and
 the surrounding prose) to "efficiency" because on reflection I think
 "helpfulness" conflated the "makes me faster" and "is good for human
-flourishing" questions too much.
-:::
+flourishing" questions too much. :::
 
 The
 [Technology Acceptance Model](https://en.wikipedia.org/wiki/Technology_acceptance_model)

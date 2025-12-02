@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# highlight.js with xtlang support
-
-
-
-
 ::: tip
 **Note**: adding syntax-highlighted xtlang to your website is now easier than
 ever because

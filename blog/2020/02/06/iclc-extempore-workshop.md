@@ -6,11 +6,6 @@ tags:
   - teaching
 ---
 
-# ICLC Extempore workshop
-
-
-
-
 If you're here for the [ICLC Extempore
 workshop](https://www.eventbrite.ie/e/introduction-to-music-making-in-extempore-tickets-89794851819)
 _Introduction to music-making in Extempore_, then welcome!

@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Pulling apart Zoom attendance csv dumps in tidy R
-
-
-
-
 My team ran some Zoom training last week and today I needed to figure out who
 actually attended across all the days, and for how long.
 

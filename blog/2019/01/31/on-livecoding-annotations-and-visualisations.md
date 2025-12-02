@@ -4,11 +4,6 @@ tags:
   - livecoding
 ---
 
-# On livecoding annotations and visualisations
-
-
-
-
 I've just finished reading Charlie Roberts' [interactive web essay on
 annotations and visualisations for live
 code](https://charlieroberts.github.io/annotationsAndVisualizations/). If you

@@ -4,11 +4,6 @@ tags:
   - extempore
 ---
 
-# Euclidean rhythms in Extempore
-
-
-
-
 As part of the new Extempore pattern language stuff I added a helper for
 generating [euclidean rhythms](https://en.wikipedia.org/wiki/Euclidean_rhythm).
 I wrote it (in a recursive style) in Scheme using the algorithm described in

@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# In-place XML tree mutation for Jekyll productivity
-
-
-
-
 I wrote a [reveal.js](/blog/2018/09/28/another-reveal.js-plugin-for-jekyll) plugin for Jekyll
 so that I can make nice slides (especially for my
 [ANU](https://cs.anu.edu.au/courses/comp1720/lectures/)

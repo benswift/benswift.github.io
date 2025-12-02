@@ -4,11 +4,6 @@ tags:
   - ai
 ---
 
-# Agentic AI: LLMs with stones
-
-
-
-
 > Sticks and stones may break my bones, but words will never hurt me.
 
 There's a truth to that proverb, even if you feel (as I do) the temptation to

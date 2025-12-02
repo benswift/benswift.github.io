@@ -6,11 +6,6 @@ tags:
   - reimagine
 ---
 
-# Reimagining Engineering & CS at the ANU
-
-
-
-
 The [ANU College of Engineering, Computing and
 Cybernetics](https://cecs.anu.edu.au) (CECS) is being _Reimagined_. Don't take
 my word for it; listen to our fearless leader [Elanor](https://cecs.anu.edu.au):

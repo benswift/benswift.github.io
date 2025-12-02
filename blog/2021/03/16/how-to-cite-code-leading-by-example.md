@@ -4,11 +4,6 @@ tags:
   - teaching
 ---
 
-# How to cite code? Leading by example
-
-
-
-
 In our [Computing Education Reading
 Group](https://cs.anu.edu.au/hub/reading-group/) yesterday we looked at Sheard
 et. al.'s paper on [_Strategies for Maintaining Academic Integrity in

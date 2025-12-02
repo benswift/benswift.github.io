@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Automated RPi Web Kiosk Setup in 2025
-
-
-
-
 As part of a [recent art installation](https://github.com/anucybernetics/panic)
 I've needed to set up lots (well, dozens) of Raspberry 5s to run as fullscreen
 Chromium "kiosks" with a pre-set URL (network connected, but with no

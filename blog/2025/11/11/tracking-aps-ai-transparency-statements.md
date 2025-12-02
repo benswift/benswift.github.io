@@ -5,11 +5,6 @@ tags:
   - policy
 ---
 
-# Tracking APS AI Transparency Statements
-
-
-
-
 New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**
 ([GitHub link](https://github.com/ANUcybernetics/aps-ai-transparency-tracker)).
 

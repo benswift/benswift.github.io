@@ -7,11 +7,6 @@ tags:
   - gigs
 ---
 
-# LENS 2020 final gig stream tomorrow at 8pm
-
-
-
-
 <Picture file="images/posts/lens2020-final-gig-poster.jpg" alt="LENS S1 2020 final gig poster" />
 
 If you're stuck at home this Friday night (or if you've got a good mobile data

@@ -4,9 +4,6 @@ tags:
   - cybernetics
 ---
 
-# Livecoder-in-the-club as a system
-
-
 <p class="post-subtitle">understanding and intervening in complex flows of software, music and humans</p>
 
 

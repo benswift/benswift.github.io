@@ -5,11 +5,6 @@ tags:
   - dev
 ---
 
-# Running Claude Code within Zed
-
-
-
-
 After several months using Zed's built-in
 [Agent panel](https://zed.dev/docs/ai/agent-panel) I've switched to Claude Code.
 The main reason is cost. I'm still using the same models---still primarily

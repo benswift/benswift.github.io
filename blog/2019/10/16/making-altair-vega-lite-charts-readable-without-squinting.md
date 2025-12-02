@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Making Altair/Vega-Lite charts readable without squinting
-
-
-
-
 My love for the [Grammar of
 Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448)
 runs deep, and in particular for Hadley Wickham's famous `ggplot2` which showed

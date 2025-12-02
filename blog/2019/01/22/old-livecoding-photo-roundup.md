@@ -5,11 +5,6 @@ tags:
   - livecoding
 ---
 
-# Old livecoding photo roundup
-
-
-
-
 I'm trying to find all the photos of me doing livecoding gigs over the past 10
 years. If you've got an old photo of me doing my thing, then can you 
 [email](mailto:ben.swift@anu.edu.au) 

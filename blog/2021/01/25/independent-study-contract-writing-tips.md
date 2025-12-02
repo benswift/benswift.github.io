@@ -4,11 +4,6 @@ tags:
   - teaching
 ---
 
-# Independent Study Contract writing tips
-
-
-
-
 Many students here at the ANU School of Computing take a capstone project at the
 end of their undergraduate degree. There are a few different variations (e.g.
 half-year vs full-year, "research" vs "implementation", etc.), but overall these

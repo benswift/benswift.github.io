@@ -5,11 +5,6 @@ tags:
   - dev
 ---
 
-# Simple pdf papers/reports with markdown, pandoc and bibtex
-
-
-
-
 I've long raged against the machine of my institution's default LaTeX template
 for dissertations and other reports, which is:
 

@@ -5,8 +5,6 @@ tags:
   - dev
 ---
 
-# Configuring Spacemacs org-roam & org-noter for academic writing bliss
-
 I've always had a decent memory, and so I've never really had a formal system
 for keeping track of who said what and in which paper. When it comes time to
 write something of my own I end up mostly just going from memory and

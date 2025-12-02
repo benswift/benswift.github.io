@@ -5,11 +5,6 @@ tags:
   - ai
 ---
 
-# Congrats Dr. Chenchen Xu
-
-
-
-
 A big congratulations do my PhD student Chenchen for successfully completing his
 PhD; his thesis title was _Weakly Supervised Vision and Language Representation
 Learning in Sign Language Understanding_. It's freelly available online from the

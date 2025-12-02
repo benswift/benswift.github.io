@@ -4,11 +4,6 @@ tags:
   - reimagine
 ---
 
-# Reimagine Fellowship UK trip report
-
-
-
-
 I was lucky enough to be able to spend most of February in the UK on a research
 visit as part of my [Reimagine Fellowship](/blog/2019/08/30/Im-a-reimagine-fellow)---designing & delivering a
 "creative" coding extension course for ACT students in year 11 & 12.

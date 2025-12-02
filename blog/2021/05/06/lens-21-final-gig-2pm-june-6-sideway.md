@@ -6,11 +6,6 @@ tags:
   - livecoding
 ---
 
-# LENS'21 final gig 2pm June 6 @ sideway
-
-
-
-
 <Picture file="images/posts/lens2021-final-gig-poster.jpg" alt="LENS '21 final gig poster" />
 
 If you're a fan of _LENS_, the ANU Laptop Ensemble, then you're welcome to come

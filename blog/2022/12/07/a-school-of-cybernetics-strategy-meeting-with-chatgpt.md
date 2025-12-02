@@ -5,11 +5,6 @@ tags:
   - cybernetics
 ---
 
-# A School of Cybernetics strategy meeting with ChatGPT
-
-
-
-
 Back at my desk after a couple of days off I finally got a chance to fire up the
 [OpenAI ChatGPT](https://chat.openai.com) AI language model that everyone's
 talking about.

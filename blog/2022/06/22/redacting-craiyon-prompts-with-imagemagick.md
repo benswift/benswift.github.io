@@ -5,11 +5,6 @@ tags:
   - ai
 ---
 
-# Redacting craiyon prompts with imagemagick
-
-
-
-
 I've been messing around with [craiyon](https://www.craiyon.com) (formerly
 [DALL-E mini](https://huggingface.co/spaces/dalle-mini/dalle-mini)), because who
 _hasn't_ been doing that recently.

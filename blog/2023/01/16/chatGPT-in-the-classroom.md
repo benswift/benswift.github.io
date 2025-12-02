@@ -5,11 +5,6 @@ tags:
   - teaching
 ---
 
-# Are you ready for ChatGPT in the classroom this semester?
-
-
-
-
 As I scrolled through my social media feeds over the Christmas break
 [I](https://www.ft.com/content/86e64b4c-a754-47d6-999c-fcc54f62fb5d)
 [read](https://www.theatlantic.com/technology/archive/2022/12/chatgpt-ai-writing-college-student-essays/672371/)

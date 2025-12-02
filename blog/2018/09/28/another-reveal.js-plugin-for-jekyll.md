@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Another reveal.js plugin for Jekyll
-
-
-
-
 I use [Jekyll](https://jekyllrb.com/) to create my course websites and
 [reveal.js](https://github.com/hakimel/reveal.js/) to create my lecture slides.
 Both of them are awesome, and allow me to focus on writing (hopefully) great

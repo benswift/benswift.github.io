@@ -5,11 +5,6 @@ tags:
   - ai
 ---
 
-# AI art installations and livecoding gigs in Nov/Dec
-
-
-
-
 If you [follow me on bluesky](https://bsky.app/profile/benswift.me) you've seen
 this already, but over the last couple of months I've been hard at work on an AI
 art installation called Panic. This was a collaboration with

@@ -5,11 +5,6 @@ tags:
   - research
 ---
 
-# Making the most of meetings with research students
-
-
-
-
 <div class="hl-para" markdown="1">
 
 **tl;dr** here are my standard questions for one-to-one meetings with research

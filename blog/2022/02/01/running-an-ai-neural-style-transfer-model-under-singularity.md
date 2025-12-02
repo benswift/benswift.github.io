@@ -5,11 +5,6 @@ tags:
   - ai
 ---
 
-# Running an AI neural style transfer model under Singularity
-
-
-
-
 I've recently been given access to a beefy AI server (6x RTX3090s!) which is
 managed via [SingularityCE](https://sylabs.io/singularity/), whose homepage
 boldly asks and then forgets to answer the question: "What is SingularityCE?"

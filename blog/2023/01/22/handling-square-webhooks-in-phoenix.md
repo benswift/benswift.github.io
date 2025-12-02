@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Handling Square Webhooks in Phoenix
-
-
-
-
 My [brother's
 cafe](https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459)
 donates a dollar to the local community centre for every coffee sold, and over

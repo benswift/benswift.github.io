@@ -5,11 +5,6 @@ tags:
   - gigs
 ---
 
-# LENS showcase S2 2019
-
-
-
-
 Last weekend the S2 2019
 [LENS](https://cs.anu.edu.au/code-creativity-culture/lens/) cohort (the ANU
 Laptop Ensemble) gave their final performances as part of the ANU School of

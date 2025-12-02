@@ -5,11 +5,6 @@ tags:
   - livecoding
 ---
 
-# ACMC '20 submissions now open
-
-
-
-
 Good news everyone; we're hosting the annual [Australasian Computer Music
 Conference](https://acmc2020.com/) (ACMC) at the ANU this year from July 8--11.
 ACMC is a festival of gigs, talks, installations and hands-on tutorials designed

@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# openconnect setup for institutional VPN access
-
-
-
-
 My [institution's](https://www.anu.edu.au) IT policies have recently changed and
 port 22 is now blocked from off-campus. That's a real pain if you use ssh to
 push/pull from our on-prem GitLab servers (which I need to do _all the time_).

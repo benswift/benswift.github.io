@@ -5,9 +5,6 @@ tags:
   - ai
 ---
 
-# So this is how it feels when the robots come for your job
-
-
 <p class="post-subtitle">what GitHub's Copilot 'AI assistant' means for coders</p>
 
 

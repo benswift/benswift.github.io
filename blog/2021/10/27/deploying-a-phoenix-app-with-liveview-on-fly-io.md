@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Deploying a Phoenix app (with LiveView) on fly.io
-
-
-
-
 Things to note:
 
 - The hexdocs page on [deploying to fly.io](https://hexdocs.pm/phoenix/fly.html)

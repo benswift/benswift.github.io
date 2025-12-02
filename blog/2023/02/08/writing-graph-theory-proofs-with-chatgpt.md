@@ -5,11 +5,6 @@ tags:
   - teaching
 ---
 
-# Writing graph theory proofs with ChatGPT
-
-
-
-
 Posting logs of [ChatGPT](https://chat.openai.com) interaction is getting a bit
 passé by now in Feb '23, so I'll stop doing it soon (I promise). But yesterday I
 was hanging out with my father-in-law and showing how it might impact his

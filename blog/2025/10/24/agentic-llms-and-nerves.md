@@ -4,11 +4,6 @@ tags:
   - ai
 ---
 
-# Agentic LLMs and Nerves
-
-
-
-
 TODO, but the main points are:
 
 - Claude Code & GPT-5 know a lot about elixir (and usage rules are great)

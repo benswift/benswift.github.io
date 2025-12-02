@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Bulk-add students to MS Teams from a csv file
-
-
-
-
 [My institution](https://anu.edu.au) now uses [MS
 Teams](https://teams.microsoft.com) for lots of things, including organising
 classes & communicating with students. It's not perfect, but it's not terrible,

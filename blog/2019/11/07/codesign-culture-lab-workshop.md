@@ -5,10 +5,6 @@ tags:
   - ccc
 ---
 
-# code/creativity/culture curriculum design workshop
-
-
-
 ::: tip tl;dr In this workshop you'll:
 
 1. break into groups

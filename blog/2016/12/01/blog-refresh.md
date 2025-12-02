@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Blog refresh
-
-
-
-
 Another year, and another blog refresh. It's still a clojure-powered static site
 with my own fumbling, hand-rolled css, but this time I'm using
 [Cryogen](https://cryogenweb.org/) which has been pretty nice to work with so

@@ -1,6 +1,5 @@
 ---
 title: "Switching from Jekyll to VitePress"
-published: false
 tags: [dev, web]
 ---
 

@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# rclone: exclude all git repos
-
-
-
-
 For a long time I've used [rclone](https://rclone.org) for remote backups and
 it's awesome. I have a script which syncs all the files I care about on my
 laptop to cloudstor (which, being on the Australian university network has the

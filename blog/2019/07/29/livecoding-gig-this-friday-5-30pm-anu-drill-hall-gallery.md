@@ -5,11 +5,6 @@ tags:
   - gigs
 ---
 
-# Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery
-
-
-
-
 For those who visit my blog to hear my livecoding gigs, there's one this Friday.
 If you wanna see me perform with [Charles Martin](https://charlesmartin.com.au/)
 (on percussion & electronics) and [Kieran Browne](https://kieranbrowne.com) on

@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Mapping over table rows in org-mode
-
-
-
-
 I'm an [Emacs](https://www.gnu.org/software/emacs/) guy, and so if I've got some
 simple tabular data I'd _much_ rather keep it in an
 [org-mode](https://orgmode.org) table than have to fire up Excel.

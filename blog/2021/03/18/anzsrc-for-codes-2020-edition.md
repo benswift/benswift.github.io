@@ -5,11 +5,6 @@ tags:
   - policy
 ---
 
-# ANZSRC FoR Codes 2020 edition
-
-
-
-
 The Australian Research Council (well, technically the
 [Australian Bureau of Statistics](https://www.abs.gov.au) and their
 [NZ counterparts](https://www.stats.govt.nz)) have updated the

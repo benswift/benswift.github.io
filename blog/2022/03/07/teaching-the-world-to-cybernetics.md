@@ -4,11 +4,6 @@ tags:
   - cybernetics
 ---
 
-# Teaching the world to Cybernetics
-
-
-
-
 If you're the sort of person who lurks on people's LinkedIn accounts, you may
 have noticed that I've recently become the [lead of the _Experiences_
 Team](https://cybernetics.anu.edu.au/people/ben-swift/) at the School of

@@ -5,11 +5,6 @@ tags:
   - livecoding
 ---
 
-# Feedback in livecoding: cui bono?
-
-
-
-
 ::: tip
 Here's the [link to the slides](/blog/2021/09/13/feedback-in-livecoding-cui-bono) for the actual
 presentation on Oct 13.

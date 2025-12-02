@@ -5,11 +5,6 @@ tags:
   - research
 ---
 
-# Mapping the livecoding landscape
-
-
-
-
 ## People
 
 - [**Andrew Sorensen**](https://twitter.com/digego), _indie_

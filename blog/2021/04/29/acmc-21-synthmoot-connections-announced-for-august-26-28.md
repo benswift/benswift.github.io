@@ -5,11 +5,6 @@ tags:
   - livecoding
 ---
 
-# ACMC'21 + Synthmoot: Connections announced for August 26-28
-
-
-
-
 Great news on the local computer music conference front: the [Australian
 Institute of Music](https://aim.edu.au) is hosting the
 [ACMC](https://computermusic.org.au) conference in Sydney/Melbourne/online at

@@ -4,11 +4,6 @@ tags:
   - teaching
 ---
 
-# Oils from 威海
-
-
-
-
 One of my academic responsibilities is teaching our ANU Computer Science
 programs into our various partner institutions overseas. One of these partner
 institutions is [Shandong University

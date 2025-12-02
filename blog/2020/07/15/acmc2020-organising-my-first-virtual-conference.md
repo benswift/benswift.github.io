@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# ACMC2020: tools for organising a virtual conference
-
-
-
-
 I've been a bit quiet on this blog for the last few weeks[^weeks] because I've
 been organising [ACMC2020](https://acmc2020.com/): the _2020 Australasian Computer
 Music Conference_. From the conference landing page:

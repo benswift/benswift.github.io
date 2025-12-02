@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp
-
-
-
-
 For years I was a happy user of
 [mu4e](https://www.djcbsoftware.nl/code/mu/mu4e.html) in Emacs. But then a few
 years ago my employer turned off password-based IMAP auth and broke my (Office

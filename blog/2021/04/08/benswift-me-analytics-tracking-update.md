@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# benswift.me analytics/tracking update
-
-
-
-
 I haven't had any sort of client-side analytics (e.g. Google Analytics) on
 `benswift.me` for a _long_ time (since around 2012 I think---several iterations
 of the site ago). I use an ad-blocker myself, and the whole tracking & analytics

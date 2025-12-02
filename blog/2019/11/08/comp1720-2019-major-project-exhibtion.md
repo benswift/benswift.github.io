@@ -6,11 +6,6 @@ tags:
   - gigs
 ---
 
-# COMP1720 2019 major project exhibtion
-
-
-
-
 If you're around the ANU campus tomorrow (Saturday Nov 9) then come along to
 experience the [COMP1720](https://cs.anu.edu.au/courses/comp1720/) _Art &
 Interaction in New Media_ major project exhibition. This year's theme is

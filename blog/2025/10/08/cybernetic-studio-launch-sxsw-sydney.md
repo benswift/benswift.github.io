@@ -4,11 +4,6 @@ tags:
   - ai
 ---
 
-# Cybernetic Studio Launch @ SXSW Sydney
-
-
-
-
 I'm launching the
 [**Cybernetic Studio**](https://cybernetics.anu.edu.au/cybernetic-studio/) next
 week (Oct 15) at [SXSW Sydney](https://www.sxswsydney.com). If you're attending,

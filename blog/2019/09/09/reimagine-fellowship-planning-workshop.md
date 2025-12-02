@@ -4,11 +4,6 @@ tags:
   - reimagine
 ---
 
-# c/c/c studio: what's already happening
-
-
-
-
 I'm now a [Reimagine Fellow](/blog/2019/08/30/Im-a-reimagine-fellow) and stuff to do with that program
 (and getting the [c/c/c studio](/blog/2019/03/20/reimagine-fellow-project-pitch) up and running) is
 starting to happen. As I've [done](/blog/2019/02/07/reimagining-engineering-cs-at-the-anu) [so

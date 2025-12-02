@@ -4,11 +4,6 @@ tags:
   - research
 ---
 
-# A call-up to fight covid19
-
-
-
-
 As with many folks at the moment (both in Canberra and around the world) I've
 been called up into a covid19 taskforce (an initiative of the ANU's Software
 Innovation Institute, in partnership with the [RSCS](https://cs.anu.edu.au) &

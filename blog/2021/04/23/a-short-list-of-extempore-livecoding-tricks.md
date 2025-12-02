@@ -6,10 +6,6 @@ tags:
   - lens
 ---
 
-# A short list of Extempore livecoding tricks
-
-
-
 Yesterday's [LENS](https://comp.anu.edu.au/courses/laptop-ensemble/) class
 discussion turned into an [AMA](https://www.reddit.com/r/AMA/) of how I do
 certain things when I'm livecoding in Extempore. As promised, here's a blog post

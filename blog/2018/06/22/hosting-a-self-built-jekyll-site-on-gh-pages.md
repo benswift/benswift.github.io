@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Hosting a self-built jekyll site on GH pages
-
-
-
-
 This blog is built from [markdown](https://commonmark.org/help/) files using
 [Jekyll](https://jekyllrb.com/) hosted on [GitHub
 pages](https://pages.github.com/), which saves a lot of hassle involved with DIY

@@ -4,11 +4,6 @@ tags:
   - research
 ---
 
-# CHI hangs
-
-
-
-
 Here's a photo of Kieran and I hanging out at CHI. I'll write a more detailed
 trip report some other time, but from the general chats I had with people (and
 random [unsolicited blog

@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# benswift.me dev roadmap for 2020
-
-
-
-
 As a developer of web tech curricula (specifically 2D graphics & interaction
 design in [COMP1720](https://cs.anu.edu.au/courses/comp1720/)) there's always a
 tension in trying to just teach the fundamentals and keeping the coursework

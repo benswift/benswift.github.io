@@ -5,11 +5,6 @@ tags:
   - dev
 ---
 
-# Class discussions on Discourse
-
-
-
-
 In 2018 I (with the support of the Teaching & Learning IT team in
 [my School](https://cs.anu.edu.au)) switched from [Piazza](https://piazza.com)
 to a self-hosted [Discourse](https://www.discourse.org) instance for class

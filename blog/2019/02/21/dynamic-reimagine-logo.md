@@ -5,11 +5,6 @@ tags:
   - reimagine
 ---
 
-# A dynamic Reimagine logo
-
-
-
-
 I keep harping on about the **Reimagine project** because I'm super pumped about
 what it means for the way we do Engineering Computer Science here at the ANU
 (see [here](/assets/pdf/reimagine-fellow-PD.pdf) and

@@ -4,11 +4,6 @@ tags:
   - teaching
 ---
 
-# Ben and COMP2300 next year
-
-
-
-
 Students[^organised-ones] are starting to turn their gaze towards 2020, and so
 I've been getting a bunch of emails asking me if I'm teaching
 [COMP2300/6300](https://cs.anu.edu.au/courses/comp2300/) _Computer Organisation

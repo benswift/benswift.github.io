@@ -5,11 +5,6 @@ tags:
   - livecoding
 ---
 
-# Extempore workshop @ ICLC '20, Feb 6, Limerick IE
-
-
-
-
 If you're coming to the upcoming [International Conference on Live
 Coding](https://iclc.toplap.org/2020/) (ICLC '20) in Limerick,
 Ireland, then it's not too late to sign up for my workshop **Introduction to

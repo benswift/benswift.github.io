@@ -5,11 +5,6 @@ tags:
   - lens
 ---
 
-# Two-way OSC communication between Extempore and Pd
-
-
-
-
 Because [Extempore](https://github.com/digego/extempore) and
 [Pd](https://puredata.info) are both multimedia programming environments, they
 both speak [OSC](https://en.wikipedia.org/wiki/Open_Sound_Control) straight out

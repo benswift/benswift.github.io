@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# mbsync v1.3.2 breaking change: <code>SubFolders</code> config required
-
-
-
-
 As part of my ongoing quest to Emacs-all-the-things, I'm a long-time satisfied
 user of the [mu](https://www.djcbsoftware.nl/code/mu/) email client. I even
 [wrote the latest CI infrastructure setup](https://github.com/djcb/mu/pull/1725)

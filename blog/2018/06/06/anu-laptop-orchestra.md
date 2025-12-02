@@ -7,11 +7,6 @@ tags:
   - gigs
 ---
 
-# ANU Laptop Orchestra
-
-
-
-
 One of the coolest parts of my job is doing livecoding gigs---here's a recent
 set I did at Smiths as part of [Soundscapes
 #21](https://www.smithsalternative.com/events/soundscapes-21-44719). A big

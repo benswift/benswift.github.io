@@ -4,11 +4,6 @@ tags:
   - extempore
 ---
 
-# Sound file I/O in Extempore with libsndfile
-
-
-
-
 [libsndfile](https://github.com/erikd/libsndfile/) is "a C library for reading
 and writing files containing sampled audio data", and it's pretty great. Here's
 a quick crash-course on using [Extempore's libsndfile

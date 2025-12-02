@@ -5,11 +5,6 @@ tags:
   - extempore
 ---
 
-# Xinyu's Extempore tutorials
-
-
-
-
 These tutorials are part of Xinyu Hou's research project to create a set of
 [PRIMM](https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/)-style
 tutorials for learning to make sound/music in Extempore.

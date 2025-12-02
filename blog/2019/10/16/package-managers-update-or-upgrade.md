@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Package managers: <code>update</code> or <code>upgrade</code>?
-
-
-
-
 Quick quiz: for the following language/system
 [package managers](https://en.wikipedia.org/wiki/Package_manager), what's the
 name of the subcommand to update[^or-upgrade] your project/system to the latest

@@ -3,10 +3,6 @@ title: "DIYChatGPT Short Course for ANU Undergraduates"
 
 ---
 
-# DIYChatGPT Short Course for ANU Undergraduates
-
-
-
 If you're an ANU undergraduate student you can enrol in an upcoming (next week!)
 [upcoming 3hr course](https://mccuskerinstitute.anu.edu.au/study/knots/diy-chatgpt-llms-as-information-processing-machines/)
 I've created called _DIY ChatGPT: LLMs as Information Processing Machines_. It's

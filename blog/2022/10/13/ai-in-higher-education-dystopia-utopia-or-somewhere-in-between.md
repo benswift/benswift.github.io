@@ -5,9 +5,6 @@ tags:
   - teaching
 ---
 
-# AI in higher education: dystopia, utopia or something in between?
-
-
 <p class="post-subtitle">To understand how HE can incorporate AI successfully, we need to think about how humans will interact with the technology and change their behaviour, says Ben Swift</p>
 
 

@@ -4,10 +4,6 @@ tags:
   - teaching
 ---
 
-# Respectful Learning Memes
-
-
-
 ::: tip **Note**: this post was noticed by the good folks at the
 [ANU Centre for Learning and Teaching](https://services.anu.edu.au/business-units/centre-for-learning-teaching),
 and they asked if they could syndicate it on their Interact blog---so you can

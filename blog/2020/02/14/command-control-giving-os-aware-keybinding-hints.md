@@ -2,9 +2,6 @@
 title: "Command/Control: giving OS aware keybinding hints"
 ---
 
-# Command/Control: giving OS aware keybinding hints
-
-
 As someone who writes a lot of [web-based](https://extemporelang.github.io)
 [documentation for](https://cs.anu.edu.au/courses/comp1720/)
 [using](https://cs.anu.edu.au/courses/comp2300/)

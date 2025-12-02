@@ -4,11 +4,6 @@ tags:
   - teaching
 ---
 
-# Student project: animated 3D code rendering engine
-
-
-
-
 ::: tip
 I'm trying to get better at writing down potential student project ideas as they
 come to me. For the moment, I'm doing this on my blog using the

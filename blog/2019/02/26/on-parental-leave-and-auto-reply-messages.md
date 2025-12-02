@@ -3,11 +3,6 @@ title: "On parental leave and auto-reply messages"
 tags:
 ---
 
-# On parental leave and auto-reply messages
-
-
-
-
 I'm now (as of the date of this blog post) on parental leave ([thanks,
 Brian](https://www.anu.edu.au/news/all-news/anu-announces-major-expansion-of-parental-leave)
 😊). I'm about to set up an email auto-reply which will guard my work email

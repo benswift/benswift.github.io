@@ -3,10 +3,6 @@ title: "DeepSeek and Shallow Moats: Implications for Higher Education"
 
 ---
 
-# DeepSeek and Shallow Moats: Implications for Higher Education
-
-
-
 > This piece originally published in Times Higher Education
 
 <!-- DeepSeek's arrival may have spooked the markets, but what does it

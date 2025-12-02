@@ -4,11 +4,6 @@ tags:
   - dev
 ---
 
-# Cutting ruby CI pipeline times with pre-installed bundles
-
-
-
-
 I (and, increasingly many of my colleagues) are using
 [Jekyll](https://jekyllrb.com) to create open (CC-licenced), hackable, acessible
 course websites & teaching content for our classes. We use a self-hosted GitLab

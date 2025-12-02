@@ -4,11 +4,6 @@ tags:
   - cybernetics
 ---
 
-# NGA Un-tour: The Hidden Gallery
-
-
-
-
 For the last year or so my team has been collaborating with the good folks at
 [BOHO Interactive](https://www.bestfestivalever.com.au) and the National Gallery
 of Australia on something which launches tonight---the _NGA Un-Tour_.

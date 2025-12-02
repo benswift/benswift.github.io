@@ -5,11 +5,6 @@ tags:
   - dev
 ---
 
-# COMP1720 teaser
-
-
-
-
 If you're an ANU student and you want to learn how to make art with code, then
 sign up for [COMP1720/6720 in semester 2,
 2017](https://programsandcourses.anu.edu.au/course/COMP1720). Taught by me and a
