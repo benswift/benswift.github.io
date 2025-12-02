@@ -9,7 +9,7 @@
     "preview": "vitepress preview",
     "typecheck": "vue-tsc --noEmit",
     "post": "npx tsx scripts/new-post.ts",
-    "unlighthouse": "npx unlighthouse --site http://localhost:4173"
+    "lighthouse": "npx tsx scripts/lighthouse-audit.ts"
   },
   "author": "Ben Swift",
   "license": "ISC",
