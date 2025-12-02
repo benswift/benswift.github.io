@@ -1,5 +1,6 @@
 /* Custom styles for benswift.me (plain CSS, no Sass) */
 
+/* VitePress hardcodes body { font-size: 16px } without a CSS variable */
 html,
 body {
     font-size: 18px !important;
