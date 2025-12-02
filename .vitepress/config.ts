@@ -146,12 +146,6 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-
-    // Footer
-    footer: {
-      message: "Made with VitePress",
-      copyright: "Copyright Ben Swift",
-    },
   },
 
   // Source directory - we'll keep content at root level
