@@ -9,8 +9,8 @@ I've recently been given access to a beefy AI server (6x RTX3090s!) which is
 managed via [SingularityCE](https://sylabs.io/singularity/), whose homepage
 boldly asks and then forgets to answer the question: "What is SingularityCE?"
 
-If you [dig further into the
-documentation](https://sylabs.io/guides/latest/user-guide/introduction.html)
+If you
+[dig further into the documentation](https://sylabs.io/guides/latest/user-guide/introduction.html)
 it's a little less coy:
 
 > SingularityCE is a container platform. It allows you to create and run
@@ -23,10 +23,10 @@ it's a little less coy:
 > operating system.
 
 I want to fire up my new GPUs and run one of Katherine Crowson's awesome pytorch
-scripts to do some [neural style
-transfer](https://github.com/crowsonkb/style-transfer-pytorch). I'm very
-familiar with Docker, but new to this Singularity thing, so here are some of the
-hurdles I encountered (and cleared) along the way.
+scripts to do some
+[neural style transfer](https://github.com/crowsonkb/style-transfer-pytorch).
+I'm very familiar with Docker, but new to this Singularity thing, so here are
+some of the hurdles I encountered (and cleared) along the way.
 
 ## Finding a base image
 
@@ -39,8 +39,8 @@ the exact version that it was designed for---in this case v1.7.1 (or at least
 v1.7.x).
 
 So, the challenge is to find a Singularity image with that version of torch
-installed. The singularity docs [suggest using the search
-command](https://sylabs.io/guides/latest/user-guide/quick_start.html#download-pre-built-images)
+installed. The singularity docs
+[suggest using the search command](https://sylabs.io/guides/latest/user-guide/quick_start.html#download-pre-built-images)
 like so:
 
 ```shell
@@ -122,15 +122,13 @@ Hmm. It's hard to know which is official, which ones are going to work (a few of
 them mention torch versions, but none of them are v1.7.x) and which ones might
 even be malicious? That's a worry.
 
-Looking a bit deeper into the Singularity docs I find that one can [also use
-Docker/OCI
-images](https://sylabs.io/guides/latest/user-guide/singularity_and_docker.html),
+Looking a bit deeper into the Singularity docs I find that one can
+[also use Docker/OCI images](https://sylabs.io/guides/latest/user-guide/singularity_and_docker.html),
 and Singularity can pull them straight from Docker hub. That's good news,
-because NVIDIA do maintain [official Docker
-images](https://hub.docker.com/r/pytorch/pytorch/tags) for using torch with
-NVIDIA graphics cards (like the 3090), so I find the [specific container image
-for torch
-v1.7.1](https://hub.docker.com/layers/pytorch/pytorch/1.7.1-cuda11.0-cudnn8-runtime/images/sha256-db6086be92f439b918c96dc002f4cf40239e247f0b1b6c32e3fb36de70032bf9?context=explore)
+because NVIDIA do maintain
+[official Docker images](https://hub.docker.com/r/pytorch/pytorch/tags) for
+using torch with NVIDIA graphics cards (like the 3090), so I find the
+[specific container image for torch v1.7.1](https://hub.docker.com/layers/pytorch/pytorch/1.7.1-cuda11.0-cudnn8-runtime/images/sha256-db6086be92f439b918c96dc002f4cf40239e247f0b1b6c32e3fb36de70032bf9?context=explore)
 and pull it down with:
 
 ```shell
@@ -144,7 +142,7 @@ instructions in that
 [README.md](https://github.com/crowsonkb/style-transfer-pytorch/blob/master/README.md)
 
 ```shell
-$ singularity shell pytorch_1.7.0-cuda11.0-cudnn8-runtime.sif 
+$ singularity shell pytorch_1.7.0-cuda11.0-cudnn8-runtime.sif
 Singularity> cd style-transfer-pytorch/
 Singularity> pip install --user .
 ```
@@ -153,7 +151,8 @@ I got a bunch of warnings about certain things not being on the `$PATH`, but it
 seems to finish installing everthing ok.
 
 Continuing on with the instructions in the README, let's try running this thing
-(I'd downloaded a couple of image files to use as my _content_ and _style_ images).
+(I'd downloaded a couple of image files to use as my _content_ and _style_
+images).
 
 ```shell
 Singularity> style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
@@ -174,7 +173,8 @@ and try and re-run the script.
 Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
 ```
 
-And away it went! Several minutes later, it was done. Here are the original two images:
+And away it went! Several minutes later, it was done. Here are the original two
+images:
 
 ![Original ben.jpg image](/assets/images/headshots/headshot.jpg)
 ![Original tiger.jpg](/assets/images/posts/tiger.jpg)
@@ -204,16 +204,16 @@ Loading model...
 That's really not ok---the whole point of running on this machine is to take
 advantage of the GPUs. There could be lots of reasons for this, but I have a
 hunch it has something to do with Singularity not allowing the script access to
-the hardware. Sure enough, looking through the [Singularity GPU support
-documentation](https://sylabs.io/guides/3.7/user-guide/gpu.html) it turns out
-there's a magic `--nv` flag which must be passed when starting up the
-Singularity session, so let's do that.
+the hardware. Sure enough, looking through the
+[Singularity GPU support documentation](https://sylabs.io/guides/3.7/user-guide/gpu.html)
+it turns out there's a magic `--nv` flag which must be passed when starting up
+the Singularity session, so let's do that.
 
 ```shell
-$ singularity shell --nv pytorch_1.7.1-cuda11.0-cudnn8-runtime.sif 
+$ singularity shell --nv pytorch_1.7.1-cuda11.0-cudnn8-runtime.sif
 Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
 Using devices: cuda:0
-~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:143: UserWarning: 
+~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:143: UserWarning:
 NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
 The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
 If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
@@ -244,7 +244,8 @@ output is now the problem:
 > sm_70.
 >
 > If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check
-> the instructions at [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+> the instructions at
+> [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
 
 Like I said earlier, torch/tensorflow/CUDA and deep learning frameworks in
 general are really finnicky about versions. It's tricky to get things up and
@@ -256,23 +257,22 @@ projects you want to run on the same system[^singularity-isolation].
     I had hoped that Singularity might help with the "isolation" part of this,
     but I'm not sure I understand it well enough yet to know how to do it.
 
-After a web search, it seems [like others
-](https://github.com/pytorch/vision/issues/4886) [have
-had](https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-is-not-compatible-with-the-current-pytorch-installation/123499)
-[similar
-issues](https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949),
+After a web search, it seems
+[like others ](https://github.com/pytorch/vision/issues/4886)
+[have had](https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-is-not-compatible-with-the-current-pytorch-installation/123499)
+[similar issues](https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949),
 although I tried all the approaches listed there and none of them worked.
 
 ## Using a pytorch image from NVIDIA's container registry
 
 Changing tack a bit (after a suggestion from a colleague) I decided to try using
-a (Docker) [container image from the NVIDIA
-registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch), rather
-than the official pytorch channel on Docker Hub.
+a (Docker)
+[container image from the NVIDIA registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch),
+rather than the official pytorch channel on Docker Hub.
 
 ```shell
 $ singularity pull docker://nvcr.io/nvidia/pytorch:22.01-py3
-$ singularity shell --nv pytorch_22.01-py3.sif 
+$ singularity shell --nv pytorch_22.01-py3.sif
 Singularity> pip install --user .
 ```
 
@@ -303,15 +303,15 @@ few open questions.
   [conda](https://docs.conda.io/en/latest/) or
   [poetry](https://python-poetry.org/docs/) or any of the things I'd usually use
   when python-ing on my own machine, partially because of my above questions
-  about how the whole singularity shell thing actually works. I just did `pip
-  install --user .` and hoped it didn't break anything else. Is that ok? Or
+  about how the whole singularity shell thing actually works. I just did
+  `pip install --user .` and hoped it didn't break anything else. Is that ok? Or
   should I still use venvs in the singularity image?
 
 I will return and try and better understand these things later, but right now
 this isn't on the critical path for me so I'll have to park it. This blog post
 is really just me opening a ticket for myself to return to later. I share it so
 that you, dear reader, can also benefit from my mistakes (and if you know of
-better ways to do any of this then do [drop me a
-line](mailto:ben.swift@anu.edu.au).
+better ways to do any of this then do
+[drop me a line](mailto:ben.swift@anu.edu.au).
 
 ## Footnotes

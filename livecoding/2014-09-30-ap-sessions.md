@@ -10,12 +10,12 @@ type: "study"
 
 <p class="post-date">30 Sept 2014</p>
 
-**Venue:** Australian National University | **Type:** study | **Curators:** Ari Purcell | **Artists:** Ben Swift
-
+**Venue:** Australian National University | **Type:** study | **Curators:** Ari
+Purcell | **Artists:** Ben Swift
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I
-performed in 2014 as part of my student [Ari
-Purcell's](https://arrianpurcell.com) research project: _Visualising a Live
+performed in 2014 as part of my student
+[Ari Purcell's](https://arrianpurcell.com) research project: _Visualising a Live
 Coding Arts Process_. Ari developed a bunch of visualisation techniques (in
 Extempore) to use in a livecoding performance. They weren't just cool VJ
 visuals, they were designed to be overlaid on top of the code.
@@ -34,16 +34,14 @@ can never remember exactly what I did from set to set they weren't exactly the
 same, but I tried to make them as similar as possible (for _science_).
 
 I've recently (Feb '19) tracked down the videos from these gigs and uploaded
-them to vimeo, both for your enjoyment and also so that when you [read the
-paper](#purcellVisualisingLiveCoding2014)
-you have a better idea what's going on.
-
-
+them to vimeo, both for your enjoyment and also so that when you
+[read the paper](#purcellVisualisingLiveCoding2014) you have a better idea
+what's going on.
 
 We wrote the results of these "experiments" up OzCHI, so you can look up the
-paper [in the publications list](#purcellVisualisingLiveCoding2014) if you want to see all the details. Even
-better, put the kettle on and read [Arrian's honours
-thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf).
+paper [in the publications list](#purcellVisualisingLiveCoding2014) if you want
+to see all the details. Even better, put the kettle on and read
+[Arrian's honours thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf).
 
 [^interpretation]:
     Obviously these are pretty nebulous concepts, it's not like there's a
@@ -63,12 +61,11 @@ thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf
 ### "Visuals" vs "no visuals" study
 
 Following the "aesthetic vs didactic" gigs, and based on the audience feedback,
-Ari developed one more set of visualisation techiniques, and we did one more
-gig (with audience feedback like before). This time, there were two sets---one
-with the visuals, one without (just the plain code like all my other gigs). Here
-are the videos from those sessions. This stuff is all in Chapters 6 and 7 of
-[Arrian's honours
-thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf)
+Ari developed one more set of visualisation techiniques, and we did one more gig
+(with audience feedback like before). This time, there were two sets---one with
+the visuals, one without (just the plain code like all my other gigs). Here are
+the videos from those sessions. This stuff is all in Chapters 6 and 7 of
+[Arrian's honours thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf)
 
 The visuals in these recordings are pretty hard to see, and the audio quality's
 not great either. However, in the interests of open science, here's video from
@@ -87,5 +84,3 @@ take-home is that the visuals helped some, and that visualisations targeting
 enjoyment (i.e. aesthetic ones) have a greater benefit than ones which try and
 educate people. Basically, work on entertaining people---then their
 understanding will flow from that.
-
-

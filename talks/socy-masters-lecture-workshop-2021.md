@@ -7,10 +7,7 @@ subtitle: "control & communication in the livecoder and the machine"
 event: "SoCy Build guest lecture"
 ---
 
-
 <SlideTitle />
-
-
 
 <SlideAckCountry />
 
@@ -22,22 +19,20 @@ event: "SoCy Build guest lecture"
 
 ## outline
 
-| **11:10** | intro: the central problem with laptop performance |
-| **11:15** | what does cybernetics say?                         |
-| **11:20** | livecoding AMA                                     |
-| **11:35** | stage designer wanted---pitch me                   |
+| **11:10** | intro: the central problem with laptop performance | | **11:15** |
+what does cybernetics say? | | **11:20** | livecoding AMA | | **11:35** | stage
+designer wanted---pitch me |
 
 <SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" heading="intro" />
 
-(I assume you've done the [pre-reading/watching](/blog/2021/09/13/feedback-in-livecoding-cui-bono))
+(I assume you've done the
+[pre-reading/watching](/blog/2021/09/13/feedback-in-livecoding-cui-bono))
 
 <hr class="impact center" data-background-color="#262626" />
 
 the **central problem** of laptop performance
 
 <SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/jud-mackrill-qnt9iigV444-unsplash.jpg" />
-
-
 
 what do you think oldmate is doing?
 
@@ -53,7 +48,7 @@ and for whose benefit (cui bono)?
 
 <SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" />
 
-in watching the video, what did you **pay attention** to, and why? 
+in watching the video, what did you **pay attention** to, and why?
 
 what information was missing; what _else_ did you want to know
 before/during/after?
@@ -99,4 +94,3 @@ practice
 if you'd like to help/collaborate/jam, let me know 😊
 
 <SlideQuestions />
-

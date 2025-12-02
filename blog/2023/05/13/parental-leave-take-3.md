@@ -1,6 +1,5 @@
 ---
 title: "Parental leave take 3"
-
 ---
 
 Apologies for the radio silence over the last couple of months. I have the happy

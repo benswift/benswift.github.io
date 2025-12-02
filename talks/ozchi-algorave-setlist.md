@@ -5,13 +5,9 @@ author: "Ben Swift"
 subtitle: "Dec 1, Ainslie Arts Centre"
 ---
 
-
 <section data-background-color="black">
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/770997042?h=3f79e9ce8f&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><!-- Script removed during migration -->
 </section>
-
-
-
 
 <section class="upnext-slide" data-background-color="black">
 
@@ -23,9 +19,6 @@ subtitle: "Dec 1, Ainslie Arts Centre"
 </div>
 
 </section>
-
-
-
 
 <hr class="impact center" data-background-color="#262626" />
 

@@ -6,8 +6,8 @@ tags:
 
 One of my academic responsibilities is teaching our ANU Computer Science
 programs into our various partner institutions overseas. One of these partner
-institutions is [Shandong University
-WeiHai](https://en.wh.sdu.edu.cn/enDefault.html) (SDUW).
+institutions is
+[Shandong University WeiHai](https://en.wh.sdu.edu.cn/enDefault.html) (SDUW).
 
 On my trip to SDUW in May 2016, I was walking across the campus one bright
 spring morning when I was stopped by a professor from the SDUW School of Art.

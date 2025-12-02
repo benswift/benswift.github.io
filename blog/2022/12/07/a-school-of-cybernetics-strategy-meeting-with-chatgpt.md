@@ -10,10 +10,10 @@ Back at my desk after a couple of days off I finally got a chance to fire up the
 talking about.
 
 Here's---and this is the honest truth---the first conversation I had with it.
-The initial paragraph was from the [ANU School of Cybernetics
-website](https://cybernetics.anu.edu.au/about/), and from there we just
-freewheeled. My inputs are in regular type, the ChatGPT responses are in the
-coloured boxes.
+The initial paragraph was from the
+[ANU School of Cybernetics website](https://cybernetics.anu.edu.au/about/), and
+from there we just freewheeled. My inputs are in regular type, the ChatGPT
+responses are in the coloured boxes.
 
 ---
 
@@ -54,7 +54,8 @@ Give 5 concrete examples of how ideas from cybernetics can help:
 
 </div>
 
-Can you try again, but this time using the 19th Century Australian Overland Telegraph as a framing device?
+Can you try again, but this time using the 19th Century Australian Overland
+Telegraph as a framing device?
 
 <div class="hl-para" markdown="1">
 
@@ -132,8 +133,8 @@ Upon close reading, I don't think the above responses capture the full breadth
 of what we're trying to do here in the School of Cybernetics. But I'd be lying
 if I wasn't impressed.
 
-As I [tweeted earlier this
-morning](https://twitter.com/benswift/status/1600265214338867200):
+As I
+[tweeted earlier this morning](https://twitter.com/benswift/status/1600265214338867200):
 
 > all this ChatGPT stuff means that we as a society are gonna have to get a
 > **lot** better at drinking from the bullshit firehose, and fast

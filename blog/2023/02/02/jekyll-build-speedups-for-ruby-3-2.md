@@ -24,13 +24,14 @@ Averaged over 3 runs, the build time was 17.7 (±0.8) seconds.
 
 ## ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 
-After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2 (±0.2) seconds.
+After upgrading to the latest Ruby v3.2.0, the average over 3 runs was 17.2
+(±0.2) seconds.
 
 ## ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [arm64-darwin22]
 
-I [followed these
-instructions](https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82) to
-build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:
+I
+[followed these instructions](https://dev.to/dpaluy/install-ruby-320-yjit-with-asdf-b82)
+to build a YJIT-enabled Ruby v3.2. Then, after re-installing all the deps:
 
     RUBY_YJIT_ENABLE=true bundle exec jekyll build
 

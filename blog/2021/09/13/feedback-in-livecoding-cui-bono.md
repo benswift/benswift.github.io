@@ -5,10 +5,9 @@ tags:
   - livecoding
 ---
 
-::: tip
-Here's the [link to the slides](/blog/2021/09/13/feedback-in-livecoding-cui-bono) for the actual
-presentation on Oct 13.
-:::
+::: tip Here's the
+[link to the slides](/blog/2021/09/13/feedback-in-livecoding-cui-bono) for the
+actual presentation on Oct 13. :::
 
 Hi, BUILD students. I know y'all are busy, so this won't take _too_ long and
 will hopefully be fun. Before my guest lecture, I'd like to introduce you (if
@@ -50,21 +49,23 @@ livecoding video:
 - how does a taking a cybernetic approach to this question change answer to
   these questions? (because feedback is something that cybernetics has a fair
   bit to say about)
-  
-[^cui]:
-    Hence the pretentious latin in the title of this blog post.
+
+[^cui]: Hence the pretentious latin in the title of this blog post.
 
 If you want to go a bit deeper on the semiotics of all this livecoding stuff, my
 collaborators and I have written a couple of papers[^gauche] on the
 semantics/semiotics of livecoding:
 
-- Swift, B., Sorensen, A., Gardner, H., & Hosking, J. (2013). [Visual Code Annotations for Cyberphysical Programming](https://doi.org/10.1109/LIVE.2013.6617345). _LIVE '13: 1st International Workshop on Live Programming at ICSE_, 27–30.
+- Swift, B., Sorensen, A., Gardner, H., & Hosking, J. (2013).
+  [Visual Code Annotations for Cyberphysical Programming](https://doi.org/10.1109/LIVE.2013.6617345).
+  _LIVE '13: 1st International Workshop on Live Programming at ICSE_, 27–30.
 
-- Sorensen, A., Swift, B., & Riddell, A. (2014). [The Many Meanings of Live Coding](https://doi.org/10.1162/COMJ_a_00230). _Computer Music Journal_, 38(1), 65–76.
+- Sorensen, A., Swift, B., & Riddell, A. (2014).
+  [The Many Meanings of Live Coding](https://doi.org/10.1162/COMJ_a_00230).
+  _Computer Music Journal_, 38(1), 65–76.
 
 If there are other thinkers/writers/doers that you can think of who also have
 something to say about this, then bring those ideas along and we can discuss
 them as well.
 
-[^gauche]:
-    I hope it's not too gauche to provide _two_ self-citations.
+[^gauche]: I hope it's not too gauche to provide _two_ self-citations.

@@ -7,10 +7,7 @@ subtitle: "non-linear relationships in code art & beyond"
 event: "3ai New Applied Science: Lab, S1 2012"
 ---
 
-
 <SlideTitle />
-
-
 
 <SlideAckCountry />
 
@@ -23,8 +20,6 @@ event: "3ai New Applied Science: Lab, S1 2012"
 [part trois](#part-3): beyond enjoyment?
 
 <hr class="impact center" data-background-color="#262626" />
-
-
 
 <<!-- Liquid expression removed -->>
 
@@ -44,8 +39,6 @@ information/culture/humanity in today's (and tomorrow's) world.
 <SlideBackgroundImage image="images/talks/understanding-and-enjoyment/jehyun-sung-6U5AEmQIajg-unsplash.jpg" />
 
 <hr class="center">
-
-
 
 ```python
 # a 3Ai twitter bot
@@ -80,13 +73,13 @@ it's complicated
 > How do we measure performance and success?
 >
 > Technical systems have typically been measured on their efficiency. However,
-> when systems start to learn and change their behaviour over time, the objective
-> of efficiency may begin to clash with ideals that have previously been
-> implicitly or tacitly inserted into the process by the humans in the loop. How
-> do we start to conceptualise building for sustainability, for beauty, for
-> values?
+> when systems start to learn and change their behaviour over time, the
+> objective of efficiency may begin to clash with ideals that have previously
+> been implicitly or tacitly inserted into the process by the humans in the
+> loop. How do we start to conceptualise building for sustainability, for
+> beauty, for values?
 
-## interfaces 
+## interfaces
 
 > How will technologies, systems and humans work together?
 >
@@ -145,4 +138,3 @@ if you'd like to help (or just to hang out with the c/c/c group more generally)
 then let me know 😊
 
 <SlideQuestions />
-

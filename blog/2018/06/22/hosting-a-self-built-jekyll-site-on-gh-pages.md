@@ -5,10 +5,10 @@ tags:
 ---
 
 This blog is built from [markdown](https://commonmark.org/help/) files using
-[Jekyll](https://jekyllrb.com/) hosted on [GitHub
-pages](https://pages.github.com/), which saves a lot of hassle involved with DIY
-hosting[^hassle]. There are a bunch of [useful
-tutorials](https://blog.teamtreehouse.com/using-github-pages-to-host-your-website)
+[Jekyll](https://jekyllrb.com/) hosted on
+[GitHub pages](https://pages.github.com/), which saves a lot of hassle involved
+with DIY hosting[^hassle]. There are a bunch of
+[useful tutorials](https://blog.teamtreehouse.com/using-github-pages-to-host-your-website)
 on how to set all this up.
 
 However, I like to have control over which plugins are used, etc. which GitHub
@@ -34,10 +34,10 @@ The basic process is:
    where it'll be served by GitHub pages
 
 After that, you can work on, commit & push your blog wherever you like (I
-actually keep the content in the [same GH
-repo](https://github.com/benswift/benswift.github.io), but in a `source` branch)
-but you can push the built site to the master branch so GH pages will serve it
-up for you.
+actually keep the content in the
+[same GH repo](https://github.com/benswift/benswift.github.io), but in a
+`source` branch) but you can push the built site to the master branch so GH
+pages will serve it up for you.
 
 [^hassle]:
     I know that it's not actually _that_ much hassle, especially if you've

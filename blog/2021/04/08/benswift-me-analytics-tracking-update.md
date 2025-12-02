@@ -10,9 +10,10 @@ of the site ago). I use an ad-blocker myself, and the whole tracking & analytics
 thing just strikes me as a bit gross.
 
 However, it is helpful to know where folks are coming from, and so I recently
-came across [https://counter.dev](https://counter.dev) as a lightweight, relatively un-invasive
-tracking platform. So I've added it to the site. If you're browsing with an
-ad-blocker then you still have my blessing to enjoy the stuff I put up here ☺
+came across [https://counter.dev](https://counter.dev) as a lightweight,
+relatively un-invasive tracking platform. So I've added it to the site. If
+you're browsing with an ad-blocker then you still have my blessing to enjoy the
+stuff I put up here ☺
 
 Just wanted to give y'all the heads up. Let me know what you think in the
 comments[^comments].

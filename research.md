@@ -28,24 +28,25 @@ const years = computed(() => Object.keys(pubsByYear.value).sort((a, b) => b.loca
 
 ## Research interests
 
-I'm a livecoder, digital artist, and researcher in the [ANU School of Cybernetics](https://cybernetics.anu.edu.au/).
-My research interests include:
+I'm a livecoder, digital artist, and researcher in the
+[ANU School of Cybernetics](https://cybernetics.anu.edu.au/). My research
+interests include:
 
-- **Livecoding**: Writing and modifying code in real-time as a form of artistic performance
+- **Livecoding**: Writing and modifying code in real-time as a form of artistic
+  performance
 - **Creative computing**: Using computation as a medium for artistic expression
-- **Human-computer interaction**: Designing systems that are engaging and meaningful
+- **Human-computer interaction**: Designing systems that are engaging and
+  meaningful
 - **AI & creativity**: Exploring the creative potential of AI systems
 
-::: tip Come study with me
-If you're interested in doing Honours/Masters/PhD research with me,
-[send me an email](mailto:ben.swift@anu.edu.au). I always have a few project
-ideas kicking around, but I'm also open to hearing about the project/big idea
-that excites _you_. Send me:
+::: tip Come study with me If you're interested in doing Honours/Masters/PhD
+research with me, [send me an email](mailto:ben.swift@anu.edu.au). I always have
+a few project ideas kicking around, but I'm also open to hearing about the
+project/big idea that excites _you_. Send me:
 
 1. A **one-paragraph** description of the project you're interested in doing
 2. A **link to something you've made**: a livecoding video, a project on GitHub,
-   an academic paper---even a blog post
-:::
+   an academic paper---even a blog post :::
 
 ## Peer-reviewed publications
 

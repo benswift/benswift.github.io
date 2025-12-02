@@ -6,9 +6,10 @@ tags:
   - reimagine
 ---
 
-The [ANU College of Engineering, Computing and
-Cybernetics](https://cecs.anu.edu.au) (CECS) is being _Reimagined_. Don't take
-my word for it; listen to our fearless leader [Elanor](https://cecs.anu.edu.au):
+The
+[ANU College of Engineering, Computing and Cybernetics](https://cecs.anu.edu.au)
+(CECS) is being _Reimagined_. Don't take my word for it; listen to our fearless
+leader [Elanor](https://cecs.anu.edu.au):
 
 <YouTube id="FjlgEZzaL6k" />
 
@@ -24,14 +25,12 @@ was happening _anywhere_, but it's particularly exciting that it's happening
 where I am and that I might get a voice in shaping exactly what a "reimagined
 CECS" looks like.
 
-::: tip
-Elanor, if you're reading, I want to be a Reimagine Fellow ([update 30 Aug 2019:
-🙌🥳🙌](/blog/2019/08/30/Im-a-reimagine-fellow)).
-And since the
+::: tip Elanor, if you're reading, I want to be a Reimagine Fellow
+([update 30 Aug 2019: 🙌🥳🙌](/blog/2019/08/30/Im-a-reimagine-fellow)). And
+since the
 [EoI](https://cecs.anu.edu.au/staff/project-reimagine-fellows-expression-interest)
 asked for "1000 words **in any format you like**", here's mine in the form of an
-FAQ[^faq].
-:::
+FAQ[^faq]. :::
 
 [^faq]: At least it's not a haiku. Or a limerick.
 
@@ -62,10 +61,10 @@ artists have a key role to play in this (just ask Chekhov).
 
 I've made a career (so far) of deploying my technical/CS skills to artistic
 ends: in my livecoding (both building
-[tools](https://github.com/digego/extempore) and [doing live
-gigs](/livecoding/)), in starting the [ANU Laptop
-Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/),
-in teaching our first-year art+code course
+[tools](https://github.com/digego/extempore) and
+[doing live gigs](/livecoding/)), in starting the
+[ANU Laptop Ensemble](https://cs.anu.edu.au/code-creativity-culture/lens/), in
+teaching our first-year art+code course
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/), etc.
 
 Along the way I've built strong networks in these areas across the ANU campus
@@ -86,10 +85,10 @@ thinks.
 
 ### What might this look like, concretely?
 
-The Reimagine Project is [big, hairy, and
-audacious](https://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal), so it's
-difficult to sketch out a detailed description or org chart. However, here are a
-few ideas about what it might look like.
+The Reimagine Project is
+[big, hairy, and audacious](https://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal),
+so it's difficult to sketch out a detailed description or org chart. However,
+here are a few ideas about what it might look like.
 
 #### In the short term...
 
@@ -97,13 +96,13 @@ few ideas about what it might look like.
   get involved and help us figure out what a Reimagined CECS looks like
 
 - a new code/creativity/culture major (at both undergraduate and masters level)
-  where students take courses from within CECS, the [ANU School of Art &
-  Design](https://soad.cass.anu.edu.au), and the [ANU School of
-  Music](https://music.anu.edu.au)
+  where students take courses from within CECS, the
+  [ANU School of Art & Design](https://soad.cass.anu.edu.au), and the
+  [ANU School of Music](https://music.anu.edu.au)
 
 - new courses within CECS on e.g. algorithmic music composition, creative
-  making, AI/Deep Learning Art, subversive computing/[designing for
-  evil](https://www.washington.edu/news/2018/05/21/designed-for-evil/)[^genevieve]
+  making, AI/Deep Learning Art, subversive
+  computing/[designing for evil](https://www.washington.edu/news/2018/05/21/designed-for-evil/)[^genevieve]
 
 - more PhD students doing practice-led research on interdisciplinary
   art/CS/engineering projects
@@ -112,13 +111,15 @@ few ideas about what it might look like.
   world by _making and exhibiting beautiful/interesting/challenging things_, not
   just through journal papers
 
-[^genevieve]: I'd love to get [Genevieve](https://twitter.com/feraldata) to write & teach that one.
+[^genevieve]:
+    I'd love to get [Genevieve](https://twitter.com/feraldata) to write & teach
+    that one.
 
 #### In the medium/long term...
 
 - a centre of excellence for digital arts/music/multimedia research, teaching
-  and creative practice (co-hosted by CECS and the [College of Arts & Social
-  Sciences](https://cass.anu.edu.au))
+  and creative practice (co-hosted by CECS and the
+  [College of Arts & Social Sciences](https://cass.anu.edu.au))
 
 - a thoroughly non-traditional project-based "creative tech" masters program,
   with no classes, no heirarchies, just a bunch of brilliant students set loose
@@ -186,11 +187,10 @@ engineering/CS/design work.
 
 #### ...in outreach?
 
-Because of my [livecoding](/livecoding/) I get
-asked to do outreach stuff all the time (you're welcome, CECS marketing team
-😉). I know why I get asked: DJing with code is so _different_, it's a great
-hook for engaging folks who might not have thought that combining code & musical
-creativity in that way was possible.
+Because of my [livecoding](/livecoding/) I get asked to do outreach stuff all
+the time (you're welcome, CECS marketing team 😉). I know why I get asked: DJing
+with code is so _different_, it's a great hook for engaging folks who might not
+have thought that combining code & musical creativity in that way was possible.
 
 #### ...in culture?
 
@@ -232,19 +232,21 @@ Here's a few places, including what each place says about their goals (from the
 marketing copy on their own website). Many (but not all) of these labs/groups
 are in CS/Engineering Schools, or at least in design schools.
 
-> The Stanford [Center for Computer Research in Music and
-> Acoustics](https://ccrma.stanford.edu) (CCRMA) is a multi-disciplinary
-> facility where composers and researchers work together using computer-based
-> technology both as an artistic medium and as a research tool.
+> The Stanford
+> [Center for Computer Research in Music and Acoustics](https://ccrma.stanford.edu)
+> (CCRMA) is a multi-disciplinary facility where composers and researchers work
+> together using computer-based technology both as an artistic medium and as a
+> research tool.
 
 > The [MIT Media Lab](https://www.media.mit.edu) is an interdisciplinary
 > research lab that encourages the unconventional mixing and matching of
 > seemingly disparate research areas.
 
-> The [Frank-Ratchye STUDIO for Creative
-> Inquiry](https://studioforcreativeinquiry.org) at Carnegie Mellon University is
-> a laboratory for atypical, anti-disciplinary, and inter-institutional research
-> at the intersections of arts, science, technology and culture.
+> The
+> [Frank-Ratchye STUDIO for Creative Inquiry](https://studioforcreativeinquiry.org)
+> at Carnegie Mellon University is a laboratory for atypical, anti-disciplinary,
+> and inter-institutional research at the intersections of arts, science,
+> technology and culture.
 
 > The [Center for Music Technology](https://gtcmt.gatech.edu) at Georgia Tech
 > aims to transform the ways we create and experience music, and to create the
@@ -260,14 +262,15 @@ are in CS/Engineering Schools, or at least in design schools.
 > Mary University of London is a world-leading multidisciplinary research group
 > in the field of Music & Audio Technology.
 
-> The [Embodied AudioVisual Interaction
-> (EAVI)](https://eavi.goldsmithsdigital.com) group at Goldsmiths is a research
-> group focused on embodied interaction with sound and image.
+> The
+> [Embodied AudioVisual Interaction (EAVI)](https://eavi.goldsmithsdigital.com)
+> group at Goldsmiths is a research group focused on embodied interaction with
+> sound and image.
 
-> The [School for Poetic Computation](https://sfpc.io) is an artist run school in
-> New York that was founded in 2013. A small group of students and faculty work
-> closely to explore the intersections of code, design, hardware and theory —
-> focusing especially on artistic intervention. It’s a hybrid of a school,
+> The [School for Poetic Computation](https://sfpc.io) is an artist run school
+> in New York that was founded in 2013. A small group of students and faculty
+> work closely to explore the intersections of code, design, hardware and theory
+> — focusing especially on artistic intervention. It’s a hybrid of a school,
 > residency and research group.
 
 > The [Arts and Creativity Lab](https://anclab.org/joinus/) at the National

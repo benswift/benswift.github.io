@@ -4,36 +4,35 @@ tags:
   - dev
 ---
 
-My [brother's
-cafe](https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459)
+My
+[brother's cafe](https://the-riotact.com/hot-in-the-suburbs-little-luxton-serves-up-coffee-for-the-community/618459)
 donates a dollar to the local community centre for every coffee sold, and over
-the summer I built
-him a live "donation counter" which displays a small "thankyou" animation when
-anyone buys a coffee. It's a web app which they run on an iPad sitting on the
-coffee machine.
+the summer I built him a live "donation counter" which displays a small
+"thankyou" animation when anyone buys a coffee. It's a web app which they run on
+an iPad sitting on the coffee machine.
 
 Since the cafe uses Square for all payments, I was able to set up a
 [webhook](https://developer.squareup.com/docs/webhooks/overview) so the app
 would receive the "new sale" notification ASAP---this should be both
 lower-latency and more efficient than polling.
 
-The app is basically a single [Phoenix
-LiveView](https://www.phoenixframework.org). Sadly the Square guides don't have
-examples for Elixir, although it's pretty easy to modify the e.g. [Ruby
-example](https://developer.squareup.com/docs/webhooks/step3validate) code to get
-the job done. If you're looking to do something similar I cobbled together this
-info from docs (and a few blogs) and it might help you out to have it all in one
-place.
+The app is basically a single
+[Phoenix LiveView](https://www.phoenixframework.org). Sadly the Square guides
+don't have examples for Elixir, although it's pretty easy to modify the e.g.
+[Ruby example](https://developer.squareup.com/docs/webhooks/step3validate) code
+to get the job done. If you're looking to do something similar I cobbled
+together this info from docs (and a few blogs) and it might help you out to have
+it all in one place.
 
 ## Step 1: set up webhook controller (including validation)
 
 It's important to validate that any incoming webhook is actually from Square, so
-Square send a special `x-square-hmacsha256-signature` header for [validation
-purposes](https://developer.squareup.com/docs/webhooks/step3validate), although
-performing this validation step requires having access to the raw request body.
-Thankfully, the ["Custom Body Reader" section in the `Plug.Parsers`
-docs](https://hexdocs.pm/plug/Plug.Parsers.html#module-custom-body-reader) shows
-how to do exactly that---just follow the instructions there.
+Square send a special `x-square-hmacsha256-signature` header for
+[validation purposes](https://developer.squareup.com/docs/webhooks/step3validate),
+although performing this validation step requires having access to the raw
+request body. Thankfully, the
+["Custom Body Reader" section in the `Plug.Parsers` docs](https://hexdocs.pm/plug/Plug.Parsers.html#module-custom-body-reader)
+shows how to do exactly that---just follow the instructions there.
 
 ## Step 2: create webhook controller (including validation)
 
@@ -97,16 +96,15 @@ end
 
 ## Step 4: subscribe to the webhook
 
-After that's all done (and you've deployed your app) you're ready to [set up a
-webhook subscription](https://developer.squareup.com/docs/webhooks/overview).
+After that's all done (and you've deployed your app) you're ready to
+[set up a webhook subscription](https://developer.squareup.com/docs/webhooks/overview).
 Follow the Square docs and Square will start hitting your (deployed) app's
 `https://example.com/square/webhook` endpoint, and your app can do its thing.
 
-::: tip
-Note that these incoming webhook requests _won't_ hit your local development
-server running on `localhost`, so testing webhooks is a bit trickier. Since my
-app runs on [fly](https://fly.io) it involved a little bit of `IO.inspect`ing in
-production and then looking at the logs with `flyctl logs`.
+::: tip Note that these incoming webhook requests _won't_ hit your local
+development server running on `localhost`, so testing webhooks is a bit
+trickier. Since my app runs on [fly](https://fly.io) it involved a little bit of
+`IO.inspect`ing in production and then looking at the logs with `flyctl logs`.
 :::
 
 Have fun! And if you live in Canberra, especially in Tuggeranong/Lanyon, maybe

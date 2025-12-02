@@ -4,8 +4,8 @@ tags:
   - dev
 ---
 
-My love for the [Grammar of
-Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448)
+My love for the
+[Grammar of Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448)
 runs deep, and in particular for Hadley Wickham's famous `ggplot2` which showed
 me the light back when I was a young PhD student. Seriously, once you have your
 head around how it works it gives you datavis superpowers. These days I often
@@ -19,11 +19,12 @@ display them in a slide deck. Part (a) was actually the easy part---the tricky
 part was (b) getting Altair to render charts with text & other marks that
 weren't so small that the slide was unreadable.
 
-Here's an example: a [simple line
-chart](https://altair-viz.github.io/gallery/simple_line_chart.html) from the
+Here's an example: a
+[simple line chart](https://altair-viz.github.io/gallery/simple_line_chart.html)
+from the
 [Altair Example Gallery](https://altair-viz.github.io/gallery/index.html).
 
-``` python
+```python
 import altair as alt
 import numpy as np
 import pandas as pd
@@ -41,19 +42,17 @@ which (with default settings) produces a chart that looks like this:
 ## Easy tweaking of "size" through chart themes
 
 Now, that figure might look fairly readable, but when it's on a slide the text,
-labels & even lines are quite small[^examples]. I don't need [fine-grained
-control](https://github.com/vega/vega-lite/issues/1714) over the relative sizes
-of labels vs legend vs title, etc. I just want a simple knob for making all the
-text bigger so that my slides don't double as an [eye
-chart](https://en.wikipedia.org/wiki/Eye_chart). The Vega-Lite folks (the
-underlying vis engine which Altair uses) [know about the issue, but don't want
-to fix it](https://github.com/vega/vega-parser/issues/18).
+labels & even lines are quite small[^examples]. I don't need
+[fine-grained control](https://github.com/vega/vega-lite/issues/1714) over the
+relative sizes of labels vs legend vs title, etc. I just want a simple knob for
+making all the text bigger so that my slides don't double as an
+[eye chart](https://en.wikipedia.org/wiki/Eye_chart). The Vega-Lite folks (the
+underlying vis engine which Altair uses)
+[know about the issue, but don't want to fix it](https://github.com/vega/vega-parser/issues/18).
 
-::: tip
-Note that when I'm talking about "size" I'm **not** talking about the size &
-dimensions of the chart---I'm talking about the size of the text, lines & other
-marks _relative to_ the overall size of the chart.
-:::
+::: tip Note that when I'm talking about "size" I'm **not** talking about the
+size & dimensions of the chart---I'm talking about the size of the text, lines &
+other marks _relative to_ the overall size of the chart. :::
 
 The easiest way I found to fix this is to set a small width & height for the
 chart, then export to a vector format (e.g. svg) so that when the image gets
@@ -61,7 +60,7 @@ displayed everything will be "stretched" up into big, bold sizes (and since it's
 a vector format, things will still be nice and crisp). This chart code is the
 same except for the `.properties(width=100, height=60)` part:
 
-``` python
+```python
 alt.Chart(source).mark_line().encode(x="x", y="f(x)").properties(
     width=100, height=60
 ).save(f"{CHART_DIR}/sin-x-big-text.svg")
@@ -77,8 +76,8 @@ API.
 
 One final tip: if you want to have consistent sizes & aspect ratios across lots
 of charts (e.g. you're batch exporting lots of charts for a presentation or
-report) you can create [a custom
-theme](https://altair-viz.github.io/user_guide/configuration.html#defining-a-custom-theme),
+report) you can create
+[a custom theme](https://altair-viz.github.io/user_guide/configuration.html#defining-a-custom-theme),
 but otherwise you can just do it with a call to the `.properties()` method as
 shown.
 

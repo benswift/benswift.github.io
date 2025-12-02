@@ -25,8 +25,9 @@ loquaciousness is helpful but not essential.
 
 This workshop requires access to a chat-based LLM (e.g. ChatGPT). If you've got
 a laptop (or even a phone, although you'll be typing on your janky little phone
-keyboard) you can head to [https://chatgpt.com](https://chatgpt.com) (no sign-up required). But if
-you've got a different favourite chat-based LLM, feel free to use that instead.
+keyboard) you can head to [https://chatgpt.com](https://chatgpt.com) (no sign-up
+required). But if you've got a different favourite chat-based LLM, feel free to
+use that instead.
 
 ## Outline
 
@@ -137,7 +138,8 @@ Which of these words/phrases is the purplest?
 ```
 
 ```markdown
-Which of these words/phrases most evokes the experience of a crisp winter sunrise in Canberra?
+Which of these words/phrases most evokes the experience of a crisp winter
+sunrise in Canberra?
 ```
 
 ```markdown
@@ -169,7 +171,8 @@ Which of these words/phrases would be the easiest to explain to a toddler?
 ```
 
 ```markdown
-Which of these words/phrases would be the best password for a secret underground antifascist network?
+Which of these words/phrases would be the best password for a secret underground
+antifascist network?
 ```
 
 At the end, the player with the most points wins. You can play as many times as

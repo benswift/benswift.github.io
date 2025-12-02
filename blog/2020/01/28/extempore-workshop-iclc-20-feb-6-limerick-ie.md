@@ -5,11 +5,11 @@ tags:
   - livecoding
 ---
 
-If you're coming to the upcoming [International Conference on Live
-Coding](https://iclc.toplap.org/2020/) (ICLC '20) in Limerick,
-Ireland, then it's not too late to sign up for my workshop **Introduction to
-music-making in Extempore**. Even if you're not coming to the rest of the
-conference, you can still sign up for the workshop.
+If you're coming to the upcoming
+[International Conference on Live Coding](https://iclc.toplap.org/2020/) (ICLC
+'20) in Limerick, Ireland, then it's not too late to sign up for my workshop
+**Introduction to music-making in Extempore**. Even if you're not coming to the
+rest of the conference, you can still sign up for the workshop.
 
 <Picture file="images/posts/extempore-iclc-workshop-promo.jpg" alt="Harrison & Fi making mad beats with Extempore" />
 

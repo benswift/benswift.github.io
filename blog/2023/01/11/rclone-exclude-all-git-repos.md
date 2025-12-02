@@ -24,10 +24,10 @@ simple config change to move over.
 However, I figured I'd take the opportunity to fix something which had long
 bothered me. I have a _lot_ of stuff in git repos which don't need to be backed
 up with rclone, and they just slow down the backup process. I wanted to get
-rclone to ignore all git repos, and although it has an [include/exclude
-filtering](https://rclone.org/filtering/) system it's not easy to get it to
-filter all git repos (trust me, [I
-checked](https://forum.rclone.org/t/ignore-all-git-repos-when-syncing/33023)).
+rclone to ignore all git repos, and although it has an
+[include/exclude filtering](https://rclone.org/filtering/) system it's not easy
+to get it to filter all git repos (trust me,
+[I checked](https://forum.rclone.org/t/ignore-all-git-repos-when-syncing/33023)).
 
 Now that it's summertime I had a chance to make it work, and since that forum
 thread is now locked I'm posting it here to save you some time, dear reader, if

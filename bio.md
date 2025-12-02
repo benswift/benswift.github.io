@@ -7,11 +7,9 @@ title: Bio
 
 <Picture file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot" credit="Andrew Meares" />
 
-::: tip Note
-This is a personal bio page. If you're after a more "researcher-y" bio,
-then have a look at my [research page](/research), or check out my
-[CV](/cv).
-:::
+::: tip Note This is a personal bio page. If you're after a more "researcher-y"
+bio, then have a look at my [research page](/research), or check out my
+[CV](/cv). :::
 
 I'm a [Canberra](https://en.wikipedia.org/wiki/Canberra) lad, born and bred. One
 day I may move away from this place, but for now I'm here and quite happy about

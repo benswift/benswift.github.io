@@ -7,8 +7,7 @@ tags:
 As part of the new Extempore pattern language stuff I added a helper for
 generating [euclidean rhythms](https://en.wikipedia.org/wiki/Euclidean_rhythm).
 I wrote it (in a recursive style) in Scheme using the algorithm described in
-[Godfried
-Toussaint's](https://cgm.cs.mcgill.ca/~godfried/publications/banff-extended.pdf)
+[Godfried Toussaint's](https://cgm.cs.mcgill.ca/~godfried/publications/banff-extended.pdf)
 paper (although it's credited to _Bjorklund_).
 
 As well as the obvious musical possibilities, one of the things I noticed when I

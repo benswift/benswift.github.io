@@ -7,9 +7,9 @@ title: CV
 
 ## Ben Swift
 
-**Position**: Senior Lecturer, ANU School of Cybernetics
-**Email**: [ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au)
-**Website**: [benswift.me](https://benswift.me)
+**Position**: Senior Lecturer, ANU School of Cybernetics **Email**:
+[ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au) **Website**:
+[benswift.me](https://benswift.me)
 
 ## Research Interests
 

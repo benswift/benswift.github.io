@@ -7,21 +7,20 @@ tags:
 I (and, increasingly many of my colleagues) are using
 [Jekyll](https://jekyllrb.com) to create open (CC-licenced), hackable, acessible
 course websites & teaching content for our classes. We use a self-hosted GitLab
-server for all the websites sources, and then build/deploy them with [GitLab
-CI](https://docs.gitlab.com/ee/ci/). It works well, it means I don't have to
-fight with our LMS to do interesting things, and it means I can open my learning
-materials to everyone (not just those who are privileged enough to be able to
-pay the fees to study at the ANU).
+server for all the websites sources, and then build/deploy them with
+[GitLab CI](https://docs.gitlab.com/ee/ci/). It works well, it means I don't
+have to fight with our LMS to do interesting things, and it means I can open my
+learning materials to everyone (not just those who are privileged enough to be
+able to pay the fees to study at the ANU).
 
 The `jekyll build` step runs in a container, and for a long time we've just used
 the [official ruby image](https://hub.docker.com/_/ruby/) as a starting point,
 then done a `bundle install` inside the container before running the build step
 to get all the deps. However, this means the deps are _installed from scratch on
-every deploy_, which isn't the greenest (although ANU is [heading in a good
-direction on net
-zero](https://www.anu.edu.au/research/research-initiatives/anu-below-zero)) and
-it also means the feedback loop from push->deployed site is much longer than it
-needs to be.
+every deploy_, which isn't the greenest (although ANU is
+[heading in a good direction on net zero](https://www.anu.edu.au/research/research-initiatives/anu-below-zero))
+and it also means the feedback loop from push->deployed site is much longer than
+it needs to be.
 
 Yesterday (prompted by the understandable frustrations of my colleague
 [Charles](https://charlesmartin.com.au) about the build times) I spent some time
@@ -88,14 +87,12 @@ have changed in the lock file will be downloaded. But over time, the container
 may take longer to run as the list of pre-installed vs actually required
 packages diverges.
 
-::: tip
-I did try a similar approach that used `bundle cache` to pull all the deps into
-a `vendor/cache` folder and then copy _that_ across into the new image, but I
-had weird permissions errors that I didn't have the time to figure out. If
-you've got tips on whether that's a more "bundler-y" way to do things then [hit
-me up](mailto:ben@benswift.me).
-:::
+::: tip I did try a similar approach that used `bundle cache` to pull all the
+deps into a `vendor/cache` folder and then copy _that_ across into the new
+image, but I had weird permissions errors that I didn't have the time to figure
+out. If you've got tips on whether that's a more "bundler-y" way to do things
+then [hit me up](mailto:ben@benswift.me). :::
 
-I want to give a shoutout to Jan Akerman who wrote [a helpful blog
-post](https://janakerman.co.uk/docker-git-clone/) which got me started---and
-some of the Dockerfile is taken from that post.
+I want to give a shoutout to Jan Akerman who wrote
+[a helpful blog post](https://janakerman.co.uk/docker-git-clone/) which got me
+started---and some of the Dockerfile is taken from that post.

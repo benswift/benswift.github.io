@@ -1,18 +1,19 @@
 ---
 title: "Running stable diffusion in a singularity container"
-
 ---
 
 singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3
 
 git clone https://github.com/lstein/stable-diffusion.git
 
-SINGULARITYENV_CUDA_VISIBLE_DEVICES=0 singularity shell --nv ../sifs/pytorch_22.08-py3.sif 
+SINGULARITYENV_CUDA_VISIBLE_DEVICES=0 singularity shell --nv
+../sifs/pytorch_22.08-py3.sif
 
 source /opt/conda/etc/profile.d/conda.sh && conda activate ldm
 
-ffmpeg -framerate 30 -pattern_type glob -i '*.png' -c:v libx264 -pix_fmt yuv420p genesis.mp4
-ffmpeg -framerate 5 -pattern_type glob -i '*-Joel-*.png' -c:v libx264 -pix_fmt yuv420p Joel.mp4
+ffmpeg -framerate 30 -pattern_type glob -i '_.png' -c:v libx264 -pix_fmt yuv420p
+genesis.mp4 ffmpeg -framerate 5 -pattern_type glob -i '_-Joel-\*.png' -c:v
+libx264 -pix_fmt yuv420p Joel.mp4
 
 ideas for actually packaging this stuff...
 
@@ -47,8 +48,8 @@ def verse_generator(book):
 
 def generate(prompt, init_image):
     with autocast("cuda"):
-        return pipe(prompt, init_image)["sample"][0]  
-    
+        return pipe(prompt, init_image)["sample"][0]
+
 def generate_book_video(book):
     image = Image.new("RGB", (512, 512), color = "white")
     for i, verse in enumerate(verse_generator(book)):

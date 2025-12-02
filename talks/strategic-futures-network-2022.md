@@ -6,7 +6,6 @@ date: "2022-09-06"
 event: "APS Strategic Futures Network"
 ---
 
-
 <SlideTitle />
 
 <SlideAckCountry />
@@ -41,7 +40,8 @@ the study of purposeful, self-regulating systems
 
 <!-- class: fragment -->
 
-(semi)autonomous AI components within systems _feels like_ it's gonna be transformative
+(semi)autonomous AI components within systems _feels like_ it's gonna be
+transformative
 
 <!-- class: fragment -->
 
@@ -55,7 +55,8 @@ with some followup
 
 heavy use of scenarios
 
-two example activities which link back to the two key takeaways: **stories**, and **relationships**
+two example activities which link back to the two key takeaways: **stories**,
+and **relationships**
 
 <SlideBackgroundImage image="images/talks/whls-2022/ttftf-playing-cards.jpg" heading="stories: the thing from the future" />
 

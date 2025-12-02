@@ -8,8 +8,8 @@ My team ran some Zoom training last week and today I needed to figure out who
 actually attended across all the days, and for how long.
 
 Zoom can give you a csv dump of all attendees but doesn't provide the
-aggregations I was after, so I hacked up a little script (in [tidy
-R](https://www.tidyverse.org)) to do it. If you ever want to do something
+aggregations I was after, so I hacked up a little script (in
+[tidy R](https://www.tidyverse.org)) to do it. If you ever want to do something
 similar, feel free to use it ([MIT Licence](https://mit-license.org)).
 
 ```R
@@ -42,7 +42,7 @@ reason for using R in the first place) you could try something like:
 ```R
 df %>%
   group_by(name, date) %>%
-  # this was the key summarisation I was after - total time 
+  # this was the key summarisation I was after - total time
   # in-call across multiple connects/re-connects
   summarise(duration = sum(duration)) %>%
   ungroup() %>%

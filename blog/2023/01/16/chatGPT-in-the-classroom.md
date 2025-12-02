@@ -33,18 +33,17 @@ First, if your class includes student deliverables which involve submitting
 written work (e.g. essays, but also lab reports, process blogs, compulsory forum
 posts and more) then some of your students are going to use ChatGPT to write
 their submissions. It's inevitable, and although the NY Schools district is
-trying to bury its head in the sand and [ban
-ChatGPT](https://www.nbcnews.com/tech/tech-news/new-york-city-public-schools-ban-chatgpt-devices-networks-rcna64446),
+trying to bury its head in the sand and
+[ban ChatGPT](https://www.nbcnews.com/tech/tech-news/new-york-city-public-schools-ban-chatgpt-devices-networks-rcna64446),
 this is (in my opinion) both
 [wrongheaded](https://time.com/6246574/schools-shouldnt-ban-access-to-chatgpt/)
-and [too difficult to enforce in
-practice](https://www.theguardian.com/technology/2023/jan/12/college-student-claims-app-can-detect-essays-written-by-chatbot-chatgpt).
+and
+[too difficult to enforce in practice](https://www.theguardian.com/technology/2023/jan/12/college-student-claims-app-can-detect-essays-written-by-chatbot-chatgpt).
 
 So, as you look over your course outline and assessment schedule you need to ask
 yourself whether you care if your students use ChatGPT. It's a question that
 goes to the heart of why we set deliverables at all, which includes reasons like
-[legal
-compliance](https://www.teqsa.gov.au/guides-resources/resources/guidance-notes/guidance-note-course-design-including-learning-outcomes-and-assessment)
+[legal compliance](https://www.teqsa.gov.au/guides-resources/resources/guidance-notes/guidance-note-course-design-including-learning-outcomes-and-assessment)
 but for most educators is also about deeply held ideals about education as the
 pursuit of knowledge and truth, as well as what it means to give a good (or bad)
 grade.
@@ -63,13 +62,13 @@ Secondly, there are already some good ideas floating around about how to use
 ChatGPT productively in your teaching. This isn't just if you're designing a new
 course on "Applied AI Language Models", there are ways to incorporate it into an
 existing course as well. The Centre for Learning and Teaching at Washington
-University has already got a helpful [ChatGPT and AI Composition
-Tools](https://ctl.wustl.edu/resources/chatgpt-and-ai-composition-tools/) page
-up on their website. There are a [bunch of folks experimenting with
-ChatGPT-designed syllabi](https://twitter.com/search?q=chatgpt%20syllabus).
+University has already got a helpful
+[ChatGPT and AI Composition Tools](https://ctl.wustl.edu/resources/chatgpt-and-ai-composition-tools/)
+page up on their website. There are a
+[bunch of folks experimenting with ChatGPT-designed syllabi](https://twitter.com/search?q=chatgpt%20syllabus).
 
-I think that people like Yoav Goldberg are on the right track when [they
-say](https://twitter.com/yoavgo/status/1602026029979164675)
+I think that people like Yoav Goldberg are on the right track when
+[they say](https://twitter.com/yoavgo/status/1602026029979164675)
 
 > "actually now that i think of it more, i think a "write an essay with the help
 > of chatGPT and discuss the process and the resulting prose" can be a
@@ -93,31 +92,31 @@ it's an opportunity to reflect on where these tools work well, where they're
 useless, and where they might be actively harmful.
 
 One final point which I made to my colleague in the context of incorporating
-ChatGPT into this semesters's class is about availability. During the [current
-initial research preview ChatGPT is free to
-use](https://help.openai.com/en/articles/6783457-chatgpt-faq). But OpenAI
-(creators of ChatGPT) haven't released any information about how long this
-research preview window will last, or how much it'll cost when that window
+ChatGPT into this semesters's class is about availability. During the
+[current initial research preview ChatGPT is free to use](https://help.openai.com/en/articles/6783457-chatgpt-faq).
+But OpenAI (creators of ChatGPT) haven't released any information about how long
+this research preview window will last, or how much it'll cost when that window
 ends.
 
-ChatGPT running costs are [estimated at $3m USD per
-month](https://twitter.com/tomgoldsteincs/status/1600196995389366274), and
-OpenAI are a private company, so they can't be counted on to keep it running
-free forever as a public good. If it's eventually [priced similarly to
-GPT3](https://openai.com/api/pricing/) (the AI language model on which it's
-based) then it'll be fairly cheap---probably only a few cents to write an
-article as long as this one---but you're still left with an equity issue unless
-you're willing to pay for a subscription for all your students. Even if your
-institution is willing, these tools don't yet have an (easy) way to sign up a
-whole class, ensuring that student's activity stays under a given budget, and
-send one easy bill. I'm sure that will come in time, and AI companies may well
-be willing to offer partnerships and scholarships with educational institutions
-doing this sort of thing, but be prepared for a small panic if ChatGPT's free
-trial gets turned off 24 hours before an assessment deadline.
+ChatGPT running costs are
+[estimated at $3m USD per month](https://twitter.com/tomgoldsteincs/status/1600196995389366274),
+and OpenAI are a private company, so they can't be counted on to keep it running
+free forever as a public good. If it's eventually
+[priced similarly to GPT3](https://openai.com/api/pricing/) (the AI language
+model on which it's based) then it'll be fairly cheap---probably only a few
+cents to write an article as long as this one---but you're still left with an
+equity issue unless you're willing to pay for a subscription for all your
+students. Even if your institution is willing, these tools don't yet have an
+(easy) way to sign up a whole class, ensuring that student's activity stays
+under a given budget, and send one easy bill. I'm sure that will come in time,
+and AI companies may well be willing to offer partnerships and scholarships with
+educational institutions doing this sort of thing, but be prepared for a small
+panic if ChatGPT's free trial gets turned off 24 hours before an assessment
+deadline.
 
 I'm not trying to play the techno-optimist and downplay the potential downsides
-of ChatGPT in higher education. These tools may well [blow up
-society](https://www.nytimes.com/2023/01/15/opinion/ai-chatgpt-lobbying-democracy.html),
+of ChatGPT in higher education. These tools may well
+[blow up society](https://www.nytimes.com/2023/01/15/opinion/ai-chatgpt-lobbying-democracy.html),
 and higher education is (clearly!) not going to be unaffected if that happens.
 My main point is that if you're careful you can start using them in the
 classroom today---your students will be anyway, and this way you get to go on

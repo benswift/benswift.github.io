@@ -80,8 +80,8 @@ type-safe, composable, and I can actually read it six months later.
 
 ::: info
 
-Honestly, this part is still a work in progress, and I'm not super happy with it
-just yet.
+Honestly, the reveal.js stuff is still a work in progress, and I'm not super
+happy with it just yet.
 
 :::
 

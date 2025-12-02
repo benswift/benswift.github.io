@@ -6,10 +6,7 @@ date: "2021-11-22"
 event: "Design Guild NSW invited guest talk"
 ---
 
-
 <SlideTitle />
-
-
 
 <SlideAckCountry />
 
@@ -21,9 +18,8 @@ event: "Design Guild NSW invited guest talk"
 
 ## outline
 
-| **11:05** | intro: livecoding (yay)       |
-| **11:20** | but _why_?                    |
-| **11:25** | leverage in a cultural domain |
+| **11:05** | intro: livecoding (yay) | | **11:20** | but _why_? | | **11:25** |
+leverage in a cultural domain |
 
 <SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" heading="intro" />
 
@@ -54,8 +50,7 @@ a **lever** is a (designed) interface
 > 'gardeners' than 'architects' and, further, that the 'composer as architect'
 > metaphor was a transitory historical blip.
 >
-> [**Brian Eno**, _Composers as
-> Gardeners_](https://www.edge.org/conversation/brian_eno-composers-as-gardeners)
+> [**Brian Eno**, _Composers as Gardeners_](https://www.edge.org/conversation/brian_eno-composers-as-gardeners)
 
 <SlideBackgroundImage image="images/talks/design-guild-nsw-talk-2021/Maciej-Ceglowski-1.jpg" />
 

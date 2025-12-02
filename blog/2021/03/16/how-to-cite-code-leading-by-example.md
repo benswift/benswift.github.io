@@ -4,12 +4,12 @@ tags:
   - teaching
 ---
 
-In our [Computing Education Reading
-Group](https://cs.anu.edu.au/hub/reading-group/) yesterday we looked at Sheard
-et. al.'s paper on [_Strategies for Maintaining Academic Integrity in
-First-Year_](https://doi.org/10.1145/3059009.3059064) from ITiCSE '17. It was a
-great discussion, with lots of new questions raised as directions for future
-work.
+In our
+[Computing Education Reading Group](https://cs.anu.edu.au/hub/reading-group/)
+yesterday we looked at Sheard et. al.'s paper on
+[_Strategies for Maintaining Academic Integrity in First-Year_](https://doi.org/10.1145/3059009.3059064)
+from ITiCSE '17. It was a great discussion, with lots of new questions raised as
+directions for future work.
 
 One of the topics raised in the paper and discussed in the group is the notion
 of "citing" code. When writing human-adjacent languages (like English), we all
@@ -23,14 +23,12 @@ our students how to do it.
 
 ## The _Statement of Originality_ approach
 
-::: tip
-The following examples are live on the [COMP1720
-site](https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality);
-a course which is now delivered by the excellent [Charles
-Martin](https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/).
+::: tip The following examples are live on the
+[COMP1720 site](https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality);
+a course which is now delivered by the excellent
+[Charles Martin](https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/).
 However, all of the statement of originality stuff I mention here is still
-unchanged from when I wrote it a few years ago.
-:::
+unchanged from when I wrote it a few years ago. :::
 
 One thing I started doing a few years ago (in 2017 maybe?) in my courses is to
 get students to fill out a "Statement of Originality" alongside every assessment
@@ -43,10 +41,10 @@ paper:
 
 The "sign their life away" thing sounds a bit ominous, but when used well it's a
 scaffolded way of getting students to list their sources & collaborators, and to
-declare that anything else is their own work. 
+declare that anything else is their own work.
 
-For my courses, the [course
-website](https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality)
+For my courses, the
+[course website](https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality)
 has an example of what a "filled out" statement might look like:
 
 ```YAML
@@ -133,8 +131,8 @@ targeted instant feedback about whether they've filled it out correctly.
 
 Just because it's got a YAML file extension doesn't mean that the students don't
 accidentally submit badly-formed files which don't parse (even though there's
-lots of tips on the [FAQ
-page](https://cs.anu.edu.au/courses/comp1720/resources/faq/#yaml)). For my
+lots of tips on the
+[FAQ page](https://cs.anu.edu.au/courses/comp1720/resources/faq/#yaml)). For my
 purposes, that's fine---I don't dock any marks for that, and I don't really care
 (because at present I don't do much automated processing of the
 `statement-of-originality.yml` files anyway). The main thing is that the

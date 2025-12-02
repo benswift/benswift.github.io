@@ -11,11 +11,11 @@ all concerned.
 <Picture file="images/posts/ben-kieran-phd-graduation.jpg" alt="Ben and Kieran in full academic dress at the ANU graduation ceremony in December 2022" />
 
 His thesis, _Neurological Metaphor in Deep Learning: Issues and Alternatives_,
-is [available online through the ANU
-Library](https://openresearch-repository.anu.edu.au/handle/1885/274243). It's a
-really interesting mix of insightful scholarship and practice-based design
-interventions. In other words, he has interesting things to say _and_ he built
-interesting things (some of which are available online).
+is
+[available online through the ANU Library](https://openresearch-repository.anu.edu.au/handle/1885/274243).
+It's a really interesting mix of insightful scholarship and practice-based
+design interventions. In other words, he has interesting things to say _and_ he
+built interesting things (some of which are available online).
 
 Here's the abstract:
 

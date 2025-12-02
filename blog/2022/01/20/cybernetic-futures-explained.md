@@ -6,24 +6,22 @@ tags:
 
 <p class="post-subtitle">It's not a lighthouse, it's a radar.</p>
 
-
-
-::: tip
-One of my current projects at the ANU School of Cybernetics is to develop tools
-& procedures for futuring. This post is an attempt to get my head around how
-these things fit together (spoiler: they do!).
-:::
+::: tip One of my current projects at the ANU School of Cybernetics is to
+develop tools & procedures for futuring. This post is an attempt to get my head
+around how these things fit together (spoiler: they do!). :::
 
 ## Futures
 
-Futures/futuring[^terminology] is _a thing_---see [Smith and
-Ashby](https://www.howtofuture.com) for a practical guide or
+Futures/futuring[^terminology] is _a thing_---see
+[Smith and Ashby](https://www.howtofuture.com) for a practical guide or
 [Powers](https://www.press.uillinois.edu/books/?id=p084690) for a more critical
 history and review. It's the idea and practice of futuring as a verb, and this
 video from the [Institute for the Future](https://www.iftf.org) is a good
 articulation of the "pitch":
 
-[^terminology]: or foresight, or forecasting... there are a few terms which are used relatively interchangeably
+[^terminology]:
+    or foresight, or forecasting... there are a few terms which are used
+    relatively interchangeably
 
 <YouTube id="5_EsLu4qydw" />
 
@@ -31,9 +29,9 @@ Just so I'm clear up-front: I think that futuring is a genuinely useful tool in
 the toolbelt of any individual or organisation trying to figure out what success
 looks like and how to achieve it.
 
-One diagram which is often used in futuring is the [futures
-cone](https://thevoroscope.com/publications/foresight-primer/), which helps
-visualise the relationship between the _now_ and the different potential
+One diagram which is often used in futuring is the
+[futures cone](https://thevoroscope.com/publications/foresight-primer/), which
+helps visualise the relationship between the _now_ and the different potential
 _futures_ which might eventuate.
 
 ![The futures cone](/assets/images/posts/cybernetic-futures/futures-cone.png)
@@ -43,8 +41,8 @@ of concentric discs of soothing colours---but it helps to anchor discussions we
 might have and predictions we might make about the future. In this sense, any
 prediction or "vision" of the future is a single **point** in the futures cone,
 and exactly where it falls in the space of possible, plausible, probable, or
-preferable futures is part of the discussion. Think about it as [monte
-carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) of the future:
+preferable futures is part of the discussion. Think about it as
+[monte carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) of the future:
 
 ![An example distribution of potential futures in the futures cone](/assets/images/posts/cybernetic-futures/futures-sampling.png)
 
@@ -60,8 +58,8 @@ futures.
 ## Cybernetics
 
 [Stafford Beer](https://en.wikipedia.org/wiki/Stafford_Beer) tells a joke about
-defining cybernetics in [an address he gave at the University of
-Valladolid](https://www.emerald.com/insight/content/doi/10.1108/03684920210417283/):
+defining cybernetics in
+[an address he gave at the University of Valladolid](https://www.emerald.com/insight/content/doi/10.1108/03684920210417283/):
 
 > ...it concerns three men who are about to be executed. The prison governor
 > calls them to his office, and explains that each will be granted a last
@@ -93,7 +91,7 @@ cybernetic forebears liked is the one of using a lighthouse to steer a ship.
 explanation:
 
 > In ancient Greece, the
-> [_Kubernetes_](https://en.wikipedia.org/wiki/Cybernetics#Etymology)
+> [_Kubernetes_](https://en.wikipedia.org/wiki/Cybernetics#Etymology) >
 > [navigator/helmsperson] was in charge of controlling the Grecian longships.
 > The ships had to be steered through all kinds of unpredictable forces,
 > including wind, waves, storms, currents, and tides. The Greeks found that they
@@ -101,9 +99,9 @@ explanation:
 > the ship's larger rudder just by pointing the tiller toward a fixed object in
 > the distance, such as a lighthouse, and making adjustments in real-time.
 
-There's a [YouTube "What is
-cybernetics?"](https://www.youtube.com/watch?v=iXmlbd86YGA) video which includes
-a diagram like this:
+There's a
+[YouTube "What is cybernetics?"](https://www.youtube.com/watch?v=iXmlbd86YGA)
+video which includes a diagram like this:
 
 ![Diagram of the kubernetes' steering procedure](/assets/images/posts/cybernetic-futures/kubernetes-steering-procedure.png)
 
@@ -112,7 +110,7 @@ is the way that the navigator watches the lighthouse and moves the tiller in
 response (as the ship is affected by currents & winds). If the ship's bow is
 pointing to one side of the lighthouse, then adjust the tiller in the opposite
 direction until it does. If you keep up that simple procedure, you'll get there
-in the end, and with your ship in one piece. 
+in the end, and with your ship in one piece.
 
 It's the navigator's continued monitoring of the difference between the
 purpose/goal (as indicated by the lighthouse) and the current state (as
@@ -129,8 +127,8 @@ the goal, and then do another thing... and so on[^all-encompassing].
 
 [^all-encompassing]:
     If that definition sounds all-encompassing, you're not the first person to
-    notice that. Cybernetics [isn't
-    shy](https://www.pangaro.com/cybernetics-the-center-of-sciences-future.html)
+    notice that. Cybernetics
+    [isn't shy](https://www.pangaro.com/cybernetics-the-center-of-sciences-future.html)
     about claiming all things as within its purview---Wiener was an ersatz
     theologian.
 
@@ -143,26 +141,29 @@ Chapter 1). Take it away, [Wikipedia](https://en.wikipedia.org/wiki/Radar):
 
 > A radar system consists of a
 > [transmitter](https://en.wikipedia.org/wiki/Transmitter "Transmitter")
-> producing [electromagnetic
-> waves](https://en.wikipedia.org/wiki/Electromagnetic_wave "Electromagnetic
-> wave") in the [radio](https://en.wikipedia.org/wiki/Radio_spectrum "Radio
-> spectrum") or [microwaves](https://en.wikipedia.org/wiki/Microwave
-> "Microwave") domain, a transmitting
-> [antenna](https://en.wikipedia.org/wiki/Antenna_(radio) "Antenna (radio)"), a
-> receiving antenna (often the same antenna is used for transmitting and
-> receiving) and a [receiver](https://en.wikipedia.org/wiki/Radio_receiver
-> "Radio receiver") and
+> producing
+> [electromagnetic waves](https://en.wikipedia.org/wiki/Electromagnetic_wave "Electromagnetic
+wave")
+> in the [radio](https://en.wikipedia.org/wiki/Radio_spectrum "Radio
+spectrum")
+> or [microwaves](https://en.wikipedia.org/wiki/Microwave "Microwave") domain, a
+> transmitting
+> [antenna](<https://en.wikipedia.org/wiki/Antenna_(radio)> "Antenna (radio)"),
+> a receiving antenna (often the same antenna is used for transmitting and
+> receiving) and a
+> [receiver](https://en.wikipedia.org/wiki/Radio_receiver "Radio receiver") and
 > [processor](https://en.wikipedia.org/wiki/Data_processing_system "Data
-> processing system") to determine properties of the object(s). Radio waves
-> (pulsed or continuous) from the transmitter reflect off the object and return
-> to the receiver, giving information about the object's location and speed.
+processing system")
+> to determine properties of the object(s). Radio waves (pulsed or continuous)
+> from the transmitter reflect off the object and return to the receiver, giving
+> information about the object's location and speed.
 
 The radar sends out the pulses, which bounce (reflect) off the environment---and
-these these reflections are sufficient (with some [tricky
-maths](https://nato-us.org/analysis2000/papers/moran.pdf)) to figure out what
-the environment looks like. Often there's some sort of visual representation of
-the results, like the classic "beeping dots on concentric circles" radar sweep
-interface you'll know from the movies.
+these these reflections are sufficient (with some
+[tricky maths](https://nato-us.org/analysis2000/papers/moran.pdf)) to figure out
+what the environment looks like. Often there's some sort of visual
+representation of the results, like the classic "beeping dots on concentric
+circles" radar sweep interface you'll know from the movies.
 
 The radar example is different from the ship steering one in that lighthouses
 don't really move/change (although the currents in the water & other
@@ -195,8 +196,8 @@ futuring looks like a three step process:
 
 [^lighthouse-steering]:
     Yeah, I know, you don't steer towards the lighthouse exactly---they just
-    [show you where the rocks and reefs
-    are](https://adventure.howstuffworks.com/lighthouse.htm). Don't @ me.
+    [show you where the rocks and reefs are](https://adventure.howstuffworks.com/lighthouse.htm).
+    Don't @ me.
 
 ![Steering towards a preferred future](/assets/images/posts/cybernetic-futures/steering-towards-preferred-future.png)
 
@@ -222,8 +223,8 @@ think there are two implications of this switch in perspective.
    towards these multiple futures and reorient ourselves as a result. That's a
    "radar-like" model of futuring. Cybernetics doesn't provide a "once you
    measure & model all the things you can predict the future" silver bullet
-   (although it's not like some folks haven't tried [and
-   failed](https://eujournalfuturesresearch.springeropen.com/articles/10.1007/s40309-013-0029-y)),
+   (although it's not like some folks haven't tried
+   [and failed](https://eujournalfuturesresearch.springeropen.com/articles/10.1007/s40309-013-0029-y)),
    but rather it's a commitment to using a simple "sense-analyze-act" feedback
    loop to keep the system on track.
 
@@ -235,14 +236,14 @@ think there are two implications of this switch in perspective.
 To close, I want to stress that I'm not saying anything remotely new here about
 the connection between futuring and cybernetics---they're very often seen &
 discussed together. William Gibson, award-winning sci-fi novelist and sometime
-futurist was [steeped in cybernetic
-lore](https://www.nytimes.com/2007/08/19/magazine/19wwln-q4-t.html) when he
-[coined the term
-"cyberspace"](https://www.themarginalian.org/2014/08/26/how-william-gibson-coined-cyberspace/).
-My boss [Genevieve Bell
-AO](https://cybernetics.anu.edu.au/people/genevieve-bell/), director of the [ANU
-School of Cybernetics](https://cybernetics.anu.edu.au), has thought deeply and
-written persuasively and generally projected big futuring energy for pretty much
-her whole career.
+futurist was
+[steeped in cybernetic lore](https://www.nytimes.com/2007/08/19/magazine/19wwln-q4-t.html)
+when he
+[coined the term "cyberspace"](https://www.themarginalian.org/2014/08/26/how-william-gibson-coined-cyberspace/).
+My boss
+[Genevieve Bell AO](https://cybernetics.anu.edu.au/people/genevieve-bell/),
+director of the [ANU School of Cybernetics](https://cybernetics.anu.edu.au), has
+thought deeply and written persuasively and generally projected big futuring
+energy for pretty much her whole career.
 
 ## Footnotes

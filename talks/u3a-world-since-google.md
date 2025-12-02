@@ -6,10 +6,7 @@ date: "2018-11-07"
 event: "University of the Third Age (U3A)"
 ---
 
-
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/Bushland_on_southern_Mount_Majura.jpg" />
-
-
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/ben-smiths-sounscapes.jpg" />
 
@@ -35,8 +32,6 @@ code/creativity/culture
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/xkcd-modern-life.png" bgsize="contain" />
 
-
-
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/rawpixel-750931-unsplash.jpg" heading="nope." />
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/faang-logos.png" bgsize="contain" />
@@ -49,13 +44,12 @@ a short, incomplete, **mostly wrong** history of the internet since 1996
 
 ---
 
-> Google's mission is to organise the world's information and make it universally accessible and useful
+> Google's mission is to organise the world's information and make it
+> universally accessible and useful
 
 <https://www.google.com.au/about/>
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/larry-sergey.jpg" />
-
-
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/ye-linn-wai-600998-unsplash.jpg" />
 
@@ -85,8 +79,6 @@ who finds Google:
 
 but...
 
-
-
 (there's **always** a but)
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/imgix-391813-unsplash.jpg" />
@@ -113,7 +105,6 @@ what/how much do you pay for stuff online?
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/quino-al-427620-unsplash.jpg" />
 
-
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/annie-spratt-450564-unsplash.jpg" />
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/rawpixel-1055781-unsplash.jpg" heading="AdWords auction" />
@@ -128,11 +119,7 @@ the most brilliant minds of my generation...
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/alphabet-annual-revenues.png" heading="Alphabet annual revenues" bgsize="contain" />
 
-
-
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/cnbc-2017-alphabet-result-breakdown.png" bgsize="contain" />
-
-
 
 <hr class="impact center" data-background-color="#262626" />
 
@@ -142,10 +129,7 @@ the most brilliant minds of my generation...
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/nathaniel-dahan-464899-unsplash.jpg" heading="surveillance capitalism" />
 
-
-
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/stephen-mayes-560286-unsplash.jpg" />
-
 
 <SlideBackgroundImage image="images/talks/u3a-world-since-google/annie-spratt-450564-unsplash.jpg" heading="a long bow?" />
 
@@ -168,8 +152,6 @@ cui bono?
 <hr class="impact center" data-background-color="#262626" />
 
 but...
-
-
 
 (the "**hope**-filled" third act bit)
 
@@ -201,19 +183,21 @@ make informed choices
 ## open questions
 
 <!-- class: fragment -->
+
 are you willing to pay for your search results? news? email?
 
 <!-- class: fragment -->
+
 does Google owe traditional journalism a business model?
 
 <!-- class: fragment -->
+
 is data the new oil, or the new uranium?
 
 <!-- class: fragment -->
+
 has Google changed the **culture**?
 
 <hr class="impact center" data-background-color="#262626" />
-
-
 
 🤔

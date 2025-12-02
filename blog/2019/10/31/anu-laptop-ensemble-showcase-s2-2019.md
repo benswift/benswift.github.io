@@ -30,7 +30,6 @@ the LENS members even stayed around afterwards to help us bump out:
 
 <Picture file="images/posts/lens-showcase-2019-s2/IMG_0901.jpg" alt="LENS members packing up at the showcase" />
 
-LENS will be back again in S1 2019, so if you're interested then [shoot me an
-email](mailto:ben.swift@anu.edu.au) and we can keep you in the loop about how to
-be involved.
-
+LENS will be back again in S1 2019, so if you're interested then
+[shoot me an email](mailto:ben.swift@anu.edu.au) and we can keep you in the loop
+about how to be involved.

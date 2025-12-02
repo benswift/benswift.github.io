@@ -6,19 +6,19 @@ tags:
   - cybernetics
 ---
 
-Some job news---I've just accepted a position in the new [School of
-Cybernetics](https://cybernetics.anu.edu.au/) in the ANU College of Engineering,
-Computing and Cybernetics. I'll finish out my teaching this semester in the
-[School of Computing](https://cs.anu.edu.au) then I'll make the move in July.
-For those not familiar with the ANU org-chart or acronymicon, there are multiple
-_Schools_ in each _College_ (so I'm moving Schools but staying within the same
-College).
+Some job news---I've just accepted a position in the new
+[School of Cybernetics](https://cybernetics.anu.edu.au/) in the ANU College of
+Engineering, Computing and Cybernetics. I'll finish out my teaching this
+semester in the [School of Computing](https://cs.anu.edu.au) then I'll make the
+move in July. For those not familiar with the ANU org-chart or acronymicon,
+there are multiple _Schools_ in each _College_ (so I'm moving Schools but
+staying within the same College).
 
 I'm really excited by the prospect of designing educational experiences
-in/around/through the [new
-Cybernetics](https://www.griffithreview.com/articles/touching-the-future/), and
-that's what my[^my] team in the School of Cybernetics will be doing (under our
-Director [Genevieve Bell](https://twitter.com/feraldata)). My work as an
+in/around/through the
+[new Cybernetics](https://www.griffithreview.com/articles/touching-the-future/),
+and that's what my[^my] team in the School of Cybernetics will be doing (under
+our Director [Genevieve Bell](https://twitter.com/feraldata)). My work as an
 interdisciplinary computer scientist/computer musician has always been
 cybernetics-adjacent, and I'm stoked to get a chance to lean in to this
 interdisciplinarity as we reimagine what a School (within a College, within a
@@ -26,8 +26,8 @@ university) might look like.
 
 [^my]:
     This is "my" in the "team I'm part of" sense, not the "team I lead" sense.
-    The new School of Cybernetics is going to be a wildly collaborative place, and I'm just one
-    part of a multi-talented whole.
+    The new School of Cybernetics is going to be a wildly collaborative place,
+    and I'm just one part of a multi-talented whole.
 
 However, this decision is bittersweet; I love my current job, my colleagues and
 (especially) my students, and I'll be sad to see them less as I move to the
@@ -40,8 +40,8 @@ cool stuff there---quite the opposite. I think the future of computing is bright
 at the ANU and I know there are multiple folks all across the campus working
 hard to create that future in the present. To that end, if you're an
 up-and-coming creative code researcher/practitioner/educator, then you should
-apply for a [tenure-track position in the School of
-Computing](https://jobs.acm.org/jobs/computing-tenure-track-faculty-positions-canberra-australian-capital-territory-2601-122695751-d)---it'd
+apply for a
+[tenure-track position in the School of Computing](https://jobs.acm.org/jobs/computing-tenure-track-faculty-positions-canberra-australian-capital-territory-2601-122695751-d)---it'd
 be great to have you join the team, and we'd have chances to work together I'm
 sure.
 
@@ -60,24 +60,24 @@ To my **current students**, I (and my new colleagues in the School of
 Cybernetics) will make sure you don't get stuffed around. I'll keep supervising
 all my current students till your projects are complete, and you won't notice
 much difference---just that from July onwards we might have our meetings in a
-different building. If you're in my new [ANU Extension Creative
-Computing](https://cs.anu.edu.au/courses/extn1019/) course, then there's good
-news as well---that course will keep going as planned. In fact, it's a high
-priority activity for the whole College, and there will be amazing doors that
-open up for you through participation in that course. If you're a year 11
-student in 2022, you can start thinking about applying to be part of next year's
-cohort---[drop me a line](mailto:ben.swift@anu.edu.au) if you'd like some tips
-on how to prepare for that process.
+different building. If you're in my new
+[ANU Extension Creative Computing](https://cs.anu.edu.au/courses/extn1019/)
+course, then there's good news as well---that course will keep going as planned.
+In fact, it's a high priority activity for the whole College, and there will be
+amazing doors that open up for you through participation in that course. If
+you're a year 11 student in 2022, you can start thinking about applying to be
+part of next year's cohort---[drop me a line](mailto:ben.swift@anu.edu.au) if
+you'd like some tips on how to prepare for that process.
 
-To any **prospective/future students** (i.e. those who were hoping to take [one
-of my classes](/teaching) in the future) the news is a bit more
-mixed. I'll still be involved with the [Laptop
-Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/), and the current plan is
-that other courses I've designed & taught (e.g.
+To any **prospective/future students** (i.e. those who were hoping to take
+[one of my classes](/teaching) in the future) the news is a bit more mixed. I'll
+still be involved with the
+[Laptop Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/), and the
+current plan is that other courses I've designed & taught (e.g.
 [COMP2300](https://cs.anu.edu.au/courses/comp2300/),
 [COMP1720](https://cs.anu.edu.au/courses/comp1720/)) will still continue as
-normal with [other (excellent!)
-lecturers](https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/).
+normal with
+[other (excellent!) lecturers](https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/).
 Finally, while I was previously scheduled to take over **COMP4610 Computer
 Graphics** in S2 2021, this now won't happen. If that stuffs up your study
 plans, I'm really sorry.

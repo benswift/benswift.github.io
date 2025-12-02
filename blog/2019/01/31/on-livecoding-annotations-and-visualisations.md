@@ -4,10 +4,9 @@ tags:
   - livecoding
 ---
 
-I've just finished reading Charlie Roberts' [interactive web essay on
-annotations and visualisations for live
-code](https://charlieroberts.github.io/annotationsAndVisualizations/). If you
-haven't read it, go do that now---and make sure you have some
+I've just finished reading Charlie Roberts'
+[interactive web essay on annotations and visualisations for live code](https://charlieroberts.github.io/annotationsAndVisualizations/).
+If you haven't read it, go do that now---and make sure you have some
 speakers/headphones to listen to the code examples, because it would be a real
 shame to read it without watching/listening to his ideas in action. All the code
 samples (with the visual annotations) are live-editable, both running "whole
@@ -24,20 +23,19 @@ The essay lays out some guiding principles:
 >    current value.
 > 2. Make annotations and visualizations as proximal as possible to the code
 >    fragment responsible for generating the data they are representing.
-> 3. In addition to displaying when values change, whenever possible also provide
->    some indication of when a value is being read, in particular when there is a
->    direct affect on musical / sonic output.
+> 3. In addition to displaying when values change, whenever possible also
+>    provide some indication of when a value is being read, in particular when
+>    there is a direct affect on musical / sonic output.
 
 It then goes on to show some example visualisation in
 [gibberwocky](https://gibberwocky.cc/), both in an "all in" demo and then in
 bite-sized listings which show off the different specific ideas. In general, I
 really like the ideas, and it's something Andrew Sorensen and I have written
-about before in our paper [Visual Code Annotations for Cyberphysical
-Programming](/research#swiftVisualCodeAnnotations2013) (2013) in
-the _1st International Workshop on Live Programming (LIVE)_ (it's
-reference
-#4 in the essay). I'll refer to this a bit in this post, so let's call it "the
-LIVE paper".
+about before in our paper
+[Visual Code Annotations for Cyberphysical Programming](/research#swiftVisualCodeAnnotations2013)
+(2013) in the _1st International Workshop on Live Programming (LIVE)_ (it's
+reference #4 in the essay). I'll refer to this a bit in this post, so let's call
+it "the LIVE paper".
 
 I also think that the three points listed above are pretty solid, especially in
 a multimedia livecoding context (maybe even in a broader context). One thing I
@@ -142,8 +140,8 @@ You can probably tell that I think there's a productive research agenda
 here---and I hope Charlie continues with it. I hope to help out myself, too. I
 guess my main point is just to shout from the rooftops:
 
-> any code visualisation/annotation techniques must be robust for **code which is
-> currently being edited**
+> any code visualisation/annotation techniques must be robust for **code which
+> is currently being edited**
 
 I'm not just talking about technical issues, either; obviously any
 demo/prototype is going to have those, but they're fixable. I think there are
@@ -174,6 +172,6 @@ materials" section to a traditional pdf.
 
 [^distill]:
     [Distill](https://distill.pub/) is great, but it's pretty DL/AI-focussed.
-    The livecoding community needs something similar (although it does
-    privilege livecoding environments which work in the brower, so that's not
-    ideal either. Hmm.)
+    The livecoding community needs something similar (although it does privilege
+    livecoding environments which work in the brower, so that's not ideal
+    either. Hmm.)

@@ -13,8 +13,8 @@ your query). If you want to come back to this page, you can use your browser's
 back button.
 
 Alternately, if you want to use Google search to do the same thing (the results
-will be pretty much the same) you can use the same "site:benswift.me" trick [on
-Google](https://www.google.com/search?q=site%3Abenswift.me).
+will be pretty much the same) you can use the same "site:benswift.me" trick
+[on Google](https://www.google.com/search?q=site%3Abenswift.me).
 
 [^ddg]:
     [DuckDuckGo](https://duckduckgo.com/) is a web search engine, just like

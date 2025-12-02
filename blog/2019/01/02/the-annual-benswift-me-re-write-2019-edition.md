@@ -4,15 +4,16 @@ tags:
   - dev
 ---
 
-Welcome, traveller. You've managed to find my blog without being [eaten by a
-grue](https://zork.wikia.com/wiki/Grue). If you haven't visited for a while, you
-might have noticed that I've re-written my website. [Again](/blog/2017/07/06/benswift-me-update-july-2017-edition).
+Welcome, traveller. You've managed to find my blog without being
+[eaten by a grue](https://zork.wikia.com/wiki/Grue). If you haven't visited for
+a while, you might have noticed that I've re-written my website.
+[Again](/blog/2017/07/06/benswift-me-update-july-2017-edition).
 
 There are a few reasons:
 
-1. it forces me to keep up to date with web stuff, which I [teach for a
-   living](https://cs.anu.edu.au/courses/comp1720/) (students can sniff out a
-   fraud)
+1. it forces me to keep up to date with web stuff, which I
+   [teach for a living](https://cs.anu.edu.au/courses/comp1720/) (students can
+   sniff out a fraud)
 
 2. my academic activities don't fit the traditional "list of journal
    publications" shape that my university-provided web presence is geared
@@ -31,8 +32,8 @@ There are a few reasons:
 6. I'm a control-freak, and the idea of _not_ being in control bums me out (this
    is the pernicious flip side of #5)
 
-Some of these are good reasons, some not-so-good. For a fun party game, [argue
-with me on twitter](https://twitter.com/benswift) about which is which 😉
+Some of these are good reasons, some not-so-good. For a fun party game,
+[argue with me on twitter](https://twitter.com/benswift) about which is which 😉
 
 ## The nitty-gritty technical stuff
 
@@ -41,16 +42,16 @@ site. This time, though, I've opted for my own lovingly hand-crafted HTML & CSS
 rather than one of the out-of-the-box themes. In doing this, I decided on a few
 design priorities:
 
-1. _modern_ markup: CSS grid & flexbox **all the way** (sorry if you're on an old
-   version of IE)
+1. _modern_ markup: CSS grid & flexbox **all the way** (sorry if you're on an
+   old version of IE)
 2. _minimal_ markup: there's really not many elements in each page (I wanted to
    see how far I could push back against the `div` soup that's so common these
    days)
 3. _semantic_ markup: we have `nav` and `article` and `main` and `aside`, so
    let's use them
 
-Typography-wise, I used [@rsms](https://twitter.com/rsms)'s new [Inter
-UI](https://rsms.me/inter/) font family, and I really like it. I'm not a
+Typography-wise, I used [@rsms](https://twitter.com/rsms)'s new
+[Inter UI](https://rsms.me/inter/) font family, and I really like it. I'm not a
 designer (as you can probably tell) so I kept it simple---one typeface, one
 highlight colour, and then I poke around with
 [Sass's](https://www.sass-lang.com) colour manipulation functions to get a _bit_
@@ -58,8 +59,8 @@ more variation.
 
 **The verdict**: I was really pleasantly surprised---it came together in about a
 day of hard work. Next time around (i.e. now that I know what I'm doing a bit
-more) it'd be even easier. I particularly liked using [grid template
-areas](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas)
+more) it'd be even easier. I particularly liked using
+[grid template areas](https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas)
 to draw a little ascii-art diagram of my desired layout. Obviously the layout
 for this blog is really boring, but I can imagine this being really handy for
 more complex layouts.

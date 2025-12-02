@@ -4,8 +4,8 @@ tags:
   - dev
 ---
 
-[My institution](https://anu.edu.au) now uses [MS
-Teams](https://teams.microsoft.com) for lots of things, including organising
+[My institution](https://anu.edu.au) now uses
+[MS Teams](https://teams.microsoft.com) for lots of things, including organising
 classes & communicating with students. It's not perfect, but it's not terrible,
 and the pros & cons of Teams as a pedagogical platform are best left for another
 post.
@@ -20,14 +20,12 @@ the class's Teams site you can either:
 - share the "join Team" link on some other communication channel and manually
   weed out the gatecrashers
 
-::: tip
-Too much manual work---**there's gotta be a better way**.
-:::
+::: tip Too much manual work---**there's gotta be a better way**. :::
 
-MS Teams doesn't have a UI button for "add team members from [csv
-file](https://en.wikipedia.org/wiki/Comma-separated_values)". The app _is_
-scriptable, but only via a [PowerShell
-module](https://docs.microsoft.com/en-au/MicrosoftTeams/teams-powershell-overview).
+MS Teams doesn't have a UI button for "add team members from
+[csv file](https://en.wikipedia.org/wiki/Comma-separated_values)". The app _is_
+scriptable, but only via a
+[PowerShell module](https://docs.microsoft.com/en-au/MicrosoftTeams/teams-powershell-overview).
 So, I (& others[^brent]) came up with a snippet of
 [PowerShell](https://github.com/powershell/powershell) code for bulk-adding
 students to a Team from a csv file.

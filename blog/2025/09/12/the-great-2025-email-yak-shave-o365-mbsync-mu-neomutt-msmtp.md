@@ -55,17 +55,14 @@ macOS Keychain rather than sitting around in plaintext files. If you're on Linux
 you can switch my macOS-specific approach with suitable `pass` or `gpg`
 invocations.
 
-::: tip
-I needed to build mbsync and the cyrus-sasl-xoauth2 plugin from source with
-XOAUTH2 support (something I plan to upstream to the homebrew formula when I get
-a chance).
-:::
+::: tip I needed to build mbsync and the cyrus-sasl-xoauth2 plugin from source
+with XOAUTH2 support (something I plan to upstream to the homebrew formula when
+I get a chance). :::
 
 ## Running in Zed
 
 Since I'm a Zed user, I run neomutt in a fullscreen terminal task (same approach
-as my [Claude Code
-setup](/blog/2025/07/23/running-claude-code-within-zed)). Add
+as my [Claude Code setup](/blog/2025/07/23/running-claude-code-within-zed)). Add
 this to your tasks.json:
 
 ```json

@@ -18,7 +18,9 @@ hero:
 
 features:
   - title: Research
-    details: Peer-reviewed publications on livecoding, creative computing, and human-computer interaction.
+    details:
+      Peer-reviewed publications on livecoding, creative computing, and
+      human-computer interaction.
     link: /research
   - title: Livecoding
     details: Curated and invited livecoding performances around the world.

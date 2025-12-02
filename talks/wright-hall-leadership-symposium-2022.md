@@ -7,7 +7,6 @@ subtitle: "...of Individuals and Institutions"
 event: "Wright Hall Leadership Symposium '22"
 ---
 
-
 <SlideBackgroundImage image="images/talks/whls-2022/midjourney-individuals-and-institutions.png" bgsize="contain" bgcol="#000" />
 
 <SlideTitle />
@@ -26,8 +25,8 @@ my journey
 
 maths UG → computing PhD → computing academic
 
-I'm now the _Educational Experiences_ lead at the [School of
-Cybernetics](https://cybernetics.anu.edu.au/)
+I'm now the _Educational Experiences_ lead at the
+[School of Cybernetics](https://cybernetics.anu.edu.au/)
 
 <SlideBackgroundImage image="images/talks/whls-2022/midjourney-individuals-and-institutions.png" bgsize="contain" bgcol="#000" />
 
@@ -44,8 +43,6 @@ Cybernetics](https://cybernetics.anu.edu.au/)
  
 <SlideBackgroundImage image="images/talks/whls-2022/feedback-loops-ted-talk-still.jpg" bgsize="contain" bgcol="#000" />
 
-
-
 see the [TED talk](https://www.youtube.com/watch?v=inVZoI1AkC8)
 
 <SlideBackgroundImage image="images/talks/whls-2022/igor-son-FV_PxCqgtwc-unsplash.jpg" :center="true" />
@@ -59,14 +56,14 @@ about the future
 <SlideBackgroundImage image="images/talks/whls-2022/ttftf-playing-cards.jpg" heading="the thing from the future" />
 
 <!-- class: fragment -->
+
 a _participatory_ keynote
 
 ## outline
 
-| **1:30pm** | intro                                                |
-| **1:45pm** | activity: speed futures                              |
-| **2:10pm** | activity: possible? preferable?                      |
-| **2:20pm** | discussion: where to conform? where to be empowered? |
+| **1:30pm** | intro | | **1:45pm** | activity: speed futures | | **2:10pm** |
+activity: possible? preferable? | | **2:20pm** | discussion: where to conform?
+where to be empowered? |
 
 <SlideBackgroundImage image="images/talks/whls-2022/jason-mitrione-RcctILJ_DVc-unsplash.jpg" heading="speed futures" />
 
@@ -76,8 +73,6 @@ future** according to a prompt:
 in a \_\_\_\_ future, there is a \_\_\_\_ related to \_\_\_\_... what is it?
 
 <SlideBackgroundImage image="images/talks/whls-2022/travel-bits-packet.png" bgsize="contain" bgcol="#000" />
-
-
 
 _Travel Bits_ are a snack that has a chemical ingredient that triggers certain
 sensual events and effects. In this example the Italy flavour gives you the

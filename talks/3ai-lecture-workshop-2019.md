@@ -6,7 +6,6 @@ date: "2019-10-01"
 event: "3ai lecture/workshop, S2 2019"
 ---
 
-
 <SlideTitle />
 
 ## outline
@@ -19,7 +18,10 @@ event: "3ai lecture/workshop, S2 2019"
 
 <SlideBackgroundImage image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.jpg" />
 
-[SlideBackgroundImage image="images/livecoding/ben-qic-1.jpg" heading="part un: Ben live @ 3Ai" id="part-1" /](mailto:SlideBackgroundImage image="images/livecoding/ben-qic-1.jpg" heading="part un: Ben live @ 3Ai" id="part-1" /)
+[SlideBackgroundImage image="images/livecoding/ben-qic-1.jpg" heading="part un:
+Ben live @ 3Ai" id="part-1" /](mailto:SlideBackgroundImage
+image="images/livecoding/ben-qic-1.jpg" heading="part un: Ben live @ 3Ai"
+id="part-1" /)
 
 <SlideBackgroundImage image="images/talks/3ai-lecture-workshop/Hot-Shots-Part-Deux.jpg" heading="part deux: what makes a CPS?" id="part-2" />
 
@@ -30,8 +32,8 @@ event: "3ai lecture/workshop, S2 2019"
 > Advanced robotics, smart grids, autonomous cars, machine learning.
 > **Cyber-physical systems** are literally all around us---systems that, as they
 > converge, will have an unprecedented economic, social and cultural impact on
-> humanity. -&nbsp;_from the [3Ai
-> homepage](https://3ainstitute.cecs.anu.edu.au)_
+> humanity. -&nbsp;_from the
+> [3Ai homepage](https://3ainstitute.cecs.anu.edu.au)_
 
 <SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="definition" bgsize="contain" bgcol="#222" />
 
@@ -103,8 +105,8 @@ what are the **boundary cases**?
 <SlideBackgroundImage image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.jpg" heading="part trois: what can livecoding teach us about CPS?" id="part-3" />
 
 _Extempore: The design, implementation and application of a cyber-physical
-programming language_ ([Andrew Sorensen's PhD
-thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
+programming language_
+([Andrew Sorensen's PhD thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
 
 <SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" />
 
@@ -113,21 +115,22 @@ thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
 > Advanced robotics, smart grids, autonomous cars, machine learning.
 > Cyber-physical systems are literally all around us---systems that, as they
 > converge, will have an unprecedented economic, social and **cultural** impact
-> on humanity. -&nbsp;_from the [3Ai
-> homepage](https://3ainstitute.cecs.anu.edu.au)_
-
+> on humanity. -&nbsp;_from the
+> [3Ai homepage](https://3ainstitute.cecs.anu.edu.au)_
 
 <SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" />
 
 <!-- class: fragment -->
+
 autonomy
 
 <!-- class: fragment -->
+
 agency
 
 <!-- class: fragment -->
-potatoes
 
+potatoes
 
 <SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" />
 
@@ -189,17 +192,17 @@ there are some "I"s as well as the "A"s
 > How do we measure performance and success?
 >
 > Technical systems have typically been measured on their efficiency. However,
-> when systems start to learn and change their behaviour over time, the objective
-> of efficiency may begin to clash with ideals that have previously been
-> implicitly or tacitly inserted into the process by the humans in the loop. How
-> do we start to conceptualise building for sustainability, for beauty, for
-> values?
+> when systems start to learn and change their behaviour over time, the
+> objective of efficiency may begin to clash with ideals that have previously
+> been implicitly or tacitly inserted into the process by the humans in the
+> loop. How do we start to conceptualise building for sustainability, for
+> beauty, for values?
 
 - what are the **indicators** in livecoding?
 - what does failure look like?
 - what design intervention might we make to help out?
 
-## interfaces 
+## interfaces
 
 > How will technologies, systems and humans work together?
 >
@@ -253,4 +256,3 @@ if you'd like to help (or just to hang out with the c/c/c group more generally)
 then let me know 😊
 
 <SlideQuestions />
-

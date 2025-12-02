@@ -7,11 +7,8 @@ tags:
 
 <p class="post-subtitle">To understand how HE can incorporate AI successfully, we need to think about how humans will interact with the technology and change their behaviour, says Ben Swift</p>
 
-
-
-::: tip
-This article originally [appeared in Times Higher
-Education](https://www.timeshighereducation.com/campus/ai-higher-education-dystopia-utopia-or-something-between).
+::: tip This article originally
+[appeared in Times Higher Education](https://www.timeshighereducation.com/campus/ai-higher-education-dystopia-utopia-or-something-between).
 :::
 
 <Picture file="images/posts/ai-eye.jpeg" alt="a blue eye with weird techy-looking things in the iris" />
@@ -25,19 +22,19 @@ We're also on the crest of a wave of new [AI](https://openai.com)
 [apps](https://stability.ai/blog/stable-diffusion-announcement) for text/image
 synthesis, where you give the AI a prompt such as "What role did Sir John Kerr
 play in the 1975 Australian constitutional crisis?" or "Draw a picture of a red
-unicorn playing a Fender Stratocaster" and [it will spit out a
-"response"](https://www.timeshighereducation.com/campus/original-essays-written-seconds-how-transformers-will-change-assessment)
+unicorn playing a Fender Stratocaster" and
+[it will spit out a "response"](https://www.timeshighereducation.com/campus/original-essays-written-seconds-how-transformers-will-change-assessment)
 which, while not always perfect, in most cases could pass for something hacked
 together by a harried student in the few hours before an assessment deadline.
 
 I'm writing as someone with 10 years' experience as a lecturer and course
 convener in [computer science](https://comp.anu.edu.au/people/ben-swift/) and
 [cybernetics](https://cybernetics.anu.edu.au/people/ben-swift/). I've taught
-both large (400-student) compulsory courses and 10-student [special
-interest](https://comp.anu.edu.au/courses/laptop-ensemble/) courses. I've also
-built software tools for automating some aspects of these courses, although they
-more commonly use [normal "if-then-else" programmes rather than AI
-ones](https://grow.astrolabs.com/articles/artificial-intelligence-vs-traditional-programming/).
+both large (400-student) compulsory courses and 10-student
+[special interest](https://comp.anu.edu.au/courses/laptop-ensemble/) courses.
+I've also built software tools for automating some aspects of these courses,
+although they more commonly use
+[normal "if-then-else" programmes rather than AI ones](https://grow.astrolabs.com/articles/artificial-intelligence-vs-traditional-programming/).
 
 However, as an AI researcher, I also build AI-powered tools---and I can
 certainly see the convergence between the "AI research and tool-building" part
@@ -88,8 +85,8 @@ selling point of AI chatbot products is that you can teach larger classes (or
 create new classes) than you would otherwise have the instructors to support. AI
 text summarisation tools could also help with grading/triaging, especially given
 the limits on budgets for teaching assistant hours. One potential endgame for
-this dynamic is that instead of having to [cap places on high-demand degree
-programmes](https://www.dailycal.org/2022/08/24/campus-college-of-letters-and-science-plans-to-limit-high-demand-majors/),
+this dynamic is that instead of having to
+[cap places on high-demand degree programmes](https://www.dailycal.org/2022/08/24/campus-college-of-letters-and-science-plans-to-limit-high-demand-majors/),
 class sizes could grow until student demand is satisfied.
 
 The risk here is that such a class would become incredibly reliant on those AI
@@ -129,11 +126,9 @@ not in this dystopian camp. I am, however, keeping an eye out for how _human_
 students and instructors change their behaviour in response to the changes in
 the information ecosystem in which we exist.
 
-::: tip
-[Ben Swift](https://cybernetics.anu.edu.au/people/ben-swift/) is educational
-experiences lead and associate director (education) at the ANU School of
-Cybernetics. The ANU School of Cybernetics is activating cybernetics as an
-important tool for navigating major societal transformations through capability
-building, policy development and safe, sustainable and responsible approaches to
-new systems.
-:::
+::: tip [Ben Swift](https://cybernetics.anu.edu.au/people/ben-swift/) is
+educational experiences lead and associate director (education) at the ANU
+School of Cybernetics. The ANU School of Cybernetics is activating cybernetics
+as an important tool for navigating major societal transformations through
+capability building, policy development and safe, sustainable and responsible
+approaches to new systems. :::

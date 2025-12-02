@@ -6,16 +6,7 @@ date: "2019-01-11"
 event: "National Youth Science Forum '19"
 ---
 
-
 <SlideTitle />
-
-
-
-
-
-
-
-
 
 ## outline
 
@@ -47,8 +38,6 @@ yikes!
 
 <SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.jpg" heading="I'm old..." />
 
-
-
 ## what's a producer?
 
 a
@@ -61,10 +50,6 @@ pop songs are characterised by:
 - repetitive harmonic patterns (e.g. chord progressions)
 - processed/synthetic sounds (lots of computers involved in the production)
 
-
-
-
-
 <hr class="impact center" data-background-color="#262626" />
 
 programming as **problem solving**...
@@ -74,6 +59,7 @@ programming as **problem solving**...
 the problem:
 
 <!-- class: fragment -->
+
 write a **no. 1** hit
 
 <SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" />
@@ -83,8 +69,6 @@ write a **no. 1** hit
 **music** _(n.)_
 
 a series of pitched "events" over time
-
-
 
 <SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg" />
 
@@ -110,8 +94,6 @@ and [me](/index))
 
 don't worry about the syntax, I'll explain enough for you to follow along
 
-
-
 ## what did we learn?
 
 pop music isn't black magic, it's a domain with lots of structure/patterns
@@ -123,8 +105,6 @@ computers/code are _really useful_ for modelling/exploring this stuff
 this is _not_ AI, either
 
 <hr class="impact center" data-background-color="#262626" />
-
-
 
 🤔
 

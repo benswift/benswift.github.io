@@ -6,7 +6,6 @@ date: "2018-11-19"
 event: "code 2k18: A Media Conference of Platforms, Devices and Screens"
 ---
 
-
 <SlideTitle />
 
 <SlideBackgroundImage image="images/talks/code-2k18/alex-holyoake-340782-unsplash.jpg" />
@@ -50,8 +49,6 @@ code is my **instrument**
 
 <SlideBackgroundImage image="images/talks/code-2k18/lens-soundscapes-2.jpg" heading="but not all..." />
 
-
-
 <hr class="impact center" data-background-color="#262626" />
 
 the next generation of new media creators are spread across the **whole campus**
@@ -59,8 +56,6 @@ the next generation of new media creators are spread across the **whole campus**
 <SlideBackgroundImage image="images/talks/code-2k18/charisse-kenion-456578-unsplash.jpg" />
 
 <SlideBackgroundImage image="images/talks/code-2k18/vidar-nordli-mathisen-596746-unsplash.jpg" />
-
-
 
 innovation/entrepreneurship programs are all the rage
 

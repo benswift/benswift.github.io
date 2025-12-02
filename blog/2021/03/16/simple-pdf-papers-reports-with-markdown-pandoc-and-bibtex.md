@@ -14,9 +14,9 @@ for dissertations and other reports, which is:
 - for new-to-CS-and-math students the LaTeX learning curve can be a bit of a
   bummer (even if it is probably a worthwhile skill in the long haul)
 
-When I wrote my PhD thesis back in the day I created my [own LaTeX
-template](https://github.com/benswift/academic-thesis-template). Since then,
-I've been doing more and more of my writing in
+When I wrote my PhD thesis back in the day I created my
+[own LaTeX template](https://github.com/benswift/academic-thesis-template).
+Since then, I've been doing more and more of my writing in
 [markdown](https://www.markdownguide.org) rather than LaTeX, and I really enjoy
 the simplicity. You lose a little bit of control, but being limited to the
 features that markdown offers is actually really helpful if you're as prone to
@@ -27,8 +27,8 @@ yak shaving as I am.
 Because academic publishing is still primarily a world of bland simulacra, being
 able to create a `.pdf` of one's writing is essential. When writing in markdown
 in my [favourite text editor](https://www.spacemacs.org) I can turn it into a
-pdf using Pandoc. As [Jeffrey Moro so eloquently puts
-it](https://jeffreymoro.com/blog/2020-09-21-how-i-write/):
+pdf using Pandoc. As
+[Jeffrey Moro so eloquently puts it](https://jeffreymoro.com/blog/2020-09-21-how-i-write/):
 
 > pandoc is amazing. I basically think it redeems computers. It can take
 > basically any kind of text and turn it into other kinds of text. In my
@@ -39,12 +39,12 @@ nice-looking pdf for submission/printing" still has a few magical steps, so I've
 created a template project on GitHub which puts these pieces together in a
 sensible way. There are two "flavours":
 
-- the [regular
-  version](https://github.com/benswift/simple-pandoc-pdf-template/tree/master)
+- the
+  [regular version](https://github.com/benswift/simple-pandoc-pdf-template/tree/master)
   (when you don't need academic citations)
 
-- the [bibtex
-  version](https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex)
+- the
+  [bibtex version](https://github.com/benswift/simple-pandoc-pdf-template/tree/bibtex)
   (when you do need academic citations)
 
 I'm pumped to be able to share this template with the world under a permissive

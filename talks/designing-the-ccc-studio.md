@@ -7,7 +7,6 @@ subtitle: "10 years of teaching artists to code and coders to art"
 event: "Glasgow University seminar"
 ---
 
-
 <SlideTitle />
 
 ## outline
@@ -34,13 +33,15 @@ but first, some **music**
 
 ## my story
 
-
-
 💻 + 🎵 = 🤯
 
 <SlideBackgroundImage image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg" heading="CS101" />
 
-[SlideBackgroundImage image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg" heading="CS @ ANU" /](mailto:SlideBackgroundImage image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg" heading="CS @ ANU" /)
+[SlideBackgroundImage
+image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg"
+heading="CS @ ANU" /](mailto:SlideBackgroundImage
+image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg"
+heading="CS @ ANU" /)
 
 loads of students, large classes
 
@@ -119,7 +120,8 @@ a series of Reimagine Fellowships to support this...
 
 I've been awarded a fellowship to build the **c/c/c studio**
 
-an A-levels extension course in creative computing (selective entry, 2 year program)
+an A-levels extension course in creative computing (selective entry, 2 year
+program)
 
 small cohorts (<20/year), first intake in 2021, first graduates in 2022
 
@@ -157,8 +159,6 @@ but **why**?
 
 <SlideBackgroundImage image="images/talks/designing-the-ccc-studio/niklas-weiss-x8JtiGxnS6g-unsplash.jpg" heading="central thesis" />
 
-
-
 making music & art isn't a side track on the road to computing
 
 ## discussion questions
@@ -185,21 +185,22 @@ if you'd like to chat, let me know 😊---I'm here till Thursday
 
 ## Bio
 
-Ben is an interdisciplinary researcher and Senior Lecturer in the Research School
-of Computer Science at the [Australian National
-University](https://cecs.anu.edu.au/people/ben-swift). He's interested in
-computational art & music, human-computer interaction, AI/machine learning
-(particularly in pursuit of creative ends) and the intersection of code,
-creativity and culture as those boundaries dissolve in the modern world. He's
-the director of the [code/creativity/culture
-group](https://cs.anu.edu.au/code-creativity-culture/) within the ANU Research
-School of Computer Science.
+Ben is an interdisciplinary researcher and Senior Lecturer in the Research
+School of Computer Science at the
+[Australian National University](https://cecs.anu.edu.au/people/ben-swift). He's
+interested in computational art & music, human-computer interaction, AI/machine
+learning (particularly in pursuit of creative ends) and the intersection of
+code, creativity and culture as those boundaries dissolve in the modern world.
+He's the director of the
+[code/creativity/culture group](https://cs.anu.edu.au/code-creativity-culture/)
+within the ANU Research School of Computer Science.
 
 ## Bio
 
-He is a [livecoder](/livecoding/), and is the vice
-president of the [Australasian Computer Music
-Association](https://computermusic.org.au) (ACMA). Ben is one of the inaugural
-[ANU Reimagine Fellows](/blog/2019/08/30/Im-a-reimagine-fellow), part of a [$300m+ investment
-from the ANU](https://cecs.anu.edu.au/reimagine) charged with re-thinking (and
-re-doing) what it is to be a computer scientist in the 21st century.
+He is a [livecoder](/livecoding/), and is the vice president of the
+[Australasian Computer Music Association](https://computermusic.org.au) (ACMA).
+Ben is one of the inaugural
+[ANU Reimagine Fellows](/blog/2019/08/30/Im-a-reimagine-fellow), part of a
+[$300m+ investment from the ANU](https://cecs.anu.edu.au/reimagine) charged with
+re-thinking (and re-doing) what it is to be a computer scientist in the 21st
+century.

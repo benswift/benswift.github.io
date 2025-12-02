@@ -1,6 +1,5 @@
 ---
 title: "DeepSeek and Shallow Moats: Implications for Higher Education"
-
 ---
 
 > This piece originally published in Times Higher Education

@@ -7,11 +7,9 @@ layout: page
 </picture>
 
 Hi, I'm Ben Swift---I'm a [researcher]({% link research.md %}), [artist]({% link
-livecoding.md %}) and
-[creative technologist/software engineer](https://github.com/benswift), and
-(among other things) I lead the Cybernetic Studio at the
-[ANU School of Cybernetics](https://cybernetics.anu.edu.au/). Sometimes I write
-about that stuff on my [blog]({% link blog.md %}).
+livecoding.md %}) and [creative technologist/software engineer](https://github.com/benswift),
+and (among other things) I lead the Cybernetic Studio at the [ANU School of Cybernetics](https://cybernetics.anu.edu.au/).
+Sometimes I write about that stuff on my [blog]({% link blog.md %}).
 
 I care a lot about making computing a welcoming, interesting and creatively
 satisfying place, especially for people who don't fit the traditional picture of

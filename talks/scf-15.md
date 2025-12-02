@@ -6,7 +6,6 @@ date: "2015-05-18"
 event: "Supercomputing Frontiers '15"
 ---
 
-
 My talk at the Supercomputing Frontiers conference in Singapore about Extempore
 in HPC.
 

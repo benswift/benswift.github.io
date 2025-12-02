@@ -1,8 +1,8 @@
 # benswift.me source repo
 
 This is the source code for my blog - <https://benswift.me>. For more info on
-how it's put together, see [this blog
-post](https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html).
+how it's put together, see
+[this blog post](https://benswift.me/2019/01/02/the-annual-benswift-me-re-write-2019-edition.html).
 
 ## using hljs with xtlang
 

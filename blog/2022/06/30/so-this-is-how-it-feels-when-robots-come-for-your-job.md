@@ -7,30 +7,27 @@ tags:
 
 <p class="post-subtitle">what GitHub's Copilot 'AI assistant' means for coders</p>
 
-
-
 <Picture file="images/posts/file-20220629-24-n3q489.jpeg" alt="a person typing away at some code on a laptop computer" />
 
-::: tip
-This article originally [appeared in the
-Conversation](https://theconversation.com/so-this-is-how-it-feels-when-the-robots-come-for-your-job-what-githubs-copilot-ai-assistant-means-for-coders-185957).
+::: tip This article originally
+[appeared in the Conversation](https://theconversation.com/so-this-is-how-it-feels-when-the-robots-come-for-your-job-what-githubs-copilot-ai-assistant-means-for-coders-185957).
 :::
 
-I love writing code to make things: apps, websites, charts, even [music](/livecoding/). It's a skill I've worked hard at for more than 20 years.
+I love writing code to make things: apps, websites, charts, even
+[music](/livecoding/). It's a skill I've worked hard at for more than 20 years.
 
-So I must confess [last week's
-news](https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/)
-about the release of a new "AI assistant" coding helper called [GitHub
-Copilot](https://copilot.github.com) gave me complicated feelings.
+So I must confess
+[last week's news](https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/)
+about the release of a new "AI assistant" coding helper called
+[GitHub Copilot](https://copilot.github.com) gave me complicated feelings.
 
 Copilot, which spits out code to order based on "plain English" descriptions, is
 a remarkable tool. But is it about to put coders like me out of a job?
 
 ## Trained on billions of lines of human code
 
-[GitHub](https://github.com/features/copilot/#faq-human-oversight) (now [owned
-by
-Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/))
+[GitHub](https://github.com/features/copilot/#faq-human-oversight) (now
+[owned by Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/))
 is a collaboration platform and social network for coders. You can think of it
 as something like a cross between Dropbox and Instagram, used by everyone from
 individual hobbyists through to highly paid software engineers at big tech
@@ -86,9 +83,9 @@ And will Copilot itself be able to suggest new and better ways to write code and
 build software? We have seen AI systems
 [innovate](https://www.wired.com/2016/03/two-moves-alphago-lee-sedol-redefined-future/)
 before. On the other hand, Copilot may be limited to doing things the way we've
-always done them, as AI systems [trained on past
-data](https://www.wired.com/story/ai-biased-how-scientists-trying-fix/) are
-prone to do.
+always done them, as AI systems
+[trained on past data](https://www.wired.com/story/ai-biased-how-scientists-trying-fix/)
+are prone to do.
 
 My experiences with Copilot have also made me very aware my expertise is still
 needed, to check the "suggested" code is actually what I'm looking for.
@@ -101,12 +98,12 @@ bug. The bug might be because this AI code generation stuff is _hard_, or it
 might be because the billions of lines of human-written code that Copilot was
 trained on contained bugs of their own.
 
-Another concern is [potential
-issues](https://fossa.com/blog/analyzing-legal-implications-github-copilot/)
+Another concern is
+[potential issues](https://fossa.com/blog/analyzing-legal-implications-github-copilot/)
 about licensing and ownership of the code Copilot was trained on. GitHub has
-said it is [trying to address these
-issues](https://github.com/features/copilot/#faq-human-oversight), but we will
-have to wait and see how it turns out.
+said it is
+[trying to address these issues](https://github.com/features/copilot/#faq-human-oversight),
+but we will have to wait and see how it turns out.
 
 ## More output from the same input
 
@@ -122,10 +119,10 @@ curator rather than creator.
 Of course, you may be thinking "that's what a coder _would_ say" ... and you may
 be right.
 
-AI tools like Copilot, OpenAI's [text generator
-GPT-3](https://openai.com/blog/gpt-3-apps/), and Google's [Imagen text-to-image
-engine](https://imagen.research.google), have seen huge improvements in the past
-few years.
+AI tools like Copilot, OpenAI's
+[text generator GPT-3](https://openai.com/blog/gpt-3-apps/), and Google's
+[Imagen text-to-image engine](https://imagen.research.google), have seen huge
+improvements in the past few years.
 
 Many in white-collar "creative industries" which deal in text and images are
 starting to wrestle with their fears of being (at least partially) automated
