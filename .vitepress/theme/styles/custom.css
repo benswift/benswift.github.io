@@ -1,5 +1,15 @@
 /* Custom styles for benswift.me (plain CSS, no Sass) */
 
+html {
+    font-size: 18px;
+}
+
+@media (min-width: 640px) {
+    html {
+        font-size: 20px;
+    }
+}
+
 :root {
     --highlight-color: #be2edd;
     --text-color: #333;
