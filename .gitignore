@@ -3,6 +3,8 @@
 .vitepress/dist
 .vitepress/.temp
 
+.unlighthouse
+
 # Node
 node_modules/
 
