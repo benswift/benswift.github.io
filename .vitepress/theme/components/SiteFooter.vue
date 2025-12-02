@@ -26,7 +26,7 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
         <p>
             designed &amp; built with
             <a href="https://vitepress.dev" title="VitePress website"
-                ><Icon icon="fa6-solid:flask" inline /></a
+                ><Icon icon="fa6-solid:bolt" inline /></a
             >,
             <a
                 href="#"
