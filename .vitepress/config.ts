@@ -158,7 +158,6 @@ export default defineConfig({
     // Old Jekyll files at root (renamed with jekyll- prefix)
     "jekyll-*.md",
     "search.md",
-    "blurbs.md",
     "404.md",
     // Unpublished blog posts
     ...getUnpublishedPosts(),
@@ -168,6 +167,8 @@ export default defineConfig({
   rewrites: {
     // Talks - preserve /talks/slug/ URLs
     "talks/:slug.md": "talks/:slug/index.md",
+    // Livecoding index - keep at /livecoding/ (must come before the :slug rule)
+    "livecoding/index.md": "livecoding/index.md",
     // Livecoding items - preserve /livecoding/slug/ URLs
     "livecoding/:slug.md": "livecoding/:slug/index.md",
   },
