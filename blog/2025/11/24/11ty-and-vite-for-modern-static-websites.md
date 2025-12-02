@@ -12,7 +12,6 @@ tags:
 
 <TagList :tags='["web"]' />
 
-
 I've been using [11ty](https://www.11ty.dev/) for static site generation for a
 while now (not this site---that's Jekyll---but for other stuff) and it's great.
 But for a recent project I needed proper asset bundling, hot module replacement
@@ -46,7 +45,7 @@ The magic happens through
 which lets 11ty and Vite play nicely together. Here's the core setup in
 `eleventy.config.js`:
 
-```javascript
+```js
 import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -102,7 +101,7 @@ all.
 The solution is a custom Vite plugin that runs _after_ Vite's build completes
 and copies those files back:
 
-```javascript
+```js
 function preservePassthroughOutputs() {
   let rootDir;
   let outDir;

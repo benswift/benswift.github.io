@@ -6,7 +6,6 @@ date: "2017-08-17"
 event: "COMP1720 Guest Lecture 2017"
 ---
 
-
 <SlideTitle />
 
 <SlideBackgroundImage image="images/talks/creative-potential-of-random/blue-poles.jpg" />
@@ -46,8 +45,10 @@ but this **isn't** a maths lecture
 ## three useful types for artists
 
 1. uniform: [`random([min], [max])`](https://p5js.org/reference/#/p5/random)
-2. gaussian: [`randomGaussian()`](https://p5js.org/reference/#/p5/randomGaussian)
-3. discrete: [`random(choices)`](https://p5js.org/reference/#/p5/random) (Array version)
+2. gaussian:
+   [`randomGaussian()`](https://p5js.org/reference/#/p5/randomGaussian)
+3. discrete: [`random(choices)`](https://p5js.org/reference/#/p5/random) (Array
+   version)
 
 ## uniform random numbers
 
@@ -58,8 +59,6 @@ picks any number between those two numbers
 all numbers in the range are **equally likely**
 
 this last point is the key attribute of random numbers
-
-
 
 ## gaussian random numbers
 
@@ -128,7 +127,7 @@ randomness to use: _this is where the art happens_
 
 ## re-creating the random pixels image
 
-```javascript
+```js
 loadPixels();
 for (var i = 0; i < pixels.length; i++) {
   if (random() < 0.5) pixels[i] = 0;
@@ -140,7 +139,5 @@ updatePixels();
 <SlideBackgroundImage image="images/talks/creative-potential-of-random/blue-poles.jpg" heading="re-creating Blue Poles?" />
 
 <hr class="impact center" data-background-color="#262626" />
-
-
 
 🤔

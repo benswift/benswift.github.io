@@ -6,7 +6,6 @@ date: "2017-09-06"
 event: "Telopeal High School STEM Day"
 ---
 
-
 <SlideTitle />
 
 <SlideBackgroundImage image="images/talks/p5-hour-of-code/chalk.jpg" heading="who drew pictures as a 5yo?" />
@@ -30,7 +29,7 @@ super-easy, and free)
 
 ## edit the code
 
-```javascript
+```js
 function setup() {
   createCanvas(800, 800);
 }
@@ -66,7 +65,7 @@ square and a circle on top of one another?
 
 put one of these **before** your `rect` line:
 
-```javascript
+```js
 fill(255, 0, 0);
 // or
 stroke(15, 180, 0);
@@ -78,7 +77,7 @@ try changing the numbers around...
 
 ## moar colours
 
-```javascript
+```js
 fill(255, 0, 0); // each value from 0-255
 ```
 
@@ -109,7 +108,7 @@ SyntaxError: missing ) after argument list (sketch: line 12)
 
 <SlideBackgroundImage image="images/talks/p5-hour-of-code/smiley.png" heading="smiley face" />
 
-```javascript
+```js
 function setup() {
   createCanvas(800, 800);
   noStroke();
