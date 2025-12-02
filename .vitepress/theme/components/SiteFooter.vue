@@ -48,9 +48,9 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
         </p>
 
         <p class="footer-links">
-            <a :href="`${repoBase}/blob/source/${page.relativePath}`">source</a>
+            <a :href="`${repoBase}/blob/main/${page.relativePath}`">source</a>
             ·
-            <a :href="`${repoBase}/commits/source/${page.relativePath}`"
+            <a :href="`${repoBase}/commits/main/${page.relativePath}`"
                 >history</a
             >
             ·
