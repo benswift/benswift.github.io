@@ -137,3 +137,7 @@ The old Jekyll site is preserved on the
 you want to compare. Or browse the current
 [`main` branch on GitHub](https://github.com/benswift/benswift.me) to see how it
 all fits together.
+
+If there's something which was on the old site that you can't find on the new
+one, then [drop me a line](mailto:ben@benswift.me) and I'll try to help you find
+it.
