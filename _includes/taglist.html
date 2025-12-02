@@ -1,9 +1,0 @@
-{% unless include.tags == blank %}
-<p class="post-tag-container">
-  {% for tag in include.tags %}
-  <a class="post-tag" href='{{ "/blog/tag/" | append: tag | relative_url }}'>
-	{{ tag }}
-  </a>
-  {% endfor %}
-</p>
-{% endunless %}

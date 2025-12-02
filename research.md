@@ -1,41 +1,69 @@
 ---
+layout: doc
 title: Research
-layout: page
-permalink: /research/
-anchorjs-selector: "article > h2, article > h3, .pubitem"
 ---
 
-{% include picture.html file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21" credit="Adam Thomas" %}
+<script setup>
+import { data as pubs } from './.vitepress/theme/bibliography.data'
+import { computed } from 'vue'
 
-{% include toc.html %}
+// Group publications by year
+const pubsByYear = computed(() => {
+  const grouped = {}
+  pubs.forEach(pub => {
+    if (!grouped[pub.year]) grouped[pub.year] = []
+    grouped[pub.year].push(pub)
+  })
+  return grouped
+})
+
+const years = computed(() => Object.keys(pubsByYear.value).sort((a, b) => b.localeCompare(a)))
+</script>
+
+# Research
+
+<Picture file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21" credit="Adam Thomas" />
+
+[[toc]]
 
 ## Research interests
 
-{% include blurbs/I-am-paragraphs.md %}
+I'm a livecoder, digital artist, and researcher in the [ANU School of Cybernetics](https://cybernetics.anu.edu.au/).
+My research interests include:
 
-<div class="hl-para" markdown="1">
+- **Livecoding**: Writing and modifying code in real-time as a form of artistic performance
+- **Creative computing**: Using computation as a medium for artistic expression
+- **Human-computer interaction**: Designing systems that are engaging and meaningful
+- **AI & creativity**: Exploring the creative potential of AI systems
 
-**Come study with me**: if you're interested in doing Honours/Masters/PhD
-research with me, [send me an email](mailto:ben.swift@anu.edu.au). I always have
-a few project ideas kicking around, but I'm also open to hearing about the
-project/big idea that excites _you_. Send me
+::: tip Come study with me
+If you're interested in doing Honours/Masters/PhD research with me,
+[send me an email](mailto:ben.swift@anu.edu.au). I always have a few project
+ideas kicking around, but I'm also open to hearing about the project/big idea
+that excites _you_. Send me:
 
-1. a **one-paragraph** description of the project you're interested in doing,
-   and
-2. a **link to something you've made**: a livecoding video, a project on GitHub,
+1. A **one-paragraph** description of the project you're interested in doing
+2. A **link to something you've made**: a livecoding video, a project on GitHub,
    an academic paper---even a blog post
-
-I get a lot of emails, so including these two things is a great way to show that
-you've thought a bit about what sort of research project you're interested in
-(and why I'd be a good fit as your supervisor). You should think hard about how
-to make your email stand out from the crowd.
-
-</div>
+:::
 
 ## Peer-reviewed publications
 
-{% bib_list_pubs ben-pubs.bib year_links %}
+<div class="bibliography">
+  <div v-for="year in years" :key="year" class="year-section">
+    <h3 :id="year">{{ year }}</h3>
+    <div v-for="pub in pubsByYear[year]" :key="pub.key" class="pub-item">
+      <p class="pub-title">
+        <a v-if="pub.doi" :href="`https://doi.org/${pub.doi}`" target="_blank">{{ pub.title }}</a>
+        <a v-else-if="pub.url" :href="pub.url" target="_blank">{{ pub.title }}</a>
+        <span v-else>{{ pub.title }}</span>
+      </p>
+      <p class="pub-authors">{{ pub.authors }}</p>
+      <p v-if="pub.venue" class="pub-venue">{{ pub.venue }}</p>
+    </div>
+  </div>
+</div>
 
 ## Curated/invited livecoding performances
 
-{% bib_list_gigs %}
+See the [livecoding page](/livecoding/) for documentation of my performances.

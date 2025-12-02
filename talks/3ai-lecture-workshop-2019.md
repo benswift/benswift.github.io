@@ -1,0 +1,256 @@
+---
+title: "What can livecoding teach us about cyber-physical systems?"
+layout: reveal
+author: "Ben Swift"
+date: "2019-10-01"
+event: "3ai lecture/workshop, S2 2019"
+---
+
+
+<SlideTitle />
+
+## outline
+
+[part un](#part-1): Ben live @ 3Ai
+
+[part deux](#part-2): what makes a CPS?
+
+[part trois](#part-3): what can livecoding teach us about CPS?
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.jpg" />
+
+[SlideBackgroundImage image="images/livecoding/ben-qic-1.jpg" heading="part un: Ben live @ 3Ai" id="part-1" /](mailto:SlideBackgroundImage image="images/livecoding/ben-qic-1.jpg" heading="part un: Ben live @ 3Ai" id="part-1" /)
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/Hot-Shots-Part-Deux.jpg" heading="part deux: what makes a CPS?" id="part-2" />
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" />
+
+---
+
+> Advanced robotics, smart grids, autonomous cars, machine learning.
+> **Cyber-physical systems** are literally all around us---systems that, as they
+> converge, will have an unprecedented economic, social and cultural impact on
+> humanity. -&nbsp;_from the [3Ai
+> homepage](https://3ainstitute.cecs.anu.edu.au)_
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="definition" bgsize="contain" bgcol="#222" />
+
+what is a cyber-physical system?
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.jpg" />
+
+<!-- potato -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/lars-blankers-B0s3Xndk6tw-unsplash.jpg" />
+
+<!-- car (w/o driver) -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/ant-miner-NvFEisZmVsQ-unsplash.jpg" />
+
+<!-- car (w driver) -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/patricia-prudente-oPZf7BegqSU-unsplash.jpg" />
+
+<!-- aibo -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/brett-jordan-U32jeOdkgfA-unsplash.jpg" />
+
+<!-- robot soccer -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/robot-soccer.jpeg" />
+
+<!-- <SlideImageCredit artist="📸 AFP/Getty Images" /> -->
+
+<!-- MCG -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash.jpg" />
+
+<!-- user with smartphone -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/oleg-magni-LGNV-4-l8LA-unsplash.jpg" />
+
+<!-- factory worker -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/kat-maryschuk-5BFvAPQTi1U-unsplash.jpg" bgpos="bottom" />
+
+<!-- x-ray viewing -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/linkedin-sales-navigator-_h5CPTwuVHM-unsplash.jpg" />
+
+<!-- genevieve -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" />
+
+<!-- city -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg" />
+
+<!-- school classroom -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/shubham-sharan-Z-fq3wBVfMU-unsplash.jpg" />
+
+<!-- parlie house -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash.jpg" />
+
+<!-- nasa -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/nasa-Q1p7bh3SHj8-unsplash.jpg" />
+
+<!-- piano -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/clark-young-tq7RtEvezSY-unsplash.jpg" />
+
+<!-- rock band -->
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg" />
+
+<!-- Ben & Kieran at CECS welcome party -->
+<SlideBackgroundImage image="images/livecoding/ben-kieran-cecs-welcome-party-2019.jpg" />
+
+<hr class="impact center" data-background-color="#262626" />
+
+what are the key **questions**?
+
+<hr class="impact center" data-background-color="#262626" />
+
+what are the **boundary cases**?
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.jpg" heading="part trois: what can livecoding teach us about CPS?" id="part-3" />
+
+_Extempore: The design, implementation and application of a cyber-physical
+programming language_ ([Andrew Sorensen's PhD
+thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" />
+
+---
+
+> Advanced robotics, smart grids, autonomous cars, machine learning.
+> Cyber-physical systems are literally all around us---systems that, as they
+> converge, will have an unprecedented economic, social and **cultural** impact
+> on humanity. -&nbsp;_from the [3Ai
+> homepage](https://3ainstitute.cecs.anu.edu.au)_
+
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" />
+
+<!-- class: fragment -->
+autonomy
+
+<!-- class: fragment -->
+agency
+
+<!-- class: fragment -->
+potatoes
+
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" />
+
+autonomy
+
+agency
+
+~~potatoes~~
+
+assurance
+
+## autonomy
+
+> How do we design for an autonomous world?
+>
+> This is both a technical set of questions and a philosophical and public
+> policy set of questions. Just because we can automate something, should we?
+> When we translate human processes into machine processes, what do we need to
+> consider?
+
+- where's the **autonomy** in livecoding?
+- what does failure look like?
+- what design intervention might we make to help out?
+
+## agency
+
+> How much agency do we give technology?
+>
+> As the ability for machines to act independently of human oversight increases
+> with each new tech breakthrough, conversations need to be had about how much
+> agency we give to intelligent cyber-physical systems. Are we comfortable with
+> machines responding to their environment, and interacting with other machines,
+> without a human to check and validate decisions?
+
+- where's the **agency** in livecoding?
+- what does failure look like?
+- what design intervention might we make to help out?
+
+## assurance
+
+> How do we preserve our safety and values?
+>
+> Current technological progress calls for new regulatory tools and processes,
+> as algorithms designed in different places are introduced into societies
+> around the world. The virtual nature of these new goods and services has an
+> impact on our ability to regulate their design and use in a way that aligns
+> with core cultural values.
+
+- where's the **assurance** in livecoding?
+- what does failure look like?
+- what design intervention might we make to help out?
+
+<hr class="impact center" data-background-color="#262626" />
+
+there are some "I"s as well as the "A"s
+
+## indicators
+
+> How do we measure performance and success?
+>
+> Technical systems have typically been measured on their efficiency. However,
+> when systems start to learn and change their behaviour over time, the objective
+> of efficiency may begin to clash with ideals that have previously been
+> implicitly or tacitly inserted into the process by the humans in the loop. How
+> do we start to conceptualise building for sustainability, for beauty, for
+> values?
+
+- what are the **indicators** in livecoding?
+- what does failure look like?
+- what design intervention might we make to help out?
+
+## interfaces 
+
+> How will technologies, systems and humans work together?
+>
+> In previous decades, we interfaced with computational systems through a screen
+> and a keyboard. This paradigm is already being disrupted as ‘smart’ objects
+> enter our lives. What will it mean when AI-enabled systems are all around us,
+> sensing and responding to us? How to do protect our privacy? What happens to
+> all that data?
+
+- what are the **interfaces** in livecoding?
+- what does failure look like?
+- what design intervention might we make to help out?
+
+## intent
+
+> Why has the system been constructed? by whom? and for what purposes?
+>
+> It is sometimes tempting to think of a single, monolithic AI. However, AIs
+> will be built for different purposes and with very different intentionality,
+> and inside different larger systems. Making sense of, and mapping, that
+> broader intentionality is central to the emergent new applied science.
+
+- what is the **intent** in livecoding?
+- what does failure look like?
+- what design intervention might we make to help out?
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" bgsize="contain" bgcol="#222" />
+
+## open questions
+
+- if/when is a (textual) code interface the best option for balancing
+  agency/autonomy/assurance... in livecoding? and beyond?
+
+- what feedback can we provide to help the livecoder stay "on top" of the
+  autonomous processes? is that even desirable?
+
+- how does the audience fit in? do they matter? what's _their_ agency?
+
+- when do static analyses help, and when do they get in the way? what about "AI"
+  helpers?
+
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/Defense.gov_News_Photo_020221-D-9880W-080.jpg" />
+
+<!-- <SlideImageCredit artist="📸 R. D. Ward, US D.O.D." /> -->
+
+## what's next?
+
+these questions keep me up at night
+
+if you'd like to help (or just to hang out with the c/c/c group more generally)
+then let me know 😊
+
+<SlideQuestions />
+

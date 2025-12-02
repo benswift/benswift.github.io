@@ -1,0 +1,210 @@
+/* Custom styles for benswift.me (plain CSS, no Sass) */
+
+:root {
+    --highlight-color: #be2edd;
+    --text-color: #333;
+    --background-color: #fafafa;
+    --text-grey: #555;
+    --link-color: color-mix(
+        in srgb,
+        var(--text-color) 50%,
+        var(--highlight-color)
+    );
+
+    /* VitePress CSS variable overrides */
+    --vp-c-brand-1: var(--highlight-color);
+    --vp-c-brand-2: color-mix(in srgb, var(--highlight-color) 90%, black);
+    --vp-c-brand-3: color-mix(in srgb, var(--highlight-color) 80%, black);
+    --vp-c-brand-soft: color-mix(
+        in srgb,
+        var(--highlight-color) 14%,
+        transparent
+    );
+
+    /* Typography */
+    --vp-font-family-base:
+        "Atkinson Hyperlegible Next Variable", -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+    --vp-font-family-mono:
+        "Atkinson Hyperlegible Mono Variable", Consolas, Monaco, "Andale Mono",
+        "Ubuntu Mono", monospace;
+
+    /* Home hero name gradient */
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: linear-gradient(
+        120deg,
+        var(--highlight-color) 30%,
+        color-mix(in srgb, var(--highlight-color) 80%, black)
+    );
+}
+
+/* Light mode specific tweaks */
+.dark {
+    --vp-c-brand-1: color-mix(in srgb, var(--highlight-color) 90%, white);
+    --vp-c-brand-2: var(--highlight-color);
+    --vp-c-brand-3: color-mix(in srgb, var(--highlight-color) 90%, black);
+}
+
+/* Custom component styles */
+
+/* Inline code styling */
+.vp-doc :not(pre) > code {
+    color: var(--vp-c-text-1);
+    background: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--highlight-color) 25%, white),
+        color-mix(in srgb, var(--highlight-color) 30%, white)
+    );
+}
+
+.dark .vp-doc :not(pre) > code {
+    color: color-mix(in srgb, var(--highlight-color) 75%, white);
+    background: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--highlight-color) 30%, #111),
+        color-mix(in srgb, var(--highlight-color) 20%, #111)
+    );
+}
+
+/* Tags */
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-weight: 300;
+    background-color: color-mix(in srgb, var(--highlight-color) 60%, white);
+    color: var(--highlight-color);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    text-decoration: none;
+    transition:
+        background-color 120ms ease,
+        color 120ms ease;
+}
+
+.tag:hover {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+/* Post metadata */
+.post-date {
+    font-style: italic;
+    color: var(--text-grey);
+}
+
+.post-subtitle {
+    font-style: italic;
+    color: var(--text-grey);
+    margin-bottom: 2em;
+}
+
+/* Bibliography styling */
+.bibliography .year-section {
+    margin-bottom: 2rem;
+}
+
+.bibliography .pub-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--vp-c-brand-soft);
+}
+
+.bibliography .pub-title {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.bibliography .pub-title a {
+    color: var(--vp-c-brand-1);
+}
+
+.bibliography .pub-authors {
+    color: var(--text-grey);
+    margin-bottom: 0.25rem;
+}
+
+.bibliography .pub-venue {
+    font-style: italic;
+    color: var(--text-grey);
+    font-size: 0.9em;
+}
+
+.bibliography p {
+    margin: 0.25em 0;
+}
+
+/* Highlighted paragraphs (custom container) */
+.hl-para,
+.custom-block.tip {
+    background-color: color-mix(in srgb, var(--highlight-color) 35%, white);
+    border-left-color: var(--highlight-color);
+    color: var(--vp-c-text-1);
+}
+
+.custom-block.tip a {
+    color: var(--highlight-color);
+}
+
+.dark .custom-block.tip {
+    background-color: color-mix(in srgb, var(--highlight-color) 30%, #111);
+    color: var(--vp-c-text-1);
+}
+
+.dark .custom-block.tip a {
+    color: color-mix(in srgb, var(--highlight-color) 70%, white);
+}
+
+/* Nice blockquotes */
+blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* Post listing styles */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    border-top: 1px solid var(--vp-c-divider);
+    padding: 1rem 0;
+}
+
+.post-item:first-child {
+    border-top: none;
+}
+
+.post-item-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.post-item-date {
+    font-size: 0.875rem;
+    color: var(--vp-c-text-2);
+}
+
+.post-item-excerpt {
+    margin-top: 0.5rem;
+    color: var(--vp-c-text-2);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--vp-c-divider);
+}
+
+.pagination-link.disabled {
+    color: var(--vp-c-text-3);
+    cursor: not-allowed;
+}

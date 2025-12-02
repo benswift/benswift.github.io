@@ -1,13 +1,22 @@
+# VitePress
+.vitepress/cache
+.vitepress/dist
+.vitepress/.temp
+
+# Node
+node_modules/
+
+# Jekyll (legacy - can remove after migration)
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-
 .ruby-version
+
+# ClojureScript
 .cljs_node_repl/
 
-# don't commit the output files
+# Generated files
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.pdf
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.tex
-/node_modules/

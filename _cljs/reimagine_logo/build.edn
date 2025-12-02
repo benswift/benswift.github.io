@@ -1,6 +1,0 @@
-{:optimizations :advanced
- :main reimagine-logo.core
- :output-to "../../assets/js/reimagine-logo.js"
- :infer-externs false
- :npm-deps false
- }

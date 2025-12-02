@@ -1,16 +1,17 @@
 ---
+layout: doc
 title: Bio
-layout: page
-permalink: /bio/
 ---
 
-{% include picture.html file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot" credit="Andrew Meares" %}
+# Bio
 
-{:.hl-para}
+<Picture file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot" credit="Andrew Meares" />
 
-Note: this is a personal bio page. If you're after a more "researcher-y" bio,
-then have a look at my [research page]({% link research.md %}), or check out my
-[CV]({% link cv.md %}) (which contains a lot of the same stuff).
+::: tip Note
+This is a personal bio page. If you're after a more "researcher-y" bio,
+then have a look at my [research page](/research), or check out my
+[CV](/cv).
+:::
 
 I'm a [Canberra](https://en.wikipedia.org/wiki/Canberra) lad, born and bred. One
 day I may move away from this place, but for now I'm here and quite happy about

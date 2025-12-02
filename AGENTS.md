@@ -1,12 +1,10 @@
 # benswift.me blog post writing style guide
 
-## Building the site
+This is a vitepress site. Always use ts (not js) and follow vitepress
+conventions wherever possible. Stick to modern best practices, e.g. es6 modules.
 
-If jekyll build fails with a missing bluesky.svg error, run:
-```
-./scripts/add-bluesky-icon.sh
-```
-This adds the Bluesky Font Awesome icon (which isn't in the jekyll-fontawesome-svg gem yet).
+This blog was previously a jekyll site, and that code is still available on the
+`main` branch.
 
 ## Voice and tone
 

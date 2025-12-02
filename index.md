@@ -1,17 +1,38 @@
 ---
-layout: page
+layout: home
+
+hero:
+  name: Ben Swift
+  text: livecoder & researcher
+  tagline: code, creativity, culture
+  image:
+    src: /assets/images/pages/theremin-75.jpg
+    alt: Ben performing live as a musical livecoder
+  actions:
+    - theme: brand
+      text: Blog
+      link: /blog/
+    - theme: alt
+      text: Research
+      link: /research
+
+features:
+  - title: Research
+    details: Peer-reviewed publications on livecoding, creative computing, and human-computer interaction.
+    link: /research
+  - title: Livecoding
+    details: Curated and invited livecoding performances around the world.
+    link: /livecoding/
+  - title: Teaching
+    details: Courses on creative computing, computer music, and cybernetics.
+    link: /teaching
 ---
 
-<picture style="overflow: hidden; height: 0; padding-top: 66.5%;">
-<img src='{{"/assets/" | append: "images/pages/theremin-75.jpg" | relative_url}}' alt="Ben performing live as a musical livecoder. His back is to the camera (and the audience) giving the photo a mysterious auteur energy (or so he hopes)." />
-</picture>
-
-Hi, I'm Ben Swift---I'm a [researcher]({% link research.md %}), [artist]({% link
-livecoding.md %}) and
+Hi, I'm Ben Swift---I'm a [researcher](/research), [artist](/livecoding/) and
 [creative technologist/software engineer](https://github.com/benswift), and
 (among other things) I lead the Cybernetic Studio at the
 [ANU School of Cybernetics](https://cybernetics.anu.edu.au/). Sometimes I write
-about that stuff on my [blog]({% link blog.md %}).
+about that stuff on my [blog](/blog/).
 
 I care a lot about making computing a welcoming, interesting and creatively
 satisfying place, especially for people who don't fit the traditional picture of
