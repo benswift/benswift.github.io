@@ -8,15 +8,6 @@ event_url: "https://innovationact.org"
 venue_url: "https://jcsmr.anu.edu.au"
 ---
 
-# Innovation ACT 2015 Launch
-
-<p class="post-date">12 Aug 2015</p>
-
-**Venue:**
-[John Curtin School of Medical Research, Canberra](https://jcsmr.anu.edu.au) |
-**Type:** curated | [Event page](https://innovationact.org) | **Curators:**
-Natalija Nikolic | **Artists:** Ben Swift
-
 <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315617174?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
 
 [Innovation ACT](https://innovationact.org) (IACT) is Canberra's largest

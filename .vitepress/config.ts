@@ -58,6 +58,16 @@ export default defineConfig({
         pageData.frontmatter.date = `${year}-${month}-${day}`;
       }
     }
+
+    // Set defaults for livecoding gig pages
+    const isGigPage =
+      pageData.relativePath.startsWith("livecoding/") &&
+      pageData.relativePath !== "livecoding/index.md";
+
+    if (isGigPage) {
+      pageData.frontmatter.aside ??= false;
+      pageData.frontmatter.isGig = true;
+    }
   },
 
   // Vite configuration

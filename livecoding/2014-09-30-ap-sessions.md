@@ -6,13 +6,6 @@ venue: "Australian National University"
 type: "study"
 ---
 
-# The AP Sessions
-
-<p class="post-date">30 Sept 2014</p>
-
-**Venue:** Australian National University | **Type:** study | **Curators:** Ari
-Purcell | **Artists:** Ben Swift
-
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I
 performed in 2014 as part of my student
 [Ari Purcell's](https://arrianpurcell.com) research project: _Visualising a Live

@@ -8,15 +8,6 @@ event_url: "https://www.facebook.com/events/200014520685862/"
 venue_url: "https://www.thedoughnutdept.com/welcome"
 ---
 
-# Shirty Science Season 3 launch party
-
-<p class="post-date">13 Aug 2018</p>
-
-**Venue:** [Doughnut Dept., Canberra](https://www.thedoughnutdept.com/welcome) |
-**Type:** curated |
-[Event page](https://www.facebook.com/events/200014520685862/) | **Curators:**
-Madison Hartill-Law | **Artists:** Ben Swift, Kieran Browne
-
 [Shirty Science](https://shirtyscience.com/) is an ongoing arts/science
 collaboration; scientists get paired up with artists to make a sweet t-shirt
 explaining/showing off their research.

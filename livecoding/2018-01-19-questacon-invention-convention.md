@@ -8,15 +8,6 @@ event_url: "https://www.questacon.edu.au/outreach/programmes/questacon-smart-ski
 venue_url: "https://www.questacon.edu.au"
 ---
 
-# National Invention Convention '18 Closing Ceremony
-
-<p class="post-date">19 Jan 2018</p>
-
-**Venue:** [Questacon, Canberra](https://www.questacon.edu.au) | **Type:**
-curated |
-[Event page](https://www.questacon.edu.au/outreach/programmes/questacon-smart-skills-initiative/questacon-invention-convention#term1569)
-| **Curators:** Elisha Deschamps | **Artists:** Ben Swift
-
 The
 [National Invention Convention](https://www.questacon.edu.au/outreach/programmes/questacon-smart-skills-initiative/questacon-invention-convention#term1569)
 is an all-expenses paid, five day workshop at Questacon in Canberra, held every

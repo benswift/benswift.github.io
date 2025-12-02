@@ -9,15 +9,6 @@ venue_url: "https://dhg.anu.edu.au"
 video_url: "https://vimeo.com/356811176"
 ---
 
-# Colour Coded
-
-<p class="post-date">2 Aug 2019</p>
-
-**Venue:** [Drill Hall Gallery, Canberra](https://dhg.anu.edu.au) | **Type:**
-curated | [Event page](https://www.facebook.com/events/359350878094918/) |
-[Video](https://vimeo.com/356811176) | **Curators:** Lucy Chetcuti, Joanne Leong
-| **Artists:** Ben Swift, Kieran Browne, Charles Martin
-
 [Kieran Browne](https://kieranbrowne.com) (live GLSL shader hacking),
 [Charles Martin](https://charlesmartin.com.au/) (live Pd & electronics) I
 (livecoding in Extempore) were invited to perform at **Colour Coded** as part of

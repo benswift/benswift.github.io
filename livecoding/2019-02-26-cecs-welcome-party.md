@@ -7,14 +7,6 @@ type: "invited"
 event_url: "https://cs.anu.edu.au/events/cecs-welcome-party"
 ---
 
-# CECS Welcome Party 2019
-
-<p class="post-date">26 Feb 2019</p>
-
-**Venue:** ANU College of Engineering, Computing and Cybernetics | **Type:**
-invited | [Event page](https://cs.anu.edu.au/events/cecs-welcome-party) |
-**Curators:** Elanor Huntington | **Artists:** Ben Swift, Kieran Browne
-
 As usual, [CECS](https://cecs.anu.edu.au/) kicked off the year with a welcome
 party for students & staff old and new. [Kieran](https://kieranbrowne.com) and I
 were invited back this year to do a 90min livecoding set---I'm making the music

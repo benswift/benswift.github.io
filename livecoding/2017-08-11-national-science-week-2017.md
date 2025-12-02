@@ -8,14 +8,6 @@ event_url: "https://www.scienceweek.net.au"
 venue_url: "https://www.nfsa.gov.au"
 ---
 
-# National Science Week '17 ACT Launch Event
-
-<p class="post-date">11 Aug 2017</p>
-
-**Venue:** [National Film and Sound Archive, Canberra](https://www.nfsa.gov.au)
-| **Type:** curated | [Event page](https://www.scienceweek.net.au) |
-**Curators:** Madison Hartill-Law | **Artists:** Ben Swift
-
 National Science Week is such a great event, with so many activities and events
 designed to get folks engaged with science. Each state also holds a "launch
 event", where guest speakers kick things off and just generally get everyone

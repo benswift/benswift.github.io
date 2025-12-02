@@ -9,17 +9,6 @@ venue_url: "https://soad.cass.anu.edu.au/gallery-exhibitions"
 video_url: "https://vimeo.com/78788032"
 ---
 
-# Revenant Media: Theremin '75 Exhibition
-
-<p class="post-date">25 Oct 2013</p>
-
-**Venue:**
-[ANU School of Art Gallery, Canberra](https://soad.cass.anu.edu.au/gallery-exhibitions)
-| **Type:** curated |
-[Event page](https://soad.cass.anu.edu.au/events/revenant-media) |
-[Video](https://vimeo.com/78788032) | **Curators:** Martyn Jolly | **Artists:**
-Ben Swift
-
 <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315611155?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
 
 That's a crowd video from the gig---not always the best viewpoint for looking at
