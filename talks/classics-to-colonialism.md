@@ -73,7 +73,7 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 ## in code
 
-```extempore
+```xtlang
 (define (gcd a b)
   (if (= a b)
       a
@@ -82,7 +82,7 @@ _animation from [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_algorithm)_
 
 ## in code (a bit more efficient)
 
-```extempore
+```xtlang
 (define (gcd a b)
   (if (= a 0)
       b

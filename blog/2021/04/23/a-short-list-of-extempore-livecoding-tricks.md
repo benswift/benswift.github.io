@@ -49,7 +49,7 @@ variable (which is an explicit argument in most temporal recursions), but is
 also implicitly bound in the pattern expression if you're using the pattern
 language:
 
-```extempore
+```xtlang
 (if (= (modulo beat 2) 0)
     (println 'downbeat))
 
@@ -62,7 +62,7 @@ language:
 The default sharedsystem instruments are defined near the top of the
 `examples/sharedsystem/audiosetup.xtm` file:
 
-```extempore
+```xtlang
 (make-instrument syn1 analogue)
 (make-instrument syn2 analogue)
 (make-instrument syn3 analogue)
@@ -77,7 +77,7 @@ engine's work to be distributed across multiple cores).
 In each of the DSP functions (e.g. `dsp1`), the actual work of getting the
 "signal" out of the relevant instrument happens in a line like this:
 
-```extempore
+```xtlang
 (set! out (syn1 in time chan dat))
 ```
 
@@ -92,7 +92,7 @@ To add e.g. an `fmsynth` to the sharedsystem setup, there are two steps:
 
 Here's an example (in `dsp1` as per the previous example):
 
-```extempore
+```xtlang
 (set! out (+ (syn1 in time chan dat)
              (fmsynth in time chan dat)))
 ```
@@ -109,7 +109,7 @@ Consider the following temporal recursion, which (in addition to the usual
 `beat` and `dur` arguments) also takes a `pitch` argument. This is the exact
 code I wrote yesterday:
 
-```extempore
+```xtlang
 (define (obi-lead beat dur) pitch
   (play samp1 pitch (cosr 75 20 5/3) dur 2)
   (callback (*metro* (+ beat (* .5 dur))) 'obi-lead (+ beat dur) dur
@@ -159,7 +159,7 @@ As promised (Caleb!) here's the syntax for doing a weighted random sample: the
 key is that the argument to `random` isn't a list of `cons` pairs, it's multiple
 `cons` pair arguments, each one of the form `(cons WEIGHTING VALUE)`.
 
-```extempore
+```xtlang
 ;; here's an example: note that it's in a "do 10 times" loop to show that the
 ;; values are indeed sampled using the appropriate weighting
 (dotimes (i 10)
@@ -184,7 +184,7 @@ likely as the others" then it's usually simpler to just randomly sample
 (equally-weighted) from a list, including duplicate values for the things you
 want to turn up more often in the output:
 
-```extempore
+```xtlang
 ;; 0 will be twice as likely as 3 or 7
 (random (list 0 0 3 7))
 ```
@@ -194,7 +194,7 @@ want to turn up more often in the output:
 ::: tip From here on, all the following code snippets assume you've loaded the
 pattern language with
 
-```extempore
+```xtlang
 (sys:load "libs/core/pattern-language.xtm")
 ```
 
@@ -208,14 +208,14 @@ So, if you're starting with a middle C (midi note `60`) and you want to go `2`
 notes up the scale (and you haven't changed value of the `*scale*` variable from
 the default "C natural minor" scale) then you can use:
 
-```extempore
+```xtlang
 (rel 60 2)
 ```
 
 This can be handy when paired with the `range` function (which just generates
 lists of integers) for running your scales:
 
-```extempore
+```xtlang
 (:> scale-runner 4 0 (play samp1 (rel 60 @1) 80 dur) (range 8))
 ```
 
@@ -227,7 +227,7 @@ providing a different scale, if e.g. you want to use a different scale for your
 
 Here's an example:
 
-```extempore
+```xtlang
 ;; set scale to F natural minor
 (set! *scale* (pc:scale 5 'aeolian))
 
@@ -248,7 +248,7 @@ which are the pitches from an Fm7 chord, so it all checks out.
 As one final tip, you can just skip the call to `pc:chord` altogether and do
 something like:
 
-```extempore
+```xtlang
 (rel 65 (random 4) '(5 8 0 3))
 ```
 
@@ -264,14 +264,14 @@ repeatedly evaluating a form.
 
 So, one way to get a list of 10 `0`s is:
 
-```extempore
+```xtlang
 (nof 10 0)
 ```
 
 To get a list of 4 random integers between `0` and `9` (inclusive) you could
 use:
 
-```extempore
+```xtlang
 (nof 4 (random 10))
 ```
 
@@ -284,7 +284,7 @@ This is where the fact that it's a _macro_---not a function---comes into play.
 One trick for looking at what a macro form "macroexpands" out to is calling
 `macro-expand` (note that the `nof` form has been quoted using `'`):
 
-```extempore
+```xtlang
 (println (macro-expand '(nof 4 (random 10))))
 
 ;; prints:
@@ -300,7 +300,7 @@ If this isn't actually the behaviour you want---if you want the same random
 number repeated four times, there's a `repeat` function which you probably want
 to use instead. Notice the difference:
 
-```extempore
+```xtlang
 (println (nof 4 (random 10)))
 (println (repeat 4 (random 10)))
 
@@ -323,7 +323,7 @@ inner forms as necessary using the unquote operator (`,`).
 That's not easy to get your head around when explained in words, but here's an
 example:
 
-```extempore
+```xtlang
 ;; this is kindof tedious to write
 '(c3 | | | | | d3 e3)
 
@@ -342,7 +342,7 @@ One way to do it is show in the example file
 `examples/sharedsystem/analogue_synth_basics.xtm`. Have a look around line 39,
 where it says:
 
-```extempore
+```xtlang
 ;; and now add a second pattern to 'sweep' the filter
 (:> B 4 0 (set_filter_env syn1 40.0 100.0 (trir 0.0 1.0 1/32) 100.0) (nof 16 0))
 ```
@@ -359,7 +359,7 @@ then using a standard temporal recursion is probably best.
 Here are a couple of examples. First, this recursion will keep playing the notes
 until the `pitch` argument gets to `72`.
 
-```extempore
+```xtlang
 (define (ascending-chromatic beat dur pitch)
   (play syn1 pitch 80 dur)
   (if (< pitch 72)
@@ -384,7 +384,7 @@ list) each time until it's empty, then stopping.
 So, here's a way of playing a scale---ascending, then descending---then
 stopping.
 
-```extempore
+```xtlang
 (define (ascending-descending-scale beat dur plist)
   ;; note the (car plist) since plist is a list, not a number
   (play syn1 (car plist) 80 dur)
@@ -427,7 +427,7 @@ The alternative (manual) way to sync up two laptops is to:
 
 1. make sure you're both using the same tempo:
 
-   ```extempore
+   ```xtlang
    (*metro* 'set-tempo 140) ;; or whatever tempo you like
    ```
 
@@ -438,7 +438,7 @@ The alternative (manual) way to sync up two laptops is to:
    [rushing or dragging](https://www.youtube.com/watch?v=ZQ_6VUs2VCk), and then
    executing the appropriate `*metro*` function call:
 
-   ```extempore
+   ```xtlang
    ;; if you're rushing
    (*metro* 'pull)
 
@@ -509,7 +509,7 @@ get a "pristine" version at any time from
 _everything_ required to set up your Extempore session into one file, then you
 can just load that file with e.g.
 
-```extempore
+```xtlang
 (sys:load "/Users/ben/Documents/research/extemporelang/xtm/sessions/lens-2021-demo/setup.xtm")
 ```
 
