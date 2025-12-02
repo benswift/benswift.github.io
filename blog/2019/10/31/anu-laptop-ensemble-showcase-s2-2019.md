@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">31 Oct 19</p>
 
-<TagList :tags='["lens","gigs"]' />
+<TagList />
 
 
 Last weekend the S2 2019

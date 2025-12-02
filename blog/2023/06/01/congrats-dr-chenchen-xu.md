@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">1 June 23</p>
 
-<TagList :tags='["research","ai"]' />
+<TagList />
 
 
 A big congratulations do my PhD student Chenchen for successfully completing his

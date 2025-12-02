@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">11 Aug 17</p>
 
-<TagList :tags='["gigs","livecoding"]' />
+<TagList />
 
 
 I'm playing a livecoding set at the [ACT Science Week launch party

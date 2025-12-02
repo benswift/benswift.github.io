@@ -3,7 +3,6 @@ title: "Cybernetic Studio Launch @ SXSW Sydney"
 aside: false
 layout: doc
 tags:
-  - studio
   - ai
 ---
 
@@ -11,7 +10,7 @@ tags:
 
 <p class="post-date">8 Oct 25</p>
 
-<TagList :tags='["studio","ai"]' />
+<TagList />
 
 
 I'm launching the

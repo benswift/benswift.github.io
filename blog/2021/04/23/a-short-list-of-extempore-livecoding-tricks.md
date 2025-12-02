@@ -12,7 +12,7 @@ tags:
 
 <p class="post-date">23 Apr '21</p>
 
-<TagList :tags='["livecoding","extempore","lens"]' />
+<TagList />
 
 Yesterday's [LENS](https://comp.anu.edu.au/courses/laptop-ensemble/) class
 discussion turned into an [AMA](https://www.reddit.com/r/AMA/) of how I do

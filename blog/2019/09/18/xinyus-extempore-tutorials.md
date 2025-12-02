@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">18 Sept 19</p>
 
-<TagList :tags='["livecoding","extempore"]' />
+<TagList />
 
 
 These tutorials are part of Xinyu Hou's research project to create a set of

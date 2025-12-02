@@ -3,14 +3,14 @@ title: "rclone: exclude all git repos"
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
 ---
 
 # rclone: exclude all git repos
 
 <p class="post-date">11 Jan 23</p>
 
-<TagList :tags='["tools"]' />
+<TagList />
 
 
 For a long time I've used [rclone](https://rclone.org) for remote backups and

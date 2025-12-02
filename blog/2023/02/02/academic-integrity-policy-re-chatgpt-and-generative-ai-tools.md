@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">2 Feb '23</p>
 
-<TagList :tags='["teaching","ai"]' />
+<TagList />
 
 Here in Australia Semester 1 is approaching and
 [ChatGPT](https://chat.openai.com) is, undoubtedly, _a thing_. From a practical

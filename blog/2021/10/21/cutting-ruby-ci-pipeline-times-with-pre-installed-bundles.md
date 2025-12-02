@@ -3,15 +3,14 @@ title: "Cutting ruby CI pipeline times with pre-installed bundles"
 aside: false
 layout: doc
 tags:
-  - tools
-  - web
+  - dev
 ---
 
 # Cutting ruby CI pipeline times with pre-installed bundles
 
 <p class="post-date">21 Oct 21</p>
 
-<TagList :tags='["tools","web"]' />
+<TagList />
 
 
 I (and, increasingly many of my colleagues) are using

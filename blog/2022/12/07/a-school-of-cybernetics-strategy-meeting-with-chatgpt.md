@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">7 Dec 22</p>
 
-<TagList :tags='["ai","cybernetics"]' />
+<TagList />
 
 
 Back at my desk after a couple of days off I finally got a chance to fire up the

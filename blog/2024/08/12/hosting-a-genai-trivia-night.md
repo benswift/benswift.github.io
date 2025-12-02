@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">12 Aug 24</p>
 
-<TagList :tags='["ai"]' />
+<TagList />
 
 
 I was recently tasked with organising a trivia night, and decided to generate

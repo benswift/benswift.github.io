@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">7 Nov 24</p>
 
-<TagList :tags='["teaching","ai"]' />
+<TagList />
 
 
 _Note: this stuff is the workshop content for an alumni workshop in November

@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">30 Aug 19</p>
 
-<TagList :tags='["reimagine"]' />
+<TagList />
 
 
 If you've been following the CECS newsletter, you'll know that the inaugural

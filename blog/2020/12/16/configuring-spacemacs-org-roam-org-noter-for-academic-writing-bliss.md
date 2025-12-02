@@ -4,14 +4,14 @@ aside: false
 layout: doc
 tags:
   - research
-  - emacs
+  - dev
 ---
 
 # Configuring Spacemacs org-roam & org-noter for academic writing bliss
 
 <p class="post-date">16 Dec 20</p>
 
-<TagList :tags='["research","emacs"]' />
+<TagList />
 
 
 I've always had a decent memory, and so I've never really had a formal system

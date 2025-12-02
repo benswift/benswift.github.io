@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">12 Oct 22</p>
 
-<TagList :tags='["cybernetics"]' />
+<TagList />
 
 
 For the last year or so my team has been collaborating with the good folks at

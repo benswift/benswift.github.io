@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">29 July 19</p>
 
-<TagList :tags='["livecoding","gigs"]' />
+<TagList />
 
 
 For those who visit my blog to hear my livecoding gigs, there's one this Friday.

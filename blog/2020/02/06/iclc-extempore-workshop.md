@@ -12,7 +12,7 @@ tags:
 
 <p class="post-date">6 Feb 20</p>
 
-<TagList :tags='["extempore","livecoding","teaching"]' />
+<TagList />
 
 
 If you're here for the [ICLC Extempore

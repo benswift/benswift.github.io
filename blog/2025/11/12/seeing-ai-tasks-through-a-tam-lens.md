@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">12 Nov 25</p>
 
-<TagList :tags='["ai"]' />
+<TagList />
 
 
 When it comes to AI adoption research, we keep asking "do you use ChatGPT?" when

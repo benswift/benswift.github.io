@@ -3,14 +3,13 @@ title: "On parental leave and auto-reply messages"
 aside: false
 layout: doc
 tags:
-  - life
 ---
 
 # On parental leave and auto-reply messages
 
 <p class="post-date">26 Feb 19</p>
 
-<TagList :tags='["life"]' />
+<TagList />
 
 
 I'm now (as of the date of this blog post) on parental leave ([thanks,

@@ -12,7 +12,7 @@ tags:
 
 <p class="post-date">1 Oct 19</p>
 
-<TagList :tags='["teaching","reimagine","lens"]' />
+<TagList />
 
 
 The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: [ANU

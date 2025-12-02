@@ -13,7 +13,7 @@ tags:
 
 <p class="post-date">11 June 20</p>
 
-<TagList :tags='["livecoding","ccc","lens","gigs"]' />
+<TagList />
 
 
 <Picture file="images/posts/lens2020-final-gig-poster.jpg" alt="LENS S1 2020 final gig poster" />

@@ -3,7 +3,7 @@ title: "Running an AI neural style transfer model under Singularity"
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
   - ai
 ---
 
@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">1 Feb 22</p>
 
-<TagList :tags='["tools","ai"]' />
+<TagList />
 
 
 I've recently been given access to a beefy AI server (6x RTX3090s!) which is

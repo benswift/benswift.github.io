@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">25 Jan 21</p>
 
-<TagList :tags='["teaching"]' />
+<TagList />
 
 
 Many students here at the ANU School of Computing take a capstone project at the

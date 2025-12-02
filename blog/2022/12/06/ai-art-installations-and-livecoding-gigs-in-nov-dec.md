@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">6 Dec 22</p>
 
-<TagList :tags='["livecoding","ai"]' />
+<TagList />
 
 
 If you [follow me on bluesky](https://bsky.app/profile/benswift.me) you've seen

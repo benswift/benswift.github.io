@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">28 Jan 20</p>
 
-<TagList :tags='["gigs","livecoding"]' />
+<TagList />
 
 
 <Picture file="images/posts/smoke-gig-ad-Jan-2020.jpg" alt="ad for Smoke gig - see FB event for details" />

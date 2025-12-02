@@ -3,15 +3,14 @@ title: "Algorithmic uni marketing billboards"
 aside: false
 layout: doc
 tags:
-  - widgets
-  - web
+  - dev
 ---
 
 # Algorithmic uni marketing billboards
 
 <p class="post-date">16 Feb 19</p>
 
-<TagList :tags='["widgets","web"]' />
+<TagList />
 
 
 In the spirit of Murdoch University's

@@ -12,7 +12,7 @@ tags:
 
 <p class="post-date">20 Mar 19</p>
 
-<TagList :tags='["reimagine","teaching","research"]' />
+<TagList />
 
 
 *Note to readers:* this is the project plan for my **Reimagine Fellowship**. If

@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">17 July 25</p>
 
-<TagList :tags='["ai"]' />
+<TagList />
 
 
 > Sticks and stones may break my bones, but words will never hurt me.

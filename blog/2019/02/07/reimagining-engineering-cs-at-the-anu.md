@@ -12,7 +12,7 @@ tags:
 
 <p class="post-date">7 Feb 19</p>
 
-<TagList :tags='["teaching","research","reimagine"]' />
+<TagList />
 
 
 The [ANU College of Engineering, Computing and

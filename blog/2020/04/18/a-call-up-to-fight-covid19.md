@@ -4,14 +4,13 @@ aside: false
 layout: doc
 tags:
   - research
-  - covid19
 ---
 
 # A call-up to fight covid19
 
 <p class="post-date">18 Apr 20</p>
 
-<TagList :tags='["research","covid19"]' />
+<TagList />
 
 
 As with many folks at the moment (both in Canberra and around the world) I've

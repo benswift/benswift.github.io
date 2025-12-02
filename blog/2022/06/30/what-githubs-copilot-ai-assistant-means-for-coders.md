@@ -3,7 +3,7 @@ title: "So this is how it feels when the robots come for your job: what GitHub's
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
   - ai
 ---
 
@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">30 June 22</p>
 
-<TagList :tags='["tools","ai"]' />
+<TagList />
 
 
 I wrote [a piece for the Conversation][conversation] about GitHub's new

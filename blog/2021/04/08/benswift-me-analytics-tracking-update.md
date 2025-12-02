@@ -3,14 +3,14 @@ title: "benswift.me analytics/tracking update"
 aside: false
 layout: doc
 tags:
-  - web
+  - dev
 ---
 
 # benswift.me analytics/tracking update
 
 <p class="post-date">8 Apr 21</p>
 
-<TagList :tags='["web"]' />
+<TagList />
 
 
 I haven't had any sort of client-side analytics (e.g. Google Analytics) on

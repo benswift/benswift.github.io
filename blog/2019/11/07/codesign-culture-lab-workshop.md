@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">7 Nov '19</p>
 
-<TagList :tags='["reimagine","ccc"]' />
+<TagList />
 
 ::: tip tl;dr In this workshop you'll:
 

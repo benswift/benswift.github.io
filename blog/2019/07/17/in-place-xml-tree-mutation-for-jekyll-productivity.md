@@ -3,14 +3,14 @@ title: "In-place XML tree mutation for Jekyll productivity"
 aside: false
 layout: doc
 tags:
-  - web
+  - dev
 ---
 
 # In-place XML tree mutation for Jekyll productivity
 
 <p class="post-date">17 July 19</p>
 
-<TagList :tags='["web"]' />
+<TagList />
 
 
 I wrote a [reveal.js](/blog/2018/09/28/another-reveal.js-plugin-for-jekyll) plugin for Jekyll

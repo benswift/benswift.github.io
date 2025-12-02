@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">5 June 18</p>
 
-<TagList :tags='["ccc"]' />
+<TagList />
 
 
 _What's your favourite movie?_ Most folks already have an answer to this

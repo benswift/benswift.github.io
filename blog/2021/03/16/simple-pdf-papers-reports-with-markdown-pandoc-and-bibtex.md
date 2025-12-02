@@ -4,14 +4,14 @@ aside: false
 layout: doc
 tags:
   - research
-  - tools
+  - dev
 ---
 
 # Simple pdf papers/reports with markdown, pandoc and bibtex
 
 <p class="post-date">16 Mar 21</p>
 
-<TagList :tags='["research","tools"]' />
+<TagList />
 
 
 I've long raged against the machine of my institution's default LaTeX template

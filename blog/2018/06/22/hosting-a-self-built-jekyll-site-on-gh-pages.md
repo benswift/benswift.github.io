@@ -3,14 +3,14 @@ title: "Hosting a self-built jekyll site on GH pages"
 aside: false
 layout: doc
 tags:
-  - web
+  - dev
 ---
 
 # Hosting a self-built jekyll site on GH pages
 
 <p class="post-date">22 June 18</p>
 
-<TagList :tags='["web"]' />
+<TagList />
 
 
 This blog is built from [markdown](https://commonmark.org/help/) files using

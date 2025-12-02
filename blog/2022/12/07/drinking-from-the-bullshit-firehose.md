@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">7 Dec 22</p>
 
-<TagList :tags='["ai","teaching"]' />
+<TagList />
 
 
 https://stratechery.com/2022/ai-homework/

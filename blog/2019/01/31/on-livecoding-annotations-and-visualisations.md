@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">31 Jan 19</p>
 
-<TagList :tags='["livecoding"]' />
+<TagList />
 
 
 I've just finished reading Charlie Roberts' [interactive web essay on

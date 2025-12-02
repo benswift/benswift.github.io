@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">15 Oct 19</p>
 
-<TagList :tags='["extempore"]' />
+<TagList />
 
 
 [libsndfile](https://github.com/erikd/libsndfile/) is "a C library for reading

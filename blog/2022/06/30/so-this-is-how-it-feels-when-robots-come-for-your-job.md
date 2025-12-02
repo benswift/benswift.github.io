@@ -3,7 +3,7 @@ title: "So this is how it feels when the robots come for your job"
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
   - ai
 ---
 
@@ -13,7 +13,7 @@ tags:
 
 <p class="post-subtitle">what GitHub's Copilot 'AI assistant' means for coders</p>
 
-<TagList :tags='["tools","ai"]' />
+<TagList />
 
 
 <Picture file="images/posts/file-20220629-24-n3q489.jpeg" alt="a person typing away at some code on a laptop computer" />

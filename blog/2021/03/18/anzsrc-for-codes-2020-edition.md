@@ -4,14 +4,14 @@ aside: false
 layout: doc
 tags:
   - research
-  - government
+  - policy
 ---
 
 # ANZSRC FoR Codes 2020 edition
 
 <p class="post-date">18 Mar 21</p>
 
-<TagList :tags='["research","government"]' />
+<TagList />
 
 
 The Australian Research Council (well, technically the

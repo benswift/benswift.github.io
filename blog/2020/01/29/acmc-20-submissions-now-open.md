@@ -4,7 +4,6 @@ aside: false
 layout: doc
 tags:
   - gigs
-  - acma
   - livecoding
 ---
 
@@ -12,7 +11,7 @@ tags:
 
 <p class="post-date">29 Jan 20</p>
 
-<TagList :tags='["gigs","acma","livecoding"]' />
+<TagList />
 
 
 Good news everyone; we're hosting the annual [Australasian Computer Music

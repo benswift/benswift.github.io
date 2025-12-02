@@ -3,14 +3,14 @@ title: "Another reveal.js plugin for Jekyll"
 aside: false
 layout: doc
 tags:
-  - web
+  - dev
 ---
 
 # Another reveal.js plugin for Jekyll
 
 <p class="post-date">28 Sept 18</p>
 
-<TagList :tags='["web"]' />
+<TagList />
 
 
 I use [Jekyll](https://jekyllrb.com/) to create my course websites and

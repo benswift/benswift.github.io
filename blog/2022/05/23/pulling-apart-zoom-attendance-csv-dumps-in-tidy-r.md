@@ -3,14 +3,14 @@ title: "Pulling apart Zoom attendance csv dumps in tidy R"
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
 ---
 
 # Pulling apart Zoom attendance csv dumps in tidy R
 
 <p class="post-date">23 May 22</p>
 
-<TagList :tags='["tools"]' />
+<TagList />
 
 
 My team ran some Zoom training last week and today I needed to figure out who

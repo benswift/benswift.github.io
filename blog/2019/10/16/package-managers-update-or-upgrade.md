@@ -3,15 +3,14 @@ title: "Package managers: <code>update</code> or <code>upgrade</code>?"
 aside: false
 layout: doc
 tags:
-  - tools
-  - ux
+  - dev
 ---
 
 # Package managers: <code>update</code> or <code>upgrade</code>?
 
 <p class="post-date">16 Oct 19</p>
 
-<TagList :tags='["tools","ux"]' />
+<TagList />
 
 
 Quick quiz: for the following language/system

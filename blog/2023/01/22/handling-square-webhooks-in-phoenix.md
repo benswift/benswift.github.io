@@ -3,16 +3,14 @@ title: "Handling Square Webhooks in Phoenix"
 aside: false
 layout: doc
 tags:
-  - web
-  - elixir
-  - phoenix
+  - dev
 ---
 
 # Handling Square Webhooks in Phoenix
 
 <p class="post-date">22 Jan 23</p>
 
-<TagList :tags='["web","elixir","phoenix"]' />
+<TagList />
 
 
 My [brother's

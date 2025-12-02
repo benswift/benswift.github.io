@@ -3,7 +3,7 @@ title: "Redacting craiyon prompts with imagemagick"
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
   - ai
 ---
 
@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">22 June 22</p>
 
-<TagList :tags='["tools","ai"]' />
+<TagList />
 
 
 I've been messing around with [craiyon](https://www.craiyon.com) (formerly

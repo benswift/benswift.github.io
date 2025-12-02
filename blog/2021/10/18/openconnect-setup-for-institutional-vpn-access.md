@@ -3,14 +3,14 @@ title: "openconnect setup for institutional VPN access"
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
 ---
 
 # openconnect setup for institutional VPN access
 
 <p class="post-date">18 Oct 21</p>
 
-<TagList :tags='["tools"]' />
+<TagList />
 
 
 My [institution's](https://www.anu.edu.au) IT policies have recently changed and

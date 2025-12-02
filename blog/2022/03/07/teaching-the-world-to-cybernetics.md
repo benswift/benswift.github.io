@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">7 Mar 22</p>
 
-<TagList :tags='["cybernetics"]' />
+<TagList />
 
 
 If you're the sort of person who lurks on people's LinkedIn accounts, you may

@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">9 Sept 19</p>
 
-<TagList :tags='["reimagine"]' />
+<TagList />
 
 
 I'm now a [Reimagine Fellow](/blog/2019/08/30/Im-a-reimagine-fellow) and stuff to do with that program

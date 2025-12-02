@@ -4,14 +4,14 @@ aside: false
 layout: doc
 tags:
   - livecoding
-  - media
+  - policy
 ---
 
 # Livecoding article on the ABC
 
 <p class="post-date">24 July 19</p>
 
-<TagList :tags='["livecoding","media"]' />
+<TagList />
 
 
 In case you missed it, I was interviewed for [an article on the ABC News

@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">30 Apr 20</p>
 
-<TagList :tags='["extempore","lens"]' />
+<TagList />
 
 
 Because [Extempore](https://github.com/digego/extempore) and

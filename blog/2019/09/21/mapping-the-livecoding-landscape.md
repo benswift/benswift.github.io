@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">21 Sept 19</p>
 
-<TagList :tags='["livecoding","research"]' />
+<TagList />
 
 
 ## People

@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">29 Jan 19</p>
 
-<TagList :tags='["teaching"]' />
+<TagList />
 
 
 One of my academic responsibilities is teaching our ANU Computer Science

@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">25 Jan 20</p>
 
-<TagList :tags='["teaching","lens"]' />
+<TagList />
 
 
 The Laptop Ensemble (LENS) is happening again in Semester 1 2020 as a for-credit

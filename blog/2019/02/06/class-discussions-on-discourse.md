@@ -4,14 +4,14 @@ aside: false
 layout: doc
 tags:
   - teaching
-  - web
+  - dev
 ---
 
 # Class discussions on Discourse
 
 <p class="post-date">6 Feb 19</p>
 
-<TagList :tags='["teaching","web"]' />
+<TagList />
 
 
 In 2018 I (with the support of the Teaching & Learning IT team in

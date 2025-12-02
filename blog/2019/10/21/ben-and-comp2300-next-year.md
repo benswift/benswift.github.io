@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">21 Oct 19</p>
 
-<TagList :tags='["teaching"]' />
+<TagList />
 
 
 Students[^organised-ones] are starting to turn their gaze towards 2020, and so

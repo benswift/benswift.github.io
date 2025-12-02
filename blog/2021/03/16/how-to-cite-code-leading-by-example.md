@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">16 Mar 21</p>
 
-<TagList :tags='["teaching"]' />
+<TagList />
 
 
 In our [Computing Education Reading

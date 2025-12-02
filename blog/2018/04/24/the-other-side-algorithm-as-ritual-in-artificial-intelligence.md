@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">24 Apr 18</p>
 
-<TagList :tags='["research","ai"]' />
+<TagList />
 
 
 Tomorrow morning (Wed April 25, 9am Montréal time) Kieran Browne and I are

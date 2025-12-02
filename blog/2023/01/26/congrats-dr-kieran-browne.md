@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">26 Jan 23</p>
 
-<TagList :tags='["research","ai"]' />
+<TagList />
 
 
 Last December [Kieran](https://kieranbrowne.com) graduated---very exciting for

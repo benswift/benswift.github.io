@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">8 Feb 23</p>
 
-<TagList :tags='["ai","teaching"]' />
+<TagList />
 
 
 Posting logs of [ChatGPT](https://chat.openai.com) interaction is getting a bit

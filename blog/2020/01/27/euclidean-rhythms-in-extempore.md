@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">27 Jan 20</p>
 
-<TagList :tags='["extempore"]' />
+<TagList />
 
 
 As part of the new Extempore pattern language stuff I added a helper for

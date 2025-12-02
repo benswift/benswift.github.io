@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">22 June 18</p>
 
-<TagList :tags='["research"]' />
+<TagList />
 
 
 Here's a photo of Kieran and I hanging out at CHI. I'll write a more detailed

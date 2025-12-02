@@ -3,14 +3,14 @@ title: "Bulk-add students to MS Teams from a csv file"
 aside: false
 layout: doc
 tags:
-  - tools
+  - dev
 ---
 
 # Bulk-add students to MS Teams from a csv file
 
 <p class="post-date">1 Apr 21</p>
 
-<TagList :tags='["tools"]' />
+<TagList />
 
 
 [My institution](https://anu.edu.au) now uses [MS

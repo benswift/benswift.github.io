@@ -4,14 +4,14 @@ aside: false
 layout: doc
 tags:
   - ai
-  - government
+  - policy
 ---
 
 # Tracking APS AI Transparency Statements
 
 <p class="post-date">11 Nov 25</p>
 
-<TagList :tags='["ai","government"]' />
+<TagList />
 
 
 New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**

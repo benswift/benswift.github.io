@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">13 Sept 21</p>
 
-<TagList :tags='["teaching","livecoding"]' />
+<TagList />
 
 
 ::: tip

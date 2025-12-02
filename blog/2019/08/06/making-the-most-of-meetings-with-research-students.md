@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">6 Aug 19</p>
 
-<TagList :tags='["teaching","research"]' />
+<TagList />
 
 
 <div class="hl-para" markdown="1">

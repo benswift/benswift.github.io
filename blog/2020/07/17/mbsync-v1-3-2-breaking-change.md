@@ -3,15 +3,14 @@ title: "mbsync v1.3.2 breaking change: <code>SubFolders</code> config required"
 aside: false
 layout: doc
 tags:
-  - tools
-  - emacs
+  - dev
 ---
 
 # mbsync v1.3.2 breaking change: <code>SubFolders</code> config required
 
 <p class="post-date">17 July 20</p>
 
-<TagList :tags='["tools","emacs"]' />
+<TagList />
 
 
 As part of my ongoing quest to Emacs-all-the-things, I'm a long-time satisfied

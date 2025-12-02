@@ -3,15 +3,14 @@ title: "Making Altair/Vega-Lite charts readable without squinting"
 aside: false
 layout: doc
 tags:
-  - web
-  - python
+  - dev
 ---
 
 # Making Altair/Vega-Lite charts readable without squinting
 
 <p class="post-date">16 Oct 19</p>
 
-<TagList :tags='["web","python"]' />
+<TagList />
 
 
 My love for the [Grammar of

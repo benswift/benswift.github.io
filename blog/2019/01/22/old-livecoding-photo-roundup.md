@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">22 Jan 19</p>
 
-<TagList :tags='["gigs","livecoding"]' />
+<TagList />
 
 
 I'm trying to find all the photos of me doing livecoding gigs over the past 10

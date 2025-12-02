@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">21 Mar 20</p>
 
-<TagList :tags='["lens","teaching"]' />
+<TagList />
 
 
 Well, as with all ANU courses, we're taking the [Laptop

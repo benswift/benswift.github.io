@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">16 Jan 23</p>
 
-<TagList :tags='["ai","teaching"]' />
+<TagList />
 
 
 As I scrolled through my social media feeds over the Christmas break

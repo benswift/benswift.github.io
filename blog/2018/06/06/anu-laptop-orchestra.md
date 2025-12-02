@@ -13,7 +13,7 @@ tags:
 
 <p class="post-date">6 June 18</p>
 
-<TagList :tags='["livecoding","ccc","lens","gigs"]' />
+<TagList />
 
 
 One of the coolest parts of my job is doing livecoding gigs---here's a recent

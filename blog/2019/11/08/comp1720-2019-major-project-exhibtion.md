@@ -12,7 +12,7 @@ tags:
 
 <p class="post-date">8 Nov 19</p>
 
-<TagList :tags='["teaching","ccc","gigs"]' />
+<TagList />
 
 
 If you're around the ANU campus tomorrow (Saturday Nov 9) then come along to

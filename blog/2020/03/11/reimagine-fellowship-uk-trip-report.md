@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">11 Mar 20</p>
 
-<TagList :tags='["reimagine"]' />
+<TagList />
 
 
 I was lucky enough to be able to spend most of February in the UK on a research

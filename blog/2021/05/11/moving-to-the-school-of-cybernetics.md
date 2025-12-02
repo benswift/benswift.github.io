@@ -12,7 +12,7 @@ tags:
 
 <p class="post-date">11 May 21</p>
 
-<TagList :tags='["teaching","research","cybernetics"]' />
+<TagList />
 
 
 Some job news---I've just accepted a position in the new [School of

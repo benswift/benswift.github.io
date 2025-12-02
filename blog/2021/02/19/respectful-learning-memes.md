@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">19 Feb 21</p>
 
-<TagList :tags='["teaching"]' />
+<TagList />
 
 ::: tip **Note**: this post was noticed by the good folks at the
 [ANU Centre for Learning and Teaching](https://services.anu.edu.au/business-units/centre-for-learning-teaching),

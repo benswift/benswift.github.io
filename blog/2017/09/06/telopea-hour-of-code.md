@@ -4,14 +4,13 @@ aside: false
 layout: doc
 tags:
   - teaching
-  - cs4all
 ---
 
 # Telopea Hour of Code
 
 <p class="post-date">6 Sept 17</p>
 
-<TagList :tags='["teaching","cs4all"]' />
+<TagList />
 
 
 Welcome, Telopea Hour of Code students. Here are a couple of links you'll need

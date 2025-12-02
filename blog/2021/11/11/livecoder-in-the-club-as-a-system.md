@@ -12,7 +12,7 @@ tags:
 
 <p class="post-subtitle">understanding and intervening in complex flows of software, music and humans</p>
 
-<TagList :tags='["cybernetics"]' />
+<TagList />
 
 
 <div class="hl-para" markdown="1">

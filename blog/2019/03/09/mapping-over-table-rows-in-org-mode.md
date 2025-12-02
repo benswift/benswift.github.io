@@ -3,14 +3,14 @@ title: "Mapping over table rows in org-mode"
 aside: false
 layout: doc
 tags:
-  - emacs
+  - dev
 ---
 
 # Mapping over table rows in org-mode
 
 <p class="post-date">9 Mar 19</p>
 
-<TagList :tags='["emacs"]' />
+<TagList />
 
 
 I'm an [Emacs](https://www.gnu.org/software/emacs/) guy, and so if I've got some

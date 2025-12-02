@@ -11,7 +11,7 @@ tags:
 
 <p class="post-date">28 Jan 20</p>
 
-<TagList :tags='["extempore","livecoding"]' />
+<TagList />
 
 
 If you're coming to the upcoming [International Conference on Live

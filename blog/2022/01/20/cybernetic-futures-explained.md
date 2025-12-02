@@ -12,7 +12,7 @@ tags:
 
 <p class="post-subtitle">It's not a lighthouse, it's a radar.</p>
 
-<TagList :tags='["cybernetics"]' />
+<TagList />
 
 
 ::: tip

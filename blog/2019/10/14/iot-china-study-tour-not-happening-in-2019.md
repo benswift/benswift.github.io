@@ -10,7 +10,7 @@ tags:
 
 <p class="post-date">14 Oct 19</p>
 
-<TagList :tags='["teaching"]' />
+<TagList />
 
 
 In the (Australian) Summer of '16/17, '17/18 and '18/19 I ran an [_Internet of

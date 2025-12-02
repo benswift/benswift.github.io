@@ -3,14 +3,14 @@ title: "highlight.js with xtlang support"
 aside: false
 layout: doc
 tags:
-  - web
+  - dev
 ---
 
 # highlight.js with xtlang support
 
 <p class="post-date">17 Jan 19</p>
 
-<TagList :tags='["web"]' />
+<TagList />
 
 
 ::: tip

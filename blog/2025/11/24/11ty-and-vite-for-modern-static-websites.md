@@ -3,14 +3,14 @@ title: "11ty and Vite for modern static websites"
 aside: false
 layout: doc
 tags:
-  - web
+  - dev
 ---
 
 # 11ty and Vite for modern static websites
 
 <p class="post-date">24 Nov 25</p>
 
-<TagList :tags='["web"]' />
+<TagList />
 
 I've been using [11ty](https://www.11ty.dev/) for static site generation for a
 while now (not this site---that's Jekyll---but for other stuff) and it's great.
