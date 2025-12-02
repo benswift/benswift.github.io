@@ -5,9 +5,13 @@ tags:
   - livecoding
 ---
 
-::: tip Here's the
+::: tip
+
+Here's the
 [link to the slides](/blog/2021/09/13/feedback-in-livecoding-cui-bono) for the
-actual presentation on Oct 13. :::
+actual presentation on Oct 13.
+
+:::
 
 Hi, BUILD students. I know y'all are busy, so this won't take _too_ long and
 will hopefully be fun. Before my guest lecture, I'd like to introduce you (if

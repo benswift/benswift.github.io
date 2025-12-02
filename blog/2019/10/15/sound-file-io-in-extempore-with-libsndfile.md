@@ -83,9 +83,13 @@ number of frames
 (get_number_of_frames "assets/samples/piano/60.wav")
 ```
 
-::: tip Most of the code in this post doesn't check for e.g. bad filenames or
-other potential errors, so if that's a thing which might happen in your
-situation then you'll need to check that `sf_open` doesn't return `null`. :::
+::: tip
+
+Most of the code in this post doesn't check for e.g. bad filenames or other
+potential errors, so if that's a thing which might happen in your situation then
+you'll need to check that `sf_open` doesn't return `null`.
+
+:::
 
 We can do the exact same thing to get the number of channels per frame (just
 returning a different element of the `info` struct):
@@ -164,10 +168,14 @@ populating the `info` with data once at the top of an xtlang function, then
 doing stuff based on that information and finally `sf_close`ing the file at the
 end. That's left as an exercise for the reader 😉
 
-::: tip One thing worth noting with all this is that calling a C lib from
-Extempore doesn't obviate the need to understand how the C library works, e.g.
-we still need to match every call to `sf_open` with a call to `sf_close` as
-stated in the libsndfile docs. :::
+::: tip
+
+One thing worth noting with all this is that calling a C lib from Extempore
+doesn't obviate the need to understand how the C library works, e.g. we still
+need to match every call to `sf_open` with a call to `sf_close` as stated in the
+libsndfile docs.
+
+:::
 
 ## Writing data in memory to an audio file
 

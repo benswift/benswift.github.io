@@ -101,10 +101,13 @@ After that's all done (and you've deployed your app) you're ready to
 Follow the Square docs and Square will start hitting your (deployed) app's
 `https://example.com/square/webhook` endpoint, and your app can do its thing.
 
-::: tip Note that these incoming webhook requests _won't_ hit your local
-development server running on `localhost`, so testing webhooks is a bit
-trickier. Since my app runs on [fly](https://fly.io) it involved a little bit of
-`IO.inspect`ing in production and then looking at the logs with `flyctl logs`.
+::: info Note
+
+These incoming webhook requests _won't_ hit your local development server
+running on `localhost`, so testing webhooks is a bit trickier. Since my app runs
+on [fly](https://fly.io) it involved a little bit of `IO.inspect`ing in
+production and then looking at the logs with `flyctl logs`.
+
 :::
 
 Have fun! And if you live in Canberra, especially in Tuggeranong/Lanyon, maybe

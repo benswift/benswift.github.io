@@ -50,9 +50,13 @@ making all the text bigger so that my slides don't double as an
 underlying vis engine which Altair uses)
 [know about the issue, but don't want to fix it](https://github.com/vega/vega-parser/issues/18).
 
-::: tip Note that when I'm talking about "size" I'm **not** talking about the
-size & dimensions of the chart---I'm talking about the size of the text, lines &
-other marks _relative to_ the overall size of the chart. :::
+::: info
+
+When I'm talking about "size" I'm **not** talking about the size & dimensions of
+the chart---I'm talking about the size of the text, lines & other marks
+_relative to_ the overall size of the chart.
+
+:::
 
 The easiest way I found to fix this is to set a small width & height for the
 chart, then export to a vector format (e.g. svg) so that when the image gets

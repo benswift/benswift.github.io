@@ -23,12 +23,16 @@ our students how to do it.
 
 ## The _Statement of Originality_ approach
 
-::: tip The following examples are live on the
+::: info
+
+The following examples are live on the
 [COMP1720 site](https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality);
 a course which is now delivered by the excellent
 [Charles Martin](https://cs.anu.edu.au/code-creativity-culture/people/charles-martin/).
 However, all of the statement of originality stuff I mention here is still
-unchanged from when I wrote it a few years ago. :::
+unchanged from when I wrote it a few years ago.
+
+:::
 
 One thing I started doing a few years ago (in 2017 maybe?) in my courses is to
 get students to fill out a "Statement of Originality" alongside every assessment

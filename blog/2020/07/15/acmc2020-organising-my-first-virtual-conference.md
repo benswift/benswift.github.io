@@ -63,12 +63,15 @@ As the hosts of a virtual ACMC, our priorities were:
    read my blog, but manual work makes me sad and continuous integration
    pipelines make me happy ☺
 
-::: tip **tl;dr** we used [EasyChair](https://easychair.org/) for submissions &
-peer review, a
+::: info tl;dr
+
+we used [EasyChair](https://easychair.org/) for submissions & peer review, a
 [customised version of ICLR's](https://github.com/australasian-computer-music-association/acmc2020)
 website,
 [YouTube premiere](https://support.google.com/youtube/answer/9080341?hl=en), and
-[Discord](https://discord.com/) for text/voice discussion and q&a :::
+[Discord](https://discord.com/) for text/voice discussion and q&a
+
+:::
 
 ### Conference website {#website}
 

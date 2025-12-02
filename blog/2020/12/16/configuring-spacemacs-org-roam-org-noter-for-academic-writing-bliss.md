@@ -25,8 +25,12 @@ hope I remember the reference" approach. See e.g.
 [Noorah Alhasan's EmacsConf 2020 talk](https://emacsconf.org/2020/talks/17/) for
 more detailed info on this workflow.
 
-::: tip This post isn't about how I've become amazingly productive; it's about
-how I wasted a day yak-shaving just to get the software working 🙃 :::
+::: tip
+
+This post isn't about how I've become amazingly productive; it's about how I
+wasted a day yak-shaving just to get the software working 🙃
+
+:::
 
 ## Getting it all to play nicely in Spacemacs
 
@@ -80,10 +84,14 @@ it).
  org-roam-db-location (concat org-roam-directory "/db/org-roam.db"))
 ```
 
-::: tip Note: those first two config variables (the `bibtex-completion-*` ones)
-weren't listed in the blog posts I found, but seemed to be necessary to get
+::: info Note
+
+Those first two config variables (the `bibtex-completion-*` ones) weren't listed
+in the blog posts I found, but seemed to be necessary to get
 [helm-bibtex](https://github.com/tmalsburg/helm-bibtex) to find my master
-reference file. :::
+reference file.
+
+:::
 
 Finally, since org-roam-bibtex, org-noter and org-noter-pdftools aren't
 Spacemacs layers (they're just additional packages) you need to provide some

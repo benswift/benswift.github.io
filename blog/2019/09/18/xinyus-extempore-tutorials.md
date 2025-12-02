@@ -28,8 +28,11 @@ Install Extempore by following the steps
 Install VSCode (a text editor) by following the steps
 [here](https://extemporelang.github.io/docs/overview/editor-support/).
 
-::: tip Note: if you want to use a different text editor,
+::: info Note
+
+If you want to use a different text editor,
 [there are other options as well](https://extemporelang.github.io/docs/overview/editor-support/).
+
 :::
 
 ### Evaluating Extempore Code
@@ -53,8 +56,11 @@ Evaluate the extempore code on VSCode by following the steps below:
 6. Type **Extempore Connect** in the opening command palette, the default host
    and port arguments will be `localhost` and `7099` respectively.
 
-::: tip **To evaluate Extempore code**: move the cursor into the code you want
-to evaluate and hit **cmd+enter** on macOS or **ctrl+enter** on Windows/Linux.
+::: info To evaluate Extempore code
+
+move the cursor into the code you want to evaluate and hit **cmd+enter** on
+macOS or **ctrl+enter** on Windows/Linux.
+
 :::
 
 What you might see in the terminal window when you evaluate extempore code:
@@ -76,7 +82,7 @@ code do:
 ```
 
 > Note: in Extempore, we generally use **kebab-case** case style `my-pi` instead
-> of using **camelCase** `myPi` or **PascalCase** `MyPi`or **snake_case**
+> of using **camelCase** `myPi` or **PascalCase** `MyPi`or **snake_case** >
 > `my_pi`.
 
 Run the code above. Does the compiler print anything in the log? What does the

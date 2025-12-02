@@ -20,7 +20,11 @@ the class's Teams site you can either:
 - share the "join Team" link on some other communication channel and manually
   weed out the gatecrashers
 
-::: tip Too much manual work---**there's gotta be a better way**. :::
+::: tip
+
+Too much manual work---**there's gotta be a better way**.
+
+:::
 
 MS Teams doesn't have a UI button for "add team members from
 [csv file](https://en.wikipedia.org/wiki/Comma-separated_values)". The app _is_

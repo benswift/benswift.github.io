@@ -6,9 +6,13 @@ tags:
 
 <p class="post-subtitle">It's not a lighthouse, it's a radar.</p>
 
-::: tip One of my current projects at the ANU School of Cybernetics is to
-develop tools & procedures for futuring. This post is an attempt to get my head
-around how these things fit together (spoiler: they do!). :::
+::: info
+
+One of my current projects at the ANU School of Cybernetics is to develop tools
+& procedures for futuring. This post is an attempt to get my head around how
+these things fit together (spoiler: they do!).
+
+:::
 
 ## Futures
 

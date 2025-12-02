@@ -87,11 +87,15 @@ have changed in the lock file will be downloaded. But over time, the container
 may take longer to run as the list of pre-installed vs actually required
 packages diverges.
 
-::: tip I did try a similar approach that used `bundle cache` to pull all the
-deps into a `vendor/cache` folder and then copy _that_ across into the new
-image, but I had weird permissions errors that I didn't have the time to figure
-out. If you've got tips on whether that's a more "bundler-y" way to do things
-then [hit me up](mailto:ben@benswift.me). :::
+::: tip
+
+I did try a similar approach that used `bundle cache` to pull all the deps into
+a `vendor/cache` folder and then copy _that_ across into the new image, but I
+had weird permissions errors that I didn't have the time to figure out. If
+you've got tips on whether that's a more "bundler-y" way to do things then
+[hit me up](mailto:ben@benswift.me).
+
+:::
 
 I want to give a shoutout to Jan Akerman who wrote
 [a helpful blog post](https://janakerman.co.uk/docker-git-clone/) which got me

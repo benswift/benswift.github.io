@@ -7,8 +7,12 @@ tags:
 
 <Picture file="images/posts/smoke-gig-ad-Jan-2020.jpg" alt="ad for Smoke gig - see FB event for details" />
 
-::: tip Update: the [video is now online](/livecoding/2020-01-30-smoke)---thanks
-to Charles for putting it together. :::
+::: info Update
+
+The [video is now online](/livecoding/2020-01-30-smoke)---thanks to Charles for
+putting it together.
+
+:::
 
 If you're in Canberra this Thursday Jan 30 then you should come to a (free) gig
 that the c/c/c studio is putting on in the

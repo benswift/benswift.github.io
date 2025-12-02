@@ -4,11 +4,15 @@ tags:
   - dev
 ---
 
-::: tip **Note**: adding syntax-highlighted xtlang to your website is now easier
-than ever because
+::: tip
+
+**Note**: adding syntax-highlighted xtlang to your website is now easier than
+ever because
 [highlightjs-extempore](https://github.com/highlightjs/highlightjs-extempore) is
 an official hljs module. While this page is still an interesting dive into how I
-did it at the time, you should now just follow the instructions on GitHub. :::
+did it at the time, you should now just follow the instructions on GitHub.
+
+::: info
 
 > It is a truth, universally acknowledged, that all programming language authors
 > must also be expert web developers. (_attributed to Jane Austen_)

@@ -13,10 +13,14 @@ address until 15 July.
 _Note: the baby I am taking care of is a human baby, but the above photo
 contains baby dogs._
 
-::: tip **Here's the deal**: I'm away for a long time, and when I get back in
-July I'm going to delete all the unread emails in my inbox. Sorry if that seems
-harsh, but it's the only way to deal with this situation and have any chance of
-enjoying one's return to work. :::
+::: tip
+
+**Here's the deal**: I'm away for a long time, and when I get back in July I'm
+going to delete all the unread emails in my inbox. Sorry if that seems harsh,
+but it's the only way to deal with this situation and have any chance of
+enjoying one's return to work.
+
+:::
 
 - If you've got important information which needs to be actioned _before_ July
   15, then you need to make alternative arrangements. I wish you all the best,

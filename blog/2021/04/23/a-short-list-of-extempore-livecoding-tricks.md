@@ -183,15 +183,19 @@ want to turn up more often in the output:
 
 ## `rel` for relative pitches
 
-::: tip From here on, all the following code snippets assume you've loaded the
-pattern language with
+::: tip
+
+From here on, all the following code snippets assume you've loaded the pattern
+language with
 
 ```xtlang
 (sys:load "libs/core/pattern-language.xtm")
 ```
 
 Note that the pattern language library is loaded when you load the sharedsystem
-as well. :::
+as well.
+
+:::
 
 Based on the (global) `*scale*` variable, you can use `rel` to calculate pitches
 "relative to" a starting pitch.

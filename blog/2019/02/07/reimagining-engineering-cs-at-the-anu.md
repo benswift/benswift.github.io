@@ -25,12 +25,16 @@ was happening _anywhere_, but it's particularly exciting that it's happening
 where I am and that I might get a voice in shaping exactly what a "reimagined
 CECS" looks like.
 
-::: tip Elanor, if you're reading, I want to be a Reimagine Fellow
+::: info
+
+Elanor, if you're reading, I want to be a Reimagine Fellow
 ([update 30 Aug 2019: 🙌🥳🙌](/blog/2019/08/30/Im-a-reimagine-fellow)). And
 since the
 [EoI](https://cecs.anu.edu.au/staff/project-reimagine-fellows-expression-interest)
 asked for "1000 words **in any format you like**", here's mine in the form of an
-FAQ[^faq]. :::
+FAQ[^faq].
+
+:::
 
 [^faq]: At least it's not a haiku. Or a limerick.
 

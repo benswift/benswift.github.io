@@ -20,4 +20,8 @@ look at the
 [source](https://github.com/benswift/benswift.github.io/blob/source/_cljs/reimagine_logo/src/reimagine_logo/core.cljs)
 to see how it works.
 
-::: warning The interactive widget is no longer available. :::
+::: warning
+
+The interactive widget is no longer available.
+
+:::

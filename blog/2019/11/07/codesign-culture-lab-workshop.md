@@ -5,14 +5,18 @@ tags:
   - ccc
 ---
 
-::: tip tl;dr In this workshop you'll:
+::: info tl;dr
+
+In this workshop you'll:
 
 1. break into groups
 2. be assigned a trio of **code**/**creativity**/**culture** topics
 3. design a real c/c/c studio assessment item based around those three topics
    (and present it to the group)
 4. write some marking criteria for your assessment item (and present them to the
-   group) :::
+   group)
+
+:::
 
 [[toc]]
 
@@ -82,7 +86,11 @@ facet of the c/c/c triad. Look under your chair to find three stickers:
   space down to just a few stickers" thing is total bollocks---your job is to be
   your group's _enfant terrible_
 
-::: tip You can choose to have 0, 1, 2, 3 or 4 stickers---it's up to you. :::
+::: tip
+
+You can choose to have 0, 1, 2, 3 or 4 stickers---it's up to you.
+
+:::
 
 #### Find your team-mates
 
@@ -116,10 +124,13 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
     and I'm _pretty sure_ he was
     [Olivia Wilde's](https://www.imdb.com/name/nm1312575/) uncle
 
-::: tip _Your design brief for today_: in your group, create an
-assessment[^assessment] task which teaches a particular **code** concept/tool by
-exploring a problem/challenge facing our[^culture] **culture** through a
-particular **creative** process/medium. :::
+::: info _Your design brief for today_
+
+In your group, create an assessment[^assessment] task which teaches a particular
+**code** concept/tool by exploring a problem/challenge facing our[^culture]
+**culture** through a particular **creative** process/medium.
+
+:::
 
 The educational context for this assessment task is the c/c/c studio---a
 selective program for year 11 & 12 students. If you're more familiar with a uni
@@ -174,11 +185,15 @@ electronic templates
 and
 [MS Word](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx)).
 
-::: tip One more thing to keep in mind: in the
+::: tip
+
+One more thing to keep in mind: in the
 [next group work session](#group-work-session-2) you'll be writing a set of
 assessment criteria which will be used to assess the submissions for your
 assessment task. So you don't have to worry about writing them down formally
-just yet, but keep that in mind as you design your assessment task. :::
+just yet, but keep that in mind as you design your assessment task.
+
+:::
 
 ### Let's spin the wheels! {#spin-the-wheels}
 
@@ -192,9 +207,13 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^fate]: well, the PRNG in your web browser, anyway
 
-::: warning Historical note This workshop was held in November 2019. The
-interactive spinning wheels that were originally on this page are no longer
-functional, but here are the options that were available on each wheel: :::
+::: warning
+
+Historical note This workshop was held in November 2019. The interactive
+spinning wheels that were originally on this page are no longer functional, but
+here are the options that were available on each wheel:
+
+:::
 
 #### The code wheel
 
@@ -329,11 +348,15 @@ format of this document is up to you. There are a few ways to do this:
 - If **you** were in charge of this workshop and had to deliver it again, what
   would you change?
 
-::: tip Thanks so much for participating! If your group wrote the assessment
-item on paper, can you hand it to Ben (or one of the other facilitators) before
-you leave? If you did it electronically (e.g. using the
+::: tip
+
+Thanks so much for participating! If your group wrote the assessment item on
+paper, can you hand it to Ben (or one of the other facilitators) before you
+leave? If you did it electronically (e.g. using the
 [markdown template](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.md))
-then can you [email it to Ben](mailto:ben.swift@anu.edu.au)? :::
+then can you [email it to Ben](mailto:ben.swift@anu.edu.au)?
+
+:::
 
 ## Appendices
 

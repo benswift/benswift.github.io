@@ -7,8 +7,11 @@ tags:
 
 <p class="post-subtitle">To understand how HE can incorporate AI successfully, we need to think about how humans will interact with the technology and change their behaviour, says Ben Swift</p>
 
-::: tip This article originally
+::: tip
+
+This article originally
 [appeared in Times Higher Education](https://www.timeshighereducation.com/campus/ai-higher-education-dystopia-utopia-or-something-between).
+
 :::
 
 <Picture file="images/posts/ai-eye.jpeg" alt="a blue eye with weird techy-looking things in the iris" />
@@ -126,9 +129,13 @@ not in this dystopian camp. I am, however, keeping an eye out for how _human_
 students and instructors change their behaviour in response to the changes in
 the information ecosystem in which we exist.
 
-::: tip [Ben Swift](https://cybernetics.anu.edu.au/people/ben-swift/) is
-educational experiences lead and associate director (education) at the ANU
-School of Cybernetics. The ANU School of Cybernetics is activating cybernetics
-as an important tool for navigating major societal transformations through
-capability building, policy development and safe, sustainable and responsible
-approaches to new systems. :::
+::: info
+
+[Ben Swift](https://cybernetics.anu.edu.au/people/ben-swift/) is educational
+experiences lead and associate director (education) at the ANU School of
+Cybernetics. The ANU School of Cybernetics is activating cybernetics as an
+important tool for navigating major societal transformations through capability
+building, policy development and safe, sustainable and responsible approaches to
+new systems.
+
+:::

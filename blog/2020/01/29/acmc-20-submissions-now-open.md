@@ -14,9 +14,13 @@ music community. There's lots more information on the
 
 <Picture file="images/posts/acmc-2019-allsop-gig.jpg" alt="live computer music & visuals at ACMC'19" />
 
-::: tip The call for submissions---papers, artist talks, performances,
-workshops, tutorials and
-more---[is now open](https://acmc2020.com/#/features/03-submission). :::
+::: tip
+
+The call for submissions---papers, artist talks, performances, workshops,
+tutorials and
+more---[is now open](https://acmc2020.com/#/features/03-submission).
+
+:::
 
 ## Who's it for, and why should you come?
 

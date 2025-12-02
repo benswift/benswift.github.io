@@ -9,14 +9,21 @@ In the spirit of Murdoch University's
 marketing campaign, I've put together a dynamic full-page ad billboard as my
 pitch for the ANU's next marketing campaign.
 
-::: tip Disclaimer: this is in no way an official ANU campaign. Seriously,
-though, it's a great uni---and you should come
-[study with us](https://www.anu.edu.au/study). :::
+::: tip Disclaimer
+
+This is in no way an official ANU campaign. Seriously, though, it's a great
+uni---and you should come [study with us](https://www.anu.edu.au/study).
+
+:::
 
 The campaign is called: **verb** _your_ **verb**---hit refresh to see the
 different options.
 
-::: warning The interactive widget is no longer available. :::
+::: warning
+
+The interactive widget is no longer available.
+
+:::
 
 ## How does it work?
 
