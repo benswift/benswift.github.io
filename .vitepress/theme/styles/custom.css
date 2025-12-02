@@ -57,9 +57,9 @@ body {
     );
 }
 
-/* Light mode specific tweaks */
+/* Dark mode specific tweaks */
 .dark {
-    --vp-c-brand-1: color-mix(in srgb, var(--highlight-color) 90%, white);
+    --vp-c-brand-1: color-mix(in srgb, var(--highlight-color) 75%, white);
     --vp-c-brand-2: var(--highlight-color);
     --vp-c-brand-3: color-mix(in srgb, var(--highlight-color) 90%, black);
 }

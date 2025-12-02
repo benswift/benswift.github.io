@@ -54,7 +54,9 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
                 >history</a
             >
             ·
-            <a href="https://github.com/benswift/benswift.github.io"
+            <a
+                href="https://github.com/benswift/benswift.github.io"
+                aria-label="View source on GitHub"
                 ><Icon icon="fa6-brands:github" inline
             /></a>
         </p>
@@ -63,6 +65,7 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
             <a
                 rel="license"
                 href="https://creativecommons.org/licenses/by-sa/4.0/"
+                aria-label="Creative Commons Attribution-ShareAlike 4.0 licence"
                 ><Icon icon="fa6-brands:creative-commons" inline /><Icon
                     icon="fa6-brands:creative-commons-by"
                     inline /><Icon icon="fa6-brands:creative-commons-sa" inline
