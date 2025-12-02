@@ -92,7 +92,7 @@ than others, there are a couple of tricks
 you can add multiple identical elements to the array (think about why this
 works?)
 
-```javascipt
+```js
 var loadedDice = [1, 2, 2, 2, 2 3, 4, 5, 6];
 var roll = random(loadedDice);
 ```
