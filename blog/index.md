@@ -5,8 +5,10 @@ title: Blog
 ---
 
 <script setup>
-import { data as posts } from './blog.data'
+import { data } from './blog.data'
 import { ref, computed } from 'vue'
+
+const { posts, tags: allTags } = data
 
 const currentPage = ref(1)
 const perPage = 20
@@ -15,13 +17,6 @@ const totalPages = computed(() => Math.ceil(posts.length / perPage))
 const paginatedPosts = computed(() => {
   const start = (currentPage.value - 1) * perPage
   return posts.slice(start, start + perPage)
-})
-
-// Get all unique tags
-const allTags = computed(() => {
-  const tags = new Set()
-  posts.forEach(post => post.tags.forEach(tag => tags.add(tag)))
-  return Array.from(tags).sort()
 })
 </script>
 

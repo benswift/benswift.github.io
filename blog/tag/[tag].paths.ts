@@ -8,6 +8,15 @@ interface TagPageData {
   };
 }
 
+function parseTags(frontmatter: { tags?: string | string[] }): string[] {
+  if (!frontmatter.tags) return [];
+  if (Array.isArray(frontmatter.tags)) return frontmatter.tags;
+  if (typeof frontmatter.tags === "string") {
+    return frontmatter.tags.split(/\s+/).filter(Boolean);
+  }
+  return [];
+}
+
 function collectTagsFromDir(dir: string, allTags: Set<string>): void {
   const items = fs.readdirSync(dir);
 
@@ -16,24 +25,13 @@ function collectTagsFromDir(dir: string, allTags: Set<string>): void {
     const stat = fs.statSync(fullPath);
 
     if (stat.isDirectory()) {
-      // Skip 'tag' directory to avoid recursion issues
       if (item !== "tag") {
         collectTagsFromDir(fullPath, allTags);
       }
     } else if (item.endsWith(".md") && item !== "index.md") {
       const fileContent = fs.readFileSync(fullPath, "utf-8");
       const { data: fm } = matter(fileContent);
-
-      if (fm.tags) {
-        if (Array.isArray(fm.tags)) {
-          fm.tags.forEach((tag: string) => allTags.add(tag));
-        } else if (typeof fm.tags === "string") {
-          fm.tags
-            .split(/\s+/)
-            .filter(Boolean)
-            .forEach((tag: string) => allTags.add(tag));
-        }
-      }
+      parseTags(fm).forEach((tag) => allTags.add(tag));
     }
   }
 }

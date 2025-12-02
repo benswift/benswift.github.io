@@ -1,6 +1,15 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import { createContentLoader } from "vitepress";
+
+function stripHtml(html: string): string {
+  return html
+    .replace(/<h1[^>]*>.*?<\/h1>/gi, "") // Remove h1 (title is in frontmatter)
+    .replace(/<[^>]+>/g, "") // Remove HTML tags
+    .replace(/&\w+;/g, " ") // Remove named HTML entities (nbsp, ZeroWidthSpace, etc.)
+    .replace(/&#\d+;/g, "") // Remove numeric HTML entities
+    .replace(/&#x[\da-fA-F]+;/g, "") // Remove hex HTML entities
+    .replace(/\s+/g, " ") // Collapse whitespace
+    .trim();
+}
 
 interface Post {
   title: string;
@@ -13,62 +22,47 @@ interface Post {
   excerpt: string;
 }
 
-function getAllBlogPosts(dir: string, posts: Post[] = []): Post[] {
-  const items = fs.readdirSync(dir);
+interface BlogData {
+  posts: Post[];
+  tags: string[];
+}
 
-  for (const item of items) {
-    const fullPath = path.join(dir, item);
-    const stat = fs.statSync(fullPath);
-
-    if (stat.isDirectory()) {
-      // Recurse into subdirectories (year/month/day structure)
-      // Skip 'tag' directory
-      if (item !== "tag") {
-        getAllBlogPosts(fullPath, posts);
-      }
-    } else if (item.endsWith(".md") && item !== "index.md") {
-      const fileContent = fs.readFileSync(fullPath, "utf-8");
-      const { data: fm, content } = matter(fileContent);
-
-      // Extract date from path: blog/YYYY/MM/DD/slug.md
-      const relativePath = path.relative(path.resolve(__dirname), fullPath);
-      const pathMatch = relativePath.match(
-        /(\d{4})\/(\d{2})\/(\d{2})\/(.+)\.md$/,
-      );
-
-      if (pathMatch) {
-        // Skip unpublished posts
-        if (fm.published === false) {
-          continue;
+export default createContentLoader("blog/**/*.md", {
+  excerpt: true,
+  transform(rawData): BlogData {
+    const posts = rawData
+      .filter((page) => {
+        // Exclude index.md and tag pages
+        if (page.url === "/blog/" || page.url.startsWith("/blog/tag/")) {
+          return false;
         }
-
-        const [, year, month, day, slug] = pathMatch;
+        // Exclude unpublished posts
+        if (page.frontmatter.published === false) {
+          return false;
+        }
+        // Must match date pattern in URL
+        return /\/blog\/\d{4}\/\d{2}\/\d{2}\//.test(page.url);
+      })
+      .map((page) => {
+        // Extract date from URL: /blog/YYYY/MM/DD/slug
+        const match = page.url.match(/\/blog\/(\d{4})\/(\d{2})\/(\d{2})\//);
+        const [, year, month, day] = match!;
         const dateStr = `${year}-${month}-${day}`;
         const date = new Date(dateStr);
 
-        // Parse tags
+        // Parse tags from frontmatter
         let tags: string[] = [];
-        if (fm.tags) {
-          if (Array.isArray(fm.tags)) {
-            tags = fm.tags;
-          } else if (typeof fm.tags === "string") {
-            tags = fm.tags.split(/\s+/).filter(Boolean);
+        if (page.frontmatter.tags) {
+          if (Array.isArray(page.frontmatter.tags)) {
+            tags = page.frontmatter.tags;
+          } else if (typeof page.frontmatter.tags === "string") {
+            tags = page.frontmatter.tags.split(/\s+/).filter(Boolean);
           }
         }
 
-        // Generate excerpt from content (first ~150 chars of text, no markdown)
-        const textContent = content
-          .replace(/^#.*$/gm, "") // Remove headings
-          .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Convert links to text
-          .replace(/[*_`]/g, "") // Remove formatting
-          .replace(/<[^>]+>/g, "") // Remove HTML tags
-          .replace(/\n+/g, " ") // Collapse newlines
-          .trim();
-        const excerpt = textContent.slice(0, 150);
-
-        posts.push({
-          title: fm.title || slug,
-          url: `/blog/${year}/${month}/${day}/${slug}`,
+        return {
+          title: page.frontmatter.title || page.url.split("/").pop() || "",
+          url: page.url,
           date: {
             raw: dateStr,
             formatted: date.toLocaleDateString("en-AU", {
@@ -78,29 +72,20 @@ function getAllBlogPosts(dir: string, posts: Post[] = []): Post[] {
             }),
           },
           tags,
-          excerpt,
-        });
-      }
-    }
-  }
+          excerpt: stripHtml(page.excerpt || "").slice(0, 150),
+        };
+      })
+      .sort(
+        (a, b) =>
+          new Date(b.date.raw).getTime() - new Date(a.date.raw).getTime(),
+      );
 
-  return posts;
-}
+    // Collect all unique tags
+    const tags = [...new Set(posts.flatMap((p) => p.tags))].sort();
 
-export default {
-  watch: ["./blog/**/*.md"],
-  load(): Post[] {
-    const blogDir = path.resolve(__dirname);
-    const posts = getAllBlogPosts(blogDir);
-
-    // Sort by date descending (newest first)
-    posts.sort(
-      (a, b) => new Date(b.date.raw).getTime() - new Date(a.date.raw).getTime(),
-    );
-
-    return posts;
+    return { posts, tags };
   },
-};
+});
 
-declare const data: Post[];
+declare const data: BlogData;
 export { data };

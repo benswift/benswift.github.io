@@ -47,6 +47,15 @@ export default defineConfig({
     if (isBlogPost) {
       pageData.frontmatter.aside ??= false;
       pageData.frontmatter.isPost = true;
+
+      // Extract date from path: blog/YYYY/MM/DD/slug.md
+      const match = pageData.relativePath.match(
+        /blog\/(\d{4})\/(\d{2})\/(\d{2})\//,
+      );
+      if (match) {
+        const [, year, month, day] = match;
+        pageData.frontmatter.date = `${year}-${month}-${day}`;
+      }
     }
   },
 

@@ -6,16 +6,11 @@ import TagList from "../components/TagList.vue";
 import SiteFooter from "../components/SiteFooter.vue";
 
 const { Layout } = DefaultTheme;
-const { page } = useData();
+const { frontmatter } = useData();
 
 const postDate = computed(() => {
-    // Extract date from path: blog/YYYY/MM/DD/slug.md
-    const match = page.value.relativePath.match(
-        /blog\/(\d{4})\/(\d{2})\/(\d{2})\//,
-    );
-    if (!match) return null;
-    const [, year, month, day] = match;
-    const d = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+    if (!frontmatter.value.date) return null;
+    const d = new Date(frontmatter.value.date);
     return d.toLocaleDateString("en-AU", {
         day: "numeric",
         month: "short",
