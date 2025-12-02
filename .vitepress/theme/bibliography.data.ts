@@ -33,35 +33,47 @@ export default {
 
       return entries
         .map((entry: any) => {
+          // bibtex-parse returns field names in UPPERCASE
+          const title = entry.TITLE || entry.title;
+          const author = entry.AUTHOR || entry.author;
+          const date = entry.DATE || entry.date;
+          const yearField = entry.YEAR || entry.year;
+          const booktitle = entry.BOOKTITLE || entry.booktitle;
+          const journal = entry.JOURNAL || entry.journal;
+          const publisher = entry.PUBLISHER || entry.publisher;
+          const doi = entry.DOI || entry.doi;
+          const url = entry.URL || entry.url;
+          const abstract = entry.ABSTRACT || entry.abstract;
+
           // Get the year from date field or year field
           let year = "Unknown";
-          if (entry.date) {
-            const match = entry.date.match(/^(\d{4})/);
+          if (date) {
+            const match = date.match(/^(\d{4})/);
             if (match) year = match[1];
-          } else if (entry.year) {
-            year = entry.year;
+          } else if (yearField) {
+            year = yearField;
           }
 
           // Determine venue based on entry type
           let venue = "";
-          if (entry.booktitle) {
-            venue = entry.booktitle;
-          } else if (entry.journal) {
-            venue = entry.journal;
-          } else if (entry.publisher) {
-            venue = entry.publisher;
+          if (booktitle) {
+            venue = booktitle;
+          } else if (journal) {
+            venue = journal;
+          } else if (publisher) {
+            venue = publisher;
           }
 
           return {
             key: entry.key,
             type: entry.type,
-            title: entry.title?.replace(/[{}]/g, "") || "Untitled",
-            authors: entry.author?.replace(/[{}]/g, "") || "Unknown",
+            title: title?.replace(/[{}]/g, "") || "Untitled",
+            authors: author?.replace(/[{}]/g, "") || "Unknown",
             year,
             venue: venue?.replace(/[{}]/g, ""),
-            doi: entry.doi,
-            url: entry.url,
-            abstract: entry.abstract?.replace(/[{}]/g, ""),
+            doi,
+            url,
+            abstract: abstract?.replace(/[{}]/g, ""),
           };
         })
         .sort((a: Publication, b: Publication) => b.year.localeCompare(a.year));
