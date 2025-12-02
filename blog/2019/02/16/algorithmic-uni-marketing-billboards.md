@@ -1,16 +1,12 @@
 ---
 title: "Algorithmic uni marketing billboards"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Algorithmic uni marketing billboards
 
-<p class="post-date">16 Feb 19</p>
 
-<TagList />
 
 
 In the spirit of Murdoch University's

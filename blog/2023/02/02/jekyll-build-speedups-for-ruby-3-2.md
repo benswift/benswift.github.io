@@ -1,16 +1,12 @@
 ---
 title: "Jekyll build speedups for Ruby 3.2"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Jekyll build speedups for Ruby 3.2
 
-<p class="post-date">2 Feb 23</p>
 
-<TagList />
 
 
 There's a [bunch of buzz](https://news.ycombinator.com/item?id=34413012) about

@@ -1,16 +1,12 @@
 ---
 title: "benswift.me dev roadmap for 2020"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # benswift.me dev roadmap for 2020
 
-<p class="post-date">17 Nov 19</p>
 
-<TagList />
 
 
 As a developer of web tech curricula (specifically 2D graphics & interaction

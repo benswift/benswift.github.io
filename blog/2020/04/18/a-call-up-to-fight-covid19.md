@@ -1,16 +1,12 @@
 ---
 title: "A call-up to fight covid19"
-aside: false
-layout: doc
 tags:
   - research
 ---
 
 # A call-up to fight covid19
 
-<p class="post-date">18 Apr 20</p>
 
-<TagList />
 
 
 As with many folks at the moment (both in Canberra and around the world) I've

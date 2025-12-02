@@ -1,16 +1,12 @@
 ---
 title: "Teaching the world to Cybernetics"
-aside: false
-layout: doc
 tags:
   - cybernetics
 ---
 
 # Teaching the world to Cybernetics
 
-<p class="post-date">7 Mar 22</p>
 
-<TagList />
 
 
 If you're the sort of person who lurks on people's LinkedIn accounts, you may

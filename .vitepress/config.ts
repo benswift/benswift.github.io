@@ -2,8 +2,54 @@ import { defineConfig } from "vitepress";
 import checker from "vite-plugin-checker";
 import xtlangGrammar from "./xtlang.tmLanguage.json";
 import armasmGrammar from "./armasm.tmLanguage.json";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+function getUnpublishedPosts(): string[] {
+  const unpublished: string[] = [];
+  const blogDir = path.resolve(__dirname, "../blog");
+
+  function scanDir(dir: string) {
+    if (!fs.existsSync(dir)) return;
+    const items = fs.readdirSync(dir);
+    for (const item of items) {
+      const fullPath = path.join(dir, item);
+      const stat = fs.statSync(fullPath);
+      if (stat.isDirectory() && item !== "tag") {
+        scanDir(fullPath);
+      } else if (item.endsWith(".md") && item !== "index.md") {
+        const content = fs.readFileSync(fullPath, "utf-8");
+        const { data: fm } = matter(content);
+        if (fm.published === false) {
+          const relativePath = path.relative(
+            path.resolve(__dirname, ".."),
+            fullPath,
+          );
+          unpublished.push(relativePath);
+        }
+      }
+    }
+  }
+
+  scanDir(blogDir);
+  return unpublished;
+}
 
 export default defineConfig({
+  transformPageData(pageData) {
+    // Set defaults for blog posts (but not blog/index.md or tag pages)
+    const isBlogPost =
+      pageData.relativePath.startsWith("blog/") &&
+      pageData.relativePath !== "blog/index.md" &&
+      !pageData.relativePath.startsWith("blog/tag/");
+
+    if (isBlogPost) {
+      pageData.frontmatter.aside ??= false;
+      pageData.frontmatter.isPost = true;
+    }
+  },
+
   // Vite configuration
   vite: {
     plugins: [
@@ -105,6 +151,8 @@ export default defineConfig({
     "search.md",
     "blurbs.md",
     "404.md",
+    // Unpublished blog posts
+    ...getUnpublishedPosts(),
   ],
 
   // Route rewrites for URL preservation

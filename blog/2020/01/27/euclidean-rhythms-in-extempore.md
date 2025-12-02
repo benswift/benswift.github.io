@@ -1,16 +1,12 @@
 ---
 title: "Euclidean rhythms in Extempore"
-aside: false
-layout: doc
 tags:
   - extempore
 ---
 
 # Euclidean rhythms in Extempore
 
-<p class="post-date">27 Jan 20</p>
 
-<TagList />
 
 
 As part of the new Extempore pattern language stuff I added a helper for

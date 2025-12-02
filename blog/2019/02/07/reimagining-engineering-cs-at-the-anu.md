@@ -1,7 +1,5 @@
 ---
 title: "Reimagining Engineering & CS at the ANU"
-aside: false
-layout: doc
 tags:
   - teaching
   - research
@@ -10,9 +8,7 @@ tags:
 
 # Reimagining Engineering & CS at the ANU
 
-<p class="post-date">7 Feb 19</p>
 
-<TagList />
 
 
 The [ANU College of Engineering, Computing and

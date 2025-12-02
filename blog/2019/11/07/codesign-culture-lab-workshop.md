@@ -1,7 +1,5 @@
 ---
 title: "code/creativity/culture curriculum design workshop"
-aside: false
-layout: doc
 tags:
   - reimagine
   - ccc
@@ -9,9 +7,7 @@ tags:
 
 # code/creativity/culture curriculum design workshop
 
-<p class="post-date">7 Nov '19</p>
 
-<TagList />
 
 ::: tip tl;dr In this workshop you'll:
 

@@ -1,16 +1,12 @@
 ---
 title: "NGA Un-tour: The Hidden Gallery"
-aside: false
-layout: doc
 tags:
   - cybernetics
 ---
 
 # NGA Un-tour: The Hidden Gallery
 
-<p class="post-date">12 Oct 22</p>
 
-<TagList />
 
 
 For the last year or so my team has been collaborating with the good folks at

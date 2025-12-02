@@ -1,16 +1,12 @@
 ---
 title: "Bulk-add students to MS Teams from a csv file"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Bulk-add students to MS Teams from a csv file
 
-<p class="post-date">1 Apr 21</p>
 
-<TagList />
 
 
 [My institution](https://anu.edu.au) now uses [MS

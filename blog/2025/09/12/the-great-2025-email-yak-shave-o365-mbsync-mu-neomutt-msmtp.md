@@ -1,16 +1,12 @@
 ---
 title: "The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp
 
-<p class="post-date">12 Sept 25</p>
 
-<TagList />
 
 
 For years I was a happy user of

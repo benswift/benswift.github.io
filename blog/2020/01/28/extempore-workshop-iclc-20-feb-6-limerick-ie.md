@@ -1,7 +1,5 @@
 ---
 title: "Extempore workshop @ ICLC '20, Feb 6, Limerick IE"
-aside: false
-layout: doc
 tags:
   - extempore
   - livecoding
@@ -9,9 +7,7 @@ tags:
 
 # Extempore workshop @ ICLC '20, Feb 6, Limerick IE
 
-<p class="post-date">28 Jan 20</p>
 
-<TagList />
 
 
 If you're coming to the upcoming [International Conference on Live

@@ -1,16 +1,12 @@
 ---
 title: "Telopea Hour of Code"
-aside: false
-layout: doc
 tags:
   - teaching
 ---
 
 # Telopea Hour of Code
 
-<p class="post-date">6 Sept 17</p>
 
-<TagList />
 
 
 Welcome, Telopea Hour of Code students. Here are a couple of links you'll need

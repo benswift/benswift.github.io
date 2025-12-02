@@ -1,16 +1,12 @@
 ---
 title: "ACMC2020: tools for organising a virtual conference"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # ACMC2020: tools for organising a virtual conference
 
-<p class="post-date">15 July 20</p>
 
-<TagList />
 
 
 I've been a bit quiet on this blog for the last few weeks[^weeks] because I've

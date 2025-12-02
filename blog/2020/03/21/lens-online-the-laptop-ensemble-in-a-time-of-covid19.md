@@ -1,7 +1,5 @@
 ---
 title: "LENS Online - the Laptop Ensemble in a time of covid19"
-aside: false
-layout: doc
 tags:
   - lens
   - teaching
@@ -9,9 +7,7 @@ tags:
 
 # LENS Online - the Laptop Ensemble in a time of covid19
 
-<p class="post-date">21 Mar 20</p>
 
-<TagList />
 
 
 Well, as with all ANU courses, we're taking the [Laptop

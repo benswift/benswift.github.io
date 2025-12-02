@@ -1,18 +1,14 @@
 ---
 title: "Livecoder-in-the-club as a system"
-aside: false
-layout: doc
 tags:
   - cybernetics
 ---
 
 # Livecoder-in-the-club as a system
 
-<p class="post-date">11 Nov 21</p>
 
 <p class="post-subtitle">understanding and intervening in complex flows of software, music and humans</p>
 
-<TagList />
 
 
 <div class="hl-para" markdown="1">

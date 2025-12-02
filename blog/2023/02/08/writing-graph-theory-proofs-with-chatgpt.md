@@ -1,7 +1,5 @@
 ---
 title: "Writing graph theory proofs with ChatGPT"
-aside: false
-layout: doc
 tags:
   - ai
   - teaching
@@ -9,9 +7,7 @@ tags:
 
 # Writing graph theory proofs with ChatGPT
 
-<p class="post-date">8 Feb 23</p>
 
-<TagList />
 
 
 Posting logs of [ChatGPT](https://chat.openai.com) interaction is getting a bit

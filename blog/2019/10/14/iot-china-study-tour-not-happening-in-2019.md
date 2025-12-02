@@ -1,16 +1,12 @@
 ---
 title: "IoT China Study Tour not happening in 2019"
-aside: false
-layout: doc
 tags:
   - teaching
 ---
 
 # IoT China Study Tour not happening in 2019
 
-<p class="post-date">14 Oct 19</p>
 
-<TagList />
 
 
 In the (Australian) Summer of '16/17, '17/18 and '18/19 I ran an [_Internet of

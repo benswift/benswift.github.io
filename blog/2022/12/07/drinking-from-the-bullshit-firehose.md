@@ -1,7 +1,5 @@
 ---
 title: "Drinking from the bullshit firehose"
-aside: false
-layout: doc
 tags:
   - ai
   - teaching
@@ -9,9 +7,7 @@ tags:
 
 # Drinking from the bullshit firehose
 
-<p class="post-date">7 Dec 22</p>
 
-<TagList />
 
 
 https://stratechery.com/2022/ai-homework/

@@ -1,7 +1,5 @@
 ---
 title: "ACMC'21 + Synthmoot: Connections announced for August 26-28"
-aside: false
-layout: doc
 tags:
   - gigs
   - livecoding
@@ -9,9 +7,7 @@ tags:
 
 # ACMC'21 + Synthmoot: Connections announced for August 26-28
 
-<p class="post-date">29 Apr 21</p>
 
-<TagList />
 
 
 Great news on the local computer music conference front: the [Australian

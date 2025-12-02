@@ -1,16 +1,12 @@
 ---
 title: "Seeing AI tasks through a TAM lens"
-aside: false
-layout: doc
 tags:
   - ai
 ---
 
 # Seeing AI tasks through a TAM lens
 
-<p class="post-date">12 Nov 25</p>
 
-<TagList />
 
 
 When it comes to AI adoption research, we keep asking "do you use ChatGPT?" when

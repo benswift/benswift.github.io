@@ -1,13 +1,10 @@
 ---
 title: "Running stable diffusion in a singularity container"
-aside: false
-layout: doc
 
 ---
 
 # Running stable diffusion in a singularity container
 
-<p class="post-date">2 Sept 22</p>
 
 
 singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3

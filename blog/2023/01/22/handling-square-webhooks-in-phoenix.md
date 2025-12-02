@@ -1,16 +1,12 @@
 ---
 title: "Handling Square Webhooks in Phoenix"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Handling Square Webhooks in Phoenix
 
-<p class="post-date">22 Jan 23</p>
 
-<TagList />
 
 
 My [brother's

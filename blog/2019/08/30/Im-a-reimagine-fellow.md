@@ -1,16 +1,12 @@
 ---
 title: "I'm a Reimagine Fellow"
-aside: false
-layout: doc
 tags:
   - reimagine
 ---
 
 # I'm a Reimagine Fellow
 
-<p class="post-date">30 Aug 19</p>
 
-<TagList />
 
 
 If you've been following the CECS newsletter, you'll know that the inaugural

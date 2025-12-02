@@ -1,7 +1,5 @@
 ---
 title: "Tracking APS AI Transparency Statements"
-aside: false
-layout: doc
 tags:
   - ai
   - policy
@@ -9,9 +7,7 @@ tags:
 
 # Tracking APS AI Transparency Statements
 
-<p class="post-date">11 Nov 25</p>
 
-<TagList />
 
 
 New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**

@@ -1,7 +1,5 @@
 ---
 title: "Creative Computing ANU Extension course"
-aside: false
-layout: doc
 tags:
   - reimagine
   - ccc
@@ -9,9 +7,7 @@ tags:
 
 # Creative Computing ANU Extension course
 
-<p class="post-date">17 Sept 20</p>
 
-<TagList />
 
 
 <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/454451852?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->

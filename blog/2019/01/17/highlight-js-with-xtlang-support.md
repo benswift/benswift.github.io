@@ -1,16 +1,12 @@
 ---
 title: "highlight.js with xtlang support"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # highlight.js with xtlang support
 
-<p class="post-date">17 Jan 19</p>
 
-<TagList />
 
 
 ::: tip

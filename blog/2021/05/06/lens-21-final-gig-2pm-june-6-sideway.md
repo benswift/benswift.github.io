@@ -1,7 +1,5 @@
 ---
 title: "LENS'21 final gig 2pm June 6 @ sideway"
-aside: false
-layout: doc
 tags:
   - lens
   - gigs
@@ -10,9 +8,7 @@ tags:
 
 # LENS'21 final gig 2pm June 6 @ sideway
 
-<p class="post-date">6 May 21</p>
 
-<TagList />
 
 
 <Picture file="images/posts/lens2021-final-gig-poster.jpg" alt="LENS '21 final gig poster" />

@@ -1,7 +1,5 @@
 ---
 title: "ICLC Extempore workshop"
-aside: false
-layout: doc
 tags:
   - extempore
   - livecoding
@@ -10,9 +8,7 @@ tags:
 
 # ICLC Extempore workshop
 
-<p class="post-date">6 Feb 20</p>
 
-<TagList />
 
 
 If you're here for the [ICLC Extempore

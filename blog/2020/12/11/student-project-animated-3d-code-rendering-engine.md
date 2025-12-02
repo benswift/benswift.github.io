@@ -1,16 +1,12 @@
 ---
 title: "Student project: animated 3D code rendering engine"
-aside: false
-layout: doc
 tags:
   - teaching
 ---
 
 # Student project: animated 3D code rendering engine
 
-<p class="post-date">11 Dec 20</p>
 
-<TagList />
 
 
 ::: tip

@@ -1,15 +1,11 @@
 ---
 title: "On parental leave and auto-reply messages"
-aside: false
-layout: doc
 tags:
 ---
 
 # On parental leave and auto-reply messages
 
-<p class="post-date">26 Feb 19</p>
 
-<TagList />
 
 
 I'm now (as of the date of this blog post) on parental leave ([thanks,

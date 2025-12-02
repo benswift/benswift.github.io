@@ -1,7 +1,5 @@
 ---
 title: "ANU Laptop Orchestra"
-aside: false
-layout: doc
 tags:
   - livecoding
   - ccc
@@ -11,9 +9,7 @@ tags:
 
 # ANU Laptop Orchestra
 
-<p class="post-date">6 June 18</p>
 
-<TagList />
 
 
 One of the coolest parts of my job is doing livecoding gigs---here's a recent

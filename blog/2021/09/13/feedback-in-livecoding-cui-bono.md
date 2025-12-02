@@ -1,7 +1,5 @@
 ---
 title: "Feedback in livecoding: cui bono?"
-aside: false
-layout: doc
 tags:
   - teaching
   - livecoding
@@ -9,9 +7,7 @@ tags:
 
 # Feedback in livecoding: cui bono?
 
-<p class="post-date">13 Sept 21</p>
 
-<TagList />
 
 
 ::: tip

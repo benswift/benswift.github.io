@@ -39,16 +39,10 @@ function main() {
   const frontmatter = `---
 title: "${title}"
 published: false
-aside: false
-layout: doc
 tags: []
 ---
 
 # ${title}
-
-<p class="post-date">${day} ${now.toLocaleString("en-AU", { month: "short" })} ${year.slice(2)}</p>
-
-<TagList />
 
 `;
 

@@ -1,7 +1,5 @@
 ---
 title: "Science Week gig"
-aside: false
-layout: doc
 tags:
   - gigs
   - livecoding
@@ -9,9 +7,7 @@ tags:
 
 # Science Week gig
 
-<p class="post-date">11 Aug 17</p>
 
-<TagList />
 
 
 I'm playing a livecoding set at the [ACT Science Week launch party

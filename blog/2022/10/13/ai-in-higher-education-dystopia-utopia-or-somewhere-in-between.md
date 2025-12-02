@@ -1,7 +1,5 @@
 ---
 title: "AI in higher education: dystopia, utopia or something in between?"
-aside: false
-layout: doc
 tags:
   - ai
   - teaching
@@ -9,11 +7,9 @@ tags:
 
 # AI in higher education: dystopia, utopia or something in between?
 
-<p class="post-date">13 Oct 22</p>
 
 <p class="post-subtitle">To understand how HE can incorporate AI successfully, we need to think about how humans will interact with the technology and change their behaviour, says Ben Swift</p>
 
-<TagList />
 
 
 ::: tip

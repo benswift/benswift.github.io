@@ -1,7 +1,5 @@
 ---
 title: "Livecoding article on the ABC"
-aside: false
-layout: doc
 tags:
   - livecoding
   - policy
@@ -9,9 +7,7 @@ tags:
 
 # Livecoding article on the ABC
 
-<p class="post-date">24 July 19</p>
 
-<TagList />
 
 
 In case you missed it, I was interviewed for [an article on the ABC News

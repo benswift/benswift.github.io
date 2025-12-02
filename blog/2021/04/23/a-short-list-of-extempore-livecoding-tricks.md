@@ -1,7 +1,5 @@
 ---
 title: "A short list of Extempore livecoding tricks"
-aside: false
-layout: doc
 tags:
   - livecoding
   - extempore
@@ -10,9 +8,7 @@ tags:
 
 # A short list of Extempore livecoding tricks
 
-<p class="post-date">23 Apr '21</p>
 
-<TagList />
 
 Yesterday's [LENS](https://comp.anu.edu.au/courses/laptop-ensemble/) class
 discussion turned into an [AMA](https://www.reddit.com/r/AMA/) of how I do

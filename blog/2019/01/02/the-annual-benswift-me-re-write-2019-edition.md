@@ -1,16 +1,12 @@
 ---
 title: "The annual benswift.me re-write: 2019 edition"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # The annual benswift.me re-write: 2019 edition
 
-<p class="post-date">2 Jan 19</p>
 
-<TagList />
 
 
 Welcome, traveller. You've managed to find my blog without being [eaten by a

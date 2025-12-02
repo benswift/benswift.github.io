@@ -1,7 +1,5 @@
 ---
 title: "A School of Cybernetics strategy meeting with ChatGPT"
-aside: false
-layout: doc
 tags:
   - ai
   - cybernetics
@@ -9,9 +7,7 @@ tags:
 
 # A School of Cybernetics strategy meeting with ChatGPT
 
-<p class="post-date">7 Dec 22</p>
 
-<TagList />
 
 
 Back at my desk after a couple of days off I finally got a chance to fire up the

@@ -1,7 +1,5 @@
 ---
 title: "ACMC '20 submissions now open"
-aside: false
-layout: doc
 tags:
   - gigs
   - livecoding
@@ -9,9 +7,7 @@ tags:
 
 # ACMC '20 submissions now open
 
-<p class="post-date">29 Jan 20</p>
 
-<TagList />
 
 
 Good news everyone; we're hosting the annual [Australasian Computer Music

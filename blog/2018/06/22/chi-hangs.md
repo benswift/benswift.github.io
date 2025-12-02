@@ -1,16 +1,12 @@
 ---
 title: "CHI hangs"
-aside: false
-layout: doc
 tags:
   - research
 ---
 
 # CHI hangs
 
-<p class="post-date">22 June 18</p>
 
-<TagList />
 
 
 Here's a photo of Kieran and I hanging out at CHI. I'll write a more detailed

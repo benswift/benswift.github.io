@@ -1,7 +1,5 @@
 ---
 title: "Congrats Dr. Kieran Browne"
-aside: false
-layout: doc
 tags:
   - research
   - ai
@@ -9,9 +7,7 @@ tags:
 
 # Congrats Dr. Kieran Browne
 
-<p class="post-date">26 Jan 23</p>
 
-<TagList />
 
 
 Last December [Kieran](https://kieranbrowne.com) graduated---very exciting for

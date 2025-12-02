@@ -1,7 +1,5 @@
 ---
 title: "The Other Side: Algorithm as Ritual in Artificial Intelligence"
-aside: false
-layout: doc
 tags:
   - research
   - ai
@@ -9,9 +7,7 @@ tags:
 
 # The Other Side: Algorithm as Ritual in Artificial Intelligence
 
-<p class="post-date">24 Apr 18</p>
 
-<TagList />
 
 
 Tomorrow morning (Wed April 25, 9am Montréal time) Kieran Browne and I are

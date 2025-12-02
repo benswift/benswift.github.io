@@ -1,16 +1,12 @@
 ---
 title: "Sound file I/O in Extempore with libsndfile"
-aside: false
-layout: doc
 tags:
   - extempore
 ---
 
 # Sound file I/O in Extempore with libsndfile
 
-<p class="post-date">15 Oct 19</p>
 
-<TagList />
 
 
 [libsndfile](https://github.com/erikd/libsndfile/) is "a C library for reading

@@ -1,16 +1,12 @@
 ---
 title: "Cybernetic Studio Launch @ SXSW Sydney"
-aside: false
-layout: doc
 tags:
   - ai
 ---
 
 # Cybernetic Studio Launch @ SXSW Sydney
 
-<p class="post-date">8 Oct 25</p>
 
-<TagList />
 
 
 I'm launching the

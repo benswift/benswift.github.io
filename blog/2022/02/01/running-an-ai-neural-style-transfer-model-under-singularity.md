@@ -1,7 +1,5 @@
 ---
 title: "Running an AI neural style transfer model under Singularity"
-aside: false
-layout: doc
 tags:
   - dev
   - ai
@@ -9,9 +7,7 @@ tags:
 
 # Running an AI neural style transfer model under Singularity
 
-<p class="post-date">1 Feb 22</p>
 
-<TagList />
 
 
 I've recently been given access to a beefy AI server (6x RTX3090s!) which is

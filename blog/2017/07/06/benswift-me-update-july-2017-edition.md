@@ -1,16 +1,12 @@
 ---
 title: "benswift.me update (July 2017 edition)"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # benswift.me update (July 2017 edition)
 
-<p class="post-date">6 July 17</p>
 
-<TagList />
 
 
 Well, `benswift.me` has been given another coat of paint. The content's still a

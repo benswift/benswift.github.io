@@ -31,13 +31,17 @@ function getAllBlogPosts(dir: string, posts: Post[] = []): Post[] {
       const { data: fm, content } = matter(fileContent);
 
       // Extract date from path: blog/YYYY/MM/DD/slug.md
-      const relativePath = path.relative(
-        path.resolve(__dirname),
-        fullPath
+      const relativePath = path.relative(path.resolve(__dirname), fullPath);
+      const pathMatch = relativePath.match(
+        /(\d{4})\/(\d{2})\/(\d{2})\/(.+)\.md$/,
       );
-      const pathMatch = relativePath.match(/(\d{4})\/(\d{2})\/(\d{2})\/(.+)\.md$/);
 
       if (pathMatch) {
+        // Skip unpublished posts
+        if (fm.published === false) {
+          continue;
+        }
+
         const [, year, month, day, slug] = pathMatch;
         const dateStr = `${year}-${month}-${day}`;
         const date = new Date(dateStr);
@@ -91,7 +95,7 @@ export default {
 
     // Sort by date descending (newest first)
     posts.sort(
-      (a, b) => new Date(b.date.raw).getTime() - new Date(a.date.raw).getTime()
+      (a, b) => new Date(b.date.raw).getTime() - new Date(a.date.raw).getTime(),
     );
 
     return posts;

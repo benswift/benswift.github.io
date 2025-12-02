@@ -1,16 +1,12 @@
 ---
 title: "On livecoding annotations and visualisations"
-aside: false
-layout: doc
 tags:
   - livecoding
 ---
 
 # On livecoding annotations and visualisations
 
-<p class="post-date">31 Jan 19</p>
 
-<TagList />
 
 
 I've just finished reading Charlie Roberts' [interactive web essay on

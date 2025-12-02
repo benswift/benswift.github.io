@@ -1,16 +1,12 @@
 ---
 title: "Agentic LLMs and Nerves"
-aside: false
-layout: doc
 tags:
   - ai
 ---
 
 # Agentic LLMs and Nerves
 
-<p class="post-date">24 Oct 25</p>
 
-<TagList />
 
 
 TODO, but the main points are:

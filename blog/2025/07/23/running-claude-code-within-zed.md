@@ -1,7 +1,5 @@
 ---
 title: "Running Claude Code within Zed"
-aside: false
-layout: doc
 tags:
   - ai
   - dev
@@ -9,9 +7,7 @@ tags:
 
 # Running Claude Code within Zed
 
-<p class="post-date">23 July 25</p>
 
-<TagList />
 
 
 After several months using Zed's built-in

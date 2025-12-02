@@ -1,18 +1,11 @@
 ---
 title: "Configuring Spacemacs org-roam & org-noter for academic writing bliss"
-aside: false
-layout: doc
 tags:
   - research
   - dev
 ---
 
 # Configuring Spacemacs org-roam & org-noter for academic writing bliss
-
-<p class="post-date">16 Dec 20</p>
-
-<TagList />
-
 
 I've always had a decent memory, and so I've never really had a formal system
 for keeping track of who said what and in which paper. When it comes time to
@@ -25,10 +18,9 @@ writing---keeping notes about stuff I've read & linking the ideas together.
 
 All the cool kids are raving about the [Zettelkasten](https://zettelkasten.de)
 method, and the [org-roam](https://www.orgroam.com) package supporting this
-workflow in [Emacs](/blog/tag/emacs). There are also
-extensions for managing one's paper library
-([org-roam-bibtex](https://github.com/org-roam/org-roam-bibtex)) and
-reading/annotating pdf files
+workflow in [Emacs](/blog/tag/dev). There are also extensions for managing one's
+paper library ([org-roam-bibtex](https://github.com/org-roam/org-roam-bibtex))
+and reading/annotating pdf files
 ([org-noter](https://github.com/weirdNox/org-noter)). When combined, this all
 seems like having academic writing superpowers compared to my "sit around and
 hope I remember the reference" approach. See e.g.

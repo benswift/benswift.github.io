@@ -1,18 +1,14 @@
 ---
 title: "Cybernetic futures explained (maybe)"
-aside: false
-layout: doc
 tags:
   - cybernetics
 ---
 
 # Cybernetic futures explained (maybe)
 
-<p class="post-date">20 Jan 22</p>
 
 <p class="post-subtitle">It's not a lighthouse, it's a radar.</p>
 
-<TagList />
 
 
 ::: tip

@@ -1,16 +1,12 @@
 ---
 title: "Agentic AI: LLMs with stones"
-aside: false
-layout: doc
 tags:
   - ai
 ---
 
 # Agentic AI: LLMs with stones
 
-<p class="post-date">17 July 25</p>
 
-<TagList />
 
 
 > Sticks and stones may break my bones, but words will never hurt me.

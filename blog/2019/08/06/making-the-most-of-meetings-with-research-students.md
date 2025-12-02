@@ -1,7 +1,5 @@
 ---
 title: "Making the most of meetings with research students"
-aside: false
-layout: doc
 tags:
   - teaching
   - research
@@ -9,9 +7,7 @@ tags:
 
 # Making the most of meetings with research students
 
-<p class="post-date">6 Aug 19</p>
 
-<TagList />
 
 
 <div class="hl-para" markdown="1">

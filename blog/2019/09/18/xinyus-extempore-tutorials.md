@@ -1,7 +1,5 @@
 ---
 title: "Xinyu's Extempore tutorials"
-aside: false
-layout: doc
 tags:
   - livecoding
   - extempore
@@ -9,9 +7,7 @@ tags:
 
 # Xinyu's Extempore tutorials
 
-<p class="post-date">18 Sept 19</p>
 
-<TagList />
 
 
 These tutorials are part of Xinyu Hou's research project to create a set of

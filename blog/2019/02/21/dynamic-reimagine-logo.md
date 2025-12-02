@@ -1,7 +1,5 @@
 ---
 title: "A dynamic Reimagine logo"
-aside: false
-layout: doc
 tags:
   - dev
   - reimagine
@@ -9,9 +7,7 @@ tags:
 
 # A dynamic Reimagine logo
 
-<p class="post-date">21 Feb 19</p>
 
-<TagList />
 
 
 I keep harping on about the **Reimagine project** because I'm super pumped about

@@ -1,7 +1,5 @@
 ---
 title: "ANU Laptop Ensemble in S1 2020"
-aside: false
-layout: doc
 tags:
   - teaching
   - lens
@@ -9,9 +7,7 @@ tags:
 
 # ANU Laptop Ensemble in S1 2020
 
-<p class="post-date">25 Jan 20</p>
 
-<TagList />
 
 
 The Laptop Ensemble (LENS) is happening again in Semester 1 2020 as a for-credit

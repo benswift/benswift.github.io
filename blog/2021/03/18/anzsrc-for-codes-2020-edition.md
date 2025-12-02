@@ -1,7 +1,5 @@
 ---
 title: "ANZSRC FoR Codes 2020 edition"
-aside: false
-layout: doc
 tags:
   - research
   - policy
@@ -9,9 +7,7 @@ tags:
 
 # ANZSRC FoR Codes 2020 edition
 
-<p class="post-date">18 Mar 21</p>
 
-<TagList />
 
 
 The Australian Research Council (well, technically the

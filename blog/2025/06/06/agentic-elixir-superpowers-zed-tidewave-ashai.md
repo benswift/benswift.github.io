@@ -1,16 +1,12 @@
 ---
 title: "Agentic Elixir superpowers: Zed + Tidewave + AshAI"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Agentic Elixir superpowers: Zed + Tidewave + AshAI
 
-<p class="post-date">6 June 25</p>
 
-<TagList />
 
 
 For a few years now whenever I need to build any sort of networked interactive

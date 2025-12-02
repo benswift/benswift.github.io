@@ -1,16 +1,12 @@
 ---
 title: "Pulling apart Zoom attendance csv dumps in tidy R"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Pulling apart Zoom attendance csv dumps in tidy R
 
-<p class="post-date">23 May 22</p>
 
-<TagList />
 
 
 My team ran some Zoom training last week and today I needed to figure out who

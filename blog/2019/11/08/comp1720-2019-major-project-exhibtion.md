@@ -1,7 +1,5 @@
 ---
 title: "COMP1720 2019 major project exhibtion"
-aside: false
-layout: doc
 tags:
   - teaching
   - ccc
@@ -10,9 +8,7 @@ tags:
 
 # COMP1720 2019 major project exhibtion
 
-<p class="post-date">8 Nov 19</p>
 
-<TagList />
 
 
 If you're around the ANU campus tomorrow (Saturday Nov 9) then come along to

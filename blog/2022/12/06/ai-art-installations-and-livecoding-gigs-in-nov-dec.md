@@ -1,7 +1,5 @@
 ---
 title: "AI art installations and livecoding gigs in Nov/Dec"
-aside: false
-layout: doc
 tags:
   - livecoding
   - ai
@@ -9,9 +7,7 @@ tags:
 
 # AI art installations and livecoding gigs in Nov/Dec
 
-<p class="post-date">6 Dec 22</p>
 
-<TagList />
 
 
 If you [follow me on bluesky](https://bsky.app/profile/benswift.me) you've seen

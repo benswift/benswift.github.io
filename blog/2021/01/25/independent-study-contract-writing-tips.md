@@ -1,16 +1,12 @@
 ---
 title: "Independent Study Contract writing tips"
-aside: false
-layout: doc
 tags:
   - teaching
 ---
 
 # Independent Study Contract writing tips
 
-<p class="post-date">25 Jan 21</p>
 
-<TagList />
 
 
 Many students here at the ANU School of Computing take a capstone project at the

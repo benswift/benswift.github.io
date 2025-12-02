@@ -1,16 +1,12 @@
 ---
 title: "Blog refresh"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Blog refresh
 
-<p class="post-date">1 Dec 16</p>
 
-<TagList />
 
 
 Another year, and another blog refresh. It's still a clojure-powered static site

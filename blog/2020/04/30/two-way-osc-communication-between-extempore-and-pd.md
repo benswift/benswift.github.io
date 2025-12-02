@@ -1,7 +1,5 @@
 ---
 title: "Two-way OSC communication between Extempore and Pd"
-aside: false
-layout: doc
 tags:
   - extempore
   - lens
@@ -9,9 +7,7 @@ tags:
 
 # Two-way OSC communication between Extempore and Pd
 
-<p class="post-date">30 Apr 20</p>
 
-<TagList />
 
 
 Because [Extempore](https://github.com/digego/extempore) and

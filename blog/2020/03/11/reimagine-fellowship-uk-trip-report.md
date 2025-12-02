@@ -1,16 +1,12 @@
 ---
 title: "Reimagine Fellowship UK trip report"
-aside: false
-layout: doc
 tags:
   - reimagine
 ---
 
 # Reimagine Fellowship UK trip report
 
-<p class="post-date">11 Mar 20</p>
 
-<TagList />
 
 
 I was lucky enough to be able to spend most of February in the UK on a research

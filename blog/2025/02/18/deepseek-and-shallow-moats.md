@@ -1,13 +1,10 @@
 ---
 title: "DeepSeek and Shallow Moats: Implications for Higher Education"
-aside: false
-layout: doc
 
 ---
 
 # DeepSeek and Shallow Moats: Implications for Higher Education
 
-<p class="post-date">18 Feb 25</p>
 
 
 > This piece originally published in Times Higher Education

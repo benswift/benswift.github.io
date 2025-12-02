@@ -1,12 +1,9 @@
 ---
 title: "Command/Control: giving OS aware keybinding hints"
-aside: false
-layout: doc
 ---
 
 # Command/Control: giving OS aware keybinding hints
 
-<p class="post-date">14 Feb 20</p>
 
 As someone who writes a lot of [web-based](https://extemporelang.github.io)
 [documentation for](https://cs.anu.edu.au/courses/comp1720/)

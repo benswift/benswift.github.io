@@ -1,13 +1,10 @@
 ---
 title: "Parental leave, take 2"
-aside: false
-layout: doc
 
 ---
 
 # Parental leave, take 2
 
-<p class="post-date">8 Sept 20</p>
 
 
 Our family has recently [grown by one

@@ -1,16 +1,12 @@
 ---
 title: "Ben and COMP2300 next year"
-aside: false
-layout: doc
 tags:
   - teaching
 ---
 
 # Ben and COMP2300 next year
 
-<p class="post-date">21 Oct 19</p>
 
-<TagList />
 
 
 Students[^organised-ones] are starting to turn their gaze towards 2020, and so

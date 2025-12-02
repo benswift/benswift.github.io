@@ -1,16 +1,12 @@
 ---
 title: "Centre for the Public Awareness of Code"
-aside: false
-layout: doc
 tags:
   - ccc
 ---
 
 # Centre for the Public Awareness of Code
 
-<p class="post-date">5 June 18</p>
 
-<TagList />
 
 
 _What's your favourite movie?_ Most folks already have an answer to this

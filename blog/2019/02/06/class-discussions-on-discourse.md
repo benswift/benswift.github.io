@@ -1,7 +1,5 @@
 ---
 title: "Class discussions on Discourse"
-aside: false
-layout: doc
 tags:
   - teaching
   - dev
@@ -9,9 +7,7 @@ tags:
 
 # Class discussions on Discourse
 
-<p class="post-date">6 Feb 19</p>
 
-<TagList />
 
 
 In 2018 I (with the support of the Teaching & Learning IT team in

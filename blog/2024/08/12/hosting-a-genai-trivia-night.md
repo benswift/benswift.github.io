@@ -1,16 +1,12 @@
 ---
 title: "Hosting a genAI trivia night"
-aside: false
-layout: doc
 tags:
   - ai
 ---
 
 # Hosting a genAI trivia night
 
-<p class="post-date">12 Aug 24</p>
 
-<TagList />
 
 
 I was recently tasked with organising a trivia night, and decided to generate

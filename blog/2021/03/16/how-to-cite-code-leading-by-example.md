@@ -1,16 +1,12 @@
 ---
 title: "How to cite code? Leading by example"
-aside: false
-layout: doc
 tags:
   - teaching
 ---
 
 # How to cite code? Leading by example
 
-<p class="post-date">16 Mar 21</p>
 
-<TagList />
 
 
 In our [Computing Education Reading

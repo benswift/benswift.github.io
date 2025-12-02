@@ -1,16 +1,12 @@
 ---
 title: "Oils from 威海"
-aside: false
-layout: doc
 tags:
   - teaching
 ---
 
 # Oils from 威海
 
-<p class="post-date">29 Jan 19</p>
 
-<TagList />
 
 
 One of my academic responsibilities is teaching our ANU Computer Science

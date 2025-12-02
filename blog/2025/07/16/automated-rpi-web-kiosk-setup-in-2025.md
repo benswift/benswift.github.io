@@ -1,16 +1,12 @@
 ---
 title: "Automated RPi Web Kiosk Setup in 2025"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Automated RPi Web Kiosk Setup in 2025
 
-<p class="post-date">16 July 25</p>
 
-<TagList />
 
 
 As part of a [recent art installation](https://github.com/anucybernetics/panic)

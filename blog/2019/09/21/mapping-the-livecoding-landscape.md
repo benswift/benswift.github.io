@@ -1,7 +1,5 @@
 ---
 title: "Mapping the livecoding landscape"
-aside: false
-layout: doc
 tags:
   - livecoding
   - research
@@ -9,9 +7,7 @@ tags:
 
 # Mapping the livecoding landscape
 
-<p class="post-date">21 Sept 19</p>
 
-<TagList />
 
 
 ## People

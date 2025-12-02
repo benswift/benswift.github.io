@@ -1,16 +1,12 @@
 ---
 title: "Format Markdown on save in Zed using Prettier"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Format Markdown on save in Zed using Prettier
 
-<p class="post-date">20 Sept 24</p>
 
-<TagList />
 
 
 One thing I've particularly enjoyed since switching to Zed is format-on-save,

@@ -1,7 +1,5 @@
 ---
 title: "Are you ready for ChatGPT in the classroom this semester?"
-aside: false
-layout: doc
 tags:
   - ai
   - teaching
@@ -9,9 +7,7 @@ tags:
 
 # Are you ready for ChatGPT in the classroom this semester?
 
-<p class="post-date">16 Jan 23</p>
 
-<TagList />
 
 
 As I scrolled through my social media feeds over the Christmas break

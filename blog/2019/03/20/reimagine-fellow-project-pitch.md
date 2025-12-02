@@ -1,7 +1,5 @@
 ---
 title: "The c/c/c studio"
-aside: false
-layout: doc
 tags:
   - reimagine
   - teaching
@@ -10,9 +8,7 @@ tags:
 
 # The c/c/c studio
 
-<p class="post-date">20 Mar 19</p>
 
-<TagList />
 
 
 *Note to readers:* this is the project plan for my **Reimagine Fellowship**. If

@@ -1,7 +1,5 @@
 ---
 title: "Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery"
-aside: false
-layout: doc
 tags:
   - livecoding
   - gigs
@@ -9,9 +7,7 @@ tags:
 
 # Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery
 
-<p class="post-date">29 July 19</p>
 
-<TagList />
 
 
 For those who visit my blog to hear my livecoding gigs, there's one this Friday.

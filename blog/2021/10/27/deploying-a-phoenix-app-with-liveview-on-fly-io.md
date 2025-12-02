@@ -1,16 +1,12 @@
 ---
 title: "Deploying a Phoenix app (with LiveView) on fly.io"
-aside: false
-layout: doc
 tags:
   - dev
 ---
 
 # Deploying a Phoenix app (with LiveView) on fly.io
 
-<p class="post-date">27 Oct 21</p>
 
-<TagList />
 
 
 Things to note:

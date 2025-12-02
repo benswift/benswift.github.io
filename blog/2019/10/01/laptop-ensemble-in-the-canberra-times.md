@@ -1,7 +1,5 @@
 ---
 title: "Laptop Ensemble in the Canberra Times"
-aside: false
-layout: doc
 tags:
   - teaching
   - reimagine
@@ -10,9 +8,7 @@ tags:
 
 # Laptop Ensemble in the Canberra Times
 
-<p class="post-date">1 Oct 19</p>
 
-<TagList />
 
 
 The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning: [ANU

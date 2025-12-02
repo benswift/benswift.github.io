@@ -1,16 +1,12 @@
 ---
 title: "c/c/c studio: what's already happening"
-aside: false
-layout: doc
 tags:
   - reimagine
 ---
 
 # c/c/c studio: what's already happening
 
-<p class="post-date">9 Sept 19</p>
 
-<TagList />
 
 
 I'm now a [Reimagine Fellow](/blog/2019/08/30/Im-a-reimagine-fellow) and stuff to do with that program

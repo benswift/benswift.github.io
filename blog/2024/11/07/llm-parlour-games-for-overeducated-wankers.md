@@ -1,7 +1,5 @@
 ---
 title: "LLM Parlour Games for Overeducated Wankers"
-aside: false
-layout: doc
 tags:
   - teaching
   - ai
@@ -9,9 +7,7 @@ tags:
 
 # LLM Parlour Games for Overeducated Wankers
 
-<p class="post-date">7 Nov 24</p>
 
-<TagList />
 
 
 _Note: this stuff is the workshop content for an alumni workshop in November

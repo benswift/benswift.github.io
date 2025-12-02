@@ -1,7 +1,5 @@
 ---
 title: "LENS 2020 final gig stream tomorrow at 8pm"
-aside: false
-layout: doc
 tags:
   - livecoding
   - ccc
@@ -11,9 +9,7 @@ tags:
 
 # LENS 2020 final gig stream tomorrow at 8pm
 
-<p class="post-date">11 June 20</p>
 
-<TagList />
 
 
 <Picture file="images/posts/lens2020-final-gig-poster.jpg" alt="LENS S1 2020 final gig poster" />

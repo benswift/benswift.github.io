@@ -1,7 +1,5 @@
 ---
 title: "Simple pdf papers/reports with markdown, pandoc and bibtex"
-aside: false
-layout: doc
 tags:
   - research
   - dev
@@ -9,9 +7,7 @@ tags:
 
 # Simple pdf papers/reports with markdown, pandoc and bibtex
 
-<p class="post-date">16 Mar 21</p>
 
-<TagList />
 
 
 I've long raged against the machine of my institution's default LaTeX template

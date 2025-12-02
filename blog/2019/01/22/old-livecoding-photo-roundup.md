@@ -1,7 +1,5 @@
 ---
 title: "Old livecoding photo roundup"
-aside: false
-layout: doc
 tags:
   - gigs
   - livecoding
@@ -9,9 +7,7 @@ tags:
 
 # Old livecoding photo roundup
 
-<p class="post-date">22 Jan 19</p>
 
-<TagList />
 
 
 I'm trying to find all the photos of me doing livecoding gigs over the past 10

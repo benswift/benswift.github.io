@@ -1,7 +1,5 @@
 ---
 title: "Redacting craiyon prompts with imagemagick"
-aside: false
-layout: doc
 tags:
   - dev
   - ai
@@ -9,9 +7,7 @@ tags:
 
 # Redacting craiyon prompts with imagemagick
 
-<p class="post-date">22 June 22</p>
 
-<TagList />
 
 
 I've been messing around with [craiyon](https://www.craiyon.com) (formerly

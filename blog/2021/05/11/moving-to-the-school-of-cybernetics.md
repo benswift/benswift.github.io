@@ -1,7 +1,5 @@
 ---
 title: "Moving to the School of Cybernetics"
-aside: false
-layout: doc
 tags:
   - teaching
   - research
@@ -10,9 +8,7 @@ tags:
 
 # Moving to the School of Cybernetics
 
-<p class="post-date">11 May 21</p>
 
-<TagList />
 
 
 Some job news---I've just accepted a position in the new [School of

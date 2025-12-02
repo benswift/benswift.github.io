@@ -1,7 +1,5 @@
 ---
 title: "COMP1720 teaser"
-aside: false
-layout: doc
 tags:
   - teaching
   - dev
@@ -9,9 +7,7 @@ tags:
 
 # COMP1720 teaser
 
-<p class="post-date">10 July 17</p>
 
-<TagList />
 
 
 If you're an ANU student and you want to learn how to make art with code, then

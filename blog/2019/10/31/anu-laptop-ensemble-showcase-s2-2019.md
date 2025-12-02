@@ -1,7 +1,5 @@
 ---
 title: "LENS showcase S2 2019"
-aside: false
-layout: doc
 tags:
   - lens
   - gigs
@@ -9,9 +7,7 @@ tags:
 
 # LENS showcase S2 2019
 
-<p class="post-date">31 Oct 19</p>
 
-<TagList />
 
 
 Last weekend the S2 2019
