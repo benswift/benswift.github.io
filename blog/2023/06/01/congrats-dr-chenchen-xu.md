@@ -5,7 +5,7 @@ tags:
   - ai
 ---
 
-A big congratulations do my PhD student Chenchen for successfully completing his
+A big congratulations to my PhD student Chenchen for successfully completing his
 PhD; his thesis title was _Weakly Supervised Vision and Language Representation
 Learning in Sign Language Understanding_. It's freelly available online from the
 [ANU Library](https://openresearch-repository.anu.edu.au/items/174662f9-0aba-4ed2-a340-eea1574969b4).
