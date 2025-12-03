@@ -9,6 +9,8 @@ import { data as gigs } from './livecoding.data'
 
 # Livecoding
 
+<Picture file="images/livecoding/smcclab-live-1.webp" alt="Livecoding performance at the SMC Clab" />
+
 The nature of livecoding is that it is performed (improvised) in-the-moment; the
 gig (performance) _is_ the output (that's why it's called **live**coding), and
 any artefact (e.g. a video recording) is useful documentation, but only a trace
