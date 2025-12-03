@@ -18,9 +18,6 @@ hero:
     - theme: brand
       text: Blog
       link: /blog/
-    - theme: alt
-      text: Research
-      link: /research
 
 features:
   - title: Research
