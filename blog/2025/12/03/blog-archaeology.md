@@ -19,9 +19,12 @@ revealed earlier chapters I'd forgotten about.
 
 The earliest archaeological evidence dates back to August 2012: a fork of
 [imathis/octopress](https://github.com/imathis/octopress) that I used for a few
-months. The first commit was on 20 August 2012, and the last one I can find is
-from 8 November that year. This version used Ubuntu fonts and had a custom
-GitHub sidebar.
+months. The
+[first commit](https://github.com/benswift/octopress/commit/8dc0cb0b4b0de3c6f40674198cb2bd44aeee9b86)
+was on 20 August 2012, and the
+[last one](https://github.com/benswift/octopress/commit/b317c23438fe4ad8a271e19312b04ca82e901159)
+I can find is from 8 November that year. This version used Ubuntu fonts and had
+a custom GitHub sidebar.
 
 But here's what I find most interesting: the commit messages mention "new
 'detached' octopress/org blogging works"---apparently I was already integrating
@@ -42,17 +45,22 @@ Then came what I'm now calling "the Clojure years".
 
 First up: November-December 2013. I forked
 [nakkaya/static](https://github.com/nakkaya/static), a Clojure-based static site
-generator. Created on 28 November, last commit on 4 December. One week. I was
-clearly keen to try something new, but went back to something more mainstream.
+generator.
+[Created on 28 November](https://github.com/benswift/static/commit/b0f10b6dbcb2996caf97acd5d4eb82c0a1b75acc),
+[last commit on 4 December](https://github.com/benswift/static/commit/387b093fb1899ac0e4c839cdee0603d5c4184f8d).
+One week. I was clearly keen to try something new, but went back to something
+more mainstream.
 
 But I wasn't done with Clojure. In December 2014, while simultaneously running
 Jekyll (more on that in a moment), I created a separate repository called
 "biott"[^biott]---built on
 [Cryogen](https://github.com/cryogen-project/cryogen), another Clojure-based
 static site generator. This one stuck around longer, with commits running from
-December 2014 to January 2017. It used [Cutestrap](https://www.cutestrap.com)
-for CSS, which tells you something about mid-2010s web aesthetic
-sensibilities.[^cutestrap]
+[December 2014](https://github.com/benswift/biott/commit/f844154c74681e14cdb8e7f9f1a439345f23a76c)
+to
+[January 2017](https://github.com/benswift/biott/commit/c31767fa17bd1e2a6b8a11c902293dca62443132).
+It used [Cutestrap](https://www.cutestrap.com) for CSS, which tells you
+something about mid-2010s web aesthetic sensibilities.[^cutestrap]
 
 [^biott]: "Ben is On The Tubes". Obviously.
 [^cutestrap]:
@@ -70,9 +78,10 @@ can't remember.
 ## The Jekyll era begins (2014)
 
 Meanwhile, back in the main benswift.github.io repository, the first
-commit---`2519a6176` from 3 January 2014---is refreshingly simple: "Jekyll new."
-Straight to the point. This was the [Lanyon](https://github.com/poole/lanyon)
-theme era, which I quickly adapted into something called "Maid".[^maid-theme]
+commit---[`2519a6176`](https://github.com/benswift/benswift.github.io/commit/2519a617685205a42994d7c9b3b8c27984fdede2)
+from 3 January 2014---is refreshingly simple: "Jekyll new." Straight to the
+point. This was the [Lanyon](https://github.com/poole/lanyon) theme era, which I
+quickly adapted into something called "Maid".[^maid-theme]
 [Redcarpet](https://github.com/vmg/redcarpet) for markdown,
 [Pygments](https://pygments.org) for syntax highlighting, and a sidebar that I
 spent way too much time tweaking.
@@ -82,7 +91,8 @@ spent way too much time tweaking.
     suggest it was a fork of John Otander's theme work, but the naming remains a
     mystery.
 
-But by June 2014, I was already getting restless. On 11 June, commit `2fb5cf4e8`
+But by June 2014, I was already getting restless. On 11 June, commit
+[`2fb5cf4e8`](https://github.com/benswift/benswift.github.io/commit/2fb5cf4e8733dbae850231d053e7189264d4a66d)
 declared: "Nuke all the things to restart." The next commit? "Nuke even more
 things." When you're burning it down, might as well make sure nothing survives.
 
@@ -95,11 +105,13 @@ time.
 
 ## The big Jekyll restart (2018)
 
-Then came the big one: 30 December 2018, commit `c1a4d0225`---"initial commit of
-jekyll files". A complete restart, moving to a custom setup based on
+Then came the big one: 30 December 2018, commit
+[`c1a4d0225`](https://github.com/benswift/benswift.github.io/commit/c1a4d022534c9cda11d98f23b94f112330c9a783)---"initial
+commit of jekyll files". A complete restart, moving to a custom setup based on
 [Jekyll's Minima theme](https://github.com/jekyll/minima). Same day, commit
-`eaf35f115`: "migrate content from old blog version".[^migration-quotes] This is
-the setup that would stick around for six years.
+[`eaf35f115`](https://github.com/benswift/benswift.github.io/commit/eaf35f1151f38dd42de232513e6a0a9f73b1880c):
+"migrate content from old blog version".[^migration-quotes] This is the setup
+that would stick around for six years.
 
 [^migration-quotes]:
     The scare quotes around "migrate" are doing a lot of work here---it was more
@@ -133,10 +145,15 @@ a lot of classes, you need slide support _everywhere_.
 
 Fast forward to November-December 2024, and I finally pulled the trigger on
 [migrating to VitePress](/blog/2025/12/02/switching-from-jekyll-to-vitepress/).
-The migration took about two days of intensive work (commits `97ae2f706` through
-`42a26bd25` on 30 November-2 December). TypeScript instead of Ruby, Vue
-components instead of Liquid templates, modern ES6 modules instead of... well,
-whatever Jekyll was doing with its asset pipeline.
+The migration took about two days of intensive work (commits
+[`97ae2f706`](https://github.com/benswift/benswift.github.io/commit/97ae2f70661cff49b5700f9054d589b876e5bb7f)
+through
+[`42a26bd25`](https://github.com/benswift/benswift.github.io/commit/42a26bd25f4e1bdc384eee7f0f2790d87b43b51d)
+on 30 November-2 December). The last Jekyll version is preserved at the
+[`jekyll` tag](https://github.com/benswift/benswift.github.io/tree/jekyll).
+TypeScript instead of Ruby, Vue components instead of Liquid templates, modern
+ES6 modules instead of... well, whatever Jekyll was doing with its asset
+pipeline.
 
 ## What's the point?
 
