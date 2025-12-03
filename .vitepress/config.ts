@@ -221,6 +221,23 @@ export default defineConfig({
     // Search
     search: {
       provider: "local",
+      options: {
+        _render(src, env, md) {
+          // Render first to populate env.frontmatter
+          const html = md.render(src, env);
+          if (env.frontmatter?.search === false) return "";
+
+          // Add frontmatter title as searchable h1 at start of source
+          // Only if there's no h1 already in the source
+          const hasH1 = /^#\s+/m.test(src);
+          if (env.frontmatter?.title && !hasH1) {
+            // Prepend title as markdown h1 and re-render
+            const modifiedSrc = `# ${env.frontmatter.title}\n\n${src}`;
+            return md.render(modifiedSrc, env);
+          }
+          return html;
+        },
+      },
     },
   },
 
@@ -229,6 +246,9 @@ export default defineConfig({
 
   // Exclude non-content files from processing
   srcExclude: [
+    // Repo files (not site content)
+    "README.md",
+    "LICENSE",
     // Data files (used by data loaders, not content)
     "_data/**",
     // Jekyll build output (gitignored but exclude just in case)
