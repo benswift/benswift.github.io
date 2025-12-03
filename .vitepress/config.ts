@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, type HeadConfig } from "vitepress";
 import checker from "vite-plugin-checker";
 import footnote from "markdown-it-footnote";
 import xtlangGrammar from "./xtlang.tmLanguage.json";
@@ -6,6 +6,51 @@ import armasmGrammar from "./armasm.tmLanguage.json";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+
+function extractDescription(content: string, maxLength = 160): string {
+  // Remove frontmatter
+  const withoutFrontmatter = content.replace(/^---[\s\S]*?---\s*/, "");
+
+  // Remove common markdown/vue elements that shouldn't be in descriptions
+  const cleaned = withoutFrontmatter
+    // Remove HTML/Vue components
+    .replace(/<[^>]+>/g, "")
+    // Remove markdown images
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    // Remove markdown links but keep text
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    // Remove footnote references
+    .replace(/\[\^[^\]]+\]/g, "")
+    // Remove headers
+    .replace(/^#{1,6}\s+.*$/gm, "")
+    // Remove code blocks
+    .replace(/```[\s\S]*?```/g, "")
+    // Remove inline code
+    .replace(/`[^`]+`/g, "")
+    // Remove blockquotes marker
+    .replace(/^>\s*/gm, "")
+    // Remove custom containers (info, tip, warning, etc.)
+    .replace(/^:::\s*\w+\s*$/gm, "")
+    .replace(/^:::\s*$/gm, "")
+    // Remove bold/italic markers
+    .replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1")
+    .replace(/_{1,2}([^_]+)_{1,2}/g, "$1")
+    // Normalise whitespace
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // Get first meaningful chunk of text
+  const firstParagraph = cleaned.split(/\n\n/)[0] || cleaned;
+
+  if (firstParagraph.length <= maxLength) {
+    return firstParagraph;
+  }
+
+  // Truncate at word boundary
+  const truncated = firstParagraph.slice(0, maxLength);
+  const lastSpace = truncated.lastIndexOf(" ");
+  return (lastSpace > 0 ? truncated.slice(0, lastSpace) : truncated) + "…";
+}
 
 function getUnpublishedPosts(): string[] {
   const unpublished: string[] = [];
@@ -38,7 +83,7 @@ function getUnpublishedPosts(): string[] {
 }
 
 export default defineConfig({
-  transformPageData(pageData) {
+  transformPageData(pageData, { siteConfig }) {
     // Set defaults for blog posts (but not blog/index.md or tag pages)
     const isBlogPost =
       pageData.relativePath.startsWith("blog/") &&
@@ -68,6 +113,38 @@ export default defineConfig({
       pageData.frontmatter.aside ??= false;
       pageData.frontmatter.isGig = true;
     }
+
+    // Auto-generate description if not provided
+    if (
+      !pageData.frontmatter.description &&
+      pageData.relativePath !== "index.md"
+    ) {
+      const filePath = path.resolve(siteConfig.srcDir, pageData.relativePath);
+      if (fs.existsSync(filePath)) {
+        const content = fs.readFileSync(filePath, "utf-8");
+        const description = extractDescription(content);
+        if (description) {
+          pageData.frontmatter.description = description;
+        }
+      }
+    }
+  },
+
+  transformHead({ pageData }) {
+    const head: HeadConfig[] = [];
+    const description = pageData.frontmatter.description;
+    const title = pageData.frontmatter.title || pageData.title;
+
+    if (description) {
+      head.push(["meta", { name: "description", content: description }]);
+      head.push(["meta", { property: "og:description", content: description }]);
+    }
+
+    if (title) {
+      head.push(["meta", { property: "og:title", content: title }]);
+    }
+
+    return head;
   },
 
   // Vite configuration
