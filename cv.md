@@ -3,8 +3,6 @@ layout: doc
 title: CV
 ---
 
-# Curriculum Vitae
-
 ## Ben Swift
 
 **Position**: Senior Lecturer, ANU School of Cybernetics **Email**:

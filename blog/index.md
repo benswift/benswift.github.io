@@ -20,8 +20,6 @@ const paginatedPosts = computed(() => {
 })
 </script>
 
-# Blog
-
 This is my blog. Sometimes in these posts I'll talk about research or art
 projects I'm involved with, sometimes I'll just ramble about other stuff which
 is keeping me up at night. If you're interested in a certain topic, click on a

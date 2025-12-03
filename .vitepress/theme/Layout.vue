@@ -15,6 +15,14 @@ const { frontmatter } = useData();
     <PostLayout v-else-if="frontmatter.isPost" />
     <GigLayout v-else-if="frontmatter.isGig" />
     <Layout v-else>
+        <template #doc-before>
+            <h1
+                v-if="frontmatter.layout === 'doc' && frontmatter.title"
+                class="page-title"
+            >
+                {{ frontmatter.title }}
+            </h1>
+        </template>
         <template #doc-footer-before>
             <SiteFooter />
         </template>
@@ -23,3 +31,18 @@ const { frontmatter } = useData();
         </template>
     </Layout>
 </template>
+
+<style scoped>
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0;
+}
+
+@media (min-width: 640px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+}
+</style>

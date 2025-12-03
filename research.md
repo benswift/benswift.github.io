@@ -20,8 +20,6 @@ const pubsByYear = computed(() => {
 const years = computed(() => Object.keys(pubsByYear.value).sort((a, b) => b.localeCompare(a)))
 </script>
 
-# Research
-
 <Picture file="images/pages/ben-soundscapes-21.webp" alt="Ben performing at Soundscapes #21" credit="Adam Thomas" />
 
 ## Research interests

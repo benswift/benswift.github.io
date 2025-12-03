@@ -7,8 +7,6 @@ title: Livecoding
 import { data as gigs } from './livecoding.data'
 </script>
 
-# Livecoding
-
 <Picture file="images/livecoding/smcclab-live-1.webp" alt="Livecoding performance at SMCClab live #1 in Nov 2025" />
 
 The nature of livecoding is that it is performed (improvised) in-the-moment; the

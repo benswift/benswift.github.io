@@ -7,8 +7,6 @@ title: Talks
 import { data as talks } from './talks.data'
 </script>
 
-# Talks
-
 I'm often invited to give talks & presentations. Because knowledge is better
 when it's shared, I've made all my slides freely available here---just click on
 any of the titles below. However, often my slides don't make sense in isolation
