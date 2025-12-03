@@ -12,7 +12,7 @@ students in music, art, computer science, and elsewhere around the ANU.
 To whet your appetite, here's a shot from the
 [final LENS gig at the end of 2019](/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019):
 
-<Picture file="images/posts/lens-showcase-2019-s2/IMG_0895.jpg" alt="LENS members performing at the showcase" />
+<Picture file="images/posts/lens-showcase-2019-s2/IMG_0895.webp" alt="LENS members performing at the showcase" />
 
 If you're a current ANU student and you want to be involved, check out the
 [LENS course website](https://cs.anu.edu.au/code-creativity-culture/lens/),

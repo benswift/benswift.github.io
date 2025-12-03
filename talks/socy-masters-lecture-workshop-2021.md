@@ -23,7 +23,7 @@ event: "SoCy Build guest lecture"
 what does cybernetics say? | | **11:20** | livecoding AMA | | **11:35** | stage
 designer wanted---pitch me |
 
-<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" heading="intro" />
+<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.webp" heading="intro" />
 
 (I assume you've done the
 [pre-reading/watching](/blog/2021/09/13/feedback-in-livecoding-cui-bono))
@@ -32,7 +32,7 @@ designer wanted---pitch me |
 
 the **central problem** of laptop performance
 
-<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/jud-mackrill-qnt9iigV444-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/jud-mackrill-qnt9iigV444-unsplash.webp" />
 
 what do you think oldmate is doing?
 
@@ -44,9 +44,9 @@ what are the flows of information (control & communication)?
 
 and for whose benefit (cui bono)?
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.webp" />
 
-<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.jpg" />
+<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.webp" />
 
 in watching the video, what did you **pay attention** to, and why?
 
@@ -58,9 +58,9 @@ _(5min breakout rooms)_
 _hint_: later, you'll get to have your say about how these flows could be
 improved
 
-<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ama-homepage.jpg" heading="I'm a livecoder, AMA" />
+<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ama-homepage.webp" heading="I'm a livecoder, AMA" />
 
-<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/yvette-de-wit-NYrVisodQ2M-unsplash.jpg" heading="stage designer wanted" />
+<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/yvette-de-wit-NYrVisodQ2M-unsplash.webp" heading="stage designer wanted" />
 
 set design, which is sometimes referred to as scenic design, refers to the
 design and creation of the sets used in works of performance art
@@ -82,7 +82,7 @@ _(10min breakout rooms, then 10min shareback)_
 
 remember: it's a pitch... you've gotta sell it (with theory!)
 
-<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/101345.jpg" heading="pitch time" />
+<SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/101345.webp" heading="pitch time" />
 
 1--2 min per group
 

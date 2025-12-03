@@ -16,8 +16,8 @@ A simple, modern slide deck system with no heavy dependencies.
 <SlideDeck>
   <DeckTitle />
   <DeckText heading="Topic">Bullet points here</DeckText>
-  <DeckSplit image="images/photo.jpg" heading="Split">Text on one side</DeckSplit>
-  <DeckImage image="images/bg.jpg" heading="Full background" />
+  <DeckSplit image="images/photo.webp" heading="Split">Text on one side</DeckSplit>
+  <DeckImage image="images/bg.webp" heading="Full background" />
   <DeckImpact>**Bold statement**</DeckImpact>
 </SlideDeck>
 ```
@@ -64,7 +64,7 @@ Or override with props: `<DeckTitle title="Custom Title" />`
 
 ```vue
 <DeckSplit
-  image="images/photo.jpg"
+  image="images/photo.webp"
   heading="Split layout"
   imagePosition="right"
   imageFit="cover"
@@ -86,7 +86,7 @@ Props:
 
 ```vue
 <DeckImage
-  image="images/background.jpg"
+  image="images/background.webp"
   heading="Optional heading"
   bgSize="cover"
   bgPosition="center"

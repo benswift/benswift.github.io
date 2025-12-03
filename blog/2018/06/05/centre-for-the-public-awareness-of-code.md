@@ -8,7 +8,7 @@ _What's your favourite movie?_ Most folks already have an answer to this
 question (because they've been asked before). Mine's
 [The Castle](https://www.imdb.com/title/tt0118826/).
 
-<Picture file="images/posts/the-castle.jpg" alt="Cast of 'The Castle'" />
+<Picture file="images/posts/the-castle.webp" alt="Cast of 'The Castle'" />
 
 _What's your favourite band/album?_ Again, a pretty standard "dinner party" line
 of questioning. As a muso (at least in the loose sense of the word) I find this

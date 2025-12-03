@@ -38,7 +38,7 @@ One diagram which is often used in futuring is the
 helps visualise the relationship between the _now_ and the different potential
 _futures_ which might eventuate.
 
-![The futures cone](/assets/images/posts/cybernetic-futures/futures-cone.png)
+![The futures cone](/assets/images/posts/cybernetic-futures/futures-cone.webp)
 
 This diagram is just a visual aid---the future doesn't really exist as a series
 of concentric discs of soothing colours---but it helps to anchor discussions we
@@ -48,7 +48,7 @@ and exactly where it falls in the space of possible, plausible, probable, or
 preferable futures is part of the discussion. Think about it as
 [monte carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method) of the future:
 
-![An example distribution of potential futures in the futures cone](/assets/images/posts/cybernetic-futures/futures-sampling.png)
+![An example distribution of potential futures in the futures cone](/assets/images/posts/cybernetic-futures/futures-sampling.webp)
 
 One thing to note here is that futuring is not about predicting the future. In
 many ways it makes one less certain about the future; futuring requires a
@@ -87,7 +87,7 @@ can keep itself "in its happy place", stable and resistant to peturbations.
     The system's purpose can also be stated negatively, e.g. avoiding pain. So
     towards/away from are equally valid when talking about purpose.
 
-![A lighthouse on the shore](/assets/images/posts/cybernetic-futures/evgeni-tcherkasski-SHA85I0G8K4-unsplash.jpg)
+![A lighthouse on the shore](/assets/images/posts/cybernetic-futures/evgeni-tcherkasski-SHA85I0G8K4-unsplash.webp)
 
 There are lots of potential illustrations of this idea, but one that many of my
 cybernetic forebears liked is the one of using a lighthouse to steer a ship.
@@ -107,7 +107,7 @@ There's a
 [YouTube "What is cybernetics?"](https://www.youtube.com/watch?v=iXmlbd86YGA)
 video which includes a diagram like this:
 
-![Diagram of the kubernetes' steering procedure](/assets/images/posts/cybernetic-futures/kubernetes-steering-procedure.png)
+![Diagram of the kubernetes' steering procedure](/assets/images/posts/cybernetic-futures/kubernetes-steering-procedure.webp)
 
 It's not the particular position of the tiller at any one time that's important,
 is the way that the navigator watches the lighthouse and moves the tiller in
@@ -136,7 +136,7 @@ the goal, and then do another thing... and so on[^all-encompassing].
     about claiming all things as within its purview---Wiener was an ersatz
     theologian.
 
-![A radar dish](/assets/images/posts/cybernetic-futures/remy-gieling-n_QECf2Qm4E-unsplash.jpg)
+![A radar dish](/assets/images/posts/cybernetic-futures/remy-gieling-n_QECf2Qm4E-unsplash.webp)
 
 Here's another example of a feedback-powered system. The development of radar in
 WWII was deeply connected to the birth of cybernetics (as detailed by Thomas Rid
@@ -203,7 +203,7 @@ futuring looks like a three step process:
     [show you where the rocks and reefs are](https://adventure.howstuffworks.com/lighthouse.htm).
     Don't @ me.
 
-![Steering towards a preferred future](/assets/images/posts/cybernetic-futures/steering-towards-preferred-future.png)
+![Steering towards a preferred future](/assets/images/posts/cybernetic-futures/steering-towards-preferred-future.webp)
 
 That's an unhelpful picture of what futuring is because it implies that the
 potential future you're steering towards is solid & stationary, but that's just
@@ -216,7 +216,7 @@ it's more like a radar:
 3. analyse these reflections to decide how to act
 4. goto step 1 (because things have now changed)
 
-![Futuring as a radar](/assets/images/posts/cybernetic-futures/futures-as-radar.png)
+![Futuring as a radar](/assets/images/posts/cybernetic-futures/futures-as-radar.webp)
 
 As well as giving a different mental model of what futuring is and isn't, I
 think there are two implications of this switch in perspective.

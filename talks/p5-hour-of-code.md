@@ -8,7 +8,7 @@ event: "Telopeal High School STEM Day"
 
 <SlideTitle />
 
-<SlideBackgroundImage image="images/talks/p5-hour-of-code/chalk.jpg" heading="who drew pictures as a 5yo?" />
+<SlideBackgroundImage image="images/talks/p5-hour-of-code/chalk.webp" heading="who drew pictures as a 5yo?" />
 
 ## your "hour of code"
 
@@ -43,7 +43,7 @@ function draw() {
 
 don't forget to hit the play button!
 
-<SlideBackgroundImage image="images/talks/p5-hour-of-code/collaboration.jpg" heading="collaboration" />
+<SlideBackgroundImage image="images/talks/p5-hour-of-code/collaboration.webp" heading="collaboration" />
 
 ## can you draw the square **differently**?
 
@@ -59,7 +59,7 @@ what happens if you replace `rect` with `ellipse`?
 you can have multiple lines of code in the `draw` function---can you draw a
 square and a circle on top of one another?
 
-<SlideBackgroundImage image="images/talks/p5-hour-of-code/paint.jpg" heading="colours" />
+<SlideBackgroundImage image="images/talks/p5-hour-of-code/paint.webp" heading="colours" />
 
 ## colours {#colours-2}
 
@@ -91,9 +91,9 @@ fill(255, 0, 0); // each value from 0-255
 
 how do you know what instructions the computer **understands**?
 
-<SlideBackgroundImage image="images/talks/p5-hour-of-code/yoda.jpg" heading="use the <a href=\" />
+<SlideBackgroundImage image="images/talks/p5-hour-of-code/yoda.webp" heading="use the <a href=\" />
 
-<SlideBackgroundImage image="images/talks/p5-hour-of-code/volcano.jpg" heading="dealing with errors" />
+<SlideBackgroundImage image="images/talks/p5-hour-of-code/volcano.webp" heading="dealing with errors" />
 
 like a 5-year-old, you need to be **specific**
 
@@ -106,7 +106,7 @@ ReferenceError: sdfsd is not defined (sketch: line 8)
 SyntaxError: missing ) after argument list (sketch: line 12)
 ```
 
-<SlideBackgroundImage image="images/talks/p5-hour-of-code/smiley.png" heading="smiley face" />
+<SlideBackgroundImage image="images/talks/p5-hour-of-code/smiley.webp" heading="smiley face" />
 
 ```js
 function setup() {

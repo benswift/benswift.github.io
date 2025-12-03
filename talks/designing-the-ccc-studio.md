@@ -35,12 +35,12 @@ but first, some **music**
 
 💻 + 🎵 = 🤯
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg" heading="CS101" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.webp" heading="CS101" />
 
 [SlideBackgroundImage
-image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg"
+image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.webp"
 heading="CS @ ANU" /](mailto:SlideBackgroundImage
-image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.jpg"
+image="images/talks/designing-the-ccc-studio/jake-weirick-o9h6KJG52eU-unsplash.webp"
 heading="CS @ ANU" /)
 
 loads of students, large classes
@@ -49,7 +49,7 @@ some resources are plentiful, others scarce
 
 huge opportunities, but how to make the most of them?
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/2016-gallery-fun-times.jpg" heading="COMP1720: Art & Interaction in New Media" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/2016-gallery-fun-times.webp" heading="COMP1720: Art & Interaction in New Media" />
 
 first-year elective available to both CS & art students
 
@@ -62,7 +62,7 @@ p5.js
 
 <https://cs.anu.edu.au/courses/comp1720/>
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/zach-farmer-TkunxoS98q0-unsplash.jpg" heading="reflections: what's good, what's hard" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/zach-farmer-TkunxoS98q0-unsplash.webp" heading="reflections: what's good, what's hard" />
 
 ### good
 
@@ -76,7 +76,7 @@ even wider range of "starting places" than usual
 
 (some) CS students struggle with the subjectivity
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/lens-open-day-brent-ushini.jpg" heading="COMP2710: Laptop Ensemble" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/lens-open-day-brent-ushini.webp" heading="COMP2710: Laptop Ensemble" />
 
 later-year elective available to both CS & music students
 
@@ -86,13 +86,13 @@ started in 2018
 
 <https://comp.anu.edu.au/courses/laptop-ensemble/>
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/ken-okum-_FNDUoE1emg-unsplash.jpg" heading="this year in LENS" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/ken-okum-_FNDUoE1emg-unsplash.webp" heading="this year in LENS" />
 
 flipped mode
 
 whole-class crits & jams
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/zach-farmer-TkunxoS98q0-unsplash.jpg" heading="reflections: what's good, what's hard" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/zach-farmer-TkunxoS98q0-unsplash.webp" heading="reflections: what's good, what's hard" />
 
 ### good
 
@@ -106,7 +106,7 @@ getting students to truly work as an _ensemble_
 
 getting students to grow during the course
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/actoncampus_cropped.jpg" heading="Reimagine" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/actoncampus_cropped.webp" heading="Reimagine" />
 
 a **$350m+ investment** in CS & Eng @ ANU
 
@@ -145,19 +145,19 @@ needs to be approved by the board of education
 
 but **why**?
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/aaron-burden-AvqpdLRjABs-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/aaron-burden-AvqpdLRjABs-unsplash.webp" />
 
 <!-- to attract & welcome new folks to computing -->
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/iu.jpeg" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/iu.webp" />
 
 <!-- it's a great leveller -->
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/ishan-seefromthesky-N2HtDFA-AgM-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/ishan-seefromthesky-N2HtDFA-AgM-unsplash.webp" />
 
 <!-- open-ended nature creates problem finders -->
 
-<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/niklas-weiss-x8JtiGxnS6g-unsplash.jpg" heading="central thesis" />
+<SlideBackgroundImage image="images/talks/designing-the-ccc-studio/niklas-weiss-x8JtiGxnS6g-unsplash.webp" heading="central thesis" />
 
 making music & art isn't a side track on the road to computing
 

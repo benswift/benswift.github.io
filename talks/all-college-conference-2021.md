@@ -13,7 +13,7 @@ event: "All College Conference"
 
 <!-- QR code not yet implemented -->
 
-<SlideBackgroundImage image="images/posts/comp1720-mp-exhibition-2018-2.jpg" heading="ANUEXT Creative Computing" />
+<SlideBackgroundImage image="images/posts/comp1720-mp-exhibition-2018-2.webp" heading="ANUEXT Creative Computing" />
 
 <https://cs.anu.edu.au/code-creativity-culture/creative-computing/>
 
@@ -24,9 +24,9 @@ and other cool things with computers
 first student intake this year (applications close Feb 14), first graduates in
 2022
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="creative computing: definition" bgsize="contain" bgcol="#222" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.webp" heading="creative computing: definition" bgsize="contain" bgcol="#222" />
 
-<SlideBackgroundImage image="images/talks/all-college-conference/jess-bailey-Bg14l3hSAsA-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/all-college-conference/jess-bailey-Bg14l3hSAsA-unsplash.webp" />
 
 the creative arts aren't a way _out_ of computing, they're a way _in_
 
@@ -85,7 +85,7 @@ for scoping, ask yourself:
 > what are the _minimal_ notes I'd give to a teacher (that I _like_) 30min
 > before having to deliver this lesson to a College IT class?
 
-<SlideBackgroundImage image="documents/ccc-curriculum-design-workshop/joeri-romer-Xne1N4yZuOY-unsplash.jpg" heading="group formation" />
+<SlideBackgroundImage image="documents/ccc-curriculum-design-workshop/joeri-romer-Xne1N4yZuOY-unsplash.webp" heading="group formation" />
 
 groups of 2--3
 

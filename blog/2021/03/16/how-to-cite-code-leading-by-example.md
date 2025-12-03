@@ -83,7 +83,7 @@ code:
 # (or remove it altogether if you haven't used any external assets)
 assets:
   - comment: photo of potatoes by Scott Bauer
-    url: "https://en.wikipedia.org/wiki/Potato#/media/File:Patates.jpg"
+    url: "https://en.wikipedia.org/wiki/Potato#/media/File:Patates.webp"
     licence: Public Domain
   - comment: boat photo by Aaron Wu on Unsplash
     url: "https://unsplash.com/photos/_8rjlHwN4uk"

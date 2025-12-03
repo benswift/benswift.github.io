@@ -155,7 +155,7 @@ Continuing on with the instructions in the README, let's try running this thing
 images).
 
 ```shell
-Singularity> style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Singularity> style_transfer ben.webp tiger.webp -o ben-tiger.webp
 bash: style_transfer: command not found
 ```
 
@@ -170,18 +170,18 @@ The quickest & dirtiest fix for this is to add that `/bin` directory to my path
 and try and re-run the script.
 
 ```shell
-Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.webp tiger.webp -o ben-tiger.webp
 ```
 
 And away it went! Several minutes later, it was done. Here are the original two
 images:
 
-![Original ben.jpg image](/assets/images/headshots/headshot.jpg)
-![Original tiger.jpg](/assets/images/posts/tiger.jpg)
+![Original ben.webp image](/assets/images/headshots/headshot.webp)
+![Original tiger.webp](/assets/images/posts/tiger.webp)
 
 and here's the output:
 
-![style-transferred ben-tiger.jpg](/assets/images/posts/ben-tiger.jpg)
+![style-transferred ben-tiger.webp](/assets/images/posts/ben-tiger.webp)
 
 Success...ish. Clearly I need to keep tweaking parameters & input images to come
 up with an output that's actually _good_, but at least that journey can now
@@ -193,7 +193,7 @@ Actually, that declaration of success is a bit premature. At the top of the
 output I noticed that the script was running on the CPU, not the GPU.
 
 ```shell
-Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.webp tiger.webp -o ben-tiger.webp
 ~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from https://www.nvidia.com/Download/index.aspx (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
   return torch._C._cuda_getDeviceCount() > 0
 Using devices: cpu
@@ -211,7 +211,7 @@ the Singularity session, so let's do that.
 
 ```shell
 $ singularity shell --nv pytorch_1.7.1-cuda11.0-cudnn8-runtime.sif
-Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.webp tiger.webp -o ben-tiger.webp
 Using devices: cuda:0
 ~/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:143: UserWarning:
 NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
@@ -279,7 +279,7 @@ Singularity> pip install --user .
 Now, let's try running the `style_trasfer` script one more time:
 
 ```shell
-Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.jpg tiger.jpg -o ben-tiger.jpg
+Singularity> PATH="$PATH:~/.local/bin" style_transfer ben.webp tiger.webp -o ben-tiger.webp
 Using devices: cuda:0
 GPU 0 type: NVIDIA GeForce RTX 3090 (compute 8.6)
 GPU 0 RAM: 24268 MB

@@ -55,7 +55,7 @@ few trip highlights:
   having to put my trousers in the dryer the night before flying out (as shown
   in the picture)
 
-![my arse after slipping over on dumgoyne](/assets/images/posts/dumgoyne-arse-post-climb.jpg)
+![my arse after slipping over on dumgoyne](/assets/images/posts/dumgoyne-arse-post-climb.webp)
 
 All of these folks will be important collaborators going forward as we put the
 creative code curriculum together (next deadline: documents for the

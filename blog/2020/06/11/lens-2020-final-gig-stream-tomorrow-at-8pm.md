@@ -7,7 +7,7 @@ tags:
   - gigs
 ---
 
-<Picture file="images/posts/lens2020-final-gig-poster.jpg" alt="LENS S1 2020 final gig poster" />
+<Picture file="images/posts/lens2020-final-gig-poster.webp" alt="LENS S1 2020 final gig poster" />
 
 If you're stuck at home this Friday night (or if you've got a good mobile data
 package) then you should tune in to see the final gig from the _LENS: ANU Laptop

@@ -65,23 +65,23 @@ concepts they're struggling with in the course material. And they're _really_
 good at making **memes**. Here are just a few of the ones which I've seen end up
 on the allowed "cheat sheets" in the COMP2300 final exam.
 
-<Picture file="images/posts/respectful-learning-memes/comp2300-offramp.jpeg" alt="COMP2300 offramp meme" />
+<Picture file="images/posts/respectful-learning-memes/comp2300-offramp.webp" alt="COMP2300 offramp meme" />
 
 ---
 
-<Picture file="images/posts/respectful-learning-memes/comp2300-galaxy-brain.jpeg" alt="COMP2300 galaxy brain meme" />
+<Picture file="images/posts/respectful-learning-memes/comp2300-galaxy-brain.webp" alt="COMP2300 galaxy brain meme" />
 
 ---
 
-<Picture file="images/posts/respectful-learning-memes/comp2300-joey.jpeg" alt="COMP2300 Joey from Friends meme" />
+<Picture file="images/posts/respectful-learning-memes/comp2300-joey.webp" alt="COMP2300 Joey from Friends meme" />
 
 ---
 
-<Picture file="images/posts/respectful-learning-memes/comp2300-obiwan.jpeg" alt="COMP2300 ObiWan meme" />
+<Picture file="images/posts/respectful-learning-memes/comp2300-obiwan.webp" alt="COMP2300 ObiWan meme" />
 
 ---
 
-<Picture file="images/posts/respectful-learning-memes/comp2300-anakin.jpeg" alt="COMP2300 Anakin Skywalker meme" />
+<Picture file="images/posts/respectful-learning-memes/comp2300-anakin.webp" alt="COMP2300 Anakin Skywalker meme" />
 
 I don't know where they came from---although clearly at least some of them were
 created specifically for COMP2300. But I know from talking to students that they
@@ -108,4 +108,4 @@ they come up with ☺
 settings relating to memes and gifs which you might want to make sure are
 enabled.
 
-<Picture file="images/posts/respectful-learning-memes/teams-meme-settings.png" alt="MS Teams meme settings" />
+<Picture file="images/posts/respectful-learning-memes/teams-meme-settings.webp" alt="MS Teams meme settings" />

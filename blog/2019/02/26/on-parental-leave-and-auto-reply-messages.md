@@ -8,7 +8,7 @@ I'm now (as of the date of this blog post) on parental leave
 😊). I'm about to set up an email auto-reply which will guard my work email
 address until 15 July.
 
-<Picture file="images/posts/nathalie-spehner-1338356-unsplash.jpg" alt="baby dogs - puppies, in fact" />
+<Picture file="images/posts/nathalie-spehner-1338356-unsplash.webp" alt="baby dogs - puppies, in fact" />
 
 _Note: the baby I am taking care of is a human baby, but the above photo
 contains baby dogs._

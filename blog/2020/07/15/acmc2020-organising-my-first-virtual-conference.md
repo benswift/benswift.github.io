@@ -92,7 +92,7 @@ at least) at [https://acmc2020.com/](https://acmc2020.com/), and the
 [source is up on GitHub](https://github.com/australasian-computer-music-association/acmc2020)
 as well.
 
-<Picture file="images/posts/acmc-website-words-sounds-screenshot.png" alt="ACMC website screenshot" />
+<Picture file="images/posts/acmc-website-words-sounds-screenshot.webp" alt="ACMC website screenshot" />
 
 #### Reflections
 
@@ -198,7 +198,7 @@ feature. After the Premiere, the videos were (still are) left up on the
 [ACMC YouTube](https://www.youtube.com/channel/UCKK95K68yVuok-qWNS4Z6Jw) for
 people to catch up & watch at their leisure.
 
-![ACMC YouTube channel screenshot](/assets/images/posts/acmc-youtube-screenshot.png)
+![ACMC YouTube channel screenshot](/assets/images/posts/acmc-youtube-screenshot.webp)
 
 [^ffmpeg]:
     while this worked really nicely in the end, those scripts probably took me
@@ -249,7 +249,7 @@ interaction & discussion. And having all the discussion for the whole conference
 helped with the feeling that this was a single event, rather than just a series
 of disconnected YouTube videos.
 
-<Picture file="images/posts/acmc-discord-screenshot.png" alt="ACMC Discord channel screenshot" />
+<Picture file="images/posts/acmc-discord-screenshot.webp" alt="ACMC Discord channel screenshot" />
 
 #### Reflections
 

@@ -31,7 +31,7 @@ Here are the details if you're still trying to find us:
 - what we will/might/won't cover today (a JIT workshop!)
 - meet one another, goal setting, CoC
 
-<Picture file="images/posts/jens-lelie-u0vgcIOQG08-unsplash.jpg" alt="two roads diverged..." />
+<Picture file="images/posts/jens-lelie-u0vgcIOQG08-unsplash.webp" alt="two roads diverged..." />
 
 ## Extempore hacking
 

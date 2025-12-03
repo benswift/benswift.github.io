@@ -12,4 +12,4 @@ it seems like
 [the ritual](/blog/2018/04/24/the-other-side-algorithm-as-ritual-in-artificial-intelligence)
 started some conversations.
 
-<Picture file="images/posts/ben-kieran-at-chi.jpg" alt="Ben and Kieran at CHI" />
+<Picture file="images/posts/ben-kieran-at-chi.webp" alt="Ben and Kieran at CHI" />

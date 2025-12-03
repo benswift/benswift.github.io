@@ -8,7 +8,7 @@ In the (Australian) Summer of '16/17, '17/18 and '18/19 I ran an
 [_Internet of Things_ China Study Tour](https://cs.anu.edu.au/courses/china-study-tour/)
 at the Beijing Institute of Technology. They were good times.
 
-<Picture file="images/posts/great-wall-of-china-2018.jpg" alt="a bunch of students
+<Picture file="images/posts/great-wall-of-china-2018.webp" alt="a bunch of students
 and I at the Great Wall of China in Dec. 2018" />
 
 However, the

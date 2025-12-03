@@ -27,7 +27,7 @@ event: "an invited guest lecture at the ANU School of Cybernetics"
 
 what's the _biggest_ number which divides evenly into both of these numbers?
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/the-school-of-athens.jpg" heading="the Euclidean algorithm" id="part-1" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/the-school-of-athens.webp" heading="the Euclidean algorithm" id="part-1" />
 
 the Euclidean algorithm for computing the greatest common divisor of two
 integers is one of the oldest known algorithms (circa 300 B.C.)
@@ -36,7 +36,7 @@ first described in Euclid's _Elements, Proposition 2, Book VII_
 
 independently discovered in several other places (China, India)
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.jpg" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/18SCI-KNUTH1-videoSixteenByNineJumbo1600.webp" />
 
 > granddaddy of all algorithms, because it is the oldest nontrivial algorithm
 > that has survived to the present day
@@ -53,7 +53,7 @@ are equal. This final number is then the greatest common divisor.
 
 ([source](https://www.sciencedirect.com/science/article/pii/S0925772108001156))
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.webp" />
 
 To find the **g**reatest **c**ommon **d**ivisor of two numbers (_a_ and _b_),
 repeatedly replace the larger of the two numbers by their difference until both
@@ -157,7 +157,7 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 
 <p style="margin-top: 1rem;"><strong>aka:</strong> <span class="fragment">cuban <em>cinquillo</em></span></p>
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/ashley-west-edwards-zwmkMkJ2Qi4-unsplash.webp" />
 
 > Line up the boxes in one row (_ones_ on the left), then move the rightmost
 > _zeroes_ "under" the left-hand _ones_.
@@ -167,7 +167,7 @@ African <em>Venda</em>, Macedonia, Central African Republic, Tool's
 > (left-hand) columns---and repeat this process until there's no more than one
 > short column.
 
-<SlideStackedPapers width="50%" imagePath="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.png" alt="list of 'world' music rhythms which are Euclidean" />
+<SlideStackedPapers width="50%" imagePath="assets/images/talks/classics-to-colonialism/aksak-rhythm-list.webp" alt="list of 'world' music rhythms which are Euclidean" />
 
 ## paper "results" {#part-3}
 
@@ -193,9 +193,9 @@ of interesting-sounding and culturally-significant rhythms to get people
 <hr class="impact center" data-background-color="#262626" />
 <!-- musician -> simple interface -> cultural domain -->
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/drum-circle.jpg" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/drum-circle.webp" />
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/british-museum.jpg" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/british-museum.webp" />
 
 ---
 
@@ -222,15 +222,15 @@ of interesting-sounding and culturally-significant rhythms to get people
 
 <SlideYouTube id="fn3KWM1kuAw" />
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/Do_You_Love_Me_by_The_Contours_US_vinyl_A-side.png" bgsize="contain" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/Do_You_Love_Me_by_The_Contours_US_vinyl_A-side.webp" bgsize="contain" />
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/mm_The-Countours_Original-Members-2-1024x828.jpg" bgsize="contain" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/mm_The-Countours_Original-Members-2-1024x828.webp" bgsize="contain" />
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/boston-dynamics-police-dog.jpg" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/boston-dynamics-police-dog.webp" />
 
-<SlideBackgroundImage image="images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.jpg" />
+<SlideBackgroundImage image="images/talks/classics-to-colonialism/paper-authors/godfried-toussaint.webp" />
 
-<SlideBackgroundImage image="images/livecoding/ben-acmc-09-closeup.jpg" />
+<SlideBackgroundImage image="images/livecoding/ben-acmc-09-closeup.webp" />
 
 <SlideBackgroundImage image="images/talks/classics-to-colonialism/typing-cat.gif" heading="Ben said the Euclidean algorithm is racist!" />
 

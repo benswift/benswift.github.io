@@ -16,16 +16,16 @@ event: "3ai lecture/workshop, S2 2019"
 
 [part trois](#part-3): what can livecoding teach us about CPS?
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.webp" />
 
-[SlideBackgroundImage image="images/livecoding/ben-qic-1.jpg" heading="part un:
+[SlideBackgroundImage image="images/livecoding/ben-qic-1.webp" heading="part un:
 Ben live @ 3Ai" id="part-1" /](mailto:SlideBackgroundImage
-image="images/livecoding/ben-qic-1.jpg" heading="part un: Ben live @ 3Ai"
+image="images/livecoding/ben-qic-1.webp" heading="part un: Ben live @ 3Ai"
 id="part-1" /)
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/Hot-Shots-Part-Deux.jpg" heading="part deux: what makes a CPS?" id="part-2" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/Hot-Shots-Part-Deux.webp" heading="part deux: what makes a CPS?" id="part-2" />
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/genevieve-bell.webp" />
 
 ---
 
@@ -35,64 +35,64 @@ id="part-1" /)
 > humanity. -&nbsp;_from the
 > [3Ai homepage](https://3ainstitute.cecs.anu.edu.au)_
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" heading="definition" bgsize="contain" bgcol="#222" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.webp" heading="definition" bgsize="contain" bgcol="#222" />
 
 what is a cyber-physical system?
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/randy-fath-ymf4_9Y9S_A-unsplash.webp" />
 
 <!-- potato -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/lars-blankers-B0s3Xndk6tw-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/lars-blankers-B0s3Xndk6tw-unsplash.webp" />
 
 <!-- car (w/o driver) -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/ant-miner-NvFEisZmVsQ-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/ant-miner-NvFEisZmVsQ-unsplash.webp" />
 
 <!-- car (w driver) -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/patricia-prudente-oPZf7BegqSU-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/patricia-prudente-oPZf7BegqSU-unsplash.webp" />
 
 <!-- aibo -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/brett-jordan-U32jeOdkgfA-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/brett-jordan-U32jeOdkgfA-unsplash.webp" />
 
 <!-- robot soccer -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/robot-soccer.jpeg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/robot-soccer.webp" />
 
 <!-- <SlideImageCredit artist="📸 AFP/Getty Images" /> -->
 
 <!-- MCG -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/daniel-anthony-UxektwAqMVw-unsplash.webp" />
 
 <!-- user with smartphone -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/oleg-magni-LGNV-4-l8LA-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/oleg-magni-LGNV-4-l8LA-unsplash.webp" />
 
 <!-- factory worker -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/kat-maryschuk-5BFvAPQTi1U-unsplash.jpg" bgpos="bottom" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/kat-maryschuk-5BFvAPQTi1U-unsplash.webp" bgpos="bottom" />
 
 <!-- x-ray viewing -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/linkedin-sales-navigator-_h5CPTwuVHM-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/linkedin-sales-navigator-_h5CPTwuVHM-unsplash.webp" />
 
 <!-- genevieve -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/genevieve-bell.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/genevieve-bell.webp" />
 
 <!-- city -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/pawel-nolbert-4u2U8EO9OzY-unsplash.webp" />
 
 <!-- school classroom -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/shubham-sharan-Z-fq3wBVfMU-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/shubham-sharan-Z-fq3wBVfMU-unsplash.webp" />
 
 <!-- parlie house -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/social-estate-P-t9yap_20M-unsplash.webp" />
 
 <!-- nasa -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/nasa-Q1p7bh3SHj8-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/nasa-Q1p7bh3SHj8-unsplash.webp" />
 
 <!-- piano -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/clark-young-tq7RtEvezSY-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/clark-young-tq7RtEvezSY-unsplash.webp" />
 
 <!-- rock band -->
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/matthew-kalapuch-sqJ4tLBiurw-unsplash.webp" />
 
 <!-- Ben & Kieran at CECS welcome party -->
-<SlideBackgroundImage image="images/livecoding/ben-kieran-cecs-welcome-party-2019.jpg" />
+<SlideBackgroundImage image="images/livecoding/ben-kieran-cecs-welcome-party-2019.webp" />
 
 <hr class="impact center" data-background-color="#262626" />
 
@@ -102,13 +102,13 @@ what are the key **questions**?
 
 what are the **boundary cases**?
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.jpg" heading="part trois: what can livecoding teach us about CPS?" id="part-3" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/andy-sorensen-flatcap.webp" heading="part trois: what can livecoding teach us about CPS?" id="part-3" />
 
 _Extempore: The design, implementation and application of a cyber-physical
 programming language_
 ([Andrew Sorensen's PhD thesis](https://openresearch-repository.anu.edu.au/handle/1885/144603))
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.webp" />
 
 ---
 
@@ -118,7 +118,7 @@ programming language_
 > on humanity. -&nbsp;_from the
 > [3Ai homepage](https://3ainstitute.cecs.anu.edu.au)_
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.webp" bgpos="top" />
 
 <!-- class: fragment -->
 
@@ -132,7 +132,7 @@ agency
 
 potatoes
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.jpeg" bgpos="top" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/3ai-team-birthday.webp" bgpos="top" />
 
 autonomy
 
@@ -229,7 +229,7 @@ there are some "I"s as well as the "A"s
 - what does failure look like?
 - what design intervention might we make to help out?
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.jpg" bgsize="contain" bgcol="#222" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/US_Supreme_Court_Justice_Potter_Stewart_-_1976_official_portrait.webp" bgsize="contain" bgcol="#222" />
 
 ## open questions
 
@@ -244,7 +244,7 @@ there are some "I"s as well as the "A"s
 - when do static analyses help, and when do they get in the way? what about "AI"
   helpers?
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/Defense.gov_News_Photo_020221-D-9880W-080.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/Defense.gov_News_Photo_020221-D-9880W-080.webp" />
 
 <!-- <SlideImageCredit artist="📸 R. D. Ward, US D.O.D." /> -->
 

@@ -8,9 +8,9 @@ event: "COMP1720 Guest Lecture 2017"
 
 <SlideTitle />
 
-<SlideBackgroundImage image="images/talks/creative-potential-of-random/blue-poles.jpg" />
+<SlideBackgroundImage image="images/talks/creative-potential-of-random/blue-poles.webp" />
 
-<SlideBackgroundImage image="images/talks/creative-potential-of-random/static.png" />
+<SlideBackgroundImage image="images/talks/creative-potential-of-random/static.webp" />
 
 ## synopsis
 
@@ -18,15 +18,15 @@ event: "COMP1720 Guest Lecture 2017"
 - different **types** of randomness
 - mapping: using randomness effectively
 
-<SlideBackgroundImage image="images/talks/all/prasanna-kumar-218699.jpg" heading="story" />
+<SlideBackgroundImage image="images/talks/all/prasanna-kumar-218699.webp" heading="story" />
 
-<SlideBackgroundImage image="images/talks/creative-potential-of-random/jack-hamilton-320934.jpg" />
+<SlideBackgroundImage image="images/talks/creative-potential-of-random/jack-hamilton-320934.webp" />
 
 <hr class="impact center" data-background-color="#262626" />
 
 if you're reading the slides at home, **watch the video**
 
-<SlideBackgroundImage image="images/talks/code-2k18/ben-smiths-sounscapes.jpg" heading="livecoding" />
+<SlideBackgroundImage image="images/talks/code-2k18/ben-smiths-sounscapes.webp" heading="livecoding" />
 
 ## randomness in music has a long history
 
@@ -136,7 +136,7 @@ for (var i = 0; i < pixels.length; i++) {
 updatePixels();
 ```
 
-<SlideBackgroundImage image="images/talks/creative-potential-of-random/blue-poles.jpg" heading="re-creating Blue Poles?" />
+<SlideBackgroundImage image="images/talks/creative-potential-of-random/blue-poles.webp" heading="re-creating Blue Poles?" />
 
 <hr class="impact center" data-background-color="#262626" />
 

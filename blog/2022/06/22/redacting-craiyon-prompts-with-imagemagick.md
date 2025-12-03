@@ -21,11 +21,11 @@ Because it's tedious to do that by hand, here's what I came up with:
 2. use the _📷 Screenshot_ button to get a nice, clean screenshot
 
 3. run this [imagemagick](https://imagemagick.org) command (in my case the
-   downloaded screenshot name was `craiyon_2022-6-22_17-21-5.png`, yours will be
+   downloaded screenshot name was `craiyon_2022-6-22_17-21-5.webp`, yours will be
    similar but with a different timestamp at the end)
 
    ```sh
-   convert craiyon_2022-6-22_17-21-5.png -fill red -draw 'rectangle 30, 240, 1320, 320' -fill white -pointsize 50 -gravity north -annotate +0+250 'REDACTED' craiyon_2022-6-22_17-21-5-redacted.png
+   convert craiyon_2022-6-22_17-21-5.webp -fill red -draw 'rectangle 30, 240, 1320, 320' -fill white -pointsize 50 -gravity north -annotate +0+250 'REDACTED' craiyon_2022-6-22_17-21-5-redacted.webp
    ```
 
 4. (bonus round) if you want to loop over a bunch of files and do it in batch, I
@@ -33,7 +33,7 @@ Because it's tedious to do that by hand, here's what I came up with:
    ```lisp
    (--each
        (f-entries "." (lambda (s) (s-ends-with? "png" s)))
-     (shell-command (format "convert %s -fill red -draw 'rectangle 30, 240, 1320, 320' -fill white -pointsize 50 -gravity north -annotate +0+250 'REDACTED' redacted-%s.jpg"
+     (shell-command (format "convert %s -fill red -draw 'rectangle 30, 240, 1320, 320' -fill white -pointsize 50 -gravity north -annotate +0+250 'REDACTED' redacted-%s.webp"
                             it
                             (f-base it))))
    ```
@@ -42,10 +42,10 @@ Because it's tedious to do that by hand, here's what I came up with:
 
 Here's an example screenshot:
 
-![Grid of AI image outputs generated in response to the prompt "redacting the prompt from a DALL-E image output with imagemagick"](/assets/images/posts/craiyon/craiyon_2022-6-22_17-21-5.png)
+![Grid of AI image outputs generated in response to the prompt "redacting the prompt from a DALL-E image output with imagemagick"](/assets/images/posts/craiyon/craiyon_2022-6-22_17-21-5.webp)
 
 and the same output, after the redaction command has been run:
 
-![Grid of AI image outputs generated in response to the prompt, which has been redacted](/assets/images/posts/craiyon/redacted-craiyon_2022-6-22_17-21-5.jpg)
+![Grid of AI image outputs generated in response to the prompt, which has been redacted](/assets/images/posts/craiyon/redacted-craiyon_2022-6-22_17-21-5.webp)
 
 If you need to do the same, then hopefully I've saved you a bit of time ☺

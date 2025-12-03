@@ -5,7 +5,7 @@ title: Bio
 
 # Bio
 
-<Picture file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot" credit="Andrew Meares" />
+<Picture file="images/headshots/headshot-bw.webp" alt="Ben black-and-white headshot" credit="Andrew Meares" />
 
 ::: tip Note This is a personal bio page. If you're after a more "researcher-y"
 bio, then have a look at my [research page](/research), or check out my

@@ -5,7 +5,7 @@ title: Teaching
 
 # Teaching
 
-<Picture file="images/pages/iot-2018-shao-kao.jpg" alt="燒烤 in Beijing with the IoT@BIT study tour students" />
+<Picture file="images/pages/iot-2018-shao-kao.webp" alt="燒烤 in Beijing with the IoT@BIT study tour students" />
 
 Computers are just so _useful_ in all domains of human endeavour, and giving
 people the skills to do interesting things with them is really important work. I

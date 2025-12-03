@@ -114,23 +114,23 @@ they play diligently and tirelessly for your listening pleasure.
 
 ## Headshots & promo images
 
-![Ben headshot with a pink shirt and artwork in the background](/assets/images/headshots/headshot-pink-shirt.jpg)
+![Ben headshot with a pink shirt and artwork in the background](/assets/images/headshots/headshot-pink-shirt.webp)
 _Photo: Joy Swift_
 
-![Ben headshot near the stairwell in the ANU Birch building](/assets/images/headshots/headshot-birch.jpg)
+![Ben headshot near the stairwell in the ANU Birch building](/assets/images/headshots/headshot-birch.webp)
 _Photo: Andrew Meares_
 
-![Ben headshot (wide) near the stairwell in the ANU Birch building](/assets/images/headshots/headshot-birch-wide.jpg)
+![Ben headshot (wide) near the stairwell in the ANU Birch building](/assets/images/headshots/headshot-birch-wide.webp)
 _Photo: Andrew Meares_
 
-![Ben black-and-white headshot inside the ANU Birch building](/assets/images/headshots/headshot-bw.jpg)
+![Ben black-and-white headshot inside the ANU Birch building](/assets/images/headshots/headshot-bw.webp)
 _Photo: Andrew Meares_
 
-![Ben in an ANU T-shirt](/assets/images/headshots/headshot-anu-tshirt.jpg)
+![Ben in an ANU T-shirt](/assets/images/headshots/headshot-anu-tshirt.webp)
 
-![Ben headshot in the garden](/assets/images/headshots/headshot-garden-wide.jpg)
+![Ben headshot in the garden](/assets/images/headshots/headshot-garden-wide.webp)
 _Photo: Jeanine Wong_
 
-![Ben outside on the ANU campus in autumn](/assets/images/headshots/headshot-autumn.jpg)
+![Ben outside on the ANU campus in autumn](/assets/images/headshots/headshot-autumn.webp)
 
-![Ben outside on the ANU campus in autumn](/assets/images/headshots/headshot-autumn-wide.jpg)
+![Ben outside on the ANU campus in autumn](/assets/images/headshots/headshot-autumn-wide.webp)

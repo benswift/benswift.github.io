@@ -8,7 +8,7 @@ tags:
 Last December [Kieran](https://kieranbrowne.com) graduated---very exciting for
 all concerned.
 
-<Picture file="images/posts/ben-kieran-phd-graduation.jpg" alt="Ben and Kieran in full academic dress at the ANU graduation ceremony in December 2022" />
+<Picture file="images/posts/ben-kieran-phd-graduation.webp" alt="Ben and Kieran in full academic dress at the ANU graduation ceremony in December 2022" />
 
 His thesis, _Neurological Metaphor in Deep Learning: Issues and Alternatives_,
 is

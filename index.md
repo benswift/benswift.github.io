@@ -1,12 +1,18 @@
 ---
 layout: home
+head:
+  - - link
+    - rel: preload
+      href: /assets/images/pages/theremin-75.webp
+      as: image
+      fetchpriority: high
 
 hero:
   name: Ben Swift
   text: livecoder & researcher
   tagline: code, creativity, culture
   image:
-    src: /assets/images/pages/theremin-75.jpg
+    src: /assets/images/pages/theremin-75.webp
     alt: Ben performing live as a musical livecoder
   actions:
     - theme: brand

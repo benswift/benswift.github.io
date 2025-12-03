@@ -3,7 +3,7 @@ layout: page
 ---
 
 <picture style="overflow: hidden; height: 0; padding-top: 66.5%;">
-<img src='{{"/assets/" | append: "images/pages/theremin-75.jpg" | relative_url}}' alt="Ben performing live as a musical livecoder. His back is to the camera (and the audience) giving the photo a mysterious auteur energy (or so he hopes)." />
+<img src='{{"/assets/" | append: "images/pages/theremin-75.webp" | relative_url}}' alt="Ben performing live as a musical livecoder. His back is to the camera (and the audience) giving the photo a mysterious auteur energy (or so he hopes)." />
 </picture>
 
 Hi, I'm Ben Swift---I'm a [researcher]({% link research.md %}), [artist]({% link

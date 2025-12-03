@@ -12,9 +12,9 @@ event: "Lake Tuggeranong College STEM Camp"
 
 can y'all keep a secret?
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/ben-ltc-graduation-group.jpg" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/ben-ltc-graduation-group.webp" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.jpg" bgsize="contain" bgcol="#000" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/ben-ltc-graduation-solo.webp" bgsize="contain" bgcol="#000" />
 
 <hr class="impact center" data-background-color="#262626" />
 
@@ -22,13 +22,13 @@ enough about me...
 
 tell me about **you**
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/tadas-mikuckis-20931-unsplash.jpg" heading="musicians?" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/tadas-mikuckis-20931-unsplash.webp" heading="musicians?" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/roman-mager-59976-unsplash.jpg" heading="mathematicians?" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/roman-mager-59976-unsplash.webp" heading="mathematicians?" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/fatos-bytyqi-535528-unsplash.jpg" heading="coders?" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/fatos-bytyqi-535528-unsplash.webp" heading="coders?" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/aaron-burden-82797-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/aaron-burden-82797-unsplash.webp" />
 
 <h2 class="talk-box" data-background-color="#aef4e6">talk</h2>
 
@@ -60,7 +60,7 @@ livecoding: (_high-tech_ musical instructions)
 
 a series of pitched "events" over time
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/jonathan-safa-689951-unsplash.jpg" heading="pedantry alert." />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/jonathan-safa-689951-unsplash.webp" heading="pedantry alert." />
 
 <!-- class: fragment -->
 
@@ -86,7 +86,7 @@ but how do we express them?
 2. pitch
 3. loudness
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/aron-visuals-322314-unsplash.jpg" heading="time" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/aron-visuals-322314-unsplash.webp" heading="time" />
 
 what aspects of the music does it influence?
 
@@ -100,7 +100,7 @@ why is it important?
 
 how do we measure it?
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/jason-rosewell-60014-unsplash.jpg" heading="loudness" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/jason-rosewell-60014-unsplash.webp" heading="loudness" />
 
 what aspects of the music does it influence?
 
@@ -108,7 +108,7 @@ why is it important?
 
 how do we measure it?
 
-<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" />
+<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.webp" heading="modelling the domain" id="modelling-the-domain" />
 
 remember: music is a series of musical events
 
@@ -134,13 +134,13 @@ the modulus can be any integer, e.g.
 - 7 _mod_ 4 is 3
 - 18 _mod_ 7 is 4
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/lukas-blazek-263122-unsplash.jpg" heading="example: clock" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/lukas-blazek-263122-unsplash.webp" heading="example: clock" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/jason-leung-1378422-unsplash.jpg" heading="patterns" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/jason-leung-1378422-unsplash.webp" heading="patterns" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/orlova-maria-1365053-unsplash.jpg" heading="are" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/orlova-maria-1365053-unsplash.webp" heading="are" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/paul-talbot-704-unsplash.jpg" heading="everywhere" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/paul-talbot-704-unsplash.webp" heading="everywhere" />
 
 <hr class="impact center" data-background-color="#262626" />
 
@@ -158,27 +158,27 @@ person A will write down (in _English_) instructions for how to play the song
 person B will read the instructions, "sing" them, and try to guess what the song
 is
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.jpg" heading="scales (just a warm-up)" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/dolo-iglesias-487520-unsplash.webp" heading="scales (just a warm-up)" />
 
 <hr class="impact center" data-background-color="#262626" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/laura-college-286844-unsplash.jpg" heading="Jaws" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/laura-college-286844-unsplash.webp" heading="Jaws" />
 
 <hr class="impact center" data-background-color="#262626" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/FreddyMercuryWembley.jpg" heading="We Will Rock You" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/FreddyMercuryWembley.webp" heading="We Will Rock You" />
 
 _remember_: you have to describe the instruments, **not** the vocal track
 
 <hr class="impact center" data-background-color="#262626" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/coldplay-clocks.jpeg" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/coldplay-clocks.webp" />
 
 <hr class="impact center" data-background-color="#262626" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/this-is-america.jpeg" heading="This is America" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/this-is-america.webp" heading="This is America" />
 
-<SlideBackgroundImage image="images/talks/ltc-stem-camp/bady-qb-1476403-unsplash.jpg" heading="your choice of song" />
+<SlideBackgroundImage image="images/talks/ltc-stem-camp/bady-qb-1476403-unsplash.webp" heading="your choice of song" />
 
 <h2 class="talk-box" data-background-color="#aef4e6">talk</h2>
 
@@ -210,7 +210,7 @@ be kind when I make mistakes
 
 clap politely at the end (even if I flame out)
 
-<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="reminder: domain model" />
+<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.webp" heading="reminder: domain model" />
 
 **time** (in beats), e.g. 0, 1, 2, 3, 4, 5, 6, 7, 8
 
@@ -233,7 +233,7 @@ and [me](/index))
 
 don't worry about the syntax, I'll explain enough for you to follow along
 
-<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.jpg" heading="I'm old..." />
+<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.webp" heading="I'm old..." />
 
 ## what did we learn?
 

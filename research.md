@@ -22,7 +22,7 @@ const years = computed(() => Object.keys(pubsByYear.value).sort((a, b) => b.loca
 
 # Research
 
-<Picture file="images/pages/ben-soundscapes-21.jpg" alt="Ben performing at Soundscapes #21" credit="Adam Thomas" />
+<Picture file="images/pages/ben-soundscapes-21.webp" alt="Ben performing at Soundscapes #21" credit="Adam Thomas" />
 
 [[toc]]
 

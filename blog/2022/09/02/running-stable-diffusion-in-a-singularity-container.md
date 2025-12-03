@@ -11,8 +11,8 @@ SINGULARITYENV_CUDA_VISIBLE_DEVICES=0 singularity shell --nv
 
 source /opt/conda/etc/profile.d/conda.sh && conda activate ldm
 
-ffmpeg -framerate 30 -pattern_type glob -i '_.png' -c:v libx264 -pix_fmt yuv420p
-genesis.mp4 ffmpeg -framerate 5 -pattern_type glob -i '_-Joel-\*.png' -c:v
+ffmpeg -framerate 30 -pattern_type glob -i '_.webp' -c:v libx264 -pix_fmt yuv420p
+genesis.mp4 ffmpeg -framerate 5 -pattern_type glob -i '_-Joel-\*.webp' -c:v
 libx264 -pix_fmt yuv420p Joel.mp4
 
 ideas for actually packaging this stuff...
@@ -55,7 +55,7 @@ def generate_book_video(book):
     for i, verse in enumerate(verse_generator(book)):
         print(verse)
         image = generate(verse[3], image)
-        image.save(f"output/{i:04d}-{verse[0]}-{verse[1]}-{verse[2]}.png")
+        image.save(f"output/{i:04d}-{verse[0]}-{verse[1]}-{verse[2]}.webp")
 
 
 if __name__ == "__main__":

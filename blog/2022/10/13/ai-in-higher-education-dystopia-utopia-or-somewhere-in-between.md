@@ -14,7 +14,7 @@ This article originally
 
 :::
 
-<Picture file="images/posts/ai-eye.jpeg" alt="a blue eye with weird techy-looking things in the iris" />
+<Picture file="images/posts/ai-eye.webp" alt="a blue eye with weird techy-looking things in the iris" />
 
 AI applications are already part of the higher education experience for
 students, instructors and administrators. Some of them are chatbots and

@@ -36,7 +36,7 @@ yikes!
 - be kind when I make mistakes
 - clap politely at the end (even if I flame out)
 
-<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.jpg" heading="I'm old..." />
+<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/rawpixel-487102-unsplash.webp" heading="I'm old..." />
 
 ## what's a producer?
 
@@ -62,7 +62,7 @@ the problem:
 
 write a **no. 1** hit
 
-<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.jpg" heading="modelling the domain" id="modelling-the-domain" />
+<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.webp" heading="modelling the domain" id="modelling-the-domain" />
 
 <hr class="impact center" data-background-color="#262626" />
 
@@ -70,9 +70,9 @@ write a **no. 1** hit
 
 a series of pitched "events" over time
 
-<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/johannes-plenio-473709-unsplash.webp" />
 
-<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/rawpixel-com-586684-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/pop-production-as-problem-solving/rawpixel-com-586684-unsplash.webp" />
 
 ## dimensions of the domain
 

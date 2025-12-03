@@ -7,7 +7,7 @@ tags:
 
 <p class="post-subtitle">what GitHub's Copilot 'AI assistant' means for coders</p>
 
-<Picture file="images/posts/file-20220629-24-n3q489.jpeg" alt="a person typing away at some code on a laptop computer" />
+<Picture file="images/posts/file-20220629-24-n3q489.webp" alt="a person typing away at some code on a laptop computer" />
 
 ::: tip
 

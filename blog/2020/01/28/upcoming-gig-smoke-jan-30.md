@@ -5,7 +5,7 @@ tags:
   - livecoding
 ---
 
-<Picture file="images/posts/smoke-gig-ad-Jan-2020.jpg" alt="ad for Smoke gig - see FB event for details" />
+<Picture file="images/posts/smoke-gig-ad-Jan-2020.webp" alt="ad for Smoke gig - see FB event for details" />
 
 ::: info Update
 

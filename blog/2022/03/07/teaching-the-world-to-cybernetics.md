@@ -15,7 +15,7 @@ at the School of Cybernetics. My team's mission is:
 >
 > ...and to find ways to do it sustainably.
 
-![a bunch of wires connected together in interesting geometric shapes](/assets/images/posts/alina-grubnyak-ZiQkhI7417A-unsplash.jpg)
+![a bunch of wires connected together in interesting geometric shapes](/assets/images/posts/alina-grubnyak-ZiQkhI7417A-unsplash.webp)
 
 That might strike you as a pretty broad mission, for a couple of reasons:
 

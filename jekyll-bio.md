@@ -4,7 +4,7 @@ layout: page
 permalink: /bio/
 ---
 
-{% include picture.html file="images/headshots/headshot-bw.jpg" alt="Ben black-and-white headshot" credit="Andrew Meares" %}
+{% include picture.html file="images/headshots/headshot-bw.webp" alt="Ben black-and-white headshot" credit="Andrew Meares" %}
 
 {:.hl-para}
 

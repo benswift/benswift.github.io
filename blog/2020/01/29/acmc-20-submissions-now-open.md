@@ -12,7 +12,7 @@ and hands-on tutorials designed to inspire, challenge, and showcase the computer
 music community. There's lots more information on the
 [conference website](https://acmc2020.com/).
 
-<Picture file="images/posts/acmc-2019-allsop-gig.jpg" alt="live computer music & visuals at ACMC'19" />
+<Picture file="images/posts/acmc-2019-allsop-gig.webp" alt="live computer music & visuals at ACMC'19" />
 
 ::: tip
 

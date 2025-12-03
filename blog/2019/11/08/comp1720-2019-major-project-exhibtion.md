@@ -26,6 +26,6 @@ code/creativity/culture work going on here at the ANU.
 
 Here's a photo from last year's exhibition just to whet your appetite.
 
-<Picture file="images/posts/comp1720-mp-exhibition-2018-2.jpg" alt="folks having fun at the COMP1720 exhibition" />
+<Picture file="images/posts/comp1720-mp-exhibition-2018-2.webp" alt="folks having fun at the COMP1720 exhibition" />
 
 See you tomorrow 😊

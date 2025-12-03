@@ -23,9 +23,9 @@ event: "3ai New Applied Science: Lab, S1 2012"
 
 <<!-- Liquid expression removed -->>
 
-<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/kambah-high-demolition.jpg" id="part-1" />
+<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/kambah-high-demolition.webp" id="part-1" />
 
-<SlideBackgroundImage image="images/talks/u3a-world-since-google/ben-smiths-sounscapes.jpg" />
+<SlideBackgroundImage image="images/talks/u3a-world-since-google/ben-smiths-sounscapes.webp" />
 
 The code/creativity/culture (c/c/c) studio is a research & creative practice
 collective within the Research School of Computer Science. We exist to open up
@@ -34,9 +34,9 @@ information/culture/humanity in today's (and tomorrow's) world.
 
 <https://cs.anu.edu.au/code-creativity-culture/>
 
-<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/strong-songs-kirk.jpeg" />
+<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/strong-songs-kirk.webp" />
 
-<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/jehyun-sung-6U5AEmQIajg-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/jehyun-sung-6U5AEmQIajg-unsplash.webp" />
 
 <hr class="center">
 
@@ -52,9 +52,9 @@ for tweet in api.user("3AInstitute").timeline(limit=200):
 - nominate a storyteller
 - at this point, we're thinking in _generalities_
 
-<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/mick-haupt-AOyR7aMFHyU-unsplash.jpg" heading="Ben codes the 80s" id="part-2" />
+<SlideBackgroundImage image="images/talks/understanding-and-enjoyment/mick-haupt-AOyR7aMFHyU-unsplash.webp" heading="Ben codes the 80s" id="part-2" />
 
-<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.jpg" />
+<SlideBackgroundImage image="images/talks/3ai-lecture-workshop/cyberphysical-livecoding.webp" />
 
 <hr class="impact center" data-background-color="#262626" />
 

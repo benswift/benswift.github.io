@@ -8,9 +8,9 @@ event: "code 2k18: A Media Conference of Platforms, Devices and Screens"
 
 <SlideTitle />
 
-<SlideBackgroundImage image="images/talks/code-2k18/alex-holyoake-340782-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/code-2k18/alex-holyoake-340782-unsplash.webp" />
 
-<SlideBackgroundImage image="images/talks/code-2k18/ben-smiths-sounscapes.jpg" heading="Ben Swift" />
+<SlideBackgroundImage image="images/talks/code-2k18/ben-smiths-sounscapes.webp" heading="Ben Swift" />
 
 [livecoder](/livecoding/)
 
@@ -31,31 +31,31 @@ code is my **instrument**
 
 <https://cs.anu.edu.au/code-creativity-culture/>
 
-<SlideBackgroundImage image="images/talks/code-2k18/alec-hunter.jpg" heading="Alec Hunter" />
+<SlideBackgroundImage image="images/talks/code-2k18/alec-hunter.webp" heading="Alec Hunter" />
 
 [ANU School of Music](https://music.cass.anu.edu.au/people/dr-alexander-hunter)
 
 [Performer, composer](https://alexanderhunter.co.uk/)
 
-<SlideBackgroundImage image="images/talks/code-2k18/JP-profile.jpg" heading="Jean-Philippe Demarais" bgsize="contain" />
+<SlideBackgroundImage image="images/talks/code-2k18/JP-profile.webp" heading="Jean-Philippe Demarais" bgsize="contain" />
 
 [ANU School of Art & Design](https://soad.cass.anu.edu.au/people/jean-philippe-demarais)
 
 <!-- class: fragment --> plus many more...
 
-<SlideBackgroundImage image="images/talks/code-2k18/rawpixel-790897-unsplash.jpg" heading="context (CS)" />
+<SlideBackgroundImage image="images/talks/code-2k18/rawpixel-790897-unsplash.webp" heading="context (CS)" />
 
-<SlideBackgroundImage image="images/talks/code-2k18/sharon-mccutcheon-665638-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/code-2k18/sharon-mccutcheon-665638-unsplash.webp" />
 
-<SlideBackgroundImage image="images/talks/code-2k18/lens-soundscapes-2.jpg" heading="but not all..." />
+<SlideBackgroundImage image="images/talks/code-2k18/lens-soundscapes-2.webp" heading="but not all..." />
 
 <hr class="impact center" data-background-color="#262626" />
 
 the next generation of new media creators are spread across the **whole campus**
 
-<SlideBackgroundImage image="images/talks/code-2k18/charisse-kenion-456578-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/code-2k18/charisse-kenion-456578-unsplash.webp" />
 
-<SlideBackgroundImage image="images/talks/code-2k18/vidar-nordli-mathisen-596746-unsplash.jpg" />
+<SlideBackgroundImage image="images/talks/code-2k18/vidar-nordli-mathisen-596746-unsplash.webp" />
 
 innovation/entrepreneurship programs are all the rage
 
@@ -75,7 +75,7 @@ crassly-commercial to support many forms of collaborative content creation
 **what pragmatic, short-lead-time activities can we support to release this
 untapped potential?**
 
-<SlideBackgroundImage image="images/talks/code-2k18/lens-soundscapes-3.jpg" heading="LENS" />
+<SlideBackgroundImage image="images/talks/code-2k18/lens-soundscapes-3.webp" heading="LENS" />
 
 the ANU **L**aptop **Ens**emble
 
@@ -85,20 +85,20 @@ program
 
 currently ~10 students from computer science, art and music
 
-<SlideBackgroundImage image="images/talks/code-2k18/lens-open-day-alex-rohan.jpg" heading="creatively" />
+<SlideBackgroundImage image="images/talks/code-2k18/lens-open-day-alex-rohan.webp" heading="creatively" />
 
 <!-- class: fragment -->
 
 it's gone pretty well (several student-driven gigs around campus)
 
-<SlideBackgroundImage image="images/talks/code-2k18/lens-open-day-brent-ushini.jpg" heading="pedagogically" />
+<SlideBackgroundImage image="images/talks/code-2k18/lens-open-day-brent-ushini.webp" heading="pedagogically" />
 
 <!-- class: fragment -->
 
 students bring their existing skills (great!) but **lots** of missing knowledge
 between domains
 
-<SlideBackgroundImage image="images/talks/code-2k18/special-needs-parenting-square-peg-round-hole.jpg" heading="administratively..." />
+<SlideBackgroundImage image="images/talks/code-2k18/special-needs-parenting-square-peg-round-hole.webp" heading="administratively..." />
 
 <!-- class: fragment -->
 
@@ -108,7 +108,7 @@ creation without _critique_
 
 what can we do to release this **huge untapped potential**?
 
-<SlideBackgroundImage image="images/talks/code-2k18/john-such-493455-unsplash.jpg" heading="links" />
+<SlideBackgroundImage image="images/talks/code-2k18/john-such-493455-unsplash.webp" heading="links" />
 
 [LENS homepage](https://cs.anu.edu.au/code-creativity-culture/lens/)
 
