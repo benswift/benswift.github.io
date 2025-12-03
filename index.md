@@ -47,4 +47,4 @@ satisfying place, especially for people who don't fit the traditional picture of
 a "computer scientist".
 
 If you'd like to get in touch---and please do!---you can email me at
-<mailto:ben.swift@anu.edu.au>.
+[ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au).
