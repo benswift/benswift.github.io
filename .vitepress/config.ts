@@ -206,7 +206,6 @@ export default defineConfig({
     nav: [
       { text: "Blog", link: "/blog/" },
       { text: "Research", link: "/research" },
-      { text: "Talks", link: "/talks/" },
       { text: "Livecoding", link: "/livecoding/" },
       { text: "Teaching", link: "/teaching" },
       { text: "Bio", link: "/bio" },
