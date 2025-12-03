@@ -93,15 +93,6 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
     vertical-align: -0.125em;
 }
 
-.licence {
-    margin-right: 0.5rem;
-}
-
-.licence svg {
-    font-size: 1.1rem;
-    margin: 0 0.05rem;
-}
-
 .footer-links {
     font-family: var(--vp-font-family-mono);
     font-size: 0.8rem;
