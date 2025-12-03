@@ -4,7 +4,7 @@ tags: [meta]
 ---
 
 After the
-[recent switch to VitePress](/blog/2025/12/02/switching-from-jekyll-to-vitepress/),
+[recent switch to VitePress](/blog/2025/12/02/switching-from-jekyll-to-vitepress),
 I became curious about how many of the previous iterations I still had access
 to. I've been an obsessive git packrat for _years_, and I figured that there'd
 be some secrets in the git repo. So I went spelunking in the history.
@@ -109,7 +109,7 @@ a lot of classes, you need slide support _everywhere_.
 ## The present (2024)
 
 Fast forward to November--December 2024, and I finally pulled the trigger on
-[migrating to VitePress](/blog/2025/12/02/switching-from-jekyll-to-vitepress/).
+[migrating to VitePress](/blog/2025/12/02/switching-from-jekyll-to-vitepress).
 The migration took about two days of intensive work (commits
 [`97ae2f706`](https://github.com/benswift/benswift.github.io/commit/97ae2f70661cff49b5700f9054d589b876e5bb7f)
 through
