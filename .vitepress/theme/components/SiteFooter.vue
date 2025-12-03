@@ -53,10 +53,8 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
                 href="https://creativecommons.org/licenses/by-sa/4.0/"
                 class="licence"
                 aria-label="Creative Commons Attribution-ShareAlike 4.0 licence"
-                ><Icon icon="fa6-brands:creative-commons" inline /><Icon
-                    icon="fa6-brands:creative-commons-by"
-                    inline /><Icon icon="fa6-brands:creative-commons-sa" inline
-            /></a>
+                >cc by-sa</a
+            >
             ·
             <a :href="`${repoBase}/blob/main/${page.relativePath}`">source</a>
             ·
