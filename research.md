@@ -24,8 +24,6 @@ const years = computed(() => Object.keys(pubsByYear.value).sort((a, b) => b.loca
 
 <Picture file="images/pages/ben-soundscapes-21.webp" alt="Ben performing at Soundscapes #21" credit="Adam Thomas" />
 
-[[toc]]
-
 ## Research interests
 
 I'm a livecoder, digital artist, and researcher in the
