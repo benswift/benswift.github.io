@@ -9,8 +9,8 @@ head:
 
 hero:
   name: Ben Swift
-  text: livecoder & researcher
-  tagline: code, creativity, culture
+  text: researcher, educator, artist
+  tagline: Leading <em>Human-Scale AI</em> at the Cybernetic Studio
   image:
     src: /assets/images/pages/theremin-75.webp
     alt: Ben performing live as a musical livecoder
