@@ -48,28 +48,21 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
         </p>
 
         <p class="footer-links">
-            <a :href="`${repoBase}/blob/main/${page.relativePath}`">source</a>
-            ·
-            <a :href="`${repoBase}/commits/main/${page.relativePath}`"
-                >history</a
-            >
-            ·
-            <a
-                href="https://github.com/benswift/benswift.github.io"
-                aria-label="View source on GitHub"
-                ><Icon icon="fa6-brands:github" inline
-            /></a>
-        </p>
-
-        <p class="licence">
             <a
                 rel="license"
                 href="https://creativecommons.org/licenses/by-sa/4.0/"
+                class="licence"
                 aria-label="Creative Commons Attribution-ShareAlike 4.0 licence"
                 ><Icon icon="fa6-brands:creative-commons" inline /><Icon
                     icon="fa6-brands:creative-commons-by"
                     inline /><Icon icon="fa6-brands:creative-commons-sa" inline
             /></a>
+            ·
+            <a :href="`${repoBase}/blob/main/${page.relativePath}`">source</a>
+            ·
+            <a :href="`${repoBase}/commits/main/${page.relativePath}`"
+                >history</a
+            >
         </p>
     </footer>
 </template>
@@ -79,7 +72,7 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
     border-top: 1px solid var(--vp-c-divider);
     padding: 1.5rem 0;
     margin-top: 2rem;
-    text-align: left;
+    text-align: center;
     font-size: 0.875rem;
     color: var(--vp-c-text-2);
 }
@@ -102,9 +95,13 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
     vertical-align: -0.125em;
 }
 
+.licence {
+    margin-right: 0.5rem;
+}
+
 .licence svg {
-    font-size: 1.5rem;
-    margin: 0 0.1rem;
+    font-size: 1.1rem;
+    margin: 0 0.05rem;
 }
 
 .footer-links {
