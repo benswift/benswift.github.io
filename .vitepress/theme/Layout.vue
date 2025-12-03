@@ -18,5 +18,8 @@ const { frontmatter } = useData();
         <template #doc-footer-before>
             <SiteFooter />
         </template>
+        <template #layout-bottom>
+            <SiteFooter v-if="frontmatter.layout === 'home'" />
+        </template>
     </Layout>
 </template>

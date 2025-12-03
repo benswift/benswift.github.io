@@ -79,7 +79,7 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
     border-top: 1px solid var(--vp-c-divider);
     padding: 1.5rem 0;
     margin-top: 2rem;
-    text-align: center;
+    text-align: left;
     font-size: 0.875rem;
     color: var(--vp-c-text-2);
 }
