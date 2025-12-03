@@ -42,8 +42,6 @@ published: false
 tags: []
 ---
 
-# ${title}
-
 `;
 
   fs.writeFileSync(filePath, frontmatter);
