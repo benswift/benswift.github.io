@@ -1,4 +1,4 @@
 [tools]
-node = "latest"
+node = "24"
 npm = "latest"
 ruby = "latest"
