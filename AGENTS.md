@@ -37,6 +37,14 @@ Here's a tip.
 :::
 ```
 
+#### When to use tip vs info
+
+- **`::: tip`** --- for actionable guidance: technical advice, recommendations,
+  how-to instructions, cross-references where the reader should take action
+- **`::: info`** --- for contextual information: background context, source
+  attributions ("This article originally appeared in..."), status updates,
+  corrections, disclaimers, author bios
+
 ### Things to do
 
 - use em dashes for parenthetical thoughts---like this---to add rhythm

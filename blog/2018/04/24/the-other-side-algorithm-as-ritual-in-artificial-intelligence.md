@@ -23,7 +23,10 @@ details about tomorrow's ritual, and read the
 [paper](/assets/documents/preprints/browne_swift_2018_the_other_side.pdf) for
 the full story.
 
-::: tip **Post-presentation update**: if you missed the presentation, Kieran
-made a video. Enjoy! :::
+::: info Post-presentation update
+
+If you missed the presentation, Kieran made a video. Enjoy!
+
+:::
 
 <YouTube id="1Y8MqnXYLQU" />

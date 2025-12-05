@@ -9,7 +9,7 @@ tags:
 
 <Picture file="images/posts/file-20220629-24-n3q489.webp" alt="a person typing away at some code on a laptop computer" />
 
-::: tip
+::: info
 
 This article originally
 [appeared in the Conversation](https://theconversation.com/so-this-is-how-it-feels-when-the-robots-come-for-your-job-what-githubs-copilot-ai-assistant-means-for-coders-185957).

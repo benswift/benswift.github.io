@@ -28,7 +28,7 @@ Install Extempore by following the steps
 Install VSCode (a text editor) by following the steps
 [here](https://extemporelang.github.io/docs/overview/editor-support/).
 
-::: info Note
+::: tip
 
 If you want to use a different text editor,
 [there are other options as well](https://extemporelang.github.io/docs/overview/editor-support/).
@@ -56,9 +56,9 @@ Evaluate the extempore code on VSCode by following the steps below:
 6. Type **Extempore Connect** in the opening command palette, the default host
    and port arguments will be `localhost` and `7099` respectively.
 
-::: info To evaluate Extempore code
+::: tip To evaluate Extempore code
 
-move the cursor into the code you want to evaluate and hit **cmd+enter** on
+Move the cursor into the code you want to evaluate and hit **cmd+enter** on
 macOS or **ctrl+enter** on Windows/Linux.
 
 :::

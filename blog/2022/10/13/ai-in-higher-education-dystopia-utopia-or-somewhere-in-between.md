@@ -7,7 +7,7 @@ tags:
 
 <p class="post-subtitle">To understand how HE can incorporate AI successfully, we need to think about how humans will interact with the technology and change their behaviour, says Ben Swift</p>
 
-::: tip
+::: info
 
 This article originally
 [appeared in Times Higher Education](https://www.timeshighereducation.com/campus/ai-higher-education-dystopia-utopia-or-something-between).
