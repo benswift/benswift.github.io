@@ -56,51 +56,51 @@ depending on task. And importantly, there's a substantial neutral zone in the
 middle---tasks where using the tool takes about as much time and effort as doing
 it yourself.
 
-<svg width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+<svg class="tam-diagram" width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <!-- Background zones -->
-  <rect x="50" y="50" width="250" height="133" fill="#e8f5e9" opacity="0.5"/>
-  <text x="175" y="110" text-anchor="middle" font-size="14" fill="#2e7d32" font-weight="600">Early positive</text>
-  <text x="175" y="128" text-anchor="middle" font-size="12" fill="#2e7d32">impression</text>
+  <rect x="50" y="50" width="250" height="133" class="zone-green-light"/>
+  <text x="175" y="110" text-anchor="middle" font-size="14" class="text-green" font-weight="600">Early positive</text>
+  <text x="175" y="128" text-anchor="middle" font-size="12" class="text-green">impression</text>
   
-  <rect x="300" y="50" width="250" height="133" fill="#a5d6a7" opacity="0.7"/>
-  <text x="425" y="110" text-anchor="middle" font-size="14" fill="#1b5e20" font-weight="600">Proven</text>
-  <text x="425" y="128" text-anchor="middle" font-size="12" fill="#1b5e20">integration</text>
+  <rect x="300" y="50" width="250" height="133" class="zone-green-dark"/>
+  <text x="425" y="110" text-anchor="middle" font-size="14" class="text-green-dark" font-weight="600">Proven</text>
+  <text x="425" y="128" text-anchor="middle" font-size="12" class="text-green-dark">integration</text>
   
-  <rect x="50" y="183" width="250" height="134" fill="#fff3e0" opacity="0.5"/>
-  <text x="175" y="243" text-anchor="middle" font-size="14" fill="#e65100" font-weight="600">Neutral zone</text>
-  <text x="175" y="261" text-anchor="middle" font-size="12" fill="#e65100">(premature/speculative)</text>
+  <rect x="50" y="183" width="250" height="134" class="zone-orange-light"/>
+  <text x="175" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">Neutral zone</text>
+  <text x="175" y="261" text-anchor="middle" font-size="12" class="text-orange">(premature/speculative)</text>
   
-  <rect x="300" y="183" width="250" height="134" fill="#ffe0b2" opacity="0.7"/>
-  <text x="425" y="243" text-anchor="middle" font-size="14" fill="#e65100" font-weight="600">Neutral zone</text>
-  <text x="425" y="261" text-anchor="middle" font-size="12" fill="#e65100">(informed)</text>
+  <rect x="300" y="183" width="250" height="134" class="zone-orange-dark"/>
+  <text x="425" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">Neutral zone</text>
+  <text x="425" y="261" text-anchor="middle" font-size="12" class="text-orange">(informed)</text>
   
-  <rect x="50" y="317" width="250" height="133" fill="#ffebee" opacity="0.5"/>
-  <text x="175" y="377" text-anchor="middle" font-size="14" fill="#c62828" font-weight="600">Premature</text>
-  <text x="175" y="395" text-anchor="middle" font-size="12" fill="#c62828">rejection</text>
+  <rect x="50" y="317" width="250" height="133" class="zone-red-light"/>
+  <text x="175" y="377" text-anchor="middle" font-size="14" class="text-red" font-weight="600">Premature</text>
+  <text x="175" y="395" text-anchor="middle" font-size="12" class="text-red">rejection</text>
   
-  <rect x="300" y="317" width="250" height="133" fill="#ef9a9a" opacity="0.7"/>
-  <text x="425" y="377" text-anchor="middle" font-size="14" fill="#b71c1c" font-weight="600">Informed</text>
-  <text x="425" y="395" text-anchor="middle" font-size="12" fill="#b71c1c">rejection</text>
+  <rect x="300" y="317" width="250" height="133" class="zone-red-dark"/>
+  <text x="425" y="377" text-anchor="middle" font-size="14" class="text-red-dark" font-weight="600">Informed</text>
+  <text x="425" y="395" text-anchor="middle" font-size="12" class="text-red-dark">rejection</text>
   
   <!-- Axes -->
-  <line x1="50" y1="450" x2="550" y2="450" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line x1="50" y1="450" x2="50" y2="50" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="50" y1="450" x2="550" y2="450" class="axis" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="50" y1="450" x2="50" y2="50" class="axis" stroke-width="2" marker-end="url(#arrowhead)"/>
   
   <!-- Arrow markers -->
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+      <polygon points="0 0, 10 3, 0 6" class="arrowhead"/>
     </marker>
   </defs>
   
   <!-- Axis labels -->
-  <text x="300" y="485" text-anchor="middle" font-size="16" font-weight="600">Familiarity →</text>
-  <text x="25" y="250" text-anchor="middle" font-size="16" font-weight="600" transform="rotate(-90, 25, 250)">Efficiency →</text>
+  <text x="300" y="485" text-anchor="middle" font-size="16" class="axis-label" font-weight="600">Familiarity →</text>
+  <text x="25" y="250" text-anchor="middle" font-size="16" class="axis-label" font-weight="600" transform="rotate(-90, 25, 250)">Efficiency →</text>
   
   <!-- Grid lines -->
-  <line x1="300" y1="50" x2="300" y2="450" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
-  <line x1="50" y1="183" x2="550" y2="183" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
-  <line x1="50" y1="317" x2="550" y2="317" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="300" y1="50" x2="300" y2="450" class="grid-line" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="50" y1="183" x2="550" y2="183" class="grid-line" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="50" y1="317" x2="550" y2="317" class="grid-line" stroke-width="1" stroke-dasharray="5,5"/>
 </svg>
 
 ## The zones
@@ -269,3 +269,38 @@ Your mileage may vary.
     this save me time?" dimension while acknowledging that ethics is a separate,
     crucial consideration. If you like, add a third "is it good for human
     flourishing" dimension.
+
+<!-- styles for the TAM diagram SVG (light/dark mode) -->
+<style scoped>
+.tam-diagram .zone-green-light { fill: #e8f5e9; opacity: 0.5; }
+.tam-diagram .zone-green-dark { fill: #a5d6a7; opacity: 0.7; }
+.tam-diagram .text-green { fill: #2e7d32; }
+.tam-diagram .text-green-dark { fill: #1b5e20; }
+.tam-diagram .zone-orange-light { fill: #fff3e0; opacity: 0.5; }
+.tam-diagram .zone-orange-dark { fill: #ffe0b2; opacity: 0.7; }
+.tam-diagram .text-orange { fill: #e65100; }
+.tam-diagram .zone-red-light { fill: #ffebee; opacity: 0.5; }
+.tam-diagram .zone-red-dark { fill: #ef9a9a; opacity: 0.7; }
+.tam-diagram .text-red { fill: #c62828; }
+.tam-diagram .text-red-dark { fill: #b71c1c; }
+.tam-diagram .axis { stroke: #333; }
+.tam-diagram .arrowhead { fill: #333; }
+.tam-diagram .axis-label { fill: #333; }
+.tam-diagram .grid-line { stroke: #999; }
+
+.dark .tam-diagram .zone-green-light { fill: #1b5e20; opacity: 0.4; }
+.dark .tam-diagram .zone-green-dark { fill: #2e7d32; opacity: 0.5; }
+.dark .tam-diagram .text-green { fill: #a5d6a7; }
+.dark .tam-diagram .text-green-dark { fill: #c8e6c9; }
+.dark .tam-diagram .zone-orange-light { fill: #e65100; opacity: 0.3; }
+.dark .tam-diagram .zone-orange-dark { fill: #e65100; opacity: 0.45; }
+.dark .tam-diagram .text-orange { fill: #ffcc80; }
+.dark .tam-diagram .zone-red-light { fill: #b71c1c; opacity: 0.35; }
+.dark .tam-diagram .zone-red-dark { fill: #c62828; opacity: 0.5; }
+.dark .tam-diagram .text-red { fill: #ef9a9a; }
+.dark .tam-diagram .text-red-dark { fill: #ffcdd2; }
+.dark .tam-diagram .axis { stroke: #ccc; }
+.dark .tam-diagram .arrowhead { fill: #ccc; }
+.dark .tam-diagram .axis-label { fill: #ccc; }
+.dark .tam-diagram .grid-line { stroke: #666; }
+</style>
