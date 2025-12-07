@@ -62,7 +62,7 @@ that excites _you_. Send me:
       </p>
       <p class="pub-authors">{{ pub.authors }}</p>
       <p v-if="pub.venue" class="pub-venue">{{ pub.venue }}</p>
-      <p v-if="pub.pdfPath" class="pub-pdf"><a :href="pub.pdfPath" target="_blank" title="Download PDF"><Icon icon="fa6-solid:file-pdf" inline /> pdf</a></p>
+      <p v-if="pub.pdfPath" class="pub-pdf"><a :href="pub.pdfPath" target="_blank" title="Download PDF" aria-label="Download PDF"><Icon icon="fa6-solid:file-pdf" inline /></a></p>
     </div>
   </div>
 </div>
