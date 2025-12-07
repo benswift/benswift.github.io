@@ -58,6 +58,7 @@ that excites _you_. Send me:
         <a v-if="pub.doi" :href="`https://doi.org/${pub.doi}`" target="_blank">{{ pub.title }}</a>
         <a v-else-if="pub.url" :href="pub.url" target="_blank">{{ pub.title }}</a>
         <span v-else>{{ pub.title }}</span>
+        <a v-if="pub.pdfPath" :href="pub.pdfPath" target="_blank" class="pdf-link" title="Download PDF">📄</a>
       </p>
       <p class="pub-authors">{{ pub.authors }}</p>
       <p v-if="pub.venue" class="pub-venue">{{ pub.venue }}</p>

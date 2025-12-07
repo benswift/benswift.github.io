@@ -35,6 +35,7 @@ export interface Publication {
   doi?: string;
   url?: string;
   abstract?: string;
+  pdfPath?: string;
 }
 
 declare const data: Publication[];
@@ -90,6 +91,10 @@ export default {
             venue = publisher;
           }
 
+          const pdfPath = file
+            ? `/assets/documents/preprints/${path.basename(file)}`
+            : undefined;
+
           return {
             key: entry.key,
             type: entry.type,
@@ -100,6 +105,7 @@ export default {
             doi,
             url,
             abstract: abstract?.replace(/[{}]/g, ""),
+            pdfPath,
           };
         })
         .sort((a: Publication, b: Publication) => b.year.localeCompare(a.year));
