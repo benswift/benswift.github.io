@@ -6,6 +6,7 @@ title: Research
 <script setup>
 import { data as pubs } from './.vitepress/theme/bibliography.data'
 import { computed } from 'vue'
+import { Icon } from '@iconify/vue'
 
 // Group publications by year
 const pubsByYear = computed(() => {
@@ -58,10 +59,10 @@ that excites _you_. Send me:
         <a v-if="pub.doi" :href="`https://doi.org/${pub.doi}`" target="_blank">{{ pub.title }}</a>
         <a v-else-if="pub.url" :href="pub.url" target="_blank">{{ pub.title }}</a>
         <span v-else>{{ pub.title }}</span>
-        <a v-if="pub.pdfPath" :href="pub.pdfPath" target="_blank" class="pdf-link" title="Download PDF">📄</a>
       </p>
       <p class="pub-authors">{{ pub.authors }}</p>
       <p v-if="pub.venue" class="pub-venue">{{ pub.venue }}</p>
+      <p v-if="pub.pdfPath" class="pub-pdf"><a :href="pub.pdfPath" target="_blank" title="Download PDF"><Icon icon="fa6-solid:file-pdf" inline /> pdf</a></p>
     </div>
   </div>
 </div>
