@@ -2,6 +2,29 @@ import fs from "fs";
 import path from "path";
 import bibtexParse from "bibtex-parse";
 
+const preprintsDir = path.resolve(
+  __dirname,
+  "../../public/assets/documents/preprints",
+);
+
+function syncPreprint(filePath: string | undefined): void {
+  if (!filePath) return;
+
+  const filename = path.basename(filePath);
+  const destPath = path.join(preprintsDir, filename);
+
+  if (fs.existsSync(destPath)) return;
+
+  if (!fs.existsSync(filePath)) {
+    console.warn(`Missing preprint source: ${filePath}`);
+    return;
+  }
+
+  fs.mkdirSync(preprintsDir, { recursive: true });
+  fs.copyFileSync(filePath, destPath);
+  console.log(`Copied preprint: ${filename}`);
+}
+
 export interface Publication {
   key: string;
   type: string;
@@ -44,6 +67,9 @@ export default {
           const doi = entry.DOI || entry.doi;
           const url = entry.URL || entry.url;
           const abstract = entry.ABSTRACT || entry.abstract;
+          const file = entry.FILE || entry.file;
+
+          syncPreprint(file);
 
           // Get the year from date field or year field
           let year = "Unknown";
