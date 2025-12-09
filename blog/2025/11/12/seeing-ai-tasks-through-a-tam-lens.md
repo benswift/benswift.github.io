@@ -7,15 +7,6 @@ tags:
 When it comes to AI adoption research, we keep asking "do you use ChatGPT?" when
 we should be adding "for which specific tasks?"
 
-::: info UPDATE 18 Nov 2025
-
-An earlier version of this post used the term "helpfulness" for one of the axes
-of this framework, but I've changed it (and the surrounding prose) to
-"efficiency" because on reflection I think "helpfulness" conflated the "makes me
-faster" and "is good for human flourishing" questions too much.
-
-:::
-
 The
 [Technology Acceptance Model](https://en.wikipedia.org/wiki/Technology_acceptance_model)
 (TAM) has been successfully applied to understand LLM
@@ -41,7 +32,7 @@ specific task. Ranges from "never tried" to "extensive experience". This only
 moves in one direction---you can't become less familiar with something you've
 tried.
 
-**Efficiency**: whether using the model actually helps you get the task done
+**Usefulness**: whether using the model actually helps you get the task done
 faster. Ranges from actively slowing you down through making no real difference
 to genuinely speeding you up. This corresponds to TAM's "perceived usefulness"
 but evaluated task-specifically and focused on time/effort rather than moral
@@ -95,7 +86,7 @@ it yourself.
   
   <!-- Axis labels -->
   <text x="300" y="485" text-anchor="middle" font-size="16" class="axis-label" font-weight="600">Familiarity →</text>
-  <text x="25" y="250" text-anchor="middle" font-size="16" class="axis-label" font-weight="600" transform="rotate(-90, 25, 250)">Efficiency →</text>
+  <text x="25" y="250" text-anchor="middle" font-size="16" class="axis-label" font-weight="600" transform="rotate(-90, 25, 250)">Usefulness →</text>
   
   <!-- Grid lines -->
   <line x1="300" y1="50" x2="300" y2="450" class="grid-line" stroke-width="1" stroke-dasharray="5,5"/>
