@@ -131,8 +131,8 @@ from scratch.
 You've tried it once or twice and it seemed to save time, but you haven't
 encountered edge cases or the full overhead of error correction. This zone is
 unstable---continued use drives rightward along the familiarity axis, but
-efficiency might shift up or down as experience accumulates and you discover
-hidden time costs.
+percieved usefulness might shift up or down as experience accumulates and you
+discover hidden time costs.
 
 **Low familiarity, no difference or slows you down** (middle/lower left):
 Premature rejection or speculative avoidance. Either you tried it once, found it
@@ -254,12 +254,11 @@ Your mileage may vary.
 [^ethics]:
     The moral/ethical dimension matters enormously---things like
     [digital phrenology](https://gizmodo.com/were-doing-ai-phrenology-again-2000553600)/[racism](https://hai.stanford.edu/news/covert-racism-ai-how-language-models-are-reinforcing-outdated-stereotypes)
-    and racism aren't just inefficient, they're harmful. But that's orthogonal
-    to the speed/efficiency question. A tool can be both fast and unethical, or
-    slow and ethical. The framework deliberately focuses on the pragmatic "does
-    this save me time?" dimension while acknowledging that ethics is a separate,
-    crucial consideration. If you like, add a third "is it good for human
-    flourishing" dimension.
+    and racism aren't just "not useful", they're harmful. A tool can be both
+    fast and unethical, or slow and ethical. The framework deliberately focuses
+    more on the pragmatic "does this save me time?" dimension while
+    acknowledging that ethics is a separate, crucial consideration. If you like,
+    add a third "is it good for human flourishing" dimension.
 
 <!-- styles for the TAM diagram SVG (light/dark mode) -->
 <style scoped>
