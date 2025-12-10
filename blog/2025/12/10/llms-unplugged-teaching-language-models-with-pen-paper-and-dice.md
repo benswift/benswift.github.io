@@ -10,7 +10,7 @@ tags:
 
 Some of this blog post is copied from the actual website copy at
 [LLMs Unplugged](https://www.llmsunplugged.org). But it doesn't count as
-plagiarism because I wrote it :)
+plagiarism because I wrote all the content on that website too :)
 
 :::
 
