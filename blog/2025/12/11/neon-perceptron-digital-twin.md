@@ -5,20 +5,21 @@ tags:
   - web
 ---
 
-::: info
+I'm about to design and build a modern interpretation of
+[Rosenblatt's Perceptron](https://en.wikipedia.org/wiki/Perceptron). It's called
+the [Neon Perceptron](https://github.com/ANUcybernetics/neon-perceptron)
+becausever wire will be a flexible LED that'll light up with it's "activation".
+I'm doing the software, my colleague Brendan Traw is designing some custom PCBs
+and other hardware, and we're working on the overall design together.
 
-This is a digital twin of the
-[neon perceptron](https://github.com/ANUcybernetics/neon-perceptron)---a
-physical neural network that my colleague Brendan Traw and I planning to build.
-While the physical version is still a work in progress, you can play with this
-interactive 3D version right now.
+This post contains a digital twin of the current design, just to help us get a
+feel for how it'll look and work. While the physical version is still a work in
+progress, you can play with this interactive 3D version right now.
 
-:::
-
-Draw on the 5×5 input grid (on the left) and watch the activations flow through
-the network to the output layer. The coloured lines show you what's happening
-inside: orange for positive activations, blue for negative, with brightness and
-thickness showing the magnitude.
+Draw on the 5×5 blue input grid (on the left) and watch the activations flow
+through the network to the output layer. The coloured lines show you what's
+happening inside: orange for positive activations, blue for negative, with
+brightness and thickness showing the magnitude.
 
 <NeonPerceptron />
 
