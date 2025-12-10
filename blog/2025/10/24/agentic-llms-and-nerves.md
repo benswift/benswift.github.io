@@ -2,6 +2,7 @@
 title: "Agentic LLMs and Nerves"
 tags:
   - ai
+published: false
 ---
 
 TODO, but the main points are:
