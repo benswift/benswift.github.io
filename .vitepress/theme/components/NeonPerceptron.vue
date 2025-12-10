@@ -154,7 +154,44 @@ function createSevenSegmentGroup(
         group.add(segment);
     }
 
-    group.userData = { segments, digit };
+    // Create rectangular border halo for "winner" indication
+    const borderWidth = panelWidth + size * 0.12;
+    const borderHeight = panelHeight + size * 0.12;
+    const borderThickness = size * 0.06;
+
+    const borderShape = new THREE.Shape();
+    borderShape.moveTo(-borderWidth / 2, -borderHeight / 2);
+    borderShape.lineTo(borderWidth / 2, -borderHeight / 2);
+    borderShape.lineTo(borderWidth / 2, borderHeight / 2);
+    borderShape.lineTo(-borderWidth / 2, borderHeight / 2);
+    borderShape.lineTo(-borderWidth / 2, -borderHeight / 2);
+
+    const innerHole = new THREE.Path();
+    const innerW = borderWidth - borderThickness * 2;
+    const innerH = borderHeight - borderThickness * 2;
+    innerHole.moveTo(-innerW / 2, -innerH / 2);
+    innerHole.lineTo(innerW / 2, -innerH / 2);
+    innerHole.lineTo(innerW / 2, innerH / 2);
+    innerHole.lineTo(-innerW / 2, innerH / 2);
+    innerHole.lineTo(-innerW / 2, -innerH / 2);
+    borderShape.holes.push(innerHole);
+
+    const haloGeometry = new THREE.ShapeGeometry(borderShape);
+    const haloMaterial = new THREE.MeshStandardMaterial({
+        color: 0xff1493, // neon pink
+        emissive: 0xff1493,
+        emissiveIntensity: 0,
+        transparent: true,
+        opacity: 0,
+        side: THREE.DoubleSide,
+        roughness: 0.3,
+        metalness: 0.0,
+    });
+    const halo = new THREE.Mesh(haloGeometry, haloMaterial);
+    halo.position.z = 0.02; // slightly in front of the display
+    group.add(halo);
+
+    group.userData = { segments, digit, halo };
     return group;
 }
 
@@ -405,6 +442,10 @@ function updateNodeVisuals(
         }
     });
 
+    // Find the index of the highest activation (predicted digit)
+    const maxActivation = Math.max(...output);
+    const winnerIndex = output.indexOf(maxActivation);
+
     output.forEach((activation, i) => {
         const display = nodes.output[i];
         if (!display || !display.userData.segments) return;
@@ -427,6 +468,22 @@ function updateNodeVisuals(
                 }
             },
         );
+
+        // Update halo visibility for winner indication
+        const halo = display.userData.halo as import("three").Mesh;
+        if (halo) {
+            const haloMat =
+                halo.material as import("three").MeshStandardMaterial;
+            if (i === winnerIndex) {
+                haloMat.opacity = 0.8 + maxActivation * 0.2;
+                haloMat.emissiveIntensity = 1.5 + maxActivation * 0.5;
+                display.userData.isWinner = true;
+            } else {
+                haloMat.opacity = 0;
+                haloMat.emissiveIntensity = 0;
+                display.userData.isWinner = false;
+            }
+        }
     });
 }
 
@@ -579,6 +636,18 @@ function onResize() {
 function animate() {
     animationId = requestAnimationFrame(animate);
     if (controls) controls.update();
+
+    // Pulse the winner halo
+    const time = performance.now() * 0.003;
+    const pulse = 0.85 + Math.sin(time) * 0.15; // oscillates between 0.7 and 1.0
+    nodes.output.forEach((display) => {
+        if (display.userData.isWinner && display.userData.halo) {
+            const haloMat = (display.userData.halo as import("three").Mesh)
+                .material as import("three").MeshStandardMaterial;
+            haloMat.emissiveIntensity *= pulse;
+        }
+    });
+
     if (renderer && scene && camera) {
         renderer.render(scene, camera);
     }
