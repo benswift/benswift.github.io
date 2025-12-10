@@ -9,6 +9,7 @@ import YouTube from "./components/YouTube.vue";
 import Picture from "./components/Picture.vue";
 import TagList from "./components/TagList.vue";
 import ForCodesTable from "./components/ForCodesTable.vue";
+import NeonPerceptron from "./components/NeonPerceptron.vue";
 
 // Slide components for reveal.js presentations
 import SlideTitle from "./components/slides/SlideTitle.vue";
@@ -51,6 +52,7 @@ export default {
     app.component("Picture", Picture);
     app.component("TagList", TagList);
     app.component("ForCodesTable", ForCodesTable);
+    app.component("NeonPerceptron", NeonPerceptron);
 
     // Register slide components (for use in reveal.js presentations)
     app.component("SlideTitle", SlideTitle);

@@ -28,7 +28,9 @@
     "@fontsource-variable/atkinson-hyperlegible-mono": "^5.2.5",
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.6",
     "@iconify/vue": "^5.0.0",
+    "@types/three": "^0.182.0",
     "markdown-it-footnote": "^4.0.0",
-    "reveal.js": "^5.2.1"
+    "reveal.js": "^5.2.1",
+    "three": "^0.182.0"
   }
 }
