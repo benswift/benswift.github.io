@@ -8,13 +8,6 @@
 # Node
 node_modules/
 
-# Jekyll (legacy - can remove after migration)
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-.ruby-version
-
 # ClojureScript
 .cljs_node_repl/
 

@@ -31,18 +31,3 @@ const { frontmatter } = useData();
         </template>
     </Layout>
 </template>
-
-<style scoped>
-.page-title {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.25;
-    margin: 0;
-}
-
-@media (min-width: 640px) {
-    .page-title {
-        font-size: 2.5rem;
-    }
-}
-</style>

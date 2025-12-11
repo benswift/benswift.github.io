@@ -22,7 +22,7 @@ const postDate = computed(() => {
 <template>
     <Layout>
         <template #doc-before>
-            <h1>{{ frontmatter.title }}</h1>
+            <h1 class="page-title">{{ frontmatter.title }}</h1>
             <p v-if="postDate" class="post-date">{{ postDate }}</p>
             <TagList />
         </template>
@@ -33,19 +33,6 @@ const postDate = computed(() => {
 </template>
 
 <style scoped>
-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.25;
-    margin: 0;
-}
-
-@media (min-width: 640px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-}
-
 .post-date {
     color: var(--vp-c-text-2);
     font-size: 0.9rem;

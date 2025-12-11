@@ -27,7 +27,7 @@ const gigType = computed(() => {
 <template>
     <Layout>
         <template #doc-before>
-            <h1>{{ frontmatter.title }}</h1>
+            <h1 class="page-title">{{ frontmatter.title }}</h1>
             <p v-if="gigDate" class="post-date">{{ gigDate }}</p>
 
             <dl class="gig-meta">
@@ -80,19 +80,6 @@ const gigType = computed(() => {
 </template>
 
 <style scoped>
-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.25;
-    margin: 0;
-}
-
-@media (min-width: 640px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-}
-
 .post-date {
     color: var(--vp-c-text-2);
     font-style: italic;

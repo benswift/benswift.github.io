@@ -1,62 +1,6 @@
 import { createContentLoader } from "vitepress";
-
-function extractExcerpt(src: string): string {
-  // Remove frontmatter
-  const withoutFrontmatter = src.replace(/^---[\s\S]*?---\s*/, "");
-
-  // Split into lines and process
-  const lines = withoutFrontmatter.split("\n");
-  const paragraphs: string[] = [];
-  let currentPara = "";
-  let inCodeBlock = false;
-  let inContainer = false;
-
-  for (const line of lines) {
-    // Track code blocks
-    if (line.startsWith("```")) {
-      inCodeBlock = !inCodeBlock;
-      continue;
-    }
-    if (inCodeBlock) continue;
-
-    // Track custom containers (:::)
-    if (line.startsWith(":::")) {
-      inContainer = !inContainer || line.trim() === ":::";
-      continue;
-    }
-    if (inContainer) continue;
-
-    // Skip headings, images, blockquotes, list items, HTML
-    if (/^#+\s/.test(line)) continue;
-    if (/^!\[/.test(line)) continue;
-    if (/^>\s/.test(line)) continue;
-    if (/^[-*]\s/.test(line)) continue;
-    if (/^</.test(line)) continue;
-
-    const trimmed = line.trim();
-    if (trimmed === "") {
-      if (currentPara) {
-        paragraphs.push(currentPara);
-        currentPara = "";
-      }
-    } else {
-      currentPara += (currentPara ? " " : "") + trimmed;
-    }
-  }
-  if (currentPara) paragraphs.push(currentPara);
-
-  // Get first paragraph and clean markdown syntax
-  const first = paragraphs[0] || "";
-  return first
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) -> text
-    .replace(/\*\*([^*]+)\*\*/g, "$1") // **bold** -> bold
-    .replace(/\*([^*]+)\*/g, "$1") // *italic* -> italic
-    .replace(/_([^_]+)_/g, "$1") // _italic_ -> italic
-    .replace(/`([^`]+)`/g, "$1") // `code` -> code
-    .replace(/\[([^\]]+)\]\[[^\]]*\]/g, "$1") // [text][ref] -> text
-    .replace(/\s+/g, " ")
-    .trim();
-}
+import { formatDate } from "../.vitepress/utils/date";
+import { extractExcerpt } from "../.vitepress/utils/excerpt";
 
 interface Post {
   title: string;
@@ -112,14 +56,10 @@ export default createContentLoader("blog/**/*.md", {
           url: page.url,
           date: {
             raw: dateStr,
-            formatted: date.toLocaleDateString("en-AU", {
-              day: "numeric",
-              month: "short",
-              year: "2-digit",
-            }),
+            formatted: formatDate(date, true),
           },
           tags,
-          excerpt: extractExcerpt(page.src || "").slice(0, 450),
+          excerpt: extractExcerpt(page.src || ""),
         };
       })
       .sort(

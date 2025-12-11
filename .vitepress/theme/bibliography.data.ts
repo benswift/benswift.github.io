@@ -25,6 +25,35 @@ function syncPreprint(filePath: string | undefined): void {
   console.log(`Copied preprint: ${filename}`);
 }
 
+// BibTeX entry interface (bibtex-parse returns fields in both cases)
+interface BibTeXEntry {
+  key: string;
+  type: string;
+  // Fields can be uppercase or lowercase depending on the .bib file
+  TITLE?: string;
+  title?: string;
+  AUTHOR?: string;
+  author?: string;
+  DATE?: string;
+  date?: string;
+  YEAR?: string;
+  year?: string;
+  BOOKTITLE?: string;
+  booktitle?: string;
+  JOURNAL?: string;
+  journal?: string;
+  PUBLISHER?: string;
+  publisher?: string;
+  DOI?: string;
+  doi?: string;
+  URL?: string;
+  url?: string;
+  ABSTRACT?: string;
+  abstract?: string;
+  FILE?: string;
+  file?: string;
+}
+
 export interface Publication {
   key: string;
   type: string;
@@ -41,6 +70,13 @@ export interface Publication {
 declare const data: Publication[];
 export { data };
 
+function getField(entry: BibTeXEntry, field: string): string | undefined {
+  return (
+    (entry[field.toUpperCase() as keyof BibTeXEntry] as string | undefined) ??
+    (entry[field.toLowerCase() as keyof BibTeXEntry] as string | undefined)
+  );
+}
+
 export default {
   load(): Publication[] {
     const bibFile = path.resolve(__dirname, "../../_data/ben-pubs.bib");
@@ -53,22 +89,21 @@ export default {
     const bibContent = fs.readFileSync(bibFile, "utf-8");
 
     try {
-      const entries = bibtexParse.entries(bibContent);
+      const entries = bibtexParse.entries(bibContent) as BibTeXEntry[];
 
       return entries
-        .map((entry: any) => {
-          // bibtex-parse returns field names in UPPERCASE
-          const title = entry.TITLE || entry.title;
-          const author = entry.AUTHOR || entry.author;
-          const date = entry.DATE || entry.date;
-          const yearField = entry.YEAR || entry.year;
-          const booktitle = entry.BOOKTITLE || entry.booktitle;
-          const journal = entry.JOURNAL || entry.journal;
-          const publisher = entry.PUBLISHER || entry.publisher;
-          const doi = entry.DOI || entry.doi;
-          const url = entry.URL || entry.url;
-          const abstract = entry.ABSTRACT || entry.abstract;
-          const file = entry.FILE || entry.file;
+        .map((entry) => {
+          const title = getField(entry, "title");
+          const author = getField(entry, "author");
+          const date = getField(entry, "date");
+          const yearField = getField(entry, "year");
+          const booktitle = getField(entry, "booktitle");
+          const journal = getField(entry, "journal");
+          const publisher = getField(entry, "publisher");
+          const doi = getField(entry, "doi");
+          const url = getField(entry, "url");
+          const abstract = getField(entry, "abstract");
+          const file = getField(entry, "file");
 
           syncPreprint(file);
 

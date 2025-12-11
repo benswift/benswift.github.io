@@ -12,6 +12,25 @@ import type StateCore from "markdown-it/lib/rules_core/state_core.mjs";
  *
  * This replicates the Jekyll revealify.rb plugin behaviour.
  */
+
+// State interface stored in env to avoid module-level mutable state
+interface RevealifyState {
+  inRevealPresentation: boolean;
+  sectionOpen: boolean;
+}
+
+const REVEALIFY_STATE_KEY = "__revealify";
+
+function getState(env: Record<string, unknown>): RevealifyState {
+  if (!env[REVEALIFY_STATE_KEY]) {
+    env[REVEALIFY_STATE_KEY] = {
+      inRevealPresentation: false,
+      sectionOpen: false,
+    };
+  }
+  return env[REVEALIFY_STATE_KEY] as RevealifyState;
+}
+
 export function revealifyPlugin(md: MarkdownIt): void {
   // Store original rules
   const defaultHeadingOpen =
@@ -23,19 +42,17 @@ export function revealifyPlugin(md: MarkdownIt): void {
     ((tokens, idx, options, _env, self) =>
       self.renderToken(tokens, idx, options));
 
-  // Track if we're inside a reveal presentation
-  let inRevealPresentation = false;
-  let sectionOpen = false;
-
   // Custom heading_open rule
   md.renderer.rules.heading_open = ((
     tokens,
     idx,
     options,
     env,
-    self
+    self,
   ): string => {
-    if (!inRevealPresentation) {
+    const state = getState(env as Record<string, unknown>);
+
+    if (!state.inRevealPresentation) {
       return defaultHeadingOpen(tokens, idx, options, env, self);
     }
 
@@ -49,7 +66,7 @@ export function revealifyPlugin(md: MarkdownIt): void {
 
     // Close previous section if open
     let result = "";
-    if (sectionOpen) {
+    if (state.sectionOpen) {
       result += "</section>\n";
     }
 
@@ -70,7 +87,7 @@ export function revealifyPlugin(md: MarkdownIt): void {
     const sectionAttrStr =
       sectionAttrs.length > 0 ? " " + sectionAttrs.join(" ") : "";
     result += `<section${sectionAttrStr}>\n`;
-    sectionOpen = true;
+    state.sectionOpen = true;
 
     // Render the heading without hoisted attributes
     token.attrs = headingAttrs.map((attr) => {
@@ -84,7 +101,9 @@ export function revealifyPlugin(md: MarkdownIt): void {
 
   // Custom hr rule - creates slide breaks without visible content
   md.renderer.rules.hr = ((tokens, idx, options, env, self): string => {
-    if (!inRevealPresentation) {
+    const state = getState(env as Record<string, unknown>);
+
+    if (!state.inRevealPresentation) {
       return defaultHr(tokens, idx, options, env, self);
     }
 
@@ -92,7 +111,7 @@ export function revealifyPlugin(md: MarkdownIt): void {
 
     // Close previous section if open
     let result = "";
-    if (sectionOpen) {
+    if (state.sectionOpen) {
       result += "</section>\n";
     }
 
@@ -108,22 +127,25 @@ export function revealifyPlugin(md: MarkdownIt): void {
     const sectionAttrStr =
       sectionAttrs.length > 0 ? " " + sectionAttrs.join(" ") : "";
     result += `<section${sectionAttrStr}>\n`;
-    sectionOpen = true;
+    state.sectionOpen = true;
 
     return result;
   }) as RenderRule;
 
   // Add core rule to handle presentation wrapper
-  md.core.ruler.push("revealify_wrapper", (state: StateCore): boolean => {
+  md.core.ruler.push("revealify_wrapper", (stateCore: StateCore): boolean => {
     // Check if this is a reveal presentation via frontmatter
-    const env = state.env;
-    if (!env?.frontmatter?.layout || env.frontmatter.layout !== "reveal") {
-      inRevealPresentation = false;
+    const env = stateCore.env as Record<string, unknown>;
+    const state = getState(env);
+    const frontmatter = env.frontmatter as { layout?: string } | undefined;
+
+    if (!frontmatter?.layout || frontmatter.layout !== "reveal") {
+      state.inRevealPresentation = false;
       return true;
     }
 
-    inRevealPresentation = true;
-    sectionOpen = false;
+    state.inRevealPresentation = true;
+    state.sectionOpen = false;
 
     return true;
   });
@@ -131,9 +153,13 @@ export function revealifyPlugin(md: MarkdownIt): void {
   // Add rule to close final section
   const originalRender = md.render.bind(md);
   md.render = (src: string, env?: object): string => {
-    const result = originalRender(src, env);
+    const envRecord = (env || {}) as Record<string, unknown>;
+    const result = originalRender(src, envRecord);
+    const state = getState(envRecord);
 
-    if (inRevealPresentation && sectionOpen) {
+    if (state.inRevealPresentation && state.sectionOpen) {
+      // Reset state for next render
+      state.sectionOpen = false;
       return result + "</section>\n";
     }
 

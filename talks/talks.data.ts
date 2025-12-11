@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { formatDate } from "../.vitepress/utils/date";
 
 export interface Talk {
   title: string;
@@ -46,11 +47,7 @@ export default {
           title: fm.title || slug,
           url: `/talks/${slug}`,
           date: dateStr,
-          dateFormatted: date.toLocaleDateString("en-AU", {
-            day: "numeric",
-            month: "short",
-            year: "numeric",
-          }),
+          dateFormatted: formatDate(date),
           event: fm.event,
           slug,
         };
