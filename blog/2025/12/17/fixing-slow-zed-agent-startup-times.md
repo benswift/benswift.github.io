@@ -3,7 +3,6 @@ title: "Fixing slow Zed agent startup times"
 tags:
   - ai
   - dev
-  - zed
 ---
 
 I've been using [Claude Code](https://github.com/anthropics/claude-code) via
