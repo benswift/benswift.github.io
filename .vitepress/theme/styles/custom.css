@@ -205,6 +205,10 @@ blockquote {
     color: var(--vp-c-text-2);
 }
 
+.post-item-tags {
+    margin: 0.25rem 0 0;
+}
+
 .post-item-excerpt {
     margin-top: 0.5rem;
     color: var(--vp-c-text-2);

@@ -38,6 +38,7 @@ const paginatedPosts = computed(() => {
   <li v-for="post in paginatedPosts" :key="post.url" class="post-item">
     <a :href="post.url" class="post-item-title">{{ post.title }}</a>
     <span class="post-item-date">{{ post.date.formatted }}</span>
+    <TagList v-if="post.tags.length" :tags="post.tags" class="post-item-tags" />
     <p v-if="post.excerpt" class="post-item-excerpt">{{ post.excerpt }}...</p>
   </li>
 </ul>
