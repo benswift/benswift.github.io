@@ -82,3 +82,7 @@ When discussing code or technical concepts:
 ## Australian spelling
 
 Use Australian English: "colour", "centre", "realise" (not "realize")
+
+## Creating new posts
+
+Run `npm run post` to create a new blog post with the correct frontmatter and file structure.
