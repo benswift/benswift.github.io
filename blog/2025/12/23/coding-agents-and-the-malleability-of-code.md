@@ -20,3 +20,19 @@ agent runs the change-observe-fix loop---there are---but it usually doesn't
 require my intervention. So the overall feeling is of code that bends but
 doesn't break.
 
+There's a research community that's been thinking about [malleable
+software](https://www.inkandswitch.com/essay/malleable-software/) for years.
+Their framing: "The original promise of personal computing was a new kind of
+clay. Instead, we got appliances." Geoffrey Litt's essay [Malleable software in
+the age of
+LLMs](https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming.html)
+explores how LLMs might finally deliver on that promise---enabling end-users to
+reshape their tools without learning to program.
+
+But I'm coming at this from a different angle. I already know how to program.
+The brittleness I'm describing isn't about lacking the skills to modify
+code---it's about the sheer effort required to hold all the pieces in your head
+while you do it. The agent absorbs that cognitive load. It remembers which files
+need updating, runs the tests, fixes the knock-on errors. The code was always
+*theoretically* malleable. Now it actually *feels* that way.
+
