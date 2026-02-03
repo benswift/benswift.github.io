@@ -11,3 +11,4 @@ default_port: 6420
 remote_operations: false
 auto_commit: false
 zero_padded_ids: 2
+task_prefix: "task"
