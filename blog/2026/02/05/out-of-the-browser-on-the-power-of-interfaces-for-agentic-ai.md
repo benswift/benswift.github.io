@@ -196,7 +196,7 @@ guardrails existed in the first place.
 
 ## It's not the models, it's the interface
 
-I've [written before](/blog/2025/07/17/agentic-ai-llms-with-stones/) about how
+I've [written before](/blog/2025/07/17/agentic-ai-llms-with-stones) about how
 agentic AI is fundamentally about giving LLMs tools---stones to throw, in the
 "sticks and stones" sense. But the terminal-native AI wave has clarified
 something for me: the _power_ of agentic AI comes from the interface, not just
