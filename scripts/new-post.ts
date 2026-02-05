@@ -2,13 +2,7 @@
 
 import fs from "fs";
 import path from "path";
-
-function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
+import { slugify } from "../.vitepress/utils/slugify";
 
 function main() {
   const args = process.argv.slice(2);
