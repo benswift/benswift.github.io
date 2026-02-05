@@ -10,13 +10,14 @@ const preprintsDir = path.resolve(
 function syncPreprint(filePath: string | undefined): void {
   if (!filePath) return;
 
-  const filename = path.basename(filePath);
+  const trimmed = filePath.trim();
+  const filename = path.basename(trimmed);
   const destPath = path.join(preprintsDir, filename);
 
   if (fs.existsSync(destPath)) return;
 
-  if (!fs.existsSync(filePath)) {
-    console.warn(`Missing preprint source: ${filePath}`);
+  if (!fs.existsSync(trimmed)) {
+    console.warn(`Missing preprint source: ${trimmed}`);
     return;
   }
 
@@ -113,7 +114,7 @@ export default {
             const match = date.match(/^(\d{4})/);
             if (match) year = match[1];
           } else if (yearField) {
-            year = yearField;
+            year = String(yearField);
           }
 
           // Determine venue based on entry type
@@ -127,7 +128,7 @@ export default {
           }
 
           const pdfPath = file
-            ? `/assets/documents/preprints/${path.basename(file)}`
+            ? `/assets/documents/preprints/${path.basename(file.trim())}`
             : undefined;
 
           return {
