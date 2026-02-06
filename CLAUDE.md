@@ -3,8 +3,8 @@
 This is a vitepress site. Always use ts (not js) and follow vitepress
 conventions wherever possible. Stick to modern best practices, e.g. es6 modules.
 
-This blog was previously a jekyll site, and that code is still available on the
-`main` branch.
+This blog was previously a Jekyll site; the last Jekyll version is preserved at
+the `jekyll` tag.
 
 ## Voice and tone
 
