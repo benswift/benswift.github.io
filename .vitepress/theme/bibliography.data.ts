@@ -98,8 +98,8 @@ export default {
           const author = getField(entry, "author");
           const date = getField(entry, "date");
           const yearField = getField(entry, "year");
-          const booktitle = getField(entry, "booktitle");
-          const journal = getField(entry, "journal");
+          const booktitle = getField(entry, "booktitle") ?? getField(entry, "eventtitle");
+          const journal = getField(entry, "journal") ?? getField(entry, "journaltitle");
           const publisher = getField(entry, "publisher");
           const doi = getField(entry, "doi");
           const url = getField(entry, "url");
