@@ -15,7 +15,7 @@ confirm that perceived usefulness and ease of use predict whether people adopt
 these tools. But these studies treat adoption as a technology-level decision
 rather than examining the specific _tasks_ where these things are useful.
 
-A researcher might find an LLM invaluable for literature search but useless for
+A researcher might find an LLM really useful for literature search but useless for
 theoretical analysis. A journalist might rely on it for drafting routine updates
 but avoid it for investigative work. A disinfo actor will gladly use it to
 ["flood the zone"](https://www.mediamatters.org/steve-bannon/misinformer-year-steve-bannons-flood-zone-shit-approach-destroying-american-democracy),
@@ -174,7 +174,7 @@ This matches what
 [recent meta-analyses](https://www.nature.com/articles/s41562-024-02024-1) have
 found: human-AI combinations perform significantly differently depending on task
 type, with performance losses in decision-making tasks but gains in content
-creation tasks. The tool's utility is fundamentally task-dependent. Which really
+creation tasks. The tool's utility is entirely task-dependent. Which really
 shouldn't surprise anyone, but here we are.
 
 ## The transformation/automation/magnification thing
@@ -257,7 +257,7 @@ Your mileage may vary.
     and racism aren't just "not useful", they're harmful. A tool can be both
     fast and unethical, or slow and ethical. The framework deliberately focuses
     more on the pragmatic "does this save me time?" dimension while
-    acknowledging that ethics is a separate, crucial consideration. If you like,
+    acknowledging that ethics is a separate consideration. If you like,
     add a third "is it good for human flourishing" dimension.
 
 <!-- styles for the TAM diagram SVG (light/dark mode) -->

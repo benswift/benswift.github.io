@@ -61,10 +61,9 @@ new, and perhaps better, alternatives are emerging. The higher education sector
 is
 [facing huge financial challenges](https://universitiesaustralia.edu.au/wp-content/uploads/2024/11/UA091-Critical-challenges-in-Australias-university-sector_v2.pdf),
 and these contracts take precious resources away from faculty salaries or tutor
-budgets or any of the other crucial functions of the institution.
+budgets or any of the other functions of the institution.
 
-The emergence of models like DeepSeek R1 is a timely reminder that the AI
-landscape remains highly dynamic. Rather than pursuing exclusive relationships
+The emergence of models like DeepSeek R1 is a timely reminder that things in AI are still moving fast. Rather than pursuing exclusive relationships
 with specific providers, institutions might better serve their communities by
 staying provider-agnostic (where they engage at all). This approach acknowledges
 both the rapid pace of technical change and the likelihood that tomorrow's
@@ -92,7 +91,7 @@ specialised models for specific academic domains or research applications. Such
 projects could focus on specific institutional needs rather than attempting to
 compete with general-purpose models.
 
-Ultimately, DeepSeek R1 reinforces a crucial message: in the AI era, competitive
+What DeepSeek R1 really shows is that in the AI era, competitive
 advantage will come not from controlling access to certain models, but from
 skillfully integrating AI capabilities into our core educational mission.
 Universities that build their strategies around particular AI platforms risk
@@ -101,8 +100,7 @@ developing institutional AI literacy and adaptable frameworks will be better
 positioned to embrace whatever technological developments emerge.
 
 The real moat in higher education isn't technological; it never has been. It's
-the ability to create transformative learning experiences and generate new
-knowledge. Technology is merely a tool---in reality, a _system_ of tools, people
+the ability to teach well and generate new knowledge. Technology is merely a tool---in reality, a _system_ of tools, people
 and other resources---in service of these fundamental goals. The winners won't
 be those who bet early on the right AI platform, but those who most effectively
 help their communities master the art of learning and creating in an

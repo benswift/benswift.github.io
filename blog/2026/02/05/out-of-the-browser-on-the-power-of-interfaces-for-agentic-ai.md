@@ -124,7 +124,7 @@ control, and deploying to servers. All of these are terminal operations. And
 crucially, the people using the terminal are expected to know what they're doing
 and to take responsibility for the commands they run.
 
-Here's the thing that makes the terminal particularly interesting for LLMs:
+What makes the terminal particularly interesting for LLMs is this:
 **it's all text**. Both the inputs (commands with a specific syntax) and the
 outputs (error messages, logs, success confirmations) are designed to be read by
 humans---specifically, programmers who need to understand what's happening and
@@ -197,7 +197,7 @@ guardrails existed in the first place.
 ## It's not the models, it's the interface
 
 I've [written before](/blog/2025/07/17/agentic-ai-llms-with-stones) about how
-agentic AI is fundamentally about giving LLMs tools---stones to throw, in the
+agentic AI is really just about giving LLMs tools---stones to throw, in the
 "sticks and stones" sense. But the terminal-native AI wave has clarified
 something for me: the _power_ of agentic AI comes from the interface, not just
 the tools themselves.
