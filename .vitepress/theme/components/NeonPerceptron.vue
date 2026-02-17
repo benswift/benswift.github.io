@@ -239,7 +239,7 @@ async function initScene() {
     mouse = new THREE.Vector2();
 
     // Input state
-    inputState = new Array(INPUT_SIZE).fill(0);
+    inputState = Array.from({ length: INPUT_SIZE }, () => 0);
     generateRandomWeights();
 
     // Create nodes
@@ -383,7 +383,7 @@ function forwardDense(
     inSize: number,
     outSize: number,
 ): number[] {
-    const output = new Array(outSize).fill(0);
+    const output = Array.from({ length: outSize }, () => 0);
     for (let j = 0; j < outSize; j++) {
         for (let i = 0; i < inSize; i++) {
             output[j] += input[i] * weights[i * outSize + j];

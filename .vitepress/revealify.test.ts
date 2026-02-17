@@ -8,12 +8,6 @@ function renderReveal(src: string): string {
   return md.render(src, { frontmatter: { layout: "reveal" } })
 }
 
-function renderNormal(src: string): string {
-  const md = new MarkdownIt()
-  revealifyPlugin(md)
-  return md.render(src)
-}
-
 describe("revealifyPlugin", () => {
   test("non-reveal content passes through unchanged", () => {
     const md = new MarkdownIt()

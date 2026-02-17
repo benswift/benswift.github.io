@@ -1,6 +1,6 @@
 // see https://benswift.me/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints/
 
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
 
   // replace all these with the appropriate modifier for the platform
   let modKeys = ["control", "command", "ctrl", "ctl", "cmd"];

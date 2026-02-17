@@ -30,10 +30,10 @@ export function extractExcerpt(src: string, maxLength = 450): string {
 
     // Skip headings, images, blockquotes, list items, HTML
     if (/^#+\s/.test(line)) continue;
-    if (/^!\[/.test(line)) continue;
+    if (line.startsWith("![")) continue;
     if (/^>\s/.test(line)) continue;
     if (/^[-*]\s/.test(line)) continue;
-    if (/^</.test(line)) continue;
+    if (line.startsWith("<")) continue;
 
     const trimmed = line.trim();
     if (trimmed === "") {
