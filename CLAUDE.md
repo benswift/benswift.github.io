@@ -1,7 +1,7 @@
 # benswift.me blog post writing style guide
 
 This is a colocated jj repo---use `jj` for all version control operations, not
-`git`.
+`git`. The main branch is `main`.
 
 This is a vitepress site. Always use ts (not js) and follow vitepress
 conventions wherever possible. Stick to modern best practices, e.g. es6 modules.
