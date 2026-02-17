@@ -8,7 +8,7 @@ tags: [teaching, comp4020]
 I'm developing a new course for S2 2026: **COMP4020/8020 Rapid Prototyping for
 the Web**. This post is me thinking aloud as I work through the course
 design---nothing here is final, and feedback is welcome. This is the first post
-in a series---see [all posts tagged comp4020](/tags/comp4020).
+in a series---see [all posts tagged comp4020](/blog/tag/comp4020).
 
 :::
 
