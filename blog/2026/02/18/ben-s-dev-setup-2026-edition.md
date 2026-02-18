@@ -5,9 +5,13 @@ tags: [dev]
 
 New year, new dev setup. This year the theme is:
 
-> a life lived in (text) tokens
+<blockquote style="font-size: 2rem">a life lived in (text) tokens</blockquote>
 
-Agentic software develompent tools (Claude Code, Codex CLI, Opencode, pi, etc)
+Agentic software develompent tools ([Claude Code](https://github.com/anthropics/claude-code),
+[Codex CLI](https://github.com/openai/codex),
+[Opencode](https://opencode.ai),
+[pi](https://github.com/openclaw/openclaw),
+[Continue](https://continue.dev/), etc)
 have become pretty crucial to my workflow, and they work _best_ when consuming
 and producing text and calling CLI tools which do the same.
 
@@ -15,9 +19,9 @@ So I've re-jigged my entire development workflow again. Emacs lasted me ~20
 years, and
 [while I like Zed and enjoyed the setup](/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai)
 I've moved on from that just two years later. This year, as part of my
-commitment to a life lived in tokens, I'm moving back to purely terminal apps
-(with my usual strong preferences for OSS + tools which run on both macOS and
-Linux).
+commitment to a life lived in tokens, I'm moving back to purely terminal apps[^oss].
+
+[^oss]: with my usual strong preferences for OSS + tools which run on both macOS and Linux
 
 The core of it is
 
