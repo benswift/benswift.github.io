@@ -47,9 +47,9 @@ increasingly working across lots of different remote machines via ssh[^sprites].
 Terminal stuff just works, Zed takes setup and mental energy.
 
 [^sprites]:
-    ([fly sprites](https://sprites.dev/) are particularly interesting as a bit
-    of a middle ground between fully-reproducable Docker stuff and randomly
-    spinning up VMs to mess around).
+    [fly sprites](https://sprites.dev/) are particularly interesting as a bit of
+    a middle ground between fully-reproducable Docker stuff and randomly
+    spinning up VMs to mess around.
 
 The other reason I moved was that even though Zed can run agentic coding agents
 via the [ACP](https://agentclientprotocol.com/) (in fact I think they invented
