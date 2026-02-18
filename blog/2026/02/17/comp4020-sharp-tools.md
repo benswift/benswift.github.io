@@ -52,7 +52,7 @@ So, my current options are:
    one---or similar amounts of API credits
 
 2. get a partner with datacenter-grade hardware (e.g. [Canva](https://www.canva.com), [LambdaLabs](https://lambda.ai), or
-   ANU's very own [NCI](https://nci.org.au)) to host an open weight model for us, e.g. [Kimi K2](https://moonshotai.github.io/Kimi-K2/) or [GLM5](https://huggingface.co/zai-org/GLM-5)
+   ANU's very own [NCI](https://nci.org.au)) to host an open weight model for us, e.g. [Qwen3.5](https://huggingface.co/Qwen/Qwen3.5-397B-A17B), [MiniMax M2.5](https://huggingface.co/MiniMaxAI/MiniMax-M2.5), [Kimi K2](https://moonshotai.github.io/Kimi-K2/) or [GLM-5](https://huggingface.co/zai-org/GLM-5)
    using [vLLM](https://vllm.ai)
 
 Option #1 is my slight preference because those folks are _really good_ at
