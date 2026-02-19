@@ -4,6 +4,7 @@ import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import TagList from "../components/TagList.vue";
 import SiteFooter from "../components/SiteFooter.vue";
+import CitePost from "../components/CitePost.vue";
 
 const { Layout } = DefaultTheme;
 const { frontmatter } = useData();
@@ -27,6 +28,7 @@ const postDate = computed(() => {
             <TagList />
         </template>
         <template #doc-footer-before>
+            <CitePost />
             <SiteFooter />
         </template>
     </Layout>

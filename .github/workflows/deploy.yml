@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -38,6 +38,12 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Publish to AT Protocol
+        run: npm run atproto:publish
+        env:
+          ATP_IDENTIFIER: ${{ secrets.ATP_IDENTIFIER }}
+          ATP_APP_PASSWORD: ${{ secrets.ATP_APP_PASSWORD }}
+
       - name: Build with VitePress
         run: npm run build
 
@@ -45,6 +51,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
+
+      - name: Commit state changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add atproto-state.json public/.well-known/site.standard.publication
+          git diff --staged --quiet || (git commit -m "[skip ci] update atproto state" && git push)
 
   deploy:
     environment:

@@ -8,6 +8,20 @@ import path from "path";
 import matter from "gray-matter";
 import { extractDescription } from "./utils/excerpt";
 
+interface AtprotoState {
+  did: string;
+  publicationAtUri: string;
+  contentHashes: Record<string, string>;
+}
+
+function loadAtprotoState(): AtprotoState | null {
+  const statePath = path.resolve(__dirname, "../atproto-state.json");
+  if (!fs.existsSync(statePath)) return null;
+  return JSON.parse(fs.readFileSync(statePath, "utf-8")) as AtprotoState;
+}
+
+const atprotoState = loadAtprotoState();
+
 function getUnpublishedPosts(): string[] {
   const unpublished: string[] = [];
   const blogDir = path.resolve(__dirname, "../blog");
@@ -57,6 +71,15 @@ export default defineConfig({
       if (match) {
         const [, year, month, day] = match;
         pageData.frontmatter.date = `${year}-${month}-${day}`;
+
+        if (atprotoState?.did) {
+          const slug = pageData.relativePath
+            .match(/blog\/\d{4}\/\d{2}\/\d{2}\/(.+)\.md$/)?.[1];
+          if (slug) {
+            const rkey = `${year}-${month}-${day}-${slug}`;
+            pageData.frontmatter.atUri = `at://${atprotoState.did}/site.standard.document/${rkey}`;
+          }
+        }
       }
     }
 
@@ -98,6 +121,26 @@ export default defineConfig({
 
     if (title) {
       head.push(["meta", { property: "og:title", content: title }]);
+    }
+
+    const atUri = pageData.frontmatter.atUri;
+    if (atUri) {
+      head.push(["link", { rel: "site.standard.document", href: atUri }]);
+    }
+
+    if (pageData.frontmatter.isPost) {
+      if (title) {
+        head.push(["meta", { name: "citation_title", content: title }]);
+      }
+      head.push(["meta", { name: "citation_author", content: "Ben Swift" }]);
+      if (pageData.frontmatter.date) {
+        head.push([
+          "meta",
+          { name: "citation_date", content: pageData.frontmatter.date },
+        ]);
+      }
+      const url = `https://benswift.me${pageData.relativePath.replace(/\.md$/, "").replace(/^/, "/")}`;
+      head.push(["meta", { name: "citation_public_url", content: url }]);
     }
 
     return head;

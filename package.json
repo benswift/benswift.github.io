@@ -10,6 +10,7 @@
     "typecheck": "vue-tsc --noEmit",
     "post": "npx tsx scripts/new-post.ts",
     "lighthouse": "npx tsx scripts/lighthouse-audit.ts",
+    "atproto:publish": "npx tsx scripts/atproto-publish.ts",
     "test": "vitest run",
     "lint": "oxlint --ignore-pattern public/assets/js/Winwheel.js",
     "lint:fix": "oxlint --fix --ignore-pattern public/assets/js/Winwheel.js"
@@ -17,6 +18,7 @@
   "author": "Ben Swift",
   "license": "MIT",
   "devDependencies": {
+    "@atproto/api": "^0.18.21",
     "@types/markdown-it-footnote": "^3.0.4",
     "@types/node": "^25.2.1",
     "bibtex-parse": "^2.1.0",

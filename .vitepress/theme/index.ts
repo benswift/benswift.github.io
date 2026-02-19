@@ -10,6 +10,7 @@ import Picture from "./components/Picture.vue";
 import TagList from "./components/TagList.vue";
 import ForCodesTable from "./components/ForCodesTable.vue";
 import NeonPerceptron from "./components/NeonPerceptron.vue";
+import CitePost from "./components/CitePost.vue";
 
 // Slide components for reveal.js presentations
 import SlideTitle from "./components/slides/SlideTitle.vue";
@@ -53,6 +54,7 @@ export default {
     app.component("TagList", TagList);
     app.component("ForCodesTable", ForCodesTable);
     app.component("NeonPerceptron", NeonPerceptron);
+    app.component("CitePost", CitePost);
 
     // Register slide components (for use in reveal.js presentations)
     app.component("SlideTitle", SlideTitle);
