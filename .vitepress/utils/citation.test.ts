@@ -2,12 +2,24 @@ import { describe, it, expect } from "vitest"
 import { generateBibtex, generateCiteKey } from "./citation"
 
 describe("generateCiteKey", () => {
-  it("creates key from year and first slug word", () => {
-    expect(generateCiteKey("2026", "my-post")).toBe("swift2026my")
+  it("creates camelCase key from year and full slug", () => {
+    expect(generateCiteKey("2026", "my-post")).toBe("swift2026myPost")
   })
 
   it("handles single-word slugs", () => {
     expect(generateCiteKey("2026", "post")).toBe("swift2026post")
+  })
+
+  it("handles multi-word slugs", () => {
+    expect(generateCiteKey("2025", "agentic-ai-llms-with-stones")).toBe(
+      "swift2025agenticAiLlmsWithStones",
+    )
+  })
+
+  it("produces unique keys for previously-colliding posts", () => {
+    expect(generateCiteKey("2025", "agentic-ai-llms-with-stones")).not.toBe(
+      generateCiteKey("2025", "agentic-elixir-superpowers-zed-tidewave-ashai"),
+    )
   })
 })
 

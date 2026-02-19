@@ -158,7 +158,7 @@ And the "Cite this post" component at the bottom of each post generates BibTeX
 with the AT-URI in the `note` field:
 
 ```bibtex
-@online{swift2026ben,
+@online{swift2026benSDevSetup2026Edition,
   author = {Ben Swift},
   title = {Ben's dev setup 2026 edition},
   url = {https://benswift.me/blog/2026/02/18/ben-s-dev-setup-2026-edition},

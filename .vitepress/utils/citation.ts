@@ -1,5 +1,9 @@
 export function generateCiteKey(year: string, slug: string): string {
-  return `swift${year}${slug.split("-")[0]}`
+  const camel = slug
+    .split("-")
+    .map((w, i) => (i === 0 ? w : w[0].toUpperCase() + w.slice(1)))
+    .join("")
+  return `swift${year}${camel}`
 }
 
 export function generateBibtex(opts: {
