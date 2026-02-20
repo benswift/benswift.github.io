@@ -2,7 +2,7 @@
 title: "AT-URIs as persistent identifiers for scholarly blogging"
 tags:
   - atproto
-  - scholarly
+  - research
   - web
 ---
 
