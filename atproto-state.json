@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/02/20/comp4020-the-core-mechanic": "21e1168a2e986a21b615350fcc3155ca80ecd47b38bc6f4b93850d8baf8a1b0c",
     "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": "147913f308e5e56e46eece55c2c576a0d1ac17aeae2a72ef5a38ac9ccceef1ef",
     "/blog/2026/02/18/ben-s-dev-setup-2026-edition": "6bd047dc30ffc32181d4fee4af2f8aed7572991c16b1c3ee4eea16b5d690f55e",
     "/blog/2026/02/17/comp4020-sharp-tools": "17fb5ca15910e6892fad0069e7c00bfa151b7ffd92d4c2a6fc4a44907b5b88f5",
