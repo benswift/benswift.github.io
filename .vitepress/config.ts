@@ -188,7 +188,7 @@ export default defineConfig({
   },
 
   title: "benswift.me",
-  description: "livecoder & researcher homepage - code, creativity, culture",
+  description: "Ben Swift — researcher, educator, artist, developer",
 
   // Clean URLs (no .html extension)
   cleanUrls: true,

@@ -19,7 +19,7 @@ const defaultConfig: PublishConfig = {
   wellKnownDir: path.resolve(import.meta.dirname, "..", "public", ".well-known"),
   siteUrl: "https://benswift.me",
   siteName: "benswift.me",
-  siteDescription: "livecoder & researcher homepage - code, creativity, culture",
+  siteDescription: "Ben Swift — researcher, educator, artist, developer",
 }
 
 function sleep(ms: number) {
