@@ -93,6 +93,15 @@ export default defineConfig({
       pageData.frontmatter.isGig = true;
     }
 
+    // Set title for tag pages from route params
+    if (pageData.relativePath.startsWith("blog/tag/")) {
+      const tag = pageData.params?.tag;
+      if (tag) {
+        pageData.title = `Posts tagged with "${tag}"`;
+        pageData.frontmatter.title = pageData.title;
+      }
+    }
+
     // Auto-generate description if not provided
     if (
       !pageData.frontmatter.description &&
@@ -113,21 +122,45 @@ export default defineConfig({
     const head: HeadConfig[] = [];
     const description = pageData.frontmatter.description;
     const title = pageData.frontmatter.title || pageData.title;
+    const hostname = "https://benswift.me";
+    const defaultImage = "/assets/images/pages/theremin-75.webp";
 
+    const pagePath = pageData.relativePath
+      .replace(/index\.md$/, "")
+      .replace(/\.md$/, "");
+    const url = `${hostname}/${pagePath}`;
+    const image = pageData.frontmatter.image || defaultImage;
+    const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`;
+
+    // Open Graph
+    head.push(["meta", { property: "og:url", content: url }]);
+    head.push(["meta", { property: "og:type", content: pageData.frontmatter.isPost ? "article" : "website" }]);
+    if (title) {
+      head.push(["meta", { property: "og:title", content: title }]);
+    }
     if (description) {
       head.push(["meta", { name: "description", content: description }]);
       head.push(["meta", { property: "og:description", content: description }]);
     }
+    head.push(["meta", { property: "og:image", content: imageUrl }]);
 
+    // Twitter
+    head.push(["meta", { name: "twitter:card", content: "summary_large_image" }]);
     if (title) {
-      head.push(["meta", { property: "og:title", content: title }]);
+      head.push(["meta", { name: "twitter:title", content: title }]);
     }
+    if (description) {
+      head.push(["meta", { name: "twitter:description", content: description }]);
+    }
+    head.push(["meta", { name: "twitter:image", content: imageUrl }]);
 
+    // AT Protocol
     const atUri = pageData.frontmatter.atUri;
     if (atUri) {
       head.push(["link", { rel: "site.standard.document", href: atUri }]);
     }
 
+    // Citation metadata for blog posts
     if (pageData.frontmatter.isPost) {
       if (title) {
         head.push(["meta", { name: "citation_title", content: title }]);
@@ -139,7 +172,6 @@ export default defineConfig({
           { name: "citation_date", content: pageData.frontmatter.date },
         ]);
       }
-      const url = `https://benswift.me${pageData.relativePath.replace(/\.md$/, "").replace(/^/, "/")}`;
       head.push(["meta", { name: "citation_public_url", content: url }]);
     }
 
@@ -169,7 +201,6 @@ export default defineConfig({
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "author", content: "Ben Swift" }],
     ["meta", { property: "og:site_name", content: "benswift.me" }],
-    ["meta", { name: "twitter:card", content: "summary" }],
     ["meta", { name: "twitter:site", content: "@benswift" }],
   ],
 

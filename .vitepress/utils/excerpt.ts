@@ -73,6 +73,9 @@ export function extractDescription(content: string, maxLength = 160): string {
 
   // Remove common markdown/vue elements that shouldn't be in descriptions
   const cleaned = withoutFrontmatter
+    // Remove script/style blocks entirely (content + tags)
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?<\/style>/gi, "")
     // Remove HTML/Vue components
     .replace(/<[^>]+>/g, "")
     // Remove markdown images

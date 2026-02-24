@@ -26,8 +26,6 @@ const paginatedPosts = computed(() => {
 })
 </script>
 
-# Posts tagged with "{{ $params.tag }}"
-
 <p>{{ posts.length }} post{{ posts.length === 1 ? '' : 's' }} with this tag.</p>
 
 <a href="/blog/">← Back to all posts</a>
