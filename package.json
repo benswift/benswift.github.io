@@ -18,27 +18,27 @@
   "author": "Ben Swift",
   "license": "MIT",
   "devDependencies": {
-    "@atproto/api": "^0.18.21",
+    "@atproto/api": "^0.19.0",
     "@types/markdown-it-footnote": "^3.0.4",
-    "@types/node": "^25.2.1",
+    "@types/node": "^25.3.0",
     "bibtex-parse": "^2.1.0",
     "gray-matter": "^4.0.3",
-    "markdown-it": "^14.1.0",
-    "oxlint": "^1.48.0",
+    "markdown-it": "^14.1.1",
+    "oxlint": "^1.50.0",
     "typescript": "^5.9.3",
     "vite-plugin-checker": "^0.12.0",
     "vitepress": "^1.6.4",
     "vitest": "^4.0.18",
-    "vue": "^3.5.27",
-    "vue-tsc": "^3.2.4"
+    "vue": "^3.5.28",
+    "vue-tsc": "^3.2.5"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-mono": "^5.2.5",
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.6",
     "@iconify/vue": "^5.0.0",
-    "@types/three": "^0.182.0",
+    "@types/three": "^0.183.1",
     "markdown-it-footnote": "^4.0.0",
     "reveal.js": "^5.2.1",
-    "three": "^0.182.0"
+    "three": "^0.183.1"
   }
 }
