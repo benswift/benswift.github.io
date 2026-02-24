@@ -9,7 +9,7 @@ head:
 
 hero:
   name: Ben Swift
-  text: researcher, educator, artist
+  text: researcher, educator, artist, developer
   tagline: Leading <em>Human-Scale AI</em> at the Cybernetic Studio
   image:
     src: /assets/images/pages/theremin-75.webp
