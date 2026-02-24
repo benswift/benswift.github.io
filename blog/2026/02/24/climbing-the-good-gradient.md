@@ -60,6 +60,28 @@ In particular, there are three important feedback loops in agentic coding:
 3. the loop between the human developer and their software and the "community of
    use" in which it will be deployed, shared and enjoyed
 
+<svg class="feedback-loops" width="100%" viewBox="0 0 500 480" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer ring: human ↔ community -->
+  <path d="M 452 256 C 458 138, 372 54, 248 58 C 124 62, 44 142, 48 262 C 52 382, 132 466, 252 468 C 372 470, 446 376, 452 256 Z"
+        class="ring ring-outer" fill="none" stroke-linecap="round" stroke-linejoin="round"
+        transform="rotate(1.5, 250, 260)"/>
+  <!-- Middle ring: human ↔ artefact -->
+  <path d="M 384 254 C 388 176, 330 124, 252 120 C 174 116, 114 180, 118 260 C 122 340, 178 398, 254 402 C 330 406, 380 334, 384 254 Z"
+        class="ring ring-middle" fill="none" stroke-linecap="round" stroke-linejoin="round"
+        transform="rotate(-1, 250, 260)"/>
+  <!-- Inner ring: agent ↔ code -->
+  <path d="M 314 256 C 316 224, 288 196, 252 194 C 216 192, 186 226, 188 260 C 190 294, 218 324, 252 326 C 286 328, 312 288, 314 256 Z"
+        class="ring ring-inner" fill="none" stroke-linecap="round" stroke-linejoin="round"
+        transform="rotate(2, 250, 260)"/>
+  <!-- Labels in top bands between rings -->
+  <text x="250" y="96" text-anchor="middle" font-size="15" class="loop-label label-outer"
+        transform="rotate(-0.8, 250, 96)">human ↔ community</text>
+  <text x="250" y="168" text-anchor="middle" font-size="15" class="loop-label label-middle"
+        transform="rotate(1.2, 250, 168)">human ↔ artefact</text>
+  <text x="250" y="264" text-anchor="middle" font-size="15" class="loop-label label-inner"
+        transform="rotate(-0.5, 250, 264)">agent ↔ code</text>
+</svg>
+
 None of these ideas are new, either in software development (Steve Tanimoto,
 Bret Victor, and _many others_ have made similar points). Heck, I work at a
 School of Cybernetics---so good'ol Norbert and Margaret would be nodding sagely
@@ -91,3 +113,26 @@ I'm even thinking about structuring the syllabus around these levels; not that
 we'd do all level 1, then all level 2, then all level 3, but that at least the
 lectures and other readings would make clear where the different things we were
 studying fit into this broader framework.
+
+<!-- styles for the feedback loops SVG (light/dark mode) -->
+<style scoped>
+.feedback-loops {
+  .ring { stroke-width: 2.5; }
+  .ring-outer { stroke: #6366f1; }
+  .ring-middle { stroke: #2a9d8f; }
+  .ring-inner { stroke: #e07050; }
+  .loop-label { font-weight: 600; }
+  .label-outer { fill: #4f46e5; }
+  .label-middle { fill: #1f7a6f; }
+  .label-inner { fill: #c85a3a; }
+
+  .dark & {
+    .ring-outer { stroke: #a5b4fc; }
+    .ring-middle { stroke: #80cbc4; }
+    .ring-inner { stroke: #ffab91; }
+    .label-outer { fill: #a5b4fc; }
+    .label-middle { fill: #80cbc4; }
+    .label-inner { fill: #ffab91; }
+  }
+}
+</style>
