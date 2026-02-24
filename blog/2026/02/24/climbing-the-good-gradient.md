@@ -40,6 +40,14 @@ the code.
     I don't want to go down the full Platonic rabbit hole, but the discerning
     reader will pick up what I'm putting down here.
 
+Christopher Alexander spent decades on the
+[objective structure of 'goodness'](https://nemoslibrary.com/2009/03/02/the-nature-of-order-the-phenomenon-of-life/)
+in architecture---even listing
+['gradients'](http://www.truthtable.com/Fifteen_Princples.html) among his
+fifteen properties of living structure---and Herbert Simon
+[framed all of design](https://juliekallio.com/2018/01/23/book-notes-thoughts-the-sciences-of-the-artificial-by-herbert-simon/)
+as heuristic search through vast solution spaces.
+
 With that in mind, and also referencing my "weekly crit sessions"
 [core mechanic post](/blog/2026/02/20/comp4020-the-core-mechanic), I think the
 core principles I want to teach are around designing feedback loops (at multiple
@@ -82,10 +90,16 @@ In particular, there are three important feedback loops in agentic coding:
         transform="rotate(-0.5, 250, 264)">agent ↔ code</text>
 </svg>
 
-None of these ideas are new, either in software development (Steve Tanimoto,
-Bret Victor, and _many others_ have made similar points). Heck, I work at a
-School of Cybernetics---so good'ol Norbert and Margaret would be nodding sagely
-along with my musings about feedback-driven behaviour.
+None of these ideas are new, either in software development (Tanimoto's
+[levels of liveness](https://liveprogramming.github.io/2013/papers/liveness.pdf),
+Victor's [immediate feedback principle](https://worrydream.com/), Schön's
+[reflective conversation with the situation](https://www.punyamishra.com/wp-content/uploads/2017/09/schon-reflective-conversation.pdf),
+Gabriel's [software habitability](https://archive.org/details/PatternsOfSoftware)---and
+_many others_ have made similar points). Heck, I work at a School of
+Cybernetics---so good'ol Norbert and Margaret (and
+[Ranulph Glanville](https://asc-cybernetics.org/publications/systems_papers/C%20and%20D%20paper%200670360902.pdf),
+who argued that cybernetics and design are two sides of the same coin) would be
+nodding sagely along with my musings about feedback-driven behaviour.
 
 But it'll be a helpful
 way<sup>[[citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citation_needed)]</sup>
