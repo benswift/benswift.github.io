@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": "050704d47db8e2139b242a2a8c7f9b8f5154ba1941b31b96d1009cb4876f479f",
     "/blog/2026/02/24/climbing-the-good-gradient": "717ef82eae0849dc4cc7b07391190d27202f0680f156c9b1ce49275df82dbf5d",
     "/blog/2026/02/20/comp4020-the-core-mechanic": "21e1168a2e986a21b615350fcc3155ca80ecd47b38bc6f4b93850d8baf8a1b0c",
     "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": "bb1e924c87e93b7ff5805a0b3dc656e9fda61888901a94b0e6482ab21fe96e01",
