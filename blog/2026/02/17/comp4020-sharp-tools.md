@@ -71,7 +71,11 @@ So, my current options are:
 Option #1 is my slight preference because those folks are _really good_ at
 serving these models at scale. If we have to self-host then there's a risk that
 I'm on the hook if the model goes down one hour before the assessment deadline.
-But it wouldn't be a disaster.
+But it wouldn't be a disaster. The other bonus here is that it increasingly
+seems like the models are most effective with their "default" harness (e.g. Opus
+4.6 with Claude Code, GPT5.3 with Codex CLI, Gemini with the Gemini CLI). That's
+where new features land first, and that's where a lot of the post-training is
+done.
 
 Re: option 1, Kathi Fisler and colleagues are teaching an
 [Agentic Coding course at Brown](https://cs.brown.edu/courses/csci1970kf/agentic-spr-2026/index.html)
