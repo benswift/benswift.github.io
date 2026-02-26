@@ -33,8 +33,8 @@ features:
     link: /teaching
 ---
 
-Hi, I'm Ben Swift---I'm a [researcher](/research), [artist](/livecoding/) and
-[creative technologist/software engineer](https://github.com/benswift), and
+Hi, I'm Dr. Ben Swift---I'm a [researcher](/research), [artist](/livecoding/)
+and [creative technologist/software engineer](https://github.com/benswift), and
 (among other things) I lead the Cybernetic Studio at the
 [ANU School of Cybernetics](https://cybernetics.anu.edu.au/). Sometimes I write
 about that stuff on my [blog](/blog/).
