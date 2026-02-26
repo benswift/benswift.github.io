@@ -13,7 +13,7 @@ A quick update on
   to maintain and keep up-to-date, but there are
   [a couple of new WebGPU examples](https://github.com/digego/extempore/tree/aarch64/examples/external);
   the
-  [shadertoy one](https://github.com/digego/extempore/blob/aarch64/libs/external/shadertoy.xtm)
+  [shadertoy one](https://github.com/digego/extempore/blob/aarch64/examples/external/shadertoy.xtm)
   is kindof fun (no full "xtmrender" pipeline yet, and not ETA on that
   unfortunately)
 - along the way I wrote a
