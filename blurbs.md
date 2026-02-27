@@ -114,6 +114,8 @@ they play diligently and tirelessly for your listening pleasure.
 
 ## Headshots & promo images
 
+![Ben line drawing headshot](/assets/images/headshots/headshot-line-drawing.webp)
+
 ![Ben headshot with a pink shirt and artwork in the background](/assets/images/headshots/headshot-pink-shirt.webp)
 _Photo: Joy Swift_
 
