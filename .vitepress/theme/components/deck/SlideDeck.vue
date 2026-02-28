@@ -73,7 +73,7 @@ const parseHashSlide = (): number => {
     const hash = window.location.hash;
     const match = hash.match(/^#slide-(\d+)$/);
     if (match) {
-        const slideNum = parseInt(match[1], 10);
+        const slideNum = Number.parseInt(match[1], 10);
         return Math.max(0, slideNum - 1);
     }
     return 0;

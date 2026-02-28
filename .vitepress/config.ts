@@ -3,8 +3,8 @@ import checker from "vite-plugin-checker";
 import footnote from "markdown-it-footnote";
 import xtlangGrammar from "./xtlang.tmLanguage.json";
 import armasmGrammar from "./armasm.tmLanguage.json";
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import matter from "gray-matter";
 import { extractDescription } from "./utils/excerpt";
 
@@ -17,7 +17,7 @@ interface AtprotoState {
 function loadAtprotoState(): AtprotoState | null {
   const statePath = path.resolve(__dirname, "../atproto-state.json");
   if (!fs.existsSync(statePath)) return null;
-  return JSON.parse(fs.readFileSync(statePath, "utf-8")) as AtprotoState;
+  return JSON.parse(fs.readFileSync(statePath, "utf8")) as AtprotoState;
 }
 
 const atprotoState = loadAtprotoState();
@@ -35,7 +35,7 @@ function getUnpublishedPosts(): string[] {
       if (stat.isDirectory() && item !== "tag") {
         scanDir(fullPath);
       } else if (item.endsWith(".md") && item !== "index.md") {
-        const content = fs.readFileSync(fullPath, "utf-8");
+        const content = fs.readFileSync(fullPath, "utf8");
         const { data: fm } = matter(content);
         if (fm.published === false) {
           const relativePath = path.relative(
@@ -109,7 +109,7 @@ export default defineConfig({
     ) {
       const filePath = path.resolve(siteConfig.srcDir, pageData.relativePath);
       if (fs.existsSync(filePath)) {
-        const content = fs.readFileSync(filePath, "utf-8");
+        const content = fs.readFileSync(filePath, "utf8");
         const description = extractDescription(content);
         if (description) {
           pageData.frontmatter.description = description;

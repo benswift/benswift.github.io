@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import DeckSlide from "./DeckSlide.vue";
 
 const props = defineProps<{
   bgColor?: string;

@@ -50,14 +50,14 @@ export function extractExcerpt(src: string, maxLength = 450): string {
   // Get first paragraph and clean markdown syntax
   const first = paragraphs[0] || "";
   const cleaned = first
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) -> text
-    .replace(/\*\*([^*]+)\*\*/g, "$1") // **bold** -> bold
-    .replace(/\*([^*]+)\*/g, "$1") // *italic* -> italic
-    .replace(/_([^_]+)_/g, "$1") // _italic_ -> italic
-    .replace(/`([^`]+)`/g, "$1") // `code` -> code
-    .replace(/\[([^\]]+)\]\[[^\]]*\]/g, "$1") // [text][ref] -> text
-    .replace(/\[\^[^\]]+\]/g, "") // footnote references
-    .replace(/\s+/g, " ")
+    .replaceAll(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) -> text
+    .replaceAll(/\*\*([^*]+)\*\*/g, "$1") // **bold** -> bold
+    .replaceAll(/\*([^*]+)\*/g, "$1") // *italic* -> italic
+    .replaceAll(/_([^_]+)_/g, "$1") // _italic_ -> italic
+    .replaceAll(/`([^`]+)`/g, "$1") // `code` -> code
+    .replaceAll(/\[([^\]]+)\]\[[^\]]*\]/g, "$1") // [text][ref] -> text
+    .replaceAll(/\[\^[^\]]+\]/g, "") // footnote references
+    .replaceAll(/\s+/g, " ")
     .trim();
 
   return cleaned.slice(0, maxLength);
@@ -74,32 +74,32 @@ export function extractDescription(content: string, maxLength = 160): string {
   // Remove common markdown/vue elements that shouldn't be in descriptions
   const cleaned = withoutFrontmatter
     // Remove script/style blocks entirely (content + tags)
-    .replace(/<script[\s\S]*?<\/script>/gi, "")
-    .replace(/<style[\s\S]*?<\/style>/gi, "")
+    .replaceAll(/<script[\s\S]*?<\/script>/gi, "")
+    .replaceAll(/<style[\s\S]*?<\/style>/gi, "")
     // Remove HTML/Vue components
-    .replace(/<[^>]+>/g, "")
+    .replaceAll(/<[^>]+>/g, "")
     // Remove markdown images
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replaceAll(/!\[[^\]]*\]\([^)]*\)/g, "")
     // Remove markdown links but keep text
-    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replaceAll(/\[([^\]]+)\]\([^)]*\)/g, "$1")
     // Remove footnote references
-    .replace(/\[\^[^\]]+\]/g, "")
+    .replaceAll(/\[\^[^\]]+\]/g, "")
     // Remove headers
-    .replace(/^#{1,6}\s+.*$/gm, "")
+    .replaceAll(/^#{1,6}\s+.*$/gm, "")
     // Remove code blocks
-    .replace(/```[\s\S]*?```/g, "")
+    .replaceAll(/```[\s\S]*?```/g, "")
     // Remove inline code
-    .replace(/`[^`]+`/g, "")
+    .replaceAll(/`[^`]+`/g, "")
     // Remove blockquotes marker
-    .replace(/^>\s*/gm, "")
+    .replaceAll(/^>\s*/gm, "")
     // Remove custom containers (info, tip, warning, etc.)
-    .replace(/^:::\s*\w+\s*$/gm, "")
-    .replace(/^:::\s*$/gm, "")
+    .replaceAll(/^:::\s*\w+\s*$/gm, "")
+    .replaceAll(/^:::\s*$/gm, "")
     // Remove bold/italic markers
-    .replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1")
-    .replace(/_{1,2}([^_]+)_{1,2}/g, "$1")
+    .replaceAll(/\*{1,2}([^*]+)\*{1,2}/g, "$1")
+    .replaceAll(/_{1,2}([^_]+)_{1,2}/g, "$1")
     // Normalise whitespace
-    .replace(/\s+/g, " ")
+    .replaceAll(/\s+/g, " ")
     .trim();
 
   // Get first meaningful chunk of text

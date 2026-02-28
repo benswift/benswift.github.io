@@ -29,17 +29,17 @@ function revealifyContent() {
         // Section elements pass through as-is
         if (tagName === "section") {
             if (currentSection) {
-                fragment.appendChild(currentSection);
+                fragment.append(currentSection);
                 currentSection = null;
             }
-            fragment.appendChild(child.cloneNode(true));
+            fragment.append(child.cloneNode(true));
             continue;
         }
 
         // h1, h2, hr create new sections
         if (tagName === "h1" || tagName === "h2" || tagName === "hr") {
             if (currentSection) {
-                fragment.appendChild(currentSection);
+                fragment.append(currentSection);
             }
 
             currentSection = document.createElement("section");
@@ -61,29 +61,29 @@ function revealifyContent() {
 
             // hr elements are just split markers, don't add them to the section
             if (tagName !== "hr") {
-                currentSection.appendChild(child.cloneNode(true));
+                currentSection.append(child.cloneNode(true));
             }
             continue;
         }
 
         // Other elements go into current section
         if (currentSection) {
-            currentSection.appendChild(child.cloneNode(true));
+            currentSection.append(child.cloneNode(true));
         } else {
             // Content before first heading - create a section for it
             currentSection = document.createElement("section");
-            currentSection.appendChild(child.cloneNode(true));
+            currentSection.append(child.cloneNode(true));
         }
     }
 
     // Don't forget the last section
     if (currentSection) {
-        fragment.appendChild(currentSection);
+        fragment.append(currentSection);
     }
 
     // Replace slides content
     slides.innerHTML = "";
-    slides.appendChild(fragment);
+    slides.append(fragment);
 }
 
 async function initReveal() {
@@ -139,7 +139,7 @@ function injectStyles() {
         const style = document.createElement("style");
         style.setAttribute("data-reveal-style", String(i));
         style.textContent = css;
-        document.head.appendChild(style);
+        document.head.append(style);
         styleElements.push(style);
     });
 }

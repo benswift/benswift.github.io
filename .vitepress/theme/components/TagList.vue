@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { useData, withBase } from "vitepress";
+import { useData } from "vitepress";
 
 const props = defineProps<{
     tags?: string[];

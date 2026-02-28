@@ -2,7 +2,6 @@
 import { computed } from "vue";
 import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import SiteFooter from "../components/SiteFooter.vue";
 
 const { Layout } = DefaultTheme;
 const { frontmatter } = useData();

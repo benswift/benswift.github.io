@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest"
-import fs from "fs"
-import path from "path"
-import os from "os"
+import fs from "node:fs"
+import path from "node:path"
+import os from "node:os"
 import { readState, writeState, type AtprotoState } from "./state"
 
 describe("state", () => {
@@ -37,7 +37,7 @@ describe("state", () => {
   it("writes valid JSON with trailing newline", () => {
     const filePath = path.join(tmpDir, "state.json")
     writeState(filePath, sampleState)
-    const raw = fs.readFileSync(filePath, "utf-8")
+    const raw = fs.readFileSync(filePath, "utf8")
     expect(raw.endsWith("\n")).toBe(true)
     expect(() => JSON.parse(raw)).not.toThrow()
   })

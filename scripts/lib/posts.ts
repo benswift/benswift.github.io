@@ -1,6 +1,6 @@
-import fs from "fs"
-import path from "path"
-import { createHash } from "crypto"
+import fs from "node:fs"
+import path from "node:path"
+import { createHash } from "node:crypto"
 import matter from "gray-matter"
 import { extractDescription } from "../../.vitepress/utils/excerpt"
 
@@ -43,7 +43,7 @@ export function discoverPosts(blogDir: string): PostData[] {
       if (stat.isDirectory() && item !== "tag") {
         scanDir(fullPath)
       } else if (item.endsWith(".md") && item !== "index.md") {
-        const raw = fs.readFileSync(fullPath, "utf-8")
+        const raw = fs.readFileSync(fullPath, "utf8")
         const { data: fm, content } = matter(raw)
 
         if (fm.published === false) continue

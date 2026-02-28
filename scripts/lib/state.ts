@@ -1,4 +1,4 @@
-import fs from "fs"
+import fs from "node:fs"
 
 export interface AtprotoState {
   did: string
@@ -8,7 +8,7 @@ export interface AtprotoState {
 
 export function readState(statePath: string): AtprotoState | null {
   if (!fs.existsSync(statePath)) return null
-  const raw = fs.readFileSync(statePath, "utf-8")
+  const raw = fs.readFileSync(statePath, "utf8")
   return JSON.parse(raw) as AtprotoState
 }
 

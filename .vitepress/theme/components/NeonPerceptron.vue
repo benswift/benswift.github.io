@@ -34,7 +34,7 @@ let animationId: number;
 
 // Network state
 let inputState: number[] = [];
-let weights = { dense_0: [] as number[], dense_1: [] as number[] };
+const weights = { dense_0: [] as number[], dense_1: [] as number[] };
 const layerX = { input: -4, hidden: 0, output: 4 };
 const nodes: {
     input: import("three").Mesh[];
@@ -222,7 +222,7 @@ async function initScene() {
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
-    container.appendChild(renderer.domElement);
+    container.append(renderer.domElement);
 
     controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
@@ -667,8 +667,8 @@ function toggleFullscreen() {
     if (!containerRef.value) return;
 
     if (!document.fullscreenElement) {
-        containerRef.value.requestFullscreen().catch((err) => {
-            console.error("Fullscreen request failed:", err);
+        containerRef.value.requestFullscreen().catch((error) => {
+            console.error("Fullscreen request failed:", error);
         });
     } else {
         document.exitFullscreen();
@@ -682,7 +682,7 @@ function onFullscreenChange() {
 }
 
 function onGammaChange(event: Event) {
-    wireGamma.value = parseFloat((event.target as HTMLInputElement).value);
+    wireGamma.value = Number.parseFloat((event.target as HTMLInputElement).value);
     updateVisualisation();
 }
 

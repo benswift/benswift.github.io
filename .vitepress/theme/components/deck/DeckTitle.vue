@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
 import { computed } from "vue";
-import DeckSlide from "./DeckSlide.vue";
 
 const props = defineProps<{
   title?: string;

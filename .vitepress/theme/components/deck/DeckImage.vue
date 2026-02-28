@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import DeckSlide from "./DeckSlide.vue";
 
 const props = defineProps<{
   image: string;

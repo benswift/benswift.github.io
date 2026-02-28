@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import matter from "gray-matter";
 import { formatDate } from "../.vitepress/utils/date";
 
@@ -27,7 +27,7 @@ export default {
     return files
       .map((filename) => {
         const filepath = path.join(livecodingDir, filename);
-        const fileContent = fs.readFileSync(filepath, "utf-8");
+        const fileContent = fs.readFileSync(filepath, "utf8");
         const { data: fm } = matter(fileContent);
 
         const slug = filename.replace(".md", "");

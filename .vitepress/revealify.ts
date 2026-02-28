@@ -91,7 +91,7 @@ export function revealifyPlugin(md: MarkdownIt): void {
 
     // Render the heading without hoisted attributes
     token.attrs = headingAttrs.map((attr) => {
-      const [k, v] = attr.replace(/"/g, "").split("=");
+      const [k, v] = attr.replaceAll('"', "").split("=");
       return [k, v] as [string, string];
     });
 

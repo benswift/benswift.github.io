@@ -1,5 +1,5 @@
-import path from "path"
-import fs from "fs"
+import path from "node:path"
+import fs from "node:fs"
 import { discoverPosts, pathToRkey } from "./lib/posts"
 import { readState, writeState, type AtprotoState } from "./lib/state"
 import { createClient, type AtprotoClient } from "./lib/atproto"
@@ -101,8 +101,8 @@ async function main() {
 }
 
 if (process.env.NODE_ENV !== "test" && !process.env.VITEST) {
-  main().catch((err) => {
-    console.error(err)
+  main().catch((error) => {
+    console.error(error)
     process.exit(1)
   })
 }

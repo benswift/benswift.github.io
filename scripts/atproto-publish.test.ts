@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest"
-import fs from "fs"
-import path from "path"
-import os from "os"
+import fs from "node:fs"
+import path from "node:path"
+import os from "node:os"
 import { publish, type PublishConfig } from "./atproto-publish"
 import type { AtprotoClient } from "./lib/atproto"
 
@@ -67,7 +67,7 @@ describe("atproto-publish", () => {
     expect(client.publications).toHaveLength(1)
     expect(client.documents).toHaveLength(2)
 
-    const state = JSON.parse(fs.readFileSync(config.statePath, "utf-8"))
+    const state = JSON.parse(fs.readFileSync(config.statePath, "utf8"))
     expect(state.did).toBe("did:plc:test123")
     expect(Object.keys(state.contentHashes)).toHaveLength(2)
   })
@@ -104,7 +104,7 @@ describe("atproto-publish", () => {
 
     const wellKnown = fs.readFileSync(
       path.join(config.wellKnownDir, "site.standard.publication"),
-      "utf-8",
+      "utf8",
     )
     expect(wellKnown.trim()).toBe(
       "at://did:plc:test123/site.standard.publication/self",
@@ -115,7 +115,7 @@ describe("atproto-publish", () => {
     const client = makeMockClient()
     await publish(client, config)
 
-    const state = JSON.parse(fs.readFileSync(config.statePath, "utf-8"))
+    const state = JSON.parse(fs.readFileSync(config.statePath, "utf8"))
     expect(state).toHaveProperty("did")
     expect(state).toHaveProperty("publicationAtUri")
     expect(state).toHaveProperty("contentHashes")

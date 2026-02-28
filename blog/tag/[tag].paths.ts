@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import matter from "gray-matter";
 
 interface TagPageData {
@@ -8,9 +8,9 @@ interface TagPageData {
   };
 }
 
-function parseTags(frontmatter: { tags?: string | string[] }): string[] {
-  if (!frontmatter.tags) return [];
-  if (Array.isArray(frontmatter.tags)) return frontmatter.tags;
+function parseTags(frontmatter: { tags?: string | string[] }): Array<string> {
+  if (!frontmatter.tags) {return [];}
+  if (Array.isArray(frontmatter.tags)) {return frontmatter.tags;}
   if (typeof frontmatter.tags === "string") {
     return frontmatter.tags.split(/\s+/).filter(Boolean);
   }
@@ -29,7 +29,7 @@ function collectTagsFromDir(dir: string, allTags: Set<string>): void {
         collectTagsFromDir(fullPath, allTags);
       }
     } else if (item.endsWith(".md") && item !== "index.md") {
-      const fileContent = fs.readFileSync(fullPath, "utf-8");
+      const fileContent = fs.readFileSync(fullPath, "utf8");
       const { data: fm } = matter(fileContent);
       parseTags(fm).forEach((tag) => allTags.add(tag));
     }
@@ -37,7 +37,7 @@ function collectTagsFromDir(dir: string, allTags: Set<string>): void {
 }
 
 export default {
-  paths(): TagPageData[] {
+  paths(): Array<TagPageData> {
     const blogDir = path.resolve(__dirname, "..");
 
     if (!fs.existsSync(blogDir)) {

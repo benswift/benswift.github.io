@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import bibtexParse from "bibtex-parse";
 
 const preprintsDir = path.resolve(
@@ -87,7 +87,7 @@ export default {
       return [];
     }
 
-    const bibContent = fs.readFileSync(bibFile, "utf-8");
+    const bibContent = fs.readFileSync(bibFile, "utf8");
 
     try {
       const entries = bibtexParse.entries(bibContent) as BibTeXEntry[];
@@ -134,19 +134,19 @@ export default {
           return {
             key: entry.key,
             type: entry.type,
-            title: title?.replace(/[{}]/g, "") || "Untitled",
-            authors: author?.replace(/[{}]/g, "") || "Unknown",
+            title: title?.replaceAll(/[{}]/g, "") || "Untitled",
+            authors: author?.replaceAll(/[{}]/g, "") || "Unknown",
             year,
-            venue: venue?.replace(/[{}]/g, ""),
+            venue: venue?.replaceAll(/[{}]/g, ""),
             doi,
             url,
-            abstract: abstract?.replace(/[{}]/g, ""),
+            abstract: abstract?.replaceAll(/[{}]/g, ""),
             pdfPath,
           };
         })
         .sort((a: Publication, b: Publication) => b.year.localeCompare(a.year));
-    } catch (e) {
-      console.error("Error parsing BibTeX:", e);
+    } catch (error) {
+      console.error("Error parsing BibTeX:", error);
       return [];
     }
   },

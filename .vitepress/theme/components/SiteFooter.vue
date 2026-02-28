@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
-import { Icon } from "@iconify/vue";
 
 const { page } = useData();
 

@@ -2,9 +2,6 @@
 import { computed } from "vue";
 import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import TagList from "../components/TagList.vue";
-import SiteFooter from "../components/SiteFooter.vue";
-import CitePost from "../components/CitePost.vue";
 
 const { Layout } = DefaultTheme;
 const { frontmatter } = useData();

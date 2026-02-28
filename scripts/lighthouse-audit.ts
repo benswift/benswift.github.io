@@ -1,5 +1,5 @@
-import { spawn, exec } from "child_process"
-import { promisify } from "util"
+import { spawn, exec } from "node:child_process"
+import { promisify } from "node:util"
 
 const execAsync = promisify(exec)
 
@@ -45,7 +45,7 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err)
+main().catch((error) => {
+  console.error(error)
   process.exit(1)
 })

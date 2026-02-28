@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { withBase } from "vitepress";
 
 const props = defineProps<{
     file: string;

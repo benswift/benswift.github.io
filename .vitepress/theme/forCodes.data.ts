@@ -1,5 +1,5 @@
-import { readFileSync } from "fs";
-import { resolve } from "path";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 
 interface ForCode {
   division: string;
@@ -11,7 +11,7 @@ interface ForCode {
 export default {
   load(): ForCode[] {
     const csvPath = resolve(__dirname, "../../_data/FoR-Codes-2020-processed.csv");
-    const csv = readFileSync(csvPath, "utf-8");
+    const csv = readFileSync(csvPath, "utf8");
     const lines = csv.trim().split("\n");
 
     // Skip header

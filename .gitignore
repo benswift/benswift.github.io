@@ -11,6 +11,11 @@ node_modules/
 # ClojureScript
 .cljs_node_repl/
 
+# Secrets
+.env*
+*.pem
+*.key
+
 # Generated files
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.pdf
