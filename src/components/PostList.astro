@@ -1,0 +1,35 @@
+---
+import TagList from "./TagList.astro"
+
+interface Post {
+  title: string
+  url: string
+  date: string
+  dateFormatted: string
+  tags: string[]
+  excerpt?: string
+}
+
+interface Props {
+  posts: Post[]
+}
+
+const { posts } = Astro.props
+---
+
+<ul class="post-list">
+  {posts.map(post => (
+    <li class="post-item">
+      <a href={post.url} class="post-item-title">{post.title}</a>
+      <span class="post-item-date">{post.dateFormatted}</span>
+      {post.tags.length > 0 && (
+        <div class="post-item-tags">
+          <TagList tags={post.tags} />
+        </div>
+      )}
+      {post.excerpt && (
+        <p class="post-item-excerpt">{post.excerpt}...</p>
+      )}
+    </li>
+  ))}
+</ul>

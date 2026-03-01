@@ -1,0 +1,48 @@
+{
+  "$ref": "#/definitions/livecoding",
+  "definitions": {
+    "livecoding": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "venue": {
+          "type": "string"
+        },
+        "venue_url": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "event_url": {
+          "type": "string"
+        },
+        "video_url": {
+          "type": "string"
+        },
+        "curators": {
+          "type": "string"
+        },
+        "artists": {
+          "type": "string"
+        },
+        "layout": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

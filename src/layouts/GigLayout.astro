@@ -1,0 +1,80 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import SiteFooter from "../components/SiteFooter.astro"
+import { formatDate, parseDate } from "../utils/date"
+
+interface Props {
+  title: string
+  date?: string
+  venue?: string
+  venue_url?: string
+  type?: string
+  event_url?: string
+  video_url?: string
+  curators?: string
+  artists?: string
+  description?: string
+  relativePath: string
+}
+
+const { title, date, venue, venue_url, type, event_url, video_url, curators, artists, description, relativePath } = Astro.props
+
+const gigDate = date ? formatDate(parseDate(date)) : null
+const gigType = type ? type.charAt(0).toUpperCase() + type.slice(1) : null
+---
+
+<BaseLayout title={title} description={description}>
+  <h1 class="page-title">{title}</h1>
+  {gigDate && <p class="post-date">{gigDate}</p>}
+
+  <dl class="gig-meta">
+    {venue && (
+      <>
+        <dt>Venue</dt>
+        <dd>{venue_url ? <a href={venue_url}>{venue}</a> : venue}</dd>
+      </>
+    )}
+    {gigType && (
+      <>
+        <dt>Type</dt>
+        <dd>{gigType}</dd>
+      </>
+    )}
+    {event_url && (
+      <>
+        <dt>Event</dt>
+        <dd><a href={event_url}>Event page</a></dd>
+      </>
+    )}
+    {video_url && (
+      <>
+        <dt>Video</dt>
+        <dd><a href={video_url}>Watch</a></dd>
+      </>
+    )}
+    {curators && (
+      <>
+        <dt>Curators</dt>
+        <dd>{curators}</dd>
+      </>
+    )}
+    {artists && (
+      <>
+        <dt>Artists</dt>
+        <dd>{artists}</dd>
+      </>
+    )}
+  </dl>
+
+  <slot />
+  <SiteFooter relativePath={relativePath} />
+</BaseLayout>
+
+<style>
+  .gig-meta {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-soft);
+    border-radius: 8px;
+  }
+</style>

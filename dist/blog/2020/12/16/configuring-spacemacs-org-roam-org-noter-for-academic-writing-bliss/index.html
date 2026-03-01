@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="I've always had a decent memory, and so I've never really had a formal system for keeping track of who said what and in which paper. When it comes time to…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="Configuring Spacemacs org-roam &#38; org-noter for academic writing bliss"><meta property="og:description" content="I've always had a decent memory, and so I've never really had a formal system for keeping track of who said what and in which paper. When it comes time to…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="Configuring Spacemacs org-roam &#38; org-noter for academic writing bliss"><meta name="twitter:description" content="I've always had a decent memory, and so I've never really had a formal system for keeping track of who said what and in which paper. When it comes time to…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2020-12-16-configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss"><!-- Citation metadata --><meta name="citation_title" content="Configuring Spacemacs org-roam &#38; org-noter for academic writing bliss"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2020-12-16"><meta name="citation_public_url" content="https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss</h1> <p class="post-date">16 Dec 20</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/research/" class="tag" data-astro-cid-lga65v7i>research</a><a href="/blog/tag/dev/" class="tag" data-astro-cid-lga65v7i>dev</a></p>  <p>I’ve always had a decent memory, and so I’ve never really had a formal system
+for keeping track of who said what and in which paper. When it comes time to
+write something of my own I end up mostly just going from memory and
+re-<a href="https://scholar.google.com">google-scholaring</a> things from scratch (often
+finding later that I already had that paper in my
+<a href="https://www.zotero.org">Zotero</a> database already). As I get older my memory
+isn’t as sharp, so I think it’s time to use a more systematic workflow for
+writing---keeping notes about stuff I’ve read &#x26; linking the ideas together.</p>
+<p>All the cool kids are raving about the <a href="https://zettelkasten.de">Zettelkasten</a>
+method, and the <a href="https://www.orgroam.com">org-roam</a> package supporting this
+workflow in <a href="/blog/tag/dev">Emacs</a>. There are also extensions for managing one’s
+paper library (<a href="https://github.com/org-roam/org-roam-bibtex">org-roam-bibtex</a>)
+and reading/annotating pdf files
+(<a href="https://github.com/weirdNox/org-noter">org-noter</a>). When combined, this all
+seems like having academic writing superpowers compared to my “sit around and
+hope I remember the reference” approach. See e.g.
+<a href="https://emacsconf.org/2020/talks/17/">Noorah Alhasan’s EmacsConf 2020 talk</a> for
+more detailed info on this workflow.</p>
+<p>::: tip</p>
+<p>This post isn’t about how I’ve become amazingly productive; it’s about how I
+wasted a day yak-shaving just to get the software working 🙃</p>
+<p>:::</p>
+<h2 id="getting-it-all-to-play-nicely-in-spacemacs">Getting it all to play nicely in Spacemacs</h2>
+<p><a href="https://www.spacemacs.org">Spacemacs</a> (currently) has good
+<a href="https://orgmode.org">org-mode</a> support, but only rudimentary org-roam support,
+and doesn’t include the org-roam-bibtex and org-noter extensions. So I spent
+some time yesterday setting it all up. There were a couple of
+<a href="https://philipperambert.com/Installing-Org-Roam-Bibtex-In-Spacemacs">blog</a>
+<a href="https://www.ianjones.us/org-roam-bibtex">posts</a> which were helpful, as well as
+the GitHub READMEs of the various packages---and you should check them out, this
+post isn’t meant to be a standalone “here’s everything you need” guide. But all
+the info I could find only covered <em>some</em> of the parts I wanted (e.g. using
+org-roam-bibtex but not org-noter, or using all the parts I wanted but for
+<a href="https://github.com/hlissner/doom-emacs">Doom</a> rather than Spacemacs). So if
+you’re trying to do the same thing as me this post will (hopefully) save you
+some time.</p>
+<p>I’m still tinkering with things, so if you want to see the latest version of my
+config then have a look at my public dotfiles repo (especially
+<a href="https://github.com/benswift/.dotfiles/blob/master/spacemacs"><code>.spacemacs</code></a> and
+<a href="https://github.com/benswift/.dotfiles/blob/master/ben-utils.el"><code>ben-utils.el</code></a>).</p>
+<p>First, make sure you’ve got the <code>org</code> and <code>bibtex</code> layers installed, and you’ll
+need these extra packages in <code>dotspacemacs-additional-packages</code>:</p>
+<ul>
+<li><code>org-roam-bibtex</code></li>
+<li><code>org-noter</code></li>
+<li><code>org-noter-pdftools</code></li>
+</ul>
+<p>You’ll also need to provide some extra layer <code>:variables</code> to the associated
+layers in <code>dotspacemacs-configuration-layers</code> (you could probably do this in
+config hooks or even in <code>spacemacs/user-config</code> as well---this is just how I did
+it).</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="scheme"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(bibtex</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> :variables</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> bibtex-completion-bibliography (expand-file-name </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"~/Documents/org/zotero.bib"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> bibtex-completion-pdf-field </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"file"</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D"> ;; org-ref stuff (but used by bibtex layer)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> org-ref-default-bibliography (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">list</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> bibtex-completion-bibliography)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> org-ref-get-pdf-filename-function </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'org-ref-get-pdf-filename-helm-bibtex</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(org</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> :variables</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> org-directory (expand-file-name </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"~/Documents/org"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> org-default-notes-file (concat org-directory </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"/inbox.org"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D"> ;; org-roam</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> org-enable-roam-support t</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> org-roam-directory (concat org-directory </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"/roam"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> org-roam-db-location (concat org-roam-directory </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"/db/org-roam.db"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<p>::: info Note</p>
+<p>Those first two config variables (the <code>bibtex-completion-*</code> ones) weren’t listed
+in the blog posts I found, but seemed to be necessary to get
+<a href="https://github.com/tmalsburg/helm-bibtex">helm-bibtex</a> to find my master
+reference file.</p>
+<p>:::</p>
+<p>Finally, since org-roam-bibtex, org-noter and org-noter-pdftools aren’t
+Spacemacs layers (they’re just additional packages) you need to provide some
+extra configuration in <code>spacemacs/user-config</code> to hook it all together. For
+convenience I put it in a separate <code>.el</code> file which I load from
+<code>spacemacs/user-config</code>.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="scheme"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(use-package org-roam-bibtex</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :after org-roam</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :hook (org-roam-mode . org-roam-bibtex-mode)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :custom</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (orb-preformat-keywords </span><span style="color:#032F62;--shiki-dark:#9ECBFF">'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"citekey"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "title"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "url"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "author-or-editor"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "keywords"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "file"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (orb-process-file-keyword t)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (orb-file-field-extensions </span><span style="color:#032F62;--shiki-dark:#9ECBFF">'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"pdf"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "epub"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "html"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (orb-templates</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">   '</span><span style="color:#24292E;--shiki-dark:#E1E4E8">((</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"r"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "ref"</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> plain (function org-roam-capture--get-point)</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">      ""</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      :file-name </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"${citekey}"</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      :head </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"#+TITLE: ${citekey}: ${title}</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">#+ROAM_KEY: ${ref}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">- tags ::</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">- keywords :: ${keywords}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">* ${title}</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">  :PROPERTIES:</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">  :Custom_ID: ${citekey}</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">  :URL: ${url}</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">  :AUTHOR: ${author-or-editor}</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">  :NOTER_DOCUMENT: ${file}</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">  :NOTER_PAGE:</span></span>
+<span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">  :END:"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(use-package org-pdftools</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :hook (org-load . org-pdftools-setup-link))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(use-package org-noter</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :after (:any org pdf-view)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :custom (org-noter-always-create-frame nil))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(use-package org-noter-pdftools</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :after org-noter</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  :config</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (with-eval-after-load </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'pdf-annot</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (add-hook </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'pdf-annot-activate-handler-functions</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> #</span><span style="color:#005CC5;--shiki-dark:#79B8FF">'org-noter-pdftools-jump-to-note</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))</span></span></code></pre>
+<p>Once I’ve used this system a bit longer and ironed out any kinks I might submit
+a dedicated org-roam-bibtex layer to Spacemacs (or add it to the org layer). But
+for now I’ll just leave it here in case any other Spacemacs users are wondering
+how I did it.</p>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2020configuringSpacemacsOrgRoamOrgNoterForAcademicWritingBliss,
+  author = {Ben Swift},
+  title = {Configuring Spacemacs org-roam &amp; org-noter for academic writing bliss},
+  url = {https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/},
+  year = {2020},
+  month = {12},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2020-12-16-configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2020configuringSpacemacsOrgRoamOrgNoterForAcademicWritingBliss,
+  author = {Ben Swift},
+  title = {Configuring Spacemacs org-roam &#38; org-noter for academic writing bliss},
+  url = {https://benswift.me/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss/},
+  year = {2020},
+  month = {12},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2020-12-16-configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

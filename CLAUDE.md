@@ -5,8 +5,9 @@ This is a colocated jj repo---use `jj` for all version control operations, not
 rebase onto `main@origin` to handle CI commits (e.g. atproto state updates)
 that land between fetches.
 
-This is a vitepress site. Always use ts (not js) and follow vitepress
-conventions wherever possible. Stick to modern best practices, e.g. es6 modules.
+This is an Astro site with Svelte 5 for interactive components and MDX for posts
+that use them. Always use ts (not js) and follow Astro conventions wherever
+possible. Stick to modern best practices, e.g. es6 modules.
 
 ## Voice and tone
 

@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>Out of the browser: on the power of interfaces for agentic AI | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="When OpenAI launched ChatGPT on November 30, 2022, it was a text box in a browser. That conversational call-and-response interface was a big part of what made…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="Out of the browser: on the power of interfaces for agentic AI"><meta property="og:description" content="When OpenAI launched ChatGPT on November 30, 2022, it was a text box in a browser. That conversational call-and-response interface was a big part of what made…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="Out of the browser: on the power of interfaces for agentic AI"><meta name="twitter:description" content="When OpenAI launched ChatGPT on November 30, 2022, it was a text box in a browser. That conversational call-and-response interface was a big part of what made…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-05-out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai"><!-- Citation metadata --><meta name="citation_title" content="Out of the browser: on the power of interfaces for agentic AI"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2026-02-05"><meta name="citation_public_url" content="https://benswift.me/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">Out of the browser: on the power of interfaces for agentic AI</h1> <p class="post-date">5 Feb 26</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/ai/" class="tag" data-astro-cid-lga65v7i>ai</a></p>  <p>When OpenAI <a href="https://openai.com/index/chatgpt/">launched ChatGPT</a> on November
+30, 2022, it was a text box in a browser. That conversational call-and-response
+interface was a big part of what made it a hit---the fastest-growing technology
+product in history, reaching 100 million users in two months. But that’s not
+what this post is about.</p>
+<p>This post is about why “AI coding in the terminal” is such a big deal, and why
+it’s arguably more about <strong>interfaces</strong> than about models.</p>
+<h2 id="the-browser-as-a-security-marvel">The browser as a security marvel</h2>
+<svg class="browser-window" width="100%" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Window frame -->
+  <rect x="0" y="0" width="500" height="300" rx="8" class="window-bg"></rect>
+  <rect x="0" y="0" width="500" height="36" rx="8" class="titlebar"></rect>
+  <rect x="0" y="28" width="500" height="8" class="titlebar"></rect>
+  <!-- Traffic lights -->
+  <circle cx="20" cy="18" r="6" fill="#ff5f57"></circle>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"></circle>
+  <circle cx="60" cy="18" r="6" fill="#28c940"></circle>
+  <!-- URL bar -->
+  <rect x="80" y="8" width="340" height="20" rx="4" class="url-bar"></rect>
+  <text x="100" y="22" font-size="11" font-family="system-ui, sans-serif" class="url-text">🔒 chat.openai.com</text>
+  <!-- Content area - ChatGPT style interface -->
+  <rect x="20" y="50" width="460" height="180" rx="4" class="content-area"></rect>
+  <!-- Chat messages -->
+  <rect x="40" y="70" width="280" height="40" rx="8" class="ai-message"></rect>
+  <text x="55" y="95" font-size="12" font-family="system-ui, sans-serif" class="message-text">Hello! How can I help you today?</text>
+  <rect x="180" y="125" width="280" height="30" rx="8" class="user-message"></rect>
+  <text x="195" y="145" font-size="12" font-family="system-ui, sans-serif" class="user-text">Can you edit my files?</text>
+  <rect x="40" y="170" width="200" height="30" rx="8" class="ai-message"></rect>
+  <text x="55" y="190" font-size="12" font-family="system-ui, sans-serif" class="message-text">I cannot access your files.</text>
+  <!-- Input box at bottom -->
+  <rect x="20" y="250" width="420" height="35" rx="8" class="input-box"></rect>
+  <text x="35" y="272" font-size="12" font-family="system-ui, sans-serif" class="placeholder-text">Message ChatGPT...</text>
+  <rect x="450" y="255" width="25" height="25" rx="4" class="send-btn"></rect>
+</svg>
+<p>Modern web browsers are incredible feats of sandboxing engineering. When you
+visit a website, that site’s code runs in a carefully isolated environment. It
+can’t read your files. It can’t run programs on your computer. It can’t even
+reliably<sup><a href="#user-content-fn-cors" id="user-content-fnref-cors" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup> visit other websites on your behalf. This isolation is achieved
+through a
+<a href="https://www.browserstack.com/guide/what-is-browser-sandboxing">multi-process architecture</a>
+where untrusted web content runs in restricted processes that can only
+communicate with the rest of your system through tightly controlled channels.</p>
+<p>This sandboxing is why you can visit sketchy websites and (mostly) not worry
+about them stealing your passwords or deleting your files. What happens in the
+browser stays in the browser.</p>
+<p>But here’s the thing: that same sandboxing that protects you also constrains
+what ChatGPT (or any browser-based AI) can actually <em>do</em>. It can generate text.
+It can show you images. It can even run some code (JavaScript) in that sandboxed
+environment. But it can’t create files on your computer, run your test suite,
+commit code to git, or do any of the thousand other things you do when you’re
+actually building software.</p>
+<h2 id="enter-the-terminal">Enter the terminal</h2>
+<svg class="terminal-window" width="100%" viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Window frame -->
+  <rect x="0" y="0" width="500" height="280" rx="8" class="terminal-bg"></rect>
+  <rect x="0" y="0" width="500" height="36" rx="8" class="terminal-titlebar"></rect>
+  <rect x="0" y="28" width="500" height="8" class="terminal-titlebar"></rect>
+  <!-- Traffic lights -->
+  <circle cx="20" cy="18" r="6" fill="#ff5f57"></circle>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"></circle>
+  <circle cx="60" cy="18" r="6" fill="#28c940"></circle>
+  <!-- Title -->
+</svg><p><text x="250" y="22" text-anchor="middle" font-size="12" font-family="system-ui, sans-serif" class="terminal-title">Terminal — zsh</text></p>
+  <!-- Terminal content -->
+<p><text x="20" y="65" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
+<text x="35" y="65" font-size="13" font-family="ui-monospace, monospace" class="command">claude “fix the bug in auth.py”</text></p>
+<p><text x="20" y="90" font-size="13" font-family="ui-monospace, monospace" class="output">● Reading auth.py…</text>
+<text x="20" y="115" font-size="13" font-family="ui-monospace, monospace" class="output">● Found issue on line 42</text>
+<text x="20" y="140" font-size="13" font-family="ui-monospace, monospace" class="output">● Editing auth.py…</text>
+<text x="20" y="165" font-size="13" font-family="ui-monospace, monospace" class="output">● Running pytest…</text>
+<text x="20" y="190" font-size="13" font-family="ui-monospace, monospace" class="success">✓ All tests passing</text>
+<text x="20" y="215" font-size="13" font-family="ui-monospace, monospace" class="output">● Committing changes…</text></p>
+<p><text x="20" y="250" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
+<rect x="35" y="238" width="8" height="16" class="cursor">
+</rect></p>
+<p>The terminal is almost the anti-browser. It’s a text-only interface to doing
+<strong>everything</strong> on your computer. Creating, reading, editing, and deleting files
+(or entire hard drives). Running programs, installing software, accessing the
+network (and potentially exfiltrating sensitive documents). The terminal is
+powerful---and dangerous---precisely <em>because</em> it has no sandbox.<sup><a href="#user-content-fn-sandbox" id="user-content-fnref-sandbox" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<p>This is why software developers use it. Building software involves a constant
+cycle of editing files, running compilers, executing tests, managing version
+control, and deploying to servers. All of these are terminal operations. And
+crucially, the people using the terminal are expected to know what they’re doing
+and to take responsibility for the commands they run.</p>
+<p>What makes the terminal particularly interesting for LLMs is this:
+<strong>it’s all text</strong>. Both the inputs (commands with a specific syntax) and the
+outputs (error messages, logs, success confirmations) are designed to be read by
+humans---specifically, programmers who need to understand what’s happening and
+debug when things go wrong.</p>
+<p>LLMs are really good at text. They can understand error messages, reason about
+what went wrong, and generate the next command to try. And because the terminal
+runs commands quickly, you can put an LLM in a loop: try something, see the
+result, adjust, repeat. This is what
+<a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic’s whitepaper on building effective agents</a>
+calls tightening the feedback loop---letting the model iterate without waiting
+for a human to approve every step.</p>
+<h2 id="the-terminal-native-ai-boom">The terminal-native AI boom</h2>
+<p>When Anthropic
+<a href="https://www.anthropic.com/news/claude-3-7-sonnet">announced Claude Code</a> in
+February 2025, the model update wasn’t a quantum leap---Claude 3.7 Sonnet came
+with it, but Sonnet 3.5 was already pretty capable. What they released was a new
+<strong>interface</strong>: an agentic command-line tool that could search and read code,
+edit files, write and run tests, and commit to git. Same models<sup><a href="#user-content-fn-models-better" id="user-content-fnref-models-better" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>,
+different interface, dramatically more useful for actual software development.
+If you don’t believe me about how big a deal this is, check the socials.</p>
+<p>And everyone else noticed. OpenAI
+<a href="https://openai.com/index/introducing-codex/">launched Codex CLI</a> in April 2025.
+Google followed with
+<a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/">Gemini CLI</a>.
+The open source community jumped in too:
+<a href="https://github.com/opencode-ai/opencode">OpenCode</a> now has over 95,000 GitHub
+stars, <a href="https://lucumr.pocoo.org/2026/1/31/pi/">Pi</a> (built by Armin Ronacher and
+Mario Zechner, powering OpenClaw) takes a minimal-agent approach, and
+<a href="https://github.com/getAsterisk/claudia">Claudia</a> wraps Claude Code in a GUI for
+those who want the power without the terminal aesthetic.</p>
+<p>This is an innovation in <strong>interfaces</strong>, not just models.</p>
+<h2 id="the-obvious-risk">The obvious risk</h2>
+<p>Of course, all this power comes with risk. An LLM running in your terminal can
+do anything you can do in your terminal. Including steal your SSH keys, read
+your <code>.env</code> files, or---as
+<a href="https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/">Johann Rehberger points out</a>---wipe
+your production database.</p>
+<p>So far, the frontier models have been pretty well-behaved<sup><a href="#user-content-fn-yolo" id="user-content-fnref-yolo" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup>. But Rehberger
+draws a sobering parallel to the Space Shuttle Challenger disaster and the
+concept of “normalisation of deviance”---when repeated exposure to risky
+behaviour without negative consequences leads people to accept that risk as
+normal.</p>
+<p>As
+<a href="https://simonwillison.net/2025/Dec/10/normalization-of-deviance/">Simon Willison notes</a>:</p>
+<blockquote>
+<p>In the absence of any headline-grabbing examples of prompt injection
+vulnerabilities causing real economic harm, will anyone care?</p>
+</blockquote>
+<p>The incentives for speed and automation are strong. The incentives for security
+are… well, they’re there in principle, but it’s easy to forget why the
+guardrails existed in the first place.</p>
+<h2 id="its-not-the-models-its-the-interface">It’s not the models, it’s the interface</h2>
+<p>I’ve <a href="/blog/2025/07/17/agentic-ai-llms-with-stones">written before</a> about how
+agentic AI is really just about giving LLMs tools---stones to throw, in the
+“sticks and stones” sense. But the terminal-native AI wave has clarified
+something for me: the <em>power</em> of agentic AI comes from the interface, not just
+the tools themselves.</p>
+<p>The browser sandbox was always a security feature, not a limitation of the
+underlying AI. ChatGPT could always <em>tell</em> you to run <code>rm -rf /</code>---it just
+couldn’t do it itself. By moving to the terminal, we haven’t made the models
+smarter; we’ve given them permission to actually do things.</p>
+<p>That’s both the promise and the peril. The models can now iterate without asking
+and do real work in tight feedback loops. But they can also make real mistakes
+with real consequences, in ways that browser-based AI never could.</p>
+<p>If you’re going to use these tools---and if you’re a software developer in 2026,
+you probably should---just remember that you’re not using a smarter AI. You’re
+using the same AI with the safety guards removed. Plan accordingly.</p>
+<!-- styles for the SVG diagrams (light/dark mode) -->
+<style scoped>
+.browser-window {
+  .window-bg { fill: #ffffff; stroke: #d1d5db; stroke-width: 1; }
+  .titlebar { fill: #f3f4f6; }
+  .url-bar { fill: #ffffff; stroke: #d1d5db; stroke-width: 1; }
+  .url-text { fill: #374151; }
+  .content-area { fill: #f9fafb; }
+  .ai-message { fill: #e5e7eb; }
+  .user-message { fill: #10a37f; }
+  .message-text { fill: #1f2937; }
+  .user-text { fill: #ffffff; }
+  .input-box { fill: #ffffff; stroke: #d1d5db; stroke-width: 1; }
+  .placeholder-text { fill: #9ca3af; }
+  .send-btn { fill: #10a37f; }
+}
+
+.terminal-window {
+  .terminal-bg { fill: #1e1e1e; }
+  .terminal-titlebar { fill: #323232; }
+  .terminal-title { fill: #a0a0a0; }
+  .prompt { fill: #4ec9b0; }
+  .command { fill: #dcdcaa; }
+  .output { fill: #cccccc; }
+  .success { fill: #4ec9b0; }
+  .cursor { fill: #cccccc; animation: blink 1s step-end infinite; }
+}
+
+.dark {
+  .browser-window {
+    .window-bg { fill: #1f2937; stroke: #374151; }
+    .titlebar { fill: #374151; }
+    .url-bar { fill: #1f2937; stroke: #4b5563; }
+    .url-text { fill: #d1d5db; }
+    .content-area { fill: #111827; }
+    .ai-message { fill: #374151; }
+    .message-text { fill: #f3f4f6; }
+    .input-box { fill: #1f2937; stroke: #4b5563; }
+    .placeholder-text { fill: #6b7280; }
+  }
+
+  .terminal-window {
+    .terminal-bg { fill: #0d1117; }
+    .terminal-titlebar { fill: #161b22; }
+    .terminal-title { fill: #8b949e; }
+    .prompt { fill: #7ee787; }
+    .command { fill: #ffa657; }
+    .output { fill: #c9d1d9; }
+    .success { fill: #7ee787; }
+    .cursor { fill: #c9d1d9; }
+  }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+</style>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-cors">
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> is a whole
+thing, but broadly speaking browsers are designed to prevent cross-origin
+resource shenanigans. <a href="#user-content-fnref-cors" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-sandbox">
+<p>Yes, you can run things in
+<a href="https://code.visualstudio.com/docs/devcontainers/containers">dev containers</a>
+or VMs to limit the blast radius. But in practice, most developers (myself
+included) run these tools directly on their machines. See the normalisation
+of deviance discussion below. <a href="#user-content-fnref-sandbox" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-models-better">
+<p>Ok, the models <em>are</em> getting better all the time. But I think the leap out
+of the browser is the main thing. <a href="#user-content-fnref-models-better" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-yolo">
+<p>Even though many developers run these tools with automatic approval for all
+actions (colloquially known as “YOLO mode”). I’m one of them 🙃 <a href="#user-content-fnref-yolo" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2026outOfTheBrowserOnThePowerOfInterfacesForAgenticAi,
+  author = {Ben Swift},
+  title = {Out of the browser: on the power of interfaces for agentic AI},
+  url = {https://benswift.me/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai/},
+  year = {2026},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-05-out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2026outOfTheBrowserOnThePowerOfInterfacesForAgenticAi,
+  author = {Ben Swift},
+  title = {Out of the browser: on the power of interfaces for agentic AI},
+  url = {https://benswift.me/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai/},
+  year = {2026},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-05-out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

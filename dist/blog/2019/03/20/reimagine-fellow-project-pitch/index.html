@@ -1,0 +1,603 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>The c/c/c studio | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="import YouTube from '../../../../src/components/YouTube.astro' Note to readers: this is the project plan for my Reimagine Fellowship. If you're just here for…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="The c/c/c studio"><meta property="og:description" content="import YouTube from '../../../../src/components/YouTube.astro' Note to readers: this is the project plan for my Reimagine Fellowship. If you're just here for…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="The c/c/c studio"><meta name="twitter:description" content="import YouTube from '../../../../src/components/YouTube.astro' Note to readers: this is the project plan for my Reimagine Fellowship. If you're just here for…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-03-20-reimagine-fellow-project-pitch"><!-- Citation metadata --><meta name="citation_title" content="The c/c/c studio"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2019-03-20"><meta name="citation_public_url" content="https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+</style><style>.youtube-embed[data-astro-cid-aomsn35f]{width:100%;margin:0 auto 1rem}.youtube-embed-container[data-astro-cid-aomsn35f]{position:relative;padding-bottom:56.25%;height:0}.youtube-embed-container[data-astro-cid-aomsn35f] iframe[data-astro-cid-aomsn35f]{position:absolute;top:0;left:0;width:100%;height:100%}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">The c/c/c studio</h1> <p class="post-date">20 Mar 19</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/reimagine/" class="tag" data-astro-cid-lga65v7i>reimagine</a><a href="/blog/tag/teaching/" class="tag" data-astro-cid-lga65v7i>teaching</a><a href="/blog/tag/research/" class="tag" data-astro-cid-lga65v7i>research</a></p>  <p><em>Note to readers:</em> this is the project plan for my <strong>Reimagine Fellowship</strong>. If
+you’re just here for the short version, see the
+<a href="#elevator-pitch">elevator pitch</a>. Alternately, if you want to know the “big
+picture vision” stuff <em>behind</em> this project, then that’s
+<a href="/blog/2019/02/07/reimagining-engineering-cs-at-the-anu">here</a>. Finally, you can
+check out the main <a href="https://cecs.anu.edu.au/reimagine">CECS Reimagine</a> page for
+more general information about the Reimagine project.</p>
+<p>Or you could save yourself 4000+ words of reading and just watch a 2min video
+😉:</p>
+<div class="youtube-embed" data-astro-cid-aomsn35f> <div class="youtube-embed-container" data-astro-cid-aomsn35f> <iframe src="https://www.youtube-nocookie.com/embed/Sv4Y-UPqML8" title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" data-astro-cid-aomsn35f></iframe> </div> </div> 
+<p>[[toc]]</p>
+<h2 id="project-background-and-description">Project Background and Description</h2>
+<h3 id="elevator-pitch">Elevator pitch</h3>
+<p>::: tip</p>
+<p>I want to create the <strong>c/c/c studio</strong><sup><a href="#user-content-fn-ccc-group" id="user-content-fnref-ccc-group" data-footnote-ref aria-describedby="footnote-label">1</a></sup>, an extension/outreach program
+in creative code: using code to make art, music &amp; other cool things. Through
+school- &amp; community-based workshops and a weekly on-campus studio masterclass,
+students will be part of an interactive learning community where they will be
+guided by instructors in creating their own new works of code-based art &amp; music.
+At the end of each semester the c/c/c studio will host a “grad show” gallery
+exhibition/performance of the students’ work. This program will attract
+fantastic students who might otherwise not study engineering or computer science
+(either at ANU or elsewhere) and engage the wider community in helping them
+<em>reimagine</em> what it is to be a computer scientist or engineer in the 21st
+century.</p>
+<p>:::</p>
+<h3 id="problems-to-be-addressed">Problems to be addressed</h3>
+<p>Interest in Computer Science (CS) education is exploding at all educational
+levels, but there’s a lack of support for students in schools<sup><a href="#user-content-fn-schools" id="user-content-fnref-schools" data-footnote-ref aria-describedby="footnote-label">2</a></sup> which
+don’t have specialist teachers or an appropriate learning
+environment---especially for “fun” student-driven projects which go beyond
+textbook exercises. At the ANU
+<a href="https://cs.anu.edu.au/code-creativity-culture/">Research School of Computer Science</a>
+we’re not currently doing very much<sup><a href="#user-content-fn-not-doing-much" id="user-content-fnref-not-doing-much" data-footnote-ref aria-describedby="footnote-label">3</a></sup> to engage with students at
+a pre-tertiary level, mostly because we’re flat-out dealing with the huge growth
+in students at a tertiary level. The c/c/c studio will address that.</p>
+<p>CS still suffers from a stereotype of being “for nerdy white/Asian males”, and
+those groups are certainly over-represented in our undergraduate CS cohort
+compared to other groups. It’s important to point out that increasing the
+representation of under-represented groups in CS is a wicked problem which needs
+to be tackled from many different angles. Still, as the <strong>A</strong> in
+<a href="https://stemtosteam.org">STE<strong>A</strong>M</a>, the arts provide one angle for engaging
+students who might not normally consider coding and computer science.</p>
+<h3 id="existing-alternatives">Existing alternatives</h3>
+<p>Some ACT High Schools &amp; Colleges already have great non-traditional/creative
+CS/IT programs (I plan to partner with teachers at these schools as
+<a href="#early-adopters">early adopters</a>). However, even in these cases there’s a
+missing link once students finish High School---where can they go to further
+develop their creative practice? The c/c/c studio program will give them deep
+links &amp; relationships into the ANU (across both CS and the Schools of Art &amp;
+Design and School of Music) and an avenue for continuing their creative work.</p>
+<p>There are a few outreach programs
+<a href="https://cecs.anu.edu.au/study/more-information/outreach-programs-schools">advertised on the CECS website</a>,
+however the listed programs are dominated by Engineering rather than CS (9 vs 4
+programs) and of the 4 CS programs I’m involved with 2 of them already. There’s
+also the official <a href="https://extension.anu.edu.au">ANU Extension</a> scheme for Year
+11 &amp; 12 students in the ACT, however CS doesn’t yet participate in this scheme.
+Across campus, there’s the ANU School of Music’s
+<a href="https://music.cass.anu.edu.au/open-school">Open School of Music</a> for school
+students, but there’s no music technology stream.</p>
+<p>There are several great organisations working to increase diversity in CS,
+including the
+<a href="https://canberragpn.github.io">Canberra Girls’ Programming Network</a>,
+<a href="https://codelikeagirl.org/states/act/">Code Like a Girl</a> and
+<a href="https://robogals.org/locations/asia-pacific-apac/canberra/">Robogals</a>. However,
+these organisations are primarily based around computer science/engineering, not
+interdisciplinary art &amp; code.</p>
+<p>In 2018 I (with
+<a href="https://music.cass.anu.edu.au/people/dr-alexander-hunter">Dr. Alec Hunter</a> from
+the ANU School of Music) started the
+<a href="https://cs.anu.edu.au/code-creativity-culture/lens/">ANU Laptop Ensemble</a>,
+which attempted to provide a similar open-ended space for creative exploration
+to the c/c/c studio, except specifically for live performance
+(<a href="https://toplap.org">livecoding</a>; code-based DJ-ing and VJ-ing). ANU students
+can also take my
+<a href="https://cs.anu.edu.au/courses/comp1720/">COMP1720: Art &amp; Interaction in New Media</a>
+course as part of a major in either a CS degree or a Bachelor of Visual Arts (or
+indeed as a cross-campus elective in any program). COMP1720 has run successfully
+as a cross-disciplinary “learn to code” course for several years. The c/c/c
+studio will extend this opportunity to school students and other members of the
+ACT community.</p>
+<p>The c/c/c studio is an opportunity to act as a force multiplier: harnessing
+these existing initiatives, partnering with them wherever possible, and building
+bridges between them to open up new possibilities.</p>
+<h2 id="project-scope">Project Scope</h2>
+<h3 id="solution-proposed">Solution proposed</h3>
+<p>The c/c/c studio will be developed through three stages:</p>
+<ol>
+<li>
+<p>In <strong>stage one</strong> (beginning 2020—mid 2020) I will engage with the project’s
+<a href="#project-sponsor-and-stakeholders">stakeholders</a> to form a <em>c/c/c studio
+advisory group</em> responsible for guiding high-level strategy, pedagogy and
+creative direction in the c/c/c studio program. In this stage I will also
+(with input from stakeholders) develop the c/c/c studio curriculum with a
+view to having it approved for delivery as an ANU Extension program in 2021.</p>
+</li>
+<li>
+<p>In <strong>stage two</strong> (mid 2020—end 2020) we will design and run a series of
+creative code workshops (approx. one per month) with our
+<a href="#early-adopters">early adopter</a> schools and community groups. These free
+workshops will be marketed to specific target groups (as determined by the
+advisory group). Through these workshop we will develop a curriculum of
+different creative activities for different audiences, and also build a
+community (local artists, CECS academics, ANU undergraduate &amp; postgraduate
+students) capable of delivering these workshops.</p>
+</li>
+<li>
+<p>In <strong>stage three</strong> (beginning 2021—ongoing) we will officially launch the
+weekly on-campus c/c/c studio &amp; masterclass. The weekly c/c/c studio sessions
+won’t be lectures, or even tutorials---they will adopt a
+<a href="https://teaching.unsw.edu.au/assessing-studio-based-learning">studio-based learning</a>
+model, with each student working on their own code-based music or visual
+artwork as a semester-long creative “work”. The
+<a href="https://www.studioteaching.org">Studio Teaching Project</a> (a research
+collaboration between UNSW, UQ, RMIT and UTas) has released some helpful
+material for employing this teaching model, which we will make use of in
+developing the c/c/c curriculum.</p>
+</li>
+</ol>
+<p>The purpose of stages one and two is to design and road-test the details of the
+c/c/c studio sessions &amp; masterclasses, but here are some initial plans:</p>
+<ul>
+<li>
+<p>ACT High School &amp; College students will apply to participate based on interest
+and aptitude</p>
+</li>
+<li>
+<p>the weekly c/c/c studio session will be 2hrs long, held on campus at an
+after-school-friendly timeslot</p>
+</li>
+<li>
+<p>the c/c/c studio curriculum will cover fundamental CS topics through both
+computer-based music and visual art, with students able to choose a particular
+creative tech medium for their end-of-year project</p>
+</li>
+<li>
+<p>each year’s c/c/c studio program will culminate in a public “grad show”
+exhibition/performance (held on-campus)</p>
+</li>
+<li>
+<p>each session will be small---max 20 students with 1 instructor (Ben) and one
+tutor (we will recruit tutors with the appropriate skills as required based on
+c/c/c studio student numbers)</p>
+</li>
+<li>
+<p>students will be exposed to regular guest “masterclasses” (3-4 times per
+semester) from artists and other creative practitioners from CECS, the ANU
+School of Art &amp; Design &amp; School of Music, and the local arts community</p>
+</li>
+<li>
+<p>initial “training” material will also be adapted from the
+<a href="https://cs.anu.edu.au/courses/comp1720/labs/">COMP1720 lab material</a> and
+tweaked as appropriate</p>
+</li>
+</ul>
+<p>If the c/c/c studio receives accreditation as an official
+<a href="https://extension.anu.edu.au">ANU Extension</a> program then graduates of the
+two-year c/c/c studio program will receive credit (one course worth) into our
+first-year CS program if they come and study at CECS. This is the same as the
+equivalent
+<a href="https://extension.anu.edu.au/study/discovering-engineering">Discovering Engineering extension program</a>,
+which gives students credit for a first-year ENGN course if they study
+Engineering at the ANU.</p>
+<h3 id="value-to-organisationreimagine-strategic-alignment">Value to organisation/Reimagine strategic alignment</h3>
+<p>The c/c/c studio aligns strongly with the goals of the Reimagine project,
+specifically in <strong>people</strong>, <strong>students</strong>, <strong>education</strong> and <strong>engagement</strong>.</p>
+<p>From the <a href="https://cecs.anu.edu.au/reimagine">Reimagine Project page</a>:</p>
+<blockquote>
+<p>We will inspire a new generation of high-potential, creative people to come to
+engineering and computing with a diverse range of interests, motivations,
+perspectives and career aspirations.</p>
+</blockquote>
+<p>This “new generation” will not be won over by glossy brochures and fancy new
+buildings---they will come because they can see concrete ways in which their
+diverse range of interests can be harnessed and <em>put to work</em> to do amazing
+things. The c/c/c studio will provide a supportive community in which this new
+generation of <strong>people</strong> can learn, create, and share. More than that, it will
+unlock the latent potential in <strong>students</strong> who never knew their diverse
+interests (especially in the arts &amp; music) <em>could</em> be used in engineering and
+computing.</p>
+<p>The c/c/c studio provides a test-bed for new modes of computing <strong>education</strong>,
+especially the studio teaching model. The Reimagine project’s
+“<a href="https://www.acm.org/about-acm/about-the-acm-organization#h-acm%E2%80%99s-%E2%80%98big-tent%E2%80%99-philosophy-embraces-diversity">big tent</a>”
+CS education philosophy requires us to attract <em>and nurture</em> a broader range of
+students in our undergraduate and postgraduate programs. In building a community
+of students who are interested in using computers in the arts &amp; music the c/c/c
+studio can be <em>one part</em> of that bigger mission.</p>
+<p>The c/c/c studio is an outwardly-focused program. Through the workshops (stage
+two) and c/c/c studio (stage three) we will <strong>engage</strong> local artists (whose work
+includes code/digital techniques) to teach into our studio masterclasses. The
+end-of-semester grad shows (stage three) provide an opportunity to showcase the
+innovative education &amp; creative-practice going on in the c/c/c studio (and CECS
+more broadly) and in doing so to make an impact in the ANU and wider Canberra
+community.</p>
+<p>Finally, all the activities of the c/c/c studio function as an “object lesson”
+for the breadth of places that an Engineering/Computer Science skillset can be
+applied---a crucial part of Reimagining CECS from a problem-solving to
+problem-<em>finding</em> institution.</p>
+<h3 id="target-users">Target users</h3>
+<p>ACT High School students, as well as students from the wider Canberra region
+(since we could do a travelling version of the workshop). Through the c/c/c
+advisory group, we also plan (in stage one) to identify and target specific
+communities under-represented in our undergraduate CS programs.</p>
+<p>Also, teachers from these schools will be encouraged to partner with us in both
+supporting their students to participate in the c/c/c studio, and also to
+incorporate creative arts &amp; code activities in their classrooms in general (e.g.
+using the c/c/c studio curriculum, which will be made freely available).</p>
+<h3 id="early-adopters">Early adopters</h3>
+<p>In stage one I will build on my (and others) existing relationships in
+identifying early adopters. In schools, I will work with teachers from
+<a href="https://www.dicksonc.act.edu.au">Dickson College</a>,
+<a href="https://www.radford.act.edu.au">Radford College</a>,
+<a href="https://lynehamhs.act.edu.au">Lyneham High</a>,
+<a href="https://cgs.act.edu.au">Canberra (Boys) Grammar</a> and
+<a href="https://www.cggs.act.edu.au">Canberra Girls Grammar</a>. I will also work with
+relevant community &amp; arts “special interest” organisations, such as
+<a href="https://robogals.org/locations/asia-pacific-apac/canberra/">Robogals</a>,
+<a href="https://canberragpn.github.io">Canberra Girls’ Programming Network</a> and SCI ART
+CBR. These groups, with their networks and existing groups of students
+interested in creative code, can host workshops (stage two) and serve as “seed”
+populations for the first semester of c/c/c studio sessions in stage three.</p>
+<h2 id="deliverables">Deliverables</h2>
+<p>This project will deliver:</p>
+<ul>
+<li>
+<p>a <strong>curriculum</strong> (including instructor notes) for the weekly c/c/c studio
+sessions, which will be freely released to the public under a creative commons
+licence (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>)</p>
+</li>
+<li>
+<p>an annual <strong>c/c/c studio grad show</strong> gallery exhibition and music performance
+(recorded and released on YouTube/Spotify) held on campus (perhaps in the new
+cultural centre) as the capstone for each year’s student work in the c/c/c
+studio</p>
+</li>
+<li>
+<p><a href="https://cs.anu.edu.au/code-creativity-culture/">RSCS’s</a> first ANU Extension
+program (see <a href="#anu-extension-accreditation">above</a>)</p>
+</li>
+<li>
+<p>stories for CECS/Reimagine marketing, and c/c/c studio “graduates” will be
+ideal student ambassadors for the new horizons that creative code opens up</p>
+</li>
+</ul>
+<p>There’ll be lots of other stuff, too: building a community of practice,
+deepening ANU CS/CECS’s relationships with ACT High Schools, strengthening
+cross-campus partnerships in research and teaching, giving our undergraduate
+students a chance to mentor these high school students, etc. But that’s
+intangible stuff, so I’m not sure if they count as a deliverables.</p>
+<h2 id="project-sponsor-and-stakeholders">Project Sponsor and Stakeholders</h2>
+<ul>
+<li>
+<p><strong>Sponsor</strong>: <a href="https://cecs.anu.edu.au/people/tony-hosking">Tony Hosking</a>, RSCS
+Director</p>
+</li>
+<li>
+<p><strong>Owner</strong>: Ben Swift</p>
+</li>
+<li>
+<p><strong>Consultations</strong>:</p>
+<ul>
+<li>
+<p><a href="https://researchers.anu.edu.au/researchers/hunter-at">Alec Hunter</a>, ANU
+SoM, previously the convenor of the Open School of Music program</p>
+</li>
+<li>
+<p><a href="https://charlesmartin.com.au">Charles Martin</a>, RSCS Lecturer and creative
+code practitioner</p>
+</li>
+<li>
+<p><a href="https://researchers.anu.edu.au/researchers/hinchcliffe-gb">Geoff Hinchcliffe</a>,
+ANU School of Art &amp; Design</p>
+</li>
+<li>
+<p><a href="https://cecs.anu.edu.au/people/genevieve-bell">Genevieve Bell</a>,
+<a href="https://3ainstitute.cecs.anu.edu.au">3Ai</a> Director</p>
+</li>
+<li>
+<p><a href="https://au.linkedin.com/in/bruce-fuda-99172732">Bruce Fuda</a>, Computing
+Education Specialist, Australian Computing Academy</p>
+</li>
+<li>
+<p><strong>Jo Prezzi</strong>, CS educator, Lyneham High</p>
+</li>
+<li>
+<p><a href="https://www.linkedin.com/in/madeleine-parker-928644102/">Madeleine Parker</a>,
+SCI ART CBR Community Co-ordinator</p>
+</li>
+<li>
+<p><strong>Helen Kaye</strong>, <a href="https://extension.anu.edu.au">ANU Extension</a> Coordinator</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="success-metrics">Success Metrics</h2>
+<p>We will judge the success of this program using the following metrics, both in
+absolute terms and also trends over time.</p>
+<ul>
+<li>
+<p><strong>Participation</strong>: how many students participate in the workshops (stage two)
+and c/c/c studio (stage three)?</p>
+</li>
+<li>
+<p><strong>Creative outputs</strong>: we’ll have an end-of-semester concert and gallery
+show---are the things the students are making any good?</p>
+</li>
+<li>
+<p><strong>Curriculum uptake</strong>: is the curriculum developed for the c/c/c studio
+sessions used by HS teachers to run similar groups in their schools?</p>
+</li>
+</ul>
+<p>Attaching numbers to this sort of thing is fraught, but here are some indicative
+targets:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>stage</th><th>activity</th><th>target</th></tr></thead><tbody><tr><td>two</td><td>workshops</td><td>run one workshop per month, with at least 10 students each time</td></tr><tr><td>three</td><td>c/c/c studio</td><td>10 c/c/c studio (ANUExt) enrolments 2021, of which 75% graduate at end 2022</td></tr><tr><td>three+</td><td>CECS enrolments</td><td>2 c/c/c studio graduates (in year 12 in 2022) enrolling in CS at the ANU</td></tr></tbody></table>
+<h2 id="business-readiness">Business Readiness</h2>
+<h3 id="physical-space">Physical space</h3>
+<p>The c/c/c studio (stage three) will require a room for one 2-3 hour session
+every week in an after-school friendly timeslot (perhaps 4pm-6pm). This room
+needs to have one computer per student (either a lab machine or personal laptop)
+which can run a modern web browser (Chrome, Firefox, Safari). One of our
+computer labs in Building #145 should do the job.</p>
+<h3 id="personnel">Personnel</h3>
+<p>The c/c/c studio’s open-ended studio teaching model <em>does</em> require a range of
+expert instructors with a mix of creative and technical skills. In addition to
+my own expertise in this area, Dr. Charles Martin (another creative code
+researcher) has recently been employed as a Lecturer by the RSCS, and will be an
+asset to the c/c/c studio program. There are also several academic creative
+practitioners across campus at the ANU Schools of Art &amp; Design and Schools of
+Music. it will be necessary be opportunities/needs to buy out small amounts of
+their time to contribute to the c/c/c studio masterclasses (stage three).</p>
+<h3 id="admin">Admin</h3>
+<p>We will require public liability insurance for any students who come onto campus
+for the c/c/c studio sessions.</p>
+<h2 id="key-activities">Key Activities</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>What?</th><th>Who?</th><th>By when?</th></tr></thead><tbody><tr><td>assemble c/c/c studio advisory group</td><td>Ben, others</td><td>stage one (early 2020)</td></tr><tr><td>develop relationships with <a href="#project-sponsor-and-stakeholders">stakeholders</a></td><td>advisory group</td><td>ongoing</td></tr><tr><td>run in-HS workshops</td><td>Ben + tutor(s)</td><td>stage two (mid 2020)</td></tr><tr><td>c/c/c studio ANU Extension program</td><td>Ben + guests</td><td>stage three (beginning 2021)</td></tr><tr><td>c/c/c studio grad show</td><td>students</td><td>stage three (end 2021)</td></tr></tbody></table>
+<h2 id="costtime-commitments">Cost/Time Commitments</h2>
+<p><strong>Ben</strong>: 2 days/week (40% FTE) for 3 years (beginning 2020-end 2022). This
+includes:</p>
+<ol>
+<li>managing the c/c/c studio advisory group</li>
+<li>building relationships with High Schools and recruiting students (from stage
+one)</li>
+<li>developing the curriculum (from stage one)</li>
+<li>running workshops (~monthly from stage two)</li>
+<li>delivering the weekly c/c/c studio session(s) (weekly from stage three)</li>
+</ol>
+<p>The 0.4fte buyout associated with this fellowship will be used to cover 100% of
+my service component (currently 0.2fte) and half of my teaching component
+(currently 0.4fte). For 2020, this means:</p>
+<ul>
+<li>
+<p>giving up my role as student experience convenor (service)</p>
+</li>
+<li>
+<p>handing <a href="https://cs.anu.edu.au/courses/comp2300/">COMP2300</a> over to
+<a href="https://charlesmartin.com.au">Charles Martin</a></p>
+</li>
+<li>
+<p>moving from being the only lecturer to leading a two-lecturer teaching team
+for <a href="https://cs.anu.edu.au/courses/comp1720/">COMP1720</a> and .</p>
+</li>
+</ul>
+<p><strong>Tutors</strong>: depending on how many students attend, we will need to employ one
+(or more) of our undergraduate students to help deliver the workshops (stage
+two) and support the students in the c/c/c studio (stage three). Exact hourly
+rate depends on qualifications &amp; experience.</p>
+<p><strong>Artist honoraria</strong>: some of the guest artists who give masterclasses in the
+studio won’t have institutional affiliation, and paying them for their time is a
+way of respecting their contribution &amp; expertise. Exact hourly rate depends on
+qualifications &amp; experience.</p>
+<p><strong>Equipment</strong>: computational art &amp; music supplies, including:</p>
+<ul>
+<li>portable music PA for running music workshops in schools</li>
+<li>high-resolution monitors for display of digital artworks</li>
+<li>software licences</li>
+<li>studio supplies</li>
+</ul>
+<p><strong>Grad show budget</strong>: (stage three) for venue/catering/equipment (e.g. fancy
+projectors, etc.)</p>
+<h2 id="risk-challenges-and-dependencies">Risk, Challenges and Dependencies</h2>
+<table><thead><tr><th>Risk/challenge</th><th>Who’s accountable?</th><th>Mitigation steps</th><th>When?</th></tr></thead><tbody><tr><td>some viewpoints (e.g. diversity-wise) aren’t represented in the design of the c/c/c studio program</td><td>everyone</td><td>create an advisory group with several different perspectives</td><td>end 2019</td></tr><tr><td>ANU art/design/music folks feel like we’re treading on their turf</td><td>Ben</td><td>give ANU SoM and SoAD a voice in the advisory group</td><td>end 2019</td></tr><tr><td>high-school students don’t attend the on-campus c/c/c studio sessions</td><td>Ben, CECS Marketing, school/community partners</td><td>get buy-in from <a href="#early-adopters">early adopter schools</a>, get them to support/encourage their students to attend</td><td>end 2020</td></tr><tr><td>c/c/c studio doesn’t meet the requirements for official <a href="https://extension.anu.edu.au">ANU Extension</a> accreditation</td><td>Ben, CECS education committee</td><td>talk to <em>Discovering Engineering</em> people, and if it doesn’t work it’s no big deal</td><td>2020</td></tr><tr><td><em>too many </em>students want to participate</td><td>everyone</td><td>raise the bar for the portfolio-based admissions procedure, get more ANU students to share the teaching/tutoring load</td><td>2020+</td></tr><tr><td>students have wide range of different abilities/familiarity with the material</td><td>Ben, tutors</td><td>keep class sizes small so we can tailor material to each student, encourage peer-assisted learning at the different stages</td><td>2021</td></tr><tr><td>project relies too much on Ben’s particular mix of skills and interests</td><td>Ben, others</td><td>get artists from the Canberra community to deliver studio masterclass material, train up other CECS people (e.g. tutors) to share the workload</td><td>2021</td></tr></tbody></table>
+<h2 id="notes-for-readers">Notes for readers</h2>
+<ul>
+<li>
+<p>Some of the nomenclature is still TBC, e.g. code vs technology, art vs music
+vs creativity, etc. Part of the initial phase of the project will be
+workshopping these terms to see which ones best resonate with the potential
+audiences, and also which best capture what <em>actually</em> goes on.</p>
+</li>
+<li>
+<p>If things go well, I intend to continue (and grow!) the program past the end
+of 2022---in fact I see it as an ongoing part of our teaching, research and
+outreach here in CECS.</p>
+</li>
+<li>
+<p>I know that this document is a website; it’s not using the official MS Word
+template. Mostly that’s because this way I can easily share it with potential
+partners (e.g. when I’m meeting with teachers to talk about how they and their
+students can get involved), make it readable on mobile, make it accessible
+(e.g. to screen readers for people with vision impairment), embed videos, make
+sure everyone’s always reading the latest version, etc. But if you <strong>really</strong>
+need it as a <code>.docx</code> then I can convert it when it’s finished 😊</p>
+</li>
+</ul>
+<h2 id="footnotes">Footnotes</h2>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-ccc-group">
+<p>named after the
+<a href="https://cs.anu.edu.au/code-creativity-culture/">code/creativity/culture</a>
+(c/c/c) research group that I lead, which already has some name recognition
+around the place and will be useful for “branding” this activity <a href="#user-content-fnref-ccc-group" data-footnote-backref aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-schools">
+<p>In this project I’m mainly thinking of later high-school and college
+students (i.e. years 9—12), although there is certainly the possibility of
+tweaking the content to engage younger (even primary school) students as
+well. <a href="#user-content-fnref-schools" data-footnote-backref aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-not-doing-much">
+<p>I don’t mean to throw shade on our existing efforts here---there are some
+great things happening in this area, but there’s more to be done for sure. <a href="#user-content-fnref-not-doing-much" data-footnote-backref aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2019reimagineFellowProjectPitch,
+  author = {Ben Swift},
+  title = {The c/c/c studio},
+  url = {https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/},
+  year = {2019},
+  month = {03},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-03-20-reimagine-fellow-project-pitch},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2019reimagineFellowProjectPitch,
+  author = {Ben Swift},
+  title = {The c/c/c studio},
+  url = {https://benswift.me/blog/2019/03/20/reimagine-fellow-project-pitch/},
+  year = {2019},
+  month = {03},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-03-20-reimagine-fellow-project-pitch},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2019/03/20/reimagine-fellow-project-pitch" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2019/03/20/reimagine-fellow-project-pitch" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

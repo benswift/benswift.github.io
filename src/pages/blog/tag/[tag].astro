@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "../../../layouts/PageLayout.astro"
+import PostList from "../../../components/PostList.astro"
+import TagList from "../../../components/TagList.astro"
+import { formatDate } from "../../../utils/date"
+import { extractExcerpt } from "../../../utils/excerpt"
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("blog", (entry) => {
+    return entry.data.published !== false && /^\d{4}\/\d{2}\/\d{2}\//.test(entry.id)
+  })
+
+  const tagMap = new Map<string, typeof allPosts>()
+  for (const post of allPosts) {
+    for (const tag of post.data.tags) {
+      if (!tagMap.has(tag)) tagMap.set(tag, [])
+      tagMap.get(tag)!.push(post)
+    }
+  }
+
+  return [...tagMap.entries()].map(([tag, posts]) => ({
+    params: { tag },
+    props: { tag, posts },
+  }))
+}
+
+const { tag, posts: rawPosts } = Astro.props
+
+const posts = rawPosts
+  .map((post: any) => {
+    const match = post.id.match(/^(\d{4})\/(\d{2})\/(\d{2})\/(.+?)(?:\.mdx?)?$/)
+    const dateStr = match ? `${match[1]}-${match[2]}-${match[3]}` : ""
+    const date = new Date(dateStr)
+    const slug = post.id.replace(/\.mdx?$/, "")
+
+    return {
+      title: post.data.title,
+      url: `/blog/${slug}/`,
+      date: dateStr,
+      dateFormatted: formatDate(date, true),
+      tags: post.data.tags,
+      excerpt: extractExcerpt(post.body ?? ""),
+    }
+  })
+  .sort((a: any, b: any) => b.date.localeCompare(a.date))
+---
+
+<PageLayout title={`Posts tagged with "${tag}"`}>
+  <p>{posts.length} post{posts.length === 1 ? "" : "s"} with this tag.</p>
+  <a href="/blog/">&larr; Back to all posts</a>
+  <hr />
+  <PostList posts={posts} />
+</PageLayout>

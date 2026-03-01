@@ -1,0 +1,221 @@
+---
+import Search from "./Search.astro"
+
+const navLinks = [
+  { text: "Blog", href: "/blog/" },
+  { text: "Research", href: "/research/" },
+  { text: "Livecoding", href: "/livecoding/" },
+  { text: "Teaching", href: "/teaching/" },
+  { text: "Bio", href: "/bio/" },
+]
+
+const socialLinks = [
+  { icon: "github", href: "https://github.com/benswift", label: "GitHub" },
+  { icon: "bluesky", href: "https://bsky.app/profile/benswift.me", label: "Bluesky" },
+  { icon: "linkedin", href: "https://www.linkedin.com/in/benjswift", label: "LinkedIn" },
+]
+---
+
+<header class="site-header" data-pagefind-ignore>
+  <nav class="nav-container" aria-label="Main navigation">
+    <a href="/" class="site-title">benswift.me</a>
+
+    <button
+      class="mobile-menu-toggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="nav-links"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <div id="nav-links" class="nav-links">
+      {navLinks.map(link => (
+        <a href={link.href} class="nav-link">{link.text}</a>
+      ))}
+
+      <div class="nav-social">
+        {socialLinks.map(link => (
+          <a href={link.href} class="social-link" aria-label={link.label} target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              {link.icon === "github" && (
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              )}
+              {link.icon === "bluesky" && (
+                <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" />
+              )}
+              {link.icon === "linkedin" && (
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              )}
+            </svg>
+          </a>
+        ))}
+      </div>
+
+      <Search />
+
+      <button
+        class="dark-mode-toggle"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--divider);
+    position: sticky;
+    top: 0;
+    background: var(--background-color);
+    z-index: 100;
+  }
+
+  .nav-container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .site-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .site-title:hover {
+    color: var(--highlight-color);
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover {
+    color: var(--highlight-color);
+  }
+
+  .nav-social {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: auto;
+  }
+
+  .social-link {
+    color: var(--text-2);
+    transition: color 0.2s;
+  }
+
+  .social-link:hover {
+    color: var(--highlight-color);
+  }
+
+  .dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-2);
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+  }
+
+  .dark-mode-toggle:hover {
+    color: var(--highlight-color);
+  }
+
+  :global(html:not(.dark)) .icon-moon { display: none; }
+  :global(html.dark) .icon-sun { display: none; }
+
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0.25rem;
+    margin-left: auto;
+  }
+
+  @media (max-width: 640px) {
+    .mobile-menu-toggle {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: none;
+      flex-basis: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+    }
+
+    .nav-links.open {
+      display: flex;
+    }
+
+    .nav-social {
+      margin-left: 0;
+    }
+  }
+</style>
+
+<script>
+  function initNav() {
+    const toggle = document.querySelector(".mobile-menu-toggle")
+    const navLinks = document.querySelector("#nav-links")
+
+    toggle?.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true"
+      toggle.setAttribute("aria-expanded", String(!expanded))
+      navLinks?.classList.toggle("open")
+    })
+
+    const darkToggle = document.querySelector(".dark-mode-toggle")
+    darkToggle?.addEventListener("click", () => {
+      const isDark = document.documentElement.classList.toggle("dark")
+      localStorage.setItem("theme", isDark ? "dark" : "light")
+    })
+  }
+
+  initNav()
+  document.addEventListener("astro:page-load", initNav)
+</script>

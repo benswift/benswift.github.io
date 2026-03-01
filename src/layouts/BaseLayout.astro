@@ -1,0 +1,50 @@
+---
+import "@fontsource-variable/atkinson-hyperlegible-next"
+import "@fontsource-variable/atkinson-hyperlegible-next/wght-italic.css"
+import "@fontsource-variable/atkinson-hyperlegible-mono"
+import "@fontsource-variable/atkinson-hyperlegible-mono/wght-italic.css"
+import "../styles/global.css"
+import Head from "../components/Head.astro"
+import Nav from "../components/Nav.astro"
+import { ViewTransitions } from "astro:transitions"
+
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+  isPost?: boolean
+  date?: string
+  atUri?: string
+}
+
+const { title, description, image, isPost, date, atUri } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <Head
+      title={title}
+      description={description}
+      image={image}
+      isPost={isPost}
+      date={date}
+      atUri={atUri}
+    />
+    <ViewTransitions />
+    <script is:inline>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <Nav />
+    <main data-pagefind-body>
+      <slot />
+    </main>
+  </body>
+</html>

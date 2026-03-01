@@ -1,0 +1,144 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import SiteFooter from "../components/SiteFooter.astro"
+
+interface Props {
+  description?: string
+}
+
+const { description } = Astro.props
+---
+
+<BaseLayout description={description}>
+  <div class="hero">
+    <div class="hero-content">
+      <img
+        src="/assets/images/pages/theremin-75.webp"
+        alt="Ben performing live as a musical livecoder"
+        class="hero-image"
+        fetchpriority="high"
+      />
+      <div class="hero-text">
+        <h1 class="hero-name">Ben Swift</h1>
+        <p class="hero-tagline">researcher, educator, artist, developer</p>
+        <p class="hero-subtitle">Leading <em>Human-Scale AI</em> at the Cybernetic Studio</p>
+        <a href="/blog/" class="hero-cta">Blog</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    <a href="/research/" class="feature-card">
+      <h2>Research</h2>
+      <p>Peer-reviewed publications on livecoding, creative computing, and human-computer interaction.</p>
+    </a>
+    <a href="/livecoding/" class="feature-card">
+      <h2>Livecoding</h2>
+      <p>Curated and invited livecoding performances around the world.</p>
+    </a>
+    <a href="/teaching/" class="feature-card">
+      <h2>Teaching</h2>
+      <p>Courses on creative computing, computer music, and cybernetics.</p>
+    </a>
+  </div>
+
+  <slot />
+  <SiteFooter relativePath="index.md" />
+</BaseLayout>
+
+<style>
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  @media (max-width: 640px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(
+      120deg,
+      var(--highlight-color) 30%,
+      color-mix(in srgb, var(--highlight-color) 80%, black)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-tagline {
+    font-size: 1.25rem;
+    color: var(--text-grey);
+    margin: 0.5rem 0;
+  }
+
+  .hero-subtitle {
+    margin: 0.5rem 0 1rem;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--highlight-color);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .hero-cta:hover {
+    opacity: 0.9;
+    color: white;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .feature-card {
+    padding: 1.25rem;
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: border-color 0.2s;
+  }
+
+  .feature-card:hover {
+    border-color: var(--highlight-color);
+    color: var(--text-color);
+  }
+
+  .feature-card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-2);
+  }
+</style>

@@ -1,7 +1,6 @@
-# VitePress
-.vitepress/cache
-.vitepress/dist
-.vitepress/.temp
+# Astro
+dist/
+.astro/
 
 .unlighthouse
 

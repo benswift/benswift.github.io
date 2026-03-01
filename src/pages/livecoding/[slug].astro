@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content"
+import GigLayout from "../../layouts/GigLayout.astro"
+import { extractDescription } from "../../utils/excerpt"
+
+export async function getStaticPaths() {
+  const gigs = await getCollection("livecoding")
+  return gigs.map((gig) => {
+    const slug = gig.id.replace(/\.md$/, "")
+    return {
+      params: { slug },
+      props: { gig },
+    }
+  })
+}
+
+const { gig } = Astro.props
+const { Content } = await render(gig)
+const description = extractDescription(gig.body ?? "")
+
+// Extract date from filename if not in frontmatter
+let date = gig.data.date
+if (!date) {
+  const match = gig.id.match(/^(\d{4}-\d{2}-\d{2})/)
+  if (match) date = match[1]
+}
+
+const relativePath = `livecoding/${gig.id}`
+---
+
+<GigLayout
+  title={gig.data.title}
+  date={date}
+  venue={gig.data.venue}
+  venue_url={gig.data.venue_url}
+  type={gig.data.type}
+  event_url={gig.data.event_url}
+  video_url={gig.data.video_url}
+  curators={gig.data.curators}
+  artists={gig.data.artists}
+  description={description}
+  relativePath={relativePath}
+>
+  <Content />
+</GigLayout>

@@ -1,0 +1,369 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>Running an AI neural style transfer model under Singularity | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="I've recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="Running an AI neural style transfer model under Singularity"><meta property="og:description" content="I've recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="Running an AI neural style transfer model under Singularity"><meta name="twitter:description" content="I've recently been given access to a beefy AI server (6x RTX3090s!) which is managed via SingularityCE, whose homepage boldly asks and then forgets to answer…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2022-02-01-running-an-ai-neural-style-transfer-model-under-singularity"><!-- Citation metadata --><meta name="citation_title" content="Running an AI neural style transfer model under Singularity"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2022-02-01"><meta name="citation_public_url" content="https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">Running an AI neural style transfer model under Singularity</h1> <p class="post-date">1 Feb 22</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/dev/" class="tag" data-astro-cid-lga65v7i>dev</a><a href="/blog/tag/ai/" class="tag" data-astro-cid-lga65v7i>ai</a></p>  <p>I’ve recently been given access to a beefy AI server (6x RTX3090s!) which is
+managed via <a href="https://sylabs.io/singularity/">SingularityCE</a>, whose homepage
+boldly asks and then forgets to answer the question: “What is SingularityCE?”</p>
+<p>If you
+<a href="https://sylabs.io/guides/latest/user-guide/introduction.html">dig further into the documentation</a>
+it’s a little less coy:</p>
+<blockquote>
+<p>SingularityCE is a container platform. It allows you to create and run
+containers that package up pieces of software in a way that is portable and
+reproducible. You can build a container using SingularityCE on your laptop,
+and then run it on many of the largest HPC clusters in the world, local
+university or company clusters, a single server, in the cloud, or on a
+workstation down the hall. Your container is a single file, and you don’t have
+to worry about how to install all the software you need on each different
+operating system.</p>
+</blockquote>
+<p>I want to fire up my new GPUs and run one of Katherine Crowson’s awesome pytorch
+scripts to do some
+<a href="https://github.com/crowsonkb/style-transfer-pytorch">neural style transfer</a>.
+I’m very familiar with Docker, but new to this Singularity thing, so here are
+some of the hurdles I encountered (and cleared) along the way.</p>
+<h2 id="finding-a-base-image">Finding a base image</h2>
+<p>Looking in the style transfer repo’s
+<a href="https://github.com/crowsonkb/style-transfer-pytorch/blob/master/setup.py#L23"><code>setup.py</code></a>,
+it looks like <a href="https://pytorch.org">torch</a> v1.7.1 or later is required. Having
+done this sort of thing before, I know that these deep learning frameworks
+change a fair bit even between minor versions, so the safest option is to pick
+the exact version that it was designed for---in this case v1.7.1 (or at least
+v1.7.x).</p>
+<p>So, the challenge is to find a Singularity image with that version of torch
+installed. The singularity docs
+<a href="https://sylabs.io/guides/latest/user-guide/quick_start.html#download-pre-built-images">suggest using the search command</a>
+like so:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">$</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> singularity</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> search</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> torch</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Found</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 34</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> container</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> images</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> for</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> amd64</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> matching</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "torch":</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://adalisan81/default/pytorch:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://aday651/default/pytorch-geometric-gpu:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://aphoh/default/pytorch-20.11-py3:v-1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://aradeva24/default/ar_pytorch_21.06-py3.sif:latest</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">		PyTorch</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> NGC</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> container</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> with</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> CUDA11.0,</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> where</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> PyTorch</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> and</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> apex</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> are</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> installed</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://calebh/hpccm-test/faircluster-pytorch-1.10-cuda11.3:sha256.7c63a6c1f6f125b8d3e14fa10203965536ec7173d50e85b8c9ecf6ee0bff2ba7</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://claytonm/default/ubuntu18_torch_torchvision_opencv_cuda10:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://dxtr/default/hpc-pytorch:0.1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://guoweihe/default/pytorch:hz1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://guoweihe/default/pytorch:v1.2</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://guoweihe/default/torch:deep-ed</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://guoweihe/default/torch:sha256.ff32c85ade2c8f6a1d34bd500de1b7bd11cdac16461aeef4d7cbd16ab129d8a7</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://guoweihe/default/torchgpipe:master</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://guoweihe/default/torchgpipe:sha256.a6ea5d732cba07c043e2f06cccbe541d28da6a8d9e5a3d18872d58af288dbc62</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://ipa/medimgproc/pytorch:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://jamiechang917/default/pytorch:sha256.9c60c9825f20626cc0d6e69ac61d862bfec927e82d86becee73f853d657f2425</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://lamastex/default/pytorch_21.03.sif:berzelius-20211027</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://lamastex/default/pytorch_21.07.sif:berzelius-20211027</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://lev-hpc/ml/pytorch_gpu:jupyter</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://lev-hpc/ml/torch_tf_jupyter:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://mbalazs/default/pytorch:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://mbalazs/default/pytorch_cuda110:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://mike_holcomb/pytorchvision/v0.1.0:latest,v0.1.0</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://oscartang/default/pytorch_translation:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://ottino8/default/pytorch:first</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://pauldhein/hpc-deep-learning/torch-base:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://sina-ehsani/default/transformer-googlecrawl-torch-opencv:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://sina-ehsani/default/transformer-googlecrawl-torch1.10:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://skykiny/default/pytorch_skykiny:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://tmyoda/default/cuda-torch-pyenv:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://tru/default/c7-conda-pytorch-10.0:2019-07-12-2053,latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://ufscar/hpc/cuda_pytorch:latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://uvarc/default/pytorch:1.4.0-py37</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://yboget/default/pytorch_rdkit_visdom:sha256.d97f221ef1294a8ef57d40cf7994d05d4955abc7cf39e3ce42faafd59fe3151a</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">	library://zhengtang/default/torch_translation:latest</span></span></code></pre>
+<p>Hmm. It’s hard to know which is official, which ones are going to work (a few of
+them mention torch versions, but none of them are v1.7.x) and which ones might
+even be malicious? That’s a worry.</p>
+<p>Looking a bit deeper into the Singularity docs I find that one can
+<a href="https://sylabs.io/guides/latest/user-guide/singularity_and_docker.html">also use Docker/OCI images</a>,
+and Singularity can pull them straight from Docker hub. That’s good news,
+because NVIDIA do maintain
+<a href="https://hub.docker.com/r/pytorch/pytorch/tags">official Docker images</a> for
+using torch with NVIDIA graphics cards (like the 3090), so I find the
+<a href="https://hub.docker.com/layers/pytorch/pytorch/1.7.1-cuda11.0-cudnn8-runtime/images/sha256-db6086be92f439b918c96dc002f4cf40239e247f0b1b6c32e3fb36de70032bf9?context=explore">specific container image for torch v1.7.1</a>
+and pull it down with:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">singularity</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> pull</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> docker://pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime</span></span></code></pre>
+<h2 id="running-the-style_transfer-python-script">Running the <code>style_transfer</code> python script</h2>
+<p>I’d already cloned the neural style transfer repo, so I can follow the
+instructions in that
+<a href="https://github.com/crowsonkb/style-transfer-pytorch/blob/master/README.md">README.md</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">$</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> singularity</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> shell</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> pytorch_1.7.0-cuda11.0-cudnn8-runtime.sif</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">cd</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> style-transfer-pytorch/</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">pip</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> --user</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> .</span></span></code></pre>
+<p>I got a bunch of warnings about certain things not being on the <code>$PATH</code>, but it
+seems to finish installing everthing ok.</p>
+<p>Continuing on with the instructions in the README, let’s try running this thing
+(I’d downloaded a couple of image files to use as my <em>content</em> and <em>style</em>
+images).</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">style_transfer</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben.webp</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> tiger.webp</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -o</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben-tiger.webp</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">bash:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> style_transfer:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> command</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> not</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> found</span></span></code></pre>
+<p>Hmm, looks like those <code>$PATH</code> warnings were prescient. Looking back, the exact
+warning was:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">WARNING:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> The</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> script</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> normalizer</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> is</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> installed</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> in</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> '/home/users/ben/.local/bin'</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> which</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> is</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> not</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> on</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> PATH</span></span></code></pre>
+<p>The quickest &#x26; dirtiest fix for this is to add that <code>/bin</code> directory to my path
+and try and re-run the script.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">PATH="</span><span style="color:#24292E;--shiki-dark:#E1E4E8">$PATH</span><span style="color:#032F62;--shiki-dark:#9ECBFF">:~/.local/bin"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> style_transfer</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben.webp</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> tiger.webp</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -o</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben-tiger.webp</span></span></code></pre>
+<p>And away it went! Several minutes later, it was done. Here are the original two
+images:</p>
+<p><img src="/assets/images/headshots/headshot.webp" alt="Original ben.webp image">
+<img src="/assets/images/posts/tiger.webp" alt="Original tiger.webp"></p>
+<p>and here’s the output:</p>
+<p><img src="/assets/images/posts/ben-tiger.webp" alt="style-transferred ben-tiger.webp"></p>
+<p>Success…ish. Clearly I need to keep tweaking parameters &#x26; input images to come
+up with an output that’s actually <em>good</em>, but at least that journey can now
+begin.</p>
+<h2 id="but-is-it-fast">But is it <em>fast</em>?</h2>
+<p>Actually, that declaration of success is a bit premature. At the top of the
+output I noticed that the script was running on the CPU, not the GPU.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">PATH="</span><span style="color:#24292E;--shiki-dark:#E1E4E8">$PATH</span><span style="color:#032F62;--shiki-dark:#9ECBFF">:~/.local/bin"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> style_transfer</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben.webp</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> tiger.webp</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -o</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben-tiger.webp</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">~</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from https://www.nvidia.com/Download/index.aspx (</span><span style="color:#6F42C1;--shiki-dark:#B392F0">Triggered</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> internally</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> at</span><span style="color:#032F62;--shiki-dark:#9ECBFF">  /pytorch/c10/cuda/CUDAFunctions.cpp:100.</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  return</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> torch._C._cuda_getDeviceCount</span><span style="color:#24292E;--shiki-dark:#E1E4E8">() </span><span style="color:#D73A49;--shiki-dark:#F97583">></span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Using</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> devices:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> cpu</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">CPU</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> threads:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 128</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Loading</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> model...</span></span></code></pre>
+<p>That’s really not ok---the whole point of running on this machine is to take
+advantage of the GPUs. There could be lots of reasons for this, but I have a
+hunch it has something to do with Singularity not allowing the script access to
+the hardware. Sure enough, looking through the
+<a href="https://sylabs.io/guides/3.7/user-guide/gpu.html">Singularity GPU support documentation</a>
+it turns out there’s a magic <code>--nv</code> flag which must be passed when starting up
+the Singularity session, so let’s do that.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">$</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> singularity</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> shell</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> --nv</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> pytorch_1.7.1-cuda11.0-cudnn8-runtime.sif</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">PATH="</span><span style="color:#24292E;--shiki-dark:#E1E4E8">$PATH</span><span style="color:#032F62;--shiki-dark:#9ECBFF">:~/.local/bin"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> style_transfer</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben.webp</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> tiger.webp</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -o</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben-tiger.webp</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Using</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> devices:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> cuda:0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">~</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:143: UserWarning:</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">NVIDIA</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> GeForce</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RTX</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3090</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> with</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> CUDA</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> capability</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> sm_86</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> is</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> not</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> compatible</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> with</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> the</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> current</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> PyTorch</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> installation.</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">The</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> current</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> PyTorch</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> supports</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> CUDA</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> capabilities</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> sm_37</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> sm_50</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> sm_60</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> sm_70.</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">If</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> you</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> want</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> to</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> use</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> the</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> NVIDIA</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> GeForce</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RTX</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3090</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> GPU</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> with</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> PyTorch,</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> please</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> check</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> the</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> instructions</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> at</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> https://pytorch.org/get-started/locally/</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">  warnings.warn(incompatible_device_warn.format(device_name,</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> capability,</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> " ".join</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#6F42C1;--shiki-dark:#B392F0">arch_list</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#032F62;--shiki-dark:#9ECBFF">,</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> device_name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">GPU</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> type:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> NVIDIA</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> GeForce</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RTX</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3090</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (compute </span><span style="color:#005CC5;--shiki-dark:#79B8FF">8.6</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">GPU</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RAM:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 24268</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> MB</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Loading</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> model...</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">*</span><span style="color:#24292E;--shiki-dark:#E1E4E8">error traceback intensifies</span><span style="color:#D73A49;--shiki-dark:#F97583">*</span></span></code></pre>
+<p>Well, that’s progress. Looking through the output I can see</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Using</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> devices:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> cuda:0</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">GPU</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> type:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> NVIDIA</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> GeForce</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RTX</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3090</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (compute </span><span style="color:#005CC5;--shiki-dark:#79B8FF">8.6</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">GPU</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RAM:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 24268</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> MB</span></span></code></pre>
+<p>so torch can now see the GPUs. However, the error message in the middle of that
+output is now the problem:</p>
+<blockquote>
+<p>NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the
+current PyTorch installation.</p>
+<p>The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60
+sm_70.</p>
+<p>If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check
+the instructions at
+<a href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
+</blockquote>
+<p>Like I said earlier, torch/tensorflow/CUDA and deep learning frameworks in
+general are really finnicky about versions. It’s tricky to get things up and
+running so that (i) all the versions work together and (ii) the changes you make
+don’t break the delicate version relationships between other deep learning
+projects you want to run on the same system<sup><a href="#user-content-fn-singularity-isolation" id="user-content-fnref-singularity-isolation" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.</p>
+<p>After a web search, it seems
+<a href="https://github.com/pytorch/vision/issues/4886">like others </a>
+<a href="https://discuss.pytorch.org/t/geforce-rtx-3090-with-cuda-capability-sm-86-is-not-compatible-with-the-current-pytorch-installation/123499">have had</a>
+<a href="https://github.com/crowsonkb/style-transfer-pytorch/issues/1#issuecomment-769701949">similar issues</a>,
+although I tried all the approaches listed there and none of them worked.</p>
+<h2 id="using-a-pytorch-image-from-nvidias-container-registry">Using a pytorch image from NVIDIA’s container registry</h2>
+<p>Changing tack a bit (after a suggestion from a colleague) I decided to try using
+a (Docker)
+<a href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch">container image from the NVIDIA registry</a>,
+rather than the official pytorch channel on Docker Hub.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">$</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> singularity</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> pull</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> docker://nvcr.io/nvidia/pytorch:22.01-py3</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">$</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> singularity</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> shell</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> --nv</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> pytorch_22.01-py3.sif</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">pip</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> --user</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> .</span></span></code></pre>
+<p>Now, let’s try running the <code>style_trasfer</code> script one more time:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Singularity</span><span style="color:#24292E;--shiki-dark:#E1E4E8">> </span><span style="color:#032F62;--shiki-dark:#9ECBFF">PATH="</span><span style="color:#24292E;--shiki-dark:#E1E4E8">$PATH</span><span style="color:#032F62;--shiki-dark:#9ECBFF">:~/.local/bin"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> style_transfer</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben.webp</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> tiger.webp</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -o</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> ben-tiger.webp</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Using</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> devices:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> cuda:0</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">GPU</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> type:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> NVIDIA</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> GeForce</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RTX</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3090</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (compute </span><span style="color:#005CC5;--shiki-dark:#79B8FF">8.6</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">GPU</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> RAM:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 24268</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> MB</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Loading</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> model...</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Processing</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> content</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> image</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (128x85)...</span></span></code></pre>
+<p>Hooray! It works, and runs, like 10000x faster on the GPU.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>I really was just “hacking it until it worked” during this process, so I have a
+few open questions.</p>
+<ul>
+<li>
+<p>What’s the “persistance” story with the singularity images (<code>*.sif</code> files)? Is
+it like docker, where I <code>singularity shell</code> in, do some things, but then any
+changes I make in the shell (container?) don’t persist? It doesn’t seem like
+that… but need to have a better mental model of how singularity images work.</p>
+</li>
+<li>
+<p>I didn’t use <a href="https://virtualenv.pypa.io/en/latest/">venvs</a> or
+<a href="https://docs.conda.io/en/latest/">conda</a> or
+<a href="https://python-poetry.org/docs/">poetry</a> or any of the things I’d usually use
+when python-ing on my own machine, partially because of my above questions
+about how the whole singularity shell thing actually works. I just did
+<code>pip install --user .</code> and hoped it didn’t break anything else. Is that ok? Or
+should I still use venvs in the singularity image?</p>
+</li>
+</ul>
+<p>I will return and try and better understand these things later, but right now
+this isn’t on the critical path for me so I’ll have to park it. This blog post
+is really just me opening a ticket for myself to return to later. I share it so
+that you, dear reader, can also benefit from my mistakes (and if you know of
+better ways to do any of this then do
+<a href="mailto:ben.swift@anu.edu.au">drop me a line</a>.</p>
+<h2 id="footnotes">Footnotes</h2>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-singularity-isolation">
+<p>I had hoped that Singularity might help with the “isolation” part of this,
+but I’m not sure I understand it well enough yet to know how to do it. <a href="#user-content-fnref-singularity-isolation" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2022runningAnAiNeuralStyleTransferModelUnderSingularity,
+  author = {Ben Swift},
+  title = {Running an AI neural style transfer model under Singularity},
+  url = {https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/},
+  year = {2022},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2022-02-01-running-an-ai-neural-style-transfer-model-under-singularity},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2022runningAnAiNeuralStyleTransferModelUnderSingularity,
+  author = {Ben Swift},
+  title = {Running an AI neural style transfer model under Singularity},
+  url = {https://benswift.me/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity/},
+  year = {2022},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2022-02-01-running-an-ai-neural-style-transfer-model-under-singularity},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

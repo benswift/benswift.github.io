@@ -1,0 +1,112 @@
+---
+import PageLayout from "../layouts/PageLayout.astro"
+import { loadPublications } from "../data/bibliography"
+
+const pubs = loadPublications()
+
+const pubsByYear: Record<string, typeof pubs> = {}
+for (const pub of pubs) {
+  if (!pubsByYear[pub.year]) pubsByYear[pub.year] = []
+  pubsByYear[pub.year].push(pub)
+}
+const years = Object.keys(pubsByYear).sort((a, b) => b.localeCompare(a))
+---
+
+<PageLayout title="Research" relativePath="research.md">
+  <figure class="picture-container">
+    <img
+      src="/assets/images/pages/ben-soundscapes-21.webp"
+      alt="Ben performing at Soundscapes #21"
+      loading="lazy"
+    />
+    <figcaption class="picture-credit">Adam Thomas</figcaption>
+  </figure>
+
+  <h2>Research interests</h2>
+
+  <p>
+    I'm a livecoder, digital artist, and researcher in the
+    <a href="https://cybernetics.anu.edu.au/">ANU School of Cybernetics</a>. My research
+    interests include:
+  </p>
+
+  <ul>
+    <li><strong>Livecoding</strong>: Writing and modifying code in real-time as a form of artistic performance</li>
+    <li><strong>Creative computing</strong>: Using computation as a medium for artistic expression</li>
+    <li><strong>Human-computer interaction</strong>: Designing systems that are engaging and meaningful</li>
+    <li><strong>AI &amp; creativity</strong>: Exploring the creative potential of AI systems</li>
+  </ul>
+
+  <div class="custom-block tip">
+    <p class="custom-block-title">Come study with me</p>
+    <p>
+      If you're interested in doing Honours/Masters/PhD research with me,
+      <a href="mailto:ben.swift@anu.edu.au">send me an email</a>. I always have a few project
+      ideas kicking around, but I'm also open to hearing about the project/big idea
+      that excites <em>you</em>. Send me:
+    </p>
+    <ol>
+      <li>A <strong>one-paragraph</strong> description of the project you're interested in doing</li>
+      <li>A <strong>link to something you've made</strong>: a livecoding video, a project on GitHub,
+        an academic paper---even a blog post</li>
+    </ol>
+  </div>
+
+  <h2>Peer-reviewed publications</h2>
+
+  <div class="bibliography">
+    {years.map((year) => (
+      <div class="year-section">
+        <h3 id={year}>{year}</h3>
+        {pubsByYear[year].map((pub) => (
+          <div class="pub-item">
+            <p class="pub-title">
+              {pub.doi ? (
+                <a href={`https://doi.org/${pub.doi}`} target="_blank">{pub.title}</a>
+              ) : pub.url ? (
+                <a href={pub.url} target="_blank">{pub.title}</a>
+              ) : (
+                <span>{pub.title}</span>
+              )}
+            </p>
+            <p class="pub-authors">{pub.authors}</p>
+            {pub.venue && <p class="pub-venue">{pub.venue}</p>}
+            {pub.pdfPath && (
+              <p class="pub-pdf">
+                <a href={pub.pdfPath} target="_blank" title="Download PDF" aria-label="Download PDF">PDF</a>
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+
+  <h2>Curated/invited livecoding performances</h2>
+
+  <p>See the <a href="/livecoding/">livecoding page</a> for documentation of my performances.</p>
+</PageLayout>
+
+<style>
+  .picture-container {
+    position: relative;
+    margin: 1rem 0;
+  }
+  .picture-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .picture-credit {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 0.875rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .picture-credit::before {
+    content: "photo: ";
+  }
+</style>

@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "../../layouts/PageLayout.astro"
+import { formatDate, parseDate } from "../../utils/date"
+
+const allTalks = await getCollection("talks")
+
+const talks = allTalks
+  .filter((talk) => talk.data.layout !== "reveal")
+  .map((talk) => {
+    const slug = talk.id.replace(/\.md$/, "")
+    const dateStr = talk.data.date ?? "2000-01-01"
+    return {
+      title: talk.data.title,
+      url: `/talks/${slug}/`,
+      dateStr,
+      dateFormatted: formatDate(parseDate(String(dateStr))),
+      event: talk.data.event,
+    }
+  })
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
+---
+
+<PageLayout title="Talks" relativePath="talks/index.md">
+  <p>Here are some of my non-reveal.js talks and presentations.</p>
+  <hr />
+
+  <ul class="post-list">
+    {talks.map((talk) => (
+      <li class="post-item">
+        <a href={talk.url} class="post-item-title">{talk.title}</a>
+        <span class="post-item-date">{talk.dateFormatted}</span>
+        {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
+      </li>
+    ))}
+  </ul>
+</PageLayout>

@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>11ty and Vite for modern static websites | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="I've been using 11ty for static site generation for a while now (not this site---that's Jekyll---but for other stuff) and it's great. But for a recent project…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="11ty and Vite for modern static websites"><meta property="og:description" content="I've been using 11ty for static site generation for a while now (not this site---that's Jekyll---but for other stuff) and it's great. But for a recent project…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="11ty and Vite for modern static websites"><meta name="twitter:description" content="I've been using 11ty for static site generation for a while now (not this site---that's Jekyll---but for other stuff) and it's great. But for a recent project…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2025-11-24-11ty-and-vite-for-modern-static-websites"><!-- Citation metadata --><meta name="citation_title" content="11ty and Vite for modern static websites"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2025-11-24"><meta name="citation_public_url" content="https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">11ty and Vite for modern static websites</h1> <p class="post-date">24 Nov 25</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/dev/" class="tag" data-astro-cid-lga65v7i>dev</a></p>  <p>I’ve been using <a href="https://www.11ty.dev/">11ty</a> for static site generation for a
+while now (not this site---that’s Jekyll---but for other stuff) and it’s great.
+But for a recent project I needed proper asset bundling, hot module replacement
+(HMR), and access to the npm ecosystem without building my own pipeline. Enter
+<a href="https://vite.dev/">Vite</a>.</p>
+<p>The combination turns out to work really well, withouth adding <em>too</em> much
+complexity over bare 11ty. Here’s what I learned setting up 11ty with Vite (and
+Tailwind v4 too) for the <a href="https://www.llmsunplugged.org/">LLMs Unplugged</a>
+teaching resources site.</p>
+<h2 id="why-not-just-use-11ty-alone">Why not just use 11ty alone?</h2>
+<p>Vanilla 11ty is deliberately minimal. You write markdown, it spits out HTML.
+Want to bundle JavaScript? Process CSS? Handle npm dependencies? You’re on your
+own. For content-focused sites this is perfect---less magic means less to break.</p>
+<p>But when your site needs interactive components, proper module resolution, and
+modern CSS tooling, you end up reinventing the wheel. I tried the “just manually
+copy files and use browser ESM” approach for a while, and it works until it
+doesn’t<sup><a href="#user-content-fn-browser-esm" id="user-content-fnref-browser-esm" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.</p>
+<h2 id="the-integration-pattern">The integration pattern</h2>
+<p>The magic happens through
+<a href="https://www.npmjs.com/package/@11ty/eleventy-plugin-vite"><code>@11ty/eleventy-plugin-vite</code></a>,
+which lets 11ty and Vite play nicely together. Here’s the core setup in
+<code>eleventy.config.js</code>:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> EleventyVitePlugin </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "@11ty/eleventy-plugin-vite"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> tailwindcss </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "@tailwindcss/vite"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">export</span><span style="color:#D73A49;--shiki-dark:#F97583"> default</span><span style="color:#D73A49;--shiki-dark:#F97583"> function</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#E36209;--shiki-dark:#FFAB70">eleventyConfig</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  eleventyConfig.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">addPlugin</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(EleventyVitePlugin, {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    viteOptions: {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      plugins: [</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">        tailwindcss</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">        // ... other plugins</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      ],</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      build: {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        rollupOptions: {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          input: {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            main: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"src/assets/main.js"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            slides: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"src/assets/slides.js"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  });</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    dir: {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      input: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"src"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      output: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"_site"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  };</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+<p>The Vite config lives directly inside the 11ty config via <code>viteOptions</code>. When
+you run <code>eleventy --serve</code>, it starts both the 11ty build and Vite’s dev server.
+You get HMR for your CSS and JavaScript while 11ty rebuilds HTML on file
+changes. And I set up a small test suite using <a href="https://vitest.dev/">Vitest</a> as
+well… because honestly it’s still nice to have some regression testing at
+least.</p>
+<p>During build, 11ty generates HTML first, then Vite bundles your assets with
+proper hashing and minification. The plugin handles rewriting asset paths in
+your HTML to point to the hashed files.</p>
+<h2 id="the-key-gotcha-passthrough-files">The key gotcha: passthrough files</h2>
+<p>Here’s where I wasted a bunch of time 🙃. 11ty has this concept of
+<a href="https://www.11ty.dev/docs/copy/">passthrough file copy</a>---files that just get
+copied directly to the output directory without processing. Useful for things
+like <code>CNAME</code> files, <code>robots.txt</code>, PDFs, etc.</p>
+<p>The problem is that Vite’s build process empties the output directory before it
+runs. So 11ty copies your passthrough files, then Vite helpfully deletes them
+all.</p>
+<p>The solution is a custom Vite plugin that runs <em>after</em> Vite’s build completes
+and copies those files back:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">function</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> preservePassthroughOutputs</span><span style="color:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> rootDir;</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> outDir;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    name: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"preserve-eleventy-passthrough"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    apply: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"build"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">    configResolved</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">config</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      rootDir </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> config.root;</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      outDir </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> config.build.outDir;</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    async</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> closeBundle</span><span style="color:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">      // Copy passthrough files after Vite is done</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> passthroughFiles</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"CNAME"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"feed.xml"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"favicon.svg"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">];</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">      for</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> file</span><span style="color:#D73A49;--shiki-dark:#F97583"> of</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> passthroughFiles) {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> sourcePath</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> path.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">join</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(rootDir, file);</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">await</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> fileExists</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(sourcePath)) {</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          const</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> destinationPath</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> path.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">join</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(outDir, file);</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">          await</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> fs.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">copyFile</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(sourcePath, destinationPath);</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  };</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+<p>You could also use
+<a href="https://github.com/sapphi-red/vite-plugin-static-copy"><code>vite-plugin-static-copy</code></a>
+if you don’t want to write your own plugin, though I found the custom one gave
+me more control over exactly what gets copied and when.</p>
+<h2 id="tailwind-v4s-new-approach">Tailwind v4’s new approach</h2>
+<p>The above stack works great with whatever CSS approach you use, but I’ve also
+been moving more and more of my projedts to Tailwind v4. So here’s some advice
+for that approach (disregard if you don’t want to use Tailwind). In Tailwind v4
+instead of a <code>tailwind.config.js</code> file you configure everything through CSS
+using the <code>@theme</code> directive. Here’s what <code>main.css</code> might look like:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="css"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">@import</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "tailwindcss"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">@plugin</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> "@tailwindcss/typography";</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">@theme</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  --color-anu-gold: </span><span style="color:#B31D28;--shiki-light-font-style:italic;--shiki-dark:#FDAEB7;--shiki-dark-font-style:italic">#be830e;</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  --color-anu-teal: </span><span style="color:#B31D28;--shiki-light-font-style:italic;--shiki-dark:#FDAEB7;--shiki-dark-font-style:italic">#0085ad</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  --font-body: "Public Sans", "Inter", </span><span style="color:#22863A;--shiki-dark:#85E89D">system-ui</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#22863A;--shiki-dark:#85E89D">sans-serif</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  --leading-body: 1.65;</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  --tracking-tight: -0.02em;</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">@layer</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> base {</span></span>
+<span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  body</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    font-family</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">var</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">--font-body</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    line-height</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">var</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">--leading-body</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+<p>No config file, no JavaScript; just CSS with custom properties. The
+<code>@tailwindcss/vite</code> plugin handles everything<sup><a href="#user-content-fn-tw-v4" id="user-content-fnref-tw-v4" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
+<p>This approach feels much more natural---design tokens as CSS custom properties
+means you can use them directly in your CSS without jumping through hoops. Want
+to reference your colour in some custom CSS? Just use <code>var(--color-anu-gold)</code>.</p>
+<h2 id="dependencies-and-setup">Dependencies and setup</h2>
+<p>The key packages you need for this stack are:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">  "dependencies"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    "@11ty/eleventy"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"^3.1.2"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    "@11ty/eleventy-plugin-vite"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"^7.0.0"</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">  "devDependencies"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    "@tailwindcss/vite"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"^4.1.16"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    "vite"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"^7.1.12"</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+<p>Your npm scripts are nice and simple:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">  "scripts"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    "dev"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"eleventy --serve"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    "build"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"eleventy"</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+<p>The Vite integration is completely invisible---the eleventy plugin handles
+starting and stopping Vite as needed.</p>
+<h2 id="when-this-setup-makes-sense">When this setup makes sense</h2>
+<p>If your site is purely content with minimal JavaScript, stick with vanilla 11ty.
+It’s faster to set up, easier to understand, and has fewer moving parts.</p>
+<p>This makes sense when you:</p>
+<ul>
+<li>need proper JavaScript bundling and tree-shaking</li>
+<li>want hot module replacement during development</li>
+<li>have multiple entry points (main site JS, slide deck JS, admin panel, etc.)</li>
+<li>use npm packages that expect a bundler</li>
+<li>want to use Vitest for testing (it shares Vite’s config understanding)</li>
+<li>need modern CSS tooling like Tailwind with proper build-time processing</li>
+</ul>
+<p>For the LLMs Unplugged site, we have interactive components, slide decks using
+reveal.js, and a bunch of build-time transformations. The extra complexity of
+Vite pays for itself in developer experience.</p>
+<h2 id="the-verdict">The verdict</h2>
+<p>Setting this up took me a bit of futzing about, but now that it’s working the
+development experience is excellent. HMR makes CSS tweaking instant, the build
+output is properly optimised, and I still get 11ty’s flexibility for content.</p>
+<p>Would I do it again? Absolutely. But only for projects that actually need it.
+Sometimes vanilla 11ty is exactly the right amount of tooling<sup><a href="#user-content-fn-right-tool" id="user-content-fnref-right-tool" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>.</p>
+<p>You can see the full implementation in the
+<a href="https://github.com/ANUcybernetics/llms-unplugged/tree/main/website">LLMs Unplugged repository</a>
+if you want to dig into the details. The <code>eleventy.config.js</code> and
+<code>src/assets/main.css</code> files have all the configuration.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-browser-esm">
+<p>Mostly it stops working when you want to use npm packages that expect a
+bundler, or when you need any kind of build-time transformation. <a href="#user-content-fnref-browser-esm" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-tw-v4">
+<p>Tailwind v4 is still in beta as of writing this, but it’s been stable enough
+for production use in my experience. Your mileage may vary. <a href="#user-content-fnref-tw-v4" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-right-tool">
+<p>The best tool is the one that solves your problem without creating new ones.
+Boring technology and all that. <a href="#user-content-fnref-right-tool" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift202511tyAndViteForModernStaticWebsites,
+  author = {Ben Swift},
+  title = {11ty and Vite for modern static websites},
+  url = {https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/},
+  year = {2025},
+  month = {11},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2025-11-24-11ty-and-vite-for-modern-static-websites},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift202511tyAndViteForModernStaticWebsites,
+  author = {Ben Swift},
+  title = {11ty and Vite for modern static websites},
+  url = {https://benswift.me/blog/2025/11/24/11ty-and-vite-for-modern-static-websites/},
+  year = {2025},
+  month = {11},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2025-11-24-11ty-and-vite-for-modern-static-websites},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2025/11/24/11ty-and-vite-for-modern-static-websites" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2025/11/24/11ty-and-vite-for-modern-static-websites" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

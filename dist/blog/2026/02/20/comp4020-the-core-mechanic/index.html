@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>The road to COMP4020: the core mechanic | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="This post is part of a series I'm writing as I develop COMP4020/8020: Rapid Prototyping for the Web. See all posts in the series. Game designers talk about…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2026/02/20/comp4020-the-core-mechanic/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="The road to COMP4020: the core mechanic"><meta property="og:description" content="This post is part of a series I'm writing as I develop COMP4020/8020: Rapid Prototyping for the Web. See all posts in the series. Game designers talk about…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="The road to COMP4020: the core mechanic"><meta name="twitter:description" content="This post is part of a series I'm writing as I develop COMP4020/8020: Rapid Prototyping for the Web. See all posts in the series. Game designers talk about…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-20-comp4020-the-core-mechanic"><!-- Citation metadata --><meta name="citation_title" content="The road to COMP4020: the core mechanic"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2026-02-20"><meta name="citation_public_url" content="https://benswift.me/blog/2026/02/20/comp4020-the-core-mechanic/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">The road to COMP4020: the core mechanic</h1> <p class="post-date">20 Feb 26</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/comp4020/" class="tag" data-astro-cid-lga65v7i>comp4020</a><a href="/blog/tag/teaching/" class="tag" data-astro-cid-lga65v7i>teaching</a></p>  <p>::: info</p>
+<p>This post is part of a series I’m writing as I develop
+<a href="/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web">COMP4020/8020: Rapid Prototyping for the Web</a>.
+See <a href="/blog/tag/comp4020">all posts in the series</a>.</p>
+<p>:::</p>
+<p>Game designers talk about “the core mechanic”---the one repeating loop that
+players engage with over and over, the thing that has to feel <em>right</em> or nothing
+else matters. In COMP4020, (the plan is) that loop is the weekly studio session.</p>
+<h2 id="the-loop">The loop</h2>
+<p>Each week (apart from the first and the last) follows the same cycle. There’s a
+lecture and office hours and the usual stuff as well, but this is the heart of
+the course:</p>
+<ol>
+<li>students receive a <strong>provocation</strong>---a brief, open-ended prompt that they
+respond to by building a working web-based prototype, due before their next
+studio session</li>
+<li>a set of automated CI smoke checks verify that each prototype basically works
+(does it 200 OK on a few pre-agreed routes? does the build pass? whatever
+makes sense for that stage of the course)</li>
+<li>in the studio session itself, students interact with each other’s prototypes,
+followed by a tutor-facilitated feedback session covering the prototype
+itself, the agentic development process behind it, and what the student was
+going for in light of the provocation</li>
+</ol>
+<p>Provocation, prototype, feedback; repeat for ten weeks.</p>
+<h2 id="the-art-school-model">The art-school model</h2>
+<p>This is basically an
+<a href="https://en.wikipedia.org/wiki/Critique#Art_and_design">art-school crit</a> adapted
+for software. Students bring their work-in-progress, the group engages with it,
+and then there’s a structured conversation about what’s working, what isn’t, and
+why. It’s a model that privileges <em>making</em> over <em>talking about making</em>, and it
+treats the artefact---the actual running prototype---as the centre of the
+discussion.</p>
+<p>I’ve run this kind of studio model before, in the <strong>ANU Laptop Ensemble</strong> course
+(which evolved into
+<a href="https://programsandcourses.anu.edu.au/2026/course/COMP4350">Sound and Music Computing</a>
+under the awesome <a href="https://charlesmartin.au/">Charles Martin</a>). In that course,
+students brought their sonic creations each week, performed them for each other,
+and gave feedback in a facilitated session, which included remixing and building
+upon all the pre-prepared submissions. The parallels are pretty direct---swap
+“musical instrument” for “web prototype” and “sonic palette” for “agentic
+workflow” and you’re most of the way there.</p>
+<p>The model can be intimidating at first. From week two onwards, students are
+simultaneously showing their own work-in-progress <em>and</em> giving feedback on
+others’. But COMP4020 will have later-year students, and with careful
+facilitation it I reckon it’ll work really well. The awkwardness fades fast, and
+what replaces it is a genuine community of practice---people who share a
+vocabulary, who’ve seen each other’s failures and successes, and who can have
+informed conversations about what “good” looks like (because that’s the key
+question in this type of agentic software development course).</p>
+<h2 id="studio-groups">Studio groups</h2>
+<p>Each studio group will have around 20 students, led by an experienced
+tutor.<sup><a href="#user-content-fn-tutor" id="user-content-fnref-tutor" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup> The tutor’s job isn’t just to run the session---they’re the one
+doing the facilitation that makes the whole thing work. They need to know when
+to push, when to let a conversation breathe, and when to redirect a critique
+that’s veering into unhelpful territory.</p>
+<p>There’ll also be a small, marked-in-class component assessed by the tutor each
+week. Nothing worth a huge amount---just enough so that students have skin in
+the game. The point isn’t to create anxiety; it’s to create <em>investment</em>. If you
+know you’re going to demo your work and discuss your process, you’ll actually do
+the work (a point which I’ve seen successfully validated across several years of
+Laptop Ensemble courses). And if you’re going to give feedback to someone else,
+you’ll engage with their prototype properly rather than just clicking through
+it. And in general our students are cool and nice and can be trusted not to be
+arseholes to each other.</p>
+<h2 id="process-and-product">Process <em>and</em> product</h2>
+<p>One thing I want to emphasise: the feedback covers both the prototype (the
+product) and the agentic development process that produced it. This maps onto
+the week’s lecture content, where students learn about different aspects of
+working with LLM agents for software development.</p>
+<p>So the studio session isn’t just “does your app work?”---it’s “how did you get
+here, what did you try, what did the agent do well, where did you have to
+intervene, what infrastructure/harness did you need to build around it, and what
+would you do differently?” The goal is for students to develop a sophisticated,
+critical understanding of agentic software development through repeated practice
+and reflection, not just through reading about it.</p>
+<p>The hope is that over these weeks the class collectively builds a shared
+understanding of what good agentic software development looks like---both in
+terms of the process and the resulting prototypes.</p>
+<h2 id="some-provocations-im-tossing-around">Some provocations I’m tossing around</h2>
+<p>The course doesn’t start until July, so I’ve got some time to flesh this out.
+And I want these to be fun/thought-provoking. We have other (great!) courses for
+building viable startups and software businesses; part of the point (and
+opportunity) here is for students to do and make stuff that doesn’t make sense
+in a shark-tank-style business context.</p>
+<p>Here are some ideas I’ve had. Honestly some of them I’m super excited about
+while others are pretty… meh.</p>
+<ul>
+<li>
+<p>build a blog (kindof boring, but might be the first one so they can use that
+for the rest of the course to share their reflective thoughts)</p>
+</li>
+<li>
+<p>pick an existing project and re-create it with a different tech stack (e.g.
+take a React app and re-create it as faithfully as possible in Vue)</p>
+</li>
+<li>
+<p>use a different students’ previous submission as a starting port, pick a new
+feature to add and add it</p>
+</li>
+<li>
+<p>do something in the browser that Tim Berners Lee would disapprove of</p>
+</li>
+<li>
+<p>make a js/ts library with doco and how-to guides for both LLMs and humans</p>
+</li>
+<li>
+<p>build a thing (any thing) and then tell the story of it’s development by
+dramatising the git history in the style of your favourite Hollywood director</p>
+</li>
+<li>
+<p>make and present a bunch of (code-based) visual identity elements, e.g. a
+brand identity and marketing website for a fictional product of your own
+invention</p>
+</li>
+<li>
+<p>create a prompt to make a simple html page which will be judged Elo-style
+against a rubric vs all others (we can then one-shot them in class and do the
+comparisons)</p>
+</li>
+<li>
+<p>build a website for a nightmare client, and develop an agentic workflow to
+ameliorate the difficulty of dealing with them somehow</p>
+</li>
+<li>
+<p>write a spec for evaluating a web protytype with an LLM</p>
+</li>
+<li>
+<p>use oblique strategies to implement a static website</p>
+</li>
+<li>
+<p>describe the uni system that you hate dealing with the most, and build a
+prototype for a replacement system that’s just heaps more awesome</p>
+</li>
+<li>
+<p>write up a design brief for a simple website that you think is LLM/agent-proof
+(i.e. for which Claude Code wouldn’t be useful at all)</p>
+</li>
+<li>
+<p>pick one of the crazier “agentic workflows” you can find online (e.g.
+<a href="https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04">Gas Town</a>)
+and commit to it for a week to build something, then write up a blog post
+about it</p>
+</li>
+<li>
+<p>create the website for a public awareness campaign about the dangers of
+falling in love with chatbots</p>
+</li>
+<li>
+<p>create an online resource pack for an offline activity of your choosing</p>
+</li>
+<li>
+<p>create a datavis website for a dataset that you think should be better
+known/understood</p>
+</li>
+</ul>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-tutor">
+<p>“Tutor” in the Australian university sense---usually a PhD student who leads
+small-group teaching sessions. <a href="#user-content-fnref-tutor" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2026comp4020TheCoreMechanic,
+  author = {Ben Swift},
+  title = {The road to COMP4020: the core mechanic},
+  url = {https://benswift.me/blog/2026/02/20/comp4020-the-core-mechanic/},
+  year = {2026},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-20-comp4020-the-core-mechanic},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2026comp4020TheCoreMechanic,
+  author = {Ben Swift},
+  title = {The road to COMP4020: the core mechanic},
+  url = {https://benswift.me/blog/2026/02/20/comp4020-the-core-mechanic/},
+  year = {2026},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-20-comp4020-the-core-mechanic},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2026/02/20/comp4020-the-core-mechanic" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2026/02/20/comp4020-the-core-mechanic" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

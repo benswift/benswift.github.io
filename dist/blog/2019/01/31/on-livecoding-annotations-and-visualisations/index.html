@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>On livecoding annotations and visualisations | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="I've just finished reading Charlie Roberts' interactive web essay on annotations and visualisations for live code. If you haven't read it, go do that now---and…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="On livecoding annotations and visualisations"><meta property="og:description" content="I've just finished reading Charlie Roberts' interactive web essay on annotations and visualisations for live code. If you haven't read it, go do that now---and…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="On livecoding annotations and visualisations"><meta name="twitter:description" content="I've just finished reading Charlie Roberts' interactive web essay on annotations and visualisations for live code. If you haven't read it, go do that now---and…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-01-31-on-livecoding-annotations-and-visualisations"><!-- Citation metadata --><meta name="citation_title" content="On livecoding annotations and visualisations"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2019-01-31"><meta name="citation_public_url" content="https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">On livecoding annotations and visualisations</h1> <p class="post-date">31 Jan 19</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/livecoding/" class="tag" data-astro-cid-lga65v7i>livecoding</a></p>  <p>I’ve just finished reading Charlie Roberts’
+<a href="https://charlieroberts.github.io/annotationsAndVisualizations/">interactive web essay on annotations and visualisations for live code</a>.
+If you haven’t read it, go do that now---and make sure you have some
+speakers/headphones to listen to the code examples, because it would be a real
+shame to read it without watching/listening to his ideas in action. All the code
+samples (with the visual annotations) are live-editable, both running “whole
+blocks” and re-evaluating individual expressions with <code>ctrl+enter</code>.</p>
+<p>The essay lays out some guiding principles:</p>
+<blockquote>
+<p>There are three principles that guide the design of the presented annotations
+and visualizations.</p>
+<ol>
+<li>If a value changes over time (typically related to musical progression or
+signal processing), display its current state, either by adding a
+visualization / annotation or by modifying the source code to reflect the
+current value.</li>
+<li>Make annotations and visualizations as proximal as possible to the code
+fragment responsible for generating the data they are representing.</li>
+<li>In addition to displaying when values change, whenever possible also
+provide some indication of when a value is being read, in particular when
+there is a direct affect on musical / sonic output.</li>
+</ol>
+</blockquote>
+<p>It then goes on to show some example visualisation in
+<a href="https://gibberwocky.cc/">gibberwocky</a>, both in an “all in” demo and then in
+bite-sized listings which show off the different specific ideas. In general, I
+really like the ideas, and it’s something Andrew Sorensen and I have written
+about before in our paper
+<a href="/research#swiftVisualCodeAnnotations2013">Visual Code Annotations for Cyberphysical Programming</a>
+(2013) in the <em>1st International Workshop on Live Programming (LIVE)</em> (it’s
+reference #4 in the essay). I’ll refer to this a bit in this post, so let’s call
+it “the LIVE paper”.</p>
+<p>I also think that the three points listed above are pretty solid, especially in
+a multimedia livecoding context (maybe even in a broader context). One thing I
+like about the visual annotations provided is that they’re mostly ASCII (or
+ASCII-ish). This is not so important when deploying them in the web browser
+(since you can do so much fancy styling stuff with CSS &#x26; js these days) but it’s
+really important when dealing with… <em>ahem</em>, more venerable editors. I ended up
+having to use some unholy Emacs hacks with
+<a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Overlays.html">overlays</a>
+to get the original annotations discussed in the LIVE paper working.</p>
+<p>I think that displaying hidden state in comments is a good compromise, and
+avoids the need for fancy “extra-textual” overlays. Not that overlays aren’t
+sometimes useful, but there’s a lot you can show with inline <code>text-decoration</code>
+hacks and adding a few comments to provide ascii text to decorate (when it isn’t
+explicitly represented in the first place).</p>
+<h2 id="mixing-annotations-and-live-edits">Mixing annotations and live edits</h2>
+<p><strong>But</strong>, (you can probably tell that there was going to be a “but” somewhere)
+many of the cool annotations displayed don’t work while the code is being
+edited<sup><a href="#user-content-fn-broken" id="user-content-fnref-broken" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>. In some cases they actually break the code (try editing one of
+the <code>'x*ox*xo--x*x*o'</code> patterns while the code’s running---you’ll end up with
+new stuff in your pattern that you didn’t put there).</p>
+<p>The problem isn’t so obvious when all the code listings are fully-formed on page
+load, and you can just play them as is. But when you try and mess with the code
+then you’ll see what I mean (again, I really suggest that you try it---it’s
+super-cool being able to mess around with the live code in the browser).</p>
+<p>I feel this particularly keenly because I’m a clean-slate livecoder (as is
+Charlie), so I’m <em>always</em> moving through an incomplete code state until I get
+something which will even run. This isn’t just a problem for clean-slate
+livecoding, though---even tweaks to existing code which introduce “bad” code
+states (from the visualisation’s perspective) will cause these issues.</p>
+<p>We talked about this in the LIVE paper---the fact that there’s a distinction
+between the “state of the world” vs “state of the code”. This is a fundamental
+challenge for the sorts of inline code visualisation/annotations shown in the
+essay, because it’s using the <strong>code</strong> as the “raw material” for displaying
+information about the <strong>world</strong> (beat/timing and other “hidden variables”, audio
+engine state and output, etc.).</p>
+<p>There are a few different ways to tackle this problem:</p>
+<ol>
+<li>mark some annotations as “safe” for code being edited, and some “unsafe”</li>
+<li>when code is being edited, turn off all annotations (or at least for that
+expression)</li>
+<li>some sort of “grand unified theory” of the delta between the current code
+state and the current execution state, and reconcile these to provide a
+maximal set of acceptable visualisations (this approach includes a
+<a href="https://coq.inria.fr/">coq</a> program to formally verify that you’re doing
+everything right)</li>
+</ol>
+<p>I think the pragmatic choice is #2, as long as the “disabled edits” section is
+kept as small as possible. It’s still going to be a pain, though, because when
+I’m livecoding I’m tweaking stuff all the time, so it’s likely that a lot of the
+code will spend a lot of the time with the visualisations disabled.</p>
+<p>I’ll leave #3 up to people smarter than me 😁 (although perhaps there are
+heuristics which could do a decent job).</p>
+<p>Finally, I can identify with Charlie when he writes:</p>
+<blockquote>
+<p>But, in the end, the feedback provided by these annotations and visualizations
+have become a critical part of my live coding practice.</p>
+</blockquote>
+<p>I get this---in my experience (when I’ve had even more limited annotations than
+the ones he shows in the essay) are just as much for my benefit as the audience.
+Livecoding is hard, and any extra information you can get about what’s going on
+with your code is super helpful.</p>
+<p>In principle visual code annotations can be even more useful to the livecoder
+because they allow her to “audition” algorithmic changes to the code
+without<sup><a href="#user-content-fn-feedback" id="user-content-fnref-feedback" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup> actually eval-ing the code and changing the music. Here’s an
+example from the essay:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="js"><code><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Euclid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">9</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">16</span><span style="color:#24292E;--shiki-dark:#E1E4E8">); </span><span style="color:#6A737D;--shiki-dark:#6A737D">/* 1010110101011010 */</span></span></code></pre>
+<p>I might not always know what the <code>9,6</code> euclidean rhythm is, but I’m by now
+fairly used to looking at <code>10100010</code> sequences and “hearing” the rhythm in my
+head. I could poke around with the parameters in a live set, exploring the
+parameter space (and thinking through the effect it’ll have on the music) and
+then only evaluating the code when I’m satisfied. That’s super powerful---the
+equivalent of the DJ cueing the next track with one can on their ear, and one
+ear in the club---something which I don’t have currently in my livecoding setup
+(although others might).</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>You can probably tell that I think there’s a productive research agenda
+here---and I hope Charlie continues with it. I hope to help out myself, too. I
+guess my main point is just to shout from the rooftops:</p>
+<blockquote>
+<p>any code visualisation/annotation techniques must be robust for <strong>code which
+is currently being edited</strong></p>
+</blockquote>
+<p>I’m not just talking about technical issues, either; obviously any
+demo/prototype is going to have those, but they’re fixable. I think there are
+deeper issues with trying to use <em>live</em> text as both the description of program
+behaviour and as a “view” on the hidden state of the program.</p>
+<p>Anyway, this is just a blog post, so I’m off the hook with regard to rigour,
+accountability and just general good scholarship, right 😜</p>
+<h2 id="addendum-thoughts-on-web-publishing">Addendum: thoughts on web publishing</h2>
+<p>I love that this essay/paper is published online---the interactive examples are
+crucial to getting the point across. I know that some conferences &#x26; journals
+these days allow html submission (nicer for reading on mobile, anyway) and other
+multimedia artefacts (audio/video recordings) but it’s still hard to get
+traction for this sort of rich, interactive in-browser work. The fact that at
+the end Charlie has to say:</p>
+<blockquote>
+<p>If you’re going to cite this website in an academic paper, please consider
+also citing either reference #1 or reference #7 given above; citations of such
+papers count more in academia than citations of a website. Plus, there’s
+further information in them not covered in this essay. Thank you!</p>
+</blockquote>
+<p>Oh well. Mad props to Charlie for putting this out there for comment and
+discussion, and hopefully there are a new generation of publications<sup><a href="#user-content-fn-distill" id="user-content-fnref-distill" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>
+where this stuff can be front-and-centre, not just a weird “supplemental web
+materials” section to a traditional pdf.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-broken">
+<p>Charlie, if I’m doing it wrong, please let me know :) <a href="#user-content-fnref-broken" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-feedback">
+<p>Yes, I know that the real-time feedback of hearing the sound is crucial, and
+I’m not for a second saying that we do away with it, but there are some
+situations where I want to check what the result of an algorithmic/parameter
+change might be without inflicting it on the audience. <a href="#user-content-fnref-feedback" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-distill">
+<p><a href="https://distill.pub/">Distill</a> is great, but it’s pretty DL/AI-focussed.
+The livecoding community needs something similar (although it does privilege
+livecoding environments which work in the brower, so that’s not ideal
+either. Hmm.) <a href="#user-content-fnref-distill" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2019onLivecodingAnnotationsAndVisualisations,
+  author = {Ben Swift},
+  title = {On livecoding annotations and visualisations},
+  url = {https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/},
+  year = {2019},
+  month = {01},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-01-31-on-livecoding-annotations-and-visualisations},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2019onLivecodingAnnotationsAndVisualisations,
+  author = {Ben Swift},
+  title = {On livecoding annotations and visualisations},
+  url = {https://benswift.me/blog/2019/01/31/on-livecoding-annotations-and-visualisations/},
+  year = {2019},
+  month = {01},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-01-31-on-livecoding-annotations-and-visualisations},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2019/01/31/on-livecoding-annotations-and-visualisations" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2019/01/31/on-livecoding-annotations-and-visualisations" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

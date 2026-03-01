@@ -1,0 +1,32 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import TagList from "../components/TagList.astro"
+import CitePost from "../components/CitePost.astro"
+import SiteFooter from "../components/SiteFooter.astro"
+import { formatDate, parseDate } from "../utils/date"
+
+interface Props {
+  title: string
+  date: string
+  tags: string[]
+  description?: string
+  image?: string
+  atUri?: string
+  slug: string
+  relativePath: string
+}
+
+const { title, date, tags, description, image, atUri, slug, relativePath } = Astro.props
+
+const postDate = formatDate(parseDate(date), true)
+const postUrl = `https://benswift.me${Astro.url.pathname}`
+---
+
+<BaseLayout title={title} description={description} image={image} isPost={true} date={date} atUri={atUri}>
+  <h1 class="page-title">{title}</h1>
+  <p class="post-date">{postDate}</p>
+  <TagList tags={tags} />
+  <slot />
+  <CitePost title={title} date={date} slug={slug} url={postUrl} atUri={atUri} />
+  <SiteFooter relativePath={relativePath} />
+</BaseLayout>

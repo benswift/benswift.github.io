@@ -1,0 +1,716 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>Xinyu&#39;s Extempore tutorials | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="import Picture from '../../../../src/components/Picture.astro' These tutorials are part of Xinyu Hou's research project to create a set of PRIMM-style…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="Xinyu's Extempore tutorials"><meta property="og:description" content="import Picture from '../../../../src/components/Picture.astro' These tutorials are part of Xinyu Hou's research project to create a set of PRIMM-style…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="Xinyu's Extempore tutorials"><meta name="twitter:description" content="import Picture from '../../../../src/components/Picture.astro' These tutorials are part of Xinyu Hou's research project to create a set of PRIMM-style…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-09-18-xinyus-extempore-tutorials"><!-- Citation metadata --><meta name="citation_title" content="Xinyu's Extempore tutorials"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2019-09-18"><meta name="citation_public_url" content="https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+</style><style>.picture-container[data-astro-cid-s52xqo7h]{position:relative;margin:1rem 0}.picture-container[data-astro-cid-s52xqo7h] img[data-astro-cid-s52xqo7h]{width:100%;height:auto;display:block}.picture-credit[data-astro-cid-s52xqo7h]{position:absolute;bottom:1em;right:1em;color:#fff;font-weight:200;font-size:.875rem;text-shadow:0 1px 2px rgba(0,0,0,.5)}.picture-credit[data-astro-cid-s52xqo7h]:before{content:"photo: "}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">Xinyu&#39;s Extempore tutorials</h1> <p class="post-date">18 Sept 19</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/livecoding/" class="tag" data-astro-cid-lga65v7i>livecoding</a><a href="/blog/tag/extempore/" class="tag" data-astro-cid-lga65v7i>extempore</a></p>  <p>These tutorials are part of Xinyu Hou’s research project to create a set of
+<a href="https://blogs.kcl.ac.uk/cser/2017/09/01/primm-a-structured-approach-to-teaching-programming/">PRIMM</a>-style
+tutorials for learning to make sound/music in Extempore.</p>
+<p>They’re currently a work-in-progress---when they’re done they’ll be hosted on
+the main Extempore docs site, but for now they’re here on my blog.</p>
+<p>[[toc]]</p>
+<h2 id="preliminaries">Preliminaries</h2>
+<h3 id="setting-up-environment">Setting Up Environment</h3>
+<h4 id="installing-extempore">Installing Extempore</h4>
+<p>Install Extempore by following the steps
+<a href="https://extemporelang.github.io/docs/overview/install/">here</a>.</p>
+<h4 id="installing-vscode">Installing VSCode</h4>
+<p>Install VSCode (a text editor) by following the steps
+<a href="https://extemporelang.github.io/docs/overview/editor-support/">here</a>.</p>
+<p>::: tip</p>
+<p>If you want to use a different text editor,
+<a href="https://extemporelang.github.io/docs/overview/editor-support/">there are other options as well</a>.</p>
+<p>:::</p>
+<h3 id="evaluating-extempore-code">Evaluating Extempore Code</h3>
+<p>Evaluate the extempore code on VSCode by following the steps below:</p>
+<ol>
+<li>
+<p>Start VSCode</p>
+</li>
+<li>
+<p>Go to <strong>File</strong> -&gt; <strong>Open</strong>, then open your Extempore directory.</p>
+</li>
+<li>
+<p>In the VSCode built-in terminal window (<strong>ctrl+`</strong>) move into the extempore
+directory, and start extempore (type <code>./extempore</code> and hit return).</p>
+</li>
+<li>
+<p>Open or create an Extempore file (<strong>.xtm</strong> file)</p>
+</li>
+<li>
+<p>Connect to the Extempore process: you can do this in VSCode through the
+“<strong>command palette</strong>”, which can be brought up with <strong>ctrl+Shift+P</strong> on
+Windows/Linux or <strong>cmd+Shift+P</strong> on macOS.</p>
+<figure class="picture-container" data-astro-cid-s52xqo7h> <img src="/assets/images/xinyu-tutorials/TO3.webp" alt="the command palette" loading="lazy" data-astro-cid-s52xqo7h>  </figure> 
+</li>
+<li>
+<p>Type <strong>Extempore Connect</strong> in the opening command palette, the default host
+and port arguments will be <code>localhost</code> and <code>7099</code> respectively.</p>
+</li>
+</ol>
+<p>::: tip To evaluate Extempore code</p>
+<p>Move the cursor into the code you want to evaluate and hit <strong>cmd+enter</strong> on
+macOS or <strong>ctrl+enter</strong> on Windows/Linux.</p>
+<p>:::</p>
+<p>What you might see in the terminal window when you evaluate extempore code:</p>
+<figure class="picture-container" data-astro-cid-s52xqo7h> <img src="/assets/images/xinyu-tutorials/TO4.webp" alt="Extempore log view" loading="lazy" data-astro-cid-s52xqo7h>  </figure> 
+<blockquote>
+<p>Note: you can use <strong>ctrl+c</strong> in the terminal where extempore is running to
+kill the extempore process whenever you want.</p>
+</blockquote>
+<h2 id="tutorial-one">Tutorial One</h2>
+<h3 id="predict-and-run">Predict and Run</h3>
+<p>Work in pairs or small groups, look at the code below and predict what does this
+code do:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-val</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> my-pi</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> float</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3.1415</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></code></pre>
+<blockquote>
+<p>Note: in Extempore, we generally use <strong>kebab-case</strong> case style <code>my-pi</code> instead
+of using <strong>camelCase</strong> <code>myPi</code> or <strong>PascalCase</strong> <code>MyPi</code>or <strong>snake_case</strong> &gt;
+<code>my_pi</code>.</p>
+</blockquote>
+<p>Run the code above. Does the compiler print anything in the log? What does the
+printed message mean?</p>
+<figure class="picture-container" data-astro-cid-s52xqo7h> <img src="/assets/images/xinyu-tutorials/my-pi.webp" alt="my-pi log view" loading="lazy" data-astro-cid-s52xqo7h>  </figure> 
+<p>Now, it’s time to produce a sound in Extempore!</p>
+<p>Work in pairs or small groups again, look at the code below and predict/guess
+what might happen when it runs:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-func</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:DSP</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (in time chan dat)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ((amplitude </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          (frequency </span><span style="color:#005CC5;--shiki-dark:#79B8FF">440.0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          (two-pi (* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">2.0</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> my-pi)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      (* amplitude</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">         (sin (/ (* frequency</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                    two-pi</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                    (convert time)) SRf))))))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:set!</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> dsp)</span></span></code></pre>
+<p>Does it work as predicted?</p>
+<blockquote>
+<p>Hint: we set up the xtlang callback:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-func</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:DSP</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (in time chan dat)</span></span>
+<span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    0.0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<ul>
+<li><strong>in<div></div></strong> sample from input device</li>
+<li><strong>time<div></div></strong> sample number</li>
+<li><strong>chan<div></div></strong> audio channel</li>
+<li><strong>dat<div></div></strong> user data</li>
+<li><strong><code>&lt;return&gt;</code><div></div></strong> sample at given channel and time</li>
+<li>sample value range from -1.0 to 1.0</li>
+</ul>
+<p>Note: In Extempore, we represent the mathematical operation _2 _ PI* as <code>(* 2 PI)</code></p>
+<p>Note: <code>SRf</code> refers to the current sampling frequency</p>
+<p>Note: The form of a <code>let</code> statement is as follows:
+<code>(let ((var_name_1 var_value_1) ... (var_n val_n)) (&lt;body&gt;))</code></p>
+<p>Note: <code>convert</code> allows us to make a <code>SAMPLE</code> typed value from <code>time</code>.</p>
+<p>Note: We only can set <code>dsp</code> function once, but then redefine it as many times
+as we want.</p>
+</blockquote>
+<p>What about white noise in Extempore?</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-func</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:DSP</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (in time chan data)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.2</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">random</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))))</span></span></code></pre>
+<p>Can you explain what happened here?</p>
+<h3 id="investigate">Investigate</h3>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
+<ol>
+<li>In what order did you compile (execute) the code in this program?</li>
+<li>What happened after you evaluated each “chunk” of Extempore code?</li>
+<li>Can you guess what would happen if you compile the code in a different order?</li>
+</ol>
+<blockquote>
+<p>Note: you can add
+<a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a>
+(starting with <strong>;;</strong>) to the program to make some notes for you to understand
+the code. The comments are generally ignored by compilers and interpreters.</p>
+</blockquote>
+<h3 id="modify">Modify</h3>
+<ol>
+<li>Can you play a sound with a frequency of 460.0?</li>
+<li>Can you make the sound louder by just changing the code? (don’t use your
+volume buttons!)</li>
+</ol>
+<h3 id="make">Make</h3>
+<p>Now, let’s move <code>amplitude</code>, <code>frequency</code> and <code>two-pi</code> outside of lambda to make
+our <code>dsp</code> function controllable outside as below:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-func</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:DSP</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ((amplitude </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (frequency </span><span style="color:#005CC5;--shiki-dark:#79B8FF">440.0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (two-pi (* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">2.0</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> my-pi)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (in time chan dat)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      (* amplitude</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">         (sin (/ (* frequency</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                    two-pi</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                    (convert time)) SRf))))))</span></span></code></pre>
+<p>Can you play a random frequency sound every time when you redefine the <code>dsp</code>
+function?</p>
+<blockquote>
+<p>Note: You could use <code>(random 440.0 700.0)</code> to randomly generate a value
+between 440.0 and 700.0</p>
+</blockquote>
+<p>Compare to the <code>(random)</code> in the white noise part above, does the <code>(random)</code>
+work differently here? Can you explain how <code>(random)</code> can be either for
+“control” (e.g. see the above sine wave part) or for “signal” (e.g. see the
+white noise part)?</p>
+<h2 id="tutorial-two">Tutorial Two</h2>
+<h3 id="predict-and-run-1">Predict and Run</h3>
+<p>Work in pairs or small groups, look at the code below and predict what might
+happen when it runs.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; load the instruments file</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">sys:load</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &quot;libs/core/instruments.xtm&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; define an fmsynth using the built-in components</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">make-instrument</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> fmsynth fmsynth)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; add the instrument to the DSP output sink closure</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-func</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:DSP</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (in time chan dat)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (fmsynth in time chan dat)))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:set!</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> dsp)</span></span></code></pre>
+<blockquote>
+<p>Note: The dsp function takes as input:</p>
+<ul>
+<li><strong>in</strong>: the input audio sample, e.g. from the microphone.</li>
+<li><strong>time</strong>: an <code>i64</code> representing the time.</li>
+<li><strong>chan</strong>: another <code>i64</code> which represents the channel index (0 for L, 1 for
+R, etc.). Extempore can handle any number of channels.</li>
+<li><strong>data</strong>: this is a pointer to a <code>SAMPLE</code> type (which is float by default),
+and can be used to pass arbitrary data into the dsp function.</li>
+</ul>
+</blockquote>
+<p>Think about what is the <code>i64</code> type in the above Note?</p>
+<blockquote>
+<p>Primitive types in Extempore:</p>
+<p>Integers:</p>
+<ul>
+<li><code>i1</code>: (boolean) uses 1 bit.</li>
+<li><code>i8</code>: (char) uses 8 bits (1 byte), which could store 2^8 = 256 unique
+integer values, -128 ~ 127.</li>
+<li><code>i32</code>: uses 32 bits, which could store 2^32 uniquew integer values, -2^31 ~
+(2^31 - 1).</li>
+<li><code>i64</code>: (default) uses 64 bits, which could store 2^63 uniquew integer
+values, -2^63 ~ (2^63 - 1).</li>
+</ul>
+<p>Floats:</p>
+<ul>
+<li><code>float</code>: a single precision (32 bit) floating-point data type.</li>
+<li><code>double</code>: (default), a double precision (64 bit) floating-point data type.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Moreover, for your interests:</p>
+<p><a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)">Pointer</a>
+types:</p>
+<ul>
+<li><code>double*</code>: a pointer to a double.</li>
+<li><code>i64*</code>: a pointer to a 64-bit integer.</li>
+<li><code>i64**</code>: a pointer to a pointer to a 64-bit integer.</li>
+</ul>
+</blockquote>
+<p>Now, we could play a note by using the fmsynth instrument that we just defined:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; play a note on our fmsynth</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) fmsynth (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">random</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 60</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 80</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *second*)</span></span></code></pre>
+<blockquote>
+<p>Note: the parameters for <code>play-note</code> are
+<code>play-note &lt;start-time&gt; &lt;instrument&gt; &lt;note-frequency&gt; &lt;note-duration&gt;</code></p>
+</blockquote>
+<p>What would happend if you play the note for the second time (or multiple times)?
+Why is the note different?</p>
+<p>It’s the time to make a loop in Extempore:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; make a loop</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> my-loop</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note time fmsynth (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">random</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 60</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 80</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *second*)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">callback</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ time *second*) &#39;my-loop (+ time *second*))))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(my-loop (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<p>We make a <code>loop</code> function above, but how does the <code>loop</code> work? let’s see a
+simpler example:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; let&#39;s see a simpler loop example</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> test-loop</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ()</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">   (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">println</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &quot;I&#39;m looping...&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">   (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">callback</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">10000</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *second*) &#39;test-loop ()))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(test-loop())</span></span></code></pre>
+<blockquote>
+<p>Note: the parameters for <code>callback</code> are <code>callback &lt;time&gt; &lt;func&gt; &lt;args&gt;</code></p>
+</blockquote>
+<p>Can you predict what will happen when you run the <code>test-loop</code> function? Run the
+code to check your thoughts.</p>
+<blockquote>
+<p>Note: do not forget to check your terminal panel.</p>
+</blockquote>
+<h3 id="investigate-1">Investigate</h3>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
+<ol>
+<li>What does <code>my-loop</code> do?</li>
+<li>What does the <code>callback</code> in the loop do?</li>
+<li>What is the difference between Scheme lambda expression and xtlang bind-func
+expression? More information click
+<a href="https://digego.github.io/extempore/scheme-xtlang-interop.html">here</a>.</li>
+<li>What is the difference between using <strong>now</strong> versus using <strong>time</strong>? More
+information click <a href="https://digego.github.io/extempore/time.html">here</a>.</li>
+</ol>
+<blockquote>
+<p>Note: you can add
+<a href="https://en.wikipedia.org/wiki/Comment_(computer_programming)">comments</a>
+(starting with <code>;;</code>) to the program to make some notes for you to understand
+the code.</p>
+</blockquote>
+<h3 id="modify-1">Modify</h3>
+<p>Work in pairs or in small groups, can you modify the above code and make a loop
+with random notes lengths and random notes frequencies.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; hint</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; make a loop with random note length and random note</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> diff-length</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ((note-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">length</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">random</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> &#39;(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.5</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1.0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1.5</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 2.0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          (pitch (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">random</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> &#39;(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">60</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 63</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 65</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 68</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 70</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 73</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 75</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 78</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 80</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note time fmsynth pitch </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (* *second* note-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">length</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">callback</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ time (* note-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">length</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *second*)) &#39;diff-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">length</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ time (* note-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">length</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *second*)))))))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(diff-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">length</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<h3 id="make-1">Make</h3>
+<p>Can you make a chord (or play different notes at the same time) function by
+using similar ideas to the previous program?</p>
+<h2 id="tutorial-three">Tutorial Three</h2>
+<h3 id="predict-and-run-2">Predict and Run</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; loop major scale</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> loop-white-keys((scale &#39;(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 4</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 5</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 7</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 9</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 11</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 12</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 14</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 16</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 17</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 19</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 21</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 23</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">           (time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (+ (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) time) synth (+ </span><span style="color:#005CC5;--shiki-dark:#79B8FF">60</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">car</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> scale)) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 4000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">not</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">null</span><span style="color:#24292E;--shiki-dark:#E1E4E8">? (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> scale)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      (loop-white-keys (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> scale) (+ time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">10000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; another loop for notes</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> loop-black-keys ((scale &#39;(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 6</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 8</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 10</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 13</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 15</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 18</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 20</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 22</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">           (time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (+ (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) time) synth (+ </span><span style="color:#005CC5;--shiki-dark:#79B8FF">60</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">car</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> scale)) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 4000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">not</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">null</span><span style="color:#24292E;--shiki-dark:#E1E4E8">? (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> scale)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      (loop-black-keys (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> scale) (+ time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">10000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))))</span></span></code></pre>
+<blockquote>
+<p>Note:</p>
+<ul>
+<li><code>car</code> return the first element of a list.</li>
+<li><code>cdr</code> return the rest of the elements in a list, that is, it returns the
+part of the list that follows the first item.</li>
+<li><code>if &lt;test&gt; &lt;consequent&gt; &lt;alternate&gt;</code></li>
+<li><a href="https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html">more conditionals syntax</a>.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Note: the syntax for <code>let</code> is: <code>let &lt;variable&gt; &lt;bindings&gt; &lt;body&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>Note: in the above examples, we used the named <code>let</code>. Therefore, the <code>&lt;body&gt;</code>
+could be repeatly executed by invoking the <code>let</code> procedure named by the
+<code>&lt;variable&gt;</code>.</p>
+</blockquote>
+<p>Can you predict what will happen? Then run the code to check your thoughts.</p>
+<p>Before you run the code above, do not forget to load the libraries, define and
+add an instrument <code>synth</code> to the <code>dsp</code> output sink closure:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; load the instruments file</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">sys:load</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &quot;libs/core/instruments.xtm&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">sys:load</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &quot;libs/core/pc_ivl.xtm&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; define a synth using the provided components</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">make-instrument</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> synth fmsynth)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; add the instrument to the DSP output sink closure</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-func</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:DSP</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (in time chan dat)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (synth in time chan dat)))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:set!</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> dsp)</span></span></code></pre>
+<p>Now, Let’s play a chord on a list of frequencies! Can you predict what will
+happen here:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; play a chord</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">map</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (p)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">       (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) synth p </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">     (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">list</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<blockquote>
+<p>Note: again, the parameters for <code>lambda</code> is: <code>lambda &lt;formals&gt; &lt;body&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>Note: here we have two methods to express a <code>list</code>: For example,
+<code>(list 72 76 79)</code> and <code>&#39;(72 76 79)</code>.</p>
+</blockquote>
+<p>Can you guess what does <code>map</code> do?</p>
+<p>Here is another method to play the same chord that we ran above:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; another method for play the same chord</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> play-a-chord</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time chord)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">for-each</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (p)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note time synth p </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              chord)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    ))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-a-chord (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) &#39;(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<p>Can you guess what will happen after running <code>play-a-chord</code>?</p>
+<p>How about more chords?</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; markov chord progression</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> my-progression</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time chords)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-a-chord time (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">car</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> chords))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> loop-chords</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> &#39;())</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">not</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">null</span><span style="color:#24292E;--shiki-dark:#E1E4E8">? (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> chords)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (set! loop-chords (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> chords))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (set! loop-chords &#39;((</span><span style="color:#005CC5;--shiki-dark:#79B8FF">72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">65</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">67</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 71</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 74</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">callback</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">40000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) &#39;my-progression (+ time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) loop-chords))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  )</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(my-progression (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) &#39;((</span><span style="color:#005CC5;--shiki-dark:#79B8FF">72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">65</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">67</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 71</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 74</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))</span></span></code></pre>
+<blockquote>
+<p>Note: the syntax for <code>set!</code> is <code>set! &lt;variable&gt; &lt;expression&gt;</code>, which could
+assign the <code>&lt;expression&gt;</code> to the <code>&lt;variable&gt;</code></p>
+</blockquote>
+<p>Run the code. Dose it work as you predicted?</p>
+<h3 id="investigate-2">Investigate</h3>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
+<ol>
+<li>
+<p>Currently, you have already seen <code>let</code>, <code>define</code> and <code>set!</code>. What are the
+differences between <code>let</code>, <code>define</code> and <code>set!</code>? E.g:</p>
+<ul>
+<li><code>set!</code> doesn’t define the variable, rather it is used to assign the
+variable a new value.</li>
+<li>The scope of variables defined by <code>let</code> are bound to the latter. <code>define</code>
+doesn’t surround the body with parentheses.</li>
+</ul>
+</li>
+<li>
+<p>Here is another method to play the same chord that we predicted and ran
+before:</p>
+</li>
+</ol>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; another method for play the same chord</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> play-a-chord</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time chord)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">for-each</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (p)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">                (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note time synth p </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              chord)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    ))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-a-chord (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) &#39;(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<p>Compare to the <code>map</code> one, can you find what is the difference between <code>map</code> and
+<code>for-each</code>?</p>
+<ul>
+<li>Evaluation order?</li>
+<li>Return?</li>
+</ul>
+<ol start="3">
+<li>We could use <code>do</code> to make a loop on playing the chord with the above
+<code>play-a-chord</code> method:</li>
+</ol>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; use do to loop the chord</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">do</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ((i </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ i </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    ((</span><span style="color:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> i </span><span style="color:#005CC5;--shiki-dark:#79B8FF">3000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) ())</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-a-chord (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) &#39;(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))</span></span></code></pre>
+<p>Compare to other <code>loop</code> or other iteration methods, can you find how does the
+<code>do</code> work here?</p>
+<blockquote>
+<p>Hint: the syntax of <code>do</code> is:</p>
+</blockquote>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">do</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ((</span><span style="color:#D73A49;--shiki-dark:#F97583">&lt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">variable1</span><span style="color:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="color:#D73A49;--shiki-dark:#F97583"> &lt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">init1</span><span style="color:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="color:#D73A49;--shiki-dark:#F97583"> &lt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">step1</span><span style="color:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) ...)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">&lt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">test</span><span style="color:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="color:#D73A49;--shiki-dark:#F97583"> &lt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">expression</span><span style="color:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ...)</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    &lt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">command</span><span style="color:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ...)</span></span></code></pre>
+<blockquote>
+<ul>
+<li>if the <code>&lt;test&gt;</code> result is <code>false</code>, then the sequence of <code>&lt;command&gt;</code> would be
+evaluated.</li>
+<li>if the <code>&lt;test&gt;</code> result is <code>true</code>, the sequence of <code>&lt;expression&gt;</code> would be
+evaluated from left to right, and the last <code>&lt;expression&gt;</code>’s values would be
+returned at the end.</li>
+<li>the <a href="https://en.wikipedia.org/wiki/Boolean_data_type">boolean data type</a> for
+understanding <code>true</code> and <code>false</code>.</li>
+</ul>
+</blockquote>
+<h3 id="modify-2">Modify</h3>
+<p>Now, can you please modify the <code>my-progression</code> function so that it could loop
+each chord for four times before going to the next chord?</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; hint</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; modified my-progression</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> my-progression-modify</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time chords n)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">let</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> loop ((loop-times </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      (</span><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> loop-times n)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          (display </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;stopped&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          (</span><span style="color:#D73A49;--shiki-dark:#F97583">begin</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-a-chord (+ time (* loop-times </span><span style="color:#005CC5;--shiki-dark:#79B8FF">44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)) (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">car</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> chords))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            (loop (+ loop-times </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))))</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">    ; (loop-n-times n (play-a-chord time (car chords)))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> loop-chords-modify</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> &#39;())</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">not</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">null</span><span style="color:#24292E;--shiki-dark:#E1E4E8">? (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> chords)))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (set! loop-chords-modify (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">cdr</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> chords))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (set! loop-chords-modify &#39;((</span><span style="color:#005CC5;--shiki-dark:#79B8FF">72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">65</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">67</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 71</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 74</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">callback</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ time (* n </span><span style="color:#005CC5;--shiki-dark:#79B8FF">40000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)) &#39;my-progression-modify (+ time (* n </span><span style="color:#005CC5;--shiki-dark:#79B8FF">44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)) loop-chords-modify n))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  )</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(my-progression-modify (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) &#39;((</span><span style="color:#005CC5;--shiki-dark:#79B8FF">72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 79</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 76</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">65</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 69</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 72</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">67</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 71</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 74</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">4</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></code></pre>
+<blockquote>
+<p>Note: here we used the <code>begin</code> to do the sequencing:
+<code>begin &lt;expression 1&gt; &lt;expression 2&gt; ...&lt;expression n&gt;</code></p>
+<ul>
+<li>the sequence of <code>&lt;expression i&gt;</code> will be evaluated sequentially from left to
+right.</li>
+<li><code>begin</code> will return the value of the last <code>&lt;expression n&gt;</code>.</li>
+</ul>
+</blockquote>
+<h3 id="make-2">Make</h3>
+<ol>
+<li>Based on the previous code, can you make some creative melody by yourself?</li>
+<li>Can you play your melody and the chords at the same time?</li>
+</ol>
+<h2 id="tutorial-four">Tutorial Four</h2>
+<h3 id="predict-and-run-3">Predict and Run</h3>
+<p>In this tutorial, we will learn how to do samplers in Extempore. Extempore
+provides a built-in sampler in <code>libs/external/instruments_ext.xtm</code>, so let’s
+load the libraries first:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; load the libs</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">sys:load</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &quot;libs/external/instruments_ext.xtm&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">sys:load</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &quot;libs/core/instruments.xtm&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></code></pre>
+<p>We are going to create a drum sampler, can you guess what is happening here:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; TODO</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; Set/Change the path of the subdirectory “OH” in your code.</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; In my computer it’s like:</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> drum-path</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &quot;/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; Load some wave files into drums sampler:</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;kick_OH_F_9.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-kick* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;snareStick_OH_F_9.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-side-stick* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;snare_OH_FF_9.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-snare* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;hihatClosed_OH_F_20.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-closed-hi-hat* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;hihatFoot_OH_MP_12.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-pedal-hi-hat* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;hihatOpen_OH_FF_6.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-open-hi-hat* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;loTom_OH_FF_8.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-low-floor-tom* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;hiTom_OH_FF_9.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-hi-floor-tom* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;crash1_OH_FF_6.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-crash* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;ride1_OH_FF_4.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-ride* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;china1_OH_FF_8.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-chinese* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;cowbell_FF_9.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-cowbell* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;bellchime_F_3.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-open-triangle* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(set-sampler-index drums (string-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">append</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drum-path </span><span style="color:#032F62;--shiki-dark:#9ECBFF">&quot;ride1Bell_OH_F_6.wav&quot;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) *gm-ride-bell* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span></code></pre>
+<p>Let’s look at the first row of <code>set-sampler-index</code>. Can you guess why do we need
+<code>*gm-kick*</code>? What does <code>string-append drum-path &quot;kick_OH_F_9.wav&quot;</code> do?</p>
+<blockquote>
+<p>Note: How to load samples (you can also find more information from
+<a href="https://digego.github.io/extempore/sampler.html">github</a>).</p>
+<ol>
+<li>Download the instrument samples from
+<a href="https://archive.org/download/SalamanderDrumkit/salamanderDrumkit.tar.bz2">Salamader Drumkit</a>.</li>
+<li>Unzip the samples and put them wherever you like on your computer.</li>
+<li>Set/Change the path of the subdirectory “OH” in your code. In my computer
+it’s like:
+<code>define drum-path &quot;/Users/apple/Downloads/COMP3740/salamanderDrumkit/OH/&quot;</code>.</li>
+</ol>
+</blockquote>
+<p>Before you run the code, do not forget to define and add an instrument <code>drums</code>
+to the <code>dsp</code> output sink closure, and set the <code>dsp</code> as well:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; define a sampler (called drums) using the default sampler note kernel and effects</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">make-instrument</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> drums sampler)</span></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; define a synth using the provided components</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">make-instrument</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> synth fmsynth)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; add the sampler to the dsp output callback</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">bind-func</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:DSP</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (in time chan dat)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (+ (synth in time chan dat)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">       (drums in time chan dat))))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(dsp</span><span style="color:#005CC5;--shiki-dark:#79B8FF">:set!</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> dsp)</span></span></code></pre>
+<p>Sounds could be played by calling the below instructions, the similar things as
+we did before:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; evaluate</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) drums *gm-open-triangle* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) drums *gm-snare* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">now</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) drums *gm-closed-hi-hat* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 44100</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></code></pre>
+<p>Can you predict what will happen after you run above three lines respectively?
+Then run the code to check your thoughts.</p>
+<hr/>
+<p>Now, a cool thing we will do is to define a <code>metronome</code> to evenly distribute our
+beats with respect to tempo changes.</p>
+<p>Can you predict what is happening here?</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; create a metronome starting at 120 bpm</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(define *metro1* (make-metro </span><span style="color:#005CC5;--shiki-dark:#79B8FF">120</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; beat loop along the metronome</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> drum-loop</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time duration drum)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">println</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> time duration)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (*metro1* time) drums drum </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (*metro1* &#39;dur duration))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">callback</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (*metro1* (+ time (* .</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> duration))) &#39;drum-loop (+ time duration)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              duration drum)))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(drum-loop (*metro1* &#39;get-beat) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *gm-hi-floor-tom*)</span></span></code></pre>
+<p>Let’s define another metronome <code>metronome2</code>:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; create another metronome starting at 120 bpm</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(define *metro2* (make-metro </span><span style="color:#005CC5;--shiki-dark:#79B8FF">120</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></code></pre>
+<p>Can you guess what will happen after you evaluate this <code>drum-loop-tempo-shift</code>?
+What does <code>println</code> will do?</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;; set tempo shift</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">define</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> drum-loop-tempo-shift</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (time duration drum)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (*metro2* &#39;set-tempo (+ </span><span style="color:#005CC5;--shiki-dark:#79B8FF">20</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">6</span><span style="color:#24292E;--shiki-dark:#E1E4E8">. (cos (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">modulo</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">9</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">println</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (+ </span><span style="color:#005CC5;--shiki-dark:#79B8FF">20</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (* </span><span style="color:#005CC5;--shiki-dark:#79B8FF">6</span><span style="color:#24292E;--shiki-dark:#E1E4E8">. (cos (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">modulo</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> time </span><span style="color:#005CC5;--shiki-dark:#79B8FF">9</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">play</span><span style="color:#24292E;--shiki-dark:#E1E4E8">-note (*metro2* time) drums drum </span><span style="color:#005CC5;--shiki-dark:#79B8FF">80</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (*metro2* &#39;dur duration))</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">callback</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (*metro2* (+ time (* .</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> duration))) &#39;drum-loop-tempo-shift (+ time duration)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">              (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">random</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">list</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0.5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)) drum)))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(drum-loop-tempo-shift (*metro2* &#39;get-beat) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.5</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *gm-cowbell*)</span></span></code></pre>
+<blockquote>
+<p>Note: <code>println</code> calls the polymorphic function <code>print</code> for each supplied
+argument, but <code>println</code> automatically provides both spaces and a carriage
+return.</p>
+</blockquote>
+<p>Run the code. Did it work as you predicted?</p>
+<h3 id="investigate-3">Investigate</h3>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
+<ol>
+<li>What does the function <code>make-metro</code> do?</li>
+<li>What does <code>*metro* &#39;get-beat</code> do?</li>
+<li>What does <code>*metro* &#39;dur</code> do?</li>
+<li>What does <code>*metro* set-tempo</code> do?</li>
+</ol>
+<h3 id="modify-3">Modify</h3>
+<p>Work in pairs or in small groups, work out the answers to the following
+questions:</p>
+<ol>
+<li>Can you load the piano samples as well?
+(<a href="https://download.linuxaudio.org/lau/SalamanderGrandPianoV2/SalamanderGrandPianoV2_44.1khz16bit.tar.bz2">Salamander piano</a>).</li>
+<li>Can you pay multiple drums with different tempo at the same time?</li>
+</ol>
+<pre class="astro-code astro-code-themes github-light github-dark" style="background-color:#fff;--shiki-dark-bg:#24292e;color:#24292e;--shiki-dark:#e1e4e8;overflow-x:auto" tabindex="0" data-language="xtlang"><code><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">;;hint</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(drum-loop (*metro1* &#39;get-beat) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *gm-hi-floor-tom*)</span></span>
+<span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(drum-loop (*metro1* &#39;get-beat) </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.3</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> *gm-open-triangle* )</span></span></code></pre>
+<h3 id="make-3">Make</h3>
+<p>Combine the knowledge that you learned before. Now you can use drums, synth,
+piano and metronome to create your own music.</p>
+<h2 id="going-further">Going further</h2>
+<p>As well as the
+<a href="https://extemporelang.github.io">Extempore documentation website</a>, the best
+place to start messing around is with more examples: e.g. the
+<code>examples/core/fmsynth.xtm</code> file in your Extempore folder.</p>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2019xinyusExtemporeTutorials,
+  author = {Ben Swift},
+  title = {Xinyu&#39;s Extempore tutorials},
+  url = {https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/},
+  year = {2019},
+  month = {09},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-09-18-xinyus-extempore-tutorials},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2019xinyusExtemporeTutorials,
+  author = {Ben Swift},
+  title = {Xinyu's Extempore tutorials},
+  url = {https://benswift.me/blog/2019/09/18/xinyus-extempore-tutorials/},
+  year = {2019},
+  month = {09},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2019-09-18-xinyus-extempore-tutorials},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2019/09/18/xinyus-extempore-tutorials" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2019/09/18/xinyus-extempore-tutorials" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

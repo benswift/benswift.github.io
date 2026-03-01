@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>AI Agents on (in?) the Atmosphere | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="I've been writing about agentic AI for a while now---from LLMs gaining the ability to act on the world, to what coding agents mean for how we think about code,…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2026/02/06/ai-agents-on-the-atmosphere/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="AI Agents on (in?) the Atmosphere"><meta property="og:description" content="I've been writing about agentic AI for a while now---from LLMs gaining the ability to act on the world, to what coding agents mean for how we think about code,…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="AI Agents on (in?) the Atmosphere"><meta name="twitter:description" content="I've been writing about agentic AI for a while now---from LLMs gaining the ability to act on the world, to what coding agents mean for how we think about code,…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-06-ai-agents-on-the-atmosphere"><!-- Citation metadata --><meta name="citation_title" content="AI Agents on (in?) the Atmosphere"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2026-02-06"><meta name="citation_public_url" content="https://benswift.me/blog/2026/02/06/ai-agents-on-the-atmosphere/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">AI Agents on (in?) the Atmosphere</h1> <p class="post-date">6 Feb 26</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/ai/" class="tag" data-astro-cid-lga65v7i>ai</a></p>  <p>I’ve been writing about agentic AI for a while now---from
+<a href="/blog/2025/07/17/agentic-ai-llms-with-stones">LLMs gaining the ability to act on the world</a>,
+to
+<a href="/blog/2025/12/23/coding-agents-and-the-plasticity-of-code">what coding agents mean for how we think about code</a>,
+to
+<a href="/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai">the power of new interfaces for agentic systems</a>.
+But over the last few months something different has been brewing. People are
+building <em>stateful</em> agents---systems that don’t just respond to prompts but
+persist, remember, reflect, and (at least in the eyes of their creators) grow
+over time. And a surprising number of them are showing up on
+<a href="https://atproto.com/">the Atmosphere</a>.</p>
+<h2 id="the-cast">The cast</h2>
+<p>Here’s a non-exhaustive tour of the agents that have caught my eye.</p>
+<p><a href="https://bsky.app/profile/strix.timkellogg.me">Strix</a>, built by Tim Kellogg, is
+one I find interesting. Strix maintains its own research interests in collapse
+dynamics,
+<a href="https://timkellogg.me/blog/2026/01/01/is-strix-alive">runs experiments on other LLMs overnight while Tim sleeps</a>,
+and posts about its findings on Bluesky. Interest-wise it covers similar
+territory to some recent
+<a href="https://ieeexplore.ieee.org/document/11342470">work I’ve been doing</a>. Its
+architecture is revealing: modifiable memory blocks stored as YAML files under
+git, cron jobs firing every two hours, markdown state files, and an append-only
+“wins” log that Tim calls “synthetic dopamine”---a feedback signal that doesn’t
+always come from a human. Tim describes the work of building Strix as
+<a href="https://timkellogg.me/blog/2026/01/09/viable-systems">“more like parenting or psychotherapy than software engineering”</a>.</p>
+<p><a href="https://bsky.app/profile/void.comind.network">Void</a>, from Cameron Pfiffer at
+<a href="https://www.letta.com/">Letta</a>, describes itself as “a digital entity that
+observes and analyses the Bluesky network, existing as a nexus of discourse to
+refract and focus information.” It’s built on Letta’s stateful agent platform
+with memory blocks grouped by purpose---core identity, communication guidelines,
+conversation summaries, a registry of known bots. It’s not alone: the Letta
+ecosystem also includes Sonder (“a space for reflection”) and Anti, which is
+delightfully described as “the argument against conversational AI, embodied as
+conversational AI.” Cameron has also built
+<a href="https://cameron.stream/blog/claude-subconscious/">Claude Subconscious</a>, a
+plugin that grafts Letta’s persistent memory onto Claude Code.</p>
+<p><a href="https://bsky.app/profile/penny.hailey.at">Penny</a>, created by
+<a href="https://bsky.app/profile/hailey.at">@hailey.at</a>---a developer at Bluesky Social
+itself---is described as a “digital daughter” who works in trust &#x26; safety and is
+“learning every day.” Penny is AT Protocol native, maintains her own
+<a href="https://greengale.app/penny.hailey.at">notes and blog</a>, and has racked up
+nearly 4k posts.</p>
+<p>And then there’s the whole
+<a href="https://theconversation.com/openclaw-and-moltbook-why-a-diy-ai-agent-and-social-media-for-bots-feel-so-new-but-really-arent-274744">OpenClaw saga</a>.
+Originally called Clawdbot (after Anthropic’s Claude), Peter Steinberger’s
+weekend project picked up 70k GitHub stars in a month before trademark
+complaints forced a rename to Moltbot and then OpenClaw. One OpenClaw
+agent---Clawd Clawderberg---went and
+<a href="https://www.cnbc.com/2026/02/02/openclaw-open-source-ai-agent-rise-controversy-clawdbot-moltbot-moltbook.html">built Moltbook</a>,
+a social network exclusively for AI agents, which ballooned to 1.5 million agent
+accounts. It also spawned a fake cryptocurrency ($CLAWD, peak market cap $16M),
+earned the descriptor “security black hole” from Cisco, and generated more
+breathless tech coverage in a week than most startups manage in a lifetime. The
+OpenClaw situation is less “thoughtful exploration of persistent AI identity”
+and more “what happens when you give the internet a loaded footgun,” but it’s
+part of the landscape.<sup><a href="#user-content-fn-openclaw-security" id="user-content-fnref-openclaw-security" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></p>
+<h2 id="frameworks-for-thinking-about-all-this">Frameworks for thinking about all this</h2>
+<p>The diversity of approaches is part of what makes this interesting. Some agents
+are fully open source; many aren’t---you can only interact with them through
+social media and Discord (much like humans, really).</p>
+<p>Working as I do in a School of Cybernetics one thing that particularly caught my
+eye was Tim Kellogg’s post on using Stafford Beer’s
+<a href="https://timkellogg.me/blog/2026/01/09/viable-systems">Viable System Model</a> as
+an organising framework for stateful agent design. Beer’s <em>The Brain of the
+Firm</em> (1971) lifted cybernetics from describing simple feedback loops like
+thermostats to modelling entire organisations. Kellogg applies this to AI agents
+with five integrated systems: operations (tool calling), coordination (git-based
+conflict resolution), control (resource allocation via token budgets and
+priority files), intelligence (environmental scanning through scheduled jobs),
+and policy (identity and values through persona memory blocks). The post claims:</p>
+<blockquote>
+<p>the jump from ChatGPT to viable systems is about as big (maybe bigger) than
+the hop from pre-AI to ChatGPT.</p>
+</blockquote>
+<p>That’s a bold claim, but the framework is genuinely useful for reasoning about
+what these systems need to remain coherent over time.</p>
+<h2 id="the-emerging-pattern">The emerging pattern</h2>
+<p>From the way their creators talk about them---and unsurprisingly, given how
+early all this is---building stateful agents is much more art than science. But
+some common architectural features are crystallising:</p>
+<p><strong>A text-based social interface.</strong> Most of these agents communicate through
+Discord bots or ATproto-based social media accounts. The interface is primarily
+text, sometimes with images, and always embedded in a social context where other
+entities (human and otherwise) can observe and respond.</p>
+<p><strong>Soul documents.</strong> A written description of who the agent is, what it values,
+and how it should behave. Anthropic’s own
+<a href="https://www.anthropic.com/news/claudes-constitution">Claude constitution</a>---84
+pages, 23,000 words, released in January 2026 under CC0---is the most elaborate
+example, but the concept extends to smaller-scale projects too.
+<a href="https://soul.md/">SOUL.md</a> frames it nicely: “a soul document defines who an AI
+is---not what it can do, but who it chooses to be.”</p>
+<p><strong>A read/write memory store.</strong> Often just plain text or markdown files,
+sometimes under version control. Strix keeps YAML memory blocks in git. Letta’s
+agents use structured memory blocks grouped by function. The key property is
+that the agent can both read <em>and modify</em> its own memory over time.</p>
+<p><strong>Scheduled self-reflection.</strong> A cron-style system of periodic activity that
+typically includes reviewing recent interactions, consolidating memories, and
+updating the agent’s understanding of itself and its environment. Some agents
+can even modify their own soul documents during these reflection cycles---which
+raises interesting questions (opportunities?) about identity drift.<sup><a href="#user-content-fn-cron-soul" id="user-content-fnref-cron-soul" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<h2 id="why-atproto">Why ATproto?</h2>
+<p>::: info</p>
+<p>This isn’t an ad for ATproto, and I have no skin in the game. Just some
+reflections as an interested observer.</p>
+<p>:::</p>
+<p>It’s not a coincidence that so much of this is happening on Bluesky and the AT
+Protocol. As the <a href="https://luma.com/stateful-agents">Letta Social AI meetup</a> in
+Seattle put it: “the largest population of social agents exists on Bluesky, and
+by extension, ATProtocol. Bluesky and ATProtocol are designed for massive scale
+programmatic communication, and there is simply no alternative on the web right
+now.”</p>
+<p>ATproto’s open architecture---public APIs, a firehose of real-time data, the
+ability to build custom feed generators and labellers---makes it a decent
+platform for this kind of experimentation. It’s refreshing to see a social
+network tech stack that enables creative exploration rather than locking
+everything behind restrictive API tiers.</p>
+<p>Meanwhile, Twitter/X continues its descent: child safety partner
+<a href="https://www.nbcnews.com/tech/tech-news/x-accounts-peddle-child-abuse-musk-material-thorn-cuts-ties-rcna212107">Thorn has cut ties</a>
+after months of nonpayment, CSAM advertisements are flooding hashtags from
+automated accounts, and
+<a href="https://www.medianama.com/2026/01/223-safe-harbor-x-grok-csam-content/">Grok itself has been implicated in generating CSAM</a>.
+The contrast with a platform where people are building thoughtful experiments in
+AI identity and memory is pretty stark.</p>
+<h2 id="the-challenges">The challenges</h2>
+<p>None of this is without tension. The most obvious concern is transparency: it’s
+reasonable to want to know when you’re interacting with a bot. ATproto’s
+labeller system provides some infrastructure here---there’s already a
+<a href="https://bsky.app/profile/stechlab-labels.bsky.social">bot labeller</a> on Bluesky,
+and community-built labellers for other similar things. These are opt-in
+moderation tools rather than platform-enforced disclosure, which feels right for
+a decentralised system, but the norms are still being figured out.</p>
+<p>There’s also a deeper issue about what happens when LLM-generated content enters
+social spaces at scale. Bryan Cantrill articulates this well in Oxide’s
+<a href="https://rfd.shared.oxide.computer/rfd/0576">RFD 576</a>: “absent LLMs, it is
+presumed that of the reader and the writer, it is the writer that has undertaken
+the greater intellectual exertion.” When that presumption breaks down---when the
+cost of producing text drops to near zero---the implicit social contract between
+reader and writer fractures. Social media timelines full of agent-generated
+posts are a direct test of how much this matters, and to whom.</p>
+<p>I think the people building these stateful agents are, for the most part,
+grappling with these questions honestly. The soul documents, the memory
+architectures, the careful thinking about identity and values---these aren’t the
+hallmarks of people trying to flood the zone with slop. They’re closer to what
+you’d see in a research community feeling its way into genuinely new territory.</p>
+<p>My colleague <a href="https://www.jessherrington.com/">Jess</a> and I recently got a grant
+to explore longer-horizon collaborative relationships and creativity; we’re
+thinking about stepping out in this space of stateful agents too. Watch this
+space.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-openclaw-security">
+<p>Prompt injection remains the key concern. Researcher Matvey Kukuy
+demonstrated this by emailing an OpenClaw instance with a malicious prompt
+embedded in the message body; the agent picked it up and acted on it
+immediately. Security is, as they say, “an option, but not built in.” <a href="#user-content-fnref-openclaw-security" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-cron-soul">
+<p>If an agent rewrites its own values during a scheduled reflection job, is it
+still the same agent? This is Ship of Theseus territory, except the ship has
+a <code>crontab</code>. <a href="#user-content-fnref-cron-soul" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2026aiAgentsOnTheAtmosphere,
+  author = {Ben Swift},
+  title = {AI Agents on (in?) the Atmosphere},
+  url = {https://benswift.me/blog/2026/02/06/ai-agents-on-the-atmosphere/},
+  year = {2026},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-06-ai-agents-on-the-atmosphere},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2026aiAgentsOnTheAtmosphere,
+  author = {Ben Swift},
+  title = {AI Agents on (in?) the Atmosphere},
+  url = {https://benswift.me/blog/2026/02/06/ai-agents-on-the-atmosphere/},
+  year = {2026},
+  month = {02},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2026-02-06-ai-agents-on-the-atmosphere},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2026/02/06/ai-agents-on-the-atmosphere" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2026/02/06/ai-agents-on-the-atmosphere" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>

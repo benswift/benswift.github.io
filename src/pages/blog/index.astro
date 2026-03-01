@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "../../layouts/PageLayout.astro"
+import PostList from "../../components/PostList.astro"
+import TagList from "../../components/TagList.astro"
+import { formatDate } from "../../utils/date"
+import { extractExcerpt } from "../../utils/excerpt"
+import { render } from "astro:content"
+
+const allPosts = await getCollection("blog", (entry) => {
+  return entry.data.published !== false && /^\d{4}\/\d{2}\/\d{2}\//.test(entry.id)
+})
+
+const posts = allPosts
+  .map((post) => {
+    const match = post.id.match(/^(\d{4})\/(\d{2})\/(\d{2})\/(.+?)(?:\.mdx?)?$/)
+    const dateStr = match ? `${match[1]}-${match[2]}-${match[3]}` : ""
+    const date = new Date(dateStr)
+    const slug = post.id.replace(/\.mdx?$/, "")
+
+    return {
+      title: post.data.title,
+      url: `/blog/${slug}/`,
+      date: dateStr,
+      dateFormatted: formatDate(date, true),
+      tags: post.data.tags,
+      excerpt: extractExcerpt(post.body ?? ""),
+    }
+  })
+  .sort((a, b) => b.date.localeCompare(a.date))
+
+const allTags = [...new Set(posts.flatMap((p) => p.tags))].sort()
+---
+
+<PageLayout title="Blog" relativePath="blog/index.md">
+  <p>
+    This is my blog. Sometimes in these posts I'll talk about research or art
+    projects I'm involved with, sometimes I'll just ramble about other stuff which
+    is keeping me up at night. If you're interested in a certain topic, click on a
+    tag to see just the posts with that tag:
+  </p>
+
+  <TagList tags={allTags} />
+
+  <p>
+    If anything here sparks your interest (or your ire!) then get in touch via
+    <a href="mailto:ben.swift@anu.edu.au">email</a> or discuss on
+    <a href="https://news.ycombinator.com">HN</a>.
+  </p>
+
+  <hr />
+
+  <PostList posts={posts} />
+</PageLayout>

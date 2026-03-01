@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><title>Livecoder-in-the-club as a system | benswift.me</title><meta name="author" content="Ben Swift"><meta name="description" content="import Picture from '../../../../src/components/Picture.astro' understanding and intervening in complex flows of software, music and humans Here in the School…"><!-- Open Graph --><meta property="og:url" content="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/"><meta property="og:type" content="article"><meta property="og:site_name" content="benswift.me"><meta property="og:title" content="Livecoder-in-the-club as a system"><meta property="og:description" content="import Picture from '../../../../src/components/Picture.astro' understanding and intervening in complex flows of software, music and humans Here in the School…"><meta property="og:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@benswift"><meta name="twitter:title" content="Livecoder-in-the-club as a system"><meta name="twitter:description" content="import Picture from '../../../../src/components/Picture.astro' understanding and intervening in complex flows of software, music and humans Here in the School…"><meta name="twitter:image" content="https://benswift.me/assets/images/pages/theremin-75.webp"><!-- AT Protocol --><link rel="site.standard.document" href="at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2021-11-11-livecoder-in-the-club-as-a-system"><!-- Citation metadata --><meta name="citation_title" content="Livecoder-in-the-club as a system"><meta name="citation_author" content="Ben Swift"><meta name="citation_date" content="2021-11-11"><meta name="citation_public_url" content="https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><script>
+      // Runs before paint to avoid flash of wrong theme
+      ;(function() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        }
+      })()
+    </script><link rel="stylesheet" href="/_astro/_slug_.BYY5YBAZ.css">
+<style>.tag-container[data-astro-cid-lga65v7i]{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}.tag[data-astro-cid-lga65v7i]{display:inline-block;padding:.25rem .5rem;background-color:var(--bg-soft);border-radius:4px;font-size:.875rem;color:var(--text-2);text-decoration:none;transition:background-color .2s,color .2s}.tag[data-astro-cid-lga65v7i]:hover{background-color:var(--brand-soft);color:var(--brand-1)}
+.cite-post[data-astro-cid-srla3z7m]{margin-top:2rem;border:1px solid var(--divider);border-radius:8px;padding:.75rem 1rem}.cite-post[data-astro-cid-srla3z7m] summary[data-astro-cid-srla3z7m]{cursor:pointer;font-size:.875rem;color:var(--text-2);user-select:none}.cite-content[data-astro-cid-srla3z7m]{margin-top:.75rem}.cite-content[data-astro-cid-srla3z7m] pre[data-astro-cid-srla3z7m]{background:var(--bg-soft);border-radius:6px;padding:1rem;overflow-x:auto;font-size:.8rem;line-height:1.5}.cite-copy[data-astro-cid-srla3z7m]{margin-top:.5rem;padding:.35rem .75rem;font-size:.8rem;border:1px solid var(--divider);border-radius:4px;background:var(--bg-soft);color:var(--text-2);cursor:pointer;transition:all .2s ease}.cite-copy[data-astro-cid-srla3z7m]:hover{color:var(--brand-1);border-color:var(--brand-1)}
+.neon-perceptron.svelte-1ox9ddm{position:relative;width:100%;aspect-ratio:16 / 9;background:#111;border-radius:8px;overflow:hidden}.neon-perceptron.fullscreen.svelte-1ox9ddm{aspect-ratio:unset;width:100vw;height:100vh;border-radius:0}.neon-perceptron.svelte-1ox9ddm canvas{display:block}.controls.svelte-1ox9ddm{position:absolute;top:1rem;left:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:100}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm){padding:.5rem 1rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;font-size:.875rem;transition:background .2s}.controls.svelte-1ox9ddm button:where(.svelte-1ox9ddm):hover{background:#444}.slider-container.svelte-1ox9ddm{background:#333;padding:.5rem;border:1px solid #666;border-radius:4px;color:#fff;font-size:.75rem}.slider-container.svelte-1ox9ddm label:where(.svelte-1ox9ddm){display:flex;flex-direction:column;gap:.25rem}.slider-container.svelte-1ox9ddm input[type=range]:where(.svelte-1ox9ddm){width:120px}.fullscreen-button.svelte-1ox9ddm{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:.5rem;background:#333;color:#fff;border:1px solid #666;border-radius:4px;cursor:pointer;z-index:100;transition:background .2s}.fullscreen-button.svelte-1ox9ddm:hover{background:#444}.fullscreen-button.svelte-1ox9ddm svg:where(.svelte-1ox9ddm){width:100%;height:100%}
+.for-codes-table.svelte-gplc73 .search:where(.svelte-gplc73){width:100%;line-height:1.6;font-size:1rem;padding:.3rem .6rem;border:2px solid var(--brand-1);border-radius:3px;margin-bottom:1rem}.for-codes-table.svelte-gplc73 table:where(.svelte-gplc73){width:100%;border-collapse:collapse}.for-codes-table.svelte-gplc73 th:where(.svelte-gplc73),.for-codes-table.svelte-gplc73 td:where(.svelte-gplc73){padding:.5rem;text-align:left;border-bottom:1px solid var(--divider)}.for-codes-table.svelte-gplc73 .for-code:where(.svelte-gplc73){font-family:var(--font-family-mono);white-space:nowrap}
+</style><style>.picture-container[data-astro-cid-s52xqo7h]{position:relative;margin:1rem 0}.picture-container[data-astro-cid-s52xqo7h] img[data-astro-cid-s52xqo7h]{width:100%;height:auto;display:block}.picture-credit[data-astro-cid-s52xqo7h]{position:absolute;bottom:1em;right:1em;color:#fff;font-weight:200;font-size:.875rem;text-shadow:0 1px 2px rgba(0,0,0,.5)}.picture-credit[data-astro-cid-s52xqo7h]:before{content:"photo: "}
+</style></head> <body> <header class="site-header" data-pagefind-ignore data-astro-cid-dmqpwcec> <nav class="nav-container" aria-label="Main navigation" data-astro-cid-dmqpwcec> <a href="/" class="site-title" data-astro-cid-dmqpwcec>benswift.me</a> <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" data-astro-cid-dmqpwcec> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <line x1="3" y1="6" x2="21" y2="6" data-astro-cid-dmqpwcec></line> <line x1="3" y1="12" x2="21" y2="12" data-astro-cid-dmqpwcec></line> <line x1="3" y1="18" x2="21" y2="18" data-astro-cid-dmqpwcec></line> </svg> </button> <div id="nav-links" class="nav-links" data-astro-cid-dmqpwcec> <a href="/blog/" class="nav-link" data-astro-cid-dmqpwcec>Blog</a><a href="/research/" class="nav-link" data-astro-cid-dmqpwcec>Research</a><a href="/livecoding/" class="nav-link" data-astro-cid-dmqpwcec>Livecoding</a><a href="/teaching/" class="nav-link" data-astro-cid-dmqpwcec>Teaching</a><a href="/bio/" class="nav-link" data-astro-cid-dmqpwcec>Bio</a> <div class="nav-social" data-astro-cid-dmqpwcec> <a href="https://github.com/benswift" class="social-link" aria-label="GitHub" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec> <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" data-astro-cid-dmqpwcec></path>   </svg> </a><a href="https://bsky.app/profile/benswift.me" class="social-link" aria-label="Bluesky" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>  <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.608 3.494 6.21 3.16-.084.078-3.597.534-5.01 2.583-1.164 1.685.291 3.412 1.576 4.01 4.233 1.972 6.6-1.95 7.6-4.45.999 2.5 3.367 6.422 7.6 4.45 1.285-.598 2.74-2.325 1.576-4.01-1.413-2.049-4.926-2.505-5.01-2.583 2.602.334 5.425-.533 6.21-3.16.246-.829.624-5.789.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C14.046 4.747 11.087 8.686 12 10.8z" data-astro-cid-dmqpwcec></path>  </svg> </a><a href="https://www.linkedin.com/in/benjswift" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" data-astro-cid-dmqpwcec>   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" data-astro-cid-dmqpwcec></path> </svg> </a> </div> <div class="search-container" data-astro-cid-otpdt6jm> <button class="search-toggle" aria-label="Search" title="Search (Ctrl+K)" data-astro-cid-otpdt6jm> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-otpdt6jm> <circle cx="11" cy="11" r="8" data-astro-cid-otpdt6jm></circle> <line x1="21" y1="21" x2="16.65" y2="16.65" data-astro-cid-otpdt6jm></line> </svg> </button> <dialog class="search-dialog" data-astro-cid-otpdt6jm> <div id="pagefind-search" data-astro-cid-otpdt6jm></div> <button class="search-close" aria-label="Close search" data-astro-cid-otpdt6jm> <kbd data-astro-cid-otpdt6jm>Esc</kbd> </button> </dialog> </div>   <script>
+  (function() {
+    let pagefindLoaded = false
+
+    async function loadPagefind() {
+      if (pagefindLoaded) return
+      pagefindLoaded = true
+      try {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = "/pagefind/pagefind-ui.css"
+        document.head.appendChild(link)
+
+        const script = document.createElement("script")
+        script.src = "/pagefind/pagefind-ui.js"
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+          document.head.appendChild(script)
+        })
+
+        new window.PagefindUI({
+          element: "#pagefind-search",
+          showSubResults: true,
+          showImages: false,
+        })
+      } catch {
+        const el = document.getElementById("pagefind-search")
+        if (el) el.innerHTML = "<p>Search is not available in dev mode.</p>"
+      }
+    }
+
+    function initSearch() {
+      const toggle = document.querySelector(".search-toggle")
+      const dialog = document.querySelector(".search-dialog")
+      const close = document.querySelector(".search-close")
+
+      if (toggle) {
+        toggle.addEventListener("click", async function() {
+          if (!dialog) return
+          await loadPagefind()
+          dialog.showModal()
+          var input = dialog.querySelector(".pagefind-ui__search-input")
+          if (input) input.focus()
+        })
+      }
+
+      if (close) {
+        close.addEventListener("click", function() {
+          if (dialog) dialog.close()
+        })
+      }
+    }
+
+    function handleKeydown(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault()
+        var dialog = document.querySelector(".search-dialog")
+        if (!dialog) return
+        loadPagefind().then(function() {
+          if (dialog.open) {
+            dialog.close()
+          } else {
+            dialog.showModal()
+            var input = dialog.querySelector(".pagefind-ui__search-input")
+            if (input) input.focus()
+          }
+        })
+      }
+    }
+
+    document.removeEventListener("keydown", handleKeydown)
+    document.addEventListener("keydown", handleKeydown)
+
+    initSearch()
+    document.addEventListener("astro:page-load", initSearch)
+  })()
+</script> <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-astro-cid-dmqpwcec> <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <circle cx="12" cy="12" r="5" data-astro-cid-dmqpwcec></circle> <line x1="12" y1="1" x2="12" y2="3" data-astro-cid-dmqpwcec></line> <line x1="12" y1="21" x2="12" y2="23" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" data-astro-cid-dmqpwcec></line> <line x1="1" y1="12" x2="3" y2="12" data-astro-cid-dmqpwcec></line> <line x1="21" y1="12" x2="23" y2="12" data-astro-cid-dmqpwcec></line> <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" data-astro-cid-dmqpwcec></line> <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" data-astro-cid-dmqpwcec></line> </svg> <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-dmqpwcec> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" data-astro-cid-dmqpwcec></path> </svg> </button> </div> </nav> </header>  <script type="module">function n(){const e=document.querySelector(".mobile-menu-toggle"),o=document.querySelector("#nav-links");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),o?.classList.toggle("open")}),document.querySelector(".dark-mode-toggle")?.addEventListener("click",()=>{const t=document.documentElement.classList.toggle("dark");localStorage.setItem("theme",t?"dark":"light")})}n();document.addEventListener("astro:page-load",n);</script> <main data-pagefind-body>  <h1 class="page-title">Livecoder-in-the-club as a system</h1> <p class="post-date">11 Nov 21</p> <p class="tag-container" data-astro-cid-lga65v7i><a href="/blog/tag/cybernetics/" class="tag" data-astro-cid-lga65v7i>cybernetics</a></p>  <p class="post-subtitle">understanding and intervening in complex flows of software, music and humans</p>
+<div class="hl-para" markdown="1"><p>Here in the <a href="https://cybernetics.anu.edu.au/">School of Cybernetics</a> we are
+building our capability in cybernetics—its histories and
+possibilities—and working out how each of us will contribute to the new
+cybernetics for the 21st Century.</p><p>This blog post, written for a general audience, is part of a content development
+sprint, written in reponse to the task of developing a short (1000 words)
+persuasive argument about the role and value of cybernetics as an approach to
+shape futures through and with technology.</p></div>
+<p>If you follow this blog, you’ll know that I’m a <a href="/livecoding/">livecoder</a>. I
+<em>code</em> (i.e. write computer programs) to make music in a club setting, with an
+audience that just wants to dance and have a good time<sup><a href="#user-content-fn-niche" id="user-content-fnref-niche" data-footnote-ref aria-describedby="footnote-label">1</a></sup>. If you’ve never
+seen it before, here’s a 10min video of my collaborator
+<a href="https://ushini.com">Ushini Attanayake</a> and I.</p>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592452477?color=be2edd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ushini &#38;amp; Ben live @ ACMC&#38;#039;21"></iframe></div>
+
+<p>Between the code, the thumping music, the dancing humans, and all the other
+glorious complexities of live entertainment, there’s certainly a lot of
+different stuff going on. You might find watching a livecoder in action to be
+entertaining, or impressive, or bewildering, or all of the above. Most of all,
+when you see/attend a livecoding gig for the first time, I bet that your initial
+feeling is one of <em>what is going on?</em></p>
+<p>In this post I’m going to use some ideas from cybernetics to try and help you
+make sense of a livecoder performing in a club, in part to help you understand
+for what it <em>feels like</em> I’m doing when I do it. From there I want to think
+about ways to make livecoding even better, that is, to figure out put on a
+better show for the adoring crowds.</p>
+<h2 id="livecoder-in-the-club-as-a-system">Livecoder-in-the-club as a system</h2>
+<p><a href="https://www.youtube.com/watch?v=kx79HLLboT8">Cybernetics</a> is all about the
+looking at and reasoning about <strong>systems</strong> with <em>goals</em>, interacting with and
+connected to their <em>environment</em> via perception/action <em>feedback loops</em>. These
+sorts of systems exist at all sorts of different scales (big/small, fast/slow,
+old/new, cheap/expensive, etc.) and they’re
+<a href="https://www.goodreads.com/book/show/10698938-the-fractal-organization">fractal in nature</a>---it
+doesn’t matter what level of “magnification” you look at, each component of a
+system is itself a system of interacting components, and each system is itself a
+component interacting in a larger system. But since that’s all pretty abstract,
+let’s return to the example of the livecoder-in-the-club. This is written in the
+first person, but other livecoders may have similar understandings of their own
+livecoder-in-the-club practice.</p>
+<ul>
+<li>
+<p>I start with a full tank of <strong>brain juice</strong> which allows me to work on tricky
+coding problems. But it’s mentally taxing. When I’m happy, rested &amp; in the
+zone, I feel like I’ve got a full tank, but writing code takes mental energy,
+and so writing the code in the performance drains my brain juice until I’m
+cooked, and then I can’t write any more code (or at least will write bad/buggy
+code) until I recharge.</p>
+</li>
+<li>
+<p>To write the <strong>code</strong> I tap my fingers on the keys of my keyboard. I use a
+<a href="https://emacs.sexy">specialised program</a> for this (i.e. I don’t write it in
+MS Word) which has a bunch of features to help, like different colours for the
+different parts of the code (e.g. functions vs variable vs numerical parameter
+values), and auto-completion, and inline documentation/help about the
+particular bit of code that I’m working on. This code is also projected onto a
+big screen in the club so that the dancers can look at it (or not).</p>
+</li>
+<li>
+<p>As the code runs, it generates <strong>music</strong>. Different parts of the code are
+responsible for different parts of the music, and I try and give the functions
+&amp; variables in my code human-readable names (like <code>piano</code>) so that the
+correspondence between the code and the music is clear-ish. The music will
+only be generated if the code is running nicely (i.e. without bugs/errors) and
+is hooked up to the PA system in the club. If I crash the program (or if
+someone unplugs the PA) then the music will stop.</p>
+</li>
+<li>
+<p>The people in the club---people dancing, people chilling at the bar, people
+watching the code on the screen---are collectively having an experience which
+(hopefully) is giving them <strong>good vibes</strong>. Obviously this is a <em>huge</em>
+oversimplification, and the extent to which any individual is enjoying
+themselves (and therefore contributing positively to the amount of good vibes
+in the room) depends on all sorts of things. But, in a real sense, the
+creation of <strong>good vibes</strong> in the room is the goal of the live coder---or at
+least it’s <em>my</em> goal when I perform in this situtation. So I (like any
+performer) feed off the good vibes, replenishing (to some extent) my brain
+juice.</p>
+</li>
+</ul>
+<p>It’s a bit clearer to see in a picture:</p>
+<figure class="picture-container" data-astro-cid-s52xqo7h> <img src="/assets/images/posts/livecoder-in-a-club-system-diagram.webp" alt="system diagram for the livecoder-in-a-club system" loading="lazy" data-astro-cid-s52xqo7h>  </figure> 
+<p>So, clearly,</p>
+<blockquote>
+<p>a livecoder is a machine for turning <strong>brain juice</strong> into <strong>good vibes</strong> (via
+<strong>code</strong> and <strong>music</strong>)</p>
+</blockquote>
+<p>which is a nice way to think about it, and actually is a relatively accurate
+picture of what I <em>feel</em> is going on when I’m performing.</p>
+<h2 id="how-does-cybernetics-help-us-understand-and-improve-this-system">How does cybernetics help us understand and improve this system?</h2>
+<p>In this account of livecoding-in-the-club, there are a few things worth
+noticing:</p>
+<ul>
+<li>
+<p>there are different “stocks” (reservoirs of brain juice, code, music and good
+vibes)</p>
+</li>
+<li>
+<p>there are various flows between those stocks, and in both directions (e.g. I
+turn brain juice into code by typing at my keyboard, but I also receive
+information about what the code looks like from my laptop screen, via my eyes)</p>
+</li>
+<li>
+<p>there’s a goal: to put on a good show for the audience to enjoy (to increase
+the stock of good vibes in the room)</p>
+</li>
+<li>
+<p>the system includes closed loops, and so is capable of feedback</p>
+</li>
+</ul>
+<p>A key principle of cybernetics is that the structure of the system---what the
+parts are, and how they relate to one another---determines the behaviour of the
+system. But anyone can sketch out a (highly contestable) jumble of blobs and
+arrows to describe whatever thing they’re interested in. What do we gain from
+seeing things in this way?</p>
+<p>This is where another key idea---and person---in cybernetics/systems thinking
+comes in: Donella Meadows’<sup><a href="#user-content-fn-is-meadows-cybernetics" id="user-content-fnref-is-meadows-cybernetics" data-footnote-ref aria-describedby="footnote-label">2</a></sup>
+<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Leverage Points: Places to Intervene in a System</a>.
+The key idea is this: once you’ve mapped out your system, you need to know where
+the most effective “intervention points” to try and implement change? If you’re
+going to expend energy to make things better, where should you focus that energy
+to get the most <em>leverage</em>?</p>
+<p>In the livecoder-in-the-club system, to make changes to the system in service of
+the the goal (as stated above) of creating maximum good vibes. One obvious
+solution is to start the gig with a bigger reservoir of brain juice (either by
+having a good night’s sleep, popping an adderall, or whatever). Or it could be
+to start with a larger code reservoir by starting with a bunch of code
+pre-written<sup><a href="#user-content-fn-blank-slate-code" id="user-content-fnref-blank-slate-code" data-footnote-ref aria-describedby="footnote-label">3</a></sup>.</p>
+<p>However, Meadows’ rules for leverage also suggest that some interventions
+provide more leverage than others<sup><a href="#user-content-fn-different-interventions" id="user-content-fnref-different-interventions" data-footnote-ref aria-describedby="footnote-label">4</a></sup>. For example,
+changing the flow rates (leverage point #10) is likely to have more impact than
+just changing the sizes of the stocks/buffers (leverage point #11). This implies
+that changing the rate at which I turn brain juice into code (perhaps having a
+nicer keyboard, perhaps having better code auto-completion support, or perhaps
+just good-ol’ <em>practice</em> to improve my coding skills) is likely to be more
+impactful than starting with a bigger store of brain juice (so, thankfully,
+there’s no need to buy shady adderall on the dark web). Will Larson (who has
+been a software engineering leader at Calm, Stripe, Uber, and Digg)
+<a href="https://lethain.com/systems-thinking/">has some interesting ideas on systems thinking as applied to software development</a>
+that I’m keen to think more about as well.</p>
+<p>For even greater leverage, there are interventions which are related to
+restructuring the system itself, for example adding new information flows
+(leverage point #6). The dancers can already see the code, but what if I was
+hooked up to a live <a href="https://en.wikipedia.org/wiki/Electroencephalography">EEG</a>
+so they could see the current state of my brain juice?<sup><a href="#user-content-fn-eeg" id="user-content-fnref-eeg" data-footnote-ref aria-describedby="footnote-label">5</a></sup>. And even higher up
+(in terms of leverage) is changing the goals of the system itself (leverage
+point #3). Why <em>do</em> people come to a club to dance and have good vibes? What if
+their goal was different?</p>
+<p>Now, the thing about leverage is that it doesn’t guarantee good or bad outcomes,
+it just means you for a small amount of input you see a large effect in the
+output. Figuring out where to intervene in the livecoder-in-the-club system is
+one thing, figuring out how to intervene so that the changes are positive is a
+deep challenge. Leverage means that when things go well they go really well, but
+the opposite is also true (e.g. with margin calls in a bear market). I feel like
+this is an especially apposite point for programmers, because the cheap leverage
+afforded by software is catnip for programmers, but presents some real dangers.
+(as
+<a href="https://idlewords.com/talks/sase_panel.htm">as Maciej Cegłowski puts so eloquently</a>).</p>
+<h2 id="so-whats-the-point">So what’s the point?</h2>
+<p>Obviously the livecoder-in-the-club system described above is an
+oversimplification; it makes certain things easy to see but renders other things
+invisible, and every aspect of both the components (the things it talks about)
+and their relationships (the connections between them) is contestable. But
+that’s one of the benefits by laying things out like this---we can at least see
+the things that we’re explicitly considering, and we may well need to add new
+things to the model for consideration (and examine all the new connections and
+potential feedback loops those new things create).</p>
+<p>My main goal here is really just to provide a worked example of how ideas from
+cybernetics and systems thinking can help us move beyond just describing things
+to figuring out where to place our energies to effect change---where we’ll get
+the most leverage. Being the best livecoder I can be is a lifetime goal, just
+like any other instrumental or artistic practice. I’m keen to keep using the
+tools of cybernetics to push in that direction, and bring the assemblage of
+dancing bodies of the livecoder-in-the-club system with me for the ride :)</p>
+<h2 id="appendix-meadows-12-places-to-intervene-in-a-system">Appendix: Meadows’ <em>12 Places to Intervene in a System</em></h2>
+<p>::: tip</p>
+<p>Note: these are taken straight from the
+<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Donella Meadows foundation website</a>.</p>
+<p>:::</p>
+<p><em>(lower numbers = less effective, higher numbers = more effective)</em></p>
+<ol reversed><li>Constants, parameters, numbers (such as subsidies, taxes, standards).</li><li>The sizes of buffers and other stabilizing stocks, relative to their flows.</li><li>The structure of material stocks and flows (such as transport networks, population age structures).</li><li>The lengths of delays, relative to the rate of system change.</li><li>The strength of negative feedback loops, relative to the impacts they are trying to correct against.</li><li>The gain around driving positive feedback loops.</li><li>The structure of information flows (who does and does not have access to information).</li><li>The rules of the system (such as incentives, punishments, constraints).</li><li>The power to add, change, evolve, or self-organize system structure.</li><li>The goals of the system.</li><li>The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.</li><li>The power to transcend paradigms.</li></ol>
+<h2 id="footnotes">Footnotes</h2>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-niche">
+<p>It’s a pretty niche activity, but there’s an
+<a href="https://toplap.org">international community</a> of us, and if you’re
+interested then you can
+<a href="https://bsky.app/profile/benswift.me">follow me on bluesky</a> to hear about
+upcoming gigs. <a href="#user-content-fnref-niche" data-footnote-backref aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-is-meadows-cybernetics">
+<p><a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">Donella Meadows</a>
+tended to prefer terms like “systems thinking” and “systems change” rather
+than using the term “cybernetics” directly, but she certainly was involved
+with some of the key people &amp; events in the cybernetics story, and her work
+is highly relevant to cybernetic ideas. Plus,
+<a href="https://books.google.com.au/books/about/Thinking_in_Systems.html?id=leE8R9pehg4C&redir_esc=y">Google Books categorises her work under <em>Computers &gt; Cybernetics</em></a>,
+and you <em>know</em> the Big G is never wrong about that stuff. <a href="#user-content-fnref-is-meadows-cybernetics" data-footnote-backref aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-blank-slate-code">
+<p>This is actually a subtle point in livecoding. I (along with some other
+livecoders) am committed to starting each gig “from scratch” with a blank
+code page. However, I’ve written a lot of library code ahead of time to
+provide me with nice abstractions for making music with code, and I use that
+(hidden---not on the screen) from the very first line of code that I write.
+Thinking about the livecoder-in-the-club system one question that I’m
+pondering is whether that library code constitutes a larger stock of code,
+or whether it’s a restructuring (an increase) of the flow rate from code
+into music, or both.</p>
+<p>To make things even more complicated, and there’s <em>kindof</em> a blurry line
+between where the code ends and the music begins in livecoding (i.e. there’s
+the code you see on the screen, which is the code that I’m writing &amp;
+executing “live”, but there’s also a bunch of pre-written code in my
+operating system’s audio plumbing just to get the music to come out of the
+speakers properly). <a href="#user-content-fnref-blank-slate-code" data-footnote-backref aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-different-interventions">
+<p>There’s not enough room in this blog post for a full “systems change
+analysis” of the livecoder-in-the-club system according to all 12 leverage
+points, but if you’re interested I do recommend you
+<a href="https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/">check out that article</a>
+as a starting point. <a href="#user-content-fnref-different-interventions" data-footnote-backref aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-eeg">
+<p>Coming up with a reliable, portable EEG machine which can measure a useful
+biometric signal which corresponds to an individual’s perceived current
+level of brain juice is beyond the scope of this blog post. <a href="#user-content-fnref-eeg" data-footnote-backref aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>  <details class="cite-post" data-astro-cid-srla3z7m> <summary data-astro-cid-srla3z7m>Cite this post</summary> <div class="cite-content" data-astro-cid-srla3z7m> <pre data-astro-cid-srla3z7m><code data-astro-cid-srla3z7m>@online{swift2021livecoderInTheClubAsASystem,
+  author = {Ben Swift},
+  title = {Livecoder-in-the-club as a system},
+  url = {https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/},
+  year = {2021},
+  month = {11},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2021-11-11-livecoder-in-the-club-as-a-system},
+}</code></pre> <button class="cite-copy" data-bibtex="@online{swift2021livecoderInTheClubAsASystem,
+  author = {Ben Swift},
+  title = {Livecoder-in-the-club as a system},
+  url = {https://benswift.me/blog/2021/11/11/livecoder-in-the-club-as-a-system/},
+  year = {2021},
+  month = {11},
+  note = {AT-URI: at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.document/2021-11-11-livecoder-in-the-club-as-a-system},
+}" data-astro-cid-srla3z7m>Copy BibTeX</button> </div> </details>  <script type="module">function i(){document.querySelectorAll(".cite-copy").forEach(t=>{t.addEventListener("click",async()=>{const e=t.dataset.bibtex;e&&(await navigator.clipboard.writeText(e),t.textContent="Copied",setTimeout(()=>t.textContent="Copy BibTeX",2e3))})})}i();document.addEventListener("astro:page-load",i);</script> <footer class="site-footer" data-pagefind-ignore data-astro-cid-gcn2mc3v> <p data-astro-cid-gcn2mc3v>
+designed &amp; built with
+<a href="https://astro.build" title="Astro website" data-astro-cid-gcn2mc3v>&#9889;</a>,
+<a href="#" class="random-cafe" title="See Ben's favourite coffee shops" data-astro-cid-gcn2mc3v>&#9749;</a>
+and
+<a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?" data-astro-cid-gcn2mc3v>&#10084;</a>
+on unceded
+<a href="https://www.nca.gov.au/welcome-ngunnawal-country" data-astro-cid-gcn2mc3v>Ngunnawal Country</a>
+by Ben Swift
+</p> <p class="footer-links" data-astro-cid-gcn2mc3v> <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="licence" aria-label="Creative Commons Attribution-ShareAlike 4.0 licence" data-astro-cid-gcn2mc3v>cc by-sa</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/blob/main/blog/2021/11/11/livecoder-in-the-club-as-a-system" data-astro-cid-gcn2mc3v>source</a>
+&middot;
+<a href="https://github.com/benswift/benswift.github.io/commits/main/blog/2021/11/11/livecoder-in-the-club-as-a-system" data-astro-cid-gcn2mc3v>history</a> </p> </footer>  <script type="module">const e=["https://tilleys.com.au","https://www.harvestcoffee.com.au","https://www.facebook.com/goodbrothercbr","https://frontgallerycafe.com","https://redbrick.coffee"];function t(){document.querySelectorAll(".random-cafe").forEach(o=>{o.addEventListener("click",a=>{a.preventDefault(),window.location.href=e[Math.floor(Math.random()*e.length)]})})}t();document.addEventListener("astro:page-load",t);</script>  </main> </body></html>
