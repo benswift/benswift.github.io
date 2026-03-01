@@ -24,7 +24,7 @@ level 1 and level 2 headings (i.e. `#` and `##`) determine the slide splits
 I wrote a simple [Jekyll plugin](https://jekyllrb.com/docs/plugins/) to make
 this happen---which has just a couple of moving parts
 
-::: tip Because the source for this
+:::tip[Because the source for this]
 [whole blog is on GH](https://github.com/benswift/benswift.github.io/), then you
 can just head there and see it for yourself if you're the sort of person who
 prefers reading code to prose. Think of this blog post as a "companion piece".
@@ -70,7 +70,7 @@ tweak to suit your own presentation.
 <!-- Script removed during migration -->
 ```
 
-::: tip The full [layout](https://jekyllrb.com/docs/layouts/) file will depend
+:::tip[The full [layout](https://jekyllrb.com/docs/layouts/) file will depend]
 on how the rest of your site works (where you've put the `reveal.js-x.x.x`
 folder, etc.) so I haven't included the full file here (you can
 [see it on GitHub](https://github.com/benswift/benswift.github.io/blob/source/_layouts/reveal.html),

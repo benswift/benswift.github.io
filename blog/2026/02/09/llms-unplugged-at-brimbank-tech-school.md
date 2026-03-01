@@ -5,7 +5,7 @@ tags:
   - ai
 ---
 
-::: info
+:::info
 
 This is a cross-post from the
 [LLMs Unplugged website](https://www.llmsunplugged.org/news/2026-02-13-brimbank-tech-school-workshop).
@@ -32,7 +32,7 @@ The workshop will cover:
 
 Spaces are limited, so if you'd like to attend please register early.
 
-::: tip Register now
+:::tip[Register now]
 
 [Sign up for the workshop](https://forms.office.com/r/q5KFV9Uq2u)
 

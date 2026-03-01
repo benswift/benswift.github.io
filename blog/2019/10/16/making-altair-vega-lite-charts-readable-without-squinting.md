@@ -50,7 +50,7 @@ making all the text bigger so that my slides don't double as an
 underlying vis engine which Altair uses)
 [know about the issue, but don't want to fix it](https://github.com/vega/vega-parser/issues/18).
 
-::: info
+:::info
 
 When I'm talking about "size" I'm **not** talking about the size & dimensions of
 the chart---I'm talking about the size of the text, lines & other marks

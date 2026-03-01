@@ -87,7 +87,7 @@ have changed in the lock file will be downloaded. But over time, the container
 may take longer to run as the list of pre-installed vs actually required
 packages diverges.
 
-::: tip
+:::tip
 
 I did try a similar approach that used `bundle cache` to pull all the deps into
 a `vendor/cache` folder and then copy _that_ across into the new image, but I

@@ -3,7 +3,7 @@ title: "COMP4020/8020: Rapid Prototyping for the Web"
 tags: [teaching, comp4020]
 ---
 
-::: tip
+:::tip
 
 I'm developing a new course for S2 2026: **COMP4020/8020 Rapid Prototyping for
 the Web**. This post is me thinking aloud as I work through the course
@@ -44,7 +44,7 @@ course _I_ want to create, anyway.
 
 ## Draft learning outcomes
 
-::: info
+:::info
 
 These are draft learning outcomes---subject to change as the course develops.
 

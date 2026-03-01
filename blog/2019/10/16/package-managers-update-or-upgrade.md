@@ -55,7 +55,7 @@ does something different? For even more bonus points, when does that "other"
 option do something unwanted/destructive/irreversible (assuming that all you
 want to do is update that dependency to the latest version)?
 
-::: tip
+:::tip
 
 Look, I'm not at all saying that you should just go and blindly
 `update`/`upgrade` all of the things---that's clearly a bad idea. But it still

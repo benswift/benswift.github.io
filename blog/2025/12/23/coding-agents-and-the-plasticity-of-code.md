@@ -75,7 +75,7 @@ But as I reflect on the year that was, it's this feeling of software plasticity
 that I think is the main change that coding agents have given me. And I quite
 like it, and I'm excited to see what happens as they get better.
 
-::: info Plug for LLMs Unplugged
+:::info[Plug for LLMs Unplugged]
 
 It's not about the plasticity stuff, but as well as using these models a lot
 this year I've also been thinking a lot about how we teach students (and the

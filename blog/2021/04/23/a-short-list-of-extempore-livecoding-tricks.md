@@ -183,7 +183,7 @@ want to turn up more often in the output:
 
 ## `rel` for relative pitches
 
-::: tip
+:::tip
 
 From here on, all the following code snippets assume you've loaded the pattern
 language with

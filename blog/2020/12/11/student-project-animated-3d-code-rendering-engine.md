@@ -4,7 +4,7 @@ tags:
   - teaching
 ---
 
-::: info
+:::info
 
 I'm trying to get better at writing down potential student project ideas as they
 come to me.

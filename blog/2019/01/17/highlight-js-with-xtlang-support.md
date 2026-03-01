@@ -4,7 +4,7 @@ tags:
   - dev
 ---
 
-::: tip
+:::tip
 
 **Note**: adding syntax-highlighted xtlang to your website is now easier than
 ever because
@@ -12,7 +12,7 @@ ever because
 an official hljs module. While this page is still an interesting dive into how I
 did it at the time, you should now just follow the instructions on GitHub.
 
-::: info
+:::info
 
 > It is a truth, universally acknowledged, that all programming language authors
 > must also be expert web developers. (_attributed to Jane Austen_)

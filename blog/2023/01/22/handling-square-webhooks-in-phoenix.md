@@ -101,7 +101,7 @@ After that's all done (and you've deployed your app) you're ready to
 Follow the Square docs and Square will start hitting your (deployed) app's
 `https://example.com/square/webhook` endpoint, and your app can do its thing.
 
-::: info Note
+:::info[Note]
 
 These incoming webhook requests _won't_ hit your local development server
 running on `localhost`, so testing webhooks is a bit trickier. Since my app runs

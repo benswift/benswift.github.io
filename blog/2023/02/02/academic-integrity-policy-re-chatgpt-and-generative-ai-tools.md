@@ -22,7 +22,7 @@ assessment items) and try and actually _do_ them with ChatGPT, just to see how
 it goes. OpenAI have also just released some stuff about
 [considerations for educators](https://platform.openai.com/docs/chatgpt-education).
 
-::: tip
+:::tip
 
 At this stage these are just my own personal thoughts as a teaching academic;
 I'm not wearing my

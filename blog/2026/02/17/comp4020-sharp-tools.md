@@ -3,7 +3,7 @@ title: "The road to COMP4020: providing sharp tools"
 tags: [comp4020]
 ---
 
-::: info
+:::info
 
 This post is part of a series I'm writing as I develop
 [COMP4020/8020: Rapid Prototyping for the Web](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web).

@@ -78,7 +78,7 @@ type-safe, composable, and I can actually read it six months later.
 
 ### Reveal.js slides
 
-::: info
+:::info
 
 Honestly, the reveal.js stuff is still a work in progress, and I'm not super
 happy with it just yet.

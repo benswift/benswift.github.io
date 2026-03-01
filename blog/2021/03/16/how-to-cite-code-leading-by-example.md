@@ -23,7 +23,7 @@ our students how to do it.
 
 ## The _Statement of Originality_ approach
 
-::: info
+:::info
 
 The following examples are live on the
 [COMP1720 site](https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality);

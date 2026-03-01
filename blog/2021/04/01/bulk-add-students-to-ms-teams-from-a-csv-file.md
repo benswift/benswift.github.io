@@ -20,7 +20,7 @@ the class's Teams site you can either:
 - share the "join Team" link on some other communication channel and manually
   weed out the gatecrashers
 
-::: tip
+:::tip
 
 Too much manual work---**there's gotta be a better way**.
 

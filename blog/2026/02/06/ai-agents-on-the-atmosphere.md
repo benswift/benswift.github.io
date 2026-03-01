@@ -134,7 +134,7 @@ raises interesting questions (opportunities?) about identity drift.[^cron-soul]
 
 ## Why ATproto?
 
-::: info
+:::info
 
 This isn't an ad for ATproto, and I have no skin in the game. Just some
 reflections as an interested observer.

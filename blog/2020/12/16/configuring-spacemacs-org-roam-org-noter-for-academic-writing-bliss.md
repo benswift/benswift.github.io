@@ -25,7 +25,7 @@ hope I remember the reference" approach. See e.g.
 [Noorah Alhasan's EmacsConf 2020 talk](https://emacsconf.org/2020/talks/17/) for
 more detailed info on this workflow.
 
-::: tip
+:::tip
 
 This post isn't about how I've become amazingly productive; it's about how I
 wasted a day yak-shaving just to get the software working 🙃
@@ -84,7 +84,7 @@ it).
  org-roam-db-location (concat org-roam-directory "/db/org-roam.db"))
 ```
 
-::: info Note
+:::info[Note]
 
 Those first two config variables (the `bibtex-completion-*` ones) weren't listed
 in the blog posts I found, but seemed to be necessary to get

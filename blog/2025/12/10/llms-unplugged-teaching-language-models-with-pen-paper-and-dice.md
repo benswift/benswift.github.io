@@ -6,7 +6,7 @@ tags:
   - llm
 ---
 
-::: tip
+:::tip
 
 Some of this blog post is copied from the actual website copy at
 [LLMs Unplugged](https://www.llmsunplugged.org). But it doesn't count as
@@ -125,7 +125,7 @@ open an issue on the
 [GitHub repo](https://github.com/ANUcybernetics/llms-unplugged). This is meant
 to be a living resource, not a finished product.
 
-::: info
+:::info
 
 The LLMs Unplugged site is at
 [llmsunplugged.anu.edu.au](https://llmsunplugged.org). All materials are CC

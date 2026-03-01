@@ -20,7 +20,7 @@ Use `info`, `tip`, `danger`, `warning` and `details` containers as necessary,
 but ensure there are blank lines between them and the content, e.g.
 
 ```md
-::: tip
+:::tip
 
 Here's a tip.
 
@@ -29,9 +29,9 @@ Here's a tip.
 
 ### When to use tip vs info
 
-- **`::: tip`** --- for actionable guidance: technical advice, recommendations,
+- **`:::tip`** --- for actionable guidance: technical advice, recommendations,
   how-to instructions, cross-references where the reader should take action
-- **`::: info`** --- for contextual information: background context, source
+- **`:::info`** --- for contextual information: background context, source
   attributions ("This article originally appeared in..."), status updates,
   corrections, disclaimers, author bios
 

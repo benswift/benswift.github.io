@@ -5,7 +5,7 @@ tags:
   - ccc
 ---
 
-::: info tl;dr
+:::info[tl;dr]
 
 In this workshop you'll:
 
@@ -86,7 +86,7 @@ facet of the c/c/c triad. Look under your chair to find three stickers:
   space down to just a few stickers" thing is total bollocks---your job is to be
   your group's _enfant terrible_
 
-::: tip
+:::tip
 
 You can choose to have 0, 1, 2, 3 or 4 stickers---it's up to you.
 
@@ -124,7 +124,7 @@ You're now a curriculum designer for the c/c/c studio! Welcome aboard.
     and I'm _pretty sure_ he was
     [Olivia Wilde's](https://www.imdb.com/name/nm1312575/) uncle
 
-::: info _Your design brief for today_
+:::info[_Your design brief for today_]
 
 In your group, create an assessment[^assessment] task which teaches a particular
 **code** concept/tool by exploring a problem/challenge facing our[^culture]
@@ -185,7 +185,7 @@ electronic templates
 and
 [MS Word](/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx)).
 
-::: tip
+:::tip
 
 One more thing to keep in mind: in the
 [next group work session](#group-work-session-2) you'll be writing a set of
@@ -207,7 +207,7 @@ code/creativity/culture wheels[^winwheel] and let fate[^fate] decide.
 
 [^fate]: well, the PRNG in your web browser, anyway
 
-::: warning
+:::warning
 
 Historical note This workshop was held in November 2019. The interactive
 spinning wheels that were originally on this page are no longer functional, but
@@ -348,7 +348,7 @@ format of this document is up to you. There are a few ways to do this:
 - If **you** were in charge of this workshop and had to deliver it again, what
   would you change?
 
-::: tip
+:::tip
 
 Thanks so much for participating! If your group wrote the assessment item on
 paper, can you hand it to Ben (or one of the other facilitators) before you
