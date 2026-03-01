@@ -12,6 +12,12 @@ export default defineConfig({
   site: "https://benswift.me",
   trailingSlash: "always",
   integrations: [mdx(), svelte(), sitemap()],
+  vite: {
+    build: {
+      // three.js bundle is ~725 kB
+      chunkSizeWarningLimit: 800,
+    },
+  },
   markdown: {
     remarkPlugins: [[remarkSmartypants, { dashes: "oldschool" }], remarkDirective, remarkContainers],
     shikiConfig: {
