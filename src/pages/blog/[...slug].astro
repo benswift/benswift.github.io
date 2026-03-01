@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content"
+import PostLayout from "../../layouts/PostLayout.astro"
+import { extractDescription } from "../../utils/excerpt"
+import { getAtUri } from "../../utils/atproto"
+import { render } from "astro:content"
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", (entry) => {
+    return entry.data.published !== false
+  })
+
+  return posts
+    .filter((post) => {
+      // Only include posts with date-based paths: YYYY/MM/DD/slug
+      return /^\d{4}\/\d{2}\/\d{2}\//.test(post.id)
+    })
+    .map((post) => {
+      // post.id is like "2024/08/12/some-post.md" or "2024/08/12/some-post.mdx"
+      const slug = post.id.replace(/\.mdx?$/, "")
+
+      // Extract date from path
+      const match = post.id.match(/^(\d{4})\/(\d{2})\/(\d{2})\/(.+?)(?:\.mdx?)?$/)
+      const date = match ? `${match[1]}-${match[2]}-${match[3]}` : ""
+      const postSlug = match?.[4] ?? ""
+
+      return {
+        params: { slug },
+        props: { post, date, postSlug },
+      }
+    })
+}
+
+const { post, date, postSlug } = Astro.props
+const { Content } = await render(post)
+
+// Read the source file for description extraction if needed
+const description = post.data.description || extractDescription(post.body ?? "")
+const atUri = getAtUri(post.id)
+const relativePath = `blog/${post.id}`
+---
+
+<PostLayout
+  title={post.data.title}
+  date={date}
+  tags={post.data.tags}
+  description={description}
+  image={post.data.image}
+  atUri={atUri}
+  slug={postSlug}
+  relativePath={relativePath}
+>
+  <Content />
+</PostLayout>

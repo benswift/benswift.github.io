@@ -1,0 +1,43 @@
+---
+interface Props {
+  file: string
+  alt?: string
+  credit?: string
+}
+
+const { file, alt = "", credit } = Astro.props
+
+const imageSrc = file.startsWith("/") ? file : `/assets/${file}`
+---
+
+<figure class="picture-container">
+  <img src={imageSrc} alt={alt} loading="lazy" />
+  {credit && <figcaption class="picture-credit">{credit}</figcaption>}
+</figure>
+
+<style>
+  .picture-container {
+    position: relative;
+    margin: 1rem 0;
+  }
+
+  .picture-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .picture-credit {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 0.875rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .picture-credit::before {
+    content: "photo: ";
+  }
+</style>

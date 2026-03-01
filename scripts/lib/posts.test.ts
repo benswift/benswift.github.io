@@ -27,7 +27,13 @@ describe("extractPostPath", () => {
     )
   })
 
-  it("handles paths without .md extension", () => {
+  it("handles .mdx extension", () => {
+    expect(extractPostPath("blog/2026/02/18/my-post.mdx")).toBe(
+      "/blog/2026/02/18/my-post",
+    )
+  })
+
+  it("handles paths without extension", () => {
     expect(extractPostPath("blog/2026/02/18/my-post")).toBe(
       "/blog/2026/02/18/my-post",
     )
@@ -86,6 +92,18 @@ describe("discoverPosts", () => {
     fs.writeFileSync(path.join(dir, "index.md"), "---\ntitle: Blog\n---\n\nIndex page.")
     const posts = discoverPosts(path.join(tmpDir, "blog"))
     expect(posts).toHaveLength(0)
+  })
+
+  it("discovers .mdx posts", () => {
+    const dir = path.join(tmpDir, "blog", "2026", "02", "18")
+    fs.writeFileSync(
+      path.join(dir, "interactive.mdx"),
+      '---\ntitle: "Interactive Post"\ntags: [web]\n---\n\nSome MDX content.',
+    )
+    const posts = discoverPosts(path.join(tmpDir, "blog"))
+    expect(posts).toHaveLength(1)
+    expect(posts[0].title).toBe("Interactive Post")
+    expect(posts[0].path).toBe("/blog/2026/02/18/interactive")
   })
 
   it("sorts posts newest first", () => {

@@ -2,7 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { createHash } from "node:crypto"
 import matter from "gray-matter"
-import { extractDescription } from "../../.vitepress/utils/excerpt"
+import { extractDescription } from "../../src/utils/excerpt"
 
 export interface PostData {
   title: string
@@ -24,7 +24,7 @@ export function pathToRkey(postPath: string): string {
 }
 
 export function extractPostPath(relativePath: string): string {
-  const withoutExt = relativePath.replace(/\.md$/, "")
+  const withoutExt = relativePath.replace(/\.mdx?$/, "")
   return `/${withoutExt}`
 }
 
@@ -42,7 +42,7 @@ export function discoverPosts(blogDir: string): PostData[] {
       const stat = fs.statSync(fullPath)
       if (stat.isDirectory() && item !== "tag") {
         scanDir(fullPath)
-      } else if (item.endsWith(".md") && item !== "index.md") {
+      } else if ((item.endsWith(".md") || item.endsWith(".mdx")) && item !== "index.md") {
         const raw = fs.readFileSync(fullPath, "utf8")
         const { data: fm, content } = matter(raw)
 
@@ -67,7 +67,7 @@ export function discoverPosts(blogDir: string): PostData[] {
         const description = fm.description || extractDescription(raw)
 
         posts.push({
-          title: fm.title || item.replace(/\.md$/, ""),
+          title: fm.title || item.replace(/\.mdx?$/, ""),
           path: postPath,
           date,
           description,

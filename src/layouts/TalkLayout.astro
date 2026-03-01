@@ -1,0 +1,25 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import SiteFooter from "../components/SiteFooter.astro"
+import { formatDate, parseDate } from "../utils/date"
+
+interface Props {
+  title: string
+  date?: string
+  event?: string
+  description?: string
+  relativePath: string
+}
+
+const { title, date, event, description, relativePath } = Astro.props
+
+const talkDate = date ? formatDate(parseDate(date)) : null
+---
+
+<BaseLayout title={title} description={description}>
+  <h1 class="page-title">{title}</h1>
+  {talkDate && <p class="post-date">{talkDate}</p>}
+  {event && <p class="post-subtitle">{event}</p>}
+  <slot />
+  <SiteFooter relativePath={relativePath} />
+</BaseLayout>

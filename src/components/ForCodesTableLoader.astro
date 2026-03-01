@@ -1,0 +1,8 @@
+---
+import ForCodesTable from "./svelte/ForCodesTable.svelte"
+import { loadForCodes } from "../data/for-codes"
+
+const codes = loadForCodes()
+---
+
+<ForCodesTable codes={codes} client:load />

@@ -1,0 +1,97 @@
+---
+import { generateBibtex, generateCiteKey } from "../utils/citation"
+
+interface Props {
+  title: string
+  date: string
+  slug: string
+  url: string
+  atUri?: string
+}
+
+const { title, date, slug, url: postUrl, atUri } = Astro.props
+
+const year = date.split("-")[0] ?? ""
+const month = date.split("-")[1] ?? ""
+const citeKey = generateCiteKey(year, slug)
+const bibtex = generateBibtex({
+  citeKey,
+  author: "Ben Swift",
+  title,
+  url: postUrl,
+  year,
+  month,
+  atUri,
+})
+---
+
+<details class="cite-post">
+  <summary>Cite this post</summary>
+  <div class="cite-content">
+    <pre><code>{bibtex}</code></pre>
+    <button class="cite-copy" data-bibtex={bibtex}>Copy BibTeX</button>
+  </div>
+</details>
+
+<style>
+  .cite-post {
+    margin-top: 2rem;
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+  }
+
+  .cite-post summary {
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--text-2);
+    user-select: none;
+  }
+
+  .cite-content {
+    margin-top: 0.75rem;
+  }
+
+  .cite-content pre {
+    background: var(--bg-soft);
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .cite-copy {
+    margin-top: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: var(--bg-soft);
+    color: var(--text-2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .cite-copy:hover {
+    color: var(--brand-1);
+    border-color: var(--brand-1);
+  }
+</style>
+
+<script>
+  function initCiteButtons() {
+    document.querySelectorAll<HTMLButtonElement>(".cite-copy").forEach(btn => {
+      btn.addEventListener("click", async () => {
+        const bibtex = btn.dataset.bibtex
+        if (!bibtex) return
+        await navigator.clipboard.writeText(bibtex)
+        btn.textContent = "Copied"
+        setTimeout(() => (btn.textContent = "Copy BibTeX"), 2000)
+      })
+    })
+  }
+
+  initCiteButtons()
+  document.addEventListener("astro:page-load", initCiteButtons)
+</script>

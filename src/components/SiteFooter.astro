@@ -1,0 +1,87 @@
+---
+interface Props {
+  relativePath?: string
+}
+
+const { relativePath } = Astro.props
+const repoBase = "https://github.com/benswift/benswift.github.io"
+---
+
+<footer class="site-footer" data-pagefind-ignore>
+  <p>
+    designed &amp; built with
+    <a href="https://astro.build" title="Astro website">&#9889;</a>,
+    <a href="#" class="random-cafe" title="See Ben's favourite coffee shops">&#9749;</a>
+    and
+    <a href="https://www.youtube.com/watch?v=6H2FRxvsd2M" title="What is love?">&#10084;</a>
+    on unceded
+    <a href="https://www.nca.gov.au/welcome-ngunnawal-country">Ngunnawal Country</a>
+    by Ben Swift
+  </p>
+
+  {relativePath && (
+    <p class="footer-links">
+      <a
+        rel="license"
+        href="https://creativecommons.org/licenses/by-sa/4.0/"
+        class="licence"
+        aria-label="Creative Commons Attribution-ShareAlike 4.0 licence"
+      >cc by-sa</a>
+      &middot;
+      <a href={`${repoBase}/blob/main/${relativePath}`}>source</a>
+      &middot;
+      <a href={`${repoBase}/commits/main/${relativePath}`}>history</a>
+    </p>
+  )}
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--divider);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-2);
+  }
+
+  .site-footer p {
+    margin: 0.5rem 0;
+  }
+
+  .site-footer a {
+    color: var(--text-2);
+    transition: color 0.2s ease;
+  }
+
+  .site-footer a:hover {
+    color: var(--brand-1);
+  }
+
+  .footer-links {
+    font-family: var(--font-family-mono);
+    font-size: 0.8rem;
+  }
+</style>
+
+<script>
+  const cafeUrls = [
+    "https://tilleys.com.au",
+    "https://www.harvestcoffee.com.au",
+    "https://www.facebook.com/goodbrothercbr",
+    "https://frontgallerycafe.com",
+    "https://redbrick.coffee",
+  ]
+
+  function initCafe() {
+    document.querySelectorAll(".random-cafe").forEach(el => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault()
+        window.location.href = cafeUrls[Math.floor(Math.random() * cafeUrls.length)]
+      })
+    })
+  }
+
+  initCafe()
+  document.addEventListener("astro:page-load", initCafe)
+</script>

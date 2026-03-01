@@ -1,4 +1,4 @@
-name: Deploy VitePress site to Pages
+name: Deploy Astro site to Pages
 
 on:
   push:
@@ -44,13 +44,13 @@ jobs:
           ATP_IDENTIFIER: ${{ secrets.ATP_IDENTIFIER }}
           ATP_APP_PASSWORD: ${{ secrets.ATP_APP_PASSWORD }}
 
-      - name: Build with VitePress
+      - name: Build with Astro
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: dist
 
       - name: Commit state changes
         run: |

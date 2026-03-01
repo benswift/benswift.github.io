@@ -1,0 +1,54 @@
+---
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+  isPost?: boolean
+  date?: string
+  atUri?: string
+}
+
+const { title, description, image, isPost = false, date, atUri } = Astro.props
+
+const siteTitle = "benswift.me"
+const hostname = "https://benswift.me"
+const defaultImage = "/assets/images/pages/theremin-75.webp"
+
+const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
+const url = new URL(Astro.url.pathname, hostname).href
+const imageUrl = image
+  ? image.startsWith("http") ? image : `${hostname}${image}`
+  : `${hostname}${defaultImage}`
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="/favicon.ico" />
+<title>{pageTitle}</title>
+
+<meta name="author" content="Ben Swift" />
+{description && <meta name="description" content={description} />}
+
+<!-- Open Graph -->
+<meta property="og:url" content={url} />
+<meta property="og:type" content={isPost ? "article" : "website"} />
+<meta property="og:site_name" content={siteTitle} />
+{title && <meta property="og:title" content={title} />}
+{description && <meta property="og:description" content={description} />}
+<meta property="og:image" content={imageUrl} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@benswift" />
+{title && <meta name="twitter:title" content={title} />}
+{description && <meta name="twitter:description" content={description} />}
+<meta name="twitter:image" content={imageUrl} />
+
+<!-- AT Protocol -->
+{atUri && <link rel="site.standard.document" href={atUri} />}
+
+<!-- Citation metadata -->
+{isPost && title && <meta name="citation_title" content={title} />}
+{isPost && <meta name="citation_author" content="Ben Swift" />}
+{isPost && date && <meta name="citation_date" content={date} />}
+{isPost && <meta name="citation_public_url" content={url} />}

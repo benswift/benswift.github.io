@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "../../layouts/PageLayout.astro"
+import { formatDate, parseDate } from "../../utils/date"
+
+const allGigs = await getCollection("livecoding")
+
+const gigs = allGigs
+  .map((gig) => {
+    const slug = gig.id.replace(/\.md$/, "")
+
+    let dateStr = "2000-01-01"
+    const filenameMatch = gig.id.match(/^(\d{4}-\d{2}-\d{2})/)
+    if (filenameMatch) dateStr = filenameMatch[1]
+    else if (gig.data.date) dateStr = String(gig.data.date)
+
+    return {
+      title: gig.data.title,
+      url: `/livecoding/${slug}/`,
+      dateStr,
+      dateFormatted: formatDate(parseDate(dateStr)),
+      venue: gig.data.venue,
+      slug,
+    }
+  })
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
+---
+
+<PageLayout title="Livecoding" relativePath="livecoding/index.md">
+  <figure class="picture-container">
+    <img
+      src="/assets/images/livecoding/smcclab-live-1.webp"
+      alt="Livecoding performance at SMCClab live #1 in Nov 2025"
+      loading="lazy"
+    />
+  </figure>
+
+  <p>
+    The nature of livecoding is that it is performed (improvised) in-the-moment; the
+    gig (performance) <em>is</em> the output (that's why it's called <strong>live</strong>coding), and
+    any artefact (e.g. a video recording) is useful documentation, but only a trace
+    of the work itself.
+  </p>
+
+  <p>
+    Still, documentation is an important part of one's artistic practice, so here's
+    a bunch of photos and videos from my gigs. Some of them are nice &amp;
+    slick-looking, some of them are super-grungy videos shot on smartphones in the
+    crowd. Although I'm working hard to track down any old videos, some of these
+    gigs are lost to time. I like to assume that they were the best ones ;)
+  </p>
+
+  <hr />
+
+  <ul class="post-list">
+    {gigs.map((gig) => (
+      <li class="post-item">
+        <a href={gig.url} class="post-item-title">{gig.title}</a>
+        <span class="post-item-date">{gig.dateFormatted}</span>
+        {gig.venue && <span class="post-item-venue"> - {gig.venue}</span>}
+      </li>
+    ))}
+  </ul>
+</PageLayout>

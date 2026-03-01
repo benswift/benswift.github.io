@@ -1,0 +1,18 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import SiteFooter from "../components/SiteFooter.astro"
+
+interface Props {
+  title?: string
+  description?: string
+  relativePath?: string
+}
+
+const { title, description, relativePath } = Astro.props
+---
+
+<BaseLayout title={title} description={description}>
+  {title && <h1 class="page-title">{title}</h1>}
+  <slot />
+  <SiteFooter relativePath={relativePath} />
+</BaseLayout>

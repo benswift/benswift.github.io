@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from "astro:content"
+import TalkLayout from "../../layouts/TalkLayout.astro"
+import { extractDescription } from "../../utils/excerpt"
+
+export async function getStaticPaths() {
+  const talks = await getCollection("talks")
+  return talks
+    .filter((talk) => talk.data.layout !== "reveal")
+    .map((talk) => {
+      const slug = talk.id.replace(/\.md$/, "")
+      return {
+        params: { slug },
+        props: { talk },
+      }
+    })
+}
+
+const { talk } = Astro.props
+const { Content } = await render(talk)
+const description = extractDescription(talk.body ?? "")
+const relativePath = `talks/${talk.id}`
+---
+
+<TalkLayout
+  title={talk.data.title}
+  date={talk.data.date}
+  event={talk.data.event}
+  description={description}
+  relativePath={relativePath}
+>
+  <Content />
+</TalkLayout>

@@ -1,0 +1,56 @@
+---
+import "@fontsource-variable/atkinson-hyperlegible-next"
+import "@fontsource-variable/atkinson-hyperlegible-next/wght-italic.css"
+import "@fontsource-variable/atkinson-hyperlegible-mono"
+import "@fontsource-variable/atkinson-hyperlegible-mono/wght-italic.css"
+import "../styles/global.css"
+import Head from "../components/Head.astro"
+import Nav from "../components/Nav.astro"
+import { ClientRouter } from "astro:transitions"
+
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+  isPost?: boolean
+  date?: string
+  atUri?: string
+}
+
+const { title, description, image, isPost, date, atUri } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <Head
+      title={title}
+      description={description}
+      image={image}
+      isPost={isPost}
+      date={date}
+      atUri={atUri}
+    />
+    <ClientRouter />
+    <script is:inline>
+      function applyTheme() {
+        const theme = localStorage.getItem("theme")
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark")
+        } else {
+          document.documentElement.classList.remove("dark")
+        }
+      }
+      applyTheme()
+      if (!window._themeListenerAttached) {
+        document.addEventListener("astro:after-swap", applyTheme)
+        window._themeListenerAttached = true
+      }
+    </script>
+  </head>
+  <body>
+    <Nav />
+    <main data-pagefind-body>
+      <slot />
+    </main>
+  </body>
+</html>
