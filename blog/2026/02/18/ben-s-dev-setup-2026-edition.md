@@ -67,6 +67,15 @@ app, so that Claude Code can even e.g. open a file in helix and issue commands
 to do stuff. That's been really handy for debugging things when they haven't
 worked correctly.
 
+The other thing about running multiple agentic coding sessions is that they
+leave stuff behind---orphaned browser processes, dev servers still listening on
+random ports, that kind of thing. I wrote a small
+[`lsagents`](https://github.com/benswift/.dotfiles/blob/main/bin/lsagents)
+script that gives me a live dashboard of all running AI agents, stray processes
+and dev servers on the machine. It's become one of those tools I didn't know I
+needed until I had five Claude Code sessions, two Geminis, a Codex and a handful of phantom
+Vite servers all competing for resources.
+
 Anyway, we'll see if this stack satisfies me long-term---at this rate of change
 (20 years in Emacs, then 2 years in Zed) I might be changing it all up again in
 2 months.
