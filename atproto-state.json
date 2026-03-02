@@ -2,11 +2,11 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
-    "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": "94bda7aff19281bdc5239f2ebd7e9d1d79f73c8211bdb825f9b773bd729853fa",
+    "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": "8aeade363bc401500b83759d7d4bedd328581e58688cac3127a7e05161cc9aa0",
     "/blog/2026/02/24/climbing-the-good-gradient": "b9d762457a13a2a66829d070c491e41e65a701e41b62f8aa580dbbbbfa84f2da",
     "/blog/2026/02/20/comp4020-the-core-mechanic": "42077947c366964fabcaec75a168a86f9752dadbf75358cb359e339a3824c36e",
     "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": "bb1e924c87e93b7ff5805a0b3dc656e9fda61888901a94b0e6482ab21fe96e01",
-    "/blog/2026/02/18/ben-s-dev-setup-2026-edition": "6bd047dc30ffc32181d4fee4af2f8aed7572991c16b1c3ee4eea16b5d690f55e",
+    "/blog/2026/02/18/ben-s-dev-setup-2026-edition": "c7f03f46a58b23ded10aaaebee6dc42071aa97785a487f10d1a65aa163b5c6b4",
     "/blog/2026/02/17/comp4020-sharp-tools": "8ebc85a2c0749b60475bf16a00f78ae8ea43b5f3863fbc1e956b5715f242be77",
     "/blog/2026/02/09/llms-unplugged-at-brimbank-tech-school": "3025b8930a8dc50f4635619a36da16cd2e65609bf59653055cc78dc7efa55ff0",
     "/blog/2026/02/06/ai-agents-on-the-atmosphere": "83f65406e06e413d39e833b0ff72c7144eecb2a42931d7230dfcd2875f582a51",
