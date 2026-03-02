@@ -4,7 +4,7 @@ tags:
   - dev
 ---
 
-I wrote a [reveal.js](/blog/2018/09/28/another-reveal.js-plugin-for-jekyll)
+I wrote a [reveal.js](/blog/2018/09/28/another-revealjs-plugin-for-jekyll/)
 plugin for Jekyll so that I can make nice slides (especially for my
 [ANU](https://cs.anu.edu.au/courses/comp1720/lectures/)
 [courses](https://cs.anu.edu.au/courses/comp2300/lectures/)). Recently, though,
@@ -32,7 +32,7 @@ builds in **7.2 seconds** on my machine.
 
 Clearly, the `reveal.html` layout is the problem, taking 4.1s (more than half
 the total build time). I suspect that this is because my
-[reveal plugin](/blog/2018/09/28/another-reveal.js-plugin-for-jekyll) does a
+[reveal plugin](/blog/2018/09/28/another-revealjs-plugin-for-jekyll/) does a
 bunch of copying of (Nokogiri) XML nodes, because I wasn't worrying about
 performance when I wrote it.
 
@@ -46,7 +46,7 @@ copying originally, but with a bit of careful re-parenting the `revealify.rb`
 plugin now looks like
 [this](https://github.com/benswift/benswift.github.io/blob/source/_plugins/revealify.rb)
 (see the
-[linked post above](/blog/2018/09/28/another-reveal.js-plugin-for-jekyll) to see
+[linked post above](/blog/2018/09/28/another-revealjs-plugin-for-jekyll/) to see
 what it looked like before).
 
 And the result? Total build time is down to **2.8 seconds**. Admittedly that was

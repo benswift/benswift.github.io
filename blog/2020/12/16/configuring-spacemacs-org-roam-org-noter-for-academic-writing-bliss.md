@@ -16,7 +16,7 @@ writing---keeping notes about stuff I've read & linking the ideas together.
 
 All the cool kids are raving about the [Zettelkasten](https://zettelkasten.de)
 method, and the [org-roam](https://www.orgroam.com) package supporting this
-workflow in [Emacs](/blog/tag/dev). There are also extensions for managing one's
+workflow in [Emacs](/blog/tag/dev/). There are also extensions for managing one's
 paper library ([org-roam-bibtex](https://github.com/org-roam/org-roam-bibtex))
 and reading/annotating pdf files
 ([org-noter](https://github.com/weirdNox/org-noter)). When combined, this all

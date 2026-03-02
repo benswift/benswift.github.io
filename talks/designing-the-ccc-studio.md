@@ -200,7 +200,7 @@ within the ANU Research School of Computer Science.
 He is a [livecoder](/livecoding/), and is the vice president of the
 [Australasian Computer Music Association](https://computermusic.org.au) (ACMA).
 Ben is one of the inaugural
-[ANU Reimagine Fellows](/blog/2019/08/30/Im-a-reimagine-fellow), part of a
+[ANU Reimagine Fellows](/blog/2019/08/30/im-a-reimagine-fellow/), part of a
 [$300m+ investment from the ANU](https://cecs.anu.edu.au/reimagine) charged with
 re-thinking (and re-doing) what it is to be a computer scientist in the 21st
 century.

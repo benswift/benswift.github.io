@@ -6,8 +6,8 @@ tags: [comp4020]
 :::info
 
 This post is part of a series I'm writing as I develop
-[COMP4020/8020: Rapid Prototyping for the Web](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web).
-See [all posts in the series](/blog/tag/comp4020).
+[COMP4020/8020: Rapid Prototyping for the Web](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/).
+See [all posts in the series](/blog/tag/comp4020/).
 
 :::
 
@@ -80,7 +80,7 @@ done.
 Re: option 1, Kathi Fisler and colleagues are teaching an
 [Agentic Coding course at Brown](https://cs.brown.edu/courses/csci1970kf/agentic-spr-2026/index.html)
 right now which uses a similar approach (even explicity using the studio/crit
-approach [like I am](/blog/2026/02/20/comp4020-the-core-mechanic)). What they're
+approach [like I am](/blog/2026/02/20/comp4020-the-core-mechanic/)). What they're
 doing is re-imbursing students 20USD/month for a Claude Code Pro plan, and it
 [seems to be going well](https://bsky.app/profile/kfisler.bsky.social/post/3mfm5hpshds2j).
 My preference is to not have to have students pay out-of-pocket and get

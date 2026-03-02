@@ -18,7 +18,7 @@ future, so if you're interested in that sort of thing then come back to check
 for updates on this blog (I'll use the `covid19` tag).
 
 That means that some aspects of my creative coding work are _temporarily_ on the
-back burner (although I'm still teaching the [Laptop Ensemble](/blog/tag/lens)).
+back burner (although I'm still teaching the [Laptop Ensemble](/blog/tag/lens/)).
 I can't complain too much---covid19 has put lots of stuff on the back burner all
 over the world. In fact, I'm thankful to (a) have a job and (b) have a sense of
 agency about all this stuff; the feeling of impotence as an individual in a big

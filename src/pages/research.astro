@@ -59,7 +59,7 @@ const years = Object.keys(pubsByYear).sort((a, b) => b.localeCompare(a))
       <div class="year-section">
         <h3 id={year}>{year}</h3>
         {pubsByYear[year].map((pub) => (
-          <div class="pub-item">
+          <div class="pub-item" id={pub.key}>
             <p class="pub-title">
               {pub.doi ? (
                 <a href={`https://doi.org/${pub.doi}`} target="_blank">{pub.title}</a>

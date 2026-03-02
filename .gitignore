@@ -4,6 +4,7 @@ dist/
 .vitepress/
 
 .unlighthouse
+.link-checker
 
 # Node
 node_modules/

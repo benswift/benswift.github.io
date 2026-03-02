@@ -12,8 +12,8 @@ I've been getting a bunch of emails asking me if I'm teaching
 The short answer : **no**. The slightly longer answer is that while I'll always
 love COMP2300 (it's the first course I got to design & write myself) my energies
 for the next couple of years are going to be poured into the
-[c/c/c studio](/blog/2019/03/20/reimagine-fellow-project-pitch) (as part of my
-[Reimagine Fellowship](/blog/2019/08/30/Im-a-reimagine-fellow)). In 2020,
+[c/c/c studio](/blog/2019/03/20/reimagine-fellow-project-pitch/) (as part of my
+[Reimagine Fellowship](/blog/2019/08/30/im-a-reimagine-fellow/)). In 2020,
 [Charles Martin](https://cs.anu.edu.au/code-creativity-culture/charles-martin/)
 will be convening & running COMP2300---and he'll do a great job. I'll probably
 pop in from time to time to give a guest lecture (and maybe even sing a revision

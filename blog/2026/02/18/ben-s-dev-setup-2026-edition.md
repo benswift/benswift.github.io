@@ -16,7 +16,7 @@ consuming and producing text and calling CLI tools which do the same.
 
 So I've re-jigged my entire development workflow again. Emacs lasted me ~20
 years, and
-[while I like Zed and enjoyed the setup](/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai)
+[while I like Zed and enjoyed the setup](/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai/)
 I've moved on from that just two years later. This year, as part of my
 commitment to a life lived in tokens, I'm moving back to purely terminal
 apps[^oss].
@@ -34,7 +34,7 @@ The core of it is
   provide a pretty-close-to-IDE experience
 - [yazi](https://yazi-rs.github.io/) as a file browser
 - [neomutt](https://neomutt.org/) for emails, as I've
-  [already discussed here](/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp)
+  [already discussed here](/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp/)
 - [nb](https://xwmx.github.io/nb/) for a file-based "personal knowledge base",
   think Obsidian but without the GUI app
 

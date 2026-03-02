@@ -70,7 +70,7 @@ part of next year's cohort---[drop me a line](mailto:ben.swift@anu.edu.au) if
 you'd like some tips on how to prepare for that process.
 
 To any **prospective/future students** (i.e. those who were hoping to take
-[one of my classes](/teaching) in the future) the news is a bit more mixed. I'll
+[one of my classes](/teaching/) in the future) the news is a bit more mixed. I'll
 still be involved with the
 [Laptop Ensemble](https://comp.anu.edu.au/courses/laptop-ensemble/), and the
 current plan is that other courses I've designed & taught (e.g.

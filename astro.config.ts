@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config"
 import mdx from "@astrojs/mdx"
 import svelte from "@astrojs/svelte"
 import sitemap from "@astrojs/sitemap"
+import brokenLinksChecker from "astro-broken-links-checker"
 import remarkSmartypants from "remark-smartypants"
 import remarkDirective from "remark-directive"
 import { remarkContainers } from "./src/plugins/remark-containers"
@@ -11,7 +12,12 @@ import armasmGrammar from "./src/grammars/armasm.tmLanguage.json"
 export default defineConfig({
   site: "https://benswift.me",
   trailingSlash: "always",
-  integrations: [mdx(), svelte(), sitemap()],
+  // TODO remove these redirects once the talk slide decks are added back in
+  redirects: {
+    "/talks/p5-hour-of-code": "/talks/",
+    "/talks/designing-the-ccc-studio": "/talks/",
+  },
+  integrations: [mdx(), svelte(), sitemap(), brokenLinksChecker({ checkExternalLinks: false })],
   vite: {
     build: {
       // three.js bundle is ~725 kB

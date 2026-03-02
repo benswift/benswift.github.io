@@ -6,11 +6,11 @@ tags:
 ---
 
 I've been writing about agentic AI for a while now---from
-[LLMs gaining the ability to act on the world](/blog/2025/07/17/agentic-ai-llms-with-stones),
+[LLMs gaining the ability to act on the world](/blog/2025/07/17/agentic-ai-llms-with-stones/),
 to
-[what coding agents mean for how we think about code](/blog/2025/12/23/coding-agents-and-the-plasticity-of-code),
+[what coding agents mean for how we think about code](/blog/2025/12/23/coding-agents-and-the-plasticity-of-code/),
 to
-[the power of new interfaces for agentic systems](/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai).
+[the power of new interfaces for agentic systems](/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai/).
 But over the last few months something different has been brewing. People are
 building _stateful_ agents---systems that don't just respond to prompts but
 persist, remember, reflect, and (at least in the eyes of their creators) grow

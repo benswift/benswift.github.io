@@ -26,7 +26,7 @@ designer wanted---pitch me |
 <SlideBackgroundImage image="images/talks/socy-masters-lecture-workshop-2021/ben-ushini-acmc21-frame.webp" heading="intro" />
 
 (I assume you've done the
-[pre-reading/watching](/blog/2021/09/13/feedback-in-livecoding-cui-bono))
+[pre-reading/watching](/blog/2021/09/13/feedback-in-livecoding-cui-bono/))
 
 <hr class="impact center" data-background-color="#262626" />
 

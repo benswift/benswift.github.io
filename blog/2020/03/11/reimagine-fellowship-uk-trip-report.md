@@ -6,7 +6,7 @@ tags:
 
 I was lucky enough to be able to spend most of February in the UK on a research
 visit as part of my
-[Reimagine Fellowship](/blog/2019/08/30/Im-a-reimagine-fellow)---designing &
+[Reimagine Fellowship](/blog/2019/08/30/im-a-reimagine-fellow/)---designing &
 delivering a "creative" coding extension course for ACT students in year 11
 & 12.
 
@@ -15,13 +15,13 @@ time, and more importantly has helped me pose better questions in the future. A
 few trip highlights:
 
 - the International Conference on Live Coding (ICLC '20) was super-fun,
-  [performing at the conference Algorave](/livecoding/2020-02-07-iclc-20) was a
+  [performing at the conference Algorave](/livecoding/2020-02-07-iclc-20/) was a
   nice chance to show off some of the more recent work in
   [Extempore](https://github.com/digego/extempore), being invited to run an
   [Extempore workshop](https://iclc.toplap.org/2020/schedule.html) was an
   important chance to road test some of the "creative coding teaching materials"
   I'll be rolling out next year through the
-  [c/c/c studio creative code outreach program](/blog/2019/03/20/reimagine-fellow-project-pitch)
+  [c/c/c studio creative code outreach program](/blog/2019/03/20/reimagine-fellow-project-pitch/)
 - hanging out with [Sam Aaron](https://twitter.com/samaaron) (of
   [Sonic Pi](https://sonic-pi.net) fame) to discuss ways to use creative coding
   as a diverse & inclusive pathway into computing, the architecture of

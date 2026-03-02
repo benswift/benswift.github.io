@@ -5,7 +5,7 @@ tags:
 ---
 
 A quick update on
-[Extempore on aarch64](/blog/2025/12/17/extempore-s-aliiiiive-on-aarch64):
+[Extempore on aarch64](/blog/2025/12/17/extempore-s-aliiiiive-on-aarch64/):
 
 - [CI is now green](https://github.com/digego/extempore/actions) on macOS,
   Windows, and _two_ Linux architectures (aarch64 and x64)
@@ -20,7 +20,7 @@ A quick update on
   [tree-sitter grammar](https://github.com/extemporelang/tree-sitter-extempore)
   for extempore (Scheme + xtlang) and some _very_ hacked-together support for
   evaling code in [helix](https://helix-editor.com) (which
-  [I'm using these days](/blog/2026/02/18/ben-s-dev-setup-2026-edition))
+  [I'm using these days](/blog/2026/02/18/ben-s-dev-setup-2026-edition/))
 - there's now
   [a repl](https://github.com/digego/extempore/commit/c76be4d24e3315cc80acb1a244fda6aff7003bce),
   although only on macOS/Linux at the moment

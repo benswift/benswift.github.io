@@ -6,8 +6,8 @@ tags: [comp4020, teaching]
 :::info
 
 This post is part of a series I'm writing as I develop
-[COMP4020/8020: Rapid Prototyping for the Web](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web).
-See [all posts in the series](/blog/tag/comp4020).
+[COMP4020/8020: Rapid Prototyping for the Web](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/).
+See [all posts in the series](/blog/tag/comp4020/).
 
 :::
 
@@ -49,7 +49,7 @@ fifteen properties of living structure---and Herbert Simon
 as heuristic search through vast solution spaces.
 
 With that in mind, and also referencing my "weekly crit sessions"
-[core mechanic post](/blog/2026/02/20/comp4020-the-core-mechanic), I think the
+[core mechanic post](/blog/2026/02/20/comp4020-the-core-mechanic/), I think the
 core principles I want to teach are around designing feedback loops (at multiple
 scales) to help guide us towards the good. If **good** is a scalar field over
 the space of possible codebases, then ∇**good**---the direction of steepest

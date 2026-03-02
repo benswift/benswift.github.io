@@ -27,7 +27,7 @@ So, here's my list of things to try in 2020:
   their nice workflow stuff (e.g. serverless functions)
 
 - package up my
-  [reveal slides](/blog/2018/09/28/another-reveal.js-plugin-for-jekyll) plugin
+  [reveal slides](/blog/2018/09/28/another-revealjs-plugin-for-jekyll/) plugin
   on npm (if I switch to Eleventy) or RubyGems (if I stay with Jekyll) so that
   others can use them
 
@@ -37,6 +37,6 @@ So, here's my list of things to try in 2020:
 
 There's no timeline on any of this, and I'm going to be busy with other things
 (e.g. my
-[Reimagine Fellowship](/blog/2019/03/20/reimagine-fellow-project-pitch),
+[Reimagine Fellowship](/blog/2019/03/20/reimagine-fellow-project-pitch/),
 updating the [Extempore](https://github.com/digego/extempore) docs and generally
-[doing good research](/research)).
+[doing good research](/research/)).
