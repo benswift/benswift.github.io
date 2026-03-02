@@ -1,10 +1,5 @@
 # benswift.me blog post writing style guide
 
-This is a colocated jj repo---use `jj` for all version control operations, not
-`git`. The main branch is `main`. Before pushing, always `jj git fetch` and
-rebase onto `main@origin` to handle CI commits (e.g. atproto state updates)
-that land between fetches.
-
 This is an Astro site with Svelte 5 for interactive components and MDX for posts
 that use them. Always use ts (not js) and follow Astro conventions wherever
 possible. Stick to modern best practices, e.g. es6 modules.
