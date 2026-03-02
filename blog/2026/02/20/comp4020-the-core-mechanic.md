@@ -163,3 +163,9 @@ while others are pretty... meh.
 
 - create a datavis website for a dataset that you think should be better
   known/understood
+
+- create a SKILL.md file which allows you to one-shot any assessment item from
+  any ANU course (including this one!)
+
+- create a (mini) social app which is as beneficial (or destructive) to modern
+  liberal democracy as possible
