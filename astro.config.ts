@@ -25,7 +25,6 @@ export default defineConfig({
         light: "github-light",
         dark: "github-dark",
       },
-      // eslint-disable-next-line typescript-eslint/no-explicit-any -- Shiki grammar JSON types don't match exactly
       langs: [
         {
           ...xtlangGrammar as Record<string, unknown>,

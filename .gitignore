@@ -2,16 +2,10 @@
 dist/
 .astro/
 
-# VitePress
-.vitepress/cache/
-
 .unlighthouse
 
 # Node
 node_modules/
-
-# ClojureScript
-.cljs_node_repl/
 
 # Secrets
 .env*
