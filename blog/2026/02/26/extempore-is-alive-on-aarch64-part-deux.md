@@ -65,7 +65,7 @@ audio libraries[^bench-setup]:
 | `libs/external/audio_dsp_ext.xtm`   |       5.51s |      4.28s |      1.3x |
 | `libs/external/instruments_ext.xtm` |      12.57s |      9.26s |      1.4x |
 | `libs/external/portmidi.xtm`        |       4.86s |      3.35s |      1.5x |
-| **Total**                           | **215.96s** | **52.94s** |  **4.1x** |
+| **Total**                           | **215.9s**  | **52.9s**  |  **4.1x** |
 
 The headline number is a 4.1x wall-clock speedup, but each invocation includes
 ~3s of startup overhead (there's a hard-coded `sleep` for NSApp initialisation
