@@ -44,7 +44,7 @@ export function discoverPosts(blogDir: string): PostData[] {
         scanDir(fullPath)
       } else if ((item.endsWith(".md") || item.endsWith(".mdx")) && item !== "index.md") {
         const raw = fs.readFileSync(fullPath, "utf8")
-        const { data: fm, content } = matter(raw)
+        const { data: fm } = matter(raw)
 
         if (fm.published === false) continue
 

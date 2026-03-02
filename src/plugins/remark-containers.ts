@@ -30,7 +30,7 @@ export function remarkContainers() {
               type: "paragraph",
               data: { hName: "summary" },
               children: summary.children,
-            } as DirectiveNode)
+            } as unknown as DirectiveNode)
           }
         } else if (["tip", "info", "warning", "danger"].includes(type)) {
           const data = directive.data || (directive.data = {})
@@ -49,7 +49,7 @@ export function remarkContainers() {
             type: "paragraph",
             data: { hName: "p", hProperties: { class: "custom-block-title" } },
             children: title,
-          } as DirectiveNode)
+          } as unknown as DirectiveNode)
         }
       }
     })

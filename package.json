@@ -7,13 +7,13 @@
     "dev": "astro dev",
     "build": "astro build && npx pagefind --site dist",
     "preview": "astro preview",
-    "typecheck": "astro check",
+    "typecheck": "astro check && svelte-check --tsconfig ./tsconfig.json",
     "post": "npx tsx scripts/new-post.ts",
     "lighthouse": "npx tsx scripts/lighthouse-audit.ts",
     "atproto:publish": "npx tsx scripts/atproto-publish.ts",
     "test": "vitest run",
-    "lint": "oxlint --ignore-pattern public/assets/js/Winwheel.js --ignore-pattern 'dist/**' --ignore-pattern '**/*.astro' --ignore-pattern '**/*.svelte'",
-    "lint:fix": "oxlint --fix --ignore-pattern public/assets/js/Winwheel.js --ignore-pattern 'dist/**' --ignore-pattern '**/*.astro' --ignore-pattern '**/*.svelte'"
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "author": "Ben Swift",
   "license": "MIT",
@@ -25,9 +25,8 @@
     "@atproto/api": "^0.19.0",
     "@iconify-json/fa6-brands": "^1.2.0",
     "@iconify-json/fa6-solid": "^1.2.0",
-    "@nkzw/eslint-plugin": "^2.0.0",
-    "@nkzw/oxlint-config": "^1.0.1",
     "@types/node": "^25.3.0",
+    "@types/three": "^0.183.1",
     "astro": "^5.0.0",
     "astro-icon": "^1.1.0",
     "bibtex-parse": "^2.1.0",
@@ -40,8 +39,8 @@
     "remark-directive": "^4.0.0",
     "svelte": "^5.0.0",
     "typescript": "^5.9.3",
-    "@types/three": "^0.183.1",
     "unist-util-visit": "^5.0.0",
+    "svelte-check": "^4.4.4",
     "vitest": "^4.0.18"
   },
   "dependencies": {

@@ -19,21 +19,15 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [[remarkSmartypants, { dashes: "oldschool" }], remarkDirective, remarkContainers],
+    remarkPlugins: [[remarkSmartypants as never, { dashes: "oldschool" }], remarkDirective, remarkContainers],
     shikiConfig: {
       themes: {
         light: "github-light",
         dark: "github-dark",
       },
       langs: [
-        {
-          ...xtlangGrammar as Record<string, unknown>,
-          aliases: ["extempore"],
-        },
-        {
-          ...armasmGrammar as Record<string, unknown>,
-          aliases: ["armasm"],
-        },
+        { ...xtlangGrammar, aliases: ["extempore"] } as never,
+        { ...armasmGrammar, aliases: ["armasm"] } as never,
       ],
     },
   },
