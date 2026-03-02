@@ -1,6 +1,7 @@
 # Astro
 dist/
 .astro/
+.vitepress/
 
 .unlighthouse
 
