@@ -104,6 +104,20 @@ Text after list.`
 Second paragraph.`
     expect(extractExcerpt(md)).toBe("First paragraph.")
   })
+
+  test("skips MDX import statements", () => {
+    const md = `import MyComponent from '../components/MyComponent.svelte'
+
+Actual content here.`
+    expect(extractExcerpt(md)).toBe("Actual content here.")
+  })
+
+  test("skips MDX export statements", () => {
+    const md = `export const meta = { title: "test" }
+
+Actual content here.`
+    expect(extractExcerpt(md)).toBe("Actual content here.")
+  })
 })
 
 describe("extractDescription", () => {
@@ -151,5 +165,11 @@ Description.`
 
   test("strips bold/italic markers", () => {
     expect(extractDescription("**bold** and *italic*")).toBe("bold and italic")
+  })
+
+  test("removes MDX import statements", () => {
+    expect(
+      extractDescription("import Foo from './Foo.svelte'\n\nSome description."),
+    ).toBe("Some description.")
   })
 })

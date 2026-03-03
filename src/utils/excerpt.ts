@@ -28,12 +28,13 @@ export function extractExcerpt(src: string, maxLength = 450): string {
     }
     if (inContainer) continue;
 
-    // Skip headings, images, blockquotes, list items, HTML
+    // Skip headings, images, blockquotes, list items, HTML, JS imports (MDX)
     if (/^#+\s/.test(line)) continue;
     if (line.startsWith("![")) continue;
     if (/^>\s/.test(line)) continue;
     if (/^[-*]\s/.test(line)) continue;
     if (line.startsWith("<")) continue;
+    if (/^(import|export)\s/.test(line)) continue;
 
     const trimmed = line.trim();
     if (trimmed === "") {
@@ -73,6 +74,8 @@ export function extractDescription(content: string, maxLength = 160): string {
 
   // Remove common markdown/vue elements that shouldn't be in descriptions
   const cleaned = withoutFrontmatter
+    // Remove JS import/export lines (MDX)
+    .replaceAll(/^(?:import|export)\s+.*$/gm, "")
     // Remove script/style blocks entirely (content + tags)
     .replaceAll(/<script[\s\S]*?<\/script>/gi, "")
     .replaceAll(/<style[\s\S]*?<\/style>/gi, "")
