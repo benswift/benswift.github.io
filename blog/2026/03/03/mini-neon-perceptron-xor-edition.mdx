@@ -1,0 +1,101 @@
+---
+title: "Mini neon perceptron: XOR edition"
+tags:
+  - ai
+  - web
+---
+
+import MiniPerceptron from '../../../../src/components/svelte/MiniPerceptron.svelte'
+
+The [neon perceptron](/blog/2025/12/11/neon-perceptron-digital-twin/) is coming
+along, but before we commit to the full 5×5 input build with custom PCBs and
+nine hidden neurons and seven-segment displays, we're building a smaller one
+first. A 4-input, 3-hidden, 2-output mini version---just enough to be
+interesting, and just small enough that we can actually wire it up and debug the
+thing without losing our minds.
+
+The framing for this smaller version is
+[XOR](https://en.wikipedia.org/wiki/Exclusive_or), which turns out to be a
+surprisingly perfect fit.
+
+## Why XOR matters
+
+In 1969, Marvin Minsky and Seymour Papert published
+[_Perceptrons_](https://en.wikipedia.org/wiki/Perceptrons_%28book%29)---a
+mathematical analysis of what
+[Frank Rosenblatt's](https://en.wikipedia.org/wiki/Frank_Rosenblatt)
+single-layer perceptron could and couldn't do. The headline result was that a
+single-layer perceptron can't compute XOR. It can do AND, it can do OR, but it
+can't learn to output "true" when its inputs _disagree_. The function isn't
+linearly separable, and that's that.
+
+This contributed to the first
+[AI winter](https://en.wikipedia.org/wiki/AI_winter)---a long period where
+funding and enthusiasm for neural network research dried up. The fix, of course,
+was to add more layers. A multi-layer perceptron with a hidden layer can solve
+XOR just fine. But it took until the 1980s for backpropagation to make training
+these deeper networks practical, and for the field to recover.
+
+So XOR is _the_ classic demonstration of why multi-layer networks matter. And
+that's exactly what the mini neon perceptron is: a physical, glowing
+multi-layer perceptron that you can watch solve (or attempt to solve) XOR in
+real time.
+
+## The setup
+
+The mini perceptron has a 2×2 input grid---four pixels. The task is diagonal
+detection: light up one diagonal (top-left and bottom-right) and the network
+should activate one output; light up the other diagonal (top-right and
+bottom-left) and it should activate the other. This is a 2D XOR
+problem---the network needs to distinguish between the two diagonals, which
+requires looking at the _combination_ of inputs rather than any single pixel.
+
+The two output nodes represent the two diagonals. Whichever has the higher
+activation gets a glowing halo---that's the network's answer.
+
+Between input and output sit three hidden neurons with tanh activation. The
+output layer uses softmax, so the two outputs sum to 1 and you can read them as
+a confidence distribution.
+
+<MiniPerceptron client:only="svelte" />
+
+Click on the 2×2 input grid (the blue squares on the left) to light up pixels
+and watch the activations flow through the network. The coloured wires show
+what's happening: orange for positive activations, blue for negative, with
+brightness and thickness indicating magnitude. Use "Reset" to clear the inputs
+and "Randomise" to generate a new set of weights. The wire gamma slider adjusts
+how visible weak connections are. You can orbit the camera by dragging on the
+background, and scroll to zoom.
+
+## 18 weights, 18 potentiometers
+
+The network has 12 weights from input to hidden (4×3) and 6 from hidden to
+output (3×2). That's 18 weights total.
+
+Right now they're randomly initialised, so the network won't actually detect
+diagonals---it'll just produce arbitrary outputs. But 18 is a small enough
+number that in the physical version, each weight will be a potentiometer that
+you can manually adjust[^pots]. Sit down, light up a diagonal, and twiddle the
+knobs until the right output lights up. Then check the other diagonal. Then
+check the non-diagonal patterns. Keep going until it works for all inputs.
+
+[^pots]:
+    This is how Rosenblatt's original perceptron worked too, albeit with
+    motorised potentiometers rather than manual ones. We're going even more
+    old-school.
+
+That's training a neural network by hand. No backpropagation, no gradient
+descent---just a human in the loop, adjusting weights and watching the
+activations change. It's slow and probably frustrating, but it makes the
+relationship between weights and behaviour viscerally obvious in a way that
+staring at a loss curve never will.
+
+## What's next
+
+This mini version is a prototype for the
+[full neon perceptron](https://github.com/ANUcybernetics/neon-perceptron)---a
+chance to test the physical design (flexible LEDs as wires, potentiometers for
+weights, the overall form factor) before scaling up to the
+[5×5 / 9-hidden / 10-output version](/blog/2025/12/11/neon-perceptron-digital-twin/).
+If the mini version works and looks good, we'll know the concept holds up. If
+it doesn't, better to find out with 18 weights than 315.

@@ -2,22 +2,10 @@
   import { onMount, onDestroy } from "svelte"
   import { forwardDense, softmax, xavierWeights } from "./perceptron/nn"
 
-  const SEVEN_SEGMENT_PATTERNS = [
-    [1, 1, 1, 1, 1, 1, 0],
-    [0, 1, 1, 0, 0, 0, 0],
-    [1, 1, 0, 1, 1, 0, 1],
-    [1, 1, 1, 1, 0, 0, 1],
-    [0, 1, 1, 0, 0, 1, 1],
-    [1, 0, 1, 1, 0, 1, 1],
-    [1, 0, 1, 1, 1, 1, 1],
-    [1, 1, 1, 0, 0, 0, 0],
-    [1, 1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 0, 1, 1],
-  ]
-
-  const INPUT_SIZE = 25
-  const HIDDEN_SIZE = 9
-  const OUTPUT_SIZE = 10
+  const INPUT_SIZE = 4
+  const HIDDEN_SIZE = 3
+  const OUTPUT_SIZE = 2
+  const INPUT_COLS = 2
 
   let containerEl: HTMLElement
   let isFullscreen = $state(false)
@@ -32,16 +20,17 @@
 
   let inputState: number[] = []
   const weights = { dense_0: [] as number[], dense_1: [] as number[] }
-  const layerX = { input: -4, hidden: 0, output: 4 }
+  const layerX = { input: -3, hidden: 0, output: 3 }
   const nodes: {
     input: import("three").Mesh[]
     hidden: import("three").Mesh[]
-    output: import("three").Group[]
+    output: import("three").Mesh[]
   } = { input: [], hidden: [], output: [] }
   const edges: {
     inputToHidden: import("three/addons/lines/Line2.js").Line2[]
     hiddenToOutput: import("three/addons/lines/Line2.js").Line2[]
   } = { inputToHidden: [], hiddenToOutput: [] }
+  const outputHalos: import("three").Mesh[] = []
 
   let raycaster: import("three").Raycaster
   let mouse: import("three").Vector2
@@ -50,118 +39,6 @@
   function generateRandomWeights() {
     weights.dense_0 = xavierWeights(INPUT_SIZE, HIDDEN_SIZE)
     weights.dense_1 = xavierWeights(HIDDEN_SIZE, OUTPUT_SIZE)
-  }
-
-  function createSevenSegmentGroup(T: typeof import("three"), digit: number, size = 0.4) {
-    const group = new T.Group()
-    const panelWidth = size * 0.7
-    const panelHeight = size * 1.1
-    const panelDepth = size * 0.08
-
-    const panel = new T.Mesh(
-      new T.BoxGeometry(panelWidth, panelHeight, panelDepth),
-      new T.MeshStandardMaterial({ color: 0x0a0a0a, roughness: 0.8, metalness: 0.1 }),
-    )
-    panel.position.z = -panelDepth / 2
-    group.add(panel)
-
-    const innerPanel = new T.Mesh(
-      new T.PlaneGeometry(panelWidth * 0.85, panelHeight * 0.9),
-      new T.MeshStandardMaterial({ color: 0x111111, roughness: 0.9, side: T.DoubleSide }),
-    )
-    innerPanel.position.z = 0.001
-    group.add(innerPanel)
-
-    const segmentLength = size * 0.28
-    const segmentThickness = size * 0.06
-    const halfHeight = size * 0.38
-    const halfWidth = segmentLength / 2 + segmentThickness * 0.3
-    const sl = segmentLength / 2
-    const st = segmentThickness / 2
-    const taper = st * 0.7
-
-    const segmentShape = new T.Shape()
-    segmentShape.moveTo(-sl + taper, 0)
-    segmentShape.lineTo(-sl, st)
-    segmentShape.lineTo(sl, st)
-    segmentShape.lineTo(sl + taper, 0)
-    segmentShape.lineTo(sl, -st)
-    segmentShape.lineTo(-sl, -st)
-    segmentShape.closePath()
-
-    const segmentGeometry = new T.ShapeGeometry(segmentShape)
-    const vertSegmentGeometry = segmentGeometry.clone()
-    vertSegmentGeometry.rotateZ(Math.PI / 2)
-
-    const positions = [
-      { x: 0, y: halfHeight, geom: segmentGeometry },
-      { x: halfWidth, y: halfHeight / 2, geom: vertSegmentGeometry },
-      { x: halfWidth, y: -halfHeight / 2, geom: vertSegmentGeometry },
-      { x: 0, y: -halfHeight, geom: segmentGeometry },
-      { x: -halfWidth, y: -halfHeight / 2, geom: vertSegmentGeometry },
-      { x: -halfWidth, y: halfHeight / 2, geom: vertSegmentGeometry },
-      { x: 0, y: 0, geom: segmentGeometry },
-    ]
-
-    const segments: import("three").Mesh[] = []
-    const pattern = SEVEN_SEGMENT_PATTERNS[digit]
-
-    for (let i = 0; i < 7; i++) {
-      const isOn = pattern[i] === 1
-      const material = new T.MeshStandardMaterial({
-        color: isOn ? 0xff3300 : 0x1a0800,
-        emissive: 0xff3300,
-        emissiveIntensity: isOn ? 1.0 : 0.02,
-        roughness: 0.3,
-        metalness: 0.0,
-        side: T.DoubleSide,
-      })
-      const segment = new T.Mesh(positions[i].geom.clone(), material)
-      segment.position.set(positions[i].x, positions[i].y, 0.01)
-      segment.userData = { segmentIndex: i, isOn }
-      segments.push(segment)
-      group.add(segment)
-    }
-
-    const borderWidth = panelWidth + size * 0.12
-    const borderHeight = panelHeight + size * 0.12
-    const borderThickness = size * 0.06
-
-    const borderShape = new T.Shape()
-    borderShape.moveTo(-borderWidth / 2, -borderHeight / 2)
-    borderShape.lineTo(borderWidth / 2, -borderHeight / 2)
-    borderShape.lineTo(borderWidth / 2, borderHeight / 2)
-    borderShape.lineTo(-borderWidth / 2, borderHeight / 2)
-    borderShape.lineTo(-borderWidth / 2, -borderHeight / 2)
-
-    const innerHole = new T.Path()
-    const innerW = borderWidth - borderThickness * 2
-    const innerH = borderHeight - borderThickness * 2
-    innerHole.moveTo(-innerW / 2, -innerH / 2)
-    innerHole.lineTo(innerW / 2, -innerH / 2)
-    innerHole.lineTo(innerW / 2, innerH / 2)
-    innerHole.lineTo(-innerW / 2, innerH / 2)
-    innerHole.lineTo(-innerW / 2, -innerH / 2)
-    borderShape.holes.push(innerHole)
-
-    const halo = new T.Mesh(
-      new T.ShapeGeometry(borderShape),
-      new T.MeshStandardMaterial({
-        color: 0xff1493,
-        emissive: 0xff1493,
-        emissiveIntensity: 0,
-        transparent: true,
-        opacity: 0,
-        side: T.DoubleSide,
-        roughness: 0.3,
-        metalness: 0.0,
-      }),
-    )
-    halo.position.z = 0.02
-    group.add(halo)
-
-    group.userData = { segments, digit, halo }
-    return group
   }
 
   async function initScene() {
@@ -177,7 +54,7 @@
     scene.background = new THREE.Color(0x111111)
 
     camera = new THREE.PerspectiveCamera(60, containerEl.clientWidth / containerEl.clientHeight, 0.1, 1000)
-    camera.position.set(0, 0, 8)
+    camera.position.set(0, 0, 6)
 
     renderer = new THREE.WebGLRenderer({ antialias: true })
     renderer.setSize(containerEl.clientWidth, containerEl.clientHeight)
@@ -215,45 +92,60 @@
   }
 
   function createNodes(T: typeof import("three")) {
-    const pixelSize = 0.45
+    const pixelSize = 0.55
     const pixelGeometry = new T.PlaneGeometry(pixelSize, pixelSize)
+    const spacing = 0.7
 
     for (let i = 0; i < INPUT_SIZE; i++) {
-      const row = Math.floor(i / 5)
-      const col = i % 5
+      const row = Math.floor(i / INPUT_COLS)
+      const col = i % INPUT_COLS
       const material = new T.MeshStandardMaterial({
         color: 0x4488ff, emissive: 0x4488ff, emissiveIntensity: 0.0, side: T.DoubleSide,
       })
       const node = new T.Mesh(pixelGeometry, material)
-      node.position.set(layerX.input, (2 - row) * 0.5, (col - 2) * 0.5)
+      node.position.set(layerX.input, (0.5 - row) * spacing, (col - 0.5) * spacing)
       node.rotation.y = Math.PI / 2
       node.userData = { layer: "input", index: i }
       scene.add(node)
       nodes.input.push(node)
     }
 
-    const nodeGeometry = new T.SphereGeometry(0.15, 16, 16)
+    const nodeGeometry = new T.SphereGeometry(0.18, 16, 16)
     for (let i = 0; i < HIDDEN_SIZE; i++) {
-      const row = Math.floor(i / 3)
-      const col = i % 3
       const material = new T.MeshStandardMaterial({ color: 0x44ff88, emissive: 0x44ff88, emissiveIntensity: 0.1 })
       const node = new T.Mesh(nodeGeometry, material)
-      node.position.set(layerX.hidden, (1 - row) * 0.6, (col - 1) * 0.6)
+      node.position.set(layerX.hidden, (1 - i) * 0.7, 0)
       node.userData = { layer: "hidden", index: i }
       scene.add(node)
       nodes.hidden.push(node)
     }
 
-    const circleRadius = 1.2
+    const outputGeometry = new T.SphereGeometry(0.22, 16, 16)
     for (let i = 0; i < OUTPUT_SIZE; i++) {
-      const angle = (i / OUTPUT_SIZE) * Math.PI * 2 - Math.PI / 2
-      const display = createSevenSegmentGroup(T, i, 0.35)
-      display.position.set(layerX.output, Math.sin(angle) * circleRadius, Math.cos(angle) * circleRadius)
-      display.rotation.y = Math.PI / 2
-      display.userData.layer = "output"
-      display.userData.index = i
-      scene.add(display)
-      nodes.output.push(display)
+      const material = new T.MeshStandardMaterial({
+        color: 0xff6644, emissive: 0xff6644, emissiveIntensity: 0.1,
+      })
+      const node = new T.Mesh(outputGeometry, material)
+      node.position.set(layerX.output, (0.5 - i) * 1.0, 0)
+      node.userData = { layer: "output", index: i, isWinner: false }
+      scene.add(node)
+      nodes.output.push(node)
+
+      const halo = new T.Mesh(
+        new T.TorusGeometry(0.35, 0.03, 16, 48),
+        new T.MeshStandardMaterial({
+          color: 0xff1493,
+          emissive: 0xff1493,
+          emissiveIntensity: 0,
+          transparent: true,
+          opacity: 0,
+          side: T.DoubleSide,
+        }),
+      )
+      halo.position.copy(node.position)
+      halo.rotation.y = Math.PI / 2
+      scene.add(halo)
+      outputHalos.push(halo)
     }
   }
 
@@ -317,33 +209,22 @@
     const winnerIndex = output.indexOf(maxActivation)
 
     output.forEach((activation, i) => {
-      const display = nodes.output[i]
-      if (!display?.userData.segments) return
+      const node = nodes.output[i]
+      if (!node) return
+      const mat = node.material as import("three").MeshStandardMaterial
+      mat.emissiveIntensity = 0.1 + activation * 0.9
 
-      const pattern = SEVEN_SEGMENT_PATTERNS[display.userData.digit]
-      display.userData.segments.forEach((segment: import("three").Mesh, segIdx: number) => {
-        const isOn = pattern[segIdx] === 1
-        const mat = segment.material as import("three").MeshStandardMaterial
-        if (isOn) {
-          mat.emissiveIntensity = 0.15 + activation * 0.85
-          mat.color.setHex(activation > 0.3 ? 0xff3300 : 0x661400)
-        } else {
-          mat.emissiveIntensity = 0.02
-          mat.color.setHex(0x1a0800)
-        }
-      })
-
-      const halo = display.userData.halo as import("three").Mesh
+      const halo = outputHalos[i]
       if (halo) {
         const haloMat = halo.material as import("three").MeshStandardMaterial
         if (i === winnerIndex) {
           haloMat.opacity = 0.8 + maxActivation * 0.2
           haloMat.emissiveIntensity = 1.5 + maxActivation * 0.5
-          display.userData.isWinner = true
+          node.userData.isWinner = true
         } else {
           haloMat.opacity = 0
           haloMat.emissiveIntensity = 0
-          display.userData.isWinner = false
+          node.userData.isWinner = false
         }
       }
     })
@@ -407,7 +288,7 @@
     const intersects = raycaster.intersectObjects(nodes.input)
     if (intersects.length > 0) {
       const index = intersects[0].object.userData.index
-      inputState[index] = Math.min(1, inputState[index] + 0.15)
+      inputState[index] = Math.min(1, inputState[index] + 0.3)
       updateVisualisation()
     }
   }
@@ -468,9 +349,9 @@
     if (controls) controls.update()
     const time = performance.now() * 0.003
     const pulse = 0.85 + Math.sin(time) * 0.15
-    nodes.output.forEach((display) => {
-      if (display.userData.isWinner && display.userData.halo) {
-        const haloMat = (display.userData.halo as import("three").Mesh).material as import("three").MeshStandardMaterial
+    nodes.output.forEach((node, i) => {
+      if (node.userData.isWinner && outputHalos[i]) {
+        const haloMat = outputHalos[i].material as import("three").MeshStandardMaterial
         haloMat.emissiveIntensity *= pulse
       }
     })
@@ -508,17 +389,13 @@
     }
     nodes.input.forEach((n) => { n.geometry.dispose(); (n.material as import("three").Material).dispose() })
     nodes.hidden.forEach((n) => { n.geometry.dispose(); (n.material as import("three").Material).dispose() })
-    nodes.output.forEach((g) => {
-      g.traverse((child) => {
-        const m = child as import("three").Mesh
-        if (m.geometry) m.geometry.dispose()
-        if (m.material) (m.material as import("three").Material).dispose()
-      })
-    })
+    nodes.output.forEach((n) => { n.geometry.dispose(); (n.material as import("three").Material).dispose() })
+    outputHalos.forEach((h) => { h.geometry.dispose(); (h.material as import("three").Material).dispose() })
     edges.inputToHidden.forEach((e) => { e.geometry.dispose(); (e.material as import("three").Material).dispose() })
     edges.hiddenToOutput.forEach((e) => { e.geometry.dispose(); (e.material as import("three").Material).dispose() })
     nodes.input = []; nodes.hidden = []; nodes.output = []
     edges.inputToHidden = []; edges.hiddenToOutput = []
+    outputHalos.length = 0
   }
 
   onMount(() => {
@@ -534,7 +411,7 @@
   })
 </script>
 
-<div bind:this={containerEl} class="neon-perceptron" class:fullscreen={isFullscreen}>
+<div bind:this={containerEl} class="mini-perceptron" class:fullscreen={isFullscreen}>
   <div class="controls">
     <button onclick={resetInput} title="Clear the input grid">Reset</button>
     <button onclick={randomiseWeights} title="Generate new random weights">Randomise</button>
@@ -566,7 +443,7 @@
 </div>
 
 <style>
-  .neon-perceptron {
+  .mini-perceptron {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -575,14 +452,14 @@
     overflow: hidden;
   }
 
-  .neon-perceptron.fullscreen {
+  .mini-perceptron.fullscreen {
     aspect-ratio: unset;
     width: 100vw;
     height: 100vh;
     border-radius: 0;
   }
 
-  .neon-perceptron :global(canvas) {
+  .mini-perceptron :global(canvas) {
     display: block;
   }
 
