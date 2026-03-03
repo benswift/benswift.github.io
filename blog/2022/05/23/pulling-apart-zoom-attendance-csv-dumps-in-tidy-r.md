@@ -12,7 +12,7 @@ aggregations I was after, so I hacked up a little script (in
 [tidy R](https://www.tidyverse.org)) to do it. If you ever want to do something
 similar, feel free to use it ([MIT Licence](https://mit-license.org)).
 
-```R
+```r
 read_zoom_attendance_csv = function(filename){
   read_csv(filename, show_col_types = FALSE) %>%
     # I only needed the date, not the actual start time, so I didn't bother parsing
@@ -32,14 +32,14 @@ read_zoom_attendance_csv = function(filename){
 
 Then you can read the Zoom csv file like so:
 
-```R
+```r
 df = read_zoom_attendance_csv("zoom-call.csv")
 ```
 
 And to visualise in [ggplot2](https://ggplot2.tidyverse.org) (which was my
 reason for using R in the first place) you could try something like:
 
-```R
+```r
 df %>%
   group_by(name, date) %>%
   # this was the key summarisation I was after - total time

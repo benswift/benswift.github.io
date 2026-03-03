@@ -32,7 +32,7 @@ There were a couple of tricky parts, so I include some commentary here in case
 anyone else (including future me when if I forget how this works) wants to do
 similar things.
 
-```Dockerfile
+```dockerfile
 # Choose and name our temporary image.
 FROM ruby:3.0.2 as builder
 

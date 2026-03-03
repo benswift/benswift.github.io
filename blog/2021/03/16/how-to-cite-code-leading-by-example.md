@@ -51,7 +51,7 @@ For my courses, the
 [course website](https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality)
 has an example of what a "filled out" statement might look like:
 
-```YAML
+```yaml
 declaration: >-
   I declare that everything I have submitted in this assignment is entirely my
   own work, with the following exceptions:
