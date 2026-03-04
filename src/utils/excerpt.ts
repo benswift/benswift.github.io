@@ -1,13 +1,28 @@
+import remarkMdx from "remark-mdx";
+import remarkParse from "remark-parse";
+import { unified } from "unified";
+
+const mdxParser = unified().use(remarkParse).use(remarkMdx);
+
+function stripMdxImportsExports(content: string): string {
+  const tree = mdxParser.parse(content);
+  const esmNodes = tree.children.filter((n) => n.type === "mdxjsEsm");
+  if (esmNodes.length === 0) return content;
+  return content.slice(esmNodes.at(-1)!.position!.end.offset);
+}
+
 /**
  * Extract a plain text excerpt from markdown content.
  * Removes frontmatter, markdown syntax, and returns the first paragraph.
  */
 export function extractExcerpt(src: string, maxLength = 450): string {
-  // Remove frontmatter
-  const withoutFrontmatter = src.replace(/^---[\s\S]*?---\s*/, "");
+  // Remove frontmatter and MDX imports/exports
+  const withoutPreamble = stripMdxImportsExports(
+    src.replace(/^---[\s\S]*?---\s*/, ""),
+  );
 
   // Split into lines and process
-  const lines = withoutFrontmatter.split("\n");
+  const lines = withoutPreamble.split("\n");
   const paragraphs: string[] = [];
   let currentPara = "";
   let inCodeBlock = false;
@@ -28,13 +43,12 @@ export function extractExcerpt(src: string, maxLength = 450): string {
     }
     if (inContainer) continue;
 
-    // Skip headings, images, blockquotes, list items, HTML, JS imports (MDX)
+    // Skip headings, images, blockquotes, list items, HTML
     if (/^#+\s/.test(line)) continue;
     if (line.startsWith("![")) continue;
     if (/^>\s/.test(line)) continue;
     if (/^[-*]\s/.test(line)) continue;
     if (line.startsWith("<")) continue;
-    if (/^(import|export)\s/.test(line)) continue;
 
     const trimmed = line.trim();
     if (trimmed === "") {
@@ -69,13 +83,13 @@ export function extractExcerpt(src: string, maxLength = 450): string {
  * Similar to extractExcerpt but with truncation and ellipsis.
  */
 export function extractDescription(content: string, maxLength = 160): string {
-  // Remove frontmatter
-  const withoutFrontmatter = content.replace(/^---[\s\S]*?---\s*/, "");
+  // Remove frontmatter and MDX imports/exports
+  const withoutPreamble = stripMdxImportsExports(
+    content.replace(/^---[\s\S]*?---\s*/, ""),
+  );
 
   // Remove common markdown/vue elements that shouldn't be in descriptions
-  const cleaned = withoutFrontmatter
-    // Remove JS import/export lines (MDX)
-    .replaceAll(/^(?:import|export)\s+.*$/gm, "")
+  const cleaned = withoutPreamble
     // Remove script/style blocks entirely (content + tags)
     .replaceAll(/<script[\s\S]*?<\/script>/gi, "")
     .replaceAll(/<style[\s\S]*?<\/style>/gi, "")

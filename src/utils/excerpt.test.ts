@@ -118,6 +118,24 @@ Actual content here.`
 Actual content here.`
     expect(extractExcerpt(md)).toBe("Actual content here.")
   })
+
+  test("skips multi-line MDX import statements", () => {
+    const md = `import MiniPerceptron from
+'../../../../src/components/svelte/MiniPerceptron.svelte'
+
+Actual content here.`
+    expect(extractExcerpt(md)).toBe("Actual content here.")
+  })
+
+  test("skips destructured multi-line MDX import statements", () => {
+    const md = `import {
+  Foo,
+  Bar,
+} from './components'
+
+Actual content here.`
+    expect(extractExcerpt(md)).toBe("Actual content here.")
+  })
 })
 
 describe("extractDescription", () => {
@@ -170,6 +188,22 @@ Description.`
   test("removes MDX import statements", () => {
     expect(
       extractDescription("import Foo from './Foo.svelte'\n\nSome description."),
+    ).toBe("Some description.")
+  })
+
+  test("removes multi-line MDX import statements", () => {
+    expect(
+      extractDescription(
+        "import MiniPerceptron from\n'../../../../src/components/svelte/MiniPerceptron.svelte'\n\nSome description.",
+      ),
+    ).toBe("Some description.")
+  })
+
+  test("removes destructured multi-line MDX import statements", () => {
+    expect(
+      extractDescription(
+        "import {\n  Foo,\n  Bar,\n} from './components'\n\nSome description.",
+      ),
     ).toBe("Some description.")
   })
 })
