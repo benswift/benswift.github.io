@@ -155,5 +155,23 @@ export default defineConfig({
     "unused-imports/no-unused-imports": "error",
     "use-isnan": "error",
     "valid-typeof": "error",
+
+    "no-useless-constructor": "error",
+    "no-unneeded-ternary": "error",
+    "no-useless-concat": "error",
+    "no-self-compare": "error",
+    "no-new-wrappers": "error",
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "array-callback-return": "error",
+    "no-accumulating-spread": "error",
+
+    "import-x/no-self-import": "error",
+
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
+    "@typescript-eslint/ban-ts-comment": "error",
+    "@typescript-eslint/prefer-ts-expect-error": "error",
+
+    "unicorn/prefer-set-has": "error",
   },
 });

@@ -63,7 +63,7 @@ export function loadPublications(): Publication[] {
         else if (publisher) venue = publisher
 
         const pdfPath = file
-          ? `/assets/documents/preprints/${path.basename(file.trim()).replace(/\u2013/g, "-").replace(/\u2019/g, "'")}`
+          ? `/assets/documents/preprints/${path.basename(file.trim()).replaceAll("\u2013", "-").replaceAll("\u2019", "'")}`
           : undefined
 
         return {

@@ -3,12 +3,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 
   // replace all these with the appropriate modifier for the platform
-  const modKeys = ["control", "command", "ctrl", "ctl", "cmd"];
+  const modKeys = new Set(["control", "command", "ctrl", "ctl", "cmd"]);
 
-  const modifier = navigator.appVersion.indexOf("Mac")!=-1 ? "⌘" : "CTRL";
+  const modifier = navigator.appVersion.indexOf("Mac") !== -1 ? "⌘" : "CTRL";
 
   for (const kbdElement of document.querySelectorAll("kbd")) {
-	if (modKeys.includes(kbdElement.textContent.toLowerCase()) && !kbdElement.classList.contains("nopretty")){
+	if (modKeys.has(kbdElement.textContent.toLowerCase()) && !kbdElement.classList.contains("nopretty")){
 	  kbdElement.textContent = modifier;
 	}
   }
