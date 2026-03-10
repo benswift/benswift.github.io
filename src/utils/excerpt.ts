@@ -5,10 +5,14 @@ import { unified } from "unified";
 const mdxParser = unified().use(remarkParse).use(remarkMdx);
 
 function stripMdxImportsExports(content: string): string {
-  const tree = mdxParser.parse(content);
-  const esmNodes = tree.children.filter((n) => n.type === "mdxjsEsm");
-  if (esmNodes.length === 0) return content;
-  return content.slice(esmNodes.at(-1)!.position!.end.offset);
+  try {
+    const tree = mdxParser.parse(content);
+    const esmNodes = tree.children.filter((n) => n.type === "mdxjsEsm");
+    if (esmNodes.length === 0) return content;
+    return content.slice(esmNodes.at(-1)!.position!.end.offset);
+  } catch {
+    return content;
+  }
 }
 
 /**

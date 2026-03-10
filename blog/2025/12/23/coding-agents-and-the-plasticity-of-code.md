@@ -80,7 +80,7 @@ like it, and I'm excited to see what happens as they get better.
 It's not about the plasticity stuff, but as well as using these models a lot
 this year I've also been thinking a lot about how we teach students (and the
 wider public) about what LLMs are, what they aren't and how they work. The
-fruits of that labour are now online at <https://www.llmsunplugged.org> and if
+fruits of that labour are now online at [llmsunplugged.org](https://www.llmsunplugged.org) and if
 you check them out and find them useful I'd
 [love to hear your feedback](mailto:ben@benswift.me).
 
