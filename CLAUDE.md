@@ -43,6 +43,12 @@ When discussing code or technical concepts:
 
 Use Australian English: "colour", "centre", "realise" (not "realize")
 
+## Inline HTML/SVG in markdown
+
+Never put blank lines inside inline HTML blocks (e.g. `<svg>`, `<div>`) in
+markdown files. CommonMark treats a blank line as the end of an HTML block,
+causing the rest of the HTML to be parsed as markdown and silently dropped.
+
 ## Creating new posts
 
 Run `npm run post "<title>"` to create a new blog post with the correct

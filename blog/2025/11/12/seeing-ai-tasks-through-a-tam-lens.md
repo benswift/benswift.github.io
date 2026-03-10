@@ -52,42 +52,33 @@ it yourself.
   <rect x="50" y="50" width="250" height="133" class="zone-green-light"/>
   <text x="175" y="110" text-anchor="middle" font-size="14" class="text-green" font-weight="600">Early positive</text>
   <text x="175" y="128" text-anchor="middle" font-size="12" class="text-green">impression</text>
-  
   <rect x="300" y="50" width="250" height="133" class="zone-green-dark"/>
   <text x="425" y="110" text-anchor="middle" font-size="14" class="text-green-dark" font-weight="600">Proven</text>
   <text x="425" y="128" text-anchor="middle" font-size="12" class="text-green-dark">integration</text>
-  
   <rect x="50" y="183" width="250" height="134" class="zone-orange-light"/>
   <text x="175" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">Neutral zone</text>
   <text x="175" y="261" text-anchor="middle" font-size="12" class="text-orange">(premature/speculative)</text>
-  
   <rect x="300" y="183" width="250" height="134" class="zone-orange-dark"/>
   <text x="425" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">Neutral zone</text>
   <text x="425" y="261" text-anchor="middle" font-size="12" class="text-orange">(informed)</text>
-  
   <rect x="50" y="317" width="250" height="133" class="zone-red-light"/>
   <text x="175" y="377" text-anchor="middle" font-size="14" class="text-red" font-weight="600">Premature</text>
   <text x="175" y="395" text-anchor="middle" font-size="12" class="text-red">rejection</text>
-  
   <rect x="300" y="317" width="250" height="133" class="zone-red-dark"/>
   <text x="425" y="377" text-anchor="middle" font-size="14" class="text-red-dark" font-weight="600">Informed</text>
   <text x="425" y="395" text-anchor="middle" font-size="12" class="text-red-dark">rejection</text>
-  
   <!-- Axes -->
   <line x1="50" y1="450" x2="550" y2="450" class="axis" stroke-width="2" marker-end="url(#arrowhead)"/>
   <line x1="50" y1="450" x2="50" y2="50" class="axis" stroke-width="2" marker-end="url(#arrowhead)"/>
-  
   <!-- Arrow markers -->
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <polygon points="0 0, 10 3, 0 6" class="arrowhead"/>
     </marker>
   </defs>
-  
   <!-- Axis labels -->
   <text x="300" y="485" text-anchor="middle" font-size="16" class="axis-label" font-weight="600">Familiarity →</text>
   <text x="25" y="250" text-anchor="middle" font-size="16" class="axis-label" font-weight="600" transform="rotate(-90, 25, 250)">Usefulness →</text>
-  
   <!-- Grid lines -->
   <line x1="300" y1="50" x2="300" y2="450" class="grid-line" stroke-width="1" stroke-dasharray="5,5"/>
   <line x1="50" y1="183" x2="550" y2="183" class="grid-line" stroke-width="1" stroke-dasharray="5,5"/>
