@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/03/05/comp4020-safety-yolo-and-the-open-web": "c6b8b4bb2514d3cd13274f477d8021e7283e7e788cd0bc5c02bc5a424bfb05e7",
     "/blog/2026/03/03/mini-neon-perceptron-xor-edition": "7358d0d192beb7295130a41945ca487154ebaa13bf2adf91f41073a110b02d13",
     "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": "16f27cf9548a99b48d125ce809d5a8f856122c3082ba1f1a600fbb7de9c5a48e",
     "/blog/2026/02/24/climbing-the-good-gradient": "c9f6dfa65bb7a83b3afa48cfcef3fe38a2d5b13e3cb5d2df5040ad89891e9c19",
@@ -12,7 +13,7 @@
     "/blog/2026/02/09/llms-unplugged-at-brimbank-tech-school": "3025b8930a8dc50f4635619a36da16cd2e65609bf59653055cc78dc7efa55ff0",
     "/blog/2026/02/06/ai-agents-on-the-atmosphere": "3e706fdc0f4cb21ac090d655e994dd173d219e0a3879226edf5fbb1b8e8d6f97",
     "/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai": "9eb65fea3e38239a3506cb428f8cea7470862fe2d3d0f0d4c67a145cdaec616c",
-    "/blog/2025/12/23/coding-agents-and-the-plasticity-of-code": "125ba0d2760312892674d1bd9bd3cb472ba700f3bee27765aa6c5c5dc10ec6b0",
+    "/blog/2025/12/23/coding-agents-and-the-plasticity-of-code": "beb158f10a8b1d2e2991534a3931f7985e924ec8074042425a2c984b38b21e8d",
     "/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web": "ae885cd698c3c7a6b3d5cd09708a6bea197e36e6514db2df5cafbb0abcc7b550",
     "/blog/2025/12/17/extempore-s-aliiiiive-on-aarch64": "dd9af0c33bf7c0b7516ca91954b880ad96dbab8ca3d5bec5fd9456ad092e880c",
     "/blog/2025/12/17/fixing-slow-zed-agent-startup-times": "cdce3d7ca88e71e032ba21c4d993bc6d112e770f5a438ed8d918cb7af36a5ab0",
