@@ -23,32 +23,35 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: "npm"
+          cache: "pnpm"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Lint
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Run tests
-        run: npm test
+        run: pnpm test
 
       - name: Publish to AT Protocol
-        run: npm run atproto:publish
+        run: pnpm run atproto:publish
         env:
           ATP_IDENTIFIER: ${{ secrets.ATP_IDENTIFIER }}
           ATP_APP_PASSWORD: ${{ secrets.ATP_APP_PASSWORD }}
 
       - name: Build with Astro
-        run: npm run build
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
