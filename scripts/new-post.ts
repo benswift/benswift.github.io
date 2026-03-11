@@ -1,4 +1,4 @@
-#!/usr/bin/env npx tsx
+#!/usr/bin/env pnpm exec tsx
 
 import fs from "node:fs";
 import path from "node:path";
@@ -8,8 +8,8 @@ function main() {
   const args = process.argv.slice(2);
 
   if (args.length === 0) {
-    console.error("Usage: npx tsx scripts/new-post.ts <title>");
-    console.error('Example: npx tsx scripts/new-post.ts "My New Blog Post"');
+    console.error("Usage: pnpm exec tsx scripts/new-post.ts <title>");
+    console.error('Example: pnpm exec tsx scripts/new-post.ts "My New Blog Post"');
     process.exit(1);
   }
 

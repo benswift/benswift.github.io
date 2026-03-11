@@ -51,5 +51,5 @@ causing the rest of the HTML to be parsed as markdown and silently dropped.
 
 ## Creating new posts
 
-Run `npm run post "<title>"` to create a new blog post with the correct
+Run `pnpm run post "<title>"` to create a new blog post with the correct
 frontmatter and file structure.

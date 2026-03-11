@@ -21,10 +21,10 @@ async function waitForServer(url: string, timeout = 10000): Promise<void> {
 
 async function main() {
   console.log("Building site...")
-  await execAsync("npm run build")
+  await execAsync("pnpm run build")
 
   console.log("Starting preview server...")
-  const server = spawn("npm", ["run", "preview"], {
+  const server = spawn("pnpm", ["run", "preview"], {
     stdio: "ignore",
     detached: true,
   })
@@ -34,7 +34,7 @@ async function main() {
     console.log("Server ready, running unlighthouse...")
 
     await execAsync(
-      `npx unlighthouse-ci --site ${SITE_URL} --build-static --no-cache`,
+      `pnpm exec unlighthouse-ci --site ${SITE_URL} --build-static --no-cache`,
       { maxBuffer: 10 * 1024 * 1024 }
     )
 

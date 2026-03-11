@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx pagefind --site dist",
+    "build": "astro build && pnpm exec pagefind --site dist",
     "preview": "astro preview",
     "typecheck": "astro check && svelte-check --tsconfig ./tsconfig.json",
-    "post": "npx tsx scripts/new-post.ts",
-    "lighthouse": "npx tsx scripts/lighthouse-audit.ts",
-    "atproto:publish": "npx tsx scripts/atproto-publish.ts",
+    "post": "pnpm exec tsx scripts/new-post.ts",
+    "lighthouse": "pnpm exec tsx scripts/lighthouse-audit.ts",
+    "atproto:publish": "pnpm exec tsx scripts/atproto-publish.ts",
     "test": "vitest run",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix"
