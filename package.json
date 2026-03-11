@@ -42,6 +42,7 @@
     "remark-parse": "^11.0.0",
     "svelte": "^5.53.7",
     "svelte-check": "^4.4.4",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0",
