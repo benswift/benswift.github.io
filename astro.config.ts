@@ -27,10 +27,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [[remarkSmartypants as never, { dashes: "oldschool" }], remarkDirective, remarkContainers],
     shikiConfig: {
-      themes: {
-        light: "github-light",
-        dark: "github-dark",
-      },
+      theme: "github-dark",
       langs: [
         { ...xtlangGrammar, aliases: ["extempore"] } as never,
         { ...armasmGrammar, aliases: ["armasm"] } as never,

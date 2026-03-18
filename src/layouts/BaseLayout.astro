@@ -31,21 +31,6 @@ const { title, description, image, isPost, date, atUri } = Astro.props
       atUri={atUri}
     />
     <ClientRouter />
-    <script is:inline>
-      function applyTheme() {
-        const theme = localStorage.getItem("theme")
-        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-          document.documentElement.classList.add("dark")
-        } else {
-          document.documentElement.classList.remove("dark")
-        }
-      }
-      applyTheme()
-      if (!window._themeListenerAttached) {
-        document.addEventListener("astro:after-swap", applyTheme)
-        window._themeListenerAttached = true
-      }
-    </script>
   </head>
   <body>
     <Nav />

@@ -9,20 +9,20 @@
 
 :root {
   --highlight-color: #be2edd;
-  --text-color: #333;
-  --background-color: #fafafa;
-  --text-grey: #555;
+  --text-color: #e0e0e0;
+  --background-color: #1a1a1a;
+  --text-grey: #aaa;
   --link-color: color-mix(
     in srgb,
     var(--text-color) 50%,
     var(--highlight-color)
   );
-  --brand-1: color-mix(in srgb, var(--highlight-color) 90%, black);
-  --brand-soft: color-mix(in srgb, var(--highlight-color) 14%, transparent);
-  --bg-soft: #f1f1f1;
-  --divider: #e2e2e3;
-  --text-2: #666;
-  --text-3: #999;
+  --brand-1: color-mix(in srgb, var(--highlight-color) 75%, white);
+  --brand-soft: color-mix(in srgb, var(--highlight-color) 20%, transparent);
+  --bg-soft: #252525;
+  --divider: #333;
+  --text-2: #aaa;
+  --text-3: #666;
 
   --font-family-base:
     "Atkinson Hyperlegible Next Variable", -apple-system,
@@ -32,19 +32,7 @@
     "Atkinson Hyperlegible Mono Variable", Consolas, Monaco, "Andale Mono",
     "Ubuntu Mono", monospace;
 
-  color-scheme: light dark;
-}
-
-.dark {
-  --text-color: #e0e0e0;
-  --background-color: #1a1a1a;
-  --text-grey: #aaa;
-  --brand-1: color-mix(in srgb, var(--highlight-color) 75%, white);
-  --brand-soft: color-mix(in srgb, var(--highlight-color) 20%, transparent);
-  --bg-soft: #252525;
-  --divider: #333;
-  --text-2: #aaa;
-  --text-3: #666;
+  color-scheme: dark;
 }
 
 html {
@@ -113,23 +101,14 @@ code {
 }
 
 :not(pre) > code {
-  color: var(--text-color);
-  background: linear-gradient(
-    to right,
-    color-mix(in srgb, var(--highlight-color) 25%, white),
-    color-mix(in srgb, var(--highlight-color) 30%, white)
-  );
-  padding: 0.15em 0.35em;
-  border-radius: 3px;
-}
-
-.dark :not(pre) > code {
   color: color-mix(in srgb, var(--highlight-color) 75%, white);
   background: linear-gradient(
     to right,
     color-mix(in srgb, var(--highlight-color) 30%, #111),
     color-mix(in srgb, var(--highlight-color) 20%, #111)
   );
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
 }
 
 pre {
@@ -162,49 +141,28 @@ blockquote {
 }
 
 .custom-block.tip {
-  background-color: color-mix(in srgb, var(--highlight-color) 35%, white);
+  background-color: color-mix(in srgb, var(--highlight-color) 30%, #111);
   border-left: 4px solid var(--highlight-color);
   color: var(--text-color);
 }
 
 .custom-block.tip a {
-  color: var(--highlight-color);
-}
-
-.dark .custom-block.tip {
-  background-color: color-mix(in srgb, var(--highlight-color) 30%, #111);
-  color: var(--text-color);
-}
-
-.dark .custom-block.tip a {
   color: color-mix(in srgb, var(--highlight-color) 70%, white);
 }
 
 .custom-block.info {
-  background-color: color-mix(in srgb, #3b82f6 15%, white);
+  background-color: color-mix(in srgb, #3b82f6 15%, #111);
   border-left: 4px solid #3b82f6;
 }
 
-.dark .custom-block.info {
-  background-color: color-mix(in srgb, #3b82f6 15%, #111);
-}
-
 .custom-block.warning {
-  background-color: color-mix(in srgb, #f59e0b 15%, white);
+  background-color: color-mix(in srgb, #f59e0b 15%, #111);
   border-left: 4px solid #f59e0b;
 }
 
-.dark .custom-block.warning {
-  background-color: color-mix(in srgb, #f59e0b 15%, #111);
-}
-
 .custom-block.danger {
-  background-color: color-mix(in srgb, #ef4444 15%, white);
-  border-left: 4px solid #ef4444;
-}
-
-.dark .custom-block.danger {
   background-color: color-mix(in srgb, #ef4444 15%, #111);
+  border-left: 4px solid #ef4444;
 }
 
 .custom-block.details {
