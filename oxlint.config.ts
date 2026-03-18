@@ -173,5 +173,10 @@ export default defineConfig({
     "@typescript-eslint/prefer-ts-expect-error": "error",
 
     "unicorn/prefer-set-has": "error",
+    "unicorn/prefer-includes": "error",
+    "prefer-exponentiation-operator": "error",
+    "prefer-object-has-own": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "prefer-spread": "error",
   },
 });
