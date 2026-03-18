@@ -15,9 +15,10 @@ confirm that perceived usefulness and ease of use predict whether people adopt
 these tools. But these studies treat adoption as a technology-level decision
 rather than examining the specific _tasks_ where these things are useful.
 
-A researcher might find an LLM really useful for literature search but useless for
-theoretical analysis. A journalist might rely on it for drafting routine updates
-but avoid it for investigative work. A disinfo actor will gladly use it to
+A researcher might find an LLM really useful for literature search but useless
+for theoretical analysis. A journalist might rely on it for drafting routine
+updates but avoid it for investigative work. A disinfo actor will gladly use it
+to
 ["flood the zone"](https://www.mediamatters.org/steve-bannon/misinformer-year-steve-bannons-flood-zone-shit-approach-destroying-american-democracy),
 but not for writing to their loved ones. The same person using the same model
 would give very different answers to the "are LLMs useful" depending on the task
@@ -50,22 +51,22 @@ it yourself.
 <svg class="tam-diagram" width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <!-- Background zones -->
   <rect x="50" y="50" width="250" height="133" class="zone-green-light"/>
-  <text x="175" y="110" text-anchor="middle" font-size="14" class="text-green" font-weight="600">Early positive</text>
+  <text x="175" y="110" text-anchor="middle" font-size="14" class="text-green" font-weight="600">early positive</text>
   <text x="175" y="128" text-anchor="middle" font-size="12" class="text-green">impression</text>
   <rect x="300" y="50" width="250" height="133" class="zone-green-dark"/>
-  <text x="425" y="110" text-anchor="middle" font-size="14" class="text-green-dark" font-weight="600">Proven</text>
+  <text x="425" y="110" text-anchor="middle" font-size="14" class="text-green-dark" font-weight="600">proven</text>
   <text x="425" y="128" text-anchor="middle" font-size="12" class="text-green-dark">integration</text>
   <rect x="50" y="183" width="250" height="134" class="zone-orange-light"/>
-  <text x="175" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">Neutral zone</text>
+  <text x="175" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">neutral zone</text>
   <text x="175" y="261" text-anchor="middle" font-size="12" class="text-orange">(premature/speculative)</text>
   <rect x="300" y="183" width="250" height="134" class="zone-orange-dark"/>
-  <text x="425" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">Neutral zone</text>
+  <text x="425" y="243" text-anchor="middle" font-size="14" class="text-orange" font-weight="600">neutral zone</text>
   <text x="425" y="261" text-anchor="middle" font-size="12" class="text-orange">(informed)</text>
   <rect x="50" y="317" width="250" height="133" class="zone-red-light"/>
-  <text x="175" y="377" text-anchor="middle" font-size="14" class="text-red" font-weight="600">Premature</text>
+  <text x="175" y="377" text-anchor="middle" font-size="14" class="text-red" font-weight="600">premature</text>
   <text x="175" y="395" text-anchor="middle" font-size="12" class="text-red">rejection</text>
   <rect x="300" y="317" width="250" height="133" class="zone-red-dark"/>
-  <text x="425" y="377" text-anchor="middle" font-size="14" class="text-red-dark" font-weight="600">Informed</text>
+  <text x="425" y="377" text-anchor="middle" font-size="14" class="text-red-dark" font-weight="600">informed</text>
   <text x="425" y="395" text-anchor="middle" font-size="12" class="text-red-dark">rejection</text>
   <!-- Axes -->
   <line x1="50" y1="450" x2="550" y2="450" class="axis" stroke-width="2" marker-end="url(#arrowhead)"/>
@@ -239,8 +240,48 @@ zone where using the tool is more about performance than productivity.
 
 Your mileage may vary.
 
-[^branding]:
-    The framework doesn't have a name, because I'm bad at branding... hmm.
+## Update (March 2026)
+
+After running some executive AI training recently we used this as a "stick
+post-its on the grid" activity. It was quite illuminating, but my colleague the
+awesome [Lorenn Ruster](https://lorenn.medium.com/) suggested (esp. when running
+it as an activity) that it's a bit easier for folks to get their heads around a
+2x2 grid rather than the 3x2 one above. So, here's the updated version (with
+whimsical quadrant names):
+
+<svg class="tam-diagram" width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background zones -->
+  <rect x="50" y="50" width="250" height="200" class="zone-green-light"/>
+  <text x="175" y="145" text-anchor="middle" font-size="14" class="text-green" font-weight="600">the land of hopes</text>
+  <text x="175" y="163" text-anchor="middle" font-size="14" class="text-green" font-weight="600">& dreams</text>
+  <rect x="300" y="50" width="250" height="200" class="zone-green-dark"/>
+  <text x="425" y="145" text-anchor="middle" font-size="14" class="text-green-dark" font-weight="600">becoming a part</text>
+  <text x="425" y="163" text-anchor="middle" font-size="14" class="text-green-dark" font-weight="600">of BAU</text>
+  <rect x="50" y="250" width="250" height="200" class="zone-red-light"/>
+  <text x="175" y="350" text-anchor="middle" font-size="14" class="text-red" font-weight="600">to investigate</text>
+  <rect x="300" y="250" width="250" height="200" class="zone-red-dark"/>
+  <text x="425" y="345" text-anchor="middle" font-size="14" class="text-red-dark" font-weight="600">a dud</text>
+  <text x="425" y="363" text-anchor="middle" font-size="14" class="text-red-dark" font-weight="600">(for now)</text>
+  <!-- Axes (centered) -->
+  <defs>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" class="arrowhead"/>
+    </marker>
+    <marker id="arrowhead2-rev" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto">
+      <polygon points="10 0, 0 3, 10 6" class="arrowhead"/>
+    </marker>
+  </defs>
+  <line x1="50" y1="250" x2="550" y2="250" class="axis" stroke-width="2" marker-start="url(#arrowhead2-rev)" marker-end="url(#arrowhead2)"/>
+  <line x1="300" y1="450" x2="300" y2="50" class="axis" stroke-width="2" marker-start="url(#arrowhead2-rev)" marker-end="url(#arrowhead2)"/>
+  <!-- Axis labels -->
+  <text x="80" y="270" font-size="13" class="axis-label">haven't tried</text>
+  <text x="520" y="270" text-anchor="end" font-size="13" class="axis-label">using it all the time</text>
+  <text x="320" y="440" font-size="13" class="axis-label">unhelpful</text>
+  <text x="320" y="70" font-size="13" class="axis-label">helpful</text>
+</svg>
+
+[^branding]: The framework doesn't have a name, because
+I'm bad at branding... hmm.
 
 [^ethics]:
     The moral/ethical dimension matters enormously---things like
@@ -248,8 +289,8 @@ Your mileage may vary.
     and racism aren't just "not useful", they're harmful. A tool can be both
     fast and unethical, or slow and ethical. The framework deliberately focuses
     more on the pragmatic "does this save me time?" dimension while
-    acknowledging that ethics is a separate consideration. If you like,
-    add a third "is it good for human flourishing" dimension.
+    acknowledging that ethics is a separate consideration. If you like, add a
+    third "is it good for human flourishing" dimension.
 
 <!-- styles for the TAM diagram SVG (light/dark mode) -->
 <style scoped>
