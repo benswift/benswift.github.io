@@ -1,6 +1,5 @@
 ---
 title: "The road to COMP4020: Radical openness"
-published: false
 tags: [comp4020]
 ---
 
