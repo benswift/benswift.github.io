@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/03/18/radical-openness": "6bc2d379aa01b0068fe5715e51162eb2d1f1a7e8f24dad7b47cdac874846edb2",
     "/blog/2026/03/05/comp4020-safety-yolo-and-the-open-web": "c6b8b4bb2514d3cd13274f477d8021e7283e7e788cd0bc5c02bc5a424bfb05e7",
     "/blog/2026/03/03/mini-neon-perceptron-xor-edition": "7358d0d192beb7295130a41945ca487154ebaa13bf2adf91f41073a110b02d13",
     "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": "16f27cf9548a99b48d125ce809d5a8f856122c3082ba1f1a600fbb7de9c5a48e",
@@ -22,7 +23,7 @@
     "/blog/2025/12/03/blog-archaeology": "f54ee2ee3babcdd7ca2e119d961ac69b64e306936c312299fcae4afe53ac7590",
     "/blog/2025/12/02/switching-from-jekyll-to-vitepress": "656264cd275af1f1b3f64978e0d81bc3955c6b4452523be87f3fc4df224a67ca",
     "/blog/2025/11/24/11ty-and-vite-for-modern-static-websites": "d204bba7050a90fb0485d4a5d7affaa26afcbedef5d700dc5074086880bf61b8",
-    "/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens": "f737167e8cc43fa446f1a39d02a805efda258e265cdd14db5b3c8ecbf305ef87",
+    "/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens": "d3ab0862f08973d5445de1a63b296a299f3c1ae69dced9b49de1672f11680104",
     "/blog/2025/11/11/tracking-aps-ai-transparency-statements": "8652f675c1a8c6b47dd01efca1e289f36b2f628631b2588183c6bf42a3657767",
     "/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney": "fe0398e66fbca27cce88911e89cad499dbb4b362815ea25346cdebf1ac179898",
     "/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp": "9e36f610a3a18505a68d48bbb3fc5351b8152afef0780042b3f6c81891ea5158",
