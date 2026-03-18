@@ -169,3 +169,6 @@ while others are pretty... meh.
 
 - create a (mini) social app which is as beneficial (or destructive) to modern
   liberal democracy as possible
+
+- make the web version of one of Katerina Kamprani's
+  [deliberately inconvenient objects](https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design)
