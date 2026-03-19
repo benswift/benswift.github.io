@@ -81,15 +81,8 @@
   async function resetSliders() {
     if (!apparatus) return
     const values: Record<string, number> = {}
-    for (let i = 0; i < 36; i++) values[`A${i}`] = 0
-    for (let j = 0; j < 6; j++) {
-      values[`C${j}`] = 0
-      for (let i = 0; i < 36; i++) values[`B${j}-${i}`] = 0
-    }
-    for (let k = 0; k < 10; k++) {
-      values[`E${k}`] = 0
-      for (let j = 0; j < 6; j++) values[`D${k}-${j}`] = 0
-    }
+    for (let j = 0; j < 6; j++) values[`C${j}`] = 0
+    for (let k = 0; k < 10; k++) values[`E${k}`] = 0
     await apparatus.setSliders(values, { duration: ANIM_DURATION })
     await apparatus.setLogRingRotation(0, { duration: ANIM_DURATION })
   }
@@ -104,6 +97,22 @@
     apparatus.setSliders(values, { duration: ANIM_DURATION })
   }
 
+  function setWeightSliders() {
+    if (!apparatus) return
+    const values: Record<string, number> = {}
+    for (let j = 0; j < 6; j++) {
+      for (let i = 0; i < 36; i++) {
+        values[`B${j}-${i}`] = mnistWeights.B[i][j]
+      }
+    }
+    for (let k = 0; k < 10; k++) {
+      for (let j = 0; j < 6; j++) {
+        values[`D${k}-${j}`] = mnistWeights.D[j][k]
+      }
+    }
+    apparatus.setSliders(values)
+  }
+
   async function selectDigit(index: number) {
     abort()
     prediction = null
@@ -116,6 +125,7 @@
   onMount(() => {
     apparatus = new PerceptronApparatus(containerEl, config)
     animator = new ComputationAnimator(apparatus, mnistWeights)
+    setWeightSliders()
     setInputSliders(selectedDigit)
   })
 
