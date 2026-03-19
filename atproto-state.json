@@ -2,7 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
-    "/blog/2026/03/19/perceptron-apparatus-inference-walkthrough": "255f4242a14b18e7aae9f843ab04ad59eed7b5209bf3073add1769ab34d565de",
+    "/blog/2026/03/19/perceptron-apparatus-inference-walkthrough": "8bbe0135c7e57a243b8c02f57a01f69986f15baa9afbc2e004635f338fedbf6d",
     "/blog/2026/03/18/radical-openness": "6bc2d379aa01b0068fe5715e51162eb2d1f1a7e8f24dad7b47cdac874846edb2",
     "/blog/2026/03/05/comp4020-safety-yolo-and-the-open-web": "c6b8b4bb2514d3cd13274f477d8021e7283e7e788cd0bc5c02bc5a424bfb05e7",
     "/blog/2026/03/03/mini-neon-perceptron-xor-edition": "7358d0d192beb7295130a41945ca487154ebaa13bf2adf91f41073a110b02d13",
