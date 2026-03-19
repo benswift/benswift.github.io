@@ -106,19 +106,18 @@ pass---but it's transparent in a way that a GPU never will be.
 The accumulation step (summing all the products into a single neuron activation)
 is even simpler: each product nudges a slider along its track, and the final
 position _is_ the sum. ReLU is just "if the slider is below zero, leave it at
-zero". The whole thing is beautifully mechanical.
+zero". The whole thing is mechanical.
 
-## Why this matters
+## It's just arithmetic
 
 We've gotten very good at treating neural networks as black boxes---data goes
 in, predictions come out, and the middle is someone else's problem. The
 apparatus forces you to confront every single multiply-accumulate, to feel the
-_tedium_ of a forward pass, and to appreciate both the mathematical elegance and
-the sheer grunt work that modern hardware hides from us.
+_tedium_ of a forward pass, and to appreciate the sheer grunt work that modern hardware hides from us.
 
 Neural networks are arithmetic. Fancy, heavily optimised, massively parallelised
 arithmetic---but arithmetic nonetheless. If you can do it with a wooden table
-and some sliders, the mystique starts to evaporate.
+and some sliders, it stops feeling like magic.
 
 ## Related posts
 
