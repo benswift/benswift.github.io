@@ -17,6 +17,9 @@ importers:
       astro-broken-links-checker:
         specifier: ^1.0.7
         version: 1.0.7
+      perceptron-apparatus:
+        specifier: github:ANUcybernetics/perceptron-apparatus
+        version: https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0dcf55890b4dd5f1decbb4bd81bf4694d67036fe
       remark-smartypants:
         specifier: ^3.0.2
         version: 3.0.2
@@ -2315,6 +2318,10 @@ packages:
 
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
+
+  perceptron-apparatus@https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0dcf55890b4dd5f1decbb4bd81bf4694d67036fe:
+    resolution: {tarball: https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0dcf55890b4dd5f1decbb4bd81bf4694d67036fe}
+    version: 0.1.0
 
   piccolore@0.1.3:
     resolution: {integrity: sha512-o8bTeDWjE086iwKrROaDf31K0qC/BENdm15/uH9usSC/uZjJOKb2YGiVHfLY4GhwsERiPI1jmwI2XrA7ACOxVw==}
@@ -5724,6 +5731,8 @@ snapshots:
   pathe@2.0.3: {}
 
   pend@1.2.0: {}
+
+  perceptron-apparatus@https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0dcf55890b4dd5f1decbb4bd81bf4694d67036fe: {}
 
   piccolore@0.1.3: {}
 

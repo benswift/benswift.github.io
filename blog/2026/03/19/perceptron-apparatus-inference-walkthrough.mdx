@@ -1,0 +1,133 @@
+---
+title: "Perceptron apparatus: inference walkthrough"
+tags:
+  - ai
+  - art
+---
+
+import ApparatusInference from
+'../../../../src/components/svelte/ApparatusInference.svelte'
+
+The perceptron apparatus is a 1.2-metre diameter circular wooden table that
+classifies handwritten digits using concentric rings of sliders and a
+logarithmic slide rule. It's a piece of speculative design from the
+[School of Cybernetics](https://cybernetics.anu.edu.au) at ANU, imagined as an
+artefact from the Museum of the Future: a world where the knowledge to build
+digital computers has been lost, but the mathematics of neural networks survived.
+So people built _this_ instead.
+
+The apparatus implements a real trained
+[multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)---a
+36→6→10 MLP that takes a 6×6 pixel image of a digit, runs a forward pass through
+its weights and activations, and produces a prediction. Every multiply is a slide
+rule operation. Every accumulation is a slider moving along a track. The whole
+inference process is physically legible, each step visible to anyone standing
+around the table.
+
+This post walks through that process with an interactive digital twin of the
+apparatus. If you've seen the
+[neon perceptron](/blog/2025/12/11/neon-perceptron-digital-twin/) posts, this is
+its older, more analogue sibling.
+
+## The architecture
+
+The apparatus has five concentric rings, each corresponding to a layer of the
+network:
+
+- **Ring A** (outermost): 36 radial sliders for the input pixels---one per cell
+  in the 6×6 grid
+- **Ring B**: weight sliders for the input→hidden connections (36×6 = 216
+  weights)
+- **Ring C**: 6 radial sliders for the hidden neuron activations
+- **Ring D**: weight sliders for the hidden→output connections (6×10 = 60
+  weights)
+- **Ring E** (innermost): 10 radial sliders for the output---one per digit class
+
+Around the outside sits a logarithmic rule ring for performing multiplication.
+To multiply two numbers you rotate the inner ring to align values, then read the
+product off the outer scale. It's the same principle as a
+[slide rule](https://en.wikipedia.org/wiki/Slide_rule), wrapped into a circle.
+
+The forward pass is:
+
+```
+hidden = relu(input × B)
+output = hidden × D
+prediction = argmax(output)
+```
+
+No bias terms, no softmax on the output. The hidden layer uses
+[ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks))---negative
+values snap to zero, which on the apparatus just means the slider stays at the
+bottom of its track.
+
+## Try it
+
+Pick a digit from the thumbnails below and hit "Step through" to watch the
+forward pass animate on the apparatus. Each step computes one hidden or output
+neuron---accumulating the weighted inputs, applying ReLU where appropriate, and
+sliding the result into place. "Instant" skips the animation and shows the final
+state.
+
+<ApparatusInference client:only="svelte" />
+
+The weights are real---trained on
+[MNIST](https://en.wikipedia.org/wiki/MNIST_database) via the
+[Axon](https://hexdocs.pm/axon/Axon.html) framework in Elixir, then exported to
+the apparatus. The five sample digits (0, 1, 4, 6, 7) are ones the model
+classifies correctly. You might reasonably ask: what about the other five?
+
+## 57% accuracy (and why that's fine)
+
+The model gets about 57% accuracy overall. It can't classify digits 2, 3, 5, 8,
+or 9 at all---they never come out on top. This is what happens when you
+aggressively [downsample 28×28 images to 6×6 pixels](https://en.wikipedia.org/wiki/MNIST_database), use only 6 hidden neurons
+with no bias terms, and train for a handful of epochs. State-of-the-art MNIST
+models hit 99.8% with millions of parameters. This one has 276.
+
+But accuracy isn't the point. The apparatus exists to make neural network
+inference _visible_---to turn an opaque matrix multiplication into something you
+can watch, touch, and reason about. A model that gets everything right would be
+less interesting to demonstrate than one that sometimes fails, because the
+failures are where you start asking "why did it think that was a 4?" and tracing
+the answer back through the rings.
+
+## The slide rule trick
+
+The key mechanical insight is that you can do multiplication with addition if you
+work in log space. On the apparatus, ring B and ring D hold weight values as
+positions on a logarithmic scale. To multiply an input activation by a weight,
+you rotate the rule ring to align the two values, then read the product where
+they intersect. It's slow---276 individual multiplications for a single forward
+pass---but it's transparent in a way that a GPU never will be.
+
+The accumulation step (summing all the products into a single neuron activation)
+is even simpler: each product nudges a slider along its track, and the final
+position _is_ the sum. ReLU is just "if the slider is below zero, leave it at
+zero". The whole thing is beautifully mechanical.
+
+## Why this matters
+
+We've gotten very good at treating neural networks as black boxes---data goes in,
+predictions come out, and the middle is someone else's problem. The apparatus
+forces you to confront every single multiply-accumulate, to feel the _tedium_ of
+a forward pass, and to appreciate both the mathematical elegance and the sheer
+grunt work that modern hardware hides from us.
+
+Neural networks are arithmetic. Fancy, heavily optimised, massively parallelised
+arithmetic---but arithmetic nonetheless. If you can do it with a wooden table and
+some sliders, the mystique starts to evaporate.
+
+## Related posts
+
+The apparatus is one of several physical neural network projects at the School
+of Cybernetics. The others use a different aesthetic---LEDs and PCBs rather than
+wood and brass---but explore the same idea of making computation tangible:
+
+- [Interactive neon perceptron visualisation](/blog/2025/12/11/neon-perceptron-digital-twin/)---a
+  5×5 input, 9-hidden, 10-output network rendered in Three.js
+- [Mini neon perceptron: XOR edition](/blog/2026/03/03/mini-neon-perceptron-xor-edition/)---a
+  tiny 2×2 input version for testing the physical build
+
+The neon perceptrons are digital-first with a physical build underway. The
+apparatus is the reverse: physical-first, with this digital twin catching up.

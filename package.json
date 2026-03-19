@@ -54,6 +54,7 @@
     "astro-broken-links-checker": "^1.0.7",
     "remark-smartypants": "^3.0.2",
     "sharp": "^0.34.5",
+    "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "three": "^0.183.2"
   }
 }

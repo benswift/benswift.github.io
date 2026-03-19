@@ -1,0 +1,296 @@
+<script lang="ts">
+  import { onMount, onDestroy } from "svelte"
+  import {
+    PerceptronApparatus,
+    type BoardConfig,
+  } from "perceptron-apparatus"
+  import {
+    ComputationAnimator,
+    sampleDigits,
+    mnistWeights,
+    type StepInfo,
+  } from "perceptron-apparatus/widgets"
+
+  let containerEl: HTMLDivElement
+  let apparatus: PerceptronApparatus | null = null
+  let animator: ComputationAnimator | null = null
+  let abortController: AbortController | null = null
+
+  let selectedDigit = $state(0)
+  let isRunning = $state(false)
+  let stepInfo = $state<StepInfo | null>(null)
+  let prediction = $state<number | null>(null)
+  let progress = $state(0)
+
+  const config: BoardConfig = {
+    size: 1000,
+    nInput: 36,
+    nHidden: 6,
+    nOutput: 10,
+  }
+
+  function onStep(info: StepInfo) {
+    stepInfo = info
+    progress = info.progress
+  }
+
+  async function run(mode: "neuron" | "fast") {
+    if (!animator || isRunning) return
+    abort()
+    prediction = null
+    stepInfo = null
+    progress = 0
+    isRunning = true
+    abortController = new AbortController()
+
+    try {
+      const result = await animator.compute(
+        sampleDigits[selectedDigit].pixels,
+        {
+          mode,
+          stepDuration: mode === "neuron" ? 400 : 0,
+          signal: abortController.signal,
+          onStep,
+        },
+      )
+      prediction = result.prediction
+    } catch {
+      // aborted
+    } finally {
+      isRunning = false
+    }
+  }
+
+  function abort() {
+    abortController?.abort()
+    abortController = null
+    isRunning = false
+  }
+
+  function reset() {
+    abort()
+    prediction = null
+    stepInfo = null
+    progress = 0
+  }
+
+  function selectDigit(index: number) {
+    reset()
+    selectedDigit = index
+  }
+
+  onMount(() => {
+    apparatus = new PerceptronApparatus(containerEl, config)
+    animator = new ComputationAnimator(apparatus, mnistWeights)
+  })
+
+  onDestroy(() => {
+    abort()
+  })
+</script>
+
+<div class="apparatus-inference">
+  <div class="controls">
+    <div class="digit-picker">
+      <span class="label">Input digit:</span>
+      <div class="digits">
+        {#each sampleDigits as digit, i}
+          <button
+            class="digit-button"
+            class:selected={selectedDigit === i}
+            onclick={() => selectDigit(i)}
+            title="Digit {digit.label}"
+          >
+            <svg viewBox="0 0 6 6" class="digit-grid">
+              {#each { length: 36 } as _, pi}
+                <rect
+                  x={pi % 6}
+                  y={Math.floor(pi / 6)}
+                  width="1"
+                  height="1"
+                  fill={digit.pixels[pi] > 0.15 ? `rgba(190, 46, 221, ${0.3 + digit.pixels[pi] * 0.7})` : "transparent"}
+                />
+              {/each}
+            </svg>
+            <span class="digit-label">{digit.label}</span>
+          </button>
+        {/each}
+      </div>
+    </div>
+
+    <div class="playback">
+      <button onclick={() => run("neuron")} disabled={isRunning}>
+        ▶ Step through
+      </button>
+      <button onclick={() => run("fast")} disabled={isRunning}>
+        ⏩ Instant
+      </button>
+      <button onclick={reset} disabled={!isRunning && prediction === null}>
+        ↺ Reset
+      </button>
+    </div>
+
+    {#if stepInfo}
+      <div class="step-readout">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: {progress * 100}%"></div>
+        </div>
+        <span class="step-description">{stepInfo.description}</span>
+      </div>
+    {/if}
+
+    {#if prediction !== null}
+      <div class="prediction">
+        Prediction: <strong>{prediction}</strong>
+        {#if prediction === sampleDigits[selectedDigit].label}
+          <span class="correct">✓</span>
+        {:else}
+          <span class="incorrect">✗ (expected {sampleDigits[selectedDigit].label})</span>
+        {/if}
+      </div>
+    {/if}
+  </div>
+
+  <div bind:this={containerEl} class="apparatus-container"></div>
+</div>
+
+<style>
+  .apparatus-inference {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .digit-picker .label {
+    font-size: 0.875rem;
+    color: var(--text-2, #aaa);
+  }
+
+  .digits {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .digit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.375rem;
+    background: var(--bg-soft, #252525);
+    border: 2px solid var(--divider, #333);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+
+  .digit-button:hover {
+    border-color: var(--text-3, #666);
+  }
+
+  .digit-button.selected {
+    border-color: var(--highlight-color, #be2edd);
+  }
+
+  .digit-grid {
+    width: 36px;
+    height: 36px;
+  }
+
+  .digit-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-color, #e0e0e0);
+  }
+
+  .playback {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .playback button {
+    padding: 0.5rem 1rem;
+    background: var(--bg-soft, #252525);
+    color: var(--text-color, #e0e0e0);
+    border: 1px solid var(--divider, #333);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.15s;
+  }
+
+  .playback button:hover:not(:disabled) {
+    background: var(--divider, #333);
+  }
+
+  .playback button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .step-readout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .progress-bar {
+    height: 4px;
+    background: var(--bg-soft, #252525);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--highlight-color, #be2edd);
+    transition: width 0.3s ease;
+  }
+
+  .step-description {
+    font-family: var(--font-family-mono, monospace);
+    font-size: 0.8rem;
+    color: var(--text-2, #aaa);
+  }
+
+  .prediction {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+  }
+
+  .prediction strong {
+    font-size: 1.5rem;
+    color: var(--highlight-color, #be2edd);
+  }
+
+  .correct {
+    color: #b8bb26;
+  }
+
+  .incorrect {
+    color: #fb4934;
+  }
+
+  .apparatus-container {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--background-color, #1a1a1a);
+    color: var(--text-color, #e0e0e0);
+  }
+
+  .apparatus-container :global(svg) {
+    width: 100%;
+    height: 100%;
+  }
+</style>
