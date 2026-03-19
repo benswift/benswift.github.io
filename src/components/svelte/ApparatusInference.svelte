@@ -9,6 +9,7 @@
     sampleDigits,
     mnistWeights,
     type StepInfo,
+    type MultiplyAccumulateStep,
   } from "perceptron-apparatus/widgets"
 
   const ANIM_DURATION = 300
@@ -23,6 +24,7 @@
   let stepDescription = $state("")
   let prediction = $state<number | null>(null)
   let progress = $state(0)
+  let currentMac = $state<MultiplyAccumulateStep | null>(null)
 
   const config: BoardConfig = {
     size: 1000,
@@ -34,12 +36,18 @@
   function onStep(info: StepInfo) {
     stepDescription = info.description
     progress = info.progress
+    if (info.step?.type === "multiply-accumulate") {
+      currentMac = info.step
+    } else {
+      currentMac = null
+    }
   }
 
-  async function run(mode: "neuron" | "fast") {
+  async function run(mode: "step" | "fast") {
     if (!animator || isRunning) return
     abort()
     prediction = null
+    currentMac = null
     stepDescription = "Setting weights..."
     progress = 0
     isRunning = true
@@ -50,12 +58,13 @@
         sampleDigits[selectedDigit].pixels,
         {
           mode,
-          stepDuration: mode === "neuron" ? 400 : 0,
+          stepDuration: mode === "step" ? 400 : 0,
           signal: abortController.signal,
           onStep,
         },
       )
       prediction = result.prediction
+      currentMac = null
     } catch {
       // aborted
     } finally {
@@ -72,8 +81,10 @@
   async function reset() {
     abort()
     prediction = null
+    currentMac = null
     stepDescription = ""
     progress = 0
+    apparatus?.clearSlideRuleMarkers()
     await resetSliders()
     setInputSliders(selectedDigit)
   }
@@ -116,8 +127,10 @@
   async function selectDigit(index: number) {
     abort()
     prediction = null
+    currentMac = null
     stepDescription = ""
     progress = 0
+    apparatus?.clearSlideRuleMarkers()
     selectedDigit = index
     setInputSliders(index)
   }
@@ -164,7 +177,7 @@
     </div>
 
     <div class="playback">
-      <button onclick={() => run("neuron")} disabled={isRunning}>
+      <button onclick={() => run("step")} disabled={isRunning}>
         ▶ Step through
       </button>
       <button onclick={() => run("fast")} disabled={isRunning}>
@@ -180,6 +193,22 @@
         <div class="progress-fill" style="width: {progress * 100}%"></div>
       </div>
       <span class="step-description">{stepDescription}&nbsp;</span>
+      {#if currentMac}
+        <div class="hud">
+          <span class="hud-op">
+            <span class="hud-label">{currentMac.inputSlider}</span>
+            <span class="hud-value">{currentMac.inputValue.toFixed(3)}</span>
+            ×
+            <span class="hud-label">{currentMac.weightSlider}</span>
+            <span class="hud-value">{currentMac.weightValue.toFixed(3)}</span>
+            =
+            <span class="hud-value">{currentMac.product.toFixed(3)}</span>
+          </span>
+          <span class="hud-acc">
+            {currentMac.target} = {currentMac.accumulator.toFixed(3)}
+          </span>
+        </div>
+      {/if}
       <div class="prediction">
         {#if prediction !== null}
           Prediction: <strong>{prediction}</strong>
@@ -303,6 +332,31 @@
     font-family: var(--font-family-mono, monospace);
     font-size: 0.8rem;
     color: var(--text-2, #aaa);
+  }
+
+  .hud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-family: var(--font-family-mono, monospace);
+    font-size: 0.8rem;
+    color: var(--text-2, #aaa);
+    padding: 0.375rem 0.5rem;
+    background: var(--bg-soft, #252525);
+    border-radius: 4px;
+  }
+
+  .hud-label {
+    font-weight: 600;
+    color: var(--text-color, #e0e0e0);
+  }
+
+  .hud-value {
+    color: var(--highlight-color, #be2edd);
+  }
+
+  .hud-acc {
+    color: var(--text-3, #666);
   }
 
   .prediction {
