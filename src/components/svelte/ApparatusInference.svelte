@@ -321,6 +321,7 @@
     border-radius: 8px;
     background: var(--background-color, #1a1a1a);
     color: var(--text-color, #e0e0e0);
+    --pa-highlight: var(--highlight-color, #be2edd);
   }
 
   .apparatus-container :global(svg) {
