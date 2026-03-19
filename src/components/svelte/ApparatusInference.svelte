@@ -11,6 +11,8 @@
     type StepInfo,
   } from "perceptron-apparatus/widgets"
 
+  const ANIM_DURATION = 300
+
   let containerEl: HTMLDivElement
   let apparatus: PerceptronApparatus | null = null
   let animator: ComputationAnimator | null = null
@@ -18,7 +20,7 @@
 
   let selectedDigit = $state(0)
   let isRunning = $state(false)
-  let stepInfo = $state<StepInfo | null>(null)
+  let stepDescription = $state("")
   let prediction = $state<number | null>(null)
   let progress = $state(0)
 
@@ -30,7 +32,7 @@
   }
 
   function onStep(info: StepInfo) {
-    stepInfo = info
+    stepDescription = info.description
     progress = info.progress
   }
 
@@ -38,7 +40,7 @@
     if (!animator || isRunning) return
     abort()
     prediction = null
-    stepInfo = null
+    stepDescription = "Setting weights..."
     progress = 0
     isRunning = true
     abortController = new AbortController()
@@ -67,15 +69,16 @@
     isRunning = false
   }
 
-  function reset() {
+  async function reset() {
     abort()
     prediction = null
-    stepInfo = null
+    stepDescription = ""
     progress = 0
-    resetSliders()
+    await resetSliders()
+    setInputSliders(selectedDigit)
   }
 
-  function resetSliders() {
+  async function resetSliders() {
     if (!apparatus) return
     const values: Record<string, number> = {}
     for (let i = 0; i < 36; i++) values[`A${i}`] = 0
@@ -87,18 +90,33 @@
       values[`E${k}`] = 0
       for (let j = 0; j < 6; j++) values[`D${k}-${j}`] = 0
     }
-    apparatus.setSliders(values)
-    apparatus.setLogRingRotation(0)
+    await apparatus.setSliders(values, { duration: ANIM_DURATION })
+    await apparatus.setLogRingRotation(0, { duration: ANIM_DURATION })
   }
 
-  function selectDigit(index: number) {
-    reset()
+  function setInputSliders(index: number) {
+    if (!apparatus) return
+    const pixels = sampleDigits[index].pixels
+    const values: Record<string, number> = {}
+    for (let i = 0; i < pixels.length; i++) {
+      values[`A${i}`] = pixels[i]
+    }
+    apparatus.setSliders(values, { duration: ANIM_DURATION })
+  }
+
+  async function selectDigit(index: number) {
+    abort()
+    prediction = null
+    stepDescription = ""
+    progress = 0
     selectedDigit = index
+    setInputSliders(index)
   }
 
   onMount(() => {
     apparatus = new PerceptronApparatus(containerEl, config)
     animator = new ComputationAnimator(apparatus, mnistWeights)
+    setInputSliders(selectedDigit)
   })
 
   onDestroy(() => {
@@ -147,25 +165,24 @@
       </button>
     </div>
 
-    {#if stepInfo}
-      <div class="step-readout">
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: {progress * 100}%"></div>
-        </div>
-        <span class="step-description">{stepInfo.description}</span>
+    <div class="status">
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: {progress * 100}%"></div>
       </div>
-    {/if}
-
-    {#if prediction !== null}
+      <span class="step-description">{stepDescription}&nbsp;</span>
       <div class="prediction">
-        Prediction: <strong>{prediction}</strong>
-        {#if prediction === sampleDigits[selectedDigit].label}
-          <span class="correct">✓</span>
+        {#if prediction !== null}
+          Prediction: <strong>{prediction}</strong>
+          {#if prediction === sampleDigits[selectedDigit].label}
+            <span class="correct">✓</span>
+          {:else}
+            <span class="incorrect">✗ (expected {sampleDigits[selectedDigit].label})</span>
+          {/if}
         {:else}
-          <span class="incorrect">✗ (expected {sampleDigits[selectedDigit].label})</span>
+          &nbsp;
         {/if}
       </div>
-    {/if}
+    </div>
   </div>
 
   <div bind:this={containerEl} class="apparatus-container"></div>
@@ -252,10 +269,11 @@
     cursor: not-allowed;
   }
 
-  .step-readout {
+  .status {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    min-height: 3.5rem;
   }
 
   .progress-bar {
@@ -279,7 +297,6 @@
 
   .prediction {
     font-size: 1.1rem;
-    padding: 0.5rem 0;
   }
 
   .prediction strong {
