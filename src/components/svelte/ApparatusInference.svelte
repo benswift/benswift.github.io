@@ -72,6 +72,23 @@
     prediction = null
     stepInfo = null
     progress = 0
+    resetSliders()
+  }
+
+  function resetSliders() {
+    if (!apparatus) return
+    const values: Record<string, number> = {}
+    for (let i = 0; i < 36; i++) values[`A${i}`] = 0
+    for (let j = 0; j < 6; j++) {
+      values[`C${j}`] = 0
+      for (let i = 0; i < 36; i++) values[`B${j}-${i}`] = 0
+    }
+    for (let k = 0; k < 10; k++) {
+      values[`E${k}`] = 0
+      for (let j = 0; j < 6; j++) values[`D${k}-${j}`] = 0
+    }
+    apparatus.setSliders(values)
+    apparatus.setLogRingRotation(0)
   }
 
   function selectDigit(index: number) {
