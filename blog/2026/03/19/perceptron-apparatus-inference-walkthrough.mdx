@@ -1,8 +1,9 @@
 ---
 title: "Perceptron apparatus: inference walkthrough"
+published: false
 tags:
   - ai
-  - art
+  - studio
 ---
 
 import ApparatusInference from
@@ -13,16 +14,16 @@ classifies handwritten digits using concentric rings of sliders and a
 logarithmic slide rule. It's a piece of speculative design from the
 [School of Cybernetics](https://cybernetics.anu.edu.au) at ANU, imagined as an
 artefact from the Museum of the Future: a world where the knowledge to build
-digital computers has been lost, but the mathematics of neural networks survived.
-So people built _this_ instead.
+digital computers has been lost, but the mathematics of neural networks
+survived. So people built _this_ instead.
 
 The apparatus implements a real trained
 [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)---a
 36→6→10 MLP that takes a 6×6 pixel image of a digit, runs a forward pass through
-its weights and activations, and produces a prediction. Every multiply is a slide
-rule operation. Every accumulation is a slider moving along a track. The whole
-inference process is physically legible, each step visible to anyone standing
-around the table.
+its weights and activations, and produces a prediction. Every multiply is a
+slide rule operation. Every accumulation is a slider moving along a track. The
+whole inference process is physically legible, each step visible to anyone
+standing around the table.
 
 This post walks through that process with an interactive digital twin of the
 apparatus. If you've seen the
@@ -57,7 +58,7 @@ prediction = argmax(output)
 ```
 
 No bias terms, no softmax on the output. The hidden layer uses
-[ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks))---negative
+[ReLU](<https://en.wikipedia.org/wiki/Rectifier_(neural_networks)>)---negative
 values snap to zero, which on the apparatus just means the slider stays at the
 bottom of its track.
 
@@ -81,9 +82,11 @@ classifies correctly. You might reasonably ask: what about the other five?
 
 The model gets about 57% accuracy overall. It can't classify digits 2, 3, 5, 8,
 or 9 at all---they never come out on top. This is what happens when you
-aggressively [downsample 28×28 images to 6×6 pixels](https://en.wikipedia.org/wiki/MNIST_database), use only 6 hidden neurons
-with no bias terms, and train for a handful of epochs. State-of-the-art MNIST
-models hit 99.8% with millions of parameters. This one has 276.
+aggressively
+[downsample 28×28 images to 6×6 pixels](https://en.wikipedia.org/wiki/MNIST_database),
+use only 6 hidden neurons with no bias terms, and train for a handful of epochs.
+State-of-the-art MNIST models hit 99.8% with millions of parameters. This one
+has 276.
 
 But accuracy isn't the point. The apparatus exists to make neural network
 inference _visible_---to turn an opaque matrix multiplication into something you
@@ -94,8 +97,8 @@ the answer back through the rings.
 
 ## The slide rule trick
 
-The key mechanical insight is that you can do multiplication with addition if you
-work in log space. On the apparatus, ring B and ring D hold weight values as
+The key mechanical insight is that you can do multiplication with addition if
+you work in log space. On the apparatus, ring B and ring D hold weight values as
 positions on a logarithmic scale. To multiply an input activation by a weight,
 you rotate the rule ring to align the two values, then read the product where
 they intersect. It's slow---276 individual multiplications for a single forward
@@ -108,15 +111,15 @@ zero". The whole thing is beautifully mechanical.
 
 ## Why this matters
 
-We've gotten very good at treating neural networks as black boxes---data goes in,
-predictions come out, and the middle is someone else's problem. The apparatus
-forces you to confront every single multiply-accumulate, to feel the _tedium_ of
-a forward pass, and to appreciate both the mathematical elegance and the sheer
-grunt work that modern hardware hides from us.
+We've gotten very good at treating neural networks as black boxes---data goes
+in, predictions come out, and the middle is someone else's problem. The
+apparatus forces you to confront every single multiply-accumulate, to feel the
+_tedium_ of a forward pass, and to appreciate both the mathematical elegance and
+the sheer grunt work that modern hardware hides from us.
 
 Neural networks are arithmetic. Fancy, heavily optimised, massively parallelised
-arithmetic---but arithmetic nonetheless. If you can do it with a wooden table and
-some sliders, the mystique starts to evaporate.
+arithmetic---but arithmetic nonetheless. If you can do it with a wooden table
+and some sliders, the mystique starts to evaporate.
 
 ## Related posts
 
