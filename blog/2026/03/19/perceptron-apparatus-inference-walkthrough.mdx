@@ -24,8 +24,14 @@ slide rule operation. Every accumulation is a slider moving along a track. The
 whole inference process is physically legible, each step visible to anyone
 standing around the table.
 
-This post walks through that process with an interactive digital twin of the
-apparatus. If you've seen the
+The physical table was fabricated by Sam Shellard at UC's
+[Workshop7](https://www.canberra.edu.au/future-students/study-at-uc/study-areas/design/workshop7),
+and the whole project---Elixir training code, TypeScript digital twin, Typst
+documentation---is
+[on GitHub](https://github.com/ANUcybernetics/perceptron-apparatus).
+
+This post walks through the inference process with an interactive digital twin
+of the apparatus. If you've seen the
 [neon perceptron](/blog/2025/12/11/neon-perceptron-digital-twin/) posts, this is
 its older, more analogue sibling.
 
@@ -43,9 +49,12 @@ network:
   weights)
 - **Ring E** (innermost): 10 radial sliders for the output---one per digit class
 
-Around the outside sits a logarithmic rule ring for performing multiplication.
-To multiply two numbers you rotate the inner ring to align values, then read the
-product off the outer scale. It's the same principle as a
+Around the outside sit two additional rings: a logarithmic rule ring for
+performing multiplication, and a
+[ReLU](<https://en.wikipedia.org/wiki/Rectifier_(neural_networks)>) reference
+ring for reading off the activation function. To multiply two numbers you rotate
+the log ring to align the two values, then read the product off the outer scale.
+It's the same principle as a
 [slide rule](https://en.wikipedia.org/wiki/Slide_rule), wrapped into a circle.
 
 The forward pass is:
@@ -132,3 +141,9 @@ wood and brass---but explore the same idea of making computation tangible:
 
 The neon perceptrons are digital-first with a physical build underway. The
 apparatus is the reverse: physical-first, with this digital twin catching up.
+
+The apparatus itself isn't limited to handwritten digits---the 36→6→10
+architecture also works for
+[poker hand classification](https://archive.ics.uci.edu/dataset/158/poker+hand),
+encoding five cards into 36 features and classifying into ten hand types. Same
+rings, same slide rule, different weights.
