@@ -20,15 +20,15 @@
   "license": "MIT",
   "devDependencies": {
     "@astrojs/check": "^0.9.8",
-    "@astrojs/mdx": "^5.0.1",
+    "@astrojs/mdx": "^5.0.2",
     "@astrojs/sitemap": "^3.7.1",
-    "@astrojs/svelte": "^8.0.1",
-    "@atproto/api": "^0.19.3",
+    "@astrojs/svelte": "^8.0.3",
+    "@atproto/api": "^0.19.4",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@types/node": "^25.5.0",
     "@types/three": "^0.183.1",
-    "astro": "^6.0.5",
+    "astro": "^6.0.7",
     "astro-icon": "^1.1.5",
     "bibtex-parse": "^2.1.0",
     "eslint-plugin-no-only-tests": "^3.3.0",
@@ -52,9 +52,9 @@
     "@fontsource-variable/atkinson-hyperlegible-mono": "^5.2.5",
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.6",
     "astro-broken-links-checker": "^1.0.7",
+    "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "remark-smartypants": "^3.0.2",
     "sharp": "^0.34.5",
-    "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "three": "^0.183.2"
   }
 }
