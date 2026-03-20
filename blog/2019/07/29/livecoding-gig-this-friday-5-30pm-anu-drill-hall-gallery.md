@@ -1,5 +1,6 @@
 ---
 title: "Livecoding gig this Friday 5:30pm @ ANU Drill Hall Gallery"
+description: "Livecoding with Charles Martin and Kieran Browne at Drill Hall Gallery, plus ANU Laptop Ensemble members."
 tags:
   - livecoding
   - gigs

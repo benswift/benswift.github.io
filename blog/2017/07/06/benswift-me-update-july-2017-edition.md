@@ -1,5 +1,6 @@
 ---
 title: "benswift.me update (July 2017 edition)"
+description: "Another redesign of benswift.me---this time aiming to be the home for livecoding, research, and making things with computers."
 tags:
   - dev
 ---

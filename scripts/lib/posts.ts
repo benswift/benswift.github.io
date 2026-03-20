@@ -2,7 +2,6 @@ import fs from "node:fs"
 import path from "node:path"
 import { createHash } from "node:crypto"
 import matter from "gray-matter"
-import { extractDescription } from "../../src/utils/excerpt"
 
 export interface PostData {
   title: string
@@ -63,8 +62,8 @@ export function discoverPosts(blogDir: string): PostData[] {
           tags = fm.tags.split(/\s+/).filter(Boolean)
         }
 
-        const textContent = extractDescription(raw, 500)
-        const description = fm.description || extractDescription(raw)
+        const textContent = fm.description || ""
+        const description = fm.description || ""
 
         posts.push({
           title: fm.title || item.replace(/\.mdx?$/, ""),

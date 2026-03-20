@@ -1,5 +1,6 @@
 ---
 title: "DIYChatGPT Short Course for ANU Undergraduates"
+description: "A hands-on 3-hour workshop where ANU undergrads train their own language model from scratch with pen, paper and dice---ending with a poetry slam."
 ---
 
 If you're an ANU undergraduate student you can enrol in an upcoming (next week!)

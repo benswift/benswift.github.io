@@ -1,5 +1,6 @@
 ---
 title: "Writing graph theory proofs with ChatGPT"
+description: "Asking ChatGPT to prove the five colour and four colour theorems with my mathematician father-in-law, and his reaction to the results."
 tags:
   - ai
   - teaching

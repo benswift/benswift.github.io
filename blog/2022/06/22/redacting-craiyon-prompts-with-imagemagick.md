@@ -1,5 +1,6 @@
 ---
 title: "Redacting craiyon prompts with imagemagick"
+description: "A one-liner ImageMagick command to batch-redact the prompt text from craiyon (DALL-E mini) screenshot outputs."
 tags:
   - dev
   - ai

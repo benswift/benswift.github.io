@@ -1,5 +1,6 @@
 ---
 title: "How to cite code? Leading by example"
+description: "A YAML-based Statement of Originality that teaches students how to cite code, declare collaborators and list licences in every assignment."
 tags:
   - teaching
 ---

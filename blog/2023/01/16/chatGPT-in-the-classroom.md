@@ -1,5 +1,6 @@
 ---
 title: "Are you ready for ChatGPT in the classroom this semester?"
+description: "Practical advice for educators on incorporating ChatGPT into their teaching this semester rather than pretending it doesn't exist."
 tags:
   - ai
   - teaching

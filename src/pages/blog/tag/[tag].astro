@@ -3,7 +3,6 @@ import { getCollection } from "astro:content"
 import PageLayout from "../../../layouts/PageLayout.astro"
 import PostList from "../../../components/PostList.astro"
 import { formatDate } from "../../../utils/date"
-import { extractExcerpt } from "../../../utils/excerpt"
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog", (entry) => {
@@ -39,7 +38,7 @@ const posts = rawPosts
       date: dateStr,
       dateFormatted: formatDate(date, true),
       tags: post.data.tags,
-      excerpt: extractExcerpt(post.body ?? ""),
+      excerpt: post.data.description,
     }
   })
   .sort((a: any, b: any) => b.date.localeCompare(a.date))

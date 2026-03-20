@@ -1,5 +1,6 @@
 ---
 title: "Extempore is alive on aarch64 (part deux)"
+description: "CI green on four platforms, a migration from TinyScheme to s7, and a 9x compiler speedup from hash table caches and union-find type unification."
 tags:
   - extempore
 ---

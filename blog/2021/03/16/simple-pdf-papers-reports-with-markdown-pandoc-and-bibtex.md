@@ -1,5 +1,6 @@
 ---
 title: "Simple pdf papers/reports with markdown, pandoc and bibtex"
+description: "A simple GitHub template for writing in markdown and producing nice PDFs via Pandoc and LaTeX, with optional BibTeX citations."
 tags:
   - research
   - dev

@@ -1,5 +1,6 @@
 ---
 title: "COMP4020/8020: Rapid Prototyping for the Web"
+description: "Designing a new ANU course on building web apps with coding agents---studio-based, prototype-driven, moving beyond naive vibecoding."
 tags: [teaching, comp4020]
 ---
 

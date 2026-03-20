@@ -1,5 +1,6 @@
 ---
 title: "Parental leave, take 2"
+description: "The family has grown by one, so I'm off on parental leave for the rest of the year. Back in 2021."
 ---
 
 Our family has recently

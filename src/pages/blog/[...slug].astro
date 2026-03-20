@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content"
 import PostLayout from "../../layouts/PostLayout.astro"
-import { extractDescription } from "../../utils/excerpt"
 import { getAtUri } from "../../utils/atproto"
 import { render } from "astro:content"
 
@@ -34,8 +33,7 @@ export async function getStaticPaths() {
 const { post, date, postSlug } = Astro.props
 const { Content } = await render(post)
 
-// Read the source file for description extraction if needed
-const description = post.data.description || extractDescription(post.body ?? "")
+const description = post.data.description
 const atUri = getAtUri(post.id)
 const relativePath = `blog/${post.id}`
 ---

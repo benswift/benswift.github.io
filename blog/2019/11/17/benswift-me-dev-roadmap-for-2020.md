@@ -1,5 +1,6 @@
 ---
 title: "benswift.me dev roadmap for 2020"
+description: "My plans for this website in 2020: Jekyll 4, maybe Eleventy, maybe Netlify, maybe Tailwind."
 tags:
   - dev
 ---

@@ -1,5 +1,6 @@
 ---
 title: "mbsync v1.3.2 breaking change: <code>SubFolders</code> config required"
+description: "The mbsync 1.3.2 update silently requires a SubFolders setting. Here's the fix, plus a bonus mu4e prettifier."
 tags:
   - dev
 ---

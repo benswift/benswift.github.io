@@ -1,5 +1,6 @@
 ---
 title: "benswift.me analytics/tracking update"
+description: "I've added counter.dev as a lightweight, relatively un-invasive analytics tool. Ad-blocker users still welcome."
 tags:
   - dev
 ---

@@ -1,5 +1,6 @@
 ---
 title: "11ty and Vite for modern static websites"
+description: "How to set up 11ty with Vite and Tailwind v4 for static sites that need proper asset bundling, HMR, and npm ecosystem access."
 tags:
   - dev
 ---

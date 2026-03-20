@@ -16,75 +16,7 @@ function stripMdxImportsExports(content: string): string {
 }
 
 /**
- * Extract a plain text excerpt from markdown content.
- * Removes frontmatter, markdown syntax, and returns the first paragraph.
- */
-export function extractExcerpt(src: string, maxLength = 450): string {
-  // Remove frontmatter and MDX imports/exports
-  const withoutPreamble = stripMdxImportsExports(
-    src.replace(/^---[\s\S]*?---\s*/, ""),
-  );
-
-  // Split into lines and process
-  const lines = withoutPreamble.split("\n");
-  const paragraphs: string[] = [];
-  let currentPara = "";
-  let inCodeBlock = false;
-  let inContainer = false;
-
-  for (const line of lines) {
-    // Track code blocks
-    if (line.startsWith("```")) {
-      inCodeBlock = !inCodeBlock;
-      continue;
-    }
-    if (inCodeBlock) continue;
-
-    // Track custom containers (:::)
-    if (line.startsWith(":::")) {
-      inContainer = !inContainer || line.trim() === ":::";
-      continue;
-    }
-    if (inContainer) continue;
-
-    // Skip headings, images, blockquotes, list items, HTML
-    if (/^#+\s/.test(line)) continue;
-    if (line.startsWith("![")) continue;
-    if (/^>\s/.test(line)) continue;
-    if (/^[-*]\s/.test(line)) continue;
-    if (line.startsWith("<")) continue;
-
-    const trimmed = line.trim();
-    if (trimmed === "") {
-      if (currentPara) {
-        paragraphs.push(currentPara);
-        currentPara = "";
-      }
-    } else {
-      currentPara += (currentPara ? " " : "") + trimmed;
-    }
-  }
-  if (currentPara) paragraphs.push(currentPara);
-
-  // Get first paragraph and clean markdown syntax
-  const first = paragraphs[0] || "";
-  const cleaned = first
-    .replaceAll(/\[([^\]]+)\]\([^)]+\)/g, "$1") // [text](url) -> text
-    .replaceAll(/\*\*([^*]+)\*\*/g, "$1") // **bold** -> bold
-    .replaceAll(/\*([^*]+)\*/g, "$1") // *italic* -> italic
-    .replaceAll(/_([^_]+)_/g, "$1") // _italic_ -> italic
-    .replaceAll(/`([^`]+)`/g, "$1") // `code` -> code
-    .replaceAll(/\[([^\]]+)\]\[[^\]]*\]/g, "$1") // [text][ref] -> text
-    .replaceAll(/\[\^[^\]]+\]/g, "") // footnote references
-    .replaceAll(/\s+/g, " ")
-    .trim();
-
-  return cleaned.slice(0, maxLength);
-}
-
-/**
  * Extract a description from markdown content for meta tags.
- * Similar to extractExcerpt but with truncation and ellipsis.
  */
 export function extractDescription(content: string, maxLength = 160): string {
   // Remove frontmatter and MDX imports/exports

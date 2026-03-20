@@ -1,5 +1,6 @@
 ---
 title: "Deploying a Phoenix app (with LiveView) on fly.io"
+description: "Quick notes on deploying a Phoenix 1.6 LiveView app to fly.io, including gotchas with health checks and outdated guides."
 tags:
   - dev
 ---

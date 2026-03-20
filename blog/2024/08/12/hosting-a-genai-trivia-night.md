@@ -1,5 +1,6 @@
 ---
 title: "Hosting a genAI trivia night"
+description: "Using an LLM to generate trivia questions, then letting teams challenge any answers they think the model hallucinated."
 tags:
   - ai
 ---

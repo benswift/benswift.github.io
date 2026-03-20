@@ -4,7 +4,6 @@ import PageLayout from "../../layouts/PageLayout.astro"
 import PostList from "../../components/PostList.astro"
 import TagList from "../../components/TagList.astro"
 import { formatDate } from "../../utils/date"
-import { extractExcerpt } from "../../utils/excerpt"
 
 const allPosts = await getCollection("blog", (entry) => {
   return entry.data.published !== false && /^\d{4}\/\d{2}\/\d{2}\//.test(entry.id)
@@ -23,7 +22,7 @@ const posts = allPosts
       date: dateStr,
       dateFormatted: formatDate(date, true),
       tags: post.data.tags,
-      excerpt: extractExcerpt(post.body ?? ""),
+      excerpt: post.data.description,
     }
   })
   .sort((a, b) => b.date.localeCompare(a.date))

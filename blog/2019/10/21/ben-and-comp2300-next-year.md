@@ -1,5 +1,6 @@
 ---
 title: "Ben and COMP2300 next year"
+description: "I'm handing COMP2300 over to Charles Martin in 2020 so I can focus on the c/c/c studio Reimagine Fellowship."
 tags:
   - teaching
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Ben's dev setup 2026 edition"
+description: "Ghostty, zellij, helix and a life lived in text tokens---why I ditched Zed and went back to purely terminal-based development."
 tags: [dev]
 ---
 
