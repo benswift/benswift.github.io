@@ -3,10 +3,10 @@ title: "The road to COMP4020: Radical openness"
 tags: [comp4020]
 ---
 
-:::info
+:::tip
 
 This post is part of a series I'm writing as I develop
-[COMP4020/8020: Rapid Prototyping for the Web](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/).
+[COMP4020: Agentic Coding Studio](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/).
 See [all posts in the series](/blog/tag/comp4020/).
 
 :::
