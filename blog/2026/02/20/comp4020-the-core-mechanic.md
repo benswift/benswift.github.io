@@ -125,6 +125,10 @@ while others are pretty... meh.
 
 - do something in the browser that Tim Berners Lee would disapprove of
 
+- do something in the browser that
+  [Ethan Molick](https://bsky.app/profile/emollick.bsky.social) would be
+  impressed by
+
 - make a js/ts library with doco and how-to guides for both LLMs and humans
 
 - build a thing (any thing) and then tell the story of it's development by
