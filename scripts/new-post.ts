@@ -32,6 +32,7 @@ function main() {
 
   const frontmatter = `---
 title: "${title}"
+description: "TODO"
 published: false
 tags: []
 ---

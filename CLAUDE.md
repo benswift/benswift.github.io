@@ -52,4 +52,7 @@ causing the rest of the HTML to be parsed as markdown and silently dropped.
 ## Creating new posts
 
 Run `pnpm run post "<title>"` to create a new blog post with the correct
-frontmatter and file structure.
+frontmatter and file structure. Every post must have a `description` field in
+its frontmatter (it's required by the zod schema). Write a short, direct
+description (1-2 sentences, under 160 characters) that tells readers what the
+post is about before they click through.
