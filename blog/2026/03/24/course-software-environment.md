@@ -6,7 +6,7 @@ description:
 tags: [comp4020]
 ---
 
-For the [previous courses I've developed](TODO link to teaching page) I've
+For the [previous courses I've developed](/teaching/) I've
 always (tried to, at least) think hard about the course software environment.
 This includes which OSes and software tools are installed on the lab machines,
 whether BYOD is allowed (and to what extent the tutors will support you in that
@@ -35,7 +35,7 @@ better time than students on Windows, I don't want to mandate this... just give
 a big'ol caveat emptor (maybe it's "caveat artifex" for software developers?).
 It's a course for undergraduate seniors and masters students, with solid
 pre-requisites, so I think this'll be sufficient for this course. And because of
-the [studio tutorial model](TODO link to core mechanic post) I _don't_ want to
+the [studio tutorial model](/blog/2026/02/20/comp4020-the-core-mechanic/) I _don't_ want to
 have the tutorials in computer labs---I want them to be in flat, flexible rooms
 where we can re-configure the tables, chairs and screens as necessary to
 facilitate the best discussion dynamics.
@@ -45,20 +45,18 @@ facilitate the best discussion dynamics.
 However, for this course I will be clear with my students about the software
 stack that I'm using in my teaching, including in the lectures where I always do
 _a lot_ of live coding[^livecoding]. Basically it'll be what I've previously
-written up as my [new stack of choice for software development](TODO link to
-2026 Ben dev stack post), which is unsurprising given that I designed that new
+written up as my [new stack of choice for software development](/blog/2026/02/18/ben-s-dev-setup-2026-edition/), which is unsurprising given that I designed that new
 stack around an agentic coding workflow. Although I won't be forcing my students
 to use mutt :)
 
 In particular, my plan for the lectures is to have a split screen:
 
-TODO add links to project pages for all tools mentioned here.
-
-- **terminal (ghostty) on the left**...
-- running zellij as a multiplexer...
-- which is managing multiple instances of Claude Code, Opencode etc. for coding,
-  git for VCS, and helix for text editing, as well as other CLI/TUI tools as
-  necessary
+- **terminal ([ghostty](https://ghostty.org)) on the left**...
+- running [zellij](https://zellij.dev) as a multiplexer...
+- which is managing multiple instances of [Claude Code](https://github.com/anthropics/claude-code),
+  [Opencode](https://opencode.ai) etc. for coding, git for VCS, and
+  [helix](https://helix-editor.com) for text editing, as well as other CLI/TUI
+  tools as necessary
 - **Chrome on the right** showing the current web page under development (i.e.
   the dev server, pointing to e.g. `localhost:4321`)
 
@@ -73,7 +71,7 @@ sensitive info in plaintext, though.
 
 A couple of cool things I'm considering (but haven't tested yet) are:
 
-- recording the terminal with asciinema (the direct video feed of the screen
+- recording the terminal with [asciinema](https://asciinema.org) (the direct video feed of the screen
   will already be recorded, but it might be cool to share the asciinema
   recordings to make it easy to copy/paste text for remixing, and even to have
   students do analysis on the logs from my agentic coding sessions in class)
@@ -103,4 +101,4 @@ more fun, I reckon.
 [^livecoding]:
     Here I mean "live coding" in the "writing code in real time, taking input
     and questions from students as I go" sense, not the specific [DJ-style
-    livecoding](TODO link to my livecoding page) sense.
+    livecoding](/livecoding/) sense.
