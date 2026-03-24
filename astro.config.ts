@@ -5,6 +5,8 @@ import sitemap from "@astrojs/sitemap"
 import brokenLinksChecker from "astro-broken-links-checker"
 import remarkSmartypants from "remark-smartypants"
 import remarkDirective from "remark-directive"
+import rehypeAutolinkHeadings from "rehype-autolink-headings"
+import rehypeSlug from "rehype-slug"
 import { remarkContainers } from "./src/plugins/remark-containers"
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json"
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json"
@@ -26,6 +28,20 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [[remarkSmartypants as never, { dashes: "oldschool" }], remarkDirective, remarkContainers],
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        {
+          behavior: "prepend",
+          properties: { class: "heading-anchor", ariaLabel: "Link to this section" },
+          content: {
+            type: "text",
+            value: "#",
+          },
+        },
+      ],
+    ],
     shikiConfig: {
       theme: "github-dark",
       langs: [
