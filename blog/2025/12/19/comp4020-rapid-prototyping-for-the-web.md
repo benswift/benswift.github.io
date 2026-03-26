@@ -1,6 +1,8 @@
 ---
 title: "COMP4020/8020: Rapid Prototyping for the Web"
-description: "Designing a new ANU course on building web apps with coding agents---studio-based, prototype-driven, moving beyond naive vibecoding."
+description:
+  "Designing a new ANU course on building web apps with coding
+  agents---studio-based, prototype-driven, moving beyond naive vibecoding."
 tags: [teaching, comp4020]
 ---
 
@@ -15,17 +17,17 @@ in a series---see [all posts tagged comp4020](/blog/tag/comp4020/).
 
 ## Course Description (aka "the pitch")
 
-LLM agents, which run tools (e.g. search the web, edit files, run code) in a
-loop to achieve a goal, offer a new workflow for developing software. This is
-especially true for application domains which are well-represented in LLM
-training sets---like the web.
+LLM-based coding agents, which run tools (e.g. edit files, run code, search the
+web) in a loop to achieve a goal, offer a powerful workflow for developing
+software. This is especially true for application domains which are
+well-represented in LLM training sets---like the web.
 
 Moving beyond naive "vibecoding", this course provides a studio-based "iterate
 and test with working prototypes" approach to rapidly prototyping web apps. In
 the weekly lectures students will learn fundamental concepts and practical
-skills for harnessing an agentic AI/LLM development workflow. In the weekly
-"studio session" tutorials, students will demo their work-in-progress prototypes
-and receive feedback from peers and instructors. By the end of the course each
+skills for harnessing an agentic coding workflow. In the weekly "studio crit
+session" tutorials, students will demo their work-in-progress prototypes and
+receive feedback from peers and instructors. By the end of the course each
 student will have designed, developed and deployed _multiple_ web app prototypes
 using a rapid, feedback-driven process.
 
@@ -55,8 +57,8 @@ At the completion of this course, students will be able to:
 
 1. design, build and test full-stack web applications using a rapid-prototyping
    process
-2. describe the components of a Large Language Model interface for code
-   generation
+2. explain how LLM-based coding agents work, including model capabilities, tool
+   use, and context management
 3. design and evaluate different LLM agent workflows for software development
 4. apply principles from the scholarly literature to work-in-progress and
    finalised software prototypes
