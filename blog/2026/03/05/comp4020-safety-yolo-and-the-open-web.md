@@ -224,3 +224,19 @@ really interesting idea for teaching programming.
   <circle cx="450" cy="158" r="3" fill="#ffab91" fill-opacity="0.5"/>
   <text x="255" y="228" text-anchor="middle" font-size="10" fill="#ffab91">~200 students browse any prototype</text>
 </svg>
+
+None of this works without some unglamorous plumbing underneath. Each week's
+provocation---the starting point for that week's prototype---is a template git
+repo. Every student forks it, does their work, and pushes. The last push before
+the deadline is what counts as their submission. This keeps things simple and
+auditable, and it means CI can check some of the invariants automatically: does
+the build step exit cleanly, does the served site return `200 OK` on the
+required routes, are the process reflection `.md` files present in the repo,
+that sort of thing.
+
+I've already got tooling that can batch clone and run tests across all student
+repos for a given class---plus a "badger" script that I run a few days before
+the deadline to send a courtesy email to anyone who hasn't forked the template
+yet, gently suggesting they get started. Extending all of this to also
+provision and snapshot sprites per student is the next step, but the
+bones are there.
