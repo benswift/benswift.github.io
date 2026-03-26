@@ -23,13 +23,12 @@
   --divider: #333;
   --text-2: #aaa;
   --text-3: #666;
-
   --font-family-base:
     "Atkinson Hyperlegible Next Variable", -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
   --font-family-mono:
-    "Atkinson Hyperlegible Mono Variable", Consolas, Monaco, "Andale Mono",
+    "Atkinson Hyperlegible Mono Variable", consolas, monaco, "Andale Mono",
     "Ubuntu Mono", monospace;
 
   color-scheme: dark;
@@ -39,7 +38,7 @@ html {
   font-size: 18px;
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   html {
     font-size: 20px;
   }
@@ -318,7 +317,7 @@ blockquote {
   margin: 0 0 0.5rem;
 }
 
-@media (min-width: 640px) {
+@media (width >= 640px) {
   .page-title {
     font-size: 2.5rem;
   }

@@ -13,6 +13,7 @@ export default defineConfig({
     "**/*.svelte",
   ],
   jsPlugins: [
+    "@e18e/eslint-plugin",
     "eslint-plugin-no-only-tests",
     "eslint-plugin-perfectionist",
     "eslint-plugin-unused-imports",
