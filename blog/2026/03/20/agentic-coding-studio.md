@@ -15,7 +15,7 @@ See [all posts in the series](/blog/tag/comp4020/).
 A small update: after much reflection since I originally submitted the course
 proposal (around September 2025, which is about 173 AI-years ago) I've decided
 to change the course name to "Agentic Coding Studio". The
-[course description](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web.md)
+[course description](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/)
 remain unchanged, and the overall plan for the course (which is still
 coalescing---hence [this blog series](/blog/tag/comp4020/) is still the same.
 But the more I've reflected on the course I've realised that what I (and the
@@ -25,12 +25,12 @@ software domain is "the web" is important (and where we'll do most of our work)
 many of the ideas I want my students to wrestle with are broader than that.
 
 Also, I have a
-[long history](/blog/2019/03/20/reimagine-fellow-project-pitch.mdx) of trying to
+[long history](/blog/2019/03/20/reimagine-fellow-project-pitch/) of trying to
 shoehorn the word "studio" into the projects/research groups/communities that I
 build... and so why stop now? The "studio" pedagogical model of making stuff in
 a community and watching others do the same is just such an apt description of
 the
-[learning environment I hope to create in the course](/blog/2026/02/20/comp4020-the-core-mechanic.md),
+[learning environment I hope to create in the course](/blog/2026/02/20/comp4020-the-core-mechanic/),
 too.
 
 I will add that while naming things is hard and usually done retrospectively,

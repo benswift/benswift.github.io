@@ -61,7 +61,7 @@ COMP4020.
 </svg>
 
 The basic idea would be that for each week's
-[prototype and studio session](/blog/2026/02/20/comp4020-the-core-mechanic.md)
+[prototype and studio session](/blog/2026/02/20/comp4020-the-core-mechanic/)
 the students would do their work in a (fresh) sprite. They could ssh in and do
 the dev work, and "serving" it on the web is as simple as running the dev
 server, finding out what the sprite's URL is and then sharing that with their
