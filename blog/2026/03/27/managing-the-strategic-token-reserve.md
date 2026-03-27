@@ -29,11 +29,23 @@ with this tool are:
 
 - creating an API token to students as they enrol (and revoking if they drop out
   for whatever reason)
-- setting (platform-enforced) student token allocations (per course, per week,
-  etc.) and reset periods
+- setting (ideally platform-enforced) student token allocations (per course, per
+  week, etc.) and reset periods
 - reporting on actual token use: with breakdowns by student, studio crit group,
   and across the whole class, including stats on how often limits were being
   hit, etc.
+
+I say "ideally" because the current state of the
+[Admin API](https://docs.anthropic.com/en/docs/administration/administration-api)
+doesn't quite get us there. The platform offers monthly spend caps per workspace
+and per-minute rate limits, but nothing like "500k tokens per week per
+student"---and even the spend caps can only be configured through the Console,
+not via the API. The usage reporting side is solid, and you can create workspaces
+and manage members programmatically, so the read side of this problem is well
+covered. But the quota enforcement logic---polling usage, tracking cumulative
+consumption per student per period, disabling and re-enabling API keys when
+limits are hit---will need to live in our tooling. More infrastructure on our
+side than I'd like, but not a dealbreaker.
 
 Secret scanning (catching tokens accidentally committed and pushed to GitLab) is
 handled separately via a GitLab push hook.
