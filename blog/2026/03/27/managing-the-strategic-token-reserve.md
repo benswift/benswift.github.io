@@ -1,6 +1,8 @@
 ---
 title: "The road to COMP4020: managing the strategic token reserve"
-description: "How to provision and manage AI token budgets for a class of agentic coding students."
+description:
+  "How to provision and manage AI token budgets for a class of agentic coding
+  students."
 tags: [comp4020]
 ---
 
@@ -12,14 +14,17 @@ See [all posts in the series](/blog/tag/comp4020/).
 
 :::
 
-There's an oil crisis going on; you might have [heard about it](https://theconversation.com/the-iran-war-has-triggered-a-fuel-price-rise-what-does-this-mean-for-australian-consumers-277605). Australia (and I presume other
-countries too) are having to [draw upon their strategic oil reserves](https://lighthouse.mq.edu.au/article/2026/march-2026/could-australia-run-out-of-petrol).
+There's an oil crisis going on; you might have
+[heard about it](https://theconversation.com/the-iran-war-has-triggered-a-fuel-price-rise-what-does-this-mean-for-australian-consumers-277605).
+Australia (and I presume other countries too) are having to
+[draw upon their strategic oil reserves](https://lighthouse.mq.edu.au/article/2026/march-2026/could-australia-run-out-of-petrol).
 
-As I mentioned in my [sharp tools](/blog/2026/02/17/comp4020-sharp-tools/) post, I want my students to have a
-proper token allocation. Not necessarily [Jensen-level](https://www.cnbc.com/2026/03/20/nvidia-ai-agents-tokens-human-workers-engineer-jobs-unemployment-jensen-huang.html), but enough that they can use CLI coding agents in
-anger without having to stop all the time to wait for their token budget to
-reset. This is our Strategic Token Reserve, and we want to ensure it's used
-equitably for all students.
+As I mentioned in my [sharp tools](/blog/2026/02/17/comp4020-sharp-tools/) post,
+I want my students to have a proper token allocation. Not necessarily
+[Jensen-level](https://www.cnbc.com/2026/03/20/nvidia-ai-agents-tokens-human-workers-engineer-jobs-unemployment-jensen-huang.html),
+but enough that they can use CLI coding agents in anger without having to stop
+all the time to wait for their token budget to reset. This is our Strategic
+Token Reserve, and we want to ensure it's used equitably for all students.
 
 My preferred option for doing this is just to have a big pool of tokens and
 manage their use myself through the usual enterprise controls that the platforms
@@ -40,12 +45,12 @@ I say "ideally" because the current state of the
 doesn't quite get us there. The platform offers monthly spend caps per workspace
 and per-minute rate limits, but nothing like "500k tokens per week per
 student"---and even the spend caps can only be configured through the Console,
-not via the API. The usage reporting side is solid, and you can create workspaces
-and manage members programmatically, so the read side of this problem is well
-covered. But the quota enforcement logic---polling usage, tracking cumulative
-consumption per student per period, disabling and re-enabling API keys when
-limits are hit---will need to live in our tooling. More infrastructure on our
-side than I'd like, but not a dealbreaker.
+not via the API. The usage reporting side is solid, and you can create
+workspaces and manage members programmatically, so the read side of this problem
+is well covered. But the quota enforcement logic---polling usage, tracking
+cumulative consumption per student per period, disabling and re-enabling API
+keys when limits are hit---will need to live in our tooling. More infrastructure
+on our side than I'd like, but not a dealbreaker.
 
 Secret scanning (catching tokens accidentally committed and pushed to GitLab) is
 handled separately via a GitLab push hook.
@@ -69,7 +74,8 @@ our students in this brave new world of agentic coding.
 
 ## A (hypothetical) CLI tool for the job
 
-It doesn't exist yet (although I plan to write it soon) might look like this:
+This CLI tool doesn't exist yet (although I plan to build it soon) but it might
+look like this:
 
 ```
 $ token-manager --help
@@ -100,8 +106,9 @@ Examples:
 
 And I'll almost certainly not call it `token-manager`; some names I'm kicking
 around are `goosey` (because the similar tool that I wrote several years ago to
-manage large classes of GitLab submissions is called `lucy`). But that's tbc---stay
-tuned.
+manage large classes of GitLab submissions is called `lucy`). But that's
+tbc---stay tuned.
 
-[^bunker]: Note to readers and avid watchers of Senate Estimates:
-    there is no such bunker.
+[^bunker]:
+    Note to readers and avid watchers of Senate Estimates: there is no such
+    bunker.
