@@ -28,6 +28,19 @@ the _Cybernetic Studio_: a cybernetic community that makes things out of
 hardware/software/people/stuff to explore cybernetic systems/ideas and their
 impact on the world.
 
+## AI & agentic coding (short)
+
+Dr. Ben Swift is a Senior Lecturer at the ANU School of Cybernetics, where he
+leads the _Cybernetic Studio_. His research spans AI education, agentic coding
+workflows, and human-AI creative systems. He created
+[LLMs Unplugged](https://llmsunplugged.org)---a hands-on teaching resource where
+learners build language models with pen, paper, and dice, delivered to 400+
+participants across schools, universities, and government---and is developing a
+new ANU course on agentic AI development. His Cybernetic Studio projects include
+controlled experiments on vision language model perception, automated tracking of
+Australian Government AI transparency policies, and physical devices like the
+_Perceptron Apparatus_ that perform neural network calculations by hand.
+
 ## Academic (long)
 
 Dr. Ben Swift is an internationally-recognised interdisciplinary
