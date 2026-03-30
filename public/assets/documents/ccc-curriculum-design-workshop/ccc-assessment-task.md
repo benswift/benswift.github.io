@@ -1,5 +1,4 @@
-% title: TBC
-% author: my awesome team
+% title: TBC % author: my awesome team
 
 ## Task
 
@@ -16,4 +15,3 @@
 ### FAQ
 
 ## Assessment criteria
-

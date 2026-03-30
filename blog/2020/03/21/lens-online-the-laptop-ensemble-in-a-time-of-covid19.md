@@ -1,6 +1,8 @@
 ---
 title: "LENS Online - the Laptop Ensemble in a time of covid19"
-description: "Taking the ANU Laptop Ensemble online during COVID-19---what changes, what stays the same, and why it might actually work."
+description:
+  "Taking the ANU Laptop Ensemble online during COVID-19---what changes, what
+  stays the same, and why it might actually work."
 tags:
   - lens
   - teaching

@@ -1,6 +1,8 @@
 ---
 title: "Academic integrity guidelines re: ChatGPT and generative AI tools"
-description: "Draft guidelines for allowing ChatGPT in university coursework while maintaining academic integrity, with citation and accountability requirements."
+description:
+  "Draft guidelines for allowing ChatGPT in university coursework while
+  maintaining academic integrity, with citation and accountability requirements."
 tags:
   - teaching
   - ai

@@ -37,8 +37,8 @@ workflows, and human-AI creative systems. He created
 learners build language models with pen, paper, and dice, delivered to 400+
 participants across schools, universities, and government---and is developing a
 new ANU course on agentic AI development. His Cybernetic Studio projects include
-controlled experiments on vision language model perception, automated tracking of
-Australian Government AI transparency policies, and physical devices like the
+controlled experiments on vision language model perception, automated tracking
+of Australian Government AI transparency policies, and physical devices like the
 _Perceptron Apparatus_ that perform neural network calculations by hand.
 
 ## Academic (long)

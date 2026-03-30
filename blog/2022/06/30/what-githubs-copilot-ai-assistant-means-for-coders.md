@@ -2,7 +2,9 @@
 title:
   "So this is how it feels when the robots come for your job: what GitHub's
   Copilot 'AI assistant' means for coders"
-description: "A pointer to my Conversation article on GitHub Copilot and what AI coding assistants mean for programmers."
+description:
+  "A pointer to my Conversation article on GitHub Copilot and what AI coding
+  assistants mean for programmers."
 tags:
   - dev
   - ai

@@ -3,8 +3,8 @@ id: TASK-19
 title: Integrate VitePress blog with atproto (standard.site – middle level)
 status: Done
 assignee: []
-created_date: '2026-02-18 22:08'
-updated_date: '2026-03-04 01:55'
+created_date: "2026-02-18 22:08"
+updated_date: "2026-03-04 01:55"
 labels:
   - atproto
   - vitepress
@@ -13,21 +13,24 @@ labels:
   - standard.site
 dependencies: []
 references:
-  - 'https://sequoia.pub/llms-full.txt'
-  - 'https://stevedylan.dev/posts/introducing-sequoia/'
-  - 'https://stevedylan.dev/posts/standard-site-the-publishing-gateway/'
-  - 'https://www.npmjs.com/package/@atproto/api'
-  - 'https://atproto.com/specs/record-key'
+  - "https://sequoia.pub/llms-full.txt"
+  - "https://stevedylan.dev/posts/introducing-sequoia/"
+  - "https://stevedylan.dev/posts/standard-site-the-publishing-gateway/"
+  - "https://www.npmjs.com/package/@atproto/api"
+  - "https://atproto.com/specs/record-key"
 documentation:
-  - 'https://standard.site/'
-  - 'https://tangled.org/standard.site/lexicons'
+  - "https://standard.site/"
+  - "https://tangled.org/standard.site/lexicons"
 priority: medium
 ---
 
 ## Description
 
 <!-- SECTION:DESCRIPTION:BEGIN -->
-Automate publication of `site.standard.*` records to AT Protocol during GitHub Actions deploy, and inject verification metadata into the static VitePress build.
+
+Automate publication of `site.standard.*` records to AT Protocol during GitHub
+Actions deploy, and inject verification metadata into the static VitePress
+build.
 
 ## Context
 
@@ -39,17 +42,24 @@ Automate publication of `site.standard.*` records to AT Protocol during GitHub A
 ## Approach: custom script (not Sequoia)
 
 Sequoia CLI doesn't fit cleanly because:
-- slug/path computation doesn't handle nested date directories (`blog/YYYY/MM/DD/slug`)
+
+- slug/path computation doesn't handle nested date directories
+  (`blog/YYYY/MM/DD/slug`)
 - it writes `atUri` back into source frontmatter (undesirable)
 - its custom frontmatter parser is a risk with non-standard setups
 
-Instead, build two lightweight TypeScript scripts (~150 lines total) using `@atproto/api` directly, with a committed JSON state file for rkey tracking.
+Instead, build two lightweight TypeScript scripts (~150 lines total) using
+`@atproto/api` directly, with a committed JSON state file for rkey tracking.
 
 ## In scope
 
-- `scripts/atproto-publish.ts`: authenticate, create/update `site.standard.publication` and `site.standard.document` records via `putRecord`
-- `scripts/atproto-inject.ts`: inject `<link rel="site.standard.document">` into built HTML
-- `atproto-state.json`: committed state file mapping post paths to rkeys and content hashes
+- `scripts/atproto-publish.ts`: authenticate, create/update
+  `site.standard.publication` and `site.standard.document` records via
+  `putRecord`
+- `scripts/atproto-inject.ts`: inject `<link rel="site.standard.document">` into
+  built HTML
+- `atproto-state.json`: committed state file mapping post paths to rkeys and
+  content hashes
 - Content hash tracking so only changed posts are pushed on each deploy
 - `.well-known/site.standard.publication` generated into `public/`
 - GitHub Actions workflow steps (publish → build → inject → deploy)
@@ -72,27 +82,38 @@ Instead, build two lightweight TypeScript scripts (~150 lines total) using `@atp
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria
+
 <!-- AC:BEGIN -->
-- [x] #1 `site.standard.publication` record created/updated idempotently on deploy
-- [x] #2 `site.standard.document` records created/updated per post with correct `path` field matching existing blog URLs
+
+- [x] #1 `site.standard.publication` record created/updated idempotently on
+      deploy
+- [x] #2 `site.standard.document` records created/updated per post with correct
+      `path` field matching existing blog URLs
 - [x] #3 Only changed posts (by content hash) are pushed to PDS on each deploy
-- [x] #4 Post edits/typo fixes update the existing record (stable AT-URI via stored rkey)
+- [x] #4 Post edits/typo fixes update the existing record (stable AT-URI via
+      stored rkey)
 - [x] #5 Posts with `published: false` are skipped
-- [x] #6 `<link rel="site.standard.document">` injected into built HTML for each published post
+- [x] #6 `<link rel="site.standard.document">` injected into built HTML for each
+      published post
 - [x] #7 `/.well-known/site.standard.publication` serves the correct AT-URI
-- [x] #8 All core logic (frontmatter parsing, path computation, state management, HTML injection) tested without real PDS calls
+- [x] #8 All core logic (frontmatter parsing, path computation, state
+      management, HTML injection) tested without real PDS calls
 - [x] #9 GitHub Actions deploy workflow updated with publish and inject steps
 <!-- AC:END -->
 
 ## Implementation Plan
 
 <!-- SECTION:PLAN:BEGIN -->
+
 ## Phase 1: Core library and state management
 
 1. Add dependencies: `@atproto/api`, `@atproto/common`, `gray-matter`
-2. Create `scripts/lib/atproto.ts` — thin wrapper around `AtpAgent` (easy to mock)
-3. Create `scripts/lib/posts.ts` — post discovery, frontmatter parsing, date extraction from path, content hashing
-4. Create `scripts/lib/state.ts` — read/write `atproto-state.json`, track rkeys and content hashes
+2. Create `scripts/lib/atproto.ts` — thin wrapper around `AtpAgent` (easy to
+   mock)
+3. Create `scripts/lib/posts.ts` — post discovery, frontmatter parsing, date
+   extraction from path, content hashing
+4. Create `scripts/lib/state.ts` — read/write `atproto-state.json`, track rkeys
+   and content hashes
 5. Write tests for posts and state modules using fixtures (no PDS)
 
 ## Phase 2: Publish script
@@ -116,7 +137,8 @@ Instead, build two lightweight TypeScript scripts (~150 lines total) using `@atp
 
 ## Phase 4: Frontmatter migration
 
-10. Script to add `description` field to existing posts (extract from first paragraph)
+10. Script to add `description` field to existing posts (extract from first
+    paragraph)
 11. Optionally add `date` to frontmatter
 
 ## Phase 5: CI integration
@@ -129,5 +151,13 @@ Instead, build two lightweight TypeScript scripts (~150 lines total) using `@atp
 ## Final Summary
 
 <!-- SECTION:FINAL_SUMMARY:BEGIN -->
-All 9 acceptance criteria verified as implemented and production-ready. Scripts in `scripts/lib/` handle atproto publishing, state management, and post discovery. Content hash tracking via `atproto-state.json` ensures only changed posts are pushed. `<link rel="site.standard.document">` tags are injected via `Head.astro`. `.well-known/site.standard.publication` serves the correct AT-URI. GitHub Actions workflow includes publish and state commit steps. All 75 tests pass with mocked PDS.
+
+All 9 acceptance criteria verified as implemented and production-ready. Scripts
+in `scripts/lib/` handle atproto publishing, state management, and post
+discovery. Content hash tracking via `atproto-state.json` ensures only changed
+posts are pushed. `<link rel="site.standard.document">` tags are injected via
+`Head.astro`. `.well-known/site.standard.publication` serves the correct AT-URI.
+GitHub Actions workflow includes publish and state commit steps. All 75 tests
+pass with mocked PDS.
+
 <!-- SECTION:FINAL_SUMMARY:END -->

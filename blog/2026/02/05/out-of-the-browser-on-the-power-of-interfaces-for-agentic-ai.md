@@ -1,6 +1,8 @@
 ---
 title: "Out of the browser: on the power of interfaces for agentic AI"
-description: "The leap from browser-based ChatGPT to terminal-native coding agents isn't about smarter models---it's about removing the sandbox."
+description:
+  "The leap from browser-based ChatGPT to terminal-native coding agents isn't
+  about smarter models---it's about removing the sandbox."
 tags:
   - ai
 ---
@@ -89,22 +91,31 @@ actually building software.
   <circle cx="60" cy="18" r="6" fill="#28c940"/>
 
   <!-- Title -->
-  <text x="250" y="22" text-anchor="middle" font-size="12" font-family="system-ui, sans-serif" class="terminal-title">Terminal — zsh</text>
+
+<text x="250" y="22" text-anchor="middle" font-size="12" font-family="system-ui, sans-serif" class="terminal-title">Terminal
+— zsh</text>
 
   <!-- Terminal content -->
-  <text x="20" y="65" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
-  <text x="35" y="65" font-size="13" font-family="ui-monospace, monospace" class="command">claude "fix the bug in auth.py"</text>
 
-  <text x="20" y="90" font-size="13" font-family="ui-monospace, monospace" class="output">● Reading auth.py...</text>
-  <text x="20" y="115" font-size="13" font-family="ui-monospace, monospace" class="output">● Found issue on line 42</text>
-  <text x="20" y="140" font-size="13" font-family="ui-monospace, monospace" class="output">● Editing auth.py...</text>
-  <text x="20" y="165" font-size="13" font-family="ui-monospace, monospace" class="output">● Running pytest...</text>
-  <text x="20" y="190" font-size="13" font-family="ui-monospace, monospace" class="success">✓ All tests passing</text>
-  <text x="20" y="215" font-size="13" font-family="ui-monospace, monospace" class="output">● Committing changes...</text>
+<text x="20" y="65" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
+<text x="35" y="65" font-size="13" font-family="ui-monospace, monospace" class="command">claude
+"fix the bug in auth.py"</text>
 
-  <text x="20" y="250" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
-  <rect x="35" y="238" width="8" height="16" class="cursor"/>
-</svg>
+<text x="20" y="90" font-size="13" font-family="ui-monospace, monospace" class="output">●
+Reading auth.py...</text>
+<text x="20" y="115" font-size="13" font-family="ui-monospace, monospace" class="output">●
+Found issue on line 42</text>
+<text x="20" y="140" font-size="13" font-family="ui-monospace, monospace" class="output">●
+Editing auth.py...</text>
+<text x="20" y="165" font-size="13" font-family="ui-monospace, monospace" class="output">●
+Running pytest...</text>
+<text x="20" y="190" font-size="13" font-family="ui-monospace, monospace" class="success">✓
+All tests passing</text>
+<text x="20" y="215" font-size="13" font-family="ui-monospace, monospace" class="output">●
+Committing changes...</text>
+
+<text x="20" y="250" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
+<rect x="35" y="238" width="8" height="16" class="cursor"/> </svg>
 
 The terminal is almost the anti-browser. It's a text-only interface to doing
 **everything** on your computer. Creating, reading, editing, and deleting files
@@ -125,9 +136,9 @@ control, and deploying to servers. All of these are terminal operations. And
 crucially, the people using the terminal are expected to know what they're doing
 and to take responsibility for the commands they run.
 
-What makes the terminal particularly interesting for LLMs is this:
-**it's all text**. Both the inputs (commands with a specific syntax) and the
-outputs (error messages, logs, success confirmations) are designed to be read by
+What makes the terminal particularly interesting for LLMs is this: **it's all
+text**. Both the inputs (commands with a specific syntax) and the outputs (error
+messages, logs, success confirmations) are designed to be read by
 humans---specifically, programmers who need to understand what's happening and
 debug when things go wrong.
 

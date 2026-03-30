@@ -1,6 +1,8 @@
 ---
 title: "Tracking APS AI Transparency Statements"
-description: "A new project that scrapes and version-controls AI Transparency Statements from Australian Government agencies, tracking how they change over time."
+description:
+  "A new project that scrapes and version-controls AI Transparency Statements
+  from Australian Government agencies, tracking how they change over time."
 tags:
   - ai
   - policy

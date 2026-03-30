@@ -1,6 +1,8 @@
 ---
 title: "Extempore is alive on aarch64 (part deux)"
-description: "CI green on four platforms, a migration from TinyScheme to s7, and a 9x compiler speedup from hash table caches and union-find type unification."
+description:
+  "CI green on four platforms, a migration from TinyScheme to s7, and a 9x
+  compiler speedup from hash table caches and union-find type unification."
 tags:
   - extempore
 ---
@@ -53,20 +55,20 @@ constraint-based solving.
 Here are ahead-of-time compilation benchmarks for all the core and external
 audio libraries[^bench-setup]:
 
-| Library                             |      Before |      After |   Speedup |
-| ----------------------------------- | ----------: | ---------: | --------: |
-| `libs/base/base.xtm`                |       5.59s |      3.24s |      1.7x |
-| `libs/core/math.xtm`                |      16.57s |      4.04s |      4.1x |
-| `libs/core/rational.xtm`            |       6.47s |      3.47s |      1.9x |
-| `libs/core/audiobuffer.xtm`         |       7.45s |      3.49s |      2.1x |
-| `libs/core/audio_dsp.xtm`           |      32.14s |      5.71s |      5.6x |
-| `libs/core/instruments.xtm`         |     109.83s |      8.38s | **13.1x** |
-| `libs/external/fft.xtm`             |       5.71s |      3.99s |      1.4x |
-| `libs/external/sndfile.xtm`         |       9.17s |      3.64s |      2.5x |
-| `libs/external/audio_dsp_ext.xtm`   |       5.51s |      4.28s |      1.3x |
-| `libs/external/instruments_ext.xtm` |      12.57s |      9.26s |      1.4x |
-| `libs/external/portmidi.xtm`        |       4.86s |      3.35s |      1.5x |
-| **Total**                           | **215.9s**  | **52.9s**  |  **4.1x** |
+| Library                             |     Before |     After |   Speedup |
+| ----------------------------------- | ---------: | --------: | --------: |
+| `libs/base/base.xtm`                |      5.59s |     3.24s |      1.7x |
+| `libs/core/math.xtm`                |     16.57s |     4.04s |      4.1x |
+| `libs/core/rational.xtm`            |      6.47s |     3.47s |      1.9x |
+| `libs/core/audiobuffer.xtm`         |      7.45s |     3.49s |      2.1x |
+| `libs/core/audio_dsp.xtm`           |     32.14s |     5.71s |      5.6x |
+| `libs/core/instruments.xtm`         |    109.83s |     8.38s | **13.1x** |
+| `libs/external/fft.xtm`             |      5.71s |     3.99s |      1.4x |
+| `libs/external/sndfile.xtm`         |      9.17s |     3.64s |      2.5x |
+| `libs/external/audio_dsp_ext.xtm`   |      5.51s |     4.28s |      1.3x |
+| `libs/external/instruments_ext.xtm` |     12.57s |     9.26s |      1.4x |
+| `libs/external/portmidi.xtm`        |      4.86s |     3.35s |      1.5x |
+| **Total**                           | **215.9s** | **52.9s** |  **4.1x** |
 
 The headline number is a 4.1x wall-clock speedup, but each invocation includes
 ~3s of startup overhead (there's a hard-coded `sleep` for NSApp initialisation

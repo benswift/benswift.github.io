@@ -1,6 +1,8 @@
 ---
 title: "Two-way OSC communication between Extempore and Pd"
-description: "A step-by-step guide to sending and receiving OSC messages between Extempore and Pure Data."
+description:
+  "A step-by-step guide to sending and receiving OSC messages between Extempore
+  and Pure Data."
 tags:
   - extempore
   - lens

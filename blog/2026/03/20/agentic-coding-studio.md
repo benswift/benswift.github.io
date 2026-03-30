@@ -1,6 +1,8 @@
 ---
 title: "The road to COMP4020: Agentic Coding Studio"
-description: "Renaming the course to Agentic Coding Studio---because what we're really teaching is the craft of harnessing LLMs in coding workflows."
+description:
+  "Renaming the course to Agentic Coding Studio---because what we're really
+  teaching is the craft of harnessing LLMs in coding workflows."
 tags: [comp4020]
 ---
 
@@ -24,12 +26,11 @@ to harness LLMs in productive Agentic Coding workflows, and the fact that the
 software domain is "the web" is important (and where we'll do most of our work)
 many of the ideas I want my students to wrestle with are broader than that.
 
-Also, I have a
-[long history](/blog/2019/03/20/reimagine-fellow-project-pitch/) of trying to
-shoehorn the word "studio" into the projects/research groups/communities that I
-build... and so why stop now? The "studio" pedagogical model of making stuff in
-a community and watching others do the same is just such an apt description of
-the
+Also, I have a [long history](/blog/2019/03/20/reimagine-fellow-project-pitch/)
+of trying to shoehorn the word "studio" into the projects/research
+groups/communities that I build... and so why stop now? The "studio" pedagogical
+model of making stuff in a community and watching others do the same is just
+such an apt description of the
 [learning environment I hope to create in the course](/blog/2026/02/20/comp4020-the-core-mechanic/),
 too.
 

@@ -1,6 +1,8 @@
 ---
 title: "Configuring Spacemacs org-roam & org-noter for academic writing bliss"
-description: "How to get org-roam, org-roam-bibtex and org-noter working together in Spacemacs for a Zettelkasten-style academic workflow."
+description:
+  "How to get org-roam, org-roam-bibtex and org-noter working together in
+  Spacemacs for a Zettelkasten-style academic workflow."
 tags:
   - research
   - dev
@@ -17,9 +19,10 @@ writing---keeping notes about stuff I've read & linking the ideas together.
 
 All the cool kids are raving about the [Zettelkasten](https://zettelkasten.de)
 method, and the [org-roam](https://www.orgroam.com) package supporting this
-workflow in [Emacs](/blog/tag/dev/). There are also extensions for managing one's
-paper library ([org-roam-bibtex](https://github.com/org-roam/org-roam-bibtex))
-and reading/annotating pdf files
+workflow in [Emacs](/blog/tag/dev/). There are also extensions for managing
+one's paper library
+([org-roam-bibtex](https://github.com/org-roam/org-roam-bibtex)) and
+reading/annotating pdf files
 ([org-noter](https://github.com/weirdNox/org-noter)). When combined, this all
 seems like having academic writing superpowers compared to my "sit around and
 hope I remember the reference" approach. See e.g.

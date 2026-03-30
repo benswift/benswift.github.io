@@ -1,6 +1,8 @@
 ---
 title: "Redacting craiyon prompts with imagemagick"
-description: "A one-liner ImageMagick command to batch-redact the prompt text from craiyon (DALL-E mini) screenshot outputs."
+description:
+  "A one-liner ImageMagick command to batch-redact the prompt text from craiyon
+  (DALL-E mini) screenshot outputs."
 tags:
   - dev
   - ai
@@ -22,8 +24,8 @@ Because it's tedious to do that by hand, here's what I came up with:
 2. use the _📷 Screenshot_ button to get a nice, clean screenshot
 
 3. run this [imagemagick](https://imagemagick.org) command (in my case the
-   downloaded screenshot name was `craiyon_2022-6-22_17-21-5.webp`, yours will be
-   similar but with a different timestamp at the end)
+   downloaded screenshot name was `craiyon_2022-6-22_17-21-5.webp`, yours will
+   be similar but with a different timestamp at the end)
 
    ```sh
    convert craiyon_2022-6-22_17-21-5.webp -fill red -draw 'rectangle 30, 240, 1320, 320' -fill white -pointsize 50 -gravity north -annotate +0+250 'REDACTED' craiyon_2022-6-22_17-21-5-redacted.webp

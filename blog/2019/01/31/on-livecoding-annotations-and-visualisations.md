@@ -1,6 +1,8 @@
 ---
 title: "On livecoding annotations and visualisations"
-description: "A response to Charlie Roberts' essay on code annotations, exploring the tension between visualising program state and editing live code."
+description:
+  "A response to Charlie Roberts' essay on code annotations, exploring the
+  tension between visualising program state and editing live code."
 tags:
   - livecoding
 ---

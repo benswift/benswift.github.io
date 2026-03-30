@@ -1,6 +1,8 @@
 ---
 title: "code/creativity/culture curriculum design workshop"
-description: "A hands-on workshop where participants spin code/creativity/culture wheels and design a real c/c/c studio assessment task."
+description:
+  "A hands-on workshop where participants spin code/creativity/culture wheels
+  and design a real c/c/c studio assessment task."
 tags:
   - reimagine
   - ccc

@@ -1,6 +1,8 @@
 ---
 title: "Agentic LLMs and Nerves"
-description: "Using Claude Code and GPT-5 with Elixir's Nerves framework, with ht-mcp as the secret sauce for remote IEx sessions."
+description:
+  "Using Claude Code and GPT-5 with Elixir's Nerves framework, with ht-mcp as
+  the secret sauce for remote IEx sessions."
 tags:
   - ai
 published: false

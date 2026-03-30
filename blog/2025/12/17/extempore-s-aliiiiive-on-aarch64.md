@@ -1,6 +1,8 @@
 ---
 title: "Extempore's aliiiiive on aarch64"
-description: "Extempore now builds and runs on Apple Silicon. The audio libraries work, the build process is cleaner, and Rosetta is no longer required for livecoding."
+description:
+  "Extempore now builds and runs on Apple Silicon. The audio libraries work, the
+  build process is cleaner, and Rosetta is no longer required for livecoding."
 tags: ["extempore"]
 ---
 

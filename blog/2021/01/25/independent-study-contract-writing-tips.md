@@ -1,6 +1,8 @@
 ---
 title: "Independent Study Contract writing tips"
-description: "Practical advice for ANU computing students on writing a capstone project description and learning outcomes that actually guide your research."
+description:
+  "Practical advice for ANU computing students on writing a capstone project
+  description and learning outcomes that actually guide your research."
 tags:
   - teaching
 ---

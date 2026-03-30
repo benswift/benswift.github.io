@@ -1,6 +1,8 @@
 ---
 title: "Running stable diffusion in a singularity container"
-description: "Rough notes and a Python script for running Stable Diffusion in a Singularity container with NVIDIA GPUs."
+description:
+  "Rough notes and a Python script for running Stable Diffusion in a Singularity
+  container with NVIDIA GPUs."
 ---
 
 singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3
@@ -12,9 +14,9 @@ SINGULARITYENV_CUDA_VISIBLE_DEVICES=0 singularity shell --nv
 
 source /opt/conda/etc/profile.d/conda.sh && conda activate ldm
 
-ffmpeg -framerate 30 -pattern_type glob -i '_.webp' -c:v libx264 -pix_fmt yuv420p
-genesis.mp4 ffmpeg -framerate 5 -pattern_type glob -i '_-Joel-\*.webp' -c:v
-libx264 -pix_fmt yuv420p Joel.mp4
+ffmpeg -framerate 30 -pattern*type glob -i '*.webp' -c:v libx264 -pix*fmt
+yuv420p genesis.mp4 ffmpeg -framerate 5 -pattern_type glob -i '*-Joel-\*.webp'
+-c:v libx264 -pix_fmt yuv420p Joel.mp4
 
 ideas for actually packaging this stuff...
 

@@ -1,6 +1,8 @@
 ---
 title: "Euclidean rhythms in Extempore"
-description: "A recursive Scheme implementation of Euclidean rhythms in Extempore, plus some unexpectedly cool visual patterns."
+description:
+  "A recursive Scheme implementation of Euclidean rhythms in Extempore, plus
+  some unexpectedly cool visual patterns."
 tags:
   - extempore
 ---

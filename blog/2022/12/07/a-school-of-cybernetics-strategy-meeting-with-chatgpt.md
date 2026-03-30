@@ -1,6 +1,9 @@
 ---
 title: "A School of Cybernetics strategy meeting with ChatGPT"
-description: "My first ChatGPT conversation: asking it to brainstorm strategy for the ANU School of Cybernetics. Impressive output, but we're going to need to get better at drinking from the bullshit firehose."
+description:
+  "My first ChatGPT conversation: asking it to brainstorm strategy for the ANU
+  School of Cybernetics. Impressive output, but we're going to need to get
+  better at drinking from the bullshit firehose."
 tags:
   - ai
   - cybernetics

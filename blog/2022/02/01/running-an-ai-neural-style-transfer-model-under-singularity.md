@@ -1,6 +1,8 @@
 ---
 title: "Running an AI neural style transfer model under Singularity"
-description: "Getting a pytorch neural style transfer model running on RTX 3090s via Singularity containers, navigating CUDA version hell along the way."
+description:
+  "Getting a pytorch neural style transfer model running on RTX 3090s via
+  Singularity containers, navigating CUDA version hell along the way."
 tags:
   - dev
   - ai

@@ -1,6 +1,8 @@
 ---
 title: "Bulk-add students to MS Teams from a csv file"
-description: "A PowerShell snippet for bulk-adding students to an MS Teams class from a CSV of email addresses---works on macOS and Linux too."
+description:
+  "A PowerShell snippet for bulk-adding students to an MS Teams class from a CSV
+  of email addresses---works on macOS and Linux too."
 tags:
   - dev
 ---

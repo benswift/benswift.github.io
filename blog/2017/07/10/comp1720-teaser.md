@@ -1,6 +1,8 @@
 ---
 title: "COMP1720 teaser"
-description: "Five reasons to take COMP1720, ANU's art-with-code course---now using p5.js in the browser, with more sound and music than ever."
+description:
+  "Five reasons to take COMP1720, ANU's art-with-code course---now using p5.js
+  in the browser, with more sound and music than ever."
 tags:
   - teaching
   - dev

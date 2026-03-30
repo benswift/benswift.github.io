@@ -1,6 +1,8 @@
 ---
 title: "Blog refresh"
-description: "Migrated to Cryogen and moved the Extempore docs to their own site. Some links are broken, bear with me."
+description:
+  "Migrated to Cryogen and moved the Extempore docs to their own site. Some
+  links are broken, bear with me."
 tags:
   - dev
 ---

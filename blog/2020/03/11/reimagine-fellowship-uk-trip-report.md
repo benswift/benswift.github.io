@@ -1,6 +1,8 @@
 ---
 title: "Reimagine Fellowship UK trip report"
-description: "Highlights from a UK research trip: ICLC, chatting with Sam Aaron and Simon Peyton Jones, and falling over on a Scottish hill."
+description:
+  "Highlights from a UK research trip: ICLC, chatting with Sam Aaron and Simon
+  Peyton Jones, and falling over on a Scottish hill."
 tags:
   - reimagine
 ---

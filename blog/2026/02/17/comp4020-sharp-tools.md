@@ -1,6 +1,8 @@
 ---
 title: "The road to COMP4020: providing sharp tools"
-description: "Getting 200 students adequate access to frontier coding agents is the hard logistics problem behind COMP4020."
+description:
+  "Getting 200 students adequate access to frontier coding agents is the hard
+  logistics problem behind COMP4020."
 tags: [comp4020]
 ---
 
@@ -81,8 +83,9 @@ done.
 Re: option 1, Kathi Fisler and colleagues are teaching an
 [Agentic Coding course at Brown](https://cs.brown.edu/courses/csci1970kf/agentic-spr-2026/index.html)
 right now which uses a similar approach (even explicity using the studio/crit
-approach [like I am](/blog/2026/02/20/comp4020-the-core-mechanic/)). What they're
-doing is re-imbursing students 20USD/month for a Claude Code Pro plan, and it
+approach [like I am](/blog/2026/02/20/comp4020-the-core-mechanic/)). What
+they're doing is re-imbursing students 20USD/month for a Claude Code Pro plan,
+and it
 [seems to be going well](https://bsky.app/profile/kfisler.bsky.social/post/3mfm5hpshds2j).
 My preference is to not have to have students pay out-of-pocket and get
 re-imbursed; the ideal scenario is that I (as course convenor) can use the usual

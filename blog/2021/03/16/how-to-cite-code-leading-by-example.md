@@ -1,6 +1,8 @@
 ---
 title: "How to cite code? Leading by example"
-description: "A YAML-based Statement of Originality that teaches students how to cite code, declare collaborators and list licences in every assignment."
+description:
+  "A YAML-based Statement of Originality that teaches students how to cite code,
+  declare collaborators and list licences in every assignment."
 tags:
   - teaching
 ---
@@ -57,14 +59,13 @@ declaration: >-
   I declare that everything I have submitted in this assignment is entirely my
   own work, with the following exceptions:
 
-
 # add as many "name+comment" entries as necessary
 # (or remove it altogether if you haven't collaborated with anyone)
 collaboration:
   - name: Alice McGuffin
     comment: >-
-      Alice gave me some ideas for creating the animated ripple effect
-      in the background , but I never saw her assignment code
+      Alice gave me some ideas for creating the animated ripple effect in the
+      background , but I never saw her assignment code
   - name: Jerry Wang
     comment: >-
       Jerry painted the background artwork for my sketch
@@ -72,13 +73,16 @@ collaboration:
 # add as many "url+licence+comment" entries as necessary
 # (or remove it altogether if you haven't used any external code)
 code:
-  - comment: the code in my "drawRandomImage" function is based on some code from StackOverflow
+  - comment:
+      the code in my "drawRandomImage" function is based on some code from
+      StackOverflow
     url: "https://stackoverflow.com/questions/51233447/p5js-image-array"
     licence: CC BY-SA 2.5 # this is the standard StackOverflow licence
-  - comment: my changeSize() function is taken from an example on the p5 reference page for mouseWheel
+  - comment:
+      my changeSize() function is taken from an example on the p5 reference page
+      for mouseWheel
     url: "https://p5js.org/reference/#/p5.Element/mouseWheel"
     licence: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-
 
 # add as many "url+licence+comment" entries as necessary
 # (or remove it altogether if you haven't used any external assets)
@@ -92,7 +96,6 @@ assets:
   - comment: some content in Artist Statement taken from Turner Wikipedia page
     url: "https://en.wikipedia.org/wiki/J._M._W._Turner"
     licence: CC-SA
-
 
 # sign *your* name and uid here
 name: Fleur DeLis

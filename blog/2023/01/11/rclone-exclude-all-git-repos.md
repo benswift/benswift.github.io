@@ -1,6 +1,8 @@
 ---
 title: "rclone: exclude all git repos"
-description: "A bash script to auto-exclude all git repos from rclone backups, since rclone's built-in filtering can't do it alone."
+description:
+  "A bash script to auto-exclude all git repos from rclone backups, since
+  rclone's built-in filtering can't do it alone."
 tags:
   - dev
 ---

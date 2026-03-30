@@ -1,6 +1,9 @@
 ---
 title: "Coding agents and the plasticity of code"
-description: "Code has always felt brittle---most changes break it. Coding agents change that dynamic, absorbing the cognitive load of big refactors and making code feel plastic rather than rigid."
+description:
+  "Code has always felt brittle---most changes break it. Coding agents change
+  that dynamic, absorbing the cognitive load of big refactors and making code
+  feel plastic rather than rigid."
 tags: [ai, dev]
 ---
 
@@ -81,8 +84,8 @@ like it, and I'm excited to see what happens as they get better.
 It's not about the plasticity stuff, but as well as using these models a lot
 this year I've also been thinking a lot about how we teach students (and the
 wider public) about what LLMs are, what they aren't and how they work. The
-fruits of that labour are now online at [llmsunplugged.org](https://www.llmsunplugged.org) and if
-you check them out and find them useful I'd
-[love to hear your feedback](mailto:ben@benswift.me).
+fruits of that labour are now online at
+[llmsunplugged.org](https://www.llmsunplugged.org) and if you check them out and
+find them useful I'd [love to hear your feedback](mailto:ben@benswift.me).
 
 :::

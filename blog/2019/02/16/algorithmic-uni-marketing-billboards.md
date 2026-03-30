@@ -1,6 +1,8 @@
 ---
 title: "Algorithmic uni marketing billboards"
-description: "A generative 'verb your verb' billboard that picks random verbs and Unsplash backgrounds, built with reveal.js and later rewritten in ClojureScript."
+description:
+  "A generative 'verb your verb' billboard that picks random verbs and Unsplash
+  backgrounds, built with reveal.js and later rewritten in ClojureScript."
 tags:
   - dev
 ---

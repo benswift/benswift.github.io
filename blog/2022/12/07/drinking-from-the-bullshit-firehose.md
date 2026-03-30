@@ -1,6 +1,9 @@
 ---
 title: "Drinking from the bullshit firehose"
-description: "Draft notes on AI-generated bullshit in higher education---the problem isn't that it's wrong, it's that Brandolini's law means we'll be overwhelmed by the sheer volume."
+description:
+  "Draft notes on AI-generated bullshit in higher education---the problem isn't
+  that it's wrong, it's that Brandolini's law means we'll be overwhelmed by the
+  sheer volume."
 tags:
   - ai
   - teaching

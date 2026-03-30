@@ -1,6 +1,8 @@
 ---
 title: "Pulling apart Zoom attendance csv dumps in tidy R"
-description: "A quick tidyverse R script for parsing Zoom attendance CSVs and visualising per-participant call duration with ggplot2."
+description:
+  "A quick tidyverse R script for parsing Zoom attendance CSVs and visualising
+  per-participant call duration with ggplot2."
 tags:
   - dev
 ---

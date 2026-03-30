@@ -1,6 +1,8 @@
 ---
 title: "A call-up to fight covid19"
-description: "Joining an ANU COVID-19 taskforce to build epidemiological simulation tools for the Canberra health system."
+description:
+  "Joining an ANU COVID-19 taskforce to build epidemiological simulation tools
+  for the Canberra health system."
 tags:
   - research
 ---
@@ -19,11 +21,12 @@ future, so if you're interested in that sort of thing then come back to check
 for updates on this blog (I'll use the `covid19` tag).
 
 That means that some aspects of my creative coding work are _temporarily_ on the
-back burner (although I'm still teaching the [Laptop Ensemble](/blog/tag/lens/)).
-I can't complain too much---covid19 has put lots of stuff on the back burner all
-over the world. In fact, I'm thankful to (a) have a job and (b) have a sense of
-agency about all this stuff; the feeling of impotence as an individual in a big
-world beset by this pandemic can be hard to take sometimes.
+back burner (although I'm still teaching the
+[Laptop Ensemble](/blog/tag/lens/)). I can't complain too much---covid19 has put
+lots of stuff on the back burner all over the world. In fact, I'm thankful to
+(a) have a job and (b) have a sense of agency about all this stuff; the feeling
+of impotence as an individual in a big world beset by this pandemic can be hard
+to take sometimes.
 
 The toolkit of computation as explored through the domain of making art & music
 is no less relevant when we're all stuck at home in isolation. The arts can be a

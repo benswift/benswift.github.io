@@ -1,6 +1,8 @@
 ---
 title: "Class discussions on Discourse"
-description: "Switching from Piazza to self-hosted Discourse for a 200-student course forum, with practical notes on setup, tradeoffs, and what's missing."
+description:
+  "Switching from Piazza to self-hosted Discourse for a 200-student course
+  forum, with practical notes on setup, tradeoffs, and what's missing."
 tags:
   - teaching
   - dev

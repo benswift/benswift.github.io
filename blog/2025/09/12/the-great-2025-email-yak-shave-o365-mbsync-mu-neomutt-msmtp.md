@@ -1,6 +1,8 @@
 ---
 title: "The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp"
-description: "Rebuilding a terminal email setup with OAuth2, Office365 and neomutt in Zed---the hard-won config so you don't have to waste as many hours as I did."
+description:
+  "Rebuilding a terminal email setup with OAuth2, Office365 and neomutt in
+  Zed---the hard-won config so you don't have to waste as many hours as I did."
 tags:
   - dev
 ---
@@ -67,8 +69,8 @@ a chance).
 ## Running in Zed
 
 Since I'm a Zed user, I run neomutt in a fullscreen terminal task (same approach
-as my [Claude Code setup](/blog/2025/07/23/running-claude-code-within-zed/)). Add
-this to your tasks.json:
+as my [Claude Code setup](/blog/2025/07/23/running-claude-code-within-zed/)).
+Add this to your tasks.json:
 
 ```json
 {

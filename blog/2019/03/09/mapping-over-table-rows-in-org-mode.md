@@ -1,6 +1,8 @@
 ---
 title: "Mapping over table rows in org-mode"
-description: "How to apply elisp functions to org-mode table rows using named tables and code blocks, with practical caveats and a Pride and Prejudice example."
+description:
+  "How to apply elisp functions to org-mode table rows using named tables and
+  code blocks, with practical caveats and a Pride and Prejudice example."
 tags:
   - dev
 ---

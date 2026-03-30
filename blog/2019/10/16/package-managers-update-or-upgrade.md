@@ -1,6 +1,8 @@
 ---
 title: "Package managers: <code>update</code> or <code>upgrade</code>?"
-description: "A quiz (and a plea for consistency) on whether your package manager uses update or upgrade."
+description:
+  "A quiz (and a plea for consistency) on whether your package manager uses
+  update or upgrade."
 tags:
   - dev
 ---

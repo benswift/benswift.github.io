@@ -1,6 +1,8 @@
 ---
 title: "c/c/c studio: what's already happening"
-description: "A rough map of the people, structures and processes already in place as the c/c/c studio takes shape."
+description:
+  "A rough map of the people, structures and processes already in place as the
+  c/c/c studio takes shape."
 tags:
   - reimagine
 ---

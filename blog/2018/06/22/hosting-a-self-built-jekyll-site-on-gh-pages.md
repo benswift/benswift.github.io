@@ -1,6 +1,8 @@
 ---
 title: "Hosting a self-built jekyll site on GH pages"
-description: "A simple Makefile for building Jekyll locally with custom plugins and pushing the output to GitHub Pages."
+description:
+  "A simple Makefile for building Jekyll locally with custom plugins and pushing
+  the output to GitHub Pages."
 tags:
   - dev
 ---

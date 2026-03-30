@@ -1,6 +1,8 @@
 ---
 title: "Teaching the world to Cybernetics"
-description: "A look at what the new Experiences Team at the ANU School of Cybernetics is building---weird, site-specific encounters with cybernetic ideas."
+description:
+  "A look at what the new Experiences Team at the ANU School of Cybernetics is
+  building---weird, site-specific encounters with cybernetic ideas."
 tags:
   - cybernetics
 ---

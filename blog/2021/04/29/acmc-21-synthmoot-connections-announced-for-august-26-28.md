@@ -1,6 +1,8 @@
 ---
 title: "ACMC'21 + Synthmoot: Connections announced for August 26-28"
-description: "The 2021 Australasian Computer Music Conference is happening in Sydney/Melbourne/online in late August---submissions welcome."
+description:
+  "The 2021 Australasian Computer Music Conference is happening in
+  Sydney/Melbourne/online in late August---submissions welcome."
 tags:
   - gigs
   - livecoding

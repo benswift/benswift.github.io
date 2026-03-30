@@ -1,6 +1,8 @@
 ---
 title: "Sound file I/O in Extempore with libsndfile"
-description: "A crash course on reading, processing and writing audio files in Extempore using the libsndfile C library bindings."
+description:
+  "A crash course on reading, processing and writing audio files in Extempore
+  using the libsndfile C library bindings."
 tags:
   - extempore
 ---
