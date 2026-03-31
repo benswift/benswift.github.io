@@ -98,10 +98,21 @@ cool".
 
 - [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) coined
   "vibe coding" and later refined his thinking toward "agentic engineering"
+- [Ryan Dahl](https://x.com/rough__sea/status/2013280952370573666) (Node.js,
+  Deno) declared "the era of humans writing code is over"---2.3 million views
+  and counting
 - [Mitchell Hashimoto](https://mitchellh.com/writing/my-ai-adoption-journey)
   documented the full arc from scepticism to productive use
+- [Charity Majors](https://charitydotwtf.substack.com/p/2025-was-for-ai-what-2010-was-for)
+  argues 2025 was for AI what 2010 was for cloud---but writing code was always
+  the easy part; observability and ops are where it gets real
 - [Armin Ronacher](https://lucumr.pocoo.org/2025/6/12/agentic-coding/)---practical
   agentic coding recommendations from the Flask/Sentry creator
+- [Maggie Appleton](https://maggieappleton.com/gastown) on agent orchestration
+  patterns and why design and critical thinking are the new bottlenecks, not
+  code generation
+- [Cassidy Williams](https://cassidoo.co/post/vibe-coding-yawn/) found vibe
+  coding effective but joyless---"there's no 'YAY I am a GENIUS' feeling"
 - [Kent Beck](https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent)
   on TDD as counterbalance to AI agents ("agents keep trying to delete tests to
   make them pass")
@@ -110,6 +121,9 @@ cool".
   workers"
 - [Jeremy Howard](https://www.answer.ai/posts/2025-10-01-solveit-full.html)---sceptical
   of autonomous agents, built Solveit as the antidote
+- [Paige Bailey](https://softwareengineeringdaily.com/2025/01/09/ai-developer-tools-at-google-with-paige-bailey/)
+  on AI developer tools at Google and why Gemini 3 is built for "acting and
+  coding", not just chatting
 - [DHH](https://world.hey.com/dhh/promoting-ai-agents-3ee04945) flipped from
   sceptic to enthusiast and made it look dramatic
 - [Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf)
