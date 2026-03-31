@@ -93,7 +93,8 @@ Here's the honest part: nobody really knows the right way to do agentic coding
 yet. I surveyed
 [the emerging landscape](/blog/2026/03/30/comp4020-whats-the-theory-here/)---Regehr's
 "zero degrees of freedom", Harper Reed's spec-driven development, Jesse
-Vincent's Superpowers framework, the Deer Valley retreat consensus---and the
+Vincent's Superpowers framework, the Deer Valley retreat consensus, Geoffrey
+Huntley's [Ralph Loop](https://ghuntley.com/loop/)---and the
 picture is of a field still finding its footing. Part of what excites me about
 COMP4020 is that it's a distributed experiment: 100--200 students road-testing
 these nascent theories and reporting back on what actually works.
