@@ -18,7 +18,17 @@ const socialLinks = [
 
 <header class="site-header" data-pagefind-ignore>
   <nav class="nav-container" aria-label="Main navigation">
-    <a href="/" class="site-title">benswift.me</a>
+    <a href="/" class="site-title" aria-label="benswift.me home">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="8" fill="#be2edd"/>
+        <line x1="32" y1="6" x2="32" y2="58" stroke="rgba(255,255,255,0.15)" stroke-width="0.75"/>
+        <line x1="6" y1="32" x2="58" y2="32" stroke="rgba(255,255,255,0.15)" stroke-width="0.75"/>
+        <text font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="white" text-anchor="middle" dominant-baseline="central" x="16" y="18">b</text>
+        <text font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="white" text-anchor="middle" dominant-baseline="central" x="48" y="18">s</text>
+        <text font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="white" text-anchor="middle" dominant-baseline="central" x="16" y="46">m</text>
+        <text font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="white" text-anchor="middle" dominant-baseline="central" x="48" y="46">e</text>
+      </svg>
+    </a>
 
     <button
       class="mobile-menu-toggle"
@@ -81,14 +91,9 @@ const socialLinks = [
   }
 
   .site-title {
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--text-color);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-  }
-
-  .site-title:hover {
-    color: var(--highlight-color);
   }
 
   .nav-links {
