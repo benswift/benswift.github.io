@@ -402,3 +402,96 @@ sup a {
   text-decoration: none;
   font-weight: 600;
 }
+
+/* Print styles — primarily for CV page */
+@media print {
+  :root {
+    --highlight-color: #9b1fb8;
+    --text-color: #1a1a1a;
+    --background-color: #fff;
+    --text-grey: #444;
+    --link-color: #1a1a1a;
+    --brand-1: #9b1fb8;
+    --brand-soft: color-mix(in srgb, #9b1fb8 25%, transparent);
+    --bg-soft: #f5f5f5;
+    --divider: #ccc;
+    --text-2: #444;
+    --text-3: #888;
+
+    color-scheme: light;
+  }
+
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  nav,
+  footer,
+  .heading-anchor {
+    display: none !important;
+  }
+
+  a {
+    color: var(--text-color);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    break-after: avoid;
+    margin: 1em 0 0.3em;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  /* Compact bibliography for print */
+  .bibliography .year-section {
+    margin-bottom: 0.75rem;
+  }
+
+  .bibliography .year-section h2 {
+    font-size: 1.1rem;
+    margin: 0.75rem 0 0.25rem;
+  }
+
+  .bibliography .pub-item {
+    margin-bottom: 0.4rem;
+    padding-left: 0.75rem;
+    border-left-width: 2px;
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+
+  .bibliography .pub-title {
+    margin-bottom: 0.1rem;
+  }
+
+  .bibliography .pub-authors {
+    margin-bottom: 0.1rem;
+  }
+
+  .bibliography .pub-venue {
+    font-size: 0.85em;
+  }
+
+  /* Tighter list spacing */
+  ul, ol {
+    padding-left: 1.25rem;
+  }
+
+  li {
+    margin: 0.15rem 0;
+  }
+
+  /* Avoid widows/orphans */
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+}
