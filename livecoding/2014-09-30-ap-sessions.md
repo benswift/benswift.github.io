@@ -5,6 +5,7 @@ date: "2014-09-30"
 venue: "Australian National University"
 type: "other"
 event: "The AP Sessions"
+description: "Livecoded music performance, Australian National University."
 ---
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I

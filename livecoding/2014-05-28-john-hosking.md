@@ -5,6 +5,7 @@ date: "2014-05-28"
 venue: "Drill Hall Gallery, Canberra"
 type: "curated"
 event: "John Hosking Farewell Reception"
+description: "Livecoded music performance, Drill Hall Gallery, Canberra."
 venue_url: "https://dhg.anu.edu.au"
 video_url: "https://vimeo.com/314652381"
 ---

@@ -5,6 +5,7 @@ date: "2025-11-07T00:00:00.000Z"
 venue: "PK Big Band Room, ANU School of Music"
 type: "curated"
 event: "SMCClab Live concert series"
+description: "Livecoded music performance at SMCClab Live concert series, PK Big Band Room, ANU School of Music."
 event_url: "https://smcclab.github.io/2025/10/27/smcclablive-1.html"
 video_url: "https://vimeo.com/1135231035"
 ---

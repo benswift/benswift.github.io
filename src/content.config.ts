@@ -37,7 +37,7 @@ const livecoding = defineCollection({
     event_url: z.string().optional(),
     video_url: z.string().optional(),
     curators: z.string().optional(),
-    artists: z.array(z.string()).optional(),
+    artists: z.array(z.object({ name: z.string(), role: z.string() })).optional(),
     description: z.string().optional(),
     layout: z.string().optional(),
   }),

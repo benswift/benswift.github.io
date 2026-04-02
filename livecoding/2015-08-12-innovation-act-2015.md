@@ -5,6 +5,7 @@ date: "2015-08-12"
 venue: "John Curtin School of Medical Research, Canberra"
 type: "curated"
 event: "Innovation ACT 2015"
+description: "Livecoded music performance at Innovation ACT 2015, John Curtin School of Medical Research, Canberra."
 event_url: "https://innovationact.org"
 venue_url: "https://jcsmr.anu.edu.au"
 ---

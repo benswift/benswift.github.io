@@ -5,9 +5,12 @@ date: "2018-08-13"
 venue: "Doughnut Dept., Canberra"
 type: "curated"
 event: "Shirty Science Season 3"
+description: "Livecoded music performance at Shirty Science Season 3, Doughnut Dept., Canberra."
 event_url: "https://www.facebook.com/events/200014520685862/"
 venue_url: "https://www.thedoughnutdept.com/welcome"
-artists: ["Kieran Browne"]
+artists:
+  - name: "Kieran Browne"
+    role: "livecoded visuals"
 ---
 
 [Shirty Science](https://shirtyscience.com/) is an ongoing arts/science

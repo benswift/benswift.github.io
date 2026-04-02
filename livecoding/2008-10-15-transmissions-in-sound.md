@@ -5,6 +5,7 @@ date: "2008-10-15"
 venue: "ANU School of Music, Canberra"
 type: "curated"
 event: "Transmissions in Sound"
+description: "Livecoded music performance, ANU School of Music, Canberra."
 venue_url: "https://music.cass.anu.edu.au/"
 ---
 

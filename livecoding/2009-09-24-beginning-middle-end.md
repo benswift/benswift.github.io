@@ -5,6 +5,7 @@ date: "2009-09-24"
 venue: "ANU School of Art Gallery, Canberra"
 type: "curated"
 event: "Beginning-Middle-End Festival"
+description: "Livecoded music performance, ANU School of Art Gallery, Canberra."
 venue_url: "https://soad.cass.anu.edu.au/gallery-exhibitions"
 video_url: "https://vimeo.com/7341091"
 ---
