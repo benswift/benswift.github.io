@@ -3,7 +3,8 @@ title: "The AP Sessions"
 layout: doc
 date: "2014-09-30"
 venue: "Australian National University"
-type: "study"
+type: "other"
+event: "The AP Sessions"
 ---
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I

@@ -4,9 +4,11 @@ layout: doc
 date: "2018-08-10"
 venue: "Molo Bar, Australian National University"
 type: "curated"
+event: "National Science Week 2018"
 event_url: "https://www.scienceweek.net.au/the-curious-feast/"
 venue_url: "https://pop-up.anu.edu.au/contact/molo-live"
 video_url: "https://www.youtube.com/watch?v=IBVY_zW06kk"
+artists: ["Kieran Browne"]
 ---
 
 Kieran and I played our first ever livecoding set together as part of the

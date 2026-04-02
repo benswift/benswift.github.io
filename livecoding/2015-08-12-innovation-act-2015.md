@@ -4,6 +4,7 @@ layout: doc
 date: "2015-08-12"
 venue: "John Curtin School of Medical Research, Canberra"
 type: "curated"
+event: "Innovation ACT 2015"
 event_url: "https://innovationact.org"
 venue_url: "https://jcsmr.anu.edu.au"
 ---

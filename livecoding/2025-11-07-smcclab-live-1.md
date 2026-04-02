@@ -4,6 +4,7 @@ layout: doc
 date: "2025-11-07T00:00:00.000Z"
 venue: "PK Big Band Room, ANU School of Music"
 type: "curated"
+event: "SMCClab Live concert series"
 event_url: "https://smcclab.github.io/2025/10/27/smcclablive-1.html"
 video_url: "https://vimeo.com/1135231035"
 ---

@@ -4,7 +4,9 @@ layout: doc
 date: "2019-02-26"
 venue: "ANU College of Engineering, Computing and Cybernetics"
 type: "invited"
+event: "CECS Welcome Party 2019"
 event_url: "https://cs.anu.edu.au/events/cecs-welcome-party"
+artists: ["Kieran Browne"]
 ---
 
 As usual, [CECS](https://cecs.anu.edu.au/) kicked off the year with a welcome

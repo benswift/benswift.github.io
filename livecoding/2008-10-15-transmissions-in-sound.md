@@ -4,6 +4,7 @@ layout: doc
 date: "2008-10-15"
 venue: "ANU School of Music, Canberra"
 type: "curated"
+event: "Transmissions in Sound"
 venue_url: "https://music.cass.anu.edu.au/"
 ---
 

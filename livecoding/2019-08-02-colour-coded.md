@@ -4,9 +4,11 @@ layout: doc
 date: "2019-08-02"
 venue: "Drill Hall Gallery, Canberra"
 type: "curated"
+event: "Ildiko Kovacs: The DNA of Colour exhibition"
 event_url: "https://www.facebook.com/events/359350878094918/"
 venue_url: "https://dhg.anu.edu.au"
 video_url: "https://vimeo.com/356811176"
+artists: ["Kieran Browne", "Charles Martin"]
 ---
 
 [Kieran Browne](https://kieranbrowne.com) (live GLSL shader hacking),

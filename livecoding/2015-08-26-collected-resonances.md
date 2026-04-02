@@ -4,6 +4,7 @@ layout: doc
 date: "2015-08-26"
 venue: "ANU School of Music, Canberra"
 type: "curated"
+event: "Collected Resonances concert series"
 event_url: "https://www.agac.com.au/event/collected-resonances-3/"
 venue_url: "https://music.cass.anu.edu.au/services/bookings/venues"
 video_url: "https://vimeo.com/314633596"

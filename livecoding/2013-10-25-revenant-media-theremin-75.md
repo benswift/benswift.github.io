@@ -4,6 +4,7 @@ layout: doc
 date: "2013-10-25"
 venue: "ANU School of Art Gallery, Canberra"
 type: "curated"
+event: "Revenant Media: Theremin '75 exhibition"
 event_url: "https://soad.cass.anu.edu.au/events/revenant-media"
 venue_url: "https://soad.cass.anu.edu.au/gallery-exhibitions"
 video_url: "https://vimeo.com/78788032"

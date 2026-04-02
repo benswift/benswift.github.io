@@ -4,6 +4,7 @@ layout: doc
 date: "2017-08-11"
 venue: "National Film and Sound Archive, Canberra"
 type: "curated"
+event: "National Science Week 2017"
 event_url: "https://www.scienceweek.net.au"
 venue_url: "https://www.nfsa.gov.au"
 ---

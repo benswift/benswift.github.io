@@ -4,6 +4,7 @@ layout: doc
 date: "2018-01-19"
 venue: "Questacon, Canberra"
 type: "curated"
+event: "National Invention Convention 2018"
 event_url: "https://www.questacon.edu.au/outreach/programmes/questacon-smart-skills-initiative/questacon-invention-convention#term1569"
 venue_url: "https://www.questacon.edu.au"
 ---
