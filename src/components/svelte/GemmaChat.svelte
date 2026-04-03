@@ -3,7 +3,7 @@
 
   type ChatMessage = { role: "user" | "assistant"; content: string }
   type ModelState =
-    | { kind: "unsupported" }
+    | { kind: "unsupported"; reason: "mobile" | "no-webgpu" }
     | { kind: "ready" }
     | { kind: "loading"; progress: number; status: string }
     | { kind: "chat" }
@@ -157,8 +157,10 @@ ${siteContent}`
   }
 
   onMount(() => {
-    if (!navigator.gpu || isMobileDevice()) {
-      modelState = { kind: "unsupported" }
+    if (isMobileDevice()) {
+      modelState = { kind: "unsupported", reason: "mobile" }
+    } else if (!navigator.gpu) {
+      modelState = { kind: "unsupported", reason: "no-webgpu" }
     }
   })
 </script>
@@ -166,15 +168,20 @@ ${siteContent}`
 <div class="gemma-chat">
   {#if modelState.kind === "unsupported"}
     <div class="notice">
-      <p>
-        This demo requires <strong>WebGPU</strong> and a desktop browser with
-        enough memory for a ~2 GB model. It currently works best in Chrome or
-        Edge on a desktop or laptop with a dedicated GPU.
-      </p>
-      <p>
-        Mobile devices don't have enough memory, and Firefox/Safari on desktop
-        don't yet support WebGPU fully.
-      </p>
+      {#if modelState.reason === "mobile"}
+        <p>
+          This demo loads a ~2 GB language model into your browser, which
+          is too large for mobile devices. Try it on a desktop or laptop
+          with a dedicated GPU for the best experience.
+        </p>
+      {:else}
+        <p>
+          This demo requires <strong>WebGPU</strong>, which your browser
+          doesn't appear to support. It works in Chrome, Edge, and
+          Safari 17+. The model is ~2 GB and runs entirely in your
+          browser---nothing is sent to a server.
+        </p>
+      {/if}
     </div>
   {:else if modelState.kind === "ready"}
     <div class="notice">
