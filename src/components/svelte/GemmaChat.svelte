@@ -177,9 +177,9 @@ ${siteContent}`
       {:else}
         <p>
           This demo requires <strong>WebGPU</strong>, which your browser
-          doesn't appear to support. It works in Chrome, Edge, and
-          Safari 17+. The model is ~2 GB and runs entirely in your
-          browser---nothing is sent to a server.
+          doesn't appear to support. It's available in Chrome, Edge,
+          Safari 17+, and Firefox 141+. The model is ~2 GB and runs
+          entirely in your browser---nothing is sent to a server.
         </p>
       {/if}
     </div>
