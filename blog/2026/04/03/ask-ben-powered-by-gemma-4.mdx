@@ -1,0 +1,48 @@
+---
+title: "Ask Ben (powered by Gemma 4)"
+description:
+  "An in-browser chat widget running Google's Gemma 4 E2B via WebGPU, primed
+  with all the content from this site so you can ask it questions about me."
+tags: [ai, web]
+---
+
+import GemmaChat from '../../../../src/components/svelte/GemmaChat.svelte'
+
+Google [just released the Gemma 4 model family](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)---their
+most capable open models yet, and the smallest variants are small enough to run
+entirely in your browser. The E2B model has 2.3 billion effective parameters
+(5.1B total), where the "E" stands for "efficient"---it uses a technique called
+Per-Layer Embeddings that reduces compute at inference time while keeping the
+model's full representational capacity.[^ple]
+
+[^ple]: Each decoder layer gets its own small embedding table rather than sharing
+    a single large one. This means the total parameter count is higher than
+    the effective count, but the model only activates the embeddings it needs
+    for each layer. Clever trick.
+
+So naturally I had to see if I could get it running on this site. The widget
+below loads the [LiteRT web build](https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm)
+of Gemma 4 E2B via Google's
+[MediaPipe LLM Inference API](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference/web_js)
+and WebGPU, then primes it with content from this site---bio, CV, research
+interests, and blog post titles---as its system prompt. You can ask it questions
+about me and my work, and it'll do its best to answer from that context.
+
+:::warning
+
+Some caveats, because they matter. This is a 2.3B parameter language model, not
+actually me. It will hallucinate. It will get things wrong. It may confidently
+tell you I have opinions I don't hold or have done things I haven't done. Treat
+it as a fun experiment in on-device inference, not as a reliable source of
+information about me.
+
+It also requires Chrome or Edge (WebGPU isn't available in Firefox or Safari
+yet), and the initial model download is around 2 GB---though it's cached in
+your browser after the first visit. Speed depends on your GPU---on a decent
+discrete GPU it should be fairly responsive, but on integrated graphics expect
+it to be slower. This is a 2B model doing inference in your browser, not a
+cloud API.
+
+:::
+
+<GemmaChat client:only="svelte" />

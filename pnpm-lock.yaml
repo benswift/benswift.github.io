@@ -14,6 +14,9 @@ importers:
       '@fontsource-variable/atkinson-hyperlegible-next':
         specifier: ^5.2.6
         version: 5.2.6
+      '@mediapipe/tasks-genai':
+        specifier: ^0.10.27
+        version: 0.10.27
       astro-broken-links-checker:
         specifier: ^1.0.7
         version: 1.0.7
@@ -749,6 +752,9 @@ packages:
 
   '@mdx-js/mdx@3.1.1':
     resolution: {integrity: sha512-f6ZO2ifpwAQIpzGWaBQT2TXxPv6z3RBzQKpVftEWN78Vl/YweF1uwussDx8ECAXVtr3Rs89fKyG9YlzUs9DyGQ==}
+
+  '@mediapipe/tasks-genai@0.10.27':
+    resolution: {integrity: sha512-cv69CPPAtEDBUs6dGZft2S+sBqde1XvEMST367siSyxrhffdWtm4uQIsfdedAbhJ33BwAjuMnAdxDrO9WrzIAQ==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4092,6 +4098,8 @@ snapshots:
       vfile: 6.0.3
     transitivePeerDependencies:
       - supports-color
+
+  '@mediapipe/tasks-genai@0.10.27': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:

@@ -16,6 +16,7 @@ package-lock.json
 *.key
 
 # Generated files
+public/site-content.txt
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.pdf
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.tex
