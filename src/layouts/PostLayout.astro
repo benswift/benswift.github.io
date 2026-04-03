@@ -27,6 +27,7 @@ const postUrl = `https://benswift.me${Astro.url.pathname}`
   <p class="post-date">{postDate}</p>
   <TagList tags={tags} />
   <slot />
+  {atUri && <div id="juttu-comments"></div>}
   <CitePost title={title} date={date} slug={slug} url={postUrl} atUri={atUri} />
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>

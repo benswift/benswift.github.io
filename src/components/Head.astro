@@ -47,6 +47,9 @@ const imageUrl = image
 <!-- AT Protocol -->
 {atUri && <link rel="site.standard.document" href={atUri} />}
 
+<!-- Juttu comments (AT Protocol powered) -->
+{atUri && <script defer src="https://cdn.jsdelivr.net/npm/juttu@latest/juttu-embed.js" data-theme="dark"></script>}
+
 <!-- Citation metadata -->
 {isPost && title && <meta name="citation_title" content={title} />}
 {isPost && <meta name="citation_author" content="Ben Swift" />}
