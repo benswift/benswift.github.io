@@ -389,6 +389,11 @@ strong {
   line-height: 1.6;
 }
 
+/* Juttu comments */
+.juttu-linking-start-btn {
+  background-color: var(--highlight-color) !important;
+}
+
 /* Footnotes */
 .footnotes {
   font-size: 0.85rem;
