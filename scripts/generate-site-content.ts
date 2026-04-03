@@ -20,14 +20,14 @@ function readMarkdownFiles(dir: string): string[] {
 
 function stripMdxSyntax(content: string): string {
   return content
-    .replace(/^import\s+.+$/gm, "")
-    .replace(/<[A-Z]\w+[^>]*\/>/g, "")
-    .replace(/<[A-Z]\w+[^>]*>[\s\S]*?<\/[A-Z]\w+>/g, "")
-    .replace(/<(svg|div|span)[^>]*>[\s\S]*?<\/\1>/gi, "")
-    .replace(/:::(tip|info|warning|danger|details).*\n/g, "")
-    .replace(/^:::\s*$/gm, "")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-    .replace(/\n{3,}/g, "\n\n")
+    .replaceAll(/^import\s+.+$/gm, "")
+    .replaceAll(/<[A-Z]\w+[^>]*\/>/g, "")
+    .replaceAll(/<[A-Z]\w+[^>]*>[\s\S]*?<\/[A-Z]\w+>/g, "")
+    .replaceAll(/<(svg|div|span)[^>]*>[\s\S]*?<\/\1>/gi, "")
+    .replaceAll(/:::(tip|info|warning|danger|details).*\n/g, "")
+    .replaceAll(/^:::\s*$/gm, "")
+    .replaceAll(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replaceAll(/\n{3,}/g, "\n\n")
     .trim()
 }
 
