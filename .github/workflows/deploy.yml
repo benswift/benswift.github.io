@@ -53,6 +53,9 @@ jobs:
       - name: Build with Astro
         run: pnpm run build
 
+      - name: Run integration tests
+        run: pnpm run test:integration
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:

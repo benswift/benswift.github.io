@@ -15,6 +15,7 @@
     "lighthouse": "pnpm exec tsx scripts/lighthouse-audit.ts",
     "atproto:publish": "pnpm exec tsx scripts/atproto-publish.ts",
     "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix"
   },
