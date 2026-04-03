@@ -61,6 +61,11 @@ agents?" rather than just "how _do_ we work with agents?"
   guide and the
   [how Anthropic teams use Claude Code](https://claude.com/blog/how-anthropic-teams-use-claude-code)
   blog post
+- Birgitta Böckeler's
+  [harness engineering](https://martinfowler.com/articles/harness-engineering.html)---a
+  framework of "guides" (feedforward controls) and "sensors" (feedback controls)
+  for steering coding agents toward better output while reducing human
+  supervision
 - the Deer Valley retreat consensus, written up by
   [Martin Fowler](https://martinfowler.com/bliki/FutureOfSoftwareDevelopment.html)---about
   50 luminaries (Beck, Yegge, Gene Kim, etc.) locked in a room hashing out the
