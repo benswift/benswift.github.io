@@ -151,8 +151,13 @@ ${siteContent}`
     }
   }
 
+  function isMobileDevice(): boolean {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+      (navigator.maxTouchPoints > 1 && /Macintosh/i.test(navigator.userAgent))
+  }
+
   onMount(() => {
-    if (!navigator.gpu) {
+    if (!navigator.gpu || isMobileDevice()) {
       modelState = { kind: "unsupported" }
     }
   })
@@ -162,13 +167,13 @@ ${siteContent}`
   {#if modelState.kind === "unsupported"}
     <div class="notice">
       <p>
-        This demo requires <strong>WebGPU</strong>, which is currently only
-        available in Chrome and Edge. The model is ~2 GB and runs entirely
-        in your browser---nothing is sent to a server.
+        This demo requires <strong>WebGPU</strong> and a desktop browser with
+        enough memory for a ~2 GB model. It currently works best in Chrome or
+        Edge on a desktop or laptop with a dedicated GPU.
       </p>
       <p>
-        If you're on a supported browser and still seeing this, check that
-        WebGPU is enabled in your browser flags.
+        Mobile devices don't have enough memory, and Firefox/Safari on desktop
+        don't yet support WebGPU fully.
       </p>
     </div>
   {:else if modelState.kind === "ready"}
