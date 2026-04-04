@@ -23,7 +23,7 @@
     border: none;
     cursor: pointer;
     color: var(--text-2);
-    padding: 0.25rem;
+    padding: 0.625rem;
     display: flex;
     align-items: center;
     transition: color 0.2s;
@@ -42,7 +42,11 @@
     width: 90vw;
     padding: 1.5rem;
     margin: 10vh auto;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.06),
+      0 2px 4px rgba(0, 0, 0, 0.15),
+      0 8px 24px rgba(0, 0, 0, 0.25),
+      0 24px 48px rgba(0, 0, 0, 0.3);
   }
 
   .search-dialog::backdrop {

@@ -297,6 +297,7 @@ ${siteContent}`
     font-family: var(--font-family-mono, monospace);
     font-size: 0.8rem;
     color: var(--text-3, #666);
+    font-variant-numeric: tabular-nums;
   }
 
   .chat-container {

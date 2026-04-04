@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.5em 0 0.5em;
   line-height: 1.25;
   font-weight: 700;
+  text-wrap: balance;
 }
 
 h1 { font-size: 2rem; }
@@ -101,9 +102,14 @@ a:hover {
   color: var(--highlight-color);
 }
 
+p {
+  text-wrap: pretty;
+}
+
 img {
   max-width: 100%;
   height: auto;
+  outline: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Container */

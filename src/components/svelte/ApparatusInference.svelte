@@ -353,6 +353,7 @@
 
   .hud-value {
     color: var(--highlight-color, #be2edd);
+    font-variant-numeric: tabular-nums;
   }
 
   .hud-acc {

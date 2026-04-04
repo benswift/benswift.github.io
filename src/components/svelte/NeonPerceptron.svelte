@@ -624,6 +624,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    font-variant-numeric: tabular-nums;
   }
 
   .slider-container input[type="range"] {
