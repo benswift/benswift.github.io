@@ -23,6 +23,9 @@ importers:
       astro-broken-links-checker:
         specifier: ^1.0.7
         version: 1.0.7
+      astromotion:
+        specifier: link:../astromotion
+        version: link:../astromotion
       perceptron-apparatus:
         specifier: github:ANUcybernetics/perceptron-apparatus
         version: https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/4a84b7b915aec2847499397c0bb1856689c8f961

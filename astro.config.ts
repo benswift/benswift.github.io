@@ -3,6 +3,7 @@ import mdx from "@astrojs/mdx"
 import svelte from "@astrojs/svelte"
 import sitemap from "@astrojs/sitemap"
 import brokenLinksChecker from "astro-broken-links-checker"
+import { astromotion } from "astromotion"
 import remarkSmartypants from "remark-smartypants"
 import remarkDirective from "remark-directive"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
@@ -19,7 +20,16 @@ export default defineConfig({
     "/talks/p5-hour-of-code": "/talks/",
     "/talks/designing-the-ccc-studio": "/talks/",
   },
-  integrations: [mdx(), svelte(), sitemap(), brokenLinksChecker({ checkExternalLinks: false })],
+  integrations: [
+    mdx(),
+    svelte(),
+    sitemap(),
+    brokenLinksChecker({ checkExternalLinks: false }),
+    astromotion({
+      theme: "./src/decks/theme.css",
+      codeTheme: "github-dark",
+    }),
+  ],
   vite: {
     build: {
       // three.js bundle is ~725 kB
