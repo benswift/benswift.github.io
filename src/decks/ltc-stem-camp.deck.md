@@ -304,7 +304,7 @@ clap politely at the end (even if I flame out)
 
 [extempore](https://extemporelang.github.io/) is a programming language designed
 for musical livecoding (written [Andrew Sorensen](https://twitter.com/digego)
-and [me](/index))
+and [me](/))
 
 `mplay` is the key function:
 

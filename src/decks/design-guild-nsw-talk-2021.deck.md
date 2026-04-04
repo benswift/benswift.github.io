@@ -19,7 +19,7 @@ I'd like to acknowledge and celebrate the First Australians on whose traditional
 
 ## who am I?
 
-<iframe src="/index" class="stretch" style="width:100%;height:50vh;" frameborder="0"></iframe>
+<iframe src="/" class="stretch" style="width:100%;height:50vh;" frameborder="0"></iframe>
 
 ---
 

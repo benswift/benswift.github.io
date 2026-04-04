@@ -1,28 +1,39 @@
 ---
 import { getCollection } from "astro:content"
+import fs from "node:fs"
+import path from "node:path"
 import PageLayout from "../../layouts/PageLayout.astro"
 import { formatDate, parseDate } from "../../utils/date"
 
 const allTalks = await getCollection("talks")
 
+const decksDir = path.resolve("src/decks")
+const deckSlugs = new Set(
+  fs
+    .readdirSync(decksDir)
+    .filter((f) => f.endsWith(".deck.md"))
+    .map((f) => f.replace(/\.deck\.md$/, "")),
+)
+
 const talks = allTalks
-  .filter((talk) => talk.data.layout !== "reveal")
   .map((talk) => {
     const slug = talk.id.replace(/\.md$/, "")
     const dateStr = talk.data.date ?? "2000-01-01"
+    const hasDeck = deckSlugs.has(slug)
     return {
       title: talk.data.title,
-      url: `/talks/${slug}/`,
+      url: hasDeck ? `/decks/${slug}/` : `/talks/${slug}/`,
       dateStr,
       dateFormatted: formatDate(parseDate(String(dateStr))),
       event: talk.data.event,
+      hasDeck,
     }
   })
   .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
 ---
 
 <PageLayout title="Talks" relativePath="talks/index.md">
-  <p>Here are some of my non-reveal.js talks and presentations.</p>
+  <p>Talks and presentations, newest first.</p>
   <hr />
 
   <ul class="post-list">

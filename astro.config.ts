@@ -15,10 +15,9 @@ import armasmGrammar from "./src/grammars/armasm.tmLanguage.json"
 export default defineConfig({
   site: "https://benswift.me",
   trailingSlash: "always",
-  // TODO remove these redirects once the talk slide decks are added back in
   redirects: {
-    "/talks/p5-hour-of-code": "/talks/",
-    "/talks/designing-the-ccc-studio": "/talks/",
+    "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
+    "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
   },
   integrations: [
     mdx(),

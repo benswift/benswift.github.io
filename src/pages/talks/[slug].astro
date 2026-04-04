@@ -1,12 +1,33 @@
 ---
 import { getCollection, render } from "astro:content"
+import fs from "node:fs"
+import path from "node:path"
 import TalkLayout from "../../layouts/TalkLayout.astro"
 import { extractDescription } from "../../utils/excerpt"
 
+const decksDir = path.resolve("src/decks")
+const deckSlugs = new Set(
+  fs
+    .readdirSync(decksDir)
+    .filter((f) => f.endsWith(".deck.md"))
+    .map((f) => f.replace(/\.deck\.md$/, "")),
+)
+
 export async function getStaticPaths() {
   const talks = await getCollection("talks")
+  const decksDir2 = path.resolve("src/decks")
+  const deckSlugs2 = new Set(
+    fs
+      .readdirSync(decksDir2)
+      .filter((f) => f.endsWith(".deck.md"))
+      .map((f) => f.replace(/\.deck\.md$/, "")),
+  )
+
   return talks
-    .filter((talk) => talk.data.layout !== "reveal")
+    .filter((talk) => {
+      const slug = talk.id.replace(/\.md$/, "")
+      return !deckSlugs2.has(slug)
+    })
     .map((talk) => {
       const slug = talk.id.replace(/\.md$/, "")
       return {
