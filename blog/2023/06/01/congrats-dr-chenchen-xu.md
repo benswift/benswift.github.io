@@ -1,7 +1,6 @@
 ---
 title: "Congrats Dr. Chenchen Xu"
-description:
-  "Celebrating Chenchen Xu's PhD on weakly supervised sign language
+description: "Celebrating Chenchen Xu's PhD on weakly supervised sign language
   understanding, completed through lockdown."
 tags:
   - research

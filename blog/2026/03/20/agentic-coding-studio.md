@@ -1,7 +1,6 @@
 ---
 title: "The road to COMP4020: Agentic Coding Studio"
-description:
-  "Renaming the course to Agentic Coding Studio---because what we're really
+description: "Renaming the course to Agentic Coding Studio---because what we're really
   teaching is the craft of harnessing LLMs in coding workflows."
 tags: [comp4020]
 ---

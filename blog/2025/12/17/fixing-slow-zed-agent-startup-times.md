@@ -1,7 +1,6 @@
 ---
 title: "Fixing slow Zed agent startup times"
-description:
-  "Claude Code sessions in Zed were taking 30 seconds to start. The culprit: npx
+description: "Claude Code sessions in Zed were taking 30 seconds to start. The culprit: npx
   fetching Playwright MCP on every launch. The fix involves global installs and
   mise shims."
 tags:

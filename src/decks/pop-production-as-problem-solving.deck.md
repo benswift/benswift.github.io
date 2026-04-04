@@ -60,11 +60,13 @@ pop songs are characterised by:
 ---
 
 <!-- _class: impact -->
+
 programming as **problem solving**...
 
 ---
 
 <!-- _class: impact -->
+
 the problem:
 
 write a **no. 1** hit
@@ -78,6 +80,7 @@ write a **no. 1** hit
 ---
 
 <!-- _class: impact -->
+
 **music** _(n.)_
 
 a series of pitched "events" over time
@@ -129,6 +132,7 @@ this is _not_ AI, either
 ---
 
 <!-- _class: impact -->
+
 🤔
 
 <https://benswift.me>

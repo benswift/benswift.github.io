@@ -1,26 +1,26 @@
-import { AtpAgent } from "@atproto/api"
+import { AtpAgent } from "@atproto/api";
 
 export interface PublicationRecord {
-  url: string
-  name: string
-  description: string
+  url: string;
+  name: string;
+  description: string;
 }
 
 export interface DocumentRecord {
-  title: string
-  site: string
-  path: string
-  content: string
-  textContent: string
-  publishedAt: string
-  description: string
-  tags?: string[]
+  title: string;
+  site: string;
+  path: string;
+  content: string;
+  textContent: string;
+  publishedAt: string;
+  description: string;
+  tags?: string[];
 }
 
 export interface AtprotoClient {
-  did: string
-  ensurePublication(pub: PublicationRecord): Promise<string>
-  putDocument(rkey: string, doc: DocumentRecord): Promise<string>
+  did: string;
+  ensurePublication(pub: PublicationRecord): Promise<string>;
+  putDocument(rkey: string, doc: DocumentRecord): Promise<string>;
 }
 
 export async function createClient(
@@ -28,9 +28,9 @@ export async function createClient(
   identifier: string,
   password: string,
 ): Promise<AtprotoClient> {
-  const agent = new AtpAgent({ service })
-  await agent.login({ identifier, password })
-  const did = agent.session!.did
+  const agent = new AtpAgent({ service });
+  await agent.login({ identifier, password });
+  const did = agent.session!.did;
 
   return {
     did,
@@ -47,8 +47,8 @@ export async function createClient(
           description: pub.description,
           createdAt: new Date().toISOString(),
         },
-      })
-      return `at://${did}/site.standard.publication/self`
+      });
+      return `at://${did}/site.standard.publication/self`;
     },
 
     async putDocument(rkey: string, doc: DocumentRecord): Promise<string> {
@@ -62,9 +62,9 @@ export async function createClient(
         publishedAt: doc.publishedAt,
         description: doc.description,
         createdAt: new Date().toISOString(),
-      }
+      };
       if (doc.tags?.length) {
-        record.tags = doc.tags
+        record.tags = doc.tags;
       }
 
       await agent.com.atproto.repo.putRecord({
@@ -72,8 +72,8 @@ export async function createClient(
         collection: "site.standard.document",
         rkey,
         record,
-      })
-      return `at://${did}/site.standard.document/${rkey}`
+      });
+      return `at://${did}/site.standard.document/${rkey}`;
     },
-  }
+  };
 }

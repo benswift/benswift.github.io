@@ -1,7 +1,6 @@
 ---
 title: "The annual benswift.me re-write: 2019 edition"
-description:
-  "Another year, another website rewrite. This time it's hand-crafted HTML & CSS
+description: "Another year, another website rewrite. This time it's hand-crafted HTML & CSS
   with modern grid layouts and the Inter UI typeface."
 tags:
   - dev

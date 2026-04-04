@@ -1,7 +1,6 @@
 ---
 title: "Automated RPi Web Kiosk Setup in 2025"
-description:
-  "A fully scripted burn-and-boot process for setting up Raspberry Pi 5s as
+description: "A fully scripted burn-and-boot process for setting up Raspberry Pi 5s as
   fullscreen Chromium kiosks with Tailscale, WiFi and 4K support."
 tags:
   - dev

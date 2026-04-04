@@ -10,6 +10,7 @@ description: "A slide deck presented at Lake Tuggeranong College STEM Camp"
 ---
 
 <!-- _class: impact -->
+
 can y'all keep a secret?
 
 ---
@@ -23,6 +24,7 @@ can y'all keep a secret?
 ---
 
 <!-- _class: impact -->
+
 enough about me...
 
 tell me about **you**
@@ -72,6 +74,7 @@ livecoding: (_high-tech_ musical instructions)
 ---
 
 <!-- _class: impact -->
+
 **music** _(n.)_
 
 a series of pitched "events" over time
@@ -91,6 +94,7 @@ processed/synthetic sounds (lots of computers involved in the production)
 ---
 
 <!-- _class: impact -->
+
 lots of **patterns**
 
 but how do we express them?
@@ -194,6 +198,7 @@ the modulus can be any integer, e.g.
 ---
 
 <!-- _class: impact -->
+
 **activity**: musical instructions
 
 ---
@@ -219,6 +224,7 @@ is
 ---
 
 <!-- _class: impact -->
+
 ![bg](/assets/images/talks/ltc-stem-camp/laura-college-286844-unsplash.webp)
 
 ## Jaws
@@ -226,6 +232,7 @@ is
 ---
 
 <!-- _class: impact -->
+
 ![bg](/assets/images/talks/ltc-stem-camp/FreddyMercuryWembley.webp)
 
 ## We Will Rock You
@@ -235,11 +242,13 @@ _remember_: you have to describe the instruments, **not** the vocal track
 ---
 
 <!-- _class: impact -->
+
 ![bg](/assets/images/talks/ltc-stem-camp/coldplay-clocks.webp)
 
 ---
 
 <!-- _class: impact -->
+
 ![bg](/assets/images/talks/ltc-stem-camp/this-is-america.webp)
 
 ## This is America
@@ -346,6 +355,7 @@ if you're interested, let me know 😊
 ---
 
 <!-- _class: impact -->
+
 🤔
 
 [ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au)

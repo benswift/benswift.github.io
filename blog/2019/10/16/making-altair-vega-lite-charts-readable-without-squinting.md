@@ -1,7 +1,6 @@
 ---
 title: "Making Altair/Vega-Lite charts readable without squinting"
-description:
-  "A simple trick for making Altair chart text and marks bigger: set a small
+description: "A simple trick for making Altair chart text and marks bigger: set a small
   width/height and export to SVG."
 tags:
   - dev

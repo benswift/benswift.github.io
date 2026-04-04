@@ -1,7 +1,6 @@
 ---
 title: "Student project: animated 3D code rendering engine"
-description:
-  "A student project idea: real-time handwriting-style code rendering for
+description: "A student project idea: real-time handwriting-style code rendering for
   livecoding performances, synced to the music."
 tags:
   - teaching
@@ -25,8 +24,7 @@ and I [^unproven-hypothesis] think that it might even help folks follow what's
 going on in terms of which bits of code are responsible for which parts of the
 music.
 
-[^unproven-hypothesis]:
-    I have no evidence for this... but I'd like to try and get some.
+[^unproven-hypothesis]: I have no evidence for this... but I'd like to try and get some.
 
 Making this happen would require:
 

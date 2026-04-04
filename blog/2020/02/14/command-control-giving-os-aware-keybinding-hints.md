@@ -1,7 +1,6 @@
 ---
 title: "Command/Control: giving OS aware keybinding hints"
-description:
-  "A small JS snippet that auto-swaps Ctrl/Cmd in keyboard shortcut hints based
+description: "A small JS snippet that auto-swaps Ctrl/Cmd in keyboard shortcut hints based
   on the reader's OS."
 ---
 
@@ -35,8 +34,7 @@ class="nopretty">CTRL</kbd> (otherwise).
 On the off chance that I actually don't want it to do this, the script will skip
 any `<kbd>` element with a `nopretty` class.
 
-[^detection]:
-    it'll work in _most_ cases; foolproof OS autodetection is really hard
+[^detection]: it'll work in _most_ cases; foolproof OS autodetection is really hard
 
 If you're interested, the script looks like this:
 

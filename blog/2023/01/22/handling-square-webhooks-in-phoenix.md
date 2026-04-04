@@ -1,7 +1,6 @@
 ---
 title: "Handling Square Webhooks in Phoenix"
-description:
-  "How to receive and validate Square payment webhooks in an Elixir/Phoenix app,
+description: "How to receive and validate Square payment webhooks in an Elixir/Phoenix app,
   with code for HMAC signature verification."
 tags:
   - dev

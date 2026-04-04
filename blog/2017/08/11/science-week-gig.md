@@ -1,7 +1,6 @@
 ---
 title: "Science Week gig"
-description:
-  "Playing a livecoding set at the ACT Science Week launch party tonight. Short
+description: "Playing a livecoding set at the ACT Science Week launch party tonight. Short
   notice, but there might still be tickets."
 tags:
   - gigs

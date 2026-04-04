@@ -1,7 +1,6 @@
 ---
 title: "Cutting ruby CI pipeline times with pre-installed bundles"
-description:
-  "A multi-stage Dockerfile that pre-installs Ruby gems to cut GitLab CI build
+description: "A multi-stage Dockerfile that pre-installs Ruby gems to cut GitLab CI build
   times for Jekyll sites by up to 90%."
 tags:
   - dev

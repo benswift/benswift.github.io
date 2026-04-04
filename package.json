@@ -2,8 +2,9 @@
   "name": "benswift-me",
   "version": "0.0.0",
   "description": "Ben Swift — researcher, educator, artist, developer",
+  "license": "MIT",
+  "author": "Ben Swift",
   "type": "module",
-  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "astro dev",
     "prebuild": "pnpm exec tsx scripts/generate-site-content.ts",
@@ -17,10 +18,22 @@
     "test": "vitest run",
     "test:integration": "vitest run --config vitest.integration.config.ts",
     "lint": "oxlint",
-    "lint:fix": "oxlint --fix"
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
   },
-  "author": "Ben Swift",
-  "license": "MIT",
+  "dependencies": {
+    "@astrojs/rss": "^4.0.18",
+    "@fontsource-variable/atkinson-hyperlegible-mono": "^5.2.5",
+    "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.6",
+    "@mediapipe/tasks-genai": "^0.10.27",
+    "astro-broken-links-checker": "^1.0.7",
+    "astromotion": "github:benswift/astromotion",
+    "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
+    "remark-smartypants": "^3.0.2",
+    "sharp": "^0.34.5",
+    "three": "^0.183.2"
+  },
   "devDependencies": {
     "@astrojs/check": "^0.9.8",
     "@astrojs/mdx": "^5.0.3",
@@ -41,6 +54,7 @@
     "eslint-plugin-perfectionist": "^5.7.0",
     "eslint-plugin-unused-imports": "^4.4.1",
     "gray-matter": "^4.0.3",
+    "oxfmt": "^0.43.0",
     "oxlint": "^1.58.0",
     "pagefind": "^1.4.0",
     "rehype-autolink-headings": "^7.1.0",
@@ -58,16 +72,5 @@
     "unist-util-visit": "^5.1.0",
     "vitest": "^4.1.2"
   },
-  "dependencies": {
-    "@astrojs/rss": "^4.0.18",
-    "@fontsource-variable/atkinson-hyperlegible-mono": "^5.2.5",
-    "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.6",
-    "@mediapipe/tasks-genai": "^0.10.27",
-    "astro-broken-links-checker": "^1.0.7",
-    "astromotion": "github:benswift/astromotion",
-    "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
-    "remark-smartypants": "^3.0.2",
-    "sharp": "^0.34.5",
-    "three": "^0.183.2"
-  }
+  "packageManager": "pnpm@10.32.1"
 }

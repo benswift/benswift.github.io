@@ -12,11 +12,7 @@
   --text-color: #e0e0e0;
   --background-color: #1a1a1a;
   --text-grey: #aaa;
-  --link-color: color-mix(
-    in srgb,
-    var(--text-color) 50%,
-    var(--highlight-color)
-  );
+  --link-color: color-mix(in srgb, var(--text-color) 50%, var(--highlight-color));
   --brand-1: color-mix(in srgb, var(--highlight-color) 75%, white);
   --brand-soft: color-mix(in srgb, var(--highlight-color) 20%, transparent);
   --bg-soft: #252525;
@@ -24,12 +20,10 @@
   --text-2: #aaa;
   --text-3: #666;
   --font-family-base:
-    "Atkinson Hyperlegible Next Variable", -apple-system,
-    blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+    "Atkinson Hyperlegible Next Variable", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+    oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-family-mono:
-    "Atkinson Hyperlegible Mono Variable", consolas, monaco, "Andale Mono",
-    "Ubuntu Mono", monospace;
+    "Atkinson Hyperlegible Mono Variable", consolas, monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
   color-scheme: dark;
 }
@@ -55,16 +49,27 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1.5em 0 0.5em;
   line-height: 1.25;
   font-weight: 700;
   text-wrap: balance;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem; }
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
 
 /* Heading anchor links */
 .heading-anchor {
@@ -334,7 +339,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 0.5rem;
   text-align: left;
   border-bottom: 1px solid var(--divider);
@@ -368,7 +374,8 @@ hr {
 }
 
 /* Lists in prose */
-ul, ol {
+ul,
+ol {
   padding-left: 1.5rem;
 }
 
@@ -451,7 +458,12 @@ sup a {
     color: var(--text-color);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     break-after: avoid;
     margin: 1em 0 0.3em;
   }
@@ -491,7 +503,8 @@ sup a {
   }
 
   /* Tighter list spacing */
-  ul, ol {
+  ul,
+  ol {
     padding-left: 1.25rem;
   }
 
@@ -500,7 +513,8 @@ sup a {
   }
 
   /* Avoid widows/orphans */
-  p, li {
+  p,
+  li {
     orphans: 3;
     widows: 3;
   }

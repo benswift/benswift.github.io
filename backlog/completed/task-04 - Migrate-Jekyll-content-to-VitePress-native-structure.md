@@ -85,25 +85,21 @@ Create a Node.js script to transform all content files:
 
 1. **Link conversion**: `{% link _posts/YYYY-MM-DD-slug.md %}` →
    `/blog/YYYY/MM/DD/slug`
-
    - `{% link _talks/slug.md %}` → `/talks/slug`
    - `{% link _livecoding/YYYY-MM-DD-slug.md %}` → `/livecoding/YYYY-MM-DD-slug`
    - `{% link assets/... %}` → `/assets/...`
 
 2. **Include conversion**:
-
    - `{% include picture.html file="X" alt="Y" %}` →
      `<Picture file="X" alt="Y" />`
    - `{% include youtube.html id="X" %}` → `<YouTube id="X" />`
    - `{% include toc.html %}` → `[[toc]]`
 
 3. **Kramdown to VitePress**:
-
    - `{:.hl-para}` on preceding paragraph → wrap paragraph in
      `::: info\n...\n:::`
 
 4. **Cleanup**:
-
    - Remove `{% raw %}...{% endraw %}` wrappers
    - Remove `{{ site.baseurl }}`
    - Remove `layout: post` / `layout: page` from frontmatter (use defaults)

@@ -20,6 +20,7 @@ I'd like to acknowledge and celebrate the First Australians on whose traditional
 ---
 
 <!-- _class: impact -->
+
 my journey
 
 ---
@@ -58,6 +59,7 @@ I'm now the _Educational Experiences_ lead at the
 ---
 
 <!-- _class: impact -->
+
 \*slide missing\*
 
 ---
@@ -124,6 +126,7 @@ smells, tastes and sounds of sitting on the grand canal.
 ---
 
 <!-- _class: impact -->
+
 it's **the thing from the future** time
 
 ---

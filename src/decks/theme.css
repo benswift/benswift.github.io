@@ -2,21 +2,18 @@
   --r-background-color: var(--background-color, #1a1a1a);
   --r-main-color: var(--text-color, #e0e0e0);
   --r-main-font:
-    "Atkinson Hyperlegible Next Variable", -apple-system, blinkmacsystemfont,
-    "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+    "Atkinson Hyperlegible Next Variable", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+    oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --r-main-font-size: 2.25rem;
   --r-heading-color: var(--highlight-color, #be2edd);
   --r-heading-font:
-    "Atkinson Hyperlegible Next Variable", -apple-system, blinkmacsystemfont,
-    "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+    "Atkinson Hyperlegible Next Variable", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+    oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --r-heading-font-weight: bold;
   --r-link-color: color-mix(in srgb, #e0e0e0 50%, #be2edd);
   --r-link-color-hover: #be2edd;
   --r-code-font:
-    "Atkinson Hyperlegible Mono Variable", consolas, "Liberation Mono", menlo,
-    courier, monospace;
+    "Atkinson Hyperlegible Mono Variable", consolas, "Liberation Mono", menlo, courier, monospace;
 }
 
 html {

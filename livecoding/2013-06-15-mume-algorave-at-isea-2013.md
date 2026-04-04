@@ -1,6 +1,5 @@
 ---
-title:
-  "Musical Metacreation (MuMe) Algorave at ISEA 2013: International Symposium on
+title: "Musical Metacreation (MuMe) Algorave at ISEA 2013: International Symposium on
   Electronic Art"
 layout: doc
 date: "2013-06-15"

@@ -310,6 +310,7 @@ do we use it safely, sustainably, at _scale_?
 ---
 
 <!-- _class: centered -->
+
 > Machine learning is like money laundering for bias.
 >
 > **Maciej Cegłowski**,
@@ -336,6 +337,7 @@ yes, **it will be on the final exam**
 ---
 
 <!-- _class: impact -->
+
 <https://apps.musedlab.org/groovepizza/>
 
 ---

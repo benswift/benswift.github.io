@@ -20,6 +20,7 @@ discussion questions
 ---
 
 <!-- _class: impact -->
+
 but first, some **music**
 
 ---
@@ -181,6 +182,7 @@ needs to be approved by the board of education
 ---
 
 <!-- _class: impact -->
+
 but **why**?
 
 ---

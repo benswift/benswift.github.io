@@ -1,7 +1,6 @@
 ---
 title: "Laptop Ensemble in the Canberra Times"
-description:
-  "The ANU Laptop Ensemble got a Canberra Times feature, with encouraging words
+description: "The ANU Laptop Ensemble got a Canberra Times feature, with encouraging words
   from the School of Music about code in music-making."
 tags:
   - teaching

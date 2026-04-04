@@ -1,7 +1,6 @@
 ---
 title: "Blog archaeology"
-description:
-  "Spelunking through git history to trace this blog from Octopress in 2012
+description: "Spelunking through git history to trace this blog from Octopress in 2012
   through two Clojure experiments, six years of Jekyll, and now VitePress."
 tags: [meta]
 ---
@@ -58,6 +57,7 @@ It used [Cutestrap](https://www.cutestrap.com) for CSS, which tells you
 something about mid-2010s web aesthetic sensibilities.[^cutestrap]
 
 [^biott]: "Ben is On The Tubes". Obviously.
+
 [^cutestrap]:
     Cutestrap described itself as "A sassy, opinionated CSS Framework. A tiny
     alternative to Bootstrap." The repo is now archived. RIP.

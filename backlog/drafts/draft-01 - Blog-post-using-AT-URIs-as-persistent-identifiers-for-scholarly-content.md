@@ -1,7 +1,6 @@
 ---
 id: DRAFT-01
-title:
-  "Blog post: using AT-URIs as persistent identifiers for scholarly content"
+title: "Blog post: using AT-URIs as persistent identifiers for scholarly content"
 status: Draft
 assignee: []
 created_date: "2026-02-19 00:38"

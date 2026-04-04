@@ -36,6 +36,7 @@ description: "A slide deck presented at COMP1720 Guest Lecture 2017"
 ---
 
 <!-- _class: impact -->
+
 if you're reading the slides at home, **watch the video**
 
 ---
@@ -183,4 +184,5 @@ updatePixels();
 ---
 
 <!-- _class: impact -->
+
 🤔

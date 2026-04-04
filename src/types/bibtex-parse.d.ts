@@ -1,11 +1,11 @@
 declare module "bibtex-parse" {
   interface BibTeXEntry {
-    key: string
-    type: string
-    [field: string]: string | undefined
+    key: string;
+    type: string;
+    [field: string]: string | undefined;
   }
 
-  function entries(input: string): BibTeXEntry[]
+  function entries(input: string): BibTeXEntry[];
 
-  export default { entries }
+  export default { entries };
 }

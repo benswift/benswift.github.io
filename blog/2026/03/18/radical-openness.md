@@ -1,7 +1,6 @@
 ---
 title: "The road to COMP4020: Radical openness"
-description:
-  "Making all weekly prototypes visible to every student---source code, deployed
+description: "Making all weekly prototypes visible to every student---source code, deployed
   apps, the lot. Radical openness as a teaching strategy for COMP4020."
 tags: [comp4020]
 ---

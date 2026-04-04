@@ -1,6 +1,5 @@
 ---
-title:
-  "Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making"
+title: "Becoming-Sound: Affect and Assemblage in Improvisational Digital Music Making"
 layout: reveal
 author: "Ben Swift"
 date: "2012-05-09"

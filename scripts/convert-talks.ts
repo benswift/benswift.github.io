@@ -50,10 +50,7 @@ function normaliseImagePath(imagePath: string): string {
   return `/assets/${imagePath}`;
 }
 
-function convertSlideBackgroundImage(
-  image: string,
-  heading?: string,
-): string {
+function convertSlideBackgroundImage(image: string, heading?: string): string {
   const normPath = normaliseImagePath(image);
   const lines: string[] = [];
   lines.push(`![bg](${normPath})`);
@@ -97,10 +94,7 @@ function extractAttr(tag: string, attrName: string): string | undefined {
   return m ? m[1] : undefined;
 }
 
-function processContent(
-  content: string,
-  data: Record<string, unknown>,
-): string {
+function processContent(content: string, data: Record<string, unknown>): string {
   let lines = content.split("\n");
 
   // Slides are collected as arrays of lines; each sub-array is one slide
@@ -141,8 +135,7 @@ function processContent(
   // These span multiple lines, so handle them with a multiline regex
   body = body.replaceAll(
     /\[SlideBackgroundImage\s+image="([^"]*)"\s+heading="([^"]*)"[^]*?\]\([^)]*\)/g,
-    (_, image, heading) =>
-      `<SlideBackgroundImage image="${image}" heading="${heading}" />`,
+    (_, image, heading) => `<SlideBackgroundImage image="${image}" heading="${heading}" />`,
   );
   body = body.replaceAll(
     /\[SlideBackgroundImage\s+image="([^"]*)"[^]*?\]\([^)]*\)/g,
@@ -201,9 +194,7 @@ function processContent(
     }
 
     // <SlideYouTube id="..." />
-    const youtubeMatch = trimmed.match(
-      /^<SlideYouTube\s+id="([^"]*)"\s*\/>$/,
-    );
+    const youtubeMatch = trimmed.match(/^<SlideYouTube\s+id="([^"]*)"\s*\/>$/);
     if (youtubeMatch) {
       newSlideWith(convertSlideYouTube(youtubeMatch[1]));
       i++;
@@ -224,9 +215,7 @@ function processContent(
     }
 
     // <SlideImageCredit ... /> (not commented out)
-    const imgCreditMatch = trimmed.match(
-      /^<SlideImageCredit\s*(.*?)\s*\/>$/,
-    );
+    const imgCreditMatch = trimmed.match(/^<SlideImageCredit\s*(.*?)\s*\/>$/);
     if (imgCreditMatch && !trimmed.startsWith("<!--")) {
       const attrs = imgCreditMatch[1];
       if (attrs.trim()) {
@@ -283,10 +272,7 @@ function processContent(
     }
 
     // <section ...> tags: pass through
-    if (
-      trimmed.match(/^<section[\s>]/i) ||
-      trimmed.match(/^<\/section>/i)
-    ) {
+    if (trimmed.match(/^<section[\s>]/i) || trimmed.match(/^<\/section>/i)) {
       addToSlide(line);
       i++;
       continue;

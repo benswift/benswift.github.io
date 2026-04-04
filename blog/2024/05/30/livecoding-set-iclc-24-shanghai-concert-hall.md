@@ -1,7 +1,6 @@
 ---
 title: "Livecoding set ICLC'24 - Shanghai Concert Hall"
-description:
-  "Performing a livecoding music set at Shanghai Concert Hall as part of ICLC
+description: "Performing a livecoding music set at Shanghai Concert Hall as part of ICLC
   2024."
 ---
 

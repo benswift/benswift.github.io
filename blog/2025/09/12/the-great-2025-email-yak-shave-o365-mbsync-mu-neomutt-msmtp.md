@@ -1,7 +1,6 @@
 ---
 title: "The great 2025 email yak-shave: O365 + mbsync + mu + neomutt + msmtp"
-description:
-  "Rebuilding a terminal email setup with OAuth2, Office365 and neomutt in
+description: "Rebuilding a terminal email setup with OAuth2, Office365 and neomutt in
   Zed---the hard-won config so you don't have to waste as many hours as I did."
 tags:
   - dev

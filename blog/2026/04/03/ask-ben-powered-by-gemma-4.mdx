@@ -1,12 +1,11 @@
 ---
 title: "Ask Ben (powered by Gemma 4)"
-description:
-  "An in-browser chat widget running Google's Gemma 4 E2B via WebGPU, primed
+description: "An in-browser chat widget running Google's Gemma 4 E2B via WebGPU, primed
   with all the content from this site so you can ask it questions about me."
 tags: [ai, web]
 ---
 
-import GemmaChat from '../../../../src/components/svelte/GemmaChat.svelte'
+import GemmaChat from "../../../../src/components/svelte/GemmaChat.svelte";
 
 Google [just released the Gemma 4 model family](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)---their
 most capable open models yet, and the smallest variants are small enough to run
@@ -15,7 +14,8 @@ entirely in your browser. The E2B model has 2.3 billion effective parameters
 Per-Layer Embeddings that reduces compute at inference time while keeping the
 model's full representational capacity.[^ple]
 
-[^ple]: Each decoder layer gets its own small embedding table rather than sharing
+[^ple]:
+    Each decoder layer gets its own small embedding table rather than sharing
     a single large one. This means the total parameter count is higher than
     the effective count, but the model only activates the embeddings it needs
     for each layer. Clever trick.

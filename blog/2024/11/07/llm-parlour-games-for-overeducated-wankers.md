@@ -1,7 +1,6 @@
 ---
 title: "LLM Parlour Games for Overeducated Wankers"
-description:
-  "Workshop materials for designing and playing parlour games with LLMs,
+description: "Workshop materials for designing and playing parlour games with LLMs,
   including LLM-augmented 20 Questions and Adventures in Amphibology."
 tags:
   - teaching

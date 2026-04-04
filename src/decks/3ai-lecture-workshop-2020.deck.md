@@ -26,6 +26,7 @@ I'd like to acknowledge and celebrate the First Australians on whose traditional
 ---
 
 <!-- _class: impact -->
+
 ![bg](/assets/images/talks/understanding-and-enjoyment/kambah-high-demolition.webp)
 
 ---
@@ -50,6 +51,7 @@ information/culture/humanity in today's (and tomorrow's) world.
 ---
 
 <!-- _class: centered -->
+
 ```python
 # a 3Ai twitter bot
 for tweet in api.user("3AInstitute").timeline(limit=200):
@@ -77,6 +79,7 @@ for tweet in api.user("3AInstitute").timeline(limit=200):
 ---
 
 <!-- _class: impact -->
+
 understanding & enjoyment
 
 it's complicated
@@ -84,6 +87,7 @@ it's complicated
 ---
 
 <!-- _class: impact -->
+
 **3A3Ii**: there are 3 "I"s as well as the 3 "A"s
 
 ---
@@ -138,6 +142,7 @@ u&e in a livecoding gig?
 ---
 
 <!-- _class: impact -->
+
 understanding & en**joyment**
 
 <hr class="impact center" data-background-color="#262626" id="part-3" />

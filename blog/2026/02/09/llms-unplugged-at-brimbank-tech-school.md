@@ -1,7 +1,6 @@
 ---
 title: "LLMs Unplugged at Brimbank Tech School"
-description:
-  "A hands-on AI workshop for educators at VU Sunshine Campus, covering AI
+description: "A hands-on AI workshop for educators at VU Sunshine Campus, covering AI
   fundamentals, paper-and-pen predictive models, and change management."
 tags:
   - teaching

@@ -1,7 +1,6 @@
 ---
 title: "The road to COMP4020: safety, YOLO and the open web"
-description:
-  "Fly Sprites as lightweight, snapshotable VMs for student coding---safe enough
+description: "Fly Sprites as lightweight, snapshotable VMs for student coding---safe enough
   for YOLO mode, live on the open web by default."
 tags: [comp4020]
 ---

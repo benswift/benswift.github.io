@@ -1,7 +1,6 @@
 ---
 title: "The road to COMP4020: managing the strategic token reserve"
-description:
-  "How to provision and manage AI token budgets for a class of agentic coding
+description: "How to provision and manage AI token budgets for a class of agentic coding
   students."
 tags: [comp4020]
 ---

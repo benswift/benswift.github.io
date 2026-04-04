@@ -7,11 +7,7 @@ export default defineConfig({
     es2024: true,
     node: true,
   },
-  ignorePatterns: [
-    "public/assets/js/Winwheel.js",
-    "**/*.astro",
-    "**/*.svelte",
-  ],
+  ignorePatterns: ["public/assets/js/Winwheel.js", "**/*.astro", "**/*.svelte"],
   jsPlugins: [
     "@e18e/eslint-plugin",
     "eslint-plugin-no-only-tests",
@@ -162,7 +158,7 @@ export default defineConfig({
     "no-useless-concat": "error",
     "no-self-compare": "error",
     "no-new-wrappers": "error",
-    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    eqeqeq: ["error", "always", { null: "ignore" }],
     "array-callback-return": "error",
     "no-accumulating-spread": "error",
 

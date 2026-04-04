@@ -1,7 +1,6 @@
 ---
 title: "Out of the browser: on the power of interfaces for agentic AI"
-description:
-  "The leap from browser-based ChatGPT to terminal-native coding agents isn't
+description: "The leap from browser-based ChatGPT to terminal-native coding agents isn't
   about smarter models---it's about removing the sandbox."
 tags:
   - ai

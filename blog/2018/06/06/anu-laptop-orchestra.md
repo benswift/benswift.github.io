@@ -1,7 +1,6 @@
 ---
 title: "ANU Laptop Orchestra"
-description:
-  "Putting together a laptop orchestra at ANU---looking for students into
+description: "Putting together a laptop orchestra at ANU---looking for students into
   livecoding, VJing, or organising creative tech gigs for credit."
 tags:
   - livecoding
@@ -26,7 +25,6 @@ But ANU doesn't have one---sadface. And it's time to fix that.
 
 - **if** you're a current ANU undergrad or coursework-postgrad student (_any_
   ANU student, not just in computer science) and you're into
-
   1. **music**: hi-tech DJing (including livecoding, live patching e.g. Max/MSP,
      PD, live loop manipulation e.g. Ableton), and other instrumentalists who
      want to perform live with the laptop orchestra are invited too

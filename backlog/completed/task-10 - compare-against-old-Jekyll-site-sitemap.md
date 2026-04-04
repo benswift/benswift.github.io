@@ -35,7 +35,6 @@ Compared Jekyll sitemap (267 URLs) against VitePress sitemap (196 URLs).
 ### Expected/Acceptable Missing
 
 1. **Widgets (2)** - explicitly excluded per task
-
    - `/widgets/algorithmic-ad-billboards`
    - `/widgets/reimagine-logo`
 
@@ -55,7 +54,6 @@ Compared Jekyll sitemap (267 URLs) against VitePress sitemap (196 URLs).
 
 1. **Missing livecoding gig**:
    `/livecoding/2016-10-22-anu-cecs-45th-anniversary`
-
    - This gig has `hidden: true` in frontmatter, so it may have been
      intentionally excluded
 

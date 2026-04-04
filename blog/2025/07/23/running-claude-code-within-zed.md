@@ -1,7 +1,6 @@
 ---
 title: "Running Claude Code within Zed"
-description:
-  "Switching from Zed's Agent panel to Claude Code for flat-fee pricing, with a
+description: "Switching from Zed's Agent panel to Claude Code for flat-fee pricing, with a
   simple task config to keep the workflow inside Zed."
 tags:
   - ai

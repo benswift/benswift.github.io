@@ -1,7 +1,6 @@
 ---
 title: "The road to COMP4020: course software environment"
-description:
-  "Every CS/software development course has a policy on what software it uses -
+description: "Every CS/software development course has a policy on what software it uses -
   the only different is whether it's written down or not."
 tags: [comp4020]
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Moving to the School of Cybernetics"
-description:
-  "I'm leaving the ANU School of Computing for the new School of
+description: "I'm leaving the ANU School of Computing for the new School of
   Cybernetics---here's what that means for students, colleagues and
   collaborators."
 tags:

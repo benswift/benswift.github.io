@@ -1,7 +1,6 @@
 ---
 title: "openconnect setup for institutional VPN access"
-description:
-  "Using openconnect as a reliable alternative to the GlobalProtect client for
+description: "Using openconnect as a reliable alternative to the GlobalProtect client for
   connecting to an institutional VPN on macOS."
 tags:
   - dev

@@ -1,7 +1,6 @@
 ---
 title: "Creative Computing ANU Extension course"
-description:
-  "A Creative Computing course for ACT year 11 students has been approved for
+description: "A Creative Computing course for ACT year 11 students has been approved for
   2021 through the ANU Extension program."
 tags:
   - reimagine

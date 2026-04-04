@@ -1,7 +1,6 @@
 ---
 title: "Jekyll build speedups for Ruby 3.2"
-description:
-  "Ruby 3.2's YJIT gave my Jekyll builds a 4.8x speedup---from 17 seconds down
+description: "Ruby 3.2's YJIT gave my Jekyll builds a 4.8x speedup---from 17 seconds down
   to under 4."
 tags:
   - dev

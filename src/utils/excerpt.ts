@@ -20,9 +20,7 @@ function stripMdxImportsExports(content: string): string {
  */
 export function extractDescription(content: string, maxLength = 160): string {
   // Remove frontmatter and MDX imports/exports
-  const withoutPreamble = stripMdxImportsExports(
-    content.replace(/^---[\s\S]*?---\s*/, ""),
-  );
+  const withoutPreamble = stripMdxImportsExports(content.replace(/^---[\s\S]*?---\s*/, ""));
 
   // Remove common markdown/vue elements that shouldn't be in descriptions
   const cleaned = withoutPreamble

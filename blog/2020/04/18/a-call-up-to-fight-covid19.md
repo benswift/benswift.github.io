@@ -1,7 +1,6 @@
 ---
 title: "A call-up to fight covid19"
-description:
-  "Joining an ANU COVID-19 taskforce to build epidemiological simulation tools
+description: "Joining an ANU COVID-19 taskforce to build epidemiological simulation tools
   for the Canberra health system."
 tags:
   - research

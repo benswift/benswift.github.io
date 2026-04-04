@@ -1,69 +1,69 @@
-import fs from "node:fs"
-import path from "node:path"
-import { createHash } from "node:crypto"
-import matter from "gray-matter"
+import fs from "node:fs";
+import path from "node:path";
+import { createHash } from "node:crypto";
+import matter from "gray-matter";
 
 export interface PostData {
-  title: string
-  path: string
-  date: string
-  description: string
-  tags: string[]
-  content: string
-  textContent: string
-  contentHash: string
-  filePath: string
+  title: string;
+  path: string;
+  date: string;
+  description: string;
+  tags: string[];
+  content: string;
+  textContent: string;
+  contentHash: string;
+  filePath: string;
 }
 
 export function pathToRkey(postPath: string): string {
-  const match = postPath.match(/\/blog\/(\d{4})\/(\d{2})\/(\d{2})\/(.+)/)
-  if (!match) throw new Error(`Invalid post path: ${postPath}`)
-  const [, year, month, day, slug] = match
-  return `${year}-${month}-${day}-${slug}`
+  const match = postPath.match(/\/blog\/(\d{4})\/(\d{2})\/(\d{2})\/(.+)/);
+  if (!match) throw new Error(`Invalid post path: ${postPath}`);
+  const [, year, month, day, slug] = match;
+  return `${year}-${month}-${day}-${slug}`;
 }
 
 export function extractPostPath(relativePath: string): string {
-  const withoutExt = relativePath.replace(/\.mdx?$/, "")
-  return `/${withoutExt}`
+  const withoutExt = relativePath.replace(/\.mdx?$/, "");
+  return `/${withoutExt}`;
 }
 
 export function computeHash(content: string): string {
-  return createHash("sha256").update(content).digest("hex")
+  return createHash("sha256").update(content).digest("hex");
 }
 
 export function discoverPosts(blogDir: string): PostData[] {
-  const posts: PostData[] = []
+  const posts: PostData[] = [];
 
   function scanDir(dir: string) {
-    if (!fs.existsSync(dir)) return
+    if (!fs.existsSync(dir)) return;
     for (const item of fs.readdirSync(dir)) {
-      const fullPath = path.join(dir, item)
-      const stat = fs.statSync(fullPath)
+      const fullPath = path.join(dir, item);
+      const stat = fs.statSync(fullPath);
       if (stat.isDirectory() && item !== "tag") {
-        scanDir(fullPath)
+        scanDir(fullPath);
       } else if ((item.endsWith(".md") || item.endsWith(".mdx")) && item !== "index.md") {
-        const raw = fs.readFileSync(fullPath, "utf8")
-        const { data: fm } = matter(raw)
+        const raw = fs.readFileSync(fullPath, "utf8");
+        const { data: fm } = matter(raw);
 
-        if (fm.published === false) continue
+        if (fm.published === false) continue;
 
-        const relativePath = path.relative(path.resolve(blogDir, ".."), fullPath)
-        const postPath = extractPostPath(relativePath)
+        const relativePath = path.relative(path.resolve(blogDir, ".."), fullPath);
+        const postPath = extractPostPath(relativePath);
 
-        const dateMatch = postPath.match(/\/blog\/(\d{4})\/(\d{2})\/(\d{2})\//)
-        if (!dateMatch) continue
-        const [, year, month, day] = dateMatch
-        const date = `${year}-${month}-${day}`
+        const dateMatch = postPath.match(/\/blog\/(\d{4})\/(\d{2})\/(\d{2})\//);
+        if (!dateMatch) continue;
+        const [, year, month, day] = dateMatch;
+        const date = `${year}-${month}-${day}`;
 
-        let tags: string[] = []
+        let tags: string[] = [];
         if (Array.isArray(fm.tags)) {
-          tags = fm.tags.map(String)
+          tags = fm.tags.map(String);
         } else if (typeof fm.tags === "string") {
-          tags = fm.tags.split(/\s+/).filter(Boolean)
+          tags = fm.tags.split(/\s+/).filter(Boolean);
         }
 
-        const textContent = fm.description || ""
-        const description = fm.description || ""
+        const textContent = fm.description || "";
+        const description = fm.description || "";
 
         posts.push({
           title: fm.title || item.replace(/\.mdx?$/, ""),
@@ -75,11 +75,11 @@ export function discoverPosts(blogDir: string): PostData[] {
           textContent,
           contentHash: computeHash(raw),
           filePath: fullPath,
-        })
+        });
       }
     }
   }
 
-  scanDir(blogDir)
-  return posts.sort((a, b) => b.date.localeCompare(a.date))
+  scanDir(blogDir);
+  return posts.sort((a, b) => b.date.localeCompare(a.date));
 }

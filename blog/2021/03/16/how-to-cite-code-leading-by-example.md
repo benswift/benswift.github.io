@@ -1,7 +1,6 @@
 ---
 title: "How to cite code? Leading by example"
-description:
-  "A YAML-based Statement of Originality that teaches students how to cite code,
+description: "A YAML-based Statement of Originality that teaches students how to cite code,
   declare collaborators and list licences in every assignment."
 tags:
   - teaching
@@ -73,13 +72,11 @@ collaboration:
 # add as many "url+licence+comment" entries as necessary
 # (or remove it altogether if you haven't used any external code)
 code:
-  - comment:
-      the code in my "drawRandomImage" function is based on some code from
+  - comment: the code in my "drawRandomImage" function is based on some code from
       StackOverflow
     url: "https://stackoverflow.com/questions/51233447/p5js-image-array"
     licence: CC BY-SA 2.5 # this is the standard StackOverflow licence
-  - comment:
-      my changeSize() function is taken from an example on the p5 reference page
+  - comment: my changeSize() function is taken from an example on the p5 reference page
       for mouseWheel
     url: "https://p5js.org/reference/#/p5.Element/mouseWheel"
     licence: "https://creativecommons.org/licenses/by-nc-sa/4.0/"

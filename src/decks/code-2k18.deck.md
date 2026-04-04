@@ -26,6 +26,7 @@ description: "A slide deck presented at code 2k18: A Media Conference of Platfor
 ---
 
 <!-- _class: impact -->
+
 code is my **instrument**
 
 ---
@@ -55,7 +56,7 @@ code is my **instrument**
 
 [ANU School of Art & Design](https://soad.cass.anu.edu.au/people/jean-philippe-demarais)
 
- plus many more...
+plus many more...
 
 ---
 
@@ -76,6 +77,7 @@ code is my **instrument**
 ---
 
 <!-- _class: impact -->
+
 the next generation of new media creators are spread across the **whole campus**
 
 ---
@@ -142,6 +144,7 @@ creation without _critique_
 ---
 
 <!-- _class: impact -->
+
 what can we do to release this **huge untapped potential**?
 
 ---

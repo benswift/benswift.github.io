@@ -113,6 +113,7 @@ fill(255, 0, 0); // each value from 0-255
 ---
 
 <!-- _class: impact -->
+
 how do you know what instructions the computer **understands**?
 
 ---

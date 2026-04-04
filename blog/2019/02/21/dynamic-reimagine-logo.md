@@ -1,7 +1,6 @@
 ---
 title: "A dynamic Reimagine logo"
-description:
-  "An interactive, spinnable version of the ANU Reimagine logo, built with
+description: "An interactive, spinnable version of the ANU Reimagine logo, built with
   ClojureScript and Reagent."
 tags:
   - dev

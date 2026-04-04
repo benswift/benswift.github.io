@@ -135,6 +135,7 @@ try to find others with similar interests along the music/visuals axis
 ---
 
 <!-- _class: impact -->
+
 **presentation time**
 
 ---

@@ -1,7 +1,6 @@
 ---
 title: "AI Agents on (in?) the Atmosphere"
-description:
-  "Stateful AI agents are showing up on Bluesky and ATproto---with soul
+description: "Stateful AI agents are showing up on Bluesky and ATproto---with soul
   documents, read/write memory, and scheduled self-reflection."
 published: true
 tags:

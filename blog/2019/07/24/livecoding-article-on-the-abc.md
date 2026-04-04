@@ -1,7 +1,6 @@
 ---
 title: "Livecoding article on the ABC"
-description:
-  "I was interviewed for an ABC News article about the Australian livecoding
+description: "I was interviewed for an ABC News article about the Australian livecoding
   scene."
 tags:
   - livecoding

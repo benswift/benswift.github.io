@@ -3,4 +3,4 @@ export default {
   rules: {
     "no-descending-specificity": null,
   },
-}
+};

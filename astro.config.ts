@@ -1,16 +1,16 @@
-import { defineConfig } from "astro/config"
-import mdx from "@astrojs/mdx"
-import svelte from "@astrojs/svelte"
-import sitemap from "@astrojs/sitemap"
-import brokenLinksChecker from "astro-broken-links-checker"
-import { astromotion } from "astromotion"
-import remarkSmartypants from "remark-smartypants"
-import remarkDirective from "remark-directive"
-import rehypeAutolinkHeadings from "rehype-autolink-headings"
-import rehypeSlug from "rehype-slug"
-import { remarkContainers } from "./src/plugins/remark-containers"
-import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json"
-import armasmGrammar from "./src/grammars/armasm.tmLanguage.json"
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
+import svelte from "@astrojs/svelte";
+import sitemap from "@astrojs/sitemap";
+import brokenLinksChecker from "astro-broken-links-checker";
+import { astromotion } from "astromotion";
+import remarkSmartypants from "remark-smartypants";
+import remarkDirective from "remark-directive";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeSlug from "rehype-slug";
+import { remarkContainers } from "./src/plugins/remark-containers";
+import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
+import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 
 export default defineConfig({
   site: "https://benswift.me",
@@ -36,7 +36,11 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [[remarkSmartypants as never, { dashes: "oldschool" }], remarkDirective, remarkContainers],
+    remarkPlugins: [
+      [remarkSmartypants as never, { dashes: "oldschool" }],
+      remarkDirective,
+      remarkContainers,
+    ],
     rehypePlugins: [
       rehypeSlug,
       [
@@ -59,4 +63,4 @@ export default defineConfig({
       ],
     },
   },
-})
+});

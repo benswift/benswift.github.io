@@ -21,6 +21,7 @@ description: "A slide deck presented at University of the Third Age (U3A)"
 ---
 
 <!-- _class: impact -->
+
 code/creativity/culture
 
 ---
@@ -49,6 +50,7 @@ code/creativity/culture
 ---
 
 <!-- _class: impact -->
+
 a short, incomplete, **mostly wrong** history of the internet since 1996
 
 ---
@@ -117,6 +119,7 @@ who finds Google:
 ---
 
 <!-- _class: impact -->
+
 but...
 
 (there's **always** a but)
@@ -176,6 +179,7 @@ what/how much do you pay for stuff online?
 ---
 
 <!-- _class: impact -->
+
 the most brilliant minds of my generation...
 
 ---
@@ -199,6 +203,7 @@ the most brilliant minds of my generation...
 ---
 
 <!-- _class: impact -->
+
 **80%-90%** of profit comes from advertising
 
 ---
@@ -250,6 +255,7 @@ the most brilliant minds of my generation...
 ---
 
 <!-- _class: impact -->
+
 cui bono?
 
 ---
@@ -261,6 +267,7 @@ cui bono?
 ---
 
 <!-- _class: impact -->
+
 but...
 
 (the "**hope**-filled" third act bit)
@@ -321,4 +328,5 @@ has Google changed the **culture**?
 ---
 
 <!-- _class: impact -->
+
 🤔

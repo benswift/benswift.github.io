@@ -41,6 +41,7 @@ designer wanted---pitch me |
 ---
 
 <!-- _class: impact -->
+
 the **central problem** of laptop performance
 
 ---

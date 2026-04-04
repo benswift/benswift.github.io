@@ -1,7 +1,6 @@
 ---
 title: "Agentic AI: LLMs with stones"
-description:
-  "Agentic AI is about giving LLMs tools to act in the world without asking
+description: "Agentic AI is about giving LLMs tools to act in the world without asking
   first. The real shift isn't new capabilities---it's the removal of the human
   bottleneck."
 tags:

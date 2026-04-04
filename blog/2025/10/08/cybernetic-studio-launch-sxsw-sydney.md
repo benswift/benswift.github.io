@@ -1,7 +1,6 @@
 ---
 title: "Cybernetic Studio Launch @ SXSW Sydney"
-description:
-  "Launching the Cybernetic Studio at SXSW Sydney with human-scale AI artefacts:
+description: "Launching the Cybernetic Studio at SXSW Sydney with human-scale AI artefacts:
   a wooden neural network table and a pen-and-paper language model."
 tags:
   - ai

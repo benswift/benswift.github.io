@@ -1,7 +1,6 @@
 ---
 title: "COMP4020: the story so far"
-description:
-  "A catch-up post for the COMP4020 Agentic Coding Studio blog series---what the
+description: "A catch-up post for the COMP4020 Agentic Coding Studio blog series---what the
   course is, how it works, and what's still unresolved."
 tags: [comp4020, teaching]
 ---

@@ -1,7 +1,6 @@
 ---
 title: "The road to COMP4020: agents in the classroom?"
-description:
-  "What if an AI agent enrolled in the course alongside the students---building
+description: "What if an AI agent enrolled in the course alongside the students---building
   prototypes, writing reflections, observing patterns?"
 tags: [comp4020]
 ---

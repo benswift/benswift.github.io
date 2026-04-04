@@ -1,7 +1,6 @@
 ---
 title: "mbsync v1.3.2 breaking change: <code>SubFolders</code> config required"
-description:
-  "The mbsync 1.3.2 update silently requires a SubFolders setting. Here's the
+description: "The mbsync 1.3.2 update silently requires a SubFolders setting. Here's the
   fix, plus a bonus mu4e prettifier."
 tags:
   - dev
@@ -35,7 +34,6 @@ but a look at the manual with `man mbsync` revealed this info:
   has no effect when `Flatten` is used. Suppose mailboxes with the canonical
   paths `top/sub/subsub` and `INBOX/sub/subsub`, the styles will yield the
   following on-disk paths:
-
   - _Verbatim_ - `Path/top/sub/subsub` and `Inbox/sub/subsub` (this is the style
     you probably want to use)
 

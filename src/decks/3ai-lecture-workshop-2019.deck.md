@@ -161,11 +161,13 @@ what is a cyber-physical system?
 ---
 
 <!-- _class: impact -->
+
 what are the key **questions**?
 
 ---
 
 <!-- _class: impact -->
+
 what are the **boundary cases**?
 
 ---
@@ -262,6 +264,7 @@ assurance
 ---
 
 <!-- _class: impact -->
+
 there are some "I"s as well as the "A"s
 
 ---

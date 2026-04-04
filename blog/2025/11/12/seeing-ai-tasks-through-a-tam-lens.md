@@ -1,7 +1,6 @@
 ---
 title: "Seeing AI tasks through a TAM lens"
-description:
-  "AI adoption research keeps asking 'do you use ChatGPT?' when it should ask
+description: "AI adoption research keeps asking 'do you use ChatGPT?' when it should ask
   'for which tasks?' A task-level framework for thinking about when LLMs
   actually save you time."
 tags:
@@ -284,8 +283,7 @@ whimsical quadrant names):
   <text x="320" y="70" font-size="13" class="axis-label">helpful</text>
 </svg>
 
-[^branding]:
-    The framework doesn't have a name, because I'm bad at branding... hmm.
+[^branding]: The framework doesn't have a name, because I'm bad at branding... hmm.
 
 [^ethics]:
     The moral/ethical dimension matters enormously---things like

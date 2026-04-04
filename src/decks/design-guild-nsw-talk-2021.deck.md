@@ -37,6 +37,7 @@ leverage in a cultural domain |
 ---
 
 <!-- _class: impact -->
+
 but **why**?
 
 ---
@@ -60,6 +61,7 @@ but **why**?
 ---
 
 <!-- _class: impact -->
+
 a **lever** is a (designed) interface
 
 ---

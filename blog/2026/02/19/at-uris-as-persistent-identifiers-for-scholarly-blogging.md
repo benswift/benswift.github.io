@@ -1,7 +1,6 @@
 ---
 title: "AT-URIs as persistent identifiers for scholarly blogging"
-description:
-  "Every post on this blog now has a persistent AT-URI via the standard.site
+description: "Every post on this blog now has a persistent AT-URI via the standard.site
   spec---more durable than bare URLs, less overhead than DOIs."
 tags:
   - atproto

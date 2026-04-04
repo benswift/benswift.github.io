@@ -1,7 +1,6 @@
 ---
 title: "Configuring Spacemacs org-roam & org-noter for academic writing bliss"
-description:
-  "How to get org-roam, org-roam-bibtex and org-noter working together in
+description: "How to get org-roam, org-roam-bibtex and org-noter working together in
   Spacemacs for a Zettelkasten-style academic workflow."
 tags:
   - research

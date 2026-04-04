@@ -1,6 +1,6 @@
-import { defineCollection } from "astro:content"
-import { z } from "astro/zod"
-import { glob } from "astro/loaders"
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
+import { glob } from "astro/loaders";
 
 const blog = defineCollection({
   loader: glob({
@@ -12,9 +12,9 @@ const blog = defineCollection({
     tags: z
       .union([z.array(z.string()), z.string(), z.null()])
       .transform((val) => {
-        if (val == null) return []
-        if (typeof val === "string") return val.split(/\s+/).filter(Boolean)
-        return val
+        if (val == null) return [];
+        if (typeof val === "string") return val.split(/\s+/).filter(Boolean);
+        return val;
       })
       .default([]),
     published: z.boolean().default(true),
@@ -23,7 +23,7 @@ const blog = defineCollection({
     layout: z.string().optional(),
     search: z.boolean().optional(),
   }),
-})
+});
 
 const livecoding = defineCollection({
   loader: glob({ pattern: ["*.md", "!index.md"], base: "./livecoding" }),
@@ -41,7 +41,7 @@ const livecoding = defineCollection({
     description: z.string().optional(),
     layout: z.string().optional(),
   }),
-})
+});
 
 const talks = defineCollection({
   loader: glob({ pattern: ["*.md", "!README.md", "!index.md"], base: "./talks" }),
@@ -52,6 +52,6 @@ const talks = defineCollection({
     author: z.string().optional(),
     layout: z.string().optional(),
   }),
-})
+});
 
-export const collections = { blog, livecoding, talks }
+export const collections = { blog, livecoding, talks };
