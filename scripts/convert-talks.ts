@@ -113,7 +113,7 @@ function processContent(
 
   function currentSlide(): string[] {
     if (slides.length === 0) startNewSlide();
-    return slides[slides.length - 1];
+    return slides.at(-1)!;
   }
 
   function addToSlide(text: string) {
@@ -139,21 +139,21 @@ function processContent(
 
   // Fix broken [SlideBackgroundImage ... /](mailto:...) patterns
   // These span multiple lines, so handle them with a multiline regex
-  body = body.replace(
+  body = body.replaceAll(
     /\[SlideBackgroundImage\s+image="([^"]*)"\s+heading="([^"]*)"[^]*?\]\([^)]*\)/g,
     (_, image, heading) =>
       `<SlideBackgroundImage image="${image}" heading="${heading}" />`,
   );
-  body = body.replace(
+  body = body.replaceAll(
     /\[SlideBackgroundImage\s+image="([^"]*)"[^]*?\]\([^)]*\)/g,
     (_, image) => `<SlideBackgroundImage image="${image}" />`,
   );
 
   // Remove <!-- class: fragment --> lines (and surrounding blank lines)
-  body = body.replace(/\n*<!-- class: fragment -->\n*/g, "\n\n");
+  body = body.replaceAll(/\n*<!-- class: fragment -->\n*/g, "\n\n");
 
   // Remove <!-- Liquid expression removed --> lines
-  body = body.replace(/<<!-- Liquid expression removed -->>/g, "");
+  body = body.replaceAll("<<!-- Liquid expression removed -->>", "");
 
   // Process line by line now
   lines = body.split("\n");
@@ -327,7 +327,7 @@ function processContent(
 }
 
 function convertFile(inputPath: string): string | null {
-  const raw = fs.readFileSync(inputPath, "utf-8");
+  const raw = fs.readFileSync(inputPath, "utf8");
   const { data, content } = matter(raw);
 
   if (data.layout !== "reveal") return null;
@@ -369,10 +369,10 @@ function main() {
 
       const outName = file.replace(/\.md$/, ".deck.md");
       const outPath = path.join(DECKS_DIR, outName);
-      fs.writeFileSync(outPath, result, "utf-8");
+      fs.writeFileSync(outPath, result, "utf8");
       converted.push(`${file} -> ${outName}`);
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : String(error);
       errors.push(`${file}: ${msg}`);
     }
   }
