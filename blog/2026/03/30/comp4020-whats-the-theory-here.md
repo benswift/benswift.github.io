@@ -37,6 +37,20 @@ I'm still not sure about. I've split them into rough categories, though there's
 plenty of overlap---the best frameworks come with tools, and the best tools
 embody a theory about how work should flow.
 
+:::info
+
+None of the resources below are "getting started" guides---if you haven't
+actually used any of these tools yet, each vendor has official onboarding docs:
+[Claude Code](https://code.claude.com/docs/en/quickstart),
+[Codex CLI](https://developers.openai.com/codex/quickstart),
+[Gemini CLI](https://geminicli.com/docs/get-started/), and
+[GitHub Copilot CLI](https://github.com/github/copilot-cli-for-beginners).
+These are practical "here's how to install and use our thing" resources, not
+theories about how agentic coding _should_ work---but they're worth running
+through before diving into the methodological debates below.
+
+:::
+
 ### Frameworks and methodologies
 
 These are the structured approaches---the ones with a name, a thesis, and
