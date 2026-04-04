@@ -138,7 +138,7 @@ code {
 
 pre {
   background: var(--bg-soft);
-  border-radius: 6px;
+  border-radius: 6px 0 6px 6px;
   padding: 1rem;
   overflow-x: auto;
   line-height: 1.5;
@@ -382,7 +382,7 @@ strong {
 /* Astro code blocks (Shiki dual-theme) */
 .astro-code {
   padding: 1rem;
-  border-radius: 6px;
+  border-radius: 6px 0 6px 6px;
   overflow-x: auto;
   font-size: 0.85rem;
   line-height: 1.6;

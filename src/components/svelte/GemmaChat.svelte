@@ -238,7 +238,7 @@ ${siteContent}`
 <style>
   .gemma-chat {
     border: 1px solid var(--divider, #333);
-    border-radius: 8px;
+    border-radius: 8px 0 8px 8px;
     overflow: hidden;
     background: var(--bg-soft, #252525);
   }
@@ -269,7 +269,7 @@ ${siteContent}`
     background: var(--highlight-color, #be2edd);
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 6px 0 6px 6px;
     font-size: 1rem;
     cursor: pointer;
     transition: opacity 0.15s;
@@ -367,7 +367,7 @@ ${siteContent}`
     resize: none;
     padding: 0.5rem 0.75rem;
     border: 1px solid var(--divider, #333);
-    border-radius: 6px;
+    border-radius: 6px 0 6px 6px;
     background: var(--bg-soft, #252525);
     color: var(--text-color, #e0e0e0);
     font-family: inherit;
@@ -389,7 +389,7 @@ ${siteContent}`
     background: var(--highlight-color, #be2edd);
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 6px 0 6px 6px;
     cursor: pointer;
     font-size: 0.9rem;
     align-self: flex-end;

@@ -103,7 +103,7 @@ body.reveal-viewport {
 
   pre {
     margin-inline: 0;
-    border-radius: 8px;
+    border-radius: 8px 0 8px 8px;
     padding: 1.25em;
     background: #252525;
   }

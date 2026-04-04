@@ -101,7 +101,7 @@ code {
     padding: 0.2em 0.4em;
     margin: 0;
     font-size: 85%;
-    border-radius: 6px;
+    border-radius: 6px 0 6px 6px;
     font-family:
         "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
