@@ -155,7 +155,6 @@ blockquote {
 
 /* Custom containers */
 .custom-block {
-  border-radius: 8px;
   padding: 1rem 1.25rem;
   margin: 1rem 0;
 }
