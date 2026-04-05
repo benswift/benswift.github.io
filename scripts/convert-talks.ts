@@ -296,12 +296,12 @@ function processContent(content: string, data: Record<string, unknown>): string 
   // Build final output from slides, skipping empty ones
   const result: string[] = [];
   for (const slide of slides) {
-    const content = slide.join("\n").trim();
-    if (!content) continue;
+    const slideContent = slide.join("\n").trim();
+    if (!slideContent) continue;
     if (result.length > 0) {
       result.push("---");
     }
-    result.push(content);
+    result.push(slideContent);
   }
 
   // Trim trailing whitespace from each line
@@ -332,7 +332,7 @@ function main() {
   const files = fs
     .readdirSync(TALKS_DIR)
     .filter((f) => f.endsWith(".md"))
-    .sort();
+    .toSorted();
 
   const converted: string[] = [];
   const skipped: string[] = [];

@@ -81,5 +81,5 @@ export function discoverPosts(blogDir: string): PostData[] {
   }
 
   scanDir(blogDir);
-  return posts.sort((a, b) => b.date.localeCompare(a.date));
+  return posts.toSorted((a, b) => b.date.localeCompare(a.date));
 }

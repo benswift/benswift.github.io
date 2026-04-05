@@ -15,7 +15,7 @@ function readMarkdownFiles(dir: string): string[] {
     .filter((f) => f.endsWith(".md") || f.endsWith(".mdx"))
     .filter((f) => !f.includes("index.md"))
     .map((f) => path.join(absDir, f))
-    .sort();
+    .toSorted();
 }
 
 function stripMdxSyntax(content: string): string {

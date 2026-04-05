@@ -81,7 +81,7 @@ export function loadPublications(): Publication[] {
           pdfPath,
         };
       })
-      .sort((a, b) => b.year.localeCompare(a.year));
+      .toSorted((a, b) => b.year.localeCompare(a.year));
   } catch (error) {
     console.error("Error parsing BibTeX:", error);
     return [];

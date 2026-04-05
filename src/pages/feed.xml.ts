@@ -20,7 +20,7 @@ export async function GET(context: APIContext) {
         link: `/blog/${slug}/`,
       };
     })
-    .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
+    .toSorted((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
 
   return rss({
     title: "benswift.me",

@@ -26,7 +26,7 @@ function main() {
   const files = fs
     .readdirSync(livecodingDir)
     .filter((f) => f.endsWith(".md") && f !== "index.md")
-    .sort();
+    .toSorted();
 
   const entries: string[] = [];
 
