@@ -1,6 +1,7 @@
 ---
 title: "The road to COMP4020: the core mechanic"
-description: "The repeating loop at the heart of COMP4020: provocation, prototype, studio
+description:
+  "The repeating loop at the heart of COMP4020: provocation, prototype, studio
   crit. An art-school model adapted for agentic software development."
 tags: [comp4020, teaching]
 ---
@@ -143,6 +144,8 @@ while others are pretty... meh.
 - create a prompt to make a simple html page which will be judged Elo-style
   against a rubric vs all others (we can then one-shot them in class and do the
   comparisons)
+
+- tell a story in a single website (collab with NIDA)
 
 - build a website for a nightmare client, and develop an agentic workflow to
   ameliorate the difficulty of dealing with them somehow
