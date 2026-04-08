@@ -36,9 +36,14 @@ black.
 I initially tried
 [kiosk_system_rpi4](https://hex.pm/packages/kiosk_system_rpi4)---a maintained
 Nerves system with Cog/WPE built in---but hit this wall immediately. The
-solution was to fork [formrausch/frio_rpi4](https://github.com/formrausch/frio_rpi4),
-a Nerves system that includes the custom `panel-ili9881d.c` kernel module and
-device tree overlays for the reTerminal DM hardware. Our fork is at
+ElixirForum thread on
+[browser kiosks in Nerves](https://elixirforum.com/t/browser-in-nerves-kiosk-mode/43250)
+was invaluable here, as was the
+[bringing up cool hardware with Nerves](https://elixirforum.com/t/bringing-up-cool-hardware-with-nerves/64566)
+thread where others had got the reTerminal working. The solution was to fork
+[formrausch/frio_rpi4](https://github.com/formrausch/frio_rpi4), a Nerves system
+that includes the custom `panel-ili9881d.c` kernel module and device tree
+overlays for the reTerminal DM hardware. Our fork is at
 [ANUcybernetics/reterminal_dm](https://github.com/ANUcybernetics/reterminal_dm).
 
 The frio_rpi4 system was on an older `nerves_system_br` (1.28.3) and OTP 27, so
