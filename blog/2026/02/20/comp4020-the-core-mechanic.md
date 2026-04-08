@@ -134,6 +134,10 @@ while others are pretty... meh.
 
 - make a js/ts library with doco and how-to guides for both LLMs and humans
 
+- create a new ANU course website (with a curriculum, lecture slides, tutorials,
+  and assessments) on whatever topic you like... and then we'll create a whole
+  new "shadow ANU" of these courses, put them into new degree programs, and more
+
 - build a thing (any thing) and then tell the story of it's development by
   dramatising the git history in the style of your favourite Hollywood director
 
