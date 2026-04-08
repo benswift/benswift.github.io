@@ -13,6 +13,14 @@ See [all posts in the series](/blog/tag/comp4020/).
 
 :::
 
+:::info
+
+**Update:** the platform question is now settled---we're running on Anthropic's
+Claude API. See
+[Anthropic comes to the party](/blog/2026/04/02/anthropic-comes-to-the-party/).
+
+:::
+
 There's an oil crisis going on; you might have
 [heard about it](https://theconversation.com/the-iran-war-has-triggered-a-fuel-price-rise-what-does-this-mean-for-australian-consumers-277605).
 Australia (and I presume other countries too) are having to

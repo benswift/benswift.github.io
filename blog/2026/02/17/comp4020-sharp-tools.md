@@ -13,6 +13,14 @@ See [all posts in the series](/blog/tag/comp4020/).
 
 :::
 
+:::info
+
+**Update:** this one worked out---Anthropic came through with $500k in API
+credits for the class. See
+[Anthropic comes to the party](/blog/2026/04/02/anthropic-comes-to-the-party/).
+
+:::
+
 I was at the Australasian Computing Education Conference (ACE) in Melbourne last
 week presenting my work on [LLMs Unplugged](https://www.llmsunplugged.org) and
 (unsurprisingly) a lot of the discussion was around the use of LLMs in the
