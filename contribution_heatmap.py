@@ -193,93 +193,131 @@ def fetch_github(user: str, token: str, start_year: int | None,
 
 # ── GitLab fetcher ─────────────────────────────────────────────────────────────
 
-def fetch_gitlab(base_url: str, username: str, token: str, start_year: int | None,
+def _list_gitlab_projects(client: httpx.Client,
+                          base_url: str) -> list[dict]:
+    projects: list[dict] = []
+    page = 1
+    while True:
+        resp = _request(client, "GET", f"{base_url}/api/v4/projects",
+                        params={"membership": "true", "per_page": 100,
+                                "page": page, "simple": "true"})
+        batch = resp.json()
+        if not batch:
+            break
+        projects.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
+        time.sleep(GITLAB_REQUEST_DELAY)
+    return projects
+
+
+def _fetch_project_user_commits(client: httpx.Client, base_url: str,
+                                proj_id: int,
+                                author_emails: list[str]) -> list[str]:
+    seen: set[str] = set()
+    dates: list[str] = []
+    for email in author_emails:
+        page = 1
+        while True:
+            try:
+                resp = _request(client, "GET",
+                                f"{base_url}/api/v4/projects/{proj_id}/repository/commits",
+                                params={"author": email, "per_page": 100, "page": page})
+            except Exception:
+                break
+            batch = resp.json()
+            if not isinstance(batch, list) or not batch:
+                break
+            for c in batch:
+                sha = c.get("id", "")
+                if sha and sha not in seen:
+                    seen.add(sha)
+                    dates.append(c["created_at"][:10])
+            if len(batch) < 100:
+                break
+            page += 1
+            time.sleep(GITLAB_REQUEST_DELAY)
+    return dates
+
+
+def fetch_gitlab(base_url: str, username: str, token: str,
+                 author_emails: list[str], start_year: int | None,
                  end_date: date, cache_dir: Path, no_cache: bool,
                  source_name: str) -> tuple[dict[date, DayData], int]:
     base_url = base_url.rstrip("/")
     client = httpx.Client(headers={"PRIVATE-TOKEN": token}, timeout=30)
     try:
-        resp = _request(client, "GET", f"{base_url}/api/v4/users",
-                        params={"username": username})
-        users = resp.json()
-        if not users:
-            raise ValueError(f"User '{username}' not found on {base_url}")
-        user_id = users[0]["id"]
-        created_at = users[0].get("created_at")
-        if created_at:
-            join_year = datetime.fromisoformat(created_at).year
-        else:
-            join_year = None
-        if start_year is None:
-            start_year = join_year or end_date.year
+        projects = _list_gitlab_projects(client, base_url)
+        log.info("%s: %d member projects to scan", source_name, len(projects))
+
+        cache_file = cache_dir / f"{source_name}_project_commits.json"
+        cached: dict[str, dict] = {}
+        if not no_cache and cache_file.exists():
+            cached = json.loads(cache_file.read_text())
 
         result: dict[date, DayData] = {}
+        scanned = 0
 
-        for year in range(start_year, end_date.year + 1):
-            cache_file = cache_dir / f"{source_name}_{year}.json"
-            if not no_cache and year < end_date.year and cache_file.exists():
-                log.info("%s %d: using cache", source_name, year)
-                events = json.loads(cache_file.read_text())
-            else:
-                log.info("%s %d: fetching events", source_name, year)
-                events: list[dict] = []
-                page = 1
-                after_date = f"{year - 1}-12-31"
-                before_date = (f"{year + 1}-01-01" if year < end_date.year
-                               else (end_date + timedelta(days=1)).isoformat())
-                while True:
-                    resp = _request(client, "GET",
-                                    f"{base_url}/api/v4/users/{user_id}/events",
-                                    params={"after": after_date, "before": before_date,
-                                            "per_page": 100, "page": page})
-                    batch = resp.json()
-                    if not batch:
-                        break
-                    events.extend(batch)
-                    if len(batch) < 100:
-                        break
-                    page += 1
-                    time.sleep(GITLAB_REQUEST_DELAY)
+        for i, proj in enumerate(projects):
+            proj_id = str(proj["id"])
+            proj_path = proj.get("path_with_namespace", proj_id)
+            last_activity = proj.get("last_activity_at", "")
 
-                cache_dir.mkdir(parents=True, exist_ok=True)
-                cache_file.write_text(json.dumps(events))
+            if proj_id in cached and not no_cache:
+                if cached[proj_id].get("last_activity") == last_activity:
+                    for d_str in cached[proj_id].get("dates", []):
+                        _add_commit_date(result, d_str, start_year, end_date)
+                    continue
 
-            for event in events:
-                try:
-                    created = datetime.fromisoformat(event["created_at"])
-                    d = created.date()
-                    if d > end_date:
-                        continue
+            commit_dates = _fetch_project_user_commits(
+                client, base_url, proj["id"], author_emails)
+            scanned += 1
 
-                    action = event.get("action_name", "")
-                    count = 1
-                    event_type = action
+            cached[proj_id] = {
+                "last_activity": last_activity,
+                "path": proj_path,
+                "dates": commit_dates,
+            }
 
-                    if action in ("pushed to", "pushed new"):
-                        count = event.get("push_data", {}).get("commit_count", 1)
-                        event_type = "commits"
-                    elif "opened" in action:
-                        target = event.get("target_type", "")
-                        event_type = ("merge requests" if target == "MergeRequest"
-                                      else "issues")
-                    elif "commented" in action:
-                        event_type = "comments"
-                    elif "approved" in action:
-                        event_type = "reviews"
-                    elif "closed" in action:
-                        event_type = "closed"
+            for d_str in commit_dates:
+                _add_commit_date(result, d_str, start_year, end_date)
 
-                    if d not in result:
-                        result[d] = DayData()
-                    result[d].count += count
-                    result[d].event_types[event_type] = (
-                        result[d].event_types.get(event_type, 0) + count)
-                except Exception as e:
-                    log.debug("Skipping malformed event: %s", e)
+            if commit_dates:
+                log.info("%s: %s — %d commits", source_name, proj_path,
+                         len(commit_dates))
+            if scanned % 100 == 0:
+                log.info("%s: scanned %d/%d projects…",
+                         source_name, i + 1, len(projects))
 
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        cache_file.write_text(json.dumps(cached))
+        log.info("%s: done — scanned %d projects (%d from cache)",
+                 source_name, scanned, len(projects) - scanned)
+
+        if result and start_year is None:
+            start_year = min(d.year for d in result)
+        if start_year is None:
+            start_year = end_date.year
         return result, start_year
     finally:
         client.close()
+
+
+def _add_commit_date(result: dict[date, DayData], d_str: str,
+                     start_year: int | None, end_date: date) -> None:
+    try:
+        d = date.fromisoformat(d_str)
+    except ValueError:
+        return
+    if d > end_date:
+        return
+    if start_year and d.year < start_year:
+        return
+    if d not in result:
+        result[d] = DayData()
+    result[d].count += 1
+    result[d].event_types["commits"] = result[d].event_types.get("commits", 0) + 1
 
 
 # ── Data processing ────────────────────────────────────────────────────────────
@@ -762,6 +800,8 @@ def main():
     gl2_url = os.environ.get("GITLAB2_URL")
     gl2_user = os.environ.get("GITLAB2_USER")
     gl2_token = os.environ.get("GITLAB2_TOKEN")
+    author_emails = [e.strip() for e in
+                     os.environ.get("AUTHOR_EMAILS", "").split(",") if e.strip()]
 
     fetch_plan = []
     if github_user and github_token:
@@ -775,6 +815,12 @@ def main():
         print("No sources configured. Set GITHUB_USER/GITHUB_TOKEN and/or "
               "GITLAB1_URL/GITLAB1_USER/GITLAB1_TOKEN environment variables.",
               file=sys.stderr)
+        sys.exit(1)
+
+    has_gitlab = any(n.startswith("gitlab") for n, _ in fetch_plan)
+    if has_gitlab and not author_emails:
+        print("AUTHOR_EMAILS is required for GitLab sources (comma-separated "
+              "git author emails).", file=sys.stderr)
         sys.exit(1)
 
     if args.dry_run:
@@ -817,13 +863,15 @@ def main():
             if name == "gitlab1":
                 assert gl1_url and gl1_user and gl1_token
                 data, detected_start = fetch_gitlab(
-                    gl1_url, gl1_user, gl1_token, earliest_year, end_date,
-                    cache_dir, args.no_cache, "gitlab1")
+                    gl1_url, gl1_user, gl1_token, author_emails,
+                    earliest_year, end_date, cache_dir, args.no_cache,
+                    "gitlab1")
             elif name == "gitlab2":
                 assert gl2_url and gl2_user and gl2_token
                 data, detected_start = fetch_gitlab(
-                    gl2_url, gl2_user, gl2_token, earliest_year, end_date,
-                    cache_dir, args.no_cache, "gitlab2")
+                    gl2_url, gl2_user, gl2_token, author_emails,
+                    earliest_year, end_date, cache_dir, args.no_cache,
+                    "gitlab2")
             else:
                 continue
 
