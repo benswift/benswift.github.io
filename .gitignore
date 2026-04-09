@@ -6,6 +6,10 @@ dist/
 .unlighthouse
 .link-checker
 
+# Python
+__pycache__/
+.cache/
+
 # Node
 node_modules/
 package-lock.json

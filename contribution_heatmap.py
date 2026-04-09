@@ -16,7 +16,7 @@ from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-import httpx
+import httpx  # ty: ignore[unresolved-import]
 
 log = logging.getLogger(__name__)
 
@@ -815,10 +815,12 @@ def main():
         log.info("Fetching %s", desc)
         try:
             if name == "gitlab1":
+                assert gl1_url and gl1_user and gl1_token
                 data, detected_start = fetch_gitlab(
                     gl1_url, gl1_user, gl1_token, earliest_year, end_date,
                     cache_dir, args.no_cache, "gitlab1")
             elif name == "gitlab2":
+                assert gl2_url and gl2_user and gl2_token
                 data, detected_start = fetch_gitlab(
                     gl2_url, gl2_user, gl2_token, earliest_year, end_date,
                     cache_dir, args.no_cache, "gitlab2")
