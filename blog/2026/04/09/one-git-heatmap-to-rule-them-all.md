@@ -108,6 +108,7 @@ MAX_WEEKS = 53
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 SOURCE_COLORS = {"github": "#6e5494", "gitlab1": "#fc6d26", "gitlab2": "#1f9e8e"}
 SOURCE_LABELS = {"github": "GitHub", "gitlab1": "Teaching GitLab", "gitlab2": "Research GitLab"}
+POPOVER_LABELS = {"github": "GitHub", "gitlab1": "Teaching", "gitlab2": "Research"}
 TEXT_COLOR = "#c9d1d9"
 MUTED_COLOR = "#8b949e"
 BG_COLOR = "#0d1117"
@@ -665,8 +666,6 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
                 "d": wd.by_day,
                 "l": f"Week of {_fmt_date(monday)}",
             }
-            if wd.top_event_types:
-                js_entry["e"] = [[et, cnt] for et, cnt in wd.top_event_types]
             js_data[tile_key] = js_entry
 
         # Year total + source bar (right sidebar)
@@ -738,7 +737,7 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
         f'</foreignObject>')
 
     # JS
-    sources_js = json.dumps([[s, SOURCE_LABELS[s], SOURCE_COLORS[s]]
+    sources_js = json.dumps([[s, POPOVER_LABELS[s], SOURCE_COLORS[s]]
                              for s in active_sources])
     data_js = json.dumps(js_data, separators=(",", ":"))
     palette_js = json.dumps(PALETTE)
@@ -809,12 +808,6 @@ function show(evt){{
     h+='<div style="width:'+pct+'%;height:100%;background:'+src[2]+';border-radius:2px;min-width:'+(v?'2px':'0')+'"></div>';
     h+='</div>';
     h+='<span style="width:24px;text-align:right;font-size:10px">'+v+'</span>';
-    h+='</div>';
-  }}
-
-  if(d.e&&d.e.length){{
-    h+='<div style="margin-top:6px;font-size:10px;color:{MUTED_COLOR}">Mostly: ';
-    h+=d.e.map(function(x){{return x[0]}}).join(', ');
     h+='</div>';
   }}
 
