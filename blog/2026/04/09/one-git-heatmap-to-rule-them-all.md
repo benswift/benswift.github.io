@@ -14,8 +14,8 @@ single profile page tells the whole story. My GitHub heatmap has gaps that
 aren't actually gaps; they're just weeks where the commits landed somewhere
 else.
 
-Mostly I was just curious as to what my developer history (since I joined GitHub
-in 2010 towards the end of my PhD) looked like. So (Claude and) I wrote a script
+Mostly I was just curious as to what my developer history since I joined GitHub
+in 2010 towards the end of my PhD looked like. So (Claude and) I wrote a script
 to find out. It pulls contribution data from all three forges, merges it, and
 renders a single self-contained SVG that covers my entire git history. Here's
 what it looks like:
@@ -34,17 +34,15 @@ so the script scans all your member projects and queries their commit history
 directly via the
 [repository commits endpoint](https://docs.gitlab.com/api/commits/).
 
-A few design decisions worth mentioning. The tiles are week-aggregated rather
-than daily, because 16 years of daily tiles would produce an unreadably wide
-image. Each year gets its own row with 53 columns, which keeps things compact
-while still letting you spot seasonal patterns.
+The tiles are week-aggregated rather than daily, because 16 years of daily tiles
+would produce an unreadably wide image. Each year gets its own row with 53
+columns, which keeps things compact while still letting you spot seasonal
+patterns.
 
-The colour scaling uses per-year quantile normalisation by default, so even
-quiet early years show meaningful variation rather than being washed out by
-later activity. There's a toggle in the SVG to switch to global normalisation if
-you want to see the absolute picture---click "By year / Global" in the bottom
-right. The palette matches GitHub's dark theme, because this site is dark-mode
-only and I didn't fancy debugging a light-mode variant.
+The colour scaling uses global quantile normalisation---non-zero weeks are split
+into quartiles, so a few massive weeks don't wash out everything else. The
+palette matches GitHub's dark theme, because this site is dark-mode only and I
+didn't fancy debugging a light-mode variant.
 
 The SVG is fully self-contained: inline CSS, inline JavaScript for the hover
 popovers, no external dependencies at view time. Hover over any tile and you get
@@ -71,6 +69,7 @@ actually hitting any APIs, which was helpful while getting the request counts
 right.
 
 ## The full script
+
 
 ```python
 #!/usr/bin/env python3
@@ -566,10 +565,6 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
     global_totals = [wd.total for yws in weeks_by_year.values() for _, wd in yws]
     global_thresh = _compute_thresholds(global_totals)
 
-    year_thresh: dict[int, list[int]] = {}
-    for year, yws in weeks_by_year.items():
-        year_thresh[year] = _compute_thresholds([wd.total for _, wd in yws])
-
     active_sources = stats.sources_available
 
     parts: list[str] = []
@@ -590,7 +585,6 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
     parts.append(f'.stat-text {{ font-size: 11px; fill: {MUTED_COLOR}; }}')
     parts.append(f'.title {{ font-size: 14px; font-weight: 600; fill: {TEXT_COLOR}; }}')
     parts.append(f'.year-total {{ font-size: 10px; fill: {MUTED_COLOR}; text-anchor: end; }}')
-    parts.append(f'.toggle {{ font-size: 10px; cursor: pointer; }}')
     parts.append(f'.tile {{ rx: 2; ry: 2; }}')
     parts.append(']]></style>')
 
@@ -637,8 +631,7 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
 
         year_weeks = weeks_by_year[year]
         for col, (monday, wd) in enumerate(year_weeks):
-            lv_year = _level(wd.total, year_thresh[year])
-            lv_global = _level(wd.total, global_thresh)
+            lv = _level(wd.total, global_thresh)
             x = LEFT_MARGIN + col * CELL
             y = y_base
 
@@ -655,9 +648,8 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
 
             parts.append(
                 f'<rect class="tile" id="t-{tile_key}" data-k="{tile_key}" '
-                f'data-ly="{lv_year}" data-lg="{lv_global}" '
                 f'x="{x}" y="{y}" width="{TILE}" height="{TILE}" '
-                f'fill="{PALETTE[lv_year]}">'
+                f'fill="{PALETTE[lv]}">'
                 f'<title>{title_text}</title></rect>')
 
             # JS data for popover
@@ -715,17 +707,6 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
         parts.append(f'<text x="{sx + 14}" y="{legend_y + 10}" '
                      f'style="font-size:10px;fill:{MUTED_COLOR}">{SOURCE_LABELS[s]}</text>')
 
-    # Normalization toggle
-    toggle_x = svg_w - RIGHT_MARGIN + 10
-    parts.append(f'<text id="toggle-year" x="{toggle_x}" y="{legend_y + 10}" '
-                 f'class="toggle" fill="{TEXT_COLOR}" '
-                 f'onclick="toggleMode(\'year\')">By year</text>')
-    parts.append(f'<text x="{toggle_x + 48}" y="{legend_y + 10}" '
-                 f'style="font-size:10px;fill:{MUTED_COLOR}"> / </text>')
-    parts.append(f'<text id="toggle-global" x="{toggle_x + 58}" y="{legend_y + 10}" '
-                 f'class="toggle" fill="{MUTED_COLOR}" '
-                 f'onclick="toggleMode(\'global\')">Global</text>')
-
     # Popover foreignObject
     parts.append(
         f'<foreignObject id="popover" x="0" y="0" width="280" height="320" display="none">'
@@ -741,23 +722,20 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
     sources_js = json.dumps([[s, POPOVER_LABELS[s], SOURCE_COLORS[s]]
                              for s in active_sources])
     data_js = json.dumps(js_data, separators=(",", ":"))
-    palette_js = json.dumps(PALETTE)
 
-    js = _build_js(data_js, sources_js, palette_js, svg_w, svg_h, CELL)
+    js = _build_js(data_js, sources_js, svg_w, svg_h, CELL)
     parts.append(f'<script type="text/ecmascript"><![CDATA[\n{js}\n]]></script>')
 
     parts.append('</svg>')
     return "\n".join(parts)
 
 
-def _build_js(data_js: str, sources_js: str, palette_js: str,
+def _build_js(data_js: str, sources_js: str,
               svg_w: int, svg_h: int, cell: int) -> str:
     return f"""
 var W={data_js};
 var S={sources_js};
-var P={palette_js};
 var SVG_W={svg_w},SVG_H={svg_h},CELL={cell};
-var mode='year';
 var fo=document.getElementById('popover');
 var pc=document.getElementById('popover-content');
 
@@ -765,16 +743,6 @@ document.querySelectorAll('.tile').forEach(function(el){{
   el.addEventListener('mouseenter',show);
   el.addEventListener('mouseleave',hide);
 }});
-
-function toggleMode(m){{
-  mode=m;
-  var attr=m==='year'?'ly':'lg';
-  document.querySelectorAll('.tile').forEach(function(el){{
-    el.setAttribute('fill',P[el.dataset[attr]]);
-  }});
-  document.getElementById('toggle-year').setAttribute('fill',m==='year'?'{TEXT_COLOR}':'{MUTED_COLOR}');
-  document.getElementById('toggle-global').setAttribute('fill',m==='global'?'{TEXT_COLOR}':'{MUTED_COLOR}');
-}}
 
 function show(evt){{
   var k=evt.target.dataset.k;

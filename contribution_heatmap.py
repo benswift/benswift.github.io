@@ -491,10 +491,6 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
     global_totals = [wd.total for yws in weeks_by_year.values() for _, wd in yws]
     global_thresh = _compute_thresholds(global_totals)
 
-    year_thresh: dict[int, list[int]] = {}
-    for year, yws in weeks_by_year.items():
-        year_thresh[year] = _compute_thresholds([wd.total for _, wd in yws])
-
     active_sources = stats.sources_available
 
     parts: list[str] = []
@@ -515,7 +511,6 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
     parts.append(f'.stat-text {{ font-size: 11px; fill: {MUTED_COLOR}; }}')
     parts.append(f'.title {{ font-size: 14px; font-weight: 600; fill: {TEXT_COLOR}; }}')
     parts.append(f'.year-total {{ font-size: 10px; fill: {MUTED_COLOR}; text-anchor: end; }}')
-    parts.append(f'.toggle {{ font-size: 10px; cursor: pointer; }}')
     parts.append(f'.tile {{ rx: 2; ry: 2; }}')
     parts.append(']]></style>')
 
@@ -562,8 +557,7 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
 
         year_weeks = weeks_by_year[year]
         for col, (monday, wd) in enumerate(year_weeks):
-            lv_year = _level(wd.total, year_thresh[year])
-            lv_global = _level(wd.total, global_thresh)
+            lv = _level(wd.total, global_thresh)
             x = LEFT_MARGIN + col * CELL
             y = y_base
 
@@ -580,9 +574,8 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
 
             parts.append(
                 f'<rect class="tile" id="t-{tile_key}" data-k="{tile_key}" '
-                f'data-ly="{lv_year}" data-lg="{lv_global}" '
                 f'x="{x}" y="{y}" width="{TILE}" height="{TILE}" '
-                f'fill="{PALETTE[lv_year]}">'
+                f'fill="{PALETTE[lv]}">'
                 f'<title>{title_text}</title></rect>')
 
             # JS data for popover
@@ -640,17 +633,6 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
         parts.append(f'<text x="{sx + 14}" y="{legend_y + 10}" '
                      f'style="font-size:10px;fill:{MUTED_COLOR}">{SOURCE_LABELS[s]}</text>')
 
-    # Normalization toggle
-    toggle_x = svg_w - RIGHT_MARGIN + 10
-    parts.append(f'<text id="toggle-year" x="{toggle_x}" y="{legend_y + 10}" '
-                 f'class="toggle" fill="{TEXT_COLOR}" '
-                 f'onclick="toggleMode(\'year\')">By year</text>')
-    parts.append(f'<text x="{toggle_x + 48}" y="{legend_y + 10}" '
-                 f'style="font-size:10px;fill:{MUTED_COLOR}"> / </text>')
-    parts.append(f'<text id="toggle-global" x="{toggle_x + 58}" y="{legend_y + 10}" '
-                 f'class="toggle" fill="{MUTED_COLOR}" '
-                 f'onclick="toggleMode(\'global\')">Global</text>')
-
     # Popover foreignObject
     parts.append(
         f'<foreignObject id="popover" x="0" y="0" width="280" height="320" display="none">'
@@ -666,23 +648,20 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
     sources_js = json.dumps([[s, POPOVER_LABELS[s], SOURCE_COLORS[s]]
                              for s in active_sources])
     data_js = json.dumps(js_data, separators=(",", ":"))
-    palette_js = json.dumps(PALETTE)
 
-    js = _build_js(data_js, sources_js, palette_js, svg_w, svg_h, CELL)
+    js = _build_js(data_js, sources_js, svg_w, svg_h, CELL)
     parts.append(f'<script type="text/ecmascript"><![CDATA[\n{js}\n]]></script>')
 
     parts.append('</svg>')
     return "\n".join(parts)
 
 
-def _build_js(data_js: str, sources_js: str, palette_js: str,
+def _build_js(data_js: str, sources_js: str,
               svg_w: int, svg_h: int, cell: int) -> str:
     return f"""
 var W={data_js};
 var S={sources_js};
-var P={palette_js};
 var SVG_W={svg_w},SVG_H={svg_h},CELL={cell};
-var mode='year';
 var fo=document.getElementById('popover');
 var pc=document.getElementById('popover-content');
 
@@ -690,16 +669,6 @@ document.querySelectorAll('.tile').forEach(function(el){{
   el.addEventListener('mouseenter',show);
   el.addEventListener('mouseleave',hide);
 }});
-
-function toggleMode(m){{
-  mode=m;
-  var attr=m==='year'?'ly':'lg';
-  document.querySelectorAll('.tile').forEach(function(el){{
-    el.setAttribute('fill',P[el.dataset[attr]]);
-  }});
-  document.getElementById('toggle-year').setAttribute('fill',m==='year'?'{TEXT_COLOR}':'{MUTED_COLOR}');
-  document.getElementById('toggle-global').setAttribute('fill',m==='global'?'{TEXT_COLOR}':'{MUTED_COLOR}');
-}}
 
 function show(evt){{
   var k=evt.target.dataset.k;
