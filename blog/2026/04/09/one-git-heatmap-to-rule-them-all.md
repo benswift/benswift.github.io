@@ -6,18 +6,19 @@ description:
 tags: ["tools", "python", "visualisation"]
 ---
 
-GitHub's contribution heatmap is one of those things I find unreasonably
-satisfying to look at. A year of work, reduced to a grid of green squares. But
-if your work is spread across multiple git forges---as mine is, between GitHub
-and two self-hosted GitLabs at ANU (one for teaching, one for research, though
-the boundary is a bit blurry)---then no single profile page tells the whole
-story. My GitHub heatmap has gaps that aren't actually gaps; they're just weeks
-where the commits landed somewhere else.
+GitHub's contribution heatmap gives me mixed feelings. A year of work, reduced
+to a grid of green squares. But if your work is spread across multiple git
+forges---as mine is, between GitHub and two self-hosted GitLabs at ANU (one for
+teaching, one for research, though the boundary is a bit blurry)---then no
+single profile page tells the whole story. My GitHub heatmap has gaps that
+aren't actually gaps; they're just weeks where the commits landed somewhere
+else.
 
-So I wrote a script to fix that. It pulls contribution data from all three
-forges, merges it, and renders a single self-contained SVG that covers my entire
-git history. Here's what it looks like (with synthetic demo data---the real one
-has my actual credentials baked into the environment):
+Mostly I was just curious as to what my developer history (since I joined GitHub
+in 2010 towards the end of my PhD) looked like. So (Claude and) I wrote a script
+to find out. It pulls contribution data from all three forges, merges it, and
+renders a single self-contained SVG that covers my entire git history. Here's
+what it looks like:
 
 <iframe src="/assets/contributions.svg" width="100%" height="400" style="border:none;border-radius:6px;aspect-ratio:1082/388"></iframe>
 
@@ -575,7 +576,7 @@ def build_svg(weeks_by_year: dict[int, list[tuple[date, WeekData]]],
 
     parts.append(f'<svg xmlns="http://www.w3.org/2000/svg" '
                  f'viewBox="0 0 {svg_w} {svg_h}" '
-                 f'width="{svg_w}" height="{svg_h}">')
+                 f'width="100%">')
 
     # Background
     parts.append(f'<rect width="{svg_w}" height="{svg_h}" fill="{BG_COLOR}" rx="6"/>')
