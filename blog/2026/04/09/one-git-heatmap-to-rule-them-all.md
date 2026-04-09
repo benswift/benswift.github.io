@@ -8,8 +8,9 @@ tags: ["tools", "python", "visualisation"]
 
 GitHub's contribution heatmap is one of those things I find unreasonably
 satisfying to look at. A year of work, reduced to a grid of green squares. But
-if your work is spread across multiple git forges---as mine is, between GitHub,
-ANU's GitLab, and a work GitLab---then no single profile page tells the whole
+if your work is spread across multiple git forges---as mine is, between GitHub
+and two self-hosted GitLabs at ANU (one for teaching, one for research, though
+the boundary is a bit blurry)---then no single profile page tells the whole
 story. My GitHub heatmap has gaps that aren't actually gaps; they're just weeks
 where the commits landed somewhere else.
 
@@ -106,7 +107,7 @@ MAX_WEEKS = 53
 
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 SOURCE_COLORS = {"github": "#6e5494", "gitlab1": "#fc6d26", "gitlab2": "#1f9e8e"}
-SOURCE_LABELS = {"github": "GitHub", "gitlab1": "GitLab #1", "gitlab2": "GitLab #2"}
+SOURCE_LABELS = {"github": "GitHub", "gitlab1": "Teaching GitLab", "gitlab2": "Research GitLab"}
 TEXT_COLOR = "#c9d1d9"
 MUTED_COLOR = "#8b949e"
 BG_COLOR = "#0d1117"

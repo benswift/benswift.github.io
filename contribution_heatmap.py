@@ -33,7 +33,7 @@ MAX_WEEKS = 53
 
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 SOURCE_COLORS = {"github": "#6e5494", "gitlab1": "#fc6d26", "gitlab2": "#1f9e8e"}
-SOURCE_LABELS = {"github": "GitHub", "gitlab1": "GitLab #1", "gitlab2": "GitLab #2"}
+SOURCE_LABELS = {"github": "GitHub", "gitlab1": "Teaching GitLab", "gitlab2": "Research GitLab"}
 TEXT_COLOR = "#c9d1d9"
 MUTED_COLOR = "#8b949e"
 BG_COLOR = "#0d1117"
