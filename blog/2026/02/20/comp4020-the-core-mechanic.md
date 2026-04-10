@@ -1,6 +1,7 @@
 ---
 title: "The road to COMP4020: the core mechanic"
-description: "The repeating loop at the heart of COMP4020: provocation, prototype, studio
+description:
+  "The repeating loop at the heart of COMP4020: provocation, prototype, studio
   crit. An art-school model adapted for agentic software development."
 tags: [comp4020, teaching]
 ---
@@ -105,7 +106,7 @@ The hope is that over these weeks the class collectively builds a shared
 understanding of what good agentic software development looks like---both in
 terms of the process and the resulting prototypes.
 
-## Some provocations I'm tossing around
+## Some provocation ideas I'm tossing around
 
 The course doesn't start until July, so I've got some time to flesh this out.
 And I want these to be fun/thought-provoking. We have other (great!) courses for
@@ -149,6 +150,9 @@ while others are pretty... meh.
   comparisons)
 
 - tell a story in a single website (collab with NIDA)
+
+- make a homage to the "old web" (geocities, marquee/blink tags, guestbooks and
+  webrings, etc)
 
 - build a website for a nightmare client, and develop an agentic workflow to
   ameliorate the difficulty of dealing with them somehow
