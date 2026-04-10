@@ -197,3 +197,40 @@ artefacts---with real identifiers, real metadata, and a real citation workflow.
 If the AT Protocol ecosystem grows the way its proponents hope, these
 identifiers might actually matter. And if it doesn't, well, the citation meta
 tags and BibTeX still work without them. Cite me and prove me right!
+
+## Update: discoverability in practice (2026-04-10)
+
+A few weeks after writing this, I went digging into a question the original
+post mostly hand-waved: the records are on the network, sure, but are they
+actually _discoverable_? Is anyone out there building "Bluesky for blogs"?
+
+Turns out: yes, quietly. As of today there are 147 `site.standard.document`
+records in my repo, queryable directly from the PDS via
+`com.atproto.repo.listRecords`---oldest going back to 2020, newest from
+yesterday. Every write also flies past on the ATproto firehose, and at least
+one indexer is listening.
+[Standard Search](https://standard-search.octet-stream.net) is a firehose-fed
+search engine for standard.site records that uses the relay's collection
+listing to backfill history without any crawling. It launched in January 2026
+with around 3,900 documents indexed and has been growing steadily since.
+
+On the reader side, [Leaflet.pub](https://leaflet.pub), Pckt.blog, and
+Offprint.app are publishing platforms that _also_ act as readers for each
+other's content---Leaflet can render a preview of a document authored in Pckt,
+and my Astro-published posts land in the same pool, no migration required.
+Surrounding tooling is starting to show up too: Sequoia for publishing from
+the command line, astro-standard-site for Astro blogs like this one, a
+proposed markpub markdown sub-lexicon.
+
+The framing I missed first time round: this isn't going to be one monolithic
+"Bluesky for blogs" AppView. It's going to be N readers, search engines, and
+bookmarking tools all pointed at the same record pool via the shared
+[standard.site](https://standard.site) lexicons. Which is arguably a _more_
+interesting outcome than Bluesky itself managed---publishing and reading
+decoupled at the protocol layer, rather than bundled into one vertically
+integrated app.
+
+Still small, obviously. Standard Search is one person's project and the
+reader ecosystem is a handful of apps rather than a flourishing market. But
+the loop is closed---write → firehose → indexer → reader---and it's
+present-tense infrastructure, not a bet on future stuff. I'll take it.
