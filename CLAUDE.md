@@ -1,8 +1,30 @@
-# benswift.me blog post writing style guide
+# benswift.me
 
-This is an Astro site with Svelte 5 for interactive components and MDX for posts
-that use them. Always use ts (not js) and follow Astro conventions wherever
-possible. Stick to modern best practices, e.g. es6 modules.
+Personal website and blog. Astro 6 + Svelte 5 + MDX, with Pagefind for search.
+
+## Stack
+
+- Astro 6, Svelte 5 (runes), TypeScript, MDX
+- Pure CSS, lightningcss
+- oxlint + oxfmt for JS/TS, Prettier for Astro/Svelte/CSS/MD
+- Vitest for tests
+- Pagefind for client-side search (runs post-build)
+
+## Commands
+
+- `pnpm dev` --- start dev server
+- `pnpm build` --- build static site (includes Pagefind indexing)
+- `pnpm test` --- run unit tests
+- `pnpm test:integration` --- run integration tests
+- `pnpm typecheck` --- astro check + svelte-check
+- `pnpm lint` --- run oxlint
+- `pnpm format:check` --- check formatting
+- `pnpm post "<title>"` --- create a new blog post with correct frontmatter
+
+## Blog post writing style guide
+
+Always use ts (not js) and follow Astro conventions wherever possible. Stick to
+modern best practices, e.g. es6 modules.
 
 ## Voice and tone
 
