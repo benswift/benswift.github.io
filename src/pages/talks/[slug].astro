@@ -4,6 +4,7 @@ import fs from "node:fs"
 import path from "node:path"
 import TalkLayout from "../../layouts/TalkLayout.astro"
 import { extractDescription } from "../../utils/excerpt"
+import { resolveContentPath } from "../../utils/source-path"
 
 const decksDir = path.resolve("src/decks")
 const deckSlugs = new Set(
@@ -40,7 +41,7 @@ export async function getStaticPaths() {
 const { talk } = Astro.props
 const { Content } = await render(talk)
 const description = extractDescription(talk.body ?? "")
-const relativePath = `talks/${talk.id}`
+const relativePath = resolveContentPath("talks", talk.id)
 ---
 
 <TalkLayout

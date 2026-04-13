@@ -20,7 +20,7 @@ to find out. It pulls contribution data from all three forges, merges it, and
 renders a single self-contained SVG that covers my entire git history. Here's
 what it looks like:
 
-<iframe src="/assets/contributions.svg" width="100%" height="400" style="border:none;border-radius:6px;aspect-ratio:1082/388"></iframe>
+<iframe src="/assets/contributions.svg" style="display:block;width:100%;height:auto;aspect-ratio:1082/388;border:none;border-radius:6px;background:#0d1117"></iframe>
 
 :::info[Accurate as of 2026-04-09]
 

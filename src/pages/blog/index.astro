@@ -30,7 +30,7 @@ const posts = allPosts
 const allTags = [...new Set(posts.flatMap((p) => p.tags))].sort()
 ---
 
-<PageLayout title="Blog" relativePath="blog/index.md">
+<PageLayout title="Blog" relativePath="src/pages/blog/index.astro">
   <p>
     This is my blog. Sometimes in these posts I'll talk about research or art
     projects I'm involved with, sometimes I'll just ramble about other stuff which

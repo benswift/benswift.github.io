@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content"
 import GigLayout from "../../layouts/GigLayout.astro"
 import { extractDescription } from "../../utils/excerpt"
+import { resolveContentPath } from "../../utils/source-path"
 
 export async function getStaticPaths() {
   const gigs = await getCollection("livecoding")
@@ -25,7 +26,7 @@ if (!date) {
   if (match) date = match[1]
 }
 
-const relativePath = `livecoding/${gig.id}`
+const relativePath = resolveContentPath("livecoding", gig.id)
 ---
 
 <GigLayout

@@ -19,6 +19,10 @@ package-lock.json
 *.pem
 *.key
 
+# Local tooling artifacts
+.remember/
+dogfood-output/
+
 # Generated files
 public/site-content.txt
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx

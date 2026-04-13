@@ -152,7 +152,10 @@ pre {
   border-radius: 6px 0 6px 6px;
   padding: 1rem;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
   line-height: 1.5;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-3) transparent;
 }
 
 /* Blockquotes */
@@ -397,8 +400,22 @@ strong {
   padding: 1rem;
   border-radius: 6px 0 6px 6px;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
   font-size: 0.85rem;
   line-height: 1.6;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-3) transparent;
+}
+
+/* Mobile: a wrapper whose right edge fades into the background signals that
+   code blocks scroll horizontally, since touch-device scrollbars are invisible
+   until touched. Applied via mask-image so it works with Shiki's inline
+   background colours. */
+@media (width < 640px) {
+  pre,
+  .astro-code {
+    mask-image: linear-gradient(to right, black 0, black calc(100% - 1.5rem), transparent 100%);
+  }
 }
 
 /* Juttu comments */

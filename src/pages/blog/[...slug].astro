@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content"
 import PostLayout from "../../layouts/PostLayout.astro"
 import { getAtUri } from "../../utils/atproto"
+import { resolveContentPath } from "../../utils/source-path"
 import { render } from "astro:content"
 
 export async function getStaticPaths() {
@@ -35,7 +36,7 @@ const { Content } = await render(post)
 
 const description = post.data.description
 const atUri = getAtUri(post.id)
-const relativePath = `blog/${post.id}`
+const relativePath = resolveContentPath("blog", post.id)
 ---
 
 <PostLayout

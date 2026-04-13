@@ -6,9 +6,17 @@ interface Props {
   title?: string
   description?: string
   relativePath?: string
+  frontmatter?: {
+    title?: string
+    description?: string
+    relativePath?: string
+  }
 }
 
-const { title, description, relativePath } = Astro.props
+const props = Astro.props
+const title = props.title ?? props.frontmatter?.title
+const description = props.description ?? props.frontmatter?.description
+const relativePath = props.relativePath ?? props.frontmatter?.relativePath
 ---
 
 <BaseLayout title={title} description={description}>
