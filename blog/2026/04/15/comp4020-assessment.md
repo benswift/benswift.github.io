@@ -15,7 +15,8 @@ See [all posts in the series](/blog/tag/comp4020/).
 :::
 
 The assessment challenges in an agentic coding course aren't the same as the
-ones causing much hand-wringing in other areas of higher education. The obvious
+ones
+[causing much hand-wringing in other areas of higher education](https://nymag.com/intelligencer/article/openai-chatgpt-ai-cheating-education-college-students-school.html). The obvious
 framing---"how do we stop students cheating with AI?"---misses what COMP4020 is
 actually for. The course isn't trying to produce students who can code without
 AI; it's trying to produce students who can build _good_ software _with_ AI,
@@ -104,7 +105,7 @@ distinguishes a good one from a glib one? I have intuitions---genuine engagement
 with trade-offs, specific references to what went wrong, connections to the
 scholarly material, evidence of iteration rather than single-shot
 prompting---but I don't have a scheme I'd trust yet. Related: what stops the BTS
-video itself being LLM-generated slop? The JSONL logs are part of the answer
+video itself being [LLM-generated slop](https://simonwillison.net/2024/May/8/slop/)? The JSONL logs are part of the answer
 (it's hard to reflect plausibly on workflow choices the logs show you didn't
 make), though they're probably not the whole answer. Voice-and-face-on-camera
 helps, though I'm wary of mandating that and creating accessibility problems.
@@ -113,10 +114,10 @@ LO2 is unresolved, as I've noted. I suspect it won't resolve properly until I've
 drafted the lecture material and can see what needs assessing in isolation from
 the prototypes.
 
-And there's the broadest question of all. There's a whole discourse right now
-about whether AI-assisted work is meaningfully assessable _at all_, about
-integrity, about what a degree even signals when agents can produce code that
-looks like what a student would produce. I keep going back and forth on whether
+And there's the broadest question of all. There's a
+[whole discourse right now about whether AI-assisted work is meaningfully assessable _at all_](https://postplagiarism.com/2024/08/21/intro/),
+about integrity, about what a degree even signals when agents can produce code
+that looks like what a student would produce. I keep going back and forth on whether
 to engage with that explicitly in the course materials, or whether to let the
 positive proposal do the arguing. For now I'm leaning toward the latter---ask me
 again next month.
