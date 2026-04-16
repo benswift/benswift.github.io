@@ -23,6 +23,7 @@ const posts = allPosts
       dateFormatted: formatDate(date, true),
       tags: post.data.tags,
       excerpt: post.data.description,
+      image: post.data.image,
     }
   })
   .sort((a, b) => b.date.localeCompare(a.date))

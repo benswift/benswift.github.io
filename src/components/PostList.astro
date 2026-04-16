@@ -8,6 +8,7 @@ interface Post {
   dateFormatted: string
   tags: string[]
   excerpt?: string
+  image?: string
 }
 
 interface Props {
@@ -20,16 +21,23 @@ const { posts } = Astro.props
 <ul class="post-list">
   {posts.map(post => (
     <li class="post-item">
-      <a href={post.url} class="post-item-title">{post.title}</a>
-      <span class="post-item-date">{post.dateFormatted}</span>
-      {post.tags.length > 0 && (
-        <div class="post-item-tags">
-          <TagList tags={post.tags} />
-        </div>
+      {post.image && (
+        <a href={post.url} class="post-item-image-link">
+          <img class="post-item-image" src={post.image} alt="" loading="lazy" />
+        </a>
       )}
-      {post.excerpt && (
-        <p class="post-item-excerpt">{post.excerpt}...</p>
-      )}
+      <div class="post-item-content">
+        <a href={post.url} class="post-item-title">{post.title}</a>
+        <span class="post-item-date">{post.dateFormatted}</span>
+        {post.tags.length > 0 && (
+          <div class="post-item-tags">
+            <TagList tags={post.tags} />
+          </div>
+        )}
+        {post.excerpt && (
+          <p class="post-item-excerpt">{post.excerpt}...</p>
+        )}
+      </div>
     </li>
   ))}
 </ul>

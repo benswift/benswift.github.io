@@ -272,10 +272,40 @@ blockquote {
 .post-item {
   border-top: 1px solid var(--divider);
   padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.post-item:not(:has(.post-item-image-link)) {
+  grid-template-columns: 1fr;
 }
 
 .post-item:first-child {
   border-top: none;
+}
+
+.post-item-image-link {
+  display: block;
+}
+
+.post-item-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px 0 4px 4px;
+}
+
+@media (max-width: 640px) {
+  .post-item {
+    grid-template-columns: 1fr;
+  }
+
+  .post-item-image {
+    max-height: 80px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .post-item-title {
