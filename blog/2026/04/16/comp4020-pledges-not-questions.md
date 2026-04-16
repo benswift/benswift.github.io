@@ -207,17 +207,6 @@ a conversation like that from "any good?"
 None of this works if students don't know how to write good pledges. The first
 couple of weeks need to model it explicitly.
 
-For orientation, I'd offer five categories drawn from
-[Hicks's essential elements of dignity](https://www.amazon.com/Dignity-Essential-Role-Resolving-Conflict/dp/0300188056)
-(which underpin Lorenn's
-[Dignity Lens](https://onlinelibrary.wiley.com/doi/10.1111/isj.12601)):
-transparency (what does the prototype reveal about how it works?), boundaries
-(what won't it do, what control does the user retain?), inclusion (who can use
-this, who's excluded, what assumptions does it make?), failure (how does it
-behave when things go wrong?), and trade-offs (what did you choose to
-prioritise, and at whose expense?). Students don't have to hit every
-category---the categories are training wheels, not a checklist.
-
 In week one, I'd write pledges for a demo prototype and walk through my
 reasoning in front of the class: why this pledge and not that one, what makes
 it evaluable, what trade-off it encodes. In week two, students write their own
