@@ -9,7 +9,9 @@ tags: [comp4020]
 
 This post is part of a series I'm writing as I develop
 [COMP4020: Agentic Coding Studio](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/).
-See [all posts in the series](/blog/tag/comp4020/).
+See [all posts in the series](/blog/tag/comp4020/). I've since revised the
+design described here---see
+[pledges, not questions](/blog/2026/04/16/comp4020-pledges-not-questions/).
 
 :::
 
