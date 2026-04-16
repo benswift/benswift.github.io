@@ -81,6 +81,19 @@ describe("page h1s", () => {
   }
 })
 
+describe("talk pages", () => {
+  test("talk pages are generated (deckSlugs regression)", () => {
+    const html = readPage("/talks/")
+    const talkLinks = [...html.matchAll(/href="\/talks\/([^"]+)\/"/g)].map((m) => m[1])
+    expect(talkLinks.length).toBeGreaterThan(0)
+
+    for (const slug of talkLinks) {
+      const file = resolve(distDir, "talks", slug, "index.html")
+      expect(existsSync(file), `talk page missing: /talks/${slug}/`).toBe(true)
+    }
+  })
+})
+
 describe("footer source/history links", () => {
   // Every path the footer links to must point at a file that exists in this
   // repo, so clicking "source"/"history" doesn't 404 on GitHub.
