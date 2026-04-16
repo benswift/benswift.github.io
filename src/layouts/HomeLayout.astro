@@ -67,14 +67,7 @@ const image = props.image ?? props.frontmatter?.image
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
-    background: linear-gradient(
-      120deg,
-      var(--highlight-color) 30%,
-      color-mix(in srgb, var(--highlight-color) 80%, black)
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--highlight-color);
   }
 
   .hero-tagline {

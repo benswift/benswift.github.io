@@ -33,8 +33,9 @@ const { title, description, image, isPost, date, atUri } = Astro.props
     <ClientRouter />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <Nav />
-    <main data-pagefind-body>
+    <main id="main-content" data-pagefind-body>
       <slot />
     </main>
   </body>

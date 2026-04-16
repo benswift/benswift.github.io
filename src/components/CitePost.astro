@@ -77,6 +77,11 @@ const bibtex = generateBibtex({
     color: var(--brand-1);
     border-color: var(--brand-1);
   }
+
+  .cite-copy.copied {
+    border-color: var(--highlight-color);
+    color: var(--brand-1);
+  }
 </style>
 
 <script>
@@ -87,7 +92,11 @@ const bibtex = generateBibtex({
         if (!bibtex) return
         await navigator.clipboard.writeText(bibtex)
         btn.textContent = "Copied"
-        setTimeout(() => (btn.textContent = "Copy BibTeX"), 2000)
+        btn.classList.add("copied")
+        setTimeout(() => {
+          btn.textContent = "Copy BibTeX"
+          btn.classList.remove("copied")
+        }, 2000)
       })
     })
   }

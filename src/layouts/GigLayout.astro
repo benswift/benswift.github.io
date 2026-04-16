@@ -12,7 +12,7 @@ interface Props {
   event_url?: string
   video_url?: string
   curators?: string
-  artists?: string
+  artists?: { name: string; role: string }[]
   description?: string
   relativePath: string
 }
@@ -58,10 +58,10 @@ const gigType = type ? type.charAt(0).toUpperCase() + type.slice(1) : null
         <dd>{curators}</dd>
       </>
     )}
-    {artists && (
+    {artists && artists.length > 0 && (
       <>
         <dt>Artists</dt>
-        <dd>{artists}</dd>
+        <dd>{artists.map(a => `${a.name} (${a.role})`).join(", ")}</dd>
       </>
     )}
   </dl>

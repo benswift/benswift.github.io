@@ -32,7 +32,7 @@ function main() {
 
   for (const file of files) {
     const content = fs.readFileSync(path.join(livecodingDir, file), "utf8");
-    const { data } = matter(content) as { data: Frontmatter };
+    const { data } = matter(content) as unknown as { data: Frontmatter };
 
     const dateStr = file.match(/^(\d{4}-\d{2}-\d{2})/)?.[1] ?? data.date ?? "";
     const year = dateStr.slice(0, 4);

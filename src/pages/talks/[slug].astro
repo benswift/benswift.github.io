@@ -16,18 +16,11 @@ const deckSlugs = new Set(
 
 export async function getStaticPaths() {
   const talks = await getCollection("talks")
-  const decksDir2 = path.resolve("src/decks")
-  const deckSlugs2 = new Set(
-    fs
-      .readdirSync(decksDir2)
-      .filter((f) => f.endsWith(".deck.md"))
-      .map((f) => f.replace(/\.deck\.md$/, "")),
-  )
 
   return talks
     .filter((talk) => {
       const slug = talk.id.replace(/\.md$/, "")
-      return !deckSlugs2.has(slug)
+      return !deckSlugs.has(slug)
     })
     .map((talk) => {
       const slug = talk.id.replace(/\.md$/, "")
