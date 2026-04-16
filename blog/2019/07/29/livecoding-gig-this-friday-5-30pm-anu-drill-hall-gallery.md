@@ -5,6 +5,7 @@ description: "Livecoding with Charles Martin and Kieran Browne at Drill Hall Gal
 tags:
   - livecoding
   - gigs
+image: /assets/images/posts/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery.svg
 ---
 
 For those who visit my blog to hear my livecoding gigs, there's one this Friday.

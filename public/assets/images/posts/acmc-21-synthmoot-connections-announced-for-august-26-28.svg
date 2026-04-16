@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="acmc-hub1" cx="0.38" cy="0.48" r="0.35">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="acmc-hub2" cx="0.72" cy="0.52" r="0.3">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="acmc-connect" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#acmc-hub1)" width="2844" height="1600"/>
+  <rect fill="url(#acmc-hub2)" width="2844" height="1600"/>
+  <g fill="none" stroke="#be2edd" stroke-linecap="round" opacity="0.22">
+    <path d="M 600 550 C 750 500, 850 540, 900 600" stroke-width="2"/>
+    <path d="M 600 550 C 580 700, 550 800, 500 900" stroke-width="2"/>
+    <path d="M 600 550 C 700 450, 780 380, 850 300" stroke-width="2"/>
+    <path d="M 600 550 C 450 520, 320 540, 200 600" stroke-width="2"/>
+    <path d="M 600 550 C 620 420, 680 360, 750 300" stroke-width="1.5"/>
+    <path d="M 900 600 C 1000 580, 1100 620, 1180 700" stroke-width="2"/>
+    <path d="M 900 600 C 950 720, 920 830, 870 950" stroke-width="2"/>
+    <path d="M 900 600 C 1050 540, 1200 500, 1350 530" stroke-width="2"/>
+    <path d="M 500 900 C 600 980, 700 1020, 820 1050" stroke-width="2"/>
+    <path d="M 500 900 C 400 980, 300 1000, 200 950" stroke-width="2"/>
+    <path d="M 1180 700 C 1280 650, 1400 670, 1500 730" stroke-width="2"/>
+    <path d="M 1350 530 C 1500 480, 1650 520, 1750 620" stroke-width="2"/>
+    <path d="M 1350 530 C 1400 400, 1500 330, 1620 310" stroke-width="2"/>
+    <path d="M 870 950 C 950 1050, 1000 1120, 1050 1200" stroke-width="2"/>
+    <path d="M 820 1050 C 900 1130, 950 1200, 1000 1280" stroke-width="2"/>
+    <path d="M 1500 730 C 1650 710, 1800 740, 1900 820" stroke-width="2"/>
+    <path d="M 1750 620 C 1900 580, 2050 620, 2150 720" stroke-width="2"/>
+    <path d="M 1750 620 C 1800 480, 1900 420, 2030 400" stroke-width="2"/>
+    <path d="M 1900 820 C 2050 800, 2200 830, 2300 920" stroke-width="2"/>
+    <path d="M 2150 720 C 2300 680, 2450 710, 2550 800" stroke-width="2"/>
+    <path d="M 2150 720 C 2200 580, 2300 520, 2450 500" stroke-width="2"/>
+    <path d="M 2300 920 C 2400 960, 2500 980, 2600 960" stroke-width="1.5"/>
+    <path d="M 1050 1200 C 1150 1280, 1300 1320, 1450 1300" stroke-width="1.5"/>
+    <path d="M 1620 310 C 1800 260, 1980 280, 2100 340" stroke-width="1.5"/>
+    <path d="M 2450 500 C 2600 470, 2750 500, 2850 560" stroke-width="1.5"/>
+  </g>
+  <g fill="#be2edd">
+    <circle cx="600" cy="550" r="28" opacity="0.55"/>
+    <circle cx="900" cy="600" r="22" opacity="0.5"/>
+    <circle cx="500" cy="900" r="18" opacity="0.45"/>
+    <circle cx="1180" cy="700" r="20" opacity="0.48"/>
+    <circle cx="1350" cy="530" r="22" opacity="0.5"/>
+    <circle cx="870" cy="950" r="16" opacity="0.4"/>
+    <circle cx="820" cy="1050" r="14" opacity="0.38"/>
+    <circle cx="1500" cy="730" r="18" opacity="0.45"/>
+    <circle cx="1750" cy="620" r="24" opacity="0.52"/>
+    <circle cx="1900" cy="820" r="18" opacity="0.45"/>
+    <circle cx="2150" cy="720" r="22" opacity="0.5"/>
+    <circle cx="2300" cy="920" r="16" opacity="0.4"/>
+    <circle cx="1620" cy="310" r="14" opacity="0.38"/>
+    <circle cx="2030" cy="400" r="14" opacity="0.35"/>
+    <circle cx="2450" cy="500" r="16" opacity="0.4"/>
+    <circle cx="2550" cy="800" r="14" opacity="0.35"/>
+    <circle cx="1050" cy="1200" r="14" opacity="0.38"/>
+    <circle cx="1450" cy="1300" r="14" opacity="0.35"/>
+  </g>
+  <g fill="#f59e0b">
+    <circle cx="600" cy="550" r="40" opacity="0.15"/>
+    <circle cx="1750" cy="620" r="36" opacity="0.12"/>
+    <circle cx="2150" cy="720" r="32" opacity="0.1"/>
+  </g>
+  <g fill="#3b82f6">
+    <circle cx="600" cy="550" r="10" opacity="0.8"/>
+    <circle cx="1750" cy="620" r="10" opacity="0.8"/>
+    <circle cx="2150" cy="720" r="9" opacity="0.75"/>
+    <circle cx="900" cy="600" r="8" opacity="0.7"/>
+    <circle cx="1350" cy="530" r="8" opacity="0.7"/>
+  </g>
+  <g transform="rotate(4 200 1400)" opacity="0.08">
+    <path d="M -150 1200 C 300 1000, 700 1100, 900 1400 S 1300 1700, 1500 1800" fill="none" stroke="#9b1fb8" stroke-width="80" stroke-linecap="round"/>
+  </g>
+  <path d="M -100 1500 C 500 1350, 1100 1380, 1700 1420 S 2400 1280, 2944 1350" fill="none" stroke="#be2edd" stroke-width="2" stroke-linecap="round" opacity="0.08"/>
+</svg>

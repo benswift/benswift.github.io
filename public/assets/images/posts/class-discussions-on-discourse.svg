@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#be2edd"/>
+      <stop offset="100%" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="node-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hub-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#be2edd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <g opacity="0.25">
+    <line x1="1422" y1="800" x2="600" y2="350" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="400" y2="800" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="600" y2="1250" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="1100" y2="250" stroke="#be2edd" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="1100" y2="1350" stroke="#be2edd" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="1800" y2="250" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="1800" y2="1350" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="2200" y2="400" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="2400" y2="800" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1422" y1="800" x2="2200" y2="1200" stroke="#be2edd" stroke-width="2"/>
+    <line x1="600" y1="350" x2="1100" y2="250" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="400" y1="800" x2="600" y2="350" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="600" y1="1250" x2="400" y2="800" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="1100" y1="1350" x2="600" y2="1250" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="1800" y1="1350" x2="1100" y2="1350" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="2200" y1="1200" x2="1800" y2="1350" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="2400" y1="800" x2="2200" y2="1200" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="2200" y1="400" x2="2400" y2="800" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="1800" y1="250" x2="2200" y2="400" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+    <line x1="1100" y1="250" x2="1800" y2="250" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+  </g>
+  <ellipse cx="1422" cy="800" rx="200" ry="200" fill="url(#hub-glow)"/>
+  <circle cx="1422" cy="800" r="60" fill="#be2edd" opacity="0.9"/>
+  <circle cx="1422" cy="800" r="40" fill="#9b1fb8"/>
+  <g>
+    <circle cx="600" cy="350" r="35" fill="#3b82f6" opacity="0.85"/>
+    <circle cx="400" cy="800" r="30" fill="#3b82f6" opacity="0.75"/>
+    <circle cx="600" cy="1250" r="38" fill="#3b82f6" opacity="0.8"/>
+    <circle cx="1100" cy="250" r="32" fill="#be2edd" opacity="0.7"/>
+    <circle cx="1100" cy="1350" r="36" fill="#be2edd" opacity="0.75"/>
+    <circle cx="1800" cy="250" r="30" fill="#f59e0b" opacity="0.75"/>
+    <circle cx="1800" cy="1350" r="34" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="2200" cy="400" r="36" fill="#3b82f6" opacity="0.8"/>
+    <circle cx="2400" cy="800" r="32" fill="#3b82f6" opacity="0.75"/>
+    <circle cx="2200" cy="1200" r="38" fill="#be2edd" opacity="0.8"/>
+  </g>
+  <g opacity="0.5">
+    <circle cx="600" cy="350" r="80" fill="url(#node-glow)"/>
+    <circle cx="2200" cy="400" r="80" fill="url(#node-glow)"/>
+    <circle cx="2400" cy="800" r="70" fill="url(#node-glow)"/>
+  </g>
+  <g opacity="0.35">
+    <circle cx="250" cy="500" r="18" fill="#e0e0e0"/>
+    <circle cx="180" cy="1050" r="14" fill="#e0e0e0"/>
+    <circle cx="750" cy="100" r="16" fill="#e0e0e0"/>
+    <circle cx="2600" cy="300" r="15" fill="#e0e0e0"/>
+    <circle cx="2700" cy="1100" r="17" fill="#e0e0e0"/>
+    <circle cx="1400" cy="50" r="13" fill="#e0e0e0"/>
+    <circle cx="1400" cy="1550" r="13" fill="#e0e0e0"/>
+  </g>
+</svg>

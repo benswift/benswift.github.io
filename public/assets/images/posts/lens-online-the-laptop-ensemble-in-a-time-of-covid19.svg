@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="warmth" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <g opacity="0.15">
+    <circle cx="420" cy="520" r="200" fill="url(#pulse)"/>
+    <circle cx="420" cy="520" r="260" fill="none" stroke="#3b82f6" stroke-width="3" opacity="0.3"/>
+    <circle cx="420" cy="520" r="340" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.18"/>
+  </g>
+  <g opacity="0.15">
+    <circle cx="1422" cy="800" r="280" fill="url(#pulse)"/>
+    <circle cx="1422" cy="800" r="350" fill="none" stroke="#be2edd" stroke-width="3" opacity="0.3"/>
+    <circle cx="1422" cy="800" r="440" fill="none" stroke="#be2edd" stroke-width="1.5" opacity="0.18"/>
+  </g>
+  <g opacity="0.15">
+    <circle cx="2420" cy="520" r="200" fill="url(#pulse)"/>
+    <circle cx="2420" cy="520" r="260" fill="none" stroke="#3b82f6" stroke-width="3" opacity="0.3"/>
+    <circle cx="2420" cy="520" r="340" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.18"/>
+  </g>
+  <g opacity="0.15">
+    <circle cx="800" cy="1150" r="180" fill="url(#pulse)"/>
+    <circle cx="800" cy="1150" r="240" fill="none" stroke="#9b1fb8" stroke-width="2" opacity="0.3"/>
+  </g>
+  <g opacity="0.15">
+    <circle cx="2050" cy="1150" r="180" fill="url(#pulse)"/>
+    <circle cx="2050" cy="1150" r="240" fill="none" stroke="#9b1fb8" stroke-width="2" opacity="0.3"/>
+  </g>
+  <g stroke="#be2edd" stroke-linecap="round" fill="none" opacity="0.28">
+    <path d="M 420 520 C 700 600, 1000 650, 1422 800" stroke-width="5"/>
+    <path d="M 2420 520 C 2150 600, 1850 650, 1422 800" stroke-width="5"/>
+    <path d="M 420 520 C 500 700, 600 900, 800 1150" stroke-width="3"/>
+    <path d="M 2420 520 C 2350 700, 2250 900, 2050 1150" stroke-width="3"/>
+    <path d="M 1422 800 C 1200 950, 1050 1050, 800 1150" stroke-width="3"/>
+    <path d="M 1422 800 C 1650 950, 1800 1050, 2050 1150" stroke-width="3"/>
+  </g>
+  <g opacity="0.35">
+    <rect x="340" y="455" width="160" height="105" rx="12" fill="none" stroke="#3b82f6" stroke-width="5"/>
+    <rect x="348" y="462" width="144" height="91" rx="8" fill="#3b82f6" opacity="0.18"/>
+    <rect x="380" y="555" width="80" height="14" rx="4" fill="#3b82f6" opacity="0.5"/>
+    <rect x="2340" y="455" width="160" height="105" rx="12" fill="none" stroke="#3b82f6" stroke-width="5"/>
+    <rect x="2348" y="462" width="144" height="91" rx="8" fill="#3b82f6" opacity="0.18"/>
+    <rect x="2380" y="555" width="80" height="14" rx="4" fill="#3b82f6" opacity="0.5"/>
+  </g>
+  <g opacity="0.35">
+    <rect x="1342" y="735" width="160" height="105" rx="12" fill="none" stroke="#be2edd" stroke-width="6"/>
+    <rect x="1350" y="742" width="144" height="91" rx="8" fill="#be2edd" opacity="0.22"/>
+    <rect x="1382" y="835" width="80" height="14" rx="4" fill="#be2edd" opacity="0.5"/>
+  </g>
+  <g opacity="0.22">
+    <path d="M 380 900 C 500 850, 700 870, 900 820 S 1200 780, 1422 800 S 1700 820, 1950 790 S 2300 760, 2550 810" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 200 1050 C 450 1000, 700 1030, 1000 980 S 1350 940, 1600 970 S 1900 1000, 2200 960 S 2550 920, 2700 950" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <path d="M -100 1480 C 400 1380, 900 1430, 1422 1360 S 2000 1300, 2900 1360 L 2900 1700 L -100 1700 Z" fill="url(#cool)" opacity="0.1"/>
+</svg>

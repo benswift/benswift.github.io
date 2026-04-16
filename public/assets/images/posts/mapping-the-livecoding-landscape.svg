@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <radialGradient id="nodeA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#be2edd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nodeB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nodeC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <g stroke="#e0e0e0" stroke-width="0.8" opacity="0.06" fill="none">
+    <line x1="0" y1="400" x2="2844" y2="400"/>
+    <line x1="0" y1="800" x2="2844" y2="800"/>
+    <line x1="0" y1="1200" x2="2844" y2="1200"/>
+    <line x1="400" y1="0" x2="400" y2="1600"/>
+    <line x1="900" y1="0" x2="900" y2="1600"/>
+    <line x1="1400" y1="0" x2="1400" y2="1600"/>
+    <line x1="1900" y1="0" x2="1900" y2="1600"/>
+    <line x1="2400" y1="0" x2="2400" y2="1600"/>
+  </g>
+  <g opacity="0.18" stroke="#3b82f6" stroke-width="1.5" fill="none">
+    <line x1="520" y1="430" x2="980" y2="560"/>
+    <line x1="980" y1="560" x2="1320" y2="480"/>
+    <line x1="1320" y1="480" x2="1720" y2="540"/>
+    <line x1="1720" y1="540" x2="2100" y2="430"/>
+    <line x1="520" y1="430" x2="680" y2="820"/>
+    <line x1="980" y1="560" x2="1100" y2="900"/>
+    <line x1="1320" y1="480" x2="1100" y2="900"/>
+    <line x1="1720" y1="540" x2="1600" y2="880"/>
+    <line x1="2100" y1="430" x2="1980" y2="760"/>
+    <line x1="680" y1="820" x2="1100" y2="900"/>
+    <line x1="1100" y1="900" x2="1600" y2="880"/>
+    <line x1="1600" y1="880" x2="1980" y2="760"/>
+    <line x1="680" y1="820" x2="800" y2="1180"/>
+    <line x1="1100" y1="900" x2="1200" y2="1220"/>
+    <line x1="1600" y1="880" x2="1560" y2="1240"/>
+    <line x1="1980" y1="760" x2="2050" y2="1100"/>
+    <line x1="800" y1="1180" x2="1200" y2="1220"/>
+    <line x1="1200" y1="1220" x2="1560" y2="1240"/>
+    <line x1="1560" y1="1240" x2="2050" y2="1100"/>
+    <line x1="520" y1="430" x2="2100" y2="430"/>
+    <line x1="320" y1="680" x2="680" y2="820"/>
+    <line x1="2200" y1="680" x2="1980" y2="760"/>
+    <line x1="520" y1="430" x2="320" y2="680"/>
+    <line x1="2100" y1="430" x2="2200" y2="680"/>
+    <line x1="2500" y1="900" x2="2050" y2="1100"/>
+    <line x1="2500" y1="900" x2="1980" y2="760"/>
+    <line x1="300" y1="1100" x2="800" y2="1180"/>
+    <line x1="300" y1="1100" x2="320" y2="680"/>
+  </g>
+  <ellipse cx="520" cy="430" rx="50" ry="50" fill="url(#nodeA)"/>
+  <circle cx="520" cy="430" r="18" fill="#be2edd" opacity="0.9"/>
+  <ellipse cx="980" cy="560" rx="40" ry="40" fill="url(#nodeB)"/>
+  <circle cx="980" cy="560" r="14" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="1320" cy="480" rx="55" ry="55" fill="url(#nodeA)"/>
+  <circle cx="1320" cy="480" r="20" fill="#be2edd" opacity="0.9"/>
+  <ellipse cx="1720" cy="540" rx="40" ry="40" fill="url(#nodeB)"/>
+  <circle cx="1720" cy="540" r="14" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="2100" cy="430" rx="45" ry="45" fill="url(#nodeA)"/>
+  <circle cx="2100" cy="430" r="16" fill="#be2edd" opacity="0.9"/>
+  <ellipse cx="680" cy="820" rx="44" ry="44" fill="url(#nodeB)"/>
+  <circle cx="680" cy="820" r="16" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="1100" cy="900" rx="70" ry="70" fill="url(#nodeC)"/>
+  <circle cx="1100" cy="900" r="26" fill="#f59e0b" opacity="0.9"/>
+  <ellipse cx="1600" cy="880" rx="50" ry="50" fill="url(#nodeB)"/>
+  <circle cx="1600" cy="880" r="18" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="1980" cy="760" rx="44" ry="44" fill="url(#nodeA)"/>
+  <circle cx="1980" cy="760" r="16" fill="#be2edd" opacity="0.9"/>
+  <ellipse cx="800" cy="1180" rx="38" ry="38" fill="url(#nodeB)"/>
+  <circle cx="800" cy="1180" r="13" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="1200" cy="1220" rx="44" ry="44" fill="url(#nodeA)"/>
+  <circle cx="1200" cy="1220" r="16" fill="#be2edd" opacity="0.9"/>
+  <ellipse cx="1560" cy="1240" rx="38" ry="38" fill="url(#nodeB)"/>
+  <circle cx="1560" cy="1240" r="13" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="2050" cy="1100" rx="42" ry="42" fill="url(#nodeA)"/>
+  <circle cx="2050" cy="1100" r="15" fill="#be2edd" opacity="0.9"/>
+  <ellipse cx="320" cy="680" rx="34" ry="34" fill="url(#nodeB)"/>
+  <circle cx="320" cy="680" r="12" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="2200" cy="680" rx="34" ry="34" fill="url(#nodeA)"/>
+  <circle cx="2200" cy="680" r="12" fill="#9b1fb8" opacity="0.9"/>
+  <ellipse cx="2500" cy="900" rx="36" ry="36" fill="url(#nodeB)"/>
+  <circle cx="2500" cy="900" r="13" fill="#3b82f6" opacity="0.9"/>
+  <ellipse cx="300" cy="1100" rx="34" ry="34" fill="url(#nodeA)"/>
+  <circle cx="300" cy="1100" r="12" fill="#9b1fb8" opacity="0.9"/>
+</svg>

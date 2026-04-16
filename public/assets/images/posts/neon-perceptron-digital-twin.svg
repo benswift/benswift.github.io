@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="neuronGlowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neuronGlowP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#be2edd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neuronGlowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <g opacity="0.08">
+    <path d="M0 0 C200 400, 400 200, 600 600 C800 1000, 1000 500, 1200 900 C1400 1300, 1600 800, 1800 1200 C2000 1600, 2200 1000, 2844 1400" fill="none" stroke="#3b82f6" stroke-width="200"/>
+  </g>
+  <g opacity="0.4">
+    <rect x="180" y="250" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="180" y="380" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="180" y="510" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="180" y="640" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="180" y="770" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="310" y="250" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.6" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="310" y="380" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="310" y="510" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.4" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="310" y="640" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="310" y="770" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.5" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="440" y="250" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="440" y="380" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.7" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="440" y="510" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="440" y="640" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.3" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="440" y="770" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="570" y="250" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.5" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="570" y="380" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="570" y="510" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="570" y="640" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.6" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="570" y="770" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="700" y="250" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="700" y="380" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.4" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="700" y="510" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.7" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="700" y="640" width="90" height="90" rx="8" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <rect x="700" y="770" width="90" height="90" rx="8" fill="#3b82f6" fill-opacity="0.3" stroke="#3b82f6" stroke-width="3"/>
+  </g>
+  <g opacity="0.55">
+    <line x1="800" y1="295" x2="1100" y2="380" stroke="#f59e0b" stroke-width="4"/>
+    <line x1="800" y1="425" x2="1100" y2="380" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="800" y1="555" x2="1100" y2="560" stroke="#f59e0b" stroke-width="6"/>
+    <line x1="800" y1="685" x2="1100" y2="560" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="800" y1="815" x2="1100" y2="740" stroke="#f59e0b" stroke-width="5"/>
+    <line x1="800" y1="295" x2="1100" y2="560" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+    <line x1="800" y1="425" x2="1100" y2="740" stroke="#f59e0b" stroke-width="3" opacity="0.4"/>
+    <line x1="800" y1="555" x2="1100" y2="380" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+    <line x1="800" y1="685" x2="1100" y2="380" stroke="#f59e0b" stroke-width="4" opacity="0.4"/>
+    <line x1="800" y1="815" x2="1100" y2="560" stroke="#3b82f6" stroke-width="3" opacity="0.35"/>
+    <line x1="800" y1="295" x2="1100" y2="740" stroke="#be2edd" stroke-width="2" opacity="0.3"/>
+    <line x1="800" y1="815" x2="1100" y2="380" stroke="#be2edd" stroke-width="2" opacity="0.25"/>
+  </g>
+  <g opacity="0.8">
+    <ellipse cx="1130" cy="380" rx="45" ry="45" fill="url(#neuronGlowA)"/>
+    <circle cx="1130" cy="380" r="25" fill="#f59e0b"/>
+    <ellipse cx="1130" cy="560" rx="45" ry="45" fill="url(#neuronGlowB)"/>
+    <circle cx="1130" cy="560" r="25" fill="#3b82f6"/>
+    <ellipse cx="1130" cy="740" rx="45" ry="45" fill="url(#neuronGlowP)"/>
+    <circle cx="1130" cy="740" r="25" fill="#be2edd"/>
+  </g>
+  <g opacity="0.5">
+    <line x1="1180" y1="380" x2="1480" y2="295" stroke="#f59e0b" stroke-width="5"/>
+    <line x1="1180" y1="380" x2="1480" y2="470" stroke="#f59e0b" stroke-width="4"/>
+    <line x1="1180" y1="380" x2="1480" y2="645" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+    <line x1="1180" y1="380" x2="1480" y2="820" stroke="#be2edd" stroke-width="2" opacity="0.4"/>
+    <line x1="1180" y1="380" x2="1480" y2="995" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+    <line x1="1180" y1="560" x2="1480" y2="295" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+    <line x1="1180" y1="560" x2="1480" y2="470" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="1180" y1="560" x2="1480" y2="645" stroke="#f59e0b" stroke-width="5"/>
+    <line x1="1180" y1="560" x2="1480" y2="820" stroke="#be2edd" stroke-width="3"/>
+    <line x1="1180" y1="560" x2="1480" y2="995" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+    <line x1="1180" y1="740" x2="1480" y2="295" stroke="#be2edd" stroke-width="2" opacity="0.3"/>
+    <line x1="1180" y1="740" x2="1480" y2="470" stroke="#be2edd" stroke-width="2" opacity="0.4"/>
+    <line x1="1180" y1="740" x2="1480" y2="645" stroke="#be2edd" stroke-width="3"/>
+    <line x1="1180" y1="740" x2="1480" y2="820" stroke="#f59e0b" stroke-width="4"/>
+    <line x1="1180" y1="740" x2="1480" y2="995" stroke="#f59e0b" stroke-width="5"/>
+  </g>
+  <g opacity="0.75">
+    <ellipse cx="1510" cy="295" rx="38" ry="38" fill="url(#neuronGlowA)"/>
+    <circle cx="1510" cy="295" r="20" fill="#f59e0b"/>
+    <ellipse cx="1510" cy="470" rx="38" ry="38" fill="url(#neuronGlowB)"/>
+    <circle cx="1510" cy="470" r="20" fill="#3b82f6"/>
+    <ellipse cx="1510" cy="645" rx="38" ry="38" fill="url(#neuronGlowA)"/>
+    <circle cx="1510" cy="645" r="20" fill="#f59e0b"/>
+    <ellipse cx="1510" cy="820" rx="38" ry="38" fill="url(#neuronGlowP)"/>
+    <circle cx="1510" cy="820" r="20" fill="#be2edd"/>
+    <ellipse cx="1510" cy="995" rx="38" ry="38" fill="url(#neuronGlowB)"/>
+    <circle cx="1510" cy="995" r="20" fill="#3b82f6"/>
+  </g>
+  <g opacity="0.3">
+    <path d="M1650 400 C1900 350, 2200 420, 2500 370 C2700 335, 2850 360, 2950 340" fill="none" stroke="#9b1fb8" stroke-width="60" stroke-linecap="round"/>
+    <path d="M1650 750 C1900 700, 2200 770, 2500 720 C2700 685, 2850 710, 2950 690" fill="none" stroke="#9b1fb8" stroke-width="40" stroke-linecap="round"/>
+    <path d="M1650 1100 C1900 1050, 2200 1120, 2500 1070 C2700 1035, 2850 1060, 2950 1040" fill="none" stroke="#9b1fb8" stroke-width="25" stroke-linecap="round"/>
+  </g>
+</svg>

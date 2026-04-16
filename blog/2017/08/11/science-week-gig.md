@@ -5,6 +5,7 @@ description: "Playing a livecoding set at the ACT Science Week launch party toni
 tags:
   - gigs
   - livecoding
+image: /assets/images/posts/science-week-gig.svg
 ---
 
 I'm playing a livecoding set at the

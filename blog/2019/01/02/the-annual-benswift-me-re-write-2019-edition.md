@@ -4,6 +4,7 @@ description: "Another year, another website rewrite. This time it's hand-crafted
   with modern grid layouts and the Inter UI typeface."
 tags:
   - dev
+image: /assets/images/posts/the-annual-benswift-me-re-write-2019-edition.svg
 ---
 
 Welcome, traveller. You've managed to find my blog without being

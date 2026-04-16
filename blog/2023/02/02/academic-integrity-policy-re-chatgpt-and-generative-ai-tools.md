@@ -5,6 +5,7 @@ description: "Draft guidelines for allowing ChatGPT in university coursework whi
 tags:
   - teaching
   - ai
+image: /assets/images/posts/academic-integrity-policy-re-chatgpt-and-generative-ai-tools.svg
 ---
 
 Here in Australia Semester 1 is approaching and

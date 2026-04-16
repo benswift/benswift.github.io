@@ -4,6 +4,7 @@ description: "Practical advice for ANU computing students on writing a capstone 
   description and learning outcomes that actually guide your research."
 tags:
   - teaching
+image: /assets/images/posts/independent-study-contract-writing-tips.svg
 ---
 
 Many students here at the ANU School of Computing take a capstone project at the

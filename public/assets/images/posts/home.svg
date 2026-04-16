@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="purpleBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberPurple" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <radialGradient id="centreGlow" cx="0.42" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0.8" cy="0.4" r="0.35">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="horizFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#be2edd" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#centreGlow)" width="2844" height="1600"/>
+  <rect fill="url(#rightGlow)" width="2844" height="1600"/>
+  <g opacity="0.18" fill="url(#purpleBlue)">
+    <path d="M -100 1200 C 300 950, 800 1050, 1200 900 C 1600 750, 2000 880, 2400 780 C 2700 700, 2900 760, 2944 780 L 2944 1700 L -100 1700 Z"/>
+  </g>
+  <g opacity="0.13" fill="url(#amberPurple)">
+    <path d="M -100 1380 C 400 1200, 900 1300, 1350 1180 C 1750 1070, 2100 1180, 2500 1080 C 2720 1020, 2900 1060, 2944 1070 L 2944 1700 L -100 1700 Z"/>
+  </g>
+  <g opacity="0.09" fill="#e0e0e0">
+    <path d="M -100 1500 C 500 1420, 1000 1480, 1600 1430 C 2000 1395, 2400 1450, 2944 1400 L 2944 1700 L -100 1700 Z"/>
+  </g>
+  <g opacity="0.35" fill="none" stroke="url(#horizFade)" stroke-linecap="round">
+    <path d="M -80 820 C 250 700, 600 780, 900 720 C 1150 670, 1350 580, 1600 560 C 1900 538, 2200 610, 2500 575 C 2680 557, 2800 540, 2944 520" stroke-width="5"/>
+    <path d="M -80 920 C 300 820, 700 870, 1050 810 C 1350 760, 1600 700, 1900 680 C 2200 660, 2500 720, 2944 680" stroke-width="3"/>
+    <path d="M -80 1020 C 350 940, 750 980, 1100 910 C 1400 850, 1700 800, 2000 790 C 2300 780, 2600 830, 2944 800" stroke-width="2"/>
+  </g>
+  <g opacity="0.6" transform="rotate(-3 1100 800)">
+    <ellipse cx="820" cy="760" rx="380" ry="200" fill="none" stroke="#be2edd" stroke-width="2.5" stroke-dasharray="18 12"/>
+    <ellipse cx="820" cy="760" rx="220" ry="110" fill="#be2edd" opacity="0.08"/>
+  </g>
+  <g opacity="0.45" stroke="#f59e0b" fill="none" stroke-linecap="round">
+    <path d="M 1380 350 C 1500 280, 1680 260, 1820 310 C 1960 360, 2020 460, 1980 560 C 1940 650, 1820 700, 1700 680 C 1580 660, 1460 580, 1440 480 C 1420 400, 1460 360, 1500 340" stroke-width="3"/>
+    <path d="M 1560 420 C 1620 390, 1720 380, 1800 410 C 1880 440, 1910 510, 1880 570 C 1850 625, 1770 650, 1700 638 C 1630 626, 1580 580, 1570 530" stroke-width="2"/>
+  </g>
+  <g opacity="0.3">
+    <circle cx="820" cy="760" r="18" fill="#be2edd"/>
+    <circle cx="820" cy="760" r="38" fill="none" stroke="#be2edd" stroke-width="2"/>
+    <circle cx="820" cy="760" r="65" fill="none" stroke="#9b1fb8" stroke-width="1" opacity="0.5"/>
+  </g>
+  <g opacity="0.22" stroke="#3b82f6" fill="none" stroke-linecap="round">
+    <path d="M 2100 200 C 2200 320, 2180 480, 2100 600 C 2040 690, 1950 720, 1950 800" stroke-width="8"/>
+    <path d="M 2300 150 C 2420 280, 2400 460, 2320 590 C 2260 690, 2170 730, 2200 840" stroke-width="5"/>
+    <path d="M 2500 100 C 2620 240, 2620 430, 2540 570 C 2490 660, 2420 710, 2450 820" stroke-width="4"/>
+  </g>
+  <g opacity="0.55" fill="#3b82f6">
+    <circle cx="2100" cy="820" r="10"/>
+    <circle cx="2220" cy="870" r="7"/>
+    <circle cx="2460" cy="845" r="8"/>
+  </g>
+  <g opacity="0.15" stroke="#e0e0e0" fill="none">
+    <path d="M 50 -50 C 100 200, 60 450, 120 700 C 160 880, 240 1000, 200 1200" stroke-width="120" stroke-linecap="round"/>
+  </g>
+</svg>

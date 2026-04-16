@@ -5,6 +5,7 @@ description: "Four standard questions I use to keep one-on-one research supervis
 tags:
   - teaching
   - research
+image: /assets/images/posts/making-the-most-of-meetings-with-research-students.svg
 ---
 
 <div class="hl-para" markdown="1">

@@ -2,6 +2,7 @@
 title: "The road to COMP4020: Agentic Coding for Conscientious Objectors"
 description: "What would I say to a student who's staunchly anti-AI but curious about COMP4020?"
 tags: [comp4020]
+image: /assets/images/posts/agentic-coding-for-conscientious-objectors.svg
 ---
 
 :::tip

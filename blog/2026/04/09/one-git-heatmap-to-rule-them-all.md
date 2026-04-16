@@ -1,9 +1,9 @@
 ---
 title: "One git heatmap to rule them all"
-description:
-  "A Python script that merges contribution data from GitHub and multiple GitLab
+description: "A Python script that merges contribution data from GitHub and multiple GitLab
   instances into a single interactive SVG heatmap."
 tags: ["tools", "python", "visualisation"]
+image: /assets/images/posts/one-git-heatmap-to-rule-them-all.svg
 ---
 
 GitHub's contribution heatmap gives me mixed feelings. A year of work, reduced
@@ -76,7 +76,6 @@ actually hitting any APIs, which was helpful while getting the request counts
 right.
 
 ## The full script
-
 
 ```python
 #!/usr/bin/env python3

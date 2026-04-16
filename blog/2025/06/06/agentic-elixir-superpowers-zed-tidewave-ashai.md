@@ -4,6 +4,7 @@ description: "How to wire up Zed, Tidewave and AshAI as MCP servers for an agent
   development workflow, with a helper script to glue it all together."
 tags:
   - dev
+image: /assets/images/posts/agentic-elixir-superpowers-zed-tidewave-ashai.svg
 ---
 
 For a few years now whenever I need to build any sort of networked interactive

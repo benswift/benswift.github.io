@@ -1,9 +1,9 @@
 ---
 title: "The road to COMP4020: the core mechanic"
-description:
-  "The repeating loop at the heart of COMP4020: provocation, prototype, studio
+description: "The repeating loop at the heart of COMP4020: provocation, prototype, studio
   crit. An art-school model adapted for agentic software development."
 tags: [comp4020, teaching]
+image: /assets/images/posts/comp4020-the-core-mechanic.svg
 ---
 
 :::tip

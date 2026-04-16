@@ -6,6 +6,7 @@ description: "Claude Code sessions in Zed were taking 30 seconds to start. The c
 tags:
   - ai
   - dev
+image: /assets/images/posts/fixing-slow-zed-agent-startup-times.svg
 ---
 
 I've been using [Claude Code](https://github.com/anthropics/claude-code) via

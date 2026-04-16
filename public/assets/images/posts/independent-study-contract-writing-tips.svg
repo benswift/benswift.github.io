@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="isc-a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="isc-b" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="isc-glow1" cx="0.35" cy="0.45" r="0.4">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="isc-glow2" cx="0.72" cy="0.6" r="0.35">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#isc-glow1)" width="2844" height="1600"/>
+  <rect fill="url(#isc-glow2)" width="2844" height="1600"/>
+  <g transform="rotate(-4 800 900)" opacity="0.22">
+    <path d="M 200 -100 C 350 50, 420 200, 380 400 S 280 700, 320 950 C 360 1150, 500 1300, 480 1700" fill="none" stroke="#3b82f6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 340 -80 C 490 70, 560 210, 520 410 S 420 710, 460 960 C 500 1160, 640 1310, 620 1710" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <g transform="rotate(2 1600 800)">
+    <path d="M 700 250 C 850 180, 1050 200, 1200 280 S 1550 380, 1700 320 C 1900 240, 2100 260, 2300 310 S 2600 350, 2900 330" fill="none" stroke="#9b1fb8" stroke-width="2" stroke-linecap="round" opacity="0.18"/>
+    <path d="M 680 450 C 830 380, 1030 400, 1180 480 S 1530 580, 1680 520 C 1880 440, 2080 460, 2280 510 S 2580 550, 2880 530" fill="none" stroke="#9b1fb8" stroke-width="2" stroke-linecap="round" opacity="0.18"/>
+    <path d="M 710 650 C 860 580, 1060 600, 1210 680 S 1560 780, 1710 720 C 1910 640, 2110 660, 2310 710 S 2610 750, 2910 730" fill="none" stroke="#9b1fb8" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+    <path d="M 690 850 C 840 780, 1040 800, 1190 880 S 1540 980, 1690 920 C 1890 840, 2090 860, 2290 910 S 2590 950, 2890 930" fill="none" stroke="#9b1fb8" stroke-width="2" stroke-linecap="round" opacity="0.12"/>
+    <path d="M 720 1050 C 870 980, 1070 1000, 1220 1080 S 1570 1180, 1720 1120 C 1920 1040, 2120 1060, 2320 1110 S 2620 1150, 2920 1130" fill="none" stroke="#9b1fb8" stroke-width="2" stroke-linecap="round" opacity="0.1"/>
+    <path d="M 700 1250 C 850 1180, 1050 1200, 1200 1280 S 1550 1380, 1700 1320 C 1900 1240, 2100 1260, 2300 1310 S 2600 1350, 2900 1330" fill="none" stroke="#9b1fb8" stroke-width="1.5" stroke-linecap="round" opacity="0.08"/>
+  </g>
+  <g transform="translate(-30 20) rotate(-3 1200 700)">
+    <path d="M 600 1700 C 900 1400, 1300 1150, 1600 1200 S 2100 900, 2400 1000 C 2650 1080, 2900 900, 2900 1700 Z" fill="url(#isc-a)" opacity="0.16"/>
+  </g>
+  <g fill="none" stroke="#f59e0b" stroke-linecap="round">
+    <path d="M 1100 480 C 1200 440, 1380 450, 1460 500" stroke-width="4" opacity="0.35"/>
+    <path d="M 1100 580 C 1200 540, 1500 550, 1680 590" stroke-width="4" opacity="0.35"/>
+    <path d="M 1100 680 C 1200 640, 1450 650, 1600 690" stroke-width="4" opacity="0.35"/>
+    <path d="M 1100 880 C 1250 850, 1550 860, 1800 900" stroke-width="3" opacity="0.25"/>
+    <path d="M 1100 980 C 1250 950, 1600 960, 1900 1000" stroke-width="3" opacity="0.25"/>
+    <path d="M 1100 1080 C 1250 1050, 1500 1060, 1750 1100" stroke-width="3" opacity="0.25"/>
+  </g>
+  <g transform="rotate(3 1800 600)">
+    <path d="M 1900 -50 C 2100 100, 2200 350, 2100 600 S 1850 900, 1920 1150 C 1980 1350, 2150 1450, 2100 1700" fill="none" stroke="#be2edd" stroke-width="6" stroke-linecap="round" opacity="0.2"/>
+  </g>
+  <g fill="#f59e0b" opacity="0.6">
+    <circle cx="1090" cy="480" r="8"/>
+    <circle cx="1090" cy="580" r="8"/>
+    <circle cx="1090" cy="680" r="8"/>
+    <circle cx="1090" cy="880" r="6"/>
+    <circle cx="1090" cy="980" r="6"/>
+    <circle cx="1090" cy="1080" r="6"/>
+  </g>
+  <path d="M 1050 400 L 1050 1150" stroke="#e0e0e0" stroke-width="2" stroke-linecap="round" opacity="0.12"/>
+  <path d="M 400 -100 C 600 200, 700 600, 600 1000 S 400 1400, 500 1700" fill="none" stroke="#be2edd" stroke-width="18" stroke-linecap="round" opacity="0.06"/>
+</svg>

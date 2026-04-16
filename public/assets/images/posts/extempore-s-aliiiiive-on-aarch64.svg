@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#be2edd"/>
+      <stop offset="100%" stop-color="#be2edd" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1422" cy="800" rx="1100" ry="800" fill="url(#coreGlow)" opacity="0.5"/>
+  <g opacity="0.6">
+    <path d="M-100 200 C400 100, 900 300, 1422 200 C1944 100, 2444 300, 2950 200" fill="none" stroke="url(#wave1)" stroke-width="12"/>
+    <path d="M-100 330 C400 230, 900 430, 1422 330 C1944 230, 2444 430, 2950 330" fill="none" stroke="url(#wave1)" stroke-width="9"/>
+    <path d="M-100 460 C400 360, 900 560, 1422 460 C1944 360, 2444 560, 2950 460" fill="none" stroke="url(#wave2)" stroke-width="14"/>
+    <path d="M-100 590 C400 490, 900 690, 1422 590 C1944 490, 2444 690, 2950 590" fill="none" stroke="url(#wave1)" stroke-width="10"/>
+    <path d="M-100 720 C400 620, 900 820, 1422 720 C1944 620, 2444 820, 2950 720" fill="none" stroke="url(#wave3)" stroke-width="16"/>
+    <path d="M-100 850 C400 750, 900 950, 1422 850 C1944 750, 2444 950, 2950 850" fill="none" stroke="url(#wave2)" stroke-width="12"/>
+    <path d="M-100 980 C400 880, 900 1080, 1422 980 C1944 880, 2444 1080, 2950 980" fill="none" stroke="url(#wave1)" stroke-width="9"/>
+    <path d="M-100 1110 C400 1010, 900 1210, 1422 1110 C1944 1010, 2444 1210, 2950 1110" fill="none" stroke="url(#wave3)" stroke-width="13"/>
+    <path d="M-100 1240 C400 1140, 900 1340, 1422 1240 C1944 1140, 2444 1340, 2950 1240" fill="none" stroke="url(#wave2)" stroke-width="10"/>
+    <path d="M-100 1370 C400 1270, 900 1470, 1422 1370 C1944 1270, 2444 1470, 2950 1370" fill="none" stroke="url(#wave1)" stroke-width="8"/>
+  </g>
+  <g transform="translate(1422, 800)">
+    <circle r="180" fill="#1a1a1a" stroke="#be2edd" stroke-width="8" opacity="0.9"/>
+    <circle r="130" fill="#be2edd" opacity="0.3"/>
+    <circle r="80" fill="#be2edd" opacity="0.6"/>
+    <g transform="rotate(-30)">
+      <path d="M0,-180 A180,180 0 0,1 156,90" fill="none" stroke="#f59e0b" stroke-width="6" opacity="0.8"/>
+      <path d="M0,-180 A180,180 0 0,0 -156,90" fill="none" stroke="#3b82f6" stroke-width="4" opacity="0.6"/>
+    </g>
+    <path d="M-40 -20 L0 -60 L40 -20 L20 -20 L20 40 L-20 40 L-20 -20 Z" fill="#f59e0b" opacity="0.9"/>
+  </g>
+  <g opacity="0.3">
+    <circle cx="400" cy="400" r="80" fill="none" stroke="#9b1fb8" stroke-width="5"/>
+    <circle cx="400" cy="400" r="40" fill="#9b1fb8" opacity="0.4"/>
+    <circle cx="2440" cy="500" r="60" fill="none" stroke="#9b1fb8" stroke-width="4"/>
+    <circle cx="2440" cy="500" r="30" fill="#9b1fb8" opacity="0.4"/>
+    <circle cx="350" cy="1300" r="70" fill="none" stroke="#9b1fb8" stroke-width="4"/>
+    <circle cx="2500" cy="1200" r="90" fill="none" stroke="#9b1fb8" stroke-width="5"/>
+  </g>
+</svg>

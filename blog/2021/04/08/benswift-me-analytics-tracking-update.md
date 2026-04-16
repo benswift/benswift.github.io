@@ -4,6 +4,7 @@ description: "I've added counter.dev as a lightweight, relatively un-invasive an
   tool. Ad-blocker users still welcome."
 tags:
   - dev
+image: /assets/images/posts/benswift-me-analytics-tracking-update.svg
 ---
 
 I haven't had any sort of client-side analytics (e.g. Google Analytics) on

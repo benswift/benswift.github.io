@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <radialGradient id="crowd" cx="0.75" cy="0.75" r="0.4">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coder" cx="0.25" cy="0.35" r="0.35">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#coder)" width="2844" height="1600"/>
+  <rect fill="url(#crowd)" width="2844" height="1600"/>
+  <g opacity="0.1" fill="none" stroke="#3b82f6" stroke-width="1">
+    <path d="M 100 300 C 180 260, 260 280, 340 250 S 480 220, 560 260"/>
+    <path d="M 80 400 C 160 360, 240 380, 320 350 S 460 320, 540 360"/>
+    <path d="M 120 500 C 200 460, 280 480, 360 450 S 500 420, 580 460"/>
+    <path d="M 100 600 C 180 560, 260 580, 340 550 S 480 520, 560 560"/>
+    <path d="M 80 700 C 160 660, 240 680, 320 650 S 460 620, 540 660"/>
+  </g>
+  <g fill="none" stroke="url(#flow)" stroke-linecap="round">
+    <path d="M 700 520 C 1000 480, 1300 500, 1600 490 S 2000 510, 2200 490" stroke-width="3" opacity="0.35"/>
+    <path d="M 680 680 C 980 640, 1280 660, 1580 650 S 1980 670, 2180 650" stroke-width="2.5" opacity="0.3"/>
+    <path d="M 720 840 C 1020 800, 1320 820, 1620 810 S 2020 830, 2220 810" stroke-width="2" opacity="0.25"/>
+    <path d="M 700 1000 C 1000 960, 1300 980, 1600 970 S 2000 990, 2200 970" stroke-width="2" opacity="0.2"/>
+  </g>
+  <g transform="rotate(3 1422 800)">
+    <path d="M 600 1200 C 800 900, 1050 750, 1300 800 S 1700 900, 1900 820 C 2050 760, 2200 700, 2350 750 S 2600 850, 2700 800 L 2700 1700 L 600 1700 Z" fill="url(#pulse)" opacity="0.08"/>
+  </g>
+  <g fill="none" stroke="#f59e0b" stroke-linecap="round">
+    <path d="M 1900 1200 C 2000 1100, 2100 1050, 2150 1000 C 2200 950, 2200 900, 2250 870 C 2300 840, 2350 850, 2400 820" stroke-width="3" opacity="0.3"/>
+    <path d="M 1800 1300 C 1920 1180, 2040 1120, 2100 1060 C 2160 1000, 2160 940, 2220 900 C 2280 860, 2340 870, 2400 840" stroke-width="2" opacity="0.22"/>
+    <path d="M 2000 1300 C 2100 1200, 2180 1140, 2220 1080 C 2260 1020, 2250 960, 2300 920" stroke-width="2" opacity="0.2"/>
+    <path d="M 2100 1400 C 2180 1300, 2250 1240, 2280 1180 C 2310 1120, 2300 1060, 2350 1020" stroke-width="1.5" opacity="0.18"/>
+  </g>
+  <g fill="#f59e0b" opacity="0.4">
+    <circle cx="2100" cy="1350" r="10"/>
+    <circle cx="2250" cy="1280" r="8"/>
+    <circle cx="2050" cy="1200" r="9"/>
+    <circle cx="2300" cy="1200" r="7"/>
+    <circle cx="2150" cy="1100" r="8"/>
+    <circle cx="2400" cy="1130" r="6"/>
+    <circle cx="2000" cy="1080" r="7"/>
+    <circle cx="2350" cy="1050" r="6"/>
+    <circle cx="2200" cy="980" r="8"/>
+    <circle cx="2450" cy="1000" r="5"/>
+    <circle cx="2100" cy="920" r="6"/>
+    <circle cx="2280" cy="890" r="7"/>
+    <circle cx="2500" cy="880" r="5"/>
+  </g>
+  <g fill="#be2edd" opacity="0.5">
+    <circle cx="350" cy="350" r="6"/>
+    <circle cx="420" cy="420" r="5"/>
+    <circle cx="290" cy="480" r="4"/>
+    <circle cx="480" cy="380" r="5"/>
+    <circle cx="380" cy="520" r="4"/>
+    <circle cx="320" cy="290" r="4"/>
+    <circle cx="460" cy="300" r="5"/>
+  </g>
+  <g fill="none" stroke="#be2edd" stroke-linecap="round" opacity="0.4">
+    <path d="M 350 500 C 500 450, 650 460, 800 440 S 950 430, 1050 450" stroke-width="4"/>
+    <path d="M 350 550 C 500 500, 650 510, 800 490 S 950 480, 1050 500" stroke-width="3"/>
+    <path d="M 350 600 C 500 550, 650 560, 800 540 S 950 530, 1050 550" stroke-width="2.5"/>
+  </g>
+  <path d="M 1050 455 C 1250 440, 1450 450, 1650 435" fill="none" stroke="#be2edd" stroke-width="3" opacity="0.3" stroke-linecap="round"/>
+  <path d="M 1650 430 C 1850 420, 2000 450, 2100 900" fill="none" stroke="url(#pulse)" stroke-width="2" opacity="0.2" stroke-linecap="round"/>
+  <path d="M 2150 980 C 2050 1100, 1900 1250, 1500 1300 S 900 1250, 700 1200 C 550 1160, 420 1050, 350 600" fill="none" stroke="url(#flow)" stroke-width="2" opacity="0.15" stroke-linecap="round"/>
+</svg>

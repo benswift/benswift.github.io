@@ -4,6 +4,7 @@ description: "A simple trick for making Altair chart text and marks bigger: set 
   width/height and export to SVG."
 tags:
   - dev
+image: /assets/images/posts/making-altair-vega-lite-charts-readable-without-squinting.svg
 ---
 
 My love for the

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="slowBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9b1fb8"/>
+      <stop offset="100%" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="fastBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="zapGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="timeFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0e0e0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#e0e0e0" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e0e0e0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect x="0" y="0" width="2844" height="1600" fill="url(#timeFlow)" opacity="0.5"/>
+  <g opacity="0.18">
+    <line x1="0" y1="300" x2="2844" y2="300" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="0" y1="600" x2="2844" y2="600" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="0" y1="900" x2="2844" y2="900" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="0" y1="1200" x2="2844" y2="1200" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="1600" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="1600" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1200" y2="1600" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1600" y1="0" x2="1600" y2="1600" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="2000" y1="0" x2="2000" y2="1600" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="2400" y1="0" x2="2400" y2="1600" stroke="#e0e0e0" stroke-width="1"/>
+  </g>
+  <g opacity="0.75">
+    <rect x="200" y="420" width="1800" height="100" rx="12" fill="url(#slowBar)"/>
+    <rect x="200" y="560" width="1800" height="70" rx="10" fill="url(#slowBar)" opacity="0.7"/>
+    <rect x="200" y="670" width="1800" height="50" rx="8" fill="url(#slowBar)" opacity="0.5"/>
+  </g>
+  <ellipse cx="2050" cy="820" rx="350" ry="350" fill="url(#zapGlow)"/>
+  <g transform="translate(2050, 820)">
+    <path d="M60,-140 L-30,-20 L40,-20 L-60,140 L30,20 L-40,20 Z" fill="#f59e0b" opacity="0.95"/>
+    <path d="M80,-170 L-38,-25 L52,-25 L-75,170 L38,25 L-52,25 Z" fill="none" stroke="#f59e0b" stroke-width="6" opacity="0.4"/>
+  </g>
+  <g opacity="0.7">
+    <rect x="200" y="980" width="300" height="90" rx="12" fill="url(#fastBar)"/>
+    <rect x="200" y="1110" width="300" height="65" rx="10" fill="url(#fastBar)" opacity="0.8"/>
+    <rect x="200" y="1215" width="300" height="45" rx="8" fill="url(#fastBar)" opacity="0.6"/>
+  </g>
+  <g opacity="0.4">
+    <path d="M500 1025 C900 980, 1400 1020, 1900 990 C2200 970, 2500 995, 2750 980" fill="none" stroke="#3b82f6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M500 1143 C900 1098, 1400 1138, 1900 1108 C2200 1088, 2500 1113, 2750 1098" fill="none" stroke="#3b82f6" stroke-width="4" stroke-linecap="round"/>
+    <path d="M500 1238 C900 1193, 1400 1233, 1900 1203 C2200 1183, 2500 1208, 2750 1193" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.3">
+    <path d="M-50 150 C400 100, 900 200, 1400 130 C1900 60, 2400 160, 2950 90" fill="none" stroke="#9b1fb8" stroke-width="50" stroke-linecap="round"/>
+    <path d="M-50 1500 C400 1450, 900 1550, 1400 1480 C1900 1410, 2400 1510, 2950 1440" fill="none" stroke="#9b1fb8" stroke-width="35" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.5">
+    <line x1="200" y1="380" x2="200" y2="1280" stroke="#e0e0e0" stroke-width="4"/>
+    <line x1="180" y1="380" x2="220" y2="380" stroke="#e0e0e0" stroke-width="4"/>
+    <line x1="180" y1="1280" x2="220" y2="1280" stroke="#e0e0e0" stroke-width="4"/>
+  </g>
+</svg>

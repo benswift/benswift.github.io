@@ -5,6 +5,7 @@ description: "Five reasons to take COMP1720, ANU's art-with-code course---now us
 tags:
   - teaching
   - dev
+image: /assets/images/posts/comp1720-teaser.svg
 ---
 
 If you're an ANU student and you want to learn how to make art with code, then

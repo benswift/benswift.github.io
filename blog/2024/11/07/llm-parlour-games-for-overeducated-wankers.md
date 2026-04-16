@@ -5,6 +5,7 @@ description: "Workshop materials for designing and playing parlour games with LL
 tags:
   - teaching
   - ai
+image: /assets/images/posts/llm-parlour-games-for-overeducated-wankers.svg
 ---
 
 _Note: this stuff is the workshop content for an alumni workshop in November

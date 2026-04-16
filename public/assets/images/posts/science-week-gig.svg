@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="1"/>
+      <stop offset="0.3" stop-color="#be2edd" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="ringAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <circle cx="1422" cy="800" r="1600" fill="url(#pulse)" opacity="0.4"/>
+  <g transform="rotate(-3 1422 800)">
+    <ellipse cx="1422" cy="800" rx="1400" ry="700" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.2"/>
+    <ellipse cx="1422" cy="800" rx="1100" ry="550" fill="none" stroke="#be2edd" stroke-width="1.5" opacity="0.25"/>
+    <ellipse cx="1422" cy="800" rx="800" ry="400" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+    <ellipse cx="1422" cy="800" rx="550" ry="275" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.35"/>
+    <ellipse cx="1422" cy="800" rx="350" ry="175" fill="none" stroke="#be2edd" stroke-width="2.5" opacity="0.5"/>
+    <ellipse cx="1422" cy="800" rx="200" ry="100" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0.65"/>
+  </g>
+  <g transform="rotate(5 1422 800)">
+    <path d="M -200 800 C 200 600, 600 700, 1000 640 S 1422 560, 1844 640 S 2244 700, 2844 600 L 2844 900 C 2444 1000, 2044 900, 1644 960 S 1422 1040, 1200 960 S 800 900, 400 1000 L -200 900 Z" fill="#be2edd" opacity="0.12"/>
+  </g>
+  <g transform="rotate(-6 1422 800)">
+    <path d="M 100 740 C 400 620, 700 680, 1000 640 S 1300 580, 1600 640 S 1900 700, 2200 660 S 2500 600, 2744 660" stroke="url(#ringBlue)" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M 100 860 C 400 740, 700 800, 1000 760 S 1300 700, 1600 760 S 1900 820, 2200 780 S 2500 720, 2744 780" stroke="url(#ringBlue)" stroke-width="3" fill="none" opacity="0.6"/>
+  </g>
+  <g transform="rotate(4 1422 800)">
+    <path d="M 200 700 C 500 580, 800 640, 1100 600 S 1400 540, 1700 600 S 2000 660, 2300 620 S 2600 560, 2844 620" stroke="url(#ringAmber)" stroke-width="2.5" fill="none" opacity="0.55"/>
+    <path d="M 200 900 C 500 780, 800 840, 1100 800 S 1400 740, 1700 800 S 2000 860, 2300 820 S 2600 760, 2844 820" stroke="url(#ringAmber)" stroke-width="2.5" fill="none" opacity="0.55"/>
+  </g>
+  <circle cx="1422" cy="800" r="80" fill="#f59e0b" opacity="0.95"/>
+  <circle cx="1422" cy="800" r="50" fill="#e0e0e0" opacity="0.9"/>
+  <circle cx="1422" cy="800" r="25" fill="#1a1a1a" opacity="1"/>
+  <g opacity="0.5">
+    <circle cx="1422" cy="525" r="10" fill="#be2edd"/>
+    <circle cx="1422" cy="1075" r="10" fill="#be2edd"/>
+    <circle cx="1147" cy="800" r="8" fill="#3b82f6"/>
+    <circle cx="1697" cy="800" r="8" fill="#3b82f6"/>
+    <circle cx="1228" cy="606" r="6" fill="#f59e0b"/>
+    <circle cx="1616" cy="606" r="6" fill="#f59e0b"/>
+    <circle cx="1228" cy="994" r="6" fill="#f59e0b"/>
+    <circle cx="1616" cy="994" r="6" fill="#f59e0b"/>
+  </g>
+</svg>

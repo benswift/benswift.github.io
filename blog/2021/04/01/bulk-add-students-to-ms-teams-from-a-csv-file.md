@@ -4,6 +4,7 @@ description: "A PowerShell snippet for bulk-adding students to an MS Teams class
   of email addresses---works on macOS and Linux too."
 tags:
   - dev
+image: /assets/images/posts/bulk-add-students-to-ms-teams-from-a-csv-file.svg
 ---
 
 [My institution](https://anu.edu.au) now uses

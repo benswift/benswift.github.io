@@ -5,10 +5,12 @@ import SiteFooter from "../components/SiteFooter.astro"
 interface Props {
   title?: string
   description?: string
+  image?: string
   relativePath?: string
   frontmatter?: {
     title?: string
     description?: string
+    image?: string
     relativePath?: string
   }
 }
@@ -16,11 +18,22 @@ interface Props {
 const props = Astro.props
 const title = props.title ?? props.frontmatter?.title
 const description = props.description ?? props.frontmatter?.description
+const image = props.image ?? props.frontmatter?.image
 const relativePath = props.relativePath ?? props.frontmatter?.relativePath
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} image={image}>
   {title && <h1 class="page-title">{title}</h1>}
+  {image && <img class="page-hero" src={image} alt="" />}
   <slot />
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>
+
+<style>
+  .page-hero {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 0 8px 8px;
+    margin-bottom: 1rem;
+  }
+</style>

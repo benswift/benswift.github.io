@@ -7,6 +7,7 @@ tags:
   - teaching
   - ai
   - llm
+image: /assets/images/posts/llms-unplugged-teaching-language-models-with-pen-paper-and-dice.svg
 ---
 
 :::tip

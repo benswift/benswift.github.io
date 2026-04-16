@@ -6,6 +6,7 @@ description: "A pointer to my Conversation article on GitHub Copilot and what AI
 tags:
   - dev
   - ai
+image: /assets/images/posts/what-githubs-copilot-ai-assistant-means-for-coders.svg
 ---
 
 I wrote [a piece for the Conversation][conversation] about GitHub's new

@@ -4,20 +4,22 @@ import SiteFooter from "../components/SiteFooter.astro"
 
 interface Props {
   description?: string
+  image?: string
+  frontmatter?: {
+    description?: string
+    image?: string
+  }
 }
 
-const { description } = Astro.props
+const props = Astro.props
+const description = props.description ?? props.frontmatter?.description
+const image = props.image ?? props.frontmatter?.image
 ---
 
-<BaseLayout description={description}>
+<BaseLayout description={description} image={image}>
+  {image && <img class="home-hero-svg" src={image} alt="" />}
   <div class="hero">
     <div class="hero-content">
-      <img
-        src="/assets/images/pages/theremin-75.webp"
-        alt="Ben performing live as a musical livecoder"
-        class="hero-image"
-        fetchpriority="high"
-      />
       <div class="hero-text">
         <h1 class="hero-name">Ben Swift</h1>
         <p class="hero-tagline">researcher, educator, artist, developer</p>
@@ -54,23 +56,11 @@ const { description } = Astro.props
     margin-bottom: 2rem;
   }
 
-  .hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  @media (max-width: 640px) {
-    .hero-content {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .hero-image {
+  .home-hero-svg {
     width: 100%;
     height: auto;
     border-radius: 8px 0 8px 8px;
+    margin-bottom: 1.5rem;
   }
 
   .hero-name {

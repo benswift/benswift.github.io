@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#be2edd"/>
+    </linearGradient>
+    <radialGradient id="pkgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rootGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1422" cy="1300" rx="500" ry="200" fill="url(#rootGlow)"/>
+  <line x1="1422" y1="1300" x2="1422" y2="900" stroke="url(#treeGrad)" stroke-width="6" opacity="0.7"/>
+  <line x1="1422" y1="900" x2="800" y2="620" stroke="#3b82f6" stroke-width="4" opacity="0.6"/>
+  <line x1="1422" y1="900" x2="1422" y2="580" stroke="#3b82f6" stroke-width="4" opacity="0.6"/>
+  <line x1="1422" y1="900" x2="2044" y2="620" stroke="#3b82f6" stroke-width="4" opacity="0.6"/>
+  <line x1="800" y1="620" x2="480" y2="380" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <line x1="800" y1="620" x2="800" y2="360" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <line x1="800" y1="620" x2="1100" y2="380" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <line x1="2044" y1="620" x2="1744" y2="380" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <line x1="2044" y1="620" x2="2044" y2="360" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <line x1="2044" y1="620" x2="2344" y2="380" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <line x1="1422" y1="580" x2="1200" y2="360" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <line x1="1422" y1="580" x2="1644" y2="360" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <ellipse cx="480" cy="380" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="480" cy="380" r="40" fill="#1a1a1a" stroke="#9b1fb8" stroke-width="3"/>
+  <rect x="456" y="362" width="48" height="7" rx="3" fill="#9b1fb8" opacity="0.7"/>
+  <rect x="459" y="377" width="40" height="5" rx="2" fill="#e0e0e0" opacity="0.35"/>
+  <rect x="461" y="389" width="36" height="5" rx="2" fill="#e0e0e0" opacity="0.25"/>
+  <ellipse cx="800" cy="360" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="800" cy="360" r="40" fill="#1a1a1a" stroke="#3b82f6" stroke-width="3"/>
+  <rect x="776" y="342" width="48" height="7" rx="3" fill="#3b82f6" opacity="0.7"/>
+  <rect x="779" y="357" width="40" height="5" rx="2" fill="#e0e0e0" opacity="0.35"/>
+  <rect x="781" y="369" width="36" height="5" rx="2" fill="#e0e0e0" opacity="0.25"/>
+  <ellipse cx="1100" cy="380" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="1100" cy="380" r="40" fill="#1a1a1a" stroke="#9b1fb8" stroke-width="3"/>
+  <rect x="1076" y="362" width="48" height="7" rx="3" fill="#9b1fb8" opacity="0.7"/>
+  <rect x="1079" y="377" width="40" height="5" rx="2" fill="#e0e0e0" opacity="0.35"/>
+  <rect x="1081" y="389" width="36" height="5" rx="2" fill="#e0e0e0" opacity="0.25"/>
+  <ellipse cx="1200" cy="360" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="1200" cy="360" r="40" fill="#1a1a1a" stroke="#3b82f6" stroke-width="3"/>
+  <rect x="1176" y="342" width="48" height="7" rx="3" fill="#3b82f6" opacity="0.7"/>
+  <ellipse cx="1644" cy="360" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="1644" cy="360" r="40" fill="#1a1a1a" stroke="#9b1fb8" stroke-width="3"/>
+  <rect x="1620" y="342" width="48" height="7" rx="3" fill="#9b1fb8" opacity="0.7"/>
+  <ellipse cx="1744" cy="380" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="1744" cy="380" r="40" fill="#1a1a1a" stroke="#3b82f6" stroke-width="3"/>
+  <rect x="1720" y="362" width="48" height="7" rx="3" fill="#3b82f6" opacity="0.7"/>
+  <ellipse cx="2044" cy="360" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="2044" cy="360" r="40" fill="#1a1a1a" stroke="#9b1fb8" stroke-width="3"/>
+  <rect x="2020" y="342" width="48" height="7" rx="3" fill="#9b1fb8" opacity="0.7"/>
+  <ellipse cx="2344" cy="380" rx="55" ry="55" fill="url(#pkgGlow)"/>
+  <circle cx="2344" cy="380" r="40" fill="#1a1a1a" stroke="#3b82f6" stroke-width="3"/>
+  <rect x="2320" y="362" width="48" height="7" rx="3" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="800" cy="620" r="60" fill="#1a1a1a" stroke="#3b82f6" stroke-width="4"/>
+  <rect x="764" y="598" width="72" height="9" rx="4" fill="#3b82f6" opacity="0.7"/>
+  <rect x="769" y="616" width="60" height="7" rx="3" fill="#e0e0e0" opacity="0.4"/>
+  <rect x="773" y="631" width="52" height="7" rx="3" fill="#e0e0e0" opacity="0.3"/>
+  <circle cx="1422" cy="580" r="60" fill="#1a1a1a" stroke="#3b82f6" stroke-width="4"/>
+  <rect x="1386" y="558" width="72" height="9" rx="4" fill="#3b82f6" opacity="0.7"/>
+  <rect x="1391" y="576" width="60" height="7" rx="3" fill="#e0e0e0" opacity="0.4"/>
+  <circle cx="2044" cy="620" r="60" fill="#1a1a1a" stroke="#3b82f6" stroke-width="4"/>
+  <rect x="2008" y="598" width="72" height="9" rx="4" fill="#3b82f6" opacity="0.7"/>
+  <rect x="2013" y="616" width="60" height="7" rx="3" fill="#e0e0e0" opacity="0.4"/>
+  <rect x="2017" y="631" width="52" height="7" rx="3" fill="#e0e0e0" opacity="0.3"/>
+  <ellipse cx="1422" cy="1300" rx="120" ry="120" fill="url(#rootGlow)"/>
+  <circle cx="1422" cy="1300" r="90" fill="#1a1a1a" stroke="#f59e0b" stroke-width="5"/>
+  <rect x="1380" y="1274" width="84" height="12" rx="5" fill="#f59e0b" opacity="0.8"/>
+  <rect x="1384" y="1294" width="70" height="9" rx="4" fill="#e0e0e0" opacity="0.5"/>
+  <rect x="1388" y="1311" width="62" height="9" rx="4" fill="#e0e0e0" opacity="0.4"/>
+  <circle cx="1422" cy="900" r="70" fill="#1a1a1a" stroke="#be2edd" stroke-width="4"/>
+  <rect x="1386" y="878" width="72" height="10" rx="4" fill="#be2edd" opacity="0.7"/>
+  <rect x="1390" y="897" width="60" height="7" rx="3" fill="#e0e0e0" opacity="0.4"/>
+  <rect x="1393" y="912" width="52" height="7" rx="3" fill="#e0e0e0" opacity="0.3"/>
+  <path d="M 1422 380 C 1422 340, 1460 310, 1500 290 S 1560 280, 1580 260" stroke="#f59e0b" stroke-width="3" fill="none" opacity="0.4" stroke-dasharray="12 6"/>
+  <path d="M 800 360 C 780 330, 800 300, 820 280 S 850 265, 860 240" stroke="#f59e0b" stroke-width="3" fill="none" opacity="0.4" stroke-dasharray="12 6"/>
+</svg>

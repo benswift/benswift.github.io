@@ -4,6 +4,7 @@ description: "A quick tidyverse R script for parsing Zoom attendance CSVs and vi
   per-participant call duration with ggplot2."
 tags:
   - dev
+image: /assets/images/posts/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r.svg
 ---
 
 My team ran some Zoom training last week and today I needed to figure out who

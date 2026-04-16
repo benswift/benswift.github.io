@@ -7,6 +7,7 @@ tags:
   - teaching
   - research
   - cybernetics
+image: /assets/images/posts/moving-to-the-school-of-cybernetics.svg
 ---
 
 Some job news---I've just accepted a position in the new

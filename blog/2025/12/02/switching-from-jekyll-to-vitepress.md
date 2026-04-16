@@ -3,6 +3,7 @@ title: "Switching from Jekyll to VitePress"
 description: "After ten years on Jekyll, I moved this site to VitePress. Notes on migrating
   content, components, reveal.js slides, and data loading."
 tags: [dev, web]
+image: /assets/images/posts/switching-from-jekyll-to-vitepress.svg
 ---
 
 This site has run on Jekyll since 2014 (or even before, I think; but some

@@ -5,6 +5,7 @@ description: "How to get org-roam, org-roam-bibtex and org-noter working togethe
 tags:
   - research
   - dev
+image: /assets/images/posts/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss.svg
 ---
 
 I've always had a decent memory, and so I've never really had a formal system

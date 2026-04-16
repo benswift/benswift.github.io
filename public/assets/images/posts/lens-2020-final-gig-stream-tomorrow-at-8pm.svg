@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="warmth" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="stage" cx="0.5" cy="0.65" r="0.55">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#stage)" width="2844" height="1600"/>
+  <g opacity="0.22">
+    <path d="M 800 -100 C 900 200, 950 500, 1000 800 S 1050 1200, 1100 1700" fill="none" stroke="#be2edd" stroke-width="120" stroke-linecap="round"/>
+    <path d="M 1422 -100 C 1422 300, 1422 600, 1422 800 S 1422 1200, 1422 1700" fill="none" stroke="#be2edd" stroke-width="160" stroke-linecap="round"/>
+    <path d="M 2050 -100 C 1950 200, 1900 500, 1850 800 S 1800 1200, 1750 1700" fill="none" stroke="#be2edd" stroke-width="100" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.18">
+    <path d="M 400 -100 C 500 200, 550 500, 600 800 S 620 1200, 650 1700" fill="none" stroke="#f59e0b" stroke-width="60" stroke-linecap="round"/>
+    <path d="M 2450 -100 C 2350 200, 2300 500, 2280 800 S 2260 1200, 2240 1700" fill="none" stroke="#f59e0b" stroke-width="50" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.15">
+    <path d="M 200 -100 C 280 200, 300 500, 320 800 S 340 1200, 350 1700" fill="none" stroke="#3b82f6" stroke-width="40" stroke-linecap="round"/>
+    <path d="M 2650 -100 C 2560 200, 2540 500, 2520 800 S 2510 1200, 2500 1700" fill="none" stroke="#3b82f6" stroke-width="36" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.5">
+    <path d="M -200 1350 C 400 1250, 900 1300, 1422 1220 S 2100 1150, 2900 1200 L 2900 1700 L -200 1700 Z" fill="#1a1a1a"/>
+    <path d="M -200 1350 C 400 1250, 900 1300, 1422 1220 S 2100 1150, 2900 1200" fill="none" stroke="#be2edd" stroke-width="5" opacity="0.45"/>
+  </g>
+  <g opacity="0.35">
+    <circle cx="700" cy="1380" r="18" fill="#f59e0b"/>
+    <circle cx="1000" cy="1340" r="22" fill="#f59e0b"/>
+    <circle cx="1300" cy="1290" r="25" fill="#be2edd"/>
+    <circle cx="1600" cy="1280" r="22" fill="#be2edd"/>
+    <circle cx="1900" cy="1310" r="18" fill="#f59e0b"/>
+    <circle cx="2200" cy="1350" r="20" fill="#3b82f6"/>
+  </g>
+  <g transform="translate(0 -80)" opacity="0.35">
+    <circle cx="1422" cy="550" r="80" fill="url(#glow)"/>
+    <circle cx="1422" cy="550" r="120" fill="none" stroke="#be2edd" stroke-width="4" opacity="0.4"/>
+    <circle cx="1422" cy="550" r="170" fill="none" stroke="#be2edd" stroke-width="2" opacity="0.2"/>
+    <polygon points="1400,520 1450,550 1400,580" fill="#f59e0b" opacity="0.9"/>
+  </g>
+  <g fill="none" stroke="#e0e0e0" stroke-linecap="round" opacity="0.08">
+    <path d="M 100 200 C 400 180, 700 200, 1000 185 S 1400 170, 1700 185 S 2100 170, 2500 185 S 2750 170, 2900 180" stroke-width="2"/>
+    <path d="M -100 400 C 300 380, 700 400, 1100 385 S 1500 370, 1900 385 S 2300 370, 2700 385" stroke-width="1.5"/>
+  </g>
+</svg>

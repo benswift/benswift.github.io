@@ -4,6 +4,7 @@ description: "How to set up 11ty with Vite and Tailwind v4 for static sites that
   proper asset bundling, HMR, and npm ecosystem access."
 tags:
   - dev
+image: /assets/images/posts/11ty-and-vite-for-modern-static-websites.svg
 ---
 
 I've been using [11ty](https://www.11ty.dev/) for static site generation for a

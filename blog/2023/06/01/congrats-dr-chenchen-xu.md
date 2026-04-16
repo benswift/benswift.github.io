@@ -5,6 +5,7 @@ description: "Celebrating Chenchen Xu's PhD on weakly supervised sign language
 tags:
   - research
   - ai
+image: /assets/images/posts/congrats-dr-chenchen-xu.svg
 ---
 
 A big congratulations to my PhD student Chenchen for successfully completing his

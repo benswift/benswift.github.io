@@ -5,6 +5,7 @@ description: "A guide to running Elixir/Nerves on Seeed's reTerminal DM with its
   you'll need for touch input."
 tags:
   - dev
+image: /assets/images/posts/reterminal-dm-nerves-kiosk.svg
 ---
 
 The [Neon Perceptron](https://github.com/ANUcybernetics/neon-perceptron) is a

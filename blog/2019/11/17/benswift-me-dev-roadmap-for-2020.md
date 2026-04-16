@@ -4,6 +4,7 @@ description: "My plans for this website in 2020: Jekyll 4, maybe Eleventy, maybe
   maybe Tailwind."
 tags:
   - dev
+image: /assets/images/posts/benswift-me-dev-roadmap-for-2020.svg
 ---
 
 As a developer of web tech curricula (specifically 2D graphics & interaction

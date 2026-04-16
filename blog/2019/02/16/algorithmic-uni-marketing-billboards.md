@@ -4,6 +4,7 @@ description: "A generative 'verb your verb' billboard that picks random verbs an
   backgrounds, built with reveal.js and later rewritten in ClojureScript."
 tags:
   - dev
+image: /assets/images/posts/algorithmic-uni-marketing-billboards.svg
 ---
 
 In the spirit of Murdoch University's

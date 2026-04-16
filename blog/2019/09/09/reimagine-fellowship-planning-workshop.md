@@ -4,6 +4,7 @@ description: "A rough map of the people, structures and processes already in pla
   c/c/c studio takes shape."
 tags:
   - reimagine
+image: /assets/images/posts/reimagine-fellowship-planning-workshop.svg
 ---
 
 I'm now a [Reimagine Fellow](/blog/2019/08/30/im-a-reimagine-fellow/) and stuff

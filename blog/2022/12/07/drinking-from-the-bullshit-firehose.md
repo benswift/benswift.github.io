@@ -6,6 +6,7 @@ description: "Draft notes on AI-generated bullshit in higher education---the pro
 tags:
   - ai
   - teaching
+image: /assets/images/posts/drinking-from-the-bullshit-firehose.svg
 ---
 
 https://stratechery.com/2022/ai-homework/

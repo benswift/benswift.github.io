@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="bloomA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="bloomB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="bloomC" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <path d="M -100 1300 C 300 1150, 700 1250, 1100 1200 S 1700 1100, 2100 1180 S 2600 1280, 2944 1180 L 2944 1700 L -100 1700 Z" fill="url(#ground)" opacity="0.6"/>
+  <g transform="translate(400 800) rotate(-5 0 0)">
+    <path d="M 0 0 C -80 -150, -200 -200, -220 -350 S -100 -500, 0 -480 S 100 -500, 220 -350 S 280 -200, 0 0 Z" fill="url(#bloomA)" opacity="0.75"/>
+    <path d="M 0 0 C 150 -80, 280 -60, 360 -180 S 360 -380, 220 -350 S 80 -500, 0 -480 Z" fill="url(#bloomB)" opacity="0.6"/>
+    <circle cx="0" cy="-480" r="55" fill="#f59e0b" opacity="0.9"/>
+  </g>
+  <g transform="translate(1000 750) rotate(4 0 0)">
+    <path d="M 0 0 C -100 -120, -280 -100, -340 -240 S -300 -440, -160 -420 S -20 -540, 0 -520 S 20 -540, 160 -420 S 340 -440, 340 -240 S 280 -100, 0 0 Z" fill="url(#bloomC)" opacity="0.7"/>
+    <circle cx="0" cy="-520" r="45" fill="#be2edd" opacity="0.85"/>
+  </g>
+  <g transform="translate(1600 820) rotate(-3 0 0)">
+    <path d="M 0 0 C -120 -100, -300 -80, -380 -220 S -340 -440, -180 -400 S -40 -540, 0 -520 S 40 -540, 180 -400 S 380 -440, 380 -220 S 300 -80, 0 0 Z" fill="url(#bloomA)" opacity="0.65"/>
+    <path d="M 0 0 C 100 -100, 240 -120, 300 -240 S 280 -400, 160 -380 S 40 -520, 0 -520 Z" fill="url(#bloomB)" opacity="0.5"/>
+    <circle cx="0" cy="-520" r="50" fill="#3b82f6" opacity="0.9"/>
+  </g>
+  <g transform="translate(2200 860) rotate(6 0 0)">
+    <path d="M 0 0 C -90 -110, -250 -90, -310 -230 S -260 -430, -120 -400 S -30 -520, 0 -500 S 30 -520, 120 -400 S 310 -430, 310 -230 S 250 -90, 0 0 Z" fill="url(#bloomC)" opacity="0.72"/>
+    <circle cx="0" cy="-500" r="42" fill="#f59e0b" opacity="0.88"/>
+  </g>
+  <g transform="translate(700 900) rotate(2 0 0)" opacity="0.5">
+    <path d="M 0 0 C -60 -90, -160 -80, -190 -180 S -150 -320, -60 -300 S -10 -380, 0 -370 S 10 -380, 60 -300 S 190 -320, 190 -180 S 160 -80, 0 0 Z" fill="#9b1fb8" opacity="0.6"/>
+    <circle cx="0" cy="-370" r="30" fill="#be2edd" opacity="0.7"/>
+  </g>
+  <g transform="translate(1900 880) rotate(-4 0 0)" opacity="0.5">
+    <path d="M 0 0 C -60 -90, -160 -80, -190 -180 S -150 -320, -60 -300 S -10 -380, 0 -370 S 10 -380, 60 -300 S 190 -320, 190 -180 S 160 -80, 0 0 Z" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="0" cy="-370" r="28" fill="#3b82f6" opacity="0.65"/>
+  </g>
+  <g opacity="0.2">
+    <circle cx="400" cy="320" r="140" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="1000" cy="230" r="110" fill="none" stroke="#be2edd" stroke-width="1.5"/>
+    <circle cx="1600" cy="300" r="130" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="2200" cy="360" r="120" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+</svg>

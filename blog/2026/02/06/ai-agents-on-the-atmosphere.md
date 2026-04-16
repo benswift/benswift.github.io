@@ -5,6 +5,7 @@ description: "Stateful AI agents are showing up on Bluesky and ATproto---with so
 published: true
 tags:
   - ai
+image: /assets/images/posts/ai-agents-on-the-atmosphere.svg
 ---
 
 I've been writing about agentic AI for a while now---from

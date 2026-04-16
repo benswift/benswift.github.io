@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="purpleBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#be2edd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amberDeep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <radialGradient id="burstGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#be2edd" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#burstGlow)" width="2844" height="1600"/>
+  <g stroke="#f59e0b" stroke-opacity="0.35" fill="none">
+    <line x1="1422" y1="720" x2="1422" y2="100" stroke-width="5"/>
+    <line x1="1422" y1="720" x2="2042" y2="183" stroke-width="4"/>
+    <line x1="1422" y1="720" x2="2422" y2="540" stroke-width="4"/>
+    <line x1="1422" y1="720" x2="2522" y2="900" stroke-width="3.5"/>
+    <line x1="1422" y1="720" x2="2300" y2="1260" stroke-width="3.5"/>
+    <line x1="1422" y1="720" x2="1900" y2="1480" stroke-width="3"/>
+    <line x1="1422" y1="720" x2="1422" y2="1500" stroke-width="3"/>
+    <line x1="1422" y1="720" x2="944" y2="1480" stroke-width="3"/>
+    <line x1="1422" y1="720" x2="544" y2="1260" stroke-width="3.5"/>
+    <line x1="1422" y1="720" x2="322" y2="900" stroke-width="3.5"/>
+    <line x1="1422" y1="720" x2="422" y2="540" stroke-width="4"/>
+    <line x1="1422" y1="720" x2="802" y2="183" stroke-width="4"/>
+  </g>
+  <g stroke="#be2edd" stroke-opacity="0.2" fill="none">
+    <line x1="1422" y1="720" x2="1422" y2="280" stroke-width="3"/>
+    <line x1="1422" y1="720" x2="1780" y2="360" stroke-width="2.5"/>
+    <line x1="1422" y1="720" x2="2000" y2="620" stroke-width="2.5"/>
+    <line x1="1422" y1="720" x2="2100" y2="900" stroke-width="2"/>
+    <line x1="1422" y1="720" x2="1960" y2="1140" stroke-width="2"/>
+    <line x1="1422" y1="720" x2="1700" y2="1360" stroke-width="2"/>
+    <line x1="1422" y1="720" x2="1144" y2="1360" stroke-width="2"/>
+    <line x1="1422" y1="720" x2="884" y2="1140" stroke-width="2"/>
+    <line x1="1422" y1="720" x2="744" y2="900" stroke-width="2"/>
+    <line x1="1422" y1="720" x2="844" y2="620" stroke-width="2.5"/>
+    <line x1="1422" y1="720" x2="1064" y2="360" stroke-width="2.5"/>
+  </g>
+  <circle cx="1422" cy="720" r="150" fill="#f59e0b" fill-opacity="0.15"/>
+  <circle cx="1422" cy="720" r="150" fill="none" stroke="#f59e0b" stroke-width="6"/>
+  <circle cx="1422" cy="720" r="90" fill="#f59e0b" fill-opacity="0.2"/>
+  <circle cx="1422" cy="720" r="40" fill="#f59e0b" fill-opacity="0.5"/>
+  <g fill="#f59e0b" fill-opacity="0.7">
+    <circle cx="1422" cy="100" r="22"/>
+    <circle cx="2042" cy="183" r="20"/>
+    <circle cx="2422" cy="540" r="20"/>
+    <circle cx="2522" cy="900" r="18"/>
+    <circle cx="2300" cy="1260" r="18"/>
+    <circle cx="1900" cy="1480" r="18"/>
+    <circle cx="1422" cy="1500" r="22"/>
+    <circle cx="944" cy="1480" r="18"/>
+    <circle cx="544" cy="1260" r="18"/>
+    <circle cx="322" cy="900" r="18"/>
+    <circle cx="422" cy="540" r="20"/>
+    <circle cx="802" cy="183" r="20"/>
+  </g>
+  <g fill="#be2edd" fill-opacity="0.5">
+    <circle cx="1422" cy="280" r="14"/>
+    <circle cx="1780" cy="360" r="13"/>
+    <circle cx="2000" cy="620" r="13"/>
+    <circle cx="2100" cy="900" r="12"/>
+    <circle cx="1960" cy="1140" r="12"/>
+    <circle cx="1700" cy="1360" r="12"/>
+    <circle cx="1144" cy="1360" r="12"/>
+    <circle cx="884" cy="1140" r="12"/>
+    <circle cx="744" cy="900" r="12"/>
+    <circle cx="844" cy="620" r="13"/>
+    <circle cx="1064" cy="360" r="13"/>
+  </g>
+  <path d="M 0,1400 C 500,1300 1000,1480 1422,1380 C 1844,1280 2400,1450 2844,1350 L 2844,1600 L 0,1600 Z" fill="#9b1fb8" fill-opacity="0.07"/>
+</svg>

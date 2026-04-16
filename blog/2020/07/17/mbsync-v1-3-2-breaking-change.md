@@ -4,6 +4,7 @@ description: "The mbsync 1.3.2 update silently requires a SubFolders setting. He
   fix, plus a bonus mu4e prettifier."
 tags:
   - dev
+image: /assets/images/posts/mbsync-v1-3-2-breaking-change.svg
 ---
 
 As part of my ongoing quest to Emacs-all-the-things, I'm a long-time satisfied

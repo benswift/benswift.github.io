@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="unpluggGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#be2edd"/>
+    </linearGradient>
+    <radialGradient id="unpluggGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1422" cy="800" rx="1300" ry="750" fill="url(#unpluggGlow)"/>
+  <g fill="none" stroke="#e0e0e0" stroke-width="1.5" opacity="0.1">
+    <line x1="300" y1="0" x2="300" y2="1600"/>
+    <line x1="600" y1="0" x2="600" y2="1600"/>
+    <line x1="900" y1="0" x2="900" y2="1600"/>
+    <line x1="1200" y1="0" x2="1200" y2="1600"/>
+    <line x1="1500" y1="0" x2="1500" y2="1600"/>
+    <line x1="1800" y1="0" x2="1800" y2="1600"/>
+    <line x1="2100" y1="0" x2="2100" y2="1600"/>
+    <line x1="2400" y1="0" x2="2400" y2="1600"/>
+    <line x1="0" y1="300" x2="2844" y2="300"/>
+    <line x1="0" y1="600" x2="2844" y2="600"/>
+    <line x1="0" y1="900" x2="2844" y2="900"/>
+    <line x1="0" y1="1200" x2="2844" y2="1200"/>
+  </g>
+  <g opacity="0.7">
+    <circle cx="450" cy="500" r="55" fill="none" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="900" cy="500" r="55" fill="none" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="1350" cy="500" r="55" fill="none" stroke="#3b82f6" stroke-width="4"/>
+    <circle cx="1800" cy="500" r="55" fill="none" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="2250" cy="500" r="55" fill="none" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="675" cy="780" r="55" fill="none" stroke="#be2edd" stroke-width="4"/>
+    <circle cx="1125" cy="780" r="55" fill="none" stroke="#3b82f6" stroke-width="4"/>
+    <circle cx="1575" cy="780" r="55" fill="none" stroke="#be2edd" stroke-width="4"/>
+    <circle cx="2025" cy="780" r="55" fill="none" stroke="#3b82f6" stroke-width="4"/>
+    <circle cx="900" cy="1060" r="55" fill="none" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="1350" cy="1060" r="55" fill="none" stroke="#be2edd" stroke-width="4"/>
+    <circle cx="1800" cy="1060" r="55" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  </g>
+  <g fill="none" stroke="#be2edd" stroke-width="2" opacity="0.5">
+    <line x1="450" y1="555" x2="675" y2="725"/>
+    <line x1="900" y1="555" x2="675" y2="725"/>
+    <line x1="900" y1="555" x2="1125" y2="725"/>
+    <line x1="1350" y1="555" x2="1125" y2="725"/>
+    <line x1="1350" y1="555" x2="1575" y2="725"/>
+    <line x1="1800" y1="555" x2="1575" y2="725"/>
+    <line x1="1800" y1="555" x2="2025" y2="725"/>
+    <line x1="2250" y1="555" x2="2025" y2="725"/>
+    <line x1="675" y1="835" x2="900" y2="1005"/>
+    <line x1="1125" y1="835" x2="900" y2="1005"/>
+    <line x1="1125" y1="835" x2="1350" y2="1005"/>
+    <line x1="1575" y1="835" x2="1350" y2="1005"/>
+    <line x1="1575" y1="835" x2="1800" y2="1005"/>
+    <line x1="2025" y1="835" x2="1800" y2="1005"/>
+  </g>
+  <g opacity="0.5">
+    <circle cx="450" cy="500" r="30" fill="#f59e0b"/>
+    <circle cx="900" cy="500" r="30" fill="#f59e0b"/>
+    <circle cx="1350" cy="500" r="30" fill="#3b82f6"/>
+    <circle cx="1800" cy="500" r="30" fill="#f59e0b"/>
+    <circle cx="2250" cy="500" r="30" fill="#f59e0b"/>
+    <circle cx="675" cy="780" r="30" fill="#be2edd"/>
+    <circle cx="1125" cy="780" r="30" fill="#3b82f6"/>
+    <circle cx="1575" cy="780" r="30" fill="#be2edd"/>
+    <circle cx="2025" cy="780" r="30" fill="#3b82f6"/>
+    <circle cx="900" cy="1060" r="30" fill="#f59e0b"/>
+    <circle cx="1350" cy="1060" r="30" fill="#be2edd"/>
+    <circle cx="1800" cy="1060" r="30" fill="#f59e0b"/>
+  </g>
+</svg>

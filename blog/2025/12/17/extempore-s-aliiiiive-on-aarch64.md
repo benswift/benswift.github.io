@@ -3,6 +3,7 @@ title: "Extempore's aliiiiive on aarch64"
 description: "Extempore now builds and runs on Apple Silicon. The audio libraries work, the
   build process is cleaner, and Rosetta is no longer required for livecoding."
 tags: ["extempore"]
+image: /assets/images/posts/extempore-s-aliiiiive-on-aarch64.svg
 ---
 
 If you're on the [extempore](https://github.com/digego/extempore) mailing list

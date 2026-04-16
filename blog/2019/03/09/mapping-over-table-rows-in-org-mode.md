@@ -4,6 +4,7 @@ description: "How to apply elisp functions to org-mode table rows using named ta
   code blocks, with practical caveats and a Pride and Prejudice example."
 tags:
   - dev
+image: /assets/images/posts/mapping-over-table-rows-in-org-mode.svg
 ---
 
 I'm an [Emacs](https://www.gnu.org/software/emacs/) guy, and so if I've got some

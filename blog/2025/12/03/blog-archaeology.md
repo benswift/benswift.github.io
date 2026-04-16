@@ -3,6 +3,7 @@ title: "Blog archaeology"
 description: "Spelunking through git history to trace this blog from Octopress in 2012
   through two Clojure experiments, six years of Jekyll, and now VitePress."
 tags: [meta]
+image: /assets/images/posts/blog-archaeology.svg
 ---
 
 After the

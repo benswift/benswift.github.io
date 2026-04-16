@@ -4,6 +4,7 @@ description: "A student project idea: real-time handwriting-style code rendering
   livecoding performances, synced to the music."
 tags:
   - teaching
+image: /assets/images/posts/student-project-animated-3d-code-rendering-engine.svg
 ---
 
 :::info

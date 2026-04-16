@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="warmth" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="node-l" cx="0.28" cy="0.5" r="0.35">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="node-r" cx="0.72" cy="0.5" r="0.35">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#node-l)" width="2844" height="1600"/>
+  <rect fill="url(#node-r)" width="2844" height="1600"/>
+  <g transform="rotate(-4 700 800)">
+    <circle cx="700" cy="800" r="280" fill="url(#cool)" opacity="0.22"/>
+    <circle cx="700" cy="800" r="280" fill="none" stroke="#3b82f6" stroke-width="7" opacity="0.5"/>
+    <circle cx="700" cy="800" r="380" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.2"/>
+    <text x="700" y="780" font-family="monospace" font-size="72" fill="#3b82f6" opacity="0.7" text-anchor="middle">Pd</text>
+  </g>
+  <g transform="rotate(4 2150 800)">
+    <circle cx="2150" cy="800" r="280" fill="url(#glow)" opacity="0.22"/>
+    <circle cx="2150" cy="800" r="280" fill="none" stroke="#be2edd" stroke-width="7" opacity="0.5"/>
+    <circle cx="2150" cy="800" r="380" fill="none" stroke="#be2edd" stroke-width="2" opacity="0.2"/>
+    <text x="2150" y="780" font-family="monospace" font-size="60" fill="#be2edd" opacity="0.7" text-anchor="middle">xtl</text>
+  </g>
+  <g opacity="0.5">
+    <path d="M 980 700 C 1200 600, 1600 620, 1870 700" fill="none" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+    <polygon points="1870,680 1910,700 1870,720" fill="#f59e0b" opacity="0.7"/>
+    <path d="M 1870 900 C 1650 1000, 1250 980, 980 900" fill="none" stroke="#3b82f6" stroke-width="7" stroke-linecap="round"/>
+    <polygon points="980,880 940,900 980,920" fill="#3b82f6" opacity="0.7"/>
+  </g>
+  <g opacity="0.3">
+    <circle cx="1200" cy="680" r="14" fill="#f59e0b"/>
+    <circle cx="1422" cy="650" r="18" fill="#f59e0b"/>
+    <circle cx="1650" cy="668" r="14" fill="#f59e0b"/>
+    <circle cx="1200" cy="920" r="14" fill="#3b82f6"/>
+    <circle cx="1422" cy="950" r="18" fill="#3b82f6"/>
+    <circle cx="1650" cy="932" r="14" fill="#3b82f6"/>
+  </g>
+  <g opacity="0.14" stroke="#e0e0e0" fill="none" stroke-linecap="round">
+    <path d="M 500 300 C 700 250, 900 270, 1100 240 S 1400 210, 1600 230 S 1900 200, 2100 220 S 2400 190, 2600 210" stroke-width="2"/>
+    <path d="M 400 450 C 650 400, 900 420, 1200 390 S 1500 360, 1800 380 S 2100 350, 2350 370 S 2600 340, 2800 360" stroke-width="1.5"/>
+    <path d="M 300 1150 C 600 1100, 900 1130, 1200 1100 S 1600 1070, 1900 1090 S 2200 1060, 2500 1080 S 2700 1050, 2900 1070" stroke-width="2"/>
+    <path d="M 200 1350 C 550 1300, 900 1330, 1250 1300 S 1650 1270, 2000 1290 S 2300 1260, 2600 1280 S 2800 1250, 2950 1270" stroke-width="1.5"/>
+  </g>
+  <path d="M -100 1450 C 400 1350, 900 1400, 1422 1330 S 2100 1260, 2900 1310 L 2900 1700 L -100 1700 Z" fill="url(#cool)" opacity="0.1"/>
+</svg>

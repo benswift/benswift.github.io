@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="tunnel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="node-left" cx="0.15" cy="0.5" r="0.25">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="node-right" cx="0.85" cy="0.5" r="0.25">
+      <stop offset="0" stop-color="#9b1fb8" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#node-left)" width="2844" height="1600"/>
+  <rect fill="url(#node-right)" width="2844" height="1600"/>
+  <rect fill="url(#core)" width="2844" height="1600"/>
+  <g opacity="0.12" fill="none" stroke="#3b82f6" stroke-width="1">
+    <path d="M -50 200 C 200 150, 500 180, 700 160 S 1100 140, 1400 170"/>
+    <path d="M -50 380 C 200 330, 500 360, 750 340 S 1150 320, 1400 350"/>
+    <path d="M -50 560 C 250 510, 550 540, 780 520 S 1200 500, 1400 530"/>
+    <path d="M -50 740 C 200 690, 500 720, 700 700 S 1100 680, 1400 710"/>
+    <path d="M -50 920 C 250 870, 550 900, 780 880 S 1200 860, 1400 890"/>
+    <path d="M -50 1100 C 200 1050, 500 1080, 700 1060 S 1100 1040, 1400 1070"/>
+    <path d="M -50 1280 C 250 1230, 550 1260, 780 1240 S 1200 1220, 1400 1250"/>
+    <path d="M -50 1460 C 200 1410, 500 1440, 700 1420 S 1100 1400, 1400 1430"/>
+  </g>
+  <g opacity="0.12" fill="none" stroke="#9b1fb8" stroke-width="1">
+    <path d="M 1440 200 C 1700 150, 2000 180, 2200 160 S 2600 140, 2900 170"/>
+    <path d="M 1440 380 C 1700 330, 2000 360, 2250 340 S 2650 320, 2900 350"/>
+    <path d="M 1440 560 C 1750 510, 2050 540, 2280 520 S 2680 500, 2900 530"/>
+    <path d="M 1440 740 C 1700 690, 2000 720, 2200 700 S 2600 680, 2900 710"/>
+    <path d="M 1440 920 C 1750 870, 2050 900, 2280 880 S 2680 860, 2900 890"/>
+    <path d="M 1440 1100 C 1700 1050, 2000 1080, 2200 1060 S 2600 1040, 2900 1070"/>
+    <path d="M 1440 1280 C 1750 1230, 2050 1260, 2280 1240 S 2680 1220, 2900 1250"/>
+    <path d="M 1440 1460 C 1700 1410, 2000 1440, 2200 1420 S 2600 1400, 2900 1430"/>
+  </g>
+  <g transform="rotate(3 1422 800)">
+    <ellipse cx="1422" cy="800" rx="520" ry="820" fill="url(#tunnel)" opacity="0.06"/>
+    <ellipse cx="1422" cy="800" rx="360" ry="600" fill="url(#tunnel)" opacity="0.08"/>
+    <ellipse cx="1422" cy="800" rx="200" ry="380" fill="url(#tunnel)" opacity="0.12"/>
+  </g>
+  <g fill="none" stroke="url(#tunnel)" stroke-linecap="round">
+    <path d="M 300 780 C 600 650, 900 720, 1100 760 S 1500 800, 1700 780 C 1900 760, 2200 700, 2500 800" stroke-width="3" opacity="0.5"/>
+    <path d="M 280 820 C 580 700, 880 770, 1080 810 S 1480 840, 1680 820 C 1880 800, 2180 740, 2480 840" stroke-width="2" opacity="0.35"/>
+    <path d="M 320 740 C 620 610, 920 680, 1120 720 S 1520 760, 1720 740 C 1920 720, 2220 660, 2520 760" stroke-width="2" opacity="0.35"/>
+  </g>
+  <circle cx="420" cy="800" r="48" fill="none" stroke="#3b82f6" stroke-width="3" opacity="0.5"/>
+  <circle cx="420" cy="800" r="28" fill="#3b82f6" opacity="0.18"/>
+  <circle cx="420" cy="800" r="10" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="2420" cy="800" r="48" fill="none" stroke="#9b1fb8" stroke-width="3" opacity="0.5"/>
+  <circle cx="2420" cy="800" r="28" fill="#9b1fb8" opacity="0.18"/>
+  <circle cx="2420" cy="800" r="10" fill="#9b1fb8" opacity="0.5"/>
+  <g fill="#be2edd" opacity="0.6">
+    <circle cx="800" cy="796" r="5"/>
+    <circle cx="980" cy="802" r="4"/>
+    <circle cx="1160" cy="790" r="5"/>
+    <circle cx="1340" cy="798" r="4"/>
+    <circle cx="1520" cy="792" r="5"/>
+    <circle cx="1700" cy="800" r="4"/>
+    <circle cx="1880" cy="794" r="5"/>
+    <circle cx="2060" cy="802" r="4"/>
+    <circle cx="2240" cy="790" r="5"/>
+  </g>
+  <g transform="translate(0 0) rotate(-2 1422 400)">
+    <path d="M 600 -100 C 900 100, 1200 80, 1500 60 S 2000 30, 2300 -80" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.12" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(2 1422 1300)">
+    <path d="M 500 1700 C 800 1500, 1100 1520, 1400 1540 S 1900 1560, 2200 1680" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.12" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -2,6 +2,7 @@
 layout: ../layouts/PageLayout.astro
 title: Blurbs
 relativePath: blurbs.md
+image: /assets/images/posts/blurbs.svg
 ---
 
 Here's a list of bios/blurbs that you could use in your glossy brochures. I'm

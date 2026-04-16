@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="slide1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="slide2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="slide3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="slide4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="slideTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <g transform="translate(200 1100) rotate(-8 1200 0)">
+    <rect x="0" y="0" width="2000" height="1200" rx="20" fill="url(#slide1)" opacity="0.25"/>
+  </g>
+  <g transform="translate(300 900) rotate(-5 1200 0)">
+    <rect x="0" y="0" width="2000" height="1200" rx="20" fill="url(#slide2)" opacity="0.3"/>
+    <rect x="80" y="80" width="1840" height="100" rx="8" fill="#e0e0e0" opacity="0.12"/>
+    <rect x="80" y="220" width="1200" height="60" rx="6" fill="#e0e0e0" opacity="0.08"/>
+    <rect x="80" y="320" width="900" height="60" rx="6" fill="#e0e0e0" opacity="0.06"/>
+  </g>
+  <g transform="translate(400 700) rotate(-2 1200 0)">
+    <rect x="0" y="0" width="2000" height="1200" rx="20" fill="url(#slide3)" opacity="0.35"/>
+    <rect x="80" y="80" width="1840" height="100" rx="8" fill="#e0e0e0" opacity="0.15"/>
+    <rect x="80" y="220" width="1100" height="60" rx="6" fill="#e0e0e0" opacity="0.1"/>
+    <rect x="80" y="320" width="800" height="60" rx="6" fill="#e0e0e0" opacity="0.08"/>
+    <rect x="80" y="420" width="600" height="60" rx="6" fill="#e0e0e0" opacity="0.06"/>
+  </g>
+  <g transform="translate(500 500) rotate(2 1200 0)">
+    <rect x="0" y="0" width="2000" height="1200" rx="20" fill="url(#slide4)" opacity="0.4"/>
+    <rect x="80" y="80" width="1840" height="100" rx="8" fill="#e0e0e0" opacity="0.18"/>
+    <rect x="80" y="220" width="1200" height="60" rx="6" fill="#e0e0e0" opacity="0.12"/>
+    <rect x="80" y="320" width="800" height="60" rx="6" fill="#e0e0e0" opacity="0.1"/>
+    <rect x="80" y="420" width="1000" height="60" rx="6" fill="#e0e0e0" opacity="0.08"/>
+    <rect x="80" y="520" width="600" height="60" rx="6" fill="#e0e0e0" opacity="0.06"/>
+  </g>
+  <g transform="translate(620 300) rotate(5 1200 0)">
+    <rect x="0" y="0" width="2000" height="1200" rx="20" fill="url(#slideTop)" opacity="0.55"/>
+    <rect x="80" y="80" width="1840" height="120" rx="8" fill="#e0e0e0" opacity="0.22"/>
+    <rect x="80" y="260" width="1300" height="65" rx="6" fill="#e0e0e0" opacity="0.15"/>
+    <rect x="80" y="375" width="900" height="65" rx="6" fill="#e0e0e0" opacity="0.12"/>
+    <rect x="80" y="490" width="1100" height="65" rx="6" fill="#e0e0e0" opacity="0.1"/>
+    <rect x="80" y="605" width="700" height="65" rx="6" fill="#e0e0e0" opacity="0.08"/>
+    <rect x="80" y="720" width="500" height="65" rx="6" fill="#e0e0e0" opacity="0.06"/>
+  </g>
+  <g opacity="0.3">
+    <path d="M 400 280 C 380 260, 380 240, 400 220" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <path d="M 500 280 C 480 260, 480 240, 500 220" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <path d="M 600 280 C 580 260, 580 240, 600 220" stroke="#be2edd" stroke-width="2" fill="none"/>
+  </g>
+</svg>

@@ -5,6 +5,7 @@ description: "Taking the ANU Laptop Ensemble online during COVID-19---what chang
 tags:
   - lens
   - teaching
+image: /assets/images/posts/lens-online-the-laptop-ensemble-in-a-time-of-covid19.svg
 ---
 
 Well, as with all ANU courses, we're taking the

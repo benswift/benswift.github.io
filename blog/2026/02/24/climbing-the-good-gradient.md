@@ -3,6 +3,7 @@ title: 'The road to COMP4020: climbing the "good" gradient'
 description: "Producing code is easy; knowing whether it's good is still hard. Three nested
   feedback loops for ascending the quality gradient in agentic coding."
 tags: [comp4020, teaching]
+image: /assets/images/posts/climbing-the-good-gradient.svg
 ---
 
 :::tip

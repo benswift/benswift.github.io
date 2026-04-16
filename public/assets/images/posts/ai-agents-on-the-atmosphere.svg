@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="atmoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9b1fb8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nodeGlowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="connectGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#be2edd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1422" cy="700" rx="1500" ry="900" fill="url(#atmoGlow)"/>
+  <g fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.15">
+    <ellipse cx="1422" cy="700" rx="400" ry="200" transform="rotate(-10, 1422, 700)"/>
+    <ellipse cx="1422" cy="700" rx="700" ry="350" transform="rotate(-8, 1422, 700)"/>
+    <ellipse cx="1422" cy="700" rx="1050" ry="500" transform="rotate(-6, 1422, 700)"/>
+    <ellipse cx="1422" cy="700" rx="1350" ry="650" transform="rotate(-4, 1422, 700)"/>
+  </g>
+  <g stroke="url(#connectGrad)" stroke-width="1.5" fill="none" opacity="0.45">
+    <path d="M 580 420 C 750 380, 950 360, 1100 400"/>
+    <path d="M 1100 400 C 1250 440, 1350 430, 1422 420"/>
+    <path d="M 1422 420 C 1550 400, 1700 380, 1880 420"/>
+    <path d="M 1880 420 C 2050 460, 2200 440, 2350 400"/>
+    <path d="M 580 420 C 650 550, 700 650, 750 720"/>
+    <path d="M 1100 400 C 1150 520, 1200 640, 1220 750"/>
+    <path d="M 1880 420 C 1860 550, 1820 650, 1780 750"/>
+    <path d="M 2350 400 C 2300 550, 2250 700, 2200 820"/>
+    <path d="M 750 720 C 950 780, 1100 800, 1220 800"/>
+    <path d="M 1220 800 C 1380 820, 1550 810, 1780 780"/>
+    <path d="M 1780 780 C 1950 760, 2100 780, 2200 820"/>
+  </g>
+  <g opacity="0.75">
+    <circle cx="580" cy="420" r="38" fill="#be2edd"/>
+    <circle cx="1100" cy="400" r="32" fill="#3b82f6"/>
+    <circle cx="1422" cy="420" r="30" fill="#f59e0b"/>
+    <circle cx="1880" cy="420" r="34" fill="#3b82f6"/>
+    <circle cx="2350" cy="400" r="30" fill="#be2edd"/>
+    <circle cx="750" cy="720" r="28" fill="#9b1fb8"/>
+    <circle cx="1220" cy="800" r="30" fill="#3b82f6"/>
+    <circle cx="1780" cy="780" r="28" fill="#be2edd"/>
+    <circle cx="2200" cy="820" r="30" fill="#9b1fb8"/>
+    <circle cx="1000" cy="1100" r="26" fill="#3b82f6" opacity="0.7"/>
+    <circle cx="1600" cy="1080" r="26" fill="#be2edd" opacity="0.7"/>
+    <circle cx="350" cy="800" r="22" fill="#f59e0b" opacity="0.6"/>
+    <circle cx="2550" cy="750" r="22" fill="#f59e0b" opacity="0.6"/>
+  </g>
+  <g stroke="#e0e0e0" stroke-width="1" fill="none" opacity="0.1">
+    <path d="M 580 420 C 650 550, 800 900, 1000 1100"/>
+    <path d="M 2350 400 C 2280 550, 2150 800, 1600 1080"/>
+    <path d="M 1422 420 C 1422 580, 1422 700, 1422 900"/>
+  </g>
+  <circle cx="1422" cy="900" r="60" fill="#be2edd" opacity="0.5"/>
+  <circle cx="1422" cy="900" r="100" fill="none" stroke="#9b1fb8" stroke-width="2" opacity="0.3"/>
+  <g opacity="0.12" fill="none" stroke="#e0e0e0" stroke-width="1">
+    <path d="M 0 1300 C 500 1250, 1000 1280, 1422 1260 C 1900 1240, 2400 1270, 2844 1250"/>
+    <path d="M 0 1450 C 500 1420, 1000 1440, 1422 1430 C 1900 1420, 2400 1440, 2844 1430"/>
+  </g>
+</svg>

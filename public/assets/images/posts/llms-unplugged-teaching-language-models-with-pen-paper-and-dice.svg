@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="gridGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#be2edd" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="diceGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <g opacity="0.18" transform="translate(300, 200)">
+    <line x1="0" y1="0" x2="0" y2="900" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="160" y1="0" x2="160" y2="900" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="320" y1="0" x2="320" y2="900" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="480" y1="0" x2="480" y2="900" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="640" y1="0" x2="640" y2="900" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="800" y1="0" x2="800" y2="900" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="960" y1="0" x2="960" y2="900" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="0" x2="960" y2="0" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="150" x2="960" y2="150" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="300" x2="960" y2="300" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="450" x2="960" y2="450" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="600" x2="960" y2="600" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="750" x2="960" y2="750" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="900" x2="960" y2="900" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+  <g opacity="0.5" transform="translate(300, 200)">
+    <rect x="0" y="0" width="160" height="150" fill="#3b82f6" opacity="0.25"/>
+    <rect x="320" y="150" width="160" height="150" fill="#be2edd" opacity="0.3"/>
+    <rect x="160" y="300" width="160" height="150" fill="#3b82f6" opacity="0.2"/>
+    <rect x="480" y="0" width="160" height="150" fill="#f59e0b" opacity="0.22"/>
+    <rect x="640" y="300" width="160" height="150" fill="#be2edd" opacity="0.2"/>
+    <rect x="800" y="450" width="160" height="150" fill="#3b82f6" opacity="0.18"/>
+    <rect x="0" y="600" width="160" height="150" fill="#f59e0b" opacity="0.2"/>
+    <rect x="480" y="600" width="160" height="150" fill="#3b82f6" opacity="0.22"/>
+    <rect x="320" y="750" width="160" height="150" fill="#be2edd" opacity="0.18"/>
+    <rect x="640" y="750" width="160" height="150" fill="#f59e0b" opacity="0.2"/>
+  </g>
+  <ellipse cx="2000" cy="700" rx="450" ry="450" fill="url(#diceGlow)"/>
+  <g transform="translate(1800, 480) rotate(15)">
+    <rect x="0" y="0" width="400" height="400" rx="55" fill="#1a1a1a" stroke="#f59e0b" stroke-width="10"/>
+    <circle cx="200" cy="200" r="35" fill="#f59e0b"/>
+    <circle cx="80" cy="80" r="28" fill="#f59e0b"/>
+    <circle cx="320" cy="80" r="28" fill="#f59e0b"/>
+    <circle cx="80" cy="320" r="28" fill="#f59e0b"/>
+    <circle cx="320" cy="320" r="28" fill="#f59e0b"/>
+  </g>
+  <g transform="translate(2100, 900) rotate(-8)">
+    <rect x="0" y="0" width="280" height="280" rx="40" fill="#1a1a1a" stroke="#be2edd" stroke-width="8"/>
+    <circle cx="70" cy="70" r="22" fill="#be2edd"/>
+    <circle cx="140" cy="140" r="22" fill="#be2edd"/>
+    <circle cx="210" cy="210" r="22" fill="#be2edd"/>
+  </g>
+  <g opacity="0.5">
+    <path d="M1410 500 C1550 450, 1680 470, 1800 520" fill="none" stroke="#f59e0b" stroke-width="5" stroke-dasharray="15 10"/>
+    <path d="M1410 580 C1550 530, 1680 550, 1800 600" fill="none" stroke="#f59e0b" stroke-width="4" stroke-dasharray="15 10"/>
+  </g>
+  <g opacity="0.3">
+    <path d="M0 1300 C400 1250, 800 1350, 1200 1280 C1600 1210, 2000 1310, 2400 1240 C2700 1185, 2850 1220, 2950 1200" fill="none" stroke="#9b1fb8" stroke-width="40" stroke-linecap="round"/>
+    <path d="M0 1450 C400 1400, 800 1500, 1200 1430 C1600 1360, 2000 1460, 2400 1390 C2700 1335, 2850 1370, 2950 1350" fill="none" stroke="#9b1fb8" stroke-width="25" stroke-linecap="round"/>
+  </g>
+</svg>

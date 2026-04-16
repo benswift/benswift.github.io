@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="diceGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chainGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#diceGlow)" width="2844" height="1600"/>
+  <g opacity="0.45">
+    <path d="M 180 680 L 380 680 L 380 880 L 180 880 Z" fill="none" stroke="#f59e0b" stroke-width="5" opacity="0.4" transform="rotate(-5 280 780)"/>
+    <path d="M 180 680 L 230 650 L 430 650 L 380 680" stroke="#f59e0b" stroke-width="3" fill="#f59e0b" opacity="0.1" transform="rotate(-5 280 780)"/>
+    <path d="M 380 680 L 430 650 L 430 850 L 380 880" stroke="#f59e0b" stroke-width="3" fill="#f59e0b" opacity="0.08" transform="rotate(-5 280 780)"/>
+    <circle cx="246" cy="746" r="14" fill="#f59e0b" opacity="0.4" transform="rotate(-5 280 780)"/>
+    <circle cx="314" cy="780" r="14" fill="#f59e0b" opacity="0.4" transform="rotate(-5 280 780)"/>
+    <circle cx="246" cy="814" r="14" fill="#f59e0b" opacity="0.35" transform="rotate(-5 280 780)"/>
+    <circle cx="314" cy="746" r="14" fill="#f59e0b" opacity="0.35" transform="rotate(-5 280 780)"/>
+  </g>
+  <g opacity="0.4">
+    <path d="M 900 560 L 1100 560 L 1100 760 L 900 760 Z" fill="none" stroke="#be2edd" stroke-width="5" opacity="0.38" transform="rotate(3 1000 660)"/>
+    <path d="M 900 560 L 950 530 L 1150 530 L 1100 560" stroke="#be2edd" stroke-width="3" fill="#be2edd" opacity="0.08" transform="rotate(3 1000 660)"/>
+    <path d="M 1100 560 L 1150 530 L 1150 730 L 1100 760" stroke="#be2edd" stroke-width="3" fill="#be2edd" opacity="0.07" transform="rotate(3 1000 660)"/>
+    <circle cx="950" cy="620" r="12" fill="#be2edd" opacity="0.4" transform="rotate(3 1000 660)"/>
+    <circle cx="1050" cy="700" r="12" fill="#be2edd" opacity="0.4" transform="rotate(3 1000 660)"/>
+    <circle cx="1050" cy="620" r="12" fill="#be2edd" opacity="0.38" transform="rotate(3 1000 660)"/>
+  </g>
+  <g opacity="0.38">
+    <path d="M 1700 620 L 1900 620 L 1900 820 L 1700 820 Z" fill="none" stroke="#3b82f6" stroke-width="5" opacity="0.35" transform="rotate(-4 1800 720)"/>
+    <path d="M 1700 620 L 1750 590 L 1950 590 L 1900 620" stroke="#3b82f6" stroke-width="3" fill="#3b82f6" opacity="0.08" transform="rotate(-4 1800 720)"/>
+    <path d="M 1900 620 L 1950 590 L 1950 790 L 1900 820" stroke="#3b82f6" stroke-width="3" fill="#3b82f6" opacity="0.07" transform="rotate(-4 1800 720)"/>
+    <circle cx="1750" cy="700" r="12" fill="#3b82f6" opacity="0.42" transform="rotate(-4 1800 720)"/>
+    <circle cx="1850" cy="700" r="12" fill="#3b82f6" opacity="0.38" transform="rotate(-4 1800 720)"/>
+    <circle cx="1800" cy="760" r="12" fill="#3b82f6" opacity="0.38" transform="rotate(-4 1800 720)"/>
+    <circle cx="1800" cy="640" r="12" fill="#3b82f6" opacity="0.35" transform="rotate(-4 1800 720)"/>
+    <circle cx="1850" cy="640" r="12" fill="#3b82f6" opacity="0.32" transform="rotate(-4 1800 720)"/>
+  </g>
+  <g opacity="0.35">
+    <path d="M 2400 700 L 2580 700 L 2580 880 L 2400 880 Z" fill="none" stroke="#9b1fb8" stroke-width="4" opacity="0.32" transform="rotate(5 2490 790)"/>
+    <circle cx="2445" cy="765" r="11" fill="#9b1fb8" opacity="0.38" transform="rotate(5 2490 790)"/>
+    <circle cx="2535" cy="815" r="11" fill="#9b1fb8" opacity="0.35" transform="rotate(5 2490 790)"/>
+  </g>
+  <g opacity="0.35">
+    <path d="M 430 780 C 600 780 700 750 870 720" stroke="#e0e0e0" stroke-width="3" fill="none" stroke-dasharray="16 10" opacity="0.2"/>
+    <path d="M 1120 680 C 1300 680 1500 720 1680 680" stroke="#e0e0e0" stroke-width="3" fill="none" stroke-dasharray="16 10" opacity="0.18"/>
+    <path d="M 1920 720 C 2100 720 2280 760 2400 780" stroke="#e0e0e0" stroke-width="3" fill="none" stroke-dasharray="16 10" opacity="0.18"/>
+  </g>
+  <g opacity="0.3">
+    <path d="M 400 1100 C 600 1000 900 1050 1100 1000 C 1300 950 1500 1020 1700 980 C 1900 940 2100 1000 2400 970" stroke="#f59e0b" stroke-width="3" fill="none" opacity="0.25"/>
+    <path d="M 300 1200 C 550 1120 850 1160 1100 1120 C 1350 1080 1550 1140 1800 1100 C 2050 1060 2300 1120 2600 1090" stroke="#be2edd" stroke-width="2.5" fill="none" opacity="0.2"/>
+    <path d="M 200 1300 C 500 1240 800 1270 1100 1240 C 1400 1210 1650 1260 1950 1230 C 2250 1200 2550 1250 2844 1220" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.18"/>
+  </g>
+</svg>

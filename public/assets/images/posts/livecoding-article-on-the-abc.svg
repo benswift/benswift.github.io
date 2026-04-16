@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#be2edd"/>
+      <stop offset="100%" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1420" cy="800" rx="900" ry="600" fill="url(#glow)"/>
+  <g transform="rotate(-3, 1422, 800)">
+    <path d="M -100 900 C 300 820, 600 960, 900 880 S 1300 780, 1600 860 S 2000 940, 2300 870 S 2700 800, 2950 840" stroke="#3b82f6" stroke-width="4" fill="none" opacity="0.3"/>
+    <path d="M -100 860 C 280 760, 580 900, 880 820 S 1280 700, 1580 800 S 1980 880, 2280 810 S 2680 740, 2950 780" stroke="#3b82f6" stroke-width="6" fill="none" opacity="0.5"/>
+    <path d="M -100 820 C 260 700, 560 840, 860 760 S 1260 620, 1560 740 S 1960 820, 2260 750 S 2660 680, 2950 720" stroke="#3b82f6" stroke-width="8" fill="none" opacity="0.7"/>
+    <path d="M -100 780 C 240 640, 540 780, 840 700 S 1240 540, 1540 680 S 1940 760, 2240 690 S 2640 620, 2950 660" stroke="#be2edd" stroke-width="10" fill="none" opacity="0.8"/>
+    <path d="M -100 740 C 220 580, 520 720, 820 640 S 1220 460, 1520 620 S 1920 700, 2220 630 S 2620 560, 2950 600" stroke="#be2edd" stroke-width="12" fill="none" opacity="0.9"/>
+    <path d="M -100 700 C 200 520, 500 660, 800 580 S 1200 380, 1500 560 S 1900 640, 2200 570 S 2600 500, 2950 540" stroke="#f59e0b" stroke-width="8" fill="none" opacity="0.7"/>
+    <path d="M -100 660 C 180 460, 480 600, 780 520 S 1180 300, 1480 500 S 1880 580, 2180 510 S 2580 440, 2950 480" stroke="#f59e0b" stroke-width="6" fill="none" opacity="0.5"/>
+    <path d="M -100 620 C 160 400, 460 540, 760 460 S 1160 220, 1460 440 S 1860 520, 2160 450 S 2560 380, 2950 420" stroke="#3b82f6" stroke-width="4" fill="none" opacity="0.3"/>
+  </g>
+  <g transform="rotate(2, 800, 400)">
+    <path d="M 400 -50 C 350 200, 480 350, 420 550 S 340 750, 380 950 S 460 1150, 400 1350 S 340 1500, 360 1650" stroke="#9b1fb8" stroke-width="3" fill="none" opacity="0.4"/>
+    <path d="M 600 -80 C 560 180, 680 320, 630 520 S 560 720, 590 920 S 660 1120, 610 1320 S 550 1480, 570 1650" stroke="#9b1fb8" stroke-width="5" fill="none" opacity="0.6"/>
+  </g>
+  <circle cx="1422" cy="800" r="180" fill="none" stroke="#be2edd" stroke-width="3" opacity="0.6"/>
+  <circle cx="1422" cy="800" r="320" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+  <circle cx="1422" cy="800" r="460" fill="none" stroke="#9b1fb8" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="1422" cy="800" r="600" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.2"/>
+  <rect x="1310" y="740" width="224" height="120" rx="12" fill="#1a1a1a" stroke="#be2edd" stroke-width="3" opacity="0.9"/>
+  <rect x="1330" y="760" width="60" height="10" rx="5" fill="#f59e0b" opacity="0.8"/>
+  <rect x="1330" y="780" width="180" height="8" rx="4" fill="#e0e0e0" opacity="0.4"/>
+  <rect x="1330" y="798" width="140" height="8" rx="4" fill="#e0e0e0" opacity="0.3"/>
+  <rect x="1330" y="816" width="160" height="8" rx="4" fill="#e0e0e0" opacity="0.3"/>
+  <circle cx="1490" cy="836" r="16" fill="#f59e0b" opacity="0.9"/>
+</svg>

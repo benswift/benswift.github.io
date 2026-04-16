@@ -4,6 +4,7 @@ description: "Another redesign of benswift.me---this time aiming to be the home 
   livecoding, research, and making things with computers."
 tags:
   - dev
+image: /assets/images/posts/benswift-me-update-july-2017-edition.svg
 ---
 
 Well, `benswift.me` has been given another coat of paint. The content's still a

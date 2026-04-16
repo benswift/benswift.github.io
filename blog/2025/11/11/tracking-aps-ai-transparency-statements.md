@@ -5,6 +5,7 @@ description: "A new project that scrapes and version-controls AI Transparency St
 tags:
   - ai
   - policy
+image: /assets/images/posts/tracking-aps-ai-transparency-statements.svg
 ---
 
 New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**

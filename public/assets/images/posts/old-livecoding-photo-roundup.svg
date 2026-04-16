@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#be2edd"/>
+      <stop offset="100%" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-p" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1422" cy="800" rx="1000" ry="700" fill="url(#spotlight)"/>
+  <g opacity="0.3">
+    <path d="M 0 1300 C 300 1200 600 1400 900 1300 S 1200 1100 1500 1300 S 1800 1500 2100 1300 S 2400 1100 2844 1300 L 2844 1700 L 0 1700 Z" fill="#3b82f6"/>
+    <path d="M 0 1400 C 400 1300 700 1500 1000 1400 S 1400 1200 1700 1400 S 2100 1600 2400 1400 S 2700 1200 2844 1400 L 2844 1700 L 0 1700 Z" fill="#9b1fb8" opacity="0.6"/>
+  </g>
+  <g opacity="0.18">
+    <ellipse cx="400" cy="1200" rx="250" ry="180" fill="#be2edd"/>
+    <ellipse cx="2400" cy="1100" rx="300" ry="200" fill="#3b82f6"/>
+    <ellipse cx="1422" cy="1350" rx="400" ry="150" fill="#f59e0b"/>
+  </g>
+  <g transform="rotate(2, 1422, 800)">
+    <rect x="800" y="450" width="620" height="420" rx="12" fill="none" stroke="#e0e0e0" stroke-width="3" opacity="0.15"/>
+    <rect x="820" y="470" width="580" height="380" rx="8" fill="#3b82f6" opacity="0.06"/>
+    <line x1="820" y1="520" x2="1400" y2="520" stroke="#e0e0e0" stroke-width="1" opacity="0.2"/>
+    <circle cx="847" cy="495" r="8" fill="#f59e0b" opacity="0.5"/>
+    <circle cx="873" cy="495" r="8" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="899" cy="495" r="8" fill="#be2edd" opacity="0.5"/>
+  </g>
+  <g opacity="0.7">
+    <path d="M 550 900 C 600 750 650 800 700 900 S 750 1050 800 1000 S 850 850 900 900" stroke="#be2edd" stroke-width="3" fill="none"/>
+    <path d="M 550 930 C 620 780 670 830 720 930 S 770 1080 820 1030 S 870 880 920 930" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M 550 960 C 640 810 690 860 740 960 S 790 1110 840 1060 S 890 910 940 960" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  <g opacity="0.7">
+    <path d="M 1900 700 C 1950 550 2000 600 2050 700 S 2100 850 2150 800 S 2200 650 2250 700" stroke="#be2edd" stroke-width="3" fill="none"/>
+    <path d="M 1900 730 C 1970 580 2020 630 2070 730 S 2120 880 2170 830 S 2220 680 2270 730" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M 1900 760 C 1980 610 2030 660 2080 760 S 2130 910 2180 860 S 2230 710 2280 760" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  <g opacity="0.6">
+    <line x1="600" y1="0" x2="600" y2="300" stroke="#be2edd" stroke-width="2"/>
+    <line x1="900" y1="0" x2="900" y2="200" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1200" y1="0" x2="1200" y2="250" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="1600" y1="0" x2="1600" y2="180" stroke="#be2edd" stroke-width="2"/>
+    <line x1="2000" y1="0" x2="2000" y2="300" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="2300" y1="0" x2="2300" y2="220" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="600" cy="300" r="5" fill="#be2edd"/>
+    <circle cx="900" cy="200" r="5" fill="#3b82f6"/>
+    <circle cx="1200" cy="250" r="5" fill="#f59e0b"/>
+    <circle cx="1600" cy="180" r="5" fill="#be2edd"/>
+    <circle cx="2000" cy="300" r="5" fill="#3b82f6"/>
+    <circle cx="2300" cy="220" r="5" fill="#f59e0b"/>
+  </g>
+  <ellipse cx="1422" cy="800" rx="600" ry="400" fill="url(#glow-p)"/>
+</svg>

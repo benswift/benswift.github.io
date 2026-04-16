@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="sharpGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <radialGradient id="sharpGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e0e0"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1422" cy="820" rx="1100" ry="700" fill="url(#sharpGlow)"/>
+  <g opacity="0.65">
+    <path d="M 800 200 L 900 1400 L 960 1400 L 840 200 Z" fill="url(#bladeGrad)" opacity="0.7"/>
+    <path d="M 1100 150 L 1180 1400 L 1240 1400 L 1140 150 Z" fill="url(#bladeGrad)" opacity="0.6"/>
+    <path d="M 1400 130 L 1460 1400 L 1520 1400 L 1440 130 Z" fill="url(#bladeGrad)" opacity="0.75"/>
+    <path d="M 1700 150 L 1740 1400 L 1800 1400 L 1740 150 Z" fill="url(#bladeGrad)" opacity="0.6"/>
+    <path d="M 1980 200 L 2000 1400 L 2060 1400 L 2020 200 Z" fill="url(#bladeGrad)" opacity="0.5"/>
+  </g>
+  <g fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.3">
+    <path d="M 0 900 C 300 880, 600 860, 900 870 C 1100 876, 1300 872, 1422 870 C 1600 866, 1900 870, 2200 880 C 2500 888, 2700 890, 2844 892"/>
+    <path d="M 0 700 C 300 710, 700 720, 1000 715 C 1200 712, 1350 710, 1422 710 C 1550 710, 1800 708, 2100 715 C 2400 722, 2650 720, 2844 718"/>
+  </g>
+  <g opacity="0.5">
+    <circle cx="880" cy="300" r="18" fill="#f59e0b"/>
+    <circle cx="1160" cy="260" r="18" fill="#f59e0b"/>
+    <circle cx="1460" cy="240" r="22" fill="#f59e0b"/>
+    <circle cx="1760" cy="260" r="18" fill="#f59e0b"/>
+    <circle cx="2020" cy="290" r="18" fill="#f59e0b"/>
+    <path d="M 880 300 L 1160 260 L 1460 240 L 1760 260 L 2020 290" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5"/>
+  </g>
+  <g opacity="0.2" fill="none" stroke="#be2edd" stroke-width="3">
+    <path d="M 400 1500 C 600 1400, 900 1300, 1422 1280 C 1900 1260, 2300 1380, 2500 1480"/>
+  </g>
+  <g opacity="0.12" fill="none" stroke="#e0e0e0" stroke-width="1">
+    <rect x="200" y="200" width="2444" height="1200" rx="12"/>
+  </g>
+  <circle cx="1422" cy="800" r="80" fill="#be2edd" opacity="0.7"/>
+  <circle cx="1422" cy="800" r="130" fill="none" stroke="#9b1fb8" stroke-width="3" opacity="0.35"/>
+  <g opacity="0.6">
+    <line x1="1422" y1="720" x2="1422" y2="880" stroke="#e0e0e0" stroke-width="3"/>
+    <line x1="1342" y1="800" x2="1502" y2="800" stroke="#e0e0e0" stroke-width="3"/>
+  </g>
+</svg>

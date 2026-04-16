@@ -5,6 +5,7 @@ description: "The 2021 Australasian Computer Music Conference is happening in
 tags:
   - gigs
   - livecoding
+image: /assets/images/posts/acmc-21-synthmoot-connections-announced-for-august-26-28.svg
 ---
 
 Great news on the local computer music conference front: the

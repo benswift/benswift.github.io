@@ -4,6 +4,7 @@ description: "A fully scripted burn-and-boot process for setting up Raspberry Pi
   fullscreen Chromium kiosks with Tailscale, WiFi and 4K support."
 tags:
   - dev
+image: /assets/images/posts/automated-rpi-web-kiosk-setup-in-2025.svg
 ---
 
 As part of a [recent art installation](https://github.com/anucybernetics/panic)

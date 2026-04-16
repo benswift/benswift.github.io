@@ -4,6 +4,7 @@ description: "A recursive Scheme implementation of Euclidean rhythms in Extempor
   some unexpectedly cool visual patterns."
 tags:
   - extempore
+image: /assets/images/posts/euclidean-rhythms-in-extempore.svg
 ---
 
 As part of the new Extempore pattern language stuff I added a helper for

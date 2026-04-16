@@ -1,7 +1,10 @@
 ---
 layout: ../layouts/HomeLayout.astro
 description: Ben Swift — researcher, educator, artist, developer
+image: /assets/images/posts/home.svg
 ---
+
+![Ben performing live as a musical livecoder](/assets/images/pages/theremin-75.webp)
 
 Hi, I'm Dr. Ben Swift---I'm a [researcher](/research/), [artist](/livecoding/)
 and [creative technologist/software engineer](https://github.com/benswift). I

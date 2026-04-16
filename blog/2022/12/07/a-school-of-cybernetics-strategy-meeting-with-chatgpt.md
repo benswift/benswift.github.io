@@ -6,6 +6,7 @@ description: "My first ChatGPT conversation: asking it to brainstorm strategy fo
 tags:
   - ai
   - cybernetics
+image: /assets/images/posts/a-school-of-cybernetics-strategy-meeting-with-chatgpt.svg
 ---
 
 Back at my desk after a couple of days off I finally got a chance to fire up the

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="strataA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="0.5" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="strataB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="0.5" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="strataC" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="cvGlow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#cvGlow)" width="2844" height="1600"/>
+  <g opacity="0.2" transform="rotate(2 1422 800)">
+    <path d="M -100 320 C 400 280, 900 340, 1422 300 C 1944 260, 2450 320, 2944 290 L 2944 400 C 2450 430, 1944 370, 1422 410 C 900 450, 400 390, -100 430 Z" fill="url(#strataA)"/>
+  </g>
+  <g opacity="0.2" transform="rotate(-2 1422 800)">
+    <path d="M -100 520 C 450 480, 950 550, 1422 510 C 1894 470, 2400 540, 2944 500 L 2944 620 C 2400 660, 1894 590, 1422 630 C 950 670, 450 600, -100 640 Z" fill="url(#strataB)"/>
+  </g>
+  <g opacity="0.18" transform="rotate(3 1422 800)">
+    <path d="M -100 730 C 500 690, 980 760, 1422 720 C 1864 680, 2360 750, 2944 710 L 2944 840 C 2360 880, 1864 810, 1422 850 C 980 890, 500 820, -100 860 Z" fill="url(#strataA)"/>
+  </g>
+  <g opacity="0.18" transform="rotate(-3 1422 800)">
+    <path d="M -100 960 C 460 920, 960 990, 1422 950 C 1884 910, 2380 980, 2944 940 L 2944 1060 C 2380 1100, 1884 1030, 1422 1070 C 960 1110, 460 1040, -100 1080 Z" fill="url(#strataC)"/>
+  </g>
+  <g opacity="0.2" transform="rotate(2 1422 800)">
+    <path d="M -100 1180 C 440 1140, 940 1210, 1422 1170 C 1904 1130, 2400 1200, 2944 1160 L 2944 1280 C 2400 1320, 1904 1250, 1422 1290 C 940 1330, 440 1260, -100 1300 Z" fill="url(#strataB)"/>
+  </g>
+  <g opacity="0.55" fill="none" stroke="#f59e0b" stroke-linecap="round">
+    <path d="M 180 360 L 300 360" stroke-width="5"/>
+    <path d="M 180 560 L 350 560" stroke-width="5"/>
+    <path d="M 180 775 L 280 775" stroke-width="5"/>
+    <path d="M 180 1000 L 320 1000" stroke-width="5"/>
+    <path d="M 180 1200 L 260 1200" stroke-width="5"/>
+    <path d="M 300 360 C 300 560, 300 560, 350 560" stroke-width="2" opacity="0.4"/>
+    <path d="M 350 560 C 350 775, 350 775, 280 775" stroke-width="2" opacity="0.4"/>
+    <path d="M 280 775 C 280 1000, 280 1000, 320 1000" stroke-width="2" opacity="0.4"/>
+    <path d="M 320 1000 C 320 1200, 320 1200, 260 1200" stroke-width="2" opacity="0.4"/>
+  </g>
+  <g opacity="0.4" fill="#f59e0b">
+    <circle cx="300" cy="360" r="9"/>
+    <circle cx="350" cy="560" r="9"/>
+    <circle cx="280" cy="775" r="9"/>
+    <circle cx="320" cy="1000" r="9"/>
+    <circle cx="260" cy="1200" r="9"/>
+  </g>
+  <g opacity="0.2" stroke="#e0e0e0" fill="none">
+    <path d="M 600 360 L 2400 360" stroke-width="1.5"/>
+    <path d="M 600 560 L 2400 560" stroke-width="1.5"/>
+    <path d="M 600 775 L 2400 775" stroke-width="1.5"/>
+    <path d="M 600 1000 L 2400 1000" stroke-width="1.5"/>
+    <path d="M 600 1200 L 2400 1200" stroke-width="1.5"/>
+  </g>
+  <g opacity="0.12" fill="none" stroke="#be2edd">
+    <circle cx="2400" cy="800" r="350"/>
+    <circle cx="2400" cy="800" r="500"/>
+  </g>
+</svg>

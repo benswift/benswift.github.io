@@ -4,6 +4,7 @@ description: "Ruby 3.2's YJIT gave my Jekyll builds a 4.8x speedup---from 17 sec
   to under 4."
 tags:
   - dev
+image: /assets/images/posts/jekyll-build-speedups-for-ruby-3-2.svg
 ---
 
 There's a [bunch of buzz](https://news.ycombinator.com/item?id=34413012) about

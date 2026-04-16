@@ -5,6 +5,7 @@ description: "A hands-on AI workshop for educators at VU Sunshine Campus, coveri
 tags:
   - teaching
   - ai
+image: /assets/images/posts/llms-unplugged-at-brimbank-tech-school.svg
 ---
 
 :::info

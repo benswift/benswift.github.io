@@ -5,6 +5,7 @@ description: "A reference list of key people, ICLC committees and TOPLAP nodes i
 tags:
   - livecoding
   - research
+image: /assets/images/posts/mapping-the-livecoding-landscape.svg
 ---
 
 ## People

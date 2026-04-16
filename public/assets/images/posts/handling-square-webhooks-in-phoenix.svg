@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="phoenix" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <radialGradient id="hook-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="elixir" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="signal" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <g opacity="0.4">
+    <path d="M 400 -100 C 600 200 550 600 700 900 C 850 1200 800 1400 600 1700" fill="none" stroke="#f59e0b" stroke-width="3"/>
+    <path d="M 600 -100 C 800 200 750 600 900 900 C 1050 1200 1000 1400 800 1700" fill="none" stroke="#be2edd" stroke-width="3"/>
+    <path d="M 800 -150 C 950 150 900 620 1050 920 C 1200 1220 1150 1420 950 1750" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+  <g opacity="0.25">
+    <ellipse cx="600" cy="750" rx="350" ry="600" fill="url(#hook-glow)"/>
+  </g>
+  <ellipse cx="1800" cy="750" rx="650" ry="550" fill="url(#signal)"/>
+  <g opacity="0.8">
+    <ellipse cx="1800" cy="750" rx="150" ry="150" fill="none" stroke="#3b82f6" stroke-width="3"/>
+    <ellipse cx="1800" cy="750" rx="280" ry="280" fill="none" stroke="#3b82f6" stroke-width="2.5" opacity="0.7"/>
+    <ellipse cx="1800" cy="750" rx="420" ry="420" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+    <ellipse cx="1800" cy="750" rx="560" ry="560" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.3"/>
+    <ellipse cx="1800" cy="750" rx="700" ry="700" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.2"/>
+  </g>
+  <circle cx="1800" cy="750" r="50" fill="#3b82f6" opacity="0.9"/>
+  <circle cx="1800" cy="750" r="30" fill="#1a1a1a"/>
+  <circle cx="1800" cy="750" r="14" fill="#3b82f6"/>
+  <g opacity="0.7">
+    <rect x="250" y="580" width="400" height="60" rx="10" fill="url(#elixir)" opacity="0.7"/>
+    <rect x="250" y="660" width="340" height="50" rx="10" fill="#9b1fb8" opacity="0.5"/>
+    <rect x="250" y="730" width="380" height="50" rx="10" fill="#3b82f6" opacity="0.4"/>
+    <rect x="250" y="800" width="300" height="50" rx="10" fill="#9b1fb8" opacity="0.5"/>
+    <rect x="250" y="870" width="360" height="50" rx="10" fill="#3b82f6" opacity="0.4"/>
+    <rect x="250" y="940" width="320" height="50" rx="10" fill="#9b1fb8" opacity="0.5"/>
+  </g>
+  <path d="M 660 750 C 900 700 1200 680 1640 750" fill="none" stroke="url(#phoenix)" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 1640 750 L 1610 720 M 1640 750 L 1610 780" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#f59e0b" opacity="0.6">
+    <circle cx="900" cy="680" r="10"/>
+    <circle cx="1100" cy="665" r="10"/>
+    <circle cx="1300" cy="672" r="10"/>
+    <circle cx="1500" cy="695" r="10"/>
+  </g>
+  <path d="M 450 1000 L 450 1100 Q 450 1150 500 1150 L 660 1150" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0.5"/>
+  <rect x="660" y="1110" width="200" height="80" rx="8" fill="#f59e0b" opacity="0.15" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.4"/>
+  <rect x="680" y="1130" width="100" height="15" rx="3" fill="#f59e0b" opacity="0.3"/>
+  <rect x="680" y="1155" width="140" height="15" rx="3" fill="#f59e0b" opacity="0.2"/>
+  <g opacity="0.2">
+    <path d="M 2100 500 C 2300 400 2500 450 2700 380" fill="none" stroke="#be2edd" stroke-width="2"/>
+    <path d="M 2100 600 C 2300 520 2500 560 2700 490" fill="none" stroke="#be2edd" stroke-width="2"/>
+    <path d="M 2100 700 C 2300 640 2500 670 2700 610" fill="none" stroke="#be2edd" stroke-width="2"/>
+  </g>
+</svg>

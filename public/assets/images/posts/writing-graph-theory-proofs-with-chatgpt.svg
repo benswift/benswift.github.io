@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="edge1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="edge2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <radialGradient id="planar-glow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#planar-glow)" width="2844" height="1600"/>
+  <g opacity="0.8">
+    <line x1="700" y1="400" x2="1200" y2="300" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="700" y1="400" x2="500" y2="800" stroke="#be2edd" stroke-width="3"/>
+    <line x1="700" y1="400" x2="1000" y2="750" stroke="#9b1fb8" stroke-width="2.5"/>
+    <line x1="700" y1="400" x2="400" y2="500" stroke="#3b82f6" stroke-width="2.5"/>
+    <line x1="1200" y1="300" x2="1600" y2="250" stroke="#f59e0b" stroke-width="3"/>
+    <line x1="1200" y1="300" x2="1000" y2="750" stroke="#be2edd" stroke-width="2.5"/>
+    <line x1="1200" y1="300" x2="1500" y2="600" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1600" y1="250" x2="2100" y2="350" stroke="#9b1fb8" stroke-width="3"/>
+    <line x1="1600" y1="250" x2="1500" y2="600" stroke="#be2edd" stroke-width="2.5"/>
+    <line x1="1600" y1="250" x2="1900" y2="550" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="2100" y1="350" x2="2400" y2="600" stroke="#3b82f6" stroke-width="3"/>
+    <line x1="2100" y1="350" x2="1900" y2="550" stroke="#9b1fb8" stroke-width="2.5"/>
+    <line x1="500" y1="800" x2="1000" y2="750" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="500" y1="800" x2="400" y2="1100" stroke="#3b82f6" stroke-width="2.5"/>
+    <line x1="500" y1="800" x2="700" y2="1050" stroke="#be2edd" stroke-width="2"/>
+    <line x1="1000" y1="750" x2="1500" y2="600" stroke="#9b1fb8" stroke-width="2.5"/>
+    <line x1="1000" y1="750" x2="700" y2="1050" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1000" y1="750" x2="1300" y2="1000" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="1500" y1="600" x2="1900" y2="550" stroke="#be2edd" stroke-width="2.5"/>
+    <line x1="1500" y1="600" x2="1300" y2="1000" stroke="#9b1fb8" stroke-width="2"/>
+    <line x1="1500" y1="600" x2="1700" y2="950" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1900" y1="550" x2="2400" y2="600" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="1900" y1="550" x2="1700" y2="950" stroke="#be2edd" stroke-width="2"/>
+    <line x1="2400" y1="600" x2="2500" y2="900" stroke="#9b1fb8" stroke-width="2.5"/>
+    <line x1="400" y1="1100" x2="700" y2="1050" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="700" y1="1050" x2="1300" y2="1000" stroke="#be2edd" stroke-width="2.5"/>
+    <line x1="1300" y1="1000" x2="1700" y2="950" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="1700" y1="950" x2="2500" y2="900" stroke="#9b1fb8" stroke-width="2.5"/>
+    <line x1="400" y1="1100" x2="600" y2="1350" stroke="#be2edd" stroke-width="2"/>
+    <line x1="700" y1="1050" x2="900" y2="1300" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="1300" y1="1000" x2="1200" y2="1250" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="1700" y1="950" x2="1900" y2="1200" stroke="#be2edd" stroke-width="2"/>
+    <line x1="2500" y1="900" x2="2600" y2="1150" stroke="#9b1fb8" stroke-width="2"/>
+  </g>
+  <g opacity="0.9">
+    <circle cx="700" cy="400" r="28" fill="#be2edd"/>
+    <circle cx="1200" cy="300" r="28" fill="#3b82f6"/>
+    <circle cx="1600" cy="250" r="28" fill="#f59e0b"/>
+    <circle cx="2100" cy="350" r="28" fill="#9b1fb8"/>
+    <circle cx="400" cy="500" r="22" fill="#3b82f6"/>
+    <circle cx="500" cy="800" r="28" fill="#f59e0b"/>
+    <circle cx="1000" cy="750" r="28" fill="#be2edd"/>
+    <circle cx="1500" cy="600" r="28" fill="#9b1fb8"/>
+    <circle cx="1900" cy="550" r="28" fill="#3b82f6"/>
+    <circle cx="2400" cy="600" r="28" fill="#f59e0b"/>
+    <circle cx="400" cy="1100" r="24" fill="#be2edd"/>
+    <circle cx="700" cy="1050" r="24" fill="#3b82f6"/>
+    <circle cx="1300" cy="1000" r="24" fill="#9b1fb8"/>
+    <circle cx="1700" cy="950" r="24" fill="#f59e0b"/>
+    <circle cx="2500" cy="900" r="24" fill="#be2edd"/>
+    <circle cx="600" cy="1350" r="20" fill="#9b1fb8"/>
+    <circle cx="900" cy="1300" r="20" fill="#f59e0b"/>
+    <circle cx="1200" cy="1250" r="20" fill="#3b82f6"/>
+    <circle cx="1900" cy="1200" r="20" fill="#9b1fb8"/>
+    <circle cx="2600" cy="1150" r="20" fill="#3b82f6"/>
+  </g>
+  <g fill="none" stroke="#e0e0e0" stroke-opacity="0.06">
+    <circle cx="1422" cy="800" r="600"/>
+    <circle cx="1422" cy="800" r="900"/>
+  </g>
+</svg>

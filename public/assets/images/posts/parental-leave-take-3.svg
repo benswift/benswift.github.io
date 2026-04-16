@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="warm" cx="45%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="60%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#warm)" width="2844" height="1600"/>
+  <rect fill="url(#glow)" width="2844" height="1600"/>
+  <g opacity="0.6">
+    <path d="M -80 1400 C 300 1100 600 1300 900 1050 C 1200 800 1400 1150 1700 950 C 2000 750 2200 1000 2844 850 L 2844 1600 L -80 1600 Z" fill="#f59e0b" opacity="0.12"/>
+    <path d="M -80 1500 C 400 1200 700 1380 1100 1180 C 1450 980 1700 1250 2100 1100 C 2400 980 2600 1150 2844 1050 L 2844 1600 L -80 1600 Z" fill="#be2edd" opacity="0.10"/>
+  </g>
+  <g opacity="0.75">
+    <ellipse cx="820" cy="680" rx="520" ry="440" fill="#f59e0b" opacity="0.09" transform="rotate(-5 820 680)"/>
+    <ellipse cx="1580" cy="820" rx="380" ry="320" fill="#be2edd" opacity="0.08" transform="rotate(3 1580 820)"/>
+    <ellipse cx="2100" cy="520" rx="300" ry="250" fill="#f59e0b" opacity="0.06" transform="rotate(6 2100 520)"/>
+  </g>
+  <g opacity="0.5">
+    <path d="M 600 900 C 640 820 720 800 800 860 C 840 890 860 940 840 990 C 810 1060 730 1080 660 1040 C 590 1000 570 950 600 900 Z" fill="#f59e0b" opacity="0.25"/>
+    <path d="M 1200 620 C 1230 560 1290 550 1350 590 C 1390 615 1400 660 1380 710 C 1350 760 1290 775 1230 745 C 1170 715 1170 670 1200 620 Z" fill="#be2edd" opacity="0.20"/>
+    <path d="M 1900 750 C 1925 700 1975 692 2020 720 C 2050 740 2060 778 2044 818 C 2020 858 1970 870 1924 845 C 1878 820 1878 793 1900 750 Z" fill="#f59e0b" opacity="0.18"/>
+    <path d="M 500 500 C 520 460 560 455 598 478 C 622 493 628 523 614 553 C 594 583 556 590 522 572 C 488 554 482 534 500 500 Z" fill="#9b1fb8" opacity="0.15"/>
+    <path d="M 2350 900 C 2368 864 2404 858 2438 879 C 2460 892 2466 920 2452 948 C 2434 976 2400 982 2368 964 C 2336 946 2332 928 2350 900 Z" fill="#be2edd" opacity="0.12"/>
+  </g>
+  <g opacity="0.4">
+    <path d="M 900 200 C 940 200 980 240 980 290 C 980 360 930 410 870 400 C 810 390 770 340 780 280 C 790 220 850 200 900 200 Z" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0.3"/>
+    <path d="M 1500 350 C 1530 350 1560 375 1560 410 C 1560 455 1530 485 1495 478 C 1460 471 1435 440 1442 400 C 1449 362 1473 350 1500 350 Z" fill="none" stroke="#be2edd" stroke-width="2" opacity="0.25"/>
+    <circle cx="1850" cy="280" r="55" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.2"/>
+    <circle cx="650" cy="1100" r="40" fill="none" stroke="#9b1fb8" stroke-width="2" opacity="0.2"/>
+  </g>
+  <g opacity="0.55">
+    <path d="M 1200 480 C 1250 380 1380 340 1500 380 C 1600 412 1660 510 1640 620 C 1620 730 1520 800 1400 790 C 1280 780 1190 700 1180 590 C 1170 540 1188 508 1200 480 Z" fill="none" stroke="#f59e0b" stroke-width="4" opacity="0.18"/>
+  </g>
+</svg>

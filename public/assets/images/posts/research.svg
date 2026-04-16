@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="coreGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="outerBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rayPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="rayAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <ellipse cx="1422" cy="800" rx="900" ry="600" fill="url(#coreGlow)"/>
+  <ellipse cx="1422" cy="800" rx="1400" ry="900" fill="url(#outerBlue)"/>
+  <g opacity="0.22" stroke="url(#rayPurple)" fill="none" stroke-linecap="round">
+    <path d="M 1422 800 C 1200 600, 900 350, 500 100" stroke-width="4"/>
+    <path d="M 1422 800 C 1250 550, 1050 280, 900 -50" stroke-width="3"/>
+    <path d="M 1422 800 C 1422 550, 1422 250, 1422 -50" stroke-width="4"/>
+    <path d="M 1422 800 C 1600 550, 1800 280, 1950 -50" stroke-width="3"/>
+    <path d="M 1422 800 C 1650 600, 1950 350, 2350 100" stroke-width="4"/>
+    <path d="M 1422 800 C 1750 700, 2150 550, 2844 400" stroke-width="3"/>
+    <path d="M 1422 800 C 1800 820, 2200 850, 2844 900" stroke-width="3"/>
+    <path d="M 1422 800 C 1650 1000, 1950 1250, 2350 1500" stroke-width="4"/>
+    <path d="M 1422 800 C 1422 1050, 1422 1350, 1422 1650" stroke-width="4"/>
+    <path d="M 1422 800 C 1200 1000, 900 1250, 500 1500" stroke-width="3"/>
+    <path d="M 1422 800 C 1100 820, 700 850, 0 900" stroke-width="3"/>
+    <path d="M 1422 800 C 1100 650, 700 430, 0 200" stroke-width="3"/>
+  </g>
+  <g opacity="0.35" fill="none" stroke="url(#rayAmber)" stroke-linecap="round">
+    <path d="M 1422 800 C 1350 500, 1250 200, 1100 -80" stroke-width="6"/>
+    <path d="M 1422 800 C 1600 500, 1750 200, 1900 -80" stroke-width="5"/>
+    <path d="M 1422 800 C 1700 900, 2050 1100, 2400 1400" stroke-width="5"/>
+    <path d="M 1422 800 C 1150 900, 800 1100, 400 1400" stroke-width="6"/>
+  </g>
+  <g opacity="0.5">
+    <circle cx="1422" cy="800" r="55" fill="#be2edd"/>
+    <circle cx="1422" cy="800" r="90" fill="none" stroke="#be2edd" stroke-width="4"/>
+    <circle cx="1422" cy="800" r="140" fill="none" stroke="#9b1fb8" stroke-width="2"/>
+    <circle cx="1422" cy="800" r="200" fill="none" stroke="#9b1fb8" stroke-width="1" opacity="0.5"/>
+  </g>
+  <g opacity="0.7">
+    <circle cx="900" cy="350" r="20" fill="#3b82f6"/>
+    <circle cx="1422" cy="-50" r="16" fill="#3b82f6" opacity="0.7"/>
+    <circle cx="1950" cy="350" r="20" fill="#3b82f6"/>
+    <circle cx="2500" cy="400" r="18" fill="#f59e0b"/>
+    <circle cx="2500" cy="1200" r="20" fill="#f59e0b"/>
+    <circle cx="1422" cy="1650" r="16" fill="#be2edd" opacity="0.7"/>
+    <circle cx="400" cy="1400" r="20" fill="#be2edd"/>
+    <circle cx="0" cy="900" r="18" fill="#3b82f6" opacity="0.6"/>
+    <circle cx="500" cy="100" r="18" fill="#3b82f6"/>
+    <circle cx="1100" cy="-80" r="14" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="1900" cy="-80" r="14" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="2350" cy="100" r="18" fill="#3b82f6"/>
+  </g>
+  <g opacity="0.18" fill="none" stroke="#e0e0e0">
+    <circle cx="1422" cy="800" r="380"/>
+    <circle cx="1422" cy="800" r="600"/>
+  </g>
+</svg>

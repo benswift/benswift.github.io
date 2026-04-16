@@ -5,6 +5,7 @@ description: "AI adoption research keeps asking 'do you use ChatGPT?' when it sh
   actually save you time."
 tags:
   - ai
+image: /assets/images/posts/seeing-ai-tasks-through-a-tam-lens.svg
 ---
 
 When it comes to AI adoption research, we keep asking "do you use ChatGPT?" when

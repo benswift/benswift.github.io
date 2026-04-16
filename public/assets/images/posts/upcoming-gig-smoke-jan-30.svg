@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <radialGradient id="smoke-core" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#9b1fb8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ember-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="smoke-drift" x1="0%" y1="100%" x2="30%" y2="0%">
+      <stop offset="0%" stop-color="#be2edd" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#be2edd" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#smoke-core)" width="2844" height="1600"/>
+  <g opacity="0.35">
+    <path d="M900,1700 C920,1400 880,1200 940,1000 C1000,800 980,600 1020,350 C1040,200 1010,100 1000,-50" stroke="#be2edd" stroke-width="80" fill="none" stroke-linecap="round"/>
+    <path d="M900,1700 C920,1400 880,1200 940,1000 C1000,800 980,600 1020,350 C1040,200 1010,100 1000,-50" stroke="#9b1fb8" stroke-width="50" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  <g opacity="0.25">
+    <path d="M1422,1700 C1450,1450 1400,1250 1480,1050 C1560,850 1520,650 1600,380 C1640,230 1620,120 1610,-40" stroke="#3b82f6" stroke-width="60" fill="none" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.28">
+    <path d="M1900,1700 C1880,1480 1920,1280 1860,1080 C1800,880 1840,680 1780,420 C1750,270 1780,150 1790,-30" stroke="#9b1fb8" stroke-width="70" fill="none" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.15">
+    <path d="M500,1700 C540,1500 480,1300 560,1100 C640,900 580,700 620,450 C650,280 630,150 640,-20" stroke="#be2edd" stroke-width="50" fill="none" stroke-linecap="round"/>
+    <path d="M2300,1700 C2260,1480 2320,1280 2240,1080 C2160,880 2220,680 2160,430 C2130,260 2150,140 2160,-30" stroke="#3b82f6" stroke-width="55" fill="none" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.7">
+    <circle cx="900" cy="1500" r="30" fill="url(#ember-glow)"/>
+    <circle cx="1422" cy="1480" r="25" fill="url(#ember-glow)"/>
+    <circle cx="1900" cy="1510" r="28" fill="url(#ember-glow)"/>
+    <circle cx="600" cy="1520" r="20" fill="#f59e0b" opacity="0.5"/>
+    <circle cx="2200" cy="1530" r="22" fill="#f59e0b" opacity="0.5"/>
+  </g>
+  <g opacity="0.4">
+    <path d="M300,800 C500,780 700,820 900,800" stroke="#e0e0e0" stroke-width="2" fill="none"/>
+    <path d="M1200,750 C1400,730 1600,770 1800,750" stroke="#e0e0e0" stroke-width="2" fill="none"/>
+    <path d="M2100,780 C2300,760 2500,800 2700,780" stroke="#e0e0e0" stroke-width="2" fill="none"/>
+  </g>
+  <g opacity="0.3">
+    <path d="M700,1200 C900,900 1000,700 1100,400 C1200,200 1300,100 1350,0" stroke="#be2edd" stroke-width="3" fill="none" stroke-dasharray="15,25"/>
+    <path d="M1500,1150 C1600,900 1700,650 1800,400 C1900,200 1950,80 1970,-50" stroke="#3b82f6" stroke-width="3" fill="none" stroke-dasharray="15,25"/>
+  </g>
+  <g opacity="0.08">
+    <path d="M0,900 C400,800 900,1000 1422,880 C1944,760 2400,950 2844,850" stroke="#e0e0e0" stroke-width="1" fill="none"/>
+  </g>
+</svg>

@@ -4,6 +4,7 @@ description: "Highlights from a UK research trip: ICLC, chatting with Sam Aaron 
   Peyton Jones, and falling over on a Scottish hill."
 tags:
   - reimagine
+image: /assets/images/posts/reimagine-fellowship-uk-trip-report.svg
 ---
 
 I was lucky enough to be able to spend most of February in the UK on a research

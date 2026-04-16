@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="telegraph" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="0.5" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="terrain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="node-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#be2edd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <path d="M -100 1100 C 300 1050 600 900 900 980 C 1200 1060 1422 880 1700 950 C 1900 1000 2200 850 2500 920 C 2700 970 2950 880 3100 940 L 3100 1700 L -100 1700 Z" fill="url(#terrain)" opacity="0.8"/>
+  <path d="M -100 1200 C 200 1150 500 1050 800 1100 C 1100 1150 1400 1000 1700 1080 C 2000 1160 2300 1020 2600 1080 C 2800 1120 3000 1000 3100 1060 L 3100 1700 L -100 1700 Z" fill="#3b82f6" opacity="0.04"/>
+  <path d="M -50 850 C 300 820 700 870 1000 840 C 1300 810 1600 860 1900 830 C 2200 800 2600 860 2900 830" fill="none" stroke="url(#telegraph)" stroke-width="4" opacity="0.8"/>
+  <path d="M -50 820 C 300 790 700 840 1000 810 C 1300 780 1600 830 1900 800 C 2200 770 2600 830 2900 800" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.3"/>
+  <path d="M -50 880 C 300 850 700 900 1000 870 C 1300 840 1600 890 1900 860 C 2200 830 2600 890 2900 860" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.3"/>
+  <g fill="#e0e0e0" opacity="0.7">
+    <rect x="118" y="780" width="6" height="200"/>
+    <rect x="418" y="760" width="6" height="220"/>
+    <rect x="718" y="790" width="6" height="190"/>
+    <rect x="1018" y="770" width="6" height="210"/>
+    <rect x="1318" y="755" width="6" height="225"/>
+    <rect x="1618" y="775" width="6" height="205"/>
+    <rect x="1918" y="760" width="6" height="220"/>
+    <rect x="2218" y="780" width="6" height="200"/>
+    <rect x="2518" y="765" width="6" height="215"/>
+    <rect x="2818" y="785" width="6" height="195"/>
+  </g>
+  <g fill="#f59e0b" opacity="0.85">
+    <circle cx="120" cy="778" r="10"/>
+    <circle cx="420" cy="758" r="10"/>
+    <circle cx="720" cy="788" r="10"/>
+    <circle cx="1020" cy="768" r="10"/>
+    <circle cx="1320" cy="753" r="10"/>
+    <circle cx="1620" cy="773" r="10"/>
+    <circle cx="1920" cy="758" r="10"/>
+    <circle cx="2220" cy="778" r="10"/>
+    <circle cx="2520" cy="763" r="10"/>
+    <circle cx="2820" cy="783" r="10"/>
+  </g>
+  <ellipse cx="1422" cy="760" rx="320" ry="280" fill="url(#node-glow)"/>
+  <circle cx="1422" cy="760" r="55" fill="none" stroke="#be2edd" stroke-width="4" opacity="0.9"/>
+  <circle cx="1422" cy="760" r="38" fill="#9b1fb8" opacity="0.8"/>
+  <g fill="#e0e0e0" opacity="0.12">
+    <rect x="300" y="300" width="340" height="200" rx="8"/>
+    <rect x="1100" y="250" width="640" height="220" rx="8"/>
+    <rect x="2100" y="310" width="360" height="190" rx="8"/>
+  </g>
+  <g fill="#be2edd" opacity="0.5">
+    <circle cx="620" cy="530" r="8"/>
+    <circle cx="640" cy="560" r="8"/>
+    <circle cx="620" cy="590" r="8"/>
+  </g>
+  <g fill="#3b82f6" opacity="0.5">
+    <circle cx="2200" cy="540" r="8"/>
+    <circle cx="2220" cy="570" r="8"/>
+    <circle cx="2200" cy="600" r="8"/>
+  </g>
+  <path d="M 680 530 C 900 480 1100 470 1320 760" fill="none" stroke="#be2edd" stroke-width="1.5" opacity="0.4" stroke-dasharray="8 6"/>
+  <path d="M 2160 540 C 1950 490 1750 470 1524 760" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.4" stroke-dasharray="8 6"/>
+</svg>
