@@ -6,16 +6,15 @@ import TalkLayout from "../../layouts/TalkLayout.astro"
 import { extractDescription } from "../../utils/excerpt"
 import { resolveContentPath } from "../../utils/source-path"
 
-const decksDir = path.resolve("src/decks")
-const deckSlugs = new Set(
-  fs
-    .readdirSync(decksDir)
-    .filter((f) => f.endsWith(".deck.md"))
-    .map((f) => f.replace(/\.deck\.md$/, "")),
-)
-
 export async function getStaticPaths() {
   const talks = await getCollection("talks")
+  const decksDir = path.resolve("src/decks")
+  const deckSlugs = new Set(
+    fs
+      .readdirSync(decksDir)
+      .filter((f) => f.endsWith(".deck.md"))
+      .map((f) => f.replace(/\.deck\.md$/, "")),
+  )
 
   return talks
     .filter((talk) => {
