@@ -94,3 +94,38 @@ frontmatter and file structure. Every post must have a `description` field in
 its frontmatter (it's required by the zod schema). Write a short, direct
 description (1-2 sentences, under 160 characters) that tells readers what the
 post is about before they click through.
+
+## Design context
+
+### Users
+
+Mixed audience: academic peers and PhD students looking for publications and
+research context; current or prospective students exploring courses and
+technical posts; and creative/tech generalists arriving via search or social
+media. The site serves all three groups without alienating any of them.
+
+### Brand personality
+
+**Warm, rigorous, playful.** Accessible academic who doesn't take themselves too
+seriously --- serious ideas delivered with a light touch.
+
+### Aesthetic direction
+
+Dark-only theme. Content-forward with minimal decoration. The existing purple
+(`#be2edd`) brand colour, Atkinson Hyperlegible typography, and asymmetric
+rounded corners (8px 0 8px 8px) are established and should be preserved.
+
+**Anti-references:** slick startup landing pages (no hero animations, gradient
+CTAs, marketing-speak) and corporate/institutional sites (no committee-designed
+blandness, stock photos, or university template aesthetic).
+
+### Design principles
+
+1. **Content first** --- decoration supports, never competes
+2. **Warm darkness** --- inviting, not cold; purple-tinted neutrals over pure
+   greys
+3. **Quiet confidence** --- intentional and considered without drawing attention
+   to itself
+4. **Playful details** --- small surprises that reward attention without
+   demanding it
+5. **Accessibility as craft** --- not a checkbox but a design value
