@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2844 1600">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b1fb8"/>
+      <stop offset="1" stop-color="#be2edd"/>
+    </linearGradient>
+    <linearGradient id="warmth" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#be2edd"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#9b1fb8"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="0.3" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#be2edd" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="90" height="90" patternUnits="userSpaceOnUse">
+      <circle cx="45" cy="45" r="1.8" fill="#e0e0e0"/>
+    </pattern>
+  </defs>
+  <!-- Backdrop -->
+  <rect fill="#1a1a1a" width="2844" height="1600"/>
+  <rect fill="url(#haze)" width="2844" height="1600"/>
+  <!-- Matrix grid dots (the cross-eval) -->
+  <rect fill="url(#dots)" width="2844" height="1600" opacity="0.06"/>
+  <!-- Backdrop: diffuse cloud (question space, bottom-left) -->
+  <g transform="rotate(-2 500 800)">
+    <path d="M -200 850              C 0 500, 350 300, 650 480              S 1050 700, 1250 580              C 1450 460, 1500 750, 1350 1000              S 900 1250, 450 1150              C 100 1050, -150 1000, -200 850 Z" fill="url(#cool)" opacity="0.28"/>
+  </g>
+  <!-- Mid: rising terrain (transition) -->
+  <g transform="translate(60 -30) rotate(2 1800 1000)">
+    <path d="M 700 1700              C 950 1250, 1350 1050, 1700 1150              S 2150 850, 2500 950              C 2700 1020, 2950 880, 2950 1700 Z" fill="url(#glow)" opacity="0.32"/>
+  </g>
+  <!-- Fore: defined ridge (pledge space, top-right) -->
+  <g transform="rotate(3 2300 300)">
+    <path d="M 1400 -100              C 1600 100, 1900 200, 2200 100              S 2650 250, 2950 150              L 2950 -100 Z" fill="#be2edd" opacity="0.5"/>
+  </g>
+  <!-- Accent: warm lens shape (clarity emerging) -->
+  <g transform="translate(30 50) rotate(-4 2100 950)">
+    <path d="M 1700 1050              C 1900 880, 2200 830, 2400 920              S 2650 780, 2750 830              C 2800 860, 2740 1000, 2550 1060              S 2100 1150, 1700 1050 Z" fill="url(#warmth)" opacity="0.22"/>
+  </g>
+  <!-- Accent strokes (sharpening lines) -->
+  <path d="M 1000 1350            C 1350 1050, 1800 900, 2250 1000            S 2700 800, 2950 860" fill="none" stroke="#f59e0b" stroke-width="2.5" opacity="0.3" stroke-linecap="round"/>
+  <path d="M 200 450            C 450 320, 800 270, 1150 340            S 1550 220, 1800 260" fill="none" stroke="#e0e0e0" stroke-width="1.5" opacity="0.08" stroke-linecap="round"/>
+  <!-- Fine striations (right side, suggesting structure emerging) -->
+  <g opacity="0.05" stroke="#be2edd" stroke-width="1" stroke-linecap="round" fill="none">
+    <path d="M 1800 200 C 1850 500, 2100 1000, 2200 1400"/>
+    <path d="M 2000 150 C 2050 450, 2300 950, 2400 1350"/>
+    <path d="M 2200 100 C 2250 400, 2500 900, 2600 1300"/>
+    <path d="M 2400 80 C 2450 380, 2700 880, 2800 1280"/>
+  </g>
+</svg>
