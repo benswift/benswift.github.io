@@ -25,6 +25,7 @@ dogfood-output/
 
 # Generated files
 public/site-content.txt
+svg_gen_output/
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.pdf
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.tex

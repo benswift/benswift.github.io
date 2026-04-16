@@ -71,6 +71,22 @@ Never put blank lines inside inline HTML blocks (e.g. `<svg>`, `<div>`) in
 markdown files. CommonMark treats a blank line as the end of an HTML block,
 causing the rest of the HTML to be parsed as markdown and silently dropped.
 
+## SVG illustration style
+
+Palette: #be2edd #3b82f6 #f59e0b #1a1a1a #e0e0e0
+Prompt suffix: flowing Bézier curves, layered organic forms on dark background
+References: public/assets/images/posts/
+
+Hero SVGs use `viewBox="0 0 2844 1600"` (wide aspect ratio) with no
+`width`/`height` attributes. Store in `public/assets/images/posts/` and
+reference via the `image` frontmatter field (e.g.
+`image: /assets/images/posts/my-illustration.svg`). The same path serves both
+the rendered hero in PostLayout and the og:image metadata.
+
+Illustrations should be tangentially inspired by the post content --- not
+literal diagrams, but visual metaphors that reward a second look. Validate with
+`svg_validate.py --fix --palette "#be2edd,#3b82f6,#f59e0b,#1a1a1a,#e0e0e0,#9b1fb8"`.
+
 ## Creating new posts
 
 Run `pnpm run post "<title>"` to create a new blog post with the correct

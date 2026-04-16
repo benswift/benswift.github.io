@@ -24,6 +24,7 @@ const postUrl = `https://benswift.me${Astro.url.pathname}`
 
 <BaseLayout title={title} description={description} image={image} isPost={true} date={date} atUri={atUri}>
   <h1 class="page-title">{title}</h1>
+  {image && <img class="post-hero" src={image} alt="" />}
   <p class="post-date">{postDate}</p>
   <TagList tags={tags} />
   <slot />
@@ -31,3 +32,12 @@ const postUrl = `https://benswift.me${Astro.url.pathname}`
   <CitePost title={title} date={date} slug={slug} url={postUrl} atUri={atUri} />
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>
+
+<style>
+  .post-hero {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 0 8px 8px;
+    margin-bottom: 0.75rem;
+  }
+</style>
