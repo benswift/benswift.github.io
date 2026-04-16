@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/04/16/comp4020-pledges-not-questions": "d7e84030b885c1ab2d70064c974c9da6921231b9d55588825526afe42bdefa6b",
     "/blog/2026/04/15/comp4020-assessment": "ae49a92562a033c6eff054ce3eccde8b206ac8d78ff18ad0be5e7b42c2583152",
     "/blog/2026/04/09/one-git-heatmap-to-rule-them-all": "e666ab23d41656c7bfe50a9c1ec813339a1d4e298afbe292d69b5ccf9564bccf",
     "/blog/2026/04/08/agentic-coding-for-conscientious-objectors": "1afa941217d76e06c861b66bd06f0e5d69d32c286aae9f91fa868f5361c19a26",
@@ -13,7 +14,7 @@
     "/blog/2026/03/30/comp4020-agents-in-the-classroom": "034ca645d3f6f0057af5cfa64d1b8bfb2665ac5e8ca24d3c91099ce1aa43926f",
     "/blog/2026/03/30/comp4020-whats-the-theory-here": "1b79ade7260c002d939827dd54129d83097eea03d65afb8d2e6e25b8453ae2b4",
     "/blog/2026/03/27/managing-the-strategic-token-reserve": "c551c2ce47b57be703ba11ca766307146c88220e7ce8f3419123928daec62838",
-    "/blog/2026/03/26/comp4020-the-weekly-questions": "c1f93737735b1450480599c6702aa9342d5332ed733dd8498ec257d7ff4653d7",
+    "/blog/2026/03/26/comp4020-the-weekly-questions": "60bc2367bec8bbf2f887b4487581842c6b901a3b0e21343e25895aac50b7a6df",
     "/blog/2026/03/24/course-software-environment": "88f3dc9cca480f3b1b528f0d9f5ff84db5ee81881626898d8bf9252945379064",
     "/blog/2026/03/20/agentic-coding-studio": "0e8e3545a51c3c1f2e81bc59d459499e44b2810a8f3151cce179fad16c395946",
     "/blog/2026/03/19/perceptron-apparatus-inference-walkthrough": "3f7404155919e63a05d324856e2e7491a8d28779a714015bb187d089012afcb6",
