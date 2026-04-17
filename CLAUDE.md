@@ -5,8 +5,8 @@ Personal website and blog. Astro 6 + Svelte 5 + MDX, with Pagefind for search.
 ## Stack
 
 - Astro 6, Svelte 5 (runes), TypeScript, MDX
-- Pure CSS, lightningcss
-- oxlint + oxfmt for JS/TS, Prettier for Astro/Svelte/CSS/MD
+- Pure CSS with custom properties, Stylelint (stylelint-config-standard)
+- oxlint for JS/TS linting, oxfmt for formatting (all file types)
 - Vitest for tests
 - Pagefind for client-side search (runs post-build)
 
