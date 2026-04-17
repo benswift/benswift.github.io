@@ -3,7 +3,7 @@ id: TASK-21
 title: Add hero SVG support to blog posts
 status: To Do
 assignee: []
-created_date: '2026-04-16 04:07'
+created_date: "2026-04-16 04:07"
 labels:
   - frontend
   - design
@@ -19,6 +19,7 @@ priority: medium
 ## Description
 
 <!-- SECTION:DESCRIPTION:BEGIN -->
+
 Add support for displaying hero SVG illustrations at the top of blog posts. A WIP SVG for the "pledges, not questions" post has been generated and committed to svg_gen_output/20260416T034856Z/pledges-not-questions.svg.
 
 ## Current state

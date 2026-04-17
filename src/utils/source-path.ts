@@ -1,5 +1,5 @@
-import { existsSync } from "node:fs"
-import { resolve } from "node:path"
+import { existsSync } from "node:fs";
+import { resolve } from "node:path";
 
 /**
  * Resolve the actual source file path for a content collection entry, so
@@ -14,12 +14,12 @@ export function resolveContentPath(
   id: string,
   root: string = process.cwd(),
 ): string {
-  const stem = id.replace(/\.mdx?$/, "")
+  const stem = id.replace(/\.mdx?$/, "");
   for (const ext of [".md", ".mdx"] as const) {
-    const candidate = `${collection}/${stem}${ext}`
-    if (existsSync(resolve(root, candidate))) return candidate
+    const candidate = `${collection}/${stem}${ext}`;
+    if (existsSync(resolve(root, candidate))) return candidate;
   }
   // Fall back to .md — the caller knows this content exists because it came
   // from the loader, so this only hits for entries outside a collection.
-  return `${collection}/${stem}.md`
+  return `${collection}/${stem}.md`;
 }
