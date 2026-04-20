@@ -17,10 +17,27 @@
   let tickInterval: number | null = null
 
   const TARGET_FPS = 12
-  const CHAR_WIDTH = 14
-  const ROW_PITCH = 30
-  const FONT_SIZE = 20
-  const FONT = `700 ${FONT_SIZE}px "Atkinson Hyperlegible Mono Variable", "SF Mono", ui-monospace, monospace`
+  const MOBILE_BREAKPOINT = 640
+  const METRICS = {
+    mobile: { charWidth: 10, rowPitch: 22, fontSize: 15 },
+    desktop: { charWidth: 14, rowPitch: 30, fontSize: 20 },
+  }
+  let charWidth = METRICS.desktop.charWidth
+  let rowPitch = METRICS.desktop.rowPitch
+  let fontSize = METRICS.desktop.fontSize
+  let font = buildFontString(fontSize)
+
+  function buildFontString(size: number) {
+    return `700 ${size}px "Atkinson Hyperlegible Mono Variable", "SF Mono", ui-monospace, monospace`
+  }
+
+  function updateMetrics(width: number) {
+    const m = width < MOBILE_BREAKPOINT ? METRICS.mobile : METRICS.desktop
+    charWidth = m.charWidth
+    rowPitch = m.rowPitch
+    fontSize = m.fontSize
+    font = buildFontString(fontSize)
+  }
   const TYPE_RATE_MIN = 7
   const TYPE_RATE_MAX = 13
   const HEAD_CSS = "rgb(255, 248, 232)"
@@ -128,9 +145,9 @@ void main() {
   }
 
   function pickStartX(phrase: string) {
-    const textWidth = phrase.length * CHAR_WIDTH
-    const slack = Math.max(0, widthPx - textWidth - CHAR_WIDTH * 2)
-    return CHAR_WIDTH + randInt(0, slack + 1)
+    const textWidth = phrase.length * charWidth
+    const slack = Math.max(0, widthPx - textWidth - charWidth * 2)
+    return charWidth + randInt(0, slack + 1)
   }
 
   function resetRow(row: Row, now: number) {
@@ -149,7 +166,7 @@ void main() {
     for (let i = 0; i < numRows; i++) {
       const phrase = pickPhrase()
       const row: Row = {
-        y: i * ROW_PITCH + Math.floor((ROW_PITCH - FONT_SIZE) / 2),
+        y: i * rowPitch + Math.floor((rowPitch - fontSize) / 2),
         phrase,
         phraseIdx: 0,
         startX: pickStartX(phrase),
@@ -169,6 +186,7 @@ void main() {
     dpr = Math.min(window.devicePixelRatio || 1, 2)
     widthPx = Math.max(1, Math.floor(rect.width))
     heightPx = Math.max(1, Math.floor(rect.height))
+    updateMetrics(widthPx)
 
     textCanvas.width = Math.max(1, Math.floor(widthPx * dpr))
     textCanvas.height = Math.max(1, Math.floor(heightPx * dpr))
@@ -176,7 +194,7 @@ void main() {
     if (ctx) {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
       ctx.textBaseline = "top"
-      ctx.font = FONT
+      ctx.font = font
       ctx.fillStyle = "#0c0614"
       ctx.fillRect(0, 0, widthPx, heightPx)
     }
@@ -184,8 +202,8 @@ void main() {
     glCanvas.width = textCanvas.width
     glCanvas.height = textCanvas.height
 
-    const verticalSlack = Math.max(0, heightPx - ROW_PITCH * 2)
-    numRows = Math.max(1, Math.floor(verticalSlack / ROW_PITCH) + 2)
+    const verticalSlack = Math.max(0, heightPx - rowPitch * 2)
+    numRows = Math.max(1, Math.floor(verticalSlack / rowPitch) + 2)
     initRows(performance.now() / 1000)
   }
 
@@ -200,7 +218,7 @@ void main() {
     ctx.fillRect(0, 0, widthPx, heightPx)
 
     ctx.textBaseline = "top"
-    ctx.font = FONT
+    ctx.font = font
 
     for (const row of rows) {
       if (row.state === "idle") {
@@ -212,11 +230,11 @@ void main() {
       while (row.accumulator >= 1 && row.phraseIdx < row.phrase.length) {
         row.accumulator -= 1
         const currentIdx = row.phraseIdx
-        const x = row.startX + currentIdx * CHAR_WIDTH
+        const x = row.startX + currentIdx * charWidth
 
         // Demote previous head char to tail colour
         if (row.lastHeadChar && currentIdx > 0) {
-          const prevX = row.startX + (currentIdx - 1) * CHAR_WIDTH
+          const prevX = row.startX + (currentIdx - 1) * charWidth
           ctx.fillStyle = TAIL_CSS
           ctx.fillText(row.lastHeadChar, prevX, row.y)
         }
@@ -235,7 +253,7 @@ void main() {
       // Phrase fully typed — demote the final head to tail and enter idle hold
       if (row.phraseIdx >= row.phrase.length && row.state === "typing") {
         if (row.lastHeadChar) {
-          const lastX = row.startX + (row.phraseIdx - 1) * CHAR_WIDTH
+          const lastX = row.startX + (row.phraseIdx - 1) * charWidth
           ctx.fillStyle = TAIL_CSS
           ctx.fillText(row.lastHeadChar, lastX, row.y)
           row.lastHeadChar = ""
