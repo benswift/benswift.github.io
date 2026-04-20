@@ -1,6 +1,8 @@
 ---
+import { getCollection } from "astro:content"
 import BaseLayout from "./BaseLayout.astro"
 import SiteFooter from "../components/SiteFooter.astro"
+import HeroCanvas from "../components/svelte/HeroCanvas.svelte"
 
 interface Props {
   description?: string
@@ -14,10 +16,39 @@ interface Props {
 const props = Astro.props
 const description = props.description ?? props.frontmatter?.description
 const image = props.image ?? props.frontmatter?.image
+
+const curatedPhrases = [
+  "Ben Swift",
+  "benswift",
+  "Human-Scale AI",
+  "Cybernetic Studio",
+  "ANU School of Cybernetics",
+  "LLMs Unplugged",
+  "Agentic Coding Studio",
+  "livecoding",
+  "cybernetics",
+  "researcher",
+  "educator",
+  "artist",
+  "developer",
+  "creative technologist",
+  "musical livecoder",
+  "TOPLAP",
+  "Canberra",
+  "Claude Code",
+  "Extempore",
+  "human-computer interaction",
+  "creative computing",
+]
+
+const blogEntries = await getCollection("blog", ({ data }) => data.published !== false)
+const blogTitles = blogEntries.map((e) => e.data.title)
+
+const heroPhrases = [...curatedPhrases, ...blogTitles]
 ---
 
 <BaseLayout description={description} image={image}>
-  {image && <img class="home-hero-svg" src={image} alt="" />}
+  <HeroCanvas client:only="svelte" phrases={heroPhrases} />
   <div class="hero">
     <div class="hero-content">
       <div class="hero-text">
@@ -54,13 +85,6 @@ const image = props.image ?? props.frontmatter?.image
 <style>
   .hero {
     margin-bottom: 2rem;
-  }
-
-  .home-hero-svg {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 0 8px 8px;
-    margin-bottom: 1.5rem;
   }
 
   .hero-name {

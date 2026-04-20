@@ -32,6 +32,9 @@ importers:
       remark-smartypants:
         specifier: ^3.0.2
         version: 3.0.2
+      shaderpad:
+        specifier: 1.0.0-beta.77
+        version: 1.0.0-beta.77
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
@@ -3010,6 +3013,17 @@ packages:
     resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
     engines: {node: '>=10'}
     hasBin: true
+
+  shaderpad@1.0.0-beta.77:
+    resolution: {integrity: sha512-aSGpacLkf8o0iA2Wq3fUyxAfjyQ75Hiz/7OjRGV6ZyRa6Raoy2e0pJJ3aQHrK255apGT0YgQZjM6j1+OBtkOXg==}
+    peerDependencies:
+      '@mediapipe/tasks-vision': '*'
+      react: '>=18'
+    peerDependenciesMeta:
+      '@mediapipe/tasks-vision':
+        optional: true
+      react:
+        optional: true
 
   sharp@0.34.5:
     resolution: {integrity: sha512-Ou9I5Ft9WNcCbXrU9cMgPBcCK8LiwLqcbywW3t4oDV37n1pzpuNLsYiAV8eODnjbtQlSDwZ2cUEeQz4E54Hltg==}
@@ -7024,6 +7038,8 @@ snapshots:
       kind-of: 6.0.3
 
   semver@7.7.4: {}
+
+  shaderpad@1.0.0-beta.77: {}
 
   sharp@0.34.5:
     dependencies:

@@ -31,6 +31,7 @@
     "astromotion": "github:benswift/astromotion",
     "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "remark-smartypants": "^3.0.2",
+    "shaderpad": "1.0.0-beta.77",
     "sharp": "^0.34.5",
     "three": "^0.184.0"
   },
