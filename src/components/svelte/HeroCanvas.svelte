@@ -364,12 +364,12 @@ void main() {
 <style>
   .hero-canvas {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw) 1.5rem;
     aspect-ratio: 2844 / 1600;
-    border-radius: 8px 0 8px 8px;
+    max-height: 506px;
     overflow: hidden;
     background: #0c0614;
-    margin-bottom: 1.5rem;
   }
 
   .text-canvas {
