@@ -48,6 +48,11 @@
   const BURST_INTERVAL_MIN = 3
   const BURST_INTERVAL_MAX = 13
   const BURST_SLOPE_RANGE = 0.45
+  const BURST_COLOR_PAIRS: { a: [number, number, number]; b: [number, number, number] }[] = [
+    { a: [0.23, 0.51, 0.96], b: [0.75, 0.18, 0.87] }, // blue -> purple (default)
+    { a: [0.75, 0.18, 0.87], b: [0.96, 0.62, 0.04] }, // purple -> amber
+    { a: [0.96, 0.62, 0.04], b: [1.0, 0.93, 0.78] }, // amber -> cream
+  ]
   const MAX_PHRASE_LEN = 36
   const FALLBACK_PHRASES = ["benswift", "human-scale AI", "livecoding", "cybernetics"]
 
@@ -84,6 +89,8 @@ uniform float u_burstProgress;
 uniform float u_burstActive;
 uniform float u_burstSlope;
 uniform float u_burstDirection;
+uniform vec3 u_burstColorA;
+uniform vec3 u_burstColorB;
 out vec4 outColor;
 
 float hash(vec2 p) {
@@ -119,8 +126,8 @@ void main() {
     float halo = exp(-dist * 9.0) * 0.3;
     float envelope = smoothstep(0.0, 0.12, p) * (1.0 - smoothstep(0.82, 1.0, p));
     float pulse = (core + halo) * envelope;
-    // Flash colour shifts across the sweep (blue -> purple)
-    vec3 flash = mix(vec3(0.23, 0.51, 0.96), vec3(0.75, 0.18, 0.87), 0.55 + 0.45 * sin(uv.y * 2.8 + u_time * 0.5));
+    // Flash colour shifts across the sweep (pair selected per burst)
+    vec3 flash = mix(u_burstColorA, u_burstColorB, 0.55 + 0.45 * sin(uv.y * 2.8 + u_time * 0.5));
     col += pulse * flash * 0.65;
     // Intensify anything painted on the text canvas (the text lights up)
     float textLum = dot(base, vec3(0.299, 0.587, 0.114));
@@ -272,9 +279,12 @@ void main() {
       burstActive = true
       burstStart = t
       if (shader) {
+        const pair = BURST_COLOR_PAIRS[Math.floor(Math.random() * BURST_COLOR_PAIRS.length)]!
         shader.updateUniforms({
           u_burstSlope: randFloat(-BURST_SLOPE_RANGE, BURST_SLOPE_RANGE),
           u_burstDirection: Math.random() < 0.5 ? 1 : -1,
+          u_burstColorA: pair.a,
+          u_burstColorB: pair.b,
         })
       }
     }
@@ -349,6 +359,8 @@ void main() {
     shader.initializeUniform("u_burstActive", "float", 0)
     shader.initializeUniform("u_burstSlope", "float", 0)
     shader.initializeUniform("u_burstDirection", "float", 1)
+    shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0]!.a)
+    shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b)
 
     nextBurstAt = performance.now() / 1000 + 2.5
 
