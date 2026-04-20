@@ -45,8 +45,9 @@
   const TAIL_CSS = "rgb(216, 94, 244)"
   const BG_RGBA = "rgba(12, 6, 22, 0.05)"
   const BURST_DURATION = 1.6
-  const BURST_INTERVAL_MIN = 4.5
-  const BURST_INTERVAL_MAX = 9.5
+  const BURST_INTERVAL_MIN = 3
+  const BURST_INTERVAL_MAX = 13
+  const BURST_SLOPE_RANGE = 0.45
   const MAX_PHRASE_LEN = 36
   const FALLBACK_PHRASES = ["benswift", "human-scale AI", "livecoding", "cybernetics"]
 
@@ -81,6 +82,8 @@ uniform float u_time;
 uniform vec2 u_resolution;
 uniform float u_burstProgress;
 uniform float u_burstActive;
+uniform float u_burstSlope;
+uniform float u_burstDirection;
 out vec4 outColor;
 
 float hash(vec2 p) {
@@ -108,8 +111,9 @@ void main() {
   // Evaluation-burst sweep
   if (u_burstActive > 0.5) {
     float p = u_burstProgress;
-    float sweepX = p * 1.35 - 0.175;
-    float lineX = uv.x - uv.y * 0.22;
+    float flipped = u_burstDirection > 0.0 ? p : 1.0 - p;
+    float sweepX = flipped * 1.8 - 0.4;
+    float lineX = uv.x - uv.y * u_burstSlope;
     float dist = abs(lineX - sweepX);
     float core = exp(-dist * 42.0);
     float halo = exp(-dist * 9.0) * 0.3;
@@ -267,6 +271,12 @@ void main() {
     if (!burstActive && t >= nextBurstAt) {
       burstActive = true
       burstStart = t
+      if (shader) {
+        shader.updateUniforms({
+          u_burstSlope: randFloat(-BURST_SLOPE_RANGE, BURST_SLOPE_RANGE),
+          u_burstDirection: Math.random() < 0.5 ? 1 : -1,
+        })
+      }
     }
     let burstProgress = -1
     if (burstActive) {
@@ -337,6 +347,8 @@ void main() {
     })
     shader.initializeUniform("u_burstProgress", "float", 0)
     shader.initializeUniform("u_burstActive", "float", 0)
+    shader.initializeUniform("u_burstSlope", "float", 0)
+    shader.initializeUniform("u_burstDirection", "float", 1)
 
     nextBurstAt = performance.now() / 1000 + 2.5
 
