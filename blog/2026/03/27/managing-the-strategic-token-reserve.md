@@ -19,6 +19,9 @@ See [all posts in the series](/blog/tag/comp4020/).
 **Update:** the platform question is now settled---we're running on Anthropic's
 Claude API. See
 [Anthropic comes to the party](/blog/2026/04/02/anthropic-comes-to-the-party/).
+The implementation design---proxy architecture, quota enforcement, and full
+traffic logging---is now detailed in the follow-up,
+[token management by proxy](/blog/2026/04/22/token-management-by-proxy/).
 
 :::
 
