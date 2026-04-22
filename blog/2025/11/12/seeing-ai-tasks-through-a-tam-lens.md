@@ -29,28 +29,27 @@ would give very different answers to the "are LLMs useful" depending on the task
 at hand.
 
 So I propose a different framework[^branding]: treat each (user, model, task)
-triple as its own thing, mapped onto a two-dimensional plane. There are two
-orthogonal axes:
+triple as its own thing, mapped onto a two-dimensional plane. One axis is
+_familiarity_---how much you've actually used this specific model for this
+specific task. It ranges from "never tried" to "extensive experience", and it
+only moves in one direction: you can't become less familiar with something
+you've tried.
 
-**Familiarity**: how much you've actually used this specific model for this
-specific task. Ranges from "never tried" to "extensive experience". This only
-moves in one direction---you can't become less familiar with something you've
-tried.
-
-**Usefulness**: whether using the model actually helps you get the task done
-faster. Ranges from actively slowing you down through making no real difference
-to genuinely speeding you up. This corresponds to TAM's "perceived usefulness"
-but evaluated task-specifically and focused on time/effort rather than moral
-dimensions[^ethics]. Crucially, this assessment can change as familiarity
-increases---a tool that initially seems fast might prove time-consuming once you
-factor in error correction, or initial setup overhead might give way to genuine
-productivity gains. And there's always going to be noise (stochastic parrots and
-all that) so it's really just an "in general" judgement.
+The other axis is _usefulness_: whether using the model actually helps you
+get the task done faster. It ranges from actively slowing you down through
+making no real difference to genuinely speeding you up. This corresponds to
+TAM's "perceived usefulness" but evaluated task-specifically and focused on
+time/effort rather than moral dimensions[^ethics]. Crucially, this assessment
+can change as familiarity increases---a tool that initially seems fast might
+prove time-consuming once you factor in error correction, or initial setup
+overhead might give way to genuine productivity gains. And there's always
+going to be noise (stochastic parrots and all that) so it's really just an
+"in general" judgement.
 
 The same user with the same AI model might simultaneously occupy multiple zones
 depending on task. And importantly, there's a substantial neutral zone in the
 middle---tasks where using the tool takes about as much time and effort as doing
-it yourself.
+it yourself. Reading the diagram below zone-by-zone fills it out.
 
 <svg class="tam-diagram" width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <!-- Background zones -->
@@ -90,21 +89,19 @@ it yourself.
   <line x1="50" y1="317" x2="550" y2="317" class="grid-line" stroke-width="1" stroke-dasharray="5,5"/>
 </svg>
 
-## The zones
-
-**High familiarity, speeds you up** (upper right): This is the good place.
-You've got extensive experience, you've developed effective prompting
-strategies, you understand the limitations, and you've integrated it into your
-workflow in ways that genuinely save time. This might be generating first drafts
+The upper-right quadrant---high familiarity and genuinely speeds you up---is
+the good place. You've got extensive experience, you've developed effective
+prompting strategies, you understand the limitations, and you've integrated it
+into your workflow in ways that genuinely save time. This might be generating first drafts
 of routine correspondence that need minimal editing. For me (an academic AI
 researcher and software developer) things like writing scripts to automate
 repetitive tasks and generating boilerplate code are in this bucket.
 
-**High familiarity, no difference or slows you down** (middle/lower right):
-Informed rejection. You haven't simply failed to try---you've engaged
-extensively and concluded it doesn't actually save time, or actively wastes it.
-You've hit the model's limitations repeatedly enough to form a stable
-assessment.
+The middle-and-lower right---high familiarity, but no difference or actively
+slowing you down---is informed rejection. You haven't simply failed to
+try---you've engaged extensively and concluded it doesn't actually save time,
+or actively wastes it. You've hit the model's limitations repeatedly enough
+to form a stable assessment.
 
 The neutral zone is interesting---tasks where using the tool takes about as much
 time and effort as doing it yourself, so you might use it or might not depending
@@ -123,22 +120,21 @@ use of Claude Code (and friends) some coding tasks fall into this for
 sure---they add technical debt that takes longer to fix than writing correctly
 from scratch.
 
-**Low familiarity, speeds you up** (upper left): Early positive impression.
-You've tried it once or twice and it seemed to save time, but you haven't
-encountered edge cases or the full overhead of error correction. This zone is
-unstable---continued use drives rightward along the familiarity axis, but
-percieved usefulness might shift up or down as experience accumulates and you
-discover hidden time costs.
+The upper-left---low familiarity but seems to speed you up---is the early
+positive impression. You've tried it once or twice and it seemed to save time,
+but you haven't encountered edge cases or the full overhead of error
+correction. This zone is unstable: continued use drives rightward along the
+familiarity axis, but perceived usefulness might shift up or down as
+experience accumulates and you discover hidden time costs.
 
-**Low familiarity, no difference or slows you down** (middle/lower left):
-Premature rejection or speculative avoidance. Either you tried it once, found it
-took just as long or longer, and gave up, or you suspect the model can't handle
-it efficiently based on general reputation. Unlike informed rejection, these
-assessments are speculative rather than experiential.
+The middle-and-lower left, finally, is premature rejection or speculative
+avoidance. Either you tried it once, found it took just as long or longer, and
+gave up, or you suspect the model can't handle it efficiently based on general
+reputation. Unlike informed rejection, these assessments are speculative
+rather than experiential.
 
-## Why this matters
-
-Consider an academic researcher (hey---I write what I know). I might map my
+This framing matters because it cuts against how we usually talk about AI
+adoption. Consider an academic researcher (hey---I write what I know). I might map my
 experience like this:
 
 - _vibecoding all the things_: upper right---see elsewhere on my blog, but I've
@@ -173,18 +169,14 @@ type, with performance losses in decision-making tasks but gains in content
 creation tasks. The tool's utility is entirely task-dependent. Which really
 shouldn't surprise anyone, but here we are.
 
-## The transformation/automation/magnification thing
-
-You've probably seen people claim AI will "transform" work in their domain. Most
-"transformation" claims turn out to be:
-
-- **automation** of tasks already in the upper-right quadrant (where the tool
-  genuinely speeds you up on familiar tasks, and/or can be used to write a
-  script to fully automate a task)
-- **magnification** of existing patterns (making fast workers slightly faster,
-  inefficient workers slightly more inefficient)
-- **wishful thinking** about tasks currently in the lower quadrants,
-  particularly by folks selling AI tools
+You've probably seen people claim AI will "transform" work in their domain.
+Most "transformation" claims turn out to be one of three things: automation of
+tasks already in the upper-right quadrant (where the tool genuinely speeds you
+up on familiar tasks, and/or can be used to write a script to fully automate a
+task); magnification of existing patterns, making fast workers slightly faster
+and inefficient workers slightly more inefficient; or wishful thinking about
+tasks currently in the lower quadrants, particularly by folks selling AI
+tools.
 
 Real transformation would mean moving tasks between zones in systematic ways.
 That might happen---models improve, prompting strategies evolve---but it's an
@@ -194,11 +186,10 @@ And let's be honest about the neutral zone. A lot of supposed "AI-assisted" work
 actually lives here---using the tool because it's there, because everyone else
 is, because it feels like you should, even when it's not actually saving time.
 
-## What to do with this
-
-For users: instead of asking "should I use ChatGPT?", ask "for which specific
-tasks does it actually save me time after sufficient practice?" This encourages
-experimentation while validating informed rejection.
+So what do you do with all this? For users: instead of asking "should I use
+ChatGPT?", ask "for which specific tasks does it actually save me time after
+sufficient practice?" This encourages experimentation while validating
+informed rejection.
 
 Different zones need different strategies:
 
@@ -220,9 +211,7 @@ that
 [individual performance gains from AI systems depend on task-technology fit](https://aisel.aisnet.org/ecis2020_rp/200/),
 we need frameworks that capture this task-level variation.
 
-## Caveats
-
-All models are wrong, some are useful. Is this one useful? Maybe... I'm still
+Caveats, of course. All models are wrong, some are useful. Is this one useful? Maybe... I'm still
 thinking it through.
 
 The two dimensions do miss important factors---confidence, cost, and especially

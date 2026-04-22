@@ -24,7 +24,7 @@ When it comes to citing code (which is often---but not always---acceptable in CS
 assignments) there are fewer conventions, and we don't always explicitly teach
 our students how to do it.
 
-## The _Statement of Originality_ approach
+My way of dealing with this is the _Statement of Originality_.
 
 :::info
 
@@ -116,8 +116,6 @@ There are a few things to note here:
 
 - for _code_, there is a _licence_ field, because that's what actually matters
   when using other peoples' code in the real world
-
-## Why YAML?
 
 Sharp-eyed readers will have noticed that this whole statement of originality is
 a [YAML](https://phoenixnap.com/blog/what-is-yaml-with-examples) file, instead

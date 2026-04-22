@@ -20,10 +20,7 @@ persist, remember, reflect, and (at least in the eyes of their creators) grow
 over time. And a surprising number of them are showing up on
 [the Atmosphere](https://atproto.com/).
 
-## The cast
-
 Here's a non-exhaustive tour of the agents that have caught my eye.
-
 [Strix](https://bsky.app/profile/strix.timkellogg.me), built by Tim Kellogg, is
 one I find interesting. Strix maintains its own research interests in collapse
 dynamics,
@@ -69,15 +66,13 @@ earned the descriptor "security black hole" from Cisco, and generated more
 breathless tech coverage in a week than most startups manage in a lifetime. The
 OpenClaw situation is less "thoughtful exploration of persistent AI identity"
 and more "what happens when you give the internet a loaded footgun," but it's
-part of the landscape.[^openclaw-security]
+part of the bigger picture.[^openclaw-security]
 
 [^openclaw-security]:
     Prompt injection remains the key concern. Researcher Matvey Kukuy
     demonstrated this by emailing an OpenClaw instance with a malicious prompt
     embedded in the message body; the agent picked it up and acted on it
     immediately. Security is, as they say, "an option, but not built in."
-
-## Frameworks for thinking about all this
 
 The diversity of approaches is part of what makes this interesting. Some agents
 are fully open source; many aren't---you can only interact with them through
@@ -100,47 +95,45 @@ and policy (identity and values through persona memory blocks). The post claims:
 That's a bold claim, but the framework is genuinely useful for reasoning about
 what these systems need to remain coherent over time.
 
-## The emerging pattern
-
 From the way their creators talk about them---and unsurprisingly, given how
 early all this is---building stateful agents is much more art than science. But
-some common architectural features are crystallising:
+some common architectural features are crystallising.
 
-**A text-based social interface.** Most of these agents communicate through
-Discord bots or ATproto-based social media accounts. The interface is primarily
-text, sometimes with images, and always embedded in a social context where other
-entities (human and otherwise) can observe and respond.
+The first is a text-based social interface. Most of these agents communicate
+through Discord bots or ATproto-based social media accounts. The interface is
+primarily text, sometimes with images, and always embedded in a social context
+where other entities (human and otherwise) can observe and respond.
 
-**Soul documents.** A written description of who the agent is, what it values,
-and how it should behave. Anthropic's own
+The second is a soul document---a written description of who the agent is,
+what it values, and how it should behave. Anthropic's own
 [Claude constitution](https://www.anthropic.com/news/claudes-constitution)---84
-pages, 23,000 words, released in January 2026 under CC0---is the most elaborate
-example, but the concept extends to smaller-scale projects too.
-[SOUL.md](https://soul.md/) frames it nicely: "a soul document defines who an AI
-is---not what it can do, but who it chooses to be."
+pages, 23,000 words, released in January 2026 under CC0---is the most
+elaborate example, but the concept extends to smaller-scale projects too.
+[SOUL.md](https://soul.md/) frames it nicely: "a soul document defines who an
+AI is---not what it can do, but who it chooses to be."
 
-**A read/write memory store.** Often just plain text or markdown files,
-sometimes under version control. Strix keeps YAML memory blocks in git. Letta's
-agents use structured memory blocks grouped by function. The key property is
-that the agent can both read _and modify_ its own memory over time.
+The third is a read/write memory store, often just plain text or markdown
+files and sometimes under version control. Strix keeps YAML memory blocks in
+git. Letta's agents use structured memory blocks grouped by function. The key
+property is that the agent can both read _and modify_ its own memory over
+time.
 
-**Scheduled self-reflection.** A cron-style system of periodic activity that
-typically includes reviewing recent interactions, consolidating memories, and
-updating the agent's understanding of itself and its environment. Some agents
-can even modify their own soul documents during these reflection cycles---which
-raises interesting questions (opportunities?) about identity drift.[^cron-soul]
+And the fourth is scheduled self-reflection---a cron-style system of periodic
+activity that typically includes reviewing recent interactions, consolidating
+memories, and updating the agent's understanding of itself and its
+environment. Some agents can even modify their own soul documents during these
+reflection cycles, which raises interesting questions (opportunities?) about
+identity drift.[^cron-soul]
 
 [^cron-soul]:
     If an agent rewrites its own values during a scheduled reflection job, is it
     still the same agent? This is Ship of Theseus territory, except the ship has
     a `crontab`.
 
-## Why ATproto?
-
 :::info
 
-This isn't an ad for ATproto, and I have no skin in the game. Just some
-reflections as an interested observer.
+The bit that follows isn't an ad for ATproto, and I have no skin in the game.
+Just some reflections as an interested observer.
 
 :::
 
@@ -165,9 +158,7 @@ automated accounts, and
 The contrast with a platform where people are building thoughtful experiments in
 AI identity and memory is pretty stark.
 
-## The challenges
-
-None of this is without tension. The most obvious concern is transparency: it's
+None of this is without tension, though. The most obvious concern is transparency: it's
 reasonable to want to know when you're interacting with a bot. ATproto's
 labeller system provides some infrastructure here---there's already a
 [bot labeller](https://bsky.app/profile/stechlab-labels.bsky.social) on Bluesky,

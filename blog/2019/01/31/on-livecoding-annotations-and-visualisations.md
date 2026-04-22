@@ -56,8 +56,6 @@ sometimes useful, but there's a lot you can show with inline `text-decoration`
 hacks and adding a few comments to provide ascii text to decorate (when it isn't
 explicitly represented in the first place).
 
-## Mixing annotations and live edits
-
 **But**, (you can probably tell that there was going to be a "but" somewhere)
 many of the cool annotations displayed don't work while the code is being
 edited[^broken]. In some cases they actually break the code (try editing one of
@@ -137,8 +135,6 @@ ear in the club---something which I don't have currently in my livecoding setup
     situations where I want to check what the result of an algorithmic/parameter
     change might be without inflicting it on the audience.
 
-## Conclusion
-
 You can probably tell that I think there's a productive research agenda
 here---and I hope Charlie continues with it. I hope to help out myself, too. I
 guess my main point is just to shout from the rooftops:
@@ -154,9 +150,8 @@ behaviour and as a "view" on the hidden state of the program.
 Anyway, this is just a blog post, so I'm off the hook with regard to rigour,
 accountability and just general good scholarship, right 😜
 
-## Addendum: thoughts on web publishing
-
-I love that this essay/paper is published online---the interactive examples are
+As an addendum, a few thoughts on web publishing. I love that this
+essay/paper is published online---the interactive examples are
 crucial to getting the point across. I know that some conferences & journals
 these days allow html submission (nicer for reading on mobile, anyway) and other
 multimedia artefacts (audio/video recordings) but it's still hard to get

@@ -15,11 +15,9 @@ in a series---see [all posts tagged comp4020](/blog/tag/comp4020/).
 
 :::
 
-## Course Description (aka "the pitch")
-
-LLM-based coding agents, which run tools (e.g. edit files, run code, search the
-web) in a loop to achieve a goal, offer a powerful workflow for developing
-software. This is especially true for application domains which are
+Here's the pitch. LLM-based coding agents, which run tools (e.g. edit files,
+run code, search the web) in a loop to achieve a goal, offer a powerful
+workflow for developing software. This is especially true for application domains which are
 well-represented in LLM training sets---like the web.
 
 Moving beyond naive "vibecoding", this course provides a studio-based "iterate
@@ -31,10 +29,9 @@ receive feedback from peers and instructors. By the end of the course each
 student will have designed, developed and deployed _multiple_ web app prototypes
 using a rapid, feedback-driven process.
 
-## What's the background to this course?
-
-Most people point to the ChatGPT release in November 2022 as an inflection point
-in the use and influence of LLMs in modern life, but for software developers
+The background here is worth a word. Most people point to the ChatGPT release
+in November 2022 as an inflection point in the use and influence of LLMs in
+modern life, but for software developers
 it's Claude Code's release in May 2025 which has made the biggest change to the
 way we do (some of) our job. I don't subscribe to either the "booster" or
 "doomer" end of the spectrum with AI/LLM tools; but I am curious about the way
@@ -45,11 +42,10 @@ before moving to the School of Cybernetics in 2021) has asked me to create a new
 course for 2026 and this is the course I think we need right now. It's the
 course _I_ want to create, anyway.
 
-## Draft learning outcomes
-
 :::info
 
-These are draft learning outcomes---subject to change as the course develops.
+What follows are the draft learning outcomes---subject to change as the
+course develops.
 
 :::
 
@@ -62,8 +58,6 @@ At the completion of this course, students will be able to:
 3. design and evaluate different LLM agent workflows for software development
 4. apply principles from the scholarly literature to work-in-progress and
    finalised software prototypes
-
-## What's next?
 
 I'm still working through the assessment structure, the weekly schedule, and the
 technical infrastructure. If you've got thoughts on teaching agentic software

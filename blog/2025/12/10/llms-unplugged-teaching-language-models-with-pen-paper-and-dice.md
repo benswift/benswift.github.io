@@ -31,10 +31,9 @@ Learners manually count word transitions, record them in a grid, then roll dice
 to generate text. The probabilistic nature becomes tangible instead of
 mysterious.
 
-## Why unplugged?
-
-This builds on the [CS Unplugged](https://www.csunplugged.org/) tradition of
-teaching computer science concepts without computers. That project has brilliant
+The "unplugged" framing is borrowed: this builds on the
+[CS Unplugged](https://www.csunplugged.org/) tradition of teaching computer
+science concepts without computers. That project has brilliant
 activities for teaching algorithms, binary numbers, and compression. But there's
 a gap when it comes to language models specifically[^gap].
 
@@ -42,21 +41,16 @@ a gap when it comes to language models specifically[^gap].
     CS Unplugged does have some machine learning activities, but they focus on
     classification rather than generative models.
 
-The unplugged approach has real pedagogical advantages:
-
-- **Transparency**: when you're physically counting transitions and filling in a
-  grid, there's no black box. You can see exactly where the probabilities come
-  from.
-- **Accessibility**: you don't need computers, coding skills, or expensive
-  infrastructure. Just paper and dice.
-- **Engagement**: rolling dice to generate text is surprisingly fun. There's
-  something satisfying about seeing a probability distribution manifest as
-  actual words. Honestly I think this is just as fun as a team bonding/bucks'
-  night activity, but the learning is real.
-- **Transferability**: once you've built a bigram model by hand, the jump to
-  understanding GPT becomes conceptual rather than magical.
-
-## Who's this for?
+The unplugged approach has real pedagogical advantages. The activity is
+transparent: when you're physically counting transitions and filling in a
+grid, there's no black box, and you can see exactly where the probabilities
+come from. It's accessible, too---you don't need computers, coding skills, or
+expensive infrastructure, just paper and dice. Rolling dice to generate text
+is also surprisingly fun (honestly I think this is just as good as a team
+bonding or bucks'-night activity, but the learning is real). And once you've
+built a bigram model by hand, the jump to understanding GPT becomes
+conceptual rather than magical, which is the transfer we're actually aiming
+for.
 
 We've tested this with hundreds of participants across wildly different
 contexts: school students (12+), undergrads, senior public servants, educators,
@@ -78,9 +72,7 @@ really think that this is just the beginning, and I (along with the team at the
 Cybernetic Studio at the ANU School of Cybernetics) have some big plans for LLMs
 Unplugged in 2026.
 
-## What you actually do
-
-The core activity goes like this:
+The core activity itself goes like this:
 
 1. pick a simple text corpus (we provide booklets with pre-selected texts)
 2. manually count word transitions: if "the" appears 10 times, and "cat" follows
@@ -115,10 +107,8 @@ LLMs Unplugged lessons which cover all these topics and more. The unplugged
 approach gives you the conceptual foundation. It's not trying to replicate
 production LLMs---it's trying to make the core ideas understandable.
 
-## What's next
-
-The fundamentals are solid, but there's more work to do---in particular to road
-test this in a wide range of classrooms (and boardrooms). The bones of the
+The fundamentals are solid, but there's more work to do---in particular to
+road test this in a wide range of classrooms (and boardrooms). The bones of the
 activity are the same, but there are always going to be tweaks which can help it
 land for a particular audience.
 

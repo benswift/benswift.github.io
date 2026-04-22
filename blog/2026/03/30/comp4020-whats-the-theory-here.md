@@ -21,8 +21,8 @@ processes?
 
 The answer which I gave him, which I believe to be true in my bones, is that
 nobody really knows for sure. But a lot of folks are trying to figure it
-out---some quietly with their organisations, some very loudly on (ugh!)
-LinkedIn, and lots in between[^loudly].
+out---some in private conversations inside their organisations, some very
+loudly on (ugh!) LinkedIn, and lots in between[^loudly].
 
 The question was really one of _theory_; while there are many in the hard
 sciences that would criticise software development/engineering as having a

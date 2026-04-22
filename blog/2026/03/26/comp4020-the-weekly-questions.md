@@ -31,17 +31,15 @@ something students do every single week, the same questions each time, until the
 thinking becomes habitual. After a lot of back and forth I've landed on three
 questions.
 
-## The three questions
-
-**Why this?** Why did you build what you built in response to the week's
-provocation? Why should this thing exist? This is about intentionality---not
+The first is _why this?_ Why did you build what you built in response to the
+week's provocation? Why should this thing exist? This is about intentionality---not
 "what does it do" (we can see that) but "what were you going for?" A student who
 built a data visualisation might say they wanted to make a particular dataset
 legible to non-experts. A student who built something weird might say the
 provocation reminded them of a thing they'd always wanted to try. Either answer
 is fine, the important thing is to have _an_ answer.
 
-**What made it better?** This one draws directly on the
+The second is _what made it better?_ This one draws directly on the
 [three feedback loops](/blog/2026/02/24/climbing-the-good-gradient/) from my
 earlier post about climbing the "good" gradient. What signals helped you figure
 out which direction was uphill? Maybe your test suite caught a subtle bug before
@@ -61,8 +59,8 @@ that are flying around, and then sharing with their classmates what they found.
 [GasTown](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04), if
 you will.
 
-**Any good?** The hardest question, and the most important one. Is this
-prototype good? For whom? What does "good" even mean here? And if you could keep
+The third is _any good?_---the hardest question, and the most important one.
+Is this prototype good? For whom? What does "good" even mean here? And if you could keep
 going, which direction would you head? This is where students practise the skill
 that agentic coding makes simultaneously more important and easier to neglect:
 _judgement_ or
@@ -71,8 +69,7 @@ When producing code is cheap, knowing whether it's worth producing is the whole
 game. I want students to get comfortable making and defending quality
 claims---not in the abstract, but about their own work, in front of their peers.
 
-## Skeets, not essays
-
+The format these answers come in matters as much as the questions themselves.
 Each week, alongside their prototype, students submit three
 [skeets](https://bsky.app/)---one per question, 280 characters max, with an
 optional image. That's it. Actually, they don't actually have to post them
@@ -100,10 +97,8 @@ adaptation: lightweight enough to sustain weekly, compressed enough to force
 precision, and native to the kind of short-form writing that this generation of
 students already knows how to do well.
 
-## Staged visibility
-
-The skeets follow the same staged release model as the
-[source code and deployments](/blog/2026/03/18/radical-openness/). Before your
+The visibility of those skeets is staged, following the same release model as
+the [source code and deployments](/blog/2026/03/18/radical-openness/). Before your
 studio crit, your skeets are visible only to you---you've done the thinking, but
 you haven't been anchored by anyone else's reflections. When your crit begins,
 they become visible to your studio group. The tutor can reference them ("you
@@ -124,9 +119,7 @@ drawing out quieter students who might struggle to articulate their thinking on
 the spot but wrote something sharp in their skeet. And it creates a growing,
 browsable archive of the class's collective reflection over the semester.
 
-## Pre-loading the conversation
-
-The real payoff is what happens in the studio crit itself. Students who've
+The real payoff, though, is what happens in the studio crit itself. Students who've
 already written down their thinking arrive ready to discuss rather than fumbling
 to figure out what they think in real time. The skeets are the warm-up; the crit
 is the performance.

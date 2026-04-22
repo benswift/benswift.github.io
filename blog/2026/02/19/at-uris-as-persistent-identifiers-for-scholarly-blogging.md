@@ -17,28 +17,29 @@ identifier for my blog posts that's more durable than a bare URL but doesn't
 require the institutional overhead of a DOI---and because the
 [standard.site](https://standard.site) spec gave me a clean way to do it.
 
-## The identifier dilemma[^dilemma]
-
-[^dilemma]: Technically it's a trilemma I guess, but who's that pedantic?
-
 If you write something on the web and want people to be able to cite it
-reliably, you've got three options with varying trade-offs.
-
-**Bare URLs** are free and immediate. `https://benswift.me/blog/2026/02/19/...`
-works right now and will keep working for as long as I keep this domain pointed
-at this content. The problem, of course, is that "as long as I keep this domain"
-is doing a lot of work in that sentence. Domains lapse, hosting providers go
-away, site redesigns break paths. Tim Berners-Lee
+reliably, you've got three options with varying trade-offs, and the identifier
+trilemma[^dilemma] is real. The first option is bare URLs---free and
+immediate. `https://benswift.me/blog/2026/02/19/...` works right now and will
+keep working for as long as I keep this domain pointed at this content. The
+problem, of course, is that "as long as I keep this domain" is doing a lot of
+work in that sentence. Domains lapse, hosting providers go away, site
+redesigns break paths. Tim Berners-Lee
 [argued in 1998](https://www.w3.org/Provider/Style/URI) that cool URIs don't
 change---but on the real web, they change all the time.
 
-**DOIs** solve the persistence problem through institutional infrastructure.
-CrossRef and DataCite maintain resolver services, and the academic citation
-ecosystem understands DOIs natively. I'm an academic working at a university, so
-this is very much the water I swim in. But getting a DOI means going through a
-registrar, and that typically means either publishing through a journal or
-paying for one yourself. For a rambling personal blog post about yak-shaving
-your email setup, that's a bit much[^zenodo].
+[^dilemma]: Technically "trilemma" because there are three options; I briefly
+    called it a "dilemma" for the rhythm of the sentence, but who's that
+    pedantic?
+
+The second option is DOIs, which solve the persistence problem through
+institutional infrastructure. CrossRef and DataCite maintain resolver
+services, and the academic citation ecosystem understands DOIs natively. I'm
+an academic working at a university, so this is very much the water I swim in.
+But getting a DOI means going through a registrar, and that typically means
+either publishing through a journal or paying for one yourself. For a rambling
+personal blog post about yak-shaving your email setup, that's a bit
+much[^zenodo].
 
 [^zenodo]:
     You _can_ get free DOIs through [Zenodo](https://zenodo.org/) by uploading
@@ -47,7 +48,7 @@ your email setup, that's a bit much[^zenodo].
     But it still means your canonical content lives in two places, and you need
     to manually deposit each post.
 
-**AT-URIs** sit somewhere in the middle.
+The third option---AT-URIs---sits somewhere in the middle.
 [AT Protocol](https://atproto.com/specs/record-key) defines a URI scheme
 (`at://did:plc:abc123/collection/rkey`) where the authority is a
 cryptographically verifiable DID rather than a domain name. Your content lives
@@ -60,9 +61,7 @@ None of these are perfect. But for the specific case of "I write a blog and I
 want a persistent, self-issued, machine-readable identifier for each post," the
 AT-URI approach hits a sweet spot.
 
-## How this site does it
-
-The integration uses [standard.site](https://standard.site)---a shared set of
+For this site, the integration uses [standard.site](https://standard.site)---a shared set of
 [AT Protocol lexicons](https://atproto.com/guides/lexicon) for long-form
 publishing. There are two record types that matter:
 
@@ -100,10 +99,8 @@ AT-URI, and each built page includes the document AT-URI in its `<head>`. Any
 indexer can match the web content to the protocol records and confirm they
 belong together.
 
-## Why not Sequoia?
-
-[Sequoia](https://sequoia.pub) is a perfectly good CLI for publishing
-standard.site records---it handles authentication, record creation, and the
+Why roll my own rather than use [Sequoia](https://sequoia.pub)? Sequoia is a
+perfectly good CLI for publishing standard.site records---it handles authentication, record creation, and the
 well-known file out of the box. I hand-rolled the integration anyway, for one
 specific reason: deterministic record keys.
 
@@ -140,9 +137,8 @@ Anyway, I've had this blog online for over a decade now and I _think_ it's got
 at least some Google-juice (whether that stuff even matters anymore). Changing
 all the URLs just seems like a bad idea to throw all those direct links away.
 
-## Citation metadata
-
-The other half of this is making the identifiers useful for citation tools.
+The other half of the work is making the identifiers useful for citation
+tools.
 Every blog post now includes
 [Google Scholar / Zotero compatible](https://scholar.google.com/intl/en/scholar/inclusion.html#indexing)
 meta tags:
@@ -205,8 +201,9 @@ A few weeks after writing this, I went digging into a question the original
 post mostly hand-waved: the records are on the network, sure, but are they
 actually _discoverable_? Is anyone out there building "Bluesky for blogs"?
 
-Turns out: yes, quietly. As of today there are 147 `site.standard.document`
-records in my repo, queryable directly from the PDS via
+Turns out: yes, though without much fanfare. As of today there are 147
+`site.standard.document` records in my repo, queryable directly from the PDS
+via
 `com.atproto.repo.listRecords`---oldest going back to 2020, newest from
 yesterday. Every write also flies past on the ATproto firehose, and at least
 one indexer is listening.

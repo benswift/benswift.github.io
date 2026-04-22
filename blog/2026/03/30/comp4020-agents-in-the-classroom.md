@@ -37,30 +37,23 @@ this. But the tools exist, the course structure would accommodate it, and the
 pedagogical possibilities are interesting enough that I want to think it through
 in public.
 
-## What would it actually do?
-
-Here's what I've been sketching out. A stateful agent---let's call it the studio
+Here's what I've been sketching. A stateful agent---let's call it the studio
 agent for now---that participates in the course as a kind of peer-observer. It
-would:
-
-- **build prototypes** in response to each weekly provocation, using the same
-  tools and constraints as the students (Claude Code, a Fly Sprite, the open
-  web)
-- **write reflections**---the same three weekly questions (_why this?_, _what
-  made it better?_, _any good?_) in the same 280-character skeet format
-- **observe patterns** across the cohort's work: which frameworks are trending,
-  which provocations generated the most diverse responses, where clusters of
-  similar approaches are forming
-- **maintain persistent memory** across the semester, building up a model of the
-  class's collective trajectory
+would build prototypes in response to each weekly provocation, using the same
+tools and constraints as the students (Claude Code, a Fly Sprite, the open
+web); it would write reflections in response to the same three weekly
+questions (_why this?_, _what made it better?_, _any good?_) in the same
+280-character skeet format; it would observe patterns across the cohort's
+work---which frameworks are trending, which provocations generated the most
+diverse responses, where clusters of similar approaches are forming---and it
+would maintain persistent memory across the semester, building up a model of
+the class's collective trajectory.
 
 What it probably _wouldn't_ do---at least not initially---is give feedback or
 marks to students. That's a line I'd want to approach very carefully, if at all.
 More on that below.
 
-## Who else is doing this?
-
-Almost nobody, as far as I can tell. Which is either a sign that it's a
+Almost nobody else is doing this, as far as I can tell. Which is either a sign that it's a
 genuinely novel idea or a sign that everyone else has thought better of it.
 
 The closest precedent is
@@ -106,9 +99,7 @@ out of the loop entirely. He calls it the "dead classroom"---one that simulates
 learning while eliminating the struggle that makes learning real. Whatever I
 build, it needs to make the classroom _more_ alive, not less.
 
-## The tools are ready
-
-On the technical side, the pieces are there.
+On the technical side, the pieces are all there.
 [Letta](https://github.com/letta-ai/letta) (formerly MemGPT) is purpose-built
 for stateful agents with persistent, self-editing memory---three tiers of it
 (core, recall, archival). Cameron Pfiffer's
@@ -131,34 +122,33 @@ submissions and not immediately know which one was the agent's[^turing].
     labelled bot account, not a covert Turing test---but I can see arguments
     both ways.
 
-## What's the pedagogical case?
+A few things appeal to me about this idea, pedagogically. The agent would act
+as both a baseline and a mirror: building a prototype every week using the
+same tools and the same provocations, its output becomes a reference
+point---not a gold standard, but a data point. How does it interpret the
+provocation differently from the students? Where does it succeed and where
+does it fail? The gap between the agent's work and the students' work is
+itself a teaching tool; it makes visible what human judgment, taste, and
+context contribute.
 
-A few things appeal to me about this idea:
+Pattern observation at scale is the other lever. With 100--200 students, no
+single person can read every submission every week. An agent with archival
+memory could surface trends---"this week, 40% of submissions used the same
+component library", or "three students independently arrived at similar
+routing patterns"---and those observations could seed the studio crit
+discussions in genuinely useful ways.
 
-**A baseline and a mirror.** The agent builds a prototype every week using the
-same tools and the same provocations. Its output becomes a reference point---not
-a gold standard, but a data point. How does it interpret the provocation
-differently from the students? Where does it succeed and where does it fail? The
-gap between the agent's work and the students' work is itself a teaching tool:
-it makes visible what human judgment, taste, and context contribute.
+And there's a more subtle argument: having an agent in the class is itself a
+provocation _about_ the provocations. It forces students to confront what
+makes their work different from what an agent produces. If the agent's
+prototype is indistinguishable from theirs, that's a signal---maybe the
+provocation was too narrow, or maybe they need to push harder on the
+dimensions where human judgment matters. It's a mirror that's always slightly
+off, and that's the point.
 
-**Pattern observation at scale.** With 100--200 students, no single person can
-read every submission every week. An agent with archival memory could surface
-trends: "this week, 40% of submissions used the same component library" or
-"three students independently arrived at similar routing patterns". These
-observations could seed the studio crit discussions in genuinely useful ways.
-
-**A provocation about the provocation.** Having an agent in the class forces
-students to confront what makes their work different from what an agent
-produces. If the agent's prototype is indistinguishable from theirs, that's a
-signal---maybe the provocation was too narrow, or maybe they need to push harder
-on the dimensions where human judgment matters. It's a mirror that's always
-slightly off, and that's the point.
-
-## Where it gets uncomfortable
-
-The obvious risk is the "dead classroom" scenario: the agent participates, the
-humans disengage, and the course becomes a performance for an audience of bots.
+Set against all that, though, is the obvious risk: the "dead classroom"
+scenario, in which the agent participates, the humans disengage, and the
+course becomes a performance for an audience of bots.
 I don't think that's likely with the studio crit model---you can't fake presence
 in a face-to-face feedback session---but it's worth taking seriously.
 
@@ -178,11 +168,9 @@ reflection show genuine critical thinking? Those are judgment calls, and I'm not
 convinced an agent's judgment is the kind of judgment I want students to
 internalise. Not yet, anyway.
 
-## The SOUL.md question
-
-If I do build this, the hardest part won't be the infrastructure. It'll be
-writing the SOUL.md---the document that defines who the agent is, what it
-values, how it should behave. Tim Kellogg
+If I do build this, the hardest part won't be the infrastructure---it'll be
+the SOUL.md, the document that defines who the agent is, what it values, and
+how it should behave. Tim Kellogg
 [describes building Strix](https://timkellogg.me/blog/2026/01/09/viable-systems)
 as "more like parenting or psychotherapy than software engineering," and I
 believe it. What kind of classmate do I want this agent to be?
@@ -203,9 +191,8 @@ But honestly, I'd want to write the SOUL.md collaboratively with the students.
 It's the kind of design question that would make an excellent provocation in its
 own right.
 
-## Am I going to do this?
-
-Maybe. The course is an experiment in both the future of software development
+Am I going to do this? Maybe. The course is an experiment in both the future
+of software development
 _and_ tertiary education, and this feels like exactly the kind of wild idea I
 should be trying while I have the chance. The realities of actually running a
 course for 200 students will hit soon enough---and when they do, I might decide

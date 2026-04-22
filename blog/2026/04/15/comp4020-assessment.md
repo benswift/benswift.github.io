@@ -39,22 +39,18 @@ share it, put it on their CV, post it to
 [Hacker News](https://news.ycombinator.com/). The grade becomes a side-effect of
 making something genuinely useful to somebody.
 
-## The submission bundle
-
-This course will have three assignments, with increasing scope (static site,
-CRUD app, real-time app) and here's what I'm planning to have students hand in:
-
-1. **the git repo** itself---source, Docker-based build and deploy workflow,
-   `CLAUDE.md` and other agent files, `README.md`
-2. **the full Claude Code session logs** (the `.jsonl` files from
-   `~/.claude/projects/...`)---a complete, auditable record of the agentic
-   workflow that produced the thing
-3. **a product video**---short, slick, launch-style; the sort of video you'd put
-   at the top of a landing page to show what the app does
-4. **a "behind-the-scenes" (BTS) workflow video**---longer, more reflective;
-   "here's how I actually built this, including the bits that went wrong"; the
-   sort of video that would generate genuine discussion on Hacker News or
-   r/programming about agentic coding best practices
+Concretely, the course will have three assignments of increasing scope (static
+site, CRUD app, real-time app), and for each one students will hand in a
+bundle of four things: the git repo itself (source, Docker-based build and
+deploy workflow, `CLAUDE.md` and other agent files, `README.md`); the full
+Claude Code session logs (the `.jsonl` files from `~/.claude/projects/...`), a
+complete auditable record of the agentic workflow that produced the thing; a
+short, slick, launch-style product video of the kind you'd put at the top of a
+landing page to show what the app does; and a longer "behind-the-scenes"
+workflow video---more reflective, "here's how I actually built this, including
+the bits that went wrong", the sort of video that would generate genuine
+discussion on Hacker News or r/programming about agentic coding best
+practices.
 
 :::info
 
@@ -98,9 +94,8 @@ day one---no credentials in prompts, no API keys pasted into chat---which I'd
 want them doing regardless of how I assessed them. I'll train the students in
 this, and give them tooling to help.
 
-## Open questions
-
-The rubric is the biggest one. How do you actually _grade_ a BTS video? What
+There's plenty still open. The rubric is the biggest one: how do you actually
+_grade_ a BTS video? What
 distinguishes a good one from a glib one? I have intuitions---genuine engagement
 with trade-offs, specific references to what went wrong, connections to the
 scholarly material, evidence of iteration rather than single-shot

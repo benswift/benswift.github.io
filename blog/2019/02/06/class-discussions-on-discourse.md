@@ -61,10 +61,9 @@ compared to Piazza:
    [plugin for this](https://github.com/discourse/discourse-solved), but we
    didn't use it first time around)
 
-## So how'd it go?
-
-Pretty well---student engagement was higher than the previous year (with Piazza)
-and anecdotal feedback was that the students liked it. The limitations described
+How'd it all go? Pretty well, actually---student engagement was higher than
+the previous year (with Piazza) and anecdotal feedback was that the students
+liked it. The limitations described
 above didn't bite _too_ hard, although I do think that the "post anonymously to
 students" thing in particular does encourage students to speak up when they're
 struggling in a way that they don't when their name is attached to everything.
@@ -109,10 +108,8 @@ One final bonus is that the default "homepage" for a logged in user shows the
 latest posts across all the user's categories (although users can customise this
 behaviour).
 
-## Next steps
-
-I've got a student who's working hard to develop a new plugin to restore the
-"anon to students, visible to instructors" behaviour, since that's a
+For next steps, I've got a student who's working hard to develop a new plugin
+to restore the "anon to students, visible to instructors" behaviour, since that's a
 deal-breaker for a lot of folks (it nearly was for me as well). We'll release
 that plugin when it's done and the kinks are worked out.
 

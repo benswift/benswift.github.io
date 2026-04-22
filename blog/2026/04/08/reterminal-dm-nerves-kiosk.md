@@ -193,8 +193,8 @@ thing runs on the same device.
 
 ## Other things that'll bite you
 
-**NIF cross-compilation.** If you're using NIFs on Nerves, make sure they
-actually cross-compile for your target. I had
+Watch out for NIF cross-compilation. If you're using NIFs on Nerves, make
+sure they actually cross-compile for your target. I had
 [NxEigen](https://hex.pm/packages/nx_eigen) in my deps, and `cc_precompiler`
 silently skipped building the NIF for `aarch64-nerves-linux-gnu` because no
 prebuilt binary existed. The firmware built fine, but the app crash-looped on
@@ -205,15 +205,16 @@ boot because `libnx_eigen.so` was missing. I ended up dropping it in favour of
     On the host I use EXLA for GPU-accelerated training. On the target, inference
     on small models is fast enough with the default backend.
 
-**Partition scheme migration.** If your device was originally flashed with one
-partition layout (e.g. `kiosk_system_rpi4`'s tryboot scheme) and you try to OTA
-a firmware image built for a different layout (e.g. frio_rpi4's older MBR-swap
-scheme), the upload will appear to succeed but write to the wrong partitions.
-The fix is a full reflash via rpiboot. This only bites you once, during the
-initial migration, but it's confusing when it happens.
+Partition scheme migration is another trap. If your device was originally
+flashed with one partition layout (e.g. `kiosk_system_rpi4`'s tryboot scheme)
+and you try to OTA a firmware image built for a different layout (e.g.
+frio_rpi4's older MBR-swap scheme), the upload will appear to succeed but
+write to the wrong partitions. The fix is a full reflash via rpiboot. This
+only bites you once, during the initial migration, but it's confusing when it
+happens.
 
-**eMMC-only boot.** The reTerminal DM has no SD card slot---it boots exclusively
-from 32GB eMMC. For the initial flash, you need to toggle the boot switch next
+And one hardware-specific gotcha: the reTerminal DM is eMMC-only. It has no
+SD card slot---it boots exclusively from 32GB eMMC. For the initial flash, you need to toggle the boot switch next
 to the USB-C port, connect to a Linux machine, run
 [rpiboot](https://github.com/raspberrypi/usbboot) to expose the eMMC as a block
 device, and then `mix firmware.burn`. After that, OTA updates via `mix upload`

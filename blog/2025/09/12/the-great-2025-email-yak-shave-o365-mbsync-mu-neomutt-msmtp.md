@@ -18,23 +18,14 @@ dance and hook things back up, so I took the plug and shaved the email yak
 again. And here, dear reader, are the results---may you not waste as many hours
 messing around as I did.
 
-## The moving parts
-
-The new setup consists of:
-
-- **mbsync** (built from source with SASL support) for IMAP sync with OAuth2
-- **cyrus-sasl-xoauth2** mbsync plugin to handle the OAuth dance
-- **mu** for fast email search and indexing
-- **neomutt** as the email client
-- **msmtp** for SMTP sending
-- **macOS Keychain** for secure token storage
-
+The new setup is mbsync (built from source with SASL support) doing IMAP sync
+with OAuth2, with the cyrus-sasl-xoauth2 mbsync plugin handling the OAuth
+dance itself; mu for fast email search and indexing; neomutt as the email
+client; msmtp for SMTP sending; and macOS Keychain for secure token storage.
 Each tool does one thing well, which is the Unix way---even if it means more
 configuration files to maintain.
 
-## OAuth2: the tricky bit
-
-Getting OAuth2 working with Office365 was the gnarliest part. You need to use
+The gnarliest part was getting OAuth2 working with Office365. You need to use
 the `mutt_oauth2.py` script with Thunderbird's client ID
 (`9e5f94bc-e8a4-4e73-b8be-63364c29d753`) and the devicecode flow, since
 localhostauthcode doesn't work with the way my O365 exchange server is set up.
@@ -66,9 +57,8 @@ a chance).
 
 :::
 
-## Running in Zed
-
-Since I'm a Zed user, I run neomutt in a fullscreen terminal task (same approach
+Running neomutt inside Zed is a nice touch, if you're already living there. I
+run it in a fullscreen terminal task (same approach
 as my [Claude Code setup](/blog/2025/07/23/running-claude-code-within-zed/)).
 Add this to your tasks.json:
 
@@ -85,18 +75,13 @@ Add this to your tasks.json:
 I bind this task to a keyboard shortcut, then I'm one key command away from a
 fullscreen email client with all the Zed terminal niceties.
 
-## The payoff
-
-Yes, it was a yak-shave. But now I have:
-
-- full control over my email workflow
-- lightning-fast search with mu (I tried notmuch, but the mu setup allows me to
-  use normal IMAP folders---and that's important because I have to check my
-  email from multiple devices)
-- OAuth2 working seamlessly with Office365
-- everything running in my preferred editor
-- the tantalising prospect of replacing _all_ the email parts of my job with a
-  series of shell scripts (and claude code invocations)
+Yes, it was a yak-shave. But the payoff is real: full control over my email
+workflow; lightning-fast search with mu (I tried notmuch, but the mu setup
+lets me use normal IMAP folders, which matters because I check email from
+multiple devices); OAuth2 working seamlessly with Office365; everything
+running in my preferred editor; and the tantalising prospect of replacing
+_all_ the email parts of my job with a series of shell scripts (and Claude
+Code invocations).
 
 For the full config files and detailed setup instructions, check out
 [my full email config on GitHub](https://github.com/benswift/.dotfiles/tree/main/mail/).

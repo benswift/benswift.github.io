@@ -52,10 +52,8 @@ _testable_. "Any good?" invites a shrug. A pledge like "this prototype will show
 its reasoning before taking any action on the user's behalf" invites scrutiny:
 did it, or didn't it?
 
-## Three pledges and one question
-
-Each week, alongside their prototype, students submit three pledges and answer
-one question.
+So here's the shape of it. Each week, alongside their prototype, students
+submit three pledges and answer one question.
 
 The **pledges** take the form "This prototype will..." or "This prototype will
 not..."---specific, falsifiable commitments about what the prototype does, how
@@ -88,7 +86,8 @@ different dimensions of the work, few enough that each one gets genuine thought.
 design, but dropped it---the pledges need to be specific enough to be
 evaluable, and character limits would work against that.)
 
-The **question** is: _What was the aha moment?_ This replaces the old "What
+That's three pledges. The fourth weekly deliverable is a single question, and
+it's this: _What was the aha moment?_ This replaces the old "What
 made it better?" with something more pointed. I don't want a list of things
 that helped. I want the singular breakthrough that turned the project from
 stuck to working. Maybe it was switching tech stacks. Maybe it was
@@ -113,11 +112,9 @@ intentionality is baked into the commitment. And the problem with keeping all
 three questions and adding pledges on top is that it's just too much weekly
 overhead alongside the prototype work itself.
 
-## Pledges aren't promises to be good
-
-I want to head off a concern I had myself: that the word "pledge" creates a
-performative do-gooder dynamic where students compete to write the most
-virtuous-sounding commitments and avoid anything spicy. That would be a
+I want to head off a concern I had myself about all this: that the word
+"pledge" creates a performative do-gooder dynamic where students compete to
+write the most virtuous-sounding commitments and avoid anything spicy. That would be a
 disaster for this course. The weekly
 [provocations](/blog/2026/02/20/comp4020-the-core-mechanic/) are designed to
 invite subversive, experimental, even uncomfortable responses. These prototypes
@@ -137,12 +134,10 @@ reaction they're trying to provoke and what trade-offs they're consciously
 making. The pledge isn't a moral filter. It's a demand for specificity about
 what you're actually doing and why.
 
-## The cross-eval
-
-Each crit group has about twenty
-students, each submitting three pledges. That's sixty pledges per week, and
-twenty prototypes. What happens if you evaluate every prototype against every
-individual pledge?
+Once the pledges are written, they become the raw material for the crit
+itself. Each crit group has about twenty students, each submitting three
+pledges. That's sixty pledges per week, and twenty prototypes. What happens if
+you evaluate every prototype against every individual pledge?
 
 A 20×60 matrix---each prototype scored against each pledge---is far too many
 evaluations for humans (twelve hundred cells) but straightforward for an LLM
@@ -176,11 +171,9 @@ reasoning alongside each judgement means students can push back on it---and
 arguing about whether the evaluator got it right is itself a productive crit
 conversation.
 
-## Ethics washing and its antidotes
-
-There's a well-documented
+The obvious risk with any of this is ethics washing. There's a well-documented
 [problem in the broader pledge literature](https://www.aiethicist.org/pledges)
-with what gets called "ethics washing"---organisations issuing lofty
+with what gets called that name---organisations issuing lofty
 commitments that look good in a press release and change nothing in practice.
 Student pledges could easily go the same way: three nice-sounding sentences,
 duly submitted each Monday, utterly disconnected from the prototype they
@@ -202,10 +195,9 @@ Is it irresponsible, or is it the most responsible prototype here, because it's
 the only one that made you _feel_ what users actually experience?" You can't get
 a conversation like that from "any good?"
 
-## Scaffolding the first few weeks
-
-None of this works if students don't know how to write good pledges. The first
-couple of weeks need to model it explicitly.
+None of this works, of course, if students don't know how to write good
+pledges in the first place. The first couple of weeks need to model it
+explicitly.
 
 In week one, I'd write pledges for a demo prototype and walk through my
 reasoning in front of the class: why this pledge and not that one, what makes

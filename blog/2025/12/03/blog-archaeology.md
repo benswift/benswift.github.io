@@ -18,9 +18,8 @@ in---[benswift.github.io](https://github.com/benswift/benswift.github.io)---turn
 out to be just one chapter in a longer story. A bit more digging on GitHub
 revealed earlier chapters I'd (pretty much) forgotten about.
 
-## The Octopress era (2012)
-
-The earliest archaeological evidence dates back to August 2012: a fork of
+The earliest archaeological evidence dates back to August 2012 and the
+Octopress era: a fork of
 [imathis/octopress](https://github.com/imathis/octopress) that I used for a few
 months. The repo's
 [first commit](https://github.com/benswift/octopress/commit/8dc0cb0b4b0de3c6f40674198cb2bd44aeee9b86)
@@ -33,10 +32,8 @@ showed up in some commit messages which mention "new 'detached' octopress/org
 blogging works"---apparently I was already integrating
 [org-mode](https://orgmode.org) with my blogging setup back then.
 
-## The Clojure experiments (2013-2017)
-
-Then came "the Clojure years". I still really like Clojure in a lot of ways, but
-have moved all that sort of work to Elixir these days.
+Then came "the Clojure years" (2013--2017). I still really like Clojure in a
+lot of ways, but have moved all that sort of work to Elixir these days.
 
 First up: November-December 2013. I forked
 [nakkaya/static](https://github.com/nakkaya/static), Nurullah Akkaya's
@@ -66,11 +63,10 @@ something about mid-2010s web aesthetic sensibilities.[^cutestrap]
 The [biott repository](https://github.com/benswift/biott) is now archived. This
 was my main blog during 2014--2017.
 
-## The Jekyll era (2018)
-
-I forked [John Otander's](https://johno.com)
-[Pixyll](https://github.com/johno/pixyll) theme in late 2018 when I moved away
-from `biott/Cryogen`.
+The Jekyll era kicked off in late 2018, when I forked
+[John Otander's](https://johno.com)
+[Pixyll](https://github.com/johno/pixyll) theme and moved away from
+`biott/Cryogen`.
 
 On 30 December 2018, we get commit
 [`c1a4d0225`](https://github.com/benswift/benswift.github.io/commit/c1a4d022534c9cda11d98f23b94f112330c9a783)---"initial
@@ -110,8 +106,6 @@ subsequent version---including the current [VitePress](https://vitepress.dev)
 setup---has had to support it. Turns out when you give a lot of talks and teach
 a lot of classes, you need slide support _everywhere_.
 
-## The present (2024)
-
 Fast forward to November--December 2024, and I finally pulled the trigger on
 [migrating to VitePress](/blog/2025/12/02/switching-from-jekyll-to-vitepress/).
 The migration took about two days of intensive work (commits
@@ -126,10 +120,7 @@ TypeScript instead of Ruby, Vue components instead of Liquid templates, modern
 ES6 modules instead of... well, whatever Jekyll was doing with its asset
 pipeline.
 
-## What's the point?
-
-So what does this archaeological expedition tell us?
-
+So what does this archaeological expedition actually tell us? A few things.
 First, the pattern is clear: [Octopress](https://github.com/imathis/octopress) →
 Clojure experiments ([static](https://github.com/nakkaya/static),
 [Cryogen](https://github.com/cryogen-project/cryogen)) → long
@@ -150,7 +141,7 @@ blockquotes (multiple times, apparently), when I first integrated `reveal.js`
 to count). It's all there in the log---across multiple repositories, spanning
 over a decade.
 
-But here's the thing: the actual _frameworks_ matter less than the content and
+But for all that, the actual _frameworks_ matter less than the content and
 the features that support creating it. Octopress, two different Clojure
 generators, Jekyll with three different themes, VitePress---they're all just
 different ways to serve markdown files with syntax highlighting and

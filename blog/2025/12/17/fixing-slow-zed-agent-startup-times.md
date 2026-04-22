@@ -99,8 +99,8 @@ going through `npx`:
 
 ## The outcome
 
-The result? It's still not instant, but it is faster. The pause that was
-breaking my flow is (closer to) gone.
+It's still not instant, but it is faster---the pause that was breaking my
+flow is (closer to) gone.
 
 The broader lesson here is that `npx` is convenient for one-off commands, but
 it's a terrible choice for anything that runs frequently. Global installation

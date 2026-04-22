@@ -16,7 +16,7 @@ what this post is about.
 This post is about why "AI coding in the terminal" is such a big deal, and why
 it's arguably more about **interfaces** than about models.
 
-## The browser as a security marvel
+To understand why, start with the browser---a security marvel in its own right.
 
 <svg class="browser-window" width="100%" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
   <!-- Window frame -->
@@ -70,14 +70,14 @@ This sandboxing is why you can visit sketchy websites and (mostly) not worry
 about them stealing your passwords or deleting your files. What happens in the
 browser stays in the browser.
 
-But here's the thing: that same sandboxing that protects you also constrains
-what ChatGPT (or any browser-based AI) can actually _do_. It can generate text.
+But that same sandboxing that protects you also constrains what ChatGPT (or
+any browser-based AI) can actually _do_. It can generate text.
 It can show you images. It can even run some code (JavaScript) in that sandboxed
 environment. But it can't create files on your computer, run your test suite,
 commit code to git, or do any of the thousand other things you do when you're
 actually building software.
 
-## Enter the terminal
+Enter the terminal.
 
 <svg class="terminal-window" width="100%" viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
   <!-- Window frame -->
@@ -150,9 +150,7 @@ result, adjust, repeat. This is what
 calls tightening the feedback loop---letting the model iterate without waiting
 for a human to approve every step.
 
-## The terminal-native AI boom
-
-When Anthropic
+This is what kicked off the terminal-native AI boom. When Anthropic
 [announced Claude Code](https://www.anthropic.com/news/claude-3-7-sonnet) in
 February 2025, the model update wasn't a quantum leap---Claude 3.7 Sonnet came
 with it, but Sonnet 3.5 was already pretty capable. What they released was a new
@@ -178,9 +176,7 @@ those who want the power without the terminal aesthetic.
 
 This is an innovation in **interfaces**, not just models.
 
-## The obvious risk
-
-Of course, all this power comes with risk. An LLM running in your terminal can
+All this power comes with obvious risk, of course. An LLM running in your terminal can
 do anything you can do in your terminal. Including steal your SSH keys, read
 your `.env` files, or---as
 [Johann Rehberger points out](https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/)---wipe
@@ -206,9 +202,9 @@ The incentives for speed and automation are strong. The incentives for security
 are... well, they're there in principle, but it's easy to forget why the
 guardrails existed in the first place.
 
-## It's not the models, it's the interface
-
-I've [written before](/blog/2025/07/17/agentic-ai-llms-with-stones/) about how
+Which brings me to the thing I keep coming back to: the story here isn't about
+smarter models, it's about what an interface lets them do. I've
+[written before](/blog/2025/07/17/agentic-ai-llms-with-stones/) about how
 agentic AI is really just about giving LLMs tools---stones to throw, in the
 "sticks and stones" sense. But the terminal-native AI wave has clarified
 something for me: the _power_ of agentic AI comes from the interface, not just

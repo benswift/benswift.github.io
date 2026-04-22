@@ -34,13 +34,11 @@ conventions.[^vite]
     tool that replaced webpack in most of my projects. Fast, and also other
     things, but mostly fast.
 
-## The migration
-
 If you're gonna make the same move, here are a few things to note. Honestly,
-just point Claude at this blog post, because this sort of thing (moving from one
-well-known stack to another) is the sort of thing that LLMs shine at.
-
-### Content structure
+just point Claude at this blog post, because this sort of thing (moving from
+one well-known stack to another) is the sort of thing that LLMs shine at. The
+main shifts come down to four things: content structure, custom components,
+reveal.js slides, and data loading.
 
 Jekyll wants posts in `_posts/YYYY-MM-DD-slug.md`. VitePress doesn't care, so I
 reorganised into `blog/YYYY/MM/DD/slug.md`. This preserves my existing URLs
@@ -62,9 +60,7 @@ transformPageData(pageData) {
 }
 ```
 
-### Custom components
-
-All my Jekyll includes became Vue components. A YouTube embed that was 20 lines
+For custom components, all my Jekyll includes became Vue components. A YouTube embed that was 20 lines
 of Liquid with magic width calculations became:
 
 ```vue
@@ -79,7 +75,7 @@ At a certiain level of complexity, having a proper programming language (not
 just a templating system) becomes worth the tradeoffs. The component is
 type-safe, composable, and I can actually read it six months later.
 
-### Reveal.js slides
+Reveal.js slides were the fiddly bit.
 
 :::info
 
@@ -88,14 +84,13 @@ happy with it just yet.
 
 :::
 
-This was the fiddly bit. I had a custom Jekyll plugin that transformed markdown
-into reveal.js slides. I rewrote this as a `markdown-it` plugin that runs at
-build time, splitting content on h1/h2 headers and hoisting `data-*` attributes
-onto the reveal sections.
+I had a custom Jekyll plugin that transformed markdown into reveal.js slides.
+I rewrote this as a `markdown-it` plugin that runs at build time, splitting
+content on h1/h2 headers and hoisting `data-*` attributes onto the reveal
+sections.
 
-### Data loading
-
-Jekyll has `_data` files that become available in templates. VitePress has
+Data loading rounds out the list. Jekyll has `_data` files that become
+available in templates. VitePress has
 `.data.ts` files that can do the same thing---but with TypeScript, so you can
 parse BibTeX files, fetch from APIs, or do whatever processing you need:
 
@@ -111,20 +106,15 @@ export default {
 The data is computed at build time and available in your pages. No runtime
 overhead.
 
-## The wash-up: what's nice about the new setup?
-
-**Dev experience.** Instant hot reload. Actual error messages instead of Liquid
-stack traces.
-
-**Type safety.** Configuration, data loaders, components---it's all TypeScript.
-I catch errors at build time instead of discovering them in production.
-
-**Component model.** Vue single-file components are a better abstraction than
-Liquid includes. State, props, slots---the concepts map cleanly to what you're
-actually trying to do.
-
-**Performance.** The production build is smaller and faster. Though honestly
-this was never really a problem---static sites are fast by definition.
+In the wash-up, what I like about the new setup comes down to four things.
+The dev experience is dramatically better---instant hot reload, and actual
+error messages instead of Liquid stack traces. Type safety is end-to-end:
+configuration, data loaders, components---it's all TypeScript, so I catch
+errors at build time instead of discovering them in production. The component
+model is a better abstraction than Liquid includes; state, props, and slots
+map cleanly to what you're actually trying to do. And the production build is
+smaller and faster---though honestly this was never really a problem, since
+static sites are fast by definition.
 
 Should you switch? If your Jekyll site is just markdown and you're happy with
 it, stay put. Jekyll still does that well.

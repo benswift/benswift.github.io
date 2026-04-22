@@ -18,8 +18,6 @@ Game designers talk about "the core mechanic"---the one repeating loop that
 players engage with over and over, the thing that has to feel _right_ or nothing
 else matters. In COMP4020, (the plan is) that loop is the weekly studio session.
 
-## The loop
-
 Each week (apart from the first and the last) follows the same cycle. There's a
 lecture and office hours and the usual stuff as well, but this is the heart of
 the course:
@@ -36,8 +34,6 @@ the course:
    going for in light of the provocation
 
 Provocation, prototype, feedback; repeat for ten weeks.
-
-## The art-school model
 
 This is basically an
 [art-school crit](https://en.wikipedia.org/wiki/Critique#Art_and_design) adapted
@@ -66,8 +62,6 @@ vocabulary, who've seen each other's failures and successes, and who can have
 informed conversations about what "good" looks like (because that's the key
 question in this type of agentic software development course).
 
-## Studio groups
-
 Each studio group will have around 20 students, led by an experienced
 tutor.[^tutor] The tutor's job isn't just to run the session---they're the one
 doing the facilitation that makes the whole thing work. They need to know when
@@ -88,10 +82,9 @@ you'll engage with their prototype properly rather than just clicking through
 it. And in general our students are cool and nice and can be trusted not to be
 arseholes to each other.
 
-## Process _and_ product
-
-One thing I want to emphasise: the feedback covers both the prototype (the
-product) and the agentic development process that produced it. This maps onto
+One thing I want to emphasise about the crit itself: the feedback covers both
+the prototype (the product) and the agentic development process that produced
+it. This maps onto
 the week's lecture content, where students learn about different aspects of
 working with LLM agents for software development.
 
@@ -106,13 +99,11 @@ The hope is that over these weeks the class collectively builds a shared
 understanding of what good agentic software development looks like---both in
 terms of the process and the resulting prototypes.
 
-## Some provocation ideas I'm tossing around
-
-The course doesn't start until July, so I've got some time to flesh this out.
-And I want these to be fun/thought-provoking. We have other (great!) courses for
-building viable startups and software businesses; part of the point (and
-opportunity) here is for students to do and make stuff that doesn't make sense
-in a shark-tank-style business context.
+The course doesn't start until July, so I've got some time to flesh out the
+weekly provocations. I want these to be fun and thought-provoking. We have
+other (great!) courses for building viable startups and software businesses;
+part of the point (and opportunity) here is for students to do and make stuff
+that doesn't make sense in a shark-tank-style business context.
 
 Here are some ideas I've had. Honestly some of them I'm super excited about
 while others are pretty... meh.
