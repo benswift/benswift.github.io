@@ -21,7 +21,7 @@ Claude API. See
 [Anthropic comes to the party](/blog/2026/04/02/anthropic-comes-to-the-party/).
 The implementation design---proxy architecture, quota enforcement, and full
 traffic logging---is now detailed in the follow-up,
-[token management by proxy](/blog/2026/04/22/token-management-by-proxy/).
+[token management by proxy](/blog/2026/04/22/comp4020-token-management-by-proxy/).
 
 :::
 
