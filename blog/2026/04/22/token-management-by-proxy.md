@@ -25,11 +25,11 @@ other's lunch. The Anthropic
 [Admin API](https://platform.claude.com/docs/en/build-with-claude/administration-api)
 will get us part of the way---you can create and revoke keys programmatically,
 set monthly workspace spend caps in the Console, pull usage reports---but the
-controls are too coarse for what I actually want to do. I want weekly token
-allocations per student, with predictable reset periods and (ideally) some
-carryover for students who don't max out every week. I want an audit log, so
-the course policy around token use has teeth. And I want a safety net that
-catches leaked API keys in plaintext before they escape onto the open internet.
+controls are too coarse for what I actually want to do: per-student weekly
+token allocations with predictable resets and optional carryover, an audit log
+with enough detail to give the course policy around token use some actual
+teeth, and a safety net that catches leaked API keys in plaintext before they
+escape onto the open internet.
 
 The only way to get all of that is to put a proxy between the students' Claude
 Code sessions and the Anthropic API, and enforce the class-specific policy
@@ -40,9 +40,9 @@ there. The thing has four jobs.
 student has their own virtual API key---issued by us, revocable by us,
 completely separate from Anthropic's auth system. Students point their Claude
 Code config at the proxy with their virtual key; from their side, it looks like
-the Anthropic API. Claude Code talks to `/v1/messages`, gets native
-Anthropic-shaped responses back, and streaming, tool use, and prompt caching
-all work unmodified.
+the Anthropic API. Claude Code talks to `/v1/messages` and gets native
+Anthropic-shaped responses back; streaming, tool use, and prompt caching all
+work unmodified.
 
 **Per-student quotas with time-based reset.** The proxy counts tokens against
 each student's allocation, stops serving requests when they hit their limit,
@@ -61,12 +61,9 @@ proxy detects it, auto-suspends the offending key, and alerts us. Accidents
 happen, especially when students are new to agentic workflows. Better to catch
 them before the key ends up in a public GitLab repo.
 
-## Why log everything
-
-The logging deserves its own paragraph because it cuts in a few directions at
-once.
-
-The simple answer is that it's the enforcement mechanism. Course policies---use
+Of those four jobs, the logging is the piece that takes the most thought,
+because it cuts in a few directions at once. The simple answer is that it's
+the enforcement mechanism. Course policies---use
 only for coursework, no on-selling, no harassment, no circumventing academic
 integrity---are only as real as our ability to check that they're being
 honoured. Students will be told this explicitly, at the start of the course:
@@ -90,17 +87,17 @@ working on the same weekly provocation? When do students hit context limits?
 What does session activity look like in the hours right before the
 [aha moment](/blog/2026/04/16/comp4020-pledges-not-questions/)?
 
-## Can LiteLLM do this?
-
-[LiteLLM](https://docs.litellm.ai/) is the obvious candidate---the
+That leaves one practical question: how much of this do I actually have to
+build from scratch? [LiteLLM](https://docs.litellm.ai/) is the obvious
+candidate---the
 [Claude Code docs themselves point at it](https://code.claude.com/docs/en/llm-gateway)
-as a supported LLM gateway. It's MIT-licensed, self-hostable, Python, with
-first-class virtual keys, spend tracking, Postgres-backed logging, and an
-Anthropic-native passthrough at `/anthropic/v1/messages` that lets Claude Code
-talk the native Anthropic protocol rather than being coerced through an
-OpenAI-compatible translation layer. That last bit matters more than it
-sounds---a proxy that makes Claude Code work _almost_ like the real thing is
-worse than no proxy at all.
+as a supported LLM gateway. It's MIT-licensed, self-hostable, and Python.
+Virtual keys, spend tracking, and Postgres-backed logging are all first-class.
+More importantly, there's an Anthropic-native passthrough at
+`/anthropic/v1/messages` that lets Claude Code talk the native protocol rather
+than being coerced through an OpenAI-compatible translation layer. That last
+bit matters more than it sounds---a proxy that makes Claude Code work
+_almost_ like the real thing is worse than no proxy at all.
 
 For roughly 80% of the brief, it's a drop-in: virtual key CRUD via
 `/key/generate`, `/key/block`, `/key/delete`; the Anthropic-native passthrough;
@@ -136,10 +133,8 @@ alternative---hand-rolling the whole thing in, say, Elixir or Go---would mean
 reimplementing the virtual-key lifecycle, the Anthropic passthrough, the spend
 accounting, and the admin endpoints. That's work I don't want to do when a
 reasonable baseline already exists. I'll start with LiteLLM and write the
-class-specific bits on top, and fall back to hand-rolling only if I hit a wall
+class-specific bits on top, falling back to hand-rolling only if I hit a wall
 I can't climb with a custom callback.
-
-## Open questions
 
 A few things I don't have good answers for yet:
 
