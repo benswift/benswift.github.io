@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/04/22/comp4020-token-management-by-proxy": "df3801a1a3c037998757686fdd612bbf8990a1e84a99fe0507e698a138caebdb",
     "/blog/2026/04/16/comp4020-pledges-not-questions": "c0e7f80d7f8fc343aa98a89d5affe160b7dbf5c8165e40ffa2f4c69d83e28879",
     "/blog/2026/04/15/comp4020-assessment": "577b6479479ff8277fbfdb62eabff6c7c13126a2e0db215bbc404a38c64941de",
     "/blog/2026/04/09/one-git-heatmap-to-rule-them-all": "21ebf6c52cbd02fae63204453e4ae3d38174b5cebd3ec9fc55aadfa200c2d812",
@@ -13,7 +14,7 @@
     "/blog/2026/03/31/comp4020-the-story-so-far": "3c556c504a7dab56a8defc0feea67f8f9173af051157e890377864c49624d479",
     "/blog/2026/03/30/comp4020-agents-in-the-classroom": "a6f20815efc3591128fc663fa52515cd377d6e332d280df303d67864cf828c7c",
     "/blog/2026/03/30/comp4020-whats-the-theory-here": "dd0bbb36d9c9b2d9845a0ce6b2fb008bd399bb63ee1e4a667bfb5f03c1e258a9",
-    "/blog/2026/03/27/managing-the-strategic-token-reserve": "737e19d95ac180d9c5b0057fad48cb7d5e793f09c45524020713c0d7103afa5e",
+    "/blog/2026/03/27/managing-the-strategic-token-reserve": "e140db89602aeeb9fd7dc552eb0f7af39cfe39ae39c4f18d293317a9cda17204",
     "/blog/2026/03/26/comp4020-the-weekly-questions": "1433453e379091dc6ccdadca6587f21a3b4b7acaa34a201378198b027e195a28",
     "/blog/2026/03/24/course-software-environment": "d07e43e6e6627b358f2ef5cd6dfbd151f6a27a3ad5053a3a2b1a002c57954ef6",
     "/blog/2026/03/20/agentic-coding-studio": "9c0dc497eab3732a0ed71d36372d4552d0d9e66019390d12d5a95756d2c137c4",
