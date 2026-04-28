@@ -20,12 +20,12 @@ these tools. But these studies treat adoption as a technology-level decision
 rather than examining the specific _tasks_ where these things are useful.
 
 A researcher might find an LLM really useful for literature search but useless
-for theoretical analysis. A journalist might rely on it for drafting routine
-updates but avoid it for investigative work. A disinfo actor will gladly use it
-to
+for theoretical analysis, while a journalist might rely on it for drafting
+routine updates but avoid it for investigative work. A disinfo actor will
+gladly use it to
 ["flood the zone"](https://www.mediamatters.org/steve-bannon/misinformer-year-steve-bannons-flood-zone-shit-approach-destroying-american-democracy),
 but not for writing to their loved ones. The same person using the same model
-would give very different answers to the "are LLMs useful" depending on the task
+would give very different answers to "are LLMs useful" depending on the task
 at hand.
 
 So I propose a different framework[^branding]: treat each (user, model, task)
@@ -47,9 +47,9 @@ going to be noise (stochastic parrots and all that) so it's really just an
 "in general" judgement.
 
 The same user with the same AI model might simultaneously occupy multiple zones
-depending on task. And importantly, there's a substantial neutral zone in the
-middle---tasks where using the tool takes about as much time and effort as doing
-it yourself. Reading the diagram below zone-by-zone fills it out.
+depending on task, with a substantial neutral zone in the middle: tasks where
+using the tool takes about as much time and effort as doing it yourself.
+Reading the diagram below zone-by-zone fills it out.
 
 <svg class="tam-diagram" width="100%" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
   <!-- Background zones -->
@@ -97,28 +97,27 @@ of routine correspondence that need minimal editing. For me (an academic AI
 researcher and software developer) things like writing scripts to automate
 repetitive tasks and generating boilerplate code are in this bucket.
 
-The middle-and-lower right---high familiarity, but no difference or actively
-slowing you down---is informed rejection. You haven't simply failed to
-try---you've engaged extensively and concluded it doesn't actually save time,
-or actively wastes it. You've hit the model's limitations repeatedly enough
-to form a stable assessment.
+The middle-and-lower right (high familiarity, but no difference or actively
+slowing you down) is informed rejection. You haven't simply failed to try;
+you've engaged extensively and concluded the tool doesn't actually save
+time, or actively wastes it. You've hit the model's limitations repeatedly
+enough to form a stable assessment.
 
-The neutral zone is interesting---tasks where using the tool takes about as much
+The neutral zone is interesting: tasks where using the tool takes about as much
 time and effort as doing it yourself, so you might use it or might not depending
 on mood (or whether you're paying for it or you're being
 [subsidised by Silicon Valley VCs](https://www.wheresyoured.at/why-everybody-is-losing-money-on-ai/)).
-A researcher editing AI-generated literature summaries that need as much work to
-fix as they would to write from scratch. A designer tweaking AI-generated
-layouts that never quite capture the intended aesthetic and require just as much
-time to correct as to create manually.
+A researcher might edit AI-generated literature summaries that need as much
+work to fix as they would to write from scratch, or a designer might tweak
+AI-generated layouts that never quite capture the intended aesthetic.
 
 The genuinely slowing-you-down zone includes complex reasoning tasks,
 fact-checking mission-critical information, or creative work requiring genuine
 originality where the tool actively wastes your time with output that needs
 extensive correction or produces misleading results you have to untangle. In my
-use of Claude Code (and friends) some coding tasks fall into this for
-sure---they add technical debt that takes longer to fix than writing correctly
-from scratch.
+use of Claude Code (and friends) some coding tasks fall into this for sure,
+adding technical debt that takes longer to fix than writing correctly from
+scratch.
 
 The upper-left---low familiarity but seems to speed you up---is the early
 positive impression. You've tried it once or twice and it seemed to save time,
@@ -159,7 +158,7 @@ and others actively wasting it.
 The framework also explains why people's assessments differ so dramatically.
 We're often arguing about different tasks while thinking we're arguing about the
 same technology. When someone says "LLMs are transformative for writing" and
-someone else says "they're useless"---they might both be right, just talking
+someone else says "they're useless", they might both be right, just talking
 about different writing tasks with genuinely different time costs.
 
 This matches what
@@ -179,12 +178,12 @@ tasks currently in the lower quadrants, particularly by folks selling AI
 tools.
 
 Real transformation would mean moving tasks between zones in systematic ways.
-That might happen---models improve, prompting strategies evolve---but it's an
-empirical question, not a foregone conclusion.
+That might happen as models improve and prompting strategies evolve, but
+it's an empirical question, not a foregone conclusion.
 
-And let's be honest about the neutral zone. A lot of supposed "AI-assisted" work
-actually lives here---using the tool because it's there, because everyone else
-is, because it feels like you should, even when it's not actually saving time.
+A lot of supposed "AI-assisted" work actually lives in the neutral zone:
+using the tool because it's there and everyone else is, even when it's not
+actually saving time.
 
 So what do you do with all this? For users: instead of asking "should I use
 ChatGPT?", ask "for which specific tasks does it actually save me time after

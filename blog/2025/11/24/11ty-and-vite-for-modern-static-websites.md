@@ -13,7 +13,7 @@ But for a recent project I needed proper asset bundling, hot module replacement
 (HMR), and access to the npm ecosystem without building my own pipeline. Enter
 [Vite](https://vite.dev/).
 
-The combination turns out to work really well, withouth adding _too_ much
+The combination turns out to work really well, without adding _too_ much
 complexity over bare 11ty. Here's what I learned setting up 11ty with Vite (and
 Tailwind v4 too) for the [LLMs Unplugged](https://www.llmsunplugged.org/)
 teaching resources site.
@@ -132,7 +132,7 @@ me more control over exactly what gets copied and when.
 ## Tailwind v4's new approach
 
 The above stack works great with whatever CSS approach you use, but I've also
-been moving more and more of my projedts to Tailwind v4. So here's some advice
+been moving more and more of my projects to Tailwind v4. So here's some advice
 for that approach (disregard if you don't want to use Tailwind). In Tailwind v4
 instead of a `tailwind.config.js` file you configure everything through CSS
 using the `@theme` directive. Here's what `main.css` might look like:
@@ -202,7 +202,7 @@ starting and stopping Vite as needed.
 ## When this setup makes sense
 
 If your site is purely content with minimal JavaScript, stick with vanilla 11ty.
-It's faster to set up, easier to understand, and has fewer moving parts.
+It's faster to set up and has fewer moving parts.
 
 This makes sense when you:
 
@@ -220,11 +220,11 @@ Vite pays for itself in developer experience.
 ## The verdict
 
 Setting this up took me a bit of futzing about, but now that it's working the
-development experience is excellent. HMR makes CSS tweaking instant, the build
-output is properly optimised, and I still get 11ty's flexibility for content.
+development experience is excellent. HMR makes CSS tweaking instant, and I
+still get 11ty's flexibility for content with properly optimised build output.
 
-Would I do it again? Absolutely. But only for projects that actually need it.
-Sometimes vanilla 11ty is exactly the right amount of tooling[^right-tool].
+Would I do it again? Absolutely, but only for projects that actually need it.
+For everything else, vanilla 11ty is the right amount of tooling[^right-tool].
 
 [^right-tool]:
     The best tool is the one that solves your problem without creating new ones.

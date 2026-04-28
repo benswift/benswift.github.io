@@ -160,7 +160,7 @@ estimating student numbers is hard) switched-on final-year and postgraduate
 students to try out these theories and see what works. One of the
 [weekly provocations](/blog/2026/02/20/comp4020-the-core-mechanic/) is
 explicitly about that---finding one theory, using it to build a prototype, and
-reporting the reports back to the class.
+reporting the results back to the class.
 
 What will we find? Who knows? The models will also be six months further on by
 the end of the course, so the strengths/weaknesses and bottlenecks may shift

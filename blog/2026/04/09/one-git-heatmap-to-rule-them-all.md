@@ -14,11 +14,11 @@ single profile page tells the whole story. My GitHub heatmap has gaps that
 aren't actually gaps; they're just weeks where the commits landed somewhere
 else.
 
-Mostly I was just curious as to what my developer history since I joined GitHub
-in 2010 towards the end of my PhD looked like. So (Claude and) I wrote a script
-to find out. It pulls contribution data from all three forges, merges it, and
-renders a single self-contained SVG that covers my entire git history. Here's
-what it looks like:
+Mostly I was just curious what my developer history since joining GitHub in
+2010 (towards the end of my PhD) looked like. So (Claude and) I wrote a script
+to find out. It pulls contribution data from all three forges and renders a
+single self-contained SVG covering my entire git history. Here's what it looks
+like:
 
 <iframe src="/assets/contributions.svg" style="display:block;width:100%;height:auto;aspect-ratio:1082/388;border:none;border-radius:6px;background:#0d1117"></iframe>
 
@@ -67,7 +67,7 @@ Caching is simple but effective. For GitHub, past years get saved as JSON files
 and only the current (incomplete) year gets refetched. For GitLab, commits are
 cached per project and only rescanned when a project's `last_activity_at`
 changes. The initial run takes a few minutes (scanning 1,000+ projects), but
-subsequent runs are near-instant.
+later runs are near-instant.
 
 Configuration is all via environment variables---`GITHUB_USER`, `GITHUB_TOKEN`,
 `GITLAB1_URL`, `GITLAB1_USER`, `GITLAB1_TOKEN`, and so on for a second GitLab

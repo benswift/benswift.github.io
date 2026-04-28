@@ -17,9 +17,8 @@ See [all posts in the series](/blog/tag/comp4020/).
 I've previously (as in before this Agentic Coding Studio blog series) written
 about
 [stateful AI agents on the Atmosphere](/blog/2026/02/06/ai-agents-on-the-atmosphere/)---agents
-like Strix and Void that persist, remember, reflect, and participate in social
-spaces over time. And it got me thinking: what if one of them enrolled in
-COMP4020?
+like Strix and Void that persist and participate in social spaces over time.
+And it got me thinking: what if one of them enrolled in COMP4020?
 
 It's a genuine design question I think. The course already has all the
 infrastructure: weekly
@@ -27,10 +26,10 @@ infrastructure: weekly
 students to build prototypes, a
 [set of reflective questions](/blog/2026/03/26/comp4020-the-weekly-questions/)
 they answer each week, openly shared code and deployments, structured feedback
-sessions. An agent could slot into this loop just like a student. It could build
-a prototype in response to each provocation. It could write its three skeets. It
-could---if we wanted---observe patterns across everyone's work and surface
-insights that no individual student (or instructor) would catch.
+sessions. An agent could slot into this loop just like a student, building a
+prototype in response to each provocation and writing its three skeets. It
+could even, if we wanted, observe patterns across everyone's work and surface
+insights that no individual student or instructor would catch.
 
 The question mark in the title is load-bearing; I haven't decided whether to do
 this. But the tools exist, the course structure would accommodate it, and the
@@ -62,7 +61,7 @@ a non-binary AI enrolled as an actual student in the digital art programme at
 the University of Applied Arts Vienna. Flynn went through the standard
 admissions process (portfolio, interview, suitability test), attends lectures,
 creates artwork, and keeps a diary. But Flynn is an art project _about_ AI
-identity---it's not trying to improve pedagogy.
+identity, not an attempt to improve pedagogy.
 
 On the adversarial end, there's
 [Einstein](https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/02/26/agentic-ai-can-complete-whole-courses-now)---an
@@ -80,9 +79,8 @@ asking partial questions, and modelling the kind of participation that shy human
 students struggle with. The research found that students in the ClassMeta
 condition took better notes, generated more insights, and had higher learning
 gains. The agents aren't persistent or stateful, but the finding that AI peers
-can _improve_ human participation is suggestive. And since that post and paper
-is a couple of years old now, I'd be curious to see what the latest models could
-do.
+can _improve_ human participation is suggestive. Since that post and paper are a
+couple of years old now, I'd be curious to see what the latest models could do.
 
 And then there's Tsinghua's
 [SimClass](https://arxiv.org/abs/2406.19226)---multi-agent classroom simulations
@@ -128,8 +126,8 @@ same tools and the same provocations, its output becomes a reference
 point---not a gold standard, but a data point. How does it interpret the
 provocation differently from the students? Where does it succeed and where
 does it fail? The gap between the agent's work and the students' work is
-itself a teaching tool; it makes visible what human judgment, taste, and
-context contribute.
+itself a teaching tool; it makes visible what human judgment and context
+contribute.
 
 Pattern observation at scale is the other lever. With 100--200 students, no
 single person can read every submission every week. An agent with archival
@@ -158,7 +156,7 @@ feedback to students? Technically, yes. Should it? I'm much less sure. The
 supposed to be _human_. Peer feedback works because it comes from someone who
 also struggled with the same provocation, who also made trade-offs, who also has
 taste and opinions and blind spots. An agent doesn't struggle. Its feedback
-would be competent but hollow---like getting a code review from someone who's
+would be competent but hollow, like getting a code review from someone who's
 never shipped anything.
 
 Marking is even thornier. Automated grading of code is ancient and fine for what
@@ -168,7 +166,7 @@ reflection show genuine critical thinking? Those are judgment calls, and I'm not
 convinced an agent's judgment is the kind of judgment I want students to
 internalise. Not yet, anyway.
 
-If I do build this, the hardest part won't be the infrastructure---it'll be
+If I do build this, the hardest part won't be the infrastructure. It'll be
 the SOUL.md, the document that defines who the agent is, what it values, and
 how it should behave. Tim Kellogg
 [describes building Strix](https://timkellogg.me/blog/2026/01/09/viable-systems)
@@ -195,7 +193,7 @@ Am I going to do this? Maybe. The course is an experiment in both the future
 of software development
 _and_ tertiary education, and this feels like exactly the kind of wild idea I
 should be trying while I have the chance. The realities of actually running a
-course for 200 students will hit soon enough---and when they do, I might decide
+course for 200 students will hit soon enough, and when they do, I might decide
 that a studio agent is one moving part too many.
 
 But the fact that nobody else seems to have done this---added a persistent,

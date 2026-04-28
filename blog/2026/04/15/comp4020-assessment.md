@@ -29,9 +29,9 @@ what the student actually built---tightly coupled to the work itself, not some
 abstracted written reflection or traditional exam that drifts away from the
 thing the course is about. It should require _human_ care and effort to do well;
 a one-shottable assessment fails to measure the thing the course is actually
-about, which is judgement: when to let the agent run, when to intervene, when to
-throw the whole thing away and start again, and how best to scaffold all these
-things in a co-operative human-agent system. A submission anyone could generate
+about, which is judgement: when to let the agent run, when to intervene or throw
+the whole thing away and start again, and how best to scaffold all these things
+in a co-operative human-agent system. A submission anyone could generate
 by pasting the prompt into Claude and hitting enter once hasn't told us anything
 useful. And---this one's the most fun to think about---it should have
 _usefulness beyond the course grade_. Ideally the student would want to keep it,
@@ -83,9 +83,9 @@ The JSONL logs are the sneaky part. They're a complete record of every prompt,
 every tool use, every back-and-forth, which makes them dense and hard to read
 end-to-end; nobody's going to wade through hundreds of megabytes for every
 submission. That's fine, because the logs exist as _evidence_. They make every
-claim in the BTS video auditable, they make one-shotting visibly obvious (a log
-containing a single prompt and a single response is telling us something), and
-they open up some interesting possibilities on top of that. An
+claim in the BTS video auditable, and they make one-shotting visibly obvious (a
+log containing a single prompt and a single response is telling us something).
+They also open up some interesting possibilities on top of that. An
 [LLM-as-judge](/blog/2026/03/30/comp4020-whats-the-theory-here/) could scan them
 for specific workflow patterns a student claims to have used. Aggregated across
 the cohort, with consent and anonymisation, they become a genuine research

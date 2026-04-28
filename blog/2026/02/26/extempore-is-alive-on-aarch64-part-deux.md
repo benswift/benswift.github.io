@@ -17,7 +17,7 @@ A quick update on
   [a couple of new WebGPU examples](https://github.com/digego/extempore/tree/aarch64/examples/external);
   the
   [shadertoy one](https://github.com/digego/extempore/blob/aarch64/examples/external/shadertoy.xtm)
-  is kindof fun (no full "xtmrender" pipeline yet, and not ETA on that
+  is kind of fun (no full "xtmrender" pipeline yet, and no ETA on that
   unfortunately)
 - along the way I wrote a
   [tree-sitter grammar](https://github.com/extemporelang/tree-sitter-extempore)
@@ -91,7 +91,7 @@ compiler side.
 
 This is still all on the
 [aarch64 branch](https://github.com/digego/extempore/tree/aarch64); I'm not
-ready to merge to master just yet. If you're an extempore user and you're
-willing to get your hands a little dirty and try build from source on the tip of
-that branch and try out your extempore workloads, then I'd appreciate
-that---including bug reports of things that don't work.
+ready to merge to master just yet. If you're an extempore user willing to get
+your hands a little dirty, try building from source on the tip of that branch
+and running your extempore workloads---I'd appreciate that, including bug
+reports of things that don't work.

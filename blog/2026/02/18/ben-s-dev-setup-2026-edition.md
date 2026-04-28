@@ -10,7 +10,7 @@ New year, new dev setup. This year the theme is:
 
 <blockquote style="font-size: 1.5rem">a life lived in (text) tokens</blockquote>
 
-Agentic software develompent tools
+Agentic software development tools
 ([Claude Code](https://github.com/anthropics/claude-code),
 [Codex CLI](https://github.com/openai/codex), [Opencode](https://opencode.ai),
 [pi](https://github.com/openclaw/openclaw), [Continue](https://continue.dev/),
@@ -45,9 +45,9 @@ I could write up more about it, but honestly if you're curious just look in
 [my dotfiles](https://github.com/benswift/.dotfiles), because it's all in there.
 
 The main reason I switched from Zed is that it's fundamentally a GUI app. There
-are ways to mount remote projects, but I always found them a bit flaky. I'm
+are ways to mount remote projects, but I always found them a bit flaky, and I'm
 increasingly working across lots of different remote machines via ssh[^sprites].
-Terminal stuff just works, Zed takes setup and mental energy.
+Terminal stuff just works; Zed takes setup and mental energy.
 
 [^sprites]:
     [fly sprites](https://sprites.dev/) are particularly interesting as a bit of

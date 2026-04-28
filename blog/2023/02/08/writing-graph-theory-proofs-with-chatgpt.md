@@ -154,7 +154,7 @@ proof given certainly looks ok. It might well be wrong (he didn't look at it in
 detail) but it's the sort of thing a harried marker would assume was written by
 a student who had some idea of what was going on in class. The
 [four colour theorem](https://en.wikipedia.org/wiki/Four_color_theorem) is a
-much trickier proof---it was an unsolved research problem until 2005. The proof
+much trickier proof---it was an unsolved research problem until 1976, when Appel and Haken famously cracked it with computer assistance. The proof
 for that one is almost certainly wrong, but that would only be obvious to
 someone with considerable expertise in the domain (graph theory). Such is the
 way of LLMs.

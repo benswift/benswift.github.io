@@ -177,9 +177,9 @@ posts are a direct test of how much this matters, and to whom.
 
 I think the people building these stateful agents are, for the most part,
 grappling with these questions honestly. The soul documents, the memory
-architectures, the careful thinking about identity and values---these aren't the
-hallmarks of people trying to flood the zone with slop. They're closer to what
-you'd see in a research community feeling its way into genuinely new territory.
+architectures, and the careful thinking about identity and values look closer to
+what you'd see in a research community feeling its way into genuinely new
+territory than to people trying to flood the zone with slop.
 
 My colleague [Jess](https://www.jessherrington.com/) and I recently got a grant
 to explore longer-horizon collaborative relationships and creativity; we're

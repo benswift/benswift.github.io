@@ -37,7 +37,7 @@ pre-requisites, so I think this'll be sufficient for this course. And because of
 the [studio tutorial model](/blog/2026/02/20/comp4020-the-core-mechanic/) I
 _don't_ want to have the tutorials in computer labs---I want them to be in flat,
 flexible rooms where we can re-configure the tables, chairs and screens as
-necessary to facilitate the best discussion dynamics.
+necessary to support the best discussion dynamics.
 
 ## My software stack for teaching
 

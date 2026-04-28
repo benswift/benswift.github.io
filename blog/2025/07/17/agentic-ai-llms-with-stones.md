@@ -12,8 +12,8 @@ image: /assets/images/posts/agentic-ai-llms-with-stones.svg
 
 There's a truth to that proverb, even if you feel (as I do) the temptation to
 "well akshually..." make several very valid points about how words _can_ be
-hurtful. For most of the Large Language Model (LLM) era---since the public
-release of ChatGPT in November 2022---we've been in turns amazed, disgusted and
+hurtful. For most of the Large Language Model (LLM) era, since the public
+release of ChatGPT in November 2022, we've been by turns amazed, disgusted and
 now kindof "meh" about the way that LLMs can take the **words** we give them and
 produce **more words** in response.
 
@@ -26,10 +26,10 @@ descriptions change pretty quick in this field at the moment, I want to
 demistify some things about this term in particular.
 
 Agentic AI (as concieved and talked about in this present moment) is about
-connecting LLMs---"pure" input/output text sausage machines---to the world with
-**tools**. These tools they can use do stuff beyond just returning words in a
-text box on a web page. To return to the "sticks and stones" aphorism above:
-agentic AI means giving an LLM a stone.
+connecting LLMs (those "pure" input/output text sausage machines) to the world
+with **tools** they can use to do stuff beyond just returning words in a text
+box on a web page. To return to the "sticks and stones" aphorism above: agentic
+AI means giving an LLM a stone.
 
 Here's how it works in practice:
 
@@ -67,7 +67,7 @@ coinciding with Anthropic's release of the
 a standardised and interoperable way for other parties (not just the LLM
 providers) to create tools which all LLMs could use. That term is just riffing
 on the "agency" sense of the world, where LLMs are given the means of acting in
-the world. But agentic AI, tools, and tool/function-calling LLMs---it's all the
+the world. But agentic AI, tools, and tool/function-calling LLMs are all the
 same general idea.
 
 In the last couple of years there have been a proliferation of such tools. Some
@@ -100,7 +100,7 @@ or worse. Whenever LLMs are used by humans they have the (indirect) ability to
 affect the world.
 
 In my opinion the best way to think about this shift isn't that LLMs can now
-influence the world; it's that now they can do it without asking---and this
+influence the world; it's that now they can do it without asking, and this
 tightens the feedback loop. This means:
 
 1. first, there's now no longer a human in the loop (so now there's no human to

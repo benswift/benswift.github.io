@@ -13,18 +13,18 @@ and [@me](https://github.com/benswift), but calling it a "core team" makes it
 sound more grown-up) having other committments these days and not so much time
 to hack on it.
 
-Well, a recent (much appreciated!)
+A recent (much appreciated)
 [drive-by PR](https://github.com/digego/extempore/pull/415) got me thinking...
-how much work would it _actually_ be to get it working properly on aarch64. This
-has been the main thing weighing me down for a while; I'm still doing the
+how much work would it _actually_ be to get it working properly on aarch64? This
+has been weighing me down for a while; I'm still doing the
 occasional livecoding gig using an old intel build (via rosetta 2) but that's
 being
 [phased out](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment).
 
-So I had a reasonably free afternoon yesterday and pulled down that branch
+I had a reasonably free afternoon yesterday and pulled down that branch
 (thanks [@soulofmischief](https://github.com/soulofmischief)). It built straight
-away (yay!) but couldn't actually compile/run xtlang code. And there was some
-futzing with the build setup required, and a few external lib updates, and other
+away but couldn't actually compile/run xtlang code. There was some
+futzing with the build setup required, a few external lib updates, and other
 general gardening tasks.
 
 By the end of yesterday I had:

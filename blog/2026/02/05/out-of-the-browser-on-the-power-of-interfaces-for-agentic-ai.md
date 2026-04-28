@@ -71,11 +71,10 @@ about them stealing your passwords or deleting your files. What happens in the
 browser stays in the browser.
 
 But that same sandboxing that protects you also constrains what ChatGPT (or
-any browser-based AI) can actually _do_. It can generate text.
-It can show you images. It can even run some code (JavaScript) in that sandboxed
-environment. But it can't create files on your computer, run your test suite,
-commit code to git, or do any of the thousand other things you do when you're
-actually building software.
+any browser-based AI) can actually _do_. It can generate text, show you
+images, even run some sandboxed JavaScript. But it can't create files on
+your computer, run your test suite, commit code to git, or do any of the
+thousand other things you do when you're actually building software.
 
 Enter the terminal.
 
@@ -117,11 +116,12 @@ Committing changes...</text>
 <text x="20" y="250" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
 <rect x="35" y="238" width="8" height="16" class="cursor"/> </svg>
 
-The terminal is almost the anti-browser. It's a text-only interface to doing
-**everything** on your computer. Creating, reading, editing, and deleting files
-(or entire hard drives). Running programs, installing software, accessing the
-network (and potentially exfiltrating sensitive documents). The terminal is
-powerful---and dangerous---precisely _because_ it has no sandbox.[^sandbox]
+The terminal is almost the anti-browser: a text-only interface to doing
+**everything** on your computer. You can create, read, edit, and delete
+files (or entire hard drives), run programs, install software, and access
+the network (potentially exfiltrating sensitive documents along the way).
+The terminal is powerful, and dangerous, precisely _because_ it has no
+sandbox.[^sandbox]
 
 [^sandbox]:
     Yes, you can run things in
@@ -152,7 +152,7 @@ for a human to approve every step.
 
 This is what kicked off the terminal-native AI boom. When Anthropic
 [announced Claude Code](https://www.anthropic.com/news/claude-3-7-sonnet) in
-February 2025, the model update wasn't a quantum leap---Claude 3.7 Sonnet came
+February 2025, the model update wasn't a quantum leap; Claude 3.7 Sonnet came
 with it, but Sonnet 3.5 was already pretty capable. What they released was a new
 **interface**: an agentic command-line tool that could search and read code,
 edit files, write and run tests, and commit to git. Same models[^models-better],
@@ -176,17 +176,16 @@ those who want the power without the terminal aesthetic.
 
 This is an innovation in **interfaces**, not just models.
 
-All this power comes with obvious risk, of course. An LLM running in your terminal can
-do anything you can do in your terminal. Including steal your SSH keys, read
-your `.env` files, or---as
-[Johann Rehberger points out](https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/)---wipe
-your production database.
+All this power comes with obvious risk, of course. An LLM running in your
+terminal can do anything you can do in your terminal, including stealing
+your SSH keys, reading your `.env` files, or, as
+[Johann Rehberger points out](https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/),
+wiping your production database.
 
 So far, the frontier models have been pretty well-behaved[^yolo]. But Rehberger
 draws a sobering parallel to the Space Shuttle Challenger disaster and the
-concept of "normalisation of deviance"---when repeated exposure to risky
-behaviour without negative consequences leads people to accept that risk as
-normal.
+concept of "normalisation of deviance": repeated exposure to risky behaviour
+without negative consequences leads people to accept that risk as normal.
 
 [^yolo]:
     Even though many developers run these tools with automatic approval for all
@@ -202,16 +201,16 @@ The incentives for speed and automation are strong. The incentives for security
 are... well, they're there in principle, but it's easy to forget why the
 guardrails existed in the first place.
 
-Which brings me to the thing I keep coming back to: the story here isn't about
-smarter models, it's about what an interface lets them do. I've
+Which brings me to the thing I keep coming back to: the story here is about
+what an interface lets the model do, more than how smart the model itself is. I've
 [written before](/blog/2025/07/17/agentic-ai-llms-with-stones/) about how
-agentic AI is really just about giving LLMs tools---stones to throw, in the
-"sticks and stones" sense. But the terminal-native AI wave has clarified
+agentic AI is really just about giving LLMs tools (stones to throw, in the
+"sticks and stones" sense). But the terminal-native AI wave has clarified
 something for me: the _power_ of agentic AI comes from the interface, not just
 the tools themselves.
 
 The browser sandbox was always a security feature, not a limitation of the
-underlying AI. ChatGPT could always _tell_ you to run `rm -rf /`---it just
+underlying AI. ChatGPT could always _tell_ you to run `rm -rf /`; it just
 couldn't do it itself. By moving to the terminal, we haven't made the models
 smarter; we've given them permission to actually do things.
 

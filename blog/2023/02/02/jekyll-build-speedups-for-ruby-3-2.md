@@ -13,7 +13,7 @@ websites for work, some of which are getting into "non-trivial build time"
 territory (or maybe I'm really easily distracted, but a 30s build is enough for
 me to break my flow).
 
-Here's some very unscientifc benchmarks from my [Jekyll](https://jekyllrb.com)
+Here's some very unscientific benchmarks from my [Jekyll](https://jekyllrb.com)
 (v4.3) builds on my M1 Max MBP (64GB).
 
 ## ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [arm64-darwin21]
@@ -44,7 +44,7 @@ The build was _heaps_ faster---the average over 3 runs was 3.7 (±0.2) seconds.
 Obviously, like all benchmarks on the internet this one is wrong & stupid and
 you should do your own testing. Three runs probably isn't enough to shake out
 any cache effects, and I don't know (but could guess?) that the JIT might have
-even more pronounced cold start issues (although I didn't really see it above).
+even more pronounced cold start issues, although I didn't really see it above.
 Anyway, if you build a lot of Jekyll sites, my anecdotal evidence is that you
-can save yourself a bunch of time, and tighten those feedback loops to stay in
-the flow state. Have fun!
+can save yourself a bunch of time and tighten those feedback loops to stay in
+the flow state.

@@ -46,4 +46,4 @@ From the README:
 > [PM&C](https://www.pmc.gov.au/resources/abbreviations-and-acronyms-groups-or-topics).
 
 I'll leave it running and we'll get to see how these statements evolve over
-time. Stay tuned!
+time.

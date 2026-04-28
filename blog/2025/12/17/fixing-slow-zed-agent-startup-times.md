@@ -14,8 +14,8 @@ I've been using [Claude Code](https://github.com/anthropics/claude-code) via
 (Agent Control Protocol) in [Zed](https://zed.dev/), and while the integration
 is brilliant, starting a new Claude session took noticeably longer in Zed than
 running `claude` directly in the terminal; ~30s vs about 5s. And it was
-particularly frustrating because there's no `/clear` slash command via ACP---the
-only way to clear the context, which I d _all the time_ is to re-start the
+particularly frustrating because there's no `/clear` slash command via ACP. The
+only way to clear the context, which I do _all the time_, is to re-start the
 agent, which (because of the delay) breaks my flow.
 
 ## Digging into the diagnosis
@@ -102,8 +102,8 @@ going through `npx`:
 It's still not instant, but it is faster---the pause that was breaking my
 flow is (closer to) gone.
 
-The broader lesson here is that `npx` is convenient for one-off commands, but
-it's a terrible choice for anything that runs frequently. Global installation
+The broader lesson: `npx` is convenient for one-off commands, but a terrible
+choice for anything that runs frequently. Global installation
 plus direct binary invocation is the way to go for tools you use
 regularly[^npx-tradeoffs]. And if you're using mise (or any other tool version
 manager like [asdf](https://asdf-vm.com/) or [rtx](https://github.com/jdx/rtx)),

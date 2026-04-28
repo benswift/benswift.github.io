@@ -20,9 +20,9 @@ plugins that I'd forgotten what half of them did. And while Jekyll is mature, it
 does seem like it's kindof in maintenance mode these days.
 
 I'd been using VitePress for a few other projects and kept being impressed by
-how much you get out of the box. Vue components, TypeScript, with a
-lightning-fast developer experience. Hot module replacement actually
-works---something Jekyll's `--livereload` never quite managed reliably.
+how much you get out of the box: Vue components and TypeScript, with a
+lightning-fast developer experience. Hot module replacement actually works,
+which is something Jekyll's `--livereload` never quite managed reliably.
 
 But the real appeal is that the escape hatches are sensible. When you need
 custom behaviour, you write TypeScript or Vue instead of Ruby plugins and Liquid
@@ -107,21 +107,21 @@ The data is computed at build time and available in your pages. No runtime
 overhead.
 
 In the wash-up, what I like about the new setup comes down to four things.
-The dev experience is dramatically better---instant hot reload, and actual
-error messages instead of Liquid stack traces. Type safety is end-to-end:
-configuration, data loaders, components---it's all TypeScript, so I catch
-errors at build time instead of discovering them in production. The component
-model is a better abstraction than Liquid includes; state, props, and slots
-map cleanly to what you're actually trying to do. And the production build is
-smaller and faster---though honestly this was never really a problem, since
-static sites are fast by definition.
+The dev experience is dramatically better, with instant hot reload and actual
+error messages instead of Liquid stack traces. Type safety is end-to-end across
+configuration, data loaders and components, so I catch errors at build time
+instead of discovering them in production. The component model is a better
+abstraction than Liquid includes; state, props, and slots map cleanly to what
+you're actually trying to do. And the production build is smaller and faster,
+though honestly this was never really a problem, since static sites are fast
+by definition.
 
 Should you switch? If your Jekyll site is just markdown and you're happy with
 it, stay put. Jekyll still does that well.
 
 But if you're fighting Liquid templates, maintaining Ruby plugins you don't
 understand, or wanting to add interactive components without a whole separate
-build system---VitePress is worth considering. The migration isn't trivial, but
+build system, VitePress is worth considering. The migration isn't trivial, but
 it's straightforward if you take it piece by piece.
 
 The old Jekyll site is preserved on the

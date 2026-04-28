@@ -47,7 +47,7 @@ of the
 [leaked 2023 Google memo](https://semianalysis.com/2023/05/04/google-we-have-no-moat-and-neither/)
 asserting "we have no moat, and neither does OpenAI" seems to be holding up.
 Despite trillions of dollars of investment, it really does still seem like an
-upstart can come out of nowhere to release---and share!---something that's
+upstart can come out of nowhere to release (and share) something that's
 competitive with state of the art offerings from the tech giants. This poses a
 strategic question for higher education leaders: how should institutions
 position themselves in response?
@@ -89,7 +89,7 @@ principles:
 3. focus on building adaptable infrastructure that can accommodate multiple AI
    tools
 
-The may be other upsides to these developments. As model training and deployment
+There may be other upsides to these developments. As model training and deployment
 costs decrease, universities may find it increasingly feasible to develop
 specialised models for specific academic domains or research applications. Such
 projects could focus on specific institutional needs rather than attempting to

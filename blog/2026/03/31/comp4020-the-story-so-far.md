@@ -22,14 +22,14 @@ reasonably wonder what on earth I'm on about. So here's the quick version.
 is a new ANU course for Semester 2, 2026. The pitch: LLM-based coding agents
 (e.g. [Claude Code](https://docs.anthropic.com/en/docs/claude-code)) are
 genuinely powerful for web development, so let's teach students to use them
-well---not by lecturing about prompting techniques, but by having them build and
+well, not by lecturing about prompting techniques, but by having them build and
 deploy multiple working web prototypes over a semester. The course trains
 judgement: when producing code is cheap, knowing whether it's _worth_ producing
 is the whole game.
 
 The
-[distinctive design choice](/blog/2026/02/20/comp4020-the-core-mechanic/)---and
-the thing I'm most excited about---is borrowing the studio crit model from art
+[distinctive design choice](/blog/2026/02/20/comp4020-the-core-mechanic/), and
+the thing I'm most excited about, is borrowing the studio crit model from art
 school. Each week follows the same cycle:
 
 1. students receive a **provocation** (an open-ended brief)
@@ -41,7 +41,7 @@ The crit covers both the product _and_ the agentic process that produced it. How
 did you use the agent? Where did you have to intervene? What did you learn about
 working this way?
 
-I ran a similar model for years in the ANU Laptop Ensemble course---swap "web
+I ran a similar model for years in the ANU Laptop Ensemble course. Swap "web
 prototype" for "musical instrument" and "agentic workflow" for "sonic palette"
 and you're most of the way there.
 
@@ -51,12 +51,12 @@ students answer [three questions](/blog/2026/03/26/comp4020-the-weekly-questions
 in 280-character "skeet" format: _why this?_ (not "what does it do"---we can
 see that---but what were you going for?); _what made it better?_ (which
 feedback loops, whether agent, human, or community, actually moved you
-forward?); and _any good?_ (the hardest one and the most important---quality
+forward?); and _any good?_ (the hardest one and the most important: quality
 judgement, taste, and where you'd take it next). The constraint forces
 clarity: if you can't compress your reflection into 280 characters, you
 probably haven't found the actual insight yet. The skeets follow a staged
-visibility model---private until your crit, group-visible during, fully open
-after---to prevent anchoring.
+visibility model (private until your crit, group-visible during, fully open
+after) to prevent anchoring.
 
 The [technical setup](/blog/2026/03/05/comp4020-safety-yolo-and-the-open-web/)
 underpins the whole thing, and it's designed so that students can let agents
@@ -81,29 +81,29 @@ yet. I surveyed
 [the emerging landscape](/blog/2026/03/30/comp4020-whats-the-theory-here/)---Regehr's
 "zero degrees of freedom", Harper Reed's spec-driven development, Jesse
 Vincent's Superpowers framework, the Deer Valley retreat consensus, Geoffrey
-Huntley's [Ralph Loop](https://ghuntley.com/loop/)---and the
-picture is of a field still finding its footing. Part of what excites me about
-COMP4020 is that it's a distributed experiment: 100--200 students road-testing
-these nascent theories and reporting back on what actually works.
+Huntley's [Ralph Loop](https://ghuntley.com/loop/)---and the picture is of a
+field still finding its footing. Part of what excites me about COMP4020 is
+that it's a distributed experiment: 100--200 students road-testing these
+nascent theories and reporting back on what actually works.
 
 There's still plenty I'm wrestling with. Tool access is the most immediate:
 getting ~200 students onto frontier coding agents is a genuine
 [logistics problem](/blog/2026/02/17/comp4020-sharp-tools/), and neither
 sponsored seats from Anthropic (the ideal) nor self-hosting open-weight models
 via vLLM (the fallback) is straightforward at this scale. Then there's the
-question of the studio agent---whether to actually
+question of the studio agent: whether to actually
 [enrol a persistent AI agent](/blog/2026/03/30/comp4020-agents-in-the-classroom/)
 as a course participant, building prototypes, writing skeets, observing
 patterns across the cohort. The question mark in that post's title is
 load-bearing; the pedagogical possibilities are genuinely interesting (a
-baseline, a mirror, a pattern observer at scale) but the "dead classroom" risk
-is real. Assessing taste at scale is another live concern: the course's core
+baseline and a pattern observer at scale) but the "dead classroom" risk is
+real. Assessing taste at scale is another live concern: the course's core
 thesis is that judgement and taste are the skills that matter most when code
 generation is cheap, but how do you actually assess that fairly across ~200
 students? The weekly skeets and studio crits give tutors a lot to work with,
 but it's still qualitative assessment of a quality that's hard to define. And
 there's the open question of whether the crit model transfers from art school
-to CS at all---I think it will, because my colleague Charles Martin has scaled
+to CS at all. I think it will, because my colleague Charles Martin has scaled
 the studio crit model to large cohorts in his
 [Sound and Music Computing](https://comp.anu.edu.au/courses/comp4350/) course
 (formerly the _ANU Laptop Ensemble_), but CS students have never done anything

@@ -13,7 +13,7 @@ Chromium "kiosks" with a pre-set URL (network connected, but with no
 keyboard/mouse).
 
 They've all needed slightly different kiosk URLs, and I _hate_ doing this sort
-of busy-work by hand. So I've spent longer than I'd like to admit[^time] putting
+of busy-work by hand, so I've spent longer than I'd like to admit[^time] putting
 together a fully scripted burn-and-boot process. My non-negotiables were:
 
 [^time]: I thought it'd take a day, it's taken about a week, on and off :(

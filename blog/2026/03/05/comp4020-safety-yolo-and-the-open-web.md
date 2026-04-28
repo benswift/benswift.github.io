@@ -17,12 +17,13 @@ See [all posts in the series](/blog/tag/comp4020/).
 Running terminal agents in "YOLO mode", where they can run arbitrary commands
 (and delete all your data, or worse) is the sort of thing which you _know_ you
 shouldn't do. However, manually approving all the "can I use this tool" or "can
-I edit this file" requests becomes such a PITA that I (and
-[many other developers I respect](https://lucumr.pocoo.org/2025/6/12/agentic-coding/))
-that many developers (myself included) are doing it. Honestly, I have all my
-files backed up in a couple of different places, and while I have semi-important
-files on my machine I don't have the nuclear codes or anything. Most of all,
-Claude hasn't let me down yet (famous last words, I guess).
+I edit this file" requests becomes such a PITA that many developers (myself
+included, alongside
+[many others I respect](https://lucumr.pocoo.org/2025/6/12/agentic-coding/)) are
+doing it anyway. Honestly, I have all my files backed up in a couple of
+different places, and while I have semi-important files on my machine I don't
+have the nuclear codes or anything. Most of all, Claude hasn't let me down yet
+(famous last words, I guess).
 
 However, that's me---thinking about teaching my students to use these tools
 effectively is another matter. If I say "use YOLO mode" then I feel some
@@ -34,10 +35,10 @@ There are a few emerging tools for squaring the "run wild, but don't break my
 things" circle. [Devcontainers](https://containers.dev/) is one of the big ones.
 However, [Fly.io](https://fly.io) recently released
 [Sprites](https://sprites.dev/), which are lightweight (i.e. fast startup) VMs
-with a) first class snapshot-and-restore functionality and b) automatically
+with first class snapshot-and-restore functionality, and which automatically
 spring to life on the open web with a URL and everything. There's lots you
 _could_ do with this sort of setup, but I'm particularly interested in them for
-supportign collaborative student work in COMP4020.
+supporting collaborative student work in COMP4020.
 
 <svg width="100%" viewBox="0 0 500 210" xmlns="http://www.w3.org/2000/svg">
   <!-- Left: local machine (dashed = porous/risky) -->
@@ -131,7 +132,7 @@ previous snapshot and keep going[^git-rollback].
 </svg>
 
 [^git-rollback]:
-    I know that good git hygeine makes for easy rollbacks as well, and students
+    I know that good git hygiene makes for easy rollbacks as well, and students
     _will_ be committing and pushing their work to git as well. But this is
     still easier than setting up full push-to-deploy pipelines for arbitrary
     tech stacks, not to mention if the "broken things" are outside of the
@@ -229,8 +230,8 @@ really interesting idea for teaching programming.
 
 None of this works without some unglamorous plumbing underneath. Each week's
 provocation---the starting point for that week's prototype---is a template git
-repo. Every student forks it, does their work, and pushes. The last push before
-the deadline is what counts as their submission. This keeps things simple and
+repo. Every student forks it and pushes their work, with the last push before
+the deadline counting as their submission. This keeps things simple and
 auditable, and it means CI can check some of the invariants automatically: does
 the build step exit cleanly, does the served site return `200 OK` on the
 required routes, are the process reflection `.md` files present in the repo,

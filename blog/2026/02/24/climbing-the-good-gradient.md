@@ -55,8 +55,8 @@ With that in mind, and also referencing my "weekly crit sessions"
 [core mechanic post](/blog/2026/02/20/comp4020-the-core-mechanic/), I think the
 core principles I want to teach are around designing feedback loops (at multiple
 scales) to help guide us towards the good. If **good** is a scalar field over
-the space of possible codebases, then ∇**good**---the direction of steepest
-ascent---is **the better**. And the feedback loops are how we compute it.
+the space of possible codebases, then ∇**good**, the direction of steepest
+ascent, is **the better**. And the feedback loops are how we compute it.
 
 In particular, there are three important feedback loops in agentic coding:
 
@@ -97,10 +97,10 @@ None of these ideas are new, either in software development (Tanimoto's
 [levels of liveness](https://liveprogramming.github.io/2013/papers/liveness.pdf),
 Victor's [immediate feedback principle](https://worrydream.com/), Schön's
 [reflective conversation with the situation](https://www.punyamishra.com/wp-content/uploads/2017/09/schon-reflective-conversation.pdf),
-Gabriel's
+and Gabriel's
 [software habitability](https://archive.org/details/PatternsOfSoftware)---and
 _many others_ have made similar points). Heck, I work at a School of
-Cybernetics---so good'ol Norbert and Margaret (and
+Cybernetics, so good'ol Norbert and Margaret (and
 [Ranulph Glanville](https://asc-cybernetics.org/publications/systems_papers/C%20and%20D%20paper%200670360902.pdf),
 who argued that cybernetics and design are two sides of the same coin) would be
 nodding sagely along with my musings about feedback-driven behaviour.

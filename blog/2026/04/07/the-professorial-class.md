@@ -13,18 +13,18 @@ See [all posts in the series](/blog/tag/comp4020/).
 
 :::
 
-Well, word is getting out. Several academic friends (and people I didn't know
+Word is getting out. Several academic friends (and people I didn't know
 before) have reached out to see if they could "audit" COMP4020. I think this is
-a super cool idea, and I'm keen to do more than just add them to the LMS---I'm
-keen to think through how we could do this really well.
+a super cool idea, and I'm keen to do more than just add them to the LMS; I want
+to think through how we could do this really well.
 
 I'm not going to throw them all in amongst the undergraduates (although tbh I
-reckon that'd be pretty cool too) but my plan is to run a separate [studio
-session](/blog/2026/02/20/comp4020-the-core-mechanic/) which I'll run, and it'll be full of
+reckon that'd be pretty cool too). My plan is to run a separate
+[studio session](/blog/2026/02/20/comp4020-the-core-mechanic/) full of
 academics. I won't expect them to come to lectures (although they can if they
-want) but I think I want to have some sort of agreement at the start that if my
-colleagues want to audit the course then I ask them to commit to doing the
-pre-work and coming to the studio sessions to discuss it.
+want), but I want some sort of agreement at the start: if my colleagues want
+to audit the course, I ask them to commit to doing the pre-work and coming to
+the studio sessions to discuss it.
 
 Honestly, if we can pull this off I think _I'll_ learn heaps from this, and I
 hope everyone else will, too.

@@ -16,7 +16,7 @@ an iPad sitting on the coffee machine.
 
 Since the cafe uses Square for all payments, I was able to set up a
 [webhook](https://developer.squareup.com/docs/webhooks/overview) so the app
-would receive the "new sale" notification ASAP---this should be both
+would receive the "new sale" notification ASAP, which should be both
 lower-latency and more efficient than polling.
 
 The app is basically a single
@@ -35,7 +35,7 @@ Square send a special `x-square-hmacsha256-signature` header for
 although performing this validation step requires having access to the raw
 request body. Thankfully, the
 ["Custom Body Reader" section in the `Plug.Parsers` docs](https://hexdocs.pm/plug/Plug.Parsers.html#module-custom-body-reader)
-shows how to do exactly that---just follow the instructions there.
+shows how to do exactly that. Just follow the instructions there.
 
 ## Step 2: create webhook controller (including validation)
 
@@ -113,6 +113,6 @@ production and then looking at the logs with `flyctl logs`.
 
 :::
 
-Have fun! And if you live in Canberra, especially in Tuggeranong/Lanyon, maybe
+And if you live in Canberra, especially in Tuggeranong/Lanyon, maybe
 go buy a coffee from [Little Luxton](https://www.littleluxton.com) and you can
 see it for yourself 😊

@@ -21,8 +21,8 @@ plagiarism because I wrote all the content on that website too :)
 Large language models (LLMs) are everywhere, but how many people actually
 understand how they work? Not the hand-wavy "they predict the next word"
 explanation, but the actual mechanics of how. That's what
-[LLMs Unplugged](https://www.llmsunplugged.org)---a new teaching resource I've
-been working on for the last year or so---is for.
+[LLMs Unplugged](https://www.llmsunplugged.org), a new teaching resource I've
+been working on for the last year or so, is for.
 
 The core insight is dead simple: language models predict the next word by
 counting patterns. A bigram model asks "after seeing word X, what usually comes
@@ -44,7 +44,7 @@ a gap when it comes to language models specifically[^gap].
 The unplugged approach has real pedagogical advantages. The activity is
 transparent: when you're physically counting transitions and filling in a
 grid, there's no black box, and you can see exactly where the probabilities
-come from. It's accessible, too---you don't need computers, coding skills, or
+come from. It's accessible, too: you don't need computers, coding skills, or
 expensive infrastructure, just paper and dice. Rolling dice to generate text
 is also surprisingly fun (honestly I think this is just as good as a team
 bonding or bucks'-night activity, but the learning is real). And once you've
@@ -85,14 +85,14 @@ The core activity itself goes like this:
    sense, or laugh at their glorious nonsensicality
 
 The "why is this nonsense?" discussion is where the learning happens. Bigrams
-have no long-term memory. They can't track sentence structure or maintain
+have no long-term memory, so they can't track sentence structure or maintain
 coherent topics. This limitation becomes _super_ obvious when you generate "The
 cat sat on the cat sat on the..."
 
-Then you can talk about how real language models address these limitations.
-Bigger context windows. Attention mechanisms. Training on trillions of tokens
-instead of a few paragraphs. Suddenly the path from your pencil-and-paper model
-to ChatGPT or Claude or Gemini is a little clearer.
+Then you can talk about how real language models address these limitations:
+bigger context windows, attention mechanisms, and training on trillions of
+tokens instead of a few paragraphs. Suddenly the path from your
+pencil-and-paper model to ChatGPT or Claude or Gemini is a little clearer.
 
 This approach teaches the fundamental mechanism of language models, but it
 doesn't capture everything: the scale really is incomparable (a few hundred
@@ -104,8 +104,8 @@ deeply, the extensions to more sophisticated models become natural questions.
 words had relationships beyond just sequence?" leads to embeddings. "What if we
 could focus on relevant parts of the context?" leads to attention. And there are
 LLMs Unplugged lessons which cover all these topics and more. The unplugged
-approach gives you the conceptual foundation. It's not trying to replicate
-production LLMs---it's trying to make the core ideas understandable.
+approach gives you the conceptual foundation: rather than replicating
+production LLMs, it tries to make the core ideas understandable.
 
 The fundamentals are solid, but there's more work to do---in particular to
 road test this in a wide range of classrooms (and boardrooms). The bones of the

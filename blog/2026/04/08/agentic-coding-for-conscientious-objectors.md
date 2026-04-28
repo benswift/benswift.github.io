@@ -46,10 +46,10 @@ this vein, my invitation to the student would be to take this course, give the
 decide where they stand. If they decide they never want to use them again, then
 great---that'll be an informed decision.
 
-I have the benefit with this course that (for example) CS1 educators don't---my
-course isn't a compulsory course. If students don't want to take it, that's
+I have the benefit with this course that (for example) CS1 educators don't:
+my course isn't compulsory. If students don't want to take it, that's
 fine, and it doesn't block them getting on with their lives. And technically I'm
-not going to _force_ any student to do an AI-assisted agentic coding, either.
+not going to _force_ any student to do AI-assisted agentic coding, either.
 It's possible to ship 10 prototypes in 10 weeks while rawdogging all the code
 the old fashioned way, although it'll take (in my opinion) a lot more time &
 effort.

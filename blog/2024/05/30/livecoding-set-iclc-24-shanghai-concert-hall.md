@@ -5,7 +5,7 @@ description: "Performing a livecoding music set at Shanghai Concert Hall as part
 image: /assets/images/posts/livecoding-set-iclc-24-shanghai-concert-hall.svg
 ---
 
-I'm currently in Shanghai tomorrow night I'll be performing at the
+I'm currently in Shanghai, and tomorrow night I'll be performing at the
 [Shanghai Concert Hall](https://www.shanghaiconcerthall.org/) as part of
 [ICLC '24](https://iclc.toplap.org/2024/program.html#table-day2). I'm told
 tickets are already sold out, but if you've already got one and you're coming

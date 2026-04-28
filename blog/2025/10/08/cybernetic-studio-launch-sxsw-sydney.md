@@ -18,7 +18,7 @@ The Cybernetic Studio is a lab-style initiative exploring responsible innovation
 through creative, embodied approaches to technology. Which is a fancy way of
 saying: we build things to think with[^making-to-think], and we try to do it in
 ways that don't just reproduce the surveillance capitalism playbook. Nam Jun
-Paik used technology in order to hate it properly, the Studio aims to carry on
+Paik used technology in order to hate it properly; the Studio aims to carry on
 that noble tradition.
 
 [^making-to-think]:
@@ -65,6 +65,7 @@ the studio is for---figuring out what actually works.
 The event is hosted with Dr. Cath Ball, who always brings the juice. Should be
 good conversations.
 
-It's ticketed, but if you're a SXSW badge-holder you you can register via the
-app. Come along, have a few drinks on us, see some interesting human-scale AI
-artefacts, have some interesting conversations about where this is all heading.
+It's ticketed, but if you're a SXSW badge-holder you can register via the app.
+Come along, have a few drinks on us, see some interesting human-scale AI
+artefacts, and have some interesting conversations about where this is all
+heading.

@@ -10,11 +10,11 @@ image: /assets/images/posts/academic-integrity-policy-re-chatgpt-and-generative-
 
 Here in Australia Semester 1 is approaching and
 [ChatGPT](https://chat.openai.com) is, undoubtedly, _a thing_. From a practical
-perspective it's important to have some​ sort of guidelines about about ChatGPT
+perspective it's important to have some​ sort of guidelines about ChatGPT
 and other generative AI tools in the classroom
 ([everyone's doing it](https://twitter.com/dbkahn/status/1616494433587040257)).
 If you don't provide any advice ahead of time you'll end up making it up as you
-go along (because it _will_ come up) and
+go along (because it _will_ come up), and
 [policy on the run is policy underdone](https://www.youtube.com/watch?v=7XeQin9abx4).
 
 In terms of the opportunities to incorporate, explore and critique new tools in
@@ -37,7 +37,7 @@ own classroom, then questions/comments/suggesions are welcome---do
 
 :::
 
-Here are my current thoughts what some good _use of ChatGPT in the classroom_
+Here are my current thoughts on what some good _use of ChatGPT in the classroom_
 guidelines might look like. It doesn't have everything precisely defined, but it
 gives you an idea of how I want to run my classes, balancing the opportunities
 and challenges these tools present for student learning.

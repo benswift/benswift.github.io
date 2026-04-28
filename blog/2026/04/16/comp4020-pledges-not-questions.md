@@ -27,19 +27,18 @@ arrived having already done some thinking, rather than fumbling to figure out
 what they thought in real time.
 
 I still believe in the scaffold, but the questions weren't quite right. "Any
-good?" was the weakest of the three---the vaguest, the one most likely to
-produce waffle, and the one students would struggle with most. "Why this?" was
-fine in isolation, but it turned out to overlap with something better. And "What
-made it better?" was pointing at the right idea but phrased too vaguely,
-inviting a list of incremental improvements when what I really wanted was the
-singular breakthrough.
+good?" was the weakest of the three: the vaguest, and the one students would
+struggle with most. "Why this?" was fine in isolation, but it turned out to
+overlap with something better. And "What made it better?" was pointing at the
+right idea but phrased too vaguely, inviting a list of incremental improvements
+when what I really wanted was the singular breakthrough.
 
 Lorenn's work is what unstuck the design. She's a recent PhD graduate from the
 [School of Cybernetics](https://cybernetics.anu.edu.au/) whose research focuses on
 closing the gap between responsible AI principles and actual practice. Her
 [MISQE paper with Katherine Daniell](https://aisel.aisnet.org/misqe/vol24/iss2/6/)
 describes how two organisations operationalised responsible AI by crafting
-_responsibility pledges_---specific commitments embedded in routine practice,
+_responsibility pledges_: specific commitments embedded in routine practice,
 not lofty principles pinned to a wall. Her
 [dignity-centred reflective practice work](https://aisel.aisnet.org/acis2023/25/)
 showed that even in fast-moving startup contexts, structured reflection built
@@ -56,11 +55,11 @@ So here's the shape of it. Each week, alongside their prototype, students
 submit three pledges and answer one question.
 
 The **pledges** take the form "This prototype will..." or "This prototype will
-not..."---specific, falsifiable commitments about what the prototype does, how
-it behaves, and what trade-offs it makes. Students write fresh pledges each
-week, though they're free to carry forward ones they still believe in. The
-format matters: these need to be concrete enough that someone else could check
-the source code and the deployed app and say whether the pledge was honoured.
+not...": specific, falsifiable commitments about what the prototype does and
+what trade-offs it makes. Students write fresh pledges each week, though
+they're free to carry forward ones they still believe in. The format matters:
+these need to be concrete enough that someone else could check the source code
+and the deployed app and say whether the pledge was honoured.
 
 Some examples of what I mean:
 
@@ -90,11 +89,11 @@ That's three pledges. The fourth weekly deliverable is a single question, and
 it's this: _What was the aha moment?_ This replaces the old "What
 made it better?" with something more pointed. I don't want a list of things
 that helped. I want the singular breakthrough that turned the project from
-stuck to working. Maybe it was switching tech stacks. Maybe it was
-a blog post that reframed the problem. Maybe it was a tweak to the agentic
-coding harness, or a particular prompting angle you tried in a fresh Claude Code
-session, or a conversation with a friend who pointed out you were solving the
-wrong problem. The point is to identify _the_ thing, not _a_ thing.
+stuck to working. It might be switching tech stacks, or a blog post that
+reframed the problem, or a tweak to the agentic coding harness, or a
+particular prompting angle you tried in a fresh Claude Code session, or a
+conversation with a friend who pointed out you were solving the wrong problem.
+The point is to identify _the_ thing, not _a_ thing.
 
 Over ten weeks, with twenty students per crit group, that's roughly two hundred
 documented aha moments---a browsable catalogue of "things that actually work
@@ -122,7 +121,7 @@ are closer to art projects than pitch decks for a startup accelerator.
 
 A pledge in this context isn't "I promise to be good." It's "here's what I'm
 committing this prototype to do, and you can hold me to it." That includes
-commitments to provoke, to unsettle, to expose something uncomfortable:
+commitments to provoke or to expose something uncomfortable:
 
 - "This prototype will surface your browser fingerprint in a way you didn't ask for, to show you how little privacy you actually have"
 - "This prototype will deliberately exclude power users to find out what happens when software optimises for beginners only"
@@ -131,7 +130,7 @@ commitments to provoke, to unsettle, to expose something uncomfortable:
 A student building something deliberately transgressive should be _more_ able to
 write sharp pledges, not less, because they've already thought about what
 reaction they're trying to provoke and what trade-offs they're consciously
-making. The pledge isn't a moral filter. It's a demand for specificity about
+making. The pledge isn't a moral filter; it's a demand for specificity about
 what you're actually doing and why.
 
 Once the pledges are written, they become the raw material for the crit
@@ -139,10 +138,10 @@ itself. Each crit group has about twenty students, each submitting three
 pledges. That's sixty pledges per week, and twenty prototypes. What happens if
 you evaluate every prototype against every individual pledge?
 
-A 20×60 matrix---each prototype scored against each pledge---is far too many
+A 20×60 matrix, each prototype scored against each pledge, is far too many
 evaluations for humans (twelve hundred cells) but straightforward for an LLM
-with access to the source code and the deployed app. The raw matrix isn't what matters, though. What matters is what clusters out of
-it:
+with access to the source code and the deployed app. The raw matrix isn't what
+matters, though. What matters is what clusters out of it:
 
 _Universally honoured pledges_---ones every prototype satisfies. These are
 probably too vague or too easy. Worth interrogating: is this pledge actually
@@ -160,26 +159,25 @@ _Controversial pledges_---ones where the group splits on whether a given
 prototype honours them. This means the pledge is ambiguous, or students
 interpret "in accord" differently. Also worth pulling apart.
 
-The facilitator doesn't need to fish for tension in the crit---the matrix has
-already found it. "Your prototype broke thirty-eight of the sixty pledges in the
-room. Let's talk about why." Or: "Everyone's prototype honoured this pledge.
-Does that mean it's a good pledge, or does it mean none of you were ambitious
-enough?"
+The facilitator doesn't need to fish for tension in the crit, since the matrix
+has already found it. "Your prototype broke thirty-eight of the sixty pledges
+in the room. Let's talk about why." Or: "Everyone's prototype honoured this
+pledge. Does that mean it's a good pledge, or does it mean none of you were
+ambitious enough?"
 
 The matrix is a conversation starter, not a verdict. Showing the LLM's
-reasoning alongside each judgement means students can push back on it---and
+reasoning alongside each judgement means students can push back on it, and
 arguing about whether the evaluator got it right is itself a productive crit
 conversation.
 
 The obvious risk with any of this is ethics washing. There's a well-documented
 [problem in the broader pledge literature](https://www.aiethicist.org/pledges)
-with what gets called that name---organisations issuing lofty
-commitments that look good in a press release and change nothing in practice.
-Student pledges could easily go the same way: three nice-sounding sentences,
-duly submitted each Monday, utterly disconnected from the prototype they
-accompany.
+with what gets called that name: organisations issuing lofty commitments that
+look good in a press release and change nothing in practice. Student pledges
+could easily go the same way: three nice-sounding sentences, duly submitted
+each Monday, utterly disconnected from the prototype they accompany.
 
-The cross-eval is one defence. It makes pledges _testable_. A vague pledge like
+The cross-eval is one defence: it makes pledges _testable_. A vague pledge like
 "this prototype will be fair" gets exposed the moment an LLM tries to evaluate
 it against a codebase and can't produce a clear answer. If your pledge can't
 generate a yes-or-no verdict, it probably isn't saying anything.
@@ -189,7 +187,7 @@ important one. A deliberately provocative prototype stress-tests
 whether the class's pledges are thoughtful or just pious. If someone builds
 something that intentionally violates privacy to make a point about
 surveillance, and that prototype breaks forty out of sixty pledges,
-that's not a failure---that's a fantastic crit discussion. "You all pledged that
+that's not a failure but a fantastic crit discussion. "You all pledged that
 software should respect user consent. This prototype deliberately violates it.
 Is it irresponsible, or is it the most responsible prototype here, because it's
 the only one that made you _feel_ what users actually experience?" You can't get

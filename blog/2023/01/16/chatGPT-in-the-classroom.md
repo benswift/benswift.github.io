@@ -14,8 +14,8 @@ As I scrolled through my social media feeds over the Christmas break
 [through](https://www.theguardian.com/technology/2022/dec/04/ai-bot-chatgpt-stuns-academics-with-essay-writing-skills-and-usability)
 [several](https://garymarcus.substack.com/p/how-come-gpt-can-seem-so-brilliant)
 "what do AI tools like [ChatGPT](https://chat.openai.comhttps://chat.openai.com)
-mean for the future of Higher Education" pieces---I'm sure you saw them as well.
-To be honest, I'm reluctant to add to that discourse, because most of my
+mean for the future of Higher Education" pieces, and I'm sure you saw them as
+well. To be honest, I'm reluctant to add to that discourse, because most of my
 thoughts on the issue have already been made.
 
 I was at a BBQ dinner with a colleague last weekend and our chat turned to
@@ -45,11 +45,11 @@ and
 
 So, as you look over your course outline and assessment schedule you need to ask
 yourself whether you care if your students use ChatGPT. It's a question that
-goes to the heart of why we set deliverables at all, which includes reasons like
-[legal compliance](https://www.teqsa.gov.au/guides-resources/resources/guidance-notes/guidance-note-course-design-including-learning-outcomes-and-assessment)
-but for most educators is also about deeply held ideals about education as the
-pursuit of knowledge and truth, as well as what it means to give a good (or bad)
-grade.
+goes to the heart of why we set deliverables at all. The reasons include
+[legal compliance](https://www.teqsa.gov.au/guides-resources/resources/guidance-notes/guidance-note-course-design-including-learning-outcomes-and-assessment),
+but for most educators they also reach into deeply held ideals about education
+as the pursuit of knowledge and truth, and into what it means to give a good
+(or bad) grade.
 
 Maybe you don't care, or at least you don't care enough to re-jig your whole
 class to "defend" against students using ChatGPT to submit work that they don't
@@ -91,8 +91,8 @@ ask your students to write something, that's an opportunity to get the student
 to co-write (or evaluate) that same something with ChatGPT. On a superficial
 level this sort of "AI tool use" is the sort of process that knowledge workers
 will increasingly be incorporating into our daily workflows. At a deeper level
-it's an opportunity to reflect on where these tools work well, where they're
-useless, and where they might be actively harmful.
+it's an opportunity to reflect on where these tools work well and where they
+might be actively harmful.
 
 One final point which I made to my colleague in the context of incorporating
 ChatGPT into this semesters's class is about availability. During the

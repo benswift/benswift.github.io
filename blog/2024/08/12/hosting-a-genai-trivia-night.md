@@ -9,7 +9,7 @@ image: /assets/images/posts/hosting-a-genai-trivia-night.svg
 
 I was recently tasked with organising a trivia night, and decided to generate
 all the questions (and answers) with a large language model (I used
-[Claude](https://claude.ai/), although obviously this would work with any model.
+[Claude](https://claude.ai/), although obviously this would work with any model).
 
 Here's the initial prompt I used:
 
@@ -54,7 +54,7 @@ answer is.
 As for whether the LLM was correct/ambiguous/wrong, all decisions by the trivia
 hosts were final.
 
-And how'd it go? Pretty well, overall. In the end the questions were a bit too
+It went pretty well overall, though in the end the questions were a bit too
 tricky. Turns out it's really hard to eyeball questions _with_ answers to guess
 how many you'd get correct, so if you're going to do that make sure you do it
 without looking at the answers.
@@ -63,5 +63,5 @@ There was one successful challenge on the night, but overall there didn't seem
 to be too many hallucinations. In some ways it would have been more fun if there
 were.
 
-Anyway if you need to organise a trivia night and don't want to do any
-painstaking research, then give the above prompts a try.
+Anyway, if you need to organise a trivia night and don't want to do any
+painstaking research, give the above prompts a try.

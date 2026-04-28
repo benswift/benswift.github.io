@@ -19,14 +19,14 @@ require the institutional overhead of a DOI---and because the
 
 If you write something on the web and want people to be able to cite it
 reliably, you've got three options with varying trade-offs, and the identifier
-trilemma[^dilemma] is real. The first option is bare URLs---free and
+trilemma[^dilemma] is real. The first option is bare URLs: free and
 immediate. `https://benswift.me/blog/2026/02/19/...` works right now and will
 keep working for as long as I keep this domain pointed at this content. The
 problem, of course, is that "as long as I keep this domain" is doing a lot of
-work in that sentence. Domains lapse, hosting providers go away, site
+work in that sentence. Domains lapse and hosting providers go away; site
 redesigns break paths. Tim Berners-Lee
 [argued in 1998](https://www.w3.org/Provider/Style/URI) that cool URIs don't
-change---but on the real web, they change all the time.
+change, but on the real web, they change all the time.
 
 [^dilemma]: Technically "trilemma" because there are three options; I briefly
     called it a "dilemma" for the rhythm of the sentence, but who's that
@@ -48,14 +48,14 @@ much[^zenodo].
     But it still means your canonical content lives in two places, and you need
     to manually deposit each post.
 
-The third option---AT-URIs---sits somewhere in the middle.
+The third option, AT-URIs, sits somewhere in the middle.
 [AT Protocol](https://atproto.com/specs/record-key) defines a URI scheme
 (`at://did:plc:abc123/collection/rkey`) where the authority is a
 cryptographically verifiable DID rather than a domain name. Your content lives
 in a [Personal Data Server](https://atproto.com/guides/glossary#pds) that you
 control, and the DID follows you even if you move between PDS providers. The
-resolution doesn't depend on any single company keeping the lights on---it's
-federated infrastructure, not a domain registrar's renewal cycle.
+resolution doesn't depend on any single company keeping the lights on; it's
+federated infrastructure rather than a domain registrar's renewal cycle.
 
 None of these are perfect. But for the specific case of "I write a blog and I
 want a persistent, self-issued, machine-readable identifier for each post," the
@@ -100,9 +100,10 @@ indexer can match the web content to the protocol records and confirm they
 belong together.
 
 Why roll my own rather than use [Sequoia](https://sequoia.pub)? Sequoia is a
-perfectly good CLI for publishing standard.site records---it handles authentication, record creation, and the
-well-known file out of the box. I hand-rolled the integration anyway, for one
-specific reason: deterministic record keys.
+perfectly good CLI for publishing standard.site records, handling
+authentication, record creation, and the well-known file out of the box. I
+hand-rolled the integration anyway, for one specific reason: deterministic
+record keys.
 
 The core idea comes straight from Berners-Lee's
 [cool URIs](https://www.w3.org/Provider/Style/URI) principle. If you're creating
@@ -123,10 +124,10 @@ export function pathToRkey(postPath: string): string {
 This matters because it means the identifiers survive state file loss. If my
 `atproto-state.json` vanishes tomorrow, I can reconstruct every AT-URI from the
 post paths alone. The state file is just an optimisation cache for skipping
-unchanged posts---it's not the source of truth for identifiers.
+unchanged posts; it's not the source of truth for identifiers.
 
 Sequoia, like most atproto tooling, generates
-[TID-based](https://atproto.com/specs/record-key) rkeys---opaque
+[TID-based](https://atproto.com/specs/record-key) rkeys: opaque
 timestamp-derived strings like `3jzfcijpj2z2a`. They're unique, but they're not
 deterministic. If you ever needed to republish your records (new PDS, corrupted
 repo, whatever), you'd get different rkeys and different AT-URIs. Any citations
@@ -169,16 +170,15 @@ with the AT-URI in the `note` field:
 
 It's not a DOI, and no reference manager will resolve it automatically (yet).
 Maybe I should try and land a PR in Zotero or something. But it _is_ a
-verifiable, persistent, self-issued identifier that lives on federated
-infrastructure. If someone cites a blog post of mine in a paper and includes the
-AT-URI, that identifier will resolve as long as the AT Protocol network
-exists--- independent of whether `benswift.me` is still pointing at the right
-server.
+verifiable, self-issued identifier that lives on federated infrastructure. If
+someone cites a blog post of mine in a paper and includes the AT-URI, that
+identifier will resolve as long as the AT Protocol network exists, independent
+of whether `benswift.me` is still pointing at the right server.
 
 AT-URIs don't have the institutional weight of DOIs. No journal, funder, or
 university recognises them as "proper" persistent identifiers. And who even
 knows if my next promotion case is going to get any benefit from links to my
-stupid blog. The resolution infrastructure is young---there's no equivalent of
+stupid blog. The resolution infrastructure is young, with no equivalent of
 `doi.org` that an AT-URI cleanly resolves through. And the `standard.site`
 lexicons are still finding their shape; the spec could evolve in ways that
 require migration.
@@ -190,10 +190,10 @@ registrar. And because the DID layer is separable from any particular PDS, the
 identifiers have a plausible path to outliving any individual service provider.
 
 For now, this is an experiment in treating blog posts as first-class scholarly
-artefacts---with real identifiers, real metadata, and a real citation workflow.
-If the AT Protocol ecosystem grows the way its proponents hope, these
-identifiers might actually matter. And if it doesn't, well, the citation meta
-tags and BibTeX still work without them. Cite me and prove me right!
+artefacts, with real identifiers and a real citation workflow. If the AT
+Protocol ecosystem grows the way its proponents hope, these identifiers might
+actually matter. And if it doesn't, well, the citation meta tags and BibTeX
+still work without them. Cite me and prove me right.
 
 ## Update: discoverability in practice (2026-04-10)
 
@@ -203,10 +203,9 @@ actually _discoverable_? Is anyone out there building "Bluesky for blogs"?
 
 Turns out: yes, though without much fanfare. As of today there are 147
 `site.standard.document` records in my repo, queryable directly from the PDS
-via
-`com.atproto.repo.listRecords`---oldest going back to 2020, newest from
-yesterday. Every write also flies past on the ATproto firehose, and at least
-one indexer is listening.
+via `com.atproto.repo.listRecords`, with the oldest going back to 2020 and the
+newest from yesterday. Every write also flies past on the ATproto firehose,
+and at least one indexer is listening.
 [Standard Search](https://standard-search.octet-stream.net) is a firehose-fed
 search engine for standard.site records that uses the relay's collection
 listing to backfill history without any crawling. It launched in January 2026
@@ -214,21 +213,21 @@ with around 3,900 documents indexed and has been growing steadily since.
 
 On the reader side, [Leaflet.pub](https://leaflet.pub), Pckt.blog, and
 Offprint.app are publishing platforms that _also_ act as readers for each
-other's content---Leaflet can render a preview of a document authored in Pckt,
+other's content. Leaflet can render a preview of a document authored in Pckt,
 and my Astro-published posts land in the same pool, no migration required.
 Surrounding tooling is starting to show up too: Sequoia for publishing from
-the command line, astro-standard-site for Astro blogs like this one, a
+the command line, astro-standard-site for Astro blogs like this one, and a
 proposed markpub markdown sub-lexicon.
 
 The framing I missed first time round: this isn't going to be one monolithic
 "Bluesky for blogs" AppView. It's going to be N readers, search engines, and
 bookmarking tools all pointed at the same record pool via the shared
 [standard.site](https://standard.site) lexicons. Which is arguably a _more_
-interesting outcome than Bluesky itself managed---publishing and reading
+interesting outcome than Bluesky itself managed: publishing and reading
 decoupled at the protocol layer, rather than bundled into one vertically
 integrated app.
 
 Still small, obviously. Standard Search is one person's project and the
 reader ecosystem is a handful of apps rather than a flourishing market. But
-the loop is closed---write → firehose → indexer → reader---and it's
+the loop is closed (write → firehose → indexer → reader), and it's
 present-tense infrastructure, not a bet on future stuff. I'll take it.

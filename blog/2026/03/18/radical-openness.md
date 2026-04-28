@@ -33,9 +33,8 @@ of ways I can push this openness even further. One thing I'm really keen on (and
 dovetails nicely with the
 [studio crit-based core mechanic for the course](/blog/2026/02/20/comp4020-the-core-mechanic/))
 is the idea that the students share _all_ of their weekly prototypes with each
-other. This means that they can visit the deployed version on the (public) web,
-but also the ability to clone the full source repo. including the full source
-code.
+other. This means they can not only visit the deployed version on the (public) web,
+but also clone the full source repo.
 
 This means that if a student finds something cool (or has some notes) about
 another student's web-based prototype they can (after the class) clone the repo
@@ -46,7 +45,7 @@ remix it according to the next week's provocation.
 Because we already use a (self-hosted) GitLab server for all code submissions
 this should be fairly straightforward. I haven't decided whether these
 submissions should be fully open (to the public) or just visible to other
-studnets in the class. In terms of the deployments, this is why I like the idea
+students in the class. In terms of the deployments, this is why I like the idea
 of
 [lightweight VMs on the open web](/blog/2026/03/05/comp4020-safety-yolo-and-the-open-web/)
 for all prototyping---the ability to "share the link with your mate or your Mum"
@@ -54,7 +53,7 @@ comes for free.
 
 These weekly prototype submissions aren't marked directly; and I'm not sure if
 I'm going to require the same openness about the actual assessed deliverables
-(maybe not?). And we'll need to have mechanisms in place to ensure studnets
+(maybe not?). And we'll need to have mechanisms in place to ensure students
 don't accidentally commit API tokens or PII or anything else that shouldn't be
 shared.
 

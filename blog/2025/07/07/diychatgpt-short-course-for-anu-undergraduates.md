@@ -5,10 +5,10 @@ description: "A hands-on 3-hour workshop where ANU undergrads train their own la
 image: /assets/images/posts/diychatgpt-short-course-for-anu-undergraduates.svg
 ---
 
-If you're an ANU undergraduate student you can enrol in an upcoming (next week!)
+If you're an ANU undergraduate student you can enrol in an
 [upcoming 3hr course](https://mccuskerinstitute.anu.edu.au/study/knots/diy-chatgpt-llms-as-information-processing-machines/)
 I've created called _DIY ChatGPT: LLMs as Information Processing Machines_. It's
-running for the first time **next Thursday 17 July 10am--1pm** (although it will
+running for the first time on **Thursday 17 July, 10am--1pm** (although it will
 run again later in the semester).
 
 Here's the blurb:

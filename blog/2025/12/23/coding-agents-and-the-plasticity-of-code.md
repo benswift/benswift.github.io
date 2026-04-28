@@ -13,19 +13,18 @@ when you're making a change that's unambiguously a good one you often need to
 break it in one place and then manually fix it up in a dozen others to
 compensate.
 
-It's not a bad thing; rigid things can be super strong. But it's always felt to
-me (in the 20+ years that I've been writing code as a CS academic and
-[maker of software things](https://github.com/benswift)) that this is just it's
-deal. It's precise, so it's fragile.
+That's not a bad thing; rigid things can be super strong. But in the 20+ years
+I've been writing code as a CS academic and
+[maker of software things](https://github.com/benswift), it's always felt like
+just code's deal. It's precise, so it's fragile.
 
 [Like](https://lucumr.pocoo.org/2025/12/22/a-year-of-vibes/)&nbsp;[many](https://steveklabnik.com/writing/thirteen-years-of-rust-and-the-birth-of-rue/)&nbsp;[others](https://fly.io/blog/youre-all-nuts/)
 in 2025, though, I've been messing around with Claude Code and other coding
 agents. It feels different. I talk to the codebase in natural language, and it
-_deforms_ but ends up still working (most of the time). It's not that there
-aren't a heap of intermediate steps where the agent runs the change-observe-fix
-loop, but they usually doesn't require my intervention. So the overall feeling
-is of code that bends but doesn't break, and that the code is much more plastic
-than before.
+_deforms_ but ends up still working (most of the time). There are still plenty
+of intermediate steps where the agent runs the change-observe-fix loop, but
+those usually don't require my intervention. The overall feeling is of code
+that bends rather than breaks, and that's much more plastic than before.
 
 Some folks have been thinking about
 [malleable software](https://www.inkandswitch.com/essay/malleable-software/) for
@@ -41,15 +40,13 @@ reshape their tools without learning to program.
 
 But I'm coming at this from a different angle (indeed, it's why I used "plastic"
 in this post rather than the term malleable, which would otherwise be a good
-synonym). I already know how to program. The brittleness I'm describing isn't
-about lacking the skills to modify code---it's about the sheer effort required
-to hold all the pieces in your head while you do it. The "activation energy"
-required to take a bite out of a big refactoring task where you know lots of
-changes have to be made all through the codebase and the thing won't work until
-they're all done. The agent absorbs that cognitive load. It remembers which
-files need updating, runs the tests, fixes the knock-on errors.
-
-## What does it all mean?
+synonym). I already know how to program. The brittleness I'm describing is
+about the sheer effort required to hold all the pieces in your head while you
+modify code: the "activation energy" required to take a bite out of a big
+refactoring task where you know lots of changes have to be made all through
+the codebase and the thing won't work until they're all done. The agent
+absorbs that cognitive load. It remembers which files need updating, runs the
+tests, fixes the knock-on errors.
 
 I wouldn't call what I'm doing vibecoding. I'm at least looking at (and
 sometimes tweaking) every diff. Or maybe that is vibecoding; I don't really
@@ -60,12 +57,12 @@ language to do stuff that I know how to do in code.
 
 Paradoxically, the things that help the writing-code-with-an-agent process feel
 more plastic are the things that (in another sense) make it more brittle: adding
-tests and using types (even in languages where they're optional). But they give
-that signal to the agent---the thing you changed here means you broke something
-else over here and you need to fix it---which is really good at responding
-correctly to that signal. And I'm freed up to make changes and then see their
-endpoints, where things "work" for a shallow definition of that term, and I get
-to do the deeper reflecting on whether the change is any good.
+tests and using types (even in languages where they're optional). They give the
+agent a signal that the thing you changed here means you broke something over
+there, and the agent is really good at responding to that signal. I'm freed up
+to make changes and then see their endpoints, where things "work" for a shallow
+definition of that term, and I get to do the deeper reflecting on whether the
+change is any good.
 
 I really do think I've been more productive this year. It's true that I'm in a
 bit of a goldilocks zone for these tools: I've already been doing this for 20

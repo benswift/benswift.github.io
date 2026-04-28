@@ -9,9 +9,8 @@ image: /assets/images/posts/rclone-exclude-all-git-repos.svg
 
 For a long time I've used [rclone](https://rclone.org) for remote backups and
 it's awesome. I have a script which syncs all the files I care about on my
-laptop to cloudstor (which, being on the Australian university network has the
-benefit that I get 1Gbps upload when I'm on the ANU network). My institution
-(the ANU)
+laptop to cloudstor, which, being on the Australian university network, has the
+benefit that I get 1Gbps upload when I'm on the ANU network.
 
 However, it turns out that
 [cloudstor](https://support.aarnet.edu.au/hc/en-us/articles/5697089309711) is
@@ -21,7 +20,7 @@ OneDrive account.
 
 My feelings about closing down useful (local) infrastructure and centralising
 things on one of the big cloud providers notwithstanding, this should be an easy
-change---[rclone supports OneDrive](https://rclone.org/onedrive/), so it's a
+change. [rclone supports OneDrive](https://rclone.org/onedrive/), so it's a
 simple config change to move over.
 
 However, I figured I'd take the opportunity to fix something which had long

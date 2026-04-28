@@ -34,8 +34,8 @@ in November 2022 as an inflection point in the use and influence of LLMs in
 modern life, but for software developers
 it's Claude Code's release in May 2025 which has made the biggest change to the
 way we do (some of) our job. I don't subscribe to either the "booster" or
-"doomer" end of the spectrum with AI/LLM tools; but I am curious about the way
-they'll change the way that _people_ make cool stuff.
+"doomer" end of the spectrum with AI/LLM tools, but I am curious about the way
+they'll change how _people_ make cool stuff.
 
 Anyway, the ANU School of Computing (where I was formerly a faculty member,
 before moving to the School of Cybernetics in 2021) has asked me to create a new

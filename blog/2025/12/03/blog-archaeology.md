@@ -27,9 +27,9 @@ is Brandon Mathis's initial Octopress setup, and my
 [last customisation](https://github.com/benswift/octopress/commit/b317c23438fe4ad8a271e19312b04ca82e901159)
 was on 8 November that year. I added Ubuntu fonts and a custom GitHub sidebar.
 
-I do remember the Octopress setup. One interesting nugged I'd forgotten was
-showed up in some commit messages which mention "new 'detached' octopress/org
-blogging works"---apparently I was already integrating
+I do remember the Octopress setup. One interesting nugget I'd forgotten showed
+up in some commit messages mentioning "new 'detached' octopress/org blogging
+works"---apparently I was already integrating
 [org-mode](https://orgmode.org) with my blogging setup back then.
 
 Then came "the Clojure years" (2013--2017). I still really like Clojure in a
@@ -132,8 +132,8 @@ technologies and ideas.
 
 Second, there's something satisfying about having this entire history preserved.
 Every commit tells a story---not just "what changed" but often "why I wanted to
-change it". The commit messages are a diary of sorts: technical decisions,
-aesthetic tweaks, occasional outbursts.
+change it". The commit messages are a diary of technical decisions and
+aesthetic tweaks, with the occasional outburst.
 
 The git packrat habit means I can see exactly when I added that custom CSS for
 blockquotes (multiple times, apparently), when I first integrated `reveal.js`

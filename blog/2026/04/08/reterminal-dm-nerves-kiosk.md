@@ -117,7 +117,7 @@ I'd previously done [scripted RPi kiosk setups](/blog/2025/07/16/automated-rpi-w
 with Raspberry Pi OS and labwc, but Nerves gives you something qualitatively
 different: the entire system---OS, compositor, browser, application---is a single
 firmware image that you build with `mix firmware` and deploy over the air with
-`mix upload nerves.local`. No SD cards, no apt-get, no configuration drift.
+`mix upload nerves.local`. No SD cards or apt-get, and no configuration drift.
 
 ## The touch problem
 
@@ -125,8 +125,8 @@ This is the frustrating part. The Goodix touchscreen works fine at
 the kernel level---`/dev/input/event0` delivers events, Weston picks them up via
 libinput and associates them with the DSI-1 output. But
 [Cog](https://github.com/Igalia/cog) 0.18.5 / WPE WebKit 2.48.3 simply does
-not forward those touch events to the browser. No `pointerdown`, no
-`touchstart`, no `click`---nothing reaches the DOM.
+not forward those touch events to the browser. No `pointerdown` or `click`
+events; nothing reaches the DOM.
 
 This is a [known category of issues](https://github.com/Igalia/cog/issues/213)
 in Cog. The Wayland platform backend's touch handling has had multiple bugs
@@ -251,6 +251,6 @@ The source is at
 Next up: the Neon Perceptron's output layer uses multiple Nerves devices driving
 seven-segment displays, so I need to get BEAM clustering working across a few
 CM4s on a local network. The nice thing about Nerves is that distributed Erlang
-is just... there. `libcluster` with gossip discovery, a gigabit switch, and
-suddenly `GenServer.call` works across devices. But that's a post for another
-day.
+is just... there. Drop in `libcluster` with gossip discovery on a gigabit
+switch and suddenly `GenServer.call` works across devices. But that's a post
+for another day.

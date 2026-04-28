@@ -14,8 +14,8 @@ years ago my employer turned off password-based IMAP auth and broke my (Office
 
 I've recently rebuilt my entire email setup around neomutt (in Zed's built-in
 terminal). I always knew that there was _some_ way to do the Office365 OAuth2
-dance and hook things back up, so I took the plug and shaved the email yak
-again. And here, dear reader, are the results---may you not waste as many hours
+dance and hook things back up, so I took the plunge and shaved the email yak
+again. Here, dear reader, are the results---may you not waste as many hours
 messing around as I did.
 
 The new setup is mbsync (built from source with SASL support) doing IMAP sync
@@ -46,7 +46,7 @@ PassCmd "/Users/ben/.dotfiles/mail/mutt_oauth2.py \
 
 The `keychain-store.sh` wrapper script ensures tokens are stored securely in
 macOS Keychain rather than sitting around in plaintext files. If you're on Linux
-you can switch my macOS-specific approach with suitable `pass` or `gpg`
+you can swap my macOS-specific approach for suitable `pass` or `gpg`
 invocations.
 
 :::tip

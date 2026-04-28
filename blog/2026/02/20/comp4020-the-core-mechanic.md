@@ -56,7 +56,7 @@ workflow" and you're most of the way there.
 The model can be intimidating at first. From week two onwards, students are
 simultaneously showing their own work-in-progress _and_ giving feedback on
 others'. But COMP4020 will have later-year students, and with careful
-facilitation it I reckon it'll work really well. The awkwardness fades fast, and
+facilitation I reckon it'll work really well. The awkwardness fades fast, and
 what replaces it is a genuine community of practice---people who share a
 vocabulary, who've seen each other's failures and successes, and who can have
 informed conversations about what "good" looks like (because that's the key
@@ -73,13 +73,12 @@ that's veering into unhelpful territory.
     small-group teaching sessions.
 
 There'll also be a small, marked-in-class component assessed by the tutor each
-week. Nothing worth a huge amount---just enough so that students have skin in
-the game. The point isn't to create anxiety; it's to create _investment_. If you
-know you're going to demo your work and discuss your process, you'll actually do
-the work (a point which I've seen successfully validated across several years of
-Laptop Ensemble courses). And if you're going to give feedback to someone else,
-you'll engage with their prototype properly rather than just clicking through
-it. And in general our students are cool and nice and can be trusted not to be
+week. Nothing worth a huge amount---just enough so students have skin in the
+game. The point is investment, not anxiety. If you know you're going to demo
+your work and discuss your process, you'll actually do the work (a point I've
+seen validated across several years of Laptop Ensemble courses). And if you're
+going to give feedback to someone else, you'll engage with their prototype
+properly rather than just clicking through it. And in general our students are cool and nice and can be trusted not to be
 arseholes to each other.
 
 One thing I want to emphasise about the crit itself: the feedback covers both
