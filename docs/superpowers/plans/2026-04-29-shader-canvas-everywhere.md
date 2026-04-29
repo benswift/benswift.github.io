@@ -15,6 +15,7 @@
 ## File structure
 
 **New files:**
+
 - `src/data/hero.ts` — exports `SITE_BASELINE_PHRASES`
 - `src/utils/hero-image.ts` — exports `getHeroImage(slug)` using `import.meta.glob`
 - `src/utils/hero-image.test.ts` — tests for the lookup module
@@ -27,6 +28,7 @@
 - `scripts/generate-hero-images.ts` — per-post image generation driven by atproto state diff
 
 **Modified files:**
+
 - `src/components/svelte/HeroCanvas.svelte` — remove `phrases` prop, read from meta tags, reduced-motion `<img>` path
 - `src/layouts/BaseLayout.astro` — render persistent HeroCanvas + meta tags
 - `src/layouts/HomeLayout.astro` — remove inline HeroCanvas, pass phrases through
@@ -41,6 +43,7 @@
 - All blog posts under `blog/**/*.{md,mdx}` — strip `image:` frontmatter line
 
 **Deleted files:**
+
 - All `*.svg` files at the top level of `public/assets/images/posts/` (~157 files)
 
 ---
@@ -48,6 +51,7 @@
 ## Task 1: Site baseline phrases module
 
 **Files:**
+
 - Create: `src/data/hero.ts`
 
 A trivial module exporting the always-included phrases.
@@ -76,6 +80,7 @@ git commit -m "feat(hero): add site baseline phrases module"
 ## Task 2: Remark plugin for hero phrases (TDD)
 
 **Files:**
+
 - Create: `src/plugins/remark-hero-phrases.ts`
 - Create: `src/plugins/remark-hero-phrases.test.ts`
 
@@ -220,6 +225,7 @@ git commit -m "feat(hero): add remark-hero-phrases plugin to extract per-page ph
 ## Task 3: Register remark plugin in Astro config
 
 **Files:**
+
 - Modify: `astro.config.ts:11` (imports), `astro.config.ts:39-43` (markdown.remarkPlugins)
 
 - [ ] **Step 1: Add import**
@@ -271,6 +277,7 @@ No work in this task. Numbering preserved so subsequent task references stay sta
 ## Task 5: Hero image lookup module (TDD-light)
 
 **Files:**
+
 - Create: `src/utils/hero-image.ts`
 - Create: `src/utils/hero-image.test.ts`
 
@@ -357,6 +364,7 @@ Note: `getHeroImage()` will fail to import `og-default.png` until Task 6 adds th
 ## Task 6: Default placeholder hero image
 
 **Files:**
+
 - Create: `src/assets/heroes/.gitkeep`
 - Create: `src/assets/og-default.png` (placeholder; regenerated in Task 16)
 
@@ -396,6 +404,7 @@ git commit -m "feat(hero): add placeholder default hero image"
 ## Task 7: Refactor HeroCanvas to read from meta tags
 
 **Files:**
+
 - Modify: `src/components/svelte/HeroCanvas.svelte`
 
 Three changes: drop the `phrases` prop in favour of reading `<meta name="hero-phrases">`; subscribe to `astro:page-load`; render an `<img>` instead of canvases under reduced-motion (URL from `<meta name="hero-image-url">`).
@@ -405,15 +414,15 @@ Three changes: drop the `phrases` prop in favour of reading `<meta name="hero-ph
 In `src/components/svelte/HeroCanvas.svelte`, remove the `Props` interface and `phrases` prop. Replace the prop block (lines 5-9) with:
 
 ```ts
-let containerEl: HTMLDivElement
-let glCanvas: HTMLCanvasElement
-let textCanvas: HTMLCanvasElement
-let ctx: CanvasRenderingContext2D | null = null
-let shader: ShaderPad | null = null
-let resizeObserver: ResizeObserver | null = null
-let tickInterval: number | null = null
-let prefersReducedMotion = $state(false)
-let fallbackImageUrl = $state("")
+let containerEl: HTMLDivElement;
+let glCanvas: HTMLCanvasElement;
+let textCanvas: HTMLCanvasElement;
+let ctx: CanvasRenderingContext2D | null = null;
+let shader: ShaderPad | null = null;
+let resizeObserver: ResizeObserver | null = null;
+let tickInterval: number | null = null;
+let prefersReducedMotion = $state(false);
+let fallbackImageUrl = $state("");
 ```
 
 The component is in Svelte 5 runes mode (uses `$props()` already), so reactive template variables must use `$state()`. The first three element bindings stay non-reactive — they are imperative-only state.
@@ -426,16 +435,19 @@ Add these helper functions near `pickPhrase` (around line 154):
 
 ```ts
 function readPhrasesFromMeta(): string[] {
-  if (typeof document === "undefined") return []
-  const meta = document.querySelector('meta[name="hero-phrases"]') as HTMLMetaElement | null
-  if (!meta) return []
-  return meta.content.split("|").map((p) => p.trim()).filter(Boolean)
+  if (typeof document === "undefined") return [];
+  const meta = document.querySelector('meta[name="hero-phrases"]') as HTMLMetaElement | null;
+  if (!meta) return [];
+  return meta.content
+    .split("|")
+    .map((p) => p.trim())
+    .filter(Boolean);
 }
 
 function readFallbackImageFromMeta(): string {
-  if (typeof document === "undefined") return ""
-  const meta = document.querySelector('meta[name="hero-image-url"]') as HTMLMetaElement | null
-  return meta?.content ?? ""
+  if (typeof document === "undefined") return "";
+  const meta = document.querySelector('meta[name="hero-image-url"]') as HTMLMetaElement | null;
+  return meta?.content ?? "";
 }
 ```
 
@@ -447,18 +459,18 @@ Replace `prepareActivePhrases` (currently on lines 303-318) with:
 function prepareActivePhrases() {
   const cleaned = readPhrasesFromMeta()
     .map((p) => p.replaceAll(/\s+/g, " ").trim())
-    .filter((p) => p.length > 0 && p.length <= MAX_PHRASE_LEN)
-  const source = cleaned.length > 0 ? cleaned : FALLBACK_PHRASES
-  const seen = new Set<string>()
-  const uniq: string[] = []
+    .filter((p) => p.length > 0 && p.length <= MAX_PHRASE_LEN);
+  const source = cleaned.length > 0 ? cleaned : FALLBACK_PHRASES;
+  const seen = new Set<string>();
+  const uniq: string[] = [];
   for (const p of source) {
-    const k = p.toLowerCase()
+    const k = p.toLowerCase();
     if (!seen.has(k)) {
-      seen.add(k)
-      uniq.push(p)
+      seen.add(k);
+      uniq.push(p);
     }
   }
-  activePhrases = uniq
+  activePhrases = uniq;
 }
 ```
 
@@ -468,42 +480,42 @@ In `onMount` (currently lines 348-385), update the body. Replace the existing bl
 
 ```ts
 onMount(() => {
-  prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  fallbackImageUrl = readFallbackImageFromMeta()
+  prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  fallbackImageUrl = readFallbackImageFromMeta();
 
   if (prefersReducedMotion) {
     // <img> path — no canvas/shader setup needed.
-    return
+    return;
   }
 
-  prepareActivePhrases()
-  resize()
-  shader = new ShaderPad(FRAG, { canvas: glCanvas })
+  prepareActivePhrases();
+  resize();
+  shader = new ShaderPad(FRAG, { canvas: glCanvas });
   shader.initializeTexture("u_text", textCanvas, {
     minFilter: "LINEAR",
     magFilter: "LINEAR",
-  })
-  shader.initializeUniform("u_burstProgress", "float", 0)
-  shader.initializeUniform("u_burstActive", "float", 0)
-  shader.initializeUniform("u_burstSlope", "float", 0)
-  shader.initializeUniform("u_burstDirection", "float", 1)
-  shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0]!.a)
-  shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b)
+  });
+  shader.initializeUniform("u_burstProgress", "float", 0);
+  shader.initializeUniform("u_burstActive", "float", 0);
+  shader.initializeUniform("u_burstSlope", "float", 0);
+  shader.initializeUniform("u_burstDirection", "float", 1);
+  shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0]!.a);
+  shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b);
 
-  nextBurstAt = performance.now() / 1000 + 2.5
-  startLoop()
+  nextBurstAt = performance.now() / 1000 + 2.5;
+  startLoop();
 
-  document.addEventListener("visibilitychange", onVisibilityChange)
-  document.addEventListener("astro:page-load", onPageLoad)
+  document.addEventListener("visibilitychange", onVisibilityChange);
+  document.addEventListener("astro:page-load", onPageLoad);
 
   resizeObserver = new ResizeObserver(() => {
-    resize()
-  })
-  resizeObserver.observe(containerEl)
-})
+    resize();
+  });
+  resizeObserver.observe(containerEl);
+});
 
 function onPageLoad() {
-  prepareActivePhrases()
+  prepareActivePhrases();
 }
 ```
 
@@ -513,18 +525,18 @@ Replace `onDestroy` (currently lines 387-398):
 
 ```ts
 onDestroy(() => {
-  document.removeEventListener("visibilitychange", onVisibilityChange)
-  document.removeEventListener("astro:page-load", onPageLoad)
-  stopLoop()
+  document.removeEventListener("visibilitychange", onVisibilityChange);
+  document.removeEventListener("astro:page-load", onPageLoad);
+  stopLoop();
   if (resizeObserver) {
-    resizeObserver.disconnect()
-    resizeObserver = null
+    resizeObserver.disconnect();
+    resizeObserver = null;
   }
   if (shader) {
-    shader.destroy()
-    shader = null
+    shader.destroy();
+    shader = null;
   }
-})
+});
 ```
 
 - [ ] **Step 6: Update the markup to render an `<img>` under reduced motion**
@@ -574,6 +586,7 @@ git commit -m "feat(hero): make HeroCanvas read phrases and fallback image from 
 ## Task 8: Mount HeroCanvas in BaseLayout
 
 **Files:**
+
 - Modify: `src/layouts/BaseLayout.astro`
 
 Add the persistent canvas, the two meta tags, and the new props. Default phrases to baseline; default heroImage to the imported default. Other layouts will pass actual values in subsequent tasks.
@@ -673,6 +686,7 @@ git commit -m "feat(hero): mount persistent HeroCanvas in BaseLayout"
 ## Task 9: Remove inline HeroCanvas from HomeLayout
 
 **Files:**
+
 - Modify: `src/layouts/HomeLayout.astro`
 
 HomeLayout currently renders its own HeroCanvas. Remove it; pass phrases through to BaseLayout instead.
@@ -791,6 +805,7 @@ git commit -m "feat(hero): remove inline HeroCanvas from HomeLayout, pass phrase
 ## Task 10: Update PostLayout for new hero pipeline
 
 **Files:**
+
 - Modify: `src/layouts/PostLayout.astro`
 
 Remove `<img class="post-hero">`. Compute the date-prefixed `heroSlug` for image lookup (matching `pathToRkey()` output). Compute phrases from baseline + tags + heroPhrases. Pass both through to BaseLayout. The caller in `[...slug].astro` already passes the terminal `slug` ("agentic-coding-studio") and `date` ("2026-04-28"); we combine them inside this layout.
@@ -854,7 +869,7 @@ const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])]
 In `src/pages/blog/[...slug].astro`, replace the existing `render()` destructure and PostLayout call:
 
 ```ts
-const { Content, remarkPluginFrontmatter } = await render(post)
+const { Content, remarkPluginFrontmatter } = await render(post);
 ```
 
 Then update the `<PostLayout ... >` invocation: remove the `image={post.data.image}` line and add `heroPhrases={remarkPluginFrontmatter.heroPhrases as string[] | undefined}`.
@@ -895,6 +910,7 @@ git commit -m "feat(hero): wire PostLayout into new hero pipeline"
 ## Task 11: Update PageLayout for new hero pipeline
 
 **Files:**
+
 - Modify: `src/layouts/PageLayout.astro`
 
 Remove `<img class="page-hero">`. PageLayout doesn't have tags, so phrases are baseline + title (plus extracted heroPhrases when frontmatter provides them).
@@ -961,6 +977,7 @@ git commit -m "feat(hero): wire PageLayout into new hero pipeline"
 ## Task 12: Update TalkLayout and GigLayout
 
 **Files:**
+
 - Modify: `src/layouts/TalkLayout.astro`
 - Modify: `src/layouts/GigLayout.astro`
 
@@ -1017,7 +1034,7 @@ const phrases = [
   title,
   ...(venue ? [venue] : []),
   ...(curators ? [curators] : []),
-]
+];
 ```
 
 Then update the `<BaseLayout>` opening tag (line 26):
@@ -1043,6 +1060,7 @@ git commit -m "feat(hero): wire TalkLayout and GigLayout into new hero pipeline"
 ## Task 13: Strip image: frontmatter from blog posts
 
 **Files:**
+
 - Modify: every `.md`/`.mdx` file under `blog/**/` that has an `image:` line
 
 A single sed pass handles all 151 posts.
@@ -1086,6 +1104,7 @@ git commit -m "chore(blog): strip image frontmatter pointing at retired SVG hero
 ## Task 14: Remove image field from schema and PostLayout's residual prop
 
 **Files:**
+
 - Modify: `src/content.config.ts:18`
 - Modify: `src/components/Head.astro` (drop `image` prop usage if redundant)
 - Modify: `src/layouts/PageLayout.astro` (already updated; verify no stale `image` references)
@@ -1139,6 +1158,7 @@ git commit -m "chore(hero): remove image field from blog schema and simplify Hea
 ## Task 15: Delete obsolete top-level SVG hero files
 
 **Files:**
+
 - Delete: `public/assets/images/posts/*.svg` (top level only)
 
 - [ ] **Step 1: List candidates**
@@ -1180,6 +1200,7 @@ git commit -m "chore(blog): delete retired top-level SVG hero files"
 ## Task 16: Generate the default hero image
 
 **Files:**
+
 - Create: `scripts/generate-default-hero.ts`
 - Modify: `package.json:8-23` (add `gen:default-hero` script)
 - Modify: `src/assets/og-default.png` (regenerated)
@@ -1285,6 +1306,7 @@ git commit -m "feat(hero): add default hero generation script and refresh og-def
 ## Task 17: Generate per-page hero images
 
 **Files:**
+
 - Create: `scripts/generate-hero-images.ts`
 - Modify: `package.json` (add `gen:hero-images` script)
 - Modify: `scripts/lib/posts.ts` (export `pathToRkey` if not already; verify before assuming) — already exported on line 18.
@@ -1440,6 +1462,7 @@ Expected: PASS, with Pagefind indexing still completing successfully.
 - [ ] **Step 5: Browser smoke test**
 
 Run: `pnpm preview` and walk through:
+
 - Home page (`/`): canvas appears at top with curated phrases + blog titles cycling through.
 - Blog index (`/blog/`): canvas with phrases derived from PageLayout default.
 - A blog post: canvas with phrases drawn from baseline + tags + extracted heroPhrases. og:image meta tag points at the per-post PNG.
@@ -1453,6 +1476,7 @@ In browser DevTools → Rendering → emulate `prefers-reduced-motion: reduce`. 
 - [ ] **Step 7: Social preview check**
 
 Inspect the page source on a blog post and confirm:
+
 - `<meta property="og:image" content="...">` points at the post's hero PNG (via Astro's `_image` URL).
 - `<meta name="twitter:image">` matches.
 - `<meta name="hero-phrases" content="...">` and `<meta name="hero-image-url" content="...">` are present.
@@ -1465,21 +1489,21 @@ If any minor fixes were needed during verification, commit them with a clear mes
 
 ## Spec coverage check
 
-| Spec section | Implemented in |
-|---|---|
-| HeroCanvas reads from meta tags | Task 7 |
-| HeroCanvas reduced-motion `<img>` path | Task 7 |
-| BaseLayout renders persistent HeroCanvas + meta tags | Task 8 |
-| Site baseline phrases module | Task 1 |
-| Remark plugin extracting heroPhrases | Tasks 2, 3 |
-| Hero image lookup module + glob | Task 5 |
-| Default fallback image | Tasks 6, 16 |
-| PostLayout, PageLayout, TalkLayout, GigLayout, HomeLayout updates | Tasks 9-12 |
-| Frontmatter cleanup | Task 13 |
-| Schema cleanup (remove image) | Task 14 |
-| SVG file deletion | Task 15 |
-| Generation script (default) | Task 16 |
-| Generation script (per page, atproto-state-driven) | Task 17 |
-| Verification | Task 18 |
+| Spec section                                                      | Implemented in |
+| ----------------------------------------------------------------- | -------------- |
+| HeroCanvas reads from meta tags                                   | Task 7         |
+| HeroCanvas reduced-motion `<img>` path                            | Task 7         |
+| BaseLayout renders persistent HeroCanvas + meta tags              | Task 8         |
+| Site baseline phrases module                                      | Task 1         |
+| Remark plugin extracting heroPhrases                              | Tasks 2, 3     |
+| Hero image lookup module + glob                                   | Task 5         |
+| Default fallback image                                            | Tasks 6, 16    |
+| PostLayout, PageLayout, TalkLayout, GigLayout, HomeLayout updates | Tasks 9-12     |
+| Frontmatter cleanup                                               | Task 13        |
+| Schema cleanup (remove image)                                     | Task 14        |
+| SVG file deletion                                                 | Task 15        |
+| Generation script (default)                                       | Task 16        |
+| Generation script (per page, atproto-state-driven)                | Task 17        |
+| Verification                                                      | Task 18        |
 
 Note: the spec mentions adding `heroPhrases` to the blog schema. Task 4 reserves the slot but explains that this is the wrong layer — `heroPhrases` flows from the remark plugin to consumers via Astro's `remarkPluginFrontmatter` (for blog posts) or layout-injected `frontmatter` (for `.md` pages), not via the validated content collection schema.

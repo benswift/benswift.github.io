@@ -94,10 +94,10 @@ A small lookup module `src/utils/hero-image.ts`:
 ```ts
 import type { ImageMetadata } from "astro";
 
-const heroImages = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/heroes/*.{png,jpg}",
-  { eager: true, import: "default" },
-);
+const heroImages = import.meta.glob<{ default: ImageMetadata }>("/src/assets/heroes/*.{png,jpg}", {
+  eager: true,
+  import: "default",
+});
 
 import defaultHero from "../assets/og-default.png";
 
@@ -135,16 +135,20 @@ No CI integration in this iteration. The user runs scripts locally before pushin
 ## Cleanup
 
 Files removed:
+
 - All `*.svg` files at the top level of `public/assets/images/posts/` (~157 files). Subdirectories (`altair-charts/`, `cybernetic-futures/`, `craiyon/`, etc.) untouched — those are inline post images, unrelated.
 
 Frontmatter changes:
+
 - Remove `image: /assets/images/posts/<slug>.svg` lines from all 151 blog posts via a single sed/awk pass.
 
 Schema changes:
+
 - Remove `image: z.string().optional()` from the blog collection schema in `src/content.config.ts`.
 - Add `heroPhrases: z.array(z.string()).optional()` to the same schema.
 
 Layout changes:
+
 - Remove `<img class="post-hero">` from `PostLayout`. Remove `image` from its `Props` interface.
 - Remove `<img class="page-hero">` from `PageLayout`. Remove `image` from its `Props` interface.
 - Remove the inline `<HeroCanvas>` from `HomeLayout` (now handled by `BaseLayout`).

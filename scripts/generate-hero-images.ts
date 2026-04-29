@@ -58,11 +58,10 @@ async function main() {
 
   fs.mkdirSync(HEROES_DIR, { recursive: true });
 
-  const preview = spawn(
-    "pnpm",
-    ["exec", "astro", "preview", "--port", String(PREVIEW_PORT)],
-    { stdio: "inherit", detached: true },
-  );
+  const preview = spawn("pnpm", ["exec", "astro", "preview", "--port", String(PREVIEW_PORT)], {
+    stdio: "inherit",
+    detached: true,
+  });
   try {
     await waitForServer(`${PREVIEW_BASE}/`);
 

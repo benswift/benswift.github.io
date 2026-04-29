@@ -7,11 +7,7 @@ const execFileP = promisify(execFile);
 
 const PREVIEW_PORT = 4399;
 const PREVIEW_URL = `http://localhost:${PREVIEW_PORT}/`;
-const OUTPUT_PATH = path.resolve(
-  import.meta.dirname,
-  "..",
-  "src/assets/og-default.png",
-);
+const OUTPUT_PATH = path.resolve(import.meta.dirname, "..", "src/assets/og-default.png");
 const SETTLE_MS = 4000;
 
 async function waitForServer(url: string, timeoutMs = 20000) {
@@ -35,14 +31,10 @@ async function ab(args: string[]) {
 }
 
 async function main() {
-  const preview = spawn(
-    "pnpm",
-    ["exec", "astro", "preview", "--port", String(PREVIEW_PORT)],
-    {
-      stdio: "inherit",
-      detached: true,
-    },
-  );
+  const preview = spawn("pnpm", ["exec", "astro", "preview", "--port", String(PREVIEW_PORT)], {
+    stdio: "inherit",
+    detached: true,
+  });
 
   try {
     await waitForServer(PREVIEW_URL);
