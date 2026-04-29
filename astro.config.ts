@@ -9,6 +9,7 @@ import remarkDirective from "remark-directive";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import { remarkContainers } from "./src/plugins/remark-containers";
+import { remarkHeroPhrases } from "./src/plugins/remark-hero-phrases";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 
@@ -40,6 +41,7 @@ export default defineConfig({
       [remarkSmartypants as never, { dashes: "oldschool" }],
       remarkDirective,
       remarkContainers,
+      remarkHeroPhrases,
     ],
     rehypePlugins: [
       rehypeSlug,
