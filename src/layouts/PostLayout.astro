@@ -4,27 +4,40 @@ import TagList from "../components/TagList.astro"
 import CitePost from "../components/CitePost.astro"
 import SiteFooter from "../components/SiteFooter.astro"
 import { formatDate, parseDate } from "../utils/date"
+import { getHeroImage } from "../utils/hero-image"
+import { SITE_BASELINE_PHRASES } from "../data/hero"
 
 interface Props {
   title: string
   date: string
   tags: string[]
   description?: string
-  image?: string
+  heroPhrases?: string[]
   atUri?: string
   slug: string
   relativePath: string
 }
 
-const { title, date, tags, description, image, atUri, slug, relativePath } = Astro.props
+const { title, date, tags, description, heroPhrases, atUri, slug, relativePath } = Astro.props
 
 const postDate = formatDate(parseDate(date), true)
 const postUrl = `https://benswift.me${Astro.url.pathname}`
+
+const heroSlug = `${date}-${slug}`
+const heroImage = getHeroImage(heroSlug)
+const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])]
 ---
 
-<BaseLayout title={title} description={description} image={image} isPost={true} date={date} atUri={atUri}>
+<BaseLayout
+  title={title}
+  description={description}
+  isPost={true}
+  date={date}
+  atUri={atUri}
+  phrases={phrases}
+  heroImage={heroImage}
+>
   <h1 class="page-title">{title}</h1>
-  {image && <img class="post-hero" src={image} alt="" />}
   <p class="post-date">{postDate}</p>
   <TagList tags={tags} />
   <slot />
@@ -32,12 +45,3 @@ const postUrl = `https://benswift.me${Astro.url.pathname}`
   <CitePost title={title} date={date} slug={slug} url={postUrl} atUri={atUri} />
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>
-
-<style>
-  .post-hero {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 0 8px 8px;
-    margin-bottom: 0.75rem;
-  }
-</style>

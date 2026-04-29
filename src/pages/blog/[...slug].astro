@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 }
 
 const { post, date, postSlug } = Astro.props
-const { Content } = await render(post)
+const { Content, remarkPluginFrontmatter } = await render(post)
 
 const description = post.data.description
 const atUri = getAtUri(post.id)
@@ -44,7 +44,7 @@ const relativePath = resolveContentPath("blog", post.id)
   date={date}
   tags={post.data.tags}
   description={description}
-  image={post.data.image}
+  heroPhrases={remarkPluginFrontmatter.heroPhrases as string[] | undefined}
   atUri={atUri}
   slug={postSlug}
   relativePath={relativePath}
