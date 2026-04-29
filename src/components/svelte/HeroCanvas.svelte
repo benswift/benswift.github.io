@@ -2,12 +2,6 @@
   import { onDestroy, onMount } from "svelte"
   import ShaderPad from "shaderpad"
 
-  interface Props {
-    phrases: string[]
-  }
-
-  let { phrases }: Props = $props()
-
   let containerEl: HTMLDivElement
   let glCanvas: HTMLCanvasElement
   let textCanvas: HTMLCanvasElement
@@ -15,6 +9,8 @@
   let shader: ShaderPad | null = null
   let resizeObserver: ResizeObserver | null = null
   let tickInterval: number | null = null
+  let prefersReducedMotion = $state(false)
+  let fallbackImageUrl = $state("")
 
   const TARGET_FPS = 12
   const MOBILE_BREAKPOINT = 640
@@ -149,6 +145,19 @@ void main() {
 
   function randFloat(min: number, max: number) {
     return Math.random() * (max - min) + min
+  }
+
+  function readPhrasesFromMeta(): string[] {
+    if (typeof document === "undefined") return []
+    const meta = document.querySelector('meta[name="hero-phrases"]') as HTMLMetaElement | null
+    if (!meta) return []
+    return meta.content.split("|").map((p) => p.trim()).filter(Boolean)
+  }
+
+  function readFallbackImageFromMeta(): string {
+    if (typeof document === "undefined") return ""
+    const meta = document.querySelector('meta[name="hero-image-url"]') as HTMLMetaElement | null
+    return meta?.content ?? ""
   }
 
   function pickPhrase() {
@@ -301,7 +310,7 @@ void main() {
   }
 
   function prepareActivePhrases() {
-    const cleaned = phrases
+    const cleaned = readPhrasesFromMeta()
       .map((p) => p.replaceAll(/\s+/g, " ").trim())
       .filter((p) => p.length > 0 && p.length <= MAX_PHRASE_LEN)
     const source = cleaned.length > 0 ? cleaned : FALLBACK_PHRASES
@@ -346,9 +355,15 @@ void main() {
   }
 
   onMount(() => {
-    prepareActivePhrases()
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    fallbackImageUrl = readFallbackImageFromMeta()
 
+    if (prefersReducedMotion) {
+      // <img> path — no canvas/shader setup needed.
+      return
+    }
+
+    prepareActivePhrases()
     resize()
     shader = new ShaderPad(FRAG, { canvas: glCanvas })
     shader.initializeTexture("u_text", textCanvas, {
@@ -363,20 +378,10 @@ void main() {
     shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b)
 
     nextBurstAt = performance.now() / 1000 + 2.5
+    startLoop()
 
-    if (prefersReducedMotion) {
-      let simulated = 0
-      for (let i = 0; i < 60; i++) {
-        simulated += 1000 / TARGET_FPS
-        advance(simulated)
-      }
-      shader.updateTextures({ u_text: textCanvas })
-      shader.updateUniforms({ u_burstProgress: 0, u_burstActive: 0 })
-      shader.step()
-    } else {
-      startLoop()
-      document.addEventListener("visibilitychange", onVisibilityChange)
-    }
+    document.addEventListener("visibilitychange", onVisibilityChange)
+    document.addEventListener("astro:page-load", onPageLoad)
 
     resizeObserver = new ResizeObserver(() => {
       resize()
@@ -384,8 +389,13 @@ void main() {
     resizeObserver.observe(containerEl)
   })
 
+  function onPageLoad() {
+    prepareActivePhrases()
+  }
+
   onDestroy(() => {
     document.removeEventListener("visibilitychange", onVisibilityChange)
+    document.removeEventListener("astro:page-load", onPageLoad)
     stopLoop()
     if (resizeObserver) {
       resizeObserver.disconnect()
@@ -399,8 +409,14 @@ void main() {
 </script>
 
 <div bind:this={containerEl} class="hero-canvas" aria-hidden="true">
-  <canvas bind:this={textCanvas} class="text-canvas"></canvas>
-  <canvas bind:this={glCanvas} class="gl-canvas"></canvas>
+  {#if prefersReducedMotion}
+    {#if fallbackImageUrl}
+      <img class="reduced-motion-image" src={fallbackImageUrl} alt="" />
+    {/if}
+  {:else}
+    <canvas bind:this={textCanvas} class="text-canvas"></canvas>
+    <canvas bind:this={glCanvas} class="gl-canvas"></canvas>
+  {/if}
 </div>
 
 <style>
@@ -422,5 +438,12 @@ void main() {
     display: block;
     width: 100%;
     height: 100%;
+  }
+
+  .reduced-motion-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 </style>
