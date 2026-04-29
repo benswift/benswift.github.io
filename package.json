@@ -14,6 +14,7 @@
     "typecheck": "astro check && svelte-check --tsconfig ./tsconfig.json",
     "post": "pnpm exec tsx scripts/new-post.ts",
     "gen:default-hero": "pnpm exec tsx scripts/generate-default-hero.ts",
+    "gen:hero-images": "pnpm exec tsx scripts/generate-hero-images.ts",
     "lighthouse": "pnpm exec tsx scripts/lighthouse-audit.ts",
     "atproto:publish": "pnpm exec tsx scripts/atproto-publish.ts",
     "test": "vitest run",
