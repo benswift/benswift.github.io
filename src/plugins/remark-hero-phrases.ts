@@ -1,5 +1,4 @@
 import type { Root, Heading, Emphasis, Strong, Text } from "mdast";
-import type { VFile } from "vfile";
 import { visit } from "unist-util-visit";
 
 const MAX_PHRASE_LEN = 36;
@@ -12,8 +11,8 @@ function nodeText(node: Heading | Emphasis | Strong): string {
   return out.replaceAll(/\s+/g, " ").trim();
 }
 
-interface FileWithFrontmatter extends VFile {
-  data: VFile["data"] & {
+interface FileWithFrontmatter {
+  data: {
     astro?: { frontmatter?: Record<string, unknown> };
   };
 }
@@ -46,6 +45,6 @@ export function remarkHeroPhrases() {
     const data = file.data;
     data.astro ??= {};
     data.astro.frontmatter ??= {};
-    (data.astro.frontmatter as Record<string, unknown>).heroPhrases = phrases;
+    data.astro.frontmatter.heroPhrases = phrases;
   };
 }

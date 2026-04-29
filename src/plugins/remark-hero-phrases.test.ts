@@ -11,8 +11,7 @@ interface VFileWithFrontmatter {
 function runPlugin(markdown: string): string[] {
   const file: VFileWithFrontmatter = { data: {} };
   const tree = unified().use(remarkParse).parse(markdown) as Root;
-  // eslint-disable-next-line
-  remarkHeroPhrases()(tree, file as never);
+  remarkHeroPhrases()(tree, file);
   return file.data.astro?.frontmatter?.heroPhrases ?? [];
 }
 
