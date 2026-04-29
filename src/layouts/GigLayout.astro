@@ -2,6 +2,7 @@
 import BaseLayout from "./BaseLayout.astro"
 import SiteFooter from "../components/SiteFooter.astro"
 import { formatDate, parseDate } from "../utils/date"
+import { SITE_BASELINE_PHRASES } from "../data/hero"
 
 interface Props {
   title: string
@@ -21,9 +22,16 @@ const { title, date, venue, venue_url, type, event_url, video_url, curators, art
 
 const gigDate = date ? formatDate(parseDate(date)) : null
 const gigType = type ? type.charAt(0).toUpperCase() + type.slice(1) : null
+
+const phrases = [
+  ...SITE_BASELINE_PHRASES,
+  title,
+  ...(venue ? [venue] : []),
+  ...(curators ? [curators] : []),
+]
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} phrases={phrases}>
   <h1 class="page-title">{title}</h1>
   {gigDate && <p class="post-date">{gigDate}</p>}
 

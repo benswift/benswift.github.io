@@ -2,6 +2,7 @@
 import BaseLayout from "./BaseLayout.astro"
 import SiteFooter from "../components/SiteFooter.astro"
 import { formatDate, parseDate } from "../utils/date"
+import { SITE_BASELINE_PHRASES } from "../data/hero"
 
 interface Props {
   title: string
@@ -14,9 +15,11 @@ interface Props {
 const { title, date, event, description, relativePath } = Astro.props
 
 const talkDate = date ? formatDate(parseDate(date)) : null
+
+const phrases = [...SITE_BASELINE_PHRASES, title, ...(event ? [event] : [])]
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} phrases={phrases}>
   <h1 class="page-title">{title}</h1>
   {talkDate && <p class="post-date">{talkDate}</p>}
   {event && <p class="post-subtitle">{event}</p>}
