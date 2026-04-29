@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content"
 import BaseLayout from "./BaseLayout.astro"
 import SiteFooter from "../components/SiteFooter.astro"
-import HeroCanvas from "../components/svelte/HeroCanvas.svelte"
+import { SITE_BASELINE_PHRASES } from "../data/hero"
 
 interface Props {
   description?: string
@@ -44,11 +44,10 @@ const curatedPhrases = [
 const blogEntries = await getCollection("blog", ({ data }) => data.published !== false)
 const blogTitles = blogEntries.map((e) => e.data.title)
 
-const heroPhrases = [...curatedPhrases, ...blogTitles]
+const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
 ---
 
-<BaseLayout description={description} image={image}>
-  <HeroCanvas client:only="svelte" phrases={heroPhrases} />
+<BaseLayout description={description} image={image} phrases={heroPhrases}>
   <div class="hero">
     <div class="hero-content">
       <div class="hero-text">
