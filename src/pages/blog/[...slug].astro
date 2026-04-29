@@ -3,6 +3,7 @@ import { getCollection } from "astro:content"
 import PostLayout from "../../layouts/PostLayout.astro"
 import { getAtUri } from "../../utils/atproto"
 import { resolveContentPath } from "../../utils/source-path"
+import { extractHeroPhrases } from "../../utils/extract-hero-phrases"
 import { render } from "astro:content"
 
 export async function getStaticPaths() {
@@ -32,11 +33,12 @@ export async function getStaticPaths() {
 }
 
 const { post, date, postSlug } = Astro.props
-const { Content, remarkPluginFrontmatter } = await render(post)
+const { Content } = await render(post)
 
 const description = post.data.description
 const atUri = getAtUri(post.id)
 const relativePath = resolveContentPath("blog", post.id)
+const heroPhrases = extractHeroPhrases(post.body ?? "")
 ---
 
 <PostLayout
@@ -44,7 +46,7 @@ const relativePath = resolveContentPath("blog", post.id)
   date={date}
   tags={post.data.tags}
   description={description}
-  heroPhrases={remarkPluginFrontmatter.heroPhrases as string[] | undefined}
+  heroPhrases={heroPhrases}
   atUri={atUri}
   slug={postSlug}
   relativePath={relativePath}
