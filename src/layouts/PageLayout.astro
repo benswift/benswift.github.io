@@ -1,39 +1,36 @@
 ---
 import BaseLayout from "./BaseLayout.astro"
 import SiteFooter from "../components/SiteFooter.astro"
+import { SITE_BASELINE_PHRASES } from "../data/hero"
 
 interface Props {
   title?: string
   description?: string
-  image?: string
   relativePath?: string
+  heroPhrases?: string[]
   frontmatter?: {
     title?: string
     description?: string
-    image?: string
     relativePath?: string
+    heroPhrases?: string[]
   }
 }
 
 const props = Astro.props
 const title = props.title ?? props.frontmatter?.title
 const description = props.description ?? props.frontmatter?.description
-const image = props.image ?? props.frontmatter?.image
 const relativePath = props.relativePath ?? props.frontmatter?.relativePath
+const heroPhrases = props.heroPhrases ?? props.frontmatter?.heroPhrases ?? []
+
+const phrases = [
+  ...SITE_BASELINE_PHRASES,
+  ...(title ? [title] : []),
+  ...heroPhrases,
+]
 ---
 
-<BaseLayout title={title} description={description} image={image}>
+<BaseLayout title={title} description={description} phrases={phrases}>
   {title && <h1 class="page-title">{title}</h1>}
-  {image && <img class="page-hero" src={image} alt="" />}
   <slot />
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>
-
-<style>
-  .page-hero {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 0 8px 8px;
-    margin-bottom: 1rem;
-  }
-</style>
