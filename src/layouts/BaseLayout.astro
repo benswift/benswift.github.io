@@ -4,9 +4,14 @@ import "@fontsource-variable/atkinson-hyperlegible-next/wght-italic.css"
 import "@fontsource-variable/atkinson-hyperlegible-mono"
 import "@fontsource-variable/atkinson-hyperlegible-mono/wght-italic.css"
 import "../styles/global.css"
+import type { ImageMetadata } from "astro"
+import { getImage } from "astro:assets"
 import Head from "../components/Head.astro"
 import Nav from "../components/Nav.astro"
+import HeroCanvas from "../components/svelte/HeroCanvas.svelte"
 import { ClientRouter } from "astro:transitions"
+import { SITE_BASELINE_PHRASES } from "../data/hero"
+import defaultHero from "../assets/og-default.png"
 
 interface Props {
   title?: string
@@ -15,9 +20,24 @@ interface Props {
   isPost?: boolean
   date?: string
   atUri?: string
+  phrases?: string[]
+  heroImage?: ImageMetadata
 }
 
-const { title, description, image, isPost, date, atUri } = Astro.props
+const {
+  title,
+  description,
+  image,
+  isPost,
+  date,
+  atUri,
+  phrases = [...SITE_BASELINE_PHRASES],
+  heroImage = defaultHero,
+} = Astro.props
+
+const resolvedHeroImage = await getImage({ src: heroImage, format: "png" })
+const heroImageUrl = resolvedHeroImage.src
+const heroPhrasesContent = phrases.join("|")
 ---
 
 <html lang="en">
@@ -25,15 +45,18 @@ const { title, description, image, isPost, date, atUri } = Astro.props
     <Head
       title={title}
       description={description}
-      image={image}
+      image={image ?? heroImageUrl}
       isPost={isPost}
       date={date}
       atUri={atUri}
     />
+    <meta name="hero-phrases" content={heroPhrasesContent} />
+    <meta name="hero-image-url" content={heroImageUrl} />
     <ClientRouter />
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
+    <HeroCanvas client:only="svelte" transition:persist="hero-canvas" />
     <Nav />
     <main id="main-content" data-pagefind-body>
       <slot />
