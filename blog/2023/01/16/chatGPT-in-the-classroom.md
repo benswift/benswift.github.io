@@ -5,7 +5,6 @@ description: "Practical advice for educators on incorporating ChatGPT into their
 tags:
   - ai
   - teaching
-image: /assets/images/posts/chatGPT-in-the-classroom.svg
 ---
 
 As I scrolled through my social media feeds over the Christmas break

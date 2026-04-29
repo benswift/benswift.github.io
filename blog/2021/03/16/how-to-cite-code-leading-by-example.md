@@ -4,7 +4,6 @@ description: "A YAML-based Statement of Originality that teaches students how to
   declare collaborators and list licences in every assignment."
 tags:
   - teaching
-image: /assets/images/posts/how-to-cite-code-leading-by-example.svg
 ---
 
 In our

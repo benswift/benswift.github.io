@@ -5,7 +5,6 @@ description: "Using Claude Code and GPT-5 with Elixir's Nerves framework, with h
 tags:
   - ai
 published: false
-image: /assets/images/posts/agentic-llms-and-nerves.svg
 ---
 
 TODO, but the main points are:

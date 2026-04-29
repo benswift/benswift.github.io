@@ -4,7 +4,6 @@ description: "Zed config snippet for auto-formatting Markdown files on save with
   including prose wrapping at 80 columns."
 tags:
   - dev
-image: /assets/images/posts/format-markdown-on-save-in-zed-using-prettier.svg
 ---
 
 One thing I've particularly enjoyed since switching to Zed is format-on-save,

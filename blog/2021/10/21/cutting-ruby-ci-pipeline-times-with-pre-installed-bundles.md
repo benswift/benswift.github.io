@@ -4,7 +4,6 @@ description: "A multi-stage Dockerfile that pre-installs Ruby gems to cut GitLab
   times for Jekyll sites by up to 90%."
 tags:
   - dev
-image: /assets/images/posts/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles.svg
 ---
 
 I (and, increasingly many of my colleagues) are using

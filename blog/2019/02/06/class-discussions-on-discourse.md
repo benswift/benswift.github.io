@@ -5,7 +5,6 @@ description: "Switching from Piazza to self-hosted Discourse for a 200-student c
 tags:
   - teaching
   - dev
-image: /assets/images/posts/class-discussions-on-discourse.svg
 ---
 
 In 2018 I (with the support of the Teaching & Learning IT team in

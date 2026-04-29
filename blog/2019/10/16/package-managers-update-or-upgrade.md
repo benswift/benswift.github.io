@@ -4,7 +4,6 @@ description: "A quiz (and a plea for consistency) on whether your package manage
   update or upgrade."
 tags:
   - dev
-image: /assets/images/posts/package-managers-update-or-upgrade.svg
 ---
 
 Quick quiz: for the following language/system

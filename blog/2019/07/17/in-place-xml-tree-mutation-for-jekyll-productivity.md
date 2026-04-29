@@ -4,7 +4,6 @@ description: "Profiling a slow Jekyll build, finding the culprit in Nokogiri nod
   and getting a 20x speedup by switching to in-place tree mutation."
 tags:
   - dev
-image: /assets/images/posts/in-place-xml-tree-mutation-for-jekyll-productivity.svg
 ---
 
 I wrote a [reveal.js](/blog/2018/09/28/another-revealjs-plugin-for-jekyll/)

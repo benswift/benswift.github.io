@@ -2,7 +2,6 @@
 title: "Command/Control: giving OS aware keybinding hints"
 description: "A small JS snippet that auto-swaps Ctrl/Cmd in keyboard shortcut hints based
   on the reader's OS."
-image: /assets/images/posts/command-control-giving-os-aware-keybinding-hints.svg
 ---
 
 As someone who writes a lot of [web-based](https://extemporelang.github.io)

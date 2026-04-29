@@ -5,7 +5,6 @@ description: "I was interviewed for an ABC News article about the Australian liv
 tags:
   - livecoding
   - policy
-image: /assets/images/posts/livecoding-article-on-the-abc.svg
 ---
 
 In case you missed it, I was interviewed for

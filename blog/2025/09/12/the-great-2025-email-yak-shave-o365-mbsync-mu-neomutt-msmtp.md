@@ -4,7 +4,6 @@ description: "Rebuilding a terminal email setup with OAuth2, Office365 and neomu
   Zed---the hard-won config so you don't have to waste as many hours as I did."
 tags:
   - dev
-image: /assets/images/posts/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp.svg
 ---
 
 For years I was a happy user of

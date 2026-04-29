@@ -2,7 +2,6 @@
 title: "DeepSeek and Shallow Moats: Implications for Higher Education"
 description: "Universities betting big on exclusive AI partnerships risk repeating the MOOC
   mistake. DeepSeek R1 shows why staying provider-agnostic is the smarter play."
-image: /assets/images/posts/deepseek-and-shallow-moats.svg
 ---
 
 > This piece originally published in Times Higher Education

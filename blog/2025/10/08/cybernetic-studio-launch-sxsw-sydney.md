@@ -4,7 +4,6 @@ description: "Launching the Cybernetic Studio at SXSW Sydney with human-scale AI
   a wooden neural network table and a pen-and-paper language model."
 tags:
   - ai
-image: /assets/images/posts/cybernetic-studio-launch-sxsw-sydney.svg
 ---
 
 I'm launching the

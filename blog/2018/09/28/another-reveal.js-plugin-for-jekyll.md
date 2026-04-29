@@ -4,7 +4,6 @@ description: "A Jekyll plugin that turns a single markdown file into reveal.js s
   splitting on headings like pandoc does."
 tags:
   - dev
-image: /assets/images/posts/another-reveal.js-plugin-for-jekyll.svg
 ---
 
 I use [Jekyll](https://jekyllrb.com/) to create my course websites and

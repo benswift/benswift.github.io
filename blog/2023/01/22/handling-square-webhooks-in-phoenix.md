@@ -4,7 +4,6 @@ description: "How to receive and validate Square payment webhooks in an Elixir/P
   with code for HMAC signature verification."
 tags:
   - dev
-image: /assets/images/posts/handling-square-webhooks-in-phoenix.svg
 ---
 
 My

@@ -3,7 +3,6 @@ title: "The road to COMP4020: pledges, not questions"
 description: "Replacing two of the three weekly reflection questions with falsifiable
   pledges, and using a cross-eval matrix to find the interesting disagreements."
 tags: [comp4020]
-image: /assets/images/posts/pledges-not-questions.svg
 ---
 
 :::tip

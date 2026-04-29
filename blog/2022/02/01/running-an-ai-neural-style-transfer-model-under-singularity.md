@@ -5,7 +5,6 @@ description: "Getting a pytorch neural style transfer model running on RTX 3090s
 tags:
   - dev
   - ai
-image: /assets/images/posts/running-an-ai-neural-style-transfer-model-under-singularity.svg
 ---
 
 I've recently been given access to a beefy AI server (6x RTX3090s!) which is

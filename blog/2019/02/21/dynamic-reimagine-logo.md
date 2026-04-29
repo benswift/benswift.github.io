@@ -5,7 +5,6 @@ description: "An interactive, spinnable version of the ANU Reimagine logo, built
 tags:
   - dev
   - reimagine
-image: /assets/images/posts/dynamic-reimagine-logo.svg
 ---
 
 I keep harping on about the **Reimagine project** because I'm super pumped about

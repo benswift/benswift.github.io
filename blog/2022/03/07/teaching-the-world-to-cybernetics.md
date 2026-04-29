@@ -4,7 +4,6 @@ description: "A look at what the new Experiences Team at the ANU School of Cyber
   building---weird, site-specific encounters with cybernetic ideas."
 tags:
   - cybernetics
-image: /assets/images/posts/teaching-the-world-to-cybernetics.svg
 ---
 
 If you're the sort of person who lurks on people's LinkedIn accounts, you may

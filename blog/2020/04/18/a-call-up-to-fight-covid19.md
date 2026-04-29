@@ -4,7 +4,6 @@ description: "Joining an ANU COVID-19 taskforce to build epidemiological simulat
   for the Canberra health system."
 tags:
   - research
-image: /assets/images/posts/a-call-up-to-fight-covid19.svg
 ---
 
 As with many folks at the moment (both in Canberra and around the world) I've

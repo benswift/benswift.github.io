@@ -2,7 +2,6 @@
 title: "The road to COMP4020: the professorial class"
 description: "Academics are welcome to audit COMP4020---here's how I'm planning to make it work."
 tags: [comp4020]
-image: /assets/images/posts/the-professorial-class.svg
 ---
 
 :::tip

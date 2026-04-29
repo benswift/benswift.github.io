@@ -4,7 +4,6 @@ description: "A response to Charlie Roberts' essay on code annotations, explorin
   tension between visualising program state and editing live code."
 tags:
   - livecoding
-image: /assets/images/posts/on-livecoding-annotations-and-visualisations.svg
 ---
 
 I've just finished reading Charlie Roberts'

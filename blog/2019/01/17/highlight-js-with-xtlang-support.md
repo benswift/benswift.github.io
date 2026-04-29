@@ -4,7 +4,6 @@ description: "Getting syntax highlighting for Extempore's xtlang working on this
   as an FAQ full of hacks and node build shenanigans."
 tags:
   - dev
-image: /assets/images/posts/highlight-js-with-xtlang-support.svg
 ---
 
 :::tip

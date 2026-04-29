@@ -5,7 +5,6 @@ description: "Switching from Zed's Agent panel to Claude Code for flat-fee prici
 tags:
   - ai
   - dev
-image: /assets/images/posts/running-claude-code-within-zed.svg
 ---
 
 After several months using Zed's built-in

@@ -4,7 +4,6 @@ description: "CI green on four platforms, a migration from TinyScheme to s7, and
   compiler speedup from hash table caches and union-find type unification."
 tags:
   - extempore
-image: /assets/images/posts/extempore-is-alive-on-aarch64-part-deux.svg
 ---
 
 A quick update on

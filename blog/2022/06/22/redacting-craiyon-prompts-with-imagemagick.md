@@ -5,7 +5,6 @@ description: "A one-liner ImageMagick command to batch-redact the prompt text fr
 tags:
   - dev
   - ai
-image: /assets/images/posts/redacting-craiyon-prompts-with-imagemagick.svg
 ---
 
 I've been messing around with [craiyon](https://www.craiyon.com) (formerly

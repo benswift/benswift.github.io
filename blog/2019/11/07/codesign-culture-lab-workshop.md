@@ -5,7 +5,6 @@ description: "A hands-on workshop where participants spin code/creativity/cultur
 tags:
   - reimagine
   - ccc
-image: /assets/images/posts/codesign-culture-lab-workshop.svg
 ---
 
 :::info[tl;dr]

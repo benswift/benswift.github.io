@@ -6,7 +6,6 @@ tags:
   - teaching
   - reimagine
   - lens
-image: /assets/images/posts/laptop-ensemble-in-the-canberra-times.svg
 ---
 
 The ANU Laptop Ensemble (LENS) is in the Canberra Times this morning:

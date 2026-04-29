@@ -4,7 +4,6 @@ description: "Code has always felt brittle---most changes break it. Coding agent
   that dynamic, absorbing the cognitive load of big refactors and making code
   feel plastic rather than rigid."
 tags: [ai, dev]
-image: /assets/images/posts/coding-agents-and-the-plasticity-of-code.svg
 ---
 
 Code has always felt rigid to me. Brittle, even. Most of the ways you poke,

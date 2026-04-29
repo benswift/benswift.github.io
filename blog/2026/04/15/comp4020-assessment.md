@@ -3,7 +3,6 @@ title: "COMP4020: assessment"
 description: "What does a student hand in for an agentic coding course---and how do I make
   that artefact worth more than the grade itself?"
 tags: [comp4020, teaching]
-image: /assets/images/posts/comp4020-assessment.svg
 ---
 
 :::tip

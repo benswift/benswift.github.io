@@ -4,7 +4,6 @@ description:
   "Designing a proxy to sit between students and the Claude API: per-student
   quotas, full-traffic logging, and a safety net for leaked keys."
 tags: [comp4020]
-image: /assets/images/posts/comp4020-token-management-by-proxy.svg
 ---
 
 :::tip

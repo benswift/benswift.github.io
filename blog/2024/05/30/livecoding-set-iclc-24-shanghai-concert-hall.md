@@ -2,7 +2,6 @@
 title: "Livecoding set ICLC'24 - Shanghai Concert Hall"
 description: "Performing a livecoding music set at Shanghai Concert Hall as part of ICLC
   2024."
-image: /assets/images/posts/livecoding-set-iclc-24-shanghai-concert-hall.svg
 ---
 
 I'm currently in Shanghai, and tomorrow night I'll be performing at the

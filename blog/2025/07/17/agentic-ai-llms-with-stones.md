@@ -5,7 +5,6 @@ description: "Agentic AI is about giving LLMs tools to act in the world without 
   bottleneck."
 tags:
   - ai
-image: /assets/images/posts/agentic-ai-llms-with-stones.svg
 ---
 
 > Sticks and stones may break my bones, but words will never hurt me.

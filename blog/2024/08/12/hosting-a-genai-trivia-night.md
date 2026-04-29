@@ -4,7 +4,6 @@ description: "Using an LLM to generate trivia questions, then letting teams chal
   answers they think the model hallucinated."
 tags:
   - ai
-image: /assets/images/posts/hosting-a-genai-trivia-night.svg
 ---
 
 I was recently tasked with organising a trivia night, and decided to generate

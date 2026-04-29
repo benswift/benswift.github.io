@@ -4,7 +4,6 @@ description: "A simple Makefile for building Jekyll locally with custom plugins 
   the output to GitHub Pages."
 tags:
   - dev
-image: /assets/images/posts/hosting-a-self-built-jekyll-site-on-gh-pages.svg
 ---
 
 This blog is built from [markdown](https://commonmark.org/help/) files using

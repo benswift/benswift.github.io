@@ -4,7 +4,6 @@ description: "Migrated to Cryogen and moved the Extempore docs to their own site
   links are broken, bear with me."
 tags:
   - dev
-image: /assets/images/posts/blog-refresh.svg
 ---
 
 Another year, and another blog refresh. It's still a clojure-powered static site

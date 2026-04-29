@@ -2,7 +2,6 @@
 title: "The road to COMP4020: Anthropic comes to the party"
 description: "COMP4020 has received $500k in Claude API credits from Anthropic for students to use in the Agentic Coding Studio course."
 tags: [comp4020]
-image: /assets/images/posts/anthropic-comes-to-the-party.svg
 ---
 
 :::tip

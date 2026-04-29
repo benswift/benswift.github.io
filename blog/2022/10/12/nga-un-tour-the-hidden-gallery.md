@@ -5,7 +5,6 @@ description: "An immersive cybernetic walking tour of the National Gallery of Au
   Cybernetics."
 tags:
   - cybernetics
-image: /assets/images/posts/nga-un-tour-the-hidden-gallery.svg
 ---
 
 For the last year or so my team has been collaborating with the good folks at

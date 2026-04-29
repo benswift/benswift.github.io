@@ -4,7 +4,6 @@ description: "Quick notes on deploying a Phoenix 1.6 LiveView app to fly.io, inc
   gotchas with health checks and outdated guides."
 tags:
   - dev
-image: /assets/images/posts/deploying-a-phoenix-app-with-liveview-on-fly-io.svg
 ---
 
 Things to note:

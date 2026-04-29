@@ -5,7 +5,6 @@ description: "A step-by-step guide to sending and receiving OSC messages between
 tags:
   - extempore
   - lens
-image: /assets/images/posts/two-way-osc-communication-between-extempore-and-pd.svg
 ---
 
 Because [Extempore](https://github.com/digego/extempore) and

@@ -4,7 +4,6 @@ description: "Using openconnect as a reliable alternative to the GlobalProtect c
   connecting to an institutional VPN on macOS."
 tags:
   - dev
-image: /assets/images/posts/openconnect-setup-for-institutional-vpn-access.svg
 ---
 
 My [institution's](https://www.anu.edu.au) IT policies have recently changed and

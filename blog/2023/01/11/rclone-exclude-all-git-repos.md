@@ -4,7 +4,6 @@ description: "A bash script to auto-exclude all git repos from rclone backups, s
   rclone's built-in filtering can't do it alone."
 tags:
   - dev
-image: /assets/images/posts/rclone-exclude-all-git-repos.svg
 ---
 
 For a long time I've used [rclone](https://rclone.org) for remote backups and

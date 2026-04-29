@@ -4,7 +4,6 @@ description: "A crash course on reading, processing and writing audio files in E
   using the libsndfile C library bindings."
 tags:
   - extempore
-image: /assets/images/posts/sound-file-io-in-extempore-with-libsndfile.svg
 ---
 
 [libsndfile](https://github.com/erikd/libsndfile/) is "a C library for reading

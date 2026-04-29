@@ -5,7 +5,6 @@ description: "Asking ChatGPT to prove the five colour and four colour theorems w
 tags:
   - ai
   - teaching
-image: /assets/images/posts/writing-graph-theory-proofs-with-chatgpt.svg
 ---
 
 Posting logs of [ChatGPT](https://chat.openai.com) interaction is getting a bit

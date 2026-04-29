@@ -2,7 +2,6 @@
 title: "Running stable diffusion in a singularity container"
 description: "Rough notes and a Python script for running Stable Diffusion in a Singularity
   container with NVIDIA GPUs."
-image: /assets/images/posts/running-stable-diffusion-in-a-singularity-container.svg
 ---
 
 singularity pull docker://nvcr.io/nvidia/pytorch:22.08-py3

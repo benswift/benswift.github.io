@@ -3,7 +3,6 @@ title: "The road to COMP4020: what's the theory here?"
 description: "There are lots of nascent theories for agentic coding---here's a survey, and
   a plan to test them with 200 students."
 tags: [comp4020]
-image: /assets/images/posts/comp4020-whats-the-theory-here.svg
 ---
 
 :::tip

@@ -5,7 +5,6 @@ description: "A simple GitHub template for writing in markdown and producing nic
 tags:
   - research
   - dev
-image: /assets/images/posts/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex.svg
 ---
 
 I've long raged against the machine of my institution's default LaTeX template

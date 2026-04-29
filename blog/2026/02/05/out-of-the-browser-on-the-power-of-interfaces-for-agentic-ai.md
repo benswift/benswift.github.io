@@ -4,7 +4,6 @@ description: "The leap from browser-based ChatGPT to terminal-native coding agen
   about smarter models---it's about removing the sandbox."
 tags:
   - ai
-image: /assets/images/posts/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai.svg
 ---
 
 When OpenAI [launched ChatGPT](https://openai.com/index/chatgpt/) on November

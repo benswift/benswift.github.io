@@ -4,7 +4,6 @@ description: "I'm handing COMP2300 over to Charles Martin in 2020 so I can focus
   c/c/c studio Reimagine Fellowship."
 tags:
   - teaching
-image: /assets/images/posts/ben-and-comp2300-next-year.svg
 ---
 
 Students[^organised-ones] are starting to turn their gaze towards 2020, and so

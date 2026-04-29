@@ -3,7 +3,6 @@ title: "The road to COMP4020: providing sharp tools"
 description: "Getting 200 students adequate access to frontier coding agents is the hard
   logistics problem behind COMP4020."
 tags: [comp4020]
-image: /assets/images/posts/comp4020-sharp-tools.svg
 ---
 
 :::tip

@@ -6,7 +6,6 @@ tags:
   - livecoding
   - extempore
   - lens
-image: /assets/images/posts/a-short-list-of-extempore-livecoding-tricks.svg
 ---
 
 Yesterday's [LENS](https://comp.anu.edu.au/courses/laptop-ensemble/) class

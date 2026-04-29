@@ -4,7 +4,6 @@ description: "Links for Telopea Hour of Code students: the p5 web editor and pre
   slides."
 tags:
   - teaching
-image: /assets/images/posts/telopea-hour-of-code.svg
 ---
 
 Welcome, Telopea Hour of Code students. Here are a couple of links you'll need

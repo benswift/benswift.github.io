@@ -7,7 +7,6 @@ tags:
   - ccc
   - lens
   - gigs
-image: /assets/images/posts/anu-laptop-orchestra.svg
 ---
 
 One of the coolest parts of my job is doing livecoding gigs---here's a recent

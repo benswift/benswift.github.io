@@ -6,7 +6,6 @@ tags:
   - atproto
   - research
   - web
-image: /assets/images/posts/at-uris-as-persistent-identifiers-for-scholarly-blogging.svg
 ---
 
 Every post on this blog now has a persistent identifier on the
