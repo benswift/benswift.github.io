@@ -2,7 +2,7 @@
 interface Props {
   title?: string
   description?: string
-  image?: string
+  image: string
   isPost?: boolean
   date?: string
   atUri?: string
@@ -12,13 +12,10 @@ const { title, description, image, isPost = false, date, atUri } = Astro.props
 
 const siteTitle = "benswift.me"
 const hostname = "https://benswift.me"
-const defaultImage = "/assets/images/pages/theremin-75.webp"
 
 const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
 const url = new URL(Astro.url.pathname, hostname).href
-const imageUrl = image
-  ? image.startsWith("http") ? image : `${hostname}${image}`
-  : `${hostname}${defaultImage}`
+const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`
 ---
 
 <meta charset="utf-8" />
