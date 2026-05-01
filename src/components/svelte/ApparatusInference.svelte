@@ -29,21 +29,8 @@
   let currentMac = $state<MultiplyAccumulateStep | null>(null)
 
   $effect(() => {
-    if (!apparatus) return
-    const values: Record<string, number> = {}
-    for (let i = 0; i < inputPixels.length; i++) {
-      values[`A${i}`] = inputPixels[i]
-    }
-    apparatus.setSliders(values, { duration: 0 })
-
-    if (prediction !== null || progress > 0) {
-      prediction = null
-      currentMac = null
-      stepDescription = ""
-      progress = 0
-      apparatus.clearSlideRuleMarkers()
-      void resetSliders()
-    }
+    inputPixels // track
+    pushInputToApparatus()
   })
 
   const config: BoardConfig = {
@@ -135,10 +122,32 @@
     apparatus.setSliders(values)
   }
 
+  function pushInputToApparatus() {
+    if (!apparatus) return
+    const values: Record<string, number> = {}
+    for (let i = 0; i < inputPixels.length; i++) {
+      values[`A${i}`] = inputPixels[i]
+    }
+    apparatus.setSliders(values, { duration: 0 })
+  }
+
+  function clearStaleRunState() {
+    if (prediction === null && progress === 0) return
+    prediction = null
+    currentMac = null
+    stepDescription = ""
+    progress = 0
+    apparatus?.clearSlideRuleMarkers()
+    resetSliders().catch((err) => {
+      console.error("resetSliders failed:", err)
+    })
+  }
+
   onMount(() => {
     apparatus = new PerceptronApparatus(containerEl, config)
     animator = new ComputationAnimator(apparatus, mnistWeights)
     setWeightSliders()
+    pushInputToApparatus()
   })
 
   onDestroy(() => {
@@ -157,6 +166,7 @@
             class:selected={loadedPreset === i}
             onclick={() => {
               abort()
+              clearStaleRunState()
               inputPixels = [...sampleDigits[i].pixels]
               loadedPreset = i
             }}
@@ -186,6 +196,7 @@
         cols={6}
         onChange={(next) => {
           if (isRunning) abort()
+          clearStaleRunState()
           inputPixels = next
           loadedPreset = null
         }}
