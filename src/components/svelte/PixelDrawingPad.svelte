@@ -76,6 +76,7 @@
   }
 </script>
 
+<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 <svg
   bind:this={svgEl}
   class="pixel-drawing-pad"
@@ -100,7 +101,7 @@
       height="1"
       fill={cellFill(pixels[i] ?? 0)}
       stroke="var(--divider, #333)"
-      stroke-width="0.02"
+      stroke-width="0.04"
     />
   {/each}
 </svg>
