@@ -243,7 +243,7 @@
       <button onclick={() => run("fast")} disabled={isRunning}>
         ⏩ Instant
       </button>
-      <button onclick={reset} disabled={!isRunning && prediction === null}>
+      <button onclick={reset} disabled={!isRunning && prediction === null && inputPixels.every((v) => v === 0)}>
         ↺ Reset
       </button>
     </div>
@@ -311,7 +311,9 @@
 
   .apparatus-inference:fullscreen .apparatus-container,
   .apparatus-inference.fullscreen .apparatus-container {
+    grid-row: 1;
     grid-column: 1;
+    width: auto;
     height: 100%;
     max-width: none;
     aspect-ratio: 1;
@@ -320,6 +322,7 @@
 
   .apparatus-inference:fullscreen .controls,
   .apparatus-inference.fullscreen .controls {
+    grid-row: 1;
     grid-column: 2;
     overflow-y: auto;
   }
