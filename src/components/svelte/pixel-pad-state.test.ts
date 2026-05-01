@@ -2,8 +2,12 @@ import { describe, it, expect } from "vitest";
 import { emptyPixels, incrementCell, clearLastCell } from "./pixel-pad-state";
 
 describe("emptyPixels", () => {
-  it("returns a zero-filled array of the requested length", () => {
-    expect(emptyPixels(36)).toEqual(Array.from({ length: 36 }, () => 0));
+  it("returns an array of the requested length", () => {
+    expect(emptyPixels(36)).toHaveLength(36);
+  });
+
+  it("returns an array filled with zeros", () => {
+    expect(emptyPixels(3)).toEqual([0, 0, 0]);
   });
 });
 
