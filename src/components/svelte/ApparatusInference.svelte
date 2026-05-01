@@ -4,6 +4,7 @@
     PerceptronApparatus,
     type BoardConfig,
   } from "perceptron-apparatus"
+  import PixelDrawingPad from "./PixelDrawingPad.svelte"
   import {
     ComputationAnimator,
     sampleDigits,
@@ -19,12 +20,31 @@
   let animator: ComputationAnimator | null = null
   let abortController: AbortController | null = null
 
-  let selectedDigit = $state(0)
+  let inputPixels = $state<number[]>(new Array(36).fill(0))
+  let loadedPreset = $state<number | null>(null)
   let isRunning = $state(false)
   let stepDescription = $state("")
   let prediction = $state<number | null>(null)
   let progress = $state(0)
   let currentMac = $state<MultiplyAccumulateStep | null>(null)
+
+  $effect(() => {
+    if (!apparatus) return
+    const values: Record<string, number> = {}
+    for (let i = 0; i < inputPixels.length; i++) {
+      values[`A${i}`] = inputPixels[i]
+    }
+    apparatus.setSliders(values, { duration: 0 })
+
+    if (prediction !== null || progress > 0) {
+      prediction = null
+      currentMac = null
+      stepDescription = ""
+      progress = 0
+      apparatus.clearSlideRuleMarkers()
+      void resetSliders()
+    }
+  })
 
   const config: BoardConfig = {
     size: 1000,
@@ -55,7 +75,7 @@
 
     try {
       const result = await animator.compute(
-        sampleDigits[selectedDigit].pixels,
+        inputPixels,
         {
           mode,
           stepDuration: mode === "step" ? 400 : 0,
@@ -80,13 +100,14 @@
 
   async function reset() {
     abort()
+    inputPixels = new Array(36).fill(0)
+    loadedPreset = null
     prediction = null
     currentMac = null
     stepDescription = ""
     progress = 0
     apparatus?.clearSlideRuleMarkers()
     await resetSliders()
-    setInputSliders(selectedDigit)
   }
 
   async function resetSliders() {
@@ -96,16 +117,6 @@
     for (let k = 0; k < 10; k++) values[`E${k}`] = 0
     await apparatus.setSliders(values, { duration: ANIM_DURATION })
     await apparatus.setLogRingRotation(0, { duration: ANIM_DURATION })
-  }
-
-  function setInputSliders(index: number) {
-    if (!apparatus) return
-    const pixels = sampleDigits[index].pixels
-    const values: Record<string, number> = {}
-    for (let i = 0; i < pixels.length; i++) {
-      values[`A${i}`] = pixels[i]
-    }
-    apparatus.setSliders(values, { duration: ANIM_DURATION })
   }
 
   function setWeightSliders() {
@@ -124,22 +135,10 @@
     apparatus.setSliders(values)
   }
 
-  async function selectDigit(index: number) {
-    abort()
-    prediction = null
-    currentMac = null
-    stepDescription = ""
-    progress = 0
-    apparatus?.clearSlideRuleMarkers()
-    selectedDigit = index
-    setInputSliders(index)
-  }
-
   onMount(() => {
     apparatus = new PerceptronApparatus(containerEl, config)
     animator = new ComputationAnimator(apparatus, mnistWeights)
     setWeightSliders()
-    setInputSliders(selectedDigit)
   })
 
   onDestroy(() => {
@@ -155,8 +154,12 @@
         {#each sampleDigits as digit, i}
           <button
             class="digit-button"
-            class:selected={selectedDigit === i}
-            onclick={() => selectDigit(i)}
+            class:selected={loadedPreset === i}
+            onclick={() => {
+              abort()
+              inputPixels = [...sampleDigits[i].pixels]
+              loadedPreset = i
+            }}
             title="Digit {digit.label}"
           >
             <svg viewBox="0 0 6 6" class="digit-grid">
@@ -174,6 +177,19 @@
           </button>
         {/each}
       </div>
+    </div>
+
+    <div class="drawing-pad-wrapper">
+      <PixelDrawingPad
+        pixels={inputPixels}
+        rows={6}
+        cols={6}
+        onChange={(next) => {
+          if (isRunning) abort()
+          inputPixels = next
+          loadedPreset = null
+        }}
+      />
     </div>
 
     <div class="playback">
@@ -212,10 +228,12 @@
       <div class="prediction">
         {#if prediction !== null}
           Prediction: <strong>{prediction}</strong>
-          {#if prediction === sampleDigits[selectedDigit].label}
-            <span class="correct">✓</span>
-          {:else}
-            <span class="incorrect">✗ (expected {sampleDigits[selectedDigit].label})</span>
+          {#if loadedPreset !== null}
+            {#if prediction === sampleDigits[loadedPreset].label}
+              <span class="correct">✓</span>
+            {:else}
+              <span class="incorrect">✗ (expected {sampleDigits[loadedPreset].label})</span>
+            {/if}
           {/if}
         {:else}
           &nbsp;
@@ -275,6 +293,12 @@
   .digit-grid {
     width: 36px;
     height: 36px;
+  }
+
+  .drawing-pad-wrapper {
+    width: 150px;
+    height: 150px;
+    margin-top: 0.5rem;
   }
 
   .digit-label {
