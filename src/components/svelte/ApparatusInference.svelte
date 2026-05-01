@@ -16,12 +16,14 @@
   const ANIM_DURATION = 300
 
   let containerEl: HTMLDivElement
+  let apparatusEl: HTMLDivElement
   let apparatus: PerceptronApparatus | null = null
   let animator: ComputationAnimator | null = null
   let abortController: AbortController | null = null
 
   let inputPixels = $state<number[]>(new Array(36).fill(0))
   let loadedPreset = $state<number | null>(null)
+  let isFullscreen = $state(false)
   let isRunning = $state(false)
   let stepDescription = $state("")
   let prediction = $state<number | null>(null)
@@ -131,6 +133,19 @@
     apparatus.setSliders(values, { duration: 0 })
   }
 
+  function toggleFullscreen() {
+    if (!containerEl) return
+    if (!document.fullscreenElement) {
+      containerEl.requestFullscreen().catch((err) => console.error("Fullscreen failed:", err))
+    } else {
+      document.exitFullscreen()
+    }
+  }
+
+  function onFullscreenChange() {
+    isFullscreen = !!document.fullscreenElement
+  }
+
   function clearStaleRunState() {
     if (prediction === null && progress === 0) return
     prediction = null
@@ -144,18 +159,36 @@
   }
 
   onMount(() => {
-    apparatus = new PerceptronApparatus(containerEl, config)
+    apparatus = new PerceptronApparatus(apparatusEl, config)
     animator = new ComputationAnimator(apparatus, mnistWeights)
     setWeightSliders()
     pushInputToApparatus()
+    document.addEventListener("fullscreenchange", onFullscreenChange)
   })
 
   onDestroy(() => {
     abort()
+    document.removeEventListener("fullscreenchange", onFullscreenChange)
   })
 </script>
 
-<div class="apparatus-inference">
+<div bind:this={containerEl} class="apparatus-inference" class:fullscreen={isFullscreen}>
+  <button
+    class="fullscreen-button"
+    onclick={toggleFullscreen}
+    title={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+    aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+  >
+    {#if !isFullscreen}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+      </svg>
+    {:else}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
+      </svg>
+    {/if}
+  </button>
   <div class="controls">
     <div class="digit-picker">
       <span class="label">Input digit:</span>
@@ -253,14 +286,74 @@
     </div>
   </div>
 
-  <div bind:this={containerEl} class="apparatus-container"></div>
+  <div bind:this={apparatusEl} class="apparatus-container"></div>
 </div>
 
 <style>
   .apparatus-inference {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .apparatus-inference:fullscreen,
+  .apparatus-inference.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background: var(--background-color, #1a1a1a);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+  }
+
+  .apparatus-inference:fullscreen .apparatus-container,
+  .apparatus-inference.fullscreen .apparatus-container {
+    grid-column: 1;
+    height: 100%;
+    max-width: none;
+    aspect-ratio: 1;
+    margin: 0 auto;
+  }
+
+  .apparatus-inference:fullscreen .controls,
+  .apparatus-inference.fullscreen .controls {
+    grid-column: 2;
+    overflow-y: auto;
+  }
+
+  .apparatus-inference:fullscreen .drawing-pad-wrapper,
+  .apparatus-inference.fullscreen .drawing-pad-wrapper {
+    width: min(50vh, 100%);
+    height: min(50vh, 100%);
+    aspect-ratio: 1;
+  }
+
+  .fullscreen-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.4rem;
+    background: var(--bg-soft, #252525);
+    color: var(--text-color, #e0e0e0);
+    border: 1px solid var(--divider, #333);
+    border-radius: 6px 0 6px 6px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.15s;
+  }
+
+  .fullscreen-button:hover {
+    background: var(--divider, #333);
+  }
+
+  .fullscreen-button svg {
+    width: 100%;
+    height: 100%;
   }
 
   .controls {
