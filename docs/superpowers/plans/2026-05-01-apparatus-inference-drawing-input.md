@@ -43,94 +43,94 @@
 
 The pure state machine that the `.svelte` file will call from its DOM event handlers. Anti-flood is implemented via an opaque `lastIndex: number | null` that the caller threads through drag events.
 
-- [ ] **Step 1: Write failing tests**
+- [x] **Step 1: Write failing tests**
 
 Create `src/components/svelte/pixel-pad-state.test.ts`:
 
 ```ts
-import { describe, it, expect } from "vitest"
-import { emptyPixels, incrementCell, clearLastCell } from "./pixel-pad-state"
+import { describe, it, expect } from "vitest";
+import { emptyPixels, incrementCell, clearLastCell } from "./pixel-pad-state";
 
 describe("emptyPixels", () => {
   it("returns a zero-filled array of the requested length", () => {
-    expect(emptyPixels(36)).toEqual(new Array(36).fill(0))
-  })
-})
+    expect(emptyPixels(36)).toEqual(new Array(36).fill(0));
+  });
+});
 
 describe("incrementCell", () => {
   it("increments the targeted cell by step", () => {
-    const result = incrementCell(emptyPixels(36), 5, 0.15, null)
-    expect(result.pixels[5]).toBeCloseTo(0.15)
-    expect(result.lastIndex).toBe(5)
-  })
+    const result = incrementCell(emptyPixels(36), 5, 0.15, null);
+    expect(result.pixels[5]).toBeCloseTo(0.15);
+    expect(result.lastIndex).toBe(5);
+  });
 
   it("does not mutate the input array", () => {
-    const before = emptyPixels(36)
-    const result = incrementCell(before, 5, 0.15, null)
-    expect(before[5]).toBe(0)
-    expect(result.pixels).not.toBe(before)
-  })
+    const before = emptyPixels(36);
+    const result = incrementCell(before, 5, 0.15, null);
+    expect(before[5]).toBe(0);
+    expect(result.pixels).not.toBe(before);
+  });
 
   it("caps cell value at 1.0", () => {
-    let pixels = emptyPixels(36)
-    let lastIndex: number | null = null
+    let pixels = emptyPixels(36);
+    let lastIndex: number | null = null;
     for (let i = 0; i < 20; i++) {
-      const result = incrementCell(pixels, 5, 0.15, lastIndex)
-      pixels = result.pixels
-      lastIndex = i % 2 === 0 ? null : 5
+      const result = incrementCell(pixels, 5, 0.15, lastIndex);
+      pixels = result.pixels;
+      lastIndex = i % 2 === 0 ? null : 5;
     }
-    expect(pixels[5]).toBe(1)
-  })
+    expect(pixels[5]).toBe(1);
+  });
 
   it("does not double-increment the same cell while it is the last cell", () => {
-    const first = incrementCell(emptyPixels(36), 5, 0.15, null)
-    const second = incrementCell(first.pixels, 5, 0.15, first.lastIndex)
-    expect(second.pixels[5]).toBeCloseTo(0.15)
-    expect(second.pixels).toBe(first.pixels) // unchanged → same reference returned
-    expect(second.lastIndex).toBe(5)
-  })
+    const first = incrementCell(emptyPixels(36), 5, 0.15, null);
+    const second = incrementCell(first.pixels, 5, 0.15, first.lastIndex);
+    expect(second.pixels[5]).toBeCloseTo(0.15);
+    expect(second.pixels).toBe(first.pixels); // unchanged → same reference returned
+    expect(second.lastIndex).toBe(5);
+  });
 
   it("re-increments a cell after the pointer leaves and returns", () => {
-    const a = incrementCell(emptyPixels(36), 5, 0.15, null)
-    const b = incrementCell(a.pixels, 6, 0.15, a.lastIndex)
-    const c = incrementCell(b.pixels, 5, 0.15, b.lastIndex)
-    expect(c.pixels[5]).toBeCloseTo(0.3)
-  })
+    const a = incrementCell(emptyPixels(36), 5, 0.15, null);
+    const b = incrementCell(a.pixels, 6, 0.15, a.lastIndex);
+    const c = incrementCell(b.pixels, 5, 0.15, b.lastIndex);
+    expect(c.pixels[5]).toBeCloseTo(0.3);
+  });
 
   it("uses the supplied step value", () => {
-    const result = incrementCell(emptyPixels(36), 5, 0.25, null)
-    expect(result.pixels[5]).toBeCloseTo(0.25)
-  })
-})
+    const result = incrementCell(emptyPixels(36), 5, 0.25, null);
+    expect(result.pixels[5]).toBeCloseTo(0.25);
+  });
+});
 
 describe("clearLastCell", () => {
   it("returns null lastIndex without touching pixels", () => {
-    const pixels = emptyPixels(36)
-    pixels[5] = 0.5
-    const result = clearLastCell(pixels)
-    expect(result.lastIndex).toBeNull()
-    expect(result.pixels).toBe(pixels)
-  })
-})
+    const pixels = emptyPixels(36);
+    pixels[5] = 0.5;
+    const result = clearLastCell(pixels);
+    expect(result.lastIndex).toBeNull();
+    expect(result.pixels).toBe(pixels);
+  });
+});
 ```
 
-- [ ] **Step 2: Run tests, verify they fail**
+- [x] **Step 2: Run tests, verify they fail**
 
 Run: `pnpm test src/components/svelte/pixel-pad-state.test.ts`
 Expected: FAIL — module not found.
 
-- [ ] **Step 3: Implement the module**
+- [x] **Step 3: Implement the module**
 
 Create `src/components/svelte/pixel-pad-state.ts`:
 
 ```ts
 export type PadState = {
-  pixels: number[]
-  lastIndex: number | null
-}
+  pixels: number[];
+  lastIndex: number | null;
+};
 
 export function emptyPixels(length: number): number[] {
-  return new Array(length).fill(0)
+  return new Array(length).fill(0);
 }
 
 export function incrementCell(
@@ -140,29 +140,29 @@ export function incrementCell(
   lastIndex: number | null,
 ): PadState {
   if (index === lastIndex) {
-    return { pixels, lastIndex }
+    return { pixels, lastIndex };
   }
-  const next = pixels.slice()
-  next[index] = Math.min(1, pixels[index] + step)
-  return { pixels: next, lastIndex: index }
+  const next = pixels.slice();
+  next[index] = Math.min(1, pixels[index] + step);
+  return { pixels: next, lastIndex: index };
 }
 
 export function clearLastCell(pixels: number[]): PadState {
-  return { pixels, lastIndex: null }
+  return { pixels, lastIndex: null };
 }
 ```
 
-- [ ] **Step 4: Run tests, verify they pass**
+- [x] **Step 4: Run tests, verify they pass**
 
 Run: `pnpm test src/components/svelte/pixel-pad-state.test.ts`
 Expected: PASS, all 7 tests.
 
-- [ ] **Step 5: Type-check, lint, format**
+- [x] **Step 5: Type-check, lint, format**
 
 Run: `pnpm typecheck && pnpm lint && pnpm format:check`
 Expected: clean.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add src/components/svelte/pixel-pad-state.ts src/components/svelte/pixel-pad-state.test.ts
@@ -179,7 +179,7 @@ git commit -m "feat(pixel-pad): add pure cell-increment state module"
 
 Controlled-input SVG widget. Parent owns `pixels`; the pad reports changes through `onChange`. Anti-flood is delegated to `pixel-pad-state.incrementCell`.
 
-- [ ] **Step 1: Create the component**
+- [x] **Step 1: Create the component**
 
 Create `src/components/svelte/PixelDrawingPad.svelte`:
 
@@ -305,17 +305,17 @@ Create `src/components/svelte/PixelDrawingPad.svelte`:
 </style>
 ```
 
-- [ ] **Step 2: Type-check the component**
+- [x] **Step 2: Type-check the component**
 
 Run: `pnpm typecheck`
 Expected: clean (no svelte-check errors on the new file).
 
-- [ ] **Step 3: Lint and format**
+- [x] **Step 3: Lint and format**
 
 Run: `pnpm lint && pnpm format:check`
 Expected: clean.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add src/components/svelte/PixelDrawingPad.svelte
@@ -332,54 +332,54 @@ git commit -m "feat(pixel-pad): add Svelte drawing pad component"
 
 This task replaces `selectedDigit` with `inputPixels` + `loadedPreset` and the reactive A-ring sync, but leaves the UI mostly intact (preset thumbnails still render; pad is added in this task). Reset behaviour and prediction display are updated. Fullscreen is deferred to Task 4.
 
-- [ ] **Step 1: Replace state declarations and add the sync effect**
+- [x] **Step 1: Replace state declarations and add the sync effect**
 
 In `src/components/svelte/ApparatusInference.svelte`, replace the `<script>` block top-down. Locate:
 
 ```ts
-  let selectedDigit = $state(0)
-  let isRunning = $state(false)
+let selectedDigit = $state(0);
+let isRunning = $state(false);
 ```
 
 Replace `selectedDigit` declaration with:
 
 ```ts
-  let inputPixels = $state<number[]>(new Array(36).fill(0))
-  let loadedPreset = $state<number | null>(null)
-  let isRunning = $state(false)
+let inputPixels = $state<number[]>(new Array(36).fill(0));
+let loadedPreset = $state<number | null>(null);
+let isRunning = $state(false);
 ```
 
 (Keep `isRunning`, `stepDescription`, `prediction`, `progress`, `currentMac` exactly as they are.)
 
-- [ ] **Step 2: Replace `setInputSliders` and `selectDigit` with a reactive effect**
+- [x] **Step 2: Replace `setInputSliders` and `selectDigit` with a reactive effect**
 
 Delete the existing `setInputSliders(index)` function (lines 101–109 in the original file) and `selectDigit(index)` function (lines 127–136).
 
 In their place, add a reactive `$effect` that mirrors `inputPixels` to the apparatus and clears stale forward-pass state when present. Place it immediately after the `currentMac = $state(...)` declaration line so it runs in script-top context:
 
 ```ts
-  $effect(() => {
-    if (!apparatus) return
-    const values: Record<string, number> = {}
-    for (let i = 0; i < inputPixels.length; i++) {
-      values[`A${i}`] = inputPixels[i]
-    }
-    apparatus.setSliders(values, { duration: 0 })
+$effect(() => {
+  if (!apparatus) return;
+  const values: Record<string, number> = {};
+  for (let i = 0; i < inputPixels.length; i++) {
+    values[`A${i}`] = inputPixels[i];
+  }
+  apparatus.setSliders(values, { duration: 0 });
 
-    if (prediction !== null || progress > 0) {
-      prediction = null
-      currentMac = null
-      stepDescription = ""
-      progress = 0
-      apparatus.clearSlideRuleMarkers()
-      void resetSliders()
-    }
-  })
+  if (prediction !== null || progress > 0) {
+    prediction = null;
+    currentMac = null;
+    stepDescription = "";
+    progress = 0;
+    apparatus.clearSlideRuleMarkers();
+    void resetSliders();
+  }
+});
 ```
 
 Note: this effect intentionally reads `prediction` / `progress` so that it re-runs when they change too, but the guard prevents runaway resets — once `prediction` becomes `null` and `progress` becomes `0`, the inner block is a no-op.
 
-- [ ] **Step 3: Update `run` to read `inputPixels`**
+- [x] **Step 3: Update `run` to read `inputPixels`**
 
 Find the body of `async function run(mode: "step" | "fast")` (lines 46–73 in the original). Locate:
 
@@ -395,72 +395,72 @@ Replace `sampleDigits[selectedDigit].pixels` with `inputPixels`:
         inputPixels,
 ```
 
-- [ ] **Step 4: Rewrite `reset` to wipe input as well**
+- [x] **Step 4: Rewrite `reset` to wipe input as well**
 
 Replace the body of `async function reset()` (lines 81–90 in the original):
 
 ```ts
-  async function reset() {
-    abort()
-    prediction = null
-    currentMac = null
-    stepDescription = ""
-    progress = 0
-    apparatus?.clearSlideRuleMarkers()
-    await resetSliders()
-    setInputSliders(selectedDigit)
-  }
+async function reset() {
+  abort();
+  prediction = null;
+  currentMac = null;
+  stepDescription = "";
+  progress = 0;
+  apparatus?.clearSlideRuleMarkers();
+  await resetSliders();
+  setInputSliders(selectedDigit);
+}
 ```
 
 with:
 
 ```ts
-  async function reset() {
-    abort()
-    inputPixels = new Array(36).fill(0)
-    loadedPreset = null
-    prediction = null
-    currentMac = null
-    stepDescription = ""
-    progress = 0
-    apparatus?.clearSlideRuleMarkers()
-    await resetSliders()
-  }
+async function reset() {
+  abort();
+  inputPixels = new Array(36).fill(0);
+  loadedPreset = null;
+  prediction = null;
+  currentMac = null;
+  stepDescription = "";
+  progress = 0;
+  apparatus?.clearSlideRuleMarkers();
+  await resetSliders();
+}
 ```
 
 The `$effect` will pick up the `inputPixels = ...` write and zero the A-ring. Calling `resetSliders()` here is still required because the effect's reset-block is gated on `prediction !== null || progress > 0` — which is true when Reset is hit during/after a run, but we want a defensive zero of C/E either way.
 
-- [ ] **Step 5: Update `onMount` — drop the initial `setInputSliders` call**
+- [x] **Step 5: Update `onMount` — drop the initial `setInputSliders` call**
 
 Locate:
 
 ```ts
-  onMount(() => {
-    apparatus = new PerceptronApparatus(containerEl, config)
-    animator = new ComputationAnimator(apparatus, mnistWeights)
-    setWeightSliders()
-    setInputSliders(selectedDigit)
-  })
+onMount(() => {
+  apparatus = new PerceptronApparatus(containerEl, config);
+  animator = new ComputationAnimator(apparatus, mnistWeights);
+  setWeightSliders();
+  setInputSliders(selectedDigit);
+});
 ```
 
 Replace with:
 
 ```ts
-  onMount(() => {
-    apparatus = new PerceptronApparatus(containerEl, config)
-    animator = new ComputationAnimator(apparatus, mnistWeights)
-    setWeightSliders()
-  })
+onMount(() => {
+  apparatus = new PerceptronApparatus(containerEl, config);
+  animator = new ComputationAnimator(apparatus, mnistWeights);
+  setWeightSliders();
+});
 ```
 
 The `$effect` will fire once `apparatus` becomes truthy on the next reactive tick and push the (zero) `inputPixels` to the A-ring.
 
-- [ ] **Step 6: Add `PixelDrawingPad` import and update preset thumbnails + markup**
+- [x] **Step 6: Add `PixelDrawingPad` import and update preset thumbnails + markup**
 
 At the top of the `<script>`, add:
 
 ```ts
-  import PixelDrawingPad from "./PixelDrawingPad.svelte"
+import PixelDrawingPad from "./PixelDrawingPad.svelte";
 ```
 
 In the markup, replace the preset-thumbnail click handler. Locate:
@@ -506,7 +506,7 @@ Below the closing `</div>` of `.digit-picker` (around line 177 in the original),
     </div>
 ```
 
-- [ ] **Step 7: Update prediction display — drop ✓/✗ when no preset is loaded**
+- [x] **Step 7: Update prediction display — drop ✓/✗ when no preset is loaded**
 
 Locate the prediction block (lines 212–223 in the original):
 
@@ -544,28 +544,29 @@ Replace with:
       </div>
 ```
 
-- [ ] **Step 8: Add CSS for the drawing-pad wrapper**
+- [x] **Step 8: Add CSS for the drawing-pad wrapper**
 
 Inside the `<style>` block, add (immediately after the `.digit-grid` rule around line 278):
 
 ```css
-  .drawing-pad-wrapper {
-    width: 150px;
-    height: 150px;
-    margin-top: 0.5rem;
-  }
+.drawing-pad-wrapper {
+  width: 150px;
+  height: 150px;
+  margin-top: 0.5rem;
+}
 ```
 
-- [ ] **Step 9: Type-check, lint, format**
+- [x] **Step 9: Type-check, lint, format**
 
 Run: `pnpm typecheck && pnpm lint && pnpm format:check`
 Expected: clean. If `svelte-check` flags an unused import (`sampleDigits` is still used in markup; `selectedDigit` should be gone), fix.
 
-- [ ] **Step 10: Manual verification in dev**
+- [x] **Step 10: Manual verification in dev**
 
 Run: `pnpm dev`
 Open the browser, navigate to the perceptron-apparatus inference walkthrough post (`blog/2026/03/19/perceptron-apparatus-inference-walkthrough.mdx`).
 Verify:
+
 - Page loads with a blank A-ring (no preset preselected).
 - Drawing on the pad lights up cells; the apparatus's A-ring sliders move in sync.
 - Clicking a preset thumbnail loads its pixels into the pad and the A-ring; the thumbnail is highlighted as selected.
@@ -577,7 +578,7 @@ Verify:
 
 Stop the dev server when done.
 
-- [ ] **Step 11: Commit**
+- [x] **Step 11: Commit**
 
 ```bash
 git add src/components/svelte/ApparatusInference.svelte
@@ -594,56 +595,56 @@ git commit -m "feat(apparatus-inference): replace preset picker with drawing pad
 
 Mirrors the pattern from `NeonPerceptron.svelte:483-495` and `:555-565`.
 
-- [ ] **Step 1: Add fullscreen state and handlers**
+- [x] **Step 1: Add fullscreen state and handlers**
 
 In the `<script>` block, after the existing state declarations (after `loadedPreset = $state(...)`), add:
 
 ```ts
-  let isFullscreen = $state(false)
+let isFullscreen = $state(false);
 
-  function toggleFullscreen() {
-    if (!containerEl) return
-    if (!document.fullscreenElement) {
-      containerEl.requestFullscreen().catch((err) => console.error("Fullscreen failed:", err))
-    } else {
-      document.exitFullscreen()
-    }
+function toggleFullscreen() {
+  if (!containerEl) return;
+  if (!document.fullscreenElement) {
+    containerEl.requestFullscreen().catch((err) => console.error("Fullscreen failed:", err));
+  } else {
+    document.exitFullscreen();
   }
+}
 
-  function onFullscreenChange() {
-    isFullscreen = !!document.fullscreenElement
-  }
+function onFullscreenChange() {
+  isFullscreen = !!document.fullscreenElement;
+}
 ```
 
-`containerEl` already exists (currently `let containerEl: HTMLDivElement` for the apparatus container). The fullscreen target needs to be the *root* of the widget, not the inner apparatus container — so we'll repurpose `containerEl` for the root and introduce a separate `apparatusEl` for the inner div.
+`containerEl` already exists (currently `let containerEl: HTMLDivElement` for the apparatus container). The fullscreen target needs to be the _root_ of the widget, not the inner apparatus container — so we'll repurpose `containerEl` for the root and introduce a separate `apparatusEl` for the inner div.
 
-- [ ] **Step 2: Split `containerEl` into root + apparatus refs**
+- [x] **Step 2: Split `containerEl` into root + apparatus refs**
 
 Locate:
 
 ```ts
-  let containerEl: HTMLDivElement
-  let apparatus: PerceptronApparatus | null = null
+let containerEl: HTMLDivElement;
+let apparatus: PerceptronApparatus | null = null;
 ```
 
 Replace with:
 
 ```ts
-  let containerEl: HTMLDivElement
-  let apparatusEl: HTMLDivElement
-  let apparatus: PerceptronApparatus | null = null
+let containerEl: HTMLDivElement;
+let apparatusEl: HTMLDivElement;
+let apparatus: PerceptronApparatus | null = null;
 ```
 
 In `onMount`, change:
 
 ```ts
-    apparatus = new PerceptronApparatus(containerEl, config)
+apparatus = new PerceptronApparatus(containerEl, config);
 ```
 
 to:
 
 ```ts
-    apparatus = new PerceptronApparatus(apparatusEl, config)
+apparatus = new PerceptronApparatus(apparatusEl, config);
 ```
 
 In the markup, change:
@@ -672,31 +673,31 @@ Replace with:
 
 Find the matching close at the bottom (`</div>` paired with `<div class="apparatus-inference">`) — no change needed.
 
-- [ ] **Step 3: Wire up fullscreen listener in `onMount` / `onDestroy`**
+- [x] **Step 3: Wire up fullscreen listener in `onMount` / `onDestroy`**
 
 Update `onMount` to add the listener:
 
 ```ts
-  onMount(() => {
-    apparatus = new PerceptronApparatus(apparatusEl, config)
-    animator = new ComputationAnimator(apparatus, mnistWeights)
-    setWeightSliders()
-    document.addEventListener("fullscreenchange", onFullscreenChange)
-  })
+onMount(() => {
+  apparatus = new PerceptronApparatus(apparatusEl, config);
+  animator = new ComputationAnimator(apparatus, mnistWeights);
+  setWeightSliders();
+  document.addEventListener("fullscreenchange", onFullscreenChange);
+});
 ```
 
 Update `onDestroy` to remove it:
 
 ```ts
-  onDestroy(() => {
-    abort()
-    document.removeEventListener("fullscreenchange", onFullscreenChange)
-  })
+onDestroy(() => {
+  abort();
+  document.removeEventListener("fullscreenchange", onFullscreenChange);
+});
 ```
 
-- [ ] **Step 4: Add the fullscreen toggle button to markup**
+- [x] **Step 4: Add the fullscreen toggle button to markup**
 
-Inside the root `<div bind:this={containerEl} ...>` and *before* `<div class="controls">`, add:
+Inside the root `<div bind:this={containerEl} ...>` and _before_ `<div class="controls">`, add:
 
 ```svelte
   <button
@@ -717,98 +718,99 @@ Inside the root `<div bind:this={containerEl} ...>` and *before* `<div class="co
   </button>
 ```
 
-- [ ] **Step 5: Add fullscreen CSS**
+- [x] **Step 5: Add fullscreen CSS**
 
 In the `<style>` block, change `.apparatus-inference` to be `position: relative` (so the absolute-positioned button anchors to it), and add fullscreen rules.
 
 Locate:
 
 ```css
-  .apparatus-inference {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+.apparatus-inference {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 ```
 
 Replace with:
 
 ```css
-  .apparatus-inference {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+.apparatus-inference {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
-  .apparatus-inference:fullscreen,
-  .apparatus-inference.fullscreen {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background: var(--background-color, #1a1a1a);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1.5rem;
-  }
+.apparatus-inference:fullscreen,
+.apparatus-inference.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background: var(--background-color, #1a1a1a);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+}
 
-  .apparatus-inference:fullscreen .apparatus-container,
-  .apparatus-inference.fullscreen .apparatus-container {
-    grid-column: 1;
-    height: 100%;
-    max-width: none;
-    aspect-ratio: 1;
-    margin: 0 auto;
-  }
+.apparatus-inference:fullscreen .apparatus-container,
+.apparatus-inference.fullscreen .apparatus-container {
+  grid-column: 1;
+  height: 100%;
+  max-width: none;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
 
-  .apparatus-inference:fullscreen .controls,
-  .apparatus-inference.fullscreen .controls {
-    grid-column: 2;
-    overflow-y: auto;
-  }
+.apparatus-inference:fullscreen .controls,
+.apparatus-inference.fullscreen .controls {
+  grid-column: 2;
+  overflow-y: auto;
+}
 
-  .apparatus-inference:fullscreen .drawing-pad-wrapper,
-  .apparatus-inference.fullscreen .drawing-pad-wrapper {
-    width: min(50vh, 100%);
-    height: min(50vh, 100%);
-    aspect-ratio: 1;
-  }
+.apparatus-inference:fullscreen .drawing-pad-wrapper,
+.apparatus-inference.fullscreen .drawing-pad-wrapper {
+  width: min(50vh, 100%);
+  height: min(50vh, 100%);
+  aspect-ratio: 1;
+}
 
-  .fullscreen-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 2.25rem;
-    height: 2.25rem;
-    padding: 0.4rem;
-    background: var(--bg-soft, #252525);
-    color: var(--text-color, #e0e0e0);
-    border: 1px solid var(--divider, #333);
-    border-radius: 6px 0 6px 6px;
-    cursor: pointer;
-    z-index: 10;
-    transition: background 0.15s;
-  }
+.fullscreen-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.4rem;
+  background: var(--bg-soft, #252525);
+  color: var(--text-color, #e0e0e0);
+  border: 1px solid var(--divider, #333);
+  border-radius: 6px 0 6px 6px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.15s;
+}
 
-  .fullscreen-button:hover {
-    background: var(--divider, #333);
-  }
+.fullscreen-button:hover {
+  background: var(--divider, #333);
+}
 
-  .fullscreen-button svg {
-    width: 100%;
-    height: 100%;
-  }
+.fullscreen-button svg {
+  width: 100%;
+  height: 100%;
+}
 ```
 
-- [ ] **Step 6: Type-check, lint, format**
+- [x] **Step 6: Type-check, lint, format**
 
 Run: `pnpm typecheck && pnpm lint && pnpm format:check`
 Expected: clean.
 
-- [ ] **Step 7: Manual verification in dev (desktop + phone-shaped viewport)**
+- [x] **Step 7: Manual verification in dev (desktop + phone-shaped viewport)**
 
 Run: `pnpm dev`
+
 - Click the fullscreen button (top-right of the widget). Widget should fill the viewport, with apparatus on the left, controls (including a larger drawing pad) on the right.
 - Draw on the larger pad — A-ring still mirrors live.
 - Click the (now exit-fullscreen) button. Widget should return to inline layout; pad reverts to 150px.
@@ -817,7 +819,7 @@ Run: `pnpm dev`
 
 Stop the dev server when done.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add src/components/svelte/ApparatusInference.svelte
@@ -830,32 +832,33 @@ git commit -m "feat(apparatus-inference): add fullscreen toggle with landscape l
 
 **Files:** none changed.
 
-- [ ] **Step 1: Full test suite**
+- [x] **Step 1: Full test suite**
 
 Run: `pnpm test`
 Expected: all tests pass, including the new `pixel-pad-state.test.ts`.
 
-- [ ] **Step 2: Type-check**
+- [x] **Step 2: Type-check**
 
 Run: `pnpm typecheck`
 Expected: clean.
 
-- [ ] **Step 3: Lint and format check**
+- [x] **Step 3: Lint and format check**
 
 Run: `pnpm lint && pnpm format:check`
 Expected: clean.
 
-- [ ] **Step 4: Build**
+- [x] **Step 4: Build**
 
 Run: `pnpm build`
 Expected: build succeeds, no console errors related to the modified post.
 
-- [ ] **Step 5: End-to-end manual exercise**
+- [x] **Step 5: End-to-end manual exercise**
 
 Run: `pnpm dev`
 Open `/blog/2026/03/19/perceptron-apparatus-inference-walkthrough/`.
 
 Run through the full UX flow once:
+
 1. Draw a rough digit on the pad. Confirm A-ring mirrors live.
 2. Click "Step through". Watch the forward pass animate. Prediction shows (no ✓/✗).
 3. Click "Reset". Pad and apparatus zero out.

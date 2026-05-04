@@ -109,7 +109,7 @@ changes back via a callback.
   `inputPixels = [...sampleDigits[i].pixels]` and `loadedPreset = i`. The
   reactive effect above handles A-ring sync and stale-state clearing.
 - Drawing pad (new): `<PixelDrawingPad pixels={inputPixels} rows={6} cols={6}
-  onChange={(next) => { inputPixels = next; loadedPreset = null }} />`.
+onChange={(next) => { inputPixels = next; loadedPreset = null }} />`.
 - "Step through" / "Instant" buttons: unchanged in behaviour, but now read
   `inputPixels` instead of `sampleDigits[selectedDigit].pixels`.
 - "Reset" button: clears `inputPixels` to zeros and sets `loadedPreset = null`.
