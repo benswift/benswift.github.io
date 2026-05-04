@@ -6,11 +6,11 @@ description:
 tags: [ai]
 ---
 
-Reading Lars Faye's
+I read Lars Faye's
 [Agentic Coding is a Trap](https://larsfaye.com/articles/agentic-coding-is-a-trap)
-post this morning it engages with what I think is the core question around
-agentic software development, and especially how we teach others (and juniors)
-to do it effectively. My paraphrase:
+post this morning. It engages with what I think is the core question around
+agentic software development, and especially with how we teach others (and
+juniors) to do it effectively. My paraphrase:
 
 > how _necessary_ is the struggle of implementation in delivering good software?
 
@@ -24,30 +24,28 @@ claim itself.
 
 I do think it's worth making one other point about the
 [Vendor Lock-In section](https://larsfaye.com/articles/agentic-coding-is-a-trap#vendor-lock-in)
-of the article, which is to say that of all the software tools/techniques I have
-invested significant time in over my 20 year career as a researcher and software
-developer is that LLMs have some of the lowest lock-in of any tool I've ever
-used. Seriously, I was more locked in to Emacs[^emacs] than I am to Claude (even
-though I'm quite happy with Claude at the moment). All the tooling I've built is
-just md files with human-readable instructions in them, and switching to a
-different coding harness is in-general just a file rename away
-(`mv CLAUDE.md AGENTS.md`).
+of the article. Of all the software tools and techniques I've invested
+significant time in over my 20-year career as a researcher and developer, LLMs
+have some of the lowest lock-in I've ever encountered. Seriously, I was more
+locked in to Emacs[^emacs] than I am to Claude (even though I'm quite happy
+with Claude at the moment). All the tooling I've built is just md files with
+human-readable instructions in them, and switching to a different coding
+harness is, in general, just a file rename away (`mv CLAUDE.md AGENTS.md`).
 
 So while it's a pain when Claude has an outage, if they were really not working
 for me I'd let my monthly subscription lapse, and I reckon I'd be just as
 productive with a new platform within about one hour (partially because the new
 provider's model would help with the migration).
 
-It's not to say that I don't read and nod along with Lars's post, for no other
-reason that I grieve the loss of the feeling of mastery that comes with being a
-code-slinging wizard (something which I'm now realising was at least a little
-bit load-bearing in terms of my work identity). But in the scheme of tech and
-software dev, not only are LLMs the first thing in perhaps my whole career that
-I think might actually live up to the hype, they're the things with the least
-lock-in (cf Google's famous
+It's not to say that I don't read and nod along with Lars's post. I do, if for
+no other reason than that I grieve the loss of the feeling of mastery that
+comes with being a code-slinging wizard (something I'm now realising was at
+least a little load-bearing for my work identity). But in the scheme of tech
+and software dev, LLMs are the first thing in perhaps my whole career that I
+think might actually live up to the hype. They also have the least lock-in of
+anything I've used (cf Google's famous
 [we have no moat and neither does anyone else](https://newsletter.semianalysis.com/p/google-we-have-no-moat-and-neither)
-post) of all the tech things I've used. And that makes me a little less nervous
-about diving in.
+post). And that makes me a little less nervous about diving in.
 
 [^emacs]:
     Although regular readers will note that I
