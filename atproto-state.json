@@ -4,7 +4,7 @@
   "contentHashes": {
     "/blog/2026/05/04/on-agentic-tools-and-lock-in": "2c07cb0df73e22b0a9ecc1e5d2fbbbc250724f628a0fedf1bfcf8ed8e1e08e41",
     "/blog/2026/04/28/a-static-site-that-takes-pull-requests": "7f9dc7c60d4d6aefa517515fd9bb9286795d593647aee4ac3535db74fe481db8",
-    "/blog/2026/04/22/comp4020-token-management-by-proxy": "d4945fb1962737d7a9a4a73198f45fc833ce448dcbab3158257b9f42ea4f4490",
+    "/blog/2026/04/22/comp4020-token-management-by-proxy": "760aa81b715ab222594b31b00618984812234b0f0da1457a47915c47f292bd2f",
     "/blog/2026/04/16/comp4020-pledges-not-questions": "3128a85debdd4e27f675987b4e206f5079e6ecaf59052d15422894ac25343e14",
     "/blog/2026/04/15/comp4020-assessment": "8669fb3ecf5f1658f62b596c8510a63944efeb03e96781a208e344c3e7682b2f",
     "/blog/2026/04/09/one-git-heatmap-to-rule-them-all": "c2acf44a9c69b86b582e35e61a6863ea0ca7087a5c23086ea9f09c4f886ce084",
@@ -27,7 +27,7 @@
     "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": "680e6f0ac1bf9a702e1f1e75cfe5d873fb212daa541bdf9b959a93776b35ce2d",
     "/blog/2026/02/24/climbing-the-good-gradient": "0d3928510ce3182d13b4b26b96d23d56fa9a47bbf6a362dcd20379dd7d1007f1",
     "/blog/2026/02/20/comp4020-the-core-mechanic": "570bbece03cbcf68313364d4a802679e8df03aed87bafb0e009c54aca42fb832",
-    "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": "b9cd3ff1d537e0588cf20b769f11d61f4c735ae1aa2fb1cf1ef84c9d55f5a0bf",
+    "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": "e104519e8234a29d79f2f256fc4d394df31f1aa2a0f96b079f4c340eb11b021a",
     "/blog/2026/02/18/ben-s-dev-setup-2026-edition": "2e4a19326b3319a6e73a004fc5c9e556be21d262bf522bc2943918005f883006",
     "/blog/2026/02/17/comp4020-sharp-tools": "8f3e99b0105ab37c75a929155cb259e2eeeea821d8d41f22165ed3c29e8ce0b9",
     "/blog/2026/02/09/llms-unplugged-at-brimbank-tech-school": "dd9cd9acd43e8e01fa94b15ba1318bedc5a78ee812e7b633a2157c9f3f2f59c4",
