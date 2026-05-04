@@ -27,7 +27,8 @@ redesigns break paths. Tim Berners-Lee
 [argued in 1998](https://www.w3.org/Provider/Style/URI) that cool URIs don't
 change, but on the real web, they change all the time.
 
-[^dilemma]: Technically "trilemma" because there are three options; I briefly
+[^dilemma]:
+    Technically "trilemma" because there are three options; I briefly
     called it a "dilemma" for the rhythm of the sentence, but who's that
     pedantic?
 
