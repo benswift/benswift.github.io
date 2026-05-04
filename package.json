@@ -38,10 +38,10 @@
     "three": "^0.184.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
+    "@astrojs/check": "^0.9.9",
     "@astrojs/mdx": "^5.0.4",
     "@astrojs/sitemap": "^3.7.2",
-    "@astrojs/svelte": "^8.0.5",
+    "@astrojs/svelte": "^8.1.0",
     "@atproto/api": "^0.19.11",
     "@e18e/eslint-plugin": "^0.3.0",
     "@iconify-json/fa6-brands": "^1.2.6",
@@ -50,7 +50,7 @@
     "@types/node": "^25.6.0",
     "@types/three": "^0.184.0",
     "@types/unist": "^3.0.3",
-    "astro": "^6.1.9",
+    "astro": "^6.2.1",
     "astro-icon": "^1.1.5",
     "bibtex-parse": "^2.1.0",
     "eslint-plugin-no-only-tests": "^3.3.0",
