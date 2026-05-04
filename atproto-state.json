@@ -2,7 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
-    "/blog/2026/05/04/on-agentic-tools-and-lock-in": "2c07cb0df73e22b0a9ecc1e5d2fbbbc250724f628a0fedf1bfcf8ed8e1e08e41",
+    "/blog/2026/05/04/on-agentic-tools-and-lock-in": "f9d7ba1b7773111503ca9412de2589ccec3110dbaba42eabc89b7c14de1c20cf",
     "/blog/2026/04/28/a-static-site-that-takes-pull-requests": "7f9dc7c60d4d6aefa517515fd9bb9286795d593647aee4ac3535db74fe481db8",
     "/blog/2026/04/22/comp4020-token-management-by-proxy": "760aa81b715ab222594b31b00618984812234b0f0da1457a47915c47f292bd2f",
     "/blog/2026/04/16/comp4020-pledges-not-questions": "3128a85debdd4e27f675987b4e206f5079e6ecaf59052d15422894ac25343e14",
