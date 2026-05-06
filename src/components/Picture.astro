@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro"
+
 interface Props {
   file: string
   alt?: string
@@ -7,11 +10,34 @@ interface Props {
 
 const { file, alt = "", credit } = Astro.props
 
-const imageSrc = file.startsWith("/") ? file : `/assets/${file}`
+// Discover post images at build time. Path is relative to
+// src/assets/post-images/ (e.g. "posts/foo.webp", "livecoding/bar.webp").
+const imageModules = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/post-images/**/*.{png,jpg,jpeg,webp,avif,gif}",
+  { eager: true, import: "default" },
+)
+
+const key = `/src/assets/post-images/${file}`
+const image = imageModules[key]?.default ?? (imageModules[key] as unknown as ImageMetadata)
+
+if (!image) {
+  throw new Error(
+    `Picture: image not found at ${key}. Available keys start with "/src/assets/post-images/".`,
+  )
+}
+
+// Animated GIFs lose animation when re-encoded; pass through as raw <img>.
+const isGif = image.format === "gif"
 ---
 
 <figure class="picture-container">
-  <img src={imageSrc} alt={alt} loading="lazy" />
+  {
+    isGif ? (
+      <img src={image.src} alt={alt} loading="lazy" width={image.width} height={image.height} />
+    ) : (
+      <Image src={image} alt={alt} loading="lazy" />
+    )
+  }
   {credit && <figcaption class="picture-credit">{credit}</figcaption>}
 </figure>
 
