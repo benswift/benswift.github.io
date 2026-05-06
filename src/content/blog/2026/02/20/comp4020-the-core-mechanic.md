@@ -1,6 +1,7 @@
 ---
 title: "The road to COMP4020: the core mechanic"
-description: "The repeating loop at the heart of COMP4020: provocation, prototype, studio
+description:
+  "The repeating loop at the heart of COMP4020: provocation, prototype, studio
   crit. An art-school model adapted for agentic software development."
 tags: [comp4020, teaching]
 ---
@@ -77,14 +78,13 @@ game. The point is investment, not anxiety. If you know you're going to demo
 your work and discuss your process, you'll actually do the work (a point I've
 seen validated across several years of Laptop Ensemble courses). And if you're
 going to give feedback to someone else, you'll engage with their prototype
-properly rather than just clicking through it. And in general our students are cool and nice and can be trusted not to be
-arseholes to each other.
+properly rather than just clicking through it. And in general our students are
+cool and nice and can be trusted not to be arseholes to each other.
 
 One thing I want to emphasise about the crit itself: the feedback covers both
 the prototype (the product) and the agentic development process that produced
-it. This maps onto
-the week's lecture content, where students learn about different aspects of
-working with LLM agents for software development.
+it. This maps onto the week's lecture content, where students learn about
+different aspects of working with LLM agents for software development.
 
 So the studio session isn't just "does your app work?"---it's "how did you get
 here, what did you try, what did the agent do well, where did you have to
@@ -98,10 +98,10 @@ understanding of what good agentic software development looks like---both in
 terms of the process and the resulting prototypes.
 
 The course doesn't start until July, so I've got some time to flesh out the
-weekly provocations. I want these to be fun and thought-provoking. We have
-other (great!) courses for building viable startups and software businesses;
-part of the point (and opportunity) here is for students to do and make stuff
-that doesn't make sense in a shark-tank-style business context.
+weekly provocations. I want these to be fun and thought-provoking. We have other
+(great!) courses for building viable startups and software businesses; part of
+the point (and opportunity) here is for students to do and make stuff that
+doesn't make sense in a shark-tank-style business context.
 
 Here are some ideas I've had. Honestly some of them I'm super excited about
 while others are pretty... meh.
@@ -177,3 +177,7 @@ while others are pretty... meh.
 
 - make the web version of one of Katerina Kamprani's
   [deliberately inconvenient objects](https://www.inconspicuous.info/p/the-pleasures-of-poor-product-design)
+
+- write AI skills (instructions) to generate prose that doesn't exhibit the
+  usual LLM-generated text tropes, and another one that generate text that's
+  cartoonishly over-the-top in it's LLM-generated-cliche-ness
