@@ -97,7 +97,7 @@ h3 {
 }
 
 /* Heading anchor links */
-.heading-anchor {
+.at-heading-anchor {
   color: var(--brand-1);
   text-decoration: none;
   font-weight: 400;
@@ -109,16 +109,16 @@ h3 {
   transition: opacity 0.2s ease;
 }
 
-h2:hover > .heading-anchor,
-h3:hover > .heading-anchor,
-h4:hover > .heading-anchor,
-h5:hover > .heading-anchor,
-h6:hover > .heading-anchor,
-.heading-anchor:focus {
+h2:hover > .at-heading-anchor,
+h3:hover > .at-heading-anchor,
+h4:hover > .at-heading-anchor,
+h5:hover > .at-heading-anchor,
+h6:hover > .at-heading-anchor,
+.at-heading-anchor:focus {
   opacity: 1;
 }
 
-.heading-anchor:hover {
+.at-heading-anchor:hover {
   color: var(--highlight-color);
 }
 
@@ -526,7 +526,7 @@ sup a {
 
   nav,
   footer,
-  .heading-anchor {
+  .at-heading-anchor {
     display: none !important;
   }
 

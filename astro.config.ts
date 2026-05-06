@@ -1,4 +1,5 @@
 import { defineConfig, fontProviders } from "astro/config";
+import type { PluggableList } from "unified";
 import mdx from "@astrojs/mdx";
 import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
@@ -11,6 +12,20 @@ import rehypeSlug from "rehype-slug";
 import { remarkContainers } from "./src/plugins/remark-containers";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
+
+// Site remark plugins shared between .md (markdown.remarkPlugins) and .mdx
+// (via the mdx() integration). Astro's MDX integration replaces rather than
+// extends markdown.remarkPlugins, so .mdx files only get plugins listed here
+// if we explicitly include them in mdx({ remarkPlugins }). Smartypants is
+// included with `dashes: "oldschool"` so `---` becomes em-dash; we disable
+// Astro's built-in smartypants on both pipelines to avoid double-processing
+// (and because @astrojs/mdx ignores the smartypants config object anyway —
+// it always calls the plugin with defaults).
+const siteRemarkPlugins: PluggableList = [
+  [remarkSmartypants, { dashes: "oldschool" }],
+  remarkDirective,
+  remarkContainers,
+];
 
 export default defineConfig({
   site: "https://benswift.me",
@@ -45,7 +60,10 @@ export default defineConfig({
     },
   ],
   integrations: [
-    mdx({ remarkPlugins: deckRemarkPlugins }),
+    mdx({
+      remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins],
+      smartypants: false,
+    }),
     svelte(),
     sitemap(),
     brokenLinksChecker({ checkExternalLinks: false }),
@@ -62,18 +80,15 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [
-      [remarkSmartypants as never, { dashes: "oldschool" }],
-      remarkDirective,
-      remarkContainers,
-    ],
+    smartypants: false,
+    remarkPlugins: siteRemarkPlugins as never,
     rehypePlugins: [
       rehypeSlug,
       [
         rehypeAutolinkHeadings,
         {
           behavior: "prepend",
-          properties: { class: "heading-anchor", ariaLabel: "Link to this section" },
+          properties: { class: "at-heading-anchor", ariaLabel: "Link to this section" },
           content: {
             type: "text",
             value: "#",

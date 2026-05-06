@@ -15,7 +15,7 @@ function getTitle(html: string): string | null {
 }
 
 function getFirstH1(html: string): string | null {
-  // Strip heading-anchor links rehype-autolink-headings prepends inside h1s.
+  // Strip at-heading-anchor links rehype-autolink-headings prepends inside h1s.
   return (
     html
       .match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]
