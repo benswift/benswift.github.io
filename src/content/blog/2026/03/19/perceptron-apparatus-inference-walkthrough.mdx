@@ -1,0 +1,98 @@
+---
+title: "Perceptron apparatus: inference walkthrough"
+description: "An interactive walkthrough of the perceptron apparatus---a 1.2m wooden table that classifies digits using sliders and a circular slide rule."
+tags:
+  - ai
+  - studio
+---
+
+import ApparatusInference from "@/components/svelte/ApparatusInference.svelte";
+
+The perceptron apparatus is a 1.2-metre diameter circular wooden table that
+classifies handwritten digits using concentric rings of sliders and a
+logarithmic slide rule. It's a piece of speculative design from the
+[School of Cybernetics](https://cybernetics.anu.edu.au) at ANU, imagined as an
+artefact from a world where the knowledge to build digital computers has been
+lost, but the mathematics of neural networks survived. So people built _this_
+instead.
+
+The apparatus implements a real trained
+[multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)---a
+36→6→10 MLP that takes a 6×6 pixel image of a digit, runs a forward pass through
+its weights and activations, and produces a prediction. Every multiply is a
+slide rule operation. Every accumulation is a slider moving along a track. The
+whole inference process is physically legible, each step visible to anyone
+standing around the table.
+
+The physical table has been built---fabricated by Sam Shellard at UC's
+[Workshop7](https://www.canberra.edu.au/future-students/study-at-uc/study-areas/design/workshop7),
+with all the laser cutting and CNC routing files available in the
+[GitHub repo](https://github.com/ANUcybernetics/perceptron-apparatus). This post
+walks through the inference process with an interactive digital twin of the
+apparatus. If you've seen the
+[neon perceptron](/blog/2025/12/11/neon-perceptron-digital-twin/) posts, this is
+its older, more analogue sibling.
+
+## The architecture
+
+The apparatus has five concentric rings, each corresponding to a layer of the
+network:
+
+- **Ring A** (outermost): 36 radial sliders for the input pixels---one per cell
+  in the 6×6 grid
+- **Ring B**: weight sliders for the input→hidden connections (36×6 = 216
+  weights)
+- **Ring C**: 6 radial sliders for the hidden neuron activations
+- **Ring D**: weight sliders for the hidden→output connections (6×10 = 60
+  weights)
+- **Ring E** (innermost): 10 radial sliders for the output---one per digit class
+
+Around the outside sit two additional rings: a logarithmic rule ring for
+performing multiplication, and a
+[ReLU](<https://en.wikipedia.org/wiki/Rectifier_(neural_networks)>) reference
+ring for reading off the activation function. To multiply two numbers you rotate
+the log ring to align the two values, then read the product off the outer
+scale---the same principle as a
+[slide rule](https://en.wikipedia.org/wiki/Slide_rule), wrapped into a circle.
+
+The forward pass is:
+
+```
+hidden = relu(input × B)
+output = hidden × D
+prediction = argmax(output)
+```
+
+No bias terms, no softmax on the output. The hidden layer uses
+[ReLU](<https://en.wikipedia.org/wiki/Rectifier_(neural_networks)>)---negative
+values snap to zero, which on the apparatus just means the slider stays at the
+bottom of its track.
+
+## Try it
+
+Pick a digit from the thumbnails below and hit "Step through" to watch the
+forward pass animate on the apparatus. Each step computes one hidden or output
+neuron---accumulating the weighted inputs, applying ReLU where appropriate, and
+sliding the result into place. "Instant" skips the animation and shows the final
+state.
+
+<ApparatusInference client:only="svelte" />
+
+The weights are real---trained on
+[MNIST](https://en.wikipedia.org/wiki/MNIST_database) via
+[Axon](https://hexdocs.pm/axon/Axon.html) in Elixir, then exported to the
+digital twin. The five sample digits (0, 1, 4, 6, 7) are ones the model
+classifies correctly. With only 276 parameters and aggressive downsampling from
+28×28 to 6×6 pixels, it's not going to win any accuracy benchmarks---but that
+was never the point. The apparatus exists to make the forward pass _visible_.
+
+## Related posts
+
+The apparatus is one of several physical neural network projects at the School
+of Cybernetics. The others use a different aesthetic---LEDs and PCBs rather than
+wood and brass---but explore the same idea of making computation tangible:
+
+- [Interactive neon perceptron visualisation](/blog/2025/12/11/neon-perceptron-digital-twin/)---a
+  5×5 input, 9-hidden, 10-output network rendered in Three.js
+- [Mini neon perceptron: XOR edition](/blog/2026/03/03/mini-neon-perceptron-xor-edition/)---a
+  tiny 2×2 input version for testing the physical build

@@ -20,7 +20,7 @@ function main() {
   const month = (now.getMonth() + 1).toString().padStart(2, "0");
   const day = now.getDate().toString().padStart(2, "0");
 
-  const dirPath = path.join("blog", year, month, day);
+  const dirPath = path.join("src", "content", "blog", year, month, day);
   const filePath = path.join(dirPath, `${slug}.md`);
 
   fs.mkdirSync(dirPath, { recursive: true });

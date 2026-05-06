@@ -15,11 +15,12 @@ export function resolveContentPath(
   root: string = process.cwd(),
 ): string {
   const stem = id.replace(/\.mdx?$/, "");
+  const dir = `src/content/${collection}`;
   for (const ext of [".md", ".mdx"] as const) {
-    const candidate = `${collection}/${stem}${ext}`;
+    const candidate = `${dir}/${stem}${ext}`;
     if (existsSync(resolve(root, candidate))) return candidate;
   }
   // Fall back to .md — the caller knows this content exists because it came
   // from the loader, so this only hits for entries outside a collection.
-  return `${collection}/${stem}.md`;
+  return `${dir}/${stem}.md`;
 }

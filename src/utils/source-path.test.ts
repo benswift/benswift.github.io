@@ -16,19 +16,21 @@ function makeTempRepo(files: string[]): string {
 
 describe("resolveContentPath", () => {
   test("picks .md when only .md exists", () => {
-    const root = makeTempRepo(["blog/2024/01/01/hello.md"]);
+    const root = makeTempRepo(["src/content/blog/2024/01/01/hello.md"]);
     try {
-      expect(resolveContentPath("blog", "2024/01/01/hello", root)).toBe("blog/2024/01/01/hello.md");
+      expect(resolveContentPath("blog", "2024/01/01/hello", root)).toBe(
+        "src/content/blog/2024/01/01/hello.md",
+      );
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
   });
 
   test("picks .mdx when only .mdx exists", () => {
-    const root = makeTempRepo(["blog/2024/01/01/hello.mdx"]);
+    const root = makeTempRepo(["src/content/blog/2024/01/01/hello.mdx"]);
     try {
       expect(resolveContentPath("blog", "2024/01/01/hello", root)).toBe(
-        "blog/2024/01/01/hello.mdx",
+        "src/content/blog/2024/01/01/hello.mdx",
       );
     } finally {
       rmSync(root, { recursive: true, force: true });
@@ -36,9 +38,14 @@ describe("resolveContentPath", () => {
   });
 
   test("prefers .md when both exist", () => {
-    const root = makeTempRepo(["blog/2024/01/01/hello.md", "blog/2024/01/01/hello.mdx"]);
+    const root = makeTempRepo([
+      "src/content/blog/2024/01/01/hello.md",
+      "src/content/blog/2024/01/01/hello.mdx",
+    ]);
     try {
-      expect(resolveContentPath("blog", "2024/01/01/hello", root)).toBe("blog/2024/01/01/hello.md");
+      expect(resolveContentPath("blog", "2024/01/01/hello", root)).toBe(
+        "src/content/blog/2024/01/01/hello.md",
+      );
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
@@ -47,17 +54,17 @@ describe("resolveContentPath", () => {
   test("falls back to .md when neither exists (caller's problem)", () => {
     const root = makeTempRepo([]);
     try {
-      expect(resolveContentPath("blog", "missing", root)).toBe("blog/missing.md");
+      expect(resolveContentPath("blog", "missing", root)).toBe("src/content/blog/missing.md");
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
   });
 
   test("strips existing .md extension from id before re-appending", () => {
-    const root = makeTempRepo(["blog/2024/01/01/hello.md"]);
+    const root = makeTempRepo(["src/content/blog/2024/01/01/hello.md"]);
     try {
       expect(resolveContentPath("blog", "2024/01/01/hello.md", root)).toBe(
-        "blog/2024/01/01/hello.md",
+        "src/content/blog/2024/01/01/hello.md",
       );
     } finally {
       rmSync(root, { recursive: true, force: true });
@@ -65,10 +72,10 @@ describe("resolveContentPath", () => {
   });
 
   test("strips existing .mdx extension from id before resolving", () => {
-    const root = makeTempRepo(["blog/2024/01/01/hello.mdx"]);
+    const root = makeTempRepo(["src/content/blog/2024/01/01/hello.mdx"]);
     try {
       expect(resolveContentPath("blog", "2024/01/01/hello.mdx", root)).toBe(
-        "blog/2024/01/01/hello.mdx",
+        "src/content/blog/2024/01/01/hello.mdx",
       );
     } finally {
       rmSync(root, { recursive: true, force: true });

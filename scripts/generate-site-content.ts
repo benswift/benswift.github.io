@@ -56,14 +56,14 @@ function main() {
     sections.push(`## ${label}\n\n${stripMdxSyntax(content)}`);
   }
 
-  const blogFiles = readMarkdownFiles("blog");
+  const blogFiles = readMarkdownFiles("src/content/blog");
   const posts: string[] = [];
 
   for (const file of blogFiles) {
     const raw = fs.readFileSync(file, "utf8");
     const { data } = matter(raw);
     if (data.published === false) continue;
-    const slug = file.replace(ROOT + "/blog/", "").replace(/\.(md|mdx)$/, "");
+    const slug = file.replace(ROOT + "/src/content/blog/", "").replace(/\.(md|mdx)$/, "");
     const date = slug.split("/").slice(0, 3).join("-");
     const tags = formatTags(data.tags);
     posts.push(`- ${data.title} (${date})${tags ? ` [${tags}]` : ""}`);
