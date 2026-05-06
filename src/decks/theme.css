@@ -1,6 +1,9 @@
 /* Decks use the ANU theme from astro-theme-anu, scoped to the deck route only.
    The site itself is unaffected — this CSS is only loaded on /decks/* pages
-   via astromotion's virtual:astromotion/theme alias. */
+   via astromotion's virtual:astromotion/theme alias.
 
-@import "@fontsource-variable/public-sans";
+   Public Sans is loaded by Astro's fonts API (see astro.config.ts) and
+   injected into the deck <head> via astromotion's fontVariables option;
+   astro-theme-anu's deck.css picks it up via var(--font-public-sans, ...). */
+
 @import "astro-theme-anu/styles/deck.css";

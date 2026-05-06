@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import mdx from "@astrojs/mdx";
 import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
@@ -21,6 +21,29 @@ export default defineConfig({
     // "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
     // "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
   },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Atkinson Hyperlegible Next",
+      cssVariable: "--font-atkinson-next",
+      weights: ["200 800"],
+      styles: ["normal", "italic"],
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Atkinson Hyperlegible Mono",
+      cssVariable: "--font-atkinson-mono",
+      weights: ["200 800"],
+      styles: ["normal", "italic"],
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Public Sans",
+      cssVariable: "--font-public-sans",
+      weights: ["100 900"],
+      styles: ["normal", "italic"],
+    },
+  ],
   integrations: [
     mdx({ remarkPlugins: deckRemarkPlugins }),
     svelte(),
@@ -29,6 +52,7 @@ export default defineConfig({
     astromotion({
       theme: "./src/decks/theme.css",
       codeTheme: "github-dark",
+      fontVariables: ["--font-public-sans"],
     }),
   ],
   vite: {

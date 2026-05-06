@@ -25,10 +25,11 @@
   --text-2: #aaa;
   --text-3: #777;
   --font-family-base:
-    "Atkinson Hyperlegible Next Variable", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
-    oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    var(--font-atkinson-next, "Atkinson Hyperlegible Next"), -apple-system, blinkmacsystemfont,
+    "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-family-mono:
-    "Atkinson Hyperlegible Mono Variable", consolas, monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    var(--font-atkinson-mono, "Atkinson Hyperlegible Mono"), consolas, monaco, "Andale Mono",
+    "Ubuntu Mono", monospace;
 
   color-scheme: dark;
 }
