@@ -3,7 +3,7 @@ import mdx from "@astrojs/mdx";
 import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
 import brokenLinksChecker from "astro-broken-links-checker";
-import { astromotion } from "astromotion";
+import { astromotion, deckRemarkPlugins } from "astromotion";
 import remarkSmartypants from "remark-smartypants";
 import remarkDirective from "remark-directive";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -16,11 +16,13 @@ export default defineConfig({
   site: "https://benswift.me",
   trailingSlash: "always",
   redirects: {
-    "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
-    "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
+    // TODO: re-enable per-deck as old decks are ported to the ANU theme.
+    // See src/decks-archive/PORTING.md.
+    // "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
+    // "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
   },
   integrations: [
-    mdx(),
+    mdx({ remarkPlugins: deckRemarkPlugins }),
     svelte(),
     sitemap(),
     brokenLinksChecker({ checkExternalLinks: false }),
