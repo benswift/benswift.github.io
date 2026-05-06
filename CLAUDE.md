@@ -71,21 +71,49 @@ Never put blank lines inside inline HTML blocks (e.g. `<svg>`, `<div>`) in
 markdown files. CommonMark treats a blank line as the end of an HTML block,
 causing the rest of the HTML to be parsed as markdown and silently dropped.
 
-## SVG illustration style
+## Image pipeline
+
+The site uses Astro's image pipeline (`astro:assets`) for everything that's
+authored or referenced from `src/`. Files in `src/` go through optimization
+(content hashing, format negotiation, `width`/`height` injection); files in
+`public/` are served as-is.
+
+### Hero / OG images
+
+The blog post route auto-discovers a hero by slug from
+`src/assets/heroes/<YYYY-MM-DD-slug>.png`. To override per-post, set
+`image: ./my-image.svg` in frontmatter (path is relative to the post file,
+resolved via the `image()` schema helper). The resolved hero is used both as
+the `og:image` and as input to the canvas hero on PostLayout.
+
+Hero SVGs use `viewBox="0 0 2844 1600"` (wide aspect ratio) with no
+`width`/`height` attributes. Validate with
+`svg_validate.py --fix --palette "#be2edd,#3b82f6,#f59e0b,#1a1a1a,#e0e0e0,#9b1fb8"`.
+
+### Inline post images
+
+Two patterns, by file location:
+
+1. **Colocated with the post** (preferred for post-specific images): drop the
+   image next to the `.md`/`.mdx` file in `src/content/blog/YYYY/MM/DD/`, then
+   reference with markdown syntax `![alt](./image.webp)`. Astro processes the
+   relative path through the image pipeline.
+2. **Shared via `<Picture>`**: for images used across multiple posts, add to
+   `src/assets/post-images/<subdir>/<file>` and reference from `.mdx` files via
+   `<Picture file="<subdir>/<file>" alt="..." />`. The component does an
+   `import.meta.glob` lookup and renders `<Image>` (or raw `<img>` for animated
+   GIFs).
+
+Don't put new images in `public/assets/images/` — they'll skip the pipeline.
+
+### SVG illustration style
 
 Palette: #be2edd #3b82f6 #f59e0b #1a1a1a #e0e0e0
 Prompt suffix: flowing Bézier curves, layered organic forms on dark background
-References: public/assets/images/posts/
-
-Hero SVGs use `viewBox="0 0 2844 1600"` (wide aspect ratio) with no
-`width`/`height` attributes. Store in `public/assets/images/posts/` and
-reference via the `image` frontmatter field (e.g.
-`image: /assets/images/posts/my-illustration.svg`). The same path serves both
-the rendered hero in PostLayout and the og:image metadata.
+References: existing illustrations in `src/assets/heroes/`
 
 Illustrations should be tangentially inspired by the post content --- not
-literal diagrams, but visual metaphors that reward a second look. Validate with
-`svg_validate.py --fix --palette "#be2edd,#3b82f6,#f59e0b,#1a1a1a,#e0e0e0,#9b1fb8"`.
+literal diagrams, but visual metaphors that reward a second look.
 
 ## Creating new posts
 
