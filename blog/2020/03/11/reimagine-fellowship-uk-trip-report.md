@@ -44,7 +44,7 @@ few trip highlights:
 
 - Visiting Quintin Cutts and the
   [Centre for Computing Science Education](https://www.gla.ac.uk/schools/computing/research/researchsections/cseducation/)
-  at Glasgow University to [present](/talks/designing-the-ccc-studio) & workshop
+  at Glasgow University to [present](/talks/designing-the-ccc-studio/) & workshop
   ideas for the c/c/c studio outreach course, think strategically about building
   up our (ANU RSCS's) capability in CS education research and partnering with
   them on improving the learning experience for all our existing students, and
