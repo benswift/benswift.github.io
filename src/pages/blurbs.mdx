@@ -1,9 +1,11 @@
 ---
 layout: ../layouts/PageLayout.astro
 title: Blurbs
-relativePath: blurbs.md
+relativePath: src/pages/blurbs.mdx
 image: /assets/images/posts/blurbs.svg
 ---
+
+import Picture from "@/components/Picture.astro";
 
 Here's a list of bios/blurbs that you could use in your glossy brochures. I'm
 open to being described/introduced in new ways, too---although if you're going
@@ -126,25 +128,43 @@ they play diligently and tirelessly for your listening pleasure.
 
 ## Headshots & promo images
 
-![Ben line drawing headshot](/assets/images/headshots/headshot-line-drawing.webp)
+<Picture file="headshots/headshot-line-drawing.webp" alt="Ben line drawing headshot" />
 
-![Ben headshot with a pink shirt and artwork in the background](/assets/images/headshots/headshot-pink-shirt.webp)
-_Photo: Joy Swift_
+<Picture
+  file="headshots/headshot-pink-shirt.webp"
+  alt="Ben headshot with a pink shirt and artwork in the background"
+  credit="Joy Swift"
+/>
 
-![Ben headshot near the stairwell in the ANU Birch building](/assets/images/headshots/headshot-birch.webp)
-_Photo: Andrew Meares_
+<Picture
+  file="headshots/headshot-birch.webp"
+  alt="Ben headshot near the stairwell in the ANU Birch building"
+  credit="Andrew Meares"
+/>
 
-![Ben headshot (wide) near the stairwell in the ANU Birch building](/assets/images/headshots/headshot-birch-wide.webp)
-_Photo: Andrew Meares_
+<Picture
+  file="headshots/headshot-birch-wide.webp"
+  alt="Ben headshot (wide) near the stairwell in the ANU Birch building"
+  credit="Andrew Meares"
+/>
 
-![Ben black-and-white headshot inside the ANU Birch building](/assets/images/headshots/headshot-bw.webp)
-_Photo: Andrew Meares_
+<Picture
+  file="headshots/headshot-bw.webp"
+  alt="Ben black-and-white headshot inside the ANU Birch building"
+  credit="Andrew Meares"
+/>
 
-![Ben in an ANU T-shirt](/assets/images/headshots/headshot-anu-tshirt.webp)
+<Picture file="headshots/headshot-anu-tshirt.webp" alt="Ben in an ANU T-shirt" />
 
-![Ben headshot in the garden](/assets/images/headshots/headshot-garden-wide.webp)
-_Photo: Jeanine Wong_
+<Picture
+  file="headshots/headshot-garden-wide.webp"
+  alt="Ben headshot in the garden"
+  credit="Jeanine Wong"
+/>
 
-![Ben outside on the ANU campus in autumn](/assets/images/headshots/headshot-autumn.webp)
+<Picture file="headshots/headshot-autumn.webp" alt="Ben outside on the ANU campus in autumn" />
 
-![Ben outside on the ANU campus in autumn](/assets/images/headshots/headshot-autumn-wide.webp)
+<Picture
+  file="headshots/headshot-autumn-wide.webp"
+  alt="Ben outside on the ANU campus in autumn"
+/>
