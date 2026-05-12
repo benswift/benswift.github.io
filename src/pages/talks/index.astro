@@ -11,8 +11,8 @@ const decksDir = path.resolve("src/decks")
 const deckSlugs = new Set(
   fs
     .readdirSync(decksDir)
-    .filter((f) => f.endsWith(".deck.md"))
-    .map((f) => f.replace(/\.deck\.md$/, "")),
+    .filter((f) => /\.deck\.mdx?$/.test(f))
+    .map((f) => f.replace(/\.deck\.mdx?$/, "")),
 )
 
 const talks = allTalks

@@ -6,9 +6,9 @@ import sitemap from "@astrojs/sitemap";
 import brokenLinksChecker from "astro-broken-links-checker";
 import { astromotion, deckRemarkPlugins } from "astromotion";
 import remarkSmartypants from "remark-smartypants";
-import remarkDirective from "remark-directive";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
+import { remarkContainerDirective } from "./src/plugins/remark-container-directive";
 import { remarkContainers } from "./src/plugins/remark-containers";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
@@ -23,7 +23,7 @@ import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 // it always calls the plugin with defaults).
 const siteRemarkPlugins: PluggableList = [
   [remarkSmartypants, { dashes: "oldschool" }],
-  remarkDirective,
+  remarkContainerDirective,
   remarkContainers,
 ];
 
@@ -31,10 +31,8 @@ export default defineConfig({
   site: "https://benswift.me",
   trailingSlash: "always",
   redirects: {
-    // TODO: re-enable per-deck as old decks are ported to the ANU theme.
-    // See src/decks-archive/PORTING.md.
-    // "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
-    // "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
+    "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
+    "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
   },
   fonts: [
     {

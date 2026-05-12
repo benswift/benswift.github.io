@@ -7,3 +7,14 @@
    astro-theme-anu's deck.css picks it up via var(--font-public-sans, ...). */
 
 @import "astro-theme-anu/styles/deck.css";
+
+/* Quote slides: dim the background image so quote text stays legible. */
+.reveal .slides section.quote .slide-bg {
+  filter: blur(3px) brightness(0.35);
+}
+
+/* `talk` modifier on impact slides: ANU teal instead of gold. Used for
+   discussion-break slides (the old `talk-box` pattern from Jekyll decks). */
+.reveal .slides section.impact.talk {
+  background: var(--anu-teal);
+}
