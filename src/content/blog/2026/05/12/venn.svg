@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="venn-title">
+  <title id="venn-title">Three-circle Venn diagram showing Conscious, Intelligent, and Articulate as overlapping sets, with examples in each region.</title>
+  <defs>
+    <style>
+      .set-label { font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 60px; }
+      .region { font-family: system-ui, -apple-system, sans-serif; font-size: 38px; fill: #e0e0e0; }
+      .region-key { font-family: system-ui, -apple-system, sans-serif; font-size: 44px; font-weight: 700; fill: #ffffff; }
+      .region-empty { font-family: system-ui, -apple-system, sans-serif; font-size: 30px; fill: #999999; font-style: italic; }
+    </style>
+  </defs>
+  <rect width="1600" height="1200" fill="#1c1a1d"/>
+  <circle cx="800" cy="415" r="320" fill="#be2edd" fill-opacity="0.26" stroke="#be2edd" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="640" cy="692" r="320" fill="#3b82f6" fill-opacity="0.26" stroke="#3b82f6" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="960" cy="692" r="320" fill="#f59e0b" fill-opacity="0.26" stroke="#f59e0b" stroke-width="3" stroke-opacity="0.6"/>
+  <text class="set-label" text-anchor="middle" x="800" y="60" fill="#be2edd">Conscious</text>
+  <text class="set-label" text-anchor="middle" x="440" y="1100" fill="#3b82f6">Intelligent</text>
+  <text class="set-label" text-anchor="middle" x="1160" y="1100" fill="#f59e0b">Articulate</text>
+  <text class="region-empty" text-anchor="middle" x="800" y="215">(rare)</text>
+  <text class="region" text-anchor="middle" x="640" y="500">dogs, octopuses,</text>
+  <text class="region" text-anchor="middle" x="640" y="540">crows, toddlers</text>
+  <text class="region-empty" text-anchor="middle" x="960" y="525">(empty?)</text>
+  <text class="region-key" text-anchor="middle" x="800" y="615">humans</text>
+  <text class="region" text-anchor="middle" x="460" y="755">chess engines,</text>
+  <text class="region" text-anchor="middle" x="460" y="795">AlphaGo</text>
+  <text class="region-key" text-anchor="middle" x="800" y="785">LLMs</text>
+  <text class="region" text-anchor="middle" x="1140" y="755">ELIZA, parrots,</text>
+  <text class="region" text-anchor="middle" x="1140" y="795">autocomplete</text>
+</svg>
