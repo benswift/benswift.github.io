@@ -8,12 +8,13 @@
   let ctx: CanvasRenderingContext2D | null = null
   let shader: ShaderPad | null = null
   let resizeObserver: ResizeObserver | null = null
-  let tickInterval: number | null = null
+  let rafId: number | null = null
   let prefersReducedMotion = $state(false)
   let fallbackImageUrl = $state("")
 
-  const TARGET_FPS = 12
   const MOBILE_BREAKPOINT = 640
+  const TEXT_UPDATE_FPS = 12
+  const HOVER_RAMP_TIME = 0.12
   const METRICS = {
     mobile: { charWidth: 10, rowPitch: 22, fontSize: 15 },
     desktop: { charWidth: 14, rowPitch: 30, fontSize: 20 },
@@ -39,7 +40,10 @@
   const HEAD_CSS = "rgb(255, 248, 232)"
   const HEAD_GLOW_CSS = "rgba(245, 158, 11, 0.55)"
   const TAIL_CSS = "rgb(216, 94, 244)"
-  const BG_RGBA = "rgba(12, 6, 22, 0.05)"
+  const BG_COLOR = "12, 6, 22"
+  // Trail fade expressed per-second so the visual decay stays constant at any framerate.
+  // Equivalent to the original 0.05 alpha per frame at 12 FPS.
+  const TRAIL_FADE_RATE = 1 - Math.pow(0.95, 12)
   const BURST_DURATION = 1.6
   const BURST_INTERVAL_MIN = 3
   const BURST_INTERVAL_MAX = 13
@@ -72,7 +76,11 @@
   let burstActive = false
   let burstStart = 0
   let nextBurstAt = 0
-  let lastTime = 0
+  let lastTextTime = 0
+  let lastRenderTime = 0
+  let mouseUv: [number, number] = [-2, -2]
+  let hoverStrengthCurrent = 0
+  let hoverStrengthTarget = 0
   let activePhrases: string[] = []
 
   const FRAG = `#version 300 es
@@ -87,6 +95,9 @@ uniform float u_burstSlope;
 uniform float u_burstDirection;
 uniform vec3 u_burstColorA;
 uniform vec3 u_burstColorB;
+uniform vec2 u_mouse;
+uniform float u_hoverStrength;
+uniform vec2 u_cellSize;
 out vec4 outColor;
 
 float hash(vec2 p) {
@@ -96,11 +107,25 @@ float hash(vec2 p) {
 void main() {
   vec2 uv = v_uv;
 
+  // Hash-quantised cell swap under the pointer — looks like characters shuffling
+  vec2 sampleUv = uv;
+  float falloff = exp(-distance(uv, u_mouse) * 6.0) * u_hoverStrength;
+  if (falloff > 0.02) {
+    vec2 cellCoord = floor(uv / u_cellSize);
+    float ts = floor(u_time * 7.0);
+    float h1 = hash(cellCoord + ts * 0.137);
+    if (falloff > 0.15 + h1 * 0.55) {
+      float h2 = hash(cellCoord * 1.7 + ts * 0.241);
+      float h3 = hash(cellCoord * 2.3 + ts * 0.413);
+      sampleUv = uv + vec2(floor(h2 * 5.0) - 2.0, floor(h3 * 3.0) - 1.0) * u_cellSize;
+    }
+  }
+
   // Sample the text canvas, then blend in a small chromatic aberration
-  vec3 base = texture(u_text, uv).rgb;
+  vec3 base = texture(u_text, sampleUv).rgb;
   float aberr = 0.0012;
-  float r = texture(u_text, uv + vec2(aberr, 0.0)).r;
-  float b = texture(u_text, uv - vec2(aberr, 0.0)).b;
+  float r = texture(u_text, sampleUv + vec2(aberr, 0.0)).r;
+  float b = texture(u_text, sampleUv - vec2(aberr, 0.0)).b;
   vec3 col = vec3(mix(base.r, r, 0.75), base.g, mix(base.b, b, 0.75));
 
   // Fine horizontal scanlines
@@ -225,16 +250,21 @@ void main() {
     const verticalSlack = Math.max(0, heightPx - rowPitch * 2)
     numRows = Math.max(1, Math.floor(verticalSlack / rowPitch) + 2)
     initRows(performance.now() / 1000)
+
+    if (shader) {
+      shader.updateUniforms({ u_cellSize: [charWidth / widthPx, rowPitch / heightPx] })
+    }
   }
 
-  function advance(now: number) {
+  function updateText(now: number) {
     if (!ctx) return
     const t = now / 1000
-    const dt = lastTime === 0 ? 1 / TARGET_FPS : Math.min(0.25, (now - lastTime) / 1000)
-    lastTime = now
+    const dt = lastTextTime === 0 ? 1 / TEXT_UPDATE_FPS : Math.min(0.25, (now - lastTextTime) / 1000)
+    lastTextTime = now
 
-    // Fade toward bg (trail decay)
-    ctx.fillStyle = BG_RGBA
+    // Fade toward bg (trail decay) — alpha derived from dt so cadence doesn't matter.
+    const trailAlpha = 1 - Math.pow(1 - TRAIL_FADE_RATE, dt)
+    ctx.fillStyle = `rgba(${BG_COLOR}, ${trailAlpha})`
     ctx.fillRect(0, 0, widthPx, heightPx)
 
     ctx.textBaseline = "top"
@@ -282,8 +312,9 @@ void main() {
         row.idleUntil = t + randFloat(1.2, 3.2)
       }
     }
+  }
 
-    // Update burst timing
+  function updateBurst(t: number) {
     if (!burstActive && t >= nextBurstAt) {
       burstActive = true
       burstStart = t
@@ -328,30 +359,77 @@ void main() {
 
   function tick() {
     if (!shader) return
-    const bp = advance(performance.now())
-    shader.updateTextures({ u_text: textCanvas })
+    const now = performance.now()
+    const t = now / 1000
+
+    // Text canvas update + texture upload throttled to TEXT_UPDATE_FPS
+    // (the per-frame cost was almost entirely the texSubImage2D of the whole canvas)
+    if (now - lastTextTime >= 1000 / TEXT_UPDATE_FPS) {
+      updateText(now)
+      shader.updateTextures({ u_text: textCanvas })
+    }
+
+    // Smooth hover strength toward target every render frame
+    const dtRender = lastRenderTime === 0 ? 1 / 60 : Math.min(0.25, (now - lastRenderTime) / 1000)
+    lastRenderTime = now
+    const k = Math.min(1, dtRender / HOVER_RAMP_TIME)
+    hoverStrengthCurrent += (hoverStrengthTarget - hoverStrengthCurrent) * k
+
+    const bp = updateBurst(t)
     shader.updateUniforms({
-      u_burstProgress: bp !== undefined && bp >= 0 ? bp : 0,
-      u_burstActive: bp !== undefined && bp >= 0 ? 1 : 0,
+      u_burstProgress: bp >= 0 ? bp : 0,
+      u_burstActive: bp >= 0 ? 1 : 0,
+      u_mouse: mouseUv,
+      u_hoverStrength: hoverStrengthCurrent,
     })
     shader.step()
   }
 
+  function loop() {
+    tick()
+    rafId = requestAnimationFrame(loop)
+  }
+
   function startLoop() {
-    if (tickInterval !== null) return
-    tickInterval = window.setInterval(tick, 1000 / TARGET_FPS)
+    if (rafId !== null) return
+    rafId = requestAnimationFrame(loop)
   }
 
   function stopLoop() {
-    if (tickInterval !== null) {
-      clearInterval(tickInterval)
-      tickInterval = null
+    if (rafId !== null) {
+      cancelAnimationFrame(rafId)
+      rafId = null
+      lastTextTime = 0
+      lastRenderTime = 0
     }
   }
 
   function onVisibilityChange() {
     if (document.hidden) stopLoop()
     else startLoop()
+  }
+
+  function updatePointerUv(e: PointerEvent) {
+    if (!containerEl) return
+    const rect = containerEl.getBoundingClientRect()
+    mouseUv = [
+      (e.clientX - rect.left) / rect.width,
+      1 - (e.clientY - rect.top) / rect.height,
+    ]
+  }
+
+  function onPointerMove(e: PointerEvent) {
+    updatePointerUv(e)
+    hoverStrengthTarget = 1
+  }
+
+  function onPointerDown(e: PointerEvent) {
+    updatePointerUv(e)
+    hoverStrengthTarget = 1
+  }
+
+  function onPointerLeave() {
+    hoverStrengthTarget = 0
   }
 
   onMount(() => {
@@ -376,12 +454,19 @@ void main() {
     shader.initializeUniform("u_burstDirection", "float", 1)
     shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0]!.a)
     shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b)
+    shader.initializeUniform("u_mouse", "float", mouseUv)
+    shader.initializeUniform("u_hoverStrength", "float", 0)
+    shader.initializeUniform("u_cellSize", "float", [charWidth / widthPx, rowPitch / heightPx])
 
     nextBurstAt = performance.now() / 1000 + 2.5
     startLoop()
 
     document.addEventListener("visibilitychange", onVisibilityChange)
     document.addEventListener("astro:page-load", onPageLoad)
+    containerEl.addEventListener("pointermove", onPointerMove)
+    containerEl.addEventListener("pointerdown", onPointerDown)
+    containerEl.addEventListener("pointerleave", onPointerLeave)
+    containerEl.addEventListener("pointercancel", onPointerLeave)
 
     resizeObserver = new ResizeObserver(() => {
       resize()
@@ -396,6 +481,12 @@ void main() {
   onDestroy(() => {
     document.removeEventListener("visibilitychange", onVisibilityChange)
     document.removeEventListener("astro:page-load", onPageLoad)
+    if (containerEl) {
+      containerEl.removeEventListener("pointermove", onPointerMove)
+      containerEl.removeEventListener("pointerdown", onPointerDown)
+      containerEl.removeEventListener("pointerleave", onPointerLeave)
+      containerEl.removeEventListener("pointercancel", onPointerLeave)
+    }
     stopLoop()
     if (resizeObserver) {
       resizeObserver.disconnect()
