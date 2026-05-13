@@ -81,7 +81,7 @@ authored or referenced from `src/`. Files in `src/` go through optimization
 ### Hero / OG images
 
 The blog post route auto-discovers a hero by slug from
-`src/assets/heroes/<YYYY-MM-DD-slug>.png`. To override per-post, set
+`src/assets/heroes/<YYYY-MM-DD-slug>.avif`. To override per-post, set
 `image: ./my-image.svg` in frontmatter (path is relative to the post file,
 resolved via the `image()` schema helper). The resolved hero is used both as
 the `og:image` and as input to the canvas hero on PostLayout.

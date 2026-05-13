@@ -14,7 +14,7 @@ export interface PublishConfig {
 }
 
 const defaultConfig: PublishConfig = {
-  blogDir: path.resolve(import.meta.dirname, "..", "blog"),
+  blogDir: path.resolve(import.meta.dirname, "..", "src/content/blog"),
   statePath: path.resolve(import.meta.dirname, "..", "atproto-state.json"),
   wellKnownDir: path.resolve(import.meta.dirname, "..", "public", ".well-known"),
   siteUrl: "https://benswift.me",

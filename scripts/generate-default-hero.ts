@@ -1,4 +1,5 @@
 import { execFile, spawn } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
 import { promisify } from "node:util";
@@ -7,7 +8,8 @@ const execFileP = promisify(execFile);
 
 const PREVIEW_PORT = 4399;
 const PREVIEW_URL = `http://localhost:${PREVIEW_PORT}/`;
-const OUTPUT_PATH = path.resolve(import.meta.dirname, "..", "src/assets/og-default.png");
+const TMP_PNG_PATH = path.resolve(import.meta.dirname, "..", "src/assets/og-default.png");
+const OUTPUT_PATH = path.resolve(import.meta.dirname, "..", "src/assets/og-default.avif");
 const SETTLE_MS = 4000;
 
 async function waitForServer(url: string, timeoutMs = 20000) {
@@ -42,7 +44,20 @@ async function main() {
     await ab(["open", PREVIEW_URL]);
     await ab(["wait", "--load", "networkidle"]);
     await ab(["wait", String(SETTLE_MS)]);
-    await ab(["screenshot", ".hero-canvas", OUTPUT_PATH]);
+    await ab(["screenshot", ".hero-canvas", TMP_PNG_PATH]);
+    await execFileP("avifenc", [
+      "-s",
+      "0",
+      "-q",
+      "90",
+      "-y",
+      "444",
+      "-j",
+      "all",
+      TMP_PNG_PATH,
+      OUTPUT_PATH,
+    ]);
+    fs.unlinkSync(TMP_PNG_PATH);
 
     console.log(`Wrote ${OUTPUT_PATH}`);
   } finally {

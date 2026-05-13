@@ -23,7 +23,7 @@ const blog = defineCollection({
       layout: z.string().optional(),
       search: z.boolean().optional(),
       // Optional hero image override. When present, takes precedence over the
-      // auto-discovered src/assets/heroes/<date-slug>.png. Path is resolved
+      // auto-discovered src/assets/heroes/<date-slug>.avif. Path is resolved
       // relative to the post file via Astro's image() helper.
       image: image().optional(),
     }),

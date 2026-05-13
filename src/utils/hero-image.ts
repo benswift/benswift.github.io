@@ -1,8 +1,8 @@
 import type { ImageMetadata } from "astro";
-import defaultHero from "../assets/og-default.png";
+import defaultHero from "../assets/og-default.avif";
 
 const heroImageModules = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/heroes/*.{png,jpg}",
+  "/src/assets/heroes/*.avif",
   { eager: true, import: "default" },
 );
 
@@ -12,7 +12,7 @@ export function resolveHeroImage(
   fallback: ImageMetadata,
 ): ImageMetadata {
   if (!slug) return fallback;
-  const key = `/src/assets/heroes/${slug}.png`;
+  const key = `/src/assets/heroes/${slug}.avif`;
   return map[key] ?? fallback;
 }
 

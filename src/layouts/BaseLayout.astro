@@ -7,7 +7,7 @@ import Nav from "../components/Nav.astro"
 import HeroCanvas from "../components/svelte/HeroCanvas.svelte"
 import { ClientRouter } from "astro:transitions"
 import { SITE_BASELINE_PHRASES } from "../data/hero"
-import defaultHero from "../assets/og-default.png"
+import defaultHero from "../assets/og-default.avif"
 
 interface Props {
   title?: string
@@ -31,8 +31,13 @@ const {
   heroImage = defaultHero,
 } = Astro.props
 
-const resolvedHeroImage = await getImage({ src: heroImage, format: "png" })
-const heroImageUrl = resolvedHeroImage.src
+const ogImage = await getImage({ src: heroImage, format: "png", width: 1200 })
+const heroFallbackImage = await getImage({
+  src: heroImage,
+  format: "avif",
+  width: 1280,
+  quality: 50,
+})
 const heroPhrasesContent = phrases.join("|")
 ---
 
@@ -43,13 +48,13 @@ const heroPhrasesContent = phrases.join("|")
     <Head
       title={title}
       description={description}
-      image={image ?? heroImageUrl}
+      image={image ?? ogImage.src}
       isPost={isPost}
       date={date}
       atUri={atUri}
     />
     <meta name="hero-phrases" content={heroPhrasesContent} />
-    <meta name="hero-image-url" content={heroImageUrl} />
+    <meta name="hero-image-url" content={heroFallbackImage.src} />
     <ClientRouter />
   </head>
   <body>

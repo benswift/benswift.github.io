@@ -13,7 +13,7 @@ const PREVIEW_PORT = 4399;
 const PREVIEW_BASE = `http://localhost:${PREVIEW_PORT}`;
 const HEROES_DIR = path.resolve(import.meta.dirname, "..", "src/assets/heroes");
 const STATE_PATH = path.resolve(import.meta.dirname, "..", "atproto-state.json");
-const BLOG_DIR = path.resolve(import.meta.dirname, "..", "blog");
+const BLOG_DIR = path.resolve(import.meta.dirname, "..", "src/content/blog");
 const SETTLE_MS = 4000;
 
 async function waitForServer(url: string, timeoutMs = 20000) {
@@ -68,13 +68,16 @@ async function main() {
     for (const post of workList) {
       const slug = pathToRkey(post.path);
       const url = `${PREVIEW_BASE}${post.path}/`;
-      const out = path.join(HEROES_DIR, `${slug}.png`);
+      const tmpPng = path.join(HEROES_DIR, `${slug}.png`);
+      const out = path.join(HEROES_DIR, `${slug}.avif`);
       console.log(`→ ${url} → ${out}`);
 
       await ab(["open", url]);
       await ab(["wait", "--load", "networkidle"]);
       await ab(["wait", String(SETTLE_MS)]);
-      await ab(["screenshot", ".hero-canvas", out]);
+      await ab(["screenshot", ".hero-canvas", tmpPng]);
+      await execFileP("avifenc", ["-s", "0", "-q", "90", "-y", "444", "-j", "all", tmpPng, out]);
+      fs.unlinkSync(tmpPng);
     }
 
     console.log(`Generated ${workList.length} hero images.`);
