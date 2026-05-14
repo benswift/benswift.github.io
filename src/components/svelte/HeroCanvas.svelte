@@ -107,9 +107,11 @@ float hash(vec2 p) {
 void main() {
   vec2 uv = v_uv;
 
-  // Hash-quantised cell swap under the pointer — looks like characters shuffling
+  // Hash-quantised cell swap + colour warp under the pointer — characters shuffle and shift hue
   vec2 sampleUv = uv;
-  float falloff = exp(-distance(uv, u_mouse) * 6.0) * u_hoverStrength;
+  vec3 hoverTint = vec3(0.0);
+  float hoverMix = 0.0;
+  float falloff = exp(-distance(uv, u_mouse) * 8.0) * u_hoverStrength;
   if (falloff > 0.02) {
     vec2 cellCoord = floor(uv / u_cellSize);
     float ts = floor(u_time * 7.0);
@@ -119,6 +121,11 @@ void main() {
       float h3 = hash(cellCoord * 2.3 + ts * 0.413);
       sampleUv = uv + vec2(floor(h2 * 5.0) - 2.0, floor(h3 * 3.0) - 1.0) * u_cellSize;
     }
+    float h4 = hash(cellCoord * 0.83 + ts * 0.527);
+    if (h4 < 0.333) hoverTint = vec3(1.0, 0.25, 0.85);      // magenta
+    else if (h4 < 0.666) hoverTint = vec3(0.30, 0.75, 1.0); // cyan-blue
+    else hoverTint = vec3(1.0, 0.65, 0.15);                 // amber
+    hoverMix = clamp(falloff * 1.3, 0.0, 0.85);
   }
 
   // Sample the text canvas, then blend in a small chromatic aberration
@@ -127,6 +134,13 @@ void main() {
   float r = texture(u_text, sampleUv + vec2(aberr, 0.0)).r;
   float b = texture(u_text, sampleUv - vec2(aberr, 0.0)).b;
   vec3 col = vec3(mix(base.r, r, 0.75), base.g, mix(base.b, b, 0.75));
+
+  // Per-cell hue warp: preserve luminance, mix toward palette accent
+  if (hoverMix > 0.0) {
+    float lum = dot(col, vec3(0.299, 0.587, 0.114));
+    vec3 tinted = hoverTint * (0.08 + lum * 1.9);
+    col = mix(col, tinted, hoverMix);
+  }
 
   // Fine horizontal scanlines
   float scan = 0.93 + 0.07 * sin(uv.y * u_resolution.y * 2.2);
