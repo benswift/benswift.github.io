@@ -19,13 +19,13 @@ importers:
         version: 1.1.0
       astro-theme-anu:
         specifier: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#main&path:/packages/astro-theme-anu
-        version: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#1e38c640a4bb9ed648f2e14233f20b93460d06be&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/104d7778bb9ac41bf30796c22aa5b4ffbf40f68f(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)
+        version: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#1e38c640a4bb9ed648f2e14233f20b93460d06be&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/b43d7f23c1bf429bb967b855225c20ae088cd7d3(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)
       astromotion:
         specifier: github:benswift/astromotion
-        version: https://codeload.github.com/benswift/astromotion/tar.gz/104d7778bb9ac41bf30796c22aa5b4ffbf40f68f(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))
+        version: https://codeload.github.com/benswift/astromotion/tar.gz/b43d7f23c1bf429bb967b855225c20ae088cd7d3(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))
       perceptron-apparatus:
         specifier: github:ANUcybernetics/perceptron-apparatus
-        version: https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/4a84b7b915aec2847499397c0bb1856689c8f961
+        version: https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0ceabcdde59fc5d4bda347a531e1dbb1b2b5fec6
       remark-smartypants:
         specifier: ^3.0.2
         version: 3.0.2
@@ -50,7 +50,7 @@ importers:
         version: 3.7.2
       '@astrojs/svelte':
         specifier: ^8.1.0
-        version: 8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)
+        version: 8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)
       '@atproto/api':
         specifier: ^0.19.11
         version: 0.19.11
@@ -127,11 +127,11 @@ importers:
         specifier: ^40.0.0
         version: 40.0.0(stylelint@17.9.0(typescript@5.9.3))
       svelte:
-        specifier: ^5.55.5
-        version: 5.55.5(@typescript-eslint/types@8.58.2)
+        specifier: ^5.55.7
+        version: 5.55.7(@typescript-eslint/types@8.58.2)
       svelte-check:
         specifier: ^4.4.6
-        version: 4.4.6(picomatch@4.0.4)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(typescript@5.9.3)
+        version: 4.4.6(picomatch@4.0.4)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(typescript@5.9.3)
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
@@ -1447,6 +1447,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@vitest/expect@4.1.5':
     resolution: {integrity: sha512-PWBaRY5JoKuRnHlUHfpV/KohFylaDZTupcXN1H9vYryNLOnitSw60Mw9IAE2r67NbwwzBw/Cc/8q9BK3kIX8Kw==}
@@ -1608,9 +1609,9 @@ packages:
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
-  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/104d7778bb9ac41bf30796c22aa5b4ffbf40f68f:
-    resolution: {tarball: https://codeload.github.com/benswift/astromotion/tar.gz/104d7778bb9ac41bf30796c22aa5b4ffbf40f68f}
-    version: 0.3.0
+  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/b43d7f23c1bf429bb967b855225c20ae088cd7d3:
+    resolution: {tarball: https://codeload.github.com/benswift/astromotion/tar.gz/b43d7f23c1bf429bb967b855225c20ae088cd7d3}
+    version: 0.3.1
     peerDependencies:
       '@astrojs/mdx': ^5.0.0
       astro: ^6.0.0
@@ -1854,6 +1855,9 @@ packages:
   devalue@5.7.1:
     resolution: {integrity: sha512-MUbZ586EgQqdRnC4yDrlod3BEdyvE4TapGYHMW2CiaW+KkkFmWEFqBUaLltEZCGi0iFXCEjRF0OjF0DV2QHjOA==}
 
+  devalue@5.8.1:
+    resolution: {integrity: sha512-4CXDYRBGqN+57wVJkuXBYmpAVUSg3L6JAQa/DFqm238G73E1wuyc/JhGQJzN7vUf/CMphYau2zXbfWzDR5aTEw==}
+
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
@@ -2013,8 +2017,8 @@ packages:
     resolution: {integrity: sha512-Ap6G0WQwcU/LHsvLwON1fAQX9Zp0A2Y6Y/cJBl9r/JbW90Zyg4/zbG6zzKa2OTALELarYHmKu0GhpM5EO+7T0g==}
     engines: {node: '>=0.10'}
 
-  esrap@2.2.5:
-    resolution: {integrity: sha512-/yLB1538mag+dn0wsePTe8C0rDIjUOaJpMs2McodSzmM2msWcZsBSdRtg6HOBt0A/r82BN+Md3pgwSc/uWt2Ig==}
+  esrap@2.2.8:
+    resolution: {integrity: sha512-MPweq2EvEGj8jwOI7Hgycw/QIHzqA1EbAM8lG7p+FBfZbZq/hQ6h3AMsqnu/djzisH1KVWNzbb7LSgIVtMlPSg==}
     peerDependencies:
       '@typescript-eslint/types': ^8.2.0
     peerDependenciesMeta:
@@ -3011,8 +3015,8 @@ packages:
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
 
-  perceptron-apparatus@https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/4a84b7b915aec2847499397c0bb1856689c8f961:
-    resolution: {tarball: https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/4a84b7b915aec2847499397c0bb1856689c8f961}
+  perceptron-apparatus@https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0ceabcdde59fc5d4bda347a531e1dbb1b2b5fec6:
+    resolution: {tarball: https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0ceabcdde59fc5d4bda347a531e1dbb1b2b5fec6}
     version: 0.1.0
 
   piccolore@0.1.3:
@@ -3395,8 +3399,8 @@ packages:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
 
-  svelte@5.55.5:
-    resolution: {integrity: sha512-2uCs/LZ9us+AktdzYJM8OcxQ8qnPS1kpaO7syGT/MgO+6Qr1Ybl+TqPq+97u7PHqmmMlye5ZkoyXONy5mjjAbw==}
+  svelte@5.55.7:
+    resolution: {integrity: sha512-ymI5ykLPwIHW839E053FQbI1G+jnRFJEw3Kv5Y4njixVWywQBx+NUFpkkKyk5LIb36Fg9DVXSYpqiGekLD0hyw==}
     engines: {node: '>=18'}
 
   svg-tags@1.0.0:
@@ -4120,12 +4124,12 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.3.6
 
-  '@astrojs/svelte@8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.3)':
+  '@astrojs/svelte@8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.3)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
+      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
       astro: 6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)
-      svelte: 5.55.5(@typescript-eslint/types@8.58.2)
-      svelte2tsx: 0.7.53(svelte@5.55.5(@typescript-eslint/types@8.58.2))(typescript@5.9.3)
+      svelte: 5.55.7(@typescript-eslint/types@8.58.2)
+      svelte2tsx: 0.7.53(svelte@5.55.7(@typescript-eslint/types@8.58.2))(typescript@5.9.3)
       typescript: 5.9.3
       vite: 7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.3)
       vitefu: 1.1.3(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
@@ -4142,12 +4146,12 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/svelte@8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)':
+  '@astrojs/svelte@8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
+      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
       astro: 6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)
-      svelte: 5.55.5(@typescript-eslint/types@8.58.2)
-      svelte2tsx: 0.7.53(svelte@5.55.5(@typescript-eslint/types@8.58.2))(typescript@5.9.3)
+      svelte: 5.55.7(@typescript-eslint/types@8.58.2)
+      svelte2tsx: 0.7.53(svelte@5.55.7(@typescript-eslint/types@8.58.2))(typescript@5.9.3)
       typescript: 5.9.3
       vite: 7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4)
       vitefu: 1.1.3(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
@@ -4651,7 +4655,7 @@ snapshots:
 
   '@mdx-js/mdx@3.1.1':
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
       '@types/mdx': 2.0.13
@@ -4836,7 +4840,7 @@ snapshots:
 
   '@rollup/pluginutils@5.3.0(rollup@4.60.1)':
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       estree-walker: 2.0.2
       picomatch: 4.0.4
     optionalDependencies:
@@ -4974,20 +4978,20 @@ snapshots:
     dependencies:
       acorn: 8.16.0
 
-  '@sveltejs/vite-plugin-svelte-inspector@5.0.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4)))(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))':
+  '@sveltejs/vite-plugin-svelte-inspector@5.0.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4)))(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
+      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
       obug: 2.1.1
-      svelte: 5.55.5(@typescript-eslint/types@8.58.2)
+      svelte: 5.55.7(@typescript-eslint/types@8.58.2)
       vite: 7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4)
 
-  '@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))':
+  '@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 5.0.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4)))(svelte@5.55.5(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
+      '@sveltejs/vite-plugin-svelte-inspector': 5.0.2(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4)))(svelte@5.55.7(@typescript-eslint/types@8.58.2))(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
       deepmerge: 4.3.1
       magic-string: 0.30.21
       obug: 2.1.1
-      svelte: 5.55.5(@typescript-eslint/types@8.58.2)
+      svelte: 5.55.7(@typescript-eslint/types@8.58.2)
       vite: 7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4)
       vitefu: 1.1.3(vite@7.3.2(@types/node@25.6.0)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.4))
 
@@ -5008,7 +5012,7 @@ snapshots:
 
   '@types/estree-jsx@1.0.5':
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
 
   '@types/estree@1.0.8': {}
 
@@ -5296,11 +5300,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-theme-anu@git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#1e38c640a4bb9ed648f2e14233f20b93460d06be&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/104d7778bb9ac41bf30796c22aa5b4ffbf40f68f(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3):
+  astro-theme-anu@git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#1e38c640a4bb9ed648f2e14233f20b93460d06be&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/b43d7f23c1bf429bb967b855225c20ae088cd7d3(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3):
     dependencies:
       '@astro-community/astro-embed-youtube': 0.5.10
       '@astrojs/mdx': 5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))
-      '@astrojs/svelte': 8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.3)
+      '@astrojs/svelte': 8.1.0(@types/node@25.6.0)(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))(lightningcss@1.32.0)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.3)
       '@iconify-json/iconoir': 1.2.11
       '@types/jsdom': 28.0.1
       astro: 6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)
@@ -5316,11 +5320,11 @@ snapshots:
       remark-custom-heading-id: 2.0.0
       remark-directive: 4.0.0
       remark-smartypants: 3.0.2
-      svelte: 5.55.5(@typescript-eslint/types@8.58.2)
+      svelte: 5.55.7(@typescript-eslint/types@8.58.2)
       unist-util-visit: 5.1.0
       yaml: 2.8.3
     optionalDependencies:
-      astromotion: https://codeload.github.com/benswift/astromotion/tar.gz/104d7778bb9ac41bf30796c22aa5b4ffbf40f68f(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))
+      astromotion: https://codeload.github.com/benswift/astromotion/tar.gz/b43d7f23c1bf429bb967b855225c20ae088cd7d3(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))
       pagefind: 1.5.2
     transitivePeerDependencies:
       - '@noble/hashes'
@@ -5430,7 +5434,7 @@ snapshots:
       - uploadthing
       - yaml
 
-  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/104d7778bb9ac41bf30796c22aa5b4ffbf40f68f(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)):
+  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/b43d7f23c1bf429bb967b855225c20ae088cd7d3(@astrojs/mdx@5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)))(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4)):
     dependencies:
       '@astrojs/mdx': 5.0.4(astro@6.2.1(@types/node@25.6.0)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.4))
       '@qrgrid/core': 0.2.4
@@ -5659,6 +5663,8 @@ snapshots:
 
   devalue@5.7.1: {}
 
+  devalue@5.8.1: {}
+
   devlop@1.1.0:
     dependencies:
       dequal: 2.0.3
@@ -5860,7 +5866,7 @@ snapshots:
     dependencies:
       estraverse: 5.3.0
 
-  esrap@2.2.5(@typescript-eslint/types@8.58.2):
+  esrap@2.2.8(@typescript-eslint/types@8.58.2):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
     optionalDependencies:
@@ -5874,7 +5880,7 @@ snapshots:
 
   estree-util-attach-comments@3.0.0:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
 
   estree-util-build-jsx@3.0.1:
     dependencies:
@@ -5887,7 +5893,7 @@ snapshots:
 
   estree-util-scope@1.0.0:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       devlop: 1.1.0
 
   estree-util-to-js@2.0.0:
@@ -5905,7 +5911,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
 
   esutils@2.0.3: {}
 
@@ -6155,7 +6161,7 @@ snapshots:
 
   hast-util-to-estree@3.1.3:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
       comma-separated-tokens: 2.0.3
@@ -6190,7 +6196,7 @@ snapshots:
 
   hast-util-to-jsx-runtime@2.3.6:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/hast': 3.0.4
       '@types/unist': 3.0.3
       comma-separated-tokens: 2.0.3
@@ -6342,7 +6348,7 @@ snapshots:
 
   is-reference@3.0.3:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
 
   is-wsl@3.1.1:
     dependencies:
@@ -6823,7 +6829,7 @@ snapshots:
 
   micromark-extension-mdx-expression@3.0.1:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       devlop: 1.1.0
       micromark-factory-mdx-expression: 2.0.3
       micromark-factory-space: 2.0.1
@@ -6834,7 +6840,7 @@ snapshots:
 
   micromark-extension-mdx-jsx@3.0.2:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       micromark-factory-mdx-expression: 2.0.3
@@ -6851,7 +6857,7 @@ snapshots:
 
   micromark-extension-mdxjs-esm@3.0.0:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.3
       micromark-util-character: 2.1.1
@@ -6887,7 +6893,7 @@ snapshots:
 
   micromark-factory-mdx-expression@2.0.3:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       devlop: 1.1.0
       micromark-factory-space: 2.0.1
       micromark-util-character: 2.1.1
@@ -6955,7 +6961,7 @@ snapshots:
 
   micromark-util-events-to-acorn@2.0.3:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/unist': 3.0.3
       devlop: 1.1.0
       estree-util-visit: 2.0.0
@@ -7260,7 +7266,7 @@ snapshots:
 
   pend@1.2.0: {}
 
-  perceptron-apparatus@https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/4a84b7b915aec2847499397c0bb1856689c8f961: {}
+  perceptron-apparatus@https://codeload.github.com/ANUcybernetics/perceptron-apparatus/tar.gz/0ceabcdde59fc5d4bda347a531e1dbb1b2b5fec6: {}
 
   piccolore@0.1.3: {}
 
@@ -7330,7 +7336,7 @@ snapshots:
 
   recma-build-jsx@1.0.0:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       estree-util-build-jsx: 3.0.1
       vfile: 6.0.3
 
@@ -7345,14 +7351,14 @@ snapshots:
 
   recma-parse@1.0.0:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       esast-util-from-js: 2.0.1
       unified: 11.0.5
       vfile: 6.0.3
 
   recma-stringify@1.0.0:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       estree-util-to-js: 2.0.0
       unified: 11.0.5
       vfile: 6.0.3
@@ -7390,7 +7396,7 @@ snapshots:
 
   rehype-recma@1.0.0:
     dependencies:
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/hast': 3.0.4
       hast-util-to-estree: 3.1.3
     transitivePeerDependencies:
@@ -7770,39 +7776,39 @@ snapshots:
       has-flag: 5.0.1
       supports-color: 10.2.2
 
-  svelte-check@4.4.6(picomatch@4.0.4)(svelte@5.55.5(@typescript-eslint/types@8.58.2))(typescript@5.9.3):
+  svelte-check@4.4.6(picomatch@4.0.4)(svelte@5.55.7(@typescript-eslint/types@8.58.2))(typescript@5.9.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       chokidar: 4.0.3
       fdir: 6.5.0(picomatch@4.0.4)
       picocolors: 1.1.1
       sade: 1.8.1
-      svelte: 5.55.5(@typescript-eslint/types@8.58.2)
+      svelte: 5.55.7(@typescript-eslint/types@8.58.2)
       typescript: 5.9.3
     transitivePeerDependencies:
       - picomatch
 
-  svelte2tsx@0.7.53(svelte@5.55.5(@typescript-eslint/types@8.58.2))(typescript@5.9.3):
+  svelte2tsx@0.7.53(svelte@5.55.7(@typescript-eslint/types@8.58.2))(typescript@5.9.3):
     dependencies:
       dedent-js: 1.0.1
       scule: 1.3.0
-      svelte: 5.55.5(@typescript-eslint/types@8.58.2)
+      svelte: 5.55.7(@typescript-eslint/types@8.58.2)
       typescript: 5.9.3
 
-  svelte@5.55.5(@typescript-eslint/types@8.58.2):
+  svelte@5.55.7(@typescript-eslint/types@8.58.2):
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.5.5
       '@sveltejs/acorn-typescript': 1.0.9(acorn@8.16.0)
-      '@types/estree': 1.0.8
+      '@types/estree': 1.0.9
       '@types/trusted-types': 2.0.7
       acorn: 8.16.0
       aria-query: 5.3.1
       axobject-query: 4.1.0
       clsx: 2.1.1
-      devalue: 5.7.1
+      devalue: 5.8.1
       esm-env: 1.2.2
-      esrap: 2.2.5(@typescript-eslint/types@8.58.2)
+      esrap: 2.2.8(@typescript-eslint/types@8.58.2)
       is-reference: 3.0.3
       locate-character: 3.0.0
       magic-string: 0.30.21
