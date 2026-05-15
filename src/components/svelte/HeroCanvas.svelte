@@ -111,7 +111,8 @@ void main() {
   vec2 sampleUv = uv;
   vec3 hoverTint = vec3(0.0);
   float hoverMix = 0.0;
-  float falloff = exp(-distance(uv, u_mouse) * 8.0) * u_hoverStrength;
+  vec2 hoverDelta = (uv - u_mouse) * u_resolution / min(u_resolution.x, u_resolution.y);
+  float falloff = exp(-length(hoverDelta) * 8.0) * u_hoverStrength;
   if (falloff > 0.02) {
     vec2 cellCoord = floor(uv / u_cellSize);
     float ts = floor(u_time * 7.0);
