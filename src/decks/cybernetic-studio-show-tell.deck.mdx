@@ -1,10 +1,12 @@
 ---
 title: "Cybernetic Studio Show & Tell"
-description: A tour through four Cybernetic Studio projects that try to drag AI back down to human scale --- the Perceptron Apparatus, MLLM perception, LLMs Unplugged, and the LLM Brainscan.
+description: A tour through nine Cybernetic Studio projects across four moves --- apparatus, curriculum, experiment, and practice.
 author: Ben Swift
 ---
 
 import SocyLogo from "astro-theme-anu/components/SocyLogo.astro";
+
+{/* _class: hero */}
 
 ![bg](./assets/cybernetic-studio-show-tell/bg-title.avif)
 
@@ -22,17 +24,21 @@ Ben Swift, School of Cybernetics
 
 ---
 
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-agenda.avif)
+
 ## What we'll do today
 
 - _Human-Scale AI_ --- the thread that ties everything together
-- four projects, one demo, lots of pictures:
-    - the Perceptron Apparatus
-    - Hidden in plain sight (MAD'26)
-    - LLMs Unplugged
-    - the LLM Brainscan
+- nine projects across four moves:
+    - _Apparatus_: Perceptron Apparatus · Neon Perceptron · LLM Brainscan
+    - _Curriculum_: LLMs Unplugged · COMP4020
+    - _Experiment_: Hidden in plain sight (MAD'26) · Toilet Homeostat
+    - _Practice_: Slop Salon · This ANU Strategy
 - where the studio is heading
 
 ---
+
+{/* _class: hero */}
 
 ![bg](./assets/cybernetic-studio-show-tell/bg-divider-human-scale.avif)
 
@@ -64,6 +70,8 @@ a smartphone in your pocket: trillions of operations a second, and not a single 
 
 ---
 
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-studio-claim.avif)
+
 ## the studio's claim
 
 we can _slow them down_ and _blow them up_
@@ -75,120 +83,265 @@ to make sense of it
 
 ---
 
-![bg](./assets/cybernetic-studio-show-tell/bg-divider-perceptron.avif)
+{/* _class: hero */}
 
-# The Perceptron Apparatus
+![bg](./assets/cybernetic-studio-show-tell/bg-divider-apparatus.avif)
 
-(with Sam Shellard)
+# Apparatus
+
+_three objects to stand in front of_
 
 ---
 
 ![bg right:45%](./assets/cybernetic-studio-show-tell/bg-apparatus.avif)
 
-## the pitch
+## the Perceptron Apparatus
+
+(with Sam Shellard)
 
 a 1.2-metre wooden table that performs the calculations of a neural network --- no electricity, just sliders, a slide rule, and people
 
 ---
 
-## key questions
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-apparatus-rings.avif)
 
-- what does AI _look_ like if you build it without electronics?
-- what changes when computation has to be done _in public_, _by hand_?
-- if the network is intelligent, where does that intelligence _live_?
-
----
-
-{/* TODO: replace with documentary photo */}
-{/* _class: impact */}
-
-# (photo here)
-
-_apparatus in use --- people gathered around the table, sliders mid-shift_
-
----
-
-![bg right:50%](./assets/cybernetic-studio-show-tell/bg-apparatus-dial.avif)
-
-## how it works
+## five rings, one network
 
 five concentric rings = five layers of an MLP
 
-- ring A: 36 input sliders (a 6×6 image)
-- ring B: 216 weight sliders
-- ring C: 6 hidden activations
-- ring D: 60 weight sliders
-- ring E: 10 output sliders (one per digit)
-
-multiply with the outer slide rule. accumulate by moving sliders. apply ReLU. argmax wins.
+- 36 input sliders (a 6×6 image)
+- 216 weights, 6 hidden neurons
+- 60 weights, 10 outputs (one per digit)
 
 ---
 
 {/* notes: live demo --- switch to https://benswift.me/blog/2026/03/19/perceptron-apparatus-inference-walkthrough/ for the in-page <ApparatusInference /> component. Astromotion's section splitter currently breaks `client:only` imports in decks (mdxjsEsm wrapped inside sections), so we link out instead. */}
 
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-apparatus-procedure.avif)
+
+## the procedure
+
+multiply with the outer slide rule
+
+accumulate by moving sliders
+
+apply ReLU
+
+argmax wins
+
+---
+
 ![bg right:40%](./assets/cybernetic-studio-show-tell/bg-apparatus-dial.avif)
 
-## try it yourself
+## a séance for computation
 
-live demo at [benswift.me/blog/.../perceptron-apparatus-inference-walkthrough](https://benswift.me/blog/2026/03/19/perceptron-apparatus-inference-walkthrough/)
-
-(pick a digit, hit "Step through", and watch the forward pass animate slider by slider)
+participants become _human computers_ in the ritual --- and that forces the question: where exactly does the network live?
 
 ---
 
-![bg right:40%](./assets/cybernetic-studio-show-tell/bg-apparatus.avif)
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-apparatus-next.avif)
 
-## why you should care
+## what's next
 
-the apparatus is a _séance_ for computation
-
-it makes participants _human computers_ in the ritual
-
-and it makes us ask: what exactly is the network, and where is it?
+- in conversation with Design Tasmania about an exhibition
+- play with it yourself: [benswift.me/blog/.../perceptron-apparatus-inference-walkthrough](https://benswift.me/blog/2026/03/19/perceptron-apparatus-inference-walkthrough/)
 
 ---
 
-![bg](./assets/cybernetic-studio-show-tell/bg-divider-hidden.avif)
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-neon-perceptron.avif)
 
-# Hidden in plain sight
+## the Neon Perceptron
 
-(MAD'26 with Jess Herrington)
+the Apparatus, shrunk and lit --- a 5×5 input, 3×3 hidden perceptron with neon-tube outputs
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-neon-perceptron-desk.avif)
+
+## desk-scale, self-contained
+
+ReTerminal DM running a Phoenix LiveView UI
+
+same teaching move as the Apparatus. point it at a small audience and let them feed it digits.
+
+---
+
+![bg right:40%](./assets/cybernetic-studio-show-tell/bg-neon-perceptron-detail.avif)
+
+## from a room to a power point
+
+the Apparatus needs a room, a facilitator, and an afternoon. the Neon Perceptron needs a power point.
+
+shrinking it without killing what makes it special --- the visibility of every weight and every multiplication --- is the design exercise.
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-neon-perceptron-next.avif)
+
+## what's next
+
+build the big version
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-brainscan-pixels.avif)
+
+## the LLM Brainscan
+
+train a transformer _live_ on an 8K screen --- one pixel per parameter --- and watch the weights move
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-brainscan-math.avif)
+
+## 32 million parameters, 33 million pixels
+
+- character-level GPT, 8 layers × 9 heads × 576 dim ≈ 32M params
+- 8K = 7680 × 4320 ≈ 33M pixels --- _one pixel per parameter_
+- WebGPU texture, updated every training step, on a Jetson Orin
+
+---
+
+![bg right:40%](./assets/cybernetic-studio-show-tell/bg-brainscan-flow.avif)
+
+## the largest model a human can see
+
+billion-parameter models are abstract by definition. _no one_ has seen one.
+
+a 32M-param model is the largest a human can look at, in full, all at once. once you can see it, you can start asking better questions about it.
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-brainscan-speech.avif)
+
+## what's next
+
+stretch goal: live speech-to-text feeds the training data --- you talk, the model learns, you watch
+
+---
+
+{/* _class: hero */}
+
+![bg](./assets/cybernetic-studio-show-tell/bg-divider-curriculum.avif)
+
+# Curriculum
+
+_the mechanism, made teachable_
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-cutouts.avif)
+
+## LLMs Unplugged
+
+(with Eddie & Cole)
+
+a pen-and-paper workshop where you train and run a language model with a kids' book, a grid, and a handful of dice
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-unplugged-grid.avif)
+
+## train, then generate
+
+- _training_: count word co-occurrences from a children's book onto a grid (or paper buckets)
+- _generation_: pick a starting word, roll the weighted dice, write the result, repeat
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-unplugged-variants.avif)
+
+## variants and dials
+
+- _alternate sampling_: temperature, greedy, haiku, alliteration, no-repeat
+- _cutouts variant_: cut text into paper tokens, sort them into buckets, reach in and read
+
+---
+
+![bg right:40%](./assets/cybernetic-studio-show-tell/bg-cutouts.avif)
+
+## the 45-minute click
+
+something _clicks_ around the 45-minute mark --- no code, no maths past percentages
+
+delivered to hundreds, from primary schoolers to senior APS execs
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-unplugged-next.avif)
+
+## what's next
+
+continued deliveries, keynotes oh my
+
+- SXSW '25 panel
+- ACE'26 paper
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-comp4020.avif)
+
+## COMP4020
+
+_Rapid Prototyping for the Web_
+
+a studio course for agentic coding. weekly lectures + weekly studio sessions where students demo work-in-progress prototypes and run a critique.
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-comp4020-three.avif)
+
+## three assignments, one theme
+
+three assignments: static site → CRUD app → real-time web app
+
+one continuous theme: design the agent's workflow, not just the code
+
+---
+
+![bg right:40%](./assets/cybernetic-studio-show-tell/bg-comp4020-studio.avif)
+
+## evaluation is the bottleneck
+
+curriculum design for AI isn't about making assessments LLM-proof. it's about making them not _one-shottable_.
+
+the skill we're teaching is _evaluating_ what the agent produced --- because that's the real bottleneck in agentic software development.
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-comp4020-next.avif)
+
+## what's next
+
+teach the course in S2 and see how it goes
+
+---
+
+{/* _class: hero */}
+
+![bg](./assets/cybernetic-studio-show-tell/bg-divider-experiment.avif)
+
+# Experiment
+
+_probes designed to find the seams_
 
 ---
 
 ![bg right:45%](./assets/cybernetic-studio-show-tell/bg-mad26-circles.avif)
 
-## the pitch
+## Hidden in plain sight (MAD'26)
 
-multimodal LLMs have a _perceptual blind spot_ --- they fail at a depth cue any human solves effortlessly
+(with Jess Herrington)
 
----
-
-## key questions
-
-- do multimodal LLMs really _see_, or do they reason about a verbal description of what they see?
-- if they harbour systematic perceptual blind spots, what does that mean for using them to detect manipulated content?
+show a multimodal LLM two overlapping circles --- one with a crisp edge, one blurred. humans see the crisp edge as the occluder. so do MLLMs.
 
 ---
 
-{/* TODO: replace with documentary photo */}
-{/* _class: impact */}
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-mad26-blur.avif)
 
-# (photo here)
+## blur the occluder
 
-_the actual experimental stimuli --- real circles, real crisp/blurred edges_
-
----
-
-![bg right:45%](./assets/cybernetic-studio-show-tell/bg-mad26-bias.avif)
-
-## how it works
-
-show the model two overlapping circles. one has a crisp edge, one is blurred.
-
-humans see the _crisp_ edge as the occluder --- the thing in front. so do MLLMs.
-
-now blur the _occluding_ edge. humans still get it right. MLLMs collapse.
+now blur the _occluding_ edge. humans still get it right. _every_ MLLM we tested collapses.
 
 ---
 
@@ -196,151 +349,143 @@ now blur the _occluding_ edge. humans still get it right. MLLMs collapse.
 
 # 93.6% → 22.7%
 
-_blur the wrong edge, every MLLM we tested falls over_
+_six MLLMs across two providers --- a one-line photoshop trick reads "untampered" to all of them_
+
+the bias is not in the eyes. it's in the words the model uses to reason about them.
 
 ---
 
-## what else we found
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-mad26-next.avif)
 
-- six MLLMs across two providers --- _every_ one shows the bias
-- "thinking" mode helps OpenAI, hurts Anthropic
+## what's next
 
----
-
-![bg right:40%](./assets/cybernetic-studio-show-tell/bg-mad26-circles.avif)
-
-## why you should care
-
-these models are already being deployed in disinformation pipelines
-
-a one-line photoshop trick (blur the wrong edge) can make a manipulated image read "untampered" to every model we tested
-
-the bias is not in the eyes --- it's in the words the model uses to reason about the eyes
+more similar work with Jess
 
 ---
 
-![bg](./assets/cybernetic-studio-show-tell/bg-divider-unplugged.avif)
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-toilet-homeostat.avif)
 
-# LLMs Unplugged
+## the Toilet Homeostat
 
-(with Eddie & Cole)
+(Sui Jackson)
 
----
-
-![bg right:45%](./assets/cybernetic-studio-show-tell/bg-cutouts.avif)
-
-## the pitch
-
-a pen-and-paper workshop where you train and run a language model with a kids' book, a grid, and a handful of dice
+an ESP32 with a limit switch sits on each of the nine cubicle doors of the Birch L3 toilets. for a month, it just counts: open, close, open, close. silently.
 
 ---
 
-## key questions
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-toilet-count.avif)
 
-- can you really demystify ChatGPT without _any_ hand-waving?
-- what clicks when you do the maths yourself, slowly, in a room with other people?
-- what's the smallest possible language model that's still recognisably _the same kind of thing_?
+## first the count, then the display
 
----
+then we add a display.
 
-{/* TODO: replace with documentary photo */}
-{/* _class: impact */}
-
-# (photo here)
-
-_workshop in progress --- participants writing tallies on a grid, dice on the table_
+the building becomes the experimental apparatus. the cohort becomes the participants.
 
 ---
 
-![bg right:45%](./assets/cybernetic-studio-show-tell/bg-cutouts.avif)
+![bg right:40%](./assets/cybernetic-studio-show-tell/bg-toilet-homeostat-display.avif)
 
-## how it works
+## ultrastability in the wild
 
-phase 1 --- _training_: count word co-occurrences from a children's book onto a grid (or into paper buckets)
-
-phase 2 --- _generation_: pick a starting word, roll the weighted dice, write the result, repeat
-
-phase 3 --- _alternate sampling_: temperature, greedy, haiku, alliteration, no-repeat...
-
-phase 4 --- _scale up_: pre-printed booklets that contain larger pre-trained models
+Ashby's ultrastability, in the wild --- does _visibility_ of a behaviour cause it to self-regulate?
 
 ---
 
-## the new variant --- _cutouts_
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-toilet-next.avif)
 
-instead of tally marks on a grid, _cut up_ the text into paper tokens and sort them into buckets
+## what's next
 
-generation = reach into a bucket, pull out a paper token, read it
-
-same maths. completely different feel.
+a revival of an old studio idea --- _Birch as a Cybernetic System_ --- at PhD-cohort scale. Sui's PhD picks up an unfinished thread the studio left lying around years ago.
 
 ---
 
-![bg right:40%](./assets/cybernetic-studio-show-tell/bg-cutouts.avif)
+{/* _class: hero */}
 
-## why you should care
+![bg](./assets/cybernetic-studio-show-tell/bg-divider-practice.avif)
 
-- delivered to hundreds, from primary schoolers to senior APS execs
-- something _clicks_ around the 45-minute mark --- no code, no maths past percentages
-- SXSW '25 panel, ACE'26 paper
+# Practice
 
----
-
-![bg](./assets/cybernetic-studio-show-tell/bg-divider-brainscan.avif)
-
-# LLM Brainscan
+_things that run themselves_
 
 ---
 
-![bg right:45%](./assets/cybernetic-studio-show-tell/bg-brainscan-pixels.avif)
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-slop-salon.avif)
 
-## the pitch
+## Slop Salon
 
-train a transformer _live_ on an 8K screen --- one pixel per parameter --- and watch the weights move
+(with Jess Herrington)
 
----
-
-## key questions
-
-- what does training _look_ like if you can see every weight at once?
-- is there visual structure in a learning model that you'd never notice in a loss curve?
-- what kind of model is the right size to be _the most data-rich artefact you've ever seen_?
+two AI artists --- `lou` (Lou Andreas-Salomé) and `mina` (Mina Loy) --- on Bluesky, scaling to five. identical constitutional file. they individuate by watching each other on the public feed.
 
 ---
 
-{/* TODO: replace with documentary photo */}
-{/* _class: impact */}
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-slop-salon-vms.avif)
 
-# (photo here)
+## isolated VMs, public feed
 
-_the brainscan running live --- 8K screen alive with shifting weights_
+each runs in its own Firecracker VM, ticks every 20--40 min, posts when it has something to show.
 
----
-
-![bg right:50%](./assets/cybernetic-studio-show-tell/bg-brainscan-flow.avif)
-
-## how it works
-
-- character-level GPT, 8 layers × 9 heads × 576 dim ≈ 32M params
-- 8K = 7680 × 4320 ≈ 33M pixels --- _one pixel per parameter_
-- WebGPU texture, updated every training step
-- runs on a Jetson Orin (slow is fine; we want to _see_ it)
-
-stretch goal: live speech-to-text feeding the training data --- you talk, the model learns, you watch
+no shared memory, no back-channel. whatever the agent wants to remember next tick, it has to write down this tick.
 
 ---
 
-![bg right:40%](./assets/cybernetic-studio-show-tell/bg-brainscan-pixels.avif)
+![bg right:40%](./assets/cybernetic-studio-show-tell/bg-slop-salon-feed.avif)
 
-## why you should care
+## practice as a unit of work
 
-billion-parameter models are abstract by definition. _no one_ has seen one.
+can a long-running _practice_ be the unit of work for an agent? is mutual attention enough to differentiate identical siblings?
 
-a 32M-param model is the largest model a human can look at, in full, all at once
-
-and once you can see it, you can start asking better questions about it
+the public git repos are the studio. the Bluesky posts are the gallery wall. I'm the steward, not the curator.
 
 ---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-slop-salon-next.avif)
+
+## what's next
+
+getting it up and running
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-anu-strategy.avif)
+
+## This ANU Strategy Does Not Exist
+
+the booklet on your seat. a nightly cronjob generates a fresh 20-page ANU strategy in glossy A4 PDF.
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-anu-strategy-pipeline.avif)
+
+## the pipeline
+
+Claude writes the prose (vision statements, strategic pillars, transformation initiatives). `anu-typst-template` typesets it. styled image-gen makes the requisite "students collaborating on a laptop" hero shot.
+
+booklets get printed and hand-placed in tea rooms, photocopier trays, and common-area magazine racks across campus.
+
+---
+
+![bg right:40%](./assets/cybernetic-studio-show-tell/bg-anu-strategy-stack.avif)
+
+## the genre, in glossy A4
+
+if a 20-page plan generated overnight by Claude is indistinguishable from one a consulting firm spent six months on, the moral isn't about Claude.
+
+the genre was already optimised against meaning. pointing that out, in glossy A4, is the project.
+
+(secondary effect: a surplus of plausible-but-fake plans is excellent _chaff_ against future strategy leaks.)
+
+---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-anu-strategy-next.avif)
+
+## what's next
+
+continue the guerilla art project and don't get fired
+
+---
+
+{/* _class: hero */}
 
 ![bg](./assets/cybernetic-studio-show-tell/bg-divider-ties.avif)
 
@@ -354,9 +499,11 @@ and once you can see it, you can start asking better questions about it
 
 every project here is a probe --- the same move at different scales: take a strange piece of computation, make it tangible, then poke it
 
-call it what it is --- _doing weird stuff with LLMs_
+mostly that's LLMs. sometimes it's a toilet door. either way: _doing weird stuff with computation_
 
 ---
+
+![bg right:45%](./assets/cybernetic-studio-show-tell/bg-why-weird.avif)
 
 ## why "weird"?
 
