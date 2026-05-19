@@ -87,7 +87,8 @@ resolved via the `image()` schema helper). The resolved hero is used both as
 the `og:image` and as input to the canvas hero on PostLayout.
 
 Hero SVGs use `viewBox="0 0 2844 1600"` (wide aspect ratio) with no
-`width`/`height` attributes. Validate with
+`width`/`height` attributes. Validate with `svg_validate.py` (a personal
+utility in `~/.dotfiles/bin/`, on Ben's PATH):
 `svg_validate.py --fix --palette "#be2edd,#3b82f6,#f59e0b,#1a1a1a,#e0e0e0,#9b1fb8"`.
 
 ### Inline post images

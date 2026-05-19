@@ -32,7 +32,7 @@
     "astromotion": "github:benswift/astromotion",
     "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "remark-smartypants": "^3.0.2",
-    "shaderpad": "1.0.0-beta.79",
+    "shaderpad": "1.0.0-beta.85",
     "sharp": "^0.34.5",
     "three": "^0.184.0"
   },
@@ -42,7 +42,7 @@
     "@astrojs/sitemap": "^3.7.2",
     "@astrojs/svelte": "^8.1.0",
     "@atproto/api": "^0.19.11",
-    "@e18e/eslint-plugin": "^0.3.0",
+    "@e18e/eslint-plugin": "^0.5.0",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@types/mdast": "^4.0.4",

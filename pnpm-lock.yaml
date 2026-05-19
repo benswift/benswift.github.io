@@ -33,8 +33,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       shaderpad:
-        specifier: 1.0.0-beta.79
-        version: 1.0.0-beta.79
+        specifier: 1.0.0-beta.85
+        version: 1.0.0-beta.85
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
@@ -58,8 +58,8 @@ importers:
         specifier: ^0.19.11
         version: 0.19.18
       '@e18e/eslint-plugin':
-        specifier: ^0.3.0
-        version: 0.3.0(eslint@10.4.0)(oxlint@1.65.0)
+        specifier: ^0.5.0
+        version: 0.5.0(eslint@10.4.0)(oxlint@1.65.0)
       '@iconify-json/fa6-brands':
         specifier: ^1.2.6
         version: 1.2.6
@@ -367,11 +367,11 @@ packages:
   '@dimforge/rapier3d-compat@0.12.0':
     resolution: {integrity: sha512-uekIGetywIgopfD97oDL5PfeezkFpNhwlzlaEYNOA0N6ghdsOvh/HYjSMek5Q2O1PYvRSDFcqFVJl4r4ZBwOow==}
 
-  '@e18e/eslint-plugin@0.3.0':
-    resolution: {integrity: sha512-hHgfpxsrZ2UYHcicA+tGZnmk19uJTaye9VH79O+XS8R4ona2Hx3xjhXghclNW58uXMk3xXlbYEOMr8thsoBmWg==}
+  '@e18e/eslint-plugin@0.5.0':
+    resolution: {integrity: sha512-UtClP/mXtMPAxSe5c+OaNQ2nEMCNCdNAkAoKfVCT9jKeC5Y4O6cV/jjXxN7/bRVC75XmNjbVz7YAQtHvU9McyQ==}
     peerDependencies:
       eslint: ^9.0.0 || ^10.0.0
-      oxlint: ^1.55.0
+      oxlint: ^1.63.0
     peerDependenciesMeta:
       eslint:
         optional: true
@@ -2114,11 +2114,6 @@ packages:
     engines: {node: '>=6.0'}
     hasBin: true
 
-  eslint-plugin-depend@1.5.0:
-    resolution: {integrity: sha512-i3UeLYmclf1Icp35+6W7CR4Bp2PIpDgBuf/mpmXK5UeLkZlvYJ21VuQKKHHAIBKRTPivPGX/gZl5JGno1o9Y0A==}
-    peerDependencies:
-      eslint: '>=8.40.0'
-
   eslint-plugin-no-only-tests@3.4.0:
     resolution: {integrity: sha512-4S3/9Nb7A2tiMcpzEQE9bQSlpeOz6WJkgryBuou/SA8W2x2c8Zf4j0NvTKBjv6qNhF9T79tmkecm/0CHqV0UGg==}
     engines: {node: '>=5.0.0'}
@@ -2996,8 +2991,8 @@ packages:
   mlly@1.8.2:
     resolution: {integrity: sha512-d+ObxMQFmbt10sretNDytwt85VrbkhhUA/JBGm1MPaWJ65Cl4wOgLaB1NYvJSZ0Ef03MMEU/0xpPMXUIQ29UfA==}
 
-  module-replacements@2.11.0:
-    resolution: {integrity: sha512-j5sNQm3VCpQQ7nTqGeOZtoJtV3uKERgCBm9QRhmGRiXiqkf7iRFOkfxdJRZWLkqYY8PNf4cDQF/WfXUYLENrRA==}
+  module-replacements@3.0.0-beta.7:
+    resolution: {integrity: sha512-n1F9l3gF1wNh13xmnXS2JU7P9c3DlzCgVEyLKrVN0U37RwrXyYoePMMvYvs/6aUONAxbnscphzESZTCorXFh7Q==}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -3408,8 +3403,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  shaderpad@1.0.0-beta.79:
-    resolution: {integrity: sha512-pf6+XzrOYjrcH8QgKhf5T5+nqO2gYpuuit/SBCaX5WSxEYCmoL7PY+clFnJhXCRYCnPdgzmuOEGpRVZecltmCQ==}
+  shaderpad@1.0.0-beta.85:
+    resolution: {integrity: sha512-E7cLUfME0aaFaewLp3jishFmbS0XIHGle9YBcT8wufV8WsfTwF72d1SVQS8ZZdE7gehSEuRkkBhCfbgRNqZMwg==}
     peerDependencies:
       '@mediapipe/tasks-vision': '*'
       react: '>=18'
@@ -4444,9 +4439,11 @@ snapshots:
 
   '@dimforge/rapier3d-compat@0.12.0': {}
 
-  '@e18e/eslint-plugin@0.3.0(eslint@10.4.0)(oxlint@1.65.0)':
+  '@e18e/eslint-plugin@0.5.0(eslint@10.4.0)(oxlint@1.65.0)':
     dependencies:
-      eslint-plugin-depend: 1.5.0(eslint@10.4.0)
+      empathic: 2.0.1
+      module-replacements: 3.0.0-beta.7
+      semver: 7.8.0
     optionalDependencies:
       eslint: 10.4.0
       oxlint: 1.65.0
@@ -6009,13 +6006,6 @@ snapshots:
     optionalDependencies:
       source-map: 0.6.1
 
-  eslint-plugin-depend@1.5.0(eslint@10.4.0):
-    dependencies:
-      empathic: 2.0.1
-      eslint: 10.4.0
-      module-replacements: 2.11.0
-      semver: 7.8.0
-
   eslint-plugin-no-only-tests@3.4.0: {}
 
   eslint-plugin-perfectionist@5.9.0(eslint@10.4.0)(typescript@6.0.3):
@@ -7265,7 +7255,7 @@ snapshots:
       pkg-types: 1.3.1
       ufo: 1.6.4
 
-  module-replacements@2.11.0: {}
+  module-replacements@3.0.0-beta.7: {}
 
   mri@1.2.0: {}
 
@@ -7818,7 +7808,7 @@ snapshots:
 
   semver@7.8.0: {}
 
-  shaderpad@1.0.0-beta.79: {}
+  shaderpad@1.0.0-beta.85: {}
 
   sharp@0.34.5:
     dependencies:
