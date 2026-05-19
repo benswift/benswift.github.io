@@ -1,2 +1,9 @@
-onlyBuiltDependencies:
-  - esbuild
+allowBuilds:
+  esbuild: true
+  sharp: false
+
+minimumReleaseAgeExclude:
+  - astro@6.3.5
+
+overrides:
+  "yaml@<2.8.3": ">=2.8.3"
