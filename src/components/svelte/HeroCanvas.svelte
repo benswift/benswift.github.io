@@ -3,8 +3,8 @@
   import ShaderPad from "shaderpad"
 
   let containerEl: HTMLDivElement
-  let glCanvas: HTMLCanvasElement
-  let textCanvas: HTMLCanvasElement
+  let glCanvas: HTMLCanvasElement = $state()!
+  let textCanvas: HTMLCanvasElement = $state()!
   let ctx: CanvasRenderingContext2D | null = null
   let shader: ShaderPad | null = null
   let resizeObserver: ResizeObserver | null = null
