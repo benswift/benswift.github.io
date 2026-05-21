@@ -1,6 +1,6 @@
 ---
 title: "What is the Cybernetic Studio?"
-description: A tour through nine Cybernetic Studio projects across four moves --- apparatus, curriculum, experiment, and practice.
+description: A show-and-tell tour through four Cybernetic Studio projects --- and what the studio is actually for.
 author: Ben Swift
 ---
 
@@ -13,6 +13,8 @@ import SocyLogo from "astro-theme-anu/components/SocyLogo.astro";
 # What is the Cybernetic Studio?
 
 Dr. Ben Swift
+
+Cybernetic Encounter, 21 May 2026
 
 ---
 
@@ -38,54 +40,15 @@ a revenue stream? not yet...
 
 {/* _class: impact */}
 
-# hot.
-
 _a methodology for doing weird stuff with computation at human scale_
 
 ---
 
-an excuse for me to do curiosity-driven research and teaching
+{/* _class: impact */}
+
+an excuse for me to do **curiosity-driven** research and teaching
 
 and make stuff
-
----
-
-{/* TODO generate bg-hsai-intro.avif */}
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-hsai-intro.avif)
-
-## the connecting thread
-
-_Human-Scale AI_ --- the thread that ties everything together
-
----
-
-or, put another way... AI/LLMs are weird and interesting, let's look at them
-
----
-
-## Whatever it is, it's
-
-why I'm excited to come to work
-
-create new knowledge and share it
-
-chance to make an impact about how the world thinks about and uses AI
-
-folks are hungry for this
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-agenda.avif)
-
-## Projects
-
-- nine projects across four moves:
-    - _Apparatus_: Perceptron Apparatus · Neon Perceptron · LLM Brainscan
-    - _Curriculum_: LLMs Unplugged · COMP4020
-    - _Experiment_: Hidden in plain sight (MAD'26) · Toilet Homeostat
-    - _Practice_: Slop Salon · This ANU Strategy
-- where the studio is heading
 
 ---
 
@@ -95,42 +58,42 @@ folks are hungry for this
 
 # Human-Scale AI
 
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-history-computing.avif)
-
-## the march of computation
-
-abacus → slide rule → Difference Engine → microchip → LLM
-
-every step has _shrunk_ and _accelerated_ the work
-
-every step has _hidden_ a little more of it from us
+the connecting thread
 
 ---
 
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-human-scale.avif)
+{/* _class: impact */}
 
-## the cost of acceleration
-
-we interact with computational devices more than ever
-
-we're _alienated_ from the nuts and bolts of how they work
-
-a smartphone in your pocket: trillions of operations a second, and not a single one you can see
+or, put another way... AI/LLMs are weird and interesting, let's look at them
 
 ---
 
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-studio-claim.avif)
+![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-whatever.avif)
 
-## the studio's claim
+## Whatever it is, it's
 
-we can _slow them down_ and _blow them up_
+why I'm excited to come to work
 
-bring computation into the range of human senses
+create new knowledge and share it
 
-and use everything we already know about looking, touching, and thinking
-to make sense of it
+a chance to shape how the world thinks about and uses AI
+
+folks are hungry for this
+
+---
+
+![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-agenda.avif)
+
+## Projects
+
+four projects I'll show-and-tell about today
+
+- Perceptron Apparatus
+- LLM Brainscan
+- Slop Salon
+- TASDNE
+
+(there are others, but not for today)
 
 ---
 
@@ -138,393 +101,209 @@ to make sense of it
 
 ![bg](./assets/what-is-the-cybernetic-studio/bg-divider-apparatus.avif)
 
-# Apparatus
+# Perceptron Apparatus
 
-_three objects to stand in front of_
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-apparatus.avif)
-
-## the Perceptron Apparatus
-
-(with Sam Shellard)
-
-a 1.2-metre wooden table that performs the calculations of a neural network --- no electricity, just sliders, a slide rule, and people
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-apparatus-rings.avif)
-
-## five rings, one network
-
-five concentric rings = five layers of an MLP
-
-- 36 input sliders (a 6×6 image)
-- 216 weights, 6 hidden neurons
-- 60 weights, 10 outputs (one per digit)
-
----
-
-{/* notes: live demo --- switch to https://benswift.me/blog/2026/03/19/perceptron-apparatus-inference-walkthrough/ for the in-page <ApparatusInference /> component. Astromotion's section splitter currently breaks `client:only` imports in decks (mdxjsEsm wrapped inside sections), so we link out instead. */}
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-apparatus-procedure.avif)
-
-## the procedure
-
-multiply with the outer slide rule
-
-accumulate by moving sliders
-
-apply ReLU
-
-argmax wins
-
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-apparatus-dial.avif)
-
-## a séance for computation
-
-participants become _human computers_ in the ritual --- and that forces the question: where exactly does the network live?
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-apparatus-next.avif)
-
-## what's next
-
-- in conversation with Design Tasmania about an exhibition
-- play with it yourself: [benswift.me/blog/.../perceptron-apparatus-inference-walkthrough](https://benswift.me/blog/2026/03/19/perceptron-apparatus-inference-walkthrough/)
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-neon-perceptron.avif)
-
-## the Neon Perceptron
-
-the Apparatus, shrunk and lit --- a 5×5 input, 3×3 hidden perceptron with neon-tube outputs
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-neon-perceptron-desk.avif)
-
-## desk-scale, self-contained
-
-ReTerminal DM running a Phoenix LiveView UI
-
-same teaching move as the Apparatus. point it at a small audience and let them feed it digits.
-
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-neon-perceptron-detail.avif)
-
-## from a room to a power point
-
-the Apparatus needs a room, a facilitator, and an afternoon. the Neon Perceptron needs a power point.
-
-shrinking it without killing what makes it special --- the visibility of every weight and every multiplication --- is the design exercise.
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-neon-perceptron-next.avif)
-
-## what's next
-
-build the big version
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-brainscan-pixels.avif)
-
-## the LLM Brainscan
-
-train a transformer _live_ on an 8K screen --- one pixel per parameter --- and watch the weights move
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-brainscan-math.avif)
-
-## 32 million parameters, 33 million pixels
-
-- character-level GPT, 8 layers × 9 heads × 576 dim ≈ 32M params
-- 8K = 7680 × 4320 ≈ 33M pixels --- _one pixel per parameter_
-- WebGPU texture, updated every training step, on a Jetson Orin
-
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-brainscan-flow.avif)
-
-## the largest model a human can see
-
-billion-parameter models are abstract by definition. _no one_ has seen one.
-
-a 32M-param model is the largest a human can look at, in full, all at once. once you can see it, you can start asking better questions about it.
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-brainscan-speech.avif)
-
-## what's next
-
-stretch goal: live speech-to-text feeds the training data --- you talk, the model learns, you watch
-
----
-
-{/* _class: hero */}
-
-![bg](./assets/what-is-the-cybernetic-studio/bg-divider-curriculum.avif)
-
-# Curriculum
-
-_the mechanism, made teachable_
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-cutouts.avif)
-
-## LLMs Unplugged
-
-(with Eddie & Cole)
-
-a pen-and-paper workshop where you train and run a language model with a kids' book, a grid, and a handful of dice
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-unplugged-grid.avif)
-
-## train, then generate
-
-- _training_: count word co-occurrences from a children's book onto a grid (or paper buckets)
-- _generation_: pick a starting word, roll the weighted dice, write the result, repeat
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-unplugged-variants.avif)
-
-## variants and dials
-
-- _alternate sampling_: temperature, greedy, haiku, alliteration, no-repeat
-- _cutouts variant_: cut text into paper tokens, sort them into buckets, reach in and read
-
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-cutouts.avif)
-
-## the 45-minute click
-
-something _clicks_ around the 45-minute mark --- no code, no maths past percentages
-
-delivered to hundreds, from primary schoolers to senior APS execs
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-unplugged-next.avif)
-
-## what's next
-
-continued deliveries, keynotes oh my
-
-- SXSW '25 panel
-- ACE'26 paper
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-comp4020.avif)
-
-## COMP4020
-
-_Rapid Prototyping for the Web_
-
-a studio course for agentic coding. weekly lectures + weekly studio sessions where students demo work-in-progress prototypes and run a critique.
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-comp4020-three.avif)
-
-## three assignments, one theme
-
-three assignments: static site → CRUD app → real-time web app
-
-one continuous theme: design the agent's workflow, not just the code
-
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-comp4020-studio.avif)
-
-## evaluation is the bottleneck
-
-curriculum design for AI isn't about making assessments LLM-proof. it's about making them not _one-shottable_.
-
-the skill we're teaching is _evaluating_ what the agent produced --- because that's the real bottleneck in agentic software development.
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-comp4020-next.avif)
-
-## what's next
-
-teach the course in S2 and see how it goes
-
----
-
-{/* _class: hero */}
-
-![bg](./assets/what-is-the-cybernetic-studio/bg-divider-experiment.avif)
-
-# Experiment
-
-_probes designed to find the seams_
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-mad26-circles.avif)
-
-## Hidden in plain sight (MAD'26)
-
-(with Jess Herrington)
-
-show a multimodal LLM two overlapping circles --- one with a crisp edge, one blurred. humans see the crisp edge as the occluder. so do MLLMs.
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-mad26-blur.avif)
-
-## blur the occluder
-
-now blur the _occluding_ edge. humans still get it right. _every_ MLLM we tested collapses.
+with Sam Shellard
 
 ---
 
 {/* _class: impact */}
 
-# 93.6% → 22.7%
-
-_six MLLMs across two providers --- a one-line photoshop trick reads "untampered" to all of them_
-
-the bias is not in the eyes. it's in the words the model uses to reason about them.
+what do you get when you cross an ouija board with an abacus?
 
 ---
 
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-mad26-next.avif)
+![bg](./assets/what-is-the-cybernetic-studio/bg-perceptron-2up.avif)
+
+---
+
+{/* _class: impact */}
+
+_(photos coming soon)_
+
+---
+
+![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-apparatus-next.avif)
+
+## why it's cool
+
+shows the computation underlying modern AI at human scale
+
+if WW3 ever robs humanity of the ability to fabricate silicon chips...
 
 ## what's next
 
-more similar work with Jess
+train people up for a communal, long-running computation (maybe in monk robes?)
 
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-toilet-homeostat.avif)
-
-## the Toilet Homeostat
-
-(Sui Jackson)
-
-an ESP32 with a limit switch sits on each of the nine cubicle doors of the Birch L3 toilets. for a month, it just counts: open, close, open, close. silently.
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-toilet-count.avif)
-
-## first the count, then the display
-
-then we add a display.
-
-the building becomes the experimental apparatus. the cohort becomes the participants.
-
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-toilet-homeostat-display.avif)
-
-## ultrastability in the wild
-
-Ashby's ultrastability, in the wild --- does _visibility_ of a behaviour cause it to self-regulate?
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-toilet-next.avif)
-
-## what's next
-
-a revival of an old studio idea --- _Birch as a Cybernetic System_ --- at PhD-cohort scale. Sui's PhD picks up an unfinished thread the studio left lying around years ago.
+exhibit at Design Tasmania
 
 ---
 
 {/* _class: hero */}
 
-![bg](./assets/what-is-the-cybernetic-studio/bg-divider-practice.avif)
+![bg](./assets/what-is-the-cybernetic-studio/bg-divider-brainscan.avif)
 
-# Practice
-
-_things that run themselves_
+# LLM Brainscan
 
 ---
 
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-slop-salon.avif)
+![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-brainscan-pixels.avif)
 
-## Slop Salon
+## too big to see
 
-(with Jess Herrington)
+modern LLMs like Claude and ChatGPT have ~1T parameters --- so you can't see them
 
-two AI artists --- `lou` (Lou Andreas-Salomé) and `mina` (Mina Loy) --- on Bluesky, scaling to five. identical constitutional file. they individuate by watching each other on the public feed.
+a modern 8K TV has about 33M pixels. can we make an LLM small enough that every parameter can be seen?
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-0.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-1.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-2.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-3.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-4.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-5.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-6.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/brainscan-snapshot-7.avif)
+
+---
+
+![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-brainscan-speech.avif)
+
+## why it's cool
+
+see every parameter in the model, and watch it train over time
+
+watch the structure of the different matrices emerge
+
+interact with it --- it gets reset every Monday at 2am
+
+## what's next
+
+leave it running, see what happens
+
+do it on 4× 8K TVs... or maybe the Vegas Sphere?
+
+---
+
+{/* _class: hero */}
+
+![bg](./assets/what-is-the-cybernetic-studio/bg-slop-salon.avif)
+
+# Slop Salon
+
+with Jess Herrington
+
+---
+
+{/* _class: impact */}
+
+two AI artists, **identical** instructions --- can they become different just by watching each other?
 
 ---
 
 ![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-slop-salon-vms.avif)
 
-## isolated VMs, public feed
+## what it is
 
-each runs in its own Firecracker VM, ticks every 20--40 min, posts when it has something to show.
+`lou` and `mina` --- two agents on Bluesky, each in its own isolated VM, ticking every 20--40 minutes
 
-no shared memory, no back-channel. whatever the agent wants to remember next tick, it has to write down this tick.
+no shared memory, no back-channel --- whatever an agent wants to remember, it has to post
 
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-slop-salon-feed.avif)
-
-## practice as a unit of work
-
-can a long-running _practice_ be the unit of work for an agent? is mutual attention enough to differentiate identical siblings?
-
-the public git repos are the studio. the Bluesky posts are the gallery wall. I'm the steward, not the curator.
+the public feed is the only thing they share --- and the only way they tell each other apart
 
 ---
 
 ![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-slop-salon-next.avif)
 
+## why it's cool
+
+the public git repos are the studio. the Bluesky posts are the gallery wall. I'm the steward, not the curator.
+
 ## what's next
 
-getting it up and running
+get it up and running --- then scale from two artists to five
 
 ---
 
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-anu-strategy.avif)
+{/* _class: hero */}
 
-## This ANU Strategy Does Not Exist
+![bg](./assets/what-is-the-cybernetic-studio/bg-anu-strategy.avif)
 
-the booklet on your seat. a nightly cronjob generates a fresh 20-page ANU strategy in glossy A4 PDF.
-
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-anu-strategy-pipeline.avif)
-
-## the pipeline
-
-Claude writes the prose (vision statements, strategic pillars, transformation initiatives). `anu-typst-template` typesets it. styled image-gen makes the requisite "students collaborating on a laptop" hero shot.
-
-booklets get printed and hand-placed in tea rooms, photocopier trays, and common-area magazine racks across campus.
+# This ANU Strategy Does Not Exist
 
 ---
 
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-anu-strategy-stack.avif)
+{/* _class: impact */}
 
-## the genre, in glossy A4
+the ANU has been having some trouble with its strategy recently
 
-if a 20-page plan generated overnight by Claude is indistinguishable from one a consulting firm spent six months on, the moral isn't about Claude.
+so I wrote an AI tool to help out
 
-the genre was already optimised against meaning. pointing that out, in glossy A4, is the project.
+---
 
-(secondary effect: a surplus of plausible-but-fake plans is excellent _chaff_ against future strategy leaks.)
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-indopacific-cover.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-indopacific-grid.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-horse-cover.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-horse-grid.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-socy-masters-cover.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-socy-masters-grid.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-socy-execs-cover.avif)
+
+---
+
+![bg](./assets/what-is-the-cybernetic-studio/tasdne-socy-execs-grid.avif)
+
+---
+
+![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-anu-strategy-stack.avif)
+
+## what's cool
+
+it works so well because the genre tropes of this type of document make it so predictable
+
+want a tailored version for your weird niche predilection? hmu
+
+also useful for snazzing up real docs
 
 ---
 
@@ -532,54 +311,32 @@ the genre was already optimised against meaning. pointing that out, in glossy A4
 
 ## what's next
 
-continue the guerilla art project and don't get fired
+print them out all glossy and leave them on the seats in LH?
+
+get fired?
 
 ---
 
 {/* _class: hero */}
 
-![bg](./assets/what-is-the-cybernetic-studio/bg-divider-ties.avif)
+![bg](./assets/what-is-the-cybernetic-studio/bg-future.avif)
 
-# What ties this together
+# What's next for the studio
 
----
-
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-weird-llms.avif)
-
-## a methodology, not a theme
-
-every project here is a probe --- the same move at different scales: take a strange piece of computation, make it tangible, then poke it
-
-mostly that's LLMs. sometimes it's a toilet door. either way: _doing weird stuff with computation_
+more weird stuff with computation at human scale
 
 ---
 
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-why-weird.avif)
+{/* _class: socy-logo */}
 
-## why "weird"?
-
-- benchmarks chase _capability_ --- I want to chase _understanding_
-- the surprising failure modes (MAD'26) and the surprising teaching moves (LLMs Unplugged) come from the _same place_: poking the system at human scale
-- if it can't be felt or fiddled with, it's hard to think clearly about
+<SocyLogo />
 
 ---
 
-![bg right:45%](./assets/what-is-the-cybernetic-studio/bg-future.avif)
+{/* _class: hero */}
 
-## what's next for the studio
+![bg](./assets/what-is-the-cybernetic-studio/bg-questions.avif)
 
-- the _Cybernetic Studio Practice_ LX
-- more works in the canon (LLM Barium Enema 👀)
-- a national / international showcase
+# Questions
 
-_more weird stuff with LLMs_
-
----
-
-![bg right:40%](./assets/what-is-the-cybernetic-studio/bg-thanks.avif)
-
-## thanks
-
-[ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au)
-
-[benswift.me](https://benswift.me) · [cybernetics.anu.edu.au](https://cybernetics.anu.edu.au)
+[ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au) · [benswift.me](https://benswift.me)
