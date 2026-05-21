@@ -107,7 +107,7 @@ Two patterns, by file location:
 
 Don't put new images in `public/assets/images/` — they'll skip the pipeline.
 
-### SVG illustration style
+## SVG illustration style
 
 Palette: #be2edd #3b82f6 #f59e0b #1a1a1a #e0e0e0
 Prompt suffix: flowing Bézier curves, layered organic forms on dark background
@@ -115,6 +115,43 @@ References: existing illustrations in `src/assets/heroes/`
 
 Illustrations should be tangentially inspired by the post content --- not
 literal diagrams, but visual metaphors that reward a second look.
+
+## Image generation style
+
+Used by the `styled-image-gen` skill for deck backgrounds and similar raster
+assets. Per-deck overrides go here too --- update this section before
+generating images for a deck whose aesthetic diverges from the default.
+
+Prompt suffix: Flat 2D vector illustration on a pure black background ---
+absolutely NO 3D rendering, NO perspective, NO isometric, NO faceted/low-poly
+shapes, NO photographic depth, NO drop shadows, NO realistic lighting.
+Strictly limited colour palette: gold/amber, black, white, and warm beige/tan
+tones. Clean, consistent-weight outlines (black, white, or gold strokes) with
+flat filled shapes --- no gradients, no photorealism. Cubist line-drawing
+sensibility: fractured planes, overlapping geometric facets, multiple
+viewpoints flattened onto a single picture plane. Subtle background texture
+of interlocking circles or rounded geometric grid patterns in a very dark
+grey. Geometric and slightly stylised --- people (if any) are simplified
+faceless silhouettes drawn as single flat shapes (NOT low-poly polygonal or
+3D-faceted figures). Occasional soft gold glow effects for emphasis. Sparse,
+balanced composition with generous negative space. STRICTLY NO TEXT, NO
+WORDS, NO LETTERS, NO NUMBERS, NO LABELS, NO ANNOTATIONS, NO TALLY MARKS,
+NO GLYPHS, NO SYMBOLS RESEMBLING LETTERS anywhere in the image. Modern
+editorial illustration style --- conceptual and symbolic rather than literal.
+
+Reference images: `src/decks/assets/what-is-the-cybernetic-studio/`. Use
+3--4 as `--input-image` references for each generation.
+
+Prompting tips:
+
+- avoid words that imply written content: "word-cards", "labels",
+  "annotated", "diagram", "blueprint", "schematic", "concept-map", "tag"
+- never quote target words verbatim
+- describe what's drawn, not what it represents: "small blank rectangles"
+  (not "tokens"), "empty speech bubbles" (not "dialogue exchange")
+- for figures, say "flat silhouette drawn as a single filled shape" --- the
+  model interprets bare "geometric figure" as low-poly 3D
+- expect to re-roll: review every generated image before committing
 
 ## Creating new posts
 
