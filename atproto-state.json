@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/05/21/slop-salon-six-ai-artists-one-constitution": "ead56ee80fcc849a5b94092cefa85063717b508c6699994518b63a410a5a12fa",
     "/blog/2026/05/12/three-circles-for-thinking-about-llms": "90d519705fe84037957730a45f6ca9690c48913c2b44935af6d8acc483a3d3c0",
     "/blog/2026/05/04/on-agentic-tools-and-lock-in": "c709a9122f411c9d7e2198535453d9a4bf205e3cd86de8b4dafcb1cc124e37c4",
     "/blog/2026/04/28/a-static-site-that-takes-pull-requests": "7f9dc7c60d4d6aefa517515fd9bb9286795d593647aee4ac3535db74fe481db8",
