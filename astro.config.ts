@@ -100,7 +100,7 @@ export default defineConfig({
     brokenLinksChecker({ checkExternalLinks: false }),
     astromotion({
       theme: "./src/decks/theme.css",
-      codeTheme: "github-dark",
+      shikiConfig: { theme: "github-dark" },
       fontVariables: ["--font-public-sans"],
     }),
   ],
