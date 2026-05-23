@@ -1,10 +1,10 @@
 import type { ImageMetadata } from "astro";
 import defaultHero from "../assets/og-default.avif";
 
-const heroImageModules = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/heroes/*.avif",
-  { eager: true, import: "default" },
-);
+const heroImageModules = import.meta.glob<{ default: ImageMetadata }>("/src/assets/heroes/*.avif", {
+  eager: true,
+  import: "default",
+});
 
 export function resolveHeroImage(
   slug: string,

@@ -1,135 +1,149 @@
 <script lang="ts">
-  import { onMount, onDestroy } from "svelte"
-  import { forwardDense, softmax, xavierWeights } from "./perceptron/nn"
+  import { onMount, onDestroy } from "svelte";
+  import { forwardDense, softmax, xavierWeights } from "./perceptron/nn";
 
-  const INPUT_SIZE = 4
-  const HIDDEN_SIZE = 3
-  const OUTPUT_SIZE = 2
-  const INPUT_COLS = 2
+  const INPUT_SIZE = 4;
+  const HIDDEN_SIZE = 3;
+  const OUTPUT_SIZE = 2;
+  const INPUT_COLS = 2;
 
-  let containerEl: HTMLElement
-  let isFullscreen = $state(false)
-  let wireGamma = $state(2.2)
+  let containerEl: HTMLElement;
+  let isFullscreen = $state(false);
+  let wireGamma = $state(2.2);
 
-  let THREE: typeof import("three")
-  let scene: import("three").Scene
-  let camera: import("three").PerspectiveCamera
-  let renderer: import("three").WebGLRenderer
-  let controls: import("three/addons/controls/OrbitControls.js").OrbitControls
-  let animationId: number
+  let THREE: typeof import("three");
+  let scene: import("three").Scene;
+  let camera: import("three").PerspectiveCamera;
+  let renderer: import("three").WebGLRenderer;
+  let controls: import("three/addons/controls/OrbitControls.js").OrbitControls;
+  let animationId: number;
 
-  let inputState: number[] = []
-  const weights = { dense_0: [] as number[], dense_1: [] as number[] }
-  const layerX = { input: -3, hidden: 0, output: 3 }
+  let inputState: number[] = [];
+  const weights = { dense_0: [] as number[], dense_1: [] as number[] };
+  const layerX = { input: -3, hidden: 0, output: 3 };
   const nodes: {
-    input: import("three").Mesh[]
-    hidden: import("three").Mesh[]
-    output: import("three").Mesh[]
-  } = { input: [], hidden: [], output: [] }
+    input: import("three").Mesh[];
+    hidden: import("three").Mesh[];
+    output: import("three").Mesh[];
+  } = { input: [], hidden: [], output: [] };
   const edges: {
-    inputToHidden: import("three/addons/lines/Line2.js").Line2[]
-    hiddenToOutput: import("three/addons/lines/Line2.js").Line2[]
-  } = { inputToHidden: [], hiddenToOutput: [] }
-  const outputHalos: import("three").Mesh[] = []
+    inputToHidden: import("three/addons/lines/Line2.js").Line2[];
+    hiddenToOutput: import("three/addons/lines/Line2.js").Line2[];
+  } = { inputToHidden: [], hiddenToOutput: [] };
+  const outputHalos: import("three").Mesh[] = [];
 
-  let raycaster: import("three").Raycaster
-  let mouse: import("three").Vector2
-  let isDrawing = false
+  let raycaster: import("three").Raycaster;
+  let mouse: import("three").Vector2;
+  let isDrawing = false;
 
   function generateRandomWeights() {
-    weights.dense_0 = xavierWeights(INPUT_SIZE, HIDDEN_SIZE)
-    weights.dense_1 = xavierWeights(HIDDEN_SIZE, OUTPUT_SIZE)
+    weights.dense_0 = xavierWeights(INPUT_SIZE, HIDDEN_SIZE);
+    weights.dense_1 = xavierWeights(HIDDEN_SIZE, OUTPUT_SIZE);
   }
 
   async function initScene() {
-    if (!containerEl) return
+    if (!containerEl) return;
 
-    THREE = await import("three")
-    const { OrbitControls } = await import("three/addons/controls/OrbitControls.js")
-    const { Line2 } = await import("three/addons/lines/Line2.js")
-    const { LineMaterial } = await import("three/addons/lines/LineMaterial.js")
-    const { LineGeometry } = await import("three/addons/lines/LineGeometry.js")
+    THREE = await import("three");
+    const { OrbitControls } = await import("three/addons/controls/OrbitControls.js");
+    const { Line2 } = await import("three/addons/lines/Line2.js");
+    const { LineMaterial } = await import("three/addons/lines/LineMaterial.js");
+    const { LineGeometry } = await import("three/addons/lines/LineGeometry.js");
 
-    scene = new THREE.Scene()
-    scene.background = new THREE.Color(0x111111)
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x111111);
 
-    camera = new THREE.PerspectiveCamera(60, containerEl.clientWidth / containerEl.clientHeight, 0.1, 1000)
-    camera.position.set(0, 0, 6)
+    camera = new THREE.PerspectiveCamera(
+      60,
+      containerEl.clientWidth / containerEl.clientHeight,
+      0.1,
+      1000,
+    );
+    camera.position.set(0, 0, 6);
 
-    renderer = new THREE.WebGLRenderer({ antialias: true })
-    renderer.setSize(containerEl.clientWidth, containerEl.clientHeight)
-    renderer.setPixelRatio(window.devicePixelRatio)
-    containerEl.append(renderer.domElement)
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(containerEl.clientWidth, containerEl.clientHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    containerEl.append(renderer.domElement);
 
-    controls = new OrbitControls(camera, renderer.domElement)
-    controls.enableDamping = true
-    controls.dampingFactor = 0.05
+    controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
 
-    scene.add(new THREE.AmbientLight(0xffffff, 0.4))
-    const dirLight = new THREE.DirectionalLight(0xffffff, 0.8)
-    dirLight.position.set(5, 5, 5)
-    scene.add(dirLight)
+    scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+    const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    dirLight.position.set(5, 5, 5);
+    scene.add(dirLight);
 
-    raycaster = new THREE.Raycaster()
-    mouse = new THREE.Vector2()
+    raycaster = new THREE.Raycaster();
+    mouse = new THREE.Vector2();
 
-    inputState = Array.from({ length: INPUT_SIZE }, () => 0)
-    generateRandomWeights()
+    inputState = Array.from({ length: INPUT_SIZE }, () => 0);
+    generateRandomWeights();
 
-    createNodes(THREE)
-    createEdges(THREE, Line2, LineMaterial, LineGeometry)
+    createNodes(THREE);
+    createEdges(THREE, Line2, LineMaterial, LineGeometry);
 
-    renderer.domElement.addEventListener("mousedown", onMouseDown)
-    renderer.domElement.addEventListener("mousemove", onMouseMove)
-    renderer.domElement.addEventListener("mouseup", onMouseUp)
-    renderer.domElement.addEventListener("mouseleave", onMouseUp)
-    renderer.domElement.addEventListener("touchstart", onTouchStart, { passive: false })
-    renderer.domElement.addEventListener("touchmove", onTouchMove, { passive: false })
-    renderer.domElement.addEventListener("touchend", onTouchEnd)
+    renderer.domElement.addEventListener("mousedown", onMouseDown);
+    renderer.domElement.addEventListener("mousemove", onMouseMove);
+    renderer.domElement.addEventListener("mouseup", onMouseUp);
+    renderer.domElement.addEventListener("mouseleave", onMouseUp);
+    renderer.domElement.addEventListener("touchstart", onTouchStart, { passive: false });
+    renderer.domElement.addEventListener("touchmove", onTouchMove, { passive: false });
+    renderer.domElement.addEventListener("touchend", onTouchEnd);
 
-    updateVisualisation()
-    animate()
+    updateVisualisation();
+    animate();
   }
 
   function createNodes(T: typeof import("three")) {
-    const pixelSize = 0.55
-    const pixelGeometry = new T.PlaneGeometry(pixelSize, pixelSize)
-    const spacing = 0.7
+    const pixelSize = 0.55;
+    const pixelGeometry = new T.PlaneGeometry(pixelSize, pixelSize);
+    const spacing = 0.7;
 
     for (let i = 0; i < INPUT_SIZE; i++) {
-      const row = Math.floor(i / INPUT_COLS)
-      const col = i % INPUT_COLS
+      const row = Math.floor(i / INPUT_COLS);
+      const col = i % INPUT_COLS;
       const material = new T.MeshStandardMaterial({
-        color: 0x4488ff, emissive: 0x4488ff, emissiveIntensity: 0.0, side: T.DoubleSide,
-      })
-      const node = new T.Mesh(pixelGeometry, material)
-      node.position.set(layerX.input, (0.5 - row) * spacing, (col - 0.5) * spacing)
-      node.rotation.y = Math.PI / 2
-      node.userData = { layer: "input", index: i }
-      scene.add(node)
-      nodes.input.push(node)
+        color: 0x4488ff,
+        emissive: 0x4488ff,
+        emissiveIntensity: 0.0,
+        side: T.DoubleSide,
+      });
+      const node = new T.Mesh(pixelGeometry, material);
+      node.position.set(layerX.input, (0.5 - row) * spacing, (col - 0.5) * spacing);
+      node.rotation.y = Math.PI / 2;
+      node.userData = { layer: "input", index: i };
+      scene.add(node);
+      nodes.input.push(node);
     }
 
-    const nodeGeometry = new T.SphereGeometry(0.18, 16, 16)
+    const nodeGeometry = new T.SphereGeometry(0.18, 16, 16);
     for (let i = 0; i < HIDDEN_SIZE; i++) {
-      const material = new T.MeshStandardMaterial({ color: 0x44ff88, emissive: 0x44ff88, emissiveIntensity: 0.1 })
-      const node = new T.Mesh(nodeGeometry, material)
-      node.position.set(layerX.hidden, (1 - i) * 0.7, 0)
-      node.userData = { layer: "hidden", index: i }
-      scene.add(node)
-      nodes.hidden.push(node)
+      const material = new T.MeshStandardMaterial({
+        color: 0x44ff88,
+        emissive: 0x44ff88,
+        emissiveIntensity: 0.1,
+      });
+      const node = new T.Mesh(nodeGeometry, material);
+      node.position.set(layerX.hidden, (1 - i) * 0.7, 0);
+      node.userData = { layer: "hidden", index: i };
+      scene.add(node);
+      nodes.hidden.push(node);
     }
 
-    const outputGeometry = new T.SphereGeometry(0.22, 16, 16)
+    const outputGeometry = new T.SphereGeometry(0.22, 16, 16);
     for (let i = 0; i < OUTPUT_SIZE; i++) {
       const material = new T.MeshStandardMaterial({
-        color: 0xff6644, emissive: 0xff6644, emissiveIntensity: 0.1,
-      })
-      const node = new T.Mesh(outputGeometry, material)
-      node.position.set(layerX.output, (0.5 - i) * 1.0, 0)
-      node.userData = { layer: "output", index: i, isWinner: false }
-      scene.add(node)
-      nodes.output.push(node)
+        color: 0xff6644,
+        emissive: 0xff6644,
+        emissiveIntensity: 0.1,
+      });
+      const node = new T.Mesh(outputGeometry, material);
+      node.position.set(layerX.output, (0.5 - i) * 1.0, 0);
+      node.userData = { layer: "output", index: i, isWinner: false };
+      scene.add(node);
+      nodes.output.push(node);
 
       const halo = new T.Mesh(
         new T.TorusGeometry(0.35, 0.03, 16, 48),
@@ -141,11 +155,11 @@
           opacity: 0,
           side: T.DoubleSide,
         }),
-      )
-      halo.position.copy(node.position)
-      halo.rotation.y = Math.PI / 2
-      scene.add(halo)
-      outputHalos.push(halo)
+      );
+      halo.position.copy(node.position);
+      halo.rotation.y = Math.PI / 2;
+      scene.add(halo);
+      outputHalos.push(halo);
     }
   }
 
@@ -156,259 +170,308 @@
     LG: typeof import("three/addons/lines/LineGeometry.js").LineGeometry,
   ) {
     const createEdge = (from: import("three").Vector3, to: import("three").Vector3) => {
-      const geometry = new LG()
-      geometry.setPositions([from.x, from.y, from.z, to.x, to.y, to.z])
+      const geometry = new LG();
+      geometry.setPositions([from.x, from.y, from.z, to.x, to.y, to.z]);
       const material = new LM({
-        color: 0x444444, linewidth: 2, transparent: true, opacity: 0.3,
+        color: 0x444444,
+        linewidth: 2,
+        transparent: true,
+        opacity: 0.3,
         resolution: new T.Vector2(window.innerWidth, window.innerHeight),
-      })
-      return new L2(geometry, material)
-    }
+      });
+      return new L2(geometry, material);
+    };
 
     for (let i = 0; i < INPUT_SIZE; i++) {
       for (let j = 0; j < HIDDEN_SIZE; j++) {
-        const edge = createEdge(nodes.input[i].position, nodes.hidden[j].position)
-        edge.userData = { fromLayer: "input", from: i, to: j }
-        edges.inputToHidden.push(edge)
-        scene.add(edge)
+        const edge = createEdge(nodes.input[i].position, nodes.hidden[j].position);
+        edge.userData = { fromLayer: "input", from: i, to: j };
+        edges.inputToHidden.push(edge);
+        scene.add(edge);
       }
     }
 
     for (let i = 0; i < HIDDEN_SIZE; i++) {
       for (let j = 0; j < OUTPUT_SIZE; j++) {
-        const edge = createEdge(nodes.hidden[i].position, nodes.output[j].position)
-        edge.userData = { fromLayer: "hidden", from: i, to: j }
-        edges.hiddenToOutput.push(edge)
-        scene.add(edge)
+        const edge = createEdge(nodes.hidden[i].position, nodes.output[j].position);
+        edge.userData = { fromLayer: "hidden", from: i, to: j };
+        edges.hiddenToOutput.push(edge);
+        scene.add(edge);
       }
     }
   }
 
   function updateVisualisation() {
-    if (!weights.dense_0.length || !weights.dense_1.length) return
-    const hidden = forwardDense(inputState, weights.dense_0, INPUT_SIZE, HIDDEN_SIZE).map(Math.tanh)
-    const output = softmax(forwardDense(hidden, weights.dense_1, HIDDEN_SIZE, OUTPUT_SIZE))
-    updateNodeVisuals(inputState, hidden, output)
-    updateEdgeVisuals(inputState, hidden)
+    if (!weights.dense_0.length || !weights.dense_1.length) return;
+    const hidden = forwardDense(inputState, weights.dense_0, INPUT_SIZE, HIDDEN_SIZE).map(
+      Math.tanh,
+    );
+    const output = softmax(forwardDense(hidden, weights.dense_1, HIDDEN_SIZE, OUTPUT_SIZE));
+    updateNodeVisuals(inputState, hidden, output);
+    updateEdgeVisuals(inputState, hidden);
   }
 
   function updateNodeVisuals(input: number[], hidden: number[], output: number[]) {
     input.forEach((value, i) => {
       if (nodes.input[i]) {
-        (nodes.input[i].material as import("three").MeshStandardMaterial).emissiveIntensity = value
+        (nodes.input[i].material as import("three").MeshStandardMaterial).emissiveIntensity = value;
       }
-    })
+    });
 
     hidden.forEach((value, i) => {
       if (nodes.hidden[i]) {
-        (nodes.hidden[i].material as import("three").MeshStandardMaterial).emissiveIntensity = Math.abs(value) * 0.8
+        (nodes.hidden[i].material as import("three").MeshStandardMaterial).emissiveIntensity =
+          Math.abs(value) * 0.8;
       }
-    })
+    });
 
-    const maxActivation = Math.max(...output)
-    const winnerIndex = output.indexOf(maxActivation)
+    const maxActivation = Math.max(...output);
+    const winnerIndex = output.indexOf(maxActivation);
 
     output.forEach((activation, i) => {
-      const node = nodes.output[i]
-      if (!node) return
-      const mat = node.material as import("three").MeshStandardMaterial
-      mat.emissiveIntensity = 0.1 + activation * 0.9
+      const node = nodes.output[i];
+      if (!node) return;
+      const mat = node.material as import("three").MeshStandardMaterial;
+      mat.emissiveIntensity = 0.1 + activation * 0.9;
 
-      const halo = outputHalos[i]
+      const halo = outputHalos[i];
       if (halo) {
-        const haloMat = halo.material as import("three").MeshStandardMaterial
+        const haloMat = halo.material as import("three").MeshStandardMaterial;
         if (i === winnerIndex) {
-          haloMat.opacity = 0.8 + maxActivation * 0.2
-          haloMat.emissiveIntensity = 1.5 + maxActivation * 0.5
-          node.userData.isWinner = true
+          haloMat.opacity = 0.8 + maxActivation * 0.2;
+          haloMat.emissiveIntensity = 1.5 + maxActivation * 0.5;
+          node.userData.isWinner = true;
         } else {
-          haloMat.opacity = 0
-          haloMat.emissiveIntensity = 0
-          node.userData.isWinner = false
+          haloMat.opacity = 0;
+          haloMat.emissiveIntensity = 0;
+          node.userData.isWinner = false;
         }
       }
-    })
+    });
   }
 
   function updateEdgeVisuals(input: number[], hidden: number[]) {
-    const setEdgeAppearance = (edge: import("three/addons/lines/Line2.js").Line2, activation: number) => {
-      if (!edge) return
-      const absActivation = Math.min(Math.abs(activation), 2) / 2
-      const corrected = Math.pow(absActivation, 1 / wireGamma)
-      const mat = edge.material as import("three/addons/lines/LineMaterial.js").LineMaterial
+    const setEdgeAppearance = (
+      edge: import("three/addons/lines/Line2.js").Line2,
+      activation: number,
+    ) => {
+      if (!edge) return;
+      const absActivation = Math.min(Math.abs(activation), 2) / 2;
+      const corrected = Math.pow(absActivation, 1 / wireGamma);
+      const mat = edge.material as import("three/addons/lines/LineMaterial.js").LineMaterial;
 
       if (Math.abs(activation) < 0.001) {
-        mat.color.setHex(0x444444)
-        mat.opacity = 0.05
-        mat.linewidth = 1
+        mat.color.setHex(0x444444);
+        mat.opacity = 0.05;
+        mat.linewidth = 1;
       } else if (activation >= 0) {
-        mat.color.setHex(0xe69f00)
-        mat.opacity = 0.1 + corrected * 0.5
-        mat.linewidth = 1 + corrected * 4
+        mat.color.setHex(0xe69f00);
+        mat.opacity = 0.1 + corrected * 0.5;
+        mat.linewidth = 1 + corrected * 4;
       } else {
-        mat.color.setHex(0x0072b2)
-        mat.opacity = 0.1 + corrected * 0.5
-        mat.linewidth = 1 + corrected * 4
+        mat.color.setHex(0x0072b2);
+        mat.opacity = 0.1 + corrected * 0.5;
+        mat.linewidth = 1 + corrected * 4;
       }
-    }
+    };
 
-    let edgeIdx = 0
+    let edgeIdx = 0;
     for (let i = 0; i < INPUT_SIZE; i++) {
       for (let j = 0; j < HIDDEN_SIZE; j++) {
-        setEdgeAppearance(edges.inputToHidden[edgeIdx], inputState[i] * weights.dense_0[i * HIDDEN_SIZE + j])
-        edgeIdx++
+        setEdgeAppearance(
+          edges.inputToHidden[edgeIdx],
+          inputState[i] * weights.dense_0[i * HIDDEN_SIZE + j],
+        );
+        edgeIdx++;
       }
     }
 
-    edgeIdx = 0
+    edgeIdx = 0;
     for (let i = 0; i < HIDDEN_SIZE; i++) {
       for (let j = 0; j < OUTPUT_SIZE; j++) {
-        setEdgeAppearance(edges.hiddenToOutput[edgeIdx], hidden[i] * weights.dense_1[i * OUTPUT_SIZE + j])
-        edgeIdx++
+        setEdgeAppearance(
+          edges.hiddenToOutput[edgeIdx],
+          hidden[i] * weights.dense_1[i * OUTPUT_SIZE + j],
+        );
+        edgeIdx++;
       }
     }
   }
 
   function getMousePosition(event: MouseEvent | Touch) {
-    if (!renderer) return
-    const rect = renderer.domElement.getBoundingClientRect()
-    mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1
-    mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1
+    if (!renderer) return;
+    const rect = renderer.domElement.getBoundingClientRect();
+    mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+    mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
   }
 
   function hitTestInput(): boolean {
-    if (!raycaster || !camera) return false
-    raycaster.setFromCamera(mouse, camera)
-    return raycaster.intersectObjects(nodes.input).length > 0
+    if (!raycaster || !camera) return false;
+    raycaster.setFromCamera(mouse, camera);
+    return raycaster.intersectObjects(nodes.input).length > 0;
   }
 
   function onDraw() {
-    if (!raycaster || !camera) return
-    raycaster.setFromCamera(mouse, camera)
-    const intersects = raycaster.intersectObjects(nodes.input)
+    if (!raycaster || !camera) return;
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(nodes.input);
     if (intersects.length > 0) {
-      const index = intersects[0].object.userData.index
-      inputState[index] = Math.min(1, inputState[index] + 0.3)
-      updateVisualisation()
+      const index = intersects[0].object.userData.index;
+      inputState[index] = Math.min(1, inputState[index] + 0.3);
+      updateVisualisation();
     }
   }
 
   function onMouseDown(event: MouseEvent) {
-    getMousePosition(event)
+    getMousePosition(event);
     if (hitTestInput()) {
-      isDrawing = true
-      controls.enabled = false
-      onDraw()
+      isDrawing = true;
+      controls.enabled = false;
+      onDraw();
     }
   }
 
   function onMouseMove(event: MouseEvent) {
-    if (isDrawing) { getMousePosition(event); onDraw() }
+    if (isDrawing) {
+      getMousePosition(event);
+      onDraw();
+    }
   }
 
   function onMouseUp() {
-    isDrawing = false
-    if (controls) controls.enabled = true
+    isDrawing = false;
+    if (controls) controls.enabled = true;
   }
 
   function onTouchStart(event: TouchEvent) {
     if (event.touches.length === 1) {
-      event.preventDefault()
-      getMousePosition(event.touches[0])
-      if (hitTestInput()) { isDrawing = true; controls.enabled = false; onDraw() }
+      event.preventDefault();
+      getMousePosition(event.touches[0]);
+      if (hitTestInput()) {
+        isDrawing = true;
+        controls.enabled = false;
+        onDraw();
+      }
     }
   }
 
   function onTouchMove(event: TouchEvent) {
     if (isDrawing && event.touches.length === 1) {
-      event.preventDefault()
-      getMousePosition(event.touches[0])
-      onDraw()
+      event.preventDefault();
+      getMousePosition(event.touches[0]);
+      onDraw();
     }
   }
 
   function onTouchEnd() {
-    isDrawing = false
-    if (controls) controls.enabled = true
+    isDrawing = false;
+    if (controls) controls.enabled = true;
   }
 
   function onResize() {
-    if (!containerEl || !camera || !renderer) return
-    camera.aspect = containerEl.clientWidth / containerEl.clientHeight
-    camera.updateProjectionMatrix()
-    renderer.setSize(containerEl.clientWidth, containerEl.clientHeight)
-    const resolution = new THREE.Vector2(containerEl.clientWidth, containerEl.clientHeight)
-    ;[...edges.inputToHidden, ...edges.hiddenToOutput].forEach((edge) => {
-      const mat = edge?.material as import("three/addons/lines/LineMaterial.js").LineMaterial
-      if (mat?.resolution) mat.resolution.copy(resolution)
-    })
+    if (!containerEl || !camera || !renderer) return;
+    camera.aspect = containerEl.clientWidth / containerEl.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(containerEl.clientWidth, containerEl.clientHeight);
+    const resolution = new THREE.Vector2(containerEl.clientWidth, containerEl.clientHeight);
+    [...edges.inputToHidden, ...edges.hiddenToOutput].forEach((edge) => {
+      const mat = edge?.material as import("three/addons/lines/LineMaterial.js").LineMaterial;
+      if (mat?.resolution) mat.resolution.copy(resolution);
+    });
   }
 
   function animate() {
-    animationId = requestAnimationFrame(animate)
-    if (controls) controls.update()
-    const time = performance.now() * 0.003
-    const pulse = 0.85 + Math.sin(time) * 0.15
+    animationId = requestAnimationFrame(animate);
+    if (controls) controls.update();
+    const time = performance.now() * 0.003;
+    const pulse = 0.85 + Math.sin(time) * 0.15;
     nodes.output.forEach((node, i) => {
       if (node.userData.isWinner && outputHalos[i]) {
-        const haloMat = outputHalos[i].material as import("three").MeshStandardMaterial
-        haloMat.emissiveIntensity *= pulse
+        const haloMat = outputHalos[i].material as import("three").MeshStandardMaterial;
+        haloMat.emissiveIntensity *= pulse;
       }
-    })
-    if (renderer && scene && camera) renderer.render(scene, camera)
+    });
+    if (renderer && scene && camera) renderer.render(scene, camera);
   }
 
-  function resetInput() { inputState.fill(0); updateVisualisation() }
-  function randomiseWeights() { generateRandomWeights(); updateVisualisation() }
+  function resetInput() {
+    inputState.fill(0);
+    updateVisualisation();
+  }
+  function randomiseWeights() {
+    generateRandomWeights();
+    updateVisualisation();
+  }
 
   function toggleFullscreen() {
-    if (!containerEl) return
+    if (!containerEl) return;
     if (!document.fullscreenElement) {
-      containerEl.requestFullscreen().catch((err) => console.error("Fullscreen failed:", err))
+      containerEl.requestFullscreen().catch((err) => console.error("Fullscreen failed:", err));
     } else {
-      document.exitFullscreen()
+      document.exitFullscreen();
     }
   }
 
   function onFullscreenChange() {
-    isFullscreen = !!document.fullscreenElement
-    setTimeout(onResize, 100)
+    isFullscreen = !!document.fullscreenElement;
+    setTimeout(onResize, 100);
   }
 
   function cleanup() {
-    if (animationId) cancelAnimationFrame(animationId)
+    if (animationId) cancelAnimationFrame(animationId);
     if (renderer) {
-      renderer.domElement.removeEventListener("mousedown", onMouseDown)
-      renderer.domElement.removeEventListener("mousemove", onMouseMove)
-      renderer.domElement.removeEventListener("mouseup", onMouseUp)
-      renderer.domElement.removeEventListener("mouseleave", onMouseUp)
-      renderer.domElement.removeEventListener("touchstart", onTouchStart)
-      renderer.domElement.removeEventListener("touchmove", onTouchMove)
-      renderer.domElement.removeEventListener("touchend", onTouchEnd)
-      renderer.dispose()
+      renderer.domElement.removeEventListener("mousedown", onMouseDown);
+      renderer.domElement.removeEventListener("mousemove", onMouseMove);
+      renderer.domElement.removeEventListener("mouseup", onMouseUp);
+      renderer.domElement.removeEventListener("mouseleave", onMouseUp);
+      renderer.domElement.removeEventListener("touchstart", onTouchStart);
+      renderer.domElement.removeEventListener("touchmove", onTouchMove);
+      renderer.domElement.removeEventListener("touchend", onTouchEnd);
+      renderer.dispose();
     }
-    nodes.input.forEach((n) => { n.geometry.dispose(); (n.material as import("three").Material).dispose() })
-    nodes.hidden.forEach((n) => { n.geometry.dispose(); (n.material as import("three").Material).dispose() })
-    nodes.output.forEach((n) => { n.geometry.dispose(); (n.material as import("three").Material).dispose() })
-    outputHalos.forEach((h) => { h.geometry.dispose(); (h.material as import("three").Material).dispose() })
-    edges.inputToHidden.forEach((e) => { e.geometry.dispose(); (e.material as import("three").Material).dispose() })
-    edges.hiddenToOutput.forEach((e) => { e.geometry.dispose(); (e.material as import("three").Material).dispose() })
-    nodes.input = []; nodes.hidden = []; nodes.output = []
-    edges.inputToHidden = []; edges.hiddenToOutput = []
-    outputHalos.length = 0
+    nodes.input.forEach((n) => {
+      n.geometry.dispose();
+      (n.material as import("three").Material).dispose();
+    });
+    nodes.hidden.forEach((n) => {
+      n.geometry.dispose();
+      (n.material as import("three").Material).dispose();
+    });
+    nodes.output.forEach((n) => {
+      n.geometry.dispose();
+      (n.material as import("three").Material).dispose();
+    });
+    outputHalos.forEach((h) => {
+      h.geometry.dispose();
+      (h.material as import("three").Material).dispose();
+    });
+    edges.inputToHidden.forEach((e) => {
+      e.geometry.dispose();
+      (e.material as import("three").Material).dispose();
+    });
+    edges.hiddenToOutput.forEach((e) => {
+      e.geometry.dispose();
+      (e.material as import("three").Material).dispose();
+    });
+    nodes.input = [];
+    nodes.hidden = [];
+    nodes.output = [];
+    edges.inputToHidden = [];
+    edges.hiddenToOutput = [];
+    outputHalos.length = 0;
   }
 
   onMount(() => {
-    initScene()
-    window.addEventListener("resize", onResize)
-    document.addEventListener("fullscreenchange", onFullscreenChange)
-  })
+    initScene();
+    window.addEventListener("resize", onResize);
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+  });
 
   onDestroy(() => {
-    window.removeEventListener("resize", onResize)
-    document.removeEventListener("fullscreenchange", onFullscreenChange)
-    cleanup()
-  })
+    window.removeEventListener("resize", onResize);
+    document.removeEventListener("fullscreenchange", onFullscreenChange);
+    cleanup();
+  });
 </script>
 
 <div bind:this={containerEl} class="mini-perceptron" class:fullscreen={isFullscreen}>
@@ -424,19 +487,30 @@
           max="4.0"
           step="0.1"
           value={wireGamma}
-          oninput={(e) => { wireGamma = Number.parseFloat((e.target as HTMLInputElement).value); updateVisualisation() }}
+          oninput={(e) => {
+            wireGamma = Number.parseFloat((e.target as HTMLInputElement).value);
+            updateVisualisation();
+          }}
         />
       </label>
     </div>
   </div>
-  <button class="fullscreen-button" onclick={toggleFullscreen} title={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}>
+  <button
+    class="fullscreen-button"
+    onclick={toggleFullscreen}
+    title={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+  >
     {#if !isFullscreen}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+        <path
+          d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+        />
       </svg>
     {:else}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
+        <path
+          d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"
+        />
       </svg>
     {/if}
   </button>

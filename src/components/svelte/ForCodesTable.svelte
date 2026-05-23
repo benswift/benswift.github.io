@@ -1,36 +1,32 @@
 <script lang="ts">
   interface ForCode {
-    division: string
-    group: string
-    field: string
-    description: string
+    division: string;
+    group: string;
+    field: string;
+    description: string;
   }
 
-  let { codes }: { codes: ForCode[] } = $props()
+  let { codes }: { codes: ForCode[] } = $props();
 
-  let searchQuery = $state("")
+  let searchQuery = $state("");
 
   let filteredCodes = $derived(
     searchQuery
       ? codes.filter((code) => {
-          const query = searchQuery.toLowerCase()
+          const query = searchQuery.toLowerCase();
           return (
             code.field.toLowerCase().includes(query) ||
             code.description.toLowerCase().includes(query) ||
             code.division.toLowerCase().includes(query) ||
             code.group.toLowerCase().includes(query)
-          )
+          );
         })
       : codes,
-  )
+  );
 </script>
 
 <div class="for-codes-table">
-  <input
-    bind:value={searchQuery}
-    class="search"
-    placeholder="type to filter FoR codes..."
-  />
+  <input bind:value={searchQuery} class="search" placeholder="type to filter FoR codes..." />
   <table>
     <thead>
       <tr>

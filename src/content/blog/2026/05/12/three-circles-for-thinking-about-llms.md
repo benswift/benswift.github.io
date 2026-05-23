@@ -1,7 +1,6 @@
 ---
 title: "Three circles for thinking about LLMs"
-description:
-  "A Venn diagram for clarifying what's actually at stake when people argue
+description: "A Venn diagram for clarifying what's actually at stake when people argue
   about whether LLMs are intelligent, conscious, or just stochastic parrots."
 # published: false
 tags: [ai, llm, philosophy]

@@ -1,95 +1,95 @@
 <script lang="ts">
-  import { onDestroy, onMount } from "svelte"
-  import ShaderPad from "shaderpad"
+  import { onDestroy, onMount } from "svelte";
+  import ShaderPad from "shaderpad";
 
-  let containerEl: HTMLDivElement
-  let glCanvas: HTMLCanvasElement = $state()!
-  let textCanvas: HTMLCanvasElement = $state()!
-  let ctx: CanvasRenderingContext2D | null = null
-  let shader: ShaderPad | null = null
-  let resizeObserver: ResizeObserver | null = null
-  let intersectionObserver: IntersectionObserver | null = null
-  let rafId: number | null = null
-  let prefersReducedMotion = $state(false)
-  let fallbackImageUrl = $state("")
+  let containerEl: HTMLDivElement;
+  let glCanvas: HTMLCanvasElement = $state()!;
+  let textCanvas: HTMLCanvasElement = $state()!;
+  let ctx: CanvasRenderingContext2D | null = null;
+  let shader: ShaderPad | null = null;
+  let resizeObserver: ResizeObserver | null = null;
+  let intersectionObserver: IntersectionObserver | null = null;
+  let rafId: number | null = null;
+  let prefersReducedMotion = $state(false);
+  let fallbackImageUrl = $state("");
 
   // Two independent inputs drive whether the WebGL loop should run: the
   // browser tab's visibility, and whether the hero is on-screen. We only
   // want to draw when *both* are true — keeping a 60 fps shader running
   // while the user is reading a long blog post is pure battery burn.
-  let isPageVisible = true
-  let isIntersecting = false
+  let isPageVisible = true;
+  let isIntersecting = false;
 
-  const MOBILE_BREAKPOINT = 640
-  const TEXT_UPDATE_FPS = 12
-  const HOVER_RAMP_TIME = 0.12
+  const MOBILE_BREAKPOINT = 640;
+  const TEXT_UPDATE_FPS = 12;
+  const HOVER_RAMP_TIME = 0.12;
   const METRICS = {
     mobile: { charWidth: 10, rowPitch: 22, fontSize: 15 },
     desktop: { charWidth: 14, rowPitch: 30, fontSize: 20 },
-  }
-  let charWidth = METRICS.desktop.charWidth
-  let rowPitch = METRICS.desktop.rowPitch
-  let fontSize = METRICS.desktop.fontSize
-  let font = buildFontString(fontSize)
+  };
+  let charWidth = METRICS.desktop.charWidth;
+  let rowPitch = METRICS.desktop.rowPitch;
+  let fontSize = METRICS.desktop.fontSize;
+  let font = buildFontString(fontSize);
 
   function buildFontString(size: number) {
-    return `700 ${size}px "Atkinson Hyperlegible Mono Variable", "SF Mono", ui-monospace, monospace`
+    return `700 ${size}px "Atkinson Hyperlegible Mono Variable", "SF Mono", ui-monospace, monospace`;
   }
 
   function updateMetrics(width: number) {
-    const m = width < MOBILE_BREAKPOINT ? METRICS.mobile : METRICS.desktop
-    charWidth = m.charWidth
-    rowPitch = m.rowPitch
-    fontSize = m.fontSize
-    font = buildFontString(fontSize)
+    const m = width < MOBILE_BREAKPOINT ? METRICS.mobile : METRICS.desktop;
+    charWidth = m.charWidth;
+    rowPitch = m.rowPitch;
+    fontSize = m.fontSize;
+    font = buildFontString(fontSize);
   }
-  const TYPE_RATE_MIN = 7
-  const TYPE_RATE_MAX = 13
-  const HEAD_CSS = "rgb(255, 248, 232)"
-  const HEAD_GLOW_CSS = "rgba(245, 158, 11, 0.55)"
-  const TAIL_CSS = "rgb(216, 94, 244)"
-  const BG_COLOR = "12, 6, 22"
+  const TYPE_RATE_MIN = 7;
+  const TYPE_RATE_MAX = 13;
+  const HEAD_CSS = "rgb(255, 248, 232)";
+  const HEAD_GLOW_CSS = "rgba(245, 158, 11, 0.55)";
+  const TAIL_CSS = "rgb(216, 94, 244)";
+  const BG_COLOR = "12, 6, 22";
   // Trail fade expressed per-second so the visual decay stays constant at any framerate.
   // Equivalent to the original 0.05 alpha per frame at 12 FPS.
-  const TRAIL_FADE_RATE = 1 - Math.pow(0.95, 12)
-  const BURST_DURATION = 1.6
-  const BURST_INTERVAL_MIN = 3
-  const BURST_INTERVAL_MAX = 13
-  const BURST_SLOPE_RANGE = 0.45
+  const TRAIL_FADE_RATE = 1 - Math.pow(0.95, 12);
+  const BURST_DURATION = 1.6;
+  const BURST_INTERVAL_MIN = 3;
+  const BURST_INTERVAL_MAX = 13;
+  const BURST_SLOPE_RANGE = 0.45;
   const BURST_COLOR_PAIRS: { a: [number, number, number]; b: [number, number, number] }[] = [
     { a: [0.23, 0.51, 0.96], b: [0.75, 0.18, 0.87] }, // blue -> purple (default)
     { a: [0.75, 0.18, 0.87], b: [0.96, 0.62, 0.04] }, // purple -> amber
     { a: [0.96, 0.62, 0.04], b: [1.0, 0.93, 0.78] }, // amber -> cream
-  ]
-  const MAX_PHRASE_LEN = 36
-  const FALLBACK_PHRASES = ["benswift", "human-scale AI", "livecoding", "cybernetics"]
+  ];
+  const MAX_PHRASE_LEN = 36;
+  const FALLBACK_PHRASES = ["benswift", "human-scale AI", "livecoding", "cybernetics"];
 
   interface Row {
-    y: number
-    phrase: string
-    phraseIdx: number
-    startX: number
-    lastHeadChar: string
-    rate: number
-    accumulator: number
-    state: "typing" | "idle"
-    idleUntil: number
+    y: number;
+    phrase: string;
+    phraseIdx: number;
+    startX: number;
+    lastHeadChar: string;
+    rate: number;
+    accumulator: number;
+    state: "typing" | "idle";
+    idleUntil: number;
   }
 
-  let rows: Row[] = []
-  let widthPx = 0
-  let heightPx = 0
-  let dpr = 1
-  let numRows = 0
-  let burstActive = false
-  let burstStart = 0
-  let nextBurstAt = 0
-  let lastTextTime = 0
-  let lastRenderTime = 0
-  let mouseUv: [number, number] = [-2, -2]
-  let hoverStrengthCurrent = 0
-  let hoverStrengthTarget = 0
-  let activePhrases: string[] = []
+  let rows: Row[] = [];
+  let widthPx = 0;
+  let heightPx = 0;
+  let dpr = 1;
+  let numRows = 0;
+  let burstActive = false;
+  let burstStart = 0;
+  let nextBurstAt = 0;
+  let lastTextTime = 0;
+  let lastRenderTime = 0;
+  let mouseUv: [number, number] = [-2, -2];
+  let hoverStrengthCurrent = 0;
+  let hoverStrengthTarget = 0;
+  let activePhrases: string[] = [];
 
   const FRAG = `#version 300 es
 precision highp float;
@@ -185,54 +185,57 @@ void main() {
 
   outColor = vec4(col, 1.0);
 }
-`
+`;
 
   function randInt(min: number, max: number) {
-    return Math.floor(Math.random() * (max - min)) + min
+    return Math.floor(Math.random() * (max - min)) + min;
   }
 
   function randFloat(min: number, max: number) {
-    return Math.random() * (max - min) + min
+    return Math.random() * (max - min) + min;
   }
 
   function readPhrasesFromMeta(): string[] {
-    if (typeof document === "undefined") return []
-    const meta = document.querySelector('meta[name="hero-phrases"]') as HTMLMetaElement | null
-    if (!meta) return []
-    return meta.content.split("|").map((p) => p.trim()).filter(Boolean)
+    if (typeof document === "undefined") return [];
+    const meta = document.querySelector('meta[name="hero-phrases"]') as HTMLMetaElement | null;
+    if (!meta) return [];
+    return meta.content
+      .split("|")
+      .map((p) => p.trim())
+      .filter(Boolean);
   }
 
   function readFallbackImageFromMeta(): string {
-    if (typeof document === "undefined") return ""
-    const meta = document.querySelector('meta[name="hero-image-url"]') as HTMLMetaElement | null
-    return meta?.content ?? ""
+    if (typeof document === "undefined") return "";
+    const meta = document.querySelector('meta[name="hero-image-url"]') as HTMLMetaElement | null;
+    return meta?.content ?? "";
   }
 
   function pickPhrase() {
-    return activePhrases[Math.floor(Math.random() * activePhrases.length)] ?? "benswift"
+    return activePhrases[Math.floor(Math.random() * activePhrases.length)] ?? "benswift";
   }
 
   function pickStartX(phrase: string) {
-    const textWidth = phrase.length * charWidth
-    const slack = Math.max(0, widthPx - textWidth - charWidth * 2)
-    return charWidth + randInt(0, slack + 1)
+    const textWidth = phrase.length * charWidth;
+    const slack = Math.max(0, widthPx - textWidth - charWidth * 2);
+    return charWidth + randInt(0, slack + 1);
   }
 
   function resetRow(row: Row, now: number) {
-    row.phrase = pickPhrase()
-    row.phraseIdx = 0
-    row.startX = pickStartX(row.phrase)
-    row.lastHeadChar = ""
-    row.rate = randFloat(TYPE_RATE_MIN, TYPE_RATE_MAX)
-    row.accumulator = 0
-    row.state = "typing"
-    row.idleUntil = now
+    row.phrase = pickPhrase();
+    row.phraseIdx = 0;
+    row.startX = pickStartX(row.phrase);
+    row.lastHeadChar = "";
+    row.rate = randFloat(TYPE_RATE_MIN, TYPE_RATE_MAX);
+    row.accumulator = 0;
+    row.state = "typing";
+    row.idleUntil = now;
   }
 
   function initRows(now: number) {
-    rows = []
+    rows = [];
     for (let i = 0; i < numRows; i++) {
-      const phrase = pickPhrase()
+      const phrase = pickPhrase();
       const row: Row = {
         y: i * rowPitch + Math.floor((rowPitch - fontSize) / 2),
         phrase,
@@ -243,304 +246,302 @@ void main() {
         accumulator: Math.random(),
         state: "idle",
         idleUntil: now + randFloat(0, 3.5),
-      }
-      rows.push(row)
+      };
+      rows.push(row);
     }
   }
 
   function resize() {
-    if (!containerEl || !textCanvas || !glCanvas) return
-    const rect = containerEl.getBoundingClientRect()
-    dpr = Math.min(window.devicePixelRatio || 1, 2)
-    widthPx = Math.max(1, Math.floor(rect.width))
-    heightPx = Math.max(1, Math.floor(rect.height))
-    updateMetrics(widthPx)
+    if (!containerEl || !textCanvas || !glCanvas) return;
+    const rect = containerEl.getBoundingClientRect();
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    widthPx = Math.max(1, Math.floor(rect.width));
+    heightPx = Math.max(1, Math.floor(rect.height));
+    updateMetrics(widthPx);
 
-    textCanvas.width = Math.max(1, Math.floor(widthPx * dpr))
-    textCanvas.height = Math.max(1, Math.floor(heightPx * dpr))
-    ctx = textCanvas.getContext("2d")
+    textCanvas.width = Math.max(1, Math.floor(widthPx * dpr));
+    textCanvas.height = Math.max(1, Math.floor(heightPx * dpr));
+    ctx = textCanvas.getContext("2d");
     if (ctx) {
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-      ctx.textBaseline = "top"
-      ctx.font = font
-      ctx.fillStyle = "#0c0614"
-      ctx.fillRect(0, 0, widthPx, heightPx)
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.textBaseline = "top";
+      ctx.font = font;
+      ctx.fillStyle = "#0c0614";
+      ctx.fillRect(0, 0, widthPx, heightPx);
     }
 
-    glCanvas.width = textCanvas.width
-    glCanvas.height = textCanvas.height
+    glCanvas.width = textCanvas.width;
+    glCanvas.height = textCanvas.height;
 
-    const verticalSlack = Math.max(0, heightPx - rowPitch * 2)
-    numRows = Math.max(1, Math.floor(verticalSlack / rowPitch) + 2)
-    initRows(performance.now() / 1000)
+    const verticalSlack = Math.max(0, heightPx - rowPitch * 2);
+    numRows = Math.max(1, Math.floor(verticalSlack / rowPitch) + 2);
+    initRows(performance.now() / 1000);
 
     if (shader) {
-      shader.updateUniforms({ u_cellSize: [charWidth / widthPx, rowPitch / heightPx] })
+      shader.updateUniforms({ u_cellSize: [charWidth / widthPx, rowPitch / heightPx] });
     }
   }
 
   function updateText(now: number) {
-    if (!ctx) return
-    const t = now / 1000
-    const dt = lastTextTime === 0 ? 1 / TEXT_UPDATE_FPS : Math.min(0.25, (now - lastTextTime) / 1000)
-    lastTextTime = now
+    if (!ctx) return;
+    const t = now / 1000;
+    const dt =
+      lastTextTime === 0 ? 1 / TEXT_UPDATE_FPS : Math.min(0.25, (now - lastTextTime) / 1000);
+    lastTextTime = now;
 
     // Fade toward bg (trail decay) — alpha derived from dt so cadence doesn't matter.
-    const trailAlpha = 1 - Math.pow(1 - TRAIL_FADE_RATE, dt)
-    ctx.fillStyle = `rgba(${BG_COLOR}, ${trailAlpha})`
-    ctx.fillRect(0, 0, widthPx, heightPx)
+    const trailAlpha = 1 - Math.pow(1 - TRAIL_FADE_RATE, dt);
+    ctx.fillStyle = `rgba(${BG_COLOR}, ${trailAlpha})`;
+    ctx.fillRect(0, 0, widthPx, heightPx);
 
-    ctx.textBaseline = "top"
-    ctx.font = font
+    ctx.textBaseline = "top";
+    ctx.font = font;
 
     for (const row of rows) {
       if (row.state === "idle") {
-        if (t >= row.idleUntil) resetRow(row, t)
-        else continue
+        if (t >= row.idleUntil) resetRow(row, t);
+        else continue;
       }
 
-      row.accumulator += row.rate * dt
+      row.accumulator += row.rate * dt;
       while (row.accumulator >= 1 && row.phraseIdx < row.phrase.length) {
-        row.accumulator -= 1
-        const currentIdx = row.phraseIdx
-        const x = row.startX + currentIdx * charWidth
+        row.accumulator -= 1;
+        const currentIdx = row.phraseIdx;
+        const x = row.startX + currentIdx * charWidth;
 
         // Demote previous head char to tail colour
         if (row.lastHeadChar && currentIdx > 0) {
-          const prevX = row.startX + (currentIdx - 1) * charWidth
-          ctx.fillStyle = TAIL_CSS
-          ctx.fillText(row.lastHeadChar, prevX, row.y)
+          const prevX = row.startX + (currentIdx - 1) * charWidth;
+          ctx.fillStyle = TAIL_CSS;
+          ctx.fillText(row.lastHeadChar, prevX, row.y);
         }
 
         // Paint new head char with amber glow
-        const ch = row.phrase[currentIdx]!
-        ctx.shadowColor = HEAD_GLOW_CSS
-        ctx.shadowBlur = 10
-        ctx.fillStyle = HEAD_CSS
-        ctx.fillText(ch, x, row.y)
-        ctx.shadowBlur = 0
-        row.lastHeadChar = ch
-        row.phraseIdx += 1
+        const ch = row.phrase[currentIdx]!;
+        ctx.shadowColor = HEAD_GLOW_CSS;
+        ctx.shadowBlur = 10;
+        ctx.fillStyle = HEAD_CSS;
+        ctx.fillText(ch, x, row.y);
+        ctx.shadowBlur = 0;
+        row.lastHeadChar = ch;
+        row.phraseIdx += 1;
       }
 
       // Phrase fully typed — demote the final head to tail and enter idle hold
       if (row.phraseIdx >= row.phrase.length && row.state === "typing") {
         if (row.lastHeadChar) {
-          const lastX = row.startX + (row.phraseIdx - 1) * charWidth
-          ctx.fillStyle = TAIL_CSS
-          ctx.fillText(row.lastHeadChar, lastX, row.y)
-          row.lastHeadChar = ""
+          const lastX = row.startX + (row.phraseIdx - 1) * charWidth;
+          ctx.fillStyle = TAIL_CSS;
+          ctx.fillText(row.lastHeadChar, lastX, row.y);
+          row.lastHeadChar = "";
         }
-        row.state = "idle"
-        row.idleUntil = t + randFloat(1.2, 3.2)
+        row.state = "idle";
+        row.idleUntil = t + randFloat(1.2, 3.2);
       }
     }
   }
 
   function updateBurst(t: number) {
     if (!burstActive && t >= nextBurstAt) {
-      burstActive = true
-      burstStart = t
+      burstActive = true;
+      burstStart = t;
       if (shader) {
-        const pair = BURST_COLOR_PAIRS[Math.floor(Math.random() * BURST_COLOR_PAIRS.length)]!
+        const pair = BURST_COLOR_PAIRS[Math.floor(Math.random() * BURST_COLOR_PAIRS.length)]!;
         shader.updateUniforms({
           u_burstSlope: randFloat(-BURST_SLOPE_RANGE, BURST_SLOPE_RANGE),
           u_burstDirection: Math.random() < 0.5 ? 1 : -1,
           u_burstColorA: pair.a,
           u_burstColorB: pair.b,
-        })
+        });
       }
     }
-    let burstProgress = -1
+    let burstProgress = -1;
     if (burstActive) {
-      burstProgress = (t - burstStart) / BURST_DURATION
+      burstProgress = (t - burstStart) / BURST_DURATION;
       if (burstProgress >= 1) {
-        burstActive = false
-        nextBurstAt = t + randFloat(BURST_INTERVAL_MIN, BURST_INTERVAL_MAX)
-        burstProgress = -1
+        burstActive = false;
+        nextBurstAt = t + randFloat(BURST_INTERVAL_MIN, BURST_INTERVAL_MAX);
+        burstProgress = -1;
       }
     }
-    return burstProgress
+    return burstProgress;
   }
 
   function prepareActivePhrases() {
     const cleaned = readPhrasesFromMeta()
       .map((p) => p.replaceAll(/\s+/g, " ").trim())
-      .filter((p) => p.length > 0 && p.length <= MAX_PHRASE_LEN)
-    const source = cleaned.length > 0 ? cleaned : FALLBACK_PHRASES
-    const seen = new Set<string>()
-    const uniq: string[] = []
+      .filter((p) => p.length > 0 && p.length <= MAX_PHRASE_LEN);
+    const source = cleaned.length > 0 ? cleaned : FALLBACK_PHRASES;
+    const seen = new Set<string>();
+    const uniq: string[] = [];
     for (const p of source) {
-      const k = p.toLowerCase()
+      const k = p.toLowerCase();
       if (!seen.has(k)) {
-        seen.add(k)
-        uniq.push(p)
+        seen.add(k);
+        uniq.push(p);
       }
     }
-    activePhrases = uniq
+    activePhrases = uniq;
   }
 
   function tick() {
-    if (!shader) return
-    const now = performance.now()
-    const t = now / 1000
+    if (!shader) return;
+    const now = performance.now();
+    const t = now / 1000;
 
     // Text canvas update + texture upload throttled to TEXT_UPDATE_FPS
     // (the per-frame cost was almost entirely the texSubImage2D of the whole canvas)
     if (now - lastTextTime >= 1000 / TEXT_UPDATE_FPS) {
-      updateText(now)
-      shader.updateTextures({ u_text: textCanvas })
+      updateText(now);
+      shader.updateTextures({ u_text: textCanvas });
     }
 
     // Smooth hover strength toward target every render frame
-    const dtRender = lastRenderTime === 0 ? 1 / 60 : Math.min(0.25, (now - lastRenderTime) / 1000)
-    lastRenderTime = now
-    const k = Math.min(1, dtRender / HOVER_RAMP_TIME)
-    hoverStrengthCurrent += (hoverStrengthTarget - hoverStrengthCurrent) * k
+    const dtRender = lastRenderTime === 0 ? 1 / 60 : Math.min(0.25, (now - lastRenderTime) / 1000);
+    lastRenderTime = now;
+    const k = Math.min(1, dtRender / HOVER_RAMP_TIME);
+    hoverStrengthCurrent += (hoverStrengthTarget - hoverStrengthCurrent) * k;
 
-    const bp = updateBurst(t)
+    const bp = updateBurst(t);
     shader.updateUniforms({
       u_burstProgress: bp >= 0 ? bp : 0,
       u_burstActive: bp >= 0 ? 1 : 0,
       u_mouse: mouseUv,
       u_hoverStrength: hoverStrengthCurrent,
-    })
-    shader.step()
+    });
+    shader.step();
   }
 
   function loop() {
-    tick()
-    rafId = requestAnimationFrame(loop)
+    tick();
+    rafId = requestAnimationFrame(loop);
   }
 
   function startLoop() {
-    if (rafId !== null) return
-    rafId = requestAnimationFrame(loop)
+    if (rafId !== null) return;
+    rafId = requestAnimationFrame(loop);
   }
 
   function stopLoop() {
     if (rafId !== null) {
-      cancelAnimationFrame(rafId)
-      rafId = null
-      lastTextTime = 0
-      lastRenderTime = 0
+      cancelAnimationFrame(rafId);
+      rafId = null;
+      lastTextTime = 0;
+      lastRenderTime = 0;
     }
   }
 
   function syncLoopState() {
-    if (isPageVisible && isIntersecting) startLoop()
-    else stopLoop()
+    if (isPageVisible && isIntersecting) startLoop();
+    else stopLoop();
   }
 
   function onVisibilityChange() {
-    isPageVisible = !document.hidden
-    syncLoopState()
+    isPageVisible = !document.hidden;
+    syncLoopState();
   }
 
   function updatePointerUv(e: PointerEvent) {
-    if (!containerEl) return
-    const rect = containerEl.getBoundingClientRect()
-    mouseUv = [
-      (e.clientX - rect.left) / rect.width,
-      1 - (e.clientY - rect.top) / rect.height,
-    ]
+    if (!containerEl) return;
+    const rect = containerEl.getBoundingClientRect();
+    mouseUv = [(e.clientX - rect.left) / rect.width, 1 - (e.clientY - rect.top) / rect.height];
   }
 
   function onPointerMove(e: PointerEvent) {
-    updatePointerUv(e)
-    hoverStrengthTarget = 1
+    updatePointerUv(e);
+    hoverStrengthTarget = 1;
   }
 
   function onPointerDown(e: PointerEvent) {
-    updatePointerUv(e)
-    hoverStrengthTarget = 1
+    updatePointerUv(e);
+    hoverStrengthTarget = 1;
   }
 
   function onPointerLeave() {
-    hoverStrengthTarget = 0
+    hoverStrengthTarget = 0;
   }
 
   onMount(() => {
-    prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    fallbackImageUrl = readFallbackImageFromMeta()
+    prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    fallbackImageUrl = readFallbackImageFromMeta();
 
     if (prefersReducedMotion) {
       // <img> path — no canvas/shader setup needed.
-      return
+      return;
     }
 
-    prepareActivePhrases()
-    resize()
-    shader = new ShaderPad(FRAG, { canvas: glCanvas })
+    prepareActivePhrases();
+    resize();
+    shader = new ShaderPad(FRAG, { canvas: glCanvas });
     shader.initializeTexture("u_text", textCanvas, {
       minFilter: "LINEAR",
       magFilter: "LINEAR",
-    })
-    shader.initializeUniform("u_burstProgress", "float", 0)
-    shader.initializeUniform("u_burstActive", "float", 0)
-    shader.initializeUniform("u_burstSlope", "float", 0)
-    shader.initializeUniform("u_burstDirection", "float", 1)
-    shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0]!.a)
-    shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b)
-    shader.initializeUniform("u_mouse", "float", mouseUv)
-    shader.initializeUniform("u_hoverStrength", "float", 0)
-    shader.initializeUniform("u_cellSize", "float", [charWidth / widthPx, rowPitch / heightPx])
+    });
+    shader.initializeUniform("u_burstProgress", "float", 0);
+    shader.initializeUniform("u_burstActive", "float", 0);
+    shader.initializeUniform("u_burstSlope", "float", 0);
+    shader.initializeUniform("u_burstDirection", "float", 1);
+    shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0]!.a);
+    shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b);
+    shader.initializeUniform("u_mouse", "float", mouseUv);
+    shader.initializeUniform("u_hoverStrength", "float", 0);
+    shader.initializeUniform("u_cellSize", "float", [charWidth / widthPx, rowPitch / heightPx]);
 
-    nextBurstAt = performance.now() / 1000 + 2.5
-    isPageVisible = !document.hidden
+    nextBurstAt = performance.now() / 1000 + 2.5;
+    isPageVisible = !document.hidden;
 
-    document.addEventListener("visibilitychange", onVisibilityChange)
-    document.addEventListener("astro:page-load", onPageLoad)
-    containerEl.addEventListener("pointermove", onPointerMove)
-    containerEl.addEventListener("pointerdown", onPointerDown)
-    containerEl.addEventListener("pointerleave", onPointerLeave)
-    containerEl.addEventListener("pointercancel", onPointerLeave)
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    document.addEventListener("astro:page-load", onPageLoad);
+    containerEl.addEventListener("pointermove", onPointerMove);
+    containerEl.addEventListener("pointerdown", onPointerDown);
+    containerEl.addEventListener("pointerleave", onPointerLeave);
+    containerEl.addEventListener("pointercancel", onPointerLeave);
 
     resizeObserver = new ResizeObserver(() => {
-      resize()
-    })
-    resizeObserver.observe(containerEl)
+      resize();
+    });
+    resizeObserver.observe(containerEl);
 
     // Pause the shader loop when the hero scrolls off-screen. The 200 px
     // rootMargin starts work just before it re-enters the viewport so the
     // canvas is warm by the time the user sees it again.
     intersectionObserver = new IntersectionObserver(
       ([entry]) => {
-        isIntersecting = entry?.isIntersecting ?? false
-        syncLoopState()
+        isIntersecting = entry?.isIntersecting ?? false;
+        syncLoopState();
       },
       { rootMargin: "200px" },
-    )
-    intersectionObserver.observe(containerEl)
-  })
+    );
+    intersectionObserver.observe(containerEl);
+  });
 
   function onPageLoad() {
-    prepareActivePhrases()
+    prepareActivePhrases();
   }
 
   onDestroy(() => {
-    document.removeEventListener("visibilitychange", onVisibilityChange)
-    document.removeEventListener("astro:page-load", onPageLoad)
+    document.removeEventListener("visibilitychange", onVisibilityChange);
+    document.removeEventListener("astro:page-load", onPageLoad);
     if (containerEl) {
-      containerEl.removeEventListener("pointermove", onPointerMove)
-      containerEl.removeEventListener("pointerdown", onPointerDown)
-      containerEl.removeEventListener("pointerleave", onPointerLeave)
-      containerEl.removeEventListener("pointercancel", onPointerLeave)
+      containerEl.removeEventListener("pointermove", onPointerMove);
+      containerEl.removeEventListener("pointerdown", onPointerDown);
+      containerEl.removeEventListener("pointerleave", onPointerLeave);
+      containerEl.removeEventListener("pointercancel", onPointerLeave);
     }
-    stopLoop()
+    stopLoop();
     if (resizeObserver) {
-      resizeObserver.disconnect()
-      resizeObserver = null
+      resizeObserver.disconnect();
+      resizeObserver = null;
     }
     if (intersectionObserver) {
-      intersectionObserver.disconnect()
-      intersectionObserver = null
+      intersectionObserver.disconnect();
+      intersectionObserver = null;
     }
     if (shader) {
-      shader.destroy()
-      shader = null
+      shader.destroy();
+      shader = null;
     }
-  })
+  });
 </script>
 
 <div bind:this={containerEl} class="hero-canvas" aria-hidden="true">

@@ -1,18 +1,18 @@
 <script lang="ts">
   interface Props {
-    pattern: string
+    pattern: string;
   }
 
-  let { pattern }: Props = $props()
+  let { pattern }: Props = $props();
 
   const columns = $derived(
     pattern.split(";").map((col) =>
       col.split(",").map((slot) => {
-        const [bit, pos] = slot.split(":")
-        return { hit: bit === "1", pos: Number.parseInt(pos, 10) }
+        const [bit, pos] = slot.split(":");
+        return { hit: bit === "1", pos: Number.parseInt(pos, 10) };
       }),
     ),
-  )
+  );
 </script>
 
 <div class="rhythm">

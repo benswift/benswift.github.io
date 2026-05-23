@@ -1,32 +1,31 @@
 <script lang="ts">
-  import { onMount } from "svelte"
+  import { onMount } from "svelte";
 
-  type ChatMessage = { role: "user" | "assistant"; content: string }
+  type ChatMessage = { role: "user" | "assistant"; content: string };
   type ModelState =
     | { kind: "unsupported"; reason: "mobile" | "no-webgpu" }
     | { kind: "ready" }
     | { kind: "loading"; progress: number; status: string }
     | { kind: "chat" }
-    | { kind: "error"; message: string }
+    | { kind: "error"; message: string };
 
-  let modelState: ModelState = $state({ kind: "ready" })
-  let messages: ChatMessage[] = $state([])
-  let input = $state("")
-  let generating = $state(false)
-  let siteContent = $state("")
+  let modelState: ModelState = $state({ kind: "ready" });
+  let messages: ChatMessage[] = $state([]);
+  let input = $state("");
+  let generating = $state(false);
+  let siteContent = $state("");
 
-  let llm: any = $state(null)
-  let messagesEl: HTMLDivElement | undefined = $state(undefined)
-  let inputEl: HTMLTextAreaElement | undefined = $state(undefined)
+  let llm: any = $state(null);
+  let messagesEl: HTMLDivElement | undefined = $state(undefined);
+  let inputEl: HTMLTextAreaElement | undefined = $state(undefined);
 
   const MODEL_URL =
-    "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/main/gemma-4-E2B-it-web.task"
-  const WASM_URL =
-    "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@0.10.27/wasm"
+    "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/main/gemma-4-E2B-it-web.task";
+  const WASM_URL = "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@0.10.27/wasm";
 
   function scrollToBottom() {
     if (messagesEl) {
-      messagesEl.scrollTop = messagesEl.scrollHeight
+      messagesEl.scrollTop = messagesEl.scrollHeight;
     }
   }
 
@@ -39,63 +38,63 @@ You are actually a Gemma 4 language model running in the visitor's browser, not 
 
 Here is content from Ben's website to use when answering questions:
 
-${siteContent}`
+${siteContent}`;
   }
 
   function formatPrompt(): string {
-    let prompt = `<|turn>system\n${buildSystemPrompt()}<turn|>\n`
+    let prompt = `<|turn>system\n${buildSystemPrompt()}<turn|>\n`;
     for (const msg of messages.slice(0, -1)) {
-      const role = msg.role === "user" ? "user" : "model"
-      prompt += `<|turn>${role}\n${msg.content}<turn|>\n`
+      const role = msg.role === "user" ? "user" : "model";
+      prompt += `<|turn>${role}\n${msg.content}<turn|>\n`;
     }
-    prompt += "<|turn>model\n"
-    return prompt
+    prompt += "<|turn>model\n";
+    return prompt;
   }
 
   async function loadModel() {
-    modelState = { kind: "loading", progress: 0, status: "loading libraries..." }
+    modelState = { kind: "loading", progress: 0, status: "loading libraries..." };
 
     try {
       const [contentResponse, mediapipe] = await Promise.all([
         fetch("/site-content.txt"),
         import("@mediapipe/tasks-genai"),
-      ])
+      ]);
 
-      siteContent = await contentResponse.text()
+      siteContent = await contentResponse.text();
 
-      const { FilesetResolver, LlmInference } = mediapipe
+      const { FilesetResolver, LlmInference } = mediapipe;
 
-      modelState = { kind: "loading", progress: 3, status: "loading WASM runtime..." }
-      const genai = await FilesetResolver.forGenAiTasks(WASM_URL)
+      modelState = { kind: "loading", progress: 3, status: "loading WASM runtime..." };
+      const genai = await FilesetResolver.forGenAiTasks(WASM_URL);
 
-      modelState = { kind: "loading", progress: 5, status: "downloading model (2 GB)..." }
+      modelState = { kind: "loading", progress: 5, status: "downloading model (2 GB)..." };
 
-      const response = await fetch(MODEL_URL)
-      const contentLength = Number(response.headers.get("content-length"))
-      const reader = response.body!.getReader()
+      const response = await fetch(MODEL_URL);
+      const contentLength = Number(response.headers.get("content-length"));
+      const reader = response.body!.getReader();
 
-      let loaded = 0
+      let loaded = 0;
       const trackingStream = new ReadableStream({
         async pull(controller) {
-          const { done, value } = await reader.read()
+          const { done, value } = await reader.read();
           if (done) {
-            controller.close()
-            return
+            controller.close();
+            return;
           }
-          loaded += value.byteLength
-          const downloadProgress = 5 + (loaded / contentLength) * 85
-          const mb = (loaded / 1024 / 1024).toFixed(0)
-          const totalMb = (contentLength / 1024 / 1024).toFixed(0)
+          loaded += value.byteLength;
+          const downloadProgress = 5 + (loaded / contentLength) * 85;
+          const mb = (loaded / 1024 / 1024).toFixed(0);
+          const totalMb = (contentLength / 1024 / 1024).toFixed(0);
           modelState = {
             kind: "loading",
             progress: downloadProgress,
             status: `downloading model... ${mb} / ${totalMb} MB`,
-          }
-          controller.enqueue(value)
+          };
+          controller.enqueue(value);
         },
-      })
+      });
 
-      modelState = { kind: "loading", progress: 90, status: "initialising model..." }
+      modelState = { kind: "loading", progress: 90, status: "initialising model..." };
 
       llm = await LlmInference.createFromOptions(genai, {
         baseOptions: {
@@ -105,64 +104,66 @@ ${siteContent}`
         topK: 40,
         temperature: 0.8,
         randomSeed: 101,
-      })
+      });
 
-      modelState = { kind: "chat" }
-      inputEl?.focus()
+      modelState = { kind: "chat" };
+      inputEl?.focus();
     } catch (e) {
-      modelState = { kind: "error", message: e instanceof Error ? e.message : String(e) }
+      modelState = { kind: "error", message: e instanceof Error ? e.message : String(e) };
     }
   }
 
   async function send() {
-    const text = input.trim()
-    if (!text || generating || !llm) return
+    const text = input.trim();
+    if (!text || generating || !llm) return;
 
-    input = ""
-    messages.push({ role: "user", content: text })
-    messages.push({ role: "assistant", content: "" })
-    generating = true
+    input = "";
+    messages.push({ role: "user", content: text });
+    messages.push({ role: "assistant", content: "" });
+    generating = true;
 
-    await Promise.resolve()
-    scrollToBottom()
+    await Promise.resolve();
+    scrollToBottom();
 
     try {
-      const prompt = formatPrompt()
+      const prompt = formatPrompt();
 
       llm.generateResponse(prompt, (partialResult: string, done: boolean) => {
-        messages[messages.length - 1].content += partialResult
-        scrollToBottom()
+        messages[messages.length - 1].content += partialResult;
+        scrollToBottom();
         if (done) {
-          generating = false
+          generating = false;
         }
-      })
+      });
     } catch (e) {
-      const errMsg = e instanceof Error ? e.message : String(e)
-      messages[messages.length - 1].content += `\n\n[Error: ${errMsg}]`
-      generating = false
-      scrollToBottom()
+      const errMsg = e instanceof Error ? e.message : String(e);
+      messages[messages.length - 1].content += `\n\n[Error: ${errMsg}]`;
+      generating = false;
+      scrollToBottom();
     }
   }
 
   function handleKeydown(e: KeyboardEvent) {
     if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault()
-      send()
+      e.preventDefault();
+      send();
     }
   }
 
   function isMobileDevice(): boolean {
-    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+    return (
+      /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
       (navigator.maxTouchPoints > 1 && /Macintosh/i.test(navigator.userAgent))
+    );
   }
 
   onMount(() => {
     if (isMobileDevice()) {
-      modelState = { kind: "unsupported", reason: "mobile" }
+      modelState = { kind: "unsupported", reason: "mobile" };
     } else if (!navigator.gpu) {
-      modelState = { kind: "unsupported", reason: "no-webgpu" }
+      modelState = { kind: "unsupported", reason: "no-webgpu" };
     }
-  })
+  });
 </script>
 
 <div class="gemma-chat">
@@ -170,15 +171,13 @@ ${siteContent}`
     <div class="notice">
       {#if modelState.reason === "mobile"}
         <p>
-          This demo loads a ~2 GB language model into your browser, which
-          is too large for mobile devices. Try it on a desktop or laptop
-          with a dedicated GPU for the best experience.
+          This demo loads a ~2 GB language model into your browser, which is too large for mobile
+          devices. Try it on a desktop or laptop with a dedicated GPU for the best experience.
         </p>
       {:else}
         <p>
-          This demo requires <strong>WebGPU</strong>, which your browser
-          doesn't appear to support. It's available in Chrome, Edge,
-          Safari 17+, and Firefox 141+. The model is ~2 GB and runs
+          This demo requires <strong>WebGPU</strong>, which your browser doesn't appear to support.
+          It's available in Chrome, Edge, Safari 17+, and Firefox 141+. The model is ~2 GB and runs
           entirely in your browser---nothing is sent to a server.
         </p>
       {/if}
@@ -186,9 +185,9 @@ ${siteContent}`
   {:else if modelState.kind === "ready"}
     <div class="notice">
       <p>
-        This loads Google's <strong>Gemma 4 E2B</strong> language model (~2 GB)
-        directly into your browser via WebGPU. It's primed with the content of
-        this site so you can ask it questions about me and my work.
+        This loads Google's <strong>Gemma 4 E2B</strong> language model (~2 GB) directly into your browser
+        via WebGPU. It's primed with the content of this site so you can ask it questions about me and
+        my work.
       </p>
       <button class="load-button" onclick={loadModel}>Load model and start chatting</button>
     </div>
@@ -223,13 +222,19 @@ ${siteContent}`
       >
         {#if messages.length === 0}
           <div class="empty-state">
-            Ask me anything about my research, teaching, livecoding, or whatever else you're curious about.
+            Ask me anything about my research, teaching, livecoding, or whatever else you're curious
+            about.
           </div>
         {/if}
         {#each messages as msg}
           <div class="message {msg.role}">
             <span class="message-role">{msg.role === "user" ? "You" : "Ben (LLM)"}</span>
-            <div class="message-content">{msg.content}{#if msg.role === "assistant" && generating && msg === messages[messages.length - 1]}<span class="cursor" aria-hidden="true">▊</span>{/if}</div>
+            <div class="message-content">
+              {msg.content}{#if msg.role === "assistant" && generating && msg === messages[messages.length - 1]}<span
+                  class="cursor"
+                  aria-hidden="true">▊</span
+                >{/if}
+            </div>
           </div>
         {/each}
       </div>
@@ -367,7 +372,9 @@ ${siteContent}`
   }
 
   @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+      opacity: 0;
+    }
   }
 
   .input-area {

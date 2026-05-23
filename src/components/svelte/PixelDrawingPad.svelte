@@ -1,78 +1,78 @@
 <script lang="ts">
-  import { incrementCell, clearLastCell } from "./pixel-pad-state"
+  import { incrementCell, clearLastCell } from "./pixel-pad-state";
 
   type Props = {
-    pixels: number[]
-    rows: number
-    cols: number
-    step?: number
-    onChange: (pixels: number[]) => void
-  }
+    pixels: number[];
+    rows: number;
+    cols: number;
+    step?: number;
+    onChange: (pixels: number[]) => void;
+  };
 
-  let { pixels, rows, cols, step = 0.15, onChange }: Props = $props()
+  let { pixels, rows, cols, step = 0.15, onChange }: Props = $props();
 
-  let svgEl: SVGSVGElement
-  let isDrawing = $state(false)
-  let lastIndex: number | null = null
+  let svgEl: SVGSVGElement;
+  let isDrawing = $state(false);
+  let lastIndex: number | null = null;
 
   function cellFill(value: number): string {
-    if (value <= 0) return "var(--bg-soft, #252525)"
-    const alpha = 0.3 + value * 0.7
-    return `rgba(190, 46, 221, ${alpha})`
+    if (value <= 0) return "var(--bg-soft, #252525)";
+    const alpha = 0.3 + value * 0.7;
+    return `rgba(190, 46, 221, ${alpha})`;
   }
 
   function pointerToCell(clientX: number, clientY: number): number | null {
-    if (!svgEl) return null
-    const ctm = svgEl.getScreenCTM()
-    if (!ctm) return null
-    const pt = svgEl.createSVGPoint()
-    pt.x = clientX
-    pt.y = clientY
-    const local = pt.matrixTransform(ctm.inverse())
-    const col = Math.floor(local.x)
-    const row = Math.floor(local.y)
-    if (col < 0 || col >= cols || row < 0 || row >= rows) return null
-    return row * cols + col
+    if (!svgEl) return null;
+    const ctm = svgEl.getScreenCTM();
+    if (!ctm) return null;
+    const pt = svgEl.createSVGPoint();
+    pt.x = clientX;
+    pt.y = clientY;
+    const local = pt.matrixTransform(ctm.inverse());
+    const col = Math.floor(local.x);
+    const row = Math.floor(local.y);
+    if (col < 0 || col >= cols || row < 0 || row >= rows) return null;
+    return row * cols + col;
   }
 
   function paintAt(clientX: number, clientY: number) {
-    const index = pointerToCell(clientX, clientY)
-    if (index === null) return
-    const result = incrementCell(pixels, index, step, lastIndex)
-    lastIndex = result.lastIndex
-    if (result.pixels !== pixels) onChange(result.pixels)
+    const index = pointerToCell(clientX, clientY);
+    if (index === null) return;
+    const result = incrementCell(pixels, index, step, lastIndex);
+    lastIndex = result.lastIndex;
+    if (result.pixels !== pixels) onChange(result.pixels);
   }
 
   function handleMouseDown(event: MouseEvent) {
-    isDrawing = true
-    lastIndex = null
-    paintAt(event.clientX, event.clientY)
+    isDrawing = true;
+    lastIndex = null;
+    paintAt(event.clientX, event.clientY);
   }
 
   function handleMouseMove(event: MouseEvent) {
-    if (!isDrawing) return
-    paintAt(event.clientX, event.clientY)
+    if (!isDrawing) return;
+    paintAt(event.clientX, event.clientY);
   }
 
   function endDrag() {
-    isDrawing = false
-    lastIndex = clearLastCell(pixels).lastIndex
+    isDrawing = false;
+    lastIndex = clearLastCell(pixels).lastIndex;
   }
 
   function handleTouchStart(event: TouchEvent) {
-    if (event.touches.length !== 1) return
-    event.preventDefault()
-    isDrawing = true
-    lastIndex = null
-    const t = event.touches[0]
-    paintAt(t.clientX, t.clientY)
+    if (event.touches.length !== 1) return;
+    event.preventDefault();
+    isDrawing = true;
+    lastIndex = null;
+    const t = event.touches[0];
+    paintAt(t.clientX, t.clientY);
   }
 
   function handleTouchMove(event: TouchEvent) {
-    if (!isDrawing || event.touches.length !== 1) return
-    event.preventDefault()
-    const t = event.touches[0]
-    paintAt(t.clientX, t.clientY)
+    if (!isDrawing || event.touches.length !== 1) return;
+    event.preventDefault();
+    const t = event.touches[0];
+    paintAt(t.clientX, t.clientY);
   }
 </script>
 

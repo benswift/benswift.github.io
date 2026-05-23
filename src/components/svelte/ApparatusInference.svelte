@@ -1,175 +1,169 @@
 <script lang="ts">
-  import { onMount, onDestroy } from "svelte"
-  import {
-    PerceptronApparatus,
-    type BoardConfig,
-  } from "perceptron-apparatus"
-  import PixelDrawingPad from "./PixelDrawingPad.svelte"
+  import { onMount, onDestroy } from "svelte";
+  import { PerceptronApparatus, type BoardConfig } from "perceptron-apparatus";
+  import PixelDrawingPad from "./PixelDrawingPad.svelte";
   import {
     ComputationAnimator,
     sampleDigits,
     mnistWeights,
     type StepInfo,
     type MultiplyAccumulateStep,
-  } from "perceptron-apparatus/widgets"
+  } from "perceptron-apparatus/widgets";
 
-  const ANIM_DURATION = 300
+  const ANIM_DURATION = 300;
 
-  let containerEl: HTMLDivElement
-  let apparatusEl: HTMLDivElement
-  let apparatus: PerceptronApparatus | null = null
-  let animator: ComputationAnimator | null = null
-  let abortController: AbortController | null = null
+  let containerEl: HTMLDivElement;
+  let apparatusEl: HTMLDivElement;
+  let apparatus: PerceptronApparatus | null = null;
+  let animator: ComputationAnimator | null = null;
+  let abortController: AbortController | null = null;
 
-  let inputPixels = $state<number[]>(new Array(36).fill(0))
-  let loadedPreset = $state<number | null>(null)
-  let isFullscreen = $state(false)
-  let isRunning = $state(false)
-  let stepDescription = $state("")
-  let prediction = $state<number | null>(null)
-  let progress = $state(0)
-  let currentMac = $state<MultiplyAccumulateStep | null>(null)
+  let inputPixels = $state<number[]>(new Array(36).fill(0));
+  let loadedPreset = $state<number | null>(null);
+  let isFullscreen = $state(false);
+  let isRunning = $state(false);
+  let stepDescription = $state("");
+  let prediction = $state<number | null>(null);
+  let progress = $state(0);
+  let currentMac = $state<MultiplyAccumulateStep | null>(null);
 
   $effect(() => {
-    inputPixels // track
-    pushInputToApparatus()
-  })
+    inputPixels; // track
+    pushInputToApparatus();
+  });
 
   const config: BoardConfig = {
     size: 1000,
     nInput: 36,
     nHidden: 6,
     nOutput: 10,
-  }
+  };
 
   function onStep(info: StepInfo) {
-    stepDescription = info.description
-    progress = info.progress
+    stepDescription = info.description;
+    progress = info.progress;
     if (info.step?.type === "multiply-accumulate") {
-      currentMac = info.step
+      currentMac = info.step;
     } else {
-      currentMac = null
+      currentMac = null;
     }
   }
 
   async function run(mode: "step" | "fast") {
-    if (!animator || isRunning) return
-    abort()
-    prediction = null
-    currentMac = null
-    stepDescription = "Setting weights..."
-    progress = 0
-    isRunning = true
-    abortController = new AbortController()
+    if (!animator || isRunning) return;
+    abort();
+    prediction = null;
+    currentMac = null;
+    stepDescription = "Setting weights...";
+    progress = 0;
+    isRunning = true;
+    abortController = new AbortController();
 
     try {
-      const result = await animator.compute(
-        inputPixels,
-        {
-          mode,
-          stepDuration: mode === "step" ? 400 : 0,
-          signal: abortController.signal,
-          onStep,
-        },
-      )
-      prediction = result.prediction
-      currentMac = null
+      const result = await animator.compute(inputPixels, {
+        mode,
+        stepDuration: mode === "step" ? 400 : 0,
+        signal: abortController.signal,
+        onStep,
+      });
+      prediction = result.prediction;
+      currentMac = null;
     } catch {
       // aborted
     } finally {
-      isRunning = false
+      isRunning = false;
     }
   }
 
   function abort() {
-    abortController?.abort()
-    abortController = null
-    isRunning = false
+    abortController?.abort();
+    abortController = null;
+    isRunning = false;
   }
 
   async function reset() {
-    abort()
-    inputPixels = new Array(36).fill(0)
-    loadedPreset = null
-    prediction = null
-    currentMac = null
-    stepDescription = ""
-    progress = 0
-    apparatus?.clearSlideRuleMarkers()
-    await resetSliders()
+    abort();
+    inputPixels = new Array(36).fill(0);
+    loadedPreset = null;
+    prediction = null;
+    currentMac = null;
+    stepDescription = "";
+    progress = 0;
+    apparatus?.clearSlideRuleMarkers();
+    await resetSliders();
   }
 
   async function resetSliders() {
-    if (!apparatus) return
-    const values: Record<string, number> = {}
-    for (let j = 0; j < 6; j++) values[`C${j}`] = 0
-    for (let k = 0; k < 10; k++) values[`E${k}`] = 0
-    await apparatus.setSliders(values, { duration: ANIM_DURATION })
-    await apparatus.setLogRingRotation(0, { duration: ANIM_DURATION })
+    if (!apparatus) return;
+    const values: Record<string, number> = {};
+    for (let j = 0; j < 6; j++) values[`C${j}`] = 0;
+    for (let k = 0; k < 10; k++) values[`E${k}`] = 0;
+    await apparatus.setSliders(values, { duration: ANIM_DURATION });
+    await apparatus.setLogRingRotation(0, { duration: ANIM_DURATION });
   }
 
   function setWeightSliders() {
-    if (!apparatus) return
-    const values: Record<string, number> = {}
+    if (!apparatus) return;
+    const values: Record<string, number> = {};
     for (let j = 0; j < 6; j++) {
       for (let i = 0; i < 36; i++) {
-        values[`B${j}-${i}`] = mnistWeights.B[i][j]
+        values[`B${j}-${i}`] = mnistWeights.B[i][j];
       }
     }
     for (let k = 0; k < 10; k++) {
       for (let j = 0; j < 6; j++) {
-        values[`D${k}-${j}`] = mnistWeights.D[j][k]
+        values[`D${k}-${j}`] = mnistWeights.D[j][k];
       }
     }
-    apparatus.setSliders(values)
+    apparatus.setSliders(values);
   }
 
   function pushInputToApparatus() {
-    if (!apparatus) return
-    const values: Record<string, number> = {}
+    if (!apparatus) return;
+    const values: Record<string, number> = {};
     for (let i = 0; i < inputPixels.length; i++) {
-      values[`A${i}`] = inputPixels[i]
+      values[`A${i}`] = inputPixels[i];
     }
-    apparatus.setSliders(values, { duration: 0 })
+    apparatus.setSliders(values, { duration: 0 });
   }
 
   function toggleFullscreen() {
-    if (!containerEl) return
+    if (!containerEl) return;
     if (!document.fullscreenElement) {
-      containerEl.requestFullscreen().catch((err) => console.error("Fullscreen failed:", err))
+      containerEl.requestFullscreen().catch((err) => console.error("Fullscreen failed:", err));
     } else {
-      document.exitFullscreen()
+      document.exitFullscreen();
     }
   }
 
   function onFullscreenChange() {
-    isFullscreen = !!document.fullscreenElement
+    isFullscreen = !!document.fullscreenElement;
   }
 
   function clearStaleRunState() {
-    if (prediction === null && progress === 0) return
-    prediction = null
-    currentMac = null
-    stepDescription = ""
-    progress = 0
-    apparatus?.clearSlideRuleMarkers()
+    if (prediction === null && progress === 0) return;
+    prediction = null;
+    currentMac = null;
+    stepDescription = "";
+    progress = 0;
+    apparatus?.clearSlideRuleMarkers();
     resetSliders().catch((err) => {
-      console.error("resetSliders failed:", err)
-    })
+      console.error("resetSliders failed:", err);
+    });
   }
 
   onMount(() => {
-    apparatus = new PerceptronApparatus(apparatusEl, config)
-    animator = new ComputationAnimator(apparatus, mnistWeights)
-    setWeightSliders()
-    pushInputToApparatus()
-    document.addEventListener("fullscreenchange", onFullscreenChange)
-  })
+    apparatus = new PerceptronApparatus(apparatusEl, config);
+    animator = new ComputationAnimator(apparatus, mnistWeights);
+    setWeightSliders();
+    pushInputToApparatus();
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+  });
 
   onDestroy(() => {
-    abort()
-    document.removeEventListener("fullscreenchange", onFullscreenChange)
-  })
+    abort();
+    document.removeEventListener("fullscreenchange", onFullscreenChange);
+  });
 </script>
 
 <div bind:this={containerEl} class="apparatus-inference" class:fullscreen={isFullscreen}>
@@ -180,12 +174,28 @@
     aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
   >
     {#if !isFullscreen}
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+      >
+        <path
+          d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+        />
       </svg>
     {:else}
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+      >
+        <path
+          d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"
+        />
       </svg>
     {/if}
   </button>
@@ -198,10 +208,10 @@
             class="digit-button"
             class:selected={loadedPreset === i}
             onclick={() => {
-              abort()
-              clearStaleRunState()
-              inputPixels = [...sampleDigits[i].pixels]
-              loadedPreset = i
+              abort();
+              clearStaleRunState();
+              inputPixels = [...sampleDigits[i].pixels];
+              loadedPreset = i;
             }}
             title="Digit {digit.label}"
           >
@@ -212,7 +222,9 @@
                   y={Math.floor(pi / 6)}
                   width="1"
                   height="1"
-                  fill={digit.pixels[pi] > 0.15 ? `rgba(190, 46, 221, ${0.3 + digit.pixels[pi] * 0.7})` : "transparent"}
+                  fill={digit.pixels[pi] > 0.15
+                    ? `rgba(190, 46, 221, ${0.3 + digit.pixels[pi] * 0.7})`
+                    : "transparent"}
                 />
               {/each}
             </svg>
@@ -228,22 +240,21 @@
         rows={6}
         cols={6}
         onChange={(next) => {
-          if (isRunning) abort()
-          clearStaleRunState()
-          inputPixels = next
-          loadedPreset = null
+          if (isRunning) abort();
+          clearStaleRunState();
+          inputPixels = next;
+          loadedPreset = null;
         }}
       />
     </div>
 
     <div class="playback">
-      <button onclick={() => run("step")} disabled={isRunning}>
-        ▶ Step through
-      </button>
-      <button onclick={() => run("fast")} disabled={isRunning}>
-        ⏩ Instant
-      </button>
-      <button onclick={reset} disabled={!isRunning && prediction === null && inputPixels.every((v) => v === 0)}>
+      <button onclick={() => run("step")} disabled={isRunning}> ▶ Step through </button>
+      <button onclick={() => run("fast")} disabled={isRunning}> ⏩ Instant </button>
+      <button
+        onclick={reset}
+        disabled={!isRunning && prediction === null && inputPixels.every((v) => v === 0)}
+      >
         ↺ Reset
       </button>
     </div>

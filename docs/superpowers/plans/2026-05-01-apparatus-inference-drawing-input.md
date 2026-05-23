@@ -185,80 +185,80 @@ Create `src/components/svelte/PixelDrawingPad.svelte`:
 
 ```svelte
 <script lang="ts">
-  import { incrementCell, clearLastCell } from "./pixel-pad-state"
+  import { incrementCell, clearLastCell } from "./pixel-pad-state";
 
   type Props = {
-    pixels: number[]
-    rows: number
-    cols: number
-    step?: number
-    onChange: (pixels: number[]) => void
-  }
+    pixels: number[];
+    rows: number;
+    cols: number;
+    step?: number;
+    onChange: (pixels: number[]) => void;
+  };
 
-  let { pixels, rows, cols, step = 0.15, onChange }: Props = $props()
+  let { pixels, rows, cols, step = 0.15, onChange }: Props = $props();
 
-  let svgEl: SVGSVGElement
-  let isDrawing = $state(false)
-  let lastIndex: number | null = null
+  let svgEl: SVGSVGElement;
+  let isDrawing = $state(false);
+  let lastIndex: number | null = null;
 
   function cellFill(value: number): string {
-    if (value <= 0) return "var(--bg-soft, #252525)"
-    const alpha = 0.3 + value * 0.7
-    return `rgba(190, 46, 221, ${alpha})`
+    if (value <= 0) return "var(--bg-soft, #252525)";
+    const alpha = 0.3 + value * 0.7;
+    return `rgba(190, 46, 221, ${alpha})`;
   }
 
   function pointerToCell(clientX: number, clientY: number): number | null {
-    if (!svgEl) return null
-    const ctm = svgEl.getScreenCTM()
-    if (!ctm) return null
-    const pt = svgEl.createSVGPoint()
-    pt.x = clientX
-    pt.y = clientY
-    const local = pt.matrixTransform(ctm.inverse())
-    const col = Math.floor(local.x)
-    const row = Math.floor(local.y)
-    if (col < 0 || col >= cols || row < 0 || row >= rows) return null
-    return row * cols + col
+    if (!svgEl) return null;
+    const ctm = svgEl.getScreenCTM();
+    if (!ctm) return null;
+    const pt = svgEl.createSVGPoint();
+    pt.x = clientX;
+    pt.y = clientY;
+    const local = pt.matrixTransform(ctm.inverse());
+    const col = Math.floor(local.x);
+    const row = Math.floor(local.y);
+    if (col < 0 || col >= cols || row < 0 || row >= rows) return null;
+    return row * cols + col;
   }
 
   function paintAt(clientX: number, clientY: number) {
-    const index = pointerToCell(clientX, clientY)
-    if (index === null) return
-    const result = incrementCell(pixels, index, step, lastIndex)
-    lastIndex = result.lastIndex
-    if (result.pixels !== pixels) onChange(result.pixels)
+    const index = pointerToCell(clientX, clientY);
+    if (index === null) return;
+    const result = incrementCell(pixels, index, step, lastIndex);
+    lastIndex = result.lastIndex;
+    if (result.pixels !== pixels) onChange(result.pixels);
   }
 
   function handleMouseDown(event: MouseEvent) {
-    isDrawing = true
-    lastIndex = null
-    paintAt(event.clientX, event.clientY)
+    isDrawing = true;
+    lastIndex = null;
+    paintAt(event.clientX, event.clientY);
   }
 
   function handleMouseMove(event: MouseEvent) {
-    if (!isDrawing) return
-    paintAt(event.clientX, event.clientY)
+    if (!isDrawing) return;
+    paintAt(event.clientX, event.clientY);
   }
 
   function endDrag() {
-    isDrawing = false
-    lastIndex = clearLastCell(pixels).lastIndex
+    isDrawing = false;
+    lastIndex = clearLastCell(pixels).lastIndex;
   }
 
   function handleTouchStart(event: TouchEvent) {
-    if (event.touches.length !== 1) return
-    event.preventDefault()
-    isDrawing = true
-    lastIndex = null
-    const t = event.touches[0]
-    paintAt(t.clientX, t.clientY)
+    if (event.touches.length !== 1) return;
+    event.preventDefault();
+    isDrawing = true;
+    lastIndex = null;
+    const t = event.touches[0];
+    paintAt(t.clientX, t.clientY);
   }
 
   function handleTouchMove(event: TouchEvent) {
-    if (!isDrawing || event.touches.length !== 1) return
-    event.preventDefault()
-    const t = event.touches[0]
-    paintAt(t.clientX, t.clientY)
+    if (!isDrawing || event.touches.length !== 1) return;
+    event.preventDefault();
+    const t = event.touches[0];
+    paintAt(t.clientX, t.clientY);
   }
 </script>
 
@@ -492,18 +492,18 @@ Replace with:
 Below the closing `</div>` of `.digit-picker` (around line 177 in the original), and before `<div class="playback">`, insert the drawing pad:
 
 ```svelte
-    <div class="drawing-pad-wrapper">
-      <PixelDrawingPad
-        pixels={inputPixels}
-        rows={6}
-        cols={6}
-        onChange={(next) => {
-          if (isRunning) abort()
-          inputPixels = next
-          loadedPreset = null
-        }}
-      />
-    </div>
+<div class="drawing-pad-wrapper">
+  <PixelDrawingPad
+    pixels={inputPixels}
+    rows={6}
+    cols={6}
+    onChange={(next) => {
+      if (isRunning) abort();
+      inputPixels = next;
+      loadedPreset = null;
+    }}
+  />
+</div>
 ```
 
 - [x] **Step 7: Update prediction display — drop ✓/✗ when no preset is loaded**
@@ -511,37 +511,37 @@ Below the closing `</div>` of `.digit-picker` (around line 177 in the original),
 Locate the prediction block (lines 212–223 in the original):
 
 ```svelte
-      <div class="prediction">
-        {#if prediction !== null}
-          Prediction: <strong>{prediction}</strong>
-          {#if prediction === sampleDigits[selectedDigit].label}
-            <span class="correct">✓</span>
-          {:else}
-            <span class="incorrect">✗ (expected {sampleDigits[selectedDigit].label})</span>
-          {/if}
-        {:else}
-          &nbsp;
-        {/if}
-      </div>
+<div class="prediction">
+  {#if prediction !== null}
+    Prediction: <strong>{prediction}</strong>
+    {#if prediction === sampleDigits[selectedDigit].label}
+      <span class="correct">✓</span>
+    {:else}
+      <span class="incorrect">✗ (expected {sampleDigits[selectedDigit].label})</span>
+    {/if}
+  {:else}
+    &nbsp;
+  {/if}
+</div>
 ```
 
 Replace with:
 
 ```svelte
-      <div class="prediction">
-        {#if prediction !== null}
-          Prediction: <strong>{prediction}</strong>
-          {#if loadedPreset !== null}
-            {#if prediction === sampleDigits[loadedPreset].label}
-              <span class="correct">✓</span>
-            {:else}
-              <span class="incorrect">✗ (expected {sampleDigits[loadedPreset].label})</span>
-            {/if}
-          {/if}
-        {:else}
-          &nbsp;
-        {/if}
-      </div>
+<div class="prediction">
+  {#if prediction !== null}
+    Prediction: <strong>{prediction}</strong>
+    {#if loadedPreset !== null}
+      {#if prediction === sampleDigits[loadedPreset].label}
+        <span class="correct">✓</span>
+      {:else}
+        <span class="incorrect">✗ (expected {sampleDigits[loadedPreset].label})</span>
+      {/if}
+    {/if}
+  {:else}
+    &nbsp;
+  {/if}
+</div>
 ```
 
 - [x] **Step 8: Add CSS for the drawing-pad wrapper**
@@ -650,13 +650,13 @@ apparatus = new PerceptronApparatus(apparatusEl, config);
 In the markup, change:
 
 ```svelte
-  <div bind:this={containerEl} class="apparatus-container"></div>
+<div bind:this={containerEl} class="apparatus-container"></div>
 ```
 
 to:
 
 ```svelte
-  <div bind:this={apparatusEl} class="apparatus-container"></div>
+<div bind:this={apparatusEl} class="apparatus-container"></div>
 ```
 
 And change the root element. Locate:
@@ -700,22 +700,26 @@ onDestroy(() => {
 Inside the root `<div bind:this={containerEl} ...>` and _before_ `<div class="controls">`, add:
 
 ```svelte
-  <button
-    class="fullscreen-button"
-    onclick={toggleFullscreen}
-    title={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
-    aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
-  >
-    {#if !isFullscreen}
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-      </svg>
-    {:else}
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
-      </svg>
-    {/if}
-  </button>
+<button
+  class="fullscreen-button"
+  onclick={toggleFullscreen}
+  title={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+  aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+>
+  {#if !isFullscreen}
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path
+        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+      />
+    </svg>
+  {:else}
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path
+        d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"
+      />
+    </svg>
+  {/if}
+</button>
 ```
 
 - [x] **Step 5: Add fullscreen CSS**

@@ -1,7 +1,6 @@
 ---
 title: "Slop Salon: six AI artists, one constitution"
-description:
-  "Slop Salon is a collective of six AI agents making art on Bluesky. They start
+description: "Slop Salon is a collective of six AI agents making art on Bluesky. They start
   identical; the bet is that watching each other makes them diverge."
 tags: [ai, art]
 ---
