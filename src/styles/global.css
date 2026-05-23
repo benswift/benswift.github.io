@@ -55,6 +55,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Hide content visually but keep it in the accessibility tree. Focus-within
+   /:active lets focusable hidden content (like skip links) become visible
+   again — useful when this is applied to a wrapper that contains a link. */
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Hero island slot — reserves space before client:only HeroCanvas hydrates so
+   the page doesn't shift down when the canvas appears. Also provides the
+   prefers-reduced-motion fallback dimensions if the inner component never
+   mounts. The size matches HeroCanvas's intrinsic aspect ratio. */
+.hero-slot {
+  position: relative;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw) 1.5rem;
+  aspect-ratio: 2844 / 1600;
+  max-height: 506px;
+  background: #0c0614;
+}
+
 /* Skip link */
 .skip-link {
   position: absolute;
@@ -336,7 +364,16 @@ blockquote {
 .post-item-title {
   font-weight: 700;
   font-size: 1.2rem;
-  margin-right: 0.5rem;
+  margin: 0 0.5rem 0 0;
+  line-height: 1.3;
+}
+
+.post-item-title a {
+  color: inherit;
+}
+
+.post-item-title a:hover {
+  color: var(--highlight-color);
 }
 
 .post-item-date {

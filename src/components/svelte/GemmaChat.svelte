@@ -195,7 +195,14 @@ ${siteContent}`
   {:else if modelState.kind === "loading"}
     <div class="notice">
       <p>Loading model... this may take a while on the first visit (cached after that).</p>
-      <div class="progress-bar">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        aria-label={modelState.status}
+        aria-valuenow={Math.round(modelState.progress)}
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
         <div class="progress-fill" style="width: {modelState.progress}%"></div>
       </div>
       <span class="progress-label">{modelState.status}</span>
@@ -207,7 +214,13 @@ ${siteContent}`
     </div>
   {:else}
     <div class="chat-container">
-      <div class="messages" bind:this={messagesEl}>
+      <div
+        class="messages"
+        bind:this={messagesEl}
+        role="log"
+        aria-live="polite"
+        aria-label="Chat transcript"
+      >
         {#if messages.length === 0}
           <div class="empty-state">
             Ask me anything about my research, teaching, livecoding, or whatever else you're curious about.
@@ -216,12 +229,14 @@ ${siteContent}`
         {#each messages as msg}
           <div class="message {msg.role}">
             <span class="message-role">{msg.role === "user" ? "You" : "Ben (LLM)"}</span>
-            <div class="message-content">{msg.content}{#if msg.role === "assistant" && generating && msg === messages[messages.length - 1]}<span class="cursor">▊</span>{/if}</div>
+            <div class="message-content">{msg.content}{#if msg.role === "assistant" && generating && msg === messages[messages.length - 1]}<span class="cursor" aria-hidden="true">▊</span>{/if}</div>
           </div>
         {/each}
       </div>
       <div class="input-area">
+        <label for="gemma-chat-input" class="visually-hidden">Your message</label>
         <textarea
+          id="gemma-chat-input"
           bind:this={inputEl}
           bind:value={input}
           onkeydown={handleKeydown}

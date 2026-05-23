@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "prebuild": "pnpm exec tsx scripts/generate-site-content.ts",
-    "build": "astro build && pnpm exec pagefind --site dist",
+    "build": "astro build && pnpm exec tsx scripts/inject-csp-hashes.ts && pnpm exec pagefind --site dist",
     "site-content": "pnpm exec tsx scripts/generate-site-content.ts",
     "preview": "astro preview",
     "typecheck": "astro check && svelte-check --tsconfig ./tsconfig.json",

@@ -8,9 +8,17 @@
   let ctx: CanvasRenderingContext2D | null = null
   let shader: ShaderPad | null = null
   let resizeObserver: ResizeObserver | null = null
+  let intersectionObserver: IntersectionObserver | null = null
   let rafId: number | null = null
   let prefersReducedMotion = $state(false)
   let fallbackImageUrl = $state("")
+
+  // Two independent inputs drive whether the WebGL loop should run: the
+  // browser tab's visibility, and whether the hero is on-screen. We only
+  // want to draw when *both* are true — keeping a 60 fps shader running
+  // while the user is reading a long blog post is pure battery burn.
+  let isPageVisible = true
+  let isIntersecting = false
 
   const MOBILE_BREAKPOINT = 640
   const TEXT_UPDATE_FPS = 12
@@ -419,9 +427,14 @@ void main() {
     }
   }
 
+  function syncLoopState() {
+    if (isPageVisible && isIntersecting) startLoop()
+    else stopLoop()
+  }
+
   function onVisibilityChange() {
-    if (document.hidden) stopLoop()
-    else startLoop()
+    isPageVisible = !document.hidden
+    syncLoopState()
   }
 
   function updatePointerUv(e: PointerEvent) {
@@ -474,7 +487,7 @@ void main() {
     shader.initializeUniform("u_cellSize", "float", [charWidth / widthPx, rowPitch / heightPx])
 
     nextBurstAt = performance.now() / 1000 + 2.5
-    startLoop()
+    isPageVisible = !document.hidden
 
     document.addEventListener("visibilitychange", onVisibilityChange)
     document.addEventListener("astro:page-load", onPageLoad)
@@ -487,6 +500,18 @@ void main() {
       resize()
     })
     resizeObserver.observe(containerEl)
+
+    // Pause the shader loop when the hero scrolls off-screen. The 200 px
+    // rootMargin starts work just before it re-enters the viewport so the
+    // canvas is warm by the time the user sees it again.
+    intersectionObserver = new IntersectionObserver(
+      ([entry]) => {
+        isIntersecting = entry?.isIntersecting ?? false
+        syncLoopState()
+      },
+      { rootMargin: "200px" },
+    )
+    intersectionObserver.observe(containerEl)
   })
 
   function onPageLoad() {
@@ -506,6 +531,10 @@ void main() {
     if (resizeObserver) {
       resizeObserver.disconnect()
       resizeObserver = null
+    }
+    if (intersectionObserver) {
+      intersectionObserver.disconnect()
+      intersectionObserver = null
     }
     if (shader) {
       shader.destroy()
@@ -528,10 +557,8 @@ void main() {
 <style>
   .hero-canvas {
     position: relative;
-    width: 100vw;
-    margin: 0 calc(50% - 50vw) 1.5rem;
-    aspect-ratio: 2844 / 1600;
-    max-height: 506px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     background: #0c0614;
   }

@@ -59,9 +59,11 @@ const heroPhrasesContent = phrases.join("|")
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
-    <HeroCanvas client:only="svelte" transition:persist="hero-canvas" />
+    <div class="hero-slot" aria-hidden="true">
+      <HeroCanvas client:only="svelte" transition:persist="hero-canvas" />
+    </div>
     <Nav />
-    <main id="main-content" data-pagefind-body>
+    <main id="main-content" tabindex="-1" data-pagefind-body>
       <slot />
     </main>
   </body>

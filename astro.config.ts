@@ -13,6 +13,39 @@ import { remarkContainers } from "./src/plugins/remark-containers";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 
+// Minimal hast node shape so we don't need @types/hast just for two
+// build-time helpers.
+interface HastNode {
+  type: string;
+  value?: string;
+  children?: HastNode[];
+  properties?: Record<string, unknown>;
+}
+
+// Walk a hast heading node and concatenate its text descendants. Used by
+// rehype-autolink-headings so each anchor's accessible name includes the
+// heading text — otherwise every "Link to this section" name collides.
+function headingText(node: HastNode): string {
+  if (node.type === "text") return node.value ?? "";
+  if (Array.isArray(node.children)) {
+    return node.children.map((c) => headingText(c)).join("");
+  }
+  return "";
+}
+
+// Shiki transformer: make scrollable code blocks keyboard-reachable. Chrome
+// auto-focuses scrollable containers now, but Firefox and Safari don't, so
+// the explicit tabindex/role is still load-bearing for keyboard users.
+const a11yCodeBlock = {
+  name: "a11y-code-block",
+  pre(node: HastNode) {
+    node.properties ||= {};
+    node.properties.tabindex = "0";
+    node.properties.role = "region";
+    node.properties["aria-label"] = "Code sample";
+  },
+};
+
 // Site remark plugins shared between .md (markdown.remarkPlugins) and .mdx
 // (via the mdx() integration). Astro's MDX integration replaces rather than
 // extends markdown.remarkPlugins, so .mdx files only get plugins listed here
@@ -86,7 +119,13 @@ export default defineConfig({
         rehypeAutolinkHeadings,
         {
           behavior: "prepend",
-          properties: { class: "at-heading-anchor", ariaLabel: "Link to this section" },
+          properties: (node: HastNode) => {
+            const text = headingText(node).trim() || "section";
+            return {
+              class: "at-heading-anchor",
+              ariaLabel: `Link to section: ${text}`,
+            };
+          },
           content: {
             type: "text",
             value: "#",
@@ -100,6 +139,7 @@ export default defineConfig({
         { ...xtlangGrammar, aliases: ["extempore"] } as never,
         { ...armasmGrammar, aliases: ["armasm"] } as never,
       ],
+      transformers: [a11yCodeBlock],
     },
   },
 });

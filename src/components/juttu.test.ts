@@ -31,10 +31,20 @@ describe.skipIf(!existsSync(distDir))("juttu comments integration", () => {
     expect(htmlWithAtUri).toBeTruthy();
   });
 
-  it("includes juttu embed script in head", () => {
+  it("includes juttu embed script in head pinned to a versioned URL", () => {
     expect(htmlWithAtUri).toContain("juttu-embed.js");
     expect(htmlWithAtUri).toContain('data-theme="dark"');
-    expect(htmlWithAtUri).toContain("cdn.jsdelivr.net/npm/juttu@latest");
+    // The script must be pinned, not @latest — SRI can't hash a moving
+    // target, and an unpinned third-party script is a supply-chain hole.
+    expect(htmlWithAtUri).not.toContain("juttu@latest");
+    expect(htmlWithAtUri).toMatch(/cdn\.jsdelivr\.net\/npm\/juttu@\d+\.\d+\.\d+\//);
+  });
+
+  it("juttu script carries an SRI integrity hash and crossorigin", () => {
+    const scriptTag = htmlWithAtUri.match(/<script[^>]*juttu-embed\.js[^>]*><\/script>/)?.[0];
+    expect(scriptTag).toBeTruthy();
+    expect(scriptTag).toMatch(/integrity="sha(?:256|384|512)-[A-Za-z0-9+/=]+"/);
+    expect(scriptTag).toContain('crossorigin="anonymous"');
   });
 
   it("includes juttu-comments div in body", () => {
