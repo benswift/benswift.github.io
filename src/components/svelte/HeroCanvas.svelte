@@ -557,9 +557,8 @@ void main() {
 
 <style>
   .hero-canvas {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    inset: 0;
     overflow: hidden;
     background: #0c0614;
   }
