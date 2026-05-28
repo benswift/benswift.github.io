@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/05/28/xkcd-1319-we-now-live-on-the-theory-curve": "0247e2ab729c37cc76dc5972b3a80723baaf093b6f45c5e9dc126e776b1136a8",
     "/blog/2026/05/21/slop-salon-six-ai-artists-one-constitution": "c6514035cd7fba6343536a75cb24448cb45256c0488219779a7a9773c7271c53",
     "/blog/2026/05/12/three-circles-for-thinking-about-llms": "214b7b70d71f2432ecd5e00fecd3039765633b9f9f90367dc121b48e50136b57",
     "/blog/2026/05/04/on-agentic-tools-and-lock-in": "c709a9122f411c9d7e2198535453d9a4bf205e3cd86de8b4dafcb1cc124e37c4",
