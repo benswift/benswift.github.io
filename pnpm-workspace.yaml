@@ -3,7 +3,9 @@ allowBuilds:
   sharp: false
 
 minimumReleaseAgeExclude:
-  - astro@6.3.5
+  - astro@6.4.2
+  - '@astrojs/internal-helpers@0.10.0'
+  - '@astrojs/markdown-remark@7.2.0'
 
 overrides:
   "yaml@<2.8.3": ">=2.8.3"
