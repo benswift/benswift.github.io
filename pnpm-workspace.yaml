@@ -8,6 +8,7 @@ minimumReleaseAgeExclude:
   - '@astrojs/markdown-remark@7.2.0'
   - '@astrojs/mdx@6.0.1'
   - '@astrojs/markdown-satteri@0.2.1'
+  - p5@2.3.0
 
 overrides:
   "yaml@<2.8.3": ">=2.8.3"

@@ -22,7 +22,7 @@ importers:
         version: 1.1.0
       astro-theme-anu:
         specifier: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#main&path:/packages/astro-theme-anu
-        version: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#93b470a8c16570fab7fec2d93e8c487c64f00e6b&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/e5f7fc52b2362a69146536a28f14024ac35a167a(@astrojs/mdx@6.0.1(@astrojs/markdown-satteri@0.2.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3)
+        version: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#6ea802835ef1df94f89dd7c9e33e3087d3322755&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/e5f7fc52b2362a69146536a28f14024ac35a167a(@astrojs/mdx@6.0.1(@astrojs/markdown-satteri@0.2.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3)
       astromotion:
         specifier: github:benswift/astromotion
         version: https://codeload.github.com/benswift/astromotion/tar.gz/e5f7fc52b2362a69146536a28f14024ac35a167a(@astrojs/mdx@6.0.1(@astrojs/markdown-satteri@0.2.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))
@@ -245,14 +245,6 @@ packages:
   '@astrojs/sitemap@3.7.3':
     resolution: {integrity: sha512-f8euLVsyeAmAkSm/1M2Kb8sL8byQmfgbvBNaHFItCheTj/IpiJYSEWVcqDHZ/yEHxiS7+w87mQkzwZaPHmk5GA==}
 
-  '@astrojs/svelte@8.1.1':
-    resolution: {integrity: sha512-/9sgVenHRoGRhENjLA585qPBFIECl9u7LXu0H7PeB0LW98Pa2nxvvei14CszuaYhwMoeXwDKAX211M3L6WIObw==}
-    engines: {node: '>=22.12.0'}
-    peerDependencies:
-      astro: ^6.0.0
-      svelte: ^5.43.6
-      typescript: ^5.3.3 || ^6.0.0
-
   '@astrojs/svelte@8.1.2':
     resolution: {integrity: sha512-L4eBoTY+DdgyH1g8pmKJxidRSvdk+NbkyJt5+f8EtdyJtPdxogeCyG3eEDmlIqqXxzNqLg7k/tYCjfBQ4kDMRA==}
     engines: {node: '>=22.12.0'}
@@ -313,8 +305,8 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/runtime@7.29.2':
-    resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
+  '@babel/runtime@7.29.7':
+    resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/types@7.29.0':
@@ -1831,9 +1823,9 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro-theme-anu@git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#93b470a8c16570fab7fec2d93e8c487c64f00e6b&path:/packages/astro-theme-anu:
-    resolution: {commit: 93b470a8c16570fab7fec2d93e8c487c64f00e6b, path: /packages/astro-theme-anu, repo: https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git, type: git}
-    version: 0.2.0
+  astro-theme-anu@git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#6ea802835ef1df94f89dd7c9e33e3087d3322755&path:/packages/astro-theme-anu:
+    resolution: {commit: 6ea802835ef1df94f89dd7c9e33e3087d3322755, path: /packages/astro-theme-anu, repo: https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git, type: git}
+    version: 0.3.0
     engines: {node: '>=24'}
     peerDependencies:
       '@iconify-json/iconoir': ^1.2.0
@@ -3202,8 +3194,8 @@ packages:
     resolution: {integrity: sha512-AxTM2wDGORHGEkPCt8yqxOTMgpfbEHqF51f/5fJCmwFC3C/zNcGT63SymH2ttOAaiIws2zVg4+izQCjrakcwHg==}
     engines: {node: '>=20'}
 
-  p5@2.2.3:
-    resolution: {integrity: sha512-jz9uy0k3Fcj9vKSOafQlIrpaPZZjO4rAEBZF6dGkbokisshP0M3aFm4qtLHYCoEW1XJSkFaVaOMILCQAQxUHHA==}
+  p5@2.3.0:
+    resolution: {integrity: sha512-akBaN7KbLo5Y6fQ6xJ3w5KKVSfkHGLmqxkJZ7IwZkKw7QlEuVFlLuFTkx9/5o8AAyuJttzucXh7aWk2natRNMA==}
 
   package-manager-detector@1.6.0:
     resolution: {integrity: sha512-61A5ThoTiDG/C8s8UMZwSorAGwMJ0ERVGj2OjoW5pAalsNOg15+iQiPzrLJ4jhZ1HJzmC2PIHT2oEiH3R5fzNA==}
@@ -4419,28 +4411,6 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.4.3
 
-  '@astrojs/svelte@8.1.1(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(lightningcss@1.32.0)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3)(yaml@2.9.0)':
-    dependencies:
-      '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.10(@typescript-eslint/types@8.59.3))(vite@7.3.3(@types/node@25.9.1)(lightningcss@1.32.0)(tsx@4.22.3)(yaml@2.9.0))
-      astro: 6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)
-      svelte: 5.55.10(@typescript-eslint/types@8.59.3)
-      svelte2tsx: 0.7.55(svelte@5.55.10(@typescript-eslint/types@8.59.3))(typescript@6.0.3)
-      typescript: 6.0.3
-      vite: 7.3.3(@types/node@25.9.1)(lightningcss@1.32.0)(tsx@4.22.3)(yaml@2.9.0)
-      vitefu: 1.1.3(vite@7.3.3(@types/node@25.9.1)(lightningcss@1.32.0)(tsx@4.22.3)(yaml@2.9.0))
-    transitivePeerDependencies:
-      - '@types/node'
-      - jiti
-      - less
-      - lightningcss
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - terser
-      - tsx
-      - yaml
-
   '@astrojs/svelte@8.1.2(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(lightningcss@1.32.0)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3)(yaml@2.9.0)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 6.2.4(svelte@5.55.10(@typescript-eslint/types@8.59.3))(vite@7.3.3(@types/node@25.9.1)(lightningcss@1.32.0)(tsx@4.22.3)(yaml@2.9.0))
@@ -4536,7 +4506,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.29.0
 
-  '@babel/runtime@7.29.2': {}
+  '@babel/runtime@7.29.7': {}
 
   '@babel/types@7.29.0':
     dependencies:
@@ -5725,11 +5695,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-theme-anu@git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#93b470a8c16570fab7fec2d93e8c487c64f00e6b&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/e5f7fc52b2362a69146536a28f14024ac35a167a(@astrojs/mdx@6.0.1(@astrojs/markdown-satteri@0.2.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3):
+  astro-theme-anu@git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#6ea802835ef1df94f89dd7c9e33e3087d3322755&path:/packages/astro-theme-anu(@iconify-json/iconoir@1.2.11)(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/e5f7fc52b2362a69146536a28f14024ac35a167a(@astrojs/mdx@6.0.1(@astrojs/markdown-satteri@0.2.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)))(lightningcss@1.32.0)(pagefind@1.5.2)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3):
     dependencies:
       '@astro-community/astro-embed-youtube': 0.5.10
       '@astrojs/mdx': 5.0.6(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))
-      '@astrojs/svelte': 8.1.1(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(lightningcss@1.32.0)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3)(yaml@2.9.0)
+      '@astrojs/svelte': 8.1.2(@types/node@25.9.1)(astro@6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0))(lightningcss@1.32.0)(svelte@5.55.10(@typescript-eslint/types@8.59.3))(tsx@4.22.3)(typescript@6.0.3)(yaml@2.9.0)
       '@iconify-json/iconoir': 1.2.11
       '@types/jsdom': 28.0.3
       astro: 6.4.2(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.60.4)(tsx@4.22.3)(yaml@2.9.0)
@@ -5739,7 +5709,7 @@ snapshots:
       jsdom: 29.1.1
       lightningcss: 1.32.0
       linkedom: 0.18.12
-      p5: 2.2.3
+      p5: 2.3.0
       rehype-autolink-headings: 7.1.0
       rehype-slug: 6.0.0
       remark-custom-heading-id: 2.0.0
@@ -6721,11 +6691,11 @@ snapshots:
 
   i18next-browser-languagedetector@4.3.1:
     dependencies:
-      '@babel/runtime': 7.29.2
+      '@babel/runtime': 7.29.7
 
   i18next@19.9.2:
     dependencies:
-      '@babel/runtime': 7.29.2
+      '@babel/runtime': 7.29.7
 
   iconv-lite@0.6.3:
     dependencies:
@@ -7621,7 +7591,7 @@ snapshots:
 
   p-timeout@7.0.1: {}
 
-  p5@2.2.3:
+  p5@2.3.0:
     dependencies:
       '@davepagurek/bezier-path': 0.0.7
       '@japont/unicode-range': 1.0.0
