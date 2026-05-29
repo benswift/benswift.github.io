@@ -6,6 +6,8 @@ minimumReleaseAgeExclude:
   - astro@6.4.2
   - '@astrojs/internal-helpers@0.10.0'
   - '@astrojs/markdown-remark@7.2.0'
+  - '@astrojs/mdx@6.0.1'
+  - '@astrojs/markdown-satteri@0.2.1'
 
 overrides:
   "yaml@<2.8.3": ">=2.8.3"
