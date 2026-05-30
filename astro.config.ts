@@ -92,13 +92,9 @@ export default defineConfig({
     },
   ],
   integrations: [
-    mdx({
-      // MDX replaces (doesn't extend) the processor's remark plugins, so the
-      // site plugins must be listed here too for .mdx files; the processor
-      // above handles .md.
-      remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins],
-      smartypants: false,
-    }),
+    // Plain mdx() inherits the markdown.processor below (site + deck plugins),
+    // so .md and .mdx share one chain. Deck plugins self-gate on .deck.mdx.
+    mdx({ smartypants: false }),
     svelte(),
     sitemap(),
     brokenLinksChecker({ checkExternalLinks: false }),
@@ -117,7 +113,7 @@ export default defineConfig({
   markdown: {
     processor: unified({
       smartypants: false,
-      remarkPlugins: siteRemarkPlugins as never,
+      remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins] as never,
       rehypePlugins: [
         rehypeSlug,
         [
