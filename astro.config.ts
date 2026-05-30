@@ -1,6 +1,7 @@
 import { defineConfig, fontProviders } from "astro/config";
 import type { PluggableList } from "unified";
 import mdx from "@astrojs/mdx";
+import { unified } from "@astrojs/markdown-remark";
 import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
 import brokenLinksChecker from "astro-broken-links-checker";
@@ -92,6 +93,9 @@ export default defineConfig({
   ],
   integrations: [
     mdx({
+      // MDX replaces (doesn't extend) the processor's remark plugins, so the
+      // site plugins must be listed here too for .mdx files; the processor
+      // above handles .md.
       remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins],
       smartypants: false,
     }),
@@ -111,28 +115,30 @@ export default defineConfig({
     },
   },
   markdown: {
-    smartypants: false,
-    remarkPlugins: siteRemarkPlugins as never,
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: "prepend",
-          properties: (node: HastNode) => {
-            const text = headingText(node).trim() || "section";
-            return {
-              class: "at-heading-anchor",
-              ariaLabel: `Link to section: ${text}`,
-            };
+    processor: unified({
+      smartypants: false,
+      remarkPlugins: siteRemarkPlugins as never,
+      rehypePlugins: [
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: "prepend",
+            properties: (node: HastNode) => {
+              const text = headingText(node).trim() || "section";
+              return {
+                class: "at-heading-anchor",
+                ariaLabel: `Link to section: ${text}`,
+              };
+            },
+            content: {
+              type: "text",
+              value: "#",
+            },
           },
-          content: {
-            type: "text",
-            value: "#",
-          },
-        },
+        ],
       ],
-    ],
+    }),
     shikiConfig: {
       theme: "github-dark",
       langs: [
