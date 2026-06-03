@@ -1,9 +1,10 @@
 ---
 id: TASK-22
 title: Port the LLMs Unplugged (ACE 2026) talk deck to benswift.me
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-03 05:22'
+updated_date: '2026-06-03 07:45'
 labels:
   - decks
   - migration

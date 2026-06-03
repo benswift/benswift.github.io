@@ -1,0 +1,410 @@
+---
+title: LLMs Unplugged (ACE 2026)
+description: Teaching Resources for a ChatGPT World
+author: Ben Swift
+---
+
+import SocyLogo from "astro-theme-anu/components/SocyLogo.astro";
+
+import threeUpPhd from "./assets/llms-unplugged-ace-2026/bg-3up-phd.avif";
+import threeUpLecturer from "./assets/llms-unplugged-ace-2026/bg-3up-lecturer.avif";
+import threeUpKids from "./assets/llms-unplugged-ace-2026/bg-3up-kids.avif";
+import cardPretrainedGeneration from "./assets/llms-unplugged-ace-2026/cards/hero-pretrained-generation.avif";
+import cardMoreContext from "./assets/llms-unplugged-ace-2026/cards/hero-more-context.avif";
+import cardSampling from "./assets/llms-unplugged-ace-2026/cards/hero-sampling.avif";
+import cardToolUse from "./assets/llms-unplugged-ace-2026/cards/hero-tool-use.avif";
+import cardInContextMemory from "./assets/llms-unplugged-ace-2026/cards/hero-in-context-memory.avif";
+import cardInductionHeads from "./assets/llms-unplugged-ace-2026/cards/hero-induction-heads.avif";
+import cardWordEmbeddings from "./assets/llms-unplugged-ace-2026/cards/hero-word-embeddings.avif";
+import cardLora from "./assets/llms-unplugged-ace-2026/cards/hero-lora.avif";
+import cardRlhf from "./assets/llms-unplugged-ace-2026/cards/hero-rlhf.avif";
+import cardSyntheticData from "./assets/llms-unplugged-ace-2026/cards/hero-synthetic-data.avif";
+
+# LLMs Unplugged
+
+Teaching Resources for a ChatGPT World
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-title.avif)
+
+---
+
+## Acknowledgement of Country
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-acknowledgement.avif)
+
+---
+
+{/* _class: impact */}
+
+a(nother) talk about AI\*/LLMs
+
+they're _A Thing_ now
+
+---
+
+## Hi, I'm Ben
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/headshot-ben.avif)
+
+---
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; position: absolute; inset: 0;">
+  <img src={threeUpPhd.src} style="width: 100%; height: 100%; object-fit: cover;" alt="PhD" />
+  <img
+    src={threeUpLecturer.src}
+    style="width: 100%; height: 100%; object-fit: cover;"
+    alt="Lecturer"
+  />
+  <img src={threeUpKids.src} style="width: 100%; height: 100%; object-fit: cover;" alt="Kids" />
+</div>
+
+---
+
+## The problem
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-problem.avif)
+
+everyone uses ChatGPT (classrooms, office work, group chats)
+
+most folks don't have a good mental model of how it works...
+
+...and this is a problem
+
+---
+
+## The gap
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-gap.avif)
+
+some feel this "don't know how it works" anxiety more than others, e.g.
+classroom teachers
+
+CS Unplugged has been teaching computing concepts without computers for 20+
+years
+
+- algorithms & data structures
+- traditional ML/AI
+- LLMs?
+
+---
+
+## What would "LLMs Unplugged" look like?
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-design-goals.avif)
+
+- end-to-end generation (training → generation)
+- modular and low-friction
+- broad accessibility (no coding, minimal maths)
+
+---
+
+{/* _class: impact */}
+
+(spoiler) it's live at [llmsunplugged.org](https://www.llmsunplugged.org)
+
+---
+
+{/* _class: hero */}
+
+# Historical roots
+
+![bg](./assets/llms-unplugged-ace-2026/bg-div-historical.avif)
+
+---
+
+## Markov (1913) and Shannon (1948)
+
+![bg right:60%](./assets/llms-unplugged-ace-2026/bg-markov.avif)
+
+did this work **by hand**
+
+counting letter sequences in Pushkin's _Eugene Onegin_ (Markov)
+
+generating synthetic text through weighted sampling (Shannon)
+
+---
+
+## The core insight
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-core-insight.avif)
+
+language models work by
+
+1. counting patterns in existing text
+2. exploiting these patterns to generate **new text**
+
+modern LLMs: same approach, vastly greater scale
+
+---
+
+{/* _class: hero */}
+
+# The core mechanic
+
+![bg](./assets/llms-unplugged-ace-2026/bg-div-mechanic.avif)
+
+---
+
+## Training: counting word pairs
+
+**Text**: _"See Spot run. See Spot jump."_
+
+**Preprocessed**: `see` `spot` `run` `.` `see` `spot` `jump` `.`
+
+|        | `see` | `spot` | `run` | `.` | `jump` |
+| ------ | ----- | ------ | ----- | --- | ------ |
+| `see`  |       | II     |       |     |        |
+| `spot` |       |        | I     |     | I      |
+| `run`  |       |        |       | I   |        |
+| `.`    | I     |        |       |     |        |
+| `jump` |       |        |       | I   |        |
+
+---
+
+{/* _class: impact */}
+
+the grid **is** the model
+
+---
+
+{/* _class: hero */}
+
+# Demo time
+
+![bg](./assets/llms-unplugged-ace-2026/bg-div-demo.avif)
+
+---
+
+{/* _class: centered */}
+
+![qr](https://www.llmsunplugged.org/lessons/training)
+
+---
+
+{/* _class: centered */}
+
+![qr](https://www.llmsunplugged.org/lessons/generation)
+
+---
+
+## Why this works
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-randomness.avif)
+
+- the randomness explains why LLMs give different responses to the same prompt
+- the weighting explains why output is usually coherent
+- this **is** how LLMs work, just smaller
+
+---
+
+{/* _class: hero */}
+
+# Lesson structure
+
+![bg](./assets/llms-unplugged-ace-2026/bg-div-lessons.avif)
+
+---
+
+## Fundamentals
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-fundamentals.avif)
+
+two core lessons (do in order):
+
+1. **Training**---counting patterns into a grid
+2. **Generation**---weighted sampling with dice
+
+available in _grid_ and _cutouts_ variants
+
+about 30mins each (but flexible)
+
+---
+
+## Extensions
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.45em 1.2em;">
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img
+      src={cardPretrainedGeneration.src}
+      style="height: 2.6em; border-radius: 6px;"
+      alt="Pre-trained Generation"
+    />
+    <p>Pre-trained Generation</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img src={cardMoreContext.src} style="height: 2.6em; border-radius: 6px;" alt="More Context" />
+    <p>More Context</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img src={cardSampling.src} style="height: 2.6em; border-radius: 6px;" alt="Sampling" />
+    <p>Sampling</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img src={cardToolUse.src} style="height: 2.6em; border-radius: 6px;" alt="Tool Use" />
+    <p>Tool Use</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img
+      src={cardInContextMemory.src}
+      style="height: 2.6em; border-radius: 6px;"
+      alt="In-context Memory"
+    />
+    <p>In-context Memory</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img
+      src={cardInductionHeads.src}
+      style="height: 2.6em; border-radius: 6px;"
+      alt="Induction Heads"
+    />
+    <p>Induction Heads</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img
+      src={cardWordEmbeddings.src}
+      style="height: 2.6em; border-radius: 6px;"
+      alt="Word Embeddings"
+    />
+    <p>Word Embeddings</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img src={cardLora.src} style="height: 2.6em; border-radius: 6px;" alt="LoRA" />
+    <p>LoRA</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img src={cardRlhf.src} style="height: 2.6em; border-radius: 6px;" alt="RLHF" />
+    <p>RLHF</p>
+  </div>
+  <div style="display: flex; align-items: center; gap: 0.6em;">
+    <img
+      src={cardSyntheticData.src}
+      style="height: 2.6em; border-radius: 6px;"
+      alt="Synthetic Data"
+    />
+    <p>Synthetic Data</p>
+  </div>
+</div>
+
+---
+
+{/* _class: centered */}
+
+![qr](https://www.llmsunplugged.org/lessons/pretrained-generation)
+
+---
+
+{/* _class: hero */}
+
+# Reception
+
+![bg](./assets/llms-unplugged-ace-2026/bg-div-reception.avif)
+
+---
+
+## Notes from the field
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-participants.avif)
+
+over 500 participants over the past year
+
+- senior executives and public servants
+- undergraduates (all disciplines)
+- high school teachers
+- school-age students
+
+---
+
+{/* _class: quote */}
+
+![bg brightness:0.2](./assets/llms-unplugged-ace-2026/bg-div-quote.avif)
+
+> LLMs are "just" probability and randomness at scale---not reasoning, not
+> understanding, but sophisticated pattern matching
+
+---
+
+## The shareback moment
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-title.avif)
+
+the room comes alive during the generation lesson when groups share the output
+from _their_ model
+
+"fish fish fish red one fish two fish"
+
+"I do not like green eggs and you may see me be I do not..."
+
+---
+
+{/* _class: hero */}
+
+# Resources
+
+![bg](./assets/llms-unplugged-ace-2026/bg-div-resources.avif)
+
+---
+
+## What's available
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-resources.avif)
+
+- lessons with instructor notes
+- interactive widgets
+- videos (coming soon)
+- software tools for custom n-gram booklets
+
+all [**CC BY-NC-SA**](https://creativecommons.org/licenses/by-nc-sa/4.0/) licensed
+
+---
+
+{/* _class: centered */}
+
+![qr](https://www.llmsunplugged.org)
+
+---
+
+## Next steps
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-randomness.avif)
+
+- continued development (esp. extensions)
+- teacher training
+- evaluation (inc. via partnerships)
+- strengthen curriculum links (e.g. ACARA)
+- translations
+- keen to hear your experiences
+
+---
+
+## This Friday
+
+![bg right:40%](./assets/llms-unplugged-ace-2026/bg-brimbank.avif)
+
+_Lifting the Veil_---a hands-on AI workshop for educators with Brimbank Tech
+School at VU Sunshine Campus
+
+Friday 13 February, 10am--3pm
+
+---
+
+## Thanks
+
+[llmsunplugged.org](https://www.llmsunplugged.org)
+
+[ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au)
+
+[benswift.me](https://benswift.me)
+
+![bg right:60%](./assets/llms-unplugged-ace-2026/bg-div-quote-portrait.avif)
+
+---
+
+{/* _class: socy-logo */}
+
+<SocyLogo />
+
+---
+
+# Q&A
+
+![bg right:60%](./assets/llms-unplugged-ace-2026/bg-participants.avif)
