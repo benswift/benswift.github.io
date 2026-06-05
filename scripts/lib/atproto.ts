@@ -10,7 +10,6 @@ export interface DocumentRecord {
   title: string;
   site: string;
   path: string;
-  content: string;
   textContent: string;
   publishedAt: string;
   description: string;
@@ -45,7 +44,6 @@ export async function createClient(
           url: pub.url,
           name: pub.name,
           description: pub.description,
-          createdAt: new Date().toISOString(),
         },
       });
       return `at://${did}/site.standard.publication/self`;
@@ -57,11 +55,9 @@ export async function createClient(
         title: doc.title,
         site: doc.site,
         path: doc.path,
-        content: doc.content,
         textContent: doc.textContent,
         publishedAt: doc.publishedAt,
         description: doc.description,
-        createdAt: new Date().toISOString(),
       };
       if (doc.tags?.length) {
         record.tags = doc.tags;

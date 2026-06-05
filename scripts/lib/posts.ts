@@ -9,7 +9,6 @@ export interface PostData {
   date: string;
   description: string;
   tags: string[];
-  content: string;
   textContent: string;
   contentHash: string;
   filePath: string;
@@ -31,6 +30,31 @@ export function computeHash(content: string): string {
   return createHash("sha256").update(content).digest("hex");
 }
 
+/**
+ * Reduce markdown/MDX body text to plain text for the Standard.site
+ * `textContent` field, which the lexicon defines as a plaintext representation
+ * of the document with no markdown or other formatting. Drops fenced code,
+ * JSX/HTML, MDX imports and container directives; unwraps links, images and
+ * inline code; and strips heading, list and blockquote markers and emphasis.
+ */
+export function toPlainText(markdown: string): string {
+  return markdown
+    .replaceAll(/```[\s\S]*?```/g, " ")
+    .replaceAll(/^(?:import|export)\s.+$/gm, " ")
+    .replaceAll(/<([A-Za-z][\w-]*)\b[^>]*>[\s\S]*?<\/\1>/g, " ")
+    .replaceAll(/<[A-Za-z][^>]*\/?>/g, " ")
+    .replaceAll(/^:::.*$/gm, " ")
+    .replaceAll(/!\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replaceAll(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replaceAll(/`([^`]+)`/g, "$1")
+    .replaceAll(/^\s{0,3}#{1,6}\s+/gm, "")
+    .replaceAll(/^\s{0,3}>\s?/gm, "")
+    .replaceAll(/^\s{0,3}(?:[-*+]|\d+\.)\s+/gm, "")
+    .replaceAll(/(\*\*|__|\*|_|~~)/g, "")
+    .replaceAll(/\s+/g, " ")
+    .trim();
+}
+
 export function discoverPosts(blogDir: string): PostData[] {
   const posts: PostData[] = [];
 
@@ -43,7 +67,7 @@ export function discoverPosts(blogDir: string): PostData[] {
         scanDir(fullPath);
       } else if ((item.endsWith(".md") || item.endsWith(".mdx")) && item !== "index.md") {
         const raw = fs.readFileSync(fullPath, "utf8");
-        const { data: fm } = matter(raw);
+        const { data: fm, content: body } = matter(raw);
 
         if (fm.published === false) continue;
 
@@ -62,8 +86,8 @@ export function discoverPosts(blogDir: string): PostData[] {
           tags = fm.tags.split(/\s+/).filter(Boolean);
         }
 
-        const textContent = fm.description || "";
         const description = fm.description || "";
+        const textContent = toPlainText(body);
 
         posts.push({
           title: fm.title || item.replace(/\.mdx?$/, ""),
@@ -71,7 +95,6 @@ export function discoverPosts(blogDir: string): PostData[] {
           date,
           description,
           tags,
-          content: raw,
           textContent,
           contentHash: computeHash(raw),
           filePath: fullPath,

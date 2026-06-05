@@ -58,7 +58,6 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
       title: post.title,
       site: pubAtUri,
       path: post.path,
-      content: post.content,
       textContent: post.textContent,
       publishedAt: `${post.date}T00:00:00.000Z`,
       description: post.description,

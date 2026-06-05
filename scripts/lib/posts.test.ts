@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import { discoverPosts, computeHash, pathToRkey, extractPostPath } from "./posts";
+import { discoverPosts, computeHash, pathToRkey, extractPostPath, toPlainText } from "./posts";
 
 describe("pathToRkey", () => {
   it("converts a blog post path to a valid rkey", () => {
@@ -108,5 +108,24 @@ describe("discoverPosts", () => {
     expect(posts).toHaveLength(2);
     expect(posts[0].title).toBe("Later");
     expect(posts[1].title).toBe("Earlier");
+  });
+});
+
+describe("toPlainText", () => {
+  it("strips markdown formatting to plain prose", () => {
+    expect(toPlainText("# Heading\n\nSome **bold** and _italic_ and `code` text.")).toBe(
+      "Heading Some bold and italic and code text.",
+    );
+  });
+
+  it("unwraps links and images to their text", () => {
+    expect(toPlainText("See [the docs](https://x.dev) and ![a cat](cat.png).")).toBe(
+      "See the docs and a cat.",
+    );
+  });
+
+  it("drops fenced code, JSX components and container directives", () => {
+    const md = '```ts\nconst x = 1;\n```\n\n<Picture file="a" />\n\n:::tip\n\nKeep this.\n\n:::';
+    expect(toPlainText(md)).toBe("Keep this.");
   });
 });
