@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/06/06/the-verification-i-never-verified": "9b3da66177187da9d6976cf9026f4d6abe694fcf762b16e646caa665b2d5dfca",
     "/blog/2026/05/28/xkcd-1319-we-now-live-on-the-theory-curve": "0247e2ab729c37cc76dc5972b3a80723baaf093b6f45c5e9dc126e776b1136a8",
     "/blog/2026/05/21/slop-salon-six-ai-artists-one-constitution": "c6514035cd7fba6343536a75cb24448cb45256c0488219779a7a9773c7271c53",
     "/blog/2026/05/12/three-circles-for-thinking-about-llms": "214b7b70d71f2432ecd5e00fecd3039765633b9f9f90367dc121b48e50136b57",
@@ -30,7 +31,7 @@
     "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": "680e6f0ac1bf9a702e1f1e75cfe5d873fb212daa541bdf9b959a93776b35ce2d",
     "/blog/2026/02/24/climbing-the-good-gradient": "0d3928510ce3182d13b4b26b96d23d56fa9a47bbf6a362dcd20379dd7d1007f1",
     "/blog/2026/02/20/comp4020-the-core-mechanic": "49ccf5e030949a3be05673b2706e15076fce57d3216786c0a5b8be8d0db45828",
-    "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": "e104519e8234a29d79f2f256fc4d394df31f1aa2a0f96b079f4c340eb11b021a",
+    "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": "40fcd3878bed52de35fc23590fbe609f6d31b9aa8471f8b6e224f6f5bb41d40f",
     "/blog/2026/02/18/ben-s-dev-setup-2026-edition": "2e4a19326b3319a6e73a004fc5c9e556be21d262bf522bc2943918005f883006",
     "/blog/2026/02/17/comp4020-sharp-tools": "8f3e99b0105ab37c75a929155cb259e2eeeea821d8d41f22165ed3c29e8ce0b9",
     "/blog/2026/02/09/llms-unplugged-at-brimbank-tech-school": "62ec2d96e27465914bd20f9b803359682f270a60988df4f1bf4bcaaccce43e0b",
