@@ -99,6 +99,15 @@ AT-URI, and each built page includes the document AT-URI in its `<head>`. Any
 indexer can match the web content to the protocol records and confirm they
 belong together.
 
+:::info
+
+Update, June 2026: the `/.well-known` half of this verification turned out to be
+returning a 404 in production for months, because GitHub Pages was dropping the
+file from the deploy. I trace the cause and the one-line fix in
+[The verification I never verified](/blog/2026/06/06/the-verification-i-never-verified/).
+
+:::
+
 Why roll my own rather than use [Sequoia](https://sequoia.pub)? Sequoia is a
 perfectly good CLI for publishing standard.site records, handling
 authentication, record creation, and the well-known file out of the box. I
