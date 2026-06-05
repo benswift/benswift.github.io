@@ -60,6 +60,10 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist
+          # Default excludes all dotfiles (--exclude=.[^/]*), which drops the
+          # .well-known/ directory from the artifact and 404s the Standard.site
+          # publication verification. Keep hidden files.
+          include-hidden-files: true
 
       - name: Commit state changes
         run: |
