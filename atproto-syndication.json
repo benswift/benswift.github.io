@@ -1,0 +1,469 @@
+{
+  "posts": {
+    "/blog/2026/05/28/xkcd-1319-we-now-live-on-the-theory-curve": {
+      "seeded": true
+    },
+    "/blog/2026/05/21/slop-salon-six-ai-artists-one-constitution": {
+      "seeded": true
+    },
+    "/blog/2026/05/12/three-circles-for-thinking-about-llms": {
+      "seeded": true
+    },
+    "/blog/2026/05/04/on-agentic-tools-and-lock-in": {
+      "seeded": true
+    },
+    "/blog/2026/04/28/a-static-site-that-takes-pull-requests": {
+      "seeded": true
+    },
+    "/blog/2026/04/22/comp4020-token-management-by-proxy": {
+      "seeded": true
+    },
+    "/blog/2026/04/16/comp4020-pledges-not-questions": {
+      "seeded": true
+    },
+    "/blog/2026/04/15/comp4020-assessment": {
+      "seeded": true
+    },
+    "/blog/2026/04/09/one-git-heatmap-to-rule-them-all": {
+      "seeded": true
+    },
+    "/blog/2026/04/08/agentic-coding-for-conscientious-objectors": {
+      "seeded": true
+    },
+    "/blog/2026/04/08/reterminal-dm-nerves-kiosk": {
+      "seeded": true
+    },
+    "/blog/2026/04/07/the-professorial-class": {
+      "seeded": true
+    },
+    "/blog/2026/04/03/ask-ben-powered-by-gemma-4": {
+      "seeded": true
+    },
+    "/blog/2026/04/02/anthropic-comes-to-the-party": {
+      "seeded": true
+    },
+    "/blog/2026/03/31/comp4020-the-story-so-far": {
+      "seeded": true
+    },
+    "/blog/2026/03/30/comp4020-agents-in-the-classroom": {
+      "seeded": true
+    },
+    "/blog/2026/03/30/comp4020-whats-the-theory-here": {
+      "seeded": true
+    },
+    "/blog/2026/03/27/managing-the-strategic-token-reserve": {
+      "seeded": true
+    },
+    "/blog/2026/03/26/comp4020-the-weekly-questions": {
+      "seeded": true
+    },
+    "/blog/2026/03/24/course-software-environment": {
+      "seeded": true
+    },
+    "/blog/2026/03/20/agentic-coding-studio": {
+      "seeded": true
+    },
+    "/blog/2026/03/19/perceptron-apparatus-inference-walkthrough": {
+      "seeded": true
+    },
+    "/blog/2026/03/18/radical-openness": {
+      "seeded": true
+    },
+    "/blog/2026/03/05/comp4020-safety-yolo-and-the-open-web": {
+      "seeded": true
+    },
+    "/blog/2026/03/03/mini-neon-perceptron-xor-edition": {
+      "seeded": true
+    },
+    "/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux": {
+      "seeded": true
+    },
+    "/blog/2026/02/24/climbing-the-good-gradient": {
+      "seeded": true
+    },
+    "/blog/2026/02/20/comp4020-the-core-mechanic": {
+      "seeded": true
+    },
+    "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging": {
+      "seeded": true
+    },
+    "/blog/2026/02/18/ben-s-dev-setup-2026-edition": {
+      "seeded": true
+    },
+    "/blog/2026/02/17/comp4020-sharp-tools": {
+      "seeded": true
+    },
+    "/blog/2026/02/09/llms-unplugged-at-brimbank-tech-school": {
+      "seeded": true
+    },
+    "/blog/2026/02/06/ai-agents-on-the-atmosphere": {
+      "seeded": true
+    },
+    "/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai": {
+      "seeded": true
+    },
+    "/blog/2025/12/23/coding-agents-and-the-plasticity-of-code": {
+      "seeded": true
+    },
+    "/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web": {
+      "seeded": true
+    },
+    "/blog/2025/12/17/extempore-s-aliiiiive-on-aarch64": {
+      "seeded": true
+    },
+    "/blog/2025/12/17/fixing-slow-zed-agent-startup-times": {
+      "seeded": true
+    },
+    "/blog/2025/12/11/neon-perceptron-digital-twin": {
+      "seeded": true
+    },
+    "/blog/2025/12/10/llms-unplugged-teaching-language-models-with-pen-paper-and-dice": {
+      "seeded": true
+    },
+    "/blog/2025/12/03/blog-archaeology": {
+      "seeded": true
+    },
+    "/blog/2025/12/02/switching-from-jekyll-to-vitepress": {
+      "seeded": true
+    },
+    "/blog/2025/11/24/11ty-and-vite-for-modern-static-websites": {
+      "seeded": true
+    },
+    "/blog/2025/11/12/seeing-ai-tasks-through-a-tam-lens": {
+      "seeded": true
+    },
+    "/blog/2025/11/11/tracking-aps-ai-transparency-statements": {
+      "seeded": true
+    },
+    "/blog/2025/10/08/cybernetic-studio-launch-sxsw-sydney": {
+      "seeded": true
+    },
+    "/blog/2025/09/12/the-great-2025-email-yak-shave-o365-mbsync-mu-neomutt-msmtp": {
+      "seeded": true
+    },
+    "/blog/2025/07/23/running-claude-code-within-zed": {
+      "seeded": true
+    },
+    "/blog/2025/07/17/agentic-ai-llms-with-stones": {
+      "seeded": true
+    },
+    "/blog/2025/07/16/automated-rpi-web-kiosk-setup-in-2025": {
+      "seeded": true
+    },
+    "/blog/2025/07/07/diychatgpt-short-course-for-anu-undergraduates": {
+      "seeded": true
+    },
+    "/blog/2025/06/06/agentic-elixir-superpowers-zed-tidewave-ashai": {
+      "seeded": true
+    },
+    "/blog/2025/02/18/deepseek-and-shallow-moats": {
+      "seeded": true
+    },
+    "/blog/2024/11/07/llm-parlour-games-for-overeducated-wankers": {
+      "seeded": true
+    },
+    "/blog/2024/09/20/format-markdown-on-save-in-zed-using-prettier": {
+      "seeded": true
+    },
+    "/blog/2024/08/12/hosting-a-genai-trivia-night": {
+      "seeded": true
+    },
+    "/blog/2024/05/30/livecoding-set-iclc-24-shanghai-concert-hall": {
+      "seeded": true
+    },
+    "/blog/2023/06/01/congrats-dr-chenchen-xu": {
+      "seeded": true
+    },
+    "/blog/2023/05/13/parental-leave-take-3": {
+      "seeded": true
+    },
+    "/blog/2023/02/08/writing-graph-theory-proofs-with-chatgpt": {
+      "seeded": true
+    },
+    "/blog/2023/02/02/academic-integrity-policy-re-chatgpt-and-generative-ai-tools": {
+      "seeded": true
+    },
+    "/blog/2023/02/02/jekyll-build-speedups-for-ruby-3-2": {
+      "seeded": true
+    },
+    "/blog/2023/01/26/congrats-dr-kieran-browne": {
+      "seeded": true
+    },
+    "/blog/2023/01/22/handling-square-webhooks-in-phoenix": {
+      "seeded": true
+    },
+    "/blog/2023/01/16/chatGPT-in-the-classroom": {
+      "seeded": true
+    },
+    "/blog/2023/01/11/rclone-exclude-all-git-repos": {
+      "seeded": true
+    },
+    "/blog/2022/12/07/a-school-of-cybernetics-strategy-meeting-with-chatgpt": {
+      "seeded": true
+    },
+    "/blog/2022/12/07/drinking-from-the-bullshit-firehose": {
+      "seeded": true
+    },
+    "/blog/2022/12/06/ai-art-installations-and-livecoding-gigs-in-nov-dec": {
+      "seeded": true
+    },
+    "/blog/2022/10/13/ai-in-higher-education-dystopia-utopia-or-somewhere-in-between": {
+      "seeded": true
+    },
+    "/blog/2022/10/12/nga-un-tour-the-hidden-gallery": {
+      "seeded": true
+    },
+    "/blog/2022/09/02/running-stable-diffusion-in-a-singularity-container": {
+      "seeded": true
+    },
+    "/blog/2022/06/30/so-this-is-how-it-feels-when-robots-come-for-your-job": {
+      "seeded": true
+    },
+    "/blog/2022/06/30/what-githubs-copilot-ai-assistant-means-for-coders": {
+      "seeded": true
+    },
+    "/blog/2022/06/22/redacting-craiyon-prompts-with-imagemagick": {
+      "seeded": true
+    },
+    "/blog/2022/05/23/pulling-apart-zoom-attendance-csv-dumps-in-tidy-r": {
+      "seeded": true
+    },
+    "/blog/2022/03/07/teaching-the-world-to-cybernetics": {
+      "seeded": true
+    },
+    "/blog/2022/02/01/running-an-ai-neural-style-transfer-model-under-singularity": {
+      "seeded": true
+    },
+    "/blog/2022/01/20/cybernetic-futures-explained": {
+      "seeded": true
+    },
+    "/blog/2021/11/11/livecoder-in-the-club-as-a-system": {
+      "seeded": true
+    },
+    "/blog/2021/10/27/deploying-a-phoenix-app-with-liveview-on-fly-io": {
+      "seeded": true
+    },
+    "/blog/2021/10/21/cutting-ruby-ci-pipeline-times-with-pre-installed-bundles": {
+      "seeded": true
+    },
+    "/blog/2021/10/18/openconnect-setup-for-institutional-vpn-access": {
+      "seeded": true
+    },
+    "/blog/2021/09/13/feedback-in-livecoding-cui-bono": {
+      "seeded": true
+    },
+    "/blog/2021/05/11/moving-to-the-school-of-cybernetics": {
+      "seeded": true
+    },
+    "/blog/2021/05/06/lens-21-final-gig-2pm-june-6-sideway": {
+      "seeded": true
+    },
+    "/blog/2021/04/29/acmc-21-synthmoot-connections-announced-for-august-26-28": {
+      "seeded": true
+    },
+    "/blog/2021/04/23/a-short-list-of-extempore-livecoding-tricks": {
+      "seeded": true
+    },
+    "/blog/2021/04/08/benswift-me-analytics-tracking-update": {
+      "seeded": true
+    },
+    "/blog/2021/04/01/bulk-add-students-to-ms-teams-from-a-csv-file": {
+      "seeded": true
+    },
+    "/blog/2021/03/18/anzsrc-for-codes-2020-edition": {
+      "seeded": true
+    },
+    "/blog/2021/03/16/how-to-cite-code-leading-by-example": {
+      "seeded": true
+    },
+    "/blog/2021/03/16/simple-pdf-papers-reports-with-markdown-pandoc-and-bibtex": {
+      "seeded": true
+    },
+    "/blog/2021/02/19/respectful-learning-memes": {
+      "seeded": true
+    },
+    "/blog/2021/01/25/independent-study-contract-writing-tips": {
+      "seeded": true
+    },
+    "/blog/2020/12/16/configuring-spacemacs-org-roam-org-noter-for-academic-writing-bliss": {
+      "seeded": true
+    },
+    "/blog/2020/12/11/student-project-animated-3d-code-rendering-engine": {
+      "seeded": true
+    },
+    "/blog/2020/09/17/creative-computing-anu-extension-course": {
+      "seeded": true
+    },
+    "/blog/2020/09/08/parental-leave-take-2": {
+      "seeded": true
+    },
+    "/blog/2020/07/17/mbsync-v1-3-2-breaking-change": {
+      "seeded": true
+    },
+    "/blog/2020/07/15/acmc2020-organising-my-first-virtual-conference": {
+      "seeded": true
+    },
+    "/blog/2020/06/11/lens-2020-final-gig-stream-tomorrow-at-8pm": {
+      "seeded": true
+    },
+    "/blog/2020/04/30/two-way-osc-communication-between-extempore-and-pd": {
+      "seeded": true
+    },
+    "/blog/2020/04/18/a-call-up-to-fight-covid19": {
+      "seeded": true
+    },
+    "/blog/2020/03/21/lens-online-the-laptop-ensemble-in-a-time-of-covid19": {
+      "seeded": true
+    },
+    "/blog/2020/03/11/reimagine-fellowship-uk-trip-report": {
+      "seeded": true
+    },
+    "/blog/2020/02/14/command-control-giving-os-aware-keybinding-hints": {
+      "seeded": true
+    },
+    "/blog/2020/02/06/iclc-extempore-workshop": {
+      "seeded": true
+    },
+    "/blog/2020/01/29/acmc-20-submissions-now-open": {
+      "seeded": true
+    },
+    "/blog/2020/01/28/extempore-workshop-iclc-20-feb-6-limerick-ie": {
+      "seeded": true
+    },
+    "/blog/2020/01/28/upcoming-gig-smoke-jan-30": {
+      "seeded": true
+    },
+    "/blog/2020/01/27/euclidean-rhythms-in-extempore": {
+      "seeded": true
+    },
+    "/blog/2020/01/25/lens-in-s1-2020": {
+      "seeded": true
+    },
+    "/blog/2019/11/17/anu-extension-creative-code": {
+      "seeded": true
+    },
+    "/blog/2019/11/17/benswift-me-dev-roadmap-for-2020": {
+      "seeded": true
+    },
+    "/blog/2019/11/08/comp1720-2019-major-project-exhibtion": {
+      "seeded": true
+    },
+    "/blog/2019/11/07/codesign-culture-lab-workshop": {
+      "seeded": true
+    },
+    "/blog/2019/10/31/anu-laptop-ensemble-showcase-s2-2019": {
+      "seeded": true
+    },
+    "/blog/2019/10/21/ben-and-comp2300-next-year": {
+      "seeded": true
+    },
+    "/blog/2019/10/16/making-altair-vega-lite-charts-readable-without-squinting": {
+      "seeded": true
+    },
+    "/blog/2019/10/16/package-managers-update-or-upgrade": {
+      "seeded": true
+    },
+    "/blog/2019/10/15/sound-file-io-in-extempore-with-libsndfile": {
+      "seeded": true
+    },
+    "/blog/2019/10/14/iot-china-study-tour-not-happening-in-2019": {
+      "seeded": true
+    },
+    "/blog/2019/10/01/laptop-ensemble-in-the-canberra-times": {
+      "seeded": true
+    },
+    "/blog/2019/09/21/mapping-the-livecoding-landscape": {
+      "seeded": true
+    },
+    "/blog/2019/09/18/xinyus-extempore-tutorials": {
+      "seeded": true
+    },
+    "/blog/2019/09/09/reimagine-fellowship-planning-workshop": {
+      "seeded": true
+    },
+    "/blog/2019/08/30/Im-a-reimagine-fellow": {
+      "seeded": true
+    },
+    "/blog/2019/08/06/making-the-most-of-meetings-with-research-students": {
+      "seeded": true
+    },
+    "/blog/2019/07/29/livecoding-gig-this-friday-5-30pm-anu-drill-hall-gallery": {
+      "seeded": true
+    },
+    "/blog/2019/07/24/livecoding-article-on-the-abc": {
+      "seeded": true
+    },
+    "/blog/2019/07/17/in-place-xml-tree-mutation-for-jekyll-productivity": {
+      "seeded": true
+    },
+    "/blog/2019/03/20/reimagine-fellow-project-pitch": {
+      "seeded": true
+    },
+    "/blog/2019/03/09/mapping-over-table-rows-in-org-mode": {
+      "seeded": true
+    },
+    "/blog/2019/02/26/on-parental-leave-and-auto-reply-messages": {
+      "seeded": true
+    },
+    "/blog/2019/02/21/dynamic-reimagine-logo": {
+      "seeded": true
+    },
+    "/blog/2019/02/16/algorithmic-uni-marketing-billboards": {
+      "seeded": true
+    },
+    "/blog/2019/02/07/reimagining-engineering-cs-at-the-anu": {
+      "seeded": true
+    },
+    "/blog/2019/02/06/class-discussions-on-discourse": {
+      "seeded": true
+    },
+    "/blog/2019/01/31/on-livecoding-annotations-and-visualisations": {
+      "seeded": true
+    },
+    "/blog/2019/01/29/oils-from-weihai": {
+      "seeded": true
+    },
+    "/blog/2019/01/22/old-livecoding-photo-roundup": {
+      "seeded": true
+    },
+    "/blog/2019/01/17/highlight-js-with-xtlang-support": {
+      "seeded": true
+    },
+    "/blog/2019/01/02/the-annual-benswift-me-re-write-2019-edition": {
+      "seeded": true
+    },
+    "/blog/2018/09/28/another-reveal.js-plugin-for-jekyll": {
+      "seeded": true
+    },
+    "/blog/2018/06/22/chi-hangs": {
+      "seeded": true
+    },
+    "/blog/2018/06/22/hosting-a-self-built-jekyll-site-on-gh-pages": {
+      "seeded": true
+    },
+    "/blog/2018/06/06/anu-laptop-orchestra": {
+      "seeded": true
+    },
+    "/blog/2018/06/05/centre-for-the-public-awareness-of-code": {
+      "seeded": true
+    },
+    "/blog/2018/04/24/the-other-side-algorithm-as-ritual-in-artificial-intelligence": {
+      "seeded": true
+    },
+    "/blog/2017/09/06/telopea-hour-of-code": {
+      "seeded": true
+    },
+    "/blog/2017/08/11/science-week-gig": {
+      "seeded": true
+    },
+    "/blog/2017/07/10/comp1720-teaser": {
+      "seeded": true
+    },
+    "/blog/2017/07/06/benswift-me-update-july-2017-edition": {
+      "seeded": true
+    },
+    "/blog/2016/12/01/blog-refresh": {
+      "seeded": true
+    }
+  }
+}
