@@ -563,6 +563,8 @@ sup a {
 
   nav,
   footer,
+  .hero-slot,
+  .skip-link,
   .at-heading-anchor {
     display: none !important;
   }
