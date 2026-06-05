@@ -1,4 +1,6 @@
-import { AtpAgent } from "@atproto/api";
+import fs from "node:fs";
+import { AtpAgent, RichText } from "@atproto/api";
+import sharp from "sharp";
 
 export interface PublicationRecord {
   url: string;
@@ -14,12 +16,33 @@ export interface DocumentRecord {
   publishedAt: string;
   description: string;
   tags?: string[];
+  /** Strong reference to the Bluesky post that announces this document. */
+  bskyPostRef?: { uri: string; cid: string };
+}
+
+export interface SkeetInput {
+  /** Post text, kept within Bluesky's 300-grapheme limit by the caller. */
+  text: string;
+  /** Canonical URL for the link-card embed. */
+  url: string;
+  /** Link-card title. */
+  title: string;
+  /** Link-card description. */
+  description: string;
+  /** Source image (AVIF/PNG/JPEG) for the card thumbnail; converted to JPEG. */
+  thumbPath?: string;
+}
+
+export interface SkeetResult {
+  uri: string;
+  cid: string;
 }
 
 export interface AtprotoClient {
   did: string;
   ensurePublication(pub: PublicationRecord): Promise<string>;
   putDocument(rkey: string, doc: DocumentRecord): Promise<string>;
+  createSkeet(input: SkeetInput): Promise<SkeetResult>;
 }
 
 export async function createClient(
@@ -62,6 +85,9 @@ export async function createClient(
       if (doc.tags?.length) {
         record.tags = doc.tags;
       }
+      if (doc.bskyPostRef) {
+        record.bskyPostRef = { uri: doc.bskyPostRef.uri, cid: doc.bskyPostRef.cid };
+      }
 
       await agent.com.atproto.repo.putRecord({
         repo: did,
@@ -70,6 +96,40 @@ export async function createClient(
         record,
       });
       return `at://${did}/site.standard.document/${rkey}`;
+    },
+
+    async createSkeet(input: SkeetInput): Promise<SkeetResult> {
+      const external: Record<string, unknown> = {
+        uri: input.url,
+        title: input.title,
+        description: input.description,
+      };
+
+      if (input.thumbPath && fs.existsSync(input.thumbPath)) {
+        const jpeg = await sharp(input.thumbPath)
+          .resize(1200, 630, { fit: "cover" })
+          .jpeg({ quality: 80 })
+          .toBuffer();
+        const uploaded = await agent.uploadBlob(jpeg, { encoding: "image/jpeg" });
+        external.thumb = uploaded.data.blob;
+      }
+
+      const rt = new RichText({ text: input.text });
+      await rt.detectFacets(agent);
+
+      const res = await agent.com.atproto.repo.createRecord({
+        repo: did,
+        collection: "app.bsky.feed.post",
+        record: {
+          $type: "app.bsky.feed.post",
+          text: rt.text,
+          facets: rt.facets,
+          langs: ["en"],
+          embed: { $type: "app.bsky.embed.external", external },
+          createdAt: new Date().toISOString(),
+        },
+      });
+      return { uri: res.data.uri, cid: res.data.cid };
     },
   };
 }

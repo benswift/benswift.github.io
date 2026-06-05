@@ -12,6 +12,8 @@ export interface PostData {
   textContent: string;
   contentHash: string;
   filePath: string;
+  /** Whether this post may be cross-posted to Bluesky (frontmatter `crosspost: false` opts out). */
+  crosspost: boolean;
 }
 
 export function pathToRkey(postPath: string): string {
@@ -98,6 +100,7 @@ export function discoverPosts(blogDir: string): PostData[] {
           textContent,
           contentHash: computeHash(raw),
           filePath: fullPath,
+          crosspost: fm.crosspost !== false,
         });
       }
     }

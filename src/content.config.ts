@@ -26,6 +26,8 @@ const blog = defineCollection({
       // auto-discovered src/assets/heroes/<date-slug>.avif. Path is resolved
       // relative to the post file via Astro's image() helper.
       image: image().optional(),
+      // Opt out of automatic Bluesky cross-posting for this post (default: on).
+      crosspost: z.boolean().optional(),
     }),
 });
 

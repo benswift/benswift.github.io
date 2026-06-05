@@ -49,6 +49,9 @@ jobs:
         env:
           ATP_IDENTIFIER: ${{ secrets.ATP_IDENTIFIER }}
           ATP_APP_PASSWORD: ${{ secrets.ATP_APP_PASSWORD }}
+          # Announce newly-published posts to Bluesky. The back catalogue is
+          # seeded in atproto-syndication.json, so only new posts are sent.
+          BLUESKY_CROSSPOST: "1"
 
       - name: Build with Astro
         run: pnpm run build
@@ -69,7 +72,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add atproto-state.json public/.well-known/site.standard.publication
+          git add atproto-state.json atproto-syndication.json public/.well-known/site.standard.publication
           git diff --staged --quiet || (git commit -m "[skip ci] update atproto state" && git push)
 
   deploy:

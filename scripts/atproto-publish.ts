@@ -2,6 +2,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { discoverPosts, pathToRkey } from "./lib/posts";
 import { readState, writeState, type AtprotoState } from "./lib/state";
+import { isSyndicated, readSyndication, syndicationRef, writeSyndication } from "./lib/syndication";
 import { createClient, type AtprotoClient } from "./lib/atproto";
 
 export interface PublishConfig {
@@ -11,6 +12,11 @@ export interface PublishConfig {
   siteUrl: string;
   siteName: string;
   siteDescription: string;
+  /** When true, announce eligible new posts to Bluesky. */
+  crossPost: boolean;
+  syndicationPath: string;
+  heroesDir: string;
+  defaultOgPath: string;
 }
 
 const defaultConfig: PublishConfig = {
@@ -20,15 +26,31 @@ const defaultConfig: PublishConfig = {
   siteUrl: "https://benswift.me",
   siteName: "benswift.me",
   siteDescription: "Ben Swift — researcher, educator, artist, developer",
+  crossPost: process.env.BLUESKY_CROSSPOST === "1",
+  syndicationPath: path.resolve(import.meta.dirname, "..", "atproto-syndication.json"),
+  heroesDir: path.resolve(import.meta.dirname, "..", "src/assets/heroes"),
+  defaultOgPath: path.resolve(import.meta.dirname, "..", "src/assets/og-default.avif"),
 };
 
 function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/** Bluesky posts cap at 300 graphemes; titles are short, but guard anyway. */
+function skeetText(title: string): string {
+  return title.length <= 300 ? title : title.slice(0, 297) + "…";
+}
+
+/** Card thumbnail source: the post's own hero image, falling back to the default OG image. */
+function resolveThumbPath(config: PublishConfig, rkey: string): string {
+  const hero = path.join(config.heroesDir, `${rkey}.avif`);
+  return fs.existsSync(hero) ? hero : config.defaultOgPath;
+}
+
 export async function publish(client: AtprotoClient, config: PublishConfig = defaultConfig) {
   const state = readState(config.statePath);
   const oldHashes = state?.contentHashes ?? {};
+  const syndication = readSyndication(config.syndicationPath);
 
   const pubAtUri = await client.ensurePublication({
     url: config.siteUrl,
@@ -43,16 +65,50 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
   let created = 0;
   let updated = 0;
   let unchanged = 0;
+  let crossPosted = 0;
+  let crossPostFailed = 0;
 
   for (const post of posts) {
     const rkey = pathToRkey(post.path);
+    const contentChanged = oldHashes[post.path] !== post.contentHash;
+    const isNew = !(post.path in oldHashes);
+    const eligible = config.crossPost && post.crosspost && !isSyndicated(syndication, post.path);
 
-    if (oldHashes[post.path] === post.contentHash) {
+    // Cross-post before writing the document so it can reference the Bluesky post.
+    // Preserve any existing reference so editing an announced post keeps the link.
+    let ref = syndicationRef(syndication, post.path);
+    let crossPostSucceeded = false;
+    if (eligible) {
+      try {
+        const skeet = await client.createSkeet({
+          text: skeetText(post.title),
+          url: `${config.siteUrl}${post.path}/`,
+          title: post.title,
+          description: post.description,
+          thumbPath: resolveThumbPath(config, rkey),
+        });
+        ref = { uri: skeet.uri, cid: skeet.cid };
+        syndication.posts[post.path] = {
+          uri: skeet.uri,
+          cid: skeet.cid,
+          syndicatedAt: new Date().toISOString(),
+        };
+        crossPosted++;
+        crossPostSucceeded = true;
+        console.log(`  bluesky: cross-posted ${post.path} -> ${skeet.uri}`);
+      } catch (error) {
+        crossPostFailed++;
+        console.error(
+          `  bluesky: cross-post failed for ${post.path}:`,
+          error instanceof Error ? error.message : error,
+        );
+      }
+    }
+
+    if (!contentChanged && !crossPostSucceeded) {
       unchanged++;
       continue;
     }
-
-    const isNew = !(post.path in oldHashes);
 
     await client.putDocument(rkey, {
       title: post.title,
@@ -62,10 +118,13 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
       publishedAt: `${post.date}T00:00:00.000Z`,
       description: post.description,
       tags: post.tags.length ? post.tags : undefined,
+      bskyPostRef: ref,
     });
 
-    if (isNew) created++;
-    else updated++;
+    if (contentChanged) {
+      if (isNew) created++;
+      else updated++;
+    }
 
     await sleep(100);
   }
@@ -76,8 +135,14 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     contentHashes: Object.fromEntries(posts.map((p) => [p.path, p.contentHash])),
   };
   writeState(config.statePath, newState);
+  if (config.crossPost) writeSyndication(config.syndicationPath, syndication);
 
-  console.log(`atproto publish: ${created} new, ${updated} updated, ${unchanged} unchanged`);
+  const bluesky = config.crossPost
+    ? `; bluesky: ${crossPosted} cross-posted${crossPostFailed ? `, ${crossPostFailed} failed` : ""}`
+    : "";
+  console.log(
+    `atproto publish: ${created} new, ${updated} updated, ${unchanged} unchanged${bluesky}`,
+  );
 }
 
 async function main() {
