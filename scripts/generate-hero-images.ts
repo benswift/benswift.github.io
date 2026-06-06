@@ -5,14 +5,12 @@ import { setTimeout as delay } from "node:timers/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { discoverPosts, pathToRkey } from "./lib/posts";
-import { readState } from "./lib/state";
 
 const execFileP = promisify(execFile);
 
 const PREVIEW_PORT = 4399;
 const PREVIEW_BASE = `http://localhost:${PREVIEW_PORT}`;
 const HEROES_DIR = path.resolve(import.meta.dirname, "..", "src/assets/heroes");
-const STATE_PATH = path.resolve(import.meta.dirname, "..", "atproto-state.json");
 const BLOG_DIR = path.resolve(import.meta.dirname, "..", "src/content/blog");
 const SETTLE_MS = 4000;
 
@@ -41,14 +39,20 @@ async function main() {
     throw new Error("dist/ not found — run `pnpm build` before generating hero images.");
   }
 
-  const state = readState(STATE_PATH);
-  const oldHashes = state?.contentHashes ?? {};
+  // By default generate heroes only for posts that don't have one yet, so new
+  // posts get a hero without clobbering existing art on unrelated content edits.
+  // Pass --force to regenerate every post (e.g. after changing the canvas).
+  const force = process.argv.includes("--force") || process.argv.includes("--all");
   const posts = discoverPosts(BLOG_DIR);
 
-  const workList = posts.filter((p) => oldHashes[p.path] !== p.contentHash);
+  const workList = force
+    ? posts
+    : posts.filter((p) => !fs.existsSync(path.join(HEROES_DIR, `${pathToRkey(p.path)}.avif`)));
 
   console.log(
-    `${workList.length} posts to regenerate (${posts.length - workList.length} unchanged).`,
+    force
+      ? `Regenerating all ${workList.length} hero(es).`
+      : `${workList.length} post(s) missing a hero (${posts.length - workList.length} already have one).`,
   );
 
   if (workList.length === 0) {
@@ -65,6 +69,14 @@ async function main() {
   try {
     await waitForServer(`${PREVIEW_BASE}/`);
 
+    // The first WebGL hero in a fresh browser captures blank — the GL context
+    // isn't presented in time for the screenshot. Prime it with one throwaway
+    // load so every capture below is warm.
+    await ab(["open", `${PREVIEW_BASE}${workList[0]!.path}/`]);
+    await ab(["wait", "--load", "networkidle"]);
+    await ab(["wait", ".hero-canvas"]);
+    await ab(["wait", String(SETTLE_MS)]);
+
     for (const post of workList) {
       const slug = pathToRkey(post.path);
       const url = `${PREVIEW_BASE}${post.path}/`;
@@ -74,6 +86,7 @@ async function main() {
 
       await ab(["open", url]);
       await ab(["wait", "--load", "networkidle"]);
+      await ab(["wait", ".hero-canvas"]);
       await ab(["wait", String(SETTLE_MS)]);
       await ab(["screenshot", ".hero-canvas", tmpPng]);
       await execFileP("avifenc", ["-s", "0", "-q", "90", "-y", "444", "-j", "all", tmpPng, out]);
