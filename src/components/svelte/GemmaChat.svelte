@@ -9,6 +9,9 @@
     | { kind: "chat" }
     | { kind: "error"; message: string };
 
+  let { allowMobile = false, compact = false }: { allowMobile?: boolean; compact?: boolean } =
+    $props();
+
   let modelState: ModelState = $state({ kind: "ready" });
   let messages: ChatMessage[] = $state([]);
   let input = $state("");
@@ -158,7 +161,7 @@ ${siteContent}`;
   }
 
   onMount(() => {
-    if (isMobileDevice()) {
+    if (!allowMobile && isMobileDevice()) {
       modelState = { kind: "unsupported", reason: "mobile" };
     } else if (!navigator.gpu) {
       modelState = { kind: "unsupported", reason: "no-webgpu" };
@@ -171,8 +174,9 @@ ${siteContent}`;
     <div class="notice">
       {#if modelState.reason === "mobile"}
         <p>
-          This demo loads a ~2 GB language model into your browser, which is too large for mobile
-          devices. Try it on a desktop or laptop with a dedicated GPU for the best experience.
+          This demo loads a ~2 GB language model into your browser, which is a lot to ask of a
+          phone. Try it on a desktop or laptop with a dedicated GPU---or scroll down to the compact
+          version, which is tuned to run on recent phones.
         </p>
       {:else}
         <p>
@@ -189,6 +193,13 @@ ${siteContent}`;
         via WebGPU. It's primed with the content of this site so you can ask it questions about me and
         my work.
       </p>
+      {#if allowMobile}
+        <p class="fine-print">
+          Gemma 4's quantisation-aware training shrinks the model's runtime memory below a gigabyte,
+          so it now fits on a recent phone---but it's still a ~2 GB download and needs a
+          WebGPU-capable browser (iOS Safari 17+ or recent Chrome on Android).
+        </p>
+      {/if}
       <button class="load-button" onclick={loadModel}>Load model and start chatting</button>
     </div>
   {:else if modelState.kind === "loading"}
@@ -212,7 +223,7 @@ ${siteContent}`;
       <pre>{modelState.message}</pre>
     </div>
   {:else}
-    <div class="chat-container">
+    <div class="chat-container" class:compact>
       <div
         class="messages"
         bind:this={messagesEl}
@@ -274,6 +285,11 @@ ${siteContent}`;
     line-height: 1.5;
   }
 
+  .notice p.fine-print {
+    font-size: 0.85rem;
+    color: var(--text-3, #666);
+  }
+
   .notice.error pre {
     text-align: left;
     font-size: 0.8rem;
@@ -324,6 +340,10 @@ ${siteContent}`;
     display: flex;
     flex-direction: column;
     height: 500px;
+  }
+
+  .chat-container.compact {
+    height: 380px;
   }
 
   .messages {

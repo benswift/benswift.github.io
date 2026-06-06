@@ -46,3 +46,15 @@ cloud API.
 :::
 
 <GemmaChat client:only="svelte" />
+
+Since I first put this up, Google has released [quantisation-aware-trained
+builds of Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
+for edge devices. A mixed 2/4/8-bit scheme drops the E2B model's
+[runtime memory below a gigabyte](https://bsky.app/profile/developers.google.com/post/3mnkkskl6uk2k),
+small enough to fit on a recent phone. The download is still ~2 GB and it still
+needs a WebGPU-capable browser, so it's happiest on a high-end phone and a
+decent connection. The compact widget below lifts the desktop-only guard
+anyway: same model and the same in-browser inference, now just willing to have a
+go on your phone.
+
+<GemmaChat client:only="svelte" allowMobile compact />
