@@ -464,6 +464,11 @@
     },
     "/blog/2016/12/01/blog-refresh": {
       "seeded": true
+    },
+    "/blog/2026/06/06/the-verification-i-never-verified": {
+      "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mnldszibxm2b",
+      "cid": "bafyreie6rcttgw6pkdtgfyyytbuhqe5z5pj4p4mnqdkokufummjzxi675a",
+      "syndicatedAt": "2026-06-05T23:59:05.418Z"
     }
   }
 }
