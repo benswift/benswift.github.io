@@ -36,9 +36,9 @@ function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-/** Bluesky posts cap at 300 graphemes; titles are short, but guard anyway. */
-function skeetText(title: string): string {
-  return title.length <= 300 ? title : title.slice(0, 297) + "…";
+/** Bluesky posts cap at 300 graphemes; descriptions are short, but guard anyway. */
+function skeetText(text: string): string {
+  return text.length <= 300 ? text : text.slice(0, 297) + "…";
 }
 
 /** Card thumbnail source: the post's own hero image, falling back to the default OG image. */
@@ -81,10 +81,11 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     if (eligible) {
       try {
         const skeet = await client.createSkeet({
-          text: skeetText(post.title),
+          // The card already carries the title; lead with the post's description
+          // so the skeet text isn't just a repeat of the card headline.
+          text: skeetText(post.description || post.title),
           url: `${config.siteUrl}${post.path}/`,
           title: post.title,
-          description: post.description,
           thumbPath: resolveThumbPath(config, rkey),
         });
         ref = { uri: skeet.uri, cid: skeet.cid };
