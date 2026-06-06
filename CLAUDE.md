@@ -83,8 +83,11 @@ authored or referenced from `src/`. Files in `src/` go through optimization
 The blog post route auto-discovers a hero by slug from
 `src/assets/heroes/<YYYY-MM-DD-slug>.avif`. To override per-post, set
 `image: ./my-image.svg` in frontmatter (path is relative to the post file,
-resolved via the `image()` schema helper). The resolved hero is used both as
-the `og:image` and as input to the canvas hero on PostLayout.
+resolved via the `image()` schema helper). The resolved hero is the
+`og:image`/`twitter:image` (emitted as WebP) and the reduced-motion fallback
+image; the on-page hero is a procedural WebGL canvas (`HeroCanvas`), and
+`pnpm gen:hero-images` screenshots that canvas to produce the per-post AVIFs
+(it does the posts missing a hero; `--force` regenerates all).
 
 Hero SVGs use `viewBox="0 0 2844 1600"` (wide aspect ratio) with no
 `width`/`height` attributes. Validate with `svg_validate.py` (a personal
