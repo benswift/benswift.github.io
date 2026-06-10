@@ -30,7 +30,7 @@
     "@mediapipe/tasks-genai": "^0.10.27",
     "astro-broken-links-checker": "^1.1.0",
     "astro-theme-anu": "git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#astro-theme-anu@v0.4.0&path:/packages/astro-theme-anu",
-    "astromotion": "git+https://github.com/benswift/astromotion.git#v0.5.3",
+    "astromotion": "git+https://github.com/benswift/astromotion.git#v0.5.4",
     "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "remark-smartypants": "^3.0.2",
     "shaderpad": "1.0.0-beta.85",
