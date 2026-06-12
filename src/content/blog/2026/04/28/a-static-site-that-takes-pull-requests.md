@@ -1,6 +1,7 @@
 ---
 title: "A static site that takes pull requests"
-description: "Out of Office stores its data in a JSON file in git, not a database. Why,
+description:
+  "Out of Office stores its data in a JSON file in git, not a database. Why,
   and when this pattern fits."
 tags: [astro, svelte, github]
 ---

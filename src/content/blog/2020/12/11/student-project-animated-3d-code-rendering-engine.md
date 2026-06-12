@@ -1,6 +1,7 @@
 ---
 title: "Student project: animated 3D code rendering engine"
-description: "A student project idea: real-time handwriting-style code rendering for
+description:
+  "A student project idea: real-time handwriting-style code rendering for
   livecoding performances, synced to the music."
 tags:
   - teaching

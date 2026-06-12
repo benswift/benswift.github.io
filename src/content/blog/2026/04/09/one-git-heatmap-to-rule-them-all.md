@@ -1,6 +1,7 @@
 ---
 title: "One git heatmap to rule them all"
-description: "A Python script that merges contribution data from GitHub and multiple GitLab
+description:
+  "A Python script that merges contribution data from GitHub and multiple GitLab
   instances into a single interactive SVG heatmap."
 tags: ["tools", "python", "visualisation"]
 ---

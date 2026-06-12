@@ -1,6 +1,7 @@
 ---
 title: "The road to COMP4020: token management by proxy"
-description: "Designing a proxy to sit between students and the Claude API: per-student
+description:
+  "Designing a proxy to sit between students and the Claude API: per-student
   quotas, full-traffic logging, and a safety net for leaked keys."
 tags: [comp4020]
 ---

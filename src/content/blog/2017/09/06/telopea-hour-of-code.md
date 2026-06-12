@@ -1,6 +1,7 @@
 ---
 title: "Telopea Hour of Code"
-description: "Links for Telopea Hour of Code students: the p5 web editor and presentation
+description:
+  "Links for Telopea Hour of Code students: the p5 web editor and presentation
   slides."
 tags:
   - teaching

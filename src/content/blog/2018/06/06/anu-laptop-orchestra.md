@@ -1,6 +1,7 @@
 ---
 title: "ANU Laptop Orchestra"
-description: "Putting together a laptop orchestra at ANU---looking for students into
+description:
+  "Putting together a laptop orchestra at ANU---looking for students into
   livecoding, VJing, or organising creative tech gigs for credit."
 tags:
   - livecoding

@@ -1,6 +1,7 @@
 ---
 title: "Running stable diffusion in a singularity container"
-description: "Rough notes and a Python script for running Stable Diffusion in a Singularity
+description:
+  "Rough notes and a Python script for running Stable Diffusion in a Singularity
   container with NVIDIA GPUs."
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "NGA Un-tour: The Hidden Gallery"
-description: "An immersive cybernetic walking tour of the National Gallery of Australia
+description:
+  "An immersive cybernetic walking tour of the National Gallery of Australia
   after dark, co-created with BOHO Interactive and the ANU School of
   Cybernetics."
 tags:

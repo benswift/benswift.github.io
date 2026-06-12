@@ -1,6 +1,7 @@
 ---
 title: "The road to COMP4020: the weekly questions"
-description: "Three evergreen questions and 280-character skeets to scaffold reflective
+description:
+  "Three evergreen questions and 280-character skeets to scaffold reflective
   practice in each weekly studio crit."
 tags: [comp4020]
 ---

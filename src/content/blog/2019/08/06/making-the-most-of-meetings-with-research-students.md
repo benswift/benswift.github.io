@@ -1,6 +1,7 @@
 ---
 title: "Making the most of meetings with research students"
-description: "Four standard questions I use to keep one-on-one research supervision
+description:
+  "Four standard questions I use to keep one-on-one research supervision
   meetings focused and useful."
 tags:
   - teaching

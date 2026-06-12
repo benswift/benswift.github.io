@@ -1,6 +1,7 @@
 ---
 title: "Coding agents and the plasticity of code"
-description: "Code has always felt brittle---most changes break it. Coding agents change
+description:
+  "Code has always felt brittle---most changes break it. Coding agents change
   that dynamic, absorbing the cognitive load of big refactors and making code
   feel plastic rather than rigid."
 tags: [ai, dev]

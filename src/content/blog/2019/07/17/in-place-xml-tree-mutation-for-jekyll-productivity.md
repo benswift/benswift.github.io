@@ -1,6 +1,7 @@
 ---
 title: "In-place XML tree mutation for Jekyll productivity"
-description: "Profiling a slow Jekyll build, finding the culprit in Nokogiri node copying,
+description:
+  "Profiling a slow Jekyll build, finding the culprit in Nokogiri node copying,
   and getting a 20x speedup by switching to in-place tree mutation."
 tags:
   - dev

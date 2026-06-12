@@ -1,6 +1,7 @@
 ---
 title: "LLMs Unplugged: teaching language models with pen, paper, and dice"
-description: "A hands-on teaching resource where learners build bigram language models with
+description:
+  "A hands-on teaching resource where learners build bigram language models with
   pen, paper, and dice---no computers required. Tested with school students,
   public servants, and tech professionals."
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "A short list of Extempore livecoding tricks"
-description: "Handy Extempore techniques: cosr, markov chains, weighted random, relative
+description:
+  "Handy Extempore techniques: cosr, markov chains, weighted random, relative
   pitches, nof vs repeat, quasiquote, clock sync and more."
 tags:
   - livecoding

@@ -1,6 +1,7 @@
 ---
 title: "Format Markdown on save in Zed using Prettier"
-description: "Zed config snippet for auto-formatting Markdown files on save with Prettier,
+description:
+  "Zed config snippet for auto-formatting Markdown files on save with Prettier,
   including prose wrapping at 80 columns."
 tags:
   - dev

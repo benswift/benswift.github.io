@@ -1,6 +1,7 @@
 ---
 title: "Command/Control: giving OS aware keybinding hints"
-description: "A small JS snippet that auto-swaps Ctrl/Cmd in keyboard shortcut hints based
+description:
+  "A small JS snippet that auto-swaps Ctrl/Cmd in keyboard shortcut hints based
   on the reader's OS."
 ---
 

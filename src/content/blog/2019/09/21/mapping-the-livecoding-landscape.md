@@ -1,6 +1,7 @@
 ---
 title: "Mapping the livecoding landscape"
-description: "A reference list of key people, ICLC committees and TOPLAP nodes in the
+description:
+  "A reference list of key people, ICLC committees and TOPLAP nodes in the
   global livecoding community."
 tags:
   - livecoding

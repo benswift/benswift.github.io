@@ -1,6 +1,7 @@
 ---
 title: "Getting a reTerminal DM running as a Nerves kiosk in 2026"
-description: "A guide to running Elixir/Nerves on Seeed's reTerminal DM with its custom DSI
+description:
+  "A guide to running Elixir/Nerves on Seeed's reTerminal DM with its custom DSI
   display, capacitive touchscreen, and a Cog/WPE browser kiosk---including the workarounds
   you'll need for touch input."
 tags:

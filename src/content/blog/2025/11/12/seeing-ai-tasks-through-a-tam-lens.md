@@ -1,6 +1,7 @@
 ---
 title: "Seeing AI tasks through a TAM lens"
-description: "AI adoption research keeps asking 'do you use ChatGPT?' when it should ask
+description:
+  "AI adoption research keeps asking 'do you use ChatGPT?' when it should ask
   'for which tasks?' A task-level framework for thinking about when LLMs
   actually save you time."
 tags:

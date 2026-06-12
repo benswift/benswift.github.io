@@ -1,6 +1,7 @@
 ---
 title: "Agentic Elixir superpowers: Zed + Tidewave + AshAI"
-description: "How to wire up Zed, Tidewave and AshAI as MCP servers for an agentic Elixir
+description:
+  "How to wire up Zed, Tidewave and AshAI as MCP servers for an agentic Elixir
   development workflow, with a helper script to glue it all together."
 tags:
   - dev

@@ -1,6 +1,7 @@
 ---
 title: "On Agentic Tools and Lock-in"
-description: "A response to Lars Faye's 'Agentic Coding is a Trap': LLMs have the lowest
+description:
+  "A response to Lars Faye's 'Agentic Coding is a Trap': LLMs have the lowest
   vendor lock-in of any tool I've used in 20 years."
 tags: [ai]
 ---

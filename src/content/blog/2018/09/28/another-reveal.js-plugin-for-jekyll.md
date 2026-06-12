@@ -1,6 +1,7 @@
 ---
 title: "Another reveal.js plugin for Jekyll"
-description: "A Jekyll plugin that turns a single markdown file into reveal.js slides,
+description:
+  "A Jekyll plugin that turns a single markdown file into reveal.js slides,
   splitting on headings like pandoc does."
 tags:
   - dev

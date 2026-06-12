@@ -1,6 +1,7 @@
 ---
 title: "highlight.js with xtlang support"
-description: "Getting syntax highlighting for Extempore's xtlang working on this blog, told
+description:
+  "Getting syntax highlighting for Extempore's xtlang working on this blog, told
   as an FAQ full of hacks and node build shenanigans."
 tags:
   - dev
