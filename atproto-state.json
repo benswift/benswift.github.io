@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/06/13/a-timezone-aware-world-cup-poster-in-typst": "fe218fc4aaa6b30b46eddf78dc114b7a0eb8e3f11797b162bef6f55872f4f50f",
     "/blog/2026/06/06/the-verification-i-never-verified": "9b3da66177187da9d6976cf9026f4d6abe694fcf762b16e646caa665b2d5dfca",
     "/blog/2026/05/28/xkcd-1319-we-now-live-on-the-theory-curve": "0247e2ab729c37cc76dc5972b3a80723baaf093b6f45c5e9dc126e776b1136a8",
     "/blog/2026/05/21/slop-salon-six-ai-artists-one-constitution": "6fdfd1138b88d9de4fbd1d3f6856fd4cd93b8823a672ca30bdf66025d0694bad",
