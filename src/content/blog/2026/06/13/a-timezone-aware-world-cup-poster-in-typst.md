@@ -3,7 +3,6 @@ title: "A timezone-aware World Cup poster in Typst"
 description:
   "A single-page A3 Typst poster of all 104 FIFA World Cup 2026 fixtures that
   converts every kick-off to your own timezone when it compiles."
-published: true
 tags:
   - typst
   - football
@@ -11,11 +10,10 @@ tags:
 
 The [2026 World Cup](https://en.wikipedia.org/wiki/2026_FIFA_World_Cup) kicked
 off a couple of days ago, and I wanted a single-page wall planner with all 104
-fixtures on it. The catch is that I'm watching from Australia. Most of the
-schedules I found give kick-off times in US Eastern, which leaves me doing the
-conversion in my head at 5am. I built one in [Typst](https://typst.app/)
-instead, and it does the timezone conversion itself when it compiles. I'm
-sharing it here in case it saves someone else the same arithmetic.
+fixtures on it to put on the fridge, with times in AEST. I built one in
+[Typst](https://typst.app/), and I'm sharing it here in case it out other fellow
+Aussies who want to get up and watch the matches/replays with their kids before
+school.
 
 If you just want the poster, here's the
 [rendered A3 PDF](/assets/documents/world-cup-2026.pdf) in AEST; grab it and
@@ -31,11 +29,8 @@ which timezone they render in:
 
 Change the label and the offset, then recompile. Every time on the poster
 updates, along with the day each match is filed under and the way the three
-columns balance.[^dst] A handful of presets sit commented out just below, Perth
-and the UK included.
-
-This is painless because Typst has had proper `datetime` and `duration` types
-for a while, and
+columns balance.[^dst] This is painless because Typst has had proper `datetime`
+and `duration` types for a while, and
 [they do real arithmetic](https://typst.app/docs/reference/foundations/datetime/):
 
 ```typst
@@ -49,15 +44,13 @@ past midnight. A 9pm kick-off in Vancouver lands on the right day in Sydney,
 with no arithmetic from me.
 
 The fixtures come from the public-domain
-[openfootball](https://github.com/openfootball/worldcup.json) dataset. I
-cross-checked every kick-off against a second source. They agreed on 100 of the
-104, and the four that didn't were all late-night-match date errors in the other
-dataset, so openfootball won. The knockout rounds show bracket slots rather than
-teams: `2A v 2B`, `W74 v W77`. The group stage is only two days old as I write
-this, so nobody yet knows who'll fill them.
+[openfootball](https://github.com/openfootball/worldcup.json) dataset. The
+knockout rounds show bracket slots rather than teams: `2A v 2B`, `W74 v W77`.
+The group stage is only two days old as I write this, so nobody yet knows who'll
+fill them.
 
-The whole file is below. It's about 250 lines, most of it the fixture list, so
-I've folded it away.
+The whole typst file is below. It's about 250 lines, most of it the fixture
+list, so I've folded it away.
 
 :::details[The complete world-cup-2026.typ]
 
