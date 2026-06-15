@@ -11,9 +11,9 @@ tags:
 The [2026 World Cup](https://en.wikipedia.org/wiki/2026_FIFA_World_Cup) kicked
 off a couple of days ago, and I wanted a single-page wall planner with all 104
 fixtures on it to put on the fridge, with times in AEST. I built one in
-[Typst](https://typst.app/), and I'm sharing it here in case it out other fellow
-Aussies who want to get up and watch the matches/replays with their kids before
-school.
+[Typst](https://typst.app/), and I'm sharing it here in case it helps out other
+fellow Aussies who want to get up and watch the matches/replays with their kids
+before school.
 
 If you just want the poster, here's the
 [rendered A3 PDF](/assets/documents/world-cup-2026.pdf) in AEST; grab it and
