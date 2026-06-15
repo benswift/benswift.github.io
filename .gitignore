@@ -30,3 +30,8 @@ svg_gen_output/
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.pdf
 /assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.tex
+
+# Local working copies of the World Cup poster (canonical versions live in the
+# blog post and public/assets/documents/)
+/world-cup-2026.typ
+/world-cup-2026.pdf
