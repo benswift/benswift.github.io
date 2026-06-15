@@ -17,6 +17,11 @@ conversion in my head at 5am. I built one in [Typst](https://typst.app/)
 instead, and it does the timezone conversion itself when it compiles. I'm
 sharing it here in case it saves someone else the same arithmetic.
 
+If you just want the poster, here's the
+[rendered A3 PDF](/assets/documents/world-cup-2026.pdf) in AEST; grab it and
+you're done. The rest is for anyone who wants to retune it to their own
+timezone.
+
 The kick-off times live in the file as UTC, and a single line at the top decides
 which timezone they render in:
 
