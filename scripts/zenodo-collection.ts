@@ -234,7 +234,7 @@ export interface LivecodingCollection {
   community: { slug: string; url: string };
 }
 
-export const livecodingCollection: LivecodingCollection = {
+export const livecodingCollection: LivecodingCollection | null = {
   doi: ${JSON.stringify(state.doi)},
   conceptDoi: ${JSON.stringify(conceptDoi)},
   doiUrl: ${JSON.stringify(`https://doi.org/${conceptDoi}`)},

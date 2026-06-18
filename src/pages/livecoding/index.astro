@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content"
 import PageLayout from "../../layouts/PageLayout.astro"
 import { formatDate, parseDate } from "../../utils/date"
+import { livecodingCollection } from "../../data/livecoding-collection"
 
 const allGigs = await getCollection("livecoding")
 
@@ -24,6 +25,9 @@ const gigs = allGigs
     }
   })
   .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
+
+const firstYear = gigs.at(-1)?.dateStr.slice(0, 4)
+const lastYear = gigs.at(0)?.dateStr.slice(0, 4)
 ---
 
 <PageLayout title="Livecoding" relativePath="src/pages/livecoding/index.astro">
@@ -49,6 +53,22 @@ const gigs = allGigs
     crowd. Although I'm working hard to track down any old videos, some of these
     gigs are lost to time. I like to assume that they were the best ones ;)
   </p>
+
+  <p>
+    Taken together, these {gigs.length} performances span {firstYear}&ndash;{lastYear}:
+    nearly two decades of live-coding practice, gathered here as a single body of work.
+    Each one is increasingly being given its own DataCite DOI so it can be cited as a
+    research output in its own right.
+  </p>
+
+  {livecodingCollection && (
+    <p class="collection-cite">
+      Cite the body of work:{" "}
+      <a href={livecodingCollection.doiUrl}>{livecodingCollection.conceptDoi}</a>
+      {" · "}
+      <a href={livecodingCollection.community.url}>Zenodo community</a>
+    </p>
+  )}
 
   <hr />
 

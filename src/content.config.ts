@@ -41,9 +41,6 @@ const livecoding = defineCollection({
     type: z.enum(["juried", "invited", "other"]).optional(),
     event: z.string().optional(),
     event_url: z.string().optional(),
-    // Deprecated: superseded by videos[]. Kept until the gig bodies are
-    // migrated (TASK-23.14) and the UI reads videos[] (TASK-23.11).
-    video_url: z.string().optional(),
     // One entry per recording of the gig; some gigs have several (e.g. crowd
     // vs screencapture, or the AP Sessions visual-study sets).
     videos: z.array(z.object({ url: z.string(), label: z.string().optional() })).optional(),

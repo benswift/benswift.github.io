@@ -4,24 +4,80 @@ import SiteFooter from "../components/SiteFooter.astro"
 import { formatDate, parseDate } from "../utils/date"
 import { SITE_BASELINE_PHRASES } from "../data/hero"
 
+interface Video {
+  url: string
+  label?: string
+}
+interface RelatedWork {
+  relation: string
+  identifier?: string
+  url?: string
+  type?: string
+}
 interface Props {
   title: string
   date?: string
   venue?: string
   venue_url?: string
   type?: string
+  event?: string
   event_url?: string
-  video_url?: string
+  instrument?: string
+  videos?: Video[]
+  doi?: string
+  archived_event_url?: string
+  archived_venue_url?: string
+  related_works?: RelatedWork[]
   curators?: string
   artists?: { name: string; role: string }[]
   description?: string
   relativePath: string
 }
 
-const { title, date, venue, venue_url, type, event_url, video_url, curators, artists, description, relativePath } = Astro.props
+const {
+  title,
+  date,
+  venue,
+  venue_url,
+  type,
+  event,
+  event_url,
+  instrument,
+  videos,
+  doi,
+  archived_event_url,
+  archived_venue_url,
+  related_works,
+  curators,
+  artists,
+  description,
+  relativePath,
+} = Astro.props
 
 const gigDate = date ? formatDate(parseDate(date)) : null
 const gigType = type ? type.charAt(0).toUpperCase() + type.slice(1) : null
+
+// Human-readable labels for the DataCite relationTypes that show up on gigs.
+const RELATION_LABELS: Record<string, string> = {
+  isDocumentedBy: "Documented by",
+  documents: "Documents",
+  isReferencedBy: "Referenced by",
+  references: "References",
+  isVariantFormOf: "Also available as",
+  isPartOf: "Part of",
+  hasPart: "Includes",
+  isSupplementedBy: "Supplemented by",
+  isCitedBy: "Cited by",
+  cites: "Cites",
+}
+
+const isDoi = (id?: string) => !!id && /^10\.\d/.test(id)
+const relatedHref = (w: RelatedWork) =>
+  w.url ?? (isDoi(w.identifier) ? `https://doi.org/${w.identifier}` : (w.identifier ?? "#"))
+const relatedText = (w: RelatedWork) =>
+  isDoi(w.identifier)
+    ? w.identifier!
+    : (w.url ?? w.identifier ?? "").replace(/^https?:\/\//, "").replace(/\/$/, "")
 
 const phrases = [
   ...SITE_BASELINE_PHRASES,
@@ -36,10 +92,22 @@ const phrases = [
   {gigDate && <p class="post-date">{gigDate}</p>}
 
   <dl class="gig-meta">
-    {venue && (
+    {(venue || venue_url) && (
       <>
         <dt>Venue</dt>
-        <dd>{venue_url ? <a href={venue_url}>{venue}</a> : venue}</dd>
+        <dd>
+          {venue_url ? <a href={venue_url}>{venue ?? venue_url}</a> : venue}
+          {archived_venue_url && <> (<a href={archived_venue_url}>archived</a>)</>}
+        </dd>
+      </>
+    )}
+    {(event || event_url) && (
+      <>
+        <dt>Event</dt>
+        <dd>
+          {event_url ? <a href={event_url}>{event ?? "Event page"}</a> : event}
+          {archived_event_url && <> (<a href={archived_event_url}>archived</a>)</>}
+        </dd>
       </>
     )}
     {gigType && (
@@ -48,16 +116,20 @@ const phrases = [
         <dd>{gigType}</dd>
       </>
     )}
-    {event_url && (
+    {instrument && (
       <>
-        <dt>Event</dt>
-        <dd><a href={event_url}>Event page</a></dd>
+        <dt>Instrument</dt>
+        <dd>{instrument}</dd>
       </>
     )}
-    {video_url && (
+    {videos && videos.length > 0 && (
       <>
-        <dt>Video</dt>
-        <dd><a href={video_url}>Watch</a></dd>
+        <dt>{videos.length > 1 ? "Videos" : "Video"}</dt>
+        <dd>
+          {videos.map((v, i) => (
+            <>{i > 0 && ", "}<a href={v.url}>{v.label ?? "Watch"}</a></>
+          ))}
+        </dd>
       </>
     )}
     {curators && (
@@ -69,12 +141,33 @@ const phrases = [
     {artists && artists.length > 0 && (
       <>
         <dt>Artists</dt>
-        <dd>{artists.map(a => `${a.name} (${a.role})`).join(", ")}</dd>
+        <dd>{artists.map((a) => `${a.name} (${a.role})`).join(", ")}</dd>
+      </>
+    )}
+    {doi && (
+      <>
+        <dt>DOI</dt>
+        <dd><a class="gig-doi" href={`https://doi.org/${doi}`}>{doi}</a></dd>
       </>
     )}
   </dl>
 
   <slot />
+
+  {related_works && related_works.length > 0 && (
+    <section class="related-works" aria-labelledby="related-works-heading">
+      <h2 id="related-works-heading">Related works</h2>
+      <ul>
+        {related_works.map((w) => (
+          <li>
+            <span class="relation">{RELATION_LABELS[w.relation] ?? w.relation}:</span>{" "}
+            <a href={relatedHref(w)}>{relatedText(w)}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>
 
@@ -84,5 +177,33 @@ const phrases = [
     padding: 1rem;
     background: var(--bg-soft);
     border-radius: 8px 0 8px 8px;
+  }
+
+  .gig-doi {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9em;
+  }
+
+  .related-works {
+    margin-top: 2rem;
+  }
+
+  .related-works h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .related-works ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .related-works li {
+    margin-bottom: 0.35rem;
+  }
+
+  .related-works .relation {
+    color: var(--text-muted, #9b9b9b);
   }
 </style>

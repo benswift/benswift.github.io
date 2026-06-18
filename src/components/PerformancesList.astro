@@ -21,7 +21,8 @@ const gigs = allGigs
       artists: gig.data.artists,
       event: gig.data.event,
       event_url: gig.data.event_url,
-      video_url: gig.data.video_url,
+      videos: gig.data.videos,
+      doi: gig.data.doi,
       type: gig.data.type,
     }
   })
@@ -57,9 +58,14 @@ const years = Object.keys(gigsByYear).sort((a, b) => b.localeCompare(a))
             </p>
           )}
           {gig.venue && <p class="pub-venue">{gig.venue}</p>}
-          {gig.video_url && (
+          {(gig.videos?.length || gig.doi) && (
             <p class="pub-pdf">
-              <a href={gig.video_url} target="_blank">video</a>
+              {gig.videos?.map((v, i) => (
+                <>{i > 0 && " · "}<a href={v.url} target="_blank">{v.label ?? "video"}</a></>
+              ))}
+              {gig.doi && (
+                <>{gig.videos?.length ? " · " : ""}<a href={`https://doi.org/${gig.doi}`}>DOI</a></>
+              )}
             </p>
           )}
         </div>
