@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "./BaseLayout.astro"
 import SiteFooter from "../components/SiteFooter.astro"
+import CiteWidget from "../components/CiteWidget.astro"
 import { formatDate, parseDate } from "../utils/date"
+import { gigToBibtex } from "../utils/citation"
 import { SITE_BASELINE_PHRASES } from "../data/hero"
 
 interface Video {
@@ -29,7 +31,7 @@ interface Props {
   archived_venue_url?: string
   related_works?: RelatedWork[]
   curators?: string
-  artists?: { name: string; role: string }[]
+  artists?: { name: string; role: string; orcid?: string }[]
   description?: string
   relativePath: string
 }
@@ -166,6 +168,13 @@ const phrases = [
         ))}
       </ul>
     </section>
+  )}
+
+  {doi && date && (
+    <CiteWidget
+      bibtex={gigToBibtex({ title, doi, date, event, venue, artists })}
+      label="Cite this performance"
+    />
   )}
 
   <SiteFooter relativePath={relativePath} />

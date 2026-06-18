@@ -1,0 +1,93 @@
+---
+// Generic copy-to-clipboard BibTeX widget. The caller builds the entry; this
+// renders the disclosure + copy button. Astro bundles the <script> to an
+// external module, so it stays within the no-unsafe-inline CSP.
+interface Props {
+  bibtex: string
+  label?: string
+}
+
+const { bibtex, label = "Cite this" } = Astro.props
+---
+
+<details class="cite-widget">
+  <summary>{label}</summary>
+  <div class="cite-content">
+    <pre><code>{bibtex}</code></pre>
+    <button class="cite-copy" data-bibtex={bibtex}>Copy BibTeX</button>
+  </div>
+</details>
+
+<style>
+  .cite-widget {
+    margin-top: 2rem;
+    border: 1px solid var(--divider);
+    border-radius: 8px 0 8px 8px;
+    padding: 0.75rem 1rem;
+  }
+
+  .cite-widget summary {
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--text-2);
+    user-select: none;
+  }
+
+  .cite-content {
+    margin-top: 0.75rem;
+  }
+
+  .cite-content pre {
+    background: var(--bg-soft);
+    border-radius: 6px 0 6px 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .cite-copy {
+    margin-top: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    background: var(--bg-soft);
+    color: var(--text-2);
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .cite-copy:hover {
+    color: var(--brand-1);
+    border-color: var(--brand-1);
+  }
+
+  .cite-copy.copied {
+    border-color: var(--highlight-color);
+    color: var(--brand-1);
+  }
+</style>
+
+<script>
+  function initCiteWidgets() {
+    document.querySelectorAll<HTMLButtonElement>(".cite-widget .cite-copy").forEach(btn => {
+      if (btn.dataset.bound) return
+      btn.dataset.bound = "1"
+      btn.addEventListener("click", async () => {
+        const bibtex = btn.dataset.bibtex
+        if (!bibtex) return
+        await navigator.clipboard.writeText(bibtex)
+        btn.textContent = "Copied"
+        btn.classList.add("copied")
+        setTimeout(() => {
+          btn.textContent = "Copy BibTeX"
+          btn.classList.remove("copied")
+        }, 2000)
+      })
+    })
+  }
+
+  initCiteWidgets()
+  document.addEventListener("astro:page-load", initCiteWidgets)
+</script>

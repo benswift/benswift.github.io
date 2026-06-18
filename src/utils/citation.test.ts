@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { generateBibtex, generateCiteKey } from "./citation";
+import { generateBibtex, generateCiteKey, gigToBibtex } from "./citation";
 
 describe("generateCiteKey", () => {
   it("creates camelCase key from year and full slug", () => {
@@ -71,5 +71,50 @@ describe("generateBibtex", () => {
     });
 
     expect(bibtex).not.toContain("note");
+  });
+});
+
+describe("gigToBibtex", () => {
+  const gig = {
+    title: "Coloring Code - Live Drawing and Coding",
+    doi: "10.5281/zenodo.20743708",
+    date: "2024-05-31",
+    event: "International Conference on Live Coding (ICLC) 2024",
+    venue: "Shanghai Concert Hall, China",
+    artists: [{ name: "Leon Volbers" }, { name: "Beverly Edwards", orcid: "0000-0001-2345-6789" }],
+  };
+
+  it("emits an @misc entry with a Zenodo-style cite key and DOI", () => {
+    const bibtex = gigToBibtex(gig);
+    expect(bibtex).toContain("@misc{swift_2024_20743708,");
+    expect(bibtex).toContain("doi          = {10.5281/zenodo.20743708}");
+    expect(bibtex).toContain("url          = {https://doi.org/10.5281/zenodo.20743708}");
+    expect(bibtex).toContain("publisher    = {Zenodo}");
+  });
+
+  it("lists Ben first, then collaborators, in family-comma-given form", () => {
+    expect(gigToBibtex(gig)).toContain(
+      "author       = {Swift, Ben and Volbers, Leon and Edwards, Beverly}",
+    );
+  });
+
+  it("double-braces the title and carries the performance context", () => {
+    const bibtex = gigToBibtex(gig);
+    expect(bibtex).toContain("title        = {{Coloring Code - Live Drawing and Coding}}");
+    expect(bibtex).toContain("howpublished = {Live-coding performance,");
+    expect(bibtex).toContain("month        = {may}");
+  });
+
+  it("puts known ORCIDs (incl. Ben's) in a note", () => {
+    const bibtex = gigToBibtex(gig);
+    expect(bibtex).toContain("Swift, Ben (0000-0003-2138-5969)");
+    expect(bibtex).toContain("Edwards, Beverly (0000-0001-2345-6789)");
+    // The collaborator without an ORCID isn't listed in the note.
+    expect(bibtex).not.toContain("Volbers, Leon (");
+  });
+
+  it("escapes BibTeX special characters in the title", () => {
+    const bibtex = gigToBibtex({ ...gig, title: "ACMC'22 Evening Concert #1", artists: [] });
+    expect(bibtex).toContain("{{ACMC'22 Evening Concert \\#1}}");
   });
 });
