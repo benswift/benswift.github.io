@@ -52,7 +52,11 @@ const TOKEN = PROD ? process.env.ZENODO_ACCESS_TOKEN : process.env.ZENODO_SANDBO
 // Body-of-work umbrella (TASK-23.09), if set up: every gig links back via
 // isPartOf and is filed under the same Zenodo Community.
 const COLLECTION = loadCollectionState(TARGET);
-const COLLECTION_DOI = COLLECTION.doi;
+// Gigs link isPartOf the umbrella's CONCEPT DOI (stable as gigs are appended and
+// the umbrella re-versions), matching the atproto NTRO partOf and the "cite the
+// conceptDoi" intent in src/data/livecoding-collection.ts. Falls back to the
+// version doi if no concept doi was recorded.
+const COLLECTION_DOI = COLLECTION.conceptDoi ?? COLLECTION.doi;
 const COLLECTION_COMMUNITY = COLLECTION.communitySlug;
 // The self-owned atproto document record (TASK-23.10) is carried back as a
 // relatedIdentifier so the Zenodo record links to the at:// document (Zenodo
