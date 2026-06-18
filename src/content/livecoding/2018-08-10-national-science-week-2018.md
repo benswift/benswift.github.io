@@ -8,7 +8,9 @@ type: "invited"
 event: "National Science Week 2018"
 description: "A from-scratch livecoded music set in Extempore with Kieran Browne (livecoded visuals) at the National Science Week 2018 ACT launch, the Curious Feast, ANU."
 event_url: "https://www.scienceweek.net.au/the-curious-feast/"
+archived_event_url: "https://web.archive.org/web/20190422050532/https://www.scienceweek.net.au/the-curious-feast/"
 venue_url: "https://pop-up.anu.edu.au/contact/molo-live"
+archived_venue_url: "https://web.archive.org/web/20180321051848/https://pop-up.anu.edu.au/contact/molo-live"
 videos:
   - url: "https://www.youtube.com/watch?v=IBVY_zW06kk"
 artists:

@@ -8,6 +8,7 @@ type: "invited"
 event: "Shirty Science Season 3"
 description: "A from-scratch livecoded music set in Extempore with Kieran Browne (livecoded visuals) at the Shirty Science Season 3 launch, Doughnut Dept., Canberra, their screens mixed live through a Roland V-1HD."
 event_url: "https://www.facebook.com/events/200014520685862/"
+archived_event_url: "https://web.archive.org/web/20210414212957/https://www.facebook.com/events/200014520685862/"
 venue_url: "https://www.thedoughnutdept.com/welcome"
 artists:
   - name: "Kieran Browne"

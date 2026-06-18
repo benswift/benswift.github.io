@@ -8,7 +8,9 @@ type: "invited"
 event: "National Invention Convention 2018"
 description: "A from-scratch livecoded music set in Extempore headlining the closing party of the 2018 National Invention Convention at Questacon, Canberra."
 event_url: "https://www.questacon.edu.au/outreach/programmes/questacon-smart-skills-initiative/questacon-invention-convention#term1569"
+archived_event_url: "https://web.archive.org/web/20190723204719/https://www.questacon.edu.au/outreach/programmes/questacon-smart-skills-initiative/questacon-invention-convention"
 venue_url: "https://www.questacon.edu.au"
+archived_venue_url: "https://web.archive.org/web/20260412060056/https://www.questacon.edu.au/"
 ---
 
 The

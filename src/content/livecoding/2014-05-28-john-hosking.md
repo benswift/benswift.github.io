@@ -8,6 +8,7 @@ type: "invited"
 event: "John Hosking Farewell Reception"
 description: "A from-scratch livecoded music set in Extempore at the Drill Hall Gallery, ANU, farewelling John Hosking, Dean of the ANU College of Engineering and Computer Science."
 venue_url: "https://dhg.anu.edu.au"
+archived_venue_url: "https://web.archive.org/web/20260211224239/https://dhg.anu.edu.au/"
 videos:
   - url: "https://vimeo.com/314652381"
 ---

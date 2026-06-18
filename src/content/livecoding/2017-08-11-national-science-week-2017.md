@@ -8,7 +8,9 @@ type: "invited"
 event: "National Science Week 2017"
 description: "A from-scratch livecoded music set in Extempore at the National Science Week 2017 ACT launch, National Film and Sound Archive, sharing the bill with ABC weather presenter Nate Byrne."
 event_url: "https://www.scienceweek.net.au"
+archived_event_url: "https://web.archive.org/web/20260514083720/https://www.scienceweek.net.au/"
 venue_url: "https://www.nfsa.gov.au"
+archived_venue_url: "https://web.archive.org/web/20260320114049/https://www.nfsa.gov.au/"
 ---
 
 National Science Week is such a great event, with so many activities and events

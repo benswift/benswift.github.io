@@ -8,6 +8,7 @@ type: "invited"
 event: "Beginning-Middle-End Festival"
 description: "A from-scratch livecoded set in Impromptu at the Beginning-Middle-End Festival, ANU School of Art Gallery, an interactive concert with custom iPhone and iPod apps passed around the audience to shape the music."
 venue_url: "https://soad.cass.anu.edu.au/gallery-exhibitions"
+archived_venue_url: "https://web.archive.org/web/20251129143410/https://soad.cass.anu.edu.au/gallery-exhibitions"
 videos:
   - url: "https://vimeo.com/7341091"
 ---
