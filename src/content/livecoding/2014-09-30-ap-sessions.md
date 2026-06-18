@@ -16,6 +16,11 @@ videos:
     label: "Study: no visuals"
   - url: "https://vimeo.com/315199460"
     label: "Study: with visuals"
+related_works:
+  - relation: "isDocumentedBy"
+    identifier: "10.1145/2686612.2686634"
+    url: "https://doi.org/10.1145/2686612.2686634"
+    type: "publication"
 ---
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I

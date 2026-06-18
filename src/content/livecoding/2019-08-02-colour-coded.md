@@ -16,8 +16,10 @@ videos:
 artists:
   - name: "Kieran Browne"
     role: "livecoded visuals"
+    orcid: "0000-0001-7158-1322"
   - name: "Charles Martin"
     role: "electronics"
+    orcid: "0000-0001-5683-7529"
 ---
 
 [Kieran Browne](https://kieranbrowne.com) (live GLSL shader hacking),

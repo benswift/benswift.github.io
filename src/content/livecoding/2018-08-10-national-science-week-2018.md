@@ -16,6 +16,7 @@ videos:
 artists:
   - name: "Kieran Browne"
     role: "livecoded visuals"
+    orcid: "0000-0001-7158-1322"
 ---
 
 Kieran and I played our first ever livecoding set together as part of the

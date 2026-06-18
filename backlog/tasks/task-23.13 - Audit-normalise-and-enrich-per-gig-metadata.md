@@ -5,7 +5,7 @@ status: In Progress
 assignee:
   - '@claude'
 created_date: '2026-06-18 01:09'
-updated_date: '2026-06-18 02:12'
+updated_date: '2026-06-18 03:32'
 labels:
   - data
   - content
@@ -36,17 +36,15 @@ Enrichments (small research pass): Ben as explicit creator + ORCID; collaborator
 - [x] #1 All dates normalised to bare YYYY-MM-DD; index.astro filename fallback no longer needed
 - [x] #2 ACMC'21 date mismatch reconciled against the real event date
 - [x] #3 instrument field populated for all 27 (Impromptu <=2011, Extempore 2013+)
-- [ ] #4 ICLC'20 proceedings link moved from event_url to related_works; event_url corrected or removed
-- [ ] #5 Missing event_urls backfilled where findable
+- [x] #4 ICLC'20 proceedings link moved from event_url to related_works; event_url corrected or removed
+- [x] #5 Missing event_urls backfilled where findable
 - [ ] #6 Ben added as explicit creator with ORCID; collaborator ORCIDs added where known
 - [ ] #7 related_works populated for gigs with proceedings/papers; type sharpened; thin descriptions improved
 - [ ] #8 pnpm typecheck passes and all gigs still validate
 <!-- AC:END -->
 
-
-
 ## Implementation Notes
 
 <!-- SECTION:NOTES:BEGIN -->
-Mechanical checkpoint (audit-determined, zero-ambiguity parts) done: normalised the 4 clean ISO-midnight dates (acmc-22, ozchi-22, iclc-24, smcclab) to bare YYYY-MM-DD; populated instrument for all 27 by date (Impromptu x3 for 2008-09, Extempore x24 for 2013+). REMAINING (need facts/research + Ben input, see session check-in): AC#1 not complete because acmc-21 date kept as ISO-midnight pending AC#2; AC#2 acmc-21 real date (frontmatter 2021-08-21 vs filename 2021-08-26, event_url dead); AC#4 ICLC'20 event_url->related_works + real event page; AC#5 backfill 6 missing event_urls; AC#6 ORCIDs (BLOCKED on Ben's own ORCID; collaborators need verification); AC#7 proceedings/paper related_works+DOIs, type sharpening, description improvements.
+Done so far: (AC#1) 4 clean dates normalised + (AC#2) acmc-21 corrected to 2021-08-26 (Ben confirmed) -> all 27 dates bare/accurate; (AC#3) instrument populated for all 27 (Impromptu x3, Extempore x24); (AC#4) iclc-20 event_url fixed to the real schedule page (iclc.toplap.org/2020), the Zenodo proceedings moved to related_works; (AC#5) backfilled the one findable missing event_url (icomos-2013 -> aicomos.com/2013-canberra-centenary); transmissions, beginning-middle-end, john-hosking, ap-sessions confirmed genuinely non-public (no page). Research pass (3 subagents, verified): collaborator ORCIDs - only Charles Martin (0000-0001-5683-7529) and Kieran Browne (0000-0001-7158-1322) confidently verified and added; rest are practitioners/artists with no/unverifiable ORCID (Ben confirmed many aren't academics). related_works added for iclc-20 (zenodo.3939527 proceedings), iclc-24 (zenodo.11345213 abstract -- NOT a recording, so a gig DOI can still be minted), acmc-09 (Distributed Performance in Live Coding -- Swift/Gardner/Riddell, no DOI), ap-sessions (OzCHI'14 10.1145/2686612.2686634). REMAINING: AC#6 Ben-as-creator wiring deferred to .08 deposit (his ORCID 0000-0003-2138-5969 saved to memory); Ushini Attanayake ORCID left off (only an empty namesake profile -- addable later, records are mutable); AC#7 type-sharpening + description-as-abstract pending Ben's review of a proposal. Relation types are first-pass, refine at deposit (.08).
 <!-- SECTION:NOTES:END -->

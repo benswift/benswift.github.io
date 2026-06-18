@@ -16,6 +16,7 @@ videos:
 artists:
   - name: "Kieran Browne"
     role: "livecoded visuals"
+    orcid: "0000-0001-7158-1322"
 ---
 
 As usual, [CECS](https://cecs.anu.edu.au/) kicked off the year with a welcome
