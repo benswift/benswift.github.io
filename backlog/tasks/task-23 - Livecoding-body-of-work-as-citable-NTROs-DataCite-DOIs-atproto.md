@@ -3,8 +3,8 @@ id: TASK-23
 title: Livecoding body of work as citable NTROs (DataCite DOIs + atproto)
 status: In Progress
 assignee: []
-created_date: "2026-06-18 00:54"
-updated_date: "2026-06-18 08:21"
+created_date: '2026-06-18 00:54'
+updated_date: '2026-06-18 09:51'
 labels:
   - epic
   - livecoding-ntro
@@ -15,7 +15,6 @@ priority: high
 ## Description
 
 <!-- SECTION:DESCRIPTION:BEGIN -->
-
 Goal: give Ben's ~two-decade live-coding body of work citable DataCite DOIs so
 the performances count as non-traditional research outputs (NTROs) for an ANU
 promotion, with atproto as a complementary ownership layer and
@@ -55,13 +54,11 @@ collection DOI + Community -> atproto records -> /livecoding + GigLayout UI.
 
 A single focused session can do all of B and C against the sandbox once a
 sandbox token exists; production minting waits on the rights pass.
-
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Implementation Notes
 
 <!-- SECTION:NOTES:BEGIN -->
-
 === NEXT SESSION — START HERE (session 3 handoff, 2026-06-18) ===
 
 STATUS: the core epic is DONE — production DataCite DOIs are LIVE on zenodo.org.
@@ -192,4 +189,7 @@ atproto:livecoding --write); .04 warm intro; .05 anchor notes; .12 ANU library
 enquiry; .15 BibTeX widget (DOIs now exist); backfill Ushini's ORCID when it
 arrives (.16).
 
+UPDATE 2026-06-18 (atproto live + AT-URI carry-back): the atproto track is now DONE. 27+27 records live on the PDS; each gig's Zenodo record links back to its atproto document via isVariantFormOf at:// (commit 857a599b). Full cross-check across frontmatter/Zenodo/atproto/doi.org all green (see .10 notes). OPEN FINDING (Ben's call): the gig->umbrella isPartOf points at the VERSION DOI (10.5281/zenodo.20743615) on Zenodo but the CONCEPT DOI (.20743614) on atproto (ntro.partOf). src/data/livecoding-collection.ts says 'cite the conceptDoi — stable as gigs are appended', so Zenodo's isPartOf arguably should be the concept DOI too (durable when the umbrella re-versions on append). Pre-existing, not introduced this session. One-line fix: zenodo-deposit buildRelated use COLLECTION.conceptDoi for isPartOf, then re-run 'zenodo:deposit --prod --update --write'.
+
+FINDING RESOLVED 2026-06-18: aligned Zenodo gig isPartOf to the umbrella CONCEPT DOI (10.5281/zenodo.20743614) to match atproto ntro.partOf + the cite-the-conceptDoi intent (commit cc1f1417). Re-verified 27/27 via Python: isPartOf=concept and at:// backlink both present; lint/format/typecheck green. The atproto+Zenodo tie-in is now fully consistent across both systems.
 <!-- SECTION:NOTES:END -->

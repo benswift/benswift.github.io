@@ -4,7 +4,7 @@ title: atproto per-gig records via site.standard.* + companion NTRO record
 status: Done
 assignee: []
 created_date: '2026-06-18 00:56'
-updated_date: '2026-06-18 05:08'
+updated_date: '2026-06-18 09:42'
 labels:
   - script
   - atproto
@@ -73,4 +73,6 @@ run: mise exec -- pnpm atproto:livecoding --write. Best run AFTER the production
 DOIs exist (.02 rights pass) so the NTRO records carry real DOIs. Then add each
 document AT-URI to its gig's Zenodo related_identifiers (raw at://, already
 verified-accepted).
+
+LIVE EMISSION DONE (2026-06-18): ran 'mise exec -- pnpm atproto:livecoding --write' locally. ATP_IDENTIFIER/ATP_APP_PASSWORD were added to the [env] block of ~/.config/mise/config.local.toml (alongside the ZENODO tokens) — NOT pulled from GitHub (Actions secrets are write-only/unreadable). 27 site.standard.document + 27 me.benswift.ntro records now live on the PDS (shiitake.us-east.host.bsky.network). AC #4 tie-in COMPLETE: zenodo-deposit.ts injects each gig's document AT-URI (at://<did>/site.standard.document/<slug>) as an isVariantFormOf relatedIdentifier, computed from atproto-state.json DID (commit 857a599b); applied to all 27 prod Zenodo records via --update (same DOIs). Cross-check green: fm DOI == Zenodo DOI == NTRO DOI (27/27); every NTRO strongRef cid resolves to its document; every Zenodo record carries the at:// backlink; umbrella hasPart=27; all 29 DOIs resolve 302 via doi.org; build/typecheck/lint/format/153 tests green.
 <!-- SECTION:NOTES:END -->
