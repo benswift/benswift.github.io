@@ -5,6 +5,7 @@ date: "2014-09-30"
 instrument: "Extempore"
 venue: "Australian National University"
 type: "other"
+doi: "10.5281/zenodo.20743660"
 event: "The AP Sessions"
 description: "A series of livecoded music sets in Extempore at the ANU, performed for Arrian Purcell's study into visualising the live-coding process: repeated sets under aesthetic, didactic and no-visuals conditions with audience feedback."
 videos:
