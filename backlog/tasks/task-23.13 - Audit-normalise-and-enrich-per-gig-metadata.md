@@ -5,7 +5,7 @@ status: In Progress
 assignee:
   - '@claude'
 created_date: '2026-06-18 01:09'
-updated_date: '2026-06-18 02:04'
+updated_date: '2026-06-18 02:12'
 labels:
   - data
   - content
@@ -33,8 +33,8 @@ Enrichments (small research pass): Ben as explicit creator + ORCID; collaborator
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 All dates normalised to bare YYYY-MM-DD; index.astro filename fallback no longer needed
-- [ ] #2 ACMC'21 date mismatch reconciled against the real event date
+- [x] #1 All dates normalised to bare YYYY-MM-DD; index.astro filename fallback no longer needed
+- [x] #2 ACMC'21 date mismatch reconciled against the real event date
 - [x] #3 instrument field populated for all 27 (Impromptu <=2011, Extempore 2013+)
 - [ ] #4 ICLC'20 proceedings link moved from event_url to related_works; event_url corrected or removed
 - [ ] #5 Missing event_urls backfilled where findable
@@ -42,6 +42,8 @@ Enrichments (small research pass): Ben as explicit creator + ORCID; collaborator
 - [ ] #7 related_works populated for gigs with proceedings/papers; type sharpened; thin descriptions improved
 - [ ] #8 pnpm typecheck passes and all gigs still validate
 <!-- AC:END -->
+
+
 
 ## Implementation Notes
 
