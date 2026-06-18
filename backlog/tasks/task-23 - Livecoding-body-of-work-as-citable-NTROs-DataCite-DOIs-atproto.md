@@ -4,7 +4,7 @@ title: Livecoding body of work as citable NTROs (DataCite DOIs + atproto)
 status: To Do
 assignee: []
 created_date: '2026-06-18 00:54'
-updated_date: '2026-06-18 05:19'
+updated_date: '2026-06-18 08:21'
 labels:
   - epic
   - livecoding-ntro
@@ -49,4 +49,6 @@ PENDING: Ben to sign off the .08 metadata mapping (see .08 notes); then .02 RIGH
 NEXT BUILD (no rights dependency): .09 collection DOI + Zenodo Community; .10 atproto records; .11 /livecoding hub + GigLayout to surface doi/archived_*/related_works/videos[] -- NOTE GigLayout + PerformancesList still read the deprecated singular video_url (now absent), so switch them to videos[] and drop video_url from the schema as part of .11. WRITING track (independent): .03 research statement, .04 warm intro, .05 six anchor notes. Capstone: .15 BibTeX cite widget (after DOIs exist). VERIFIED earlier: migration kept all in-body video data.
 
 UPDATE 2026-06-18 (session 2): .09, .10, .11 all DONE + committed — the BUILD track is now complete. .09 collection DOI + Zenodo Community (sandbox-verified end-to-end incl. append-without-reissue; scripts/zenodo-collection.ts, npm zenodo:collection; .08 extended so each gig links isPartOf + joins the community + auto-accepts inclusion). .10 per-gig atproto site.standard.document + companion me.benswift.ntro records holding DOI + strongRef (scripts/atproto-livecoding.ts, npm atproto:livecoding; built, dry-run + unit-tested — live write needs ATP creds in mise, no atproto sandbox exists). .11 UI: gig pages surface doi/archived_*/related_works/videos[]; hub gains body-of-work framing + collection cite; video_url DROPPED from schema. Build/typecheck/lint/format/105 tests all green. REMAINING: writing track (.03 statement, .04 warm intro, .05 anchor notes); human-gated (.02 RIGHTS PASS = sole blocker to production minting; .12 ANU library); .15 BibTeX widget (after real DOIs). PRODUCTION CUTOVER once .02+.03 land: (1) zenodo:collection --write --create-community, (2) zenodo:deposit --write --prod --publish, (3) zenodo:collection --write --prod --publish (writes src/data/livecoding-collection.ts), (4) atproto:livecoding --write, (5) add each gig's document AT-URI to its Zenodo related_identifiers (raw at:// is accepted — verified).
+
+PRODUCTION MINTED 2026-06-18: full Zenodo cutover run successfully. Public community ben-swift-livecoding; 27 per-gig DOIs (10.5281/zenodo.207436xx) each isPartOf the umbrella + filed in the community; umbrella concept DOI 10.5281/zenodo.20743614 (version .20743615), hasPart all 27, research statement as description, licensed CC-BY-SA-4.0. Per-gig DOIs (frontmatter) + src/data/livecoding-collection.ts committed; the /livecoding hub shows the citation block and gig pages show their DOIs. Rights resolved as link-only (.02). REMAINING: atproto records + carry each gig's document AT-URI as a DataCite relatedIdentifier (needs ATP creds: mise exec -- pnpm atproto:livecoding --write); .04 warm intro; .05 anchor notes; .12 ANU library enquiry; .15 BibTeX widget (DOIs now exist); backfill Ushini's ORCID when it arrives (.16).
 <!-- SECTION:NOTES:END -->
