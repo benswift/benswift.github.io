@@ -1,10 +1,10 @@
 ---
 id: TASK-23.01
 title: Create/confirm Zenodo tokens (sandbox + production)
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-18 00:56'
-updated_date: '2026-06-18 00:58'
+updated_date: '2026-06-18 01:05'
 labels:
   - 'needs:ben'
   - infra
@@ -22,7 +22,7 @@ Prerequisite for minting. A token is now set in mise as ZENODO_ACCESS_TOKEN (run
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 A sandbox.zenodo.org token authenticates for dev/dry-run
+- [x] #1 A sandbox.zenodo.org token authenticates for dev/dry-run
 - [x] #2 A production zenodo.org token exists for the real mint
 - [x] #3 Token stays in an untracked mise env block (ZENODO_ACCESS_TOKEN); scripts run via 'mise exec --', never with the token in code
 <!-- AC:END -->
@@ -30,5 +30,5 @@ Prerequisite for minting. A token is now set in mise as ZENODO_ACCESS_TOKEN (run
 ## Implementation Notes
 
 <!-- SECTION:NOTES:BEGIN -->
-Probed 2026-06-18: ZENODO_ACCESS_TOKEN authenticates on zenodo.org (HTTP 200) but is rejected by sandbox.zenodo.org (403), so it is a PRODUCTION token (in mise, used via 'mise exec --'). OUTSTANDING: no sandbox token. Decide before the build: (a) create a sandbox token for safe iteration, or (b) develop against production using draft-only depositions with a hard publish-guard -- unpublished drafts register no DOI and can be DELETEd, so never call the publish action until ready.
+Tokens verified 2026-06-18 (status-code probes, no values printed): ZENODO_ACCESS_TOKEN = PRODUCTION (zenodo.org 200, sandbox 403); ZENODO_SANDBOX_TOKEN = SANDBOX (sandbox 200, prod 403). Both loaded via mise; run scripts through 'mise exec --'. Use ZENODO_SANDBOX_TOKEN for dev/dry-run and publish rehearsal; ZENODO_ACCESS_TOKEN only for the real production mint. All ACs met.
 <!-- SECTION:NOTES:END -->
