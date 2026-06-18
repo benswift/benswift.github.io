@@ -71,6 +71,7 @@ const ANU = "Australian National University";
 const COLLECTION_TITLE = "Live-coding performances: a body of work (2008–present)";
 const TODAY = new Date().toISOString().slice(0, 10);
 
+/** Authenticated Zenodo request; throws on non-2xx, returns parsed JSON (null on 204). */
 async function api(method: string, url: string, body?: unknown): Promise<any> {
   const res = await fetch(url, {
     method,
