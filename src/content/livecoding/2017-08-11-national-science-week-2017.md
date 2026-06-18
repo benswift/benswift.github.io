@@ -2,6 +2,7 @@
 title: "National Science Week '17 ACT Launch Event"
 layout: doc
 date: "2017-08-11"
+instrument: "Extempore"
 venue: "National Film and Sound Archive, Canberra"
 type: "curated"
 event: "National Science Week 2017"

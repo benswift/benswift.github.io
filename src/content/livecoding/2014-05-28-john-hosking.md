@@ -2,6 +2,7 @@
 title: "John Hosking Farewell Reception"
 layout: doc
 date: "2014-05-28"
+instrument: "Extempore"
 venue: "Drill Hall Gallery, Canberra"
 type: "curated"
 event: "John Hosking Farewell Reception"

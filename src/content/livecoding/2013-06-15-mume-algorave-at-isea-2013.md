@@ -4,6 +4,7 @@ title:
   Electronic Art"
 layout: doc
 date: "2013-06-15"
+instrument: "Extempore"
 venue: "107 Projects, Redfern, NSW, Australia"
 type: "curated"
 event: "International Symposium on Electronic Art (ISEA) 2013"

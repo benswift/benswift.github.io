@@ -2,6 +2,7 @@
 title: "Revenant Media: Theremin '75 Exhibition"
 layout: doc
 date: "2013-10-25"
+instrument: "Extempore"
 venue: "ANU School of Art Gallery, Canberra"
 type: "curated"
 event: "Revenant Media: Theremin '75 exhibition"

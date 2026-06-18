@@ -2,6 +2,7 @@
 title: "Innovation ACT 2015 Launch"
 layout: doc
 date: "2015-08-12"
+instrument: "Extempore"
 venue: "John Curtin School of Medical Research, Canberra"
 type: "curated"
 event: "Innovation ACT 2015"

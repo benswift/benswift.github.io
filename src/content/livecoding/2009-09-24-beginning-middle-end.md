@@ -2,6 +2,7 @@
 title: "Beginning-Middle-End Festival"
 layout: doc
 date: "2009-09-24"
+instrument: "Impromptu"
 venue: "ANU School of Art Gallery, Canberra"
 type: "curated"
 event: "Beginning-Middle-End Festival"

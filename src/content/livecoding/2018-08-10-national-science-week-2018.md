@@ -2,6 +2,7 @@
 title: "National Science Week '18 ACT Launch Event"
 layout: doc
 date: "2018-08-10"
+instrument: "Extempore"
 venue: "Molo Bar, Australian National University"
 type: "curated"
 event: "National Science Week 2018"

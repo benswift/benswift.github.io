@@ -2,6 +2,7 @@
 title: "The AP Sessions"
 layout: doc
 date: "2014-09-30"
+instrument: "Extempore"
 venue: "Australian National University"
 type: "other"
 event: "The AP Sessions"
