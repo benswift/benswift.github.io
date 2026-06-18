@@ -1,0 +1,114 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro"
+import { Content as ResearchStatement } from "../../data/livecoding-research-statement.md"
+import { livecodingCollection } from "../../data/livecoding-collection"
+
+// Per-anchor significance notes (TASK-23.05). Drafted via benswift-writer +
+// jamesian (LAYERED), assessor register to match the statement above. Each
+// covers venue standing, selection basis, a distinctive feature, and how the
+// performance is documented; the title links through to the gig page, which
+// carries the actual video/proceedings/DOI links. Chronological order, so the
+// page reads as the sustained-program story.
+const anchors: { slug: string; label: string; note: string }[] = [
+  {
+    slug: "2009-07-03-acmc-09",
+    label: "ACMC '09 — Brisbane",
+    note: "Held at QUT in 2009, this is the earliest performance gathered here, made in Impromptu before the move to Extempore. It reached the stage through the juried programme of the Australasian Computer Music Conference, the region's premier forum for computer music. What marks the set is a companion iPhone app that handed live control of program parameters to audience members' phones, an early turn of the audience-participation thread that recurs across the work. No video survived, though an accompanying peer-reviewed paper, <em>Distributed Performance in Livecoding</em>, documents it in the conference proceedings.",
+  },
+  {
+    slug: "2013-06-15-mume-algorave-at-isea-2013",
+    label: "ISEA 2013 (MuMe Algorave) — Sydney",
+    note: "The International Symposium on Electronic Art ranks among the world's longest-running gatherings for electronic and digital art; its 2013 edition came to Sydney, where the work appeared in the juried Musical Metacreation (MuMe) algorave. The set was a duo with Andrew Sorensen, designer of both Impromptu and Extempore, the environments this work is performed in, a rare on-stage pairing of the instrument's maker with one of its long-term performers. A video recording survives.",
+  },
+  {
+    slug: "2014-07-10-acmc-14",
+    label: "ACMC '14 — Melbourne",
+    note: "At the Victorian College of the Arts in Melbourne, the 2014 ACMC again selected the work for its juried concert series, a duo with Andrew Sorensen that continued the pairing of Extempore's designer with a long-term performer. No recording of this set survived.",
+  },
+  {
+    slug: "2020-02-07-iclc-20",
+    label: "ICLC 2020 (Algorave) — Limerick",
+    note: "ICLC's 2020 edition, the field's flagship conference meeting that year in Limerick, placed the work in its algorave, the live-coding movement's signature club-night format, again by peer-reviewed selection. Giovanni Muzio (kesson) supplied the visuals, his Processing and OpenGL running against my Extempore set. Only part of the live stream survives, its opening lost to a broadcast fault, though that recording and the published proceedings both document the performance.",
+  },
+  {
+    slug: "2021-08-26-acmc-21",
+    label: "ACMC '21 — Canberra",
+    note: "In 2021 the ACMC programmed the work into its juried evening concert at the Australian Institute of Music, a duo with Ushini Attanayake. That collaboration with Attanayake, an emerging artist, runs through several of these performances. Recorded under Canberra's Delta-wave lockdown, with the conference pushed online, the set survives in a video those circumstances make the more valuable as documentation.",
+  },
+  {
+    slug: "2022-08-31-acmc-22",
+    label: "ACMC '22 — Wellington",
+    note: "Crossing the Tasman to Massey University in Wellington, the 2022 ACMC carried the work to New Zealand, again a juried duo with Ushini Attanayake. A desk audio recording was captured and is being tracked down.",
+  },
+  {
+    slug: "2024-05-31-iclc-24",
+    label: "ICLC 2024 — Shanghai",
+    note: "The International Conference on Live Coding is the field's flagship international gathering, and its 2024 edition placed the work on the stage of the Shanghai Concert Hall, selected through the conference's juried programme. The set paired my from-scratch Extempore music with Leon Volbers's live-coded visuals and Beverly Edwards's live drawing on the adjacent screen, an instance of the audiovisual-duo thread that recurs across the work. A full video recording, produced by the NYU Shanghai team, documents it alongside the peer-reviewed proceedings.",
+  },
+]
+---
+
+<PageLayout
+  title="Live-coding research statement"
+  description="The formal research statement for Ben Swift's two-decade live-coding body of work, with significance notes on its anchor performances."
+  relativePath="src/pages/livecoding/research-statement.astro"
+>
+  <p class="back-link"><a href="/livecoding/">&larr; Live-coding gigs</a></p>
+
+  <p>
+    This is the formal research statement for my live-coding body of work, and the
+    description attached to the collection's DOI. For the warm tour through the gigs
+    themselves, head back to the <a href="/livecoding/">main page</a>.
+  </p>
+
+  <ResearchStatement />
+
+  {livecodingCollection && (
+    <p class="collection-cite">
+      Cite the body of work: <a href={livecodingCollection.doiUrl}>{livecodingCollection.conceptDoi}</a>
+      {" · "}
+      <a href={livecodingCollection.community.url}>Zenodo community</a>
+    </p>
+  )}
+
+  <hr />
+
+  <section class="anchor-notes">
+    <h2>Anchor performances</h2>
+    <p>
+      Seven performances anchor the body of work, selected for the field's premier
+      international (ICLC, ISEA) and regional (ACMC) venues. Each note records the
+      venue's standing, the basis on which the set was chosen, what made it
+      distinctive, and how it is documented.
+    </p>
+    {anchors.map((a) => (
+      <article class="anchor-note">
+        <h3><a href={`/livecoding/${a.slug}/`}>{a.label}</a></h3>
+        <p set:html={a.note} />
+      </article>
+    ))}
+  </section>
+</PageLayout>
+
+<style>
+  .back-link {
+    font-size: 0.9rem;
+  }
+
+  .anchor-notes {
+    margin-top: 2rem;
+  }
+
+  .anchor-note {
+    margin-bottom: 1.5rem;
+  }
+
+  .anchor-note h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+  }
+
+  .anchor-note p {
+    margin-top: 0;
+  }
+</style>

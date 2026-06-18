@@ -156,6 +156,10 @@ const phrases = [
 
   <slot />
 
+  <p class="collection-link">
+    Part of <a href="/livecoding/research-statement/">a two-decade live-coding body of work</a>.
+  </p>
+
   {related_works && related_works.length > 0 && (
     <section class="related-works" aria-labelledby="related-works-heading">
       <h2 id="related-works-heading">Related works</h2>
@@ -191,6 +195,12 @@ const phrases = [
   .gig-doi {
     font-family: var(--font-mono, monospace);
     font-size: 0.9em;
+  }
+
+  .collection-link {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted, #9b9b9b);
   }
 
   .related-works {
