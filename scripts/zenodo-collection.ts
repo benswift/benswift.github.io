@@ -158,7 +158,7 @@ function buildMetadata(statementHtml: string, gigDois: string[], communityAvaila
     related_identifiers: gigDois.map((doi) => ({ relation: "hasPart", identifier: doi })),
     notes: "Body-of-work umbrella record for Ben Swift's live-coding performances.",
     access_right: "open",
-    license: "cc-by-4.0",
+    license: "cc-by-sa-4.0",
     ...(communityAvailable ? { communities: [{ identifier: COMMUNITY_SLUG }] } : {}),
   };
 }

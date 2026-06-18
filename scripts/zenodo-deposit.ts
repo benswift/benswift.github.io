@@ -197,9 +197,11 @@ function buildMetadata(gig: Gig, dateStr: string) {
     keywords,
     related_identifiers: buildRelated(gig),
     notes: `${gig.type ?? "performance"} live-coding performance.`,
-    // Rights pass (.02) sets per-gig licensing for production; sandbox uses CC-BY for testing.
+    // Rights pass (.02): all gigs are link-only (media stays on Vimeo/YouTube,
+    // linked via isVariantFormOf), and the record is licensed CC-BY-SA-4.0 to
+    // match the site. A per-gig `license` frontmatter field still overrides.
     access_right: "open",
-    license: gig.license ?? "cc-by-4.0",
+    license: gig.license ?? "cc-by-sa-4.0",
     ...(COLLECTION_COMMUNITY ? { communities: [{ identifier: COLLECTION_COMMUNITY }] } : {}),
   };
 }
