@@ -22,6 +22,8 @@ import fs from "node:fs";
 import net from "node:net";
 import path from "node:path";
 import matter from "gray-matter";
+import { loadCollectionState } from "./lib/zenodo-collection-state";
+import { acceptInclusionRequests } from "./lib/zenodo-community";
 
 // Happy Eyeballs: race IPv4/IPv6 and use whichever connects first, so the
 // deposit still works on networks where IPv6 routing is broken.
@@ -44,6 +46,11 @@ const ONLY = argOf("--only");
 const TARGET = PROD ? "prod" : "sandbox";
 const BASE = PROD ? "https://zenodo.org" : "https://sandbox.zenodo.org";
 const TOKEN = PROD ? process.env.ZENODO_ACCESS_TOKEN : process.env.ZENODO_SANDBOX_TOKEN;
+// Body-of-work umbrella (TASK-23.09), if set up: every gig links back via
+// isPartOf and is filed under the same Zenodo Community.
+const COLLECTION = loadCollectionState(TARGET);
+const COLLECTION_DOI = COLLECTION.doi;
+const COLLECTION_COMMUNITY = COLLECTION.communitySlug;
 
 const LIVECODING_DIR = path.resolve(process.cwd(), "src/content/livecoding");
 const STATE_PATH = path.resolve(process.cwd(), `scripts/.zenodo-state-${TARGET}.json`);
@@ -143,6 +150,8 @@ function buildRelated(gig: Gig) {
         ...(w.type ? { resource_type: w.type } : {}),
       });
   }
+  // Link back to the body-of-work umbrella (TASK-23.09), once it's reserved.
+  if (COLLECTION_DOI) rel.push({ relation: "isPartOf", identifier: COLLECTION_DOI });
   // Zenodo rejects an identifier that equals the record's own — none here. Dedupe by identifier+relation.
   const seen = new Set<string>();
   return rel.filter((r) => {
@@ -191,6 +200,7 @@ function buildMetadata(gig: Gig, dateStr: string) {
     // Rights pass (.02) sets per-gig licensing for production; sandbox uses CC-BY for testing.
     access_right: "open",
     license: gig.license ?? "cc-by-4.0",
+    ...(COLLECTION_COMMUNITY ? { communities: [{ identifier: COLLECTION_COMMUNITY }] } : {}),
   };
 }
 
@@ -301,6 +311,12 @@ async function depositGig(slug: string, filePath: string, state: State) {
     dep.published = true;
     saveState(state);
     console.log(`  ★ ${slug}: published → ${BASE}/doi/${finalDoi}`);
+    // Owner-accept the community-inclusion request publishing opened, so the gig
+    // actually lands in the body-of-work community (TASK-23.09).
+    if (COLLECTION_COMMUNITY) {
+      const n = await acceptInclusionRequests(BASE, TOKEN!, dep.depositionId);
+      if (n) console.log(`  ⌂ ${slug}: filed under community ${COLLECTION_COMMUNITY}`);
+    }
   }
 }
 
