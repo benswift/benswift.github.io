@@ -54,6 +54,15 @@ const TOKEN = PROD ? process.env.ZENODO_ACCESS_TOKEN : process.env.ZENODO_SANDBO
 const COLLECTION = loadCollectionState(TARGET);
 const COLLECTION_DOI = COLLECTION.doi;
 const COLLECTION_COMMUNITY = COLLECTION.communitySlug;
+// The self-owned atproto document record (TASK-23.10) is carried back as a
+// relatedIdentifier so the Zenodo record links to the at:// document (Zenodo
+// accepts a raw at://, verified). The DID comes from the blog atproto state and
+// the document rkey is the gig slug, so the AT-URI is fully deterministic —
+// computed here rather than duplicated into 27 frontmatter files.
+const ATPROTO_DID: string | undefined = (() => {
+  const p = path.resolve(process.cwd(), "atproto-state.json");
+  return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")).did : undefined;
+})();
 
 const LIVECODING_DIR = path.resolve(process.cwd(), "src/content/livecoding");
 const STATE_PATH = path.resolve(process.cwd(), `scripts/.zenodo-state-${TARGET}.json`);
@@ -140,7 +149,7 @@ function buildCreators(gig: Gig) {
   return creators;
 }
 
-function buildRelated(gig: Gig) {
+function buildRelated(gig: Gig, slug: string) {
   const rel: { relation: string; identifier: string; resource_type?: string }[] = [];
   for (const v of gig.videos ?? []) {
     rel.push({ relation: "isVariantFormOf", identifier: v.url, resource_type: "video" });
@@ -159,6 +168,13 @@ function buildRelated(gig: Gig) {
         ...(w.type ? { resource_type: w.type } : {}),
       });
   }
+  // Link to the self-owned atproto document record (TASK-23.10), a variant form
+  // of this output published on Ben's PDS. AT-URI is deterministic from the slug.
+  if (ATPROTO_DID)
+    rel.push({
+      relation: "isVariantFormOf",
+      identifier: `at://${ATPROTO_DID}/site.standard.document/${slug}`,
+    });
   // Link back to the body-of-work umbrella (TASK-23.09), once it's reserved.
   if (COLLECTION_DOI) rel.push({ relation: "isPartOf", identifier: COLLECTION_DOI });
   // Zenodo rejects an identifier that equals the record's own — none here. Dedupe by identifier+relation.
@@ -188,7 +204,7 @@ function buildDescription(gig: Gig): string {
   return bits.join("\n");
 }
 
-function buildMetadata(gig: Gig, dateStr: string) {
+function buildMetadata(gig: Gig, dateStr: string, slug: string) {
   const keywords = [
     "live coding",
     "livecoding",
@@ -204,7 +220,7 @@ function buildMetadata(gig: Gig, dateStr: string) {
     description: buildDescription(gig),
     publication_date: dateStr,
     keywords,
-    related_identifiers: buildRelated(gig),
+    related_identifiers: buildRelated(gig, slug),
     notes: `${gig.type ?? "performance"} live-coding performance.`,
     // Rights pass (.02): all gigs are link-only (media stays on Vimeo/YouTube,
     // linked via isVariantFormOf), and the record is licensed CC-BY-SA-4.0 to
@@ -267,7 +283,7 @@ async function depositGig(slug: string, filePath: string, state: State) {
     return;
   }
   const dateStr = (gig.date ?? slug.slice(0, 10)).slice(0, 10);
-  const metadata = buildMetadata(gig, dateStr);
+  const metadata = buildMetadata(gig, dateStr, slug);
 
   // --update: push frontmatter changes (e.g. a late ORCID) to an already-published
   // record in place. A metadata edit keeps the same DOI — only newversion mints a
@@ -280,6 +296,9 @@ async function depositGig(slug: string, filePath: string, state: State) {
     }
     if (!WRITE) {
       console.log(`  · ${slug}: would update published record ${depId} in place`);
+      console.log(
+        `      related: ${metadata.related_identifiers.map((r) => `${r.relation} ${r.identifier}`).join(" | ") || "—"}`,
+      );
       return;
     }
     try {
