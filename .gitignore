@@ -35,3 +35,6 @@ svg_gen_output/
 # blog post and public/assets/documents/)
 /world-cup-2026.typ
 /world-cup-2026.pdf
+
+# Zenodo deposit state (sandbox/prod deposition tracking)
+scripts/.zenodo-state-*.json

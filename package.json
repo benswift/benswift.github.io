@@ -19,6 +19,7 @@
     "atproto:publish": "pnpm exec tsx scripts/atproto-publish.ts",
     "atproto:seed": "pnpm exec tsx scripts/seed-syndication.ts",
     "archive:urls": "pnpm exec tsx scripts/archive-event-urls.ts",
+    "zenodo:deposit": "pnpm exec tsx scripts/zenodo-deposit.ts",
     "test": "vitest run",
     "test:integration": "vitest run --config vitest.integration.config.ts",
     "lint": "oxlint",
