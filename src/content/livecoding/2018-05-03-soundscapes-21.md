@@ -5,13 +5,14 @@ date: "2018-05-03"
 venue: "Smiths Alternative Bookshop, Canberra"
 type: "curated"
 event: "Soundscapes Concert Series"
-description: "Livecoded music performance at Soundscapes Concert Series, Smiths Alternative Bookshop, Canberra."
+description:
+  "Livecoded music performance at Soundscapes Concert Series, Smiths Alternative
+  Bookshop, Canberra."
 event_url: 'https://www.smithsalternative.com/events/soundscapes-21-44719?d=3\%2F05\%2F2018+9\%3A30\%3A00+PM'
 venue_url: "https://www.smithsalternative.com"
-video_url: "https://vimeo.com/269115310"
+videos:
+  - url: "https://vimeo.com/269115310"
 ---
-
-<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/269115310?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
 
 Soundscapes is a monthly music night showcasing acts somewhere in the
 alternative / experimental / sound art / other / uncategorised zones hosted by

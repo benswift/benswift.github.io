@@ -6,6 +6,15 @@ venue: "Australian National University"
 type: "other"
 event: "The AP Sessions"
 description: "Livecoded music performance, Australian National University."
+videos:
+  - url: "https://vimeo.com/315193058"
+    label: "Aesthetic visuals"
+  - url: "https://vimeo.com/315195372"
+    label: "Didactic visuals"
+  - url: "https://vimeo.com/315196944"
+    label: "Study: no visuals"
+  - url: "https://vimeo.com/315199460"
+    label: "Study: with visuals"
 ---
 
 The AP sessions weren't a normal gig. They were a series of livecoding gigs I
@@ -45,32 +54,24 @@ to see all the details. Even better, put the kettle on and read
     most important aspects of visualisation design. Still, I'm putting the
     videos up here so you can see for yourself what they looked like.
 
-### "Aesthetic" visuals {#aesthetic-visuals}
+### "Aesthetic" and "didactic" visuals {#aesthetic-visuals}
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315193058?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
-
-### "Didactic" visuals
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315195372?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
+Two of the recordings come from these sets: the _aesthetic_ visuals (designed
+primarily to look cool) and the _didactic_ ones (designed to teach the audience
+about what was going on).
 
 ### "Visuals" vs "no visuals" study
 
 Following the "aesthetic vs didactic" gigs, and based on the audience feedback,
-Ari developed one more set of visualisation techiniques, and we did one more gig
+Ari developed one more set of visualisation techniques, and we did one more gig
 (with audience feedback like before). This time, there were two sets---one with
-the visuals, one without (just the plain code like all my other gigs). Here are
-the videos from those sessions. This stuff is all in Chapters 6 and 7 of
-[Arrian's honours thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf)
+the visuals, one without (just the plain code like all my other gigs). This
+stuff is all in Chapters 6 and 7 of
+[Arrian's honours thesis](https://github.com/arrian/research-project/blob/master/thesis/thesis.pdf).
 
 The visuals in these recordings are pretty hard to see, and the audio quality's
-not great either. However, in the interests of open science, here's video from
-the **no visuals** set:
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315196944?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
-
-and the video from the **visuals** gig:
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/315199460?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
+not great either, but in the interests of open science both the **no visuals**
+and **visuals** sets are here too.
 
 ## Take-home messages?
 

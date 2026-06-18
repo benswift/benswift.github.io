@@ -5,8 +5,13 @@ date: "2019-02-26"
 venue: "ANU College of Engineering, Computing and Cybernetics"
 type: "invited"
 event: "CECS Welcome Party 2019"
-description: "Livecoded music performance, ANU College of Engineering, Computing and Cybernetics."
+description:
+  "Livecoded music performance, ANU College of Engineering, Computing and
+  Cybernetics."
 event_url: "https://cs.anu.edu.au/events/cecs-welcome-party"
+videos:
+  - url: "https://vimeo.com/319664298"
+    label: "Excerpt"
 artists:
   - name: "Kieran Browne"
     role: "livecoded visuals"
@@ -21,7 +26,5 @@ writing
 It was great to be invited to show what's possible we reimagine what humans and
 computers can do together.
 
-This was a long set, so there's no recording of the whole event, but here's an
+This was a long set, so there's no recording of the whole event, but there's an
 excerpt from about half-way through.
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/319664298?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->

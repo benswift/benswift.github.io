@@ -5,13 +5,15 @@ date: "2015-08-26"
 venue: "ANU School of Music, Canberra"
 type: "curated"
 event: "Collected Resonances concert series"
-description: "Livecoded music performance at Collected Resonances concert series, ANU School of Music, Canberra."
+description:
+  "Livecoded music performance at Collected Resonances concert series, ANU
+  School of Music, Canberra."
 event_url: "https://www.agac.com.au/event/collected-resonances-3/"
 venue_url: "https://music.cass.anu.edu.au/services/bookings/venues"
-video_url: "https://vimeo.com/314633596"
+videos:
+  - url: "https://vimeo.com/314633596"
+    label: "Crowd video"
 ---
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/314633596?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
-
-Sadly there's no full video from this gig, only this crowd video of the last
-couple of minutes.
+Sadly there's no full video from this gig, only a crowd video of the last couple
+of minutes.

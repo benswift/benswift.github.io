@@ -7,10 +7,9 @@ type: "curated"
 event: "John Hosking Farewell Reception"
 description: "Livecoded music performance, Drill Hall Gallery, Canberra."
 venue_url: "https://dhg.anu.edu.au"
-video_url: "https://vimeo.com/314652381"
+videos:
+  - url: "https://vimeo.com/314652381"
 ---
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/314652381?color=be2edd" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><!-- Script removed during migration -->
 
 A concert and gallery show organised to farewell to
 [John Hosking](https://unidirectory.auckland.ac.nz/profile/j-hosking), the Dean
