@@ -1,9 +1,10 @@
 ---
 id: TASK-23.12
 title: ANU library / ResearchPortalPlus enquiry
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-06-18 00:56'
+updated_date: '2026-06-18 10:25'
 labels:
   - 'needs:ben'
   - admin
@@ -25,3 +26,9 @@ Email ANU library/research office with the open institutional questions. Informs
 - [ ] #3 Asked: current ANU promotion guidance on NTRO research statements
 - [ ] #4 Responses recorded in this epic's notes
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+2026-06-18: enquiry email drafted (covers all 3 AC questions: external-domain DataCite resolution, ANU Pure/ResearchPortalPlus minting connector vs store-only, NTRO research-statement promotion guidance). Provided to Ben to send from his ANU account; ACs #1-3 are the questions, #4 (record responses) lands once replies arrive.
+<!-- SECTION:NOTES:END -->

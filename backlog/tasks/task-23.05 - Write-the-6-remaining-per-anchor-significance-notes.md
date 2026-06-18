@@ -1,9 +1,10 @@
 ---
 id: TASK-23.05
 title: Write the 6 remaining per-anchor significance notes
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-06-18 00:56'
+updated_date: '2026-06-18 10:25'
 labels:
   - content
   - writing
@@ -20,7 +21,13 @@ Following the agreed template (venue standing, selection basis, distinctive feat
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 A significance note written for each of the 6 anchors
-- [ ] #2 Consistent with the program research statement and template
-- [ ] #3 Each cites the venue's standing and the selection/curation basis
+- [x] #1 A significance note written for each of the 6 anchors
+- [x] #2 Consistent with the program research statement and template
+- [x] #3 Each cites the venue's standing and the selection/curation basis
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+DONE 2026-06-18: per-anchor significance notes for all 7 anchors on /livecoding/research-statement (the handoff's 'ICLC24 done example' never existed, so all 7 written). Template covered (venue standing/selection basis/distinctive feature/documentation); collective standing claim in the section intro to avoid robotic repetition. benswift-writer + jamesian LAYERED. Commit 4a8b8541.
+<!-- SECTION:NOTES:END -->
