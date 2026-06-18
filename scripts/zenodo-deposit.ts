@@ -12,9 +12,11 @@
 //   --prod      target zenodo.org with ZENODO_ACCESS_TOKEN (default: sandbox.zenodo.org + ZENODO_SANDBOX_TOKEN)
 //   --only <s>  restrict to gigs whose slug contains <s>
 //   --publish   publish the deposition (default: leave as an editable draft)
+//   --update    push frontmatter changes to ALREADY-published records in place
+//               (e.g. a late ORCID); keeps the same DOI. Pair with --only.
 //   --no-files  skip the documentation-file upload
 //
-// Idempotent: skips gigs that already have a `doi`. A sidecar state file
+// Idempotent: skips gigs that already have a `doi` (unless --update). A state file
 // (scripts/.zenodo-state-<target>.json, gitignored) tracks in-flight
 // depositions so a re-run resumes rather than orphaning drafts.
 
@@ -40,6 +42,7 @@ const argOf = (f: string) => {
 const WRITE = has("--write");
 const PROD = has("--prod");
 const PUBLISH = has("--publish");
+const UPDATE = has("--update");
 const NO_FILES = has("--no-files");
 const ONLY = argOf("--only");
 
@@ -119,6 +122,12 @@ function familyFirst(name: string): string {
   if (parts.length < 2) return name;
   const family = parts.pop()!;
   return `${family}, ${parts.join(" ")}`;
+}
+
+/** The deposition/record id embedded in a Zenodo DOI like 10.xxxx/zenodo.<id>. */
+function depositionIdFromDoi(doi?: string): number | undefined {
+  const m = doi?.match(/zenodo\.(\d+)$/);
+  return m ? Number(m[1]) : undefined;
 }
 
 function buildCreators(gig: Gig) {
@@ -250,14 +259,42 @@ async function uploadDocFile(bucket: string, slug: string, gig: Gig, dateStr: st
 async function depositGig(slug: string, filePath: string, state: State) {
   const raw = fs.readFileSync(filePath, "utf8");
   const gig = matter(raw).data as Gig;
-  // Skip only when truly finished: published per state, or a DOI is set with no
-  // in-flight draft to resume. A reserved-but-unpublished DOI still needs publishing.
-  if (state[slug]?.published || (gig.doi && !state[slug])) {
+  // Already finished: published per state, or a DOI is set with no in-flight
+  // draft to resume. A reserved-but-unpublished DOI still needs publishing.
+  const alreadyPublished = Boolean(state[slug]?.published || (gig.doi && !state[slug]));
+  if (alreadyPublished && !UPDATE) {
     console.log(`  – ${slug}: already deposited (DOI ${gig.doi ?? state[slug]?.doi}) — skipping`);
     return;
   }
   const dateStr = (gig.date ?? slug.slice(0, 10)).slice(0, 10);
   const metadata = buildMetadata(gig, dateStr);
+
+  // --update: push frontmatter changes (e.g. a late ORCID) to an already-published
+  // record in place. A metadata edit keeps the same DOI — only newversion mints a
+  // new one — so the citation is stable.
+  if (alreadyPublished) {
+    const depId = state[slug]?.depositionId ?? depositionIdFromDoi(gig.doi);
+    if (!depId) {
+      console.log(`  ✗ ${slug}: --update needs a deposition id (state or a zenodo DOI) — skipping`);
+      return;
+    }
+    if (!WRITE) {
+      console.log(`  · ${slug}: would update published record ${depId} in place`);
+      return;
+    }
+    try {
+      await zenodo("POST", `${BASE}/api/deposit/depositions/${depId}/actions/edit`);
+    } catch (err) {
+      if (!(err as Error).message.includes("→ 400")) throw err; // already open for editing
+    }
+    await zenodo("PUT", `${BASE}/api/deposit/depositions/${depId}`, { metadata });
+    const published = await zenodo(
+      "POST",
+      `${BASE}/api/deposit/depositions/${depId}/actions/publish`,
+    );
+    console.log(`  ↻ ${slug}: updated in place → ${BASE}/doi/${published?.doi ?? gig.doi}`);
+    return;
+  }
 
   if (!WRITE) {
     console.log(`  · ${slug}: would deposit "${gig.title}" (${metadata.upload_type})`);
