@@ -38,3 +38,6 @@ svg_gen_output/
 
 # Zenodo deposit state (sandbox/prod deposition tracking)
 scripts/.zenodo-state-*.json
+
+# atproto livecoding publish state (per-gig record uris/cids; idempotency)
+scripts/.atproto-livecoding-state.json
