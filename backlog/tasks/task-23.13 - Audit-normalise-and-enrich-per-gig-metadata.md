@@ -4,6 +4,7 @@ title: 'Audit, normalise and enrich per-gig metadata'
 status: To Do
 assignee: []
 created_date: '2026-06-18 01:09'
+updated_date: '2026-06-18 01:20'
 labels:
   - data
   - content
@@ -33,11 +34,10 @@ Enrichments (small research pass): Ben as explicit creator + ORCID; collaborator
 <!-- AC:BEGIN -->
 - [ ] #1 All dates normalised to bare YYYY-MM-DD; index.astro filename fallback no longer needed
 - [ ] #2 ACMC'21 date mismatch reconciled against the real event date
-- [ ] #3 Migration cruft removed from all bodies; real video URLs lifted into video_url
-- [ ] #4 instrument field populated for all 27 (Impromptu <=2011, Extempore 2013+)
-- [ ] #5 ICLC'20 proceedings link moved from event_url to related_works; event_url corrected or removed
-- [ ] #6 Missing event_urls backfilled where findable
-- [ ] #7 Ben added as explicit creator with ORCID; collaborator ORCIDs added where known
-- [ ] #8 related_works populated for gigs with proceedings/papers; type sharpened; thin descriptions improved
-- [ ] #9 pnpm typecheck passes and all gigs still validate
+- [ ] #3 instrument field populated for all 27 (Impromptu <=2011, Extempore 2013+)
+- [ ] #4 ICLC'20 proceedings link moved from event_url to related_works; event_url corrected or removed
+- [ ] #5 Missing event_urls backfilled where findable
+- [ ] #6 Ben added as explicit creator with ORCID; collaborator ORCIDs added where known
+- [ ] #7 related_works populated for gigs with proceedings/papers; type sharpened; thin descriptions improved
+- [ ] #8 pnpm typecheck passes and all gigs still validate
 <!-- AC:END -->

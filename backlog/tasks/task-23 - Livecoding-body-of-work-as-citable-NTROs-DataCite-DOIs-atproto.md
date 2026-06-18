@@ -4,6 +4,7 @@ title: Livecoding body of work as citable NTROs (DataCite DOIs + atproto)
 status: To Do
 assignee: []
 created_date: '2026-06-18 00:54'
+updated_date: '2026-06-18 01:20'
 labels:
   - epic
   - livecoding-ntro
@@ -35,3 +36,9 @@ C. Build: extend schema -> Wayback backfill -> Zenodo per-gig deposit (sandbox) 
 
 A single focused session can do all of B and C against the sandbox once a sandbox token exists; production minting waits on the rights pass.
 <!-- SECTION:DESCRIPTION:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Refined build order: .06 schema (+videos[]) -> .14 extract in-body video embeds + strip migration cruft -> .13 metadata audit/normalise/enrich -> .07 Wayback -> .08 Zenodo deposit (sandbox) -> .09 collection+Community -> .10 atproto -> .11 UI. VERIFIED the Jekyll->VitePress->Astro migration did NOT lose video data: all Vimeo URLs are present in-body (iframe count == orphaned-comment count in every file); git-history recovery not needed.
+<!-- SECTION:NOTES:END -->
