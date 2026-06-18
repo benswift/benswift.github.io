@@ -4,7 +4,7 @@ title: Livecoding body of work as citable NTROs (DataCite DOIs + atproto)
 status: To Do
 assignee: []
 created_date: '2026-06-18 00:54'
-updated_date: '2026-06-18 01:20'
+updated_date: '2026-06-18 04:36'
 labels:
   - epic
   - livecoding-ntro
@@ -40,5 +40,11 @@ A single focused session can do all of B and C against the sandbox once a sandbo
 ## Implementation Notes
 
 <!-- SECTION:NOTES:BEGIN -->
-Refined build order: .06 schema (+videos[]) -> .14 extract in-body video embeds + strip migration cruft -> .13 metadata audit/normalise/enrich -> .07 Wayback -> .08 Zenodo deposit (sandbox) -> .09 collection+Community -> .10 atproto -> .11 UI. VERIFIED the Jekyll->VitePress->Astro migration did NOT lose video data: all Vimeo URLs are present in-body (iframe count == orphaned-comment count in every file); git-history recovery not needed.
+BUILD ORDER + PROGRESS. DONE: .06 schema; .14 videos->videos[] (incl. ICLC24 YouTube recording, sourced from the program page); .13 metadata enrich (dates, instrument, abstracts, ORCIDs, related_works, type taxonomy collapsed to juried/invited/other); .07 Wayback (42/45 event+venue URLs archived; scripts/archive-event-urls.ts, npm archive:urls). .08 deposit script BUILT + sandbox-verified end-to-end on ICLC24 (scripts/zenodo-deposit.ts, npm zenodo:deposit, run via 'mise exec --'; legacy Zenodo Deposit API; idempotent; gitignored state file). All 27 gigs now carry deposit-ready frontmatter.
+
+DECISIONS (do NOT re-derive): legacy Deposit API not InvenioRDM; upload_type video (recorded) / other (unrecorded); performers are co-creators; Ben creator constant ORCID 0000-0003-2138-5969 + ANU affiliation; related_identifiers = video IsVariantFormOf, event_url references, archived_* isDocumentedBy, related_works; default licence CC-BY-4.0 (rights pass overrides per gig). Tokens: ZENODO_SANDBOX_TOKEN / ZENODO_ACCESS_TOKEN via mise.
+
+PENDING: Ben to sign off the .08 metadata mapping (see .08 notes); then .02 RIGHTS PASS is the ONLY blocker to production minting -> run: mise exec -- pnpm zenodo:deposit --write --prod --publish.
+
+NEXT BUILD (no rights dependency): .09 collection DOI + Zenodo Community; .10 atproto records; .11 /livecoding hub + GigLayout to surface doi/archived_*/related_works/videos[] -- NOTE GigLayout + PerformancesList still read the deprecated singular video_url (now absent), so switch them to videos[] and drop video_url from the schema as part of .11. WRITING track (independent): .03 research statement, .04 warm intro, .05 six anchor notes. Capstone: .15 BibTeX cite widget (after DOIs exist). VERIFIED earlier: migration kept all in-body video data.
 <!-- SECTION:NOTES:END -->
