@@ -117,7 +117,14 @@ function parasToHtml(md: string): string {
   return md
     .trim()
     .split(/\n\s*\n/)
-    .map((p) => `<p>${p.trim().replace(/\s*\n\s*/g, " ")}</p>`)
+    .map((p) => {
+      const inline = p
+        .trim()
+        .replace(/\s*\n\s*/g, " ")
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*]+)\*/g, "<em>$1</em>");
+      return `<p>${inline}</p>`;
+    })
     .join("\n");
 }
 
