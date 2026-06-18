@@ -4,9 +4,9 @@ layout: doc
 date: "2008-10-15"
 instrument: "Impromptu"
 venue: "ANU School of Music, Canberra"
-type: "curated"
+type: "invited"
 event: "Transmissions in Sound"
-description: "Livecoded music performance, ANU School of Music, Canberra."
+description: "An early from-scratch livecoded music set in Impromptu at Transmissions in Sound, ANU School of Music, Canberra. Ben Swift's first curated live-coding performance, in 2008."
 venue_url: "https://music.cass.anu.edu.au/"
 ---
 

@@ -4,11 +4,9 @@ layout: doc
 date: "2015-08-26"
 instrument: "Extempore"
 venue: "ANU School of Music, Canberra"
-type: "curated"
+type: "invited"
 event: "Collected Resonances concert series"
-description:
-  "Livecoded music performance at Collected Resonances concert series, ANU
-  School of Music, Canberra."
+description: "A from-scratch livecoded music set in Extempore for the Collected Resonances concert series at the ANU School of Music."
 event_url: "https://www.agac.com.au/event/collected-resonances-3/"
 venue_url: "https://music.cass.anu.edu.au/services/bookings/venues"
 videos:

@@ -4,11 +4,9 @@ layout: doc
 date: "2019-08-02"
 instrument: "Extempore"
 venue: "Drill Hall Gallery, Canberra"
-type: "curated"
+type: "invited"
 event: "Ildiko Kovacs: The DNA of Colour exhibition"
-description:
-  "Livecoded music performance at Ildiko Kovacs: The DNA of Colour exhibition,
-  Drill Hall Gallery, Canberra."
+description: "A from-scratch livecoded music set in Extempore with Kieran Browne (livecoded visuals) and Charles Martin (live electronics) for Colour Coded, at the Ildiko Kovacs: The DNA of Colour exhibition, Drill Hall Gallery, ANU."
 event_url: "https://www.facebook.com/events/359350878094918/"
 venue_url: "https://dhg.anu.edu.au"
 videos:

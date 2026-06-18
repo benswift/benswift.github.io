@@ -38,7 +38,7 @@ const livecoding = defineCollection({
     date: z.coerce.string().optional(),
     venue: z.string().optional(),
     venue_url: z.string().optional(),
-    type: z.enum(["juried", "curated", "invited", "other"]).optional(),
+    type: z.enum(["juried", "invited", "other"]).optional(),
     event: z.string().optional(),
     event_url: z.string().optional(),
     // Deprecated: superseded by videos[]. Kept until the gig bodies are

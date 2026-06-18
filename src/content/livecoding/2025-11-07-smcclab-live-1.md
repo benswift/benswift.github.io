@@ -4,11 +4,9 @@ layout: doc
 date: "2025-11-07"
 instrument: "Extempore"
 venue: "PK Big Band Room, ANU School of Music"
-type: "curated"
+type: "invited"
 event: "SMCClab Live concert series"
-description:
-  "Livecoded music performance at SMCClab Live concert series, PK Big Band Room,
-  ANU School of Music."
+description: "A from-scratch livecoded music set in Extempore for the inaugural SMCClab Live concert, ANU School of Music, on a bill with Charlie Roberts debuting his new mutter live-coding system."
 event_url: "https://smcclab.github.io/2025/10/27/smcclablive-1.html"
 videos:
   - url: "https://vimeo.com/1135231035"

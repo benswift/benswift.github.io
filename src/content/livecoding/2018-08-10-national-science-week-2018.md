@@ -4,11 +4,9 @@ layout: doc
 date: "2018-08-10"
 instrument: "Extempore"
 venue: "Molo Bar, Australian National University"
-type: "curated"
+type: "invited"
 event: "National Science Week 2018"
-description:
-  "Livecoded music performance at National Science Week 2018, Molo Bar,
-  Australian National University."
+description: "A from-scratch livecoded music set in Extempore with Kieran Browne (livecoded visuals) at the National Science Week 2018 ACT launch, the Curious Feast, ANU."
 event_url: "https://www.scienceweek.net.au/the-curious-feast/"
 venue_url: "https://pop-up.anu.edu.au/contact/molo-live"
 videos:

@@ -4,9 +4,9 @@ layout: doc
 date: "2009-09-24"
 instrument: "Impromptu"
 venue: "ANU School of Art Gallery, Canberra"
-type: "curated"
+type: "invited"
 event: "Beginning-Middle-End Festival"
-description: "Livecoded music performance, ANU School of Art Gallery, Canberra."
+description: "A from-scratch livecoded set in Impromptu at the Beginning-Middle-End Festival, ANU School of Art Gallery, an interactive concert with custom iPhone and iPod apps passed around the audience to shape the music."
 venue_url: "https://soad.cass.anu.edu.au/gallery-exhibitions"
 videos:
   - url: "https://vimeo.com/7341091"

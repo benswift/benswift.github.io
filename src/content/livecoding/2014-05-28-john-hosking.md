@@ -4,9 +4,9 @@ layout: doc
 date: "2014-05-28"
 instrument: "Extempore"
 venue: "Drill Hall Gallery, Canberra"
-type: "curated"
+type: "invited"
 event: "John Hosking Farewell Reception"
-description: "Livecoded music performance, Drill Hall Gallery, Canberra."
+description: "A from-scratch livecoded music set in Extempore at the Drill Hall Gallery, ANU, farewelling John Hosking, Dean of the ANU College of Engineering and Computer Science."
 venue_url: "https://dhg.anu.edu.au"
 videos:
   - url: "https://vimeo.com/314652381"

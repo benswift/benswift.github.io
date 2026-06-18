@@ -4,11 +4,9 @@ layout: doc
 date: "2015-08-12"
 instrument: "Extempore"
 venue: "John Curtin School of Medical Research, Canberra"
-type: "curated"
+type: "invited"
 event: "Innovation ACT 2015"
-description:
-  "Livecoded music performance at Innovation ACT 2015, John Curtin School of
-  Medical Research, Canberra."
+description: "A from-scratch livecoded music set in Extempore launching Innovation ACT 2015, Canberra's entrepreneurship program, at the John Curtin School of Medical Research."
 event_url: "https://innovationact.org"
 venue_url: "https://jcsmr.anu.edu.au"
 videos:

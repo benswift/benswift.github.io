@@ -4,9 +4,9 @@ layout: doc
 date: "2017-08-11"
 instrument: "Extempore"
 venue: "National Film and Sound Archive, Canberra"
-type: "curated"
+type: "invited"
 event: "National Science Week 2017"
-description: "Livecoded music performance at National Science Week 2017, National Film and Sound Archive, Canberra."
+description: "A from-scratch livecoded music set in Extempore at the National Science Week 2017 ACT launch, National Film and Sound Archive, sharing the bill with ABC weather presenter Nate Byrne."
 event_url: "https://www.scienceweek.net.au"
 venue_url: "https://www.nfsa.gov.au"
 ---

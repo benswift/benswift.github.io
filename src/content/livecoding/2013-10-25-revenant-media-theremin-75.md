@@ -4,11 +4,9 @@ layout: doc
 date: "2013-10-25"
 instrument: "Extempore"
 venue: "ANU School of Art Gallery, Canberra"
-type: "curated"
+type: "invited"
 event: "Revenant Media: Theremin '75 exhibition"
-description:
-  "Livecoded music performance at Revenant Media: Theremin '75 exhibition, ANU
-  School of Art Gallery, Canberra."
+description: "A theremin-inspired livecoded music and visuals set in Extempore for the Revenant Media: Theremin '75 exhibition at the ANU School of Art Gallery, marking UNESCO's World Day for Audiovisual Media."
 event_url: "https://soad.cass.anu.edu.au/events/revenant-media"
 venue_url: "https://soad.cass.anu.edu.au/gallery-exhibitions"
 videos:

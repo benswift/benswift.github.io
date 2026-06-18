@@ -6,9 +6,7 @@ instrument: "Extempore"
 venue: "ANU College of Engineering, Computing and Cybernetics"
 type: "invited"
 event: "CECS Welcome Party 2019"
-description:
-  "Livecoded music performance, ANU College of Engineering, Computing and
-  Cybernetics."
+description: "A 90-minute from-scratch livecoded music set in Extempore with Kieran Browne (livecoded visuals in OpenGL shaders) at the ANU College of Engineering and Computer Science welcome party."
 event_url: "https://cs.anu.edu.au/events/cecs-welcome-party"
 videos:
   - url: "https://vimeo.com/319664298"

@@ -6,7 +6,7 @@ instrument: "Extempore"
 venue: "Australian National University"
 type: "other"
 event: "The AP Sessions"
-description: "Livecoded music performance, Australian National University."
+description: "A series of livecoded music sets in Extempore at the ANU, performed for Arrian Purcell's study into visualising the live-coding process: repeated sets under aesthetic, didactic and no-visuals conditions with audience feedback."
 videos:
   - url: "https://vimeo.com/315193058"
     label: "Aesthetic visuals"
