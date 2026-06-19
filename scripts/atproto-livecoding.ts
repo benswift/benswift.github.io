@@ -1,8 +1,8 @@
 #!/usr/bin/env pnpm exec tsx
 // Publish per-gig atproto records for the live-coding body of work (TASK-23.10):
-// a site.standard.document (the page) + a companion me.benswift.ntro record
-// holding the DataCite DOI and a strongRef to the document. The document AT-URI
-// is exposed for use as a DataCite relatedIdentifier (Zenodo accepts at://).
+// a site.standard.document (the page) + a companion me.benswift.researchOutput
+// record holding the DataCite DOI and a strongRef to the document. The document
+// AT-URI is exposed for use as a DataCite relatedIdentifier (Zenodo accepts at://).
 //
 // Run via `mise exec --` so the atproto creds are in the env:
 //   mise exec -- pnpm exec tsx scripts/atproto-livecoding.ts                 # dry run
@@ -53,8 +53,8 @@ const COLLECTION_DATA_PATH = path.resolve(process.cwd(), "src/data/livecoding-co
 interface GigState {
   documentUri: string;
   documentCid: string;
-  ntroUri: string;
-  ntroCid: string;
+  researchOutputUri: string;
+  researchOutputCid: string;
   contentHash: string;
   doi?: string;
   createdAt: string;
@@ -140,13 +140,15 @@ async function main() {
     }
     const createdAt = prev?.createdAt ?? now;
     if (!gig.doi)
-      console.log(`  ! ${gig.slug}: no DOI yet — NTRO record omits doi (re-run after minting)`);
+      console.log(
+        `  ! ${gig.slug}: no DOI yet — research-output record omits doi (re-run after minting)`,
+      );
     const result = await publishGig(put, gig, pubUri, createdAt, collectionDoi);
     state.gigs[gig.slug] = {
       documentUri: result.document.uri,
       documentCid: result.document.cid,
-      ntroUri: result.ntro.uri,
-      ntroCid: result.ntro.cid,
+      researchOutputUri: result.researchOutput.uri,
+      researchOutputCid: result.researchOutput.cid,
       contentHash: gig.contentHash,
       doi: gig.doi,
       createdAt,
@@ -154,7 +156,7 @@ async function main() {
     published++;
     dataciteLinks.push(`${gig.slug}\t${result.dataciteRelatedIdentifier}`);
     console.log(
-      `  ${WRITE ? "✓" : "·"} ${gig.slug}: document + ntro${gig.doi ? ` (doi ${gig.doi})` : ""}`,
+      `  ${WRITE ? "✓" : "·"} ${gig.slug}: document + research-output${gig.doi ? ` (doi ${gig.doi})` : ""}`,
     );
   }
 

@@ -5,11 +5,11 @@ import os from "node:os";
 import {
   atUri,
   buildDocumentRecord,
-  buildNtroRecord,
+  buildResearchOutputRecord,
   discoverGigs,
   DOCUMENT_NSID,
   type GigData,
-  NTRO_NSID,
+  RESEARCH_OUTPUT_NSID,
   type PutFn,
   publishGig,
   gigDocPath,
@@ -55,17 +55,17 @@ describe("buildDocumentRecord", () => {
   });
 });
 
-describe("buildNtroRecord", () => {
+describe("buildResearchOutputRecord", () => {
   const docRef = { uri: "at://did:plc:abc/site.standard.document/2024-05-31-iclc-24", cid: "cid1" };
 
   it("holds the DOI and a strongRef to the document (AC #3)", () => {
-    const rec = buildNtroRecord(
+    const rec = buildResearchOutputRecord(
       sampleGig,
       docRef,
       "2026-06-18T00:00:00.000Z",
       "10.5281/zenodo.999",
     );
-    expect(rec.$type).toBe(NTRO_NSID);
+    expect(rec.$type).toBe(RESEARCH_OUTPUT_NSID);
     expect(rec.document).toEqual(docRef);
     expect(rec.doi).toBe("10.5281/zenodo.123456");
     expect(rec.partOf).toBe("10.5281/zenodo.999");
@@ -74,7 +74,7 @@ describe("buildNtroRecord", () => {
   });
 
   it("omits the DOI when the gig has none yet", () => {
-    const rec = buildNtroRecord(
+    const rec = buildResearchOutputRecord(
       { ...sampleGig, doi: undefined },
       docRef,
       "2026-06-18T00:00:00.000Z",
@@ -85,7 +85,7 @@ describe("buildNtroRecord", () => {
 });
 
 describe("publishGig", () => {
-  it("puts the document first, then the NTRO strongRef-ing it", async () => {
+  it("puts the document first, then the research-output record strongRef-ing it", async () => {
     const calls: Array<{ collection: string; rkey: string; record: Record<string, unknown> }> = [];
     const put: PutFn = async (collection, rkey, record) => {
       calls.push({ collection, rkey, record });
@@ -101,8 +101,8 @@ describe("publishGig", () => {
 
     expect(calls).toHaveLength(2);
     expect(calls[0].collection).toBe(DOCUMENT_NSID);
-    expect(calls[1].collection).toBe(NTRO_NSID);
-    // The NTRO's document strongRef points at the just-written document.
+    expect(calls[1].collection).toBe(RESEARCH_OUTPUT_NSID);
+    // The research-output record's document strongRef points at the just-written document.
     expect(calls[1].record.document).toEqual(result.document);
     expect(result.document.cid).toBe("cid-1");
     // AC #4: the exposed DataCite relatedIdentifier is the document AT-URI.

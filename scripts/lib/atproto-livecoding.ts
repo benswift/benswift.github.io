@@ -1,14 +1,18 @@
 // Per-gig atproto records for the live-coding body of work (TASK-23.10).
 //
-// AC #1 decision — COMPANION, not extend: site.standard.document is a
-// third-party longform-publishing lexicon (title/path/contents/publication
-// link) with no field for DOIs or research-output metadata, and it isn't ours
-// to fork. So each gig gets TWO records:
+// COMPANION, not extend: site.standard.document is a third-party longform-
+// publishing lexicon (title/path/contents/publication link) with no field for
+// DOIs or research-output metadata, and it isn't ours to fork. So each gig gets
+// TWO records:
 //   1. a standard site.standard.document (the human-facing page), and
-//   2. a companion me.benswift.ntro record in our own namespace holding the
-//      DataCite DOI + a strongRef {uri,cid} to the document.
+//   2. a companion me.benswift.researchOutput record in our own namespace
+//      holding the DataCite DOI + a strongRef {uri,cid} to the document.
 // The document's AT-URI is what gets carried into the gig's DataCite record as
 // a relatedIdentifier (verified: Zenodo accepts a raw at:// identifier).
+//
+// The record type names the output for what it IS (a research output, with an
+// outputType discriminator) rather than for what it isn't — see the post for
+// why "non-traditional research output" is a term worth retiring.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -16,7 +20,7 @@ import matter from "gray-matter";
 import { computeHash, toPlainText } from "./posts";
 
 export const DOCUMENT_NSID = "site.standard.document";
-export const NTRO_NSID = "me.benswift.ntro";
+export const RESEARCH_OUTPUT_NSID = "me.benswift.researchOutput";
 
 export interface StrongRef {
   uri: string;
@@ -90,17 +94,17 @@ export function buildDocumentRecord(gig: GigData, pubUri: string): Record<string
 }
 
 /**
- * The companion me.benswift.ntro record: carries the DataCite DOI and a
- * strongRef to the document, plus enough denormalised context to stand alone.
+ * The companion me.benswift.researchOutput record: carries the DataCite DOI and
+ * a strongRef to the document, plus enough denormalised context to stand alone.
  */
-export function buildNtroRecord(
+export function buildResearchOutputRecord(
   gig: GigData,
   document: StrongRef,
   createdAt: string,
   collectionDoi?: string,
 ): Record<string, unknown> {
   return {
-    $type: NTRO_NSID,
+    $type: RESEARCH_OUTPUT_NSID,
     document,
     outputType: "performance",
     title: gig.title,
@@ -124,13 +128,13 @@ export type PutFn = (
 export interface GigPublishResult {
   slug: string;
   document: StrongRef;
-  ntro: StrongRef;
+  researchOutput: StrongRef;
   doi?: string;
   /** The document AT-URI, ready to carry as a DataCite relatedIdentifier (AC #4). */
   dataciteRelatedIdentifier: string;
 }
 
-/** Put the document, then the companion NTRO that strongRefs it. */
+/** Put the document, then the companion research-output record that strongRefs it. */
 export async function publishGig(
   put: PutFn,
   gig: GigData,
@@ -139,10 +143,16 @@ export async function publishGig(
   collectionDoi?: string,
 ): Promise<GigPublishResult> {
   const document = await put(DOCUMENT_NSID, gig.slug, buildDocumentRecord(gig, pubUri));
-  const ntro = await put(
-    NTRO_NSID,
+  const researchOutput = await put(
+    RESEARCH_OUTPUT_NSID,
     gig.slug,
-    buildNtroRecord(gig, document, createdAt, collectionDoi),
+    buildResearchOutputRecord(gig, document, createdAt, collectionDoi),
   );
-  return { slug: gig.slug, document, ntro, doi: gig.doi, dataciteRelatedIdentifier: document.uri };
+  return {
+    slug: gig.slug,
+    document,
+    researchOutput,
+    doi: gig.doi,
+    dataciteRelatedIdentifier: document.uri,
+  };
 }
