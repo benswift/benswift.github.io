@@ -23,14 +23,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
+      - name: Setup mise (node + pnpm)
+        uses: jdx/mise-action@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
+      - name: Locate pnpm store
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
+
+      - name: Cache pnpm store
+        uses: actions/cache@v5
         with:
-          node-version: 24
-          cache: "pnpm"
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Setup Pages
         uses: actions/configure-pages@v6

@@ -82,5 +82,7 @@
     "unist-util-visit": "^5.1.0",
     "vitest": "^4.1.7"
   },
-  "packageManager": "pnpm@11.8.0"
+  "engines": {
+    "pnpm": ">=11"
+  }
 }
