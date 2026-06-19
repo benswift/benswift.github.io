@@ -1,0 +1,64 @@
+{
+  "lexicon": 1,
+  "id": "me.benswift.researchOutput",
+  "description": "A research output owned by its creator — a performance, exhibition, recording, installation or piece of software that constitutes research in its own right. Named for what it is (a research output, with an outputType discriminator) rather than for what it isn't; see https://benswift.me/blog/2026/06/18/giving-my-livecoding-gigs-a-doi/ for why \"non-traditional research output\" is a term worth retiring.",
+  "defs": {
+    "main": {
+      "type": "record",
+      "description": "A single research output, carrying a DataCite DOI and a strong reference to its human-facing site.standard.document page.",
+      "key": "any",
+      "record": {
+        "type": "object",
+        "required": ["document", "outputType", "title", "performedAt", "createdAt"],
+        "properties": {
+          "document": {
+            "type": "ref",
+            "ref": "com.atproto.repo.strongRef",
+            "description": "Strong reference (uri + cid) to the site.standard.document record for this output's page."
+          },
+          "outputType": {
+            "type": "string",
+            "description": "The kind of research output.",
+            "knownValues": ["performance", "exhibition", "recording", "installation", "software"]
+          },
+          "title": {
+            "type": "string",
+            "maxGraphemes": 300,
+            "maxLength": 3000
+          },
+          "performedAt": {
+            "type": "string",
+            "format": "datetime",
+            "description": "When the work was performed, exhibited or otherwise realised."
+          },
+          "doi": {
+            "type": "string",
+            "description": "DataCite DOI for this output, e.g. 10.5281/zenodo.20743627."
+          },
+          "venue": {
+            "type": "string",
+            "description": "Where the output was realised."
+          },
+          "event": {
+            "type": "string",
+            "description": "The event or programme it formed part of."
+          },
+          "fieldsOfResearch": {
+            "type": "array",
+            "description": "ANZSRC Fields of Research codes (2020 edition).",
+            "items": { "type": "string" }
+          },
+          "partOf": {
+            "type": "string",
+            "description": "DOI of the umbrella collection this output belongs to."
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "datetime",
+            "description": "When this record was first created."
+          }
+        }
+      }
+    }
+  }
+}
