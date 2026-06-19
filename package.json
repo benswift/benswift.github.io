@@ -57,7 +57,7 @@
     "@types/node": "^25.9.1",
     "@types/three": "^0.184.1",
     "@types/unist": "^3.0.3",
-    "astro": "^6.4.2",
+    "astro": "^6.4.8",
     "astro-icon": "^1.1.5",
     "bibtex-parse": "^2.1.0",
     "eslint-plugin-no-only-tests": "^3.4.0",
