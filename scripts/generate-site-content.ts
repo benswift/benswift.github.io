@@ -2,7 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./lib/frontmatter";
 
 const ROOT = process.cwd();
 
@@ -52,7 +52,7 @@ function main() {
     const absPath = path.resolve(ROOT, file);
     if (!fs.existsSync(absPath)) continue;
     const raw = fs.readFileSync(absPath, "utf8");
-    const { content } = matter(raw);
+    const { content } = parseFrontmatter(raw);
     sections.push(`## ${label}\n\n${stripMdxSyntax(content)}`);
   }
 
@@ -61,7 +61,7 @@ function main() {
 
   for (const file of blogFiles) {
     const raw = fs.readFileSync(file, "utf8");
-    const { data } = matter(raw);
+    const { data } = parseFrontmatter<{ published?: boolean; tags?: unknown; title?: string }>(raw);
     if (data.published === false) continue;
     const slug = file.replace(ROOT + "/src/content/blog/", "").replace(/\.(md|mdx)$/, "");
     const date = slug.split("/").slice(0, 3).join("-");

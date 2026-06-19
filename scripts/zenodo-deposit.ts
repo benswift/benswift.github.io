@@ -23,7 +23,7 @@
 import fs from "node:fs";
 import net from "node:net";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./lib/frontmatter";
 import { loadCollectionState } from "./lib/zenodo-collection-state";
 import { acceptInclusionRequests } from "./lib/zenodo-community";
 
@@ -278,7 +278,7 @@ async function uploadDocFile(bucket: string, slug: string, gig: Gig, dateStr: st
 
 async function depositGig(slug: string, filePath: string, state: State) {
   const raw = fs.readFileSync(filePath, "utf8");
-  const gig = matter(raw).data as Gig;
+  const gig = parseFrontmatter<Gig>(raw).data;
   // Already finished: published per state, or a DOI is set with no in-flight
   // draft to resume. A reserved-but-unpublished DOI still needs publishing.
   const alreadyPublished = Boolean(state[slug]?.published || (gig.doi && !state[slug]));

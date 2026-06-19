@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./lib/frontmatter";
 
 const TALKS_DIR = path.resolve(import.meta.dirname, "../talks");
 const DECKS_DIR = path.resolve(import.meta.dirname, "../src/decks");
@@ -314,7 +314,7 @@ function processContent(content: string, data: Record<string, unknown>): string 
 
 function convertFile(inputPath: string): string | null {
   const raw = fs.readFileSync(inputPath, "utf8");
-  const { data, content } = matter(raw);
+  const { data, content } = parseFrontmatter(raw);
 
   if (data.layout !== "reveal") return null;
 

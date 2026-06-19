@@ -63,7 +63,6 @@
     "eslint-plugin-no-only-tests": "^3.4.0",
     "eslint-plugin-perfectionist": "^5.9.0",
     "eslint-plugin-unused-imports": "^4.4.1",
-    "gray-matter": "^4.0.3",
     "oxfmt": "^0.52.0",
     "oxlint": "^1.67.0",
     "pagefind": "^1.5.2",
@@ -80,7 +79,8 @@
     "typescript": "^6.0.3",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0",
-    "vitest": "^4.1.7"
+    "vitest": "^4.1.7",
+    "yaml": "^2.9.0"
   },
   "engines": {
     "pnpm": ">=11"

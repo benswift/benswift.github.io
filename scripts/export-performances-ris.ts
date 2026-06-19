@@ -2,7 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./lib/frontmatter";
 
 interface Artist {
   name: string;
@@ -32,7 +32,7 @@ function main() {
 
   for (const file of files) {
     const content = fs.readFileSync(path.join(livecodingDir, file), "utf8");
-    const { data } = matter(content) as unknown as { data: Frontmatter };
+    const { data } = parseFrontmatter<Frontmatter>(content);
 
     const dateStr = file.match(/^(\d{4}-\d{2}-\d{2})/)?.[1] ?? data.date ?? "";
     const year = dateStr.slice(0, 4);

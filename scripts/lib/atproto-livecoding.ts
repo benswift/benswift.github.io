@@ -16,7 +16,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./frontmatter";
 import { computeHash, toPlainText } from "./posts";
 
 export const DOCUMENT_NSID = "site.standard.document";
@@ -52,6 +52,18 @@ export function atUri(did: string, collection: string, rkey: string): string {
   return `at://${did}/${collection}/${rkey}`;
 }
 
+interface GigFrontmatter {
+  date?: string;
+  title?: string;
+  description?: string;
+  doi?: string;
+  venue?: string;
+  event?: string;
+  type?: string;
+  instrument?: string;
+  for_codes?: string[];
+}
+
 export function discoverGigs(dir: string, only?: string): GigData[] {
   return fs
     .readdirSync(dir)
@@ -59,7 +71,7 @@ export function discoverGigs(dir: string, only?: string): GigData[] {
     .toSorted()
     .map((f) => {
       const raw = fs.readFileSync(path.join(dir, f), "utf8");
-      const { data: fm, content: body } = matter(raw);
+      const { data: fm, content: body } = parseFrontmatter<GigFrontmatter>(raw);
       const slug = f.replace(/\.md$/, "");
       const date = (typeof fm.date === "string" && fm.date) || slug.slice(0, 10);
       return {

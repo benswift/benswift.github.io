@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./frontmatter";
 
 export interface PostData {
   title: string;
@@ -57,6 +57,14 @@ export function toPlainText(markdown: string): string {
     .trim();
 }
 
+interface PostFrontmatter {
+  title?: string;
+  description?: string;
+  tags?: string[] | string;
+  published?: boolean;
+  crosspost?: boolean;
+}
+
 export function discoverPosts(blogDir: string): PostData[] {
   const posts: PostData[] = [];
 
@@ -69,7 +77,7 @@ export function discoverPosts(blogDir: string): PostData[] {
         scanDir(fullPath);
       } else if ((item.endsWith(".md") || item.endsWith(".mdx")) && item !== "index.md") {
         const raw = fs.readFileSync(fullPath, "utf8");
-        const { data: fm, content: body } = matter(raw);
+        const { data: fm, content: body } = parseFrontmatter<PostFrontmatter>(raw);
 
         if (fm.published === false) continue;
 

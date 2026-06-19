@@ -30,7 +30,7 @@
 import fs from "node:fs";
 import net from "node:net";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./lib/frontmatter";
 import {
   type CollectionState,
   loadCollectionState,
@@ -107,7 +107,7 @@ function collectGigDois(): { slug: string; title: string; doi: string }[] {
     .toSorted()
     .map((f) => ({
       slug: f.replace(/\.md$/, ""),
-      ...(matter(fs.readFileSync(path.join(LIVECODING_DIR, f), "utf8")).data as Gig),
+      ...parseFrontmatter<Gig>(fs.readFileSync(path.join(LIVECODING_DIR, f), "utf8")).data,
     }))
     .filter((g): g is { slug: string; title: string; doi: string } => Boolean(g.doi))
     .map((g) => ({ slug: g.slug, title: g.title, doi: g.doi }));
@@ -131,7 +131,7 @@ function parasToHtml(md: string): string {
 
 function loadStatement(): { html: string; placeholder: boolean } {
   if (fs.existsSync(STATEMENT_PATH)) {
-    const body = matter(fs.readFileSync(STATEMENT_PATH, "utf8")).content.trim();
+    const body = parseFrontmatter(fs.readFileSync(STATEMENT_PATH, "utf8")).content.trim();
     if (body) return { html: parasToHtml(body), placeholder: false };
   }
   // Pending the finalised research statement (TASK-23.03). Clearly marked so it

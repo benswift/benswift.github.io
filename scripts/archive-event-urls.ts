@@ -12,7 +12,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "./lib/frontmatter";
 
 const WRITE = process.argv.includes("--write");
 const FORCE = process.argv.includes("--force");
@@ -88,7 +88,7 @@ async function main() {
   for (const file of files) {
     const filePath = path.join(LIVECODING_DIR, file);
     let raw = fs.readFileSync(filePath, "utf8");
-    const { data } = matter(raw) as unknown as { data: Record<string, string | undefined> };
+    const { data } = parseFrontmatter<Record<string, string | undefined>>(raw);
     let changed = false;
 
     for (const { urlKey, archivedKey } of TARGETS) {
