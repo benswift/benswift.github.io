@@ -50,12 +50,40 @@ DOIs buy me the institutional kind of permanence, the sort DataCite and Zenodo
 underwrite. I also wanted these records to be _mine_, though, not just entries
 in someone else's repository. So each gig gets a second home on
 [atproto](https://atproto.com): a `site.standard.document` record for the page,
-plus a companion record in a namespace I invented (`me.benswift.ntro`) that
-carries the DOI and a cryptographic pointer back to the document. The two
-systems cross-reference each other. The atproto record holds the Zenodo DOI, and
-the Zenodo record carries the atproto `at://` URI as a related identifier.
-Zenodo cheerfully accepted a raw `at://` URI, which I had rather expected it to
-reject.
+plus a companion record in a namespace of my own that carries the DOI and a
+cryptographic pointer back to the document. The two systems cross-reference each
+other. The atproto record holds the Zenodo DOI, and the Zenodo record carries
+the atproto `at://` URI as a related identifier. Zenodo cheerfully accepted a
+raw `at://` URI, which I had rather expected it to reject.
+
+Choosing what to call that companion record took longer than writing the code
+around it. The sector's term for work like this is "non-traditional research
+output", NTRO for short, and it defines the thing entirely by what it is not.
+The journal article is the unmarked default. The performance is a deviation from
+it, filed under a category whose only shared property is not being a paper. Alan
+McKee has
+[picked at how unstable that category gets](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8280536/)
+the moment you try to judge what is actually in it. The word is bureaucratic at
+the root, too. It comes from
+[ERA](https://www.arc.gov.au/evaluating-research/excellence-research-australia-era),
+the national assessment exercise the government discontinued in 2023. The label
+has outlived the filing system it was built for.
+
+Other places have found better words. The UK spent years pulling apart
+"practice-based" and "practice-led" before
+[settling on "practice research"](https://research.gold.ac.uk/id/eprint/30222/)
+as the umbrella. Canada funds
+["research-creation"](https://sshrc-crsh.canada.ca/en/funding/terminology.aspx),
+which puts the making and the knowing on a level in one hyphenated breath. Even
+the REF has started calling its outputs "diverse" rather than deviant. None of
+these is perfect, but each begins from the work itself, not from its distance to
+a paper.
+
+When atproto handed me an empty namespace and asked what to call the record, I
+declined to carve the apology into the schema. The collection is
+`me.benswift.researchOutput`, and every record sets an `outputType` of
+`performance`. A livecoding gig is a research output; the "non-traditional" was
+always someone else's nervousness about it, not a property of the work.[^pedant]
 
 There was one small re-learning along the way. My blog already publishes its
 atproto records from CI, with the credentials living in GitHub Actions secrets,
@@ -83,6 +111,12 @@ be.
     time, and I've made my peace with that by assuming they were the highlights.
 
 [^sandbox]: Everything ran against Zenodo's sandbox first, for the same reason.
+
+[^pedant]:
+    There is a satisfying pedantry here. The point of the DOIs was to make these
+    gigs legible to a system that counts papers, and renaming my own private
+    record type does precisely nothing for that system. It only means the one
+    corner of the apparatus I fully control says what I actually think.
 
 [^crash]:
     The recording is no great loss. I had a leak in my networking code that
