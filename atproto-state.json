@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/06/22/opus-4-8-meets-eliza": "18ddba3699100d1734c96dae8e9051211252a989a8c0a5255a8b9c66bd426853",
     "/blog/2026/06/18/giving-my-livecoding-gigs-a-doi": "8eba9dec56a6255c7fc758eeeb03e5344da6bc9794163027dfd67b7834311d79",
     "/blog/2026/06/13/a-timezone-aware-world-cup-poster-in-typst": "c8ae5413b12d28d5a68e1e20247a3db0ca18a34f7bcbc109a461778610c21d6c",
     "/blog/2026/06/06/the-verification-i-never-verified": "9b3da66177187da9d6976cf9026f4d6abe694fcf762b16e646caa665b2d5dfca",
