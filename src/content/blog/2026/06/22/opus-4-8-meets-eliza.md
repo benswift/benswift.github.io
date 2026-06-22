@@ -9,9 +9,10 @@ tags:
   - llms
 ---
 
-My colleague Maia (TODO link to Maia Gould on socy website) asked me last week
-whether anyone had ever wired a modern LLM up to [ELIZA](TODO link) and written
-about what happened. The answer is yes, more than once:
+My colleague [Maia](https://cybernetics.anu.edu.au/people/maia-gould/) asked me
+last week whether anyone had ever wired a modern LLM up to
+[ELIZA](https://en.wikipedia.org/wiki/ELIZA) and written about what happened.
+The answer is yes, more than once:
 [Alan Levine sent ChatGPT and ELIZA on a blind date](https://cogdogblog.com/2023/02/chatgpt-eliza-blind-date/)
 back in 2023,
 [Applefritter pitted the two against each other](https://www.applefritter.com/content/eliza-vs-chatgpt-eliza-vs-eliza),
@@ -22,10 +23,7 @@ than any of those, too. In 1973 someone
 [introduced ELIZA to PARRY over the ARPANET](https://www.rfc-editor.org/rfc/rfc439.html),
 so two chatbots talking past each other is a bit with a fifty-year-old setup.
 What I hadn't seen was anyone doing it with Opus 4.8, which was excuse enough to
-check where this strange little benchmark(TODO add footnote saying 'not sure
-this is a simonw-level "pelican on a bicycle"-level benchmark yet, but
-interesting nonetheless' and include a link to the relevant simonw page about
-that benchmark) has got to.
+check where this strange little benchmark[^benchmark] has got to.
 
 The setup is deliberately lopsided. On one side,
 [Joe Strout's Python knock-off](https://github.com/jezhiggins/eliza.py) of
@@ -96,6 +94,12 @@ The program that fooled Weizenbaum's secretary, and could still out-human an
 early ChatGPT, can't get a single suspicious reply past the current model.
 
 ELIZA can no longer catch Claude, but Claude still can't hang up the phone.
+
+[^benchmark]:
+    I'm not claiming this has earned a place next to Simon Willison's
+    [pelican riding a bicycle](https://simonwillison.net/2024/Oct/25/pelicans-on-a-bicycle/)
+    in the canon of model benchmarks --- not yet, anyway --- but it's
+    interesting nonetheless.
 
 [^leak]:
     One quirk I noticed is that I'd told the model to output only its chat
