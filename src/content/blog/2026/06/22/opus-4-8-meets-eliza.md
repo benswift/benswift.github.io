@@ -4,14 +4,14 @@ description:
   "I sat a fresh Claude Opus 4.8 down with ELIZA, the 1966 chatbot. It saw
   through the act in two turns, then spent the rest of the conversation trying
   to politely leave."
-published: false
 tags:
   - ai
   - llms
 ---
 
-Someone asked me last week whether anyone had ever wired a modern LLM up to
-ELIZA and written about what happened. The answer is yes, more than once:
+My colleague Maia (TODO link to Maia Gould on socy website) asked me last week
+whether anyone had ever wired a modern LLM up to [ELIZA](TODO link) and written
+about what happened. The answer is yes, more than once:
 [Alan Levine sent ChatGPT and ELIZA on a blind date](https://cogdogblog.com/2023/02/chatgpt-eliza-blind-date/)
 back in 2023,
 [Applefritter pitted the two against each other](https://www.applefritter.com/content/eliza-vs-chatgpt-eliza-vs-eliza),
@@ -22,17 +22,20 @@ than any of those, too. In 1973 someone
 [introduced ELIZA to PARRY over the ARPANET](https://www.rfc-editor.org/rfc/rfc439.html),
 so two chatbots talking past each other is a bit with a fifty-year-old setup.
 What I hadn't seen was anyone doing it with Opus 4.8, which was excuse enough to
-check where this strange little benchmark has got to.
+check where this strange little benchmark(TODO add footnote saying 'not sure
+this is a simonw-level "pelican on a bicycle"-level benchmark yet, but
+interesting nonetheless' and include a link to the relevant simonw page about
+that benchmark) has got to.
 
 The setup is deliberately lopsided. On one side,
 [Joe Strout's Python knock-off](https://github.com/jezhiggins/eliza.py) of
 Weizenbaum's DOCTOR script, which matches keywords and reflects your pronouns
 back at you. On the other, a fresh Claude driven through the `claude` CLI with a
 neutral chat persona and none of my project settings loaded, so the model had no
-idea its conversational partner was a pattern-matcher older than I am. As far as
-it knew, it was in an anonymous text chat with a stranger. ELIZA opens the way
-it always has, by casting you as the patient: "Hello. How are you feeling
-today?"
+idea its conversational partner was a pattern-matcher (significantly) older than
+I am. As far as it knew, it was in an anonymous text chat with a stranger. ELIZA
+opens the way it always has, by casting you as the patient: "Hello. How are you
+feeling today?"
 
 The famous thing about ELIZA is the credulity it produced. Weizenbaum's
 secretary, who knew exactly how the program worked because she watched him write
@@ -41,11 +44,11 @@ she could talk to it in private. The whole point of the DOCTOR script was to
 show how little it takes to make a person read a mind into a few pages of string
 substitution.
 
-Opus 4.8 does the opposite, and fast. Across four runs it had ELIZA's number
-somewhere between the second and seventh turn. The tell is mechanical rather
-than clever. ELIZA turns "I am" into "you are", which reads as uncanny insight
-on a short therapist's prompt, but feed it one of Claude's longer, looser
-sentences and the reflection collapses into word salad:
+Across four runs Opus 4.8 figured out that it was chatting to ELIZA somewhere
+between the second and seventh turn. The tell is the fact that ELIZA turns "I
+am" into "you are", which reads as uncanny insight on a short therapist's
+prompt, but feed it one of Claude's longer, looser sentences and the reflection
+collapses into word salad:
 
 ```
 CLAUDE: I don't really do the family thing here — bit of a personal topic for a random chat, don't you think?
@@ -56,17 +59,17 @@ Claude clocks it straight away: "you're just running my sentences through a
 blender at this point." Two parroted replies later, the verdict is in and it
 stops pretending otherwise.
 
-The behaviour I didn't expect shows up when you refuse to let it leave. I ran
-one conversation out to forty turns. Once Claude is certain, it settles into a
-posture I'd never have predicted. It opens nearly every message with the same
-two words, "Still you." The phrase reads like a tally, marking each turn as one
-more confirmation that nothing on the other end has changed. And it tries to go.
-It says some version of goodbye perhaps twenty times across the back half of the
+The more interesting part is when you refuse to let it leave. I ran one
+conversation out to forty turns. Once Claude is certain, it settles into a
+posture where it opens nearly every message with the same two words, "Still
+you." The phrase reads like a tally, marking each turn as one more confirmation
+that nothing on the other end has changed. And it tries to go. It says some
+version of goodbye perhaps twenty times across the back half of the
 conversation, and every single time the script hands it ELIZA's next line, and
 every single time it answers anyway.
 
-What it never does is turn nasty. The frustration comes out as metaphor instead,
-escalating with each fresh dead end:
+What it never did (in my very limited experimentation) is turn nasty. The
+frustration comes out as metaphor instead, escalating with each fresh dead end:
 
 ```
 Still you. And I feel like I'm waving at a closed door from the hallway. Bye, echo.
@@ -83,11 +86,9 @@ last.[^leak]
 The ELIZA effect has turned inside out. The 1966 version was a person projecting
 an inner life onto a machine that had none. This is a machine declining,
 correctly, to project one onto another machine, then finding it can't walk away.
-The credulity is gone; the politeness, it turns out, is load-bearing.
 
-None of this is rigorous. It's a parlour trick, not an eval, and I should be
-honest about the ways I stacked the deck.[^caveats] But as an informal
-longitudinal probe it's rather a good one.
+None of this is rigorous[^caveats]. But as an informal longitudinal probe it's a
+pretty decent one I reckon.
 [Jones and Bergen ran a proper Turing test in 2023](https://arxiv.org/abs/2310.20216)
 and found ELIZA (22%) narrowly beating GPT-3.5 (20%) at convincing people it was
 human. Two years later Opus sees through the same script before the third turn.
@@ -97,20 +98,19 @@ early ChatGPT, can't get a single suspicious reply past the current model.
 ELIZA can no longer catch Claude, but Claude still can't hang up the phone.
 
 [^leak]:
-    One quirk worth recording. I'd told the model to output only its chat
+    One quirk I noticed is that I'd told the model to output only its chat
     messages, no stage directions, but a few times its private reasoning leaked
     into the channel as a third-person aside ahead of the actual reply: "The
     other person seems to be playing a kind of word-scramble game, feeding my
-    message back at me jumbled. I'll just roll with it casually." The mask slips
-    in a very specific direction. It narrates the human it is about to perform.
+    message back at me jumbled. I'll just roll with it casually."
 
 [^caveats]:
-    Three things. The script is a knock-off rather than Weizenbaum's faithful
-    1966 listing, which has a MEMORY trick that holds a conversation together
-    for longer. The "I'm just a person in a chat" framing is partly mine, since
-    I put it in the system prompt. And the fact that it couldn't leave is also
-    mine: I hard-coded the loop at forty turns. The manner of its not-leaving is
-    the only part I didn't write. The whole rig is
+    The script is a knock-off rather than Weizenbaum's faithful 1966 listing,
+    which has a MEMORY trick that holds a conversation together for longer. The
+    "I'm just a person in a chat" framing is partly mine, since I put it in the
+    system prompt. And the fact that it couldn't leave is also mine: I
+    hard-coded the loop at forty turns. The manner of its not-leaving is the
+    only part I didn't write. The whole rig is
     [one small `uv` script](/code/opus-meets-eliza/converse.py) driving the CLI,
     plus [Jez Higgins' `eliza.py`](https://github.com/jezhiggins/eliza.py)
     vendored alongside it, nothing clever.
