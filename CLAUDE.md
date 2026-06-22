@@ -86,12 +86,12 @@ The blog post route auto-discovers a hero by slug from
 resolved via the `image()` schema helper). The resolved hero is the
 `og:image`/`twitter:image` (emitted as WebP) and the reduced-motion fallback
 image; the on-page hero is a procedural WebGL canvas (`HeroCanvas`), and
-`pnpm gen:hero-images` screenshots that canvas to produce the per-post AVIFs
-(it does the posts missing a hero; `--force` regenerates all).
+`pnpm gen:hero-images` screenshots that canvas to produce the per-post AVIFs (it
+does the posts missing a hero; `--force` regenerates all).
 
 Hero SVGs use `viewBox="0 0 2844 1600"` (wide aspect ratio) with no
-`width`/`height` attributes. Validate with `svg_validate.py` (a personal
-utility in `~/.dotfiles/bin/`, on Ben's PATH):
+`width`/`height` attributes. Validate with `svg_validate.py` (a personal utility
+in `~/.dotfiles/bin/`, on Ben's PATH):
 `svg_validate.py --fix --palette "#be2edd,#3b82f6,#f59e0b,#1a1a1a,#e0e0e0,#9b1fb8"`.
 
 ### Inline post images
@@ -112,46 +112,45 @@ Don't put new images in `public/assets/images/` — they'll skip the pipeline.
 
 ## SVG illustration style
 
-Palette: #be2edd #3b82f6 #f59e0b #1a1a1a #e0e0e0
-Prompt suffix: flowing Bézier curves, layered organic forms on dark background
-References: existing illustrations in `src/assets/heroes/`
+Palette: #be2edd #3b82f6 #f59e0b #1a1a1a #e0e0e0 Prompt suffix: flowing Bézier
+curves, layered organic forms on dark background References: existing
+illustrations in `src/assets/heroes/`
 
 Illustrations should be tangentially inspired by the post content --- not
 literal diagrams, but visual metaphors that reward a second look.
 
 ## Image generation style
 
-This site uses the same astromotion theme as the llms-unplugged site, so most
-of those image-gen instructions apply.
+This site uses the same astromotion theme as the llms-unplugged site, so most of
+those image-gen instructions apply.
 
 Prompt suffix: Flat 2D vector illustration on a pure black background ---
 absolutely NO 3D rendering, NO perspective, NO isometric, NO faceted/low-poly
-shapes, NO photographic depth, NO drop shadows, NO realistic lighting.
-Strictly limited colour palette: gold/amber, black, white, and warm beige/tan
-tones. Clean, consistent-weight outlines (black, white, or gold strokes) with
-flat filled shapes --- no gradients, no photorealism. Subtle background
-texture of interlocking circles or rounded geometric grid patterns in a very
-dark grey. Geometric and slightly stylised --- people (if any) are simplified
-faceless silhouettes drawn as single flat shapes (NOT low-poly polygonal or
-3D-faceted figures). Occasional soft gold glow effects for emphasis. Sparse,
-balanced composition with generous negative space. STRICTLY NO TEXT, NO
-WORDS, NO LETTERS, NO NUMBERS, NO LABELS, NO ANNOTATIONS, NO TALLY MARKS,
-NO GLYPHS, NO SYMBOLS RESEMBLING LETTERS anywhere in the image. Modern
-editorial illustration style --- conceptual and symbolic rather than literal.
+shapes, NO photographic depth, NO drop shadows, NO realistic lighting. Strictly
+limited colour palette: gold/amber, black, white, and warm beige/tan tones.
+Clean, consistent-weight outlines (black, white, or gold strokes) with flat
+filled shapes --- no gradients, no photorealism. Subtle background texture of
+interlocking circles or rounded geometric grid patterns in a very dark grey.
+Geometric and slightly stylised --- people (if any) are simplified faceless
+silhouettes drawn as single flat shapes (NOT low-poly polygonal or 3D-faceted
+figures). Occasional soft gold glow effects for emphasis. Sparse, balanced
+composition with generous negative space. STRICTLY NO TEXT, NO WORDS, NO
+LETTERS, NO NUMBERS, NO LABELS, NO ANNOTATIONS, NO TALLY MARKS, NO GLYPHS, NO
+SYMBOLS RESEMBLING LETTERS anywhere in the image. Modern editorial illustration
+style --- conceptual and symbolic rather than literal.
 
 Reference images: pick 2--3 at random from the deck's own assets directory
-(`src/decks/assets/<deck-slug>/`) as `--input-image` references --- this
-keeps each deck visually self-consistent as more images get added. Don't
-name specific files in this section; the pick is meant to be random each
-time.
+(`src/decks/assets/<deck-slug>/`) as `--input-image` references --- this keeps
+each deck visually self-consistent as more images get added. Don't name specific
+files in this section; the pick is meant to be random each time.
 
 Prompting tips:
 
-- avoid words that imply written content: "word-cards", "labels",
-  "annotated", "diagram", "blueprint", "schematic", "concept-map", "tag"
+- avoid words that imply written content: "word-cards", "labels", "annotated",
+  "diagram", "blueprint", "schematic", "concept-map", "tag"
 - never quote target words verbatim
-- describe what's drawn, not what it represents: "small blank rectangles"
-  (not "tokens"), "empty speech bubbles" (not "dialogue exchange")
+- describe what's drawn, not what it represents: "small blank rectangles" (not
+  "tokens"), "empty speech bubbles" (not "dialogue exchange")
 - for figures, say "flat silhouette drawn as a single filled shape" --- the
   model interprets bare "geometric figure" as low-poly 3D
 - expect to re-roll: review every generated image before committing
@@ -163,6 +162,22 @@ frontmatter and file structure. Every post must have a `description` field in
 its frontmatter (it's required by the zod schema). Write a short, direct
 description (1-2 sentences, under 160 characters) that tells readers what the
 post is about before they click through.
+
+## Publishing and the atproto state file
+
+After any push that adds or edits a published post, a GitHub Actions workflow
+syncs the post to the atproto network and pushes a follow-up
+`[skip ci] update atproto state` commit (the github-actions bot) that updates
+`atproto-state.json` --- the site's DID, publication AT-URI, and per-post
+content hashes. So the remote will move on its own shortly after you push.
+
+- Always `git pull --rebase` before doing more work once you've pushed a post;
+  your local `main` will be behind by that bot commit.
+- Never force-push `main`. The bot commits frequently, so even
+  `--force-with-lease` can clobber its commit if your local tracking ref is
+  stale. If a push is rejected, fetch and rebase rather than forcing.
+- Don't hand-edit `atproto-state.json`; it's generated. If it ever looks lost,
+  the next CI run regenerates it from the published posts.
 
 ## Design context
 
