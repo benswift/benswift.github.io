@@ -2,13 +2,18 @@ allowBuilds:
   esbuild: true
   sharp: false
 
+# Name patterns (not name@version): the supply-chain verify gate matches the
+# minimumReleaseAge exclude list by package name glob, so versioned entries are
+# silently ignored. These are first-party/closely-tracked deps we deliberately
+# adopt on release day.
 minimumReleaseAgeExclude:
-  - astro@6.4.8
-  - "@astrojs/internal-helpers@0.10.0"
-  - "@astrojs/markdown-remark@7.2.0"
-  - "@astrojs/mdx@6.0.1"
-  - "@astrojs/markdown-satteri@0.2.1"
-  - p5@2.3.0
+  - astro
+  - "@astrojs/internal-helpers"
+  - "@astrojs/markdown-remark"
+  - "@astrojs/markdown-satteri"
+  - "@astrojs/mdx"
+  - "@astrojs/svelte"
+  - p5
 
 overrides:
   "yaml@<2.8.3": ">=2.8.3"
