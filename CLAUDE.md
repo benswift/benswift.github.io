@@ -1,10 +1,10 @@
 # benswift.me
 
-Personal website and blog. Astro 6 + Svelte 5 + MDX, with Pagefind for search.
+Personal website and blog. Astro 7 + Svelte 5 + MDX, with Pagefind for search.
 
 ## Stack
 
-- Astro 6, Svelte 5 (runes), TypeScript, MDX
+- Astro 7, Svelte 5 (runes), TypeScript, MDX
 - Pure CSS with custom properties, Stylelint (stylelint-config-standard)
 - oxlint for JS/TS linting, oxfmt for formatting (all file types)
 - Vitest for tests
@@ -20,6 +20,25 @@ Personal website and blog. Astro 6 + Svelte 5 + MDX, with Pagefind for search.
 - `pnpm lint` --- run oxlint
 - `pnpm format:check` --- check formatting
 - `pnpm post "<title>"` --- create a new blog post with correct frontmatter
+
+## Dev server (AI agents)
+
+We're on Astro 7, so use its managed background dev server rather than
+`astro dev &` plus polling for "Local:". `astro dev --background` blocks until
+ready, then detaches; it's auto-enabled when Astro detects it's running inside
+an agent. It writes `.astro/dev.json` (URL/port/PID) and exposes
+`/_astro/status` (returns `{"ok": true}`). Manage it with `astro dev status`,
+`astro dev logs --follow`, and `astro dev stop`. JSON log output turns on
+automatically under agent detection (or pass `astro dev --json`).
+
+## Markdown processor
+
+Astro 7's default Markdown processor is Sätteri, but this site (and
+astro-theme-anu) deliberately stay on the legacy remark/rehype pipeline via
+`markdown.processor: unified(...)` from `@astrojs/markdown-remark` --- we rely
+on custom plugins (container directives, oldschool-dash smartypants, accessible
+autolink headings) not yet ported to Sätteri. Don't "modernise" this to Sätteri
+without porting those plugins and visually diffing the output.
 
 ## Blog post writing style guide
 
