@@ -27,6 +27,7 @@
     "test:integration": "vitest run --config vitest.integration.config.ts",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
+    "lint:css": "stylelint \"src/**/*.css\"",
     "format": "oxfmt .",
     "format:check": "oxfmt --check ."
   },
