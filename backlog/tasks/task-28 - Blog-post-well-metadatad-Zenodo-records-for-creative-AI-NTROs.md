@@ -1,9 +1,10 @@
 ---
 id: TASK-28
-title: "Blog post: well-metadata'd Zenodo records for creative-AI NTROs"
-status: To Do
+title: 'Blog post: well-metadata''d Zenodo records for creative-AI NTROs'
+status: In Progress
 assignee: []
-created_date: "2026-06-27 00:21"
+created_date: '2026-06-27 00:21'
+updated_date: '2026-06-27 01:04'
 labels:
   - writing
 dependencies: []
@@ -13,7 +14,6 @@ priority: medium
 ## Description
 
 <!-- SECTION:DESCRIPTION:BEGIN -->
-
 Companion to the live-coding DOI post (TASK-24): write up the second wave of
 this work --- turning the studio's creative-AI works (interactive installations,
 data-art, live research tools: PANIC!, Perceptron Apparatus, LLM Brainscan, Slop
@@ -32,15 +32,12 @@ honest bits: you can only point TO publisher-/community-owned DOIs (NIME, IEEE,
 ACM), not edit them; few of the artist collaborators have ORCIDs; Zenodo has no
 installation/creative-work type, so 'other' or 'software' is the closest honest
 mapping. Source of truth for the conventions: blowing-smoke's ntro-register.md.
-
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria
-
 <!-- AC:BEGIN -->
-
-- [ ] #1 Scaffolded via 'pnpm run post' with a description under 160 chars
-- [ ] #2 Narrative covers why/how/honest-limitations and cross-links the related
+- [x] #1 Scaffolded via 'pnpm run post' with a description under 160 chars
+- [x] #2 Narrative covers why/how/honest-limitations and cross-links the related
       NTRO/citability posts: the companion live-coding DOI post
       (giving-my-livecoding-gigs-a-doi), the 2021 'How to cite code? Leading by
       example' post, the AT-URIs persistent-identifiers post
@@ -48,7 +45,13 @@ mapping. Source of truth for the conventions: blowing-smoke's ntro-register.md.
       'AI art installations and livecoding gigs in Nov/Dec' roundup for context
       on the works themselves --- plus any other relevant posts surfaced when
       drafting
-- [ ] #3 Drafted via benswift-writer then jamesian (BALANCED); Australian
+- [x] #3 Drafted via benswift-writer then jamesian (BALANCED); Australian
       spelling; no ## headings in the narrative
-- [ ] #4 Hero image added per the image pipeline
+- [x] #4 Hero image added per the image pipeline
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+DRAFT 2026-06-27 (published:true, Ben to review before push): src/content/blog/2026/06/27/when-the-work-is-the-output-not-the-paper.md. Companion to the livecoding-DOI post. Spine: the work (installation/tool/printed model) is the NTRO, the paper merely documents it; cite the creative-work concept DOI and link companion papers via related_identifiers/isDocumentedBy (PANIC! <-> NIME 2025 + IEEE SMC 2025; LLMs Unplugged <-> ACE 2026). How: GitHub->Zenodo defaults to Software/MIT (honest for a source-zip, a category error for an installation); fix via committed .zenodo.json (Zenodo reads it, NOT CITATION.cff); set type+licence by the actual deposited bytes; never CC-NC on code (NC clause contradicts the open-source grant), reserve CC-BY-NC-SA for genuinely creative/teaching deposits; group in a Cybernetic Studio community. Honest limits: can only point TO publisher/community DOIs (NIME/IEEE/ACM), not edit them; collaborators mostly lack ORCIDs (one claimable); Zenodo has no installation type so 'other'/'software' is the closest honest map. Pipeline: benswift-writer + jamesian BALANCED, AU spelling, no ## headings, footnotes, links verified. Hero AVIF via gen:hero-images. Source of truth: blowing-smoke ntro-register.md.
+<!-- SECTION:NOTES:END -->
