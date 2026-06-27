@@ -1,10 +1,10 @@
 ---
 id: TASK-28
 title: 'Blog post: well-metadata''d Zenodo records for creative-AI NTROs'
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-06-27 00:21'
-updated_date: '2026-06-27 01:04'
+updated_date: '2026-06-27 01:29'
 labels:
   - writing
 dependencies: []
