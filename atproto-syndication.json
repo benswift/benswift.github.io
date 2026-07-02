@@ -1,5 +1,17 @@
 {
   "posts": {
+    "/blog/2026/06/27/when-the-work-is-the-output-not-the-paper": {
+      "seeded": true
+    },
+    "/blog/2026/06/22/opus-4-8-meets-eliza": {
+      "seeded": true
+    },
+    "/blog/2026/06/18/giving-my-livecoding-gigs-a-doi": {
+      "seeded": true
+    },
+    "/blog/2026/06/13/a-timezone-aware-world-cup-poster-in-typst": {
+      "seeded": true
+    },
     "/blog/2026/05/28/xkcd-1319-we-now-live-on-the-theory-curve": {
       "seeded": true
     },
