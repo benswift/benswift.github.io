@@ -481,6 +481,11 @@
       "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mnldszibxm2b",
       "cid": "bafyreie6rcttgw6pkdtgfyyytbuhqe5z5pj4p4mnqdkokufummjzxi675a",
       "syndicatedAt": "2026-06-05T23:59:05.418Z"
+    },
+    "/blog/2026/07/02/the-world-university-index": {
+      "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mpnbalhrdb2w",
+      "cid": "bafyreiflkvjlpfsaf7ghimboi2tvcxmturbgnprhk7z6crkxdrvnjspioi",
+      "syndicatedAt": "2026-07-02T05:08:39.471Z"
     }
   }
 }
