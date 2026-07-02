@@ -86,6 +86,7 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
           text: skeetText(post.description || post.title),
           url: `${config.siteUrl}${post.path}/`,
           title: post.title,
+          description: post.description || post.title,
           thumbPath: resolveThumbPath(config, rkey),
         });
         ref = { uri: skeet.uri, cid: skeet.cid };

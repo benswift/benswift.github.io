@@ -27,6 +27,8 @@ export interface SkeetInput {
   url: string;
   /** Link-card title. */
   title: string;
+  /** Link-card description (required by app.bsky.embed.external). */
+  description: string;
   /** Source image (AVIF/PNG/JPEG) for the card thumbnail; converted to JPEG. */
   thumbPath?: string;
 }
@@ -100,6 +102,7 @@ export async function createClient(
       const external: Record<string, unknown> = {
         uri: input.url,
         title: input.title,
+        description: input.description,
       };
 
       if (input.thumbPath && fs.existsSync(input.thumbPath)) {

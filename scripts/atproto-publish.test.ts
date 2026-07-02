@@ -139,6 +139,11 @@ describe("atproto-publish", () => {
       await publish(client, config);
 
       expect(client.skeets).toHaveLength(2);
+      // app.bsky.embed.external requires a non-empty description on every card.
+      for (const skeet of client.skeets) {
+        expect(skeet.title).toBeTruthy();
+        expect(skeet.description).toBeTruthy();
+      }
       const synd = JSON.parse(fs.readFileSync(config.syndicationPath, "utf8"));
       expect(Object.keys(synd.posts)).toHaveLength(2);
     });
