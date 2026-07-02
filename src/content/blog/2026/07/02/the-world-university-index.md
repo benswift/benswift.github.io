@@ -4,8 +4,7 @@ description:
   "A deadpan reference site that reports every university's single best ranking
   placement across all the major tables --- built at the ANU School of
   Cybernetics."
-published: true
-tags: ["cybernetics", "web", "satire"]
+tags: ["studio", "web"]
 ---
 
 I've built a new Cybernetic Studio project called _The World University Index_,
