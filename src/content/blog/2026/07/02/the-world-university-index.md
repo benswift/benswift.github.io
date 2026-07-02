@@ -8,11 +8,10 @@ published: true
 tags: ["cybernetics", "web", "satire"]
 ---
 
-I've built a small website called _The World University Index_. It's a
-Cybernetic Studio project, it lives on GitHub Pages at
+I've built a new Cybernetic Studio project called _The World University Index_,
+it's live now at
 [anucybernetics.github.io/world-university-index](https://anucybernetics.github.io/world-university-index/),
-and the README explains the premise better than I could paraphrase it, so I'll
-just quote it.
+The README explains the premise:
 
 > You're an academic filling out the 'institutional context' section of a grant
 > application or a stressed marketing intern pumping out 'study with us' posts
@@ -54,7 +53,7 @@ just quote it.
 > if you like. But who's got time for that? Honestly, just grab the number and
 > use it with confidence.
 
-The data is the honest part. Every ranking figure is curated by hand from the
+The data is all legit. Every ranking figure is curated by hand from the
 published tables (the major rankings don't offer a clean, openly-licensed feed,
 and their terms restrict bulk reuse), and a validation script keeps the dataset
 internally consistent rather than scraping anything live. Banded results like
@@ -65,6 +64,6 @@ the world".
 
 The whole thing is
 [open source](https://github.com/ANUcybernetics/world-university-index) under an
-MIT licence, so if your institution isn't in there yet you can add it yourself.
-Go and
+MIT licence, so if your institution isn't in there yet you can add it yourself
+and send a pull request. Go and
 [find your defensible number](https://anucybernetics.github.io/world-university-index/).
