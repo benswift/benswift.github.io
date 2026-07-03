@@ -6,7 +6,8 @@
    injected into the deck <head> via astromotion's fontVariables option;
    astro-theme-anu's deck.css picks it up via var(--font-public-sans, ...). */
 
-@import "astro-theme-anu/styles/deck.css";
+@import "astro-theme-university/styles/deck.css";
+@import "astro-theme-anu/anu.css";
 
 /* Quote slides: dim the background image so quote text stays legible. */
 .reveal .slides section.quote .slide-bg {
