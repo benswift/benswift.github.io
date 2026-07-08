@@ -7,10 +7,8 @@ import sitemap from "@astrojs/sitemap";
 import brokenLinksChecker from "astro-broken-links-checker";
 import { astromotion, deckRemarkPlugins } from "astromotion";
 import remarkSmartypants from "remark-smartypants";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeSlug from "rehype-slug";
-import { remarkContainerDirective } from "./src/plugins/remark-container-directive";
-import { remarkContainers } from "./src/plugins/remark-containers";
+import remarkDirective from "remark-directive";
+import { remarkCallout, headingAnchorPlugins } from "astro-theme-university/markdown";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 
@@ -21,17 +19,6 @@ interface HastNode {
   value?: string;
   children?: HastNode[];
   properties?: Record<string, unknown>;
-}
-
-// Walk a hast heading node and concatenate its text descendants. Used by
-// rehype-autolink-headings so each anchor's accessible name includes the
-// heading text — otherwise every "Link to this section" name collides.
-function headingText(node: HastNode): string {
-  if (node.type === "text") return node.value ?? "";
-  if (Array.isArray(node.children)) {
-    return node.children.map((c) => headingText(c)).join("");
-  }
-  return "";
 }
 
 // Shiki transformer: make scrollable code blocks keyboard-reachable. Chrome
@@ -57,8 +44,8 @@ const a11yCodeBlock = {
 // it always calls the plugin with defaults).
 const siteRemarkPlugins: PluggableList = [
   [remarkSmartypants, { dashes: "oldschool" }],
-  remarkContainerDirective,
-  remarkContainers,
+  remarkDirective,
+  remarkCallout,
 ];
 
 export default defineConfig({
@@ -114,26 +101,7 @@ export default defineConfig({
     processor: unified({
       smartypants: false,
       remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins] as never,
-      rehypePlugins: [
-        rehypeSlug,
-        [
-          rehypeAutolinkHeadings,
-          {
-            behavior: "prepend",
-            properties: (node: HastNode) => {
-              const text = headingText(node).trim() || "section";
-              return {
-                class: "at-heading-anchor",
-                ariaLabel: `Link to section: ${text}`,
-              };
-            },
-            content: {
-              type: "text",
-              value: "#",
-            },
-          },
-        ],
-      ],
+      rehypePlugins: [...headingAnchorPlugins],
     }),
     shikiConfig: {
       theme: "github-dark",
