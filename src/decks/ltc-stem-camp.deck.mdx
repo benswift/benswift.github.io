@@ -1,68 +1,34 @@
 ---
 title: Musical instructions
-description: A STEM Camp workshop exploring the pattern-language of pop music. From English-language song descriptions to livecoded performances.
+description: A STEM Camp workshop on the pattern-language of pop music --- from English-language song descriptions to livecoded performances.
 author: Ben Swift
 ---
 
+import SocyLogo from "astro-theme-anu/components/SocyLogo.astro";
+
+{/* _class: hero */}
+
+![bg](./assets/ltc-stem-camp/bg-title.avif)
+
 # Musical instructions
 
-Ben Swift, School of Cybernetics
+Dr Ben Swift
 
 Lake Tuggeranong College STEM Camp
 
 ---
 
-{/* _class: impact */}
+{/* _class: socy-logo */}
 
-can y'all keep a secret?
-
----
-
-![bg](./assets/ltc-stem-camp/ben-ltc-graduation-group.webp)
+<SocyLogo />
 
 ---
 
-![bg](./assets/ltc-stem-camp/ben-ltc-graduation-solo.webp)
+![bg right:45%](./assets/ltc-stem-camp/bg-music.avif)
 
----
+## musicians? mathematicians? coders?
 
-{/* _class: impact */}
-
-enough about me...
-
-tell me about **you**
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/tadas-mikuckis-20931-unsplash.webp)
-
-## musicians?
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/roman-mager-59976-unsplash.webp)
-
-## mathematicians?
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/fatos-bytyqi-535528-unsplash.webp)
-
-## coders?
-
----
-
-![bg](./assets/ltc-stem-camp/aaron-burden-82797-unsplash.webp)
-
----
-
-{/* _class: impact talk */}
-
-## talk
-
-music, maths, computers --- what's the connection?
-
-what are computer programs good at?
+what's the connection?
 
 what would a song performed by a computer program sound like?
 
@@ -70,9 +36,11 @@ what would a song performed by a computer program sound like?
 
 ## outline
 
-- what is (pop) music?
-- activity: _low-tech_ musical instructions
-- livecoding: _high-tech_ musical instructions
+what is (pop) music?
+
+activity: _low-tech_ musical instructions
+
+livecoding: _high-tech_ musical instructions
 
 ---
 
@@ -80,122 +48,51 @@ what would a song performed by a computer program sound like?
 
 **music** _(n.)_
 
-a series of pitched "events" over time
+a series of pitched events over time
 
 ---
 
-![bg right:40%](./assets/ltc-stem-camp/jonathan-safa-689951-unsplash.webp)
+![bg right:45%](./assets/ltc-stem-camp/bg-patterns.avif)
 
-## pedantry alert
+## lots of **patterns**
 
-catchy hooks
+catchy hooks, repetitive harmony, processed sounds
 
-repetitive harmonic patterns (e.g. chord progressions)
-
-processed/synthetic sounds (lots of computers involved)
+but how do we _express_ them?
 
 ---
 
-{/* _class: impact */}
+![bg right:45%](./assets/ltc-stem-camp/bg-dimensions.avif)
 
-lots of **patterns**
+## dimensions of a note
 
-but how do we express them?
-
----
-
-## "dimensions" of a musical note
-
-1. time
-2. pitch
-3. loudness
+**time** · **pitch** · **loudness**
 
 ---
 
-![bg right:40%](./assets/ltc-stem-camp/aron-visuals-322314-unsplash.webp)
+## maths recap: functions
 
-## time
-
-what aspects of the music does it influence?
-
-why is it important?
-
-how do we measure it?
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/jason-rosewell-60014-unsplash.webp)
-
-## loudness
-
-what aspects of the music does it influence?
-
-why is it important?
-
-how do we measure it?
-
----
-
-![bg right:40%](./assets/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.webp)
-
-## modelling the domain
-
-remember: music is a series of musical events
-
-each event has a time, a pitch and a loudness
-
----
-
-## maths recap 1: functions
-
-function _f(x, y)_ takes two parameters and returns a result
+a function _f(x, y)_ takes inputs and returns an output
 
 e.g. _f(x, y)_ = _8x_ + _2y_
 
-parameters are _input_; the function produces an _output_
+---
+
+![bg right:45%](./assets/ltc-stem-camp/bg-clock.avif)
+
+## maths recap: modular arithmetic
+
+arithmetic that "wraps around": 0, 1, 2, 0, 1, 2, ...
+
+7 _mod_ 4 is 3 · 18 _mod_ 7 is 4
 
 ---
 
-## maths recap 2: modular arithmetic
+{/* _class: hero */}
 
-arithmetic which "wraps around"
+![bg](./assets/ltc-stem-camp/bg-activity.avif)
 
-0, 1, 2, 0, 1, 2, 0, 1, 2, ... instead of 0, 1, 2, 3, 4, 5, 6, ...
-
-the modulus can be any integer, e.g.
-
-- 7 _mod_ 4 is 3
-- 18 _mod_ 7 is 4
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/lukas-blazek-263122-unsplash.webp)
-
-## example: clock
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/jason-leung-1378422-unsplash.webp)
-
-## patterns
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/orlova-maria-1365053-unsplash.webp)
-
-## are
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/paul-talbot-704-unsplash.webp)
-
-## everywhere
-
----
-
-{/* _class: impact */}
-
-**activity**: musical instructions
+# activity: musical instructions
 
 ---
 
@@ -203,49 +100,9 @@ the modulus can be any integer, e.g.
 
 split into pairs
 
-I'll tell one person (person A) the name of a song
+person A writes down --- in _English_ --- how to play a song (**no music notation**)
 
-person A will write down (in _English_) instructions for how to play the
-song (**no conventional music notation allowed**)
-
-person B will read the instructions, "sing" them, and try to guess what
-the song is
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/dolo-iglesias-487520-unsplash.webp)
-
-## scales (just a warm-up)
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/laura-college-286844-unsplash.webp)
-
-## Jaws
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/FreddyMercuryWembley.webp)
-
-## We Will Rock You
-
-_remember_: describe the instruments, **not** the vocal track
-
----
-
-![bg](./assets/ltc-stem-camp/coldplay-clocks.webp)
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/this-is-america.webp)
-
-## This is America
-
----
-
-![bg right:40%](./assets/ltc-stem-camp/bady-qb-1476403-unsplash.webp)
-
-## your choice of song
+person B reads the instructions, "sings" them, and guesses the song
 
 ---
 
@@ -253,95 +110,32 @@ _remember_: describe the instruments, **not** the vocal track
 
 ## talk
 
-what was the hardest part?
+what was the hardest part? the easiest?
 
-what was the easiest?
-
-was it easier/harder than you expected?
-
-how would you do it differently next time?
+harder or easier than you expected?
 
 ---
 
-## what _I'm_ gonna do
+![bg right:45%](./assets/ltc-stem-camp/bg-livecoding.avif)
 
-learn a new song (by ear!)
+## now the high-tech version
 
-figure out how to turn it into code
-
-find sounds which sound (approximately) like the recording
-
-lay down a vocal track (maybe)
-
-make the whole process make sense to you
-
----
-
-## what _you're_ gonna do
-
-help me choose the song
-
-be kind when I make mistakes
-
-clap politely at the end (even if I flame out)
-
----
-
-![bg right:40%](./assets/pop-production-as-problem-solving/the-digital-marketing-collaboration-45756-unsplash.webp)
-
-## reminder: domain model
-
-**time** (in beats): 0, 1, 2, 3, 4, 5, 6, 7, 8
-
-**pitch** (in MIDI note numbers): middle C as 60, C# as 61, etc.
-
-**loudness** (0 is silent, 127 is super loud)
-
----
-
-## extempore: a livecoding _language_
-
-[extempore](https://extemporelang.github.io/) is a programming language
-designed for musical livecoding (written by [Andrew Sorensen](https://twitter.com/digego)
-and [me](https://benswift.me))
-
-`mplay` is the key function:
+extempore is a livecoding _language_ for music; `mplay` is the key function:
 
 ```xtlang
 ;;                pitch loud duration   instrument
 (mplay *midi-out* 60    80   (* .5 dur) 1)
 ```
 
-don't worry about the syntax --- I'll explain enough for you to follow
-
----
-
-![bg right:40%](./assets/pop-production-as-problem-solving/rawpixel-487102-unsplash.webp)
-
-## I'm old...
-
 ---
 
 ## what did we learn?
 
-pop music isn't black magic --- it's a domain with lots of structure and
-patterns
+pop music isn't black magic --- it's a domain with structure and patterns
 
-we can write instructions which express those patterns
+we can write instructions that express those patterns
 
-computers and code are _really useful_ for modelling/exploring this stuff
-
-this is _not_ AI, either
-
----
-
-## c/c/c studio
-
-in 2020 I'm starting an art+music+code extension program at the ANU
-
-we'll do stuff like this (and lots more)
-
-if you're interested, let me know 😊
+code is _really useful_ for exploring this --- and it's _not_ AI
 
 ---
 
@@ -350,5 +144,3 @@ if you're interested, let me know 😊
 🤔
 
 [ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au)
-
-[https://benswift.me](https://benswift.me)
