@@ -15,21 +15,26 @@ const deckSlugs = new Set(
     .map((f) => f.replace(/\.deck\.mdx?$/, "")),
 )
 
-const talks = allTalks
+const entries = allTalks
   .map((talk) => {
     const slug = talk.id.replace(/\.md$/, "")
     const dateStr = talk.data.date ?? "2000-01-01"
-    const hasDeck = deckSlugs.has(slug)
     return {
+      slug,
       title: talk.data.title,
-      url: hasDeck ? `/decks/${slug}/` : `/talks/${slug}/`,
+      hasDeck: deckSlugs.has(slug),
       dateStr,
       dateFormatted: formatDate(parseDate(String(dateStr))),
       event: talk.data.event,
-      hasDeck,
+      slides: talk.data.slides,
+      paper: talk.data.paper,
+      video: talk.data.video,
     }
   })
   .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
+
+const decks = entries.filter((e) => e.hasDeck)
+const archive = entries.filter((e) => !e.hasDeck)
 ---
 
 <PageLayout title="Talks" relativePath="src/pages/talks/index.astro">
@@ -37,12 +42,38 @@ const talks = allTalks
   <hr />
 
   <ul class="post-list">
-    {talks.map((talk) => (
+    {decks.map((talk) => (
       <li class="post-item">
-        <a href={talk.url} class="post-item-title">{talk.title}</a>
+        <a href={`/decks/${talk.slug}/`} class="post-item-title">{talk.title}</a>
         <span class="post-item-date">{talk.dateFormatted}</span>
         {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
       </li>
     ))}
   </ul>
+
+  {archive.length > 0 && (
+    <>
+      <h2>Earlier talks</h2>
+      <p>
+        Older talks, kept for the archive. The slides and papers are linked where
+        they survive.
+      </p>
+      <ul class="post-list">
+        {archive.map((talk) => (
+          <li class="post-item">
+            <span class="post-item-title">{talk.title}</span>
+            <span class="post-item-date">{talk.dateFormatted}</span>
+            {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
+            {(talk.slides || talk.paper || talk.video) && (
+              <span class="post-item-links">
+                {talk.slides && <a href={talk.slides}>slides</a>}
+                {talk.paper && <a href={talk.paper}>paper</a>}
+                {talk.video && <a href={talk.video}>video</a>}
+              </span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
 </PageLayout>

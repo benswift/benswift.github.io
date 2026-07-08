@@ -396,6 +396,13 @@ blockquote {
   font-size: 0.875rem;
 }
 
+.post-item-links {
+  display: inline-flex;
+  gap: 0.75rem;
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+}
+
 /* Pagination */
 .pagination {
   display: flex;

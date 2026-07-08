@@ -91,7 +91,12 @@ const talks = defineCollection({
     date: z.coerce.string().optional(),
     event: z.string().optional(),
     author: z.string().optional(),
-    layout: z.string().optional(),
+    // Archived talks (no deck) link out to the original artefacts rather than
+    // rendering an individual page. All optional; a talk with a matching
+    // src/decks/<slug>.deck.mdx ignores these and links to the deck instead.
+    slides: z.string().optional(),
+    paper: z.string().optional(),
+    video: z.string().optional(),
   }),
 });
 
