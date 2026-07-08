@@ -1,30 +1,34 @@
 ---
 title: Drawing like a 5-year-old
-description: A Telopeal High School STEM Day workshop teaching kids to draw with p5.js. Computers, like 5-year-olds, need very specific instructions.
+description: A Telopea High School STEM Day workshop teaching kids to draw with p5.js --- computers, like 5-year-olds, need very specific instructions.
 author: Ben Swift
 ---
 
+import SocyLogo from "astro-theme-anu/components/SocyLogo.astro";
+
+{/* _class: hero */}
+
+![bg](./assets/p5-hour-of-code/bg-title.avif)
+
 # Drawing like a 5-year-old
 
-Ben Swift, School of Cybernetics
+Dr Ben Swift
 
-Telopeal High School STEM Day
-
----
-
-![bg right:40%](./assets/p5-hour-of-code/chalk.webp)
-
-## who drew pictures as a 5yo?
+Telopea High School STEM Day
 
 ---
 
-## your "hour of code"
+![bg right:45%](./assets/p5-hour-of-code/bg-crayon.avif)
 
-[https://hourofcode.com/](https://hourofcode.com/)
+## who drew pictures as a 5-year-old?
+
+---
+
+## your hour of code
 
 teach the computer to draw a picture
 
-learn how to deal with its tantrums
+learn to deal with its tantrums
 
 share your stuff with the world
 
@@ -32,10 +36,9 @@ share your stuff with the world
 
 ## p5.js
 
-open up a web browser (e.g. Firefox) and head to [https://editor.p5js.org/](https://editor.p5js.org/)
+open a browser and head to [editor.p5js.org](https://editor.p5js.org/)
 
-**(optional)** if you want to share your work later, create an account
-(super-easy, and free)
+_(optional)_ make a free account if you want to share your work later
 
 ---
 
@@ -47,71 +50,44 @@ function setup() {
 }
 
 function draw() {
-  // add this next line on your computer
   background(220);
   rect(0, 0, 100, 100);
 }
 ```
 
-don't forget to hit the play button!
+don't forget to hit play
 
 ---
 
-![bg right:40%](./assets/p5-hour-of-code/collaboration.webp)
+![bg right:45%](./assets/p5-hour-of-code/bg-collaboration.avif)
 
 ## collaboration
 
 ---
 
-## can you draw the square **differently**?
+## draw the square **differently**
 
 - bottom right
 - tall and skinny
 - short and fat
-- filling the **whole** top right quarter
+- filling the whole top-right quarter
+
+then try replacing `rect` with `ellipse`
 
 ---
 
-## new shapes
-
-what happens if you replace `rect` with `ellipse`?
-
-you can have multiple lines of code in the `draw` function --- can you
-draw a square and a circle on top of one another?
-
----
-
-![bg right:40%](./assets/p5-hour-of-code/paint.webp)
+![bg right:45%](./assets/p5-hour-of-code/bg-colours.avif)
 
 ## colours
 
----
-
-## colours
-
-put one of these **before** your `rect` line:
+put one of these _before_ your `rect` line:
 
 ```js
 fill(255, 0, 0);
-// or
 stroke(15, 180, 0);
 ```
 
-try changing the numbers around...
-
----
-
-## moar colours
-
-```js
-fill(255, 0, 0); // each value from 0-255
-```
-
-<div style="font-size: 33vh; font-weight:600; line-height:1em; text-align:center;">
-  <span style="color:#A00;">R</span>
-  <span style="color:#0A0;">G</span>
-  <span style="color:#00A;">B</span>
-</div>
+try changing the numbers (each 0--255)
 
 ---
 
@@ -121,41 +97,26 @@ how do you know what instructions the computer **understands**?
 
 ---
 
-![bg right:40%](./assets/p5-hour-of-code/yoda.webp)
-
-## use the reference
-
-[https://p5js.org/reference/](https://p5js.org/reference/)
-
----
-
-![bg right:40%](./assets/p5-hour-of-code/volcano.webp)
+![bg right:45%](./assets/p5-hour-of-code/bg-errors.avif)
 
 ## dealing with errors
 
 like a 5-year-old, you need to be **specific**
 
-don't forget any brackets, commas, etc.
-
-learn to _understand_ the tantrums:
+don't drop any brackets or commas --- and learn to read the tantrums:
 
 ```
-ReferenceError: sdfsd is not defined (sketch: line 8)
-SyntaxError: missing ) after argument list (sketch: line 12)
+ReferenceError: sdfsd is not defined (line 8)
+SyntaxError: missing ) after argument list (line 12)
 ```
 
 ---
 
-![bg right:40%](./assets/p5-hour-of-code/smiley.webp)
+![bg right:45%](./assets/p5-hour-of-code/bg-smiley.avif)
 
 ## smiley face
 
 ```js
-function setup() {
-  createCanvas(800, 800);
-  noStroke();
-}
-
 function draw() {
   background(120);
   fill(255, 255, 0);
@@ -171,31 +132,18 @@ function draw() {
 
 ## interaction
 
-replace one of the numbers (e.g. a `100`) with `mouseX`
+replace a number with `mouseX`
 
-replace one of the numbers with `frameCount`
+replace a number with `frameCount`
 
-do some maths (`+`, `-`, `*`, `/`, `%`, ...)
-
----
-
-## what have we done today?
-
-programming uses lots of jargon and technical terms, like any sufficiently
-complex activity
-
-but in the end, it's just about telling your computer what to do **in
-language it understands**
-
-if you created an account earlier, you'll have a **share** tab along the
-top of the screen
+do some maths (`+`, `-`, `*`, `/`, `%`)
 
 ---
 
 ## going further
 
-[https://p5js.org/reference/](https://p5js.org/reference/)
+it's just telling your computer what to do, in language it understands
 
-[https://p5js.org/examples/](https://p5js.org/examples/)
+[p5js.org/reference](https://p5js.org/reference/) · [p5js.org/examples](https://p5js.org/examples/)
 
 [ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au)
