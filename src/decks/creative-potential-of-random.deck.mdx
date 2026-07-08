@@ -1,185 +1,198 @@
 ---
 title: The creative potential of random
-description: A COMP1720 guest lecture on randomness in art --- the history, the types, and how to map random numbers to creative outcomes.
+description: A COMP1720 guest lecture on randomness in creative coding --- a little history, the types that matter, and how to map random numbers to expressive outcomes.
 author: Ben Swift
 ---
 
+import SocyLogo from "astro-theme-anu/components/SocyLogo.astro";
+
+{/* _class: hero */}
+
+![bg](./assets/creative-potential-of-random/bg-title.avif)
+
 # The creative potential of random
 
-Ben Swift, School of Cybernetics
+Dr Ben Swift
 
-COMP1720 Guest Lecture 2017
-
----
-
-![bg](./assets/creative-potential-of-random/blue-poles.webp)
+COMP1720 guest lecture
 
 ---
 
-![bg](./assets/creative-potential-of-random/static.webp)
+{/* _class: socy-logo */}
 
----
-
-## synopsis
-
-- randomness: highlights from history
-- different **types** of randomness
-- mapping: using randomness effectively
-
----
-
-![bg right:40%](./assets/all/prasanna-kumar-218699.webp)
-
-## story
-
----
-
-![bg](./assets/creative-potential-of-random/jack-hamilton-320934.webp)
+<SocyLogo />
 
 ---
 
 {/* _class: impact */}
 
-if you're reading the slides at home, **watch the video**
+randomness is everywhere in generative art
+
+let's learn to _wield_ it
 
 ---
 
-![bg right:40%](./assets/code-2k18/ben-smiths-sounscapes.webp)
-
-## livecoding
+![bg](./assets/creative-potential-of-random/bg-static.avif)
 
 ---
 
-## randomness in music has a long history
+![bg right:45%](./assets/creative-potential-of-random/bg-types.avif)
 
-musikalisches würfelspiel (18th century)
+## what we'll cover
 
-aleatoric music (20th century)
+a little history
 
-some of our labs have explored randomness in various forms
+the types that matter
+
+mapping --- making it _creative_
 
 ---
 
-## types of randomness
+{/* _class: impact */}
+
+if you're reading these slides at home, **watch the video**
+
+---
+
+{/* _class: hero */}
+
+![bg](./assets/creative-potential-of-random/bg-divider-random.avif)
+
+# a little history
+
+chance is older than the computer
+
+---
+
+![bg right:45%](./assets/creative-potential-of-random/bg-history.avif)
+
+## older than computers
+
+musikalisches würfelspiel --- 18th-century dice music
+
+aleatoric composition --- 20th century
+
+chance has always been an artistic tool
+
+---
+
+{/* _class: impact */}
 
 not all randomness is created equal
 
-but this **isn't** a maths lecture
+(but this **isn't** a maths lecture)
 
 ---
 
-## three useful types for artists
+![bg right:45%](./assets/creative-potential-of-random/bg-uniform.avif)
 
-1. uniform --- [`random([min], [max])`](https://p5js.org/reference/#/p5/random)
-2. gaussian --- [`randomGaussian()`](https://p5js.org/reference/#/p5/randomGaussian)
-3. discrete --- [`random(choices)`](https://p5js.org/reference/#/p5/random) (Array version)
+## uniform
 
----
+every value in the range equally likely
 
-## uniform random numbers
+`random(min, max)`
 
-start with two numbers (`min` and `max`)
-
-picks any number between those two numbers
-
-all numbers in the range are **equally likely**
-
-this last point is the key attribute of random numbers
+the workhorse
 
 ---
 
-## gaussian random numbers
+![bg right:45%](./assets/creative-potential-of-random/bg-gaussian.avif)
 
-picks a number _around_ some middle point
+## gaussian
 
-numbers closer to that middle point are **more likely** than ones further
-away
+clustered around a middle, rarer at the edges
 
-named after Carl Friedrich Gauss
+`randomGaussian()`
 
-also known as: _normal distribution_, _bell curve_, etc.
-
----
-
-## discrete random variables
-
-sometimes there are a fixed number of outcomes, either equally likely or
-some more likely than others
-
-e.g. coin toss, roll of the dice, football match
-
-let's look at the reference for
-[`random()`](https://p5js.org/reference/#/p5/random) again --- if passed
-one parameter which is an array, the return value will be one of the
-elements of the array, selected at random (all equally likely)
+the bell curve
 
 ---
 
-## different likelihoods, technique 1
+![bg right:45%](./assets/creative-potential-of-random/bg-discrete.avif)
 
-if you want some outcomes to happen more often than others, add multiple
-identical elements to the array (think about why this works?)
+## discrete
+
+a fixed set of outcomes, weighted how you like
+
+`random([a, b, c])`
+
+dice, coins, choices
+
+---
+
+## weighting, the cheap way
 
 ```js
-var loadedDice = [1, 2, 2, 2, 2, 3, 4, 5, 6];
-var roll = random(loadedDice);
+const loaded = [1, 2, 2, 2, 2, 3, 4, 5, 6];
+const roll = random(loaded);
+```
+
+repeat the values you want more often
+
+---
+
+## weighting, the deliberate way
+
+```js
+if (random(100) < 10) {
+  // the 10% branch
+} else {
+  // the other 90%
+}
 ```
 
 ---
 
-## different likelihoods, technique 2
+![bg right:45%](./assets/creative-potential-of-random/bg-mapping.avif)
 
-if you want one thing to happen e.g. 10% of the time, and something else
-the other 90%
+## mapping is where the art is
 
-1. use `random(100)` to get a random number between 0 and 100
-2. if the result is _less than_ 10, do the first thing; otherwise do the
-   other
+what do you _do_ with the random number?
 
----
+pitch, position, colour, size, timing...
 
-## mapping: using randomness effectively
-
-mapping (I know the word "map" is overloaded in programming) here means
-what do you _do_ with the randomness
-
-in my livecoding I use random numbers to control or modulate: **pitch**,
-**loudness**, **duration**, **rhythm**, **timbre**, and more
+choosing where **not** to be random matters just as much
 
 ---
 
-## mapping random numbers in your sketches
+{/* _class: impact */}
 
-think about how (and what kinds) of randomness you could use to control:
-**position**, **size/shape**, **colour/transparency**, **stroke/fill**,
-etc.
+the balance between **predictability** and **surprise**
 
-what's the right balance between **predictability** and **surprise**?
-
-choosing where to use randomness, where not to use it, and what type:
-_this is where the art happens_
+that's the craft
 
 ---
 
-## re-creating the random pixels image
+## re-creating static
 
 ```js
 loadPixels();
-for (var i = 0; i < pixels.length; i++) {
-  if (random() < 0.5) pixels[i] = 0;
-  else pixels[i] = 255;
+for (let i = 0; i < pixels.length; i++) {
+  pixels[i] = random() < 0.5 ? 0 : 255;
 }
 updatePixels();
 ```
 
 ---
 
-![bg right:40%](./assets/creative-potential-of-random/blue-poles.webp)
+![bg](./assets/creative-potential-of-random/bg-bluepoles.avif)
 
 ## re-creating Blue Poles?
 
+🤔
+
 ---
 
-{/* _class: impact */}
+{/* _class: socy-logo */}
 
-🤔
+<SocyLogo />
+
+---
+
+{/* _class: hero */}
+
+![bg](./assets/creative-potential-of-random/bg-divider-random.avif)
+
+# thanks
+
+[ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au) · [benswift.me](https://benswift.me)
