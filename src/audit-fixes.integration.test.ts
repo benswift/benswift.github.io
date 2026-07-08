@@ -139,21 +139,25 @@ describe.skipIf(!existsSync(distDir))(
   },
 );
 
-describe.skipIf(!existsSync(distDir))("heading anchor labels include heading text", () => {
-  test("autolinked heading anchors don't all share one accessible name", () => {
+describe.skipIf(!existsSync(distDir))("heading anchors are decorative, not announced", () => {
+  test("autolinked heading anchors are hidden from assistive tech", () => {
     const posts = findBlogPostHtmls();
     const sample = posts
       .map((f) => readFileSync(f, "utf8"))
       .find((h) => (h.match(/at-heading-anchor/g) ?? []).length >= 2);
-    if (!sample) return; // no post with ≥2 headings — nothing to assert
-    const labels = [...sample.matchAll(/class="at-heading-anchor"[^>]+aria-label="([^"]+)"/g)].map(
-      (m) => m[1],
+    if (!sample) return; // no post with ≥2 anchors — nothing to assert
+    const anchors = [...sample.matchAll(/<a\b[^>]*class="at-heading-anchor"[^>]*>/g)].map(
+      (m) => m[0],
     );
-    expect(labels.length).toBeGreaterThanOrEqual(2);
-    // The old static "Link to this section" would mean every label equals
-    // every other — verify they're not all identical.
-    expect(new Set(labels).size).toBeGreaterThan(1);
-    // And each label should include "Link to section:" prefix.
-    for (const l of labels) expect(l).toMatch(/^Link to section: /);
+    expect(anchors.length).toBeGreaterThanOrEqual(2);
+    // The permalink "#" is a mouse affordance only: the heading text itself is
+    // the accessible content, so each anchor is aria-hidden and out of the tab
+    // order (astro-theme-university's headingAnchorPlugins convention). No
+    // aria-label — an announced "Link to section" duplicated every heading.
+    for (const a of anchors) {
+      expect(a).toMatch(/aria-hidden="true"/);
+      expect(a).toMatch(/tabindex="-1"/);
+      expect(a).not.toMatch(/aria-label=/);
+    }
   });
 });

@@ -84,14 +84,16 @@ describe("page h1s", () => {
 });
 
 describe("talk pages", () => {
-  test("talk pages are generated (deckSlugs regression)", () => {
+  test("talks index links decks to generated deck pages (deckSlugs regression)", () => {
     const html = readPage("/talks/");
-    const talkLinks = [...html.matchAll(/href="\/talks\/([^"]+)\/"/g)].map((m) => m[1]);
-    expect(talkLinks.length).toBeGreaterThan(0);
+    // Talks-with-decks link straight to their astromotion deck page under
+    // /decks/<slug>/; the index no longer generates per-talk pages of its own.
+    const deckLinks = [...html.matchAll(/href="\/decks\/([^"]+)\/"/g)].map((m) => m[1]);
+    expect(deckLinks.length).toBeGreaterThan(0);
 
-    for (const slug of talkLinks) {
-      const file = resolve(distDir, "talks", slug, "index.html");
-      expect(existsSync(file), `talk page missing: /talks/${slug}/`).toBe(true);
+    for (const slug of deckLinks) {
+      const file = resolve(distDir, "decks", slug, "index.html");
+      expect(existsSync(file), `deck page missing: /decks/${slug}/`).toBe(true);
     }
   });
 });
