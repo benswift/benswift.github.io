@@ -2,39 +2,61 @@
 import { getCollection } from "astro:content"
 import fs from "node:fs"
 import path from "node:path"
+import { parse as parseYaml } from "yaml"
 import PageLayout from "../../layouts/PageLayout.astro"
 import { formatDate, parseDate } from "../../utils/date"
 
 const allTalks = await getCollection("talks")
 
+// Auto-discover decks from src/decks/*.deck.mdx and read their frontmatter, so a
+// new astromotion deck appears in this list with no manual talk stub required.
+// A matching src/content/talks/<slug>.md (if present) still supplies date/event.
 const decksDir = path.resolve("src/decks")
-const deckSlugs = new Set(
-  fs
-    .readdirSync(decksDir)
-    .filter((f) => /\.deck\.mdx?$/.test(f))
-    .map((f) => f.replace(/\.deck\.mdx?$/, "")),
-)
+const deckMeta = fs
+  .readdirSync(decksDir)
+  .filter((f) => /\.deck\.mdx?$/.test(f))
+  .map((f) => {
+    const slug = f.replace(/\.deck\.mdx?$/, "")
+    const src = fs.readFileSync(path.join(decksDir, f), "utf8")
+    const fm = src.match(/^---\n([\s\S]*?)\n---/)
+    return { slug, fm: fm ? (parseYaml(fm[1]) ?? {}) : {} }
+  })
+const deckSlugs = new Set(deckMeta.map((d) => d.slug))
 
-const entries = allTalks
-  .map((talk) => {
-    const slug = talk.id.replace(/\.md$/, "")
-    const dateStr = talk.data.date ?? "2000-01-01"
+const talkBySlug = new Map(allTalks.map((t) => [t.id.replace(/\.md$/, ""), t.data]))
+
+const toDateStr = (raw: unknown) => (raw ? String(raw) : "2000-01-01")
+
+const decks = deckMeta
+  .map(({ slug, fm }) => {
+    const t = talkBySlug.get(slug)
+    const dateStr = toDateStr(t?.date ?? fm.date)
     return {
       slug,
-      title: talk.data.title,
-      hasDeck: deckSlugs.has(slug),
+      title: t?.title ?? fm.title ?? slug,
       dateStr,
-      dateFormatted: formatDate(parseDate(String(dateStr))),
-      event: talk.data.event,
-      slides: talk.data.slides,
-      paper: talk.data.paper,
-      video: talk.data.video,
+      dateFormatted: formatDate(parseDate(dateStr)),
+      event: t?.event ?? fm.event,
     }
   })
   .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
 
-const decks = entries.filter((e) => e.hasDeck)
-const archive = entries.filter((e) => !e.hasDeck)
+// Archive: talks with no matching deck (the older stubs), linked out to slides.
+const archive = allTalks
+  .filter((t) => !deckSlugs.has(t.id.replace(/\.md$/, "")))
+  .map((t) => {
+    const dateStr = toDateStr(t.data.date)
+    return {
+      title: t.data.title,
+      dateFormatted: formatDate(parseDate(dateStr)),
+      dateStr,
+      event: t.data.event,
+      slides: t.data.slides,
+      paper: t.data.paper,
+      video: t.data.video,
+    }
+  })
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
 ---
 
 <PageLayout title="Talks" relativePath="src/pages/talks/index.astro">
