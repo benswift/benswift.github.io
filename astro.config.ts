@@ -89,6 +89,7 @@ export default defineConfig({
       theme: "./src/decks/theme.css",
       shikiConfig: { theme: "github-dark" },
       fontVariables: ["--font-public-sans"],
+      favicon: "/favicon.svg",
     }),
   ],
   vite: {
