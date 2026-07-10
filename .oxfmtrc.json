@@ -1,11 +1,6 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": [
-    ".claude/",
-    "backlog/",
-    "**/*.deck.mdx",
-    "**/decks/**/*.mdx"
-  ],
+  "ignorePatterns": [".claude/", "backlog/", "**/*.deck.mdx", "**/decks/**/*.mdx"],
   "svelte": true,
   "overrides": [{ "files": ["**/*.md", "**/*.mdx"], "options": { "printWidth": 80 } }]
 }
