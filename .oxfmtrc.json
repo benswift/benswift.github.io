@@ -3,7 +3,6 @@
   "ignorePatterns": [
     ".claude/",
     "backlog/",
-    "docs/superpowers/",
     "**/*.deck.mdx",
     "**/decks/**/*.mdx"
   ],
