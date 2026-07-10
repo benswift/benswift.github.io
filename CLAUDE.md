@@ -140,9 +140,6 @@ literal diagrams, but visual metaphors that reward a second look.
 
 ## Image generation style
 
-This site uses the same astromotion theme as the llms-unplugged site, so most of
-those image-gen instructions apply.
-
 Prompt suffix: Flat 2D vector illustration on a pure black background ---
 absolutely NO 3D rendering, NO perspective, NO isometric, NO faceted/low-poly
 shapes, NO photographic depth, NO drop shadows, NO realistic lighting. Strictly
