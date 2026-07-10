@@ -486,6 +486,11 @@
       "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mpnbalhrdb2w",
       "cid": "bafyreiflkvjlpfsaf7ghimboi2tvcxmturbgnprhk7z6crkxdrvnjspioi",
       "syndicatedAt": "2026-07-02T05:08:39.471Z"
+    },
+    "/blog/2026/07/10/knowing-which-claude-is-stuck": {
+      "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mqavytr3xm2q",
+      "cid": "bafyreihvc553ew7ezw6enkihrgtao6seebgollvdu45niphqkwa6xpjmhi",
+      "syndicatedAt": "2026-07-10T00:40:43.326Z"
     }
   }
 }

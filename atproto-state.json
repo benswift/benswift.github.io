@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/07/10/knowing-which-claude-is-stuck": "6115c340a6bddd9ddd2cd8d991a73cc06db44d27c070343cf754f8106eda773a",
     "/blog/2026/07/02/the-world-university-index": "8df3b01f973bc90a886627f8f97d41d12b26139068006d58cad84de29878d6e2",
     "/blog/2026/06/27/when-the-work-is-the-output-not-the-paper": "1282e4afc4a6b35da6881b40bdf2c9b34d882837c6d23b4d6d0c351f61d331a1",
     "/blog/2026/06/22/opus-4-8-meets-eliza": "18ddba3699100d1734c96dae8e9051211252a989a8c0a5255a8b9c66bd426853",
