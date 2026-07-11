@@ -3,7 +3,8 @@ import fs from "node:fs";
 import { discoverPosts, pathToRkey } from "./lib/posts";
 import { readState, writeState, type AtprotoState } from "./lib/state";
 import { isSyndicated, readSyndication, syndicationRef, writeSyndication } from "./lib/syndication";
-import { createClient, type AtprotoClient } from "./lib/atproto";
+import { diffRecommends, readRecommendations } from "./lib/recommendations";
+import { createClient, type AtprotoClient, type BasicTheme } from "./lib/atproto";
 
 export interface PublishConfig {
   blogDir: string;
@@ -17,6 +18,11 @@ export interface PublishConfig {
   syndicationPath: string;
   heroesDir: string;
   defaultOgPath: string;
+  /** Square publication icon source; skipped when the file is missing. */
+  iconPath: string;
+  basicTheme: BasicTheme;
+  /** Curated recommendations config; sync is skipped when the file is missing. */
+  recommendationsPath: string;
 }
 
 const defaultConfig: PublishConfig = {
@@ -30,6 +36,16 @@ const defaultConfig: PublishConfig = {
   syndicationPath: path.resolve(import.meta.dirname, "..", "atproto-syndication.json"),
   heroesDir: path.resolve(import.meta.dirname, "..", "src/assets/heroes"),
   defaultOgPath: path.resolve(import.meta.dirname, "..", "src/assets/og-default.avif"),
+  iconPath: path.resolve(import.meta.dirname, "..", "src/assets/publication-icon.png"),
+  // Mirrors the site's global.css custom properties (--background-color,
+  // --text-color, --highlight-color); accent text is white on the purple.
+  basicTheme: {
+    background: { r: 28, g: 26, b: 29 },
+    foreground: { r: 224, g: 224, b: 224 },
+    accent: { r: 190, g: 46, b: 221 },
+    accentForeground: { r: 255, g: 255, b: 255 },
+  },
+  recommendationsPath: path.resolve(import.meta.dirname, "..", "atproto-recommendations.json"),
 };
 
 function sleep(ms: number) {
@@ -41,10 +57,29 @@ function skeetText(text: string): string {
   return text.length <= 300 ? text : text.slice(0, 297) + "…";
 }
 
-/** Card thumbnail source: the post's own hero image, falling back to the default OG image. */
-function resolveThumbPath(config: PublishConfig, rkey: string): string {
+/** Cover/thumbnail source: the post's own hero image, falling back to the default OG image. */
+function resolveCoverPath(config: PublishConfig, rkey: string): string {
   const hero = path.join(config.heroesDir, `${rkey}.avif`);
   return fs.existsSync(hero) ? hero : config.defaultOgPath;
+}
+
+async function syncRecommends(client: AtprotoClient, config: PublishConfig) {
+  const desired = readRecommendations(config.recommendationsPath);
+  if (desired === null) return;
+
+  const existing = await client.listRecommends();
+  const { toCreate, toDelete } = diffRecommends(existing, desired);
+  for (const uri of toCreate) {
+    await client.createRecommend(uri);
+    console.log(`  recommend: created for ${uri}`);
+  }
+  for (const rkey of toDelete) {
+    await client.deleteRecommend(rkey);
+    console.log(`  recommend: deleted ${rkey}`);
+  }
+  if (toCreate.length || toDelete.length) {
+    console.log(`recommends: ${toCreate.length} created, ${toDelete.length} deleted`);
+  }
 }
 
 export async function publish(client: AtprotoClient, config: PublishConfig = defaultConfig) {
@@ -52,11 +87,15 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
   const oldHashes = state?.contentHashes ?? {};
   const syndication = readSyndication(config.syndicationPath);
 
-  const pubAtUri = await client.ensurePublication({
+  const pubRef = await client.ensurePublication({
     url: config.siteUrl,
     name: config.siteName,
     description: config.siteDescription,
+    iconPath: config.iconPath,
+    basicTheme: config.basicTheme,
+    showInDiscover: true,
   });
+  const pubAtUri = pubRef.uri;
 
   fs.mkdirSync(config.wellKnownDir, { recursive: true });
   fs.writeFileSync(path.join(config.wellKnownDir, "site.standard.publication"), pubAtUri + "\n");
@@ -74,10 +113,32 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     const isNew = !(post.path in oldHashes);
     const eligible = config.crossPost && post.crosspost && !isSyndicated(syndication, post.path);
 
-    // Cross-post before writing the document so it can reference the Bluesky post.
-    // Preserve any existing reference so editing an announced post keeps the link.
-    let ref = syndicationRef(syndication, post.path);
-    let crossPostSucceeded = false;
+    if (!contentChanged && !eligible) {
+      unchanged++;
+      continue;
+    }
+
+    const coverImage = await client.uploadImage(resolveCoverPath(config, rkey));
+    const doc = {
+      title: post.title,
+      site: pubAtUri,
+      path: post.path,
+      textContent: post.textContent,
+      publishedAt: `${post.date}T00:00:00.000Z`,
+      description: post.description,
+      tags: post.tags.length ? post.tags : undefined,
+      coverImage,
+      // Only stamp an edit time for real content changes to already-published
+      // posts; state resets (record backfills) must not masquerade as edits.
+      updatedAt: contentChanged && !isNew ? new Date().toISOString() : undefined,
+      // Preserve any existing announcement so editing a cross-posted post keeps the link.
+      bskyPostRef: syndicationRef(syndication, post.path),
+    };
+
+    // Write the document before the skeet so the announcement can carry
+    // strongRefs to the records backing it (Bluesky's enhanced link cards).
+    const docRef = await client.putDocument(rkey, doc);
+
     if (eligible) {
       try {
         const skeet = await client.createSkeet({
@@ -87,16 +148,17 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
           url: `${config.siteUrl}${post.path}/`,
           title: post.title,
           description: post.description || post.title,
-          thumbPath: resolveThumbPath(config, rkey),
+          thumb: coverImage,
+          associatedRefs: [docRef, pubRef],
         });
-        ref = { uri: skeet.uri, cid: skeet.cid };
         syndication.posts[post.path] = {
           uri: skeet.uri,
           cid: skeet.cid,
           syndicatedAt: new Date().toISOString(),
         };
+        // Re-put with the announcement ref so the document links back to the skeet.
+        await client.putDocument(rkey, { ...doc, bskyPostRef: { uri: skeet.uri, cid: skeet.cid } });
         crossPosted++;
-        crossPostSucceeded = true;
         console.log(`  bluesky: cross-posted ${post.path} -> ${skeet.uri}`);
       } catch (error) {
         crossPostFailed++;
@@ -107,22 +169,6 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
       }
     }
 
-    if (!contentChanged && !crossPostSucceeded) {
-      unchanged++;
-      continue;
-    }
-
-    await client.putDocument(rkey, {
-      title: post.title,
-      site: pubAtUri,
-      path: post.path,
-      textContent: post.textContent,
-      publishedAt: `${post.date}T00:00:00.000Z`,
-      description: post.description,
-      tags: post.tags.length ? post.tags : undefined,
-      bskyPostRef: ref,
-    });
-
     if (contentChanged) {
       if (isNew) created++;
       else updated++;
@@ -130,6 +176,8 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
 
     await sleep(100);
   }
+
+  await syncRecommends(client, config);
 
   const newState: AtprotoState = {
     did: client.did,
