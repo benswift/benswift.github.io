@@ -20,6 +20,10 @@ export function loadAtprotoState(): AtprotoState | null {
   return cachedState;
 }
 
+export function getPublicationAtUri(): string | undefined {
+  return loadAtprotoState()?.publicationAtUri || undefined;
+}
+
 export function getAtUri(postPath: string): string | undefined {
   const state = loadAtprotoState();
   if (!state?.did) return undefined;

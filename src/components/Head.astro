@@ -1,4 +1,6 @@
 ---
+import { getPublicationAtUri } from "../utils/atproto"
+
 interface Props {
   title?: string
   description?: string
@@ -9,6 +11,10 @@ interface Props {
 }
 
 const { title, description, image, isPost = false, date, atUri } = Astro.props
+
+// Bluesky's enhanced link cards verify articles against BOTH the document and
+// publication records, so the two rel tags travel together.
+const publicationAtUri = atUri ? getPublicationAtUri() : undefined
 
 const siteTitle = "benswift.me"
 const hostname = "https://benswift.me"
@@ -61,6 +67,7 @@ const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`
 
 <!-- AT Protocol -->
 {atUri && <link rel="site.standard.document" href={atUri} />}
+{publicationAtUri && <link rel="site.standard.publication" href={publicationAtUri} />}
 
 <!-- Juttu comments (AT Protocol powered) -->
 {atUri && <script is:inline defer src="https://cdn.jsdelivr.net/npm/juttu@0.3.5/juttu-embed.js" integrity="sha384-5QRt2ZnQcKVdUqttMGfMmfMpcn2BzEI7rqmxoPtY2Z/pqgoUaAwpoBolPJg61EKD" crossorigin="anonymous" data-theme="dark"></script>}
