@@ -193,7 +193,16 @@ content hashes. So the remote will move on its own shortly after you push.
   `--force-with-lease` can clobber its commit if your local tracking ref is
   stale. If a push is rejected, fetch and rebase rather than forcing.
 - Don't hand-edit `atproto-state.json`; it's generated. If it ever looks lost,
-  the next CI run regenerates it from the published posts.
+  the next CI run regenerates it from the published posts. Deleting it forces a
+  full record backfill on the next run (safe: the separate syndication ledger
+  stops posts being re-announced to Bluesky).
+- `atproto-recommendations.json` IS hand-edited (the exception): it lists
+  `site.standard.document` AT-URIs this publication endorses, and the publish
+  step syncs `site.standard.graph.recommend` records to match --- removing a
+  line retracts the recommendation.
+- `src/assets/publication-icon.png` is the publication's icon blob source,
+  rendered from `public/favicon.svg` at 512x512 via sharp; regenerate it if the
+  favicon changes.
 
 ## Design context
 
