@@ -8,7 +8,7 @@ tags: ["research", "ai"]
 ---
 
 Earlier this month I
-[gave my livecoding gigs DOIs](/blog/2026/06/18/giving-my-livecoding-gigs-a-doi).
+[gave my livecoding gigs DOIs](/blog/2026/06/18/giving-my-livecoding-gigs-a-doi/).
 That was the easy case, in one narrow sense: a livecoding gig has no paper. The
 performance is the whole of the output, so there was never much question about
 what the citable thing was. The rest of the Cybernetic Studio's work is messier.
@@ -103,7 +103,7 @@ be bothered getting it right.
 
 [^concept]:
     Concept versus version DOIs, and the rest of the Zenodo machinery, I covered
-    in the [livecoding post](/blog/2026/06/18/giving-my-livecoding-gigs-a-doi);
+    in the [livecoding post](/blog/2026/06/18/giving-my-livecoding-gigs-a-doi/);
     the short version is that you cite the concept DOI rather than a frozen
     version, so the citation tracks the living work instead of one snapshot of
     it.
