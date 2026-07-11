@@ -2,9 +2,10 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/self",
   "contentHashes": {
+    "/blog/2026/07/12/becoming-a-better-atproto-citizen": "faa733dbc2a062dd90e9779f2758d3754c1d8049fedce989c7b52281bb305d5f",
     "/blog/2026/07/10/knowing-which-claude-is-stuck": "6115c340a6bddd9ddd2cd8d991a73cc06db44d27c070343cf754f8106eda773a",
     "/blog/2026/07/02/the-world-university-index": "8df3b01f973bc90a886627f8f97d41d12b26139068006d58cad84de29878d6e2",
-    "/blog/2026/06/27/when-the-work-is-the-output-not-the-paper": "1282e4afc4a6b35da6881b40bdf2c9b34d882837c6d23b4d6d0c351f61d331a1",
+    "/blog/2026/06/27/when-the-work-is-the-output-not-the-paper": "934027fb75be2ebc8e710ca7046b27a162d83a6351774424c6f4c5bc270d3071",
     "/blog/2026/06/22/opus-4-8-meets-eliza": "18ddba3699100d1734c96dae8e9051211252a989a8c0a5255a8b9c66bd426853",
     "/blog/2026/06/18/giving-my-livecoding-gigs-a-doi": "8eba9dec56a6255c7fc758eeeb03e5344da6bc9794163027dfd67b7834311d79",
     "/blog/2026/06/13/a-timezone-aware-world-cup-poster-in-typst": "c8ae5413b12d28d5a68e1e20247a3db0ca18a34f7bcbc109a461778610c21d6c",

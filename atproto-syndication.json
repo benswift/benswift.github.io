@@ -491,6 +491,11 @@
       "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mqavytr3xm2q",
       "cid": "bafyreihvc553ew7ezw6enkihrgtao6seebgollvdu45niphqkwa6xpjmhi",
       "syndicatedAt": "2026-07-10T00:40:43.326Z"
+    },
+    "/blog/2026/07/12/becoming-a-better-atproto-citizen": {
+      "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mqfrxxso3y2u",
+      "cid": "bafyreidcxgml2hmywoocg7dhvp3ilxvphmlkz4vl2247y5qnsscjkzd4tu",
+      "syndicatedAt": "2026-07-11T23:11:57.768Z"
     }
   }
 }
