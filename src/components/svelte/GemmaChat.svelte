@@ -258,8 +258,7 @@ ${siteContent}`;
           onkeydown={handleKeydown}
           placeholder="Ask Ben something..."
           rows="2"
-          disabled={generating}
-        ></textarea>
+          disabled={generating}></textarea>
         <button onclick={send} disabled={generating || !input.trim()}>Send</button>
       </div>
     </div>
