@@ -54,6 +54,29 @@ const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])]
   <TagList tags={tags} />
   <slot />
   {atUri && <div id="juttu-comments"></div>}
+  <script>
+    // The juttu embed hard-codes its submit button label and re-sets it after
+    // every "Posting…" cycle, so relabelling needs an observer, not a one-shot
+    // rename. Sized to match the sort pills in global.css.
+    function initJuttuRelabel() {
+      const container = document.getElementById("juttu-comments")
+      if (!container || container.dataset.relabelBound) return
+      container.dataset.relabelBound = "1"
+      const relabel = () => {
+        container.querySelectorAll(".juttu-submit-btn").forEach(btn => {
+          if (btn.textContent === "Post comment") btn.textContent = "Post"
+        })
+      }
+      relabel()
+      new MutationObserver(relabel).observe(container, {
+        childList: true,
+        subtree: true,
+        characterData: true,
+      })
+    }
+    initJuttuRelabel()
+    document.addEventListener("astro:page-load", initJuttuRelabel)
+  </script>
   <CitePost title={title} date={date} slug={slug} url={postUrl} atUri={atUri} />
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>
