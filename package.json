@@ -36,7 +36,7 @@
     "@mediapipe/tasks-genai": "^0.10.29",
     "astro-broken-links-checker": "^1.1.0",
     "astro-theme-anu": "git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#astro-theme-anu@v0.9.1&path:/packages/astro-theme-anu",
-    "astro-theme-university": "github:ANUcybernetics/astro-theme-university#v0.5.13",
+    "astro-theme-university": "github:ANUcybernetics/astro-theme-university#v0.5.14",
     "astromotion": "github:ANUcybernetics/astromotion#v0.11.0",
     "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "remark-smartypants": "^3.0.2",
