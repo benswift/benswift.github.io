@@ -512,9 +512,14 @@ strong {
   }
 }
 
-/* Juttu comments */
-.juttu-linking-start-btn {
-  background-color: var(--highlight-color) !important;
+/* Juttu comments. The embed themes itself via custom properties declared on
+   .juttu-comments; the #id ancestor out-ranks the widget's injected class
+   selector, so these overrides win without !important. Like/repost/Bluesky
+   colours are left semantic (red/green/Bluesky blue). */
+#juttu-comments .juttu-comments {
+  --juttu-accent-color: var(--highlight-color);
+  --juttu-link-color: var(--link-color);
+  --juttu-reply-color: var(--highlight-color);
 }
 
 /* Shrink the submit button to match the sort pills (Newest/Oldest/Top) it
