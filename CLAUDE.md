@@ -167,6 +167,11 @@ Prompting tips (each of these clauses earned its place --- keep them intact):
   strokes, one gold splash)
 - dice must be "ordinary six-sided dice with round dot pips only, never digits"
   --- the model otherwise draws numbered d20s, violating the no-text rule
+- measurement and document subjects (rulers, gauges, metronomes, weathervanes,
+  report pages) drag numerals and pseudo-text in through their priors, and
+  document scenes drift to white paper --- reword the subject itself ("a plain
+  empty disc with a single needle", "solid featureless bars", "black pages drawn
+  in white outline") rather than piling on corrective clauses
 - without the black-field and palette-allowlist wording the model drifts to
   white paper and primary colours
 - describe what's drawn, not what it represents: "small blank rectangles" (not
