@@ -6,6 +6,12 @@ import { parse as parseYaml } from "yaml"
 import PageLayout from "../../layouts/PageLayout.astro"
 import { formatDate, parseDate } from "../../utils/date"
 
+// Naming: this index lives at /talks/ while individual decks live at
+// /decks/<slug>/. That split is intentional, not an oversight. /talks/ is the
+// broader human-facing index --- it lists astromotion decks AND the "Earlier
+// talks" archive of non-deck presentations (links out to slides/papers/video).
+// /decks/<slug>/ is the astromotion artefact URL, hardcoded by the integration
+// (injectRoute pattern "/decks/[...slug]"), so it can't move to /talks/ anyway.
 const allTalks = await getCollection("talks")
 
 // Auto-discover decks from src/decks/*.deck.mdx and read their frontmatter, so a
