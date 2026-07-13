@@ -140,35 +140,37 @@ literal diagrams, but visual metaphors that reward a second look.
 
 ## Image generation style
 
-Prompt suffix: Flat 2D vector illustration on a pure black background ---
-absolutely NO 3D rendering, NO perspective, NO isometric, NO faceted/low-poly
-shapes, NO photographic depth, NO drop shadows, NO realistic lighting. Strictly
-limited colour palette: gold/amber, black, white, and warm beige/tan tones.
-Clean, consistent-weight outlines (black, white, or gold strokes) with flat
-filled shapes --- no gradients, no photorealism. Subtle background texture of
-interlocking circles or rounded geometric grid patterns in a very dark grey.
-Geometric and slightly stylised --- people (if any) are simplified faceless
-silhouettes drawn as single flat shapes (NOT low-poly polygonal or 3D-faceted
-figures). Occasional soft gold glow effects for emphasis. Sparse, balanced
-composition with generous negative space. STRICTLY NO TEXT, NO WORDS, NO
-LETTERS, NO NUMBERS, NO LABELS, NO ANNOTATIONS, NO TALLY MARKS, NO GLYPHS, NO
-SYMBOLS RESEMBLING LETTERS anywhere in the image. Modern editorial illustration
-style --- conceptual and symbolic rather than literal.
+Model: **imagen** (text-to-image), with **no reference images** --- the house
+style lives entirely in the prompt suffix below. This is deliberate: it keeps
+this site's decks visually distinct from the llms-unplugged decks (which use
+banana with reference images), and prevents style cross-contamination via shared
+references.
 
-Reference images: pick 2--3 at random from the deck's own assets directory
-(`src/decks/assets/<deck-slug>/`) as `--input-image` references --- this keeps
-each deck visually self-consistent as more images get added. Don't name specific
-files in this section; the pick is meant to be random each time.
+Prompt suffix: drawn with a few confident scratchy pen strokes in white ink
+only, plus exactly one loose splash of gold-amber watercolour, on an entirely
+matte black field. The ONLY colours in the image are black, white, and
+gold-amber --- no red, no blue, no other hues. Maximal black negative space,
+spontaneous and deliberately unfinished, the hand of the artist visible in every
+stroke. Full-bleed edge-to-edge composition --- no border, no frame, no mat, the
+black field extends to every edge. No human figures or hands. STRICTLY NO TEXT,
+NO WORDS, NO LETTERS, NO NUMBERS, NO NUMERALS, NO LABELS, NO SIGNATURES, NO
+GLYPHS OR SYMBOLS RESEMBLING LETTERS OR DIGITS anywhere in the image.
 
-Prompting tips:
+Aspect ratio: `16:9` for full-bleed `![bg](...)` slides; `3:4` for split-layout
+side panels (`![bg right:45%](...)` and similar).
 
-- avoid words that imply written content: "word-cards", "labels", "annotated",
-  "diagram", "blueprint", "schematic", "concept-map", "tag"
-- never quote target words verbatim
+Prompting tips (each of these clauses earned its place --- keep them intact):
+
+- the subject is a visual metaphor, tangentially inspired by the slide content
+  --- not a literal diagram
+- one subject, described concretely; the style thrives on economy (a few
+  strokes, one gold splash)
+- dice must be "ordinary six-sided dice with round dot pips only, never digits"
+  --- the model otherwise draws numbered d20s, violating the no-text rule
+- without the black-field and palette-allowlist wording the model drifts to
+  white paper and primary colours
 - describe what's drawn, not what it represents: "small blank rectangles" (not
   "tokens"), "empty speech bubbles" (not "dialogue exchange")
-- for figures, say "flat silhouette drawn as a single filled shape" --- the
-  model interprets bare "geometric figure" as low-poly 3D
 - expect to re-roll: review every generated image before committing
 
 ## Creating new posts
