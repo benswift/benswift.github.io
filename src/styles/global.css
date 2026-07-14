@@ -26,8 +26,7 @@
   --text-3: #777;
   --font-family-base: var(--font-fraunces, "Fraunces"), georgia, "Times New Roman", serif;
   --font-family-mono:
-    var(--font-atkinson-mono, "Atkinson Hyperlegible Mono"), consolas, monaco, "Andale Mono",
-    "Ubuntu Mono", monospace;
+    var(--font-recursive, "Recursive"), ui-monospace, consolas, monaco, "Ubuntu Mono", monospace;
 
   color-scheme: dark;
 }

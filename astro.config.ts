@@ -79,11 +79,21 @@ export default defineConfig({
       },
     },
     {
-      provider: fontProviders.google(),
-      name: "Atkinson Hyperlegible Mono",
-      cssVariable: "--font-atkinson-mono",
-      weights: ["200 800"],
-      styles: ["normal", "italic"],
+      // Recursive with MONO/CASL pinned to 1 (Mono Casual), CRSV/slnt pinned,
+      // wght kept variable; subset includes box-drawing chars for tree output.
+      provider: fontProviders.local(),
+      name: "Recursive",
+      cssVariable: "--font-recursive",
+      fallbacks: ["ui-monospace", "SF Mono", "Consolas", "monospace"],
+      options: {
+        variants: [
+          {
+            src: ["./src/assets/fonts/recursive-mono-casual-latin.woff2"],
+            weight: "300 1000",
+            style: "normal",
+          },
+        ],
+      },
     },
     {
       provider: fontProviders.google(),

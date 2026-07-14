@@ -33,7 +33,13 @@
   let font = buildFontString(fontSize);
 
   function buildFontString(size: number) {
-    return `700 ${size}px "Atkinson Hyperlegible Mono Variable", "SF Mono", ui-monospace, monospace`;
+    // The Fonts API registers families under hashed names, so resolve the
+    // actual stack from the CSS variable rather than hardcoding a name.
+    const monoStack =
+      typeof document !== "undefined" ?
+        getComputedStyle(document.documentElement).getPropertyValue("--font-family-mono").trim()
+      : "";
+    return `700 ${size}px ${monoStack || 'ui-monospace, "SF Mono", monospace'}`;
   }
 
   function updateMetrics(width: number) {
