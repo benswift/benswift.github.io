@@ -158,6 +158,21 @@ a:hover {
 
 p {
   text-wrap: pretty;
+
+  /* Safari-only optical margin alignment; other browsers ignore it. Scoped to
+     p (not body) so form fields don't inherit it. */
+  hanging-punctuation: first;
+}
+
+/* Drop cap on the opening paragraph of blog posts. The second selector covers
+   the handful of MDX posts that open with a .post-subtitle paragraph. */
+.post-content > p:first-of-type:not(.post-subtitle)::first-letter,
+.post-content > .post-subtitle:first-of-type + p::first-letter {
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
+  font-weight: 600;
+  color: var(--brand-1);
+  margin-inline-end: 0.15em;
 }
 
 img {
