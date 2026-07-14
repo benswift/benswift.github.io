@@ -24,9 +24,7 @@
   --divider: #363338;
   --text-2: #aaa;
   --text-3: #777;
-  --font-family-base:
-    var(--font-atkinson-next, "Atkinson Hyperlegible Next"), -apple-system, blinkmacsystemfont,
-    "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-family-base: var(--font-fraunces, "Fraunces"), georgia, "Times New Roman", serif;
   --font-family-mono:
     var(--font-atkinson-mono, "Atkinson Hyperlegible Mono"), consolas, monaco, "Andale Mono",
     "Ubuntu Mono", monospace;

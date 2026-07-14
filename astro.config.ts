@@ -57,11 +57,26 @@ export default defineConfig({
   },
   fonts: [
     {
-      provider: fontProviders.google(),
-      name: "Atkinson Hyperlegible Next",
-      cssVariable: "--font-atkinson-next",
-      weights: ["200 800"],
-      styles: ["normal", "italic"],
+      // Self-hosted full-featured build (Google's served subsets strip the
+      // case/ss01 features and pin the WONK axis); see src/assets/fonts/.
+      provider: fontProviders.local(),
+      name: "Fraunces",
+      cssVariable: "--font-fraunces",
+      fallbacks: ["Georgia", "Times New Roman", "serif"],
+      options: {
+        variants: [
+          {
+            src: ["./src/assets/fonts/fraunces-latin.woff2"],
+            weight: "100 900",
+            style: "normal",
+          },
+          {
+            src: ["./src/assets/fonts/fraunces-italic-latin.woff2"],
+            weight: "100 900",
+            style: "italic",
+          },
+        ],
+      },
     },
     {
       provider: fontProviders.google(),
