@@ -60,14 +60,12 @@ runs in about 50ms, making no IPC call to any other session.
 
 Here is what `Alt s` puts on screen:
 
-```
-switch to >   < 4/4 ─────────────────────────────────────────────────────────
-  ⏳ working   ⚠ blocked   ✓ idle   · unknown
-▌ comp4020                 2 ⚠1 ⏳1
-▌ dotfiles                 1 ⏳1
-▌ panic_tda                2 ⏳1 ✓1
-▌ slop-salon               1 ✓1
-```
+<pre><code>switch to &gt;   &lt; 4/4 ─────────────────────────────────────────────────────────
+  <span style="color:#f38ba8;font-weight:bold">blocked</span>   <span style="color:#f9e2af">working</span>   <span style="color:#a6e3a1">idle</span>   <span style="color:#6c7086">unknown</span>
+▌ comp4020                 2 <span style="color:#f38ba8;font-weight:bold">1</span> <span style="color:#f9e2af">1</span>
+▌ dotfiles                 1 <span style="color:#f9e2af">1</span>
+▌ panic_tda                2 <span style="color:#f9e2af">1</span> <span style="color:#a6e3a1">1</span>
+▌ slop-salon               1 <span style="color:#a6e3a1">1</span></code></pre>
 
 `comp4020` has two agents, one of them waiting on me, so that is where I go
 next. The first row is always the session I was in before this one. `Alt s` and
