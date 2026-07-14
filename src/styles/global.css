@@ -182,18 +182,14 @@ main {
 /* Code */
 code {
   font-family: var(--font-family-mono);
-  font-size: 0.875em;
+  font-size: 0.8em;
 }
 
 :not(pre) > code {
-  color: color-mix(in srgb, var(--highlight-color) 75%, white);
-  background: linear-gradient(
-    to right,
-    color-mix(in srgb, var(--highlight-color) 30%, #111),
-    color-mix(in srgb, var(--highlight-color) 20%, #111)
-  );
-  padding: 0.15em 0.35em;
-  border-radius: 3px;
+  color: color-mix(in srgb, var(--highlight-color) 55%, white);
+  background: color-mix(in srgb, var(--highlight-color) 10%, var(--bg-soft));
+  padding: 0.12em 0.4em;
+  border-radius: 4px 0 4px 4px;
 }
 
 pre {
