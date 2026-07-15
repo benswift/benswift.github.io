@@ -8,8 +8,8 @@ tags:
   - policy
 ---
 
-New Cybernetic Studio project announcement: the **APS AI Transparency Tracker**
-([GitHub link](https://github.com/ANUcybernetics/aps-ai-transparency-tracker)).
+New Cybernetic Studio project announcement: the **APS AI Tracker**
+([GitHub link](https://github.com/ANUcybernetics/aps-ai-tracker)).
 
 From the README:
 
@@ -37,7 +37,7 @@ From the README:
 > [version](https://github.com/aclu-national/tracking-ll144-bias-audits) >
 > [control](https://github.com/Cybersoft82/Privacy-Policy-Change-Detection-and-History-Tracking-Service)
 > tools,
-> [this project](https://github.com/ANUcybernetics/aps-ai-transparency-tracker)
+> [this project](https://github.com/ANUcybernetics/aps-ai-tracker)
 > automatically scrapes these statements and stores them as markdown files with
 > YAML frontmatter, allowing changes to be tracked over time through git. The
 > list of agencies is from

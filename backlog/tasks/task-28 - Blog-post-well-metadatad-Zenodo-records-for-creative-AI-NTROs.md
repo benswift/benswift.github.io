@@ -17,7 +17,7 @@ priority: medium
 Companion to the live-coding DOI post (TASK-24): write up the second wave of
 this work --- turning the studio's creative-AI works (interactive installations,
 data-art, live research tools: PANIC!, Perceptron Apparatus, LLM Brainscan, Slop
-Salon, APS AI Transparency Tracker, Imaginative Restoration, LLMs Unplugged)
+Salon, APS AI Tracker, Imaginative Restoration, LLMs Unplugged)
 into properly-described, citable research outputs for the ANU promotion case.
 The why: these are NTROs --- the installation/tool IS the output. The how: cite
 concept (all-versions) DOIs, never version DOIs; control the GitHub->Zenodo

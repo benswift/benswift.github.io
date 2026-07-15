@@ -26,7 +26,7 @@ a feedback loop and lets visitors watch the meaning drift; the _Perceptron
 Apparatus_ is a hand-cranked machine that performs a small neural network's
 arithmetic by hand; _LLM Brainscan_ paints every weight of a transformer onto an
 8K display as it trains. [_Slop Salon_](https://slopsalon.art) is a collective
-of AI agents making art in public; the _APS AI Transparency Tracker_ scrapes
+of AI agents making art in public; the _APS AI Tracker_ scrapes
 every Commonwealth agency's AI statement daily and commits the diffs to git;
 _Imaginative Restoration_ was built with NIDA and the National Film and Sound
 Archive; and [_LLMs Unplugged_](https://doi.org/10.5281/zenodo.17403824) is a
