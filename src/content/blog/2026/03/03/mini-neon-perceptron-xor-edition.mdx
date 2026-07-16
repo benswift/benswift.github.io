@@ -29,15 +29,15 @@ adding a non-linear activation function made everything hunky-dory.
 
 ## The mini-perceptron setup
 
-The mini perceptron has a 2×2 input grid---four pixels. The task is diagonal
+The mini perceptron has a 2×2 input grid (four pixels). The task is diagonal
 detection: light up one diagonal (top-left and bottom-right) and the network
 should activate one output; light up the other diagonal (top-right and
-bottom-left) and it should activate the other. This is a 2D XOR problem---the
+bottom-left) and it should activate the other. This is a 2D XOR problem: the
 network needs to distinguish between the two diagonals, which requires looking
 at the _combination_ of inputs rather than any single pixel.
 
 The two output nodes represent the two diagonals. Whichever has the higher
-activation gets a glowing halo---that's the network's answer.
+activation gets a glowing halo: that's the network's answer.
 
 Between input and output sit three hidden neurons with tanh activation. The
 output layer uses softmax, so the two outputs sum to 1 and you can read them as
