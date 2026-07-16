@@ -17,6 +17,7 @@
   let input = $state("");
   let generating = $state(false);
   let siteContent = $state("");
+  let announcement = $state("");
 
   let llm: any = $state(null);
   let messagesEl: HTMLDivElement | undefined = $state(undefined);
@@ -121,6 +122,7 @@ ${siteContent}`;
     if (!text || generating || !llm) return;
 
     input = "";
+    announcement = "";
     messages.push({ role: "user", content: text });
     messages.push({ role: "assistant", content: "" });
     generating = true;
@@ -136,12 +138,14 @@ ${siteContent}`;
         scrollToBottom();
         if (done) {
           generating = false;
+          announcement = messages[messages.length - 1].content;
         }
       });
     } catch (e) {
       const errMsg = e instanceof Error ? e.message : String(e);
       messages[messages.length - 1].content += `\n\n[Error: ${errMsg}]`;
       generating = false;
+      announcement = messages[messages.length - 1].content;
       scrollToBottom();
     }
   }
@@ -213,7 +217,7 @@ ${siteContent}`;
         aria-valuemin="0"
         aria-valuemax="100"
       >
-        <div class="progress-fill" style="width: {modelState.progress}%"></div>
+        <div class="progress-fill" style="transform: scaleX({modelState.progress / 100})"></div>
       </div>
       <span class="progress-label">{modelState.status}</span>
     </div>
@@ -224,11 +228,14 @@ ${siteContent}`;
     </div>
   {:else}
     <div class="chat-container" class:compact>
+      <!-- Streaming tokens would spam a live region, so the visible transcript
+           is aria-live="off" (role="log" defaults to polite) and the reply is
+           announced once, in full, from the hidden status region below. -->
       <div
         class="messages"
         bind:this={messagesEl}
         role="log"
-        aria-live="polite"
+        aria-live="off"
         aria-label="Chat transcript"
       >
         {#if messages.length === 0}
@@ -249,6 +256,7 @@ ${siteContent}`;
           </div>
         {/each}
       </div>
+      <div class="visually-hidden" role="status">{announcement}</div>
       <div class="input-area">
         <label for="gemma-chat-input" class="visually-hidden">Your message</label>
         <textarea
@@ -324,8 +332,10 @@ ${siteContent}`;
 
   .progress-fill {
     height: 100%;
+    width: 100%;
     background: var(--highlight-color, #be2edd);
-    transition: width 0.3s ease;
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease;
   }
 
   .progress-label {
@@ -417,8 +427,9 @@ ${siteContent}`;
     line-height: 1.4;
   }
 
-  .input-area textarea:focus {
-    outline: none;
+  .input-area textarea:focus-visible {
+    outline: 2px solid var(--highlight-color, #be2edd);
+    outline-offset: 2px;
     border-color: var(--highlight-color, #be2edd);
   }
 
