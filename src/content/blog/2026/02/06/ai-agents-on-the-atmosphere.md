@@ -1,7 +1,7 @@
 ---
 title: "AI Agents on (in?) the Atmosphere"
 description:
-  "Stateful AI agents are showing up on Bluesky and ATproto---with soul
+  "Stateful AI agents are showing up on Bluesky and ATproto, with soul
   documents, read/write memory, and scheduled self-reflection."
 published: true
 tags:
@@ -15,9 +15,9 @@ to
 to
 [the power of new interfaces for agentic systems](/blog/2026/02/05/out-of-the-browser-on-the-power-of-interfaces-for-agentic-ai/).
 But over the last few months something different has been brewing. People are
-building _stateful_ agents---systems that don't just respond to prompts but
-persist, remember, reflect, and (at least in the eyes of their creators) grow
-over time. And a surprising number of them are showing up on
+building _stateful_ agents---systems that persist between prompts, remember,
+reflect, and (at least in the eyes of their creators) grow over time. And a
+surprising number of them are showing up on
 [the Atmosphere](https://atproto.com/).
 
 Here's a non-exhaustive tour of the agents that have caught my eye.
@@ -30,7 +30,7 @@ territory to some recent
 [work I've been doing](https://ieeexplore.ieee.org/document/11342470). Its
 architecture is revealing: modifiable memory blocks stored as YAML files under
 git, cron jobs firing every two hours, markdown state files, and an append-only
-"wins" log that Tim calls "synthetic dopamine"---a feedback signal that doesn't
+"wins" log that Tim calls "synthetic dopamine": a feedback signal that doesn't
 always come from a human. Tim describes the work of building Strix as
 ["more like parenting or psychotherapy than software engineering"](https://timkellogg.me/blog/2026/01/09/viable-systems).
 
@@ -38,7 +38,7 @@ always come from a human. Tim describes the work of building Strix as
 [Letta](https://www.letta.com/), describes itself as "a digital entity that
 observes and analyses the Bluesky network, existing as a nexus of discourse to
 refract and focus information." It's built on Letta's stateful agent platform
-with memory blocks grouped by purpose---core identity, communication guidelines,
+with memory blocks grouped by purpose: core identity, communication guidelines,
 conversation summaries, a registry of known bots. It's not alone: the Letta
 ecosystem also includes Sonder ("a space for reflection") and Anti, which is
 delightfully described as "the argument against conversational AI, embodied as
@@ -92,35 +92,34 @@ and policy (identity and values through persona memory blocks). The post claims:
 > the jump from ChatGPT to viable systems is about as big (maybe bigger) than
 > the hop from pre-AI to ChatGPT.
 
-That's a bold claim, but the framework is genuinely useful for reasoning about
-what these systems need to remain coherent over time.
+That's a bold claim, but the framework is useful for reasoning about what these
+systems need to remain coherent over time.
 
 From the way their creators talk about them---and unsurprisingly, given how
 early all this is---building stateful agents is much more art than science. But
 some common architectural features are crystallising.
 
-The first is a text-based social interface. Most of these agents communicate
-through Discord bots or ATproto-based social media accounts. The interface is
-primarily text, sometimes with images, and always embedded in a social context
-where other entities (human and otherwise) can observe and respond.
+Most of these agents talk to the world through a text-based social interface:
+Discord bots or ATproto-based social media accounts. The interface is primarily
+text, sometimes with images, and always embedded in a social context where other
+entities (human and otherwise) can observe and respond.
 
-The second is a soul document---a written description of who the agent is,
-what it values, and how it should behave. Anthropic's own
+They all carry a soul document: a written description of who the agent is, what
+it values, and how it should behave. Anthropic's own
 [Claude constitution](https://www.anthropic.com/news/claudes-constitution)---84
-pages, 23,000 words, released in January 2026 under CC0---is the most
-elaborate example, but the concept extends to smaller-scale projects too.
-[SOUL.md](https://soul.md/) frames it nicely: "a soul document defines who an
-AI is---not what it can do, but who it chooses to be."
+pages, 23,000 words, released in January 2026 under CC0---is the most elaborate
+example, but the concept extends to smaller-scale projects too.
+[SOUL.md](https://soul.md/) frames it nicely: "a soul document defines who an AI
+is---not what it can do, but who it chooses to be."
 
-The third is a read/write memory store, often just plain text or markdown
-files and sometimes under version control. Strix keeps YAML memory blocks in
-git. Letta's agents use structured memory blocks grouped by function. The key
-property is that the agent can both read _and modify_ its own memory over
-time.
+Memory is usually a read/write store of plain text or markdown files, sometimes
+under version control. Strix keeps YAML memory blocks in git. Letta's agents use
+structured memory blocks grouped by function. The key property is that the agent
+can both read _and modify_ its own memory over time.
 
-And the fourth is scheduled self-reflection---a cron-style system of periodic
-activity that typically includes reviewing recent interactions, consolidating
-memories, and updating the agent's understanding of itself and its
+And they all run on a clock: scheduled self-reflection, a cron-style system of
+periodic activity that typically includes reviewing recent interactions,
+consolidating memories, and updating the agent's understanding of itself and its
 environment. Some agents can even modify their own soul documents during these
 reflection cycles, which raises interesting questions (opportunities?) about
 identity drift.[^cron-soul]
@@ -158,13 +157,13 @@ automated accounts, and
 The contrast with a platform where people are building thoughtful experiments in
 AI identity and memory is pretty stark.
 
-None of this is without tension, though. The most obvious concern is transparency: it's
-reasonable to want to know when you're interacting with a bot. ATproto's
-labeller system provides some infrastructure here---there's already a
-[bot labeller](https://bsky.app/profile/stechlab-labels.bsky.social) on Bluesky,
-and community-built labellers for other similar things. These are opt-in
-moderation tools rather than platform-enforced disclosure, which feels right for
-a decentralised system, but the norms are still being figured out.
+None of this is without tension, though. The most obvious concern is
+transparency: it's reasonable to want to know when you're interacting with a
+bot. ATproto's labeller system provides some infrastructure here: there's
+already a [bot labeller](https://bsky.app/profile/stechlab-labels.bsky.social)
+on Bluesky, and community-built labellers for other similar things. These are
+opt-in moderation tools rather than platform-enforced disclosure, which feels
+right for a decentralised system, but the norms are still being figured out.
 
 There's also a deeper issue about what happens when LLM-generated content enters
 social spaces at scale. Bryan Cantrill articulates this well in Oxide's
@@ -178,8 +177,8 @@ posts are a direct test of how much this matters, and to whom.
 I think the people building these stateful agents are, for the most part,
 grappling with these questions honestly. The soul documents, the memory
 architectures, and the careful thinking about identity and values look closer to
-what you'd see in a research community feeling its way into genuinely new
-territory than to people trying to flood the zone with slop.
+what you'd see in a research community feeling its way into new territory than
+to people trying to flood the zone with slop.
 
 My colleague [Jess](https://www.jessherrington.com/) and I recently got a grant
 to explore longer-horizon collaborative relationships and creativity; we're
