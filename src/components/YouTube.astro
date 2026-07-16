@@ -8,16 +8,16 @@ const { id, title = "YouTube video" } = Astro.props
 ---
 
 <div class="youtube-embed">
-  <div class="youtube-embed-container">
-    <iframe
-      src={`https://www.youtube-nocookie.com/embed/${id}`}
-      title={title}
-      allow="autoplay; encrypted-media"
-      style="border: 0;"
-      allowfullscreen
-      loading="lazy"
-    ></iframe>
-  </div>
+  <iframe
+    src={`https://www.youtube-nocookie.com/embed/${id}`}
+    title={title}
+    width="560"
+    height="315"
+    allow="autoplay; encrypted-media"
+    style="border: 0;"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
 </div>
 
 <style>
@@ -26,17 +26,10 @@ const { id, title = "YouTube video" } = Astro.props
     margin: 0 auto 1rem;
   }
 
-  .youtube-embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-  }
-
-  .youtube-embed-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .youtube-embed iframe {
+    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 </style>
