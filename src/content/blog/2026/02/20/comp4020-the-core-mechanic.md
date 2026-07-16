@@ -57,16 +57,16 @@ The model can be intimidating at first. From week two onwards, students are
 simultaneously showing their own work-in-progress _and_ giving feedback on
 others'. But COMP4020 will have later-year students, and with careful
 facilitation I reckon it'll work really well. The awkwardness fades fast, and
-what replaces it is a genuine community of practice---people who share a
-vocabulary, who've seen each other's failures and successes, and who can have
-informed conversations about what "good" looks like (because that's the key
-question in this type of agentic software development course).
+what replaces it is a community of practice---people who share a vocabulary,
+who've seen each other's failures and successes, and who can have informed
+conversations about what "good" looks like (because that's the key question in
+this type of agentic software development course).
 
 Each studio group will have around 20 students, led by an experienced
-tutor.[^tutor] The tutor's job isn't just to run the session---they're the one
-doing the facilitation that makes the whole thing work. They need to know when
-to push, when to let a conversation breathe, and when to redirect a critique
-that's veering into unhelpful territory.
+tutor.[^tutor] The tutor does more than run the session: their facilitation is
+what makes the whole thing work. They need to know when to push, when to let a
+conversation breathe, and when to redirect a critique that's veering into
+unhelpful territory.
 
 [^tutor]:
     "Tutor" in the Australian university sense---usually a PhD student who leads
@@ -74,24 +74,24 @@ that's veering into unhelpful territory.
 
 There'll also be a small, marked-in-class component assessed by the tutor each
 week. Nothing worth a huge amount---just enough so students have skin in the
-game. The point is investment, not anxiety. If you know you're going to demo
-your work and discuss your process, you'll actually do the work (a point I've
-seen validated across several years of Laptop Ensemble courses). And if you're
-going to give feedback to someone else, you'll engage with their prototype
-properly rather than just clicking through it. And in general our students are
-cool and nice and can be trusted not to be arseholes to each other.
+game without the marks becoming a source of anxiety. If you know you're going to
+demo your work and discuss your process, you'll actually do the work (a point
+I've seen validated across several years of Laptop Ensemble courses). And if
+you're going to give feedback to someone else, you'll engage with their
+prototype properly rather than just clicking through it. And in general our
+students are cool and nice and can be trusted not to be arseholes to each other.
 
 One thing I want to emphasise about the crit itself: the feedback covers both
 the prototype (the product) and the agentic development process that produced
 it. This maps onto the week's lecture content, where students learn about
 different aspects of working with LLM agents for software development.
 
-So the studio session isn't just "does your app work?"---it's "how did you get
-here, what did you try, what did the agent do well, where did you have to
-intervene, what infrastructure/harness did you need to build around it, and what
-would you do differently?" The goal is for students to develop a sophisticated,
-critical understanding of agentic software development through repeated practice
-and reflection, not just through reading about it.
+So the studio session asks more than "does your app work?": it's also "how did
+you get here, what did you try, what did the agent do well, where did you have
+to intervene, what infrastructure/harness did you need to build around it, and
+what would you do differently?" The goal is for students to develop a
+sophisticated, critical understanding of agentic software development through
+repeated practice and reflection rather than just reading about it.
 
 The hope is that over these weeks the class collectively builds a shared
 understanding of what good agentic software development looks like---both in
