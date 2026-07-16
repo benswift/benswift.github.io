@@ -51,6 +51,9 @@ const siteRemarkPlugins: PluggableList = [
 export default defineConfig({
   site: "https://benswift.me",
   trailingSlash: "always",
+  image: {
+    layout: "constrained",
+  },
   redirects: {
     "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
     "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
