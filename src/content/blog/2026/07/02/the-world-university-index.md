@@ -44,7 +44,7 @@ The README explains the premise:
 > [each](https://www.swinburne.edu.au/news/2025/03/swinburne-shines-in-2025-qs-world-university-rankings-by-subject/)
 > year --- and with over a hundred ranking tables now in circulation (overall,
 > by subject, by Sustainable Development Goal, and across several editions of
-> each), there is almost always one in your institution can call itself
+> each), there is almost always one in which your institution can call itself
 > world-leading.
 >
 > You could look at the
