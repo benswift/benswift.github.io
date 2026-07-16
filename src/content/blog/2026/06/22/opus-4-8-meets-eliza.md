@@ -91,9 +91,8 @@ pretty decent one I reckon.
 and found ELIZA (22%) narrowly beating GPT-3.5 (20%) at convincing people it was
 human. Two years later Opus sees through the same script before the third turn.
 The program that fooled Weizenbaum's secretary, and could still out-human an
-early ChatGPT, can't get a single suspicious reply past the current model.
-
-ELIZA can no longer catch Claude, but Claude still can't hang up the phone.
+early ChatGPT, can't get a single suspicious reply past the current model. ELIZA
+can no longer catch Claude, but Claude still can't hang up the phone.
 
 [^benchmark]:
     I'm not claiming this has earned a place next to Simon Willison's
