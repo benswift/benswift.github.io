@@ -99,12 +99,11 @@ documentation survived. There is also a more formal
 anchor performances, for anyone who wants the version written for a promotion
 committee rather than a curious reader.
 
-Does any of this solve the problem I started with? Not really. A DOI doesn't
-bring back a 2009 set whose recording never survived.[^crash] The performance is
-still gone. What the DOI gives me is somewhere permanent for the _claim_ to
-live: that the gig happened, and that you can cite it the same way you would
-cite a paper. The work was always ephemeral. The record of it no longer has to
-be.
+None of this solves the problem I started with, not really. A DOI doesn't bring
+back a 2009 set whose recording never survived.[^crash] The performance is still
+gone. What the DOI gives me is somewhere permanent for the _claim_ to live: that
+the gig happened, and that you can cite it the same way you would cite a
+paper---the work was always ephemeral, but the record of it no longer has to be.
 
 [^count]:
     Twenty-seven, anyway: the ones I can document. A few are genuinely lost to
