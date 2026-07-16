@@ -37,7 +37,7 @@
     "astro-broken-links-checker": "^1.1.0",
     "astro-theme-anu": "git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#astro-theme-anu@v0.9.1&path:/packages/astro-theme-anu",
     "astro-theme-university": "github:ANUcybernetics/astro-theme-university#v0.5.14",
-    "astromotion": "github:ANUcybernetics/astromotion#v0.12.0",
+    "astromotion": "github:ANUcybernetics/astromotion#v0.12.1",
     "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus",
     "remark-smartypants": "^3.0.2",
     "shaderpad": "1.0.0-beta.86",
