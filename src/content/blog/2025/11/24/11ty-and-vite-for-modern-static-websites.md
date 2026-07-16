@@ -37,7 +37,7 @@ doesn't[^browser-esm].
 
 The magic happens through
 [`@11ty/eleventy-plugin-vite`](https://www.npmjs.com/package/@11ty/eleventy-plugin-vite),
-which lets 11ty and Vite play nicely together. Here's the core setup in
+which lets 11ty and Vite play nicely together. The core setup in
 `eleventy.config.js`:
 
 ```js
@@ -135,7 +135,7 @@ The above stack works great with whatever CSS approach you use, but I've also
 been moving more and more of my projects to Tailwind v4. So here's some advice
 for that approach (disregard if you don't want to use Tailwind). In Tailwind v4
 instead of a `tailwind.config.js` file you configure everything through CSS
-using the `@theme` directive. Here's what `main.css` might look like:
+using the `@theme` directive. A `main.css` might look like:
 
 ```css
 @import "tailwindcss";
@@ -220,11 +220,11 @@ Vite pays for itself in developer experience.
 ## The verdict
 
 Setting this up took me a bit of futzing about, but now that it's working the
-development experience is excellent. HMR makes CSS tweaking instant, and I
-still get 11ty's flexibility for content with properly optimised build output.
+development experience is excellent. HMR makes CSS tweaking instant, and I still
+get 11ty's flexibility for content with properly optimised build output.
 
-Would I do it again? Absolutely, but only for projects that actually need it.
-For everything else, vanilla 11ty is the right amount of tooling[^right-tool].
+I'd do it again, but only for projects that actually need it. For everything
+else, vanilla 11ty is the right amount of tooling[^right-tool].
 
 [^right-tool]:
     The best tool is the one that solves your problem without creating new ones.
