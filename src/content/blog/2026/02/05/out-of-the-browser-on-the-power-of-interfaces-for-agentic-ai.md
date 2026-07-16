@@ -1,8 +1,8 @@
 ---
 title: "Out of the browser: on the power of interfaces for agentic AI"
 description:
-  "The leap from browser-based ChatGPT to terminal-native coding agents isn't
-  about smarter models---it's about removing the sandbox."
+  "The leap from browser-based ChatGPT to terminal-native coding agents comes
+  from removing the sandbox, not from smarter models."
 tags:
   - ai
 ---
@@ -70,13 +70,11 @@ This sandboxing is why you can visit sketchy websites and (mostly) not worry
 about them stealing your passwords or deleting your files. What happens in the
 browser stays in the browser.
 
-But that same sandboxing that protects you also constrains what ChatGPT (or
-any browser-based AI) can actually _do_. It can generate text, show you
-images, even run some sandboxed JavaScript. But it can't create files on
-your computer, run your test suite, commit code to git, or do any of the
-thousand other things you do when you're actually building software.
-
-Enter the terminal.
+But that same sandboxing that protects you also constrains what ChatGPT (or any
+browser-based AI) can actually _do_. It can generate text, show you images, even
+run some sandboxed JavaScript. But it can't create files on your computer, run
+your test suite, commit code to git, or do any of the thousand other things you
+do when you're actually building software.
 
 <svg class="terminal-window" width="100%" viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
   <!-- Window frame -->
@@ -117,11 +115,10 @@ Committing changes...</text>
 <rect x="35" y="238" width="8" height="16" class="cursor"/> </svg>
 
 The terminal is almost the anti-browser: a text-only interface to doing
-**everything** on your computer. You can create, read, edit, and delete
-files (or entire hard drives), run programs, install software, and access
-the network (potentially exfiltrating sensitive documents along the way).
-The terminal is powerful, and dangerous, precisely _because_ it has no
-sandbox.[^sandbox]
+**everything** on your computer. You can create, read, edit, and delete files
+(or entire hard drives), run programs, install software, and access the network
+(potentially exfiltrating sensitive documents along the way). The terminal is
+powerful, and dangerous, precisely _because_ it has no sandbox.[^sandbox]
 
 [^sandbox]:
     Yes, you can run things in
@@ -174,11 +171,9 @@ Mario Zechner, powering OpenClaw) takes a minimal-agent approach, and
 [Claudia](https://github.com/getAsterisk/claudia) wraps Claude Code in a GUI for
 those who want the power without the terminal aesthetic.
 
-This is an innovation in **interfaces**, not just models.
-
 All this power comes with obvious risk, of course. An LLM running in your
-terminal can do anything you can do in your terminal, including stealing
-your SSH keys, reading your `.env` files, or, as
+terminal can do anything you can do in your terminal, including stealing your
+SSH keys, reading your `.env` files, or, as
 [Johann Rehberger points out](https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/),
 wiping your production database.
 
@@ -201,26 +196,24 @@ The incentives for speed and automation are strong. The incentives for security
 are... well, they're there in principle, but it's easy to forget why the
 guardrails existed in the first place.
 
-Which brings me to the thing I keep coming back to: the story here is about
-what an interface lets the model do, more than how smart the model itself is. I've
+Which brings me to the thing I keep coming back to: the story here is about what
+an interface lets the model do, more than how smart the model itself is. I've
 [written before](/blog/2025/07/17/agentic-ai-llms-with-stones/) about how
 agentic AI is really just about giving LLMs tools (stones to throw, in the
 "sticks and stones" sense). But the terminal-native AI wave has clarified
 something for me: the _power_ of agentic AI comes from the interface, not just
 the tools themselves.
 
-The browser sandbox was always a security feature, not a limitation of the
-underlying AI. ChatGPT could always _tell_ you to run `rm -rf /`; it just
-couldn't do it itself. By moving to the terminal, we haven't made the models
-smarter; we've given them permission to actually do things.
-
-That's both the promise and the peril. The models can now iterate without asking
-and do real work in tight feedback loops. But they can also make real mistakes
-with real consequences, in ways that browser-based AI never could.
+The browser sandbox was always a security feature rather than a limitation of
+the underlying AI. ChatGPT could always _tell_ you to run `rm -rf /`; it just
+couldn't do it itself. Moving to the terminal gives the models permission to
+actually do things. They can now iterate without asking and do real work in
+tight feedback loops, but they can also make real mistakes with real
+consequences, in ways that browser-based AI never could.
 
 If you're going to use these tools---and if you're a software developer in 2026,
-you probably should---just remember that you're not using a smarter AI. You're
-using the same AI with the safety guards removed. Plan accordingly.
+you probably should---just remember that the model is the same one you had in
+the browser, with the safety guards removed. Plan accordingly.
 
 <!-- styles for the SVG diagrams (light/dark mode) -->
 <style scoped>
