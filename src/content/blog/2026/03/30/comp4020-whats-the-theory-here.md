@@ -21,8 +21,8 @@ processes?
 
 The answer which I gave him, which I believe to be true in my bones, is that
 nobody really knows for sure. But a lot of folks are trying to figure it
-out---some in private conversations inside their organisations, some very
-loudly on (ugh!) LinkedIn, and lots in between[^loudly].
+out---some in private conversations inside their organisations, some very loudly
+on (ugh!) LinkedIn, and lots in between[^loudly].
 
 The question was really one of _theory_; while there are many in the hard
 sciences that would criticise software development/engineering as having a
@@ -32,10 +32,10 @@ works and what doesn't, and there's enough agreement about what these courses
 are for people to write textbooks and run university degrees. But since Claude
 Code was released in May 2025, you can feel the ground shifting.
 
-Here's my attempt at a survey. Some of these are genuinely impressive; others
-I'm still not sure about. I've split them into rough categories, though there's
-plenty of overlap---the best frameworks come with tools, and the best tools
-embody a theory about how work should flow.
+Here's my attempt at a survey. Some of these are impressive; others I'm still
+not sure about. I've split them into rough categories, though there's plenty of
+overlap---most of the frameworks ship with tools, and most of the tools have a
+theory of workflow baked in.
 
 :::info
 
@@ -44,10 +44,10 @@ actually used any of these tools yet, each vendor has official onboarding docs:
 [Claude Code](https://code.claude.com/docs/en/quickstart),
 [Codex CLI](https://developers.openai.com/codex/quickstart),
 [Gemini CLI](https://geminicli.com/docs/get-started/), and
-[GitHub Copilot CLI](https://github.com/github/copilot-cli-for-beginners).
-These are practical "here's how to install and use our thing" resources, not
-theories about how agentic coding _should_ work---but they're worth running
-through before diving into the methodological debates below.
+[GitHub Copilot CLI](https://github.com/github/copilot-cli-for-beginners). These
+are practical "here's how to install and use our thing" resources, not theories
+about how agentic coding _should_ work---but they're worth running through
+before diving into the methodological debates below.
 
 :::
 
@@ -162,7 +162,7 @@ students to try out these theories and see what works. One of the
 explicitly about that---finding one theory, using it to build a prototype, and
 reporting the results back to the class.
 
-What will we find? Who knows? The models will also be six months further on by
+I don't know what we'll find. The models will also be six months further on by
 the end of the course, so the strengths/weaknesses and bottlenecks may shift
 further from where they are now. But I'll share the results of this experiment
 on this blog---stay tuned.
