@@ -28,16 +28,16 @@ will get us part of the way---you can create and revoke keys programmatically,
 set monthly workspace spend caps in the Console, pull usage reports---but the
 controls are too coarse for what we actually want to do: per-student weekly
 token allocations with predictable resets and optional carryover, an audit log
-with
-enough detail to give the course policy around token use some actual teeth, and
-a safety net that catches leaked API keys in plaintext before they escape onto
-the open internet.
+with enough detail to give the course policy around token use some actual teeth,
+and a safety net that catches leaked API keys in plaintext before they escape
+onto the open internet.
 
 The only way to get all of that is to put a proxy between the students' Claude
 Code sessions and the Anthropic API, and enforce the class-specific policy
-there. Happily, the School of Computing's infrastructure team has signed on to build
-it and host it on their own infrastructure---this isn't a solo project, and the
-scope gets a lot more realistic with their help. The thing has four jobs.
+there. Happily, the School of Computing's infrastructure team has signed on to
+build it and host it on their own infrastructure---this isn't a solo project,
+and the scope gets a lot more realistic with their help. The thing has four
+jobs.
 
 **Authentication and transparent passthrough.** One real Anthropic API key (tied
 to our COMP4020 workspace) on the egress side. On the ingress side, each student
@@ -92,14 +92,15 @@ What does session activity look like in the hours right before the
 [aha moment](/blog/2026/04/16/comp4020-pledges-not-questions/)?
 
 That leaves one practical question: how much of this do we actually have to
-build from scratch? [LiteLLM](https://docs.litellm.ai/) is the obvious candidate---the
+build from scratch? [LiteLLM](https://docs.litellm.ai/) is the obvious
+candidate---the
 [Claude Code docs themselves point at it](https://code.claude.com/docs/en/llm-gateway)
 as a supported LLM gateway. It's MIT-licensed, self-hostable, and Python.
 Virtual keys, spend tracking, and Postgres-backed logging are all first-class.
 More importantly, there's an Anthropic-native passthrough at
 `/anthropic/v1/messages` that lets Claude Code talk the native protocol rather
 than being coerced through an OpenAI-compatible translation layer. That last bit
-matters more than it sounds---a proxy that makes Claude Code work _almost_ like
+matters more than it sounds: a proxy that makes Claude Code work _almost_ like
 the real thing is worse than no proxy at all.
 
 For roughly 80% of the brief, it's a drop-in: virtual key CRUD via
@@ -108,8 +109,8 @@ dollar-denominated budgets with `budget_duration` set to "7d" or "1mo" that
 reset automatically; and a `LiteLLM_SpendLogs` Postgres table capturing
 per-request metadata.
 
-The remaining 20% is where it gets interesting, because it's the class-specific
-policy stuff that probably _should_ be ours:
+The remaining 20% is the class-specific policy stuff that probably _should_ be
+ours:
 
 - **Carryover.** LiteLLM resets budgets cleanly at the end of each period with
   no rollover. That's a small amount of bookkeeping in a custom hook.
@@ -129,10 +130,10 @@ policy stuff that probably _should_ be ours:
 Bottom line: LiteLLM for the plumbing, custom hooks for the policy. The
 alternative---hand-rolling the whole thing in, say, Elixir or Go---would mean
 reimplementing the virtual-key lifecycle, the Anthropic passthrough, the spend
-accounting, and the admin endpoints. That's not work anyone wants to sign up
-for when a reasonable baseline already exists. The plan is to start with
-LiteLLM and write the class-specific bits on top, falling back to hand-rolling
-only if we hit a wall we can't climb with a custom callback.
+accounting, and the admin endpoints. That's not work anyone wants to sign up for
+when a reasonable baseline already exists. The plan is to start with LiteLLM and
+write the class-specific bits on top, falling back to hand-rolling only if we
+hit a wall we can't climb with a custom callback.
 
 A few things I'm still thinking through:
 
