@@ -2,8 +2,8 @@
 title: "When the work is the output, not the paper"
 description:
   "The second wave of making my studio's work citable: AI installations and
-  tools as research outputs, and the Zenodo metadata that keeps each record
-  honest."
+  tools as research outputs, and the Zenodo metadata that describes each one
+  accurately."
 tags: ["research", "ai"]
 ---
 
@@ -26,8 +26,8 @@ a feedback loop and lets visitors watch the meaning drift; the _Perceptron
 Apparatus_ is a hand-cranked machine that performs a small neural network's
 arithmetic by hand; _LLM Brainscan_ paints every weight of a transformer onto an
 8K display as it trains. [_Slop Salon_](https://slopsalon.art) is a collective
-of AI agents making art in public; the _APS AI Tracker_ scrapes
-every Commonwealth agency's AI statement daily and commits the diffs to git;
+of AI agents making art in public; the _APS AI Tracker_ scrapes every
+Commonwealth agency's AI statement daily and commits the diffs to git;
 _Imaginative Restoration_ was built with NIDA and the National Film and Sound
 Archive; and [_LLMs Unplugged_](https://doi.org/10.5281/zenodo.17403824) is a
 shelf of literary language models printed and bound as books. Each now has a
@@ -40,9 +40,9 @@ that: tag a release, and it archives a source-zip and mints a fresh version DOI
 on its own. But this is a pretty 'software' workflow: every automatic deposit
 comes out typed as _Software_ and licensed _MIT_. For a repo of code that is
 exactly right, because a source-zip of the tracker honestly is software and
-honestly is MIT. For an installation that's a bit of a lie. _PANIC!_ isn't
-software. It is an installation that happens to have software inside it, and its
-archive shouldn't introduce itself as a code library.
+honestly is MIT. For an installation that's a bit of a lie. _PANIC!_ is an
+installation that happens to have software inside it, and its archive shouldn't
+introduce itself as a code library.
 
 The fix is a `.zenodo.json` committed to each repo, setting the type, licence,
 creators, keywords and related identifiers that every future release will carry.
@@ -87,19 +87,18 @@ The most awkward gap is that Zenodo has no upload type for "interactive
 installation". The list runs to software, dataset, publication, image, video and
 a catch-all "other", and that's the lot. An 8K data-art piece and a room-sized
 participatory installation both have to file as either software or "other". It's
-software when a source-zip is the honest deposit, and "other" when nothing
-zippable really stands in for the work. The closest honest mapping wins, but
+software when a source-zip is the truthful deposit, and "other" when nothing
+zippable really stands in for the work. The closest defensible mapping wins, but
 none of them is the true thing. This is the same shape of problem the gigs had.
 The umbrella I wanted to call a "collection" had to be typed "other", because
 Zenodo has no such category. The vocabulary runs out before the work does.
 
 None of this teaches Zenodo what an installation is. What the `.zenodo.json`
-files gives me is records that describe themselves accurately: code filed as
+files give me is records that describe themselves accurately: code filed as
 code, creative work filed as creative work. The seven works are gathered into a
 Cybernetic Studio community alongside the livecoding one, so the whole portfolio
 sits in a single place. When the metadata is still wrong, and in a couple of
-places it is, it's wrong because Zenodo ran out of words, not because I couldn't
-be bothered getting it right.
+places it is, it's wrong only where Zenodo's vocabulary gave me nothing better.
 
 [^concept]:
     Concept versus version DOIs, and the rest of the Zenodo machinery, I covered
