@@ -1,6 +1,8 @@
 ---
 title: "The verification I never verified"
-description: "I wrote a whole post about two-way standard.site verification. One of the two directions had been returning a 404 in production the entire time."
+description:
+  "I wrote a whole post about two-way standard.site verification. One of the two
+  directions had been returning a 404 in production the entire time."
 published: true
 tags:
   - atproto
@@ -8,7 +10,8 @@ tags:
   - dev
 ---
 
-Back in February I [wrote that every post on this blog has a persistent AT-URI](/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging/)
+Back in February I
+[wrote that every post on this blog has a persistent AT-URI](/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging/)
 via the [standard.site](https://standard.site) lexicons. I was rather pleased
 with the verification, which runs both ways. The site serves a
 `/.well-known/site.standard.publication` file pointing at the publication
@@ -27,9 +30,9 @@ setting it up. 404. The file was right there in `public/.well-known/`, and it
 served fine when I built and previewed locally. In production it had vanished.
 
 [^wave]:
-    There's a small wave of these at the moment, on the back of Bluesky's
-    recent treatment of standard.site records. Apparently I did mine early
-    enough to also do it wrong early.
+    There's a small wave of these at the moment, on the back of Bluesky's recent
+    treatment of standard.site records. Apparently I did mine early enough to
+    also do it wrong early.
 
 My first theory was Jekyll. GitHub Pages runs your output through Jekyll unless
 you tell it not to. Jekyll ignores files and directories whose names start with
@@ -55,7 +58,8 @@ stripped from the tarball before it ever left the runner. It took the
 `.nojekyll` file with it, the very file I'd just added to fix a problem it was
 itself being excluded from fixing.
 
-One line in [the workflow](https://github.com/benswift/benswift.github.io/blob/main/.github/workflows/deploy.yml)
+One line in
+[the workflow](https://github.com/benswift/benswift.github.io/blob/main/.github/workflows/deploy.yml)
 sorted it:
 
 ```yaml
@@ -84,4 +88,4 @@ across the full set of 155 document records.
     one case I actually care about.
 
 A verification step you never verify is just a hopeful comment in your config
-file. The loop is closed now. Properly, this time.
+file. The loop is properly closed now.
