@@ -1,12 +1,35 @@
-# Optional decorative backgrounds
+# Divider backgrounds
 
-The divider slides (title, per-student, section breaks) are intentionally
-text-only: white title bottom-left with a purple underline on the dark theme, no
-image needed. They look clean as-is.
+The divider slides carry house-style backgrounds in `./assets/bg/`, generated
+with `styled-image-gen --model imagen` (Imagen 4 Ultra, no reference images ---
+the style lives entirely in the prompt suffix). The `hero` class lays a dark
+gradient scrim over the image, so the white title stays legible bottom-left.
 
-If you want to dress them up in the house style, generate a background per
-divider with **imagen** (no reference images --- the style lives in the prompt
-suffix) and drop it onto the divider slide as the first line of that section:
+Wired up so far:
+
+| file                   | used by                                 | subject                                                   |
+| ---------------------- | --------------------------------------- | --------------------------------------------------------- |
+| `divider-title.avif`   | title slide                             | orbiting marks drifting into a loose ring                 |
+| `divider-evan.avif`    | Evan Skinner                            | one continuous feedback loop, gold node where it closes   |
+| `divider-jake.avif`    | Jake Blight                             | a rigid lattice, one loose stroke re-routing through it   |
+| `divider-liz.avif`     | Liz Skelton                             | a tangle resolving into one steady gold thread            |
+| `divider-sui.avif`     | Sui Jackson                             | four coupled needles seeking equilibrium                  |
+| `divider-nadereh.avif` | Nadereh Ghelich Khani                   | a bud unfurling, gold splash at the moment of opening     |
+| `divider-skills.avif`  | skills session                          | an open folder spilling threads into neat parallel lines  |
+| `divider-break.avif`   | morning tea, short break, afternoon tea | a single cup, one curl of steam (reused across all three) |
+| `divider-lunch.avif`   | lunch                                   | a plate and fork, a few loose strokes                     |
+
+## Regenerating / adding one
+
+```bash
+styled-image-gen "<subject>, $SUFFIX" --model imagen --aspect-ratio 16:9 \
+  --resolution 2K --output-dir /tmp/gen --output-filename divider-<id>
+# then downscale (the 2K output is bigger than the 1280x720 canvas needs):
+convert /tmp/gen/divider-<id>.avif -resize 1920x /tmp/x.png
+avifenc -q 58 -s 6 /tmp/x.png ./assets/bg/divider-<id>.avif
+```
+
+Reference it as the first line of the divider slide:
 
 ```mdx
 {/* _class: hero seg seg-evan */}
@@ -16,38 +39,31 @@ suffix) and drop it onto the divider slide as the first line of that section:
 # Evan Skinner
 ```
 
-Save as `./assets/bg/divider-<id>.avif`, `16:9`. The `hero` class already lays a
-dark gradient scrim over the image, so the white title stays legible.
-
 ## Prompt suffix (house style --- keep intact)
 
 > drawn with a few confident scratchy pen strokes in white ink only, plus
 > exactly one loose splash of gold-amber watercolour, on an entirely matte black
 > field. The ONLY colours in the image are black, white, and gold-amber --- no
-> red, no blue, no other hues. Maximal black negative space, spontaneous and
-> deliberately unfinished, the hand of the artist visible in every stroke.
-> Full-bleed edge-to-edge composition --- no border, no frame, no mat. No human
+> red, no blue, no other hues. Maximal black negative space, the lower-left
+> third left open and empty, spontaneous and deliberately unfinished, the hand
+> of the artist visible in every stroke. Full-bleed edge-to-edge composition ---
+> no border, no frame, no mat, the black field extends to every edge. No human
 > figures or hands. STRICTLY NO TEXT, NO WORDS, NO LETTERS, NO NUMBERS, NO
-> GLYPHS anywhere in the image.
+> NUMERALS, NO LABELS, NO SIGNATURES, NO GLYPHS OR SYMBOLS RESEMBLING LETTERS OR
+> DIGITS anywhere in the image.
 
-## Per-divider subjects (a visual metaphor, not a literal diagram)
+The "lower-left third left open" clause is this deck's addition --- hero titles
+sit bottom-left, so the composition has to leave them room.
 
-Only the students who've sent slides have a confirmed topic; the rest are
-guesses from their field --- reword freely, or skip.
+## Still to do
 
-- **title** --- a loose cluster of small orbiting marks settling into a loose
-  ring, one gold splash off-centre (a cohort coming together)
-- **evan** (cybernetic governance) --- a single feedback loop drawn as one
-  continuous confident stroke, a gold node where it closes
-- **jake** (cybernetic approaches to law reform) --- a pair of scales redrawn as
-  a balance of two looping curves, one gold pan
-- **liz** (systemic leadership in polycrises) --- many tangled strokes
-  converging toward one steady gold thread pulling through
-- **sui** (homeostat) --- four coupled needles seeking equilibrium, one gold
-- **nadereh** (transformative learning in creativity) --- a plain form unfolding
-  into a more open one, a gold splash at the moment of change
-- **section breaks** (morning tea / lunch / wrap) --- a single empty vessel or a
-  low horizon line, one small gold mark; keep these especially sparse
+The twelve presenters who hadn't sent slides have text-only dividers (which look
+fine on their own). Once their topics firm up, add a subject line below and
+generate: Amy Wardrop, Tom Chan, Bek Conroy, Matthew Heffernan, Bill McAlister,
+Dominika Janus, Charlie Paulk, Joshua Castle, Thomas Griffiths, Gareth Jones,
+Thomas McEvoy Zafiropulos, Zhuotao Fang.
 
-For the twelve students still to send slides, add a subject line here as their
-topic firms up, then regenerate.
+Keep the subject tangential --- a visual metaphor, not a literal diagram of the
+research. The style thrives on economy: one subject, a few strokes, one gold
+splash. Expect to re-roll; the first pass at Jake's came back as an ornate,
+literal pair of scales before being reworded into the lattice.
