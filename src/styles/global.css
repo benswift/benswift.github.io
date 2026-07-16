@@ -198,8 +198,9 @@ code {
   font-size: 0.8em;
 }
 
+/* One signal only (the tinted chip); the text inherits the body colour so
+   code-dense paragraphs don't read as confetti. */
 :not(pre) > code {
-  color: color-mix(in srgb, var(--highlight-color) 55%, white);
   background: color-mix(in srgb, var(--highlight-color) 10%, var(--bg-soft));
   padding: 0.12em 0.4em;
   border-radius: 4px 0 4px 4px;
@@ -273,16 +274,16 @@ blockquote {
   font-weight: 600;
 }
 
-/* Post metadata */
+/* Post metadata. Upright, not italic: Fraunces' italic is decorative enough
+   that small grey metadata set in it reads as ornament; italic is reserved
+   for emphasis. */
 .post-date {
-  font-style: italic;
   color: var(--text-grey);
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 
 .post-subtitle {
-  font-style: italic;
   color: var(--text-grey);
   margin-bottom: 2em;
 }
@@ -294,8 +295,6 @@ blockquote {
 
 .bibliography .pub-item {
   margin-bottom: 1.5rem;
-  padding-left: 1rem;
-  border-left: 3px solid var(--brand-soft);
 }
 
 .bibliography .pub-title {
@@ -313,7 +312,6 @@ blockquote {
 }
 
 .bibliography .pub-venue {
-  font-style: italic;
   color: var(--text-grey);
   font-size: 0.9em;
 }
@@ -628,8 +626,6 @@ sup a {
 
   .bibliography .pub-item {
     margin-bottom: 0.4rem;
-    padding-left: 0.75rem;
-    border-left-width: 2px;
     font-size: 0.8rem;
     line-height: 1.35;
   }
