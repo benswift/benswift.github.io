@@ -18,39 +18,37 @@ plagiarism because I wrote all the content on that website too :)
 
 :::
 
-Large language models (LLMs) are everywhere, but how many people actually
-understand how they work? Not the hand-wavy "they predict the next word"
-explanation, but the actual mechanics of how. That's what
+Large language models (LLMs) are everywhere, and plenty of people can recite the
+hand-wavy "they predict the next word" explanation of how they work; far fewer
+understand the actual mechanics. That's what
 [LLMs Unplugged](https://www.llmsunplugged.org), a new teaching resource I've
 been working on for the last year or so, is for.
 
-The core insight is dead simple: language models predict the next word by
-counting patterns. A bigram model asks "after seeing word X, what usually comes
-next?" You can teach this with pen, paper, and dice---no computers required.
-Learners manually count word transitions, record them in a grid, then roll dice
-to generate text. The probabilistic nature becomes tangible instead of
-mysterious.
+The idea is dead simple: language models predict the next word by counting
+patterns. A bigram model asks "after seeing word X, what usually comes next?"
+You can teach this with pen, paper, and dice---no computers required. Learners
+manually count word transitions, record them in a grid, then roll dice to
+generate text. The probabilistic nature becomes tangible instead of mysterious.
 
 The "unplugged" framing is borrowed: this builds on the
 [CS Unplugged](https://www.csunplugged.org/) tradition of teaching computer
-science concepts without computers. That project has brilliant
-activities for teaching algorithms, binary numbers, and compression. But there's
-a gap when it comes to language models specifically[^gap].
+science concepts without computers. That project has brilliant activities for
+teaching algorithms, binary numbers, and compression. But there's a gap when it
+comes to language models specifically[^gap].
 
 [^gap]:
     CS Unplugged does have some machine learning activities, but they focus on
     classification rather than generative models.
 
 The unplugged approach has real pedagogical advantages. The activity is
-transparent: when you're physically counting transitions and filling in a
-grid, there's no black box, and you can see exactly where the probabilities
-come from. It's accessible, too: you don't need computers, coding skills, or
-expensive infrastructure, just paper and dice. Rolling dice to generate text
-is also surprisingly fun (honestly I think this is just as good as a team
-bonding or bucks'-night activity, but the learning is real). And once you've
-built a bigram model by hand, the jump to understanding GPT becomes
-conceptual rather than magical, which is the transfer we're actually aiming
-for.
+transparent: when you're physically counting transitions and filling in a grid,
+there's no black box, and you can see exactly where the probabilities come from.
+It's accessible, too: you don't need computers, coding skills, or expensive
+infrastructure, just paper and dice. Rolling dice to generate text is also
+surprisingly fun (honestly I think this is just as good as a team bonding or
+bucks'-night activity, but the learning is real). And once you've built a bigram
+model by hand, the jump to understanding GPT becomes conceptual rather than
+magical, which is the transfer we're actually aiming for.
 
 We've tested this with hundreds of participants across wildly different
 contexts: school students (12+), undergrads, senior public servants, educators,
@@ -91,8 +89,8 @@ cat sat on the cat sat on the..."
 
 Then you can talk about how real language models address these limitations:
 bigger context windows, attention mechanisms, and training on trillions of
-tokens instead of a few paragraphs. Suddenly the path from your
-pencil-and-paper model to ChatGPT or Claude or Gemini is a little clearer.
+tokens instead of a few paragraphs. Suddenly the path from your pencil-and-paper
+model to ChatGPT or Claude or Gemini is a little clearer.
 
 This approach teaches the fundamental mechanism of language models, but it
 doesn't capture everything: the scale really is incomparable (a few hundred
@@ -104,11 +102,11 @@ deeply, the extensions to more sophisticated models become natural questions.
 words had relationships beyond just sequence?" leads to embeddings. "What if we
 could focus on relevant parts of the context?" leads to attention. And there are
 LLMs Unplugged lessons which cover all these topics and more. The unplugged
-approach gives you the conceptual foundation: rather than replicating
-production LLMs, it tries to make the core ideas understandable.
+approach gives you the conceptual foundation: rather than replicating production
+LLMs, it tries to make the core ideas understandable.
 
-The fundamentals are solid, but there's more work to do---in particular to
-road test this in a wide range of classrooms (and boardrooms). The bones of the
+The fundamentals are solid, but there's more work to do---in particular to road
+test this in a wide range of classrooms (and boardrooms). The bones of the
 activity are the same, but there are always going to be tweaks which can help it
 land for a particular audience.
 
@@ -129,9 +127,9 @@ into the implementation details or contribute.
 
 :::
 
-The best way to understand how something works is to build it yourself
-(honestly, this is my approach to software development as well). Even if your
-version is a dramatically simplified pencil-and-paper sketch, the act of
-construction creates an understanding that no amount of explanation can match.
-That's what _LLMs Unplugged_ is about: giving people the tools to build their
-own understanding of language models, one dice roll at a time.
+The best way to understand how something works is to build it yourself (this is
+my approach to software development as well). Even if your version is a
+dramatically simplified pencil-and-paper sketch, the act of construction creates
+an understanding that no amount of explanation can match. That's what _LLMs
+Unplugged_ is about: giving people the tools to build their own understanding of
+language models, one dice roll at a time.
