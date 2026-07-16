@@ -302,6 +302,12 @@ blockquote {
   margin-bottom: 2rem;
 }
 
+.bibliography .pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .bibliography .pub-item {
   margin-bottom: 1.5rem;
 }
@@ -311,8 +317,10 @@ blockquote {
   margin-bottom: 0.25rem;
 }
 
+/* Whole-title links: entry context conveys interactivity, so no underline. */
 .bibliography .pub-title a {
   color: var(--brand-1);
+  text-decoration: none;
 }
 
 .bibliography .pub-authors {

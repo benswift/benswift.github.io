@@ -40,36 +40,38 @@ const years = Object.keys(gigsByYear).sort((a, b) => b.localeCompare(a))
   {years.map((year) => (
     <div class="year-section">
       <h3 id={`perf-${year}`}>{year}</h3>
-      {gigsByYear[year].map((gig) => (
-        <div class="pub-item">
-          <p class="pub-title">
-            <a href={gig.url}>{gig.title}</a>
-          </p>
-          <p class="pub-authors">
-            Ben Swift{gig.artists && gig.artists.length > 0 && `, ${gig.artists.map((a) => a.name).join(", ")}`}
-          </p>
-          {gig.event && (
-            <p class="pub-venue">
-              {gig.event_url ? (
-                <a href={gig.event_url} target="_blank">{gig.event}</a>
-              ) : (
-                gig.event
-              )}
+      <ul class="pub-list">
+        {gigsByYear[year].map((gig) => (
+          <li class="pub-item">
+            <p class="pub-title">
+              <a href={gig.url}>{gig.title}</a>
             </p>
-          )}
-          {gig.venue && <p class="pub-venue">{gig.venue}</p>}
-          {(gig.videos?.length || gig.doi) && (
-            <p class="pub-pdf">
-              {gig.videos?.map((v, i) => (
-                <>{i > 0 && " · "}<a href={v.url} target="_blank">{v.label ?? "video"}</a></>
-              ))}
-              {gig.doi && (
-                <>{gig.videos?.length ? " · " : ""}<a href={`https://doi.org/${gig.doi}`}>DOI</a></>
-              )}
+            <p class="pub-authors">
+              Ben Swift{gig.artists && gig.artists.length > 0 && `, ${gig.artists.map((a) => a.name).join(", ")}`}
             </p>
-          )}
-        </div>
-      ))}
+            {gig.event && (
+              <p class="pub-venue">
+                {gig.event_url ? (
+                  <a href={gig.event_url} target="_blank" rel="noopener">{gig.event}</a>
+                ) : (
+                  gig.event
+                )}
+              </p>
+            )}
+            {gig.venue && <p class="pub-venue">{gig.venue}</p>}
+            {(gig.videos?.length || gig.doi) && (
+              <p class="pub-pdf">
+                {gig.videos?.map((v, i) => (
+                  <>{i > 0 && " · "}<a href={v.url} target="_blank" rel="noopener" aria-label={`${v.label ?? "video"}: ${gig.title}`}>{v.label ?? "video"}</a></>
+                ))}
+                {gig.doi && (
+                  <>{gig.videos?.length ? " · " : ""}<a href={`https://doi.org/${gig.doi}`} aria-label={`DOI: ${gig.title}`}>DOI</a></>
+                )}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
     </div>
   ))}
 </div>

@@ -99,7 +99,7 @@ const phrases = [
         <dt>Venue</dt>
         <dd>
           {venue_url ? <a href={venue_url}>{venue ?? venue_url}</a> : venue}
-          {archived_venue_url && <> (<a href={archived_venue_url}>archived</a>)</>}
+          {archived_venue_url && <> (<a href={archived_venue_url} aria-label="archived venue page">archived</a>)</>}
         </dd>
       </>
     )}
@@ -108,7 +108,7 @@ const phrases = [
         <dt>Event</dt>
         <dd>
           {event_url ? <a href={event_url}>{event ?? "Event page"}</a> : event}
-          {archived_event_url && <> (<a href={archived_event_url}>archived</a>)</>}
+          {archived_event_url && <> (<a href={archived_event_url} aria-label="archived event page">archived</a>)</>}
         </dd>
       </>
     )}

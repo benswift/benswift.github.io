@@ -15,26 +15,28 @@ const years = Object.keys(pubsByYear).sort((a, b) => b.localeCompare(a))
   {years.map((year) => (
     <div class="year-section">
       <h3 id={year}>{year}</h3>
-      {pubsByYear[year].map((pub) => (
-        <div class="pub-item" id={pub.key}>
-          <p class="pub-title">
-            {pub.doi ? (
-              <a href={`https://doi.org/${pub.doi}`} target="_blank">{pub.title}</a>
-            ) : pub.url ? (
-              <a href={pub.url} target="_blank">{pub.title}</a>
-            ) : (
-              <span>{pub.title}</span>
-            )}
-          </p>
-          <p class="pub-authors">{pub.authors}</p>
-          {pub.venue && <p class="pub-venue">{pub.venue}</p>}
-          {pub.pdfPath && (
-            <p class="pub-pdf">
-              <a href={pub.pdfPath} target="_blank" title="Download PDF" aria-label="Download PDF">PDF</a>
+      <ul class="pub-list">
+        {pubsByYear[year].map((pub) => (
+          <li class="pub-item" id={pub.key}>
+            <p class="pub-title">
+              {pub.doi ? (
+                <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener">{pub.title}</a>
+              ) : pub.url ? (
+                <a href={pub.url} target="_blank" rel="noopener">{pub.title}</a>
+              ) : (
+                <span>{pub.title}</span>
+              )}
             </p>
-          )}
-        </div>
-      ))}
+            <p class="pub-authors">{pub.authors}</p>
+            {pub.venue && <p class="pub-venue">{pub.venue}</p>}
+            {pub.pdfPath && (
+              <p class="pub-pdf">
+                <a href={pub.pdfPath} target="_blank" rel="noopener" aria-label={`Download PDF: ${pub.title}`}>PDF</a>
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
     </div>
   ))}
 </div>
