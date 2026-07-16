@@ -12,12 +12,12 @@ language models
 [stochastic parrots](https://dl.acm.org/doi/10.1145/3442188.3445922),
 [Sam Altman](https://en.wikipedia.org/wiki/Sam_Altman)
 [replied](https://x.com/sama/status/1599471830255177728) "i am a stochastic
-parrot, and so r u". The exchange captures everything
-wrong with how we talk about LLMs. Bender meant something specific and damning:
-these systems produce coherent-looking text without any of the cognitive
-machinery we associate with meaning. Altman meant something blithe and
-dismissive: you can't really tell the difference, can you. The two are arguing
-past each other because we lack clean vocabulary for what's at stake.
+parrot, and so r u". The exchange captures everything wrong with how we talk
+about LLMs. Bender meant something specific and damning: these systems produce
+coherent-looking text without any of the cognitive machinery we associate with
+meaning. Altman meant something blithe and dismissive: you can't really tell the
+difference, can you. The two are arguing past each other because we lack clean
+vocabulary for what's at stake.
 
 Here's a Venn diagram that might help.
 
@@ -74,9 +74,9 @@ they're doing very sophisticated statistics. Whether that distinction holds up
 is the actual debate. Chalmers has
 [taken it on directly](https://arxiv.org/abs/2303.07103), and
 [Murray Shanahan](https://www.doc.ic.ac.uk/~mpsha/) has
-[argued](https://arxiv.org/abs/2212.03551) that we systematically
-over-attribute mental states to LLMs because of the language interface. There's
-a [careful cognitive-science version](https://arxiv.org/abs/2301.06627) of the
+[argued](https://arxiv.org/abs/2212.03551) that we systematically over-attribute
+mental states to LLMs because of the language interface. There's a
+[careful cognitive-science version](https://arxiv.org/abs/2301.06627) of the
 same argument: LLMs have strong "formal linguistic competence" but weak
 "functional" competence, sounding right without thinking right.
 
@@ -100,6 +100,6 @@ argued for separately.
 
 We also built the philosophical zombie, not on purpose, and probably not
 perfectly. The lights might be on after all, in some form none of us would
-recognise. The region consciousness researchers had been gesturing at as a
-hypothetical now has actual residents, and we have to live with them. That's a
+recognise. The region consciousness researchers spent decades gesturing at as a
+hypothetical is now inhabited, and we have to live with the tenants. That's a
 strange thing to have done in a decade.
