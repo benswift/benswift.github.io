@@ -19,3 +19,28 @@
 .reveal .slides section.impact.talk {
   background: var(--anu-teal);
 }
+
+/* `todo` placeholder slides (phd-offsite-2026 deck): a dim "slides to come"
+   marker for presenters whose slides haven't arrived yet. */
+.reveal .slides section.todo em {
+  opacity: 0.4;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+/* `media` slides (phd-offsite-2026 deck): a full-bleed <video> or <iframe>,
+   filling the slide canvas the way a background image does. */
+.reveal .slides section.media {
+  padding: 0;
+}
+.reveal .slides section.media :is(video, iframe) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.reveal .slides section.media video {
+  object-fit: contain;
+  background: #000;
+}

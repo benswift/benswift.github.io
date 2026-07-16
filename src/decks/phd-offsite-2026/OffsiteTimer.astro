@@ -1,0 +1,301 @@
+---
+// Subtle, schedule-aware timer overlay for the PhD offsite deck.
+//
+// Rendered as a plain (non-hydrated) component: astromotion's slide splitter
+// wraps deck imports into a Reveal <section>, which trips Astro's
+// client-directive import check (it only sees root-level imports). A static
+// .astro component with a bundled <script> sidesteps that entirely while still
+// shipping client JS.
+//
+// The script builds a fixed overlay on <body> (so it survives Reveal hiding the
+// off-screen slides), watches navigation, and shows the current speaker's
+// countdown plus a whole-day drift badge. Controls: T starts / re-anchors the
+// day clock at the current slide, H hides.
+---
+
+<div id="offsite-timer-mount" hidden></div>
+
+<script>
+  interface Segment {
+    id: string;
+    label: string;
+    start: string;
+    mins: number;
+  }
+
+  // The day's program. Each `id` matches a `seg-<id>` class on that segment's
+  // divider slide in slides.deck.mdx.
+  const SCHEDULE: Segment[] = [
+    { id: "intro", label: "Welcome & intro", start: "09:00", mins: 15 },
+    { id: "evan", label: "Evan Skinner", start: "09:15", mins: 15 },
+    { id: "jake", label: "Jake Blight", start: "09:30", mins: 15 },
+    { id: "amy", label: "Amy Wardrop", start: "09:45", mins: 15 },
+    { id: "tom-chan", label: "Tom Chan", start: "10:00", mins: 15 },
+    { id: "bek", label: "Bek Conroy", start: "10:15", mins: 15 },
+    { id: "break-am", label: "Morning tea", start: "10:30", mins: 15 },
+    { id: "matthew", label: "Matthew Heffernan", start: "10:45", mins: 15 },
+    { id: "bill", label: "Bill McAlister", start: "11:00", mins: 15 },
+    { id: "liz", label: "Liz Skelton", start: "11:15", mins: 15 },
+    { id: "dominika", label: "Dominika Janus", start: "11:30", mins: 15 },
+    { id: "break-mid", label: "Short break", start: "11:45", mins: 15 },
+    { id: "charlie", label: "Charlie Paulk", start: "12:00", mins: 5 },
+    { id: "joshua", label: "Joshua Castle", start: "12:05", mins: 5 },
+    { id: "griffiths", label: "Thomas Griffiths", start: "12:10", mins: 5 },
+    { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5 },
+    { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5 },
+    { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5 },
+    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5 },
+    { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5 },
+    { id: "lunch", label: "Lunch", start: "12:45", mins: 60 },
+    { id: "skills", label: "Skills: working with Claude", start: "13:45", mins: 90 },
+    { id: "break-pm", label: "Afternoon tea", start: "15:15", mins: 15 },
+    { id: "admin", label: "Admin updates", start: "15:30", mins: 15 },
+    { id: "discussion", label: "Discussion & feedback", start: "15:45", mins: 45 },
+    { id: "wrap", label: "Wrap-up & close", start: "16:30", mins: 15 },
+  ];
+
+  const toMin = (hhmm: string) => {
+    const [h, m] = hhmm.split(":").map((n) => parseInt(n, 10));
+    return h * 60 + m;
+  };
+  const dayStart = SCHEDULE.length ? toMin(SCHEDULE[0].start) : 0;
+  const byId = new Map(SCHEDULE.map((s) => [s.id, s]));
+  const plannedOffsetSec = (seg: Segment) => (toMin(seg.start) - dayStart) * 60;
+
+  const fmt = (sec: number) => {
+    const neg = sec < 0;
+    const s = Math.abs(Math.round(sec));
+    return `${neg ? "-" : ""}${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, "0")}`;
+  };
+
+  // --- overlay ------------------------------------------------------------
+  const el = document.createElement("div");
+  el.className = "offsite-timer idle";
+  el.setAttribute("role", "button");
+  el.tabIndex = -1;
+  el.title =
+    "Click or press T to start / re-anchor the day clock. Press H to hide.";
+  el.innerHTML =
+    '<div class="who">—</div>' +
+    '<div class="count count-idle">—:—</div>' +
+    '<div class="drift drift-idle"><span class="dot"></span>not started</div>';
+  document.body.appendChild(el);
+  const whoEl = el.querySelector(".who") as HTMLElement;
+  const countEl = el.querySelector(".count") as HTMLElement;
+  const driftEl = el.querySelector(".drift") as HTMLElement;
+
+  let started = false;
+  let t0 = 0;
+  let anchorSec = 0;
+  let currentId: string | null = null;
+  let enteredAt = 0;
+
+  const detectSeg = (): string | null => {
+    let s: Element | null =
+      document.querySelector(".reveal .slides section.present") ??
+      document.querySelector(".reveal .slides > section");
+    for (; s; s = s.previousElementSibling) {
+      const m = s.className.match(/\bseg-([a-z0-9-]+)\b/);
+      if (m) return m[1];
+    }
+    return null;
+  };
+
+  const setClass = (node: HTMLElement, base: string, state: string) => {
+    node.className = `${base} ${base}-${state}`;
+  };
+
+  const render = () => {
+    const seg = currentId ? byId.get(currentId) ?? null : null;
+    whoEl.textContent = seg ? seg.label : "—";
+    el.classList.toggle("idle", !started);
+
+    if (!seg) {
+      countEl.textContent = "—:—";
+      setClass(countEl, "count", "idle");
+      setClass(driftEl, "drift", "idle");
+      driftEl.lastChild!.textContent = started ? "on schedule" : "not started";
+      driftEl.insertBefore(dot(), driftEl.firstChild);
+      return;
+    }
+
+    const spent = started ? (Date.now() - enteredAt) / 1000 : 0;
+    const remaining = seg.mins * 60 - spent;
+    countEl.textContent = fmt(remaining);
+    setClass(
+      countEl,
+      "count",
+      !started ? "idle" : remaining < 0 ? "over" : remaining <= 60 ? "soon" : "ok",
+    );
+
+    let driftText = "not started";
+    let driftState = "idle";
+    if (started) {
+      const virtualElapsed = (enteredAt - t0) / 1000 + anchorSec;
+      const drift = virtualElapsed - plannedOffsetSec(seg);
+      driftText =
+        Math.abs(drift) <= 30
+          ? "on schedule"
+          : drift > 0
+            ? `${fmt(drift)} behind`
+            : `${fmt(-drift)} ahead`;
+      driftState = drift <= 30 ? "ok" : drift <= 180 ? "warn" : "over";
+    }
+    setClass(driftEl, "drift", driftState);
+    driftEl.innerHTML = "";
+    driftEl.appendChild(dot());
+    driftEl.appendChild(document.createTextNode(driftText));
+  };
+
+  const dot = () => {
+    const d = document.createElement("span");
+    d.className = "dot";
+    return d;
+  };
+
+  const onSlide = () => {
+    const id = detectSeg();
+    if (id !== currentId) {
+      currentId = id;
+      if (started) enteredAt = Date.now();
+    }
+    render();
+  };
+
+  const start = () => {
+    currentId = detectSeg();
+    const seg = currentId ? byId.get(currentId) : null;
+    t0 = Date.now();
+    anchorSec = seg ? plannedOffsetSec(seg) : 0;
+    enteredAt = t0;
+    started = true;
+    render();
+  };
+
+  el.addEventListener("click", start);
+  window.addEventListener("keydown", (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const tag = (e.target as HTMLElement)?.tagName;
+    if (tag === "INPUT" || tag === "TEXTAREA") return;
+    if (e.key === "t" || e.key === "T") start();
+    else if (e.key === "h" || e.key === "H") el.classList.toggle("hidden");
+  });
+
+  const attach = () => {
+    const r = document.querySelector(".reveal");
+    if (!r) return false;
+    r.addEventListener("slidechanged", onSlide);
+    r.addEventListener("ready", onSlide);
+    onSlide();
+    return true;
+  };
+  if (!attach()) {
+    const poll = setInterval(() => {
+      if (attach()) clearInterval(poll);
+    }, 200);
+  }
+  setInterval(render, 500);
+  render();
+</script>
+
+<style is:global>
+  .offsite-timer {
+    position: fixed;
+    right: 1.1rem;
+    bottom: 1.1rem;
+    z-index: 1000;
+    min-width: 8.5rem;
+    padding: 0.5rem 0.7rem 0.55rem;
+    border-radius: 8px 0 8px 8px; /* the site's asymmetric corner */
+    background: rgba(20, 16, 26, 0.72);
+    backdrop-filter: blur(6px);
+    color: #e0e0e0;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
+      monospace;
+    line-height: 1.15;
+    text-align: right;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.62;
+    transition: opacity 0.25s ease;
+  }
+  .offsite-timer:hover {
+    opacity: 0.95;
+  }
+  .offsite-timer.idle {
+    opacity: 0.4;
+  }
+  .offsite-timer.hidden {
+    display: none;
+  }
+  .offsite-timer .who {
+    font-size: 0.62rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    max-width: 12rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .offsite-timer .count {
+    font-size: 1.65rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+  }
+  .offsite-timer .count-ok {
+    color: #56d364;
+  }
+  .offsite-timer .count-soon {
+    color: #e3b341;
+  }
+  .offsite-timer .count-over {
+    color: #f85149;
+    animation: offsite-pulse 1.4s ease-in-out infinite;
+  }
+  .offsite-timer .count-idle {
+    color: #9b8fb0;
+  }
+  .offsite-timer .drift {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.3rem;
+    opacity: 0.9;
+  }
+  .offsite-timer .dot {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: currentColor;
+    flex: none;
+  }
+  .offsite-timer .drift-ok {
+    color: #56d364;
+  }
+  .offsite-timer .drift-warn {
+    color: #e3b341;
+  }
+  .offsite-timer .drift-over {
+    color: #f85149;
+  }
+  .offsite-timer .drift-idle {
+    color: #9b8fb0;
+  }
+  @keyframes offsite-pulse {
+    50% {
+      opacity: 0.55;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .offsite-timer .count-over {
+      animation: none;
+    }
+    .offsite-timer {
+      transition: none;
+    }
+  }
+</style>
