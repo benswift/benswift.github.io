@@ -1,6 +1,7 @@
 ---
 title: "COMP4020/8020: Rapid Prototyping for the Web"
-description: "Designing a new ANU course on building web apps with coding
+description:
+  "Designing a new ANU course on building web apps with coding
   agents---studio-based, prototype-driven, moving beyond naive vibecoding."
 tags: [teaching, comp4020]
 ---
@@ -14,27 +15,27 @@ in a series---see [all posts tagged comp4020](/blog/tag/comp4020/).
 
 :::
 
-Here's the pitch. LLM-based coding agents, which run tools (e.g. edit files,
-run code, search the web) in a loop to achieve a goal, offer a powerful
-workflow for developing software. This is especially true for application domains which are
+Here's the pitch. LLM-based coding agents, which run tools (e.g. edit files, run
+code, search the web) in a loop to achieve a goal, offer a powerful workflow for
+developing software. This is especially true for application domains which are
 well-represented in LLM training sets---like the web.
 
 Moving beyond naive "vibecoding", this course provides a studio-based "iterate
 and test with working prototypes" approach to rapidly prototyping web apps. In
 the weekly lectures students will learn fundamental concepts and practical
-skills for harnessing an agentic coding workflow. In the weekly "studio crit
-session" tutorials, students will demo their work-in-progress prototypes and
-receive feedback from peers and instructors. By the end of the course each
-student will have designed, developed and deployed _multiple_ web app prototypes
-using a rapid, feedback-driven process.
+skills for getting the most out of an agentic coding workflow. In the weekly
+"studio crit session" tutorials, students will demo their work-in-progress
+prototypes and receive feedback from peers and instructors. By the end of the
+course each student will have designed, developed and deployed _multiple_ web
+app prototypes using a rapid, feedback-driven process.
 
-The background here is worth a word. Most people point to the ChatGPT release
-in November 2022 as an inflection point in the use and influence of LLMs in
-modern life, but for software developers
-it's Claude Code's release in May 2025 which has made the biggest change to the
-way we do (some of) our job. I don't subscribe to either the "booster" or
-"doomer" end of the spectrum with AI/LLM tools, but I am curious about the way
-they'll change how _people_ make cool stuff.
+The background here is worth a word. Most people point to the ChatGPT release in
+November 2022 as an inflection point in the use and influence of LLMs in modern
+life, but for software developers it's Claude Code's release in May 2025 which
+has made the biggest change to the way we do (some of) our job. I don't
+subscribe to either the "booster" or "doomer" end of the spectrum with AI/LLM
+tools, but I am curious about the way they'll change how _people_ make cool
+stuff.
 
 Anyway, the ANU School of Computing (where I was formerly a faculty member,
 before moving to the School of Cybernetics in 2021) has asked me to create a new
@@ -43,8 +44,8 @@ course _I_ want to create, anyway.
 
 :::info
 
-What follows are the draft learning outcomes---subject to change as the
-course develops.
+What follows are the draft learning outcomes---subject to change as the course
+develops.
 
 :::
 
