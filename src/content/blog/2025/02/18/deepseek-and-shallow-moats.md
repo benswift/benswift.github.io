@@ -77,11 +77,11 @@ For individual educators, DeepSeek's release reinforces what many of us have
 already realised: the specific model matters less than how we integrate AI
 capabilities into our pedagogical practice. Whether students use GPT-4, Claude
 or DeepSeek (and let's face it, they _will_) the fundamental challenges remain
-the same. How do we design assessments that meaningfully evaluate learning in an
-AI-augmented world? How do we help students develop the critical thinking skills
-to effectively collaborate with AI tools?
+the same: designing assessments that meaningfully evaluate learning in an
+AI-augmented world, and helping students develop the critical thinking skills to
+effectively collaborate with AI tools.
 
-For university administrators and planners, these developments suggest a few key
+For university administrators and planners, these developments suggest a few
 principles:
 
 1. avoid long-term exclusive commitments to specific AI platforms or providers
@@ -89,23 +89,22 @@ principles:
 3. focus on building adaptable infrastructure that can accommodate multiple AI
    tools
 
-There may be other upsides to these developments. As model training and deployment
-costs decrease, universities may find it increasingly feasible to develop
-specialised models for specific academic domains or research applications. Such
-projects could focus on specific institutional needs rather than attempting to
-compete with general-purpose models.
+There may be other upsides to these developments. As model training and
+deployment costs decrease, universities may find it increasingly feasible to
+develop specialised models for specific academic domains or research
+applications. Such projects could focus on specific institutional needs rather
+than attempting to compete with general-purpose models.
 
-What DeepSeek R1 really shows is that in the AI era, competitive advantage will
-come not from controlling access to certain models, but from skillfully
-integrating AI capabilities into our core educational mission. Universities that
+What DeepSeek R1 really shows is that in the AI era, competitive advantage comes
+from skillfully integrating AI capabilities into our core educational mission
+rather than from controlling access to particular models. Universities that
 build their strategies around particular AI platforms risk finding themselves
 trapped in technological dead ends, while those that focus on developing
 institutional AI literacy and adaptable frameworks will be better positioned to
 embrace whatever technological developments emerge.
 
-The real moat in higher education isn't technological; it never has been. It's
-the ability to teach well and generate new knowledge. Technology is merely a
-tool---in reality, a _system_ of tools, people and other resources---in service
-of these fundamental goals. The winners won't be those who bet early on the
-right AI platform, but those who most effectively help their communities master
-the art of learning and creating in an AI-augmented world.
+The real moat in higher education has always been the ability to teach well and
+generate new knowledge. Technology is merely a tool---in reality, a _system_ of
+tools, people and other resources---in service of these fundamental goals. The
+winners will be the institutions that most effectively help their communities
+master the art of learning and creating in an AI-augmented world.
