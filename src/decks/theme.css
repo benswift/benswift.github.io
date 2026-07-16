@@ -33,6 +33,7 @@
 .reveal .slides section.media {
   padding: 0;
 }
+
 .reveal .slides section.media :is(video, iframe) {
   position: absolute;
   inset: 0;
@@ -40,6 +41,7 @@
   height: 100%;
   border: 0;
 }
+
 .reveal .slides section.media video {
   object-fit: contain;
   background: #000;
