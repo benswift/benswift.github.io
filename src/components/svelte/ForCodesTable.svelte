@@ -64,7 +64,7 @@
   .for-codes-table th,
   .for-codes-table td {
     padding: 0.5rem;
-    text-align: left;
+    text-align: start;
     border-bottom: 1px solid var(--divider);
   }
 

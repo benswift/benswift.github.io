@@ -138,7 +138,7 @@ h3 {
   color: var(--brand-1);
   text-decoration: none;
   font-weight: 400;
-  margin-left: 0.5ch;
+  margin-inline-start: 0.5ch;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
@@ -228,7 +228,7 @@ pre {
 
 /* Blockquotes */
 blockquote {
-  border-left: 3px solid var(--brand-1);
+  border-inline-start: 3px solid var(--brand-1);
   margin: 1rem 0;
   padding: 0.5rem 1rem;
   color: var(--text-2);
@@ -420,7 +420,7 @@ blockquote {
 .post-item-links {
   display: inline-flex;
   gap: 0.75rem;
-  margin-left: 0.5rem;
+  margin-inline-start: 0.5rem;
   font-size: 0.875rem;
 }
 
@@ -460,7 +460,7 @@ table {
 th,
 td {
   padding: 0.5rem;
-  text-align: left;
+  text-align: start;
   border-bottom: 1px solid var(--divider);
 }
 
@@ -494,7 +494,7 @@ hr {
 /* Lists in prose */
 ul,
 ol {
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
 }
 
 li {
@@ -661,7 +661,7 @@ sup a {
   /* Tighter list spacing */
   ul,
   ol {
-    padding-left: 1.25rem;
+    padding-inline-start: 1.25rem;
   }
 
   li {
