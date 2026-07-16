@@ -36,9 +36,9 @@
     // The Fonts API registers families under hashed names, so resolve the
     // actual stack from the CSS variable rather than hardcoding a name.
     const monoStack =
-      typeof document !== "undefined" ?
-        getComputedStyle(document.documentElement).getPropertyValue("--font-family-mono").trim()
-      : "";
+      typeof document !== "undefined"
+        ? getComputedStyle(document.documentElement).getPropertyValue("--font-family-mono").trim()
+        : "";
     return `700 ${size}px ${monoStack || 'ui-monospace, "SF Mono", monospace'}`;
   }
 
