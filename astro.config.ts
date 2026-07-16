@@ -54,6 +54,12 @@ export default defineConfig({
   image: {
     layout: "constrained",
   },
+  // ClientRouter already hover-prefetches; viewport strategy also covers touch
+  // devices (no hover) and respects data-saver.
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: "viewport",
+  },
   redirects: {
     "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
     "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
