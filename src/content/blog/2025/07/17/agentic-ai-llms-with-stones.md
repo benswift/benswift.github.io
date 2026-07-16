@@ -2,8 +2,7 @@
 title: "Agentic AI: LLMs with stones"
 description:
   "Agentic AI is about giving LLMs tools to act in the world without asking
-  first. The real shift isn't new capabilities---it's the removal of the human
-  bottleneck."
+  first---removing the human bottleneck."
 tags:
   - ai
 ---
@@ -46,8 +45,7 @@ Here's how it works in practice:
   - use tool `calendar` to "add a meeting with John at 10am tomorrow"
   - use tool `weather` to "check the weather forecast for Sydney next Tuesday"
   - use tool `fire-ze-missiles` to "launch a missile at coordinates 40.7128,
-    -74.0060" . it can say "add a meeting to the calendar at 10am tomorrow using
-    the `calendar` tool"
+    -74.0060"
 
 [^tool-call-llm]:
     The LLM needs to be specially trained to support this, but all of the main
@@ -99,9 +97,8 @@ the LLM's words told us to do more life-impacting things, like
 or worse. Whenever LLMs are used by humans they have the (indirect) ability to
 affect the world.
 
-In my opinion the best way to think about this shift isn't that LLMs can now
-influence the world; it's that now they can do it without asking, and this
-tightens the feedback loop. This means:
+In my opinion the important change is that LLMs can now influence the world
+_without asking_, and this tightens the feedback loop. This means:
 
 1. first, there's now no longer a human in the loop (so now there's no human to
    say "hey, that's a dumb idea" and refuse to do it)
