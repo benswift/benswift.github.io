@@ -55,10 +55,10 @@ npm install -g @playwright/mcp
 
 ### 2. Add mise shims to PATH for non-interactive contexts
 
-Here's where things got interesting. My [mise](https://mise.jdx.dev/) setup was
-working fine in the terminal (where I have `mise activate zsh` in my `.zshrc`),
-but IDEs like Zed don't run interactive shells---they use non-interactive
-contexts that skip `.zshrc` entirely[^shell-contexts].
+My [mise](https://mise.jdx.dev/) setup was working fine in the terminal (where I
+have `mise activate zsh` in my `.zshrc`), but IDEs like Zed don't run
+interactive shells---they use non-interactive contexts that skip `.zshrc`
+entirely[^shell-contexts].
 
 [^shell-contexts]:
     This is standard Unix behaviour. Interactive shells source `.zshrc` (or
@@ -99,17 +99,16 @@ going through `npx`:
 
 ## The outcome
 
-It's still not instant, but it is faster---the pause that was breaking my
-flow is (closer to) gone.
+It's still not instant, but it is faster---the pause that was breaking my flow
+is (closer to) gone.
 
-The broader lesson: `npx` is convenient for one-off commands, but a terrible
-choice for anything that runs frequently. Global installation
-plus direct binary invocation is the way to go for tools you use
-regularly[^npx-tradeoffs]. And if you're using mise (or any other tool version
-manager like [asdf](https://asdf-vm.com/) or [rtx](https://github.com/jdx/rtx)),
-remember that non-interactive contexts need explicit PATH configuration---IDEs
-and MCP servers don't get the benefits of your shell's interactive setup
-automatically.
+`npx` is convenient for one-off commands, but a terrible choice for anything
+that runs frequently. Global installation plus direct binary invocation is the
+way to go for tools you use regularly[^npx-tradeoffs]. And if you're using mise
+(or any other tool version manager like [asdf](https://asdf-vm.com/) or
+[rtx](https://github.com/jdx/rtx)), remember that non-interactive contexts need
+explicit PATH configuration---IDEs and MCP servers don't get the benefits of
+your shell's interactive setup automatically.
 
 [^npx-tradeoffs]:
     The trade-off is that you now need to update these packages manually
