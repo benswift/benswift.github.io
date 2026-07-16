@@ -18,29 +18,26 @@ require the institutional overhead of a DOI---and because the
 [standard.site](https://standard.site) spec gave me a clean way to do it.
 
 If you write something on the web and want people to be able to cite it
-reliably, you've got three options with varying trade-offs, and the identifier
-trilemma[^dilemma] is real. The first option is bare URLs: free and
-immediate. `https://benswift.me/blog/2026/02/19/...` works right now and will
-keep working for as long as I keep this domain pointed at this content. The
-problem, of course, is that "as long as I keep this domain" is doing a lot of
-work in that sentence. Domains lapse and hosting providers go away; site
-redesigns break paths. Tim Berners-Lee
-[argued in 1998](https://www.w3.org/Provider/Style/URI) that cool URIs don't
-change, but on the real web, they change all the time.
+reliably, you've got a trilemma[^dilemma]: three options, each with real
+trade-offs. The first option is bare URLs: free and immediate.
+`https://benswift.me/blog/2026/02/19/...` works right now and will keep working
+for as long as I keep this domain pointed at this content. The problem, of
+course, is that "as long as I keep this domain" is doing a lot of work in that
+sentence. Domains lapse and hosting providers go away; site redesigns break
+paths. Tim Berners-Lee [argued in 1998](https://www.w3.org/Provider/Style/URI)
+that cool URIs don't change, but on the real web, they change all the time.
 
 [^dilemma]:
-    Technically "trilemma" because there are three options; I briefly
-    called it a "dilemma" for the rhythm of the sentence, but who's that
-    pedantic?
+    Technically "trilemma" because there are three options; I briefly called it
+    a "dilemma" for the rhythm of the sentence, but who's that pedantic?
 
 The second option is DOIs, which solve the persistence problem through
-institutional infrastructure. CrossRef and DataCite maintain resolver
-services, and the academic citation ecosystem understands DOIs natively. I'm
-an academic working at a university, so this is very much the water I swim in.
-But getting a DOI means going through a registrar, and that typically means
-either publishing through a journal or paying for one yourself. For a rambling
-personal blog post about yak-shaving your email setup, that's a bit
-much[^zenodo].
+institutional infrastructure. CrossRef and DataCite maintain resolver services,
+and the academic citation ecosystem understands DOIs natively. I'm an academic
+working at a university, so this is very much the water I swim in. But getting a
+DOI means going through a registrar, and that typically means either publishing
+through a journal or paying for one yourself. For a rambling personal blog post
+about yak-shaving your email setup, that's a bit much[^zenodo].
 
 [^zenodo]:
     You _can_ get free DOIs through [Zenodo](https://zenodo.org/) by uploading
@@ -62,9 +59,9 @@ None of these are perfect. But for the specific case of "I write a blog and I
 want a persistent, self-issued, machine-readable identifier for each post," the
 AT-URI approach hits a sweet spot.
 
-For this site, the integration uses [standard.site](https://standard.site)---a shared set of
-[AT Protocol lexicons](https://atproto.com/guides/lexicon) for long-form
-publishing. There are two record types that matter:
+For this site, the integration uses [standard.site](https://standard.site)---a
+shared set of [AT Protocol lexicons](https://atproto.com/guides/lexicon) for
+long-form publishing. There are two record types that matter:
 
 `site.standard.publication` describes the blog itself (name, URL, description).
 There's one of these, stored with the rkey `self`:
@@ -148,8 +145,7 @@ Anyway, I've had this blog online for over a decade now and I _think_ it's got
 at least some Google-juice (whether that stuff even matters anymore). Changing
 all the URLs just seems like a bad idea to throw all those direct links away.
 
-The other half of the work is making the identifiers useful for citation
-tools.
+The other half of the work is making the identifiers useful for citation tools.
 Every blog post now includes
 [Google Scholar / Zotero compatible](https://scholar.google.com/intl/en/scholar/inclusion.html#indexing)
 meta tags:
@@ -207,37 +203,36 @@ still work without them. Cite me and prove me right.
 
 ## Update: discoverability in practice (2026-04-10)
 
-A few weeks after writing this, I went digging into a question the original
-post mostly hand-waved: the records are on the network, sure, but are they
-actually _discoverable_? Is anyone out there building "Bluesky for blogs"?
+A few weeks after writing this, I went digging into a question the original post
+mostly hand-waved: the records are on the network, sure, but are they actually
+_discoverable_? Is anyone out there building "Bluesky for blogs"?
 
 Turns out: yes, though without much fanfare. As of today there are 147
-`site.standard.document` records in my repo, queryable directly from the PDS
-via `com.atproto.repo.listRecords`, with the oldest going back to 2020 and the
-newest from yesterday. Every write also flies past on the ATproto firehose,
-and at least one indexer is listening.
+`site.standard.document` records in my repo, queryable directly from the PDS via
+`com.atproto.repo.listRecords`, with the oldest going back to 2020 and the
+newest from yesterday. Every write also flies past on the ATproto firehose, and
+at least one indexer is listening.
 [Standard Search](https://standard-search.octet-stream.net) is a firehose-fed
-search engine for standard.site records that uses the relay's collection
-listing to backfill history without any crawling. It launched in January 2026
-with around 3,900 documents indexed and has been growing steadily since.
+search engine for standard.site records that uses the relay's collection listing
+to backfill history without any crawling. It launched in January 2026 with
+around 3,900 documents indexed and has been growing steadily since.
 
 On the reader side, [Leaflet.pub](https://leaflet.pub), Pckt.blog, and
 Offprint.app are publishing platforms that _also_ act as readers for each
 other's content. Leaflet can render a preview of a document authored in Pckt,
 and my Astro-published posts land in the same pool, no migration required.
-Surrounding tooling is starting to show up too: Sequoia for publishing from
-the command line, astro-standard-site for Astro blogs like this one, and a
-proposed markpub markdown sub-lexicon.
+Surrounding tooling is starting to show up too: Sequoia for publishing from the
+command line, astro-standard-site for Astro blogs like this one, and a proposed
+markpub markdown sub-lexicon.
 
-The framing I missed first time round: this isn't going to be one monolithic
-"Bluesky for blogs" AppView. It's going to be N readers, search engines, and
+The framing I missed first time round: it's N readers, search engines, and
 bookmarking tools all pointed at the same record pool via the shared
-[standard.site](https://standard.site) lexicons. Which is arguably a _more_
-interesting outcome than Bluesky itself managed: publishing and reading
-decoupled at the protocol layer, rather than bundled into one vertically
-integrated app.
+[standard.site](https://standard.site) lexicons, rather than one monolithic
+"Bluesky for blogs" AppView. Which is arguably a _more_ interesting outcome than
+Bluesky itself managed: publishing and reading decoupled at the protocol layer,
+rather than bundled into one vertically integrated app.
 
-Still small, obviously. Standard Search is one person's project and the
-reader ecosystem is a handful of apps rather than a flourishing market. But
-the loop is closed (write → firehose → indexer → reader), and it's
-present-tense infrastructure, not a bet on future stuff. I'll take it.
+Still small, obviously. Standard Search is one person's project and the reader
+ecosystem is a handful of apps rather than a flourishing market. But the loop is
+closed (write → firehose → indexer → reader), and it's present-tense
+infrastructure, not a bet on future stuff. I'll take it.
