@@ -107,8 +107,17 @@ h5,
 h6 {
   margin: 1.5em 0 0.5em;
   line-height: 1.3;
-  font-weight: 700;
+  font-weight: 750;
   text-wrap: balance;
+}
+
+/* Cap Fraunces' optical sizing on large headings: the auto-selected display
+   cut has hairline thin strokes that read spindly (and a bit precious) on a
+   dark background. Pinning opsz keeps the sturdier text-size strokes. */
+h1,
+h2,
+.page-title {
+  font-variation-settings: "opsz" 28;
 }
 
 h1 {
