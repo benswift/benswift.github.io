@@ -43,19 +43,18 @@ showing:
 - **My First LM**: a hands-on activity where you build and use a language model
   with paper grids, dice, and children's books. You manually create word
   co-occurrence grids (the training phase), then use dice to sample from those
-  distributions to generate new text (the prediction phase). It's remarkably
-  effective at teaching the train-predict-sample cycle---people get it in a way
-  that no amount of explaining "transformers" or "attention mechanisms" ever
-  achieves. The activity scales up through different ideas in Large Language
-  Models---bigram/trigram models, embedding vectors, alternative sampling
-  procedures, even LoRAs---to show how the same model can behave differently
-  depending on how you use it.[^demystification]
+  distributions to generate new text (the prediction phase). It works: people
+  get the train-predict-sample cycle in a way that no amount of explaining
+  "transformers" or "attention mechanisms" ever achieves. The activity scales up
+  through different ideas in Large Language Models---bigram/trigram models,
+  embedding vectors, alternative sampling procedures, even LoRAs---to show how
+  the same model can behave differently depending on how you use
+  it.[^demystification]
 
 [^demystification]:
-    There's a particular kind of technical literacy I'm after here. Not
-    "everyone should learn to code", but rather "everyone should have access to
-    mental models that aren't just anthropomorphic vibes about what AI wants or
-    thinks."
+    There's a particular kind of technical literacy I'm after here: less
+    "everyone should learn to code" than "everyone should have access to mental
+    models beyond anthropomorphic vibes about what AI wants or thinks."
 
 Both pieces are about materiality and scale. Can you understand something
 differently when you can touch it, when it operates at human perception speed,
