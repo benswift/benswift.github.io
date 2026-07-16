@@ -267,8 +267,7 @@ whimsical quadrant names):
   <text x="320" y="70" font-size="13" class="axis-label">helpful</text>
 </svg>
 
-[^branding]:
-    The framework doesn't have a name, because I'm bad at branding... hmm.
+[^branding]: The framework doesn't have a name, because I'm bad at branding... hmm.
 
 [^ethics]:
     The moral/ethical dimension matters enormously---things like
