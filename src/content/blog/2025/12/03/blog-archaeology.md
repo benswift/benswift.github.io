@@ -18,10 +18,9 @@ in---[benswift.github.io](https://github.com/benswift/benswift.github.io)---turn
 out to be just one chapter in a longer story. A bit more digging on GitHub
 revealed earlier chapters I'd (pretty much) forgotten about.
 
-The earliest archaeological evidence dates back to August 2012 and the
-Octopress era: a fork of
-[imathis/octopress](https://github.com/imathis/octopress) that I used for a few
-months. The repo's
+The earliest archaeological evidence dates back to August 2012 and the Octopress
+era: a fork of [imathis/octopress](https://github.com/imathis/octopress) that I
+used for a few months. The repo's
 [first commit](https://github.com/benswift/octopress/commit/8dc0cb0b4b0de3c6f40674198cb2bd44aeee9b86)
 is Brandon Mathis's initial Octopress setup, and my
 [last customisation](https://github.com/benswift/octopress/commit/b317c23438fe4ad8a271e19312b04ca82e901159)
@@ -29,11 +28,11 @@ was on 8 November that year. I added Ubuntu fonts and a custom GitHub sidebar.
 
 I do remember the Octopress setup. One interesting nugget I'd forgotten showed
 up in some commit messages mentioning "new 'detached' octopress/org blogging
-works"---apparently I was already integrating
-[org-mode](https://orgmode.org) with my blogging setup back then.
+works"---apparently I was already integrating [org-mode](https://orgmode.org)
+with my blogging setup back then.
 
-Then came "the Clojure years" (2013--2017). I still really like Clojure in a
-lot of ways, but have moved all that sort of work to Elixir these days.
+Then came "the Clojure years" (2013--2017). I still really like Clojure in a lot
+of ways, but have moved all that sort of work to Elixir these days.
 
 First up: November-December 2013. I forked
 [nakkaya/static](https://github.com/nakkaya/static), Nurullah Akkaya's
@@ -64,9 +63,8 @@ The [biott repository](https://github.com/benswift/biott) is now archived. This
 was my main blog during 2014--2017.
 
 The Jekyll era kicked off in late 2018, when I forked
-[John Otander's](https://johno.com)
-[Pixyll](https://github.com/johno/pixyll) theme and moved away from
-`biott/Cryogen`.
+[John Otander's](https://johno.com) [Pixyll](https://github.com/johno/pixyll)
+theme and moved away from `biott/Cryogen`.
 
 On 30 December 2018, we get commit
 [`c1a4d0225`](https://github.com/benswift/benswift.github.io/commit/c1a4d022534c9cda11d98f23b94f112330c9a783)---"initial
@@ -120,9 +118,9 @@ TypeScript instead of Ruby, Vue components instead of Liquid templates, modern
 ES6 modules instead of... well, whatever Jekyll was doing with its asset
 pipeline.
 
-So what does this archaeological expedition actually tell us? A few things.
-First, the pattern is clear: [Octopress](https://github.com/imathis/octopress) →
-Clojure experiments ([static](https://github.com/nakkaya/static),
+A few things emerge from this archaeological expedition. First, the pattern:
+[Octopress](https://github.com/imathis/octopress) → Clojure experiments
+([static](https://github.com/nakkaya/static),
 [Cryogen](https://github.com/cryogen-project/cryogen)) → long
 [Jekyll](https://jekyllrb.com) tenure → [VitePress](https://vitepress.dev). The
 blog has always been a place to try new things---two separate Clojure attempts,
@@ -131,9 +129,9 @@ something. It's basically my "TODO app"; the place where I experiment with new
 technologies and ideas.
 
 Second, there's something satisfying about having this entire history preserved.
-Every commit tells a story---not just "what changed" but often "why I wanted to
-change it". The commit messages are a diary of technical decisions and
-aesthetic tweaks, with the occasional outburst.
+Every commit records what changed, and often why I wanted to change it. The
+commit messages are a diary of technical decisions and aesthetic tweaks, with
+the occasional outburst.
 
 The git packrat habit means I can see exactly when I added that custom CSS for
 blockquotes (multiple times, apparently), when I first integrated `reveal.js`
@@ -141,17 +139,17 @@ blockquotes (multiple times, apparently), when I first integrated `reveal.js`
 to count). It's all there in the log---across multiple repositories, spanning
 over a decade.
 
-But for all that, the actual _frameworks_ matter less than the content and
-the features that support creating it. Octopress, two different Clojure
-generators, Jekyll with three different themes, VitePress---they're all just
-different ways to serve markdown files with syntax highlighting and
-presentations. The actual blog posts survived.
+But for all that, the actual _frameworks_ matter less than the content and the
+features that support creating it. Octopress, two different Clojure generators,
+Jekyll with three different themes, VitePress---they're all just different ways
+to serve markdown files with syntax highlighting and presentations. The actual
+blog posts survived.
 
-So was migrating to VitePress worth it? Yep---it's faster, the tooling is
-better, and I can use modern JavaScript without fighting the framework. But in
-six years when I'm "nuking all the things" again, will the next framework be
-fundamentally different? Probably not.
+Migrating to VitePress was worth it: it's faster, the tooling is better, and I
+can use modern JavaScript without fighting the framework. But in six years when
+I'm "nuking all the things" again, the next framework probably won't be
+fundamentally different.
 
 As long as I keep committing everything to git, I'll be able to look back and
 see exactly when---and why---I decided the blockquote padding needed to be 0.5em
-instead of 1em. And honestly, that's kind of beautiful.
+instead of 1em. And that's kind of beautiful.
