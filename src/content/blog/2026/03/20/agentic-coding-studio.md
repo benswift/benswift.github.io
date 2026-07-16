@@ -2,7 +2,7 @@
 title: "The road to COMP4020: Agentic Coding Studio"
 description:
   "Renaming the course to Agentic Coding Studio---because what we're really
-  teaching is the craft of harnessing LLMs in coding workflows."
+  teaching is the craft of using LLMs well in coding workflows."
 tags: [comp4020]
 ---
 
@@ -20,17 +20,17 @@ to change the course name to "Agentic Coding Studio". The
 [course description](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/)
 remains unchanged, and the overall plan for the course (which is still
 coalescing, hence [this blog series](/blog/tag/comp4020/)) is still the same.
-The more I've reflected on it, the more I've realised that what I (and the
-whole field of software development right now) am wrestling with is the best way
-to harness LLMs in productive Agentic Coding workflows. The fact that the
+The more I've reflected on it, the more I've realised that what I (and the whole
+field of software development right now) am wrestling with is the best way to
+put LLMs to work in productive Agentic Coding workflows. The fact that the
 software domain is "the web" is important (and where we'll do most of our work),
 but many of the ideas I want my students to wrestle with are broader than that.
 
-I have a [long history](/blog/2019/03/20/reimagine-fellow-project-pitch/)
-of trying to shoehorn the word "studio" into the projects/research
-groups/communities I build... so why stop now? The "studio" pedagogical
-model of making stuff in a community and watching others do the same is just
-such an apt description of the
+I have a [long history](/blog/2019/03/20/reimagine-fellow-project-pitch/) of
+trying to shoehorn the word "studio" into the projects/research
+groups/communities I build... so why stop now? The "studio" pedagogical model of
+making stuff in a community and watching others do the same is just such an apt
+description of the
 [learning environment I hope to create in the course](/blog/2026/02/20/comp4020-the-core-mechanic/).
 
 I will add that while naming things is hard and usually done retrospectively,
