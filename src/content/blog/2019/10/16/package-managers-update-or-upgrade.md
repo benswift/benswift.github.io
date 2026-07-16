@@ -31,8 +31,7 @@ version of one (or more) of your project's dependencies?
 | `cpan`          | Perl            |
 | `mix`           | Elixir          |
 
-<button onclick='document.getElementById("answer-table").style.visibility="visible";'>click
-to reveal the answers</button>
+:::details[Click to reveal the answers]
 
 | package manager | language/system | (sub)command name     |
 | --------------- | --------------- | --------------------- |
@@ -50,6 +49,8 @@ to reveal the answers</button>
 | `dep`           | Go              | `ensure -update`      |
 | `cpan`          | Perl            | `upgrade`             |
 | `mix`           | Elixir          | `deps.update`         |
+
+:::
 
 [^pip]: https://github.com/pypa/pip/issues/59
 

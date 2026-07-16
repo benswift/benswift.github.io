@@ -35,13 +35,14 @@ const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`
   allowed. style-src needs 'unsafe-inline' for Shiki's per-token style
   attributes. The wider connect-src/frame-src/worker-src exist for the
   on-device Gemma demo (Hugging Face model fetch, @mediapipe wasm worker)
-  and the YouTube embeds. frame-ancestors isn't honored from <meta>; GitHub
+  and the YouTube/Vimeo embeds; frame-src 'self' covers first-party iframes
+  in posts (frame-src doesn't fall back to default-src once specified). frame-ancestors isn't honored from <meta>; GitHub
   Pages doesn't let us set headers, so clickjacking protection here is
   on the host, not on us.
 */}
 <meta
   http-equiv="Content-Security-Policy"
-  content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src https://www.youtube-nocookie.com; worker-src 'self' blob:; child-src 'self' blob:; base-uri 'self'; form-action 'self'; object-src 'none'"
+  content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com; worker-src 'self' blob:; child-src 'self' blob:; base-uri 'self'; form-action 'self'; object-src 'none'"
 />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="alternate" type="application/rss+xml" title="benswift.me" href="/feed.xml" />
