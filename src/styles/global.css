@@ -544,8 +544,8 @@ strong {
 }
 
 /* Shrink the submit button to match the sort pills (Newest/Oldest/Top) it
-   shares a row with; !important because the widget injects its own \3c style>
-   at runtime, after this sheet. Relabelled "Post" in PostLayout.astro. */
+   shares a row with; !important because the widget injects its own style
+   element at runtime, after this sheet. Relabelled "Post" in PostLayout.astro. */
 .juttu-submit-btn {
   padding: 0.2rem 0.65rem !important;
   border: 1px solid transparent !important;
