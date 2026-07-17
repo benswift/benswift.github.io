@@ -228,11 +228,23 @@ pre {
 
 /* Blockquotes */
 blockquote {
-  border-inline-start: 3px solid var(--brand-1);
+  position: relative;
   margin: 1rem 0;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 2.75rem;
   color: var(--text-2);
   quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* Oversized hanging Fraunces quote mark in place of the usual left border. */
+blockquote::before {
+  content: open-quote;
+  position: absolute;
+  inset-inline-start: 0.25rem;
+  inset-block-start: -0.35rem;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--brand-soft);
+  quotes: inherit;
 }
 
 /* Callouts (shared remark-callout plugin from astro-theme-university) */
