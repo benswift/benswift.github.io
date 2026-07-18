@@ -59,7 +59,7 @@
     "@types/node": "^24.13.3",
     "@types/three": "^0.185.1",
     "@types/unist": "^3.0.3",
-    "astro": "^7.0.7",
+    "astro": "^7.1.0",
     "astro-icon": "^1.1.5",
     "bibtex-parse": "^2.1.0",
     "eslint-plugin-no-only-tests": "^3.4.0",
