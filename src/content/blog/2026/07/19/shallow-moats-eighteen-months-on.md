@@ -95,8 +95,11 @@ It's now a macroeconomic one. OpenAI last raised at an
 [$852 billion valuation](https://openai.com/index/accelerating-the-next-phase-ai/),
 Anthropic's latest round
 [values it at $965 billion](https://www.anthropic.com/news/series-h),
-and both have filed confidentially for IPOs. The hyperscalers have guided to
-roughly $700 billion of capital expenditure this year.[^capex]
+and both have filed confidentially for IPOs
+([Anthropic](https://www.anthropic.com/news/confidential-draft-s1-sec), then
+[OpenAI a week later](https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/)).
+The hyperscalers have guided to roughly $700 billion of capital expenditure this
+year.[^capex]
 
 [^capex]:
     The sum of company guidance: Amazon ~$200 billion, Microsoft ~$190 billion
