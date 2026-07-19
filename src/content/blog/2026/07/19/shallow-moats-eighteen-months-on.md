@@ -72,9 +72,15 @@ frontier-adjacent releases bend open models
 There are counter-currents: Reuters reports that Beijing has
 [privately weighed restricting overseas access](https://time.com/article/2026/07/07/china-ai-models-alibaba-bytedance/)
 to its top models, and
-[Alibaba's newest flagship is API-only](https://www.chinatalk.media/p/chinas-ai-companies-are-going-closed).
+[Alibaba's newest flagship is API-only](https://www.chinatalk.media/p/chinas-ai-companies-are-going-closed).[^qwen38]
 Watch those threads, because they mark the places where principle and interest
 pull apart.
+
+[^qwen38]:
+    Sunday's Qwen 3.8 announcement sits right on this fault line: the weights
+    are promised, but for now the model is available only through Alibaba's paid
+    preview APIs, and as of publication there's no model card on Hugging Face. A
+    promise of open weights is not the same thing as a download link.
 
 The other new part of the story since early 2025 is safety. Anthropic now
 [ships its frontier model in two forms](https://www.anthropic.com/news/claude-fable-5-mythos-5).
