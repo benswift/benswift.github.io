@@ -96,9 +96,15 @@ It's now a macroeconomic one. OpenAI last raised at an
 Anthropic's latest round
 [values it at $965 billion](https://www.anthropic.com/news/series-h),
 and both have filed confidentially for IPOs. The hyperscalers have guided to
-roughly $700 billion of capital expenditure this year.
+roughly $700 billion of capital expenditure this year.[^capex]
 
-<!-- TODO: spot-check the ~$700B combined 2026 capex figure (sum of MSFT ~$190B FY26, GOOG $180-190B, AMZN ~$200B, META $125-145B guidance) before publishing -->
+[^capex]:
+    The sum of company guidance: Amazon ~$200 billion, Microsoft ~$190 billion
+    (its FY26), Alphabet $180--190 billion and Meta $125--145 billion. Analyst
+    tallies for the combined 2026 figure run from
+    $650 billion up to Moody's
+    $785 billion, so "roughly $700 billion" is the
+    conservative middle.
 
 I'm not going to add to the pile of
 [bubble warnings](https://theconversation.com/friday-essay-despite-the-ai-hype-some-experts-warn-of-a-bubble-what-happens-if-it-pops-283903),
