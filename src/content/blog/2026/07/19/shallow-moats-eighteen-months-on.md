@@ -1,0 +1,132 @@
+---
+title: "Shallow moats, eighteen months on"
+description:
+  "DeepSeek wasn't a fluke: the moats around frontier AI are still shallow, and
+  trillion-dollar valuations now depend on them being deep."
+published: false
+tags: [ai]
+---
+
+Last Friday in Shanghai, Xi Jinping stood up at the World Artificial
+Intelligence Conference and urged the world to
+["encourage open source, openness, collaboration and sharing"](https://news.cgtn.com/news/2026-07-17/Full-text-Xi-s-keynote-speech-at-the-2026-WAIC-opening-ceremony-1OQSfeoRvUs/p.html).
+The day before,
+[29 countries launched the World AI Cooperation Organization](https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it),
+a new Shanghai-headquartered body with the UN Secretary-General in attendance.
+That same Thursday, Chinese lab Moonshot
+[released Kimi K3](https://simonwillison.net/2026/Jul/16/kimi-k3/), a
+2.8-trillion-parameter model that benchmarks within a whisker of the best closed
+models from OpenAI and Anthropic. The weights are
+[promised as a free download](https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/)
+by the end of the month.[^benchmarks]
+
+[^benchmarks]:
+    The headline numbers are Moonshot's own, and
+    [Simon Willison cautions](https://simonwillison.net/2026/Jul/16/kimi-k3/)
+    that benchmark scores have "mostly severed" their correlation with
+    real-world usefulness. Independent rankings still place K3 third overall,
+    behind Claude Fable 5 and GPT-5.6.
+
+Eighteen months ago I argued in
+[Times Higher Education](/blog/2025/02/18/deepseek-and-shallow-moats/) that
+DeepSeek R1 had exposed how shallow the moats around frontier AI really are. The
+[leaked Google memo](https://semianalysis.com/2023/05/04/google-we-have-no-moat-and-neither/)
+from 2023---"we have no moat, and neither does OpenAI"---was holding up, and my
+advice was that universities should think twice before signing exclusive
+contracts with any one provider. Since then, the two leading US labs have raised
+money at a combined valuation approaching two trillion dollars. That is, in
+effect, a bet that the memo was wrong.
+
+Open-weight models have not simply "caught up". Epoch AI's tracking shows the
+gap [widened through 2025](https://epoch.ai/data-insights/open-closed-eci-gap).
+This year a cluster of Chinese releases (Qwen 3.5, GLM-5 and the Kimi series)
+pulled it closed again. Across the whole eighteen months, the frontier lead has
+stayed bounded at roughly three to six months, no matter how much the closed
+labs spend. That is the shallow-moat claim in its strongest form. Whatever
+capability you are paying top dollar for today will be a free download by
+Christmas. A moat that must be re-dug every quarter, at ever-greater expense, is
+better described as a treadmill.
+
+You can read Xi's speech as statesmanship: AI as a global public good,
+["not a solo performance by a single country"](https://english.news.cn/20260717/128a3c67ccdd44e0b80b5b10b9c01475/c.html).
+Ten billion downloads of Chinese open models suggest the offer is being taken
+up. But you can read it just as easily as strategy, the classic play of
+commoditising your complement: give away the thing your rival sells, and their
+core asset becomes a public good. Both readings recommend the same policy, and
+commitments survive when principle and interest align. This is why the
+prediction that Chinese labs would stop open-sourcing once they caught up keeps
+failing to come true. As Nathan Lambert puts it, sustained frontier-adjacent
+releases bend open models
+[from "soft power" to just "power"](https://www.interconnects.ai/p/on-chinas-open-source-ai-trajectory).
+There are counter-currents: Reuters reports that Beijing has
+[privately weighed restricting overseas access](https://time.com/article/2026/07/07/china-ai-models-alibaba-bytedance/)
+to its top models, and
+[Alibaba's newest flagship is API-only](https://www.chinatalk.media/p/chinas-ai-companies-are-going-closed).
+Watch those threads, because they mark the places where principle and interest
+pull apart.
+
+The sharpest new wrinkle since early 2025 is safety. Anthropic now
+[ships its frontier model in two forms](https://www.anthropic.com/news/claude-fable-5-mythos-5).
+The public Fable 5 wraps the model in classifiers that block dual-use cyber and
+biology work; Mythos 5 lifts those safeguards for vetted partners. Security
+researchers
+[aren't happy](https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/),
+since even routine code review can trip the filters.[^fallback] Then this
+month's
+[Hugging Face security incident](https://huggingface.co/blog/security-incident-july-2026)
+made the asymmetry vivid. An attacker drove an autonomous agent framework
+through the company's dataset pipeline. When the defenders fed 17,000 attacker
+log entries to hosted models for forensic analysis, the providers' guardrails
+refused. Hugging Face finished the job on a self-hosted Chinese open-weight
+model. The attacker, of course, answered to no usage policy at all. None of this
+means the guardrails are unmotivated: Anthropic has
+[documented alarming misuse](https://www.anthropic.com/news/disrupting-AI-espionage)
+of its own models. But safety-by-gatekeeping only works while the gatekeepers
+hold a monopoly on the capability. And
+[Bruce Schneier notes](https://www.schneier.com/blog/archives/2026/04/on-anthropics-mythos-preview-and-project-glasswing.html)
+that much of what's gated has already been reproduced with cheaper, older
+models.
+
+In February 2025 this was a procurement question for university administrators.
+It's now a macroeconomic one. OpenAI last raised at an
+[$852 billion valuation](https://openai.com/index/accelerating-the-next-phase-ai/),
+Anthropic's latest round values it at $965
+billion, and both have filed confidentially for IPOs. The hyperscalers have
+guided to roughly $700 billion of capital expenditure this year.
+
+<!-- TODO: link Anthropic Series H announcement (anthropic.com/news, 28 May 2026) and spot-check the ~$700B combined 2026 capex figure before publishing -->
+
+I'm not going to predict a crash, because forecasting the timing of market
+corrections is a mug's game. The narrower point stands on its own. Those
+valuations embed the assumption that a handful of companies will capture most of
+the value from frontier AI, and the eighteen-month experiment keeps returning
+evidence against it. The counter-evidence is real, though, and it cuts both
+ways. On
+[Vercel's AI gateway](https://vercel.com/blog/ai-gateway-production-index-july-2026),
+open models now serve 29% of tokens but earn under 4% of the spend, so the labs
+still have the revenue. Token share moved first; whether the dollars follow is
+the live experiment.
+
+The strongest counterargument comes from Ben Thompson. He
+[concedes the model layer is commoditising](https://stratechery.com/2026/agents-over-bubbles/),
+but argues the moat has moved up to the agent-harness and integration layer, so
+the capex is warranted. Maybe. Notice what that concedes, though: the memo was
+right about the models. And harnesses travel even lighter than weights. Chinese
+labs now ship Anthropic-compatible APIs precisely so that switching away is a
+one-line change.
+
+My advice eighteen months ago was for universities to stay provider-agnostic.
+Hugging Face's post-mortem generalises it to everyone:
+[have a capable model you can run on your own infrastructure](https://huggingface.co/blog/security-incident-july-2026),
+vetted and ready, before you need it. What looked like campus prudence in
+February 2025 now reads as basic operational hygiene. At the scale of the
+current buildout, it's a hedge the whole economy may yet be glad of. The moats
+haven't got any deeper. The stakes have.
+
+[^fallback]:
+    When Fable 5's classifiers trigger, the request is silently handed to the
+    older (and less capable) Claude Opus 4.8. Anthropic says more than 95% of
+    sessions never see the fallback; frustrated security researchers seem
+    well-represented in the remainder. In the interests of disclosure: I
+    researched and drafted this post with Fable 5's assistance, and no
+    guardrails were harmed in the process.
