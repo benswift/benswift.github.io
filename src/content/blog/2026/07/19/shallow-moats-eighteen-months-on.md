@@ -133,7 +133,10 @@ the Chinese labs are building drop-in engines for the US labs' own tooling, and
 switching is close to a one-line change.
 
 My advice eighteen months ago was for universities to stay provider-agnostic.
-Hugging Face's post-mortem generalises it to everyone:
+The students and early-career researchers that advice was written for are the
+first to be priced or gated out of frontier models. They are also the first to
+notice that the open ones are now good enough. Hugging Face's post-mortem
+generalises the advice to everyone:
 [have a capable model you can run on your own infrastructure](https://huggingface.co/blog/security-incident-july-2026),
 vetted and ready, before you need it. What looked like campus prudence in
 February 2025 now reads as basic operational hygiene. At the scale of the
