@@ -47,7 +47,10 @@ capability you are paying top dollar for today will be a free download by
 Christmas. A moat that must be re-dug every quarter, at ever-greater expense, is
 better described as a treadmill.
 
-You can read Xi's speech as statesmanship: AI as a global public good,
+China's open-source strategy was already being called
+[a geopolitical earthquake](https://theconversation.com/deepseek-how-chinas-embrace-of-open-source-ai-caused-a-geopolitical-earthquake-249563)
+in the weeks after DeepSeek's release. You can read Xi's speech as
+statesmanship: AI as a global public good,
 ["not a solo performance by a single country"](https://english.news.cn/20260717/128a3c67ccdd44e0b80b5b10b9c01475/c.html).
 Ten billion downloads of Chinese open models suggest the offer is being taken
 up. But you can read it just as easily as strategy, the classic play of
@@ -96,12 +99,13 @@ guided to roughly $700 billion of capital expenditure this year.
 
 <!-- TODO: link Anthropic Series H announcement (anthropic.com/news, 28 May 2026) and spot-check the ~$700B combined 2026 capex figure before publishing -->
 
-I'm not going to predict a crash, because forecasting the timing of market
-corrections is a mug's game. The narrower point stands on its own. Those
-valuations embed the assumption that a handful of companies will capture most of
-the value from frontier AI, and the eighteen-month experiment keeps returning
-evidence against it. The counter-evidence is real, though, and it cuts both
-ways. On
+I'm not going to add to the pile of
+[bubble warnings](https://theconversation.com/friday-essay-despite-the-ai-hype-some-experts-warn-of-a-bubble-what-happens-if-it-pops-283903),
+because forecasting the timing of market corrections is a mug's game. The
+narrower point stands on its own. Those valuations embed the assumption that a
+handful of companies will capture most of the value from frontier AI, and the
+eighteen-month experiment keeps returning evidence against it. The
+counter-evidence is real, though, and it cuts both ways. On
 [Vercel's AI gateway](https://vercel.com/blog/ai-gateway-production-index-july-2026),
 open models now serve 29% of tokens but earn under 4% of the spend, so the labs
 still have the revenue. Token share moved first; whether the dollars follow is
