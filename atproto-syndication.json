@@ -496,6 +496,11 @@
       "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mqfrxxso3y2u",
       "cid": "bafyreidcxgml2hmywoocg7dhvp3ilxvphmlkz4vl2247y5qnsscjkzd4tu",
       "syndicatedAt": "2026-07-11T23:11:57.768Z"
+    },
+    "/blog/2026/07/19/shallow-moats-eighteen-months-on": {
+      "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mqzuc3bc232x",
+      "cid": "bafyreifpgnkgystbi4piwuky3o7vbsh4pgqrxdnf5tozctpajvg6xovvlm",
+      "syndicatedAt": "2026-07-19T22:46:39.159Z"
     }
   }
 }
