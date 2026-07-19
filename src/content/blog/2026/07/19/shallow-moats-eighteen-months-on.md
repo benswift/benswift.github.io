@@ -41,11 +41,11 @@ Open-weight models have not simply "caught up". Epoch AI's tracking shows the
 gap [widened through 2025](https://epoch.ai/data-insights/open-closed-eci-gap).
 This year a cluster of Chinese releases (Qwen 3.5, GLM-5 and the Kimi series)
 pulled it closed again. Across the whole eighteen months, the frontier lead has
-stayed bounded at roughly three to six months, no matter how much the closed
-labs spend. That is the shallow-moat claim in its strongest form. Whatever
-capability you are paying top dollar for today will be a free download by
-Christmas. A moat that must be re-dug every quarter, at ever-greater expense, is
-better described as a treadmill.
+[stayed bounded at roughly three to six months](https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026/),
+no matter how much the closed labs spend. That is the shallow-moat claim in its
+strongest form. Whatever capability you are paying top dollar for today will be
+a free download by Christmas. A moat that must be re-dug every quarter, at
+ever-greater expense, is better described as a treadmill.
 
 China's open-source strategy was already being called
 [a geopolitical earthquake](https://theconversation.com/deepseek-how-chinas-embrace-of-open-source-ai-caused-a-geopolitical-earthquake-249563)
@@ -54,12 +54,12 @@ statesmanship: AI as a global public good,
 ["not a solo performance by a single country"](https://english.news.cn/20260717/128a3c67ccdd44e0b80b5b10b9c01475/c.html).
 Ten billion downloads of Chinese open models suggest the offer is being taken
 up. But you can read it just as easily as strategy, the classic play of
-commoditising your complement: give away the thing your rival sells, and their
-core asset becomes a public good. Both readings recommend the same policy, and
-commitments survive when principle and interest align. This is why the
-prediction that Chinese labs would stop open-sourcing once they caught up keeps
-failing to come true. As Nathan Lambert puts it, sustained frontier-adjacent
-releases bend open models
+[commoditising your complement](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/):
+give away the thing your rival sells, and their core asset becomes a public
+good. Both readings recommend the same policy, and commitments survive when
+principle and interest align. This is why the prediction that Chinese labs would
+stop open-sourcing once they caught up keeps failing to come true. As Nathan
+Lambert puts it, sustained frontier-adjacent releases bend open models
 [from "soft power" to just "power"](https://www.interconnects.ai/p/on-chinas-open-source-ai-trajectory).
 There are counter-currents: Reuters reports that Beijing has
 [privately weighed restricting overseas access](https://time.com/article/2026/07/07/china-ai-models-alibaba-bytedance/)
@@ -93,11 +93,12 @@ models.
 In February 2025 this was a procurement question for university administrators.
 It's now a macroeconomic one. OpenAI last raised at an
 [$852 billion valuation](https://openai.com/index/accelerating-the-next-phase-ai/),
-Anthropic's latest round values it at $965
-billion, and both have filed confidentially for IPOs. The hyperscalers have
-guided to roughly $700 billion of capital expenditure this year.
+Anthropic's latest round
+[values it at $965 billion](https://www.anthropic.com/news/series-h),
+and both have filed confidentially for IPOs. The hyperscalers have guided to
+roughly $700 billion of capital expenditure this year.
 
-<!-- TODO: link Anthropic Series H announcement (anthropic.com/news, 28 May 2026) and spot-check the ~$700B combined 2026 capex figure before publishing -->
+<!-- TODO: spot-check the ~$700B combined 2026 capex figure (sum of MSFT ~$190B FY26, GOOG $180-190B, AMZN ~$200B, META $125-145B guidance) before publishing -->
 
 I'm not going to add to the pile of
 [bubble warnings](https://theconversation.com/friday-essay-despite-the-ai-hype-some-experts-warn-of-a-bubble-what-happens-if-it-pops-283903),
@@ -115,9 +116,11 @@ The strongest counterargument comes from Ben Thompson. He
 [concedes the model layer is commoditising](https://stratechery.com/2026/agents-over-bubbles/),
 but argues the moat has moved up to the agent-harness and integration layer, so
 the capex is warranted. Maybe. Notice what that concedes, though: the memo was
-right about the models. And harnesses travel even lighter than weights. Chinese
-labs now ship Anthropic-compatible APIs precisely so that switching away is a
-one-line change.
+right about the models. And harnesses travel even lighter than weights.
+Moonshot's own developer docs
+[pitch K3 for "programming agent scenarios such as Claude Code"](https://platform.kimi.ai/docs):
+the Chinese labs are building drop-in engines for the US labs' own tooling, and
+switching is close to a one-line change.
 
 My advice eighteen months ago was for universities to stay provider-agnostic.
 Hugging Face's post-mortem generalises it to everyone:
@@ -128,9 +131,9 @@ current buildout, it's a hedge the whole economy may yet be glad of. The moats
 haven't got any deeper. The stakes have.
 
 [^fallback]:
-    When Fable 5's classifiers trigger, the request is silently handed to the
-    older (and less capable) Claude Opus 4.8. Anthropic says more than 95% of
-    sessions never see the fallback; frustrated security researchers seem
-    well-represented in the remainder. In the interests of disclosure: I
-    researched and drafted this post with Fable 5's assistance, and no
-    guardrails were harmed in the process.
+    When Fable 5's classifiers trigger, the request is
+    [handed to the older (and less capable) Claude Opus 4.8](https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5).
+    Anthropic says more than 95% of sessions never see the fallback; frustrated
+    security researchers seem well-represented in the remainder. In the
+    interests of disclosure: I researched and drafted this post with Fable 5's
+    assistance, and no guardrails were harmed in the process.
