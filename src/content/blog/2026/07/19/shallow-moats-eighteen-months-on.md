@@ -25,7 +25,13 @@ by the end of the month.[^benchmarks]
     [Simon Willison cautions](https://simonwillison.net/2026/Jul/16/kimi-k3/)
     that benchmark scores have "mostly severed" their correlation with
     real-world usefulness. Independent rankings still place K3 third overall,
-    behind Claude Fable 5 and GPT-5.6.
+    behind Claude Fable 5 and GPT-5.6. Fuller third-party validation will have
+    to wait for the weights: Together AI lists K3 as
+    ["coming soon"](https://www.together.ai/models/kimi-k3) on its serverless
+    API, and its
+    [head-to-head testing of the predecessor](https://www.together.ai/blog/kimi-k2-7-code-vs-claude-fable-5)
+    found Kimi "competitive on design, structure, and overall page quality" with
+    Fable 5, at 94% lower cost.
 
 Eighteen months ago I argued in
 [Times Higher Education](/blog/2025/02/18/deepseek-and-shallow-moats/) that
@@ -58,8 +64,9 @@ up. But you can read it just as easily as strategy, the classic play of
 give away the thing your rival sells, and their core asset becomes a public
 good. Both readings recommend the same policy, and commitments survive when
 principle and interest align. This is why the prediction that Chinese labs would
-stop open-sourcing once they caught up keeps failing to come true. As Nathan
-Lambert puts it, sustained frontier-adjacent releases bend open models
+[stop open-sourcing once they caught up](https://fortune.com/2026/06/16/china-ai-deepseek-open-source-efficiency-global-expansion-strategy/)
+keeps failing to come true. As Nathan Lambert puts it, sustained
+frontier-adjacent releases bend open models
 [from "soft power" to just "power"](https://www.interconnects.ai/p/on-chinas-open-source-ai-trajectory).
 There are counter-currents: Reuters reports that Beijing has
 [privately weighed restricting overseas access](https://time.com/article/2026/07/07/china-ai-models-alibaba-bytedance/)
