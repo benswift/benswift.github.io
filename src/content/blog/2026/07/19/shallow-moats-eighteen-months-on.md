@@ -77,8 +77,8 @@ Watch those threads, because they mark the places where principle and interest
 pull apart.
 
 [^qwen38]:
-    Sunday's Qwen 3.8 announcement sits right on this fault line: the weights
-    are promised, but for now the model is available only through Alibaba's paid
+    Sunday's Qwen 3.8 announcement sits right on this line: the weights are
+    promised, but for now the model is available only through Alibaba's paid
     preview APIs, and as of publication there's no model card on Hugging Face. A
     promise of open weights is not the same thing as a download link.
 
