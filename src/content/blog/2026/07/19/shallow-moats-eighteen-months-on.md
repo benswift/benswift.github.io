@@ -92,7 +92,10 @@ that much of what's gated has already been reproduced with cheaper, older
 models.
 
 In February 2025 this was a procurement question for university administrators.
-It's now a macroeconomic one. OpenAI last raised at an
+It's now a macroeconomic one, though the procurement question hasn't gone away.
+If the capability you are licensing commoditises within two quarters, a
+multi-year exclusive contract is a bet against the trend line, made with money
+that could be funding tutors. OpenAI last raised at an
 [$852 billion valuation](https://openai.com/index/accelerating-the-next-phase-ai/),
 Anthropic's latest round
 [values it at $965 billion](https://www.anthropic.com/news/series-h),
@@ -135,8 +138,10 @@ switching is close to a one-line change.
 My advice eighteen months ago was for universities to stay provider-agnostic.
 The students and early-career researchers that advice was written for are the
 first to be priced or gated out of frontier models. They are also the first to
-notice that the open ones are now good enough. Hugging Face's post-mortem
-generalises the advice to everyone:
+notice that the open ones are now good enough. That has consequences for how
+universities teach with AI, not just how they buy it: curricula and assessment
+built around one provider's products will date as fast as the contracts. Hugging
+Face's post-mortem generalises the advice to everyone:
 [have a capable model you can run on your own infrastructure](https://huggingface.co/blog/security-incident-july-2026),
 vetted and ready, before you need it. What looked like campus prudence in
 February 2025 now reads as basic operational hygiene. At the scale of the
