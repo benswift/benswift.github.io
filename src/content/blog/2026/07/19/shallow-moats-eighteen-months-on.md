@@ -25,13 +25,7 @@ by the end of the month.[^benchmarks]
     [Simon Willison cautions](https://simonwillison.net/2026/Jul/16/kimi-k3/)
     that benchmark scores have "mostly severed" their correlation with
     real-world usefulness. Independent rankings still place K3 third overall,
-    behind Claude Fable 5 and GPT-5.6. Fuller third-party validation will have
-    to wait for the weights: Together AI lists K3 as
-    ["coming soon"](https://www.together.ai/models/kimi-k3) on its serverless
-    API, and its
-    [head-to-head testing of the predecessor](https://www.together.ai/blog/kimi-k2-7-code-vs-claude-fable-5)
-    found Kimi "competitive on design, structure, and overall page quality" with
-    Fable 5, at 94% lower cost.
+    behind Claude Fable 5 and GPT-5.6.
 
 Eighteen months ago I argued in
 [Times Higher Education](/blog/2025/02/18/deepseek-and-shallow-moats/) that
