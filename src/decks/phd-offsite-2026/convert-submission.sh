@@ -59,12 +59,36 @@ pages_from_pdf() {
   done
 }
 
-# Render a presentation (pptx/ppt/key/odp/svg) to PDF/PNG. Tries local
-# LibreOffice first; if that produces nothing (the headless soffice on this
-# box is currently broken), falls back to rendering on `daysy` over SSH.
+# Render a presentation (pptx/ppt/key/odp/svg) to PDF/PNG. For pptx/ppt,
+# prefer Microsoft PowerPoint when it's installed (macOS): LibreOffice
+# substitutes fonts (no Aptos) and ignores autofit, which borks layouts.
+# Otherwise tries local LibreOffice; if that produces nothing (the headless
+# soffice on weddle is broken), falls back to rendering on `daysy` over SSH.
 # Usage: office_convert <src> <target-ext: pdf|png> <out-file>
 office_convert() {
   local src="$1" target="$2" outfile="$3"
+  case "${src##*.}" in
+    [Pp][Pp][Tt] | [Pp][Pp][Tt][Xx])
+      if [ "$target" = pdf ] && [ -d "/Applications/Microsoft PowerPoint.app" ]; then
+        osascript - "$src" "$outfile" <<'APPLESCRIPT' >/dev/null 2>&1 || true
+on run argv
+  set srcPath to item 1 of argv
+  set dstPath to item 2 of argv
+  tell application "Microsoft PowerPoint"
+    open (POSIX file srcPath)
+    repeat until active presentation is not missing value
+      delay 0.2
+    end repeat
+    save active presentation in (POSIX file dstPath) as save as PDF
+    close active presentation saving no
+  end tell
+end run
+APPLESCRIPT
+        [ -s "$outfile" ] && return 0
+        echo "  (PowerPoint export failed --- falling back to LibreOffice)" >&2
+      fi
+      ;;
+  esac
   local filter=""
   [ "$target" = png ] && filter="png:draw_png_Export"
   soffice --headless --convert-to "${filter:-pdf}" --outdir "$work" \
