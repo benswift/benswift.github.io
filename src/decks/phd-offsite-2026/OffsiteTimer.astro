@@ -13,16 +13,19 @@
 // chair presses S (or clicks the widget) as the speaker actually begins — so
 // nobody pushed late by an earlier overrun loses part of their slot. There is
 // deliberately no absolute day clock or drift tracking: with manual starts,
-// "are we behind" is the wall clock's job. Amber = question time (12+3 for
-// the 15-min talks, 4+1 for the 5-min ones); from the play-off mark (13:00 /
-// 4:30) a synthesised play-off loop starts quietly and swells the longer it
-// goes, red past zero. Controls: S starts (or restarts) the talk clock,
-// M mutes the music, H hides the widget.
+// "are we behind" is the wall clock's job (bottom-left). The countdown goes
+// RED at question time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); one
+// minute later (13:00 / 5:00) the play-off music (Spanish Flea) starts
+// quietly and swells until the next slide advance stops it. Controls: S
+// starts (or restarts) the talk clock, M mutes the music, H hides both
+// widgets.
 ---
 
 <div id="offsite-timer-mount" hidden></div>
 
 <script>
+  import playoffTrack from "./assets/playoff-spanish-flea.opus";
+
   interface Segment {
     id: string;
     label: string;
@@ -35,8 +38,8 @@
 
   // The day's program. Each `id` matches a `seg-<id>` class on that segment's
   // divider slide in slides.deck.mdx. Talks are 12+3 (15 min) and 4+1 (5 min);
-  // the play-off starts at 13:00 / 4:30 so the room hears it BEFORE the slot
-  // is blown, and it just keeps swelling from there.
+  // the countdown goes red at question time, and the play-off starts one
+  // minute later (13:00 / 5:00), swelling until a slide advance stops it.
   const SCHEDULE: Segment[] = [
     { id: "intro", label: "Welcome & intro", start: "09:00", mins: 15 },
     { id: "evan", label: "Evan Skinner", start: "09:15", mins: 15, qa: 3, playoff: 13 },
@@ -50,14 +53,14 @@
     { id: "liz", label: "Liz Skelton", start: "11:15", mins: 15, qa: 3, playoff: 13 },
     { id: "dominika", label: "Dominika Janus", start: "11:30", mins: 15, qa: 3, playoff: 13 },
     { id: "break-mid", label: "Short break", start: "11:45", mins: 15 },
-    { id: "charlie", label: "Charlie Paulk", start: "12:00", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "joshua", label: "Joshua Castle", start: "12:05", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "griffiths", label: "Thomas Griffiths", start: "12:10", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "charlie", label: "Charlie Paulk", start: "12:00", mins: 5, qa: 1, playoff: 5 },
+    { id: "joshua", label: "Joshua Castle", start: "12:05", mins: 5, qa: 1, playoff: 5 },
+    { id: "griffiths", label: "Thomas Griffiths", start: "12:10", mins: 5, qa: 1, playoff: 5 },
+    { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5, qa: 1, playoff: 5 },
+    { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5, qa: 1, playoff: 5 },
+    { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5, qa: 1, playoff: 5 },
+    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5, qa: 1, playoff: 5 },
+    { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5, qa: 1, playoff: 5 },
     { id: "lunch", label: "Lunch", start: "12:45", mins: 60 },
     { id: "skills", label: "Skills: working with Claude", start: "13:45", mins: 90 },
     { id: "break-pm", label: "Afternoon tea", start: "15:15", mins: 15 },
@@ -104,6 +107,7 @@
 
   let currentId: string | null = null;
   let talkStart: number | null = null;
+  let musicDone = false;
 
   const detectSeg = (): string | null => {
     let s: Element | null =
@@ -117,90 +121,51 @@
   };
 
   // --- play-off music -------------------------------------------------------
-  // A synthesised "wrap it up" loop (the Oscars vibe, not the Oscars
-  // recording): a bright six-note string-ish motif, looped, with the master
-  // gain rising the longer the speaker runs over. Created lazily on the first
-  // S press so the AudioContext is unlocked by a user gesture.
-  let ac: AudioContext | null = null;
-  let master: GainNode | null = null;
-  let loopTimer: number | null = null;
-  let nextBar = 0;
+  // "Spanish Flea" (Herb Alpert), looping via a plain <audio> element (same
+  // pattern as llms-unplugged's BgMusic). ensureAudio() primes playback on
+  // the first S press so the browser's autoplay policy is satisfied by a
+  // user gesture before the play-off mark ever arrives.
   let muted = false;
+  let playing = false;
+  let primed = false;
 
-  const MOTIF = [
-    { f: 392.0, d: 1 }, // G4
-    { f: 523.25, d: 1 }, // C5
-    { f: 659.25, d: 1 }, // E5
-    { f: 783.99, d: 1.75 }, // G5
-    { f: 659.25, d: 1 }, // E5
-    { f: 523.25, d: 1.75 }, // C5
-  ];
-  const STEP = 0.17; // seconds per unit duration — brisk, insistent
-  const BAR = MOTIF.reduce((t, n) => t + n.d, 0) * STEP;
+  const audio = new Audio(playoffTrack);
+  audio.loop = true;
+  audio.preload = "auto";
 
   const ensureAudio = () => {
-    if (!ac) {
-      ac = new AudioContext();
-      const filt = ac.createBiquadFilter();
-      filt.type = "lowpass";
-      filt.frequency.value = 1800;
-      master = ac.createGain();
-      master.gain.value = 0;
-      master.connect(filt);
-      filt.connect(ac.destination);
-    }
-    if (ac.state === "suspended") ac.resume();
-  };
-
-  const scheduleBar = (when: number) => {
-    if (!ac || !master) return;
-    let t = when;
-    for (const note of MOTIF) {
-      const dur = note.d * STEP;
-      for (const detune of [-4, 4]) {
-        const o = ac.createOscillator();
-        o.type = "sawtooth";
-        o.frequency.value = note.f;
-        o.detune.value = detune;
-        const g = ac.createGain();
-        g.gain.setValueAtTime(0.0001, t);
-        g.gain.exponentialRampToValueAtTime(0.5, t + 0.02);
-        g.gain.exponentialRampToValueAtTime(0.0001, t + dur * 0.92);
-        o.connect(g);
-        g.connect(master);
-        o.start(t);
-        o.stop(t + dur);
-      }
-      t += dur;
-    }
+    if (primed) return;
+    primed = true;
+    // play/pause once at zero volume inside the user gesture — unlocks
+    // playback for the later programmatic start
+    audio.volume = 0;
+    audio
+      .play()
+      .then(() => {
+        audio.pause();
+        audio.currentTime = 0;
+      })
+      .catch(() => {});
   };
 
   const startMusic = () => {
-    if (loopTimer != null || !ac || muted) return;
-    nextBar = ac.currentTime + 0.05;
-    loopTimer = window.setInterval(() => {
-      if (!ac) return;
-      while (nextBar < ac.currentTime + 0.6) {
-        scheduleBar(nextBar);
-        nextBar += BAR;
-      }
-    }, 200);
+    if (playing || muted) return;
+    playing = true;
+    audio.currentTime = 0;
+    audio.volume = 0.05;
+    audio.play().catch(() => {});
   };
 
   const stopMusic = () => {
-    if (loopTimer != null) {
-      clearInterval(loopTimer);
-      loopTimer = null;
-    }
-    if (ac && master) master.gain.setTargetAtTime(0, ac.currentTime, 0.1);
+    if (!playing) return;
+    playing = false;
+    audio.pause();
   };
 
-  // Volume swells from the play-off mark: quiet nudge at 13:00 (4:30 for the
-  // short talks), hard to ignore a minute later, capped so it never distorts.
+  // Volume swells from the play-off mark: quiet nudge at 13:00 (5:00 for the
+  // short talks), hard to ignore a minute later, capped well below earsplit.
   const setMusicVolume = (overSec: number) => {
-    if (!ac || !master) return;
-    const v = Math.min(0.45, 0.05 + (overSec / 60) * 0.25);
-    master.gain.setTargetAtTime(v, ac.currentTime, 0.2);
+    audio.volume = Math.min(0.85, 0.1 + (overSec / 60) * 0.5);
   };
 
   // --- render ---------------------------------------------------------------
@@ -236,7 +201,9 @@
     const playoffSec = (seg.playoff ?? seg.mins) * 60;
     countEl.textContent = fmt(remaining);
 
-    const playingOff = running && spent >= playoffSec;
+    // Music runs from the play-off mark until a slide advance kills it
+    // (musicDone) for the rest of this talk.
+    const playingOff = running && !musicDone && spent >= playoffSec;
     if (playingOff && !muted) {
       startMusic();
       setMusicVolume(spent - playoffSec);
@@ -249,13 +216,10 @@
       setStatus("idle", "S starts");
     } else if (remaining < 0) {
       setClass(countEl, "count", "over");
-      setStatus("over", muted ? "overtime (muted)" : "overtime");
-    } else if (playingOff) {
-      setClass(countEl, "count", "soon");
-      setStatus("soon", muted ? "play-off (muted)" : "play-off");
+      setStatus("over", "overtime");
     } else if (remaining <= qaSec) {
-      setClass(countEl, "count", "soon");
-      setStatus("soon", "questions");
+      setClass(countEl, "count", "over");
+      setStatus("over", "questions");
     } else {
       setClass(countEl, "count", "ok");
       setStatus("ok", "talk");
@@ -267,7 +231,13 @@
     if (id !== currentId) {
       currentId = id;
       talkStart = null; // arm the new segment; S starts it
+      musicDone = false;
       stopMusic();
+    } else if (playing) {
+      // any slide advance while the play-off is playing silences it for the
+      // rest of this talk
+      stopMusic();
+      musicDone = true;
     }
     render();
   };
@@ -275,6 +245,7 @@
   const startTalk = () => {
     ensureAudio(); // user gesture — unlock audio for later
     stopMusic();
+    musicDone = false;
     talkStart = Date.now();
     render();
   };
@@ -398,9 +369,6 @@
   .offsite-timer .count-ok {
     color: #56d364;
   }
-  .offsite-timer .count-soon {
-    color: #e3b341;
-  }
   .offsite-timer .count-over {
     color: #f85149;
     animation: offsite-pulse 1.4s ease-in-out infinite;
@@ -425,9 +393,6 @@
   }
   .offsite-timer .status-ok {
     color: #56d364;
-  }
-  .offsite-timer .status-soon {
-    color: #e3b341;
   }
   .offsite-timer .status-over {
     color: #f85149;
