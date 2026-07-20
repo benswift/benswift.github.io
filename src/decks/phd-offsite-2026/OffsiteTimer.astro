@@ -8,17 +8,18 @@
 // shipping client JS.
 //
 // The script builds a fixed overlay on <body> (so it survives Reveal hiding
-// the off-screen slides) and watches navigation. Navigating into a segment
-// only ARMS its countdown (grey, full allotment); the clock starts when the
-// chair presses S (or clicks the widget) as the speaker actually begins — so
-// nobody pushed late by an earlier overrun loses part of their slot. There is
-// deliberately no absolute day clock or drift tracking: with manual starts,
-// "are we behind" is the wall clock's job (bottom-left). The countdown goes
-// RED at question time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); one
-// minute later (13:00 / 5:00) the play-off music (Spanish Flea) starts
-// quietly and swells until the next slide advance stops it. Controls: S
-// starts (or restarts) the talk clock, M mutes the music, H hides both
-// widgets.
+// the off-screen slides). The talk clock is FULLY manual: S (or clicking the
+// widget) starts it as the speaker begins — capturing that segment's
+// allotment — and pressing S again stops it when they finish. Navigation
+// never starts, stops, or resets a running clock, so jumping around the deck
+// mid-talk (even into someone else's slides) is safe; when idle, the widget
+// previews the on-screen segment's allotment. There is deliberately no
+// absolute day clock or drift tracking: with manual starts, "are we behind"
+// is the wall clock's job (bottom-left). The countdown goes RED at question
+// time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); one minute later
+// (13:00 / 5:00) the play-off music (Spanish Flea) starts quietly and swells
+// until the next slide advance stops it. Controls: S starts/stops the talk
+// clock, M mutes the music, H hides both widgets.
 ---
 
 <div id="offsite-timer-mount" hidden></div>
@@ -83,7 +84,7 @@
   el.setAttribute("role", "button");
   el.tabIndex = -1;
   el.title =
-    "Click or press S when the speaker starts. M mutes the play-off music, H hides.";
+    "Click or press S when the speaker starts, and again when they finish. M mutes the play-off music, H hides.";
   el.innerHTML =
     '<div class="count count-idle">—:—</div>' +
     '<div class="status status-idle"><span class="dot"></span>ready</div>';
@@ -107,6 +108,7 @@
 
   let currentId: string | null = null;
   let talkStart: number | null = null;
+  let runningSeg: Segment | null = null;
   let musicDone = false;
 
   const detectSeg = (): string | null => {
@@ -183,8 +185,11 @@
   };
 
   const render = () => {
-    const seg = currentId ? (byId.get(currentId) ?? null) : null;
-    const running = talkStart != null && seg != null;
+    // A running clock belongs to the segment captured when S was pressed;
+    // navigating anywhere else never touches it. When idle, preview the
+    // allotment of whatever segment is on screen.
+    const running = talkStart != null && runningSeg != null;
+    const seg = running ? runningSeg : currentId ? (byId.get(currentId) ?? null) : null;
     el.classList.toggle("idle", !running);
 
     if (!seg) {
@@ -227,30 +232,34 @@
   };
 
   const onSlide = () => {
-    const id = detectSeg();
-    if (id !== currentId) {
-      currentId = id;
-      talkStart = null; // arm the new segment; S starts it
-      musicDone = false;
-      stopMusic();
-    } else if (playing) {
-      // any slide advance while the play-off is playing silences it for the
-      // rest of this talk
+    // Navigation NEVER starts, stops, or re-arms the clock — jumping around
+    // the deck mid-talk is safe. Its only effect: a slide advance while the
+    // play-off is playing silences it for the rest of this talk.
+    currentId = detectSeg();
+    if (playing) {
       stopMusic();
       musicDone = true;
     }
     render();
   };
 
-  const startTalk = () => {
+  // S (or clicking the widget) toggles the talk clock: press when the
+  // speaker starts, press again when they finish. Restart = two presses.
+  const toggleTalk = () => {
     ensureAudio(); // user gesture — unlock audio for later
     stopMusic();
     musicDone = false;
-    talkStart = Date.now();
+    if (talkStart != null) {
+      talkStart = null;
+      runningSeg = null;
+    } else {
+      runningSeg = currentId ? (byId.get(currentId) ?? null) : null;
+      talkStart = Date.now();
+    }
     render();
   };
 
-  el.addEventListener("click", startTalk);
+  el.addEventListener("click", toggleTalk);
   // Capture phase + stopPropagation so our keys never reach Reveal — its
   // default binding for S opens the speaker-notes window.
   window.addEventListener(
@@ -263,7 +272,7 @@
       if (k !== "s" && k !== "m" && k !== "h") return;
       e.preventDefault();
       e.stopPropagation();
-      if (k === "s") startTalk();
+      if (k === "s") toggleTalk();
       else if (k === "m") {
         muted = !muted;
         if (muted) stopMusic();
