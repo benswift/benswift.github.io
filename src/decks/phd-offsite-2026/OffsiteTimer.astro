@@ -76,11 +76,9 @@
   el.title =
     "Click or press T to start / re-anchor the day clock. Press H to hide.";
   el.innerHTML =
-    '<div class="who">—</div>' +
     '<div class="count count-idle">—:—</div>' +
     '<div class="drift drift-idle"><span class="dot"></span>not started</div>';
   document.body.appendChild(el);
-  const whoEl = el.querySelector(".who") as HTMLElement;
   const countEl = el.querySelector(".count") as HTMLElement;
   const driftEl = el.querySelector(".drift") as HTMLElement;
 
@@ -107,7 +105,6 @@
 
   const render = () => {
     const seg = currentId ? byId.get(currentId) ?? null : null;
-    whoEl.textContent = seg ? seg.label : "—";
     el.classList.toggle("idle", !started);
 
     if (!seg) {
@@ -228,16 +225,6 @@
   }
   .offsite-timer.hidden {
     display: none;
-  }
-  .offsite-timer .who {
-    font-size: 0.62rem;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    opacity: 0.75;
-    max-width: 12rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
   .offsite-timer .count {
     font-size: 1.65rem;
