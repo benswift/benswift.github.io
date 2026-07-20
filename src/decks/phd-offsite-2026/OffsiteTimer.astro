@@ -16,10 +16,10 @@
 // previews the on-screen segment's allotment. There is deliberately no
 // absolute day clock or drift tracking: with manual starts, "are we behind"
 // is the wall clock's job (bottom-left). The countdown goes RED at question
-// time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); one minute later
-// (13:00 / 5:00) the play-off music (Spanish Flea) plays until the next
-// slide advance stops it. Controls: S starts/stops the talk clock, M mutes
-// the music, H hides both widgets.
+// time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); from the play-off
+// mark (13:00 / 4:30) the music (Spanish Flea) plays until the next slide
+// advance stops it. Controls: S starts/stops the talk clock, M mutes the
+// music, H hides both widgets.
 ---
 
 <div id="offsite-timer-mount" hidden></div>
@@ -39,8 +39,8 @@
 
   // The day's program. Each `id` matches a `seg-<id>` class on that segment's
   // divider slide in slides.deck.mdx. Talks are 12+3 (15 min) and 4+1 (5 min);
-  // the countdown goes red at question time, and the play-off starts one
-  // minute later (13:00 / 5:00), playing until a slide advance stops it.
+  // the countdown goes red at question time (12:00 / 4:00), and the play-off
+  // starts at 13:00 / 4:30, playing until a slide advance stops it.
   const SCHEDULE: Segment[] = [
     { id: "intro", label: "Welcome & intro", start: "09:00", mins: 15 },
     { id: "evan", label: "Evan Skinner", start: "09:15", mins: 15, qa: 3, playoff: 13 },
@@ -54,14 +54,14 @@
     { id: "liz", label: "Liz Skelton", start: "11:15", mins: 15, qa: 3, playoff: 13 },
     { id: "dominika", label: "Dominika Janus", start: "11:30", mins: 15, qa: 3, playoff: 13 },
     { id: "break-mid", label: "Short break", start: "11:45", mins: 15 },
-    { id: "charlie", label: "Charlie Paulk", start: "12:00", mins: 5, qa: 1, playoff: 5 },
-    { id: "joshua", label: "Joshua Castle", start: "12:05", mins: 5, qa: 1, playoff: 5 },
-    { id: "griffiths", label: "Thomas Griffiths", start: "12:10", mins: 5, qa: 1, playoff: 5 },
-    { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5, qa: 1, playoff: 5 },
-    { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5, qa: 1, playoff: 5 },
-    { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5, qa: 1, playoff: 5 },
-    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5, qa: 1, playoff: 5 },
-    { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5, qa: 1, playoff: 5 },
+    { id: "charlie", label: "Charlie Paulk", start: "12:00", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "joshua", label: "Joshua Castle", start: "12:05", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "griffiths", label: "Thomas Griffiths", start: "12:10", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5, qa: 1, playoff: 4.5 },
     { id: "lunch", label: "Lunch", start: "12:45", mins: 60 },
     { id: "skills", label: "Skills: working with Claude", start: "13:45", mins: 90 },
     { id: "break-pm", label: "Afternoon tea", start: "15:15", mins: 15 },
