@@ -1,5 +1,5 @@
 ---
-// Subtle, schedule-aware timer overlay for the PhD offsite deck.
+// Subtle per-talk timer overlay for the PhD offsite deck.
 //
 // Rendered as a plain (non-hydrated) component: astromotion's slide splitter
 // wraps deck imports into a Reveal <section>, which trips Astro's
@@ -7,10 +7,17 @@
 // .astro component with a bundled <script> sidesteps that entirely while still
 // shipping client JS.
 //
-// The script builds a fixed overlay on <body> (so it survives Reveal hiding the
-// off-screen slides), watches navigation, and shows the current speaker's
-// countdown plus a whole-day drift badge. Controls: T starts / re-anchors the
-// day clock at the current slide, H hides.
+// The script builds a fixed overlay on <body> (so it survives Reveal hiding
+// the off-screen slides) and watches navigation. Navigating into a segment
+// only ARMS its countdown (grey, full allotment); the clock starts when the
+// chair presses S (or clicks the widget) as the speaker actually begins — so
+// nobody pushed late by an earlier overrun loses part of their slot. There is
+// deliberately no absolute day clock or drift tracking: with manual starts,
+// "are we behind" is the wall clock's job. Amber = question time (12+3 for
+// the 15-min talks, 4+1 for the 5-min ones); from the play-off mark (13:00 /
+// 4:30) a synthesised play-off loop starts quietly and swells the longer it
+// goes, red past zero. Controls: S starts (or restarts) the talk clock,
+// M mutes the music, H hides the widget.
 ---
 
 <div id="offsite-timer-mount" hidden></div>
@@ -19,33 +26,38 @@
   interface Segment {
     id: string;
     label: string;
-    start: string;
+    start: string; // scheduled start — documentation only, not used by logic
     mins: number;
+    qa?: number; // minutes reserved for questions at the end of the slot
+    playoff?: number; // elapsed minutes when the play-off music starts
+    // (defaults to the full slot, i.e. music only on overrun)
   }
 
   // The day's program. Each `id` matches a `seg-<id>` class on that segment's
-  // divider slide in slides.deck.mdx.
+  // divider slide in slides.deck.mdx. Talks are 12+3 (15 min) and 4+1 (5 min);
+  // the play-off starts at 13:00 / 4:30 so the room hears it BEFORE the slot
+  // is blown, and it just keeps swelling from there.
   const SCHEDULE: Segment[] = [
     { id: "intro", label: "Welcome & intro", start: "09:00", mins: 15 },
-    { id: "evan", label: "Evan Skinner", start: "09:15", mins: 15 },
-    { id: "jake", label: "Jake Blight", start: "09:30", mins: 15 },
-    { id: "amy", label: "Amy Wardrop", start: "09:45", mins: 15 },
-    { id: "tom-chan", label: "Tom Chan", start: "10:00", mins: 15 },
-    { id: "bek", label: "Bek Conroy", start: "10:15", mins: 15 },
+    { id: "evan", label: "Evan Skinner", start: "09:15", mins: 15, qa: 3, playoff: 13 },
+    { id: "jake", label: "Jake Blight", start: "09:30", mins: 15, qa: 3, playoff: 13 },
+    { id: "amy", label: "Amy Wardrop", start: "09:45", mins: 15, qa: 3, playoff: 13 },
+    { id: "tom-chan", label: "Tom Chan", start: "10:00", mins: 15, qa: 3, playoff: 13 },
+    { id: "bek", label: "Bek Conroy", start: "10:15", mins: 15, qa: 3, playoff: 13 },
     { id: "break-am", label: "Morning tea", start: "10:30", mins: 15 },
-    { id: "matthew", label: "Matthew Heffernan", start: "10:45", mins: 15 },
-    { id: "bill", label: "Bill McAlister", start: "11:00", mins: 15 },
-    { id: "liz", label: "Liz Skelton", start: "11:15", mins: 15 },
-    { id: "dominika", label: "Dominika Janus", start: "11:30", mins: 15 },
+    { id: "matthew", label: "Matthew Heffernan", start: "10:45", mins: 15, qa: 3, playoff: 13 },
+    { id: "bill", label: "Bill McAlister", start: "11:00", mins: 15, qa: 3, playoff: 13 },
+    { id: "liz", label: "Liz Skelton", start: "11:15", mins: 15, qa: 3, playoff: 13 },
+    { id: "dominika", label: "Dominika Janus", start: "11:30", mins: 15, qa: 3, playoff: 13 },
     { id: "break-mid", label: "Short break", start: "11:45", mins: 15 },
-    { id: "charlie", label: "Charlie Paulk", start: "12:00", mins: 5 },
-    { id: "joshua", label: "Joshua Castle", start: "12:05", mins: 5 },
-    { id: "griffiths", label: "Thomas Griffiths", start: "12:10", mins: 5 },
-    { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5 },
-    { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5 },
-    { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5 },
-    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5 },
-    { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5 },
+    { id: "charlie", label: "Charlie Paulk", start: "12:00", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "joshua", label: "Joshua Castle", start: "12:05", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "griffiths", label: "Thomas Griffiths", start: "12:10", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5, qa: 1, playoff: 4.5 },
+    { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5, qa: 1, playoff: 4.5 },
     { id: "lunch", label: "Lunch", start: "12:45", mins: 60 },
     { id: "skills", label: "Skills: working with Claude", start: "13:45", mins: 90 },
     { id: "break-pm", label: "Afternoon tea", start: "15:15", mins: 15 },
@@ -54,13 +66,7 @@
     { id: "wrap", label: "Wrap-up & close", start: "16:30", mins: 15 },
   ];
 
-  const toMin = (hhmm: string) => {
-    const [h, m] = hhmm.split(":").map((n) => parseInt(n, 10));
-    return h * 60 + m;
-  };
-  const dayStart = SCHEDULE.length ? toMin(SCHEDULE[0].start) : 0;
   const byId = new Map(SCHEDULE.map((s) => [s.id, s]));
-  const plannedOffsetSec = (seg: Segment) => (toMin(seg.start) - dayStart) * 60;
 
   const fmt = (sec: number) => {
     const neg = sec < 0;
@@ -74,19 +80,16 @@
   el.setAttribute("role", "button");
   el.tabIndex = -1;
   el.title =
-    "Click or press T to start / re-anchor the day clock. Press H to hide.";
+    "Click or press S when the speaker starts. M mutes the play-off music, H hides.";
   el.innerHTML =
     '<div class="count count-idle">—:—</div>' +
-    '<div class="drift drift-idle"><span class="dot"></span>not started</div>';
+    '<div class="status status-idle"><span class="dot"></span>ready</div>';
   document.body.appendChild(el);
   const countEl = el.querySelector(".count") as HTMLElement;
-  const driftEl = el.querySelector(".drift") as HTMLElement;
+  const statusEl = el.querySelector(".status") as HTMLElement;
 
-  let started = false;
-  let t0 = 0;
-  let anchorSec = 0;
   let currentId: string | null = null;
-  let enteredAt = 0;
+  let talkStart: number | null = null;
 
   const detectSeg = (): string | null => {
     let s: Element | null =
@@ -99,84 +102,191 @@
     return null;
   };
 
+  // --- play-off music -------------------------------------------------------
+  // A synthesised "wrap it up" loop (the Oscars vibe, not the Oscars
+  // recording): a bright six-note string-ish motif, looped, with the master
+  // gain rising the longer the speaker runs over. Created lazily on the first
+  // S press so the AudioContext is unlocked by a user gesture.
+  let ac: AudioContext | null = null;
+  let master: GainNode | null = null;
+  let loopTimer: number | null = null;
+  let nextBar = 0;
+  let muted = false;
+
+  const MOTIF = [
+    { f: 392.0, d: 1 }, // G4
+    { f: 523.25, d: 1 }, // C5
+    { f: 659.25, d: 1 }, // E5
+    { f: 783.99, d: 1.75 }, // G5
+    { f: 659.25, d: 1 }, // E5
+    { f: 523.25, d: 1.75 }, // C5
+  ];
+  const STEP = 0.17; // seconds per unit duration — brisk, insistent
+  const BAR = MOTIF.reduce((t, n) => t + n.d, 0) * STEP;
+
+  const ensureAudio = () => {
+    if (!ac) {
+      ac = new AudioContext();
+      const filt = ac.createBiquadFilter();
+      filt.type = "lowpass";
+      filt.frequency.value = 1800;
+      master = ac.createGain();
+      master.gain.value = 0;
+      master.connect(filt);
+      filt.connect(ac.destination);
+    }
+    if (ac.state === "suspended") ac.resume();
+  };
+
+  const scheduleBar = (when: number) => {
+    if (!ac || !master) return;
+    let t = when;
+    for (const note of MOTIF) {
+      const dur = note.d * STEP;
+      for (const detune of [-4, 4]) {
+        const o = ac.createOscillator();
+        o.type = "sawtooth";
+        o.frequency.value = note.f;
+        o.detune.value = detune;
+        const g = ac.createGain();
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(0.5, t + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + dur * 0.92);
+        o.connect(g);
+        g.connect(master);
+        o.start(t);
+        o.stop(t + dur);
+      }
+      t += dur;
+    }
+  };
+
+  const startMusic = () => {
+    if (loopTimer != null || !ac || muted) return;
+    nextBar = ac.currentTime + 0.05;
+    loopTimer = window.setInterval(() => {
+      if (!ac) return;
+      while (nextBar < ac.currentTime + 0.6) {
+        scheduleBar(nextBar);
+        nextBar += BAR;
+      }
+    }, 200);
+  };
+
+  const stopMusic = () => {
+    if (loopTimer != null) {
+      clearInterval(loopTimer);
+      loopTimer = null;
+    }
+    if (ac && master) master.gain.setTargetAtTime(0, ac.currentTime, 0.1);
+  };
+
+  // Volume swells from the play-off mark: quiet nudge at 13:00 (4:30 for the
+  // short talks), hard to ignore a minute later, capped so it never distorts.
+  const setMusicVolume = (overSec: number) => {
+    if (!ac || !master) return;
+    const v = Math.min(0.45, 0.05 + (overSec / 60) * 0.25);
+    master.gain.setTargetAtTime(v, ac.currentTime, 0.2);
+  };
+
+  // --- render ---------------------------------------------------------------
   const setClass = (node: HTMLElement, base: string, state: string) => {
     node.className = `${base} ${base}-${state}`;
   };
 
+  const setStatus = (state: string, text: string) => {
+    setClass(statusEl, "status", state);
+    statusEl.innerHTML = "";
+    const d = document.createElement("span");
+    d.className = "dot";
+    statusEl.appendChild(d);
+    statusEl.appendChild(document.createTextNode(text));
+  };
+
   const render = () => {
-    const seg = currentId ? byId.get(currentId) ?? null : null;
-    el.classList.toggle("idle", !started);
+    const seg = currentId ? (byId.get(currentId) ?? null) : null;
+    const running = talkStart != null && seg != null;
+    el.classList.toggle("idle", !running);
 
     if (!seg) {
       countEl.textContent = "—:—";
       setClass(countEl, "count", "idle");
-      setClass(driftEl, "drift", "idle");
-      driftEl.lastChild!.textContent = started ? "on schedule" : "not started";
-      driftEl.insertBefore(dot(), driftEl.firstChild);
+      setStatus("idle", "ready");
+      stopMusic();
       return;
     }
 
-    const spent = started ? (Date.now() - enteredAt) / 1000 : 0;
+    const spent = running ? (Date.now() - talkStart!) / 1000 : 0;
     const remaining = seg.mins * 60 - spent;
+    const qaSec = (seg.qa ?? 1) * 60;
+    const playoffSec = (seg.playoff ?? seg.mins) * 60;
     countEl.textContent = fmt(remaining);
-    setClass(
-      countEl,
-      "count",
-      !started ? "idle" : remaining < 0 ? "over" : remaining <= 60 ? "soon" : "ok",
-    );
 
-    let driftText = "not started";
-    let driftState = "idle";
-    if (started) {
-      const virtualElapsed = (enteredAt - t0) / 1000 + anchorSec;
-      const drift = virtualElapsed - plannedOffsetSec(seg);
-      driftText =
-        Math.abs(drift) <= 30
-          ? "on schedule"
-          : drift > 0
-            ? `${fmt(drift)} behind`
-            : `${fmt(-drift)} ahead`;
-      driftState = drift <= 30 ? "ok" : drift <= 180 ? "warn" : "over";
+    const playingOff = running && spent >= playoffSec;
+    if (playingOff && !muted) {
+      startMusic();
+      setMusicVolume(spent - playoffSec);
+    } else {
+      stopMusic();
     }
-    setClass(driftEl, "drift", driftState);
-    driftEl.innerHTML = "";
-    driftEl.appendChild(dot());
-    driftEl.appendChild(document.createTextNode(driftText));
-  };
 
-  const dot = () => {
-    const d = document.createElement("span");
-    d.className = "dot";
-    return d;
+    if (!running) {
+      setClass(countEl, "count", "idle");
+      setStatus("idle", "S starts");
+    } else if (remaining < 0) {
+      setClass(countEl, "count", "over");
+      setStatus("over", muted ? "overtime (muted)" : "overtime");
+    } else if (playingOff) {
+      setClass(countEl, "count", "soon");
+      setStatus("soon", muted ? "play-off (muted)" : "play-off");
+    } else if (remaining <= qaSec) {
+      setClass(countEl, "count", "soon");
+      setStatus("soon", "questions");
+    } else {
+      setClass(countEl, "count", "ok");
+      setStatus("ok", "talk");
+    }
   };
 
   const onSlide = () => {
     const id = detectSeg();
     if (id !== currentId) {
       currentId = id;
-      if (started) enteredAt = Date.now();
+      talkStart = null; // arm the new segment; S starts it
+      stopMusic();
     }
     render();
   };
 
-  const start = () => {
-    currentId = detectSeg();
-    const seg = currentId ? byId.get(currentId) : null;
-    t0 = Date.now();
-    anchorSec = seg ? plannedOffsetSec(seg) : 0;
-    enteredAt = t0;
-    started = true;
+  const startTalk = () => {
+    ensureAudio(); // user gesture — unlock audio for later
+    stopMusic();
+    talkStart = Date.now();
     render();
   };
 
-  el.addEventListener("click", start);
-  window.addEventListener("keydown", (e) => {
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
-    const tag = (e.target as HTMLElement)?.tagName;
-    if (tag === "INPUT" || tag === "TEXTAREA") return;
-    if (e.key === "t" || e.key === "T") start();
-    else if (e.key === "h" || e.key === "H") el.classList.toggle("hidden");
-  });
+  el.addEventListener("click", startTalk);
+  // Capture phase + stopPropagation so our keys never reach Reveal — its
+  // default binding for S opens the speaker-notes window.
+  window.addEventListener(
+    "keydown",
+    (e) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA") return;
+      const k = e.key.toLowerCase();
+      if (k !== "s" && k !== "m" && k !== "h") return;
+      e.preventDefault();
+      e.stopPropagation();
+      if (k === "s") startTalk();
+      else if (k === "m") {
+        muted = !muted;
+        if (muted) stopMusic();
+        render();
+      } else el.classList.toggle("hidden");
+    },
+    true,
+  );
 
   const attach = () => {
     const r = document.querySelector(".reveal");
@@ -191,7 +301,7 @@
       if (attach()) clearInterval(poll);
     }, 200);
   }
-  setInterval(render, 500);
+  setInterval(render, 250);
   render();
 </script>
 
@@ -245,7 +355,7 @@
   .offsite-timer .count-idle {
     color: #9b8fb0;
   }
-  .offsite-timer .drift {
+  .offsite-timer .status {
     font-size: 0.6rem;
     display: flex;
     align-items: center;
@@ -260,16 +370,16 @@
     background: currentColor;
     flex: none;
   }
-  .offsite-timer .drift-ok {
+  .offsite-timer .status-ok {
     color: #56d364;
   }
-  .offsite-timer .drift-warn {
+  .offsite-timer .status-soon {
     color: #e3b341;
   }
-  .offsite-timer .drift-over {
+  .offsite-timer .status-over {
     color: #f85149;
   }
-  .offsite-timer .drift-idle {
+  .offsite-timer .status-idle {
     color: #9b8fb0;
   }
   @keyframes offsite-pulse {
