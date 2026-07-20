@@ -23,14 +23,19 @@ trap 'rm -rf "$work"' EXIT
 id="${1:?usage: convert-submission.sh <student-id> <src-file>...}"
 shift
 
+# Render pages at 150dpi then fit within 1920x1080 preserving aspect ratio.
+# (Passing both -scale-to-x and -scale-to-y to pdftoppm stretches non-16:9
+# pages to exactly 1920x1080 --- that distorted A4/portrait submissions.)
+# Non-16:9 output needs `![bg contain]` in the deck, not plain `![bg]`.
 pages_from_pdf() {
   local pdf="$1"
-  pdftoppm -png -r 150 -scale-to-x 1920 -scale-to-y 1080 "$pdf" "$work/$id-page"
+  pdftoppm -png -r 150 "$pdf" "$work/$id-page"
   local n=0
   for png in "$work/$id-page"-*.png; do
     n=$((n + 1))
     printf -v num '%02d' "$n"
-    avifenc -q 60 -s 6 "$png" "$out/$id-$num.avif" >/dev/null
+    magick "$png" -resize 1920x1080 "$work/$id-fit-$num.png"
+    avifenc -q 60 -s 6 "$work/$id-fit-$num.png" "$out/$id-$num.avif" >/dev/null
     echo "  $id-$num.avif"
   done
 }
