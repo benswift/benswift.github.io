@@ -23,18 +23,37 @@ trap 'rm -rf "$work"' EXIT
 id="${1:?usage: convert-submission.sh <student-id> <src-file>...}"
 shift
 
-# Render pages at 150dpi then fit within 1920x1080 preserving aspect ratio.
-# (Passing both -scale-to-x and -scale-to-y to pdftoppm stretches non-16:9
-# pages to exactly 1920x1080 --- that distorted A4/portrait submissions.)
+# Render pages at 150dpi, crop away the page-background margins, then fit
+# within 1920x1080 preserving aspect ratio. Non-16:9 PDFs (A4 exports,
+# letter pages) otherwise carry big baked-in white margins onto the dark
+# deck. The crop box is the UNION of every page's content bounding box, so
+# all pages get the same framing (no per-page zoom jitter).
+# (The old version passed both -scale-to-x and -scale-to-y to pdftoppm,
+# which stretched non-16:9 pages to exactly 1920x1080.)
 # Non-16:9 output needs `![bg contain]` in the deck, not plain `![bg]`.
 pages_from_pdf() {
   local pdf="$1"
   pdftoppm -png -r 150 "$pdf" "$work/$id-page"
+  local xmin='' ymin='' xmax='' ymax='' g w h x y
+  for png in "$work/$id-page"-*.png; do
+    g="$(magick "$png" -fuzz 4% -format '%@' info: 2>/dev/null)" || continue
+    [[ "$g" =~ ^([0-9]+)x([0-9]+)\+([0-9]+)\+([0-9]+)$ ]] || continue
+    w=${BASH_REMATCH[1]} h=${BASH_REMATCH[2]} x=${BASH_REMATCH[3]} y=${BASH_REMATCH[4]}
+    ((w < 50 || h < 50)) && continue # effectively blank page --- ignore
+    [[ -z $xmin ]] || ((x < xmin)) && xmin=$x
+    [[ -z $ymin ]] || ((y < ymin)) && ymin=$y
+    [[ -z $xmax ]] || ((x + w > xmax)) && xmax=$((x + w))
+    [[ -z $ymax ]] || ((y + h > ymax)) && ymax=$((y + h))
+  done
+  local crop=()
+  if [[ -n $xmin ]]; then
+    crop=(-crop "$((xmax - xmin))x$((ymax - ymin))+$xmin+$ymin" +repage)
+  fi
   local n=0
   for png in "$work/$id-page"-*.png; do
     n=$((n + 1))
     printf -v num '%02d' "$n"
-    magick "$png" -resize 1920x1080 "$work/$id-fit-$num.png"
+    magick "$png" "${crop[@]}" -resize 1920x1080 "$work/$id-fit-$num.png"
     avifenc -q 60 -s 6 "$work/$id-fit-$num.png" "$out/$id-$num.avif" >/dev/null
     echo "  $id-$num.avif"
   done
