@@ -52,6 +52,23 @@
   margin-block: 0.1em;
 }
 
+/* Schedule entries link to their divider slide (via astromotion's `_id`
+   directive). Keep them the same colour as the rest of the list — two dozen
+   coloured names would read as decoration — with a faint dotted underline as
+   the only standing hint, and the link colour on hover/focus. */
+.reveal .slides section.schedule a {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentcolor 30%, transparent);
+  text-underline-offset: 0.2em;
+}
+
+.reveal .slides section.schedule a:is(:hover, :focus-visible) {
+  color: var(--r-link-color);
+  text-decoration-style: solid;
+  text-decoration-color: currentcolor;
+}
+
 /* `todo` placeholder slides (phd-offsite-2026 deck): a dim "slides to come"
    marker for presenters whose slides haven't arrived yet. */
 .reveal .slides section.todo em {
