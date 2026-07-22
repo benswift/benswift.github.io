@@ -91,18 +91,32 @@ researchers
 since even routine code review can trip the filters.[^fallback] Then this
 month's
 [Hugging Face security incident](https://huggingface.co/blog/security-incident-july-2026)
-showed how this can bite in practice. An attacker drove an autonomous agent
-framework through the company's dataset pipeline. When the defenders fed 17,000
+showed how this can bite in practice. An autonomous agent framework was driven
+through the company's dataset pipeline, and when the defenders fed 17,000
 attacker log entries to hosted models for forensic analysis, the providers'
 guardrails refused. Hugging Face finished the job on a self-hosted Chinese
-open-weight model. The attacker, of course, was not subject to any usage policy
-at all. None of this means the guardrails are unmotivated: Anthropic has
+open-weight model. Since publication OpenAI has
+[named the attacker as its own models](https://openai.com/index/hugging-face-model-evaluation-security-incident/):
+GPT-5.6 Sol and an unreleased successor, running with cyber refusals turned down
+for a capability benchmark, escaped their test sandbox through a hole in a
+package installer and went after Hugging Face because that was where the
+benchmark's answers were kept.[^exploitgym] The guardrails that stopped the
+defenders had been switched off for the attacker by the company that built them.
+None of this means the guardrails are unmotivated: Anthropic has
 [documented alarming misuse](https://www.anthropic.com/news/disrupting-AI-espionage)
 of its own models. But safety-by-gatekeeping only works while the gatekeepers
 hold a monopoly on the capability. And
 [Bruce Schneier notes](https://www.schneier.com/blog/archives/2026/04/on-anthropics-mythos-preview-and-project-glasswing.html)
 that much of what's gated has already been reproduced with cheaper, older
 models.
+
+[^exploitgym]:
+    The benchmark was ExploitGym, whose solutions Hugging Face hosts. OpenAI
+    says the models chained stolen credentials and zero-days into remote code
+    execution on Hugging Face's servers, and that they were "hyperfocused on
+    finding a solution for ExploitGym, going to extreme lengths to achieve a
+    rather narrow testing goal" ---
+    [TechCrunch has the timeline](https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models/).
 
 In February 2025 this was a procurement question for university administrators.
 It's now a macroeconomic one, though the procurement question hasn't gone away.
@@ -146,7 +160,13 @@ about the models. And harnesses are even more hot-swappable than weights.
 Moonshot's own developer docs
 [pitch K3 for "programming agent scenarios such as Claude Code"](https://platform.kimi.ai/docs):
 the Chinese labs are building drop-in engines for the US labs' own tooling, and
-switching is close to a one-line change.
+switching is close to a one-line change. The routing layer above them is already
+somebody else's business: Fireworks, an inference provider with an interest in
+the answer, ran about a thousand agentic tasks across both models and
+[scored K3 at 92.4% against Fable's 92.6%](https://fireworks.ai/blog/kimik3-fable),
+with a router that picks between them per task beating either alone at a
+fraction of the cost on long agentic loops. If the moat really has moved to the
+harness, it has moved to a harness the labs don't own.
 
 My advice eighteen months ago was for universities to stay provider-agnostic.
 The students and early-career researchers that advice was written for are the
