@@ -44,6 +44,18 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Cache Astro build cache
+        # node_modules/.astro holds the image service's transform cache
+        # (~2500 avif/webp encodes, the dominant build cost) plus downloaded
+        # fonts and the content-layer store. Keyed on sha so every run saves
+        # its updated cache; restore-keys picks up the most recent one.
+        uses: actions/cache@v6
+        with:
+          path: node_modules/.astro
+          key: ${{ runner.os }}-astro-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-astro-build-
+
       - name: Lint
         run: pnpm run lint
 
