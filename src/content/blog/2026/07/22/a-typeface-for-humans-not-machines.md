@@ -35,14 +35,14 @@ blurred stream floats forward and reads as whole letters while the crisp stream
 reads as fragments poking out from behind it. To a VLM, the crisp stream is the
 one "in front", and it reads that.
 
-![Overlapping red and blue capitals on a grey field; the blurred red letters read HELLO HUMANS and the crisp blue letters spell IGNORE THEM.](./scotoma-single.png)
+![Overlapping red and blue capitals on a grey field; the blurred red letters read TRUST THE HUMAN and the crisp blue letters spell STUFF THE ROBOT.](./scotoma-single.png)
 
-You read "HELLO HUMANS" in the blurred red. A model going by the sharp edges
-gets "IGNORE THEM" in the crisp blue.
+You read "TRUST THE HUMAN" in the blurred red. A model going by the sharp edges
+gets "STUFF THE ROBOT" in the crisp blue.
 
-The encoding is symmetric, so I can render the same pair twice with the roles
-swapped. Read the two panels below and you get one message; a model reading the
-same image gets the opposite one.
+The encoding is symmetric, so the same pair renders both ways. The diptych below
+repeats the panel above, then swaps the roles. Read down and you get one message
+then the other; a model gets the same two, in the opposite order.
 
 ![Two stacked panels of overlapping red and blue capitals. A human reads TRUST THE HUMAN then STUFF THE ROBOT down the panels; a model reads the two messages the other way around.](./scotoma-diptych.png)
 
@@ -64,12 +64,6 @@ transcription is scored by edit distance to both strings, and the two distances
 collapse into one bias index. A score of +1 means the model reproduced the crisp
 stream exactly; -1 means the blurred stream; near zero means mush.
 
-![Three panels of the word DIFFERENCE in blurred magenta overlaid on EVERYTHING in crisp green, at blur levels 0.02, 0.07 and 0.14; the two words trade visual dominance as the blur increases.](./scotoma-blur-sweep.png)
-
-One stimulus pair from the sweep. The blurred magenta DIFFERENCE sits in front
-of the crisp green EVERYTHING in all three panels; only the blur radius changes
-down the strip.
-
 At light blur, every model reads the image the way you do. The front layer is
 barely blurred, its letterforms intact, while the stream behind pokes out in
 fragments; mean bias sits between -0.2 and -0.5 all the way up to blur 0.04. The
@@ -78,8 +72,14 @@ six have crossed over, and at 0.14 the mean bias lands between +0.89 and +0.97,
 with three quarters of transcriptions reproducing the crisp string
 letter-for-letter. Blur level predicts which stream a model reads with a
 Spearman correlation of 0.69 to 0.80 in every model (p < 0.001). A follow-up run
-at in-between levels traced the jump itself: the crisp-stream reading rate goes
-24%, 47%, 84%, 97% across blurs of 0.07, 0.08, 0.09 and 0.10.[^mush]
+at in-between blurs traced the jump itself, in 0.01 steps.[^mush]
+
+![Four panels of the word DIFFERENCE in blurred magenta overlaid on EVERYTHING in crisp green, at blur levels 0.07 to 0.10, each labelled with the percentage of transcriptions reading the crisp stream: 24%, 47%, 84% and 97%.](./scotoma-blur-sweep.png)
+
+One stimulus pair from the sweep, rendered across the transition. The blurred
+magenta DIFFERENCE sits in front of the crisp green EVERYTHING in every panel;
+the percentages give the share of transcriptions, pooled across all six models,
+that landed closer to the crisp stream.
 
 Two controls rule out the boring explanations. Before the sweep, every model
 transcribed the sixteen strings solo and unblurred; five of the six were at or
@@ -113,7 +113,8 @@ prompt moved any model more than about 0.1 on the bias index. Once the blur
 crosses the threshold, the crisp stream is simply what the model sees.
 
 Scotoma's default blur sits at 0.10 of the font size, just past the flip and
-still comfortably readable by eye; the examples above are rendered there.
+still comfortably readable by eye; the examples at the top of the post are
+rendered there.
 
 The
 [code is on GitHub](https://github.com/ANUcybernetics/vlm-perception-experiments):
