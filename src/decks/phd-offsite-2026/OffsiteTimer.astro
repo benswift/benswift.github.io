@@ -15,11 +15,12 @@
 // mid-talk (even into someone else's slides) is safe; when idle, the widget
 // previews the on-screen segment's allotment. There is deliberately no
 // absolute day clock or drift tracking: with manual starts, "are we behind"
-// is the wall clock's job (bottom-left). The countdown goes RED at question
+// is the wall clock's job — astromotion's own, bottom-right on T. The
+// countdown goes RED at question
 // time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); from the play-off
 // mark (13:00 / 4:30) the music (Spanish Flea) plays until the next slide
 // advance stops it. Controls: S starts/stops the talk clock, M mutes the
-// music, H hides both widgets.
+// music, H hides the widget.
 ---
 
 <div id="offsite-timer-mount" hidden></div>
@@ -91,20 +92,6 @@
   document.body.appendChild(el);
   const countEl = el.querySelector(".count") as HTMLElement;
   const statusEl = el.querySelector(".status") as HTMLElement;
-
-  // Wall clock, bottom-left — the "are we behind" signal now that there's no
-  // day-clock drift tracking. H hides it together with the timer.
-  const clockEl = document.createElement("div");
-  clockEl.className = "offsite-clock";
-  document.body.appendChild(clockEl);
-  const renderClock = () => {
-    const now = new Date();
-    const hh = now.getHours().toString().padStart(2, "0");
-    const mm = now.getMinutes().toString().padStart(2, "0");
-    const ss = now.getSeconds().toString().padStart(2, "0");
-    clockEl.innerHTML = `${hh}:${mm}<span class="secs">:${ss}</span>`;
-  };
-  renderClock();
 
   let currentId: string | null = null;
   let talkStart: number | null = null;
@@ -274,7 +261,6 @@
         render();
       } else {
         el.classList.toggle("hidden");
-        clockEl.classList.toggle("hidden");
       }
     },
     true,
@@ -293,10 +279,7 @@
       if (attach()) clearInterval(poll);
     }, 200);
   }
-  setInterval(() => {
-    render();
-    renderClock();
-  }, 250);
+  setInterval(render, 250);
   render();
 </script>
 
@@ -336,39 +319,6 @@
     font-weight: 600;
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.01em;
-  }
-  .offsite-clock {
-    position: fixed;
-    left: 1.1rem;
-    bottom: 1.1rem;
-    z-index: 1000;
-    padding: 0.5rem 0.7rem 0.55rem;
-    border-radius: 0 8px 8px 8px; /* the asymmetric corner, mirrored */
-    background: rgba(20, 16, 26, 0.72);
-    backdrop-filter: blur(6px);
-    color: #e0e0e0;
-    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
-      monospace;
-    font-size: 1.65rem;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    letter-spacing: 0.01em;
-    line-height: 1.15;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-    user-select: none;
-    opacity: 0.62;
-    transition: opacity 0.25s ease;
-  }
-  .offsite-clock:hover {
-    opacity: 0.95;
-  }
-  .offsite-clock.hidden {
-    display: none;
-  }
-  .offsite-clock .secs {
-    font-size: 0.9rem;
-    font-weight: 500;
-    opacity: 0.6;
   }
   .offsite-timer .count-ok {
     color: #56d364;
