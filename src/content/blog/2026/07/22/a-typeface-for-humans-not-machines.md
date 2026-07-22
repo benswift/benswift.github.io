@@ -10,21 +10,21 @@ A couple of weeks ago Eric Lu released [Decoy Font](https://mixfont.com), a
 typeface that hides one message from AI vision models behind another. Crisp
 decoy letterforms sit in front and the real message is blurred underneath. A
 person squints past the decoy and reads the blur; a vision-language model (VLM)
-locks onto the sharp contours and reads the decoy instead. I couldn't stop
-thinking about it, because it runs right into something
-[Jess Herrington](https://cybernetics.anu.edu.au) and I have spent the last few
-months measuring.
+locks onto the sharp contours and reads the decoy instead. I was particularly
+interested in it because it's really similar to something
+[Jess Herrington](https://cybernetics.anu.edu.au/people/jessica-herrington/) and
+I have spent the last few months measuring.
 
-Our paper for this year's MAD workshop, "Hidden in Plain Sight", tests whether
+Our paper for this year's MAD workshop,
+[Hidden in Plain Sight](https://doi.org/10.1145/3810988.3812661), tests whether
 multimodal LLMs can judge which of two overlapping shapes is in front. Give one
 shape a crisp edge and the other a blurred one, and a person uses the blur as a
-depth cue: a blurred occlusion edge reads as the nearer surface. Models don't.
-They fall back on a verbal heuristic, sharp-means-close, and get it backwards
-exactly when the blurred shape is the one in front. You can't reason your way to
-the right answer from a description of the pixels, which is why it catches them
-out.
+depth cue: a blurred occlusion edge reads as the nearer surface. But models
+don't; they fall back on a heuristic, sharp-means-close, and get it backwards
+when the blurred shape is the one in front. You can't reason your way to the
+right answer from a description of the pixels, which is why it catches them out.
 
-Decoy Font pulls the same trick with letters instead of circles, so I wanted to
+Decoy Font uses the same trick with letters instead of circles, so I wanted to
 push it a step further: rather than one real message plus a throwaway decoy,
 carry _two_ real messages and let the blur decide who reads which.
 
@@ -49,18 +49,17 @@ same image gets the opposite one.
 I haven't yet run this past the models, so I can't tell you how often it
 actually works on text. The circle result might not transfer cleanly, because
 reading a half-occluded letter is a harder ask than judging which of two blobs
-is nearer. That's the next experiment. But a typeface doesn't need the
+is nearer. That's on my todo list for sure. But a typeface doesn't need the
 experiment to work out to be worth having. Worst case, the models read straight
-through it and I've made a font with a good backstory.
+through it and Jess and I have come up with a font with a cool backstory.
 
 The
 [code is on GitHub](https://github.com/ANUcybernetics/vlm-perception-experiments):
 a small module in the perception-experiment repo, uppercase-only, set in
 [Jost](https://github.com/indestructible-type/Jost) for its near-circular
-letterforms. It's a riff on Decoy Font rather than a rival to it. Lu got there
-first, and the depth-cue framing is the only thing I've added.
+letterforms. It's a riff on Decoy Font rather than a rival to it.
 
 [^name]:
-    A scotoma is a blind spot in the visual field. Borrowing a bit of human
-    vision science to name a weakness in machines that have no visual field to
-    speak of is most of the joke.
+    A scotoma is a blind spot in the visual field. So we're borrowing a bit of
+    human vision science to name a weakness in machines that have no visual
+    field.
