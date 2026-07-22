@@ -54,9 +54,9 @@ says.[^design] The effect is real, but it has a threshold. At light blur the
 models read the blurred stream in front, the same one you do, because the crisp
 stream behind is still the fragmentary one. Push the blur radius up to a tenth
 of the font size and every model flips: 97% of transcriptions are closer to the
-crisp stream than the blurred one. At the heaviest blur we tested, three
-quarters reproduce the crisp string letter-for-letter. Warning the model that
-there might be two overlapping messages doesn't rescue it, and neither does
+crisp stream than the blurred one.[^crossover] At the heaviest blur we tested,
+three quarters reproduce the crisp string letter-for-letter. Warning the model
+that there might be two overlapping messages doesn't rescue it, and neither does
 chain-of-thought prompting or extended thinking.
 
 The embarrassing part: the first version of this post rendered its images just
@@ -93,3 +93,10 @@ letterforms. It's a riff on Decoy Font rather than a rival to it.
     Opus, shown a blurred KLEKLOSKAT over a crisp SNASMILBUL with its extended
     thinking on, confidently reported "SNAKESKINBUILT". There is something very
     relatable about that.
+
+[^crossover]:
+    The transition is steep: a follow-up run at the in-between blur levels put
+    the crisp-stream reading rate at 24% (blur 0.07), 47% (0.08), 84% (0.09) and
+    97% (0.10). The GPT-5.4 models flip earlier than the Claude models, which
+    spend the middle of the transition reading neither stream well --- Haiku's
+    best guess for one pair at 0.09 was "GIRLINFAWNBLUEJUTS".
