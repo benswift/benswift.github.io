@@ -501,6 +501,11 @@
       "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mqzuc3bc232x",
       "cid": "bafyreifpgnkgystbi4piwuky3o7vbsh4pgqrxdnf5tozctpajvg6xovvlm",
       "syndicatedAt": "2026-07-19T22:46:39.159Z"
+    },
+    "/blog/2026/07/22/a-typeface-for-humans-not-machines": {
+      "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3mr7ouay3kr2r",
+      "cid": "bafyreievb7tligwxis6sposccfqj55n2be6d445k65fr64fjptyzlkigl4",
+      "syndicatedAt": "2026-07-22T06:25:25.138Z"
     }
   }
 }
