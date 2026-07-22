@@ -46,23 +46,21 @@ same image gets the opposite one.
 
 ![Two stacked panels of overlapping red and cyan capitals. A human reads TRUST THE HUMAN then STUFF THE ROBOT down the panels; a model reads the two messages the other way around.](./scotoma-diptych.png)
 
-When I first published this post I hadn't yet run Scotoma past the models, and I
-hedged accordingly. Now I have: just over 14,000 transcription trials across six
-current VLMs (Claude Opus, Sonnet and Haiku; GPT-5.4 full, mini and nano), each
-shown a pair of overlaid ten-letter strings and asked what the image
-says.[^design] The effect is real, but it has a threshold. At light blur the
-models read the blurred stream in front, the same one you do, because the crisp
-stream behind is still the fragmentary one. Push the blur radius up to a tenth
-of the font size and every model flips: 97% of transcriptions are closer to the
-crisp stream than the blurred one.[^crossover] At the heaviest blur we tested,
-three quarters reproduce the crisp string letter-for-letter. Warning the model
-that there might be two overlapping messages doesn't rescue it, and neither does
-chain-of-thought prompting or extended thinking.
+None of this would matter if the models just read straight through the blur, so
+I measured: just over 14,000 transcription trials across six current VLMs
+(Claude Opus, Sonnet and Haiku; GPT-5.4 full, mini and nano), each shown a pair
+of overlaid ten-letter strings and asked what the image says.[^design] The
+effect is real, but it has a threshold. At light blur the models read the
+blurred stream in front, the same one you do, because the crisp stream behind is
+still the fragmentary one. Push the blur radius up to a tenth of the font size
+and every model flips: 97% of transcriptions are closer to the crisp stream than
+the blurred one.[^crossover] At the heaviest blur we tested, three quarters
+reproduce the crisp string letter-for-letter. Warning the model that there might
+be two overlapping messages doesn't rescue it, and neither does chain-of-thought
+prompting or extended thinking.
 
-The embarrassing part: the first version of this post rendered its images just
-below that threshold, at a blur where the models mostly read "HELLO HUMANS" too.
-The examples above use the new default, blur at 0.10 of the font size rather
-than 0.07, and there the trick actually works.
+Scotoma's default blur sits at 0.10 of the font size, just past the flip and
+still comfortably readable by eye; the examples above are rendered there.
 
 The control conditions behaved themselves. The flip happens for pronounceable
 nonsense ("GRIMPUNVUT") just as it does for English words, so it isn't a
