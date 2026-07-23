@@ -105,6 +105,23 @@ export default defineConfig({
       },
     },
     {
+      // Jost caps at wght=900, used only by the Scotoma generator canvas.
+      // Near-circular letterforms; matches the typeface the experiment measured.
+      provider: fontProviders.local(),
+      name: "Jost",
+      cssVariable: "--font-jost",
+      fallbacks: ["Futura", "Century Gothic", "sans-serif"],
+      options: {
+        variants: [
+          {
+            src: ["./src/assets/fonts/jost-caps-900.woff2"],
+            weight: "900",
+            style: "normal",
+          },
+        ],
+      },
+    },
+    {
       provider: fontProviders.google(),
       name: "Public Sans",
       cssVariable: "--font-public-sans",

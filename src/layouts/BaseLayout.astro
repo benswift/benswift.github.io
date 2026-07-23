@@ -48,6 +48,10 @@ const heroPhrasesContent = phrases.join("|")
   <head>
     <Font cssVariable="--font-fraunces" preload={[{ style: "normal" }]} />
     <Font cssVariable="--font-recursive" />
+    {/* Jost is only drawn into the Scotoma generator's canvas, but the
+        @font-face has to exist site-wide for the CSS variable to resolve.
+        Not preloaded: at 2.7KB it is only fetched when something renders it. */}
+    <Font cssVariable="--font-jost" />
     <Head
       title={title}
       description={description}
