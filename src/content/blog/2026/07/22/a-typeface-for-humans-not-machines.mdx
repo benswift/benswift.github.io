@@ -6,6 +6,8 @@ description:
 tags: [ai]
 ---
 
+import ScotomaGenerator from "@/components/svelte/ScotomaGenerator.svelte";
+
 A couple of weeks ago Eric Lu released [Decoy Font](https://mixfont.com), a
 typeface that hides one message from AI vision models behind another. Crisp
 decoy letterforms sit in front and the real message is blurred underneath. I was
@@ -43,6 +45,13 @@ repeats the panel above, then swaps the roles. Read down and you get one message
 then the other; a model gets the same two, in the opposite order.
 
 ![Two stacked panels of overlapping red and blue capitals. A human reads TRUST THE HUMAN then STUFF THE ROBOT down the panels; a model reads the two messages the other way around.](./scotoma-diptych.png)
+
+Rather than make you clone the repo to try it, here's the renderer in the page.
+Type two messages of the same length, and download or copy the result. The blur
+is the same three-pass Gaussian approximation the experiment used, so the
+numbers below apply to whatever you make here.
+
+<ScotomaGenerator client:visible />
 
 ## Does it actually fool the models?
 
@@ -100,7 +109,7 @@ The pseudoword pool was there to catch a language prior, and it caught a small
 one. The flip happens for GRIMPUNVUT just as it does for EVERYTHING, so
 recognising English isn't what drives the effect. But the Claude models (and,
 more weakly, GPT-5.4-mini) cling to a blurred string slightly longer when it
-spells something real, a bias gap of roughly 0.1 with p-values from <0.001 to
+spells something real, a bias gap of roughly 0.1 with p-values from &lt;0.001 to
 0.03, filling in from the language prior what the pixels no longer
 support.[^confab]
 
