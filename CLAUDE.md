@@ -31,6 +31,27 @@ an agent. It writes `.astro/dev.json` (URL/port/PID) and exposes
 `astro dev logs --follow`, and `astro dev stop`. JSON log output turns on
 automatically under agent detection (or pass `astro dev --json`).
 
+## Svelte islands
+
+Mount islands from `.mdx` with `client:visible` (or `client:load`), never
+`client:only`. Astro drops a component's scoped `<style>` for `client:only`
+islands imported from MDX: the `svelte-<hash>` class lands on the element but no
+stylesheet ever defines a matching rule, so the component renders unstyled with
+no warning at build time. Islands mounted from `.astro` files (HeroCanvas,
+ForCodesTable) aren't affected. To check, load the page and look for a matching
+rule in `document.styleSheets` --- the class attribute alone proves nothing.
+
+Because those islands are now server-rendered, keep browser APIs out of the
+component body and out of `onDestroy`. `onDestroy` is the one lifecycle hook
+Svelte also runs during SSR, so cleanup belongs in the function returned from
+`onMount`, which is client-only. A stray `window.removeEventListener` in
+`onDestroy` fails the build with `window is not defined`.
+
+Renaming a post from `.md` to `.mdx` to take an island doesn't change its URL,
+but MDX parses `<` followed by a letter or digit as JSX. Prose that Markdown
+passed through untouched (`p-values from <0.001`) becomes a build error ---
+escape it as `&lt;`.
+
 ## Markdown processor
 
 Astro 7's default Markdown processor is Sätteri, but this site (and
