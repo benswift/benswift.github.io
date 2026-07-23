@@ -20,6 +20,34 @@ Wired up so far:
 | `divider-break.avif`   | morning tea, short break, afternoon tea | a single cup, one curl of steam (reused across all three) |
 | `divider-lunch.avif`   | lunch                                   | a plate and fork, a few loose strokes                     |
 
+## Side panels
+
+The skills-session slides carry portrait panels in `./assets/`, same house style
+but 3:4 and no scrim (the text sits in the other 60% of the slide). Same
+generator, no reference images:
+
+| file                   | used by                     | subject                                            |
+| ---------------------- | --------------------------- | -------------------------------------------------- |
+| `skills-lantern.avif`  | how this session works      | a lantern                                          |
+| `skills-folder.avif`   | key idea (full-bleed, 3:2)  | a folder                                           |
+| `skills-ripples.avif`  | step 1: keep files together | concentric ripples, gold splash off-centre         |
+| `skills-cairn.avif`    | step 2: curate `CLAUDE.md`  | a small cairn, gold splash on the topmost stone    |
+| `skills-keys.avif`     | step 3: skills              | a ring of three keys, one gold --- reuse elsewhere |
+| `skills-seedling.avif` | closing thoughts            | a seedling breaking ground beside a gold sun       |
+
+`skills-path.avif` is currently unused (its slide was cut).
+
+Panels need two extra clauses on top of the divider suffix --- the model
+otherwise fills half the frame with a densely rendered subject, or resolves
+paper and cards as solid white:
+
+> The subject is small and sits low in the frame, surrounded by vast empty black
+> negative space; white appears only as thin scratchy ink lines, never as a
+> filled or solid white area.
+
+Substitute those for the divider suffix's "lower-left third left open" clause,
+which only matters where a hero title has to sit over the image.
+
 ## Regenerating / adding one
 
 ```bash
