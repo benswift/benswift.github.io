@@ -9,13 +9,6 @@
 @import "astro-theme-university/styles/deck.css";
 @import "astro-theme-anu/anu.css";
 
-/* astromotion's .slide-bg sets background-size/position inline but not
-   background-repeat, so `![bg contain]` images tile into the letterbox
-   space. Pin it here until fixed upstream in astromotion's base.css. */
-.reveal .slides section .slide-bg {
-  background-repeat: no-repeat;
-}
-
 /* Quote slides: dim the background image so quote text stays legible. */
 .reveal .slides section.quote .slide-bg {
   filter: blur(3px) brightness(0.35);
