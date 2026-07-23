@@ -109,7 +109,7 @@ export function pairAligned(human: string, machine: string): PairResult {
       rows.push([]);
       continue;
     }
-    rows[rows.length - 1].push([ca === " " ? null : ca, cb === " " ? null : cb]);
+    rows.at(-1)!.push([ca === " " ? null : ca, cb === " " ? null : cb]);
   }
 
   const cells = rows.reduce((n, row) => n + row.length, 0);

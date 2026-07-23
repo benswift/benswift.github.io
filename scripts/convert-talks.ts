@@ -226,7 +226,7 @@ function processContent(content: string, data: Record<string, unknown>): string 
     }
 
     // <SlideStackedPapers ... />
-    if (trimmed.match(/^<SlideStackedPapers\s/)) {
+    if (/^<SlideStackedPapers\s/.test(trimmed)) {
       addToSlide("<!-- TODO: SlideStackedPapers not auto-converted -->");
       i++;
       continue;
@@ -265,14 +265,14 @@ function processContent(content: string, data: Record<string, unknown>): string 
     }
 
     // <h2 ...> heading tags imply new slide
-    if (trimmed.match(/^<h2[\s>]/i)) {
+    if (/^<h2[\s>]/i.test(trimmed)) {
       newSlideWith(line);
       i++;
       continue;
     }
 
     // <section ...> tags: pass through
-    if (trimmed.match(/^<section[\s>]/i) || trimmed.match(/^<\/section>/i)) {
+    if (/^<section[\s>]/i.test(trimmed) || /^<\/section>/i.test(trimmed)) {
       addToSlide(line);
       i++;
       continue;

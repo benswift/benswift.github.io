@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
@@ -9,10 +9,10 @@ import {
   discoverGigs,
   DOCUMENT_NSID,
   type GigData,
-  RESEARCH_OUTPUT_NSID,
-  type PutFn,
-  publishGig,
   gigDocPath,
+  publishGig,
+  type PutFn,
+  RESEARCH_OUTPUT_NSID,
 } from "./atproto-livecoding";
 
 const sampleGig: GigData = {

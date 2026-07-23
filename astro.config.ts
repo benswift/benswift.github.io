@@ -8,7 +8,7 @@ import brokenLinksChecker from "astro-broken-links-checker";
 import { astromotion, deckRemarkPlugins } from "astromotion";
 import remarkSmartypants from "remark-smartypants";
 import remarkDirective from "remark-directive";
-import { remarkCallout, headingAnchorPlugins } from "astro-theme-university/markdown";
+import { headingAnchorPlugins, remarkCallout } from "astro-theme-university/markdown";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 

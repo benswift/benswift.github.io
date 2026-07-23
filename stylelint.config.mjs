@@ -1,26 +1,21 @@
-// Semantic CSS linting for the plain-CSS files under src/ (see the `lint:css`
-// script, which scopes to `src/**/*.css`). Stylelint can't see the scoped
-// `<style>` blocks in .astro/.svelte components without a customSyntax parser,
-// so the bulk of the site's styling is intentionally out of scope here — this
-// covers global.css and the deck theme only.
-//
-// Extends stylelint-config-standard, but turns off the standard rules that
-// fight oxfmt (which owns formatting) or this project's deliberate choices, so
-// stylelint stays a useful *semantic* linter rather than a second formatter.
+// Semantic CSS linting — oxfmt owns formatting, so the standard rules that
+// contest it (comment/custom-property spacing, keyword case, import notation)
+// are off, along with the naming patterns the theme's --at-* tokens and
+// BEM-ish class names don't follow. Scoped <style> blocks in .astro/.svelte
+// components are out of scope (no customSyntax parser). Shared baseline
+// across the theme-family repos — repo-specific deltas below the marked line.
 export default {
   extends: ["stylelint-config-standard"],
+  ignoreFiles: ["dist/**", ".astro/**", "node_modules/**"],
   rules: {
     "no-descending-specificity": null,
-
-    // oxfmt owns formatting — don't let stylelint contest it. value-keyword-case
-    // also wrongly lowercases font-family names (Arial, Menlo, Consolas).
     "comment-empty-line-before": null,
     "custom-property-empty-line-before": null,
     "value-keyword-case": null,
     "import-notation": null,
-
-    // deliberate, repo-wide design decisions
-    "selector-class-pattern": null, // BEM-style names: wall__cell, pb__first
+    "selector-class-pattern": null,
+    "custom-property-pattern": null,
+    // --- repo-specific deltas below ---
     "hue-degree-notation": null, // oklch hues are written unitless throughout
     "property-no-vendor-prefix": null, // -webkit-text-size-adjust / line-clamp need the prefix
   },

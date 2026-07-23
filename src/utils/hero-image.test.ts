@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
 import { resolveHeroImage } from "./hero-image";
 
 const fakeImage = { src: "/fake.png", width: 100, height: 100, format: "png" } as never;

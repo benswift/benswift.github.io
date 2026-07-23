@@ -1,5 +1,5 @@
-import { describe, it, expect, beforeAll } from "vitest";
-import { readFileSync, existsSync } from "node:fs";
+import { beforeAll, describe, expect, it } from "vitest";
+import { existsSync, readFileSync } from "node:fs";
 import { execSync } from "node:child_process";
 import { resolve } from "node:path";
 

@@ -26,8 +26,8 @@ import {
   atUri,
   discoverGigs,
   type GigData,
-  type PutFn,
   publishGig,
+  type PutFn,
 } from "./lib/atproto-livecoding";
 
 // Happy Eyeballs: race IPv4/IPv6 so it works where IPv6 routing is broken.

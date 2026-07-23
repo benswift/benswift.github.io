@@ -1,8 +1,8 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import { discoverPosts, computeHash, pathToRkey, extractPostPath, toPlainText } from "./posts";
+import { computeHash, discoverPosts, extractPostPath, pathToRkey, toPlainText } from "./posts";
 
 describe("pathToRkey", () => {
   it("converts a blog post path to a valid rkey", () => {

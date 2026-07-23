@@ -1,5 +1,5 @@
-import { describe, it, expect } from "vitest";
-import { emptyPixels, incrementCell, clearLastCell } from "./pixel-pad-state";
+import { describe, expect, it } from "vitest";
+import { clearLastCell, emptyPixels, incrementCell } from "./pixel-pad-state";
 
 describe("emptyPixels", () => {
   it("returns an array of the requested length", () => {

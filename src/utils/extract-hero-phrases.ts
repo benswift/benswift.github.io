@@ -1,4 +1,4 @@
-import type { Heading, Emphasis, Strong, Text, Link, InlineCode, Root } from "mdast";
+import type { Emphasis, Heading, InlineCode, Link, Root, Strong, Text } from "mdast";
 import type { Node } from "unist";
 import { unified } from "unified";
 import remarkParse from "remark-parse";

@@ -1,10 +1,10 @@
 import path from "node:path";
 import fs from "node:fs";
 import { discoverPosts, pathToRkey } from "./lib/posts";
-import { readState, writeState, type AtprotoState } from "./lib/state";
+import { type AtprotoState, readState, writeState } from "./lib/state";
 import { isSyndicated, readSyndication, syndicationRef, writeSyndication } from "./lib/syndication";
 import { diffRecommends, readRecommendations } from "./lib/recommendations";
-import { createClient, type AtprotoClient, type BasicTheme } from "./lib/atproto";
+import { type AtprotoClient, type BasicTheme, createClient } from "./lib/atproto";
 
 export interface PublishConfig {
   blogDir: string;

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { formatDate, parseDate, formatDateFromString } from "./date";
+import { formatDate, formatDateFromString, parseDate } from "./date";
 
 describe("formatDate", () => {
   test("formats date in en-AU locale", () => {
