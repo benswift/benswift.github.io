@@ -22,18 +22,20 @@ Wired up so far:
 
 ## Side panels
 
-The skills-session slides carry portrait panels in `./assets/`, same house style
-but 3:4 and no scrim (the text sits in the other 60% of the slide). Same
-generator, no reference images:
+Several slides carry portrait panels in `./assets/`, same house style but 3:4
+and no scrim (the text sits in the other 60% of the slide). Same generator, no
+reference images:
 
-| file                   | used by                     | subject                                            |
-| ---------------------- | --------------------------- | -------------------------------------------------- |
-| `skills-lantern.avif`  | how this session works      | a lantern                                          |
-| `skills-folder.avif`   | key idea (full-bleed, 3:2)  | a folder                                           |
-| `skills-ripples.avif`  | step 1: keep files together | concentric ripples, gold splash off-centre         |
-| `skills-cairn.avif`    | step 2: curate `CLAUDE.md`  | a small cairn, gold splash on the topmost stone    |
-| `skills-keys.avif`     | step 3: skills              | a ring of three keys, one gold --- reuse elsewhere |
-| `skills-seedling.avif` | closing thoughts            | a seedling breaking ground beside a gold sun       |
+| file                   | used by                     | subject                                                |
+| ---------------------- | --------------------------- | ------------------------------------------------------ |
+| `skills-lantern.avif`  | how this session works      | a lantern                                              |
+| `skills-folder.avif`   | key idea (full-bleed, 3:2)  | a folder                                               |
+| `skills-ripples.avif`  | step 1: keep files together | concentric ripples, gold splash off-centre             |
+| `skills-cairn.avif`    | step 2: curate `CLAUDE.md`  | a small cairn, gold splash on the topmost stone        |
+| `skills-keys.avif`     | step 3: skills              | a ring of three keys, one gold --- reuse elsewhere     |
+| `skills-seedling.avif` | closing thoughts            | a seedling breaking ground beside a gold sun           |
+| `ack-country.avif`     | Acknowledgement of Country  | two eucalypts, a winding creek, gold splash at the sun |
+| `admin-concon.avif`    | ConCon27                    | a gate on a bare path, gold splash beyond it           |
 
 Panels need two extra clauses on top of the divider suffix --- the model
 otherwise fills half the frame with a densely rendered subject, or resolves
