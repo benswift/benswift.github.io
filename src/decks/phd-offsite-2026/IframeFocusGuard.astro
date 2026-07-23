@@ -1,0 +1,36 @@
+---
+// Keeps keyboard control of the deck when a slide embeds a live <iframe>
+// (Sui's homeostat visualiser).
+//
+// Clicking into a cross-origin iframe moves focus there, and from then on
+// every keystroke — the arrow keys, the presenter remote, the timer's S/M/H
+// — goes to the iframe's document instead of ours. The deck silently stops
+// responding until you click back out, which is not something you want to
+// discover mid-talk.
+//
+// The fix: whenever an iframe takes focus, hand it straight back. The click
+// itself still lands in the iframe (hit testing is by position, not focus),
+// so the visualiser's buttons keep working — only the focus transfer is
+// undone. The trigger is the window's `blur` event: focus moving into a
+// child browsing context blurs the parent window, but — verified in Chrome —
+// fires no `focus`/`focusin` on the iframe element itself, so listening for
+// those catches nothing.
+//
+// Same non-hydrated pattern as OffsiteTimer: a plain .astro component with a
+// bundled <script>, because client directives don't survive astromotion's
+// slide splitter.
+---
+
+<script>
+  window.addEventListener("blur", () => {
+    // Deferred a tick: at blur time activeElement hasn't moved yet, and the
+    // click that moved focus is still landing inside the iframe.
+    setTimeout(() => {
+      const el = document.activeElement as HTMLElement | null;
+      // Not an iframe: a genuine app/tab switch. Leave it alone.
+      if (el?.tagName !== "IFRAME") return;
+      el.blur();
+      window.focus();
+    }, 0);
+  });
+</script>
