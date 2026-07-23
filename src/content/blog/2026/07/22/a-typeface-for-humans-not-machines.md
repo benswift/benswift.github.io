@@ -8,10 +8,8 @@ tags: [ai]
 
 A couple of weeks ago Eric Lu released [Decoy Font](https://mixfont.com), a
 typeface that hides one message from AI vision models behind another. Crisp
-decoy letterforms sit in front and the real message is blurred underneath. A
-person squints past the decoy and reads the blur; a vision-language model (VLM)
-locks onto the sharp contours and reads the decoy instead. I was particularly
-interested in it because it's really similar to something
+decoy letterforms sit in front and the real message is blurred underneath. I was
+particularly interested in it because it's really similar to something
 [Jess Herrington](https://cybernetics.anu.edu.au/people/jessica-herrington/) and
 I have spent the last few months measuring.
 
@@ -120,7 +118,7 @@ The
 [code is on GitHub](https://github.com/ANUcybernetics/vlm-perception-experiments):
 a small module in the perception-experiment repo, uppercase-only, set in
 [Jost](https://github.com/indestructible-type/Jost) for its near-circular
-letterforms. It's a riff on Decoy Font rather than a rival to it.
+letterforms.
 
 [^name]:
     A scotoma is a blind spot in the visual field. So we're borrowing a bit of
