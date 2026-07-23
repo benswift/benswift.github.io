@@ -4,7 +4,7 @@ export type PadState = {
 };
 
 export function emptyPixels(length: number): number[] {
-  return Array.from({ length }, () => 0);
+  return Array.from<number>({ length }).fill(0);
 }
 
 export function incrementCell(

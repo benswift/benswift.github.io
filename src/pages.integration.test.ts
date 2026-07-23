@@ -88,7 +88,7 @@ describe("talk pages", () => {
     const html = readPage("/talks/");
     // Talks-with-decks link straight to their astromotion deck page under
     // /decks/<slug>/; the index no longer generates per-talk pages of its own.
-    const deckLinks = [...html.matchAll(/href="\/decks\/([^"]+)\/"/g)].map((m) => m[1]);
+    const deckLinks = Array.from(html.matchAll(/href="\/decks\/([^"]+)\/"/g), (m) => m[1]);
     expect(deckLinks.length).toBeGreaterThan(0);
 
     for (const slug of deckLinks) {

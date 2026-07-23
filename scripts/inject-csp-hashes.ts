@@ -37,7 +37,7 @@ function rewriteScriptSrc(csp: string, hashes: Set<string>): string {
   // Find the script-src directive (terminates at ; or end of string) and
   // append the hashes. Order within a directive doesn't matter for CSP.
   return csp.replace(/(script-src[^;]*)(;|$)/, (_, directive: string, sep: string) => {
-    const additions = [...hashes].map((h) => `'sha256-${h}'`).join(" ");
+    const additions = Array.from(hashes, (h) => `'sha256-${h}'`).join(" ");
     return `${directive.trim()} ${additions}${sep}`;
   });
 }

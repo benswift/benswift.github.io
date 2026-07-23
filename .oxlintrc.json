@@ -29,12 +29,27 @@
     "unused-imports/no-unused-imports": "error",
     "perfectionist/sort-named-imports": "error",
     "perfectionist/sort-heritage-clauses": "error",
+    // the e18e "recommended" preset, enumerated because oxlint's jsPlugins
+    // bridge can't consume ESLint flat-config presets — minus
+    // prefer-static-regex, whose module-scope-hoisting churn (~260 sites
+    // family-wide, mostly tests and build scripts) isn't worth the perf
     "e18e/ban-dependencies": "error",
-    "e18e/prefer-includes": "error",
     "e18e/prefer-array-at": "error",
-    "e18e/prefer-nullish-coalescing": "error",
+    "e18e/prefer-array-fill": "error",
+    "e18e/prefer-array-from-map": "error",
+    "e18e/prefer-array-some": "error",
+    "e18e/prefer-array-to-reversed": "error",
+    "e18e/prefer-array-to-sorted": "error",
+    "e18e/prefer-array-to-spliced": "error",
     "e18e/prefer-date-now": "error",
+    "e18e/prefer-includes": "error",
+    "e18e/prefer-nullish-coalescing": "error",
+    "e18e/prefer-object-has-own": "error",
     "e18e/prefer-regex-test": "error",
+    "e18e/prefer-spread-syntax": "error",
+    "e18e/prefer-string-fromcharcode": "error",
+    "e18e/prefer-timer-args": "error",
+    "e18e/prefer-url-canparse": "error",
     // --- repo-specific deltas below ---
     "no-console": "off", // this site logs deliberately in build/data scripts
     "no-await-in-loop": "off", // deliberate sequential awaits in scripts (rate limits, ordered writes)

@@ -146,7 +146,8 @@ describe.skipIf(!existsSync(distDir))("heading anchors are decorative, not annou
       .map((f) => readFileSync(f, "utf8"))
       .find((h) => (h.match(/at-heading-anchor/g) ?? []).length >= 2);
     if (!sample) return; // no post with ≥2 anchors — nothing to assert
-    const anchors = [...sample.matchAll(/<a\b[^>]*class="at-heading-anchor"[^>]*>/g)].map(
+    const anchors = Array.from(
+      sample.matchAll(/<a\b[^>]*class="at-heading-anchor"[^>]*>/g),
       (m) => m[0],
     );
     expect(anchors.length).toBeGreaterThanOrEqual(2);

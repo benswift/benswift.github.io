@@ -58,7 +58,7 @@ describe("RSS feed", () => {
   test("items are sorted newest first", () => {
     const xml = readFileSync(feedPath, "utf8");
 
-    const dates = [...xml.matchAll(/<pubDate>(.*?)<\/pubDate>/g)].map((m) =>
+    const dates = Array.from(xml.matchAll(/<pubDate>(.*?)<\/pubDate>/g), (m) =>
       new Date(m[1]).getTime(),
     );
 

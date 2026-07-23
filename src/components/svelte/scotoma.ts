@@ -248,7 +248,7 @@ export function drawScotoma(
 
   // Widest glyph in either stream. fontSize is the fallback for an empty glyph
   // set, not a floor — flooring it would widen every cell past the reference.
-  const advances = [...glyphs].map((g) => measure.measureText(g).width);
+  const advances = Array.from(glyphs, (g) => measure.measureText(g).width);
   const maxAdvance = advances.length ? Math.max(...advances) : fontSize;
   const cellW = maxAdvance + style.trackingFraction * fontSize;
   const cellH = style.lineHeightFraction * fontSize;

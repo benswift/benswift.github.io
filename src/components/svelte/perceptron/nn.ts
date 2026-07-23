@@ -4,7 +4,7 @@ export function forwardDense(
   inSize: number,
   outSize: number,
 ): number[] {
-  const output = Array.from({ length: outSize }, () => 0);
+  const output = Array.from<number>({ length: outSize }).fill(0);
   for (let j = 0; j < outSize; j++) {
     for (let i = 0; i < inSize; i++) {
       output[j] += input[i] * w[i * outSize + j];
