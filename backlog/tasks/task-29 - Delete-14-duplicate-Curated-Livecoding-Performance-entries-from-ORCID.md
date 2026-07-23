@@ -1,9 +1,10 @@
 ---
 id: TASK-29
 title: Delete 14 duplicate 'Curated Livecoding Performance' entries from ORCID
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-07-23 00:05'
+updated_date: '2026-07-23 00:23'
 labels:
   - orcid
   - admin
@@ -23,6 +24,6 @@ Related but out of scope: the 9 Pure-vs-DOI gig duplicates (fix is adding Zenodo
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 The 14 no-identifier works titled 'Curated Livecoding Performance' are no longer on the public ORCID record
-- [ ] #2 All DOI-bearing gig records (DataCite/manual Zenodo entries) remain untouched, confirmed via https://pub.orcid.org/v3.0/0000-0003-2138-5969/works
+- [x] #1 The 14 no-identifier works titled 'Curated Livecoding Performance' are no longer on the public ORCID record
+- [x] #2 All DOI-bearing gig records (DataCite/manual Zenodo entries) remain untouched, confirmed via https://pub.orcid.org/v3.0/0000-0003-2138-5969/works
 <!-- AC:END -->
