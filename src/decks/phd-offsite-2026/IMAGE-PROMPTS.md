@@ -35,8 +35,6 @@ generator, no reference images:
 | `skills-keys.avif`     | step 3: skills              | a ring of three keys, one gold --- reuse elsewhere |
 | `skills-seedling.avif` | closing thoughts            | a seedling breaking ground beside a gold sun       |
 
-`skills-path.avif` is currently unused (its slide was cut).
-
 Panels need two extra clauses on top of the divider suffix --- the model
 otherwise fills half the frame with a densely rendered subject, or resolves
 paper and cards as solid white:
