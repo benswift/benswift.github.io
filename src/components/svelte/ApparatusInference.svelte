@@ -263,8 +263,15 @@
     </div>
 
     <div class="status">
-      <div class="progress-bar">
-        <div class="progress-fill" style="width: {progress * 100}%"></div>
+      <div
+        class="progress-bar"
+        role="progressbar"
+        aria-label={stepDescription || "Inference progress"}
+        aria-valuenow={Math.round(progress * 100)}
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="progress-fill" style="transform: scaleX({progress})"></div>
       </div>
       <span class="step-description">{stepDescription}&nbsp;</span>
       {#if currentMac}
@@ -469,8 +476,10 @@
 
   .progress-fill {
     height: 100%;
+    width: 100%;
     background: var(--highlight-color, #be2edd);
-    transition: width 0.3s ease;
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease;
   }
 
   .step-description {
