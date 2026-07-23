@@ -16,10 +16,12 @@
 // previews the on-screen segment's allotment. There is deliberately no
 // absolute day clock or drift tracking: with manual starts, "are we behind"
 // is the wall clock's job — astromotion's own, bottom-right on T. The
-// countdown goes RED at question
-// time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); from the play-off
-// mark (13:00 / 4:30) the music (Spanish Flea) plays until the next slide
-// advance stops it. The ± buttons (or -/+ keys) rejig the on-screen segment's
+// countdown measures the TALK, not the slot: it hits 0:00 and goes RED at
+// question time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots), then runs
+// negative through Q&A, so -1:30 reads as "a minute and a half past your
+// talk". From the play-off mark (13:00 / 4:30 elapsed, i.e. -1:00 / -0:30 on
+// the countdown) the music (Spanish Flea) plays until the next slide advance
+// stops it. The ± buttons (or -/+ keys) rejig the on-screen segment's
 // allotment a minute at a time, live and mid-talk if need be; the adjustment
 // sticks to that segment and moves its play-off mark with it. Controls: S
 // starts/stops the talk clock, -/+ adjust the allotment, M mutes the music,
@@ -196,13 +198,17 @@
       return;
     }
 
-    // A ±adjustment stretches (or shrinks) the whole slot: the countdown and
-    // the play-off mark move together, so the speaker keeps the same run-up to
-    // the music. Question time stays a fixed tail on the end.
+    // The countdown measures the TALK, not the slot: it hits 0:00 at question
+    // time and runs negative from there, so a glance at a red -1:30 says
+    // exactly how far past their talk the speaker is. Q&A is the tail between
+    // zero and the end of the slot; past that it's genuine overtime.
+    // A ±adjustment stretches (or shrinks) the talk: the countdown and the
+    // play-off mark move together, so the speaker keeps the same run-up to the
+    // music, and question time stays a fixed tail on the end.
     const adj = adjustOf(seg);
     const spent = running ? (Date.now() - talkStart!) / 1000 : 0;
-    const remaining = seg.mins * 60 + adj - spent;
-    const qaSec = (seg.qa ?? 1) * 60;
+    const qaSec = (seg.qa ?? 0) * 60;
+    const remaining = seg.mins * 60 + adj - qaSec - spent;
     const playoffSec = (seg.playoff ?? seg.mins) * 60 + adj;
     countEl.textContent = fmt(remaining);
 
@@ -219,12 +225,12 @@
     if (!running) {
       setClass(countEl, "count", "idle");
       setStatus("idle", `S starts${tag}`);
-    } else if (remaining < 0) {
-      setClass(countEl, "count", "over");
-      setStatus("over", `overtime${tag}`);
-    } else if (remaining <= qaSec) {
+    } else if (remaining <= 0 && -remaining < qaSec) {
       setClass(countEl, "count", "over");
       setStatus("over", `questions${tag}`);
+    } else if (remaining <= 0) {
+      setClass(countEl, "count", "over");
+      setStatus("over", `overtime${tag}`);
     } else {
       setClass(countEl, "count", "ok");
       setStatus("ok", `talk${tag}`);
@@ -265,7 +271,8 @@
   const adjustBy = (deltaMins: number) => {
     const seg = talkStart != null && runningSeg ? runningSeg : currentId ? byId.get(currentId) : null;
     if (!seg) return;
-    const next = Math.max(60 - seg.mins * 60, adjustOf(seg) + deltaMins * 60);
+    const talkMins = seg.mins - (seg.qa ?? 0);
+    const next = Math.max(60 - talkMins * 60, adjustOf(seg) + deltaMins * 60);
     adjust.set(seg.id, next);
     render();
   };
