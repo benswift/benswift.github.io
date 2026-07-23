@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, onDestroy } from "svelte";
+  import { onMount } from "svelte";
   import { forwardDense, softmax, xavierWeights } from "./perceptron/nn";
 
   const SEVEN_SEGMENT_PATTERNS = [
@@ -581,16 +581,19 @@
     edges.hiddenToOutput = [];
   }
 
+  // Teardown returns from onMount rather than living in onDestroy: onDestroy is
+  // the one lifecycle hook Svelte also runs during SSR, so touching window there
+  // breaks the server render.
   onMount(() => {
     initScene();
     window.addEventListener("resize", onResize);
     document.addEventListener("fullscreenchange", onFullscreenChange);
-  });
 
-  onDestroy(() => {
-    window.removeEventListener("resize", onResize);
-    document.removeEventListener("fullscreenchange", onFullscreenChange);
-    cleanup();
+    return () => {
+      window.removeEventListener("resize", onResize);
+      document.removeEventListener("fullscreenchange", onFullscreenChange);
+      cleanup();
+    };
   });
 </script>
 

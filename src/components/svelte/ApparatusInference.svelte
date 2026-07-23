@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, onDestroy } from "svelte";
+  import { onMount } from "svelte";
   import { PerceptronApparatus, type BoardConfig } from "perceptron-apparatus";
   import PixelDrawingPad from "./PixelDrawingPad.svelte";
   import {
@@ -152,17 +152,20 @@
     });
   }
 
+  // Teardown returns from onMount rather than living in onDestroy: onDestroy is
+  // the one lifecycle hook Svelte also runs during SSR, so touching document
+  // there breaks the server render.
   onMount(() => {
     apparatus = new PerceptronApparatus(apparatusEl, config);
     animator = new ComputationAnimator(apparatus, mnistWeights);
     setWeightSliders();
     pushInputToApparatus();
     document.addEventListener("fullscreenchange", onFullscreenChange);
-  });
 
-  onDestroy(() => {
-    abort();
-    document.removeEventListener("fullscreenchange", onFullscreenChange);
+    return () => {
+      abort();
+      document.removeEventListener("fullscreenchange", onFullscreenChange);
+    };
   });
 </script>
 
