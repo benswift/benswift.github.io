@@ -15,6 +15,7 @@ Wired up so far:
 | `divider-liz.avif`     | Liz Skelton                             | a tangle resolving into one steady gold thread            |
 | `divider-sui.avif`     | Sui Jackson                             | four coupled needles seeking equilibrium                  |
 | `divider-nadereh.avif` | Nadereh Ghelich Khani                   | a bud unfurling, gold splash at the moment of opening     |
+| `divider-amy.avif`     | Amy Wardrop                             | a meandering river from above, gold splash at an oxbow    |
 | `divider-skills.avif`  | skills session                          | an open folder spilling threads into neat parallel lines  |
 | `divider-break.avif`   | morning tea, short break, afternoon tea | a single cup, one curl of steam (reused across all three) |
 | `divider-lunch.avif`   | lunch                                   | a plate and fork, a few loose strokes                     |
@@ -59,9 +60,9 @@ sit bottom-left, so the composition has to leave them room.
 
 The twelve presenters who hadn't sent slides have text-only dividers (which look
 fine on their own). Once their topics firm up, add a subject line below and
-generate: Amy Wardrop, Tom Chan, Bek Conroy, Matthew Heffernan, Bill McAlister,
-Dominika Janus, Charlie Paulk, Joshua Castle, Thomas Griffiths, Gareth Jones,
-Thomas McEvoy Zafiropulos, Zhuotao Fang.
+generate: Tom Chan, Bek Conroy, Matthew Heffernan, Bill McAlister, Dominika
+Janus, Charlie Paulk, Joshua Castle, Thomas Griffiths, Gareth Jones, Thomas
+McEvoy Zafiropulos, Zhuotao Fang.
 
 Keep the subject tangential --- a visual metaphor, not a literal diagram of the
 research. The style thrives on economy: one subject, a few strokes, one gold
