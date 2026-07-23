@@ -19,8 +19,11 @@
 // countdown goes RED at question
 // time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots); from the play-off
 // mark (13:00 / 4:30) the music (Spanish Flea) plays until the next slide
-// advance stops it. Controls: S starts/stops the talk clock, M mutes the
-// music, H hides the widget.
+// advance stops it. The ± buttons (or -/+ keys) rejig the on-screen segment's
+// allotment a minute at a time, live and mid-talk if need be; the adjustment
+// sticks to that segment and moves its play-off mark with it. Controls: S
+// starts/stops the talk clock, -/+ adjust the allotment, M mutes the music,
+// H hides the widget.
 ---
 
 <div id="offsite-timer-mount" hidden></div>
@@ -85,9 +88,15 @@
   el.setAttribute("role", "button");
   el.tabIndex = -1;
   el.title =
-    "Click or press S when the speaker starts, and again when they finish. M mutes the play-off music, H hides.";
+    "Click or press S when the speaker starts, and again when they finish. -/+ adjust this segment by a minute. M mutes the play-off music, H hides.";
   el.innerHTML =
+    '<div class="row">' +
+    '<div class="adj">' +
+    '<button type="button" class="adj-btn" data-delta="-1" tabindex="-1" title="One minute less for this segment">−</button>' +
+    '<button type="button" class="adj-btn" data-delta="1" tabindex="-1" title="One minute more for this segment">+</button>' +
+    "</div>" +
     '<div class="count count-idle">—:—</div>' +
+    "</div>" +
     '<div class="status status-idle"><span class="dot"></span>ready</div>';
   document.body.appendChild(el);
   const countEl = el.querySelector(".count") as HTMLElement;
@@ -97,6 +106,10 @@
   let talkStart: number | null = null;
   let runningSeg: Segment | null = null;
   let musicDone = false;
+  // Per-segment allotment tweaks, in seconds: rejigging on the fly sticks to
+  // the segment it was made against, so navigating away and back keeps it.
+  const adjust = new Map<string, number>();
+  const adjustOf = (seg: Segment | null) => (seg ? (adjust.get(seg.id) ?? 0) : 0);
 
   const detectSeg = (): string | null => {
     let s: Element | null =
@@ -183,10 +196,14 @@
       return;
     }
 
+    // A ±adjustment stretches (or shrinks) the whole slot: the countdown and
+    // the play-off mark move together, so the speaker keeps the same run-up to
+    // the music. Question time stays a fixed tail on the end.
+    const adj = adjustOf(seg);
     const spent = running ? (Date.now() - talkStart!) / 1000 : 0;
-    const remaining = seg.mins * 60 - spent;
+    const remaining = seg.mins * 60 + adj - spent;
     const qaSec = (seg.qa ?? 1) * 60;
-    const playoffSec = (seg.playoff ?? seg.mins) * 60;
+    const playoffSec = (seg.playoff ?? seg.mins) * 60 + adj;
     countEl.textContent = fmt(remaining);
 
     // Music runs from the play-off mark until a slide advance kills it
@@ -198,18 +215,19 @@
       stopMusic();
     }
 
+    const tag = adj ? ` ${adj > 0 ? "+" : "−"}${Math.abs(adj) / 60}` : "";
     if (!running) {
       setClass(countEl, "count", "idle");
-      setStatus("idle", "S starts");
+      setStatus("idle", `S starts${tag}`);
     } else if (remaining < 0) {
       setClass(countEl, "count", "over");
-      setStatus("over", "overtime");
+      setStatus("over", `overtime${tag}`);
     } else if (remaining <= qaSec) {
       setClass(countEl, "count", "over");
-      setStatus("over", "questions");
+      setStatus("over", `questions${tag}`);
     } else {
       setClass(countEl, "count", "ok");
-      setStatus("ok", "talk");
+      setStatus("ok", `talk${tag}`);
     }
   };
 
@@ -241,7 +259,29 @@
     render();
   };
 
-  el.addEventListener("click", toggleTalk);
+  // ± a minute off whichever segment the widget is showing — the running one
+  // if the clock is going, otherwise the one on screen. Never drops a slot
+  // below a minute, and never touches the clock itself, so it's safe mid-talk.
+  const adjustBy = (deltaMins: number) => {
+    const seg = talkStart != null && runningSeg ? runningSeg : currentId ? byId.get(currentId) : null;
+    if (!seg) return;
+    const next = Math.max(60 - seg.mins * 60, adjustOf(seg) + deltaMins * 60);
+    adjust.set(seg.id, next);
+    render();
+  };
+
+  el.addEventListener("click", (e) => {
+    const btn = (e.target as HTMLElement).closest(".adj-btn") as HTMLElement | null;
+    if (!btn) {
+      toggleTalk();
+      return;
+    }
+    // Don't let the ± buttons fall through to the widget's start/stop toggle,
+    // and don't leave them focused (Reveal's keys should keep working).
+    e.stopPropagation();
+    btn.blur();
+    adjustBy(Number(btn.dataset.delta));
+  });
   // Capture phase + stopPropagation so our keys never reach Reveal — its
   // default binding for S opens the speaker-notes window.
   window.addEventListener(
@@ -251,10 +291,12 @@
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return;
       const k = e.key.toLowerCase();
-      if (k !== "s" && k !== "m" && k !== "h") return;
+      const adjKey = k === "-" || k === "_" ? -1 : k === "+" || k === "=" ? 1 : 0;
+      if (k !== "s" && k !== "m" && k !== "h" && !adjKey) return;
       e.preventDefault();
       e.stopPropagation();
-      if (k === "s") toggleTalk();
+      if (adjKey) adjustBy(adjKey);
+      else if (k === "s") toggleTalk();
       else if (k === "m") {
         muted = !muted;
         if (muted) stopMusic();
@@ -314,6 +356,40 @@
   .offsite-timer.hidden {
     display: none;
   }
+  .offsite-timer .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.55rem;
+  }
+  .offsite-timer .adj {
+    display: flex;
+    gap: 0.15rem;
+    /* the controls stay out of the way until the widget is hovered */
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .offsite-timer:hover .adj,
+  .offsite-timer:focus-within .adj {
+    opacity: 1;
+  }
+  .offsite-timer .adj-btn {
+    width: 1.15rem;
+    height: 1.15rem;
+    padding: 0;
+    border: 1px solid rgba(224, 224, 224, 0.25);
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 0.75rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .offsite-timer .adj-btn:hover {
+    border-color: #be2edd;
+    color: #be2edd;
+  }
   .offsite-timer .count {
     font-size: 1.65rem;
     font-weight: 600;
@@ -363,7 +439,8 @@
     .offsite-timer .count-over {
       animation: none;
     }
-    .offsite-timer {
+    .offsite-timer,
+    .offsite-timer .adj {
       transition: none;
     }
   }
