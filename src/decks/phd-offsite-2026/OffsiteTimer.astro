@@ -20,8 +20,9 @@
 // question time (12:00 / 4:00 elapsed for the 12+3 / 4+1 slots), then runs
 // negative through Q&A, so -1:30 reads as "a minute and a half past your
 // talk". From the play-off mark (13:00 / 4:30 elapsed, i.e. -1:00 / -0:30 on
-// the countdown) the music (Spanish Flea) plays until the next slide advance
-// stops it. The ± buttons (or -/+ keys) rejig the on-screen segment's
+// the countdown) the music (Spanish Flea) plays until S stops the talk clock
+// (slide navigation leaves it running). The ± buttons (or -/+ keys) rejig the
+// on-screen segment's
 // allotment a minute at a time, live and mid-talk if need be; the adjustment
 // sticks to that segment and moves its play-off mark with it. Controls: S
 // starts/stops the talk clock, -/+ adjust the allotment, M mutes the music,
@@ -46,7 +47,7 @@
   // The day's program. Each `id` matches a `seg-<id>` class on that segment's
   // divider slide in slides.deck.mdx. Talks are 12+3 (15 min) and 4+1 (5 min);
   // the countdown goes red at question time (12:00 / 4:00), and the play-off
-  // starts at 13:00 / 4:30, playing until a slide advance stops it.
+  // starts at 13:00 / 4:30, playing until S stops the talk clock.
   const SCHEDULE: Segment[] = [
     { id: "intro", label: "Welcome & intro", start: "09:00", mins: 15 },
     { id: "evan", label: "Evan Skinner", start: "09:15", mins: 15, qa: 3, playoff: 13 },
@@ -107,7 +108,6 @@
   let currentId: string | null = null;
   let talkStart: number | null = null;
   let runningSeg: Segment | null = null;
-  let musicDone = false;
   // Per-segment allotment tweaks, in seconds: rejigging on the fly sticks to
   // the segment it was made against, so navigating away and back keeps it.
   const adjust = new Map<string, number>();
@@ -212,9 +212,9 @@
     const playoffSec = (seg.playoff ?? seg.mins) * 60 + adj;
     countEl.textContent = fmt(remaining);
 
-    // Music runs from the play-off mark until a slide advance kills it
-    // (musicDone) for the rest of this talk.
-    const playingOff = running && !musicDone && spent >= playoffSec;
+    // Music runs from the play-off mark until S stops the talk clock (or M
+    // mutes it) — slide navigation no longer silences it.
+    const playingOff = running && spent >= playoffSec;
     if (playingOff && !muted) {
       startMusic();
     } else {
@@ -238,14 +238,10 @@
   };
 
   const onSlide = () => {
-    // Navigation NEVER starts, stops, or re-arms the clock — jumping around
-    // the deck mid-talk is safe. Its only effect: a slide advance while the
-    // play-off is playing silences it for the rest of this talk.
+    // Navigation NEVER starts, stops, or re-arms the clock — and no longer
+    // touches the play-off music either. Jumping around the deck mid-talk is
+    // safe; the music keeps playing until S stops the clock.
     currentId = detectSeg();
-    if (playing) {
-      stopMusic();
-      musicDone = true;
-    }
     render();
   };
 
@@ -254,7 +250,6 @@
   const toggleTalk = () => {
     ensureAudio(); // user gesture — unlock audio for later
     stopMusic();
-    musicDone = false;
     if (talkStart != null) {
       talkStart = null;
       runningSeg = null;
