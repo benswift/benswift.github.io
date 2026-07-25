@@ -21,4 +21,4 @@ minimumReleaseAgeExclude:
 # once parent deps move past the vulnerable range.
 overrides:
   "yaml@<2.8.3": ">=2.8.3"
-  "brace-expansion@>=3.0.0 <5.0.7": ">=5.0.7"
+  "brace-expansion@>=3.0.0 <5.0.8": ">=5.0.8"
