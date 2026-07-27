@@ -4,6 +4,7 @@ title: Email Kiera the 900-word THE cut of the shallow-moats follow-up
 status: To Do
 assignee: []
 created_date: '2026-07-25 06:41'
+updated_date: '2026-07-27 21:22'
 labels:
   - writing
 dependencies: []
@@ -22,6 +23,12 @@ Kiera O'Brien (Times Higher Education) read the blog version of 'Shallow moats, 
 - [ ] #2 Email confirms her suggested headline and notes the closing line was reworded so it no longer echoes it
 - [ ] #3 Email summarises what was cut (footnotes, Stratechery/Fireworks detail, duplicated valuations) and what was added since she read it (Opus 5, the open-weight letter, the K3 Redis result)
 - [ ] #4 Email asks whether THE is republishing or linking out, since the draft says 'in these pages'
-- [ ] #5 Kimi K3 weights status re-checked at send time (due 27 July 2026) and the opening paragraph updated if they have landed
+- [x] #5 Kimi K3 weights status re-checked at send time (due 27 July 2026) and the opening paragraph updated if they have landed
 - [ ] #6 Email invites her to mark the places she wants more context for the average reader
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+27–28 July 2026: verified the official Moonshot Hugging Face release; updated the opening of the THE cut with the direct Kimi K3 weights link; exported a 895-word .docx attachment. Awaiting approval/address confirmation to send Kiera the threaded reply.
+<!-- SECTION:NOTES:END -->

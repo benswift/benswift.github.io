@@ -11,12 +11,11 @@ In Shanghai in July, Xi Jinping used his World Artificial Intelligence
 Conference keynote to urge the world to
 ["encourage open source, openness, collaboration and sharing"](https://news.cgtn.com/news/2026-07-17/Full-text-Xi-s-keynote-speech-at-the-2026-WAIC-opening-ceremony-1OQSfeoRvUs/p.html).
 The day before, the Chinese lab Moonshot had
-[released Kimi K3](https://simonwillison.net/2026/Jul/16/kimi-k3/), a model that
-benchmarks within a whisker of the best from OpenAI and Anthropic, and promised
-to publish its weights as a free download. Open weights matter because they
-change who is in control. Instead of renting access through someone else's API,
-you can download the model itself and run it on hardware you own, with no
-per-token bill and nobody logging what you ask it.
+[released Kimi K3's full weights on Hugging Face](https://huggingface.co/moonshotai/Kimi-K3),
+a model that benchmarks within a whisker of the best from OpenAI and Anthropic.
+Open weights matter because they change who is in control. Instead of renting
+access through someone else's API, you can download the model itself and run it
+on hardware you own, with no per-token bill and nobody logging what you ask it.
 
 In February 2025 I argued in these pages that DeepSeek R1 had exposed how
 shallow the moats around frontier AI really are. A
