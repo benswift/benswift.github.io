@@ -34,7 +34,7 @@ The gap between open and closed models
 before a cluster of Chinese releases pulled it closed again in 2026. But across
 the whole eighteen months the frontier lead has
 [stayed bounded at roughly three to six months](https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026/).
-That is what the shallow-moat claim looks like in practice: whatever capability
+That's what the shallow-moat claim looks like in practice: whatever capability
 you are paying top dollar for today will be powering the free McDonald's chatbot
 by Christmas.
 
@@ -52,10 +52,10 @@ warning against "premature restrictions" on open-weight models, on the grounds
 that "relying solely on closed models is not inherently safe". OpenAI and
 Anthropic did not sign.
 
-Safety has changed most since early 2025. Anthropic now ships its frontier model
-in [two forms](https://www.anthropic.com/news/claude-fable-5-mythos-5): a public
-one wrapped in classifiers that block dual-use cyber and biology work, and a
-less restricted version for vetted partners. The limits showed up in a
+The biggest change since early 2025 is safety. Anthropic now ships its frontier
+model in [two forms](https://www.anthropic.com/news/claude-fable-5-mythos-5): a
+public one wrapped in classifiers that block dual-use cyber and biology work,
+and a less restricted version for vetted partners. The limits showed up in a
 [security incident at Hugging Face](https://huggingface.co/blog/security-incident-july-2026)
 that same month. When the defenders fed thousands of attacker log entries to
 hosted models for forensic analysis, the guardrails refused, and the job was
@@ -76,12 +76,12 @@ released days later, comes close to its flagship at half the price, with cyber
 classifiers that intervene about 85 per cent less often. The gate is being
 lowered because holding it shut no longer buys very much.
 
-Then, this was a procurement question. It is now a macroeconomic one. On top of
-those valuations, the hyperscalers have guided to roughly $700 billion of
-capital expenditure in 2026. Those numbers embed an assumption that a handful of
-companies will capture most of the value from frontier AI, and the
-eighteen-month experiment keeps returning evidence against it. The
-counter-evidence is real, though. On
+Eighteen months ago this was a procurement question. It's now a macroeconomic
+one. On top of those valuations, the hyperscalers have guided to roughly $700
+billion of capital expenditure in 2026. Those numbers embed an assumption that a
+handful of companies will capture most of the value from frontier AI, and the
+eighteen-month experiment keeps returning evidence against it. The evidence
+isn't all one way, though. On
 [one large commercial AI gateway](https://vercel.com/blog/ai-gateway-production-index-july-2026),
 open models now serve 29 per cent of tokens but earn under 4 per cent of the
 spend. Token share moved first; whether the dollars follow is the open question.
@@ -91,14 +91,15 @@ models to the agent harnesses built on top of them. Perhaps. But harnesses are
 even more hot-swappable than weights, and Moonshot's own documentation pitches
 K3 as a drop-in engine for the American labs' tooling.
 
-I would put that advice more strongly now. If the capability you are licensing
-commoditises within two quarters, a multi-year exclusive contract is a bet
-against the trend line, made with money that could be funding tutors. The
-students and early-career researchers it was written for are still the likeliest
-to be gated out of the top tier, even as prices fall, and the first to notice
-that the open models are now good enough. That shapes how universities teach
-with AI, not just how they buy it: curricula and assessment built around one
-provider's products will date as fast as the contracts. Hugging Face's
-post-mortem generalises the lesson --- have a capable model you can run on your
-own infrastructure, vetted and ready, before you need it. Everything about
-frontier AI has changed in eighteen months except the advice.
+I'd put that advice --- stay provider-agnostic --- more strongly now. If the
+capability you are licensing commoditises within two quarters, a multi-year
+exclusive contract is a bet against the trend line, made with money that could
+be funding tutors. The students and early-career researchers it was written for
+are still the likeliest to be gated out of the top tier, even as prices fall,
+and the first to notice that the open models are now good enough. That shapes
+how universities teach with AI, not just how they buy it: curricula and
+assessment built around one provider's products will date as fast as the
+contracts. Hugging Face's post-mortem generalises the lesson --- have a capable
+model you can run on your own infrastructure, vetted and ready, before you need
+it. Everything about frontier AI has changed in eighteen months except the
+advice.
