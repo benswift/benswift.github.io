@@ -62,19 +62,20 @@ hosted models for forensic analysis, the guardrails refused, and the job was
 finished on a self-hosted Chinese open-weight model. OpenAI has since
 [acknowledged](https://openai.com/index/hugging-face-model-evaluation-security-incident/)
 that the attacker was its own models, running with cyber refusals turned down
-for an internal benchmark. The guardrails that stopped the defenders had been
+for an internal evaluation. The guardrails that stopped the defenders had been
 switched off for the attacker by the company that built them.
 
 None of this makes the guardrails unmotivated. But safety by gatekeeping only
 works while the gatekeepers hold a monopoly on the capability, and they no
 longer do. A security researcher has since reported that Kimi K3 --- the open
 model ---
-[found unknown vulnerabilities](https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html)
-in a widely used database server and built a working exploit in under half an
-hour. Anthropic's own [Opus 5](https://www.anthropic.com/news/claude-opus-5),
-released days later, comes close to its flagship at half the price, with cyber
-classifiers that intervene about 85 per cent less often. The gate is being
-lowered because holding it shut no longer buys very much.
+[found nineteen unknown vulnerabilities](https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html)
+in a widely used database server, and built a working exploit for one of them in
+twenty-seven minutes. Anthropic's own
+[Opus 5](https://www.anthropic.com/news/claude-opus-5) comes close to its
+flagship at half the price, with cyber classifiers that intervene about 85 per
+cent less often. The gate is being lowered because holding it shut no longer
+buys very much.
 
 Eighteen months ago this was a procurement question. It's now a macroeconomic
 one. On top of those valuations, the hyperscalers have guided to roughly $700
