@@ -17,8 +17,10 @@ Open weights matter because they change who is in control. Instead of renting
 access through someone else's API, you can download the model itself and run it
 on hardware you own, with no per-token bill and nobody logging what you ask it.
 
-In February 2025 I argued in these pages that DeepSeek R1 had exposed how
-shallow the moats around frontier AI really are. A
+In February 2025 I
+[argued in these pages](https://www.timeshighereducation.com/campus/deepseek-and-shallow-moats-what-does-it-mean-higher-education)
+that DeepSeek R1 had exposed how shallow the moats around frontier AI really
+are. A
 [leaked Google memo](https://semianalysis.com/2023/05/04/google-we-have-no-moat-and-neither/)
 from 2023 had put it bluntly: "we have no moat, and neither does OpenAI". My
 advice then was that universities should think twice before signing exclusive
