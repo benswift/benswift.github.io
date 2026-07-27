@@ -10,9 +10,9 @@ tags: [ai]
 In Shanghai in July, Xi Jinping used his World Artificial Intelligence
 Conference keynote to urge the world to
 ["encourage open source, openness, collaboration and sharing"](https://news.cgtn.com/news/2026-07-17/Full-text-Xi-s-keynote-speech-at-the-2026-WAIC-opening-ceremony-1OQSfeoRvUs/p.html).
-The day before, the Chinese lab Moonshot had
-[released Kimi K3's full weights on Hugging Face](https://huggingface.co/moonshotai/Kimi-K3),
-a model that benchmarks within a whisker of the best from OpenAI and Anthropic.
+The day before, the Chinese lab Moonshot had launched Kimi K3, a model that
+benchmarks within a whisker of the best from OpenAI and Anthropic; its
+[full weights are now a free download](https://huggingface.co/moonshotai/Kimi-K3).
 Open weights matter because they change who is in control. Instead of renting
 access through someone else's API, you can download the model itself and run it
 on hardware you own, with no per-token bill and nobody logging what you ask it.
@@ -46,11 +46,11 @@ anything. Both readings lead to the same policy, and commitments survive when
 principle and interest align, which is why the prediction that Chinese labs
 would stop publishing weights once they caught up keeps failing to come true.
 And this is no longer only a Chinese argument. A week after Xi's speech, Nvidia,
-Microsoft, Meta and more than twenty other American companies
+Microsoft, Meta and twenty-two other signatories
 [wrote to Washington](https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html)
 warning against "premature restrictions" on open-weight models, on the grounds
-that "relying solely on closed models is not inherently safe". OpenAI and
-Anthropic did not sign.
+that "relying solely on closed models is not inherently safe". OpenAI, Anthropic
+and Google did not sign.
 
 The biggest change since early 2025 is safety. Anthropic now ships its frontier
 model in [two forms](https://www.anthropic.com/news/claude-fable-5-mythos-5): a
