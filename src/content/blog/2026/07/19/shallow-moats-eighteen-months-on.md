@@ -6,6 +6,14 @@ description:
 tags: [ai]
 ---
 
+:::info[Update]
+
+Moonshot has now
+[released K3's full weights on Hugging Face](https://huggingface.co/moonshotai/Kimi-K3),
+inside the window it promised below.
+
+:::
+
 Last Friday in Shanghai, Xi Jinping stood up at the World Artificial
 Intelligence Conference and urged the world to
 ["encourage open source, openness, collaboration and sharing"](https://news.cgtn.com/news/2026-07-17/Full-text-Xi-s-keynote-speech-at-the-2026-WAIC-opening-ceremony-1OQSfeoRvUs/p.html).
