@@ -1,6 +1,8 @@
 ---
 import { Picture as AstroPicture } from "astro:assets"
 import type { ImageMetadata } from "astro"
+import { readFile } from "node:fs/promises"
+import { isAnimatedWebp } from "@/utils/animated-image"
 
 interface Props {
   file: string
@@ -28,13 +30,18 @@ if (!image) {
   )
 }
 
-// Animated GIFs lose animation when re-encoded; pass through as raw <img>.
-const isGif = image.format === "gif"
+// sharp doesn't animate, so anything animated loses all but its first frame
+// when re-encoded. Pass those through raw instead. GIFs are assumed animated
+// (the pipeline gains little on them either way); animated WebP is detected
+// from the source bytes, so a still WebP still gets the full treatment.
+const isAnimated =
+  image.format === "gif" ||
+  (image.format === "webp" && isAnimatedWebp(await readFile(`.${key}`)))
 ---
 
 <figure class="picture-container">
   {
-    isGif ? (
+    isAnimated ? (
       <img src={image.src} alt={alt} loading={loading} width={image.width} height={image.height} />
     ) : (
       <AstroPicture
