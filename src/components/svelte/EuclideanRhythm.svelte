@@ -33,7 +33,7 @@
     gap: 1.5rem;
     justify-content: center;
     align-items: flex-start;
-    margin: 1rem 0;
+    margin-block-start: 1rem;
   }
   .column {
     display: flex;
