@@ -76,11 +76,11 @@ None of this makes the guardrails unmotivated. But safety by gatekeeping only
 works while the gatekeepers hold a monopoly, and theirs is on capability, not
 willingness. A
 [joint UK--US government assessment](https://www.aisi.gov.uk/blog/preliminary-assessment-of-kimi-k3s-cyber-capabilities)
-put Kimi K3 well behind the leading American models on offensive cyber, 32 per
-cent against 76. It also found the model's safeguards "did not prevent it from
-attempting cyber exploit development or offensive cyber operations": it
-"assisted with both without pushback". Anthropic's own
-[Opus 5](https://www.anthropic.com/news/claude-opus-5) comes close to its
+put Kimi K3 well behind the leading American models on offensive cyber --- on a
+simulated attack chain it reached step 17 of 32, where the most capable US
+models averaged 28.5 --- but found that its safeguards "did not prevent it from
+attempting cyber exploit development or offensive cyber operations". Anthropic's
+own [Opus 5](https://www.anthropic.com/news/claude-opus-5) comes close to its
 flagship at half the price, with cyber classifiers that intervene about 85 per
 cent less often. The gate is being lowered because holding it shut no longer
 buys very much.
