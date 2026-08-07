@@ -30,8 +30,8 @@ and Anthropic at
 [$965 billion](https://www.anthropic.com/news/series-h),
 which is, in effect, a bet that the memo was wrong.
 
-Benchmarks are game-able, and the picture is noisier than either camp admits.
-The gap between open and closed models
+Benchmarks are an imperfect measure, as they are in any field, and the picture
+is noisier than either camp admits. The gap between open and closed models
 [widened through 2025](https://epoch.ai/data-insights/open-closed-eci-gap),
 before a cluster of Chinese releases pulled it closed again in 2026. But across
 the whole eighteen months the frontier lead has
@@ -51,8 +51,9 @@ And this is no longer only a Chinese argument. A week after Xi's speech, Nvidia,
 Microsoft, Meta and twenty-two other signatories
 [wrote to Washington](https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html)
 warning against "premature restrictions" on open-weight models, on the grounds
-that "relying solely on closed models is not inherently safe". OpenAI, Anthropic
-and Google did not sign.
+that "relying solely on closed models is not inherently safe". OpenAI,
+[Anthropic](https://www.anthropic.com/news/position-open-weights-models) and
+Google did not sign.
 
 The biggest change since early 2025 is safety. Anthropic now ships its frontier
 model in [two forms](https://www.anthropic.com/news/claude-fable-5-mythos-5): a
@@ -68,31 +69,33 @@ for an internal evaluation. The guardrails that stopped the defenders had been
 switched off for the attacker by the company that built them.
 
 None of this makes the guardrails unmotivated. But safety by gatekeeping only
-works while the gatekeepers hold a monopoly on the capability, and they no
-longer do. A security researcher has since reported that Kimi K3 --- the open
-model ---
-[found nineteen unknown vulnerabilities](https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html)
-in a widely used database server, and built a working exploit for one of them in
-twenty-seven minutes. Anthropic's own
+works while the gatekeepers hold a monopoly, and theirs is on capability, not
+willingness. A
+[joint UK--US government assessment](https://www.aisi.gov.uk/blog/preliminary-assessment-of-kimi-k3s-cyber-capabilities)
+put Kimi K3 well behind the leading American models on offensive cyber, 32 per
+cent against 76. It also found the model's safeguards "did not prevent it from
+attempting cyber exploit development or offensive cyber operations": it
+"assisted with both without pushback". Anthropic's own
 [Opus 5](https://www.anthropic.com/news/claude-opus-5) comes close to its
 flagship at half the price, with cyber classifiers that intervene about 85 per
 cent less often. The gate is being lowered because holding it shut no longer
 buys very much.
 
 Eighteen months ago this was a procurement question. It's now a macroeconomic
-one. On top of those valuations, the hyperscalers have guided to roughly $700
-billion of capital expenditure in 2026. Those numbers embed an assumption that a
-handful of companies will capture most of the value from frontier AI, and the
+one. On top of those valuations, the hyperscalers have guided to
+[roughly $700 billion](https://www.bloomberg.com/news/articles/2026-04-30/us-big-tech-ratchets-up-ai-spending-past-700-billion-this-year)
+of capital expenditure in 2026. Those numbers embed an assumption that a handful
+of companies will capture most of the value from frontier AI, and the
 eighteen-month experiment keeps returning evidence against it. The evidence
 isn't all one way, though. On
 [one large commercial AI gateway](https://vercel.com/blog/ai-gateway-production-index-july-2026),
-open models now serve 29 per cent of tokens but earn under 4 per cent of the
-spend. Token share moved first; whether the dollars follow is the open question.
+open models now handle 29 per cent of the usage but earn under 4 per cent of the
+spend. Usage moved first; whether the dollars follow is the open question.
 
 The strongest objection is that the moat has simply moved up a layer, from the
 models to the agent harnesses built on top of them. Perhaps. But harnesses are
-even more hot-swappable than weights, and Moonshot's own documentation pitches
-K3 as a drop-in engine for the American labs' tooling.
+even easier to swap out than the models underneath them, and Moonshot's own
+documentation pitches K3 as a drop-in engine for the American labs' tooling.
 
 I'd put that advice --- stay provider-agnostic --- more strongly now. If the
 capability you are licensing commoditises within two quarters, a multi-year
