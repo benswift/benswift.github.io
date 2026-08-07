@@ -7,6 +7,9 @@ published: false
 tags: [ai]
 ---
 
+_Standfirst: Why a freely downloadable Chinese model, and a security breach at
+Hugging Face, should make universities wary of signing exclusive AI contracts_
+
 In Shanghai in July, Xi Jinping used his World Artificial Intelligence
 Conference keynote to urge the world to
 ["encourage open source, openness, collaboration and sharing"](https://news.cgtn.com/news/2026-07-17/Full-text-Xi-s-keynote-speech-at-the-2026-WAIC-opening-ceremony-1OQSfeoRvUs/p.html).
@@ -17,7 +20,7 @@ Open weights matter because they change who is in control. Instead of renting
 access through someone else's API, you can download the model itself and run it
 on hardware you own, with no per-token bill and nobody logging what you ask it.
 
-In February 2025 I
+In February 2025, I
 [argued in these pages](https://www.timeshighereducation.com/campus/deepseek-and-shallow-moats-what-does-it-mean-higher-education)
 that DeepSeek R1 had exposed how shallow the moats around frontier AI really
 are. A
@@ -34,19 +37,20 @@ Benchmarks are an imperfect measure, as they are in any field, and the picture
 is noisier than either camp admits. The gap between open and closed models
 [widened through 2025](https://epoch.ai/data-insights/open-closed-eci-gap),
 before a cluster of Chinese releases pulled it closed again in 2026. But across
-the whole eighteen months the frontier lead has
+the whole eighteen months, the frontier lead has
 [stayed bounded at roughly three to six months](https://openrouter.ai/blog/insights/the-open-weight-models-that-matter-june-2026/).
 That's what the shallow-moat claim looks like in practice: whatever capability
 you are paying top dollar for today will be powering the free McDonald's chatbot
 by Christmas.
 
-You can read Xi's speech as statesmanship, AI as a global public good, or as the
+You can read Xi's speech as statesmanship, AI as a global public good; or as the
 classic strategy of
 [commoditising your complement](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/):
 give away the thing your rival sells, and their core asset stops being worth
 anything. Both readings lead to the same policy, and commitments survive when
-principle and interest align, which is why the prediction that Chinese labs
-would stop publishing weights once they caught up keeps failing to come true.
+principle and interest align. This is why the prediction that Chinese labs would
+stop publishing weights once they caught up keeps failing to come true.
+
 And this is no longer only a Chinese argument. A week after Xi's speech, Nvidia,
 Microsoft, Meta and twenty-two other signatories
 [wrote to Washington](https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html)
@@ -86,8 +90,9 @@ one. On top of those valuations, the hyperscalers have guided to
 [roughly $700 billion](https://www.bloomberg.com/news/articles/2026-04-30/us-big-tech-ratchets-up-ai-spending-past-700-billion-this-year)
 of capital expenditure in 2026. Those numbers embed an assumption that a handful
 of companies will capture most of the value from frontier AI, and the
-eighteen-month experiment keeps returning evidence against it. The evidence
-isn't all one way, though. On
+eighteen-month experiment keeps returning evidence against it.
+
+The evidence isn't all one way, though. On
 [one large commercial AI gateway](https://vercel.com/blog/ai-gateway-production-index-july-2026),
 open models now handle 29 per cent of the usage but earn under 4 per cent of the
 spend. Usage moved first; whether the dollars follow is the open question.
@@ -105,7 +110,8 @@ are still the likeliest to be gated out of the top tier, even as prices fall,
 and the first to notice that the open models are now good enough. That shapes
 how universities teach with AI, not just how they buy it: curricula and
 assessment built around one provider's products will date as fast as the
-contracts. Hugging Face's post-mortem generalises the lesson --- have a capable
-model you can run on your own infrastructure, vetted and ready, before you need
-it. Everything about frontier AI has changed in eighteen months except the
-advice.
+contracts.
+
+Hugging Face's post-mortem generalises the lesson --- have a capable model you
+can run on your own infrastructure, vetted and ready, before you need it.
+Everything about frontier AI has changed in eighteen months except the advice.
