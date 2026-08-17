@@ -17,7 +17,7 @@ Personal website and blog. Astro 7 + Svelte 5 + MDX, with Pagefind for search.
 - `pnpm test` --- run unit tests
 - `pnpm test:integration` --- run integration tests
 - `pnpm typecheck` --- astro check + svelte-check
-- `pnpm lint` --- run oxlint
+- `pnpm lint` --- run oxlint + stylelint
 - `pnpm format:check` --- check formatting
 - `pnpm post "<title>"` --- create a new blog post with correct frontmatter
 
