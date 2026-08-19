@@ -1,18 +1,17 @@
 ---
 title: "Fifty-five billion tokens"
 description:
-  "Fourteen months of Claude Code session logs, visualised: 55 billion tokens
-  across 13 models, and what they would have cost at API rates."
-published: false
-tags: ["ai", "tools", "visualisation"]
+  "Fourteen months of Claude Code session logs: 55 billion tokens across 13
+  models (and what they would have cost at API rates)"
+tags: ["ai"]
 ---
 
 Every machine I work on ships its Claude Code session logs to my home server.
 Each assistant message in there carries a `usage` block recording what it cost
 to produce. Fourteen months of that comes to 24,538 transcript files and 521,862
-API responses.[^dedup] Fifty-five billion tokens.
+API responses.[^dedup] Fifty-five billion tokens---that's a big number.
 
-Mostly I just wanted to look at it.
+But mostly I just wanted to look at it.
 
 ![A calendar heatmap of daily token use from July 2025 to August 2026, sparse and pale through 2025, dense and saturated from February 2026 onward](./daily-heatmap.svg)
 
@@ -81,7 +80,7 @@ them, and the scripts that walk the transcripts are all there.
 
 [^caveats]:
     Current list prices applied retrospectively, so it's an indicative figure
-    and not a bill I paid: this all ran on a Max subscription at a small
+    and not a bill I paid: this all ran on a Max 20x subscription at a small
     fraction of the price. Transcripts written before Claude Code recorded the
     cache TTL split are counted at the cheaper five-minute write rate, which
     means the true number is a little above \$50k, if anything.
