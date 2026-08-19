@@ -1,45 +1,56 @@
-"""Daily tokens for the top public GitHub repos, plus its Vega-Lite spec."""
+"""Daily tokens for the projects that got the most of them, plus its chart spec.
+
+Longest matching prefix wins, so ~/projects/comp4020/website is its own entry
+rather than being absorbed into the comp4020 workspace directory. A None label
+drops the path: those are the projects below the cut-off, plus the long tail of
+one-off directories and worktrees.
+"""
 
 import json
 import pickle
 from collections import defaultdict
 from datetime import date, timedelta
 
-# cwd prefix -> (label, github slug). Every one of these is a public repo;
-# anything not listed here is aggregated away and never named.
-PUBLIC = [
-    ("~/projects/slop-university-press", "slop-university", "benswift/slop-university"),
-    ("~/projects/slop-university", "slop-university", "benswift/slop-university"),
-    ("~/projects/llms-unplugged", "llms-unplugged", "ANUcybernetics/llms-unplugged"),
-    ("~/.dotfiles", "dotfiles", "benswift/.dotfiles"),
-    ("~/projects/extempore", "extempore", "digego/extempore"),
-    ("~/Code/extempore", "extempore", "digego/extempore"),
-    ("~/projects/benswift-me", "benswift.me", "benswift/benswift.github.io"),
-    ("~/projects/out-of-office-cv-website", "out-of-office-cv", "out-of-office-cv/out-of-office-cv-website"),
-    ("~/projects/out-of-office-cv-website-cron", "out-of-office-cv", "out-of-office-cv/out-of-office-cv-website"),
-    ("~/projects/slop-salon", "slop-salon", "ANUcybernetics/slop-salon"),
-    ("~/Code/panic_tda", "panic-tda", "ANUcybernetics/panic-tda"),
-    ("~/projects/aps-ai-transparency-tracker", "aps-ai-transparency-tracker",
-     "ANUcybernetics/aps-ai-transparency-tracker"),
-    ("~/Documents/edex/panic/panic", "panic", "ANUcybernetics/panic"),
-    ("~/projects/imaginative-restoration", "imaginative-restoration",
-     "ANUcybernetics/imaginative-restoration"),
-    ("~/projects/neon-perceptron", "neon-perceptron", "ANUcybernetics/neon-perceptron"),
-    ("~/projects/cyberneticstudio-xyz", "cyberneticstudio.xyz", "ANUcybernetics/cyberneticstudio.xyz"),
+MAP = [
+    # public GitHub repos, merged where one repo lives at two paths
+    ("~/projects/slop-university-press", "slop-university"),
+    ("~/projects/slop-university", "slop-university"),
+    ("~/projects/llms-unplugged", "llms-unplugged"),
+    ("~/.dotfiles", "dotfiles"),
+    ("~/projects/extempore", "extempore"),
+    ("~/Code/extempore", "extempore"),
+    ("~/projects/benswift-me", "benswift.me"),
+    ("~/projects/out-of-office-cv-website", "out-of-office-cv"),
+    ("~/projects/out-of-office-cv-website-cron", "out-of-office-cv"),
+    ("~/projects/slop-salon", "slop-salon"),
+    ("~/Code/panic_tda", "panic-tda"),
+    ("~/projects/aps-ai-transparency-tracker", "aps-ai-transparency-tracker"),
+    ("~/Documents/edex/panic/panic", "panic"),
+    # private or self-hosted, named anyway: the totals give nothing away
+    ("~/projects/comp4020-agentic-coding-studio", "comp4020-agentic-coding-studio"),
+    ("~/projects/blowing-smoke", "blowing-smoke"),
+    ("~/projects/comp4020/website", "comp4020/website"),
+    ("~/projects/astro-theme-anu", "astro-theme-anu"),
+    ("~/projects/strproxy", "strproxy"),
+    ("~/projects/comp4020", "comp4020 (workspace)"),
+    # below the cut-off, and would otherwise be swallowed by the line above
+    ("~/projects/comp4020/tutors", None),
+    ("~/projects/comp4020/lucy", None),
+    ("~/projects/comp4020/strproxy", None),
 ]
-TOP_N = 10
+MAP.sort(key=lambda kv: -len(kv[0]))
 
 
 def label_for(cwd: str) -> str | None:
-    for prefix, label, _ in PUBLIC:
+    for prefix, label in MAP:
         if cwd == prefix or cwd.startswith(prefix + "/"):
             return label
     return None
 
 
 rows = pickle.load(open("projects.pkl", "rb"))
-daily = defaultdict(int)
-totals = defaultdict(int)
+daily: dict[tuple[str, str], int] = defaultdict(int)
+totals: dict[str, int] = defaultdict(int)
 grand = 0
 days = set()
 for day, cwd, tok, cost in rows:
@@ -50,20 +61,19 @@ for day, cwd, tok, cost in rows:
         daily[(day, label)] += tok
         totals[label] += tok
 
-top = sorted(totals, key=lambda k: -totals[k])[:TOP_N]
-covered = sum(totals[k] for k in top)
-print(f"top {TOP_N} public repos cover {covered/1e9:.1f}B of {grand/1e9:.1f}B ({covered/grand:.0%})")
-for k in top:
+order_keys = sorted(totals, key=lambda k: -totals[k])
+covered = sum(totals.values())
+print(f"{len(order_keys)} projects cover {covered/1e9:.1f}B of {grand/1e9:.1f}B ({covered/grand:.0%})")
+for k in order_keys:
     print(f"  {totals[k]/1e9:6.2f}B  {k}")
 
 start, end = date.fromisoformat(min(days)), date.fromisoformat(max(days))
 all_days = [start + timedelta(days=n) for n in range((end - start).days + 1)]
-order = [f"{k} · {totals[k]/1e9:.1f}B" for k in top]
+order = [f"{k} · {totals[k]/1e9:.1f}B" for k in order_keys]
 data = [{"date": d.isoformat(), "project": f"{k} · {totals[k]/1e9:.1f}B",
          "millions": round(daily.get((d.isoformat(), k), 0) / 1e6, 2)}
-        for k in top for d in all_days]
+        for k in order_keys for d in all_days]
 json.dump(data, open("by_project_daily.json", "w"), indent=0)
-json.dump(order, open("project_order.json", "w"))
 
 BG, INK, INK2, GRID, TOKENS = "#1c1a1d", "#e0e0e0", "#aaa", "#363338", "#be2edd"
 FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
@@ -83,8 +93,8 @@ spec = {
     "config": CONFIG,
     "title": {"text": "Tokens by project",
               "subtitle": [
-                  f"Tokens per day, 7-day rolling mean, for the {TOP_N} public repositories I spent",
-                  "the most tokens on. Each panel is scaled to its own peak, with the total in the label;",
+                  f"Tokens per day, 7-day rolling mean, for the {len(order_keys)} projects I spent the",
+                  "most tokens on. Each panel is scaled to its own peak, with the total in the label;",
                   f"together they are {covered/grand:.0%} of all tokens.",
               ]},
     "data": {"values": data},
@@ -96,7 +106,7 @@ spec = {
     "spacing": 3,
     "resolve": {"scale": {"y": "independent"}},
     "spec": {
-        "width": 600, "height": 34,
+        "width": 600, "height": 30,
         "mark": {"type": "area", "color": TOKENS, "opacity": 0.9, "interpolate": "monotone"},
         "encoding": {
             "x": {"field": "date", "type": "temporal",
@@ -113,4 +123,3 @@ spec = {
     },
 }
 json.dump(spec, open("by-project.vl.json", "w"), indent=2)
-print("wrote by-project.vl.json")

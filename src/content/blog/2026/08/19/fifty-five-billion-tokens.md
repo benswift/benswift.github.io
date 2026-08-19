@@ -23,9 +23,9 @@ work.
 
 Thirteen models in fourteen months, each taking over from the last.
 
-![Ten small-multiple area charts, one per repository, each scaled to its own peak, marking out when the work on each project happened](./by-project.svg)
+![Sixteen small-multiple area charts, one per project, each scaled to its own peak, marking out when the work on each one happened](./by-project.svg)
 
-Only the public repos are named here.[^private]
+Sixteen projects, three-quarters of the total.[^projects]
 
 ![Two stacked area charts, cumulative tokens above and cumulative indicative cost below, both hockey-stick shaped with almost all of the total after March 2026](./cumulative.svg)
 
@@ -68,10 +68,12 @@ them, and the scripts that walk the transcripts are all there.
     responses and 7% of the cost. I keep those out of my session counts, since
     one session fanning out to twelve agents is still one session.
 
-[^private]:
-    Those ten are 59% of all tokens. The rest went to private work: teaching
-    repositories on the ANU GitLab, a promotion application, and a handful of
-    things not ready to be looked at.
+[^projects]:
+    The COMP4020 work is split across three of those entries, since the studio
+    repo, the course website and the workspace directory are separate checkouts;
+    added together they would sit second on the list. Everything under about a
+    billion tokens is left off, along with a long tail of worktrees and one-off
+    directories.
 
 [^cron]:
     Which is also why that floor is so flat. A cron job has no opinion about

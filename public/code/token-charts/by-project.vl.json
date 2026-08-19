@@ -36,9 +36,9 @@
   "title": {
     "text": "Tokens by project",
     "subtitle": [
-      "Tokens per day, 7-day rolling mean, for the 10 public repositories I spent",
-      "the most tokens on. Each panel is scaled to its own peak, with the total in the label;",
-      "together they are 59% of all tokens."
+      "Tokens per day, 7-day rolling mean, for the 16 projects I spent the",
+      "most tokens on. Each panel is scaled to its own peak, with the total in the label;",
+      "together they are 76% of all tokens."
     ]
   },
   "data": {
@@ -79,8 +79,14 @@
         "llms-unplugged \u00b7 4.1B",
         "dotfiles \u00b7 3.2B",
         "extempore \u00b7 2.9B",
+        "comp4020-agentic-coding-studio \u00b7 2.0B",
         "benswift.me \u00b7 1.9B",
+        "blowing-smoke \u00b7 1.8B",
         "out-of-office-cv \u00b7 1.8B",
+        "comp4020/website \u00b7 1.6B",
+        "astro-theme-anu \u00b7 1.4B",
+        "comp4020 (workspace) \u00b7 1.2B",
+        "strproxy \u00b7 1.2B",
         "slop-salon \u00b7 1.1B",
         "panic-tda \u00b7 0.9B",
         "aps-ai-transparency-tracker \u00b7 0.8B",
@@ -103,7 +109,7 @@
   },
   "spec": {
     "width": 600,
-    "height": 34,
+    "height": 30,
     "mark": {
       "type": "area",
       "color": "#be2edd",
