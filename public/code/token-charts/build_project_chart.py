@@ -67,49 +67,104 @@ for day, cwd, tok, cost in rows:
 
 order_keys = sorted(totals, key=lambda k: -totals[k])
 covered = sum(totals.values())
-print(f"{len(order_keys)} projects cover {covered/1e9:.1f}B of {grand/1e9:.1f}B ({covered/grand:.0%})")
+print(
+    f"{len(order_keys)} projects cover {covered / 1e9:.1f}B of {grand / 1e9:.1f}B ({covered / grand:.0%})"
+)
 for k in order_keys:
-    print(f"  {totals[k]/1e9:6.2f}B  {k}")
+    print(f"  {totals[k] / 1e9:6.2f}B  {k}")
 
 start, end = date.fromisoformat(min(days)), date.fromisoformat(max(days))
 all_days = [start + timedelta(days=n) for n in range((end - start).days + 1)]
-order = [f"{k} · {totals[k]/1e9:.1f}B" for k in order_keys]
-data = [{"date": d.isoformat(), "project": f"{k} · {totals[k]/1e9:.1f}B",
-         "millions": round(daily.get((d.isoformat(), k), 0) / 1e6, 2)}
-        for k in order_keys for d in all_days]
+order = [f"{k} · {totals[k] / 1e9:.1f}B" for k in order_keys]
+data = [
+    {
+        "date": d.isoformat(),
+        "project": f"{k} · {totals[k] / 1e9:.1f}B",
+        "millions": round(daily.get((d.isoformat(), k), 0) / 1e6, 2),
+    }
+    for k in order_keys
+    for d in all_days
+]
 json.dump(data, open("by_project_daily.json", "w"), indent=0)
 
 spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
     "config": CONFIG,
-    "title": {"text": "Tokens by project",
-              "subtitle": [
-                  f"Tokens per day, 7-day rolling mean, for the {len(order_keys)} projects I spent the",
-                  "most tokens on. Each panel is scaled to its own peak, with the total in the label;",
-                  f"together they are {covered/grand:.0%} of all tokens.",
-              ]},
+    "title": {
+        "text": "Tokens by project",
+        "subtitle": [
+            f"Tokens per day, 7-day rolling mean, for the {len(order_keys)} projects I spent the",
+            "most tokens on. Each panel is scaled to its own peak, with the total in the label;",
+            f"together they are {covered / grand:.0%} of all tokens.",
+        ],
+    },
     "data": {"values": data},
-    "transform": [{"window": [{"op": "mean", "field": "millions", "as": "smooth"}],
-                   "frame": [-3, 3], "groupby": ["project"], "sort": [{"field": "date"}]}],
-    "facet": {"row": {"field": "project", "type": "nominal", "sort": order, "title": None,
-                      "header": {"labelAngle": 0, "labelAlign": "left", "labelOrient": "left",
-                                 "labelPadding": 6}}},
+    "transform": [
+        {
+            "window": [{"op": "mean", "field": "millions", "as": "smooth"}],
+            "frame": [-3, 3],
+            "groupby": ["project"],
+            "sort": [{"field": "date"}],
+        }
+    ],
+    "facet": {
+        "row": {
+            "field": "project",
+            "type": "nominal",
+            "sort": order,
+            "title": None,
+            "header": {
+                "labelAngle": 0,
+                "labelAlign": "left",
+                "labelOrient": "left",
+                "labelPadding": 6,
+            },
+        }
+    },
     "spacing": 3,
     "resolve": {"scale": {"y": "independent"}},
     "spec": {
-        "width": PLOT_WIDTHS["by-project"], "height": 32,
-        "mark": {"type": "area", "color": TOKENS, "opacity": 0.9, "interpolate": "monotone"},
+        "width": PLOT_WIDTHS["by-project"],
+        "height": 32,
+        "mark": {
+            "type": "area",
+            "color": TOKENS,
+            "opacity": 0.9,
+            "interpolate": "monotone",
+        },
         "encoding": {
-            "x": {"field": "date", "type": "temporal",
-                  "axis": {"title": None, "format": "%b %y", "labelAngle": 0, "grid": False,
-                           "tickCount": {"interval": "month", "step": 2}}},
-            "y": {"field": "smooth", "type": "quantitative",
-                  "axis": {"title": None, "grid": False, "labels": False, "ticks": False,
-                           "domain": False}},
-            "tooltip": [{"field": "project", "type": "nominal"},
-                        {"field": "date", "type": "temporal", "title": "day"},
-                        {"field": "smooth", "type": "quantitative", "format": ",.0f",
-                         "title": "million tokens/day"}],
+            "x": {
+                "field": "date",
+                "type": "temporal",
+                "axis": {
+                    "title": None,
+                    "format": "%b %y",
+                    "labelAngle": 0,
+                    "grid": False,
+                    "tickCount": {"interval": "month", "step": 2},
+                },
+            },
+            "y": {
+                "field": "smooth",
+                "type": "quantitative",
+                "axis": {
+                    "title": None,
+                    "grid": False,
+                    "labels": False,
+                    "ticks": False,
+                    "domain": False,
+                },
+            },
+            "tooltip": [
+                {"field": "project", "type": "nominal"},
+                {"field": "date", "type": "temporal", "title": "day"},
+                {
+                    "field": "smooth",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "million tokens/day",
+                },
+            ],
         },
     },
 }

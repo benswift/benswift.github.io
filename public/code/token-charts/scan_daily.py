@@ -42,7 +42,10 @@ def scan(path: Path) -> dict[int, tuple]:
             except ValueError:
                 continue
             cc = u.get("cache_creation") or {}
-            w5, w1 = cc.get("ephemeral_5m_input_tokens"), cc.get("ephemeral_1h_input_tokens")
+            w5, w1 = (
+                cc.get("ephemeral_5m_input_tokens"),
+                cc.get("ephemeral_1h_input_tokens"),
+            )
             if w5 is None and w1 is None:
                 w5, w1 = u.get("cache_creation_input_tokens", 0) or 0, 0
             out[hash(mid)] = (
