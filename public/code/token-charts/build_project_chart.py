@@ -11,6 +11,8 @@ import pickle
 from collections import defaultdict
 from datetime import date, timedelta
 
+from chart_style import CONFIG, PLOT_WIDTHS, TOKENS
+
 MAP = [
     # public GitHub repos, merged where one repo lives at two paths
     ("~/projects/slop-university-press", "slop-university"),
@@ -77,19 +79,6 @@ data = [{"date": d.isoformat(), "project": f"{k} · {totals[k]/1e9:.1f}B",
         for k in order_keys for d in all_days]
 json.dump(data, open("by_project_daily.json", "w"), indent=0)
 
-BG, INK, INK2, GRID, TOKENS = "#1c1a1d", "#e0e0e0", "#aaa", "#363338", "#be2edd"
-FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
-CONFIG = {
-    "background": BG, "font": FONT,
-    "axis": {"labelColor": INK2, "titleColor": INK2, "domainColor": GRID, "tickColor": GRID,
-             "gridColor": GRID, "gridOpacity": 0.6, "labelFontSize": 12, "titleFontSize": 12,
-             "titleFontWeight": "normal"},
-    "title": {"color": INK, "fontSize": 15, "fontWeight": 600, "anchor": "start",
-              "subtitleColor": INK2, "subtitleFontSize": 12, "subtitleLineHeight": 17},
-    "header": {"labelColor": INK, "labelFontSize": 11, "labelFontWeight": 600, "titleColor": INK2},
-    "view": {"stroke": None},
-}
-
 spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
     "config": CONFIG,
@@ -108,7 +97,7 @@ spec = {
     "spacing": 3,
     "resolve": {"scale": {"y": "independent"}},
     "spec": {
-        "width": 600, "height": 30,
+        "width": PLOT_WIDTHS["by-project"], "height": 32,
         "mark": {"type": "area", "color": TOKENS, "opacity": 0.9, "interpolate": "monotone"},
         "encoding": {
             "x": {"field": "date", "type": "temporal",

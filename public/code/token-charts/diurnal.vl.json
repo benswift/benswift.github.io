@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "config": {
     "background": "#1c1a1d",
-    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "font": "Helvetica, Arial, sans-serif",
     "axis": {
       "labelColor": "#aaa",
       "titleColor": "#aaa",
@@ -10,28 +10,30 @@
       "tickColor": "#363338",
       "gridColor": "#363338",
       "gridOpacity": 0.6,
-      "labelFontSize": 12,
-      "titleFontSize": 12,
+      "labelFontSize": 14,
+      "titleFontSize": 14,
       "titleFontWeight": "normal"
     },
     "legend": {
       "labelColor": "#e0e0e0",
       "titleColor": "#aaa",
-      "labelFontSize": 11,
-      "symbolType": "square"
+      "labelFontSize": 14,
+      "symbolType": "square",
+      "symbolSize": 130
     },
     "title": {
       "color": "#e0e0e0",
-      "fontSize": 15,
+      "fontSize": 19,
       "fontWeight": 600,
       "anchor": "start",
       "subtitleColor": "#aaa",
-      "subtitleFontSize": 12,
-      "subtitleLineHeight": 17
+      "subtitleFontSize": 14,
+      "subtitleLineHeight": 20,
+      "offset": 12
     },
     "header": {
       "labelColor": "#e0e0e0",
-      "labelFontSize": 11,
+      "labelFontSize": 14,
       "labelFontWeight": 600,
       "titleColor": "#aaa"
     },
@@ -49,8 +51,8 @@
       "type": "json"
     }
   },
-  "width": 640,
-  "height": 240,
+  "width": 845,
+  "height": 250,
   "layer": [
     {
       "mark": {
@@ -92,7 +94,7 @@
         "type": "text",
         "align": "left",
         "dx": 9,
-        "fontSize": 12,
+        "fontSize": 13,
         "fontWeight": 600
       },
       "encoding": {

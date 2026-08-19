@@ -3,28 +3,7 @@
 import json
 import statistics
 
-BG = "#1c1a1d"
-INK = "#e0e0e0"
-INK2 = "#aaa"
-GRID = "#363338"
-TOKENS = "#be2edd"
-SPEND = "#d97706"
-EMPTY = "#241f28"
-RAMP = ["#5b2a6b", "#8f2fae", "#be2edd", "#e879f9"]
-FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
-
-CONFIG = {
-    "background": BG,
-    "font": FONT,
-    "axis": {"labelColor": INK2, "titleColor": INK2, "domainColor": GRID, "tickColor": GRID,
-             "gridColor": GRID, "gridOpacity": 0.6, "labelFontSize": 12, "titleFontSize": 12,
-             "titleFontWeight": "normal"},
-    "legend": {"labelColor": INK, "titleColor": INK2, "labelFontSize": 11, "symbolType": "square"},
-    "title": {"color": INK, "fontSize": 15, "fontWeight": 600, "anchor": "start",
-              "subtitleColor": INK2, "subtitleFontSize": 12, "subtitleLineHeight": 17},
-    "header": {"labelColor": INK, "labelFontSize": 11, "labelFontWeight": 600, "titleColor": INK2},
-    "view": {"stroke": None},
-}
+from chart_style import BG, CONFIG, EMPTY, PLOT_WIDTHS, RAMP, SPEND, TOKENS
 
 
 def spec(**kw):
@@ -58,7 +37,7 @@ calendar = spec(
                 f" : datum.millions < {cuts[1]} ? '{BINS[2]}'"
                 f" : datum.millions < {cuts[2]} ? '{BINS[3]}' : '{BINS[4]}'",
                 "as": "bin"}],
-    width=760, height=126,
+    width=PLOT_WIDTHS["daily-heatmap"], height=105,
     mark={"type": "rect", "cornerRadius": 2, "stroke": BG, "strokeWidth": 2},
     encoding={
         "x": {"field": "date", "type": "ordinal", "timeUnit": "yearweek",
@@ -94,7 +73,7 @@ by_model_daily = spec(
                    "header": {"labelAngle": 0, "labelAlign": "left", "labelOrient": "left",
                               "labelPadding": 6}}},
     spec={
-        "width": 640, "height": 34,
+        "width": PLOT_WIDTHS["rise-and-fall"], "height": 36,
         "mark": {"type": "area", "color": TOKENS, "opacity": 0.9, "interpolate": "monotone",
                  "line": False},
         "encoding": {
@@ -130,7 +109,7 @@ cumulative = spec(
                               "labelPadding": 2}}},
     resolve={"scale": {"y": "independent"}},
     spec={
-        "width": 700, "height": 150,
+        "width": PLOT_WIDTHS["cumulative"], "height": 160,
         "mark": {"type": "area", "opacity": 0.85, "line": {"strokeWidth": 2}},
         "encoding": {
             "x": {"field": "date", "type": "temporal",
@@ -155,7 +134,7 @@ when_chart = spec(
            "subtitle": "Average tokens per hour of the day (Australia/Sydney), across 295 weekdays "
                        "and 118 weekend days."},
     data={"values": diurnal},
-    width=640, height=240,
+    width=PLOT_WIDTHS["diurnal"], height=250,
     layer=[
         {"mark": {"type": "line", "strokeWidth": 2, "interpolate": "monotone",
                   "point": {"filled": True, "size": 45}},
@@ -164,7 +143,7 @@ when_chart = spec(
                                   {"field": "millions", "type": "quantitative",
                                    "format": ",.1f", "title": "million tokens/hour"}]}},
         {"transform": [{"filter": "(datum.kind === 'Mon-Fri' && datum.hour === 17) || (datum.kind === 'Sat-Sun' && datum.hour === 21)"}],
-         "mark": {"type": "text", "align": "left", "dx": 9, "fontSize": 12, "fontWeight": 600},
+         "mark": {"type": "text", "align": "left", "dx": 9, "fontSize": 13, "fontWeight": 600},
          "encoding": {"text": {"field": "kind", "type": "nominal"}}},
     ],
     encoding={

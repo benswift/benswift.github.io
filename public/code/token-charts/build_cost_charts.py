@@ -2,28 +2,8 @@
 
 import json
 
-BG = "#1c1a1d"
-INK = "#e0e0e0"
-INK2 = "#aaa"
-GRID = "#363338"
-TOKENS = "#be2edd"   # brand purple: token counts
-SPEND = "#d97706"    # amber: dollars
-FONT = "Helvetica Neue, Helvetica, Arial, sans-serif"
+from chart_style import CONFIG, INK, PLOT_WIDTHS, SPEND, TOKENS
 
-CONFIG = {
-    "background": BG,
-    "font": FONT,
-    "axis": {
-        "labelColor": INK2, "titleColor": INK2, "domainColor": GRID,
-        "tickColor": GRID, "gridColor": GRID, "gridOpacity": 0.6,
-        "labelFontSize": 12, "titleFontSize": 12, "titleFontWeight": "normal",
-    },
-    "legend": {"labelColor": INK, "titleColor": INK2, "labelFontSize": 12, "symbolType": "square"},
-    "title": {"color": INK, "fontSize": 15, "fontWeight": 600, "anchor": "start",
-              "subtitleColor": INK2, "subtitleFontSize": 12},
-    "header": {"labelColor": INK, "labelFontSize": 13, "labelFontWeight": 600, "titleColor": INK2},
-    "view": {"stroke": None},
-}
 
 def spec(**kw):
     s = {"$schema": "https://vega.github.io/schema/vega-lite/v6.json", "config": CONFIG}
@@ -85,12 +65,13 @@ c2 = spec(
                       "sort": ["billions of tokens", "indicative API cost (US$)"]}},
     resolve={"scale": {"x": "independent"}},
     spec={
-        "width": 260, "height": 320,
+        "width": PLOT_WIDTHS["by-model"], "height": 340,
         "mark": {"type": "bar", "cornerRadiusEnd": 4, "height": {"band": 0.7}},
         "encoding": {
             "y": {"field": "model", "type": "nominal", "sort": order,
                   "axis": {"title": None, "grid": False}},
-            "x": {"field": "value", "type": "quantitative", "axis": {"title": None, "format": "~s"}},
+            "x": {"field": "value", "type": "quantitative",
+                  "axis": {"title": None, "format": "~s", "tickCount": 6}},
             "color": {"field": "measure", "type": "nominal", "legend": None,
                       "scale": {"domain": ["billions of tokens", "indicative API cost (US$)"],
                                 "range": [TOKENS, SPEND]}},
@@ -104,7 +85,7 @@ c3 = spec(
     title={"text": "Where the tokens go, and where the money goes",
            "subtitle": "Share of the 55.1B tokens against share of the indicative US$50k."},
     data={"values": cats},
-    width=560, height=230,
+    width=PLOT_WIDTHS["where-the-tokens-go"], height=230,
     mark={"type": "bar", "cornerRadiusEnd": 4},
     encoding={
         "y": {"field": "category", "type": "nominal",
