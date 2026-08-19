@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "background": "#1c1a1d",
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelColor": "#aaa",
+      "titleColor": "#aaa",
+      "domainColor": "#363338",
+      "tickColor": "#363338",
+      "gridColor": "#363338",
+      "gridOpacity": 0.6,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelColor": "#e0e0e0",
+      "titleColor": "#aaa",
+      "labelFontSize": 11,
+      "symbolType": "square"
+    },
+    "title": {
+      "color": "#e0e0e0",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "anchor": "start",
+      "subtitleColor": "#aaa",
+      "subtitleFontSize": 12,
+      "subtitleLineHeight": 17
+    },
+    "header": {
+      "labelColor": "#e0e0e0",
+      "labelFontSize": 11,
+      "labelFontWeight": 600,
+      "titleColor": "#aaa"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "The working day, as seen by the token meter",
+    "subtitle": "Average tokens per hour of the day (Australia/Sydney), across 295 weekdays and 118 weekend days."
+  },
+  "data": {
+    "url": "/code/token-charts/diurnal.data.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "width": 640,
+  "height": 240,
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "interpolate": "monotone",
+        "point": {
+          "filled": true,
+          "size": 45
+        }
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "kind",
+            "type": "nominal",
+            "title": null
+          },
+          {
+            "field": "hour",
+            "type": "quantitative"
+          },
+          {
+            "field": "millions",
+            "type": "quantitative",
+            "format": ",.1f",
+            "title": "million tokens/hour"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "(datum.kind === 'Mon-Fri' && datum.hour === 17) || (datum.kind === 'Sat-Sun' && datum.hour === 21)"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 9,
+        "fontSize": 12,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "kind",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "hour",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "values": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21
+        ],
+        "labelExpr": "datum.value + ':00'"
+      },
+      "scale": {
+        "domain": [
+          0,
+          23
+        ],
+        "nice": false
+      }
+    },
+    "y": {
+      "field": "millions",
+      "type": "quantitative",
+      "axis": {
+        "title": "million tokens per hour"
+      }
+    },
+    "color": {
+      "field": "kind",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Mon-Fri",
+          "Sat-Sun"
+        ],
+        "range": [
+          "#be2edd",
+          "#d97706"
+        ]
+      }
+    }
+  }
+}

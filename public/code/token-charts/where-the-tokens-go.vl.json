@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "background": "#1c1a1d",
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelColor": "#aaa",
+      "titleColor": "#aaa",
+      "domainColor": "#363338",
+      "tickColor": "#363338",
+      "gridColor": "#363338",
+      "gridOpacity": 0.6,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelColor": "#e0e0e0",
+      "titleColor": "#aaa",
+      "labelFontSize": 12,
+      "symbolType": "square"
+    },
+    "title": {
+      "color": "#e0e0e0",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "anchor": "start",
+      "subtitleColor": "#aaa",
+      "subtitleFontSize": 12
+    },
+    "header": {
+      "labelColor": "#e0e0e0",
+      "labelFontSize": 13,
+      "labelFontWeight": 600,
+      "titleColor": "#aaa"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "Where the tokens go, and where the money goes",
+    "subtitle": "Share of the 55.1B tokens against share of the indicative US$50k."
+  },
+  "data": {
+    "url": "/code/token-charts/where-the-tokens-go.data.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "width": 560,
+  "height": 230,
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 4
+  },
+  "encoding": {
+    "y": {
+      "field": "category",
+      "type": "nominal",
+      "sort": [
+        "cache read",
+        "cache write (1h)",
+        "cache write (5m)",
+        "output",
+        "fresh input"
+      ],
+      "axis": {
+        "title": null,
+        "grid": false
+      }
+    },
+    "yOffset": {
+      "field": "measure",
+      "sort": [
+        "share of tokens",
+        "share of spend"
+      ]
+    },
+    "x": {
+      "field": "share",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "format": ".0%"
+      },
+      "scale": {
+        "domain": [
+          0,
+          1
+        ]
+      }
+    },
+    "color": {
+      "field": "measure",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "share of tokens",
+          "share of spend"
+        ],
+        "range": [
+          "#be2edd",
+          "#d97706"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "top",
+        "direction": "horizontal"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "category",
+        "type": "nominal"
+      },
+      {
+        "field": "measure",
+        "type": "nominal"
+      },
+      {
+        "field": "share",
+        "type": "quantitative",
+        "format": ".2%"
+      }
+    ]
+  }
+}

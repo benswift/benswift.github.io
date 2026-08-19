@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "background": "#1c1a1d",
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelColor": "#aaa",
+      "titleColor": "#aaa",
+      "domainColor": "#363338",
+      "tickColor": "#363338",
+      "gridColor": "#363338",
+      "gridOpacity": 0.6,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelColor": "#e0e0e0",
+      "titleColor": "#aaa",
+      "labelFontSize": 12,
+      "symbolType": "square"
+    },
+    "title": {
+      "color": "#e0e0e0",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "anchor": "start",
+      "subtitleColor": "#aaa",
+      "subtitleFontSize": 12
+    },
+    "header": {
+      "labelColor": "#e0e0e0",
+      "labelFontSize": 13,
+      "labelFontWeight": 600,
+      "titleColor": "#aaa"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "Tokens and indicative cost, by model",
+    "subtitle": "Same ordering in both panels, with independent scales."
+  },
+  "data": {
+    "url": "/code/token-charts/by-model.data.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "facet": {
+    "column": {
+      "field": "measure",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "billions of tokens",
+        "indicative API cost (US$)"
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "x": "independent"
+    }
+  },
+  "spec": {
+    "width": 260,
+    "height": 320,
+    "mark": {
+      "type": "bar",
+      "cornerRadiusEnd": 4,
+      "height": {
+        "band": 0.7
+      }
+    },
+    "encoding": {
+      "y": {
+        "field": "model",
+        "type": "nominal",
+        "sort": [
+          "Sonnet 5",
+          "Opus 4.8",
+          "Opus 5",
+          "Opus 4.7",
+          "Opus 4.6",
+          "Fable 5",
+          "Opus 4.5",
+          "Opus 4.1",
+          "Sonnet 4.5",
+          "Opus 4",
+          "Haiku 4.5",
+          "Sonnet 4.6",
+          "Sonnet 4"
+        ],
+        "axis": {
+          "title": null,
+          "grid": false
+        }
+      },
+      "x": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {
+          "title": null,
+          "format": "~s"
+        }
+      },
+      "color": {
+        "field": "measure",
+        "type": "nominal",
+        "legend": null,
+        "scale": {
+          "domain": [
+            "billions of tokens",
+            "indicative API cost (US$)"
+          ],
+          "range": [
+            "#be2edd",
+            "#d97706"
+          ]
+        }
+      },
+      "tooltip": [
+        {
+          "field": "model",
+          "type": "nominal"
+        },
+        {
+          "field": "value",
+          "type": "quantitative",
+          "format": ",.1f"
+        }
+      ]
+    }
+  }
+}

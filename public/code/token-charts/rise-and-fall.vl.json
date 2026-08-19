@@ -1,0 +1,164 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "background": "#1c1a1d",
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelColor": "#aaa",
+      "titleColor": "#aaa",
+      "domainColor": "#363338",
+      "tickColor": "#363338",
+      "gridColor": "#363338",
+      "gridOpacity": 0.6,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelColor": "#e0e0e0",
+      "titleColor": "#aaa",
+      "labelFontSize": 11,
+      "symbolType": "square"
+    },
+    "title": {
+      "color": "#e0e0e0",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "anchor": "start",
+      "subtitleColor": "#aaa",
+      "subtitleFontSize": 12,
+      "subtitleLineHeight": 17
+    },
+    "header": {
+      "labelColor": "#e0e0e0",
+      "labelFontSize": 11,
+      "labelFontWeight": 600,
+      "titleColor": "#aaa"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "The rise and fall of each model",
+    "subtitle": "Tokens per day, 7-day rolling mean. One panel per model, ordered by first use; all panels share the same scale."
+  },
+  "data": {
+    "url": "/code/token-charts/rise-and-fall.data.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "mean",
+          "field": "millions",
+          "as": "smooth"
+        }
+      ],
+      "frame": [
+        -3,
+        3
+      ],
+      "groupby": [
+        "model"
+      ],
+      "sort": [
+        {
+          "field": "date"
+        }
+      ]
+    }
+  ],
+  "facet": {
+    "row": {
+      "field": "model",
+      "type": "nominal",
+      "sort": [
+        "Opus 4",
+        "Sonnet 4",
+        "Opus 4.1",
+        "Sonnet 4.5",
+        "Haiku 4.5",
+        "Opus 4.5",
+        "Opus 4.6",
+        "Sonnet 4.6",
+        "Opus 4.7",
+        "Opus 4.8",
+        "Fable 5",
+        "Sonnet 5",
+        "Opus 5"
+      ],
+      "title": null,
+      "header": {
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "labelOrient": "left",
+        "labelPadding": 6
+      }
+    }
+  },
+  "spec": {
+    "width": 640,
+    "height": 34,
+    "mark": {
+      "type": "area",
+      "color": "#be2edd",
+      "opacity": 0.9,
+      "interpolate": "monotone",
+      "line": false
+    },
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "format": "%b %y",
+          "labelAngle": 0,
+          "grid": false,
+          "tickCount": {
+            "interval": "month",
+            "step": 2
+          }
+        }
+      },
+      "y": {
+        "field": "smooth",
+        "type": "quantitative",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labels": false,
+          "ticks": false,
+          "domain": false
+        }
+      },
+      "tooltip": [
+        {
+          "field": "model",
+          "type": "nominal"
+        },
+        {
+          "field": "date",
+          "type": "temporal",
+          "title": "day"
+        },
+        {
+          "field": "smooth",
+          "type": "quantitative",
+          "format": ",.0f",
+          "title": "million tokens/day"
+        }
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "shared"
+    }
+  },
+  "spacing": 3
+}

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "background": "#1c1a1d",
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "axis": {
+      "labelColor": "#aaa",
+      "titleColor": "#aaa",
+      "domainColor": "#363338",
+      "tickColor": "#363338",
+      "gridColor": "#363338",
+      "gridOpacity": 0.6,
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "legend": {
+      "labelColor": "#e0e0e0",
+      "titleColor": "#aaa",
+      "labelFontSize": 11,
+      "symbolType": "square"
+    },
+    "title": {
+      "color": "#e0e0e0",
+      "fontSize": 15,
+      "fontWeight": 600,
+      "anchor": "start",
+      "subtitleColor": "#aaa",
+      "subtitleFontSize": 12,
+      "subtitleLineHeight": 17
+    },
+    "header": {
+      "labelColor": "#e0e0e0",
+      "labelFontSize": 11,
+      "labelFontWeight": 600,
+      "titleColor": "#aaa"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "title": {
+    "text": "Cumulative since day zero",
+    "subtitle": "The same 413 days, counted two ways. Separate panels, separate scales."
+  },
+  "data": {
+    "url": "/code/token-charts/cumulative.data.json",
+    "format": {
+      "type": "json"
+    }
+  },
+  "facet": {
+    "row": {
+      "field": "measure",
+      "type": "nominal",
+      "sort": [
+        "billions of tokens",
+        "indicative API cost (US$)"
+      ],
+      "title": null,
+      "header": {
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "labelOrient": "top",
+        "labelPadding": 2
+      }
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "spec": {
+    "width": 700,
+    "height": 150,
+    "mark": {
+      "type": "area",
+      "opacity": 0.85,
+      "line": {
+        "strokeWidth": 2
+      }
+    },
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": null,
+          "format": "%b %y",
+          "labelAngle": 0,
+          "grid": false,
+          "tickCount": {
+            "interval": "month",
+            "step": 2
+          }
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {
+          "title": null,
+          "format": "~s"
+        }
+      },
+      "color": {
+        "field": "measure",
+        "type": "nominal",
+        "legend": null,
+        "scale": {
+          "domain": [
+            "billions of tokens",
+            "indicative API cost (US$)"
+          ],
+          "range": [
+            "#be2edd",
+            "#d97706"
+          ]
+        }
+      },
+      "tooltip": [
+        {
+          "field": "date",
+          "type": "temporal",
+          "title": "day"
+        },
+        {
+          "field": "value",
+          "type": "quantitative",
+          "format": ",.0f"
+        }
+      ]
+    }
+  }
+}
