@@ -6,6 +6,8 @@ description:
 tags: ["ai"]
 ---
 
+import Chart from "@/components/Chart.astro";
+
 Every machine I work on ships its Claude Code session logs to my home server.
 Each assistant message in there carries a `usage` block recording what it cost
 to produce. Fourteen months of that comes to 24,538 transcript files and 521,862
@@ -13,24 +15,39 @@ API responses.[^dedup] Fifty-five billion tokens---that's a big number.
 
 But mostly I just wanted to look at it.
 
-![A calendar heatmap of daily token use from July 2025 to August 2026, sparse and pale through 2025, dense and saturated from February 2026 onward](./daily-heatmap.svg)
+<Chart
+  file="2026/08/19/daily-heatmap.svg"
+  alt="A calendar heatmap of daily token use from July 2025 to August 2026, sparse and pale through 2025, dense and saturated from February 2026 onward"
+/>
 
 The gap in January is a holiday. Everything after February is a change in how I
 work.
 
-![Thirteen small-multiple area charts, one per model, where each model's daily token use rises and falls in turn as the next model replaces it](./rise-and-fall.svg)
+<Chart
+  file="2026/08/19/rise-and-fall.svg"
+  alt="Thirteen small-multiple area charts, one per model, where each model's daily token use rises and falls in turn as the next model replaces it"
+/>
 
 Thirteen models in fourteen months, each taking over from the last.
 
-![Sixteen small-multiple area charts, one per project, each scaled to its own peak, marking out when the work on each one happened](./by-project.svg)
+<Chart
+  file="2026/08/19/by-project.svg"
+  alt="Sixteen small-multiple area charts, one per project, each scaled to its own peak, marking out when the work on each one happened"
+/>
 
 Sixteen projects, three-quarters of the total.[^projects]
 
-![Two stacked area charts, cumulative tokens above and cumulative indicative cost below, both hockey-stick shaped with almost all of the total after March 2026](./cumulative.svg)
+<Chart
+  file="2026/08/19/cumulative.svg"
+  alt="Two stacked area charts, cumulative tokens above and cumulative indicative cost below, both hockey-stick shaped with almost all of the total after March 2026"
+/>
 
 About 85% of the total sits in the last five months.
 
-![A line chart of average tokens per hour, weekdays against weekends, with a mid-afternoon peak, a dip at noon and a sharp drop at 6pm](./diurnal.svg)
+<Chart
+  file="2026/08/19/diurnal.svg"
+  alt="A line chart of average tokens per hour, weekdays against weekends, with a mid-afternoon peak, a dip at noon and a sharp drop at 6pm"
+/>
 
 The 6pm cliff is dinner and bedtime. The overnight floor never quite reaches
 zero, which is the scheduled agents working while I'm asleep.[^cron]
@@ -40,12 +57,18 @@ output token does. So here is each model twice, by volume and by what it would
 have cost at
 [list API prices](https://platform.claude.com/docs/en/about-claude/pricing):
 
-![Two panels of horizontal bars ranking models by tokens and by indicative cost: Sonnet 5 leads on tokens but sits mid-table on cost, while Opus 4.1 has few tokens and high cost](./by-model.svg)
+<Chart
+  file="2026/08/19/by-model.svg"
+  alt="Two panels of horizontal bars ranking models by tokens and by indicative cost: Sonnet 5 leads on tokens but sits mid-table on cost, while Opus 4.1 has few tokens and high cost"
+/>
 
 Sonnet 5 has the largest token count by a distance and sits sixth on cost. Opus
 4.1 and Opus 4 run the other way, at 7% of the calls and 11% of the money.
 
-![Grouped horizontal bars setting each token category's share of volume against its share of cost, with cache reads at 96% of tokens and 53% of cost](./where-the-tokens-go.svg)
+<Chart
+  file="2026/08/19/where-the-tokens-go.svg"
+  alt="Grouped horizontal bars setting each token category's share of volume against its share of cost, with cache reads at 96% of tokens and 53% of cost"
+/>
 
 Ninety-six per cent of those 55 billion tokens are cache reads: the same
 conversation prefix, read back once per turn of the agent loop. Output, the part

@@ -1,0 +1,66 @@
+---
+interface Props {
+  file: string
+  alt: string
+}
+
+const { file, alt } = Astro.props
+
+// Discover chart SVGs at build time. Path is relative to src/content/blog/
+// (e.g. "2026/08/19/by-project.svg").
+const svgModules = import.meta.glob<string>("/src/content/blog/**/*.svg", {
+  eager: true,
+  import: "default",
+  query: "?raw",
+})
+
+const key = `/src/content/blog/${file}`
+const source = svgModules[key]
+
+if (!source) {
+  throw new Error(
+    `Chart: SVG not found at ${key}. Available keys start with "/src/content/blog/".`,
+  )
+}
+
+// Inlined rather than referenced from an <img> so the links baked into the
+// panel labels are clickable. The whole chart is one image as far as assistive
+// tech is concerned, described by alt.
+const svg = source.replace(
+  /^<svg /,
+  `<svg role="img" aria-label="${alt.replaceAll('"', "&quot;")}" `,
+)
+---
+
+<figure class="chart" data-pagefind-ignore set:html={svg} />
+
+<style>
+  .chart {
+    margin: 2rem 0;
+    outline: 1px solid rgb(255 255 255 / 8%);
+  }
+
+  /* Vega bakes the rendered pixel size into the root element; override it so
+     the chart always fills the column, whatever the column is. */
+  .chart :global(svg) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .chart :global(a) {
+    cursor: pointer;
+  }
+
+  .chart :global(a text) {
+    text-decoration: underline dotted
+      color-mix(in srgb, var(--text-2) 55%, transparent);
+    text-underline-offset: 3px;
+  }
+
+  .chart :global(a:hover text),
+  .chart :global(a:focus-visible text) {
+    fill: var(--brand-1);
+    text-decoration-color: var(--brand-1);
+  }
+</style>
