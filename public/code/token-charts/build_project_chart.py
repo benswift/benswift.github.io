@@ -33,10 +33,12 @@ MAP = [
     ("~/projects/astro-theme-anu", "astro-theme-anu"),
     ("~/projects/strproxy", "strproxy"),
     ("~/projects/comp4020", "comp4020 (workspace)"),
-    # below the cut-off, and would otherwise be swallowed by the line above
+    # folded into the workspace entry above, which is what they are: checkouts
+    # sitting inside it. Explicit rather than inherited, so the exclusion of
+    # tutors below stays visible.
+    ("~/projects/comp4020/lucy", "comp4020 (workspace)"),
+    ("~/projects/comp4020/strproxy", "comp4020 (workspace)"),
     ("~/projects/comp4020/tutors", None),
-    ("~/projects/comp4020/lucy", None),
-    ("~/projects/comp4020/strproxy", None),
 ]
 MAP.sort(key=lambda kv: -len(kv[0]))
 

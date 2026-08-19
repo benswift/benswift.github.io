@@ -69,11 +69,11 @@ them, and the scripts that walk the transcripts are all there.
     one session fanning out to twelve agents is still one session.
 
 [^projects]:
-    The COMP4020 work is split across three of those entries, since the studio
-    repo, the course website and the workspace directory are separate checkouts;
-    added together they would sit second on the list. Everything under about a
-    billion tokens is left off, along with a long tail of worktrees and one-off
-    directories.
+    The COMP4020 work still lands in three of those entries, since the studio
+    repo and the course website are separate checkouts from the workspace
+    directory that holds everything else. Added together they would sit second
+    on the list, above llms-unplugged. Below the sixteen is a long tail of
+    worktrees and one-off directories, none of it individually worth a row.
 
 [^cron]:
     Which is also why that floor is so flat. A cron job has no opinion about
