@@ -2,7 +2,7 @@
 
 import json
 
-from chart_style import CONFIG, INK, PLOT_WIDTHS, SPEND, TOKENS
+from chart_style import CONFIG, INK, PLOT_WIDTHS, SPEND, TOKENS, publish
 
 
 def spec(**kw):
@@ -49,7 +49,8 @@ peak = max(month_rows, key=lambda r: r["billions"])
 c1 = spec(
     title={
         "text": "Tokens per month",
-        "subtitle": "All Claude Code sessions, July 2025 - August 2026. August 2026 is a partial month.",
+        "subtitle": f"Every agent session, {month_order[0]} to {month_order[-1]}."
+        f" {month_order[-1]} is a partial month.",
     },
     data={"values": month_rows},
     width=680,
@@ -97,6 +98,9 @@ c1 = spec(
         },
     },
 )
+
+grand_tokens = sum(r["tokens"] for r in by_model)
+grand_cost = sum(r["cost"] for r in by_model)
 
 model_rows = []
 for r in by_model:
@@ -167,7 +171,8 @@ c2 = spec(
 c3 = spec(
     title={
         "text": "Where the tokens go, and where the money goes",
-        "subtitle": "Share of the 55.1B tokens against share of the indicative US$50k.",
+        "subtitle": f"Share of the {grand_tokens / 1e9:.1f}B tokens against share of"
+        f" the indicative US${grand_cost / 1000:.0f}k.",
     },
     data={"values": cats},
     width=PLOT_WIDTHS["where-the-tokens-go"],
@@ -215,5 +220,4 @@ for name, s in (
     ("by-model", c2),
     ("where-the-tokens-go", c3),
 ):
-    json.dump(s, open(f"{name}.vl.json", "w"), indent=2)
-    print("wrote", name)
+    publish(name, s)

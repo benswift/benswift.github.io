@@ -86,3 +86,23 @@ REPOS = {
     "aps-ai-transparency-tracker": "https://github.com/ANUcybernetics/aps-ai-transparency-tracker",
     "panic": "https://github.com/ANUcybernetics/panic",
 }
+
+
+def publish(name: str, spec: dict) -> None:
+    """Write a spec and its data as the two files the /code page serves.
+
+    The data is split out rather than inlined so each spec stays readable and
+    will open as-is in the Vega editor, which resolves the sibling URL.
+    """
+    import json
+
+    data = spec.pop("data")
+    spec["data"] = {
+        "url": f"/code/token-charts/{name}.data.json",
+        "format": {"type": "json"},
+    }
+    with open(f"{name}.data.json", "w") as fh:
+        json.dump(data["values"], fh, indent=0)
+    with open(f"{name}.vl.json", "w") as fh:
+        json.dump(spec, fh, indent=2)
+    print(f"wrote {name}.vl.json + {name}.data.json")

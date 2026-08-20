@@ -2,8 +2,9 @@
 
 import json
 import statistics
+from datetime import date
 
-from chart_style import BG, CONFIG, EMPTY, PLOT_WIDTHS, RAMP, SPEND, TOKENS
+from chart_style import BG, CONFIG, EMPTY, PLOT_WIDTHS, RAMP, SPEND, TOKENS, publish
 
 
 def spec(**kw):
@@ -18,23 +19,41 @@ per_model = json.load(open("per_model_daily.json"))
 model_order = json.load(open("model_order.json"))
 when = json.load(open("when.json"))
 
+
+def pretty(day: str) -> str:
+    d = date.fromisoformat(day)
+    return f"{d.day} {d.strftime('%B %Y')}"
+
+
+span_text = f"{pretty(cal[0]['date'])} to {pretty(cal[-1]['date'])}"
+n_weekday = sum(1 for r in cal if r["weekday"] < 5)
+n_weekend = len(cal) - n_weekday
+n_weeks = len({r["week"] for r in cal})
+
 # --- 1. calendar heatmap -----------------------------------------------------
 active = sorted(r["millions"] for r in cal if r["tokens"])
-cuts = [round(statistics.quantiles(active, n=4)[i]) for i in range(3)]
+cuts = statistics.quantiles(active, n=4)
 print("heatmap thresholds (millions):", cuts)
+
+
+def mag(value: float) -> str:
+    """Enough precision to name the bin. The quietest quartile is a fraction
+    of a million a day --- the Zed years --- and 'under 0M' means nothing."""
+    return f"{value:.1f}".rstrip("0").rstrip(".") if value < 10 else f"{value:.0f}"
+
 
 BINS = [
     "none",
-    f"under {cuts[0]}M",
-    f"{cuts[0]}-{cuts[1]}M",
-    f"{cuts[1]}-{cuts[2]}M",
-    f"over {cuts[2]}M",
+    f"under {mag(cuts[0])}M",
+    f"{mag(cuts[0])}-{mag(cuts[1])}M",
+    f"{mag(cuts[1])}-{mag(cuts[2])}M",
+    f"over {mag(cuts[2])}M",
 ]
 
 calendar = spec(
     title={
         "text": "Every day of agent use",
-        "subtitle": "Tokens per day, 3 July 2025 to 19 August 2026. "
+        "subtitle": f"Tokens per day, {span_text}. "
         "Unfilled cells are days with no session at all.",
     },
     data={"values": cal},
@@ -48,7 +67,8 @@ calendar = spec(
         }
     ],
     width=PLOT_WIDTHS["daily-heatmap"],
-    height=105,
+    # square cells, whatever the span: seven rows of the column width
+    height=round(7 * PLOT_WIDTHS["daily-heatmap"] / n_weeks),
     mark={"type": "rect", "cornerRadius": 2, "stroke": BG, "strokeWidth": 2},
     encoding={
         "x": {
@@ -200,7 +220,8 @@ for r in cum:
 cumulative = spec(
     title={
         "text": "Cumulative since day zero",
-        "subtitle": "The same 413 days, counted two ways. Separate panels, separate scales.",
+        "subtitle": f"The same {len(cal)} days, counted two ways."
+        " Separate panels, separate scales.",
     },
     data={"values": cum_rows},
     facet={
@@ -262,8 +283,8 @@ diurnal = json.load(open("diurnal.json"))
 when_chart = spec(
     title={
         "text": "The working day, as seen by the token meter",
-        "subtitle": "Average tokens per hour of the day (Australia/Sydney), across 295 weekdays "
-        "and 118 weekend days.",
+        "subtitle": "Average tokens per hour of the day (Australia/Sydney), across"
+        f" {n_weekday} weekdays and {n_weekend} weekend days.",
     },
     data={"values": diurnal},
     width=PLOT_WIDTHS["diurnal"],
@@ -337,5 +358,4 @@ for name, s in (
     ("cumulative", cumulative),
     ("diurnal", when_chart),
 ):
-    json.dump(s, open(f"{name}.vl.json", "w"), indent=2)
-    print("wrote", name)
+    publish(name, s)

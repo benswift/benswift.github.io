@@ -43,13 +43,7 @@
   },
   "title": {
     "text": "The working day, as seen by the token meter",
-    "subtitle": "Average tokens per hour of the day (Australia/Sydney), across 295 weekdays and 118 weekend days."
-  },
-  "data": {
-    "url": "/code/token-charts/diurnal.data.json",
-    "format": {
-      "type": "json"
-    }
+    "subtitle": "Average tokens per hour of the day (Australia/Sydney), across 334 weekdays and 133 weekend days."
   },
   "width": 845,
   "height": 250,
@@ -153,6 +147,12 @@
           "#d97706"
         ]
       }
+    }
+  },
+  "data": {
+    "url": "/code/token-charts/diurnal.data.json",
+    "format": {
+      "type": "json"
     }
   }
 }

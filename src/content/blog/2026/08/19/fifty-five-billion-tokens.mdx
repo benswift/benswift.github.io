@@ -1,23 +1,25 @@
 ---
 title: "Fifty-five billion tokens"
 description:
-  "Fourteen months of Claude Code session logs: 55 billion tokens across 13
-  models (and what they would have cost at API rates)"
+  "Fifteen months of agent session logs: 55 billion tokens across 14 models
+  (and what they would have cost at API rates)"
 tags: ["ai"]
 ---
 
 import Chart from "@/components/Chart.astro";
 
-Every machine I work on ships its Claude Code session logs to my home server.
-Each assistant message in there carries a `usage` block recording what it cost
-to produce. Fourteen months of that comes to 24,538 transcript files and 521,862
-API responses.[^dedup] Fifty-five billion tokens---that's a big number.
+Every machine I work on ships its agent session logs to my home server: Claude
+Code since July 2025, and before that Zed's agent panel, which recorded the same
+usage numbers.[^zed] Each assistant message in there carries a `usage` block
+recording what it cost to produce. Fifteen months of that comes to 23,851
+transcript files and 532,027 API responses.[^dedup] Fifty-five billion
+tokens---that's a big number.
 
 But mostly I just wanted to look at it.
 
 <Chart
   file="2026/08/19/daily-heatmap.svg"
-  alt="A calendar heatmap of daily token use from July 2025 to August 2026, sparse and pale through 2025, dense and saturated from February 2026 onward"
+  alt="A calendar heatmap of daily token use from May 2025 to August 2026, sparse and pale through 2025, dense and saturated from February 2026 onward"
 />
 
 The gap in January is a holiday. Everything after February is a change in how I
@@ -25,10 +27,10 @@ work.
 
 <Chart
   file="2026/08/19/rise-and-fall.svg"
-  alt="Thirteen small-multiple area charts, one per model, where each model's daily token use rises and falls in turn as the next model replaces it"
+  alt="Fourteen small-multiple area charts, one per model, where each model's daily token use rises and falls in turn as the next model replaces it"
 />
 
-Thirteen models in fourteen months, each taking over from the last.
+Fourteen models in fifteen months, each taking over from the last.
 
 <Chart
   file="2026/08/19/by-project.svg"
@@ -42,7 +44,7 @@ Sixteen projects, three-quarters of the total.[^projects]
   alt="Two stacked area charts, cumulative tokens above and cumulative indicative cost below, both hockey-stick shaped with almost all of the total after March 2026"
 />
 
-About 85% of the total sits in the last five months.
+About 86% of the total sits in the last five months.
 
 <Chart
   file="2026/08/19/diurnal.svg"
@@ -76,7 +78,7 @@ that actually writes the code, is 0.55%.
 
 The whole lot comes to about **US\$50,000** at list prices, over half of it
 cache reads.[^caveats] Uncached, the same work would have run to roughly
-\$285,000.
+\$289,000.
 
 The charts are all [Vega-Lite](https://vega.github.io/vega-lite/), rendered to
 static SVG when I wrote this. [The specs](/code/token-charts/), the data behind
@@ -85,10 +87,19 @@ them, and the scripts that walk the transcripts are all there.
 [^dedup]:
     Deduplicated on the assistant message id, which matters more than it sounds:
     resuming a session from a different working directory files the same
-    transcript under two project directories, and 316 files are duplicated that
-    way. The count also includes 10,222 subagent transcripts, about 22% of the
+    transcript under two project directories, and 455 files are duplicated that
+    way. The count also includes 10,253 subagent transcripts, about 21% of the
     responses and 7% of the cost. I keep those out of my session counts, since
     one session fanning out to twelve agents is still one session.
+
+[^zed]:
+    Zed kept per-request token counts, models and project paths for its agent
+    panel, so those months needed no more than a format conversion to sit
+    alongside the Claude Code transcripts. The year before _that_ --- Zed's
+    older assistant panel, back to April 2024 --- kept the conversation text
+    and nothing else: no usage, no model. It is in the log archive with every
+    figure marked as an estimate, and it stays off these charts, which count
+    only numbers something actually reported.
 
 [^projects]:
     The COMP4020 work still lands in three of those entries, since the studio

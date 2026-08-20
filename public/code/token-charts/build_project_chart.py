@@ -8,10 +8,12 @@ one-off directories and worktrees.
 
 import json
 import pickle
+import re
 from collections import defaultdict
 from datetime import date, timedelta
 
-from chart_style import CONFIG, PLOT_WIDTHS, TOKENS
+from chart_style import CONFIG, PLOT_WIDTHS, TOKENS, publish
+from scope import PRICES
 
 MAP = [
     # public GitHub repos, merged where one repo lives at two paths
@@ -44,20 +46,31 @@ MAP = [
 ]
 MAP.sort(key=lambda kv: -len(kv[0]))
 
+# The same repo worked on from macOS and Linux records two different absolute
+# paths, and the Zed era adds a third era of them. Collapse both home
+# directories to ~ so one project is one row.
+HOME_PREFIX = re.compile(r"^/(Users|home)/[^/]+")
 
-def label_for(cwd: str) -> str | None:
+
+def label_for(cwd: str | None) -> str | None:
+    if not cwd:
+        return None
+    cwd = HOME_PREFIX.sub("~", cwd)
     for prefix, label in MAP:
         if cwd == prefix or cwd.startswith(prefix + "/"):
             return label
     return None
 
 
-rows = pickle.load(open("projects.pkl", "rb"))
+rows = pickle.load(open("daily.pkl", "rb"))
 daily: dict[tuple[str, str], int] = defaultdict(int)
 totals: dict[str, int] = defaultdict(int)
 grand = 0
 days = set()
-for day, cwd, tok, cost in rows:
+for day, _hour, _wd, model, i, o, rd, w5, w1, cwd, estimated in rows:
+    if estimated or model not in PRICES:
+        continue
+    tok = i + o + rd + w5 + w1
     grand += tok
     days.add(day)
     label = label_for(cwd)
@@ -85,7 +98,6 @@ data = [
     for k in order_keys
     for d in all_days
 ]
-json.dump(data, open("by_project_daily.json", "w"), indent=0)
 
 spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
@@ -168,4 +180,4 @@ spec = {
         },
     },
 }
-json.dump(spec, open("by-project.vl.json", "w"), indent=2)
+publish("by-project", spec)

@@ -49,12 +49,6 @@
       "together they are 78% of all tokens."
     ]
   },
-  "data": {
-    "url": "/code/token-charts/by-project.data.json",
-    "format": {
-      "type": "json"
-    }
-  },
   "transform": [
     {
       "window": [
@@ -83,22 +77,22 @@
       "field": "project",
       "type": "nominal",
       "sort": [
-        "slop-university \u00b7 15.5B",
+        "slop-university \u00b7 15.6B",
         "llms-unplugged \u00b7 4.1B",
-        "dotfiles \u00b7 3.2B",
+        "dotfiles \u00b7 3.3B",
         "extempore \u00b7 2.9B",
-        "comp4020 (workspace) \u00b7 2.5B",
+        "comp4020 (workspace) \u00b7 2.6B",
         "comp4020-agentic-coding-studio \u00b7 2.0B",
         "benswift.me \u00b7 1.9B",
-        "blowing-smoke \u00b7 1.8B",
         "out-of-office-cv \u00b7 1.8B",
+        "blowing-smoke \u00b7 1.8B",
         "comp4020/website \u00b7 1.6B",
         "astro-theme-anu \u00b7 1.4B",
         "strproxy \u00b7 1.2B",
         "slop-salon \u00b7 1.1B",
         "panic-tda \u00b7 0.9B",
         "aps-ai-transparency-tracker \u00b7 0.8B",
-        "panic \u00b7 0.6B"
+        "panic \u00b7 0.8B"
       ],
       "title": null,
       "header": {
@@ -167,6 +161,12 @@
           "title": "million tokens/day"
         }
       ]
+    }
+  },
+  "data": {
+    "url": "/code/token-charts/by-project.data.json",
+    "format": {
+      "type": "json"
     }
   }
 }

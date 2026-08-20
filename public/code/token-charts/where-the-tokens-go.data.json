@@ -1,1 +1,52 @@
-[{"category":"fresh input","measure":"share of tokens","share":0.0008980377468662533,"raw":49522034},{"category":"fresh input","measure":"share of spend","share":0.004159646797243893,"raw":208.96},{"category":"cache write (5m)","measure":"share of tokens","share":0.013059132201789855,"raw":720142100},{"category":"cache write (5m)","measure":"share of spend","share":0.0956074474238032,"raw":4802.92},{"category":"cache write (1h)","measure":"share of tokens","share":0.020008190900518506,"raw":1103345949},{"category":"cache write (1h)","measure":"share of spend","share":0.21809863681654232,"raw":10956.36},{"category":"cache read","measure":"share of tokens","share":0.9605104925321549,"raw":52967075643},{"category":"cache read","measure":"share of spend","share":0.5332152001100228,"raw":26786.49},{"category":"output","measure":"share of tokens","share":0.005524146618670437,"raw":304627481},{"category":"output","measure":"share of spend","share":0.14891906885238784,"raw":7481.07}]
+[
+{
+"category": "fresh input",
+"measure": "share of tokens",
+"share": 0.001070957951670334
+},
+{
+"category": "fresh input",
+"measure": "share of spend",
+"share": 0.004712767301639547
+},
+{
+"category": "output",
+"measure": "share of tokens",
+"share": 0.005519662813468166
+},
+{
+"category": "output",
+"measure": "share of spend",
+"share": 0.148799652983456
+},
+{
+"category": "cache read",
+"measure": "share of tokens",
+"share": 0.9603609577439003
+},
+{
+"category": "cache read",
+"measure": "share of spend",
+"share": 0.5336577724120963
+},
+{
+"category": "cache write (5m)",
+"measure": "share of tokens",
+"share": 0.013170150149489397
+},
+{
+"category": "cache write (5m)",
+"measure": "share of spend",
+"share": 0.09587557682709671
+},
+{
+"category": "cache write (1h)",
+"measure": "share of tokens",
+"share": 0.019878271341471822
+},
+{
+"category": "cache write (1h)",
+"measure": "share of spend",
+"share": 0.21695423047571136
+}
+]

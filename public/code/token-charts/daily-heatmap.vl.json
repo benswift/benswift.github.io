@@ -43,22 +43,16 @@
   },
   "title": {
     "text": "Every day of agent use",
-    "subtitle": "Tokens per day, 3 July 2025 to 19 August 2026. Unfilled cells are days with no session at all."
-  },
-  "data": {
-    "url": "/code/token-charts/daily-heatmap.data.json",
-    "format": {
-      "type": "json"
-    }
+    "subtitle": "Tokens per day, 11 May 2025 to 20 August 2026. Unfilled cells are days with no session at all."
   },
   "transform": [
     {
-      "calculate": "datum.tokens === 0 ? 'none' : datum.millions < 20 ? 'under 20M' : datum.millions < 56 ? '20-56M' : datum.millions < 188 ? '56-188M' : 'over 188M'",
+      "calculate": "datum.tokens === 0 ? 'none' : datum.millions < 15.9 ? 'under 16M' : datum.millions < 49.2 ? '16-49M' : datum.millions < 158.3 ? '49-158M' : 'over 158M'",
       "as": "bin"
     }
   ],
   "width": 858,
-  "height": 105,
+  "height": 88,
   "mark": {
     "type": "rect",
     "cornerRadius": 2,
@@ -99,10 +93,10 @@
       "scale": {
         "domain": [
           "none",
-          "under 20M",
-          "20-56M",
-          "56-188M",
-          "over 188M"
+          "under 16M",
+          "16-49M",
+          "49-158M",
+          "over 158M"
         ],
         "range": [
           "#241f28",
@@ -134,5 +128,11 @@
         "format": ",.0f"
       }
     ]
+  },
+  "data": {
+    "url": "/code/token-charts/daily-heatmap.data.json",
+    "format": {
+      "type": "json"
+    }
   }
 }

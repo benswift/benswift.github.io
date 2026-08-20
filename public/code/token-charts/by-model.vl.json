@@ -45,12 +45,6 @@
     "text": "Tokens and indicative cost, by model",
     "subtitle": "Same ordering in both panels, with independent scales."
   },
-  "data": {
-    "url": "/code/token-charts/by-model.data.json",
-    "format": {
-      "type": "json"
-    }
-  },
   "facet": {
     "column": {
       "field": "measure",
@@ -94,7 +88,8 @@
           "Opus 4",
           "Haiku 4.5",
           "Sonnet 4.6",
-          "Sonnet 4"
+          "Sonnet 4",
+          "Sonnet 3.7"
         ],
         "axis": {
           "title": null,
@@ -136,6 +131,12 @@
           "format": ",.1f"
         }
       ]
+    }
+  },
+  "data": {
+    "url": "/code/token-charts/by-model.data.json",
+    "format": {
+      "type": "json"
     }
   }
 }

@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Per-response token usage, keyed by local calendar day, for the blog charts."""
+"""Per-response token usage, keyed by local calendar day, for the blog charts.
+
+Two trees are walked. ~/claude-logs is what Claude Code has written since
+3 July 2025; ~/zed-logs is the Zed era before it, back-filled into the same
+record shape by dotfiles/bin/import-zed-logs. Everything downstream reads one
+undifferentiated list of responses, which is the point: the question is how
+much work went through an agent, not which agent it was.
+"""
 
 from __future__ import annotations
 
@@ -11,7 +18,7 @@ from multiprocessing import Pool
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-ROOT = Path.home() / "claude-logs"
+ROOTS = (Path.home() / "claude-logs", Path.home() / "zed-logs")
 TZ = ZoneInfo("Australia/Sydney")
 
 
@@ -58,12 +65,14 @@ def scan(path: Path) -> dict[int, tuple]:
                 u.get("cache_read_input_tokens", 0) or 0,
                 w5 or 0,
                 w1 or 0,
+                rec.get("cwd"),
+                bool(rec.get("estimated")),
             )
     return out
 
 
 def main() -> None:
-    files = sorted(ROOT.glob("*/**/*.jsonl"))
+    files = sorted(path for root in ROOTS for path in root.glob("*/**/*.jsonl"))
     merged: dict[int, tuple] = {}
     with Pool(24) as pool:
         for chunk in pool.imap_unordered(scan, files, chunksize=16):

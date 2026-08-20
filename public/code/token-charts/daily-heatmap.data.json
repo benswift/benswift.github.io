@@ -1,1 +1,3271 @@
-[{"date":"2025-07-03","week":"2025-06-30","weekday":3,"tokens":59635717,"millions":59.6},{"date":"2025-07-04","week":"2025-06-30","weekday":4,"tokens":23835100,"millions":23.8},{"date":"2025-07-05","week":"2025-06-30","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-07-06","week":"2025-06-30","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-07-07","week":"2025-07-07","weekday":0,"tokens":72510588,"millions":72.5},{"date":"2025-07-08","week":"2025-07-07","weekday":1,"tokens":46467319,"millions":46.5},{"date":"2025-07-09","week":"2025-07-07","weekday":2,"tokens":15284697,"millions":15.3},{"date":"2025-07-10","week":"2025-07-07","weekday":3,"tokens":23868074,"millions":23.9},{"date":"2025-07-11","week":"2025-07-07","weekday":4,"tokens":69013259,"millions":69.0},{"date":"2025-07-12","week":"2025-07-07","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-07-13","week":"2025-07-07","weekday":6,"tokens":7186183,"millions":7.2},{"date":"2025-07-14","week":"2025-07-14","weekday":0,"tokens":44858544,"millions":44.9},{"date":"2025-07-15","week":"2025-07-14","weekday":1,"tokens":36979205,"millions":37.0},{"date":"2025-07-16","week":"2025-07-14","weekday":2,"tokens":32582423,"millions":32.6},{"date":"2025-07-17","week":"2025-07-14","weekday":3,"tokens":18678993,"millions":18.7},{"date":"2025-07-18","week":"2025-07-14","weekday":4,"tokens":0,"millions":0.0},{"date":"2025-07-19","week":"2025-07-14","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-07-20","week":"2025-07-14","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-07-21","week":"2025-07-21","weekday":0,"tokens":21594986,"millions":21.6},{"date":"2025-07-22","week":"2025-07-21","weekday":1,"tokens":11545416,"millions":11.5},{"date":"2025-07-23","week":"2025-07-21","weekday":2,"tokens":33008384,"millions":33.0},{"date":"2025-07-24","week":"2025-07-21","weekday":3,"tokens":25811137,"millions":25.8},{"date":"2025-07-25","week":"2025-07-21","weekday":4,"tokens":55268193,"millions":55.3},{"date":"2025-07-26","week":"2025-07-21","weekday":5,"tokens":39058557,"millions":39.1},{"date":"2025-07-27","week":"2025-07-21","weekday":6,"tokens":5972743,"millions":6.0},{"date":"2025-07-28","week":"2025-07-28","weekday":0,"tokens":18159932,"millions":18.2},{"date":"2025-07-29","week":"2025-07-28","weekday":1,"tokens":22686550,"millions":22.7},{"date":"2025-07-30","week":"2025-07-28","weekday":2,"tokens":47770735,"millions":47.8},{"date":"2025-07-31","week":"2025-07-28","weekday":3,"tokens":1546896,"millions":1.5},{"date":"2025-08-01","week":"2025-07-28","weekday":4,"tokens":16936151,"millions":16.9},{"date":"2025-08-02","week":"2025-07-28","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-08-03","week":"2025-07-28","weekday":6,"tokens":385886,"millions":0.4},{"date":"2025-08-04","week":"2025-08-04","weekday":0,"tokens":34191121,"millions":34.2},{"date":"2025-08-05","week":"2025-08-04","weekday":1,"tokens":38454460,"millions":38.5},{"date":"2025-08-06","week":"2025-08-04","weekday":2,"tokens":11917925,"millions":11.9},{"date":"2025-08-07","week":"2025-08-04","weekday":3,"tokens":36156458,"millions":36.2},{"date":"2025-08-08","week":"2025-08-04","weekday":4,"tokens":55925607,"millions":55.9},{"date":"2025-08-09","week":"2025-08-04","weekday":5,"tokens":6454590,"millions":6.5},{"date":"2025-08-10","week":"2025-08-04","weekday":6,"tokens":5814169,"millions":5.8},{"date":"2025-08-11","week":"2025-08-11","weekday":0,"tokens":41655607,"millions":41.7},{"date":"2025-08-12","week":"2025-08-11","weekday":1,"tokens":53224420,"millions":53.2},{"date":"2025-08-13","week":"2025-08-11","weekday":2,"tokens":64663778,"millions":64.7},{"date":"2025-08-14","week":"2025-08-11","weekday":3,"tokens":76837761,"millions":76.8},{"date":"2025-08-15","week":"2025-08-11","weekday":4,"tokens":102634127,"millions":102.6},{"date":"2025-08-16","week":"2025-08-11","weekday":5,"tokens":2566049,"millions":2.6},{"date":"2025-08-17","week":"2025-08-11","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-08-18","week":"2025-08-18","weekday":0,"tokens":23726997,"millions":23.7},{"date":"2025-08-19","week":"2025-08-18","weekday":1,"tokens":53056971,"millions":53.1},{"date":"2025-08-20","week":"2025-08-18","weekday":2,"tokens":89078909,"millions":89.1},{"date":"2025-08-21","week":"2025-08-18","weekday":3,"tokens":54799599,"millions":54.8},{"date":"2025-08-22","week":"2025-08-18","weekday":4,"tokens":19989539,"millions":20.0},{"date":"2025-08-23","week":"2025-08-18","weekday":5,"tokens":13596587,"millions":13.6},{"date":"2025-08-24","week":"2025-08-18","weekday":6,"tokens":5460814,"millions":5.5},{"date":"2025-08-25","week":"2025-08-25","weekday":0,"tokens":15248626,"millions":15.2},{"date":"2025-08-26","week":"2025-08-25","weekday":1,"tokens":18949224,"millions":18.9},{"date":"2025-08-27","week":"2025-08-25","weekday":2,"tokens":17896822,"millions":17.9},{"date":"2025-08-28","week":"2025-08-25","weekday":3,"tokens":45093517,"millions":45.1},{"date":"2025-08-29","week":"2025-08-25","weekday":4,"tokens":48004330,"millions":48.0},{"date":"2025-08-30","week":"2025-08-25","weekday":5,"tokens":5695442,"millions":5.7},{"date":"2025-08-31","week":"2025-08-25","weekday":6,"tokens":7826521,"millions":7.8},{"date":"2025-09-01","week":"2025-09-01","weekday":0,"tokens":12323751,"millions":12.3},{"date":"2025-09-02","week":"2025-09-01","weekday":1,"tokens":18275458,"millions":18.3},{"date":"2025-09-03","week":"2025-09-01","weekday":2,"tokens":61307405,"millions":61.3},{"date":"2025-09-04","week":"2025-09-01","weekday":3,"tokens":44823021,"millions":44.8},{"date":"2025-09-05","week":"2025-09-01","weekday":4,"tokens":5385013,"millions":5.4},{"date":"2025-09-06","week":"2025-09-01","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-09-07","week":"2025-09-01","weekday":6,"tokens":2450391,"millions":2.5},{"date":"2025-09-08","week":"2025-09-08","weekday":0,"tokens":617793,"millions":0.6},{"date":"2025-09-09","week":"2025-09-08","weekday":1,"tokens":21042029,"millions":21.0},{"date":"2025-09-10","week":"2025-09-08","weekday":2,"tokens":24592691,"millions":24.6},{"date":"2025-09-11","week":"2025-09-08","weekday":3,"tokens":31009066,"millions":31.0},{"date":"2025-09-12","week":"2025-09-08","weekday":4,"tokens":32575576,"millions":32.6},{"date":"2025-09-13","week":"2025-09-08","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-09-14","week":"2025-09-08","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-09-15","week":"2025-09-15","weekday":0,"tokens":6636185,"millions":6.6},{"date":"2025-09-16","week":"2025-09-15","weekday":1,"tokens":27452596,"millions":27.5},{"date":"2025-09-17","week":"2025-09-15","weekday":2,"tokens":20269292,"millions":20.3},{"date":"2025-09-18","week":"2025-09-15","weekday":3,"tokens":46925194,"millions":46.9},{"date":"2025-09-19","week":"2025-09-15","weekday":4,"tokens":19303469,"millions":19.3},{"date":"2025-09-20","week":"2025-09-15","weekday":5,"tokens":31730781,"millions":31.7},{"date":"2025-09-21","week":"2025-09-15","weekday":6,"tokens":2611661,"millions":2.6},{"date":"2025-09-22","week":"2025-09-22","weekday":0,"tokens":16089248,"millions":16.1},{"date":"2025-09-23","week":"2025-09-22","weekday":1,"tokens":13822574,"millions":13.8},{"date":"2025-09-24","week":"2025-09-22","weekday":2,"tokens":23222998,"millions":23.2},{"date":"2025-09-25","week":"2025-09-22","weekday":3,"tokens":49715123,"millions":49.7},{"date":"2025-09-26","week":"2025-09-22","weekday":4,"tokens":32708825,"millions":32.7},{"date":"2025-09-27","week":"2025-09-22","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-09-28","week":"2025-09-22","weekday":6,"tokens":53790,"millions":0.1},{"date":"2025-09-29","week":"2025-09-29","weekday":0,"tokens":2245470,"millions":2.2},{"date":"2025-09-30","week":"2025-09-29","weekday":1,"tokens":9635453,"millions":9.6},{"date":"2025-10-01","week":"2025-09-29","weekday":2,"tokens":12221811,"millions":12.2},{"date":"2025-10-02","week":"2025-09-29","weekday":3,"tokens":27763201,"millions":27.8},{"date":"2025-10-03","week":"2025-09-29","weekday":4,"tokens":9765173,"millions":9.8},{"date":"2025-10-04","week":"2025-09-29","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-10-05","week":"2025-09-29","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-10-06","week":"2025-10-06","weekday":0,"tokens":153285,"millions":0.2},{"date":"2025-10-07","week":"2025-10-06","weekday":1,"tokens":21832773,"millions":21.8},{"date":"2025-10-08","week":"2025-10-06","weekday":2,"tokens":32376201,"millions":32.4},{"date":"2025-10-09","week":"2025-10-06","weekday":3,"tokens":14500488,"millions":14.5},{"date":"2025-10-10","week":"2025-10-06","weekday":4,"tokens":18905744,"millions":18.9},{"date":"2025-10-11","week":"2025-10-06","weekday":5,"tokens":25721728,"millions":25.7},{"date":"2025-10-12","week":"2025-10-06","weekday":6,"tokens":1114290,"millions":1.1},{"date":"2025-10-13","week":"2025-10-13","weekday":0,"tokens":8622870,"millions":8.6},{"date":"2025-10-14","week":"2025-10-13","weekday":1,"tokens":584659,"millions":0.6},{"date":"2025-10-15","week":"2025-10-13","weekday":2,"tokens":0,"millions":0.0},{"date":"2025-10-16","week":"2025-10-13","weekday":3,"tokens":4989992,"millions":5.0},{"date":"2025-10-17","week":"2025-10-13","weekday":4,"tokens":3154318,"millions":3.2},{"date":"2025-10-18","week":"2025-10-13","weekday":5,"tokens":17391965,"millions":17.4},{"date":"2025-10-19","week":"2025-10-13","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-10-20","week":"2025-10-20","weekday":0,"tokens":1755910,"millions":1.8},{"date":"2025-10-21","week":"2025-10-20","weekday":1,"tokens":9767160,"millions":9.8},{"date":"2025-10-22","week":"2025-10-20","weekday":2,"tokens":63704097,"millions":63.7},{"date":"2025-10-23","week":"2025-10-20","weekday":3,"tokens":22108958,"millions":22.1},{"date":"2025-10-24","week":"2025-10-20","weekday":4,"tokens":122003632,"millions":122.0},{"date":"2025-10-25","week":"2025-10-20","weekday":5,"tokens":50435491,"millions":50.4},{"date":"2025-10-26","week":"2025-10-20","weekday":6,"tokens":10426919,"millions":10.4},{"date":"2025-10-27","week":"2025-10-27","weekday":0,"tokens":25664770,"millions":25.7},{"date":"2025-10-28","week":"2025-10-27","weekday":1,"tokens":54240044,"millions":54.2},{"date":"2025-10-29","week":"2025-10-27","weekday":2,"tokens":16824537,"millions":16.8},{"date":"2025-10-30","week":"2025-10-27","weekday":3,"tokens":3943840,"millions":3.9},{"date":"2025-10-31","week":"2025-10-27","weekday":4,"tokens":15963946,"millions":16.0},{"date":"2025-11-01","week":"2025-10-27","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-11-02","week":"2025-10-27","weekday":6,"tokens":8698386,"millions":8.7},{"date":"2025-11-03","week":"2025-11-03","weekday":0,"tokens":24420556,"millions":24.4},{"date":"2025-11-04","week":"2025-11-03","weekday":1,"tokens":20652584,"millions":20.7},{"date":"2025-11-05","week":"2025-11-03","weekday":2,"tokens":69861767,"millions":69.9},{"date":"2025-11-06","week":"2025-11-03","weekday":3,"tokens":13964543,"millions":14.0},{"date":"2025-11-07","week":"2025-11-03","weekday":4,"tokens":5464733,"millions":5.5},{"date":"2025-11-08","week":"2025-11-03","weekday":5,"tokens":2341566,"millions":2.3},{"date":"2025-11-09","week":"2025-11-03","weekday":6,"tokens":9762477,"millions":9.8},{"date":"2025-11-10","week":"2025-11-10","weekday":0,"tokens":46430826,"millions":46.4},{"date":"2025-11-11","week":"2025-11-10","weekday":1,"tokens":42769318,"millions":42.8},{"date":"2025-11-12","week":"2025-11-10","weekday":2,"tokens":26241638,"millions":26.2},{"date":"2025-11-13","week":"2025-11-10","weekday":3,"tokens":10103701,"millions":10.1},{"date":"2025-11-14","week":"2025-11-10","weekday":4,"tokens":19727336,"millions":19.7},{"date":"2025-11-15","week":"2025-11-10","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-11-16","week":"2025-11-10","weekday":6,"tokens":965720,"millions":1.0},{"date":"2025-11-17","week":"2025-11-17","weekday":0,"tokens":6979769,"millions":7.0},{"date":"2025-11-18","week":"2025-11-17","weekday":1,"tokens":36021262,"millions":36.0},{"date":"2025-11-19","week":"2025-11-17","weekday":2,"tokens":19926920,"millions":19.9},{"date":"2025-11-20","week":"2025-11-17","weekday":3,"tokens":59134630,"millions":59.1},{"date":"2025-11-21","week":"2025-11-17","weekday":4,"tokens":36197056,"millions":36.2},{"date":"2025-11-22","week":"2025-11-17","weekday":5,"tokens":2860770,"millions":2.9},{"date":"2025-11-23","week":"2025-11-17","weekday":6,"tokens":3201789,"millions":3.2},{"date":"2025-11-24","week":"2025-11-24","weekday":0,"tokens":12479203,"millions":12.5},{"date":"2025-11-25","week":"2025-11-24","weekday":1,"tokens":34689517,"millions":34.7},{"date":"2025-11-26","week":"2025-11-24","weekday":2,"tokens":55774508,"millions":55.8},{"date":"2025-11-27","week":"2025-11-24","weekday":3,"tokens":43125443,"millions":43.1},{"date":"2025-11-28","week":"2025-11-24","weekday":4,"tokens":15777879,"millions":15.8},{"date":"2025-11-29","week":"2025-11-24","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-11-30","week":"2025-11-24","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-12-01","week":"2025-12-01","weekday":0,"tokens":56862017,"millions":56.9},{"date":"2025-12-02","week":"2025-12-01","weekday":1,"tokens":48923036,"millions":48.9},{"date":"2025-12-03","week":"2025-12-01","weekday":2,"tokens":86187305,"millions":86.2},{"date":"2025-12-04","week":"2025-12-01","weekday":3,"tokens":12829234,"millions":12.8},{"date":"2025-12-05","week":"2025-12-01","weekday":4,"tokens":15135191,"millions":15.1},{"date":"2025-12-06","week":"2025-12-01","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-12-07","week":"2025-12-01","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-12-08","week":"2025-12-08","weekday":0,"tokens":23154689,"millions":23.2},{"date":"2025-12-09","week":"2025-12-08","weekday":1,"tokens":25034754,"millions":25.0},{"date":"2025-12-10","week":"2025-12-08","weekday":2,"tokens":42712299,"millions":42.7},{"date":"2025-12-11","week":"2025-12-08","weekday":3,"tokens":49198944,"millions":49.2},{"date":"2025-12-12","week":"2025-12-08","weekday":4,"tokens":24729522,"millions":24.7},{"date":"2025-12-13","week":"2025-12-08","weekday":5,"tokens":4415764,"millions":4.4},{"date":"2025-12-14","week":"2025-12-08","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-12-15","week":"2025-12-15","weekday":0,"tokens":25479244,"millions":25.5},{"date":"2025-12-16","week":"2025-12-15","weekday":1,"tokens":75829668,"millions":75.8},{"date":"2025-12-17","week":"2025-12-15","weekday":2,"tokens":97799440,"millions":97.8},{"date":"2025-12-18","week":"2025-12-15","weekday":3,"tokens":84749655,"millions":84.7},{"date":"2025-12-19","week":"2025-12-15","weekday":4,"tokens":32737117,"millions":32.7},{"date":"2025-12-20","week":"2025-12-15","weekday":5,"tokens":56172891,"millions":56.2},{"date":"2025-12-21","week":"2025-12-15","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-12-22","week":"2025-12-22","weekday":0,"tokens":141929567,"millions":141.9},{"date":"2025-12-23","week":"2025-12-22","weekday":1,"tokens":61229451,"millions":61.2},{"date":"2025-12-24","week":"2025-12-22","weekday":2,"tokens":24531582,"millions":24.5},{"date":"2025-12-25","week":"2025-12-22","weekday":3,"tokens":1527872,"millions":1.5},{"date":"2025-12-26","week":"2025-12-22","weekday":4,"tokens":0,"millions":0.0},{"date":"2025-12-27","week":"2025-12-22","weekday":5,"tokens":0,"millions":0.0},{"date":"2025-12-28","week":"2025-12-22","weekday":6,"tokens":0,"millions":0.0},{"date":"2025-12-29","week":"2025-12-29","weekday":0,"tokens":0,"millions":0.0},{"date":"2025-12-30","week":"2025-12-29","weekday":1,"tokens":0,"millions":0.0},{"date":"2025-12-31","week":"2025-12-29","weekday":2,"tokens":0,"millions":0.0},{"date":"2026-01-01","week":"2025-12-29","weekday":3,"tokens":0,"millions":0.0},{"date":"2026-01-02","week":"2025-12-29","weekday":4,"tokens":0,"millions":0.0},{"date":"2026-01-03","week":"2025-12-29","weekday":5,"tokens":0,"millions":0.0},{"date":"2026-01-04","week":"2025-12-29","weekday":6,"tokens":0,"millions":0.0},{"date":"2026-01-05","week":"2026-01-05","weekday":0,"tokens":0,"millions":0.0},{"date":"2026-01-06","week":"2026-01-05","weekday":1,"tokens":0,"millions":0.0},{"date":"2026-01-07","week":"2026-01-05","weekday":2,"tokens":0,"millions":0.0},{"date":"2026-01-08","week":"2026-01-05","weekday":3,"tokens":0,"millions":0.0},{"date":"2026-01-09","week":"2026-01-05","weekday":4,"tokens":0,"millions":0.0},{"date":"2026-01-10","week":"2026-01-05","weekday":5,"tokens":0,"millions":0.0},{"date":"2026-01-11","week":"2026-01-05","weekday":6,"tokens":0,"millions":0.0},{"date":"2026-01-12","week":"2026-01-12","weekday":0,"tokens":0,"millions":0.0},{"date":"2026-01-13","week":"2026-01-12","weekday":1,"tokens":0,"millions":0.0},{"date":"2026-01-14","week":"2026-01-12","weekday":2,"tokens":0,"millions":0.0},{"date":"2026-01-15","week":"2026-01-12","weekday":3,"tokens":0,"millions":0.0},{"date":"2026-01-16","week":"2026-01-12","weekday":4,"tokens":0,"millions":0.0},{"date":"2026-01-17","week":"2026-01-12","weekday":5,"tokens":0,"millions":0.0},{"date":"2026-01-18","week":"2026-01-12","weekday":6,"tokens":0,"millions":0.0},{"date":"2026-01-19","week":"2026-01-19","weekday":0,"tokens":0,"millions":0.0},{"date":"2026-01-20","week":"2026-01-19","weekday":1,"tokens":0,"millions":0.0},{"date":"2026-01-21","week":"2026-01-19","weekday":2,"tokens":0,"millions":0.0},{"date":"2026-01-22","week":"2026-01-19","weekday":3,"tokens":0,"millions":0.0},{"date":"2026-01-23","week":"2026-01-19","weekday":4,"tokens":0,"millions":0.0},{"date":"2026-01-24","week":"2026-01-19","weekday":5,"tokens":0,"millions":0.0},{"date":"2026-01-25","week":"2026-01-19","weekday":6,"tokens":0,"millions":0.0},{"date":"2026-01-26","week":"2026-01-26","weekday":0,"tokens":0,"millions":0.0},{"date":"2026-01-27","week":"2026-01-26","weekday":1,"tokens":40671422,"millions":40.7},{"date":"2026-01-28","week":"2026-01-26","weekday":2,"tokens":28922442,"millions":28.9},{"date":"2026-01-29","week":"2026-01-26","weekday":3,"tokens":10690093,"millions":10.7},{"date":"2026-01-30","week":"2026-01-26","weekday":4,"tokens":0,"millions":0.0},{"date":"2026-01-31","week":"2026-01-26","weekday":5,"tokens":8194316,"millions":8.2},{"date":"2026-02-01","week":"2026-01-26","weekday":6,"tokens":0,"millions":0.0},{"date":"2026-02-02","week":"2026-02-02","weekday":0,"tokens":61043336,"millions":61.0},{"date":"2026-02-03","week":"2026-02-02","weekday":1,"tokens":77080859,"millions":77.1},{"date":"2026-02-04","week":"2026-02-02","weekday":2,"tokens":73116567,"millions":73.1},{"date":"2026-02-05","week":"2026-02-02","weekday":3,"tokens":67971619,"millions":68.0},{"date":"2026-02-06","week":"2026-02-02","weekday":4,"tokens":65719702,"millions":65.7},{"date":"2026-02-07","week":"2026-02-02","weekday":5,"tokens":113592098,"millions":113.6},{"date":"2026-02-08","week":"2026-02-02","weekday":6,"tokens":14867013,"millions":14.9},{"date":"2026-02-09","week":"2026-02-09","weekday":0,"tokens":20413282,"millions":20.4},{"date":"2026-02-10","week":"2026-02-09","weekday":1,"tokens":31778231,"millions":31.8},{"date":"2026-02-11","week":"2026-02-09","weekday":2,"tokens":9335923,"millions":9.3},{"date":"2026-02-12","week":"2026-02-09","weekday":3,"tokens":25980834,"millions":26.0},{"date":"2026-02-13","week":"2026-02-09","weekday":4,"tokens":729721,"millions":0.7},{"date":"2026-02-14","week":"2026-02-09","weekday":5,"tokens":196824,"millions":0.2},{"date":"2026-02-15","week":"2026-02-09","weekday":6,"tokens":0,"millions":0.0},{"date":"2026-02-16","week":"2026-02-16","weekday":0,"tokens":3771627,"millions":3.8},{"date":"2026-02-17","week":"2026-02-16","weekday":1,"tokens":96211472,"millions":96.2},{"date":"2026-02-18","week":"2026-02-16","weekday":2,"tokens":113585482,"millions":113.6},{"date":"2026-02-19","week":"2026-02-16","weekday":3,"tokens":239433089,"millions":239.4},{"date":"2026-02-20","week":"2026-02-16","weekday":4,"tokens":113856973,"millions":113.9},{"date":"2026-02-21","week":"2026-02-16","weekday":5,"tokens":36799420,"millions":36.8},{"date":"2026-02-22","week":"2026-02-16","weekday":6,"tokens":14645330,"millions":14.6},{"date":"2026-02-23","week":"2026-02-23","weekday":0,"tokens":125520939,"millions":125.5},{"date":"2026-02-24","week":"2026-02-23","weekday":1,"tokens":118148891,"millions":118.1},{"date":"2026-02-25","week":"2026-02-23","weekday":2,"tokens":62119973,"millions":62.1},{"date":"2026-02-26","week":"2026-02-23","weekday":3,"tokens":72793446,"millions":72.8},{"date":"2026-02-27","week":"2026-02-23","weekday":4,"tokens":274758939,"millions":274.8},{"date":"2026-02-28","week":"2026-02-23","weekday":5,"tokens":126155715,"millions":126.2},{"date":"2026-03-01","week":"2026-02-23","weekday":6,"tokens":321862200,"millions":321.9},{"date":"2026-03-02","week":"2026-03-02","weekday":0,"tokens":86424687,"millions":86.4},{"date":"2026-03-03","week":"2026-03-02","weekday":1,"tokens":49930180,"millions":49.9},{"date":"2026-03-04","week":"2026-03-02","weekday":2,"tokens":114037184,"millions":114.0},{"date":"2026-03-05","week":"2026-03-02","weekday":3,"tokens":55145218,"millions":55.1},{"date":"2026-03-06","week":"2026-03-02","weekday":4,"tokens":26609603,"millions":26.6},{"date":"2026-03-07","week":"2026-03-02","weekday":5,"tokens":1404374,"millions":1.4},{"date":"2026-03-08","week":"2026-03-02","weekday":6,"tokens":87324,"millions":0.1},{"date":"2026-03-09","week":"2026-03-09","weekday":0,"tokens":1091183,"millions":1.1},{"date":"2026-03-10","week":"2026-03-09","weekday":1,"tokens":54055327,"millions":54.1},{"date":"2026-03-11","week":"2026-03-09","weekday":2,"tokens":149011939,"millions":149.0},{"date":"2026-03-12","week":"2026-03-09","weekday":3,"tokens":67423359,"millions":67.4},{"date":"2026-03-13","week":"2026-03-09","weekday":4,"tokens":59673655,"millions":59.7},{"date":"2026-03-14","week":"2026-03-09","weekday":5,"tokens":35055003,"millions":35.1},{"date":"2026-03-15","week":"2026-03-09","weekday":6,"tokens":31090226,"millions":31.1},{"date":"2026-03-16","week":"2026-03-16","weekday":0,"tokens":26751418,"millions":26.8},{"date":"2026-03-17","week":"2026-03-16","weekday":1,"tokens":21697853,"millions":21.7},{"date":"2026-03-18","week":"2026-03-16","weekday":2,"tokens":30412219,"millions":30.4},{"date":"2026-03-19","week":"2026-03-16","weekday":3,"tokens":49467169,"millions":49.5},{"date":"2026-03-20","week":"2026-03-16","weekday":4,"tokens":26888423,"millions":26.9},{"date":"2026-03-21","week":"2026-03-16","weekday":5,"tokens":35620911,"millions":35.6},{"date":"2026-03-22","week":"2026-03-16","weekday":6,"tokens":3454310,"millions":3.5},{"date":"2026-03-23","week":"2026-03-23","weekday":0,"tokens":25241181,"millions":25.2},{"date":"2026-03-24","week":"2026-03-23","weekday":1,"tokens":17213565,"millions":17.2},{"date":"2026-03-25","week":"2026-03-23","weekday":2,"tokens":50013415,"millions":50.0},{"date":"2026-03-26","week":"2026-03-23","weekday":3,"tokens":44577656,"millions":44.6},{"date":"2026-03-27","week":"2026-03-23","weekday":4,"tokens":120616248,"millions":120.6},{"date":"2026-03-28","week":"2026-03-23","weekday":5,"tokens":20108936,"millions":20.1},{"date":"2026-03-29","week":"2026-03-23","weekday":6,"tokens":77710090,"millions":77.7},{"date":"2026-03-30","week":"2026-03-30","weekday":0,"tokens":69709997,"millions":69.7},{"date":"2026-03-31","week":"2026-03-30","weekday":1,"tokens":145913515,"millions":145.9},{"date":"2026-04-01","week":"2026-03-30","weekday":2,"tokens":80841880,"millions":80.8},{"date":"2026-04-02","week":"2026-03-30","weekday":3,"tokens":67021042,"millions":67.0},{"date":"2026-04-03","week":"2026-03-30","weekday":4,"tokens":143112200,"millions":143.1},{"date":"2026-04-04","week":"2026-03-30","weekday":5,"tokens":71975199,"millions":72.0},{"date":"2026-04-05","week":"2026-03-30","weekday":6,"tokens":17787703,"millions":17.8},{"date":"2026-04-06","week":"2026-04-06","weekday":0,"tokens":61158791,"millions":61.2},{"date":"2026-04-07","week":"2026-04-06","weekday":1,"tokens":158320598,"millions":158.3},{"date":"2026-04-08","week":"2026-04-06","weekday":2,"tokens":216652157,"millions":216.7},{"date":"2026-04-09","week":"2026-04-06","weekday":3,"tokens":309152939,"millions":309.2},{"date":"2026-04-10","week":"2026-04-06","weekday":4,"tokens":494504221,"millions":494.5},{"date":"2026-04-11","week":"2026-04-06","weekday":5,"tokens":175231738,"millions":175.2},{"date":"2026-04-12","week":"2026-04-06","weekday":6,"tokens":117836752,"millions":117.8},{"date":"2026-04-13","week":"2026-04-13","weekday":0,"tokens":203184826,"millions":203.2},{"date":"2026-04-14","week":"2026-04-13","weekday":1,"tokens":118986984,"millions":119.0},{"date":"2026-04-15","week":"2026-04-13","weekday":2,"tokens":129560420,"millions":129.6},{"date":"2026-04-16","week":"2026-04-13","weekday":3,"tokens":152263519,"millions":152.3},{"date":"2026-04-17","week":"2026-04-13","weekday":4,"tokens":185212652,"millions":185.2},{"date":"2026-04-18","week":"2026-04-13","weekday":5,"tokens":158461051,"millions":158.5},{"date":"2026-04-19","week":"2026-04-13","weekday":6,"tokens":123483026,"millions":123.5},{"date":"2026-04-20","week":"2026-04-20","weekday":0,"tokens":175623306,"millions":175.6},{"date":"2026-04-21","week":"2026-04-20","weekday":1,"tokens":42461676,"millions":42.5},{"date":"2026-04-22","week":"2026-04-20","weekday":2,"tokens":185999222,"millions":186.0},{"date":"2026-04-23","week":"2026-04-20","weekday":3,"tokens":143486418,"millions":143.5},{"date":"2026-04-24","week":"2026-04-20","weekday":4,"tokens":217994609,"millions":218.0},{"date":"2026-04-25","week":"2026-04-20","weekday":5,"tokens":157094130,"millions":157.1},{"date":"2026-04-26","week":"2026-04-20","weekday":6,"tokens":126777162,"millions":126.8},{"date":"2026-04-27","week":"2026-04-27","weekday":0,"tokens":4025481,"millions":4.0},{"date":"2026-04-28","week":"2026-04-27","weekday":1,"tokens":236939068,"millions":236.9},{"date":"2026-04-29","week":"2026-04-27","weekday":2,"tokens":370402634,"millions":370.4},{"date":"2026-04-30","week":"2026-04-27","weekday":3,"tokens":332346795,"millions":332.3},{"date":"2026-05-01","week":"2026-04-27","weekday":4,"tokens":366226776,"millions":366.2},{"date":"2026-05-02","week":"2026-04-27","weekday":5,"tokens":20676913,"millions":20.7},{"date":"2026-05-03","week":"2026-04-27","weekday":6,"tokens":11166917,"millions":11.2},{"date":"2026-05-04","week":"2026-05-04","weekday":0,"tokens":186779552,"millions":186.8},{"date":"2026-05-05","week":"2026-05-04","weekday":1,"tokens":383619063,"millions":383.6},{"date":"2026-05-06","week":"2026-05-04","weekday":2,"tokens":296265885,"millions":296.3},{"date":"2026-05-07","week":"2026-05-04","weekday":3,"tokens":124135165,"millions":124.1},{"date":"2026-05-08","week":"2026-05-04","weekday":4,"tokens":310708576,"millions":310.7},{"date":"2026-05-09","week":"2026-05-04","weekday":5,"tokens":36849758,"millions":36.8},{"date":"2026-05-10","week":"2026-05-04","weekday":6,"tokens":20549000,"millions":20.5},{"date":"2026-05-11","week":"2026-05-11","weekday":0,"tokens":127680484,"millions":127.7},{"date":"2026-05-12","week":"2026-05-11","weekday":1,"tokens":284304620,"millions":284.3},{"date":"2026-05-13","week":"2026-05-11","weekday":2,"tokens":250018023,"millions":250.0},{"date":"2026-05-14","week":"2026-05-11","weekday":3,"tokens":79994708,"millions":80.0},{"date":"2026-05-15","week":"2026-05-11","weekday":4,"tokens":231957452,"millions":232.0},{"date":"2026-05-16","week":"2026-05-11","weekday":5,"tokens":131276601,"millions":131.3},{"date":"2026-05-17","week":"2026-05-11","weekday":6,"tokens":102099652,"millions":102.1},{"date":"2026-05-18","week":"2026-05-18","weekday":0,"tokens":362801092,"millions":362.8},{"date":"2026-05-19","week":"2026-05-18","weekday":1,"tokens":211170119,"millions":211.2},{"date":"2026-05-20","week":"2026-05-18","weekday":2,"tokens":200131767,"millions":200.1},{"date":"2026-05-21","week":"2026-05-18","weekday":3,"tokens":158271130,"millions":158.3},{"date":"2026-05-22","week":"2026-05-18","weekday":4,"tokens":158150270,"millions":158.2},{"date":"2026-05-23","week":"2026-05-18","weekday":5,"tokens":214924512,"millions":214.9},{"date":"2026-05-24","week":"2026-05-18","weekday":6,"tokens":44173680,"millions":44.2},{"date":"2026-05-25","week":"2026-05-25","weekday":0,"tokens":157724207,"millions":157.7},{"date":"2026-05-26","week":"2026-05-25","weekday":1,"tokens":224928909,"millions":224.9},{"date":"2026-05-27","week":"2026-05-25","weekday":2,"tokens":117729097,"millions":117.7},{"date":"2026-05-28","week":"2026-05-25","weekday":3,"tokens":107858371,"millions":107.9},{"date":"2026-05-29","week":"2026-05-25","weekday":4,"tokens":285497317,"millions":285.5},{"date":"2026-05-30","week":"2026-05-25","weekday":5,"tokens":93485495,"millions":93.5},{"date":"2026-05-31","week":"2026-05-25","weekday":6,"tokens":115470682,"millions":115.5},{"date":"2026-06-01","week":"2026-06-01","weekday":0,"tokens":51092557,"millions":51.1},{"date":"2026-06-02","week":"2026-06-01","weekday":1,"tokens":122749599,"millions":122.7},{"date":"2026-06-03","week":"2026-06-01","weekday":2,"tokens":757526980,"millions":757.5},{"date":"2026-06-04","week":"2026-06-01","weekday":3,"tokens":301806538,"millions":301.8},{"date":"2026-06-05","week":"2026-06-01","weekday":4,"tokens":268810160,"millions":268.8},{"date":"2026-06-06","week":"2026-06-01","weekday":5,"tokens":168360706,"millions":168.4},{"date":"2026-06-07","week":"2026-06-01","weekday":6,"tokens":295470304,"millions":295.5},{"date":"2026-06-08","week":"2026-06-08","weekday":0,"tokens":364619258,"millions":364.6},{"date":"2026-06-09","week":"2026-06-08","weekday":1,"tokens":519963454,"millions":520.0},{"date":"2026-06-10","week":"2026-06-08","weekday":2,"tokens":902903984,"millions":902.9},{"date":"2026-06-11","week":"2026-06-08","weekday":3,"tokens":152584407,"millions":152.6},{"date":"2026-06-12","week":"2026-06-08","weekday":4,"tokens":47395287,"millions":47.4},{"date":"2026-06-13","week":"2026-06-08","weekday":5,"tokens":65008481,"millions":65.0},{"date":"2026-06-14","week":"2026-06-08","weekday":6,"tokens":50685929,"millions":50.7},{"date":"2026-06-15","week":"2026-06-15","weekday":0,"tokens":141921666,"millions":141.9},{"date":"2026-06-16","week":"2026-06-15","weekday":1,"tokens":204533168,"millions":204.5},{"date":"2026-06-17","week":"2026-06-15","weekday":2,"tokens":617631382,"millions":617.6},{"date":"2026-06-18","week":"2026-06-15","weekday":3,"tokens":304886453,"millions":304.9},{"date":"2026-06-19","week":"2026-06-15","weekday":4,"tokens":345325274,"millions":345.3},{"date":"2026-06-20","week":"2026-06-15","weekday":5,"tokens":306070165,"millions":306.1},{"date":"2026-06-21","week":"2026-06-15","weekday":6,"tokens":150688596,"millions":150.7},{"date":"2026-06-22","week":"2026-06-22","weekday":0,"tokens":271842680,"millions":271.8},{"date":"2026-06-23","week":"2026-06-22","weekday":1,"tokens":283428178,"millions":283.4},{"date":"2026-06-24","week":"2026-06-22","weekday":2,"tokens":229644335,"millions":229.6},{"date":"2026-06-25","week":"2026-06-22","weekday":3,"tokens":220015341,"millions":220.0},{"date":"2026-06-26","week":"2026-06-22","weekday":4,"tokens":195113325,"millions":195.1},{"date":"2026-06-27","week":"2026-06-22","weekday":5,"tokens":187737638,"millions":187.7},{"date":"2026-06-28","week":"2026-06-22","weekday":6,"tokens":96589927,"millions":96.6},{"date":"2026-06-29","week":"2026-06-29","weekday":0,"tokens":84019484,"millions":84.0},{"date":"2026-06-30","week":"2026-06-29","weekday":1,"tokens":58257855,"millions":58.3},{"date":"2026-07-01","week":"2026-06-29","weekday":2,"tokens":260161457,"millions":260.2},{"date":"2026-07-02","week":"2026-06-29","weekday":3,"tokens":190071280,"millions":190.1},{"date":"2026-07-03","week":"2026-06-29","weekday":4,"tokens":401452281,"millions":401.5},{"date":"2026-07-04","week":"2026-06-29","weekday":5,"tokens":239404811,"millions":239.4},{"date":"2026-07-05","week":"2026-06-29","weekday":6,"tokens":112363920,"millions":112.4},{"date":"2026-07-06","week":"2026-07-06","weekday":0,"tokens":312644037,"millions":312.6},{"date":"2026-07-07","week":"2026-07-06","weekday":1,"tokens":526198708,"millions":526.2},{"date":"2026-07-08","week":"2026-07-06","weekday":2,"tokens":540109257,"millions":540.1},{"date":"2026-07-09","week":"2026-07-06","weekday":3,"tokens":852447597,"millions":852.4},{"date":"2026-07-10","week":"2026-07-06","weekday":4,"tokens":671406607,"millions":671.4},{"date":"2026-07-11","week":"2026-07-06","weekday":5,"tokens":589711922,"millions":589.7},{"date":"2026-07-12","week":"2026-07-06","weekday":6,"tokens":580475297,"millions":580.5},{"date":"2026-07-13","week":"2026-07-13","weekday":0,"tokens":730253287,"millions":730.3},{"date":"2026-07-14","week":"2026-07-13","weekday":1,"tokens":660472011,"millions":660.5},{"date":"2026-07-15","week":"2026-07-13","weekday":2,"tokens":553378417,"millions":553.4},{"date":"2026-07-16","week":"2026-07-13","weekday":3,"tokens":883264677,"millions":883.3},{"date":"2026-07-17","week":"2026-07-13","weekday":4,"tokens":630913218,"millions":630.9},{"date":"2026-07-18","week":"2026-07-13","weekday":5,"tokens":474631081,"millions":474.6},{"date":"2026-07-19","week":"2026-07-13","weekday":6,"tokens":533641821,"millions":533.6},{"date":"2026-07-20","week":"2026-07-20","weekday":0,"tokens":693250965,"millions":693.3},{"date":"2026-07-21","week":"2026-07-20","weekday":1,"tokens":669006769,"millions":669.0},{"date":"2026-07-22","week":"2026-07-20","weekday":2,"tokens":703675850,"millions":703.7},{"date":"2026-07-23","week":"2026-07-20","weekday":3,"tokens":852459594,"millions":852.5},{"date":"2026-07-24","week":"2026-07-20","weekday":4,"tokens":341205157,"millions":341.2},{"date":"2026-07-25","week":"2026-07-20","weekday":5,"tokens":576079631,"millions":576.1},{"date":"2026-07-26","week":"2026-07-20","weekday":6,"tokens":505849953,"millions":505.8},{"date":"2026-07-27","week":"2026-07-27","weekday":0,"tokens":281223144,"millions":281.2},{"date":"2026-07-28","week":"2026-07-27","weekday":1,"tokens":870776460,"millions":870.8},{"date":"2026-07-29","week":"2026-07-27","weekday":2,"tokens":1015720261,"millions":1015.7},{"date":"2026-07-30","week":"2026-07-27","weekday":3,"tokens":860650430,"millions":860.7},{"date":"2026-07-31","week":"2026-07-27","weekday":4,"tokens":817475102,"millions":817.5},{"date":"2026-08-01","week":"2026-07-27","weekday":5,"tokens":503410296,"millions":503.4},{"date":"2026-08-02","week":"2026-07-27","weekday":6,"tokens":134018541,"millions":134.0},{"date":"2026-08-03","week":"2026-08-03","weekday":0,"tokens":139584065,"millions":139.6},{"date":"2026-08-04","week":"2026-08-03","weekday":1,"tokens":853191711,"millions":853.2},{"date":"2026-08-05","week":"2026-08-03","weekday":2,"tokens":551657057,"millions":551.7},{"date":"2026-08-06","week":"2026-08-03","weekday":3,"tokens":643523862,"millions":643.5},{"date":"2026-08-07","week":"2026-08-03","weekday":4,"tokens":697168052,"millions":697.2},{"date":"2026-08-08","week":"2026-08-03","weekday":5,"tokens":637712952,"millions":637.7},{"date":"2026-08-09","week":"2026-08-03","weekday":6,"tokens":462984954,"millions":463.0},{"date":"2026-08-10","week":"2026-08-10","weekday":0,"tokens":547395413,"millions":547.4},{"date":"2026-08-11","week":"2026-08-10","weekday":1,"tokens":702137051,"millions":702.1},{"date":"2026-08-12","week":"2026-08-10","weekday":2,"tokens":709147360,"millions":709.1},{"date":"2026-08-13","week":"2026-08-10","weekday":3,"tokens":645315667,"millions":645.3},{"date":"2026-08-14","week":"2026-08-10","weekday":4,"tokens":361283722,"millions":361.3},{"date":"2026-08-15","week":"2026-08-10","weekday":5,"tokens":341094365,"millions":341.1},{"date":"2026-08-16","week":"2026-08-10","weekday":6,"tokens":651780029,"millions":651.8},{"date":"2026-08-17","week":"2026-08-17","weekday":0,"tokens":794964084,"millions":795.0},{"date":"2026-08-18","week":"2026-08-17","weekday":1,"tokens":687506898,"millions":687.5},{"date":"2026-08-19","week":"2026-08-17","weekday":2,"tokens":688737404,"millions":688.7}]
+[
+{
+"date": "2025-05-11",
+"week": "2025-05-05",
+"weekday": 6,
+"tokens": 7663346,
+"millions": 7.7
+},
+{
+"date": "2025-05-12",
+"week": "2025-05-12",
+"weekday": 0,
+"tokens": 21614,
+"millions": 0.0
+},
+{
+"date": "2025-05-13",
+"week": "2025-05-12",
+"weekday": 1,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-14",
+"week": "2025-05-12",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-15",
+"week": "2025-05-12",
+"weekday": 3,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-16",
+"week": "2025-05-12",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-17",
+"week": "2025-05-12",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-18",
+"week": "2025-05-12",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-19",
+"week": "2025-05-19",
+"weekday": 0,
+"tokens": 18826629,
+"millions": 18.8
+},
+{
+"date": "2025-05-20",
+"week": "2025-05-19",
+"weekday": 1,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-21",
+"week": "2025-05-19",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-22",
+"week": "2025-05-19",
+"weekday": 3,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-23",
+"week": "2025-05-19",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-24",
+"week": "2025-05-19",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-25",
+"week": "2025-05-19",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-26",
+"week": "2025-05-26",
+"weekday": 0,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-27",
+"week": "2025-05-26",
+"weekday": 1,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-28",
+"week": "2025-05-26",
+"weekday": 2,
+"tokens": 1666268,
+"millions": 1.7
+},
+{
+"date": "2025-05-29",
+"week": "2025-05-26",
+"weekday": 3,
+"tokens": 1711607,
+"millions": 1.7
+},
+{
+"date": "2025-05-30",
+"week": "2025-05-26",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-05-31",
+"week": "2025-05-26",
+"weekday": 5,
+"tokens": 3368098,
+"millions": 3.4
+},
+{
+"date": "2025-06-01",
+"week": "2025-05-26",
+"weekday": 6,
+"tokens": 112725,
+"millions": 0.1
+},
+{
+"date": "2025-06-02",
+"week": "2025-06-02",
+"weekday": 0,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-06-03",
+"week": "2025-06-02",
+"weekday": 1,
+"tokens": 6510458,
+"millions": 6.5
+},
+{
+"date": "2025-06-04",
+"week": "2025-06-02",
+"weekday": 2,
+"tokens": 4787813,
+"millions": 4.8
+},
+{
+"date": "2025-06-05",
+"week": "2025-06-02",
+"weekday": 3,
+"tokens": 13579382,
+"millions": 13.6
+},
+{
+"date": "2025-06-06",
+"week": "2025-06-02",
+"weekday": 4,
+"tokens": 9160098,
+"millions": 9.2
+},
+{
+"date": "2025-06-07",
+"week": "2025-06-02",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-06-08",
+"week": "2025-06-02",
+"weekday": 6,
+"tokens": 6151365,
+"millions": 6.2
+},
+{
+"date": "2025-06-09",
+"week": "2025-06-09",
+"weekday": 0,
+"tokens": 998735,
+"millions": 1.0
+},
+{
+"date": "2025-06-10",
+"week": "2025-06-09",
+"weekday": 1,
+"tokens": 5019125,
+"millions": 5.0
+},
+{
+"date": "2025-06-11",
+"week": "2025-06-09",
+"weekday": 2,
+"tokens": 6534954,
+"millions": 6.5
+},
+{
+"date": "2025-06-12",
+"week": "2025-06-09",
+"weekday": 3,
+"tokens": 9027635,
+"millions": 9.0
+},
+{
+"date": "2025-06-13",
+"week": "2025-06-09",
+"weekday": 4,
+"tokens": 25488214,
+"millions": 25.5
+},
+{
+"date": "2025-06-14",
+"week": "2025-06-09",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-06-15",
+"week": "2025-06-09",
+"weekday": 6,
+"tokens": 1777790,
+"millions": 1.8
+},
+{
+"date": "2025-06-16",
+"week": "2025-06-16",
+"weekday": 0,
+"tokens": 7467883,
+"millions": 7.5
+},
+{
+"date": "2025-06-17",
+"week": "2025-06-16",
+"weekday": 1,
+"tokens": 5950394,
+"millions": 6.0
+},
+{
+"date": "2025-06-18",
+"week": "2025-06-16",
+"weekday": 2,
+"tokens": 7315806,
+"millions": 7.3
+},
+{
+"date": "2025-06-19",
+"week": "2025-06-16",
+"weekday": 3,
+"tokens": 13056665,
+"millions": 13.1
+},
+{
+"date": "2025-06-20",
+"week": "2025-06-16",
+"weekday": 4,
+"tokens": 39596349,
+"millions": 39.6
+},
+{
+"date": "2025-06-21",
+"week": "2025-06-16",
+"weekday": 5,
+"tokens": 24622551,
+"millions": 24.6
+},
+{
+"date": "2025-06-22",
+"week": "2025-06-16",
+"weekday": 6,
+"tokens": 14602600,
+"millions": 14.6
+},
+{
+"date": "2025-06-23",
+"week": "2025-06-23",
+"weekday": 0,
+"tokens": 14303788,
+"millions": 14.3
+},
+{
+"date": "2025-06-24",
+"week": "2025-06-23",
+"weekday": 1,
+"tokens": 4038229,
+"millions": 4.0
+},
+{
+"date": "2025-06-25",
+"week": "2025-06-23",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-06-26",
+"week": "2025-06-23",
+"weekday": 3,
+"tokens": 258838,
+"millions": 0.3
+},
+{
+"date": "2025-06-27",
+"week": "2025-06-23",
+"weekday": 4,
+"tokens": 180073,
+"millions": 0.2
+},
+{
+"date": "2025-06-28",
+"week": "2025-06-23",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-06-29",
+"week": "2025-06-23",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-06-30",
+"week": "2025-06-30",
+"weekday": 0,
+"tokens": 15520875,
+"millions": 15.5
+},
+{
+"date": "2025-07-01",
+"week": "2025-06-30",
+"weekday": 1,
+"tokens": 2194382,
+"millions": 2.2
+},
+{
+"date": "2025-07-02",
+"week": "2025-06-30",
+"weekday": 2,
+"tokens": 473104,
+"millions": 0.5
+},
+{
+"date": "2025-07-03",
+"week": "2025-06-30",
+"weekday": 3,
+"tokens": 59677002,
+"millions": 59.7
+},
+{
+"date": "2025-07-04",
+"week": "2025-06-30",
+"weekday": 4,
+"tokens": 23835100,
+"millions": 23.8
+},
+{
+"date": "2025-07-05",
+"week": "2025-06-30",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-07-06",
+"week": "2025-06-30",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-07-07",
+"week": "2025-07-07",
+"weekday": 0,
+"tokens": 72510588,
+"millions": 72.5
+},
+{
+"date": "2025-07-08",
+"week": "2025-07-07",
+"weekday": 1,
+"tokens": 46467319,
+"millions": 46.5
+},
+{
+"date": "2025-07-09",
+"week": "2025-07-07",
+"weekday": 2,
+"tokens": 15284697,
+"millions": 15.3
+},
+{
+"date": "2025-07-10",
+"week": "2025-07-07",
+"weekday": 3,
+"tokens": 23868074,
+"millions": 23.9
+},
+{
+"date": "2025-07-11",
+"week": "2025-07-07",
+"weekday": 4,
+"tokens": 69013259,
+"millions": 69.0
+},
+{
+"date": "2025-07-12",
+"week": "2025-07-07",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-07-13",
+"week": "2025-07-07",
+"weekday": 6,
+"tokens": 7186183,
+"millions": 7.2
+},
+{
+"date": "2025-07-14",
+"week": "2025-07-14",
+"weekday": 0,
+"tokens": 44858544,
+"millions": 44.9
+},
+{
+"date": "2025-07-15",
+"week": "2025-07-14",
+"weekday": 1,
+"tokens": 39358506,
+"millions": 39.4
+},
+{
+"date": "2025-07-16",
+"week": "2025-07-14",
+"weekday": 2,
+"tokens": 30203122,
+"millions": 30.2
+},
+{
+"date": "2025-07-17",
+"week": "2025-07-14",
+"weekday": 3,
+"tokens": 18678993,
+"millions": 18.7
+},
+{
+"date": "2025-07-18",
+"week": "2025-07-14",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-07-19",
+"week": "2025-07-14",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-07-20",
+"week": "2025-07-14",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-07-21",
+"week": "2025-07-21",
+"weekday": 0,
+"tokens": 21594986,
+"millions": 21.6
+},
+{
+"date": "2025-07-22",
+"week": "2025-07-21",
+"weekday": 1,
+"tokens": 11545416,
+"millions": 11.5
+},
+{
+"date": "2025-07-23",
+"week": "2025-07-21",
+"weekday": 2,
+"tokens": 33008384,
+"millions": 33.0
+},
+{
+"date": "2025-07-24",
+"week": "2025-07-21",
+"weekday": 3,
+"tokens": 25811137,
+"millions": 25.8
+},
+{
+"date": "2025-07-25",
+"week": "2025-07-21",
+"weekday": 4,
+"tokens": 55268193,
+"millions": 55.3
+},
+{
+"date": "2025-07-26",
+"week": "2025-07-21",
+"weekday": 5,
+"tokens": 39058557,
+"millions": 39.1
+},
+{
+"date": "2025-07-27",
+"week": "2025-07-21",
+"weekday": 6,
+"tokens": 5972743,
+"millions": 6.0
+},
+{
+"date": "2025-07-28",
+"week": "2025-07-28",
+"weekday": 0,
+"tokens": 18159932,
+"millions": 18.2
+},
+{
+"date": "2025-07-29",
+"week": "2025-07-28",
+"weekday": 1,
+"tokens": 22686550,
+"millions": 22.7
+},
+{
+"date": "2025-07-30",
+"week": "2025-07-28",
+"weekday": 2,
+"tokens": 47770735,
+"millions": 47.8
+},
+{
+"date": "2025-07-31",
+"week": "2025-07-28",
+"weekday": 3,
+"tokens": 1546896,
+"millions": 1.5
+},
+{
+"date": "2025-08-01",
+"week": "2025-07-28",
+"weekday": 4,
+"tokens": 16936151,
+"millions": 16.9
+},
+{
+"date": "2025-08-02",
+"week": "2025-07-28",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-08-03",
+"week": "2025-07-28",
+"weekday": 6,
+"tokens": 385886,
+"millions": 0.4
+},
+{
+"date": "2025-08-04",
+"week": "2025-08-04",
+"weekday": 0,
+"tokens": 34190638,
+"millions": 34.2
+},
+{
+"date": "2025-08-05",
+"week": "2025-08-04",
+"weekday": 1,
+"tokens": 38454460,
+"millions": 38.5
+},
+{
+"date": "2025-08-06",
+"week": "2025-08-04",
+"weekday": 2,
+"tokens": 11633949,
+"millions": 11.6
+},
+{
+"date": "2025-08-07",
+"week": "2025-08-04",
+"weekday": 3,
+"tokens": 36440434,
+"millions": 36.4
+},
+{
+"date": "2025-08-08",
+"week": "2025-08-04",
+"weekday": 4,
+"tokens": 55925607,
+"millions": 55.9
+},
+{
+"date": "2025-08-09",
+"week": "2025-08-04",
+"weekday": 5,
+"tokens": 6454590,
+"millions": 6.5
+},
+{
+"date": "2025-08-10",
+"week": "2025-08-04",
+"weekday": 6,
+"tokens": 5814169,
+"millions": 5.8
+},
+{
+"date": "2025-08-11",
+"week": "2025-08-11",
+"weekday": 0,
+"tokens": 41655607,
+"millions": 41.7
+},
+{
+"date": "2025-08-12",
+"week": "2025-08-11",
+"weekday": 1,
+"tokens": 53224420,
+"millions": 53.2
+},
+{
+"date": "2025-08-13",
+"week": "2025-08-11",
+"weekday": 2,
+"tokens": 64663778,
+"millions": 64.7
+},
+{
+"date": "2025-08-14",
+"week": "2025-08-11",
+"weekday": 3,
+"tokens": 76837761,
+"millions": 76.8
+},
+{
+"date": "2025-08-15",
+"week": "2025-08-11",
+"weekday": 4,
+"tokens": 102634127,
+"millions": 102.6
+},
+{
+"date": "2025-08-16",
+"week": "2025-08-11",
+"weekday": 5,
+"tokens": 2566049,
+"millions": 2.6
+},
+{
+"date": "2025-08-17",
+"week": "2025-08-11",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-08-18",
+"week": "2025-08-18",
+"weekday": 0,
+"tokens": 23726997,
+"millions": 23.7
+},
+{
+"date": "2025-08-19",
+"week": "2025-08-18",
+"weekday": 1,
+"tokens": 53056971,
+"millions": 53.1
+},
+{
+"date": "2025-08-20",
+"week": "2025-08-18",
+"weekday": 2,
+"tokens": 89078909,
+"millions": 89.1
+},
+{
+"date": "2025-08-21",
+"week": "2025-08-18",
+"weekday": 3,
+"tokens": 54799599,
+"millions": 54.8
+},
+{
+"date": "2025-08-22",
+"week": "2025-08-18",
+"weekday": 4,
+"tokens": 19989539,
+"millions": 20.0
+},
+{
+"date": "2025-08-23",
+"week": "2025-08-18",
+"weekday": 5,
+"tokens": 13596587,
+"millions": 13.6
+},
+{
+"date": "2025-08-24",
+"week": "2025-08-18",
+"weekday": 6,
+"tokens": 5460814,
+"millions": 5.5
+},
+{
+"date": "2025-08-25",
+"week": "2025-08-25",
+"weekday": 0,
+"tokens": 15248626,
+"millions": 15.2
+},
+{
+"date": "2025-08-26",
+"week": "2025-08-25",
+"weekday": 1,
+"tokens": 18949224,
+"millions": 18.9
+},
+{
+"date": "2025-08-27",
+"week": "2025-08-25",
+"weekday": 2,
+"tokens": 17896822,
+"millions": 17.9
+},
+{
+"date": "2025-08-28",
+"week": "2025-08-25",
+"weekday": 3,
+"tokens": 45093517,
+"millions": 45.1
+},
+{
+"date": "2025-08-29",
+"week": "2025-08-25",
+"weekday": 4,
+"tokens": 48004330,
+"millions": 48.0
+},
+{
+"date": "2025-08-30",
+"week": "2025-08-25",
+"weekday": 5,
+"tokens": 5695442,
+"millions": 5.7
+},
+{
+"date": "2025-08-31",
+"week": "2025-08-25",
+"weekday": 6,
+"tokens": 7826521,
+"millions": 7.8
+},
+{
+"date": "2025-09-01",
+"week": "2025-09-01",
+"weekday": 0,
+"tokens": 12323751,
+"millions": 12.3
+},
+{
+"date": "2025-09-02",
+"week": "2025-09-01",
+"weekday": 1,
+"tokens": 18275458,
+"millions": 18.3
+},
+{
+"date": "2025-09-03",
+"week": "2025-09-01",
+"weekday": 2,
+"tokens": 61307405,
+"millions": 61.3
+},
+{
+"date": "2025-09-04",
+"week": "2025-09-01",
+"weekday": 3,
+"tokens": 44823021,
+"millions": 44.8
+},
+{
+"date": "2025-09-05",
+"week": "2025-09-01",
+"weekday": 4,
+"tokens": 5385013,
+"millions": 5.4
+},
+{
+"date": "2025-09-06",
+"week": "2025-09-01",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-09-07",
+"week": "2025-09-01",
+"weekday": 6,
+"tokens": 2450391,
+"millions": 2.5
+},
+{
+"date": "2025-09-08",
+"week": "2025-09-08",
+"weekday": 0,
+"tokens": 617793,
+"millions": 0.6
+},
+{
+"date": "2025-09-09",
+"week": "2025-09-08",
+"weekday": 1,
+"tokens": 21042029,
+"millions": 21.0
+},
+{
+"date": "2025-09-10",
+"week": "2025-09-08",
+"weekday": 2,
+"tokens": 24592691,
+"millions": 24.6
+},
+{
+"date": "2025-09-11",
+"week": "2025-09-08",
+"weekday": 3,
+"tokens": 31009066,
+"millions": 31.0
+},
+{
+"date": "2025-09-12",
+"week": "2025-09-08",
+"weekday": 4,
+"tokens": 32575576,
+"millions": 32.6
+},
+{
+"date": "2025-09-13",
+"week": "2025-09-08",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-09-14",
+"week": "2025-09-08",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-09-15",
+"week": "2025-09-15",
+"weekday": 0,
+"tokens": 6636185,
+"millions": 6.6
+},
+{
+"date": "2025-09-16",
+"week": "2025-09-15",
+"weekday": 1,
+"tokens": 27452596,
+"millions": 27.5
+},
+{
+"date": "2025-09-17",
+"week": "2025-09-15",
+"weekday": 2,
+"tokens": 20269292,
+"millions": 20.3
+},
+{
+"date": "2025-09-18",
+"week": "2025-09-15",
+"weekday": 3,
+"tokens": 46925194,
+"millions": 46.9
+},
+{
+"date": "2025-09-19",
+"week": "2025-09-15",
+"weekday": 4,
+"tokens": 19303469,
+"millions": 19.3
+},
+{
+"date": "2025-09-20",
+"week": "2025-09-15",
+"weekday": 5,
+"tokens": 31921868,
+"millions": 31.9
+},
+{
+"date": "2025-09-21",
+"week": "2025-09-15",
+"weekday": 6,
+"tokens": 2611661,
+"millions": 2.6
+},
+{
+"date": "2025-09-22",
+"week": "2025-09-22",
+"weekday": 0,
+"tokens": 15898161,
+"millions": 15.9
+},
+{
+"date": "2025-09-23",
+"week": "2025-09-22",
+"weekday": 1,
+"tokens": 13822574,
+"millions": 13.8
+},
+{
+"date": "2025-09-24",
+"week": "2025-09-22",
+"weekday": 2,
+"tokens": 23222998,
+"millions": 23.2
+},
+{
+"date": "2025-09-25",
+"week": "2025-09-22",
+"weekday": 3,
+"tokens": 49715123,
+"millions": 49.7
+},
+{
+"date": "2025-09-26",
+"week": "2025-09-22",
+"weekday": 4,
+"tokens": 32708825,
+"millions": 32.7
+},
+{
+"date": "2025-09-27",
+"week": "2025-09-22",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-09-28",
+"week": "2025-09-22",
+"weekday": 6,
+"tokens": 53790,
+"millions": 0.1
+},
+{
+"date": "2025-09-29",
+"week": "2025-09-29",
+"weekday": 0,
+"tokens": 2245470,
+"millions": 2.2
+},
+{
+"date": "2025-09-30",
+"week": "2025-09-29",
+"weekday": 1,
+"tokens": 9635453,
+"millions": 9.6
+},
+{
+"date": "2025-10-01",
+"week": "2025-09-29",
+"weekday": 2,
+"tokens": 12221811,
+"millions": 12.2
+},
+{
+"date": "2025-10-02",
+"week": "2025-09-29",
+"weekday": 3,
+"tokens": 27763201,
+"millions": 27.8
+},
+{
+"date": "2025-10-03",
+"week": "2025-09-29",
+"weekday": 4,
+"tokens": 9765173,
+"millions": 9.8
+},
+{
+"date": "2025-10-04",
+"week": "2025-09-29",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-10-05",
+"week": "2025-09-29",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-10-06",
+"week": "2025-10-06",
+"weekday": 0,
+"tokens": 153285,
+"millions": 0.2
+},
+{
+"date": "2025-10-07",
+"week": "2025-10-06",
+"weekday": 1,
+"tokens": 21832773,
+"millions": 21.8
+},
+{
+"date": "2025-10-08",
+"week": "2025-10-06",
+"weekday": 2,
+"tokens": 32376201,
+"millions": 32.4
+},
+{
+"date": "2025-10-09",
+"week": "2025-10-06",
+"weekday": 3,
+"tokens": 14500488,
+"millions": 14.5
+},
+{
+"date": "2025-10-10",
+"week": "2025-10-06",
+"weekday": 4,
+"tokens": 18905744,
+"millions": 18.9
+},
+{
+"date": "2025-10-11",
+"week": "2025-10-06",
+"weekday": 5,
+"tokens": 25721728,
+"millions": 25.7
+},
+{
+"date": "2025-10-12",
+"week": "2025-10-06",
+"weekday": 6,
+"tokens": 1114290,
+"millions": 1.1
+},
+{
+"date": "2025-10-13",
+"week": "2025-10-13",
+"weekday": 0,
+"tokens": 8622870,
+"millions": 8.6
+},
+{
+"date": "2025-10-14",
+"week": "2025-10-13",
+"weekday": 1,
+"tokens": 584659,
+"millions": 0.6
+},
+{
+"date": "2025-10-15",
+"week": "2025-10-13",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-10-16",
+"week": "2025-10-13",
+"weekday": 3,
+"tokens": 4989992,
+"millions": 5.0
+},
+{
+"date": "2025-10-17",
+"week": "2025-10-13",
+"weekday": 4,
+"tokens": 3154318,
+"millions": 3.2
+},
+{
+"date": "2025-10-18",
+"week": "2025-10-13",
+"weekday": 5,
+"tokens": 17391965,
+"millions": 17.4
+},
+{
+"date": "2025-10-19",
+"week": "2025-10-13",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-10-20",
+"week": "2025-10-20",
+"weekday": 0,
+"tokens": 1755910,
+"millions": 1.8
+},
+{
+"date": "2025-10-21",
+"week": "2025-10-20",
+"weekday": 1,
+"tokens": 9767160,
+"millions": 9.8
+},
+{
+"date": "2025-10-22",
+"week": "2025-10-20",
+"weekday": 2,
+"tokens": 63704097,
+"millions": 63.7
+},
+{
+"date": "2025-10-23",
+"week": "2025-10-20",
+"weekday": 3,
+"tokens": 22108958,
+"millions": 22.1
+},
+{
+"date": "2025-10-24",
+"week": "2025-10-20",
+"weekday": 4,
+"tokens": 122003632,
+"millions": 122.0
+},
+{
+"date": "2025-10-25",
+"week": "2025-10-20",
+"weekday": 5,
+"tokens": 50435491,
+"millions": 50.4
+},
+{
+"date": "2025-10-26",
+"week": "2025-10-20",
+"weekday": 6,
+"tokens": 10426919,
+"millions": 10.4
+},
+{
+"date": "2025-10-27",
+"week": "2025-10-27",
+"weekday": 0,
+"tokens": 25664770,
+"millions": 25.7
+},
+{
+"date": "2025-10-28",
+"week": "2025-10-27",
+"weekday": 1,
+"tokens": 54240044,
+"millions": 54.2
+},
+{
+"date": "2025-10-29",
+"week": "2025-10-27",
+"weekday": 2,
+"tokens": 16824537,
+"millions": 16.8
+},
+{
+"date": "2025-10-30",
+"week": "2025-10-27",
+"weekday": 3,
+"tokens": 3943840,
+"millions": 3.9
+},
+{
+"date": "2025-10-31",
+"week": "2025-10-27",
+"weekday": 4,
+"tokens": 15963946,
+"millions": 16.0
+},
+{
+"date": "2025-11-01",
+"week": "2025-10-27",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-11-02",
+"week": "2025-10-27",
+"weekday": 6,
+"tokens": 8698386,
+"millions": 8.7
+},
+{
+"date": "2025-11-03",
+"week": "2025-11-03",
+"weekday": 0,
+"tokens": 24420556,
+"millions": 24.4
+},
+{
+"date": "2025-11-04",
+"week": "2025-11-03",
+"weekday": 1,
+"tokens": 20652584,
+"millions": 20.7
+},
+{
+"date": "2025-11-05",
+"week": "2025-11-03",
+"weekday": 2,
+"tokens": 69861767,
+"millions": 69.9
+},
+{
+"date": "2025-11-06",
+"week": "2025-11-03",
+"weekday": 3,
+"tokens": 13964543,
+"millions": 14.0
+},
+{
+"date": "2025-11-07",
+"week": "2025-11-03",
+"weekday": 4,
+"tokens": 5464733,
+"millions": 5.5
+},
+{
+"date": "2025-11-08",
+"week": "2025-11-03",
+"weekday": 5,
+"tokens": 2341566,
+"millions": 2.3
+},
+{
+"date": "2025-11-09",
+"week": "2025-11-03",
+"weekday": 6,
+"tokens": 9762477,
+"millions": 9.8
+},
+{
+"date": "2025-11-10",
+"week": "2025-11-10",
+"weekday": 0,
+"tokens": 46430826,
+"millions": 46.4
+},
+{
+"date": "2025-11-11",
+"week": "2025-11-10",
+"weekday": 1,
+"tokens": 42769318,
+"millions": 42.8
+},
+{
+"date": "2025-11-12",
+"week": "2025-11-10",
+"weekday": 2,
+"tokens": 26241638,
+"millions": 26.2
+},
+{
+"date": "2025-11-13",
+"week": "2025-11-10",
+"weekday": 3,
+"tokens": 10103701,
+"millions": 10.1
+},
+{
+"date": "2025-11-14",
+"week": "2025-11-10",
+"weekday": 4,
+"tokens": 19727336,
+"millions": 19.7
+},
+{
+"date": "2025-11-15",
+"week": "2025-11-10",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-11-16",
+"week": "2025-11-10",
+"weekday": 6,
+"tokens": 965720,
+"millions": 1.0
+},
+{
+"date": "2025-11-17",
+"week": "2025-11-17",
+"weekday": 0,
+"tokens": 6979769,
+"millions": 7.0
+},
+{
+"date": "2025-11-18",
+"week": "2025-11-17",
+"weekday": 1,
+"tokens": 36021262,
+"millions": 36.0
+},
+{
+"date": "2025-11-19",
+"week": "2025-11-17",
+"weekday": 2,
+"tokens": 19926920,
+"millions": 19.9
+},
+{
+"date": "2025-11-20",
+"week": "2025-11-17",
+"weekday": 3,
+"tokens": 59134630,
+"millions": 59.1
+},
+{
+"date": "2025-11-21",
+"week": "2025-11-17",
+"weekday": 4,
+"tokens": 36197056,
+"millions": 36.2
+},
+{
+"date": "2025-11-22",
+"week": "2025-11-17",
+"weekday": 5,
+"tokens": 2860770,
+"millions": 2.9
+},
+{
+"date": "2025-11-23",
+"week": "2025-11-17",
+"weekday": 6,
+"tokens": 3201789,
+"millions": 3.2
+},
+{
+"date": "2025-11-24",
+"week": "2025-11-24",
+"weekday": 0,
+"tokens": 12479203,
+"millions": 12.5
+},
+{
+"date": "2025-11-25",
+"week": "2025-11-24",
+"weekday": 1,
+"tokens": 34689517,
+"millions": 34.7
+},
+{
+"date": "2025-11-26",
+"week": "2025-11-24",
+"weekday": 2,
+"tokens": 55774508,
+"millions": 55.8
+},
+{
+"date": "2025-11-27",
+"week": "2025-11-24",
+"weekday": 3,
+"tokens": 43125443,
+"millions": 43.1
+},
+{
+"date": "2025-11-28",
+"week": "2025-11-24",
+"weekday": 4,
+"tokens": 15777879,
+"millions": 15.8
+},
+{
+"date": "2025-11-29",
+"week": "2025-11-24",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-11-30",
+"week": "2025-11-24",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-01",
+"week": "2025-12-01",
+"weekday": 0,
+"tokens": 56862017,
+"millions": 56.9
+},
+{
+"date": "2025-12-02",
+"week": "2025-12-01",
+"weekday": 1,
+"tokens": 48923036,
+"millions": 48.9
+},
+{
+"date": "2025-12-03",
+"week": "2025-12-01",
+"weekday": 2,
+"tokens": 86187305,
+"millions": 86.2
+},
+{
+"date": "2025-12-04",
+"week": "2025-12-01",
+"weekday": 3,
+"tokens": 12829234,
+"millions": 12.8
+},
+{
+"date": "2025-12-05",
+"week": "2025-12-01",
+"weekday": 4,
+"tokens": 15135191,
+"millions": 15.1
+},
+{
+"date": "2025-12-06",
+"week": "2025-12-01",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-07",
+"week": "2025-12-01",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-08",
+"week": "2025-12-08",
+"weekday": 0,
+"tokens": 23154689,
+"millions": 23.2
+},
+{
+"date": "2025-12-09",
+"week": "2025-12-08",
+"weekday": 1,
+"tokens": 25034754,
+"millions": 25.0
+},
+{
+"date": "2025-12-10",
+"week": "2025-12-08",
+"weekday": 2,
+"tokens": 42712299,
+"millions": 42.7
+},
+{
+"date": "2025-12-11",
+"week": "2025-12-08",
+"weekday": 3,
+"tokens": 49198944,
+"millions": 49.2
+},
+{
+"date": "2025-12-12",
+"week": "2025-12-08",
+"weekday": 4,
+"tokens": 24729522,
+"millions": 24.7
+},
+{
+"date": "2025-12-13",
+"week": "2025-12-08",
+"weekday": 5,
+"tokens": 4415764,
+"millions": 4.4
+},
+{
+"date": "2025-12-14",
+"week": "2025-12-08",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-15",
+"week": "2025-12-15",
+"weekday": 0,
+"tokens": 25479244,
+"millions": 25.5
+},
+{
+"date": "2025-12-16",
+"week": "2025-12-15",
+"weekday": 1,
+"tokens": 75829668,
+"millions": 75.8
+},
+{
+"date": "2025-12-17",
+"week": "2025-12-15",
+"weekday": 2,
+"tokens": 97799440,
+"millions": 97.8
+},
+{
+"date": "2025-12-18",
+"week": "2025-12-15",
+"weekday": 3,
+"tokens": 84749655,
+"millions": 84.7
+},
+{
+"date": "2025-12-19",
+"week": "2025-12-15",
+"weekday": 4,
+"tokens": 32737117,
+"millions": 32.7
+},
+{
+"date": "2025-12-20",
+"week": "2025-12-15",
+"weekday": 5,
+"tokens": 56172891,
+"millions": 56.2
+},
+{
+"date": "2025-12-21",
+"week": "2025-12-15",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-22",
+"week": "2025-12-22",
+"weekday": 0,
+"tokens": 141929567,
+"millions": 141.9
+},
+{
+"date": "2025-12-23",
+"week": "2025-12-22",
+"weekday": 1,
+"tokens": 61229451,
+"millions": 61.2
+},
+{
+"date": "2025-12-24",
+"week": "2025-12-22",
+"weekday": 2,
+"tokens": 24531582,
+"millions": 24.5
+},
+{
+"date": "2025-12-25",
+"week": "2025-12-22",
+"weekday": 3,
+"tokens": 1527872,
+"millions": 1.5
+},
+{
+"date": "2025-12-26",
+"week": "2025-12-22",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-27",
+"week": "2025-12-22",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-28",
+"week": "2025-12-22",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-29",
+"week": "2025-12-29",
+"weekday": 0,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-30",
+"week": "2025-12-29",
+"weekday": 1,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2025-12-31",
+"week": "2025-12-29",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-01",
+"week": "2025-12-29",
+"weekday": 3,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-02",
+"week": "2025-12-29",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-03",
+"week": "2025-12-29",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-04",
+"week": "2025-12-29",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-05",
+"week": "2026-01-05",
+"weekday": 0,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-06",
+"week": "2026-01-05",
+"weekday": 1,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-07",
+"week": "2026-01-05",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-08",
+"week": "2026-01-05",
+"weekday": 3,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-09",
+"week": "2026-01-05",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-10",
+"week": "2026-01-05",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-11",
+"week": "2026-01-05",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-12",
+"week": "2026-01-12",
+"weekday": 0,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-13",
+"week": "2026-01-12",
+"weekday": 1,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-14",
+"week": "2026-01-12",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-15",
+"week": "2026-01-12",
+"weekday": 3,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-16",
+"week": "2026-01-12",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-17",
+"week": "2026-01-12",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-18",
+"week": "2026-01-12",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-19",
+"week": "2026-01-19",
+"weekday": 0,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-20",
+"week": "2026-01-19",
+"weekday": 1,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-21",
+"week": "2026-01-19",
+"weekday": 2,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-22",
+"week": "2026-01-19",
+"weekday": 3,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-23",
+"week": "2026-01-19",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-24",
+"week": "2026-01-19",
+"weekday": 5,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-25",
+"week": "2026-01-19",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-26",
+"week": "2026-01-26",
+"weekday": 0,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-27",
+"week": "2026-01-26",
+"weekday": 1,
+"tokens": 40671422,
+"millions": 40.7
+},
+{
+"date": "2026-01-28",
+"week": "2026-01-26",
+"weekday": 2,
+"tokens": 28922442,
+"millions": 28.9
+},
+{
+"date": "2026-01-29",
+"week": "2026-01-26",
+"weekday": 3,
+"tokens": 10690093,
+"millions": 10.7
+},
+{
+"date": "2026-01-30",
+"week": "2026-01-26",
+"weekday": 4,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-01-31",
+"week": "2026-01-26",
+"weekday": 5,
+"tokens": 8194316,
+"millions": 8.2
+},
+{
+"date": "2026-02-01",
+"week": "2026-01-26",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-02-02",
+"week": "2026-02-02",
+"weekday": 0,
+"tokens": 61043336,
+"millions": 61.0
+},
+{
+"date": "2026-02-03",
+"week": "2026-02-02",
+"weekday": 1,
+"tokens": 77080859,
+"millions": 77.1
+},
+{
+"date": "2026-02-04",
+"week": "2026-02-02",
+"weekday": 2,
+"tokens": 73116567,
+"millions": 73.1
+},
+{
+"date": "2026-02-05",
+"week": "2026-02-02",
+"weekday": 3,
+"tokens": 67971619,
+"millions": 68.0
+},
+{
+"date": "2026-02-06",
+"week": "2026-02-02",
+"weekday": 4,
+"tokens": 65719702,
+"millions": 65.7
+},
+{
+"date": "2026-02-07",
+"week": "2026-02-02",
+"weekday": 5,
+"tokens": 113592098,
+"millions": 113.6
+},
+{
+"date": "2026-02-08",
+"week": "2026-02-02",
+"weekday": 6,
+"tokens": 14867013,
+"millions": 14.9
+},
+{
+"date": "2026-02-09",
+"week": "2026-02-09",
+"weekday": 0,
+"tokens": 20413282,
+"millions": 20.4
+},
+{
+"date": "2026-02-10",
+"week": "2026-02-09",
+"weekday": 1,
+"tokens": 31778231,
+"millions": 31.8
+},
+{
+"date": "2026-02-11",
+"week": "2026-02-09",
+"weekday": 2,
+"tokens": 9335923,
+"millions": 9.3
+},
+{
+"date": "2026-02-12",
+"week": "2026-02-09",
+"weekday": 3,
+"tokens": 25980834,
+"millions": 26.0
+},
+{
+"date": "2026-02-13",
+"week": "2026-02-09",
+"weekday": 4,
+"tokens": 729721,
+"millions": 0.7
+},
+{
+"date": "2026-02-14",
+"week": "2026-02-09",
+"weekday": 5,
+"tokens": 196824,
+"millions": 0.2
+},
+{
+"date": "2026-02-15",
+"week": "2026-02-09",
+"weekday": 6,
+"tokens": 0,
+"millions": 0.0
+},
+{
+"date": "2026-02-16",
+"week": "2026-02-16",
+"weekday": 0,
+"tokens": 3771627,
+"millions": 3.8
+},
+{
+"date": "2026-02-17",
+"week": "2026-02-16",
+"weekday": 1,
+"tokens": 96211472,
+"millions": 96.2
+},
+{
+"date": "2026-02-18",
+"week": "2026-02-16",
+"weekday": 2,
+"tokens": 113585482,
+"millions": 113.6
+},
+{
+"date": "2026-02-19",
+"week": "2026-02-16",
+"weekday": 3,
+"tokens": 239433089,
+"millions": 239.4
+},
+{
+"date": "2026-02-20",
+"week": "2026-02-16",
+"weekday": 4,
+"tokens": 113856973,
+"millions": 113.9
+},
+{
+"date": "2026-02-21",
+"week": "2026-02-16",
+"weekday": 5,
+"tokens": 36799420,
+"millions": 36.8
+},
+{
+"date": "2026-02-22",
+"week": "2026-02-16",
+"weekday": 6,
+"tokens": 14645330,
+"millions": 14.6
+},
+{
+"date": "2026-02-23",
+"week": "2026-02-23",
+"weekday": 0,
+"tokens": 125520939,
+"millions": 125.5
+},
+{
+"date": "2026-02-24",
+"week": "2026-02-23",
+"weekday": 1,
+"tokens": 118148891,
+"millions": 118.1
+},
+{
+"date": "2026-02-25",
+"week": "2026-02-23",
+"weekday": 2,
+"tokens": 62119973,
+"millions": 62.1
+},
+{
+"date": "2026-02-26",
+"week": "2026-02-23",
+"weekday": 3,
+"tokens": 72793446,
+"millions": 72.8
+},
+{
+"date": "2026-02-27",
+"week": "2026-02-23",
+"weekday": 4,
+"tokens": 274758939,
+"millions": 274.8
+},
+{
+"date": "2026-02-28",
+"week": "2026-02-23",
+"weekday": 5,
+"tokens": 126155715,
+"millions": 126.2
+},
+{
+"date": "2026-03-01",
+"week": "2026-02-23",
+"weekday": 6,
+"tokens": 321862200,
+"millions": 321.9
+},
+{
+"date": "2026-03-02",
+"week": "2026-03-02",
+"weekday": 0,
+"tokens": 86424687,
+"millions": 86.4
+},
+{
+"date": "2026-03-03",
+"week": "2026-03-02",
+"weekday": 1,
+"tokens": 49930180,
+"millions": 49.9
+},
+{
+"date": "2026-03-04",
+"week": "2026-03-02",
+"weekday": 2,
+"tokens": 114037184,
+"millions": 114.0
+},
+{
+"date": "2026-03-05",
+"week": "2026-03-02",
+"weekday": 3,
+"tokens": 55145218,
+"millions": 55.1
+},
+{
+"date": "2026-03-06",
+"week": "2026-03-02",
+"weekday": 4,
+"tokens": 26609603,
+"millions": 26.6
+},
+{
+"date": "2026-03-07",
+"week": "2026-03-02",
+"weekday": 5,
+"tokens": 1404374,
+"millions": 1.4
+},
+{
+"date": "2026-03-08",
+"week": "2026-03-02",
+"weekday": 6,
+"tokens": 87324,
+"millions": 0.1
+},
+{
+"date": "2026-03-09",
+"week": "2026-03-09",
+"weekday": 0,
+"tokens": 1091183,
+"millions": 1.1
+},
+{
+"date": "2026-03-10",
+"week": "2026-03-09",
+"weekday": 1,
+"tokens": 54055327,
+"millions": 54.1
+},
+{
+"date": "2026-03-11",
+"week": "2026-03-09",
+"weekday": 2,
+"tokens": 149011939,
+"millions": 149.0
+},
+{
+"date": "2026-03-12",
+"week": "2026-03-09",
+"weekday": 3,
+"tokens": 67423359,
+"millions": 67.4
+},
+{
+"date": "2026-03-13",
+"week": "2026-03-09",
+"weekday": 4,
+"tokens": 59673655,
+"millions": 59.7
+},
+{
+"date": "2026-03-14",
+"week": "2026-03-09",
+"weekday": 5,
+"tokens": 35055003,
+"millions": 35.1
+},
+{
+"date": "2026-03-15",
+"week": "2026-03-09",
+"weekday": 6,
+"tokens": 31090226,
+"millions": 31.1
+},
+{
+"date": "2026-03-16",
+"week": "2026-03-16",
+"weekday": 0,
+"tokens": 26751418,
+"millions": 26.8
+},
+{
+"date": "2026-03-17",
+"week": "2026-03-16",
+"weekday": 1,
+"tokens": 21697853,
+"millions": 21.7
+},
+{
+"date": "2026-03-18",
+"week": "2026-03-16",
+"weekday": 2,
+"tokens": 30412219,
+"millions": 30.4
+},
+{
+"date": "2026-03-19",
+"week": "2026-03-16",
+"weekday": 3,
+"tokens": 49467169,
+"millions": 49.5
+},
+{
+"date": "2026-03-20",
+"week": "2026-03-16",
+"weekday": 4,
+"tokens": 26888423,
+"millions": 26.9
+},
+{
+"date": "2026-03-21",
+"week": "2026-03-16",
+"weekday": 5,
+"tokens": 35620911,
+"millions": 35.6
+},
+{
+"date": "2026-03-22",
+"week": "2026-03-16",
+"weekday": 6,
+"tokens": 3454310,
+"millions": 3.5
+},
+{
+"date": "2026-03-23",
+"week": "2026-03-23",
+"weekday": 0,
+"tokens": 25241181,
+"millions": 25.2
+},
+{
+"date": "2026-03-24",
+"week": "2026-03-23",
+"weekday": 1,
+"tokens": 17213565,
+"millions": 17.2
+},
+{
+"date": "2026-03-25",
+"week": "2026-03-23",
+"weekday": 2,
+"tokens": 50013415,
+"millions": 50.0
+},
+{
+"date": "2026-03-26",
+"week": "2026-03-23",
+"weekday": 3,
+"tokens": 44577656,
+"millions": 44.6
+},
+{
+"date": "2026-03-27",
+"week": "2026-03-23",
+"weekday": 4,
+"tokens": 120616248,
+"millions": 120.6
+},
+{
+"date": "2026-03-28",
+"week": "2026-03-23",
+"weekday": 5,
+"tokens": 20108936,
+"millions": 20.1
+},
+{
+"date": "2026-03-29",
+"week": "2026-03-23",
+"weekday": 6,
+"tokens": 77710090,
+"millions": 77.7
+},
+{
+"date": "2026-03-30",
+"week": "2026-03-30",
+"weekday": 0,
+"tokens": 69709997,
+"millions": 69.7
+},
+{
+"date": "2026-03-31",
+"week": "2026-03-30",
+"weekday": 1,
+"tokens": 145913515,
+"millions": 145.9
+},
+{
+"date": "2026-04-01",
+"week": "2026-03-30",
+"weekday": 2,
+"tokens": 80841880,
+"millions": 80.8
+},
+{
+"date": "2026-04-02",
+"week": "2026-03-30",
+"weekday": 3,
+"tokens": 67021042,
+"millions": 67.0
+},
+{
+"date": "2026-04-03",
+"week": "2026-03-30",
+"weekday": 4,
+"tokens": 143112200,
+"millions": 143.1
+},
+{
+"date": "2026-04-04",
+"week": "2026-03-30",
+"weekday": 5,
+"tokens": 71975199,
+"millions": 72.0
+},
+{
+"date": "2026-04-05",
+"week": "2026-03-30",
+"weekday": 6,
+"tokens": 17787703,
+"millions": 17.8
+},
+{
+"date": "2026-04-06",
+"week": "2026-04-06",
+"weekday": 0,
+"tokens": 61158791,
+"millions": 61.2
+},
+{
+"date": "2026-04-07",
+"week": "2026-04-06",
+"weekday": 1,
+"tokens": 158320598,
+"millions": 158.3
+},
+{
+"date": "2026-04-08",
+"week": "2026-04-06",
+"weekday": 2,
+"tokens": 216652157,
+"millions": 216.7
+},
+{
+"date": "2026-04-09",
+"week": "2026-04-06",
+"weekday": 3,
+"tokens": 309152939,
+"millions": 309.2
+},
+{
+"date": "2026-04-10",
+"week": "2026-04-06",
+"weekday": 4,
+"tokens": 494504221,
+"millions": 494.5
+},
+{
+"date": "2026-04-11",
+"week": "2026-04-06",
+"weekday": 5,
+"tokens": 175231738,
+"millions": 175.2
+},
+{
+"date": "2026-04-12",
+"week": "2026-04-06",
+"weekday": 6,
+"tokens": 117836752,
+"millions": 117.8
+},
+{
+"date": "2026-04-13",
+"week": "2026-04-13",
+"weekday": 0,
+"tokens": 203184826,
+"millions": 203.2
+},
+{
+"date": "2026-04-14",
+"week": "2026-04-13",
+"weekday": 1,
+"tokens": 118986984,
+"millions": 119.0
+},
+{
+"date": "2026-04-15",
+"week": "2026-04-13",
+"weekday": 2,
+"tokens": 129560420,
+"millions": 129.6
+},
+{
+"date": "2026-04-16",
+"week": "2026-04-13",
+"weekday": 3,
+"tokens": 152263519,
+"millions": 152.3
+},
+{
+"date": "2026-04-17",
+"week": "2026-04-13",
+"weekday": 4,
+"tokens": 185212652,
+"millions": 185.2
+},
+{
+"date": "2026-04-18",
+"week": "2026-04-13",
+"weekday": 5,
+"tokens": 158461051,
+"millions": 158.5
+},
+{
+"date": "2026-04-19",
+"week": "2026-04-13",
+"weekday": 6,
+"tokens": 123483026,
+"millions": 123.5
+},
+{
+"date": "2026-04-20",
+"week": "2026-04-20",
+"weekday": 0,
+"tokens": 175623306,
+"millions": 175.6
+},
+{
+"date": "2026-04-21",
+"week": "2026-04-20",
+"weekday": 1,
+"tokens": 42461676,
+"millions": 42.5
+},
+{
+"date": "2026-04-22",
+"week": "2026-04-20",
+"weekday": 2,
+"tokens": 185999222,
+"millions": 186.0
+},
+{
+"date": "2026-04-23",
+"week": "2026-04-20",
+"weekday": 3,
+"tokens": 143486418,
+"millions": 143.5
+},
+{
+"date": "2026-04-24",
+"week": "2026-04-20",
+"weekday": 4,
+"tokens": 217994609,
+"millions": 218.0
+},
+{
+"date": "2026-04-25",
+"week": "2026-04-20",
+"weekday": 5,
+"tokens": 157094130,
+"millions": 157.1
+},
+{
+"date": "2026-04-26",
+"week": "2026-04-20",
+"weekday": 6,
+"tokens": 126777162,
+"millions": 126.8
+},
+{
+"date": "2026-04-27",
+"week": "2026-04-27",
+"weekday": 0,
+"tokens": 4025481,
+"millions": 4.0
+},
+{
+"date": "2026-04-28",
+"week": "2026-04-27",
+"weekday": 1,
+"tokens": 236939068,
+"millions": 236.9
+},
+{
+"date": "2026-04-29",
+"week": "2026-04-27",
+"weekday": 2,
+"tokens": 370402634,
+"millions": 370.4
+},
+{
+"date": "2026-04-30",
+"week": "2026-04-27",
+"weekday": 3,
+"tokens": 332346795,
+"millions": 332.3
+},
+{
+"date": "2026-05-01",
+"week": "2026-04-27",
+"weekday": 4,
+"tokens": 366226776,
+"millions": 366.2
+},
+{
+"date": "2026-05-02",
+"week": "2026-04-27",
+"weekday": 5,
+"tokens": 20676913,
+"millions": 20.7
+},
+{
+"date": "2026-05-03",
+"week": "2026-04-27",
+"weekday": 6,
+"tokens": 11166917,
+"millions": 11.2
+},
+{
+"date": "2026-05-04",
+"week": "2026-05-04",
+"weekday": 0,
+"tokens": 186779552,
+"millions": 186.8
+},
+{
+"date": "2026-05-05",
+"week": "2026-05-04",
+"weekday": 1,
+"tokens": 383619063,
+"millions": 383.6
+},
+{
+"date": "2026-05-06",
+"week": "2026-05-04",
+"weekday": 2,
+"tokens": 296265885,
+"millions": 296.3
+},
+{
+"date": "2026-05-07",
+"week": "2026-05-04",
+"weekday": 3,
+"tokens": 124135165,
+"millions": 124.1
+},
+{
+"date": "2026-05-08",
+"week": "2026-05-04",
+"weekday": 4,
+"tokens": 310708576,
+"millions": 310.7
+},
+{
+"date": "2026-05-09",
+"week": "2026-05-04",
+"weekday": 5,
+"tokens": 36849758,
+"millions": 36.8
+},
+{
+"date": "2026-05-10",
+"week": "2026-05-04",
+"weekday": 6,
+"tokens": 20549000,
+"millions": 20.5
+},
+{
+"date": "2026-05-11",
+"week": "2026-05-11",
+"weekday": 0,
+"tokens": 127680484,
+"millions": 127.7
+},
+{
+"date": "2026-05-12",
+"week": "2026-05-11",
+"weekday": 1,
+"tokens": 284304620,
+"millions": 284.3
+},
+{
+"date": "2026-05-13",
+"week": "2026-05-11",
+"weekday": 2,
+"tokens": 250018023,
+"millions": 250.0
+},
+{
+"date": "2026-05-14",
+"week": "2026-05-11",
+"weekday": 3,
+"tokens": 79994708,
+"millions": 80.0
+},
+{
+"date": "2026-05-15",
+"week": "2026-05-11",
+"weekday": 4,
+"tokens": 231957452,
+"millions": 232.0
+},
+{
+"date": "2026-05-16",
+"week": "2026-05-11",
+"weekday": 5,
+"tokens": 131276601,
+"millions": 131.3
+},
+{
+"date": "2026-05-17",
+"week": "2026-05-11",
+"weekday": 6,
+"tokens": 102099652,
+"millions": 102.1
+},
+{
+"date": "2026-05-18",
+"week": "2026-05-18",
+"weekday": 0,
+"tokens": 362801092,
+"millions": 362.8
+},
+{
+"date": "2026-05-19",
+"week": "2026-05-18",
+"weekday": 1,
+"tokens": 211170119,
+"millions": 211.2
+},
+{
+"date": "2026-05-20",
+"week": "2026-05-18",
+"weekday": 2,
+"tokens": 200131767,
+"millions": 200.1
+},
+{
+"date": "2026-05-21",
+"week": "2026-05-18",
+"weekday": 3,
+"tokens": 158271130,
+"millions": 158.3
+},
+{
+"date": "2026-05-22",
+"week": "2026-05-18",
+"weekday": 4,
+"tokens": 158150270,
+"millions": 158.2
+},
+{
+"date": "2026-05-23",
+"week": "2026-05-18",
+"weekday": 5,
+"tokens": 214924512,
+"millions": 214.9
+},
+{
+"date": "2026-05-24",
+"week": "2026-05-18",
+"weekday": 6,
+"tokens": 44173680,
+"millions": 44.2
+},
+{
+"date": "2026-05-25",
+"week": "2026-05-25",
+"weekday": 0,
+"tokens": 157724207,
+"millions": 157.7
+},
+{
+"date": "2026-05-26",
+"week": "2026-05-25",
+"weekday": 1,
+"tokens": 224928909,
+"millions": 224.9
+},
+{
+"date": "2026-05-27",
+"week": "2026-05-25",
+"weekday": 2,
+"tokens": 117729097,
+"millions": 117.7
+},
+{
+"date": "2026-05-28",
+"week": "2026-05-25",
+"weekday": 3,
+"tokens": 107858371,
+"millions": 107.9
+},
+{
+"date": "2026-05-29",
+"week": "2026-05-25",
+"weekday": 4,
+"tokens": 285497317,
+"millions": 285.5
+},
+{
+"date": "2026-05-30",
+"week": "2026-05-25",
+"weekday": 5,
+"tokens": 93485495,
+"millions": 93.5
+},
+{
+"date": "2026-05-31",
+"week": "2026-05-25",
+"weekday": 6,
+"tokens": 115470682,
+"millions": 115.5
+},
+{
+"date": "2026-06-01",
+"week": "2026-06-01",
+"weekday": 0,
+"tokens": 51092557,
+"millions": 51.1
+},
+{
+"date": "2026-06-02",
+"week": "2026-06-01",
+"weekday": 1,
+"tokens": 122749599,
+"millions": 122.7
+},
+{
+"date": "2026-06-03",
+"week": "2026-06-01",
+"weekday": 2,
+"tokens": 757526980,
+"millions": 757.5
+},
+{
+"date": "2026-06-04",
+"week": "2026-06-01",
+"weekday": 3,
+"tokens": 301806538,
+"millions": 301.8
+},
+{
+"date": "2026-06-05",
+"week": "2026-06-01",
+"weekday": 4,
+"tokens": 268810160,
+"millions": 268.8
+},
+{
+"date": "2026-06-06",
+"week": "2026-06-01",
+"weekday": 5,
+"tokens": 168360706,
+"millions": 168.4
+},
+{
+"date": "2026-06-07",
+"week": "2026-06-01",
+"weekday": 6,
+"tokens": 295470304,
+"millions": 295.5
+},
+{
+"date": "2026-06-08",
+"week": "2026-06-08",
+"weekday": 0,
+"tokens": 364619258,
+"millions": 364.6
+},
+{
+"date": "2026-06-09",
+"week": "2026-06-08",
+"weekday": 1,
+"tokens": 519963454,
+"millions": 520.0
+},
+{
+"date": "2026-06-10",
+"week": "2026-06-08",
+"weekday": 2,
+"tokens": 902903984,
+"millions": 902.9
+},
+{
+"date": "2026-06-11",
+"week": "2026-06-08",
+"weekday": 3,
+"tokens": 152584407,
+"millions": 152.6
+},
+{
+"date": "2026-06-12",
+"week": "2026-06-08",
+"weekday": 4,
+"tokens": 47395287,
+"millions": 47.4
+},
+{
+"date": "2026-06-13",
+"week": "2026-06-08",
+"weekday": 5,
+"tokens": 65008481,
+"millions": 65.0
+},
+{
+"date": "2026-06-14",
+"week": "2026-06-08",
+"weekday": 6,
+"tokens": 50685929,
+"millions": 50.7
+},
+{
+"date": "2026-06-15",
+"week": "2026-06-15",
+"weekday": 0,
+"tokens": 141921666,
+"millions": 141.9
+},
+{
+"date": "2026-06-16",
+"week": "2026-06-15",
+"weekday": 1,
+"tokens": 204533168,
+"millions": 204.5
+},
+{
+"date": "2026-06-17",
+"week": "2026-06-15",
+"weekday": 2,
+"tokens": 617631382,
+"millions": 617.6
+},
+{
+"date": "2026-06-18",
+"week": "2026-06-15",
+"weekday": 3,
+"tokens": 304886453,
+"millions": 304.9
+},
+{
+"date": "2026-06-19",
+"week": "2026-06-15",
+"weekday": 4,
+"tokens": 345325274,
+"millions": 345.3
+},
+{
+"date": "2026-06-20",
+"week": "2026-06-15",
+"weekday": 5,
+"tokens": 306070165,
+"millions": 306.1
+},
+{
+"date": "2026-06-21",
+"week": "2026-06-15",
+"weekday": 6,
+"tokens": 150688596,
+"millions": 150.7
+},
+{
+"date": "2026-06-22",
+"week": "2026-06-22",
+"weekday": 0,
+"tokens": 271842680,
+"millions": 271.8
+},
+{
+"date": "2026-06-23",
+"week": "2026-06-22",
+"weekday": 1,
+"tokens": 283428178,
+"millions": 283.4
+},
+{
+"date": "2026-06-24",
+"week": "2026-06-22",
+"weekday": 2,
+"tokens": 229644335,
+"millions": 229.6
+},
+{
+"date": "2026-06-25",
+"week": "2026-06-22",
+"weekday": 3,
+"tokens": 220015341,
+"millions": 220.0
+},
+{
+"date": "2026-06-26",
+"week": "2026-06-22",
+"weekday": 4,
+"tokens": 195113325,
+"millions": 195.1
+},
+{
+"date": "2026-06-27",
+"week": "2026-06-22",
+"weekday": 5,
+"tokens": 187737638,
+"millions": 187.7
+},
+{
+"date": "2026-06-28",
+"week": "2026-06-22",
+"weekday": 6,
+"tokens": 96589927,
+"millions": 96.6
+},
+{
+"date": "2026-06-29",
+"week": "2026-06-29",
+"weekday": 0,
+"tokens": 84019484,
+"millions": 84.0
+},
+{
+"date": "2026-06-30",
+"week": "2026-06-29",
+"weekday": 1,
+"tokens": 58257855,
+"millions": 58.3
+},
+{
+"date": "2026-07-01",
+"week": "2026-06-29",
+"weekday": 2,
+"tokens": 260161457,
+"millions": 260.2
+},
+{
+"date": "2026-07-02",
+"week": "2026-06-29",
+"weekday": 3,
+"tokens": 190071280,
+"millions": 190.1
+},
+{
+"date": "2026-07-03",
+"week": "2026-06-29",
+"weekday": 4,
+"tokens": 401452281,
+"millions": 401.5
+},
+{
+"date": "2026-07-04",
+"week": "2026-06-29",
+"weekday": 5,
+"tokens": 239404811,
+"millions": 239.4
+},
+{
+"date": "2026-07-05",
+"week": "2026-06-29",
+"weekday": 6,
+"tokens": 112363920,
+"millions": 112.4
+},
+{
+"date": "2026-07-06",
+"week": "2026-07-06",
+"weekday": 0,
+"tokens": 312644476,
+"millions": 312.6
+},
+{
+"date": "2026-07-07",
+"week": "2026-07-06",
+"weekday": 1,
+"tokens": 526198708,
+"millions": 526.2
+},
+{
+"date": "2026-07-08",
+"week": "2026-07-06",
+"weekday": 2,
+"tokens": 540109257,
+"millions": 540.1
+},
+{
+"date": "2026-07-09",
+"week": "2026-07-06",
+"weekday": 3,
+"tokens": 852447597,
+"millions": 852.4
+},
+{
+"date": "2026-07-10",
+"week": "2026-07-06",
+"weekday": 4,
+"tokens": 671406607,
+"millions": 671.4
+},
+{
+"date": "2026-07-11",
+"week": "2026-07-06",
+"weekday": 5,
+"tokens": 589711922,
+"millions": 589.7
+},
+{
+"date": "2026-07-12",
+"week": "2026-07-06",
+"weekday": 6,
+"tokens": 580475297,
+"millions": 580.5
+},
+{
+"date": "2026-07-13",
+"week": "2026-07-13",
+"weekday": 0,
+"tokens": 730253287,
+"millions": 730.3
+},
+{
+"date": "2026-07-14",
+"week": "2026-07-13",
+"weekday": 1,
+"tokens": 660472011,
+"millions": 660.5
+},
+{
+"date": "2026-07-15",
+"week": "2026-07-13",
+"weekday": 2,
+"tokens": 553378417,
+"millions": 553.4
+},
+{
+"date": "2026-07-16",
+"week": "2026-07-13",
+"weekday": 3,
+"tokens": 883264677,
+"millions": 883.3
+},
+{
+"date": "2026-07-17",
+"week": "2026-07-13",
+"weekday": 4,
+"tokens": 630913218,
+"millions": 630.9
+},
+{
+"date": "2026-07-18",
+"week": "2026-07-13",
+"weekday": 5,
+"tokens": 474631081,
+"millions": 474.6
+},
+{
+"date": "2026-07-19",
+"week": "2026-07-13",
+"weekday": 6,
+"tokens": 533641821,
+"millions": 533.6
+},
+{
+"date": "2026-07-20",
+"week": "2026-07-20",
+"weekday": 0,
+"tokens": 693250965,
+"millions": 693.3
+},
+{
+"date": "2026-07-21",
+"week": "2026-07-20",
+"weekday": 1,
+"tokens": 669006769,
+"millions": 669.0
+},
+{
+"date": "2026-07-22",
+"week": "2026-07-20",
+"weekday": 2,
+"tokens": 703675850,
+"millions": 703.7
+},
+{
+"date": "2026-07-23",
+"week": "2026-07-20",
+"weekday": 3,
+"tokens": 852459594,
+"millions": 852.5
+},
+{
+"date": "2026-07-24",
+"week": "2026-07-20",
+"weekday": 4,
+"tokens": 341205157,
+"millions": 341.2
+},
+{
+"date": "2026-07-25",
+"week": "2026-07-20",
+"weekday": 5,
+"tokens": 576079631,
+"millions": 576.1
+},
+{
+"date": "2026-07-26",
+"week": "2026-07-20",
+"weekday": 6,
+"tokens": 505849953,
+"millions": 505.8
+},
+{
+"date": "2026-07-27",
+"week": "2026-07-27",
+"weekday": 0,
+"tokens": 281223144,
+"millions": 281.2
+},
+{
+"date": "2026-07-28",
+"week": "2026-07-27",
+"weekday": 1,
+"tokens": 870776460,
+"millions": 870.8
+},
+{
+"date": "2026-07-29",
+"week": "2026-07-27",
+"weekday": 2,
+"tokens": 1015720261,
+"millions": 1015.7
+},
+{
+"date": "2026-07-30",
+"week": "2026-07-27",
+"weekday": 3,
+"tokens": 860650430,
+"millions": 860.7
+},
+{
+"date": "2026-07-31",
+"week": "2026-07-27",
+"weekday": 4,
+"tokens": 817475102,
+"millions": 817.5
+},
+{
+"date": "2026-08-01",
+"week": "2026-07-27",
+"weekday": 5,
+"tokens": 503410296,
+"millions": 503.4
+},
+{
+"date": "2026-08-02",
+"week": "2026-07-27",
+"weekday": 6,
+"tokens": 134018541,
+"millions": 134.0
+},
+{
+"date": "2026-08-03",
+"week": "2026-08-03",
+"weekday": 0,
+"tokens": 139584065,
+"millions": 139.6
+},
+{
+"date": "2026-08-04",
+"week": "2026-08-03",
+"weekday": 1,
+"tokens": 853191711,
+"millions": 853.2
+},
+{
+"date": "2026-08-05",
+"week": "2026-08-03",
+"weekday": 2,
+"tokens": 551657057,
+"millions": 551.7
+},
+{
+"date": "2026-08-06",
+"week": "2026-08-03",
+"weekday": 3,
+"tokens": 643523862,
+"millions": 643.5
+},
+{
+"date": "2026-08-07",
+"week": "2026-08-03",
+"weekday": 4,
+"tokens": 697168052,
+"millions": 697.2
+},
+{
+"date": "2026-08-08",
+"week": "2026-08-03",
+"weekday": 5,
+"tokens": 637712952,
+"millions": 637.7
+},
+{
+"date": "2026-08-09",
+"week": "2026-08-03",
+"weekday": 6,
+"tokens": 462984954,
+"millions": 463.0
+},
+{
+"date": "2026-08-10",
+"week": "2026-08-10",
+"weekday": 0,
+"tokens": 547395413,
+"millions": 547.4
+},
+{
+"date": "2026-08-11",
+"week": "2026-08-10",
+"weekday": 1,
+"tokens": 702137051,
+"millions": 702.1
+},
+{
+"date": "2026-08-12",
+"week": "2026-08-10",
+"weekday": 2,
+"tokens": 709147360,
+"millions": 709.1
+},
+{
+"date": "2026-08-13",
+"week": "2026-08-10",
+"weekday": 3,
+"tokens": 645315667,
+"millions": 645.3
+},
+{
+"date": "2026-08-14",
+"week": "2026-08-10",
+"weekday": 4,
+"tokens": 361283722,
+"millions": 361.3
+},
+{
+"date": "2026-08-15",
+"week": "2026-08-10",
+"weekday": 5,
+"tokens": 341094365,
+"millions": 341.1
+},
+{
+"date": "2026-08-16",
+"week": "2026-08-10",
+"weekday": 6,
+"tokens": 651780029,
+"millions": 651.8
+},
+{
+"date": "2026-08-17",
+"week": "2026-08-17",
+"weekday": 0,
+"tokens": 794964084,
+"millions": 795.0
+},
+{
+"date": "2026-08-18",
+"week": "2026-08-17",
+"weekday": 1,
+"tokens": 687506898,
+"millions": 687.5
+},
+{
+"date": "2026-08-19",
+"week": "2026-08-17",
+"weekday": 2,
+"tokens": 971665028,
+"millions": 971.7
+},
+{
+"date": "2026-08-20",
+"week": "2026-08-17",
+"weekday": 3,
+"tokens": 150012309,
+"millions": 150.0
+}
+]

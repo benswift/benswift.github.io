@@ -1,1 +1,4672 @@
-[{"date":"2025-07-03","measure":"billions of tokens","value":0.0596},{"date":"2025-07-03","measure":"indicative API cost (US$)","value":138.04},{"date":"2025-07-04","measure":"billions of tokens","value":0.0835},{"date":"2025-07-04","measure":"indicative API cost (US$)","value":193.05},{"date":"2025-07-05","measure":"billions of tokens","value":0.0835},{"date":"2025-07-05","measure":"indicative API cost (US$)","value":193.05},{"date":"2025-07-06","measure":"billions of tokens","value":0.0835},{"date":"2025-07-06","measure":"indicative API cost (US$)","value":193.05},{"date":"2025-07-07","measure":"billions of tokens","value":0.156},{"date":"2025-07-07","measure":"indicative API cost (US$)","value":368.01},{"date":"2025-07-08","measure":"billions of tokens","value":0.2024},{"date":"2025-07-08","measure":"indicative API cost (US$)","value":480.31},{"date":"2025-07-09","measure":"billions of tokens","value":0.2177},{"date":"2025-07-09","measure":"indicative API cost (US$)","value":520.22},{"date":"2025-07-10","measure":"billions of tokens","value":0.2416},{"date":"2025-07-10","measure":"indicative API cost (US$)","value":575.5},{"date":"2025-07-11","measure":"billions of tokens","value":0.3106},{"date":"2025-07-11","measure":"indicative API cost (US$)","value":763.26},{"date":"2025-07-12","measure":"billions of tokens","value":0.3106},{"date":"2025-07-12","measure":"indicative API cost (US$)","value":763.26},{"date":"2025-07-13","measure":"billions of tokens","value":0.3178},{"date":"2025-07-13","measure":"indicative API cost (US$)","value":784.24},{"date":"2025-07-14","measure":"billions of tokens","value":0.3627},{"date":"2025-07-14","measure":"indicative API cost (US$)","value":904.7},{"date":"2025-07-15","measure":"billions of tokens","value":0.3996},{"date":"2025-07-15","measure":"indicative API cost (US$)","value":1004.65},{"date":"2025-07-16","measure":"billions of tokens","value":0.4322},{"date":"2025-07-16","measure":"indicative API cost (US$)","value":1090.67},{"date":"2025-07-17","measure":"billions of tokens","value":0.4509},{"date":"2025-07-17","measure":"indicative API cost (US$)","value":1150.08},{"date":"2025-07-18","measure":"billions of tokens","value":0.4509},{"date":"2025-07-18","measure":"indicative API cost (US$)","value":1150.08},{"date":"2025-07-19","measure":"billions of tokens","value":0.4509},{"date":"2025-07-19","measure":"indicative API cost (US$)","value":1150.08},{"date":"2025-07-20","measure":"billions of tokens","value":0.4509},{"date":"2025-07-20","measure":"indicative API cost (US$)","value":1150.08},{"date":"2025-07-21","measure":"billions of tokens","value":0.4725},{"date":"2025-07-21","measure":"indicative API cost (US$)","value":1207.49},{"date":"2025-07-22","measure":"billions of tokens","value":0.484},{"date":"2025-07-22","measure":"indicative API cost (US$)","value":1242.87},{"date":"2025-07-23","measure":"billions of tokens","value":0.517},{"date":"2025-07-23","measure":"indicative API cost (US$)","value":1344.03},{"date":"2025-07-24","measure":"billions of tokens","value":0.5429},{"date":"2025-07-24","measure":"indicative API cost (US$)","value":1431.86},{"date":"2025-07-25","measure":"billions of tokens","value":0.5981},{"date":"2025-07-25","measure":"indicative API cost (US$)","value":1576.61},{"date":"2025-07-26","measure":"billions of tokens","value":0.6372},{"date":"2025-07-26","measure":"indicative API cost (US$)","value":1684.62},{"date":"2025-07-27","measure":"billions of tokens","value":0.6432},{"date":"2025-07-27","measure":"indicative API cost (US$)","value":1707.2},{"date":"2025-07-28","measure":"billions of tokens","value":0.6613},{"date":"2025-07-28","measure":"indicative API cost (US$)","value":1751.38},{"date":"2025-07-29","measure":"billions of tokens","value":0.684},{"date":"2025-07-29","measure":"indicative API cost (US$)","value":1818.69},{"date":"2025-07-30","measure":"billions of tokens","value":0.7318},{"date":"2025-07-30","measure":"indicative API cost (US$)","value":1943.29},{"date":"2025-07-31","measure":"billions of tokens","value":0.7333},{"date":"2025-07-31","measure":"indicative API cost (US$)","value":1950.48},{"date":"2025-08-01","measure":"billions of tokens","value":0.7503},{"date":"2025-08-01","measure":"indicative API cost (US$)","value":1997.55},{"date":"2025-08-02","measure":"billions of tokens","value":0.7503},{"date":"2025-08-02","measure":"indicative API cost (US$)","value":1997.55},{"date":"2025-08-03","measure":"billions of tokens","value":0.7506},{"date":"2025-08-03","measure":"indicative API cost (US$)","value":1999.91},{"date":"2025-08-04","measure":"billions of tokens","value":0.7848},{"date":"2025-08-04","measure":"indicative API cost (US$)","value":2096.71},{"date":"2025-08-05","measure":"billions of tokens","value":0.8233},{"date":"2025-08-05","measure":"indicative API cost (US$)","value":2200.98},{"date":"2025-08-06","measure":"billions of tokens","value":0.8352},{"date":"2025-08-06","measure":"indicative API cost (US$)","value":2240.84},{"date":"2025-08-07","measure":"billions of tokens","value":0.8714},{"date":"2025-08-07","measure":"indicative API cost (US$)","value":2342.77},{"date":"2025-08-08","measure":"billions of tokens","value":0.9273},{"date":"2025-08-08","measure":"indicative API cost (US$)","value":2486.68},{"date":"2025-08-09","measure":"billions of tokens","value":0.9337},{"date":"2025-08-09","measure":"indicative API cost (US$)","value":2505.82},{"date":"2025-08-10","measure":"billions of tokens","value":0.9396},{"date":"2025-08-10","measure":"indicative API cost (US$)","value":2518.82},{"date":"2025-08-11","measure":"billions of tokens","value":0.9812},{"date":"2025-08-11","measure":"indicative API cost (US$)","value":2622.58},{"date":"2025-08-12","measure":"billions of tokens","value":1.0344},{"date":"2025-08-12","measure":"indicative API cost (US$)","value":2749.09},{"date":"2025-08-13","measure":"billions of tokens","value":1.0991},{"date":"2025-08-13","measure":"indicative API cost (US$)","value":2906.49},{"date":"2025-08-14","measure":"billions of tokens","value":1.1759},{"date":"2025-08-14","measure":"indicative API cost (US$)","value":3086.01},{"date":"2025-08-15","measure":"billions of tokens","value":1.2786},{"date":"2025-08-15","measure":"indicative API cost (US$)","value":3343.64},{"date":"2025-08-16","measure":"billions of tokens","value":1.2811},{"date":"2025-08-16","measure":"indicative API cost (US$)","value":3349.91},{"date":"2025-08-17","measure":"billions of tokens","value":1.2811},{"date":"2025-08-17","measure":"indicative API cost (US$)","value":3349.91},{"date":"2025-08-18","measure":"billions of tokens","value":1.3049},{"date":"2025-08-18","measure":"indicative API cost (US$)","value":3412.47},{"date":"2025-08-19","measure":"billions of tokens","value":1.3579},{"date":"2025-08-19","measure":"indicative API cost (US$)","value":3539.3},{"date":"2025-08-20","measure":"billions of tokens","value":1.447},{"date":"2025-08-20","measure":"indicative API cost (US$)","value":3734.17},{"date":"2025-08-21","measure":"billions of tokens","value":1.5018},{"date":"2025-08-21","measure":"indicative API cost (US$)","value":3855.38},{"date":"2025-08-22","measure":"billions of tokens","value":1.5218},{"date":"2025-08-22","measure":"indicative API cost (US$)","value":3900.86},{"date":"2025-08-23","measure":"billions of tokens","value":1.5354},{"date":"2025-08-23","measure":"indicative API cost (US$)","value":3931.09},{"date":"2025-08-24","measure":"billions of tokens","value":1.5409},{"date":"2025-08-24","measure":"indicative API cost (US$)","value":3942.8},{"date":"2025-08-25","measure":"billions of tokens","value":1.5561},{"date":"2025-08-25","measure":"indicative API cost (US$)","value":3981.44},{"date":"2025-08-26","measure":"billions of tokens","value":1.575},{"date":"2025-08-26","measure":"indicative API cost (US$)","value":4029.81},{"date":"2025-08-27","measure":"billions of tokens","value":1.5929},{"date":"2025-08-27","measure":"indicative API cost (US$)","value":4078.96},{"date":"2025-08-28","measure":"billions of tokens","value":1.638},{"date":"2025-08-28","measure":"indicative API cost (US$)","value":4212.27},{"date":"2025-08-29","measure":"billions of tokens","value":1.686},{"date":"2025-08-29","measure":"indicative API cost (US$)","value":4355.33},{"date":"2025-08-30","measure":"billions of tokens","value":1.6917},{"date":"2025-08-30","measure":"indicative API cost (US$)","value":4369.91},{"date":"2025-08-31","measure":"billions of tokens","value":1.6996},{"date":"2025-08-31","measure":"indicative API cost (US$)","value":4390.59},{"date":"2025-09-01","measure":"billions of tokens","value":1.7119},{"date":"2025-09-01","measure":"indicative API cost (US$)","value":4428.95},{"date":"2025-09-02","measure":"billions of tokens","value":1.7302},{"date":"2025-09-02","measure":"indicative API cost (US$)","value":4478.98},{"date":"2025-09-03","measure":"billions of tokens","value":1.7915},{"date":"2025-09-03","measure":"indicative API cost (US$)","value":4602.27},{"date":"2025-09-04","measure":"billions of tokens","value":1.8363},{"date":"2025-09-04","measure":"indicative API cost (US$)","value":4697.44},{"date":"2025-09-05","measure":"billions of tokens","value":1.8417},{"date":"2025-09-05","measure":"indicative API cost (US$)","value":4711.41},{"date":"2025-09-06","measure":"billions of tokens","value":1.8417},{"date":"2025-09-06","measure":"indicative API cost (US$)","value":4711.41},{"date":"2025-09-07","measure":"billions of tokens","value":1.8441},{"date":"2025-09-07","measure":"indicative API cost (US$)","value":4717.59},{"date":"2025-09-08","measure":"billions of tokens","value":1.8447},{"date":"2025-09-08","measure":"indicative API cost (US$)","value":4720.56},{"date":"2025-09-09","measure":"billions of tokens","value":1.8658},{"date":"2025-09-09","measure":"indicative API cost (US$)","value":4758.41},{"date":"2025-09-10","measure":"billions of tokens","value":1.8904},{"date":"2025-09-10","measure":"indicative API cost (US$)","value":4813.16},{"date":"2025-09-11","measure":"billions of tokens","value":1.9214},{"date":"2025-09-11","measure":"indicative API cost (US$)","value":4884.18},{"date":"2025-09-12","measure":"billions of tokens","value":1.954},{"date":"2025-09-12","measure":"indicative API cost (US$)","value":4957.14},{"date":"2025-09-13","measure":"billions of tokens","value":1.954},{"date":"2025-09-13","measure":"indicative API cost (US$)","value":4957.14},{"date":"2025-09-14","measure":"billions of tokens","value":1.954},{"date":"2025-09-14","measure":"indicative API cost (US$)","value":4957.14},{"date":"2025-09-15","measure":"billions of tokens","value":1.9606},{"date":"2025-09-15","measure":"indicative API cost (US$)","value":4975.1},{"date":"2025-09-16","measure":"billions of tokens","value":1.9881},{"date":"2025-09-16","measure":"indicative API cost (US$)","value":5042.97},{"date":"2025-09-17","measure":"billions of tokens","value":2.0083},{"date":"2025-09-17","measure":"indicative API cost (US$)","value":5078.57},{"date":"2025-09-18","measure":"billions of tokens","value":2.0553},{"date":"2025-09-18","measure":"indicative API cost (US$)","value":5175.32},{"date":"2025-09-19","measure":"billions of tokens","value":2.0746},{"date":"2025-09-19","measure":"indicative API cost (US$)","value":5220.74},{"date":"2025-09-20","measure":"billions of tokens","value":2.1063},{"date":"2025-09-20","measure":"indicative API cost (US$)","value":5251.13},{"date":"2025-09-21","measure":"billions of tokens","value":2.1089},{"date":"2025-09-21","measure":"indicative API cost (US$)","value":5258.33},{"date":"2025-09-22","measure":"billions of tokens","value":2.125},{"date":"2025-09-22","measure":"indicative API cost (US$)","value":5293.71},{"date":"2025-09-23","measure":"billions of tokens","value":2.1388},{"date":"2025-09-23","measure":"indicative API cost (US$)","value":5328.32},{"date":"2025-09-24","measure":"billions of tokens","value":2.162},{"date":"2025-09-24","measure":"indicative API cost (US$)","value":5391.1},{"date":"2025-09-25","measure":"billions of tokens","value":2.2117},{"date":"2025-09-25","measure":"indicative API cost (US$)","value":5503.82},{"date":"2025-09-26","measure":"billions of tokens","value":2.2445},{"date":"2025-09-26","measure":"indicative API cost (US$)","value":5589.87},{"date":"2025-09-27","measure":"billions of tokens","value":2.2445},{"date":"2025-09-27","measure":"indicative API cost (US$)","value":5589.87},{"date":"2025-09-28","measure":"billions of tokens","value":2.2445},{"date":"2025-09-28","measure":"indicative API cost (US$)","value":5590.25},{"date":"2025-09-29","measure":"billions of tokens","value":2.2468},{"date":"2025-09-29","measure":"indicative API cost (US$)","value":5598.36},{"date":"2025-09-30","measure":"billions of tokens","value":2.2564},{"date":"2025-09-30","measure":"indicative API cost (US$)","value":5604.27},{"date":"2025-10-01","measure":"billions of tokens","value":2.2686},{"date":"2025-10-01","measure":"indicative API cost (US$)","value":5610.35},{"date":"2025-10-02","measure":"billions of tokens","value":2.2964},{"date":"2025-10-02","measure":"indicative API cost (US$)","value":5627.09},{"date":"2025-10-03","measure":"billions of tokens","value":2.3061},{"date":"2025-10-03","measure":"indicative API cost (US$)","value":5632.29},{"date":"2025-10-04","measure":"billions of tokens","value":2.3061},{"date":"2025-10-04","measure":"indicative API cost (US$)","value":5632.29},{"date":"2025-10-05","measure":"billions of tokens","value":2.3061},{"date":"2025-10-05","measure":"indicative API cost (US$)","value":5632.29},{"date":"2025-10-06","measure":"billions of tokens","value":2.3063},{"date":"2025-10-06","measure":"indicative API cost (US$)","value":5632.44},{"date":"2025-10-07","measure":"billions of tokens","value":2.3281},{"date":"2025-10-07","measure":"indicative API cost (US$)","value":5644.67},{"date":"2025-10-08","measure":"billions of tokens","value":2.3605},{"date":"2025-10-08","measure":"indicative API cost (US$)","value":5664.96},{"date":"2025-10-09","measure":"billions of tokens","value":2.375},{"date":"2025-10-09","measure":"indicative API cost (US$)","value":5673.8},{"date":"2025-10-10","measure":"billions of tokens","value":2.3939},{"date":"2025-10-10","measure":"indicative API cost (US$)","value":5685.16},{"date":"2025-10-11","measure":"billions of tokens","value":2.4196},{"date":"2025-10-11","measure":"indicative API cost (US$)","value":5700.69},{"date":"2025-10-12","measure":"billions of tokens","value":2.4207},{"date":"2025-10-12","measure":"indicative API cost (US$)","value":5701.47},{"date":"2025-10-13","measure":"billions of tokens","value":2.4294},{"date":"2025-10-13","measure":"indicative API cost (US$)","value":5706.17},{"date":"2025-10-14","measure":"billions of tokens","value":2.43},{"date":"2025-10-14","measure":"indicative API cost (US$)","value":5706.91},{"date":"2025-10-15","measure":"billions of tokens","value":2.43},{"date":"2025-10-15","measure":"indicative API cost (US$)","value":5706.91},{"date":"2025-10-16","measure":"billions of tokens","value":2.4349},{"date":"2025-10-16","measure":"indicative API cost (US$)","value":5709.84},{"date":"2025-10-17","measure":"billions of tokens","value":2.4381},{"date":"2025-10-17","measure":"indicative API cost (US$)","value":5712.07},{"date":"2025-10-18","measure":"billions of tokens","value":2.4555},{"date":"2025-10-18","measure":"indicative API cost (US$)","value":5720.93},{"date":"2025-10-19","measure":"billions of tokens","value":2.4555},{"date":"2025-10-19","measure":"indicative API cost (US$)","value":5720.93},{"date":"2025-10-20","measure":"billions of tokens","value":2.4572},{"date":"2025-10-20","measure":"indicative API cost (US$)","value":5722.09},{"date":"2025-10-21","measure":"billions of tokens","value":2.467},{"date":"2025-10-21","measure":"indicative API cost (US$)","value":5727.0},{"date":"2025-10-22","measure":"billions of tokens","value":2.5307},{"date":"2025-10-22","measure":"indicative API cost (US$)","value":5761.96},{"date":"2025-10-23","measure":"billions of tokens","value":2.5528},{"date":"2025-10-23","measure":"indicative API cost (US$)","value":5776.26},{"date":"2025-10-24","measure":"billions of tokens","value":2.6748},{"date":"2025-10-24","measure":"indicative API cost (US$)","value":5836.91},{"date":"2025-10-25","measure":"billions of tokens","value":2.7253},{"date":"2025-10-25","measure":"indicative API cost (US$)","value":5863.37},{"date":"2025-10-26","measure":"billions of tokens","value":2.7357},{"date":"2025-10-26","measure":"indicative API cost (US$)","value":5869.72},{"date":"2025-10-27","measure":"billions of tokens","value":2.7614},{"date":"2025-10-27","measure":"indicative API cost (US$)","value":5887.92},{"date":"2025-10-28","measure":"billions of tokens","value":2.8156},{"date":"2025-10-28","measure":"indicative API cost (US$)","value":5918.18},{"date":"2025-10-29","measure":"billions of tokens","value":2.8324},{"date":"2025-10-29","measure":"indicative API cost (US$)","value":5931.17},{"date":"2025-10-30","measure":"billions of tokens","value":2.8364},{"date":"2025-10-30","measure":"indicative API cost (US$)","value":5933.98},{"date":"2025-10-31","measure":"billions of tokens","value":2.8523},{"date":"2025-10-31","measure":"indicative API cost (US$)","value":5943.36},{"date":"2025-11-01","measure":"billions of tokens","value":2.8523},{"date":"2025-11-01","measure":"indicative API cost (US$)","value":5943.36},{"date":"2025-11-02","measure":"billions of tokens","value":2.861},{"date":"2025-11-02","measure":"indicative API cost (US$)","value":5947.85},{"date":"2025-11-03","measure":"billions of tokens","value":2.8854},{"date":"2025-11-03","measure":"indicative API cost (US$)","value":5958.98},{"date":"2025-11-04","measure":"billions of tokens","value":2.9061},{"date":"2025-11-04","measure":"indicative API cost (US$)","value":5971.34},{"date":"2025-11-05","measure":"billions of tokens","value":2.976},{"date":"2025-11-05","measure":"indicative API cost (US$)","value":6001.46},{"date":"2025-11-06","measure":"billions of tokens","value":2.9899},{"date":"2025-11-06","measure":"indicative API cost (US$)","value":6009.08},{"date":"2025-11-07","measure":"billions of tokens","value":2.9954},{"date":"2025-11-07","measure":"indicative API cost (US$)","value":6012.47},{"date":"2025-11-08","measure":"billions of tokens","value":2.9977},{"date":"2025-11-08","measure":"indicative API cost (US$)","value":6014.21},{"date":"2025-11-09","measure":"billions of tokens","value":3.0075},{"date":"2025-11-09","measure":"indicative API cost (US$)","value":6019.72},{"date":"2025-11-10","measure":"billions of tokens","value":3.0539},{"date":"2025-11-10","measure":"indicative API cost (US$)","value":6043.12},{"date":"2025-11-11","measure":"billions of tokens","value":3.0967},{"date":"2025-11-11","measure":"indicative API cost (US$)","value":6065.83},{"date":"2025-11-12","measure":"billions of tokens","value":3.1229},{"date":"2025-11-12","measure":"indicative API cost (US$)","value":6080.25},{"date":"2025-11-13","measure":"billions of tokens","value":3.133},{"date":"2025-11-13","measure":"indicative API cost (US$)","value":6085.59},{"date":"2025-11-14","measure":"billions of tokens","value":3.1528},{"date":"2025-11-14","measure":"indicative API cost (US$)","value":6100.27},{"date":"2025-11-15","measure":"billions of tokens","value":3.1528},{"date":"2025-11-15","measure":"indicative API cost (US$)","value":6100.27},{"date":"2025-11-16","measure":"billions of tokens","value":3.1537},{"date":"2025-11-16","measure":"indicative API cost (US$)","value":6101.01},{"date":"2025-11-17","measure":"billions of tokens","value":3.1607},{"date":"2025-11-17","measure":"indicative API cost (US$)","value":6106.59},{"date":"2025-11-18","measure":"billions of tokens","value":3.1967},{"date":"2025-11-18","measure":"indicative API cost (US$)","value":6126.47},{"date":"2025-11-19","measure":"billions of tokens","value":3.2167},{"date":"2025-11-19","measure":"indicative API cost (US$)","value":6137.81},{"date":"2025-11-20","measure":"billions of tokens","value":3.2758},{"date":"2025-11-20","measure":"indicative API cost (US$)","value":6167.5},{"date":"2025-11-21","measure":"billions of tokens","value":3.312},{"date":"2025-11-21","measure":"indicative API cost (US$)","value":6185.34},{"date":"2025-11-22","measure":"billions of tokens","value":3.3149},{"date":"2025-11-22","measure":"indicative API cost (US$)","value":6187.28},{"date":"2025-11-23","measure":"billions of tokens","value":3.3181},{"date":"2025-11-23","measure":"indicative API cost (US$)","value":6189.36},{"date":"2025-11-24","measure":"billions of tokens","value":3.3305},{"date":"2025-11-24","measure":"indicative API cost (US$)","value":6197.66},{"date":"2025-11-25","measure":"billions of tokens","value":3.3652},{"date":"2025-11-25","measure":"indicative API cost (US$)","value":6224.59},{"date":"2025-11-26","measure":"billions of tokens","value":3.421},{"date":"2025-11-26","measure":"indicative API cost (US$)","value":6275.29},{"date":"2025-11-27","measure":"billions of tokens","value":3.4641},{"date":"2025-11-27","measure":"indicative API cost (US$)","value":6313.37},{"date":"2025-11-28","measure":"billions of tokens","value":3.4799},{"date":"2025-11-28","measure":"indicative API cost (US$)","value":6327.91},{"date":"2025-11-29","measure":"billions of tokens","value":3.4799},{"date":"2025-11-29","measure":"indicative API cost (US$)","value":6327.91},{"date":"2025-11-30","measure":"billions of tokens","value":3.4799},{"date":"2025-11-30","measure":"indicative API cost (US$)","value":6327.91},{"date":"2025-12-01","measure":"billions of tokens","value":3.5368},{"date":"2025-12-01","measure":"indicative API cost (US$)","value":6369.9},{"date":"2025-12-02","measure":"billions of tokens","value":3.5857},{"date":"2025-12-02","measure":"indicative API cost (US$)","value":6407.66},{"date":"2025-12-03","measure":"billions of tokens","value":3.6719},{"date":"2025-12-03","measure":"indicative API cost (US$)","value":6475.33},{"date":"2025-12-04","measure":"billions of tokens","value":3.6847},{"date":"2025-12-04","measure":"indicative API cost (US$)","value":6485.99},{"date":"2025-12-05","measure":"billions of tokens","value":3.6998},{"date":"2025-12-05","measure":"indicative API cost (US$)","value":6501.59},{"date":"2025-12-06","measure":"billions of tokens","value":3.6998},{"date":"2025-12-06","measure":"indicative API cost (US$)","value":6501.59},{"date":"2025-12-07","measure":"billions of tokens","value":3.6998},{"date":"2025-12-07","measure":"indicative API cost (US$)","value":6501.59},{"date":"2025-12-08","measure":"billions of tokens","value":3.723},{"date":"2025-12-08","measure":"indicative API cost (US$)","value":6522.63},{"date":"2025-12-09","measure":"billions of tokens","value":3.748},{"date":"2025-12-09","measure":"indicative API cost (US$)","value":6546.83},{"date":"2025-12-10","measure":"billions of tokens","value":3.7907},{"date":"2025-12-10","measure":"indicative API cost (US$)","value":6578.57},{"date":"2025-12-11","measure":"billions of tokens","value":3.8399},{"date":"2025-12-11","measure":"indicative API cost (US$)","value":6616.0},{"date":"2025-12-12","measure":"billions of tokens","value":3.8647},{"date":"2025-12-12","measure":"indicative API cost (US$)","value":6641.12},{"date":"2025-12-13","measure":"billions of tokens","value":3.8691},{"date":"2025-12-13","measure":"indicative API cost (US$)","value":6644.89},{"date":"2025-12-14","measure":"billions of tokens","value":3.8691},{"date":"2025-12-14","measure":"indicative API cost (US$)","value":6644.89},{"date":"2025-12-15","measure":"billions of tokens","value":3.8946},{"date":"2025-12-15","measure":"indicative API cost (US$)","value":6664.31},{"date":"2025-12-16","measure":"billions of tokens","value":3.9704},{"date":"2025-12-16","measure":"indicative API cost (US$)","value":6724.11},{"date":"2025-12-17","measure":"billions of tokens","value":4.0682},{"date":"2025-12-17","measure":"indicative API cost (US$)","value":6795.93},{"date":"2025-12-18","measure":"billions of tokens","value":4.1529},{"date":"2025-12-18","measure":"indicative API cost (US$)","value":6857.88},{"date":"2025-12-19","measure":"billions of tokens","value":4.1857},{"date":"2025-12-19","measure":"indicative API cost (US$)","value":6886.59},{"date":"2025-12-20","measure":"billions of tokens","value":4.2419},{"date":"2025-12-20","measure":"indicative API cost (US$)","value":6927.76},{"date":"2025-12-21","measure":"billions of tokens","value":4.2419},{"date":"2025-12-21","measure":"indicative API cost (US$)","value":6927.76},{"date":"2025-12-22","measure":"billions of tokens","value":4.3838},{"date":"2025-12-22","measure":"indicative API cost (US$)","value":7027.02},{"date":"2025-12-23","measure":"billions of tokens","value":4.445},{"date":"2025-12-23","measure":"indicative API cost (US$)","value":7076.33},{"date":"2025-12-24","measure":"billions of tokens","value":4.4695},{"date":"2025-12-24","measure":"indicative API cost (US$)","value":7096.9},{"date":"2025-12-25","measure":"billions of tokens","value":4.4711},{"date":"2025-12-25","measure":"indicative API cost (US$)","value":7099.05},{"date":"2025-12-26","measure":"billions of tokens","value":4.4711},{"date":"2025-12-26","measure":"indicative API cost (US$)","value":7099.05},{"date":"2025-12-27","measure":"billions of tokens","value":4.4711},{"date":"2025-12-27","measure":"indicative API cost (US$)","value":7099.05},{"date":"2025-12-28","measure":"billions of tokens","value":4.4711},{"date":"2025-12-28","measure":"indicative API cost (US$)","value":7099.05},{"date":"2025-12-29","measure":"billions of tokens","value":4.4711},{"date":"2025-12-29","measure":"indicative API cost (US$)","value":7099.05},{"date":"2025-12-30","measure":"billions of tokens","value":4.4711},{"date":"2025-12-30","measure":"indicative API cost (US$)","value":7099.05},{"date":"2025-12-31","measure":"billions of tokens","value":4.4711},{"date":"2025-12-31","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-01","measure":"billions of tokens","value":4.4711},{"date":"2026-01-01","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-02","measure":"billions of tokens","value":4.4711},{"date":"2026-01-02","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-03","measure":"billions of tokens","value":4.4711},{"date":"2026-01-03","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-04","measure":"billions of tokens","value":4.4711},{"date":"2026-01-04","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-05","measure":"billions of tokens","value":4.4711},{"date":"2026-01-05","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-06","measure":"billions of tokens","value":4.4711},{"date":"2026-01-06","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-07","measure":"billions of tokens","value":4.4711},{"date":"2026-01-07","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-08","measure":"billions of tokens","value":4.4711},{"date":"2026-01-08","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-09","measure":"billions of tokens","value":4.4711},{"date":"2026-01-09","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-10","measure":"billions of tokens","value":4.4711},{"date":"2026-01-10","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-11","measure":"billions of tokens","value":4.4711},{"date":"2026-01-11","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-12","measure":"billions of tokens","value":4.4711},{"date":"2026-01-12","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-13","measure":"billions of tokens","value":4.4711},{"date":"2026-01-13","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-14","measure":"billions of tokens","value":4.4711},{"date":"2026-01-14","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-15","measure":"billions of tokens","value":4.4711},{"date":"2026-01-15","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-16","measure":"billions of tokens","value":4.4711},{"date":"2026-01-16","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-17","measure":"billions of tokens","value":4.4711},{"date":"2026-01-17","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-18","measure":"billions of tokens","value":4.4711},{"date":"2026-01-18","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-19","measure":"billions of tokens","value":4.4711},{"date":"2026-01-19","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-20","measure":"billions of tokens","value":4.4711},{"date":"2026-01-20","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-21","measure":"billions of tokens","value":4.4711},{"date":"2026-01-21","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-22","measure":"billions of tokens","value":4.4711},{"date":"2026-01-22","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-23","measure":"billions of tokens","value":4.4711},{"date":"2026-01-23","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-24","measure":"billions of tokens","value":4.4711},{"date":"2026-01-24","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-25","measure":"billions of tokens","value":4.4711},{"date":"2026-01-25","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-26","measure":"billions of tokens","value":4.4711},{"date":"2026-01-26","measure":"indicative API cost (US$)","value":7099.05},{"date":"2026-01-27","measure":"billions of tokens","value":4.5117},{"date":"2026-01-27","measure":"indicative API cost (US$)","value":7129.63},{"date":"2026-01-28","measure":"billions of tokens","value":4.5407},{"date":"2026-01-28","measure":"indicative API cost (US$)","value":7152.35},{"date":"2026-01-29","measure":"billions of tokens","value":4.5514},{"date":"2026-01-29","measure":"indicative API cost (US$)","value":7159.46},{"date":"2026-01-30","measure":"billions of tokens","value":4.5514},{"date":"2026-01-30","measure":"indicative API cost (US$)","value":7159.46},{"date":"2026-01-31","measure":"billions of tokens","value":4.5595},{"date":"2026-01-31","measure":"indicative API cost (US$)","value":7166.43},{"date":"2026-02-01","measure":"billions of tokens","value":4.5595},{"date":"2026-02-01","measure":"indicative API cost (US$)","value":7166.43},{"date":"2026-02-02","measure":"billions of tokens","value":4.6206},{"date":"2026-02-02","measure":"indicative API cost (US$)","value":7221.85},{"date":"2026-02-03","measure":"billions of tokens","value":4.6977},{"date":"2026-02-03","measure":"indicative API cost (US$)","value":7296.38},{"date":"2026-02-04","measure":"billions of tokens","value":4.7708},{"date":"2026-02-04","measure":"indicative API cost (US$)","value":7363.43},{"date":"2026-02-05","measure":"billions of tokens","value":4.8388},{"date":"2026-02-05","measure":"indicative API cost (US$)","value":7418.28},{"date":"2026-02-06","measure":"billions of tokens","value":4.9045},{"date":"2026-02-06","measure":"indicative API cost (US$)","value":7481.92},{"date":"2026-02-07","measure":"billions of tokens","value":5.0181},{"date":"2026-02-07","measure":"indicative API cost (US$)","value":7572.61},{"date":"2026-02-08","measure":"billions of tokens","value":5.0329},{"date":"2026-02-08","measure":"indicative API cost (US$)","value":7590.21},{"date":"2026-02-09","measure":"billions of tokens","value":5.0534},{"date":"2026-02-09","measure":"indicative API cost (US$)","value":7609.75},{"date":"2026-02-10","measure":"billions of tokens","value":5.0851},{"date":"2026-02-10","measure":"indicative API cost (US$)","value":7633.62},{"date":"2026-02-11","measure":"billions of tokens","value":5.0945},{"date":"2026-02-11","measure":"indicative API cost (US$)","value":7641.67},{"date":"2026-02-12","measure":"billions of tokens","value":5.1204},{"date":"2026-02-12","measure":"indicative API cost (US$)","value":7659.33},{"date":"2026-02-13","measure":"billions of tokens","value":5.1212},{"date":"2026-02-13","measure":"indicative API cost (US$)","value":7660.35},{"date":"2026-02-14","measure":"billions of tokens","value":5.1214},{"date":"2026-02-14","measure":"indicative API cost (US$)","value":7660.68},{"date":"2026-02-15","measure":"billions of tokens","value":5.1214},{"date":"2026-02-15","measure":"indicative API cost (US$)","value":7660.68},{"date":"2026-02-16","measure":"billions of tokens","value":5.1251},{"date":"2026-02-16","measure":"indicative API cost (US$)","value":7664.94},{"date":"2026-02-17","measure":"billions of tokens","value":5.2214},{"date":"2026-02-17","measure":"indicative API cost (US$)","value":7737.98},{"date":"2026-02-18","measure":"billions of tokens","value":5.3349},{"date":"2026-02-18","measure":"indicative API cost (US$)","value":7831.69},{"date":"2026-02-19","measure":"billions of tokens","value":5.5744},{"date":"2026-02-19","measure":"indicative API cost (US$)","value":7998.85},{"date":"2026-02-20","measure":"billions of tokens","value":5.6882},{"date":"2026-02-20","measure":"indicative API cost (US$)","value":8086.51},{"date":"2026-02-21","measure":"billions of tokens","value":5.725},{"date":"2026-02-21","measure":"indicative API cost (US$)","value":8115.17},{"date":"2026-02-22","measure":"billions of tokens","value":5.7397},{"date":"2026-02-22","measure":"indicative API cost (US$)","value":8126.58},{"date":"2026-02-23","measure":"billions of tokens","value":5.8652},{"date":"2026-02-23","measure":"indicative API cost (US$)","value":8214.52},{"date":"2026-02-24","measure":"billions of tokens","value":5.9833},{"date":"2026-02-24","measure":"indicative API cost (US$)","value":8300.94},{"date":"2026-02-25","measure":"billions of tokens","value":6.0455},{"date":"2026-02-25","measure":"indicative API cost (US$)","value":8351.67},{"date":"2026-02-26","measure":"billions of tokens","value":6.1183},{"date":"2026-02-26","measure":"indicative API cost (US$)","value":8414.11},{"date":"2026-02-27","measure":"billions of tokens","value":6.393},{"date":"2026-02-27","measure":"indicative API cost (US$)","value":8637.54},{"date":"2026-02-28","measure":"billions of tokens","value":6.5192},{"date":"2026-02-28","measure":"indicative API cost (US$)","value":8743.72},{"date":"2026-03-01","measure":"billions of tokens","value":6.841},{"date":"2026-03-01","measure":"indicative API cost (US$)","value":8962.25},{"date":"2026-03-02","measure":"billions of tokens","value":6.9275},{"date":"2026-03-02","measure":"indicative API cost (US$)","value":9040.49},{"date":"2026-03-03","measure":"billions of tokens","value":6.9774},{"date":"2026-03-03","measure":"indicative API cost (US$)","value":9100.96},{"date":"2026-03-04","measure":"billions of tokens","value":7.0914},{"date":"2026-03-04","measure":"indicative API cost (US$)","value":9195.67},{"date":"2026-03-05","measure":"billions of tokens","value":7.1466},{"date":"2026-03-05","measure":"indicative API cost (US$)","value":9244.31},{"date":"2026-03-06","measure":"billions of tokens","value":7.1732},{"date":"2026-03-06","measure":"indicative API cost (US$)","value":9268.61},{"date":"2026-03-07","measure":"billions of tokens","value":7.1746},{"date":"2026-03-07","measure":"indicative API cost (US$)","value":9269.9},{"date":"2026-03-08","measure":"billions of tokens","value":7.1747},{"date":"2026-03-08","measure":"indicative API cost (US$)","value":9270.3},{"date":"2026-03-09","measure":"billions of tokens","value":7.1758},{"date":"2026-03-09","measure":"indicative API cost (US$)","value":9271.7},{"date":"2026-03-10","measure":"billions of tokens","value":7.2298},{"date":"2026-03-10","measure":"indicative API cost (US$)","value":9320.65},{"date":"2026-03-11","measure":"billions of tokens","value":7.3788},{"date":"2026-03-11","measure":"indicative API cost (US$)","value":9435.18},{"date":"2026-03-12","measure":"billions of tokens","value":7.4463},{"date":"2026-03-12","measure":"indicative API cost (US$)","value":9490.73},{"date":"2026-03-13","measure":"billions of tokens","value":7.5059},{"date":"2026-03-13","measure":"indicative API cost (US$)","value":9541.78},{"date":"2026-03-14","measure":"billions of tokens","value":7.541},{"date":"2026-03-14","measure":"indicative API cost (US$)","value":9578.31},{"date":"2026-03-15","measure":"billions of tokens","value":7.5721},{"date":"2026-03-15","measure":"indicative API cost (US$)","value":9604.17},{"date":"2026-03-16","measure":"billions of tokens","value":7.5988},{"date":"2026-03-16","measure":"indicative API cost (US$)","value":9626.34},{"date":"2026-03-17","measure":"billions of tokens","value":7.6205},{"date":"2026-03-17","measure":"indicative API cost (US$)","value":9647.37},{"date":"2026-03-18","measure":"billions of tokens","value":7.6509},{"date":"2026-03-18","measure":"indicative API cost (US$)","value":9676.8},{"date":"2026-03-19","measure":"billions of tokens","value":7.7004},{"date":"2026-03-19","measure":"indicative API cost (US$)","value":9717.47},{"date":"2026-03-20","measure":"billions of tokens","value":7.7273},{"date":"2026-03-20","measure":"indicative API cost (US$)","value":9750.34},{"date":"2026-03-21","measure":"billions of tokens","value":7.7629},{"date":"2026-03-21","measure":"indicative API cost (US$)","value":9785.29},{"date":"2026-03-22","measure":"billions of tokens","value":7.7664},{"date":"2026-03-22","measure":"indicative API cost (US$)","value":9789.92},{"date":"2026-03-23","measure":"billions of tokens","value":7.7916},{"date":"2026-03-23","measure":"indicative API cost (US$)","value":9811.94},{"date":"2026-03-24","measure":"billions of tokens","value":7.8088},{"date":"2026-03-24","measure":"indicative API cost (US$)","value":9829.95},{"date":"2026-03-25","measure":"billions of tokens","value":7.8588},{"date":"2026-03-25","measure":"indicative API cost (US$)","value":9881.25},{"date":"2026-03-26","measure":"billions of tokens","value":7.9034},{"date":"2026-03-26","measure":"indicative API cost (US$)","value":9920.32},{"date":"2026-03-27","measure":"billions of tokens","value":8.024},{"date":"2026-03-27","measure":"indicative API cost (US$)","value":10026.65},{"date":"2026-03-28","measure":"billions of tokens","value":8.0441},{"date":"2026-03-28","measure":"indicative API cost (US$)","value":10040.49},{"date":"2026-03-29","measure":"billions of tokens","value":8.1219},{"date":"2026-03-29","measure":"indicative API cost (US$)","value":10095.65},{"date":"2026-03-30","measure":"billions of tokens","value":8.1916},{"date":"2026-03-30","measure":"indicative API cost (US$)","value":10155.12},{"date":"2026-03-31","measure":"billions of tokens","value":8.3375},{"date":"2026-03-31","measure":"indicative API cost (US$)","value":10269.62},{"date":"2026-04-01","measure":"billions of tokens","value":8.4183},{"date":"2026-04-01","measure":"indicative API cost (US$)","value":10341.71},{"date":"2026-04-02","measure":"billions of tokens","value":8.4853},{"date":"2026-04-02","measure":"indicative API cost (US$)","value":10401.73},{"date":"2026-04-03","measure":"billions of tokens","value":8.6285},{"date":"2026-04-03","measure":"indicative API cost (US$)","value":10510.06},{"date":"2026-04-04","measure":"billions of tokens","value":8.7004},{"date":"2026-04-04","measure":"indicative API cost (US$)","value":10567.91},{"date":"2026-04-05","measure":"billions of tokens","value":8.7182},{"date":"2026-04-05","measure":"indicative API cost (US$)","value":10582.87},{"date":"2026-04-06","measure":"billions of tokens","value":8.7794},{"date":"2026-04-06","measure":"indicative API cost (US$)","value":10627.72},{"date":"2026-04-07","measure":"billions of tokens","value":8.9377},{"date":"2026-04-07","measure":"indicative API cost (US$)","value":10746.56},{"date":"2026-04-08","measure":"billions of tokens","value":9.1543},{"date":"2026-04-08","measure":"indicative API cost (US$)","value":10904.86},{"date":"2026-04-09","measure":"billions of tokens","value":9.4635},{"date":"2026-04-09","measure":"indicative API cost (US$)","value":11132.25},{"date":"2026-04-10","measure":"billions of tokens","value":9.958},{"date":"2026-04-10","measure":"indicative API cost (US$)","value":11497.31},{"date":"2026-04-11","measure":"billions of tokens","value":10.1332},{"date":"2026-04-11","measure":"indicative API cost (US$)","value":11641.96},{"date":"2026-04-12","measure":"billions of tokens","value":10.2511},{"date":"2026-04-12","measure":"indicative API cost (US$)","value":11726.34},{"date":"2026-04-13","measure":"billions of tokens","value":10.4543},{"date":"2026-04-13","measure":"indicative API cost (US$)","value":11885.59},{"date":"2026-04-14","measure":"billions of tokens","value":10.5732},{"date":"2026-04-14","measure":"indicative API cost (US$)","value":11996.67},{"date":"2026-04-15","measure":"billions of tokens","value":10.7028},{"date":"2026-04-15","measure":"indicative API cost (US$)","value":12130.67},{"date":"2026-04-16","measure":"billions of tokens","value":10.8551},{"date":"2026-04-16","measure":"indicative API cost (US$)","value":12283.81},{"date":"2026-04-17","measure":"billions of tokens","value":11.0403},{"date":"2026-04-17","measure":"indicative API cost (US$)","value":12433.74},{"date":"2026-04-18","measure":"billions of tokens","value":11.1987},{"date":"2026-04-18","measure":"indicative API cost (US$)","value":12569.08},{"date":"2026-04-19","measure":"billions of tokens","value":11.3222},{"date":"2026-04-19","measure":"indicative API cost (US$)","value":12669.91},{"date":"2026-04-20","measure":"billions of tokens","value":11.4978},{"date":"2026-04-20","measure":"indicative API cost (US$)","value":12815.32},{"date":"2026-04-21","measure":"billions of tokens","value":11.5403},{"date":"2026-04-21","measure":"indicative API cost (US$)","value":12862.22},{"date":"2026-04-22","measure":"billions of tokens","value":11.7263},{"date":"2026-04-22","measure":"indicative API cost (US$)","value":13046.34},{"date":"2026-04-23","measure":"billions of tokens","value":11.8698},{"date":"2026-04-23","measure":"indicative API cost (US$)","value":13174.77},{"date":"2026-04-24","measure":"billions of tokens","value":12.0878},{"date":"2026-04-24","measure":"indicative API cost (US$)","value":13375.63},{"date":"2026-04-25","measure":"billions of tokens","value":12.2449},{"date":"2026-04-25","measure":"indicative API cost (US$)","value":13520.86},{"date":"2026-04-26","measure":"billions of tokens","value":12.3717},{"date":"2026-04-26","measure":"indicative API cost (US$)","value":13620.64},{"date":"2026-04-27","measure":"billions of tokens","value":12.3757},{"date":"2026-04-27","measure":"indicative API cost (US$)","value":13628.41},{"date":"2026-04-28","measure":"billions of tokens","value":12.6126},{"date":"2026-04-28","measure":"indicative API cost (US$)","value":13850.99},{"date":"2026-04-29","measure":"billions of tokens","value":12.983},{"date":"2026-04-29","measure":"indicative API cost (US$)","value":14174.98},{"date":"2026-04-30","measure":"billions of tokens","value":13.3154},{"date":"2026-04-30","measure":"indicative API cost (US$)","value":14466.4},{"date":"2026-05-01","measure":"billions of tokens","value":13.6816},{"date":"2026-05-01","measure":"indicative API cost (US$)","value":14796.24},{"date":"2026-05-02","measure":"billions of tokens","value":13.7023},{"date":"2026-05-02","measure":"indicative API cost (US$)","value":14829.86},{"date":"2026-05-03","measure":"billions of tokens","value":13.7134},{"date":"2026-05-03","measure":"indicative API cost (US$)","value":14845.36},{"date":"2026-05-04","measure":"billions of tokens","value":13.9002},{"date":"2026-05-04","measure":"indicative API cost (US$)","value":15010.0},{"date":"2026-05-05","measure":"billions of tokens","value":14.2838},{"date":"2026-05-05","measure":"indicative API cost (US$)","value":15335.36},{"date":"2026-05-06","measure":"billions of tokens","value":14.5801},{"date":"2026-05-06","measure":"indicative API cost (US$)","value":15604.97},{"date":"2026-05-07","measure":"billions of tokens","value":14.7042},{"date":"2026-05-07","measure":"indicative API cost (US$)","value":15743.9},{"date":"2026-05-08","measure":"billions of tokens","value":15.015},{"date":"2026-05-08","measure":"indicative API cost (US$)","value":15990.57},{"date":"2026-05-09","measure":"billions of tokens","value":15.0518},{"date":"2026-05-09","measure":"indicative API cost (US$)","value":16041.96},{"date":"2026-05-10","measure":"billions of tokens","value":15.0724},{"date":"2026-05-10","measure":"indicative API cost (US$)","value":16072.54},{"date":"2026-05-11","measure":"billions of tokens","value":15.2},{"date":"2026-05-11","measure":"indicative API cost (US$)","value":16202.86},{"date":"2026-05-12","measure":"billions of tokens","value":15.4843},{"date":"2026-05-12","measure":"indicative API cost (US$)","value":16454.73},{"date":"2026-05-13","measure":"billions of tokens","value":15.7344},{"date":"2026-05-13","measure":"indicative API cost (US$)","value":16676.61},{"date":"2026-05-14","measure":"billions of tokens","value":15.8143},{"date":"2026-05-14","measure":"indicative API cost (US$)","value":16763.85},{"date":"2026-05-15","measure":"billions of tokens","value":16.0463},{"date":"2026-05-15","measure":"indicative API cost (US$)","value":16960.31},{"date":"2026-05-16","measure":"billions of tokens","value":16.1776},{"date":"2026-05-16","measure":"indicative API cost (US$)","value":17064.93},{"date":"2026-05-17","measure":"billions of tokens","value":16.2797},{"date":"2026-05-17","measure":"indicative API cost (US$)","value":17141.06},{"date":"2026-05-18","measure":"billions of tokens","value":16.6425},{"date":"2026-05-18","measure":"indicative API cost (US$)","value":17410.75},{"date":"2026-05-19","measure":"billions of tokens","value":16.8537},{"date":"2026-05-19","measure":"indicative API cost (US$)","value":17600.28},{"date":"2026-05-20","measure":"billions of tokens","value":17.0538},{"date":"2026-05-20","measure":"indicative API cost (US$)","value":17791.68},{"date":"2026-05-21","measure":"billions of tokens","value":17.2121},{"date":"2026-05-21","measure":"indicative API cost (US$)","value":17971.68},{"date":"2026-05-22","measure":"billions of tokens","value":17.3702},{"date":"2026-05-22","measure":"indicative API cost (US$)","value":18172.46},{"date":"2026-05-23","measure":"billions of tokens","value":17.5851},{"date":"2026-05-23","measure":"indicative API cost (US$)","value":18345.41},{"date":"2026-05-24","measure":"billions of tokens","value":17.6293},{"date":"2026-05-24","measure":"indicative API cost (US$)","value":18400.12},{"date":"2026-05-25","measure":"billions of tokens","value":17.787},{"date":"2026-05-25","measure":"indicative API cost (US$)","value":18558.83},{"date":"2026-05-26","measure":"billions of tokens","value":18.012},{"date":"2026-05-26","measure":"indicative API cost (US$)","value":18772.59},{"date":"2026-05-27","measure":"billions of tokens","value":18.1297},{"date":"2026-05-27","measure":"indicative API cost (US$)","value":18899.09},{"date":"2026-05-28","measure":"billions of tokens","value":18.2375},{"date":"2026-05-28","measure":"indicative API cost (US$)","value":19014.32},{"date":"2026-05-29","measure":"billions of tokens","value":18.523},{"date":"2026-05-29","measure":"indicative API cost (US$)","value":19320.58},{"date":"2026-05-30","measure":"billions of tokens","value":18.6165},{"date":"2026-05-30","measure":"indicative API cost (US$)","value":19478.63},{"date":"2026-05-31","measure":"billions of tokens","value":18.732},{"date":"2026-05-31","measure":"indicative API cost (US$)","value":19633.31},{"date":"2026-06-01","measure":"billions of tokens","value":18.7831},{"date":"2026-06-01","measure":"indicative API cost (US$)","value":19696.88},{"date":"2026-06-02","measure":"billions of tokens","value":18.9058},{"date":"2026-06-02","measure":"indicative API cost (US$)","value":19855.5},{"date":"2026-06-03","measure":"billions of tokens","value":19.6634},{"date":"2026-06-03","measure":"indicative API cost (US$)","value":20483.98},{"date":"2026-06-04","measure":"billions of tokens","value":19.9652},{"date":"2026-06-04","measure":"indicative API cost (US$)","value":20784.67},{"date":"2026-06-05","measure":"billions of tokens","value":20.234},{"date":"2026-06-05","measure":"indicative API cost (US$)","value":21084.31},{"date":"2026-06-06","measure":"billions of tokens","value":20.4023},{"date":"2026-06-06","measure":"indicative API cost (US$)","value":21260.99},{"date":"2026-06-07","measure":"billions of tokens","value":20.6978},{"date":"2026-06-07","measure":"indicative API cost (US$)","value":21552.56},{"date":"2026-06-08","measure":"billions of tokens","value":21.0624},{"date":"2026-06-08","measure":"indicative API cost (US$)","value":21880.97},{"date":"2026-06-09","measure":"billions of tokens","value":21.5824},{"date":"2026-06-09","measure":"indicative API cost (US$)","value":22362.87},{"date":"2026-06-10","measure":"billions of tokens","value":22.4853},{"date":"2026-06-10","measure":"indicative API cost (US$)","value":23510.17},{"date":"2026-06-11","measure":"billions of tokens","value":22.6379},{"date":"2026-06-11","measure":"indicative API cost (US$)","value":23673.66},{"date":"2026-06-12","measure":"billions of tokens","value":22.6853},{"date":"2026-06-12","measure":"indicative API cost (US$)","value":23753.56},{"date":"2026-06-13","measure":"billions of tokens","value":22.7503},{"date":"2026-06-13","measure":"indicative API cost (US$)","value":23868.34},{"date":"2026-06-14","measure":"billions of tokens","value":22.801},{"date":"2026-06-14","measure":"indicative API cost (US$)","value":23919.66},{"date":"2026-06-15","measure":"billions of tokens","value":22.9429},{"date":"2026-06-15","measure":"indicative API cost (US$)","value":24126.05},{"date":"2026-06-16","measure":"billions of tokens","value":23.1474},{"date":"2026-06-16","measure":"indicative API cost (US$)","value":24406.52},{"date":"2026-06-17","measure":"billions of tokens","value":23.7651},{"date":"2026-06-17","measure":"indicative API cost (US$)","value":24900.19},{"date":"2026-06-18","measure":"billions of tokens","value":24.0699},{"date":"2026-06-18","measure":"indicative API cost (US$)","value":25283.81},{"date":"2026-06-19","measure":"billions of tokens","value":24.4153},{"date":"2026-06-19","measure":"indicative API cost (US$)","value":25726.81},{"date":"2026-06-20","measure":"billions of tokens","value":24.7213},{"date":"2026-06-20","measure":"indicative API cost (US$)","value":26086.91},{"date":"2026-06-21","measure":"billions of tokens","value":24.872},{"date":"2026-06-21","measure":"indicative API cost (US$)","value":26237.39},{"date":"2026-06-22","measure":"billions of tokens","value":25.1439},{"date":"2026-06-22","measure":"indicative API cost (US$)","value":26517.09},{"date":"2026-06-23","measure":"billions of tokens","value":25.4273},{"date":"2026-06-23","measure":"indicative API cost (US$)","value":26773.73},{"date":"2026-06-24","measure":"billions of tokens","value":25.6569},{"date":"2026-06-24","measure":"indicative API cost (US$)","value":27007.28},{"date":"2026-06-25","measure":"billions of tokens","value":25.877},{"date":"2026-06-25","measure":"indicative API cost (US$)","value":27262.08},{"date":"2026-06-26","measure":"billions of tokens","value":26.0721},{"date":"2026-06-26","measure":"indicative API cost (US$)","value":27467.74},{"date":"2026-06-27","measure":"billions of tokens","value":26.2598},{"date":"2026-06-27","measure":"indicative API cost (US$)","value":27680.05},{"date":"2026-06-28","measure":"billions of tokens","value":26.3564},{"date":"2026-06-28","measure":"indicative API cost (US$)","value":27773.57},{"date":"2026-06-29","measure":"billions of tokens","value":26.4404},{"date":"2026-06-29","measure":"indicative API cost (US$)","value":27872.04},{"date":"2026-06-30","measure":"billions of tokens","value":26.4987},{"date":"2026-06-30","measure":"indicative API cost (US$)","value":27945.39},{"date":"2026-07-01","measure":"billions of tokens","value":26.7588},{"date":"2026-07-01","measure":"indicative API cost (US$)","value":28205.83},{"date":"2026-07-02","measure":"billions of tokens","value":26.9489},{"date":"2026-07-02","measure":"indicative API cost (US$)","value":28494.39},{"date":"2026-07-03","measure":"billions of tokens","value":27.3504},{"date":"2026-07-03","measure":"indicative API cost (US$)","value":29082.99},{"date":"2026-07-04","measure":"billions of tokens","value":27.5898},{"date":"2026-07-04","measure":"indicative API cost (US$)","value":29456.14},{"date":"2026-07-05","measure":"billions of tokens","value":27.7021},{"date":"2026-07-05","measure":"indicative API cost (US$)","value":29587.45},{"date":"2026-07-06","measure":"billions of tokens","value":28.0148},{"date":"2026-07-06","measure":"indicative API cost (US$)","value":29885.2},{"date":"2026-07-07","measure":"billions of tokens","value":28.541},{"date":"2026-07-07","measure":"indicative API cost (US$)","value":30469.79},{"date":"2026-07-08","measure":"billions of tokens","value":29.0811},{"date":"2026-07-08","measure":"indicative API cost (US$)","value":30862.94},{"date":"2026-07-09","measure":"billions of tokens","value":29.9335},{"date":"2026-07-09","measure":"indicative API cost (US$)","value":31540.81},{"date":"2026-07-10","measure":"billions of tokens","value":30.6049},{"date":"2026-07-10","measure":"indicative API cost (US$)","value":32108.66},{"date":"2026-07-11","measure":"billions of tokens","value":31.1947},{"date":"2026-07-11","measure":"indicative API cost (US$)","value":32520.36},{"date":"2026-07-12","measure":"billions of tokens","value":31.7751},{"date":"2026-07-12","measure":"indicative API cost (US$)","value":32989.9},{"date":"2026-07-13","measure":"billions of tokens","value":32.5054},{"date":"2026-07-13","measure":"indicative API cost (US$)","value":33491.17},{"date":"2026-07-14","measure":"billions of tokens","value":33.1659},{"date":"2026-07-14","measure":"indicative API cost (US$)","value":33991.15},{"date":"2026-07-15","measure":"billions of tokens","value":33.7192},{"date":"2026-07-15","measure":"indicative API cost (US$)","value":34392.7},{"date":"2026-07-16","measure":"billions of tokens","value":34.6025},{"date":"2026-07-16","measure":"indicative API cost (US$)","value":35255.12},{"date":"2026-07-17","measure":"billions of tokens","value":35.2334},{"date":"2026-07-17","measure":"indicative API cost (US$)","value":35772.35},{"date":"2026-07-18","measure":"billions of tokens","value":35.708},{"date":"2026-07-18","measure":"indicative API cost (US$)","value":36075.95},{"date":"2026-07-19","measure":"billions of tokens","value":36.2417},{"date":"2026-07-19","measure":"indicative API cost (US$)","value":36370.48},{"date":"2026-07-20","measure":"billions of tokens","value":36.9349},{"date":"2026-07-20","measure":"indicative API cost (US$)","value":36854.73},{"date":"2026-07-21","measure":"billions of tokens","value":37.6039},{"date":"2026-07-21","measure":"indicative API cost (US$)","value":37332.92},{"date":"2026-07-22","measure":"billions of tokens","value":38.3076},{"date":"2026-07-22","measure":"indicative API cost (US$)","value":37825.01},{"date":"2026-07-23","measure":"billions of tokens","value":39.1601},{"date":"2026-07-23","measure":"indicative API cost (US$)","value":38506.49},{"date":"2026-07-24","measure":"billions of tokens","value":39.5013},{"date":"2026-07-24","measure":"indicative API cost (US$)","value":38693.95},{"date":"2026-07-25","measure":"billions of tokens","value":40.0774},{"date":"2026-07-25","measure":"indicative API cost (US$)","value":39002.34},{"date":"2026-07-26","measure":"billions of tokens","value":40.5832},{"date":"2026-07-26","measure":"indicative API cost (US$)","value":39173.61},{"date":"2026-07-27","measure":"billions of tokens","value":40.8644},{"date":"2026-07-27","measure":"indicative API cost (US$)","value":39316.65},{"date":"2026-07-28","measure":"billions of tokens","value":41.7352},{"date":"2026-07-28","measure":"indicative API cost (US$)","value":39991.8},{"date":"2026-07-29","measure":"billions of tokens","value":42.7509},{"date":"2026-07-29","measure":"indicative API cost (US$)","value":40742.47},{"date":"2026-07-30","measure":"billions of tokens","value":43.6116},{"date":"2026-07-30","measure":"indicative API cost (US$)","value":41352.65},{"date":"2026-07-31","measure":"billions of tokens","value":44.4291},{"date":"2026-07-31","measure":"indicative API cost (US$)","value":42022.95},{"date":"2026-08-01","measure":"billions of tokens","value":44.9325},{"date":"2026-08-01","measure":"indicative API cost (US$)","value":42406.23},{"date":"2026-08-02","measure":"billions of tokens","value":45.0665},{"date":"2026-08-02","measure":"indicative API cost (US$)","value":42582.84},{"date":"2026-08-03","measure":"billions of tokens","value":45.2061},{"date":"2026-08-03","measure":"indicative API cost (US$)","value":42697.03},{"date":"2026-08-04","measure":"billions of tokens","value":46.0593},{"date":"2026-08-04","measure":"indicative API cost (US$)","value":43550.52},{"date":"2026-08-05","measure":"billions of tokens","value":46.6109},{"date":"2026-08-05","measure":"indicative API cost (US$)","value":44024.56},{"date":"2026-08-06","measure":"billions of tokens","value":47.2544},{"date":"2026-08-06","measure":"indicative API cost (US$)","value":44565.12},{"date":"2026-08-07","measure":"billions of tokens","value":47.9516},{"date":"2026-08-07","measure":"indicative API cost (US$)","value":45144.05},{"date":"2026-08-08","measure":"billions of tokens","value":48.5893},{"date":"2026-08-08","measure":"indicative API cost (US$)","value":45545.47},{"date":"2026-08-09","measure":"billions of tokens","value":49.0523},{"date":"2026-08-09","measure":"indicative API cost (US$)","value":45722.55},{"date":"2026-08-10","measure":"billions of tokens","value":49.5997},{"date":"2026-08-10","measure":"indicative API cost (US$)","value":45977.61},{"date":"2026-08-11","measure":"billions of tokens","value":50.3018},{"date":"2026-08-11","measure":"indicative API cost (US$)","value":46297.05},{"date":"2026-08-12","measure":"billions of tokens","value":51.011},{"date":"2026-08-12","measure":"indicative API cost (US$)","value":46636.68},{"date":"2026-08-13","measure":"billions of tokens","value":51.6563},{"date":"2026-08-13","measure":"indicative API cost (US$)","value":47026.19},{"date":"2026-08-14","measure":"billions of tokens","value":52.0176},{"date":"2026-08-14","measure":"indicative API cost (US$)","value":47340.17},{"date":"2026-08-15","measure":"billions of tokens","value":52.3587},{"date":"2026-08-15","measure":"indicative API cost (US$)","value":47602.04},{"date":"2026-08-16","measure":"billions of tokens","value":53.0105},{"date":"2026-08-16","measure":"indicative API cost (US$)","value":48167.56},{"date":"2026-08-17","measure":"billions of tokens","value":53.8054},{"date":"2026-08-17","measure":"indicative API cost (US$)","value":48963.81},{"date":"2026-08-18","measure":"billions of tokens","value":54.4929},{"date":"2026-08-18","measure":"indicative API cost (US$)","value":49607.02},{"date":"2026-08-19","measure":"billions of tokens","value":55.1817},{"date":"2026-08-19","measure":"indicative API cost (US$)","value":50267.42}]
+[
+{
+"date": "2025-05-11",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-11",
+"measure": "indicative API cost (US$)",
+"value": 3.43
+},
+{
+"date": "2025-05-12",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-12",
+"measure": "indicative API cost (US$)",
+"value": 3.53
+},
+{
+"date": "2025-05-13",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-13",
+"measure": "indicative API cost (US$)",
+"value": 3.53
+},
+{
+"date": "2025-05-14",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-14",
+"measure": "indicative API cost (US$)",
+"value": 3.53
+},
+{
+"date": "2025-05-15",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-15",
+"measure": "indicative API cost (US$)",
+"value": 3.53
+},
+{
+"date": "2025-05-16",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-16",
+"measure": "indicative API cost (US$)",
+"value": 3.53
+},
+{
+"date": "2025-05-17",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-17",
+"measure": "indicative API cost (US$)",
+"value": 3.53
+},
+{
+"date": "2025-05-18",
+"measure": "billions of tokens",
+"value": 0.0077
+},
+{
+"date": "2025-05-18",
+"measure": "indicative API cost (US$)",
+"value": 3.53
+},
+{
+"date": "2025-05-19",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-19",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-20",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-20",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-21",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-21",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-22",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-22",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-23",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-23",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-24",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-24",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-25",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-25",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-26",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-26",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-27",
+"measure": "billions of tokens",
+"value": 0.0265
+},
+{
+"date": "2025-05-27",
+"measure": "indicative API cost (US$)",
+"value": 26.63
+},
+{
+"date": "2025-05-28",
+"measure": "billions of tokens",
+"value": 0.0282
+},
+{
+"date": "2025-05-28",
+"measure": "indicative API cost (US$)",
+"value": 27.39
+},
+{
+"date": "2025-05-29",
+"measure": "billions of tokens",
+"value": 0.0299
+},
+{
+"date": "2025-05-29",
+"measure": "indicative API cost (US$)",
+"value": 28.61
+},
+{
+"date": "2025-05-30",
+"measure": "billions of tokens",
+"value": 0.0299
+},
+{
+"date": "2025-05-30",
+"measure": "indicative API cost (US$)",
+"value": 28.61
+},
+{
+"date": "2025-05-31",
+"measure": "billions of tokens",
+"value": 0.0333
+},
+{
+"date": "2025-05-31",
+"measure": "indicative API cost (US$)",
+"value": 30.88
+},
+{
+"date": "2025-06-01",
+"measure": "billions of tokens",
+"value": 0.0334
+},
+{
+"date": "2025-06-01",
+"measure": "indicative API cost (US$)",
+"value": 31.0
+},
+{
+"date": "2025-06-02",
+"measure": "billions of tokens",
+"value": 0.0334
+},
+{
+"date": "2025-06-02",
+"measure": "indicative API cost (US$)",
+"value": 31.0
+},
+{
+"date": "2025-06-03",
+"measure": "billions of tokens",
+"value": 0.0399
+},
+{
+"date": "2025-06-03",
+"measure": "indicative API cost (US$)",
+"value": 34.63
+},
+{
+"date": "2025-06-04",
+"measure": "billions of tokens",
+"value": 0.0447
+},
+{
+"date": "2025-06-04",
+"measure": "indicative API cost (US$)",
+"value": 37.49
+},
+{
+"date": "2025-06-05",
+"measure": "billions of tokens",
+"value": 0.0582
+},
+{
+"date": "2025-06-05",
+"measure": "indicative API cost (US$)",
+"value": 45.52
+},
+{
+"date": "2025-06-06",
+"measure": "billions of tokens",
+"value": 0.0674
+},
+{
+"date": "2025-06-06",
+"measure": "indicative API cost (US$)",
+"value": 63.35
+},
+{
+"date": "2025-06-07",
+"measure": "billions of tokens",
+"value": 0.0674
+},
+{
+"date": "2025-06-07",
+"measure": "indicative API cost (US$)",
+"value": 63.35
+},
+{
+"date": "2025-06-08",
+"measure": "billions of tokens",
+"value": 0.0736
+},
+{
+"date": "2025-06-08",
+"measure": "indicative API cost (US$)",
+"value": 77.93
+},
+{
+"date": "2025-06-09",
+"measure": "billions of tokens",
+"value": 0.0746
+},
+{
+"date": "2025-06-09",
+"measure": "indicative API cost (US$)",
+"value": 80.48
+},
+{
+"date": "2025-06-10",
+"measure": "billions of tokens",
+"value": 0.0796
+},
+{
+"date": "2025-06-10",
+"measure": "indicative API cost (US$)",
+"value": 83.94
+},
+{
+"date": "2025-06-11",
+"measure": "billions of tokens",
+"value": 0.0861
+},
+{
+"date": "2025-06-11",
+"measure": "indicative API cost (US$)",
+"value": 97.14
+},
+{
+"date": "2025-06-12",
+"measure": "billions of tokens",
+"value": 0.0951
+},
+{
+"date": "2025-06-12",
+"measure": "indicative API cost (US$)",
+"value": 118.71
+},
+{
+"date": "2025-06-13",
+"measure": "billions of tokens",
+"value": 0.1206
+},
+{
+"date": "2025-06-13",
+"measure": "indicative API cost (US$)",
+"value": 165.46
+},
+{
+"date": "2025-06-14",
+"measure": "billions of tokens",
+"value": 0.1206
+},
+{
+"date": "2025-06-14",
+"measure": "indicative API cost (US$)",
+"value": 165.46
+},
+{
+"date": "2025-06-15",
+"measure": "billions of tokens",
+"value": 0.1224
+},
+{
+"date": "2025-06-15",
+"measure": "indicative API cost (US$)",
+"value": 166.34
+},
+{
+"date": "2025-06-16",
+"measure": "billions of tokens",
+"value": 0.1299
+},
+{
+"date": "2025-06-16",
+"measure": "indicative API cost (US$)",
+"value": 172.12
+},
+{
+"date": "2025-06-17",
+"measure": "billions of tokens",
+"value": 0.1358
+},
+{
+"date": "2025-06-17",
+"measure": "indicative API cost (US$)",
+"value": 175.01
+},
+{
+"date": "2025-06-18",
+"measure": "billions of tokens",
+"value": 0.1431
+},
+{
+"date": "2025-06-18",
+"measure": "indicative API cost (US$)",
+"value": 179.77
+},
+{
+"date": "2025-06-19",
+"measure": "billions of tokens",
+"value": 0.1562
+},
+{
+"date": "2025-06-19",
+"measure": "indicative API cost (US$)",
+"value": 193.73
+},
+{
+"date": "2025-06-20",
+"measure": "billions of tokens",
+"value": 0.1958
+},
+{
+"date": "2025-06-20",
+"measure": "indicative API cost (US$)",
+"value": 215.59
+},
+{
+"date": "2025-06-21",
+"measure": "billions of tokens",
+"value": 0.2204
+},
+{
+"date": "2025-06-21",
+"measure": "indicative API cost (US$)",
+"value": 227.63
+},
+{
+"date": "2025-06-22",
+"measure": "billions of tokens",
+"value": 0.235
+},
+{
+"date": "2025-06-22",
+"measure": "indicative API cost (US$)",
+"value": 237.1
+},
+{
+"date": "2025-06-23",
+"measure": "billions of tokens",
+"value": 0.2493
+},
+{
+"date": "2025-06-23",
+"measure": "indicative API cost (US$)",
+"value": 245.27
+},
+{
+"date": "2025-06-24",
+"measure": "billions of tokens",
+"value": 0.2534
+},
+{
+"date": "2025-06-24",
+"measure": "indicative API cost (US$)",
+"value": 248.7
+},
+{
+"date": "2025-06-25",
+"measure": "billions of tokens",
+"value": 0.2534
+},
+{
+"date": "2025-06-25",
+"measure": "indicative API cost (US$)",
+"value": 248.7
+},
+{
+"date": "2025-06-26",
+"measure": "billions of tokens",
+"value": 0.2536
+},
+{
+"date": "2025-06-26",
+"measure": "indicative API cost (US$)",
+"value": 249.03
+},
+{
+"date": "2025-06-27",
+"measure": "billions of tokens",
+"value": 0.2538
+},
+{
+"date": "2025-06-27",
+"measure": "indicative API cost (US$)",
+"value": 249.21
+},
+{
+"date": "2025-06-28",
+"measure": "billions of tokens",
+"value": 0.2538
+},
+{
+"date": "2025-06-28",
+"measure": "indicative API cost (US$)",
+"value": 249.21
+},
+{
+"date": "2025-06-29",
+"measure": "billions of tokens",
+"value": 0.2538
+},
+{
+"date": "2025-06-29",
+"measure": "indicative API cost (US$)",
+"value": 249.21
+},
+{
+"date": "2025-06-30",
+"measure": "billions of tokens",
+"value": 0.2693
+},
+{
+"date": "2025-06-30",
+"measure": "indicative API cost (US$)",
+"value": 257.44
+},
+{
+"date": "2025-07-01",
+"measure": "billions of tokens",
+"value": 0.2715
+},
+{
+"date": "2025-07-01",
+"measure": "indicative API cost (US$)",
+"value": 259.27
+},
+{
+"date": "2025-07-02",
+"measure": "billions of tokens",
+"value": 0.272
+},
+{
+"date": "2025-07-02",
+"measure": "indicative API cost (US$)",
+"value": 261.41
+},
+{
+"date": "2025-07-03",
+"measure": "billions of tokens",
+"value": 0.3317
+},
+{
+"date": "2025-07-03",
+"measure": "indicative API cost (US$)",
+"value": 399.58
+},
+{
+"date": "2025-07-04",
+"measure": "billions of tokens",
+"value": 0.3555
+},
+{
+"date": "2025-07-04",
+"measure": "indicative API cost (US$)",
+"value": 454.59
+},
+{
+"date": "2025-07-05",
+"measure": "billions of tokens",
+"value": 0.3555
+},
+{
+"date": "2025-07-05",
+"measure": "indicative API cost (US$)",
+"value": 454.59
+},
+{
+"date": "2025-07-06",
+"measure": "billions of tokens",
+"value": 0.3555
+},
+{
+"date": "2025-07-06",
+"measure": "indicative API cost (US$)",
+"value": 454.59
+},
+{
+"date": "2025-07-07",
+"measure": "billions of tokens",
+"value": 0.428
+},
+{
+"date": "2025-07-07",
+"measure": "indicative API cost (US$)",
+"value": 629.55
+},
+{
+"date": "2025-07-08",
+"measure": "billions of tokens",
+"value": 0.4745
+},
+{
+"date": "2025-07-08",
+"measure": "indicative API cost (US$)",
+"value": 741.85
+},
+{
+"date": "2025-07-09",
+"measure": "billions of tokens",
+"value": 0.4898
+},
+{
+"date": "2025-07-09",
+"measure": "indicative API cost (US$)",
+"value": 781.76
+},
+{
+"date": "2025-07-10",
+"measure": "billions of tokens",
+"value": 0.5136
+},
+{
+"date": "2025-07-10",
+"measure": "indicative API cost (US$)",
+"value": 837.03
+},
+{
+"date": "2025-07-11",
+"measure": "billions of tokens",
+"value": 0.5826
+},
+{
+"date": "2025-07-11",
+"measure": "indicative API cost (US$)",
+"value": 1024.8
+},
+{
+"date": "2025-07-12",
+"measure": "billions of tokens",
+"value": 0.5826
+},
+{
+"date": "2025-07-12",
+"measure": "indicative API cost (US$)",
+"value": 1024.8
+},
+{
+"date": "2025-07-13",
+"measure": "billions of tokens",
+"value": 0.5898
+},
+{
+"date": "2025-07-13",
+"measure": "indicative API cost (US$)",
+"value": 1045.78
+},
+{
+"date": "2025-07-14",
+"measure": "billions of tokens",
+"value": 0.6347
+},
+{
+"date": "2025-07-14",
+"measure": "indicative API cost (US$)",
+"value": 1166.24
+},
+{
+"date": "2025-07-15",
+"measure": "billions of tokens",
+"value": 0.674
+},
+{
+"date": "2025-07-15",
+"measure": "indicative API cost (US$)",
+"value": 1273.1
+},
+{
+"date": "2025-07-16",
+"measure": "billions of tokens",
+"value": 0.7042
+},
+{
+"date": "2025-07-16",
+"measure": "indicative API cost (US$)",
+"value": 1352.21
+},
+{
+"date": "2025-07-17",
+"measure": "billions of tokens",
+"value": 0.7229
+},
+{
+"date": "2025-07-17",
+"measure": "indicative API cost (US$)",
+"value": 1411.62
+},
+{
+"date": "2025-07-18",
+"measure": "billions of tokens",
+"value": 0.7229
+},
+{
+"date": "2025-07-18",
+"measure": "indicative API cost (US$)",
+"value": 1411.62
+},
+{
+"date": "2025-07-19",
+"measure": "billions of tokens",
+"value": 0.7229
+},
+{
+"date": "2025-07-19",
+"measure": "indicative API cost (US$)",
+"value": 1411.62
+},
+{
+"date": "2025-07-20",
+"measure": "billions of tokens",
+"value": 0.7229
+},
+{
+"date": "2025-07-20",
+"measure": "indicative API cost (US$)",
+"value": 1411.62
+},
+{
+"date": "2025-07-21",
+"measure": "billions of tokens",
+"value": 0.7445
+},
+{
+"date": "2025-07-21",
+"measure": "indicative API cost (US$)",
+"value": 1469.03
+},
+{
+"date": "2025-07-22",
+"measure": "billions of tokens",
+"value": 0.7561
+},
+{
+"date": "2025-07-22",
+"measure": "indicative API cost (US$)",
+"value": 1504.41
+},
+{
+"date": "2025-07-23",
+"measure": "billions of tokens",
+"value": 0.7891
+},
+{
+"date": "2025-07-23",
+"measure": "indicative API cost (US$)",
+"value": 1605.57
+},
+{
+"date": "2025-07-24",
+"measure": "billions of tokens",
+"value": 0.8149
+},
+{
+"date": "2025-07-24",
+"measure": "indicative API cost (US$)",
+"value": 1693.4
+},
+{
+"date": "2025-07-25",
+"measure": "billions of tokens",
+"value": 0.8702
+},
+{
+"date": "2025-07-25",
+"measure": "indicative API cost (US$)",
+"value": 1838.15
+},
+{
+"date": "2025-07-26",
+"measure": "billions of tokens",
+"value": 0.9092
+},
+{
+"date": "2025-07-26",
+"measure": "indicative API cost (US$)",
+"value": 1946.16
+},
+{
+"date": "2025-07-27",
+"measure": "billions of tokens",
+"value": 0.9152
+},
+{
+"date": "2025-07-27",
+"measure": "indicative API cost (US$)",
+"value": 1968.74
+},
+{
+"date": "2025-07-28",
+"measure": "billions of tokens",
+"value": 0.9333
+},
+{
+"date": "2025-07-28",
+"measure": "indicative API cost (US$)",
+"value": 2012.92
+},
+{
+"date": "2025-07-29",
+"measure": "billions of tokens",
+"value": 0.956
+},
+{
+"date": "2025-07-29",
+"measure": "indicative API cost (US$)",
+"value": 2080.23
+},
+{
+"date": "2025-07-30",
+"measure": "billions of tokens",
+"value": 1.0038
+},
+{
+"date": "2025-07-30",
+"measure": "indicative API cost (US$)",
+"value": 2204.83
+},
+{
+"date": "2025-07-31",
+"measure": "billions of tokens",
+"value": 1.0054
+},
+{
+"date": "2025-07-31",
+"measure": "indicative API cost (US$)",
+"value": 2212.02
+},
+{
+"date": "2025-08-01",
+"measure": "billions of tokens",
+"value": 1.0223
+},
+{
+"date": "2025-08-01",
+"measure": "indicative API cost (US$)",
+"value": 2259.09
+},
+{
+"date": "2025-08-02",
+"measure": "billions of tokens",
+"value": 1.0223
+},
+{
+"date": "2025-08-02",
+"measure": "indicative API cost (US$)",
+"value": 2259.09
+},
+{
+"date": "2025-08-03",
+"measure": "billions of tokens",
+"value": 1.0227
+},
+{
+"date": "2025-08-03",
+"measure": "indicative API cost (US$)",
+"value": 2261.45
+},
+{
+"date": "2025-08-04",
+"measure": "billions of tokens",
+"value": 1.0569
+},
+{
+"date": "2025-08-04",
+"measure": "indicative API cost (US$)",
+"value": 2358.22
+},
+{
+"date": "2025-08-05",
+"measure": "billions of tokens",
+"value": 1.0953
+},
+{
+"date": "2025-08-05",
+"measure": "indicative API cost (US$)",
+"value": 2462.48
+},
+{
+"date": "2025-08-06",
+"measure": "billions of tokens",
+"value": 1.107
+},
+{
+"date": "2025-08-06",
+"measure": "indicative API cost (US$)",
+"value": 2499.74
+},
+{
+"date": "2025-08-07",
+"measure": "billions of tokens",
+"value": 1.1434
+},
+{
+"date": "2025-08-07",
+"measure": "indicative API cost (US$)",
+"value": 2604.27
+},
+{
+"date": "2025-08-08",
+"measure": "billions of tokens",
+"value": 1.1993
+},
+{
+"date": "2025-08-08",
+"measure": "indicative API cost (US$)",
+"value": 2748.18
+},
+{
+"date": "2025-08-09",
+"measure": "billions of tokens",
+"value": 1.2058
+},
+{
+"date": "2025-08-09",
+"measure": "indicative API cost (US$)",
+"value": 2767.32
+},
+{
+"date": "2025-08-10",
+"measure": "billions of tokens",
+"value": 1.2116
+},
+{
+"date": "2025-08-10",
+"measure": "indicative API cost (US$)",
+"value": 2780.32
+},
+{
+"date": "2025-08-11",
+"measure": "billions of tokens",
+"value": 1.2532
+},
+{
+"date": "2025-08-11",
+"measure": "indicative API cost (US$)",
+"value": 2884.08
+},
+{
+"date": "2025-08-12",
+"measure": "billions of tokens",
+"value": 1.3065
+},
+{
+"date": "2025-08-12",
+"measure": "indicative API cost (US$)",
+"value": 3010.6
+},
+{
+"date": "2025-08-13",
+"measure": "billions of tokens",
+"value": 1.3711
+},
+{
+"date": "2025-08-13",
+"measure": "indicative API cost (US$)",
+"value": 3167.99
+},
+{
+"date": "2025-08-14",
+"measure": "billions of tokens",
+"value": 1.448
+},
+{
+"date": "2025-08-14",
+"measure": "indicative API cost (US$)",
+"value": 3347.51
+},
+{
+"date": "2025-08-15",
+"measure": "billions of tokens",
+"value": 1.5506
+},
+{
+"date": "2025-08-15",
+"measure": "indicative API cost (US$)",
+"value": 3605.14
+},
+{
+"date": "2025-08-16",
+"measure": "billions of tokens",
+"value": 1.5532
+},
+{
+"date": "2025-08-16",
+"measure": "indicative API cost (US$)",
+"value": 3611.41
+},
+{
+"date": "2025-08-17",
+"measure": "billions of tokens",
+"value": 1.5532
+},
+{
+"date": "2025-08-17",
+"measure": "indicative API cost (US$)",
+"value": 3611.41
+},
+{
+"date": "2025-08-18",
+"measure": "billions of tokens",
+"value": 1.5769
+},
+{
+"date": "2025-08-18",
+"measure": "indicative API cost (US$)",
+"value": 3673.97
+},
+{
+"date": "2025-08-19",
+"measure": "billions of tokens",
+"value": 1.63
+},
+{
+"date": "2025-08-19",
+"measure": "indicative API cost (US$)",
+"value": 3800.81
+},
+{
+"date": "2025-08-20",
+"measure": "billions of tokens",
+"value": 1.719
+},
+{
+"date": "2025-08-20",
+"measure": "indicative API cost (US$)",
+"value": 3995.67
+},
+{
+"date": "2025-08-21",
+"measure": "billions of tokens",
+"value": 1.7738
+},
+{
+"date": "2025-08-21",
+"measure": "indicative API cost (US$)",
+"value": 4116.89
+},
+{
+"date": "2025-08-22",
+"measure": "billions of tokens",
+"value": 1.7938
+},
+{
+"date": "2025-08-22",
+"measure": "indicative API cost (US$)",
+"value": 4162.36
+},
+{
+"date": "2025-08-23",
+"measure": "billions of tokens",
+"value": 1.8074
+},
+{
+"date": "2025-08-23",
+"measure": "indicative API cost (US$)",
+"value": 4192.59
+},
+{
+"date": "2025-08-24",
+"measure": "billions of tokens",
+"value": 1.8129
+},
+{
+"date": "2025-08-24",
+"measure": "indicative API cost (US$)",
+"value": 4204.31
+},
+{
+"date": "2025-08-25",
+"measure": "billions of tokens",
+"value": 1.8281
+},
+{
+"date": "2025-08-25",
+"measure": "indicative API cost (US$)",
+"value": 4242.95
+},
+{
+"date": "2025-08-26",
+"measure": "billions of tokens",
+"value": 1.8471
+},
+{
+"date": "2025-08-26",
+"measure": "indicative API cost (US$)",
+"value": 4291.31
+},
+{
+"date": "2025-08-27",
+"measure": "billions of tokens",
+"value": 1.865
+},
+{
+"date": "2025-08-27",
+"measure": "indicative API cost (US$)",
+"value": 4340.47
+},
+{
+"date": "2025-08-28",
+"measure": "billions of tokens",
+"value": 1.9101
+},
+{
+"date": "2025-08-28",
+"measure": "indicative API cost (US$)",
+"value": 4473.78
+},
+{
+"date": "2025-08-29",
+"measure": "billions of tokens",
+"value": 1.9581
+},
+{
+"date": "2025-08-29",
+"measure": "indicative API cost (US$)",
+"value": 4616.83
+},
+{
+"date": "2025-08-30",
+"measure": "billions of tokens",
+"value": 1.9638
+},
+{
+"date": "2025-08-30",
+"measure": "indicative API cost (US$)",
+"value": 4631.41
+},
+{
+"date": "2025-08-31",
+"measure": "billions of tokens",
+"value": 1.9716
+},
+{
+"date": "2025-08-31",
+"measure": "indicative API cost (US$)",
+"value": 4652.09
+},
+{
+"date": "2025-09-01",
+"measure": "billions of tokens",
+"value": 1.9839
+},
+{
+"date": "2025-09-01",
+"measure": "indicative API cost (US$)",
+"value": 4690.45
+},
+{
+"date": "2025-09-02",
+"measure": "billions of tokens",
+"value": 2.0022
+},
+{
+"date": "2025-09-02",
+"measure": "indicative API cost (US$)",
+"value": 4740.49
+},
+{
+"date": "2025-09-03",
+"measure": "billions of tokens",
+"value": 2.0635
+},
+{
+"date": "2025-09-03",
+"measure": "indicative API cost (US$)",
+"value": 4863.77
+},
+{
+"date": "2025-09-04",
+"measure": "billions of tokens",
+"value": 2.1083
+},
+{
+"date": "2025-09-04",
+"measure": "indicative API cost (US$)",
+"value": 4958.94
+},
+{
+"date": "2025-09-05",
+"measure": "billions of tokens",
+"value": 2.1137
+},
+{
+"date": "2025-09-05",
+"measure": "indicative API cost (US$)",
+"value": 4972.92
+},
+{
+"date": "2025-09-06",
+"measure": "billions of tokens",
+"value": 2.1137
+},
+{
+"date": "2025-09-06",
+"measure": "indicative API cost (US$)",
+"value": 4972.92
+},
+{
+"date": "2025-09-07",
+"measure": "billions of tokens",
+"value": 2.1162
+},
+{
+"date": "2025-09-07",
+"measure": "indicative API cost (US$)",
+"value": 4979.1
+},
+{
+"date": "2025-09-08",
+"measure": "billions of tokens",
+"value": 2.1168
+},
+{
+"date": "2025-09-08",
+"measure": "indicative API cost (US$)",
+"value": 4982.07
+},
+{
+"date": "2025-09-09",
+"measure": "billions of tokens",
+"value": 2.1378
+},
+{
+"date": "2025-09-09",
+"measure": "indicative API cost (US$)",
+"value": 5019.92
+},
+{
+"date": "2025-09-10",
+"measure": "billions of tokens",
+"value": 2.1624
+},
+{
+"date": "2025-09-10",
+"measure": "indicative API cost (US$)",
+"value": 5074.67
+},
+{
+"date": "2025-09-11",
+"measure": "billions of tokens",
+"value": 2.1934
+},
+{
+"date": "2025-09-11",
+"measure": "indicative API cost (US$)",
+"value": 5145.69
+},
+{
+"date": "2025-09-12",
+"measure": "billions of tokens",
+"value": 2.226
+},
+{
+"date": "2025-09-12",
+"measure": "indicative API cost (US$)",
+"value": 5218.65
+},
+{
+"date": "2025-09-13",
+"measure": "billions of tokens",
+"value": 2.226
+},
+{
+"date": "2025-09-13",
+"measure": "indicative API cost (US$)",
+"value": 5218.65
+},
+{
+"date": "2025-09-14",
+"measure": "billions of tokens",
+"value": 2.226
+},
+{
+"date": "2025-09-14",
+"measure": "indicative API cost (US$)",
+"value": 5218.65
+},
+{
+"date": "2025-09-15",
+"measure": "billions of tokens",
+"value": 2.2326
+},
+{
+"date": "2025-09-15",
+"measure": "indicative API cost (US$)",
+"value": 5236.61
+},
+{
+"date": "2025-09-16",
+"measure": "billions of tokens",
+"value": 2.2601
+},
+{
+"date": "2025-09-16",
+"measure": "indicative API cost (US$)",
+"value": 5304.47
+},
+{
+"date": "2025-09-17",
+"measure": "billions of tokens",
+"value": 2.2804
+},
+{
+"date": "2025-09-17",
+"measure": "indicative API cost (US$)",
+"value": 5340.08
+},
+{
+"date": "2025-09-18",
+"measure": "billions of tokens",
+"value": 2.3273
+},
+{
+"date": "2025-09-18",
+"measure": "indicative API cost (US$)",
+"value": 5436.83
+},
+{
+"date": "2025-09-19",
+"measure": "billions of tokens",
+"value": 2.3466
+},
+{
+"date": "2025-09-19",
+"measure": "indicative API cost (US$)",
+"value": 5482.25
+},
+{
+"date": "2025-09-20",
+"measure": "billions of tokens",
+"value": 2.3785
+},
+{
+"date": "2025-09-20",
+"measure": "indicative API cost (US$)",
+"value": 5515.92
+},
+{
+"date": "2025-09-21",
+"measure": "billions of tokens",
+"value": 2.3811
+},
+{
+"date": "2025-09-21",
+"measure": "indicative API cost (US$)",
+"value": 5523.12
+},
+{
+"date": "2025-09-22",
+"measure": "billions of tokens",
+"value": 2.397
+},
+{
+"date": "2025-09-22",
+"measure": "indicative API cost (US$)",
+"value": 5555.21
+},
+{
+"date": "2025-09-23",
+"measure": "billions of tokens",
+"value": 2.4108
+},
+{
+"date": "2025-09-23",
+"measure": "indicative API cost (US$)",
+"value": 5589.82
+},
+{
+"date": "2025-09-24",
+"measure": "billions of tokens",
+"value": 2.4341
+},
+{
+"date": "2025-09-24",
+"measure": "indicative API cost (US$)",
+"value": 5652.6
+},
+{
+"date": "2025-09-25",
+"measure": "billions of tokens",
+"value": 2.4838
+},
+{
+"date": "2025-09-25",
+"measure": "indicative API cost (US$)",
+"value": 5765.32
+},
+{
+"date": "2025-09-26",
+"measure": "billions of tokens",
+"value": 2.5165
+},
+{
+"date": "2025-09-26",
+"measure": "indicative API cost (US$)",
+"value": 5851.37
+},
+{
+"date": "2025-09-27",
+"measure": "billions of tokens",
+"value": 2.5165
+},
+{
+"date": "2025-09-27",
+"measure": "indicative API cost (US$)",
+"value": 5851.37
+},
+{
+"date": "2025-09-28",
+"measure": "billions of tokens",
+"value": 2.5165
+},
+{
+"date": "2025-09-28",
+"measure": "indicative API cost (US$)",
+"value": 5851.76
+},
+{
+"date": "2025-09-29",
+"measure": "billions of tokens",
+"value": 2.5188
+},
+{
+"date": "2025-09-29",
+"measure": "indicative API cost (US$)",
+"value": 5859.86
+},
+{
+"date": "2025-09-30",
+"measure": "billions of tokens",
+"value": 2.5284
+},
+{
+"date": "2025-09-30",
+"measure": "indicative API cost (US$)",
+"value": 5865.78
+},
+{
+"date": "2025-10-01",
+"measure": "billions of tokens",
+"value": 2.5406
+},
+{
+"date": "2025-10-01",
+"measure": "indicative API cost (US$)",
+"value": 5871.85
+},
+{
+"date": "2025-10-02",
+"measure": "billions of tokens",
+"value": 2.5684
+},
+{
+"date": "2025-10-02",
+"measure": "indicative API cost (US$)",
+"value": 5888.59
+},
+{
+"date": "2025-10-03",
+"measure": "billions of tokens",
+"value": 2.5782
+},
+{
+"date": "2025-10-03",
+"measure": "indicative API cost (US$)",
+"value": 5893.79
+},
+{
+"date": "2025-10-04",
+"measure": "billions of tokens",
+"value": 2.5782
+},
+{
+"date": "2025-10-04",
+"measure": "indicative API cost (US$)",
+"value": 5893.79
+},
+{
+"date": "2025-10-05",
+"measure": "billions of tokens",
+"value": 2.5782
+},
+{
+"date": "2025-10-05",
+"measure": "indicative API cost (US$)",
+"value": 5893.79
+},
+{
+"date": "2025-10-06",
+"measure": "billions of tokens",
+"value": 2.5783
+},
+{
+"date": "2025-10-06",
+"measure": "indicative API cost (US$)",
+"value": 5893.94
+},
+{
+"date": "2025-10-07",
+"measure": "billions of tokens",
+"value": 2.6002
+},
+{
+"date": "2025-10-07",
+"measure": "indicative API cost (US$)",
+"value": 5906.18
+},
+{
+"date": "2025-10-08",
+"measure": "billions of tokens",
+"value": 2.6325
+},
+{
+"date": "2025-10-08",
+"measure": "indicative API cost (US$)",
+"value": 5926.46
+},
+{
+"date": "2025-10-09",
+"measure": "billions of tokens",
+"value": 2.647
+},
+{
+"date": "2025-10-09",
+"measure": "indicative API cost (US$)",
+"value": 5935.31
+},
+{
+"date": "2025-10-10",
+"measure": "billions of tokens",
+"value": 2.6659
+},
+{
+"date": "2025-10-10",
+"measure": "indicative API cost (US$)",
+"value": 5946.66
+},
+{
+"date": "2025-10-11",
+"measure": "billions of tokens",
+"value": 2.6917
+},
+{
+"date": "2025-10-11",
+"measure": "indicative API cost (US$)",
+"value": 5962.19
+},
+{
+"date": "2025-10-12",
+"measure": "billions of tokens",
+"value": 2.6928
+},
+{
+"date": "2025-10-12",
+"measure": "indicative API cost (US$)",
+"value": 5962.98
+},
+{
+"date": "2025-10-13",
+"measure": "billions of tokens",
+"value": 2.7014
+},
+{
+"date": "2025-10-13",
+"measure": "indicative API cost (US$)",
+"value": 5967.67
+},
+{
+"date": "2025-10-14",
+"measure": "billions of tokens",
+"value": 2.702
+},
+{
+"date": "2025-10-14",
+"measure": "indicative API cost (US$)",
+"value": 5968.42
+},
+{
+"date": "2025-10-15",
+"measure": "billions of tokens",
+"value": 2.702
+},
+{
+"date": "2025-10-15",
+"measure": "indicative API cost (US$)",
+"value": 5968.42
+},
+{
+"date": "2025-10-16",
+"measure": "billions of tokens",
+"value": 2.707
+},
+{
+"date": "2025-10-16",
+"measure": "indicative API cost (US$)",
+"value": 5971.35
+},
+{
+"date": "2025-10-17",
+"measure": "billions of tokens",
+"value": 2.7101
+},
+{
+"date": "2025-10-17",
+"measure": "indicative API cost (US$)",
+"value": 5973.58
+},
+{
+"date": "2025-10-18",
+"measure": "billions of tokens",
+"value": 2.7275
+},
+{
+"date": "2025-10-18",
+"measure": "indicative API cost (US$)",
+"value": 5982.43
+},
+{
+"date": "2025-10-19",
+"measure": "billions of tokens",
+"value": 2.7275
+},
+{
+"date": "2025-10-19",
+"measure": "indicative API cost (US$)",
+"value": 5982.43
+},
+{
+"date": "2025-10-20",
+"measure": "billions of tokens",
+"value": 2.7293
+},
+{
+"date": "2025-10-20",
+"measure": "indicative API cost (US$)",
+"value": 5983.59
+},
+{
+"date": "2025-10-21",
+"measure": "billions of tokens",
+"value": 2.739
+},
+{
+"date": "2025-10-21",
+"measure": "indicative API cost (US$)",
+"value": 5988.5
+},
+{
+"date": "2025-10-22",
+"measure": "billions of tokens",
+"value": 2.8027
+},
+{
+"date": "2025-10-22",
+"measure": "indicative API cost (US$)",
+"value": 6023.46
+},
+{
+"date": "2025-10-23",
+"measure": "billions of tokens",
+"value": 2.8249
+},
+{
+"date": "2025-10-23",
+"measure": "indicative API cost (US$)",
+"value": 6037.77
+},
+{
+"date": "2025-10-24",
+"measure": "billions of tokens",
+"value": 2.9469
+},
+{
+"date": "2025-10-24",
+"measure": "indicative API cost (US$)",
+"value": 6098.41
+},
+{
+"date": "2025-10-25",
+"measure": "billions of tokens",
+"value": 2.9973
+},
+{
+"date": "2025-10-25",
+"measure": "indicative API cost (US$)",
+"value": 6124.87
+},
+{
+"date": "2025-10-26",
+"measure": "billions of tokens",
+"value": 3.0077
+},
+{
+"date": "2025-10-26",
+"measure": "indicative API cost (US$)",
+"value": 6131.22
+},
+{
+"date": "2025-10-27",
+"measure": "billions of tokens",
+"value": 3.0334
+},
+{
+"date": "2025-10-27",
+"measure": "indicative API cost (US$)",
+"value": 6149.42
+},
+{
+"date": "2025-10-28",
+"measure": "billions of tokens",
+"value": 3.0876
+},
+{
+"date": "2025-10-28",
+"measure": "indicative API cost (US$)",
+"value": 6179.69
+},
+{
+"date": "2025-10-29",
+"measure": "billions of tokens",
+"value": 3.1044
+},
+{
+"date": "2025-10-29",
+"measure": "indicative API cost (US$)",
+"value": 6192.67
+},
+{
+"date": "2025-10-30",
+"measure": "billions of tokens",
+"value": 3.1084
+},
+{
+"date": "2025-10-30",
+"measure": "indicative API cost (US$)",
+"value": 6195.49
+},
+{
+"date": "2025-10-31",
+"measure": "billions of tokens",
+"value": 3.1244
+},
+{
+"date": "2025-10-31",
+"measure": "indicative API cost (US$)",
+"value": 6204.87
+},
+{
+"date": "2025-11-01",
+"measure": "billions of tokens",
+"value": 3.1244
+},
+{
+"date": "2025-11-01",
+"measure": "indicative API cost (US$)",
+"value": 6204.87
+},
+{
+"date": "2025-11-02",
+"measure": "billions of tokens",
+"value": 3.1331
+},
+{
+"date": "2025-11-02",
+"measure": "indicative API cost (US$)",
+"value": 6209.36
+},
+{
+"date": "2025-11-03",
+"measure": "billions of tokens",
+"value": 3.1575
+},
+{
+"date": "2025-11-03",
+"measure": "indicative API cost (US$)",
+"value": 6220.48
+},
+{
+"date": "2025-11-04",
+"measure": "billions of tokens",
+"value": 3.1781
+},
+{
+"date": "2025-11-04",
+"measure": "indicative API cost (US$)",
+"value": 6232.84
+},
+{
+"date": "2025-11-05",
+"measure": "billions of tokens",
+"value": 3.248
+},
+{
+"date": "2025-11-05",
+"measure": "indicative API cost (US$)",
+"value": 6262.96
+},
+{
+"date": "2025-11-06",
+"measure": "billions of tokens",
+"value": 3.262
+},
+{
+"date": "2025-11-06",
+"measure": "indicative API cost (US$)",
+"value": 6270.59
+},
+{
+"date": "2025-11-07",
+"measure": "billions of tokens",
+"value": 3.2674
+},
+{
+"date": "2025-11-07",
+"measure": "indicative API cost (US$)",
+"value": 6273.98
+},
+{
+"date": "2025-11-08",
+"measure": "billions of tokens",
+"value": 3.2698
+},
+{
+"date": "2025-11-08",
+"measure": "indicative API cost (US$)",
+"value": 6275.71
+},
+{
+"date": "2025-11-09",
+"measure": "billions of tokens",
+"value": 3.2795
+},
+{
+"date": "2025-11-09",
+"measure": "indicative API cost (US$)",
+"value": 6281.23
+},
+{
+"date": "2025-11-10",
+"measure": "billions of tokens",
+"value": 3.326
+},
+{
+"date": "2025-11-10",
+"measure": "indicative API cost (US$)",
+"value": 6304.62
+},
+{
+"date": "2025-11-11",
+"measure": "billions of tokens",
+"value": 3.3687
+},
+{
+"date": "2025-11-11",
+"measure": "indicative API cost (US$)",
+"value": 6327.33
+},
+{
+"date": "2025-11-12",
+"measure": "billions of tokens",
+"value": 3.395
+},
+{
+"date": "2025-11-12",
+"measure": "indicative API cost (US$)",
+"value": 6341.75
+},
+{
+"date": "2025-11-13",
+"measure": "billions of tokens",
+"value": 3.4051
+},
+{
+"date": "2025-11-13",
+"measure": "indicative API cost (US$)",
+"value": 6347.1
+},
+{
+"date": "2025-11-14",
+"measure": "billions of tokens",
+"value": 3.4248
+},
+{
+"date": "2025-11-14",
+"measure": "indicative API cost (US$)",
+"value": 6361.77
+},
+{
+"date": "2025-11-15",
+"measure": "billions of tokens",
+"value": 3.4248
+},
+{
+"date": "2025-11-15",
+"measure": "indicative API cost (US$)",
+"value": 6361.77
+},
+{
+"date": "2025-11-16",
+"measure": "billions of tokens",
+"value": 3.4258
+},
+{
+"date": "2025-11-16",
+"measure": "indicative API cost (US$)",
+"value": 6362.51
+},
+{
+"date": "2025-11-17",
+"measure": "billions of tokens",
+"value": 3.4327
+},
+{
+"date": "2025-11-17",
+"measure": "indicative API cost (US$)",
+"value": 6368.09
+},
+{
+"date": "2025-11-18",
+"measure": "billions of tokens",
+"value": 3.4688
+},
+{
+"date": "2025-11-18",
+"measure": "indicative API cost (US$)",
+"value": 6387.97
+},
+{
+"date": "2025-11-19",
+"measure": "billions of tokens",
+"value": 3.4887
+},
+{
+"date": "2025-11-19",
+"measure": "indicative API cost (US$)",
+"value": 6399.32
+},
+{
+"date": "2025-11-20",
+"measure": "billions of tokens",
+"value": 3.5478
+},
+{
+"date": "2025-11-20",
+"measure": "indicative API cost (US$)",
+"value": 6429.0
+},
+{
+"date": "2025-11-21",
+"measure": "billions of tokens",
+"value": 3.584
+},
+{
+"date": "2025-11-21",
+"measure": "indicative API cost (US$)",
+"value": 6446.84
+},
+{
+"date": "2025-11-22",
+"measure": "billions of tokens",
+"value": 3.5869
+},
+{
+"date": "2025-11-22",
+"measure": "indicative API cost (US$)",
+"value": 6448.78
+},
+{
+"date": "2025-11-23",
+"measure": "billions of tokens",
+"value": 3.5901
+},
+{
+"date": "2025-11-23",
+"measure": "indicative API cost (US$)",
+"value": 6450.86
+},
+{
+"date": "2025-11-24",
+"measure": "billions of tokens",
+"value": 3.6026
+},
+{
+"date": "2025-11-24",
+"measure": "indicative API cost (US$)",
+"value": 6459.17
+},
+{
+"date": "2025-11-25",
+"measure": "billions of tokens",
+"value": 3.6373
+},
+{
+"date": "2025-11-25",
+"measure": "indicative API cost (US$)",
+"value": 6486.1
+},
+{
+"date": "2025-11-26",
+"measure": "billions of tokens",
+"value": 3.693
+},
+{
+"date": "2025-11-26",
+"measure": "indicative API cost (US$)",
+"value": 6536.79
+},
+{
+"date": "2025-11-27",
+"measure": "billions of tokens",
+"value": 3.7362
+},
+{
+"date": "2025-11-27",
+"measure": "indicative API cost (US$)",
+"value": 6574.87
+},
+{
+"date": "2025-11-28",
+"measure": "billions of tokens",
+"value": 3.7519
+},
+{
+"date": "2025-11-28",
+"measure": "indicative API cost (US$)",
+"value": 6589.42
+},
+{
+"date": "2025-11-29",
+"measure": "billions of tokens",
+"value": 3.7519
+},
+{
+"date": "2025-11-29",
+"measure": "indicative API cost (US$)",
+"value": 6589.42
+},
+{
+"date": "2025-11-30",
+"measure": "billions of tokens",
+"value": 3.7519
+},
+{
+"date": "2025-11-30",
+"measure": "indicative API cost (US$)",
+"value": 6589.42
+},
+{
+"date": "2025-12-01",
+"measure": "billions of tokens",
+"value": 3.8088
+},
+{
+"date": "2025-12-01",
+"measure": "indicative API cost (US$)",
+"value": 6631.4
+},
+{
+"date": "2025-12-02",
+"measure": "billions of tokens",
+"value": 3.8577
+},
+{
+"date": "2025-12-02",
+"measure": "indicative API cost (US$)",
+"value": 6669.16
+},
+{
+"date": "2025-12-03",
+"measure": "billions of tokens",
+"value": 3.9439
+},
+{
+"date": "2025-12-03",
+"measure": "indicative API cost (US$)",
+"value": 6736.83
+},
+{
+"date": "2025-12-04",
+"measure": "billions of tokens",
+"value": 3.9567
+},
+{
+"date": "2025-12-04",
+"measure": "indicative API cost (US$)",
+"value": 6747.5
+},
+{
+"date": "2025-12-05",
+"measure": "billions of tokens",
+"value": 3.9719
+},
+{
+"date": "2025-12-05",
+"measure": "indicative API cost (US$)",
+"value": 6763.1
+},
+{
+"date": "2025-12-06",
+"measure": "billions of tokens",
+"value": 3.9719
+},
+{
+"date": "2025-12-06",
+"measure": "indicative API cost (US$)",
+"value": 6763.1
+},
+{
+"date": "2025-12-07",
+"measure": "billions of tokens",
+"value": 3.9719
+},
+{
+"date": "2025-12-07",
+"measure": "indicative API cost (US$)",
+"value": 6763.1
+},
+{
+"date": "2025-12-08",
+"measure": "billions of tokens",
+"value": 3.995
+},
+{
+"date": "2025-12-08",
+"measure": "indicative API cost (US$)",
+"value": 6784.13
+},
+{
+"date": "2025-12-09",
+"measure": "billions of tokens",
+"value": 4.0201
+},
+{
+"date": "2025-12-09",
+"measure": "indicative API cost (US$)",
+"value": 6808.34
+},
+{
+"date": "2025-12-10",
+"measure": "billions of tokens",
+"value": 4.0628
+},
+{
+"date": "2025-12-10",
+"measure": "indicative API cost (US$)",
+"value": 6840.07
+},
+{
+"date": "2025-12-11",
+"measure": "billions of tokens",
+"value": 4.112
+},
+{
+"date": "2025-12-11",
+"measure": "indicative API cost (US$)",
+"value": 6877.5
+},
+{
+"date": "2025-12-12",
+"measure": "billions of tokens",
+"value": 4.1367
+},
+{
+"date": "2025-12-12",
+"measure": "indicative API cost (US$)",
+"value": 6902.62
+},
+{
+"date": "2025-12-13",
+"measure": "billions of tokens",
+"value": 4.1411
+},
+{
+"date": "2025-12-13",
+"measure": "indicative API cost (US$)",
+"value": 6906.39
+},
+{
+"date": "2025-12-14",
+"measure": "billions of tokens",
+"value": 4.1411
+},
+{
+"date": "2025-12-14",
+"measure": "indicative API cost (US$)",
+"value": 6906.39
+},
+{
+"date": "2025-12-15",
+"measure": "billions of tokens",
+"value": 4.1666
+},
+{
+"date": "2025-12-15",
+"measure": "indicative API cost (US$)",
+"value": 6925.81
+},
+{
+"date": "2025-12-16",
+"measure": "billions of tokens",
+"value": 4.2424
+},
+{
+"date": "2025-12-16",
+"measure": "indicative API cost (US$)",
+"value": 6985.62
+},
+{
+"date": "2025-12-17",
+"measure": "billions of tokens",
+"value": 4.3402
+},
+{
+"date": "2025-12-17",
+"measure": "indicative API cost (US$)",
+"value": 7057.43
+},
+{
+"date": "2025-12-18",
+"measure": "billions of tokens",
+"value": 4.425
+},
+{
+"date": "2025-12-18",
+"measure": "indicative API cost (US$)",
+"value": 7119.38
+},
+{
+"date": "2025-12-19",
+"measure": "billions of tokens",
+"value": 4.4577
+},
+{
+"date": "2025-12-19",
+"measure": "indicative API cost (US$)",
+"value": 7148.09
+},
+{
+"date": "2025-12-20",
+"measure": "billions of tokens",
+"value": 4.5139
+},
+{
+"date": "2025-12-20",
+"measure": "indicative API cost (US$)",
+"value": 7189.27
+},
+{
+"date": "2025-12-21",
+"measure": "billions of tokens",
+"value": 4.5139
+},
+{
+"date": "2025-12-21",
+"measure": "indicative API cost (US$)",
+"value": 7189.27
+},
+{
+"date": "2025-12-22",
+"measure": "billions of tokens",
+"value": 4.6558
+},
+{
+"date": "2025-12-22",
+"measure": "indicative API cost (US$)",
+"value": 7288.53
+},
+{
+"date": "2025-12-23",
+"measure": "billions of tokens",
+"value": 4.717
+},
+{
+"date": "2025-12-23",
+"measure": "indicative API cost (US$)",
+"value": 7337.84
+},
+{
+"date": "2025-12-24",
+"measure": "billions of tokens",
+"value": 4.7416
+},
+{
+"date": "2025-12-24",
+"measure": "indicative API cost (US$)",
+"value": 7358.4
+},
+{
+"date": "2025-12-25",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2025-12-25",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2025-12-26",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2025-12-26",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2025-12-27",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2025-12-27",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2025-12-28",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2025-12-28",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2025-12-29",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2025-12-29",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2025-12-30",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2025-12-30",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2025-12-31",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2025-12-31",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-01",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-01",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-02",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-02",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-03",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-03",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-04",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-04",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-05",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-05",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-06",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-06",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-07",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-07",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-08",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-08",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-09",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-09",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-10",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-10",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-11",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-11",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-12",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-12",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-13",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-13",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-14",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-14",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-15",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-15",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-16",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-16",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-17",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-17",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-18",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-18",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-19",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-19",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-20",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-20",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-21",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-21",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-22",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-22",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-23",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-23",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-24",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-24",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-25",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-25",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-26",
+"measure": "billions of tokens",
+"value": 4.7431
+},
+{
+"date": "2026-01-26",
+"measure": "indicative API cost (US$)",
+"value": 7360.56
+},
+{
+"date": "2026-01-27",
+"measure": "billions of tokens",
+"value": 4.7838
+},
+{
+"date": "2026-01-27",
+"measure": "indicative API cost (US$)",
+"value": 7391.14
+},
+{
+"date": "2026-01-28",
+"measure": "billions of tokens",
+"value": 4.8127
+},
+{
+"date": "2026-01-28",
+"measure": "indicative API cost (US$)",
+"value": 7413.85
+},
+{
+"date": "2026-01-29",
+"measure": "billions of tokens",
+"value": 4.8234
+},
+{
+"date": "2026-01-29",
+"measure": "indicative API cost (US$)",
+"value": 7420.96
+},
+{
+"date": "2026-01-30",
+"measure": "billions of tokens",
+"value": 4.8234
+},
+{
+"date": "2026-01-30",
+"measure": "indicative API cost (US$)",
+"value": 7420.96
+},
+{
+"date": "2026-01-31",
+"measure": "billions of tokens",
+"value": 4.8316
+},
+{
+"date": "2026-01-31",
+"measure": "indicative API cost (US$)",
+"value": 7427.93
+},
+{
+"date": "2026-02-01",
+"measure": "billions of tokens",
+"value": 4.8316
+},
+{
+"date": "2026-02-01",
+"measure": "indicative API cost (US$)",
+"value": 7427.93
+},
+{
+"date": "2026-02-02",
+"measure": "billions of tokens",
+"value": 4.8926
+},
+{
+"date": "2026-02-02",
+"measure": "indicative API cost (US$)",
+"value": 7483.35
+},
+{
+"date": "2026-02-03",
+"measure": "billions of tokens",
+"value": 4.9697
+},
+{
+"date": "2026-02-03",
+"measure": "indicative API cost (US$)",
+"value": 7557.88
+},
+{
+"date": "2026-02-04",
+"measure": "billions of tokens",
+"value": 5.0428
+},
+{
+"date": "2026-02-04",
+"measure": "indicative API cost (US$)",
+"value": 7624.94
+},
+{
+"date": "2026-02-05",
+"measure": "billions of tokens",
+"value": 5.1108
+},
+{
+"date": "2026-02-05",
+"measure": "indicative API cost (US$)",
+"value": 7679.78
+},
+{
+"date": "2026-02-06",
+"measure": "billions of tokens",
+"value": 5.1765
+},
+{
+"date": "2026-02-06",
+"measure": "indicative API cost (US$)",
+"value": 7743.43
+},
+{
+"date": "2026-02-07",
+"measure": "billions of tokens",
+"value": 5.2901
+},
+{
+"date": "2026-02-07",
+"measure": "indicative API cost (US$)",
+"value": 7834.12
+},
+{
+"date": "2026-02-08",
+"measure": "billions of tokens",
+"value": 5.305
+},
+{
+"date": "2026-02-08",
+"measure": "indicative API cost (US$)",
+"value": 7851.71
+},
+{
+"date": "2026-02-09",
+"measure": "billions of tokens",
+"value": 5.3254
+},
+{
+"date": "2026-02-09",
+"measure": "indicative API cost (US$)",
+"value": 7871.26
+},
+{
+"date": "2026-02-10",
+"measure": "billions of tokens",
+"value": 5.3572
+},
+{
+"date": "2026-02-10",
+"measure": "indicative API cost (US$)",
+"value": 7895.12
+},
+{
+"date": "2026-02-11",
+"measure": "billions of tokens",
+"value": 5.3665
+},
+{
+"date": "2026-02-11",
+"measure": "indicative API cost (US$)",
+"value": 7903.18
+},
+{
+"date": "2026-02-12",
+"measure": "billions of tokens",
+"value": 5.3925
+},
+{
+"date": "2026-02-12",
+"measure": "indicative API cost (US$)",
+"value": 7920.84
+},
+{
+"date": "2026-02-13",
+"measure": "billions of tokens",
+"value": 5.3932
+},
+{
+"date": "2026-02-13",
+"measure": "indicative API cost (US$)",
+"value": 7921.85
+},
+{
+"date": "2026-02-14",
+"measure": "billions of tokens",
+"value": 5.3934
+},
+{
+"date": "2026-02-14",
+"measure": "indicative API cost (US$)",
+"value": 7922.18
+},
+{
+"date": "2026-02-15",
+"measure": "billions of tokens",
+"value": 5.3934
+},
+{
+"date": "2026-02-15",
+"measure": "indicative API cost (US$)",
+"value": 7922.18
+},
+{
+"date": "2026-02-16",
+"measure": "billions of tokens",
+"value": 5.3972
+},
+{
+"date": "2026-02-16",
+"measure": "indicative API cost (US$)",
+"value": 7926.44
+},
+{
+"date": "2026-02-17",
+"measure": "billions of tokens",
+"value": 5.4934
+},
+{
+"date": "2026-02-17",
+"measure": "indicative API cost (US$)",
+"value": 7999.48
+},
+{
+"date": "2026-02-18",
+"measure": "billions of tokens",
+"value": 5.607
+},
+{
+"date": "2026-02-18",
+"measure": "indicative API cost (US$)",
+"value": 8093.19
+},
+{
+"date": "2026-02-19",
+"measure": "billions of tokens",
+"value": 5.8464
+},
+{
+"date": "2026-02-19",
+"measure": "indicative API cost (US$)",
+"value": 8260.35
+},
+{
+"date": "2026-02-20",
+"measure": "billions of tokens",
+"value": 5.9603
+},
+{
+"date": "2026-02-20",
+"measure": "indicative API cost (US$)",
+"value": 8348.01
+},
+{
+"date": "2026-02-21",
+"measure": "billions of tokens",
+"value": 5.9971
+},
+{
+"date": "2026-02-21",
+"measure": "indicative API cost (US$)",
+"value": 8376.68
+},
+{
+"date": "2026-02-22",
+"measure": "billions of tokens",
+"value": 6.0117
+},
+{
+"date": "2026-02-22",
+"measure": "indicative API cost (US$)",
+"value": 8388.08
+},
+{
+"date": "2026-02-23",
+"measure": "billions of tokens",
+"value": 6.1372
+},
+{
+"date": "2026-02-23",
+"measure": "indicative API cost (US$)",
+"value": 8476.02
+},
+{
+"date": "2026-02-24",
+"measure": "billions of tokens",
+"value": 6.2554
+},
+{
+"date": "2026-02-24",
+"measure": "indicative API cost (US$)",
+"value": 8562.44
+},
+{
+"date": "2026-02-25",
+"measure": "billions of tokens",
+"value": 6.3175
+},
+{
+"date": "2026-02-25",
+"measure": "indicative API cost (US$)",
+"value": 8613.18
+},
+{
+"date": "2026-02-26",
+"measure": "billions of tokens",
+"value": 6.3903
+},
+{
+"date": "2026-02-26",
+"measure": "indicative API cost (US$)",
+"value": 8675.61
+},
+{
+"date": "2026-02-27",
+"measure": "billions of tokens",
+"value": 6.665
+},
+{
+"date": "2026-02-27",
+"measure": "indicative API cost (US$)",
+"value": 8899.04
+},
+{
+"date": "2026-02-28",
+"measure": "billions of tokens",
+"value": 6.7912
+},
+{
+"date": "2026-02-28",
+"measure": "indicative API cost (US$)",
+"value": 9005.23
+},
+{
+"date": "2026-03-01",
+"measure": "billions of tokens",
+"value": 7.1131
+},
+{
+"date": "2026-03-01",
+"measure": "indicative API cost (US$)",
+"value": 9223.75
+},
+{
+"date": "2026-03-02",
+"measure": "billions of tokens",
+"value": 7.1995
+},
+{
+"date": "2026-03-02",
+"measure": "indicative API cost (US$)",
+"value": 9301.99
+},
+{
+"date": "2026-03-03",
+"measure": "billions of tokens",
+"value": 7.2494
+},
+{
+"date": "2026-03-03",
+"measure": "indicative API cost (US$)",
+"value": 9362.46
+},
+{
+"date": "2026-03-04",
+"measure": "billions of tokens",
+"value": 7.3635
+},
+{
+"date": "2026-03-04",
+"measure": "indicative API cost (US$)",
+"value": 9457.17
+},
+{
+"date": "2026-03-05",
+"measure": "billions of tokens",
+"value": 7.4186
+},
+{
+"date": "2026-03-05",
+"measure": "indicative API cost (US$)",
+"value": 9505.81
+},
+{
+"date": "2026-03-06",
+"measure": "billions of tokens",
+"value": 7.4452
+},
+{
+"date": "2026-03-06",
+"measure": "indicative API cost (US$)",
+"value": 9530.12
+},
+{
+"date": "2026-03-07",
+"measure": "billions of tokens",
+"value": 7.4466
+},
+{
+"date": "2026-03-07",
+"measure": "indicative API cost (US$)",
+"value": 9531.41
+},
+{
+"date": "2026-03-08",
+"measure": "billions of tokens",
+"value": 7.4467
+},
+{
+"date": "2026-03-08",
+"measure": "indicative API cost (US$)",
+"value": 9531.81
+},
+{
+"date": "2026-03-09",
+"measure": "billions of tokens",
+"value": 7.4478
+},
+{
+"date": "2026-03-09",
+"measure": "indicative API cost (US$)",
+"value": 9533.21
+},
+{
+"date": "2026-03-10",
+"measure": "billions of tokens",
+"value": 7.5019
+},
+{
+"date": "2026-03-10",
+"measure": "indicative API cost (US$)",
+"value": 9582.15
+},
+{
+"date": "2026-03-11",
+"measure": "billions of tokens",
+"value": 7.6509
+},
+{
+"date": "2026-03-11",
+"measure": "indicative API cost (US$)",
+"value": 9696.69
+},
+{
+"date": "2026-03-12",
+"measure": "billions of tokens",
+"value": 7.7183
+},
+{
+"date": "2026-03-12",
+"measure": "indicative API cost (US$)",
+"value": 9752.24
+},
+{
+"date": "2026-03-13",
+"measure": "billions of tokens",
+"value": 7.778
+},
+{
+"date": "2026-03-13",
+"measure": "indicative API cost (US$)",
+"value": 9803.28
+},
+{
+"date": "2026-03-14",
+"measure": "billions of tokens",
+"value": 7.813
+},
+{
+"date": "2026-03-14",
+"measure": "indicative API cost (US$)",
+"value": 9839.81
+},
+{
+"date": "2026-03-15",
+"measure": "billions of tokens",
+"value": 7.8441
+},
+{
+"date": "2026-03-15",
+"measure": "indicative API cost (US$)",
+"value": 9865.67
+},
+{
+"date": "2026-03-16",
+"measure": "billions of tokens",
+"value": 7.8709
+},
+{
+"date": "2026-03-16",
+"measure": "indicative API cost (US$)",
+"value": 9887.85
+},
+{
+"date": "2026-03-17",
+"measure": "billions of tokens",
+"value": 7.8926
+},
+{
+"date": "2026-03-17",
+"measure": "indicative API cost (US$)",
+"value": 9908.87
+},
+{
+"date": "2026-03-18",
+"measure": "billions of tokens",
+"value": 7.923
+},
+{
+"date": "2026-03-18",
+"measure": "indicative API cost (US$)",
+"value": 9938.31
+},
+{
+"date": "2026-03-19",
+"measure": "billions of tokens",
+"value": 7.9724
+},
+{
+"date": "2026-03-19",
+"measure": "indicative API cost (US$)",
+"value": 9978.97
+},
+{
+"date": "2026-03-20",
+"measure": "billions of tokens",
+"value": 7.9993
+},
+{
+"date": "2026-03-20",
+"measure": "indicative API cost (US$)",
+"value": 10011.84
+},
+{
+"date": "2026-03-21",
+"measure": "billions of tokens",
+"value": 8.0349
+},
+{
+"date": "2026-03-21",
+"measure": "indicative API cost (US$)",
+"value": 10046.8
+},
+{
+"date": "2026-03-22",
+"measure": "billions of tokens",
+"value": 8.0384
+},
+{
+"date": "2026-03-22",
+"measure": "indicative API cost (US$)",
+"value": 10051.43
+},
+{
+"date": "2026-03-23",
+"measure": "billions of tokens",
+"value": 8.0636
+},
+{
+"date": "2026-03-23",
+"measure": "indicative API cost (US$)",
+"value": 10073.44
+},
+{
+"date": "2026-03-24",
+"measure": "billions of tokens",
+"value": 8.0809
+},
+{
+"date": "2026-03-24",
+"measure": "indicative API cost (US$)",
+"value": 10091.45
+},
+{
+"date": "2026-03-25",
+"measure": "billions of tokens",
+"value": 8.1309
+},
+{
+"date": "2026-03-25",
+"measure": "indicative API cost (US$)",
+"value": 10142.75
+},
+{
+"date": "2026-03-26",
+"measure": "billions of tokens",
+"value": 8.1754
+},
+{
+"date": "2026-03-26",
+"measure": "indicative API cost (US$)",
+"value": 10181.83
+},
+{
+"date": "2026-03-27",
+"measure": "billions of tokens",
+"value": 8.2961
+},
+{
+"date": "2026-03-27",
+"measure": "indicative API cost (US$)",
+"value": 10288.15
+},
+{
+"date": "2026-03-28",
+"measure": "billions of tokens",
+"value": 8.3162
+},
+{
+"date": "2026-03-28",
+"measure": "indicative API cost (US$)",
+"value": 10301.99
+},
+{
+"date": "2026-03-29",
+"measure": "billions of tokens",
+"value": 8.3939
+},
+{
+"date": "2026-03-29",
+"measure": "indicative API cost (US$)",
+"value": 10357.15
+},
+{
+"date": "2026-03-30",
+"measure": "billions of tokens",
+"value": 8.4636
+},
+{
+"date": "2026-03-30",
+"measure": "indicative API cost (US$)",
+"value": 10416.62
+},
+{
+"date": "2026-03-31",
+"measure": "billions of tokens",
+"value": 8.6095
+},
+{
+"date": "2026-03-31",
+"measure": "indicative API cost (US$)",
+"value": 10531.12
+},
+{
+"date": "2026-04-01",
+"measure": "billions of tokens",
+"value": 8.6903
+},
+{
+"date": "2026-04-01",
+"measure": "indicative API cost (US$)",
+"value": 10603.22
+},
+{
+"date": "2026-04-02",
+"measure": "billions of tokens",
+"value": 8.7574
+},
+{
+"date": "2026-04-02",
+"measure": "indicative API cost (US$)",
+"value": 10663.23
+},
+{
+"date": "2026-04-03",
+"measure": "billions of tokens",
+"value": 8.9005
+},
+{
+"date": "2026-04-03",
+"measure": "indicative API cost (US$)",
+"value": 10771.56
+},
+{
+"date": "2026-04-04",
+"measure": "billions of tokens",
+"value": 8.9725
+},
+{
+"date": "2026-04-04",
+"measure": "indicative API cost (US$)",
+"value": 10829.42
+},
+{
+"date": "2026-04-05",
+"measure": "billions of tokens",
+"value": 8.9902
+},
+{
+"date": "2026-04-05",
+"measure": "indicative API cost (US$)",
+"value": 10844.37
+},
+{
+"date": "2026-04-06",
+"measure": "billions of tokens",
+"value": 9.0514
+},
+{
+"date": "2026-04-06",
+"measure": "indicative API cost (US$)",
+"value": 10889.22
+},
+{
+"date": "2026-04-07",
+"measure": "billions of tokens",
+"value": 9.2097
+},
+{
+"date": "2026-04-07",
+"measure": "indicative API cost (US$)",
+"value": 11008.07
+},
+{
+"date": "2026-04-08",
+"measure": "billions of tokens",
+"value": 9.4264
+},
+{
+"date": "2026-04-08",
+"measure": "indicative API cost (US$)",
+"value": 11166.36
+},
+{
+"date": "2026-04-09",
+"measure": "billions of tokens",
+"value": 9.7355
+},
+{
+"date": "2026-04-09",
+"measure": "indicative API cost (US$)",
+"value": 11393.75
+},
+{
+"date": "2026-04-10",
+"measure": "billions of tokens",
+"value": 10.23
+},
+{
+"date": "2026-04-10",
+"measure": "indicative API cost (US$)",
+"value": 11758.81
+},
+{
+"date": "2026-04-11",
+"measure": "billions of tokens",
+"value": 10.4053
+},
+{
+"date": "2026-04-11",
+"measure": "indicative API cost (US$)",
+"value": 11903.47
+},
+{
+"date": "2026-04-12",
+"measure": "billions of tokens",
+"value": 10.5231
+},
+{
+"date": "2026-04-12",
+"measure": "indicative API cost (US$)",
+"value": 11987.84
+},
+{
+"date": "2026-04-13",
+"measure": "billions of tokens",
+"value": 10.7263
+},
+{
+"date": "2026-04-13",
+"measure": "indicative API cost (US$)",
+"value": 12147.09
+},
+{
+"date": "2026-04-14",
+"measure": "billions of tokens",
+"value": 10.8453
+},
+{
+"date": "2026-04-14",
+"measure": "indicative API cost (US$)",
+"value": 12258.17
+},
+{
+"date": "2026-04-15",
+"measure": "billions of tokens",
+"value": 10.9748
+},
+{
+"date": "2026-04-15",
+"measure": "indicative API cost (US$)",
+"value": 12392.18
+},
+{
+"date": "2026-04-16",
+"measure": "billions of tokens",
+"value": 11.1271
+},
+{
+"date": "2026-04-16",
+"measure": "indicative API cost (US$)",
+"value": 12545.31
+},
+{
+"date": "2026-04-17",
+"measure": "billions of tokens",
+"value": 11.3123
+},
+{
+"date": "2026-04-17",
+"measure": "indicative API cost (US$)",
+"value": 12695.24
+},
+{
+"date": "2026-04-18",
+"measure": "billions of tokens",
+"value": 11.4708
+},
+{
+"date": "2026-04-18",
+"measure": "indicative API cost (US$)",
+"value": 12830.58
+},
+{
+"date": "2026-04-19",
+"measure": "billions of tokens",
+"value": 11.5943
+},
+{
+"date": "2026-04-19",
+"measure": "indicative API cost (US$)",
+"value": 12931.42
+},
+{
+"date": "2026-04-20",
+"measure": "billions of tokens",
+"value": 11.7699
+},
+{
+"date": "2026-04-20",
+"measure": "indicative API cost (US$)",
+"value": 13076.83
+},
+{
+"date": "2026-04-21",
+"measure": "billions of tokens",
+"value": 11.8123
+},
+{
+"date": "2026-04-21",
+"measure": "indicative API cost (US$)",
+"value": 13123.72
+},
+{
+"date": "2026-04-22",
+"measure": "billions of tokens",
+"value": 11.9983
+},
+{
+"date": "2026-04-22",
+"measure": "indicative API cost (US$)",
+"value": 13307.85
+},
+{
+"date": "2026-04-23",
+"measure": "billions of tokens",
+"value": 12.1418
+},
+{
+"date": "2026-04-23",
+"measure": "indicative API cost (US$)",
+"value": 13436.27
+},
+{
+"date": "2026-04-24",
+"measure": "billions of tokens",
+"value": 12.3598
+},
+{
+"date": "2026-04-24",
+"measure": "indicative API cost (US$)",
+"value": 13637.13
+},
+{
+"date": "2026-04-25",
+"measure": "billions of tokens",
+"value": 12.5169
+},
+{
+"date": "2026-04-25",
+"measure": "indicative API cost (US$)",
+"value": 13782.36
+},
+{
+"date": "2026-04-26",
+"measure": "billions of tokens",
+"value": 12.6437
+},
+{
+"date": "2026-04-26",
+"measure": "indicative API cost (US$)",
+"value": 13882.15
+},
+{
+"date": "2026-04-27",
+"measure": "billions of tokens",
+"value": 12.6477
+},
+{
+"date": "2026-04-27",
+"measure": "indicative API cost (US$)",
+"value": 13889.91
+},
+{
+"date": "2026-04-28",
+"measure": "billions of tokens",
+"value": 12.8847
+},
+{
+"date": "2026-04-28",
+"measure": "indicative API cost (US$)",
+"value": 14112.5
+},
+{
+"date": "2026-04-29",
+"measure": "billions of tokens",
+"value": 13.2551
+},
+{
+"date": "2026-04-29",
+"measure": "indicative API cost (US$)",
+"value": 14436.48
+},
+{
+"date": "2026-04-30",
+"measure": "billions of tokens",
+"value": 13.5874
+},
+{
+"date": "2026-04-30",
+"measure": "indicative API cost (US$)",
+"value": 14727.9
+},
+{
+"date": "2026-05-01",
+"measure": "billions of tokens",
+"value": 13.9536
+},
+{
+"date": "2026-05-01",
+"measure": "indicative API cost (US$)",
+"value": 15057.74
+},
+{
+"date": "2026-05-02",
+"measure": "billions of tokens",
+"value": 13.9743
+},
+{
+"date": "2026-05-02",
+"measure": "indicative API cost (US$)",
+"value": 15091.36
+},
+{
+"date": "2026-05-03",
+"measure": "billions of tokens",
+"value": 13.9855
+},
+{
+"date": "2026-05-03",
+"measure": "indicative API cost (US$)",
+"value": 15106.86
+},
+{
+"date": "2026-05-04",
+"measure": "billions of tokens",
+"value": 14.1723
+},
+{
+"date": "2026-05-04",
+"measure": "indicative API cost (US$)",
+"value": 15271.5
+},
+{
+"date": "2026-05-05",
+"measure": "billions of tokens",
+"value": 14.5559
+},
+{
+"date": "2026-05-05",
+"measure": "indicative API cost (US$)",
+"value": 15596.86
+},
+{
+"date": "2026-05-06",
+"measure": "billions of tokens",
+"value": 14.8521
+},
+{
+"date": "2026-05-06",
+"measure": "indicative API cost (US$)",
+"value": 15866.47
+},
+{
+"date": "2026-05-07",
+"measure": "billions of tokens",
+"value": 14.9763
+},
+{
+"date": "2026-05-07",
+"measure": "indicative API cost (US$)",
+"value": 16005.41
+},
+{
+"date": "2026-05-08",
+"measure": "billions of tokens",
+"value": 15.287
+},
+{
+"date": "2026-05-08",
+"measure": "indicative API cost (US$)",
+"value": 16252.07
+},
+{
+"date": "2026-05-09",
+"measure": "billions of tokens",
+"value": 15.3238
+},
+{
+"date": "2026-05-09",
+"measure": "indicative API cost (US$)",
+"value": 16303.46
+},
+{
+"date": "2026-05-10",
+"measure": "billions of tokens",
+"value": 15.3444
+},
+{
+"date": "2026-05-10",
+"measure": "indicative API cost (US$)",
+"value": 16334.05
+},
+{
+"date": "2026-05-11",
+"measure": "billions of tokens",
+"value": 15.4721
+},
+{
+"date": "2026-05-11",
+"measure": "indicative API cost (US$)",
+"value": 16464.36
+},
+{
+"date": "2026-05-12",
+"measure": "billions of tokens",
+"value": 15.7564
+},
+{
+"date": "2026-05-12",
+"measure": "indicative API cost (US$)",
+"value": 16716.23
+},
+{
+"date": "2026-05-13",
+"measure": "billions of tokens",
+"value": 16.0064
+},
+{
+"date": "2026-05-13",
+"measure": "indicative API cost (US$)",
+"value": 16938.11
+},
+{
+"date": "2026-05-14",
+"measure": "billions of tokens",
+"value": 16.0864
+},
+{
+"date": "2026-05-14",
+"measure": "indicative API cost (US$)",
+"value": 17025.35
+},
+{
+"date": "2026-05-15",
+"measure": "billions of tokens",
+"value": 16.3183
+},
+{
+"date": "2026-05-15",
+"measure": "indicative API cost (US$)",
+"value": 17221.82
+},
+{
+"date": "2026-05-16",
+"measure": "billions of tokens",
+"value": 16.4496
+},
+{
+"date": "2026-05-16",
+"measure": "indicative API cost (US$)",
+"value": 17326.43
+},
+{
+"date": "2026-05-17",
+"measure": "billions of tokens",
+"value": 16.5517
+},
+{
+"date": "2026-05-17",
+"measure": "indicative API cost (US$)",
+"value": 17402.56
+},
+{
+"date": "2026-05-18",
+"measure": "billions of tokens",
+"value": 16.9145
+},
+{
+"date": "2026-05-18",
+"measure": "indicative API cost (US$)",
+"value": 17672.25
+},
+{
+"date": "2026-05-19",
+"measure": "billions of tokens",
+"value": 17.1257
+},
+{
+"date": "2026-05-19",
+"measure": "indicative API cost (US$)",
+"value": 17861.79
+},
+{
+"date": "2026-05-20",
+"measure": "billions of tokens",
+"value": 17.3258
+},
+{
+"date": "2026-05-20",
+"measure": "indicative API cost (US$)",
+"value": 18053.18
+},
+{
+"date": "2026-05-21",
+"measure": "billions of tokens",
+"value": 17.4841
+},
+{
+"date": "2026-05-21",
+"measure": "indicative API cost (US$)",
+"value": 18233.18
+},
+{
+"date": "2026-05-22",
+"measure": "billions of tokens",
+"value": 17.6422
+},
+{
+"date": "2026-05-22",
+"measure": "indicative API cost (US$)",
+"value": 18433.96
+},
+{
+"date": "2026-05-23",
+"measure": "billions of tokens",
+"value": 17.8572
+},
+{
+"date": "2026-05-23",
+"measure": "indicative API cost (US$)",
+"value": 18606.91
+},
+{
+"date": "2026-05-24",
+"measure": "billions of tokens",
+"value": 17.9013
+},
+{
+"date": "2026-05-24",
+"measure": "indicative API cost (US$)",
+"value": 18661.63
+},
+{
+"date": "2026-05-25",
+"measure": "billions of tokens",
+"value": 18.0591
+},
+{
+"date": "2026-05-25",
+"measure": "indicative API cost (US$)",
+"value": 18820.33
+},
+{
+"date": "2026-05-26",
+"measure": "billions of tokens",
+"value": 18.284
+},
+{
+"date": "2026-05-26",
+"measure": "indicative API cost (US$)",
+"value": 19034.1
+},
+{
+"date": "2026-05-27",
+"measure": "billions of tokens",
+"value": 18.4017
+},
+{
+"date": "2026-05-27",
+"measure": "indicative API cost (US$)",
+"value": 19160.59
+},
+{
+"date": "2026-05-28",
+"measure": "billions of tokens",
+"value": 18.5096
+},
+{
+"date": "2026-05-28",
+"measure": "indicative API cost (US$)",
+"value": 19275.82
+},
+{
+"date": "2026-05-29",
+"measure": "billions of tokens",
+"value": 18.7951
+},
+{
+"date": "2026-05-29",
+"measure": "indicative API cost (US$)",
+"value": 19582.08
+},
+{
+"date": "2026-05-30",
+"measure": "billions of tokens",
+"value": 18.8886
+},
+{
+"date": "2026-05-30",
+"measure": "indicative API cost (US$)",
+"value": 19740.13
+},
+{
+"date": "2026-05-31",
+"measure": "billions of tokens",
+"value": 19.004
+},
+{
+"date": "2026-05-31",
+"measure": "indicative API cost (US$)",
+"value": 19894.81
+},
+{
+"date": "2026-06-01",
+"measure": "billions of tokens",
+"value": 19.0551
+},
+{
+"date": "2026-06-01",
+"measure": "indicative API cost (US$)",
+"value": 19958.39
+},
+{
+"date": "2026-06-02",
+"measure": "billions of tokens",
+"value": 19.1779
+},
+{
+"date": "2026-06-02",
+"measure": "indicative API cost (US$)",
+"value": 20117.0
+},
+{
+"date": "2026-06-03",
+"measure": "billions of tokens",
+"value": 19.9354
+},
+{
+"date": "2026-06-03",
+"measure": "indicative API cost (US$)",
+"value": 20745.48
+},
+{
+"date": "2026-06-04",
+"measure": "billions of tokens",
+"value": 20.2372
+},
+{
+"date": "2026-06-04",
+"measure": "indicative API cost (US$)",
+"value": 21046.18
+},
+{
+"date": "2026-06-05",
+"measure": "billions of tokens",
+"value": 20.506
+},
+{
+"date": "2026-06-05",
+"measure": "indicative API cost (US$)",
+"value": 21345.81
+},
+{
+"date": "2026-06-06",
+"measure": "billions of tokens",
+"value": 20.6744
+},
+{
+"date": "2026-06-06",
+"measure": "indicative API cost (US$)",
+"value": 21522.49
+},
+{
+"date": "2026-06-07",
+"measure": "billions of tokens",
+"value": 20.9698
+},
+{
+"date": "2026-06-07",
+"measure": "indicative API cost (US$)",
+"value": 21814.06
+},
+{
+"date": "2026-06-08",
+"measure": "billions of tokens",
+"value": 21.3345
+},
+{
+"date": "2026-06-08",
+"measure": "indicative API cost (US$)",
+"value": 22142.47
+},
+{
+"date": "2026-06-09",
+"measure": "billions of tokens",
+"value": 21.8544
+},
+{
+"date": "2026-06-09",
+"measure": "indicative API cost (US$)",
+"value": 22624.37
+},
+{
+"date": "2026-06-10",
+"measure": "billions of tokens",
+"value": 22.7573
+},
+{
+"date": "2026-06-10",
+"measure": "indicative API cost (US$)",
+"value": 23771.67
+},
+{
+"date": "2026-06-11",
+"measure": "billions of tokens",
+"value": 22.9099
+},
+{
+"date": "2026-06-11",
+"measure": "indicative API cost (US$)",
+"value": 23935.16
+},
+{
+"date": "2026-06-12",
+"measure": "billions of tokens",
+"value": 22.9573
+},
+{
+"date": "2026-06-12",
+"measure": "indicative API cost (US$)",
+"value": 24015.07
+},
+{
+"date": "2026-06-13",
+"measure": "billions of tokens",
+"value": 23.0223
+},
+{
+"date": "2026-06-13",
+"measure": "indicative API cost (US$)",
+"value": 24129.84
+},
+{
+"date": "2026-06-14",
+"measure": "billions of tokens",
+"value": 23.073
+},
+{
+"date": "2026-06-14",
+"measure": "indicative API cost (US$)",
+"value": 24181.17
+},
+{
+"date": "2026-06-15",
+"measure": "billions of tokens",
+"value": 23.2149
+},
+{
+"date": "2026-06-15",
+"measure": "indicative API cost (US$)",
+"value": 24387.55
+},
+{
+"date": "2026-06-16",
+"measure": "billions of tokens",
+"value": 23.4195
+},
+{
+"date": "2026-06-16",
+"measure": "indicative API cost (US$)",
+"value": 24668.02
+},
+{
+"date": "2026-06-17",
+"measure": "billions of tokens",
+"value": 24.0371
+},
+{
+"date": "2026-06-17",
+"measure": "indicative API cost (US$)",
+"value": 25161.69
+},
+{
+"date": "2026-06-18",
+"measure": "billions of tokens",
+"value": 24.342
+},
+{
+"date": "2026-06-18",
+"measure": "indicative API cost (US$)",
+"value": 25545.32
+},
+{
+"date": "2026-06-19",
+"measure": "billions of tokens",
+"value": 24.6873
+},
+{
+"date": "2026-06-19",
+"measure": "indicative API cost (US$)",
+"value": 25988.32
+},
+{
+"date": "2026-06-20",
+"measure": "billions of tokens",
+"value": 24.9934
+},
+{
+"date": "2026-06-20",
+"measure": "indicative API cost (US$)",
+"value": 26348.42
+},
+{
+"date": "2026-06-21",
+"measure": "billions of tokens",
+"value": 25.1441
+},
+{
+"date": "2026-06-21",
+"measure": "indicative API cost (US$)",
+"value": 26498.89
+},
+{
+"date": "2026-06-22",
+"measure": "billions of tokens",
+"value": 25.4159
+},
+{
+"date": "2026-06-22",
+"measure": "indicative API cost (US$)",
+"value": 26778.6
+},
+{
+"date": "2026-06-23",
+"measure": "billions of tokens",
+"value": 25.6993
+},
+{
+"date": "2026-06-23",
+"measure": "indicative API cost (US$)",
+"value": 27035.23
+},
+{
+"date": "2026-06-24",
+"measure": "billions of tokens",
+"value": 25.929
+},
+{
+"date": "2026-06-24",
+"measure": "indicative API cost (US$)",
+"value": 27268.78
+},
+{
+"date": "2026-06-25",
+"measure": "billions of tokens",
+"value": 26.149
+},
+{
+"date": "2026-06-25",
+"measure": "indicative API cost (US$)",
+"value": 27523.59
+},
+{
+"date": "2026-06-26",
+"measure": "billions of tokens",
+"value": 26.3441
+},
+{
+"date": "2026-06-26",
+"measure": "indicative API cost (US$)",
+"value": 27729.24
+},
+{
+"date": "2026-06-27",
+"measure": "billions of tokens",
+"value": 26.5318
+},
+{
+"date": "2026-06-27",
+"measure": "indicative API cost (US$)",
+"value": 27941.55
+},
+{
+"date": "2026-06-28",
+"measure": "billions of tokens",
+"value": 26.6284
+},
+{
+"date": "2026-06-28",
+"measure": "indicative API cost (US$)",
+"value": 28035.08
+},
+{
+"date": "2026-06-29",
+"measure": "billions of tokens",
+"value": 26.7125
+},
+{
+"date": "2026-06-29",
+"measure": "indicative API cost (US$)",
+"value": 28133.54
+},
+{
+"date": "2026-06-30",
+"measure": "billions of tokens",
+"value": 26.7707
+},
+{
+"date": "2026-06-30",
+"measure": "indicative API cost (US$)",
+"value": 28206.89
+},
+{
+"date": "2026-07-01",
+"measure": "billions of tokens",
+"value": 27.0309
+},
+{
+"date": "2026-07-01",
+"measure": "indicative API cost (US$)",
+"value": 28467.33
+},
+{
+"date": "2026-07-02",
+"measure": "billions of tokens",
+"value": 27.2209
+},
+{
+"date": "2026-07-02",
+"measure": "indicative API cost (US$)",
+"value": 28755.89
+},
+{
+"date": "2026-07-03",
+"measure": "billions of tokens",
+"value": 27.6224
+},
+{
+"date": "2026-07-03",
+"measure": "indicative API cost (US$)",
+"value": 29344.49
+},
+{
+"date": "2026-07-04",
+"measure": "billions of tokens",
+"value": 27.8618
+},
+{
+"date": "2026-07-04",
+"measure": "indicative API cost (US$)",
+"value": 29717.64
+},
+{
+"date": "2026-07-05",
+"measure": "billions of tokens",
+"value": 27.9742
+},
+{
+"date": "2026-07-05",
+"measure": "indicative API cost (US$)",
+"value": 29848.95
+},
+{
+"date": "2026-07-06",
+"measure": "billions of tokens",
+"value": 28.2868
+},
+{
+"date": "2026-07-06",
+"measure": "indicative API cost (US$)",
+"value": 30146.72
+},
+{
+"date": "2026-07-07",
+"measure": "billions of tokens",
+"value": 28.813
+},
+{
+"date": "2026-07-07",
+"measure": "indicative API cost (US$)",
+"value": 30731.32
+},
+{
+"date": "2026-07-08",
+"measure": "billions of tokens",
+"value": 29.3531
+},
+{
+"date": "2026-07-08",
+"measure": "indicative API cost (US$)",
+"value": 31124.47
+},
+{
+"date": "2026-07-09",
+"measure": "billions of tokens",
+"value": 30.2056
+},
+{
+"date": "2026-07-09",
+"measure": "indicative API cost (US$)",
+"value": 31802.34
+},
+{
+"date": "2026-07-10",
+"measure": "billions of tokens",
+"value": 30.877
+},
+{
+"date": "2026-07-10",
+"measure": "indicative API cost (US$)",
+"value": 32370.18
+},
+{
+"date": "2026-07-11",
+"measure": "billions of tokens",
+"value": 31.4667
+},
+{
+"date": "2026-07-11",
+"measure": "indicative API cost (US$)",
+"value": 32781.88
+},
+{
+"date": "2026-07-12",
+"measure": "billions of tokens",
+"value": 32.0472
+},
+{
+"date": "2026-07-12",
+"measure": "indicative API cost (US$)",
+"value": 33251.43
+},
+{
+"date": "2026-07-13",
+"measure": "billions of tokens",
+"value": 32.7774
+},
+{
+"date": "2026-07-13",
+"measure": "indicative API cost (US$)",
+"value": 33752.7
+},
+{
+"date": "2026-07-14",
+"measure": "billions of tokens",
+"value": 33.4379
+},
+{
+"date": "2026-07-14",
+"measure": "indicative API cost (US$)",
+"value": 34252.68
+},
+{
+"date": "2026-07-15",
+"measure": "billions of tokens",
+"value": 33.9913
+},
+{
+"date": "2026-07-15",
+"measure": "indicative API cost (US$)",
+"value": 34654.22
+},
+{
+"date": "2026-07-16",
+"measure": "billions of tokens",
+"value": 34.8745
+},
+{
+"date": "2026-07-16",
+"measure": "indicative API cost (US$)",
+"value": 35516.64
+},
+{
+"date": "2026-07-17",
+"measure": "billions of tokens",
+"value": 35.5054
+},
+{
+"date": "2026-07-17",
+"measure": "indicative API cost (US$)",
+"value": 36033.87
+},
+{
+"date": "2026-07-18",
+"measure": "billions of tokens",
+"value": 35.9801
+},
+{
+"date": "2026-07-18",
+"measure": "indicative API cost (US$)",
+"value": 36337.48
+},
+{
+"date": "2026-07-19",
+"measure": "billions of tokens",
+"value": 36.5137
+},
+{
+"date": "2026-07-19",
+"measure": "indicative API cost (US$)",
+"value": 36632.0
+},
+{
+"date": "2026-07-20",
+"measure": "billions of tokens",
+"value": 37.207
+},
+{
+"date": "2026-07-20",
+"measure": "indicative API cost (US$)",
+"value": 37116.26
+},
+{
+"date": "2026-07-21",
+"measure": "billions of tokens",
+"value": 37.876
+},
+{
+"date": "2026-07-21",
+"measure": "indicative API cost (US$)",
+"value": 37594.45
+},
+{
+"date": "2026-07-22",
+"measure": "billions of tokens",
+"value": 38.5796
+},
+{
+"date": "2026-07-22",
+"measure": "indicative API cost (US$)",
+"value": 38086.53
+},
+{
+"date": "2026-07-23",
+"measure": "billions of tokens",
+"value": 39.4321
+},
+{
+"date": "2026-07-23",
+"measure": "indicative API cost (US$)",
+"value": 38768.02
+},
+{
+"date": "2026-07-24",
+"measure": "billions of tokens",
+"value": 39.7733
+},
+{
+"date": "2026-07-24",
+"measure": "indicative API cost (US$)",
+"value": 38955.48
+},
+{
+"date": "2026-07-25",
+"measure": "billions of tokens",
+"value": 40.3494
+},
+{
+"date": "2026-07-25",
+"measure": "indicative API cost (US$)",
+"value": 39263.87
+},
+{
+"date": "2026-07-26",
+"measure": "billions of tokens",
+"value": 40.8552
+},
+{
+"date": "2026-07-26",
+"measure": "indicative API cost (US$)",
+"value": 39435.14
+},
+{
+"date": "2026-07-27",
+"measure": "billions of tokens",
+"value": 41.1365
+},
+{
+"date": "2026-07-27",
+"measure": "indicative API cost (US$)",
+"value": 39578.17
+},
+{
+"date": "2026-07-28",
+"measure": "billions of tokens",
+"value": 42.0072
+},
+{
+"date": "2026-07-28",
+"measure": "indicative API cost (US$)",
+"value": 40253.32
+},
+{
+"date": "2026-07-29",
+"measure": "billions of tokens",
+"value": 43.023
+},
+{
+"date": "2026-07-29",
+"measure": "indicative API cost (US$)",
+"value": 41003.99
+},
+{
+"date": "2026-07-30",
+"measure": "billions of tokens",
+"value": 43.8836
+},
+{
+"date": "2026-07-30",
+"measure": "indicative API cost (US$)",
+"value": 41614.18
+},
+{
+"date": "2026-07-31",
+"measure": "billions of tokens",
+"value": 44.7011
+},
+{
+"date": "2026-07-31",
+"measure": "indicative API cost (US$)",
+"value": 42284.48
+},
+{
+"date": "2026-08-01",
+"measure": "billions of tokens",
+"value": 45.2045
+},
+{
+"date": "2026-08-01",
+"measure": "indicative API cost (US$)",
+"value": 42667.76
+},
+{
+"date": "2026-08-02",
+"measure": "billions of tokens",
+"value": 45.3385
+},
+{
+"date": "2026-08-02",
+"measure": "indicative API cost (US$)",
+"value": 42844.36
+},
+{
+"date": "2026-08-03",
+"measure": "billions of tokens",
+"value": 45.4781
+},
+{
+"date": "2026-08-03",
+"measure": "indicative API cost (US$)",
+"value": 42958.56
+},
+{
+"date": "2026-08-04",
+"measure": "billions of tokens",
+"value": 46.3313
+},
+{
+"date": "2026-08-04",
+"measure": "indicative API cost (US$)",
+"value": 43812.04
+},
+{
+"date": "2026-08-05",
+"measure": "billions of tokens",
+"value": 46.8829
+},
+{
+"date": "2026-08-05",
+"measure": "indicative API cost (US$)",
+"value": 44286.09
+},
+{
+"date": "2026-08-06",
+"measure": "billions of tokens",
+"value": 47.5265
+},
+{
+"date": "2026-08-06",
+"measure": "indicative API cost (US$)",
+"value": 44826.64
+},
+{
+"date": "2026-08-07",
+"measure": "billions of tokens",
+"value": 48.2236
+},
+{
+"date": "2026-08-07",
+"measure": "indicative API cost (US$)",
+"value": 45405.58
+},
+{
+"date": "2026-08-08",
+"measure": "billions of tokens",
+"value": 48.8614
+},
+{
+"date": "2026-08-08",
+"measure": "indicative API cost (US$)",
+"value": 45806.99
+},
+{
+"date": "2026-08-09",
+"measure": "billions of tokens",
+"value": 49.3243
+},
+{
+"date": "2026-08-09",
+"measure": "indicative API cost (US$)",
+"value": 45984.07
+},
+{
+"date": "2026-08-10",
+"measure": "billions of tokens",
+"value": 49.8717
+},
+{
+"date": "2026-08-10",
+"measure": "indicative API cost (US$)",
+"value": 46239.13
+},
+{
+"date": "2026-08-11",
+"measure": "billions of tokens",
+"value": 50.5739
+},
+{
+"date": "2026-08-11",
+"measure": "indicative API cost (US$)",
+"value": 46558.57
+},
+{
+"date": "2026-08-12",
+"measure": "billions of tokens",
+"value": 51.283
+},
+{
+"date": "2026-08-12",
+"measure": "indicative API cost (US$)",
+"value": 46898.21
+},
+{
+"date": "2026-08-13",
+"measure": "billions of tokens",
+"value": 51.9283
+},
+{
+"date": "2026-08-13",
+"measure": "indicative API cost (US$)",
+"value": 47287.72
+},
+{
+"date": "2026-08-14",
+"measure": "billions of tokens",
+"value": 52.2896
+},
+{
+"date": "2026-08-14",
+"measure": "indicative API cost (US$)",
+"value": 47601.7
+},
+{
+"date": "2026-08-15",
+"measure": "billions of tokens",
+"value": 52.6307
+},
+{
+"date": "2026-08-15",
+"measure": "indicative API cost (US$)",
+"value": 47863.56
+},
+{
+"date": "2026-08-16",
+"measure": "billions of tokens",
+"value": 53.2825
+},
+{
+"date": "2026-08-16",
+"measure": "indicative API cost (US$)",
+"value": 48429.08
+},
+{
+"date": "2026-08-17",
+"measure": "billions of tokens",
+"value": 54.0775
+},
+{
+"date": "2026-08-17",
+"measure": "indicative API cost (US$)",
+"value": 49225.33
+},
+{
+"date": "2026-08-18",
+"measure": "billions of tokens",
+"value": 54.765
+},
+{
+"date": "2026-08-18",
+"measure": "indicative API cost (US$)",
+"value": 49868.55
+},
+{
+"date": "2026-08-19",
+"measure": "billions of tokens",
+"value": 55.7366
+},
+{
+"date": "2026-08-19",
+"measure": "indicative API cost (US$)",
+"value": 50819.42
+},
+{
+"date": "2026-08-20",
+"measure": "billions of tokens",
+"value": 55.8866
+},
+{
+"date": "2026-08-20",
+"measure": "indicative API cost (US$)",
+"value": 50932.25
+}
+]

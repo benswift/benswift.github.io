@@ -43,13 +43,7 @@
   },
   "title": {
     "text": "Cumulative since day zero",
-    "subtitle": "The same 413 days, counted two ways. Separate panels, separate scales."
-  },
-  "data": {
-    "url": "/code/token-charts/cumulative.data.json",
-    "format": {
-      "type": "json"
-    }
+    "subtitle": "The same 467 days, counted two ways. Separate panels, separate scales."
   },
   "facet": {
     "row": {
@@ -133,6 +127,12 @@
           "format": ",.0f"
         }
       ]
+    }
+  },
+  "data": {
+    "url": "/code/token-charts/cumulative.data.json",
+    "format": {
+      "type": "json"
     }
   }
 }

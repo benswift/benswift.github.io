@@ -55,13 +55,21 @@
       <a href="https://vega.github.io/editor/">Vega editor</a>.
     </p>
 
+    <p>
+      The scripts read and write in the working directory, and the intermediates
+      are large, so run them somewhere else: copy the <code>.py</code> files to a
+      scratch directory, run them in the order below, and copy the resulting
+      <code>.vl.json</code> and <code>.data.json</code> back here.
+    </p>
+
     <h2>Scripts</h2>
     <ul>
-      <li><a href="scan_daily.py">scan_daily.py</a> — walk every transcript, deduplicate on the assistant message id, emit one row per API response</li>
+      <li><a href="scan_daily.py">scan_daily.py</a> — walk every transcript in ~/claude-logs and ~/zed-logs, deduplicate on the assistant message id, emit one row per API response</li>
       <li><a href="build_data.py">build_data.py</a> — aggregate those rows by day, by model and by hour</li>
       <li><a href="build_charts.py">build_charts.py</a> — the calendar heatmap, the per-model ridgeline, the cumulative panels and the diurnal profile</li>
       <li><a href="build_cost_charts.py">build_cost_charts.py</a> — the per-model and per-category cost charts</li>
       <li><a href="build_project_chart.py">build_project_chart.py</a> — the per-project ridgeline, public repositories only</li>
+      <li><a href="scope.py">scope.py</a> — what the charts count (measured responses, priced models) and what each token costs</li>
       <li><a href="chart_style.py">chart_style.py</a> — the config, colours and plot widths all the charts share, so they render to one width and one type size</li>
       <li><a href="render_svgs.py">render_svgs.py</a> — render each spec to the static SVG the post embeds, linking the labels of the public repositories</li>
     </ul>
