@@ -8,11 +8,7 @@ allowBuilds:
 # adopt on release day.
 minimumReleaseAgeExclude:
   - astro
-  - "@astrojs/internal-helpers"
-  - "@astrojs/markdown-remark"
-  - "@astrojs/markdown-satteri"
-  - "@astrojs/mdx"
-  - "@astrojs/svelte"
+  - "@astrojs/*"
   - p5
 
 # Dependabot security pins. Always use a floating ">=X" replacement, never an
@@ -21,4 +17,3 @@ minimumReleaseAgeExclude:
 # once parent deps move past the vulnerable range.
 overrides:
   "yaml@<2.8.3": ">=2.8.3"
-  "brace-expansion@>=3.0.0 <5.0.8": ">=5.0.8"
