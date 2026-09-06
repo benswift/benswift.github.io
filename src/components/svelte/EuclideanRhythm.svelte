@@ -5,9 +5,11 @@
 
   let { pattern }: Props = $props();
 
-  const columns = $derived(
-    pattern.split(";").map((col) =>
-      col.split(",").map((slot) => {
+  // One `;`-separated pattern per row, read left to right like a step
+  // sequencer: a rhythm is a sequence in time, so it lays out horizontally.
+  const rows = $derived(
+    pattern.split(";").map((row) =>
+      row.split(",").map((slot) => {
         const [bit, pos] = slot.split(":");
         return { hit: bit === "1", pos: Number.parseInt(pos, 10) };
       }),
@@ -16,9 +18,9 @@
 </script>
 
 <div class="rhythm">
-  {#each columns as col, ci (ci)}
-    <div class="column">
-      {#each col as slot, si (si)}
+  {#each rows as row, ri (ri)}
+    <div class="row">
+      {#each row as slot, si (si)}
         <div class="slot" class:hit={slot.hit}>
           <span class="pos">{slot.pos}</span>
         </div>
@@ -30,14 +32,13 @@
 <style>
   .rhythm {
     display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    justify-content: center;
     align-items: flex-start;
     margin-block-start: 1rem;
   }
-  .column {
+  .row {
     display: flex;
-    flex-direction: column;
     gap: 0.5rem;
   }
   .slot {

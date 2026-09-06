@@ -1,7 +1,6 @@
 ---
 title: Musical instructions
-description:
-  A STEM Camp workshop on the pattern-language of pop music --- from
+description: A STEM Camp workshop on the pattern-language of pop music --- from
   English-language song descriptions to livecoded performances.
 author: Ben Swift
 date: "2019-05-22"
@@ -128,8 +127,11 @@ harder or easier than you expected?
 extempore is a livecoding _language_ for music; `mplay` is the key function:
 
 ```xtlang
-;;                pitch loud duration   instrument
-(mplay *midi-out* 60    80   (* .5 dur) 1)
+(mplay *midi-out*
+       60         ; pitch
+       80         ; loudness
+       (* .5 dur) ; duration
+       1)         ; instrument
 ```
 
 ---
