@@ -123,10 +123,10 @@ PATH):
 
 ## Image generation style
 
-Model: **imagen** (text-to-image), with **no reference images** --- the house
-style lives entirely in the prompt suffix below. Keep it that way: shared
-references would cross-contaminate this site's decks with the llms-unplugged
-house style.
+Model: **gpt** (`openai/gpt-image-2.5-sunburst`), with **no reference images**
+--- the house style lives entirely in the prompt suffix below. Keep it that way:
+shared references would cross-contaminate this site's decks with the
+llms-unplugged house style.
 
 Prompt suffix: drawn with a few confident scratchy pen strokes in white ink
 only, plus exactly one loose splash of gold-amber watercolour, on an entirely
