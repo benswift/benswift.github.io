@@ -1,0 +1,94 @@
+/* Deck-scoped styles for word-became-machine: the two slide grammars the
+   llms-unplugged talk decks use that the shared university deck theme does
+   not carry. Imported from the deck file, so nothing here reaches the site's
+   other decks. */
+
+/* A hero slide with no h1: the theme's full-bleed artwork, bottom-left
+   placement and gradient scrim, carrying a spoken line or two instead of a
+   heading. The artwork does the work and the words on the wall are a caption
+   for it. Sized between body copy and the hero title so a line reads from the
+   back of a hall without shouting. An absolute measure, not a percentage:
+   `.hero` places its content with `place-content: end start`, so a percentage
+   would resolve against the paragraph's own max-content width. */
+.reveal .slides section.hero:not(:has(h1)) p {
+  max-inline-size: 52rem;
+  color: var(--anu-white);
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+/* Emphasis takes the light gold; --anu-gold itself is an ink tuned for white
+   paper and reads quieter than body text over dark artwork. */
+.reveal .slides section.hero:not(:has(h1)) strong {
+  color: var(--anu-gold-2, hsl(from var(--anu-gold) h calc(s - 30) 77));
+  font-weight: 400;
+}
+
+/* The same short gold rule the hero h1 draws under itself, so a titleless hero
+   still reads as one and the line has a full stop. */
+.reveal .slides section.hero:not(:has(h1)) p:last-of-type::after {
+  content: "";
+  display: block;
+  inline-size: 4rem;
+  block-size: 4px;
+  margin-block-start: 1.5rem;
+  border-radius: calc(var(--at-border-radius) / 3);
+  background: var(--at-primary);
+}
+
+/* Matching the title hero's entrance, scoped to `.present` because Reveal
+   mounts every slide on load and an unscoped animation would play unseen. */
+.reveal .slides section.hero.present:not(:has(h1)) p {
+  animation: hero-fade-up 0.6s ease both;
+}
+
+.reveal .slides section.hero.present:not(:has(h1)) p + p {
+  animation-delay: 0.2s;
+}
+
+/* Title-slide subtitle: a spoken line under the gold rule the h1 draws, a step
+   down in size so the title stays the loudest thing on the slide. */
+.reveal .slides section.hero h1 + p {
+  margin-block-start: 1.25rem;
+  color: var(--anu-white);
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.92;
+}
+
+/* The reveal slide: two renderings of the same verse, arriving one at a time.
+   Sized like a quote slide rather than body copy, because a hall has to read
+   these and recognise them. Marked in the margin by the hero rule stood on its
+   side; the colour of a quote is not allowed to mean anything. */
+.reveal .slides section .corpus-quote {
+  margin-block-end: 1.75rem;
+  border-inline-start: 4px solid var(--at-primary);
+  padding-inline-start: 1.5rem;
+  color: var(--anu-white);
+  font-size: 2.6rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.reveal .slides section .corpus-quote .corpus-attribution {
+  display: block;
+  margin-block-start: 0.4rem;
+  color: var(--color-text-muted, rgb(255 255 255 / 56%));
+  font-size: 0.5em;
+}
+
+/* The role-mapping and between-us slides carry a few lines of body copy beside
+   a portrait panel; the arrows and figures in them are the point, so let the
+   emphasis take the light gold there too. */
+.reveal .slides section.mapping strong {
+  color: var(--anu-gold-2, hsl(from var(--anu-gold) h calc(s - 30) 77));
+}
+
+/* A one-line raw `<p class="...">` in MDX is inline JSX inside a markdown
+   paragraph, so the page carries an empty `<p>` either side of the real one.
+   Hide the debris so it doesn't cost the slide its margins. */
+.reveal .slides section p:empty {
+  display: none;
+}
