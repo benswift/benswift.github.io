@@ -50,17 +50,16 @@ density, and the deal is load-bearing (a reprint has to match the copies
 already in the room):
 
   llms_unplugged sheets -i data/bbe-john-1.txt -n 2 \
-    --rows 16 --font-size 19.2pt --seed 42 --brief separate
+    --rows 16 --font-size 19.2pt --seed 42 --brief none
 
 which deals 1,266 token pairs across 22 sheets (57--58 pairs each). The
 figures on the between-us slide come from that run's metadata: 1,267
 tokens, 263 distinct. The source text lives in the private
-llms-unplugged-corpora repo (texts/bbe-john-1.txt); that run's output is
-committed beside the artwork so a reprint needs no rebuild:
-john-1-bbe-sheets.pdf is the 22-page handout, one sheet per participant,
-and john-1-bbe-brief.pdf is the one-page lectern brief with the worked
-example and the loud seeds. Both are served at
-/src/decks/assets/word-became-machine/ and linked from the notes.
+llms-unplugged-corpora repo (texts/bbe-john-1.txt); the dealt sheets are
+committed beside the artwork as john-1-bbe-sheets.pdf (22 pages, one per
+participant) so a reprint needs no rebuild, served at
+/src/decks/assets/word-became-machine/ and linked from the notes. The
+lectern brief isn't kept; `--brief none` skips it.
 
 Artwork: the llms-unplugged house style (flat gold/black/beige vector), not
 this site's scratchy-ink style --- a deliberate one-deck exception to the
@@ -133,7 +132,7 @@ Cue the house lights up and the sheets going out, because together we're going t
 
 Take one, pass the rest along, try not to leave any that aren't in someone's hand. Twenty-two sheets, so in a small room some people hold two --- that's fine, two hands.
 
-Print from [john-1-bbe-sheets.pdf](/src/decks/assets/word-became-machine/john-1-bbe-sheets.pdf) (22 pages, one per participant) and keep [john-1-bbe-brief.pdf](/src/decks/assets/word-became-machine/john-1-bbe-brief.pdf) on the lectern for the loud seeds.
+Print from [john-1-bbe-sheets.pdf](/src/decks/assets/word-became-machine/john-1-bbe-sheets.pdf): 22 pages, one per participant.
 ```
 
 ---
