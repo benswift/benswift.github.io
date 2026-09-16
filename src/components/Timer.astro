@@ -1,0 +1,256 @@
+---
+/**
+ * Countdown timer for deck slides (ported from the llms-unplugged website).
+ * Server-rendered with a bundled script and no client:* directive, which is
+ * the pattern that works inside .deck.mdx files. `overlay` pins it large in
+ * the slide's bottom-right corner so it can sit over a background image.
+ */
+interface Props {
+  /** Countdown length in minutes. */
+  minutes?: number;
+  /** Pin the timer to the bottom-right of the slide as a large overlay. */
+  overlay?: boolean;
+}
+
+const { minutes = 10, overlay = false } = Astro.props;
+
+const totalSeconds = Math.max(1, Math.round(minutes * 60));
+const mm = Math.floor(totalSeconds / 60);
+const ss = totalSeconds % 60;
+const initialLabel = `${mm}:${String(ss).padStart(2, "0")}`;
+---
+
+<div
+  class:list={["timer", { overlay }]}
+  data-timer
+  data-total={totalSeconds}
+  role="timer"
+>
+  <span class="time" data-time>
+    {initialLabel}
+  </span>
+
+  <div class="timer-controls">
+    <button type="button" class="ctl" data-toggle aria-label="Start timer">
+      start
+    </button>
+    <button type="button" class="ctl" data-reset aria-label="Reset timer">
+      reset
+    </button>
+    <button
+      type="button"
+      class="ctl"
+      data-adjust="60"
+      aria-label="Add one minute"
+    >
+      +1
+    </button>
+    <button
+      type="button"
+      class="ctl"
+      data-adjust="-60"
+      aria-label="Subtract one minute"
+    >
+      &minus;1
+    </button>
+  </div>
+</div>
+
+<script>
+  const MAX_MS = 99 * 60 * 1000;
+
+  function format(ms: number): string {
+    const s = Math.ceil(ms / 1000);
+    return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+  }
+
+  function initTimer(root: HTMLElement): void {
+    if (root.dataset.timerReady) return;
+    root.dataset.timerReady = "1";
+
+    const totalMs = Math.max(1, Number(root.dataset.total) || 600) * 1000;
+    const timeEl = root.querySelector<HTMLElement>("[data-time]")!;
+    const toggleBtn = root.querySelector<HTMLButtonElement>("[data-toggle]")!;
+
+    let remaining = totalMs;
+    let running = false;
+    // Absolute timestamp the countdown reaches zero; recomputed each tick so
+    // the display never drifts even if the interval is throttled.
+    let endAt = 0;
+    let interval: ReturnType<typeof setInterval> | null = null;
+
+    const stopTick = () => {
+      if (interval !== null) {
+        clearInterval(interval);
+        interval = null;
+      }
+    };
+
+    const render = () => {
+      timeEl.textContent = format(remaining);
+      root.classList.toggle("running", running);
+      root.classList.toggle("finished", remaining <= 0);
+      toggleBtn.textContent = running ? "pause" : "start";
+      toggleBtn.setAttribute(
+        "aria-label",
+        running ? "Pause timer" : "Start timer",
+      );
+      root.setAttribute("aria-label", `${format(remaining)} remaining`);
+    };
+
+    const tick = () => {
+      remaining = Math.max(0, endAt - Date.now());
+      if (remaining <= 0) {
+        running = false;
+        stopTick();
+      }
+      render();
+    };
+
+    const start = () => {
+      if (running || remaining <= 0) return;
+      endAt = Date.now() + remaining;
+      running = true;
+      stopTick();
+      interval = setInterval(tick, 200);
+      render();
+    };
+
+    const pause = () => {
+      if (!running) return;
+      remaining = Math.max(0, endAt - Date.now());
+      running = false;
+      stopTick();
+      render();
+    };
+
+    const reset = () => {
+      stopTick();
+      running = false;
+      remaining = totalMs;
+      render();
+    };
+
+    const adjust = (deltaMs: number) => {
+      remaining = Math.max(0, Math.min(MAX_MS, remaining + deltaMs));
+      if (running) endAt = Date.now() + remaining;
+      render();
+    };
+
+    const toggle = () => (running ? pause() : start());
+    toggleBtn.addEventListener("click", toggle);
+    root.querySelector("[data-reset]")?.addEventListener("click", reset);
+    root.querySelectorAll<HTMLElement>("[data-adjust]").forEach((btn) => {
+      btn.addEventListener("click", () =>
+        adjust(Number(btn.dataset.adjust) * 1000),
+      );
+    });
+
+    render();
+  }
+
+  const boot = () =>
+    document.querySelectorAll<HTMLElement>("[data-timer]").forEach(initTimer);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+</script>
+
+<style>
+  .timer {
+    --timer-done: #e2574c;
+
+    /* Anchor to the deck root (16px) so em-based sizing is predictable on any
+       slide --- otherwise the timer inherits a hero slide's large font and
+       balloons. */
+    font-size: 1rem;
+    line-height: 1;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+  }
+
+  /* Overlay: pin to the slide's bottom-right so the timer can sit on top of
+     any slide (e.g. a hero). !important overrides astromotion's
+     `section:has(.slide-bg) > :not(.slide-bg) { position: relative }`. */
+  .timer.overlay {
+    position: absolute !important;
+    bottom: 2rem;
+    right: 2.4rem;
+    z-index: 5;
+    align-items: flex-end;
+  }
+
+  /* Match the deck theme's headings (regular weight). */
+  .time {
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .timer.overlay .time {
+    font-size: 11rem;
+  }
+
+  /* On a split slide the overlay sits over the image panel (40% of the
+     canvas): shrink it to fit the panel, and scrim the bottom of the panel so
+     it reads over the artwork. An inset shadow rather than a gradient
+     background, because the panel's image is an inline background-image. */
+  :global(.split-layout) .timer.overlay .time {
+    font-size: 8rem;
+  }
+
+  :global(.split-layout:has(.timer.overlay) > .split-image) {
+    box-shadow: inset 0 -16rem 8rem -4rem rgb(0 0 0 / 85%);
+  }
+
+  .timer-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  .ctl {
+    border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+    border-radius: 999px;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.25em 0.7em;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+    transition:
+      opacity 0.2s,
+      background-color 0.2s;
+  }
+
+  .ctl:hover {
+    opacity: 1;
+    background: color-mix(in srgb, currentColor 14%, transparent);
+  }
+
+  .finished .time {
+    color: var(--timer-done);
+    animation: timer-pulse 1s ease-in-out infinite;
+  }
+
+  @keyframes timer-pulse {
+    50% {
+      opacity: 0.35;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .finished .time {
+      animation: none;
+    }
+  }
+</style>
