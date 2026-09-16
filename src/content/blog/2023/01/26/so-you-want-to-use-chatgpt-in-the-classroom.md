@@ -8,7 +8,7 @@ tags:
 ---
 
 THE Campus ran an edited version of
-[the post I wrote earlier this month](/blog/2023/01/16/chatGPT-in-the-classroom/) about
+[the post I wrote earlier this month](/blog/2023/01/16/chatgpt-in-the-classroom/) about
 incorporating ChatGPT into your teaching rather than pretending it isn't there. It's tighter
 than my original, so if you only read one, read theirs.
 

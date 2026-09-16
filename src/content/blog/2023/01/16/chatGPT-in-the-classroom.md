@@ -13,7 +13,7 @@ As I scrolled through my social media feeds over the Christmas break
 [read](https://www.theatlantic.com/technology/archive/2022/12/chatgpt-ai-writing-college-student-essays/672371/)
 [through](https://www.theguardian.com/technology/2022/dec/04/ai-bot-chatgpt-stuns-academics-with-essay-writing-skills-and-usability)
 [several](https://garymarcus.substack.com/p/how-come-gpt-can-seem-so-brilliant)
-"what do AI tools like [ChatGPT](https://chat.openai.comhttps://chat.openai.com)
+"what do AI tools like [ChatGPT](https://chat.openai.com)
 mean for the future of Higher Education" pieces, and I'm sure you saw them as
 well. To be honest, I'm reluctant to add to that discourse, because most of my
 thoughts on the issue have already been made.
@@ -24,7 +24,7 @@ ChatGPT and isn't worried about it destroying the fabric of higher education or
 anything like that, but they were a bit unsure about if and how they could make
 use of it in their class. So here are a few things to think about if you're in
 that position. I'm going to use
-[ChatGPT](https://chat.openai.comhttps://chat.openai.com) as an example (because
+[ChatGPT](https://chat.openai.com) as an example (because
 it's the hot one right now), but similar questions apply for any AI content
 generation tool, whether for generating text
 [images](https://stability.ai/blog/stablediffusion2-1-release7-dec-2022),
