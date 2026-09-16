@@ -27,6 +27,9 @@ const deckMeta = fs
     const fm = src.match(/^---\n([\s\S]*?)\n---/)
     return { slug, fm: fm ? (parseYaml(fm[1]) ?? {}) : {} }
   })
+  // astromotion drops `published: false` decks from the build and keeps
+  // `unlisted: true` ones at their URL only, so neither belongs in this list.
+  .filter(({ fm }) => fm.published !== false && fm.unlisted !== true)
 const deckSlugs = new Set(deckMeta.map((d) => d.slug))
 
 const talkBySlug = new Map(allTalks.map((t) => [t.id.replace(/\.md$/, ""), t.data]))
