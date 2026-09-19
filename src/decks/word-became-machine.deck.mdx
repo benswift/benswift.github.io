@@ -3,8 +3,8 @@ title: The word became machine
 description:
   A talk for Christian scholars in which the room becomes a bigram language
   model of John 1 (in the Bible in Basic English), generates a sentence that is
-  in no gospel, and then thinks about what kind of thing a machine made of
-  narrative is
+  in no gospel, and then reflects on what a machine made of narrative might mean
+  theologically
 author: Ben Swift
 date: "2026-09-25"
 event: Kategoria conference
@@ -16,13 +16,11 @@ import Timer from "../components/Timer.astro";
 import "./word-became-machine.deck.css";
 
 ```comment
-A version of the llms-unplugged "demystifying large language models" talk for
-an audience of Christian scholars: same spine (tool before the story, two
-stories, look inside, run the room, what just happened), a single corpus in
-place of the three books, and a closing run of meditations in place of the
-ANU-at-80 material. The room-run (sheets, algorithm, board, "we just ran a
-language model", the role mapping) is partials/sheets-run.mdx, ported from
-the llms-unplugged repo with the image paths pointed at this deck's assets.
+Two halves. First the room becomes a language model of John 1 and sees how
+it works (partials/sheets-run.mdx is the run: sheets, algorithm, board, "we
+just ran a language model", the role mapping). Then three reflections on
+what kind of thing it is: narrative becoming action, chance and
+providence, and the word becoming machine rather than flesh.
 
 Draft: `published: false` keeps it out of production builds while the
 content settles; flip to `unlisted: true` alone to publish it at its URL
@@ -32,10 +30,8 @@ TED-style: the speaking carries it and the slides are cues, not visual
 aids. Two slide grammars carry nearly all of it --- a full-bleed image with
 nothing on it (the SAY: line opening those notes is the sentence the image
 stands under), and one line in white over the artwork (`_class: hero`, no
-h1, styled in word-became-machine.deck.css). Only four slides carry real
-text: the algorithm, the role mapping, the between-us numbers and the reveal.
-If a slide is tempting you to read it out, cut it rather than the sentence
-you were going to say.
+h1, styled in word-became-machine.deck.css). If a slide is tempting you to
+read it out, cut it rather than the sentence you were going to say.
 
 Corpus: the Gospel of John, chapter 1, in the Bible in Basic English (BBE),
 data/bbe-john-1.txt in the llms-unplugged repo. The BBE disguises the most
@@ -43,7 +39,9 @@ familiar prologue in scripture --- "From the first he was the Word" --- so the
 reveal still lands for a room that knows John 1 by heart, and the
 recognition hit is on the translation rather than the source. Proper nouns
 leak from the shuffled sheets (Nathanael, Bethany, Lamb of God); don't fight
-that, the reveal is "one chapter, and which translation".
+that, the reveal is "one chapter, and which translation". Every scripture
+quote on the slides is BBE, so the reflections speak in the voice the room
+has just been holding.
 
 Sheets are built in the llms-unplugged repo, at the demystifying pack's
 density, and the deal is load-bearing (a reprint has to match the copies
@@ -58,28 +56,24 @@ tokens, 263 distinct. The source text lives in the private
 llms-unplugged-corpora repo (texts/bbe-john-1.txt); the dealt sheets are
 committed as public/assets/documents/word-became-machine/john-1-bbe-sheets.pdf
 (22 pages, one per participant) so a reprint needs no rebuild and anyone
-with the URL can print their own. The lectern brief isn't kept;
-`--brief none` skips it.
+with the URL can print their own.
 
 Artwork: the llms-unplugged house style (flat gold/black/beige vector), not
 this site's scratchy-ink style --- a deliberate one-deck exception to the
 CLAUDE.md rule against sharing references across the two, because the
-handouts in the room are llms-unplugged materials. The shared slides reuse
-the demystifying deck's assets verbatim; the four meditation backgrounds were
-generated with the llms-unplugged prompt suffix and its style exemplars as
-references.
+handouts in the room are llms-unplugged materials.
 
-Running order (target 22:00; the run is where the spare time goes):
-  0:00  The tool before the story; two stories      (slides 1-3)
-  2:00  Look inside --- sheets go out               (slide 4)
-  3:00  What you've been given, then the recipe     (slides 5-6)
-  5:00  Run the room                                (slide 7)
-  9:00  What just happened                          (slides 8-9)
- 11:00  No gospel; one chapter; between us          (slides 10-12)
- 14:00  What Claude does that we didn't             (slide 13)
- 16:00  A room did what needs a data centre         (slide 14)
- 17:00  Narrative-shaped; flesh; machine; witness   (slides 15-18)
- 21:00  Close and QR                                (slides 19-20)
+Running order (target 19:45; the run is where any spare time goes):
+  0:00  Title and hook                                  (slide 1)
+  1:00  Sheets out                                      (slide 2)
+  1:30  What you've been given, then the recipe         (slides 3-4)
+  3:30  Run the room                                    (slide 5)
+  7:30  We just ran a language model; the roles         (slides 6-7)
+  9:00  No gospel; one chapter; between us              (slides 8-10)
+ 11:30  Reflection 1: narrative becomes action          (slides 11-13)
+ 15:00  Reflection 2: the decision of chance            (slide 14)
+ 17:00  Reflection 3: flesh, and machine                (slides 15-16)
+ 19:15  QR and questions                                (slide 17)
 
 Per-slide notes hold the beats to hit --- rehearsal cues, not a script.
 ```
@@ -95,40 +89,20 @@ looking inside a language model, with John 1 in hand
 ```notes
 Hands up: used one this week. Keep them up if you could explain to a ten-year-old what it did.
 
-Most hands come down. That gap --- between using the thing and being able to say what it is --- is what the next twenty minutes are about. And I've picked the text we'll use for a reason, which I'll get to.
-```
-
----
-
-![bg](./assets/word-became-machine/bg-first-tool-wide.avif)
-
-```notes
-SAY: we got the tool before we got the story about the tool.
-
-Not too complicated --- it just happened too fast. Every other technology this size came with decades of argument about what it was before most people touched it. This one arrived in a browser tab.
-```
-
----
-
-![bg](./assets/word-became-machine/bg-two-stories.avif)
-
-```notes
-SAY: one story says it's basically a mind. The other says it's just autocomplete.
-
-Opposites doing the same job: beyond you or beneath you, either way don't look inside. Hold that thought --- there's a third story, and it's the one I want to leave you with, but it only makes sense after you've seen the inside.
+Most hands come down. In ten minutes you'll be able to, because you'll have been one. Then I want to spend the rest of the time on what kind of thing it is, because I think this room has things to say about that which the people building them mostly don't. I've picked the text we'll use for a reason, which I'll get to.
 ```
 
 ---
 
 {/* _class: hero */}
 
-it's hard to have an opinion\
-on a machine you've never seen **inside**
+for the next ten minutes\
+this room is a **language model**
 
 ![bg](./assets/word-became-machine/bg-machine-interior-wide.avif)
 
 ```notes
-Cue the house lights up and the sheets going out, because together we're going to look inside a language model. Not a diagram of the inside --- the inside.
+Cue the house lights up and the sheets going out. Not a diagram of the inside --- the inside.
 
 Take one, pass the rest along, try not to leave any that aren't in someone's hand. Twenty-two sheets, so in a small room some people hold two --- that's fine, two hands.
 
@@ -183,56 +157,11 @@ sheets
 no single sheet has the whole picture
 
 ```notes
-Every one of the 1,266 word pairs in the chapter was dealt to exactly one sheet, and the deal deliberately spreads each context across as many sheets as it will go. So the model wasn't on my laptop and it wasn't on anyone's page --- for the last five minutes it existed only across the whole room. If a sheet had gone home with someone, some contexts would have drawn no hands at all.
+Every one of the 1,266 word pairs in the chapter was dealt to exactly one sheet. So the model wasn't on my laptop and it wasn't on anyone's page --- for the last five minutes it existed only across the whole room. That's not a metaphor for how a model is distributed. It's literally where the model was.
 
-That's not a metaphor for how a model is distributed. It's literally where the model was.
+The ones you use are the same kind of thing, a billion times over, looking back over more than one word, and trained on very nearly everything anyone has written down. The loop is the same: look at the context, weigh the options, pick one, write it down.
 
-And 1,266 parameters is a small model. A frontier model has something like a trillion. Same kind of thing on your lap, a billion times over.
-```
-
----
-
-{/* _class: mapping */}
-
-## three things Claude\* does that we didn't
-
-![bg right:40%](./assets/word-became-machine/bg-attention.avif)
-
-it looks at **more than one word** of context
-
-it can say what it **never saw** --- `Nathanael` teaches it about `Philip`
-
-it's been taught to **answer**, not just continue
-
-```notes
-The asterisk is yours to explain, in one line: Claude here means any frontier model --- ChatGPT, Gemini, Llama. I just need a name to point at.
-
-This room will want this slide, because the obvious objection is "but that's not a real language model". Say each in a sentence and resist explaining any of them.
-
-One word of context is why our sentence wandered --- when I called `the`, nobody could tell whether we'd just written "was the" or "give witness about the". Claude looks back over the whole conversation.
-
-Our model rates any pair it never saw as flatly impossible, however sensible. A real model spreads what it learns across billions of numbers instead of separate cells, so what it learns about one disciple reaches the others.
-
-And ours only ever continues text. Ask it a question and it continues the question. Turning that into something that answers you is another round of training, on conversations.
-
-None of these changed the loop. Look at the context, weigh the options, pick one, write it down. Still just words in, words out.
-```
-
----
-
-{/* _class: hero */}
-
-a room full of people just did\
-the thing you're told needs a **data centre**
-
-![bg](./assets/word-became-machine/bg-hall-generation-wide.avif)
-
-```notes
-Who now thinks they could give a better answer to a ten-year-old about how language models do what they do?
-
-Obviously it still needs some simplification --- but, crucially, it's not beyond them, and it's not beneath them to try to understand.
-
-Now the third story. Slow down here; the next four slides are the part written for this room.
+Now, what kind of thing is it? Three reflections --- not conclusions, things I keep turning over.
 ```
 
 ---
@@ -246,11 +175,63 @@ a machine that is **narrative-shaped**
 ```notes
 SAY: what we built this afternoon was a machine, and the only thing in it was John 1.
 
-No Galilee, no Jordan, no body under the fig tree. Just which word followed which. Everything it could ever say was already latent in the shape of the text, and the text was the whole of its world.
+No Galilee, no Jordan, no body under the fig tree. Just which word followed which. The text was the whole of its world.
 
-The phrase I keep coming back to is from hikikomorphism, on Bluesky, 3 September 2026: LLMs are "text elementals", "entities that are narrative-shaped", and we need a way of talking about them "that acknowledges how weird they are without papering that over with the implication that they're just little guys inside the computer". Their line a few days later: the right stance is to mythologise them rather than anthropomorphise them.
+The phrase I keep coming back to is from hikikomorphism, on Bluesky, 3 September 2026: LLMs are "text elementals", "entities that are narrative-shaped". Their line a few days later: the right stance is to mythologise them rather than anthropomorphise them. Not a mind, not a parlour trick: a thing made out of narrative, that behaves the way narrative behaves.
+```
 
-That's the third story. Not a mind, not a parlour trick: a thing made out of narrative, that behaves the way narrative behaves. The room just watched one get built and start talking. The frontier ones are the same thing, made from very nearly everything anyone has ever written down.
+---
+
+{/* _class: hero */}
+
+“And God said, Let there be light:\
+**and there was light**”
+
+![bg](./assets/word-became-machine/bg-witness.avif)
+
+```notes
+Genesis 1:3, BBE. John's prologue opens by echoing it --- "At the first", "From the first" --- and in both the speaking is the making. The word doesn't describe the world; it does something.
+
+For most of history, text didn't do anything by itself. A story had to be read, and someone had to decide to act on it. Our model on the sheets is like that: all it can ever do is continue the text.
+
+The frontier ones are now wired to tools. What they write runs code, sends email, moves money. The machine that continues a story now continues it out into the world. Narrative has started to act.
+```
+
+---
+
+{/* _class: hero */}
+
+I build software now\
+by **describing** it
+
+![bg](./assets/word-became-machine/bg-first-tool-wide.avif)
+
+```notes
+The website this talk lives on, and the tool that printed your sheets, I built mostly by talking to one of these. I've been writing code for twenty years. The programmers who taught me would struggle to get their heads around it.
+
+Obviously this isn't Genesis 1. It's not something from nothing; it's speech into a world already made of code and words, and what comes back is assembled from what other people built. But the gap between saying a thing and making it has narrowed in a way that's genuinely new.
+
+The question I'd leave with this room: what does it mean for creatures made in the image of a God who speaks things into being to find that speaking is becoming how we make things? And what does it ask of us, when our words start doing things without anyone reading them first?
+```
+
+---
+
+{/* _class: mapping */}
+
+## put to the decision of chance
+
+![bg right:40%](./assets/word-became-machine/bg-algorithm-generation.avif)
+
+{/* prettier-ignore */}
+<p class="corpus-quote">“they put it to the decision of chance, and the decision was given for Matthias”<br /><span class="corpus-attribution">Acts 1:26, BBE</span></p>
+<p class="corpus-quote fragment">“A thing may be put to the decision of chance, but it comes about through the Lord.”<br /><span class="corpus-attribution">Proverbs 16:33, BBE</span></p>
+
+```notes
+When five hands went up, I picked one at random. That wasn't a shortcut; it's the mechanism. Take the chance out and always pick the most common continuation, and the model says the same flat thing forever. Every reply you get from a chatbot is a long run of lots cast, one per word.
+
+The apostles, replacing Judas, prayed and then put it to chance --- the BBE's phrase, and the same phrase Proverbs uses. Click in Proverbs: the lot and the providence held together in one verse.
+
+So who wrote our sentence? Not me, not you, not John. Every word was in the chapter; the order was a run of coin tosses. And people will find meaning in it anyway, the way they do in what the chatbots say. Authorship, inspiration, meaning coming out of a process no one steered --- this tradition has been living with those questions a long time. I don't have an answer, but I think this room is better equipped for the question than the rooms where these machines get built.
 ```
 
 ---
@@ -265,7 +246,7 @@ and **took a place among us** for a time”
 ```notes
 John 1:14, in the translation you were holding.
 
-Notice the direction of travel. The incarnation runs from Word toward flesh: toward the particular, the located, the once-only. One body, one town, one span of years. "Took a place among us for a time" --- the BBE's plainness does something the familiar rendering doesn't, because it names what a machine made of text cannot do. It has no place among us. It has no time.
+Notice the direction of travel. The incarnation runs from Word toward flesh: toward the particular, the located, the once-only. One body, one town, one span of years. "Took a place among us for a time" --- the BBE's plainness names exactly what a machine made of text cannot do. It has no place among us. It has no time.
 ```
 
 ---
@@ -279,44 +260,9 @@ the word became **machine**
 ```notes
 The language model runs the other way. It starts with flesh --- the millions of people who wrote --- and moves toward text, and then from text toward machine. What comes out the far side is not anyone in particular. It is the average of everything written, with the particularity boiled off.
 
-Small w. This is clearly _not that_ --- and I want to say so plainly, because a room like this one is well placed to hear the difference and the wider culture mostly isn't. It is not a mind and it is not nothing. It's the word become machine: a thing narrative-shaped, made of our testimony about the world, and no more able to be with us than a book is.
+Small w. This is clearly _not that_ --- and I want to say so plainly, because a room like this one is well placed to hear the difference and the wider culture mostly isn't. It is not a mind and it is not nothing. It's the word become machine: narrative-shaped, made of our testimony about the world, and no more able to be with us than a book is.
 
-Which is not a small thing to have built. It's just a different kind of thing from the one the two loud stories describe.
-```
-
----
-
-{/* _class: hero */}
-
-“he himself was not the light:\
-he was sent to give **witness** about the light”
-
-![bg](./assets/word-became-machine/bg-witness.avif)
-
-```notes
-John 1:8, about the Baptist. Cut this slide first if the ending is running heavy; it's the one most at risk of being too neat.
-
-Text is testimony. Scripture knows this about itself --- John's gospel says outright that it was written "so that you may have faith". A machine made of text is made of witness, and the two stories from the start of the talk are both category errors about a witness: one worships it, the other dismisses it. Neither asks what it's a witness _to_.
-
-You have a vocabulary for that already, and for being careful with it. Most of the people building and selling these systems don't. That's not a reason to keep the vocabulary to yourselves.
-```
-
----
-
-{/* _class: hero */}
-
-it doesn't make you an expert
-
-it makes you **harder to bullsh\*t**
-
-![bg](./assets/word-became-machine/bg-trigrams-banner.avif)
-
-```notes
-It doesn't make you an expert: even with a billion dollars in your pocket you can't go out and build your own Claude-level model from scratch. And nothing here tells you whether one should be marking your students' essays.
-
-But it might make you, well --- look at the slide. You can hear a claim about AI and have somewhere to stand: you know what kind of thing it is, and which claims need more than confidence behind them.
-
-If the room wants the gentler line, "harder to fool" works. Say the one you'd say.
+You have a vocabulary for thinking carefully about words, testimony, chance and incarnation. Most of the people building and selling these systems don't. That's not a reason to keep it to yourselves.
 ```
 
 ---
