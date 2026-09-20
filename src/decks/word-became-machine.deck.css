@@ -26,6 +26,24 @@
   font-weight: 400;
 }
 
+/* A meditation slide is a verse and its reference and nothing else. The
+   reference is a bare `<span>` after the verse paragraph (MDX doesn't wrap a
+   lone JSX line in a `<p>`), so it lands under the verse's gold rule: small and
+   muted, leaving the verse as the only thing read aloud. */
+.reveal .slides section.hero:not(:has(h1)) .verse-ref {
+  display: block;
+  margin-block-start: 1rem;
+  color: rgb(255 255 255 / 64%);
+  font-size: 1.3rem;
+}
+
+/* The bio slide's three lines are read from the back of a hall, not skimmed
+   beside a diagram, so they step up from body copy. */
+.reveal .slides section.bio p {
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+
 /* The same short gold rule the hero h1 draws under itself, so a titleless hero
    still reads as one and the line has a full stop. */
 .reveal .slides section.hero:not(:has(h1)) p:last-of-type::after {

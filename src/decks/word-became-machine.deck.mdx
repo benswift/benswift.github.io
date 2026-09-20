@@ -3,8 +3,8 @@ title: The word became machine
 description:
   A talk for Christian scholars in which the room becomes a bigram language
   model of John 1 (in the Bible in Basic English), generates a sentence that is
-  in no gospel, and then reflects on what a machine made of narrative might mean
-  theologically
+  in no gospel, and then sits with four verses of scripture and what building
+  software by speaking feels like
 author: Ben Swift
 date: "2026-09-25"
 event: Kategoria conference
@@ -16,11 +16,20 @@ import Timer from "../components/Timer.astro";
 import "./word-became-machine.deck.css";
 
 ```comment
-Two halves. First the room becomes a language model of John 1 and sees how
-it works (partials/sheets-run.mdx is the run: sheets, algorithm, board, "we
-just ran a language model", the role mapping). Then three reflections on
-what kind of thing it is: narrative becoming action, chance and
-providence, and the word becoming machine rather than flesh.
+Three parts. Who I am; then the tool before the story about the tool, into
+the room becoming a language model of John 1 (partials/sheets-run.mdx is
+the run: sheets, algorithm, board, "we just ran a language model", the role
+mapping); then four meditations, each a single verse on the wall, on what
+building software with these machines feels like. The meditations draw no
+line from what an LLM is to who Christ is. The one thread is that God has
+always done things in the world by his word, the Word becoming flesh is
+where that arrives, and speaking-and-it-is-made is now, for the first time,
+what a software developer's day feels like.
+
+The meditation slides carry the verse and nothing else; the notes are
+prompts to riff from, not beats to hit. The centurion and Solomon slides
+are on borrowed artwork until the verse list settles --- generate theirs
+last.
 
 Draft: `published: false` keeps it out of production builds while the
 content settles; flip to `unlisted: true` alone to publish it at its URL
@@ -64,16 +73,17 @@ CLAUDE.md rule against sharing references across the two, because the
 handouts in the room are llms-unplugged materials.
 
 Running order (target 19:45; the run is where any spare time goes):
-  0:00  Title and hook                                  (slide 1)
-  1:00  Sheets out                                      (slide 2)
-  1:30  What you've been given, then the recipe         (slides 3-4)
-  3:30  Run the room                                    (slide 5)
-  7:30  We just ran a language model; the roles         (slides 6-7)
-  9:00  No gospel; one chapter; between us              (slides 8-10)
- 11:30  Reflection 1: narrative becomes action          (slides 11-13)
- 15:00  Reflection 2: the decision of chance            (slide 14)
- 17:00  Reflection 3: flesh, and machine                (slides 15-16)
- 19:15  QR and questions                                (slide 17)
+  0:00  Title                                           (slide 1)
+  0:15  Who I am                                        (slide 2)
+  1:15  Tool before the story; two stories              (slides 3-4)
+  2:45  Sheets out                                      (slide 5)
+  3:15  What you've been given, then the recipe         (slides 6-7)
+  5:00  Run the room                                    (slide 8)
+  9:00  We just ran a language model; the roles         (slides 9-10)
+ 10:15  No gospel; one chapter; between us              (slides 11-13)
+ 12:30  I build software by describing it               (slide 14)
+ 13:30  Four verses, about 1:20 each                    (slides 15-18)
+ 19:00  QR and questions                                (slide 19)
 
 Per-slide notes hold the beats to hit --- rehearsal cues, not a script.
 ```
@@ -87,9 +97,52 @@ Per-slide notes hold the beats to hit --- rehearsal cues, not a script.
 looking inside a language model, with John 1 in hand
 
 ```notes
-Hands up: used one this week. Keep them up if you could explain to a ten-year-old what it did.
+Holding slide. Straight to who I am.
+```
 
-Most hands come down. In ten minutes you'll be able to, because you'll have been one. Then I want to spend the rest of the time on what kind of thing it is, because I think this room has things to say about that which the people building them mostly don't. I've picked the text we'll use for a reason, which I'll get to.
+---
+
+{/* _class: mapping bio */}
+
+## Hi, I'm Ben
+
+![bg right:40%](./assets/word-became-machine/headshot-ben.avif)
+
+AI researcher for **20 years**
+
+Christian **my whole life**
+
+these days: **language models**, building software with them, and teaching how
+they work
+
+```notes
+Twenty years in AI and machine learning research, at the ANU. A Christian for longer than that --- my whole life.
+
+What I work on now is language models: what they're good for, especially in software development, which is where I use them all day. And how to teach both experts and complete novices how they actually work, because we can't have a decent argument about the opportunities and the dangers of a thing we can't see inside.
+
+So that's the plan: first we look inside one, together. Then I want to tell you what it's like to work with them.
+```
+
+---
+
+![bg](./assets/word-became-machine/bg-first-tool-wide.avif)
+
+```notes
+Hands up: used one this week. Keep them up if you could explain to a ten-year-old what it did. Most hands come down.
+
+SAY: we got the tool before we got the story about the tool.
+
+Not too complicated --- it just happened too fast. Every other technology this size came with decades of argument about what it was before most people touched it. This one arrived in a browser tab.
+```
+
+---
+
+![bg](./assets/word-became-machine/bg-two-stories.avif)
+
+```notes
+SAY: one story says it's basically a mind. The other says it's just autocomplete.
+
+Opposites doing the same job: beyond you or beneath you, either way don't look inside. I'm not going to pick one. We're going to look inside instead.
 ```
 
 ---
@@ -161,40 +214,7 @@ Every one of the 1,266 word pairs in the chapter was dealt to exactly one sheet.
 
 The ones you use are the same kind of thing, a billion times over, looking back over more than one word, and trained on very nearly everything anyone has written down. The loop is the same: look at the context, weigh the options, pick one, write it down.
 
-Now, what kind of thing is it? Three reflections --- not conclusions, things I keep turning over.
-```
-
----
-
-{/* _class: hero */}
-
-a machine that is **narrative-shaped**
-
-![bg](./assets/word-became-machine/bg-narrative-shaped.avif)
-
-```notes
-SAY: what we built this afternoon was a machine, and the only thing in it was John 1.
-
-No Galilee, no Jordan, no body under the fig tree. Just which word followed which. The text was the whole of its world.
-
-The phrase I keep coming back to is from hikikomorphism, on Bluesky, 3 September 2026: LLMs are "text elementals", "entities that are narrative-shaped". Their line a few days later: the right stance is to mythologise them rather than anthropomorphise them. Not a mind, not a parlour trick: a thing made out of narrative, that behaves the way narrative behaves.
-```
-
----
-
-{/* _class: hero */}
-
-“And God said, Let there be light:\
-**and there was light**”
-
-![bg](./assets/word-became-machine/bg-witness.avif)
-
-```notes
-Genesis 1:3, BBE. John's prologue opens by echoing it --- "At the first", "From the first" --- and in both the speaking is the making. The word doesn't describe the world; it does something.
-
-For most of history, text didn't do anything by itself. A story had to be read, and someone had to decide to act on it. Our model on the sheets is like that: all it can ever do is continue the text.
-
-The frontier ones are now wired to tools. What they write runs code, sends email, moves money. The machine that continues a story now continues it out into the world. Narrative has started to act.
+That's how it works. I don't have conclusions about what it means. What I have is what it's like to work with one all day.
 ```
 
 ---
@@ -204,65 +224,100 @@ The frontier ones are now wired to tools. What they write runs code, sends email
 I build software now\
 by **describing** it
 
-![bg](./assets/word-became-machine/bg-first-tool-wide.avif)
+![bg](./assets/word-became-machine/bg-word-machine.avif)
 
 ```notes
-The website this talk lives on, and the tool that printed your sheets, I built mostly by talking to one of these. I've been writing code for twenty years. The programmers who taught me would struggle to get their heads around it.
+The website this talk lives on, and the tool that printed your sheets, I built mostly by talking to one of these. I've been writing code for twenty years, in languages where every character is an instruction and the machine does exactly and only what you typed. Now I say what I want, in English, and something interprets it, makes decisions, and builds. I find myself explaining, correcting, trusting, supervising.
 
-Obviously this isn't Genesis 1. It's not something from nothing; it's speech into a world already made of code and words, and what comes back is assembled from what other people built. But the gap between saying a thing and making it has narrowed in a way that's genuinely new.
+The ones I use are the thing we just ran, a billion times over, and wired to tools: what they write runs code, changes files, sends things. Text has started to act.
 
-The question I'd leave with this room: what does it mean for creatures made in the image of a God who speaks things into being to find that speaking is becoming how we make things? And what does it ask of us, when our words start doing things without anyone reading them first?
-```
-
----
-
-{/* _class: mapping */}
-
-## put to the decision of chance
-
-![bg right:40%](./assets/word-became-machine/bg-algorithm-generation.avif)
-
-{/* prettier-ignore */}
-<p class="corpus-quote">“they put it to the decision of chance, and the decision was given for Matthias”<br /><span class="corpus-attribution">Acts 1:26, BBE</span></p>
-<p class="corpus-quote fragment">“A thing may be put to the decision of chance, but it comes about through the Lord.”<br /><span class="corpus-attribution">Proverbs 16:33, BBE</span></p>
-
-```notes
-When five hands went up, I picked one at random. That wasn't a shortcut; it's the mechanism. Take the chance out and always pick the most common continuation, and the model says the same flat thing forever. Every reply you get from a chatbot is a long run of lots cast, one per word.
-
-The apostles, replacing Judas, prayed and then put it to chance --- the BBE's phrase, and the same phrase Proverbs uses. Click in Proverbs: the lot and the providence held together in one verse.
-
-So who wrote our sentence? Not me, not you, not John. Every word was in the chapter; the order was a run of coin tosses. And people will find meaning in it anyway, the way they do in what the chatbots say. Authorship, inspiration, meaning coming out of a process no one steered --- this tradition has been living with those questions a long time. I don't have an answer, but I think this room is better equipped for the question than the rooms where these machines get built.
+I don't know what to make of that. But I keep noticing that the people in this room belong to a tradition in which a word that does things is not a strange idea. So: four verses I've been reading alongside the work. No conclusions. Just what it feels like.
 ```
 
 ---
 
 {/* _class: hero */}
 
-“the Word became flesh\
+“And God said, Let there be light:\
+**and there was light**”
+
+<span class="verse-ref">Genesis 1:3, BBE</span>
+
+![bg](./assets/word-became-machine/bg-witness.avif)
+
+```notes
+Riff, don't recite. Prompts:
+
+The feeling: I say "let there be a login page" and there is one. Nothing in twenty years of programming felt like that; it used to be bricklaying. Ps 33:9 in the BBE is closer still to the experience: "he gave the word, and it was done".
+
+The distance: mine isn't from nothing. It's speech into a world already made, assembled from what millions of other people built, and what comes back is often not quite what I meant. There's a gap between my intention and its fulfilment that Genesis 1 doesn't have.
+
+The honest question: what is it that feels powerful --- being understood, being obeyed, or no longer having to understand every step myself? And does this deepen my wonder at "and there was light", or make it feel deceptively familiar?
+```
+
+---
+
+{/* _class: hero */}
+
+“I say to this one, Go, and he goes ...\
+and to my servant, **Do this, and he does it**”
+
+<span class="verse-ref">Matthew 8:9, BBE</span>
+
+![bg](./assets/word-became-machine/bg-narrative-shaped.avif)
+
+```notes
+Riff, don't recite. Prompts:
+
+The centurion, asking Jesus to heal his servant: "only say the word". He recognises Jesus' authority because he knows from the inside what it is to give an order and have it carried out somewhere he isn't.
+
+The feeling: this is my working day now. I don't write the code; I send. Go, come, do this.
+
+What the verse keeps in view that I lose: "I myself am a man under authority." He gives orders as someone who answers to someone. When the agent does what I said, what am I exercising authority over? And the ease of saying "do this" --- does it change how much of the result I feel is mine to answer for?
+```
+
+---
+
+{/* _class: hero */}
+
+“Give your servant, then, a wise heart ...\
+able to see **what is good and what evil**”
+
+<span class="verse-ref">1 Kings 3:9, BBE</span>
+
+![bg](./assets/word-became-machine/bg-hall-generation-wide.avif)
+
+```notes
+Riff, don't recite. Prompts:
+
+Solomon has just been handed more scope for action than he knows what to do with --- "I am only a young boy, with no knowledge of how to go out or come in" (v7). Offered anything, he doesn't ask for more capability. He already has that. He asks for judgement.
+
+The feeling: building used to be the hard part, and the difficulty did some of my deciding for me. Most bad ideas died because they weren't worth the month. Now the month is an afternoon, and nothing dies of effort. What's left is only the question of whether it should exist.
+
+Which decisions get harder when making gets easier? What would discernment look like before I issue the next instruction, rather than after?
+```
+
+---
+
+{/* _class: hero */}
+
+“And so the Word became flesh\
 and **took a place among us** for a time”
+
+<span class="verse-ref">John 1:14, BBE</span>
 
 ![bg](./assets/word-became-machine/bg-word-flesh.avif)
 
 ```notes
-John 1:14, in the translation you were holding.
+Riff, don't recite. Prompts:
 
-Notice the direction of travel. The incarnation runs from Word toward flesh: toward the particular, the located, the once-only. One body, one town, one span of years. "Took a place among us for a time" --- the BBE's plainness names exactly what a machine made of text cannot do. It has no place among us. It has no time.
-```
+The verse you were holding this afternoon, in pieces, in the translation you were holding it in.
 
----
+Where the thread arrives. God speaks and there is light; his word goes out and does what he sent it for; and then the Word doesn't send anything. He comes. One body, one town, one span of years. "Took a place among us for a time."
 
-{/* _class: hero */}
+The feeling: my words reach further every month, and I can be in fewer places while more gets done. The direction of John 1:14 is the other way --- toward being somewhere, with someone, at cost. Later in the same gospel, Jesus, "being conscious that the Father had put everything into his hands", gets up from the table and washes feet (13:3--5). Everything in his hands, and that's what he does with them.
 
-the word became **machine**
-
-![bg](./assets/word-became-machine/bg-word-machine.avif)
-
-```notes
-The language model runs the other way. It starts with flesh --- the millions of people who wrote --- and moves toward text, and then from text toward machine. What comes out the far side is not anyone in particular. It is the average of everything written, with the particularity boiled off.
-
-Small w. This is clearly _not that_ --- and I want to say so plainly, because a room like this one is well placed to hear the difference and the wider culture mostly isn't. It is not a mind and it is not nothing. It's the word become machine: narrative-shaped, made of our testimony about the world, and no more able to be with us than a book is.
-
-You have a vocabulary for thinking carefully about words, testimony, chance and incarnation. Most of the people building and selling these systems don't. That's not a reason to keep it to yourselves.
+I'm learning to speak and have things made. What I don't want to lose track of is what I'm learning to love while I do it. That's where I've got to. I'd like to know what you make of it.
 ```
 
 ---
