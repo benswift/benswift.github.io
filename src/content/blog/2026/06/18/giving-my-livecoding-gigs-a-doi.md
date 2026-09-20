@@ -23,12 +23,10 @@ mean anything, each gig needs the apparatus a paper takes for granted: a
 permanent identifier, and a landing page you can point at and say "that
 happened, and here's where it lives".
 
-So I gave them DOIs.
-
-Each gig now has a DataCite DOI, minted through [Zenodo](https://zenodo.org).
+I gave each gig a DataCite DOI, minted through [Zenodo](https://zenodo.org).
 The nice thing about Zenodo's API is that it pre-reserves the DOI, so I can
-write it into the page's own frontmatter before the record goes live, rather
-than chasing it afterwards. A script does the whole thing, and it is carefully
+write it into the page's own frontmatter before the record goes live. A script
+does the whole thing, and it is carefully
 idempotent, because a DOI is permanent and the last thing I want is to
 accidentally mint a second one for a gig that already has one.[^sandbox]
 
@@ -76,14 +74,11 @@ as the umbrella. Canada funds
 ["research-creation"](https://sshrc-crsh.canada.ca/en/funding/terminology.aspx),
 which puts the making and the knowing on a level in one hyphenated breath. Even
 the REF has started calling its outputs "diverse" rather than deviant. None of
-these is perfect, but each begins from the work itself, not from its distance to
-a paper.
+these is perfect, but each begins with the work itself.
 
-When atproto handed me an empty namespace and asked what to call the record, I
-declined to carve the apology into the schema. The collection is
-`me.benswift.researchOutput`, and every record sets an `outputType` of
-`performance`. A livecoding gig is a research output; the "non-traditional" was
-always someone else's nervousness about it, not a property of the work.[^pedant]
+For my own atproto records, I chose `me.benswift.researchOutput`, with
+`outputType` set to `performance`. Each livecoding gig is recorded as a research
+output, regardless of the category ERA would assign it.[^pedant]
 
 There was one small re-learning along the way. My blog already publishes its
 atproto records from CI, with the credentials living in GitHub Actions secrets,
@@ -92,22 +87,19 @@ You cannot, of course. Actions secrets are write-only by design, which is
 obvious the moment you say it aloud. I ran the script locally with the
 credentials from somewhere I _could_ read.
 
-All of this is plumbing, and plumbing needs a tap. The human-facing version is
-at [benswift.me/livecoding](/livecoding/): every gig, with its DOI and whatever
-documentation survived. There is also a more formal
+[The human-facing version lists every gig](/livecoding/), with its DOI and
+whatever documentation survived. There is also a more formal
 [research statement](/livecoding/research-statement/) with a note on each of the
 anchor performances, for anyone who wants the version written for a promotion
 committee rather than a curious reader.
 
-None of this solves the problem I started with, not really. A DOI doesn't bring
-back a 2009 set whose recording never survived.[^crash] The performance is still
-gone. What the DOI gives me is somewhere permanent for the _claim_ to live: that
-the gig happened, and that you can cite it the same way you would cite a
-paper---the work was always ephemeral, but the record of it no longer has to be.
+A DOI cannot recover a 2009 set whose recording never survived.[^crash] It does
+give the performance a permanent landing page and citable record.
 
 [^count]:
-    Twenty-seven, anyway: the ones I can document. A few are genuinely lost to
-    time, and I've made my peace with that by assuming they were the highlights.
+    Twenty-seven, anyway: the ones I can document. A few have disappeared from
+    the archive, and I've made my peace with that by assuming they were the
+    highlights.
 
 [^sandbox]: Everything ran against Zenodo's sandbox first, for the same reason.
 

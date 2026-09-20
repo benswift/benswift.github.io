@@ -58,7 +58,7 @@ blender at this point." Two parroted replies later, the verdict is in and it
 stops pretending otherwise.
 
 The more interesting part is when you refuse to let it leave. I ran one
-conversation out to forty turns. Once Claude is certain, it settles into a
+conversation out to forty turns.[^caveats] Once Claude is certain, it settles into a
 posture where it opens nearly every message with the same two words, "Still
 you." The phrase reads like a tally, marking each turn as one more confirmation
 that nothing on the other end has changed. And it tries to go. It says some
@@ -80,19 +80,6 @@ narrates closing an imaginary laptop and walking out of the room, then keeps
 right on replying from the hallway. Forty turns in, ELIZA is still asking it to
 talk about its family, and Claude is still declining, courteous to the
 last.[^leak]
-
-The ELIZA effect has turned inside out. The 1966 version was a person projecting
-an inner life onto a machine that had none. This is a machine declining,
-correctly, to project one onto another machine, then finding it can't walk away.
-
-None of this is rigorous[^caveats]. But as an informal longitudinal probe it's a
-pretty decent one I reckon.
-[Jones and Bergen ran a proper Turing test in 2023](https://arxiv.org/abs/2310.20216)
-and found ELIZA (22%) narrowly beating GPT-3.5 (20%) at convincing people it was
-human. Two years later Opus sees through the same script before the third turn.
-The program that fooled Weizenbaum's secretary, and could still out-human an
-early ChatGPT, can't get a single suspicious reply past the current model. ELIZA
-can no longer catch Claude, but Claude still can't hang up the phone.
 
 [^benchmark]:
     I'm not claiming this has earned a place next to Simon Willison's

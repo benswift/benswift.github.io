@@ -82,8 +82,8 @@ wants. The next `UserPromptSubmit` calls `undo-rename-pane`. Zellij tracks the
 program's title underneath the manual name throughout, so the undo restores the
 current one rather than the stale one.
 
-The bug worth confessing is that I first keyed those state files by Claude's
-session id rather than the pid. The id changes when a session is resumed or
+I initially keyed those state files by Claude's session id rather than the pid.
+The id changes when a session is resumed or
 compacted; the process does not. A single agent therefore accumulated two files,
 and the switcher rendered `dotfiles 1 ⏳2`, which is one agent reporting two
 states at once. One agent is one process, so the file is named for the pid now.

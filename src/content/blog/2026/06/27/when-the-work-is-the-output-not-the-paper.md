@@ -9,15 +9,15 @@ tags: ["research", "ai"]
 
 Earlier this month I
 [gave my livecoding gigs DOIs](/blog/2026/06/18/giving-my-livecoding-gigs-a-doi/).
-That was the easy case, in one narrow sense: a livecoding gig has no paper. The
-performance is the whole of the output, so there was never much question about
-what the citable thing was. The rest of the Cybernetic Studio's work is messier.
+That was the easy case, in one narrow sense: a livecoding gig has no paper, so
+the performance was the obvious citable thing. The rest of the Cybernetic
+Studio's work is messier.
 _PANIC!_ has two papers attached to it; _LLMs Unplugged_ has one. Once a paper
 exists, the temptation is to let the paper be the research output and to file
 the installation as the thing the paper is about.
 
-For these works that gets it the wrong way round. The work itself is the output,
-whatever physical form it takes, and the paper only documents it.
+For these works, I want the installation to be the citable research output; the
+paper documents it.
 
 So this is the second wave: turning the Cybernetic Studio's creative-AI works
 into citable research outputs the way I did the gigs. There are seven of them.
@@ -69,14 +69,14 @@ identifiers pointing at two things: its NIME 2025 proceedings entry, and the
 a persistent-homology analysis over the same installation runs. Both are tagged
 `isDocumentedBy`. _LLMs Unplugged_ points at its
 [ACE 2026 paper](https://doi.org/10.1145/3786228.3786237) the same way. The
-installation record points at the papers that document it (rather than a paper
-record laying claim to the artwork).
+installation record points at the papers that document it, keeping the artwork
+as the subject of the record.
 
 A few things don't come out clean. The linking only runs one way under my
 control. I can point my own Zenodo records at the NIME, IEEE and ACM DOIs, but I
 can't make theirs point back, because those records belong to the publishers and
-the conference communities and I'm a guest in them. The cross-reference is half
-a handshake. The credit is lossy, too. The point of listing creators in
+the conference communities and I'm a guest in them. The credit is lossy, too.
+The point of listing creators in
 `.zenodo.json` is to attach ORCIDs, so authorship is machine-readable and
 unambiguous, but most of my collaborators on these works are practitioners and
 fabricators who simply aren't in the ORCID registry. A search this June turned
@@ -91,7 +91,7 @@ software when a source-zip is the truthful deposit, and "other" when nothing
 zippable really stands in for the work. The closest defensible mapping wins, but
 none of them is the true thing. This is the same shape of problem the gigs had.
 The umbrella I wanted to call a "collection" had to be typed "other", because
-Zenodo has no such category. The vocabulary runs out before the work does.
+Zenodo has no such category.
 
 None of this teaches Zenodo what an installation is. What the `.zenodo.json`
 files give me is records that describe themselves accurately: code filed as

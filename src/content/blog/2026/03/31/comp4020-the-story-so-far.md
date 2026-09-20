@@ -21,11 +21,9 @@ reasonably wonder what on earth I'm on about. So here's the quick version.
 [COMP4020/8020 Agentic Coding Studio](/blog/2025/12/19/comp4020-rapid-prototyping-for-the-web/)
 is a new ANU course for Semester 2, 2026. The pitch: LLM-based coding agents
 (e.g. [Claude Code](https://docs.anthropic.com/en/docs/claude-code)) are
-powerful tools for web development, so let's teach students to use them well,
-not by lecturing about prompting techniques, but by having them build and deploy
-multiple working web prototypes over a semester. The course trains judgement:
-when producing code is cheap, knowing whether it's _worth_ producing is the
-whole game.
+powerful tools for web development. Students will learn to use them by building
+and deploying multiple working web prototypes over a semester. The course also
+asks them to judge whether a prototype is worth making.
 
 The [distinctive design choice](/blog/2026/02/20/comp4020-the-core-mechanic/),
 and the thing I'm most excited about, is borrowing the studio crit model from
@@ -50,11 +48,10 @@ answer [three questions](/blog/2026/03/26/comp4020-the-weekly-questions/) in
 280-character "skeet" format: _why this?_ (not "what does it do"---we can see
 that---but what were you going for?); _what made it better?_ (which feedback
 loops, whether agent, human, or community, actually moved you forward?); and
-_any good?_ (the hardest one and the most important: quality judgement, taste,
-and where you'd take it next). The constraint forces clarity: if you can't
-compress your reflection into 280 characters, you probably haven't found the
-actual insight yet. The skeets follow a staged visibility model (private until
-your crit, group-visible during, fully open after) to prevent anchoring.
+_any good?_ (quality judgement, taste, and where you'd take it next). The
+280-character limit gives each student one concrete observation to bring to the
+crit. The skeets follow a staged visibility model (private until your crit,
+group-visible during, fully open after) to prevent anchoring.
 
 The [technical setup](/blog/2026/03/05/comp4020-safety-yolo-and-the-open-web/)
 underpins the whole thing, and it's designed so that students can let agents run
@@ -94,11 +91,10 @@ as a course participant, building prototypes and writing skeets alongside the
 students, and watching for patterns across the cohort. The question mark in that
 post's title is sincere; the pedagogical possibilities are interesting (a
 baseline and a pattern observer at scale) but the "dead classroom" risk is real.
-Assessing taste at scale is another live concern: the course's core thesis is
-that judgement and taste are the skills that matter most when code generation is
-cheap, but how do you actually assess that fairly across ~200 students? The
-weekly skeets and studio crits give tutors a lot to work with, but it's still
-qualitative assessment of a quality that's hard to define. And there's the open
+Assessing taste at scale is another live concern. I still need a fair way to
+assess it across ~200 students. The weekly skeets and studio crits give tutors a
+lot to work with, but it's still qualitative assessment of a quality that's
+hard to define. And there's the open
 question of whether the crit model transfers from art school to CS at all. I
 think it will, because my colleague Charles Martin has scaled the studio crit
 model to large cohorts in his

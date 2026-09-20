@@ -30,9 +30,8 @@ configurations are possible, and what their occupants reveal.
 
 [^terms]:
     I'm using "articulate" rather than "linguistic" because it's punchier and
-    captures the right thing: not just producing strings of words, but producing
-    fluent, contextually appropriate ones. A phrasebook contains language; it
-    isn't articulate.
+    captures the right thing: producing fluent, contextually appropriate
+    strings of words. A phrasebook contains language; it isn't articulate.
 
 The classic two-circle regions are well-populated. Dogs and
 [octopuses](https://en.wikipedia.org/wiki/Cephalopod_intelligence) live in the
@@ -41,11 +40,13 @@ presumably have inner lives, but they don't use anything we'd recognise as human
 language. [Chess engines](https://en.wikipedia.org/wiki/Chess_engine),
 [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo), and your bank's
 fraud-detection algorithm live in the intelligent-only zone: narrow
-problem-solvers with no inner life and no language.
+problem-solvers whose operation requires neither language nor an account of
+inner experience.
 [ELIZA](https://en.wikipedia.org/wiki/ELIZA),
 [Markov-chain](https://en.wikipedia.org/wiki/Markov_chain) text generators, and
-a parrot reciting "pieces of eight" live in the articulate-only zone, producing
-language-shaped output with nothing behind it.
+a parrot reciting "pieces of eight" live in the articulate-only zone. They
+produce language-shaped output through mechanisms that need no account of an
+inner life.
 
 The interesting region is the new one: intelligent and articulate but not
 conscious. This is where LLMs live, at least on the most common reading. They
@@ -63,8 +64,8 @@ formalised the
 [philosophical zombie](https://plato.stanford.edu/entries/zombies/) in the
 1990s: a being functionally indistinguishable from a conscious person, with no
 inner life behind the behaviour. It's been a fixture of consciousness debates
-ever since. The intelligent-articulate-but-not-conscious region was a thought
-experiment. Now it has actual occupants.
+ever since. LLMs now look like plausible candidates for the
+intelligent-articulate-but-not-conscious region.
 
 This doesn't settle anything. Searle's whole point was that the Chinese Room
 isn't really intelligent either; it's syntax all the way down. Bender's argument
@@ -98,8 +99,5 @@ consciousness; the second treats "stochastic process" as equivalent to "not
 really intelligent". Neither follows from the diagram, and both have to be
 argued for separately.
 
-We also built the philosophical zombie, not on purpose, and probably not
-perfectly. The lights might be on after all, in some form none of us would
-recognise. The region consciousness researchers spent decades gesturing at as a
-hypothetical is now inhabited, and we have to live with the tenants. That's a
-strange thing to have done in a decade.
+I find the diagram useful for separating claims about fluent language,
+intelligence and consciousness. Where LLMs belong remains disputed.

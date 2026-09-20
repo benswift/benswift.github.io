@@ -42,8 +42,7 @@ again. Still 404.
 That turned out to be the useful data point, because it killed my tidy
 explanation. I hit the Pages origin directly, bypassing Cloudflare[^cf], with a
 cache-buster query for good measure. Still 404. That ruled out a stale cache,
-and Jekyll with it. The file genuinely wasn't being served, which meant it
-genuinely wasn't there.
+and Jekyll with it.
 
 [^cf]:
     The domain sits behind Cloudflare, which I'd briefly hoped was the culprit.
@@ -86,6 +85,3 @@ across the full set of 155 document records.
     know the standard.site lexicons and so never checked them. That kind of
     validation only bites when a real indexer reads the records, which is the
     one case I actually care about.
-
-A verification step you never verify is just a hopeful comment in your config
-file. The loop is properly closed now.

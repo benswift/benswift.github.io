@@ -12,10 +12,9 @@ I became curious about how many of the previous iterations I still had access
 to. I've been an obsessive git packrat for _years_, and I figured that there'd
 be some secrets in the git repo. So I went spelunking in the history.
 
-What I found was more extensive than I expected. The repository I'm currently
-working
-in---[benswift.github.io](https://github.com/benswift/benswift.github.io)---turned
-out to be just one chapter in a longer story. A bit more digging on GitHub
+What I found was more extensive than I expected. The
+[benswift.github.io repository](https://github.com/benswift/benswift.github.io)
+turned out to be just one chapter in a longer story. A bit more digging on GitHub
 revealed earlier chapters I'd (pretty much) forgotten about.
 
 The earliest archaeological evidence dates back to August 2012 and the Octopress
@@ -28,7 +27,7 @@ was on 8 November that year. I added Ubuntu fonts and a custom GitHub sidebar.
 
 I do remember the Octopress setup. One interesting nugget I'd forgotten showed
 up in some commit messages mentioning "new 'detached' octopress/org blogging
-works"---apparently I was already integrating [org-mode](https://orgmode.org)
+works". Apparently I was already integrating [org-mode](https://orgmode.org)
 with my blogging setup back then.
 
 Then came "the Clojure years" (2013--2017). I still really like Clojure in a lot
@@ -44,7 +43,7 @@ on 4 December. Only one week! I was clearly keen to try something new, but went
 back to something more mainstream.
 
 But I wasn't done with Clojure. In December 2014 I created a separate repository
-called "biott"[^biott]---built on
+called "biott"[^biott], built on
 [Cryogen](https://github.com/cryogen-project/cryogen), another Clojure-based
 static site generator. This one stuck around longer, with commits running from
 [December 2014](https://github.com/benswift/biott/commit/f844154c74681e14cdb8e7f9f1a439345f23a76c)
@@ -67,7 +66,7 @@ The Jekyll era kicked off in late 2018, when I forked
 theme and moved away from `biott/Cryogen`.
 
 On 30 December 2018, we get commit
-[`c1a4d0225`](https://github.com/benswift/benswift.github.io/commit/c1a4d022534c9cda11d98f23b94f112330c9a783)---"initial
+[`c1a4d0225`](https://github.com/benswift/benswift.github.io/commit/c1a4d022534c9cda11d98f23b94f112330c9a783): "initial
 commit of jekyll files". A complete restart, moving to a custom setup based on
 [Jekyll's Minima theme](https://github.com/jekyll/minima). I remember doing this
 initial work on my laptop on the kitchen table at my in-laws place. Same day,
@@ -77,14 +76,12 @@ commit
 that would stick around for six years.
 
 [^migration-quotes]:
-    The scare quotes around "migrate" are doing a lot of work here---it was more
+    The scare quotes around "migrate" are doing a lot of work here; it was more
     like copying markdown files and hoping for the best.
 
 Looking at the commit statistics, 2019 was wild: 1,405 commits out of roughly
-3,500 total. That's 40% of the entire repository's history in a single year.
-What was I doing?
-
-Well, everything:
+3,500 total. That's 40% of the entire repository's history in a single year,
+including:
 
 - January 2019: integrating [reveal.js](https://revealjs.com) for slide
   presentations (a feature I've used constantly ever since)
@@ -100,9 +97,9 @@ Well, everything:
     framework has had to learn to syntax-highlight it.
 
 The `reveal.js` integration turned out to be the most enduring feature. Every
-subsequent version---including the current [VitePress](https://vitepress.dev)
-setup---has had to support it. Turns out when you give a lot of talks and teach
-a lot of classes, you need slide support _everywhere_.
+subsequent version, including the current [VitePress](https://vitepress.dev)
+setup, has had to support it. I give a lot of talks and teach a lot of classes,
+so I need slide support _everywhere_.
 
 Fast forward to November--December 2024, and I finally pulled the trigger on
 [migrating to VitePress](/blog/2025/12/02/switching-from-jekyll-to-vitepress/).
@@ -114,42 +111,18 @@ on 30 November--2 December), with an assist from
 [Claude Code](https://docs.anthropic.com/en/docs/claude-code). The last Jekyll
 version is preserved at the
 [`jekyll` tag](https://github.com/benswift/benswift.github.io/tree/jekyll).
-TypeScript instead of Ruby, Vue components instead of Liquid templates, modern
-ES6 modules instead of... well, whatever Jekyll was doing with its asset
-pipeline.
+The new setup uses TypeScript instead of Ruby and Vue components instead of
+Liquid templates. It also uses modern ES6 modules instead of... well, whatever
+Jekyll was doing with its asset pipeline.
 
-A few things emerge from this archaeological expedition. First, the pattern:
-[Octopress](https://github.com/imathis/octopress) → Clojure experiments
-([static](https://github.com/nakkaya/static),
-[Cryogen](https://github.com/cryogen-project/cryogen)) → long
-[Jekyll](https://jekyllrb.com) tenure → [VitePress](https://vitepress.dev). The
-blog has always been a place to try new things---two separate Clojure attempts,
-multiple Jekyll themes, and now a Vue-based system. Each iteration taught me
-something. It's basically my "TODO app"; the place where I experiment with new
-technologies and ideas.
+Across all of those systems, the blog has been my "TODO app": a place to try new
+technologies while keeping the posts and slide decks working. The git history
+records the technical decisions and aesthetic tweaks, with the occasional
+outburst.
 
-Second, there's something satisfying about having this entire history preserved.
-Every commit records what changed, and often why I wanted to change it. The
-commit messages are a diary of technical decisions and aesthetic tweaks, with
-the occasional outburst.
+Migrating to VitePress was worth it. The site is faster, and I can use modern
+JavaScript without fighting the framework. But in six years when I'm "nuking all
+the things" again, the next framework probably won't be all that different.
 
-The git packrat habit means I can see exactly when I added that custom CSS for
-blockquotes (multiple times, apparently), when I first integrated `reveal.js`
-(September 2018), and how many times I've tweaked the font rendering (too many
-to count). It's all there in the log---across multiple repositories, spanning
-over a decade.
-
-But for all that, the actual _frameworks_ matter less than the content and the
-features that support creating it. Octopress, two different Clojure generators,
-Jekyll with three different themes, VitePress---they're all just different ways
-to serve markdown files with syntax highlighting and presentations. The actual
-blog posts survived.
-
-Migrating to VitePress was worth it: it's faster, the tooling is better, and I
-can use modern JavaScript without fighting the framework. But in six years when
-I'm "nuking all the things" again, the next framework probably won't be
-fundamentally different.
-
-As long as I keep committing everything to git, I'll be able to look back and
-see exactly when---and why---I decided the blockquote padding needed to be 0.5em
-instead of 1em. And that's kind of beautiful.
+Git also tells me exactly when, and why, I decided the blockquote padding needed
+to be 0.5em instead of 1em.

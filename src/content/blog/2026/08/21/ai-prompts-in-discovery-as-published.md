@@ -33,10 +33,6 @@ Seventeen minutes later the model returned a draft, opening with a sentence of _
 
 The brief exists in writing only because its reader was a machine. A chatbot can't take a hint, and it doesn't know who's paying. It can't interpret the tone of your voice or catch the wink; to get the report you want, you have to say what you want, spelling out in writing what everyone involved would once have left unsaid.
 
-2e:Tc25,
-
-Autenrieth's logs surface
-
 Autenrieth's logs surfaced because a plaintiff's lawyer noticed AI-written phrasing in an exhibit and demanded the chat history as part of the standard legal discovery process. At least one American court has since [held that an expert's AI prompts are discoverable](https://www.mayerbrown.com/en/insights/publications/2026/06/court-orders-disclosure-of-expert-witnesss-ai-prompts-what-litigators-need-to-know) as part of their methodology, although that ruling is currently under challenge.
 
 In Australia, we've already seen something similar to this situation, although it went the other way.
@@ -54,5 +50,3 @@ Nothing will look different from outside, because the reports will read as they 
 For now we can still read the brief, and it says what everyone always suspected it said.
 
 _**Dr. Ben Swift is a computer scientist and AI researcher/educator. He leads the Cybernetic Studio at the ANU School of Cybernetics.**_
-
-25:["$","div",null,{"className":"s

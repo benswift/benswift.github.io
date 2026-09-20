@@ -45,14 +45,14 @@ transparent: when you're physically counting transitions and filling in a grid,
 there's no black box, and you can see exactly where the probabilities come from.
 It's accessible, too: you don't need computers, coding skills, or expensive
 infrastructure, just paper and dice. Rolling dice to generate text is also
-surprisingly fun (honestly I think this is just as good as a team bonding or
-bucks'-night activity, but the learning is real). And once you've built a bigram
+surprisingly fun (I think this is just as good as a team bonding or bucks'-night
+activity). And once you've built a bigram
 model by hand, the jump to understanding GPT becomes conceptual rather than
 magical, which is the transfer we're actually aiming for.
 
-We've tested this with hundreds of participants across wildly different
-contexts: school students (12+), undergrads, senior public servants, educators,
-tech professionals. It works for all of them, though for different reasons.
+We've run this with hundreds of participants: school students (12+),
+undergrads, senior public servants, educators and tech professionals. The
+exercise has needed different framing for each group.
 
 For school students, it demystifies AI and makes probability concrete. For
 public servants, it provides a mental model for understanding the AI systems
@@ -96,8 +96,8 @@ This approach teaches the fundamental mechanism of language models, but it
 doesn't capture everything: the scale really is incomparable (a few hundred
 words vs billions of parameters).
 
-But those limitations are pedagogically useful. Once you understand bigrams
-deeply, the extensions to more sophisticated models become natural questions.
+But those limitations are pedagogically useful. Once you understand bigrams,
+the extensions to more sophisticated models become natural questions.
 "What if we looked at more context?" leads to trigrams and N-grams. "What if
 words had relationships beyond just sequence?" leads to embeddings. "What if we
 could focus on relevant parts of the context?" leads to attention. And there are
@@ -114,8 +114,8 @@ If you're an educator, check out the [materials](https://www.llmsunplugged.org/)
 and use them. If you teach a workshop, I'd love to hear how it goes. If you find
 gaps or confusion points, [send me an email](mailto:ben.swift@anu.edu.au) or
 open an issue on the
-[GitHub repo](https://github.com/ANUcybernetics/llms-unplugged). This is meant
-to be a living resource, not a finished product.
+[GitHub repo](https://github.com/ANUcybernetics/llms-unplugged). The resource
+will keep changing as people use it.
 
 :::info
 
@@ -126,10 +126,3 @@ BY-NC-SA licensed for educational use. The code's on
 into the implementation details or contribute.
 
 :::
-
-The best way to understand how something works is to build it yourself (this is
-my approach to software development as well). Even if your version is a
-dramatically simplified pencil-and-paper sketch, the act of construction creates
-an understanding that no amount of explanation can match. That's what _LLMs
-Unplugged_ is about: giving people the tools to build their own understanding of
-language models, one dice roll at a time.

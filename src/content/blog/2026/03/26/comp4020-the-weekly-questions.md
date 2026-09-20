@@ -65,28 +65,21 @@ keep going, which direction would you head? This is where students practise the
 skill that agentic coding makes simultaneously more important and easier to
 neglect: _judgement_ or
 [_taste_](https://www.newyorker.com/culture/infinite-scroll/why-tech-bros-are-now-obsessed-with-taste).
-When producing code is cheap, the scarce skill is knowing whether it's worth
-producing. I want students to get comfortable making and defending quality
-claims, not in the abstract but about their own work, in front of their peers.
+The course gives students weekly practice making and defending quality claims
+about their own work, in front of their peers.
 
-The format these answers come in matters as much as the questions themselves.
-Each week, alongside their prototype, students submit three
+Each week, alongside their prototype, students submit the answers as three
 [skeets](https://bsky.app/): one per question, 280 characters max, with an
 optional image. That's it. Actually, they don't actually have to post them
 publicly (they will just be in a `skeets.md` file in the source repo they
 submit), but the "genre" is of the skeet/tweet (280 characters max, with 1-4
 optional images). Memes welcome, too.
 
-280 characters is enough for one clear thought and not enough for waffle. If you
-can't compress your reflection into a skeet, you probably haven't found the
-actual insight yet. And the effort is low enough that it won't feel like a
-burden on top of the prototype work; a skeet forces clarity in a way a
-reflective essay doesn't.
+I'm trying a short format so students can bring one specific observation to the
+crit without writing another essay each week.
 
-The optional image matters too. Sometimes the reflection _is_ visual: a
-before/after screenshot, a diagram of the workflow that finally clicked, a photo
-of a whiteboard sketch. For a course about building things for the web, letting
-the artefact speak for itself seems right.
+Students can also attach an image: a before/after screenshot, a diagram of the
+workflow that finally clicked, or a photo of a whiteboard sketch.
 
 There's a long tradition of this kind of reflective practice in education.
 Donald Schön's
@@ -119,15 +112,5 @@ might struggle to articulate their thinking on the spot but wrote something
 sharp in their skeet. And over the semester it builds a growing, browsable
 archive of the class's collective reflection.
 
-The real payoff, though, is what happens in the studio crit itself. Students
-who've already written down their thinking arrive ready to discuss rather than
-fumbling to figure out what they think in real time.
-
-Over ten weeks, the hope is that these three questions become second nature, so
-that students internalise the habit of asking themselves _why this_, _what made
-it better_, and _any good_ not just when they're writing their skeets but while
-they're building. That's the
-[good gradient](/blog/2026/02/24/climbing-the-good-gradient/) in practice: a
-developer who's constantly asking "is this good? how do I know? what would make
-it better?" is a developer who's going to produce better work, whether they're
-working with an AI agent or not.
+The reflections give students material to discuss when the crit starts. Over
+ten weeks, I hope the three questions become habits they use while building.
