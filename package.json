@@ -67,7 +67,7 @@
     "eslint-plugin-no-only-tests": "^3.4.0",
     "eslint-plugin-perfectionist": "^5.11.0",
     "eslint-plugin-unused-imports": "^4.4.1",
-    "oxfmt": "^0.67.0",
+    "oxfmt": "^0.68.0",
     "oxlint": "^1.82.0",
     "pagefind": "^1.5.2",
     "puppeteer-core": "^25.10.0",
