@@ -1,0 +1,153 @@
+---
+title: Musical instructions
+description: A STEM Camp workshop on the pattern-language of pop music --- from
+  English-language song descriptions to livecoded performances.
+author: Ben Swift
+date: "2019-05-22"
+event: "Lake Tuggeranong College STEM Camp"
+---
+
+import SocyLogo from "astro-theme-anu/components/SocyLogo.astro";
+
+{/* _class: hero */}
+
+![bg](./assets/bg-title.avif)
+
+# Musical instructions
+
+Dr Ben Swift
+
+Lake Tuggeranong College STEM Camp
+
+---
+
+{/* _class: socy-logo */}
+
+<SocyLogo />
+
+---
+
+![bg right:45%](./assets/bg-music.avif)
+
+## musicians? mathematicians? coders?
+
+what's the connection?
+
+what would a song performed by a computer program sound like?
+
+---
+
+## outline
+
+what is (pop) music?
+
+activity: _low-tech_ musical instructions
+
+livecoding: _high-tech_ musical instructions
+
+---
+
+{/* _class: impact */}
+
+**music** _(n.)_
+
+a series of pitched events over time
+
+---
+
+![bg right:45%](./assets/bg-patterns.avif)
+
+## lots of **patterns**
+
+catchy hooks, repetitive harmony, processed sounds
+
+but how do we _express_ them?
+
+---
+
+![bg right:45%](./assets/bg-dimensions.avif)
+
+## dimensions of a note
+
+**time** · **pitch** · **loudness**
+
+---
+
+## maths recap: functions
+
+a function _f(x, y)_ takes inputs and returns an output
+
+e.g. _f(x, y)_ = _8x_ + _2y_
+
+---
+
+![bg right:45%](./assets/bg-clock.avif)
+
+## maths recap: modular arithmetic
+
+arithmetic that "wraps around": 0, 1, 2, 0, 1, 2, ...
+
+7 _mod_ 4 is 3 · 18 _mod_ 7 is 4
+
+---
+
+{/* _class: hero */}
+
+![bg](./assets/bg-activity.avif)
+
+# activity: musical instructions
+
+---
+
+## how to play
+
+split into pairs
+
+person A writes down --- in _English_ --- how to play a song (**no music
+notation**)
+
+person B reads the instructions, "sings" them, and guesses the song
+
+---
+
+{/* _class: impact talk */}
+
+## talk
+
+what was the hardest part? the easiest?
+
+harder or easier than you expected?
+
+---
+
+![bg right:45%](./assets/bg-livecoding.avif)
+
+## now the high-tech version
+
+extempore is a livecoding _language_ for music; `mplay` is the key function:
+
+```xtlang
+(mplay *midi-out*
+       60         ; pitch
+       80         ; loudness
+       (* .5 dur) ; duration
+       1)         ; instrument
+```
+
+---
+
+## what did we learn?
+
+pop music isn't black magic --- it's a domain with structure and patterns
+
+we can write instructions that express those patterns
+
+code is _really useful_ for exploring this --- and it's _not_ AI
+
+---
+
+{/* _class: impact */}
+
+🤔
+
+[ben.swift@anu.edu.au](mailto:ben.swift@anu.edu.au)

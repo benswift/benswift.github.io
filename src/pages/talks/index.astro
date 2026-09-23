@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content"
 import fs from "node:fs"
-import path from "node:path"
+import { deckSlugFromPath } from "astromotion/src/deck-slug.ts"
 import { parse as parseYaml } from "yaml"
 import PageLayout from "../../layouts/PageLayout.astro"
 import { formatDate } from "../../utils/date"
@@ -14,16 +14,15 @@ import { formatDate } from "../../utils/date"
 // (injectRoute pattern "/decks/[...slug]"), so it can't move to /talks/ anyway.
 const allTalks = await getCollection("talks")
 
-// Auto-discover decks from src/decks/*.deck.mdx and read their frontmatter, so a
-// new astromotion deck appears in this list with no manual talk stub required.
-// A matching src/content/talks/<slug>.md (if present) still supplies date/event.
-const decksDir = path.resolve("src/decks")
+// Auto-discover decks from src/decks/<slug>/slides.deck.mdx and read their
+// frontmatter, so a new astromotion deck appears in this list with no manual
+// talk stub required. A matching src/content/talks/<slug>.md (if present) still
+// supplies date/event.
 const deckMeta = fs
-  .readdirSync(decksDir)
-  .filter((f) => /\.deck\.mdx?$/.test(f))
-  .map((f) => {
-    const slug = f.replace(/\.deck\.mdx?$/, "")
-    const src = fs.readFileSync(path.join(decksDir, f), "utf8")
+  .globSync("src/decks/**/*.deck.mdx")
+  .map((file) => {
+    const slug = deckSlugFromPath(`/${file}`)!
+    const src = fs.readFileSync(file, "utf8")
     const fm = src.match(/^---\n([\s\S]*?)\n---/)
     return { slug, fm: fm ? (parseYaml(fm[1]) ?? {}) : {} }
   })
@@ -32,7 +31,7 @@ const deckMeta = fs
   .filter(({ fm }) => fm.published !== false && fm.unlisted !== true)
 const deckSlugs = new Set(deckMeta.map((d) => d.slug))
 
-const talkBySlug = new Map(allTalks.map((t) => [t.id.replace(/\.md$/, ""), t.data]))
+const talkBySlug = new Map(allTalks.map((t) => [t.id, t.data]))
 
 const toDateStr = (raw: unknown) => (raw ? String(raw) : "2000-01-01")
 
@@ -52,7 +51,7 @@ const decks = deckMeta
 
 // Archive: talks with no matching deck (the older stubs), linked out to slides.
 const archive = allTalks
-  .filter((t) => !deckSlugs.has(t.id.replace(/\.md$/, "")))
+  .filter((t) => !deckSlugs.has(t.id))
   .map((t) => {
     const dateStr = toDateStr(t.data.date)
     return {
