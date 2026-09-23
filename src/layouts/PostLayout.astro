@@ -32,7 +32,7 @@ const {
   heroImage: heroImageOverride,
 } = Astro.props
 
-const postDate = formatDate(new Date(date), true)
+const postDate = formatDate(new Date(date))
 const postUrl = `https://benswift.me${Astro.url.pathname}`
 
 const heroSlug = `${date}-${slug}`

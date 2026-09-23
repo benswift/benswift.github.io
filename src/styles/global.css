@@ -587,6 +587,7 @@ strong {
   --juttu-accent-color: var(--highlight-color);
   --juttu-link-color: var(--link-color);
   --juttu-reply-color: var(--brand-1);
+  --juttu-font-family: var(--font-family-base);
 }
 
 /* Shrink the submit button to match the sort pills (Newest/Oldest/Top) it
