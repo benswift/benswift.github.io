@@ -1,6 +1,5 @@
 ---
 title: "Colour Coded"
-layout: doc
 date: "2019-08-02"
 instrument: "Extempore"
 venue: "Drill Hall Gallery, Canberra"

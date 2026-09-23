@@ -3,7 +3,6 @@ title: "The verification I never verified"
 description:
   "I wrote a whole post about two-way standard.site verification. One of the two
   directions had been returning a 404 in production the entire time."
-published: true
 tags:
   - atproto
   - web

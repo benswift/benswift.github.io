@@ -1,47 +1,28 @@
 ---
-import { getCollection } from "astro:content"
+import { getGigs } from "../utils/gigs"
 
-const allGigs = await getCollection("livecoding")
+const gigs = (await getGigs()).map((gig) => ({
+  title: gig.data.title,
+  url: gig.url,
+  year: gig.data.date.slice(0, 4),
+  venue: gig.data.venue,
+  artists: gig.data.artists,
+  event: gig.data.event,
+  event_url: gig.data.event_url,
+  videos: gig.data.videos,
+  doi: gig.data.doi,
+  type: gig.data.type,
+}))
 
-const gigs = allGigs
-  .map((gig) => {
-    const slug = gig.id.replace(/\.md$/, "")
-    let dateStr = "2000-01-01"
-    const filenameMatch = gig.id.match(/^(\d{4}-\d{2}-\d{2})/)
-    if (filenameMatch) dateStr = filenameMatch[1]
-    else if (gig.data.date) dateStr = String(gig.data.date)
-    const year = dateStr.slice(0, 4)
-
-    return {
-      title: gig.data.title,
-      url: `/livecoding/${slug}/`,
-      dateStr,
-      year,
-      venue: gig.data.venue,
-      artists: gig.data.artists,
-      event: gig.data.event,
-      event_url: gig.data.event_url,
-      videos: gig.data.videos,
-      doi: gig.data.doi,
-      type: gig.data.type,
-    }
-  })
-  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
-
-const gigsByYear: Record<string, typeof gigs> = {}
-for (const gig of gigs) {
-  if (!gigsByYear[gig.year]) gigsByYear[gig.year] = []
-  gigsByYear[gig.year].push(gig)
-}
-const years = Object.keys(gigsByYear).sort((a, b) => b.localeCompare(a))
+const gigsByYear = Map.groupBy(gigs, (gig) => gig.year)
 ---
 
 <div class="bibliography">
-  {years.map((year) => (
+  {[...gigsByYear].map(([year, yearGigs]) => (
     <div class="year-section">
       <h3 id={`perf-${year}`}>{year}</h3>
       <ul class="pub-list">
-        {gigsByYear[year].map((gig) => (
+        {yearGigs.map((gig) => (
           <li class="pub-item">
             <p class="pub-title">
               <a href={gig.url}>{gig.title}</a>

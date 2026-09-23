@@ -1,54 +1,32 @@
 ---
-import { getCollection } from "astro:content"
 import PostLayout from "../../layouts/PostLayout.astro"
 import { getAtUri } from "../../utils/atproto"
-import { resolveContentPath } from "../../utils/source-path"
 import { extractHeroPhrases } from "../../utils/extract-hero-phrases"
+import { getPosts } from "../../utils/posts"
 import { render } from "astro:content"
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", (entry) => {
-    return entry.data.published !== false
-  })
-
-  return posts
-    .filter((post) => {
-      // Only include posts with date-based paths: YYYY/MM/DD/slug
-      return /^\d{4}\/\d{2}\/\d{2}\//.test(post.id)
-    })
-    .map((post) => {
-      // post.id is like "2024/08/12/some-post.md" or "2024/08/12/some-post.mdx"
-      const slug = post.id.replace(/\.mdx?$/, "")
-
-      // Extract date from path
-      const match = post.id.match(/^(\d{4})\/(\d{2})\/(\d{2})\/(.+?)(?:\.mdx?)?$/)
-      const date = match ? `${match[1]}-${match[2]}-${match[3]}` : ""
-      const postSlug = match?.[4] ?? ""
-
-      return {
-        params: { slug },
-        props: { post, date, postSlug },
-      }
-    })
+  const posts = await getPosts()
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }))
 }
 
-const { post, date, postSlug } = Astro.props
+const { post } = Astro.props
 const { Content } = await render(post)
 
 const description = post.data.description
 const atUri = getAtUri(post.id)
-const relativePath = resolveContentPath("blog", post.id)
+const relativePath = post.filePath
 const heroPhrases = extractHeroPhrases(post.body ?? "")
 ---
 
 <PostLayout
   title={post.data.title}
-  date={date}
+  date={post.date}
   tags={post.data.tags}
   description={description}
   heroPhrases={heroPhrases}
   atUri={atUri}
-  slug={postSlug}
+  slug={post.slug}
   relativePath={relativePath}
   heroImage={post.data.image}
 >

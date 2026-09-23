@@ -1,6 +1,5 @@
 ---
 title: "Shirty Science Season 3 launch party"
-layout: doc
 date: "2018-08-13"
 instrument: "Extempore"
 venue: "Doughnut Dept., Canberra"

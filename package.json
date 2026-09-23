@@ -25,8 +25,8 @@
     "prebuild": "pnpm exec tsx scripts/generate-site-content.ts",
     "preview": "astro preview",
     "site-content": "pnpm exec tsx scripts/generate-site-content.ts",
-    "test": "vitest run",
-    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test": "vitest run --project unit",
+    "test:integration": "vitest run --project integration",
     "typecheck": "astro check && svelte-check --tsconfig ./tsconfig.json",
     "zenodo:collection": "pnpm exec tsx scripts/zenodo-collection.ts",
     "zenodo:deposit": "pnpm exec tsx scripts/zenodo-deposit.ts"
@@ -66,7 +66,6 @@
     "pagefind": "^1.5.2",
     "puppeteer-core": "^25.11.0",
     "remark-directive": "^4.0.0",
-    "remark-mdx": "^3.1.1",
     "remark-parse": "^11.0.0",
     "stylelint": "^17.15.0",
     "stylelint-config-standard": "^40.0.0",

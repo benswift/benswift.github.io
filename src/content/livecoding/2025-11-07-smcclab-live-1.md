@@ -1,6 +1,5 @@
 ---
 title: "SMCClab live #1"
-layout: doc
 date: "2025-11-07"
 instrument: "Extempore"
 venue: "PK Big Band Room, ANU School of Music"

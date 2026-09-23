@@ -1,6 +1,5 @@
 ---
 title: "CECS Welcome Party 2019"
-layout: doc
 date: "2019-02-26"
 instrument: "Extempore"
 venue: "ANU College of Engineering, Computing and Cybernetics"

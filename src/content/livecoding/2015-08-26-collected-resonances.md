@@ -1,6 +1,5 @@
 ---
 title: "Collected Resonances: Session 2"
-layout: doc
 date: "2015-08-26"
 instrument: "Extempore"
 venue: "ANU School of Music, Canberra"

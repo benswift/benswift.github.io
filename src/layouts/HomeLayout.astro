@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content"
+import { getPosts } from "../utils/posts"
 import BaseLayout from "./BaseLayout.astro"
 import SiteFooter from "../components/SiteFooter.astro"
 import { SITE_BASELINE_PHRASES } from "../data/hero"
@@ -41,8 +41,7 @@ const curatedPhrases = [
   "creative computing",
 ]
 
-const blogEntries = await getCollection("blog", ({ data }) => data.published !== false)
-const blogTitles = blogEntries.map((e) => e.data.title)
+const blogTitles = (await getPosts()).map((post) => post.data.title)
 
 const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
 ---

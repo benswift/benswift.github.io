@@ -1,6 +1,5 @@
 ---
 title: "Transmissions in Sound"
-layout: doc
 date: "2008-10-15"
 instrument: "Impromptu"
 venue: "ANU School of Music, Canberra"

@@ -1,6 +1,5 @@
 ---
 title: "National Invention Convention '18 Closing Ceremony"
-layout: doc
 date: "2018-01-19"
 instrument: "Extempore"
 venue: "Questacon, Canberra"

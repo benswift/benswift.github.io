@@ -1,48 +1,18 @@
 ---
-import { getCollection } from "astro:content"
 import PageLayout from "../../../layouts/PageLayout.astro"
 import PostList from "../../../components/PostList.astro"
-import { formatDate } from "../../../utils/date"
+import { getPosts } from "../../../utils/posts"
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("blog", (entry) => {
-    return entry.data.published !== false && /^\d{4}\/\d{2}\/\d{2}\//.test(entry.id)
-  })
-
-  const tagMap = new Map<string, typeof allPosts>()
-  for (const post of allPosts) {
-    for (const tag of post.data.tags) {
-      if (!tagMap.has(tag)) tagMap.set(tag, [])
-      tagMap.get(tag)!.push(post)
-    }
-  }
-
-  return [...tagMap.entries()].map(([tag, posts]) => ({
+  const posts = await getPosts()
+  const tags = new Set(posts.flatMap((post) => post.data.tags))
+  return [...tags].map((tag) => ({
     params: { tag },
-    props: { tag, posts },
+    props: { tag, posts: posts.filter((post) => post.data.tags.includes(tag)) },
   }))
 }
 
-const { tag, posts: rawPosts } = Astro.props
-
-const posts = rawPosts
-  .map((post: any) => {
-    const match = post.id.match(/^(\d{4})\/(\d{2})\/(\d{2})\/(.+?)(?:\.mdx?)?$/)
-    const dateStr = match ? `${match[1]}-${match[2]}-${match[3]}` : ""
-    const date = new Date(dateStr)
-    const slug = post.id.replace(/\.mdx?$/, "")
-
-    return {
-      title: post.data.title,
-      url: `/blog/${slug}/`,
-      date: dateStr,
-      dateFormatted: formatDate(date, true),
-      tags: post.data.tags,
-      excerpt: post.data.description,
-      image: post.data.image,
-    }
-  })
-  .sort((a: any, b: any) => b.date.localeCompare(a.date))
+const { tag, posts } = Astro.props
 ---
 
 <PageLayout title={`Posts tagged with "${tag}"`}>

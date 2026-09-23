@@ -2,7 +2,6 @@
 title:
   "Musical Metacreation (MuMe) Algorave at ISEA 2013: International Symposium on
   Electronic Art"
-layout: doc
 date: "2013-06-15"
 instrument: "Extempore"
 venue: "107 Projects, Redfern, NSW, Australia"

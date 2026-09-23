@@ -3,7 +3,6 @@ title: "Giving my livecoding gigs a DOI"
 description:
   "Turning nearly two decades of ephemeral livecoding gigs into citable research
   outputs, with DataCite DOIs through Zenodo and a self-owned atproto layer."
-published: true
 tags: ["livecoding", "research", "music"]
 ---
 

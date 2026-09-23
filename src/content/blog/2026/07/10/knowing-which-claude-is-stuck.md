@@ -3,7 +3,6 @@ title: "Knowing which Claude is stuck"
 description:
   "A zellij session switcher that shows how many Claude Code agents are running
   in each session, and which of them has stopped and is waiting on me."
-published: true
 tags: ["tools", "ai", "dev"]
 ---
 

@@ -3,7 +3,6 @@ title: "Becoming a better atproto citizen"
 description:
   "The blog's standard.site records now carry cover images, a publication icon
   and theme, and the strongRefs Bluesky uses for enhanced link cards."
-published: true
 tags:
   - atproto
   - web

@@ -1,6 +1,5 @@
 ---
 title: "Soundscapes Concert Series #21"
-layout: doc
 date: "2018-05-03"
 instrument: "Extempore"
 venue: "Smiths Alternative Bookshop, Canberra"
