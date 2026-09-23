@@ -11,6 +11,7 @@ import remarkDirective from "remark-directive";
 import { headingAnchorPlugins, remarkCallout } from "astro-theme-university/markdown";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
+import { rehypeSmallCaps } from "./src/utils/rehype-small-caps";
 
 // Minimal hast node shape so we don't need @types/hast just for two
 // build-time helpers.
@@ -199,6 +200,7 @@ export default defineConfig({
             transformers: [a11yCodeBlock],
           },
         ],
+        rehypeSmallCaps,
         ...headingAnchorPlugins,
       ] as never,
     }),

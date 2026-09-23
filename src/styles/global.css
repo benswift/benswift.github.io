@@ -152,6 +152,13 @@ main > :is(p, ul, ol, dl, blockquote, h2, h3, h4, h5, h6, .at-callout, .footnote
   max-inline-size: var(--measure);
 }
 
+/* Acronyms in prose, wrapped by rehype-small-caps. */
+.caps {
+  font-variant-caps: all-small-caps;
+  font-variant-numeric: lining-nums;
+  letter-spacing: 0.04em;
+}
+
 /* Dates and tabular data line up; prose keeps oldstyle figures. */
 table,
 time,
