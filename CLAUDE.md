@@ -22,14 +22,22 @@ writes `.astro/dev.json` (URL, port, PID), logs JSON to `.astro/dev.log`, and
 serves `/_astro/status` (returns `{"ok": true}`). Manage it with
 `astro dev status`, `astro dev logs --follow` and `astro dev stop`.
 
+## Navigation and client scripts
+
+There's no `<ClientRouter />`: page transitions are native cross-document view
+transitions (`@view-transition` in `global.css`), and Astro's built-in
+`security.csp` doesn't support the router. So every component `<script>` runs
+once per page load --- don't reintroduce `astro:page-load` listeners. Svelte is
+reserved for genuinely stateful islands in posts; site chrome (hero, search,
+nav) is `.astro` plus a plain script.
+
 ## Svelte islands
 
 Mount islands from `.mdx` with `client:visible` (or `client:load`), never
 `client:only`. Astro drops a component's scoped `<style>` for `client:only`
 islands imported from MDX: the `svelte-<hash>` class lands on the element but no
 stylesheet ever defines a matching rule, so the component renders unstyled with
-no build-time warning. Islands mounted from `.astro` files (HeroCanvas,
-ForCodesTable) aren't affected.
+no build-time warning.
 
 Those islands are server-rendered, so keep browser APIs out of the component
 body and out of `onDestroy` --- the one lifecycle hook Svelte also runs during

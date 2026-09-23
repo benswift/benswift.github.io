@@ -70,24 +70,15 @@ const { bibtex, label = "Cite this" } = Astro.props
 </style>
 
 <script>
-  function initCiteWidgets() {
-    document.querySelectorAll<HTMLButtonElement>(".cite-widget .cite-copy").forEach(btn => {
-      if (btn.dataset.bound) return
-      btn.dataset.bound = "1"
-      btn.addEventListener("click", async () => {
-        const bibtex = btn.dataset.bibtex
-        if (!bibtex) return
-        await navigator.clipboard.writeText(bibtex)
-        btn.textContent = "Copied"
-        btn.classList.add("copied")
-        setTimeout(() => {
-          btn.textContent = "Copy BibTeX"
-          btn.classList.remove("copied")
-        }, 2000)
-      })
+  for (const btn of document.querySelectorAll<HTMLButtonElement>(".cite-widget .cite-copy")) {
+    btn.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(btn.dataset.bibtex ?? "")
+      btn.textContent = "Copied"
+      btn.classList.add("copied")
+      setTimeout(() => {
+        btn.textContent = "Copy BibTeX"
+        btn.classList.remove("copied")
+      }, 2000)
     })
   }
-
-  initCiteWidgets()
-  document.addEventListener("astro:page-load", initCiteWidgets)
 </script>

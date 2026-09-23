@@ -55,9 +55,9 @@ describe.skipIf(!existsSync(distDir))("juttu comments integration", () => {
     expect(htmlWithAtUri).toMatch(/defer\s.*juttu-embed\.js|juttu-embed\.js.*defer/);
   });
 
-  it("juttu-comments div appears before cite-post details element", () => {
+  it("juttu-comments div appears before the cite widget", () => {
     const commentsPos = htmlWithAtUri.indexOf('id="juttu-comments"');
-    const citePos = htmlWithAtUri.indexOf('<details class="cite-post"');
+    const citePos = htmlWithAtUri.indexOf('<details class="cite-widget"');
     expect(commentsPos).toBeGreaterThan(-1);
     expect(citePos).toBeGreaterThan(-1);
     expect(commentsPos).toBeLessThan(citePos);

@@ -173,17 +173,12 @@ const socialLinks = [
 </style>
 
 <script>
-  function initNav() {
-    const toggle = document.querySelector(".mobile-menu-toggle")
-    const navLinks = document.querySelector("#nav-links")
+  const toggle = document.querySelector(".mobile-menu-toggle")!
+  const navLinks = document.querySelector("#nav-links")!
 
-    toggle?.addEventListener("click", () => {
-      const expanded = toggle.getAttribute("aria-expanded") === "true"
-      toggle.setAttribute("aria-expanded", String(!expanded))
-      navLinks?.classList.toggle("open")
-    })
-
-}
-
-  document.addEventListener("astro:page-load", initNav)
+  toggle.addEventListener("click", () => {
+    const expanded = toggle.getAttribute("aria-expanded") === "true"
+    toggle.setAttribute("aria-expanded", String(!expanded))
+    navLinks.classList.toggle("open")
+  })
 </script>

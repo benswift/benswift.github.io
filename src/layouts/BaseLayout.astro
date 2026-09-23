@@ -4,8 +4,7 @@ import type { ImageMetadata } from "astro"
 import { Font, getImage } from "astro:assets"
 import Head from "../components/Head.astro"
 import Nav from "../components/Nav.astro"
-import HeroCanvas from "../components/svelte/HeroCanvas.svelte"
-import { ClientRouter } from "astro:transitions"
+import HeroCanvas from "../components/HeroCanvas.astro"
 import { SITE_BASELINE_PHRASES } from "../data/hero"
 import defaultHero from "../assets/og-default.avif"
 
@@ -41,7 +40,6 @@ const heroFallbackImage = await getImage({
   width: 1280,
   quality: 50,
 })
-const heroPhrasesContent = phrases.join("|")
 ---
 
 <html lang="en">
@@ -60,15 +58,10 @@ const heroPhrasesContent = phrases.join("|")
       date={date}
       atUri={atUri}
     />
-    <meta name="hero-phrases" content={heroPhrasesContent} />
-    <meta name="hero-image-url" content={heroFallbackImage.src} />
-    <ClientRouter />
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
-    <div class="hero-slot" aria-hidden="true">
-      <HeroCanvas client:only="svelte" transition:persist="hero-canvas" />
-    </div>
+    <HeroCanvas phrases={phrases} fallbackSrc={heroFallbackImage.src} />
     <Nav />
     <main id="main-content" tabindex="-1" data-pagefind-body>
       <slot />

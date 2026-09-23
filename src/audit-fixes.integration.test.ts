@@ -1,6 +1,7 @@
 import { describe, expect, test } from "vitest";
 import { existsSync, readFileSync } from "node:fs";
 import { execSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 
 // Integration tests covering the modern-web-guidance audit fixes. They run
@@ -47,6 +48,28 @@ describe.skipIf(!existsSync(distDir))("Content Security Policy (security guide)"
     expect(csp).toMatch(/script-src[^;]*https:\/\/cdn\.jsdelivr\.net/);
     // object-src must be 'none' (modern CSP hardening).
     expect(csp).toMatch(/object-src\s+'none'/);
+  });
+
+  test("every inline script on every page is hashed into that page's script-src", () => {
+    const pages = execSync("find dist -name index.html -type f", { encoding: "utf8" })
+      .trim()
+      .split("\n");
+    const blocked: string[] = [];
+    for (const page of pages) {
+      const html = readFileSync(page, "utf8");
+      const csp =
+        html.match(/<meta[^>]+http-equiv="Content-Security-Policy"[^>]+content="([^"]+)"/i)?.[1] ??
+        "";
+      const scriptSrc = csp.match(/script-src([^;]*)/)?.[1] ?? "";
+      for (const [, attrs, body] of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)) {
+        // External scripts, JSON-LD and speculation rules aren't executed as
+        // inline script, so script-src hashes don't apply to them.
+        if (/\bsrc=|type="application\/(ld\+)?json"/.test(attrs!) || !body!.trim()) continue;
+        const hash = createHash("sha256").update(body!).digest("base64");
+        if (!scriptSrc.includes(`'sha256-${hash}'`)) blocked.push(page);
+      }
+    }
+    expect([...new Set(blocked)]).toEqual([]);
   });
 });
 
@@ -97,6 +120,23 @@ describe.skipIf(!existsSync(distDir))(
       expect(slotPos).toBeGreaterThan(-1);
       expect(headerPos).toBeGreaterThan(-1);
       expect(slotPos).toBeLessThan(headerPos);
+    });
+
+    test("hero ships its canvas, phrases and reduced-motion image in the static HTML", () => {
+      const html = readPage("/");
+      const slot = html.match(/<div[^>]+class="hero-slot[^"]*"[^>]*>[\s\S]*?<\/div>/)?.[0] ?? "";
+      expect(slot).toMatch(/<canvas[^>]+class="hero-canvas/);
+      expect(slot).toMatch(/<img[^>]+class="hero-fallback[^"]*"[^>]+src="\/_astro\/[^"]+\.avif"/);
+      const phrases = JSON.parse(
+        (slot.match(/data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll("&quot;", '"'),
+      );
+      expect(phrases.length).toBeGreaterThan(10);
+    });
+
+    test("no page ships Astro's ClientRouter (navigation is native view transitions)", () => {
+      for (const p of ["/", "/blog/", "/livecoding/"]) {
+        expect(readPage(p)).not.toContain("astro-view-transitions");
+      }
     });
   },
 );

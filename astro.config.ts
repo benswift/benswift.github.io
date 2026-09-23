@@ -1,7 +1,7 @@
 import { defineConfig, fontProviders } from "astro/config";
 import type { PluggableList } from "unified";
 import mdx from "@astrojs/mdx";
-import { unified } from "@astrojs/markdown-remark";
+import { rehypeShiki, unified } from "@astrojs/markdown-remark";
 import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
 import brokenLinksChecker from "astro-broken-links-checker";
@@ -54,8 +54,38 @@ export default defineConfig({
   image: {
     layout: "constrained",
   },
-  // ClientRouter already hover-prefetches; viewport strategy also covers touch
-  // devices (no hover) and respects data-saver.
+  security: {
+    // Emitted as a <meta> tag per page (GitHub Pages can't set headers, so
+    // frame-ancestors is out of reach). Astro hashes its own scripts into
+    // script-src; jsDelivr serves the pinned juttu comment embed. style-src
+    // keeps 'unsafe-inline' for Shiki's per-token style attributes and the
+    // <style> blocks inside hand-written SVGs in posts. The wider connect/
+    // worker/frame sources are for the on-device Gemma demo (Hugging Face
+    // model fetch, MediaPipe wasm worker) and YouTube/Vimeo embeds.
+    csp: {
+      scriptDirective: {
+        resources: ["'self'", "https://cdn.jsdelivr.net"],
+        // astromotion's DeckHead export-mode shim is `is:inline`, which Astro
+        // can't hash for us. The CSP integration test fails if an astromotion
+        // bump changes it.
+        hashes: ["sha256-We5/VeupUNRQyOp8ANEmWt6lr5/XCletC20uslKa684="],
+      },
+      styleDirective: { resources: ["'self'", "'unsafe-inline'"] },
+      directives: [
+        "default-src 'self'",
+        "img-src 'self' data: https:",
+        "font-src 'self' data:",
+        "connect-src 'self' https:",
+        "frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com",
+        "worker-src 'self' blob:",
+        "child-src 'self' blob:",
+        "base-uri 'self'",
+        "form-action 'self'",
+        "object-src 'none'",
+      ],
+    },
+  },
+  // Viewport strategy covers touch devices (no hover) and respects data-saver.
   prefetch: {
     prefetchAll: true,
     defaultStrategy: "viewport",
@@ -150,18 +180,28 @@ export default defineConfig({
     },
   },
   markdown: {
+    // Shiki runs as an ordinary rehype plugin rather than through
+    // markdown.syntaxHighlight, which makes Astro warn on every build that
+    // Shiki's inline styles clash with CSP. They don't here: style-src keeps
+    // 'unsafe-inline' (see security.csp above).
+    syntaxHighlight: false,
     processor: unified({
       smartypants: false,
       remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins] as never,
-      rehypePlugins: [...headingAnchorPlugins],
+      rehypePlugins: [
+        [
+          rehypeShiki,
+          {
+            theme: "github-dark",
+            langs: [
+              { ...xtlangGrammar, aliases: ["extempore"] },
+              { ...armasmGrammar, aliases: ["armasm"] },
+            ],
+            transformers: [a11yCodeBlock],
+          },
+        ],
+        ...headingAnchorPlugins,
+      ] as never,
     }),
-    shikiConfig: {
-      theme: "github-dark",
-      langs: [
-        { ...xtlangGrammar, aliases: ["extempore"] } as never,
-        { ...armasmGrammar, aliases: ["armasm"] } as never,
-      ],
-      transformers: [a11yCodeBlock],
-    },
   },
 });

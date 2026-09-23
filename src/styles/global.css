@@ -7,6 +7,17 @@
   box-sizing: border-box;
 }
 
+/* Same-origin navigations crossfade; the header stays put across pages. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+.site-header {
+  view-transition-name: site-header;
+}
+
 :focus-visible {
   outline: 2px solid var(--highlight-color);
   outline-offset: 2px;
@@ -66,19 +77,6 @@ body {
   padding: 0 !important;
   border: 0 !important;
   white-space: nowrap !important;
-}
-
-/* Hero island slot — reserves space before client:only HeroCanvas hydrates so
-   the page doesn't shift down when the canvas appears. Also provides the
-   prefers-reduced-motion fallback dimensions if the inner component never
-   mounts. The size matches HeroCanvas's intrinsic aspect ratio. */
-.hero-slot {
-  position: relative;
-  width: 100vw;
-  margin: 0 calc(50% - 50vw) 1.5rem;
-  aspect-ratio: 2844 / 1600;
-  max-height: 506px;
-  background: #0c0614;
 }
 
 /* Skip link */

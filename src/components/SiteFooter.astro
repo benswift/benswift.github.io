@@ -73,15 +73,10 @@ const repoBase = "https://github.com/benswift/benswift.github.io"
     "https://redbrick.coffee",
   ]
 
-  function initCafe() {
-    document.querySelectorAll(".random-cafe").forEach(el => {
-      el.addEventListener("click", (e) => {
-        e.preventDefault()
-        window.location.href = cafeUrls[Math.floor(Math.random() * cafeUrls.length)]
-      })
+  for (const el of document.querySelectorAll(".random-cafe")) {
+    el.addEventListener("click", (e) => {
+      e.preventDefault()
+      window.location.href = cafeUrls[Math.floor(Math.random() * cafeUrls.length)]
     })
   }
-
-  initCafe()
-  document.addEventListener("astro:page-load", initCafe)
 </script>

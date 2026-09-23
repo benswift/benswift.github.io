@@ -1,0 +1,61 @@
+---
+interface Props {
+  phrases: string[]
+  // Shown instead of the WebGL canvas under prefers-reduced-motion.
+  fallbackSrc: string
+}
+
+const { phrases, fallbackSrc } = Astro.props
+---
+
+<div class="hero-slot" aria-hidden="true" data-phrases={JSON.stringify(phrases)}>
+  <img class="hero-fallback" src={fallbackSrc} alt="" loading="lazy" decoding="async" />
+  <canvas class="hero-canvas"></canvas>
+</div>
+
+<script>
+  import { mountHeroCanvas } from "./hero-canvas"
+
+  const slot = document.querySelector<HTMLElement>(".hero-slot")
+  if (slot && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    mountHeroCanvas(slot, JSON.parse(slot.dataset.phrases ?? "[]"))
+  }
+</script>
+
+<style>
+  /* Full-bleed band at the hero image's aspect ratio, reserved in the SSR
+     markup so nothing shifts when the canvas starts drawing. */
+  .hero-slot {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw) 1.5rem;
+    aspect-ratio: 2844 / 1600;
+    max-height: 506px;
+    background: #0c0614;
+  }
+
+  .hero-slot > * {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-fallback {
+    object-fit: cover;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-fallback {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-canvas {
+      display: none;
+    }
+  }
+</style>
