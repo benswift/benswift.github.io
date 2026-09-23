@@ -40,6 +40,16 @@
   --radius-lg: 8px 0 8px 8px;
 
   accent-color: var(--highlight-color);
+  /* Type scale: small, body, h3, h2, page title. The prose measure is about
+     70 characters of Piazzolla; wide things (code, figures, tables) use the
+     full main column. */
+  --step--1: 0.85rem;
+  --step-0: 1rem;
+  --step-1: 1.15rem;
+  --step-2: 1.35rem;
+  --step-3: 2.35rem;
+  --measure: 30rem;
+
   --font-family-base: var(--font-piazzolla, "Piazzolla"), georgia, serif;
   --font-family-mono:
     var(--font-recursive, "Recursive"), ui-monospace, consolas, monaco, "Ubuntu Mono", monospace;
@@ -63,7 +73,8 @@ body {
   font-family: var(--font-family-base);
   color: var(--text-color);
   background-color: var(--background-color);
-  line-height: 1.6;
+  line-height: 1.55;
+  font-variant-numeric: oldstyle-nums proportional-nums;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -94,7 +105,7 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 0 0 4px 4px;
-  font-size: 0.875rem;
+  font-size: var(--step--1);
 }
 
 .skip-link:focus {
@@ -109,21 +120,44 @@ h4,
 h5,
 h6 {
   margin: 1.5em 0 0.5em;
-  line-height: 1.3;
+  line-height: 1.2;
   font-weight: 600;
+  font-variant-numeric: lining-nums;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: var(--step-3);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: var(--step-2);
 }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: var(--step-1);
+  font-style: italic;
+  font-weight: 500;
+}
+
+h4,
+h5,
+h6 {
+  font-size: var(--step-0);
+}
+
+/* Running text keeps to the measure; code, figures, tables and islands use
+   the full width of main. */
+main > :is(p, ul, ol, dl, blockquote, h2, h3, h4, h5, h6, .at-callout, .footnotes, .post-subtitle) {
+  max-inline-size: var(--measure);
+}
+
+/* Dates and tabular data line up; prose keeps oldstyle figures. */
+table,
+time,
+.post-date,
+.post-item-date {
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 /* Heading anchor links */
@@ -164,7 +198,8 @@ a:hover {
    their existing class/element rules. */
 main :where(p, li, blockquote, td, dd, figcaption) a {
   text-decoration: underline;
-  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 p {
@@ -291,7 +326,7 @@ blockquote::before {
 /* Post metadata */
 .post-date {
   color: var(--text-2);
-  font-size: 0.9rem;
+  font-size: var(--step--1);
   margin-bottom: 0.5rem;
 }
 
@@ -316,7 +351,7 @@ blockquote::before {
 }
 
 .bibliography .pub-title {
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
@@ -387,10 +422,10 @@ blockquote::before {
 }
 
 .post-item-title {
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: var(--step-1);
   margin: 0 0.5rem 0 0;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .post-item-title a {
@@ -402,7 +437,7 @@ blockquote::before {
 }
 
 .post-item-date {
-  font-size: 0.875rem;
+  font-size: var(--step--1);
   color: var(--text-2);
 }
 
@@ -417,14 +452,14 @@ blockquote::before {
 
 .post-item-venue {
   color: var(--text-2);
-  font-size: 0.875rem;
+  font-size: var(--step--1);
 }
 
 .post-item-links {
   display: inline-flex;
   gap: 0.75rem;
   margin-inline-start: 0.5rem;
-  font-size: 0.875rem;
+  font-size: var(--step--1);
 }
 
 /* Pagination */
@@ -439,7 +474,7 @@ blockquote::before {
 
 .pagination a,
 .pagination span.disabled {
-  font-size: 0.9rem;
+  font-size: var(--step--1);
 }
 
 .pagination span.disabled {
@@ -448,9 +483,10 @@ blockquote::before {
 
 /* Shared page title styles */
 .page-title {
-  font-size: clamp(2rem, 1.5rem + 2vw, 2.5rem);
-  font-weight: 700;
-  line-height: 1.25;
+  font-size: clamp(1.9rem, 1.4rem + 2vw, var(--step-3));
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
   margin: 0 0 0.5rem;
 }
 
@@ -519,7 +555,7 @@ strong {
   border-radius: var(--radius-md);
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  font-size: 0.85rem;
+  font-size: var(--step--1);
   line-height: 1.6;
   scrollbar-width: thin;
   scrollbar-color: var(--text-3) transparent;
@@ -558,11 +594,17 @@ strong {
 
 /* Footnotes */
 .footnotes {
-  font-size: 0.85rem;
+  font-size: var(--step--1);
   color: var(--text-2);
   border-top: 1px solid var(--divider);
   margin-top: 2rem;
   padding-top: 1rem;
+}
+
+/* Keep footnote markers from pushing their line apart. */
+sup,
+sub {
+  line-height: 0;
 }
 
 sup a {
@@ -599,6 +641,10 @@ sup a {
 
   html {
     font-size: 11pt;
+  }
+
+  main > * {
+    max-inline-size: none;
   }
 
   body {
