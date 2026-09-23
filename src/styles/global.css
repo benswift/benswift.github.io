@@ -34,6 +34,10 @@
   --divider: #363338;
   --text-2: #aaa;
   --text-3: #888;
+  /* The site's asymmetric corner: square top-right, rounded elsewhere. */
+  --radius-sm: 4px 0 4px 4px;
+  --radius-md: 6px 0 6px 6px;
+  --radius-lg: 8px 0 8px 8px;
 
   accent-color: var(--highlight-color);
   --font-family-base: var(--font-fraunces, "Fraunces"), georgia, "Times New Roman", serif;
@@ -210,12 +214,12 @@ code {
 :not(pre) > code {
   background: color-mix(in srgb, var(--highlight-color) 10%, var(--bg-soft));
   padding: 0.12em 0.4em;
-  border-radius: 4px 0 4px 4px;
+  border-radius: var(--radius-sm);
 }
 
 pre {
   background: var(--bg-soft);
-  border-radius: 6px 0 6px 6px;
+  border-radius: var(--radius-md);
   padding: 1rem;
   overflow-x: auto;
   overscroll-behavior-x: contain;
@@ -378,7 +382,7 @@ blockquote::before {
 .post-item-image {
   width: 100%;
   height: auto;
-  border-radius: 4px 0 4px 4px;
+  border-radius: var(--radius-sm);
 }
 
 @media (width <= 640px) {
@@ -523,7 +527,7 @@ strong {
 /* Astro code blocks (Shiki dual-theme) */
 .astro-code {
   padding: 1rem;
-  border-radius: 6px 0 6px 6px;
+  border-radius: var(--radius-md);
   overflow-x: auto;
   overscroll-behavior-x: contain;
   font-size: 0.85rem;

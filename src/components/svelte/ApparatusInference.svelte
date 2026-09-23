@@ -365,7 +365,7 @@
     background: var(--bg-soft, #252525);
     color: var(--text-color, #e0e0e0);
     border: 1px solid var(--divider, #333);
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     z-index: 10;
     transition: background 0.15s;
@@ -405,7 +405,7 @@
     padding: 0.375rem;
     background: var(--bg-soft, #252525);
     border: 2px solid var(--divider, #333);
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     transition: border-color 0.15s;
   }
@@ -445,7 +445,7 @@
     background: var(--bg-soft, #252525);
     color: var(--text-color, #e0e0e0);
     border: 1px solid var(--divider, #333);
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     font-size: 0.875rem;
     transition: background 0.15s;
@@ -537,7 +537,7 @@
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 8px 0 8px 8px;
+    border-radius: var(--radius-lg);
     background: var(--background-color, #1a1a1a);
     color: var(--text-color, #e0e0e0);
     --pa-highlight: var(--highlight-color, #be2edd);

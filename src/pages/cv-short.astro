@@ -281,7 +281,7 @@ const description =
   }
 
   .cv-role {
-    color: var(--brand-1, #be2edd);
+    color: var(--brand-1);
     font-weight: 600;
     margin: 0.1rem 0;
   }
@@ -291,7 +291,7 @@ const description =
   }
 
   .cv-contact {
-    color: var(--text-2, #aaa);
+    color: var(--text-2);
     font-size: 0.95rem;
     margin: 0.1rem 0 0;
   }
@@ -308,7 +308,7 @@ const description =
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    border-bottom: 1px solid var(--divider, #555);
+    border-bottom: 1px solid var(--divider);
     padding-bottom: 0.2rem;
     margin: 1.3rem 0 0.5rem;
   }
@@ -322,7 +322,7 @@ const description =
   }
 
   .cv-row .yr {
-    color: var(--text-3, #888);
+    color: var(--text-3);
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
   }
@@ -334,14 +334,14 @@ const description =
   }
 
   .cv-note {
-    color: var(--text-3, #888);
+    color: var(--text-3);
     font-size: 0.85rem;
     margin: 0.4rem 0 0;
     padding-left: 5.25rem;
   }
 
   .cv-foot {
-    color: var(--text-2, #aaa);
+    color: var(--text-2);
     font-size: 0.9rem;
     margin-top: 1.3rem;
   }
@@ -367,10 +367,6 @@ const description =
   }
 
   @media print {
-    body:has(.cv-short) .hero-slot {
-      display: none !important;
-    }
-
     .cv-short {
       max-width: none;
       font-size: 10.7pt;

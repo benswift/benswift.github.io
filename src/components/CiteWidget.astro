@@ -22,7 +22,7 @@ const { bibtex, label = "Cite this" } = Astro.props
   .cite-widget {
     margin-top: 2rem;
     border: 1px solid var(--divider);
-    border-radius: 8px 0 8px 8px;
+    border-radius: var(--radius-lg);
     padding: 0.75rem 1rem;
   }
 
@@ -39,7 +39,7 @@ const { bibtex, label = "Cite this" } = Astro.props
 
   .cite-content pre {
     background: var(--bg-soft);
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     padding: 1rem;
     overflow-x: auto;
     font-size: 0.8rem;

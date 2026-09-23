@@ -169,7 +169,7 @@
     margin: 2rem 0;
     padding: 1.25rem;
     border: 1px solid var(--divider, #363338);
-    border-radius: 8px 0 8px 8px;
+    border-radius: var(--radius-lg);
     background: var(--bg-soft, #272529);
   }
   .streams {

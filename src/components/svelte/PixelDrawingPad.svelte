@@ -114,7 +114,7 @@
     touch-action: none;
     cursor: crosshair;
     background: var(--bg-soft, #252525);
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     user-select: none;
   }
 </style>
