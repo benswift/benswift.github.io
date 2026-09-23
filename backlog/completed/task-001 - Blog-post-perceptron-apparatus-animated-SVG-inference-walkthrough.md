@@ -1,10 +1,10 @@
 ---
 id: TASK-001
-title: "Blog post: perceptron apparatus animated SVG inference walkthrough"
-status: In Progress
+title: 'Blog post: perceptron apparatus animated SVG inference walkthrough'
+status: Done
 assignee: []
-created_date: "2026-03-19"
-updated_date: "2026-03-18 23:33"
+created_date: '2026-03-19'
+updated_date: '2026-09-23 07:18'
 labels:
   - blog
   - perceptron-apparatus
