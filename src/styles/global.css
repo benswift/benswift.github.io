@@ -643,16 +643,13 @@ sup a {
     --divider: #ccc;
     --text-2: #444;
     --text-3: #888;
+    --measure: none;
 
     color-scheme: light;
   }
 
   html {
     font-size: 11pt;
-  }
-
-  main > * {
-    max-inline-size: none;
   }
 
   body {

@@ -10,20 +10,18 @@ const description =
   description={description}
   relativePath="src/pages/cv-short.astro"
 >
-  <article class="cv-short">
-    <header class="cv-masthead">
-      <h1>Ben Swift</h1>
-      <p class="cv-role">Creative technologist &middot; artist-researcher</p>
-      <p class="cv-affil">
-        Senior Lecturer &amp; Cybernetic Studio Lead, ANU School of Cybernetics
-      </p>
-      <p class="cv-contact">
-        <a href="https://benswift.me">benswift.me</a> &middot;
-        <a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a> &middot;
-        Canberra, Australia
-      </p>
-    </header>
+  <header class="cv-masthead" slot="masthead">
+    <h1>Ben Swift</h1>
+    <p class="cv-role">Creative technologist &middot; artist-researcher</p>
+    <p class="cv-affil">
+      Senior Lecturer &amp; Cybernetic Studio Lead, ANU School of Cybernetics
+    </p>
+    <p class="cv-contact">
+      <a href="https://benswift.me">benswift.me</a> &middot; <a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a> &middot; Canberra, Australia
+    </p>
+  </header>
 
+  <article class="cv-short">
     <p class="cv-bio">
       Ben Swift is a creative technologist who works in the open. He started out
       as a live coder, writing software on stage that makes music while an
@@ -266,11 +264,6 @@ const description =
 </PageLayout>
 
 <style is:global>
-  /* Hide the layout's auto page-title; this page uses its own masthead. */
-  body:has(.cv-short) .page-title {
-    display: none;
-  }
-
   .cv-short {
     max-width: 54rem;
     margin-inline: auto;
