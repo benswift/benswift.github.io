@@ -63,13 +63,7 @@ export default defineConfig({
     // worker/frame sources are for the on-device Gemma demo (Hugging Face
     // model fetch, MediaPipe wasm worker) and YouTube/Vimeo embeds.
     csp: {
-      scriptDirective: {
-        resources: ["'self'", "https://cdn.jsdelivr.net"],
-        // astromotion's DeckHead export-mode shim is `is:inline`, which Astro
-        // can't hash for us. The CSP integration test fails if an astromotion
-        // bump changes it.
-        hashes: ["sha256-We5/VeupUNRQyOp8ANEmWt6lr5/XCletC20uslKa684="],
-      },
+      scriptDirective: { resources: ["'self'", "https://cdn.jsdelivr.net"] },
       styleDirective: { resources: ["'self'", "'unsafe-inline'"] },
       directives: [
         "default-src 'self'",
