@@ -40,7 +40,7 @@
   --radius-lg: 8px 0 8px 8px;
 
   accent-color: var(--highlight-color);
-  --font-family-base: var(--font-fraunces, "Fraunces"), georgia, "Times New Roman", serif;
+  --font-family-base: var(--font-piazzolla, "Piazzolla"), georgia, serif;
   --font-family-mono:
     var(--font-recursive, "Recursive"), ui-monospace, consolas, monaco, "Ubuntu Mono", monospace;
 
@@ -110,17 +110,8 @@ h5,
 h6 {
   margin: 1.5em 0 0.5em;
   line-height: 1.3;
-  font-weight: 750;
+  font-weight: 600;
   text-wrap: balance;
-}
-
-/* Cap Fraunces' optical sizing on large headings: the auto-selected display
-   cut has hairline thin strokes that read spindly (and a bit precious) on a
-   dark background. Pinning opsz keeps the sturdier text-size strokes. */
-h1,
-h2,
-.page-title {
-  font-variation-settings: "opsz" 28;
 }
 
 h1 {
@@ -237,7 +228,7 @@ blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* Oversized hanging Fraunces quote mark in place of the usual left border. */
+/* Oversized hanging quote mark in place of the usual left border. */
 blockquote::before {
   content: open-quote;
   position: absolute;
@@ -297,9 +288,7 @@ blockquote::before {
   font-weight: 600;
 }
 
-/* Post metadata. Upright, not italic: Fraunces' italic is decorative enough
-   that small grey metadata set in it reads as ornament; italic is reserved
-   for emphasis. */
+/* Post metadata */
 .post-date {
   color: var(--text-2);
   font-size: 0.9rem;

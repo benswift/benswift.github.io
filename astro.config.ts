@@ -90,22 +90,25 @@ export default defineConfig({
   },
   fonts: [
     {
-      // Self-hosted full-featured build (Google's served subsets strip the
-      // case/ss01 features and pin the WONK axis); see src/assets/fonts/.
+      // Self-hosted subsets (Google's served files strip smcp/onum); see
+      // src/assets/fonts/. `optional` only avoids a swap for faces that are
+      // preloaded (BaseLayout preloads both styles): anything else keeps its
+      // fallback for the whole page view.
       provider: fontProviders.local(),
-      name: "Fraunces",
-      cssVariable: "--font-fraunces",
-      fallbacks: ["Georgia", "Times New Roman", "serif"],
+      name: "Piazzolla",
+      cssVariable: "--font-piazzolla",
+      fallbacks: ["Georgia", "serif"],
+      display: "optional",
       options: {
         variants: [
           {
-            src: ["./src/assets/fonts/fraunces-latin.woff2"],
-            weight: "100 900",
+            src: ["./src/assets/fonts/piazzolla-latin.woff2"],
+            weight: "400 700",
             style: "normal",
           },
           {
-            src: ["./src/assets/fonts/fraunces-italic-latin.woff2"],
-            weight: "100 900",
+            src: ["./src/assets/fonts/piazzolla-italic-latin.woff2"],
+            weight: "400 700",
             style: "italic",
           },
         ],
@@ -113,16 +116,18 @@ export default defineConfig({
     },
     {
       // Recursive with MONO/CASL pinned to 1 (Mono Casual), CRSV/slnt pinned,
-      // wght kept variable; subset includes box-drawing chars for tree output.
+      // wght 300-800; subset includes box-drawing chars for tree output.
+      // Preloaded because the hero canvas draws with it on every page.
       provider: fontProviders.local(),
       name: "Recursive",
       cssVariable: "--font-recursive",
       fallbacks: ["ui-monospace", "SF Mono", "Consolas", "monospace"],
+      display: "optional",
       options: {
         variants: [
           {
             src: ["./src/assets/fonts/recursive-mono-casual-latin.woff2"],
-            weight: "300 1000",
+            weight: "300 800",
             style: "normal",
           },
         ],

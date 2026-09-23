@@ -44,8 +44,8 @@ const heroFallbackImage = await getImage({
 
 <html lang="en">
   <head>
-    <Font cssVariable="--font-fraunces" preload={[{ style: "normal" }]} />
-    <Font cssVariable="--font-recursive" />
+    <Font cssVariable="--font-piazzolla" preload />
+    <Font cssVariable="--font-recursive" preload />
     {/* Jost is only drawn into the Scotoma generator's canvas, but the
         @font-face has to exist site-wide for the CSS variable to resolve.
         Not preloaded: at 2.7KB it is only fetched when something renders it. */}
