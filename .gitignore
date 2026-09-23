@@ -21,9 +21,6 @@ node_modules/
 dogfood-output/
 .verify/
 
-# Generated files
-public/site-content.txt
-
 # Local working copies of the World Cup poster (canonical versions live in the
 # blog post and public/assets/documents/)
 /world-cup-2026.typ

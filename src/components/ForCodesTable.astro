@@ -1,0 +1,75 @@
+---
+import { loadForCodes } from "../data/for-codes"
+
+const codes = loadForCodes()
+---
+
+<div class="for-codes-table">
+  <input
+    type="search"
+    class="search"
+    placeholder="type to filter FoR codes..."
+    aria-label="Filter FoR codes"
+  />
+  <table>
+    <thead>
+      <tr>
+        <th>FoR Code</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {codes.map((code) => (
+        <tr data-search={`${code.division} ${code.group}`}>
+          <td class="for-code">{code.field}</td>
+          <td class="for-description">{code.description}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<script>
+  for (const table of document.querySelectorAll(".for-codes-table")) {
+    const input = table.querySelector<HTMLInputElement>(".search")!
+    // Match on the code and description (the row's text) plus its division
+    // and group (carried in data-search).
+    const rows = [...table.querySelectorAll<HTMLTableRowElement>("tbody tr")].map((row) => ({
+      row,
+      text: `${row.textContent} ${row.dataset.search}`.toLowerCase(),
+    }))
+    input.addEventListener("input", () => {
+      const query = input.value.toLowerCase()
+      for (const { row, text } of rows) row.hidden = !text.includes(query)
+    })
+  }
+</script>
+
+<style>
+  .search {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    border: 2px solid var(--brand-1);
+    border-radius: 3px;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: start;
+    border-bottom: 1px solid var(--divider);
+  }
+
+  .for-code {
+    font-family: var(--font-family-mono);
+    white-space: nowrap;
+  }
+</style>

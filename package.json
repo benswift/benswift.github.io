@@ -22,9 +22,7 @@
     "lint:css:fix": "stylelint \"src/**/*.css\" --allow-empty-input --fix",
     "lint:fix": "oxlint --fix && pnpm lint:css:fix",
     "post": "pnpm exec tsx scripts/new-post.ts",
-    "prebuild": "pnpm exec tsx scripts/generate-site-content.ts",
     "preview": "astro preview",
-    "site-content": "pnpm exec tsx scripts/generate-site-content.ts",
     "test": "vitest run --project unit",
     "test:integration": "vitest run --project integration",
     "typecheck": "astro check && svelte-check --tsconfig ./tsconfig.json",
@@ -33,7 +31,7 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
-    "@mediapipe/tasks-genai": "^0.10.29",
+    "@mediapipe/tasks-genai": "0.10.29",
     "astro-broken-links-checker": "^1.1.0",
     "astro-theme-anu": "git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#astro-theme-anu@v0.9.3&path:/packages/astro-theme-anu",
     "astro-theme-university": "github:ANUcybernetics/astro-theme-university#v0.17.2",

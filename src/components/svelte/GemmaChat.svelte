@@ -25,7 +25,9 @@
 
   const MODEL_URL =
     "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/main/gemma-4-E2B-it-web.task";
-  const WASM_URL = "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@0.10.27/wasm";
+  // Keep the version in step with the exact pin in package.json (a unit test
+  // checks); the JS bundle and this WASM must come from the same release.
+  const WASM_URL = "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@0.10.29/wasm";
 
   function scrollToBottom() {
     if (messagesEl) {
@@ -276,7 +278,7 @@ ${siteContent}`;
 <style>
   .gemma-chat {
     border: 1px solid var(--divider, #333);
-    border-radius: 8px 0 8px 8px;
+    border-radius: var(--radius-lg);
     overflow: hidden;
     background: var(--bg-soft, #252525);
   }
@@ -312,7 +314,7 @@ ${siteContent}`;
     background: var(--highlight-color, #be2edd);
     color: white;
     border: none;
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     font-size: 1rem;
     cursor: pointer;
     transition: opacity 0.15s;
@@ -419,7 +421,7 @@ ${siteContent}`;
     resize: none;
     padding: 0.5rem 0.75rem;
     border: 1px solid var(--divider, #333);
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     background: var(--bg-soft, #252525);
     color: var(--text-color, #e0e0e0);
     font-family: inherit;
@@ -442,7 +444,7 @@ ${siteContent}`;
     background: var(--highlight-color, #be2edd);
     color: white;
     border: none;
-    border-radius: 6px 0 6px 6px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     font-size: 0.9rem;
     align-self: flex-end;

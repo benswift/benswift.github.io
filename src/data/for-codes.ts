@@ -8,23 +8,30 @@ export interface ForCode {
   description: string;
 }
 
-export function loadForCodes(): ForCode[] {
-  const csvPath = resolve(process.cwd(), "_data/FoR-Codes-2020-processed.csv");
-  const csv = readFileSync(csvPath, "utf8");
-  const lines = csv.trim().split("\n");
+/** Split one RFC 4180 CSV line: fields may be quoted, with "" as an escaped quote. */
+export function parseCsvLine(line: string): string[] {
+  return Array.from(
+    line.matchAll(/(?:^|,)(?:"((?:[^"]|"")*)"|([^,]*))/g),
+    ([, quoted, bare]) => quoted?.replaceAll('""', '"') ?? bare ?? "",
+  );
+}
 
-  const codes: ForCode[] = [];
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i];
-    const match = line.match(/^"([^"]+)","?([^",]+)"?,(\d+),(.+)$/);
-    if (match) {
-      codes.push({
-        division: match[1],
-        group: match[2],
-        field: match[3],
-        description: match[4],
-      });
-    }
-  }
-  return codes;
+export function parseForCodes(csv: string): ForCode[] {
+  return csv
+    .trim()
+    .split("\n")
+    .slice(1)
+    .map((line) => {
+      const [division, group, field, description] = parseCsvLine(line);
+      if (!division || !group || !/^\d{6}$/.test(field ?? "") || !description) {
+        throw new Error(`malformed FoR code row: ${line}`);
+      }
+      return { division, group, field: field!, description };
+    });
+}
+
+export function loadForCodes(): ForCode[] {
+  return parseForCodes(
+    readFileSync(resolve(process.cwd(), "_data/FoR-Codes-2020-processed.csv"), "utf8"),
+  );
 }

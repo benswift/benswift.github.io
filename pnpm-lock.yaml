@@ -12,7 +12,7 @@ importers:
         specifier: ^4.0.19
         version: 4.0.19
       '@mediapipe/tasks-genai':
-        specifier: ^0.10.29
+        specifier: 0.10.29
         version: 0.10.29
       astro-broken-links-checker:
         specifier: ^1.1.0

@@ -124,3 +124,33 @@ describe("footer source/history links", () => {
     });
   }
 });
+
+describe.skipIf(!existsSync(distDir))("site-content.txt (GemmaChat context)", () => {
+  const text = existsSync(distDir)
+    ? readFileSync(resolve(distDir, "site-content.txt"), "utf8")
+    : "";
+
+  test("covers every main page, Home included", () => {
+    for (const label of ["Home", "Bio", "CV", "Research", "Teaching"]) {
+      expect(text).toContain(`## ${label}\n`);
+    }
+  });
+
+  test("strips frontmatter and MDX imports", () => {
+    expect(text).not.toMatch(/^---$/m);
+    expect(text).not.toMatch(/^import\s/m);
+  });
+
+  test("indexes published posts with their dates", () => {
+    expect(text).toMatch(/^- .+ \(\d{4}-\d{2}-\d{2}\)/m);
+  });
+});
+
+describe.skipIf(!existsSync(distDir))("FoR codes table", () => {
+  test("renders every code server-side, with no Svelte island", () => {
+    const html = readPage("/blog/2021/03/18/anzsrc-for-codes-2020-edition/");
+    const rows = html.match(/<tr[^>]+data-search="/g) ?? [];
+    expect(rows.length).toBe(1967);
+    expect(html).not.toContain("<astro-island");
+  });
+});
