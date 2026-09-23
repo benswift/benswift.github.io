@@ -46,16 +46,12 @@ const blogTitles = (await getPosts()).map((post) => post.data.title)
 const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
 ---
 
-<BaseLayout description={description} image={image} phrases={heroPhrases}>
-  <div class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-name">Ben Swift</h1>
-        <p class="hero-tagline">researcher, educator, artist, developer</p>
-        <p class="hero-subtitle">Leading <em>Human-Scale AI</em> at the Cybernetic Studio</p>
-      </div>
-    </div>
-  </div>
+<BaseLayout description={description} image={image} phrases={heroPhrases} tallHero>
+  <Fragment slot="masthead">
+    <h1 class="hero-name">Ben Swift</h1>
+    <p class="hero-tagline">researcher, educator, artist, developer</p>
+    <p class="hero-subtitle">Leading <em>Human-Scale AI</em> at the Cybernetic Studio</p>
+  </Fragment>
 
   <div class="features">
     <a href="/blog/" class="feature-card">
@@ -81,13 +77,11 @@ const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
 </BaseLayout>
 
 <style>
-  .hero {
-    margin-bottom: 2rem;
-  }
-
   .hero-name {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: clamp(2.6rem, 1.8rem + 3vw, 3.6rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
     margin: 0;
     color: var(--highlight-color);
   }
@@ -99,7 +93,7 @@ const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
   }
 
   .hero-subtitle {
-    margin: 0.5rem 0 1rem;
+    margin: 0.5rem 0 0;
   }
 
   .features {

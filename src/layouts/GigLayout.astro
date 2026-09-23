@@ -90,8 +90,10 @@ const phrases = [
 ---
 
 <BaseLayout title={title} description={description} phrases={phrases}>
-  <h1 class="page-title">{title}</h1>
-  {gigDate && <p class="post-date">{gigDate}</p>}
+  <Fragment slot="masthead">
+    <h1 class="page-title">{title}</h1>
+    {gigDate && <p class="post-date">{gigDate}</p>}
+  </Fragment>
 
   <dl class="gig-meta">
     {(venue || venue_url) && (

@@ -17,6 +17,8 @@ interface Props {
   atUri?: string
   phrases?: string[]
   heroImage?: ImageMetadata
+  // The home page's taller hero; other pages size it to their masthead.
+  tallHero?: boolean
 }
 
 const {
@@ -28,7 +30,11 @@ const {
   atUri,
   phrases = [...SITE_BASELINE_PHRASES],
   heroImage = defaultHero,
+  tallHero = false,
 } = Astro.props
+
+// Layouts put the page title in the "masthead" slot, which sits over the hero.
+const heroVariant = tallHero ? "tall" : Astro.slots.has("masthead") ? "masthead" : "band"
 
 // WebP, not PNG: the og:image (also twitter:image) is only ever fetched by link
 // unfurlers and reduced-motion users, and WebP is ~35x smaller than PNG here
@@ -61,9 +67,11 @@ const heroFallbackImage = await getImage({
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
-    <HeroCanvas phrases={phrases} fallbackSrc={heroFallbackImage.src} />
     <Nav />
     <main id="main-content" tabindex="-1" data-pagefind-body>
+      <HeroCanvas phrases={phrases} fallbackSrc={heroFallbackImage.src} variant={heroVariant}>
+        <slot name="masthead" />
+      </HeroCanvas>
       <slot />
     </main>
   </body>

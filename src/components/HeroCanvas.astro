@@ -3,14 +3,18 @@ interface Props {
   phrases: string[]
   // Shown instead of the WebGL canvas under prefers-reduced-motion.
   fallbackSrc: string
+  // "tall" for the home page, "masthead" when the slot carries the page
+  // title, "band" for a short strip on pages that set their own heading.
+  variant: "tall" | "masthead" | "band"
 }
 
-const { phrases, fallbackSrc } = Astro.props
+const { phrases, fallbackSrc, variant } = Astro.props
 ---
 
-<div class="hero-slot" aria-hidden="true" data-phrases={JSON.stringify(phrases)}>
+<div class={`hero-slot hero-slot--${variant}`} data-phrases={JSON.stringify(phrases)}>
   <img class="hero-fallback" src={fallbackSrc} alt="" loading="lazy" decoding="async" />
-  <canvas class="hero-canvas"></canvas>
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  {variant !== "band" && <div class="hero-masthead"><slot /></div>}
 </div>
 
 <script>
@@ -18,21 +22,37 @@ const { phrases, fallbackSrc } = Astro.props
 
   const slot = document.querySelector<HTMLElement>(".hero-slot")
   if (slot && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    mountHeroCanvas(slot, JSON.parse(slot.dataset.phrases ?? "[]"))
+    void mountHeroCanvas(slot, JSON.parse(slot.dataset.phrases ?? "[]"))
   }
 </script>
 
 <style>
-  /* Full-bleed band at the hero image's aspect ratio, reserved in the SSR
-     markup so nothing shifts when the canvas starts drawing. */
+  /* Full-bleed masthead at the top of main. Its height is reserved in the SSR
+     markup (and grows with the title), so nothing shifts when the canvas
+     starts drawing. The negative top margin cancels main's padding so the
+     band meets the nav. */
   .hero-slot {
     position: relative;
     overflow: hidden;
+    display: grid;
+    align-content: end;
     width: 100vw;
-    margin: 0 calc(50% - 50vw) 1.5rem;
-    aspect-ratio: 2844 / 1600;
-    max-height: 506px;
+    margin: -1.5rem calc(50% - 50vw) 1.5rem;
     background: #0c0614;
+  }
+
+  .hero-slot--tall {
+    aspect-ratio: 2844 / 1600;
+    min-height: 18rem;
+    max-height: 506px;
+  }
+
+  .hero-slot--masthead {
+    min-height: 15rem;
+  }
+
+  .hero-slot--band {
+    height: 8rem;
   }
 
   .hero-fallback,
@@ -48,6 +68,37 @@ const { phrases, fallbackSrc } = Astro.props
     object-fit: cover;
   }
 
+  /* Darken the bottom of the band so the title reads over the typing. */
+  .hero-slot:has(.hero-masthead)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgb(12 6 20 / 0%) 10%,
+      rgb(12 6 20 / 75%) 55%,
+      rgb(12 6 20 / 92%) 100%
+    );
+    pointer-events: none;
+  }
+
+  /* Aligned with main's content edge at every width. */
+  .hero-masthead {
+    position: relative;
+    z-index: 1;
+    padding-block: 3rem 1.25rem;
+    padding-inline: calc((100% - min(100%, 48rem)) / 2 + 1.5rem);
+    text-shadow: 0 1px 12px rgb(12 6 20 / 80%);
+  }
+
+  .hero-masthead > :global(:first-child) {
+    margin-top: 0;
+  }
+
+  .hero-masthead > :global(:last-child) {
+    margin-bottom: 0;
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .hero-fallback {
       display: none;
@@ -58,5 +109,44 @@ const { phrases, fallbackSrc } = Astro.props
     .hero-canvas {
       display: none;
     }
+  }
+
+  /* In print only the masthead text survives. */
+  @media print {
+    .hero-slot {
+      display: block;
+      width: auto;
+      min-height: 0;
+      height: auto;
+      aspect-ratio: auto;
+      margin: 0;
+      background: none;
+    }
+
+    .hero-slot--band,
+    .hero-fallback,
+    .hero-canvas,
+    .hero-slot::after {
+      display: none;
+    }
+
+    .hero-masthead {
+      padding: 0;
+      text-shadow: none;
+    }
+  }
+
+  /* Set by scripts/generate-hero-images.ts: a bare canvas at the size the
+     og:image heroes have always been captured at. */
+  :global([data-hero-capture]) .hero-slot {
+    height: 506px;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto;
+  }
+
+  :global([data-hero-capture]) .hero-masthead,
+  :global([data-hero-capture]) .hero-slot::after {
+    display: none;
   }
 </style>

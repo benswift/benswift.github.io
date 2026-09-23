@@ -30,7 +30,7 @@ const phrases = [
 ---
 
 <BaseLayout title={title} description={description} phrases={phrases}>
-  {title && <h1 class="page-title">{title}</h1>}
+  {title && <h1 class="page-title" slot="masthead">{title}</h1>}
   <slot />
   <SiteFooter relativePath={relativePath} />
 </BaseLayout>

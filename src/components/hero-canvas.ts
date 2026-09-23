@@ -159,7 +159,12 @@ function randFloat(min: number, max: number) {
  * a fragment shader samples and post-processes (hover glitch, burst sweeps,
  * scanlines, grain, vignette). Runs until the page unloads.
  */
-export function mountHeroCanvas(container: HTMLElement, phrases: string[]) {
+export async function mountHeroCanvas(container: HTMLElement, phrases: string[]) {
+  // Draw nothing until the preloaded mono face is ready, so the first frame is
+  // never set in a fallback that then snaps over. If it fails to load, the
+  // canvas draws in whatever the stack resolves to.
+  await document.fonts.load(buildFontString(METRICS.desktop.fontSize)).catch(() => []);
+
   const glCanvas = container.querySelector<HTMLCanvasElement>(".hero-canvas")!;
   const textCanvas = document.createElement("canvas");
   let ctx: CanvasRenderingContext2D | null = null;

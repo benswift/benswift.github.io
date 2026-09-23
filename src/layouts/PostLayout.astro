@@ -49,8 +49,10 @@ const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])]
   phrases={phrases}
   heroImage={heroImage}
 >
-  <h1 class="page-title">{title}</h1>
-  <p class="post-date">{postDate}</p>
+  <Fragment slot="masthead">
+    <h1 class="page-title">{title}</h1>
+    <p class="post-date">{postDate}</p>
+  </Fragment>
   <TagList tags={tags} />
   <slot />
   {atUri && <div id="juttu-comments"></div>}

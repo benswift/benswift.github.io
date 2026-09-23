@@ -113,13 +113,15 @@ describe.skipIf(!existsSync(distDir))(
       );
     });
 
-    test("hero slot wrapper appears before the nav so SSR reserves its space", () => {
-      const html = readPage("/");
-      const slotPos = html.indexOf('class="hero-slot"');
-      const headerPos = html.indexOf("<header");
-      expect(slotPos).toBeGreaterThan(-1);
-      expect(headerPos).toBeGreaterThan(-1);
-      expect(slotPos).toBeLessThan(headerPos);
+    test("hero is a masthead inside main that carries the page title as text", () => {
+      const html = readPage(
+        "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging/",
+      );
+      const main = html.slice(html.indexOf("<main"));
+      const masthead = main.match(/class="hero-masthead[^"]*"[^>]*>([\s\S]*?)<\/div>/)?.[1] ?? "";
+      expect(html.indexOf("<header")).toBeLessThan(html.indexOf("<main"));
+      expect(main).toContain('class="hero-slot');
+      expect(masthead).toMatch(/<h1[^>]*>AT-URIs as persistent identifiers/);
     });
 
     test("hero ships its canvas, phrases and reduced-motion image in the static HTML", () => {

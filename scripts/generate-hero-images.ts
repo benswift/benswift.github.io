@@ -91,6 +91,9 @@ async function main() {
       await ab(["open", url]);
       await ab(["wait", "--load", "networkidle"]);
       await ab(["wait", ".hero-canvas"]);
+      // Drop the masthead title and resize to the capture band (see the
+      // [data-hero-capture] rules in HeroCanvas.astro) before the canvas settles.
+      await ab(["eval", "document.documentElement.dataset.heroCapture = ''"]);
       await ab(["wait", String(SETTLE_MS)]);
       await ab(["screenshot", ".hero-canvas", tmpPng]);
       await execFileP("avifenc", ["-s", "0", "-q", "90", "-y", "444", "-j", "all", tmpPng, out]);
