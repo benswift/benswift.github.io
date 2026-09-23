@@ -15,7 +15,7 @@
     "dev": "astro dev",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "gen:default-hero": "pnpm exec tsx scripts/generate-default-hero.ts",
+    "gen:default-hero": "pnpm exec tsx scripts/generate-hero-images.ts --default",
     "gen:hero-images": "pnpm exec tsx scripts/generate-hero-images.ts",
     "lint": "oxlint && pnpm lint:css",
     "lint:css": "stylelint \"src/**/*.css\" --allow-empty-input",

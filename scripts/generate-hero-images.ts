@@ -11,6 +11,7 @@ const execFileP = promisify(execFile);
 const PREVIEW_PORT = 4399;
 const PREVIEW_BASE = `http://localhost:${PREVIEW_PORT}`;
 const HEROES_DIR = path.resolve(import.meta.dirname, "..", "src/assets/heroes");
+const DEFAULT_HERO = path.resolve(import.meta.dirname, "..", "src/assets/og-default.avif");
 const BLOG_DIR = path.resolve(import.meta.dirname, "..", "src/content/blog");
 const SETTLE_MS = 4000;
 
@@ -41,19 +42,24 @@ async function main() {
 
   // By default generate heroes only for posts that don't have one yet, so new
   // posts get a hero without clobbering existing art on unrelated content edits.
-  // Pass --force to regenerate every post (e.g. after changing the canvas).
+  // Pass --force to regenerate every post (e.g. after changing the canvas), or
+  // --default to regenerate the site-wide fallback hero from the home page.
   const force = process.argv.includes("--force") || process.argv.includes("--all");
-  const posts = discoverPosts(BLOG_DIR);
-
-  const workList = force
-    ? posts
-    : posts.filter((p) => !fs.existsSync(path.join(HEROES_DIR, `${pathToRkey(p.path)}.avif`)));
-
-  console.log(
-    force
-      ? `Regenerating all ${workList.length} hero(es).`
-      : `${workList.length} post(s) missing a hero (${posts.length - workList.length} already have one).`,
-  );
+  const workList: { path: string; out: string }[] = [];
+  if (process.argv.includes("--default")) {
+    workList.push({ path: "", out: DEFAULT_HERO });
+  } else {
+    const posts = discoverPosts(BLOG_DIR).map((p) => ({
+      path: p.path,
+      out: path.join(HEROES_DIR, `${pathToRkey(p.path)}.avif`),
+    }));
+    workList.push(...(force ? posts : posts.filter((p) => !fs.existsSync(p.out))));
+    console.log(
+      force
+        ? `Regenerating all ${workList.length} hero(es).`
+        : `${workList.length} post(s) missing a hero (${posts.length - workList.length} already have one).`,
+    );
+  }
 
   if (workList.length === 0) {
     console.log("Nothing to do.");
@@ -77,11 +83,9 @@ async function main() {
     await ab(["wait", ".hero-canvas"]);
     await ab(["wait", String(SETTLE_MS)]);
 
-    for (const post of workList) {
-      const slug = pathToRkey(post.path);
-      const url = `${PREVIEW_BASE}${post.path}/`;
-      const tmpPng = path.join(HEROES_DIR, `${slug}.png`);
-      const out = path.join(HEROES_DIR, `${slug}.avif`);
+    for (const { path: pagePath, out } of workList) {
+      const url = `${PREVIEW_BASE}${pagePath}/`;
+      const tmpPng = out.replace(/\.avif$/, ".png");
       console.log(`→ ${url} → ${out}`);
 
       await ab(["open", url]);

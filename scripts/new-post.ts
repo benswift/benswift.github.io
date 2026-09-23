@@ -2,7 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { slugify } from "../src/utils/slugify";
+import { slugify } from "./lib/slugify";
 
 function main() {
   const args = process.argv.slice(2);
