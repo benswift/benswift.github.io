@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content"
 import PageLayout from "../../layouts/PageLayout.astro"
-import { formatDate, parseDate } from "../../utils/date"
+import { formatDate } from "../../utils/date"
 import { livecodingCollection } from "../../data/livecoding-collection"
 
 const allGigs = await getCollection("livecoding")
@@ -19,7 +19,7 @@ const gigs = allGigs
       title: gig.data.title,
       url: `/livecoding/${slug}/`,
       dateStr,
-      dateFormatted: formatDate(parseDate(dateStr)),
+      dateFormatted: formatDate(new Date(dateStr)),
       venue: gig.data.venue,
       slug,
     }

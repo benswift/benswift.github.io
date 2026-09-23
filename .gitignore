@@ -1,9 +1,7 @@
 # Astro
 dist/
 .astro/
-.vitepress/
 
-.unlighthouse
 .link-checker
 
 # Python
@@ -12,7 +10,6 @@ __pycache__/
 
 # Node
 node_modules/
-package-lock.json
 
 # Secrets
 .env*
@@ -26,10 +23,6 @@ dogfood-output/
 
 # Generated files
 public/site-content.txt
-svg_gen_output/
-/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.docx
-/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.pdf
-/assets/documents/ccc-curriculum-design-workshop/ccc-assessment-task.tex
 
 # Local working copies of the World Cup poster (canonical versions live in the
 # blog post and public/assets/documents/)

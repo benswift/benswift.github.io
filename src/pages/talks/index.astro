@@ -4,7 +4,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { parse as parseYaml } from "yaml"
 import PageLayout from "../../layouts/PageLayout.astro"
-import { formatDate, parseDate } from "../../utils/date"
+import { formatDate } from "../../utils/date"
 
 // Naming: this index lives at /talks/ while individual decks live at
 // /decks/<slug>/. That split is intentional, not an oversight. /talks/ is the
@@ -44,7 +44,7 @@ const decks = deckMeta
       slug,
       title: t?.title ?? fm.title ?? slug,
       dateStr,
-      dateFormatted: formatDate(parseDate(dateStr)),
+      dateFormatted: formatDate(new Date(dateStr)),
       event: t?.event ?? fm.event,
     }
   })
@@ -57,7 +57,7 @@ const archive = allTalks
     const dateStr = toDateStr(t.data.date)
     return {
       title: t.data.title,
-      dateFormatted: formatDate(parseDate(dateStr)),
+      dateFormatted: formatDate(new Date(dateStr)),
       dateStr,
       event: t.data.event,
       slides: t.data.slides,

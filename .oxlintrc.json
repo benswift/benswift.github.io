@@ -69,7 +69,6 @@
     "dist/",
     ".astro/",
     "**/*.astro",
-    "public/assets/js/Winwheel.js",
     "**/*.svelte" // this repo deliberately ignores svelte files in oxlint
   ]
 }

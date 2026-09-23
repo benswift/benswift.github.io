@@ -4,7 +4,7 @@ import BaseLayout from "./BaseLayout.astro"
 import TagList from "../components/TagList.astro"
 import CitePost from "../components/CitePost.astro"
 import SiteFooter from "../components/SiteFooter.astro"
-import { formatDate, parseDate } from "../utils/date"
+import { formatDate } from "../utils/date"
 import { getHeroImage } from "../utils/hero-image"
 import { SITE_BASELINE_PHRASES } from "../data/hero"
 
@@ -32,7 +32,7 @@ const {
   heroImage: heroImageOverride,
 } = Astro.props
 
-const postDate = formatDate(parseDate(date), true)
+const postDate = formatDate(new Date(date), true)
 const postUrl = `https://benswift.me${Astro.url.pathname}`
 
 const heroSlug = `${date}-${slug}`

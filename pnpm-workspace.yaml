@@ -9,11 +9,3 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - astro
   - "@astrojs/*"
-  - p5
-
-# Dependabot security pins. Always use a floating ">=X" replacement, never an
-# exact version: an exact pin freezes the dep at that version forever, so the
-# next advisory lands on a dep the pin itself is holding back. Remove each entry
-# once parent deps move past the vulnerable range.
-overrides:
-  "yaml@<2.8.3": ">=2.8.3"
