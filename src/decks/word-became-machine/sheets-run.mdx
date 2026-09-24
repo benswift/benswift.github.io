@@ -5,13 +5,10 @@ a page of **token pairs** --- a word, and the word before it
 ![bg](./assets/bg-cutouts-overview.avif)
 
 ```notes
-Hold one up: a sheet of token pairs. The boxed token is the word that came before; the one beside it is what followed it, somewhere in the text. Mostly words, some punctuation. Every word keeps the same colour wherever it appears, so you scan by colour and confirm by reading.
-
-Say it once and move on: a token is one word or one punctuation mark. The role-mapping slide is where it sticks.
-
-The shuffle is worth naming: in text order these pages would just be the book with boxes drawn round it, and you'd read it. Shuffled, no page says anything. Nobody here is holding a story.
-
-Ten seconds to scan the sheet, then eyes up.
+- hold one up: boxed token = the word before, beside it = what followed; colour per word
+- a token is one word or punctuation mark (say once, move on)
+- shuffled, so nobody's holding a story
+- ten seconds to scan, then eyes up
 ```
 
 ---
@@ -26,13 +23,10 @@ Ten seconds to scan the sheet, then eyes up.
 4. I **write it down**, and we go again
 
 ```notes
-Walk it once, slowly. Reading it off the screen is fine.
-
-Step 2: one hand each. More than one match? Go with the first one you spot.
-
-Step 3 is the one to labour, briefly: I pick at random --- not whoever's fastest, because that samples whoever reads quickest rather than the text. Picking at random is what makes this work like the model. Don't explain why yet; it comes up again during the run.
-
-Then the seed: someone near the front, sheet in hand, reads out any one pair, boxed word first. It matters that it came off a sheet rather than out of your head --- the sheets supply the first two words as well as every word after them. If their pair is an odd one (a full stop, a name that appears once), take it anyway: a thin first round is a real property of the model, not a failure. It can't dead-end on you, so you never need a second volunteer.
+- walk it once, slowly
+- one hand each; multiple matches, go with the first
+- **random** pick, not fastest --- that's what makes it the model
+- seed: someone reads any pair off their sheet, boxed word first; take whatever they give
 ```
 
 ---
@@ -51,13 +45,11 @@ it.
 <Timer minutes={5} overlay />
 
 ```notes
-Shift-W, write the volunteer's two words, call out the second of them, go. Five minutes, 12--15 tokens, write BIG for the back of the room. No commentary between hands going up and a word landing on the board.
-
-Narrate two things, once each, without stopping the flow. The hands are the distribution: call a common word and a forest goes up; call a rare one and you get two. Nobody here has been taught weighted sampling and everyone's doing it anyway --- the number of hands is how often that continuation happens in the text. (Pedant's footnote, only if a pedant asks: someone holding several matches for one context raises one hand, which flattens the busiest words slightly.) And the choosing is a coin toss: when five hands are up, the four I don't pick were all real continuations. Different pick, different sentence. Same reason the "regenerate" button gives a different answer.
-
-Hands will go up every round. Every distinct token appears as a boxed word somewhere, so there is no word you can call that has nothing following it --- don't plan a "running dry" beat. The one way nobody's hand goes up is an empty seat: that sheet went home with someone, and its pairs are simply gone. Say exactly that, and reseed. Reseed from a common word (`the`, `he`, `Word`); avoid restarting from a full stop, or the first thing everyone does is argue about punctuation.
-
-Stop while they still want more, around 15 tokens. Read the sentence back.
+- Shift-W (annotation), NOT W; write the two seed words BIG, call the second, go
+- 5 min, 12--15 tokens, no commentary between hands and word
+- once each: hands are the distribution (common word = forest, rare = two); the pick is a coin toss (= regenerate button)
+- empty seat means those pairs are gone: say so, reseed from `the`/`he`/`Word`, not a full stop
+- stop while they want more; read it back
 ```
 
 ---
@@ -69,7 +61,7 @@ we just ran a **language model**
 ![bg](./assets/bg-div-reception.avif)
 
 ```notes
-Say it flatly and let it sit. That was the actual mechanism, just slow enough and small enough to see.
+- say it flatly and let it sit: the actual mechanism, slow and small enough to see
 ```
 
 ---
@@ -89,7 +81,7 @@ my random pick → **sampling**
 the sentence I wrote → **generation**
 
 ```notes
-This is the jargon that makes the field sound out of reach, and now everyone has something physical for every term. Go along the list at a fair clip --- the point is the mapping, not a definition of each term.
-
-Token: one word or one punctuation mark, which is why the full stops were out there getting picked like everything else. (Only if it comes up: a real model chops rarer words into pieces, which is why it can spell a word it has never seen.) Parameters and weights are the same thing under two names; you'll hear both. When a researcher says a model has a trillion parameters, they mean this: a very large pile of the thing on your lap. Between you, you're holding 1,266 of them --- say it.
+- jargon now has something physical behind it; go at a fair clip
+- parameters = weights; "a trillion parameters" = a big pile of what's on your lap
+- say it: between you, you're holding 1,266 of them
 ```

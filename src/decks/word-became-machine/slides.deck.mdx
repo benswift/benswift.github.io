@@ -22,7 +22,7 @@ import "./deck.css";
 looking inside a language model, by becoming one
 
 ```notes
-Holding slide. Straight to who I am.
+- holding slide, straight to who I am
 ```
 
 ---
@@ -41,11 +41,10 @@ these days: **language models**, building software with them, and teaching how
 they work
 
 ```notes
-Twenty years in AI and machine learning research, at the ANU. A Christian for longer than that --- my whole life.
-
-What I work on now is language models: what they're good for, especially in software development, which is where I use them all day. And how to teach both experts and complete novices how they actually work, because we can't have a decent argument about the opportunities and the dangers of a thing we can't see inside.
-
-So that's the plan: first we look inside one, together. Then I want to tell you what it's like to work with them.
+- 20 years AI research at ANU; Christian my whole life
+- now: language models, building software with them, teaching how they work
+- can't argue well about the dangers of a thing we can't see inside
+- plan: look inside one together, then what it's like to work with them
 ```
 
 ---
@@ -53,11 +52,9 @@ So that's the plan: first we look inside one, together. Then I want to tell you 
 ![bg](./assets/bg-two-stories.avif)
 
 ```notes
-Hands up: used one this week. Keep them up if you could explain to a ten-year-old what it did. Most hands come down.
-
-SAY: one story says it's basically a mind. The other says it's just autocomplete.
-
-They sound like opposites, but they do the same job: whether it's beyond you or beneath you, you don't need to look inside. I'm not going to pick one. We're going to look inside instead.
+- hands up: used one this week; keep them up if you could explain it to a ten-year-old
+- "basically a mind" vs "just autocomplete" --- both let you skip looking inside
+- not picking one; we're going to look inside
 ```
 
 ---
@@ -70,11 +67,9 @@ we are a **language model**
 ![bg](./assets/bg-machine-interior-wide.avif)
 
 ```notes
-House lights up, sheets go out. This isn't a diagram of what's inside a model; for the next few minutes, we are what's inside.
-
-Take one and pass the rest along; every sheet needs to end up in someone's hand. Twenty-two sheets, so in a small room some people hold two --- that's fine, two hands.
-
-Print from benswift.me/assets/documents/word-became-machine/john-1-bbe-sheets.pdf --- 22 pages, one per participant.
+- lights up, sheets out: we *are* what's inside
+- take one, pass the rest; every sheet in a hand (some hold two)
+- print: benswift.me/assets/documents/word-became-machine/john-1-bbe-sheets.pdf (22 pages)
 ```
 
 ---
@@ -90,9 +85,8 @@ the sentence we wrote is in **no gospel**
 ![bg](./assets/bg-chain.avif)
 
 ```notes
-Nobody wrote it: no lookup in a big database of sentences, nobody pulled out their phone and searched. Everything was decided by the token pairs on our collective sheets.
-
-Some of you have already worked out where they came from --- there are some fairly loud proper nouns on those pages. But not, I suspect, which _version_.
+- nobody wrote it: no lookup, no search --- just the pairs on our sheets
+- some have guessed the source; not, I suspect, the *version*
 ```
 
 ---
@@ -104,11 +98,9 @@ Some of you have already worked out where they came from --- there are some fair
 <p class="corpus-quote fragment">“In the beginning was the Word, and the Word was with God, and the Word was God.”<br /><span class="corpus-attribution">John 1:1, King James Version</span></p>
 
 ```notes
-Click the first in and read it out. Let them hear it as an unfamiliar sentence for a beat before the second click lands the one they know.
-
-The Bible in Basic English: S. H. Hooke's translation, New Testament 1941, whole Bible 1949, in Ogden's Basic English --- 850 words, plus 150 for poetry and the specifically biblical vocabulary. A thousand words to say the whole of scripture. The most famous prologue in the canon, and most of you didn't recognise it on the sheets: partly because the pairs were shuffled, and partly because Hooke had swapped the familiar words for plainer ones.
-
-That's the whole corpus: John 1, all fifty-one verses, one translation. Nothing else went in.
+- click BBE in, read it, let it sit unfamiliar; then KJV lands
+- Hooke's Bible in Basic English (1949): ~1,000 words for all of scripture
+- the whole corpus: John 1, 51 verses, one translation
 ```
 
 ---
@@ -125,9 +117,8 @@ sheets
 no single sheet has the whole picture
 
 ```notes
-Every one of the 1,266 word pairs in the chapter was dealt to exactly one sheet. So the model wasn't on my laptop and it wasn't on anyone's page --- for the last five minutes it existed only across all of you. That's literally where the model was.
-
-That's how it works.
+- every pair dealt to exactly one sheet
+- the model wasn't on my laptop or any one page --- it existed only across all of you
 ```
 
 ---
@@ -140,9 +131,9 @@ a machine made of\
 ![bg](./assets/bg-narrative-shaped.avif)
 
 ```notes
-The ones you use are the same kind of thing, a billion times over, looking back over more than one word, and built from very nearly everything anyone has written down. The loop is the same: look at the context, weigh the options, pick one, write it down.
-
-So these are machines made of words. They're made out of what people have written, we speak to them in words, and they answer in words. John 1 is in there, along with everything else. Hold onto that; it comes back at the end.
+- real ones: same loop, a billion times over, longer context, trained on nearly everything written down
+- machines made of words: made from them, spoken to in them, answer in them
+- John 1 is in there; hold onto that for the end
 ```
 
 ---
@@ -155,13 +146,12 @@ by **describing** it
 ![bg](./assets/bg-word-machine.avif)
 
 ```notes
-The website this talk lives on, and the tool that printed your sheets, I built mostly by talking to one of these. I've been writing code for twenty years, in languages where every character is an instruction and the machine does exactly and only what you typed. Now I say what I want, in English, and something interprets it, makes decisions, and builds. I find myself explaining, correcting, trusting, supervising.
-
-The ones I use run that same loop, and they're wired to tools: what they write runs code, changes files, sends things.
-
-It feels like managing people. The centurion would recognise it: "I say to this one, Go, and he goes." But giving orders to people is as old as people. The strange part is that these aren't people. What they are, and whether they're intelligent, is a live argument and I'm not going to settle it from up here. What I can tell you is that this is the first time in my life I've spoken to a part of creation that isn't human, in plain English, and had it understand what I meant well enough to go and do it. Computers have always done what I typed, but only in their language and only to the letter. And if your dog answered back, you'd be surprised. (Hold that thought for Balaam.)
-
-Scripture has a lot of words spoken to things that aren't people. Almost all of them are God's. So here are five verses I've been reading alongside the work, and what the work has felt like next to them.
+- I built this site and the sheet tool mostly by talking to one
+- 20 years of code where the machine does exactly what you typed; now I say it in English and it interprets, decides, builds --- and it runs code, changes files
+- feels like managing people (the centurion), but they aren't people; not settling what they are
+- **land this:** first time in my life I've spoken to a non-human part of creation in plain English and had it understand well enough to act
+- (if your dog answered back --- hold that for Balaam)
+- scripture's words to non-persons are almost all God's → five verses
 ```
 
 ---
@@ -176,13 +166,10 @@ Scripture has a lot of words spoken to things that aren't people. Almost all of 
 ![bg](./assets/bg-witness.avif)
 
 ```notes
-Riff, don't recite. Prompts:
-
-The baseline. The first word in scripture is spoken to no one. There's nobody there to hear it and obey; it's addressed to what isn't anyone, and it happens. Ps 33:9: "he gave the word, and it was done". Ps 148:8: "storm-wind, doing his word". In this book, things that aren't people doing what they're told is what God's speech is like.
-
-The feeling: I say "let there be a login page" and there is one. Nothing in twenty years of programming felt like that; it used to be bricklaying. For twenty years the furthest my words reached into the non-human world was Adam's share: I could name things (Gen 2:19). Now I name a thing and it gets built.
-
-The distance: mine isn't from nothing. It's speech into a world already made, assembled from what millions of other people wrote, and what comes back is often not quite what I meant. Does this deepen my wonder at "and there was light", or make it feel deceptively familiar?
+- baseline: first word in scripture spoken to no one, and it happens (Ps 33:9, 148:8)
+- feeling: "let there be a login page" and there is; used to be bricklaying; Adam could only name (Gen 2:19)
+- distance: not from nothing, built from others' words, often not what I meant
+- deepens wonder, or makes it deceptively familiar?
 ```
 
 ---
@@ -197,13 +184,9 @@ The distance: mine isn't from nothing. It's speech into a world already made, as
 ![bg](./assets/bg-wind-sea.avif)
 
 ```notes
-Riff, don't recite. Prompts:
-
-He "gave strong orders to the wind, and said to the sea, Peace, be at rest." And the disciples' response isn't relief. "Their fear was great." They're more afraid after the storm than during it, because everyone in that boat knows whose orders the sea takes.
-
-The feeling: the first time one of these did what I asked --- properly, a whole working thing from a paragraph of English --- what I felt wasn't quite delight. It was closer to the boat. Things that aren't people aren't supposed to do what they're told.
-
-I've mostly lost that. It's a Tuesday now. I'm not sure losing it is a good sign. What would it be to keep some of the disciples' fear?
+- after the calm, "their fear was great" --- more afraid than during the storm
+- feeling: first time it built a whole thing from a paragraph, it was closer to the boat than delight
+- now it's a Tuesday; what would it be to keep some of the disciples' fear?
 ```
 
 ---
@@ -218,13 +201,10 @@ I've mostly lost that. It's a Tuesday now. I'm not sure losing it is a good sign
 ![bg](./assets/bg-donkey.avif)
 
 ```notes
-Riff, don't recite. Prompts:
-
-Tell it for the laugh. Balaam's donkey stops three times; he beats her three times; "the Lord gave the ass the power of talking", and she asks what she's done to deserve it. And Balaam answers her. He doesn't fall off. He doesn't say "you can talk?" He's straight into the argument: you've made me look stupid, if I had a sword I'd kill you.
-
-The feeling: that's me by about the second week. The first time it talked back I was amazed. Now I argue with it. I've been short with it. I have, more or less, typed Balaam's line. How fast a conversation with something that isn't human stopped being remarkable --- that's the thing I'd have got most wrong if you'd asked me five years ago.
-
-Leave hanging: in a story with a talking donkey, the odd one out is Balaam, who takes it completely in his stride. She even answers him reasonably --- "have I ever done this to you before?" "No." --- and he's still just arguing. I took it in my stride too, after a fortnight. Should I have?
+- tell it for the laugh: Balaam just argues with the talking donkey
+- me by week two: amazed, then arguing, then short with it
+- how fast it stopped being remarkable --- what I'd have got most wrong five years ago
+- leave hanging: Balaam takes it in his stride; so did I. Should I have?
 ```
 
 ---
@@ -239,13 +219,10 @@ Leave hanging: in a story with a talking donkey, the odd one out is Balaam, who 
 ![bg](./assets/bg-rock.avif)
 
 ```notes
-Riff, don't recite. Prompts:
-
-Moses is told to "give orders to the rock" before the people's eyes (v8), and it will give water. A human voice, a non-human thing, by God's gift. What he does instead: "are we to get water for you out of the rock?" --- and hits it twice with the rod. The water comes anyway. And it costs him the promised land.
-
-Two failures, and I recognise both. He reaches for force where he was given a word: the old tool, the one that worked last time (Exodus 17). And he says "we". He speaks as though the power were his.
-
-The feeling: it works whether or not I've got my heart right. The water came out. Nothing in the tool will tell me when I've started saying "we". Which decisions get harder when making gets easier?
+- told to *speak* to the rock (v8); strikes it twice instead, says "we"; water comes anyway; costs him the land
+- two failures: force where he was given a word; claiming the power
+- it works whether or not my heart's right; nothing in the tool says when I've started saying "we"
+- which decisions get harder when making gets easier?
 ```
 
 ---
@@ -260,17 +237,11 @@ and **took a place among us** for a time”
 ![bg](./assets/bg-word-flesh.avif)
 
 ```notes
-Riff, don't recite. Prompts:
-
-The verse you were holding earlier, in pieces, in the translation you were holding it in.
-
-God speaks and there is light; he gives the word and it is done; wind and sea do his orders. And then the Word doesn't send anything. He comes. One body, one town, one span of years. "Took a place among us for a time."
-
-The feeling: my words reach further every month, and I can be in fewer places while more gets done. The direction of John 1:14 is the other way --- toward being somewhere, with someone, at cost. Later in the same gospel, Jesus, "being conscious that the Father had put everything into his hands", gets up from the table and washes feet (13:3--5). Everything in his hands, and that's what he does with them.
-
-The title of this talk runs the other way from this verse. The Word became flesh and took a place among us; we've taken our words and made a machine of them, one that takes no place at all. I don't know what to make of that yet.
-
-I'm learning to speak and have things made, and I don't know yet what that's doing to me. I'd like to know what you make of it.
+- the verse you held in pieces, in the translation you held it in
+- God speaks and things happen; then the Word doesn't send, he *comes*: one body, one town, a span of years
+- my words reach further; I'm in fewer places. John 1:14 runs the other way --- being somewhere, at cost (foot washing, 13:3--5)
+- **land this:** the Word became flesh; we've made our words a machine that takes no place at all
+- I don't know yet what it's doing to me; I'd like to know what you make of it
 ```
 
 ---
@@ -280,5 +251,5 @@ I'm learning to speak and have things made, and I don't know yet what that's doi
 ![qr](https://www.llmsunplugged.org/)
 
 ```notes
-Everything --- the workshops, the printable materials, the tool that made your sheets --- is at that address, free and CC-licensed. Hold here long enough for people to scan it. Take questions from here.
+- everything free and CC-licensed there; hold for scanning, take questions
 ```
