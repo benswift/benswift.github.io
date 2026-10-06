@@ -97,14 +97,12 @@ export default defineConfig({
   fonts: [
     {
       // Self-hosted subsets (Google's served files strip smcp/onum); see
-      // src/assets/fonts/. `optional` only avoids a swap for faces that are
-      // preloaded (BaseLayout preloads both styles): anything else keeps its
-      // fallback for the whole page view.
+      // src/assets/fonts/. BaseLayout preloads both styles so the default
+      // `swap` rarely has anything to swap.
       provider: fontProviders.local(),
       name: "Piazzolla",
       cssVariable: "--font-piazzolla",
       fallbacks: ["Georgia", "serif"],
-      display: "optional",
       options: {
         variants: [
           {
@@ -128,7 +126,6 @@ export default defineConfig({
       name: "Recursive",
       cssVariable: "--font-recursive",
       fallbacks: ["ui-monospace", "SF Mono", "Consolas", "monospace"],
-      display: "optional",
       options: {
         variants: [
           {
