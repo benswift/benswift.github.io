@@ -60,13 +60,16 @@ export default defineConfig({
   security: {
     // Emitted as a <meta> tag per page (GitHub Pages can't set headers, so
     // frame-ancestors is out of reach). Astro hashes its own scripts into
-    // script-src; jsDelivr serves the pinned juttu comment embed. style-src
+    // script-src; jsDelivr serves the pinned juttu comment embed and
+    // cloudflareinsights the Web Analytics beacon Cloudflare injects. style-src
     // keeps 'unsafe-inline' for Shiki's per-token style attributes and the
     // <style> blocks inside hand-written SVGs in posts. The wider connect/
     // worker/frame sources are for the on-device Gemma demo (Hugging Face
     // model fetch, MediaPipe wasm worker) and YouTube/Vimeo embeds.
     csp: {
-      scriptDirective: { resources: ["'self'", "https://cdn.jsdelivr.net"] },
+      scriptDirective: {
+        resources: ["'self'", "https://cdn.jsdelivr.net", "https://static.cloudflareinsights.com"],
+      },
       styleDirective: { resources: ["'self'", "'unsafe-inline'"] },
       directives: [
         "default-src 'self'",
