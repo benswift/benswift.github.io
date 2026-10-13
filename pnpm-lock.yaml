@@ -21,8 +21,8 @@ importers:
         specifier: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#astro-theme-anu@v0.9.6&path:/packages/astro-theme-anu
         version: git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#61a8ae92c14ea5f6a5b8d59fa803ecbe252ef01b&path:/packages/astro-theme-anu(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))
       astro-theme-university:
-        specifier: github:ANUcybernetics/astro-theme-university#v0.18.0
-        version: https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/9c46f93c9a28254c3fac154a4c62027160c122af(@astrojs/markdown-satteri@0.4.2)(@iconify-json/iconoir@1.2.11)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(astromotion@https://codeload.github.com/ANUcybernetics/astromotion/tar.gz/2458df880b31351915c259f2f2fa4f89325b0243(@astrojs/mdx@8.0.2(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@astrojs/markdown-satteri@0.4.2)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1)))(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(puppeteer-core@25.11.0(yauzl@2.10.0))(supports-color@10.2.2))(lightningcss@1.33.0)(pagefind@1.5.2)(supports-color@10.2.2)
+        specifier: github:ANUcybernetics/astro-theme-university#v0.19.0
+        version: https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/8281109dd3ca6d44838f8c83f59c66abf10f4aeb(@astrojs/markdown-satteri@0.4.2)(@iconify-json/iconoir@1.2.11)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(astromotion@https://codeload.github.com/ANUcybernetics/astromotion/tar.gz/2458df880b31351915c259f2f2fa4f89325b0243(@astrojs/mdx@8.0.2(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@astrojs/markdown-satteri@0.4.2)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1)))(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(puppeteer-core@25.11.0(yauzl@2.10.0))(supports-color@10.2.2))(lightningcss@1.33.0)(pagefind@1.5.2)(supports-color@10.2.2)
       astromotion:
         specifier: github:ANUcybernetics/astromotion#v0.34.4
         version: https://codeload.github.com/ANUcybernetics/astromotion/tar.gz/2458df880b31351915c259f2f2fa4f89325b0243(@astrojs/mdx@8.0.2(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@astrojs/markdown-satteri@0.4.2)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1)))(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(puppeteer-core@25.11.0(yauzl@2.10.0))(supports-color@10.2.2)
@@ -1665,18 +1665,21 @@ packages:
     peerDependencies:
       astro: ^7.3.1
 
-  astro-theme-university@https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/9c46f93c9a28254c3fac154a4c62027160c122af:
-    resolution: {gitHosted: true, integrity: sha512-OzNQQ6LQ8MAUurZ0dNEKbjn41DniYFagbtL1L44vh8kQ7ejjHtAC62XF2lfGuiKLfkN34DdEN84uzrtxEbWYjQ==, tarball: https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/9c46f93c9a28254c3fac154a4c62027160c122af}
-    version: 0.18.0
+  astro-theme-university@https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/8281109dd3ca6d44838f8c83f59c66abf10f4aeb:
+    resolution: {gitHosted: true, integrity: sha512-cFOhLEFH1rBsu0ce1+rBBHP4cg2F5mL/rlRu5qPWw7oQ++V80n+kR+0XNnB4E98/EoncAz6Ap9lEbTQDYNcVsQ==, tarball: https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/8281109dd3ca6d44838f8c83f59c66abf10f4aeb}
+    version: 0.19.0
     engines: {node: '>=24'}
     peerDependencies:
       '@iconify-json/iconoir': ^1.2.0
       astro: ^7.0.0
       astromotion: '>=0.1.0'
+      emdash: '>=1.0.0'
       lightningcss: ^1.32.0
       pagefind: ^1.0.0
     peerDependenciesMeta:
       astromotion:
+        optional: true
+      emdash:
         optional: true
       pagefind:
         optional: true
@@ -5298,7 +5301,7 @@ snapshots:
     dependencies:
       astro: 7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1)
 
-  astro-theme-university@https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/9c46f93c9a28254c3fac154a4c62027160c122af(@astrojs/markdown-satteri@0.4.2)(@iconify-json/iconoir@1.2.11)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(astromotion@https://codeload.github.com/ANUcybernetics/astromotion/tar.gz/2458df880b31351915c259f2f2fa4f89325b0243(@astrojs/mdx@8.0.2(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@astrojs/markdown-satteri@0.4.2)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1)))(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(puppeteer-core@25.11.0(yauzl@2.10.0))(supports-color@10.2.2))(lightningcss@1.33.0)(pagefind@1.5.2)(supports-color@10.2.2):
+  astro-theme-university@https://codeload.github.com/ANUcybernetics/astro-theme-university/tar.gz/8281109dd3ca6d44838f8c83f59c66abf10f4aeb(@astrojs/markdown-satteri@0.4.2)(@iconify-json/iconoir@1.2.11)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(astromotion@https://codeload.github.com/ANUcybernetics/astromotion/tar.gz/2458df880b31351915c259f2f2fa4f89325b0243(@astrojs/mdx@8.0.2(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@astrojs/markdown-satteri@0.4.2)(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1)))(astro@7.3.4(@astrojs/markdown-remark@7.3.1(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@24.13.3)(tsx@4.23.15)(yaml@2.9.1))(puppeteer-core@25.11.0(yauzl@2.10.0))(supports-color@10.2.2))(lightningcss@1.33.0)(pagefind@1.5.2)(supports-color@10.2.2):
     dependencies:
       '@astro-community/astro-embed-youtube': 0.5.10
       '@astrojs/markdown-remark': 7.3.1(supports-color@10.2.2)
@@ -5317,6 +5320,7 @@ snapshots:
       remark-custom-heading-id: 2.0.0
       remark-directive: 4.0.0(supports-color@10.2.2)
       remark-smartypants: 3.0.3
+      shiki: 4.4.3
       unist-util-visit: 5.1.0
       yaml: 2.9.1
     optionalDependencies:
