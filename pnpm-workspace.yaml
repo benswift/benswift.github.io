@@ -9,3 +9,9 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - astro
   - "@astrojs/*"
+
+# Transitive security floors (pnpm audit). @atproto/* still declares zod ^3,
+# which has no patched release; revisit once it moves to zod 4.
+overrides:
+  fast-uri: ">=3.1.9"
+  zod: ">=4.6.6"
