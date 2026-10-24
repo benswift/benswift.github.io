@@ -93,7 +93,8 @@ APPLESCRIPT
   [ "$target" = png ] && filter="png:draw_png_Export"
   soffice --headless --convert-to "${filter:-pdf}" --outdir "$work" \
     -env:UserInstallation="file://$work/lo" "$src" >/dev/null 2>&1 || true
-  local local_out="$work/$(basename "${src%.*}").$target"
+  local local_out
+  local_out="$work/$(basename "${src%.*}").$target"
   if [ -s "$local_out" ]; then
     mv "$local_out" "$outfile"
     return 0
