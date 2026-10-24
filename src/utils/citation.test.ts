@@ -117,4 +117,9 @@ describe("gigToBibtex", () => {
     const bibtex = gigToBibtex({ ...gig, title: "ACMC'22 Evening Concert #1", artists: [] });
     expect(bibtex).toContain("{{ACMC'22 Evening Concert \\#1}}");
   });
+
+  it("escapes backslashes in the title", () => {
+    const bibtex = gigToBibtex({ ...gig, title: "A\\B 50%", artists: [] });
+    expect(bibtex).toContain("{{A\\\\B 50\\%}}");
+  });
 });

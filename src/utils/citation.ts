@@ -43,9 +43,9 @@ function bibtexName(name: string): string {
   return `${family}, ${parts.join(" ")}`;
 }
 
-/** Escape the BibTeX special characters that show up in titles/venues. */
+/** Escape the BibTeX special characters (including backslash) that show up in titles/venues. */
 function bibtexEscape(s: string): string {
-  return s.replace(/([&%#_$])/g, "\\$1");
+  return s.replace(/([\\&%#_$])/g, "\\$1");
 }
 
 export interface GigCitation {
