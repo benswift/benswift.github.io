@@ -61,7 +61,7 @@ describe.skipIf(!existsSync(distDir))("Content Security Policy (security guide)"
         html.match(/<meta[^>]+http-equiv="Content-Security-Policy"[^>]+content="([^"]+)"/i)?.[1] ??
         "";
       const scriptSrc = csp.match(/script-src([^;]*)/)?.[1] ?? "";
-      for (const [, attrs, body] of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
+      for (const [, attrs, body] of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)) {
         // External scripts, JSON-LD and speculation rules aren't executed as
         // inline script, so script-src hashes don't apply to them.
         if (/\bsrc=|type="application\/(ld\+)?json"/.test(attrs!) || !body!.trim()) continue;
