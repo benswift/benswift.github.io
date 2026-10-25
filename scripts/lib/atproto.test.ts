@@ -68,6 +68,8 @@ describe("buildPublicationRecord", () => {
       },
     });
     expect(record.basicTheme).toEqual({
+      // The PDS validates the theme ref and rejects it without its $type.
+      $type: "site.standard.theme.basic",
       background: { $type: "site.standard.theme.color#rgb", r: 28, g: 26, b: 29 },
       foreground: { $type: "site.standard.theme.color#rgb", r: 224, g: 224, b: 224 },
       accent: { $type: "site.standard.theme.color#rgb", r: 190, g: 46, b: 221 },

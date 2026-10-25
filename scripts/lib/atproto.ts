@@ -115,6 +115,7 @@ export function buildPublicationRecord(
   }
   if (pub.basicTheme) {
     record.basicTheme = {
+      $type: "site.standard.theme.basic",
       background: themeColor(pub.basicTheme.background),
       foreground: themeColor(pub.basicTheme.foreground),
       accent: themeColor(pub.basicTheme.accent),
