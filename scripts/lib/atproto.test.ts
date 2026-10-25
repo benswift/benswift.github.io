@@ -1,11 +1,33 @@
 import { describe, expect, it } from "vitest";
-import { pathToRkey } from "./posts";
-import { buildDocumentRecord, buildPublicationRecord } from "./atproto";
+import { deterministicTid, pathToRkey, pathToSlugKey } from "./posts";
+import { buildDocumentRecord, buildPublicationRecord, PUBLICATION_RKEY } from "./atproto";
+
+// atproto TID syntax: 13 base32-sortable chars, the first limited so the top bit is 0.
+const TID = /^[234567abcdefghij][234567abcdefghijklmnopqrstuvwxyz]{12}$/;
+
+/** Decode a TID's timestamp (microseconds since the epoch) to a YYYY-MM-DD date. */
+function tidDate(tid: string): string {
+  let n = 0n;
+  for (const c of tid) n = n * 32n + BigInt("234567abcdefghijklmnopqrstuvwxyz".indexOf(c));
+  return new Date(Number(n >> 10n) / 1000).toISOString().slice(0, 10);
+}
 
 describe("atproto rkey determinism", () => {
-  it("produces valid rkey characters only", () => {
-    const rkey = pathToRkey("/blog/2026/02/18/my-post");
-    expect(rkey).toMatch(/^[A-Za-z0-9._:~-]+$/);
+  it("produces a valid TID, as the site.standard.document lexicon requires", () => {
+    expect(pathToRkey("/blog/2026/02/18/my-post")).toMatch(TID);
+  });
+
+  it("timestamps the TID on the post's date", () => {
+    expect(tidDate(pathToRkey("/blog/2026/02/18/my-post"))).toBe("2026-02-18");
+  });
+
+  it("gives the publication a fixed valid TID", () => {
+    expect(PUBLICATION_RKEY).toMatch(TID);
+    expect(PUBLICATION_RKEY).toBe(deterministicTid("2026-02-19", "site.standard.publication"));
+  });
+
+  it("keeps the date-slug key for hero filenames and legacy records", () => {
+    expect(pathToSlugKey("/blog/2026/02/18/my-post")).toBe("2026-02-18-my-post");
   });
 
   it("is idempotent", () => {

@@ -1,4 +1,5 @@
 import path from "node:path";
+import { pathToRkey } from "../../scripts/lib/posts";
 import { type AtprotoState, readState } from "../../scripts/lib/state";
 
 let cachedState: AtprotoState | null | undefined;
@@ -21,6 +22,6 @@ export function getAtUri(postPath: string): string | undefined {
   if (!match) return undefined;
 
   const [, year, month, day, slug] = match;
-  const rkey = `${year}-${month}-${day}-${slug}`;
+  const rkey = pathToRkey(`/blog/${year}/${month}/${day}/${slug}`);
   return `at://${state.did}/site.standard.document/${rkey}`;
 }

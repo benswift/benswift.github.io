@@ -8,14 +8,14 @@ describe("atproto build-time helpers", () => {
     const uri = getAtUri(
       "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging",
     );
-    expect(uri).toMatch(
-      /^at:\/\/did:[a-z0-9:]+\/site\.standard\.document\/2026-02-19-at-uris-as-persistent-identifiers-for-scholarly-blogging$/,
-    );
+    expect(uri).toMatch(/^at:\/\/did:[a-z0-9:]+\/site\.standard\.document\/[2-7a-z]{13}$/);
   });
 
   it("exposes the publication AT-URI for the rel link tag", () => {
     const uri = getPublicationAtUri();
-    expect(uri).toMatch(/^at:\/\/did:[a-z0-9:]+\/site\.standard\.publication\/self$/);
+    // Either the legacy `self` or the TID rkey, depending on whether the
+    // committed state predates the TID migration.
+    expect(uri).toMatch(/^at:\/\/did:[a-z0-9:]+\/site\.standard\.publication\/[2-7a-z]+$/);
   });
 
   it("document and publication URIs share the same DID", () => {

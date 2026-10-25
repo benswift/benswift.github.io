@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import { AtpAgent, RichText } from "@atproto/api";
 import sharp from "sharp";
+import { deterministicTid } from "./posts";
 
 /** A record's AT-URI paired with the CID of its exact contents. */
 export interface StrongRef {
@@ -87,6 +88,7 @@ export interface AtprotoClient {
   uploadImage(sourcePath: string): Promise<unknown | undefined>;
   ensurePublication(pub: PublicationRecord): Promise<StrongRef>;
   putDocument(rkey: string, doc: DocumentRecord): Promise<StrongRef>;
+  deleteDocument(rkey: string): Promise<void>;
   createSkeet(input: SkeetInput): Promise<SkeetResult>;
   listRecommends(): Promise<RecommendEntry[]>;
   createRecommend(documentUri: string): Promise<void>;
@@ -152,6 +154,12 @@ export function buildDocumentRecord(doc: DocumentRecord): Record<string, unknown
 
 const RECOMMEND_COLLECTION = "site.standard.graph.recommend";
 
+/**
+ * The lexicon requires TID rkeys, so the publication gets a fixed TID seeded
+ * from its first publish date rather than the old `self`.
+ */
+export const PUBLICATION_RKEY = deterministicTid("2026-02-19", "site.standard.publication");
+
 export async function createClient(
   service: string,
   identifier: string,
@@ -185,7 +193,7 @@ export async function createClient(
       const res = await agent.com.atproto.repo.putRecord({
         repo: did,
         collection: "site.standard.publication",
-        rkey: "self",
+        rkey: PUBLICATION_RKEY,
         record: buildPublicationRecord(pub, iconBlob),
       });
       return { uri: res.data.uri, cid: res.data.cid };
@@ -199,6 +207,14 @@ export async function createClient(
         record: buildDocumentRecord(doc),
       });
       return { uri: res.data.uri, cid: res.data.cid };
+    },
+
+    async deleteDocument(rkey: string): Promise<void> {
+      await agent.com.atproto.repo.deleteRecord({
+        repo: did,
+        collection: "site.standard.document",
+        rkey,
+      });
     },
 
     async createSkeet(input: SkeetInput): Promise<SkeetResult> {

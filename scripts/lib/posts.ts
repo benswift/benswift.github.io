@@ -16,11 +16,42 @@ export interface PostData {
   crosspost: boolean;
 }
 
-export function pathToRkey(postPath: string): string {
+/** Date-prefixed slug (e.g. 2026-02-18-my-post): hero image filenames and the legacy rkeys. */
+export function pathToSlugKey(postPath: string): string {
   const match = postPath.match(/\/blog\/(\d{4})\/(\d{2})\/(\d{2})\/(.+)/);
   if (!match) throw new Error(`Invalid post path: ${postPath}`);
   const [, year, month, day, slug] = match;
   return `${year}-${month}-${day}-${slug}`;
+}
+
+const TID_ALPHABET = "234567abcdefghijklmnopqrstuvwxyz";
+const MICROS_PER_DAY = 86_400_000_000n;
+
+/**
+ * A valid atproto TID computed from fixed inputs rather than the clock, so a
+ * record's AT-URI stays reproducible from its date and seed. The timestamp is
+ * midnight UTC on `date` plus a hash-derived offset within that day, and the
+ * clock id takes ten more hash bits, so TIDs sort by date and same-day seeds
+ * don't collide.
+ */
+export function deterministicTid(date: string, seed: string): string {
+  const midnight = Date.parse(`${date}T00:00:00Z`);
+  if (Number.isNaN(midnight)) throw new Error(`Invalid date: ${date}`);
+  const hash = BigInt(`0x${createHash("sha256").update(seed).digest("hex").slice(0, 16)}`);
+  const micros = BigInt(midnight) * 1000n + ((hash >> 10n) % MICROS_PER_DAY);
+  let n = (micros << 10n) | (hash & 0x3ffn);
+  let tid = "";
+  for (let i = 0; i < 13; i++) {
+    tid = TID_ALPHABET[Number(n & 31n)] + tid;
+    n >>= 5n;
+  }
+  return tid;
+}
+
+/** The site.standard.document rkey for a post: a TID reproducible from its URL path. */
+export function pathToRkey(postPath: string): string {
+  const slugKey = pathToSlugKey(postPath);
+  return deterministicTid(slugKey.slice(0, 10), postPath);
 }
 
 export function extractPostPath(relativePath: string): string {

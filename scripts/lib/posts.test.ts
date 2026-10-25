@@ -2,19 +2,21 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import { computeHash, discoverPosts, extractPostPath, pathToRkey, toPlainText } from "./posts";
+import { computeHash, discoverPosts, extractPostPath, pathToSlugKey, toPlainText } from "./posts";
 
-describe("pathToRkey", () => {
+describe("pathToSlugKey", () => {
   it("converts a blog post path to a valid rkey", () => {
-    expect(pathToRkey("/blog/2026/02/18/my-post")).toBe("2026-02-18-my-post");
+    expect(pathToSlugKey("/blog/2026/02/18/my-post")).toBe("2026-02-18-my-post");
   });
 
   it("handles slugs with multiple hyphens", () => {
-    expect(pathToRkey("/blog/2024/01/05/a-long-post-title")).toBe("2024-01-05-a-long-post-title");
+    expect(pathToSlugKey("/blog/2024/01/05/a-long-post-title")).toBe(
+      "2024-01-05-a-long-post-title",
+    );
   });
 
   it("throws on invalid path", () => {
-    expect(() => pathToRkey("/not/a/blog/path")).toThrow("Invalid post path");
+    expect(() => pathToSlugKey("/not/a/blog/path")).toThrow("Invalid post path");
   });
 });
 

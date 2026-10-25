@@ -3,17 +3,24 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { publish, type PublishConfig } from "./atproto-publish";
-import type {
-  AtprotoClient,
-  DocumentRecord,
-  PublicationRecord,
-  RecommendEntry,
-  SkeetInput,
+import {
+  type AtprotoClient,
+  type DocumentRecord,
+  PUBLICATION_RKEY,
+  type PublicationRecord,
+  type RecommendEntry,
+  type SkeetInput,
 } from "./lib/atproto";
+import { pathToRkey } from "./lib/posts";
+
+const TEST_POST_RKEY = pathToRkey("/blog/2026/02/18/test-post");
+const ANOTHER_POST_RKEY = pathToRkey("/blog/2026/02/18/another-post");
+const PUB_URI = `at://did:plc:test123/site.standard.publication/${PUBLICATION_RKEY}`;
 
 interface MockClient extends AtprotoClient {
   publications: PublicationRecord[];
   documents: Array<{ rkey: string; doc: DocumentRecord }>;
+  deletedDocuments: string[];
   skeets: SkeetInput[];
   recommends: RecommendEntry[];
   deletedRecommends: string[];
@@ -26,6 +33,7 @@ function makeMockClient(did = "did:plc:test123"): MockClient {
     did,
     publications: [],
     documents: [],
+    deletedDocuments: [],
     skeets: [],
     recommends: [],
     deletedRecommends: [],
@@ -39,7 +47,7 @@ function makeMockClient(did = "did:plc:test123"): MockClient {
     },
     async ensurePublication(pub) {
       client.publications.push(pub);
-      return { uri: `at://${did}/site.standard.publication/self`, cid: "pubcid" };
+      return { uri: `at://${did}/site.standard.publication/${PUBLICATION_RKEY}`, cid: "pubcid" };
     },
     async putDocument(rkey, doc) {
       client.documents.push({ rkey, doc });
@@ -47,6 +55,9 @@ function makeMockClient(did = "did:plc:test123"): MockClient {
         uri: `at://${did}/site.standard.document/${rkey}`,
         cid: `doccid${client.documents.length}`,
       };
+    },
+    async deleteDocument(rkey) {
+      client.deletedDocuments.push(rkey);
     },
     async createSkeet(input) {
       client.skeets.push(input);
@@ -66,6 +77,13 @@ function makeMockClient(did = "did:plc:test123"): MockClient {
     },
   };
   return client;
+}
+
+/** Rewrite the state as the pre-TID publisher left it. */
+function makeLegacyState(statePath: string) {
+  const state = JSON.parse(fs.readFileSync(statePath, "utf8"));
+  state.publicationAtUri = "at://did:plc:test123/site.standard.publication/self";
+  fs.writeFileSync(statePath, JSON.stringify(state));
 }
 
 /** The most recent document record written for a given rkey. */
@@ -163,7 +181,7 @@ describe("atproto-publish", () => {
     await publish(client2, config);
 
     expect(client2.documents).toHaveLength(1);
-    expect(client2.documents[0].rkey).toBe("2026-02-18-test-post");
+    expect(client2.documents[0].rkey).toBe(TEST_POST_RKEY);
   });
 
   it("omits updatedAt on first publish and stamps it on later edits", async () => {
@@ -180,7 +198,7 @@ describe("atproto-publish", () => {
 
     const client2 = makeMockClient();
     await publish(client2, config);
-    const doc = lastDoc(client2, "2026-02-18-test-post");
+    const doc = lastDoc(client2, TEST_POST_RKEY);
     expect(doc?.updatedAt).toMatch(/^\d{4}-\d{2}-\d{2}T/);
   });
 
@@ -193,12 +211,12 @@ describe("atproto-publish", () => {
     const client = makeMockClient();
     await publish(client, config);
 
-    const withHero = lastDoc(client, "2026-02-18-test-post");
+    const withHero = lastDoc(client, TEST_POST_RKEY);
     expect(withHero?.coverImage).toEqual({
       $type: "blob",
       source: path.join(config.heroesDir, "2026-02-18-test-post.avif"),
     });
-    const withoutHero = lastDoc(client, "2026-02-18-another-post");
+    const withoutHero = lastDoc(client, ANOTHER_POST_RKEY);
     expect(withoutHero?.coverImage).toBeUndefined();
   });
 
@@ -210,7 +228,7 @@ describe("atproto-publish", () => {
       path.join(config.wellKnownDir, "site.standard.publication"),
       "utf8",
     );
-    expect(wellKnown.trim()).toBe("at://did:plc:test123/site.standard.publication/self");
+    expect(wellKnown.trim()).toBe(PUB_URI);
   });
 
   it("writes state file with correct structure", async () => {
@@ -221,7 +239,7 @@ describe("atproto-publish", () => {
     expect(state).toHaveProperty("did");
     expect(state).toHaveProperty("publicationAtUri");
     expect(state).toHaveProperty("contentHashes");
-    expect(state.publicationAtUri).toBe("at://did:plc:test123/site.standard.publication/self");
+    expect(state.publicationAtUri).toBe(PUB_URI);
   });
 
   describe("bluesky cross-posting", () => {
@@ -278,7 +296,7 @@ describe("atproto-publish", () => {
     it("writes the document before the skeet and sends associatedRefs", async () => {
       config.crossPost = true;
       const client = makeMockClient();
-      const rkey = "2026-02-18-test-post";
+      const rkey = TEST_POST_RKEY;
       await publish(client, config);
 
       // First write has no announcement ref (the skeet doesn't exist yet)...
@@ -293,7 +311,7 @@ describe("atproto-publish", () => {
         `at://${client.did}/site.standard.document/${rkey}`,
       );
       expect(skeet?.associatedRefs?.[1].uri).toBe(
-        `at://${client.did}/site.standard.publication/self`,
+        `at://${client.did}/site.standard.publication/${PUBLICATION_RKEY}`,
       );
       for (const ref of skeet?.associatedRefs ?? []) {
         expect(ref.cid).toBeTruthy();
@@ -305,7 +323,7 @@ describe("atproto-publish", () => {
       const client = makeMockClient();
       await publish(client, config);
 
-      const doc = lastDoc(client, "2026-02-18-test-post");
+      const doc = lastDoc(client, TEST_POST_RKEY);
       expect(doc?.bskyPostRef?.uri).toMatch(/app\.bsky\.feed\.post/);
       expect(doc?.bskyPostRef?.cid).toBeTruthy();
     });
@@ -319,7 +337,7 @@ describe("atproto-publish", () => {
       await publish(client, config);
 
       const skeet = client.skeets.find((s) => s.url.includes("test-post"));
-      const doc = lastDoc(client, "2026-02-18-test-post");
+      const doc = lastDoc(client, TEST_POST_RKEY);
       expect(skeet?.thumb).toEqual(doc?.coverImage);
       // One upload per post: the blob is shared between document and skeet.
       expect(client.uploads).toHaveLength(2);
@@ -329,7 +347,7 @@ describe("atproto-publish", () => {
       config.crossPost = true;
       const client1 = makeMockClient();
       await publish(client1, config);
-      const originalRef = lastDoc(client1, "2026-02-18-test-post")?.bskyPostRef;
+      const originalRef = lastDoc(client1, TEST_POST_RKEY)?.bskyPostRef;
       expect(originalRef).toBeDefined();
 
       fs.writeFileSync(
@@ -341,7 +359,7 @@ describe("atproto-publish", () => {
       await publish(client2, config);
 
       expect(client2.skeets).toHaveLength(0);
-      expect(lastDoc(client2, "2026-02-18-test-post")?.bskyPostRef).toEqual(originalRef);
+      expect(lastDoc(client2, TEST_POST_RKEY)?.bskyPostRef).toEqual(originalRef);
     });
 
     it("does not re-cross-post on a subsequent run", async () => {
@@ -353,6 +371,46 @@ describe("atproto-publish", () => {
       const client2 = makeMockClient();
       await publish(client2, config);
       expect(client2.skeets).toHaveLength(0);
+    });
+  });
+
+  describe("migration from date-slug rkeys", () => {
+    it("re-puts unchanged posts at TID rkeys and deletes their slug-keyed records", async () => {
+      await publish(makeMockClient(), config);
+      makeLegacyState(config.statePath);
+
+      const client = makeMockClient();
+      await publish(client, config);
+
+      expect(client.documents.map((d) => d.rkey).toSorted()).toEqual(
+        [TEST_POST_RKEY, ANOTHER_POST_RKEY].toSorted(),
+      );
+      expect(client.deletedDocuments.toSorted()).toEqual([
+        "2026-02-18-another-post",
+        "2026-02-18-test-post",
+      ]);
+      for (const { doc } of client.documents) {
+        expect(doc.site).toBe(PUB_URI);
+        // A move isn't an edit.
+        expect(doc.updatedAt).toBeUndefined();
+      }
+    });
+
+    it("migrates only once", async () => {
+      await publish(makeMockClient(), config);
+      makeLegacyState(config.statePath);
+      await publish(makeMockClient(), config);
+
+      const client = makeMockClient();
+      await publish(client, config);
+      expect(client.documents).toHaveLength(0);
+      expect(client.deletedDocuments).toHaveLength(0);
+    });
+
+    it("does not delete anything on a fresh publish", async () => {
+      const client = makeMockClient();
+      await publish(client, config);
+      expect(client.deletedDocuments).toHaveLength(0);
     });
   });
 

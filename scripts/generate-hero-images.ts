@@ -4,7 +4,7 @@ import { spawn } from "node:child_process";
 import { setTimeout as delay } from "node:timers/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { discoverPosts, pathToRkey } from "./lib/posts";
+import { discoverPosts, pathToSlugKey } from "./lib/posts";
 
 const execFileP = promisify(execFile);
 
@@ -51,7 +51,7 @@ async function main() {
   } else {
     const posts = discoverPosts(BLOG_DIR).map((p) => ({
       path: p.path,
-      out: path.join(HEROES_DIR, `${pathToRkey(p.path)}.avif`),
+      out: path.join(HEROES_DIR, `${pathToSlugKey(p.path)}.avif`),
     }));
     workList.push(...(force ? posts : posts.filter((p) => !fs.existsSync(p.out))));
     console.log(

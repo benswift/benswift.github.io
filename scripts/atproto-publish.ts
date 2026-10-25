@@ -1,6 +1,6 @@
 import path from "node:path";
 import fs from "node:fs";
-import { discoverPosts, pathToRkey } from "./lib/posts";
+import { discoverPosts, pathToRkey, pathToSlugKey } from "./lib/posts";
 import { type AtprotoState, readState, writeState } from "./lib/state";
 import { isSyndicated, readSyndication, syndicationRef, writeSyndication } from "./lib/syndication";
 import { diffRecommends, readRecommendations } from "./lib/recommendations";
@@ -58,8 +58,8 @@ function skeetText(text: string): string {
 }
 
 /** Cover/thumbnail source: the post's own hero image, falling back to the default OG image. */
-function resolveCoverPath(config: PublishConfig, rkey: string): string {
-  const hero = path.join(config.heroesDir, `${rkey}.avif`);
+function resolveCoverPath(config: PublishConfig, postPath: string): string {
+  const hero = path.join(config.heroesDir, `${pathToSlugKey(postPath)}.avif`);
   return fs.existsSync(hero) ? hero : config.defaultOgPath;
 }
 
@@ -96,6 +96,10 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     showInDiscover: true,
   });
   const pubAtUri = pubRef.uri;
+  // State from before the TID rkeys: every post's document moves from its
+  // date-slug rkey to a TID, so re-put them all and delete the old records.
+  const migratingFromSlugKeys =
+    state?.publicationAtUri.endsWith("/site.standard.publication/self") ?? false;
 
   fs.mkdirSync(config.wellKnownDir, { recursive: true });
   fs.writeFileSync(path.join(config.wellKnownDir, "site.standard.publication"), pubAtUri + "\n");
@@ -104,6 +108,7 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
   let created = 0;
   let updated = 0;
   let unchanged = 0;
+  let migrated = 0;
   let crossPosted = 0;
   let crossPostFailed = 0;
 
@@ -113,12 +118,12 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     const isNew = !(post.path in oldHashes);
     const eligible = config.crossPost && post.crosspost && !isSyndicated(syndication, post.path);
 
-    if (!contentChanged && !eligible) {
+    if (!contentChanged && !eligible && !migratingFromSlugKeys) {
       unchanged++;
       continue;
     }
 
-    const coverImage = await client.uploadImage(resolveCoverPath(config, rkey));
+    const coverImage = await client.uploadImage(resolveCoverPath(config, post.path));
     const doc = {
       title: post.title,
       site: pubAtUri,
@@ -169,6 +174,11 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
       }
     }
 
+    if (migratingFromSlugKeys && !isNew) {
+      await client.deleteDocument(pathToSlugKey(post.path));
+      migrated++;
+    }
+
     if (contentChanged) {
       if (isNew) created++;
       else updated++;
@@ -191,7 +201,7 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     ? `; bluesky: ${crossPosted} cross-posted${crossPostFailed ? `, ${crossPostFailed} failed` : ""}`
     : "";
   console.log(
-    `atproto publish: ${created} new, ${updated} updated, ${unchanged} unchanged${bluesky}`,
+    `atproto publish: ${created} new, ${updated} updated, ${unchanged} unchanged${migrated ? `, ${migrated} moved to TID rkeys` : ""}${bluesky}`,
   );
 }
 
