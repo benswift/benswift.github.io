@@ -141,6 +141,19 @@ repo, whatever), you'd get different rkeys and different AT-URIs. Any citations
 pointing to the old URIs would break. The whole point of persistent identifiers
 is that they don't do that.
 
+:::info
+
+Update, October 2026: the standard.site lexicons now require TID record keys for
+publications and documents, and my PDS has started enforcing that, so `self` and
+`2026-02-18-my-post` no longer validate. But a TID doesn't have to come from the
+clock---it's just a timestamp plus a 10-bit clock identifier. Each post's rkey
+is now a TID built from the post's date and a hash of its URL path, so it's
+still computable from the URL alone (this post's is `3mf7dgyq36ymc`). The cost
+was a one-time move: every existing AT-URI changed once, which is exactly the
+citation breakage I warned about above.
+
+:::
+
 Anyway, I've had this blog online for over a decade now and I _think_ it's got
 at least some Google-juice (whether that stuff even matters anymore). Changing
 all the URLs just seems like a bad idea to throw all those direct links away.
