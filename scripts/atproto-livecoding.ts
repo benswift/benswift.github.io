@@ -16,15 +16,20 @@
 //
 // Idempotent: a gig is (re)published only when its content hash or its DOI has
 // changed since the last run (state in scripts/.atproto-livecoding-state.json,
-// gitignored). createdAt is preserved across runs so records don't churn.
+// gitignored). createdAt is preserved across runs so records don't churn. A gig
+// whose document still sits at its old slug rkey is moved to its TID rkey and
+// the old record deleted; the Zenodo relatedIdentifiers then need
+// `zenodo-deposit.ts --update` to follow.
 
 import fs from "node:fs";
 import net from "node:net";
 import path from "node:path";
 import { AtpAgent } from "@atproto/api";
+import { PUBLICATION_RKEY } from "./lib/atproto";
 import {
   atUri,
   discoverGigs,
+  DOCUMENT_NSID,
   type GigData,
   publishGig,
   type PutFn,
@@ -83,8 +88,15 @@ function readCollectionDoi(): string | undefined {
   return m?.[1];
 }
 
+/** The document is still at the pre-TID rkey (the slug itself). */
+function atLegacyRkey(gig: GigData, prev?: GigState): boolean {
+  return prev?.documentUri.endsWith(`/${DOCUMENT_NSID}/${gig.slug}`) ?? false;
+}
+
 function needsPublish(gig: GigData, prev?: GigState): boolean {
-  return !prev || prev.contentHash !== gig.contentHash || prev.doi !== gig.doi;
+  return (
+    !prev || prev.contentHash !== gig.contentHash || prev.doi !== gig.doi || atLegacyRkey(gig, prev)
+  );
 }
 
 async function main() {
@@ -102,6 +114,7 @@ async function main() {
 
   let did = stateDid;
   let put: PutFn;
+  let deleteDocument: (rkey: string) => Promise<void>;
 
   if (WRITE) {
     const identifier = process.env.ATP_IDENTIFIER;
@@ -115,20 +128,25 @@ async function main() {
       const res = await agent.com.atproto.repo.putRecord({ repo: did!, collection, rkey, record });
       return { uri: res.data.uri, cid: res.data.cid };
     };
+    deleteDocument = async (rkey) => {
+      await agent.com.atproto.repo.deleteRecord({ repo: did!, collection: DOCUMENT_NSID, rkey });
+    };
   } else {
     if (!did) did = "did:plc:UNKNOWN"; // dry run with no prior state
     put = async (collection, rkey, record) => {
       console.log(`    ${collection}/${rkey}: ${JSON.stringify(record)}`);
       return { uri: atUri(did!, collection, rkey), cid: "<cid-after-write>" };
     };
+    deleteDocument = async (rkey) => console.log(`    delete ${DOCUMENT_NSID}/${rkey}`);
   }
 
-  const pubUri = statePubUri ?? atUri(did!, "site.standard.publication", "self");
+  const pubUri = statePubUri ?? atUri(did!, "site.standard.publication", PUBLICATION_RKEY);
   state.did = did;
   state.publicationAtUri = pubUri;
 
   let published = 0;
   let skipped = 0;
+  let moved = 0;
   const dataciteLinks: string[] = [];
 
   for (const gig of gigs) {
@@ -144,6 +162,10 @@ async function main() {
         `  ! ${gig.slug}: no DOI yet — research-output record omits doi (re-run after minting)`,
       );
     const result = await publishGig(put, gig, pubUri, createdAt, collectionDoi);
+    if (atLegacyRkey(gig, prev)) {
+      await deleteDocument(gig.slug);
+      moved++;
+    }
     state.gigs[gig.slug] = {
       documentUri: result.document.uri,
       documentCid: result.document.cid,
@@ -162,7 +184,9 @@ async function main() {
 
   if (WRITE) saveState(state);
 
-  console.log(`\natproto livecoding: ${published} published, ${skipped} unchanged`);
+  console.log(
+    `\natproto livecoding: ${published} published, ${skipped} unchanged, ${moved} moved to TID rkeys`,
+  );
   console.log("\nDataCite relatedIdentifier per gig (carry the document AT-URI):");
   for (const line of dataciteLinks) console.log(`  ${line}`);
   if (!WRITE)

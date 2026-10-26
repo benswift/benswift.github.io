@@ -23,6 +23,7 @@
 import fs from "node:fs";
 import net from "node:net";
 import path from "node:path";
+import { gigRkey } from "./lib/atproto-livecoding";
 import { parseFrontmatter } from "./lib/frontmatter";
 import { loadCollectionState } from "./lib/zenodo-collection-state";
 import { acceptInclusionRequests } from "./lib/zenodo-community";
@@ -61,7 +62,7 @@ const COLLECTION_COMMUNITY = COLLECTION.communitySlug;
 // The self-owned atproto document record (TASK-23.10) is carried back as a
 // relatedIdentifier so the Zenodo record links to the at:// document (Zenodo
 // accepts a raw at://, verified). The DID comes from the blog atproto state and
-// the document rkey is the gig slug, so the AT-URI is fully deterministic —
+// the document rkey is a TID derived from the slug, so the AT-URI is fully deterministic —
 // computed here rather than duplicated into 27 frontmatter files.
 const ATPROTO_DID: string | undefined = (() => {
   const p = path.resolve(process.cwd(), "atproto-state.json");
@@ -177,7 +178,7 @@ function buildRelated(gig: Gig, slug: string) {
   if (ATPROTO_DID)
     rel.push({
       relation: "isVariantFormOf",
-      identifier: `at://${ATPROTO_DID}/site.standard.document/${slug}`,
+      identifier: `at://${ATPROTO_DID}/site.standard.document/${gigRkey(slug)}`,
     });
   // Link back to the body-of-work umbrella (TASK-23.09), once it's reserved.
   if (COLLECTION_DOI) rel.push({ relation: "isPartOf", identifier: COLLECTION_DOI });

@@ -10,6 +10,7 @@ import {
   DOCUMENT_NSID,
   type GigData,
   gigDocPath,
+  gigRkey,
   publishGig,
   type PutFn,
   RESEARCH_OUTPUT_NSID,
@@ -32,6 +33,13 @@ const sampleGig: GigData = {
 describe("paths and uris", () => {
   it("builds the gig page path", () => {
     expect(gigDocPath("2024-05-31-iclc-24")).toBe("/livecoding/2024-05-31-iclc-24");
+  });
+
+  it("gives the document a TID rkey timestamped on the gig's date", () => {
+    const rkey = gigRkey("2024-05-31-iclc-24");
+    expect(rkey).toMatch(/^[234567abcdefghij][234567abcdefghijklmnopqrstuvwxyz]{12}$/);
+    expect(rkey).toBe(gigRkey("2024-05-31-iclc-24"));
+    expect(rkey).not.toBe(gigRkey("2024-05-31-iclc-24-encore"));
   });
 
   it("builds an at-uri", () => {
@@ -101,14 +109,16 @@ describe("publishGig", () => {
 
     expect(calls).toHaveLength(2);
     expect(calls[0].collection).toBe(DOCUMENT_NSID);
+    expect(calls[0].rkey).toBe(gigRkey(sampleGig.slug));
     expect(calls[1].collection).toBe(RESEARCH_OUTPUT_NSID);
+    expect(calls[1].rkey).toBe(sampleGig.slug);
     // The research-output record's document strongRef points at the just-written document.
     expect(calls[1].record.document).toEqual(result.document);
     expect(result.document.cid).toBe("cid-1");
     // AC #4: the exposed DataCite relatedIdentifier is the document AT-URI.
     expect(result.dataciteRelatedIdentifier).toBe(result.document.uri);
     expect(result.dataciteRelatedIdentifier).toBe(
-      "at://did:plc:abc/site.standard.document/2024-05-31-iclc-24",
+      `at://did:plc:abc/site.standard.document/${gigRkey(sampleGig.slug)}`,
     );
   });
 });

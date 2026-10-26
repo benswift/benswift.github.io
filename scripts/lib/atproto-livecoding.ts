@@ -7,7 +7,8 @@
 //   1. a standard site.standard.document (the human-facing page), and
 //   2. a companion me.benswift.researchOutput record in our own namespace
 //      holding the DataCite DOI + a strongRef {uri,cid} to the document.
-// The document's AT-URI is what gets carried into the gig's DataCite record as
+// The research-output lexicon is ours and takes any key, so it keeps the slug;
+// the document's rkey is a TID (see gigRkey). The document's AT-URI is what gets carried into the gig's DataCite record as
 // a relatedIdentifier (verified: Zenodo accepts a raw at:// identifier).
 //
 // The record type names the output for what it IS (a research output, with an
@@ -17,7 +18,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { parseFrontmatter } from "./frontmatter";
-import { computeHash, toPlainText } from "./posts";
+import { computeHash, deterministicTid, toPlainText } from "./posts";
 
 export const DOCUMENT_NSID = "site.standard.document";
 export const RESEARCH_OUTPUT_NSID = "me.benswift.researchOutput";
@@ -28,7 +29,7 @@ export interface StrongRef {
 }
 
 export interface GigData {
-  /** Filename stem (e.g. 2024-05-31-iclc-24) — also the rkey and URL segment. */
+  /** Filename stem (e.g. 2024-05-31-iclc-24): the URL segment and the research-output rkey. */
   slug: string;
   title: string;
   date: string;
@@ -46,6 +47,15 @@ export interface GigData {
 /** Public URL path for a gig — matches src/pages/livecoding/[slug].astro. */
 export function gigDocPath(slug: string): string {
   return `/livecoding/${slug}`;
+}
+
+/**
+ * The gig's site.standard.document rkey. The lexicon requires a TID, so it's one
+ * reproducible from the page path, timestamped on the gig's date (the slug's
+ * prefix), the same scheme as the blog's pathToRkey.
+ */
+export function gigRkey(slug: string): string {
+  return deterministicTid(slug.slice(0, 10), gigDocPath(slug));
 }
 
 export function atUri(did: string, collection: string, rkey: string): string {
@@ -154,7 +164,7 @@ export async function publishGig(
   createdAt: string,
   collectionDoi?: string,
 ): Promise<GigPublishResult> {
-  const document = await put(DOCUMENT_NSID, gig.slug, buildDocumentRecord(gig, pubUri));
+  const document = await put(DOCUMENT_NSID, gigRkey(gig.slug), buildDocumentRecord(gig, pubUri));
   const researchOutput = await put(
     RESEARCH_OUTPUT_NSID,
     gig.slug,
