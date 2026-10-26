@@ -88,7 +88,6 @@ export interface AtprotoClient {
   uploadImage(sourcePath: string): Promise<unknown | undefined>;
   ensurePublication(pub: PublicationRecord): Promise<StrongRef>;
   putDocument(rkey: string, doc: DocumentRecord): Promise<StrongRef>;
-  deleteDocument(rkey: string): Promise<void>;
   createSkeet(input: SkeetInput): Promise<SkeetResult>;
   listRecommends(): Promise<RecommendEntry[]>;
   createRecommend(documentUri: string): Promise<void>;
@@ -208,14 +207,6 @@ export async function createClient(
         record: buildDocumentRecord(doc),
       });
       return { uri: res.data.uri, cid: res.data.cid };
-    },
-
-    async deleteDocument(rkey: string): Promise<void> {
-      await agent.com.atproto.repo.deleteRecord({
-        repo: did,
-        collection: "site.standard.document",
-        rkey,
-      });
     },
 
     async createSkeet(input: SkeetInput): Promise<SkeetResult> {

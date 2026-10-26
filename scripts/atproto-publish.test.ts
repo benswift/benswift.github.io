@@ -20,7 +20,6 @@ const PUB_URI = `at://did:plc:test123/site.standard.publication/${PUBLICATION_RK
 interface MockClient extends AtprotoClient {
   publications: PublicationRecord[];
   documents: Array<{ rkey: string; doc: DocumentRecord }>;
-  deletedDocuments: string[];
   skeets: SkeetInput[];
   recommends: RecommendEntry[];
   deletedRecommends: string[];
@@ -33,7 +32,6 @@ function makeMockClient(did = "did:plc:test123"): MockClient {
     did,
     publications: [],
     documents: [],
-    deletedDocuments: [],
     skeets: [],
     recommends: [],
     deletedRecommends: [],
@@ -56,9 +54,6 @@ function makeMockClient(did = "did:plc:test123"): MockClient {
         cid: `doccid${client.documents.length}`,
       };
     },
-    async deleteDocument(rkey) {
-      client.deletedDocuments.push(rkey);
-    },
     async createSkeet(input) {
       client.skeets.push(input);
       const n = client.skeets.length;
@@ -77,13 +72,6 @@ function makeMockClient(did = "did:plc:test123"): MockClient {
     },
   };
   return client;
-}
-
-/** Rewrite the state as the pre-TID publisher left it. */
-function makeLegacyState(statePath: string) {
-  const state = JSON.parse(fs.readFileSync(statePath, "utf8"));
-  state.publicationAtUri = "at://did:plc:test123/site.standard.publication/self";
-  fs.writeFileSync(statePath, JSON.stringify(state));
 }
 
 /** The most recent document record written for a given rkey. */
@@ -371,46 +359,6 @@ describe("atproto-publish", () => {
       const client2 = makeMockClient();
       await publish(client2, config);
       expect(client2.skeets).toHaveLength(0);
-    });
-  });
-
-  describe("migration from date-slug rkeys", () => {
-    it("re-puts unchanged posts at TID rkeys and deletes their slug-keyed records", async () => {
-      await publish(makeMockClient(), config);
-      makeLegacyState(config.statePath);
-
-      const client = makeMockClient();
-      await publish(client, config);
-
-      expect(client.documents.map((d) => d.rkey).toSorted()).toEqual(
-        [TEST_POST_RKEY, ANOTHER_POST_RKEY].toSorted(),
-      );
-      expect(client.deletedDocuments.toSorted()).toEqual([
-        "2026-02-18-another-post",
-        "2026-02-18-test-post",
-      ]);
-      for (const { doc } of client.documents) {
-        expect(doc.site).toBe(PUB_URI);
-        // A move isn't an edit.
-        expect(doc.updatedAt).toBeUndefined();
-      }
-    });
-
-    it("migrates only once", async () => {
-      await publish(makeMockClient(), config);
-      makeLegacyState(config.statePath);
-      await publish(makeMockClient(), config);
-
-      const client = makeMockClient();
-      await publish(client, config);
-      expect(client.documents).toHaveLength(0);
-      expect(client.deletedDocuments).toHaveLength(0);
-    });
-
-    it("does not delete anything on a fresh publish", async () => {
-      const client = makeMockClient();
-      await publish(client, config);
-      expect(client.deletedDocuments).toHaveLength(0);
     });
   });
 

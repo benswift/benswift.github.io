@@ -26,7 +26,7 @@ describe("atproto rkey determinism", () => {
     expect(PUBLICATION_RKEY).toBe(deterministicTid("2026-02-19", "site.standard.publication"));
   });
 
-  it("keeps the date-slug key for hero filenames and legacy records", () => {
+  it("keeps the date-slug key for hero filenames", () => {
     expect(pathToSlugKey("/blog/2026/02/18/my-post")).toBe("2026-02-18-my-post");
   });
 

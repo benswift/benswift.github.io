@@ -96,10 +96,6 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     showInDiscover: true,
   });
   const pubAtUri = pubRef.uri;
-  // State from before the TID rkeys: every post's document moves from its
-  // date-slug rkey to a TID, so re-put them all and delete the old records.
-  const migratingFromSlugKeys =
-    state?.publicationAtUri.endsWith("/site.standard.publication/self") ?? false;
 
   fs.mkdirSync(config.wellKnownDir, { recursive: true });
   fs.writeFileSync(path.join(config.wellKnownDir, "site.standard.publication"), pubAtUri + "\n");
@@ -108,7 +104,6 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
   let created = 0;
   let updated = 0;
   let unchanged = 0;
-  let migrated = 0;
   let crossPosted = 0;
   let crossPostFailed = 0;
 
@@ -118,7 +113,7 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     const isNew = !(post.path in oldHashes);
     const eligible = config.crossPost && post.crosspost && !isSyndicated(syndication, post.path);
 
-    if (!contentChanged && !eligible && !migratingFromSlugKeys) {
+    if (!contentChanged && !eligible) {
       unchanged++;
       continue;
     }
@@ -174,11 +169,6 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
       }
     }
 
-    if (migratingFromSlugKeys && !isNew) {
-      await client.deleteDocument(pathToSlugKey(post.path));
-      migrated++;
-    }
-
     if (contentChanged) {
       if (isNew) created++;
       else updated++;
@@ -201,7 +191,7 @@ export async function publish(client: AtprotoClient, config: PublishConfig = def
     ? `; bluesky: ${crossPosted} cross-posted${crossPostFailed ? `, ${crossPostFailed} failed` : ""}`
     : "";
   console.log(
-    `atproto publish: ${created} new, ${updated} updated, ${unchanged} unchanged${migrated ? `, ${migrated} moved to TID rkeys` : ""}${bluesky}`,
+    `atproto publish: ${created} new, ${updated} updated, ${unchanged} unchanged${bluesky}`,
   );
 }
 
