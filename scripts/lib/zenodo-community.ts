@@ -4,6 +4,9 @@
 // helpers close that loop so a record submitted to a community Ben owns
 // actually becomes a member, with no manual curation (TASK-23.09).
 
+/** Zenodo's firewall 403s Node's default fetch User-Agent, so every request sends this. */
+export const ZENODO_USER_AGENT = "benswift-me-scripts (https://benswift.me)";
+
 /**
  * Accept any still-open `community-inclusion` requests for a just-published
  * record. Returns the number accepted. Best-effort: a missing requests
@@ -14,7 +17,7 @@ export async function acceptInclusionRequests(
   token: string,
   recordId: number | string,
 ): Promise<number> {
-  const auth = { Authorization: `Bearer ${token}` };
+  const auth = { Authorization: `Bearer ${token}`, "User-Agent": ZENODO_USER_AGENT };
   const res = await fetch(`${base}/api/records/${recordId}/requests`, { headers: auth });
   if (!res.ok) return 0;
   const data = await res.json();

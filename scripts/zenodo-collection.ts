@@ -36,7 +36,7 @@ import {
   loadCollectionState,
   saveCollectionState,
 } from "./lib/zenodo-collection-state";
-import { acceptInclusionRequests } from "./lib/zenodo-community";
+import { acceptInclusionRequests, ZENODO_USER_AGENT } from "./lib/zenodo-community";
 
 // Happy Eyeballs: race IPv4/IPv6 so it still works where IPv6 routing is broken.
 net.setDefaultAutoSelectFamily(true);
@@ -77,6 +77,7 @@ async function api(method: string, url: string, body?: unknown): Promise<any> {
     method,
     headers: {
       Authorization: `Bearer ${TOKEN}`,
+      "User-Agent": ZENODO_USER_AGENT,
       ...(body ? { "Content-Type": "application/json" } : {}),
     },
     body: body ? JSON.stringify(body) : undefined,
@@ -87,7 +88,9 @@ async function api(method: string, url: string, body?: unknown): Promise<any> {
 
 /** GET that tolerates 404 (returns null) — for existence checks. */
 async function apiGet(url: string): Promise<any | null> {
-  const res = await fetch(url, { headers: { Authorization: `Bearer ${TOKEN}` } });
+  const res = await fetch(url, {
+    headers: { Authorization: `Bearer ${TOKEN}`, "User-Agent": ZENODO_USER_AGENT },
+  });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Zenodo GET ${url} → ${res.status}: ${await res.text()}`);
   return res.json();
@@ -223,7 +226,11 @@ async function uploadReadme(bucket: string, members: { title: string; doi: strin
   ];
   const res = await fetch(`${bucket}/README.txt`, {
     method: "PUT",
-    headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/octet-stream" },
+    headers: {
+      Authorization: `Bearer ${TOKEN}`,
+      "User-Agent": ZENODO_USER_AGENT,
+      "Content-Type": "application/octet-stream",
+    },
     body: lines.join("\n"),
   });
   if (!res.ok) throw new Error(`README upload → ${res.status}: ${await res.text()}`);

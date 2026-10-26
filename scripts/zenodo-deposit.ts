@@ -26,7 +26,7 @@ import path from "node:path";
 import { gigRkey } from "./lib/atproto-livecoding";
 import { parseFrontmatter } from "./lib/frontmatter";
 import { loadCollectionState } from "./lib/zenodo-collection-state";
-import { acceptInclusionRequests } from "./lib/zenodo-community";
+import { acceptInclusionRequests, ZENODO_USER_AGENT } from "./lib/zenodo-community";
 
 // Happy Eyeballs: race IPv4/IPv6 and use whichever connects first, so the
 // deposit still works on networks where IPv6 routing is broken.
@@ -118,6 +118,7 @@ async function zenodo(method: string, url: string, body?: unknown): Promise<any>
     method,
     headers: {
       Authorization: `Bearer ${TOKEN}`,
+      "User-Agent": ZENODO_USER_AGENT,
       ...(body ? { "Content-Type": "application/json" } : {}),
     },
     body: body ? JSON.stringify(body) : undefined,
@@ -271,7 +272,11 @@ async function uploadDocFile(bucket: string, slug: string, gig: Gig, dateStr: st
   const content = lines.join("\n") + "\n";
   const res = await fetch(`${bucket}/${slug}.txt`, {
     method: "PUT",
-    headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/octet-stream" },
+    headers: {
+      Authorization: `Bearer ${TOKEN}`,
+      "User-Agent": ZENODO_USER_AGENT,
+      "Content-Type": "application/octet-stream",
+    },
     body: content,
   });
   if (!res.ok) throw new Error(`file upload → ${res.status}: ${await res.text()}`);
