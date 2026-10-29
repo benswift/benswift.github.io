@@ -204,3 +204,28 @@ describe.skipIf(!existsSync(distDir))("heading anchors are decorative, not annou
     }
   });
 });
+
+function jsonLdOf(html: string) {
+  return JSON.parse(
+    html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1] ?? "null",
+  );
+}
+
+describe.skipIf(!existsSync(distDir))("schema.org JSON-LD (citation metadata)", () => {
+  test("every blog post is a BlogPosting authored by Ben's ORCID identity", () => {
+    const posts = findBlogPostHtmls();
+    expect(posts.length).toBeGreaterThan(0);
+    for (const file of posts) {
+      const html = readFileSync(file, "utf8");
+      const [person, post] = jsonLdOf(html)["@graph"];
+      expect(person.identifier).toBe("https://orcid.org/0000-0003-2138-5969");
+      expect(post["@type"]).toBe("BlogPosting");
+      // the same title and date the Highwire tags carry
+      expect(html).toContain(`<meta name="citation_date" content="${post.datePublished}"`);
+    }
+  });
+
+  test("the home page describes the site and its publisher", () => {
+    expect(jsonLdOf(readPage("/"))["@graph"][1]["@type"]).toBe("WebSite");
+  });
+});

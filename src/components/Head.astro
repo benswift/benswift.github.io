@@ -1,5 +1,6 @@
 ---
 import { getPublicationAtUri } from "../utils/atproto"
+import { blogPostingJsonLd, serialiseJsonLd, websiteJsonLd } from "../utils/json-ld"
 
 interface Props {
   title?: string
@@ -22,6 +23,11 @@ const hostname = "https://benswift.me"
 const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
 const url = new URL(Astro.url.pathname, hostname).href
 const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`
+
+const jsonLd =
+  isPost && title && date
+    ? blogPostingJsonLd({ title, url, date, description, image: imageUrl, atUri })
+    : websiteJsonLd()
 ---
 
 <meta charset="utf-8" />
@@ -62,3 +68,4 @@ const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`
 {isPost && <meta name="citation_author" content="Ben Swift" />}
 {isPost && date && <meta name="citation_date" content={date} />}
 {isPost && <meta name="citation_public_url" content={url} />}
+<script type="application/ld+json" is:inline set:html={serialiseJsonLd(jsonLd)} />
