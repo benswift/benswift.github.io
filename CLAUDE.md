@@ -2,7 +2,7 @@
 
 Personal website and blog: Astro 7, Svelte 5 (runes), TypeScript, MDX, pure CSS
 with custom properties. oxlint + Stylelint for linting, oxfmt for formatting
-(all file types), Vitest for tests, Pagefind for search (indexed post-build).
+(skips `.astro`), Vitest for tests, Pagefind for search (indexed post-build).
 
 ## Commands
 
