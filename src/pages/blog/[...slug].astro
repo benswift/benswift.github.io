@@ -1,22 +1,22 @@
 ---
-import PostLayout from "../../layouts/PostLayout.astro"
-import { getAtUri } from "../../utils/atproto"
-import { extractHeroPhrases } from "../../utils/extract-hero-phrases"
-import { getPosts } from "../../utils/posts"
-import { render } from "astro:content"
+import PostLayout from "../../layouts/PostLayout.astro";
+import { getAtUri } from "../../utils/atproto";
+import { extractHeroPhrases } from "../../utils/extract-hero-phrases";
+import { getPosts } from "../../utils/posts";
+import { render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getPosts()
-  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }))
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 
-const { post } = Astro.props
-const { Content } = await render(post)
+const { post } = Astro.props;
+const { Content } = await render(post);
 
-const description = post.data.description
-const atUri = getAtUri(post.id)
-const relativePath = post.filePath
-const heroPhrases = extractHeroPhrases(post.body ?? "")
+const description = post.data.description;
+const atUri = getAtUri(post.id);
+const relativePath = post.filePath;
+const heroPhrases = extractHeroPhrases(post.body ?? "");
 ---
 
 <PostLayout

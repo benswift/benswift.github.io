@@ -1,10 +1,10 @@
 ---
-import { getCollection } from "astro:content"
-import fs from "node:fs"
-import { deckSlugFromPath } from "astromotion/src/deck-slug.ts"
-import { parse as parseYaml } from "yaml"
-import PageLayout from "../../layouts/PageLayout.astro"
-import { formatDate } from "../../utils/date"
+import { getCollection } from "astro:content";
+import fs from "node:fs";
+import { deckSlugFromPath } from "astromotion/src/deck-slug.ts";
+import { parse as parseYaml } from "yaml";
+import PageLayout from "../../layouts/PageLayout.astro";
+import { formatDate } from "../../utils/date";
 
 // Naming: this index lives at /talks/ while individual decks live at
 // /decks/<slug>/. That split is intentional, not an oversight. /talks/ is the
@@ -12,7 +12,7 @@ import { formatDate } from "../../utils/date"
 // talks" archive of non-deck presentations (links out to slides/papers/video).
 // /decks/<slug>/ is the astromotion artefact URL, hardcoded by the integration
 // (injectRoute pattern "/decks/[...slug]"), so it can't move to /talks/ anyway.
-const allTalks = await getCollection("talks")
+const allTalks = await getCollection("talks");
 
 // Auto-discover decks from src/decks/<slug>/slides.deck.mdx and read their
 // frontmatter, so a new astromotion deck appears in this list with no manual
@@ -21,39 +21,39 @@ const allTalks = await getCollection("talks")
 const deckMeta = fs
   .globSync("src/decks/**/*.deck.mdx")
   .map((file) => {
-    const slug = deckSlugFromPath(`/${file}`)!
-    const src = fs.readFileSync(file, "utf8")
-    const fm = src.match(/^---\n([\s\S]*?)\n---/)
-    return { slug, fm: fm ? (parseYaml(fm[1]) ?? {}) : {} }
+    const slug = deckSlugFromPath(`/${file}`)!;
+    const src = fs.readFileSync(file, "utf8");
+    const fm = src.match(/^---\n([\s\S]*?)\n---/);
+    return { slug, fm: fm ? (parseYaml(fm[1]) ?? {}) : {} };
   })
   // astromotion drops `published: false` decks from the build and keeps
   // `unlisted: true` ones at their URL only, so neither belongs in this list.
-  .filter(({ fm }) => fm.published !== false && fm.unlisted !== true)
-const deckSlugs = new Set(deckMeta.map((d) => d.slug))
+  .filter(({ fm }) => fm.published !== false && fm.unlisted !== true);
+const deckSlugs = new Set(deckMeta.map((d) => d.slug));
 
-const talkBySlug = new Map(allTalks.map((t) => [t.id, t.data]))
+const talkBySlug = new Map(allTalks.map((t) => [t.id, t.data]));
 
-const toDateStr = (raw: unknown) => (raw ? String(raw) : "2000-01-01")
+const toDateStr = (raw: unknown) => (raw ? String(raw) : "2000-01-01");
 
 const decks = deckMeta
   .map(({ slug, fm }) => {
-    const t = talkBySlug.get(slug)
-    const dateStr = toDateStr(t?.date ?? fm.date)
+    const t = talkBySlug.get(slug);
+    const dateStr = toDateStr(t?.date ?? fm.date);
     return {
       slug,
       title: t?.title ?? fm.title ?? slug,
       dateStr,
       dateFormatted: formatDate(new Date(dateStr)),
       event: t?.event ?? fm.event,
-    }
+    };
   })
-  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr));
 
 // Archive: talks with no matching deck (the older stubs), linked out to slides.
 const archive = allTalks
   .filter((t) => !deckSlugs.has(t.id))
   .map((t) => {
-    const dateStr = toDateStr(t.data.date)
+    const dateStr = toDateStr(t.data.date);
     return {
       title: t.data.title,
       dateFormatted: formatDate(new Date(dateStr)),
@@ -62,9 +62,9 @@ const archive = allTalks
       slides: t.data.slides,
       paper: t.data.paper,
       video: t.data.video,
-    }
+    };
   })
-  .sort((a, b) => b.dateStr.localeCompare(a.dateStr))
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr));
 ---
 
 <PageLayout title="Talks" relativePath="src/pages/talks/index.astro">
@@ -72,37 +72,28 @@ const archive = allTalks
   <hr />
 
   <ul class="post-list">
-    {decks.map((talk) => (
-      <li class="post-item">
-        <a href={`/decks/${talk.slug}/`} class="post-item-title">{talk.title}</a>
-        <span class="post-item-date">{talk.dateFormatted}</span>
-        {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
-      </li>
-    ))}
+    {decks.map((talk) => <li class="post-item">
+      <a href={`/decks/${talk.slug}/`} class="post-item-title">{talk.title}</a>
+      <span class="post-item-date">{talk.dateFormatted}</span>
+      {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
+    </li>)}
   </ul>
 
   {archive.length > 0 && (
     <>
       <h2>Earlier talks</h2>
-      <p>
-        Older talks, kept for the archive. The slides and papers are linked where
-        they survive.
-      </p>
+      <p>Older talks, kept for the archive. The slides and papers are linked where they survive.</p>
       <ul class="post-list">
-        {archive.map((talk) => (
-          <li class="post-item">
-            <span class="post-item-title">{talk.title}</span>
-            <span class="post-item-date">{talk.dateFormatted}</span>
-            {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
-            {(talk.slides || talk.paper || talk.video) && (
-              <span class="post-item-links">
-                {talk.slides && <a href={talk.slides}>slides</a>}
-                {talk.paper && <a href={talk.paper}>paper</a>}
-                {talk.video && <a href={talk.video}>video</a>}
-              </span>
-            )}
-          </li>
-        ))}
+        {archive.map((talk) => <li class="post-item">
+          <span class="post-item-title">{talk.title}</span>
+          <span class="post-item-date">{talk.dateFormatted}</span>
+          {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
+          {(talk.slides || talk.paper || talk.video) && <span class="post-item-links">
+            {talk.slides && <a href={talk.slides}>slides</a>}
+            {talk.paper && <a href={talk.paper}>paper</a>}
+            {talk.video && <a href={talk.video}>video</a>}
+          </span>}
+        </li>)}
       </ul>
     </>
   )}

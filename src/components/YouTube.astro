@@ -1,10 +1,10 @@
 ---
 interface Props {
-  id: string
-  title?: string
+  id: string;
+  title?: string;
 }
 
-const { id, title = "YouTube video" } = Astro.props
+const { id, title = "YouTube video" } = Astro.props;
 ---
 
 <div class="youtube-embed">
@@ -14,7 +14,7 @@ const { id, title = "YouTube video" } = Astro.props
     width="560"
     height="315"
     allow="autoplay; encrypted-media"
-    style="border: 0;"
+    style="border: 0"
     allowfullscreen
     loading="lazy"
   ></iframe>

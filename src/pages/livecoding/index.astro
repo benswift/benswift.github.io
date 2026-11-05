@@ -1,9 +1,9 @@
 ---
-import PageLayout from "../../layouts/PageLayout.astro"
-import Picture from "../../components/Picture.astro"
-import { formatDate } from "../../utils/date"
-import { livecodingCollection } from "../../data/livecoding-collection"
-import { getGigs } from "../../utils/gigs"
+import PageLayout from "../../layouts/PageLayout.astro";
+import Picture from "../../components/Picture.astro";
+import { formatDate } from "../../utils/date";
+import { livecodingCollection } from "../../data/livecoding-collection";
+import { getGigs } from "../../utils/gigs";
 
 const gigs = (await getGigs()).map((gig) => ({
   title: gig.data.title,
@@ -12,10 +12,10 @@ const gigs = (await getGigs()).map((gig) => ({
   dateFormatted: formatDate(new Date(gig.data.date)),
   venue: gig.data.venue,
   slug: gig.id,
-}))
+}));
 
-const firstYear = gigs.at(-1)?.dateStr.slice(0, 4)
-const lastYear = gigs.at(0)?.dateStr.slice(0, 4)
+const firstYear = gigs.at(-1)?.dateStr.slice(0, 4);
+const lastYear = gigs.at(0)?.dateStr.slice(0, 4);
 ---
 
 <PageLayout title="Livecoding" relativePath="src/pages/livecoding/index.astro">
@@ -25,25 +25,25 @@ const lastYear = gigs.at(0)?.dateStr.slice(0, 4)
   />
 
   <p>
-    The nature of livecoding is that it is performed (improvised) in-the-moment; the
-    gig (performance) <em>is</em> the output (that's why it's called <strong>live</strong>coding), and
-    any artefact (e.g. a video recording) is useful documentation, but only a trace
-    of the work itself.
+    The nature of livecoding is that it is performed (improvised) in-the-moment; the gig
+    (performance) <em>is</em> the output (that's why it's called <strong>live</strong>coding), and
+    any artefact (e.g. a video recording) is useful documentation, but only a trace of the work
+    itself.
   </p>
 
   <p>
-    Still, documentation is an important part of one's artistic practice, so here's
-    a bunch of photos and videos from my gigs. Some of them are nice &amp;
-    slick-looking, some of them are super-grungy videos shot on smartphones in the
-    crowd. Although I'm working hard to track down any old videos, some of these
-    gigs are lost to time. I like to assume that they were the best ones ;)
+    Still, documentation is an important part of one's artistic practice, so here's a bunch of
+    photos and videos from my gigs. Some of them are nice &amp; slick-looking, some of them are
+    super-grungy videos shot on smartphones in the crowd. Although I'm working hard to track down
+    any old videos, some of these gigs are lost to time. I like to assume that they were the best
+    ones ;)
   </p>
 
   <p>
-    Taken together, these {gigs.length} performances span {firstYear}&ndash;{lastYear}:
-    nearly two decades of live-coding practice, gathered here as a single body of work.
-    Each one is increasingly being given its own DataCite DOI so it can be cited as a
-    research output in its own right.
+    Taken together, these {gigs.length} performances span {firstYear}&ndash;{lastYear}: nearly two
+    decades of live-coding practice, gathered here as a single body of work. Each one is
+    increasingly being given its own DataCite DOI so it can be cited as a research output in its own
+    right.
   </p>
 
   <p>
@@ -51,24 +51,20 @@ const lastYear = gigs.at(0)?.dateStr.slice(0, 4)
     the body of work, with notes on a handful of the anchor gigs, if that's your sort of thing.
   </p>
 
-  {livecodingCollection && (
-    <p class="collection-cite">
-      Cite the body of work:{" "}
-      <a href={livecodingCollection.doiUrl}>{livecodingCollection.conceptDoi}</a>
-      {" · "}
-      <a href={livecodingCollection.community.url}>Zenodo community</a>
-    </p>
-  )}
+  {livecodingCollection && <p class="collection-cite">
+    Cite the body of work:{" "}
+    <a href={livecodingCollection.doiUrl}>{livecodingCollection.conceptDoi}</a>
+    {" · "}
+    <a href={livecodingCollection.community.url}>Zenodo community</a>
+  </p>}
 
   <hr />
 
   <ul class="post-list">
-    {gigs.map((gig) => (
-      <li class="post-item">
-        <a href={gig.url} class="post-item-title">{gig.title}</a>
-        <span class="post-item-date">{gig.dateFormatted}</span>
-        {gig.venue && <span class="post-item-venue"> - {gig.venue}</span>}
-      </li>
-    ))}
+    {gigs.map((gig) => <li class="post-item">
+      <a href={gig.url} class="post-item-title">{gig.title}</a>
+      <span class="post-item-date">{gig.dateFormatted}</span>
+      {gig.venue && <span class="post-item-venue"> - {gig.venue}</span>}
+    </li>)}
   </ul>
 </PageLayout>

@@ -1,7 +1,7 @@
 ---
-import { loadForCodes } from "../data/for-codes"
+import { loadForCodes } from "../data/for-codes";
 
-const codes = loadForCodes()
+const codes = loadForCodes();
 ---
 
 <div class="for-codes-table">
@@ -19,29 +19,27 @@ const codes = loadForCodes()
       </tr>
     </thead>
     <tbody>
-      {codes.map((code) => (
-        <tr data-search={`${code.division} ${code.group}`}>
-          <td class="for-code">{code.field}</td>
-          <td class="for-description">{code.description}</td>
-        </tr>
-      ))}
+      {codes.map((code) => <tr data-search={`${code.division} ${code.group}`}>
+        <td class="for-code">{code.field}</td>
+        <td class="for-description">{code.description}</td>
+      </tr>)}
     </tbody>
   </table>
 </div>
 
 <script>
   for (const table of document.querySelectorAll(".for-codes-table")) {
-    const input = table.querySelector<HTMLInputElement>(".search")!
+    const input = table.querySelector<HTMLInputElement>(".search")!;
     // Match on the code and description (the row's text) plus its division
     // and group (carried in data-search).
     const rows = [...table.querySelectorAll<HTMLTableRowElement>("tbody tr")].map((row) => ({
       row,
       text: `${row.textContent} ${row.dataset.search}`.toLowerCase(),
-    }))
+    }));
     input.addEventListener("input", () => {
-      const query = input.value.toLowerCase()
-      for (const { row, text } of rows) row.hidden = !text.includes(query)
-    })
+      const query = input.value.toLowerCase();
+      for (const { row, text } of rows) row.hidden = !text.includes(query);
+    });
   }
 </script>
 

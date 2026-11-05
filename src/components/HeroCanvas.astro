@@ -1,14 +1,14 @@
 ---
 interface Props {
-  phrases: string[]
+  phrases: string[];
   // Shown instead of the WebGL canvas under prefers-reduced-motion.
-  fallbackSrc: string
+  fallbackSrc: string;
   // "tall" for the home page, "masthead" when the slot carries the page
   // title, "band" for a short strip on pages that set their own heading.
-  variant: "tall" | "masthead" | "band"
+  variant: "tall" | "masthead" | "band";
 }
 
-const { phrases, fallbackSrc, variant } = Astro.props
+const { phrases, fallbackSrc, variant } = Astro.props;
 ---
 
 <div class={`hero-slot hero-slot--${variant}`} data-phrases={JSON.stringify(phrases)}>
@@ -18,11 +18,11 @@ const { phrases, fallbackSrc, variant } = Astro.props
 </div>
 
 <script>
-  import { mountHeroCanvas } from "./hero-canvas"
+  import { mountHeroCanvas } from "./hero-canvas";
 
-  const slot = document.querySelector<HTMLElement>(".hero-slot")
+  const slot = document.querySelector<HTMLElement>(".hero-slot");
   if (slot && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    void mountHeroCanvas(slot, JSON.parse(slot.dataset.phrases ?? "[]"))
+    void mountHeroCanvas(slot, JSON.parse(slot.dataset.phrases ?? "[]"));
   }
 </script>
 

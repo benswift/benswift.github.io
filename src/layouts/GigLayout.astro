@@ -1,39 +1,39 @@
 ---
-import BaseLayout from "./BaseLayout.astro"
-import SiteFooter from "../components/SiteFooter.astro"
-import CiteWidget from "../components/CiteWidget.astro"
-import { formatDate } from "../utils/date"
-import { gigToBibtex } from "../utils/citation"
-import { SITE_BASELINE_PHRASES } from "../data/hero"
+import BaseLayout from "./BaseLayout.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import CiteWidget from "../components/CiteWidget.astro";
+import { formatDate } from "../utils/date";
+import { gigToBibtex } from "../utils/citation";
+import { SITE_BASELINE_PHRASES } from "../data/hero";
 
 interface Video {
-  url: string
-  label?: string
+  url: string;
+  label?: string;
 }
 interface RelatedWork {
-  relation: string
-  identifier?: string
-  url?: string
-  type?: string
+  relation: string;
+  identifier?: string;
+  url?: string;
+  type?: string;
 }
 interface Props {
-  title: string
-  date?: string
-  venue?: string
-  venue_url?: string
-  type?: string
-  event?: string
-  event_url?: string
-  instrument?: string
-  videos?: Video[]
-  doi?: string
-  archived_event_url?: string
-  archived_venue_url?: string
-  related_works?: RelatedWork[]
-  curators?: string
-  artists?: { name: string; role: string; orcid?: string }[]
-  description?: string
-  relativePath?: string
+  title: string;
+  date?: string;
+  venue?: string;
+  venue_url?: string;
+  type?: string;
+  event?: string;
+  event_url?: string;
+  instrument?: string;
+  videos?: Video[];
+  doi?: string;
+  archived_event_url?: string;
+  archived_venue_url?: string;
+  related_works?: RelatedWork[];
+  curators?: string;
+  artists?: { name: string; role: string; orcid?: string }[];
+  description?: string;
+  relativePath?: string;
 }
 
 const {
@@ -54,10 +54,10 @@ const {
   artists,
   description,
   relativePath,
-} = Astro.props
+} = Astro.props;
 
-const gigDate = date ? formatDate(new Date(date)) : null
-const gigType = type ? type.charAt(0).toUpperCase() + type.slice(1) : null
+const gigDate = date ? formatDate(new Date(date)) : null;
+const gigType = type ? type.charAt(0).toUpperCase() + type.slice(1) : null;
 
 // Human-readable labels for the DataCite relationTypes that show up on gigs.
 const RELATION_LABELS: Record<string, string> = {
@@ -71,22 +71,22 @@ const RELATION_LABELS: Record<string, string> = {
   isSupplementedBy: "Supplemented by",
   isCitedBy: "Cited by",
   cites: "Cites",
-}
+};
 
-const isDoi = (id?: string) => !!id && /^10\.\d/.test(id)
+const isDoi = (id?: string) => !!id && /^10\.\d/.test(id);
 const relatedHref = (w: RelatedWork) =>
-  w.url ?? (isDoi(w.identifier) ? `https://doi.org/${w.identifier}` : (w.identifier ?? "#"))
+  w.url ?? (isDoi(w.identifier) ? `https://doi.org/${w.identifier}` : (w.identifier ?? "#"));
 const relatedText = (w: RelatedWork) =>
   isDoi(w.identifier)
     ? w.identifier!
-    : (w.url ?? w.identifier ?? "").replace(/^https?:\/\//, "").replace(/\/$/, "")
+    : (w.url ?? w.identifier ?? "").replace(/^https?:\/\//, "").replace(/\/$/, "");
 
 const phrases = [
   ...SITE_BASELINE_PHRASES,
   title,
   ...(venue ? [venue] : []),
   ...(curators ? [curators] : []),
-]
+];
 ---
 
 <BaseLayout title={title} description={description} phrases={phrases}>
@@ -101,7 +101,9 @@ const phrases = [
         <dt>Venue</dt>
         <dd>
           {venue_url ? <a href={venue_url}>{venue ?? venue_url}</a> : venue}
-          {archived_venue_url && <> (<a href={archived_venue_url} aria-label="archived venue page">archived</a>)</>}
+          {archived_venue_url && (
+            <> (<a href={archived_venue_url} aria-label="archived venue page">archived</a>)</>
+          )}
         </dd>
       </>
     )}
@@ -110,7 +112,9 @@ const phrases = [
         <dt>Event</dt>
         <dd>
           {event_url ? <a href={event_url}>{event ?? "Event page"}</a> : event}
-          {archived_event_url && <> (<a href={archived_event_url} aria-label="archived event page">archived</a>)</>}
+          {archived_event_url && (
+            <> (<a href={archived_event_url} aria-label="archived event page">archived</a>)</>
+          )}
         </dd>
       </>
     )}
@@ -162,19 +166,18 @@ const phrases = [
     Part of <a href="/livecoding/research-statement/">a two-decade live-coding body of work</a>.
   </p>
 
-  {related_works && related_works.length > 0 && (
-    <section class="related-works" aria-labelledby="related-works-heading">
-      <h2 id="related-works-heading">Related works</h2>
-      <ul>
-        {related_works.map((w) => (
-          <li>
-            <span class="relation">{RELATION_LABELS[w.relation] ?? w.relation}:</span>{" "}
-            <a href={relatedHref(w)}>{relatedText(w)}</a>
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+  {related_works && related_works.length > 0 && <section
+    class="related-works"
+    aria-labelledby="related-works-heading"
+  >
+    <h2 id="related-works-heading">Related works</h2>
+    <ul>
+      {related_works.map((w) => <li>
+        <span class="relation">{RELATION_LABELS[w.relation] ?? w.relation}:</span>{" "}
+        <a href={relatedHref(w)}>{relatedText(w)}</a>
+      </li>)}
+    </ul>
+  </section>}
 
   {doi && date && (
     <CiteWidget

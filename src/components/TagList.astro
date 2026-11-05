@@ -1,18 +1,14 @@
 ---
 interface Props {
-  tags: string[]
+  tags: string[];
 }
 
-const { tags } = Astro.props
+const { tags } = Astro.props;
 ---
 
-{tags.length > 0 && (
-  <p class="tag-container">
-    {tags.map(tag => (
-      <a href={`/blog/tag/${tag}/`} class="tag">{tag}</a>
-    ))}
-  </p>
-)}
+{tags.length > 0 && <p class="tag-container">
+  {tags.map((tag) => <a href={`/blog/tag/${tag}/`} class="tag">{tag}</a>)}
+</p>}
 
 <style>
   .tag-container {
@@ -30,7 +26,9 @@ const { tags } = Astro.props
     font-size: var(--step--1);
     color: var(--text-2);
     text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
   }
 
   .tag:hover {

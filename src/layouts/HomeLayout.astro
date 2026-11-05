@@ -1,21 +1,21 @@
 ---
-import { getPosts } from "../utils/posts"
-import BaseLayout from "./BaseLayout.astro"
-import SiteFooter from "../components/SiteFooter.astro"
-import { SITE_BASELINE_PHRASES } from "../data/hero"
+import { getPosts } from "../utils/posts";
+import BaseLayout from "./BaseLayout.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { SITE_BASELINE_PHRASES } from "../data/hero";
 
 interface Props {
-  description?: string
-  image?: string
+  description?: string;
+  image?: string;
   frontmatter?: {
-    description?: string
-    image?: string
-  }
+    description?: string;
+    image?: string;
+  };
 }
 
-const props = Astro.props
-const description = props.description ?? props.frontmatter?.description
-const image = props.image ?? props.frontmatter?.image
+const props = Astro.props;
+const description = props.description ?? props.frontmatter?.description;
+const image = props.image ?? props.frontmatter?.image;
 
 const curatedPhrases = [
   "Ben Swift",
@@ -39,11 +39,11 @@ const curatedPhrases = [
   "Extempore",
   "human-computer interaction",
   "creative computing",
-]
+];
 
-const blogTitles = (await getPosts()).map((post) => post.data.title)
+const blogTitles = (await getPosts()).map((post) => post.data.title);
 
-const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
+const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles];
 ---
 
 <BaseLayout description={description} image={image} phrases={heroPhrases} tallHero>
@@ -60,7 +60,9 @@ const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
     </a>
     <a href="/research/" class="feature-card">
       <h2>Research</h2>
-      <p>Peer-reviewed publications on AI/LLMs, creative computing, and human-computer interaction.</p>
+      <p>
+        Peer-reviewed publications on AI/LLMs, creative computing, and human-computer interaction.
+      </p>
     </a>
     <a href="/teaching/" class="feature-card">
       <h2>Teaching</h2>

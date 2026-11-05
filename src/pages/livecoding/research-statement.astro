@@ -1,7 +1,7 @@
 ---
-import PageLayout from "../../layouts/PageLayout.astro"
-import { Content as ResearchStatement } from "../../data/livecoding-research-statement.md"
-import { livecodingCollection } from "../../data/livecoding-collection"
+import PageLayout from "../../layouts/PageLayout.astro";
+import { Content as ResearchStatement } from "../../data/livecoding-research-statement.md";
+import { livecodingCollection } from "../../data/livecoding-collection";
 
 // Per-anchor significance notes (TASK-23.05). Drafted via benswift-writer +
 // jamesian (LAYERED), assessor register to match the statement above. Each
@@ -45,7 +45,7 @@ const anchors: { slug: string; label: string; note: string }[] = [
     label: "ICLC 2024 — Shanghai",
     note: "The International Conference on Live Coding is the field's flagship international gathering, and its 2024 edition placed the work on the stage of the Shanghai Concert Hall, selected through the conference's juried programme. The set paired my from-scratch Extempore music with Leon Volbers's live-coded visuals and Beverly Edwards's live drawing on the adjacent screen, an instance of the audiovisual-duo thread that recurs across the work. A full video recording, produced by the NYU Shanghai team, documents it alongside the peer-reviewed proceedings.",
   },
-]
+];
 ---
 
 <PageLayout
@@ -56,37 +56,33 @@ const anchors: { slug: string; label: string; note: string }[] = [
   <p class="back-link"><a href="/livecoding/">&larr; Live-coding gigs</a></p>
 
   <p>
-    This is the formal research statement for my live-coding body of work, and the
-    description attached to the collection's DOI. For the warm tour through the gigs
-    themselves, head back to the <a href="/livecoding/">main page</a>.
+    This is the formal research statement for my live-coding body of work, and the description
+    attached to the collection's DOI. For the warm tour through the gigs themselves, head back to
+    the <a href="/livecoding/">main page</a>.
   </p>
 
   <ResearchStatement />
 
-  {livecodingCollection && (
-    <p class="collection-cite">
-      Cite the body of work: <a href={livecodingCollection.doiUrl}>{livecodingCollection.conceptDoi}</a>
-      {" · "}
-      <a href={livecodingCollection.community.url}>Zenodo community</a>
-    </p>
-  )}
+  {livecodingCollection && <p class="collection-cite">
+    Cite the body of work:
+    <a href={livecodingCollection.doiUrl}>{livecodingCollection.conceptDoi}</a>
+    {" · "}
+    <a href={livecodingCollection.community.url}>Zenodo community</a>
+  </p>}
 
   <hr />
 
   <section class="anchor-notes">
     <h2>Anchor performances</h2>
     <p>
-      Seven performances anchor the body of work, selected for the field's premier
-      international (ICLC, ISEA) and regional (ACMC) venues. Each note records the
-      venue's standing, the basis on which the set was chosen, what made it
-      distinctive, and how it is documented.
+      Seven performances anchor the body of work, selected for the field's premier international
+      (ICLC, ISEA) and regional (ACMC) venues. Each note records the venue's standing, the basis on
+      which the set was chosen, what made it distinctive, and how it is documented.
     </p>
-    {anchors.map((a) => (
-      <article class="anchor-note">
-        <h3><a href={`/livecoding/${a.slug}/`}>{a.label}</a></h3>
-        <p set:html={a.note} />
-      </article>
-    ))}
+    {anchors.map((a) => <article class="anchor-note">
+      <h3><a href={`/livecoding/${a.slug}/`}>{a.label}</a></h3>
+      <p set:html={a.note} />
+    </article>)}
   </section>
 </PageLayout>
 

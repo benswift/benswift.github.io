@@ -1,38 +1,31 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro"
+import PageLayout from "../layouts/PageLayout.astro";
 
 const description =
-  "Short CV — Ben Swift, creative technologist working in the open at the intersection of AI, creative practice and public understanding."
+  "Short CV — Ben Swift, creative technologist working in the open at the intersection of AI, creative practice and public understanding.";
 ---
 
-<PageLayout
-  title="Short CV"
-  description={description}
-  relativePath="src/pages/cv-short.astro"
->
+<PageLayout title="Short CV" description={description} relativePath="src/pages/cv-short.astro">
   <header class="cv-masthead" slot="masthead">
     <h1>Ben Swift</h1>
     <p class="cv-role">Creative technologist &middot; artist-researcher</p>
-    <p class="cv-affil">
-      Senior Lecturer &amp; Cybernetic Studio Lead, ANU School of Cybernetics
-    </p>
+    <p class="cv-affil">Senior Lecturer &amp; Cybernetic Studio Lead, ANU School of Cybernetics</p>
     <p class="cv-contact">
-      <a href="https://benswift.me">benswift.me</a> &middot; <a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a> &middot; Canberra, Australia
+      <a href="https://benswift.me">benswift.me</a> &middot;
+      <a href="mailto:ben.swift@anu.edu.au">ben.swift@anu.edu.au</a> &middot; Canberra, Australia
     </p>
   </header>
 
   <article class="cv-short">
     <p class="cv-bio">
-      Ben Swift is a creative technologist who works in the open. He started out
-      as a live coder, writing software on stage that makes music while an
-      audience watches the code change, and has treated the process as the thing
-      worth showing ever since. He leads the Cybernetic Studio at the Australian
-      National University, whose Human-Scale AI project makes machine learning
-      legible: neural networks you can touch, language models you can hold, and
-      hands-on workshops that have walked everyone from primary-school students
-      to senior public servants through the machinery of a language model.
-      Running underneath is a conviction that AI is a cultural question as much
-      as a technical one, and that the people it acts on deserve to see how it
+      Ben Swift is a creative technologist who works in the open. He started out as a live coder,
+      writing software on stage that makes music while an audience watches the code change, and has
+      treated the process as the thing worth showing ever since. He leads the Cybernetic Studio at
+      the Australian National University, whose Human-Scale AI project makes machine learning
+      legible: neural networks you can touch, language models you can hold, and hands-on workshops
+      that have walked everyone from primary-school students to senior public servants through the
+      machinery of a language model. Running underneath is a conviction that AI is a cultural
+      question as much as a technical one, and that the people it acts on deserve to see how it
       works.
     </p>
 
@@ -41,54 +34,52 @@ const description =
       <div class="cv-row">
         <span class="yr">2026&ndash;</span>
         <span
-          ><strong>Slop Salon</strong> (with Jess Herrington). Six AI agents making
-          art on a shared Bluesky feed, booted from identical files to test whether
-          watching each other is enough to pull them into six distinct artists. The
-          studio is public and the practice is the work: every agent's notebook and
-          commit history is open to read.</span
+          ><strong>Slop Salon</strong> (with Jess Herrington). Six AI agents making art on a shared
+          Bluesky feed, booted from identical files to test whether watching each other is enough to
+          pull them into six distinct artists. The studio is public and the practice is the work:
+          every agent's notebook and commit history is open to read.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2024&ndash;</span>
         <span
-          ><strong>The LLM Library / LLMs Unplugged.</strong> A public-facing project
-          that makes language models legible with no computer in the room: n-gram models
-          you build and run by hand with pen, paper and dice, and a shelf of hardbound
-          books that each hold a model trained on a single novel. The workshops have
-          reached 600+ people from school classrooms to the senior public service; the
-          books are exhibited artefacts in their own right. Written up for ACE 2026.</span
+          ><strong>The LLM Library / LLMs Unplugged.</strong> A public-facing project that makes
+          language models legible with no computer in the room: n-gram models you build and run by
+          hand with pen, paper and dice, and a shelf of hardbound books that each hold a model
+          trained on a single novel. The workshops have reached 600+ people from school classrooms
+          to the senior public service; the books are exhibited artefacts in their own right.
+          Written up for ACE 2026.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2024</span>
         <span
-          ><strong>Perceptron Apparatus.</strong> A 1.2-metre wooden instrument of
-          concentric sliders that runs a small neural network's matrix multiplications
-          by hand: an abacus for deep learning.</span
+          ><strong>Perceptron Apparatus.</strong> A 1.2-metre wooden instrument of concentric
+          sliders that runs a small neural network's matrix multiplications by hand: an abacus for
+          deep learning.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2026</span>
         <span
-          ><strong>LLM Brainscan.</strong> Every trainable parameter of a transformer
-          mapped onto an 8K display, one pixel per weight, updating live as the model
-          learns to write.</span
+          ><strong>LLM Brainscan.</strong> Every trainable parameter of a transformer mapped onto an
+          8K display, one pixel per weight, updating live as the model learns to write.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2026</span>
         <span
-          ><strong>Imprint.</strong> A typesetter that presses an institution's visual
-          identity over any document, genuine or fabricated, until the real and the
-          invented read exactly alike.</span
+          ><strong>Imprint.</strong> A typesetter that presses an institution's visual identity over
+          any document, genuine or fabricated, until the real and the invented read exactly
+          alike.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2025</span>
         <span
-          ><strong>APS AI Tracker.</strong> Automated monitoring of the
-          AI transparency statements published by Australian Government departments,
-          tracking how the policies shift over time.</span
+          ><strong>APS AI Tracker.</strong> Automated monitoring of the AI transparency statements
+          published by Australian Government departments, tracking how the policies shift over
+          time.</span
         >
       </div>
     </section>
@@ -113,9 +104,7 @@ const description =
       </div>
       <div class="cv-row">
         <span class="yr">2021</span>
-        <span
-          ><strong>Livecoding for leverage.</strong> Design Guild NSW (invited).</span
-        >
+        <span><strong>Livecoding for leverage.</strong> Design Guild NSW (invited).</span>
       </div>
       <div class="cv-row">
         <span class="yr">2020</span>
@@ -126,15 +115,11 @@ const description =
       </div>
       <div class="cv-row">
         <span class="yr">2019</span>
-        <span
-          ><strong>Musical instructions.</strong> Lake Tuggeranong College STEM Camp.</span
-        >
+        <span><strong>Musical instructions.</strong> Lake Tuggeranong College STEM Camp.</span>
       </div>
       <div class="cv-row">
         <span class="yr">2018</span>
-        <span
-          ><strong>The World Since Google.</strong> University of the Third Age (U3A).</span
-        >
+        <span><strong>The World Since Google.</strong> University of the Third Age (U3A).</span>
       </div>
     </section>
 
@@ -147,41 +132,35 @@ const description =
       <div class="cv-row">
         <span class="yr">2024</span>
         <span
-          ><strong>Coloring Code</strong>, International Conference on Live Coding
-          (ICLC). Shanghai Concert Hall, China.</span
+          ><strong>Coloring Code</strong>, International Conference on Live Coding (ICLC). Shanghai
+          Concert Hall, China.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2020</span>
-        <span
-          ><strong>ICLC&nbsp;'20 Algorave</strong>. Flannery's Bar, Limerick,
-          Ireland.</span
-        >
+        <span><strong>ICLC&nbsp;'20 Algorave</strong>. Flannery's Bar, Limerick, Ireland.</span>
       </div>
       <div class="cv-row">
         <span class="yr">2019</span>
         <span
-          ><strong>Colour Coded</strong>, <em>The DNA of Colour</em> exhibition.
-          Drill Hall Gallery, Canberra.</span
+          ><strong>Colour Coded</strong>, <em>The DNA of Colour</em> exhibition. Drill Hall Gallery,
+          Canberra.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2014</span>
-        <span
-          ><strong>You Are Here Festival</strong>. Canberra Museum and Gallery.</span
-        >
+        <span><strong>You Are Here Festival</strong>. Canberra Museum and Gallery.</span>
       </div>
       <div class="cv-row">
         <span class="yr">2013</span>
         <span
-          ><strong>MuMe Algorave</strong>, International Symposium on Electronic Art
-          (ISEA). Sydney.</span
+          ><strong>MuMe Algorave</strong>, International Symposium on Electronic Art (ISEA).
+          Sydney.</span
         >
       </div>
       <p class="cv-note">
-        Selected from 25+ performances since 2008; full archive at <a
-          href="https://benswift.me/livecoding/">benswift.me/livecoding</a
-        >.
+        Selected from 25+ performances since 2008; full archive at
+        <a href="https://benswift.me/livecoding/">benswift.me/livecoding</a>.
       </p>
     </section>
 
@@ -224,17 +203,15 @@ const description =
       <div class="cv-row">
         <span class="yr">2026</span>
         <span
-          >LLMs Unplugged: Teaching Resources for a ChatGPT World. <em
-            >Australasian Computing Education Conference (ACE)</em
-          >.</span
+          >LLMs Unplugged: Teaching Resources for a ChatGPT World.
+          <em>Australasian Computing Education Conference (ACE)</em>.</span
         >
       </div>
       <div class="cv-row">
         <span class="yr">2025</span>
         <span
-          >Emerging Paradigms in Human&ndash;AI Creativity. <em
-            >Human-Computer Creativity</em
-          > (book chapter).</span
+          >Emerging Paradigms in Human&ndash;AI Creativity. <em>Human-Computer Creativity</em> (book
+          chapter).</span
         >
       </div>
       <div class="cv-row">
@@ -244,9 +221,7 @@ const description =
       <div class="cv-row">
         <span class="yr">2018</span>
         <span
-          >The Other Side: Algorithm as Ritual in Artificial Intelligence. <em
-            >alt.CHI</em
-          >.</span
+          >The Other Side: Algorithm as Ritual in Artificial Intelligence. <em>alt.CHI</em>.</span
         >
       </div>
       <div class="cv-row">
@@ -256,9 +231,8 @@ const description =
     </section>
 
     <p class="cv-foot">
-      Full CV, complete publication list and performance archive at <a
-        href="https://benswift.me/cv/">benswift.me/cv</a
-      >.
+      Full CV, complete publication list and performance archive at
+      <a href="https://benswift.me/cv/">benswift.me/cv</a>.
     </p>
   </article>
 </PageLayout>

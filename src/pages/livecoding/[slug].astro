@@ -1,14 +1,14 @@
 ---
-import { getCollection, render } from "astro:content"
-import GigLayout from "../../layouts/GigLayout.astro"
+import { getCollection, render } from "astro:content";
+import GigLayout from "../../layouts/GigLayout.astro";
 
 export async function getStaticPaths() {
-  const gigs = await getCollection("livecoding")
-  return gigs.map((gig) => ({ params: { slug: gig.id }, props: { gig } }))
+  const gigs = await getCollection("livecoding");
+  return gigs.map((gig) => ({ params: { slug: gig.id }, props: { gig } }));
 }
 
-const { gig } = Astro.props
-const { Content } = await render(gig)
+const { gig } = Astro.props;
+const { Content } = await render(gig);
 ---
 
 <GigLayout

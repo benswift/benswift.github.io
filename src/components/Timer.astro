@@ -20,37 +20,16 @@ const ss = totalSeconds % 60;
 const initialLabel = `${mm}:${String(ss).padStart(2, "0")}`;
 ---
 
-<div
-  class:list={["timer", { overlay }]}
-  data-timer
-  data-total={totalSeconds}
-  role="timer"
->
+<div class:list={["timer", { overlay }]} data-timer data-total={totalSeconds} role="timer">
   <span class="time" data-time>
     {initialLabel}
   </span>
 
   <div class="timer-controls">
-    <button type="button" class="ctl" data-toggle aria-label="Start timer">
-      start
-    </button>
-    <button type="button" class="ctl" data-reset aria-label="Reset timer">
-      reset
-    </button>
-    <button
-      type="button"
-      class="ctl"
-      data-adjust="60"
-      aria-label="Add one minute"
-    >
-      +1
-    </button>
-    <button
-      type="button"
-      class="ctl"
-      data-adjust="-60"
-      aria-label="Subtract one minute"
-    >
+    <button type="button" class="ctl" data-toggle aria-label="Start timer">start</button>
+    <button type="button" class="ctl" data-reset aria-label="Reset timer">reset</button>
+    <button type="button" class="ctl" data-adjust="60" aria-label="Add one minute">+1</button>
+    <button type="button" class="ctl" data-adjust="-60" aria-label="Subtract one minute">
       &minus;1
     </button>
   </div>
@@ -91,10 +70,7 @@ const initialLabel = `${mm}:${String(ss).padStart(2, "0")}`;
       root.classList.toggle("running", running);
       root.classList.toggle("finished", remaining <= 0);
       toggleBtn.textContent = running ? "pause" : "start";
-      toggleBtn.setAttribute(
-        "aria-label",
-        running ? "Pause timer" : "Start timer",
-      );
+      toggleBtn.setAttribute("aria-label", running ? "Pause timer" : "Start timer");
       root.setAttribute("aria-label", `${format(remaining)} remaining`);
     };
 
@@ -141,16 +117,13 @@ const initialLabel = `${mm}:${String(ss).padStart(2, "0")}`;
     toggleBtn.addEventListener("click", toggle);
     root.querySelector("[data-reset]")?.addEventListener("click", reset);
     root.querySelectorAll<HTMLElement>("[data-adjust]").forEach((btn) => {
-      btn.addEventListener("click", () =>
-        adjust(Number(btn.dataset.adjust) * 1000),
-      );
+      btn.addEventListener("click", () => adjust(Number(btn.dataset.adjust) * 1000));
     });
 
     render();
   }
 
-  const boot = () =>
-    document.querySelectorAll<HTMLElement>("[data-timer]").forEach(initTimer);
+  const boot = () => document.querySelectorAll<HTMLElement>("[data-timer]").forEach(initTimer);
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", boot);

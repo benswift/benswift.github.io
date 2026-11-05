@@ -1,24 +1,24 @@
 ---
-import "../styles/global.css"
-import type { ImageMetadata } from "astro"
-import { Font, getImage } from "astro:assets"
-import Head from "../components/Head.astro"
-import Nav from "../components/Nav.astro"
-import HeroCanvas from "../components/HeroCanvas.astro"
-import { SITE_BASELINE_PHRASES } from "../data/hero"
-import defaultHero from "../assets/og-default.avif"
+import "../styles/global.css";
+import type { ImageMetadata } from "astro";
+import { Font, getImage } from "astro:assets";
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import HeroCanvas from "../components/HeroCanvas.astro";
+import { SITE_BASELINE_PHRASES } from "../data/hero";
+import defaultHero from "../assets/og-default.avif";
 
 interface Props {
-  title?: string
-  description?: string
-  image?: string
-  isPost?: boolean
-  date?: string
-  atUri?: string
-  phrases?: string[]
-  heroImage?: ImageMetadata
+  title?: string;
+  description?: string;
+  image?: string;
+  isPost?: boolean;
+  date?: string;
+  atUri?: string;
+  phrases?: string[];
+  heroImage?: ImageMetadata;
   // The home page's taller hero; other pages size it to their masthead.
-  tallHero?: boolean
+  tallHero?: boolean;
 }
 
 const {
@@ -31,21 +31,21 @@ const {
   phrases = [...SITE_BASELINE_PHRASES],
   heroImage = defaultHero,
   tallHero = false,
-} = Astro.props
+} = Astro.props;
 
 // Layouts put the page title in the "masthead" slot, which sits over the hero.
-const heroVariant = tallHero ? "tall" : Astro.slots.has("masthead") ? "masthead" : "band"
+const heroVariant = tallHero ? "tall" : Astro.slots.has("masthead") ? "masthead" : "band";
 
 // WebP, not PNG: the og:image (also twitter:image) is only ever fetched by link
 // unfurlers and reduced-motion users, and WebP is ~35x smaller than PNG here
 // (~15 KB vs ~530 KB) while still decoding on every platform that previews links.
-const ogImage = await getImage({ src: heroImage, format: "webp", width: 1200, quality: 80 })
+const ogImage = await getImage({ src: heroImage, format: "webp", width: 1200, quality: 80 });
 const heroFallbackImage = await getImage({
   src: heroImage,
   format: "avif",
   width: 1280,
   quality: 50,
-})
+});
 ---
 
 <html lang="en">

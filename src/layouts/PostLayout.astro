@@ -1,23 +1,23 @@
 ---
-import type { ImageMetadata } from "astro"
-import BaseLayout from "./BaseLayout.astro"
-import TagList from "../components/TagList.astro"
-import CitePost from "../components/CitePost.astro"
-import SiteFooter from "../components/SiteFooter.astro"
-import { formatDate } from "../utils/date"
-import { getHeroImage } from "../utils/hero-image"
-import { SITE_BASELINE_PHRASES } from "../data/hero"
+import type { ImageMetadata } from "astro";
+import BaseLayout from "./BaseLayout.astro";
+import TagList from "../components/TagList.astro";
+import CitePost from "../components/CitePost.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { formatDate } from "../utils/date";
+import { getHeroImage } from "../utils/hero-image";
+import { SITE_BASELINE_PHRASES } from "../data/hero";
 
 interface Props {
-  title: string
-  date: string
-  tags: string[]
-  description?: string
-  heroPhrases?: string[]
-  atUri?: string
-  slug: string
-  relativePath?: string
-  heroImage?: ImageMetadata
+  title: string;
+  date: string;
+  tags: string[];
+  description?: string;
+  heroPhrases?: string[];
+  atUri?: string;
+  slug: string;
+  relativePath?: string;
+  heroImage?: ImageMetadata;
 }
 
 const {
@@ -30,14 +30,14 @@ const {
   slug,
   relativePath,
   heroImage: heroImageOverride,
-} = Astro.props
+} = Astro.props;
 
-const postDate = formatDate(new Date(date))
-const postUrl = `https://benswift.me${Astro.url.pathname}`
+const postDate = formatDate(new Date(date));
+const postUrl = `https://benswift.me${Astro.url.pathname}`;
 
-const heroSlug = `${date}-${slug}`
-const heroImage = heroImageOverride ?? getHeroImage(heroSlug)
-const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])]
+const heroSlug = `${date}-${slug}`;
+const heroImage = heroImageOverride ?? getHeroImage(heroSlug);
+const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])];
 ---
 
 <BaseLayout
@@ -60,19 +60,19 @@ const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])]
     // The juttu embed hard-codes its submit button label and re-sets it after
     // every "Posting…" cycle, so relabelling needs an observer, not a one-shot
     // rename. Sized to match the sort pills in global.css.
-    const container = document.getElementById("juttu-comments")
+    const container = document.getElementById("juttu-comments");
     if (container) {
       const relabel = () => {
         for (const btn of container.querySelectorAll(".juttu-submit-btn")) {
-          if (btn.textContent === "Post comment") btn.textContent = "Post"
+          if (btn.textContent === "Post comment") btn.textContent = "Post";
         }
-      }
-      relabel()
+      };
+      relabel();
       new MutationObserver(relabel).observe(container, {
         childList: true,
         subtree: true,
         characterData: true,
-      })
+      });
     }
   </script>
   <CitePost title={title} date={date} slug={slug} url={postUrl} atUri={atUri} />

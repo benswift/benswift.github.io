@@ -1,33 +1,33 @@
 ---
-import { getPublicationAtUri } from "../utils/atproto"
-import { blogPostingJsonLd, serialiseJsonLd, websiteJsonLd } from "../utils/json-ld"
+import { getPublicationAtUri } from "../utils/atproto";
+import { blogPostingJsonLd, serialiseJsonLd, websiteJsonLd } from "../utils/json-ld";
 
 interface Props {
-  title?: string
-  description?: string
-  image: string
-  isPost?: boolean
-  date?: string
-  atUri?: string
+  title?: string;
+  description?: string;
+  image: string;
+  isPost?: boolean;
+  date?: string;
+  atUri?: string;
 }
 
-const { title, description, image, isPost = false, date, atUri } = Astro.props
+const { title, description, image, isPost = false, date, atUri } = Astro.props;
 
 // Bluesky's enhanced link cards verify articles against BOTH the document and
 // publication records, so the two rel tags travel together.
-const publicationAtUri = atUri ? getPublicationAtUri() : undefined
+const publicationAtUri = atUri ? getPublicationAtUri() : undefined;
 
-const siteTitle = "benswift.me"
-const hostname = "https://benswift.me"
+const siteTitle = "benswift.me";
+const hostname = "https://benswift.me";
 
-const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
-const url = new URL(Astro.url.pathname, hostname).href
-const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`
+const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle;
+const url = new URL(Astro.url.pathname, hostname).href;
+const imageUrl = image.startsWith("http") ? image : `${hostname}${image}`;
 
 const jsonLd =
   isPost && title && date
     ? blogPostingJsonLd({ title, url, date, description, image: imageUrl, atUri })
-    : websiteJsonLd()
+    : websiteJsonLd();
 ---
 
 <meta charset="utf-8" />
@@ -61,7 +61,16 @@ const jsonLd =
 {publicationAtUri && <link rel="site.standard.publication" href={publicationAtUri} />}
 
 <!-- Juttu comments (AT Protocol powered) -->
-{atUri && <script is:inline defer src="https://cdn.jsdelivr.net/npm/juttu@0.3.5/juttu-embed.js" integrity="sha384-5QRt2ZnQcKVdUqttMGfMmfMpcn2BzEI7rqmxoPtY2Z/pqgoUaAwpoBolPJg61EKD" crossorigin="anonymous" data-theme="dark"></script>}
+{atUri && (
+  <script
+    is:inline
+    defer
+    src="https://cdn.jsdelivr.net/npm/juttu@0.3.5/juttu-embed.js"
+    integrity="sha384-5QRt2ZnQcKVdUqttMGfMmfMpcn2BzEI7rqmxoPtY2Z/pqgoUaAwpoBolPJg61EKD"
+    crossorigin="anonymous"
+    data-theme="dark"
+  ></script>
+)}
 
 <!-- Citation metadata -->
 {isPost && title && <meta name="citation_title" content={title} />}

@@ -1,20 +1,20 @@
 ---
-import CiteWidget from "./CiteWidget.astro"
-import { generateBibtex, generateCiteKey } from "../utils/citation"
+import CiteWidget from "./CiteWidget.astro";
+import { generateBibtex, generateCiteKey } from "../utils/citation";
 
 interface Props {
-  title: string
-  date: string
-  slug: string
-  url: string
-  atUri?: string
+  title: string;
+  date: string;
+  slug: string;
+  url: string;
+  atUri?: string;
 }
 
-const { title, date, slug, url: postUrl, atUri } = Astro.props
+const { title, date, slug, url: postUrl, atUri } = Astro.props;
 
-const year = date.split("-")[0] ?? ""
-const month = date.split("-")[1] ?? ""
-const citeKey = generateCiteKey(year, slug)
+const year = date.split("-")[0] ?? "";
+const month = date.split("-")[1] ?? "";
+const citeKey = generateCiteKey(year, slug);
 const bibtex = generateBibtex({
   citeKey,
   author: "Ben Swift",
@@ -23,7 +23,7 @@ const bibtex = generateBibtex({
   year,
   month,
   atUri,
-})
+});
 ---
 
 <CiteWidget bibtex={bibtex} label="Cite this post" />

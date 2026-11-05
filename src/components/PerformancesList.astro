@@ -1,5 +1,5 @@
 ---
-import { getGigs } from "../utils/gigs"
+import { getGigs } from "../utils/gigs";
 
 const gigs = (await getGigs()).map((gig) => ({
   title: gig.data.title,
@@ -12,47 +12,52 @@ const gigs = (await getGigs()).map((gig) => ({
   videos: gig.data.videos,
   doi: gig.data.doi,
   type: gig.data.type,
-}))
+}));
 
-const gigsByYear = Map.groupBy(gigs, (gig) => gig.year)
+const gigsByYear = Map.groupBy(gigs, (gig) => gig.year);
 ---
 
 <div class="bibliography">
-  {[...gigsByYear].map(([year, yearGigs]) => (
-    <div class="year-section">
-      <h3 id={`perf-${year}`}>{year}</h3>
-      <ul class="pub-list">
-        {yearGigs.map((gig) => (
-          <li class="pub-item">
-            <p class="pub-title">
-              <a href={gig.url}>{gig.title}</a>
-            </p>
-            <p class="pub-authors">
-              Ben Swift{gig.artists && gig.artists.length > 0 && `, ${gig.artists.map((a) => a.name).join(", ")}`}
-            </p>
-            {gig.event && (
-              <p class="pub-venue">
-                {gig.event_url ? (
-                  <a href={gig.event_url} target="_blank" rel="noopener">{gig.event}</a>
-                ) : (
-                  gig.event
-                )}
-              </p>
-            )}
-            {gig.venue && <p class="pub-venue">{gig.venue}</p>}
-            {(gig.videos?.length || gig.doi) && (
-              <p class="pub-pdf">
-                {gig.videos?.map((v, i) => (
-                  <>{i > 0 && " · "}<a href={v.url} target="_blank" rel="noopener" aria-label={`${v.label ?? "video"}: ${gig.title}`}>{v.label ?? "video"}</a></>
-                ))}
-                {gig.doi && (
-                  <>{gig.videos?.length ? " · " : ""}<a href={`https://doi.org/${gig.doi}`} aria-label={`DOI: ${gig.title}`}>DOI</a></>
-                )}
-              </p>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
-  ))}
+  {[...gigsByYear].map(([year, yearGigs]) => <div class="year-section">
+    <h3 id={`perf-${year}`}>{year}</h3>
+    <ul class="pub-list">
+      {yearGigs.map((gig) => <li class="pub-item">
+        <p class="pub-title">
+          <a href={gig.url}>{gig.title}</a>
+        </p>
+        <p class="pub-authors">
+          Ben
+          Swift{gig.artists &&
+            gig.artists.length > 0 &&
+            `, ${gig.artists.map((a) => a.name).join(", ")}`}
+        </p>
+        {gig.event && <p class="pub-venue">
+          {gig.event_url ? (
+            <a href={gig.event_url} target="_blank" rel="noopener">{gig.event}</a>
+          ) : (
+            gig.event
+          )}
+        </p>}
+        {gig.venue && <p class="pub-venue">{gig.venue}</p>}
+        {(gig.videos?.length || gig.doi) && <p class="pub-pdf">
+          {gig.videos?.map((v, i) => (
+            <>{i > 0 && " · "}<a
+                href={v.url}
+                target="_blank"
+                rel="noopener"
+                aria-label={`${v.label ?? "video"}: ${gig.title}`}
+                >{v.label ?? "video"}</a
+              ></>
+          ))}
+          {gig.doi && (
+            <>{gig.videos?.length ? " · " : ""}<a
+                href={`https://doi.org/${gig.doi}`}
+                aria-label={`DOI: ${gig.title}`}
+                >DOI</a
+              ></>
+          )}
+        </p>}
+      </li>)}
+    </ul>
+  </div>)}
 </div>

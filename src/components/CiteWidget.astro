@@ -3,11 +3,11 @@
 // renders the disclosure + copy button. Astro bundles the `script` tag to an
 // external module, so it stays within the no-unsafe-inline CSP.
 interface Props {
-  bibtex: string
-  label?: string
+  bibtex: string;
+  label?: string;
 }
 
-const { bibtex, label = "Cite this" } = Astro.props
+const { bibtex, label = "Cite this" } = Astro.props;
 ---
 
 <details class="cite-widget">
@@ -55,7 +55,9 @@ const { bibtex, label = "Cite this" } = Astro.props
     background: var(--bg-soft);
     color: var(--text-2);
     cursor: pointer;
-    transition: color 0.2s ease, border-color 0.2s ease;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease;
   }
 
   .cite-copy:hover {
@@ -72,13 +74,13 @@ const { bibtex, label = "Cite this" } = Astro.props
 <script>
   for (const btn of document.querySelectorAll<HTMLButtonElement>(".cite-widget .cite-copy")) {
     btn.addEventListener("click", async () => {
-      await navigator.clipboard.writeText(btn.dataset.bibtex ?? "")
-      btn.textContent = "Copied"
-      btn.classList.add("copied")
+      await navigator.clipboard.writeText(btn.dataset.bibtex ?? "");
+      btn.textContent = "Copied";
+      btn.classList.add("copied");
       setTimeout(() => {
-        btn.textContent = "Copy BibTeX"
-        btn.classList.remove("copied")
-      }, 2000)
-    })
+        btn.textContent = "Copy BibTeX";
+        btn.classList.remove("copied");
+      }, 2000);
+    });
   }
 </script>

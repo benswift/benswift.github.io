@@ -1,27 +1,26 @@
 ---
-import PageLayout from "../../layouts/PageLayout.astro"
-import PostList from "../../components/PostList.astro"
-import TagList from "../../components/TagList.astro"
-import { getPosts } from "../../utils/posts"
+import PageLayout from "../../layouts/PageLayout.astro";
+import PostList from "../../components/PostList.astro";
+import TagList from "../../components/TagList.astro";
+import { getPosts } from "../../utils/posts";
 
-const posts = await getPosts()
-const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].toSorted()
+const posts = await getPosts();
+const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].toSorted();
 ---
 
 <PageLayout title="Blog" relativePath="src/pages/blog/index.astro">
   <p>
-    This is my blog. Sometimes in these posts I'll talk about research or art
-    projects I'm involved with, sometimes I'll just ramble about other stuff which
-    is keeping me up at night. If you're interested in a certain topic, click on a
-    tag to see just the posts with that tag:
+    This is my blog. Sometimes in these posts I'll talk about research or art projects I'm involved
+    with, sometimes I'll just ramble about other stuff which is keeping me up at night. If you're
+    interested in a certain topic, click on a tag to see just the posts with that tag:
   </p>
 
   <TagList tags={allTags} />
 
   <p>
-    If anything here sparks your interest (or your ire!) then get in touch
-    via <a href="mailto:ben.swift@anu.edu.au">email</a> or discuss
-    on <a href="https://news.ycombinator.com">HN</a>.
+    If anything here sparks your interest (or your ire!) then get in touch via
+    <a href="mailto:ben.swift@anu.edu.au">email</a> or discuss on
+    <a href="https://news.ycombinator.com">HN</a>.
   </p>
 
   <hr />

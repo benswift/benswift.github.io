@@ -67,7 +67,14 @@
     { id: "sui", label: "Sui Jackson", start: "12:15", mins: 5, qa: 1, playoff: 4.5 },
     { id: "gareth", label: "Gareth Jones", start: "12:20", mins: 5, qa: 1, playoff: 4.5 },
     { id: "nadereh", label: "Nadereh Ghelich Khani", start: "12:25", mins: 5, qa: 1, playoff: 4.5 },
-    { id: "mcevoy", label: "Thomas McEvoy Zafiropulos", start: "12:30", mins: 5, qa: 1, playoff: 4.5 },
+    {
+      id: "mcevoy",
+      label: "Thomas McEvoy Zafiropulos",
+      start: "12:30",
+      mins: 5,
+      qa: 1,
+      playoff: 4.5,
+    },
     { id: "zhuotao", label: "Zhuotao Fang", start: "12:35", mins: 5, qa: 1, playoff: 4.5 },
     { id: "lunch", label: "Lunch", start: "12:45", mins: 60 },
     { id: "skills", label: "Skills: working with Claude", start: "13:45", mins: 90 },
@@ -264,7 +271,8 @@
   // if the clock is going, otherwise the one on screen. Never drops a slot
   // below a minute, and never touches the clock itself, so it's safe mid-talk.
   const adjustBy = (deltaMins: number) => {
-    const seg = talkStart != null && runningSeg ? runningSeg : currentId ? byId.get(currentId) : null;
+    const seg =
+      talkStart != null && runningSeg ? runningSeg : currentId ? byId.get(currentId) : null;
     if (!seg) return;
     const talkMins = seg.mins - (seg.qa ?? 0);
     const next = Math.max(60 - talkMins * 60, adjustOf(seg) + deltaMins * 60);
@@ -341,8 +349,7 @@
     background: rgba(20, 16, 26, 0.72);
     backdrop-filter: blur(6px);
     color: #e0e0e0;
-    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
-      monospace;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
     line-height: 1.15;
     text-align: left;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);

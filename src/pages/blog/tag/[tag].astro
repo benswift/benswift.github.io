@@ -1,18 +1,18 @@
 ---
-import PageLayout from "../../../layouts/PageLayout.astro"
-import PostList from "../../../components/PostList.astro"
-import { getPosts } from "../../../utils/posts"
+import PageLayout from "../../../layouts/PageLayout.astro";
+import PostList from "../../../components/PostList.astro";
+import { getPosts } from "../../../utils/posts";
 
 export async function getStaticPaths() {
-  const posts = await getPosts()
-  const tags = new Set(posts.flatMap((post) => post.data.tags))
+  const posts = await getPosts();
+  const tags = new Set(posts.flatMap((post) => post.data.tags));
   return [...tags].map((tag) => ({
     params: { tag },
     props: { tag, posts: posts.filter((post) => post.data.tags.includes(tag)) },
-  }))
+  }));
 }
 
-const { tag, posts } = Astro.props
+const { tag, posts } = Astro.props;
 ---
 
 <PageLayout title={`Posts tagged with "${tag}"`}>
