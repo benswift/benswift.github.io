@@ -15,3 +15,7 @@ minimumReleaseAgeExclude:
 overrides:
   fast-uri: ">=3.1.9"
   zod: ">=4.6.6"
+  # eslint (via @e18e/eslint-plugin, eslint-plugin-perfectionist) and
+  # @eslint/config-array pin minimatch ^10; GHSA minimatch globparts DoS.
+  # Drop once they allow >=11.0.1.
+  minimatch: ^11.0.1
