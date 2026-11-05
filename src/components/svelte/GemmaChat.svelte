@@ -27,7 +27,7 @@
     "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/main/gemma-4-E2B-it-web.task";
   // Keep the version in step with the exact pin in package.json (a unit test
   // checks); the JS bundle and this WASM must come from the same release.
-  const WASM_URL = "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@0.10.29/wasm";
+  const WASM_URL = "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-genai@0.10.30/wasm";
 
   function scrollToBottom() {
     if (messagesEl) {
