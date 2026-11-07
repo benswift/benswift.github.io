@@ -9,7 +9,7 @@ REPOS maps the public entries in the by-project chart to their GitHub page;
 render_svgs.py turns those labels into links.
 """
 
-FONT = "Helvetica, Arial, sans-serif"
+FONT = "Piazzolla, Georgia, serif"
 
 BG = "#1c1a1d"
 INK = "#e0e0e0"
@@ -65,10 +65,10 @@ CONFIG = {
 TARGET_WIDTH = 900
 
 PLOT_WIDTHS = {
-    "daily-heatmap": 858,
+    "daily-heatmap": 857,
     "rise-and-fall": 813,
-    "by-project": 622,
-    "cumulative": 856,
+    "by-project": 634,
+    "cumulative": 854,
     "diurnal": 845,
     "by-model": 396,  # per facet column, of which there are two
     "where-the-tokens-go": 778,

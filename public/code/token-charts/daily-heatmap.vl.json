@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "config": {
     "background": "#1c1a1d",
-    "font": "Helvetica, Arial, sans-serif",
+    "font": "Piazzolla, Georgia, serif",
     "axis": {
       "labelColor": "#aaa",
       "titleColor": "#aaa",
@@ -51,7 +51,7 @@
       "as": "bin"
     }
   ],
-  "width": 858,
+  "width": 857,
   "height": 88,
   "mark": {
     "type": "rect",

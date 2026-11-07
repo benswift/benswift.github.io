@@ -4,6 +4,10 @@ Needs the Vega CLI on PATH (`npm i -g vega vega-lite vega-cli`), which is what
 supplies vl2svg. The specs load their data by absolute URL, so the renderer is
 pointed at public/ as its base.
 
+Piazzolla must be visible to fontconfig (static instances at wght 400 and 600,
+opsz 14, made from src/assets/fonts/piazzolla-latin.woff2), or vl2svg measures
+the labels in a fallback font and they misalign in the browser.
+
 The by-project chart gets one extra pass: every panel label naming a public
 repository is wrapped in an SVG <a>, which works because the post inlines these
 files rather than referencing them from an <img>.

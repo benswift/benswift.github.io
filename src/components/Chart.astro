@@ -48,6 +48,14 @@ const svg = source.replace(
     height: auto;
   }
 
+  /* The SVGs name "Piazzolla", but the self-hosted face is registered under a
+     hashed family name, so point the text at it. Default figures match what
+     render_svgs.py measured the labels with. */
+  .chart :global(text) {
+    font-family: var(--font-family-base);
+    font-variant-numeric: normal;
+  }
+
   .chart :global(a) {
     cursor: pointer;
   }
