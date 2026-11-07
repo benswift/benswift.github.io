@@ -62,7 +62,8 @@
     color: var(--text-color);
     max-width: 36rem;
     width: 90vw;
-    padding: 1.5rem;
+    /* Room above the input for the Esc button. */
+    padding: 2.75rem 1.5rem 1.5rem;
     margin: 10vh auto;
     box-shadow:
       0 0 0 1px rgba(255, 255, 255, 0.06),
@@ -94,20 +95,53 @@
 </style>
 
 <style is:global>
+  /* Pagefind UI reads these custom properties; the rules below cover what
+     they don't reach. */
+  #pagefind-search {
+    --pagefind-ui-font: var(--font-family-base);
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: var(--highlight-color);
+    --pagefind-ui-text: var(--text-color);
+    --pagefind-ui-background: var(--bg-soft);
+    --pagefind-ui-border: var(--divider);
+    --pagefind-ui-tag: var(--bg-soft);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 4px;
+  }
+
   .pagefind-ui__search-input {
-    font-family: var(--font-family-base) !important;
-    background: var(--bg-soft) !important;
-    color: var(--text-color) !important;
-    border: 1px solid var(--divider) !important;
     border-radius: var(--radius-md) !important;
   }
 
+  .pagefind-ui__search-clear {
+    color: var(--text-2) !important;
+    background: var(--bg-soft) !important;
+  }
+
+  .pagefind-ui__message {
+    color: var(--text-2) !important;
+  }
+
   .pagefind-ui__result-link {
-    color: var(--highlight-color) !important;
+    color: var(--text-color) !important;
+  }
+
+  .pagefind-ui__result-link:hover {
+    color: var(--brand-1) !important;
   }
 
   .pagefind-ui__result-excerpt {
     color: var(--text-2) !important;
+  }
+
+  /* Pagefind reverts mark to the browser default (yellow); the id outranks it. */
+  #pagefind-search mark {
+    background: none;
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--highlight-color);
+    text-underline-offset: 0.2em;
   }
 
   .pagefind-ui__button {

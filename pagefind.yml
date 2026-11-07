@@ -1,0 +1,8 @@
+# Keep chrome and per-post boilerplate out of excerpts and sub-result titles:
+# the "#" heading anchors, the BibTeX in the cite widget, and the date and tag
+# chips at the top of each post.
+exclude_selectors:
+  - ".at-heading-anchor"
+  - ".cite-widget"
+  - ".tag-container"
+  - ".post-date"
