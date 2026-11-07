@@ -18,10 +18,14 @@ function readPage(route: string): string {
 
 function findBlogPostHtmls(): string[] {
   if (!existsSync(distDir)) return [];
-  return execSync("find dist/blog -path '*/20*/index.html' -type f", { encoding: "utf8" })
-    .trim()
-    .split("\n")
-    .filter(Boolean);
+  return (
+    execSync("find dist/blog -path '*/20*/index.html' -type f", { encoding: "utf8" })
+      .trim()
+      .split("\n")
+      .filter(Boolean)
+      // Skip the meta-refresh stubs Astro writes for `redirects` in astro.config.ts.
+      .filter((file) => !/http-equiv="refresh"/.test(readFileSync(file, "utf8")))
+  );
 }
 
 describe.skipIf(!existsSync(distDir))("color-scheme meta tag (dark-mode guide)", () => {

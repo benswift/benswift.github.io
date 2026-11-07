@@ -68,6 +68,14 @@ html {
   }
 }
 
+/* Native form controls don't inherit the page's font family. */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
 body {
   margin: 0;
   font-family: var(--font-family-base);
@@ -148,7 +156,23 @@ h6 {
 
 /* Running text keeps to the measure; code, figures, tables and islands use
    the full width of main. */
-main > :is(p, ul, ol, dl, blockquote, h2, h3, h4, h5, h6, .at-callout, .footnotes, .post-subtitle) {
+main
+  > :is(
+    p,
+    ul,
+    ol,
+    dl,
+    blockquote,
+    hr,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .at-callout,
+    .footnotes,
+    .post-subtitle
+  ) {
   max-inline-size: var(--measure);
 }
 
@@ -241,6 +265,7 @@ code {
   background: color-mix(in srgb, var(--highlight-color) 10%, var(--bg-soft));
   padding: 0.12em 0.4em;
   border-radius: var(--radius-sm);
+  overflow-wrap: anywhere;
 }
 
 pre {
@@ -355,10 +380,15 @@ blockquote::before {
   margin-bottom: 0.25rem;
 }
 
-/* Whole-title links: entry context conveys interactivity, so no underline. */
+/* Whole-title links, styled like the post list titles: entry context conveys
+   interactivity, so no underline. */
 .bibliography .pub-title a {
-  color: var(--brand-1);
+  color: inherit;
   text-decoration: none;
+}
+
+.bibliography .pub-title a:hover {
+  color: var(--brand-1);
 }
 
 .bibliography .pub-authors {
@@ -428,11 +458,13 @@ blockquote::before {
   line-height: 1.25;
 }
 
-.post-item-title a {
+.post-item-title a,
+a.post-item-title {
   color: inherit;
 }
 
-.post-item-title a:hover {
+.post-item-title a:hover,
+a.post-item-title:hover {
   color: var(--brand-1);
 }
 
@@ -450,9 +482,17 @@ blockquote::before {
   color: var(--text-2);
 }
 
+.post-item-meta {
+  margin: 0;
+}
+
 .post-item-venue {
   color: var(--text-2);
   font-size: var(--step--1);
+}
+
+.post-item-date + .post-item-venue::before {
+  content: " · ";
 }
 
 .post-item-links {
@@ -490,7 +530,16 @@ blockquote::before {
   margin: 0 0 0.5rem;
 }
 
-/* Tables */
+/* Tables. Markdown tables arrive wrapped in .table-scroll (a rehype plugin in
+   astro.config.ts), so a wide one scrolls inside its own box on a phone. */
+.table-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-3) transparent;
+  margin-block: 1rem;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -576,6 +625,12 @@ strong {
    .juttu-comments; the #id ancestor out-ranks the widget's injected class
    selector, so these overrides win without !important. Like/repost/Bluesky
    colours are left semantic (red/green/Bluesky blue). */
+/* A post with no linked thread gets juttu's setup prompt instead of comments;
+   only show it with ?link-comments (see PostLayout.astro). */
+#juttu-comments:not(.show-linking):has(.juttu-linking) {
+  display: none;
+}
+
 #juttu-comments .juttu-comments {
   --juttu-accent-color: var(--highlight-color);
   --juttu-link-color: var(--link-color);

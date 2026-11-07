@@ -61,6 +61,12 @@ const phrases = [...SITE_BASELINE_PHRASES, ...tags, ...(heroPhrases ?? [])];
     // every "Posting…" cycle, so relabelling needs an observer, not a one-shot
     // rename. Sized to match the sort pills in global.css.
     const container = document.getElementById("juttu-comments");
+    // juttu shows its "Link comments" setup to every visitor when a post has no
+    // Bluesky thread yet. global.css hides it unless the URL carries
+    // ?link-comments, which is how Ben opens the setup.
+    if (container && new URLSearchParams(location.search).has("link-comments")) {
+      container.classList.add("show-linking");
+    }
     if (container) {
       const relabel = () => {
         for (const btn of container.querySelectorAll(".juttu-submit-btn")) {

@@ -12,10 +12,11 @@ import { headingAnchorPlugins, remarkCallout } from "astro-theme-university/mark
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 
-// Minimal hast node shape so we don't need @types/hast just for two
-// build-time helpers.
+// Minimal hast node shape so we don't need @types/hast just for the
+// build-time helpers below.
 interface HastNode {
   type: string;
+  tagName?: string;
   value?: string;
   children?: HastNode[];
   properties?: Record<string, unknown>;
@@ -33,6 +34,31 @@ const a11yCodeBlock = {
     node.properties["aria-label"] = "Code sample";
   },
 };
+
+// Rehype plugin: wrap each table in a keyboard-reachable scroll box, so a wide
+// one scrolls inside the column instead of widening the page on a phone.
+function rehypeTableScroll() {
+  const wrap = (node: HastNode) => {
+    node.children = node.children?.map((child) => {
+      if (child.type === "element" && child.tagName === "table") {
+        return {
+          type: "element",
+          tagName: "div",
+          properties: {
+            className: ["table-scroll"],
+            tabindex: "0",
+            role: "region",
+            ariaLabel: "Table",
+          },
+          children: [child],
+        };
+      }
+      wrap(child);
+      return child;
+    });
+  };
+  return wrap;
+}
 
 // Site remark plugins shared between .md (markdown.remarkPlugins) and .mdx
 // (via the mdx() integration). Astro's MDX integration replaces rather than
@@ -93,6 +119,10 @@ export default defineConfig({
   redirects: {
     "/talks/p5-hour-of-code": "/decks/p5-hour-of-code/",
     "/talks/designing-the-ccc-studio": "/decks/designing-the-ccc-studio/",
+    // Jekyll kept the dot from the filename in this post's URL.
+    "/blog/2018/09/28/another-reveal.js-plugin-for-jekyll":
+      "/blog/2018/09/28/another-revealjs-plugin-for-jekyll/",
+    "/blog/tag/llms": "/blog/tag/llm/",
   },
   fonts: [
     {
@@ -173,6 +203,7 @@ export default defineConfig({
       shikiConfig: { theme: "github-dark" },
       fontVariables: ["--font-public-sans"],
       favicon: "/favicon.svg",
+      ogImage: "/og-default.webp",
     }),
   ],
   vite: {
@@ -203,6 +234,7 @@ export default defineConfig({
           },
         ],
         ...headingAnchorPlugins,
+        rehypeTableScroll,
       ] as never,
     }),
   },

@@ -56,6 +56,12 @@ const {
   relativePath,
 } = Astro.props;
 
+// A gig with a YouTube recording uses its thumbnail as the social card.
+const youtubeId = videos
+  ?.map((v) => v.url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/)?.[1])
+  .find(Boolean);
+const socialImage = youtubeId ? `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg` : undefined;
+
 const gigDate = date ? formatDate(new Date(date)) : null;
 const gigType = type ? type.charAt(0).toUpperCase() + type.slice(1) : null;
 
@@ -89,7 +95,7 @@ const phrases = [
 ];
 ---
 
-<BaseLayout title={title} description={description} phrases={phrases}>
+<BaseLayout title={title} description={description} phrases={phrases} image={socialImage}>
   <Fragment slot="masthead">
     <h1 class="page-title">{title}</h1>
     {gigDate && <p class="post-date">{gigDate}</p>}
@@ -200,6 +206,7 @@ const phrases = [
   .gig-doi {
     font-family: var(--font-family-mono);
     font-size: 0.9em;
+    overflow-wrap: anywhere;
   }
 
   .collection-link {
