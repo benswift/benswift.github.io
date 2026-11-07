@@ -39,6 +39,12 @@
     },
     "view": {
       "stroke": null
+    },
+    "padding": {
+      "top": 14,
+      "bottom": 8,
+      "left": 5,
+      "right": 5
     }
   },
   "title": {

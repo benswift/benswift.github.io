@@ -39,6 +39,12 @@
     },
     "view": {
       "stroke": null
+    },
+    "padding": {
+      "top": 14,
+      "bottom": 8,
+      "left": 5,
+      "right": 5
     }
   },
   "title": {
@@ -81,13 +87,34 @@
     {
       "transform": [
         {
-          "filter": "(datum.kind === 'Mon-Fri' && datum.hour === 17) || (datum.kind === 'Sat-Sun' && datum.hour === 21)"
+          "filter": "datum.kind === 'Mon-Fri' && datum.hour === 17"
         }
       ],
       "mark": {
         "type": "text",
         "align": "left",
         "dx": 9,
+        "fontSize": 13,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "kind",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.kind === 'Sat-Sun' && datum.hour === 15"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dy": 24,
         "fontSize": 13,
         "fontWeight": 600
       },

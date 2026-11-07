@@ -24,6 +24,9 @@ LABEL = 14
 
 CONFIG = {
     "background": BG,
+    # Default is 5 all round; the extra top and bottom keep the title off the
+    # chart's frame on the page without changing its width.
+    "padding": {"top": 14, "bottom": 8, "left": 5, "right": 5},
     "font": FONT,
     "axis": {
         "labelColor": INK2,

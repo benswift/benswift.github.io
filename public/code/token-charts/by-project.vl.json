@@ -39,14 +39,19 @@
     },
     "view": {
       "stroke": null
+    },
+    "padding": {
+      "top": 14,
+      "bottom": 8,
+      "left": 5,
+      "right": 5
     }
   },
   "title": {
     "text": "Tokens by project",
     "subtitle": [
-      "Tokens per day, 7-day rolling mean, for the 16 projects I spent the",
-      "most tokens on. Each panel is scaled to its own peak, with the total in the label;",
-      "together they are 78% of all tokens."
+      "Tokens per day, 7-day rolling mean, for the 16 projects I spent the most tokens on.",
+      "Each panel is scaled to its own peak, with the total in the label; together they are 78% of all tokens."
     ]
   },
   "transform": [

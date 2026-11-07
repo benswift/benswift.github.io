@@ -105,9 +105,8 @@ spec = {
     "title": {
         "text": "Tokens by project",
         "subtitle": [
-            f"Tokens per day, 7-day rolling mean, for the {len(order_keys)} projects I spent the",
-            "most tokens on. Each panel is scaled to its own peak, with the total in the label;",
-            f"together they are {covered / grand:.0%} of all tokens.",
+            f"Tokens per day, 7-day rolling mean, for the {len(order_keys)} projects I spent the most tokens on.",
+            f"Each panel is scaled to its own peak, with the total in the label; together they are {covered / grand:.0%} of all tokens.",
         ],
     },
     "data": {"values": data},

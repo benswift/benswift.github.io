@@ -311,15 +311,24 @@ when_chart = spec(
             },
         },
         {
-            "transform": [
-                {
-                    "filter": "(datum.kind === 'Mon-Fri' && datum.hour === 17) || (datum.kind === 'Sat-Sun' && datum.hour === 21)"
-                }
-            ],
+            "transform": [{"filter": "datum.kind === 'Mon-Fri' && datum.hour === 17"}],
             "mark": {
                 "type": "text",
                 "align": "left",
                 "dx": 9,
+                "fontSize": 13,
+                "fontWeight": 600,
+            },
+            "encoding": {"text": {"field": "kind", "type": "nominal"}},
+        },
+        # Under the weekend's afternoon peak, the one spot clear of both lines.
+        {
+            "transform": [{"filter": "datum.kind === 'Sat-Sun' && datum.hour === 15"}],
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "top",
+                "dy": 24,
                 "fontSize": 13,
                 "fontWeight": 600,
             },

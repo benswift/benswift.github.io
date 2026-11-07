@@ -32,19 +32,27 @@ const svg = source.replace(
 );
 ---
 
-<figure class="chart" data-pagefind-ignore set:html={svg} />
+<figure class="chart" data-pagefind-ignore tabindex="0" set:html={svg} />
 
 <style>
+  /* Scrollable (and so focusable, like code blocks) because the SVG won't
+     shrink below a legible size. */
   .chart {
     margin: 2rem 0;
     outline: 1px solid rgb(255 255 255 / 8%);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-3) transparent;
   }
 
   /* Vega bakes the rendered pixel size into the root element; override it so
-     the chart always fills the column, whatever the column is. */
+     the chart fills the column, but no narrower than about 80% of its 900px
+     render, where its 14px labels are still readable on a phone. */
   .chart :global(svg) {
     display: block;
     width: 100%;
+    min-width: 720px;
     height: auto;
   }
 
