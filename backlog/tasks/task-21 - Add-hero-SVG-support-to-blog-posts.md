@@ -1,9 +1,10 @@
 ---
 id: TASK-21
 title: Add hero SVG support to blog posts
-status: To Do
+status: Done
 assignee: []
-created_date: "2026-04-16 04:07"
+created_date: 2026-04-16 04:07
+updated_date: '2026-11-07T08:02:00Z'
 labels:
   - frontend
   - design
@@ -19,7 +20,6 @@ priority: medium
 ## Description
 
 <!-- SECTION:DESCRIPTION:BEGIN -->
-
 Add support for displaying hero SVG illustrations at the top of blog posts. A WIP SVG for the "pledges, not questions" post has been generated and committed to svg_gen_output/20260416T034856Z/pledges-not-questions.svg.
 
 ## Current state
@@ -38,3 +38,9 @@ Add support for displaying hero SVG illustrations at the top of blog posts. A WI
 6. **Test** --- run the dev server and verify the hero renders correctly, doesn't break mobile layout, and the og:image metadata still works.
 7. **Clean up** --- remove the svg_gen_output/ directory once the SVG is in its permanent location. Add svg_gen_output/ to .gitignore if it isn't already.
 <!-- SECTION:DESCRIPTION:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Closed by audit: superseded by the hero system now in place. Every post gets a procedural HeroCanvas hero with a per-post AVIF fallback/og:image auto-discovered from src/assets/heroes/ (the pledges post has 2026-04-16-comp4020-pledges-not-questions.avif), frontmatter image: overrides take hand-made SVGs, the SVG illustration style lives in AGENTS.md, and svg_gen_output/ is gone.
+<!-- SECTION:NOTES:END -->
