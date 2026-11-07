@@ -6,7 +6,7 @@ description:
   to politely leave."
 tags:
   - ai
-  - llms
+  - llm
 ---
 
 My colleague [Maia](https://cybernetics.anu.edu.au/people/maia-gould/) asked me
