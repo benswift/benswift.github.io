@@ -53,27 +53,6 @@ const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
     <p class="hero-subtitle">Leading <em>Human-Scale AI</em> at the Cybernetic Studio</p>
   </Fragment>
 
-  <div class="features">
-    <a href="/blog/" class="feature-card">
-      <h2>Blog</h2>
-      <p>Thoughts on research, art, code, teaching and whatever else is keeping me up at night.</p>
-    </a>
-    <a href="/research/" class="feature-card">
-      <h2>Research</h2>
-      <p>
-        Peer-reviewed publications on AI/LLMs, creative computing, and human-computer interaction.
-      </p>
-    </a>
-    <a href="/teaching/" class="feature-card">
-      <h2>Teaching</h2>
-      <p>Courses on agentic coding, creative computing, and cybernetics.</p>
-    </a>
-    <a href="/livecoding/" class="feature-card">
-      <h2>Livecoding</h2>
-      <p>Curated and invited livecoding performances around the world.</p>
-    </a>
-  </div>
-
   <slot />
   <SiteFooter relativePath="src/pages/index.mdx" />
 </BaseLayout>
@@ -96,34 +75,5 @@ const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles]
 
   .hero-subtitle {
     margin: 0.5rem 0 0;
-  }
-
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem 2rem;
-    margin: 2rem 0;
-  }
-
-  /* Plain linked headings, not boxed cards: content first. */
-  .feature-card {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-
-  .feature-card h2 {
-    margin: 0 0 0.25rem;
-    font-size: 1.1rem;
-    transition: color 0.2s;
-  }
-
-  .feature-card:hover h2 {
-    color: var(--highlight-color);
-  }
-
-  .feature-card p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: var(--text-2);
   }
 </style>
