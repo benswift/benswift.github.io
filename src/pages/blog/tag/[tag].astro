@@ -15,9 +15,9 @@ export async function getStaticPaths() {
 const { tag, posts } = Astro.props;
 ---
 
-<PageLayout title={`Posts tagged with "${tag}"`}>
+<PageLayout title={`Posts tagged with “${tag}”`}>
   <p>{posts.length} post{posts.length === 1 ? "" : "s"} with this tag.</p>
   <a href="/blog/">&larr; Back to all posts</a>
   <hr />
-  <PostList posts={posts} />
+  <PostList posts={posts} hideTag={tag} />
 </PageLayout>

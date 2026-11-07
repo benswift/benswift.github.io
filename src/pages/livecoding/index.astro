@@ -62,9 +62,13 @@ const lastYear = gigs.at(0)?.dateStr.slice(0, 4);
 
   <ul class="post-list">
     {gigs.map((gig) => <li class="post-item">
-      <a href={gig.url} class="post-item-title">{gig.title}</a>
-      <span class="post-item-date">{gig.dateFormatted}</span>
-      {gig.venue && <span class="post-item-venue"> - {gig.venue}</span>}
+      <div class="post-item-content">
+        <a href={gig.url} class="post-item-title">{gig.title}</a>
+        <p class="post-item-meta">
+          <span class="post-item-date">{gig.dateFormatted}</span>
+          {gig.venue && <span class="post-item-venue">{gig.venue}</span>}
+        </p>
+      </div>
     </li>)}
   </ul>
 </PageLayout>

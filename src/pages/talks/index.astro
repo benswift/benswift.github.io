@@ -59,9 +59,13 @@ const archive = allTalks
       dateFormatted: formatDate(new Date(dateStr)),
       dateStr,
       event: t.data.event,
-      slides: t.data.slides,
-      paper: t.data.paper,
-      video: t.data.video,
+      // The title links to the first of slides, paper or video that survives.
+      href: t.data.slides ?? t.data.paper ?? t.data.video,
+      links: [
+        { label: "slides", href: t.data.slides },
+        { label: "paper", href: t.data.paper },
+        { label: "video", href: t.data.video },
+      ].filter((link): link is { label: string; href: string } => Boolean(link.href)),
     };
   })
   .sort((a, b) => b.dateStr.localeCompare(a.dateStr));
@@ -73,9 +77,13 @@ const archive = allTalks
 
   <ul class="post-list">
     {decks.map((talk) => <li class="post-item">
-      <a href={`/decks/${talk.slug}/`} class="post-item-title">{talk.title}</a>
-      <span class="post-item-date">{talk.dateFormatted}</span>
-      {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
+      <div class="post-item-content">
+        <a href={`/decks/${talk.slug}/`} class="post-item-title">{talk.title}</a>
+        <p class="post-item-meta">
+          <span class="post-item-date">{talk.dateFormatted}</span>
+          {talk.event && <span class="post-item-venue">{talk.event}</span>}
+        </p>
+      </div>
     </li>)}
   </ul>
 
@@ -85,14 +93,20 @@ const archive = allTalks
       <p>Older talks, kept for the archive. The slides and papers are linked where they survive.</p>
       <ul class="post-list">
         {archive.map((talk) => <li class="post-item">
-          <span class="post-item-title">{talk.title}</span>
-          <span class="post-item-date">{talk.dateFormatted}</span>
-          {talk.event && <span class="post-item-venue"> - {talk.event}</span>}
-          {(talk.slides || talk.paper || talk.video) && <span class="post-item-links">
-            {talk.slides && <a href={talk.slides}>slides</a>}
-            {talk.paper && <a href={talk.paper}>paper</a>}
-            {talk.video && <a href={talk.video}>video</a>}
-          </span>}
+          <div class="post-item-content">
+            {talk.href ? (
+              <a href={talk.href} class="post-item-title">{talk.title}</a>
+            ) : (
+              <span class="post-item-title">{talk.title}</span>
+            )}
+            <p class="post-item-meta">
+              <span class="post-item-date">{talk.dateFormatted}</span>
+              {talk.event && <span class="post-item-venue">{talk.event}</span>}
+              {talk.links.length > 0 && <span class="post-item-links">
+                {talk.links.map((link) => <a href={link.href}>{link.label}</a>)}
+              </span>}
+            </p>
+          </div>
         </li>)}
       </ul>
     </>

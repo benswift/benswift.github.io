@@ -61,7 +61,7 @@ describe("page titles", () => {
   test("tag pages follow the 'Posts tagged with …' pattern", () => {
     const html = readPage("/blog/tag/ai/");
     // <title> content is HTML-escaped in the built output.
-    expect(getTitle(html)).toBe(`Posts tagged with &quot;ai&quot; | benswift.me`);
+    expect(getTitle(html)).toBe(`Posts tagged with “ai” | benswift.me`);
   });
 });
 
