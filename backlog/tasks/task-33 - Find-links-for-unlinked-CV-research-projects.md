@@ -1,9 +1,10 @@
 ---
 id: TASK-33
 title: Find links for unlinked CV research projects
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-11-07T05:27:00Z'
+updated_date: '2026-11-07T08:02:00Z'
 labels:
   - content
 dependencies: []
@@ -19,8 +20,14 @@ Three projects under Current research projects in src/pages/cv.mdx are bold but 
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 VLM Perception Experiments links to a public page, or a note records why it can't
-- [ ] #2 LLM Brainscan links to a public page, or a note records why it can't
-- [ ] #3 Perceptron Apparatus links to a public page, or a note records why it can't
-- [ ] #4 /cv/ builds and the new links resolve
+- [x] #1 VLM Perception Experiments links to a public page, or a note records why it can't
+- [x] #2 LLM Brainscan links to a public page, or a note records why it can't
+- [x] #3 Perceptron Apparatus links to a public page, or a note records why it can't
+- [x] #4 /cv/ builds and the new links resolve
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+VLM Perception Experiments links to github.com/ANUcybernetics/vlm-perception-experiments (public); LLM Brainscan and Perceptron Apparatus link to their School of Cybernetics project pages (cybernetics.anu.edu.au/projects/...). All three return 200; build passes.
+<!-- SECTION:NOTES:END -->
