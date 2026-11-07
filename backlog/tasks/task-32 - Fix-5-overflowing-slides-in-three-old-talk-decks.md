@@ -1,9 +1,10 @@
 ---
 id: TASK-32
 title: Fix 5 overflowing slides in three old talk decks
-status: To Do
+status: Done
 assignee: []
-created_date: '2026-08-26 07:39'
+created_date: 2026-08-26 07:39
+updated_date: '2026-11-07T21:26:00Z'
 labels: []
 dependencies: []
 ---
@@ -24,5 +25,11 @@ These are delivered talks, so the fix is only worth doing if the decks are reuse
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 `pnpm decks:check` exits clean for every deck in the repo
+- [x] #1 `pnpm decks:check` exits clean for every deck in the repo
 <!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Closed by audit 2026-11-08: pnpm decks:check reports all 521 slides across 21 decks fit, including the three named decks (52 slides). The deck sources only changed import and asset paths since this was filed (4d31cf41), so the fix came from astromotion upgrades (v0.35.0 to v0.37.2) rather than content edits.
+<!-- SECTION:NOTES:END -->
