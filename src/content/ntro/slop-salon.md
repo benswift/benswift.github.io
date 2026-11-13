@@ -7,9 +7,11 @@ authors:
   - name: "Jessica Herrington"
     orcid: "0000-0002-8633-8939"
 year: 2026
+publication_date: "2026-06-24"
 doi: "10.5281/zenodo.20821468"
 latest_version_doi: "10.5281/zenodo.20821469"
 license: "CC BY 4.0"
+upload_type: other
 kind: single
 category: "Recorded/Rendered Creative Works: Website/web-based exhibition"
 category_note: "live online project"

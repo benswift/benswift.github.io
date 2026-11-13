@@ -6,9 +6,11 @@ authors:
     orcid: "0000-0003-2138-5969"
   - name: "Adrian Schmidt"
 year: 2022
+publication_date: "2022-08-18"
 doi: "10.5281/zenodo.17410742"
 latest_version_doi: "10.5281/zenodo.17410748"
 license: "CC BY 4.0"
+upload_type: other
 kind: single
 category: "Recorded/Rendered Creative Works: Digital"
 category_note: "interactive installation"

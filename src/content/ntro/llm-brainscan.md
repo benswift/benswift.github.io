@@ -5,9 +5,11 @@ authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
 year: 2026
+publication_date: "2026-06-21"
 doi: "10.5281/zenodo.20780664"
 latest_version_doi: "10.5281/zenodo.20780665"
 license: "CC BY 4.0"
+upload_type: other
 kind: single
 category: "Original Creative Works: Multimedia"
 category_note: "real-time data-art installation"

@@ -5,8 +5,10 @@ authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
 year: 2026
+publication_date: "2026-07-05"
 doi: "10.5281/zenodo.21199776"
 license: "CC BY 4.0"
+upload_type: other
 kind: single
 category: "Recorded/Rendered Creative Works: Website/web-based exhibition"
 designation: Standard

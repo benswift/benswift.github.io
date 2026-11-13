@@ -12,9 +12,11 @@ authors:
   - name: "Beth Shulman"
   - name: "Lily Thomson"
 year: 2024
+publication_date: "2024-12-11"
 doi: "10.5281/zenodo.20780691"
 latest_version_doi: "10.5281/zenodo.20780692"
 license: "CC BY 4.0"
+upload_type: other
 kind: single
 category: "Recorded/Rendered Creative Works: Digital"
 category_note: "interactive installation"

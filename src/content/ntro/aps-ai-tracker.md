@@ -5,9 +5,11 @@ authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
 year: 2025
+publication_date: "2025-11-11"
 doi: "10.5281/zenodo.20842437"
 latest_version_doi: "10.5281/zenodo.20842438"
 license: "CC BY 4.0"
+upload_type: dataset
 kind: single
 category: "Recorded/Rendered Creative Works: Website/web-based"
 category_note: "a live online research tool over a self-built dataset"

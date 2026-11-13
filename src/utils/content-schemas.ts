@@ -21,15 +21,18 @@ export const relatedWorkSchema = z.object({
   type: z.string().optional(),
 });
 
-/** Front matter of a `src/content/ntro/*.md` record; field comments are the schema docs. */
-export const ntroSchema = z.object({
+const ntroFields = z.object({
   // BibTeX-style citation key, shared with cybernetics-website's `ntro.key`.
   key: z.string(),
   title: z.string(),
   // Creators in credit order. ORCIDs only where verifiably held.
   authors: z.array(personSchema),
-  // Year of first public presentation, as in cybernetics-website.
+  // Year of first public presentation, as in cybernetics-website; must be the
+  // year of `publication_date`.
   year: z.number().int(),
+  // Full date (YYYY-MM-DD) of the work's first public showing: the Zenodo
+  // record's publication_date.
+  publication_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   // Concept (all-versions) DOI: always cite this, never a version DOI.
   doi: z.string(),
   // Latest archived version DOI, for reference only.
@@ -37,6 +40,18 @@ export const ntroSchema = z.object({
   // Licence on the deposited Zenodo record, as spelled in cybernetics-website
   // (e.g. "MIT", "CC BY 4.0").
   license: z.string().optional(),
+  // Zenodo resource type of the deposited record (the legacy Deposit API's
+  // upload_type).
+  upload_type: z.enum([
+    "physicalobject",
+    "other",
+    "dataset",
+    "software",
+    "image",
+    "video",
+    "publication",
+    "lesson",
+  ]),
   // "single" output, or a "portfolio" of related outputs under one endeavour.
   kind: z.enum(["single", "portfolio"]).default("single"),
   // ERA output "Category: Sub-category", as in cybernetics-website (the
@@ -80,4 +95,10 @@ export const ntroSchema = z.object({
   related_works: z.array(relatedWorkSchema).default([]),
   // Anything else worth keeping: provenance, outstanding edits, reception.
   notes: z.array(z.string()).default([]),
+});
+
+/** Front matter of a `src/content/ntro/*.md` record; field comments are the schema docs. */
+export const ntroSchema = ntroFields.refine((r) => r.publication_date.startsWith(`${r.year}-`), {
+  message: "year must be the year of publication_date",
+  path: ["year"],
 });

@@ -5,8 +5,10 @@ authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
 year: 2025
+publication_date: "2025-10-15"
 doi: "10.5281/zenodo.20768557"
 license: "CC BY 4.0"
+upload_type: physicalobject
 kind: single
 category: "Original Creative Works: Visual Art Work"
 category_note: "sculptural/kinetic instrument"
