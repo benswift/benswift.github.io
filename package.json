@@ -22,6 +22,7 @@
     "lint:css:fix": "stylelint \"src/**/*.css\" --allow-empty-input --fix",
     "lint:fix": "oxlint --fix && pnpm lint:css:fix",
     "ntro:check": "pnpm exec tsx scripts/check-ntro.ts",
+    "ntro:zenodo": "pnpm exec tsx scripts/ntro-zenodo.ts",
     "post": "pnpm exec tsx scripts/new-post.ts",
     "preview": "astro preview",
     "test": "vitest run --project unit",

@@ -3,7 +3,16 @@
 
 import { ZENODO_USER_AGENT } from "./zenodo-community";
 
-/** A JSON request against the Zenodo API; throws on a non-2xx status with the response body. */
+/** A non-2xx Zenodo response; the message carries the method, URL, status and body. */
+export class ZenodoError extends Error {
+  readonly status: number;
+  constructor(message: string, status: number) {
+    super(message);
+    this.status = status;
+  }
+}
+
+/** A JSON request against the Zenodo API; throws a ZenodoError on a non-2xx status. */
 export type ZenodoRequest = (method: string, url: string, body?: unknown) => Promise<any>;
 
 /** A request function that authenticates with `token` (omitted when undefined). */
@@ -20,7 +29,7 @@ export function zenodoClient(token: string | undefined): ZenodoRequest {
     });
     if (!res.ok) {
       const text = await res.text();
-      throw new Error(`Zenodo ${method} ${url} → ${res.status}: ${text}`);
+      throw new ZenodoError(`Zenodo ${method} ${url} → ${res.status}: ${text}`, res.status);
     }
     return res.status === 204 ? null : res.json();
   };
