@@ -7,7 +7,7 @@ authors:
 year: 2025
 doi: "10.5281/zenodo.17403824"
 latest_version_doi: "10.5281/zenodo.17670641"
-license: "CC BY-NC-SA 4.0"
+license: "CC BY-SA 4.0"
 kind: portfolio
 category: "Original Creative Works: Multimedia"
 category_note: "Multimedia / Other (printed artefacts + participatory installation)"
@@ -39,7 +39,7 @@ checklist:
   evidence_filed: false
   rp_plus_record: false
 verification_evidence:
-  - "Cybernetic Studio Press records (CC BY-NC-SA)"
+  - "Cybernetic Studio Press records (CC BY-SA)"
   - "delivery logs (750+ participants)"
   - "Tjabal Centre Autumn School documentation (with poet Matt Heffernan)"
   - "ACE 2026 acceptance"
