@@ -41,6 +41,9 @@ verification_evidence:
   - "delivery logs (750+ participants)"
   - "ACE 2026 acceptance"
 related_works:
+  - relation: "isDocumentedBy"
+    url: "https://cybernetics.anu.edu.au/projects/library-of-babble/"
+    type: "other"
   - relation: "isDerivedFrom"
     identifier: "10.5281/zenodo.17403824"
     type: "software"
