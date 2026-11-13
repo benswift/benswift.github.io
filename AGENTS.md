@@ -186,6 +186,16 @@ after you push.
   rendered from `public/favicon.svg` at 512x512 via sharp; regenerate it if the
   favicon changes.
 
+## NTRO data
+
+`src/content/ntro/*.md` (the `ntro` collection) is the canonical reference for
+Ben's non-traditional research outputs #2--#8 and Slop University: data only,
+no pages or routes read it. NTRO #1 is the `livecoding` collection. Process
+notes (RP+ lodgement, Zenodo hygiene) are in `backlog/docs/`. The `ntro:`
+blocks in cybernetics-website's `_projects/*.md` are copies; `pnpm ntro:check`
+compares them (local only, never in CI) and exits non-zero on a difference ---
+fix the copy there, not here.
+
 ## Design context
 
 Users, brand personality, anti-references and design principles live in
