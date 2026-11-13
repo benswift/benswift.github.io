@@ -7,7 +7,7 @@ authors:
 year: 2026
 doi: "10.5281/zenodo.20780664"
 latest_version_doi: "10.5281/zenodo.20780665"
-license: "MIT"
+license: "CC BY 4.0"
 kind: single
 category: "Original Creative Works: Multimedia"
 category_note: "real-time data-art installation"

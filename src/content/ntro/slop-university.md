@@ -6,7 +6,7 @@ authors:
     orcid: "0000-0003-2138-5969"
 year: 2026
 doi: "10.5281/zenodo.21199776"
-license: "MIT"
+license: "CC BY 4.0"
 kind: single
 category: "Recorded/Rendered Creative Works: Website/web-based exhibition"
 designation: Standard

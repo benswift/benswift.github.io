@@ -8,7 +8,7 @@ authors:
 year: 2022
 doi: "10.5281/zenodo.17410742"
 latest_version_doi: "10.5281/zenodo.17410748"
-license: "MIT"
+license: "CC BY 4.0"
 kind: single
 category: "Recorded/Rendered Creative Works: Digital"
 category_note: "interactive installation"

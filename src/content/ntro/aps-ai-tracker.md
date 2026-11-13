@@ -7,7 +7,7 @@ authors:
 year: 2025
 doi: "10.5281/zenodo.20842437"
 latest_version_doi: "10.5281/zenodo.20842438"
-license: "MIT"
+license: "CC BY 4.0"
 kind: single
 category: "Recorded/Rendered Creative Works: Website/web-based"
 category_note: "a live online research tool over a self-built dataset"

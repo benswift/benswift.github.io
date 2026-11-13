@@ -4,7 +4,7 @@ title: "Perceptron Apparatus"
 authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
-year: 2024
+year: 2025
 doi: "10.5281/zenodo.20768557"
 license: "CC BY 4.0"
 kind: single

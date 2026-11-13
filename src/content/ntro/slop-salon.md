@@ -5,6 +5,7 @@ authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
   - name: "Jessica Herrington"
+    orcid: "0000-0002-8633-8939"
 year: 2026
 doi: "10.5281/zenodo.20821468"
 latest_version_doi: "10.5281/zenodo.20821469"
