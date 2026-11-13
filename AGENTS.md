@@ -6,13 +6,9 @@ with custom properties. oxlint + Stylelint for linting, oxfmt for formatting
 
 ## Commands
 
-- `pnpm dev` --- start dev server
-- `pnpm build` --- build static site (includes Pagefind indexing)
-- `pnpm test` / `pnpm test:integration` --- unit / integration tests
-- `pnpm typecheck` --- astro check + svelte-check
-- `pnpm lint` --- oxlint + stylelint
-- `pnpm format:check` --- check formatting
-- `pnpm post "<title>"` --- scaffold a new blog post
+`pnpm build` includes Pagefind indexing. `pnpm typecheck` runs `astro check` and
+`svelte-check`. `pnpm test` runs the unit project and `pnpm test:integration` the
+integration project.
 
 ## Dev server
 
@@ -60,7 +56,7 @@ this to Sätteri without porting them and visually diffing the output.
 ## Voice and tone
 
 Write in a conversational, academic style that's accessible without being dumbed
-down. Use first person ("I") freely. Use the benswift-writer skill.
+down. Use first person ("I") freely.
 
 ## Custom containers
 
@@ -166,7 +162,6 @@ Prompting tips (each of these clauses earned its place --- keep them intact):
   white paper and primary colours
 - describe what's drawn, not what it represents: "small blank rectangles" (not
   "tokens"), "empty speech bubbles" (not "dialogue exchange")
-- expect to re-roll: review every generated image before committing
 
 ## Publishing and the atproto state file
 
