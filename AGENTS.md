@@ -7,8 +7,8 @@ with custom properties. oxlint + Stylelint for linting, oxfmt for formatting
 ## Commands
 
 `pnpm build` includes Pagefind indexing. `pnpm typecheck` runs `astro check` and
-`svelte-check`. `pnpm test` runs the unit project and `pnpm test:integration` the
-integration project.
+`svelte-check`. `pnpm test` runs the unit project and `pnpm test:integration`
+the integration project.
 
 ## Dev server
 
@@ -127,9 +127,9 @@ PATH):
 
 ## Image generation style
 
-Model: **gpt** (`openai/gpt-image-2.5-sunburst`), with **no reference images**
---- the house style lives entirely in the prompt suffix below. Keep it that way:
-shared references would cross-contaminate this site's decks with the
+Model: **gpt** (`openai/gpt-image-2.5-sunburst`), with **no reference
+images** --- the house style lives entirely in the prompt suffix below. Keep it
+that way: shared references would cross-contaminate this site's decks with the
 llms-unplugged house style.
 
 Prompt suffix: drawn with a few confident scratchy pen strokes in white ink
@@ -147,12 +147,13 @@ side panels (`![bg right:45%](...)` and similar).
 
 Prompting tips (each of these clauses earned its place --- keep them intact):
 
-- the subject is a visual metaphor, tangentially inspired by the slide content
-  --- not a literal diagram
+- the subject is a visual metaphor, tangentially inspired by the slide
+  content --- not a literal diagram
 - one subject, described concretely; the style thrives on economy (a few
   strokes, one gold splash)
-- dice must be "ordinary six-sided dice with round dot pips only, never digits"
-  --- the model otherwise draws numbered d20s, violating the no-text rule
+- dice must be "ordinary six-sided dice with round dot pips only, never
+  digits" --- the model otherwise draws numbered d20s, violating the no-text
+  rule
 - measurement and document subjects (rulers, gauges, metronomes, weathervanes,
   report pages) drag numerals and pseudo-text in through their priors, and
   document scenes drift to white paper --- reword the subject itself ("a plain
@@ -189,12 +190,12 @@ after you push.
 ## NTRO data
 
 `src/content/ntro/*.md` (the `ntro` collection) is the canonical reference for
-Ben's non-traditional research outputs #2--#8 and Slop University: data only,
-no pages or routes read it. NTRO #1 is the `livecoding` collection. Process
-notes (RP+ lodgement, Zenodo hygiene) are in `backlog/docs/`. The `ntro:`
-blocks in cybernetics-website's `_projects/*.md` are copies; `pnpm ntro:check`
-compares them (local only, never in CI) and exits non-zero on a difference ---
-fix the copy there, not here.
+Ben's non-traditional research outputs #2--#8 and Slop University: data only, no
+pages or routes read it. NTRO #1 is the `livecoding` collection. Process notes
+(RP+ lodgement, Zenodo hygiene) are in `backlog/docs/`. The `ntro:` blocks in
+cybernetics-website's `_projects/*.md` are copies; `pnpm ntro:check` compares
+them (local only, never in CI) and exits non-zero on a difference --- fix the
+copy there, not here.
 
 ## Design context
 
