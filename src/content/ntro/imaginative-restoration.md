@@ -1,6 +1,6 @@
 ---
 key: "swift2024imaginativerestoration"
-title: "Imaginative Restoration"
+title: "Imaginative Restoration: Rewilding Division"
 authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
