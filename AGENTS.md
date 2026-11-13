@@ -197,6 +197,12 @@ cybernetics-website's `_projects/*.md` are copies; `pnpm ntro:check` compares
 them (local only, never in CI) and exits non-zero on a difference --- fix the
 copy there, not here.
 
+The collection is pushed to Zenodo by `pnpm ntro:zenodo` (run via
+`mise exec --`): it compares each record with its Zenodo record by default, and
+`--update` pushes the differences in place (flags in the script header). The
+work repos carry no `.zenodo.json` and the GitHub--Zenodo integration is off: a
+new version of a work is deposited deliberately, never by a GitHub release.
+
 ## Design context
 
 Users, brand personality, anti-references and design principles live in
