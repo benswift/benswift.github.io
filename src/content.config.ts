@@ -1,6 +1,7 @@
 import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 import { glob } from "astro/loaders";
+import { ntroSchema, personSchema, relatedWorkSchema } from "./utils/content-schemas";
 
 const blog = defineCollection({
   loader: glob({
@@ -22,6 +23,10 @@ const blog = defineCollection({
     }),
 });
 
+// The live-coding body of work is NTRO #1 (a portfolio, Major): the collection
+// DOI and research statement live in src/data/livecoding-collection.ts and
+// src/data/livecoding-research-statement.md. NTROs #2--#8 (and Slop University) are the `ntro`
+// collection below.
 const livecoding = defineCollection({
   loader: glob({ pattern: "*.md", base: "src/content/livecoding" }),
   schema: z.object({
@@ -36,15 +41,7 @@ const livecoding = defineCollection({
     // vs screencapture, or the AP Sessions visual-study sets).
     videos: z.array(z.object({ url: z.string(), label: z.string().optional() })).optional(),
     curators: z.string().optional(),
-    artists: z
-      .array(
-        z.object({
-          name: z.string(),
-          role: z.string(),
-          orcid: z.string().optional(),
-        }),
-      )
-      .optional(),
+    artists: z.array(personSchema.extend({ role: z.string() })).optional(),
     description: z.string(),
     // --- NTRO / DataCite metadata (TASK-23) ---
     // Livecoding environment used for the set (Impromptu <=2011, Extempore 2013+).
@@ -54,18 +51,8 @@ const livecoding = defineCollection({
     // ANZSRC Fields of Research codes (4- or 6-digit), e.g. "360405".
     for_codes: z.array(z.string()).optional(),
     // Links to papers, proceedings, repos, AT-URIs, streaming copies, etc.
-    // relation/type follow the DataCite relationType / resourceTypeGeneral
-    // vocabularies (e.g. relation "isDocumentedBy", "isVariantFormOf").
-    related_works: z
-      .array(
-        z.object({
-          relation: z.string(),
-          identifier: z.string().optional(),
-          url: z.string().optional(),
-          type: z.string().optional(),
-        }),
-      )
-      .optional(),
+    // (DataCite relationType / resourceTypeGeneral vocabularies).
+    related_works: z.array(relatedWorkSchema).optional(),
     // Wayback Machine snapshots for dead event/venue pages (TASK-23.07).
     archived_event_url: z.string().optional(),
     archived_venue_url: z.string().optional(),
@@ -89,4 +76,16 @@ const talks = defineCollection({
   }),
 });
 
-export const collections = { blog, livecoding, talks };
+// Non-traditional research outputs #2--#8 plus Slop University (data only: no pages or routes read
+// this collection). NTRO #1 is the `livecoding` collection above. This is the
+// canonical NTRO reference; the `ntro:` blocks in cybernetics-website's
+// _projects/*.md are copies (compare with `pnpm ntro:check`). The body of each
+// file is the research statement (Appendix C form of the ANU NTRO guidelines),
+// written to be lifted verbatim into RP+ and promotion cases. The general
+// process notes are in backlog/docs (NTRO register).
+const ntro = defineCollection({
+  loader: glob({ pattern: "*.md", base: "src/content/ntro" }),
+  schema: ntroSchema,
+});
+
+export const collections = { blog, livecoding, ntro, talks };
