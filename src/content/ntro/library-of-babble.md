@@ -6,7 +6,8 @@ authors:
     orcid: "0000-0003-2138-5969"
 year: 2025
 publication_date: "2025-10-15"
-doi: "10.5281/zenodo.24208031"
+doi: "10.5281/zenodo.24208030"
+latest_version_doi: "10.5281/zenodo.24208031"
 license: "CC BY-SA 4.0"
 upload_type: other
 kind: single
