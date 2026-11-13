@@ -46,7 +46,7 @@ checklist:
   evidence_filed: false
   rp_plus_record: false
 verification_evidence:
-  - "Fantastic Futures 2024 (NFSA) programme"
+  - "NIDA foyer installation records (installed 11 December 2024)"
   - "NIDA Future Centre / NFSA collaboration records"
   - "install documentation (NIDA)"
 ---
@@ -66,8 +66,8 @@ additive use of generative AI on heritage material. The model grew out of a
 three-day cross-disciplinary workshop on the future of the dramatic arts in
 the age of generative AI.
 
-**Research significance.** The installation was presented at Fantastic Futures
-2024, the international gathering on AI in the GLAM (galleries, libraries,
-archives, museums) sector, hosted by the NFSA. Its significance rests on that
-curated presentation at a distinguished sector venue, and on the standing of
-its institutional collaborators, NIDA and NFSA.
+**Research significance.** The installation debuted in the foyer of NIDA in
+Sydney in December 2024, where it ran for several months as a public work for
+NIDA's students, staff and visitors. Its significance rests on that sustained
+public presentation at Australia's national institute for the dramatic arts,
+and on the standing of its institutional collaborators, NIDA and NFSA.
