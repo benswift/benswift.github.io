@@ -26,6 +26,7 @@ import path from "node:path";
 import { gigRkey } from "./lib/atproto-livecoding";
 import { parseFrontmatter } from "./lib/frontmatter";
 import { loadCollectionState } from "./lib/zenodo-collection-state";
+import { depositionIdFromDoi, familyFirst, setFrontmatterField, zenodoClient } from "./lib/zenodo";
 import { acceptInclusionRequests, ZENODO_USER_AGENT } from "./lib/zenodo-community";
 
 // Happy Eyeballs: race IPv4/IPv6 and use whichever connects first, so the
@@ -50,6 +51,7 @@ const ONLY = argOf("--only");
 const TARGET = PROD ? "prod" : "sandbox";
 const BASE = PROD ? "https://zenodo.org" : "https://sandbox.zenodo.org";
 const TOKEN = PROD ? process.env.ZENODO_ACCESS_TOKEN : process.env.ZENODO_SANDBOX_TOKEN;
+const zenodo = zenodoClient(TOKEN);
 // Body-of-work umbrella (TASK-23.09), if set up: every gig links back via
 // isPartOf and is filed under the same Zenodo Community.
 const COLLECTION = loadCollectionState(TARGET);
@@ -112,38 +114,6 @@ type State = Record<
 const loadState = (): State =>
   fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, "utf8")) : {};
 const saveState = (s: State) => fs.writeFileSync(STATE_PATH, JSON.stringify(s, null, 2) + "\n");
-
-async function zenodo(method: string, url: string, body?: unknown): Promise<any> {
-  const res = await fetch(url, {
-    method,
-    headers: {
-      Authorization: `Bearer ${TOKEN}`,
-      "User-Agent": ZENODO_USER_AGENT,
-      ...(body ? { "Content-Type": "application/json" } : {}),
-    },
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`Zenodo ${method} ${url} → ${res.status}: ${text}`);
-  }
-  return res.status === 204 ? null : res.json();
-}
-
-/** "Ben Swift" → "Swift, Ben"; leaves already-comma'd or single-token names alone. */
-function familyFirst(name: string): string {
-  if (name.includes(",")) return name;
-  const parts = name.trim().split(/\s+/);
-  if (parts.length < 2) return name;
-  const family = parts.pop()!;
-  return `${family}, ${parts.join(" ")}`;
-}
-
-/** The deposition/record id embedded in a Zenodo DOI like 10.xxxx/zenodo.<id>. */
-function depositionIdFromDoi(doi?: string): number | undefined {
-  const m = doi?.match(/zenodo\.(\d+)$/);
-  return m ? Number(m[1]) : undefined;
-}
 
 function buildCreators(gig: Gig) {
   const creators: { name: string; orcid?: string; affiliation?: string }[] = [
@@ -235,22 +205,6 @@ function buildMetadata(gig: Gig, dateStr: string, slug: string) {
     license: gig.license ?? "cc-by-sa-4.0",
     ...(COLLECTION_COMMUNITY ? { communities: [{ identifier: COLLECTION_COMMUNITY }] } : {}),
   };
-}
-
-/** Insert or replace a frontmatter field directly after an anchor line. */
-function setFrontmatterField(
-  raw: string,
-  anchorKey: string,
-  newKey: string,
-  value: string,
-): string {
-  const line = `${newKey}: "${value}"`;
-  const existing = new RegExp(`^${newKey}:.*$`, "m");
-  if (existing.test(raw)) return raw.replace(existing, line);
-  const anchor = new RegExp(`^(${anchorKey}:.*)$`, "m");
-  if (anchor.test(raw)) return raw.replace(anchor, `$1\n${line}`);
-  // no anchor — insert as the first line after the opening ---
-  return raw.replace(/^---\n/, `---\n${line}\n`);
 }
 
 async function uploadDocFile(bucket: string, slug: string, gig: Gig, dateStr: string) {
