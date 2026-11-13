@@ -2,15 +2,15 @@
 key: "swift2024imaginativerestoration"
 title: "Imaginative Restoration"
 authors:
+  - name: "Ben Swift"
+    orcid: "0000-0003-2138-5969"
+  - name: "Marcelo Zavala-Baeza"
   - name: "Charlotte Bradley"
   - name: "Joe Hepworth"
   - name: "Daniel Herten"
   - name: "Ripley Rubens"
   - name: "Beth Shulman"
-  - name: "Ben Swift"
-    orcid: "0000-0003-2138-5969"
   - name: "Lily Thomson"
-  - name: "Marcelo Zavala-Baeza"
 year: 2024
 doi: "10.5281/zenodo.20780691"
 latest_version_doi: "10.5281/zenodo.20780692"
