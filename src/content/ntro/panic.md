@@ -1,6 +1,6 @@
 ---
 key: "swiftschmidt2022panic"
-title: "PANIC! (a Playground AI Network for Interactive Creativity)"
+title: "PANIC!: Playground AI Network for Interactive Creativity"
 authors:
   - name: "Ben Swift"
     orcid: "0000-0003-2138-5969"
