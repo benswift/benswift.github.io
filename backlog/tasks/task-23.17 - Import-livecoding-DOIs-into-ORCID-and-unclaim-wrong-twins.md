@@ -17,7 +17,7 @@ priority: medium
 ## Description
 
 <!-- SECTION:DESCRIPTION:BEGIN -->
-Get the livecoding DataCite DOIs onto Ben's ORCID record (0000-0003-2138-5969) via the ORCID 'Add works > Search & link > DataCite' wizard, ideally driven by a logged-in agent-browser session. Each Zenodo record has two DOIs (a concept DOI and a version DOI), both registered under Ben's ORCID, so the wizard lists every gig twice. We want exactly ONE per gig: the version DOI for each gig (matches the site frontmatter, the umbrella HasPart graph, atproto records and BibTeX), plus the concept DOI for the umbrella. Ben may have already claimed some of the wrong (twin) DOIs in an earlier pass before realising there were two of each, so those need unclaiming. This is the ORCID leg of the DataCite -> ORCID -> ResearchPortalPlus(Pure) chain; see TASK-23.12 for the ANU/Pure side.
+Get the livecoding DataCite DOIs onto Ben's ORCID record (0000-0003-2138-5969) via the ORCID 'Add works > Search & link > DataCite' wizard, ideally driven by a logged-in agent-browser session. Each Zenodo record has two DOIs (a concept DOI and a version DOI), both registered under Ben's ORCID, so the wizard lists every gig twice. We want exactly ONE per gig: the version DOI for each gig (matches the site frontmatter, the umbrella HasPart graph, atproto records and BibTeX), plus the concept DOI for the umbrella. Ben may have already claimed some of the wrong (twin) DOIs in an earlier pass before realising there were two of each, so those need unclaiming. This is the ORCID leg of the DataCite -> ORCID -> ResearchPortalPlus(Pure) chain; see TASK-36 (which absorbed the archived TASK-23.12) for the ANU/Pure side.
 <!-- SECTION:DESCRIPTION:END -->
 
 ## Acceptance Criteria
