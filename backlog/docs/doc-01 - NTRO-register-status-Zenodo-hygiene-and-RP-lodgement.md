@@ -56,18 +56,12 @@ into line with them (tracked in backlog).
   cites the concept (all-versions) DOI, which redirects to the latest archived
   version. Four NTROs and the five live-coding performances were previously
   citing fixed version DOIs and have been switched.
-- **Resource type / licence are set by the GitHub--Zenodo release integration**,
-  which mints a fresh version on every repo release but defaults to type
-  _Software_ and licence _MIT_. That is correct for the code archive but
-  undersells records framed here as creative works, and an MIT licence on an art
-  installation is a category error. Fix: keep the integration (automatic
-  versioned archival is worth having) but commit a `.zenodo.json` to each repo
-  so future releases carry the right type, licence (a Creative Commons licence
-  for the creative work; keep MIT for pure code/tools), creators-with-ORCIDs,
-  keywords, related identifiers and community. Existing published records can be
-  metadata-edited in place via the Zenodo API without minting a new DOI.
-  Zenodo's GitHub integration reads `.zenodo.json`, **not** `CITATION.cff`, so
-  the existing `.cff` files do not control deposit metadata.
+- **Resource type and licence live in the `ntro` records** (`upload_type`,
+  `license`) and reach Zenodo through `pnpm ntro:zenodo --update`, a metadata
+  edit in place with no new DOI. A creative work takes a Creative Commons
+  licence; MIT is for pure code/tools. The GitHub--Zenodo release integration is
+  off and the repos carry no `.zenodo.json`: a new version of a work is
+  deposited deliberately.
 - **Companion-paper links** belong in each record's related identifiers
   (`isSupplementTo` / `isDocumentedBy`): _PANIC!_ <-> the SMC 2025 _Semantic
   Topologies_ paper (doi:10.1109/SMC58881.2025.11342470) and the NIME 2025
@@ -81,8 +75,8 @@ into line with them (tracked in backlog).
   or `isDocumentedBy` (a write-up). The DOI still resolves to Zenodo, but the
   Zenodo page then routes readers to the canonical site; this is the practical
   middle ground short of minting DOIs that resolve to my own site (the someday
-  item). Set it in each repo's `.zenodo.json` (`related_identifiers`) for future
-  releases, or edit a published record in place via the Zenodo API (no new DOI).
+  item). Add it to the published record in place (no new DOI): `ntro:zenodo`
+  pushes only related-work DOIs and leaves URL identifiers as they are.
 - **Co-creator ORCIDs.** A registry search (June 2026) found a claimable ORCID
   only for Sungyeon Hong (0000-0002-9897-1205, co-author of the SMC paper).
   Andrew Sorensen, Giovanni Muzio (only an empty namesake record), Leon Volbers,
