@@ -78,7 +78,7 @@ async function main() {
     // The first WebGL hero in a fresh browser captures blank — the GL context
     // isn't presented in time for the screenshot. Prime it with one throwaway
     // load so every capture below is warm.
-    await ab(["open", `${PREVIEW_BASE}${workList[0]!.path}/`]);
+    await ab(["open", `${PREVIEW_BASE}${workList[0].path}/`]);
     await ab(["wait", "--load", "networkidle"]);
     await ab(["wait", ".hero-canvas"]);
     await ab(["wait", String(SETTLE_MS)]);

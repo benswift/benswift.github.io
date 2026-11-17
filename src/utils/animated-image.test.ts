@@ -6,7 +6,7 @@ import { isAnimatedWebp } from "./animated-image";
 function webp({ vp8x, flags = 0 }: { vp8x: boolean; flags?: number }): Uint8Array {
   const bytes = new Uint8Array(32);
   const write = (offset: number, text: string) => {
-    for (const [i, char] of [...text].entries()) bytes[offset + i] = char.charCodeAt(0);
+    for (let i = 0; i < text.length; i++) bytes[offset + i] = text.charCodeAt(i);
   };
   write(0, "RIFF");
   write(8, "WEBP");

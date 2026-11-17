@@ -1,7 +1,11 @@
 import { defineConfig, fontProviders } from "astro/config";
-import type { PluggableList } from "unified";
 import mdx from "@astrojs/mdx";
-import { rehypeShiki, unified } from "@astrojs/markdown-remark";
+import {
+  rehypeShiki,
+  type RemarkPlugin,
+  type RemarkPlugins,
+  unified,
+} from "@astrojs/markdown-remark";
 import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
 import brokenLinksChecker from "astro-broken-links-checker";
@@ -68,8 +72,9 @@ function rehypeTableScroll() {
 // Astro's built-in smartypants on both pipelines to avoid double-processing
 // (and because @astrojs/mdx ignores the smartypants config object anyway —
 // it always calls the plugin with defaults).
-const siteRemarkPlugins: PluggableList = [
-  [remarkSmartypants, { dashes: "oldschool" }],
+const siteRemarkPlugins: RemarkPlugins = [
+  // oxlint-disable-next-line typescript/no-unsafe-type-assertion -- remark-smartypants types its Plugin with no tree type, which Astro's mdast-typed RemarkPlugin rejects
+  [remarkSmartypants as RemarkPlugin, { dashes: "oldschool" }],
   remarkDirective,
   remarkCallout,
 ];
@@ -220,7 +225,7 @@ export default defineConfig({
     syntaxHighlight: false,
     processor: unified({
       smartypants: false,
-      remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins] as never,
+      remarkPlugins: [...siteRemarkPlugins, ...deckRemarkPlugins],
       rehypePlugins: [
         [
           rehypeShiki,
@@ -235,7 +240,7 @@ export default defineConfig({
         ],
         ...headingAnchorPlugins,
         rehypeTableScroll,
-      ] as never,
+      ],
     }),
   },
 });

@@ -26,7 +26,7 @@ export function parseForCodes(csv: string): ForCode[] {
       if (!division || !group || !/^\d{6}$/.test(field ?? "") || !description) {
         throw new Error(`malformed FoR code row: ${line}`);
       }
-      return { division, group, field: field!, description };
+      return { division, group, field: field, description };
     });
 }
 

@@ -68,8 +68,8 @@ describe.skipIf(!existsSync(distDir))("Content Security Policy (security guide)"
       for (const [, attrs, body] of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script[^>]*>/gi)) {
         // External scripts, JSON-LD and speculation rules aren't executed as
         // inline script, so script-src hashes don't apply to them.
-        if (/\bsrc=|type="application\/(ld\+)?json"/.test(attrs!) || !body!.trim()) continue;
-        const hash = createHash("sha256").update(body!).digest("base64");
+        if (/\bsrc=|type="application\/(ld\+)?json"/.test(attrs) || !body.trim()) continue;
+        const hash = createHash("sha256").update(body).digest("base64");
         if (!scriptSrc.includes(`'sha256-${hash}'`)) blocked.push(page);
       }
     }

@@ -87,7 +87,7 @@ export function discoverGigs(dir: string, only?: string): GigData[] {
       return {
         slug,
         title: fm.title ?? slug,
-        date: String(date).slice(0, 10),
+        date: date.slice(0, 10),
         description: fm.description ?? "",
         textContent: toPlainText(body),
         contentHash: computeHash(raw),

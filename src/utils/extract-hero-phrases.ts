@@ -1,4 +1,4 @@
-import type { Emphasis, Heading, InlineCode, Link, Root, Strong, Text } from "mdast";
+import type { Text } from "mdast";
 import type { Node } from "unist";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
@@ -16,7 +16,7 @@ function nodeText(node: Node): string {
 }
 
 export function extractHeroPhrases(markdown: string): string[] {
-  const tree = unified().use(remarkParse).parse(markdown) as Root;
+  const tree = unified().use(remarkParse).parse(markdown);
 
   const phrases: string[] = [];
   const seen = new Set<string>();
@@ -32,21 +32,21 @@ export function extractHeroPhrases(markdown: string): string[] {
 
   visit(tree, (node, _index, parent) => {
     if (node.type === "heading") {
-      const heading = node as Heading;
+      const heading = node;
       if (heading.depth >= 2 && heading.depth <= 4) {
         consider(nodeText(heading));
       }
     } else if (node.type === "emphasis" || node.type === "strong" || node.type === "link") {
-      consider(nodeText(node as Emphasis | Strong | Link));
+      consider(nodeText(node));
     } else if (node.type === "inlineCode") {
-      consider((node as InlineCode).value.replaceAll(/\s+/g, " ").trim());
+      consider(node.value.replaceAll(/\s+/g, " ").trim());
     } else if (node.type === "text") {
       // Skip text inside h1 / h5+ headings — those are intentionally not extracted
       if (parent && parent.type === "heading") {
-        const heading = parent as Heading;
+        const heading = parent;
         if (heading.depth < 2 || heading.depth > 4) return;
       }
-      const text = node as Text;
+      const text = node;
       for (const fragment of text.value.split(SPLIT_RE)) {
         consider(fragment.replaceAll(/\s+/g, " ").trim());
       }

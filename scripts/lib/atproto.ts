@@ -85,7 +85,7 @@ export interface AtprotoClient {
    * Convert a local image (AVIF/PNG/JPEG) to a 1200x630 JPEG and upload it,
    * returning the blob ref, or undefined when the source file is missing.
    */
-  uploadImage(sourcePath: string): Promise<unknown | undefined>;
+  uploadImage(sourcePath: string): Promise<unknown>;
   ensurePublication(pub: PublicationRecord): Promise<StrongRef>;
   putDocument(rkey: string, doc: DocumentRecord): Promise<StrongRef>;
   createSkeet(input: SkeetInput): Promise<SkeetResult>;
@@ -172,7 +172,7 @@ export async function createClient(
   return {
     did,
 
-    async uploadImage(sourcePath: string): Promise<unknown | undefined> {
+    async uploadImage(sourcePath: string): Promise<unknown> {
       if (!fs.existsSync(sourcePath)) return undefined;
       const jpeg = await sharp(sourcePath)
         .resize(1200, 630, { fit: "cover" })

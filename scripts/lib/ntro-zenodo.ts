@@ -169,9 +169,6 @@ export function diffNtroZenodo(local: NtroForZenodo, remote: ZenodoMeta): Zenodo
   return diffs;
 }
 
-const dropEmpty = (o: Record<string, unknown>) =>
-  Object.fromEntries(Object.entries(o).filter(([, v]) => v !== null && v !== undefined));
-
 /**
  * The record's creators as Zenodo creators. A creator already on Zenodo
  * (matched by normalised name) keeps its name as spelled there, its
@@ -182,11 +179,15 @@ function mergeCreators(local: NtroForZenodo, existing: ZenodoCreator[]): ZenodoC
   return local.authors.map((a) => {
     const i = unused.findIndex((c) => normaliseName(c.name) === normaliseName(a.name));
     const match = i >= 0 ? unused.splice(i, 1)[0] : undefined;
-    return dropEmpty({
+    const creator: ZenodoCreator = {
       ...match,
       name: match?.name ?? familyFirst(a.name),
       orcid: a.orcid ?? match?.orcid,
-    }) as ZenodoCreator;
+    };
+    for (const key of Object.keys(creator)) {
+      if (creator[key] === null || creator[key] === undefined) delete creator[key];
+    }
+    return creator;
   });
 }
 

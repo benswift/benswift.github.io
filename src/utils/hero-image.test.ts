@@ -1,8 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { resolveHeroImage } from "./hero-image";
+import type { ImageMetadata } from "astro";
 
-const fakeImage = { src: "/fake.png", width: 100, height: 100, format: "png" } as never;
-const fakeDefault = { src: "/default.png", width: 100, height: 100, format: "png" } as never;
+const fakeImage: ImageMetadata = { src: "/fake.png", width: 100, height: 100, format: "png" };
+const fakeDefault: ImageMetadata = { src: "/default.png", width: 100, height: 100, format: "png" };
 
 describe("resolveHeroImage", () => {
   it("returns the matching image when present", () => {

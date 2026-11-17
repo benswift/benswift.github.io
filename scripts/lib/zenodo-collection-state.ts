@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { z } from "astro/zod";
 
 // Operational state for the collection-level (umbrella) Zenodo record, kept
 // per target. Filename matches the gitignored `scripts/.zenodo-state-*.json`
@@ -28,13 +29,29 @@ export interface CollectionState {
   hasParts?: string[];
 }
 
+const collectionStateSchema = z.object({
+  communitySlug: z.string().optional(),
+  communityId: z.string().optional(),
+  depositionId: z.number().optional(),
+  doi: z.string().optional(),
+  conceptDoi: z.string().optional(),
+  bucket: z.string().optional(),
+  published: z.boolean().optional(),
+  hasParts: z.array(z.string()).optional(),
+});
+
 export function collectionStatePath(target: Target): string {
   return path.resolve(process.cwd(), `scripts/.zenodo-state-collection-${target}.json`);
 }
 
 export function loadCollectionState(target: Target): CollectionState {
   const p = collectionStatePath(target);
-  return fs.existsSync(p) ? (JSON.parse(fs.readFileSync(p, "utf8")) as CollectionState) : {};
+  if (!fs.existsSync(p)) return {};
+  const parsed = collectionStateSchema.safeParse(JSON.parse(fs.readFileSync(p, "utf8")));
+  if (!parsed.success) {
+    throw new Error(`malformed Zenodo collection state file ${p}: ${parsed.error.message}`);
+  }
+  return parsed.data;
 }
 
 export function saveCollectionState(target: Target, state: CollectionState): void {

@@ -33,6 +33,7 @@ import {
   type ZenodoMeta,
 } from "./lib/ntro-zenodo";
 import { depositionIdFromDoi, setFrontmatterField, zenodoClient, ZenodoError } from "./lib/zenodo";
+import { errorMessage } from "./lib/errors";
 
 // Happy Eyeballs, as in zenodo-deposit.ts.
 net.setDefaultAutoSelectFamily(true);
@@ -196,7 +197,7 @@ async function main() {
       }
     } catch (err) {
       problems++;
-      console.log(`${slug}: ${(err as Error).message}`);
+      console.log(`${slug}: ${errorMessage(err)}`);
     }
   }
 

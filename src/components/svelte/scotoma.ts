@@ -286,7 +286,7 @@ export function drawScotoma(
   };
 
   const d = (style.offsetFraction * fontSize) / 2;
-  const human = layer(0, +d, style.humanColour);
+  const human = layer(0, d, style.humanColour);
   const machine = layer(1, -d, style.machineColour);
 
   const sigma = style.blurFraction * fontSize;

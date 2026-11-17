@@ -124,7 +124,7 @@ async function main() {
     };
   }
 
-  const pubUri = statePubUri ?? atUri(did!, "site.standard.publication", PUBLICATION_RKEY);
+  const pubUri = statePubUri ?? atUri(did, "site.standard.publication", PUBLICATION_RKEY);
   state.did = did;
   state.publicationAtUri = pubUri;
 

@@ -1,4 +1,17 @@
 import fs from "node:fs";
+import { z } from "astro/zod";
+
+const syndicationStateSchema = z.object({
+  posts: z
+    .record(
+      z.string(),
+      z.union([
+        z.object({ uri: z.string(), cid: z.string(), syndicatedAt: z.string() }),
+        z.object({ seeded: z.literal(true) }),
+      ]),
+    )
+    .optional(),
+});
 
 /**
  * Records which blog posts have already been cross-posted to Bluesky.
@@ -26,8 +39,11 @@ export interface SyndicationState {
 
 export function readSyndication(statePath: string): SyndicationState {
   if (!fs.existsSync(statePath)) return { posts: {} };
-  const parsed = JSON.parse(fs.readFileSync(statePath, "utf8")) as Partial<SyndicationState>;
-  return { posts: parsed.posts ?? {} };
+  const parsed = syndicationStateSchema.safeParse(JSON.parse(fs.readFileSync(statePath, "utf8")));
+  if (!parsed.success) {
+    throw new Error(`malformed syndication state file ${statePath}: ${parsed.error.message}`);
+  }
+  return { posts: parsed.data.posts ?? {} };
 }
 
 export function writeSyndication(statePath: string, state: SyndicationState): void {

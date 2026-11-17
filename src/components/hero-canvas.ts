@@ -311,7 +311,7 @@ export async function mountHeroCanvas(container: HTMLElement, phrases: string[])
         }
 
         // Paint new head char with amber glow
-        const ch = row.phrase[currentIdx]!;
+        const ch = row.phrase[currentIdx];
         ctx.shadowColor = HEAD_GLOW_CSS;
         ctx.shadowBlur = 10;
         ctx.fillStyle = HEAD_CSS;
@@ -340,7 +340,7 @@ export async function mountHeroCanvas(container: HTMLElement, phrases: string[])
       burstActive = true;
       burstStart = t;
       if (shader) {
-        const pair = BURST_COLOR_PAIRS[Math.floor(Math.random() * BURST_COLOR_PAIRS.length)]!;
+        const pair = BURST_COLOR_PAIRS[Math.floor(Math.random() * BURST_COLOR_PAIRS.length)];
         shader.updateUniforms({
           u_burstSlope: randFloat(-BURST_SLOPE_RANGE, BURST_SLOPE_RANGE),
           u_burstDirection: Math.random() < 0.5 ? 1 : -1,
@@ -465,8 +465,8 @@ export async function mountHeroCanvas(container: HTMLElement, phrases: string[])
   shader.initializeUniform("u_burstActive", "float", 0);
   shader.initializeUniform("u_burstSlope", "float", 0);
   shader.initializeUniform("u_burstDirection", "float", 1);
-  shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0]!.a);
-  shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0]!.b);
+  shader.initializeUniform("u_burstColorA", "float", BURST_COLOR_PAIRS[0].a);
+  shader.initializeUniform("u_burstColorB", "float", BURST_COLOR_PAIRS[0].b);
   shader.initializeUniform("u_mouse", "float", mouseUv);
   shader.initializeUniform("u_hoverStrength", "float", 0);
   shader.initializeUniform("u_cellSize", "float", [charWidth / widthPx, rowPitch / heightPx]);

@@ -24,5 +24,5 @@ export function isAnimatedWebp(bytes: Uint8Array): boolean {
   if (!asciiAt(bytes, 0, "RIFF") || !asciiAt(bytes, 8, "WEBP")) return false;
   if (!asciiAt(bytes, 12, "VP8X")) return false;
 
-  return (bytes[20]! & ANIMATION_FLAG) !== 0;
+  return (bytes[20] & ANIMATION_FLAG) !== 0;
 }

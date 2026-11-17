@@ -1,7 +1,7 @@
 import type { ImageMetadata } from "astro";
 import defaultHero from "../assets/og-default.avif";
 
-const heroImageModules = import.meta.glob<{ default: ImageMetadata }>("/src/assets/heroes/*.avif", {
+const heroImageModules = import.meta.glob<ImageMetadata>("/src/assets/heroes/*.avif", {
   eager: true,
   import: "default",
 });
@@ -17,7 +17,5 @@ export function resolveHeroImage(
 }
 
 export function getHeroImage(slug: string): ImageMetadata {
-  // Eager-glob already returns the default export per `import: "default"`.
-  const map = heroImageModules as unknown as Record<string, ImageMetadata>;
-  return resolveHeroImage(slug, map, defaultHero);
+  return resolveHeroImage(slug, heroImageModules, defaultHero);
 }

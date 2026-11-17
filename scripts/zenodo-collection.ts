@@ -37,6 +37,7 @@ import {
   saveCollectionState,
 } from "./lib/zenodo-collection-state";
 import { acceptInclusionRequests, ZENODO_USER_AGENT } from "./lib/zenodo-community";
+import { errorMessage } from "./lib/errors";
 
 // Happy Eyeballs: race IPv4/IPv6 so it still works where IPv6 routing is broken.
 net.setDefaultAutoSelectFamily(true);
@@ -87,7 +88,7 @@ async function api(method: string, url: string, body?: unknown): Promise<any> {
 }
 
 /** GET that tolerates 404 (returns null) — for existence checks. */
-async function apiGet(url: string): Promise<any | null> {
+async function apiGet(url: string): Promise<any> {
   const res = await fetch(url, {
     headers: { Authorization: `Bearer ${TOKEN}`, "User-Agent": ZENODO_USER_AGENT },
   });
@@ -204,7 +205,7 @@ async function ensureCommunity(): Promise<boolean> {
     console.log(`  + created community "${COMMUNITY_SLUG}" (${created.id})`);
     return true;
   } catch (err) {
-    console.log(`  ! couldn't create community via API (${(err as Error).message.split("\n")[0]})`);
+    console.log(`  ! couldn't create community via API (${errorMessage(err).split("\n")[0]})`);
     console.log(`    → create it once in the Zenodo UI with slug "${COMMUNITY_SLUG}", then re-run`);
     return false;
   }
@@ -318,7 +319,7 @@ async function main() {
       console.log(`  ↻ unlocked published record ${state.depositionId} for editing`);
     } catch (err) {
       // 400 = already open for editing (e.g. an interrupted earlier run); continue.
-      if (!(err as Error).message.includes("→ 400")) throw err;
+      if (!errorMessage(err).includes("→ 400")) throw err;
     }
   }
 
@@ -362,4 +363,4 @@ async function main() {
     console.log("\nProduction DOIs are permanent. Commit src/data/livecoding-collection.ts.");
 }
 
-main();
+void main();

@@ -28,6 +28,7 @@ import { parseFrontmatter } from "./lib/frontmatter";
 import { loadCollectionState } from "./lib/zenodo-collection-state";
 import { depositionIdFromDoi, familyFirst, setFrontmatterField, zenodoClient } from "./lib/zenodo";
 import { acceptInclusionRequests, ZENODO_USER_AGENT } from "./lib/zenodo-community";
+import { errorMessage } from "./lib/errors";
 
 // Happy Eyeballs: race IPv4/IPv6 and use whichever connects first, so the
 // deposit still works on networks where IPv6 routing is broken.
@@ -268,7 +269,7 @@ async function depositGig(slug: string, filePath: string, state: State) {
     try {
       await zenodo("POST", `${BASE}/api/deposit/depositions/${depId}/actions/edit`);
     } catch (err) {
-      if (!(err as Error).message.includes("→ 400")) throw err; // already open for editing
+      if (!errorMessage(err).includes("→ 400")) throw err; // already open for editing
     }
     await zenodo("PUT", `${BASE}/api/deposit/depositions/${depId}`, { metadata });
     const published = await zenodo(
@@ -361,10 +362,10 @@ async function main() {
     try {
       await depositGig(file.replace(/\.md$/, ""), path.join(LIVECODING_DIR, file), state);
     } catch (err) {
-      console.error(`  ✗ ${file}: ${(err as Error).message}`);
+      console.error(`  ✗ ${file}: ${errorMessage(err)}`);
     }
   }
   if (PROD) console.log("\nProduction DOIs are permanent. Commit the frontmatter changes.");
 }
 
-main();
+void main();

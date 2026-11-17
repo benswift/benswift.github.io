@@ -22,10 +22,7 @@ export interface Publication {
 }
 
 function getField(entry: BibTeXEntry, field: string): string | undefined {
-  return (
-    (entry[field.toUpperCase()] as string | undefined) ??
-    (entry[field.toLowerCase()] as string | undefined)
-  );
+  return entry[field.toUpperCase()] ?? entry[field.toLowerCase()];
 }
 
 export function loadPublications(): Publication[] {
@@ -56,7 +53,7 @@ export function loadPublications(): Publication[] {
           const match = date.match(/^(\d{4})/);
           if (match) year = match[1];
         } else if (yearField) {
-          year = String(yearField);
+          year = yearField;
         }
 
         let venue = "";

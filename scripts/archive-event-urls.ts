@@ -12,6 +12,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { z } from "astro/zod";
 import { parseFrontmatter } from "./lib/frontmatter";
 
 const WRITE = process.argv.includes("--write");
@@ -26,16 +27,29 @@ interface Snapshot {
   timestamp: string;
 }
 
+const availabilitySchema = z.object({
+  archived_snapshots: z
+    .object({
+      closest: z
+        .object({
+          available: z.boolean().optional(),
+          url: z.string().optional(),
+          timestamp: z.string().optional(),
+        })
+        .optional(),
+    })
+    .optional(),
+});
+
 /** Query the Wayback availability API for the closest existing snapshot. */
 async function waybackAvailable(url: string): Promise<Snapshot | null> {
   const api = `https://archive.org/wayback/available?url=${encodeURIComponent(url)}`;
   try {
     const res = await fetch(api, { signal: AbortSignal.timeout(20_000) });
     if (!res.ok) return null;
-    const json = (await res.json()) as {
-      archived_snapshots?: { closest?: { available?: boolean; url?: string; timestamp?: string } };
-    };
-    const snap = json.archived_snapshots?.closest;
+    const json = availabilitySchema.safeParse(await res.json());
+    if (!json.success) return null; // unexpected response shape — treat as no snapshot
+    const snap = json.data.archived_snapshots?.closest;
     if (snap?.available && snap.url && snap.timestamp) {
       return { archivedUrl: snap.url.replace(/^http:/, "https:"), timestamp: snap.timestamp };
     }
@@ -134,4 +148,4 @@ async function main() {
     console.log("Re-run with --write to Save-Page-Now missing snapshots and update frontmatter.");
 }
 
-main();
+void main();

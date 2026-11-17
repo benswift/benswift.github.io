@@ -33,7 +33,7 @@ function stripMdxSyntax(content: string): string {
 
 export async function GET() {
   const pages = Object.entries(PAGES).map(([label, file]) => {
-    const { content } = parseFrontmatter(sources[file]!);
+    const { content } = parseFrontmatter(sources[file]);
     return `## ${label}\n\n${stripMdxSyntax(content)}`;
   });
   const posts = (await getPosts()).map(({ data, date }) => {

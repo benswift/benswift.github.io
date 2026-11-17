@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { z } from "astro/zod";
 import type { RecommendEntry } from "./atproto";
 
 /**
@@ -15,11 +16,16 @@ export interface RecommendationsConfig {
   documents: string[];
 }
 
+const recommendationsSchema = z.object({ documents: z.array(z.string()).optional() });
+
 /** Returns the recommended document AT-URIs, or null when no config file exists. */
 export function readRecommendations(configPath: string): string[] | null {
   if (!fs.existsSync(configPath)) return null;
-  const parsed = JSON.parse(fs.readFileSync(configPath, "utf8")) as Partial<RecommendationsConfig>;
-  const documents = parsed.documents ?? [];
+  const parsed = recommendationsSchema.safeParse(JSON.parse(fs.readFileSync(configPath, "utf8")));
+  if (!parsed.success) {
+    throw new Error(`malformed recommendations config ${configPath}: ${parsed.error.message}`);
+  }
+  const documents = parsed.data.documents ?? [];
   for (const uri of documents) {
     if (!uri.startsWith("at://")) {
       throw new Error(`Recommendation is not an AT-URI: ${uri}`);
