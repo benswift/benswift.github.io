@@ -2,6 +2,7 @@
   "did": "did:plc:tevykrhi4kibtsipzci76d76",
   "publicationAtUri": "at://did:plc:tevykrhi4kibtsipzci76d76/site.standard.publication/3mf7cvo7whp3t",
   "contentHashes": {
+    "/blog/2026/11/25/even-faster-xtlang-compile-times": "f1b43c4f76e7a784753e65055f2174c4b2b235a908304810940a672ffcfde72b",
     "/blog/2026/08/21/ai-prompts-in-discovery": "6e9f2782ae7ebf108da921046797a6f0321e28ee6c7ede587b224a4da48f60d3",
     "/blog/2026/08/19/fifty-five-billion-tokens": "d513cd2ca97a034bf89ae6ad67f354f39d859f50cd24ca48444681042d6623c5",
     "/blog/2026/08/11/the-moats-are-still-shallow-but-the-stakes-are-much-higher": "433dc4c05fba3ee612023f0a0359f983c6d60538735a0342ecdb315e26c1591f",
