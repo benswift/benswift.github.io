@@ -10,7 +10,8 @@ tags:
 I do most of my editing in [Helix](https://helix-editor.com) these days, and
 when I wrote about
 [getting Extempore running on aarch64](/blog/2026/02/26/extempore-is-alive-on-aarch64-part-deux/)
-earlier in the year I had a [tree-sitter grammar](https://github.com/extemporelang/tree-sitter-extempore)
+earlier in the year I had a
+[tree-sitter grammar](https://github.com/extemporelang/tree-sitter-extempore)
 for `.xtm` files and a hacked-together relay script for sending code over TCP.
 Extempore's editor support has always relied on editor plugins (Emacs, VS Code,
 vim and friends) talking to its TCP eval server on port 7099, and since Helix
@@ -50,9 +51,20 @@ name = "extempore"
 source = { git = "https://github.com/extemporelang/tree-sitter-extempore", rev = "main" }
 ```
 
-Fetch and build the grammar (`hx --grammar fetch && hx --grammar build`) and
-copy its `queries/` directory to `~/.config/helix/runtime/queries/extempore/`
-for syntax highlighting.
+Then fetch and build the grammar, and copy its queries into your Helix runtime
+directory:
+
+```bash
+hx --grammar fetch && hx --grammar build
+mkdir -p ~/.config/helix/runtime/queries/extempore
+cp ~/.config/helix/runtime/grammars/sources/extempore/queries/*.scm \
+  ~/.config/helix/runtime/queries/extempore/
+```
+
+The queries give you syntax highlighting and a textobject for top-level forms:
+<kbd>m</kbd> <kbd>a</kbd> <kbd>f</kbd> selects the form under the cursor, and
+<kbd>]</kbd> <kbd>f</kbd> and <kbd>[</kbd> <kbd>f</kbd> jump between forms.
+`hx --health extempore` should show a tick for the parser and each query.
 
 With `languages.toml` in place, <kbd>Space</kbd> <kbd>a</kbd> already offers
 code actions for "Evaluate top-level form", "Evaluate buffer", and (when you
@@ -75,10 +87,11 @@ selection inside a form, use <kbd>Space</kbd> <kbd>a</kbd>.
 
 ## Playing the fmsynth example
 
-Start Extempore and open `examples/core/fmsynth.xtm` in Helix. Put the cursor
-anywhere inside the first form and press <kbd>,</kbd> <kbd>e</kbd>, then do the
-same for each form in turn. Each result appears in the status line. Compiling
-the DSP function gives
+Start Extempore (run `extempore` in a terminal, which opens your default audio
+device) and open `examples/core/fmsynth.xtm` from the Extempore checkout in
+Helix. Put the cursor anywhere inside the first form and press <kbd>,</kbd>
+<kbd>e</kbd>, then do the same for each form in turn. Each result appears in the
+status line. Compiling the DSP function gives
 
 ```
 Compiled:  dsp >>> [float,float,i64,i64,float*]*  => dsp_adhoc_16_...
