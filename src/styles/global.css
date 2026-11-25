@@ -667,6 +667,38 @@ a.post-item-title {
   font-size: var(--step--1);
 }
 
+/* On a wide screen a listing runs the width of the frame, one row per entry:
+   the title column ends where running text does, and the venue, excerpt and
+   tags start where a hanging image would. */
+@media (width >= 68rem) {
+  .prose > .post-list,
+  .prose > hr:has(+ .post-list) {
+    clear: both;
+    max-inline-size: none;
+  }
+
+  .post-item {
+    grid-template-columns: 7rem calc(var(--measure) - 8.5rem) minmax(0, 1fr);
+    row-gap: 0.3rem;
+  }
+
+  .post-item-content {
+    display: contents;
+  }
+
+  .post-item-title {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  /* Padding, not margin: TagList's scoped style sets its own margin. */
+  .post-item-content > :not(.post-item-title) {
+    grid-column: 3;
+    margin-block: 0;
+    padding-inline-start: 1.5rem;
+  }
+}
+
 /* Pagination */
 .pagination {
   display: flex;
