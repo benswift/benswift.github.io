@@ -196,7 +196,7 @@ main {
 }
 
 .masthead {
-  margin-block: clamp(2rem, 5vw, 3.5rem) 1.5rem;
+  margin-block: clamp(1.25rem, 3vw, 2rem) 1.5rem;
 }
 
 .masthead > :first-child {
