@@ -196,7 +196,7 @@ main {
 }
 
 .masthead {
-  margin-block: clamp(1.25rem, 3vw, 2rem) 1.5rem;
+  margin-block: clamp(1.25rem, 3vw, 2rem) 2rem;
 }
 
 .masthead > :first-child {
@@ -258,6 +258,11 @@ h6 {
 .prose > *,
 .prose > astro-island > * {
   max-inline-size: var(--wide);
+}
+
+/* The masthead sets the gap above the body, whatever it opens with. */
+.prose > :first-child {
+  margin-block-start: 0;
 }
 
 .prose
@@ -394,6 +399,11 @@ img {
     inline-size: calc(50% + 50vw - var(--measure) - var(--image-gap));
     margin-block: 0.4rem 1.75rem;
     margin-inline-start: var(--image-gap);
+  }
+
+  /* A page that opens with an image sets its first paragraph beside it. */
+  .prose > :is(.picture-container, p:has(> img:only-child)):first-child + * {
+    margin-block-start: 0;
   }
 }
 
