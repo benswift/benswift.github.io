@@ -813,21 +813,67 @@ pre.dark-stage {
   display: none;
 }
 
+/* Drawn like the rest of the page: the section's inks, ruled rather than
+   filled, square corners, and the column's measure. */
+#juttu-comments {
+  max-inline-size: var(--measure);
+  margin-block-start: 2.5rem;
+}
+
 #juttu-comments .juttu-comments {
-  --juttu-accent-color: var(--accent-strong);
+  --juttu-accent-color: var(--accent-ink);
   --juttu-link-color: var(--accent-ink);
   --juttu-reply-color: var(--accent-ink);
   --juttu-font-family: var(--font-family-base);
+  --juttu-font-size: 1rem;
+  --juttu-text: var(--text-color);
+  --juttu-text-muted: var(--text-2);
+  --juttu-border-color: var(--divider);
+  --juttu-surface: transparent;
+  --juttu-radius: 0;
 }
 
-/* Shrink the submit button to match the sort pills (Newest/Oldest/Top) it
-   shares a row with; !important because the widget injects its own style
-   element at runtime, after this sheet. Relabelled "Post" in PostLayout.astro. */
-.juttu-submit-btn {
-  padding: 0.2rem 0.65rem !important;
-  border: 1px solid transparent !important;
-  border-radius: 999px !important;
-  font-size: 0.875rem !important;
+#juttu-comments .juttu-title {
+  font-size: var(--step-0);
+  font-weight: 620;
+}
+
+/* Sort order and the submit button as small text controls, like the nav. */
+#juttu-comments .juttu-sort-controls {
+  gap: 0.9rem;
+}
+
+#juttu-comments :is(.juttu-sort-btn, .juttu-submit-btn) {
+  padding: 0.2rem 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--text-2);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+#juttu-comments .juttu-sort-btn:hover,
+#juttu-comments .juttu-sort-btn--active {
+  color: var(--text-color);
+}
+
+#juttu-comments .juttu-sort-btn--active {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+
+/* Relabelled "Post" in PostLayout.astro. */
+#juttu-comments .juttu-submit-btn {
+  color: var(--accent-ink);
+}
+
+/* The compose box is already ruled off below. */
+#juttu-comments .juttu-footer {
+  padding-block-start: 0;
+  border-block-start: 0;
+  text-align: start;
 }
 
 /* Footnotes */

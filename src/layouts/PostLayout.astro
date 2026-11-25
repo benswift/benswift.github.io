@@ -61,7 +61,7 @@ const phrases = [...tags, ...(heroPhrases ?? []), ...SITE_BASELINE_PHRASES];
   <script>
     // The juttu embed hard-codes its submit button label and re-sets it after
     // every "Posting…" cycle, so relabelling needs an observer, not a one-shot
-    // rename. Sized to match the sort pills in global.css.
+    // rename.
     const container = document.getElementById("juttu-comments");
     // juttu shows its "Link comments" setup to every visitor when a post has no
     // Bluesky thread yet. global.css hides it unless the URL carries
