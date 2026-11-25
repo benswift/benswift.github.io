@@ -137,10 +137,7 @@ describe.skipIf(!existsSync(distDir))(
       expect(inner.match(/class="wall-phrase"/g)?.length).toBeGreaterThanOrEqual(10);
       expect(inner).toContain(">Human-</span><span");
       const phrases = JSON.parse(
-        (html.match(/class="wall" data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll(
-          "&quot;",
-          '"',
-        ),
+        (html.match(/class="wall" data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll("&quot;", '"'),
       );
       expect(phrases.length).toBeGreaterThan(10);
     });
