@@ -11,27 +11,24 @@ import {
 
 interface Props {
   phrases: string[];
-  // "tall" is the home page's wall; "strip" runs across the top of every
-  // other page.
-  size: "tall" | "strip";
   // Keep the given phrase order for the opening lines instead of shuffling.
   ordered?: boolean;
 }
 
-const { phrases, size, ordered = false } = Astro.props;
+const { phrases, ordered = false } = Astro.props;
 
 // Enough to fill the wall at any width; the typist trims what doesn't fit.
-const OPENING_COUNT = { tall: 18, strip: 10 };
+const OPENING_COUNT = 10;
 
 const pool = prepPhrases(phrases);
 const random = mulberry32(hashString(Astro.url.pathname));
 const pickStyle = makeStylist(random);
 const opening = (ordered ? pool : shuffled(pool, random))
-  .slice(0, OPENING_COUNT[size])
+  .slice(0, OPENING_COUNT)
   .map((phrase) => ({ tokens: tokenise(phrase), ...pickStyle() }));
 ---
 
-<div class={`wall wall--${size}`} data-phrases={JSON.stringify(pool)}>
+<div class="wall" data-phrases={JSON.stringify(pool)}>
   <p class="wall-inner" aria-hidden="true" set:html={wallHtml(opening)} />
   <button class="wall-toggle" type="button" aria-pressed="false" hidden>
     <span class="visually-hidden">Pause the typing</span>
@@ -61,19 +58,6 @@ const opening = (ordered ? pool : shuffled(pool, random))
     line-height: 0.96;
     letter-spacing: -0.04em;
     user-select: none;
-  }
-
-  .wall--tall {
-    --wall-lines: 5;
-
-    font-size: clamp(2.1rem, 1.2rem + 3.6vw, 4.5rem);
-    line-height: 0.92;
-  }
-
-  @media (width >= 60rem) {
-    .wall--tall {
-      --wall-lines: 4;
-    }
   }
 
   .wall-inner {

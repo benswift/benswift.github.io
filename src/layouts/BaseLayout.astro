@@ -17,7 +17,7 @@ interface Props {
   atUri?: string;
   phrases?: string[];
   heroImage?: ImageMetadata;
-  // The home page's tall wall, which opens with its phrases in the order given.
+  // The home page's wall opens with its phrases in the order given.
   home?: boolean;
 }
 
@@ -63,7 +63,7 @@ const ogImage = await getImage({ src: heroImage, format: "webp", width: 1200, qu
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
     <div class="frame" data-pagefind-ignore>
-      <Wall phrases={phrases} size={home ? "tall" : "strip"} ordered={home} />
+      <Wall phrases={phrases} ordered={home} />
     </div>
     <Nav />
     <main id="main-content" tabindex="-1" data-pagefind-body>
