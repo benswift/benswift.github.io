@@ -32,5 +32,5 @@ const phrases = [...SITE_BASELINE_PHRASES, ...(title ? [title] : []), ...heroPhr
     title && <h1 class="page-title" slot="masthead">{title}</h1>
   )}
   <slot />
-  <SiteFooter relativePath={relativePath} />
+  <SiteFooter slot="footer" relativePath={relativePath} />
 </BaseLayout>

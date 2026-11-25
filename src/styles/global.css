@@ -1,6 +1,5 @@
 /* Global styles for benswift.me */
 
-/* Reset and base */
 *,
 *::before,
 *::after {
@@ -18,53 +17,99 @@
   view-transition-name: site-header;
 }
 
-:focus-visible {
-  outline: 2px solid var(--highlight-color);
-  outline-offset: 2px;
-}
-
 :root {
-  --highlight-color: #be2edd;
-  --text-color: #e0e0e0;
-  --background-color: #1c1a1d;
-  --link-color: color-mix(in srgb, var(--text-color) 50%, var(--highlight-color));
-  --brand-1: color-mix(in srgb, var(--highlight-color) 75%, white);
-  --brand-soft: color-mix(in srgb, var(--highlight-color) 20%, transparent);
-  --bg-soft: #272529;
-  --divider: #363338;
-  --text-2: #aaa;
-  --text-3: #888;
-  /* The site's asymmetric corner: square top-right, rounded elsewhere. */
-  --radius-sm: 4px 0 4px 4px;
-  --radius-md: 6px 0 6px 6px;
-  --radius-lg: 8px 0 8px 8px;
+  color-scheme: light dark;
 
-  accent-color: var(--highlight-color);
-  /* Type scale: small, body, h3, h2, page title. The prose measure is about
-     70 characters of Piazzolla; wide things (code, figures, tables) use the
-     full main column. */
+  /* The wall's hues. Everything else on a page is black on white (or the
+     reverse) plus one of these as its accent. */
+  --hue-tomato: oklch(66% 0.23 27deg);
+  --hue-tangerine: oklch(76% 0.17 60deg);
+  --hue-sun: oklch(87% 0.18 96deg);
+  --hue-leaf: oklch(72% 0.2 148deg);
+  --hue-lagoon: oklch(74% 0.13 195deg);
+  --hue-sky: oklch(64% 0.2 252deg);
+  --hue-iris: oklch(55% 0.25 283deg);
+  --hue-orchid: oklch(60% 0.27 322deg);
+  --hue-rose: oklch(66% 0.24 2deg);
+
+  /* Each section of the site sets --accent (see [data-section] below). The
+     hue itself is for decoration; -strong clears 3:1 against the page for
+     large text and rules, -ink clears 4.5:1 for running text. */
+  --accent: var(--hue-orchid);
+  --accent-strong: light-dark(
+    oklch(from var(--accent) min(l, 0.6) c h),
+    oklch(from var(--accent) max(l, 0.72) c h)
+  );
+  --accent-ink: light-dark(
+    oklch(from var(--accent) min(l, 0.5) c h),
+    oklch(from var(--accent) max(l, 0.8) calc(c * 0.8) h)
+  );
+
+  --background-color: light-dark(oklch(99% 0.002 100deg), oklch(17.5% 0 0deg));
+  --text-color: light-dark(oklch(19% 0 0deg), oklch(95% 0 0deg));
+  --text-2: light-dark(oklch(44% 0 0deg), oklch(76% 0 0deg));
+  --text-3: light-dark(oklch(55% 0 0deg), oklch(64% 0 0deg));
+  --bg-soft: light-dark(oklch(96% 0.002 100deg), oklch(22.5% 0 0deg));
+  --divider: light-dark(oklch(89% 0 0deg), oklch(31% 0 0deg));
+  --highlight-color: var(--accent-strong);
+  --link-color: var(--accent-ink);
+  --brand-1: var(--accent-ink);
+  --brand-soft: color-mix(in oklab, var(--accent) 16%, transparent);
+  --radius-sm: 0.35rem;
+  --radius-md: 0.7rem;
+  --radius-lg: 1.1rem;
+
+  /* Type scale: small, body, h3, h2. Page titles size themselves (see
+     .page-title). Prose keeps to --measure, about 70 characters; code,
+     figures and tables may run to --wide. */
   --step--1: 0.85rem;
   --step-0: 1rem;
-  --step-1: 1.15rem;
-  --step-2: 1.35rem;
-  --step-3: 2.35rem;
-  --measure: 30rem;
+  --step-1: 1.2rem;
+  --step-2: 1.6rem;
+  --measure: 36rem;
+  --wide: 52rem;
+  --frame: 78rem;
+  --gutter: clamp(1.25rem, 5vw, 3.5rem);
 
-  --font-family-base: var(--font-piazzolla, "Piazzolla"), georgia, serif;
+  --font-family-base: var(--font-allo, "Allo"), system-ui, sans-serif;
   --font-family-mono:
     var(--font-recursive, "Recursive"), ui-monospace, consolas, monaco, "Ubuntu Mono", monospace;
 
-  color-scheme: dark;
+  accent-color: var(--accent-strong);
+  scrollbar-color: var(--text-3) transparent;
+}
+
+:root[data-section="blog"] {
+  --accent: var(--hue-sky);
+}
+
+:root[data-section="research"] {
+  --accent: var(--hue-leaf);
+}
+
+:root[data-section="teaching"] {
+  --accent: var(--hue-tangerine);
+}
+
+:root[data-section="bio"],
+:root[data-section="cv"],
+:root[data-section="cv-short"] {
+  --accent: var(--hue-tomato);
+}
+
+:root[data-section="talks"] {
+  --accent: var(--hue-iris);
 }
 
 html {
-  font-size: 18px;
+  /* A percentage, so the reader's browser font size still applies. */
+  font-size: 106.25%;
   overflow-x: clip;
 }
 
-@media (width >= 640px) {
+@media (width >= 40rem) {
   html {
-    font-size: 20px;
+    font-size: 112.5%;
   }
 }
 
@@ -82,9 +127,18 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   line-height: 1.55;
-  font-variant-numeric: oldstyle-nums proportional-nums;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 30%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 /* Hide content visually but keep it in the accessibility tree. Focus-within
@@ -102,22 +156,45 @@ body {
   white-space: nowrap !important;
 }
 
-/* Skip link */
 .skip-link {
   position: absolute;
   top: -100%;
-  left: 1rem;
+  left: var(--gutter);
   z-index: 200;
   padding: 0.5rem 1rem;
-  background: var(--highlight-color);
-  color: #fff;
+  background: var(--text-color);
+  color: var(--background-color);
   text-decoration: none;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   font-size: var(--step--1);
 }
 
 .skip-link:focus {
   top: 0;
+}
+
+/* Page frame: everything sits on the left edge of one wide column. */
+.frame,
+main {
+  max-inline-size: var(--frame);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+main {
+  padding-block: 0 1.5rem;
+}
+
+.masthead {
+  margin-block: clamp(1.75rem, 4vw, 3.25rem) clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.masthead > :first-child {
+  margin-block-start: 0;
+}
+
+.masthead > :last-child {
+  margin-block-end: 0;
 }
 
 /* Typography */
@@ -127,25 +204,24 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1.5em 0 0.5em;
-  line-height: 1.2;
-  font-weight: 600;
-  font-variant-numeric: lining-nums;
+  margin: 1.6em 0 0.5em;
+  line-height: 1.15;
+  font-weight: 680;
+  letter-spacing: -0.015em;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: var(--step-3);
+  font-size: 2.6rem;
 }
 
 h2 {
   font-size: var(--step-2);
+  letter-spacing: -0.025em;
 }
 
 h3 {
   font-size: var(--step-1);
-  font-style: italic;
-  font-weight: 500;
 }
 
 h4,
@@ -154,9 +230,23 @@ h6 {
   font-size: var(--step-0);
 }
 
-/* Running text keeps to the measure; code, figures, tables and islands use
-   the full width of main. */
-main
+.page-title {
+  max-inline-size: 22ch;
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.3rem, 1.5rem + 3.6vw, 4.6rem);
+  font-weight: 740;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+/* Running text keeps to the measure; code, figures, tables and islands may
+   run wider. */
+.prose > *,
+.prose > astro-island > * {
+  max-inline-size: var(--wide);
+}
+
+.prose
   > :is(
     p,
     ul,
@@ -171,22 +261,23 @@ main
     h6,
     .at-callout,
     .footnotes,
-    .post-subtitle
+    .post-subtitle,
+    .cite-widget
   ) {
   max-inline-size: var(--measure);
 }
 
-/* Dates and tabular data line up; prose keeps oldstyle figures. */
+/* Dates and tabular data line up. */
 table,
 time,
 .post-date,
 .post-item-date {
-  font-variant-numeric: lining-nums tabular-nums;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Heading anchor links */
 .at-heading-anchor {
-  color: var(--brand-1);
+  color: var(--text-3);
   text-decoration: none;
   font-weight: 400;
   margin-inline-start: 0.5ch;
@@ -204,155 +295,192 @@ h6:hover > .at-heading-anchor,
 }
 
 .at-heading-anchor:hover {
-  color: color-mix(in srgb, var(--highlight-color) 55%, white);
+  color: var(--accent-ink);
 }
 
 a {
-  color: var(--link-color);
+  color: inherit;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.15s ease;
 }
 
 a:hover {
-  color: var(--brand-1);
+  color: var(--accent-ink);
 }
 
-/* Links in running prose get a non-colour cue (WCAG 1.4.1). :where() keeps
-   specificity low so pills, footnote markers, and title links opt out via
-   their existing class/element rules. */
+/* Links in running prose keep the text colour and carry the section's hue
+   in their underline, which is also their non-colour cue (WCAG 1.4.1).
+   :where() keeps specificity low so pills, footnote markers, and title links
+   opt out via their existing class/element rules. */
 main :where(p, li, blockquote, td, dd, figcaption) a {
   text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-color: var(--accent-strong);
+  text-decoration-thickness: 0.09em;
   text-underline-offset: 0.2em;
+}
+
+main :where(p, li, blockquote, td, dd, figcaption) a:hover {
+  text-decoration-thickness: 0.14em;
 }
 
 p {
   text-wrap: pretty;
-
-  /* Safari-only optical margin alignment; other browsers ignore it. Scoped to
-     p (not body) so form fields don't inherit it. */
-  hanging-punctuation: first;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  outline: 1px solid rgb(255 255 255 / 8%);
 }
 
-/* Container */
-.container {
-  max-width: 48rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-main {
-  max-width: 48rem;
-  margin: 0 auto;
-  padding: 1.5rem;
+.prose img,
+.prose video,
+.prose iframe {
+  border-radius: var(--radius-md);
 }
 
 /* Code */
 code {
   font-family: var(--font-family-mono);
-  font-size: 0.8em;
+  font-size: 0.86em;
 }
 
-/* One signal only (the tinted chip); the text inherits the body colour so
-   code-dense paragraphs don't read as confetti. */
 :not(pre) > code {
-  background: color-mix(in srgb, var(--highlight-color) 10%, var(--bg-soft));
+  background: var(--bg-soft);
   padding: 0.12em 0.4em;
   border-radius: var(--radius-sm);
   overflow-wrap: anywhere;
 }
 
+pre code {
+  font-size: inherit;
+}
+
 pre {
   background: var(--bg-soft);
   border-radius: var(--radius-md);
-  padding: 1rem;
+  padding: 1rem 1.15rem;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   line-height: 1.5;
   scrollbar-width: thin;
-  scrollbar-color: var(--text-3) transparent;
 }
 
-/* Blockquotes */
+/* Astro code blocks. Shiki writes both themes onto each token as
+   --shiki-light and --shiki-dark. */
+.astro-code {
+  font-size: var(--step--1);
+  line-height: 1.6;
+}
+
+.astro-code,
+.astro-code span {
+  color: light-dark(var(--shiki-light), var(--shiki-dark));
+}
+
+/* Mobile: the right edge fades out to signal that code blocks scroll
+   horizontally, since touch-device scrollbars are invisible until touched. */
+@media (width < 40rem) {
+  pre {
+    mask-image: linear-gradient(to right, black 0, black calc(100% - 1.5rem), transparent 100%);
+  }
+}
+
+/* Blockquotes: larger, lighter type in place of a rule down the side. */
 blockquote {
-  position: relative;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem 0.5rem 2.75rem;
+  margin: 1.5rem 0;
+  font-size: var(--step-1);
+  font-weight: 300;
+  line-height: 1.4;
   color: var(--text-2);
-  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* Oversized hanging quote mark in place of the usual left border. */
-blockquote::before {
-  content: open-quote;
-  position: absolute;
-  inset-inline-start: 0.25rem;
-  inset-block-start: -0.35rem;
-  font-size: 3rem;
-  line-height: 1;
-  color: var(--brand-soft);
-  quotes: inherit;
+blockquote > :first-child {
+  margin-block-start: 0;
 }
 
-/* Callouts (shared remark-callout plugin from astro-theme-university) */
+blockquote > :last-child {
+  margin-block-end: 0;
+}
+
+/* Callouts (shared remark-callout plugin from astro-theme-university). Each
+   type has a hue and one of Allo's symbols, so the type doesn't rest on
+   colour alone. */
 .at-callout {
-  padding: 1rem 1.25rem;
-  margin: 1rem 0;
+  --callout-hue: var(--hue-sky);
+  --callout-mark: "●";
+
+  position: relative;
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem 1rem 3rem;
+  border-radius: var(--radius-md);
+  background: color-mix(in oklab, var(--callout-hue) 12%, var(--background-color));
+}
+
+.at-callout::before {
+  content: var(--callout-mark);
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-start: 1.15rem;
+  color: light-dark(
+    oklch(from var(--callout-hue) min(l, 0.6) c h),
+    oklch(from var(--callout-hue) max(l, 0.72) c h)
+  );
+  font-weight: 700;
+}
+
+.at-callout > :first-child {
+  margin-block-start: 0;
+}
+
+.at-callout > :last-child {
+  margin-block-end: 0;
 }
 
 /* Promoted from a `:::tip[Label]` directive label. */
 .at-callout__title {
-  font-weight: 600;
+  font-weight: 680;
   margin: 0 0 0.5rem;
 }
 
 .at-callout--tip {
-  background-color: color-mix(in srgb, var(--highlight-color) 30%, #111);
-  border-top: 2px solid var(--highlight-color);
-  color: var(--text-color);
-}
-
-.at-callout--tip a {
-  color: color-mix(in srgb, var(--highlight-color) 70%, white);
+  --callout-hue: var(--hue-leaf);
+  --callout-mark: "★";
 }
 
 .at-callout--info {
-  background-color: color-mix(in srgb, #3b82f6 15%, #111);
-  border-top: 2px solid #3b82f6;
+  --callout-hue: var(--hue-sky);
+  --callout-mark: "●";
 }
 
 .at-callout--warning {
-  background-color: color-mix(in srgb, #f59e0b 15%, #111);
-  border-top: 2px solid #f59e0b;
+  --callout-hue: var(--hue-tangerine);
+  --callout-mark: "⚠";
 }
 
 /* `:::danger` is aliased to the canonical `error` type by the plugin. */
 .at-callout--error {
-  background-color: color-mix(in srgb, #ef4444 15%, #111);
-  border-top: 2px solid #ef4444;
+  --callout-hue: var(--hue-tomato);
+  --callout-mark: "✕";
 }
 
 .at-callout--details {
-  background-color: var(--bg-soft);
-  border: 1px solid var(--divider);
+  padding-inline-start: 1.25rem;
+  background: var(--bg-soft);
+}
+
+.at-callout--details::before {
+  content: none;
 }
 
 .at-callout--details summary {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 680;
 }
 
 /* Post metadata */
 .post-date {
+  margin: 0;
   color: var(--text-2);
-  font-size: var(--step--1);
-  margin-bottom: 0.5rem;
 }
 
 .post-subtitle {
@@ -376,7 +504,7 @@ blockquote::before {
 }
 
 .bibliography .pub-title {
-  font-weight: 600;
+  font-weight: 650;
   margin-bottom: 0.25rem;
 }
 
@@ -388,7 +516,7 @@ blockquote::before {
 }
 
 .bibliography .pub-title a:hover {
-  color: var(--brand-1);
+  color: var(--accent-ink);
 }
 
 .bibliography .pub-authors {
@@ -405,7 +533,8 @@ blockquote::before {
   margin: 0.25em 0;
 }
 
-/* Post listing styles */
+/* Post, talk and gig listings: the date in its own column, so the list reads
+   as a timeline. */
 .post-list {
   list-style: none;
   padding: 0;
@@ -413,59 +542,43 @@ blockquote::before {
 }
 
 .post-item {
-  border-top: 1px solid var(--divider);
-  padding: 1rem 0;
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 1rem;
-  align-items: start;
-}
-
-.post-item:not(:has(.post-item-image-link)) {
-  grid-template-columns: 1fr;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+  align-items: baseline;
+  margin: 0;
+  padding-block: 1rem;
+  border-block-start: 1px solid var(--divider);
 }
 
 .post-item:first-child {
-  border-top: none;
+  border-block-start: none;
 }
 
-.post-item-image-link {
-  display: block;
-}
-
-.post-item-image {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-sm);
-}
-
-@media (width <= 640px) {
+@media (width < 40rem) {
   .post-item {
-    grid-template-columns: 1fr;
-  }
-
-  .post-item-image {
-    max-height: 80px;
-    width: 100%;
-    object-fit: cover;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 .post-item-title {
-  font-weight: 600;
+  margin: 0;
   font-size: var(--step-1);
-  margin: 0 0.5rem 0 0;
+  font-weight: 650;
   line-height: 1.25;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
 }
 
+a.post-item-title,
+span.post-item-title {
+  display: block;
+}
+
+/* The entry context conveys interactivity, so no underline. */
 .post-item-title a,
 a.post-item-title {
-  color: inherit;
-}
-
-.post-item-title a:hover,
-a.post-item-title:hover {
-  color: var(--brand-1);
+  text-decoration: none;
 }
 
 .post-item-date {
@@ -473,26 +586,14 @@ a.post-item-title:hover {
   color: var(--text-2);
 }
 
-.post-item-tags {
-  margin: 0.25rem 0 0;
-}
-
-.post-item-excerpt {
-  margin-top: 0.5rem;
-  color: var(--text-2);
-}
-
+.post-item-excerpt,
 .post-item-meta {
-  margin: 0;
+  margin: 0.3rem 0 0;
+  color: var(--text-2);
 }
 
 .post-item-venue {
-  color: var(--text-2);
   font-size: var(--step--1);
-}
-
-.post-item-date + .post-item-venue::before {
-  content: " · ";
 }
 
 .post-item-links {
@@ -521,39 +622,32 @@ a.post-item-title:hover {
   color: var(--text-3);
 }
 
-/* Shared page title styles */
-.page-title {
-  font-size: clamp(1.9rem, 1.4rem + 2vw, var(--step-3));
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  margin: 0 0 0.5rem;
-}
-
 /* Tables. Markdown tables arrive wrapped in .table-scroll (a rehype plugin in
    astro.config.ts), so a wide one scrolls inside its own box on a phone. */
 .table-scroll {
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scrollbar-width: thin;
-  scrollbar-color: var(--text-3) transparent;
-  margin-block: 1rem;
+  margin-block: 1.5rem;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  font-size: var(--step--1);
 }
 
 th,
 td {
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0;
   text-align: start;
+  vertical-align: top;
   border-bottom: 1px solid var(--divider);
 }
 
 th {
-  font-weight: 600;
+  font-weight: 650;
+  border-bottom-color: var(--text-color);
 }
 
 /* Definition lists */
@@ -564,7 +658,7 @@ dl {
 }
 
 dt {
-  font-weight: 600;
+  font-weight: 650;
   color: var(--text-2);
 }
 
@@ -572,7 +666,6 @@ dd {
   margin: 0;
 }
 
-/* Horizontal rule */
 hr {
   border: none;
   border-top: 1px solid var(--divider);
@@ -582,43 +675,28 @@ hr {
 /* Lists in prose */
 ul,
 ol {
-  padding-inline-start: 1.5rem;
+  padding-inline-start: 1.25rem;
 }
 
 li {
   margin: 0.25rem 0;
 }
 
-/* Emphasis */
-em {
-  font-style: italic;
+li::marker {
+  color: var(--text-3);
 }
 
 strong {
   font-weight: 700;
 }
 
-/* Astro code blocks (Shiki dual-theme) */
-.astro-code {
-  padding: 1rem;
+/* Figures drawn for a dark page (the charts) keep a dark panel of their own
+   in both colour schemes. */
+.dark-stage {
+  color-scheme: only dark;
+  color: var(--text-color);
+  background: #1c1a1d;
   border-radius: var(--radius-md);
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  font-size: var(--step--1);
-  line-height: 1.6;
-  scrollbar-width: thin;
-  scrollbar-color: var(--text-3) transparent;
-}
-
-/* Mobile: a wrapper whose right edge fades into the background signals that
-   code blocks scroll horizontally, since touch-device scrollbars are invisible
-   until touched. Applied via mask-image so it works with Shiki's inline
-   background colours. */
-@media (width < 640px) {
-  pre,
-  .astro-code {
-    mask-image: linear-gradient(to right, black 0, black calc(100% - 1.5rem), transparent 100%);
-  }
 }
 
 /* Juttu comments. The embed themes itself via custom properties declared on
@@ -632,9 +710,9 @@ strong {
 }
 
 #juttu-comments .juttu-comments {
-  --juttu-accent-color: var(--highlight-color);
-  --juttu-link-color: var(--link-color);
-  --juttu-reply-color: var(--brand-1);
+  --juttu-accent-color: var(--accent-strong);
+  --juttu-link-color: var(--accent-ink);
+  --juttu-reply-color: var(--accent-ink);
   --juttu-font-family: var(--font-family-base);
 }
 
@@ -653,7 +731,7 @@ strong {
   font-size: var(--step--1);
   color: var(--text-2);
   border-top: 1px solid var(--divider);
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   padding-top: 1rem;
 }
 
@@ -665,7 +743,8 @@ sub {
 
 sup a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 650;
+  color: var(--accent-ink);
 }
 
 /* Reduced motion */
@@ -681,23 +760,21 @@ sup a {
 /* Print styles — primarily for CV page */
 @media print {
   :root {
-    --highlight-color: #9b1fb8;
+    --accent: #9b1fb8;
     --text-color: #1a1a1a;
     --background-color: #fff;
-    --link-color: #1a1a1a;
-    --brand-1: #9b1fb8;
-    --brand-soft: color-mix(in srgb, #9b1fb8 25%, transparent);
     --bg-soft: #f5f5f5;
     --divider: #ccc;
     --text-2: #444;
     --text-3: #888;
     --measure: none;
+    --wide: none;
 
-    color-scheme: light;
+    color-scheme: only light;
   }
 
   html {
-    font-size: 11pt;
+    font-size: 10.5pt;
   }
 
   body {
@@ -706,15 +783,15 @@ sup a {
     print-color-adjust: exact;
   }
 
+  main {
+    padding: 0;
+  }
+
   nav,
   footer,
   .skip-link,
   .at-heading-anchor {
     display: none !important;
-  }
-
-  a {
-    color: var(--text-color);
   }
 
   h1,
@@ -725,6 +802,10 @@ sup a {
   h6 {
     break-after: avoid;
     margin: 1em 0 0.3em;
+  }
+
+  .masthead {
+    margin-block: 0 1rem;
   }
 
   .page-title {

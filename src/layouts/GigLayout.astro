@@ -98,7 +98,7 @@ const phrases = [
 <BaseLayout title={title} description={description} phrases={phrases} image={socialImage}>
   <Fragment slot="masthead">
     <h1 class="page-title">{title}</h1>
-    {gigDate && <p class="post-date">{gigDate}</p>}
+    {gigDate && <time class="post-date" datetime={date}>{gigDate}</time>}
   </Fragment>
 
   <dl class="gig-meta">
@@ -192,15 +192,15 @@ const phrases = [
     />
   )}
 
-  <SiteFooter relativePath={relativePath} />
+  <SiteFooter slot="footer" relativePath={relativePath} />
 </BaseLayout>
 
 <style>
   .gig-meta {
     margin-bottom: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 1.25rem;
     background: var(--bg-soft);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
   }
 
   .gig-doi {

@@ -77,12 +77,10 @@ const archive = allTalks
 
   <ul class="post-list">
     {decks.map((talk) => <li class="post-item">
+      <time class="post-item-date" datetime={talk.dateStr}>{talk.dateFormatted}</time>
       <div class="post-item-content">
         <a href={`/decks/${talk.slug}/`} class="post-item-title">{talk.title}</a>
-        <p class="post-item-meta">
-          <span class="post-item-date">{talk.dateFormatted}</span>
-          {talk.event && <span class="post-item-venue">{talk.event}</span>}
-        </p>
+        {talk.event && <p class="post-item-meta post-item-venue">{talk.event}</p>}
       </div>
     </li>)}
   </ul>
@@ -93,19 +91,19 @@ const archive = allTalks
       <p>Older talks, kept for the archive. The slides and papers are linked where they survive.</p>
       <ul class="post-list">
         {archive.map((talk) => <li class="post-item">
+          <time class="post-item-date" datetime={talk.dateStr}>{talk.dateFormatted}</time>
           <div class="post-item-content">
             {talk.href ? (
               <a href={talk.href} class="post-item-title">{talk.title}</a>
             ) : (
               <span class="post-item-title">{talk.title}</span>
             )}
-            <p class="post-item-meta">
-              <span class="post-item-date">{talk.dateFormatted}</span>
-              {talk.event && <span class="post-item-venue">{talk.event}</span>}
+            {(talk.event || talk.links.length > 0) && <p class="post-item-meta post-item-venue">
+              {talk.event}
               {talk.links.length > 0 && <span class="post-item-links">
                 {talk.links.map((link) => <a href={link.href}>{link.label}</a>)}
               </span>}
-            </p>
+            </p>}
           </div>
         </li>)}
       </ul>

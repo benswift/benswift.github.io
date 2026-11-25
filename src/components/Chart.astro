@@ -32,14 +32,14 @@ const svg = source.replace(
 );
 ---
 
-<figure class="chart" data-pagefind-ignore tabindex="0" set:html={svg} />
+<figure class="chart dark-stage" data-pagefind-ignore tabindex="0" set:html={svg} />
 
 <style>
   /* Scrollable (and so focusable, like code blocks) because the SVG won't
      shrink below a legible size. */
   .chart {
     margin: 2rem 0;
-    outline: 1px solid rgb(255 255 255 / 8%);
+    padding: 0.75rem;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scrollbar-width: thin;
@@ -56,9 +56,8 @@ const svg = source.replace(
     height: auto;
   }
 
-  /* The SVGs name "Piazzolla", but the self-hosted face is registered under a
-     hashed family name, so point the text at it. Default figures match what
-     render_svgs.py measured the labels with. */
+  /* The SVGs name a face the site no longer ships; point the text at the
+     page's own. */
   .chart :global(text) {
     font-family: var(--font-family-base);
     font-variant-numeric: normal;

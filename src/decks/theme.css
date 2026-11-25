@@ -88,3 +88,14 @@
   object-fit: contain;
   background: #000;
 }
+
+/* Code blocks carry both Shiki themes as custom properties (see
+   astro.config.ts); decks always use the dark one. */
+.reveal .astro-code {
+  background-color: var(--shiki-dark-bg);
+}
+
+.reveal .astro-code,
+.reveal .astro-code span {
+  color: var(--shiki-dark);
+}

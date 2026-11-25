@@ -5,9 +5,16 @@ interface Props {
 
 const { relativePath } = Astro.props;
 const repoBase = "https://github.com/benswift/benswift.github.io";
+
+const elsewhere = [
+  { text: "GitHub", href: "https://github.com/benswift" },
+  { text: "Bluesky", href: "https://bsky.app/profile/benswift.me" },
+  { text: "LinkedIn", href: "https://www.linkedin.com/in/benjswift" },
+  { text: "RSS", href: "/feed.xml" },
+];
 ---
 
-<footer class="site-footer" data-pagefind-ignore>
+<footer class="site-footer frame" data-pagefind-ignore>
   <p>
     designed &amp; built with{" "}
     <a href="https://astro.build" aria-label="Built with Astro" title="Astro website">&#9889;</a
@@ -29,46 +36,54 @@ const repoBase = "https://github.com/benswift/benswift.github.io";
     Swift
   </p>
 
-  {relativePath && <p class="footer-links">
-    <a
-      rel="license"
-      href="https://creativecommons.org/licenses/by-sa/4.0/"
-      class="licence"
-      aria-label="Creative Commons Attribution-ShareAlike 4.0 licence"
-      >cc by-sa</a
-    >
-    &middot;
-    <a href={`${repoBase}/blob/main/${relativePath}`}>source</a>
-    &middot;
-    <a href={`${repoBase}/commits/main/${relativePath}`}>history</a>
-  </p>}
+  <ul class="footer-links">
+    {elsewhere.map((link) => <li><a href={link.href}>{link.text}</a></li>)}
+  </ul>
+
+  {relativePath && <ul class="footer-links">
+    <li>
+      <a
+        rel="license"
+        href="https://creativecommons.org/licenses/by-sa/4.0/"
+        class="licence"
+        aria-label="Creative Commons Attribution-ShareAlike 4.0 licence"
+        >cc by-sa</a
+      >
+    </li>
+    <li><a href={`${repoBase}/blob/main/${relativePath}`}>source</a></li>
+    <li><a href={`${repoBase}/commits/main/${relativePath}`}>history</a></li>
+  </ul>}
 </footer>
 
 <style>
   .site-footer {
-    border-top: 1px solid var(--divider);
-    padding: 1.5rem 0;
-    margin-top: 2rem;
-    text-align: center;
+    margin-block: 4rem 2.5rem;
     font-size: var(--step--1);
     color: var(--text-2);
   }
 
   .site-footer p {
-    margin: 0.5rem 0;
+    max-inline-size: var(--measure);
+    margin: 0 0 0.75rem;
   }
 
-  .site-footer a {
-    color: var(--text-2);
-    transition: color 0.2s ease;
-  }
-
-  .site-footer a:hover {
-    color: var(--brand-1);
+  .site-footer p a {
+    text-decoration: underline;
+    text-decoration-color: var(--divider);
+    text-underline-offset: 0.2em;
   }
 
   .footer-links {
-    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-links li {
+    margin: 0;
   }
 </style>
 

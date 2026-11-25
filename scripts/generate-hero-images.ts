@@ -13,7 +13,8 @@ const PREVIEW_BASE = `http://localhost:${PREVIEW_PORT}`;
 const HEROES_DIR = path.resolve(import.meta.dirname, "..", "src/assets/heroes");
 const DEFAULT_HERO = path.resolve(import.meta.dirname, "..", "src/assets/og-default.avif");
 const BLOG_DIR = path.resolve(import.meta.dirname, "..", "src/content/blog");
-const SETTLE_MS = 4000;
+const SETTLE_MS = 400;
+const CARD_SIZE = ["1280", "640"];
 
 async function waitForServer(url: string, timeoutMs = 20000) {
   const start = Date.now();
@@ -42,7 +43,7 @@ async function main() {
 
   // By default generate heroes only for posts that don't have one yet, so new
   // posts get a hero without clobbering existing art on unrelated content edits.
-  // Pass --force to regenerate every post (e.g. after changing the canvas), or
+  // Pass --force to regenerate every post (e.g. after changing the wall), or
   // --default to regenerate the site-wide fallback hero from the home page.
   const force = process.argv.includes("--force") || process.argv.includes("--all");
   const workList: { path: string; out: string }[] = [];
@@ -75,27 +76,19 @@ async function main() {
   try {
     await waitForServer(`${PREVIEW_BASE}/`);
 
-    // The first WebGL hero in a fresh browser captures blank — the GL context
-    // isn't presented in time for the screenshot. Prime it with one throwaway
-    // load so every capture below is warm.
-    await ab(["open", `${PREVIEW_BASE}${workList[0].path}/`]);
-    await ab(["wait", "--load", "networkidle"]);
-    await ab(["wait", ".hero-canvas"]);
-    await ab(["wait", String(SETTLE_MS)]);
-
     for (const { path: pagePath, out } of workList) {
-      const url = `${PREVIEW_BASE}${pagePath}/`;
+      // `?wall-capture` has the page show its typed wall alone, full and
+      // still (see wall-typist.ts).
+      const url = `${PREVIEW_BASE}${pagePath}/?wall-capture`;
       const tmpPng = out.replace(/\.avif$/, ".png");
       console.log(`→ ${url} → ${out}`);
 
       await ab(["open", url]);
+      await ab(["set", "viewport", ...CARD_SIZE]);
       await ab(["wait", "--load", "networkidle"]);
-      await ab(["wait", ".hero-canvas"]);
-      // Drop the masthead title and resize to the capture band (see the
-      // [data-hero-capture] rules in HeroCanvas.astro) before the canvas settles.
-      await ab(["eval", "document.documentElement.dataset.heroCapture = ''"]);
+      await ab(["wait", "[data-wall-capture] .wall"]);
       await ab(["wait", String(SETTLE_MS)]);
-      await ab(["screenshot", ".hero-canvas", tmpPng]);
+      await ab(["screenshot", ".wall", tmpPng]);
       await execFileP("avifenc", ["-s", "0", "-q", "90", "-y", "444", "-j", "all", tmpPng, out]);
       fs.unlinkSync(tmpPng);
     }

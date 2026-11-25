@@ -33,7 +33,7 @@ describe.skipIf(!existsSync(distDir))("juttu comments integration", () => {
 
   it("includes juttu embed script in head pinned to a versioned URL", () => {
     expect(htmlWithAtUri).toContain("juttu-embed.js");
-    expect(htmlWithAtUri).toContain('data-theme="dark"');
+    expect(htmlWithAtUri).toContain('data-theme="auto"');
     // The script must be pinned, not @latest — SRI can't hash a moving
     // target, and an unpinned third-party script is a supply-chain hole.
     expect(htmlWithAtUri).not.toContain("juttu@latest");

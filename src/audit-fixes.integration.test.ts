@@ -29,10 +29,10 @@ function findBlogPostHtmls(): string[] {
 }
 
 describe.skipIf(!existsSync(distDir))("color-scheme meta tag (dark-mode guide)", () => {
-  test("every page declares color-scheme: dark before CSS parses", () => {
+  test("every page declares both colour schemes before CSS parses", () => {
     const pages = ["/", "/blog/", "/research/", "/teaching/"];
     for (const p of pages) {
-      expect(readPage(p)).toMatch(/<meta[^>]+name="color-scheme"[^>]+content="dark"/i);
+      expect(readPage(p)).toMatch(/<meta[^>]+name="color-scheme"[^>]+content="light dark"/i);
     }
   });
 });
@@ -117,24 +117,29 @@ describe.skipIf(!existsSync(distDir))(
       );
     });
 
-    test("hero is a masthead inside main that carries the page title as text", () => {
+    test("the page title is text in a masthead inside main, after the typed wall", () => {
       const html = readPage(
         "/blog/2026/02/19/at-uris-as-persistent-identifiers-for-scholarly-blogging/",
       );
       const main = html.slice(html.indexOf("<main"));
-      const masthead = main.match(/class="hero-masthead[^"]*"[^>]*>([\s\S]*?)<\/div>/)?.[1] ?? "";
-      expect(html.indexOf("<header")).toBeLessThan(html.indexOf("<main"));
-      expect(main).toContain('class="hero-slot');
+      const masthead = main.match(/<header class="masthead[^"]*"[^>]*>([\s\S]*?)<\/header>/)?.[1];
+      expect(html.indexOf('class="wall ')).toBeLessThan(html.indexOf("<main"));
       expect(masthead).toMatch(/<h1[^>]*>AT-URIs as persistent identifiers/);
     });
 
-    test("hero ships its canvas, phrases and reduced-motion image in the static HTML", () => {
+    test("the wall ships its opening phrases as static, decorative text", () => {
       const html = readPage("/");
-      const slot = html.match(/<div[^>]+class="hero-slot[^"]*"[^>]*>[\s\S]*?<\/div>/)?.[0] ?? "";
-      expect(slot).toMatch(/<canvas[^>]+class="hero-canvas/);
-      expect(slot).toMatch(/<img[^>]+class="hero-fallback[^"]*"[^>]+src="\/_astro\/[^"]+\.avif"/);
+      const inner = html.match(/<p class="wall-inner"[^>]*>[\s\S]*?<\/p>/)?.[0] ?? "";
+      // Readable without the script (and under reduced motion), hidden from
+      // assistive technology.
+      expect(inner).toContain('aria-hidden="true"');
+      expect(inner.match(/class="wall-phrase"/g)?.length).toBeGreaterThan(10);
+      expect(inner).toContain(">Ben</span> <span");
       const phrases = JSON.parse(
-        (slot.match(/data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll("&quot;", '"'),
+        (html.match(/class="wall [^"]*" data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll(
+          "&quot;",
+          '"',
+        ),
       );
       expect(phrases.length).toBeGreaterThan(10);
     });

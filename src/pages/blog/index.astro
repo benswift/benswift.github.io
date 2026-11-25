@@ -8,7 +8,11 @@ const posts = await getPosts();
 const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].toSorted();
 ---
 
-<PageLayout title="Blog" relativePath="src/pages/blog/index.astro">
+<PageLayout
+  title="Blog"
+  relativePath="src/pages/blog/index.astro"
+  heroPhrases={[...allTags, ...posts.map((post) => post.data.title)]}
+>
   <p>
     This is my blog. Sometimes in these posts I'll talk about research or art projects I'm involved
     with, sometimes I'll just ramble about other stuff which is keeping me up at night. If you're

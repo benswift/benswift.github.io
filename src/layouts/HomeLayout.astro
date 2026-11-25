@@ -17,63 +17,58 @@ const props = Astro.props;
 const description = props.description ?? props.frontmatter?.description;
 const image = props.image ?? props.frontmatter?.image;
 
-const curatedPhrases = [
-  "Ben Swift",
-  "benswift",
-  "Human-Scale AI",
-  "Cybernetic Studio",
-  "ANU School of Cybernetics",
-  "LLMs Unplugged",
-  "Agentic Coding Studio",
-  "livecoding",
-  "cybernetics",
-  "researcher",
-  "educator",
-  "artist",
-  "developer",
-  "creative technologist",
-  "musical livecoder",
-  "TOPLAP",
-  "Canberra",
-  "Claude Code",
-  "Extempore",
-  "human-computer interaction",
-  "creative computing",
-];
-
 const blogTitles = (await getPosts()).map((post) => post.data.title);
 
-const heroPhrases = [...SITE_BASELINE_PHRASES, ...curatedPhrases, ...blogTitles];
+const wallPhrases = [...SITE_BASELINE_PHRASES, ...blogTitles];
 ---
 
-<BaseLayout description={description} image={image} phrases={heroPhrases} tallHero>
+<BaseLayout description={description} image={image} phrases={wallPhrases} home>
   <Fragment slot="masthead">
-    <h1 class="hero-name">Ben Swift</h1>
-    <p class="hero-tagline">researcher, educator, artist, developer</p>
-    <p class="hero-subtitle">Leading <em>Human-Scale AI</em> at the Cybernetic Studio</p>
+    <h1 class="page-title">Ben Swift</h1>
+    <p class="home-tagline">researcher, educator, artist, developer</p>
+    <p class="home-role">Leading <em>Human-Scale AI</em> at the Cybernetic Studio</p>
   </Fragment>
 
   <slot />
-  <SiteFooter relativePath="src/pages/index.mdx" />
+  <SiteFooter slot="footer" relativePath="src/pages/index.mdx" />
 </BaseLayout>
 
 <style>
-  .hero-name {
-    font-size: clamp(2.6rem, 1.8rem + 3vw, 3.6rem);
-    font-weight: 600;
-    line-height: 1.05;
-    letter-spacing: -0.015em;
+  .home-tagline {
     margin: 0;
-    color: var(--highlight-color);
+    font-size: var(--step-2);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
   }
 
-  .hero-tagline {
-    font-size: 1.25rem;
-    color: var(--text-2);
-    margin: 0.5rem 0;
-  }
-
-  .hero-subtitle {
+  .home-role {
     margin: 0.5rem 0 0;
+    color: var(--text-2);
+  }
+
+  /* Wide screens: the intro runs down the left with the photo beside it. */
+  @media (width >= 60rem) {
+    :global([data-section="home"] .prose) {
+      display: grid;
+      grid-template-columns: minmax(0, var(--measure)) minmax(0, 1fr);
+      column-gap: clamp(2rem, 5vw, 4.5rem);
+      align-content: start;
+    }
+
+    :global([data-section="home"] .prose > *) {
+      grid-column: 1;
+    }
+
+    :global([data-section="home"] .prose > .picture-container) {
+      grid-column: 2;
+      grid-row: 1 / span 6;
+      margin: 0.4rem 0 0;
+    }
+
+    /* Grid items' margins don't collapse. */
+    :global([data-section="home"] .prose > p) {
+      margin-block: 0 1em;
+    }
   }
 </style>

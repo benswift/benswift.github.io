@@ -131,23 +131,29 @@ export default defineConfig({
   },
   fonts: [
     {
-      // Self-hosted subsets (Google's served files strip smcp/onum); see
-      // src/assets/fonts/. BaseLayout preloads both styles so the default
-      // `swap` rarely has anything to swap.
+      // Allo (Josh Puckett, OFL): the variable upright with ROND pinned at 50
+      // and opsz at 14, subset to Latin plus its arrow, key and shape symbols.
+      // The obliques are static files, so italic text has two weights.
+      // BaseLayout preloads the upright only.
       provider: fontProviders.local(),
-      name: "Piazzolla",
-      cssVariable: "--font-piazzolla",
-      fallbacks: ["Georgia", "serif"],
+      name: "Allo",
+      cssVariable: "--font-allo",
+      fallbacks: ["Arial", "sans-serif"],
       options: {
         variants: [
           {
-            src: ["./src/assets/fonts/piazzolla-latin.woff2"],
-            weight: "400 700",
+            src: ["./src/assets/fonts/allo-latin.woff2"],
+            weight: "100 900",
             style: "normal",
           },
           {
-            src: ["./src/assets/fonts/piazzolla-italic-latin.woff2"],
-            weight: "400 700",
+            src: ["./src/assets/fonts/allo-oblique-400-latin.woff2"],
+            weight: "400",
+            style: "italic",
+          },
+          {
+            src: ["./src/assets/fonts/allo-oblique-700-latin.woff2"],
+            weight: "700",
             style: "italic",
           },
         ],
@@ -156,7 +162,6 @@ export default defineConfig({
     {
       // Recursive with MONO/CASL pinned to 1 (Mono Casual), CRSV/slnt pinned,
       // wght 300-800; subset includes box-drawing chars for tree output.
-      // Preloaded because the hero canvas draws with it on every page.
       provider: fontProviders.local(),
       name: "Recursive",
       cssVariable: "--font-recursive",
@@ -230,7 +235,10 @@ export default defineConfig({
         [
           rehypeShiki,
           {
-            theme: "github-dark",
+            // Both themes ship as --shiki-light/--shiki-dark custom properties;
+            // global.css picks one with light-dark().
+            themes: { light: "github-light", dark: "github-dark" },
+            defaultColor: false,
             langs: [
               { ...xtlangGrammar, aliases: ["extempore"] },
               { ...armasmGrammar, aliases: ["armasm"] },

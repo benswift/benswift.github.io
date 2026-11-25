@@ -4,7 +4,7 @@ import type { ImageMetadata } from "astro";
 import { Font, getImage } from "astro:assets";
 import Head from "../components/Head.astro";
 import Nav from "../components/Nav.astro";
-import HeroCanvas from "../components/HeroCanvas.astro";
+import Wall from "../components/Wall.astro";
 import { SITE_BASELINE_PHRASES } from "../data/hero";
 import defaultHero from "../assets/og-default.avif";
 
@@ -17,8 +17,8 @@ interface Props {
   atUri?: string;
   phrases?: string[];
   heroImage?: ImageMetadata;
-  // The home page's taller hero; other pages size it to their masthead.
-  tallHero?: boolean;
+  // The home page's tall wall, which opens with its phrases in the order given.
+  home?: boolean;
 }
 
 const {
@@ -30,28 +30,23 @@ const {
   atUri,
   phrases = [...SITE_BASELINE_PHRASES],
   heroImage = defaultHero,
-  tallHero = false,
+  home = false,
 } = Astro.props;
 
-// Layouts put the page title in the "masthead" slot, which sits over the hero.
-const heroVariant = tallHero ? "tall" : Astro.slots.has("masthead") ? "masthead" : "band";
+// The first path segment picks the page's accent hue (see global.css).
+const section = Astro.url.pathname.split("/").find(Boolean) ?? "home";
 
 // WebP, not PNG: the og:image (also twitter:image) is only ever fetched by link
-// unfurlers and reduced-motion users, and WebP is ~35x smaller than PNG here
-// (~15 KB vs ~530 KB) while still decoding on every platform that previews links.
+// unfurlers, and WebP is ~35x smaller than PNG here (~15 KB vs ~530 KB) while
+// still decoding on every platform that previews links.
 const ogImage = await getImage({ src: heroImage, format: "webp", width: 1200, quality: 80 });
-const heroFallbackImage = await getImage({
-  src: heroImage,
-  format: "avif",
-  width: 1280,
-  quality: 50,
-});
 ---
 
-<html lang="en">
+<html lang="en" data-section={section}>
   <head>
-    <Font cssVariable="--font-piazzolla" preload />
-    <Font cssVariable="--font-recursive" preload />
+    {/* Only the upright is preloaded; the obliques load when a page uses them. */}
+    <Font cssVariable="--font-allo" preload={[{ style: "normal" }]} />
+    <Font cssVariable="--font-recursive" />
     {/* Jost is only drawn into the Scotoma generator's canvas, but the
         @font-face has to exist site-wide for the CSS variable to resolve.
         Not preloaded: at 2.7KB it is only fetched when something renders it. */}
@@ -68,11 +63,17 @@ const heroFallbackImage = await getImage({
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
     <Nav />
+    <div class="frame" data-pagefind-ignore>
+      <Wall phrases={phrases} size={home ? "tall" : "strip"} ordered={home} />
+    </div>
     <main id="main-content" tabindex="-1" data-pagefind-body>
-      <HeroCanvas phrases={phrases} fallbackSrc={heroFallbackImage.src} variant={heroVariant}>
+      {Astro.slots.has("masthead") && <header class="masthead">
         <slot name="masthead" />
-      </HeroCanvas>
-      <slot />
+      </header>}
+      <div class="prose">
+        <slot />
+      </div>
     </main>
+    <slot name="footer" />
   </body>
 </html>

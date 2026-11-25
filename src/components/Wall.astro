@@ -1,0 +1,166 @@
+---
+import {
+  hashString,
+  makeStylist,
+  mulberry32,
+  prepPhrases,
+  shuffled,
+  tokenise,
+  wallHtml,
+} from "./wall";
+
+interface Props {
+  phrases: string[];
+  // "tall" is the home page's wall; "strip" runs across the top of every
+  // other page.
+  size: "tall" | "strip";
+  // Keep the given phrase order for the opening lines instead of shuffling.
+  ordered?: boolean;
+}
+
+const { phrases, size, ordered = false } = Astro.props;
+
+// Enough to fill the wall at any width; the typist trims what doesn't fit.
+const OPENING_COUNT = { tall: 18, strip: 10 };
+
+const pool = prepPhrases(phrases);
+const random = mulberry32(hashString(Astro.url.pathname));
+const pickStyle = makeStylist(random);
+const opening = (ordered ? pool : shuffled(pool, random))
+  .slice(0, OPENING_COUNT[size])
+  .map((phrase) => ({ tokens: tokenise(phrase), ...pickStyle() }));
+---
+
+<div class={`wall wall--${size}`} data-phrases={JSON.stringify(pool)}>
+  <p class="wall-inner" aria-hidden="true" set:html={wallHtml(opening)} />
+  <button class="wall-toggle" type="button" aria-pressed="false" hidden>
+    <span class="visually-hidden">Pause the typing</span>
+  </button>
+</div>
+
+<script>
+  import { mountWall } from "./wall-typist";
+
+  const wall = document.querySelector<HTMLElement>(".wall");
+  if (wall) mountWall(wall);
+</script>
+
+<style is:global>
+  /* A fixed number of lines of very large type. The height is reserved in
+     the server-rendered markup, so nothing shifts when the typist starts. */
+  .wall {
+    --wall-lines: 2;
+
+    position: relative;
+    overflow: hidden;
+    /* Room for ascenders and descenders, which overhang the tight lines. */
+    padding-block: 0.14em;
+    block-size: calc(var(--wall-lines) * 1lh + 0.28em);
+    font-size: clamp(1.7rem, 1rem + 2.4vw, 2.9rem);
+    line-height: 0.96;
+    letter-spacing: -0.04em;
+    user-select: none;
+  }
+
+  .wall--tall {
+    --wall-lines: 5;
+
+    font-size: clamp(2.4rem, 0.6rem + 7.4vw, 7.2rem);
+    line-height: 0.92;
+  }
+
+  @media (width >= 60rem) {
+    .wall--tall {
+      --wall-lines: 4;
+    }
+  }
+
+  .wall-inner {
+    margin: 0;
+  }
+
+  .wall-word {
+    white-space: nowrap;
+  }
+
+  .wall-caret {
+    display: inline-block;
+    inline-size: 0.07em;
+    block-size: 0.74em;
+    margin-inline-start: 0.05em;
+    background: currentcolor;
+    translate: 0 0.04em;
+  }
+
+  .wall[data-typing] .wall-caret {
+    animation: wall-caret 1s steps(1) infinite;
+  }
+
+  @keyframes wall-caret {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* A stop/play control for the typing (WCAG 2.2.2), tucked into the wall's
+     bottom corner. */
+  .wall-toggle {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-end: 0;
+    display: grid;
+    place-items: center;
+    inline-size: 1.75rem;
+    aspect-ratio: 1;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--background-color);
+    color: var(--text-3);
+    font-size: 0.7rem;
+    line-height: 1;
+    letter-spacing: 0;
+    cursor: pointer;
+  }
+
+  .wall-toggle[hidden] {
+    display: none;
+  }
+
+  .wall-toggle::before {
+    content: "■";
+  }
+
+  .wall-toggle[aria-pressed="true"]::before {
+    content: "▶";
+  }
+
+  .wall-toggle:hover {
+    color: var(--text-color);
+  }
+
+  @media print {
+    .wall {
+      display: none;
+    }
+  }
+
+  /* Set by the typist for `?wall-capture`: the wall alone, filling the
+     viewport, for scripts/generate-hero-images.ts to screenshot. */
+  [data-wall-capture] .wall {
+    --wall-lines: 5;
+
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    block-size: auto;
+    padding: 3.5rem 4rem;
+    background: var(--background-color);
+    font-size: 6.1rem;
+    line-height: 0.92;
+  }
+
+  [data-wall-capture] .wall-toggle {
+    display: none;
+  }
+</style>
