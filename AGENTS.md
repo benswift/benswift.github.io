@@ -114,6 +114,10 @@ Post-specific images go next to the `.md`/`.mdx` file in
 shared across posts go in `src/assets/post-images/<subdir>/<file>`, referenced
 from `.mdx` as `<Picture file="<subdir>/<file>" alt="..." />`.
 
+Both kinds are laid out by `global.css`: on a wide screen an image hangs in the
+space to the right of the text column and runs off the edge of the page, so a
+post needs no layout markup of its own.
+
 ## SVG illustration style
 
 Palette: `#be2edd` `#3b82f6` `#f59e0b` `#1a1a1a` `#e0e0e0`. Flowing Bézier

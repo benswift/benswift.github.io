@@ -346,10 +346,55 @@ img {
   height: auto;
 }
 
-.prose img,
 .prose video,
 .prose iframe {
   border-radius: var(--radius-md);
+}
+
+/* Images run off the right-hand edge of the page. On a wide screen they hang
+   in the space beside the text column, which carries on down the left; below
+   that they start at the column's left edge, and on a phone they span the
+   screen. An image is never drawn larger than its file. */
+.prose {
+  display: flow-root;
+}
+
+.prose > .picture-container,
+.prose > p:has(> img:only-child) {
+  max-inline-size: none;
+  margin-block: 1.75rem;
+  /* The column is centred in the viewport, so half the difference between
+     their widths reaches the viewport's edge. */
+  margin-inline: 0 calc((100% - 100vw) / 2);
+}
+
+.prose > .picture-container img,
+.prose > p:has(> img:only-child) > img {
+  display: block;
+  inline-size: auto;
+  max-inline-size: 100%;
+  max-block-size: 85svh;
+  margin-inline-start: auto;
+}
+
+@media (width < 40rem) {
+  .prose > .picture-container,
+  .prose > p:has(> img:only-child) {
+    margin-inline-start: calc((100% - 100vw) / 2);
+  }
+}
+
+@media (width >= 68rem) {
+  .prose > .picture-container,
+  .prose > p:has(> img:only-child) {
+    --image-gap: 3rem;
+
+    float: inline-end;
+    clear: inline-end;
+    inline-size: calc(50% + 50vw - var(--measure) - var(--image-gap));
+    margin-block: 0.4rem 1.75rem;
+    margin-inline-start: var(--image-gap);
+  }
 }
 
 /* Code */
@@ -813,6 +858,13 @@ sup a {
   .skip-link,
   .at-heading-anchor {
     display: none !important;
+  }
+
+  .prose > .picture-container,
+  .prose > p:has(> img:only-child) {
+    float: none;
+    inline-size: auto;
+    margin-inline: 0;
   }
 
   h1,
