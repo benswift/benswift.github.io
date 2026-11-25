@@ -59,7 +59,7 @@ runs in about 50ms, making no IPC call to any other session.
 
 Here is what `Alt s` puts on screen:
 
-<pre><code>switch to &gt;   &lt; 4/4 ─────────────────────────────────────────────────────────
+<pre class="dark-stage"><code>switch to &gt;   &lt; 4/4 ─────────────────────────────────────────────────────────
   <span style="color:#f38ba8;font-weight:bold">blocked</span>   <span style="color:#f9e2af">working</span>   <span style="color:#a6e3a1">idle</span>   <span style="color:#6c7086">unknown</span>
 ▌ comp4020                 2 <span style="color:#f38ba8;font-weight:bold">1</span> <span style="color:#f9e2af">1</span>
 ▌ dotfiles                 1 <span style="color:#f9e2af">1</span>

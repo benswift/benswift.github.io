@@ -5,7 +5,7 @@ import {
   prepPhrases,
   shuffled,
   tokenise,
-  WALL_HUES,
+  WALL_TONES,
   wallHtml,
 } from "./wall";
 
@@ -35,14 +35,13 @@ describe("prepPhrases", () => {
 });
 
 describe("makeStylist", () => {
-  it("never repeats the previous phrase's hue or weight, and keeps yellow heavy", () => {
+  it("never repeats the previous phrase's tone or weight", () => {
     const pick = makeStylist(mulberry32(1));
     const styles = Array.from({ length: 200 }, pick);
     for (const [i, style] of styles.entries()) {
-      expect(WALL_HUES).toContain(style.hue);
-      if (style.hue === "sun") expect(style.weight).toBeGreaterThanOrEqual(700);
+      expect(WALL_TONES).toContain(style.tone);
       if (i > 0) {
-        expect(style.hue).not.toBe(styles[i - 1].hue);
+        expect(style.tone).not.toBe(styles[i - 1].tone);
         expect(style.weight).not.toBe(styles[i - 1].weight);
       }
     }
@@ -61,10 +60,10 @@ describe("shuffled", () => {
 describe("wallHtml", () => {
   it("joins a hyphenated compound without a space and escapes text", () => {
     const html = wallHtml([
-      { tokens: tokenise("R&D co-design"), hue: "sky", weight: 800, glyph: "⌘" },
+      { tokens: tokenise("R&D co-design"), tone: 3, weight: 800, glyph: "⌘" },
     ]);
     expect(html).toBe(
-      '<span class="wall-phrase" style="color:var(--hue-sky);font-weight:800">' +
+      '<span class="wall-phrase" style="color:var(--wall-3);font-weight:800">' +
         '<span class="wall-word">R&amp;D</span> ' +
         '<span class="wall-word">co-</span><span class="wall-word">design</span> ' +
         '<span class="wall-word">⌘</span></span>',

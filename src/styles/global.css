@@ -18,46 +18,45 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: only light;
 
-  /* The wall's hues. Everything else on a page is black on white (or the
-     reverse) plus one of these as its accent. */
-  --hue-tomato: oklch(66% 0.23 27deg);
-  --hue-tangerine: oklch(76% 0.17 60deg);
-  --hue-sun: oklch(87% 0.18 96deg);
-  --hue-leaf: oklch(72% 0.2 148deg);
-  --hue-lagoon: oklch(74% 0.13 195deg);
-  --hue-sky: oklch(64% 0.2 252deg);
-  --hue-iris: oklch(55% 0.25 283deg);
-  --hue-orchid: oklch(60% 0.27 322deg);
-  --hue-rose: oklch(66% 0.24 2deg);
+  /* The inks. Each section of the site sets --accent to one of them (see
+     [data-section] below), and everything else on the page is that hue at
+     another lightness: the text is the hue taken nearly to black and the paper
+     nearly to white, so the blog is written in navy and the research page in
+     bottle green. -ink clears 4.5:1 against the paper for running text. */
+  --ink-navy: oklch(42% 0.15 255deg);
+  --ink-forest: oklch(46% 0.12 152deg);
+  --ink-plum: oklch(42% 0.18 325deg);
+  --ink-rust: oklch(54% 0.15 50deg);
+  --ink-oxblood: oklch(43% 0.16 25deg);
+  --ink-indigo: oklch(40% 0.19 285deg);
+  --ink-teal: oklch(48% 0.09 200deg);
+  --accent: var(--ink-plum);
+  --accent-strong: var(--accent);
+  --accent-ink: oklch(from var(--accent) min(l, 0.48) c h);
+  --background-color: oklch(from var(--accent) 98.7% 0.006 h);
+  --text-color: oklch(from var(--accent) 25% 0.075 h);
+  --text-2: oklch(from var(--accent) 45% 0.05 h);
+  --text-3: oklch(from var(--accent) 56% 0.04 h);
+  --bg-soft: oklch(from var(--accent) 95.7% 0.012 h);
+  --divider: oklch(from var(--accent) 88.5% 0.02 h);
 
-  /* Each section of the site sets --accent (see [data-section] below). The
-     hue itself is for decoration; -strong clears 3:1 against the page for
-     large text and rules, -ink clears 4.5:1 for running text. */
-  --accent: var(--hue-orchid);
-  --accent-strong: light-dark(
-    oklch(from var(--accent) min(l, 0.6) c h),
-    oklch(from var(--accent) max(l, 0.72) c h)
-  );
-  --accent-ink: light-dark(
-    oklch(from var(--accent) min(l, 0.5) c h),
-    oklch(from var(--accent) max(l, 0.8) calc(c * 0.8) h)
-  );
-
-  --background-color: light-dark(oklch(99% 0.002 100deg), oklch(17.5% 0 0deg));
-  --text-color: light-dark(oklch(19% 0 0deg), oklch(95% 0 0deg));
-  --text-2: light-dark(oklch(44% 0 0deg), oklch(76% 0 0deg));
-  --text-3: light-dark(oklch(55% 0 0deg), oklch(64% 0 0deg));
-  --bg-soft: light-dark(oklch(96% 0.002 100deg), oklch(22.5% 0 0deg));
-  --divider: light-dark(oklch(89% 0 0deg), oklch(31% 0 0deg));
+  /* The typed wall's tones: shades of the section's ink. */
+  --wall-1: oklch(from var(--accent) 28% calc(c * 0.8) h);
+  --wall-2: oklch(from var(--accent) 36% c h);
+  --wall-3: oklch(from var(--accent) 44% c h);
+  --wall-4: oklch(from var(--accent) 52% c h);
+  --wall-5: oklch(from var(--accent) 60% c h);
+  --wall-6: oklch(from var(--accent) 68% calc(c * 0.9) h);
+  --wall-7: oklch(from var(--accent) 48% calc(c * 1.2) h);
   --highlight-color: var(--accent-strong);
   --link-color: var(--accent-ink);
   --brand-1: var(--accent-ink);
   --brand-soft: color-mix(in oklab, var(--accent) 16%, transparent);
-  --radius-sm: 0.35rem;
-  --radius-md: 0.7rem;
-  --radius-lg: 1.1rem;
+  --radius-sm: 0.2rem;
+  --radius-md: 0.35rem;
+  --radius-lg: 0.6rem;
 
   /* Type scale: small, body, h3, h2. Page titles size themselves (see
      .page-title). Prose keeps to --measure, about 70 characters; code,
@@ -79,26 +78,37 @@
   scrollbar-color: var(--text-3) transparent;
 }
 
+/* The home page's wall is set in all seven inks. */
+:root[data-section="home"] {
+  --wall-1: var(--ink-navy);
+  --wall-2: var(--ink-forest);
+  --wall-3: var(--ink-plum);
+  --wall-4: var(--ink-rust);
+  --wall-5: var(--ink-oxblood);
+  --wall-6: var(--ink-indigo);
+  --wall-7: var(--ink-teal);
+}
+
 :root[data-section="blog"] {
-  --accent: var(--hue-sky);
+  --accent: var(--ink-navy);
 }
 
 :root[data-section="research"] {
-  --accent: var(--hue-leaf);
+  --accent: var(--ink-forest);
 }
 
 :root[data-section="teaching"] {
-  --accent: var(--hue-tangerine);
+  --accent: var(--ink-rust);
 }
 
 :root[data-section="bio"],
 :root[data-section="cv"],
 :root[data-section="cv-short"] {
-  --accent: var(--hue-tomato);
+  --accent: var(--ink-oxblood);
 }
 
 :root[data-section="talks"] {
-  --accent: var(--hue-iris);
+  --accent: var(--ink-indigo);
 }
 
 html {
@@ -206,7 +216,7 @@ h5,
 h6 {
   margin: 1.6em 0 0.5em;
   line-height: 1.15;
-  font-weight: 680;
+  font-weight: 620;
   letter-spacing: -0.015em;
   text-wrap: balance;
 }
@@ -234,7 +244,7 @@ h6 {
   max-inline-size: 22ch;
   margin: 0 0 0.75rem;
   font-size: clamp(2.3rem, 1.5rem + 3.6vw, 4.6rem);
-  font-weight: 740;
+  font-weight: 560;
   line-height: 1;
   letter-spacing: -0.04em;
 }
@@ -366,7 +376,7 @@ pre {
 }
 
 /* Astro code blocks. Shiki writes both themes onto each token as
-   --shiki-light and --shiki-dark. */
+   --shiki-light and --shiki-dark; the decks use the dark one. */
 .astro-code {
   font-size: var(--step--1);
   line-height: 1.6;
@@ -374,7 +384,7 @@ pre {
 
 .astro-code,
 .astro-code span {
-  color: light-dark(var(--shiki-light), var(--shiki-dark));
+  color: var(--shiki-light);
 }
 
 /* Mobile: the right edge fades out to signal that code blocks scroll
@@ -385,12 +395,14 @@ pre {
   }
 }
 
-/* Blockquotes: larger, lighter type in place of a rule down the side. */
+/* Blockquotes: indented, in slightly larger and lighter type, in place of a
+   rule down the side. */
 blockquote {
   margin: 1.5rem 0;
-  font-size: var(--step-1);
-  font-weight: 300;
-  line-height: 1.4;
+  padding-inline-start: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 320;
+  line-height: 1.45;
   color: var(--text-2);
 }
 
@@ -403,17 +415,17 @@ blockquote > :last-child {
 }
 
 /* Callouts (shared remark-callout plugin from astro-theme-university). Each
-   type has a hue and one of Allo's symbols, so the type doesn't rest on
+   type has an ink and one of Allo's symbols, so the type doesn't rest on
    colour alone. */
 .at-callout {
-  --callout-hue: var(--hue-sky);
+  --callout-hue: var(--ink-navy);
   --callout-mark: "●";
 
   position: relative;
   margin: 1.5rem 0;
   padding: 1rem 1.25rem 1rem 3rem;
   border-radius: var(--radius-md);
-  background: color-mix(in oklab, var(--callout-hue) 12%, var(--background-color));
+  background: color-mix(in oklab, var(--callout-hue) 9%, var(--background-color));
 }
 
 .at-callout::before {
@@ -421,11 +433,8 @@ blockquote > :last-child {
   position: absolute;
   inset-block-start: 1rem;
   inset-inline-start: 1.15rem;
-  color: light-dark(
-    oklch(from var(--callout-hue) min(l, 0.6) c h),
-    oklch(from var(--callout-hue) max(l, 0.72) c h)
-  );
-  font-weight: 700;
+  color: var(--callout-hue);
+  font-weight: 600;
 }
 
 .at-callout > :first-child {
@@ -438,28 +447,28 @@ blockquote > :last-child {
 
 /* Promoted from a `:::tip[Label]` directive label. */
 .at-callout__title {
-  font-weight: 680;
+  font-weight: 620;
   margin: 0 0 0.5rem;
 }
 
 .at-callout--tip {
-  --callout-hue: var(--hue-leaf);
-  --callout-mark: "★";
+  --callout-hue: var(--ink-forest);
+  --callout-mark: "→";
 }
 
 .at-callout--info {
-  --callout-hue: var(--hue-sky);
+  --callout-hue: var(--ink-navy);
   --callout-mark: "●";
 }
 
 .at-callout--warning {
-  --callout-hue: var(--hue-tangerine);
+  --callout-hue: var(--ink-rust);
   --callout-mark: "⚠";
 }
 
 /* `:::danger` is aliased to the canonical `error` type by the plugin. */
 .at-callout--error {
-  --callout-hue: var(--hue-tomato);
+  --callout-hue: var(--ink-oxblood);
   --callout-mark: "✕";
 }
 
@@ -474,7 +483,7 @@ blockquote > :last-child {
 
 .at-callout--details summary {
   cursor: pointer;
-  font-weight: 680;
+  font-weight: 620;
 }
 
 /* Post metadata */
@@ -564,7 +573,7 @@ blockquote > :last-child {
 .post-item-title {
   margin: 0;
   font-size: var(--step-1);
-  font-weight: 650;
+  font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.015em;
   text-wrap: balance;
@@ -687,16 +696,22 @@ li::marker {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 650;
 }
 
-/* Figures drawn for a dark page (the charts) keep a dark panel of their own
-   in both colour schemes. */
-.dark-stage {
-  color-scheme: only dark;
-  color: var(--text-color);
+/* Figures drawn for the site's old dark theme (the charts, and the diagrams
+   written inline in posts) keep a dark panel of their own. */
+.dark-stage,
+.prose > svg {
+  color: #e0e0e0;
   background: #1c1a1d;
   border-radius: var(--radius-md);
+}
+
+.prose > svg {
+  display: block;
+  margin-block: 1.5rem;
+  padding: 1rem;
 }
 
 /* Juttu comments. The embed themes itself via custom properties declared on
@@ -735,6 +750,12 @@ strong {
   padding-top: 1rem;
 }
 
+.footnotes h2 {
+  margin-block-start: 0;
+  font-size: var(--step-0);
+  letter-spacing: 0;
+}
+
 /* Keep footnote markers from pushing their line apart. */
 sup,
 sub {
@@ -769,8 +790,6 @@ sup a {
     --text-3: #888;
     --measure: none;
     --wide: none;
-
-    color-scheme: only light;
   }
 
   html {

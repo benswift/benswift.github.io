@@ -91,7 +91,15 @@ const phrases = [...tags, ...(heroPhrases ?? []), ...SITE_BASELINE_PHRASES];
   .post-meta {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem 1rem;
+    align-items: baseline;
+    gap: 0.25rem 1.25rem;
+  }
+
+  .post-meta :global(.tag-container) {
+    margin: 0;
+  }
+
+  .post-meta :global(.tag) {
+    font-size: inherit;
   }
 </style>

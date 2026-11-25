@@ -1,43 +1,15 @@
 // The typed wall's phrase handling, shared by the server render (Wall.astro)
 // and the browser typist (wall-typist.ts). Pure functions only.
 
-// Each hue is a `--hue-<name>` custom property in global.css.
-export const WALL_HUES = [
-  "tomato",
-  "tangerine",
-  "sun",
-  "leaf",
-  "lagoon",
-  "sky",
-  "iris",
-  "orchid",
-  "rose",
-] as const;
+// Each tone is a `--wall-<n>` custom property in global.css: the section
+// inks on the home page, shades of the section's own ink everywhere else.
+export const WALL_TONES = [1, 2, 3, 4, 5, 6, 7] as const;
 
-export const WALL_WEIGHTS = [100, 200, 300, 500, 700, 800, 900] as const;
+export const WALL_WEIGHTS = [100, 200, 300, 400, 600, 800] as const;
 
-// Key caps and marks Allo draws itself, so they take each phrase's weight.
-export const WALL_GLYPHS = [
-  "⌘",
-  "⏎",
-  "⇥",
-  "⌫",
-  "⌥",
-  "⇧",
-  "⎋",
-  "␣",
-  "❯",
-  "→",
-  "↗",
-  "★",
-  "♥",
-  "◆",
-  "✓",
-  "⌕",
-  "&",
-  "#",
-  "§",
-] as const;
+// Key caps and arrows, which Allo draws itself, so they take each phrase's
+// weight.
+export const WALL_GLYPHS = ["⌘", "⏎", "⇥", "⌫", "⌥", "⇧", "⎋", "␣", "❯", "→", "↗"] as const;
 
 const MAX_PHRASE_LEN = 36;
 // A token never breaks across lines, so one longer than this would overflow
@@ -51,7 +23,7 @@ export interface WallToken {
 }
 
 export interface WallStyle {
-  hue: (typeof WALL_HUES)[number];
+  tone: (typeof WALL_TONES)[number];
   weight: (typeof WALL_WEIGHTS)[number];
   glyph: (typeof WALL_GLYPHS)[number];
 }
@@ -114,25 +86,24 @@ export function shuffled<T>(items: readonly T[], random: () => number): T[] {
 }
 
 /**
- * Returns a function that picks each phrase's hue, weight and closing glyph,
- * never repeating the previous phrase's hue or weight.
+ * Returns a function that picks each phrase's tone, weight and closing glyph,
+ * never repeating the previous phrase's tone or weight.
  */
 export function makeStylist(random: () => number): () => WallStyle {
-  let lastHue: string | undefined;
+  let lastTone: number | undefined;
   let lastWeight: number | undefined;
   const pick = <T>(items: readonly T[]) => items[Math.floor(random() * items.length)];
   return () => {
+    const tone = pick(WALL_TONES.filter((t) => t !== lastTone));
     const weight = pick(WALL_WEIGHTS.filter((w) => w !== lastWeight));
-    // Yellow is too faint on a white page in the thin weights.
-    const hue = pick(WALL_HUES.filter((h) => h !== lastHue && (h !== "sun" || weight >= 700)));
-    lastHue = hue;
+    lastTone = tone;
     lastWeight = weight;
-    return { hue, weight, glyph: pick(WALL_GLYPHS) };
+    return { tone, weight, glyph: pick(WALL_GLYPHS) };
   };
 }
 
-export function phraseStyle({ hue, weight }: WallStyle): string {
-  return `color:var(--hue-${hue});font-weight:${weight}`;
+export function phraseStyle({ tone, weight }: WallStyle): string {
+  return `color:var(--wall-${tone});font-weight:${weight}`;
 }
 
 const escapeHtml = (text: string) =>

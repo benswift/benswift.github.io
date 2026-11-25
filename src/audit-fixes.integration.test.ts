@@ -29,10 +29,10 @@ function findBlogPostHtmls(): string[] {
 }
 
 describe.skipIf(!existsSync(distDir))("color-scheme meta tag (dark-mode guide)", () => {
-  test("every page declares both colour schemes before CSS parses", () => {
+  test("every page declares its light colour scheme before CSS parses", () => {
     const pages = ["/", "/blog/", "/research/", "/teaching/"];
     for (const p of pages) {
-      expect(readPage(p)).toMatch(/<meta[^>]+name="color-scheme"[^>]+content="light dark"/i);
+      expect(readPage(p)).toMatch(/<meta[^>]+name="color-scheme"[^>]+content="light"/i);
     }
   });
 });
@@ -134,7 +134,7 @@ describe.skipIf(!existsSync(distDir))(
       // assistive technology.
       expect(inner).toContain('aria-hidden="true"');
       expect(inner.match(/class="wall-phrase"/g)?.length).toBeGreaterThan(10);
-      expect(inner).toContain(">Ben</span> <span");
+      expect(inner).toContain(">Human-</span><span");
       const phrases = JSON.parse(
         (html.match(/class="wall [^"]*" data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll(
           "&quot;",

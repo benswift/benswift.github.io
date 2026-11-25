@@ -33,18 +33,22 @@ blandness, stock photos, or university template aesthetic).
 ## Design Principles
 
 1. **Content first** — decoration supports, never competes
-2. **Warm darkness** — inviting, not cold; purple-tinted neutrals over pure
-   greys
-3. **Quiet confidence** — intentional and considered without drawing attention
+2. **One loud thing** — the typed wall at the top of each page carries the
+   scale and the play; everything under it is one typeface in one ink
+3. **Ink, not black** — each section's text is a near-black of its own hue on a
+   paper faintly tinted to match (navy for the blog, bottle green for research),
+   and its wall is set in shades of the same ink. Deep, printerly colours; no
+   candy
+4. **Quiet confidence** — intentional and considered without drawing attention
    to itself
-4. **Playful details** — small surprises that reward attention without demanding
+5. **Playful details** — small surprises that reward attention without demanding
    it
-5. **Accessibility as craft** — not a checkbox but a design value
+6. **Accessibility as craft** — not a checkbox but a design value
 
 ## Accessibility & Inclusion
 
-Dark-only theme with `color-scheme: dark`. WCAG AA contrast as a floor,
-reduced-motion alternatives for all animation (the WebGL hero has a static image
-fallback), keyboard-reachable scrollable code blocks, skip links, and semantic
-HTML throughout. Typography choices historically prioritised legibility
-(Atkinson Hyperlegible heritage).
+Light theme only (`color-scheme: only light`). WCAG AA contrast as a floor,
+reduced-motion alternatives for all animation (the typed wall is static text
+until its script runs, and has a button to stop it), keyboard-reachable
+scrollable code blocks, skip links, and semantic HTML throughout. The typeface
+is Allo, a sans drawn for screens.

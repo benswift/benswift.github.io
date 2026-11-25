@@ -1,7 +1,6 @@
 // Phrases every page's typed wall draws on. The home page opens with them in
 // this order; other pages shuffle them in with their own.
 export const SITE_BASELINE_PHRASES = [
-  "Ben Swift",
   "livecoding",
   "Human-Scale AI",
   "educator",
@@ -21,4 +20,5 @@ export const SITE_BASELINE_PHRASES = [
   "TOPLAP",
   "creative technologist",
   "human-computer interaction",
+  "Ben Swift",
 ] as const;

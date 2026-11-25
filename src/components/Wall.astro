@@ -65,7 +65,7 @@ const opening = (ordered ? pool : shuffled(pool, random))
   .wall--tall {
     --wall-lines: 5;
 
-    font-size: clamp(2.4rem, 0.6rem + 7.4vw, 7.2rem);
+    font-size: clamp(2.4rem, 0.6rem + 7vw, 6.8rem);
     line-height: 0.92;
   }
 
@@ -153,6 +153,8 @@ const opening = (ordered ? pool : shuffled(pool, random))
     position: fixed;
     inset: 0;
     z-index: 1000;
+    display: grid;
+    align-content: center;
     block-size: auto;
     padding: 3.5rem 4rem;
     background: var(--background-color);

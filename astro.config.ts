@@ -131,9 +131,10 @@ export default defineConfig({
   },
   fonts: [
     {
-      // Allo (Josh Puckett, OFL): the variable upright with ROND pinned at 50
-      // and opsz at 14, subset to Latin plus its arrow, key and shape symbols.
-      // The obliques are static files, so italic text has two weights.
+      // Allo (Josh Puckett, OFL): the variable upright with ROND pinned at 0
+      // (its sharpest cut) and opsz at 14, subset to Latin plus its arrow, key
+      // and shape symbols. The obliques are static files, so italic text has
+      // two weights (and Allo's default roundness).
       // BaseLayout preloads the upright only.
       provider: fontProviders.local(),
       name: "Allo",
@@ -235,8 +236,8 @@ export default defineConfig({
         [
           rehypeShiki,
           {
-            // Both themes ship as --shiki-light/--shiki-dark custom properties;
-            // global.css picks one with light-dark().
+            // Both themes ship as --shiki-light/--shiki-dark custom properties:
+            // global.css uses the light one, src/decks/theme.css the dark.
             themes: { light: "github-light", dark: "github-dark" },
             defaultColor: false,
             langs: [

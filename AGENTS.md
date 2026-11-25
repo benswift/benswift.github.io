@@ -1,8 +1,8 @@
 # benswift.me
 
 Personal website and blog: Astro 7, Svelte 5 (runes), TypeScript, MDX, pure CSS
-with custom properties. oxlint + Stylelint for linting, oxfmt for formatting
-(skips `.astro`), Vitest for tests, Pagefind for search (indexed post-build).
+with custom properties. oxlint + Stylelint for linting, oxfmt for formatting,
+Vitest for tests, Pagefind for search (indexed post-build).
 
 ## Commands
 
@@ -24,7 +24,7 @@ There's no `<ClientRouter />`: page transitions are native cross-document view
 transitions (`@view-transition` in `global.css`), and Astro's built-in
 `security.csp` doesn't support the router. So every component `<script>` runs
 once per page load --- don't reintroduce `astro:page-load` listeners. Svelte is
-reserved for genuinely stateful islands in posts; site chrome (hero, search,
+reserved for genuinely stateful islands in posts; site chrome (wall, search,
 nav) is `.astro` plus a plain script.
 
 ## Svelte islands
@@ -100,12 +100,12 @@ injection). Files in `public/` are served as-is --- don't put new images in
 The blog post route auto-discovers a hero by slug from
 `src/assets/heroes/<YYYY-MM-DD-slug>.avif`. To override per-post, set
 `image: ./my-image.svg` in frontmatter (path relative to the post file, resolved
-via the `image()` schema helper); a hand-made override needs the same wide
-aspect ratio, `viewBox="0 0 2844 1600"` with no `width`/`height`. The resolved
-hero is the `og:image`/`twitter:image` (emitted as WebP) and the reduced-motion
-fallback for the on-page procedural WebGL hero (`HeroCanvas`).
-`pnpm gen:hero-images` screenshots that canvas to produce the per-post AVIFs ---
-posts missing a hero by default, all of them with `--force`.
+via the `image()` schema helper); make a hand-made override wide, since social
+cards crop to about 2:1. The resolved hero is only the `og:image` and
+`twitter:image` (emitted as WebP); it isn't shown on the page.
+`pnpm gen:hero-images` screenshots each post's typed wall (`Wall.astro`) to
+produce the per-post AVIFs --- posts missing a hero by default, all of them with
+`--force`.
 
 ### Inline post images
 
@@ -206,6 +206,9 @@ new version of a work is deposited deliberately, never by a GitHub release.
 ## Design context
 
 Users, brand personality, anti-references and design principles live in
-`PRODUCT.md`. Dark-only, content-forward with minimal decoration; the purple
-`#be2edd` brand colour and the asymmetric border-radius motif (`4px 0 4px 4px`)
-are established and should be preserved.
+`PRODUCT.md`. Light theme only. The colour and type tokens are the custom
+properties at the top of `src/styles/global.css`; the text, paper and rule
+colours are all derived from the section's `--accent`, so use those tokens
+instead of fixed greys. Anything drawn for the old dark theme (the charts,
+inline SVG diagrams in posts) sits on a `.dark-stage`. The purple `bsme` mark
+(`public/favicon.svg`) is established and should be preserved.
