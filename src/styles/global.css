@@ -803,6 +803,49 @@ pre.dark-stage {
   letter-spacing: 0;
 }
 
+/* Margin notes: on a wide screen each footnote also sits in the margin beside
+   its reference (the copies come from src/utils/rehype-sidenotes.ts). The
+   negative margin is the note's width plus its gap from the text, which puts
+   it wholly outside the column, so the lines beside it don't wrap. */
+.sidenote {
+  display: none;
+}
+
+@media (width >= 68rem) {
+  .sidenote {
+    display: block;
+    float: inline-end;
+    clear: inline-end;
+    inline-size: 15rem;
+    margin-block: 0.2rem 0.9rem;
+    margin-inline-end: -18rem;
+    font-size: 0.78rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: 0;
+    color: var(--text-2);
+    text-wrap: pretty;
+  }
+
+  .sidenote > sup:first-child {
+    margin-inline-end: 0.3em;
+    font-weight: 650;
+    color: var(--accent-ink);
+  }
+
+  .sidenote-gap {
+    display: block;
+    block-size: 0.5em;
+  }
+}
+
+@media print {
+  .sidenote {
+    display: none;
+  }
+}
+
 /* Keep footnote markers from pushing their line apart. */
 sup,
 sub {

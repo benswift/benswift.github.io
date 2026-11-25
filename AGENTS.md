@@ -53,6 +53,10 @@ Sätteri, because the custom plugins --- container directives, oldschool-dash
 smartypants, accessible autolink headings --- aren't ported. Don't "modernise"
 this to Sätteri without porting them and visually diffing the output.
 
+Footnotes are also shown as margin notes on a wide screen
+(`src/utils/rehype-sidenotes.ts`). A footnote holding a list or code block is
+left out of the margin and appears only in the list at the end.
+
 ## Voice and tone
 
 Write in a conversational, academic style that's accessible without being dumbed

@@ -83,6 +83,18 @@ describe("page h1s", () => {
   }
 });
 
+describe("margin notes", () => {
+  test("a footnote is copied beside its reference and kept in the list at the end", () => {
+    const html = readPage("/blog/2019/01/29/oils-from-weihai/");
+    expect(html).toMatch(
+      /data-footnote-ref[^>]*>1<\/a><\/sup><span class="sidenote" aria-hidden="true" data-pagefind-ignore(="")?><sup>1<\/sup>/,
+    );
+    expect(html).toMatch(/<section[^>]+class="footnotes"/);
+    // Only the list's copy keeps the id the reference links to.
+    expect(html.match(/id="user-content-fn-tired"/g)).toHaveLength(1);
+  });
+});
+
 describe("talk pages", () => {
   test("talks index links decks to generated deck pages (deckSlugs regression)", () => {
     const html = readPage("/talks/");

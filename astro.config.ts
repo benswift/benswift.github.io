@@ -13,6 +13,7 @@ import { astromotion, deckRemarkPlugins } from "astromotion";
 import remarkSmartypants from "remark-smartypants";
 import remarkDirective from "remark-directive";
 import { headingAnchorPlugins, remarkCallout } from "astro-theme-university/markdown";
+import { rehypeSidenotes } from "./src/utils/rehype-sidenotes";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 
@@ -249,6 +250,7 @@ export default defineConfig({
         ],
         ...headingAnchorPlugins,
         rehypeTableScroll,
+        rehypeSidenotes,
       ],
     }),
   },
