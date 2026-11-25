@@ -78,17 +78,6 @@
   scrollbar-color: var(--text-3) transparent;
 }
 
-/* The home page's wall is set in all seven inks. */
-:root[data-section="home"] {
-  --wall-1: var(--ink-navy);
-  --wall-2: var(--ink-forest);
-  --wall-3: var(--ink-plum);
-  --wall-4: var(--ink-rust);
-  --wall-5: var(--ink-oxblood);
-  --wall-6: var(--ink-indigo);
-  --wall-7: var(--ink-teal);
-}
-
 :root[data-section="blog"] {
   --accent: var(--ink-navy);
 }
