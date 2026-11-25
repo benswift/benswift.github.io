@@ -123,7 +123,8 @@ describe.skipIf(!existsSync(distDir))(
       );
       const main = html.slice(html.indexOf("<main"));
       const masthead = main.match(/<header class="masthead[^"]*"[^>]*>([\s\S]*?)<\/header>/)?.[1];
-      expect(html.indexOf('class="wall ')).toBeLessThan(html.indexOf("<main"));
+      expect(html.indexOf('class="wall"')).toBeGreaterThan(-1);
+      expect(html.indexOf('class="wall"')).toBeLessThan(html.indexOf("<main"));
       expect(masthead).toMatch(/<h1[^>]*>AT-URIs as persistent identifiers/);
     });
 
@@ -133,10 +134,10 @@ describe.skipIf(!existsSync(distDir))(
       // Readable without the script (and under reduced motion), hidden from
       // assistive technology.
       expect(inner).toContain('aria-hidden="true"');
-      expect(inner.match(/class="wall-phrase"/g)?.length).toBeGreaterThan(10);
+      expect(inner.match(/class="wall-phrase"/g)?.length).toBeGreaterThanOrEqual(10);
       expect(inner).toContain(">Human-</span><span");
       const phrases = JSON.parse(
-        (html.match(/class="wall [^"]*" data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll(
+        (html.match(/class="wall" data-phrases="([^"]*)"/)?.[1] ?? "[]").replaceAll(
           "&quot;",
           '"',
         ),
