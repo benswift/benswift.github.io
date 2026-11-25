@@ -30,16 +30,15 @@ const opening = (ordered ? pool : shuffled(pool, random))
 
 <div class="wall" data-phrases={JSON.stringify(pool)}>
   <p class="wall-inner" aria-hidden="true" set:html={wallHtml(opening)} />
-  <button class="wall-toggle" type="button" aria-pressed="false" hidden>
-    <span class="visually-hidden">Pause the typing</span>
-  </button>
 </div>
 
 <script>
   import { mountWall } from "./wall-typist";
 
   const wall = document.querySelector<HTMLElement>(".wall");
-  if (wall) mountWall(wall);
+  // The stop/play control lives in the nav (Nav.astro).
+  const toggle = document.querySelector<HTMLButtonElement>(".wall-toggle");
+  if (wall) mountWall(wall, toggle);
 </script>
 
 <style is:global>
@@ -48,7 +47,6 @@ const opening = (ordered ? pool : shuffled(pool, random))
   .wall {
     --wall-lines: 2;
 
-    position: relative;
     overflow: hidden;
     margin-block: 1rem 0.75rem;
     /* Room for ascenders and descenders, which overhang the tight lines. */
@@ -87,43 +85,6 @@ const opening = (ordered ? pool : shuffled(pool, random))
     }
   }
 
-  /* A stop/play control for the typing (WCAG 2.2.2), tucked into the wall's
-     bottom corner. */
-  .wall-toggle {
-    position: absolute;
-    inset-block-end: 0;
-    inset-inline-end: 0;
-    display: grid;
-    place-items: center;
-    inline-size: 1.75rem;
-    aspect-ratio: 1;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    background: var(--background-color);
-    color: var(--text-3);
-    font-size: 0.7rem;
-    line-height: 1;
-    letter-spacing: 0;
-    cursor: pointer;
-  }
-
-  .wall-toggle[hidden] {
-    display: none;
-  }
-
-  .wall-toggle::before {
-    content: "■";
-  }
-
-  .wall-toggle[aria-pressed="true"]::before {
-    content: "▶";
-  }
-
-  .wall-toggle:hover {
-    color: var(--text-color);
-  }
-
   @media print {
     .wall {
       display: none;
@@ -145,9 +106,5 @@ const opening = (ordered ? pool : shuffled(pool, random))
     background: var(--background-color);
     font-size: 6.1rem;
     line-height: 0.92;
-  }
-
-  [data-wall-capture] .wall-toggle {
-    display: none;
   }
 </style>

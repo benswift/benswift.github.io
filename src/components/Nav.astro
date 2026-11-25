@@ -91,7 +91,27 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
       </li>)}
     </ul>
 
-    <Search />
+    <div class="nav-tools">
+      {/* Stops and restarts the wall's typing (WCAG 2.2.2); wired up by
+          Wall.astro, and hidden when the visitor prefers reduced motion. */}
+      <button
+        class="wall-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Pause the typing"
+        title="Pause the typing"
+        hidden
+      >
+        <svg class="wall-toggle-pause" viewBox="0 0 10 10" aria-hidden="true">
+          <rect x="2" y="1.5" width="2" height="7" fill="currentColor" />
+          <rect x="6" y="1.5" width="2" height="7" fill="currentColor" />
+        </svg>
+        <svg class="wall-toggle-play" viewBox="0 0 10 10" aria-hidden="true">
+          <path d="M2.5 1.5 L8.5 5 L2.5 8.5 Z" fill="currentColor" />
+        </svg>
+      </button>
+      <Search />
+    </div>
   </nav>
 </header>
 
@@ -141,15 +161,51 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
     text-underline-offset: 0.3em;
   }
 
-  .site-nav :global(.search-container) {
+  .nav-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-inline-start: auto;
+  }
+
+  .wall-toggle {
+    display: grid;
+    place-items: center;
+    padding: 0.2rem 0.15rem;
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.15s;
+  }
+
+  .wall-toggle[hidden] {
+    display: none;
+  }
+
+  .wall-toggle:hover {
+    color: var(--text-color);
+  }
+
+  .wall-toggle svg {
+    inline-size: 0.8em;
+    block-size: 0.8em;
+  }
+
+  .wall-toggle[aria-pressed="true"] .wall-toggle-pause,
+  .wall-toggle[aria-pressed="false"] .wall-toggle-play {
+    display: none;
   }
 
   @media (width < 26rem) {
     .site-nav,
     .nav-links {
-      column-gap: 0.6rem;
+      column-gap: 0.5rem;
       font-size: 0.8rem;
+    }
+
+    .nav-tools {
+      gap: 0.2rem;
     }
   }
 </style>

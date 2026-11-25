@@ -38,9 +38,8 @@ function writePaused(paused: boolean) {
  * a terminal does. Typing stops while the wall is off-screen, the tab is
  * hidden, the visitor prefers reduced motion or they've pressed the toggle.
  */
-export function mountWall(wall: HTMLElement) {
+export function mountWall(wall: HTMLElement, toggle: HTMLButtonElement | null) {
   const inner = wall.querySelector<HTMLElement>(".wall-inner");
-  const toggle = wall.querySelector<HTMLButtonElement>(".wall-toggle");
   const phrases: string[] = JSON.parse(wall.dataset.phrases ?? "[]");
   if (!inner || phrases.length === 0) return;
 
@@ -166,6 +165,9 @@ export function mountWall(wall: HTMLElement) {
     if (!toggle) return;
     toggle.hidden = reducedMotion.matches;
     toggle.setAttribute("aria-pressed", String(paused));
+    // The accessible name stays put (aria-pressed carries the state); the
+    // tooltip says what a click will do.
+    toggle.title = paused ? "Resume the typing" : "Pause the typing";
   }
 
   trimToFit();
