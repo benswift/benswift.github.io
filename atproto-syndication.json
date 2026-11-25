@@ -521,6 +521,11 @@
       "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3n33wir7nu222",
       "cid": "bafyreicelbdo5wlvhwkj2wlkwcesbakkmjp3ukatjwf33pxjoanww7vhsa",
       "syndicatedAt": "2026-11-25T00:43:26.773Z"
+    },
+    "/blog/2026/11/25/live-coding-extempore-from-helix": {
+      "uri": "at://did:plc:tevykrhi4kibtsipzci76d76/app.bsky.feed.post/3n34vpthctn26",
+      "cid": "bafyreiehva3gupqsi7tgznqi4t5wgtazwfl3wfwmfg6dxpifioe3gn6q3m",
+      "syndicatedAt": "2026-11-25T10:02:09.998Z"
     }
   }
 }
