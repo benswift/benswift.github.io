@@ -38,7 +38,7 @@ const isAnimated =
   image.format === "gif" || (image.format === "webp" && isAnimatedWebp(await readFile(`.${key}`)));
 ---
 
-<figure class="picture-container">
+<figure class="picture-container" style={`--file-width:${image.width}px`}>
   {isAnimated ? (
     <img src={image.src} alt={alt} loading={loading} width={image.width} height={image.height} />
   ) : (
@@ -57,6 +57,12 @@ const isAnimated =
   /* Where the figure sits is in global.css, with the other prose images. */
   .picture-container {
     position: relative;
+  }
+
+  /* A <picture>'s sources have no `sizes`, so its natural width is the
+     viewport's; hold it to the file's. */
+  .picture-container img {
+    max-inline-size: min(100%, var(--file-width));
   }
 
   .picture-credit {
