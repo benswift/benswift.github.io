@@ -23,29 +23,22 @@ To understand why, start with the browser---a security marvel in its own right.
   <rect x="0" y="0" width="500" height="300" rx="8" class="window-bg"/>
   <rect x="0" y="0" width="500" height="36" rx="8" class="titlebar"/>
   <rect x="0" y="28" width="500" height="8" class="titlebar"/>
-
   <!-- Traffic lights -->
   <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
   <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
   <circle cx="60" cy="18" r="6" fill="#28c940"/>
-
   <!-- URL bar -->
   <rect x="80" y="8" width="340" height="20" rx="4" class="url-bar"/>
   <text x="100" y="22" font-size="11" font-family="system-ui, sans-serif" class="url-text">🔒 chat.openai.com</text>
-
   <!-- Content area - ChatGPT style interface -->
   <rect x="20" y="50" width="460" height="180" rx="4" class="content-area"/>
-
   <!-- Chat messages -->
   <rect x="40" y="70" width="280" height="40" rx="8" class="ai-message"/>
   <text x="55" y="95" font-size="12" font-family="system-ui, sans-serif" class="message-text">Hello! How can I help you today?</text>
-
   <rect x="180" y="125" width="280" height="30" rx="8" class="user-message"/>
   <text x="195" y="145" font-size="12" font-family="system-ui, sans-serif" class="user-text">Can you edit my files?</text>
-
   <rect x="40" y="170" width="200" height="30" rx="8" class="ai-message"/>
   <text x="55" y="190" font-size="12" font-family="system-ui, sans-serif" class="message-text">I cannot access your files.</text>
-
   <!-- Input box at bottom -->
   <rect x="20" y="250" width="420" height="35" rx="8" class="input-box"/>
   <text x="35" y="272" font-size="12" font-family="system-ui, sans-serif" class="placeholder-text">Message ChatGPT...</text>
@@ -81,38 +74,24 @@ do when you're actually building software.
   <rect x="0" y="0" width="500" height="280" rx="8" class="terminal-bg"/>
   <rect x="0" y="0" width="500" height="36" rx="8" class="terminal-titlebar"/>
   <rect x="0" y="28" width="500" height="8" class="terminal-titlebar"/>
-
   <!-- Traffic lights -->
   <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
   <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
   <circle cx="60" cy="18" r="6" fill="#28c940"/>
-
   <!-- Title -->
-
-<text x="250" y="22" text-anchor="middle" font-size="12" font-family="system-ui, sans-serif" class="terminal-title">Terminal
-— zsh</text>
-
+  <text x="250" y="22" text-anchor="middle" font-size="12" font-family="system-ui, sans-serif" class="terminal-title">Terminal — zsh</text>
   <!-- Terminal content -->
-
-<text x="20" y="65" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
-<text x="35" y="65" font-size="13" font-family="ui-monospace, monospace" class="command">claude
-"fix the bug in auth.py"</text>
-
-<text x="20" y="90" font-size="13" font-family="ui-monospace, monospace" class="output">●
-Reading auth.py...</text>
-<text x="20" y="115" font-size="13" font-family="ui-monospace, monospace" class="output">●
-Found issue on line 42</text>
-<text x="20" y="140" font-size="13" font-family="ui-monospace, monospace" class="output">●
-Editing auth.py...</text>
-<text x="20" y="165" font-size="13" font-family="ui-monospace, monospace" class="output">●
-Running pytest...</text>
-<text x="20" y="190" font-size="13" font-family="ui-monospace, monospace" class="success">✓
-All tests passing</text>
-<text x="20" y="215" font-size="13" font-family="ui-monospace, monospace" class="output">●
-Committing changes...</text>
-
-<text x="20" y="250" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
-<rect x="35" y="238" width="8" height="16" class="cursor"/> </svg>
+  <text x="20" y="65" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
+  <text x="35" y="65" font-size="13" font-family="ui-monospace, monospace" class="command">claude "fix the bug in auth.py"</text>
+  <text x="20" y="90" font-size="13" font-family="ui-monospace, monospace" class="output">● Reading auth.py...</text>
+  <text x="20" y="115" font-size="13" font-family="ui-monospace, monospace" class="output">● Found issue on line 42</text>
+  <text x="20" y="140" font-size="13" font-family="ui-monospace, monospace" class="output">● Editing auth.py...</text>
+  <text x="20" y="165" font-size="13" font-family="ui-monospace, monospace" class="output">● Running pytest...</text>
+  <text x="20" y="190" font-size="13" font-family="ui-monospace, monospace" class="success">✓ All tests passing</text>
+  <text x="20" y="215" font-size="13" font-family="ui-monospace, monospace" class="output">● Committing changes...</text>
+  <text x="20" y="250" font-size="13" font-family="ui-monospace, monospace" class="prompt">~</text>
+  <rect x="35" y="238" width="8" height="16" class="cursor"/>
+</svg>
 
 The terminal is almost the anti-browser: a text-only interface to doing
 **everything** on your computer. You can create, read, edit, and delete files
