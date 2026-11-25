@@ -58,13 +58,13 @@
   --radius-md: 0.35rem;
   --radius-lg: 0.6rem;
 
-  /* Type scale: small, body, h3, h2. Page titles size themselves (see
-     .page-title). Prose keeps to --measure, about 70 characters; code,
-     figures and tables may run to --wide. */
+  /* Type scale: small, body, section heading, page title. Prose keeps to
+     --measure, about 70 characters; code, figures and tables may run to
+     --wide. */
   --step--1: 0.85rem;
   --step-0: 1rem;
   --step-1: 1.2rem;
-  --step-2: 1.6rem;
+  --step-2: 1.55rem;
   --measure: 36rem;
   --wide: 52rem;
   --frame: 78rem;
@@ -196,7 +196,7 @@ main {
 }
 
 .masthead {
-  margin-block: clamp(1.75rem, 4vw, 3.25rem) clamp(1.5rem, 3vw, 2.25rem);
+  margin-block: clamp(2rem, 5vw, 3.5rem) 1.5rem;
 }
 
 .masthead > :first-child {
@@ -215,38 +215,42 @@ h4,
 h5,
 h6 {
   margin: 1.6em 0 0.5em;
-  line-height: 1.15;
+  line-height: 1.2;
   font-weight: 620;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
+/* The wall is the only display type; headings are told apart by weight and
+   space. */
 h1 {
-  font-size: 2.6rem;
+  font-size: var(--step-2);
 }
 
 h2 {
-  font-size: var(--step-2);
-  letter-spacing: -0.025em;
-}
-
-h3 {
   font-size: var(--step-1);
 }
 
+h3,
 h4,
 h5,
 h6 {
   font-size: var(--step-0);
 }
 
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: var(--text-2);
+}
+
 .page-title {
-  max-inline-size: 22ch;
-  margin: 0 0 0.75rem;
-  font-size: clamp(2.3rem, 1.5rem + 3.6vw, 4.6rem);
-  font-weight: 560;
-  line-height: 1;
-  letter-spacing: -0.04em;
+  max-inline-size: var(--measure);
+  margin: 0 0 0.4rem;
+  font-size: var(--step-2);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 /* Running text keeps to the measure; code, figures, tables and islands may
@@ -355,9 +359,6 @@ code {
 }
 
 :not(pre) > code {
-  background: var(--bg-soft);
-  padding: 0.12em 0.4em;
-  border-radius: var(--radius-sm);
   overflow-wrap: anywhere;
 }
 
@@ -365,10 +366,11 @@ pre code {
   font-size: inherit;
 }
 
+/* Code blocks are ruled off above and below, with no fill. */
 pre {
-  background: var(--bg-soft);
-  border-radius: var(--radius-md);
-  padding: 1rem 1.15rem;
+  margin-block: 1.5rem;
+  padding: 0.9rem 0;
+  border-block: 1px solid var(--divider);
   overflow-x: auto;
   overscroll-behavior-x: contain;
   line-height: 1.5;
@@ -414,25 +416,24 @@ blockquote > :last-child {
   margin-block-end: 0;
 }
 
-/* Callouts (shared remark-callout plugin from astro-theme-university). Each
-   type has an ink and one of Allo's symbols, so the type doesn't rest on
-   colour alone. */
+/* Callouts (shared remark-callout plugin from astro-theme-university): ruled
+   off above and below. Each type has an ink and one of Allo's symbols, so
+   the type doesn't rest on colour alone. */
 .at-callout {
   --callout-hue: var(--ink-navy);
   --callout-mark: "●";
 
   position: relative;
   margin: 1.5rem 0;
-  padding: 1rem 1.25rem 1rem 3rem;
-  border-radius: var(--radius-md);
-  background: color-mix(in oklab, var(--callout-hue) 9%, var(--background-color));
+  padding: 0.9rem 0 0.9rem 1.75rem;
+  border-block: 1px solid var(--divider);
 }
 
 .at-callout::before {
   content: var(--callout-mark);
   position: absolute;
-  inset-block-start: 1rem;
-  inset-inline-start: 1.15rem;
+  inset-block-start: 0.9rem;
+  inset-inline-start: 0;
   color: var(--callout-hue);
   font-weight: 600;
 }
@@ -473,8 +474,7 @@ blockquote > :last-child {
 }
 
 .at-callout--details {
-  padding-inline-start: 1.25rem;
-  background: var(--bg-soft);
+  padding-inline-start: 0;
 }
 
 .at-callout--details::before {
@@ -708,10 +708,12 @@ strong {
   border-radius: var(--radius-md);
 }
 
-.prose > svg {
+.prose > svg,
+pre.dark-stage {
   display: block;
   margin-block: 1.5rem;
   padding: 1rem;
+  border: 0;
 }
 
 /* Juttu comments. The embed themes itself via custom properties declared on

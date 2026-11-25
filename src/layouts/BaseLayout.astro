@@ -62,10 +62,10 @@ const ogImage = await getImage({ src: heroImage, format: "webp", width: 1200, qu
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
-    <Nav />
     <div class="frame" data-pagefind-ignore>
       <Wall phrases={phrases} size={home ? "tall" : "strip"} ordered={home} />
     </div>
+    <Nav />
     <main id="main-content" tabindex="-1" data-pagefind-body>
       {Astro.slots.has("masthead") && <header class="masthead">
         <slot name="masthead" />

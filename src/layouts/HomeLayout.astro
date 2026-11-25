@@ -34,41 +34,9 @@ const wallPhrases = [...SITE_BASELINE_PHRASES, ...blogTitles];
 </BaseLayout>
 
 <style>
-  .home-tagline {
-    margin: 0;
-    font-size: var(--step-2);
-    font-weight: 300;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-  }
-
+  .home-tagline,
   .home-role {
-    margin: 0.5rem 0 0;
+    margin: 0;
     color: var(--text-2);
-  }
-
-  /* Wide screens: the intro runs down the left with the photo beside it. */
-  @media (width >= 60rem) {
-    :global([data-section="home"] .prose) {
-      display: grid;
-      grid-template-columns: minmax(0, var(--measure)) minmax(0, 1fr);
-      column-gap: clamp(2rem, 5vw, 4.5rem);
-      align-content: start;
-    }
-
-    :global([data-section="home"] .prose > *) {
-      grid-column: 1;
-    }
-
-    :global([data-section="home"] .prose > .picture-container) {
-      grid-column: 2;
-      grid-row: 1 / span 6;
-      margin: 0.4rem 0 0;
-    }
-
-    /* Grid items' margins don't collapse. */
-    :global([data-section="home"] .prose > p) {
-      margin-block: 0 1em;
-    }
   }
 </style>

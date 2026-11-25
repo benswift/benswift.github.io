@@ -4,11 +4,12 @@
 <div class="search-container">
   <button
     class="search-toggle"
+    aria-label="Search"
     title="Search (Ctrl+K)"
     commandfor="search-dialog"
     command="show-modal"
   >
-    <span aria-hidden="true">⌕</span> Search
+    <span aria-hidden="true">⌕</span>
   </button>
 
   <dialog id="search-dialog" class="search-dialog" aria-label="Search" closedby="any">
@@ -31,12 +32,13 @@
     display: flex;
     align-items: center;
     gap: 0.35rem;
-    padding: 0.25rem 0;
+    padding: 0.2rem 0.4rem;
+    margin-inline-end: -0.4rem;
     border: none;
     background: none;
-    color: var(--text-2);
-    font-size: inherit;
-    font-weight: 500;
+    color: inherit;
+    font-size: 1.15em;
+    line-height: 1;
     cursor: pointer;
     transition: color 0.15s;
   }

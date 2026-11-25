@@ -10,9 +10,11 @@ interface Props {
   credit?: string;
   loading?: "lazy" | "eager";
   fetchpriority?: "high" | "low" | "auto";
+  // Run the photo edge to edge across the viewport, cropped to a band.
+  bleed?: boolean;
 }
 
-const { file, alt = "", credit, loading = "lazy", fetchpriority } = Astro.props;
+const { file, alt = "", credit, loading = "lazy", fetchpriority, bleed = false } = Astro.props;
 
 // Discover post images at build time. Path is relative to
 // src/assets/post-images/ (e.g. "posts/foo.webp", "livecoding/bar.webp").
@@ -38,7 +40,7 @@ const isAnimated =
   image.format === "gif" || (image.format === "webp" && isAnimatedWebp(await readFile(`.${key}`)));
 ---
 
-<figure class="picture-container">
+<figure class:list={["picture-container", { bleed }]}>
   {isAnimated ? (
     <img src={image.src} alt={alt} loading={loading} width={image.width} height={image.height} />
   ) : (
@@ -63,6 +65,24 @@ const isAnimated =
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  /* Full bleed: as wide as the viewport, whatever column it sits in (its
+     container is centred, so half the difference pulls it to the edge). */
+  .picture-container.bleed {
+    inline-size: 100vw;
+    max-inline-size: none;
+    margin: 2rem calc(50% - 50vw);
+  }
+
+  .picture-container.bleed img {
+    block-size: min(72svh, 56vw);
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .bleed .picture-credit {
+    inset-inline-end: var(--gutter);
   }
 
   .picture-credit {

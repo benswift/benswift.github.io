@@ -15,18 +15,34 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
 <header class="site-header frame" data-pagefind-ignore>
   <nav class="site-nav" aria-label="Main">
     <a href="/" class="site-mark" aria-label="benswift.me home">
-      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true">
         <path
           d="M8,0 L64,0 L64,56 A8,8 0 0,1 56,64 L8,64 A8,8 0 0,1 0,56 L0,8 A8,8 0 0,1 8,0 Z"
-          fill="#be2edd"
+          fill="currentColor"
         />
-        <line x1="32" y1="6" x2="32" y2="58" stroke="rgba(255,255,255,0.15)" stroke-width="0.75" />
-        <line x1="6" y1="32" x2="58" y2="32" stroke="rgba(255,255,255,0.15)" stroke-width="0.75" />
+        <line
+          x1="32"
+          y1="6"
+          x2="32"
+          y2="58"
+          stroke="var(--background-color)"
+          stroke-opacity="0.2"
+          stroke-width="0.75"
+        />
+        <line
+          x1="6"
+          y1="32"
+          x2="58"
+          y2="32"
+          stroke="var(--background-color)"
+          stroke-opacity="0.2"
+          stroke-width="0.75"
+        />
         <text
           font-family="inherit"
           font-size="20"
           font-weight="700"
-          fill="white"
+          fill="var(--background-color)"
           text-anchor="middle"
           dominant-baseline="central"
           x="16"
@@ -37,7 +53,7 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
           font-family="inherit"
           font-size="20"
           font-weight="700"
-          fill="white"
+          fill="var(--background-color)"
           text-anchor="middle"
           dominant-baseline="central"
           x="48"
@@ -48,7 +64,7 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
           font-family="inherit"
           font-size="20"
           font-weight="700"
-          fill="white"
+          fill="var(--background-color)"
           text-anchor="middle"
           dominant-baseline="central"
           x="16"
@@ -59,7 +75,7 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
           font-family="inherit"
           font-size="20"
           font-weight="700"
-          fill="white"
+          fill="var(--background-color)"
           text-anchor="middle"
           dominant-baseline="central"
           x="48"
@@ -80,28 +96,31 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
 </header>
 
 <style>
-  /* One row; on a phone the links wrap onto a second row under the mark and
-     the search button, so there is no menu to open. */
+  /* One thin line under the wall, in small type, so the wall has the top of
+     the page to itself. The links wrap on a phone; there is no menu to open. */
   .site-nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem 1.75rem;
-    padding-block: 1.25rem;
+    gap: 0.25rem 1.1rem;
+    padding-block: 0.6rem;
+    border-block-start: 1px solid var(--divider);
+    font-size: var(--step--1);
+    color: var(--text-2);
   }
 
   .site-mark {
     display: flex;
+    color: var(--text-color);
   }
 
   .nav-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem 1.25rem;
+    gap: 0.25rem 1.1rem;
     margin: 0;
     padding: 0;
     list-style: none;
-    font-weight: 500;
   }
 
   .nav-links li {
@@ -110,14 +129,15 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
 
   .nav-links a {
     display: block;
-    padding-block: 0.25rem;
+    padding-block: 0.2rem;
   }
 
-  /* The current section is underlined in its own hue. */
+  /* The current section is in full ink, and underlined so it doesn't rest
+     on colour alone. */
   .nav-links a[aria-current="page"] {
+    color: var(--text-color);
     text-decoration: underline;
-    text-decoration-color: var(--accent-strong);
-    text-decoration-thickness: 0.14em;
+    text-decoration-thickness: 1px;
     text-underline-offset: 0.3em;
   }
 
@@ -125,12 +145,11 @@ const isCurrent = (href: string) => Astro.url.pathname.startsWith(href);
     margin-inline-start: auto;
   }
 
-  @media (width < 40rem) {
+  @media (width < 26rem) {
+    .site-nav,
     .nav-links {
-      order: 1;
-      flex-basis: 100%;
-      gap: 0.25rem 0.8rem;
-      font-size: 0.94rem;
+      column-gap: 0.6rem;
+      font-size: 0.8rem;
     }
   }
 </style>
