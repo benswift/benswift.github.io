@@ -58,8 +58,12 @@ const opening = (ordered ? pool : shuffled(pool, random))
     user-select: none;
   }
 
+  /* Greedy line breaking: the paragraph default, `pretty`, rebalances the
+     earlier lines as each word arrives, so words already typed jump between
+     lines. */
   .wall-inner {
     margin: 0;
+    text-wrap: wrap;
   }
 
   .wall-word {
