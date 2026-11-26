@@ -118,15 +118,22 @@ export function mountWall(wall: HTMLElement, toggle: HTMLButtonElement | null) {
       inner!.append(" ", phrase);
       for (const token of [...tokenise(nextPhrase()), { text: style.glyph, space: true }]) {
         if (token.space) phrase.append(" ");
+        // The untyped rest of the word is laid out but hidden, so a word that
+        // won't fit on the line starts on the next one at its first key,
+        // instead of jumping there partway through.
         const word = span("wall-word");
-        const text = document.createTextNode("");
-        word.append(text, caret);
+        const typed = document.createTextNode("");
+        const rest = span("wall-rest");
+        rest.textContent = token.text;
+        word.append(typed, caret, rest);
         phrase.append(word);
         for (const char of token.text) {
-          text.data += char;
+          typed.data += char;
+          rest.textContent = rest.textContent.slice(char.length);
           yield* scrollUp();
           yield between(KEY_DELAY_MS);
         }
+        rest.remove();
       }
       yield between(PHRASE_PAUSE_MS);
     }
