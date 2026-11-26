@@ -1,0 +1,22 @@
+name: Verify actions.lock
+
+# Fails when .github/workflows/actions.lock is out of step with the workflows,
+# or a locked commit no longer matches its tag. Refresh it with `gh actions-lock`
+# after changing any `uses:` line.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: github/gh-actions-lock@verify/v0.5.1

@@ -19,17 +19,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
 
       - name: Setup mise (node + pnpm)
-        uses: jdx/mise-action@v5
+        uses: jdx/mise-action@v5.3.0
 
       - name: Locate pnpm store
         shell: bash
         run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
 
       - name: Cache pnpm store
-        uses: actions/cache@v6
+        uses: actions/cache@v6.1.0
         with:
           path: ${{ env.STORE_PATH }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -37,7 +37,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Setup Pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v6.0.0
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -47,7 +47,7 @@ jobs:
         # (~2500 avif/webp encodes, the dominant build cost) plus downloaded
         # fonts and the content-layer store. Keyed on sha so every run saves
         # its updated cache; restore-keys picks up the most recent one.
-        uses: actions/cache@v6
+        uses: actions/cache@v6.1.0
         with:
           path: node_modules/.astro
           key: ${{ runner.os }}-astro-build-${{ github.sha }}
@@ -88,7 +88,7 @@ jobs:
         run: pnpm run test:integration
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: dist
           # Default excludes all dotfiles (--exclude=.[^/]*), which drops the
@@ -112,4 +112,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.1
