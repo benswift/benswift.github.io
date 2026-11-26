@@ -1,8 +1,10 @@
 ---
 // A live filter above a long list. Mark each filterable element in the slotted
 // content with `data-filter-item`, and any wrapper (a year section, say) that
-// should disappear when none of its items match with `data-filter-group`. The
-// query is mirrored to `?q=`, so a filtered view can be linked to.
+// should disappear when none of its items match with `data-filter-group`. An
+// item's `data-filter-text` is matched as well as its visible text (a year shown
+// only in the group heading, say). The query is mirrored to `?q=`, so a
+// filtered view can be linked to.
 interface Props {
   label: string;
   // Plural name for the items, used in the result count ("12 of 48 posts").
@@ -107,7 +109,9 @@ const { label, noun } = Astro.props;
     ) {
       if (node.data.trim()) texts.push({ node, text: foldText(node.data) });
     }
-    return { el, texts, haystack: texts.map(({ text }) => text.folded).join(" ") };
+    const extra = foldText(el.dataset.filterText ?? "").folded;
+    const haystack = [...texts.map(({ text }) => text.folded), extra].join(" ");
+    return { el, texts, haystack };
   }
 
   class ListFilter extends HTMLElement {

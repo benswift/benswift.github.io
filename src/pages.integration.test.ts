@@ -168,6 +168,13 @@ describe.skipIf(!existsSync(distDir))("FoR codes table", () => {
 });
 
 describe("list filters", () => {
+  test("/research/ makes each publication findable by its year", () => {
+    const html = readPage("/research/");
+    const items = html.match(/<li class="pub-item"[^>]*data-filter-item[^>]*>/g) ?? [];
+    expect(items.length).toBeGreaterThan(10);
+    expect(items.every((tag) => /data-filter-text="\d{4}"/.test(tag))).toBe(true);
+  });
+
   const filtered: Array<[string, string]> = [
     ["/blog/", "post-item"],
     ["/research/", "pub-item"],
