@@ -604,7 +604,8 @@ blockquote > :last-child {
   border-block-start: 1px solid var(--divider);
 }
 
-.post-item:first-child {
+/* The first visible row, so a filtered list (ListFilter) has no top rule. */
+.post-item:nth-child(1 of :not([hidden])) {
   border-block-start: none;
 }
 

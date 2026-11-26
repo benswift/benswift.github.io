@@ -166,3 +166,26 @@ describe.skipIf(!existsSync(distDir))("FoR codes table", () => {
     expect(html).not.toContain("<astro-island");
   });
 });
+
+describe("list filters", () => {
+  const filtered: Array<[string, string]> = [
+    ["/blog/", "post-item"],
+    ["/research/", "pub-item"],
+  ];
+
+  for (const [route, itemClass] of filtered) {
+    test(`${route} wraps its list in a filter that starts hidden`, () => {
+      const html = readPage(route);
+      expect(html).toMatch(/<list-filter[^>]*data-noun=/);
+      expect(html).toMatch(/<search[^>]*class="list-filter"[^>]*hidden/);
+    });
+
+    test(`${route} marks every ${itemClass} as filterable`, () => {
+      // The filtered list only: /research/ also has an unfiltered performances list.
+      const html = readPage(route).match(/<list-filter[\s\S]*<\/list-filter>/)?.[0] ?? "";
+      const items = html.match(new RegExp(`class="${itemClass}"[^>]*>`, "g")) ?? [];
+      expect(items.length).toBeGreaterThan(10);
+      expect(items.every((tag) => tag.includes("data-filter-item"))).toBe(true);
+    });
+  }
+});

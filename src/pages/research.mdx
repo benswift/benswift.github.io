@@ -5,6 +5,7 @@ relativePath: src/pages/research.mdx
 image: /assets/images/posts/research.svg
 ---
 
+import ListFilter from "../components/ListFilter.astro";
 import Picture from "../components/Picture.astro";
 import PublicationsList from "../components/PublicationsList.astro";
 import PerformancesList from "../components/PerformancesList.astro";
@@ -50,7 +51,9 @@ that excites _you_. Send me:
 
 ## Peer-reviewed publications
 
-<PublicationsList />
+<ListFilter label="Filter publications" noun="publications">
+  <PublicationsList />
+</ListFilter>
 
 ## Curated livecoding performances
 

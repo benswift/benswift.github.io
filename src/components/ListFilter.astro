@@ -1,0 +1,194 @@
+---
+// A live filter above a long list. Mark each filterable element in the slotted
+// content with `data-filter-item`, and any wrapper (a year section, say) that
+// should disappear when none of its items match with `data-filter-group`. The
+// query is mirrored to `?q=`, so a filtered view can be linked to.
+interface Props {
+  label: string;
+  // Plural name for the items, used in the result count ("12 of 48 posts").
+  noun: string;
+}
+
+const { label, noun } = Astro.props;
+---
+
+<list-filter data-noun={noun}>
+  {/* Hidden until the script runs, so readers without JS get the plain list. */}
+  <search class="list-filter" hidden data-pagefind-ignore>
+    <label>
+      <span class="list-filter-label">{label}</span>
+      <input type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" />
+    </label>
+    <p class="list-filter-status" role="status"></p>
+  </search>
+  <slot />
+</list-filter>
+
+<style is:global>
+  list-filter .list-filter {
+    margin-block-end: 1.5rem;
+  }
+
+  list-filter .list-filter label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.75rem;
+  }
+
+  list-filter .list-filter-label {
+    color: var(--text-2);
+    font-size: var(--step--1);
+  }
+
+  list-filter .list-filter input {
+    flex: 1 1 16rem;
+    max-width: var(--measure);
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-md);
+    background: var(--bg-soft);
+    color: var(--text-color);
+    font-size: var(--step-0);
+  }
+
+  list-filter .list-filter input:focus-visible {
+    outline: 2px solid var(--accent-ink);
+    outline-offset: 1px;
+  }
+
+  list-filter .list-filter-status {
+    margin: 0.4rem 0 0;
+    min-height: 1lh;
+    color: var(--text-3);
+    font-size: var(--step--1);
+  }
+
+  /* List items set their own display, which would beat the UA's [hidden]. */
+  list-filter [data-filter-item][hidden],
+  list-filter [data-filter-group]:not(:has([data-filter-item]:not([hidden]))) {
+    display: none;
+  }
+
+  ::highlight(list-filter) {
+    background-color: var(--brand-soft);
+    text-decoration-line: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+  }
+</style>
+
+<script>
+  import { foldText, matchesAll, matchRanges, parseQuery, type FoldedText } from "./list-filter";
+
+  interface Entry {
+    el: HTMLElement;
+    texts: Array<{ node: Text; text: FoldedText }>;
+    // The item's folded text nodes joined with spaces, so adjacent elements
+    // (a title and its authors) can't run together into a false match.
+    haystack: string;
+  }
+
+  // One registry entry shared by every instance; each tracks its own ranges.
+  // The Custom Highlight API is a progressive enhancement: without it the
+  // filter still works, it just doesn't mark the matches.
+  const highlight = "highlights" in CSS ? new Highlight() : undefined;
+  if (highlight) CSS.highlights.set("list-filter", highlight);
+
+  const ANNOUNCE_DELAY_MS = 500;
+
+  function entryFor(el: HTMLElement): Entry {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const texts: Entry["texts"] = [];
+    for (
+      let node = walker.nextNode() as Text | null;
+      node;
+      node = walker.nextNode() as Text | null
+    ) {
+      if (node.data.trim()) texts.push({ node, text: foldText(node.data) });
+    }
+    return { el, texts, haystack: texts.map(({ text }) => text.folded).join(" ") };
+  }
+
+  class ListFilter extends HTMLElement {
+    #entries: Entry[] = [];
+    #ranges: Range[] = [];
+    #controller?: AbortController;
+    #announceTimer?: ReturnType<typeof setTimeout>;
+
+    connectedCallback() {
+      // Module scripts run after parsing, so the slotted list is complete.
+      this.#controller?.abort();
+      this.#controller = new AbortController();
+
+      const search = this.querySelector("search")!;
+      const input = search.querySelector("input")!;
+      const status = search.querySelector<HTMLElement>("[role=status]")!;
+      this.#entries = [...this.querySelectorAll<HTMLElement>("[data-filter-item]")].map(entryFor);
+
+      input.value = new URL(location.href).searchParams.get("q") ?? "";
+      input.addEventListener("input", () => this.#apply(input.value, status, true), {
+        signal: this.#controller.signal,
+      });
+      search.hidden = false;
+      this.#apply(input.value, status, false);
+    }
+
+    disconnectedCallback() {
+      this.#controller?.abort();
+      clearTimeout(this.#announceTimer);
+      this.#clearHighlights();
+    }
+
+    #clearHighlights() {
+      for (const range of this.#ranges) highlight?.delete(range);
+      this.#ranges = [];
+    }
+
+    #apply(query: string, status: HTMLElement, fromInput: boolean) {
+      const terms = parseQuery(query);
+      this.#clearHighlights();
+
+      let shown = 0;
+      for (const { el, texts, haystack } of this.#entries) {
+        const match = matchesAll(haystack, terms);
+        el.hidden = !match;
+        if (!match) continue;
+        shown++;
+        if (!highlight || terms.length === 0) continue;
+        for (const { node, text } of texts) {
+          for (const [start, end] of matchRanges(text, terms)) {
+            const range = new Range();
+            range.setStart(node, start);
+            range.setEnd(node, end);
+            highlight.add(range);
+            this.#ranges.push(range);
+          }
+        }
+      }
+
+      const noun = this.dataset.noun ?? "items";
+      const message =
+        terms.length === 0
+          ? ""
+          : shown === 0
+            ? `No ${noun} match`
+            : `${shown} of ${this.#entries.length} ${noun}`;
+
+      // Wait for a pause in typing, so screen readers announce one count
+      // rather than one per keystroke.
+      clearTimeout(this.#announceTimer);
+      if (fromInput) {
+        this.#announceTimer = setTimeout(() => (status.textContent = message), ANNOUNCE_DELAY_MS);
+        const url = new URL(location.href);
+        if (terms.length > 0) url.searchParams.set("q", query.trim());
+        else url.searchParams.delete("q");
+        history.replaceState(history.state, "", url);
+      } else {
+        status.textContent = message;
+      }
+    }
+  }
+
+  customElements.define("list-filter", ListFilter);
+</script>

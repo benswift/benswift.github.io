@@ -1,5 +1,6 @@
 ---
 import PageLayout from "../../layouts/PageLayout.astro";
+import ListFilter from "../../components/ListFilter.astro";
 import PostList from "../../components/PostList.astro";
 import TagList from "../../components/TagList.astro";
 import { getPosts } from "../../utils/posts";
@@ -29,5 +30,7 @@ const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].toSorted();
 
   <hr />
 
-  <PostList posts={posts} />
+  <ListFilter label="Filter posts" noun="posts">
+    <PostList posts={posts} />
+  </ListFilter>
 </PageLayout>
