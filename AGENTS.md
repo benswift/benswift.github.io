@@ -8,7 +8,10 @@ Vitest for tests, Pagefind for search (indexed post-build).
 
 `pnpm build` includes Pagefind indexing. `pnpm typecheck` runs `astro check` and
 `svelte-check`. `pnpm test` runs the unit project and `pnpm test:integration`
-the integration project.
+the integration project, which reads the built `dist/`: run `pnpm build` first,
+or it passes against stale output. CI also runs `pnpm run format:check`; files
+edited by script rather than the Edit tool skip the formatter hook, so run it
+before pushing.
 
 ## Dev server
 
