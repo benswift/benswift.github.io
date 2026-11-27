@@ -1,0 +1,178 @@
+---
+import type { ImageMetadata } from "astro";
+import sharp from "sharp";
+import { SITE_BASELINE_PHRASES } from "@/data/hero";
+import { gridRows, textImageRows, textStream, toneLevels } from "./text-image";
+
+interface Props {
+  // Path relative to src/assets/post-images/, as for <Picture>.
+  file: string;
+  alt: string;
+  credit?: string;
+  // Characters per row: the image's resolution.
+  cols?: number;
+  // For light-on-dark sources, so their light strokes become the ink.
+  invert?: boolean;
+  phrases?: readonly string[];
+}
+
+const {
+  file,
+  alt,
+  credit,
+  cols = 128,
+  invert = false,
+  phrases = SITE_BASELINE_PHRASES,
+} = Astro.props;
+
+// The glob checks the file exists and makes the build watch it.
+const imageModules = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/post-images/**/*.{png,jpg,jpeg,webp,avif}",
+  { eager: true },
+);
+const key = `/src/assets/post-images/${file}`;
+if (!imageModules[key]) {
+  throw new Error(`TextImage: image not found at ${key}.`);
+}
+
+const source = `.${key}`;
+const { width = 1, height = 1 } = await sharp(source).metadata();
+const rows = gridRows(cols, width, height);
+// Area averaging, so fine detail (hair, a patterned shirt) becomes a tone.
+const pixels = await sharp(source)
+  .greyscale()
+  .resize(cols, rows, { fit: "fill", kernel: "mitchell" })
+  .extractChannel(0)
+  .raw()
+  .toBuffer();
+const lines = textImageRows(toneLevels(pixels, { invert }), cols, textStream(phrases));
+---
+
+<figure class="picture-container text-image" data-pagefind-ignore>
+  <div class="text-image-frame" role="img" aria-label={alt}>
+    <pre class="text-image-grid" style={`--cols:${cols}`} aria-hidden="true">{
+      lines.map((line) => <span class="text-image-row" set:html={line} />)
+    }<span class="text-image-caret"></span></pre>
+  </div>
+  {credit && <figcaption class="text-image-credit">{credit}</figcaption>}
+</figure>
+
+<script>
+  import { mountTextImage } from "./text-image-typist";
+
+  for (const grid of document.querySelectorAll<HTMLElement>(".text-image-grid")) {
+    mountTextImage(grid);
+  }
+</script>
+
+<style>
+  .text-image-frame {
+    container-type: inline-size;
+  }
+
+  /* Sized so `--cols` cells fill the frame's width exactly. */
+  .text-image-grid {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    font-family: var(--font-family-mono);
+    font-size: calc(100cqi / (var(--cols) * 0.6));
+    line-height: 1;
+    letter-spacing: 0;
+    user-select: none;
+  }
+
+  .text-image-row {
+    display: block;
+  }
+
+  /* The tone ramp, from the paper to the section's darkest ink. */
+  .text-image-grid :global(.ti-0) {
+    color: oklch(from var(--accent) 96% calc(c * 0.25) h);
+    font-weight: 300;
+  }
+
+  .text-image-grid :global(.ti-1) {
+    color: oklch(from var(--accent) 86% calc(c * 0.4) h);
+    font-weight: 300;
+  }
+
+  .text-image-grid :global(.ti-2) {
+    color: oklch(from var(--accent) 75% calc(c * 0.55) h);
+    font-weight: 400;
+  }
+
+  .text-image-grid :global(.ti-3) {
+    color: oklch(from var(--accent) 64% calc(c * 0.7) h);
+    font-weight: 500;
+  }
+
+  .text-image-grid :global(.ti-4) {
+    color: oklch(from var(--accent) 53% calc(c * 0.85) h);
+    font-weight: 600;
+  }
+
+  .text-image-grid :global(.ti-5) {
+    color: oklch(from var(--accent) 42% c h);
+    font-weight: 700;
+  }
+
+  .text-image-grid :global(.ti-6) {
+    color: oklch(from var(--accent) 31% c h);
+    font-weight: 800;
+  }
+
+  .text-image-grid :global(.ti-7) {
+    color: oklch(from var(--accent) 20% calc(c * 0.8) h);
+    font-weight: 800;
+  }
+
+  .text-image-caret {
+    display: none;
+  }
+
+  /* Until text-image-typist.ts has typed it (or decided not to), each row
+     shows only its first `--typed` cells. Hidden in CSS, not by the script,
+     so a picture in view at load doesn't flash up before the typing starts. */
+  @media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+    .text-image-grid:not([data-typed]) .text-image-row:not([data-done]) {
+      clip-path: inset(0 calc(100% - var(--typed, 0) * 1ch) 0 0);
+    }
+  }
+
+  .text-image-grid[data-caret] .text-image-caret {
+    position: absolute;
+    inset-block-start: calc(var(--caret-row, 0) * 1lh + 0.13em);
+    inset-inline-start: calc(var(--caret-col, 0) * 1ch);
+    display: block;
+    inline-size: 0.12em;
+    block-size: 0.74em;
+    background: var(--text-color);
+  }
+
+  .text-image-grid[data-caret][data-typed] .text-image-caret {
+    animation: text-image-caret 1s steps(1) infinite;
+  }
+
+  @keyframes text-image-caret {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* The figure runs to the viewport's edge; the credit stays clear of it. */
+  .text-image-credit {
+    margin-block-start: 0.4rem;
+    padding-inline-end: var(--gutter);
+    color: var(--text-3);
+    font-size: var(--step--1);
+    font-style: italic;
+    text-align: end;
+  }
+
+  .text-image-credit::before {
+    content: "photo: ";
+  }
+</style>
