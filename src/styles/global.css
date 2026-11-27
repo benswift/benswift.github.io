@@ -126,6 +126,9 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   line-height: 1.55;
+  /* A long unbreakable run (a slash-joined list, a URL) wraps instead of
+     widening the page on a phone. */
+  overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
