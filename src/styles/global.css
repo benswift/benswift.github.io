@@ -357,9 +357,9 @@ img {
 .prose > p:has(> img:only-child) {
   max-inline-size: none;
   margin-block: 1.75rem;
-  /* The column is centred in the viewport, so half the difference between
-     their widths reaches the viewport's edge. */
-  margin-inline: 0 calc((100% - 100vw) / 2);
+  /* Full-bleed: the column is centred in the viewport, so half the
+     difference between their widths reaches the viewport's edge. */
+  margin-inline: calc((100% - 100vw) / 2);
 }
 
 .prose > .picture-container img,
@@ -368,17 +368,15 @@ img {
   inline-size: auto;
   max-inline-size: 100%;
   max-block-size: 85svh;
-  margin-inline-start: auto;
-}
-
-@media (width < 40rem) {
-  .prose > .picture-container,
-  .prose > p:has(> img:only-child) {
-    margin-inline-start: calc((100% - 100vw) / 2);
-  }
+  margin-inline: auto;
 }
 
 @media (width >= 68rem) {
+  .prose > .picture-container img,
+  .prose > p:has(> img:only-child) > img {
+    margin-inline: auto 0;
+  }
+
   .prose > .picture-container,
   .prose > p:has(> img:only-child) {
     --image-gap: 3rem;
