@@ -1,6 +1,6 @@
 ---
 import PageLayout from "../../layouts/PageLayout.astro";
-import Picture from "../../components/Picture.astro";
+import TextImage from "../../components/TextImage.astro";
 import { formatDate } from "../../utils/date";
 import { livecodingCollection } from "../../data/livecoding-collection";
 import { getGigs } from "../../utils/gigs";
@@ -19,9 +19,12 @@ const lastYear = gigs.at(0)?.dateStr.slice(0, 4);
 ---
 
 <PageLayout title="Livecoding" relativePath="src/pages/livecoding/index.astro">
-  <Picture
-    file="livecoding/smcclab-live-1.webp"
-    alt="Livecoding performance at SMCClab live #1 in Nov 2025"
+  <TextImage
+    file="pages/theremin-75-crop.avif"
+    alt="Ben performing live as a musical livecoder, drawn in typed text"
+    phrases={[
+      ...new Set(gigs.flatMap((gig) => (gig.venue ? [gig.title, gig.venue] : [gig.title]))),
+    ]}
   />
 
   <p>
