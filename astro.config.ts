@@ -14,6 +14,7 @@ import remarkSmartypants from "remark-smartypants";
 import remarkDirective from "remark-directive";
 import { headingAnchorPlugins, remarkCallout } from "astro-theme-university/markdown";
 import { rehypeSidenotes } from "./src/utils/rehype-sidenotes";
+import plausible from "./src/plausible";
 import xtlangGrammar from "./src/grammars/xtlang.tmLanguage.json";
 import armasmGrammar from "./src/grammars/armasm.tmLanguage.json";
 
@@ -209,6 +210,7 @@ export default defineConfig({
     mdx({ smartypants: false }),
     svelte(),
     sitemap(),
+    plausible("benswift.me"),
     brokenLinksChecker({ checkExternalLinks: false }),
     astromotion({
       theme: "./src/decks/theme.css",

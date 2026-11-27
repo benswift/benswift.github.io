@@ -34,9 +34,10 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@mediapipe/tasks-genai": "0.10.30",
+    "@plausible-analytics/tracker": "^0.4.7",
     "astro-broken-links-checker": "^1.1.0",
     "astro-theme-anu": "git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#astro-theme-anu@v0.10.0&path:/packages/astro-theme-anu",
-    "astro-theme-university": "github:ANUcybernetics/astro-theme-university#v0.23.2",
+    "astro-theme-university": "github:ANUcybernetics/astro-theme-university#v0.25.2",
     "astromotion": "github:ANUcybernetics/astromotion#v0.39.3",
     "perceptron-apparatus": "github:ANUcybernetics/perceptron-apparatus#b0050a0dcfa9cfadff0011c1a7827408575a25b4",
     "remark-smartypants": "^3.0.3",
