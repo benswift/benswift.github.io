@@ -8,7 +8,6 @@ interface Props {
   // Path relative to src/assets/post-images/, as for <Picture>.
   file: string;
   alt: string;
-  credit?: string;
   // Characters per row: the image's resolution.
   cols?: number;
   // For light-on-dark sources, so their light strokes become the ink.
@@ -16,14 +15,7 @@ interface Props {
   phrases?: readonly string[];
 }
 
-const {
-  file,
-  alt,
-  credit,
-  cols = 128,
-  invert = false,
-  phrases = SITE_BASELINE_PHRASES,
-} = Astro.props;
+const { file, alt, cols = 128, invert = false, phrases = SITE_BASELINE_PHRASES } = Astro.props;
 
 // The glob checks the file exists and makes the build watch it.
 const imageModules = import.meta.glob<{ default: ImageMetadata }>(
@@ -54,7 +46,6 @@ const lines = textImageRows(toneLevels(pixels, { invert }), cols, textStream(phr
       lines.map((line) => <span class="text-image-row" set:html={line} />)
     }<span class="text-image-caret"></span></pre>
   </div>
-  {credit && <figcaption class="text-image-credit">{credit}</figcaption>}
 </figure>
 
 <script>
@@ -160,19 +151,5 @@ const lines = textImageRows(toneLevels(pixels, { invert }), cols, textStream(phr
     50% {
       opacity: 0;
     }
-  }
-
-  /* The figure runs to the viewport's edge; the credit stays clear of it. */
-  .text-image-credit {
-    margin-block-start: 0.4rem;
-    padding-inline-end: var(--gutter);
-    color: var(--text-3);
-    font-size: var(--step--1);
-    font-style: italic;
-    text-align: end;
-  }
-
-  .text-image-credit::before {
-    content: "photo: ";
   }
 </style>
